@@ -1,0 +1,25 @@
+{
+  "scenario": "B_hot_dry_windy_hyper_evap",
+  "summary": {
+    "water_balance": 1.87,
+    "risk_index": 19.14,
+    "evaporation_pressure": 10.9,
+    "resilience": 0.46,
+    "risk_class": "emerging_risk"
+  },
+  "planning": {
+    "stage": "before_project",
+    "focus": "environmental feasibility and approval pathway",
+    "note": "conditions are manageable but require early environmental control"
+  },
+  "delivery": {
+    "stage": "during_project",
+    "risk_level": "moderate",
+    "focus": "risk control and environmental compliance"
+  },
+  "operations": {
+    "stage": "after_project",
+    "focus": "maintenance and resilience recovery",
+    "note": "continuous support required to maintain system stability"
+  }
+}
