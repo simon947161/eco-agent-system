@@ -31,6 +31,8 @@ Given environmental input data (Eco DNA), the system:
 
 ## ▶️ How to run
 
+Run the full system:
+
 ```bash
 cd eco_agent_system
-python main.py 
+python main.py
