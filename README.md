@@ -36,3 +36,9 @@ Run the full system:
 ```bash
 cd eco_agent_system
 python main.py
+## 💡 Simple CLI
+
+Try a quick check:
+
+```bash
+python run_simple_check.py
