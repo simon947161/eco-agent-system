@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "source_type": "real_eco_dna",
+  "source_path": "D:\\EcoEngine\\eco_dna_B_hot_dry_windy_hyper_evap.json",
+  "normalized_eco_data": {
+    "water_balance": 1.87,
+    "risk_index": 19.14,
+    "evaporation_pressure": 10.9,
+    "resilience": 0.46,
+    "scenario": "B_hot_dry_windy_hyper_evap",
+    "risk_class": "emerging_risk",
+    "recovery_phase": "stabilizing",
+    "dependency_level": "moderate_dependency",
+    "self_recovery_potential": "starting"
+  },
+  "agent_report": {
+    "planning": {
+      "agent_name": "Planning & Approval Agent",
+      "stage": "before_project",
+      "approval_path": [
+        "site_context_review",
+        "environmental_pre_assessment",
+        "planning_controls_check",
+        "approval_pathway_identification"
+      ],
+      "early_risks": [
+        "scenario:B_hot_dry_windy_hyper_evap",
+        "risk_class:emerging_risk"
+      ],
+      "esg_flags": {
+        "E": "environmental_condition_currently_manageable",
+        "S": "standard_social_screening",
+        "G": "planning_controls_and_approval_pathway_required"
+      },
+      "professional_note": "This agent translates Eco Engine outputs into early planning, approval, and ESG++ pre-screening language."
+    },
+    "delivery": {
+      "agent_name": "Project Delivery & Risk Agent",
+      "stage": "during_project",
+      "risk_level": "moderate",
+      "whs_flags": [
+        "standard_site_safety_monitoring"
+      ],
+      "environmental_controls": [
+        "resilience_support_required"
+      ],
+      "esg_flags": {
+        "E": "active_environmental_control_required",
+        "S": "managed_worker_and_community_risk",
+        "G": "standard_site_governance"
+      },
+      "professional_note": "This agent translates Eco Engine outputs into project delivery, WHS/OHS, and construction-stage environmental risk language."
+    },
+    "operations": {
+      "agent_name": "Operations & Maintenance Agent",
+      "stage": "after_project",
+      "resilience_score": "0.46",
+      "maintenance_actions": [
+        "seasonal_inspection",
+        "sensor_health_check",
+        "maintenance_log_update",
+        "resilience_recovery_plan",
+        "water_support_review",
+        "do_not_reduce_support_too_early"
+      ],
+      "eco_asset_potential": {
+        "eco_asset": {
+          "type": "water_energy_recovery",
+          "value_score": 0.46,
+          "tokenizable": false,
+          "rwa_note": "This is an early screening flag only. Real RWA use requires verified data, audit trail, and legal compliance."
+        }
+      },
+      "esg_flags": {
+        "E": "ecological_recovery_still_required",
+        "S": "service_reliability_watch",
+        "G": "tight_operational_governance"
+      },
+      "professional_note": "This agent translates Eco Engine outputs into long-term operation, maintenance, resilience, and early eco-asset language."
+    },
+    "lifecycle_feedback": {
+      "principle": "Operations feedback should inform future planning and delivery controls.",
+      "next_step": "Use operations monitoring results to update planning assumptions and risk rules."
+    }
+  }
+}
