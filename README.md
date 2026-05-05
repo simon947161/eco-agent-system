@@ -8,8 +8,7 @@ A lightweight prototype that translates environmental system outputs into action
 
 This project explores a simple idea:
 
-> Environmental systems can be described in physical terms (water, heat, resilience),  
-> and translated into real-world decision logic using professional roles.
+Environmental systems can be described in physical terms (water, heat, resilience), and translated into real-world decision logic using professional roles.
 
 It connects:
 
@@ -19,13 +18,26 @@ It connects:
 
 ---
 
+## 🌱 Core Concept
+
+Eco Decision DNA
+
+A structure that makes human actions:
+- computable
+- comparable
+- environmentally accountable
+
+See docs/eco-decision-dna.md for full concept
+
+---
+
 ## ⚙️ What it does
 
 Given environmental input data (Eco DNA), the system:
 
-1. Runs **Planning Agent** → early feasibility & ESG screening  
-2. Runs **Delivery Agent** → risk & implementation control  
-3. Runs **Operations Agent** → long-term resilience & maintenance  
+1. Runs Planning Agent for feasibility and ESG screening
+2. Runs Delivery Agent for risk and implementation control
+3. Runs Operations Agent for long-term resilience and maintenance
 
 ---
 
@@ -33,12 +45,13 @@ Given environmental input data (Eco DNA), the system:
 
 Run the full system:
 
-```bash
 cd eco_agent_system
 python main.py
+
+---
+
 ## 💡 Simple CLI
 
 Try a quick check:
 
-```bash
 python run_simple_check.py
