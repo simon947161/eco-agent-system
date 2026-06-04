@@ -13,6 +13,7 @@ REPO_ROOT = PROJECT_DIR.parent
 if str(ENGINE_DIR) not in sys.path:
     sys.path.insert(0, str(ENGINE_DIR))
 
+from differential_field import derive_differential_field  # noqa: E402
 from evidence_layer import (  # noqa: E402
     derive_evidence_strength,
     derive_human_review_required,
@@ -54,6 +55,17 @@ CSV_FIELDS = [
     "confidence_level",
     "validation_required",
     "runtime_reasoning",
+    "water_gradient",
+    "water_gradient_class",
+    "heat_gradient",
+    "heat_gradient_class",
+    "vegetation_gradient",
+    "vegetation_gradient_class",
+    "fire_gradient",
+    "fire_gradient_class",
+    "differential_status",
+    "differential_summary",
+    "reference_record_count",
     "evidence_strength",
     "source_basis",
     "uncertainty_notes",
@@ -78,12 +90,17 @@ def evidence_for_scenario(scenario: dict, evidence_profile: dict) -> dict:
     return {key: evidence[key] for key in pathway_keys if key in evidence}
 
 
-def build_comparison_rows(scenarios: list[dict], evidence_profile: dict) -> list[dict]:
-    """Calculate runtime, evidence, and scoring fields for each scenario."""
+def build_comparison_rows(
+    scenarios: list[dict],
+    evidence_profile: dict,
+    context_records: list[dict],
+) -> list[dict]:
+    """Calculate runtime, differential, evidence, and scoring fields."""
     rows = []
     for scenario in scenarios:
         scores = scenario.get("scores", {})
         runtime = derive_runtime_fields(scores)
+        differential = derive_differential_field(scores, context_records)
         scenario_evidence = evidence_for_scenario(scenario, evidence_profile)
         risk_adjusted_score = calculate_risk_adjusted_score(scores)
         row = {
@@ -93,6 +110,7 @@ def build_comparison_rows(scenarios: list[dict], evidence_profile: dict) -> list
             **scores,
             **runtime,
             "runtime_reasoning": derive_runtime_reasoning(scenario, runtime),
+            **differential,
             "evidence_strength": derive_evidence_strength(scenario_evidence),
             "source_basis": derive_source_basis(scenario_evidence),
             "uncertainty_notes": derive_uncertainty_notes(scenario_evidence),
@@ -139,14 +157,15 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
         "",
         "## Scenario Comparison Summary",
         "",
-        "| Scenario | Risk-adjusted score | Evidence strength | Source basis | Human review required | Recommendation |",
-        "| --- | ---: | --- | --- | --- | --- |",
+        "| Scenario | Risk-adjusted score | Differential status | Evidence strength | Source basis | Human review required | Recommendation |",
+        "| --- | ---: | --- | --- | --- | --- | --- |",
     ]
 
     for row in rows:
         sections.append(
-            "| {scenario_name} | {risk_adjusted_score} | {evidence_strength} | {source_basis} | "
-            "{human_review_required} | {recommendation_class} |".format(**row)
+            "| {scenario_name} | {risk_adjusted_score} | {differential_status} | "
+            "{evidence_strength} | {source_basis} | {human_review_required} | "
+            "{recommendation_class} |".format(**row)
         )
 
     scenario_headings = [
@@ -176,6 +195,16 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
                 f"- Source basis: {row['source_basis']}",
                 f"- Uncertainty notes: {row['uncertainty_notes']}",
                 f"- Human review required: {row['human_review_required']}",
+                "",
+                "### Differential Field Runtime",
+                "",
+                f"- Differential status: {row['differential_status']}",
+                f"- Water gradient: {row['water_gradient']} ({row['water_gradient_class']})",
+                f"- Heat gradient: {row['heat_gradient']} ({row['heat_gradient_class']})",
+                f"- Vegetation gradient: {row['vegetation_gradient']} ({row['vegetation_gradient_class']})",
+                f"- Fire gradient: {row['fire_gradient']} ({row['fire_gradient_class']})",
+                f"- Differential summary: {row['differential_summary']}",
+                f"- Reference record count: {row['reference_record_count']}",
             ]
         )
 
@@ -186,6 +215,7 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
             "",
             "Low evidence indicates higher uncertainty and requires human review before decisions are advanced.",
             "High evidence indicates comparatively higher confidence, but it does not remove the need for local consultation, professional judgement, or site-specific validation.",
+            "Differential field gradients are indicative comparisons against representative context records, not validated field measurements.",
             "",
             "## Methodology Boundary",
             "",
@@ -200,6 +230,11 @@ def _rank_value(strength: str) -> int:
     return {"Low": 1, "Medium": 2, "High": 3}.get(strength, 0)
 
 
+def _scenario_metric_text(row: dict, metric: str, class_metric: str | None = None) -> str:
+    class_text = f" ({row[class_metric]})" if class_metric else ""
+    return f"{row['scenario_name']} ({row[metric]}{class_text})"
+
+
 def write_governance_summary(rows: list[dict]) -> None:
     """Write the governance-oriented Markdown summary."""
     highest_ranked = max(rows, key=lambda row: row["risk_adjusted_score"])
@@ -208,6 +243,10 @@ def write_governance_summary(rows: list[dict]) -> None:
     highest_uncertainty = max(rows, key=lambda row: (row["human_review_required"], row["validation_need"]))
     human_review_rows = [row for row in rows if row["human_review_required"]]
     human_review_text = ", ".join(row["scenario_name"] for row in human_review_rows) or "None flagged by the current low-evidence rule"
+    strongest_water = max(rows, key=lambda row: row["water_gradient"])
+    highest_heat = max(rows, key=lambda row: row["heat_gradient"])
+    strongest_vegetation = max(rows, key=lambda row: row["vegetation_gradient"])
+    highest_fire = max(rows, key=lambda row: row["fire_gradient"])
 
     lines = [
         "# Governance Summary",
@@ -240,6 +279,14 @@ def write_governance_summary(rows: list[dict]) -> None:
         f"- Highest uncertainty pathway: {highest_uncertainty['scenario_name']} ({highest_uncertainty['uncertainty_notes']}).",
         f"- Scenarios requiring human review: {human_review_text}.",
         "",
+        "## Differential Field Reading",
+        "",
+        "These gradients compare scenario scores with indicative representative Batlow context records only.",
+        f"- Strongest water advantage: {_scenario_metric_text(strongest_water, 'water_gradient', 'water_gradient_class')}.",
+        f"- Highest heat pressure: {_scenario_metric_text(highest_heat, 'heat_gradient', 'heat_gradient_class')}.",
+        f"- Strongest vegetation buffer: {_scenario_metric_text(strongest_vegetation, 'vegetation_gradient', 'vegetation_gradient_class')}.",
+        f"- Highest fire exposure: {_scenario_metric_text(highest_fire, 'fire_gradient', 'fire_gradient_class')}.",
+        "",
         "## Suggested Next Step",
         "",
         "Use the comparison as an agenda for human review: confirm evidence quality, test local assumptions, and decide which pathway should be refined first.",
@@ -252,8 +299,10 @@ def main() -> None:
     location = load_json(INPUT_DIR / "location_profile.json")
     scenario_options = load_json(INPUT_DIR / "scenario_options.json")
     evidence_profile = load_json(INPUT_DIR / "evidence_profile.json")
+    differential_context = load_json(INPUT_DIR / "differential_context.json")
     scenarios = scenario_options.get("scenarios", [])
-    rows = build_comparison_rows(scenarios, evidence_profile)
+    context_records = differential_context.get("records", [])
+    rows = build_comparison_rows(scenarios, evidence_profile, context_records)
     write_comparison_csv(rows)
     write_scenario_report(location, scenarios, rows)
     write_governance_summary(rows)
