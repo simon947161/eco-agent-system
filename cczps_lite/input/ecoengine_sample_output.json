@@ -1,0 +1,25 @@
+{
+  "source": "ecoengine_v1_9_2b_sample",
+  "location_id": "batlow_nsw_001",
+  "location_name": "Batlow, NSW",
+  "climate_regime": "dry_inland",
+  "instability_pathways": [
+    "evaporation_dominated",
+    "soil_degradation",
+    "wind_exposed_dry"
+  ],
+  "compound_events": [
+    "dry_wind",
+    "heat_dry"
+  ],
+  "regime_adjusted_intensity": 7.2,
+  "runtime_fields": {
+    "risk_index": 4.1,
+    "water_balance_signal": "watch",
+    "ecological_resilience": "moderate",
+    "evaporation_pressure": "high",
+    "confidence_level": "medium",
+    "validation_required": true
+  },
+  "notes": "Indicative sample record for bridge testing only. This is not validated live EcoEngine output."
+}
