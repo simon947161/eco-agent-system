@@ -14,6 +14,7 @@ if str(ENGINE_DIR) not in sys.path:
     sys.path.insert(0, str(ENGINE_DIR))
 
 from differential_field import derive_differential_field  # noqa: E402
+from forcing_layer import derive_forcing_candidates  # noqa: E402
 from evidence_layer import (  # noqa: E402
     derive_evidence_strength,
     derive_human_review_required,
@@ -66,6 +67,10 @@ CSV_FIELDS = [
     "differential_status",
     "differential_summary",
     "reference_record_count",
+    "forcing_candidates",
+    "primary_forcing",
+    "forcing_priority",
+    "forcing_summary",
     "evidence_strength",
     "source_basis",
     "uncertainty_notes",
@@ -101,6 +106,8 @@ def build_comparison_rows(
         scores = scenario.get("scores", {})
         runtime = derive_runtime_fields(scores)
         differential = derive_differential_field(scores, context_records)
+        forcing = derive_forcing_candidates(differential, scores)
+        forcing_row = {**forcing, "forcing_candidates": "; ".join(forcing["forcing_candidates"])}
         scenario_evidence = evidence_for_scenario(scenario, evidence_profile)
         risk_adjusted_score = calculate_risk_adjusted_score(scores)
         row = {
@@ -111,6 +118,7 @@ def build_comparison_rows(
             **runtime,
             "runtime_reasoning": derive_runtime_reasoning(scenario, runtime),
             **differential,
+            **forcing_row,
             "evidence_strength": derive_evidence_strength(scenario_evidence),
             "source_basis": derive_source_basis(scenario_evidence),
             "uncertainty_notes": derive_uncertainty_notes(scenario_evidence),
@@ -205,6 +213,13 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
                 f"- Fire gradient: {row['fire_gradient']} ({row['fire_gradient_class']})",
                 f"- Differential summary: {row['differential_summary']}",
                 f"- Reference record count: {row['reference_record_count']}",
+                "",
+                "### Forcing Layer Runtime",
+                "",
+                f"- Primary forcing: {row['primary_forcing']}",
+                f"- Forcing candidates: {row['forcing_candidates']}",
+                f"- Forcing priority: {row['forcing_priority']}",
+                f"- Forcing summary: {row['forcing_summary']}",
             ]
         )
 
@@ -216,6 +231,7 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
             "Low evidence indicates higher uncertainty and requires human review before decisions are advanced.",
             "High evidence indicates comparatively higher confidence, but it does not remove the need for local consultation, professional judgement, or site-specific validation.",
             "Differential field gradients are indicative comparisons against representative context records, not validated field measurements.",
+            "Forcing layer outputs identify candidate pressures only and do not prove causality.",
             "",
             "## Methodology Boundary",
             "",
@@ -235,6 +251,30 @@ def _scenario_metric_text(row: dict, metric: str, class_metric: str | None = Non
     return f"{row['scenario_name']} ({row[metric]}{class_text})"
 
 
+def _priority_rank(priority: str) -> int:
+    return {"Low": 1, "Medium": 2, "High": 3}.get(priority, 0)
+
+
+def _forcing_candidates(row: dict) -> list[str]:
+    return [candidate.strip() for candidate in row["forcing_candidates"].split(";") if candidate.strip()]
+
+
+def _most_common_forcing(rows: list[dict]) -> str:
+    counts = {}
+    for row in rows:
+        for candidate in _forcing_candidates(row):
+            counts[candidate] = counts.get(candidate, 0) + 1
+    if not counts:
+        return "None identified"
+    candidate, count = max(counts.items(), key=lambda item: (item[1], item[0]))
+    return f"{candidate} ({count} scenario(s))"
+
+
+def _scenario_names_with_forcing(rows: list[dict], forcing_name: str) -> str:
+    names = [row["scenario_name"] for row in rows if forcing_name in _forcing_candidates(row)]
+    return ", ".join(names) or "None identified"
+
+
 def write_governance_summary(rows: list[dict]) -> None:
     """Write the governance-oriented Markdown summary."""
     highest_ranked = max(rows, key=lambda row: row["risk_adjusted_score"])
@@ -247,6 +287,10 @@ def write_governance_summary(rows: list[dict]) -> None:
     highest_heat = max(rows, key=lambda row: row["heat_gradient"])
     strongest_vegetation = max(rows, key=lambda row: row["vegetation_gradient"])
     highest_fire = max(rows, key=lambda row: row["fire_gradient"])
+    highest_forcing_priority = max(rows, key=lambda row: _priority_rank(row["forcing_priority"]))
+    most_common_forcing = _most_common_forcing(rows)
+    fire_forcing_scenarios = _scenario_names_with_forcing(rows, "Fire Exposure")
+    microclimate_support_scenarios = _scenario_names_with_forcing(rows, "Microclimate Buffer Support")
 
     lines = [
         "# Governance Summary",
@@ -286,6 +330,14 @@ def write_governance_summary(rows: list[dict]) -> None:
         f"- Highest heat pressure: {_scenario_metric_text(highest_heat, 'heat_gradient', 'heat_gradient_class')}.",
         f"- Strongest vegetation buffer: {_scenario_metric_text(strongest_vegetation, 'vegetation_gradient', 'vegetation_gradient_class')}.",
         f"- Highest fire exposure: {_scenario_metric_text(highest_fire, 'fire_gradient', 'fire_gradient_class')}.",
+        "",
+        "## Forcing Layer Reading",
+        "",
+        "These are candidate pressure readings from representative gradients only; they do not prove causality.",
+        f"- Highest forcing priority: {highest_forcing_priority['scenario_name']} ({highest_forcing_priority['forcing_priority']}; {highest_forcing_priority['primary_forcing']}).",
+        f"- Most common candidate forcing: {most_common_forcing}.",
+        f"- Scenarios with Fire Exposure forcing: {fire_forcing_scenarios}.",
+        f"- Scenarios with Microclimate Buffer Support: {microclimate_support_scenarios}.",
         "",
         "## Suggested Next Step",
         "",
