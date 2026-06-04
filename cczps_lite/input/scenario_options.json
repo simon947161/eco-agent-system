@@ -1,0 +1,88 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": "BATLOW_WATER_PRIORITY",
+      "scenario_name": "Water Priority Pathway",
+      "scenario_type": "water_priority",
+      "description": "Focuses on water retention, orchard resilience, irrigation timing, runoff capture, and drought adaptation.",
+      "interventions": [
+        "retention basins",
+        "irrigation timing",
+        "soil moisture protection",
+        "runoff capture",
+        "drought resilience planning"
+      ],
+      "assumptions": [
+        "indicative values only",
+        "no external live data",
+        "for methodology demonstration"
+      ],
+      "scores": {
+        "water_security": 9,
+        "energy_resilience": 5,
+        "ecological_resilience": 7,
+        "fire_resilience": 6,
+        "community_acceptance": 8,
+        "investment_feasibility": 7,
+        "implementation_complexity": 6,
+        "validation_need": 5
+      }
+    },
+    {
+      "scenario_id": "BATLOW_ENERGY_RESILIENCE",
+      "scenario_name": "Energy Resilience Pathway",
+      "scenario_type": "energy_resilience",
+      "description": "Focuses on renewable energy, battery storage, microgrid logic, cooling demand reduction, emergency energy support, and energy-water coordination.",
+      "interventions": [
+        "renewable energy",
+        "battery storage",
+        "microgrid logic",
+        "cooling demand reduction",
+        "emergency energy support"
+      ],
+      "assumptions": [
+        "indicative values only",
+        "no external live data",
+        "concept-level energy assumptions"
+      ],
+      "scores": {
+        "water_security": 6,
+        "energy_resilience": 9,
+        "ecological_resilience": 6,
+        "fire_resilience": 6,
+        "community_acceptance": 7,
+        "investment_feasibility": 6,
+        "implementation_complexity": 7,
+        "validation_need": 7
+      }
+    },
+    {
+      "scenario_id": "BATLOW_ECOLOGY_FIRE_BUFFER",
+      "scenario_name": "Ecology / Fire Buffer Priority Pathway",
+      "scenario_type": "ecology_fire_buffer_priority",
+      "description": "Focuses on vegetation restoration, fire-buffer corridors, ecological recovery, landscape resilience, heat reduction, and community safety.",
+      "interventions": [
+        "vegetation restoration",
+        "fire-buffer corridors",
+        "ecological recovery",
+        "landscape resilience",
+        "heat reduction"
+      ],
+      "assumptions": [
+        "indicative values only",
+        "no external live data",
+        "requires site-specific ecological and fire review"
+      ],
+      "scores": {
+        "water_security": 7,
+        "energy_resilience": 5,
+        "ecological_resilience": 9,
+        "fire_resilience": 8,
+        "community_acceptance": 8,
+        "investment_feasibility": 6,
+        "implementation_complexity": 7,
+        "validation_need": 6
+      }
+    }
+  ]
+}
