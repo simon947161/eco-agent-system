@@ -14,33 +14,30 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
-    name: Run CCZPS-Lite validation
+  cczps-lite-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.x"
 
-      - name: Validate input JSON files
+      - name: Generate CCZPS-Lite outputs
+        run: python cczps_lite/engine/scenario_compare.py
+
+      - name: Validate JSON inputs
         run: |
-          python -m json.tool cczps_lite/input/location_profile.json >/dev/null
           python -m json.tool cczps_lite/input/evidence_profile.json >/dev/null
+          python -m json.tool cczps_lite/input/location_profile.json >/dev/null
           python -m json.tool cczps_lite/input/scenario_options.json >/dev/null
+          python -m json.tool cczps_lite/input/ecoengine_sample_output.json >/dev/null
 
-      - name: Compile Python files
-        run: |
-          python -m compileall cczps_lite tests
+      - name: Compile Python modules
+        run: python -m py_compile cczps_lite/engine/*.py cczps_lite/integration/*.py
 
-      - name: Run CCZPS-Lite generator
-        run: |
-          python cczps_lite/engine/scenario_compare.py
-
-      - name: Run regression tests
-        run: |
-          python -m unittest tests/test_cczps_lite.py
+      - name: Run unit tests
+        run: python -m unittest discover
