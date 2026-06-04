@@ -67,6 +67,13 @@ class ScenarioCompareOutputTests(unittest.TestCase):
         self.assertIn("source_basis", rows[0])
         self.assertIn("uncertainty_notes", rows[0])
         self.assertIn("human_review_required", rows[0])
+        self.assertIn("water_gradient", rows[0])
+        self.assertIn("differential_status", rows[0])
+        self.assertIn("differential_summary", rows[0])
+        self.assertIn("forcing_candidates", rows[0])
+        self.assertIn("primary_forcing", rows[0])
+        self.assertIn("forcing_priority", rows[0])
+        self.assertIn("forcing_summary", rows[0])
 
         energy_row = next(row for row in rows if row["scenario_id"] == "BATLOW_ENERGY_RESILIENCE")
         self.assertEqual(energy_row["evidence_strength"], "Low")
@@ -75,9 +82,13 @@ class ScenarioCompareOutputTests(unittest.TestCase):
         scenario_report = scenario_report_path.read_text(encoding="utf-8")
         self.assertIn("## Notes on Confidence and Validation", scenario_report)
         self.assertIn("Evidence strength: Low", scenario_report)
+        self.assertIn("### Differential Field Runtime", scenario_report)
+        self.assertIn("### Forcing Layer Runtime", scenario_report)
 
         governance_summary = governance_summary_path.read_text(encoding="utf-8")
         self.assertIn("## Evidence Assessment", governance_summary)
+        self.assertIn("## Differential Field Reading", governance_summary)
+        self.assertIn("## Forcing Layer Reading", governance_summary)
         self.assertIn("Scenarios requiring human review: Energy Resilience Pathway.", governance_summary)
 
     def test_input_json_files_are_valid(self) -> None:
