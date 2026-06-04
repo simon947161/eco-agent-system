@@ -1,0 +1,37 @@
+{
+  "location_id": "batlow_nsw_001",
+  "context_type": "representative_differential_sample",
+  "records": [
+    {
+      "record_id": "batlow_orchard_reference",
+      "label": "Orchard reference area",
+      "terrain_position": "mid_slope",
+      "water_security": 7,
+      "heat_exposure": 6,
+      "vegetation_condition": 7,
+      "fire_exposure": 6,
+      "evidence_strength": "Medium"
+    },
+    {
+      "record_id": "batlow_dry_exposed_edge",
+      "label": "Dry exposed edge",
+      "terrain_position": "ridge_edge",
+      "water_security": 4,
+      "heat_exposure": 8,
+      "vegetation_condition": 5,
+      "fire_exposure": 8,
+      "evidence_strength": "Low"
+    },
+    {
+      "record_id": "batlow_valley_buffer",
+      "label": "Valley buffer area",
+      "terrain_position": "valley_floor",
+      "water_security": 8,
+      "heat_exposure": 5,
+      "vegetation_condition": 8,
+      "fire_exposure": 5,
+      "evidence_strength": "Medium"
+    }
+  ],
+  "notes": "Indicative representative differential context for CCZPS-Lite testing only. These values are not validated field measurements."
+}
