@@ -28,7 +28,7 @@ def classify_urgency_level(response_priority, forcing_priority):
     """Classify urgency from response priority and the forcing signal."""
     signal = str(forcing_priority or "").lower()
     if any(term in signal for term in (
-        "fire exposure", "extreme heat exposure", "severe water storage deficit"
+        "fire exposure", "extreme heat exposure", "water storage deficit"
     )):
         return "Critical"
     if any(term in signal for term in (
@@ -130,8 +130,7 @@ def derive_response_prioritisation(response_result, validation_result, forcing_r
 
     urgency_level = classify_urgency_level(response_priority, primary_forcing or forcing_priority)
     prioritised_response = rank_response_options(
-        response_result.get("response_options", []),
-        urgency_level,
+        response_result.get("response_options", []), urgency_level
     )
     result = {
         "implementation_priority": implementation_priority,
