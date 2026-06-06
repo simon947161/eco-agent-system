@@ -88,12 +88,13 @@ def rank_response_options(response_options, urgency_level):
     if not options:
         return "No candidate response identified"
 
-    def rank(option: str) -> tuple[int, int, int]:
+    def rank(option: str) -> tuple[int, int, int, int]:
         option_urgency = _option_urgency(option)
         benefit = estimate_expected_benefit(option, "")
         evidence_bonus = 1 if "evidence" in option.lower() else 0
         return (
-            max(URGENCY_RANK.get(urgency_level, 1), URGENCY_RANK[option_urgency]),
+            URGENCY_RANK[option_urgency],
+            URGENCY_RANK.get(urgency_level, 1),
             BENEFIT_RANK[benefit],
             evidence_bonus,
         )
