@@ -18,11 +18,11 @@ It is not a final planning, engineering, financial, or regulatory assessment.
 
 ## Scenario Comparison Summary
 
-| Scenario | Risk-adjusted score | Differential status | Evidence strength | Validation status | Review priority | Review owner | Recommendation |
+| Scenario | Risk-adjusted score | Evidence | Validation | Review priority | Response priority | Response mode | Recommendation |
 | --- | ---: | --- | --- | --- | --- | --- | --- |
-| Water Priority Pathway | 5.69 | water_advantage_with_heat_relief | Medium | Validated Enough for Concept Review | Low | Governance reviewer | Promising but Requires Validation |
-| Energy Resilience Pathway | 4.83 | mixed_or_neutral_differential | Low | Insufficient Evidence | High | Evidence coordinator | Moderate Priority |
-| Ecology / Fire Buffer Priority Pathway | 5.53 | elevated_fire_exposure | Medium | Requires Technical Validation | Medium | Fire resilience reviewer | Promising but Requires Validation |
+| Water Priority Pathway | 5.69 | Medium | Validated Enough for Concept Review | Low | Low | Concept refinement response | Promising but Requires Validation |
+| Energy Resilience Pathway | 4.83 | Low | Insufficient Evidence | High | High | Evidence-building response | Moderate Priority |
+| Ecology / Fire Buffer Priority Pathway | 5.53 | Medium | Requires Technical Validation | Medium | Medium | Technical validation response | Promising but Requires Validation |
 
 ## Scenario A: Water Priority
 
@@ -60,6 +60,13 @@ Focuses on water retention, orchard resilience, irrigation timing, runoff captur
 - Review owner: Governance reviewer
 - Review triggers: No major validation gap identified at concept level; Microclimate Buffer Support
 - Review summary: Review loop recommends proceed to concept review at low priority, led by the Governance reviewer. This is a concept-level routing suggestion and remains subject to human judgement.
+
+### Adaptive Response Runtime
+
+- Response priority: Low
+- Response mode: Concept refinement response
+- Response options: Concept design refinement; Governance consultation; Implementation pathway review
+- Response summary: Adaptive response suggests a concept refinement response at low priority, beginning with concept design refinement, governance consultation. These are candidate concept-level options, require review, and should be checked locally; they are not final design advice.
 
 ### Differential Field Runtime
 
@@ -115,6 +122,13 @@ Focuses on renewable energy, battery storage, microgrid logic, cooling demand re
 - Review triggers: Need stronger field evidence or technical assessment; Mixed / Unclear Forcing
 - Review summary: Review loop recommends hold and collect evidence at high priority, led by the Evidence coordinator. This is a concept-level routing suggestion and remains subject to human judgement.
 
+### Adaptive Response Runtime
+
+- Response priority: High
+- Response mode: Evidence-building response
+- Response options: Field evidence collection plan; Local observation protocol; Expert review checklist
+- Response summary: Adaptive response suggests an evidence-building response at high priority, beginning with field evidence collection plan, local observation protocol. These are candidate concept-level options, require review, and should be checked locally; they are not final design advice.
+
 ### Differential Field Runtime
 
 - Differential status: mixed_or_neutral_differential
@@ -169,6 +183,13 @@ Focuses on vegetation restoration, fire-buffer corridors, ecological recovery, l
 - Review triggers: Need bushfire exposure and vegetation management review; Need ecological condition and canopy-cover review; Fire Exposure
 - Review summary: Review loop recommends escalate to technical review at medium priority, led by the Fire resilience reviewer. This is a concept-level routing suggestion and remains subject to human judgement.
 
+### Adaptive Response Runtime
+
+- Response priority: Medium
+- Response mode: Technical validation response
+- Response options: Bushfire buffer review; Fire access and asset protection check; Vegetation fuel management review; Canopy-cover assessment; Shelterbelt / windbreak review; Ecological buffer restoration
+- Response summary: Adaptive response suggests a technical validation response at medium priority, beginning with bushfire buffer review, fire access and asset protection check. These are candidate concept-level options, require review, and should be checked locally; they are not final design advice.
+
 ### Differential Field Runtime
 
 - Differential status: elevated_fire_exposure
@@ -189,9 +210,9 @@ Focuses on vegetation restoration, fire-buffer corridors, ecological recovery, l
 ## Notes on Confidence and Validation
 
 Low evidence indicates higher uncertainty and requires human review before decisions are advanced.
-High evidence indicates comparatively higher confidence, but it does not remove the need for local consultation, professional judgement, or site-specific validation.
+High evidence does not remove the need for local consultation, professional judgement, or site-specific validation.
 Differential field gradients are indicative comparisons against representative context records, not validated field measurements.
-Forcing and review-loop outputs are candidate concept-level readings only and do not prove causality or initiate external workflows.
+Forcing, review-loop, and adaptive-response outputs are candidate concept-level readings only; they are not final design advice.
 
 ## Methodology Boundary
 
