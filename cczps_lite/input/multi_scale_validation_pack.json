@@ -1,0 +1,187 @@
+{
+  "pack_name": "CCZPS-Lite Multi-Scale Scenario Validation Pack",
+  "methodology_boundary": "Indicative concept-level fixtures only. Values are not live observations, calibrated models, forecasts, engineering advice, or regulatory findings.",
+  "existing_scenario_metadata": {
+    "BATLOW_ENERGY_RESILIENCE": {
+      "validation_context": "Scenario A — Batlow Energy Resilience",
+      "geography": "Batlow, New South Wales, Australia",
+      "geographic_scale": "regional town and agricultural continuity",
+      "focus": [
+        "bushfire risk",
+        "distributed energy",
+        "microgrid resilience",
+        "agricultural continuity"
+      ],
+      "limitations": "Concept-level energy scores; no network study, asset audit, cost model, or live hazard data."
+    }
+  },
+  "scenarios": [
+    {
+      "scenario_id": "KUNLUN_ECO_WATER",
+      "scenario_name": "Kunlun Eco-Water System",
+      "scenario_type": "multi_scale_validation",
+      "validation_context": "Scenario B — Kunlun Eco-Water System",
+      "geography": "Kunlun dryland context",
+      "geographic_scale": "regional dryland ecological system",
+      "watershed_stage": "not_applicable",
+      "description": "Concept-level dryland ecological governance scenario focused on drought pressure, water availability, ecological restoration, and climate adaptation.",
+      "focus": ["drought pressure", "water availability", "ecological restoration", "climate adaptation"],
+      "interventions": ["water storage review", "soil moisture observation", "ecological buffer restoration", "local adaptation consultation"],
+      "assumptions": ["indicative scores only", "representative context records", "no live hydrology or remote sensing"],
+      "limitations": "No basin model, groundwater assessment, field ecology survey, or jurisdictional policy review.",
+      "scores": {
+        "water_security": 4,
+        "energy_resilience": 4,
+        "ecological_resilience": 7,
+        "fire_resilience": 5,
+        "community_acceptance": 6,
+        "investment_feasibility": 5,
+        "implementation_complexity": 8,
+        "validation_need": 8
+      },
+      "evidence": {
+        "water": {"strength": "low", "source": "concept study", "notes": "Dryland water assumptions require field confirmation."},
+        "ecology": {"strength": "medium", "source": "regional understanding", "notes": "Restoration potential is indicative."}
+      },
+      "context_records": [
+        {"record_id": "kunlun_dryland_reference", "water_security": 7, "heat_exposure": 5, "vegetation_condition": 6, "fire_exposure": 6},
+        {"record_id": "kunlun_restoration_reference", "water_security": 6, "heat_exposure": 5, "vegetation_condition": 7, "fire_exposure": 5}
+      ]
+    },
+    {
+      "scenario_id": "IRAQ_AGRICULTURE_RECOVERY",
+      "scenario_name": "Iraq Agriculture Recovery",
+      "scenario_type": "multi_scale_validation",
+      "validation_context": "Scenario C — Iraq Agriculture Recovery",
+      "geography": "Iraq agricultural recovery context",
+      "geographic_scale": "regional agricultural landscape",
+      "watershed_stage": "not_applicable",
+      "description": "Concept-level environmental recovery pathway focused on desertification, irrigation systems, agricultural productivity, and ecological restoration.",
+      "focus": ["desertification", "irrigation systems", "agricultural productivity", "ecological restoration"],
+      "interventions": ["irrigation audit", "soil moisture monitoring", "shelterbelt review", "field evidence collection"],
+      "assumptions": ["indicative recovery scores", "no live irrigation records", "no conflict or infrastructure damage model"],
+      "limitations": "No engineering condition survey, groundwater balance, farm economics, security assessment, or regulatory review.",
+      "scores": {
+        "water_security": 3,
+        "energy_resilience": 4,
+        "ecological_resilience": 5,
+        "fire_resilience": 4,
+        "community_acceptance": 6,
+        "investment_feasibility": 4,
+        "implementation_complexity": 9,
+        "validation_need": 9
+      },
+      "evidence": {
+        "water": {"strength": "low", "source": "concept study", "notes": "Irrigation and water availability require local verification."},
+        "ecology": {"strength": "low", "source": "literature review", "notes": "Restoration assumptions are not site validated."}
+      },
+      "context_records": [
+        {"record_id": "iraq_irrigated_reference", "water_security": 6, "heat_exposure": 5, "vegetation_condition": 6, "fire_exposure": 6},
+        {"record_id": "iraq_degraded_reference", "water_security": 5, "heat_exposure": 5, "vegetation_condition": 5, "fire_exposure": 5}
+      ]
+    },
+    {
+      "scenario_id": "XIONGAN_WUTAI_HEADWATERS",
+      "scenario_name": "Wutai Mountain Headwaters",
+      "scenario_type": "watershed_validation_point",
+      "validation_context": "Scenario D1 — Wutai Mountain Headwaters",
+      "geography": "Baiyangdian–Xiong'an watershed",
+      "geographic_scale": "mountain headwaters",
+      "watershed_stage": "Mountain Source",
+      "description": "Concept-level headwater validation point focused on rainfall, forest retention, runoff generation, and watershed protection.",
+      "focus": ["rainfall", "forest retention", "runoff generation", "watershed protection"],
+      "interventions": ["forest retention review", "runoff observation protocol", "headwater protection consultation"],
+      "assumptions": ["representative scores only", "no rainfall-runoff model", "no terrain or forest inventory"],
+      "limitations": "No hydrological calibration, forest condition survey, erosion model, or seasonal rainfall analysis.",
+      "scores": {
+        "water_security": 8,
+        "energy_resilience": 4,
+        "ecological_resilience": 8,
+        "fire_resilience": 7,
+        "community_acceptance": 7,
+        "investment_feasibility": 6,
+        "implementation_complexity": 6,
+        "validation_need": 5
+      },
+      "evidence": {
+        "water": {"strength": "medium", "source": "regional understanding", "notes": "Headwater behavior requires monitoring."},
+        "ecology": {"strength": "medium", "source": "expert judgement", "notes": "Forest retention assumptions require field review."}
+      },
+      "context_records": [
+        {"record_id": "wutai_headwater_reference", "water_security": 6, "heat_exposure": 5, "vegetation_condition": 6, "fire_exposure": 6},
+        {"record_id": "wutai_forest_reference", "water_security": 6, "heat_exposure": 5, "vegetation_condition": 7, "fire_exposure": 6}
+      ]
+    },
+    {
+      "scenario_id": "XIONGAN_BAIYANGDIAN_WETLAND",
+      "scenario_name": "Baiyangdian Wetland Core",
+      "scenario_type": "watershed_validation_point",
+      "validation_context": "Scenario D2 — Baiyangdian Wetland Core",
+      "geography": "Baiyangdian–Xiong'an watershed",
+      "geographic_scale": "wetland storage core",
+      "watershed_stage": "Wetland Storage",
+      "description": "Concept-level wetland validation point focused on persistence, water balance, evaporation pressure, and ecosystem stability.",
+      "focus": ["wetland persistence", "water balance", "evaporation pressure", "ecosystem stability"],
+      "interventions": ["wetland water balance review", "evaporation observation", "canopy and ecological buffer assessment"],
+      "assumptions": ["indicative wetland scores", "no water-level time series", "no ecological field survey"],
+      "limitations": "No wetland water budget, inflow allocation model, water-quality analysis, habitat survey, or seasonal forecast.",
+      "scores": {
+        "water_security": 6,
+        "energy_resilience": 4,
+        "ecological_resilience": 8,
+        "fire_resilience": 6,
+        "community_acceptance": 8,
+        "investment_feasibility": 6,
+        "implementation_complexity": 8,
+        "validation_need": 7
+      },
+      "evidence": {
+        "water": {"strength": "medium", "source": "regional understanding", "notes": "Water balance requires site-specific validation."},
+        "ecology": {"strength": "medium", "source": "literature review", "notes": "Wetland persistence is concept-level only."}
+      },
+      "context_records": [
+        {"record_id": "baiyangdian_storage_reference", "water_security": 7, "heat_exposure": 3, "vegetation_condition": 7, "fire_exposure": 6},
+        {"record_id": "baiyangdian_margin_reference", "water_security": 7, "heat_exposure": 3, "vegetation_condition": 7, "fire_exposure": 6}
+      ]
+    },
+    {
+      "scenario_id": "XIONGAN_DOWNSTREAM_URBAN",
+      "scenario_name": "Xiong'an and Downstream Region",
+      "scenario_type": "watershed_validation_point",
+      "validation_context": "Scenario D3 — Xiong'an and Downstream Region",
+      "geography": "Baiyangdian–Xiong'an watershed",
+      "geographic_scale": "urban and downstream region",
+      "watershed_stage": "Urban Consumption",
+      "description": "Concept-level downstream validation point focused on urban water demand, flood resilience, ecological connectivity, and long-term sustainability.",
+      "focus": ["urban water demand", "flood resilience", "ecological connectivity", "long-term sustainability"],
+      "interventions": ["urban water demand review", "flood resilience check", "ecological corridor assessment", "governance consultation"],
+      "assumptions": ["indicative urban-demand scores", "no network or flood model", "no development forecast"],
+      "limitations": "No urban demand forecast, drainage model, infrastructure capacity assessment, land-use model, or statutory planning review.",
+      "scores": {
+        "water_security": 5,
+        "energy_resilience": 6,
+        "ecological_resilience": 6,
+        "fire_resilience": 6,
+        "community_acceptance": 7,
+        "investment_feasibility": 6,
+        "implementation_complexity": 9,
+        "validation_need": 8
+      },
+      "evidence": {
+        "water": {"strength": "low", "source": "concept study", "notes": "Urban demand assumptions require local data."},
+        "ecology": {"strength": "medium", "source": "regional understanding", "notes": "Connectivity assumptions require spatial review."}
+      },
+      "context_records": [
+        {"record_id": "xiongan_urban_reference", "water_security": 7, "heat_exposure": 4, "vegetation_condition": 7, "fire_exposure": 6},
+        {"record_id": "xiongan_downstream_reference", "water_security": 7, "heat_exposure": 4, "vegetation_condition": 7, "fire_exposure": 6}
+      ]
+    }
+  ],
+  "watershed_system": {
+    "name": "Baiyangdian–Xiong'an Ecohydrology System",
+    "stages": ["Mountain Source", "River Transport", "Wetland Storage", "Urban Consumption"],
+    "validation_point_ids": ["XIONGAN_WUTAI_HEADWATERS", "XIONGAN_BAIYANGDIAN_WETLAND", "XIONGAN_DOWNSTREAM_URBAN"],
+    "diagnostic_only": true,
+    "note": "River Transport is represented as the continuity connection between the three validation points; no river routing or predictive model is introduced."
+  }
+}
