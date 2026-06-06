@@ -18,11 +18,11 @@ It is not a final planning, engineering, financial, or regulatory assessment.
 
 ## Scenario Comparison Summary
 
-| Scenario | Risk-adjusted score | Evidence | Validation | Review priority | Response priority | Response mode | Recommendation |
-| --- | ---: | --- | --- | --- | --- | --- | --- |
-| Water Priority Pathway | 5.69 | Medium | Validated Enough for Concept Review | Low | Low | Concept refinement response | Promising but Requires Validation |
-| Energy Resilience Pathway | 4.83 | Low | Insufficient Evidence | High | High | Evidence-building response | Moderate Priority |
-| Ecology / Fire Buffer Priority Pathway | 5.53 | Medium | Requires Technical Validation | Medium | Medium | Technical validation response | Promising but Requires Validation |
+| Scenario | Validation | Response priority | Implementation priority | Urgency | Prioritised response | Recommendation |
+| --- | --- | --- | --- | --- | --- | --- |
+| Water Priority Pathway | Validated Enough for Concept Review | Low | Low | Routine | Concept design refinement | Promising but Requires Validation |
+| Energy Resilience Pathway | Insufficient Evidence | High | High | Moderate | Field evidence collection plan | Moderate Priority |
+| Ecology / Fire Buffer Priority Pathway | Requires Technical Validation | Medium | Medium | Critical | Bushfire buffer review | Promising but Requires Validation |
 
 ## Scenario A: Water Priority
 
@@ -67,6 +67,14 @@ Focuses on water retention, orchard resilience, irrigation timing, runoff captur
 - Response mode: Concept refinement response
 - Response options: Concept design refinement; Governance consultation; Implementation pathway review
 - Response summary: Adaptive response suggests a concept refinement response at low priority, beginning with concept design refinement, governance consultation. These are candidate concept-level options, require review, and should be checked locally; they are not final design advice.
+
+### Response Prioritisation Runtime
+
+- Implementation priority: Low
+- Urgency level: Routine
+- Expected benefit: Implementation readiness improvement
+- Prioritised response: Concept design refinement
+- Prioritisation summary: Response prioritisation suggests considering concept design refinement first at low implementation priority. Its expected concept-level benefit is implementation readiness improvement. This suggested implementation sequence requires review and should be checked locally.
 
 ### Differential Field Runtime
 
@@ -129,6 +137,14 @@ Focuses on renewable energy, battery storage, microgrid logic, cooling demand re
 - Response options: Field evidence collection plan; Local observation protocol; Expert review checklist
 - Response summary: Adaptive response suggests an evidence-building response at high priority, beginning with field evidence collection plan, local observation protocol. These are candidate concept-level options, require review, and should be checked locally; they are not final design advice.
 
+### Response Prioritisation Runtime
+
+- Implementation priority: High
+- Urgency level: Moderate
+- Expected benefit: Confidence improvement
+- Prioritised response: Field evidence collection plan
+- Prioritisation summary: Response prioritisation suggests considering field evidence collection plan first at high implementation priority. Its expected concept-level benefit is confidence improvement. This suggested implementation sequence requires review and should be checked locally.
+
 ### Differential Field Runtime
 
 - Differential status: mixed_or_neutral_differential
@@ -190,6 +206,14 @@ Focuses on vegetation restoration, fire-buffer corridors, ecological recovery, l
 - Response options: Bushfire buffer review; Fire access and asset protection check; Vegetation fuel management review; Canopy-cover assessment; Shelterbelt / windbreak review; Ecological buffer restoration
 - Response summary: Adaptive response suggests a technical validation response at medium priority, beginning with bushfire buffer review, fire access and asset protection check. These are candidate concept-level options, require review, and should be checked locally; they are not final design advice.
 
+### Response Prioritisation Runtime
+
+- Implementation priority: Medium
+- Urgency level: Critical
+- Expected benefit: Risk reduction and asset protection
+- Prioritised response: Bushfire buffer review
+- Prioritisation summary: Response prioritisation suggests considering bushfire buffer review first at medium implementation priority. Its expected concept-level benefit is risk reduction and asset protection. This suggested implementation sequence requires review and should be checked locally.
+
 ### Differential Field Runtime
 
 - Differential status: elevated_fire_exposure
@@ -212,7 +236,7 @@ Focuses on vegetation restoration, fire-buffer corridors, ecological recovery, l
 Low evidence indicates higher uncertainty and requires human review before decisions are advanced.
 High evidence does not remove the need for local consultation, professional judgement, or site-specific validation.
 Differential field gradients are indicative comparisons against representative context records, not validated field measurements.
-Forcing, review-loop, and adaptive-response outputs are candidate concept-level readings only; they are not final design advice.
+Response and prioritisation outputs are candidate concept-level readings only; they require review and are not final design advice.
 
 ## Methodology Boundary
 
