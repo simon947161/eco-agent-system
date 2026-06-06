@@ -52,9 +52,7 @@ def derive_response_options(validation_gaps, review_owner, primary_forcing):
 
     if any(term in signal_text for term in ("water storage", "hydrolog", "soil moisture")):
         _add_options(options, (
-            "Water storage audit",
-            "Soil moisture monitoring",
-            "Irrigation timing review",
+            "Water storage audit", "Soil moisture monitoring", "Irrigation timing review",
         ))
     if any(term in signal_text for term in ("heat exposure", "evaporation", "temperature")):
         _add_options(options, (
@@ -93,9 +91,7 @@ def derive_response_options(validation_gaps, review_owner, primary_forcing):
 
     if not options:
         _add_options(options, (
-            "Local conditions review",
-            "Governance consultation",
-            "Expert review checklist",
+            "Local conditions review", "Governance consultation", "Expert review checklist",
         ))
     return options
 
@@ -104,8 +100,10 @@ def summarize_adaptive_response(response_result):
     """Create a cautious summary of the suggested response direction."""
     options = _as_list(response_result.get("response_options", []))
     option_text = ", ".join(options[:2]).lower() if options else "local review"
+    mode = response_result.get("response_mode", "Local consultation response").lower()
+    article = "an" if mode.startswith(("a", "e", "i", "o", "u")) else "a"
     return (
-        f"Adaptive response suggests a {response_result.get('response_mode', 'Local consultation response').lower()} "
+        f"Adaptive response suggests {article} {mode} "
         f"at {response_result.get('response_priority', 'Medium').lower()} priority, beginning with "
         f"{option_text}. These are candidate concept-level options, require review, and should be "
         "checked locally; they are not final design advice."
