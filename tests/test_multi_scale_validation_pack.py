@@ -53,7 +53,7 @@ class MultiScaleValidationPackTests(unittest.TestCase):
             "Validation results",
             "Prioritised response",
             "Limitations",
-            "Human review required",
+            "human review required",
             "Watershed Continuity Reading",
         ):
             self.assertIn(phrase, pack_text)
