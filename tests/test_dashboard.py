@@ -8,6 +8,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DASHBOARD_DIR = REPO_ROOT / "cczps_lite" / "dashboard"
+PAGES_WORKFLOW = REPO_ROOT / ".github" / "workflows" / "deploy-dashboard-pages.yml"
 
 
 class DashboardHTMLParser(HTMLParser):
@@ -61,6 +62,27 @@ class DemonstrationDashboardTests(unittest.TestCase):
             self.assertNotIn(forbidden, script)
         for scenario in ("batlow", "kunlun", "iraq", "baiyangdian"):
             self.assertIn(f"{scenario}:", script)
+
+    def test_github_pages_workflow_stages_a_self_contained_site(self) -> None:
+        self.assertTrue(PAGES_WORKFLOW.is_file())
+        workflow = PAGES_WORKFLOW.read_text(encoding="utf-8")
+        for expected in (
+            "branches:\n      - main",
+            "contents: read",
+            "pages: write",
+            "id-token: write",
+            "actions/checkout@v4",
+            "actions/configure-pages@v5",
+            "actions/upload-pages-artifact@v4",
+            "actions/deploy-pages@v4",
+            "name: github-pages",
+            "url: ${{ steps.deployment.outputs.page_url }}",
+            "cp -R cczps_lite/dashboard/. _site/",
+            "data/comparison_matrix.csv",
+            "data/system_validation_report.md",
+            "data/runtime_capability_map.md",
+        ):
+            self.assertIn(expected, workflow)
 
 
 if __name__ == "__main__":
