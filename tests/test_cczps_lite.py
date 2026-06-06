@@ -69,6 +69,8 @@ class ScenarioCompareOutputTests(unittest.TestCase):
             "review_action", "review_priority", "review_owner",
             "review_triggers", "review_summary", "response_priority",
             "response_options", "response_mode", "response_summary",
+            "implementation_priority", "urgency_level", "expected_benefit",
+            "prioritised_response", "prioritisation_summary",
         )
         for field in expected_fields:
             self.assertIn(field, rows[0])
@@ -77,6 +79,7 @@ class ScenarioCompareOutputTests(unittest.TestCase):
         self.assertEqual(energy_row["evidence_strength"], "Low")
         self.assertEqual(energy_row["human_review_required"], "True")
         self.assertEqual(energy_row["response_mode"], "Evidence-building response")
+        self.assertEqual(energy_row["implementation_priority"], "High")
         self.assertIn("Field evidence collection plan", energy_row["response_options"])
 
         scenario_report = scenario_report_path.read_text(encoding="utf-8")
@@ -87,7 +90,8 @@ class ScenarioCompareOutputTests(unittest.TestCase):
         self.assertIn("### Validation Layer Runtime", scenario_report)
         self.assertIn("### Validation Feedback / Review Loop", scenario_report)
         self.assertIn("### Adaptive Response Runtime", scenario_report)
-        self.assertIn("Response priority:", scenario_report)
+        self.assertIn("### Response Prioritisation Runtime", scenario_report)
+        self.assertIn("Prioritised response:", scenario_report)
         self.assertIn("Validation layer cautiously", scenario_report)
 
         governance_summary = governance_summary_path.read_text(encoding="utf-8")
@@ -97,8 +101,9 @@ class ScenarioCompareOutputTests(unittest.TestCase):
         self.assertIn("## Validation Layer Runtime", governance_summary)
         self.assertIn("## Review Loop Reading", governance_summary)
         self.assertIn("## Adaptive Response Reading", governance_summary)
-        self.assertIn("Highest response priority pathway:", governance_summary)
-        self.assertIn("Suggested next implementation focus:", governance_summary)
+        self.assertIn("## Response Prioritisation Reading", governance_summary)
+        self.assertIn("Highest priority pathway:", governance_summary)
+        self.assertIn("Suggested first implementation focus:", governance_summary)
         self.assertIn("Scenarios requiring human review: Energy Resilience Pathway.", governance_summary)
 
     def test_input_json_files_are_valid(self) -> None:
