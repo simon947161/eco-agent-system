@@ -14,6 +14,7 @@ REPO_ROOT = PROJECT_DIR.parent
 if str(ENGINE_DIR) not in sys.path:
     sys.path.insert(0, str(ENGINE_DIR))
 
+from adaptive_response import derive_adaptive_response  # noqa: E402
 from differential_field import derive_differential_field  # noqa: E402
 from evidence_layer import (  # noqa: E402
     derive_evidence_strength,
@@ -53,6 +54,7 @@ CSV_FIELDS = [
     "evidence_strength", "source_basis", "uncertainty_notes", "human_review_required",
     "validation_score", "validation_status", "validation_gaps", "validation_summary",
     "review_action", "review_priority", "review_owner", "review_triggers", "review_summary",
+    "response_priority", "response_options", "response_mode", "response_summary",
     "resilience_score", "governance_score", "risk_adjusted_score", "recommendation_class",
 ]
 
@@ -71,7 +73,7 @@ def evidence_for_scenario(scenario: dict, evidence_profile: dict) -> dict:
 
 
 def build_comparison_rows(scenarios: list[dict], evidence_profile: dict, context_records: list[dict]) -> list[dict]:
-    """Calculate runtime, review-loop, and scoring fields."""
+    """Calculate runtime, review, response, and scoring fields."""
     rows = []
     for scenario in scenarios:
         scores = scenario.get("scores", {})
@@ -87,6 +89,7 @@ def build_comparison_rows(scenarios: list[dict], evidence_profile: dict, context
         }
         validation = derive_validation_reading(runtime, differential, forcing, evidence_result)
         review = derive_review_action(validation, evidence_result, forcing)
+        response = derive_adaptive_response(validation, review, forcing, evidence_result)
         risk_adjusted_score = calculate_risk_adjusted_score(scores)
         row = {
             "scenario_id": scenario.get("scenario_id", ""),
@@ -100,6 +103,7 @@ def build_comparison_rows(scenarios: list[dict], evidence_profile: dict, context
             **evidence_result,
             **validation,
             **review,
+            **response,
             "resilience_score": calculate_resilience_score(scores),
             "governance_score": calculate_governance_score(scores),
             "risk_adjusted_score": risk_adjusted_score,
@@ -108,6 +112,7 @@ def build_comparison_rows(scenarios: list[dict], evidence_profile: dict, context
         row["forcing_candidates"] = "; ".join(forcing["forcing_candidates"])
         row["validation_gaps"] = "; ".join(validation["validation_gaps"])
         row["review_triggers"] = "; ".join(review["review_triggers"])
+        row["response_options"] = "; ".join(response["response_options"])
         rows.append(row)
     return rows
 
@@ -139,13 +144,13 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
         f"- Climate regime: {location.get('climate_regime')}",
         "- Key climate risks:", _format_list(location.get("key_climate_risks", [])), "",
         "## Scenario Comparison Summary", "",
-        "| Scenario | Risk-adjusted score | Differential status | Evidence strength | Validation status | Review priority | Review owner | Recommendation |",
+        "| Scenario | Risk-adjusted score | Evidence | Validation | Review priority | Response priority | Response mode | Recommendation |",
         "| --- | ---: | --- | --- | --- | --- | --- | --- |",
     ]
     for row in rows:
         sections.append(
-            "| {scenario_name} | {risk_adjusted_score} | {differential_status} | "
-            "{evidence_strength} | {validation_status} | {review_priority} | {review_owner} | "
+            "| {scenario_name} | {risk_adjusted_score} | {evidence_strength} | "
+            "{validation_status} | {review_priority} | {response_priority} | {response_mode} | "
             "{recommendation_class} |".format(**row)
         )
 
@@ -179,6 +184,11 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
             f"- Review owner: {row['review_owner']}",
             f"- Review triggers: {row['review_triggers']}",
             f"- Review summary: {row['review_summary']}", "",
+            "### Adaptive Response Runtime", "",
+            f"- Response priority: {row['response_priority']}",
+            f"- Response mode: {row['response_mode']}",
+            f"- Response options: {row['response_options']}",
+            f"- Response summary: {row['response_summary']}", "",
             "### Differential Field Runtime", "",
             f"- Differential status: {row['differential_status']}",
             f"- Water gradient: {row['water_gradient']} ({row['water_gradient_class']})",
@@ -197,9 +207,9 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
     sections.extend([
         "", "## Notes on Confidence and Validation", "",
         "Low evidence indicates higher uncertainty and requires human review before decisions are advanced.",
-        "High evidence indicates comparatively higher confidence, but it does not remove the need for local consultation, professional judgement, or site-specific validation.",
+        "High evidence does not remove the need for local consultation, professional judgement, or site-specific validation.",
         "Differential field gradients are indicative comparisons against representative context records, not validated field measurements.",
-        "Forcing and review-loop outputs are candidate concept-level readings only and do not prove causality or initiate external workflows.",
+        "Forcing, review-loop, and adaptive-response outputs are candidate concept-level readings only; they are not final design advice.",
         "", "## Methodology Boundary", "",
         "CCZPS-Lite v0.4 uses local JSON inputs, transparent rules, and generated text outputs only.",
         "It does not connect to weather APIs, GIS services, databases, machine learning models, or world models.",
@@ -211,34 +221,29 @@ def _rank_value(strength: str) -> int:
     return {"Low": 1, "Medium": 2, "High": 3}.get(strength, 0)
 
 
-def _scenario_metric_text(row: dict, metric: str, class_metric: str | None = None) -> str:
-    class_text = f" ({row[class_metric]})" if class_metric else ""
-    return f"{row['scenario_name']} ({row[metric]}{class_text})"
-
-
 def _priority_rank(priority: str) -> int:
     return {"Low": 1, "Medium": 2, "High": 3}.get(priority, 0)
 
 
-def _forcing_candidates(row: dict) -> list[str]:
-    return [candidate.strip() for candidate in row["forcing_candidates"].split(";") if candidate.strip()]
+def _split_field(row: dict, field: str) -> list[str]:
+    return [value.strip() for value in row[field].split(";") if value.strip()]
 
 
-def _most_common_forcing(rows: list[dict]) -> str:
-    counts = Counter(candidate for row in rows for candidate in _forcing_candidates(row))
+def _most_common(rows: list[dict], field: str, empty_text: str) -> str:
+    counts = Counter(value for row in rows for value in _split_field(row, field))
     if not counts:
-        return "None identified"
-    candidate, count = max(counts.items(), key=lambda item: (item[1], item[0]))
-    return f"{candidate} ({count} scenario(s))"
+        return empty_text
+    value, count = max(counts.items(), key=lambda item: (item[1], item[0]))
+    return f"{value} ({count} scenario(s))"
 
 
-def _scenario_names_with_forcing(rows: list[dict], forcing_name: str) -> str:
-    names = [row["scenario_name"] for row in rows if forcing_name in _forcing_candidates(row)]
+def _scenario_names_with_value(rows: list[dict], field: str, value: str) -> str:
+    names = [row["scenario_name"] for row in rows if value in _split_field(row, field)]
     return ", ".join(names) or "None identified"
 
 
-def _scenario_names_with_action(rows: list[dict], action: str) -> str:
-    names = [row["scenario_name"] for row in rows if row["review_action"] == action]
+def _scenario_names_with_exact(rows: list[dict], field: str, value: str) -> str:
+    names = [row["scenario_name"] for row in rows if row[field] == value]
     return ", ".join(names) or "None identified"
 
 
@@ -253,7 +258,7 @@ def write_governance_summary(rows: list[dict]) -> None:
     highest_heat = max(rows, key=lambda row: row["heat_gradient"])
     strongest_vegetation = max(rows, key=lambda row: row["vegetation_gradient"])
     highest_fire = max(rows, key=lambda row: row["fire_gradient"])
-    highest_forcing_priority = max(rows, key=lambda row: _priority_rank(row["forcing_priority"]))
+    highest_forcing = max(rows, key=lambda row: _priority_rank(row["forcing_priority"]))
     weakest_validation = min(rows, key=lambda row: row["validation_score"])
     strongest_validation = max(rows, key=lambda row: row["validation_score"])
     validation_review_text = ", ".join(
@@ -263,12 +268,8 @@ def write_governance_summary(rows: list[dict]) -> None:
     highest_review = max(rows, key=lambda row: (_priority_rank(row["review_priority"]), -row["validation_score"]))
     owner_counts = Counter(row["review_owner"] for row in rows)
     common_owner, common_owner_count = max(owner_counts.items(), key=lambda item: (item[1], item[0]))
-    held = _scenario_names_with_action(rows, "Hold and collect evidence")
-    technical = _scenario_names_with_action(rows, "Escalate to technical review")
-    suggested_action = (
-        f"Begin with {highest_review['scenario_name']}: {highest_review['review_action'].lower()}, "
-        f"with the {highest_review['review_owner']} coordinating the next concept-level review."
-    )
+    highest_response = max(rows, key=lambda row: (_priority_rank(row["response_priority"]), -row["validation_score"]))
+    implementation_focus = _split_field(highest_response, "response_options")[0]
 
     lines = [
         "# Governance Summary", "", "## Recommended Reading of Results", "",
@@ -291,16 +292,16 @@ def write_governance_summary(rows: list[dict]) -> None:
         f"- Scenarios requiring human review: {human_review_text}.", "",
         "## Differential Field Reading", "",
         "These gradients compare scenario scores with indicative representative Batlow context records only.",
-        f"- Strongest water advantage: {_scenario_metric_text(strongest_water, 'water_gradient', 'water_gradient_class')}.",
-        f"- Highest heat pressure: {_scenario_metric_text(highest_heat, 'heat_gradient', 'heat_gradient_class')}.",
-        f"- Strongest vegetation buffer: {_scenario_metric_text(strongest_vegetation, 'vegetation_gradient', 'vegetation_gradient_class')}.",
-        f"- Highest fire exposure: {_scenario_metric_text(highest_fire, 'fire_gradient', 'fire_gradient_class')}.", "",
+        f"- Strongest water advantage: {strongest_water['scenario_name']} ({strongest_water['water_gradient']} ({strongest_water['water_gradient_class']})).",
+        f"- Highest heat pressure: {highest_heat['scenario_name']} ({highest_heat['heat_gradient']} ({highest_heat['heat_gradient_class']})).",
+        f"- Strongest vegetation buffer: {strongest_vegetation['scenario_name']} ({strongest_vegetation['vegetation_gradient']} ({strongest_vegetation['vegetation_gradient_class']})).",
+        f"- Highest fire exposure: {highest_fire['scenario_name']} ({highest_fire['fire_gradient']} ({highest_fire['fire_gradient_class']})).", "",
         "## Forcing Layer Reading", "",
         "These are candidate pressure readings from representative gradients only; they do not prove causality.",
-        f"- Highest forcing priority: {highest_forcing_priority['scenario_name']} ({highest_forcing_priority['forcing_priority']}; {highest_forcing_priority['primary_forcing']}).",
-        f"- Most common candidate forcing: {_most_common_forcing(rows)}.",
-        f"- Scenarios with Fire Exposure forcing: {_scenario_names_with_forcing(rows, 'Fire Exposure')}.",
-        f"- Scenarios with Microclimate Buffer Support: {_scenario_names_with_forcing(rows, 'Microclimate Buffer Support')}.", "",
+        f"- Highest forcing priority: {highest_forcing['scenario_name']} ({highest_forcing['forcing_priority']}; {highest_forcing['primary_forcing']}).",
+        f"- Most common candidate forcing: {_most_common(rows, 'forcing_candidates', 'None identified')}.",
+        f"- Scenarios with Fire Exposure forcing: {_scenario_names_with_value(rows, 'forcing_candidates', 'Fire Exposure')}.",
+        f"- Scenarios with Microclimate Buffer Support: {_scenario_names_with_value(rows, 'forcing_candidates', 'Microclimate Buffer Support')}.", "",
         "## Validation Layer Runtime", "",
         "The validation layer combines evidence strength, runtime confidence, review flags, and candidate forcing outputs into concept-level validation readings.",
         f"- Strongest validation reading: {strongest_validation['scenario_name']} ({strongest_validation['validation_score']}; {strongest_validation['validation_status']}).",
@@ -308,10 +309,16 @@ def write_governance_summary(rows: list[dict]) -> None:
         f"- Scenarios needing further validation attention: {validation_review_text}.", "",
         "## Review Loop Reading", "",
         f"- Highest review priority pathway: {highest_review['scenario_name']} ({highest_review['review_priority']}; {highest_review['review_action']}).",
-        f"- Pathways held for evidence: {held}.",
-        f"- Pathways requiring technical review: {technical}.",
+        f"- Pathways held for evidence: {_scenario_names_with_exact(rows, 'review_action', 'Hold and collect evidence')}.",
+        f"- Pathways requiring technical review: {_scenario_names_with_exact(rows, 'review_action', 'Escalate to technical review')}.",
         f"- Most common review owner: {common_owner} ({common_owner_count} scenario(s)).",
-        f"- Suggested next governance action: {suggested_action}", "",
+        f"- Suggested next governance action: Begin with {highest_review['scenario_name']}: {highest_review['review_action'].lower()}, with the {highest_review['review_owner']} coordinating the next concept-level review.", "",
+        "## Adaptive Response Reading", "",
+        f"- Highest response priority pathway: {highest_response['scenario_name']} ({highest_response['response_priority']}; {highest_response['response_mode']}).",
+        f"- Most common response option: {_most_common(rows, 'response_options', 'None identified')}.",
+        f"- Evidence-building response pathways: {_scenario_names_with_exact(rows, 'response_mode', 'Evidence-building response')}.",
+        f"- Technical response pathways: {_scenario_names_with_exact(rows, 'response_mode', 'Technical validation response')}.",
+        f"- Suggested next implementation focus: {implementation_focus} for {highest_response['scenario_name']}, subject to local and expert review; this is not final design advice.", "",
         "## Suggested Next Step", "",
         "Use the comparison as an agenda for human review: confirm evidence quality, test local assumptions, and decide which pathway should be refined first.",
     ]
