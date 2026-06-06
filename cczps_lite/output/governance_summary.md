@@ -51,6 +51,14 @@ The validation layer combines evidence strength, runtime confidence, review flag
 - Weakest validation reading: Energy Resilience Pathway (1.0; Insufficient Evidence).
 - Scenarios needing further validation attention: Energy Resilience Pathway, Ecology / Fire Buffer Priority Pathway.
 
+## Review Loop Reading
+
+- Highest review priority pathway: Energy Resilience Pathway (High; Hold and collect evidence).
+- Pathways held for evidence: Energy Resilience Pathway.
+- Pathways requiring technical review: Ecology / Fire Buffer Priority Pathway.
+- Most common review owner: Governance reviewer (1 scenario(s)).
+- Suggested next governance action: Begin with Energy Resilience Pathway: hold and collect evidence, with the Evidence coordinator coordinating the next concept-level review.
+
 ## Suggested Next Step
 
 Use the comparison as an agenda for human review: confirm evidence quality, test local assumptions, and decide which pathway should be refined first.
