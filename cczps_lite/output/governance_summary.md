@@ -28,6 +28,29 @@ Final selection requires local consultation, data validation, and governance ass
 - Highest uncertainty pathway: Energy Resilience Pathway (Concept-level assumptions only.).
 - Scenarios requiring human review: Energy Resilience Pathway.
 
+## Differential Field Reading
+
+These gradients compare scenario scores with indicative representative Batlow context records only.
+- Strongest water advantage: Water Priority Pathway (2.67 (strong_positive)).
+- Highest heat pressure: Energy Resilience Pathway (-2.33 (strong_negative)).
+- Strongest vegetation buffer: Ecology / Fire Buffer Priority Pathway (2.33 (strong_positive)).
+- Highest fire exposure: Ecology / Fire Buffer Priority Pathway (1.67 (moderate_positive)).
+
+## Forcing Layer Reading
+
+These are candidate pressure readings from representative gradients only; they do not prove causality.
+- Highest forcing priority: Water Priority Pathway (Medium; Microclimate Buffer Support).
+- Most common candidate forcing: Vegetation Stress (1 scenario(s)).
+- Scenarios with Fire Exposure forcing: Ecology / Fire Buffer Priority Pathway.
+- Scenarios with Microclimate Buffer Support: Water Priority Pathway.
+
+## Validation Layer Runtime
+
+The validation layer combines evidence strength, runtime confidence, review flags, and candidate forcing outputs into concept-level validation readings.
+- Strongest validation reading: Water Priority Pathway (8.0; Validated Enough for Concept Review).
+- Weakest validation reading: Energy Resilience Pathway (1.0; Insufficient Evidence).
+- Scenarios needing further validation attention: Energy Resilience Pathway, Ecology / Fire Buffer Priority Pathway.
+
 ## Suggested Next Step
 
 Use the comparison as an agenda for human review: confirm evidence quality, test local assumptions, and decide which pathway should be refined first.

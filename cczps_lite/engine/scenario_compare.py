@@ -15,6 +15,7 @@ if str(ENGINE_DIR) not in sys.path:
 
 from differential_field import derive_differential_field  # noqa: E402
 from forcing_layer import derive_forcing_candidates  # noqa: E402
+from validation_layer import derive_validation_reading  # noqa: E402
 from evidence_layer import (  # noqa: E402
     derive_evidence_strength,
     derive_human_review_required,
@@ -75,6 +76,10 @@ CSV_FIELDS = [
     "source_basis",
     "uncertainty_notes",
     "human_review_required",
+    "validation_score",
+    "validation_status",
+    "validation_gaps",
+    "validation_summary",
     "resilience_score",
     "governance_score",
     "risk_adjusted_score",
@@ -109,6 +114,19 @@ def build_comparison_rows(
         forcing = derive_forcing_candidates(differential, scores)
         forcing_row = {**forcing, "forcing_candidates": "; ".join(forcing["forcing_candidates"])}
         scenario_evidence = evidence_for_scenario(scenario, evidence_profile)
+        evidence_result = {
+            "evidence_strength": derive_evidence_strength(scenario_evidence),
+            "source_basis": derive_source_basis(scenario_evidence),
+            "uncertainty_notes": derive_uncertainty_notes(scenario_evidence),
+            "human_review_required": derive_human_review_required(scenario_evidence),
+        }
+        validation = derive_validation_reading(runtime, differential, forcing, evidence_result)
+        validation_row = {
+            "validation_score": validation["validation_score"],
+            "validation_status": validation["validation_status"],
+            "validation_gaps": "; ".join(validation["validation_gaps"]),
+            "validation_summary": validation["validation_summary"],
+        }
         risk_adjusted_score = calculate_risk_adjusted_score(scores)
         row = {
             "scenario_id": scenario.get("scenario_id", ""),
@@ -119,10 +137,8 @@ def build_comparison_rows(
             "runtime_reasoning": derive_runtime_reasoning(scenario, runtime),
             **differential,
             **forcing_row,
-            "evidence_strength": derive_evidence_strength(scenario_evidence),
-            "source_basis": derive_source_basis(scenario_evidence),
-            "uncertainty_notes": derive_uncertainty_notes(scenario_evidence),
-            "human_review_required": derive_human_review_required(scenario_evidence),
+            **evidence_result,
+            **validation_row,
             "resilience_score": calculate_resilience_score(scores),
             "governance_score": calculate_governance_score(scores),
             "risk_adjusted_score": risk_adjusted_score,
@@ -136,7 +152,7 @@ def write_comparison_csv(rows: list[dict]) -> None:
     """Write the comparison matrix CSV."""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     with (OUTPUT_DIR / "comparison_matrix.csv").open("w", encoding="utf-8", newline="") as file_obj:
-        writer = csv.DictWriter(file_obj, fieldnames=CSV_FIELDS)
+        writer = csv.DictWriter(file_obj, fieldnames=CSV_FIELDS, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -165,14 +181,14 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
         "",
         "## Scenario Comparison Summary",
         "",
-        "| Scenario | Risk-adjusted score | Differential status | Evidence strength | Source basis | Human review required | Recommendation |",
+        "| Scenario | Risk-adjusted score | Differential status | Evidence strength | Validation status | Human review required | Recommendation |",
         "| --- | ---: | --- | --- | --- | --- | --- |",
     ]
 
     for row in rows:
         sections.append(
             "| {scenario_name} | {risk_adjusted_score} | {differential_status} | "
-            "{evidence_strength} | {source_basis} | {human_review_required} | "
+            "{evidence_strength} | {validation_status} | {human_review_required} | "
             "{recommendation_class} |".format(**row)
         )
 
@@ -203,6 +219,13 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
                 f"- Source basis: {row['source_basis']}",
                 f"- Uncertainty notes: {row['uncertainty_notes']}",
                 f"- Human review required: {row['human_review_required']}",
+                "",
+                "### Validation Layer Runtime",
+                "",
+                f"- Validation score: {row['validation_score']}",
+                f"- Validation status: {row['validation_status']}",
+                f"- Validation gaps: {row['validation_gaps']}",
+                f"- Validation summary: {row['validation_summary']}",
                 "",
                 "### Differential Field Runtime",
                 "",
@@ -288,6 +311,15 @@ def write_governance_summary(rows: list[dict]) -> None:
     strongest_vegetation = max(rows, key=lambda row: row["vegetation_gradient"])
     highest_fire = max(rows, key=lambda row: row["fire_gradient"])
     highest_forcing_priority = max(rows, key=lambda row: _priority_rank(row["forcing_priority"]))
+    weakest_validation = min(rows, key=lambda row: row["validation_score"])
+    strongest_validation = max(rows, key=lambda row: row["validation_score"])
+    validation_review_rows = [
+        row for row in rows if row["validation_status"] != "Validated Enough for Concept Review"
+    ]
+    validation_review_text = (
+        ", ".join(row["scenario_name"] for row in validation_review_rows)
+        or "None flagged by the current validation layer"
+    )
     most_common_forcing = _most_common_forcing(rows)
     fire_forcing_scenarios = _scenario_names_with_forcing(rows, "Fire Exposure")
     microclimate_support_scenarios = _scenario_names_with_forcing(rows, "Microclimate Buffer Support")
@@ -338,6 +370,13 @@ def write_governance_summary(rows: list[dict]) -> None:
         f"- Most common candidate forcing: {most_common_forcing}.",
         f"- Scenarios with Fire Exposure forcing: {fire_forcing_scenarios}.",
         f"- Scenarios with Microclimate Buffer Support: {microclimate_support_scenarios}.",
+        "",
+        "## Validation Layer Runtime",
+        "",
+        "The validation layer combines evidence strength, runtime confidence, review flags, and candidate forcing outputs into concept-level validation readings.",
+        f"- Strongest validation reading: {strongest_validation['scenario_name']} ({strongest_validation['validation_score']}; {strongest_validation['validation_status']}).",
+        f"- Weakest validation reading: {weakest_validation['scenario_name']} ({weakest_validation['validation_score']}; {weakest_validation['validation_status']}).",
+        f"- Scenarios needing further validation attention: {validation_review_text}.",
         "",
         "## Suggested Next Step",
         "",
