@@ -103,7 +103,7 @@ class ScenarioCompareOutputTests(unittest.TestCase):
         self.assertIn("Scenario B — Kunlun Eco-Water System", validation_pack)
         self.assertIn("Scenario C — Iraq Agriculture Recovery", validation_pack)
         self.assertIn("Moderate Continuity", validation_pack)
-        self.assertIn("Human review required", validation_pack)
+        self.assertIn("human review required", validation_pack)
 
     def test_input_json_files_are_valid(self) -> None:
         input_dir = REPO_ROOT / "cczps_lite" / "input"
