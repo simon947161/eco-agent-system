@@ -59,6 +59,14 @@ The validation layer combines evidence strength, runtime confidence, review flag
 - Most common review owner: Governance reviewer (1 scenario(s)).
 - Suggested next governance action: Begin with Energy Resilience Pathway: hold and collect evidence, with the Evidence coordinator coordinating the next concept-level review.
 
+## Adaptive Response Reading
+
+- Highest response priority pathway: Energy Resilience Pathway (High; Evidence-building response).
+- Most common response option: Vegetation fuel management review (1 scenario(s)).
+- Evidence-building response pathways: Energy Resilience Pathway.
+- Technical response pathways: Ecology / Fire Buffer Priority Pathway.
+- Suggested next implementation focus: Field evidence collection plan for Energy Resilience Pathway, subject to local and expert review; this is not final design advice.
+
 ## Suggested Next Step
 
 Use the comparison as an agenda for human review: confirm evidence quality, test local assumptions, and decide which pathway should be refined first.
