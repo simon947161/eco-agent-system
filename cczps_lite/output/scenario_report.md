@@ -18,11 +18,11 @@ It is not a final planning, engineering, financial, or regulatory assessment.
 
 ## Scenario Comparison Summary
 
-| Scenario | Risk-adjusted score | Differential status | Evidence strength | Validation status | Human review required | Recommendation |
-| --- | ---: | --- | --- | --- | --- | --- |
-| Water Priority Pathway | 5.69 | water_advantage_with_heat_relief | Medium | Validated Enough for Concept Review | False | Promising but Requires Validation |
-| Energy Resilience Pathway | 4.83 | mixed_or_neutral_differential | Low | Insufficient Evidence | True | Moderate Priority |
-| Ecology / Fire Buffer Priority Pathway | 5.53 | elevated_fire_exposure | Medium | Requires Technical Validation | False | Promising but Requires Validation |
+| Scenario | Risk-adjusted score | Differential status | Evidence strength | Validation status | Review priority | Review owner | Recommendation |
+| --- | ---: | --- | --- | --- | --- | --- | --- |
+| Water Priority Pathway | 5.69 | water_advantage_with_heat_relief | Medium | Validated Enough for Concept Review | Low | Governance reviewer | Promising but Requires Validation |
+| Energy Resilience Pathway | 4.83 | mixed_or_neutral_differential | Low | Insufficient Evidence | High | Evidence coordinator | Moderate Priority |
+| Ecology / Fire Buffer Priority Pathway | 5.53 | elevated_fire_exposure | Medium | Requires Technical Validation | Medium | Fire resilience reviewer | Promising but Requires Validation |
 
 ## Scenario A: Water Priority
 
@@ -52,6 +52,14 @@ Focuses on water retention, orchard resilience, irrigation timing, runoff captur
 - Validation status: Validated Enough for Concept Review
 - Validation gaps: No major validation gap identified at concept level
 - Validation summary: Validation layer cautiously considers this pathway sufficient for concept-level review (score 8.0), but local consultation and site checks remain necessary.
+
+### Validation Feedback / Review Loop
+
+- Review action: Proceed to concept review
+- Review priority: Low
+- Review owner: Governance reviewer
+- Review triggers: No major validation gap identified at concept level; Microclimate Buffer Support
+- Review summary: Review loop recommends proceed to concept review at low priority, led by the Governance reviewer. This is a concept-level routing suggestion and remains subject to human judgement.
 
 ### Differential Field Runtime
 
@@ -99,6 +107,14 @@ Focuses on renewable energy, battery storage, microgrid logic, cooling demand re
 - Validation gaps: Need stronger field evidence or technical assessment
 - Validation summary: Validation layer cautiously rates this pathway as insufficient evidence because evidence is low and candidate assumptions remain unresolved.
 
+### Validation Feedback / Review Loop
+
+- Review action: Hold and collect evidence
+- Review priority: High
+- Review owner: Evidence coordinator
+- Review triggers: Need stronger field evidence or technical assessment; Mixed / Unclear Forcing
+- Review summary: Review loop recommends hold and collect evidence at high priority, led by the Evidence coordinator. This is a concept-level routing suggestion and remains subject to human judgement.
+
 ### Differential Field Runtime
 
 - Differential status: mixed_or_neutral_differential
@@ -145,6 +161,14 @@ Focuses on vegetation restoration, fire-buffer corridors, ecological recovery, l
 - Validation gaps: Need bushfire exposure and vegetation management review; Need ecological condition and canopy-cover review
 - Validation summary: Validation layer cautiously rates this pathway as requiring technical validation due to medium evidence and unresolved candidate forcing assumptions.
 
+### Validation Feedback / Review Loop
+
+- Review action: Escalate to technical review
+- Review priority: Medium
+- Review owner: Fire resilience reviewer
+- Review triggers: Need bushfire exposure and vegetation management review; Need ecological condition and canopy-cover review; Fire Exposure
+- Review summary: Review loop recommends escalate to technical review at medium priority, led by the Fire resilience reviewer. This is a concept-level routing suggestion and remains subject to human judgement.
+
 ### Differential Field Runtime
 
 - Differential status: elevated_fire_exposure
@@ -167,7 +191,7 @@ Focuses on vegetation restoration, fire-buffer corridors, ecological recovery, l
 Low evidence indicates higher uncertainty and requires human review before decisions are advanced.
 High evidence indicates comparatively higher confidence, but it does not remove the need for local consultation, professional judgement, or site-specific validation.
 Differential field gradients are indicative comparisons against representative context records, not validated field measurements.
-Forcing layer outputs identify candidate pressures only and do not prove causality.
+Forcing and review-loop outputs are candidate concept-level readings only and do not prove causality or initiate external workflows.
 
 ## Methodology Boundary
 
