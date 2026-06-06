@@ -67,6 +67,16 @@ The validation layer combines evidence strength, runtime confidence, review flag
 - Technical response pathways: Ecology / Fire Buffer Priority Pathway.
 - Suggested next implementation focus: Field evidence collection plan for Energy Resilience Pathway, subject to local and expert review; this is not final design advice.
 
+## Response Prioritisation Reading
+
+- Highest priority pathway: Energy Resilience Pathway (High; Moderate).
+- Most common prioritised response: Field evidence collection plan (1 scenario(s)).
+- Critical urgency pathways: Ecology / Fire Buffer Priority Pathway.
+- Evidence-priority pathways: Energy Resilience Pathway.
+- Water-priority pathways: None identified.
+- Fire-priority pathways: Ecology / Fire Buffer Priority Pathway.
+- Suggested first implementation focus: Field evidence collection plan for Energy Resilience Pathway, as a candidate response subject to concept-level review and local checking.
+
 ## Suggested Next Step
 
 Use the comparison as an agenda for human review: confirm evidence quality, test local assumptions, and decide which pathway should be refined first.
