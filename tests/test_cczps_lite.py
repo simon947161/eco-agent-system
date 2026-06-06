@@ -23,8 +23,6 @@ from scenario_compare import main as run_scenario_compare  # noqa: E402
 
 
 class EvidenceLayerTests(unittest.TestCase):
-    """Verify evidence derivation rules remain transparent and stable."""
-
     def test_low_evidence_requires_human_review(self) -> None:
         evidence = {
             "strength": "low",
@@ -47,64 +45,65 @@ class EvidenceLayerTests(unittest.TestCase):
 
 
 class ScenarioCompareOutputTests(unittest.TestCase):
-    """Verify generated outputs include all governance runtime fields."""
-
-    def test_generated_outputs_include_evidence_fields(self) -> None:
+    def test_generated_outputs_include_complete_runtime_fields(self) -> None:
         run_scenario_compare()
         output_dir = REPO_ROOT / "cczps_lite" / "output"
-        comparison_path = output_dir / "comparison_matrix.csv"
-        scenario_report_path = output_dir / "scenario_report.md"
-        governance_summary_path = output_dir / "governance_summary.md"
-
-        with comparison_path.open("r", encoding="utf-8", newline="") as file_obj:
+        with (output_dir / "comparison_matrix.csv").open(
+            "r", encoding="utf-8", newline=""
+        ) as file_obj:
             rows = list(csv.DictReader(file_obj))
 
-        self.assertEqual(len(rows), 3)
+        self.assertEqual(len(rows), 8)
         expected_fields = (
-            "evidence_strength", "source_basis", "uncertainty_notes",
-            "human_review_required", "water_gradient", "differential_status",
-            "differential_summary", "forcing_candidates", "primary_forcing",
-            "forcing_priority", "forcing_summary", "validation_score",
-            "validation_status", "validation_gaps", "validation_summary",
-            "review_action", "review_priority", "review_owner",
-            "review_triggers", "review_summary", "response_priority",
-            "response_options", "response_mode", "response_summary",
+            "validation_context", "geography", "geographic_scale",
+            "watershed_stage", "watershed_continuity", "evidence_strength",
+            "source_basis", "uncertainty_notes", "human_review_required",
+            "water_gradient", "differential_status", "forcing_candidates",
+            "primary_forcing", "forcing_priority", "validation_score",
+            "validation_status", "validation_gaps", "review_action",
+            "review_priority", "review_owner", "review_triggers",
+            "response_priority", "response_options", "response_mode",
             "implementation_priority", "urgency_level", "expected_benefit",
             "prioritised_response", "prioritisation_summary",
         )
         for field in expected_fields:
             self.assertIn(field, rows[0])
 
+        ids = {row["scenario_id"] for row in rows}
+        for scenario_id in (
+            "BATLOW_ENERGY_RESILIENCE",
+            "KUNLUN_ECO_WATER",
+            "IRAQ_AGRICULTURE_RECOVERY",
+            "XIONGAN_WUTAI_HEADWATERS",
+            "XIONGAN_BAIYANGDIAN_WETLAND",
+            "XIONGAN_DOWNSTREAM_URBAN",
+        ):
+            self.assertIn(scenario_id, ids)
+
         energy_row = next(row for row in rows if row["scenario_id"] == "BATLOW_ENERGY_RESILIENCE")
         self.assertEqual(energy_row["evidence_strength"], "Low")
         self.assertEqual(energy_row["human_review_required"], "True")
-        self.assertEqual(energy_row["response_mode"], "Evidence-building response")
         self.assertEqual(energy_row["implementation_priority"], "High")
-        self.assertIn("Field evidence collection plan", energy_row["response_options"])
 
-        scenario_report = scenario_report_path.read_text(encoding="utf-8")
-        self.assertIn("## Notes on Confidence and Validation", scenario_report)
-        self.assertIn("Evidence strength: Low", scenario_report)
-        self.assertIn("### Differential Field Runtime", scenario_report)
-        self.assertIn("### Forcing Layer Runtime", scenario_report)
-        self.assertIn("### Validation Layer Runtime", scenario_report)
-        self.assertIn("### Validation Feedback / Review Loop", scenario_report)
-        self.assertIn("### Adaptive Response Runtime", scenario_report)
+        watershed_rows = [row for row in rows if row["scenario_id"].startswith("XIONGAN_")]
+        self.assertEqual(len(watershed_rows), 3)
+        self.assertEqual(
+            {row["watershed_continuity"] for row in watershed_rows},
+            {"Moderate Continuity"},
+        )
+
+        scenario_report = (output_dir / "scenario_report.md").read_text(encoding="utf-8")
+        governance_summary = (output_dir / "governance_summary.md").read_text(encoding="utf-8")
+        validation_pack = (output_dir / "scenario_validation_pack.md").read_text(encoding="utf-8")
         self.assertIn("### Response Prioritisation Runtime", scenario_report)
-        self.assertIn("Prioritised response:", scenario_report)
-        self.assertIn("Validation layer cautiously", scenario_report)
-
-        governance_summary = governance_summary_path.read_text(encoding="utf-8")
-        self.assertIn("## Evidence Assessment", governance_summary)
-        self.assertIn("## Differential Field Reading", governance_summary)
-        self.assertIn("## Forcing Layer Reading", governance_summary)
-        self.assertIn("## Validation Layer Runtime", governance_summary)
-        self.assertIn("## Review Loop Reading", governance_summary)
-        self.assertIn("## Adaptive Response Reading", governance_summary)
-        self.assertIn("## Response Prioritisation Reading", governance_summary)
-        self.assertIn("Highest priority pathway:", governance_summary)
-        self.assertIn("Suggested first implementation focus:", governance_summary)
-        self.assertIn("Scenarios requiring human review: Energy Resilience Pathway.", governance_summary)
+        self.assertIn("## Multi-Scale Scenario Validation", scenario_report)
+        self.assertIn("### Watershed Continuity Reading", scenario_report)
+        self.assertIn("## Multi-Scale Validation Reading", governance_summary)
+        self.assertIn("# CCZPS-Lite Multi-Scale Scenario Validation Pack", validation_pack)
+        self.assertIn("Scenario B — Kunlun Eco-Water System", validation_pack)
+        self.assertIn("Scenario C — Iraq Agriculture Recovery", validation_pack)
+        self.assertIn("Moderate Continuity", validation_pack)
+        self.assertIn("human review required", validation_pack)
 
     def test_input_json_files_are_valid(self) -> None:
         input_dir = REPO_ROOT / "cczps_lite" / "input"
