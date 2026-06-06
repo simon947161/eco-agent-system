@@ -23,6 +23,7 @@ from evidence_layer import (  # noqa: E402
     derive_uncertainty_notes,
 )
 from forcing_layer import derive_forcing_candidates  # noqa: E402
+from response_prioritisation import derive_response_prioritisation  # noqa: E402
 from review_loop import derive_review_action  # noqa: E402
 from runtime_fields import derive_runtime_fields  # noqa: E402
 from runtime_reasoning import derive_runtime_reasoning  # noqa: E402
@@ -55,6 +56,8 @@ CSV_FIELDS = [
     "validation_score", "validation_status", "validation_gaps", "validation_summary",
     "review_action", "review_priority", "review_owner", "review_triggers", "review_summary",
     "response_priority", "response_options", "response_mode", "response_summary",
+    "implementation_priority", "urgency_level", "expected_benefit",
+    "prioritised_response", "prioritisation_summary",
     "resilience_score", "governance_score", "risk_adjusted_score", "recommendation_class",
 ]
 
@@ -73,7 +76,7 @@ def evidence_for_scenario(scenario: dict, evidence_profile: dict) -> dict:
 
 
 def build_comparison_rows(scenarios: list[dict], evidence_profile: dict, context_records: list[dict]) -> list[dict]:
-    """Calculate runtime, review, response, and scoring fields."""
+    """Calculate runtime, response, prioritisation, and scoring fields."""
     rows = []
     for scenario in scenarios:
         scores = scenario.get("scores", {})
@@ -90,6 +93,7 @@ def build_comparison_rows(scenarios: list[dict], evidence_profile: dict, context
         validation = derive_validation_reading(runtime, differential, forcing, evidence_result)
         review = derive_review_action(validation, evidence_result, forcing)
         response = derive_adaptive_response(validation, review, forcing, evidence_result)
+        prioritisation = derive_response_prioritisation(response, validation, forcing)
         risk_adjusted_score = calculate_risk_adjusted_score(scores)
         row = {
             "scenario_id": scenario.get("scenario_id", ""),
@@ -104,6 +108,7 @@ def build_comparison_rows(scenarios: list[dict], evidence_profile: dict, context
             **validation,
             **review,
             **response,
+            **prioritisation,
             "resilience_score": calculate_resilience_score(scores),
             "governance_score": calculate_governance_score(scores),
             "risk_adjusted_score": risk_adjusted_score,
@@ -144,13 +149,13 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
         f"- Climate regime: {location.get('climate_regime')}",
         "- Key climate risks:", _format_list(location.get("key_climate_risks", [])), "",
         "## Scenario Comparison Summary", "",
-        "| Scenario | Risk-adjusted score | Evidence | Validation | Review priority | Response priority | Response mode | Recommendation |",
-        "| --- | ---: | --- | --- | --- | --- | --- | --- |",
+        "| Scenario | Validation | Response priority | Implementation priority | Urgency | Prioritised response | Recommendation |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
     ]
     for row in rows:
         sections.append(
-            "| {scenario_name} | {risk_adjusted_score} | {evidence_strength} | "
-            "{validation_status} | {review_priority} | {response_priority} | {response_mode} | "
+            "| {scenario_name} | {validation_status} | {response_priority} | "
+            "{implementation_priority} | {urgency_level} | {prioritised_response} | "
             "{recommendation_class} |".format(**row)
         )
 
@@ -189,6 +194,12 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
             f"- Response mode: {row['response_mode']}",
             f"- Response options: {row['response_options']}",
             f"- Response summary: {row['response_summary']}", "",
+            "### Response Prioritisation Runtime", "",
+            f"- Implementation priority: {row['implementation_priority']}",
+            f"- Urgency level: {row['urgency_level']}",
+            f"- Expected benefit: {row['expected_benefit']}",
+            f"- Prioritised response: {row['prioritised_response']}",
+            f"- Prioritisation summary: {row['prioritisation_summary']}", "",
             "### Differential Field Runtime", "",
             f"- Differential status: {row['differential_status']}",
             f"- Water gradient: {row['water_gradient']} ({row['water_gradient_class']})",
@@ -209,7 +220,7 @@ def write_scenario_report(location: dict, scenarios: list[dict], rows: list[dict
         "Low evidence indicates higher uncertainty and requires human review before decisions are advanced.",
         "High evidence does not remove the need for local consultation, professional judgement, or site-specific validation.",
         "Differential field gradients are indicative comparisons against representative context records, not validated field measurements.",
-        "Forcing, review-loop, and adaptive-response outputs are candidate concept-level readings only; they are not final design advice.",
+        "Response and prioritisation outputs are candidate concept-level readings only; they require review and are not final design advice.",
         "", "## Methodology Boundary", "",
         "CCZPS-Lite v0.4 uses local JSON inputs, transparent rules, and generated text outputs only.",
         "It does not connect to weather APIs, GIS services, databases, machine learning models, or world models.",
@@ -223,6 +234,10 @@ def _rank_value(strength: str) -> int:
 
 def _priority_rank(priority: str) -> int:
     return {"Low": 1, "Medium": 2, "High": 3}.get(priority, 0)
+
+
+def _urgency_rank(urgency: str) -> int:
+    return {"Routine": 1, "Moderate": 2, "Critical": 3}.get(urgency, 0)
 
 
 def _split_field(row: dict, field: str) -> list[str]:
@@ -270,6 +285,14 @@ def write_governance_summary(rows: list[dict]) -> None:
     common_owner, common_owner_count = max(owner_counts.items(), key=lambda item: (item[1], item[0]))
     highest_response = max(rows, key=lambda row: (_priority_rank(row["response_priority"]), -row["validation_score"]))
     implementation_focus = _split_field(highest_response, "response_options")[0]
+    highest_implementation = max(
+        rows,
+        key=lambda row: (
+            _priority_rank(row["implementation_priority"]),
+            _urgency_rank(row["urgency_level"]),
+            -row["validation_score"],
+        ),
+    )
 
     lines = [
         "# Governance Summary", "", "## Recommended Reading of Results", "",
@@ -319,6 +342,14 @@ def write_governance_summary(rows: list[dict]) -> None:
         f"- Evidence-building response pathways: {_scenario_names_with_exact(rows, 'response_mode', 'Evidence-building response')}.",
         f"- Technical response pathways: {_scenario_names_with_exact(rows, 'response_mode', 'Technical validation response')}.",
         f"- Suggested next implementation focus: {implementation_focus} for {highest_response['scenario_name']}, subject to local and expert review; this is not final design advice.", "",
+        "## Response Prioritisation Reading", "",
+        f"- Highest priority pathway: {highest_implementation['scenario_name']} ({highest_implementation['implementation_priority']}; {highest_implementation['urgency_level']}).",
+        f"- Most common prioritised response: {_most_common(rows, 'prioritised_response', 'None identified')}.",
+        f"- Critical urgency pathways: {_scenario_names_with_exact(rows, 'urgency_level', 'Critical')}.",
+        f"- Evidence-priority pathways: {_scenario_names_with_exact(rows, 'expected_benefit', 'Confidence improvement')}.",
+        f"- Water-priority pathways: {_scenario_names_with_exact(rows, 'expected_benefit', 'Hydrological resilience improvement')}.",
+        f"- Fire-priority pathways: {_scenario_names_with_exact(rows, 'expected_benefit', 'Risk reduction and asset protection')}.",
+        f"- Suggested first implementation focus: {highest_implementation['prioritised_response']} for {highest_implementation['scenario_name']}, as a candidate response subject to concept-level review and local checking.", "",
         "## Suggested Next Step", "",
         "Use the comparison as an agenda for human review: confirm evidence quality, test local assumptions, and decide which pathway should be refined first.",
     ]
