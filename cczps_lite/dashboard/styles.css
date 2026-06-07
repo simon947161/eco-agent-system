@@ -505,6 +505,156 @@ select {
 .document-viewer table { min-width: 680px; font-size: 0.82rem; }
 .document-viewer .table-wrap { overflow-x: auto; }
 
+.meteorology-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.meteorology-card {
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.meteorology-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px;
+  color: #f6f7ee;
+  background: var(--forest-deep);
+}
+
+.meteorology-card-header h3 {
+  margin: 4px 0 2px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+
+.meteorology-card-header p {
+  margin: 0;
+  color: var(--sage);
+  font-size: 0.82rem;
+}
+
+.meteorology-scenario {
+  color: var(--amber);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.meteorology-status {
+  flex: 0 0 auto;
+  max-width: 190px;
+  padding: 6px 10px;
+  color: var(--forest-deep);
+  background: #e6e9df;
+  border: 1px solid #cbd0c4;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.meteorology-status.success,
+.meteorology-status.cached { background: var(--lime); border-color: #c3ce87; }
+.meteorology-status.blocked { color: #714817; background: #f4e5c7; border-color: #dfc58e; }
+.meteorology-status.missing,
+.meteorology-status.not-retrieved { color: #4e5b55; background: #e6e9e4; border-color: #cbd0ca; }
+.meteorology-status.failed { color: #7a3327; background: #f4ddd4; border-color: #deb1a1; }
+
+.meteorology-context,
+.meteorology-metrics {
+  display: grid;
+  margin: 0;
+}
+
+.meteorology-context {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-bottom: 1px solid var(--line);
+}
+
+.meteorology-context > div {
+  padding: 16px 20px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.meteorology-context > div:nth-child(even) { border-right: 0; }
+.meteorology-context > div:nth-last-child(-n + 2) { border-bottom: 0; }
+
+.meteorology-context dt,
+.meteorology-metric dt {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.meteorology-context dd {
+  margin: 3px 0 0;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.meteorology-metrics {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 20px;
+  gap: 12px;
+}
+
+.meteorology-metric {
+  min-width: 0;
+  padding: 14px;
+  background: #f0f1e9;
+  border-radius: 10px;
+}
+
+.meteorology-metric dd {
+  margin: 7px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  line-height: 1.15;
+}
+
+.metric-unit {
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.missing-value {
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-style: italic;
+}
+
+.meteorology-guard-summary,
+.meteorology-empty {
+  margin: 0;
+  padding: 16px 20px;
+  color: #4e5b55;
+  background: #ecefe8;
+  border-top: 1px solid var(--line);
+  font-size: 0.8rem;
+}
+
+.meteorology-empty {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -523,6 +673,7 @@ footer code { color: var(--lime); }
   .runtime-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .runtime-stage:nth-child(2)::after { content: none; }
   .detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .meteorology-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 720px) {
@@ -532,7 +683,14 @@ footer code { color: var(--lime); }
   .overview-grid,
   .runtime-flow,
   .detail-grid,
-  .point-grid { grid-template-columns: 1fr; }
+  .point-grid,
+  .meteorology-grid,
+  .meteorology-context,
+  .meteorology-metrics { grid-template-columns: 1fr; }
+  .meteorology-card-header { flex-direction: column; }
+  .meteorology-context > div { border-right: 0; }
+  .meteorology-context > div:nth-last-child(-n + 2) { border-bottom: 1px solid var(--line); }
+  .meteorology-context > div:last-child { border-bottom: 0; }
   .runtime-stage::after { content: "↓"; top: auto; right: 50%; bottom: -15px; transform: translateX(50%); }
   .runtime-stage:nth-child(2)::after,
   .runtime-stage:nth-child(4)::after { content: "↓"; }
