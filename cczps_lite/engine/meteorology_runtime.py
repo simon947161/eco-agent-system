@@ -20,9 +20,11 @@ except ImportError:
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = PROJECT_DIR / "output" / "meteorology_evidence.json"
 CACHE_PATH = PROJECT_DIR / "output" / "meteorology_cache.json"
+TIMESERIES_PATH = PROJECT_DIR / "output" / "meteorology_timeseries.json"
 LOCATION_PATH = PROJECT_DIR / "input" / "meteorology_locations.json"
 NASA_POWER_ENDPOINT = "https://power.larc.nasa.gov/api/temporal/daily/point"
 NASA_PARAMETERS = "T2M,PRECTOTCORR,RH2M,WS2M,WD2M,ALLSKY_SFC_SW_DWN"
+TIMESERIES_SCHEMA_VERSION = "1.0"
 
 
 def nasa_power_fetch(request: dict) -> dict:
@@ -53,6 +55,89 @@ def load_locations(path: Path = LOCATION_PATH) -> list[dict]:
 
 def load_cache(path: Path = CACHE_PATH) -> dict:
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"readings": {}}
+
+
+def empty_timeseries() -> dict:
+    return {
+        "schema_version": TIMESERIES_SCHEMA_VERSION,
+        "runtime": "Meteorology Time-Series Store",
+        "decision_boundary": (
+            "Historical observational evidence only. No forecast, prediction, "
+            "recommendation, or automated scoring change."
+        ),
+        "observations": [],
+    }
+
+
+def load_timeseries(path: Path = TIMESERIES_PATH) -> dict:
+    if not path.exists() or not path.read_text(encoding="utf-8").strip():
+        return empty_timeseries()
+    stored = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(stored, list):
+        migrated = empty_timeseries()
+        migrated["observations"] = stored
+        return migrated
+    if not isinstance(stored, dict):
+        raise ValueError("meteorology time-series store must be an object or legacy list")
+    observations = stored.get("observations", [])
+    if not isinstance(observations, list):
+        raise ValueError("meteorology time-series observations must be a list")
+    if stored.get("schema_version") not in (None, TIMESERIES_SCHEMA_VERSION):
+        raise ValueError("unsupported meteorology time-series schema version")
+    migrated = empty_timeseries()
+    migrated["observations"] = observations
+    return migrated
+
+
+def _timeseries_observation(record: dict) -> dict:
+    reading = record["meteorology_reading"]
+    return {
+        "scenario_id": record["scenario_id"],
+        "location_name": record["location_name"],
+        "observation_date": record["observation_date"],
+        "observation_timestamp": reading.get("observation_timestamp"),
+        "source": record["source"],
+        "retrieval_status": record["retrieval_status"],
+        "confidence": record["confidence"],
+        "budget_guard_status": record.get("budget_guard_status"),
+        "budget_guard_summary": record.get("budget_guard_summary"),
+        "meteorology_reading": reading,
+    }
+
+
+def update_timeseries(output: dict, path: Path = TIMESERIES_PATH) -> dict:
+    store = load_timeseries(path)
+    observations = store["observations"]
+    existing_keys = {
+        (
+            item.get("scenario_id"),
+            item.get("location_name"),
+            item.get("observation_date"),
+        )
+        for item in observations
+    }
+    for record in output.get("scenarios", {}).values():
+        if record.get("retrieval_status") != "success":
+            continue
+        key = (
+            record.get("scenario_id"),
+            record.get("location_name"),
+            record.get("observation_date"),
+        )
+        if None in key or key in existing_keys:
+            continue
+        observations.append(_timeseries_observation(record))
+        existing_keys.add(key)
+    observations.sort(
+        key=lambda item: (
+            item.get("observation_date") or "",
+            item.get("scenario_id") or "",
+            item.get("location_name") or "",
+        )
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(store, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
+    return store
 
 
 def cache_key(location: dict, date: str) -> str:
@@ -120,6 +205,8 @@ def main(argv: list[str] | None = None) -> None:
     output = build_live_meteorology_output(args.date, args.force_refresh, args.manual_approval) if args.live else build_meteorology_output()
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(output, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
+    if args.live:
+        update_timeseries(output)
     print(f"Generated {OUTPUT_PATH.relative_to(PROJECT_DIR.parent)}")
 
 
