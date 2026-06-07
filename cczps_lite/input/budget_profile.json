@@ -1,0 +1,20 @@
+{
+  "purpose": "Local pre-execution guard declarations only. No metering, billing, or external calls are performed.",
+  "default": {
+    "monthly_budget_limit": "medium",
+    "daily_call_limit": 20,
+    "agent_run_limit": 5,
+    "manual_confirmation_required_for_agent_mode": true,
+    "stop_if_budget_exceeded": true
+  },
+  "scenarios": {
+    "BATLOW_WATER_PRIORITY": {"resource_classes": [], "estimated_calls": 0, "estimated_monthly_cost": "low", "agent_run_count": 0, "repeated_external_calls": false, "continuous_execution": false, "manual_approval_granted": false},
+    "BATLOW_ENERGY_RESILIENCE": {"resource_classes": ["meteorology", "sensor_network"], "estimated_calls": 12, "estimated_monthly_cost": "medium", "agent_run_count": 0, "repeated_external_calls": true, "continuous_execution": false, "manual_approval_granted": false},
+    "BATLOW_ECOLOGY_FIRE_BUFFER": {"resource_classes": ["satellite"], "estimated_calls": 6, "estimated_monthly_cost": "medium", "agent_run_count": 0, "repeated_external_calls": false, "continuous_execution": false, "manual_approval_granted": false},
+    "KUNLUN_ECO_WATER": {"resource_classes": ["meteorology", "satellite"], "estimated_calls": 18, "estimated_monthly_cost": "medium", "agent_run_count": 1, "repeated_external_calls": true, "continuous_execution": false, "manual_approval_granted": false},
+    "IRAQ_AGRICULTURE_RECOVERY": {"resource_classes": ["meteorology", "gis"], "estimated_calls": 16, "estimated_monthly_cost": "medium", "agent_run_count": 0, "repeated_external_calls": true, "continuous_execution": false, "manual_approval_granted": false},
+    "XIONGAN_WUTAI_HEADWATERS": {"resource_classes": ["meteorology", "gis", "satellite"], "estimated_calls": 20, "estimated_monthly_cost": "medium", "agent_run_count": 2, "repeated_external_calls": true, "continuous_execution": false, "manual_approval_granted": false},
+    "XIONGAN_BAIYANGDIAN_WETLAND": {"resource_classes": ["meteorology", "gis", "satellite", "sensor_network"], "estimated_calls": 24, "estimated_monthly_cost": "high", "agent_run_count": 6, "repeated_external_calls": true, "continuous_execution": true, "manual_approval_granted": false},
+    "XIONGAN_DOWNSTREAM_URBAN": {"resource_classes": ["meteorology", "gis", "satellite"], "estimated_calls": 19, "estimated_monthly_cost": "medium", "agent_run_count": 2, "repeated_external_calls": true, "continuous_execution": false, "manual_approval_granted": true}
+  }
+}

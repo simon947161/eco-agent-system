@@ -26,12 +26,10 @@ From the repository root:
 python cczps_lite/engine/scenario_compare.py
 python cczps_lite/engine/meteorology_runtime.py
 python cczps_lite/engine/usage_cost_governance.py
+python cczps_lite/engine/budget_guard.py
 ```
 
-The scripts use only the Python standard library. Meteorology transport is
-injected by the caller and disabled for generated fixtures, so routine tests do
-not call weather APIs. The runtimes do not use forecasting, machine learning,
-autonomous recommendations, GIS services, databases, or world models.
+The scripts use only the Python standard library. Meteorology transport is injected by the caller and disabled for generated fixtures, so routine tests do not call weather APIs. The runtimes do not use forecasting, machine learning, autonomous recommendations, GIS services, databases, or world models.
 
 ## Input Files
 
@@ -41,65 +39,41 @@ autonomous recommendations, GIS services, databases, or world models.
 - `input/meteorology_sources.json` defines documented public observation sources and field mappings.
 - `input/meteorology_scenarios.json` defines the Batlow, Kunlun, Iraq, and Baiyangdian-Xiong'an observation requests.
 - `input/usage_cost_profiles.json` declares proposed usage, ownership, automation, budget-control, and service-model assumptions.
+- `input/budget_profile.json` declares local qualitative budget and execution limits plus scenario resource requests.
 
 ## Generated Output Files
 
-- `output/comparison_matrix.csv` contains scenario scores, runtime fields, evidence fields, recommendation classes, and usage governance readings.
+- `output/comparison_matrix.csv` contains scenario scores, runtime fields, evidence fields, recommendation classes, usage governance readings, and budget guard readings.
 - `output/scenario_report.md` provides a readable scenario comparison report.
-- `output/governance_summary.md` provides a short governance-oriented summary, including evidence and usage assessment.
+- `output/governance_summary.md` provides a short governance-oriented summary, including evidence, usage, and guard assessment.
 
 ## Meteorology Connector Runtime
 
 ### Current Status: Connector Scaffold Only
 
-Task 18 does not retrieve live meteorology data. It provides source
-definitions, field mappings, payload standardisation, missing-data handling,
-and an injected `fetcher` interface for future transport implementations.
+Task 18 does not retrieve live meteorology data. It provides source definitions, field mappings, payload standardisation, missing-data handling, and an injected `fetcher` interface for future transport implementations.
 
-There is currently no built-in HTTP client, provider endpoint construction,
-API authentication, ERA5/CDS client, BOM downloader, or scheduled retrieval.
-Running `meteorology_runtime.py` without an externally supplied fetcher creates
-local records with null observation values and
-`"retrieval_status": "not_retrieved"`.
+There is currently no built-in HTTP client, provider endpoint construction, API authentication, ERA5/CDS client, BOM downloader, or scheduled retrieval. Running `meteorology_runtime.py` without an externally supplied fetcher creates local records with null observation values and `"retrieval_status": "not_retrieved"`.
 
-The NASA POWER values used in tests are a hard-coded parsing fixture. They are
-not remotely retrieved observations. NOAA, ERA5, and BOM have source
-definitions only and no provider-specific retrieval implementation.
+The NASA POWER values used in tests are a hard-coded parsing fixture. They are not remotely retrieved observations. NOAA, ERA5, and BOM have source definitions only and no provider-specific retrieval implementation.
 
-The connector standardises air temperature, rainfall, relative humidity, wind
-speed, wind direction, solar radiation, and evaporation when those values are
-available from a configured source payload. Every reading exposes its source,
-observation timestamp, retrieval status, and evidence confidence.
-
-Meteorology is supporting evidence only. Missing values remain explicit, and
-the connector does not change validation scores or produce conclusions unless a
-future task introduces and documents an explicit rule.
+Meteorology is supporting evidence only. Missing values remain explicit, and the connector does not change validation scores or produce conclusions unless a future task introduces and documents an explicit rule.
 
 ## Usage & Cost Governance Runtime
 
-Run `python cczps_lite/engine/usage_cost_governance.py` after scenario
-generation. It adds a usage and cost governance reading to every scenario
-through explicit CSV fields and appends readable sections to the
-scenario, governance, and system validation reports.
+Run `python cczps_lite/engine/usage_cost_governance.py` after scenario generation. It adds a usage and cost governance reading to every scenario through explicit CSV fields and appends readable sections to the scenario, governance, and system validation reports.
 
-Cost levels are qualitative governance bands, not currency estimates. The
-runtime performs no external API calls, metering, billing, payments,
-subscriptions, invoicing, crypto payments, token operations, or marketplaces.
-An approval requirement is visible but is never granted automatically.
+Cost levels are qualitative governance bands, not currency estimates. The runtime performs no external API calls, metering, billing, payments, subscriptions, invoicing, crypto payments, token operations, or marketplaces. An approval requirement is visible but is never granted automatically.
 
-The runtime supports idea, research, project, agent, and enterprise modes.
-Research mode represents repeated evidence gathering with moderate resource
-consumption and low automation. Every reading identifies the resource owner,
-external cost bearer, and platform service recipient. It also exposes
-qualitative external-resource cost, platform fee-model and fee-estimate
-classifications, and agentic consumption risk.
+The runtime supports idea, research, project, agent, and enterprise modes. Every reading identifies the resource owner, external cost bearer, and platform service recipient. External resource costs belong to the resource consumer; the platform does not silently absorb API, cloud, AI, satellite, GIS, or sensor-network costs.
 
-External resource costs belong to the resource consumer. The platform does not
-silently absorb API, cloud, AI, satellite, GIS, or sensor-network costs. The
-provider-agnostic governance structure can classify future NASA POWER, NOAA,
-ERA5, BOM, OpenAI, GIS, satellite, and sensor integrations without redesign.
-No financial calculation, billing, invoice, subscription, payment, token, or
-RWA function is implemented.
+## Budget Guard Runtime
+
+Run `python cczps_lite/engine/budget_guard.py` after the Usage & Cost Governance Runtime. It classifies each declared resource request as `within_budget`, `approval_required`, `warning`, or `stop_required`.
+
+Hard daily-call, monthly-cost, and agent-run limits take precedence over manual approval. Manual approval may clear an approval-only condition, but it cannot override a hard stop. Very-high agentic consumption risk without approval also stops before execution.
+
+The guard uses local fixtures and qualitative cost bands only. It performs no live metering, external calls, billing, payments, invoicing, subscriptions, autonomous spending, token operations, crypto operations, or RWA functions.
 
 ## Methodology Boundary
 
@@ -109,4 +83,4 @@ Low evidence means higher uncertainty and triggers human review. High evidence m
 
 ## Connection to CCZPS 2.0 and EcoEngine
 
-CCZPS compares possible futures. EcoEngine runtime logic helps describe how scenario assumptions translate into operational signals. This CCZPS-Lite version introduces the first evidence layer so that governance outputs can show where assumptions come from, where uncertainty is highest, and which pathways require human review.
+CCZPS compares possible futures. EcoEngine runtime logic helps describe how scenario assumptions translate into operational signals. This CCZPS-Lite version introduces evidence, cost governance, and pre-execution budget guards so that uncertainty, ownership, and stop conditions remain visible before live resource use.

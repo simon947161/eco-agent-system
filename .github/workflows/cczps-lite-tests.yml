@@ -31,6 +31,7 @@ jobs:
           python cczps_lite/engine/scenario_compare.py
           python cczps_lite/engine/meteorology_runtime.py
           python cczps_lite/engine/usage_cost_governance.py
+          python cczps_lite/engine/budget_guard.py
 
       - name: Validate JSON inputs
         run: |
@@ -41,6 +42,7 @@ jobs:
           python -m json.tool cczps_lite/input/meteorology_sources.json >/dev/null
           python -m json.tool cczps_lite/input/meteorology_scenarios.json >/dev/null
           python -m json.tool cczps_lite/input/usage_cost_profiles.json >/dev/null
+          python -m json.tool cczps_lite/input/budget_profile.json >/dev/null
 
       - name: Compile Python modules
         run: python -m py_compile cczps_lite/engine/*.py cczps_lite/integration/*.py
