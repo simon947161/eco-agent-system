@@ -39,6 +39,24 @@ class DemonstrationDashboardTests(unittest.TestCase):
         meteorology=(DASHBOARD_DIR/"meteorology-dashboard.js").read_text(encoding="utf-8")
         self.assertIn("../output/meteorology_evidence.json",meteorology)
         self.assertNotIn("power.larc.nasa.gov",meteorology)
+        for forbidden in ("https://", "http://", "XMLHttpRequest", "WebSocket"):
+            self.assertNotIn(forbidden, meteorology)
+
+    def test_meteorology_panel_exposes_observation_and_governance_fields(self) -> None:
+        meteorology=(DASHBOARD_DIR/"meteorology-dashboard.js").read_text(encoding="utf-8")
+        for field in (
+            "temperature_c", "rainfall_mm", "humidity_percent",
+            "wind_speed_kmh", "wind_direction_degrees",
+            "solar_radiation_mj_m2", "from_cache",
+            "budget_guard_status", "observation_date",
+        ):
+            self.assertIn(field, meteorology)
+        for status in (
+            "success", "blocked_by_budget_guard", "missing_data",
+            "retrieval_failed", "not_retrieved",
+        ):
+            self.assertIn(status, meteorology)
+        self.assertIn("Not available", meteorology)
 
     def test_github_pages_workflow_stages_a_self_contained_site(self) -> None:
         workflow=PAGES_WORKFLOW.read_text(encoding="utf-8")

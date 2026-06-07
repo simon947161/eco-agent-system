@@ -35,8 +35,29 @@ The expected project-site address is `https://simon947161.github.io/eco-agent-sy
 - validation, priority, risk, and readiness fields;
 - outputs from current runtime stages;
 - selectable scenario details;
-- meteorology evidence from local generated or cached JSON;
+- meteorology evidence cards for each configured scenario, including location,
+  observation date, retrieval state, temperature, rainfall, relative humidity,
+  wind speed and direction, solar radiation, cache state, confidence, and
+  Budget Guard status;
 - system validation and capability documentation.
+
+## Meteorology Evidence Panel
+
+The panel reads only `cczps_lite/output/meteorology_evidence.json`, produced by
+`python cczps_lite/engine/meteorology_runtime.py` or the manual meteorology
+refresh workflow. The latest evidence file is overwritten by each runtime
+execution and can be committed explicitly or distributed as a workflow
+artifact.
+
+Values may be live NASA POWER observations, cached successful observations, or
+local scaffold records. Missing observations are shown as **Not available**;
+the dashboard does not invent values. Retrieval states distinguish successful,
+cached, Budget Guard blocked, missing-data, failed, and not-retrieved records.
+Budget Guard status and summaries are displayed when present in the generated
+record.
+
+The browser reads this local JSON file only. It does not initiate retrieval,
+write cache data, or call NASA POWER or another external service.
 
 ## What It Cannot Do Yet
 
