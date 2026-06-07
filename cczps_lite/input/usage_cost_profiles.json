@@ -1,0 +1,85 @@
+{
+  "purpose": "Pre-execution governance declarations only. No external calls or billing are performed.",
+  "default": {
+    "usage_mode": "project_mode",
+    "external_resource_owner": "user",
+    "external_cost_bearer": "user",
+    "platform_service_recipient": "user",
+    "external_resource_count": 0,
+    "external_resource_types": [],
+    "repeated_external_calls": false,
+    "continuous_execution": false,
+    "agent_count": 0,
+    "budget_controlled": true,
+    "platform_service_model": "open_source",
+    "platform_service_fee_model": "none"
+  },
+  "scenarios": {
+    "BATLOW_WATER_PRIORITY": {"usage_mode": "idea_mode"},
+    "BATLOW_ENERGY_RESILIENCE": {
+      "usage_mode": "research_mode",
+      "external_resource_count": 2,
+      "external_resource_types": ["meteorology", "sensor_network"],
+      "repeated_external_calls": true,
+      "platform_service_model": "service_fee",
+      "platform_service_fee_model": "percentage_plus_fixed"
+    },
+    "BATLOW_ECOLOGY_FIRE_BUFFER": {
+      "external_resource_count": 1,
+      "external_resource_types": ["satellite"],
+      "platform_service_model": "data_asset_service",
+      "platform_service_fee_model": "fixed"
+    },
+    "KUNLUN_ECO_WATER": {
+      "usage_mode": "research_mode",
+      "external_resource_count": 2,
+      "external_resource_types": ["meteorology", "satellite"],
+      "repeated_external_calls": true,
+      "platform_service_model": "service_fee",
+      "platform_service_fee_model": "percentage_plus_fixed"
+    },
+    "IRAQ_AGRICULTURE_RECOVERY": {
+      "usage_mode": "research_mode",
+      "external_resource_count": 2,
+      "external_resource_types": ["meteorology", "gis"],
+      "repeated_external_calls": true,
+      "platform_service_model": "data_asset_service",
+      "platform_service_fee_model": "percentage_plus_fixed"
+    },
+    "XIONGAN_WUTAI_HEADWATERS": {
+      "usage_mode": "enterprise_mode",
+      "external_resource_owner": "program_owner",
+      "external_cost_bearer": "program_owner",
+      "platform_service_recipient": "program_team",
+      "external_resource_count": 3,
+      "external_resource_types": ["meteorology", "gis", "satellite"],
+      "agent_count": 2,
+      "platform_service_model": "enterprise_support",
+      "platform_service_fee_model": "enterprise_agreement"
+    },
+    "XIONGAN_BAIYANGDIAN_WETLAND": {
+      "usage_mode": "enterprise_mode",
+      "external_resource_owner": "program_owner",
+      "external_cost_bearer": "program_owner",
+      "platform_service_recipient": "program_team",
+      "external_resource_count": 4,
+      "external_resource_types": ["meteorology", "gis", "satellite", "sensor_network"],
+      "continuous_execution": true,
+      "agent_count": 3,
+      "budget_controlled": false,
+      "platform_service_model": "enterprise_support",
+      "platform_service_fee_model": "enterprise_agreement"
+    },
+    "XIONGAN_DOWNSTREAM_URBAN": {
+      "usage_mode": "enterprise_mode",
+      "external_resource_owner": "program_owner",
+      "external_cost_bearer": "program_owner",
+      "platform_service_recipient": "program_team",
+      "external_resource_count": 3,
+      "external_resource_types": ["meteorology", "gis", "satellite"],
+      "agent_count": 2,
+      "platform_service_model": "enterprise_support",
+      "platform_service_fee_model": "enterprise_agreement"
+    }
+  }
+}

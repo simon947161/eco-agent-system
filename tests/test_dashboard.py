@@ -33,18 +33,22 @@ class DemonstrationDashboardTests(unittest.TestCase):
         index_path = DASHBOARD_DIR / "index.html"
         styles_path = DASHBOARD_DIR / "styles.css"
         script_path = DASHBOARD_DIR / "dashboard.js"
-        for path in (index_path, styles_path, script_path):
+        usage_script_path = DASHBOARD_DIR / "usage-cost-dashboard.js"
+        for path in (index_path, styles_path, script_path, usage_script_path):
             self.assertTrue(path.is_file(), path)
 
         parser = DashboardHTMLParser()
         parser.feed(index_path.read_text(encoding="utf-8"))
-        self.assertEqual(parser.scripts, ["dashboard.js"])
+        self.assertEqual(
+            parser.scripts, ["dashboard.js", "usage-cost-dashboard.js"]
+        )
         self.assertEqual(parser.stylesheets, ["styles.css"])
         for section_id in (
             "overview",
             "comparison",
             "runtime-chain",
             "scenario-detail",
+            "usage-cost",
             "validation-report",
             "capability-map",
         ):
@@ -62,6 +66,23 @@ class DemonstrationDashboardTests(unittest.TestCase):
             self.assertNotIn(forbidden, script)
         for scenario in ("batlow", "kunlun", "iraq", "baiyangdian"):
             self.assertIn(f"{scenario}:", script)
+
+        usage_script = (DASHBOARD_DIR / "usage-cost-dashboard.js").read_text(
+            encoding="utf-8"
+        )
+        for field in (
+            "usage_mode",
+            "external_resource_owner",
+            "external_cost_bearer",
+            "platform_service_recipient",
+            "estimated_external_resource_cost",
+            "platform_service_fee_model",
+            "platform_service_fee_estimate",
+            "budget_warning",
+            "requires_user_approval",
+            "agentic_consumption_risk",
+        ):
+            self.assertIn(field, usage_script)
 
     def test_github_pages_workflow_stages_a_self_contained_site(self) -> None:
         self.assertTrue(PAGES_WORKFLOW.is_file())
@@ -81,6 +102,8 @@ class DemonstrationDashboardTests(unittest.TestCase):
             "data/comparison_matrix.csv",
             "data/system_validation_report.md",
             "data/runtime_capability_map.md",
+            "python cczps_lite/engine/usage_cost_governance.py",
+            "_site/usage-cost-dashboard.js",
         ):
             self.assertIn(expected, workflow)
 
