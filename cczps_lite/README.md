@@ -79,13 +79,27 @@ future task introduces and documents an explicit rule.
 
 Run `python cczps_lite/engine/usage_cost_governance.py` after scenario
 generation. It adds a usage and cost governance reading to every scenario
-through eight explicit CSV fields and appends readable sections to the
+through explicit CSV fields and appends readable sections to the
 scenario, governance, and system validation reports.
 
 Cost levels are qualitative governance bands, not currency estimates. The
 runtime performs no external API calls, metering, billing, payments,
 subscriptions, invoicing, crypto payments, token operations, or marketplaces.
 An approval requirement is visible but is never granted automatically.
+
+The runtime supports idea, research, project, agent, and enterprise modes.
+Research mode represents repeated evidence gathering with moderate resource
+consumption and low automation. Every reading identifies the resource owner,
+external cost bearer, and platform service recipient. It also exposes
+qualitative external-resource cost, platform fee-model and fee-estimate
+classifications, and agentic consumption risk.
+
+External resource costs belong to the resource consumer. The platform does not
+silently absorb API, cloud, AI, satellite, GIS, or sensor-network costs. The
+provider-agnostic governance structure can classify future NASA POWER, NOAA,
+ERA5, BOM, OpenAI, GIS, satellite, and sensor integrations without redesign.
+No financial calculation, billing, invoice, subscription, payment, token, or
+RWA function is implemented.
 
 ## Methodology Boundary
 
