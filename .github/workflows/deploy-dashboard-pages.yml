@@ -21,35 +21,33 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-
       - name: Refresh generated scenario outputs
         run: |
           python cczps_lite/engine/scenario_compare.py
+          python cczps_lite/engine/meteorology_runtime.py
           python cczps_lite/engine/usage_cost_governance.py
           python cczps_lite/engine/budget_guard.py
-
       - name: Stage dashboard site
         shell: bash
         run: |
           mkdir -p _site/data
           cp -R cczps_lite/dashboard/. _site/
           cp cczps_lite/output/comparison_matrix.csv _site/data/comparison_matrix.csv
+          cp cczps_lite/output/meteorology_evidence.json _site/data/meteorology_evidence.json
           cp docs/CCZPS_LITE_SYSTEM_VALIDATION_REPORT.md _site/data/system_validation_report.md
           cp cczps_lite/output/runtime_capability_map.md _site/data/runtime_capability_map.md
           sed -i 's#../output/comparison_matrix.csv#data/comparison_matrix.csv#' _site/dashboard.js
           sed -i 's#../output/comparison_matrix.csv#data/comparison_matrix.csv#' _site/usage-cost-dashboard.js
           sed -i 's#../output/comparison_matrix.csv#data/comparison_matrix.csv#' _site/budget-guard-dashboard.js
+          sed -i 's#../output/meteorology_evidence.json#data/meteorology_evidence.json#' _site/meteorology-dashboard.js
           sed -i 's#../../docs/CCZPS_LITE_SYSTEM_VALIDATION_REPORT.md#data/system_validation_report.md#' _site/dashboard.js
           sed -i 's#../output/runtime_capability_map.md#data/runtime_capability_map.md#' _site/dashboard.js
-
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
-
   deploy:
     environment:
       name: github-pages

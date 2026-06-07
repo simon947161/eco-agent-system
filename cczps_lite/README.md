@@ -1,26 +1,8 @@
 # CCZPS-Lite â€” Batlow Runtime Demonstrator
 
-CCZPS-Lite is a small, file-based demonstrator for comparing possible environmental resilience pathways. It supports the EcoEngine Runtime Core idea that scenario assumptions should move through evidence, runtime interpretation, reasoning, and governance review before being treated as decision-support output.
-
-Batlow, NSW is used as the first demonstrator because it provides a clear rural resilience context: orchard water security, energy continuity, ecological recovery, bushfire resilience, and community safety can be compared without building a large platform.
-
-## Runtime Flow
-
-```text
-Scenario
-    â†“
-Evidence Profile
-    â†“
-Runtime Fields
-    â†“
-Runtime Reasoning
-    â†“
-Evidence-Aware Governance Output
-```
+CCZPS-Lite is a small, file-based demonstrator for comparing possible environmental resilience pathways. It supports evidence, runtime interpretation, reasoning, governance review, and pre-execution resource guards.
 
 ## How to Run
-
-From the repository root:
 
 ```bash
 python cczps_lite/engine/scenario_compare.py
@@ -29,58 +11,49 @@ python cczps_lite/engine/usage_cost_governance.py
 python cczps_lite/engine/budget_guard.py
 ```
 
-The scripts use only the Python standard library. Meteorology transport is injected by the caller and disabled for generated fixtures, so routine tests do not call weather APIs. The runtimes do not use forecasting, machine learning, autonomous recommendations, GIS services, databases, or world models.
+The default meteorology command is safe scaffold mode and makes no network request.
 
 ## Input Files
 
 - `input/location_profile.json` describes the Batlow location profile.
-- `input/scenario_options.json` describes three indicative future pathways.
-- `input/evidence_profile.json` describes the first evidence layer for water, energy, ecology, and fire assumptions.
+- `input/scenario_options.json` describes indicative future pathways.
+- `input/evidence_profile.json` describes the evidence layer.
 - `input/meteorology_sources.json` defines documented public observation sources and field mappings.
-- `input/meteorology_scenarios.json` defines the Batlow, Kunlun, Iraq, and Baiyangdian-Xiong'an observation requests.
-- `input/usage_cost_profiles.json` declares proposed usage, ownership, automation, budget-control, and service-model assumptions.
-- `input/budget_profile.json` declares local qualitative budget and execution limits plus scenario resource requests.
-
-## Generated Output Files
-
-- `output/comparison_matrix.csv` contains scenario scores, runtime fields, evidence fields, recommendation classes, usage governance readings, and budget guard readings.
-- `output/scenario_report.md` provides a readable scenario comparison report.
-- `output/governance_summary.md` provides a short governance-oriented summary, including evidence, usage, and guard assessment.
+- `input/meteorology_scenarios.json` defines safe scaffold requests.
+- `input/meteorology_locations.json` defines coordinates for explicit NASA POWER live requests.
+- `input/usage_cost_profiles.json` declares usage, ownership, automation, and service-model assumptions.
+- `input/budget_profile.json` declares local qualitative budget and execution limits.
 
 ## Meteorology Connector Runtime
 
-### Current Status: Connector Scaffold Only
+The default runtime remains a safe connector scaffold. Task 21 adds an explicit NASA POWER Daily Point API pathway only. NOAA, ERA5, and BOM remain source definitions only. There is no scheduled retrieval, authentication, browser-side transport, or autonomous refresh.
 
-Task 18 does not retrieve live meteorology data. It provides source definitions, field mappings, payload standardisation, missing-data handling, and an injected `fetcher` interface for future transport implementations.
+Running `meteorology_runtime.py` without `--live` creates local records with null observation values and `"retrieval_status": "not_retrieved"`. Unit tests use injected NASA POWER fixtures and do not make network calls.
 
-There is currently no built-in HTTP client, provider endpoint construction, API authentication, ERA5/CDS client, BOM downloader, or scheduled retrieval. Running `meteorology_runtime.py` without an externally supplied fetcher creates local records with null observation values and `"retrieval_status": "not_retrieved"`.
-
-The NASA POWER values used in tests are a hard-coded parsing fixture. They are not remotely retrieved observations. NOAA, ERA5, and BOM have source definitions only and no provider-specific retrieval implementation.
-
-Meteorology is supporting evidence only. Missing values remain explicit, and the connector does not change validation scores or produce conclusions unless a future task introduces and documents an explicit rule.
+Meteorology remains supporting evidence only. Missing values remain explicit, and observations do not change validation scores or produce conclusions.
 
 ## Usage & Cost Governance Runtime
 
-Run `python cczps_lite/engine/usage_cost_governance.py` after scenario generation. It adds a usage and cost governance reading to every scenario through explicit CSV fields and appends readable sections to the scenario, governance, and system validation reports.
-
-Cost levels are qualitative governance bands, not currency estimates. The runtime performs no external API calls, metering, billing, payments, subscriptions, invoicing, crypto payments, token operations, or marketplaces. An approval requirement is visible but is never granted automatically.
-
-The runtime supports idea, research, project, agent, and enterprise modes. Every reading identifies the resource owner, external cost bearer, and platform service recipient. External resource costs belong to the resource consumer; the platform does not silently absorb API, cloud, AI, satellite, GIS, or sensor-network costs.
+The usage runtime identifies resource owners, external cost bearers, platform service recipients, qualitative cost, approval requirements, and agentic consumption risk. External resource costs belong to the resource consumer; the platform does not silently absorb API costs.
 
 ## Budget Guard Runtime
 
-Run `python cczps_lite/engine/budget_guard.py` after the Usage & Cost Governance Runtime. It classifies each declared resource request as `within_budget`, `approval_required`, `warning`, or `stop_required`.
+The guard classifies declared resource requests as `within_budget`, `approval_required`, `warning`, or `stop_required`. Hard call, cost, and agent-run limits cannot be overridden by manual approval.
 
-Hard daily-call, monthly-cost, and agent-run limits take precedence over manual approval. Manual approval may clear an approval-only condition, but it cannot override a hard stop. Very-high agentic consumption risk without approval also stops before execution.
+## NASA POWER Live Fetcher
 
-The guard uses local fixtures and qualitative cost bands only. It performs no live metering, external calls, billing, payments, invoicing, subscriptions, autonomous spending, token operations, crypto operations, or RWA functions.
+Live retrieval is explicit:
+
+```bash
+python cczps_lite/engine/meteorology_runtime.py --live --date 20260606 --manual-approval
+```
+
+Use `--force-refresh` only when a cached location/date reading should be replaced. Without the required governance confirmation, requests are recorded as `blocked_by_budget_guard` and NASA POWER is not called.
+
+Successful readings are stored in `output/meteorology_cache.json`. Requests for the same location and date reuse that cache unless `--force-refresh` is provided. The dashboard reads local `meteorology_evidence.json` only and never calls NASA POWER from the browser.
+
+The live fetcher uses the public NASA POWER endpoint without authentication or API keys. It does not add OpenAI, NOAA, ERA5, BOM, GIS, satellite, paid-service, database, cloud-storage, or scheduled-refresh integrations.
 
 ## Methodology Boundary
 
-This prototype is not a final environmental model, regulatory-grade planning tool, financial assessment, or scientific simulation. It is a methodology demonstrator using indicative values only.
-
-Low evidence means higher uncertainty and triggers human review. High evidence means comparatively higher confidence, but it does not remove the need for local consultation, professional judgement, or site-specific validation.
-
-## Connection to CCZPS 2.0 and EcoEngine
-
-CCZPS compares possible futures. EcoEngine runtime logic helps describe how scenario assumptions translate into operational signals. This CCZPS-Lite version introduces evidence, cost governance, and pre-execution budget guards so that uncertainty, ownership, and stop conditions remain visible before live resource use.
+This prototype is not a final environmental model, regulatory-grade planning tool, financial assessment, or scientific simulation. Human review and site-specific validation remain required.

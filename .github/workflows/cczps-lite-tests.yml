@@ -16,23 +16,19 @@ on:
 jobs:
   cczps-lite-tests:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-
       - name: Generate CCZPS-Lite outputs
         run: |
           python cczps_lite/engine/scenario_compare.py
           python cczps_lite/engine/meteorology_runtime.py
           python cczps_lite/engine/usage_cost_governance.py
           python cczps_lite/engine/budget_guard.py
-
       - name: Validate JSON inputs
         run: |
           python -m json.tool cczps_lite/input/evidence_profile.json >/dev/null
@@ -41,11 +37,10 @@ jobs:
           python -m json.tool cczps_lite/input/ecoengine_sample_output.json >/dev/null
           python -m json.tool cczps_lite/input/meteorology_sources.json >/dev/null
           python -m json.tool cczps_lite/input/meteorology_scenarios.json >/dev/null
+          python -m json.tool cczps_lite/input/meteorology_locations.json >/dev/null
           python -m json.tool cczps_lite/input/usage_cost_profiles.json >/dev/null
           python -m json.tool cczps_lite/input/budget_profile.json >/dev/null
-
       - name: Compile Python modules
         run: python -m py_compile cczps_lite/engine/*.py cczps_lite/integration/*.py
-
       - name: Run unit tests
         run: python -m unittest discover
