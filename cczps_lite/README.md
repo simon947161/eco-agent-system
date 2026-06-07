@@ -24,11 +24,13 @@ From the repository root:
 
 ```bash
 python cczps_lite/engine/scenario_compare.py
+python cczps_lite/engine/meteorology_runtime.py
+python cczps_lite/engine/usage_cost_governance.py
 ```
 
-The script uses only the Python standard library. Meteorology transport is
+The scripts use only the Python standard library. Meteorology transport is
 injected by the caller and disabled for generated fixtures, so routine tests do
-not call weather APIs. The runtime does not use forecasting, machine learning,
+not call weather APIs. The runtimes do not use forecasting, machine learning,
 autonomous recommendations, GIS services, databases, or world models.
 
 ## Input Files
@@ -38,12 +40,13 @@ autonomous recommendations, GIS services, databases, or world models.
 - `input/evidence_profile.json` describes the first evidence layer for water, energy, ecology, and fire assumptions.
 - `input/meteorology_sources.json` defines documented public observation sources and field mappings.
 - `input/meteorology_scenarios.json` defines the Batlow, Kunlun, Iraq, and Baiyangdian-Xiong'an observation requests.
+- `input/usage_cost_profiles.json` declares proposed usage, ownership, automation, budget-control, and service-model assumptions.
 
 ## Generated Output Files
 
-- `output/comparison_matrix.csv` contains scenario scores, runtime fields, evidence fields, and recommendation classes.
+- `output/comparison_matrix.csv` contains scenario scores, runtime fields, evidence fields, recommendation classes, and usage governance readings.
 - `output/scenario_report.md` provides a readable scenario comparison report.
-- `output/governance_summary.md` provides a short governance-oriented summary, including evidence assessment.
+- `output/governance_summary.md` provides a short governance-oriented summary, including evidence and usage assessment.
 
 ## Meteorology Connector Runtime
 
@@ -71,6 +74,18 @@ observation timestamp, retrieval status, and evidence confidence.
 Meteorology is supporting evidence only. Missing values remain explicit, and
 the connector does not change validation scores or produce conclusions unless a
 future task introduces and documents an explicit rule.
+
+## Usage & Cost Governance Runtime
+
+Run `python cczps_lite/engine/usage_cost_governance.py` after scenario
+generation. It adds a usage and cost governance reading to every scenario
+through eight explicit CSV fields and appends readable sections to the
+scenario, governance, and system validation reports.
+
+Cost levels are qualitative governance bands, not currency estimates. The
+runtime performs no external API calls, metering, billing, payments,
+subscriptions, invoicing, crypto payments, token operations, or marketplaces.
+An approval requirement is visible but is never granted automatically.
 
 ## Methodology Boundary
 

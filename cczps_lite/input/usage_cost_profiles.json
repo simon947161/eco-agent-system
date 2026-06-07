@@ -1,0 +1,60 @@
+{
+  "purpose": "Pre-execution governance declarations only. No external calls or billing are performed.",
+  "default": {
+    "usage_mode": "project_mode",
+    "external_resource_owner": "user",
+    "external_resource_count": 0,
+    "repeated_external_calls": false,
+    "continuous_execution": false,
+    "agent_count": 0,
+    "budget_controlled": true,
+    "platform_service_model": "open_source"
+  },
+  "scenarios": {
+    "BATLOW_WATER_PRIORITY": {"usage_mode": "idea_mode"},
+    "BATLOW_ENERGY_RESILIENCE": {
+      "external_resource_count": 2,
+      "repeated_external_calls": true,
+      "platform_service_model": "service_fee"
+    },
+    "BATLOW_ECOLOGY_FIRE_BUFFER": {
+      "external_resource_count": 1,
+      "platform_service_model": "data_asset_service"
+    },
+    "KUNLUN_ECO_WATER": {
+      "usage_mode": "agent_mode",
+      "external_resource_count": 2,
+      "continuous_execution": true,
+      "agent_count": 1,
+      "platform_service_model": "service_fee"
+    },
+    "IRAQ_AGRICULTURE_RECOVERY": {
+      "external_resource_count": 2,
+      "repeated_external_calls": true,
+      "platform_service_model": "data_asset_service"
+    },
+    "XIONGAN_WUTAI_HEADWATERS": {
+      "usage_mode": "enterprise_mode",
+      "external_resource_owner": "program_owner",
+      "external_resource_count": 3,
+      "agent_count": 2,
+      "platform_service_model": "enterprise_support"
+    },
+    "XIONGAN_BAIYANGDIAN_WETLAND": {
+      "usage_mode": "enterprise_mode",
+      "external_resource_owner": "program_owner",
+      "external_resource_count": 4,
+      "continuous_execution": true,
+      "agent_count": 3,
+      "budget_controlled": false,
+      "platform_service_model": "enterprise_support"
+    },
+    "XIONGAN_DOWNSTREAM_URBAN": {
+      "usage_mode": "enterprise_mode",
+      "external_resource_owner": "program_owner",
+      "external_resource_count": 3,
+      "agent_count": 2,
+      "platform_service_model": "enterprise_support"
+    }
+  }
+}
