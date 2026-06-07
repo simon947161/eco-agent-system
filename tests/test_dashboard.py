@@ -73,10 +73,14 @@ class DemonstrationDashboardTests(unittest.TestCase):
         for field in (
             "usage_mode",
             "external_resource_owner",
-            "estimated_cost_level",
+            "external_cost_bearer",
+            "platform_service_recipient",
+            "estimated_external_resource_cost",
+            "platform_service_fee_model",
+            "platform_service_fee_estimate",
             "budget_warning",
             "requires_user_approval",
-            "agentic_risk_level",
+            "agentic_consumption_risk",
         ):
             self.assertIn(field, usage_script)
 
