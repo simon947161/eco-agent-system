@@ -1,0 +1,82 @@
+name: Manual Meteorology Refresh
+
+on:
+  workflow_dispatch:
+    inputs:
+      observation_date:
+        description: "Observation date in YYYYMMDD format"
+        required: true
+        default: "20250501"
+      manual_approval:
+        description: "Confirm manual approval for live NASA POWER request"
+        required: true
+        type: boolean
+        default: false
+      force_refresh:
+        description: "Bypass cache and refetch NASA POWER data"
+        required: true
+        type: boolean
+        default: false
+      commit_outputs:
+        description: "Commit refreshed output files back to repository"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out selected branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Refresh NASA POWER meteorology evidence
+        shell: bash
+        env:
+          OBSERVATION_DATE: ${{ inputs.observation_date }}
+          MANUAL_APPROVAL: ${{ inputs.manual_approval }}
+          FORCE_REFRESH: ${{ inputs.force_refresh }}
+        run: |
+          args=(--live --date "$OBSERVATION_DATE")
+          if [[ "$MANUAL_APPROVAL" == "true" ]]; then
+            args+=(--manual-approval)
+          fi
+          if [[ "$FORCE_REFRESH" == "true" ]]; then
+            args+=(--force-refresh)
+          fi
+          python cczps_lite/engine/meteorology_runtime.py "${args[@]}"
+      - name: Run unit tests
+        run: python -m unittest discover
+      - name: Commit refreshed outputs
+        if: ${{ inputs.commit_outputs }}
+        shell: bash
+        env:
+          OBSERVATION_DATE: ${{ inputs.observation_date }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cczps_lite/output/meteorology_evidence.json
+          git add cczps_lite/output/meteorology_cache.json
+          if git diff --cached --quiet; then
+            echo "No meteorology output changes to commit."
+            exit 0
+          fi
+          git commit -m "Refresh meteorology evidence for $OBSERVATION_DATE"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+      - name: Upload refreshed outputs
+        if: ${{ !inputs.commit_outputs }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: meteorology-refresh-output
+          path: |
+            cczps_lite/output/meteorology_evidence.json
+            cczps_lite/output/meteorology_cache.json
