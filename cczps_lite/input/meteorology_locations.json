@@ -1,0 +1,11 @@
+{
+  "purpose": "Local coordinates for explicit NASA POWER daily point requests.",
+  "locations": [
+    {"scenario_id": "batlow", "location_name": "Batlow", "latitude": -35.52, "longitude": 148.15, "source_preference": "nasa_power"},
+    {"scenario_id": "kunlun", "location_name": "Kunlun", "latitude": 36.0, "longitude": 90.0, "source_preference": "nasa_power"},
+    {"scenario_id": "iraq", "location_name": "Iraq", "latitude": 33.0, "longitude": 44.0, "source_preference": "nasa_power"},
+    {"scenario_id": "xiongan_wutai_headwaters", "location_name": "Wutai Mountain Headwaters", "latitude": 38.73, "longitude": 113.59, "source_preference": "nasa_power"},
+    {"scenario_id": "xiongan_baiyangdian_wetland", "location_name": "Baiyangdian Wetland Core", "latitude": 38.94, "longitude": 115.94, "source_preference": "nasa_power"},
+    {"scenario_id": "xiongan_downstream", "location_name": "Xiong'an / Downstream Region", "latitude": 38.85, "longitude": 116.05, "source_preference": "nasa_power"}
+  ]
+}
