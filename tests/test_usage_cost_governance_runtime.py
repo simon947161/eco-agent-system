@@ -64,6 +64,23 @@ class UsageCostGovernanceRuntimeTests(unittest.TestCase):
         self.assertFalse(no_external["budget_warning"])
         self.assertFalse(no_external["requires_user_approval"])
 
+    def test_research_mode_and_cost_transparency_fields(self) -> None:
+        reading = derive_usage_cost_governance(
+            "research_mode",
+            "research_team",
+            external_cost_bearer="project_sponsor",
+            platform_service_recipient="research_team",
+            external_resource_types=["NASA POWER", "GIS"],
+            repeated_external_calls=True,
+            platform_service_model="service_fee",
+            platform_service_fee_model="percentage_plus_fixed",
+        )
+        self.assertEqual(reading["estimated_external_resource_cost"], "medium")
+        self.assertEqual(reading["external_cost_bearer"], "project_sponsor")
+        self.assertEqual(reading["platform_service_recipient"], "research_team")
+        self.assertEqual(reading["platform_service_fee_estimate"], "medium")
+        self.assertEqual(reading["agentic_consumption_risk"], "medium")
+
     def test_summary_states_governance_boundary(self) -> None:
         reading = derive_usage_cost_governance(
             "agent_mode",
@@ -104,16 +121,26 @@ class UsageCostGovernanceRuntimeTests(unittest.TestCase):
         for field in (
             "usage_mode",
             "external_resource_owner",
+            "external_cost_bearer",
+            "platform_service_recipient",
             "estimated_cost_level",
+            "estimated_external_resource_cost",
             "budget_warning",
             "requires_user_approval",
             "platform_service_model",
+            "platform_service_fee_model",
+            "platform_service_fee_estimate",
             "agentic_risk_level",
+            "agentic_consumption_risk",
             "governance_summary",
         ):
             self.assertIn(field, csv_rows[0])
         self.assertIn(
             "## Usage & Cost Governance Reading",
+            (output_dir / "scenario_report.md").read_text(encoding="utf-8"),
+        )
+        self.assertIn(
+            "## Cost Transparency Reading",
             (output_dir / "scenario_report.md").read_text(encoding="utf-8"),
         )
         self.assertIn(
