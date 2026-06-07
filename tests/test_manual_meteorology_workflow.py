@@ -27,11 +27,12 @@ class ManualMeteorologyRefreshWorkflowTests(unittest.TestCase):
         self.assertIn("--force-refresh", self.workflow)
         self.assertIn("python -m unittest discover", self.workflow)
 
-    def test_artifact_fallback_contains_both_outputs(self) -> None:
+    def test_artifact_fallback_contains_all_outputs(self) -> None:
         self.assertIn("actions/upload-artifact@v4", self.workflow)
         self.assertIn("name: meteorology-refresh-output", self.workflow)
         self.assertIn("cczps_lite/output/meteorology_evidence.json", self.workflow)
         self.assertIn("cczps_lite/output/meteorology_cache.json", self.workflow)
+        self.assertIn("cczps_lite/output/meteorology_timeseries.json", self.workflow)
 
     def test_commit_is_conditional_and_avoids_empty_commit(self) -> None:
         self.assertIn("if: ${{ inputs.commit_outputs }}", self.workflow)
@@ -56,6 +57,12 @@ class ManualMeteorologyRefreshWorkflowTests(unittest.TestCase):
         self.assertEqual(
             self.workflow.count(
                 "git add cczps_lite/output/meteorology_cache.json"
+            ),
+            1,
+        )
+        self.assertEqual(
+            self.workflow.count(
+                "git add cczps_lite/output/meteorology_timeseries.json"
             ),
             1,
         )
