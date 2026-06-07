@@ -1,0 +1,29 @@
+{
+  "purpose": "Transparent source requests for CCZPS-Lite scenario coverage. No observations are embedded or forecast.",
+  "scenarios": {
+    "batlow": {
+      "location": "Batlow",
+      "coordinates": {"latitude": -35.52, "longitude": 148.15},
+      "preferred_source": "bom",
+      "fallback_source": "nasa_power"
+    },
+    "kunlun": {
+      "location": "Kunlun",
+      "coordinates": {"latitude": 36.0, "longitude": 90.0},
+      "preferred_source": "nasa_power",
+      "fallback_source": "era5"
+    },
+    "iraq": {
+      "location": "Iraq",
+      "coordinates": {"latitude": 33.0, "longitude": 44.0},
+      "preferred_source": "nasa_power",
+      "fallback_source": "noaa_cdo"
+    },
+    "baiyangdian_xiongan": {
+      "location": "Baiyangdian-Xiong'an",
+      "coordinates": {"latitude": 38.94, "longitude": 115.94},
+      "preferred_source": "nasa_power",
+      "fallback_source": "era5"
+    }
+  }
+}

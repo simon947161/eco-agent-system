@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Public meteorology observation source definitions for transparent, caller-controlled retrieval.",
+  "sources": {
+    "bom": {
+      "name": "Australian Bureau of Meteorology (BOM)",
+      "provider_type": "public_government",
+      "documentation_url": "http://www.bom.gov.au/catalogue/data-feeds.shtml",
+      "availability": "Source definition only; endpoint selection must follow BOM terms and product documentation.",
+      "default_confidence": "high",
+      "field_map": {
+        "observation_timestamp": "aifstime_utc",
+        "temperature_c": "air_temp",
+        "rainfall_mm": "rain_trace",
+        "humidity_percent": "rel_hum",
+        "wind_speed_kmh": "wind_spd_kmh",
+        "wind_direction_degrees": "wind_dir_deg",
+        "solar_radiation_mj_m2": "solar_radiation",
+        "evaporation_mm": "evaporation"
+      }
+    },
+    "nasa_power": {
+      "name": "NASA POWER",
+      "provider_type": "public_science",
+      "documentation_url": "https://power.larc.nasa.gov/docs/services/api/",
+      "availability": "Documented public API; transport is supplied by the caller.",
+      "default_confidence": "medium",
+      "field_map": {
+        "observation_timestamp": "observation_timestamp",
+        "temperature_c": "T2M",
+        "rainfall_mm": "PRECTOTCORR",
+        "humidity_percent": "RH2M",
+        "wind_speed_kmh": "WS2M_KMH",
+        "wind_direction_degrees": "WD2M",
+        "solar_radiation_mj_m2": "ALLSKY_SFC_SW_DWN",
+        "evaporation_mm": "EVPTRNS"
+      }
+    },
+    "noaa_cdo": {
+      "name": "NOAA Climate Data Online",
+      "provider_type": "public_government",
+      "documentation_url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+      "availability": "Documented public data service; dataset-specific units must be normalised by the caller.",
+      "default_confidence": "high",
+      "field_map": {
+        "observation_timestamp": "DATE",
+        "temperature_c": "TAVG_C",
+        "rainfall_mm": "PRCP_MM",
+        "humidity_percent": "RHAV",
+        "wind_speed_kmh": "AWND_KMH",
+        "wind_direction_degrees": "WDF2",
+        "solar_radiation_mj_m2": "SOLAR_MJ_M2",
+        "evaporation_mm": "EVAP_MM"
+      }
+    },
+    "era5": {
+      "name": "ERA5 Reference Dataset",
+      "provider_type": "public_reanalysis",
+      "documentation_url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+      "availability": "Reference definition only; derived fields and unit conversions must be declared by the caller.",
+      "default_confidence": "medium",
+      "field_map": {
+        "observation_timestamp": "valid_time",
+        "temperature_c": "temperature_2m_c",
+        "rainfall_mm": "total_precipitation_mm",
+        "humidity_percent": "relative_humidity_2m",
+        "wind_speed_kmh": "wind_speed_10m_kmh",
+        "wind_direction_degrees": "wind_direction_10m_degrees",
+        "solar_radiation_mj_m2": "surface_solar_radiation_mj_m2",
+        "evaporation_mm": "total_evaporation_mm"
+      }
+    }
+  }
+}

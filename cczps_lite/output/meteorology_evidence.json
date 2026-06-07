@@ -1,0 +1,98 @@
+{
+  "runtime": "Meteorology Connector Runtime",
+  "decision_boundary": "Supporting observational evidence only. No forecast, conclusion, recommendation, or automated scoring change.",
+  "scenarios": {
+    "batlow": {
+      "meteorology_reading": {
+        "location": "Batlow", "observation_date": null, "temperature_c": null,
+        "rainfall_mm": null, "humidity_percent": null, "wind_speed_kmh": null,
+        "wind_direction_degrees": null, "solar_radiation_mj_m2": null,
+        "evaporation_mm": null, "source": "Australian Bureau of Meteorology (BOM)",
+        "observation_timestamp": null, "retrieved_at": null,
+        "retrieval_status": "not_retrieved", "confidence": "low"
+      },
+      "evidence": {
+        "strength": "low", "source": "meteorological observation",
+        "notes": "Meteorology observation unavailable; no observational inference made.",
+        "meteorology_reading": {
+          "location": "Batlow", "observation_date": null, "temperature_c": null,
+          "rainfall_mm": null, "humidity_percent": null, "wind_speed_kmh": null,
+          "wind_direction_degrees": null, "solar_radiation_mj_m2": null,
+          "evaporation_mm": null, "source": "Australian Bureau of Meteorology (BOM)",
+          "observation_timestamp": null, "retrieved_at": null,
+          "retrieval_status": "not_retrieved", "confidence": "low"
+        },
+        "indicators": []
+      }
+    },
+    "kunlun": {
+      "meteorology_reading": {
+        "location": "Kunlun", "observation_date": null, "temperature_c": null,
+        "rainfall_mm": null, "humidity_percent": null, "wind_speed_kmh": null,
+        "wind_direction_degrees": null, "solar_radiation_mj_m2": null,
+        "evaporation_mm": null, "source": "NASA POWER",
+        "observation_timestamp": null, "retrieved_at": null,
+        "retrieval_status": "not_retrieved", "confidence": "low"
+      },
+      "evidence": {
+        "strength": "low", "source": "meteorological observation",
+        "notes": "Meteorology observation unavailable; no observational inference made.",
+        "meteorology_reading": {
+          "location": "Kunlun", "observation_date": null, "temperature_c": null,
+          "rainfall_mm": null, "humidity_percent": null, "wind_speed_kmh": null,
+          "wind_direction_degrees": null, "solar_radiation_mj_m2": null,
+          "evaporation_mm": null, "source": "NASA POWER",
+          "observation_timestamp": null, "retrieved_at": null,
+          "retrieval_status": "not_retrieved", "confidence": "low"
+        },
+        "indicators": []
+      }
+    },
+    "iraq": {
+      "meteorology_reading": {
+        "location": "Iraq", "observation_date": null, "temperature_c": null,
+        "rainfall_mm": null, "humidity_percent": null, "wind_speed_kmh": null,
+        "wind_direction_degrees": null, "solar_radiation_mj_m2": null,
+        "evaporation_mm": null, "source": "NASA POWER",
+        "observation_timestamp": null, "retrieved_at": null,
+        "retrieval_status": "not_retrieved", "confidence": "low"
+      },
+      "evidence": {
+        "strength": "low", "source": "meteorological observation",
+        "notes": "Meteorology observation unavailable; no observational inference made.",
+        "meteorology_reading": {
+          "location": "Iraq", "observation_date": null, "temperature_c": null,
+          "rainfall_mm": null, "humidity_percent": null, "wind_speed_kmh": null,
+          "wind_direction_degrees": null, "solar_radiation_mj_m2": null,
+          "evaporation_mm": null, "source": "NASA POWER",
+          "observation_timestamp": null, "retrieved_at": null,
+          "retrieval_status": "not_retrieved", "confidence": "low"
+        },
+        "indicators": []
+      }
+    },
+    "baiyangdian_xiongan": {
+      "meteorology_reading": {
+        "location": "Baiyangdian-Xiong'an", "observation_date": null,
+        "temperature_c": null, "rainfall_mm": null, "humidity_percent": null,
+        "wind_speed_kmh": null, "wind_direction_degrees": null,
+        "solar_radiation_mj_m2": null, "evaporation_mm": null,
+        "source": "NASA POWER", "observation_timestamp": null,
+        "retrieved_at": null, "retrieval_status": "not_retrieved", "confidence": "low"
+      },
+      "evidence": {
+        "strength": "low", "source": "meteorological observation",
+        "notes": "Meteorology observation unavailable; no observational inference made.",
+        "meteorology_reading": {
+          "location": "Baiyangdian-Xiong'an", "observation_date": null,
+          "temperature_c": null, "rainfall_mm": null, "humidity_percent": null,
+          "wind_speed_kmh": null, "wind_direction_degrees": null,
+          "solar_radiation_mj_m2": null, "evaporation_mm": null,
+          "source": "NASA POWER", "observation_timestamp": null,
+          "retrieved_at": null, "retrieval_status": "not_retrieved", "confidence": "low"
+        },
+        "indicators": []
+      }
+    }
+  }
+}

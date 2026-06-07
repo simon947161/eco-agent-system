@@ -14,6 +14,7 @@ _SOURCE_BASIS = {
     "literature review": "Literature Review",
     "expert judgement": "Expert Judgement",
     "regional understanding": "Expert Judgement",
+    "meteorological observation": "Meteorological Observation",
 }
 _UNCERTAINTY_BY_STRENGTH = {
     "Low": "Limited quantitative evidence available. Concept-level assumptions only.",
@@ -78,3 +79,34 @@ def derive_uncertainty_notes(evidence):
 def derive_human_review_required(evidence):
     """Require human review when the evidence strength is Low."""
     return derive_evidence_strength(evidence) == "Low"
+
+
+def meteorology_evidence_record(reading):
+    """Convert a meteorology reading into supporting evidence without conclusions."""
+    if not reading or reading.get("retrieval_status") != "success":
+        return {
+            "strength": "low",
+            "source": "meteorological observation",
+            "notes": "Meteorology observation unavailable; no observational inference made.",
+            "meteorology_reading": reading or {},
+            "indicators": [],
+        }
+    confidence = str(reading.get("confidence", "low")).lower()
+    strength = confidence if confidence in _ALLOWED_STRENGTHS else "low"
+    indicators = []
+    indicator_fields = {
+        "rainfall_mm": "recent rainfall",
+        "temperature_c": "air temperature",
+        "evaporation_mm": "evaporation indicator",
+        "humidity_percent": "relative humidity",
+    }
+    for field, label in indicator_fields.items():
+        if reading.get(field) is not None:
+            indicators.append(label)
+    return {
+        "strength": strength,
+        "source": "meteorological observation",
+        "notes": "Observational values are supporting evidence only; no conclusion or score change is applied.",
+        "meteorology_reading": reading,
+        "indicators": indicators,
+    }
