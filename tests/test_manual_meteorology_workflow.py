@@ -38,6 +38,38 @@ class ManualMeteorologyRefreshWorkflowTests(unittest.TestCase):
         self.assertIn("git diff --cached --quiet", self.workflow)
         self.assertIn('git commit -m "Refresh meteorology evidence for $OBSERVATION_DATE"', self.workflow)
 
+    def test_commit_targets_selected_branch(self) -> None:
+        self.assertIn("ref: ${{ github.ref_name }}", self.workflow)
+        self.assertIn("fetch-depth: 0", self.workflow)
+        self.assertIn('if [[ "$GITHUB_REF_TYPE" != "branch" ]]', self.workflow)
+        self.assertIn(
+            'git push origin "HEAD:refs/heads/${GITHUB_REF_NAME}"', self.workflow
+        )
+
+    def test_commit_scope_is_limited_to_meteorology_outputs(self) -> None:
+        self.assertEqual(
+            self.workflow.count(
+                "git add cczps_lite/output/meteorology_evidence.json"
+            ),
+            1,
+        )
+        self.assertEqual(
+            self.workflow.count(
+                "git add cczps_lite/output/meteorology_cache.json"
+            ),
+            1,
+        )
+        self.assertIn("Refusing to commit unexpected files", self.workflow)
+        self.assertNotIn("git add .", self.workflow)
+        self.assertNotIn("git add -A", self.workflow)
+
+    def test_main_push_can_trigger_dashboard_deployment(self) -> None:
+        deployment = (
+            REPO_ROOT / ".github" / "workflows" / "deploy-dashboard-pages.yml"
+        ).read_text(encoding="utf-8")
+        self.assertIn("push:", deployment)
+        self.assertIn("branches:\n      - main", deployment)
+
 
 if __name__ == "__main__":
     unittest.main()
