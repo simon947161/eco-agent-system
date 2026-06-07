@@ -54,6 +54,19 @@ Successful readings are stored in `output/meteorology_cache.json`. Requests for 
 
 The live fetcher uses the public NASA POWER endpoint without authentication or API keys. It does not add OpenAI, NOAA, ERA5, BOM, GIS, satellite, paid-service, database, cloud-storage, or scheduled-refresh integrations.
 
+## Manual Meteorology Refresh Workflow
+
+Open the repository's **Actions** tab, select **Manual Meteorology Refresh**, and choose **Run workflow**. The workflow is manual only and has no schedule or cron trigger.
+
+- `observation_date` is the NASA POWER observation date in `YYYYMMDD` format.
+- `manual_approval` adds the explicit approval required for a live request. When false, Budget Guard may emit `blocked_by_budget_guard` without calling NASA POWER.
+- `force_refresh` bypasses an existing location/date cache entry, but it does not bypass Budget Guard.
+- `commit_outputs` commits the evidence and cache JSON files to the selected branch. Empty commits are skipped.
+
+When `commit_outputs` is false, download the `meteorology-refresh-output` artifact from the completed workflow run. It contains `meteorology_evidence.json` and `meteorology_cache.json`.
+
+The workflow runs the complete unit test suite after refresh. Blocked requests and NASA `missing_data` responses remain valid transparent outputs; technical errors and test failures fail the workflow.
+
 ## Methodology Boundary
 
 This prototype is not a final environmental model, regulatory-grade planning tool, financial assessment, or scientific simulation. Human review and site-specific validation remain required.
