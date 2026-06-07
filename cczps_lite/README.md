@@ -1,4 +1,4 @@
-# CCZPS-Lite â€” Batlow Runtime Demonstrator
+# CCZPS-Lite Ã¢â‚¬â€ Batlow Runtime Demonstrator
 
 CCZPS-Lite is a small, file-based demonstrator for comparing possible environmental resilience pathways. It supports evidence, runtime interpretation, reasoning, governance review, and pre-execution resource guards.
 
@@ -66,6 +66,37 @@ Open the repository's **Actions** tab, select **Manual Meteorology Refresh**, an
 When `commit_outputs` is false, download the `meteorology-refresh-output` artifact from the completed workflow run. It contains `meteorology_evidence.json` and `meteorology_cache.json`.
 
 The workflow runs the complete unit test suite after refresh. Blocked requests and NASA `missing_data` responses remain valid transparent outputs; technical errors and test failures fail the workflow.
+
+### Safe Commit Verification
+
+To validate repository updates:
+
+1. Run **Manual Meteorology Refresh** on a review branch first.
+2. Set `manual_approval=true`, choose a historical `observation_date`, and set
+   `commit_outputs=true`.
+3. Confirm the workflow stages only:
+   `cczps_lite/output/meteorology_evidence.json` and
+   `cczps_lite/output/meteorology_cache.json`.
+4. Confirm the bot commit uses `Refresh meteorology evidence for YYYYMMDD`.
+5. Repeat on `main` only after reviewing the branch result. A successful push
+   to `main` triggers the existing **Deploy CCZPS-Lite Dashboard to GitHub
+   Pages** workflow.
+
+The workflow rejects non-branch refs, refuses unexpected staged files, and
+skips the commit when neither meteorology output changed. Branch protection can
+still prevent a direct push; in that case, report the blocked workflow rather
+than weakening repository protections.
+
+Generated output behaviour:
+
+- `meteorology_evidence.json` is the latest generated reading set and is
+  overwritten by the refresh runtime.
+- `meteorology_cache.json` stores successful location/date readings and is
+  updated locally by the refresh runtime.
+- Both files may be committed by explicit `commit_outputs=true` or uploaded in
+  the `meteorology-refresh-output` artifact when commit mode is false.
+- The source is live NASA POWER only when manual approval permits the guarded
+  request; blocked and missing-data records remain explicit.
 
 ## Methodology Boundary
 
