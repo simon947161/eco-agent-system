@@ -47,6 +47,22 @@ autonomous recommendations, GIS services, databases, or world models.
 
 ## Meteorology Connector Runtime
 
+### Current Status: Connector Scaffold Only
+
+Task 18 does not retrieve live meteorology data. It provides source
+definitions, field mappings, payload standardisation, missing-data handling,
+and an injected `fetcher` interface for future transport implementations.
+
+There is currently no built-in HTTP client, provider endpoint construction,
+API authentication, ERA5/CDS client, BOM downloader, or scheduled retrieval.
+Running `meteorology_runtime.py` without an externally supplied fetcher creates
+local records with null observation values and
+`"retrieval_status": "not_retrieved"`.
+
+The NASA POWER values used in tests are a hard-coded parsing fixture. They are
+not remotely retrieved observations. NOAA, ERA5, and BOM have source
+definitions only and no provider-specific retrieval implementation.
+
 The connector standardises air temperature, rainfall, relative humidity, wind
 speed, wind direction, solar radiation, and evaporation when those values are
 available from a configured source payload. Every reading exposes its source,
