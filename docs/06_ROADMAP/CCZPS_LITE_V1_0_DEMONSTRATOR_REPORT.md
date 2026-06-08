@@ -60,7 +60,45 @@ The Validation Layer combines runtime, differential, forcing, and evidence field
 
 The Review Loop routes scenarios toward evidence collection, technical review, local review, or concept review. The Adaptive Response and Response Prioritisation runtimes produce candidate review options and ordering, not final implementation instructions.
 
-## Tasks 18-29 Implementation Summary
+## Environmental Planning Workflow Alignment
+
+Task 29.5, the Environmental Planning Workflow Alignment Review, assesses CCZPS-Lite v1.0 against ten stages of a mature environmental planning and design workflow. The full review is recorded in `docs/07_VALIDATION/ENVIRONMENTAL_PLANNING_WORKFLOW_ALIGNMENT_REVIEW.md`.
+
+### Covered At Concept Or Demonstrator Level
+
+- Problem identification is covered at concept level through the Differential Field Runtime, Forcing Layer Runtime, Evidence Layer, and Validation Layer.
+- Scenario or intervention concept generation is covered at concept level through the Scenario Pack, Adaptive Response Runtime, Response Prioritisation Runtime, dashboard, and reports.
+- Supporting demonstrator capabilities also cover transparent evidence structuring, review routing, Usage & Cost Governance, Budget Guard control, local generated reports, and dashboard presentation.
+
+These capabilities identify candidate environmental signals and response concepts. They do not establish professionally verified diagnoses, approved interventions, or implementation instructions.
+
+### Partially Covered
+
+- Geographic context review.
+- Regional and site background analysis.
+- Climate and environmental condition analysis.
+- Terrain, watershed, wind, elevation, and spatial-pattern analysis.
+- Planning hypothesis or design assumption formation.
+- Fit assessment between hypotheses and evidence.
+- Iterative refinement and re-validation.
+
+These stages have useful configured inputs, meteorology evidence, spatial transects, validation fields, reports, and review-loop support. They remain partial because the system does not yet provide comprehensive site data acquisition, professional GIS and spatial analysis, explicit versioned planning hypotheses, formal fit criteria, persistent iteration history, multidisciplinary review, or professional sign-off.
+
+### Not Yet Covered
+
+- Professional simulation and tool-based validation is not implemented.
+- There is no dedicated Planning Hypothesis Runtime.
+- There is no Simulation Validation Interface.
+- There are no live GIS, DEM, watershed, wind-corridor, ENVI-met, Fluent, or CFD connector pathways.
+- There is no dedicated Iteration and Fit Assessment Runtime or formal professional approval workflow.
+
+### Demonstrator Suitability And Professional Boundaries
+
+CCZPS-Lite v1.0 is suitable as a demonstrator because it presents a coherent and transparent chain for configured case exploration, evidence structuring, rule-based environmental signals, uncertainty and gap disclosure, review routing, guarded observation retrieval, resource and cost governance, dashboard communication, and configured spatial context. It is useful for demonstrating how these workflow layers may connect while keeping assumptions, provenance, missing data, guard decisions, and human review needs visible.
+
+It is not yet a final professional planning approval, engineering, or simulation system. It lacks comprehensive and professionally validated site evidence; regulatory and standards-based assessment; implemented GIS, DEM, watershed, wind, microclimate, and CFD analysis; explicit hypothesis and iteration lifecycle management; calibrated model execution; field validation; multidisciplinary expert review; community and stakeholder approval processes; and auditable professional sign-off. Its outputs remain concept-level evidence and governance readings for qualified human review.
+
+## Tasks 18-29.5 Implementation Summary
 
 ### Task 18: Meteorology Connector Scaffold
 
@@ -131,6 +169,12 @@ Reference points are explicitly labelled as configured, illustrative, user-defin
 Task 29 defines future required spatial-intelligence capabilities, including Google Earth and mapping review; DEM and watershed analysis; upstream/downstream suggestions; prevailing-wind and wind-corridor suggestions; highland/lowland/lateral suggestions; local, regional, and 1000 km+ context; ENVI-met microclimate assessment; Fluent or CFD-style wind and turbulence assessment; and other appropriate spatial computation tools.
 
 No live GIS or model automation is implemented in v1.0. Future external calls must use Usage & Cost Governance, Budget Guard, and explicit user approval.
+
+### Task 29.5: Environmental Planning Workflow Alignment Review
+
+Task 29.5 compares the implemented demonstrator with a mature environmental planning workflow. It identifies concept-level coverage in problem identification and scenario generation; partial coverage across geographic, background, climate, spatial, hypothesis, fit, and iteration stages; and missing professional simulation, dedicated hypothesis management, formal fit assessment, and expert approval layers.
+
+The detailed assessment and readiness judgement are documented in `docs/07_VALIDATION/ENVIRONMENTAL_PLANNING_WORKFLOW_ALIGNMENT_REVIEW.md`.
 
 ## Meteorology Source Status
 
