@@ -90,3 +90,43 @@ async function renderMeteorologyEvidence() {
 }
 
 renderMeteorologyEvidence();
+
+async function renderMeteorologyTrends() {
+  const container = document.querySelector("#meteorology-trends");
+  if (!container) return;
+  try {
+    const response = await fetch("../output/meteorology_trends.json");
+    if (!response.ok) throw new Error(`Unable to load meteorology trends (${response.status})`);
+    const output = await response.json();
+    const records = Object.values(output.scenarios || {});
+    if (!records.length) {
+      container.innerHTML = '<p class="meteorology-empty">No successful time-series observations are available for trend reading yet.</p>';
+      return;
+    }
+    container.innerHTML = `
+      <h3>Conservative Trend Reading</h3>
+      <p>${escapeHtml(output.decision_boundary || "Evidence trend signals only.")}</p>
+      <div class="meteorology-grid">${records.map((record) => `
+        <article class="meteorology-card">
+          <header class="meteorology-card-header">
+            <div>
+              <span class="meteorology-scenario">${escapeHtml(record.scenario_id || "")}</span>
+              <h3>${meteorologyValue(record.location_name)}</h3>
+              <p>${escapeHtml(record.observation_window?.start_date || "Not available")} to ${escapeHtml(record.observation_window?.end_date || "Not available")}</p>
+            </div>
+            <span class="meteorology-status ${record.trend_status === "sufficient_observations" ? "success" : "missing"}">${escapeHtml(record.trend_status || "insufficient_data")}</span>
+          </header>
+          <dl class="meteorology-metrics">
+            ${Object.entries(record.variables || {}).map(([name, trend]) => metric(
+              name.replaceAll("_", " "),
+              `${trend.trend_classification} (${trend.sample_count} samples)`,
+            )).join("")}
+          </dl>
+        </article>
+      `).join("")}</div>`;
+  } catch (error) {
+    container.innerHTML = `<p class="meteorology-empty" role="alert">${escapeHtml(error.message)}</p>`;
+  }
+}
+
+renderMeteorologyTrends();
