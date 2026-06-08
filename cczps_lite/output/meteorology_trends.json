@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "runtime": "Meteorology Trend Reading",
+  "decision_boundary": "Conservative evidence trend signals only. No forecast, prediction, recommendation, or automated scoring change.",
+  "minimum_observation_count": 3,
+  "comparable_period_rule": "Trends require at least three successful observations for the same scenario and location. Each variable compares the earliest and latest stored non-missing values in that observation window.",
+  "scenarios": {}
+}
