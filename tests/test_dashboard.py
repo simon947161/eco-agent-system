@@ -27,6 +27,7 @@ class DemonstrationDashboardTests(unittest.TestCase):
         self.assertEqual(parser.stylesheets,["styles.css"])
         for section_id in ("overview","comparison","runtime-chain","scenario-detail","usage-cost","budget-guard","meteorology","validation-report","capability-map"):
             self.assertIn(section_id,parser.ids)
+        self.assertIn("meteorology-trends", parser.ids)
 
     def test_dashboard_reads_existing_outputs_without_external_services(self) -> None:
         script=(DASHBOARD_DIR/"dashboard.js").read_text(encoding="utf-8")
@@ -38,6 +39,7 @@ class DemonstrationDashboardTests(unittest.TestCase):
         for field in ("budget_status","daily_call_limit","estimated_calls","requires_manual_confirmation"): self.assertIn(field,budget)
         meteorology=(DASHBOARD_DIR/"meteorology-dashboard.js").read_text(encoding="utf-8")
         self.assertIn("../output/meteorology_evidence.json",meteorology)
+        self.assertIn("../output/meteorology_trends.json",meteorology)
         self.assertNotIn("power.larc.nasa.gov",meteorology)
         for forbidden in ("https://", "http://", "XMLHttpRequest", "WebSocket"):
             self.assertNotIn(forbidden, meteorology)
@@ -57,10 +59,12 @@ class DemonstrationDashboardTests(unittest.TestCase):
         ):
             self.assertIn(status, meteorology)
         self.assertIn("Not available", meteorology)
+        for field in ("trend_classification", "sample_count", "observation_window"):
+            self.assertIn(field, meteorology)
 
     def test_github_pages_workflow_stages_a_self_contained_site(self) -> None:
         workflow=PAGES_WORKFLOW.read_text(encoding="utf-8")
-        for expected in ("python cczps_lite/engine/meteorology_runtime.py","data/meteorology_evidence.json","_site/meteorology-dashboard.js","actions/deploy-pages@v4"):
+        for expected in ("python cczps_lite/engine/meteorology_runtime.py","data/meteorology_evidence.json","data/meteorology_trends.json","_site/meteorology-dashboard.js","actions/deploy-pages@v4"):
             self.assertIn(expected,workflow)
 
 
