@@ -8,59 +8,59 @@
     "batlow": {
       "scenario_id": "batlow",
       "location_name": "Batlow",
-      "sample_count": 3,
+      "sample_count": 4,
       "observation_window": {
         "start_date": "2025-05-01",
-        "end_date": "2025-05-15"
+        "end_date": "2025-06-09"
       },
       "trend_status": "sufficient_observations",
       "variables": {
         "temperature_c": {
-          "trend_classification": "increasing",
-          "sample_count": 3,
+          "trend_classification": "decreasing",
+          "sample_count": 4,
           "first_value": 10.03,
-          "last_value": 13.21,
-          "change": 3.18,
+          "last_value": 3.34,
+          "change": -6.69,
           "stable_threshold": 0.5,
           "unit": "C",
           "rule_explanation": "Temperature compares the earliest and latest stored successful observations. A change within +/-0.5 C is classified as stable."
         },
         "rainfall_mm": {
-          "trend_classification": "stable",
-          "sample_count": 3,
+          "trend_classification": "increasing",
+          "sample_count": 4,
           "first_value": 0.08,
-          "last_value": 0.03,
-          "change": -0.05,
+          "last_value": 5.65,
+          "change": 5.57,
           "stable_threshold": 0.5,
           "unit": "mm",
           "rule_explanation": "Rainfall compares the earliest and latest stored successful observations. A change within +/-0.5 mm is classified as stable."
         },
         "humidity_percent": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 66.48,
-          "last_value": 70.81,
-          "change": 4.33,
+          "last_value": 98.75,
+          "change": 32.27,
           "stable_threshold": 2.0,
           "unit": "%",
           "rule_explanation": "Relative humidity compares the earliest and latest stored successful observations. A change within +/-2.0 % is classified as stable."
         },
         "wind_speed_kmh": {
-          "trend_classification": "stable",
-          "sample_count": 3,
+          "trend_classification": "increasing",
+          "sample_count": 4,
           "first_value": 2.628,
-          "last_value": 3.132,
-          "change": 0.504,
+          "last_value": 3.8880000000000003,
+          "change": 1.26,
           "stable_threshold": 1.0,
           "unit": "km/h",
           "rule_explanation": "Wind speed compares the earliest and latest stored successful observations. A change within +/-1.0 km/h is classified as stable."
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "decreasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 13.71,
-          "last_value": 11.47,
-          "change": -2.24,
+          "last_value": 3.82,
+          "change": -9.89,
           "stable_threshold": 0.5,
           "unit": "MJ/m2",
           "rule_explanation": "Solar radiation compares the earliest and latest stored successful observations. A change within +/-0.5 MJ/m2 is classified as stable."
@@ -80,59 +80,59 @@
     "iraq": {
       "scenario_id": "iraq",
       "location_name": "Iraq",
-      "sample_count": 3,
+      "sample_count": 4,
       "observation_window": {
         "start_date": "2025-05-01",
-        "end_date": "2025-05-15"
+        "end_date": "2025-06-09"
       },
       "trend_status": "sufficient_observations",
       "variables": {
         "temperature_c": {
-          "trend_classification": "decreasing",
-          "sample_count": 3,
+          "trend_classification": "increasing",
+          "sample_count": 4,
           "first_value": 31.31,
-          "last_value": 28.1,
-          "change": -3.21,
+          "last_value": 36.09,
+          "change": 4.78,
           "stable_threshold": 0.5,
           "unit": "C",
           "rule_explanation": "Temperature compares the earliest and latest stored successful observations. A change within +/-0.5 C is classified as stable."
         },
         "rainfall_mm": {
           "trend_classification": "stable",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 0.31,
-          "last_value": 0.17,
-          "change": -0.14,
+          "last_value": 0.0,
+          "change": -0.31,
           "stable_threshold": 0.5,
           "unit": "mm",
           "rule_explanation": "Rainfall compares the earliest and latest stored successful observations. A change within +/-0.5 mm is classified as stable."
         },
         "humidity_percent": {
-          "trend_classification": "stable",
-          "sample_count": 3,
+          "trend_classification": "decreasing",
+          "sample_count": 4,
           "first_value": 30.34,
-          "last_value": 31.11,
-          "change": 0.77,
+          "last_value": 15.72,
+          "change": -14.62,
           "stable_threshold": 2.0,
           "unit": "%",
           "rule_explanation": "Relative humidity compares the earliest and latest stored successful observations. A change within +/-2.0 % is classified as stable."
         },
         "wind_speed_kmh": {
-          "trend_classification": "increasing",
-          "sample_count": 3,
+          "trend_classification": "stable",
+          "sample_count": 4,
           "first_value": 12.06,
-          "last_value": 14.148000000000001,
-          "change": 2.088,
+          "last_value": 11.808,
+          "change": -0.252,
           "stable_threshold": 1.0,
           "unit": "km/h",
           "rule_explanation": "Wind speed compares the earliest and latest stored successful observations. A change within +/-1.0 km/h is classified as stable."
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 23.49,
-          "last_value": 25.91,
-          "change": 2.42,
+          "last_value": 26.33,
+          "change": 2.84,
           "stable_threshold": 0.5,
           "unit": "MJ/m2",
           "rule_explanation": "Solar radiation compares the earliest and latest stored successful observations. A change within +/-0.5 MJ/m2 is classified as stable."
@@ -152,59 +152,59 @@
     "kunlun": {
       "scenario_id": "kunlun",
       "location_name": "Kunlun",
-      "sample_count": 3,
+      "sample_count": 4,
       "observation_window": {
         "start_date": "2025-05-01",
-        "end_date": "2025-05-15"
+        "end_date": "2025-06-09"
       },
       "trend_status": "sufficient_observations",
       "variables": {
         "temperature_c": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": -3.48,
-          "last_value": -2.55,
-          "change": 0.93,
+          "last_value": 1.73,
+          "change": 5.21,
           "stable_threshold": 0.5,
           "unit": "C",
           "rule_explanation": "Temperature compares the earliest and latest stored successful observations. A change within +/-0.5 C is classified as stable."
         },
         "rainfall_mm": {
-          "trend_classification": "increasing",
-          "sample_count": 3,
+          "trend_classification": "stable",
+          "sample_count": 4,
           "first_value": 0.0,
-          "last_value": 2.1,
-          "change": 2.1,
+          "last_value": 0.0,
+          "change": 0.0,
           "stable_threshold": 0.5,
           "unit": "mm",
           "rule_explanation": "Rainfall compares the earliest and latest stored successful observations. A change within +/-0.5 mm is classified as stable."
         },
         "humidity_percent": {
-          "trend_classification": "increasing",
-          "sample_count": 3,
+          "trend_classification": "stable",
+          "sample_count": 4,
           "first_value": 38.49,
-          "last_value": 49.16,
-          "change": 10.67,
+          "last_value": 38.69,
+          "change": 0.2,
           "stable_threshold": 2.0,
           "unit": "%",
           "rule_explanation": "Relative humidity compares the earliest and latest stored successful observations. A change within +/-2.0 % is classified as stable."
         },
         "wind_speed_kmh": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 8.856,
-          "last_value": 17.532,
-          "change": 8.676,
+          "last_value": 14.508000000000001,
+          "change": 5.652,
           "stable_threshold": 1.0,
           "unit": "km/h",
           "rule_explanation": "Wind speed compares the earliest and latest stored successful observations. A change within +/-1.0 km/h is classified as stable."
         },
         "solar_radiation_mj_m2": {
-          "trend_classification": "decreasing",
-          "sample_count": 3,
+          "trend_classification": "increasing",
+          "sample_count": 4,
           "first_value": 28.24,
-          "last_value": 24.57,
-          "change": -3.67,
+          "last_value": 33.13,
+          "change": 4.89,
           "stable_threshold": 0.5,
           "unit": "MJ/m2",
           "rule_explanation": "Solar radiation compares the earliest and latest stored successful observations. A change within +/-0.5 MJ/m2 is classified as stable."
@@ -224,59 +224,59 @@
     "xiongan_baiyangdian_wetland": {
       "scenario_id": "xiongan_baiyangdian_wetland",
       "location_name": "Baiyangdian Wetland Core",
-      "sample_count": 3,
+      "sample_count": 4,
       "observation_window": {
         "start_date": "2025-05-01",
-        "end_date": "2025-05-15"
+        "end_date": "2025-06-09"
       },
       "trend_status": "sufficient_observations",
       "variables": {
         "temperature_c": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 17.98,
-          "last_value": 20.22,
-          "change": 2.24,
+          "last_value": 28.45,
+          "change": 10.47,
           "stable_threshold": 0.5,
           "unit": "C",
           "rule_explanation": "Temperature compares the earliest and latest stored successful observations. A change within +/-0.5 C is classified as stable."
         },
         "rainfall_mm": {
-          "trend_classification": "stable",
-          "sample_count": 3,
+          "trend_classification": "increasing",
+          "sample_count": 4,
           "first_value": 0.0,
-          "last_value": 0.3,
-          "change": 0.3,
+          "last_value": 1.61,
+          "change": 1.61,
           "stable_threshold": 0.5,
           "unit": "mm",
           "rule_explanation": "Rainfall compares the earliest and latest stored successful observations. A change within +/-0.5 mm is classified as stable."
         },
         "humidity_percent": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 31.67,
-          "last_value": 61.96,
-          "change": 30.29,
+          "last_value": 38.88,
+          "change": 7.21,
           "stable_threshold": 2.0,
           "unit": "%",
           "rule_explanation": "Relative humidity compares the earliest and latest stored successful observations. A change within +/-2.0 % is classified as stable."
         },
         "wind_speed_kmh": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 8.82,
-          "last_value": 12.132000000000001,
-          "change": 3.312,
+          "last_value": 11.772,
+          "change": 2.952,
           "stable_threshold": 1.0,
           "unit": "km/h",
           "rule_explanation": "Wind speed compares the earliest and latest stored successful observations. A change within +/-1.0 km/h is classified as stable."
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "decreasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 26.63,
-          "last_value": 24.36,
-          "change": -2.27,
+          "last_value": 19.91,
+          "change": -6.72,
           "stable_threshold": 0.5,
           "unit": "MJ/m2",
           "rule_explanation": "Solar radiation compares the earliest and latest stored successful observations. A change within +/-0.5 MJ/m2 is classified as stable."
@@ -296,59 +296,59 @@
     "xiongan_downstream": {
       "scenario_id": "xiongan_downstream",
       "location_name": "Xiong'an / Downstream Region",
-      "sample_count": 3,
+      "sample_count": 4,
       "observation_window": {
         "start_date": "2025-05-01",
-        "end_date": "2025-05-15"
+        "end_date": "2025-06-09"
       },
       "trend_status": "sufficient_observations",
       "variables": {
         "temperature_c": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 17.98,
-          "last_value": 20.22,
-          "change": 2.24,
+          "last_value": 28.45,
+          "change": 10.47,
           "stable_threshold": 0.5,
           "unit": "C",
           "rule_explanation": "Temperature compares the earliest and latest stored successful observations. A change within +/-0.5 C is classified as stable."
         },
         "rainfall_mm": {
-          "trend_classification": "stable",
-          "sample_count": 3,
+          "trend_classification": "increasing",
+          "sample_count": 4,
           "first_value": 0.0,
-          "last_value": 0.3,
-          "change": 0.3,
+          "last_value": 1.61,
+          "change": 1.61,
           "stable_threshold": 0.5,
           "unit": "mm",
           "rule_explanation": "Rainfall compares the earliest and latest stored successful observations. A change within +/-0.5 mm is classified as stable."
         },
         "humidity_percent": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 31.67,
-          "last_value": 61.96,
-          "change": 30.29,
+          "last_value": 38.88,
+          "change": 7.21,
           "stable_threshold": 2.0,
           "unit": "%",
           "rule_explanation": "Relative humidity compares the earliest and latest stored successful observations. A change within +/-2.0 % is classified as stable."
         },
         "wind_speed_kmh": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 8.82,
-          "last_value": 12.132000000000001,
-          "change": 3.312,
+          "last_value": 11.772,
+          "change": 2.952,
           "stable_threshold": 1.0,
           "unit": "km/h",
           "rule_explanation": "Wind speed compares the earliest and latest stored successful observations. A change within +/-1.0 km/h is classified as stable."
         },
         "solar_radiation_mj_m2": {
-          "trend_classification": "stable",
-          "sample_count": 3,
+          "trend_classification": "decreasing",
+          "sample_count": 4,
           "first_value": 25.22,
-          "last_value": 25.35,
-          "change": 0.13,
+          "last_value": 19.28,
+          "change": -5.94,
           "stable_threshold": 0.5,
           "unit": "MJ/m2",
           "rule_explanation": "Solar radiation compares the earliest and latest stored successful observations. A change within +/-0.5 MJ/m2 is classified as stable."
@@ -368,26 +368,26 @@
     "xiongan_wutai_headwaters": {
       "scenario_id": "xiongan_wutai_headwaters",
       "location_name": "Wutai Mountain Headwaters",
-      "sample_count": 3,
+      "sample_count": 4,
       "observation_window": {
         "start_date": "2025-05-01",
-        "end_date": "2025-05-15"
+        "end_date": "2025-06-09"
       },
       "trend_status": "sufficient_observations",
       "variables": {
         "temperature_c": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 13.0,
-          "last_value": 19.29,
-          "change": 6.29,
+          "last_value": 23.93,
+          "change": 10.93,
           "stable_threshold": 0.5,
           "unit": "C",
           "rule_explanation": "Temperature compares the earliest and latest stored successful observations. A change within +/-0.5 C is classified as stable."
         },
         "rainfall_mm": {
           "trend_classification": "stable",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 0.05,
           "last_value": 0.12,
           "change": 0.07,
@@ -397,30 +397,30 @@
         },
         "humidity_percent": {
           "trend_classification": "increasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 31.78,
-          "last_value": 55.92,
-          "change": 24.14,
+          "last_value": 44.57,
+          "change": 12.79,
           "stable_threshold": 2.0,
           "unit": "%",
           "rule_explanation": "Relative humidity compares the earliest and latest stored successful observations. A change within +/-2.0 % is classified as stable."
         },
         "wind_speed_kmh": {
-          "trend_classification": "decreasing",
-          "sample_count": 3,
+          "trend_classification": "increasing",
+          "sample_count": 4,
           "first_value": 12.708,
-          "last_value": 7.128,
-          "change": -5.58,
+          "last_value": 14.004000000000001,
+          "change": 1.296,
           "stable_threshold": 1.0,
           "unit": "km/h",
           "rule_explanation": "Wind speed compares the earliest and latest stored successful observations. A change within +/-1.0 km/h is classified as stable."
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "decreasing",
-          "sample_count": 3,
+          "sample_count": 4,
           "first_value": 26.96,
-          "last_value": 25.85,
-          "change": -1.11,
+          "last_value": 25.2,
+          "change": -1.76,
           "stable_threshold": 0.5,
           "unit": "MJ/m2",
           "rule_explanation": "Solar radiation compares the earliest and latest stored successful observations. A change within +/-0.5 MJ/m2 is classified as stable."

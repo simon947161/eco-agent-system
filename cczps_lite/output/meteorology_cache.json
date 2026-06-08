@@ -953,6 +953,324 @@
           "relative humidity"
         ]
       }
+    },
+    "batlow|20250609": {
+      "scenario_id": "batlow",
+      "location_name": "Batlow",
+      "observation_date": "2025-06-09",
+      "meteorology_reading": {
+        "location": "Batlow",
+        "observation_date": "2025-06-09",
+        "temperature_c": 3.34,
+        "rainfall_mm": 5.65,
+        "humidity_percent": 98.75,
+        "wind_speed_kmh": 3.8880000000000003,
+        "wind_direction_degrees": 262.2,
+        "solar_radiation_mj_m2": 3.82,
+        "evaporation_mm": null,
+        "source": "NASA POWER",
+        "observation_timestamp": "2025-06-09T00:00:00Z",
+        "retrieved_at": null,
+        "retrieval_status": "success",
+        "confidence": "medium"
+      },
+      "source": "NASA POWER",
+      "retrieval_status": "success",
+      "confidence": "medium",
+      "budget_guard_status": "warning",
+      "budget_guard_summary": "Budget status is warning. Estimated calls are 1 against a daily limit of 20; the agent-run limit is 5. Proceed only with caution and review the declared limits. This is a pre-execution governance check only; no metering, billing, payment, or external resource call is performed.",
+      "from_cache": false,
+      "evidence": {
+        "strength": "medium",
+        "source": "meteorological observation",
+        "notes": "Observational values are supporting evidence only; no conclusion or score change is applied.",
+        "meteorology_reading": {
+          "location": "Batlow",
+          "observation_date": "2025-06-09",
+          "temperature_c": 3.34,
+          "rainfall_mm": 5.65,
+          "humidity_percent": 98.75,
+          "wind_speed_kmh": 3.8880000000000003,
+          "wind_direction_degrees": 262.2,
+          "solar_radiation_mj_m2": 3.82,
+          "evaporation_mm": null,
+          "source": "NASA POWER",
+          "observation_timestamp": "2025-06-09T00:00:00Z",
+          "retrieved_at": null,
+          "retrieval_status": "success",
+          "confidence": "medium"
+        },
+        "indicators": [
+          "recent rainfall",
+          "air temperature",
+          "relative humidity"
+        ]
+      }
+    },
+    "kunlun|20250609": {
+      "scenario_id": "kunlun",
+      "location_name": "Kunlun",
+      "observation_date": "2025-06-09",
+      "meteorology_reading": {
+        "location": "Kunlun",
+        "observation_date": "2025-06-09",
+        "temperature_c": 1.73,
+        "rainfall_mm": 0.0,
+        "humidity_percent": 38.69,
+        "wind_speed_kmh": 14.508000000000001,
+        "wind_direction_degrees": 348.4,
+        "solar_radiation_mj_m2": 33.13,
+        "evaporation_mm": null,
+        "source": "NASA POWER",
+        "observation_timestamp": "2025-06-09T00:00:00Z",
+        "retrieved_at": null,
+        "retrieval_status": "success",
+        "confidence": "medium"
+      },
+      "source": "NASA POWER",
+      "retrieval_status": "success",
+      "confidence": "medium",
+      "budget_guard_status": "warning",
+      "budget_guard_summary": "Budget status is warning. Estimated calls are 1 against a daily limit of 20; the agent-run limit is 5. Proceed only with caution and review the declared limits. This is a pre-execution governance check only; no metering, billing, payment, or external resource call is performed.",
+      "from_cache": false,
+      "evidence": {
+        "strength": "medium",
+        "source": "meteorological observation",
+        "notes": "Observational values are supporting evidence only; no conclusion or score change is applied.",
+        "meteorology_reading": {
+          "location": "Kunlun",
+          "observation_date": "2025-06-09",
+          "temperature_c": 1.73,
+          "rainfall_mm": 0.0,
+          "humidity_percent": 38.69,
+          "wind_speed_kmh": 14.508000000000001,
+          "wind_direction_degrees": 348.4,
+          "solar_radiation_mj_m2": 33.13,
+          "evaporation_mm": null,
+          "source": "NASA POWER",
+          "observation_timestamp": "2025-06-09T00:00:00Z",
+          "retrieved_at": null,
+          "retrieval_status": "success",
+          "confidence": "medium"
+        },
+        "indicators": [
+          "recent rainfall",
+          "air temperature",
+          "relative humidity"
+        ]
+      }
+    },
+    "iraq|20250609": {
+      "scenario_id": "iraq",
+      "location_name": "Iraq",
+      "observation_date": "2025-06-09",
+      "meteorology_reading": {
+        "location": "Iraq",
+        "observation_date": "2025-06-09",
+        "temperature_c": 36.09,
+        "rainfall_mm": 0.0,
+        "humidity_percent": 15.72,
+        "wind_speed_kmh": 11.808,
+        "wind_direction_degrees": 74.1,
+        "solar_radiation_mj_m2": 26.33,
+        "evaporation_mm": null,
+        "source": "NASA POWER",
+        "observation_timestamp": "2025-06-09T00:00:00Z",
+        "retrieved_at": null,
+        "retrieval_status": "success",
+        "confidence": "medium"
+      },
+      "source": "NASA POWER",
+      "retrieval_status": "success",
+      "confidence": "medium",
+      "budget_guard_status": "warning",
+      "budget_guard_summary": "Budget status is warning. Estimated calls are 1 against a daily limit of 20; the agent-run limit is 5. Proceed only with caution and review the declared limits. This is a pre-execution governance check only; no metering, billing, payment, or external resource call is performed.",
+      "from_cache": false,
+      "evidence": {
+        "strength": "medium",
+        "source": "meteorological observation",
+        "notes": "Observational values are supporting evidence only; no conclusion or score change is applied.",
+        "meteorology_reading": {
+          "location": "Iraq",
+          "observation_date": "2025-06-09",
+          "temperature_c": 36.09,
+          "rainfall_mm": 0.0,
+          "humidity_percent": 15.72,
+          "wind_speed_kmh": 11.808,
+          "wind_direction_degrees": 74.1,
+          "solar_radiation_mj_m2": 26.33,
+          "evaporation_mm": null,
+          "source": "NASA POWER",
+          "observation_timestamp": "2025-06-09T00:00:00Z",
+          "retrieved_at": null,
+          "retrieval_status": "success",
+          "confidence": "medium"
+        },
+        "indicators": [
+          "recent rainfall",
+          "air temperature",
+          "relative humidity"
+        ]
+      }
+    },
+    "xiongan_wutai_headwaters|20250609": {
+      "scenario_id": "xiongan_wutai_headwaters",
+      "location_name": "Wutai Mountain Headwaters",
+      "observation_date": "2025-06-09",
+      "meteorology_reading": {
+        "location": "Wutai Mountain Headwaters",
+        "observation_date": "2025-06-09",
+        "temperature_c": 23.93,
+        "rainfall_mm": 0.12,
+        "humidity_percent": 44.57,
+        "wind_speed_kmh": 14.004000000000001,
+        "wind_direction_degrees": 310.7,
+        "solar_radiation_mj_m2": 25.2,
+        "evaporation_mm": null,
+        "source": "NASA POWER",
+        "observation_timestamp": "2025-06-09T00:00:00Z",
+        "retrieved_at": null,
+        "retrieval_status": "success",
+        "confidence": "medium"
+      },
+      "source": "NASA POWER",
+      "retrieval_status": "success",
+      "confidence": "medium",
+      "budget_guard_status": "warning",
+      "budget_guard_summary": "Budget status is warning. Estimated calls are 1 against a daily limit of 20; the agent-run limit is 5. Proceed only with caution and review the declared limits. This is a pre-execution governance check only; no metering, billing, payment, or external resource call is performed.",
+      "from_cache": false,
+      "evidence": {
+        "strength": "medium",
+        "source": "meteorological observation",
+        "notes": "Observational values are supporting evidence only; no conclusion or score change is applied.",
+        "meteorology_reading": {
+          "location": "Wutai Mountain Headwaters",
+          "observation_date": "2025-06-09",
+          "temperature_c": 23.93,
+          "rainfall_mm": 0.12,
+          "humidity_percent": 44.57,
+          "wind_speed_kmh": 14.004000000000001,
+          "wind_direction_degrees": 310.7,
+          "solar_radiation_mj_m2": 25.2,
+          "evaporation_mm": null,
+          "source": "NASA POWER",
+          "observation_timestamp": "2025-06-09T00:00:00Z",
+          "retrieved_at": null,
+          "retrieval_status": "success",
+          "confidence": "medium"
+        },
+        "indicators": [
+          "recent rainfall",
+          "air temperature",
+          "relative humidity"
+        ]
+      }
+    },
+    "xiongan_baiyangdian_wetland|20250609": {
+      "scenario_id": "xiongan_baiyangdian_wetland",
+      "location_name": "Baiyangdian Wetland Core",
+      "observation_date": "2025-06-09",
+      "meteorology_reading": {
+        "location": "Baiyangdian Wetland Core",
+        "observation_date": "2025-06-09",
+        "temperature_c": 28.45,
+        "rainfall_mm": 1.61,
+        "humidity_percent": 38.88,
+        "wind_speed_kmh": 11.772,
+        "wind_direction_degrees": 329.7,
+        "solar_radiation_mj_m2": 19.91,
+        "evaporation_mm": null,
+        "source": "NASA POWER",
+        "observation_timestamp": "2025-06-09T00:00:00Z",
+        "retrieved_at": null,
+        "retrieval_status": "success",
+        "confidence": "medium"
+      },
+      "source": "NASA POWER",
+      "retrieval_status": "success",
+      "confidence": "medium",
+      "budget_guard_status": "warning",
+      "budget_guard_summary": "Budget status is warning. Estimated calls are 1 against a daily limit of 20; the agent-run limit is 5. Proceed only with caution and review the declared limits. This is a pre-execution governance check only; no metering, billing, payment, or external resource call is performed.",
+      "from_cache": false,
+      "evidence": {
+        "strength": "medium",
+        "source": "meteorological observation",
+        "notes": "Observational values are supporting evidence only; no conclusion or score change is applied.",
+        "meteorology_reading": {
+          "location": "Baiyangdian Wetland Core",
+          "observation_date": "2025-06-09",
+          "temperature_c": 28.45,
+          "rainfall_mm": 1.61,
+          "humidity_percent": 38.88,
+          "wind_speed_kmh": 11.772,
+          "wind_direction_degrees": 329.7,
+          "solar_radiation_mj_m2": 19.91,
+          "evaporation_mm": null,
+          "source": "NASA POWER",
+          "observation_timestamp": "2025-06-09T00:00:00Z",
+          "retrieved_at": null,
+          "retrieval_status": "success",
+          "confidence": "medium"
+        },
+        "indicators": [
+          "recent rainfall",
+          "air temperature",
+          "relative humidity"
+        ]
+      }
+    },
+    "xiongan_downstream|20250609": {
+      "scenario_id": "xiongan_downstream",
+      "location_name": "Xiong'an / Downstream Region",
+      "observation_date": "2025-06-09",
+      "meteorology_reading": {
+        "location": "Xiong'an / Downstream Region",
+        "observation_date": "2025-06-09",
+        "temperature_c": 28.45,
+        "rainfall_mm": 1.61,
+        "humidity_percent": 38.88,
+        "wind_speed_kmh": 11.772,
+        "wind_direction_degrees": 329.7,
+        "solar_radiation_mj_m2": 19.28,
+        "evaporation_mm": null,
+        "source": "NASA POWER",
+        "observation_timestamp": "2025-06-09T00:00:00Z",
+        "retrieved_at": null,
+        "retrieval_status": "success",
+        "confidence": "medium"
+      },
+      "source": "NASA POWER",
+      "retrieval_status": "success",
+      "confidence": "medium",
+      "budget_guard_status": "warning",
+      "budget_guard_summary": "Budget status is warning. Estimated calls are 1 against a daily limit of 20; the agent-run limit is 5. Proceed only with caution and review the declared limits. This is a pre-execution governance check only; no metering, billing, payment, or external resource call is performed.",
+      "from_cache": false,
+      "evidence": {
+        "strength": "medium",
+        "source": "meteorological observation",
+        "notes": "Observational values are supporting evidence only; no conclusion or score change is applied.",
+        "meteorology_reading": {
+          "location": "Xiong'an / Downstream Region",
+          "observation_date": "2025-06-09",
+          "temperature_c": 28.45,
+          "rainfall_mm": 1.61,
+          "humidity_percent": 38.88,
+          "wind_speed_kmh": 11.772,
+          "wind_direction_degrees": 329.7,
+          "solar_radiation_mj_m2": 19.28,
+          "evaporation_mm": null,
+          "source": "NASA POWER",
+          "observation_timestamp": "2025-06-09T00:00:00Z",
+          "retrieved_at": null,
+          "retrieval_status": "success",
+          "confidence": "medium"
+        },
+        "indicators": [
+          "recent rainfall",
+          "air temperature",
+          "relative humidity"
+        ]
+      }
     }
   }
 }
