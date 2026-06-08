@@ -77,8 +77,10 @@ jobs:
           git add cczps_lite/output/meteorology_evidence.json
           git add cczps_lite/output/meteorology_cache.json
           git add cczps_lite/output/meteorology_timeseries.json
+          git add cczps_lite/output/meteorology_trends.json
+          git add cczps_lite/output/meteorology_trends.md
           staged_files="$(git diff --cached --name-only)"
-          unexpected_files="$(printf '%s\n' "$staged_files" | grep -Ev '^(cczps_lite/output/meteorology_evidence\.json|cczps_lite/output/meteorology_cache\.json|cczps_lite/output/meteorology_timeseries\.json)$' || true)"
+          unexpected_files="$(printf '%s\n' "$staged_files" | grep -Ev '^(cczps_lite/output/meteorology_evidence\.json|cczps_lite/output/meteorology_cache\.json|cczps_lite/output/meteorology_timeseries\.json|cczps_lite/output/meteorology_trends\.json|cczps_lite/output/meteorology_trends\.md)$' || true)"
           if [[ -n "$unexpected_files" ]]; then
             echo "Refusing to commit unexpected files:"
             echo "$unexpected_files"
@@ -99,3 +101,5 @@ jobs:
             cczps_lite/output/meteorology_evidence.json
             cczps_lite/output/meteorology_cache.json
             cczps_lite/output/meteorology_timeseries.json
+            cczps_lite/output/meteorology_trends.json
+            cczps_lite/output/meteorology_trends.md
