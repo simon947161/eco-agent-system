@@ -4,5 +4,438 @@
   "decision_boundary": "Conservative evidence trend signals only. No forecast, prediction, recommendation, or automated scoring change.",
   "minimum_observation_count": 3,
   "comparable_period_rule": "Trends require at least three successful observations for the same scenario and location. Each variable compares the earliest and latest stored non-missing values in that observation window.",
-  "scenarios": {}
+  "scenarios": {
+    "batlow": {
+      "scenario_id": "batlow",
+      "location_name": "Batlow",
+      "sample_count": 1,
+      "observation_window": {
+        "start_date": "2025-05-08",
+        "end_date": "2025-05-08"
+      },
+      "trend_status": "insufficient_data",
+      "variables": {
+        "temperature_c": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 10.0,
+          "last_value": 10.0,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "C",
+          "rule_explanation": "Temperature trend requires at least 3 comparable observations."
+        },
+        "rainfall_mm": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 0.0,
+          "last_value": 0.0,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Rainfall trend requires at least 3 comparable observations."
+        },
+        "humidity_percent": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 62.29,
+          "last_value": 62.29,
+          "change": null,
+          "stable_threshold": 2.0,
+          "unit": "%",
+          "rule_explanation": "Relative humidity trend requires at least 3 comparable observations."
+        },
+        "wind_speed_kmh": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 3.6,
+          "last_value": 3.6,
+          "change": null,
+          "stable_threshold": 1.0,
+          "unit": "km/h",
+          "rule_explanation": "Wind speed trend requires at least 3 comparable observations."
+        },
+        "solar_radiation_mj_m2": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 13.46,
+          "last_value": 13.46,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "MJ/m2",
+          "rule_explanation": "Solar radiation trend requires at least 3 comparable observations."
+        },
+        "evaporation_mm": {
+          "trend_classification": "missing_data",
+          "sample_count": 0,
+          "first_value": null,
+          "last_value": null,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Evaporation trend cannot be read because all stored values are missing."
+        }
+      }
+    },
+    "iraq": {
+      "scenario_id": "iraq",
+      "location_name": "Iraq",
+      "sample_count": 1,
+      "observation_window": {
+        "start_date": "2025-05-08",
+        "end_date": "2025-05-08"
+      },
+      "trend_status": "insufficient_data",
+      "variables": {
+        "temperature_c": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 27.67,
+          "last_value": 27.67,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "C",
+          "rule_explanation": "Temperature trend requires at least 3 comparable observations."
+        },
+        "rainfall_mm": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 0.0,
+          "last_value": 0.0,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Rainfall trend requires at least 3 comparable observations."
+        },
+        "humidity_percent": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 29.12,
+          "last_value": 29.12,
+          "change": null,
+          "stable_threshold": 2.0,
+          "unit": "%",
+          "rule_explanation": "Relative humidity trend requires at least 3 comparable observations."
+        },
+        "wind_speed_kmh": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 11.664000000000001,
+          "last_value": 11.664000000000001,
+          "change": null,
+          "stable_threshold": 1.0,
+          "unit": "km/h",
+          "rule_explanation": "Wind speed trend requires at least 3 comparable observations."
+        },
+        "solar_radiation_mj_m2": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 28.1,
+          "last_value": 28.1,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "MJ/m2",
+          "rule_explanation": "Solar radiation trend requires at least 3 comparable observations."
+        },
+        "evaporation_mm": {
+          "trend_classification": "missing_data",
+          "sample_count": 0,
+          "first_value": null,
+          "last_value": null,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Evaporation trend cannot be read because all stored values are missing."
+        }
+      }
+    },
+    "kunlun": {
+      "scenario_id": "kunlun",
+      "location_name": "Kunlun",
+      "sample_count": 1,
+      "observation_window": {
+        "start_date": "2025-05-08",
+        "end_date": "2025-05-08"
+      },
+      "trend_status": "insufficient_data",
+      "variables": {
+        "temperature_c": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": -2.16,
+          "last_value": -2.16,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "C",
+          "rule_explanation": "Temperature trend requires at least 3 comparable observations."
+        },
+        "rainfall_mm": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 0.0,
+          "last_value": 0.0,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Rainfall trend requires at least 3 comparable observations."
+        },
+        "humidity_percent": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 27.82,
+          "last_value": 27.82,
+          "change": null,
+          "stable_threshold": 2.0,
+          "unit": "%",
+          "rule_explanation": "Relative humidity trend requires at least 3 comparable observations."
+        },
+        "wind_speed_kmh": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 16.128000000000004,
+          "last_value": 16.128000000000004,
+          "change": null,
+          "stable_threshold": 1.0,
+          "unit": "km/h",
+          "rule_explanation": "Wind speed trend requires at least 3 comparable observations."
+        },
+        "solar_radiation_mj_m2": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 32.51,
+          "last_value": 32.51,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "MJ/m2",
+          "rule_explanation": "Solar radiation trend requires at least 3 comparable observations."
+        },
+        "evaporation_mm": {
+          "trend_classification": "missing_data",
+          "sample_count": 0,
+          "first_value": null,
+          "last_value": null,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Evaporation trend cannot be read because all stored values are missing."
+        }
+      }
+    },
+    "xiongan_baiyangdian_wetland": {
+      "scenario_id": "xiongan_baiyangdian_wetland",
+      "location_name": "Baiyangdian Wetland Core",
+      "sample_count": 1,
+      "observation_window": {
+        "start_date": "2025-05-08",
+        "end_date": "2025-05-08"
+      },
+      "trend_status": "insufficient_data",
+      "variables": {
+        "temperature_c": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 19.65,
+          "last_value": 19.65,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "C",
+          "rule_explanation": "Temperature trend requires at least 3 comparable observations."
+        },
+        "rainfall_mm": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 1.21,
+          "last_value": 1.21,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Rainfall trend requires at least 3 comparable observations."
+        },
+        "humidity_percent": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 66.77,
+          "last_value": 66.77,
+          "change": null,
+          "stable_threshold": 2.0,
+          "unit": "%",
+          "rule_explanation": "Relative humidity trend requires at least 3 comparable observations."
+        },
+        "wind_speed_kmh": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 10.98,
+          "last_value": 10.98,
+          "change": null,
+          "stable_threshold": 1.0,
+          "unit": "km/h",
+          "rule_explanation": "Wind speed trend requires at least 3 comparable observations."
+        },
+        "solar_radiation_mj_m2": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 11.54,
+          "last_value": 11.54,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "MJ/m2",
+          "rule_explanation": "Solar radiation trend requires at least 3 comparable observations."
+        },
+        "evaporation_mm": {
+          "trend_classification": "missing_data",
+          "sample_count": 0,
+          "first_value": null,
+          "last_value": null,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Evaporation trend cannot be read because all stored values are missing."
+        }
+      }
+    },
+    "xiongan_downstream": {
+      "scenario_id": "xiongan_downstream",
+      "location_name": "Xiong'an / Downstream Region",
+      "sample_count": 1,
+      "observation_window": {
+        "start_date": "2025-05-08",
+        "end_date": "2025-05-08"
+      },
+      "trend_status": "insufficient_data",
+      "variables": {
+        "temperature_c": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 19.65,
+          "last_value": 19.65,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "C",
+          "rule_explanation": "Temperature trend requires at least 3 comparable observations."
+        },
+        "rainfall_mm": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 1.21,
+          "last_value": 1.21,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Rainfall trend requires at least 3 comparable observations."
+        },
+        "humidity_percent": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 66.77,
+          "last_value": 66.77,
+          "change": null,
+          "stable_threshold": 2.0,
+          "unit": "%",
+          "rule_explanation": "Relative humidity trend requires at least 3 comparable observations."
+        },
+        "wind_speed_kmh": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 10.98,
+          "last_value": 10.98,
+          "change": null,
+          "stable_threshold": 1.0,
+          "unit": "km/h",
+          "rule_explanation": "Wind speed trend requires at least 3 comparable observations."
+        },
+        "solar_radiation_mj_m2": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 11.1,
+          "last_value": 11.1,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "MJ/m2",
+          "rule_explanation": "Solar radiation trend requires at least 3 comparable observations."
+        },
+        "evaporation_mm": {
+          "trend_classification": "missing_data",
+          "sample_count": 0,
+          "first_value": null,
+          "last_value": null,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Evaporation trend cannot be read because all stored values are missing."
+        }
+      }
+    },
+    "xiongan_wutai_headwaters": {
+      "scenario_id": "xiongan_wutai_headwaters",
+      "location_name": "Wutai Mountain Headwaters",
+      "sample_count": 1,
+      "observation_window": {
+        "start_date": "2025-05-08",
+        "end_date": "2025-05-08"
+      },
+      "trend_status": "insufficient_data",
+      "variables": {
+        "temperature_c": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 15.48,
+          "last_value": 15.48,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "C",
+          "rule_explanation": "Temperature trend requires at least 3 comparable observations."
+        },
+        "rainfall_mm": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 8.56,
+          "last_value": 8.56,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Rainfall trend requires at least 3 comparable observations."
+        },
+        "humidity_percent": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 70.54,
+          "last_value": 70.54,
+          "change": null,
+          "stable_threshold": 2.0,
+          "unit": "%",
+          "rule_explanation": "Relative humidity trend requires at least 3 comparable observations."
+        },
+        "wind_speed_kmh": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 5.58,
+          "last_value": 5.58,
+          "change": null,
+          "stable_threshold": 1.0,
+          "unit": "km/h",
+          "rule_explanation": "Wind speed trend requires at least 3 comparable observations."
+        },
+        "solar_radiation_mj_m2": {
+          "trend_classification": "insufficient_data",
+          "sample_count": 1,
+          "first_value": 13.89,
+          "last_value": 13.89,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "MJ/m2",
+          "rule_explanation": "Solar radiation trend requires at least 3 comparable observations."
+        },
+        "evaporation_mm": {
+          "trend_classification": "missing_data",
+          "sample_count": 0,
+          "first_value": null,
+          "last_value": null,
+          "change": null,
+          "stable_threshold": 0.5,
+          "unit": "mm",
+          "rule_explanation": "Evaporation trend cannot be read because all stored values are missing."
+        }
+      }
+    }
+  }
 }
