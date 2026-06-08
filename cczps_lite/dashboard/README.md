@@ -39,6 +39,8 @@ The expected project-site address is `https://simon947161.github.io/eco-agent-sy
   observation date, retrieval state, temperature, rainfall, relative humidity,
   wind speed and direction, solar radiation, cache state, confidence, and
   Budget Guard status;
+- conservative meteorology trend readings derived from local stored
+  time-series observations;
 - system validation and capability documentation.
 
 ## Meteorology Evidence Panel
@@ -58,6 +60,18 @@ record.
 
 The browser reads this local JSON file only. It does not initiate retrieval,
 write cache data, or call NASA POWER or another external service.
+
+## Meteorology Trend Reading
+
+The trend panel reads only `cczps_lite/output/meteorology_trends.json`,
+generated locally by `python cczps_lite/engine/meteorology_runtime.py` from
+`cczps_lite/output/meteorology_timeseries.json`.
+
+Trend readings are conservative evidence signals. They require at least three
+successful observations for the same scenario and location, compare the
+earliest and latest stored non-missing values, and report increasing,
+decreasing, stable, missing-data, or insufficient-data classifications. They
+are not forecasts, predictions, scoring changes, or recommendations.
 
 ## What It Cannot Do Yet
 
