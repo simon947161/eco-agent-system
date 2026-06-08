@@ -21,10 +21,22 @@ PROJECT_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = PROJECT_DIR / "output" / "meteorology_evidence.json"
 CACHE_PATH = PROJECT_DIR / "output" / "meteorology_cache.json"
 TIMESERIES_PATH = PROJECT_DIR / "output" / "meteorology_timeseries.json"
+TREND_PATH = PROJECT_DIR / "output" / "meteorology_trends.json"
+TREND_REPORT_PATH = PROJECT_DIR / "output" / "meteorology_trends.md"
 LOCATION_PATH = PROJECT_DIR / "input" / "meteorology_locations.json"
 NASA_POWER_ENDPOINT = "https://power.larc.nasa.gov/api/temporal/daily/point"
 NASA_PARAMETERS = "T2M,PRECTOTCORR,RH2M,WS2M,WD2M,ALLSKY_SFC_SW_DWN"
 TIMESERIES_SCHEMA_VERSION = "1.0"
+TREND_SCHEMA_VERSION = "1.0"
+TREND_MINIMUM_OBSERVATIONS = 3
+TREND_VARIABLES = {
+    "temperature_c": {"label": "Temperature", "unit": "C", "stable_threshold": 0.5},
+    "rainfall_mm": {"label": "Rainfall", "unit": "mm", "stable_threshold": 0.5},
+    "humidity_percent": {"label": "Relative humidity", "unit": "%", "stable_threshold": 2.0},
+    "wind_speed_kmh": {"label": "Wind speed", "unit": "km/h", "stable_threshold": 1.0},
+    "solar_radiation_mj_m2": {"label": "Solar radiation", "unit": "MJ/m2", "stable_threshold": 0.5},
+    "evaporation_mm": {"label": "Evaporation", "unit": "mm", "stable_threshold": 0.5},
+}
 
 
 def nasa_power_fetch(request: dict) -> dict:
@@ -140,6 +152,164 @@ def update_timeseries(output: dict, path: Path = TIMESERIES_PATH) -> dict:
     return store
 
 
+def _trend_value(value):
+    return value if isinstance(value, (int, float)) and value != -999 else None
+
+
+def _classify_trend(values: list[tuple[str, float]], threshold: float) -> tuple[str, float | None]:
+    change = values[-1][1] - values[0][1]
+    if abs(change) <= threshold:
+        return "stable", change
+    if change > 0:
+        return "increasing", change
+    return "decreasing", change
+
+
+def _variable_trend(observations: list[dict], variable: str, config: dict) -> dict:
+    values = []
+    for item in observations:
+        value = _trend_value(item.get("meteorology_reading", {}).get(variable))
+        if value is not None:
+            values.append((item.get("observation_date"), float(value)))
+    if not values:
+        return {
+            "trend_classification": "missing_data",
+            "sample_count": 0,
+            "first_value": None,
+            "last_value": None,
+            "change": None,
+            "stable_threshold": config["stable_threshold"],
+            "unit": config["unit"],
+            "rule_explanation": f"{config['label']} trend cannot be read because all stored values are missing.",
+        }
+    if len(values) < TREND_MINIMUM_OBSERVATIONS:
+        return {
+            "trend_classification": "insufficient_data",
+            "sample_count": len(values),
+            "first_value": values[0][1],
+            "last_value": values[-1][1],
+            "change": None,
+            "stable_threshold": config["stable_threshold"],
+            "unit": config["unit"],
+            "rule_explanation": (
+                f"{config['label']} trend requires at least "
+                f"{TREND_MINIMUM_OBSERVATIONS} comparable observations."
+            ),
+        }
+    classification, change = _classify_trend(values, config["stable_threshold"])
+    return {
+        "trend_classification": classification,
+        "sample_count": len(values),
+        "first_value": values[0][1],
+        "last_value": values[-1][1],
+        "change": round(change, 4),
+        "stable_threshold": config["stable_threshold"],
+        "unit": config["unit"],
+        "rule_explanation": (
+            f"{config['label']} compares the earliest and latest stored "
+            f"successful observations. A change within +/-{config['stable_threshold']} "
+            f"{config['unit']} is classified as stable."
+        ),
+    }
+
+
+def build_trend_output(timeseries: dict | None = None, path: Path = TIMESERIES_PATH) -> dict:
+    store = timeseries if timeseries is not None else load_timeseries(path)
+    grouped: dict[tuple[str, str], list[dict]] = {}
+    for item in store.get("observations", []):
+        if item.get("retrieval_status") != "success":
+            continue
+        key = (item.get("scenario_id"), item.get("location_name"))
+        if None in key:
+            continue
+        grouped.setdefault(key, []).append(item)
+    scenarios = {}
+    for (scenario_id, location_name), observations in sorted(grouped.items()):
+        observations.sort(key=lambda item: item.get("observation_date") or "")
+        dates = [item.get("observation_date") for item in observations if item.get("observation_date")]
+        scenario_trends = {
+            variable: _variable_trend(observations, variable, config)
+            for variable, config in TREND_VARIABLES.items()
+        }
+        scenarios[scenario_id] = {
+            "scenario_id": scenario_id,
+            "location_name": location_name,
+            "sample_count": len(observations),
+            "observation_window": {
+                "start_date": dates[0] if dates else None,
+                "end_date": dates[-1] if dates else None,
+            },
+            "trend_status": (
+                "sufficient_observations"
+                if len(observations) >= TREND_MINIMUM_OBSERVATIONS
+                else "insufficient_data"
+            ),
+            "variables": scenario_trends,
+        }
+    return {
+        "schema_version": TREND_SCHEMA_VERSION,
+        "runtime": "Meteorology Trend Reading",
+        "decision_boundary": (
+            "Conservative evidence trend signals only. No forecast, prediction, "
+            "recommendation, or automated scoring change."
+        ),
+        "minimum_observation_count": TREND_MINIMUM_OBSERVATIONS,
+        "comparable_period_rule": (
+            "Trends require at least three successful observations for the same "
+            "scenario and location. Each variable compares the earliest and "
+            "latest stored non-missing values in that observation window."
+        ),
+        "scenarios": scenarios,
+    }
+
+
+def write_trend_outputs(trends: dict, json_path: Path = TREND_PATH, report_path: Path = TREND_REPORT_PATH) -> None:
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    json_path.write_text(json.dumps(trends, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
+    lines = [
+        "# Meteorology Trend Reading",
+        "",
+        trends["decision_boundary"],
+        "",
+        f"- Schema version: {trends['schema_version']}",
+        f"- Minimum observations: {trends['minimum_observation_count']}",
+        f"- Comparable-period rule: {trends['comparable_period_rule']}",
+        "",
+    ]
+    if not trends["scenarios"]:
+        lines.extend([
+            "## Current Status",
+            "",
+            "No successful time-series observations are available yet.",
+        ])
+    for scenario in trends["scenarios"].values():
+        window = scenario["observation_window"]
+        lines.extend([
+            f"## {scenario['location_name']} ({scenario['scenario_id']})",
+            "",
+            f"- Sample count: {scenario['sample_count']}",
+            f"- Observation window: {window['start_date']} to {window['end_date']}",
+            f"- Trend status: {scenario['trend_status']}",
+            "",
+            "| Variable | Classification | Samples | Change | Rule |",
+            "| --- | --- | --- | --- | --- |",
+        ])
+        for variable, reading in scenario["variables"].items():
+            change = reading["change"] if reading["change"] is not None else "Not available"
+            lines.append(
+                "| {label} | {classification} | {samples} | {change} {unit} | {rule} |".format(
+                    label=TREND_VARIABLES[variable]["label"],
+                    classification=reading["trend_classification"],
+                    samples=reading["sample_count"],
+                    change=change,
+                    unit=reading["unit"],
+                    rule=reading["rule_explanation"],
+                )
+            )
+        lines.append("")
+    report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def cache_key(location: dict, date: str) -> str:
     return f"{location['scenario_id']}|{date}"
 
@@ -206,7 +376,10 @@ def main(argv: list[str] | None = None) -> None:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(output, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
     if args.live:
-        update_timeseries(output)
+        timeseries = update_timeseries(output)
+    else:
+        timeseries = load_timeseries()
+    write_trend_outputs(build_trend_output(timeseries))
     print(f"Generated {OUTPUT_PATH.relative_to(PROJECT_DIR.parent)}")
 
 

@@ -36,12 +36,14 @@ jobs:
           cp -R cczps_lite/dashboard/. _site/
           cp cczps_lite/output/comparison_matrix.csv _site/data/comparison_matrix.csv
           cp cczps_lite/output/meteorology_evidence.json _site/data/meteorology_evidence.json
+          cp cczps_lite/output/meteorology_trends.json _site/data/meteorology_trends.json
           cp docs/CCZPS_LITE_SYSTEM_VALIDATION_REPORT.md _site/data/system_validation_report.md
           cp cczps_lite/output/runtime_capability_map.md _site/data/runtime_capability_map.md
           sed -i 's#../output/comparison_matrix.csv#data/comparison_matrix.csv#' _site/dashboard.js
           sed -i 's#../output/comparison_matrix.csv#data/comparison_matrix.csv#' _site/usage-cost-dashboard.js
           sed -i 's#../output/comparison_matrix.csv#data/comparison_matrix.csv#' _site/budget-guard-dashboard.js
           sed -i 's#../output/meteorology_evidence.json#data/meteorology_evidence.json#' _site/meteorology-dashboard.js
+          sed -i 's#../output/meteorology_trends.json#data/meteorology_trends.json#' _site/meteorology-dashboard.js
           sed -i 's#../../docs/CCZPS_LITE_SYSTEM_VALIDATION_REPORT.md#data/system_validation_report.md#' _site/dashboard.js
           sed -i 's#../output/runtime_capability_map.md#data/runtime_capability_map.md#' _site/dashboard.js
       - name: Upload GitHub Pages artifact

@@ -33,6 +33,8 @@ class ManualMeteorologyRefreshWorkflowTests(unittest.TestCase):
         self.assertIn("cczps_lite/output/meteorology_evidence.json", self.workflow)
         self.assertIn("cczps_lite/output/meteorology_cache.json", self.workflow)
         self.assertIn("cczps_lite/output/meteorology_timeseries.json", self.workflow)
+        self.assertIn("cczps_lite/output/meteorology_trends.json", self.workflow)
+        self.assertIn("cczps_lite/output/meteorology_trends.md", self.workflow)
 
     def test_commit_is_conditional_and_avoids_empty_commit(self) -> None:
         self.assertIn("if: ${{ inputs.commit_outputs }}", self.workflow)
@@ -63,6 +65,18 @@ class ManualMeteorologyRefreshWorkflowTests(unittest.TestCase):
         self.assertEqual(
             self.workflow.count(
                 "git add cczps_lite/output/meteorology_timeseries.json"
+            ),
+            1,
+        )
+        self.assertEqual(
+            self.workflow.count(
+                "git add cczps_lite/output/meteorology_trends.json"
+            ),
+            1,
+        )
+        self.assertEqual(
+            self.workflow.count(
+                "git add cczps_lite/output/meteorology_trends.md"
             ),
             1,
         )
