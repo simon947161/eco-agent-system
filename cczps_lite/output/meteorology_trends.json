@@ -8,17 +8,17 @@
     "batlow": {
       "scenario_id": "batlow",
       "location_name": "Batlow",
-      "sample_count": 1,
+      "sample_count": 2,
       "observation_window": {
-        "start_date": "2025-05-08",
+        "start_date": "2025-05-01",
         "end_date": "2025-05-08"
       },
       "trend_status": "insufficient_data",
       "variables": {
         "temperature_c": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 10.0,
+          "sample_count": 2,
+          "first_value": 10.03,
           "last_value": 10.0,
           "change": null,
           "stable_threshold": 0.5,
@@ -27,8 +27,8 @@
         },
         "rainfall_mm": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 0.0,
+          "sample_count": 2,
+          "first_value": 0.08,
           "last_value": 0.0,
           "change": null,
           "stable_threshold": 0.5,
@@ -37,8 +37,8 @@
         },
         "humidity_percent": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 62.29,
+          "sample_count": 2,
+          "first_value": 66.48,
           "last_value": 62.29,
           "change": null,
           "stable_threshold": 2.0,
@@ -47,8 +47,8 @@
         },
         "wind_speed_kmh": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 3.6,
+          "sample_count": 2,
+          "first_value": 2.628,
           "last_value": 3.6,
           "change": null,
           "stable_threshold": 1.0,
@@ -57,8 +57,8 @@
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 13.46,
+          "sample_count": 2,
+          "first_value": 13.71,
           "last_value": 13.46,
           "change": null,
           "stable_threshold": 0.5,
@@ -80,17 +80,17 @@
     "iraq": {
       "scenario_id": "iraq",
       "location_name": "Iraq",
-      "sample_count": 1,
+      "sample_count": 2,
       "observation_window": {
-        "start_date": "2025-05-08",
+        "start_date": "2025-05-01",
         "end_date": "2025-05-08"
       },
       "trend_status": "insufficient_data",
       "variables": {
         "temperature_c": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 27.67,
+          "sample_count": 2,
+          "first_value": 31.31,
           "last_value": 27.67,
           "change": null,
           "stable_threshold": 0.5,
@@ -99,8 +99,8 @@
         },
         "rainfall_mm": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 0.0,
+          "sample_count": 2,
+          "first_value": 0.31,
           "last_value": 0.0,
           "change": null,
           "stable_threshold": 0.5,
@@ -109,8 +109,8 @@
         },
         "humidity_percent": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 29.12,
+          "sample_count": 2,
+          "first_value": 30.34,
           "last_value": 29.12,
           "change": null,
           "stable_threshold": 2.0,
@@ -119,8 +119,8 @@
         },
         "wind_speed_kmh": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 11.664000000000001,
+          "sample_count": 2,
+          "first_value": 12.06,
           "last_value": 11.664000000000001,
           "change": null,
           "stable_threshold": 1.0,
@@ -129,8 +129,8 @@
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 28.1,
+          "sample_count": 2,
+          "first_value": 23.49,
           "last_value": 28.1,
           "change": null,
           "stable_threshold": 0.5,
@@ -152,17 +152,17 @@
     "kunlun": {
       "scenario_id": "kunlun",
       "location_name": "Kunlun",
-      "sample_count": 1,
+      "sample_count": 2,
       "observation_window": {
-        "start_date": "2025-05-08",
+        "start_date": "2025-05-01",
         "end_date": "2025-05-08"
       },
       "trend_status": "insufficient_data",
       "variables": {
         "temperature_c": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": -2.16,
+          "sample_count": 2,
+          "first_value": -3.48,
           "last_value": -2.16,
           "change": null,
           "stable_threshold": 0.5,
@@ -171,7 +171,7 @@
         },
         "rainfall_mm": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
+          "sample_count": 2,
           "first_value": 0.0,
           "last_value": 0.0,
           "change": null,
@@ -181,8 +181,8 @@
         },
         "humidity_percent": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 27.82,
+          "sample_count": 2,
+          "first_value": 38.49,
           "last_value": 27.82,
           "change": null,
           "stable_threshold": 2.0,
@@ -191,8 +191,8 @@
         },
         "wind_speed_kmh": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 16.128000000000004,
+          "sample_count": 2,
+          "first_value": 8.856,
           "last_value": 16.128000000000004,
           "change": null,
           "stable_threshold": 1.0,
@@ -201,8 +201,8 @@
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 32.51,
+          "sample_count": 2,
+          "first_value": 28.24,
           "last_value": 32.51,
           "change": null,
           "stable_threshold": 0.5,
@@ -224,17 +224,17 @@
     "xiongan_baiyangdian_wetland": {
       "scenario_id": "xiongan_baiyangdian_wetland",
       "location_name": "Baiyangdian Wetland Core",
-      "sample_count": 1,
+      "sample_count": 2,
       "observation_window": {
-        "start_date": "2025-05-08",
+        "start_date": "2025-05-01",
         "end_date": "2025-05-08"
       },
       "trend_status": "insufficient_data",
       "variables": {
         "temperature_c": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 19.65,
+          "sample_count": 2,
+          "first_value": 17.98,
           "last_value": 19.65,
           "change": null,
           "stable_threshold": 0.5,
@@ -243,8 +243,8 @@
         },
         "rainfall_mm": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 1.21,
+          "sample_count": 2,
+          "first_value": 0.0,
           "last_value": 1.21,
           "change": null,
           "stable_threshold": 0.5,
@@ -253,8 +253,8 @@
         },
         "humidity_percent": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 66.77,
+          "sample_count": 2,
+          "first_value": 31.67,
           "last_value": 66.77,
           "change": null,
           "stable_threshold": 2.0,
@@ -263,8 +263,8 @@
         },
         "wind_speed_kmh": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 10.98,
+          "sample_count": 2,
+          "first_value": 8.82,
           "last_value": 10.98,
           "change": null,
           "stable_threshold": 1.0,
@@ -273,8 +273,8 @@
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 11.54,
+          "sample_count": 2,
+          "first_value": 26.63,
           "last_value": 11.54,
           "change": null,
           "stable_threshold": 0.5,
@@ -296,17 +296,17 @@
     "xiongan_downstream": {
       "scenario_id": "xiongan_downstream",
       "location_name": "Xiong'an / Downstream Region",
-      "sample_count": 1,
+      "sample_count": 2,
       "observation_window": {
-        "start_date": "2025-05-08",
+        "start_date": "2025-05-01",
         "end_date": "2025-05-08"
       },
       "trend_status": "insufficient_data",
       "variables": {
         "temperature_c": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 19.65,
+          "sample_count": 2,
+          "first_value": 17.98,
           "last_value": 19.65,
           "change": null,
           "stable_threshold": 0.5,
@@ -315,8 +315,8 @@
         },
         "rainfall_mm": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 1.21,
+          "sample_count": 2,
+          "first_value": 0.0,
           "last_value": 1.21,
           "change": null,
           "stable_threshold": 0.5,
@@ -325,8 +325,8 @@
         },
         "humidity_percent": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 66.77,
+          "sample_count": 2,
+          "first_value": 31.67,
           "last_value": 66.77,
           "change": null,
           "stable_threshold": 2.0,
@@ -335,8 +335,8 @@
         },
         "wind_speed_kmh": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 10.98,
+          "sample_count": 2,
+          "first_value": 8.82,
           "last_value": 10.98,
           "change": null,
           "stable_threshold": 1.0,
@@ -345,8 +345,8 @@
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 11.1,
+          "sample_count": 2,
+          "first_value": 25.22,
           "last_value": 11.1,
           "change": null,
           "stable_threshold": 0.5,
@@ -368,17 +368,17 @@
     "xiongan_wutai_headwaters": {
       "scenario_id": "xiongan_wutai_headwaters",
       "location_name": "Wutai Mountain Headwaters",
-      "sample_count": 1,
+      "sample_count": 2,
       "observation_window": {
-        "start_date": "2025-05-08",
+        "start_date": "2025-05-01",
         "end_date": "2025-05-08"
       },
       "trend_status": "insufficient_data",
       "variables": {
         "temperature_c": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 15.48,
+          "sample_count": 2,
+          "first_value": 13.0,
           "last_value": 15.48,
           "change": null,
           "stable_threshold": 0.5,
@@ -387,8 +387,8 @@
         },
         "rainfall_mm": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 8.56,
+          "sample_count": 2,
+          "first_value": 0.05,
           "last_value": 8.56,
           "change": null,
           "stable_threshold": 0.5,
@@ -397,8 +397,8 @@
         },
         "humidity_percent": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 70.54,
+          "sample_count": 2,
+          "first_value": 31.78,
           "last_value": 70.54,
           "change": null,
           "stable_threshold": 2.0,
@@ -407,8 +407,8 @@
         },
         "wind_speed_kmh": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 5.58,
+          "sample_count": 2,
+          "first_value": 12.708,
           "last_value": 5.58,
           "change": null,
           "stable_threshold": 1.0,
@@ -417,8 +417,8 @@
         },
         "solar_radiation_mj_m2": {
           "trend_classification": "insufficient_data",
-          "sample_count": 1,
-          "first_value": 13.89,
+          "sample_count": 2,
+          "first_value": 26.96,
           "last_value": 13.89,
           "change": null,
           "stable_threshold": 0.5,
