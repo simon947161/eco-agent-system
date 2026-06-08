@@ -58,6 +58,13 @@ location, and observation date. Repeated refreshes do not create duplicates,
 and observations are ordered by date, scenario, then location. Blocked,
 missing-data, failed, and scaffold records are not added.
 
+The runtime also writes `output/meteorology_trends.json` and
+`output/meteorology_trends.md` from the local time-series store. Trend readings
+require at least three successful observations for the same scenario and
+location, compare the earliest and latest stored non-missing values, and report
+only conservative evidence signals. They do not forecast, predict, recommend,
+or change scenario scores.
+
 The live fetcher uses the public NASA POWER endpoint without authentication or API keys. It does not add OpenAI, NOAA, ERA5, BOM, GIS, satellite, paid-service, database, cloud-storage, or scheduled-refresh integrations.
 
 ## Manual Meteorology Refresh Workflow
@@ -69,7 +76,7 @@ Open the repository's **Actions** tab, select **Manual Meteorology Refresh**, an
 - `force_refresh` bypasses an existing location/date cache entry, but it does not bypass Budget Guard.
 - `commit_outputs` commits the evidence, cache, and time-series JSON files to the selected branch. Empty commits are skipped.
 
-When `commit_outputs` is false, download the `meteorology-refresh-output` artifact from the completed workflow run. It contains `meteorology_evidence.json`, `meteorology_cache.json`, and `meteorology_timeseries.json`.
+When `commit_outputs` is false, download the `meteorology-refresh-output` artifact from the completed workflow run. It contains `meteorology_evidence.json`, `meteorology_cache.json`, `meteorology_timeseries.json`, `meteorology_trends.json`, and `meteorology_trends.md`.
 
 The workflow runs the complete unit test suite after refresh. Blocked requests and NASA `missing_data` responses remain valid transparent outputs; technical errors and test failures fail the workflow.
 
@@ -83,7 +90,9 @@ To validate repository updates:
 3. Confirm the workflow stages only:
    `cczps_lite/output/meteorology_evidence.json` and
    `cczps_lite/output/meteorology_cache.json`, plus
-   `cczps_lite/output/meteorology_timeseries.json`.
+   `cczps_lite/output/meteorology_timeseries.json`,
+   `cczps_lite/output/meteorology_trends.json`, and
+   `cczps_lite/output/meteorology_trends.md`.
 4. Confirm the bot commit uses `Refresh meteorology evidence for YYYYMMDD`.
 5. Repeat on `main` only after reviewing the branch result. A successful push
    to `main` triggers the existing **Deploy CCZPS-Lite Dashboard to GitHub
@@ -104,7 +113,10 @@ Generated output behaviour:
   appends successful observations without duplicating a scenario, location,
   and date. A missing or empty file starts a new store; a legacy top-level
   observation list is migrated into the versioned structure.
-- All three files may be committed by explicit `commit_outputs=true` or uploaded in
+- `meteorology_trends.json` uses schema version `1.0` and stores deterministic
+  rule-based trend classifications. `meteorology_trends.md` is the matching
+  human-readable trend report.
+- All five files may be committed by explicit `commit_outputs=true` or uploaded in
   the `meteorology-refresh-output` artifact when commit mode is false.
 - The source is live NASA POWER only when manual approval permits the guarded
   request; blocked and missing-data records remain explicit.
