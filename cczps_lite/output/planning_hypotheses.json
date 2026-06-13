@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "runtime": "Planning Hypothesis Runtime",
+  "dashboard_compatible": true,
+  "safety_boundary": "Testable concept-level assumptions only. No final recommendation, engineering design, construction advice, regulatory approval, autonomous decision, forecast, simulation, GIS automation, live API call, or language-model call.",
+  "status_values": ["concept_level", "evidence_supported", "insufficient_evidence", "not_supported", "requires_validation"],
+  "hypotheses": {
+    "batlow": {
+      "hypothesis_id": "batlow_microclimate_resilience_hypothesis",
+      "scenario": "Batlow",
+      "scenario_ids": ["BATLOW_WATER_PRIORITY", "BATLOW_ENERGY_RESILIENCE", "BATLOW_ECOLOGY_FIRE_BUFFER"],
+      "hypothesis_status": "requires_validation",
+      "problem_statement": "Dry-season water, heat, fire, and continuity pressures may reduce landscape and community resilience.",
+      "planning_assumption": "Coordinated water retention, microclimate buffering, ecological recovery, and continuity planning may reduce combined climate stress.",
+      "intervention_logic": "Test locally appropriate water-sensitive measures, vegetation and shade buffers, fire-aware landscape review, and continuity planning as linked concepts rather than final designs.",
+      "expected_effect": "Improved resilience indicators may be observed if the assumed water, heat, fire, and continuity pathways are supported by local evidence.",
+      "validation_indicators": ["temperature trend", "rainfall trend", "humidity trend", "spatial transect context", "local field evidence", "expert planning review"],
+      "failure_conditions": ["insufficient local evidence", "contradictory trend signal", "unsupported spatial relationship", "intervention effect not observed", "professional review does not support the assumption"],
+      "human_review_required": true,
+      "evidence_context": {"evidence_strengths": ["Medium", "Low", "Medium"], "validation_statuses": ["Validated Enough for Concept Review", "Insufficient Evidence", "Requires Technical Validation"], "meteorology_trend_status": "sufficient_observations", "spatial_transect_status": "valid_configured"},
+      "hypothesis_summary": "This requires validation planning hypothesis is a testable assumption, not a recommendation. Further local evidence and professional review are required."
+    },
+    "kunlun": {
+      "hypothesis_id": "kunlun_eco_water_buffer_hypothesis",
+      "scenario": "Kunlun",
+      "scenario_ids": ["KUNLUN_ECO_WATER"],
+      "hypothesis_status": "requires_validation",
+      "problem_statement": "Dryland water limitation and ecological stress may constrain restoration and climate adaptation.",
+      "planning_assumption": "Improved water retention knowledge and ecological buffering may strengthen dryland resilience where field evidence supports the relationship.",
+      "intervention_logic": "Test water-storage review, soil-moisture observation, ecological buffer restoration, and local adaptation consultation. Existing candidate actions include water storage review, soil moisture observation, ecological buffer restoration, local adaptation consultation; each remains subject to validation.",
+      "expected_effect": "Water and ecological resilience indicators may improve if the proposed buffering relationship is confirmed locally.",
+      "validation_indicators": ["temperature trend", "rainfall trend", "humidity trend", "spatial transect context", "local field evidence", "expert planning review", "water balance or soil moisture evidence", "vegetation or ecological condition evidence"],
+      "failure_conditions": ["insufficient local evidence", "contradictory trend signal", "unsupported spatial relationship", "intervention effect not observed", "professional review does not support the assumption", "required spatial context remains incomplete"],
+      "human_review_required": true,
+      "evidence_context": {"evidence_strengths": ["low", "medium"], "validation_statuses": [], "meteorology_trend_status": "sufficient_observations", "spatial_transect_status": "configured_with_missing_data"},
+      "hypothesis_summary": "This requires validation planning hypothesis is a testable assumption, not a recommendation. Further local evidence and professional review are required."
+    },
+    "iraq": {
+      "hypothesis_id": "iraq_agricultural_recovery_hypothesis",
+      "scenario": "Iraq",
+      "scenario_ids": ["IRAQ_AGRICULTURE_RECOVERY"],
+      "hypothesis_status": "concept_level",
+      "problem_statement": "Water scarcity, heat exposure, degraded soils, and weak ecological buffers may constrain agricultural recovery.",
+      "planning_assumption": "Evidence-led irrigation review, soil-moisture monitoring, and shelterbelt assessment may identify feasible recovery pathways.",
+      "intervention_logic": "Collect field evidence before testing irrigation efficiency, soil moisture, and ecological buffer concepts. Existing candidate actions include irrigation audit, soil moisture monitoring, shelterbelt review, field evidence collection; each remains subject to validation.",
+      "expected_effect": "Agricultural and ecological indicators may improve only if local water, soil, infrastructure, and safety evidence supports the assumed pathway.",
+      "validation_indicators": ["temperature trend", "rainfall trend", "humidity trend", "spatial transect context", "local field evidence", "expert planning review", "water balance or soil moisture evidence", "vegetation or ecological condition evidence"],
+      "failure_conditions": ["insufficient local evidence", "contradictory trend signal", "unsupported spatial relationship", "intervention effect not observed", "professional review does not support the assumption"],
+      "human_review_required": true,
+      "evidence_context": {"evidence_strengths": ["low", "low"], "validation_statuses": [], "meteorology_trend_status": "sufficient_observations", "spatial_transect_status": "valid_configured"},
+      "hypothesis_summary": "This concept level planning hypothesis is a testable assumption, not a recommendation. Further local evidence and professional review are required."
+    },
+    "baiyangdian_xiongan": {
+      "hypothesis_id": "baiyangdian_xiongan_watershed_continuity_hypothesis",
+      "scenario": "Baiyangdian-Xiong'an",
+      "scenario_ids": ["XIONGAN_WUTAI_HEADWATERS", "XIONGAN_BAIYANGDIAN_WETLAND", "XIONGAN_DOWNSTREAM_URBAN"],
+      "hypothesis_status": "concept_level",
+      "problem_statement": "Headwater condition, wetland water balance, urban demand, and ecological connectivity may interact across the watershed.",
+      "planning_assumption": "Coordinated review across mountain source, wetland storage, and downstream demand may reveal more resilient watershed intervention priorities.",
+      "intervention_logic": "Test headwater protection, wetland water-balance observation, ecological connectivity, flood resilience, and demand review as a linked diagnostic set. Existing candidate actions include forest retention review, runoff observation protocol, headwater protection consultation, wetland water balance review, evaporation observation; each remains subject to validation.",
+      "expected_effect": "Watershed continuity indicators may improve if monitored relationships support coordinated action across the configured validation points.",
+      "validation_indicators": ["temperature trend", "rainfall trend", "humidity trend", "spatial transect context", "local field evidence", "expert planning review", "water balance or soil moisture evidence", "vegetation or ecological condition evidence", "hazard-specific technical review"],
+      "failure_conditions": ["insufficient local evidence", "contradictory trend signal", "unsupported spatial relationship", "intervention effect not observed", "professional review does not support the assumption"],
+      "human_review_required": true,
+      "evidence_context": {"evidence_strengths": ["medium", "medium", "medium", "medium", "low", "medium"], "validation_statuses": [], "meteorology_trend_status": null, "spatial_transect_status": "valid_configured"},
+      "hypothesis_summary": "This concept level planning hypothesis is a testable assumption, not a recommendation. Further local evidence and professional review are required."
+    }
+  }
+}

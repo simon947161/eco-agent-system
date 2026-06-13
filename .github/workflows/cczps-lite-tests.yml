@@ -29,6 +29,7 @@ jobs:
           python cczps_lite/engine/meteorology_runtime.py
           python cczps_lite/engine/usage_cost_governance.py
           python cczps_lite/engine/budget_guard.py
+          python cczps_lite/engine/planning_hypothesis.py
       - name: Validate JSON inputs
         run: |
           python -m json.tool cczps_lite/input/evidence_profile.json >/dev/null

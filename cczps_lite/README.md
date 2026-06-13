@@ -1,4 +1,4 @@
-# CCZPS-Lite Ã¢â‚¬â€ Batlow Runtime Demonstrator
+# CCZPS-Lite â€” Batlow Runtime Demonstrator
 
 CCZPS-Lite is a small, file-based demonstrator for comparing possible environmental resilience pathways. It supports evidence, runtime interpretation, reasoning, governance review, and pre-execution resource guards.
 
@@ -9,6 +9,7 @@ python cczps_lite/engine/scenario_compare.py
 python cczps_lite/engine/meteorology_runtime.py
 python cczps_lite/engine/usage_cost_governance.py
 python cczps_lite/engine/budget_guard.py
+python cczps_lite/engine/planning_hypothesis.py
 ```
 
 The default meteorology command is safe scaffold mode and makes no network request.
@@ -71,10 +72,11 @@ The live fetcher uses the public NASA POWER endpoint without authentication or A
 
 Open the repository's **Actions** tab, select **Manual Meteorology Refresh**, and choose **Run workflow**. The workflow is manual only and has no schedule or cron trigger.
 
-- `observation_date` is the NASA POWER observation date in `YYYYMMDD` format.
-- `manual_approval` adds the explicit approval required for a live request. When false, Budget Guard may emit `blocked_by_budget_guard` without calling NASA POWER.
+- `observation_dates` accepts a comma-separated list of NASA POWER dates in `YYYYMMDD` format.
+- Range mode uses `start_date`, `end_date`, and a positive `interval_days` value when `observation_dates` is blank.
+- `manual_approval` must be explicitly true before a live batch starts.
 - `force_refresh` bypasses an existing location/date cache entry, but it does not bypass Budget Guard.
-- `commit_outputs` commits the evidence, cache, and time-series JSON files to the selected branch. Empty commits are skipped.
+- `commit_outputs` commits the allowlisted meteorology output files to the selected branch. Empty commits are skipped.
 
 When `commit_outputs` is false, download the `meteorology-refresh-output` artifact from the completed workflow run. It contains `meteorology_evidence.json`, `meteorology_cache.json`, `meteorology_timeseries.json`, `meteorology_trends.json`, and `meteorology_trends.md`.
 
@@ -85,41 +87,34 @@ The workflow runs the complete unit test suite after refresh. Blocked requests a
 To validate repository updates:
 
 1. Run **Manual Meteorology Refresh** on a review branch first.
-2. Set `manual_approval=true`, choose a historical `observation_date`, and set
-   `commit_outputs=true`.
-3. Confirm the workflow stages only:
-   `cczps_lite/output/meteorology_evidence.json` and
-   `cczps_lite/output/meteorology_cache.json`, plus
-   `cczps_lite/output/meteorology_timeseries.json`,
-   `cczps_lite/output/meteorology_trends.json`, and
-   `cczps_lite/output/meteorology_trends.md`.
-4. Confirm the bot commit uses `Refresh meteorology evidence for YYYYMMDD`.
-5. Repeat on `main` only after reviewing the branch result. A successful push
-   to `main` triggers the existing **Deploy CCZPS-Lite Dashboard to GitHub
-   Pages** workflow.
+2. Set `manual_approval=true`, choose a historical date list or range, and set `commit_outputs=true`.
+3. Confirm the workflow stages only the five allowlisted meteorology output files.
+4. Confirm the bot commit uses `Refresh batch meteorology evidence`.
+5. Repeat on `main` only after reviewing the branch result.
 
-The workflow rejects non-branch refs, refuses unexpected staged files, and
-skips the commit when neither meteorology output changed. Branch protection can
-still prevent a direct push; in that case, report the blocked workflow rather
-than weakening repository protections.
+The workflow rejects non-branch refs, refuses unexpected staged files, and skips the commit when no meteorology output changed. Branch protection can still prevent a direct push; in that case, report the blocked workflow rather than weakening repository protections.
+
+## Planning Hypothesis Runtime
+
+A planning hypothesis is a testable assumption connecting observed conditions, an identified problem, possible intervention logic, an expected effect, validation indicators, and explicit failure conditions. It is not a final recommendation, design, engineering solution, or planning approval.
+
+Generate the local hypothesis outputs with:
+
+```bash
+python cczps_lite/engine/planning_hypothesis.py
+```
+
+The runtime reads existing local scenario, validation, meteorology trend, and spatial transect records. It makes no live API, GIS, simulation, or language model call. Outputs are written to `output/planning_hypotheses.json` and `output/planning_hypotheses.md` for Batlow, Kunlun, Iraq, and the Baiyangdian-Xiong'an watershed context.
+
+Statuses are deliberately conservative: `concept_level`, `evidence_supported`, `requires_validation`, `not_supported`, and `insufficient_evidence`. Every generated hypothesis defaults to human review because evidence support at concept level does not replace field validation, professional planning review, engineering assessment, community consultation, or statutory processes.
 
 Generated output behaviour:
 
-- `meteorology_evidence.json` is the latest generated reading set and is
-  overwritten by the refresh runtime.
-- `meteorology_cache.json` stores successful location/date readings and is
-  updated locally by the refresh runtime.
-- `meteorology_timeseries.json` uses schema version `1.0` and persistently
-  appends successful observations without duplicating a scenario, location,
-  and date. A missing or empty file starts a new store; a legacy top-level
-  observation list is migrated into the versioned structure.
-- `meteorology_trends.json` uses schema version `1.0` and stores deterministic
-  rule-based trend classifications. `meteorology_trends.md` is the matching
-  human-readable trend report.
-- All five files may be committed by explicit `commit_outputs=true` or uploaded in
-  the `meteorology-refresh-output` artifact when commit mode is false.
-- The source is live NASA POWER only when manual approval permits the guarded
-  request; blocked and missing-data records remain explicit.
+- `meteorology_evidence.json` is the latest generated reading set.
+- `meteorology_cache.json` stores successful location/date readings.
+- `meteorology_timeseries.json` persistently appends successful observations without duplicates.
+- `meteorology_trends.json` and `meteorology_trends.md` store conservative trend readings.
+- `planning_hypotheses.json` and `planning_hypotheses.md` store testable concept-level assumptions and their validation boundaries.
 
 ## Methodology Boundary
 
