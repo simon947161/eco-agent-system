@@ -20,12 +20,12 @@ class DashboardHTMLParser(HTMLParser):
 
 class DemonstrationDashboardTests(unittest.TestCase):
     def test_dashboard_assets_and_sections_exist(self) -> None:
-        assets=[DASHBOARD_DIR/name for name in ("index.html","styles.css","planning-hypothesis-dashboard.css","dashboard.js","usage-cost-dashboard.js","budget-guard-dashboard.js","meteorology-dashboard.js","planning-hypothesis-dashboard.js","governance-decision-dashboard.js")]
+        assets=[DASHBOARD_DIR/name for name in ("index.html","styles.css","planning-hypothesis-dashboard.css","dashboard.js","usage-cost-dashboard.js","budget-guard-dashboard.js","meteorology-dashboard.js","planning-hypothesis-dashboard.js","governance-decision-dashboard.js","scenario-comparison-dashboard.js")]
         for path in assets: self.assertTrue(path.is_file(), path)
         parser=DashboardHTMLParser(); parser.feed(assets[0].read_text(encoding="utf-8"))
-        self.assertEqual(parser.scripts,["dashboard.js","usage-cost-dashboard.js","budget-guard-dashboard.js","meteorology-dashboard.js","planning-hypothesis-dashboard.js","governance-decision-dashboard.js"])
+        self.assertEqual(parser.scripts,["dashboard.js","usage-cost-dashboard.js","budget-guard-dashboard.js","meteorology-dashboard.js","planning-hypothesis-dashboard.js","governance-decision-dashboard.js","scenario-comparison-dashboard.js"])
         self.assertEqual(parser.stylesheets,["styles.css","planning-hypothesis-dashboard.css"])
-        for section_id in ("overview","comparison","runtime-chain","scenario-detail","usage-cost","budget-guard","meteorology","planning-hypothesis","planning-hypotheses","governance-decision","governance-decision-support","validation-report","capability-map"):
+        for section_id in ("overview","comparison","evidence-comparison","evidence-scenario-comparison","runtime-chain","scenario-detail","usage-cost","budget-guard","meteorology","planning-hypothesis","planning-hypotheses","governance-decision","governance-decision-support","validation-report","capability-map"):
             self.assertIn(section_id,parser.ids)
         self.assertIn("meteorology-trends", parser.ids)
 
@@ -55,6 +55,12 @@ class DemonstrationDashboardTests(unittest.TestCase):
             self.assertIn(field, governance)
         for forbidden in ("https://", "http://", "XMLHttpRequest", "WebSocket", "OpenAI", "anthropic"):
             self.assertNotIn(forbidden, governance)
+        comparison=(DASHBOARD_DIR/"scenario-comparison-dashboard.js").read_text(encoding="utf-8")
+        self.assertIn("../output/scenario_comparison.json", comparison)
+        for field in ("evidence_strength", "uncertainty_level", "risk_level", "planning_hypothesis_status", "traceability_status", "internal_governance_status", "expert_review_status", "approval_support_status", "human_review_required"):
+            self.assertIn(field, comparison)
+        for forbidden in ("https://", "http://", "XMLHttpRequest", "WebSocket", "OpenAI", "anthropic"):
+            self.assertNotIn(forbidden, comparison)
 
     def test_meteorology_panel_exposes_observation_and_governance_fields(self) -> None:
         meteorology=(DASHBOARD_DIR/"meteorology-dashboard.js").read_text(encoding="utf-8")
@@ -68,7 +74,7 @@ class DemonstrationDashboardTests(unittest.TestCase):
 
     def test_github_pages_workflow_stages_a_self_contained_site(self) -> None:
         workflow=PAGES_WORKFLOW.read_text(encoding="utf-8")
-        for expected in ("python cczps_lite/engine/meteorology_runtime.py","python cczps_lite/engine/planning_hypothesis.py","python cczps_lite/engine/evidence_traceability.py","python cczps_lite/engine/governance_decision_support.py","data/meteorology_evidence.json","data/meteorology_trends.json","data/planning_hypotheses.json","data/governance_decision_records.json","_site/meteorology-dashboard.js","_site/planning-hypothesis-dashboard.js","_site/governance-decision-dashboard.js","actions/deploy-pages@v4"):
+        for expected in ("python cczps_lite/engine/meteorology_runtime.py","python cczps_lite/engine/planning_hypothesis.py","python cczps_lite/engine/evidence_traceability.py","python cczps_lite/engine/governance_decision_support.py","python cczps_lite/engine/scenario_comparison.py","data/meteorology_evidence.json","data/meteorology_trends.json","data/planning_hypotheses.json","data/governance_decision_records.json","data/scenario_comparison.json","_site/meteorology-dashboard.js","_site/planning-hypothesis-dashboard.js","_site/governance-decision-dashboard.js","_site/scenario-comparison-dashboard.js","actions/deploy-pages@v4"):
             self.assertIn(expected,workflow)
 
 
