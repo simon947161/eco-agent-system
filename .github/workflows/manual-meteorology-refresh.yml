@@ -3,10 +3,22 @@ name: Manual Meteorology Refresh
 on:
   workflow_dispatch:
     inputs:
-      observation_date:
-        description: "Observation date in YYYYMMDD format"
-        required: true
+      observation_dates:
+        description: "Comma-separated YYYYMMDD dates; leave blank to use range mode"
+        required: false
         default: "20250501"
+      start_date:
+        description: "Range start in YYYYMMDD format; requires blank observation_dates"
+        required: false
+        default: ""
+      end_date:
+        description: "Range end in YYYYMMDD format; requires blank observation_dates"
+        required: false
+        default: ""
+      interval_days:
+        description: "Positive day interval for range mode"
+        required: true
+        default: "7"
       manual_approval:
         description: "Confirm manual approval for live NASA POWER request"
         required: true
@@ -52,25 +64,32 @@ jobs:
       - name: Refresh NASA POWER meteorology evidence
         shell: bash
         env:
-          OBSERVATION_DATE: ${{ inputs.observation_date }}
+          OBSERVATION_DATES: ${{ inputs.observation_dates }}
+          START_DATE: ${{ inputs.start_date }}
+          END_DATE: ${{ inputs.end_date }}
+          INTERVAL_DAYS: ${{ inputs.interval_days }}
           MANUAL_APPROVAL: ${{ inputs.manual_approval }}
           FORCE_REFRESH: ${{ inputs.force_refresh }}
         run: |
-          args=(--live --date "$OBSERVATION_DATE")
-          if [[ "$MANUAL_APPROVAL" == "true" ]]; then
-            args+=(--manual-approval)
+          if [[ "$MANUAL_APPROVAL" != "true" ]]; then
+            echo "Manual approval must be explicitly granted for batch meteorology refresh."
+            exit 1
+          fi
+          args=(--manual-approval)
+          if [[ -n "$OBSERVATION_DATES" ]]; then
+            args+=(--dates "$OBSERVATION_DATES")
+          else
+            args+=(--start-date "$START_DATE" --end-date "$END_DATE" --interval-days "$INTERVAL_DAYS")
           fi
           if [[ "$FORCE_REFRESH" == "true" ]]; then
             args+=(--force-refresh)
           fi
-          python cczps_lite/engine/meteorology_runtime.py "${args[@]}"
+          python cczps_lite/engine/meteorology_batch_runtime.py "${args[@]}"
       - name: Run unit tests
         run: python -m unittest discover
       - name: Commit refreshed outputs
         if: ${{ inputs.commit_outputs }}
         shell: bash
-        env:
-          OBSERVATION_DATE: ${{ inputs.observation_date }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -90,7 +109,7 @@ jobs:
             echo "No meteorology output changes to commit."
             exit 0
           fi
-          git commit -m "Refresh meteorology evidence for $OBSERVATION_DATE"
+          git commit -m "Refresh batch meteorology evidence"
           git push origin "HEAD:refs/heads/${GITHUB_REF_NAME}"
       - name: Upload refreshed outputs
         if: ${{ !inputs.commit_outputs }}
