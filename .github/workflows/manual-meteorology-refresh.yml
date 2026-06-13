@@ -75,7 +75,7 @@ jobs:
             echo "Manual approval must be explicitly granted for batch meteorology refresh."
             exit 1
           fi
-          args=(--live --manual-approval)
+          args=(--manual-approval)
           if [[ -n "$OBSERVATION_DATES" ]]; then
             args+=(--dates "$OBSERVATION_DATES")
           else
@@ -84,7 +84,7 @@ jobs:
           if [[ "$FORCE_REFRESH" == "true" ]]; then
             args+=(--force-refresh)
           fi
-          python cczps_lite/engine/meteorology_runtime.py "${args[@]}"
+          python cczps_lite/engine/meteorology_batch_runtime.py "${args[@]}"
       - name: Run unit tests
         run: python -m unittest discover
       - name: Commit refreshed outputs
