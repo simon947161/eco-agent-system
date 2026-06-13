@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "artifact": "GIS / DEM Data Access Plan",
+  "implementation_status": "planning_only",
+  "provider_required": false,
+  "core_inputs": ["latitude", "longitude", "boundary polygon", "analysis radius"],
+  "spatial_data_categories": [
+    {"category": "terrain_and_dem", "required_layers": ["DEM tile", "elevation", "slope", "aspect"], "purpose": "Terrain context, elevation gradients, and highland/lowland comparison.", "quality_limits": ["resolution", "vertical datum", "voids", "terrain modification date"]},
+    {"category": "hydrology", "required_layers": ["watershed boundary", "flow direction", "flow accumulation", "stream network"], "purpose": "Upstream/downstream interpretation and runoff pathway review.", "quality_limits": ["delineation method", "seasonality", "engineered drainage", "field verification"]},
+    {"category": "land_surface", "required_layers": ["land cover", "vegetation", "soil or surface class", "land use"], "purpose": "Ecological transition, restoration, runoff, and exposure context.", "quality_limits": ["classification date", "classification accuracy", "local change"]},
+    {"category": "infrastructure_and_boundaries", "required_layers": ["infrastructure", "administrative boundary", "site boundary polygon", "risk-relevant spatial layers"], "purpose": "Access, service, jurisdiction, hazard, and planning constraint review.", "quality_limits": ["completeness", "authority", "currency", "licensing"]}
+  ],
+  "candidate_sources": {"open_public": ["SRTM DEM", "Copernicus DEM", "NASA / USGS elevation products", "OpenStreetMap", "public hydrology datasets", "public land cover datasets"], "commercial_platform": ["Google Earth", "Google Earth Engine", "ESRI ArcGIS", "other mapping and spatial computation platforms"], "specialist_model_oriented": ["QGIS", "GRASS GIS", "TauDEM", "WhiteboxTools", "hydrological preprocessing tools", "CFD / microclimate model inputs where relevant"]},
+  "connector_metadata": ["data source", "retrieval status", "spatial resolution", "date or version", "license or access condition", "uncertainty notes", "cost owner", "confidence level"],
+  "connector_architecture": ["User-selected core location", "GIS / DEM Connector", "Spatial Feature Extraction", "Reference Point Suggestion", "Evidence Layer", "Planning Hypothesis Runtime", "Validation Layer"],
+  "governance": {"usage_cost_governance_required": true, "budget_guard_required": true, "manual_approval_for_external_or_paid_resources": true, "cache_first_where_permitted": true, "hidden_cost_absorption_permitted": false, "cost_distinctions": ["user cost", "platform service fee", "external provider cost"], "principle": "The system should not block advanced spatial tools. It should enable them responsibly."},
+  "future_capabilities": ["elevation profile extraction", "upstream / downstream classification", "highland / lowland comparison", "watershed-scale transect support", "wind-corridor and terrain-channel interpretation", "dryland runoff pathway interpretation", "ecological transition-zone identification", "desertification and restoration context support"],
+  "human_verification_required": true,
+  "safety_boundary": "Planning support only. Outputs do not constitute professional validation, planning approval, engineering design, construction advice, simulation readiness, or an autonomous decision. Qualified human review is required."
+}

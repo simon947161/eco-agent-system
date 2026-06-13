@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "artifact": "Expert Review Record Layer",
+  "allowed_decision_statuses": ["not_reviewed", "approved_for_further_assessment", "conditional", "rejected"],
+  "audit_requirements": ["preserve reviewer role and review date", "preserve evidence references", "do not overwrite prior signed records", "record revisions as new records"],
+  "records": [
+    {"record_id": "batlow_expert_review_001", "reviewer_role": null, "review_date": null, "reviewed_scenario_or_module": "Batlow", "review_category": null, "finding": null, "evidence_reference": [], "confidence_level": "not_assessed", "required_follow_up": [], "decision_status": "not_reviewed", "human_authored": true, "record_status": "template"},
+    {"record_id": "kunlun_expert_review_001", "reviewer_role": null, "review_date": null, "reviewed_scenario_or_module": "Kunlun", "review_category": null, "finding": null, "evidence_reference": [], "confidence_level": "not_assessed", "required_follow_up": [], "decision_status": "not_reviewed", "human_authored": true, "record_status": "template"},
+    {"record_id": "iraq_expert_review_001", "reviewer_role": null, "review_date": null, "reviewed_scenario_or_module": "Iraq", "review_category": null, "finding": null, "evidence_reference": [], "confidence_level": "not_assessed", "required_follow_up": [], "decision_status": "not_reviewed", "human_authored": true, "record_status": "template"},
+    {"record_id": "baiyangdian_xiongan_expert_review_001", "reviewer_role": null, "review_date": null, "reviewed_scenario_or_module": "Baiyangdian-Xiong'an", "review_category": null, "finding": null, "evidence_reference": [], "confidence_level": "not_assessed", "required_follow_up": [], "decision_status": "not_reviewed", "human_authored": true, "record_status": "template"}
+  ],
+  "safety_boundary": "Planning support only. Outputs do not constitute professional validation, planning approval, engineering design, construction advice, simulation readiness, or an autonomous decision. Qualified human review is required."
+}
