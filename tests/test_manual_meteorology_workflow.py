@@ -17,15 +17,35 @@ class ManualMeteorologyRefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("cron:", self.workflow)
 
     def test_required_dispatch_inputs_exist(self) -> None:
-        for name in ("observation_date:", "manual_approval:", "force_refresh:", "commit_outputs:"):
+        for name in (
+            "observation_dates:",
+            "start_date:",
+            "end_date:",
+            "interval_days:",
+            "manual_approval:",
+            "force_refresh:",
+            "commit_outputs:",
+        ):
             self.assertIn(name, self.workflow)
 
     def test_workflow_calls_guarded_runtime(self) -> None:
         self.assertIn("python cczps_lite/engine/meteorology_runtime.py", self.workflow)
         self.assertIn("--live", self.workflow)
         self.assertIn("--manual-approval", self.workflow)
+        self.assertIn("--dates", self.workflow)
+        self.assertIn("--start-date", self.workflow)
+        self.assertIn("--end-date", self.workflow)
+        self.assertIn("--interval-days", self.workflow)
         self.assertIn("--force-refresh", self.workflow)
         self.assertIn("python -m unittest discover", self.workflow)
+
+    def test_manual_approval_is_required_before_runtime(self) -> None:
+        self.assertIn('if [[ "$MANUAL_APPROVAL" != "true" ]]', self.workflow)
+        approval_check = self.workflow.index('if [[ "$MANUAL_APPROVAL" != "true" ]]')
+        runtime_call = self.workflow.index(
+            'python cczps_lite/engine/meteorology_runtime.py'
+        )
+        self.assertLess(approval_check, runtime_call)
 
     def test_artifact_fallback_contains_all_outputs(self) -> None:
         self.assertIn("actions/upload-artifact@v4", self.workflow)
@@ -39,7 +59,7 @@ class ManualMeteorologyRefreshWorkflowTests(unittest.TestCase):
     def test_commit_is_conditional_and_avoids_empty_commit(self) -> None:
         self.assertIn("if: ${{ inputs.commit_outputs }}", self.workflow)
         self.assertIn("git diff --cached --quiet", self.workflow)
-        self.assertIn('git commit -m "Refresh meteorology evidence for $OBSERVATION_DATE"', self.workflow)
+        self.assertIn('git commit -m "Refresh batch meteorology evidence"', self.workflow)
 
     def test_commit_targets_selected_branch(self) -> None:
         self.assertIn("ref: ${{ github.ref_name }}", self.workflow)
