@@ -29,6 +29,7 @@ jobs:
           python cczps_lite/engine/meteorology_runtime.py
           python cczps_lite/engine/usage_cost_governance.py
           python cczps_lite/engine/budget_guard.py
+          python cczps_lite/engine/planning_hypothesis.py
       - name: Stage dashboard site
         shell: bash
         run: |
@@ -37,6 +38,7 @@ jobs:
           cp cczps_lite/output/comparison_matrix.csv _site/data/comparison_matrix.csv
           cp cczps_lite/output/meteorology_evidence.json _site/data/meteorology_evidence.json
           cp cczps_lite/output/meteorology_trends.json _site/data/meteorology_trends.json
+          cp cczps_lite/output/planning_hypotheses.json _site/data/planning_hypotheses.json
           cp docs/CCZPS_LITE_SYSTEM_VALIDATION_REPORT.md _site/data/system_validation_report.md
           cp cczps_lite/output/runtime_capability_map.md _site/data/runtime_capability_map.md
           sed -i 's#../output/comparison_matrix.csv#data/comparison_matrix.csv#' _site/dashboard.js
@@ -44,6 +46,7 @@ jobs:
           sed -i 's#../output/comparison_matrix.csv#data/comparison_matrix.csv#' _site/budget-guard-dashboard.js
           sed -i 's#../output/meteorology_evidence.json#data/meteorology_evidence.json#' _site/meteorology-dashboard.js
           sed -i 's#../output/meteorology_trends.json#data/meteorology_trends.json#' _site/meteorology-dashboard.js
+          sed -i 's#../output/planning_hypotheses.json#data/planning_hypotheses.json#' _site/planning-hypothesis-dashboard.js
           sed -i 's#../../docs/CCZPS_LITE_SYSTEM_VALIDATION_REPORT.md#data/system_validation_report.md#' _site/dashboard.js
           sed -i 's#../output/runtime_capability_map.md#data/runtime_capability_map.md#' _site/dashboard.js
       - name: Upload GitHub Pages artifact
