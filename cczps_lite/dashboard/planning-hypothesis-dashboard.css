@@ -1,0 +1,41 @@
+.hypothesis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.hypothesis-card {
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.hypothesis-fields {
+  display: grid;
+  margin: 0;
+}
+
+.hypothesis-fields > div {
+  padding: 14px 20px;
+  border-top: 1px solid var(--line);
+}
+
+.hypothesis-fields dt {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.hypothesis-fields dd {
+  margin: 5px 0 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 720px) {
+  .hypothesis-grid {
+    grid-template-columns: 1fr;
+  }
+}
