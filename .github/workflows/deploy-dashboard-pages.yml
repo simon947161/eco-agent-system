@@ -33,6 +33,7 @@ jobs:
           python cczps_lite/engine/validation_support.py
           python cczps_lite/engine/evidence_traceability.py
           python cczps_lite/engine/governance_decision_support.py
+          python cczps_lite/engine/scenario_comparison.py
       - name: Stage dashboard site
         shell: bash
         run: |
@@ -43,6 +44,7 @@ jobs:
           cp cczps_lite/output/meteorology_trends.json _site/data/meteorology_trends.json
           cp cczps_lite/output/planning_hypotheses.json _site/data/planning_hypotheses.json
           cp cczps_lite/output/governance_decision_records.json _site/data/governance_decision_records.json
+          cp cczps_lite/output/scenario_comparison.json _site/data/scenario_comparison.json
           cp docs/CCZPS_LITE_SYSTEM_VALIDATION_REPORT.md _site/data/system_validation_report.md
           cp cczps_lite/output/runtime_capability_map.md _site/data/runtime_capability_map.md
           sed -i 's#../output/comparison_matrix.csv#data/comparison_matrix.csv#' _site/dashboard.js
@@ -52,6 +54,7 @@ jobs:
           sed -i 's#../output/meteorology_trends.json#data/meteorology_trends.json#' _site/meteorology-dashboard.js
           sed -i 's#../output/planning_hypotheses.json#data/planning_hypotheses.json#' _site/planning-hypothesis-dashboard.js
           sed -i 's#../output/governance_decision_records.json#data/governance_decision_records.json#' _site/governance-decision-dashboard.js
+          sed -i 's#../output/scenario_comparison.json#data/scenario_comparison.json#' _site/scenario-comparison-dashboard.js
           sed -i 's#../../docs/CCZPS_LITE_SYSTEM_VALIDATION_REPORT.md#data/system_validation_report.md#' _site/dashboard.js
           sed -i 's#../output/runtime_capability_map.md#data/runtime_capability_map.md#' _site/dashboard.js
       - name: Upload GitHub Pages artifact
