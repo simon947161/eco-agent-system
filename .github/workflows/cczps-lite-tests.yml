@@ -32,6 +32,7 @@ jobs:
           python cczps_lite/engine/planning_hypothesis.py
           python cczps_lite/engine/validation_support.py
           python cczps_lite/engine/evidence_traceability.py
+          python cczps_lite/engine/governance_decision_support.py
       - name: Validate JSON inputs and outputs
         run: |
           python -m json.tool cczps_lite/input/evidence_profile.json >/dev/null
@@ -44,6 +45,7 @@ jobs:
           python -m json.tool cczps_lite/input/usage_cost_profiles.json >/dev/null
           python -m json.tool cczps_lite/input/budget_profile.json >/dev/null
           python -m json.tool cczps_lite/output/evidence_traceability.json >/dev/null
+          python -m json.tool cczps_lite/output/governance_decision_records.json >/dev/null
       - name: Compile Python modules
         run: python -m py_compile cczps_lite/engine/*.py cczps_lite/integration/*.py
       - name: Run unit tests
