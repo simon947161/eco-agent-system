@@ -4,95 +4,432 @@
 
 Execute tasks in numerical order unless the repository owner explicitly reorders them. Follow `docs/CODEX_EXECUTION_PROTOCOL.md` for every task. Each implementation task requires its own branch and Draft pull request.
 
-## Task 31 - Batch Meteorology Refresh Workflow
+---
 
-### Status
+# Task 31 — Batch Meteorology Refresh Workflow
 
-Planning brief only. Do not implement Task 31 as part of the Task 30 / PR #23 documentation update.
+## Status
 
-### Purpose
+Ready for implementation as the next task.
 
-Allow GitHub Actions Manual Meteorology Refresh to process multiple observation dates in one manually initiated workflow run while preserving Usage & Cost Governance, Budget Guard, explicit manual approval, cache-first behavior, and safe output commits.
+Do not implement Tasks 32-40 in this PR.
 
-### Safe Input Design
+---
 
-The implementation should select and document one of these input patterns:
+## Repository
 
-Option 1:
+Repository: `simon947161/eco-agent-system`
 
-```yaml
-observation_dates: "20250501,20250508,20250515"
+Base branch: `main`
+
+Work branch: `task31-batch-meteorology-refresh-workflow`
+
+---
+
+## Objective
+
+Extend the existing Manual Meteorology Refresh workflow to support multiple observation dates within a single GitHub Actions execution.
+
+The purpose is to accelerate evidence accumulation for CCZPS-Lite while preserving all existing governance controls.
+
+This task must not introduce uncontrolled API usage.
+
+All meteorology retrievals must remain governed by:
+
+- Usage & Cost Governance Runtime
+- Budget Guard Runtime
+- Manual Approval requirements
+- Existing cache-first logic
+
+---
+
+## Background
+
+Current workflow supports:
+
+```text
+Single Date
+↓
+NASA POWER Fetch
+↓
+Evidence Output
+↓
+Time-Series Update
+↓
+Dashboard
 ```
 
-Option 2:
+To build meaningful trend analysis and future validation capability, multiple historical observations must be collected efficiently.
+
+The current workflow requires repeated manual execution.
+
+Task 31 introduces controlled batch execution.
+
+---
+
+## Supported Input Modes
+
+The implementation should support at least one of the following safe input patterns.
+
+### Mode A — Explicit Date List
+
+Example:
+
+```text
+20250501,20250508,20250515
+```
+
+Workflow input:
 
 ```yaml
-start_date: "20250501"
-end_date: "20250515"
+observation_dates:
+```
+
+### Mode B — Date Range
+
+Example:
+
+```yaml
+start_date: 20250501
+end_date: 20250515
 interval_days: 7
 ```
 
-The selected pattern must produce a deterministic, validated, de-duplicated list of observation dates. Invalid dates, malformed ranges, non-positive intervals, reversed ranges, and empty date lists must fail before any external request.
+Generated dates:
 
-### Required Scope
+```text
+20250501
+20250508
+20250515
+```
 
-- Extend the manual `workflow_dispatch` meteorology refresh path to accept a bounded batch of dates.
-- Keep `manual_approval` required for the run and for every date that may use an external resource.
-- Pass every date independently through Usage & Cost Governance and Budget Guard before any live request.
-- Preserve cache-first behavior for each scenario, location, and observation date.
-- Keep `commit_outputs` optional and default it to the existing safe behavior.
-- When `commit_outputs=false`, upload all generated meteorology outputs for the batch as workflow artifacts.
-- When `commit_outputs=true`, stage and commit only the explicitly allowed meteorology output files.
-- Preserve empty-change handling, branch validation, deterministic output updates, and safe push behavior.
-- Add a clear maximum date-count guard, with a default maximum of 10 dates per workflow run.
-- Fail before live retrieval if parsed input exceeds the maximum date count.
-- Document partial-failure behavior so successful cached or retrieved dates remain distinguishable from blocked or failed dates without inventing observations.
+The selected input mode must produce a deterministic, validated, de-duplicated list of observation dates.
 
-### Safety Boundaries
+Invalid dates, malformed ranges, non-positive intervals, reversed ranges, and empty date lists must fail before any external request.
 
-- No scheduled cron trigger.
-- No automatic refresh.
-- No browser-side API calls.
-- No uncontrolled API use.
-- No bypass of Usage & Cost Governance or Budget Guard.
-- No date may share or inherit another date's guard result.
-- `manual_approval` must remain required.
-- `commit_outputs` must remain optional.
-- Do not add forecasts, simulations, autonomous scheduling, credentials, billing, or unrelated APIs.
-- Do not commit logs, temporary files, arbitrary generated files, or files outside the meteorology output allowlist.
+---
 
-### Output And Commit Requirements
+## Governance Requirements
 
-When `commit_outputs=false`:
+The workflow must continue to require:
 
-- upload all batch meteorology outputs as artifacts;
-- include enough date-specific status information to identify successful, cached, blocked, failed, and missing-data results;
-- do not push repository changes.
+```yaml
+manual_approval: true
+```
 
-When `commit_outputs=true`:
+No automatic approval.
 
-- commit only the allowed meteorology output files used by the existing workflow and time-series/trend pipeline;
-- reject unexpected staged paths before commit;
-- skip the commit when there are no allowed output changes;
-- preserve safe branch targeting and bot identity behavior.
+No hidden execution.
 
-The implementation PR must explicitly enumerate and test the output allowlist.
+Every requested date must be handled as its own governed activity.
 
-### Verification
+No date may inherit another date's governance result.
 
-- Test that the workflow has `workflow_dispatch` and no `schedule` trigger.
-- Test parsing and normalization for the selected date input pattern.
-- Test invalid dates, duplicates, ordering, empty input, and malformed ranges where applicable.
-- Test the maximum date-count limit, including acceptance at 10 dates and rejection above 10 dates.
-- Test that every date passes through Usage & Cost Governance and Budget Guard.
-- Test that manual approval remains required and cannot bypass `stop_required`.
-- Test cache-first behavior across multiple dates.
-- Test artifact mode when `commit_outputs=false`.
-- Test the commit output allowlist and rejection of unrelated staged files when `commit_outputs=true`.
-- Test empty-change behavior and partial failures.
-- Run `python -m unittest discover`.
-- Unit and workflow tests must not make live external requests.
+---
 
-### Delivery
+## Budget Guard Requirements
 
-Provide the Draft PR URL, selected input pattern, maximum date count, per-date governance behavior, cache behavior, artifact and commit behavior, explicit output allowlist, changed files, and test results.
+Every date execution must pass through:
+
+- Usage & Cost Governance Runtime
+- Budget Guard Runtime
+
+A batch request must never bypass governance checks.
+
+If any individual date is blocked, the output must clearly preserve its date-specific status.
+
+---
+
+## Stop Conditions
+
+If:
+
+```text
+stop_required
+```
+
+is returned by Budget Guard,
+
+remaining dates must not execute unless the existing runtime explicitly supports safe date-specific continuation.
+
+The preferred first implementation should terminate safely and clearly report the stop reason.
+
+---
+
+## Cache Requirements
+
+Existing cache logic must remain active.
+
+For each requested date:
+
+```text
+Cache Exists
+↓
+Use Cache
+↓
+No NASA Request
+```
+
+Only uncached dates may trigger retrieval.
+
+A cache hit must still be recorded clearly in the output.
+
+---
+
+## Maximum Date Limit
+
+Introduce a hard safety limit.
+
+Default:
+
+```text
+max_dates_per_run = 10
+```
+
+If exceeded:
+
+```text
+workflow failure
+```
+
+with a clear explanation.
+
+Purpose:
+
+Prevent accidental mass retrieval.
+
+Tests must verify acceptance at 10 dates and rejection above 10 dates.
+
+---
+
+## Output Requirements
+
+### Time-Series Store
+
+Append successful observations to:
+
+```text
+cczps_lite/output/meteorology_timeseries.json
+```
+
+Rules:
+
+- No duplicates.
+- No overwriting existing valid observations.
+- Deterministic ordering must be preserved.
+
+### Evidence Output
+
+Update:
+
+```text
+cczps_lite/output/meteorology_evidence.json
+```
+
+with the latest retrieval set or clear batch output status.
+
+### Cache
+
+Update:
+
+```text
+cczps_lite/output/meteorology_cache.json
+```
+
+for successful readings.
+
+### Trend Outputs
+
+If the existing runtime regenerates trend outputs, include:
+
+```text
+cczps_lite/output/meteorology_trends.json
+cczps_lite/output/meteorology_trends.md
+```
+
+without changing their trend logic.
+
+---
+
+## Commit Behaviour
+
+Support existing option:
+
+```yaml
+commit_outputs
+```
+
+### commit_outputs = true
+
+Commit only approved output files:
+
+```text
+cczps_lite/output/meteorology_evidence.json
+cczps_lite/output/meteorology_timeseries.json
+cczps_lite/output/meteorology_cache.json
+cczps_lite/output/meteorology_trends.json
+cczps_lite/output/meteorology_trends.md
+```
+
+Reject unexpected staged files before committing.
+
+Skip commit when there are no allowed output changes.
+
+Preserve safe branch targeting, commit identity, and existing push behavior.
+
+### commit_outputs = false
+
+Do not commit.
+
+Upload outputs as workflow artifacts only.
+
+Artifact output must include all meteorology output files needed to inspect the batch result.
+
+---
+
+## Dashboard Compatibility
+
+Existing dashboard must continue to function.
+
+No dashboard redesign is required.
+
+The trend runtime should automatically benefit from larger time-series datasets.
+
+Dashboard must continue reading local generated files only.
+
+No browser-side API call is allowed.
+
+---
+
+## Partial Failure Behaviour
+
+The batch output must distinguish between:
+
+- success
+- from_cache
+- blocked_by_budget_guard
+- missing_data
+- retrieval_failed
+- invalid_date
+- not_retrieved
+
+Do not invent observations.
+
+Do not convert failed or missing records into successful evidence.
+
+---
+
+## Safety Constraints
+
+Do NOT implement:
+
+- cron schedules
+- automatic daily collection
+- unattended recurring execution
+- browser-side API calls
+- unlimited retrieval loops
+- bypass of Budget Guard
+- bypass of Manual Approval
+- forecasts
+- simulations
+- autonomous recommendations
+- credentials
+- billing
+- payment logic
+- unrelated APIs
+
+---
+
+## Testing
+
+Add or update tests covering the following.
+
+### Date Parsing
+
+- explicit date list
+- date range generation if implemented
+- interval handling if implemented
+- duplicate removal
+- deterministic ordering
+- invalid date handling
+- empty input handling
+- malformed range handling where applicable
+
+### Governance
+
+- manual approval requirement
+- Usage & Cost Governance remains in the path
+- Budget Guard remains in the path
+- no date bypasses governance
+- stop_required handling
+
+### Limits
+
+- maximum date count
+- acceptance at 10 dates
+- rejection above 10 dates
+
+### Cache
+
+- cache hit
+- cache miss
+- cache prevents repeated NASA request
+
+### Output Integrity
+
+- duplicate prevention in `meteorology_timeseries.json`
+- artifact generation when `commit_outputs=false`
+- commit allowlist when `commit_outputs=true`
+- rejection of unexpected staged files
+- empty-change behavior
+- partial failure status preservation
+
+### Workflow Safety
+
+- `workflow_dispatch` exists
+- no `schedule` trigger
+- no browser-side live API call
+- no new external service dependency
+
+All existing tests must continue to pass.
+
+---
+
+## Commands
+
+Run:
+
+```bash
+python -m unittest discover
+```
+
+If relevant:
+
+```bash
+python cczps_lite/engine/meteorology_runtime.py
+```
+
+Do not require live NASA POWER calls in CI.
+
+Unit and workflow tests must not make live external requests.
+
+---
+
+## Delivery
+
+Create Draft Pull Request.
+
+Provide:
+
+- PR URL
+- selected input pattern
+- maximum date count
+- per-date governance behavior
+- cache behavior
+- artifact behavior
+- commit behavior
+- explicit output allowlist
+- changed files summary
+- test results
+
+Do not merge automatically.
