@@ -1,0 +1,477 @@
+{
+  "pack_name": "CCZPS-Lite Evidence Review Pack",
+  "pack_version": "0.1",
+  "pack_purpose": "Consolidated technical evidence review for CCZPS-Lite scenarios.",
+  "minimal_core_mapping": {
+    "Scenario": "scenario identity and context",
+    "Evidence": "meteorology, trends, spatial context, GIS / DEM status, and traceability",
+    "Hypothesis": "evidence references supporting planning hypotheses",
+    "Review": "professional validation and missing review status",
+    "Report": "technical evidence review package"
+  },
+  "safety_boundary": "Evidence review only. This pack organises existing local records and does not create evidence, scientific confirmation, professional conclusions, approvals, recommendations, rankings, or engineering or regulatory determinations.",
+  "coverage_status_values": [
+    "available",
+    "partially_available",
+    "planning_only",
+    "not_generated",
+    "not_available",
+    "insufficient_evidence",
+    "requires_further_review"
+  ],
+  "generated_from": [
+    "meteorology_evidence.json",
+    "location_meteorology_evidence.json",
+    "meteorology_timeseries.json",
+    "meteorology_trends.json",
+    "spatial_transect_scenario_pack.json",
+    "gis_dem_access_plan.json",
+    "planning_hypotheses.json",
+    "evidence_traceability.json",
+    "professional_validation_interface.json",
+    "planning_approval_support_report.json",
+    "scenario_summary_pack.json"
+  ],
+  "record_count": 6,
+  "review_records": [
+    {
+      "scenario_id": "batlow",
+      "scenario_name": "Batlow",
+      "scenario_status": "existing_scenario",
+      "evidence_review_status": "requires_further_review",
+      "evidence_coverage": {
+        "meteorology": "available",
+        "time_series": "available",
+        "trends": "available",
+        "spatial_transects": "available",
+        "gis_dem": "planning_only",
+        "professional_validation": "awaiting_professional_review"
+      },
+      "meteorology_evidence_status": "available",
+      "meteorology_time_series_status": "available",
+      "meteorology_trend_status": "available",
+      "spatial_transect_status": "available",
+      "gis_dem_evidence_status": "planning_only",
+      "professional_validation_status": "awaiting_professional_review",
+      "evidence_strength": "low",
+      "evidence_strength_summary": "Current evidence strength is low. The pack records source availability only; it does not increase evidence strength.",
+      "uncertainty_level": "high",
+      "uncertainty_summary": "Uncertainty remains high because professional review and GIS / DEM evidence are incomplete or absent.",
+      "missing_evidence": [
+        "professional GIS / DEM evidence and verification",
+        "field verification of configured spatial relationships",
+        "completed qualified professional review",
+        "resolution of trace records marked insufficient evidence"
+      ],
+      "planning_hypothesis_evidence_references": [
+        "batlow_microclimate_resilience_hypothesis"
+      ],
+      "traceability_references": [
+        "batlow:expert_review_record:batlow_expert_review_001",
+        "batlow:gis_dem_access_plan:gis_dem_access_plan",
+        "batlow:meteorology_evidence:batlow_meteorology_evidence",
+        "batlow:meteorology_trend:batlow_meteorology_trend",
+        "batlow:planning_approval_support_report:batlow_planning_approval_support",
+        "batlow:planning_hypothesis:batlow_microclimate_resilience_hypothesis",
+        "batlow:professional_validation_interface:batlow_professional_validation",
+        "batlow:spatial_transect:batlow_transect_scenario_pack"
+      ],
+      "validation_references": [
+        "professional_validation:awaiting_professional_review",
+        "required_discipline:qualified planner",
+        "required_discipline:environmental specialist",
+        "required_discipline:GIS / terrain or hydrology specialist where relevant",
+        "required_discipline:infrastructure or energy specialist where relevant",
+        "required_discipline:local and community knowledge holder"
+      ],
+      "supported_outputs": [
+        "planning_hypothesis",
+        "scenario_summary",
+        "governance_decision_support"
+      ],
+      "professional_review_requirements": [
+        "qualified planner",
+        "environmental specialist",
+        "GIS / terrain or hydrology specialist where relevant",
+        "infrastructure or energy specialist where relevant",
+        "local and community knowledge holder"
+      ],
+      "human_review_required": true,
+      "professional_review_required": true,
+      "approval_support_status": "not_ready_for_approval",
+      "limitations": [
+        "Internal planning support only. This layer does not make governance decisions, grant approval, provide professional validation, establish engineering or regulatory readiness, or replace qualified human review.",
+        "The status is not a planning, regulatory, engineering, environmental, or construction approval.",
+        "No scenario comparison, prioritization, forecast, simulation, GIS/DEM operation, API call, or LLM call is performed.",
+        "Summary only",
+        "No planning conclusion",
+        "No approval readiness",
+        "No engineering or regulatory determination",
+        "insufficient local evidence",
+        "contradictory trend signal",
+        "unsupported spatial relationship",
+        "intervention effect not observed",
+        "professional review does not support the assumption",
+        "Evidence review only",
+        "No professional conclusion"
+      ]
+    },
+    {
+      "scenario_id": "kunlun",
+      "scenario_name": "Kunlun",
+      "scenario_status": "existing_scenario",
+      "evidence_review_status": "requires_further_review",
+      "evidence_coverage": {
+        "meteorology": "available",
+        "time_series": "available",
+        "trends": "available",
+        "spatial_transects": "partially_available",
+        "gis_dem": "planning_only",
+        "professional_validation": "awaiting_professional_review"
+      },
+      "meteorology_evidence_status": "available",
+      "meteorology_time_series_status": "available",
+      "meteorology_trend_status": "available",
+      "spatial_transect_status": "partially_available",
+      "gis_dem_evidence_status": "planning_only",
+      "professional_validation_status": "awaiting_professional_review",
+      "evidence_strength": "low",
+      "evidence_strength_summary": "Current evidence strength is low. The pack records source availability only; it does not increase evidence strength.",
+      "uncertainty_level": "high",
+      "uncertainty_summary": "Uncertainty remains high because professional review and GIS / DEM evidence are incomplete or absent.",
+      "missing_evidence": [
+        "configured spatial transect evidence",
+        "professional GIS / DEM evidence and verification",
+        "field verification of configured spatial relationships",
+        "completed qualified professional review",
+        "resolution of trace records marked insufficient evidence"
+      ],
+      "planning_hypothesis_evidence_references": [
+        "kunlun_eco_water_buffer_hypothesis"
+      ],
+      "traceability_references": [
+        "kunlun:expert_review_record:kunlun_expert_review_001",
+        "kunlun:gis_dem_access_plan:gis_dem_access_plan",
+        "kunlun:meteorology_evidence:kunlun_meteorology_evidence",
+        "kunlun:meteorology_trend:kunlun_meteorology_trend",
+        "kunlun:planning_approval_support_report:kunlun_planning_approval_support",
+        "kunlun:planning_hypothesis:kunlun_eco_water_buffer_hypothesis",
+        "kunlun:professional_validation_interface:kunlun_professional_validation",
+        "kunlun:spatial_transect:kunlun_transect_scenario_pack"
+      ],
+      "validation_references": [
+        "professional_validation:awaiting_professional_review",
+        "required_discipline:qualified planner",
+        "required_discipline:environmental specialist",
+        "required_discipline:GIS / terrain or hydrology specialist where relevant",
+        "required_discipline:infrastructure or energy specialist where relevant",
+        "required_discipline:local and community knowledge holder"
+      ],
+      "supported_outputs": [
+        "planning_hypothesis",
+        "scenario_summary",
+        "governance_decision_support"
+      ],
+      "professional_review_requirements": [
+        "qualified planner",
+        "environmental specialist",
+        "GIS / terrain or hydrology specialist where relevant",
+        "infrastructure or energy specialist where relevant",
+        "local and community knowledge holder"
+      ],
+      "human_review_required": true,
+      "professional_review_required": true,
+      "approval_support_status": "not_ready_for_approval",
+      "limitations": [
+        "Internal planning support only. This layer does not make governance decisions, grant approval, provide professional validation, establish engineering or regulatory readiness, or replace qualified human review.",
+        "The status is not a planning, regulatory, engineering, environmental, or construction approval.",
+        "No scenario comparison, prioritization, forecast, simulation, GIS/DEM operation, API call, or LLM call is performed.",
+        "Summary only",
+        "No planning conclusion",
+        "No approval readiness",
+        "No engineering or regulatory determination",
+        "insufficient local evidence",
+        "unsupported spatial relationship",
+        "required spatial context remains incomplete",
+        "Evidence review only",
+        "No professional conclusion"
+      ]
+    },
+    {
+      "scenario_id": "iraq",
+      "scenario_name": "Iraq",
+      "scenario_status": "existing_scenario",
+      "evidence_review_status": "requires_further_review",
+      "evidence_coverage": {
+        "meteorology": "available",
+        "time_series": "available",
+        "trends": "available",
+        "spatial_transects": "available",
+        "gis_dem": "planning_only",
+        "professional_validation": "awaiting_professional_review"
+      },
+      "meteorology_evidence_status": "available",
+      "meteorology_time_series_status": "available",
+      "meteorology_trend_status": "available",
+      "spatial_transect_status": "available",
+      "gis_dem_evidence_status": "planning_only",
+      "professional_validation_status": "awaiting_professional_review",
+      "evidence_strength": "low",
+      "evidence_strength_summary": "Current evidence strength is low. The pack records source availability only; it does not increase evidence strength.",
+      "uncertainty_level": "high",
+      "uncertainty_summary": "Uncertainty remains high because professional review and GIS / DEM evidence are incomplete or absent.",
+      "missing_evidence": [
+        "professional GIS / DEM evidence and verification",
+        "field verification of configured spatial relationships",
+        "completed qualified professional review",
+        "resolution of trace records marked insufficient evidence"
+      ],
+      "planning_hypothesis_evidence_references": [
+        "iraq_agricultural_recovery_hypothesis"
+      ],
+      "traceability_references": [
+        "iraq:expert_review_record:iraq_expert_review_001",
+        "iraq:gis_dem_access_plan:gis_dem_access_plan",
+        "iraq:meteorology_evidence:iraq_meteorology_evidence",
+        "iraq:meteorology_trend:iraq_meteorology_trend",
+        "iraq:planning_approval_support_report:iraq_planning_approval_support",
+        "iraq:planning_hypothesis:iraq_agricultural_recovery_hypothesis",
+        "iraq:professional_validation_interface:iraq_professional_validation",
+        "iraq:spatial_transect:iraq_transect_scenario_pack"
+      ],
+      "validation_references": [
+        "professional_validation:awaiting_professional_review",
+        "required_discipline:qualified planner",
+        "required_discipline:environmental specialist",
+        "required_discipline:GIS / terrain or hydrology specialist where relevant",
+        "required_discipline:infrastructure or energy specialist where relevant",
+        "required_discipline:local and community knowledge holder"
+      ],
+      "supported_outputs": [
+        "planning_hypothesis",
+        "scenario_summary",
+        "governance_decision_support"
+      ],
+      "professional_review_requirements": [
+        "qualified planner",
+        "environmental specialist",
+        "GIS / terrain or hydrology specialist where relevant",
+        "infrastructure or energy specialist where relevant",
+        "local and community knowledge holder"
+      ],
+      "human_review_required": true,
+      "professional_review_required": true,
+      "approval_support_status": "not_ready_for_approval",
+      "limitations": [
+        "Internal planning support only. This layer does not make governance decisions, grant approval, provide professional validation, establish engineering or regulatory readiness, or replace qualified human review.",
+        "The status is not a planning, regulatory, engineering, environmental, or construction approval.",
+        "No scenario comparison, prioritization, forecast, simulation, GIS/DEM operation, API call, or LLM call is performed.",
+        "Summary only",
+        "No planning conclusion",
+        "No approval readiness",
+        "No engineering or regulatory determination",
+        "insufficient local evidence",
+        "unsupported spatial relationship",
+        "Evidence review only",
+        "No professional conclusion"
+      ]
+    },
+    {
+      "scenario_id": "baiyangdian_xiongan",
+      "scenario_name": "Baiyangdian-Xiong'an",
+      "scenario_status": "existing_scenario",
+      "evidence_review_status": "requires_further_review",
+      "evidence_coverage": {
+        "meteorology": "available",
+        "time_series": "available",
+        "trends": "available",
+        "spatial_transects": "available",
+        "gis_dem": "planning_only",
+        "professional_validation": "awaiting_professional_review"
+      },
+      "meteorology_evidence_status": "available",
+      "meteorology_time_series_status": "available",
+      "meteorology_trend_status": "available",
+      "spatial_transect_status": "available",
+      "gis_dem_evidence_status": "planning_only",
+      "professional_validation_status": "awaiting_professional_review",
+      "evidence_strength": "low",
+      "evidence_strength_summary": "Current evidence strength is low. The pack records source availability only; it does not increase evidence strength.",
+      "uncertainty_level": "high",
+      "uncertainty_summary": "Uncertainty remains high because professional review and GIS / DEM evidence are incomplete or absent.",
+      "missing_evidence": [
+        "professional GIS / DEM evidence and verification",
+        "field verification of configured spatial relationships",
+        "completed qualified professional review",
+        "resolution of trace records marked insufficient evidence"
+      ],
+      "planning_hypothesis_evidence_references": [
+        "baiyangdian_xiongan_watershed_continuity_hypothesis"
+      ],
+      "traceability_references": [
+        "baiyangdian_xiongan:expert_review_record:baiyangdian_xiongan_expert_review_001",
+        "baiyangdian_xiongan:gis_dem_access_plan:gis_dem_access_plan",
+        "baiyangdian_xiongan:meteorology_evidence:baiyangdian_xiongan_meteorology_evidence",
+        "baiyangdian_xiongan:meteorology_trend:baiyangdian_xiongan_meteorology_trend",
+        "baiyangdian_xiongan:planning_approval_support_report:baiyangdian_xiongan_planning_approval_support",
+        "baiyangdian_xiongan:planning_hypothesis:baiyangdian_xiongan_watershed_continuity_hypothesis",
+        "baiyangdian_xiongan:professional_validation_interface:baiyangdian_xiongan_professional_validation",
+        "baiyangdian_xiongan:spatial_transect:baiyangdian_xiongan_transect_scenario_pack"
+      ],
+      "validation_references": [
+        "professional_validation:awaiting_professional_review",
+        "required_discipline:qualified planner",
+        "required_discipline:environmental specialist",
+        "required_discipline:GIS / terrain or hydrology specialist where relevant",
+        "required_discipline:infrastructure or energy specialist where relevant",
+        "required_discipline:local and community knowledge holder"
+      ],
+      "supported_outputs": [
+        "planning_hypothesis",
+        "scenario_summary",
+        "governance_decision_support"
+      ],
+      "professional_review_requirements": [
+        "qualified planner",
+        "environmental specialist",
+        "GIS / terrain or hydrology specialist where relevant",
+        "infrastructure or energy specialist where relevant",
+        "local and community knowledge holder"
+      ],
+      "human_review_required": true,
+      "professional_review_required": true,
+      "approval_support_status": "not_ready_for_approval",
+      "limitations": [
+        "Internal planning support only. This layer does not make governance decisions, grant approval, provide professional validation, establish engineering or regulatory readiness, or replace qualified human review.",
+        "The status is not a planning, regulatory, engineering, environmental, or construction approval.",
+        "No scenario comparison, prioritization, forecast, simulation, GIS/DEM operation, API call, or LLM call is performed.",
+        "Summary only",
+        "No planning conclusion",
+        "No approval readiness",
+        "No engineering or regulatory determination",
+        "insufficient local evidence",
+        "unsupported spatial relationship",
+        "Evidence review only",
+        "No professional conclusion"
+      ]
+    },
+    {
+      "scenario_id": "tumut_nsw_intake",
+      "scenario_name": "Tumut NSW",
+      "scenario_status": "intake_only",
+      "evidence_review_status": "requires_further_review",
+      "evidence_coverage": {
+        "meteorology": "available",
+        "time_series": "not_available",
+        "trends": "not_available",
+        "spatial_transects": "not_available",
+        "gis_dem": "planning_only",
+        "professional_validation": "not_available"
+      },
+      "meteorology_evidence_status": "available",
+      "meteorology_time_series_status": "not_available",
+      "meteorology_trend_status": "not_available",
+      "spatial_transect_status": "not_available",
+      "gis_dem_evidence_status": "planning_only",
+      "professional_validation_status": "not_available",
+      "evidence_strength": "insufficient",
+      "evidence_strength_summary": "Current evidence strength is insufficient. The pack records source availability only; it does not increase evidence strength.",
+      "uncertainty_level": "high",
+      "uncertainty_summary": "Uncertainty remains high because professional review and GIS / DEM evidence are incomplete or absent.",
+      "missing_evidence": [
+        "meteorology time-series evidence",
+        "meteorology trend evidence",
+        "configured spatial transect evidence",
+        "professional GIS / DEM evidence and verification",
+        "field verification of configured spatial relationships",
+        "completed qualified professional review"
+      ],
+      "planning_hypothesis_evidence_references": [],
+      "traceability_references": [],
+      "validation_references": [],
+      "supported_outputs": [
+        "scenario_summary"
+      ],
+      "professional_review_requirements": [
+        "qualified environmental or planning review",
+        "GIS / terrain or hydrology review where relevant"
+      ],
+      "human_review_required": true,
+      "professional_review_required": true,
+      "approval_support_status": "not_ready_for_approval",
+      "limitations": [
+        "Location intake only",
+        "No planning conclusion generated",
+        "No GIS / DEM validation performed",
+        "No meteorology retrieval performed unless separately triggered",
+        "Not ready for approval",
+        "Meteorology evidence only",
+        "Summary only",
+        "No planning conclusion",
+        "No approval readiness",
+        "No engineering or regulatory determination",
+        "Evidence review only",
+        "No professional conclusion"
+      ]
+    },
+    {
+      "scenario_id": "dunhuang_demonstration_area_intake",
+      "scenario_name": "Dunhuang Demonstration Area",
+      "scenario_status": "intake_only",
+      "evidence_review_status": "requires_further_review",
+      "evidence_coverage": {
+        "meteorology": "available",
+        "time_series": "not_available",
+        "trends": "not_available",
+        "spatial_transects": "not_available",
+        "gis_dem": "planning_only",
+        "professional_validation": "not_available"
+      },
+      "meteorology_evidence_status": "available",
+      "meteorology_time_series_status": "not_available",
+      "meteorology_trend_status": "not_available",
+      "spatial_transect_status": "not_available",
+      "gis_dem_evidence_status": "planning_only",
+      "professional_validation_status": "not_available",
+      "evidence_strength": "insufficient",
+      "evidence_strength_summary": "Current evidence strength is insufficient. The pack records source availability only; it does not increase evidence strength.",
+      "uncertainty_level": "high",
+      "uncertainty_summary": "Uncertainty remains high because professional review and GIS / DEM evidence are incomplete or absent.",
+      "missing_evidence": [
+        "meteorology time-series evidence",
+        "meteorology trend evidence",
+        "configured spatial transect evidence",
+        "professional GIS / DEM evidence and verification",
+        "field verification of configured spatial relationships",
+        "completed qualified professional review"
+      ],
+      "planning_hypothesis_evidence_references": [],
+      "traceability_references": [],
+      "validation_references": [],
+      "supported_outputs": [
+        "scenario_summary"
+      ],
+      "professional_review_requirements": [
+        "qualified environmental or planning review",
+        "GIS / terrain or hydrology review where relevant"
+      ],
+      "human_review_required": true,
+      "professional_review_required": true,
+      "approval_support_status": "not_ready_for_approval",
+      "limitations": [
+        "Location intake only",
+        "No planning conclusion generated",
+        "No GIS / DEM validation performed",
+        "No meteorology retrieval performed unless separately triggered",
+        "Not ready for approval",
+        "Meteorology evidence only",
+        "Summary only",
+        "No planning conclusion",
+        "No approval readiness",
+        "No engineering or regulatory determination",
+        "Evidence review only",
+        "No professional conclusion"
+      ]
+    }
+  ]
+}
