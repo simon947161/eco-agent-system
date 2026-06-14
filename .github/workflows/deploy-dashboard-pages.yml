@@ -45,6 +45,7 @@ jobs:
           cp cczps_lite/output/meteorology_trends.json _site/data/meteorology_trends.json
           cp cczps_lite/output/planning_hypotheses.json _site/data/planning_hypotheses.json
           cp cczps_lite/output/location_intake_profiles.json _site/data/location_intake_profiles.json
+          cp cczps_lite/output/location_meteorology_evidence.json _site/data/location_meteorology_evidence.json
           cp cczps_lite/output/evidence_traceability.json _site/data/evidence_traceability.json
           cp cczps_lite/output/governance_decision_records.json _site/data/governance_decision_records.json
           cp cczps_lite/output/scenario_comparison.json _site/data/scenario_comparison.json
@@ -59,6 +60,7 @@ jobs:
           sed -i 's#../output/meteorology_trends.json#data/meteorology_trends.json#' _site/meteorology-dashboard.js
           sed -i 's#../output/planning_hypotheses.json#data/planning_hypotheses.json#' _site/planning-hypothesis-dashboard.js
           sed -i 's#../output/location_intake_profiles.json#data/location_intake_profiles.json#' _site/location-intake-dashboard.js
+          sed -i 's#../output/location_meteorology_evidence.json#data/location_meteorology_evidence.json#' _site/location-meteorology-dashboard.js
           sed -i 's#../output/governance_decision_records.json#data/governance_decision_records.json#' _site/governance-decision-dashboard.js
           sed -i 's#../output/scenario_comparison.json#data/scenario_comparison.json#' _site/scenario-comparison-dashboard.js
           sed -i 's#../output/scenario_comparison.json#data/scenario_comparison.json#' _site/human-readable-dashboard.js

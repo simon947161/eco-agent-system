@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "runtime": "Governed Location-to-Meteorology Pipeline",
+  "decision_boundary": "Governed meteorology evidence only. No geocoding, GIS / DEM analysis, planning conclusion, approval decision, or recommendation is generated.",
+  "requested_dates": [
+    "20250501"
+  ],
+  "selected_intake_ids": [
+    "tumut_nsw_intake",
+    "dunhuang_demonstration_area_intake"
+  ],
+  "max_locations_per_run": 5,
+  "max_dates_per_run": 10,
+  "uncached_request_count": 2,
+  "stopped_early": false,
+  "record_count": 2,
+  "records": [
+    {
+      "scenario_id": "tumut_nsw_intake",
+      "location_name": "Tumut NSW",
+      "latitude": -35.3,
+      "longitude": 148.22,
+      "observation_date": "20250501",
+      "source": "NASA POWER",
+      "approval_support_status": "not_ready_for_approval",
+      "human_review_required": true,
+      "professional_review_required": true,
+      "trend_status": "not_generated",
+      "limitations": [
+        "Meteorology evidence only",
+        "No GIS / DEM validation performed",
+        "No planning conclusion generated",
+        "Not ready for approval"
+      ],
+      "meteorology_status": "success",
+      "retrieval_status": "success",
+      "from_cache": false,
+      "budget_guard_status": "warning",
+      "budget_guard_summary": "Budget status is warning. Estimated calls are 2 against a daily limit of 20; the agent-run limit is 5. Proceed only with caution and review the declared limits. This is a pre-execution governance check only; no metering, billing, payment, or external resource call is performed.",
+      "usage_governance_status": "manual_approved",
+      "usage_cost_governance": {
+        "usage_mode": "project_mode",
+        "external_resource_owner": "user",
+        "external_cost_bearer": "user",
+        "platform_service_recipient": "user",
+        "estimated_cost_level": "medium",
+        "estimated_external_resource_cost": "medium",
+        "budget_warning": true,
+        "requires_user_approval": true,
+        "platform_service_model": "open_source",
+        "platform_service_fee_model": "none",
+        "platform_service_fee_estimate": "none",
+        "agentic_risk_level": "medium",
+        "agentic_consumption_risk": "medium",
+        "governance_summary": "project_mode is classified at medium estimated cost and medium agentic risk. 1 external resource class(es) are proposed, owned by user; external costs belong to user. Resource classes: NASA POWER. Explicit user approval is required before execution. Platform services are provided to user under the none fee classification. This is a governance estimate only; no billing, payment, subscription, invoice, or resource call is performed."
+      },
+      "meteorology_reading": {
+        "location": "Tumut NSW",
+        "observation_date": "2025-05-01",
+        "temperature_c": 18.2,
+        "rainfall_mm": 2.1,
+        "humidity_percent": 52.0,
+        "wind_speed_kmh": 10.8,
+        "wind_direction_degrees": 180.0,
+        "solar_radiation_mj_m2": 20.0,
+        "evaporation_mm": null,
+        "source": "NASA POWER",
+        "observation_timestamp": "2025-05-01T00:00:00Z",
+        "retrieved_at": null,
+        "retrieval_status": "success",
+        "confidence": "medium"
+      }
+    },
+    {
+      "scenario_id": "dunhuang_demonstration_area_intake",
+      "location_name": "Dunhuang Demonstration Area",
+      "latitude": 40.1421,
+      "longitude": 94.6619,
+      "observation_date": "20250501",
+      "source": "NASA POWER",
+      "approval_support_status": "not_ready_for_approval",
+      "human_review_required": true,
+      "professional_review_required": true,
+      "trend_status": "not_generated",
+      "limitations": [
+        "Meteorology evidence only",
+        "No GIS / DEM validation performed",
+        "No planning conclusion generated",
+        "Not ready for approval"
+      ],
+      "meteorology_status": "success",
+      "retrieval_status": "success",
+      "from_cache": false,
+      "budget_guard_status": "warning",
+      "budget_guard_summary": "Budget status is warning. Estimated calls are 2 against a daily limit of 20; the agent-run limit is 5. Proceed only with caution and review the declared limits. This is a pre-execution governance check only; no metering, billing, payment, or external resource call is performed.",
+      "usage_governance_status": "manual_approved",
+      "usage_cost_governance": {
+        "usage_mode": "project_mode",
+        "external_resource_owner": "user",
+        "external_cost_bearer": "user",
+        "platform_service_recipient": "user",
+        "estimated_cost_level": "medium",
+        "estimated_external_resource_cost": "medium",
+        "budget_warning": true,
+        "requires_user_approval": true,
+        "platform_service_model": "open_source",
+        "platform_service_fee_model": "none",
+        "platform_service_fee_estimate": "none",
+        "agentic_risk_level": "medium",
+        "agentic_consumption_risk": "medium",
+        "governance_summary": "project_mode is classified at medium estimated cost and medium agentic risk. 1 external resource class(es) are proposed, owned by user; external costs belong to user. Resource classes: NASA POWER. Explicit user approval is required before execution. Platform services are provided to user under the none fee classification. This is a governance estimate only; no billing, payment, subscription, invoice, or resource call is performed."
+      },
+      "meteorology_reading": {
+        "location": "Dunhuang Demonstration Area",
+        "observation_date": "2025-05-01",
+        "temperature_c": 18.2,
+        "rainfall_mm": 2.1,
+        "humidity_percent": 52.0,
+        "wind_speed_kmh": 10.8,
+        "wind_direction_degrees": 180.0,
+        "solar_radiation_mj_m2": 20.0,
+        "evaporation_mm": null,
+        "source": "NASA POWER",
+        "observation_timestamp": "2025-05-01T00:00:00Z",
+        "retrieved_at": null,
+        "retrieval_status": "success",
+        "confidence": "medium"
+      }
+    }
+  ]
+}
