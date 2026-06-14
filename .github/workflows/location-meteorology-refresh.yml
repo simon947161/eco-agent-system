@@ -1,0 +1,106 @@
+name: Location Meteorology Refresh
+
+on:
+  workflow_dispatch:
+    inputs:
+      observation_dates:
+        description: "Comma-separated YYYYMMDD dates"
+        required: true
+        default: "20250501"
+      selected_intake_ids:
+        description: "Optional comma-separated intake scenario IDs"
+        required: false
+        default: ""
+      manual_approval:
+        description: "Confirm approval for governed live NASA POWER retrieval"
+        required: true
+        type: boolean
+        default: false
+      force_refresh:
+        description: "Bypass cache for selected location/date pairs"
+        required: true
+        type: boolean
+        default: false
+      commit_outputs:
+        description: "Commit allowlisted evidence and cache outputs"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out selected branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Validate branch target
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF_TYPE" != "branch" ]]; then
+            echo "Commit mode requires a branch ref, not $GITHUB_REF_TYPE."
+            exit 1
+          fi
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Refresh governed location meteorology evidence
+        shell: bash
+        env:
+          OBSERVATION_DATES: ${{ inputs.observation_dates }}
+          SELECTED_INTAKE_IDS: ${{ inputs.selected_intake_ids }}
+          MANUAL_APPROVAL: ${{ inputs.manual_approval }}
+          FORCE_REFRESH: ${{ inputs.force_refresh }}
+        run: |
+          if [[ "$MANUAL_APPROVAL" != "true" ]]; then
+            echo "Manual approval must be explicitly granted for live retrieval."
+            exit 1
+          fi
+          args=(--dates "$OBSERVATION_DATES" --manual-approval)
+          if [[ -n "$SELECTED_INTAKE_IDS" ]]; then
+            args+=(--selected-intake-ids "$SELECTED_INTAKE_IDS")
+          fi
+          if [[ "$FORCE_REFRESH" == "true" ]]; then
+            args+=(--force-refresh)
+          fi
+          python cczps_lite/engine/location_meteorology_pipeline.py "${args[@]}"
+      - name: Run unit tests
+        run: python -m unittest discover
+      - name: Commit allowlisted outputs
+        if: ${{ inputs.commit_outputs }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cczps_lite/output/location_meteorology_evidence.json
+          git add cczps_lite/output/location_meteorology_evidence.md
+          git add cczps_lite/output/meteorology_cache.json
+          staged_files="$(git diff --cached --name-only)"
+          unexpected_files="$(printf '%s\n' "$staged_files" | grep -Ev '^(cczps_lite/output/location_meteorology_evidence\.json|cczps_lite/output/location_meteorology_evidence\.md|cczps_lite/output/meteorology_cache\.json)$' || true)"
+          if [[ -n "$unexpected_files" ]]; then
+            echo "Refusing to commit unexpected files:"
+            echo "$unexpected_files"
+            exit 1
+          fi
+          if git diff --cached --quiet; then
+            echo "No location meteorology output changes to commit."
+            exit 0
+          fi
+          git commit -m "Refresh governed location meteorology evidence"
+          git push origin "HEAD:refs/heads/${GITHUB_REF_NAME}"
+      - name: Upload governed outputs
+        if: ${{ !inputs.commit_outputs }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: location-meteorology-output
+          path: |
+            cczps_lite/output/location_meteorology_evidence.json
+            cczps_lite/output/location_meteorology_evidence.md
+            cczps_lite/output/meteorology_cache.json
