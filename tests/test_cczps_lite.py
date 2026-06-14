@@ -110,7 +110,12 @@ class ScenarioCompareOutputTests(unittest.TestCase):
         for path in input_dir.glob("*.json"):
             with self.subTest(path=path.name):
                 with path.open("r", encoding="utf-8") as file_obj:
-                    self.assertIsInstance(json.load(file_obj), dict)
+                    data = json.load(file_obj)
+                if path.name == "location_intake_examples.json":
+                    self.assertIsInstance(data, list)
+                    self.assertTrue(all(isinstance(record, dict) for record in data))
+                else:
+                    self.assertIsInstance(data, dict)
 
 
 if __name__ == "__main__":
