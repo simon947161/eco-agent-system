@@ -101,3 +101,34 @@ python cczps_lite/engine/scenario_comparison.py
 ```
 
 The committed outputs can also be inspected without regenerating them.
+
+## Human-Readable Dashboard
+
+From the repository root, start a simple local static server:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+`http://localhost:8000/cczps_lite/dashboard/`
+
+Begin with the plain-language sections near the top of the page:
+
+1. scenario cards;
+2. evidence summaries;
+3. planning hypothesis summaries;
+4. internal review status;
+5. transparent scenario comparison;
+6. capability boundaries; and
+7. next human review actions.
+
+For a non-technical audience, explain that each paragraph translates an
+existing local JSON field. The dashboard does not create new environmental
+analysis. Use the technical sections below the divider only when someone wants
+to inspect the underlying runtime detail.
+
+Keep the visible safety statement in view when presenting. Every scenario
+remains demonstration-only, requires human and professional review, and is not
+ready for approval.
