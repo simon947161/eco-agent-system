@@ -6,6 +6,39 @@ Eco Agent System is an early-stage open-source prototype for translating environ
 
 It explores how environmental data can become practical, human-reviewed action logic for communities, planners, land managers, researchers, and public-good projects.
 
+## CCZPS-Lite v0.5
+
+CCZPS-Lite v0.5 is the repository's deterministic, local-first environmental
+intelligence and planning-support foundation. It connects evidence,
+meteorology, spatial context, planning hypotheses, validation support,
+traceability, internal governance support, and scenario comparison.
+
+It is not a statutory approval tool, professional certification system,
+engineering or construction decision system, regulatory determination, or
+financial recommendation system. Human and professional review remain required.
+
+Run the tests:
+
+```bash
+python -m unittest discover
+```
+
+Generate the principal downstream outputs:
+
+```bash
+python cczps_lite/engine/evidence_traceability.py
+python cczps_lite/engine/governance_decision_support.py
+python cczps_lite/engine/scenario_comparison.py
+```
+
+Committed outputs are under `cczps_lite/output/`; the static dashboard is under
+`cczps_lite/dashboard/`. See the
+[v0.5 release package](docs/08_RELEASES/README.md) for release notes,
+architecture, demonstration guidance, and the output inventory.
+
+FarmerOS, GardenOS, WaterOS, and ClimateOS are future application-layer
+directions that may reuse this foundation; they are not implemented in v0.5.
+
 ```text
 Climate · Water · Vegetation · Infrastructure · Maintenance · Resilience · Governance
 ```
