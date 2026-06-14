@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "runtime": "Location-to-Scenario Intake Runtime",
+  "dashboard_compatible": true,
+  "safety_boundary": "Location intake only. This runtime does not perform geocoding, environmental analysis, meteorology retrieval, GIS / DEM processing, planning assessment, professional review, approval assessment, or recommendation generation.",
+  "profile_count": 2,
+  "invalid_record_count": 1,
+  "scenario_profiles": [
+    {
+      "scenario_id": "tumut_nsw_intake",
+      "location_name": "Tumut NSW",
+      "country": "Australia",
+      "region": "New South Wales",
+      "latitude": -35.3,
+      "longitude": 148.22,
+      "intake_context": "climate_resilience_review",
+      "user_intent": "Explore whether this location can become a future CCZPS-Lite scenario.",
+      "notes": "Demonstration-only intake record.",
+      "scenario_status": "intake_only",
+      "workflow_status": "awaiting_evidence_generation",
+      "evidence_status": "not_generated",
+      "meteorology_status": "not_requested",
+      "gis_dem_status": "not_requested",
+      "planning_hypothesis_status": "not_generated",
+      "approval_support_status": "not_ready_for_approval",
+      "human_review_required": true,
+      "professional_review_required": true,
+      "limitations": [
+        "Location intake only",
+        "No planning conclusion generated",
+        "No GIS / DEM validation performed",
+        "No meteorology retrieval performed unless separately triggered",
+        "Not ready for approval"
+      ],
+      "recommended_next_steps": [
+        "run governed meteorology refresh",
+        "prepare GIS / DEM validation requirements",
+        "generate planning hypothesis after evidence exists",
+        "request professional review before any planning decision"
+      ]
+    },
+    {
+      "scenario_id": "dunhuang_demonstration_area_intake",
+      "location_name": "Dunhuang Demonstration Area",
+      "country": "China",
+      "region": "Gansu",
+      "latitude": 40.1421,
+      "longitude": 94.6619,
+      "intake_context": "dryland_restoration_review",
+      "user_intent": "Explore dryland restoration and climate governance relevance.",
+      "notes": "Preliminary intake only. Coordinates are approximate.",
+      "scenario_status": "intake_only",
+      "workflow_status": "awaiting_evidence_generation",
+      "evidence_status": "not_generated",
+      "meteorology_status": "not_requested",
+      "gis_dem_status": "not_requested",
+      "planning_hypothesis_status": "not_generated",
+      "approval_support_status": "not_ready_for_approval",
+      "human_review_required": true,
+      "professional_review_required": true,
+      "limitations": [
+        "Location intake only",
+        "No planning conclusion generated",
+        "No GIS / DEM validation performed",
+        "No meteorology retrieval performed unless separately triggered",
+        "Not ready for approval"
+      ],
+      "recommended_next_steps": [
+        "run governed meteorology refresh",
+        "prepare GIS / DEM validation requirements",
+        "generate planning hypothesis after evidence exists",
+        "request professional review before any planning decision"
+      ]
+    }
+  ],
+  "invalid_records": [
+    {
+      "input_index": 2,
+      "location_name": "Invalid Coordinate Example",
+      "validation_errors": [
+        "latitude_must_be_between_-90_and_90"
+      ],
+      "record": {
+        "location_name": "Invalid Coordinate Example",
+        "country": "Australia",
+        "region": "Demonstration only",
+        "latitude": -95,
+        "longitude": 148.22,
+        "intake_context": "validation_example",
+        "user_intent": "Demonstrate explicit invalid-record handling.",
+        "notes": "This record must not be promoted to a scenario profile."
+      }
+    }
+  ]
+}

@@ -20,15 +20,17 @@ class DashboardHTMLParser(HTMLParser):
 
 class DemonstrationDashboardTests(unittest.TestCase):
     def test_dashboard_assets_and_sections_exist(self) -> None:
-        assets=[DASHBOARD_DIR/name for name in ("index.html","styles.css","planning-hypothesis-dashboard.css","human-readable-dashboard.css","human-readable-dashboard.js","dashboard.js","usage-cost-dashboard.js","budget-guard-dashboard.js","meteorology-dashboard.js","planning-hypothesis-dashboard.js","governance-decision-dashboard.js","scenario-comparison-dashboard.js")]
+        assets=[DASHBOARD_DIR/name for name in ("index.html","styles.css","planning-hypothesis-dashboard.css","human-readable-dashboard.css","location-intake-dashboard.js","human-readable-dashboard.js","dashboard.js","usage-cost-dashboard.js","budget-guard-dashboard.js","meteorology-dashboard.js","planning-hypothesis-dashboard.js","governance-decision-dashboard.js","scenario-comparison-dashboard.js")]
         for path in assets: self.assertTrue(path.is_file(), path)
         parser=DashboardHTMLParser(); parser.feed(assets[0].read_text(encoding="utf-8"))
-        self.assertEqual(parser.scripts,["human-readable-dashboard.js","dashboard.js","usage-cost-dashboard.js","budget-guard-dashboard.js","meteorology-dashboard.js","planning-hypothesis-dashboard.js","governance-decision-dashboard.js","scenario-comparison-dashboard.js"])
+        self.assertEqual(parser.scripts,["location-intake-dashboard.js","human-readable-dashboard.js","dashboard.js","usage-cost-dashboard.js","budget-guard-dashboard.js","meteorology-dashboard.js","planning-hypothesis-dashboard.js","governance-decision-dashboard.js","scenario-comparison-dashboard.js"])
         self.assertEqual(parser.stylesheets,["styles.css","planning-hypothesis-dashboard.css","human-readable-dashboard.css"])
         for section_id in ("overview","comparison","evidence-comparison","evidence-scenario-comparison","runtime-chain","scenario-detail","usage-cost","budget-guard","meteorology","planning-hypothesis","planning-hypotheses","governance-decision","governance-decision-support","validation-report","capability-map"):
             self.assertIn(section_id,parser.ids)
         self.assertIn("meteorology-trends", parser.ids)
         for section_id in ("plain-language-overview","human-scenarios","human-scenario-cards","human-evidence","human-evidence-summary","human-hypotheses","human-hypothesis-summary","human-governance","human-governance-summary","human-comparison","human-comparison-summary","can-cannot","next-actions","human-next-actions","technical-detail"):
+            self.assertIn(section_id, parser.ids)
+        for section_id in ("location-intake","location-intake-profiles","location-intake-invalid"):
             self.assertIn(section_id, parser.ids)
 
     def test_human_readable_sections_preserve_plain_language_boundaries(self) -> None:
@@ -46,6 +48,16 @@ class DemonstrationDashboardTests(unittest.TestCase):
             self.assertNotIn(forbidden, script)
         for conservative in ("Not ready for approval. Professional review is required.","not a proven finding","This is not an approval decision.","not implementation instructions"):
             self.assertIn(conservative, script)
+
+    def test_location_intake_dashboard_is_local_and_preliminary(self) -> None:
+        script=(DASHBOARD_DIR/"location-intake-dashboard.js").read_text(encoding="utf-8")
+        self.assertIn("../output/location_intake_profiles.json", script)
+        for status in ("intake_only","awaiting_evidence_generation","not_generated","not_requested","not_ready_for_approval"):
+            self.assertIn(status, script)
+        for field in ("location_name","country","region","latitude","longitude","intake_context","scenario_status","workflow_status","evidence_status","meteorology_status","gis_dem_status","approval_support_status","recommended_next_steps","limitations"):
+            self.assertIn(field, script)
+        for forbidden in ("https://","http://","XMLHttpRequest","WebSocket","OpenAI","anthropic","power.larc.nasa.gov","geolocation","<input","<form"):
+            self.assertNotIn(forbidden, script)
 
     def test_dashboard_reads_existing_outputs_without_external_services(self) -> None:
         script=(DASHBOARD_DIR/"dashboard.js").read_text(encoding="utf-8")
@@ -80,7 +92,7 @@ class DemonstrationDashboardTests(unittest.TestCase):
 
     def test_github_pages_workflow_stages_a_self_contained_site(self) -> None:
         workflow=PAGES_WORKFLOW.read_text(encoding="utf-8")
-        for expected in ("python cczps_lite/engine/meteorology_runtime.py","python cczps_lite/engine/planning_hypothesis.py","python cczps_lite/engine/evidence_traceability.py","python cczps_lite/engine/governance_decision_support.py","python cczps_lite/engine/scenario_comparison.py","data/meteorology_evidence.json","data/meteorology_trends.json","data/planning_hypotheses.json","data/evidence_traceability.json","data/governance_decision_records.json","data/scenario_comparison.json","data/planning_approval_support_report.json","data/spatial_transect_scenario_pack.json","_site/human-readable-dashboard.js","_site/meteorology-dashboard.js","_site/planning-hypothesis-dashboard.js","_site/governance-decision-dashboard.js","_site/scenario-comparison-dashboard.js","actions/deploy-pages@v4"):
+        for expected in ("python cczps_lite/engine/meteorology_runtime.py","python cczps_lite/engine/location_intake.py","python cczps_lite/engine/planning_hypothesis.py","python cczps_lite/engine/evidence_traceability.py","python cczps_lite/engine/governance_decision_support.py","python cczps_lite/engine/scenario_comparison.py","data/meteorology_evidence.json","data/meteorology_trends.json","data/location_intake_profiles.json","data/planning_hypotheses.json","data/evidence_traceability.json","data/governance_decision_records.json","data/scenario_comparison.json","data/planning_approval_support_report.json","data/spatial_transect_scenario_pack.json","_site/location-intake-dashboard.js","_site/human-readable-dashboard.js","_site/meteorology-dashboard.js","_site/planning-hypothesis-dashboard.js","_site/governance-decision-dashboard.js","_site/scenario-comparison-dashboard.js","actions/deploy-pages@v4"):
             self.assertIn(expected,workflow)
 
 
