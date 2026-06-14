@@ -139,6 +139,15 @@
 .review-action-list li + li { margin-top: 9px; }
 .review-boundary { color: var(--muted); font-size: 0.82rem; }
 .human-fallback { padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.intake-card { border-top: 6px solid var(--blue); }
+.intake-invalid-summary {
+  margin-top: 18px;
+  padding: 16px 20px;
+  color: #5f2f22;
+  background: #f4e2d8;
+  border: 1px solid #ddb5a5;
+  border-radius: 12px;
+}
 
 .technical-divider {
   margin: 100px clamp(24px, 6vw, 88px) 0;
