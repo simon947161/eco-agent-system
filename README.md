@@ -39,6 +39,30 @@ architecture, demonstration guidance, and the output inventory.
 FarmerOS, GardenOS, WaterOS, and ClimateOS are future application-layer
 directions that may reuse this foundation; they are not implemented in v0.5.
 
+## Project Control Layer
+
+The [Project Control Layer](00_PROJECT_CONTROL/README.md) contains the shared
+roadmap, task index, Codex batch queue, repository rules, future agent template,
+and architecture decisions for ClimateOS and its subsystem expansion.
+
+## ClimateOS Master Directory
+
+See the [ClimateOS Master Directory Map](MASTER_DIRECTORY_MAP.md) for the
+documentation-only repository scaffold and subsystem relationships:
+
+- [ClimateOS Core](01_CLIMATEOS_CORE/)
+- [CarbonOS](02_CARBONOS/)
+- [EnergyOS](03_ENERGYOS/)
+- [WaterOS](04_WATEROS/)
+- [LandOS](05_LANDOS/)
+- [BiodiversityOS](06_BIODIVERSITYOS/)
+- [ParkOS](07_PARKOS/)
+- [ESGOS](08_ESGOS/)
+- [GISOS](09_GISOS/)
+- [ScenarioOS](10_SCENARIOOS/)
+- [ValidationOS](11_VALIDATIONOS/)
+- [GovernanceOS](12_GOVERNANCEOS/)
+
 ```text
 Climate · Water · Vegetation · Infrastructure · Maintenance · Resilience · Governance
 ```
