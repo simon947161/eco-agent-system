@@ -103,6 +103,15 @@ Reality, and Governance Reality.
 Evidence Assets combine Reality, Data, Evidence, Context, Validation, History,
 and Confidence.
 
+### Proof of Reality
+
+Proof of Reality treats all statements as Reality Claim Candidates until they
+are supported by evidence packages, cross-validation, confidence
+classification, and traceability.
+
+It does not assume prediction equals truth, a single witness equals false, or
+crowd consensus equals truth.
+
 ### Validation
 
 Validation is not approval or auditing. Validation is systematic evaluation of
@@ -165,6 +174,7 @@ The repository currently includes:
 - Participation and cultivation framework foundation
 - Maturity, master architecture, EcoChain, Evidence Asset, and
   Language-to-Evidence foundation documents
+- Proof of Reality foundation documents
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -177,6 +187,7 @@ Planned work includes:
 - Provider-neutral observation record conversion concepts
 - Evidence and validation history structures
 - Governance translation and Proof of Reality examples
+- Task100 future validation architecture concepts
 - Reviewed sample Reality Data Asset and Evidence Asset records
 
 ## Vision, Not Yet Implemented

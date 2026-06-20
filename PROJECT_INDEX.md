@@ -43,6 +43,7 @@ Use it as a first stop before adding new project content.
 - [Radar Layer](01_CLIMATEOS_CORE/radar_layer/README.md)
 - [Evidence Layer](01_CLIMATEOS_CORE/evidence_layer/README.md)
 - [Validation Layer](01_CLIMATEOS_CORE/validation_layer/README.md)
+- [Proof of Reality Layer](01_CLIMATEOS_CORE/proof_of_reality_layer/README.md)
 - [Integration Layer](01_CLIMATEOS_CORE/integration_layer/README.md)
 - [NASA Earthdata Framework](01_CLIMATEOS_CORE/external_data_layer/nasa_earthdata/README.md)
 - [Multi-Source Observation Framework](01_CLIMATEOS_CORE/external_data_layer/multi_source_framework/README.md)
