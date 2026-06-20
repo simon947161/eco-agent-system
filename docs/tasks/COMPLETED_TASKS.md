@@ -1,0 +1,33 @@
+# Completed Tasks
+
+## Purpose
+
+This document summarizes completed ClimateOS repository work for quick
+orientation.
+
+The canonical task list remains
+[00_PROJECT_CONTROL/TASK_INDEX.md](../../00_PROJECT_CONTROL/TASK_INDEX.md).
+
+## Completed Foundation Work
+
+- Task46: Repository control and Codex batch queue system
+- Task47: Master directory scaffold
+- Task48: Codex batch queue system
+- Task49: Agent template standard
+- Task49.5: Repository baseline release
+- Task50-57: CarbonOS foundations and demonstration work
+- Task58: Observation Layer foundation
+- Task59: Relationship Layer foundation
+- Task60: Radar Layer foundation
+- Task61: Evidence Synthesis Layer foundation
+- Task62: Validation and calculation transparency foundation
+- Task63: ClimateOS x EcoEngine integration foundation
+- Task64: NASA Earthdata integration framework foundation
+- Task65: Multi-source observation provider framework foundation
+- Task66: Participation and cultivation framework foundation
+
+## Boundary
+
+This summary does not replace commit history, pull requests, or the canonical
+task index.
+

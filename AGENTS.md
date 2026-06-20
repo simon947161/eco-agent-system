@@ -127,12 +127,21 @@ or approval claims unless they are explicitly supported.
 
 - [PRD](PRD.md)
 - [Project Index](PROJECT_INDEX.md)
+- [Repository Onboarding Guide](docs/onboarding/REPOSITORY_ONBOARDING_GUIDE.md)
 - [Root README](README.md)
 - [Project Control Layer](00_PROJECT_CONTROL/README.md)
+- [Repository Governance](docs/governance/REPOSITORY_GOVERNANCE.md)
 - [ClimateOS Core](01_CLIMATEOS_CORE/README.md)
 - [Master Directory Map](MASTER_DIRECTORY_MAP.md)
 - [Agent Standard](00_PROJECT_CONTROL/AGENT_STANDARD.md)
 - [Task Index](00_PROJECT_CONTROL/TASK_INDEX.md)
+
+## Common Templates
+
+- [Conversation Radar Template](docs/radar/CLIMATEOS_CONVERSATION_RADAR_TEMPLATE.md)
+- [Observation Diary Template](docs/observation/CLIMATEOS_OBSERVATION_DIARY_TEMPLATE.md)
+- [Validation Report Template](docs/validation/CLIMATEOS_VALIDATION_REPORT_TEMPLATE.md)
+- [Skills Roadmap](docs/skills/CLIMATEOS_SKILLS_ROADMAP.md)
 
 ## Safe Default
 

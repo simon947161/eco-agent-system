@@ -12,6 +12,7 @@ Use it as a first stop before adding new project content.
 - [AGENTS](AGENTS.md)
 - [README](README.md)
 - [Master Directory Map](MASTER_DIRECTORY_MAP.md)
+- [Repository Onboarding Guide](docs/onboarding/REPOSITORY_ONBOARDING_GUIDE.md)
 
 ## Project Control
 
@@ -35,6 +36,8 @@ Use it as a first stop before adding new project content.
 ## ClimateOS Core
 
 - [ClimateOS Core](01_CLIMATEOS_CORE/README.md)
+- [ClimateOS Master Architecture](01_CLIMATEOS_CORE/master_architecture/README.md)
+- [ClimateOS Maturity Framework](01_CLIMATEOS_CORE/governance_layer/maturity_framework/README.md)
 - [Observation Layer](01_CLIMATEOS_CORE/observation_layer/README.md)
 - [Relationship Layer](01_CLIMATEOS_CORE/relationship_layer/README.md)
 - [Radar Layer](01_CLIMATEOS_CORE/radar_layer/README.md)
@@ -43,6 +46,10 @@ Use it as a first stop before adding new project content.
 - [Integration Layer](01_CLIMATEOS_CORE/integration_layer/README.md)
 - [NASA Earthdata Framework](01_CLIMATEOS_CORE/external_data_layer/nasa_earthdata/README.md)
 - [Multi-Source Observation Framework](01_CLIMATEOS_CORE/external_data_layer/multi_source_framework/README.md)
+- [Participation and Cultivation Layer](01_CLIMATEOS_CORE/participation_and_cultivation_layer/README.md)
+- [EcoChain Foundation](02_ECOCHAIN_FOUNDATION/README.md)
+- [Evidence Asset Framework](02_ECOCHAIN_FOUNDATION/evidence_asset_framework/README.md)
+- [Language-to-Evidence Protocol](02_ECOCHAIN_FOUNDATION/language_to_evidence_protocol/README.md)
 
 ## Subsystems
 
@@ -60,9 +67,34 @@ Use it as a first stop before adding new project content.
 
 ## Demonstrations And Documentation
 
+- [Governance Docs](docs/governance/README.md)
+- [Docs Index](docs/README.md)
+- [Radar Docs](docs/radar/README.md)
+- [Task Docs](docs/tasks/README.md)
+- [Observation Docs](docs/observation/README.md)
+- [Validation Docs](docs/validation/README.md)
+- [Skills Roadmap](docs/skills/CLIMATEOS_SKILLS_ROADMAP.md)
 - [Demonstrations](14_DEMONSTRATIONS/README.md)
 - [Documentation](15_DOCUMENTATION/README.md)
 - [Release Package](docs/08_RELEASES/README.md)
+
+## Active Tasks
+
+- Repository Operating System Bootstrap: establishes docs governance,
+  maintainability structures, templates, onboarding, and future skills roadmap.
+
+## Completed Tasks
+
+- [Completed Task Summary](docs/tasks/COMPLETED_TASKS.md)
+- [Canonical Task Index](00_PROJECT_CONTROL/TASK_INDEX.md)
+
+## Future Roadmap
+
+- Strengthen layer status tracking across ClimateOS core.
+- Convert selected templates into reviewed examples.
+- Define future skill implementation plans only after documentation boundaries
+  are stable.
+- Maintain provider independence, engine independence, and human review.
 
 ## Current Principle
 

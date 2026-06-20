@@ -6,14 +6,15 @@ ClimateOS
 
 ## Positioning
 
-ClimateOS is an evolving Earth System Governance Runtime architecture.
+ClimateOS is an evolving Earth System Governance Runtime architecture and a
+Reality-to-Evidence Engineering Runtime architecture.
 
 It is not a dashboard, reporting platform, NASA data viewer, carbon accounting
 tool, completed system, or finished software application.
 
 ClimateOS is being built as a structured repository and framework for moving
-from observed environmental reality toward evidence, validation, governance,
-and future Proof of Reality systems.
+from Natural Reality, Operational Reality, and Governance Reality toward
+evidence, validation, governance, and future Proof of Reality systems.
 
 ## Primary Audience
 
@@ -31,23 +32,25 @@ and future Proof of Reality systems.
 
 ## Problem
 
-Environmental systems are observed through many disconnected sources:
-satellites, weather agencies, sensors, community notes, local projects, field
-records, and future scientific engines.
+Reality is observed through many disconnected sources: satellites, weather
+agencies, sensors, community notes, local projects, field records, governance
+records, operational records, and future scientific engines.
 
 These observations often remain isolated. They are difficult to connect into
 relationships, evidence, validation history, governance language, or long-term
 decision memory.
 
-ClimateOS addresses the architecture gap between environmental observation and
-governed response.
+ClimateOS addresses the architecture gap between reality data, evidence,
+validation history, and governed response.
 
 ## Vision
 
 ClimateOS provides an Earth System Governance Runtime architecture that connects:
 
 ```text
-External Observation Sources
+Natural Reality + Operational Reality + Governance Reality
+-> Reality Data Assets
+-> External Observation Sources
 -> Observation Layer
 -> Relationship Layer
 -> Radar Layer
@@ -89,6 +92,16 @@ search engine, news feed, alert engine, or monitoring implementation.
 Evidence is not raw data, a document, or a report. Evidence is a synthesized
 relationship structure that can be reviewed and strengthened or weakened over
 time.
+
+### Reality Data Assets
+
+Reality Data Assets are records generated from Natural Reality, Operational
+Reality, and Governance Reality.
+
+### Evidence Assets
+
+Evidence Assets combine Reality, Data, Evidence, Context, Validation, History,
+and Confidence.
 
 ### Validation
 
@@ -149,6 +162,9 @@ The repository currently includes:
 - ClimateOS observation, relationship, radar, evidence, validation,
   integration, and external data framework foundations
 - Multi-source observation provider framework foundation
+- Participation and cultivation framework foundation
+- Maturity, master architecture, EcoChain, Evidence Asset, and
+  Language-to-Evidence foundation documents
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -160,7 +176,8 @@ Planned work includes:
   engine use
 - Provider-neutral observation record conversion concepts
 - Evidence and validation history structures
-- Governance translation and Proof of Reality foundations
+- Governance translation and Proof of Reality examples
+- Reviewed sample Reality Data Asset and Evidence Asset records
 
 ## Vision, Not Yet Implemented
 
@@ -173,6 +190,7 @@ The following should not be described as existing capability:
 - Forecasting
 - Machine learning
 - Blockchain implementation
+- Token model or smart contracts
 - Regulatory compliance engine
 - Automated governance decisions
 - Financial, insurance, investment, or RWA products
