@@ -182,6 +182,8 @@ The repository currently includes:
   Language-to-Evidence foundation documents
 - Proof of Reality foundation documents
 - Earth-System RDA framework foundation and RDA pattern references
+- Earth-System RWA Alignment framework foundation and cautionary pattern
+  references
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -196,7 +198,7 @@ Planned work includes:
 - Governance translation and Proof of Reality examples
 - Task100 future validation architecture concepts
 - Reviewed sample Reality Data Asset and Evidence Asset records
-- Task70 RWA Alignment Framework
+- reviewed examples of RWA Alignment Candidates
 
 ## Vision, Not Yet Implemented
 
@@ -213,6 +215,7 @@ The following should not be described as existing capability:
 - Regulatory compliance engine
 - Automated governance decisions
 - Financial, insurance, investment, or RWA products
+- RWA tokenization or trading systems
 
 ## Product Requirements
 
