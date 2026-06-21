@@ -36,6 +36,7 @@ Use it as a first stop before adding new project content.
 ## ClimateOS Core
 
 - [ClimateOS Core](01_CLIMATEOS_CORE/README.md)
+- [ClimateOS Foundation Consolidation](01_CLIMATEOS_CORE/foundation_consolidation/README.md)
 - [ClimateOS Master Architecture](01_CLIMATEOS_CORE/master_architecture/README.md)
 - [ClimateOS Maturity Framework](01_CLIMATEOS_CORE/governance_layer/maturity_framework/README.md)
 - [Observation Layer](01_CLIMATEOS_CORE/observation_layer/README.md)
@@ -85,8 +86,8 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- Repository Operating System Bootstrap: establishes docs governance,
-  maintainability structures, templates, onboarding, and future skills roadmap.
+- No active task is currently selected. Task72 should wait for explicit user
+  approval.
 
 ## Completed Tasks
 
@@ -96,6 +97,8 @@ Use it as a first stop before adding new project content.
 ## Future Roadmap
 
 - Strengthen layer status tracking across ClimateOS core.
+- Use the Task71 foundation consolidation to scope Task72 and Task100
+  preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.

@@ -22,6 +22,7 @@ observation, validation, task tracking, release records, and future skills.
 - [Release Package](08_RELEASES/README.md)
 - [Architecture Map](README_ARCHITECTURE_MAP.md)
 - [Project Principles](project-principles.md)
+- [ClimateOS Foundation Consolidation](../01_CLIMATEOS_CORE/foundation_consolidation/README.md)
 
 ## Root References
 

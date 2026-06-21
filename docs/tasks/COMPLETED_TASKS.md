@@ -25,6 +25,11 @@ The canonical task list remains
 - Task64: NASA Earthdata integration framework foundation
 - Task65: Multi-source observation provider framework foundation
 - Task66: Participation and cultivation framework foundation
+- Task67: ClimateOS maturity, EcoChain, Evidence Asset, and language-to-evidence foundation
+- Task68: Proof of Reality foundation
+- Task69: Earth-System RDA framework foundation
+- Task70: Earth-System RWA Alignment framework foundation
+- Task71: ClimateOS Foundation Phase consolidation
 
 ## Boundary
 

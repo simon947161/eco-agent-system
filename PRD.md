@@ -184,6 +184,7 @@ The repository currently includes:
 - Earth-System RDA framework foundation and RDA pattern references
 - Earth-System RWA Alignment framework foundation and cautionary pattern
   references
+- ClimateOS Foundation Phase consolidation covering Task58 through Task70
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -197,6 +198,7 @@ Planned work includes:
 - Evidence and validation history structures
 - Governance translation and Proof of Reality examples
 - Task100 future validation architecture concepts
+- Task71 consolidation review outputs as the basis for next-phase planning
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates
 
