@@ -98,6 +98,12 @@ time.
 Reality Data Assets are records generated from Natural Reality, Operational
 Reality, and Governance Reality.
 
+Earth-System Related RDA also includes planning reality, infrastructure,
+resource-flow, energy, water, land, agriculture, carbon, ESG, and operational
+process records when they remain traceable to real-world reality.
+
+Forecast outputs are Forecast Candidates, not truth, until validated.
+
 ### Evidence Assets
 
 Evidence Assets combine Reality, Data, Evidence, Context, Validation, History,
@@ -175,6 +181,7 @@ The repository currently includes:
 - Maturity, master architecture, EcoChain, Evidence Asset, and
   Language-to-Evidence foundation documents
 - Proof of Reality foundation documents
+- Earth-System RDA framework foundation and RDA pattern references
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -189,6 +196,7 @@ Planned work includes:
 - Governance translation and Proof of Reality examples
 - Task100 future validation architecture concepts
 - Reviewed sample Reality Data Asset and Evidence Asset records
+- Task70 RWA Alignment Framework
 
 ## Vision, Not Yet Implemented
 

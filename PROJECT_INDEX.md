@@ -44,6 +44,7 @@ Use it as a first stop before adding new project content.
 - [Evidence Layer](01_CLIMATEOS_CORE/evidence_layer/README.md)
 - [Validation Layer](01_CLIMATEOS_CORE/validation_layer/README.md)
 - [Proof of Reality Layer](01_CLIMATEOS_CORE/proof_of_reality_layer/README.md)
+- [Earth-System RDA Layer](01_CLIMATEOS_CORE/rda_layer/README.md)
 - [Integration Layer](01_CLIMATEOS_CORE/integration_layer/README.md)
 - [NASA Earthdata Framework](01_CLIMATEOS_CORE/external_data_layer/nasa_earthdata/README.md)
 - [Multi-Source Observation Framework](01_CLIMATEOS_CORE/external_data_layer/multi_source_framework/README.md)
@@ -51,6 +52,7 @@ Use it as a first stop before adding new project content.
 - [EcoChain Foundation](02_ECOCHAIN_FOUNDATION/README.md)
 - [Evidence Asset Framework](02_ECOCHAIN_FOUNDATION/evidence_asset_framework/README.md)
 - [Language-to-Evidence Protocol](02_ECOCHAIN_FOUNDATION/language_to_evidence_protocol/README.md)
+- [RDA Pattern References](resources/rda_patterns/README.md)
 
 ## Subsystems
 
