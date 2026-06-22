@@ -47,6 +47,7 @@ Use it as a first stop before adding new project content.
 - [Proof of Reality Layer](01_CLIMATEOS_CORE/proof_of_reality_layer/README.md)
 - [Earth-System RDA Layer](01_CLIMATEOS_CORE/rda_layer/README.md)
 - [Earth-System RWA Alignment Layer](01_CLIMATEOS_CORE/rwa_alignment_layer/README.md)
+- [Forecast Planning Plugin Framework](01_CLIMATEOS_CORE/planning_layer/forecast_plugin_framework/README.md)
 - [Integration Layer](01_CLIMATEOS_CORE/integration_layer/README.md)
 - [NASA Earthdata Framework](01_CLIMATEOS_CORE/external_data_layer/nasa_earthdata/README.md)
 - [Multi-Source Observation Framework](01_CLIMATEOS_CORE/external_data_layer/multi_source_framework/README.md)
@@ -56,6 +57,7 @@ Use it as a first stop before adding new project content.
 - [Language-to-Evidence Protocol](02_ECOCHAIN_FOUNDATION/language_to_evidence_protocol/README.md)
 - [RDA Pattern References](resources/rda_patterns/README.md)
 - [RWA Alignment Pattern References](resources/rwa_alignment_patterns/README.md)
+- [Forecast Model Resources](resources/forecast_models/README.md)
 
 ## Subsystems
 
@@ -86,7 +88,7 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task72 should wait for explicit user
+- No active task is currently selected. Task73 should wait for explicit user
   approval.
 
 ## Completed Tasks
@@ -97,7 +99,7 @@ Use it as a first stop before adding new project content.
 ## Future Roadmap
 
 - Strengthen layer status tracking across ClimateOS core.
-- Use the Task71 foundation consolidation to scope Task72 and Task100
+- Use the Task71 foundation consolidation and Task72 forecast framework to scope Task100
   preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries

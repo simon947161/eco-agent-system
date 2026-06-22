@@ -30,6 +30,7 @@ The canonical task list remains
 - Task69: Earth-System RDA framework foundation
 - Task70: Earth-System RWA Alignment framework foundation
 - Task71: ClimateOS Foundation Phase consolidation
+- Task72: Forecast Resource Library and Planning Plugin Framework foundation
 
 ## Boundary
 

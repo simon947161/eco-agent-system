@@ -23,6 +23,8 @@ observation, validation, task tracking, release records, and future skills.
 - [Architecture Map](README_ARCHITECTURE_MAP.md)
 - [Project Principles](project-principles.md)
 - [ClimateOS Foundation Consolidation](../01_CLIMATEOS_CORE/foundation_consolidation/README.md)
+- [Forecast Planning Plugin Framework](../01_CLIMATEOS_CORE/planning_layer/forecast_plugin_framework/README.md)
+- [Forecast Model Resources](../resources/forecast_models/README.md)
 
 ## Root References
 
