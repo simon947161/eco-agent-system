@@ -192,6 +192,8 @@ The repository currently includes:
   providers and adapters
 - Knowledge Workflow foundation connecting observation, CRP, knowledge,
   evidence, validation, planning, and future runtime context
+- Knowledge Registry foundation for conceptual Knowledge Object inventory,
+  metadata, relationships, status, and review readiness
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -211,6 +213,7 @@ Planned work includes:
 - reviewed Knowledge Object examples and knowledge citation examples
 - reviewed Knowledge Provider registry and adapter examples
 - reviewed Knowledge Workflow examples from CRP to validation and planning
+- reviewed Knowledge Registry example entries and registry relationship examples
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates
 
@@ -230,6 +233,7 @@ The following should not be described as existing capability:
 - Obsidian automation
 - knowledge provider synchronization implementation
 - workflow engine or automated knowledge routing
+- registry database, search runtime, or LLM registry retrieval
 - Machine learning
 - Blockchain implementation
 - Token model or smart contracts

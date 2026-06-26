@@ -26,6 +26,7 @@ observation, validation, task tracking, release records, and future skills.
 - [Knowledge Runtime](../01_CLIMATEOS_CORE/knowledge_runtime/README.md)
 - [Knowledge Provider Layer](../01_CLIMATEOS_CORE/knowledge_provider_layer/README.md)
 - [Knowledge Workflow Layer](../01_CLIMATEOS_CORE/knowledge_workflow_layer/README.md)
+- [Knowledge Registry Layer](../01_CLIMATEOS_CORE/knowledge_registry_layer/README.md)
 - [Forecast Planning Plugin Framework](../01_CLIMATEOS_CORE/planning_layer/forecast_plugin_framework/README.md)
 - [Forecast Model Resources](../resources/forecast_models/README.md)
 

@@ -34,6 +34,7 @@ The canonical task list remains
 - Task73: ClimateOS Knowledge Interface foundation
 - Task74: ClimateOS Knowledge Provider Interface foundation
 - Task75: ClimateOS Knowledge Workflow foundation
+- Task76: ClimateOS Knowledge Registry foundation
 
 ## Boundary
 
