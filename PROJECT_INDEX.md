@@ -83,6 +83,7 @@ Use it as a first stop before adding new project content.
 - [Docs Index](docs/README.md)
 - [Radar Docs](docs/radar/README.md)
 - [Task Docs](docs/tasks/README.md)
+- [Batch 14 Knowledge Foundation Completion Review](docs/tasks/BATCH14_KNOWLEDGE_FOUNDATION_COMPLETION_REVIEW.md)
 - [Observation Docs](docs/observation/README.md)
 - [Validation Docs](docs/validation/README.md)
 - [Skills Roadmap](docs/skills/CLIMATEOS_SKILLS_ROADMAP.md)

@@ -20,6 +20,7 @@ observation, validation, task tracking, release records, and future skills.
 ## Existing Documentation Areas
 
 - [Release Package](08_RELEASES/README.md)
+- [Batch 14 Knowledge Foundation Completion Review](tasks/BATCH14_KNOWLEDGE_FOUNDATION_COMPLETION_REVIEW.md)
 - [Architecture Map](README_ARCHITECTURE_MAP.md)
 - [Project Principles](project-principles.md)
 - [ClimateOS Foundation Consolidation](../01_CLIMATEOS_CORE/foundation_consolidation/README.md)
