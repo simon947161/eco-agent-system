@@ -190,6 +190,8 @@ The repository currently includes:
   Knowledge Objects
 - Knowledge Provider Interface foundation for platform-independent knowledge
   providers and adapters
+- Knowledge Workflow foundation connecting observation, CRP, knowledge,
+  evidence, validation, planning, and future runtime context
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -208,6 +210,7 @@ Planned work includes:
 - reviewed Forecast Candidate examples and forecast validation review examples
 - reviewed Knowledge Object examples and knowledge citation examples
 - reviewed Knowledge Provider registry and adapter examples
+- reviewed Knowledge Workflow examples from CRP to validation and planning
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates
 
@@ -226,6 +229,7 @@ The following should not be described as existing capability:
 - vector database or embeddings implementation
 - Obsidian automation
 - knowledge provider synchronization implementation
+- workflow engine or automated knowledge routing
 - Machine learning
 - Blockchain implementation
 - Token model or smart contracts

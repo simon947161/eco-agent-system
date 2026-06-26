@@ -33,6 +33,7 @@ The canonical task list remains
 - Task72: Forecast Resource Library and Planning Plugin Framework foundation
 - Task73: ClimateOS Knowledge Interface foundation
 - Task74: ClimateOS Knowledge Provider Interface foundation
+- Task75: ClimateOS Knowledge Workflow foundation
 
 ## Boundary
 

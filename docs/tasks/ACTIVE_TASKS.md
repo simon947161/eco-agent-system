@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Waiting | Task75 should wait for explicit user approval. |
+| None | Waiting | Task76 should wait for explicit user approval. |
 
 ## Recently Completed Local Work
 
@@ -22,6 +22,7 @@ For the canonical record, use the
 | Task72 | Completed | Forecast Resource Library and Planning Plugin Framework foundation created. |
 | Task73 | Completed | Knowledge Runtime and Knowledge Interface foundation created. |
 | Task74 | Completed | Knowledge Provider Interface foundation created. |
+| Task75 | Completed | Knowledge Workflow foundation created. |
 
 ## Boundary
 
