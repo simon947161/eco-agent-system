@@ -196,6 +196,9 @@ The repository currently includes:
   metadata, relationships, status, and review readiness
 - Future Obsidian Bridge foundation for provider-independent knowledge bridge
   architecture and future local knowledge synchronization concepts
+- Earth Intelligence Interface foundation for provider-neutral observation,
+  simulation, forecast, digital twin, evidence, planning, validation, and
+  governance interface concepts
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -218,6 +221,7 @@ Planned work includes:
 - reviewed Knowledge Registry example entries and registry relationship examples
 - reviewed Knowledge Bridge examples for future Obsidian, GitHub, local
   Markdown, MCP, and enterprise knowledge compatibility
+- reviewed Earth Intelligence provider capability and selection examples
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates
 
@@ -239,6 +243,8 @@ The following should not be described as existing capability:
 - workflow engine or automated knowledge routing
 - registry database, search runtime, or LLM registry retrieval
 - Obsidian bridge implementation or knowledge synchronization engine
+- Earth intelligence provider integration, authentication, downloaded data, or
+  simulation runtime
 - Machine learning
 - Blockchain implementation
 - Token model or smart contracts

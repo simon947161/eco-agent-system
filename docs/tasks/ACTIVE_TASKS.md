@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Waiting | Task78 should wait for explicit user approval. |
+| None | Waiting | Batch16 / Task79 should wait for explicit user approval. |
 
 ## Recently Completed Local Work
 
@@ -25,6 +25,7 @@ For the canonical record, use the
 | Task75 | Completed | Knowledge Workflow foundation created. |
 | Task76 | Completed | Knowledge Registry foundation created. |
 | Task77 | Completed | Future Obsidian Bridge foundation created. |
+| Task78 | Completed | Earth Intelligence Interface foundation created. |
 
 ## Boundary
 

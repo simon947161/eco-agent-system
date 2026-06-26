@@ -36,6 +36,7 @@ The canonical task list remains
 - Task75: ClimateOS Knowledge Workflow foundation
 - Task76: ClimateOS Knowledge Registry foundation
 - Task77: Future Obsidian Bridge foundation
+- Task78: Earth Intelligence Interface foundation
 
 ## Boundary
 
