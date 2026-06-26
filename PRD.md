@@ -188,6 +188,8 @@ The repository currently includes:
 - Forecast Resource Library and Forecast Planning Plugin Framework foundation
 - Knowledge Runtime / Knowledge Interface foundation for storage-independent
   Knowledge Objects
+- Knowledge Provider Interface foundation for platform-independent knowledge
+  providers and adapters
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -205,6 +207,7 @@ Planned work includes:
 - Task100 forecast validation architecture concepts
 - reviewed Forecast Candidate examples and forecast validation review examples
 - reviewed Knowledge Object examples and knowledge citation examples
+- reviewed Knowledge Provider registry and adapter examples
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates
 
@@ -222,6 +225,7 @@ The following should not be described as existing capability:
 - LLM retrieval implementation
 - vector database or embeddings implementation
 - Obsidian automation
+- knowledge provider synchronization implementation
 - Machine learning
 - Blockchain implementation
 - Token model or smart contracts

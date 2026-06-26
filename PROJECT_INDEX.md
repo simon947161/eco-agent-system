@@ -40,6 +40,7 @@ Use it as a first stop before adding new project content.
 - [ClimateOS Master Architecture](01_CLIMATEOS_CORE/master_architecture/README.md)
 - [ClimateOS Maturity Framework](01_CLIMATEOS_CORE/governance_layer/maturity_framework/README.md)
 - [Knowledge Runtime](01_CLIMATEOS_CORE/knowledge_runtime/README.md)
+- [Knowledge Provider Layer](01_CLIMATEOS_CORE/knowledge_provider_layer/README.md)
 - [Observation Layer](01_CLIMATEOS_CORE/observation_layer/README.md)
 - [Relationship Layer](01_CLIMATEOS_CORE/relationship_layer/README.md)
 - [Radar Layer](01_CLIMATEOS_CORE/radar_layer/README.md)
@@ -89,7 +90,7 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task74 should wait for explicit user
+- No active task is currently selected. Task75 should wait for explicit user
   approval.
 
 ## Completed Tasks
@@ -100,8 +101,8 @@ Use it as a first stop before adding new project content.
 ## Future Roadmap
 
 - Strengthen layer status tracking across ClimateOS core.
-- Use Task71 foundation consolidation, Task72 forecast framework, and Task73
-  knowledge runtime to scope Task100 preparation.
+- Use Task71 foundation consolidation, Task72 forecast framework, Task73
+  knowledge runtime, and Task74 provider interface to scope Task100 preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.

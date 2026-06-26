@@ -32,6 +32,7 @@ The canonical task list remains
 - Task71: ClimateOS Foundation Phase consolidation
 - Task72: Forecast Resource Library and Planning Plugin Framework foundation
 - Task73: ClimateOS Knowledge Interface foundation
+- Task74: ClimateOS Knowledge Provider Interface foundation
 
 ## Boundary
 
