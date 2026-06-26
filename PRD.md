@@ -186,6 +186,8 @@ The repository currently includes:
   references
 - ClimateOS Foundation Phase consolidation covering Task58 through Task70
 - Forecast Resource Library and Forecast Planning Plugin Framework foundation
+- Knowledge Runtime / Knowledge Interface foundation for storage-independent
+  Knowledge Objects
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -202,6 +204,7 @@ Planned work includes:
 - Task71 consolidation review outputs as the basis for next-phase planning
 - Task100 forecast validation architecture concepts
 - reviewed Forecast Candidate examples and forecast validation review examples
+- reviewed Knowledge Object examples and knowledge citation examples
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates
 
@@ -216,6 +219,9 @@ The following should not be described as existing capability:
 - Forecasting
 - Forecast model execution
 - Forecast provider API integration
+- LLM retrieval implementation
+- vector database or embeddings implementation
+- Obsidian automation
 - Machine learning
 - Blockchain implementation
 - Token model or smart contracts
