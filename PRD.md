@@ -194,6 +194,8 @@ The repository currently includes:
   evidence, validation, planning, and future runtime context
 - Knowledge Registry foundation for conceptual Knowledge Object inventory,
   metadata, relationships, status, and review readiness
+- Future Obsidian Bridge foundation for provider-independent knowledge bridge
+  architecture and future local knowledge synchronization concepts
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -214,6 +216,8 @@ Planned work includes:
 - reviewed Knowledge Provider registry and adapter examples
 - reviewed Knowledge Workflow examples from CRP to validation and planning
 - reviewed Knowledge Registry example entries and registry relationship examples
+- reviewed Knowledge Bridge examples for future Obsidian, GitHub, local
+  Markdown, MCP, and enterprise knowledge compatibility
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates
 
@@ -234,6 +238,7 @@ The following should not be described as existing capability:
 - knowledge provider synchronization implementation
 - workflow engine or automated knowledge routing
 - registry database, search runtime, or LLM registry retrieval
+- Obsidian bridge implementation or knowledge synchronization engine
 - Machine learning
 - Blockchain implementation
 - Token model or smart contracts

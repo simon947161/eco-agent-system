@@ -43,6 +43,7 @@ Use it as a first stop before adding new project content.
 - [Knowledge Provider Layer](01_CLIMATEOS_CORE/knowledge_provider_layer/README.md)
 - [Knowledge Workflow Layer](01_CLIMATEOS_CORE/knowledge_workflow_layer/README.md)
 - [Knowledge Registry Layer](01_CLIMATEOS_CORE/knowledge_registry_layer/README.md)
+- [Knowledge Bridge Layer](01_CLIMATEOS_CORE/knowledge_bridge_layer/README.md)
 - [Observation Layer](01_CLIMATEOS_CORE/observation_layer/README.md)
 - [Relationship Layer](01_CLIMATEOS_CORE/relationship_layer/README.md)
 - [Radar Layer](01_CLIMATEOS_CORE/radar_layer/README.md)
@@ -93,7 +94,7 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task77 should wait for explicit user
+- No active task is currently selected. Task78 should wait for explicit user
   approval.
 
 ## Completed Tasks
@@ -106,7 +107,8 @@ Use it as a first stop before adding new project content.
 - Strengthen layer status tracking across ClimateOS core.
 - Use Task71 foundation consolidation, Task72 forecast framework, Task73
   knowledge runtime, Task74 provider interface, Task75 knowledge workflow, and
-  Task76 knowledge registry to scope Task100 preparation.
+  Task76 knowledge registry, and Task77 knowledge bridge to scope Task100
+  preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.
