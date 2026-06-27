@@ -48,6 +48,7 @@ The canonical task list remains
 - Task87: Evidence Asset Validation Framework foundation
 - Task88: EcoChain Readiness Framework foundation
 - Task89: Scenario Planning Validation Framework foundation
+- Task90: Validation Phase Consolidation foundation
 
 ## Boundary
 

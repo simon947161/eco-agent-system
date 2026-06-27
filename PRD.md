@@ -232,6 +232,9 @@ The repository currently includes:
 - Scenario Planning Validation foundation defining how ClimateOS validates
   scenario outputs, forecast candidates, assumptions, confidence, revision, and
   recommendation candidates before governance use
+- Validation Phase Consolidation foundation organizing Task79 through Task90
+  into the first complete Validation Foundation overview and Task100 readiness
+  path
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
