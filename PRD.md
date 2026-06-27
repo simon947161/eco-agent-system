@@ -207,6 +207,9 @@ The repository currently includes:
 - Evidence-weighted Collective Validation foundation for trustworthy collective
   judgment across reality, evidence, humans, AI agents, Earth Intelligence, and
   future contributors
+- Confidence and Consensus Framework foundation for representing confidence,
+  uncertainty, consensus, disagreement, escalation, minority signals, and
+  confidence updates without treating consensus as truth
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned

@@ -40,6 +40,7 @@ The canonical task list remains
 - Task79: ClimateOS Knowledge Validation Preparation foundation
 - Task80: ClimateOS Validation Runtime Preparation foundation
 - Task81: Evidence-weighted Collective Validation foundation
+- Task82: Confidence and Consensus Framework foundation
 
 ## Boundary
 
