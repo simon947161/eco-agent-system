@@ -33,6 +33,7 @@ For the canonical record, use the
 | Task83 | Completed | ClimateOS Review Engine foundation created. |
 | Task84 | Completed | ClimateOS Review Workflow foundation created. |
 | Task85 | Completed | Evidence Package Review Framework foundation created. |
+| Task86 | Completed | Proof Record and Reality Claim Review Framework foundation created. |
 
 ## Boundary
 

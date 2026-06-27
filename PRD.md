@@ -220,6 +220,9 @@ The repository currently includes:
 - Evidence Package Review foundation defining how ClimateOS evaluates whether
   an Evidence Package is complete, traceable, contextualized, reviewable, and
   ready to participate in Review without declaring absolute truth
+- Proof Record and Reality Claim Review foundation defining how ClimateOS
+  reviews living Reality Claims and Proof Records that may strengthen, weaken,
+  remain unresolved, reopen, split, or merge as evidence evolves
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned

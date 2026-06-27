@@ -44,6 +44,7 @@ The canonical task list remains
 - Task83: ClimateOS Review Engine foundation
 - Task84: ClimateOS Review Workflow foundation
 - Task85: Evidence Package Review Framework foundation
+- Task86: Proof Record and Reality Claim Review Framework foundation
 
 ## Boundary
 
