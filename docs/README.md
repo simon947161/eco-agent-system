@@ -22,6 +22,7 @@ observation, validation, task tracking, release records, and future skills.
 - [Release Package](08_RELEASES/README.md)
 - [Batch 14 Knowledge Foundation Completion Review](tasks/BATCH14_KNOWLEDGE_FOUNDATION_COMPLETION_REVIEW.md)
 - [Batch 15 Earth Intelligence Foundation Completion Review](tasks/BATCH15_EARTH_INTELLIGENCE_FOUNDATION_COMPLETION_REVIEW.md)
+- [Batch 16 Validation Preparation Completion Review](tasks/BATCH16_VALIDATION_PREPARATION_COMPLETION_REVIEW.md)
 - [Architecture Map](README_ARCHITECTURE_MAP.md)
 - [Project Principles](project-principles.md)
 - [ClimateOS Foundation Consolidation](../01_CLIMATEOS_CORE/foundation_consolidation/README.md)

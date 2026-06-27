@@ -89,6 +89,7 @@ Use it as a first stop before adding new project content.
 - [Task Docs](docs/tasks/README.md)
 - [Batch 14 Knowledge Foundation Completion Review](docs/tasks/BATCH14_KNOWLEDGE_FOUNDATION_COMPLETION_REVIEW.md)
 - [Batch 15 Earth Intelligence Foundation Completion Review](docs/tasks/BATCH15_EARTH_INTELLIGENCE_FOUNDATION_COMPLETION_REVIEW.md)
+- [Batch 16 Validation Preparation Completion Review](docs/tasks/BATCH16_VALIDATION_PREPARATION_COMPLETION_REVIEW.md)
 - [Observation Docs](docs/observation/README.md)
 - [Validation Docs](docs/validation/README.md)
 - [Skills Roadmap](docs/skills/CLIMATEOS_SKILLS_ROADMAP.md)

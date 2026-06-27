@@ -14,6 +14,7 @@ human-friendly task summaries and working templates.
 - [Completed Tasks](COMPLETED_TASKS.md)
 - [Batch 14 Knowledge Foundation Completion Review](BATCH14_KNOWLEDGE_FOUNDATION_COMPLETION_REVIEW.md)
 - [Batch 15 Earth Intelligence Foundation Completion Review](BATCH15_EARTH_INTELLIGENCE_FOUNDATION_COMPLETION_REVIEW.md)
+- [Batch 16 Validation Preparation Completion Review](BATCH16_VALIDATION_PREPARATION_COMPLETION_REVIEW.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
