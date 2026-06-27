@@ -36,6 +36,7 @@ observation, validation, task tracking, release records, and future skills.
 - [Knowledge Registry Layer](../01_CLIMATEOS_CORE/knowledge_registry_layer/README.md)
 - [Knowledge Bridge Layer](../01_CLIMATEOS_CORE/knowledge_bridge_layer/README.md)
 - [Knowledge Validation Layer](../01_CLIMATEOS_CORE/knowledge_validation_layer/README.md)
+- [Evidence Package Review Layer](../01_CLIMATEOS_CORE/evidence_package_review_layer/README.md)
 - [Collective Validation Layer](../01_CLIMATEOS_CORE/collective_validation_layer/README.md)
 - [Confidence Framework Layer](../01_CLIMATEOS_CORE/confidence_framework_layer/README.md)
 - [Review Engine Layer](../01_CLIMATEOS_CORE/review_engine_layer/README.md)

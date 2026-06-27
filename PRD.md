@@ -217,6 +217,9 @@ The repository currently includes:
   observation, knowledge, evidence, reality claims, cross validation, forecast
   candidates, confidence updates, conflict analysis, revision, integrated
   review, recommendation, and governance output
+- Evidence Package Review foundation defining how ClimateOS evaluates whether
+  an Evidence Package is complete, traceable, contextualized, reviewable, and
+  ready to participate in Review without declaring absolute truth
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned

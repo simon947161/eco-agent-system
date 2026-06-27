@@ -45,6 +45,7 @@ Use it as a first stop before adding new project content.
 - [Knowledge Registry Layer](01_CLIMATEOS_CORE/knowledge_registry_layer/README.md)
 - [Knowledge Bridge Layer](01_CLIMATEOS_CORE/knowledge_bridge_layer/README.md)
 - [Knowledge Validation Layer](01_CLIMATEOS_CORE/knowledge_validation_layer/README.md)
+- [Evidence Package Review Layer](01_CLIMATEOS_CORE/evidence_package_review_layer/README.md)
 - [Collective Validation Layer](01_CLIMATEOS_CORE/collective_validation_layer/README.md)
 - [Confidence Framework Layer](01_CLIMATEOS_CORE/confidence_framework_layer/README.md)
 - [Review Engine Layer](01_CLIMATEOS_CORE/review_engine_layer/README.md)
@@ -106,7 +107,7 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task85 should wait for explicit user
+- No active task is currently selected. Task86 should wait for explicit user
   approval.
 
 ## Completed Tasks
@@ -122,8 +123,8 @@ Use it as a first stop before adding new project content.
   Task76 knowledge registry, Task77 knowledge bridge, Task78 Earth Intelligence
   Interface, Task79 knowledge validation, Task80 validation runtime
   preparation, Task81 collective validation, Task82 confidence framework,
-  Task83 review engine, and Task84 review workflow to scope Task100
-  preparation.
+  Task83 review engine, Task84 review workflow, and Task85 evidence package
+  review to scope Task100 preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.

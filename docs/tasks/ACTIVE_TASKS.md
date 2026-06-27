@@ -32,6 +32,7 @@ For the canonical record, use the
 | Task82 | Completed | Confidence and Consensus Framework foundation created. |
 | Task83 | Completed | ClimateOS Review Engine foundation created. |
 | Task84 | Completed | ClimateOS Review Workflow foundation created. |
+| Task85 | Completed | Evidence Package Review Framework foundation created. |
 
 ## Boundary
 
