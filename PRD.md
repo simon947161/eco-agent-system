@@ -213,6 +213,10 @@ The repository currently includes:
 - ClimateOS Review Engine foundation defining ClimateOS itself as the
   evidence-driven reviewer, with humans, AI agents, Earth Intelligence,
   forecasts, observations, knowledge, and minority signals treated as inputs
+- ClimateOS Review Workflow foundation defining how review moves from
+  observation, knowledge, evidence, reality claims, cross validation, forecast
+  candidates, confidence updates, conflict analysis, revision, integrated
+  review, recommendation, and governance output
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned

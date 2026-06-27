@@ -42,6 +42,7 @@ The canonical task list remains
 - Task81: Evidence-weighted Collective Validation foundation
 - Task82: Confidence and Consensus Framework foundation
 - Task83: ClimateOS Review Engine foundation
+- Task84: ClimateOS Review Workflow foundation
 
 ## Boundary
 

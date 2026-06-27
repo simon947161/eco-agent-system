@@ -31,6 +31,7 @@ For the canonical record, use the
 | Task81 | Completed | Evidence-weighted Collective Validation foundation created. |
 | Task82 | Completed | Confidence and Consensus Framework foundation created. |
 | Task83 | Completed | ClimateOS Review Engine foundation created. |
+| Task84 | Completed | ClimateOS Review Workflow foundation created. |
 
 ## Boundary
 
