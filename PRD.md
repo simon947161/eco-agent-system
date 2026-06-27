@@ -223,6 +223,9 @@ The repository currently includes:
 - Proof Record and Reality Claim Review foundation defining how ClimateOS
   reviews living Reality Claims and Proof Records that may strengthen, weaken,
   remain unresolved, reopen, split, or merge as evidence evolves
+- Evidence Asset Validation foundation defining how ClimateOS evaluates living
+  Evidence Assets for readiness before EcoChain participation while keeping
+  validation and revision open
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned

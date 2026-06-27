@@ -47,6 +47,7 @@ Use it as a first stop before adding new project content.
 - [Knowledge Validation Layer](01_CLIMATEOS_CORE/knowledge_validation_layer/README.md)
 - [Evidence Package Review Layer](01_CLIMATEOS_CORE/evidence_package_review_layer/README.md)
 - [Proof Record Review Layer](01_CLIMATEOS_CORE/proof_record_review_layer/README.md)
+- [Evidence Asset Validation Layer](01_CLIMATEOS_CORE/evidence_asset_validation_layer/README.md)
 - [Collective Validation Layer](01_CLIMATEOS_CORE/collective_validation_layer/README.md)
 - [Confidence Framework Layer](01_CLIMATEOS_CORE/confidence_framework_layer/README.md)
 - [Review Engine Layer](01_CLIMATEOS_CORE/review_engine_layer/README.md)
@@ -110,7 +111,7 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task87 should wait for explicit user
+- No active task is currently selected. Task88 should wait for explicit user
   approval.
 
 ## Completed Tasks
@@ -127,7 +128,8 @@ Use it as a first stop before adding new project content.
   Interface, Task79 knowledge validation, Task80 validation runtime
   preparation, Task81 collective validation, Task82 confidence framework,
   Task83 review engine, Task84 review workflow, Task85 evidence package review,
-  and Task86 proof record review to scope Task100 preparation.
+  Task86 proof record review, and Task87 evidence asset validation to scope
+  Task100 preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.
