@@ -229,6 +229,9 @@ The repository currently includes:
 - EcoChain Readiness foundation defining how validated Evidence Assets may be
   prepared for EcoChain participation while ClimateOS continues review and
   revision after the current validated state is recorded
+- Scenario Planning Validation foundation defining how ClimateOS validates
+  scenario outputs, forecast candidates, assumptions, confidence, revision, and
+  recommendation candidates before governance use
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned

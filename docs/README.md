@@ -46,6 +46,7 @@ observation, validation, task tracking, release records, and future skills.
 - [Confidence Framework Layer](../01_CLIMATEOS_CORE/confidence_framework_layer/README.md)
 - [Review Engine Layer](../01_CLIMATEOS_CORE/review_engine_layer/README.md)
 - [Review Workflow Layer](../01_CLIMATEOS_CORE/review_workflow_layer/README.md)
+- [Scenario Validation Layer](../01_CLIMATEOS_CORE/scenario_validation_layer/README.md)
 - [Earth Intelligence Interface](../01_CLIMATEOS_CORE/earth_intelligence_interface/README.md)
 - [Validation Runtime Preparation](../01_CLIMATEOS_CORE/validation_runtime_preparation/README.md)
 - [Forecast Planning Plugin Framework](../01_CLIMATEOS_CORE/planning_layer/forecast_plugin_framework/README.md)

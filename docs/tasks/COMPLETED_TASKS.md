@@ -47,6 +47,7 @@ The canonical task list remains
 - Task86: Proof Record and Reality Claim Review Framework foundation
 - Task87: Evidence Asset Validation Framework foundation
 - Task88: EcoChain Readiness Framework foundation
+- Task89: Scenario Planning Validation Framework foundation
 
 ## Boundary
 
