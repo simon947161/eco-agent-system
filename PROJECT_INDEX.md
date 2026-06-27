@@ -104,6 +104,7 @@ Use it as a first stop before adding new project content.
 - [Batch 18 Review Engine Completion Review](docs/tasks/BATCH18_REVIEW_ENGINE_COMPLETION_REVIEW.md)
 - [Batch 19 Review Object Foundation Completion Review](docs/tasks/BATCH19_REVIEW_OBJECT_FOUNDATION_COMPLETION_REVIEW.md)
 - [Batch 20 Evidence Asset and EcoChain Readiness Review](docs/tasks/BATCH20_EVIDENCE_ASSET_AND_ECOCHAIN_READINESS_REVIEW.md)
+- [Batch 21 Validation Foundation Completion Review](docs/tasks/BATCH21_VALIDATION_FOUNDATION_COMPLETION_REVIEW.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Observation Docs](docs/observation/README.md)
