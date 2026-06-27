@@ -18,6 +18,7 @@ human-friendly task summaries and working templates.
 - [Batch 17 Collective Validation Completion Review](BATCH17_COLLECTIVE_VALIDATION_COMPLETION_REVIEW.md)
 - [Batch 18 Review Engine Completion Review](BATCH18_REVIEW_ENGINE_COMPLETION_REVIEW.md)
 - [Batch 19 Review Object Foundation Completion Review](BATCH19_REVIEW_OBJECT_FOUNDATION_COMPLETION_REVIEW.md)
+- [Batch 20 Evidence Asset and EcoChain Readiness Review](BATCH20_EVIDENCE_ASSET_AND_ECOCHAIN_READINESS_REVIEW.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
