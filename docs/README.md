@@ -16,6 +16,7 @@ observation, validation, task tracking, release records, and future skills.
 - [Validation](validation/README.md)
 - [Onboarding](onboarding/README.md)
 - [Skills](skills/README.md)
+- [Strategy](strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 
 ## Existing Documentation Areas
 
@@ -24,6 +25,8 @@ observation, validation, task tracking, release records, and future skills.
 - [Batch 15 Earth Intelligence Foundation Completion Review](tasks/BATCH15_EARTH_INTELLIGENCE_FOUNDATION_COMPLETION_REVIEW.md)
 - [Batch 16 Validation Preparation Completion Review](tasks/BATCH16_VALIDATION_PREPARATION_COMPLETION_REVIEW.md)
 - [Batch 17 Collective Validation Completion Review](tasks/BATCH17_COLLECTIVE_VALIDATION_COMPLETION_REVIEW.md)
+- [Batch 18 Review Engine Completion Review](tasks/BATCH18_REVIEW_ENGINE_COMPLETION_REVIEW.md)
+- [ClimateOS Review Engine Design Decision](strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Architecture Map](README_ARCHITECTURE_MAP.md)
 - [Project Principles](project-principles.md)
 - [ClimateOS Foundation Consolidation](../01_CLIMATEOS_CORE/foundation_consolidation/README.md)

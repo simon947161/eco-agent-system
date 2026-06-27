@@ -95,6 +95,8 @@ Use it as a first stop before adding new project content.
 - [Batch 15 Earth Intelligence Foundation Completion Review](docs/tasks/BATCH15_EARTH_INTELLIGENCE_FOUNDATION_COMPLETION_REVIEW.md)
 - [Batch 16 Validation Preparation Completion Review](docs/tasks/BATCH16_VALIDATION_PREPARATION_COMPLETION_REVIEW.md)
 - [Batch 17 Collective Validation Completion Review](docs/tasks/BATCH17_COLLECTIVE_VALIDATION_COMPLETION_REVIEW.md)
+- [Batch 18 Review Engine Completion Review](docs/tasks/BATCH18_REVIEW_ENGINE_COMPLETION_REVIEW.md)
+- [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Observation Docs](docs/observation/README.md)
 - [Validation Docs](docs/validation/README.md)
 - [Skills Roadmap](docs/skills/CLIMATEOS_SKILLS_ROADMAP.md)

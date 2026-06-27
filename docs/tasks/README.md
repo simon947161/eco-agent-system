@@ -16,6 +16,7 @@ human-friendly task summaries and working templates.
 - [Batch 15 Earth Intelligence Foundation Completion Review](BATCH15_EARTH_INTELLIGENCE_FOUNDATION_COMPLETION_REVIEW.md)
 - [Batch 16 Validation Preparation Completion Review](BATCH16_VALIDATION_PREPARATION_COMPLETION_REVIEW.md)
 - [Batch 17 Collective Validation Completion Review](BATCH17_COLLECTIVE_VALIDATION_COMPLETION_REVIEW.md)
+- [Batch 18 Review Engine Completion Review](BATCH18_REVIEW_ENGINE_COMPLETION_REVIEW.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
