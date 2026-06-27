@@ -210,6 +210,9 @@ The repository currently includes:
 - Confidence and Consensus Framework foundation for representing confidence,
   uncertainty, consensus, disagreement, escalation, minority signals, and
   confidence updates without treating consensus as truth
+- ClimateOS Review Engine foundation defining ClimateOS itself as the
+  evidence-driven reviewer, with humans, AI agents, Earth Intelligence,
+  forecasts, observations, knowledge, and minority signals treated as inputs
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
