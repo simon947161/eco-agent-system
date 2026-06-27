@@ -49,6 +49,7 @@ observation, validation, task tracking, release records, and future skills.
 - [Validation Runtime Preparation](../01_CLIMATEOS_CORE/validation_runtime_preparation/README.md)
 - [Forecast Planning Plugin Framework](../01_CLIMATEOS_CORE/planning_layer/forecast_plugin_framework/README.md)
 - [Forecast Model Resources](../resources/forecast_models/README.md)
+- [EcoChain Readiness Layer](../02_ECOCHAIN_FOUNDATION/ecochain_readiness_layer/README.md)
 
 ## Root References
 

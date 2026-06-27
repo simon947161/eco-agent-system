@@ -69,6 +69,7 @@ Use it as a first stop before adding new project content.
 - [Participation and Cultivation Layer](01_CLIMATEOS_CORE/participation_and_cultivation_layer/README.md)
 - [EcoChain Foundation](02_ECOCHAIN_FOUNDATION/README.md)
 - [Evidence Asset Framework](02_ECOCHAIN_FOUNDATION/evidence_asset_framework/README.md)
+- [EcoChain Readiness Layer](02_ECOCHAIN_FOUNDATION/ecochain_readiness_layer/README.md)
 - [Language-to-Evidence Protocol](02_ECOCHAIN_FOUNDATION/language_to_evidence_protocol/README.md)
 - [RDA Pattern References](resources/rda_patterns/README.md)
 - [RWA Alignment Pattern References](resources/rwa_alignment_patterns/README.md)
@@ -111,7 +112,7 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task88 should wait for explicit user
+- No active task is currently selected. Task89 should wait for explicit user
   approval.
 
 ## Completed Tasks
@@ -128,8 +129,8 @@ Use it as a first stop before adding new project content.
   Interface, Task79 knowledge validation, Task80 validation runtime
   preparation, Task81 collective validation, Task82 confidence framework,
   Task83 review engine, Task84 review workflow, Task85 evidence package review,
-  Task86 proof record review, and Task87 evidence asset validation to scope
-  Task100 preparation.
+  Task86 proof record review, Task87 evidence asset validation, and Task88
+  EcoChain readiness to scope Task100 preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.

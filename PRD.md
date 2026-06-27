@@ -226,6 +226,9 @@ The repository currently includes:
 - Evidence Asset Validation foundation defining how ClimateOS evaluates living
   Evidence Assets for readiness before EcoChain participation while keeping
   validation and revision open
+- EcoChain Readiness foundation defining how validated Evidence Assets may be
+  prepared for EcoChain participation while ClimateOS continues review and
+  revision after the current validated state is recorded
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned

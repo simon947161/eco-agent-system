@@ -35,6 +35,7 @@ For the canonical record, use the
 | Task85 | Completed | Evidence Package Review Framework foundation created. |
 | Task86 | Completed | Proof Record and Reality Claim Review Framework foundation created. |
 | Task87 | Completed | Evidence Asset Validation Framework foundation created. |
+| Task88 | Completed | EcoChain Readiness Framework foundation created. |
 
 ## Boundary
 

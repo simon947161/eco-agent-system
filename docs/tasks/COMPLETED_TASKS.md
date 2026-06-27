@@ -46,6 +46,7 @@ The canonical task list remains
 - Task85: Evidence Package Review Framework foundation
 - Task86: Proof Record and Reality Claim Review Framework foundation
 - Task87: Evidence Asset Validation Framework foundation
+- Task88: EcoChain Readiness Framework foundation
 
 ## Boundary
 

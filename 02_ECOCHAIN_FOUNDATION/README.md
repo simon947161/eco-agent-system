@@ -20,6 +20,7 @@ runtime implementation, APIs, or automated decisions.
 - [EcoChain System Map](ECOCHAIN_SYSTEM_MAP.md)
 - [Future Runtime Roadmap](FUTURE_RUNTIME_ROADMAP.md)
 - [Evidence Asset Framework](evidence_asset_framework/README.md)
+- [EcoChain Readiness Layer](ecochain_readiness_layer/README.md)
 - [Language-to-Evidence Protocol](language_to_evidence_protocol/README.md)
 
 ## Boundary
