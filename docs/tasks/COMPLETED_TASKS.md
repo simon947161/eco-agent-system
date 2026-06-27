@@ -39,6 +39,7 @@ The canonical task list remains
 - Task78: Earth Intelligence Interface foundation
 - Task79: ClimateOS Knowledge Validation Preparation foundation
 - Task80: ClimateOS Validation Runtime Preparation foundation
+- Task81: Evidence-weighted Collective Validation foundation
 
 ## Boundary
 

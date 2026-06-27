@@ -204,6 +204,9 @@ The repository currently includes:
 - Validation Runtime Preparation foundation for future validation architecture
   coordination across knowledge, reality claims, evidence, forecasts, RDA,
   Evidence Assets, human review, agent review, and governance outputs
+- Evidence-weighted Collective Validation foundation for trustworthy collective
+  judgment across reality, evidence, humans, AI agents, Earth Intelligence, and
+  future contributors
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -229,6 +232,7 @@ Planned work includes:
 - reviewed Earth Intelligence provider capability and selection examples
 - reviewed Knowledge Object readiness, conflict, and trust update examples
 - reviewed Validation Runtime preparation examples for Task100 architecture
+- reviewed Collective Validation examples using Direction Before Authority
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates
 
@@ -254,6 +258,8 @@ The following should not be described as existing capability:
   simulation runtime
 - automated knowledge validation or trust scoring runtime
 - validation runtime, scoring engine, or automated approval workflow
+- voting system, token-weighted governance, blockchain collective validation,
+  or automated collective judgment
 - Machine learning
 - Blockchain implementation
 - Token model or smart contracts
