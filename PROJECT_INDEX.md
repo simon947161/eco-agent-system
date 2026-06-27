@@ -107,6 +107,7 @@ Use it as a first stop before adding new project content.
 - [Batch 21 Validation Foundation Completion Review](docs/tasks/BATCH21_VALIDATION_FOUNDATION_COMPLETION_REVIEW.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
+- [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
 - [Observation Docs](docs/observation/README.md)
 - [Validation Docs](docs/validation/README.md)
 - [Skills Roadmap](docs/skills/CLIMATEOS_SKILLS_ROADMAP.md)

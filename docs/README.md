@@ -31,6 +31,7 @@ observation, validation, task tracking, release records, and future skills.
 - [Batch 21 Validation Foundation Completion Review](tasks/BATCH21_VALIDATION_FOUNDATION_COMPLETION_REVIEW.md)
 - [ClimateOS Review Engine Design Decision](strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
+- [Foundation Roadmap Stability Decision](strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
 - [Architecture Map](README_ARCHITECTURE_MAP.md)
 - [Project Principles](project-principles.md)
 - [ClimateOS Foundation Consolidation](../01_CLIMATEOS_CORE/foundation_consolidation/README.md)
