@@ -201,6 +201,9 @@ The repository currently includes:
   governance interface concepts
 - Knowledge Validation Preparation foundation for reviewing Knowledge Object
   readiness before evidence, planning, and future runtime use
+- Validation Runtime Preparation foundation for future validation architecture
+  coordination across knowledge, reality claims, evidence, forecasts, RDA,
+  Evidence Assets, human review, agent review, and governance outputs
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -225,6 +228,7 @@ Planned work includes:
   Markdown, MCP, and enterprise knowledge compatibility
 - reviewed Earth Intelligence provider capability and selection examples
 - reviewed Knowledge Object readiness, conflict, and trust update examples
+- reviewed Validation Runtime preparation examples for Task100 architecture
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates
 
@@ -249,6 +253,7 @@ The following should not be described as existing capability:
 - Earth intelligence provider integration, authentication, downloaded data, or
   simulation runtime
 - automated knowledge validation or trust scoring runtime
+- validation runtime, scoring engine, or automated approval workflow
 - Machine learning
 - Blockchain implementation
 - Token model or smart contracts

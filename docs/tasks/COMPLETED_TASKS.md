@@ -38,6 +38,7 @@ The canonical task list remains
 - Task77: Future Obsidian Bridge foundation
 - Task78: Earth Intelligence Interface foundation
 - Task79: ClimateOS Knowledge Validation Preparation foundation
+- Task80: ClimateOS Validation Runtime Preparation foundation
 
 ## Boundary
 

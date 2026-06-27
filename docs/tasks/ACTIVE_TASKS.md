@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Waiting | Task80 should wait for explicit user approval. |
+| None | Waiting | Batch17 should wait for explicit user approval. |
 
 ## Recently Completed Local Work
 
@@ -27,6 +27,7 @@ For the canonical record, use the
 | Task77 | Completed | Future Obsidian Bridge foundation created. |
 | Task78 | Completed | Earth Intelligence Interface foundation created. |
 | Task79 | Completed | Knowledge Validation Preparation foundation created. |
+| Task80 | Completed | Validation Runtime Preparation foundation created. |
 
 ## Boundary
 
