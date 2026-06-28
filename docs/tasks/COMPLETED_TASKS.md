@@ -49,6 +49,7 @@ The canonical task list remains
 - Task88: EcoChain Readiness Framework foundation
 - Task89: Scenario Planning Validation Framework foundation
 - Task90: Validation Phase Consolidation foundation
+- Task91: Validation Runtime Interface Framework foundation
 
 ## Boundary
 

@@ -36,6 +36,7 @@ observation, validation, task tracking, release records, and future skills.
 - [Project Principles](project-principles.md)
 - [ClimateOS Foundation Consolidation](../01_CLIMATEOS_CORE/foundation_consolidation/README.md)
 - [Validation Phase Consolidation](../01_CLIMATEOS_CORE/validation_phase_consolidation/README.md)
+- [Validation Runtime Interface](../01_CLIMATEOS_CORE/validation_runtime_interface/README.md)
 - [Knowledge Runtime](../01_CLIMATEOS_CORE/knowledge_runtime/README.md)
 - [Knowledge Provider Layer](../01_CLIMATEOS_CORE/knowledge_provider_layer/README.md)
 - [Knowledge Workflow Layer](../01_CLIMATEOS_CORE/knowledge_workflow_layer/README.md)

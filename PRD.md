@@ -235,6 +235,9 @@ The repository currently includes:
 - Validation Phase Consolidation foundation organizing Task79 through Task90
   into the first complete Validation Foundation overview and Task100 readiness
   path
+- Validation Runtime Interface foundation defining conceptual runtime input,
+  output, context, session, state, invocation, and result boundaries that future
+  domain runtimes may inherit
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
