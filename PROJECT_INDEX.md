@@ -41,6 +41,7 @@ Use it as a first stop before adding new project content.
 - [ClimateOS Maturity Framework](01_CLIMATEOS_CORE/governance_layer/maturity_framework/README.md)
 - [Validation Phase Consolidation](01_CLIMATEOS_CORE/validation_phase_consolidation/README.md)
 - [Validation Runtime Interface](01_CLIMATEOS_CORE/validation_runtime_interface/README.md)
+- [Validation Pack Layer](01_CLIMATEOS_CORE/validation_pack_layer/README.md)
 - [Knowledge Runtime](01_CLIMATEOS_CORE/knowledge_runtime/README.md)
 - [Knowledge Provider Layer](01_CLIMATEOS_CORE/knowledge_provider_layer/README.md)
 - [Knowledge Workflow Layer](01_CLIMATEOS_CORE/knowledge_workflow_layer/README.md)
@@ -118,7 +119,7 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task92 should wait for explicit user
+- No active task is currently selected. Task93 should wait for explicit user
   approval.
 
 ## Completed Tasks
@@ -137,8 +138,8 @@ Use it as a first stop before adding new project content.
   Task83 review engine, Task84 review workflow, Task85 evidence package review,
   Task86 proof record review, Task87 evidence asset validation, Task88
   EcoChain readiness, Task89 scenario validation, and Task90 validation phase
-  consolidation, and Task91 validation runtime interface to scope Task100
-  preparation.
+  consolidation, Task91 validation runtime interface, and Task92 validation
+  pack layer to scope Task100 preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.

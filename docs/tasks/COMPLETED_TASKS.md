@@ -50,6 +50,7 @@ The canonical task list remains
 - Task89: Scenario Planning Validation Framework foundation
 - Task90: Validation Phase Consolidation foundation
 - Task91: Validation Runtime Interface Framework foundation
+- Task92: Validation Pack Framework foundation
 
 ## Boundary
 
