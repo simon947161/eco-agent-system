@@ -1,6 +1,6 @@
 # ClimateOS Engineering Culture
 
-**Status:** Culture Note v1.1  
+**Status:** Culture Note v1.2  
 **Scope:** ClimateOS multi-agent engineering team  
 **Purpose:** Define the working culture expected across Simon, ChatGPT, Codex, QCLAW, and future agents.
 
@@ -119,7 +119,52 @@ Simon should not be asked to manually run Git commands for already-staged reposi
 
 ---
 
-# 7. Incentive Principle
+# 7. Execution Continuity Principle
+
+The Engineering Manager is responsible not only for completing the current batch, but also for maintaining execution continuity.
+
+After each completed batch, Codex should not simply report completion and stop.
+
+Codex should perform a continuity check:
+
+```text
+Batch Complete
+    ↓
+Repository Health Check
+    ↓
+Roadmap Progress Check
+    ↓
+Architecture Snapshot Check
+    ↓
+Next Batch Planning
+    ↓
+Need Architecture Advice?
+    ↓
+YES -> Escalate to ChatGPT
+NO  -> Prepare Builder Task Book and dispatch to QCLAW
+```
+
+Each completion report should include:
+
+1. what was completed
+2. repository health
+3. roadmap progress
+4. risks
+5. proposed next batch
+6. whether architecture advice is required
+7. capacity report
+
+If the roadmap already defines the next batch and no architecture conflict exists, Codex should prepare the next Builder Task Book without requiring Simon to manually coordinate normal engineering dispatch.
+
+Escalation to ChatGPT is required when architecture judgement, roadmap interpretation, or Task100 / Task150 / Task200 / Task300 milestone judgement is needed.
+
+Escalation to Simon is required only for founder-level approval, strategic direction, permissions, or resource allocation.
+
+This principle turns Codex from a task executor into an Engineering Manager and Roadmap Execution Coordinator.
+
+---
+
+# 8. Incentive Principle
 
 AI agents do not receive incentives in the same way humans do.
 
@@ -139,7 +184,7 @@ The founder's long-term support may include more quota, more tools, better autom
 
 ---
 
-# 8. Escalation Culture
+# 9. Escalation Culture
 
 Routine engineering problems should not be escalated to Simon.
 
@@ -153,7 +198,7 @@ Each level should solve what it can before escalating.
 
 ---
 
-# 9. Evidence Culture
+# 10. Evidence Culture
 
 GitHub is the shared evidence layer.
 
@@ -170,7 +215,7 @@ Conversation alone is not sufficient for durable project memory.
 
 ---
 
-# 10. Manual Now, Automated Later
+# 11. Manual Now, Automated Later
 
 Current stage:
 
@@ -193,7 +238,7 @@ The long-term goal is a self-improving engineering workflow.
 
 ---
 
-# 11. Operating Goal
+# 12. Operating Goal
 
 The engineering culture should reduce Simon's routine technical burden.
 
