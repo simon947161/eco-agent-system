@@ -151,3 +151,10 @@ Use it as a first stop before adding new project content.
 ClimateOS is an evolving Earth System Governance Runtime architecture. The
 repository currently emphasizes foundations, documentation, and reviewable
 boundaries before runtime capability.
+
+## Batch23 - Validation IO and Benchmark
+
+- [Task93: Validation IO Model](01_CLIMATEOS_CORE/validation_io_model/README.md)
+- [Task94: Validation Benchmark Library](01_CLIMATEOS_CORE/validation_benchmark_library/README.md)
+- [Batch23 Review](docs/tasks/BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
+

@@ -28,3 +28,8 @@ human-friendly task summaries and working templates.
 - [Task Index](../../00_PROJECT_CONTROL/TASK_INDEX.md)
 - [Queue Dashboard](../../00_PROJECT_CONTROL/QUEUE_DASHBOARD.md)
 
+
+## Batch23 - Validation IO and Benchmark
+
+- [Batch23 Review](BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
+

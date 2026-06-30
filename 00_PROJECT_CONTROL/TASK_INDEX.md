@@ -1,7 +1,6 @@
 # Task Index
 
-Allowed status values are `Proposed`, `Ready`, `In Progress`, `Blocked`,
-`Review`, and `Completed`.
+Allowed status values are `Proposed`, `Ready`, `In Progress`, `Blocked`, `Review`, and `Completed`.
 Status changes should be supported by repository evidence.
 
 | Task ID | Task Name | System Area | Status | Purpose | Key Outputs | Notes |
@@ -54,3 +53,13 @@ Status changes should be supported by repository evidence.
 | Task90 | Validation Phase Consolidation Foundation | ClimateOS core / Validation Consolidation | Completed | Consolidate Task79 through Task90 into one coherent Validation Architecture overview and Task100 readiness path. | Validation phase consolidation documents, layer catalog, architecture overview, relationship map, runtime preparation, foundation review, gaps and risks, Task100 readiness, and glossary | Documentation only; no new architectural layers, runtime implementation, APIs, scoring engine, automated validation, workflow engine, blockchain, token model, or governance automation. |
 | Task91 | Validation Runtime Interface Framework Foundation | ClimateOS core / Runtime Interface | Completed | Define conceptual runtime interface boundaries inherited by future domain runtimes. | Validation runtime interface documents, input model, output model, context model, session model, state model, invocation model, result model, boundaries, system map, and glossary | Documentation only; no runtime implementation, APIs, services, adapters, workflow engine, validation engine, scoring engine, or automated decisions. |
 | Task92 | Validation Pack Framework Foundation | ClimateOS core / Validation Packs | Completed | Define standard structured runtime outputs for future ClimateOS and domain runtimes. | Validation pack layer documents, validation pack model, review pack, evidence pack, recommendation pack, governance pack, lifecycle, metadata, version, system map, and glossary | Documentation only; no runtime implementation, APIs, databases, pack generator, workflow engine, scoring engine, or automated decisions. |
+| Task93 | Validation IO Model Foundation | ClimateOS core / Validation IO | Completed | Define input/output object models, classification, flow, and relationships for validation processes. | Validation IO model documents, input/output object models, classification, flow models, IO relationships, system map, and glossary | Documentation only; no runtime implementation, APIs, automated validation, scoring engine, workflow engine, or automated decisions. |
+| Task94 | Validation Benchmark Library Foundation | ClimateOS core / Validation Benchmarks | Completed | Define benchmark models, types, criteria, comparison, lifecycle, and governance for validation benchmarks. | Validation benchmark library documents, benchmark models, types, criteria, comparison model, lifecycle, governance, system map, and glossary | Documentation only; no runtime implementation, APIs, automated benchmarking, scoring engine, workflow engine, or automated decisions. |
+
+## Notes
+
+- Task100 remains the Foundation completion milestone.
+- New ideas go to Task101+ Recommendations, not into the current roadmap.
+- Documentation-only tasks define conceptual foundations without implementing runtime software.
+- Task93 and Task94 complete Phase 3 (Runtime Preparation) of Foundation development.
+- Next tasks: Task95 (Validation Runtime Examples), Task96 (Validation Reference Objects), Task97 (Validation Demonstration).
