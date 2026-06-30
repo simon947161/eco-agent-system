@@ -244,6 +244,10 @@ The repository currently includes:
   classifications, flows, and relationships for validation processes
 - Validation Benchmark Library foundation defining conceptual benchmark models,
   types, criteria, comparisons, lifecycle, and governance boundaries
+- Validation Runtime Examples foundation showing conceptual sessions, input
+  sets, output sets, packs, and benchmark application patterns
+- Validation Reference Objects foundation defining reusable conceptual objects
+  for examples, demonstrations, benchmarks, and Task100 architecture
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -270,6 +274,7 @@ Planned work includes:
 - reviewed Knowledge Object readiness, conflict, and trust update examples
 - reviewed Validation Runtime preparation examples for Task100 architecture
 - reviewed Validation IO and benchmark examples for runtime preparation
+- reviewed Validation Runtime example and Reference Object patterns for Task100
 - reviewed Collective Validation examples using Direction Before Authority
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates

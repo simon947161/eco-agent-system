@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Waiting | Task95 should wait for explicit user approval. |
+| None | Waiting | Task97 should wait for explicit user approval. |
 
 ## Recently Completed Local Work
 
@@ -42,6 +42,8 @@ For the canonical record, use the
 | Task92 | Completed | Validation Pack Framework foundation created. |
 | Task93 | Completed | Validation IO Model foundation created. |
 | Task94 | Completed | Validation Benchmark Library foundation created. |
+| Task95 | Completed | Validation Runtime Examples foundation created. |
+| Task96 | Completed | Validation Reference Objects foundation created. |
 
 ## Boundary
 

@@ -21,6 +21,8 @@ human-friendly task summaries and working templates.
 - [Batch 20 Evidence Asset and EcoChain Readiness Review](BATCH20_EVIDENCE_ASSET_AND_ECOCHAIN_READINESS_REVIEW.md)
 - [Batch 21 Validation Foundation Completion Review](BATCH21_VALIDATION_FOUNDATION_COMPLETION_REVIEW.md)
 - [Batch 22 Runtime Interface Completion Review](BATCH22_RUNTIME_INTERFACE_COMPLETION_REVIEW.md)
+- [Batch 23 Validation IO and Benchmark Review](BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
+- [Batch 24 Validation Examples and Reference Objects Review](BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -32,4 +34,8 @@ human-friendly task summaries and working templates.
 ## Batch23 - Validation IO and Benchmark
 
 - [Batch23 Review](BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
+
+## Batch24 - Validation Examples and Reference Objects
+
+- [Batch24 Review](BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
 

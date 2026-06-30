@@ -53,6 +53,8 @@ The canonical task list remains
 - Task92: Validation Pack Framework foundation
 - Task93: Validation IO Model foundation
 - Task94: Validation Benchmark Library foundation
+- Task95: Validation Runtime Examples foundation
+- Task96: Validation Reference Objects foundation
 
 ## Boundary
 

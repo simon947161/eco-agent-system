@@ -42,6 +42,10 @@ Use it as a first stop before adding new project content.
 - [Validation Phase Consolidation](01_CLIMATEOS_CORE/validation_phase_consolidation/README.md)
 - [Validation Runtime Interface](01_CLIMATEOS_CORE/validation_runtime_interface/README.md)
 - [Validation Pack Layer](01_CLIMATEOS_CORE/validation_pack_layer/README.md)
+- [Validation IO Model](01_CLIMATEOS_CORE/validation_io_model/README.md)
+- [Validation Benchmark Library](01_CLIMATEOS_CORE/validation_benchmark_library/README.md)
+- [Validation Runtime Examples](01_CLIMATEOS_CORE/validation_runtime_examples/README.md)
+- [Validation Reference Objects](01_CLIMATEOS_CORE/validation_reference_objects/README.md)
 - [Knowledge Runtime](01_CLIMATEOS_CORE/knowledge_runtime/README.md)
 - [Knowledge Provider Layer](01_CLIMATEOS_CORE/knowledge_provider_layer/README.md)
 - [Knowledge Workflow Layer](01_CLIMATEOS_CORE/knowledge_workflow_layer/README.md)
@@ -108,6 +112,8 @@ Use it as a first stop before adding new project content.
 - [Batch 20 Evidence Asset and EcoChain Readiness Review](docs/tasks/BATCH20_EVIDENCE_ASSET_AND_ECOCHAIN_READINESS_REVIEW.md)
 - [Batch 21 Validation Foundation Completion Review](docs/tasks/BATCH21_VALIDATION_FOUNDATION_COMPLETION_REVIEW.md)
 - [Batch 22 Runtime Interface Completion Review](docs/tasks/BATCH22_RUNTIME_INTERFACE_COMPLETION_REVIEW.md)
+- [Batch 23 Validation IO and Benchmark Review](docs/tasks/BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
+- [Batch 24 Validation Examples and Reference Objects Review](docs/tasks/BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -120,7 +126,7 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task95 should wait for explicit user
+- No active task is currently selected. Task97 should wait for explicit user
   approval.
 
 ## Completed Tasks
@@ -140,8 +146,9 @@ Use it as a first stop before adding new project content.
   Task86 proof record review, Task87 evidence asset validation, Task88
   EcoChain readiness, Task89 scenario validation, and Task90 validation phase
   consolidation, Task91 validation runtime interface, Task92 validation pack
-  layer, Task93 validation IO model, and Task94 validation benchmark library to
-  scope Task100 preparation.
+  layer, Task93 validation IO model, Task94 validation benchmark library,
+  Task95 validation runtime examples, and Task96 validation reference objects
+  to scope Task100 preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.
@@ -158,4 +165,10 @@ boundaries before runtime capability.
 - [Task93: Validation IO Model](01_CLIMATEOS_CORE/validation_io_model/README.md)
 - [Task94: Validation Benchmark Library](01_CLIMATEOS_CORE/validation_benchmark_library/README.md)
 - [Batch23 Review](docs/tasks/BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
+
+## Batch24 - Validation Examples and Reference Objects
+
+- [Task95: Validation Runtime Examples](01_CLIMATEOS_CORE/validation_runtime_examples/README.md)
+- [Task96: Validation Reference Objects](01_CLIMATEOS_CORE/validation_reference_objects/README.md)
+- [Batch24 Review](docs/tasks/BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
 

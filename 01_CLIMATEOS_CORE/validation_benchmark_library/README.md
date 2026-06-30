@@ -26,7 +26,7 @@ No runtime implementation, APIs, automated benchmarking, scoring engine, workflo
 | `BENCHMARK_CRITERIA.md` | Criteria for benchmark development and use |
 | `BENCHMARK_COMPARISON_MODEL.md` | Comparison models for benchmark evaluation |
 | `BENCHMARK_LIFECYCLE.md` | Lifecycle of benchmarks from creation to retirement |
-| `BENCHCHMARK_GOVERNANCE.md` | Governance of benchmark library |
+| `BENCHMARK_GOVERNANCE.md` | Governance of benchmark library |
 | `VALIDATION_BENCHMARK_SYSTEM_MAP.md` | System map showing benchmark relationships |
 | `VALIDATION_BENCHMARK_GLOSSARY.md` | Glossary of benchmark terms |
 
