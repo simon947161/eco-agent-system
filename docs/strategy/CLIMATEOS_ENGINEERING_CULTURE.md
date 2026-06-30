@@ -1,6 +1,6 @@
 # ClimateOS Engineering Culture
 
-**Status:** Culture Note v1.0  
+**Status:** Culture Note v1.1  
 **Scope:** ClimateOS multi-agent engineering team  
 **Purpose:** Define the working culture expected across Simon, ChatGPT, Codex, QCLAW, and future agents.
 
@@ -89,7 +89,37 @@ QCLAW should absorb more drafting and research work where capacity allows.
 
 ---
 
-# 6. Incentive Principle
+# 6. Staged Work Resumption Rule
+
+If engineering work has already been:
+
+- integrated
+- verified
+- tested
+- staged
+
+but commit or push is blocked only by platform usage limits, environment interruption, or capacity reset timing, then after capacity returns the Engineering Manager should resume from the staged repository state.
+
+In this situation, Codex should not repeat integration, review, or testing unless repository contents have changed.
+
+The correct continuation is:
+
+```text
+Confirm current branch
+Confirm staged changes
+Confirm no unexpected file changes
+Commit
+Push
+Report final repository status
+```
+
+This rule exists to avoid wasting limited capacity and to protect completed engineering work from unnecessary repetition.
+
+Simon should not be asked to manually run Git commands for already-staged repository work.
+
+---
+
+# 7. Incentive Principle
 
 AI agents do not receive incentives in the same way humans do.
 
@@ -109,7 +139,7 @@ The founder's long-term support may include more quota, more tools, better autom
 
 ---
 
-# 7. Escalation Culture
+# 8. Escalation Culture
 
 Routine engineering problems should not be escalated to Simon.
 
@@ -123,7 +153,7 @@ Each level should solve what it can before escalating.
 
 ---
 
-# 8. Evidence Culture
+# 9. Evidence Culture
 
 GitHub is the shared evidence layer.
 
@@ -140,7 +170,7 @@ Conversation alone is not sufficient for durable project memory.
 
 ---
 
-# 9. Manual Now, Automated Later
+# 10. Manual Now, Automated Later
 
 Current stage:
 
@@ -163,7 +193,7 @@ The long-term goal is a self-improving engineering workflow.
 
 ---
 
-# 10. Operating Goal
+# 11. Operating Goal
 
 The engineering culture should reduce Simon's routine technical burden.
 
