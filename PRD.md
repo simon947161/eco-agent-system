@@ -248,6 +248,13 @@ The repository currently includes:
   sets, output sets, packs, and benchmark application patterns
 - Validation Reference Objects foundation defining reusable conceptual objects
   for examples, demonstrations, benchmarks, and Task100 architecture
+- Validation Demonstration foundation showing how validation examples,
+  reference objects, IO models, and benchmarks may be used together
+- Validation Runtime Integration Review foundation reviewing coherence across
+  Task91 through Task97 before Task100
+- Task100 Preflight Review foundation documenting readiness signals, gaps,
+  risks, dependencies, and Task101+ parking items before Task100 architecture
+  review
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -275,6 +282,7 @@ Planned work includes:
 - reviewed Validation Runtime preparation examples for Task100 architecture
 - reviewed Validation IO and benchmark examples for runtime preparation
 - reviewed Validation Runtime example and Reference Object patterns for Task100
+- reviewed Validation Demonstration and Task100 preflight patterns
 - reviewed Collective Validation examples using Direction Before Authority
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates

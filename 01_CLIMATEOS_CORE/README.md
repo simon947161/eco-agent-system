@@ -38,3 +38,19 @@ Core evidence router, review coordinator, schema validator, and report builder.
 - [Validation Reference Objects README](validation_reference_objects/README.md)
 - [Validation Reference Objects Foundation](validation_reference_objects/VALIDATION_REFERENCE_OBJECTS_FOUNDATION.md)
 
+
+## Validation Demonstration
+
+- [Validation Demonstration README](validation_demonstration/README.md)
+- [Validation Demonstration Foundation](validation_demonstration/VALIDATION_DEMONSTRATION_FOUNDATION.md)
+
+## Validation Integration Review
+
+- [Validation Integration Review README](validation_integration_review/README.md)
+- [Validation Integration Review Foundation](validation_integration_review/VALIDATION_INTEGRATION_REVIEW_FOUNDATION.md)
+
+## Task100 Preflight Review
+
+- [Task100 Preflight Review README](validation_preflight_review/README.md)
+- [Task100 Preflight Foundation](validation_preflight_review/TASK100_PREFLIGHT_FOUNDATION.md)
+

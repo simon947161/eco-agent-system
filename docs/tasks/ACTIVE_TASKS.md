@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Waiting | Task97 should wait for explicit user approval. |
+| None | Waiting | Task100 should wait for explicit architecture review and authorization. |
 
 ## Recently Completed Local Work
 
@@ -44,6 +44,9 @@ For the canonical record, use the
 | Task94 | Completed | Validation Benchmark Library foundation created. |
 | Task95 | Completed | Validation Runtime Examples foundation created. |
 | Task96 | Completed | Validation Reference Objects foundation created. |
+| Task97 | Completed | Validation Demonstration foundation created. |
+| Task98 | Completed | Validation Runtime Integration Review foundation created. |
+| Task99 | Completed | Task100 Preflight Review foundation created. |
 
 ## Boundary
 

@@ -23,6 +23,8 @@ human-friendly task summaries and working templates.
 - [Batch 22 Runtime Interface Completion Review](BATCH22_RUNTIME_INTERFACE_COMPLETION_REVIEW.md)
 - [Batch 23 Validation IO and Benchmark Review](BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
 - [Batch 24 Validation Examples and Reference Objects Review](BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
+- [Batch 25 Validation Demonstration and Preflight Review](BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Task101+ Recommendations](TASK101_PLUS_RECOMMENDATIONS.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -38,4 +40,10 @@ human-friendly task summaries and working templates.
 ## Batch24 - Validation Examples and Reference Objects
 
 - [Batch24 Review](BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
+
+
+## Batch25 - Validation Demonstration and Preflight
+
+- [Batch25 Review](BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Task101+ Parking List](TASK101_PLUS_RECOMMENDATIONS.md)
 

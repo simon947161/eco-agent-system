@@ -32,6 +32,8 @@ observation, validation, task tracking, release records, and future skills.
 - [Batch 22 Runtime Interface Completion Review](tasks/BATCH22_RUNTIME_INTERFACE_COMPLETION_REVIEW.md)
 - [Batch 23 Validation IO and Benchmark Review](tasks/BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
 - [Batch 24 Validation Examples and Reference Objects Review](tasks/BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
+- [Batch 25 Validation Demonstration and Preflight Review](tasks/BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Task101+ Recommendations](tasks/TASK101_PLUS_RECOMMENDATIONS.md)
 - [ClimateOS Review Engine Design Decision](strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -45,6 +47,9 @@ observation, validation, task tracking, release records, and future skills.
 - [Validation Benchmark Library](../01_CLIMATEOS_CORE/validation_benchmark_library/README.md)
 - [Validation Runtime Examples](../01_CLIMATEOS_CORE/validation_runtime_examples/README.md)
 - [Validation Reference Objects](../01_CLIMATEOS_CORE/validation_reference_objects/README.md)
+- [Validation Demonstration](../01_CLIMATEOS_CORE/validation_demonstration/README.md)
+- [Validation Integration Review](../01_CLIMATEOS_CORE/validation_integration_review/README.md)
+- [Task100 Preflight Review](../01_CLIMATEOS_CORE/validation_preflight_review/README.md)
 - [Knowledge Runtime](../01_CLIMATEOS_CORE/knowledge_runtime/README.md)
 - [Knowledge Provider Layer](../01_CLIMATEOS_CORE/knowledge_provider_layer/README.md)
 - [Knowledge Workflow Layer](../01_CLIMATEOS_CORE/knowledge_workflow_layer/README.md)
@@ -84,4 +89,9 @@ This index organizes documentation only. It does not add runtime functionality.
 ## Batch24 - Validation Examples and Reference Objects
 
 - [Batch24 Review](tasks/BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
+
+## Batch25 - Validation Demonstration and Preflight
+
+- [Batch25 Review](tasks/BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Task101+ Recommendations](tasks/TASK101_PLUS_RECOMMENDATIONS.md)
 

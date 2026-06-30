@@ -55,6 +55,9 @@ The canonical task list remains
 - Task94: Validation Benchmark Library foundation
 - Task95: Validation Runtime Examples foundation
 - Task96: Validation Reference Objects foundation
+- Task97: Validation Demonstration foundation
+- Task98: Validation Runtime Integration Review foundation
+- Task99: Task100 Preflight Review foundation
 
 ## Boundary
 

@@ -46,6 +46,9 @@ Use it as a first stop before adding new project content.
 - [Validation Benchmark Library](01_CLIMATEOS_CORE/validation_benchmark_library/README.md)
 - [Validation Runtime Examples](01_CLIMATEOS_CORE/validation_runtime_examples/README.md)
 - [Validation Reference Objects](01_CLIMATEOS_CORE/validation_reference_objects/README.md)
+- [Validation Demonstration](01_CLIMATEOS_CORE/validation_demonstration/README.md)
+- [Validation Integration Review](01_CLIMATEOS_CORE/validation_integration_review/README.md)
+- [Task100 Preflight Review](01_CLIMATEOS_CORE/validation_preflight_review/README.md)
 - [Knowledge Runtime](01_CLIMATEOS_CORE/knowledge_runtime/README.md)
 - [Knowledge Provider Layer](01_CLIMATEOS_CORE/knowledge_provider_layer/README.md)
 - [Knowledge Workflow Layer](01_CLIMATEOS_CORE/knowledge_workflow_layer/README.md)
@@ -114,6 +117,7 @@ Use it as a first stop before adding new project content.
 - [Batch 22 Runtime Interface Completion Review](docs/tasks/BATCH22_RUNTIME_INTERFACE_COMPLETION_REVIEW.md)
 - [Batch 23 Validation IO and Benchmark Review](docs/tasks/BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
 - [Batch 24 Validation Examples and Reference Objects Review](docs/tasks/BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
+- [Batch 25 Validation Demonstration and Preflight Review](docs/tasks/BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -126,8 +130,8 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task97 should wait for explicit user
-  approval.
+- No active task is currently selected. Task100 should wait for explicit
+  architecture review and authorization.
 
 ## Completed Tasks
 
@@ -147,8 +151,9 @@ Use it as a first stop before adding new project content.
   EcoChain readiness, Task89 scenario validation, and Task90 validation phase
   consolidation, Task91 validation runtime interface, Task92 validation pack
   layer, Task93 validation IO model, Task94 validation benchmark library,
-  Task95 validation runtime examples, and Task96 validation reference objects
-  to scope Task100 preparation.
+  Task95 validation runtime examples, Task96 validation reference objects,
+  Task97 validation demonstration, Task98 validation integration review, and
+  Task99 preflight review to scope Task100 preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.
@@ -171,4 +176,13 @@ boundaries before runtime capability.
 - [Task95: Validation Runtime Examples](01_CLIMATEOS_CORE/validation_runtime_examples/README.md)
 - [Task96: Validation Reference Objects](01_CLIMATEOS_CORE/validation_reference_objects/README.md)
 - [Batch24 Review](docs/tasks/BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
+
+
+## Batch25 - Validation Demonstration and Preflight
+
+- [Task97: Validation Demonstration](01_CLIMATEOS_CORE/validation_demonstration/README.md)
+- [Task98: Validation Integration Review](01_CLIMATEOS_CORE/validation_integration_review/README.md)
+- [Task99: Task100 Preflight Review](01_CLIMATEOS_CORE/validation_preflight_review/README.md)
+- [Batch25 Review](docs/tasks/BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Task101+ Parking List](docs/tasks/TASK101_PLUS_RECOMMENDATIONS.md)
 
