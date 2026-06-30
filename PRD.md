@@ -240,6 +240,10 @@ The repository currently includes:
   domain runtimes may inherit
 - Validation Pack foundation defining structured runtime output packs for
   validation, review, evidence, recommendation, and governance contexts
+- Validation IO Model foundation defining conceptual input/output objects,
+  classifications, flows, and relationships for validation processes
+- Validation Benchmark Library foundation defining conceptual benchmark models,
+  types, criteria, comparisons, lifecycle, and governance boundaries
 - CCZPS-Lite v0.5 runtime and tests from earlier repository work
 
 ## Planned
@@ -265,6 +269,7 @@ Planned work includes:
 - reviewed Earth Intelligence provider capability and selection examples
 - reviewed Knowledge Object readiness, conflict, and trust update examples
 - reviewed Validation Runtime preparation examples for Task100 architecture
+- reviewed Validation IO and benchmark examples for runtime preparation
 - reviewed Collective Validation examples using Direction Before Authority
 - Reviewed sample Reality Data Asset and Evidence Asset records
 - reviewed examples of RWA Alignment Candidates

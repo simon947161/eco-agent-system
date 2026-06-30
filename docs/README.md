@@ -70,3 +70,8 @@ observation, validation, task tracking, release records, and future skills.
 
 This index organizes documentation only. It does not add runtime functionality.
 
+
+## Batch23 - Validation IO and Benchmark
+
+- [Batch23 Review](tasks/BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
+

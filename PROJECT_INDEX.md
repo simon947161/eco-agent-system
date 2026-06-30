@@ -120,7 +120,7 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task93 should wait for explicit user
+- No active task is currently selected. Task95 should wait for explicit user
   approval.
 
 ## Completed Tasks
@@ -139,8 +139,9 @@ Use it as a first stop before adding new project content.
   Task83 review engine, Task84 review workflow, Task85 evidence package review,
   Task86 proof record review, Task87 evidence asset validation, Task88
   EcoChain readiness, Task89 scenario validation, and Task90 validation phase
-  consolidation, Task91 validation runtime interface, and Task92 validation
-  pack layer to scope Task100 preparation.
+  consolidation, Task91 validation runtime interface, Task92 validation pack
+  layer, Task93 validation IO model, and Task94 validation benchmark library to
+  scope Task100 preparation.
 - Convert selected templates into reviewed examples.
 - Define future skill implementation plans only after documentation boundaries
   are stable.
@@ -151,3 +152,10 @@ Use it as a first stop before adding new project content.
 ClimateOS is an evolving Earth System Governance Runtime architecture. The
 repository currently emphasizes foundations, documentation, and reviewable
 boundaries before runtime capability.
+
+## Batch23 - Validation IO and Benchmark
+
+- [Task93: Validation IO Model](01_CLIMATEOS_CORE/validation_io_model/README.md)
+- [Task94: Validation Benchmark Library](01_CLIMATEOS_CORE/validation_benchmark_library/README.md)
+- [Batch23 Review](docs/tasks/BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
+
