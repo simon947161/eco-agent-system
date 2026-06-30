@@ -65,3 +65,8 @@ Status changes should be supported by repository evidence.
 - Documentation-only tasks define conceptual foundations without implementing runtime software.
 - Task93 through Task96 continue Phase 3 (Runtime Preparation) of Foundation development.
 - Next tasks: Task97 (Validation Demonstration), Task98 (Validation Runtime Integration Review), Task99 (Task100 Preflight Review), Task100 (ClimateOS Validation Runtime Architecture).
+| Task98 | Validation Runtime Integration Review | ClimateOS core / Validation Integration | Completed | Review integration coherence across Task91-Task97. No new components.
+| Task99 | Task100 Preflight Review | ClimateOS core / Validation Preflight | Completed | Verify Foundation readiness for Task100. Establish Task101+ parking list.
+| Task99 | Task100 Preflight Review | ClimateOS core / Validation Preflight | Completed | Verify Foundation readiness for Task100. Establish Task101+ parking list.
+| Task98 | Validation Runtime Integration Review | ClimateOS core / Validation Integration | Completed | Review integration coherence across Task91-Task97. No new components.
+| Task97 | Validation Demonstration Foundation | ClimateOS core / Validation Demonstration | Completed | Demonstrate practical validation using Task93-Task96 components. Documentation only.

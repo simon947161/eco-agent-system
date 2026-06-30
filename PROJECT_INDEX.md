@@ -172,3 +172,12 @@ boundaries before runtime capability.
 - [Task96: Validation Reference Objects](01_CLIMATEOS_CORE/validation_reference_objects/README.md)
 - [Batch24 Review](docs/tasks/BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
 
+
+## Batch25 - Validation Demonstration and Preflight
+
+- [Task97: Validation Demonstration](01_CLIMATEOS_CORE/validation_demonstration/README.md)
+- [Task98: Validation Integration Review](01_CLIMATEOS_CORE/validation_integration_review/README.md)
+- [Task99: Task100 Preflight Review](01_CLIMATEOS_CORE/validation_preflight_review/README.md)
+- [Batch25 Review](docs/tasks/BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Task101+ Parking List](docs/tasks/TASK101_PLUS_RECOMMENDATIONS.md)
+

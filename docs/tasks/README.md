@@ -39,3 +39,9 @@ human-friendly task summaries and working templates.
 
 - [Batch24 Review](BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
 
+
+## Batch25 - Validation Demonstration and Preflight
+
+- [Batch25 Review](BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Task101+ Parking List](../TASK101_PLUS_RECOMMENDATIONS.md)
+
