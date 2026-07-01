@@ -161,6 +161,25 @@ Confirm what ClimateOS Foundation has built.
 
 Focus on capability platform maturity, not product completion.
 
+Include a short `Graduation Philosophy` section near the end of
+`docs/tasks/TASK100_FOUNDATION_GRADUATION_REVIEW.md`.
+
+Required text:
+
+```text
+ClimateOS Foundation does not solve every future problem.
+
+It establishes the governance capabilities that allow future problems to be solved in a trustworthy way.
+
+ClimateOS Foundation is not the destination.
+
+It is the common governance foundation upon which future domain runtimes can safely evolve.
+
+Every future runtime - including CarbonOS, WaterOS, EnergyOS, BuildingOS and other domain systems - should inherit these common governance capabilities rather than reinvent them.
+
+This is the meaning of Foundation Graduation.
+```
+
 ### Governance Capability Review
 
 Summarize common governance capabilities established by Foundation, including:
@@ -351,6 +370,59 @@ Codex final integration report must include:
 7. Risks
 8. Proposed Next Batch
 9. Architecture Advice Required: YES / NO
+
+## Architecture Review Closing Format
+
+Use this closing format for future milestone architecture reviews:
+
+```text
+Architecture Review Result
+
+APPROVED
+APPROVED WITH REFINEMENTS
+REJECTED
+
+Dispatch Decision
+
+Ready for Builder Dispatch
+Hold
+
+Engineering Action
+
+Codex prepares and dispatches the Builder Task Book.
+
+Builder
+
+QCLAW
+
+Status
+
+Ready for QCLAW Draft Preparation.
+```
+
+Task100 current status:
+
+```text
+Architecture Review Result
+
+APPROVED
+
+Dispatch Decision
+
+Ready for Builder Dispatch
+
+Engineering Action
+
+Codex prepares and dispatches the Builder Task Book.
+
+Builder
+
+QCLAW
+
+Status
+
+Ready for QCLAW Draft Preparation.
+```
 
 ## Status
 
