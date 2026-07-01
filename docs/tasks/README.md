@@ -25,6 +25,7 @@ human-friendly task summaries and working templates.
 - [Batch 24 Validation Examples and Reference Objects Review](BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
 - [Batch 25 Validation Demonstration and Preflight Review](BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
 - [Task101+ Recommendations](TASK101_PLUS_RECOMMENDATIONS.md)
+- [Task100 QCLAW Builder Task Book](TASK100_QCLAW_BUILDER_TASK_BOOK.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -46,4 +47,8 @@ human-friendly task summaries and working templates.
 
 - [Batch25 Review](BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
 - [Task101+ Parking List](TASK101_PLUS_RECOMMENDATIONS.md)
+
+## Task100 - Foundation Graduation Dispatch
+
+- [Task100 QCLAW Builder Task Book](TASK100_QCLAW_BUILDER_TASK_BOOK.md)
 
