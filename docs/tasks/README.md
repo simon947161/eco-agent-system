@@ -26,6 +26,7 @@ human-friendly task summaries and working templates.
 - [Batch 25 Validation Demonstration and Preflight Review](BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
 - [Task100 Foundation Graduation Review](TASK100_FOUNDATION_GRADUATION_REVIEW.md)
 - [Task100 Foundation Graduation Approval Record](TASK100_FOUNDATION_GRADUATION_APPROVAL_RECORD.md)
+- [Task100 Foundation Graduation Freeze Record](TASK100_FOUNDATION_GRADUATION_FREEZE_RECORD.md)
 - [Task101+ Recommendations](TASK101_PLUS_RECOMMENDATIONS.md)
 - [Task100 QCLAW Builder Task Book](TASK100_QCLAW_BUILDER_TASK_BOOK.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
@@ -55,4 +56,5 @@ human-friendly task summaries and working templates.
 - [Task100 QCLAW Builder Task Book](TASK100_QCLAW_BUILDER_TASK_BOOK.md)
 - [Task100 Foundation Graduation Review](TASK100_FOUNDATION_GRADUATION_REVIEW.md)
 - [Task100 Foundation Graduation Approval Record](TASK100_FOUNDATION_GRADUATION_APPROVAL_RECORD.md)
+- [Task100 Foundation Graduation Freeze Record](TASK100_FOUNDATION_GRADUATION_FREEZE_RECORD.md)
 
