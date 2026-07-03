@@ -265,6 +265,56 @@ Every future runtime - including CarbonOS, WaterOS, EnergyOS, BuildingOS and oth
 
 This is the meaning of Foundation Graduation.
 
+## Architecture Comment A100-01 - Environmental Mainline Protection Principle
+
+Chinese Title: 环境主线保护原则
+
+### Context
+
+Task100 is not only a documentation closure task. It is the Foundation Graduation Review gate for ClimateOS.
+
+This review must test whether ClimateOS Foundation can still serve real environmental governance problems after the introduction of Runtime, Agent, MCP, SDK, website, repository workflow, and Builder Dispatch concepts.
+
+### Principle
+
+ClimateOS Core exists to support environmental observation, environmental evidence, environmental validation, environmental governance, and environmental action.
+
+Runtime, Agent, MCP, SDK, website, repository workflow, and Builder Dispatch are supporting mechanisms. They are not the mission itself.
+
+Any engineering work that cannot explain its environmental governance purpose must not enter ClimateOS Core.
+
+Engineering experiments may be conducted in BuildingOS as a demonstrator or engineering laboratory, but migration back into ClimateOS Core requires Architecture Review.
+
+Task100 graduation must test whether the Foundation can support real environmental project judgment, not merely whether documents and links are complete.
+
+### Required Review Checks
+
+Reality Test:
+
+Can ClimateOS describe real environmental objects such as place, building, drainage system, energy project, carbon activity, and ecological risk?
+
+Evidence Test:
+
+Can ClimateOS distinguish raw data, observation, inference, evidence, claim, and recommendation?
+
+Validation Test:
+
+Can ClimateOS evaluate source reliability, time validity, spatial fit, conflicting evidence, confidence, and need for human review?
+
+Governance Test:
+
+Can ClimateOS place review, responsibility, and approval boundaries before action?
+
+Inheritance Test:
+
+Can CarbonOS, BuildingOS, WaterOS, and EnergyOS inherit the same Observation -> Evidence -> Validation -> Confidence -> Review -> Recommendation -> Responsibility logic?
+
+### Website Demonstrator Boundary
+
+An interactive website must be treated as a ClimateOS / BuildingOS demonstrator for human use testing.
+
+It is not ClimateOS Core itself.
+
 ## Boundary Confirmation
 
 Task100 should explain the Foundation.
@@ -338,4 +388,3 @@ Architecture: Stable, subject to full Task100 package review.
 Engineering: Draft requires link verification, test verification, and Codex review before graduation is final.
 
 Repository: No runtime changes are introduced by this document.
-
