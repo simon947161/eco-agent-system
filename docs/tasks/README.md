@@ -24,6 +24,7 @@ human-friendly task summaries and working templates.
 - [Batch 23 Validation IO and Benchmark Review](BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
 - [Batch 24 Validation Examples and Reference Objects Review](BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
 - [Batch 25 Validation Demonstration and Preflight Review](BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Batch 25 Post-Task100 Integration Record](BATCH25_POST_TASK100_INTEGRATION_RECORD.md)
 - [Task100 Foundation Graduation Review](TASK100_FOUNDATION_GRADUATION_REVIEW.md)
 - [Task100 Foundation Graduation Approval Record](TASK100_FOUNDATION_GRADUATION_APPROVAL_RECORD.md)
 - [Task100 Foundation Graduation Freeze Record](TASK100_FOUNDATION_GRADUATION_FREEZE_RECORD.md)
@@ -50,6 +51,7 @@ human-friendly task summaries and working templates.
 ## Batch25 - Validation Demonstration and Preflight
 
 - [Batch25 Review](BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Batch25 Post-Task100 Integration Record](BATCH25_POST_TASK100_INTEGRATION_RECORD.md)
 - [Task101+ Parking List](TASK101_PLUS_RECOMMENDATIONS.md)
 
 ## Task100 - Foundation Graduation Dispatch
