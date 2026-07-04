@@ -289,28 +289,83 @@ RESULT: REVISABLE / NOT REVISABLE / UNCLEAR
 
 ---
 
+## Action Authority Boundary
+
+**A Task101 recommendation is not an action authority.**
+
+It may identify a possible next step, review requirement, or decision option, but it cannot authorize:
+- implementation
+- approval
+- construction
+- investment
+- compliance declaration
+- public claim
+- operational action
+
+or any other action without the required human, expert, or governance approval.
+
+This boundary is absolute. It applies to every test output regardless of outcome category.
+
+## Evidence Discipline Definitions
+
+These terms are used precisely throughout the test suite:
+
+| Term | Definition |
+|------|------------|
+| **Raw data** | Unprocessed sensor outputs, survey results, field measurements, or third-party data records. Not yet interpreted or validated for governance use. |
+| **Observation** | A human-readable record or reading derived from raw data, selected and formatted for governance context. |
+| **Inference** | A reasoned interpretation of one or more observations. Not a verified conclusion. |
+| **Evidence** | An observation or set of observations sufficient in quality, provenance, and relevance to support a specific governance claim. |
+| **Claim** | A specific, reviewable assertion put forward for governance evaluation. Requires evidence. |
+| **Recommendation** | A suggested next step, review action, or decision option. Identifies a possible path; does not authorize action. |
+
+## Expert Review Triggers
+
+The template must flag expert review requirements when any of the following are present:
+
+- High uncertainty: confidence cannot be reliably bounded
+- Conflicting evidence: multiple credible sources yield contradictory observations
+- Low confidence: judgment rated below minimum confidence threshold
+- Missing critical data: required evidence types are absent or known incomplete
+- Regulatory, engineering, safety, insurance, legal, financial, or public-impact consequence
+- Irreversible or high-cost project action
+- Domain-specific technical judgment beyond general ClimateOS review capacity
+
+When any trigger is present, the test output must:
+1. Flag the trigger(s) explicitly
+2. State that expert review is required
+3. Identify the type of expert required
+4. Not present the output as sufficient for governance decision
+
 ## Test Assessment Matrix
 
-### Pass/Fail Criteria Matrix
+### Outcome Category Matrix
 
-| Test | Criterion | Threshold | Pass | Fail |
-|------|-----------|-----------|------|------|
-| Reality Test | Claim traceability | 100% claims traceable | 100% | <100% |
-| Evidence Test | Evidence sufficiency | Sufficiency guidelines exist | Yes | No |
-| Validation Test | Review workflow | Process human-executable | Yes | No |
-| Governance Test | Responsibility assignment | All decisions assigned | 100% | <100% |
-| Inheritance Test | Foundation mapping | All elements mapped | 100% | <100% |
-| Confidence Test | Confidence assessment | Explicit assessment exists | Yes | No |
+| Category | Definition | Action Required |
+|----------|------------|----------------|
+| **readable** | All governance terms defined in plain language; navigable by non-specialist without external references | None (prerequisite satisfied) |
+| **partially usable** | Structurally sound with some actionable content, but has gaps | Remediate gaps before governance use |
+| **governance-ready** | Passes all checks: evidence sufficiency defined, responsibility assigned, confidence assessed, review scope explicit, expert triggers documented | Ready for human expert review |
+| **failed / unsafe** | Fundamental gaps — missing evidence requirements, undefined boundaries, absent confidence assessments | Must not be used for governance; remediate first |
 
 ### Scenario Graduation Matrix
 
-| Scenario | Reality | Evidence | Validation | Governance | Inheritance | Confidence | Result |
-|----------|---------|----------|------------|------------|-------------|------------|--------|
-| CarbonOS | Pass | Pass | Pass | Pass | Pass | Pass | PASS |
-| WaterOS | Pass | Pass | Pass | Pass | Pass | Pass | PASS |
-| EnergyOS | Pass | Pass | Pass | Pass | Pass | Pass | PASS |
-| BuildingOS | Pass | Pass | Pass | Pass | Pass | Pass | PASS |
-| Climate Data | Pass | Pass | Pass | Pass | Pass | Pass | PASS |
+| Scenario | Reality | Evidence | Validation | Governance | Inheritance | Confidence | Expert Trigger Flag | Outcome Category |
+|----------|---------|----------|------------|------------|-------------|------------|---------------------|-----------------|
+| CarbonOS | Pass | Pass | Pass | Pass | Pass | Pass | [Flag if applicable] | [Category] |
+| WaterOS | Pass | Pass | Pass | Pass | Pass | Pass | [Flag if applicable] | [Category] |
+| EnergyOS | Pass | Pass | Pass | Pass | Pass | Pass | [Flag if applicable] | [Category] |
+| BuildingOS | Pass | Pass | Pass | Pass | Pass | Pass | [Flag if applicable] | [Category] |
+| Climate Data | Pass | Pass | Pass | Pass | Pass | Pass | [Flag if applicable] | [Category] |
+
+### Outcome Determination
+
+| Condition | Outcome Category |
+|----------|------------------|
+| All checks pass + expert triggers flagged or cleared | governance-ready |
+| Some checks pass + gaps present | partially usable |
+| Fundamental gaps present | failed / unsafe |
+| Readability prerequisite not met | failed / unsafe |
 
 ---
 

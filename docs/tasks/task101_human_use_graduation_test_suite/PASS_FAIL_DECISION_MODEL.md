@@ -4,6 +4,60 @@
 
 This document defines the decision criteria and thresholds for determining whether the frozen ClimateOS Foundation passes the Human Use Graduation Test Suite.
 
+## Action Authority Boundary
+
+**A Task101 recommendation is not an action authority.**
+
+It may identify a possible next step, review requirement, or decision option, but it cannot authorize:
+- implementation
+- approval
+- construction
+- investment
+- compliance declaration
+- public claim
+- operational action
+
+or any other action without the required human, expert, or governance approval.
+
+This boundary is absolute and applies to every recommendation in every test suite output, regardless of outcome category.
+
+## Evidence Discipline Definitions
+
+These terms are used precisely throughout the decision model. They must not be conflated:
+
+| Term | Definition |
+|------|------------|
+| **Raw data** | Unprocessed sensor outputs, survey results, field measurements, or third-party data records. Raw data has not been interpreted, filtered, or validated for governance use. |
+| **Observation** | A human-readable record or reading derived from raw data, selected and formatted for governance context. An observation is a selected statement of what was measured or recorded. |
+| **Inference** | A reasoned interpretation of one or more observations. An inference connects observations to a provisional meaning or implication. It is not a verified conclusion. |
+| **Evidence** | An observation or set of observations sufficient in quality, provenance, and relevance to support a specific governance claim. Evidence is evidence *for* a claim; it is not the claim itself. |
+| **Claim** | A specific, reviewable assertion put forward for governance evaluation. A claim requires evidence. A claim is not an observation or an inference dressed as fact. |
+| **Recommendation** | A suggested next step, review action, or decision option. A recommendation identifies a possible path; it does not authorize, approve, or commit any party to action. |
+
+## Expert Review Triggers
+
+The test suite must escalate to qualified human experts — not rely on general ClimateOS review — when the scenario involves any of the following. Expert review is a governance requirement, not an optional enhancement:
+
+- **High uncertainty**: confidence cannot be reliably bounded with available data
+- **Conflicting evidence**: multiple credible sources yield contradictory observations
+- **Low confidence**: any judgment rated below the minimum confidence threshold for the scenario
+- **Missing critical data**: required evidence types are absent or known to be incomplete
+- **Regulatory consequence**: the scenario output bears on a regulatory obligation or compliance determination
+- **Engineering consequence**: the scenario output bears on structural, hydrological, geotechnical, or similar technical design
+- **Safety consequence**: the scenario output bears on occupational, public, or environmental safety
+- **Insurance consequence**: the scenario output may affect insurance coverage, liability, or indemnity positions
+- **Legal consequence**: the scenario output may affect legal rights, obligations, or proceedings
+- **Financial consequence**: the scenario output bears on material investment, expenditure, or financial disclosure
+- **Public-impact consequence**: the scenario output may affect public health, safety, or community interest
+- **Irreversible or high-cost project action**: the scenario involves construction, land use change, infrastructure deployment, or similar action that is costly or impractical to reverse
+- **Domain-specific technical judgment**: the scenario requires specialist knowledge beyond what general ClimateOS review can reasonably assess (e.g., carbon accounting methodology, stormwater modelling, building code compliance, satellite data calibration)
+
+When any trigger is present, the test output must:
+1. Explicitly flag the trigger(s) activated
+2. State that expert review is required before the governance output can be used
+3. Identify the type of expert required (domain, qualification level)
+4. Not present the governance output as sufficient for decision
+
 ## Decision Framework
 
 The pass/fail decision follows a multi-level assessment:
@@ -12,6 +66,8 @@ The pass/fail decision follows a multi-level assessment:
 2. **Criteria Assessment**: Each of the seven test criteria
 3. **Scenario Assessment**: Each of the five scenarios
 4. **Overall Assessment**: Combined test suite result
+
+---
 
 ## Level 1: Individual Test Assessment
 
@@ -26,7 +82,7 @@ The pass/fail decision follows a multi-level assessment:
 | Condition | Result |
 |-----------|--------|
 | 100% claims traceable | PASS |
-| 90-99% claims traceable | CONDITIONAL (document gaps) |
+| 90–99% claims traceable | CONDITIONAL (document gaps) |
 | <90% claims traceable | FAIL |
 
 **Required Evidence**:
@@ -46,7 +102,7 @@ The pass/fail decision follows a multi-level assessment:
 |-----------|--------|
 | Guidelines exist for all claim types | PASS |
 | Guidelines exist for >80% of claim types | CONDITIONAL |
-| Guidelines exist for Γëñ80% of claim types | FAIL |
+| Guidelines exist for ≤80% of claim types | FAIL |
 
 **Required Evidence**:
 - Sufficiency guidelines documented
@@ -65,7 +121,7 @@ The pass/fail decision follows a multi-level assessment:
 |-----------|--------|
 | All workflows human-executable | PASS |
 | >80% workflows human-executable | CONDITIONAL |
-| Γëñ80% workflows human-executable | FAIL |
+| ≤80% workflows human-executable | FAIL |
 
 **Required Evidence**:
 - Review workflow documentation
@@ -83,7 +139,7 @@ The pass/fail decision follows a multi-level assessment:
 | Condition | Result |
 |-----------|--------|
 | 100% decision points assigned | PASS |
-| 90-99% decision points assigned | CONDITIONAL (document gaps) |
+| 90–99% decision points assigned | CONDITIONAL (document gaps) |
 | <90% decision points assigned | FAIL |
 
 **Required Evidence**:
@@ -102,7 +158,7 @@ The pass/fail decision follows a multi-level assessment:
 | Condition | Result |
 |-----------|--------|
 | 100% elements mapped | PASS |
-| 90-99% elements mapped | CONDITIONAL (document gaps) |
+| 90–99% elements mapped | CONDITIONAL (document gaps) |
 | <90% elements mapped | FAIL |
 
 **Required Evidence**:
@@ -121,9 +177,9 @@ The pass/fail decision follows a multi-level assessment:
 **Assessment Method**: Terminology review by human non-specialist
 
 **Decision**:
-- ΓëÑ90% understood ΓåÆ PASS
-- 80-89% understood ΓåÆ CONDITIONAL
-- <80% understood ΓåÆ FAIL
+- ≥90% understood → PASS
+- 80–89% understood → CONDITIONAL
+- <80% understood → FAIL
 
 ### Criterion 2: Evidence Sufficiency
 
@@ -132,9 +188,9 @@ The pass/fail decision follows a multi-level assessment:
 **Assessment Method**: Guidelines completeness check
 
 **Decision**:
-- All scenario types covered ΓåÆ PASS
-- >80% scenario types covered ΓåÆ CONDITIONAL
-- Γëñ80% scenario types covered ΓåÆ FAIL
+- All scenario types covered → PASS
+- >80% scenario types covered → CONDITIONAL
+- ≤80% scenario types covered → FAIL
 
 ### Criterion 3: Responsibility Boundary
 
@@ -143,9 +199,9 @@ The pass/fail decision follows a multi-level assessment:
 **Assessment Method**: Responsibility matrix review
 
 **Decision**:
-- 100% decision points assigned ΓåÆ PASS
-- 90-99% assigned ΓåÆ CONDITIONAL
-- <90% assigned ΓåÆ FAIL
+- 100% decision points assigned → PASS
+- 90–99% assigned → CONDITIONAL
+- <90% assigned → FAIL
 
 ### Criterion 4: Review Boundary
 
@@ -154,9 +210,9 @@ The pass/fail decision follows a multi-level assessment:
 **Assessment Method**: Review scope documentation check
 
 **Decision**:
-- All reviews have explicit boundaries ΓåÆ PASS
-- >80% reviews have explicit boundaries ΓåÆ CONDITIONAL
-- Γëñ80% reviews have explicit boundaries ΓåÆ FAIL
+- All reviews have explicit boundaries → PASS
+- >80% reviews have explicit boundaries → CONDITIONAL
+- ≤80% reviews have explicit boundaries → FAIL
 
 ### Criterion 5: Confidence Boundary
 
@@ -165,9 +221,9 @@ The pass/fail decision follows a multi-level assessment:
 **Assessment Method**: Confidence assessment presence check
 
 **Decision**:
-- All judgments have confidence assessment ΓåÆ PASS
-- >80% judgments have confidence assessment ΓåÆ CONDITIONAL
-- Γëñ80% judgments have confidence assessment ΓåÆ FAIL
+- All judgments have confidence assessment → PASS
+- >80% judgments have confidence assessment → CONDITIONAL
+- ≤80% judgments have confidence assessment → FAIL
 
 ### Criterion 6: Pass/Fail Decision
 
@@ -176,9 +232,9 @@ The pass/fail decision follows a multi-level assessment:
 **Assessment Method**: Criteria definition completeness check
 
 **Decision**:
-- All scenarios have pass/fail criteria ΓåÆ PASS
-- >80% scenarios have criteria ΓåÆ CONDITIONAL
-- Γëñ80% scenarios have criteria ΓåÆ FAIL
+- All scenarios have pass/fail criteria → PASS
+- >80% scenarios have criteria → CONDITIONAL
+- ≤80% scenarios have criteria → FAIL
 
 ### Criterion 7: Runtime Inheritance Mapping
 
@@ -187,9 +243,9 @@ The pass/fail decision follows a multi-level assessment:
 **Assessment Method**: Inheritance mapping completeness check
 
 **Decision**:
-- All scenarios have mapping ΓåÆ PASS
-- >80% scenarios have mapping ΓåÆ CONDITIONAL
-- Γëñ80% scenarios have mapping ΓåÆ FAIL
+- All scenarios have mapping → PASS
+- >80% scenarios have mapping → CONDITIONAL
+- ≤80% scenarios have mapping → FAIL
 
 ---
 
@@ -197,59 +253,79 @@ The pass/fail decision follows a multi-level assessment:
 
 ### Scenario Pass Requirements
 
-A scenario passes if:
+A scenario is **governance-ready** if:
 
 1. All five Task100 graduation checks pass (or conditional with documented gaps)
 2. All seven criteria meet pass thresholds (or conditional with documented gaps)
 3. Human judgment is documented for all required decision points
+4. Expert review triggers are flagged where applicable
 
 ### Scenario Fail Triggers
 
-A scenario fails if ANY of the following:
+A scenario is **failed / unsafe** if ANY of the following:
 
 1. Reality Test fails (<90% claims traceable)
-2. Evidence Test fails (Γëñ80% claim types covered)
-3. Validation Test fails (Γëñ80% workflows human-executable)
+2. Evidence Test fails (≤80% claim types covered)
+3. Validation Test fails (≤80% workflows human-executable)
 4. Governance Test fails (<90% decision points assigned)
 5. Inheritance Test fails (<90% elements mapped)
 6. Any criterion fails (<80% threshold)
+7. Human readability falls below 80%
 
 ### Scenario Conditional Triggers
 
-A scenario is conditional if:
+A scenario is **partially usable** if:
 
 1. Any test is conditional (not failing)
 2. Any criterion is conditional
 3. Human judgment is incomplete
+4. Expert review triggers are present but not flagged
 
 ---
 
 ## Level 4: Overall Assessment
 
+### Outcome Category Definitions
+
+The test suite uses four practical outcome categories:
+
+| Category | Definition |
+|----------|------------|
+| **readable** | All governance terms are defined in plain language and the document structure is navigable by a non-specialist human reviewer without external references. Human readability is satisfied. |
+| **partially usable** | The governance output is structurally sound and has some actionable content, but has gaps — such as missing evidence sufficiency guidelines, undefined responsibility assignments, or incomplete confidence assessments — that require remediation before it can support a governance decision. |
+| **governance-ready** | The governance output passes all applicable checks: evidence sufficiency is defined, responsibility boundaries are assigned, confidence is assessed, review scope is explicit, expert review triggers are documented where applicable, and no required element is missing. The output is ready for human expert review and governance decision. |
+| **failed / unsafe** | The governance output has fundamental gaps — missing evidence requirements, undefined responsibility boundaries, absent confidence assessments, or any condition that means the output could be used to support a governance decision that is not adequately supported. It must not be used for governance purposes until remediated. |
+
+### Mapping from Earlier Framing
+
+| Previous Category | New Category |
+|-------------------|-------------|
+| PASS (all checks + all criteria) | governance-ready |
+| CONDITIONAL (partial completion) | partially usable |
+| FAIL (significant gaps) | failed / unsafe |
+| — | readable: prerequisite state; a governance-ready output is also readable |
+
 ### Overall Pass Requirements
 
-The test suite passes if:
+The test suite achieves **governance-ready** if:
 
-1. All five scenarios pass OR
-2. Four scenarios pass AND one scenario is conditional with documented remediation path
+1. All five scenarios are governance-ready, AND
+2. Expert review triggers are documented for all applicable scenarios, AND
+3. No scenario is failed / unsafe
 
-### Overall Fail Triggers
+The test suite is **partially usable** if:
 
-The test suite fails if ANY of the following:
+1. All five scenarios are governance-ready or partially usable, AND
+2. No scenario is failed / unsafe, AND
+3. Gaps are documented with remediation paths
 
-1. Three or more scenarios fail
-2. Any scenario fails AND one other scenario is conditional
+The test suite is **failed / unsafe** if ANY of the following:
+
+1. Three or more scenarios have fundamental gaps
+2. Any scenario is failed / unsafe AND one other scenario is partially usable
 3. Reality Test fails in two or more scenarios
 4. Evidence Test fails in two or more scenarios
 5. Human judgment cannot be documented for three or more scenarios
-
-### Overall Conditional Triggers
-
-The test suite is conditional if:
-
-1. One or two scenarios fail
-2. Remaining scenarios pass or are conditional
-3. Remediation paths exist for failed scenarios
 
 ---
 
@@ -257,48 +333,48 @@ The test suite is conditional if:
 
 ```
 START: Test Suite Execution
-Γöé
-Γö£ΓöÇΓû║ Execute Individual Tests
-Γöé   Γö£ΓöÇΓû║ Reality Test
-Γöé   Γö£ΓöÇΓû║ Evidence Test
-Γöé   Γö£ΓöÇΓû║ Validation Test
-Γöé   Γö£ΓöÇΓû║ Governance Test
-Γöé   ΓööΓöÇΓû║ Inheritance Test
-Γöé
-Γö£ΓöÇΓû║ Assess Criteria
-Γöé   Γö£ΓöÇΓû║ Human Readability
-Γöé   Γö£ΓöÇΓû║ Evidence Sufficiency
-Γöé   Γö£ΓöÇΓû║ Responsibility Boundary
-Γöé   Γö£ΓöÇΓû║ Review Boundary
-Γöé   Γö£ΓöÇΓû║ Confidence Boundary
-Γöé   Γö£ΓöÇΓû║ Pass/Fail Decision
-Γöé   ΓööΓöÇΓû║ Runtime Inheritance
-Γöé
-Γö£ΓöÇΓû║ Evaluate Scenario Results
-Γöé   Γö£ΓöÇΓû║ CarbonOS: PASS/FAIL/CONDITIONAL
-Γöé   Γö£ΓöÇΓû║ WaterOS: PASS/FAIL/CONDITIONAL
-Γöé   Γö£ΓöÇΓû║ EnergyOS: PASS/FAIL/CONDITIONAL
-Γöé   Γö£ΓöÇΓû║ BuildingOS: PASS/FAIL/CONDITIONAL
-Γöé   ΓööΓöÇΓû║ Climate Data: PASS/FAIL/CONDITIONAL
-Γöé
-ΓööΓöÇΓû║ Determine Overall Result
-    Γöé
-    Γö£ΓöÇΓû║ ALL 5 SCENARIOS PASS ΓåÆ GRADUATION: PASS
-    Γöé
-    Γö£ΓöÇΓû║ 4 PASS + 1 CONDITIONAL ΓåÆ GRADUATION: CONDITIONAL
-    Γöé
-    Γö£ΓöÇΓû║ 3 PASS + 2 FAIL ΓåÆ GRADUATION: CONDITIONAL (remediation required)
-    Γöé
-    Γö£ΓöÇΓû║ Γëñ2 PASS ΓåÆ GRADUATION: FAIL
-    Γöé
-    ΓööΓöÇΓû║ 3+ FAILURES ΓåÆ GRADUATION: FAIL (significant gaps)
+│
+├── Execute Individual Tests
+│   ├── Reality Test
+│   ├── Evidence Test
+│   ├── Validation Test
+│   ├── Governance Test
+│   └── Inheritance Test
+│
+├── Assess Criteria
+│   ├── Human Readability
+│   ├── Evidence Sufficiency
+│   ├── Responsibility Boundary
+│   ├── Review Boundary
+│   ├── Confidence Boundary
+│   ├── Pass/Fail Decision
+│   └── Runtime Inheritance
+│
+├── Evaluate Scenario Results
+│   ├── CarbonOS: governance-ready / partially usable / failed / unsafe
+│   ├── WaterOS: governance-ready / partially usable / failed / unsafe
+│   ├── EnergyOS: governance-ready / partially usable / failed / unsafe
+│   ├── BuildingOS: governance-ready / partially usable / failed / unsafe
+│   └── Climate Data: governance-ready / partially usable / failed / unsafe
+│
+└── Determine Overall Result
+    │
+    ├── ALL 5 SCENARIOS governance-ready → GRADUATION: PASS
+    │
+    ├── 4 governance-ready + 1 partially usable → GRADUATION: CONDITIONAL
+    │
+    ├── Any partially usable (no failed/unsafe) → GRADUATION: partially usable
+    │
+    ├── ≥1 failed / unsafe → GRADUATION: failed / unsafe
+    │
+    └── 3+ failed / unsafe → GRADUATION: failed / unsafe (significant gaps)
 ```
 
 ---
 
 ## Remediation Paths
 
-### For Conditional Results
+### For Partially Usable Results
 
 | Gap Type | Remediation Action | Timeline |
 |----------|-------------------|----------|
@@ -308,8 +384,9 @@ START: Test Suite Execution
 | Review boundary gaps | Define review scope | 5 business days |
 | Confidence gaps | Add confidence assessments | 3 business days |
 | Inheritance gaps | Complete Foundation mapping | 10 business days |
+| Expert trigger not flagged | Document applicable triggers and required expert type | 3 business days |
 
-### For Fail Results
+### For Failed / Unsafe Results
 
 | Fail Type | Remediation Action | Prerequisite |
 |-----------|-------------------|--------------|
@@ -321,18 +398,18 @@ START: Test Suite Execution
 
 ---
 
-## Pass/Fail Summary Matrix
+## Outcome Summary Matrix
 
-| Decision Level | Pass | Conditional | Fail |
-|----------------|------|-------------|------|
-| Reality Test | 100% traceable | 90-99% traceable | <90% traceable |
-| Evidence Test | 100% guidelines | >80% guidelines | Γëñ80% guidelines |
-| Validation Test | 100% human-executable | >80% human-executable | Γëñ80% human-executable |
-| Governance Test | 100% assigned | 90-99% assigned | <90% assigned |
-| Inheritance Test | 100% mapped | 90-99% mapped | <90% mapped |
-| Criteria | All pass | >80% pass | Γëñ80% pass |
-| Scenario | All tests pass | Tests + criteria pass | Any test fails |
-| Overall | All scenarios pass | 4 pass + 1 conditional | 3+ fail |
+| Decision Level | readable | partially usable | governance-ready | failed / unsafe |
+|----------------|----------|-----------------|-----------------|-----------------|
+| Reality Test | N/A | 90–99% traceable | 100% traceable | <90% traceable |
+| Evidence Test | N/A | >80% guidelines | 100% guidelines + sufficiency explicit | ≤80% guidelines |
+| Validation Test | N/A | >80% human-executable | 100% human-executable + complete | ≤80% human-executable |
+| Governance Test | N/A | 90–99% assigned | 100% assigned + explicit boundaries | <90% assigned |
+| Inheritance Test | N/A | 90–99% mapped | 100% mapped + documented | <90% mapped |
+| Criteria | N/A | >80% pass | All criteria defined + met | ≤80% pass |
+| Scenario | Structure sound | Some gaps; no unsafe gaps | All checks pass | Any fundamental gap |
+| Overall | Prerequisite | Gaps present; no unsafe | All 5 scenarios governance-ready | ≥1 fundamental gap |
 
 ---
 
@@ -340,19 +417,22 @@ START: Test Suite Execution
 
 ### Decision Categories
 
-**GRADUATION: PASS**
-- All five scenarios pass all tests and criteria
+**GRADUATION: PASS — governance-ready**
+- All five scenarios are governance-ready (all checks and criteria met)
 - Human judgment documented for all required points
+- Expert review triggers are flagged where applicable
+- No failed / unsafe scenario
 - No remediation required
 
-**GRADUATION: CONDITIONAL**
-- All five scenarios pass OR four pass + one conditional
+**GRADUATION: CONDITIONAL — partially usable**
+- All five scenarios are governance-ready or partially usable
 - Human judgment documented with gaps
-- Remediation path defined for conditional items
+- No failed / unsafe scenario
+- Remediation path defined for all partially usable items
 
-**GRADUATION: FAIL**
-- Three or more scenarios fail
-- Significant gaps in Foundation capability
+**GRADUATION: FAIL — failed / unsafe**
+- One or more scenarios is failed / unsafe
+- Fundamental gaps in Foundation capability
 - Remediation required before re-testing
 
 ### Decision Attestation
@@ -367,18 +447,28 @@ START: Test Suite Execution
 - Tests Failed: [Number]
 
 ### Scenario Results
-- CarbonOS: [PASS/CONDITIONAL/FAIL]
-- WaterOS: [PASS/CONDITIONAL/FAIL]
-- EnergyOS: [PASS/CONDITIONAL/FAIL]
-- BuildingOS: [PASS/CONDITIONAL/FAIL]
-- Climate Data: [PASS/CONDITIONAL/FAIL]
+- CarbonOS: [governance-ready / partially usable / failed / unsafe]
+- WaterOS: [governance-ready / partially usable / failed / unsafe]
+- EnergyOS: [governance-ready / partially usable / failed / unsafe]
+- BuildingOS: [governance-ready / partially usable / failed / unsafe]
+- Climate Data: [governance-ready / partially usable / failed / unsafe]
+
+### Expert Review Triggers Flagged
+- [List scenarios and which triggers were activated]
 
 ### Human Judgment Summary
 - Judgment Points: [Number]
 - Judgment Documented: [Number]
 - Gaps: [Description if any]
 
-### GRADUATION DECISION: [PASS/CONDITIONAL/FAIL]
+### GRADUATION DECISION: [governance-ready / partially usable / failed / unsafe]
+
+### Action Authority Statement
+A Task101 recommendation is not an action authority.
+It may identify a possible next step, review requirement, or decision option,
+but it cannot authorize implementation, approval, construction, investment,
+compliance declaration, public claim, or operational action without the
+required human, expert, or governance approval.
 
 ### Rationale:
 [Document the reasoning for the decision]

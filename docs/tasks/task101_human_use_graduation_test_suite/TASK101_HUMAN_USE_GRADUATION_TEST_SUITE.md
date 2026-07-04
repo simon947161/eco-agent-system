@@ -19,6 +19,62 @@ This test suite does NOT:
 - Create automated decision systems
 - Replace human judgment with algorithmic outputs
 
+## Action Authority Boundary
+
+**A Task101 recommendation is not an action authority.**
+
+It may identify a possible next step, review requirement, or decision option, but it cannot authorize:
+- implementation
+- approval
+- construction
+- investment
+- compliance declaration
+- public claim
+- operational action
+
+or any other action without the required human, expert, or governance approval.
+
+This boundary is absolute. It applies to every recommendation in every test suite output, regardless of governance-readiness rating.
+
+## Evidence Discipline Definitions
+
+The test suite uses these terms precisely. They must not be conflated:
+
+| Term | Definition |
+|------|------------|
+| **Raw data** | Unprocessed sensor outputs, survey results, field measurements, or third-party data records. Raw data has not been interpreted, filtered, or validated for governance use. |
+| **Observation** | A human-readable record or reading derived from raw data, selected and formatted for governance context. An observation is a selected statement of what was measured or recorded. |
+| **Inference** | A reasoned interpretation of one or more observations. An inference connects observations to a provisional meaning or implication. It is not a verified conclusion. |
+| **Evidence** | An observation or set of observations that is sufficient in quality, provenance, and relevance to support a specific governance claim. Evidence is evidence *for* a claim; it is not the claim itself. |
+| **Claim** | A specific, reviewable assertion put forward for governance evaluation. A claim requires evidence. A claim is not an observation or an inference dressed as fact. |
+| **Recommendation** | A suggested next step, review action, or decision option identified by the test suite. A recommendation identifies a possible path; it does not authorize, approve, or commit any party to action. |
+
+## Expert Review Triggers
+
+The test suite must escalate to qualified human experts — not rely on general ClimateOS review — when the scenario involves any of the following. Expert review is a governance requirement, not an optional enhancement:
+
+**Mandatory expert review triggers:**
+
+- **High uncertainty**: confidence cannot be reliably bounded with available data
+- **Conflicting evidence**: multiple credible sources yield contradictory observations
+- **Low confidence**: any judgment rated below the minimum confidence threshold for the scenario
+- **Missing critical data**: required evidence types are absent or known to be incomplete
+- **Regulatory consequence**: the scenario output bears on a regulatory obligation or compliance determination
+- **Engineering consequence**: the scenario output bears on structural, hydrological, geotechnical, or similar technical design
+- **Safety consequence**: the scenario output bears on occupational, public, or environmental safety
+- **Insurance consequence**: the scenario output may affect insurance coverage, liability, or indemnity positions
+- **Legal consequence**: the scenario output may affect legal rights, obligations, or proceedings
+- **Financial consequence**: the scenario output bears on material investment, expenditure, or financial disclosure
+- **Public-impact consequence**: the scenario output may affect public health, safety, or community interest
+- **Irreversible or high-cost project action**: the scenario involves construction, land use change, infrastructure deployment, or similar action that is costly or impractical to reverse
+- **Domain-specific technical judgment**: the scenario requires specialist knowledge beyond what general ClimateOS review can reasonably assess (e.g., carbon accounting methodology, stormwater modelling, building code compliance, satellite data calibration)
+
+When any trigger is present, the test suite output must:
+1. Explicitly flag the trigger(s) activated
+2. State that expert review is required before the governance output can be used
+3. Identify the type of expert required (domain, qualification level)
+4. Not present the governance output as sufficient for decision
+
 ## Inheritance from Task100
 
 The test suite inherits the five Task100 graduation checks and maps them to human use scenarios.
@@ -218,36 +274,38 @@ The test suite inherits the five Task100 graduation checks and maps them to huma
 3. Validate runtime-specific extensions
 4. Confirm dependency documentation
 
-## Pass/Fail Determination
+## Pass/Fail Decision Categories
 
-### Pass Criteria
+The test suite uses four practical outcome categories. They replace any earlier or alternative pass/fail framing:
 
-All five Task100 graduation checks must pass AND all seven test criteria must meet pass thresholds.
+| Category | Definition |
+|----------|------------|
+| **readable** | All governance terms are defined in plain language and the document structure is navigable by a non-specialist human reviewer without external references. Human readability is satisfied. |
+| **partially usable** | The governance output is structurally sound and has some actionable content, but has gaps — such as missing evidence sufficiency guidelines, undefined responsibility assignments, or incomplete confidence assessments — that require remediation before it can support a governance decision. |
+| **governance-ready** | The governance output passes all applicable checks: evidence sufficiency is defined, responsibility boundaries are assigned, confidence is assessed, review scope is explicit, expert review triggers are documented where applicable, and no required element is missing. The output is ready for human expert review and governance decision. |
+| **failed / unsafe** | The governance output has fundamental gaps — missing evidence requirements, undefined responsibility boundaries, absent confidence assessments, or any condition that means the output could be used to support a governance decision that is not adequately supported. It must not be used for governance purposes until remediated. |
 
-### Fail Criteria
+### Mapping to Earlier Framing
 
-Any of the following triggers a fail:
-
-1. Human readability below 90% threshold
-2. Missing evidence sufficiency guidelines
-3. Undefined responsibility boundaries
-4. Review scope gaps
-5. Missing confidence assessments
-6. Undefined pass/fail criteria
-7. Missing inheritance mappings
+| Old Category | New Category |
+|--------------|-------------|
+| PASS (all checks + all criteria) | governance-ready |
+| CONDITIONAL (partial completion) | partially usable |
+| FAIL (significant gaps) | failed / unsafe |
+| — (readability prerequisite) | readable: a prerequisite state, not a standalone outcome; a governance-ready output is also readable |
 
 ### Graduation Decision
 
-**PASS**: All checks and criteria met ΓåÆ ClimateOS Foundation supports human use graduation
+**governance-ready**: All checks and criteria met — ClimateOS Foundation supports human use graduation
 
-**FAIL**: Any check or criterion fails ΓåÆ ClimateOS Foundation requires remediation before human use
+**partially usable**: Gaps present — Specific gaps must be addressed before graduation
 
-**CONDITIONAL**: Partial completion ΓåÆ Specific gaps must be addressed before graduation
+**failed / unsafe**: Fundamental gaps — ClimateOS Foundation requires remediation before human use
 
 ## Scenario Coverage
 
 | Scenario | Reality Test | Evidence Test | Validation Test | Governance Test | Inheritance Test |
-|----------|-------------|---------------|-----------------|-----------------|------------------|
+|----------|--------------|---------------|-----------------|-----------------|------------------|
 | CarbonOS | Required | Required | Required | Required | Required |
 | WaterOS | Required | Required | Required | Required | Required |
 | EnergyOS | Required | Required | Required | Required | Required |
@@ -260,6 +318,7 @@ Any of the following triggers a fail:
 - Scenario outputs are NOT validated environmental conclusions
 - Human judgment is required for all final decisions
 - No automated decision-making is implied or enabled
+- A governance-ready output is not an approved plan, permit, investment, or compliance declaration
 
 ## References
 

@@ -46,15 +46,33 @@ The test suite inherits the five Task100 graduation checks:
 - Frozen artifact preservation: Task100 artifacts remain unchanged
 - Scope boundaries: Task102+ remain parked
 - Environmental conclusions: Scenario outputs are NOT validated environmental conclusions
+- Action authority boundary: A Task101 recommendation is not an action authority
+- Evidence discipline: Raw data, observation, inference, evidence, claim, and recommendation are defined and must not be conflated
+- Expert review triggers: Explicit governance escalation language covers 13 mandatory trigger conditions
 
 ## Authority
 
 Task101 Builder Task Book: `docs/tasks/TASK101_QCLAW_BUILDER_TASK_BOOK.md`  
 Task100 Freeze Record: `docs/tasks/TASK100_FOUNDATION_GRADUATION_FREEZE_RECORD.md`
 
+## Pass/Fail Decision Categories
+
+| Category | Definition |
+|----------|------------|
+| **readable** | All governance terms defined in plain language; navigable by non-specialist without external references |
+| **partially usable** | Structurally sound with gaps requiring remediation before governance use |
+| **governance-ready** | Passes all checks; ready for human expert review and governance decision |
+| **failed / unsafe** | Fundamental gaps; must not be used for governance until remediated |
+
 ## Status
 
-Draft: First-pass compact test suite for review.
+Draft Revised: Test suite revised to address Architecture Review revision requirements.
+
+**Revisions applied:**
+- Evidence discipline definitions (raw data, observation, inference, evidence, claim, recommendation)
+- Expert review trigger language (13 mandatory trigger conditions)
+- Action authority boundary statement
+- Pass/fail categories updated to four practical outcome categories
 
 ---
 

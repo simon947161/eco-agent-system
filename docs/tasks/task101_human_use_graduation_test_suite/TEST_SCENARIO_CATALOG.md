@@ -266,37 +266,115 @@ Evaluate whether the ClimateOS Foundation can support human judgment on:
 | Human Judgment Required | Yes | Yes | Yes | Yes | Yes |
 | Domain Diversity | Carbon | Water | Energy | Building | Climate |
 
+## Action Authority Boundary
+
+**A Task101 recommendation is not an action authority.**
+
+It may identify a possible next step, review requirement, or decision option, but it cannot authorize:
+- implementation
+- approval
+- construction
+- investment
+- compliance declaration
+- public claim
+- operational action
+
+or any other action without the required human, expert, or governance approval.
+
+This boundary applies to every scenario output, regardless of outcome category.
+
+## Expert Review Triggers
+
+Each scenario must flag expert review requirements when any of the following are present. Expert review is a governance requirement when:
+
+- High uncertainty: confidence cannot be reliably bounded with available data
+- Conflicting evidence: multiple credible sources yield contradictory observations
+- Low confidence: judgment rated below minimum confidence threshold
+- Missing critical data: required evidence types are absent or known incomplete
+- Regulatory consequence: scenario output bears on a regulatory obligation or compliance determination
+- Engineering consequence: scenario output bears on structural, hydrological, geotechnical, or similar technical design
+- Safety consequence: scenario output bears on occupational, public, or environmental safety
+- Insurance consequence: scenario output may affect insurance coverage, liability, or indemnity positions
+- Legal consequence: scenario output may affect legal rights, obligations, or proceedings
+- Financial consequence: scenario output bears on material investment, expenditure, or financial disclosure
+- Public-impact consequence: scenario output may affect public health, safety, or community interest
+- Irreversible or high-cost project action: scenario involves construction, land use change, infrastructure deployment
+- Domain-specific technical judgment: scenario requires specialist knowledge beyond general ClimateOS review capacity
+
+When any trigger is present, the scenario output must:
+1. Explicitly flag the trigger(s) activated
+2. State that expert review is required before the governance output can be used
+3. Identify the type of expert required (domain, qualification level)
+4. Not present the governance output as sufficient for decision
+
+## Evidence Discipline
+
+Each scenario maintains discipline in the use of these terms:
+
+| Term | Requirement |
+|------|-------------|
+| Raw data | Must not be presented as evidence without processing and observation selection |
+| Observation | Must be clearly distinguished from inference |
+| Inference | Must be labelled as provisional; not a claim or conclusion |
+| Evidence | Must be sufficient in quality, provenance, and relevance for the specific claim |
+| Claim | Must be clearly separated from observations and inferences |
+| Recommendation | Must not be presented as an authorization or approval |
+
+All scenarios require expert review flagging when any governance trigger is present:
+
+- CarbonOS: regulatory consequence, financial consequence, domain-specific judgment (carbon accounting) likely
+- WaterOS: engineering consequence, safety consequence, legal consequence likely
+- EnergyOS: regulatory consequence, financial consequence, public-impact consequence likely
+- BuildingOS: safety consequence, engineering consequence, insurance consequence likely
+- Climate Data: domain-specific technical judgment, conflicting evidence possible
+
 ## Common Patterns Across Scenarios
 
-### 1. Evidence Sufficiency
+### 1. Evidence Discipline
+All scenarios require evidence discipline that:
+- Distinguishes raw data from observation
+- Distinguishes observation from inference
+- Distinguishes inference from evidence
+- Distinguishes evidence from claim
+- Distinguishes claim from recommendation
+
+### 2. Evidence Sufficiency
 All scenarios require evidence sufficiency guidelines that are:
 - Human-executable without automated tools
 - Explicit and documented
 - Consistent across scenario types
 
-### 2. Responsibility Assignment
+### 3. Responsibility Assignment
 All scenarios require responsibility boundaries that:
 - Assign human decision-makers
 - Define escalation paths
 - Document accountability mechanisms
 
-### 3. Review Scope
+### 4. Review Scope
 All scenarios require review scope definitions that:
 - Limit review to governance capability
 - Exclude technical validation
 - Define review outputs clearly
 
-### 4. Confidence Communication
+### 5. Confidence Communication
 All scenarios require confidence boundaries that:
 - Communicate uncertainty explicitly
 - Define confidence factors
 - Enable revisability
 
-### 5. Inheritance Mapping
+### 6. Inheritance Mapping
 All scenarios require inheritance paths that:
 - Reference Foundation capabilities
 - Document domain-specific extensions
 - Enable future runtime inheritance
+
+### 7. Expert Review Triggering
+All scenarios require explicit expert review flagging when any trigger is present:
+- CarbonOS: regulatory, financial, domain-specific triggers likely
+- WaterOS: engineering, safety, legal triggers likely
+- EnergyOS: regulatory, financial, public-impact triggers likely
+- BuildingOS: safety, engineering, insurance triggers likely
+- Climate Data: domain-specific, conflicting-evidence triggers possible
 
 ## Scenario Limitations
 
