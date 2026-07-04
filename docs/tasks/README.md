@@ -31,6 +31,8 @@ human-friendly task summaries and working templates.
 - [Task101+ Recommendations](TASK101_PLUS_RECOMMENDATIONS.md)
 - [Task100 QCLAW Builder Task Book](TASK100_QCLAW_BUILDER_TASK_BOOK.md)
 - [Task101 QCLAW Builder Task Book](TASK101_QCLAW_BUILDER_TASK_BOOK.md)
+- [Task101 Human Use Graduation Test Suite Approval Record](TASK101_HUMAN_USE_GRADUATION_TEST_SUITE_APPROVAL_RECORD.md)
+- [Task101 Human Use Graduation Test Suite Freeze Record](TASK101_HUMAN_USE_GRADUATION_TEST_SUITE_FREEZE_RECORD.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -64,4 +66,7 @@ human-friendly task summaries and working templates.
 ## Task101 - Human Use Graduation Test Suite Dispatch
 
 - [Task101 QCLAW Builder Task Book](TASK101_QCLAW_BUILDER_TASK_BOOK.md)
+- [Task101 Human Use Graduation Test Suite](task101_human_use_graduation_test_suite/README.md)
+- [Task101 Human Use Graduation Test Suite Approval Record](TASK101_HUMAN_USE_GRADUATION_TEST_SUITE_APPROVAL_RECORD.md)
+- [Task101 Human Use Graduation Test Suite Freeze Record](TASK101_HUMAN_USE_GRADUATION_TEST_SUITE_FREEZE_RECORD.md)
 
