@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Waiting | Task100 should wait for explicit architecture review and authorization. |
+| Task102-110 | Review | CarbonOS Fast Track Sprint 01 documentation package is prepared for architecture review. |
 
 ## Recently Completed Local Work
 
@@ -47,6 +47,8 @@ For the canonical record, use the
 | Task97 | Completed | Validation Demonstration foundation created. |
 | Task98 | Completed | Validation Runtime Integration Review foundation created. |
 | Task99 | Completed | Task100 Preflight Review foundation created. |
+| Task100 | Completed / Frozen | Foundation Graduation Review approved and frozen. |
+| Task101 | Completed / Frozen | Human Use Graduation Test Suite approved and frozen. |
 
 ## Boundary
 

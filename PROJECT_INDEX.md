@@ -118,6 +118,8 @@ Use it as a first stop before adding new project content.
 - [Batch 23 Validation IO and Benchmark Review](docs/tasks/BATCH23_VALIDATION_IO_AND_BENCHMARK_REVIEW.md)
 - [Batch 24 Validation Examples and Reference Objects Review](docs/tasks/BATCH24_VALIDATION_EXAMPLES_AND_REFERENCE_OBJECTS_REVIEW.md)
 - [Batch 25 Validation Demonstration and Preflight Review](docs/tasks/BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
+- [Task102-110 CarbonOS Fast Track Builder Task Book](docs/tasks/TASK102_110_CARBONOS_FAST_TRACK_BUILDER_TASK_BOOK.md)
+- [Task102-110 CarbonOS Fast Track Sprint 01](docs/tasks/task102_110_carbonos_fast_track_sprint_01/README.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -130,8 +132,8 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- No active task is currently selected. Task100 should wait for explicit
-  architecture review and authorization.
+- Task102-110 CarbonOS Fast Track Sprint 01 is prepared for review.
+- Task100 and Task101 are completed and frozen.
 
 ## Completed Tasks
 
@@ -186,3 +188,7 @@ boundaries before runtime capability.
 - [Batch25 Review](docs/tasks/BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
 - [Task101+ Parking List](docs/tasks/TASK101_PLUS_RECOMMENDATIONS.md)
 
+## Task102-110 - CarbonOS Fast Track Sprint 01
+
+- [Task102-110 CarbonOS Fast Track Builder Task Book](docs/tasks/TASK102_110_CARBONOS_FAST_TRACK_BUILDER_TASK_BOOK.md)
+- [Task102-110 CarbonOS Fast Track Sprint 01](docs/tasks/task102_110_carbonos_fast_track_sprint_01/README.md)
