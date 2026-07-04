@@ -260,7 +260,7 @@ Most risks are manageable with documented mitigation.
 
 **Assessment**: NONE
 
-No identified risks block Task100 architecture review.
+No identified risks block Task100.
 
 ### Critical Risks
 
@@ -300,7 +300,7 @@ Phase 3 risks are manageable with documented mitigation.
 
 No blocking or critical risks identified.
 
-Task100 can be reviewed with confidence.
+Task100 can proceed with confidence.
 
 ## Status
 
