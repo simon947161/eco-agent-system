@@ -39,6 +39,8 @@ human-friendly task summaries and working templates.
 - [Task102-110 CarbonOS Fast Track Sprint 01](task102_110_carbonos_fast_track_sprint_01/README.md)
 - [Task110-120 Repository Handoff Reconciliation](TASK110_120_REPOSITORY_HANDOFF_RECONCILIATION.md)
 - [Task111-120 CarbonOS Evidence Passport Builder Task Book](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_BUILDER_TASK_BOOK.md)
+- [Task111-120 CarbonOS Evidence Passport Approval Record](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_APPROVAL_RECORD.md)
+- [Task111-120 CarbonOS Evidence Passport Freeze Record](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_FREEZE_RECORD.md)
 - [Task111-120 CarbonOS Evidence Passport](task111_120_carbonos_evidence_passport/README.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
@@ -84,8 +86,10 @@ human-friendly task summaries and working templates.
 - [Task102-110 CarbonOS Fast Track Approval Record](TASK102_110_CARBONOS_FAST_TRACK_APPROVAL_RECORD.md)
 - [Task102-110 CarbonOS Fast Track Freeze Record](TASK102_110_CARBONOS_FAST_TRACK_FREEZE_RECORD.md)
 
-## Task111-120 - CarbonOS Evidence Passport Dispatch
+## Task111-120 - CarbonOS Evidence Passport and Claim Review Expansion
 
 - [Task110-120 Repository Handoff Reconciliation](TASK110_120_REPOSITORY_HANDOFF_RECONCILIATION.md)
 - [Task111-120 CarbonOS Evidence Passport Builder Task Book](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_BUILDER_TASK_BOOK.md)
 - [Task111-120 CarbonOS Evidence Passport](task111_120_carbonos_evidence_passport/README.md)
+- [Task111-120 CarbonOS Evidence Passport Approval Record](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_APPROVAL_RECORD.md)
+- [Task111-120 CarbonOS Evidence Passport Freeze Record](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_FREEZE_RECORD.md)

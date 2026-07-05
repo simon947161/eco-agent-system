@@ -120,6 +120,10 @@ Use it as a first stop before adding new project content.
 - [Batch 25 Validation Demonstration and Preflight Review](docs/tasks/BATCH25_VALIDATION_DEMONSTRATION_AND_PREFLIGHT_REVIEW.md)
 - [Task102-110 CarbonOS Fast Track Builder Task Book](docs/tasks/TASK102_110_CARBONOS_FAST_TRACK_BUILDER_TASK_BOOK.md)
 - [Task102-110 CarbonOS Fast Track Sprint 01](docs/tasks/task102_110_carbonos_fast_track_sprint_01/README.md)
+- [Task111-120 CarbonOS Evidence Passport Builder Task Book](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_BUILDER_TASK_BOOK.md)
+- [Task111-120 CarbonOS Evidence Passport](docs/tasks/task111_120_carbonos_evidence_passport/README.md)
+- [Task111-120 CarbonOS Evidence Passport Approval Record](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_APPROVAL_RECORD.md)
+- [Task111-120 CarbonOS Evidence Passport Freeze Record](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_FREEZE_RECORD.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -132,8 +136,8 @@ Use it as a first stop before adding new project content.
 
 ## Active Tasks
 
-- Task102-110 CarbonOS Fast Track Sprint 01 is prepared for review.
-- Task100 and Task101 are completed and frozen.
+- No active implementation task is open.
+- Task100, Task101, Task102-110, and Task111-120 are completed and frozen.
 
 ## Completed Tasks
 
@@ -192,3 +196,13 @@ boundaries before runtime capability.
 
 - [Task102-110 CarbonOS Fast Track Builder Task Book](docs/tasks/TASK102_110_CARBONOS_FAST_TRACK_BUILDER_TASK_BOOK.md)
 - [Task102-110 CarbonOS Fast Track Sprint 01](docs/tasks/task102_110_carbonos_fast_track_sprint_01/README.md)
+- [Task102-110 CarbonOS Fast Track Approval Record](docs/tasks/TASK102_110_CARBONOS_FAST_TRACK_APPROVAL_RECORD.md)
+- [Task102-110 CarbonOS Fast Track Freeze Record](docs/tasks/TASK102_110_CARBONOS_FAST_TRACK_FREEZE_RECORD.md)
+
+## Task111-120 - CarbonOS Evidence Passport and Claim Review Expansion
+
+- [Task110-120 Repository Handoff Reconciliation](docs/tasks/TASK110_120_REPOSITORY_HANDOFF_RECONCILIATION.md)
+- [Task111-120 CarbonOS Evidence Passport Builder Task Book](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_BUILDER_TASK_BOOK.md)
+- [Task111-120 CarbonOS Evidence Passport](docs/tasks/task111_120_carbonos_evidence_passport/README.md)
+- [Task111-120 CarbonOS Evidence Passport Approval Record](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_APPROVAL_RECORD.md)
+- [Task111-120 CarbonOS Evidence Passport Freeze Record](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_FREEZE_RECORD.md)

@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Waiting | Task102-110 is closed / frozen. Task111+ should wait for explicit task authorization. |
+| None | Waiting | Task111-120 is closed / frozen. Task121+ should wait for explicit task authorization. |
 
 ## Recently Completed Local Work
 
@@ -50,6 +50,7 @@ For the canonical record, use the
 | Task100 | Completed / Frozen | Foundation Graduation Review approved and frozen. |
 | Task101 | Completed / Frozen | Human Use Graduation Test Suite approved and frozen. |
 | Task102-110 | Completed / Frozen | CarbonOS Fast Track Sprint 01 approved, merged, and frozen with minor notes. |
+| Task111-120 | Completed / Frozen | CarbonOS Evidence Passport and Claim Review Expansion approved, merged, and frozen with minor notes resolved. |
 
 ## Boundary
 
