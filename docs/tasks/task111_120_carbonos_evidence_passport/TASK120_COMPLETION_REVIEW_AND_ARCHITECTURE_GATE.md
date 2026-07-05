@@ -128,7 +128,7 @@ The package may be merged and frozen if:
 1. Codex completes review using this checklist
 2. ChatGPT completes architecture gate using this checklist
 3. User provides final gate approval
-4. Codex merges `qcloud/task111-120-carbonos-evidence-passport-draft` into `task46-repository-control-codex-batch-queue`
+4. Codex merges the final approved Task111-120 review branch into `task46-repository-control-codex-batch-queue`
 5. Codex creates Task111-120 Approval Record
 6. Codex creates Task111-120 Freeze Record
 7. Codex updates task docs index
