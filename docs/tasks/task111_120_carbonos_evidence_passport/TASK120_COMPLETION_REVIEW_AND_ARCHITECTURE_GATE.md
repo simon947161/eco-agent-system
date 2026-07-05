@@ -14,7 +14,7 @@ Codex reviews the package for repository integrity, documentation quality, and b
 
 | Check | Criteria | Status |
 |-------|----------|--------|
-| Correct branch | Package created on `qcloud/task111-120-carbonos-evidence-passport-draft` branch | [ ] Pass [ ] Fail |
+| Correct branch | Package reviewed through the final approved Task111-120 review branch | [ ] Pass [ ] Fail |
 | Correct base | Branch created from `origin/task46-repository-control-codex-batch-queue` at `bdbd307` | [ ] Pass [ ] Fail |
 | No unauthorized modifications | No Task100, Task101, Batch25, Task102-110 artifacts modified | [ ] Pass [ ] Fail |
 | File count | 11 files created in `docs/tasks/task111_120_carbonos_evidence_passport/` | [ ] Pass [ ] Fail |
