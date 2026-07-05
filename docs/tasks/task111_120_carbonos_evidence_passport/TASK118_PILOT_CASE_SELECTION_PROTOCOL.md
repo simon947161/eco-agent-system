@@ -199,6 +199,6 @@ Task119 may proceed (record QCloud builder dispatch).
 
 ---
 
-**Status**: Draft  
-**Authority**: Task111-120 - QCloud Builder  
+**Status**: Draft
+**Authority**: Task111-120 - QCloud Builder
 **Date**: 2026-07-05

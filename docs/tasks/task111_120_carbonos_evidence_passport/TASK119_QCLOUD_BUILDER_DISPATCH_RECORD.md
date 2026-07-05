@@ -203,6 +203,6 @@ Task120 may proceed (create completion review and architecture gate).
 
 ---
 
-**Status**: Draft  
-**Authority**: Task111-120 - QCloud Builder  
+**Status**: Draft
+**Authority**: Task111-120 - QCloud Builder
 **Date**: 2026-07-05

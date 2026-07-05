@@ -181,6 +181,6 @@ Task117 may proceed (define governance boundary and decision log model).
 
 ---
 
-**Status**: Draft  
-**Authority**: Task111-120 - QCloud Builder  
+**Status**: Draft
+**Authority**: Task111-120 - QCloud Builder
 **Date**: 2026-07-05

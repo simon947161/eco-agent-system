@@ -146,6 +146,6 @@ Task112-120 may proceed.
 
 ---
 
-**Status**: Draft  
-**Authority**: Task111-120 - QCloud Builder  
+**Status**: Draft
+**Authority**: Task111-120 - QCloud Builder
 **Date**: 2026-07-05

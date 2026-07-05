@@ -175,6 +175,6 @@ Task115 may proceed (define human review workflow).
 
 ---
 
-**Status**: Draft  
-**Authority**: Task111-120 - QCloud Builder  
+**Status**: Draft
+**Authority**: Task111-120 - QCloud Builder
 **Date**: 2026-07-05

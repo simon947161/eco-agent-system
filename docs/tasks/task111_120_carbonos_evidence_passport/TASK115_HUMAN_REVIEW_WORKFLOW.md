@@ -20,7 +20,7 @@ Governance Boundary Check → Decision / Recommendation → Decision Log
 
 ### Step 1: Claim Intake
 
-**Input**: Claim owner submits claim for review  
+**Input**: Claim owner submits claim for review
 **Output**: Completed Claim Intake Record (Task113 template)
 
 **Actions**:
@@ -46,7 +46,7 @@ Governance Boundary Check → Decision / Recommendation → Decision Log
 
 ### Step 2: Evidence Bundle Assembly
 
-**Input**: Completed intake record; evidence sources  
+**Input**: Completed intake record; evidence sources
 **Output**: Completed Evidence Bundle (Task114 structure)
 
 **Actions**:
@@ -71,7 +71,7 @@ Governance Boundary Check → Decision / Recommendation → Decision Log
 
 ### Step 3: Evidence Sufficiency Assessment
 
-**Input**: Completed evidence bundle  
+**Input**: Completed evidence bundle
 **Output**: Sufficiency assessment against defined criteria
 
 **Assessment dimensions** (from Task105, expanded):
@@ -96,7 +96,7 @@ Governance Boundary Check → Decision / Recommendation → Decision Log
 
 ### Step 4: Expert Review Trigger Check
 
-**Input**: Completed evidence bundle; sufficiency assessment; trigger matrix (Task116)  
+**Input**: Completed evidence bundle; sufficiency assessment; trigger matrix (Task116)
 **Output**: Trigger assessment; expert review required or not
 
 **Trigger check procedure**:
@@ -131,7 +131,7 @@ Governance Boundary Check → Decision / Recommendation → Decision Log
 
 ### Step 5: Expert Review (If Triggered)
 
-**Input**: Evidence bundle; sufficiency assessment; trigger flags  
+**Input**: Evidence bundle; sufficiency assessment; trigger flags
 **Output**: Expert review opinion; updated sufficiency assessment
 
 **Expert review procedure**:
@@ -153,7 +153,7 @@ Governance Boundary Check → Decision / Recommendation → Decision Log
 
 ### Step 6: Governance Boundary Check
 
-**Input**: Evidence bundle; sufficiency assessment; expert review (if any)  
+**Input**: Evidence bundle; sufficiency assessment; expert review (if any)
 **Output**: Governance boundary confirmation; decision recommendation
 
 **Boundary check procedure**:
@@ -180,7 +180,7 @@ Governance Boundary Check → Decision / Recommendation → Decision Log
 
 ### Step 7: Decision / Recommendation
 
-**Input**: All prior steps completed  
+**Input**: All prior steps completed
 **Output**: Decision or recommendation; decision log entry
 
 **Decision types**:
@@ -205,7 +205,7 @@ Governance Boundary Check → Decision / Recommendation → Decision Log
 
 ### Step 8: Decision Log
 
-**Input**: Completed review; decision made  
+**Input**: Completed review; decision made
 **Output**: Decision log entry in Evidence Passport
 
 **Decision log contents**:
@@ -262,6 +262,6 @@ Task116 may proceed (expand expert review trigger matrix).
 
 ---
 
-**Status**: Draft  
-**Authority**: Task111-120 - QCloud Builder  
+**Status**: Draft
+**Authority**: Task111-120 - QCloud Builder
 **Date**: 2026-07-05
