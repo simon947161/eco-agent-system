@@ -2,23 +2,93 @@
 
 ## Purpose
 
-This folder is reserved for the next CarbonOS documentation package:
+This package expands Task102-110 CarbonOS Fast Track Sprint 01 into an Evidence Passport and claim review planning layer for CarbonOS.
 
-```text
-Task111-120 CarbonOS Evidence Passport and Claim Review Expansion
-```
+It is a documentation-only package. It does not implement CarbonOS Runtime, APIs, MCP tools, websites, calculators, databases, compliance engines, assurance engines, scoring engines, automated decisions, operational authority, or validated carbon conclusions.
 
-The package should expand Task102-110 into an Evidence Passport and claim review planning layer for CarbonOS.
+## Package Scope
 
-## Current Status
+The Evidence Passport is a documentation concept for structuring how carbon and ESG claims are reviewed. It defines:
 
-```text
-READY FOR BUILDER DISPATCH
-```
+- how evidence is grouped and presented for human review
+- how claims are separated from observations, inferences, and recommendations
+- how expert review triggers are identified and escalated
+- how responsibility boundaries are recorded and maintained
+- how governance decisions are logged without asserting authority
 
-No Task111-120 implementation documents have been created yet.
+## Task Map
 
-This README only records the intended package location and scope.
+| Task | Title | Status |
+| --- | --- | --- |
+| Task111 | Post-Task102-110 Continuity and Reconciliation | Draft |
+| Task112 | CarbonOS Evidence Passport v0.1 Concept | Draft |
+| Task113 | Carbon Claim Intake Record Template | Draft |
+| Task114 | Carbon Evidence Bundle Structure | Draft |
+| Task115 | Human Review Workflow for Carbon / ESG Claims | Draft |
+| Task116 | Expert Review Trigger Matrix Expansion | Draft |
+| Task117 | Governance Boundary and Decision Log Model | Draft |
+| Task118 | Pilot Case Selection Protocol | Draft |
+| Task119 | QCloud Builder Dispatch Record | Draft |
+| Task120 | Completion Review and Architecture Gate | Draft |
+
+## Required Inheritance
+
+Task111-120 inherits:
+
+- Task100 Foundation Graduation boundary
+- A100-01 Environmental Mainline Protection Principle
+- Task101 Human Use Graduation Test Suite, including full expert review trigger language
+- Task102-110 CarbonOS Fast Track Sprint 01 documentation-only boundary
+- action-authority boundary
+- evidence discipline: raw data, observation, inference, evidence, claim, recommendation
+
+## Expert Review Trigger Expansion
+
+Task102-110 passed with a minor note that expert review triggers were narrower than full Task101 language.
+
+Task111-120 restores and explicitly maps the broader Task101 trigger language while preserving CarbonOS-specific triggers.
+
+Task101 triggers to restore:
+
+- high uncertainty
+- low confidence
+- safety consequence
+- insurance consequence
+- public-impact consequence
+- domain-specific technical review
+
+CarbonOS-specific triggers to preserve:
+
+- conflicting evidence
+- missing critical data
+- regulatory consequence
+- engineering consequence
+- legal consequence
+- financial consequence
+- irreversible or high-cost project action
+
+## Mandatory Boundaries
+
+Task111-120 must not:
+
+- implement CarbonOS Runtime
+- create APIs, MCP tools, websites, calculators, or databases
+- create compliance engines, assurance engines, or scoring engines
+- create automated decisions or operational authority
+- generate real carbon conclusions or create public disclosure claims
+- authorize compliance, investment, construction, approval, operation, or public environmental claims
+- modify Task100 frozen artifacts
+- modify Task101 frozen artifacts
+- modify Batch25 authority records
+- modify Task102-110 frozen artifacts without Change Request
+- start executable software work
+- start Task121 or later tasks
+
+## Action-Authority Boundary
+
+A CarbonOS / ClimateOS recommendation is not an action authority.
+
+It may identify a possible next step, review requirement, or decision option, but it cannot authorize implementation, approval, construction, investment, compliance declaration, public claim, or operational action without the required human, expert, or governance approval.
 
 ## Source Documents
 
@@ -28,16 +98,26 @@ This README only records the intended package location and scope.
 - [Task101 Human Use Graduation Test Suite Freeze Record](../TASK101_HUMAN_USE_GRADUATION_TEST_SUITE_FREEZE_RECORD.md)
 - [Task100 Foundation Graduation Freeze Record](../TASK100_FOUNDATION_GRADUATION_FREEZE_RECORD.md)
 
-## Boundary
+## Status
 
-Task111-120 must remain documentation-only until reviewed and approved.
+```text
+Task111-120 Builder Draft: READY FOR CODEX INTEGRATION REVIEW
+```
 
-It must not implement CarbonOS Runtime, APIs, MCP tools, websites, calculators, databases, compliance engines, assurance engines, scoring engines, automated decisions, operational authority, or validated carbon conclusions.
-
-## Expected Builder
+Builder:
 
 ```text
 QCloud
 ```
 
-Codex remains repository manager and integration reviewer.
+Codex role:
+
+```text
+Repository manager and integration reviewer
+```
+
+Date:
+
+```text
+2026-07-05
+```
