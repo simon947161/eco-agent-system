@@ -132,6 +132,7 @@ Use it as a first stop before adding new project content.
 - [Task132 Git Permission and Transport Risk Diagnosis](docs/tasks/task131_140_repository_stability_recovery/TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
 - [Task133-135 Workspace Operating Protocol](docs/tasks/task131_140_repository_stability_recovery/TASK133_135_WORKSPACE_OPERATING_PROTOCOL.md)
 - [Task136-139 CarbonOS Next Phase Readiness Planning Pack](docs/tasks/task131_140_repository_stability_recovery/TASK136_139_CARBONOS_READINESS_PLANNING_PACK.md)
+- [Task140 Closure / Architecture Gate](docs/tasks/task131_140_repository_stability_recovery/TASK140_CLOSURE_ARCHITECTURE_GATE.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -150,7 +151,8 @@ Use it as a first stop before adding new project content.
 - Task131 Repository Environment Incident Review and Workspace Inventory is completed.
 - Task132 Git Permission and Transport Risk Diagnosis is completed.
 - Task133-135 Workspace Operating Protocol is completed.
-- Task136-139 CarbonOS Next Phase Readiness Planning Pack is drafted for review; Task140 is not started.
+- Task136-139 CarbonOS Next Phase Readiness Planning Pack is completed.
+- Task140 Closure / Architecture Gate is completed; Task141-150 are not started.
 
 ## Completed Tasks
 
@@ -233,3 +235,4 @@ boundaries before runtime capability.
 - [Task132 Git Permission and Transport Risk Diagnosis](docs/tasks/task131_140_repository_stability_recovery/TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
 - [Task133-135 Workspace Operating Protocol](docs/tasks/task131_140_repository_stability_recovery/TASK133_135_WORKSPACE_OPERATING_PROTOCOL.md)
 - [Task136-139 CarbonOS Next Phase Readiness Planning Pack](docs/tasks/task131_140_repository_stability_recovery/TASK136_139_CARBONOS_READINESS_PLANNING_PACK.md)
+- [Task140 Closure / Architecture Gate](docs/tasks/task131_140_repository_stability_recovery/TASK140_CLOSURE_ARCHITECTURE_GATE.md)

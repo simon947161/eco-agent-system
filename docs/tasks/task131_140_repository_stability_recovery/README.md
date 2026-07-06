@@ -4,11 +4,11 @@
 
 This folder contains controlled documentation-only Task131-140 recovery work.
 
-The Task131-140 Formal Execution Brief defines the sprint as repository-stability and operating-mode recovery first. This folder records controlled documentation-only work through Task136-139.
+The Task131-140 Formal Execution Brief defines the sprint as repository-stability and operating-mode recovery first. This folder records controlled documentation-only work through Task140 closure / architecture gate.
 
 ## Scope Boundary
 
-Task131-139 are limited to repository environment review, Git diagnosis, workspace operating protocol, and CarbonOS next-phase readiness planning.
+Task131-140 are limited to repository environment review, Git diagnosis, workspace operating protocol, CarbonOS next-phase readiness planning, and sprint closure / architecture gate documentation.
 
 This folder does not create runtime capability, API capability, MCP capability, website capability, calculator capability, database capability, compliance capability, assurance capability, scoring capability, automation, real carbon conclusions, public disclosure claims, or QCloud dispatch.
 
@@ -25,7 +25,7 @@ This folder does not create runtime capability, API capability, MCP capability, 
 | Task137 | CarbonOS Evidence Passport next-phase options, documentation-only | Completed |
 | Task138 | Human / expert review escalation model refinement, documentation-only | Completed |
 | Task139 | Non-operational pilot-to-runtime readiness gap review, documentation-only | Completed |
-| Task140 | Task131-140 closure / architecture gate | Not started |
+| Task140 | Task131-140 closure / architecture gate | Completed |
 
 ## Documents
 
@@ -33,6 +33,7 @@ This folder does not create runtime capability, API capability, MCP capability, 
 - [Task132 Git Permission and Transport Risk Diagnosis](TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
 - [Task133-135 Workspace Operating Protocol](TASK133_135_WORKSPACE_OPERATING_PROTOCOL.md)
 - [Task136-139 CarbonOS Next Phase Readiness Planning Pack](TASK136_139_CARBONOS_READINESS_PLANNING_PACK.md)
+- [Task140 Closure / Architecture Gate](TASK140_CLOSURE_ARCHITECTURE_GATE.md)
 
 ## QCloud Status
 
@@ -47,8 +48,8 @@ Task131: COMPLETED
 Task132: COMPLETED
 Task133-135: COMPLETED
 Task136-139: COMPLETED
-Task140: NOT STARTED
+Task140: COMPLETED
 QCloud Builder Work: SUSPENDED
 Runtime Implementation: NOT STARTED
-Closure Records: NOT CREATED
+Task141-150: NOT STARTED
 ```

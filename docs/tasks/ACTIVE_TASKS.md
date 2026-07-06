@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| Task136-139 | Review | CarbonOS next-phase readiness planning pack drafted; Task140 is not started. |
+| None | Idle | Task131-140 recovery readiness sprint closed; Task141-150 are not started. |
 
 ## Recently Completed Local Work
 
@@ -56,6 +56,8 @@ For the canonical record, use the
 | Task131 | Completed | Repository environment incident review and workspace inventory completed and pushed. |
 | Task132 | Completed | Git permission and transport risk diagnosis completed and pushed. |
 | Task133-135 | Completed | Workspace operating protocol completed and pushed. |
+| Task136-139 | Completed | CarbonOS next-phase readiness planning pack completed and pushed. |
+| Task140 | Completed | Task131-140 closure / architecture gate completed and pushed. |
 
 ## Boundary
 

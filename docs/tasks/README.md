@@ -49,6 +49,7 @@ human-friendly task summaries and working templates.
 - [Task132 Git Permission and Transport Risk Diagnosis](task131_140_repository_stability_recovery/TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
 - [Task133-135 Workspace Operating Protocol](task131_140_repository_stability_recovery/TASK133_135_WORKSPACE_OPERATING_PROTOCOL.md)
 - [Task136-139 CarbonOS Next Phase Readiness Planning Pack](task131_140_repository_stability_recovery/TASK136_139_CARBONOS_READINESS_PLANNING_PACK.md)
+- [Task140 Closure / Architecture Gate](task131_140_repository_stability_recovery/TASK140_CLOSURE_ARCHITECTURE_GATE.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -111,3 +112,4 @@ human-friendly task summaries and working templates.
 - [Task132 Git Permission and Transport Risk Diagnosis](task131_140_repository_stability_recovery/TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
 - [Task133-135 Workspace Operating Protocol](task131_140_repository_stability_recovery/TASK133_135_WORKSPACE_OPERATING_PROTOCOL.md)
 - [Task136-139 CarbonOS Next Phase Readiness Planning Pack](task131_140_repository_stability_recovery/TASK136_139_CARBONOS_READINESS_PLANNING_PACK.md)
+- [Task140 Closure / Architecture Gate](task131_140_repository_stability_recovery/TASK140_CLOSURE_ARCHITECTURE_GATE.md)
