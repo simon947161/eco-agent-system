@@ -47,6 +47,7 @@ human-friendly task summaries and working templates.
 - [Task131-140 Formal Execution Brief Freeze Record](TASK131_140_FORMAL_EXECUTION_BRIEF_FREEZE_RECORD.md)
 - [Task131-140 Repository Stability Recovery](task131_140_repository_stability_recovery/README.md)
 - [Task132 Git Permission and Transport Risk Diagnosis](task131_140_repository_stability_recovery/TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
+- [Task133-135 Workspace Operating Protocol](task131_140_repository_stability_recovery/TASK133_135_WORKSPACE_OPERATING_PROTOCOL.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -107,3 +108,4 @@ human-friendly task summaries and working templates.
 - [Task131-140 Repository Stability Recovery](task131_140_repository_stability_recovery/README.md)
 - [Task131 Repository Environment Incident Review and Workspace Inventory](task131_140_repository_stability_recovery/TASK131_REPOSITORY_ENVIRONMENT_INCIDENT_REVIEW_AND_WORKSPACE_INVENTORY.md)
 - [Task132 Git Permission and Transport Risk Diagnosis](task131_140_repository_stability_recovery/TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
+- [Task133-135 Workspace Operating Protocol](task131_140_repository_stability_recovery/TASK133_135_WORKSPACE_OPERATING_PROTOCOL.md)

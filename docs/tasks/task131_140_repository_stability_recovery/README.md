@@ -17,10 +17,10 @@ This folder does not create runtime capability, API capability, MCP capability, 
 | Task | Focus | Status |
 | --- | --- | --- |
 | Task131 | Repository environment incident review and workspace inventory | Completed |
-| Task132 | Diagnose prior `.git` permission failures and Windows Git / Schannel risks | Draft / Review |
-| Task133 | Confirm stable D drive Codex workspace operating mode | Not started |
-| Task134 | Git health-check protocol for branch, commit, status, fetch, and push readiness | Not started |
-| Task135 | Codex workspace operating rules and no-QCloud builder boundary | Not started |
+| Task132 | Diagnose prior `.git` permission failures and Windows Git / Schannel risks | Completed |
+| Task133 | Confirm stable D drive Codex workspace operating mode | Completed |
+| Task134 | Git health-check protocol for branch, commit, status, fetch, and push readiness | Completed |
+| Task135 | Codex workspace operating rules and no-QCloud builder boundary | Completed |
 | Task136 | Task121-130 dependency and reuse review for next CarbonOS phase | Not started |
 | Task137 | CarbonOS Evidence Passport next-phase options, documentation-only | Not started |
 | Task138 | Human / expert review escalation model refinement, documentation-only | Not started |
@@ -31,6 +31,7 @@ This folder does not create runtime capability, API capability, MCP capability, 
 
 - [Task131 Repository Environment Incident Review and Workspace Inventory](TASK131_REPOSITORY_ENVIRONMENT_INCIDENT_REVIEW_AND_WORKSPACE_INVENTORY.md)
 - [Task132 Git Permission and Transport Risk Diagnosis](TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
+- [Task133-135 Workspace Operating Protocol](TASK133_135_WORKSPACE_OPERATING_PROTOCOL.md)
 
 ## QCloud Status
 
@@ -42,8 +43,9 @@ No QCloud draft branch, dispatch packet, executable builder assignment, runtime 
 
 ```text
 Task131: COMPLETED
-Task132: DRAFT / REVIEW
-Task133-140: NOT STARTED
+Task132: COMPLETED
+Task133-135: COMPLETED
+Task136-140: NOT STARTED
 QCloud Builder Work: SUSPENDED
 Runtime Implementation: NOT STARTED
 Closure Records: NOT CREATED
