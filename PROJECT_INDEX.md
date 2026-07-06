@@ -124,6 +124,9 @@ Use it as a first stop before adding new project content.
 - [Task111-120 CarbonOS Evidence Passport](docs/tasks/task111_120_carbonos_evidence_passport/README.md)
 - [Task111-120 CarbonOS Evidence Passport Approval Record](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_APPROVAL_RECORD.md)
 - [Task111-120 CarbonOS Evidence Passport Freeze Record](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_FREEZE_RECORD.md)
+- [Task131-140 Formal Execution Brief](docs/tasks/TASK131_140_FORMAL_EXECUTION_BRIEF.md)
+- [Task131-140 Formal Execution Brief Approval Record](docs/tasks/TASK131_140_FORMAL_EXECUTION_BRIEF_APPROVAL_RECORD.md)
+- [Task131-140 Formal Execution Brief Freeze Record](docs/tasks/TASK131_140_FORMAL_EXECUTION_BRIEF_FREEZE_RECORD.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -137,7 +140,8 @@ Use it as a first stop before adding new project content.
 ## Active Tasks
 
 - No active implementation task is open.
-- Task100, Task101, Task102-110, and Task111-120 are completed and frozen.
+- Task100, Task101, Task102-110, Task111-120, and Task121-130 are completed and frozen.
+- Task131-140 Formal Execution Brief is completed and frozen as a gate / brief artifact only; Task131-140 implementation is not started.
 
 ## Completed Tasks
 
@@ -206,3 +210,9 @@ boundaries before runtime capability.
 - [Task111-120 CarbonOS Evidence Passport](docs/tasks/task111_120_carbonos_evidence_passport/README.md)
 - [Task111-120 CarbonOS Evidence Passport Approval Record](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_APPROVAL_RECORD.md)
 - [Task111-120 CarbonOS Evidence Passport Freeze Record](docs/tasks/TASK111_120_CARBONOS_EVIDENCE_PASSPORT_FREEZE_RECORD.md)
+
+## Task131-140 - Formal Execution Brief
+
+- [Task131-140 Formal Execution Brief](docs/tasks/TASK131_140_FORMAL_EXECUTION_BRIEF.md)
+- [Task131-140 Formal Execution Brief Approval Record](docs/tasks/TASK131_140_FORMAL_EXECUTION_BRIEF_APPROVAL_RECORD.md)
+- [Task131-140 Formal Execution Brief Freeze Record](docs/tasks/TASK131_140_FORMAL_EXECUTION_BRIEF_FREEZE_RECORD.md)
