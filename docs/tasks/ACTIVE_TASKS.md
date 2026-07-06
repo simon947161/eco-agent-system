@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Waiting | Task121-130 is closed / frozen. Task131+ should wait for explicit task authorization. |
+| Task131 | Review | Repository environment incident review and workspace inventory drafted; Task132-140 are not started. |
 
 ## Recently Completed Local Work
 

@@ -42,6 +42,10 @@ human-friendly task summaries and working templates.
 - [Task111-120 CarbonOS Evidence Passport Approval Record](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_APPROVAL_RECORD.md)
 - [Task111-120 CarbonOS Evidence Passport Freeze Record](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_FREEZE_RECORD.md)
 - [Task111-120 CarbonOS Evidence Passport](task111_120_carbonos_evidence_passport/README.md)
+- [Task131-140 Formal Execution Brief](TASK131_140_FORMAL_EXECUTION_BRIEF.md)
+- [Task131-140 Formal Execution Brief Approval Record](TASK131_140_FORMAL_EXECUTION_BRIEF_APPROVAL_RECORD.md)
+- [Task131-140 Formal Execution Brief Freeze Record](TASK131_140_FORMAL_EXECUTION_BRIEF_FREEZE_RECORD.md)
+- [Task131-140 Repository Stability Recovery](task131_140_repository_stability_recovery/README.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -93,3 +97,11 @@ human-friendly task summaries and working templates.
 - [Task111-120 CarbonOS Evidence Passport](task111_120_carbonos_evidence_passport/README.md)
 - [Task111-120 CarbonOS Evidence Passport Approval Record](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_APPROVAL_RECORD.md)
 - [Task111-120 CarbonOS Evidence Passport Freeze Record](TASK111_120_CARBONOS_EVIDENCE_PASSPORT_FREEZE_RECORD.md)
+
+## Task131-140 - Repository Stability Recovery
+
+- [Task131-140 Formal Execution Brief](TASK131_140_FORMAL_EXECUTION_BRIEF.md)
+- [Task131-140 Formal Execution Brief Approval Record](TASK131_140_FORMAL_EXECUTION_BRIEF_APPROVAL_RECORD.md)
+- [Task131-140 Formal Execution Brief Freeze Record](TASK131_140_FORMAL_EXECUTION_BRIEF_FREEZE_RECORD.md)
+- [Task131-140 Repository Stability Recovery](task131_140_repository_stability_recovery/README.md)
+- [Task131 Repository Environment Incident Review and Workspace Inventory](task131_140_repository_stability_recovery/TASK131_REPOSITORY_ENVIRONMENT_INCIDENT_REVIEW_AND_WORKSPACE_INVENTORY.md)
