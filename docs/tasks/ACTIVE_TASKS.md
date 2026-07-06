@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Idle | Task131-140 recovery readiness sprint closed; Task141-150 are not started. |
+| Task141-150 Formal Brief | Review | Formal Brief drafted for CarbonOS comparative accounting and climate validation architecture prototype sprint; Task141 implementation is not started. |
 
 ## Recently Completed Local Work
 
