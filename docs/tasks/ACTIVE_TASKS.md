@@ -52,6 +52,7 @@ For the canonical record, use the
 | Task102-110 | Completed / Frozen | CarbonOS Fast Track Sprint 01 approved, merged, and frozen with minor notes. |
 | Task111-120 | Completed / Frozen | CarbonOS Evidence Passport and Claim Review Expansion approved, merged, and frozen with minor notes resolved. |
 | Task121-130 | Completed / Frozen | CarbonOS Evidence Passport Non-Operational Pilot Design approved, merged, and frozen. |
+| Task131-140 Formal Brief | Completed / Frozen | Formal Execution Brief approved and frozen as a gate / brief artifact only; Task131-140 implementation is not started. |
 
 ## Boundary
 
