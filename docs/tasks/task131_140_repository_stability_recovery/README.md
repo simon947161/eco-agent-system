@@ -16,8 +16,8 @@ This folder does not create runtime capability, API capability, MCP capability, 
 
 | Task | Focus | Status |
 | --- | --- | --- |
-| Task131 | Repository environment incident review and workspace inventory | Draft / Review |
-| Task132 | Diagnose prior `.git` permission failures and Windows Git / Schannel risks | Not started |
+| Task131 | Repository environment incident review and workspace inventory | Completed |
+| Task132 | Diagnose prior `.git` permission failures and Windows Git / Schannel risks | Draft / Review |
 | Task133 | Confirm stable D drive Codex workspace operating mode | Not started |
 | Task134 | Git health-check protocol for branch, commit, status, fetch, and push readiness | Not started |
 | Task135 | Codex workspace operating rules and no-QCloud builder boundary | Not started |
@@ -30,18 +30,20 @@ This folder does not create runtime capability, API capability, MCP capability, 
 ## Documents
 
 - [Task131 Repository Environment Incident Review and Workspace Inventory](TASK131_REPOSITORY_ENVIRONMENT_INCIDENT_REVIEW_AND_WORKSPACE_INVENTORY.md)
+- [Task132 Git Permission and Transport Risk Diagnosis](TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
 
 ## QCloud Status
 
 QCloud remains suspended from ClimateOS and BuildingOS work unless the founder later revises that decision through explicit future authorization.
 
-No QCloud draft branch, dispatch packet, executable builder assignment, runtime task, merge task, freeze task, architecture task, or governance-sensitive task is created by Task131.
+No QCloud draft branch, dispatch packet, executable builder assignment, runtime task, merge task, freeze task, architecture task, or governance-sensitive task is created by this recovery package.
 
 ## Current Package Status
 
 ```text
-Task131: DRAFT / REVIEW
-Task132-140: NOT STARTED
+Task131: COMPLETED
+Task132: DRAFT / REVIEW
+Task133-140: NOT STARTED
 QCloud Builder Work: SUSPENDED
 Runtime Implementation: NOT STARTED
 Closure Records: NOT CREATED

@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| Task131 | Review | Repository environment incident review and workspace inventory drafted; Task132-140 are not started. |
+| Task132 | Review | Git permission and transport risk diagnosis drafted; Task133-140 are not started. |
 
 ## Recently Completed Local Work
 
@@ -53,6 +53,7 @@ For the canonical record, use the
 | Task111-120 | Completed / Frozen | CarbonOS Evidence Passport and Claim Review Expansion approved, merged, and frozen with minor notes resolved. |
 | Task121-130 | Completed / Frozen | CarbonOS Evidence Passport Non-Operational Pilot Design approved, merged, and frozen. |
 | Task131-140 Formal Brief | Completed / Frozen | Formal Execution Brief approved and frozen as a gate / brief artifact only; Task131-140 implementation is not started. |
+| Task131 | Completed | Repository environment incident review and workspace inventory completed and pushed. |
 
 ## Boundary
 

@@ -129,6 +129,7 @@ Use it as a first stop before adding new project content.
 - [Task131-140 Formal Execution Brief Freeze Record](docs/tasks/TASK131_140_FORMAL_EXECUTION_BRIEF_FREEZE_RECORD.md)
 - [Task131-140 Repository Stability Recovery](docs/tasks/task131_140_repository_stability_recovery/README.md)
 - [Task131 Repository Environment Incident Review and Workspace Inventory](docs/tasks/task131_140_repository_stability_recovery/TASK131_REPOSITORY_ENVIRONMENT_INCIDENT_REVIEW_AND_WORKSPACE_INVENTORY.md)
+- [Task132 Git Permission and Transport Risk Diagnosis](docs/tasks/task131_140_repository_stability_recovery/TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -144,7 +145,8 @@ Use it as a first stop before adding new project content.
 - No active runtime implementation task is open.
 - Task100, Task101, Task102-110, Task111-120, and Task121-130 are completed and frozen.
 - Task131-140 Formal Execution Brief is completed and frozen as a gate / brief artifact only; Task131-140 implementation is not started.
-- Task131 Repository Environment Incident Review and Workspace Inventory is drafted for review; Task132-140 are not started.
+- Task131 Repository Environment Incident Review and Workspace Inventory is completed.
+- Task132 Git Permission and Transport Risk Diagnosis is drafted for review; Task133-140 are not started.
 
 ## Completed Tasks
 
@@ -224,3 +226,4 @@ boundaries before runtime capability.
 
 - [Task131-140 Repository Stability Recovery](docs/tasks/task131_140_repository_stability_recovery/README.md)
 - [Task131 Repository Environment Incident Review and Workspace Inventory](docs/tasks/task131_140_repository_stability_recovery/TASK131_REPOSITORY_ENVIRONMENT_INCIDENT_REVIEW_AND_WORKSPACE_INVENTORY.md)
+- [Task132 Git Permission and Transport Risk Diagnosis](docs/tasks/task131_140_repository_stability_recovery/TASK132_GIT_PERMISSION_AND_TRANSPORT_RISK_DIAGNOSIS.md)
