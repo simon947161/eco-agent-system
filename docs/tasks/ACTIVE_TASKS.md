@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| Task133-135 | Review | Workspace operating protocol drafted; Task136-140 are not started. |
+| Task136-139 | Review | CarbonOS next-phase readiness planning pack drafted; Task140 is not started. |
 
 ## Recently Completed Local Work
 
@@ -55,6 +55,7 @@ For the canonical record, use the
 | Task131-140 Formal Brief | Completed / Frozen | Formal Execution Brief approved and frozen as a gate / brief artifact only; Task131-140 implementation is not started. |
 | Task131 | Completed | Repository environment incident review and workspace inventory completed and pushed. |
 | Task132 | Completed | Git permission and transport risk diagnosis completed and pushed. |
+| Task133-135 | Completed | Workspace operating protocol completed and pushed. |
 
 ## Boundary
 
