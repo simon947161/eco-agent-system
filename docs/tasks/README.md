@@ -71,6 +71,17 @@ human-friendly task summaries and working templates.
 - [Task158 Abstract Non-Operational Example Design Rules](task151_160_carbonos_research_activation/TASK158_ABSTRACT_NON_OPERATIONAL_EXAMPLE_DESIGN_RULES.md)
 - [Task159 Research-To-Architecture Handoff Gate](task151_160_carbonos_research_activation/TASK159_RESEARCH_TO_ARCHITECTURE_HANDOFF_GATE.md)
 - [Task160 Closure And Task161+ Decision](task151_160_carbonos_research_activation/TASK160_CLOSURE_AND_TASK161_DECISION.md)
+- [Task161-170 Official Source Discovery With Runtime Lens](task161_170_carbonos_hybrid_enhancement/README.md)
+- [Task161 Official Source Discovery Runtime Lens Control](task161_170_carbonos_hybrid_enhancement/TASK161_OFFICIAL_SOURCE_DISCOVERY_RUNTIME_LENS_CONTROL.md)
+- [Task162 Official Source Candidate Register Runtime Lens](task161_170_carbonos_hybrid_enhancement/TASK162_OFFICIAL_SOURCE_CANDIDATE_REGISTER_RUNTIME_LENS.md)
+- [Task163 Runtime Relevance Metadata Model](task161_170_carbonos_hybrid_enhancement/TASK163_RUNTIME_RELEVANCE_METADATA_MODEL.md)
+- [Task164 Source Freshness And Errata Checks](task161_170_carbonos_hybrid_enhancement/TASK164_SOURCE_FRESHNESS_AND_ERRATA_CHECKS.md)
+- [Task165 Source Authority Boundary](task161_170_carbonos_hybrid_enhancement/TASK165_SOURCE_AUTHORITY_BOUNDARY.md)
+- [Task166 Cross-Framework Source Dependency Map](task161_170_carbonos_hybrid_enhancement/TASK166_CROSS_FRAMEWORK_SOURCE_DEPENDENCY_MAP.md)
+- [Task167 Runtime Lens Heat Resilience Source Boundary](task161_170_carbonos_hybrid_enhancement/TASK167_RUNTIME_LENS_HEAT_RESILIENCE_SOURCE_BOUNDARY.md)
+- [Task168 Extreme Event And Observation Source Discovery](task161_170_carbonos_hybrid_enhancement/TASK168_EXTREME_EVENT_AND_OBSERVATION_SOURCE_DISCOVERY.md)
+- [Task169 Source-To-Evidence Passport Handoff Gate](task161_170_carbonos_hybrid_enhancement/TASK169_SOURCE_TO_EVIDENCE_PASSPORT_HANDOFF_GATE.md)
+- [Task170 Closure And Task171 Decision](task161_170_carbonos_hybrid_enhancement/TASK170_CLOSURE_AND_TASK171_DECISION.md)
 - [Task161-200 Runtime Integration Gap Analysis Brief](task161_200_runtime_integration_gap_analysis/CLIMATEOS_TASK161_200_BASELINE_V1_RUNTIME_GAP_ANALYSIS_AND_CODEX_BRIEF.md)
 - [ClimateOS Runtime Integrity Layer v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_RUNTIME_INTEGRITY_LAYER_v0.1.md)
 - [ClimateOS OOD And Extreme Event Evidence Pipeline v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_OOD_AND_EXTREME_EVENT_EVIDENCE_PIPELINE_v0.1.md)
@@ -171,6 +182,17 @@ human-friendly task summaries and working templates.
 
 ## Task161-200 - Runtime Integration Gap Analysis
 
+- [Task161-170 Official Source Discovery With Runtime Lens](task161_170_carbonos_hybrid_enhancement/README.md)
+- [Task161 Official Source Discovery Runtime Lens Control](task161_170_carbonos_hybrid_enhancement/TASK161_OFFICIAL_SOURCE_DISCOVERY_RUNTIME_LENS_CONTROL.md)
+- [Task162 Official Source Candidate Register Runtime Lens](task161_170_carbonos_hybrid_enhancement/TASK162_OFFICIAL_SOURCE_CANDIDATE_REGISTER_RUNTIME_LENS.md)
+- [Task163 Runtime Relevance Metadata Model](task161_170_carbonos_hybrid_enhancement/TASK163_RUNTIME_RELEVANCE_METADATA_MODEL.md)
+- [Task164 Source Freshness And Errata Checks](task161_170_carbonos_hybrid_enhancement/TASK164_SOURCE_FRESHNESS_AND_ERRATA_CHECKS.md)
+- [Task165 Source Authority Boundary](task161_170_carbonos_hybrid_enhancement/TASK165_SOURCE_AUTHORITY_BOUNDARY.md)
+- [Task166 Cross-Framework Source Dependency Map](task161_170_carbonos_hybrid_enhancement/TASK166_CROSS_FRAMEWORK_SOURCE_DEPENDENCY_MAP.md)
+- [Task167 Runtime Lens Heat Resilience Source Boundary](task161_170_carbonos_hybrid_enhancement/TASK167_RUNTIME_LENS_HEAT_RESILIENCE_SOURCE_BOUNDARY.md)
+- [Task168 Extreme Event And Observation Source Discovery](task161_170_carbonos_hybrid_enhancement/TASK168_EXTREME_EVENT_AND_OBSERVATION_SOURCE_DISCOVERY.md)
+- [Task169 Source-To-Evidence Passport Handoff Gate](task161_170_carbonos_hybrid_enhancement/TASK169_SOURCE_TO_EVIDENCE_PASSPORT_HANDOFF_GATE.md)
+- [Task170 Closure And Task171 Decision](task161_170_carbonos_hybrid_enhancement/TASK170_CLOSURE_AND_TASK171_DECISION.md)
 - [Task161-200 Runtime Integration Gap Analysis Brief](task161_200_runtime_integration_gap_analysis/CLIMATEOS_TASK161_200_BASELINE_V1_RUNTIME_GAP_ANALYSIS_AND_CODEX_BRIEF.md)
 - [ClimateOS Runtime Integrity Layer v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_RUNTIME_INTEGRITY_LAYER_v0.1.md)
 - [ClimateOS OOD And Extreme Event Evidence Pipeline v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_OOD_AND_EXTREME_EVENT_EVIDENCE_PIPELINE_v0.1.md)
@@ -182,4 +204,4 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161+ still not started unless Founder explicitly approves.
+Task161-170 is now closed as documentation-only official source discovery with runtime lens. Task171-180 Official Framework Intake is not started unless Founder explicitly approves.

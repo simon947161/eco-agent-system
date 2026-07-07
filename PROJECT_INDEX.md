@@ -157,6 +157,8 @@ Use it as a first stop before adding new project content.
 - [Task158 Abstract Non-Operational Example Design Rules](docs/tasks/task151_160_carbonos_research_activation/TASK158_ABSTRACT_NON_OPERATIONAL_EXAMPLE_DESIGN_RULES.md)
 - [Task159 Research-To-Architecture Handoff Gate](docs/tasks/task151_160_carbonos_research_activation/TASK159_RESEARCH_TO_ARCHITECTURE_HANDOFF_GATE.md)
 - [Task160 Closure And Task161+ Decision](docs/tasks/task151_160_carbonos_research_activation/TASK160_CLOSURE_AND_TASK161_DECISION.md)
+- [Task161-170 Official Source Discovery With Runtime Lens](docs/tasks/task161_170_carbonos_hybrid_enhancement/README.md)
+- [Task162 Official Source Candidate Register Runtime Lens](docs/tasks/task161_170_carbonos_hybrid_enhancement/TASK162_OFFICIAL_SOURCE_CANDIDATE_REGISTER_RUNTIME_LENS.md)
 - [Task161-200 Runtime Integration Gap Analysis Brief](docs/tasks/task161_200_runtime_integration_gap_analysis/CLIMATEOS_TASK161_200_BASELINE_V1_RUNTIME_GAP_ANALYSIS_AND_CODEX_BRIEF.md)
 - [ClimateOS Runtime Integrity Layer v0.1](docs/tasks/task161_200_runtime_integration_gap_analysis/CLIMATEOS_RUNTIME_INTEGRITY_LAYER_v0.1.md)
 - [ClimateOS OOD And Extreme Event Evidence Pipeline v0.1](docs/tasks/task161_200_runtime_integration_gap_analysis/CLIMATEOS_OOD_AND_EXTREME_EVENT_EVIDENCE_PIPELINE_v0.1.md)
@@ -187,9 +189,10 @@ Use it as a first stop before adding new project content.
 - Task141 Formal Brief Approval and Boundary Gate is completed as a documentation-only gate; Task142 was later started by separate Founder instruction and completed as documentation-only architecture work.
 - Task142 CarbonOS Comparative Accounting Scope Map is completed as documentation-only architecture work.
 - Task143-150 CarbonOS Comparative Accounting and Climate Validation architecture records are completed; Task141-150 is closed / architecture-gated and Task151+ is not started.
-- Task151-160 CarbonOS Research Activation Batch is completed; Task151-160 is closed / research-activation-gated and Task161+ is not started.
-- Task161-200 Runtime Integration Gap Analysis enhancement layer is completed as documentation-only gap analysis; Baseline v1.0 remains preserved and Task161-170 official source discovery is not started.
-- Architecture Baseline v1.1 is frozen; Founder Review Completed; Task161 Official Source Discovery is not started.
+- Task151-160 CarbonOS Research Activation Batch is completed; Task151-160 is closed / research-activation-gated.
+- Task161-200 Runtime Integration Gap Analysis enhancement layer is completed as documentation-only gap analysis; Baseline v1.0 remains preserved.
+- Architecture Baseline v1.1 is frozen; Founder Review Completed.
+- Task161-170 Official Source Discovery with Runtime Lens is completed as a documentation-only source discovery package; Task171-180 Official Framework Intake is not started.
 
 ## Completed Tasks
 
@@ -303,6 +306,8 @@ boundaries before runtime capability.
 
 ## Task161-200 - Runtime Integration Gap Analysis
 
+- [Task161-170 Official Source Discovery With Runtime Lens](docs/tasks/task161_170_carbonos_hybrid_enhancement/README.md)
+- [Task162 Official Source Candidate Register Runtime Lens](docs/tasks/task161_170_carbonos_hybrid_enhancement/TASK162_OFFICIAL_SOURCE_CANDIDATE_REGISTER_RUNTIME_LENS.md)
 - [Task161-200 Runtime Integration Gap Analysis Brief](docs/tasks/task161_200_runtime_integration_gap_analysis/CLIMATEOS_TASK161_200_BASELINE_V1_RUNTIME_GAP_ANALYSIS_AND_CODEX_BRIEF.md)
 - [ClimateOS Runtime Integrity Layer v0.1](docs/tasks/task161_200_runtime_integration_gap_analysis/CLIMATEOS_RUNTIME_INTEGRITY_LAYER_v0.1.md)
 - [ClimateOS OOD And Extreme Event Evidence Pipeline v0.1](docs/tasks/task161_200_runtime_integration_gap_analysis/CLIMATEOS_OOD_AND_EXTREME_EVENT_EVIDENCE_PIPELINE_v0.1.md)
@@ -314,4 +319,4 @@ boundaries before runtime capability.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161+ still not started unless Founder explicitly approves.
+Task161-170 is now closed as documentation-only official source discovery with runtime lens. Task171-180 Official Framework Intake is not started unless Founder explicitly approves.

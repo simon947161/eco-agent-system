@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | No active implementation task open | Architecture Baseline v1.1 is frozen; Founder Review Completed; Task161 Official Source Discovery is not started. |
+| None | No active implementation task open | Task161-170 Official Source Discovery with Runtime Lens is closed as a documentation-only source discovery package; Task171-180 Official Framework Intake is not started. |
 
 ## Recently Completed Local Work
 
@@ -77,9 +77,10 @@ For the canonical record, use the
 | Task157 | Completed | Evidence Passport Source-Linkage Upgrade completed as documentation-only planning; no real evidence records created. |
 | Task158 | Completed | Abstract Non-Operational Example Design Rules completed; no examples created. |
 | Task159 | Completed | Research-To-Architecture Handoff Gate completed; no research findings promoted to architecture. |
-| Task160 | Completed | Closure and Task161+ Decision completed; Task151-160 closed / research-activation-gated and Task161+ not started. |
-| Task161-200 Runtime Integration Gap Analysis | Completed | Documentation-only enhancement layer completed; Baseline v1.0 remains preserved; Task161-170 official source discovery is not started. This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route. |
-| Architecture Baseline v1.1 Freeze | Completed / Frozen | Founder Review Completed; Task161 Official Source Discovery is not started; no runtime, API, database, MCP, automation, scoring, standards research, compliance claim, certification claim, or operational ESG claim created. |
+| Task160 | Completed | Closure and Task161+ Decision completed; Task151-160 closed / research-activation-gated. |
+| Task161-200 Runtime Integration Gap Analysis | Completed | Documentation-only enhancement layer completed; Baseline v1.0 remains preserved. This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route. |
+| Architecture Baseline v1.1 Freeze | Completed / Frozen | Founder Review Completed; this freeze preceded Task161-170 and remains the frozen architecture baseline. |
+| Task161-170 Official Source Discovery With Runtime Lens | Completed | Documentation-only source discovery package created; no standards interpretation, framework intake, comparative mapping, runtime, API, database, MCP, scoring, automation, compliance, assurance, certification, real-world ESG / carbon claim, or QCloud resume. |
 
 ## Boundary
 
