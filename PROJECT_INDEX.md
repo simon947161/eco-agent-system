@@ -134,6 +134,7 @@ Use it as a first stop before adding new project content.
 - [Task136-139 CarbonOS Next Phase Readiness Planning Pack](docs/tasks/task131_140_repository_stability_recovery/TASK136_139_CARBONOS_READINESS_PLANNING_PACK.md)
 - [Task140 Closure / Architecture Gate](docs/tasks/task131_140_repository_stability_recovery/TASK140_CLOSURE_ARCHITECTURE_GATE.md)
 - [Task141-150 Formal Brief](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
+- [Task141 Formal Brief Approval And Boundary Gate](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -153,8 +154,8 @@ Use it as a first stop before adding new project content.
 - Task132 Git Permission and Transport Risk Diagnosis is completed.
 - Task133-135 Workspace Operating Protocol is completed.
 - Task136-139 CarbonOS Next Phase Readiness Planning Pack is completed.
-- Task140 Closure / Architecture Gate is completed; Task141-150 are not started.
-- Task141-150 Formal Brief is drafted for review; Task141 implementation is not started.
+- Task140 Closure / Architecture Gate is completed.
+- Task141 Formal Brief Approval and Boundary Gate is completed as a documentation-only gate; Task142 is not started.
 
 ## Completed Tasks
 
@@ -242,3 +243,4 @@ boundaries before runtime capability.
 ## Task141-150 - CarbonOS Comparative Accounting And Climate Validation
 
 - [Task141-150 Formal Brief](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
+- [Task141 Formal Brief Approval And Boundary Gate](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
