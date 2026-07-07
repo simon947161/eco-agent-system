@@ -136,6 +136,14 @@ Use it as a first stop before adding new project content.
 - [Task141-150 Formal Brief](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
 - [Task141 Formal Brief Approval And Boundary Gate](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
 - [Task142 CarbonOS Comparative Accounting Scope Map](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK142_CARBONOS_COMPARATIVE_ACCOUNTING_SCOPE_MAP.md)
+- [Task143 Cross-Standard Method Mapping Research Protocol](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK143_CROSS_STANDARD_METHOD_MAPPING_RESEARCH_PROTOCOL.md)
+- [Task144 Non-Authoritative Method And Formula Registry Concept](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK144_NON_AUTHORITATIVE_METHOD_FORMULA_REGISTRY_CONCEPT.md)
+- [Task145 Evidence Passport v0.2 Comparative Review Model](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK145_EVIDENCE_PASSPORT_V0_2_COMPARATIVE_REVIEW_MODEL.md)
+- [Task146 CarbonOS Claim Boundary And Intake Upgrade](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK146_CARBONOS_CLAIM_BOUNDARY_AND_INTAKE_UPGRADE.md)
+- [Task147 ClimateOS / EcoEngine Validation Question Model](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK147_CLIMATEOS_ECOENGINE_VALIDATION_QUESTION_MODEL.md)
+- [Task148 MCP / Multi-Agent Dependency Decision Record](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK148_MCP_MULTI_AGENT_DEPENDENCY_DECISION_RECORD.md)
+- [Task149 Non-Operational Analytical Prototype Readiness Gate](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK149_NON_OPERATIONAL_ANALYTICAL_PROTOTYPE_READINESS_GATE.md)
+- [Task150 Architecture Gate And Task151+ Decision](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK150_ARCHITECTURE_GATE_AND_TASK151_DECISION.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -157,7 +165,8 @@ Use it as a first stop before adding new project content.
 - Task136-139 CarbonOS Next Phase Readiness Planning Pack is completed.
 - Task140 Closure / Architecture Gate is completed.
 - Task141 Formal Brief Approval and Boundary Gate is completed as a documentation-only gate; Task142 was later started by separate Founder instruction and completed as documentation-only architecture work.
-- Task142 CarbonOS Comparative Accounting Scope Map is completed as documentation-only architecture work; Task143 is not started.
+- Task142 CarbonOS Comparative Accounting Scope Map is completed as documentation-only architecture work.
+- Task143-150 CarbonOS Comparative Accounting and Climate Validation architecture records are completed; Task141-150 is closed / architecture-gated and Task151+ is not started.
 
 ## Completed Tasks
 
@@ -247,3 +256,11 @@ boundaries before runtime capability.
 - [Task141-150 Formal Brief](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
 - [Task141 Formal Brief Approval And Boundary Gate](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
 - [Task142 CarbonOS Comparative Accounting Scope Map](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK142_CARBONOS_COMPARATIVE_ACCOUNTING_SCOPE_MAP.md)
+- [Task143 Cross-Standard Method Mapping Research Protocol](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK143_CROSS_STANDARD_METHOD_MAPPING_RESEARCH_PROTOCOL.md)
+- [Task144 Non-Authoritative Method And Formula Registry Concept](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK144_NON_AUTHORITATIVE_METHOD_FORMULA_REGISTRY_CONCEPT.md)
+- [Task145 Evidence Passport v0.2 Comparative Review Model](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK145_EVIDENCE_PASSPORT_V0_2_COMPARATIVE_REVIEW_MODEL.md)
+- [Task146 CarbonOS Claim Boundary And Intake Upgrade](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK146_CARBONOS_CLAIM_BOUNDARY_AND_INTAKE_UPGRADE.md)
+- [Task147 ClimateOS / EcoEngine Validation Question Model](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK147_CLIMATEOS_ECOENGINE_VALIDATION_QUESTION_MODEL.md)
+- [Task148 MCP / Multi-Agent Dependency Decision Record](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK148_MCP_MULTI_AGENT_DEPENDENCY_DECISION_RECORD.md)
+- [Task149 Non-Operational Analytical Prototype Readiness Gate](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK149_NON_OPERATIONAL_ANALYTICAL_PROTOTYPE_READINESS_GATE.md)
+- [Task150 Architecture Gate And Task151+ Decision](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK150_ARCHITECTURE_GATE_AND_TASK151_DECISION.md)

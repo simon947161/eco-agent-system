@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | No active implementation task open | Task142 CarbonOS Comparative Accounting Scope Map is completed as documentation-only architecture work; Task143 is not started and requires a separate explicit Founder instruction. |
+| None | No active implementation task open | Task141-150 CarbonOS Comparative Accounting and Climate Validation Architecture Prototype Sprint is closed / architecture-gated; Task151+ is not started and requires a separate explicit Founder instruction. |
 
 ## Recently Completed Local Work
 
@@ -59,7 +59,15 @@ For the canonical record, use the
 | Task136-139 | Completed | CarbonOS next-phase readiness planning pack completed and pushed. |
 | Task140 | Completed | Task131-140 closure / architecture gate completed and pushed. |
 | Task141 | Completed | Formal Brief Approval and Boundary Gate completed as a documentation-only gate; Task142 was later started by separate Founder instruction and completed as documentation-only architecture work. |
-| Task142 | Completed | CarbonOS Comparative Accounting Scope Map completed as documentation-only architecture work; Task143 is not started. |
+| Task142 | Completed | CarbonOS Comparative Accounting Scope Map completed as documentation-only architecture work; Task143-150 were later completed and Task151+ is not started. |
+| Task143 | Completed | Cross-Standard Method Mapping Research Protocol completed as documentation-only architecture work; no standards interpretation created. |
+| Task144 | Completed | Non-Authoritative Method and Formula Registry Concept completed as documentation-only architecture work; no registry implementation created. |
+| Task145 | Completed | Evidence Passport v0.2 Comparative Review Model completed as documentation-only architecture work; no real evidence records created. |
+| Task146 | Completed | CarbonOS Claim Boundary and Intake Upgrade completed as documentation-only architecture work; no live intake workflow created. |
+| Task147 | Completed | ClimateOS / EcoEngine Validation Question Model completed as documentation-only architecture work; no modelling or environmental conclusion created. |
+| Task148 | Completed | MCP / Multi-Agent Dependency Decision Record completed as documentation-only architecture work; MCP not implemented and QCloud remains suspended. |
+| Task149 | Completed | Non-Operational Analytical Prototype Readiness Gate completed as documentation-only architecture work; no prototype created. |
+| Task150 | Completed | Architecture Gate and Task151+ Decision completed; Task141-150 closed / architecture-gated and Task151+ not started. |
 
 ## Boundary
 
