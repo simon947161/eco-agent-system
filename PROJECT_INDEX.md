@@ -135,6 +135,7 @@ Use it as a first stop before adding new project content.
 - [Task140 Closure / Architecture Gate](docs/tasks/task131_140_repository_stability_recovery/TASK140_CLOSURE_ARCHITECTURE_GATE.md)
 - [Task141-150 Formal Brief](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
 - [Task141 Formal Brief Approval And Boundary Gate](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
+- [Task142 CarbonOS Comparative Accounting Scope Map](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK142_CARBONOS_COMPARATIVE_ACCOUNTING_SCOPE_MAP.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -155,7 +156,8 @@ Use it as a first stop before adding new project content.
 - Task133-135 Workspace Operating Protocol is completed.
 - Task136-139 CarbonOS Next Phase Readiness Planning Pack is completed.
 - Task140 Closure / Architecture Gate is completed.
-- Task141 Formal Brief Approval and Boundary Gate is completed as a documentation-only gate; Task142 is not started.
+- Task141 Formal Brief Approval and Boundary Gate is completed as a documentation-only gate; Task142 was later started by separate Founder instruction and completed as documentation-only architecture work.
+- Task142 CarbonOS Comparative Accounting Scope Map is completed as documentation-only architecture work; Task143 is not started.
 
 ## Completed Tasks
 
@@ -244,3 +246,4 @@ boundaries before runtime capability.
 
 - [Task141-150 Formal Brief](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
 - [Task141 Formal Brief Approval And Boundary Gate](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
+- [Task142 CarbonOS Comparative Accounting Scope Map](docs/tasks/task141_150_carbonos_comparative_accounting_validation/TASK142_CARBONOS_COMPARATIVE_ACCOUNTING_SCOPE_MAP.md)

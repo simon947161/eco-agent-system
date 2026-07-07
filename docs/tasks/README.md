@@ -52,6 +52,7 @@ human-friendly task summaries and working templates.
 - [Task140 Closure / Architecture Gate](task131_140_repository_stability_recovery/TASK140_CLOSURE_ARCHITECTURE_GATE.md)
 - [Task141-150 Formal Brief](task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
 - [Task141 Formal Brief Approval And Boundary Gate](task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
+- [Task142 CarbonOS Comparative Accounting Scope Map](task141_150_carbonos_comparative_accounting_validation/TASK142_CARBONOS_COMPARATIVE_ACCOUNTING_SCOPE_MAP.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -120,3 +121,4 @@ human-friendly task summaries and working templates.
 
 - [Task141-150 Formal Brief](task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
 - [Task141 Formal Brief Approval And Boundary Gate](task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
+- [Task142 CarbonOS Comparative Accounting Scope Map](task141_150_carbonos_comparative_accounting_validation/TASK142_CARBONOS_COMPARATIVE_ACCOUNTING_SCOPE_MAP.md)

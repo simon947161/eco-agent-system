@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | No active implementation task open | Task141 Formal Brief Approval and Boundary Gate is completed as a documentation-only gate; Task142 is not started and requires a separate explicit Founder instruction. |
+| None | No active implementation task open | Task142 CarbonOS Comparative Accounting Scope Map is completed as documentation-only architecture work; Task143 is not started and requires a separate explicit Founder instruction. |
 
 ## Recently Completed Local Work
 
@@ -58,7 +58,8 @@ For the canonical record, use the
 | Task133-135 | Completed | Workspace operating protocol completed and pushed. |
 | Task136-139 | Completed | CarbonOS next-phase readiness planning pack completed and pushed. |
 | Task140 | Completed | Task131-140 closure / architecture gate completed and pushed. |
-| Task141 | Completed | Formal Brief Approval and Boundary Gate completed as a documentation-only gate; Task142 is not started. |
+| Task141 | Completed | Formal Brief Approval and Boundary Gate completed as a documentation-only gate; Task142 was later started by separate Founder instruction and completed as documentation-only architecture work. |
+| Task142 | Completed | CarbonOS Comparative Accounting Scope Map completed as documentation-only architecture work; Task143 is not started. |
 
 ## Boundary
 
