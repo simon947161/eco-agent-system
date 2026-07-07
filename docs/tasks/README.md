@@ -71,6 +71,13 @@ human-friendly task summaries and working templates.
 - [Task158 Abstract Non-Operational Example Design Rules](task151_160_carbonos_research_activation/TASK158_ABSTRACT_NON_OPERATIONAL_EXAMPLE_DESIGN_RULES.md)
 - [Task159 Research-To-Architecture Handoff Gate](task151_160_carbonos_research_activation/TASK159_RESEARCH_TO_ARCHITECTURE_HANDOFF_GATE.md)
 - [Task160 Closure And Task161+ Decision](task151_160_carbonos_research_activation/TASK160_CLOSURE_AND_TASK161_DECISION.md)
+- [Task161-200 Runtime Integration Gap Analysis Brief](task161_200_runtime_integration_gap_analysis/CLIMATEOS_TASK161_200_BASELINE_V1_RUNTIME_GAP_ANALYSIS_AND_CODEX_BRIEF.md)
+- [ClimateOS Runtime Integrity Layer v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_RUNTIME_INTEGRITY_LAYER_v0.1.md)
+- [ClimateOS OOD And Extreme Event Evidence Pipeline v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_OOD_AND_EXTREME_EVENT_EVIDENCE_PIPELINE_v0.1.md)
+- [ClimateOS Planetary Runtime Compatibility Note v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_PLANETARY_RUNTIME_COMPATIBILITY_NOTE_v0.1.md)
+- [Task161-200 Baseline v1.0 Enhancement Impact Matrix](task161_200_runtime_integration_gap_analysis/TASK161_200_BASELINE_V1_ENHANCEMENT_IMPACT_MATRIX.md)
+- [Task161-200 Revised Decision Gate](task161_200_runtime_integration_gap_analysis/TASK161_200_REVISED_DECISION_GATE.md)
+- [Task167 Heat Resilience ESG++ Shadow Case Entry Note](task161_200_runtime_integration_gap_analysis/TASK167_HEAT_RESILIENCE_ESG_SHADOW_CASE_ENTRY_NOTE.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -161,3 +168,18 @@ human-friendly task summaries and working templates.
 - [Task158 Abstract Non-Operational Example Design Rules](task151_160_carbonos_research_activation/TASK158_ABSTRACT_NON_OPERATIONAL_EXAMPLE_DESIGN_RULES.md)
 - [Task159 Research-To-Architecture Handoff Gate](task151_160_carbonos_research_activation/TASK159_RESEARCH_TO_ARCHITECTURE_HANDOFF_GATE.md)
 - [Task160 Closure And Task161+ Decision](task151_160_carbonos_research_activation/TASK160_CLOSURE_AND_TASK161_DECISION.md)
+
+## Task161-200 - Runtime Integration Gap Analysis
+
+- [Task161-200 Runtime Integration Gap Analysis Brief](task161_200_runtime_integration_gap_analysis/CLIMATEOS_TASK161_200_BASELINE_V1_RUNTIME_GAP_ANALYSIS_AND_CODEX_BRIEF.md)
+- [ClimateOS Runtime Integrity Layer v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_RUNTIME_INTEGRITY_LAYER_v0.1.md)
+- [ClimateOS OOD And Extreme Event Evidence Pipeline v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_OOD_AND_EXTREME_EVENT_EVIDENCE_PIPELINE_v0.1.md)
+- [ClimateOS Planetary Runtime Compatibility Note v0.1](task161_200_runtime_integration_gap_analysis/CLIMATEOS_PLANETARY_RUNTIME_COMPATIBILITY_NOTE_v0.1.md)
+- [Task161-200 Baseline v1.0 Enhancement Impact Matrix](task161_200_runtime_integration_gap_analysis/TASK161_200_BASELINE_V1_ENHANCEMENT_IMPACT_MATRIX.md)
+- [Task161-200 Revised Decision Gate](task161_200_runtime_integration_gap_analysis/TASK161_200_REVISED_DECISION_GATE.md)
+- [Task167 Heat Resilience ESG++ Shadow Case Entry Note](task161_200_runtime_integration_gap_analysis/TASK167_HEAT_RESILIENCE_ESG_SHADOW_CASE_ENTRY_NOTE.md)
+- [Task167 Heat Resilience ESG++ Shadow Case: Yang Yujin Urban Cooling](task161_170_carbonos_hybrid_enhancement/TASK167_HEAT_RESILIENCE_ESG_SHADOW_CASE_YANG_YUJIN_URBAN_COOLING.md)
+
+This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
+
+Task161+ still not started unless Founder explicitly approves.

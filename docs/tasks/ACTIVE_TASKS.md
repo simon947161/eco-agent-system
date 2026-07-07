@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | No active implementation task open | Task151-160 CarbonOS Research Activation Batch is closed / research-activation-gated; Task161+ is not started and requires a separate explicit Founder instruction. |
+| None | No active implementation task open | Task161-200 Runtime Integration Gap Analysis enhancement layer is completed as documentation-only gap analysis; Task161+ still not started unless Founder explicitly approves. |
 
 ## Recently Completed Local Work
 
@@ -78,6 +78,7 @@ For the canonical record, use the
 | Task158 | Completed | Abstract Non-Operational Example Design Rules completed; no examples created. |
 | Task159 | Completed | Research-To-Architecture Handoff Gate completed; no research findings promoted to architecture. |
 | Task160 | Completed | Closure and Task161+ Decision completed; Task151-160 closed / research-activation-gated and Task161+ not started. |
+| Task161-200 Runtime Integration Gap Analysis | Completed | Documentation-only enhancement layer completed; Baseline v1.0 remains preserved; Task161-170 official source discovery is not started. This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route. |
 
 ## Boundary
 
