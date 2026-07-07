@@ -51,6 +51,7 @@ human-friendly task summaries and working templates.
 - [Task136-139 CarbonOS Next Phase Readiness Planning Pack](task131_140_repository_stability_recovery/TASK136_139_CARBONOS_READINESS_PLANNING_PACK.md)
 - [Task140 Closure / Architecture Gate](task131_140_repository_stability_recovery/TASK140_CLOSURE_ARCHITECTURE_GATE.md)
 - [Task141-150 Formal Brief](task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
+- [Task141 Formal Brief Approval And Boundary Gate](task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -118,3 +119,4 @@ human-friendly task summaries and working templates.
 ## Task141-150 - CarbonOS Comparative Accounting And Climate Validation
 
 - [Task141-150 Formal Brief](task141_150_carbonos_comparative_accounting_validation/TASK141_150_FORMAL_BRIEF.md)
+- [Task141 Formal Brief Approval And Boundary Gate](task141_150_carbonos_comparative_accounting_validation/TASK141_FORMAL_BRIEF_APPROVAL_AND_BOUNDARY_GATE.md)
