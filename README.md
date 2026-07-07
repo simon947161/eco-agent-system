@@ -45,6 +45,20 @@ The [Project Control Layer](00_PROJECT_CONTROL/README.md) contains the shared
 roadmap, task index, Codex batch queue, repository rules, future agent template,
 and architecture decisions for ClimateOS and its subsystem expansion.
 
+## ClimateOS Architecture Baseline v1.1
+
+ClimateOS / CarbonOS Architecture Baseline v1.1 is frozen after Founder review.
+
+Key records:
+
+- [Architecture Freeze Record v1.1](docs/architecture/CLIMATEOS_TASK161_200_ARCHITECTURE_BASELINE_V1_1_FREEZE_RECORD.md)
+- [Architecture Enhancement Protocol AEP v1.0](docs/architecture/ARCHITECTURE_ENHANCEMENT_PROTOCOL_AEP_v1.0.md)
+- [Architecture Change Log v1.1](docs/architecture/ARCHITECTURE_CHANGE_LOG_v1.1.md)
+
+Task161 Official Source Discovery is not started. No runtime, API, database,
+MCP, automation, scoring, standards research, compliance claim, certification
+claim, or operational ESG claim is created by this freeze.
+
 ## ClimateOS Master Directory
 
 See the [ClimateOS Master Directory Map](MASTER_DIRECTORY_MAP.md) for the

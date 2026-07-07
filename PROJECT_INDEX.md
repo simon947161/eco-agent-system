@@ -102,6 +102,9 @@ Use it as a first stop before adding new project content.
 
 ## Demonstrations And Documentation
 
+- [Architecture Freeze Record v1.1](docs/architecture/CLIMATEOS_TASK161_200_ARCHITECTURE_BASELINE_V1_1_FREEZE_RECORD.md)
+- [Architecture Enhancement Protocol AEP v1.0](docs/architecture/ARCHITECTURE_ENHANCEMENT_PROTOCOL_AEP_v1.0.md)
+- [Architecture Change Log v1.1](docs/architecture/ARCHITECTURE_CHANGE_LOG_v1.1.md)
 - [Governance Docs](docs/governance/README.md)
 - [Docs Index](docs/README.md)
 - [Radar Docs](docs/radar/README.md)
@@ -186,6 +189,7 @@ Use it as a first stop before adding new project content.
 - Task143-150 CarbonOS Comparative Accounting and Climate Validation architecture records are completed; Task141-150 is closed / architecture-gated and Task151+ is not started.
 - Task151-160 CarbonOS Research Activation Batch is completed; Task151-160 is closed / research-activation-gated and Task161+ is not started.
 - Task161-200 Runtime Integration Gap Analysis enhancement layer is completed as documentation-only gap analysis; Baseline v1.0 remains preserved and Task161-170 official source discovery is not started.
+- Architecture Baseline v1.1 is frozen; Founder Review Completed; Task161 Official Source Discovery is not started.
 
 ## Completed Tasks
 
