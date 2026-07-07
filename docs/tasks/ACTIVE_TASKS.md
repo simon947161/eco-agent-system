@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | No active implementation task open | Task141-150 CarbonOS Comparative Accounting and Climate Validation Architecture Prototype Sprint is closed / architecture-gated; Task151+ is not started and requires a separate explicit Founder instruction. |
+| None | No active implementation task open | Task151-160 CarbonOS Research Activation Batch is closed / research-activation-gated; Task161+ is not started and requires a separate explicit Founder instruction. |
 
 ## Recently Completed Local Work
 
@@ -68,6 +68,16 @@ For the canonical record, use the
 | Task148 | Completed | MCP / Multi-Agent Dependency Decision Record completed as documentation-only architecture work; MCP not implemented and QCloud remains suspended. |
 | Task149 | Completed | Non-Operational Analytical Prototype Readiness Gate completed as documentation-only architecture work; no prototype created. |
 | Task150 | Completed | Architecture Gate and Task151+ Decision completed; Task141-150 closed / architecture-gated and Task151+ not started. |
+| Task151 | Completed | Controlled Research Execution Plan completed as documentation-only research activation planning; no factual standards research executed. |
+| Task152 | Completed | Official Source Registry Scaffold completed as documentation-only planning; no database or data file created. |
+| Task153 | Completed | Citation and Version Control Rules completed; no standards claims created. |
+| Task154 | Completed | Framework Intake Template completed with blank sections only; no standard-specific factual content created. |
+| Task155 | Completed | Factual Claim Review Workflow completed as documentation-only planning; no factual claim approved. |
+| Task156 | Completed | Comparative Method Mapping Template completed as a blank template; no real standards content created. |
+| Task157 | Completed | Evidence Passport Source-Linkage Upgrade completed as documentation-only planning; no real evidence records created. |
+| Task158 | Completed | Abstract Non-Operational Example Design Rules completed; no examples created. |
+| Task159 | Completed | Research-To-Architecture Handoff Gate completed; no research findings promoted to architecture. |
+| Task160 | Completed | Closure and Task161+ Decision completed; Task151-160 closed / research-activation-gated and Task161+ not started. |
 
 ## Boundary
 

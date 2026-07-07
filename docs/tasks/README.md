@@ -61,6 +61,16 @@ human-friendly task summaries and working templates.
 - [Task148 MCP / Multi-Agent Dependency Decision Record](task141_150_carbonos_comparative_accounting_validation/TASK148_MCP_MULTI_AGENT_DEPENDENCY_DECISION_RECORD.md)
 - [Task149 Non-Operational Analytical Prototype Readiness Gate](task141_150_carbonos_comparative_accounting_validation/TASK149_NON_OPERATIONAL_ANALYTICAL_PROTOTYPE_READINESS_GATE.md)
 - [Task150 Architecture Gate And Task151+ Decision](task141_150_carbonos_comparative_accounting_validation/TASK150_ARCHITECTURE_GATE_AND_TASK151_DECISION.md)
+- [Task151 Controlled Research Execution Plan](task151_160_carbonos_research_activation/TASK151_CONTROLLED_RESEARCH_EXECUTION_PLAN.md)
+- [Task152 Official Source Registry Scaffold](task151_160_carbonos_research_activation/TASK152_OFFICIAL_SOURCE_REGISTRY_SCAFFOLD.md)
+- [Task153 Citation And Version Control Rules](task151_160_carbonos_research_activation/TASK153_CITATION_AND_VERSION_CONTROL_RULES.md)
+- [Task154 Framework Intake Template](task151_160_carbonos_research_activation/TASK154_FRAMEWORK_INTAKE_TEMPLATE.md)
+- [Task155 Factual Claim Review Workflow](task151_160_carbonos_research_activation/TASK155_FACTUAL_CLAIM_REVIEW_WORKFLOW.md)
+- [Task156 Comparative Method Mapping Template](task151_160_carbonos_research_activation/TASK156_COMPARATIVE_METHOD_MAPPING_TEMPLATE.md)
+- [Task157 Evidence Passport Source-Linkage Upgrade](task151_160_carbonos_research_activation/TASK157_EVIDENCE_PASSPORT_SOURCE_LINKAGE_UPGRADE.md)
+- [Task158 Abstract Non-Operational Example Design Rules](task151_160_carbonos_research_activation/TASK158_ABSTRACT_NON_OPERATIONAL_EXAMPLE_DESIGN_RULES.md)
+- [Task159 Research-To-Architecture Handoff Gate](task151_160_carbonos_research_activation/TASK159_RESEARCH_TO_ARCHITECTURE_HANDOFF_GATE.md)
+- [Task160 Closure And Task161+ Decision](task151_160_carbonos_research_activation/TASK160_CLOSURE_AND_TASK161_DECISION.md)
 - [Task Operating Guide](TASK_OPERATING_GUIDE.md)
 
 ## Related References
@@ -138,3 +148,16 @@ human-friendly task summaries and working templates.
 - [Task148 MCP / Multi-Agent Dependency Decision Record](task141_150_carbonos_comparative_accounting_validation/TASK148_MCP_MULTI_AGENT_DEPENDENCY_DECISION_RECORD.md)
 - [Task149 Non-Operational Analytical Prototype Readiness Gate](task141_150_carbonos_comparative_accounting_validation/TASK149_NON_OPERATIONAL_ANALYTICAL_PROTOTYPE_READINESS_GATE.md)
 - [Task150 Architecture Gate And Task151+ Decision](task141_150_carbonos_comparative_accounting_validation/TASK150_ARCHITECTURE_GATE_AND_TASK151_DECISION.md)
+
+## Task151-160 - CarbonOS Research Activation
+
+- [Task151 Controlled Research Execution Plan](task151_160_carbonos_research_activation/TASK151_CONTROLLED_RESEARCH_EXECUTION_PLAN.md)
+- [Task152 Official Source Registry Scaffold](task151_160_carbonos_research_activation/TASK152_OFFICIAL_SOURCE_REGISTRY_SCAFFOLD.md)
+- [Task153 Citation And Version Control Rules](task151_160_carbonos_research_activation/TASK153_CITATION_AND_VERSION_CONTROL_RULES.md)
+- [Task154 Framework Intake Template](task151_160_carbonos_research_activation/TASK154_FRAMEWORK_INTAKE_TEMPLATE.md)
+- [Task155 Factual Claim Review Workflow](task151_160_carbonos_research_activation/TASK155_FACTUAL_CLAIM_REVIEW_WORKFLOW.md)
+- [Task156 Comparative Method Mapping Template](task151_160_carbonos_research_activation/TASK156_COMPARATIVE_METHOD_MAPPING_TEMPLATE.md)
+- [Task157 Evidence Passport Source-Linkage Upgrade](task151_160_carbonos_research_activation/TASK157_EVIDENCE_PASSPORT_SOURCE_LINKAGE_UPGRADE.md)
+- [Task158 Abstract Non-Operational Example Design Rules](task151_160_carbonos_research_activation/TASK158_ABSTRACT_NON_OPERATIONAL_EXAMPLE_DESIGN_RULES.md)
+- [Task159 Research-To-Architecture Handoff Gate](task151_160_carbonos_research_activation/TASK159_RESEARCH_TO_ARCHITECTURE_HANDOFF_GATE.md)
+- [Task160 Closure And Task161+ Decision](task151_160_carbonos_research_activation/TASK160_CLOSURE_AND_TASK161_DECISION.md)
