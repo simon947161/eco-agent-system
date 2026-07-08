@@ -1,5 +1,7 @@
 # Task200 / Task300 Roadmap Forensic Review
 
+> Supersession note: Later roadmap repair restored the preferred terminology as Roadmap Task200 and Roadmap Task300. Any M200 / M300 recommendation in this forensic review should be read as a temporary disambiguation idea, not the current naming convention.
+
 **Project:** ClimateOS / CarbonOS  
 **Status:** Draft for Founder Review  
 **Date:** 2026-07-08  

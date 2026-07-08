@@ -121,6 +121,7 @@ Status changes should be supported by repository evidence.
 - Task171-180 Official Framework Intake with Runtime Lens is completed as metadata-only framework intake.
 - Task181-190 Framework Normalization and Comparative Readiness with Runtime Lens is completed as documentation-only normalization; Task191-200 is recommended as a controlled comparative mapping readiness gate, not implementation.
 - Task191-200 Controlled Comparative Mapping and Evidence Reasoning Gate with Runtime Lens is completed as documentation-only foundation closure; Task201+ is recommended as separate Founder-authorized planning, not implementation by default.
+- Roadmap Task200 and Roadmap Task300 are restored as stable long-term roadmap milestones. Task191-200 remains the completed CarbonOS Documentation Foundation engineering batch under the larger Roadmap Task200 horizon; see [Task200 Roadmap Restoration And Phase II Realignment](../docs/architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md).
 - New ideas outside approved scope go to Task101+ Recommendations or a later
   explicitly authorized task.
 - Documentation-only tasks define conceptual foundations without implementing runtime software.

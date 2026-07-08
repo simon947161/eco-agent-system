@@ -205,3 +205,5 @@ human-friendly task summaries and working templates.
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
 Task161-170 is now closed as documentation-only official source discovery with runtime lens. Task171-180 Official Framework Intake is not started unless Founder explicitly approves.
+
+Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.

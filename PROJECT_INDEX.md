@@ -105,6 +105,7 @@ Use it as a first stop before adding new project content.
 - [Architecture Freeze Record v1.1](docs/architecture/CLIMATEOS_TASK161_200_ARCHITECTURE_BASELINE_V1_1_FREEZE_RECORD.md)
 - [Architecture Enhancement Protocol AEP v1.0](docs/architecture/ARCHITECTURE_ENHANCEMENT_PROTOCOL_AEP_v1.0.md)
 - [Architecture Change Log v1.1](docs/architecture/ARCHITECTURE_CHANGE_LOG_v1.1.md)
+- [Task200 Roadmap Restoration And Phase II Realignment](docs/architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md)
 - [Governance Docs](docs/governance/README.md)
 - [Docs Index](docs/README.md)
 - [Radar Docs](docs/radar/README.md)

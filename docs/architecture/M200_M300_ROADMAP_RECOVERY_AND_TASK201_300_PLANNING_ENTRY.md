@@ -1,5 +1,7 @@
 # M200 / M300 Roadmap Recovery and Task201-300 Planning Entry
 
+> Supersession note: M200 / M300 was a temporary disambiguation idea created during roadmap recovery. The preferred restored terminology is now Roadmap Task200 and Roadmap Task300. Treat this file as a transitional recovery note and use `TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md` as the current routing clarification.
+
 **Project:** ClimateOS / CarbonOS  
 **Status:** Draft for Founder Review  
 **Date:** 2026-07-08  
