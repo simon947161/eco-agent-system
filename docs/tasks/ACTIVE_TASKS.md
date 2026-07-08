@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | No active implementation task open | Task181-190 Framework Normalization and Comparative Readiness with Runtime Lens is closed as a documentation-only normalization package; Task191-200 is recommended but not started. |
+| None | No active implementation task open | Task191-200 Controlled Comparative Mapping and Evidence Reasoning Gate with Runtime Lens is closed as a documentation-only foundation closure package; Task201+ is recommended but not started. |
 
 ## Recently Completed Local Work
 
@@ -83,6 +83,7 @@ For the canonical record, use the
 | Task161-170 Official Source Discovery With Runtime Lens | Completed | Documentation-only source discovery package created; no standards interpretation, framework intake, comparative mapping, runtime, API, database, MCP, scoring, automation, compliance, assurance, certification, real-world ESG / carbon claim, or QCloud resume. |
 | Task171-180 Official Framework Intake With Runtime Lens | Completed | Metadata-only framework intake package created for IPCC, ISSB / IFRS Sustainability, ASRS, TNFD, GHG Protocol, GRI / CDP, and China climate / carbon / ESG source ecosystem; no standards interpretation, comparison, mapping, compliance, assurance, certification, ESG conclusion, carbon conclusion, runtime, API, database, MCP, scoring, automation, QCloud resume, PRI dependency, n8n dependency, or Architecture Baseline v1.1 rewrite. |
 | Task181-190 Framework Normalization And Comparative Readiness With Runtime Lens | Completed | Documentation-only normalization package created for citation units, version/amendment metadata, document hierarchy, terminology references, translation governance, relationship metadata, evidence reference readiness, comparative readiness status, and Task191 recommendation; no comparative mapping, standards interpretation, ranking, compliance guidance, certification guidance, runtime, API, database, MCP, scoring, automation, QCloud resume, PRI dependency, n8n dependency, or Architecture Baseline v1.1 modification. |
+| Task191-200 Controlled Comparative Mapping And Evidence Reasoning Gate With Runtime Lens | Completed | Documentation-only foundation closure package created for mapping permission gates, citation verification, version/reporting-period verification, translation governance review, evidence reasoning boundaries, readiness levels, runtime hook metadata, CarbonOS foundation summary, and Task200 closure; no standards comparison, standards interpretation, ranking, ESG conclusion, carbon conclusion, compliance guidance, assurance guidance, certification guidance, operational Evidence Passport, operational Claim Boundary decision, runtime, API, database, MCP, scoring, automation, QCloud resume, PRI dependency, n8n dependency, or Architecture Baseline v1.1 modification. |
 
 ## Boundary
 
