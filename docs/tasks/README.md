@@ -204,6 +204,22 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170 is now closed as documentation-only official source discovery with runtime lens. Task171-180 Official Framework Intake is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, and Task201-210 are closed as documentation-only packages. Task211-220 is not started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
+
+## Task201-210 - Roadmap Task200 Phase II Planning And Seed Reconciliation
+
+- [Task201-210 Roadmap Task200 Phase II Planning And Seed Reconciliation](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/README.md)
+- [Task201 Phase II Control Boundary](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK201_PHASE_II_CONTROL_BOUNDARY.md)
+- [Task202 Recovered Task200 Strategy Consolidation](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK202_RECOVERED_TASK200_STRATEGY_CONSOLIDATION.md)
+- [Task203 Phase II Runtime Planning Boundary](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK203_PHASE_II_RUNTIME_PLANNING_BOUNDARY.md)
+- [Task204 ClimateOS Open Learning Architecture](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK204_CLIMATEOS_OPEN_LEARNING_ARCHITECTURE.md)
+- [Task205 Knowledge Harvest Integration](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK205_KNOWLEDGE_HARVEST_INTEGRATION.md)
+- [Task206 AEP Phase II Continuous Learning Extension](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK206_AEP_PHASE_II_CONTINUOUS_LEARNING_EXTENSION.md)
+- [Task207 Phase II Runtime Readiness Map](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK207_PHASE_II_RUNTIME_READINESS_MAP.md)
+- [Task208 Roadmap Task300 Vision Seed](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK208_ROADMAP_TASK300_VISION_SEED.md)
+- [Task209 Task201-300 Roadmap Draft](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK209_TASK201_300_ROADMAP_DRAFT.md)
+- [Task210 Phase II Review Closure](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK210_PHASE_II_REVIEW_CLOSURE.md)
+
+Task201-210 is closed as documentation-only Phase II planning. Task211-220 Open Learning and Knowledge Harvest Governance is recommended but not started unless Founder explicitly approves.

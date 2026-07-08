@@ -167,6 +167,8 @@ Use it as a first stop before adding new project content.
 - [Task161-200 Baseline v1.0 Enhancement Impact Matrix](docs/tasks/task161_200_runtime_integration_gap_analysis/TASK161_200_BASELINE_V1_ENHANCEMENT_IMPACT_MATRIX.md)
 - [Task161-200 Revised Decision Gate](docs/tasks/task161_200_runtime_integration_gap_analysis/TASK161_200_REVISED_DECISION_GATE.md)
 - [Task167 Heat Resilience ESG++ Shadow Case Entry Note](docs/tasks/task161_200_runtime_integration_gap_analysis/TASK167_HEAT_RESILIENCE_ESG_SHADOW_CASE_ENTRY_NOTE.md)
+- [Task201-210 Roadmap Task200 Phase II Planning And Seed Reconciliation](docs/tasks/task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/README.md)
+- [Task210 Phase II Review Closure](docs/tasks/task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK210_PHASE_II_REVIEW_CLOSURE.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -193,7 +195,7 @@ Use it as a first stop before adding new project content.
 - Task151-160 CarbonOS Research Activation Batch is completed; Task151-160 is closed / research-activation-gated.
 - Task161-200 Runtime Integration Gap Analysis enhancement layer is completed as documentation-only gap analysis; Baseline v1.0 remains preserved.
 - Architecture Baseline v1.1 is frozen; Founder Review Completed.
-- Task161-170 Official Source Discovery with Runtime Lens is completed as a documentation-only source discovery package; Task171-180 Official Framework Intake is not started.
+- Task161-170 Official Source Discovery, Task171-180 Official Framework Intake, Task181-190 Framework Normalization, Task191-200 Foundation Closure, and Task201-210 Phase II Planning are completed as documentation-only packages.
 
 ## Completed Tasks
 
@@ -320,4 +322,4 @@ boundaries before runtime capability.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170 is now closed as documentation-only official source discovery with runtime lens. Task171-180 Official Framework Intake is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, and Task201-210 are closed as documentation-only packages. Task211-220 is not started unless Founder explicitly approves.
