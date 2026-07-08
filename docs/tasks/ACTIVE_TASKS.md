@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | No active implementation task open | Task161-170 Official Source Discovery with Runtime Lens is closed as a documentation-only source discovery package; Task171-180 Official Framework Intake is not started. |
+| None | No active implementation task open | Task171-180 Official Framework Intake with Runtime Lens is closed as a documentation-only metadata intake package; Task181-190 is recommended but not started. |
 
 ## Recently Completed Local Work
 
@@ -81,6 +81,7 @@ For the canonical record, use the
 | Task161-200 Runtime Integration Gap Analysis | Completed | Documentation-only enhancement layer completed; Baseline v1.0 remains preserved. This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route. |
 | Architecture Baseline v1.1 Freeze | Completed / Frozen | Founder Review Completed; this freeze preceded Task161-170 and remains the frozen architecture baseline. |
 | Task161-170 Official Source Discovery With Runtime Lens | Completed | Documentation-only source discovery package created; no standards interpretation, framework intake, comparative mapping, runtime, API, database, MCP, scoring, automation, compliance, assurance, certification, real-world ESG / carbon claim, or QCloud resume. |
+| Task171-180 Official Framework Intake With Runtime Lens | Completed | Metadata-only framework intake package created for IPCC, ISSB / IFRS Sustainability, ASRS, TNFD, GHG Protocol, GRI / CDP, and China climate / carbon / ESG source ecosystem; no standards interpretation, comparison, mapping, compliance, assurance, certification, ESG conclusion, carbon conclusion, runtime, API, database, MCP, scoring, automation, QCloud resume, PRI dependency, n8n dependency, or Architecture Baseline v1.1 rewrite. |
 
 ## Boundary
 
