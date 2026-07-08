@@ -10,6 +10,22 @@ Purpose: provide the next GPT / ChatGPT thread with a compact but complete trans
 
 This file is for GPT / human project continuity. It is not a Codex implementation instruction.
 
+## Supersession Note
+
+This packet is a historical handoff snapshot from 2026-07-06. Current task
+state should be checked against:
+
+- `00_PROJECT_CONTROL/TASK_INDEX.md`
+- `docs/tasks/ACTIVE_TASKS.md`
+
+As of the current task index, Task141-150 later closed as documentation-only
+architecture work, Task151-160 closed as research-activation planning,
+Task161-170 closed as documentation-only Official Source Discovery with Runtime
+Lens, and Task171-180 Official Framework Intake is not started. This note does
+not authorize runtime, API, database, MCP, scoring, automation, QCloud resume,
+deployment, compliance, assurance, certification, or operational ESG / carbon
+claims.
+
 ---
 
 ## 1. Thread status

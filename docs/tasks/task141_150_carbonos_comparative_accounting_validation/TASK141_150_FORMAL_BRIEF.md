@@ -1,5 +1,20 @@
 # Task141-150 Formal Brief
 
+## Current-State Note
+
+This formal brief is a historical boundary artifact for the Task141-150 sprint.
+For current task state, check `00_PROJECT_CONTROL/TASK_INDEX.md` and
+`docs/tasks/ACTIVE_TASKS.md`.
+
+As of the current task index, Task141-150 later closed as documentation-only
+architecture work, Task151-160 closed as research-activation planning,
+Task161-170 closed as documentation-only Official Source Discovery with Runtime
+Lens, and Task171-180 Official Framework Intake is not started.
+
+This note does not change the substance of the brief and does not authorize
+runtime, API, database, MCP, scoring, automation, QCloud resume, deployment,
+compliance, assurance, certification, or operational ESG / carbon claims.
+
 ## Sprint Title
 
 Task141-150 CarbonOS Comparative Accounting and Climate Validation Architecture Prototype Sprint

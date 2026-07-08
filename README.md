@@ -55,9 +55,15 @@ Key records:
 - [Architecture Enhancement Protocol AEP v1.0](docs/architecture/ARCHITECTURE_ENHANCEMENT_PROTOCOL_AEP_v1.0.md)
 - [Architecture Change Log v1.1](docs/architecture/ARCHITECTURE_CHANGE_LOG_v1.1.md)
 
-Task161 Official Source Discovery is not started. No runtime, API, database,
-MCP, automation, scoring, standards research, compliance claim, certification
-claim, or operational ESG claim is created by this freeze.
+Task161-170 Official Source Discovery with Runtime Lens is completed as a
+documentation-only source discovery package. Task171-180 Official Framework
+Intake is not started.
+
+Runtime, API, database, MCP, scoring, and automation remain not created. QCloud
+remains suspended. n8n Workflow Hub is paused / exploratory and is not an
+implementation-ready dependency. No standards interpretation, compliance claim,
+certification claim, or operational ESG / carbon claim is created by this
+architecture baseline or source discovery package.
 
 ## ClimateOS Master Directory
 
