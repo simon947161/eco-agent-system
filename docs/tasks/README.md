@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, and Task281-290 are closed as documentation-only packages. Task291-300 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, and Task291-300 are closed as documentation-only packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -350,4 +350,20 @@ Task271-280 is closed as documentation-only governance review. Task281-290 Clima
 - [Task289 No Gate Opening And Non-Automatic Transition Rule](task281_290_evidence_passport_architecture_request_authorization_gate_review/TASK289_NO_GATE_OPENING_AND_NON_AUTOMATIC_TRANSITION_RULE.md)
 - [Task290 Architecture Request Authorization Gate Review Closure](task281_290_evidence_passport_architecture_request_authorization_gate_review/TASK290_ARCHITECTURE_REQUEST_AUTHORIZATION_GATE_REVIEW_CLOSURE.md)
 
-Task281-290 is closed as documentation-only gate review. Task291-300 ClimateOS Evidence Passport Architecture Request Final Pre-Authorization Governance Closure may be recommended, but must not begin unless Founder explicitly approves.
+Task281-290 is closed as documentation-only gate review. Task291-300 ClimateOS Evidence Passport Architecture Request Final Pre-Authorization Governance Closure was later Founder-authorized and completed as documentation-only final pre-authorization governance closure, not gate opening, request creation, request submission, architecture authorization, architecture design, runtime, implementation, automatic architecture work, automatic future batch start, or Roadmap Task300 completion.
+
+## Task291-300 - Evidence Passport Architecture Request Final Pre-Authorization Governance Closure
+
+- [Task291-300 Evidence Passport Architecture Request Final Pre-Authorization Governance Closure](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/README.md)
+- [Task291 Final Pre-Authorization Governance Closure Boundary](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK291_FINAL_PRE_AUTHORIZATION_GOVERNANCE_CLOSURE_BOUNDARY.md)
+- [Task292 Evidence Passport Governance Chain Reconciliation](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK292_EVIDENCE_PASSPORT_GOVERNANCE_CHAIN_RECONCILIATION.md)
+- [Task293 Final Boundary Preservation Review](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK293_FINAL_BOUNDARY_PRESERVATION_REVIEW.md)
+- [Task294 Final Founder Gate And Human Authority Preservation Review](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK294_FINAL_FOUNDER_GATE_AND_HUMAN_AUTHORITY_PRESERVATION_REVIEW.md)
+- [Task295 Final Risk And Misuse Control Closure](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK295_FINAL_RISK_AND_MISUSE_CONTROL_CLOSURE.md)
+- [Task296 Final Non-Automatic Transition Closure](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK296_FINAL_NON_AUTOMATIC_TRANSITION_CLOSURE.md)
+- [Task297 Roadmap Task300 Preservation Record](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK297_ROADMAP_TASK300_PRESERVATION_RECORD.md)
+- [Task298 Final Pre-Authorization Governance Archive Index](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK298_FINAL_PRE_AUTHORIZATION_GOVERNANCE_ARCHIVE_INDEX.md)
+- [Task299 Future Architecture Work Caution And Deferral Record](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK299_FUTURE_ARCHITECTURE_WORK_CAUTION_AND_DEFERRAL_RECORD.md)
+- [Task300 Evidence Passport Final Pre-Authorization Governance Closure](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK300_EVIDENCE_PASSPORT_FINAL_PRE_AUTHORIZATION_GOVERNANCE_CLOSURE.md)
+
+Task291-300 is closed as documentation-only final pre-authorization governance closure. No future batch, architecture work, implementation work, runtime work, or Roadmap Task300 change starts automatically.
