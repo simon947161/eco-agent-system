@@ -177,6 +177,8 @@ Use it as a first stop before adding new project content.
 - [Task240 Evidence Passport Pre-Architecture Governance Closure](docs/tasks/task231_240_evidence_passport_pre_architecture_governance/TASK240_EVIDENCE_PASSPORT_PRE_ARCHITECTURE_GOVERNANCE_CLOSURE.md)
 - [Task241-250 Evidence Passport Architecture Readiness Review](docs/tasks/task241_250_evidence_passport_architecture_readiness_review/README.md)
 - [Task250 Architecture Readiness Review Closure](docs/tasks/task241_250_evidence_passport_architecture_readiness_review/TASK250_ARCHITECTURE_READINESS_REVIEW_CLOSURE.md)
+- [Task251-260 Evidence Passport Architecture Authorization Decision Governance](docs/tasks/task251_260_evidence_passport_architecture_authorization_decision_governance/README.md)
+- [Task260 Architecture Authorization Decision Governance Closure](docs/tasks/task251_260_evidence_passport_architecture_authorization_decision_governance/TASK260_ARCHITECTURE_AUTHORIZATION_DECISION_GOVERNANCE_CLOSURE.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -203,7 +205,7 @@ Use it as a first stop before adding new project content.
 - Task151-160 CarbonOS Research Activation Batch is completed; Task151-160 is closed / research-activation-gated.
 - Task161-200 Runtime Integration Gap Analysis enhancement layer is completed as documentation-only gap analysis; Baseline v1.0 remains preserved.
 - Architecture Baseline v1.1 is frozen; Founder Review Completed.
-- Task161-170 Official Source Discovery, Task171-180 Official Framework Intake, Task181-190 Framework Normalization, Task191-200 Foundation Closure, Task201-210 Phase II Planning, Task211-220 Mission / Signal / Open Learning Governance, Task221-230 Knowledge Object / Evidence Readiness Governance, Task231-240 Evidence Passport Pre-Architecture Governance, and Task241-250 Evidence Passport Architecture Readiness Review are completed as documentation-only packages.
+- Task161-170 Official Source Discovery, Task171-180 Official Framework Intake, Task181-190 Framework Normalization, Task191-200 Foundation Closure, Task201-210 Phase II Planning, Task211-220 Mission / Signal / Open Learning Governance, Task221-230 Knowledge Object / Evidence Readiness Governance, Task231-240 Evidence Passport Pre-Architecture Governance, Task241-250 Evidence Passport Architecture Readiness Review, and Task251-260 Evidence Passport Architecture Authorization Decision Governance are completed as documentation-only packages.
 
 ## Completed Tasks
 
@@ -330,4 +332,4 @@ boundaries before runtime capability.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, and Task241-250 are closed as documentation-only packages. Task251-260 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, and Task251-260 are closed as documentation-only packages. Task261-270 is not started unless Founder explicitly approves.

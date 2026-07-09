@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, and Task241-250 are closed as documentation-only packages. Task251-260 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, and Task251-260 are closed as documentation-only packages. Task261-270 is not started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -286,4 +286,20 @@ Task231-240 is closed as documentation-only pre-architecture governance. Task241
 - [Task249 Future Architecture Authorization Criteria Review](task241_250_evidence_passport_architecture_readiness_review/TASK249_FUTURE_ARCHITECTURE_AUTHORIZATION_CRITERIA_REVIEW.md)
 - [Task250 Architecture Readiness Review Closure](task241_250_evidence_passport_architecture_readiness_review/TASK250_ARCHITECTURE_READINESS_REVIEW_CLOSURE.md)
 
-Task241-250 is closed as documentation-only readiness review. Task251-260 ClimateOS Evidence Passport Architecture Authorization Decision Governance is recommended but not started unless Founder explicitly approves.
+Task241-250 is closed as documentation-only readiness review. Task251-260 ClimateOS Evidence Passport Architecture Authorization Decision Governance was later Founder-authorized and completed as documentation-only authorization decision governance, not architecture design or implementation.
+
+## Task251-260 - Evidence Passport Architecture Authorization Decision Governance
+
+- [Task251-260 Evidence Passport Architecture Authorization Decision Governance](task251_260_evidence_passport_architecture_authorization_decision_governance/README.md)
+- [Task251 Architecture Authorization Decision Governance Boundary](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK251_ARCHITECTURE_AUTHORIZATION_DECISION_GOVERNANCE_BOUNDARY.md)
+- [Task252 Prior Readiness Review Package Assessment](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK252_PRIOR_READINESS_REVIEW_PACKAGE_ASSESSMENT.md)
+- [Task253 Architecture Authorization Decision Criteria](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK253_ARCHITECTURE_AUTHORIZATION_DECISION_CRITERIA.md)
+- [Task254 Authorization Decision Options And Outcomes](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK254_AUTHORIZATION_DECISION_OPTIONS_AND_OUTCOMES.md)
+- [Task255 Founder And Human Authority Decision Gate](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK255_FOUNDER_AND_HUMAN_AUTHORITY_DECISION_GATE.md)
+- [Task256 Risk-Based Authorization Blockers](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK256_RISK_BASED_AUTHORIZATION_BLOCKERS.md)
+- [Task257 Future Architecture Scope Constraint Governance](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK257_FUTURE_ARCHITECTURE_SCOPE_CONSTRAINT_GOVERNANCE.md)
+- [Task258 Non-Automatic Transition Rule](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK258_NON_AUTOMATIC_TRANSITION_RULE.md)
+- [Task259 Future Architecture Work Request Package Requirements](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK259_FUTURE_ARCHITECTURE_WORK_REQUEST_PACKAGE_REQUIREMENTS.md)
+- [Task260 Architecture Authorization Decision Governance Closure](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK260_ARCHITECTURE_AUTHORIZATION_DECISION_GOVERNANCE_CLOSURE.md)
+
+Task251-260 is closed as documentation-only authorization decision governance. Task261-270 ClimateOS Evidence Passport Architecture Work Request Governance may be recommended, but must not begin unless Founder explicitly approves.
