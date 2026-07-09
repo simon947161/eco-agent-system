@@ -171,6 +171,8 @@ Use it as a first stop before adding new project content.
 - [Task210 Phase II Review Closure](docs/tasks/task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK210_PHASE_II_REVIEW_CLOSURE.md)
 - [Task211-220 Mission, Signal And Open Learning Governance](docs/tasks/task211_220_mission_signal_open_learning_governance/README.md)
 - [Task220 Phase II Governance Closure](docs/tasks/task211_220_mission_signal_open_learning_governance/TASK220_PHASE_II_GOVERNANCE_CLOSURE.md)
+- [Task221-230 Knowledge Object And Evidence Readiness Governance](docs/tasks/task221_230_knowledge_object_evidence_readiness_governance/README.md)
+- [Task230 Knowledge And Evidence Readiness Closure](docs/tasks/task221_230_knowledge_object_evidence_readiness_governance/TASK230_KNOWLEDGE_AND_EVIDENCE_READINESS_CLOSURE.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -197,7 +199,7 @@ Use it as a first stop before adding new project content.
 - Task151-160 CarbonOS Research Activation Batch is completed; Task151-160 is closed / research-activation-gated.
 - Task161-200 Runtime Integration Gap Analysis enhancement layer is completed as documentation-only gap analysis; Baseline v1.0 remains preserved.
 - Architecture Baseline v1.1 is frozen; Founder Review Completed.
-- Task161-170 Official Source Discovery, Task171-180 Official Framework Intake, Task181-190 Framework Normalization, Task191-200 Foundation Closure, Task201-210 Phase II Planning, and Task211-220 Mission / Signal / Open Learning Governance are completed as documentation-only packages.
+- Task161-170 Official Source Discovery, Task171-180 Official Framework Intake, Task181-190 Framework Normalization, Task191-200 Foundation Closure, Task201-210 Phase II Planning, Task211-220 Mission / Signal / Open Learning Governance, and Task221-230 Knowledge Object / Evidence Readiness Governance are completed as documentation-only packages.
 
 ## Completed Tasks
 
@@ -324,4 +326,4 @@ boundaries before runtime capability.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, and Task211-220 are closed as documentation-only packages. Task221-230 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, and Task221-230 are closed as documentation-only packages. Task231-240 is not started unless Founder explicitly approves.

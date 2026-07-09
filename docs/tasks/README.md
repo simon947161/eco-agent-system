@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, and Task211-220 are closed as documentation-only packages. Task221-230 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, and Task221-230 are closed as documentation-only packages. Task231-240 is not started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -239,3 +239,19 @@ Task201-210 is closed as documentation-only Phase II planning.
 - [Task220 Phase II Governance Closure](task211_220_mission_signal_open_learning_governance/TASK220_PHASE_II_GOVERNANCE_CLOSURE.md)
 
 Task211-220 is closed as documentation-only strategic governance. Task221-230 Knowledge Object and Evidence Readiness Governance is recommended but not started unless Founder explicitly approves.
+
+## Task221-230 - Knowledge Object And Evidence Readiness Governance
+
+- [Task221-230 Knowledge Object And Evidence Readiness Governance](task221_230_knowledge_object_evidence_readiness_governance/README.md)
+- [Task221 Knowledge Object Definition](task221_230_knowledge_object_evidence_readiness_governance/TASK221_KNOWLEDGE_OBJECT_DEFINITION.md)
+- [Task222 Knowledge Object Boundary And Non-Interpretation Rule](task221_230_knowledge_object_evidence_readiness_governance/TASK222_KNOWLEDGE_OBJECT_BOUNDARY_AND_NON_INTERPRETATION_RULE.md)
+- [Task223 Source Signal Claim Evidence Distinction](task221_230_knowledge_object_evidence_readiness_governance/TASK223_SOURCE_SIGNAL_CLAIM_EVIDENCE_DISTINCTION.md)
+- [Task224 Evidence Readiness Levels](task221_230_knowledge_object_evidence_readiness_governance/TASK224_EVIDENCE_READINESS_LEVELS.md)
+- [Task225 Evidence Admission Gate](task221_230_knowledge_object_evidence_readiness_governance/TASK225_EVIDENCE_ADMISSION_GATE.md)
+- [Task226 Knowledge Object Lifecycle](task221_230_knowledge_object_evidence_readiness_governance/TASK226_KNOWLEDGE_OBJECT_LIFECYCLE.md)
+- [Task227 Evidence Risk And Misuse Prevention](task221_230_knowledge_object_evidence_readiness_governance/TASK227_EVIDENCE_RISK_AND_MISUSE_PREVENTION.md)
+- [Task228 PRI Routing For Knowledge Objects](task221_230_knowledge_object_evidence_readiness_governance/TASK228_PRI_ROUTING_FOR_KNOWLEDGE_OBJECTS.md)
+- [Task229 Founder Review And Human Authority Gate](task221_230_knowledge_object_evidence_readiness_governance/TASK229_FOUNDER_REVIEW_AND_HUMAN_AUTHORITY_GATE.md)
+- [Task230 Knowledge And Evidence Readiness Closure](task221_230_knowledge_object_evidence_readiness_governance/TASK230_KNOWLEDGE_AND_EVIDENCE_READINESS_CLOSURE.md)
+
+Task221-230 is closed as documentation-only readiness governance. Task231-240 ClimateOS Evidence Passport Pre-Architecture Governance is recommended but not started unless Founder explicitly approves.
