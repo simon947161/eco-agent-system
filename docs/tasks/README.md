@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, and Task261-270 are closed as documentation-only packages. Task271-280 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, and Task271-280 are closed as documentation-only packages. Task281-290 is not started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -318,4 +318,20 @@ Task251-260 is closed as documentation-only authorization decision governance. T
 - [Task269 Non-Automatic Transition And No-Approval-By-Template Rule](task261_270_evidence_passport_architecture_work_request_governance/TASK269_NON_AUTOMATIC_TRANSITION_AND_NO_APPROVAL_BY_TEMPLATE_RULE.md)
 - [Task270 Architecture Work Request Governance Closure](task261_270_evidence_passport_architecture_work_request_governance/TASK270_ARCHITECTURE_WORK_REQUEST_GOVERNANCE_CLOSURE.md)
 
-Task261-270 is closed as documentation-only work request governance. Task271-280 ClimateOS Evidence Passport Architecture Request Package Governance Review may be recommended, but must not begin unless Founder explicitly approves.
+Task261-270 is closed as documentation-only work request governance. Task271-280 ClimateOS Evidence Passport Architecture Request Package Governance Review was later Founder-authorized and completed as documentation-only governance review, not request creation, request submission, architecture authorization, architecture design, runtime, or implementation.
+
+## Task271-280 - Evidence Passport Architecture Request Package Governance Review
+
+- [Task271-280 Evidence Passport Architecture Request Package Governance Review](task271_280_evidence_passport_architecture_request_package_governance_review/README.md)
+- [Task271 Architecture Request Package Governance Review Boundary](task271_280_evidence_passport_architecture_request_package_governance_review/TASK271_ARCHITECTURE_REQUEST_PACKAGE_GOVERNANCE_REVIEW_BOUNDARY.md)
+- [Task272 Request Package Completeness Review Requirements](task271_280_evidence_passport_architecture_request_package_governance_review/TASK272_REQUEST_PACKAGE_COMPLETENESS_REVIEW_REQUIREMENTS.md)
+- [Task273 Boundary Declaration Review Requirements](task271_280_evidence_passport_architecture_request_package_governance_review/TASK273_BOUNDARY_DECLARATION_REVIEW_REQUIREMENTS.md)
+- [Task274 Founder Authorization Review Requirements](task271_280_evidence_passport_architecture_request_package_governance_review/TASK274_FOUNDER_AUTHORIZATION_REVIEW_REQUIREMENTS.md)
+- [Task275 Human Authority And Mission Alignment Review Requirements](task271_280_evidence_passport_architecture_request_package_governance_review/TASK275_HUMAN_AUTHORITY_AND_MISSION_ALIGNMENT_REVIEW_REQUIREMENTS.md)
+- [Task276 Risk Disclosure Review Requirements](task271_280_evidence_passport_architecture_request_package_governance_review/TASK276_RISK_DISCLOSURE_REVIEW_REQUIREMENTS.md)
+- [Task277 Prior Governance Reference Review Requirements](task271_280_evidence_passport_architecture_request_package_governance_review/TASK277_PRIOR_GOVERNANCE_REFERENCE_REVIEW_REQUIREMENTS.md)
+- [Task278 Deferral Rejection And Escalation Review Rules](task271_280_evidence_passport_architecture_request_package_governance_review/TASK278_DEFERRAL_REJECTION_AND_ESCALATION_REVIEW_RULES.md)
+- [Task279 No Active Request And Non-Automatic Transition Rule](task271_280_evidence_passport_architecture_request_package_governance_review/TASK279_NO_ACTIVE_REQUEST_AND_NON_AUTOMATIC_TRANSITION_RULE.md)
+- [Task280 Architecture Request Package Governance Review Closure](task271_280_evidence_passport_architecture_request_package_governance_review/TASK280_ARCHITECTURE_REQUEST_PACKAGE_GOVERNANCE_REVIEW_CLOSURE.md)
+
+Task271-280 is closed as documentation-only governance review. Task281-290 ClimateOS Evidence Passport Architecture Request Authorization Gate Review may be recommended, but must not begin unless Founder explicitly approves.
