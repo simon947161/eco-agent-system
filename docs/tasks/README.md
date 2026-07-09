@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, and Task201-210 are closed as documentation-only packages. Task211-220 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, and Task211-220 are closed as documentation-only packages. Task221-230 is not started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -222,4 +222,20 @@ Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](..
 - [Task209 Task201-300 Roadmap Draft](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK209_TASK201_300_ROADMAP_DRAFT.md)
 - [Task210 Phase II Review Closure](task201_210_roadmap_task200_phase_ii_planning_seed_reconciliation/TASK210_PHASE_II_REVIEW_CLOSURE.md)
 
-Task201-210 is closed as documentation-only Phase II planning. Task211-220 Open Learning and Knowledge Harvest Governance is recommended but not started unless Founder explicitly approves.
+Task201-210 is closed as documentation-only Phase II planning.
+
+## Task211-220 - Mission, Signal And Open Learning Governance
+
+- [Task211-220 Mission, Signal And Open Learning Governance](task211_220_mission_signal_open_learning_governance/README.md)
+- [Task211 Mission Governance](task211_220_mission_signal_open_learning_governance/TASK211_MISSION_GOVERNANCE.md)
+- [Task212 Signal Governance](task211_220_mission_signal_open_learning_governance/TASK212_SIGNAL_GOVERNANCE.md)
+- [Task213 Signal Ownership And Authority](task211_220_mission_signal_open_learning_governance/TASK213_SIGNAL_OWNERSHIP_AND_AUTHORITY.md)
+- [Task214 Signal Lifecycle](task211_220_mission_signal_open_learning_governance/TASK214_SIGNAL_LIFECYCLE.md)
+- [Task215 Open Learning Governance](task211_220_mission_signal_open_learning_governance/TASK215_OPEN_LEARNING_GOVERNANCE.md)
+- [Task216 Knowledge Harvest Integration](task211_220_mission_signal_open_learning_governance/TASK216_KNOWLEDGE_HARVEST_INTEGRATION.md)
+- [Task217 PRI Matrix Translation And Routing](task211_220_mission_signal_open_learning_governance/TASK217_PRI_MATRIX_TRANSLATION_AND_ROUTING.md)
+- [Task218 Human Mission And Decision Governance](task211_220_mission_signal_open_learning_governance/TASK218_HUMAN_MISSION_AND_DECISION_GOVERNANCE.md)
+- [Task219 Mission Alignment Review](task211_220_mission_signal_open_learning_governance/TASK219_MISSION_ALIGNMENT_REVIEW.md)
+- [Task220 Phase II Governance Closure](task211_220_mission_signal_open_learning_governance/TASK220_PHASE_II_GOVERNANCE_CLOSURE.md)
+
+Task211-220 is closed as documentation-only strategic governance. Task221-230 Knowledge Object and Evidence Readiness Governance is recommended but not started unless Founder explicitly approves.

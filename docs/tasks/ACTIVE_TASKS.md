@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | No active implementation task open | Task201-210 Roadmap Task200 Phase II Planning and Seed Reconciliation is closed as a documentation-only strategic planning package; Task211-220 is recommended but not started. |
+| None | No active implementation task open | Task211-220 Mission, Signal and Open Learning Governance is closed as a documentation-only strategic governance package; Task221-230 is recommended but not started. |
 
 ## Recently Completed Local Work
 
@@ -86,6 +86,7 @@ For the canonical record, use the
 | Task191-200 Controlled Comparative Mapping And Evidence Reasoning Gate With Runtime Lens | Completed | Documentation-only foundation closure package created for mapping permission gates, citation verification, version/reporting-period verification, translation governance review, evidence reasoning boundaries, readiness levels, runtime hook metadata, CarbonOS foundation summary, and Task200 closure; no standards comparison, standards interpretation, ranking, ESG conclusion, carbon conclusion, compliance guidance, assurance guidance, certification guidance, operational Evidence Passport, operational Claim Boundary decision, runtime, API, database, MCP, scoring, automation, QCloud resume, PRI dependency, n8n dependency, or Architecture Baseline v1.1 modification. |
 | Roadmap Task200 Restoration | Completed | Routing clarification added to restore Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch; no Task201 implementation started. |
 | Task201-210 Roadmap Task200 Phase II Planning And Seed Reconciliation | Completed | Documentation-only Phase II planning package created for control boundary, recovered Task200 strategy consolidation, runtime planning boundary, Open Learning Architecture, Knowledge Harvest Integration, AEP Phase II extension, readiness map, Roadmap Task300 vision seed, Task201-300 roadmap draft, and closure / Task211 recommendation; no runtime, API, database, MCP, n8n, automation, scoring, agent execution, QCloud resume, operational Evidence Passport, standards interpretation, framework comparison, ESG conclusion, carbon conclusion, compliance guidance, assurance guidance, or certification guidance. |
+| Task211-220 Mission, Signal And Open Learning Governance | Completed | Documentation-only strategic governance package created for Mission Governance, Signal Governance, signal ownership and authority, signal lifecycle, Open Learning Governance, Knowledge Harvest Integration, PRI / Matrix translation and routing, Human Mission and Decision Governance, Mission Alignment Review, and Phase II governance closure; no runtime, API, database, MCP, n8n, automation, scoring, agent execution, QCloud resume, operational Evidence Passport, standards interpretation, framework comparison, ESG conclusion, carbon conclusion, compliance guidance, assurance guidance, or certification guidance. |
 
 ## Boundary
 
