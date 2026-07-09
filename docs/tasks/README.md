@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, and Task251-260 are closed as documentation-only packages. Task261-270 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, and Task261-270 are closed as documentation-only packages. Task271-280 is not started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -302,4 +302,20 @@ Task241-250 is closed as documentation-only readiness review. Task251-260 Climat
 - [Task259 Future Architecture Work Request Package Requirements](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK259_FUTURE_ARCHITECTURE_WORK_REQUEST_PACKAGE_REQUIREMENTS.md)
 - [Task260 Architecture Authorization Decision Governance Closure](task251_260_evidence_passport_architecture_authorization_decision_governance/TASK260_ARCHITECTURE_AUTHORIZATION_DECISION_GOVERNANCE_CLOSURE.md)
 
-Task251-260 is closed as documentation-only authorization decision governance. Task261-270 ClimateOS Evidence Passport Architecture Work Request Governance may be recommended, but must not begin unless Founder explicitly approves.
+Task251-260 is closed as documentation-only authorization decision governance. Task261-270 ClimateOS Evidence Passport Architecture Work Request Governance was later Founder-authorized and completed as documentation-only work request governance, not architecture request submission, architecture design, runtime, or implementation.
+
+## Task261-270 - Evidence Passport Architecture Work Request Governance
+
+- [Task261-270 Evidence Passport Architecture Work Request Governance](task261_270_evidence_passport_architecture_work_request_governance/README.md)
+- [Task261 Architecture Work Request Governance Boundary](task261_270_evidence_passport_architecture_work_request_governance/TASK261_ARCHITECTURE_WORK_REQUEST_GOVERNANCE_BOUNDARY.md)
+- [Task262 Architecture Work Request Purpose And Non-Purpose](task261_270_evidence_passport_architecture_work_request_governance/TASK262_ARCHITECTURE_WORK_REQUEST_PURPOSE_AND_NON_PURPOSE.md)
+- [Task263 Required Work Request Package Structure](task261_270_evidence_passport_architecture_work_request_governance/TASK263_REQUIRED_WORK_REQUEST_PACKAGE_STRUCTURE.md)
+- [Task264 Founder Authorization Phrase Requirements](task261_270_evidence_passport_architecture_work_request_governance/TASK264_FOUNDER_AUTHORIZATION_PHRASE_REQUIREMENTS.md)
+- [Task265 Scope Boundary And Prohibited Work Declaration Requirements](task261_270_evidence_passport_architecture_work_request_governance/TASK265_SCOPE_BOUNDARY_AND_PROHIBITED_WORK_DECLARATION_REQUIREMENTS.md)
+- [Task266 Risk Statement And Misuse Disclosure Requirements](task261_270_evidence_passport_architecture_work_request_governance/TASK266_RISK_STATEMENT_AND_MISUSE_DISCLOSURE_REQUIREMENTS.md)
+- [Task267 Mission Alignment And Human Authority Statement Requirements](task261_270_evidence_passport_architecture_work_request_governance/TASK267_MISSION_ALIGNMENT_AND_HUMAN_AUTHORITY_STATEMENT_REQUIREMENTS.md)
+- [Task268 Prior Governance Reference Requirements](task261_270_evidence_passport_architecture_work_request_governance/TASK268_PRIOR_GOVERNANCE_REFERENCE_REQUIREMENTS.md)
+- [Task269 Non-Automatic Transition And No-Approval-By-Template Rule](task261_270_evidence_passport_architecture_work_request_governance/TASK269_NON_AUTOMATIC_TRANSITION_AND_NO_APPROVAL_BY_TEMPLATE_RULE.md)
+- [Task270 Architecture Work Request Governance Closure](task261_270_evidence_passport_architecture_work_request_governance/TASK270_ARCHITECTURE_WORK_REQUEST_GOVERNANCE_CLOSURE.md)
+
+Task261-270 is closed as documentation-only work request governance. Task271-280 ClimateOS Evidence Passport Architecture Request Package Governance Review may be recommended, but must not begin unless Founder explicitly approves.
