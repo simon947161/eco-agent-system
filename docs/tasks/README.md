@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, and Task231-240 are closed as documentation-only packages. Task241-250 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, and Task241-250 are closed as documentation-only packages. Task251-260 is not started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -270,4 +270,20 @@ Task221-230 is closed as documentation-only readiness governance. Task231-240 Cl
 - [Task239 Evidence Passport Future Architecture Authorization Criteria](task231_240_evidence_passport_pre_architecture_governance/TASK239_EVIDENCE_PASSPORT_FUTURE_ARCHITECTURE_AUTHORIZATION_CRITERIA.md)
 - [Task240 Evidence Passport Pre-Architecture Governance Closure](task231_240_evidence_passport_pre_architecture_governance/TASK240_EVIDENCE_PASSPORT_PRE_ARCHITECTURE_GOVERNANCE_CLOSURE.md)
 
-Task231-240 is closed as documentation-only pre-architecture governance. Task241-250 ClimateOS Evidence Passport Architecture Readiness Review is recommended but not started unless Founder explicitly approves.
+Task231-240 is closed as documentation-only pre-architecture governance. Task241-250 ClimateOS Evidence Passport Architecture Readiness Review was later Founder-authorized and completed as documentation-only readiness review, not architecture or implementation.
+
+## Task241-250 - Evidence Passport Architecture Readiness Review
+
+- [Task241-250 Evidence Passport Architecture Readiness Review](task241_250_evidence_passport_architecture_readiness_review/README.md)
+- [Task241 Architecture Readiness Review Boundary](task241_250_evidence_passport_architecture_readiness_review/TASK241_ARCHITECTURE_READINESS_REVIEW_BOUNDARY.md)
+- [Task242 Prior Governance Completion Review](task241_250_evidence_passport_architecture_readiness_review/TASK242_PRIOR_GOVERNANCE_COMPLETION_REVIEW.md)
+- [Task243 Mission Alignment Readiness Review](task241_250_evidence_passport_architecture_readiness_review/TASK243_MISSION_ALIGNMENT_READINESS_REVIEW.md)
+- [Task244 Knowledge Object Evidence Readiness Dependency Review](task241_250_evidence_passport_architecture_readiness_review/TASK244_KNOWLEDGE_OBJECT_EVIDENCE_READINESS_DEPENDENCY_REVIEW.md)
+- [Task245 Evidence Passport Authority Limitation Readiness Review](task241_250_evidence_passport_architecture_readiness_review/TASK245_EVIDENCE_PASSPORT_AUTHORITY_LIMITATION_READINESS_REVIEW.md)
+- [Task246 Human Review Founder Gate Readiness Review](task241_250_evidence_passport_architecture_readiness_review/TASK246_HUMAN_REVIEW_FOUNDER_GATE_READINESS_REVIEW.md)
+- [Task247 PRI Runtime Passport Distinction Readiness Review](task241_250_evidence_passport_architecture_readiness_review/TASK247_PRI_RUNTIME_PASSPORT_DISTINCTION_READINESS_REVIEW.md)
+- [Task248 Risk Control Non-Interpretation Readiness Review](task241_250_evidence_passport_architecture_readiness_review/TASK248_RISK_CONTROL_NON_INTERPRETATION_READINESS_REVIEW.md)
+- [Task249 Future Architecture Authorization Criteria Review](task241_250_evidence_passport_architecture_readiness_review/TASK249_FUTURE_ARCHITECTURE_AUTHORIZATION_CRITERIA_REVIEW.md)
+- [Task250 Architecture Readiness Review Closure](task241_250_evidence_passport_architecture_readiness_review/TASK250_ARCHITECTURE_READINESS_REVIEW_CLOSURE.md)
+
+Task241-250 is closed as documentation-only readiness review. Task251-260 ClimateOS Evidence Passport Architecture Authorization Decision Governance is recommended but not started unless Founder explicitly approves.
