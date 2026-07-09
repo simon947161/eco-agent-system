@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, and Task221-230 are closed as documentation-only packages. Task231-240 is not started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, and Task231-240 are closed as documentation-only packages. Task241-250 is not started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -254,4 +254,20 @@ Task211-220 is closed as documentation-only strategic governance. Task221-230 Kn
 - [Task229 Founder Review And Human Authority Gate](task221_230_knowledge_object_evidence_readiness_governance/TASK229_FOUNDER_REVIEW_AND_HUMAN_AUTHORITY_GATE.md)
 - [Task230 Knowledge And Evidence Readiness Closure](task221_230_knowledge_object_evidence_readiness_governance/TASK230_KNOWLEDGE_AND_EVIDENCE_READINESS_CLOSURE.md)
 
-Task221-230 is closed as documentation-only readiness governance. Task231-240 ClimateOS Evidence Passport Pre-Architecture Governance is recommended but not started unless Founder explicitly approves.
+Task221-230 is closed as documentation-only readiness governance. Task231-240 ClimateOS Evidence Passport Pre-Architecture Governance was later Founder-authorized and completed as documentation-only pre-architecture governance, not implementation.
+
+## Task231-240 - Evidence Passport Pre-Architecture Governance
+
+- [Task231-240 Evidence Passport Pre-Architecture Governance](task231_240_evidence_passport_pre_architecture_governance/README.md)
+- [Task231 Evidence Passport Pre-Architecture Boundary](task231_240_evidence_passport_pre_architecture_governance/TASK231_EVIDENCE_PASSPORT_PRE_ARCHITECTURE_BOUNDARY.md)
+- [Task232 Evidence Passport Purpose And Non-Purpose](task231_240_evidence_passport_pre_architecture_governance/TASK232_EVIDENCE_PASSPORT_PURPOSE_AND_NON_PURPOSE.md)
+- [Task233 Evidence Passport Relationship To Mission](task231_240_evidence_passport_pre_architecture_governance/TASK233_EVIDENCE_PASSPORT_RELATIONSHIP_TO_MISSION.md)
+- [Task234 Evidence Passport Relationship To Knowledge Object Governance](task231_240_evidence_passport_pre_architecture_governance/TASK234_EVIDENCE_PASSPORT_RELATIONSHIP_TO_KNOWLEDGE_OBJECT_GOVERNANCE.md)
+- [Task235 Evidence Passport Authority And Non-Authority Rules](task231_240_evidence_passport_pre_architecture_governance/TASK235_EVIDENCE_PASSPORT_AUTHORITY_AND_NON_AUTHORITY_RULES.md)
+- [Task236 Evidence Passport Risk And Misuse Controls](task231_240_evidence_passport_pre_architecture_governance/TASK236_EVIDENCE_PASSPORT_RISK_AND_MISUSE_CONTROLS.md)
+- [Task237 Evidence Passport Human Review And Founder Gate](task231_240_evidence_passport_pre_architecture_governance/TASK237_EVIDENCE_PASSPORT_HUMAN_REVIEW_AND_FOUNDER_GATE.md)
+- [Task238 Evidence Passport PRI Runtime Passport Distinction](task231_240_evidence_passport_pre_architecture_governance/TASK238_EVIDENCE_PASSPORT_PRI_RUNTIME_PASSPORT_DISTINCTION.md)
+- [Task239 Evidence Passport Future Architecture Authorization Criteria](task231_240_evidence_passport_pre_architecture_governance/TASK239_EVIDENCE_PASSPORT_FUTURE_ARCHITECTURE_AUTHORIZATION_CRITERIA.md)
+- [Task240 Evidence Passport Pre-Architecture Governance Closure](task231_240_evidence_passport_pre_architecture_governance/TASK240_EVIDENCE_PASSPORT_PRE_ARCHITECTURE_GOVERNANCE_CLOSURE.md)
+
+Task231-240 is closed as documentation-only pre-architecture governance. Task241-250 ClimateOS Evidence Passport Architecture Readiness Review is recommended but not started unless Founder explicitly approves.
