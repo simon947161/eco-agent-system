@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClimateOS Evidence Passport Static Skeleton</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Task421-480 static Web MVP skeleton</p>
+        <h1>ClimateOS Evidence Passport</h1>
+        <p class="subtitle">Static review surface for candidate-only evidence workflow visibility.</p>
+      </div>
+      <div class="boundary-panel" aria-label="Boundary">
+        <strong>Static-only / mock-only</strong>
+        <span>No backend. No API. No database. No scoring. No deployment.</span>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <nav class="side-nav" aria-label="Evidence Passport sections">
+        <button data-target="case-overview" class="active">Case Overview</button>
+        <button data-target="source-intake">Source Intake</button>
+        <button data-target="signal-register">Signal Register</button>
+        <button data-target="claim-candidates">Claim Candidates</button>
+        <button data-target="knowledge-objects">Knowledge Objects</button>
+        <button data-target="evidence-candidates">Evidence Candidates</button>
+        <button data-target="evidence-readiness">Evidence Readiness</button>
+        <button data-target="risk-flags">Risk Flags</button>
+        <button data-target="human-review">Human Review</button>
+        <button data-target="founder-gate">Founder Gate</button>
+        <button data-target="archive-closure">Archive / Closure</button>
+      </nav>
+
+      <section class="workspace">
+        <div class="notice">
+          <strong>No-conclusion rule:</strong>
+          <span>This skeleton displays provisional candidates only. It does not verify, approve, score, certify, assure, determine compliance, or create ESG/carbon, standards, or framework conclusions.</span>
+        </div>
+
+        <section id="case-overview" class="screen active-screen" aria-labelledby="case-overview-title">
+          <h2 id="case-overview-title">Case Overview</h2>
+          <div id="case-summary" class="grid two"></div>
+          <div id="workflow-rail" class="workflow-rail"></div>
+        </section>
+
+        <section id="source-intake" class="screen" aria-labelledby="source-intake-title">
+          <h2 id="source-intake-title">Source Intake</h2>
+          <p class="screen-note">Source records are mock candidates. They are not verified final evidence.</p>
+          <div id="sources" class="record-grid"></div>
+        </section>
+
+        <section id="signal-register" class="screen" aria-labelledby="signal-register-title">
+          <h2 id="signal-register-title">Signal Register</h2>
+          <p class="screen-note">Signals organize observations for review. They do not prove outcomes.</p>
+          <div id="signals" class="record-grid"></div>
+        </section>
+
+        <section id="claim-candidates" class="screen" aria-labelledby="claim-candidates-title">
+          <h2 id="claim-candidates-title">Claim Candidates</h2>
+          <p class="screen-note">Claim candidates are provisional and remain blocked from public conclusion use.</p>
+          <div id="claims" class="record-grid"></div>
+        </section>
+
+        <section id="knowledge-objects" class="screen" aria-labelledby="knowledge-objects-title">
+          <h2 id="knowledge-objects-title">Knowledge Objects</h2>
+          <p class="screen-note">Knowledge Objects are candidate groupings only. No registry runtime exists.</p>
+          <div id="knowledge-objects-list" class="record-grid"></div>
+        </section>
+
+        <section id="evidence-candidates" class="screen" aria-labelledby="evidence-candidates-title">
+          <h2 id="evidence-candidates-title">Evidence Candidates</h2>
+          <p class="screen-note">Evidence candidates are not admitted evidence and cannot issue an Evidence Passport.</p>
+          <div id="evidence" class="record-grid"></div>
+        </section>
+
+        <section id="evidence-readiness" class="screen" aria-labelledby="evidence-readiness-title">
+          <h2 id="evidence-readiness-title">Evidence Readiness</h2>
+          <p class="screen-note">Readiness labels are non-scoring metadata only.</p>
+          <div class="table-wrap">
+            <table id="readiness-table"></table>
+          </div>
+        </section>
+
+        <section id="risk-flags" class="screen" aria-labelledby="risk-flags-title">
+          <h2 id="risk-flags-title">Risk Flags</h2>
+          <p class="screen-note">Risk flags are stop controls. They do not resolve automatically.</p>
+          <div id="risk-flags-list" class="record-grid"></div>
+        </section>
+
+        <section id="human-review" class="screen" aria-labelledby="human-review-title">
+          <h2 id="human-review-title">Human Review</h2>
+          <p class="screen-note">Human Review is visible but not automated. No review decisions are persisted.</p>
+          <div id="human-review-list" class="record-grid"></div>
+        </section>
+
+        <section id="founder-gate" class="screen" aria-labelledby="founder-gate-title">
+          <h2 id="founder-gate-title">Founder Gate</h2>
+          <p class="screen-note">Founder Gate remains above future authorization and execution.</p>
+          <div id="founder-gate-list" class="record-grid"></div>
+        </section>
+
+        <section id="archive-closure" class="screen" aria-labelledby="archive-closure-title">
+          <h2 id="archive-closure-title">Archive / Closure</h2>
+          <div id="archive-summary" class="grid two"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="data/mockEvidencePassport.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

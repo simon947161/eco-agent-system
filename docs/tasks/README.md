@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, and Task361-420 are closed as documentation-only packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, and Task421-480 are closed as documentation-only or static-skeleton packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -393,3 +393,16 @@ Task301-360 is closed as documentation-only source discovery, candidate classifi
 - [Task421-480 Gate Questions](task361_420_climateos_mvp_architecture_v0_1_prototype_planning/TASK421_480_GATE_QUESTIONS.md)
 
 Task361-420 is closed as documentation-only architecture and prototype planning. No Task421, future batch, implementation work, runtime work, application code, frontend code, backend code, API, database schema, MCP tools, n8n workflow, QCloud integration, automation, scoring, operational Evidence Passport, deployment, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task421-480 - ClimateOS Evidence Passport Web MVP Skeleton Sprint
+
+- [Task421-480 ClimateOS Evidence Passport Web MVP Skeleton Sprint](task421_480_climateos_web_mvp_skeleton/README.md)
+- [Task421-430 Web MVP Gate And Skeleton Principles](task421_480_climateos_web_mvp_skeleton/TASK421_430_WEB_MVP_GATE_AND_SKELETON_PRINCIPLES.md)
+- [Task431-440 Project Skeleton And Static Navigation](task421_480_climateos_web_mvp_skeleton/TASK431_440_PROJECT_SKELETON_AND_STATIC_NAVIGATION.md)
+- [Task441-450 Evidence Passport Workflow Screens](task421_480_climateos_web_mvp_skeleton/TASK441_450_EVIDENCE_PASSPORT_WORKFLOW_SCREENS.md)
+- [Task451-460 Human Review And Founder Gate Screens](task421_480_climateos_web_mvp_skeleton/TASK451_460_HUMAN_REVIEW_AND_FOUNDER_GATE_SCREENS.md)
+- [Task461-470 Static Mock Data And No-Conclusion UX](task421_480_climateos_web_mvp_skeleton/TASK461_470_STATIC_MOCK_DATA_AND_NO_CONCLUSION_UX.md)
+- [Task471-480 Web Skeleton Closure Packet](task421_480_climateos_web_mvp_skeleton/TASK471_480_WEB_SKELETON_CLOSURE_PACKET.md)
+- [Task481-540 Gate Questions](task421_480_climateos_web_mvp_skeleton/TASK481_540_GATE_QUESTIONS.md)
+
+Task421-480 is closed as a limited static Web MVP skeleton for Founder review. No Task481, future batch, runtime work, backend service, production API, database schema, persistence layer, authentication system, MCP tools, n8n workflow, QCloud integration, automation, scheduler, scoring, operational Evidence Passport, deployment, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
