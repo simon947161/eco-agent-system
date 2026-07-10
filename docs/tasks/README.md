@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, Task621-630, and Task631-640 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, domain federation foundation, domain federation example, or conceptual Evidence Contract example packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, Task621-630, Task631-640, and Task641-650 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, domain federation foundation, domain federation example, conceptual Evidence Contract example, or Life System inquiry packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -504,3 +504,19 @@ Task621-630 is closed as documentation-only ClimateOS Domain Federation Example 
 - [Task640 Closure Packet And Hard Stop](task631_640_climateos_evidence_contract_example_records/TASK640_CLOSURE_PACKET_AND_HARD_STOP.md)
 
 Task631-640 is closed as documentation-only conceptual Evidence Contract example work. It creates fictional, non-sensitive example records only and stops at Task640. No Task641, private EcoEngine access, `D:\eco_engine_v200` checking or use, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, schema, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task641-650 - BiodiversityOS Life System Scientific Inquiry Path
+
+- [Task641-650 BiodiversityOS Life System Scientific Inquiry Path](task641_650_biodiversityos_life_system_inquiry_path/README.md)
+- [Task641 Authorization And Inquiry Boundary](task641_650_biodiversityos_life_system_inquiry_path/TASK641_AUTHORIZATION_AND_INQUIRY_BOUNDARY.md)
+- [Task642 Life System Inquiry Path](task641_650_biodiversityos_life_system_inquiry_path/TASK642_LIFE_SYSTEM_INQUIRY_PATH.md)
+- [Task643 Biodiversity Climate Question Map](task641_650_biodiversityos_life_system_inquiry_path/TASK643_BIODIVERSITY_CLIMATE_QUESTION_MAP.md)
+- [Task644 Observation And Signal Catalog](task641_650_biodiversityos_life_system_inquiry_path/TASK644_OBSERVATION_AND_SIGNAL_CATALOG.md)
+- [Task645 Hypothesis And Evidence Pathways](task641_650_biodiversityos_life_system_inquiry_path/TASK645_HYPOTHESIS_AND_EVIDENCE_PATHWAYS.md)
+- [Task646 Review And Uncertainty Loop](task641_650_biodiversityos_life_system_inquiry_path/TASK646_REVIEW_AND_UNCERTAINTY_LOOP.md)
+- [Task647 Human And Expert Review Boundary](task641_650_biodiversityos_life_system_inquiry_path/TASK647_HUMAN_AND_EXPERT_REVIEW_BOUNDARY.md)
+- [Task648 Non-Scoring And Non-Certification Rules](task641_650_biodiversityos_life_system_inquiry_path/TASK648_NON_SCORING_AND_NON_CERTIFICATION_RULES.md)
+- [Task649 Task651-660 Gate Questions](task641_650_biodiversityos_life_system_inquiry_path/TASK649_TASK651_660_GATE_QUESTIONS.md)
+- [Task650 Closure Packet And Hard Stop](task641_650_biodiversityos_life_system_inquiry_path/TASK650_CLOSURE_PACKET_AND_HARD_STOP.md)
+
+Task641-650 is closed as documentation-only BiodiversityOS / Life System scientific inquiry foundation work. It creates a plain-language inquiry path only and stops at Task650. No Task651, private EcoEngine access, `D:\eco_engine_v200` checking or use, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, schema, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.

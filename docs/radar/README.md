@@ -10,6 +10,7 @@ monitoring service, alert engine, or forecasting system.
 ## Documents
 
 - [ClimateOS Conversation Radar Template](CLIMATEOS_CONVERSATION_RADAR_TEMPLATE.md)
+- [CRP 2026-07-11 ClimateOS Growth Narrative Working Mode](CRP_2026-07-11_ClimateOS_Growth_Narrative_Working_Mode.md)
 
 ## Related References
 
