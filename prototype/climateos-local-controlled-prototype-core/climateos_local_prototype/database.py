@@ -1,16 +1,97 @@
 import sqlite3
 from pathlib import Path
 
-SCHEMA_VERSION = 1
+from .config import SQLITE_BUSY_TIMEOUT_MS
+
+SCHEMA_VERSION = 2
+
+REQUIRED_TABLES = {
+    "schema_version",
+    "candidate_records",
+    "relationships",
+    "human_reviews",
+    "founder_gates",
+    "audit_events",
+    "model_suggestions",
+    "archive_events",
+}
+
+
+class UnsupportedSchemaVersionError(ValueError):
+    pass
+
+
+class ClosingConnection(sqlite3.Connection):
+    def __exit__(self, exc_type, exc_value, traceback) -> bool:
+        try:
+            return bool(super().__exit__(exc_type, exc_value, traceback))
+        finally:
+            self.close()
 
 
 def connect(db_path: str | Path) -> sqlite3.Connection:
     path = Path(db_path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    connection = sqlite3.connect(path)
+    connection = sqlite3.connect(path, timeout=SQLITE_BUSY_TIMEOUT_MS / 1000, factory=ClosingConnection)
     connection.row_factory = sqlite3.Row
     connection.execute("PRAGMA foreign_keys = ON")
+    connection.execute(f"PRAGMA busy_timeout = {SQLITE_BUSY_TIMEOUT_MS}")
     return connection
+
+
+def _table_columns(connection: sqlite3.Connection, table_name: str) -> set[str]:
+    return {row["name"] for row in connection.execute(f"PRAGMA table_info({table_name})")}
+
+
+def get_schema_version(connection: sqlite3.Connection) -> int:
+    table = connection.execute(
+        "SELECT name FROM sqlite_master WHERE type = 'table' AND name = 'schema_version'"
+    ).fetchone()
+    if table is None:
+        return 0
+    row = connection.execute("SELECT MAX(version) AS version FROM schema_version").fetchone()
+    return int(row["version"] or 0)
+
+
+def set_schema_version(connection: sqlite3.Connection, version: int) -> None:
+    connection.execute(
+        "INSERT OR IGNORE INTO schema_version (version, applied_at) VALUES (?, datetime('now'))",
+        (version,),
+    )
+
+
+def migrate_connection_to_latest(connection: sqlite3.Connection, dry_run: bool = False) -> list[str]:
+    current = get_schema_version(connection)
+    if current > SCHEMA_VERSION:
+        raise UnsupportedSchemaVersionError(
+            f"Database schema version {current} is newer than supported version {SCHEMA_VERSION}."
+        )
+    pending: list[str] = []
+    if current < 2:
+        pending.append("1->2 add audit sequencing and Founder Gate history fields")
+        if not dry_run:
+            audit_columns = _table_columns(connection, "audit_events")
+            if "sequence_number" not in audit_columns:
+                connection.execute("ALTER TABLE audit_events ADD COLUMN sequence_number INTEGER NOT NULL DEFAULT 0")
+            if "operation_id" not in audit_columns:
+                connection.execute("ALTER TABLE audit_events ADD COLUMN operation_id TEXT NOT NULL DEFAULT ''")
+
+            founder_columns = _table_columns(connection, "founder_gates")
+            if "supersedes_gate_id" not in founder_columns:
+                connection.execute("ALTER TABLE founder_gates ADD COLUMN supersedes_gate_id TEXT NOT NULL DEFAULT ''")
+            if "decision_version" not in founder_columns:
+                connection.execute("ALTER TABLE founder_gates ADD COLUMN decision_version INTEGER NOT NULL DEFAULT 1")
+
+            rows = connection.execute(
+                "SELECT rowid FROM audit_events ORDER BY created_at, id"
+            ).fetchall()
+            for sequence, row in enumerate(rows, start=1):
+                connection.execute(
+                    "UPDATE audit_events SET sequence_number = ? WHERE rowid = ?",
+                    (sequence, row["rowid"]),
+                )
+            set_schema_version(connection, 2)
+    return pending
 
 
 def initialize_database(db_path: str | Path) -> None:
@@ -79,6 +160,8 @@ def initialize_database(db_path: str | Path) -> None:
                 scope_prohibited TEXT NOT NULL DEFAULT '',
                 review_or_expiry_requirement TEXT NOT NULL DEFAULT '',
                 archive_reference TEXT NOT NULL DEFAULT '',
+                supersedes_gate_id TEXT NOT NULL DEFAULT '',
+                decision_version INTEGER NOT NULL DEFAULT 1,
                 created_at TEXT NOT NULL
             );
 
@@ -89,6 +172,8 @@ def initialize_database(db_path: str | Path) -> None:
                 actor_label TEXT NOT NULL,
                 record_id TEXT,
                 detail_json TEXT NOT NULL,
+                sequence_number INTEGER NOT NULL DEFAULT 0,
+                operation_id TEXT NOT NULL DEFAULT '',
                 created_at TEXT NOT NULL
             );
 
@@ -116,10 +201,17 @@ def initialize_database(db_path: str | Path) -> None:
             );
             """
         )
-        connection.execute(
-            "INSERT OR IGNORE INTO schema_version (version, applied_at) VALUES (?, datetime('now'))",
-            (SCHEMA_VERSION,),
-        )
+        current = get_schema_version(connection)
+        if current == 0:
+            audit_columns = _table_columns(connection, "audit_events")
+            founder_columns = _table_columns(connection, "founder_gates")
+            if "sequence_number" not in audit_columns or "supersedes_gate_id" not in founder_columns:
+                set_schema_version(connection, 1)
+                migrate_connection_to_latest(connection)
+            else:
+                set_schema_version(connection, SCHEMA_VERSION)
+        else:
+            migrate_connection_to_latest(connection)
 
 
 def reset_database(db_path: str | Path) -> None:

@@ -16,6 +16,7 @@ from .schemas import (
     ReviewTransition,
     SuggestionDecision,
 )
+from .state_machine import InvalidTransitionError, validate_transition
 
 
 def now_iso() -> str:
@@ -61,6 +62,10 @@ class DuplicateModelResponseError(ValueError):
     pass
 
 
+class DuplicateRelationshipError(ValueError):
+    pass
+
+
 class PrototypeRepository:
     def __init__(self, db_path: str | Path):
         self.db_path = Path(db_path)
@@ -81,14 +86,21 @@ class PrototypeRepository:
             "actor_label": actor_label,
             "record_id": record_id,
             "detail_json": _json(detail),
+            "operation_id": new_id("OP"),
             "created_at": now_iso(),
         }
         with connect(self.db_path) as connection:
+            sequence = connection.execute(
+                "SELECT COALESCE(MAX(sequence_number), 0) + 1 AS sequence_number FROM audit_events"
+            ).fetchone()["sequence_number"]
+            event["sequence_number"] = sequence
             connection.execute(
                 """
                 INSERT INTO audit_events
-                (id, event_type, actor_type, actor_label, record_id, detail_json, created_at)
-                VALUES (:id, :event_type, :actor_type, :actor_label, :record_id, :detail_json, :created_at)
+                (id, event_type, actor_type, actor_label, record_id, detail_json,
+                 sequence_number, operation_id, created_at)
+                VALUES (:id, :event_type, :actor_type, :actor_label, :record_id, :detail_json,
+                 :sequence_number, :operation_id, :created_at)
                 """,
                 event,
             )
@@ -144,10 +156,37 @@ class PrototypeRepository:
         )
         return self.get_candidate(candidate["id"])
 
-    def list_candidates(self) -> list[dict[str, Any]]:
+    def list_candidates(
+        self,
+        record_type: str | None = None,
+        status: str | None = None,
+        risk_flag: str | None = None,
+        text_query: str | None = None,
+        limit: int = 250,
+        offset: int = 0,
+    ) -> list[dict[str, Any]]:
+        limit = max(1, min(limit, 1000))
+        offset = max(0, offset)
+        where: list[str] = []
+        values: list[Any] = []
+        if record_type:
+            where.append("record_type = ?")
+            values.append(record_type)
+        if status:
+            where.append("status = ?")
+            values.append(status)
+        if risk_flag:
+            where.append("risk_flags LIKE ?")
+            values.append(f"%{risk_flag}%")
+        if text_query:
+            where.append("(title LIKE ? OR summary LIKE ?)")
+            values.extend([f"%{text_query}%", f"%{text_query}%"])
+        where_sql = f"WHERE {' AND '.join(where)}" if where else ""
+        values.extend([limit, offset])
         with connect(self.db_path) as connection:
             rows = connection.execute(
-                "SELECT * FROM candidate_records ORDER BY created_at, id"
+                f"SELECT * FROM candidate_records {where_sql} ORDER BY created_at, id LIMIT ? OFFSET ?",
+                tuple(values),
             ).fetchall()
         return [_row_to_candidate(row) for row in rows]
 
@@ -198,6 +237,12 @@ class PrototypeRepository:
 
     def transition_status(self, record_id: str, payload: ReviewTransition) -> dict[str, Any]:
         current = self.get_candidate(record_id)
+        validate_transition(
+            current["status"],
+            payload.new_status,
+            payload.linked_risk_flags,
+            payload.founder_gate_trigger,
+        )
         timestamp = now_iso()
         review_id = new_id("HR")
         with connect(self.db_path) as connection:
@@ -250,6 +295,7 @@ class PrototypeRepository:
             new_status="Archived",
             reviewer_label=reviewer_label,
             reason=reason,
+            linked_risk_flags=["RF-ARCHIVE"],
         )
         record = self.transition_status(record_id, transition)
         with connect(self.db_path) as connection:
@@ -269,6 +315,17 @@ class PrototypeRepository:
     def create_relationship(self, payload: RelationshipCreate) -> dict[str, Any]:
         self.get_candidate(payload.from_record_id)
         self.get_candidate(payload.to_record_id)
+        with connect(self.db_path) as connection:
+            existing = connection.execute(
+                """
+                SELECT id FROM relationships
+                WHERE from_record_id = ? AND to_record_id = ? AND relationship_type = ?
+                LIMIT 1
+                """,
+                (payload.from_record_id, payload.to_record_id, payload.relationship_type),
+            ).fetchone()
+        if existing is not None:
+            raise DuplicateRelationshipError("Relationship already exists.")
         relationship = {
             "id": new_id("REL"),
             "from_record_id": payload.from_record_id,
@@ -297,6 +354,20 @@ class PrototypeRepository:
         return relationship
 
     def create_founder_gate(self, payload: FounderGateCreate) -> dict[str, Any]:
+        for record_id in payload.affected_record_ids:
+            self.get_candidate(record_id)
+        if payload.supersedes_gate_id:
+            with connect(self.db_path) as connection:
+                prior_gate = connection.execute(
+                    "SELECT id FROM founder_gates WHERE id = ?", (payload.supersedes_gate_id,)
+                ).fetchone()
+            if prior_gate is None:
+                raise KeyError(payload.supersedes_gate_id)
+        with connect(self.db_path) as connection:
+            version_row = connection.execute(
+                "SELECT COALESCE(MAX(decision_version), 0) + 1 AS version FROM founder_gates WHERE gate_trigger = ?",
+                (payload.gate_trigger,),
+            ).fetchone()
         gate = {
             "id": new_id("FG"),
             "gate_trigger": payload.gate_trigger,
@@ -308,6 +379,8 @@ class PrototypeRepository:
             "scope_prohibited": payload.scope_prohibited,
             "review_or_expiry_requirement": payload.review_or_expiry_requirement,
             "archive_reference": payload.archive_reference,
+            "supersedes_gate_id": payload.supersedes_gate_id,
+            "decision_version": version_row["version"],
             "created_at": now_iso(),
         }
         with connect(self.db_path) as connection:
@@ -316,11 +389,13 @@ class PrototypeRepository:
                 INSERT INTO founder_gates
                 (id, gate_trigger, affected_record_ids, decision_date, decision_status,
                  founder_instruction_text, scope_allowed, scope_prohibited,
-                 review_or_expiry_requirement, archive_reference, created_at)
+                 review_or_expiry_requirement, archive_reference, supersedes_gate_id,
+                 decision_version, created_at)
                 VALUES
                 (:id, :gate_trigger, :affected_record_ids, :decision_date, :decision_status,
                  :founder_instruction_text, :scope_allowed, :scope_prohibited,
-                 :review_or_expiry_requirement, :archive_reference, :created_at)
+                 :review_or_expiry_requirement, :archive_reference, :supersedes_gate_id,
+                 :decision_version, :created_at)
                 """,
                 gate,
             )
@@ -388,6 +463,29 @@ class PrototypeRepository:
         )
         return imported
 
+    def preview_model_response(self, payload: ModelResponseImport) -> dict[str, Any]:
+        suggestion_ids = [suggestion.suggestion_id for suggestion in payload.suggestions]
+        with connect(self.db_path) as connection:
+            existing_response = connection.execute(
+                "SELECT COUNT(*) AS count FROM model_suggestions WHERE response_id = ?",
+                (payload.response_id,),
+            ).fetchone()["count"]
+            duplicate_suggestions = 0
+            if suggestion_ids:
+                placeholders = ",".join("?" for _ in suggestion_ids)
+                duplicate_suggestions = connection.execute(
+                    f"SELECT COUNT(*) AS count FROM model_suggestions WHERE id IN ({placeholders})",
+                    tuple(suggestion_ids),
+                ).fetchone()["count"]
+        return {
+            "status": "conflict" if existing_response or duplicate_suggestions else "ready",
+            "response_id": payload.response_id,
+            "proposed_count": len(payload.suggestions),
+            "duplicate_response_count": existing_response,
+            "duplicate_suggestion_count": duplicate_suggestions,
+            "will_write": False,
+        }
+
     def decide_suggestion(
         self, suggestion_id: str, payload: SuggestionDecision
     ) -> dict[str, Any]:
@@ -433,7 +531,7 @@ class PrototypeRepository:
     def list_audit_events(self) -> list[dict[str, Any]]:
         with connect(self.db_path) as connection:
             rows = connection.execute(
-                "SELECT * FROM audit_events ORDER BY created_at, id"
+                "SELECT * FROM audit_events ORDER BY sequence_number, created_at, id"
             ).fetchall()
         return [dict(row) for row in rows]
 

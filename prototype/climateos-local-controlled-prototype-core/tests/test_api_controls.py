@@ -56,7 +56,7 @@ def test_candidate_crud_and_validation(client):
 
 
 def test_human_review_transition_requires_reason(client):
-    record_id = client.get("/api/candidates").json()[0]["id"]
+    record_id = "CC-004"
     rejected = client.post(
         f"/api/candidates/{record_id}/review-transition",
         json={

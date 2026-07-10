@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, and Task421-480 are closed as documentation-only or static-skeleton packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, and Task541-600 are closed as documentation-only, static-skeleton, or local controlled prototype packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -428,3 +428,30 @@ Task421-480 is closed as a limited static Web MVP skeleton for Founder review. N
 - [Task481-540 Sprint Closure Packet](task481_540_climateos_local_controlled_prototype_core/TASK481_540_SPRINT_CLOSURE_PACKET.md)
 
 Task481-540 is closed as a local-only controlled prototype core. It creates a manually started localhost FastAPI service, local SQLite persistence, local frontend, candidate-only workflow controls, Human Review enforcement, Founder Gate records, audit trail, mock-only model assistance bridge, manual Prompt Bundle / response import, local archive export, and tests. No Task541, future batch, live model provider, external source retrieval, GitHub automation, scheduler, background worker, autonomous agent, deployment, scoring, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task541-600 - ClimateOS Evidence Passport Local Prototype Hardening v0.2
+
+- [Task541-600 ClimateOS Evidence Passport Local Prototype Hardening v0.2](task541_600_climateos_local_prototype_hardening/README.md)
+- [Hardening Boundary](task541_600_climateos_local_prototype_hardening/HARDENING_BOUNDARY.md)
+- [Reliability Requirements](task541_600_climateos_local_prototype_hardening/RELIABILITY_REQUIREMENTS.md)
+- [Backup, Restore, And Integrity Specification](task541_600_climateos_local_prototype_hardening/BACKUP_RESTORE_INTEGRITY_SPECIFICATION.md)
+- [Schema Version And Migration Policy](task541_600_climateos_local_prototype_hardening/SCHEMA_VERSION_AND_MIGRATION_POLICY.md)
+- [Data Integrity Diagnostics](task541_600_climateos_local_prototype_hardening/DATA_INTEGRITY_DIAGNOSTICS.md)
+- [Human Review State Machine](task541_600_climateos_local_prototype_hardening/HUMAN_REVIEW_STATE_MACHINE.md)
+- [Founder Gate History Model](task541_600_climateos_local_prototype_hardening/FOUNDER_GATE_HISTORY_MODEL.md)
+- [Input, Import, And API Security](task541_600_climateos_local_prototype_hardening/INPUT_IMPORT_AND_API_SECURITY.md)
+- [Failure, Concurrency, Performance, And Windows Operations](task541_600_climateos_local_prototype_hardening/FAILURE_CONCURRENCY_PERFORMANCE_AND_WINDOWS_OPERATIONS.md)
+- [Dependency Inventory And Maintenance Guide](task541_600_climateos_local_prototype_hardening/DEPENDENCY_INVENTORY_AND_MAINTENANCE_GUIDE.md)
+- [Task541-550 Reliability Boundary Backup And Recovery](task541_600_climateos_local_prototype_hardening/TASK541_550_RELIABILITY_BOUNDARY_BACKUP_AND_RECOVERY.md)
+- [Task550 Checkpoint Record](task541_600_climateos_local_prototype_hardening/TASK550_CHECKPOINT_RECORD.md)
+- [Task551-560 Schema Migration And Data Integrity](task541_600_climateos_local_prototype_hardening/TASK551_560_SCHEMA_MIGRATION_AND_DATA_INTEGRITY.md)
+- [Task561-570 Human Review And Founder Gate State-Machine Hardening](task541_600_climateos_local_prototype_hardening/TASK561_570_HUMAN_REVIEW_AND_FOUNDER_GATE_STATE_MACHINE_HARDENING.md)
+- [Task570 Checkpoint Record](task541_600_climateos_local_prototype_hardening/TASK570_CHECKPOINT_RECORD.md)
+- [Task571-580 Input Import And Local API Security](task541_600_climateos_local_prototype_hardening/TASK571_580_INPUT_IMPORT_AND_LOCAL_API_SECURITY.md)
+- [Task581-590 Failure Concurrency Performance And Usability](task541_600_climateos_local_prototype_hardening/TASK581_590_FAILURE_CONCURRENCY_PERFORMANCE_AND_USABILITY.md)
+- [Task591-600 Full Hardening Review And Closure](task541_600_climateos_local_prototype_hardening/TASK591_600_FULL_HARDENING_REVIEW_AND_CLOSURE.md)
+- [Task601 Future Gate Questions](task541_600_climateos_local_prototype_hardening/TASK601_FUTURE_GATE_QUESTIONS.md)
+- [Task600 Hard Stop Record](task541_600_climateos_local_prototype_hardening/TASK600_HARD_STOP_RECORD.md)
+- [Task541-600 Sprint Closure Packet](task541_600_climateos_local_prototype_hardening/TASK541_600_SPRINT_CLOSURE_PACKET.md)
+
+Task541-600 is closed as bounded local prototype hardening. It adds manual backup / restore, SQLite integrity checks, schema migration controls, data diagnostics, Human Review state-machine enforcement, Founder Gate history, local input limits, import preview, local route hardening, SQLite concurrency handling, synthetic local performance checks, command helpers, documentation, and tests. No Task601, production runtime, external API, production database, authentication, MCP, n8n, QCloud, automation, scheduler, background worker, autonomous agent, deployment, scoring, operational Evidence Passport, live source retrieval, live model-provider connection, GitHub automation, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.

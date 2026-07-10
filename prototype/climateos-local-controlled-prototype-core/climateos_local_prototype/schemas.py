@@ -4,7 +4,7 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, Field, field_validator
 
-from .config import BOUNDARY_LABEL, PROHIBITED_STATUS_TERMS
+from .config import BOUNDARY_LABEL, MAX_IMPORT_SUGGESTIONS, MAX_LINKED_IDS, PROHIBITED_STATUS_TERMS
 
 RecordType = Literal[
     "source_candidate",
@@ -53,13 +53,13 @@ class CandidateCreate(BaseModel):
     title: str = Field(min_length=3, max_length=240)
     status: CandidateStatus = "Draft Candidate"
     summary: str = Field(default="", max_length=3000)
-    source_ids: list[str] = Field(default_factory=list)
-    signal_ids: list[str] = Field(default_factory=list)
-    claim_ids: list[str] = Field(default_factory=list)
-    knowledge_object_ids: list[str] = Field(default_factory=list)
-    evidence_ids: list[str] = Field(default_factory=list)
+    source_ids: list[str] = Field(default_factory=list, max_length=MAX_LINKED_IDS)
+    signal_ids: list[str] = Field(default_factory=list, max_length=MAX_LINKED_IDS)
+    claim_ids: list[str] = Field(default_factory=list, max_length=MAX_LINKED_IDS)
+    knowledge_object_ids: list[str] = Field(default_factory=list, max_length=MAX_LINKED_IDS)
+    evidence_ids: list[str] = Field(default_factory=list, max_length=MAX_LINKED_IDS)
     readiness_label: str = Field(default="Candidate only", max_length=120)
-    risk_flags: list[str] = Field(default_factory=list)
+    risk_flags: list[str] = Field(default_factory=list, max_length=MAX_LINKED_IDS)
     human_review_need: str = Field(default="", max_length=1000)
     founder_gate_need: str = Field(default="", max_length=1000)
     boundary_label: str = BOUNDARY_LABEL
@@ -76,13 +76,13 @@ class CandidateCreate(BaseModel):
 class CandidateUpdate(BaseModel):
     title: str | None = Field(default=None, min_length=3, max_length=240)
     summary: str | None = Field(default=None, max_length=3000)
-    source_ids: list[str] | None = None
-    signal_ids: list[str] | None = None
-    claim_ids: list[str] | None = None
-    knowledge_object_ids: list[str] | None = None
-    evidence_ids: list[str] | None = None
+    source_ids: list[str] | None = Field(default=None, max_length=MAX_LINKED_IDS)
+    signal_ids: list[str] | None = Field(default=None, max_length=MAX_LINKED_IDS)
+    claim_ids: list[str] | None = Field(default=None, max_length=MAX_LINKED_IDS)
+    knowledge_object_ids: list[str] | None = Field(default=None, max_length=MAX_LINKED_IDS)
+    evidence_ids: list[str] | None = Field(default=None, max_length=MAX_LINKED_IDS)
     readiness_label: str | None = Field(default=None, max_length=120)
-    risk_flags: list[str] | None = None
+    risk_flags: list[str] | None = Field(default=None, max_length=MAX_LINKED_IDS)
     human_review_need: str | None = Field(default=None, max_length=1000)
     founder_gate_need: str | None = Field(default=None, max_length=1000)
 
@@ -99,13 +99,13 @@ class ReviewTransition(BaseModel):
     new_status: CandidateStatus
     reviewer_label: str = Field(min_length=2, max_length=120)
     reason: str = Field(min_length=10, max_length=1200)
-    linked_risk_flags: list[str] = Field(default_factory=list)
+    linked_risk_flags: list[str] = Field(default_factory=list, max_length=MAX_LINKED_IDS)
     founder_gate_trigger: str = Field(default="", max_length=1000)
 
 
 class FounderGateCreate(BaseModel):
     gate_trigger: str = Field(min_length=5, max_length=1000)
-    affected_record_ids: list[str] = Field(default_factory=list)
+    affected_record_ids: list[str] = Field(default_factory=list, max_length=MAX_LINKED_IDS)
     decision_date: str = Field(min_length=4, max_length=80)
     decision_status: GateStatus
     founder_instruction_text: str = Field(min_length=5, max_length=2000)
@@ -113,6 +113,7 @@ class FounderGateCreate(BaseModel):
     scope_prohibited: str = Field(default="", max_length=2000)
     review_or_expiry_requirement: str = Field(default="", max_length=1000)
     archive_reference: str = Field(default="", max_length=240)
+    supersedes_gate_id: str = Field(default="", max_length=120)
 
 
 class ModelSuggestion(BaseModel):
@@ -126,7 +127,15 @@ class ModelSuggestion(BaseModel):
 class ModelResponseImport(BaseModel):
     response_id: str = Field(min_length=1, max_length=120)
     source_label: str = Field(min_length=2, max_length=240)
-    suggestions: list[ModelSuggestion]
+    suggestions: list[ModelSuggestion] = Field(min_length=1, max_length=MAX_IMPORT_SUGGESTIONS)
+
+    @field_validator("suggestions")
+    @classmethod
+    def suggestion_ids_must_be_unique(cls, value: list[ModelSuggestion]) -> list[ModelSuggestion]:
+        ids = [suggestion.suggestion_id for suggestion in value]
+        if len(ids) != len(set(ids)):
+            raise ValueError("Model response contains duplicate suggestion IDs.")
+        return value
 
 
 class SuggestionDecision(BaseModel):
@@ -161,3 +170,19 @@ class PromptBundle(BaseModel):
     boundary_label: str = BOUNDARY_LABEL
     instructions: list[str]
     candidate_records: list[dict[str, Any]]
+
+
+class BackupRequest(BaseModel):
+    label: str = Field(default="manual", min_length=3, max_length=80)
+    actor_label: str = Field(default="local operator", min_length=2, max_length=120)
+
+
+class RestoreRequest(BaseModel):
+    backup_dir: str = Field(min_length=3, max_length=500)
+    target_db_path: str | None = Field(default=None, max_length=500)
+    actor_label: str = Field(default="local operator", min_length=2, max_length=120)
+
+
+class MigrationRequest(BaseModel):
+    dry_run: bool = True
+    actor_label: str = Field(default="local operator", min_length=2, max_length=120)

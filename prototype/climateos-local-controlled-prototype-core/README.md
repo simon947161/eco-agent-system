@@ -1,6 +1,8 @@
-# ClimateOS Evidence Passport Local Controlled Prototype Core v0.1
+# ClimateOS Evidence Passport Local Controlled Prototype Core v0.2
 
-Task481-540 creates a manually started localhost-only prototype for review of candidate records.
+Task481-540 created a manually started localhost-only prototype for review of candidate records.
+
+Task541-600 hardens that same local prototype with manual backup / restore, SQLite integrity checks, schema migration controls, data diagnostics, Human Review state-machine enforcement, Founder Gate history, local input limits, import preview, conflict behavior, concurrency handling, and deterministic tests.
 
 Boundary:
 
@@ -63,11 +65,35 @@ Allowed hosts are `127.0.0.1` and `localhost`.
 - `GET /api/audit-events`
 - `POST /api/model/prompt-bundle`
 - `POST /api/model/mock-response`
+- `POST /api/model/import-preview`
 - `POST /api/model/import-response`
 - `POST /api/model/suggestions/{suggestion_id}/decision`
 - `POST /api/archive/export`
+- `GET /api/maintenance/integrity`
+- `GET /api/maintenance/diagnostics`
+- `POST /api/maintenance/backup`
+- `POST /api/maintenance/backup/validate`
+- `POST /api/maintenance/restore`
+- `GET /api/maintenance/migration/preflight`
+- `POST /api/maintenance/migration/run`
 
 These routes are local prototype interfaces only. They are not production APIs.
+
+## Local Maintenance Commands
+
+```powershell
+python scripts/backup_db.py --label manual-review
+python scripts/restore_db.py <backup_dir> --validate-only
+python scripts/restore_db.py <backup_dir>
+python scripts/integrity_check.py
+python scripts/integrity_check.py --data-diagnostics
+python scripts/migrate_db.py
+python scripts/migrate_db.py --run --dry-run
+python scripts/migrate_db.py --run
+python scripts/generate_synthetic_dataset.py --scale 100
+```
+
+These commands are foreground local review helpers only. They do not upload, synchronize, deploy, automate, score, certify, assure, interpret standards, or operate Evidence Passport.
 
 ## Run Tests
 
@@ -82,4 +108,6 @@ The following generated paths must remain uncommitted:
 - `.venv/`
 - `local_data/`
 - `runtime_exports/`
+- `local_backups/`
+- `local_diagnostics/`
 - `*.sqlite3`
