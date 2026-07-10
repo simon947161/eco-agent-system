@@ -406,3 +406,25 @@ Task361-420 is closed as documentation-only architecture and prototype planning.
 - [Task481-540 Gate Questions](task421_480_climateos_web_mvp_skeleton/TASK481_540_GATE_QUESTIONS.md)
 
 Task421-480 is closed as a limited static Web MVP skeleton for Founder review. No Task481, future batch, runtime work, backend service, production API, database schema, persistence layer, authentication system, MCP tools, n8n workflow, QCloud integration, automation, scheduler, scoring, operational Evidence Passport, deployment, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task481-540 - ClimateOS Evidence Passport Local Controlled Prototype Core v0.1
+
+- [Task481-540 ClimateOS Evidence Passport Local Controlled Prototype Core v0.1](task481_540_climateos_local_controlled_prototype_core/README.md)
+- [Implementation Boundary](task481_540_climateos_local_controlled_prototype_core/IMPLEMENTATION_BOUNDARY.md)
+- [Technical Stack Record](task481_540_climateos_local_controlled_prototype_core/TECHNICAL_STACK_RECORD.md)
+- [Local-Only Architecture](task481_540_climateos_local_controlled_prototype_core/LOCAL_ONLY_ARCHITECTURE.md)
+- [Data Contract](task481_540_climateos_local_controlled_prototype_core/DATA_CONTRACT.md)
+- [Prohibited Capability Register](task481_540_climateos_local_controlled_prototype_core/PROHIBITED_CAPABILITY_REGISTER.md)
+- [Task481-490 Prototype Core Gate Technical Boundary And Data Contract](task481_540_climateos_local_controlled_prototype_core/TASK481_490_PROTOTYPE_CORE_GATE_TECHNICAL_BOUNDARY_AND_DATA_CONTRACT.md)
+- [Task490 Checkpoint Record](task481_540_climateos_local_controlled_prototype_core/TASK490_CHECKPOINT_RECORD.md)
+- [Task491-500 Local Persistence Foundation](task481_540_climateos_local_controlled_prototype_core/TASK491_500_LOCAL_PERSISTENCE_FOUNDATION.md)
+- [Task501-510 Controlled Local Application Service](task481_540_climateos_local_controlled_prototype_core/TASK501_510_CONTROLLED_LOCAL_APPLICATION_SERVICE.md)
+- [Task511-520 Human Review And Founder Gate Controls](task481_540_climateos_local_controlled_prototype_core/TASK511_520_HUMAN_REVIEW_AND_FOUNDER_GATE_CONTROLS.md)
+- [Task520 Checkpoint Record](task481_540_climateos_local_controlled_prototype_core/TASK520_CHECKPOINT_RECORD.md)
+- [Task521-530 Mock Model Assistance Bridge](task481_540_climateos_local_controlled_prototype_core/TASK521_530_MOCK_MODEL_ASSISTANCE_BRIDGE.md)
+- [Task531-540 Archive Export Integration Testing And Closure](task481_540_climateos_local_controlled_prototype_core/TASK531_540_ARCHIVE_EXPORT_INTEGRATION_TESTING_AND_CLOSURE.md)
+- [Task541-600 Gate Questions](task481_540_climateos_local_controlled_prototype_core/TASK541_600_GATE_QUESTIONS.md)
+- [Task540 Hard Stop Record](task481_540_climateos_local_controlled_prototype_core/TASK540_HARD_STOP_RECORD.md)
+- [Task481-540 Sprint Closure Packet](task481_540_climateos_local_controlled_prototype_core/TASK481_540_SPRINT_CLOSURE_PACKET.md)
+
+Task481-540 is closed as a local-only controlled prototype core. It creates a manually started localhost FastAPI service, local SQLite persistence, local frontend, candidate-only workflow controls, Human Review enforcement, Founder Gate records, audit trail, mock-only model assistance bridge, manual Prompt Bundle / response import, local archive export, and tests. No Task541, future batch, live model provider, external source retrieval, GitHub automation, scheduler, background worker, autonomous agent, deployment, scoring, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.

@@ -1,2 +1,8 @@
 __pycache__/
 *.pyc
+.pytest_cache/
+.venv/
+prototype/climateos-local-controlled-prototype-core/local_data/
+prototype/climateos-local-controlled-prototype-core/runtime_exports/
+*.sqlite3
+*.sqlite3-journal

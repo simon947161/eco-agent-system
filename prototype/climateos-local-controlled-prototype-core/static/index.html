@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClimateOS Local Controlled Prototype</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Task481-540 local controlled prototype</p>
+        <h1>ClimateOS Evidence Passport</h1>
+        <p class="subtitle">Local candidate workflow with Human Review, Founder Gate, audit trail, mock model suggestions, and archive export.</p>
+      </div>
+      <div class="boundary-panel">
+        <strong>Prototype / Candidate / Non-Operational</strong>
+        <span>Localhost only. No live model. No external retrieval. No scoring. No deployment.</span>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <nav class="side-nav" aria-label="Prototype sections">
+        <button data-target="records" class="active">Candidates</button>
+        <button data-target="create">Create</button>
+        <button data-target="review">Human Review</button>
+        <button data-target="founder">Founder Gate</button>
+        <button data-target="model">Mock Model Bridge</button>
+        <button data-target="archive">Archive Export</button>
+        <button data-target="audit">Audit</button>
+      </nav>
+
+      <section class="workspace">
+        <div class="notice">
+          <strong>No-conclusion rule:</strong>
+          <span>Records remain candidate-only. This prototype does not verify, approve, score, certify, assure, determine compliance, or create ESG/carbon, standards, or framework conclusions.</span>
+        </div>
+
+        <section id="records" class="screen active-screen">
+          <h2>Candidates</h2>
+          <div id="candidate-list" class="record-grid"></div>
+        </section>
+
+        <section id="create" class="screen">
+          <h2>Create Candidate</h2>
+          <form id="create-form" class="form-grid">
+            <label>Type <select name="record_type">
+              <option value="source_candidate">Source Candidate</option>
+              <option value="signal_candidate">Signal Candidate</option>
+              <option value="claim_candidate">Claim Candidate</option>
+              <option value="knowledge_object_candidate">Knowledge Object Candidate</option>
+              <option value="evidence_candidate">Evidence Candidate</option>
+            </select></label>
+            <label>Title <input name="title" required minlength="3"></label>
+            <label>Summary <textarea name="summary"></textarea></label>
+            <label>Risk flags <input name="risk_flags" placeholder="RF-001, RF-002"></label>
+            <button type="submit">Create Candidate</button>
+          </form>
+          <p id="create-result" class="screen-note"></p>
+        </section>
+
+        <section id="review" class="screen">
+          <h2>Human Review Transition</h2>
+          <form id="review-form" class="form-grid">
+            <label>Record ID <input name="record_id" required></label>
+            <label>New status <select name="new_status">
+              <option>Needs Source Verification</option>
+              <option>Needs Translation Review</option>
+              <option>Needs Human Review</option>
+              <option>Blocked</option>
+              <option>Founder Gate Required</option>
+              <option>Human-Reviewed Candidate</option>
+              <option>Archived</option>
+              <option>Superseded</option>
+            </select></label>
+            <label>Reviewer label <input name="reviewer_label" required minlength="2"></label>
+            <label>Reason <textarea name="reason" required minlength="10"></textarea></label>
+            <button type="submit">Record Manual Transition</button>
+          </form>
+          <p id="review-result" class="screen-note"></p>
+        </section>
+
+        <section id="founder" class="screen">
+          <h2>Founder Gate Record</h2>
+          <form id="founder-form" class="form-grid">
+            <label>Gate trigger <input name="gate_trigger" required></label>
+            <label>Affected record IDs <input name="affected_record_ids" placeholder="S001, KO-005"></label>
+            <label>Decision date <input name="decision_date" required placeholder="2026-07-10"></label>
+            <label>Decision status <select name="decision_status">
+              <option>Founder Review Required</option>
+              <option>Deferred</option>
+              <option>Rejected</option>
+              <option>Limited Authorization Recorded</option>
+              <option>Closed</option>
+            </select></label>
+            <label>Founder instruction text <textarea name="founder_instruction_text" required></textarea></label>
+            <button type="submit">Record Founder Gate</button>
+          </form>
+          <p id="founder-result" class="screen-note"></p>
+        </section>
+
+        <section id="model" class="screen">
+          <h2>Mock Model Bridge</h2>
+          <div class="button-row">
+            <button id="prompt-bundle-button">Generate Prompt Bundle</button>
+            <button id="mock-response-button">Generate Mock Response</button>
+          </div>
+          <textarea id="model-json" class="json-box" aria-label="Model bridge JSON"></textarea>
+          <button id="import-response-button">Import Response As Suggestions</button>
+          <p id="model-result" class="screen-note"></p>
+        </section>
+
+        <section id="archive" class="screen">
+          <h2>Archive Export</h2>
+          <form id="archive-form" class="form-grid">
+            <label>Case ID <input name="case_id" value="CASE-MOCK-001" required></label>
+            <label>Reviewer label <input name="reviewer_label" required></label>
+            <label>Reason <textarea name="reason" required minlength="10"></textarea></label>
+            <button type="submit">Generate Local Archive</button>
+          </form>
+          <p id="archive-result" class="screen-note"></p>
+        </section>
+
+        <section id="audit" class="screen">
+          <h2>Audit Trail</h2>
+          <div id="audit-list" class="record-grid"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

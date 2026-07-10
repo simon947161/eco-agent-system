@@ -347,4 +347,12 @@ boundaries before runtime capability.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, and Task421-480 are closed as documentation-only or static-skeleton packages. No future batch is started unless Founder explicitly approves.
+## Task481-540 - ClimateOS Evidence Passport Local Controlled Prototype Core v0.1
+
+- [Task481-540 Local Controlled Prototype Core](docs/tasks/task481_540_climateos_local_controlled_prototype_core/README.md)
+- [Task481-540 Sprint Closure Packet](docs/tasks/task481_540_climateos_local_controlled_prototype_core/TASK481_540_SPRINT_CLOSURE_PACKET.md)
+- [Local Controlled Prototype](prototype/climateos-local-controlled-prototype-core/README.md)
+
+Task481-540 is closed as a local-only controlled prototype core. It creates a manually started localhost FastAPI service, local SQLite persistence, local frontend, candidate-only workflow controls, Human Review enforcement, Founder Gate records, audit trail, mock-only model assistance bridge, manual Prompt Bundle / response import, local archive export, and tests. It does not create live model-provider connection, external source retrieval, GitHub automation, scheduler, background worker, autonomous agent, deployment, scoring, operational Evidence Passport, compliance guidance, assurance guidance, certification guidance, ESG / carbon conclusion, standards interpretation, framework interpretation, Task541, or automatic next batch.
+
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, and Task481-540 are closed as documentation-only, planning, static-skeleton, or local controlled prototype packages. No future batch is started unless Founder explicitly approves.
