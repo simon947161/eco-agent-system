@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, and Task301-360 are closed as documentation-only packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, and Task361-420 are closed as documentation-only packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -380,3 +380,16 @@ Task291-300 is closed as documentation-only final pre-authorization governance c
 - [Task301-360 MVP Requirements Harvest](task301_360_climateos_evidence_passport_use_trial_mvp_requirements/MVP_REQUIREMENTS_HARVEST.md)
 
 Task301-360 is closed as documentation-only source discovery, candidate classification, use trial, and MVP requirements harvest. No Task361, future batch, architecture work, implementation work, runtime work, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task361-420 - ClimateOS MVP Architecture v0.1 And Prototype Planning Sprint
+
+- [Task361-420 ClimateOS MVP Architecture v0.1 And Prototype Planning Sprint](task361_420_climateos_mvp_architecture_v0_1_prototype_planning/README.md)
+- [Task361-370 Architecture Gate And Principles](task361_420_climateos_mvp_architecture_v0_1_prototype_planning/TASK361_370_ARCHITECTURE_GATE_AND_PRINCIPLES.md)
+- [Task371-380 Evidence Passport System Structure](task361_420_climateos_mvp_architecture_v0_1_prototype_planning/TASK371_380_EVIDENCE_PASSPORT_SYSTEM_STRUCTURE.md)
+- [Task381-390 Architecture v0.1 Package](task361_420_climateos_mvp_architecture_v0_1_prototype_planning/TASK381_390_ARCHITECTURE_V0_1_PACKAGE.md)
+- [Task391-400 Prototype Planning Boundary](task361_420_climateos_mvp_architecture_v0_1_prototype_planning/TASK391_400_PROTOTYPE_PLANNING_BOUNDARY.md)
+- [Task401-410 Web MVP And Workflow Prototype Plan](task361_420_climateos_mvp_architecture_v0_1_prototype_planning/TASK401_410_WEB_MVP_AND_WORKFLOW_PROTOTYPE_PLAN.md)
+- [Task411-420 Architecture Sprint Closure Packet](task361_420_climateos_mvp_architecture_v0_1_prototype_planning/TASK411_420_ARCHITECTURE_SPRINT_CLOSURE_PACKET.md)
+- [Task421-480 Gate Questions](task361_420_climateos_mvp_architecture_v0_1_prototype_planning/TASK421_480_GATE_QUESTIONS.md)
+
+Task361-420 is closed as documentation-only architecture and prototype planning. No Task421, future batch, implementation work, runtime work, application code, frontend code, backend code, API, database schema, MCP tools, n8n workflow, QCloud integration, automation, scoring, operational Evidence Passport, deployment, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
