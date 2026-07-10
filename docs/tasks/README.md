@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, Task621-630, Task631-640, Task641-650, and Task651-660 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, domain federation foundation, domain federation example, conceptual Evidence Contract example, Life System inquiry, or Alpha Runtime decision-brief packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, Task621-630, Task631-640, Task641-650, Task651-660, and Task661-670 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, domain federation foundation, domain federation example, conceptual Evidence Contract example, Life System inquiry, Alpha Runtime decision-brief, or Sustainable Office workflow packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -536,3 +536,19 @@ Task641-650 is closed as documentation-only BiodiversityOS / Life System scienti
 - [Task660 Closure Packet And Hard Stop](task651_660_alpha_runtime_decision_brief/TASK660_CLOSURE_PACKET_AND_HARD_STOP.md)
 
 Task651-660 is closed as documentation-only Alpha Runtime decision-brief work. It does not implement Alpha Runtime and stops at Task660. No Task661, private EcoEngine access, `D:\eco_engine_v200` checking or use, runtime code, API, MCP, CLI, database, schema, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task661-670 - Sustainable Office Workflow Examples
+
+- [Task661-670 Sustainable Office Workflow Examples](task661_670_sustainable_office_workflow_examples/README.md)
+- [Task661 Authorization And Workflow Boundary](task661_670_sustainable_office_workflow_examples/TASK661_AUTHORIZATION_AND_WORKFLOW_BOUNDARY.md)
+- [Task662 Sustainable Office Human Action Story](task661_670_sustainable_office_workflow_examples/TASK662_SUSTAINABLE_OFFICE_HUMAN_ACTION_STORY.md)
+- [Task663 Observation To Action Workflow Example](task661_670_sustainable_office_workflow_examples/TASK663_OBSERVATION_TO_ACTION_WORKFLOW_EXAMPLE.md)
+- [Task664 Energy Comfort And Habit Example](task661_670_sustainable_office_workflow_examples/TASK664_ENERGY_COMFORT_AND_HABIT_EXAMPLE.md)
+- [Task665 Water Waste And Maintenance Example](task661_670_sustainable_office_workflow_examples/TASK665_WATER_WASTE_AND_MAINTENANCE_EXAMPLE.md)
+- [Task666 Biodiversity And Workplace Care Example](task661_670_sustainable_office_workflow_examples/TASK666_BIODIVERSITY_AND_WORKPLACE_CARE_EXAMPLE.md)
+- [Task667 Human Consent And Non-Control Rules](task661_670_sustainable_office_workflow_examples/TASK667_HUMAN_CONSENT_AND_NON_CONTROL_RULES.md)
+- [Task668 Review Outcome And Learning Loop](task661_670_sustainable_office_workflow_examples/TASK668_REVIEW_OUTCOME_AND_LEARNING_LOOP.md)
+- [Task669 Task671-680 Gate Questions](task661_670_sustainable_office_workflow_examples/TASK669_TASK671_680_GATE_QUESTIONS.md)
+- [Task670 Closure Packet And Hard Stop](task661_670_sustainable_office_workflow_examples/TASK670_CLOSURE_PACKET_AND_HARD_STOP.md)
+
+Task661-670 is closed as documentation-only Sustainable Office workflow example work. It creates fictional human-action examples only and stops at Task670. No Task671, Sustainable Office software, UI implementation, private EcoEngine access, `D:\eco_engine_v200` checking or use, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, schema, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
