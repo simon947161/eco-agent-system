@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, and Task621-630 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, domain federation foundation, or domain federation example packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, Task621-630, and Task631-640 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, domain federation foundation, domain federation example, or conceptual Evidence Contract example packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -488,3 +488,19 @@ Task601-620 is closed as documentation-only ClimateOS Domain Federation and Life
 - [Task630 Closure Packet And Hard Stop](task621_630_climateos_domain_federation_example_set/TASK630_CLOSURE_PACKET_AND_HARD_STOP.md)
 
 Task621-630 is closed as documentation-only ClimateOS Domain Federation Example Set work. It creates fictional, non-sensitive examples only and stops at Task630. No Task631, private EcoEngine content access or modification, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically. Task630 records one `D:\eco_engine_v200` existence-check warning.
+
+## Task631-640 - ClimateOS Evidence Contract Example Records
+
+- [Task631-640 ClimateOS Evidence Contract Example Records](task631_640_climateos_evidence_contract_example_records/README.md)
+- [Task631 Authorization And Evidence Contract Boundary](task631_640_climateos_evidence_contract_example_records/TASK631_AUTHORIZATION_AND_EVIDENCE_CONTRACT_BOUNDARY.md)
+- [Task632 Example Record Model Notes](task631_640_climateos_evidence_contract_example_records/TASK632_EXAMPLE_RECORD_MODEL_NOTES.md)
+- [Task633 Draft Observation Contract Example](task631_640_climateos_evidence_contract_example_records/TASK633_DRAFT_OBSERVATION_CONTRACT_EXAMPLE.md)
+- [Task634 Reviewed Evidence Contract Example](task631_640_climateos_evidence_contract_example_records/TASK634_REVIEWED_EVIDENCE_CONTRACT_EXAMPLE.md)
+- [Task635 Disputed Evidence Contract Example](task631_640_climateos_evidence_contract_example_records/TASK635_DISPUTED_EVIDENCE_CONTRACT_EXAMPLE.md)
+- [Task636 Rejected Evidence Contract Example](task631_640_climateos_evidence_contract_example_records/TASK636_REJECTED_EVIDENCE_CONTRACT_EXAMPLE.md)
+- [Task637 Stale And Superseded Evidence Contract Example](task631_640_climateos_evidence_contract_example_records/TASK637_STALE_AND_SUPERSEDED_EVIDENCE_CONTRACT_EXAMPLE.md)
+- [Task638 Founder Gate Trigger Contract Example](task631_640_climateos_evidence_contract_example_records/TASK638_FOUNDER_GATE_TRIGGER_CONTRACT_EXAMPLE.md)
+- [Task639 Evidence Contract Example Review And Task641-650 Questions](task631_640_climateos_evidence_contract_example_records/TASK639_EVIDENCE_CONTRACT_EXAMPLE_REVIEW_AND_TASK641_650_QUESTIONS.md)
+- [Task640 Closure Packet And Hard Stop](task631_640_climateos_evidence_contract_example_records/TASK640_CLOSURE_PACKET_AND_HARD_STOP.md)
+
+Task631-640 is closed as documentation-only conceptual Evidence Contract example work. It creates fictional, non-sensitive example records only and stops at Task640. No Task641, private EcoEngine access, `D:\eco_engine_v200` checking or use, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, schema, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
