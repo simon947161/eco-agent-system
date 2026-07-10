@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, and Task541-600 are closed as documentation-only, static-skeleton, or local controlled prototype packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, and Task601-620 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, or domain federation foundation packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -455,3 +455,20 @@ Task481-540 is closed as a local-only controlled prototype core. It creates a ma
 - [Task541-600 Sprint Closure Packet](task541_600_climateos_local_prototype_hardening/TASK541_600_SPRINT_CLOSURE_PACKET.md)
 
 Task541-600 is closed as bounded local prototype hardening. It adds manual backup / restore, SQLite integrity checks, schema migration controls, data diagnostics, Human Review state-machine enforcement, Founder Gate history, local input limits, import preview, local route hardening, SQLite concurrency handling, synthetic local performance checks, command helpers, documentation, and tests. No Task601, production runtime, external API, production database, authentication, MCP, n8n, QCloud, automation, scheduler, background worker, autonomous agent, deployment, scoring, operational Evidence Passport, live source retrieval, live model-provider connection, GitHub automation, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task601-620 - ClimateOS Domain Federation And Life System Documentation Foundation
+
+- [Task601-620 ClimateOS Domain Federation And Life System Documentation Foundation](task601_620_climateos_domain_federation_life_system_foundation/README.md)
+- [Task602-603 Domain Federation Charter](task601_620_climateos_domain_federation_life_system_foundation/TASK602_603_DOMAIN_FEDERATION_CHARTER.md)
+- [Task604-605 Life System And BiodiversityOS Position Paper](task601_620_climateos_domain_federation_life_system_foundation/TASK604_605_LIFE_SYSTEM_AND_BIODIVERSITYOS_POSITION_PAPER.md)
+- [Task606-607 Domain Scientific Autonomy And Shared Governance Rules](task601_620_climateos_domain_federation_life_system_foundation/TASK606_607_DOMAIN_SCIENTIFIC_AUTONOMY_AND_SHARED_GOVERNANCE_RULES.md)
+- [Task608-609 Cross-Domain Evidence Contract v0.1](task601_620_climateos_domain_federation_life_system_foundation/TASK608_609_CROSS_DOMAIN_EVIDENCE_CONTRACT_V0_1.md)
+- [Task610-611 External Scientific Model Reuse And Adapter Policy](task601_620_climateos_domain_federation_life_system_foundation/TASK610_611_EXTERNAL_SCIENTIFIC_MODEL_REUSE_AND_ADAPTER_POLICY.md)
+- [Task612-613 Evidence-Grounded Deliberation Principles](task601_620_climateos_domain_federation_life_system_foundation/TASK612_613_EVIDENCE_GROUNDED_DELIBERATION_PRINCIPLES.md)
+- [Task614-615 Alpha Runtime Minimum Capability Requirements](task601_620_climateos_domain_federation_life_system_foundation/TASK614_615_ALPHA_RUNTIME_MINIMUM_CAPABILITY_REQUIREMENTS.md)
+- [Task616 Sustainable Office And Human Action Interface Concept](task601_620_climateos_domain_federation_life_system_foundation/TASK616_SUSTAINABLE_OFFICE_AND_HUMAN_ACTION_INTERFACE_CONCEPT.md)
+- [Task617-618 Task621-700 Dependency And Gate Map](task601_620_climateos_domain_federation_life_system_foundation/TASK617_618_TASK621_700_DEPENDENCY_AND_GATE_MAP.md)
+- [Task619 Private Asset And Prohibited Technology Boundary](task601_620_climateos_domain_federation_life_system_foundation/TASK619_PRIVATE_ASSET_AND_PROHIBITED_TECHNOLOGY_BOUNDARY.md)
+- [Task620 Closure Packet And Hard Stop](task601_620_climateos_domain_federation_life_system_foundation/TASK620_CLOSURE_PACKET_AND_HARD_STOP.md)
+
+Task601-620 is closed as documentation-only ClimateOS Domain Federation and Life System Documentation Foundation work. It creates conceptual foundation records only and stops at Task620. No Task621, private EcoEngine access or modification, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
