@@ -62,4 +62,3 @@ Before any Task621+ implementation gate, the project should validate:
   or a separate bounded app?
 - Which domains are required for the first Alpha Runtime slice?
 - What evidence examples are safe, non-sensitive, and representative?
-

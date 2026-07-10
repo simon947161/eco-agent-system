@@ -61,4 +61,3 @@ Closure must confirm:
 - no prohibited technical file types were created;
 - private EcoEngine and `D:\eco_engine_v200` were not accessed;
 - Task621 was not started.
-

@@ -65,4 +65,3 @@ ClimateOS should coordinate:
 
 No BiodiversityOS runtime, biodiversity model, sensor integration, scoring
 engine, certification process, or EcoChain mechanism is created by Task604-605.
-

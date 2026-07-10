@@ -57,4 +57,3 @@ published, or integrated.
 
 No adapter, connector, CLI, API, external model call, live data call, or runtime
 integration is created by this policy.
-

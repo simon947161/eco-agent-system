@@ -56,4 +56,3 @@ three domains before any runtime design is considered.
 - How should conflicting domain interpretations be represented?
 - Should Evidence Contract records be separate from Evidence Passport records,
   or one layer within them?
-

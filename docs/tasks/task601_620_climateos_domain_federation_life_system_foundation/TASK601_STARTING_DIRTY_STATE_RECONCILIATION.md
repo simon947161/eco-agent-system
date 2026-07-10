@@ -40,4 +40,3 @@ removed because they did not represent the effective Option C deliverables.
 No unrelated user changes were reset, discarded, or overwritten. The
 reconciliation touched only the in-progress Task601-620 documentation package
 and its index references.
-

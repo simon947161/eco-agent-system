@@ -92,4 +92,3 @@ Task601-620 is complete only when validation confirms:
 - private EcoEngine and `D:\eco_engine_v200` assets were not accessed.
 - Task621 was not started.
 - local and origin align after the bounded commit and push.
-

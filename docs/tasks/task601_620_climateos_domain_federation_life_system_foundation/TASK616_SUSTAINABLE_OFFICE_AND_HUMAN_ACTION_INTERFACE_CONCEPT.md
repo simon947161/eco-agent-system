@@ -54,4 +54,3 @@ Task616 does not create:
 - How should community or employee observations be protected from misuse?
 - Should this interface belong to ClimateOS, GovernanceOS, or a future
   SustainableOfficeOS domain?
-

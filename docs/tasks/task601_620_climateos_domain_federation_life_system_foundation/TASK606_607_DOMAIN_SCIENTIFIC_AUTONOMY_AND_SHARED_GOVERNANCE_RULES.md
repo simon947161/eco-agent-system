@@ -58,4 +58,3 @@ future authorized system states otherwise.
 
 These are governance rules only. No enforcement engine, workflow automation,
 database, API, or scoring system is implemented.
-

@@ -43,4 +43,3 @@ capabilities, validation commands, commit/push requirements, and stop condition.
 ## Current Capability
 
 This is a gate map only. Task621 is not started.
-

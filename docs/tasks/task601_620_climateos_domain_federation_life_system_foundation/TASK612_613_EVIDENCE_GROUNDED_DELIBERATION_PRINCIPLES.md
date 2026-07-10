@@ -51,4 +51,3 @@ prohibited claims.
 
 These principles are documentation only. No deliberation engine, agent,
 workflow automation, scoring system, or decision system is implemented.
-

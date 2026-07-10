@@ -72,4 +72,3 @@ task.
 Any future domain federation implementation requires a separate Founder Gate
 that names the target domain set, data boundary, runtime boundary, review
 authority, prohibited capabilities, tests, and stop condition.
-
