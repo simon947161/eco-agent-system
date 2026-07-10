@@ -23,11 +23,12 @@ def generate_prompt_bundle(candidate_records: list[dict[str, Any]]) -> PromptBun
 
 
 def deterministic_mock_response(bundle: PromptBundle) -> ModelResponseImport:
+    response_id = new_id("MR")
     suggestions = []
     for index, record in enumerate(bundle.candidate_records[:3], start=1):
         suggestions.append(
             {
-                "suggestion_id": f"MOCK-SUG-{index:03d}",
+                "suggestion_id": f"{response_id}-SUG-{index:03d}",
                 "category": "review-note draft",
                 "target_record_id": record.get("id", ""),
                 "suggestion_text": (
@@ -38,7 +39,7 @@ def deterministic_mock_response(bundle: PromptBundle) -> ModelResponseImport:
             }
         )
     return ModelResponseImport(
-        response_id=new_id("MR"),
+        response_id=response_id,
         source_label="deterministic mock adapter",
         suggestions=suggestions,
     )

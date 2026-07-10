@@ -1,5 +1,7 @@
+import json
 from pathlib import Path
 
+import pytest
 from fastapi.testclient import TestClient
 
 from climateos_local_prototype.api import create_app
@@ -26,6 +28,34 @@ def test_archive_export_creates_local_review_bundle(tmp_path):
     assert (bundle_dir / "case-manifest.json").exists()
     assert (bundle_dir / "audit-log.json").exists()
     assert (bundle_dir / "closure-summary.md").exists()
+    audit_events = json.loads((bundle_dir / "audit-log.json").read_text(encoding="utf-8"))
+    assert any(event["event_type"] == "archive_export_created" for event in audit_events)
+
+
+@pytest.mark.parametrize(
+    "case_id",
+    [
+        "../outside",
+        "..\\outside",
+        "C:\\outside",
+        "/absolute/path",
+    ],
+)
+def test_archive_export_rejects_path_escape_case_ids(tmp_path, case_id):
+    db_path = tmp_path / "prototype.sqlite3"
+    repository = PrototypeRepository(db_path)
+    seed_database(repository)
+    client = TestClient(create_app(db_path))
+
+    response = client.post(
+        "/api/archive/export",
+        json={
+            "case_id": case_id,
+            "reviewer_label": "Reviewer A",
+            "reason": "Manual local archive export should reject path escape.",
+        },
+    )
+    assert response.status_code == 422
 
 
 def test_no_task541_directory_exists():

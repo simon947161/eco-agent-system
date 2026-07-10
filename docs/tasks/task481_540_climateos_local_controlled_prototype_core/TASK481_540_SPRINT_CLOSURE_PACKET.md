@@ -4,16 +4,46 @@
 
 Task481-540 ClimateOS Evidence Passport Local Controlled Prototype Core v0.1.
 
-Starting baseline:
+Starting Task421-480 closure baseline:
 
 ```text
 218361eb9403fd7981b64cba37de2e62a92708a9
+```
+
+Task481-540 primary implementation commit:
+
+```text
+91cbeb6798b7c06ecda5c954ed513eeaae53c15d
 ```
 
 Branch:
 
 ```text
 task46-repository-control-codex-batch-queue
+```
+
+Remote:
+
+```text
+origin
+```
+
+Primary implementation push status:
+
+```text
+Successfully pushed to origin/task46-repository-control-codex-batch-queue.
+```
+
+Primary implementation local/origin alignment:
+
+```text
+Local HEAD and origin/task46-repository-control-codex-batch-queue aligned at 91cbeb6798b7c06ecda5c954ed513eeaae53c15d.
+```
+
+Primary implementation working-tree status:
+
+```text
+Clean after primary implementation commit and push.
 ```
 
 ## Completed Scope
@@ -123,12 +153,21 @@ Results:
 - Database initialization and deterministic seed load passed.
 - FastAPI app import / create-app check passed.
 - Localhost guard check passed.
+- Bounded localhost probe passed with non-operational health payload.
 - pytest result: 13 passed, 1 FastAPI TestClient deprecation warning.
 - `git diff --check` passed with CRLF normalization warnings only.
 - Generated `.venv/`, `local_data/`, `.pytest_cache/`, `__pycache__/`, and runtime export paths are ignored or otherwise excluded from the commit.
+- Generated database, cache, venv, and runtime export files were not tracked.
 - Task541 directory check passed.
 
-Final commit / push metadata is recorded in the Codex final report after execution.
+The bounded hardening micro-patch commit SHA is not pre-recorded in this closure packet. It is reported in the Codex final response and preserved by Git history.
+
+## Founder Review Note
+
+Task481-540 substantive implementation review passed subject to
+the bounded archive-path, model-import and archive-audit hardening patch.
+
+Task541 remains not authorized.
 
 ## Boundary Confirmation
 

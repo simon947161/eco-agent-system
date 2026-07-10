@@ -46,6 +46,29 @@ def test_imported_model_response_does_not_change_candidate_status(client):
     assert decision.json()["disposition"] == "defer"
 
 
+def test_two_mock_responses_import_sequentially_and_duplicate_conflicts(client):
+    record_before = client.get("/api/candidates/S001").json()
+    first = client.post("/api/model/mock-response", json=["S001"]).json()
+    second = client.post("/api/model/mock-response", json=["S001"]).json()
+
+    first_ids = {item["suggestion_id"] for item in first["suggestions"]}
+    second_ids = {item["suggestion_id"] for item in second["suggestions"]}
+    assert first["response_id"] != second["response_id"]
+    assert first_ids.isdisjoint(second_ids)
+
+    first_import = client.post("/api/model/import-response", json=first)
+    second_import = client.post("/api/model/import-response", json=second)
+    assert first_import.status_code == 201
+    assert second_import.status_code == 201
+
+    duplicate_import = client.post("/api/model/import-response", json=first)
+    assert duplicate_import.status_code == 409
+    assert "already been imported" in duplicate_import.json()["detail"]
+
+    record_after = client.get("/api/candidates/S001").json()
+    assert record_after["status"] == record_before["status"]
+
+
 def test_malformed_model_response_is_rejected(client):
     response = client.post(
         "/api/model/import-response",

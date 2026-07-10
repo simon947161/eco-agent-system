@@ -1,3 +1,5 @@
+import re
+from pathlib import Path, PureWindowsPath
 from typing import Any, Literal
 
 from pydantic import BaseModel, Field, field_validator
@@ -137,6 +139,21 @@ class ArchiveRequest(BaseModel):
     case_id: str = Field(min_length=3, max_length=120)
     reviewer_label: str = Field(min_length=2, max_length=120)
     reason: str = Field(min_length=10, max_length=1200)
+
+    @field_validator("case_id")
+    @classmethod
+    def case_id_must_be_path_safe(cls, value: str) -> str:
+        if not re.fullmatch(r"[A-Za-z0-9_.-]+", value):
+            raise ValueError("case_id may contain only letters, numbers, underscore, dash, and dot.")
+        if "/" in value or "\\" in value:
+            raise ValueError("case_id must not contain path separators.")
+        if ".." in value:
+            raise ValueError("case_id must not contain path traversal segments.")
+        if Path(value).is_absolute() or PureWindowsPath(value).is_absolute():
+            raise ValueError("case_id must not be an absolute path.")
+        if re.match(r"^[A-Za-z]:", value):
+            raise ValueError("case_id must not contain a Windows drive prefix.")
+        return value
 
 
 class PromptBundle(BaseModel):

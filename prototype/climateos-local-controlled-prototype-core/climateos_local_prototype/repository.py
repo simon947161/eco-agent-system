@@ -1,4 +1,5 @@
 import json
+import sqlite3
 import uuid
 from datetime import UTC, datetime
 from pathlib import Path
@@ -54,6 +55,10 @@ def _row_to_candidate(row: Any) -> dict[str, Any]:
         "updated_at": row["updated_at"],
         "archived_at": row["archived_at"],
     }
+
+
+class DuplicateModelResponseError(ValueError):
+    pass
 
 
 class PrototypeRepository:
@@ -336,6 +341,21 @@ class PrototypeRepository:
         imported: list[dict[str, Any]] = []
         timestamp = now_iso()
         with connect(self.db_path) as connection:
+            existing_response = connection.execute(
+                "SELECT 1 FROM model_suggestions WHERE response_id = ? LIMIT 1",
+                (payload.response_id,),
+            ).fetchone()
+            if existing_response is not None:
+                raise DuplicateModelResponseError("Model response has already been imported.")
+            suggestion_ids = [suggestion.suggestion_id for suggestion in payload.suggestions]
+            if suggestion_ids:
+                placeholders = ",".join("?" for _ in suggestion_ids)
+                existing_suggestion = connection.execute(
+                    f"SELECT id FROM model_suggestions WHERE id IN ({placeholders}) LIMIT 1",
+                    tuple(suggestion_ids),
+                ).fetchone()
+                if existing_suggestion is not None:
+                    raise DuplicateModelResponseError("Model suggestion has already been imported.")
             for suggestion in payload.suggestions:
                 item = {
                     "id": suggestion.suggestion_id,
@@ -346,15 +366,18 @@ class PrototypeRepository:
                     "provenance": suggestion.provenance,
                     "created_at": timestamp,
                 }
-                connection.execute(
-                    """
-                    INSERT INTO model_suggestions
-                    (id, response_id, category, target_record_id, suggestion_text, provenance, created_at)
-                    VALUES
-                    (:id, :response_id, :category, :target_record_id, :suggestion_text, :provenance, :created_at)
-                    """,
-                    item,
-                )
+                try:
+                    connection.execute(
+                        """
+                        INSERT INTO model_suggestions
+                        (id, response_id, category, target_record_id, suggestion_text, provenance, created_at)
+                        VALUES
+                        (:id, :response_id, :category, :target_record_id, :suggestion_text, :provenance, :created_at)
+                        """,
+                        item,
+                    )
+                except sqlite3.IntegrityError as exc:
+                    raise DuplicateModelResponseError("Model response import conflicts with an existing suggestion.") from exc
                 imported.append({**item, "disposition": "pending"})
         self.audit(
             "model_response_imported",

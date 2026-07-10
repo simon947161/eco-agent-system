@@ -37,13 +37,17 @@ def generate_archive_bundle(
     request: ArchiveRequest,
     output_root: str | Path | None = None,
 ) -> dict[str, Any]:
-    root = Path(output_root) if output_root else RUNTIME_EXPORT_DIR
+    root = (Path(output_root) if output_root else RUNTIME_EXPORT_DIR).resolve()
     timestamp = now_iso().replace(":", "").replace("-", "")
-    bundle_dir = root / f"{request.case_id}-{timestamp}"
+    bundle_dir = (root / f"{request.case_id}-{timestamp}").resolve()
+    try:
+        bundle_dir.relative_to(root)
+    except ValueError as exc:
+        raise ValueError("Archive export path must remain inside the runtime export directory.") from exc
+    root.mkdir(parents=True, exist_ok=True)
     bundle_dir.mkdir(parents=True, exist_ok=True)
 
     candidates = repository.list_candidates()
-    audit_events = repository.list_audit_events()
     human_reviews = repository.list_human_reviews()
     founder_gates = repository.list_founder_gates()
 
@@ -89,7 +93,6 @@ def generate_archive_bundle(
     _write_json(bundle_dir / "risk-flag-register.json", [item["risk_flags"] for item in candidates])
     _write_json(bundle_dir / "human-review-record.json", human_reviews)
     _write_json(bundle_dir / "founder-gate-record.json", founder_gates)
-    _write_json(bundle_dir / "audit-log.json", audit_events)
     (bundle_dir / "closure-summary.md").write_text(
         "\n".join(
             [
@@ -107,4 +110,6 @@ def generate_archive_bundle(
     archive_event = repository.record_archive_event(
         request.case_id, str(bundle_dir), request.reviewer_label, request.reason
     )
+    audit_events = repository.list_audit_events()
+    _write_json(bundle_dir / "audit-log.json", audit_events)
     return {"bundle_dir": str(bundle_dir), "manifest": manifest, "archive_event": archive_event}

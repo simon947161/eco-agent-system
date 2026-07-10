@@ -8,7 +8,7 @@ from .archive import generate_archive_bundle
 from .config import BOUNDARY_LABEL, DEFAULT_DB_PATH, STATIC_DIR, validate_local_host
 from .database import initialize_database
 from .model_bridge import deterministic_mock_response, generate_prompt_bundle
-from .repository import PrototypeRepository
+from .repository import DuplicateModelResponseError, PrototypeRepository
 from .schemas import (
     ArchiveRequest,
     CandidateCreate,
@@ -116,7 +116,10 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
 
     @app.post("/api/model/import-response", status_code=201)
     def import_model_response(payload: ModelResponseImport) -> list[dict]:
-        return repo().import_model_response(payload)
+        try:
+            return repo().import_model_response(payload)
+        except DuplicateModelResponseError as exc:
+            raise HTTPException(status_code=409, detail=str(exc)) from exc
 
     @app.post("/api/model/suggestions/{suggestion_id}/decision")
     def decide_suggestion(suggestion_id: str, payload: SuggestionDecision) -> dict:
@@ -127,7 +130,10 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
 
     @app.post("/api/archive/export", status_code=201)
     def export_archive(payload: ArchiveRequest) -> dict:
-        return generate_archive_bundle(repo(), payload)
+        try:
+            return generate_archive_bundle(repo(), payload)
+        except ValueError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from exc
 
     return app
 
