@@ -118,9 +118,13 @@ Created files are listed under Task353.
 
 Modified files are listed under Task353.
 
-Commit hash: pending final commit; see final Codex report.
+Commit / push SHA: `ac08216bd59dfa9d51d8a0e2dad6c1f87361bfde`
 
-Push status: pending final push decision; see final Codex report.
+Push status: pushed to `origin/task46-repository-control-codex-batch-queue`.
+
+Working tree status after push: clean and aligned with origin.
+
+Validation: `git diff --check` passed.
 
 ## Task356 Limitations And Risk Note
 
