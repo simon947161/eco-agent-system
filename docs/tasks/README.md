@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, Task621-630, Task631-640, and Task641-650 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, domain federation foundation, domain federation example, conceptual Evidence Contract example, or Life System inquiry packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, Task621-630, Task631-640, Task641-650, and Task651-660 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, domain federation foundation, domain federation example, conceptual Evidence Contract example, Life System inquiry, or Alpha Runtime decision-brief packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -520,3 +520,19 @@ Task631-640 is closed as documentation-only conceptual Evidence Contract example
 - [Task650 Closure Packet And Hard Stop](task641_650_biodiversityos_life_system_inquiry_path/TASK650_CLOSURE_PACKET_AND_HARD_STOP.md)
 
 Task641-650 is closed as documentation-only BiodiversityOS / Life System scientific inquiry foundation work. It creates a plain-language inquiry path only and stops at Task650. No Task651, private EcoEngine access, `D:\eco_engine_v200` checking or use, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, schema, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task651-660 - Alpha Runtime Decision Brief
+
+- [Task651-660 Alpha Runtime Decision Brief](task651_660_alpha_runtime_decision_brief/README.md)
+- [Task651 Authorization And Runtime Decision Boundary](task651_660_alpha_runtime_decision_brief/TASK651_AUTHORIZATION_AND_RUNTIME_DECISION_BOUNDARY.md)
+- [Task652 Why Alpha Runtime Cannot Start Automatically](task651_660_alpha_runtime_decision_brief/TASK652_WHY_ALPHA_RUNTIME_CANNOT_START_AUTOMATICALLY.md)
+- [Task653 Alpha Runtime Readiness Dimensions](task651_660_alpha_runtime_decision_brief/TASK653_ALPHA_RUNTIME_READINESS_DIMENSIONS.md)
+- [Task654 Human Interface Requirements Before Runtime](task651_660_alpha_runtime_decision_brief/TASK654_HUMAN_INTERFACE_REQUIREMENTS_BEFORE_RUNTIME.md)
+- [Task655 Agent Interface Requirements Before Runtime](task651_660_alpha_runtime_decision_brief/TASK655_AGENT_INTERFACE_REQUIREMENTS_BEFORE_RUNTIME.md)
+- [Task656 Evidence And Review Prerequisites](task651_660_alpha_runtime_decision_brief/TASK656_EVIDENCE_AND_REVIEW_PREREQUISITES.md)
+- [Task657 Runtime Risk And Misuse Blockers](task651_660_alpha_runtime_decision_brief/TASK657_RUNTIME_RISK_AND_MISUSE_BLOCKERS.md)
+- [Task658 Founder Gate Decision Options](task651_660_alpha_runtime_decision_brief/TASK658_FOUNDER_GATE_DECISION_OPTIONS.md)
+- [Task659 Task661-670 Gate Questions](task651_660_alpha_runtime_decision_brief/TASK659_TASK661_670_GATE_QUESTIONS.md)
+- [Task660 Closure Packet And Hard Stop](task651_660_alpha_runtime_decision_brief/TASK660_CLOSURE_PACKET_AND_HARD_STOP.md)
+
+Task651-660 is closed as documentation-only Alpha Runtime decision-brief work. It does not implement Alpha Runtime and stops at Task660. No Task661, private EcoEngine access, `D:\eco_engine_v200` checking or use, runtime code, API, MCP, CLI, database, schema, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
