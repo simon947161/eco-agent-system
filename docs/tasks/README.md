@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, and Task601-620 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, or domain federation foundation packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, and Task621-630 are closed as documentation-only, static-skeleton, local controlled prototype, repository control, domain federation foundation, or domain federation example packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -472,3 +472,19 @@ Task541-600 is closed as bounded local prototype hardening. It adds manual backu
 - [Task620 Closure Packet And Hard Stop](task601_620_climateos_domain_federation_life_system_foundation/TASK620_CLOSURE_PACKET_AND_HARD_STOP.md)
 
 Task601-620 is closed as documentation-only ClimateOS Domain Federation and Life System Documentation Foundation work. It creates conceptual foundation records only and stops at Task620. No Task621, private EcoEngine access or modification, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task621-630 - ClimateOS Domain Federation Example Set
+
+- [Task621-630 ClimateOS Domain Federation Example Set](task621_630_climateos_domain_federation_example_set/README.md)
+- [Task621 Authorization And Preflight](task621_630_climateos_domain_federation_example_set/TASK621_AUTHORIZATION_AND_PREFLIGHT.md)
+- [Task622 Domain Federation Example Set Boundary](task621_630_climateos_domain_federation_example_set/TASK622_DOMAIN_FEDERATION_EXAMPLE_SET_BOUNDARY.md)
+- [Task623 Water Land Biodiversity Example](task621_630_climateos_domain_federation_example_set/TASK623_WATER_LAND_BIODIVERSITY_EXAMPLE.md)
+- [Task624 Carbon Energy Governance Example](task621_630_climateos_domain_federation_example_set/TASK624_CARBON_ENERGY_GOVERNANCE_EXAMPLE.md)
+- [Task625 Cross-Domain Evidence Contract Worked Example](task621_630_climateos_domain_federation_example_set/TASK625_CROSS_DOMAIN_EVIDENCE_CONTRACT_WORKED_EXAMPLE.md)
+- [Task626 Domain Disagreement And Escalation Example](task621_630_climateos_domain_federation_example_set/TASK626_DOMAIN_DISAGREEMENT_AND_ESCALATION_EXAMPLE.md)
+- [Task627 Human Review And Founder Gate Example](task621_630_climateos_domain_federation_example_set/TASK627_HUMAN_REVIEW_AND_FOUNDER_GATE_EXAMPLE.md)
+- [Task628 Example Set Validation And Limitations](task621_630_climateos_domain_federation_example_set/TASK628_EXAMPLE_SET_VALIDATION_AND_LIMITATIONS.md)
+- [Task629 Task631-640 Readiness Gate Questions](task621_630_climateos_domain_federation_example_set/TASK629_TASK631_640_READINESS_GATE_QUESTIONS.md)
+- [Task630 Closure Packet And Hard Stop](task621_630_climateos_domain_federation_example_set/TASK630_CLOSURE_PACKET_AND_HARD_STOP.md)
+
+Task621-630 is closed as documentation-only ClimateOS Domain Federation Example Set work. It creates fictional, non-sensitive examples only and stops at Task630. No Task631, private EcoEngine content access or modification, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically. Task630 records one `D:\eco_engine_v200` existence-check warning.
