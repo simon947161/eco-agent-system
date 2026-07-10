@@ -148,4 +148,21 @@ Founder review is required before any Task421-480 Web MVP Skeleton sprint.
 
 ## Commit And Push Inventory
 
-Final commit and push status are reported in the Codex final response because this closure packet is committed before the immutable final Git SHA exists.
+Task361-420 final commit / push SHA:
+
+```text
+738c286534cb14c41db4ac121a5b67c0b58b6b6d
+```
+
+Push target:
+
+```text
+origin/task46-repository-control-codex-batch-queue
+```
+
+Final repository status:
+
+```text
+Working tree clean and aligned with origin.
+git diff --check passed.
+```
