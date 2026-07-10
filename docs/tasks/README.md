@@ -204,7 +204,7 @@ human-friendly task summaries and working templates.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, and Task291-300 are closed as documentation-only packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, and Task301-360 are closed as documentation-only packages. No future batch is started unless Founder explicitly approves.
 
 Roadmap clarification: [Task200 Roadmap Restoration And Phase II Realignment](../architecture/TASK200_ROADMAP_RESTORATION_AND_PHASE_II_REALIGNMENT.md) restores Roadmap Task200 and Roadmap Task300 as stable long-term milestones while preserving Task191-200 as the completed CarbonOS Documentation Foundation engineering batch.
 
@@ -367,3 +367,16 @@ Task281-290 is closed as documentation-only gate review. Task291-300 ClimateOS E
 - [Task300 Evidence Passport Final Pre-Authorization Governance Closure](task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK300_EVIDENCE_PASSPORT_FINAL_PRE_AUTHORIZATION_GOVERNANCE_CLOSURE.md)
 
 Task291-300 is closed as documentation-only final pre-authorization governance closure. No future batch, architecture work, implementation work, runtime work, or Roadmap Task300 change starts automatically.
+
+## Task301-360 - Evidence Passport Use Trial And MVP Requirements Sprint
+
+- [Task301-360 Evidence Passport Use Trial And MVP Requirements Sprint](task301_360_climateos_evidence_passport_use_trial_mvp_requirements/README.md)
+- [Task301-310 Xiong'an-Baiyangdian Source Discovery And Boundary](task301_360_climateos_evidence_passport_use_trial_mvp_requirements/TASK301_310_XIONGAN_BAIYANGDIAN_SOURCE_DISCOVERY_AND_BOUNDARY.md)
+- [Task311-320 Signal Claim Knowledge Object Trial](task301_360_climateos_evidence_passport_use_trial_mvp_requirements/TASK311_320_SIGNAL_CLAIM_KNOWLEDGE_OBJECT_TRIAL.md)
+- [Task321-330 Evidence Readiness And Risk Flag Trial](task301_360_climateos_evidence_passport_use_trial_mvp_requirements/TASK321_330_EVIDENCE_READINESS_AND_RISK_FLAG_TRIAL.md)
+- [Task331-340 MVP User And Workflow Requirements](task301_360_climateos_evidence_passport_use_trial_mvp_requirements/TASK331_340_MVP_USER_AND_WORKFLOW_REQUIREMENTS.md)
+- [Task341-350 MVP Data Interface And Architecture Question Requirements](task301_360_climateos_evidence_passport_use_trial_mvp_requirements/TASK341_350_MVP_DATA_INTERFACE_AND_ARCHITECTURE_QUESTION_REQUIREMENTS.md)
+- [Task351-360 Sprint Closure Packet](task301_360_climateos_evidence_passport_use_trial_mvp_requirements/TASK351_360_SPRINT_CLOSURE_PACKET.md)
+- [Task301-360 MVP Requirements Harvest](task301_360_climateos_evidence_passport_use_trial_mvp_requirements/MVP_REQUIREMENTS_HARVEST.md)
+
+Task301-360 is closed as documentation-only source discovery, candidate classification, use trial, and MVP requirements harvest. No Task361, future batch, architecture work, implementation work, runtime work, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.

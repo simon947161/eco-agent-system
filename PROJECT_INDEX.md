@@ -187,6 +187,8 @@ Use it as a first stop before adding new project content.
 - [Task290 Architecture Request Authorization Gate Review Closure](docs/tasks/task281_290_evidence_passport_architecture_request_authorization_gate_review/TASK290_ARCHITECTURE_REQUEST_AUTHORIZATION_GATE_REVIEW_CLOSURE.md)
 - [Task291-300 Evidence Passport Architecture Request Final Pre-Authorization Governance Closure](docs/tasks/task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/README.md)
 - [Task300 Evidence Passport Final Pre-Authorization Governance Closure](docs/tasks/task291_300_evidence_passport_architecture_request_final_pre_authorization_governance_closure/TASK300_EVIDENCE_PASSPORT_FINAL_PRE_AUTHORIZATION_GOVERNANCE_CLOSURE.md)
+- [Task301-360 Evidence Passport Use Trial And MVP Requirements Sprint](docs/tasks/task301_360_climateos_evidence_passport_use_trial_mvp_requirements/README.md)
+- [Task351-360 Sprint Closure Packet](docs/tasks/task301_360_climateos_evidence_passport_use_trial_mvp_requirements/TASK351_360_SPRINT_CLOSURE_PACKET.md)
 - [ClimateOS Review Engine Design Decision](docs/strategy/CLIMATEOS_REVIEW_ENGINE_DESIGN_DECISION.md)
 - [Review Objects Architecture Decision](docs/strategy/REVIEW_OBJECTS_ARCHITECTURE_DECISION.md)
 - [Foundation Roadmap Stability Decision](docs/strategy/FOUNDATION_ROADMAP_STABILITY_DECISION.md)
@@ -213,7 +215,7 @@ Use it as a first stop before adding new project content.
 - Task151-160 CarbonOS Research Activation Batch is completed; Task151-160 is closed / research-activation-gated.
 - Task161-200 Runtime Integration Gap Analysis enhancement layer is completed as documentation-only gap analysis; Baseline v1.0 remains preserved.
 - Architecture Baseline v1.1 is frozen; Founder Review Completed.
-- Task161-170 Official Source Discovery, Task171-180 Official Framework Intake, Task181-190 Framework Normalization, Task191-200 Foundation Closure, Task201-210 Phase II Planning, Task211-220 Mission / Signal / Open Learning Governance, Task221-230 Knowledge Object / Evidence Readiness Governance, Task231-240 Evidence Passport Pre-Architecture Governance, Task241-250 Evidence Passport Architecture Readiness Review, Task251-260 Evidence Passport Architecture Authorization Decision Governance, Task261-270 Evidence Passport Architecture Work Request Governance, Task271-280 Evidence Passport Architecture Request Package Governance Review, Task281-290 Evidence Passport Architecture Request Authorization Gate Review, and Task291-300 Evidence Passport Architecture Request Final Pre-Authorization Governance Closure are completed as documentation-only packages.
+- Task161-170 Official Source Discovery, Task171-180 Official Framework Intake, Task181-190 Framework Normalization, Task191-200 Foundation Closure, Task201-210 Phase II Planning, Task211-220 Mission / Signal / Open Learning Governance, Task221-230 Knowledge Object / Evidence Readiness Governance, Task231-240 Evidence Passport Pre-Architecture Governance, Task241-250 Evidence Passport Architecture Readiness Review, Task251-260 Evidence Passport Architecture Authorization Decision Governance, Task261-270 Evidence Passport Architecture Work Request Governance, Task271-280 Evidence Passport Architecture Request Package Governance Review, Task281-290 Evidence Passport Architecture Request Authorization Gate Review, Task291-300 Evidence Passport Architecture Request Final Pre-Authorization Governance Closure, and Task301-360 Evidence Passport Use Trial / MVP Requirements Harvest are completed as documentation-only packages.
 
 ## Completed Tasks
 
@@ -340,4 +342,4 @@ boundaries before runtime capability.
 
 This is a non-operational evidence-seed attachment for Task167 Heat Resilience and does not change the main Task161-200 route.
 
-Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, and Task291-300 are closed as documentation-only packages. No future batch is started unless Founder explicitly approves.
+Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, and Task301-360 are closed as documentation-only packages. No future batch is started unless Founder explicitly approves.
