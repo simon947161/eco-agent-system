@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from .config import BOUNDARY_LABEL
-from .database import connect, initialize_database
+from .database import connect, initialize_database, write_transaction
 from .schemas import (
     CandidateCreate,
     CandidateUpdate,
@@ -71,7 +71,7 @@ class PrototypeRepository:
         self.db_path = Path(db_path)
         initialize_database(self.db_path)
 
-    def audit(
+    def _build_audit_event(
         self,
         event_type: str,
         actor_type: str,
@@ -79,7 +79,7 @@ class PrototypeRepository:
         record_id: str | None,
         detail: dict[str, Any],
     ) -> dict[str, Any]:
-        event = {
+        return {
             "id": new_id("AUD"),
             "event_type": event_type,
             "actor_type": actor_type,
@@ -89,21 +89,36 @@ class PrototypeRepository:
             "operation_id": new_id("OP"),
             "created_at": now_iso(),
         }
-        with connect(self.db_path) as connection:
-            sequence = connection.execute(
-                "SELECT COALESCE(MAX(sequence_number), 0) + 1 AS sequence_number FROM audit_events"
-            ).fetchone()["sequence_number"]
-            event["sequence_number"] = sequence
-            connection.execute(
-                """
-                INSERT INTO audit_events
-                (id, event_type, actor_type, actor_label, record_id, detail_json,
-                 sequence_number, operation_id, created_at)
-                VALUES (:id, :event_type, :actor_type, :actor_label, :record_id, :detail_json,
-                 :sequence_number, :operation_id, :created_at)
-                """,
-                event,
-            )
+
+    @staticmethod
+    def _insert_audit_event(connection: sqlite3.Connection, event: dict[str, Any]) -> None:
+        event["sequence_number"] = connection.execute(
+            "SELECT COALESCE(MAX(sequence_number), 0) + 1 AS sequence_number FROM audit_events"
+        ).fetchone()["sequence_number"]
+        connection.execute(
+            """
+            INSERT INTO audit_events
+            (id, event_type, actor_type, actor_label, record_id, detail_json,
+             sequence_number, operation_id, created_at)
+            VALUES (:id, :event_type, :actor_type, :actor_label, :record_id, :detail_json,
+             :sequence_number, :operation_id, :created_at)
+            """,
+            event,
+        )
+
+    def audit(
+        self,
+        event_type: str,
+        actor_type: str,
+        actor_label: str,
+        record_id: str | None,
+        detail: dict[str, Any],
+    ) -> dict[str, Any]:
+        event = self._build_audit_event(
+            event_type, actor_type, actor_label, record_id, detail
+        )
+        with write_transaction(self.db_path) as connection:
+            self._insert_audit_event(connection, event)
         return event
 
     def create_candidate(
@@ -133,7 +148,14 @@ class PrototypeRepository:
             "updated_at": timestamp,
             "archived_at": None,
         }
-        with connect(self.db_path) as connection:
+        audit_event = self._build_audit_event(
+            "candidate_created",
+            "human_action",
+            actor_label,
+            candidate["id"],
+            {"record_type": payload.record_type, "status": payload.status},
+        )
+        with write_transaction(self.db_path) as connection:
             connection.execute(
                 """
                 INSERT INTO candidate_records
@@ -147,13 +169,7 @@ class PrototypeRepository:
                 """,
                 candidate,
             )
-        self.audit(
-            "candidate_created",
-            "human_action",
-            actor_label,
-            candidate["id"],
-            {"record_type": payload.record_type, "status": payload.status},
-        )
+            self._insert_audit_event(connection, audit_event)
         return self.get_candidate(candidate["id"])
 
     def list_candidates(

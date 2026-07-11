@@ -492,3 +492,14 @@ Task701-720 adds local SQLite v3 persistence, restart recovery, immutable
 revision snapshots, append-only Alpha audit, abstaining deliberation records,
 synthetic cross-domain scenarios and a minimal review presentation. It remains
 localhost-only, synthetic, human-controlled and non-operational.
+
+## Task721-740 - Bounded SQLite Foreground Concurrency Hardening
+
+- [Task721-740 README](docs/tasks/task721_740_bounded_sqlite_foreground_concurrency_hardening/README.md)
+- [Task721-729 Preflight And Hardening](docs/tasks/task721_740_bounded_sqlite_foreground_concurrency_hardening/TASK721_729_PREFLIGHT_AND_CONCURRENCY_HARDENING.md)
+- [Task730-739 Validation And Boundaries](docs/tasks/task721_740_bounded_sqlite_foreground_concurrency_hardening/TASK730_739_VALIDATION_MIGRATION_ROLLBACK_AND_BOUNDARIES.md)
+- [Task740 Closure And Hard Stop](docs/tasks/task721_740_bounded_sqlite_foreground_concurrency_hardening/TASK740_CLOSURE_AND_TASK741_HARD_STOP.md)
+
+Task721-740 resolves a repeatable SQLite lock baseline blocker in existing
+foreground write paths. It adds bounded lock retry and atomic candidate/audit
+creation without changing schema v3, journal mode or operational capability.

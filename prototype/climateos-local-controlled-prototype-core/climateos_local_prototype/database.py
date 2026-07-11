@@ -1,9 +1,14 @@
 import sqlite3
+from collections.abc import Iterator
+from contextlib import contextmanager
 from pathlib import Path
+from time import sleep
 
 from .config import SQLITE_BUSY_TIMEOUT_MS
 
 SCHEMA_VERSION = 3
+
+SQLITE_LOCK_RETRY_DELAYS_SECONDS = (0.025, 0.05, 0.1)
 
 REQUIRED_TABLES = {
     "schema_version",
@@ -41,6 +46,40 @@ def connect(db_path: str | Path) -> sqlite3.Connection:
     connection.execute("PRAGMA foreign_keys = ON")
     connection.execute(f"PRAGMA busy_timeout = {SQLITE_BUSY_TIMEOUT_MS}")
     return connection
+
+
+def _is_locked_error(error: sqlite3.OperationalError) -> bool:
+    message = str(error).lower()
+    return "database is locked" in message or "database table is locked" in message
+
+
+def _begin_immediate(connection: sqlite3.Connection) -> None:
+    for attempt in range(len(SQLITE_LOCK_RETRY_DELAYS_SECONDS) + 1):
+        try:
+            connection.execute("BEGIN IMMEDIATE")
+            return
+        except sqlite3.OperationalError as error:
+            if not _is_locked_error(error) or attempt == len(SQLITE_LOCK_RETRY_DELAYS_SECONDS):
+                raise
+            sleep(SQLITE_LOCK_RETRY_DELAYS_SECONDS[attempt])
+
+
+@contextmanager
+def write_transaction(db_path: str | Path) -> Iterator[sqlite3.Connection]:
+    """Acquire one bounded foreground writer and commit or roll back atomically."""
+
+    connection = connect(db_path)
+    try:
+        _begin_immediate(connection)
+        try:
+            yield connection
+        except BaseException:
+            connection.rollback()
+            raise
+        else:
+            connection.commit()
+    finally:
+        connection.close()
 
 
 def _table_columns(connection: sqlite3.Connection, table_name: str) -> set[str]:

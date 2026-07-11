@@ -10,7 +10,7 @@ from .alpha_runtime import (
     DeliberationCreate,
     EvidenceContractCreate,
 )
-from .database import connect
+from .database import connect, write_transaction
 
 
 SYNTHETIC_CROSS_DOMAIN_SCENARIOS = [
@@ -92,7 +92,7 @@ class PersistentAlphaRuntimeStore(AlphaRuntimeStore):
 
     def _audit_event(self, event_type: str, actor_label: str, record_id: str, detail: dict) -> dict:
         event = super()._audit_event(event_type, actor_label, record_id, detail)
-        with connect(self.db_path) as connection:
+        with write_transaction(self.db_path) as connection:
             cursor = connection.execute(
                 """INSERT INTO alpha_audit_events
                 (id, event_type, actor_label, record_id, detail_json, created_at, boundary_label)
@@ -107,7 +107,7 @@ class PersistentAlphaRuntimeStore(AlphaRuntimeStore):
         return event
 
     def _persist_evidence(self, record: dict) -> None:
-        with connect(self.db_path) as connection:
+        with write_transaction(self.db_path) as connection:
             connection.execute(
                 """INSERT INTO alpha_evidence_contracts
                 (id, domain, state, revision, record_json, created_at, updated_at)
@@ -156,7 +156,7 @@ class PersistentAlphaRuntimeStore(AlphaRuntimeStore):
 
     def create_deliberation(self, payload: DeliberationCreate) -> dict:
         record = super().create_deliberation(payload)
-        with connect(self.db_path) as connection:
+        with write_transaction(self.db_path) as connection:
             connection.execute(
                 "INSERT INTO alpha_deliberations (id, record_json, created_at) VALUES (?, ?, ?)",
                 (record["id"], _canonical_json(record), record["created_at"]),

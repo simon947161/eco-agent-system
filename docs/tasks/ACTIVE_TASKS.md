@@ -134,3 +134,14 @@ revisions, audit and deliberations in additive SQLite schema v3 and demonstrates
 synthetic cross-domain review under mandatory Human Review.
 
 Hard stop: Task721 is not started and requires a separate Founder Gate.
+
+## Task721-740 Bounded SQLite Foreground Concurrency Hardening
+
+Status: Completed / Closed after validation.
+
+The existing localhost prototype now acquires SQLite foreground write
+transactions explicitly, retries only bounded busy/locked errors, and creates
+candidate/audit pairs atomically. Existing Alpha persistence writes use the
+same bounded writer boundary. The complete suite passes.
+
+Hard stop: Task741 is not started and requires a separate Founder Gate.

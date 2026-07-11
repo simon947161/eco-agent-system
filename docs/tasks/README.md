@@ -610,3 +610,14 @@ and synthetic fixtures. It stops at Task700; Task701 is not started.
 
 Task701-720 is closed after implementing and validating a local, SQLite-backed,
 human-controlled Alpha review loop. No Task721 starts automatically.
+
+## Task721-740 - Bounded SQLite Foreground Concurrency Hardening
+
+- [README](task721_740_bounded_sqlite_foreground_concurrency_hardening/README.md)
+- [Task721-729 Preflight And Hardening](task721_740_bounded_sqlite_foreground_concurrency_hardening/TASK721_729_PREFLIGHT_AND_CONCURRENCY_HARDENING.md)
+- [Task730-739 Validation And Boundaries](task721_740_bounded_sqlite_foreground_concurrency_hardening/TASK730_739_VALIDATION_MIGRATION_ROLLBACK_AND_BOUNDARIES.md)
+- [Task740 Closure And Hard Stop](task721_740_bounded_sqlite_foreground_concurrency_hardening/TASK740_CLOSURE_AND_TASK741_HARD_STOP.md)
+
+Task721-740 is closed after resolving the repeatable SQLite lock baseline
+blocker with bounded foreground transaction handling and passing deterministic
+regression validation. Task741 is not started.
