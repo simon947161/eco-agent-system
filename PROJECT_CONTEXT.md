@@ -37,6 +37,9 @@ Task701–720 implements a bounded persistent Alpha Review Loop using additive
 SQLite schema v3, synthetic cross-domain cases and mandatory Human Review.
 Task721–740 hardens existing SQLite foreground write concurrency with bounded
 lock retry, atomic candidate/audit creation and deterministic regression checks.
+Task741–900 validates a bounded local Alpha Review Workbench through synthetic
+human-action trials and conditionally accepts it only for Founder-controlled
+local review.
 
 ## Current Architecture Direction
 
@@ -52,10 +55,10 @@ Founder-reserved EcoEngine assets and `D:\eco_engine_v200` are private and outsi
 
 ## Current Hard Stop
 
-Task740 is the current hard stop. The repository contains a concurrency-hardened
-bounded persistent local Alpha Review Loop, not a production runtime. No
-external model, live data, MCP, authentication, automation, deployment, private
-EcoEngine, or Task741+ starts automatically.
+Task900 is the current hard stop. The repository contains a synthetic local
+Alpha Review Workbench with Human Authority warnings, not a production runtime.
+No external model, live data, MCP, authentication, automation, deployment,
+private EcoEngine, or Task901+ starts automatically.
 
 ## Recovery Rule
 

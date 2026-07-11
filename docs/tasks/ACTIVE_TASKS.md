@@ -145,3 +145,14 @@ candidate/audit pairs atomically. Existing Alpha persistence writes use the
 same bounded writer boundary. The complete suite passes.
 
 Hard stop: Task741 is not started and requires a separate Founder Gate.
+
+## Task741-900 Bounded Local Human Use Trial
+
+Status: Completed / Closed after validation.
+
+Option B added a bounded local Alpha Review Workbench and deterministic
+human-action trials without changing the API, schema or technical envelope.
+The Alpha is conditionally accepted only for Founder-controlled synthetic local
+review.
+
+Hard stop: Task901 is not started and requires a separate Founder Gate.

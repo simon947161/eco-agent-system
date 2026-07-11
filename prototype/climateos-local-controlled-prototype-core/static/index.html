@@ -9,7 +9,7 @@
   <body>
     <header class="app-header">
       <div>
-        <p class="eyebrow">Task481-540 local controlled prototype</p>
+        <p class="eyebrow">Bounded local Alpha human-use trial</p>
         <h1>ClimateOS Evidence Passport</h1>
         <p class="subtitle">Local candidate workflow with Human Review, Founder Gate, audit trail, mock model suggestions, and archive export.</p>
       </div>
@@ -128,8 +128,42 @@
         </section>
 
         <section id="alpha" class="screen">
-          <h2>Persistent Alpha Review Loop</h2>
-          <p class="screen-note">Synthetic/local review only. State is preserved in local SQLite for human review and recovery. No conclusion, scoring, certification, external model, or private engine access.</p>
+          <h2>Alpha Review Workbench</h2>
+          <div class="authority-warning" role="note">
+            <strong>Human authority boundary</strong>
+            <span>Reviewer labels are locally declared labels, not verified identities. A hash can show content integrity; it cannot prove scientific truth, source authority, or reviewer identity.</span>
+          </div>
+          <p class="screen-note">Synthetic/local review only. State is preserved in local SQLite for human review and recovery. Every workflow must abstain from real-world conclusions.</p>
+          <div class="trial-grid">
+            <form id="alpha-create-form" class="form-grid trial-panel">
+              <h3>Create synthetic evidence</h3>
+              <label>Title <input name="title" required minlength="3" value="Synthetic local review candidate"></label>
+              <label>Domain <select name="domain">
+                <option>climate</option><option>water</option><option>land</option>
+                <option>energy</option><option>carbon</option><option>biodiversity</option>
+              </select></label>
+              <label>Summary <textarea name="summary" required>Fabricated fixture for local human-use testing only.</textarea></label>
+              <label>Uncertainty <textarea name="uncertainty" required>No real-world inference is permitted.</textarea></label>
+              <button type="submit">Create synthetic evidence candidate</button>
+              <p id="alpha-create-result" class="screen-note" aria-live="polite"></p>
+            </form>
+            <form id="alpha-review-form" class="form-grid trial-panel">
+              <h3>Record a human action</h3>
+              <label>Evidence ID <input name="record_id" required></label>
+              <label>Action <select name="action">
+                <option value="review">Review without approving truth</option>
+                <option value="dispute">Challenge / dispute</option>
+                <option value="correct">Correct</option>
+                <option value="reject">Refuse / reject</option>
+                <option value="escalate">Escalate</option>
+              </select></label>
+              <label>Declared reviewer label <input name="reviewer_label" required minlength="2"></label>
+              <label>Reason <textarea name="reason" required minlength="10"></textarea></label>
+              <label>Correction summary (only for correct) <textarea name="correction_summary"></textarea></label>
+              <button type="submit">Record human action</button>
+              <p id="alpha-review-result" class="screen-note" aria-live="polite"></p>
+            </form>
+          </div>
           <div class="button-row">
             <button id="alpha-capabilities-button">Load Capabilities</button>
             <button id="alpha-domains-button">Load Fixture Domains</button>

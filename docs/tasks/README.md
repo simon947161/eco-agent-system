@@ -628,3 +628,18 @@ regression validation. Task741 is not started.
 
 The brief presents three strategic options and recommends a bounded local human
 use trial. It is planning-only and does not start Task741.
+
+## Task741-900 - Bounded Local Human Use Trial
+
+- [README](task741_900_bounded_local_human_use_trial/README.md)
+- [Task741-760 Readiness](task741_900_bounded_local_human_use_trial/TASK741_760_ALPHA_USE_TRIAL_READINESS.md)
+- [Task761-780 Synthetic Trial](task741_900_bounded_local_human_use_trial/TASK761_780_SYNTHETIC_FOUNDER_CONTROLLED_USE_TRIAL.md)
+- [Task781-800 Comprehension](task741_900_bounded_local_human_use_trial/TASK781_800_HUMAN_COMPREHENSION_AND_EVIDENCE_QUALITY.md)
+- [Task801-820 Mock Contracts](task741_900_bounded_local_human_use_trial/TASK801_820_CROSS_DOMAIN_MOCK_CONTRACT_VALIDATION.md)
+- [Task821-840 Human Authority UX](task741_900_bounded_local_human_use_trial/TASK821_840_HUMAN_AUTHORITY_GOVERNANCE_UX.md)
+- [Task841-860 Resilience](task741_900_bounded_local_human_use_trial/TASK841_860_LOCAL_RESILIENCE_AND_PORTABILITY.md)
+- [Task861-880 Acceptance](task741_900_bounded_local_human_use_trial/TASK861_880_ALPHA_ACCEPTANCE_AND_GAP_CLOSURE.md)
+- [Task881-900 Closure](task741_900_bounded_local_human_use_trial/TASK881_900_PHASE_CLOSURE_AND_TASK901_HARD_STOP.md)
+
+Task741-900 is closed after a bounded synthetic local human-use trial and Alpha
+acceptance review. Task901 is not started.

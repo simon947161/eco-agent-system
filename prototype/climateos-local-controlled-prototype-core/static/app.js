@@ -218,6 +218,52 @@
         box.value = JSON.stringify(payload, null, 2);
       });
     });
+
+    document.getElementById("alpha-create-form").addEventListener("submit", async function (event) {
+      event.preventDefault();
+      var form = new FormData(event.target);
+      var payload = {
+        title: form.get("title"),
+        domain: form.get("domain"),
+        object_type: "synthetic_observation_candidate",
+        summary: form.get("summary"),
+        source_refs: ["LOCAL-USE-TRIAL-FIXTURE"],
+        provenance: "Generated locally for a synthetic Founder-controlled use trial; no external or live source.",
+        assumptions: ["Demonstration only", "No real-world inference"],
+        uncertainty: form.get("uncertainty"),
+        permissions: "synthetic/public-safe fixture",
+        human_review_required: true
+      };
+      var created = await api("/api/alpha/evidence-contracts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      document.getElementById("alpha-create-result").textContent = "Created " + created.id + ". Candidate only; no truth or approval claim.";
+      document.querySelector("#alpha-review-form [name=record_id]").value = created.id;
+      box.value = JSON.stringify(created, null, 2);
+    });
+
+    document.getElementById("alpha-review-form").addEventListener("submit", async function (event) {
+      event.preventDefault();
+      var form = new FormData(event.target);
+      var recordId = form.get("record_id");
+      var payload = {
+        action: form.get("action"),
+        reviewer_label: form.get("reviewer_label"),
+        reason: form.get("reason")
+      };
+      if (payload.action === "correct") {
+        payload.correction_summary = form.get("correction_summary");
+      }
+      var reviewed = await api("/api/alpha/evidence-contracts/" + encodeURIComponent(recordId) + "/review-actions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      document.getElementById("alpha-review-result").textContent = "Recorded " + payload.action + " by a declared local label. Human responsibility remains; no conclusion was issued.";
+      box.value = JSON.stringify(reviewed, null, 2);
+    });
   }
 
   bindNavigation();

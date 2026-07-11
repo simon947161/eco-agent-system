@@ -249,6 +249,29 @@ textarea,
   gap: 10px;
 }
 
+.authority-warning {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 14px;
+  padding: 13px 14px;
+  border: 2px solid #d8c3a6;
+  background: #fff8ed;
+}
+
+.trial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0;
+}
+
+.trial-panel {
+  max-width: none;
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: #fbfdf9;
+}
+
 @media (max-width: 860px) {
   .app-header,
   .app-shell {
@@ -264,5 +287,9 @@ textarea,
     border-right: 0;
     border-bottom: 1px solid var(--line);
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .trial-grid {
+    grid-template-columns: 1fr;
   }
 }
