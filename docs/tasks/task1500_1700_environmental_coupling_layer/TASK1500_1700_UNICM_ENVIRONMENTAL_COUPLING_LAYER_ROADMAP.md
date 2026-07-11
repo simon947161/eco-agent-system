@@ -36,7 +36,38 @@ Fire, agriculture, energy and infrastructure risk
 Human and governance decisions
 ```
 
-## 3. Relationship to existing ClimateOS roadmap
+## 3. Position inside the wider ClimateOS science roadmap
+
+Task1500–1700 is the central coupling workstream, but it must not stand alone.
+
+```text
+Task1200–1499
+Model assurance + hybrid weather runtime
+        ↓
+Task1500–1700
+Environmental Coupling Layer
+        ↓
+Task1701–1899
+Mechanism Experiment Layer
+        ↓
+Task1900–2099
+Environmental AI Scientist Runtime
+```
+
+The logic is deliberate:
+
+1. first determine whether models are scientifically and operationally trustworthy;
+2. then connect physical and AI forecast sources in a governed runtime;
+3. then represent cross-system environmental relationships;
+4. then test mechanisms through controlled numerical experiments;
+5. only after that consider a broader autonomous environmental scientist runtime.
+
+Related roadmap files:
+
+- `docs/tasks/task1200_1499_model_assurance_hybrid_weather/TASK1200_1499_MODEL_ASSURANCE_AND_HYBRID_WEATHER_ROADMAP.md`
+- `docs/tasks/task1701_2099_mechanism_scientist_runtime/TASK1701_2099_MECHANISM_EXPERIMENT_AND_ENVIRONMENTAL_AI_SCIENTIST_ROADMAP.md`
+
+## 4. Relationship to existing ClimateOS roadmap
 
 Task601 established the future Life System Module and Living Evidence concept. Task1500 extends that direction by adding a system-level coupling architecture.
 
@@ -45,21 +76,29 @@ Task601: Life System Module
     ↓
 Living Evidence and ecological response
     ↓
+Task1200–1499: model assurance and hybrid forecast inputs
+    ↓
 Task1500: Environmental Coupling Layer
     ↓
-Task1500–1700: governed multi-system climate intelligence
+Task1701–2099: mechanism validation and AI scientist runtime
 ```
 
 Task601 asks how living systems respond to environmental change. Task1500 asks how climate, water, land, life and human systems jointly evolve and exchange predictive information.
 
-## 4. Proposed ClimateOS position
+## 5. Proposed ClimateOS position
 
-The Environmental Coupling Layer should sit above specialist models and below decision governance.
+The Environmental Coupling Layer should sit above specialist models and below mechanism experimentation and decision governance.
 
 ```text
 Climate State Layer
 - ENSO, IOD, SAM, MJO and other climate modes
 - UniCM-inspired coupled-mode representation
+
+Weather and Forecast Input Layer
+- physical forecast systems
+- AI forecast systems
+- regional downscaling and observation updates
+- model comparison and provenance
 
 Environmental Coupling Layer
 - lagged relationships
@@ -76,6 +115,11 @@ Domain Layers
 - EnergyOS
 - BuildingOS
 
+Mechanism Experiment Layer
+- controlled perturbation experiments
+- WRF-Chem / WRF-Hydro / land and ecological models
+- evidence-chain diagnostics
+
 Decision and Governance Layer
 - scenario comparison
 - Evidence Passport
@@ -83,20 +127,61 @@ Decision and Governance Layer
 - limitations and confidence reporting
 ```
 
-## 5. Task1500 entry gate
+## 6. Independent reference frameworks
+
+The following are separate reference frameworks. They are not one combined development task and must not be treated as interchangeable products.
+
+### 6.1 UniCM — coupled climate-state reference
+
+Role: long-range climate-mode representation and coupled predictability.
+
+ClimateOS use: inspiration for the Environmental Coupling Layer and Climate Mode Evidence Adapter.
+
+### 6.2 PhysMetrics.Weather — model assurance reference
+
+Role: evaluate physical consistency beyond RMSE and ACC, including mass, energy, spectra and balance diagnostics.
+
+ClimateOS use: upstream scientific admission and continuous model assurance. It belongs primarily in Task1200–1299, not inside the ECL implementation itself.
+
+Reference record:
+
+- `docs/references/climateos_scientific_frameworks/PHYSMETRICS_WEATHER_REFERENCE_FRAMEWORK.md`
+
+### 6.3 AICON — hybrid operational forecast reference
+
+Role: demonstrate how a national meteorological service can run an AI forecast model alongside a physics-based operational model, with higher-frequency updates and human oversight.
+
+ClimateOS use: architecture reference for Task1300–1499 Hybrid Weather Intelligence Runtime.
+
+Reference record:
+
+- `docs/references/climateos_scientific_frameworks/AICON_REFERENCE_FRAMEWORK.md`
+
+### 6.4 TianJi-Environ — mechanism experiment reference
+
+Role: convert atmospheric-environment hypotheses into controlled WRF-Chem experiments, diagnostics and auditable evidence chains.
+
+ClimateOS use: architecture reference for Task1701–1899 Mechanism Experiment Layer and Task1900–2099 Environmental AI Scientist Runtime.
+
+Reference record:
+
+- `docs/references/climateos_scientific_frameworks/TIANJI_ENVIRON_REFERENCE_FRAMEWORK.md`
+
+## 7. Task1500 entry gate
 
 Task1500 shall begin only after an explicit Founder authorization and a preflight review covering:
 
 1. current ClimateOS architecture and repository state;
-2. official UniCM publication, code repository, licence and model/data availability;
-3. compute and storage requirements;
-4. scientific and legal constraints;
-5. whether reproduction is feasible on available hardware;
-6. a bounded pilot that does not interrupt active ClimateOS delivery.
+2. completion or bounded readiness of the Task1200–1499 assurance and forecast-input foundations;
+3. official UniCM publication, code repository, licence and model/data availability;
+4. compute and storage requirements;
+5. scientific and legal constraints;
+6. whether reproduction is feasible on available hardware;
+7. a bounded pilot that does not interrupt active ClimateOS delivery.
 
 The official UniCM source repository has **not yet been reliably verified in this planning record**. No code shall be cloned or incorporated until the repository identity and licence are confirmed from an authoritative source.
 
-## 6. Task roadmap
+## 8. Task roadmap
 
 ### Task1500–1520 — Source verification and scientific orientation
 
@@ -104,7 +189,8 @@ The official UniCM source repository has **not yet been reliably verified in thi
 - record licence, citation, model weights, datasets and dependencies;
 - map the paper’s inputs, outputs, climate modes and evaluation metrics;
 - distinguish published claims from ClimateOS interpretation;
-- prepare a reproducibility risk register.
+- prepare a reproducibility risk register;
+- confirm that upstream model-assurance rules are available.
 
 **Deliverable:** UniCM Source and Reproducibility Dossier.
 
@@ -124,6 +210,7 @@ The official UniCM source repository has **not yet been reliably verified in thi
 - reproduce one or two reported climate-mode metrics where feasible;
 - document failures, missing data and compute limits;
 - compare observations, reanalysis and model outputs;
+- apply available statistical and physical assurance checks;
 - avoid operational forecasting claims.
 
 **Deliverable:** limited reproduction report and evidence package.
@@ -147,6 +234,7 @@ climate_mode_state:
   input_dataset:
   spatial_scope:
   limitations:
+  assurance_status:
   evidence_passport_id:
 ```
 
@@ -158,7 +246,8 @@ climate_mode_state:
 - represent lead-lag relationships without claiming causality;
 - connect climate-mode states to WaterOS, LandOS and Life System evidence;
 - track uncertainty transformations;
-- require human review for scientific interpretation.
+- require human review for scientific interpretation;
+- register candidate mechanisms for later testing without pretending they are proven.
 
 Candidate relationship record:
 
@@ -175,11 +264,12 @@ model_method:
 confidence:
 stationarity_warning:
 expert_review_status:
+future_mechanism_test_id:
 ```
 
 **Deliverable:** Environmental Coupling Layer prototype v0.1.
 
-### Task1671–1700 — Australian regional pilot and governance review
+### Task1671–1700 — Australian regional pilot and transition gate
 
 Preferred pilot chain:
 
@@ -197,13 +287,14 @@ The pilot must clearly separate:
 - regional translation;
 - impact modelling;
 - expert interpretation;
-- governance recommendation.
+- governance recommendation;
+- candidate mechanisms requiring later controlled experiments.
 
-**Deliverable:** Australian Coupled Climate–Environment Evidence Pilot and Task1700 gate review.
+**Deliverable:** Australian Coupled Climate–Environment Evidence Pilot and Task1700 transition review.
 
-## 7. Learning and open-source study method
+Task1700 does not authorize WRF-Chem or other high-cost mechanism experiments automatically. It prepares a bounded candidate list for the Task1701 gate.
 
-The approved learning sequence should be:
+## 9. Learning and open-source study method
 
 ```text
 Paper
@@ -214,6 +305,7 @@ Paper
 → model architecture
 → inference path
 → evaluation path
+→ statistical and physical assurance
 → minimal reproduction
 → adapter
 → bounded ClimateOS pilot
@@ -226,9 +318,10 @@ Rules:
 - do not merge experimental dependencies into ClimateOS core;
 - do not interpret attention or correlation as established causation;
 - do not claim operational climate prediction from a research reproduction;
-- keep all source, model and transformation lineage in an Evidence Passport.
+- keep all source, model and transformation lineage in an Evidence Passport;
+- transfer unproven mechanisms to the later Mechanism Experiment Layer.
 
-## 8. Success criteria
+## 10. Success criteria
 
 Task1500–1700 succeeds if ClimateOS can:
 
@@ -237,11 +330,12 @@ Task1500–1700 succeeds if ClimateOS can:
 3. propagate uncertainty rather than hide it;
 4. connect global climate state to a bounded Australian regional evidence chain;
 5. expose scientific assumptions for expert and Founder review;
-6. remain modular so UniCM can be replaced or compared with later models.
+6. remain modular so UniCM can be replaced or compared with later models;
+7. produce a disciplined list of mechanism hypotheses for later experiment, without claiming causality prematurely.
 
 It does not require ClimateOS to train a global foundation model from scratch.
 
-## 9. Boundaries
+## 11. Boundaries
 
 This roadmap does not authorize:
 
@@ -250,14 +344,23 @@ This roadmap does not authorize:
 - automated policy decisions;
 - unreviewed causal conclusions;
 - redistribution of restricted datasets or weights;
-- premature expansion of current tasks before the Task1500 gate.
+- premature expansion of current tasks before the Task1500 gate;
+- automatic launch of Task1701 mechanism experiments.
 
-## 10. Permanent reminder
+## 12. Permanent reminders
 
-> **Task1500 is the formal ClimateOS return point for UniCM and the Environmental Coupling Layer.**
+> **Task1200 is the formal return point for model assurance foundations.**
 
-Before Task1500, the project may collect research notes and preserve references, but implementation remains deferred. When the Founder later says that ClimateOS is approaching Task1500, the system should retrieve this roadmap, verify the current scientific state, and prepare a fresh executable authorization rather than blindly following this historical plan.
+> **Task1300 is the formal return point for hybrid physical-plus-AI forecast runtime design.**
+
+> **Task1500 is the formal return point for UniCM and the Environmental Coupling Layer.**
+
+> **Task1701 is the formal return point for mechanism experiment protocols.**
+
+> **Task1900 is the formal return point for the Environmental AI Scientist Runtime.**
+
+When ClimateOS approaches any of these gates, retrieve the relevant roadmap and reference records, verify the current scientific and repository state, and prepare a fresh executable authorization. Historical roadmap text must never be treated as automatic implementation approval.
 
 ## Project keywords
 
-ClimateOS; Task1500; Task1500–1700; UniCM; Environmental Coupling Layer; global climate modes; ENSO; IOD; SAM; MJO; coupled dynamics; teleconnection; emerging predictability; WaterOS; LandOS; Life System Module; Living Evidence; Evidence Passport; Australian climate risk; Snowy Valleys; Riverina.
+ClimateOS; Task1200; Task1300; Task1500; Task1701; Task1900; Task1500–1700; UniCM; PhysMetrics.Weather; AICON; TianJi-Environ; Environmental Coupling Layer; Model Assurance; Hybrid Weather Runtime; Mechanism Experiment Layer; Environmental AI Scientist Runtime; ENSO; IOD; SAM; MJO; Evidence Passport; Australian climate risk; Snowy Valleys; Riverina.
