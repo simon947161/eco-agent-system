@@ -171,3 +171,5 @@ Status changes should be supported by repository evidence.
   explicitly authorized task.
 - Documentation-only tasks define conceptual foundations without implementing runtime software.
 - Task91 through Task99 form Phase 3 (Runtime Preparation) of Foundation development.
+
+| Task681-690 | Alpha Runtime Architecture Brief | ClimateOS Alpha Runtime architecture | Completed | Consolidate the documentation-only architecture needed before any local Alpha Runtime skeleton may be proposed. | Root project passport and design index, purpose/non-purpose, component/trust map, interface architecture, Evidence Contract path, domain registry/adapter boundary, threat model, deliberation architecture, Task691-700 gate questions, and closure | REMOTE-ONLY DOCUMENTATION COMMIT; no D: drive inspection, private EcoEngine access, runtime/API/MCP/CLI/database/security implementation, connectors, live data, automation, deployment, operational Evidence Passport, Task691, or automatic next batch. |

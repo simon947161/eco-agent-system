@@ -460,3 +460,15 @@ Task661-670 is closed as documentation-only Sustainable Office workflow example 
 Task671-680 is closed as documentation-only External Model Adapter Readiness Review work. It treats external model output as evidence candidate material, not proof or governance authority. It defines adapter-readiness boundaries, private EcoEngine isolation, and Founder Gate triggers without creating an adapter, connector, model execution, live data retrieval, runtime code, external API, database, MCP, CLI, schema, authentication, encryption, automation, sensors, agents, scoring, certification, deployment, operational Evidence Passport, Task681, or automatic next batch.
 
 Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Task221-230, Task231-240, Task241-250, Task251-260, Task261-270, Task271-280, Task281-290, Task291-300, Task301-360, Task361-420, Task421-480, Task481-540, Task541-600, Task601-620, Task621-630, Task631-640, Task641-650, Task651-660, Task661-670, and Task671-680 are closed as documentation-only, planning, static-skeleton, local controlled prototype, or repository control packages. No future batch is started unless Founder explicitly approves.
+
+
+## Task681-690 - Alpha Runtime Architecture Brief
+
+- [Task681-690 README](docs/tasks/task681_690_alpha_runtime_architecture_brief/README.md)
+- [Task683 Component And Trust Boundary Map](docs/tasks/task681_690_alpha_runtime_architecture_brief/TASK683_COMPONENT_AND_TRUST_BOUNDARY_MAP.md)
+- [Task684 Human And Agent Interface Architecture](docs/tasks/task681_690_alpha_runtime_architecture_brief/TASK684_HUMAN_AND_AGENT_INTERFACE_ARCHITECTURE.md)
+- [Task685 Evidence Contract Processing Path](docs/tasks/task681_690_alpha_runtime_architecture_brief/TASK685_EVIDENCE_CONTRACT_PROCESSING_PATH.md)
+- [Task687 Security Privacy And Misuse Threat Model](docs/tasks/task681_690_alpha_runtime_architecture_brief/TASK687_SECURITY_PRIVACY_AND_MISUSE_THREAT_MODEL.md)
+- [Task690 Closure Packet And Hard Stop](docs/tasks/task681_690_alpha_runtime_architecture_brief/TASK690_CLOSURE_PACKET_AND_HARD_STOP.md)
+
+Task681-690 is closed as documentation-only Alpha Runtime architecture work. Root PROJECT_CONTEXT.md and DESIGN.md are canonical orientation indexes, not new competing architecture authorities. No Task691 or technical implementation starts automatically.

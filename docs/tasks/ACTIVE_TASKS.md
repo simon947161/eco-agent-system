@@ -104,3 +104,12 @@ For the canonical record, use the
 ## Boundary
 
 This file is a human-readable summary. It is not a workflow engine.
+
+
+## Task681-690 Alpha Runtime Architecture Brief
+
+Status: Completed / Closed.
+
+Remote-only documentation package created for canonical root context/design orientation, Alpha Runtime purpose, component and trust boundaries, Human and Agent Interface separation, Evidence Contract processing, domain registry and adapter boundaries, threat modelling, evidence-grounded deliberation, and Task691-700 gate questions.
+
+Hard stop: Task691 is not started and requires a separate Founder Gate.

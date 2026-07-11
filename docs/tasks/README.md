@@ -568,3 +568,20 @@ Task661-670 is closed as documentation-only Sustainable Office workflow example 
 - [Task680 Closure Packet And Hard Stop](task671_680_external_model_adapter_readiness_review/TASK680_CLOSURE_PACKET_AND_HARD_STOP.md)
 
 Task671-680 is closed as documentation-only External Model Adapter Readiness Review work. It defines how ClimateOS should think about external scientific models before any future adapter proposal: model categories, provider/output/evidence distinctions, adapter concept versus implementation, assumption and provenance review, conceptual Evidence Contract mapping, private EcoEngine isolation, Founder Gate triggers, and Task681-690 gate questions. It does not create private EcoEngine access, `D:\eco_engine_v200` checking or use, adapter implementation, external model connector, model execution, live data retrieval, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, schema, authentication, encryption, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, framework interpretation, Task681, or automatic next batch.
+
+
+## Task681-690 - Alpha Runtime Architecture Brief
+
+- [README](task681_690_alpha_runtime_architecture_brief/README.md)
+- [Task681 Authorization And Preflight Boundary](task681_690_alpha_runtime_architecture_brief/TASK681_AUTHORIZATION_AND_PREFLIGHT_BOUNDARY.md)
+- [Task682 Runtime Purpose And Non-Purpose](task681_690_alpha_runtime_architecture_brief/TASK682_ALPHA_RUNTIME_PURPOSE_AND_NON_PURPOSE.md)
+- [Task683 Component And Trust Boundary Map](task681_690_alpha_runtime_architecture_brief/TASK683_COMPONENT_AND_TRUST_BOUNDARY_MAP.md)
+- [Task684 Human And Agent Interface Architecture](task681_690_alpha_runtime_architecture_brief/TASK684_HUMAN_AND_AGENT_INTERFACE_ARCHITECTURE.md)
+- [Task685 Evidence Contract Processing Path](task681_690_alpha_runtime_architecture_brief/TASK685_EVIDENCE_CONTRACT_PROCESSING_PATH.md)
+- [Task686 Domain Registry And Adapter Boundary](task681_690_alpha_runtime_architecture_brief/TASK686_DOMAIN_REGISTRY_AND_ADAPTER_BOUNDARY.md)
+- [Task687 Security Privacy And Misuse Threat Model](task681_690_alpha_runtime_architecture_brief/TASK687_SECURITY_PRIVACY_AND_MISUSE_THREAT_MODEL.md)
+- [Task688 Evidence-Grounded Deliberation Architecture](task681_690_alpha_runtime_architecture_brief/TASK688_EVIDENCE_GROUNDED_DELIBERATION_ARCHITECTURE.md)
+- [Task689 Task691-700 Gate Questions](task681_690_alpha_runtime_architecture_brief/TASK689_TASK691_700_LOCAL_SKELETON_GATE_QUESTIONS.md)
+- [Task690 Closure And Hard Stop](task681_690_alpha_runtime_architecture_brief/TASK690_CLOSURE_PACKET_AND_HARD_STOP.md)
+
+Task681-690 is closed as documentation-only architecture work and stops at Task690. Task691 is not started.
