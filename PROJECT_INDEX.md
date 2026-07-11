@@ -472,3 +472,13 @@ Task161-170, Task171-180, Task181-190, Task191-200, Task201-210, Task211-220, Ta
 - [Task690 Closure Packet And Hard Stop](docs/tasks/task681_690_alpha_runtime_architecture_brief/TASK690_CLOSURE_PACKET_AND_HARD_STOP.md)
 
 Task681-690 is closed as documentation-only Alpha Runtime architecture work. Root PROJECT_CONTEXT.md and DESIGN.md are canonical orientation indexes, not new competing architecture authorities. No Task691 or technical implementation starts automatically.
+
+## Task691-700 - Local Alpha Runtime Skeleton
+
+- [Task691-700 README](docs/tasks/task691_700_climateos_local_alpha_runtime_skeleton/README.md)
+- [Task699 Validation](docs/tasks/task691_700_climateos_local_alpha_runtime_skeleton/TASK699_INTEGRATION_FAILURE_AND_BOUNDARY_VALIDATION.md)
+- [Task700 Closure And Hard Stop](docs/tasks/task691_700_climateos_local_alpha_runtime_skeleton/TASK700_CLOSURE_PACKET_ROLLBACK_AND_HARD_STOP.md)
+
+Task691-700 adds a bounded localhost-only, in-memory Alpha Runtime Skeleton to
+the existing controlled prototype. It uses fixture data, preserves human
+authority, changes no SQLite schema, and stops at Task700.

@@ -585,3 +585,20 @@ Task671-680 is closed as documentation-only External Model Adapter Readiness Rev
 - [Task690 Closure And Hard Stop](task681_690_alpha_runtime_architecture_brief/TASK690_CLOSURE_PACKET_AND_HARD_STOP.md)
 
 Task681-690 is closed as documentation-only architecture work and stops at Task690. Task691 is not started.
+
+## Task691-700 - Local Alpha Runtime Skeleton
+
+- [README](task691_700_climateos_local_alpha_runtime_skeleton/README.md)
+- [Task691 Preflight And Recovery](task691_700_climateos_local_alpha_runtime_skeleton/TASK691_PREFLIGHT_AND_RECOVERY.md)
+- [Task692 Evidence Contract Objects](task691_700_climateos_local_alpha_runtime_skeleton/TASK692_EVIDENCE_CONTRACT_OBJECTS.md)
+- [Task693 State Transitions](task691_700_climateos_local_alpha_runtime_skeleton/TASK693_EVIDENCE_AND_REVIEW_STATE_TRANSITIONS.md)
+- [Task694 Fixture Domain Registry](task691_700_climateos_local_alpha_runtime_skeleton/TASK694_FIXTURE_ONLY_DOMAIN_REGISTRY.md)
+- [Task695 Human Controls](task691_700_climateos_local_alpha_runtime_skeleton/TASK695_HUMAN_REVIEW_REFUSAL_CORRECTION_ESCALATION.md)
+- [Task696 Audit And Rollback](task691_700_climateos_local_alpha_runtime_skeleton/TASK696_AUDIT_REPLAY_ROLLBACK_DIAGNOSTICS.md)
+- [Task697 Deliberation Records](task691_700_climateos_local_alpha_runtime_skeleton/TASK697_EVIDENCE_GROUNDED_DELIBERATION_RECORDS.md)
+- [Task698 Local Review Interface](task691_700_climateos_local_alpha_runtime_skeleton/TASK698_MINIMAL_LOCAL_HUMAN_REVIEW_INTERFACE.md)
+- [Task699 Validation](task691_700_climateos_local_alpha_runtime_skeleton/TASK699_INTEGRATION_FAILURE_AND_BOUNDARY_VALIDATION.md)
+- [Task700 Closure And Hard Stop](task691_700_climateos_local_alpha_runtime_skeleton/TASK700_CLOSURE_PACKET_ROLLBACK_AND_HARD_STOP.md)
+
+Task691-700 is a bounded local-only Alpha Runtime Skeleton using in-memory state
+and synthetic fixtures. It stops at Task700; Task701 is not started.

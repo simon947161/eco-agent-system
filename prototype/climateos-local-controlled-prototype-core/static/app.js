@@ -204,8 +204,24 @@
     });
   }
 
+  function bindAlphaReview() {
+    var box = document.getElementById("alpha-json");
+    [
+      ["alpha-capabilities-button", "/api/alpha/capabilities"],
+      ["alpha-domains-button", "/api/alpha/domains"],
+      ["alpha-evidence-button", "/api/alpha/evidence-contracts"],
+      ["alpha-audit-button", "/api/alpha/audit-events"]
+    ].forEach(function (binding) {
+      document.getElementById(binding[0]).addEventListener("click", async function () {
+        var payload = await api(binding[1]);
+        box.value = JSON.stringify(payload, null, 2);
+      });
+    });
+  }
+
   bindNavigation();
   bindForms();
   bindModelBridge();
+  bindAlphaReview();
   loadCandidates().catch(window.alert);
 }());

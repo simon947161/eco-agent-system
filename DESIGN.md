@@ -47,7 +47,10 @@ Conceptual components:
 - provider-neutral adapter boundary;
 - audit, rollback, refusal, and Founder Gate records.
 
-Task681–690 defines these components only as architecture. It implements none of them.
+Task681–690 defines the architecture. Task691–700 implements only a bounded
+local skeleton: in-memory Evidence Contract candidates, fixture-only domains,
+human controls, deliberation records, audit, rollback, diagnostics, and a
+minimal local review screen. It does not implement production capability.
 
 ## Interface Separation
 
@@ -69,8 +72,11 @@ Cryptographic integrity can show whether content changed; it does not prove scie
 
 ## Implemented / Planned / Vision
 
-- Implemented: repository governance, documentation foundations, static skeleton, bounded local controlled prototype and hardening.
-- Planned: Alpha Runtime architecture, governed interfaces, domain registry, adapter contracts, and deliberation workflow.
+- Implemented: repository governance, documentation foundations, static
+  skeleton, bounded local controlled prototype and hardening, and a local
+  in-memory Alpha Runtime Skeleton.
+- Planned: durable governed Alpha state, approved interfaces, domain adapters,
+  stronger security controls, and deliberation workflow maturity.
 - Vision: mature multi-domain ClimateOS supporting institutions, Sustainable Offices, communities, and individuals.
 
 ## Private Asset Boundary

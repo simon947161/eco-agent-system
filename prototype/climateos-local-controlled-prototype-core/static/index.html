@@ -28,6 +28,7 @@
         <button data-target="model">Mock Model Bridge</button>
         <button data-target="archive">Archive Export</button>
         <button data-target="audit">Audit</button>
+        <button data-target="alpha">Alpha Review</button>
       </nav>
 
       <section class="workspace">
@@ -124,6 +125,18 @@
         <section id="audit" class="screen">
           <h2>Audit Trail</h2>
           <div id="audit-list" class="record-grid"></div>
+        </section>
+
+        <section id="alpha" class="screen">
+          <h2>Alpha Runtime Skeleton Review</h2>
+          <p class="screen-note">Synthetic/local review only. State resets when the service restarts. No conclusion, scoring, certification, external model, or private engine access.</p>
+          <div class="button-row">
+            <button id="alpha-capabilities-button">Load Capabilities</button>
+            <button id="alpha-domains-button">Load Fixture Domains</button>
+            <button id="alpha-evidence-button">Load Evidence Contracts</button>
+            <button id="alpha-audit-button">Load Alpha Audit</button>
+          </div>
+          <textarea id="alpha-json" class="json-box" aria-label="Alpha Runtime skeleton JSON" readonly></textarea>
         </section>
       </section>
     </main>

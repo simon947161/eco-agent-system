@@ -113,3 +113,14 @@ Status: Completed / Closed.
 Remote-only documentation package created for canonical root context/design orientation, Alpha Runtime purpose, component and trust boundaries, Human and Agent Interface separation, Evidence Contract processing, domain registry and adapter boundaries, threat modelling, evidence-grounded deliberation, and Task691-700 gate questions.
 
 Hard stop: Task691 is not started and requires a separate Founder Gate.
+
+## Task691-700 Bounded Local Alpha Runtime Skeleton
+
+Status: Completed / Closed after validation.
+
+The existing local controlled prototype gains an additive, localhost-only,
+in-memory Alpha Runtime Skeleton with fixture domains, Evidence Contract
+candidates, human review/refusal/correction/escalation, deliberation records,
+audit, rollback, diagnostics, tests, and a minimal review screen.
+
+Hard stop: Task701 is not started and requires a separate Founder Gate.

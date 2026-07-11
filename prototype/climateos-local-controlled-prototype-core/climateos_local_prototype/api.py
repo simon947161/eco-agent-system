@@ -5,6 +5,14 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
+from .alpha_runtime import (
+    AlphaReviewAction,
+    AlphaRollbackRequest,
+    AlphaRuntimeStore,
+    DeliberationCreate,
+    EvidenceContractCreate,
+    InvalidAlphaTransitionError,
+)
 from .archive import generate_archive_bundle
 from .config import BOUNDARY_LABEL, DEFAULT_DB_PATH, MAX_REQUEST_BYTES, STATIC_DIR, validate_local_host
 from .database import initialize_database
@@ -38,6 +46,7 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
         description="Local-only candidate workflow prototype. Not operational.",
     )
     app.state.db_path = path
+    app.state.alpha_runtime = AlphaRuntimeStore()
     app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
     @app.middleware("http")
@@ -71,6 +80,9 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
     def repo() -> PrototypeRepository:
         return PrototypeRepository(app.state.db_path)
 
+    def alpha() -> AlphaRuntimeStore:
+        return app.state.alpha_runtime
+
     def require_candidate(record_id: str) -> dict:
         try:
             return repo().get_candidate(record_id)
@@ -89,6 +101,66 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
             "localhost_only": True,
             "operational": False,
         }
+
+    @app.get("/api/alpha/capabilities")
+    def alpha_capabilities() -> dict:
+        return alpha().capabilities()
+
+    @app.get("/api/alpha/domains")
+    def alpha_domains() -> list[dict]:
+        return alpha().domains()
+
+    @app.post("/api/alpha/evidence-contracts", status_code=201)
+    def alpha_create_evidence(payload: EvidenceContractCreate) -> dict:
+        return alpha().create_evidence(payload)
+
+    @app.get("/api/alpha/evidence-contracts")
+    def alpha_list_evidence() -> list[dict]:
+        return alpha().list_evidence()
+
+    @app.get("/api/alpha/evidence-contracts/{record_id}")
+    def alpha_get_evidence(record_id: str) -> dict:
+        try:
+            return alpha().get_evidence(record_id)
+        except KeyError as exc:
+            raise HTTPException(status_code=404, detail="Alpha evidence contract not found") from exc
+
+    @app.post("/api/alpha/evidence-contracts/{record_id}/review-actions")
+    def alpha_review_evidence(record_id: str, payload: AlphaReviewAction) -> dict:
+        try:
+            return alpha().review_evidence(record_id, payload)
+        except KeyError as exc:
+            raise HTTPException(status_code=404, detail="Alpha evidence contract not found") from exc
+        except InvalidAlphaTransitionError as exc:
+            raise HTTPException(status_code=409, detail=str(exc)) from exc
+
+    @app.post("/api/alpha/evidence-contracts/{record_id}/rollback")
+    def alpha_rollback_evidence(record_id: str, payload: AlphaRollbackRequest) -> dict:
+        try:
+            return alpha().rollback_evidence(record_id, payload)
+        except KeyError as exc:
+            raise HTTPException(status_code=404, detail="Alpha evidence contract not found") from exc
+        except InvalidAlphaTransitionError as exc:
+            raise HTTPException(status_code=409, detail=str(exc)) from exc
+
+    @app.post("/api/alpha/deliberations", status_code=201)
+    def alpha_create_deliberation(payload: DeliberationCreate) -> dict:
+        try:
+            return alpha().create_deliberation(payload)
+        except KeyError as exc:
+            raise HTTPException(status_code=404, detail=f"Linked alpha evidence contract not found: {exc}") from exc
+
+    @app.get("/api/alpha/deliberations")
+    def alpha_list_deliberations() -> list[dict]:
+        return alpha().list_deliberations()
+
+    @app.get("/api/alpha/audit-events")
+    def alpha_audit_events() -> list[dict]:
+        return alpha().audit_events()
+
+    @app.get("/api/alpha/diagnostics")
+    def alpha_diagnostics() -> dict:
+        return alpha().diagnostics()
 
     @app.get("/api/candidates")
     def list_candidates(

@@ -30,7 +30,9 @@ If records conflict, the latest committed Founder-approved governance record and
 
 Task001–680 has progressed through repository control, CarbonOS and ClimateOS foundations, validation, Evidence Passport governance, use trials, architecture planning, static skeleton, local controlled prototype, hardening, Domain Federation, Life System / BiodiversityOS inquiry, Alpha Runtime decision preparation, Sustainable Office examples, and external model adapter readiness.
 
-Task671–680 is the latest completed batch before this context passport. Task681–690 is authorized only as a documentation-only Alpha Runtime Architecture Brief. Task691 is not started and requires a separate Founder Gate.
+Task681–690 completed the documentation-only Alpha Runtime Architecture Brief.
+Task691–700 implements a bounded local Alpha Runtime Skeleton using synthetic
+fixtures and in-memory state without changing the SQLite schema.
 
 ## Current Architecture Direction
 
@@ -46,7 +48,10 @@ Founder-reserved EcoEngine assets and `D:\eco_engine_v200` are private and outsi
 
 ## Current Hard Stop
 
-Task690 is the end of the current documentation-only architecture batch. No Alpha Runtime implementation, runtime code, API, MCP, CLI, database, authentication, encryption, external model connector, live data, automation, EcoChain, scoring, certification, deployment, or Task691+ starts automatically.
+Task700 is the current hard stop. The repository contains a bounded local Alpha
+Runtime Skeleton, not a production runtime. No external model, live data, MCP,
+authentication, automation, deployment, private EcoEngine, or Task701+ starts
+automatically.
 
 ## Recovery Rule
 
