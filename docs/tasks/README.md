@@ -552,3 +552,19 @@ Task651-660 is closed as documentation-only Alpha Runtime decision-brief work. I
 - [Task670 Closure Packet And Hard Stop](task661_670_sustainable_office_workflow_examples/TASK670_CLOSURE_PACKET_AND_HARD_STOP.md)
 
 Task661-670 is closed as documentation-only Sustainable Office workflow example work. It creates fictional human-action examples only and stops at Task670. No Task671, Sustainable Office software, UI implementation, private EcoEngine access, `D:\eco_engine_v200` checking or use, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, schema, authentication, encryption, external model connector, live data, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, or framework interpretation starts automatically.
+
+## Task671-680 - External Model Adapter Readiness Review
+
+- [Task671-680 External Model Adapter Readiness Review](task671_680_external_model_adapter_readiness_review/README.md)
+- [Task671 Authorization And Adapter Review Boundary](task671_680_external_model_adapter_readiness_review/TASK671_AUTHORIZATION_AND_ADAPTER_REVIEW_BOUNDARY.md)
+- [Task672 External Model Category Map](task671_680_external_model_adapter_readiness_review/TASK672_EXTERNAL_MODEL_CATEGORY_MAP.md)
+- [Task673 Provider Output Evidence Candidate Distinction](task671_680_external_model_adapter_readiness_review/TASK673_PROVIDER_OUTPUT_EVIDENCE_CANDIDATE_DISTINCTION.md)
+- [Task674 Adapter Concept Versus Implementation Boundary](task671_680_external_model_adapter_readiness_review/TASK674_ADAPTER_CONCEPT_VERSUS_IMPLEMENTATION_BOUNDARY.md)
+- [Task675 Model Assumption And Provenance Review Checklist](task671_680_external_model_adapter_readiness_review/TASK675_MODEL_ASSUMPTION_AND_PROVENANCE_REVIEW_CHECKLIST.md)
+- [Task676 Cross-Domain Evidence Contract Mapping For Model Outputs](task671_680_external_model_adapter_readiness_review/TASK676_CROSS_DOMAIN_EVIDENCE_CONTRACT_MAPPING_FOR_MODEL_OUTPUTS.md)
+- [Task677 Private EcoEngine And Founder Reserved Model Boundary](task671_680_external_model_adapter_readiness_review/TASK677_PRIVATE_ECOENGINE_AND_FOUNDER_RESERVED_MODEL_BOUNDARY.md)
+- [Task678 Founder Gate Triggers For Future Model Integration](task671_680_external_model_adapter_readiness_review/TASK678_FOUNDER_GATE_TRIGGERS_FOR_FUTURE_MODEL_INTEGRATION.md)
+- [Task679 Task681-690 Gate Questions](task671_680_external_model_adapter_readiness_review/TASK679_TASK681_690_GATE_QUESTIONS.md)
+- [Task680 Closure Packet And Hard Stop](task671_680_external_model_adapter_readiness_review/TASK680_CLOSURE_PACKET_AND_HARD_STOP.md)
+
+Task671-680 is closed as documentation-only External Model Adapter Readiness Review work. It defines how ClimateOS should think about external scientific models before any future adapter proposal: model categories, provider/output/evidence distinctions, adapter concept versus implementation, assumption and provenance review, conceptual Evidence Contract mapping, private EcoEngine isolation, Founder Gate triggers, and Task681-690 gate questions. It does not create private EcoEngine access, `D:\eco_engine_v200` checking or use, adapter implementation, external model connector, model execution, live data retrieval, Alpha Runtime implementation, runtime code, API, MCP, CLI, database, schema, authentication, encryption, sensors, agents, automation, EcoChain, scoring, certification, deployment, operational Evidence Passport, compliance / assurance / certification guidance, ESG / carbon conclusion, standards interpretation, framework interpretation, Task681, or automatic next batch.
