@@ -621,3 +621,10 @@ human-controlled Alpha review loop. No Task721 starts automatically.
 Task721-740 is closed after resolving the repeatable SQLite lock baseline
 blocker with bounded foreground transaction handling and passing deterministic
 regression validation. Task741 is not started.
+
+## Task741-900 - Founder Gate Planning
+
+- [Task741-900 Founder Gate Brief](task741_900_founder_gate/CLIMATEOS_TASK741_900_FOUNDER_GATE_BRIEF.md)
+
+The brief presents three strategic options and recommends a bounded local human
+use trial. It is planning-only and does not start Task741.
