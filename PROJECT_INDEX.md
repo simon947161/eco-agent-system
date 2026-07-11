@@ -501,6 +501,7 @@ localhost-only, synthetic, human-controlled and non-operational.
 - [Task740 Closure And Hard Stop](docs/tasks/task721_740_bounded_sqlite_foreground_concurrency_hardening/TASK740_CLOSURE_AND_TASK741_HARD_STOP.md)
 - [Task741-900 Founder Gate Brief](docs/tasks/task741_900_founder_gate/CLIMATEOS_TASK741_900_FOUNDER_GATE_BRIEF.md)
 - [Task741-900 Bounded Local Human Use Trial](docs/tasks/task741_900_bounded_local_human_use_trial/README.md)
+- [Task901-1000 Beta Readiness Founder Gate Brief](docs/tasks/task901_1000_beta_readiness/CLIMATEOS_TASK901_1000_FOUNDER_GATE_BRIEF.md)
 
 Task721-740 resolves a repeatable SQLite lock baseline blocker in existing
 foreground write paths. It adds bounded lock retry and atomic candidate/audit

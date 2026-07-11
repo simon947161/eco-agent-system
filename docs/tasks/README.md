@@ -643,3 +643,15 @@ use trial. It is planning-only and does not start Task741.
 
 Task741-900 is closed after a bounded synthetic local human-use trial and Alpha
 acceptance review. Task901 is not started.
+
+## Task901-1000 - Beta Readiness Review
+
+- [Founder Gate Brief](task901_1000_beta_readiness/CLIMATEOS_TASK901_1000_FOUNDER_GATE_BRIEF.md)
+- [Founder Human Test Kit](task901_1000_beta_readiness/TASK901_920_FOUNDER_HUMAN_TEST_KIT.md)
+- [Independent Observer Protocol](task901_1000_beta_readiness/TASK921_940_INDEPENDENT_OBSERVER_PROTOCOL.md)
+- [Accessibility Review](task901_1000_beta_readiness/TASK941_960_ACCESSIBILITY_REVIEW.md)
+- [Automated Review](task901_1000_beta_readiness/TASK961_980_AUTOMATED_VALIDATION_SECURITY_DELIBERATION_ESGPLUS.md)
+- [Pending Beta Decision](task901_1000_beta_readiness/TASK981_1000_BETA_READINESS_PENDING_DECISION.md)
+
+Status: In progress. Automated work may proceed, but Task1000 cannot close
+before the Founder human test is recorded.

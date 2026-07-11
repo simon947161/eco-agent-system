@@ -156,3 +156,11 @@ The Alpha is conditionally accepted only for Founder-controlled synthetic local
 review.
 
 Hard stop: Task901 is not started and requires a separate Founder Gate.
+
+## Task901-1000 Beta Readiness Review
+
+Status: In Progress / Waiting for Founder Human Test.
+
+The Gate Brief, human-test kit, independent observer protocol and automated
+accessibility/security/deliberation review are prepared. Task1000 remains open
+until required human evidence is recorded.
