@@ -190,7 +190,7 @@ def test_migration_preflight_dry_run_and_apply_from_v1(tmp_path):
     migrated = migrate_database(db_path, backup_root=tmp_path / "migration_backups", actor_label="Reviewer A")
     assert migrated["status"] == "migrated"
     with connect(db_path) as connection:
-        assert get_schema_version(connection) == 2
+        assert get_schema_version(connection) == 3
         assert "sequence_number" in {row["name"] for row in connection.execute("PRAGMA table_info(audit_events)")}
         assert "supersedes_gate_id" in {row["name"] for row in connection.execute("PRAGMA table_info(founder_gates)")}
 

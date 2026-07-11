@@ -602,3 +602,11 @@ Task681-690 is closed as documentation-only architecture work and stops at Task6
 
 Task691-700 is a bounded local-only Alpha Runtime Skeleton using in-memory state
 and synthetic fixtures. It stops at Task700; Task701 is not started.
+
+## Task701-720 - Bounded Persistent Alpha Review Loop
+
+- [README](task701_720_climateos_bounded_persistent_alpha_review_loop/README.md)
+- [Task720 Closure](task701_720_climateos_bounded_persistent_alpha_review_loop/TASK720_CLOSURE_ROLLBACK_AND_TASK721_HARD_STOP.md)
+
+Task701-720 is closed after implementing and validating a local, SQLite-backed,
+human-controlled Alpha review loop. No Task721 starts automatically.

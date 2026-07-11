@@ -124,3 +124,13 @@ candidates, human review/refusal/correction/escalation, deliberation records,
 audit, rollback, diagnostics, tests, and a minimal review screen.
 
 Hard stop: Task701 is not started and requires a separate Founder Gate.
+
+## Task701-720 Bounded Persistent Alpha Review Loop
+
+Status: Completed / Closed after validation.
+
+The local controlled prototype now preserves Alpha Evidence Contracts,
+revisions, audit and deliberations in additive SQLite schema v3 and demonstrates
+synthetic cross-domain review under mandatory Human Review.
+
+Hard stop: Task721 is not started and requires a separate Founder Gate.

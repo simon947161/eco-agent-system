@@ -128,11 +128,12 @@
         </section>
 
         <section id="alpha" class="screen">
-          <h2>Alpha Runtime Skeleton Review</h2>
-          <p class="screen-note">Synthetic/local review only. State resets when the service restarts. No conclusion, scoring, certification, external model, or private engine access.</p>
+          <h2>Persistent Alpha Review Loop</h2>
+          <p class="screen-note">Synthetic/local review only. State is preserved in local SQLite for human review and recovery. No conclusion, scoring, certification, external model, or private engine access.</p>
           <div class="button-row">
             <button id="alpha-capabilities-button">Load Capabilities</button>
             <button id="alpha-domains-button">Load Fixture Domains</button>
+            <button id="alpha-scenarios-button">Load Synthetic Scenarios</button>
             <button id="alpha-evidence-button">Load Evidence Contracts</button>
             <button id="alpha-audit-button">Load Alpha Audit</button>
           </div>

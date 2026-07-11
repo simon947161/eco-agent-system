@@ -10,6 +10,11 @@ demonstrate Evidence Contract candidates, fixture-only domains, human review,
 refusal, correction, escalation, evidence-grounded deliberation, audit, and
 revision rollback without changing the SQLite schema.
 
+Task701-720 persists that bounded review loop in additive SQLite schema v3.
+Evidence Contracts, immutable revision snapshots, Alpha audit events and
+abstaining deliberations survive restart. Four synthetic cross-domain scenario
+descriptors support Human Review demonstrations without real-world claims.
+
 Boundary:
 
 - Prototype / Candidate / Non-Operational.
@@ -17,7 +22,7 @@ Boundary:
 - SQLite file is local, mutable, and not committed.
 - No live source retrieval.
 - No live model provider.
-- Alpha Runtime Skeleton state is in-memory and non-persistent.
+- Alpha Review state is persistent in local SQLite and remains non-operational.
 - No GitHub automation.
 - No scheduler, background worker, autonomous agent, deployment, scoring, compliance, assurance, certification, ESG/carbon conclusion, standards interpretation, or framework interpretation.
 
@@ -85,6 +90,7 @@ Allowed hosts are `127.0.0.1` and `localhost`.
 - `POST /api/maintenance/migration/run`
 - `GET /api/alpha/capabilities`
 - `GET /api/alpha/domains`
+- `GET /api/alpha/synthetic-scenarios`
 - `GET|POST /api/alpha/evidence-contracts`
 - `GET /api/alpha/evidence-contracts/{record_id}`
 - `POST /api/alpha/evidence-contracts/{record_id}/review-actions`
@@ -111,7 +117,7 @@ python scripts/generate_synthetic_dataset.py --scale 100
 
 These commands are foreground local review helpers only. They do not upload, synchronize, deploy, automate, score, certify, assure, interpret standards, or operate Evidence Passport.
 
-## Alpha Runtime Skeleton Demonstration
+## Persistent Alpha Review Demonstration
 
 Run the service, open `http://127.0.0.1:8765`, and select **Alpha Review**.
 The screen can inspect capabilities, fixture domains, current in-memory
@@ -121,8 +127,8 @@ controlled inspection.
 
 Important boundaries:
 
-- restart clears all Alpha state;
-- no Alpha data is written to SQLite;
+- restart reloads bounded Alpha review state from local SQLite;
+- rollback preserves prior revisions and audit events;
 - fixtures do not represent real environmental observations;
 - no conclusion, score, certification, compliance decision, or automated action
   is produced;

@@ -8,11 +8,11 @@ from fastapi.staticfiles import StaticFiles
 from .alpha_runtime import (
     AlphaReviewAction,
     AlphaRollbackRequest,
-    AlphaRuntimeStore,
     DeliberationCreate,
     EvidenceContractCreate,
     InvalidAlphaTransitionError,
 )
+from .persistent_alpha import PersistentAlphaRuntimeStore
 from .archive import generate_archive_bundle
 from .config import BOUNDARY_LABEL, DEFAULT_DB_PATH, MAX_REQUEST_BYTES, STATIC_DIR, validate_local_host
 from .database import initialize_database
@@ -46,7 +46,7 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
         description="Local-only candidate workflow prototype. Not operational.",
     )
     app.state.db_path = path
-    app.state.alpha_runtime = AlphaRuntimeStore()
+    app.state.alpha_runtime = PersistentAlphaRuntimeStore(path)
     app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
     @app.middleware("http")
@@ -80,7 +80,7 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
     def repo() -> PrototypeRepository:
         return PrototypeRepository(app.state.db_path)
 
-    def alpha() -> AlphaRuntimeStore:
+    def alpha() -> PersistentAlphaRuntimeStore:
         return app.state.alpha_runtime
 
     def require_candidate(record_id: str) -> dict:
@@ -109,6 +109,10 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
     @app.get("/api/alpha/domains")
     def alpha_domains() -> list[dict]:
         return alpha().domains()
+
+    @app.get("/api/alpha/synthetic-scenarios")
+    def alpha_synthetic_scenarios() -> list[dict]:
+        return alpha().scenarios()
 
     @app.post("/api/alpha/evidence-contracts", status_code=201)
     def alpha_create_evidence(payload: EvidenceContractCreate) -> dict:

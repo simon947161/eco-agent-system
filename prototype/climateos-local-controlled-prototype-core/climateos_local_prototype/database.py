@@ -3,7 +3,7 @@ from pathlib import Path
 
 from .config import SQLITE_BUSY_TIMEOUT_MS
 
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 
 REQUIRED_TABLES = {
     "schema_version",
@@ -14,6 +14,10 @@ REQUIRED_TABLES = {
     "audit_events",
     "model_suggestions",
     "archive_events",
+    "alpha_evidence_contracts",
+    "alpha_evidence_revisions",
+    "alpha_audit_events",
+    "alpha_deliberations",
 }
 
 
@@ -91,6 +95,50 @@ def migrate_connection_to_latest(connection: sqlite3.Connection, dry_run: bool =
                     (sequence, row["rowid"]),
                 )
             set_schema_version(connection, 2)
+    if current < 3:
+        pending.append("2->3 add persistent Alpha Review Loop tables")
+        if not dry_run:
+            connection.executescript(
+                """
+                CREATE TABLE IF NOT EXISTS alpha_evidence_contracts (
+                    id TEXT PRIMARY KEY,
+                    domain TEXT NOT NULL,
+                    state TEXT NOT NULL,
+                    revision INTEGER NOT NULL,
+                    record_json TEXT NOT NULL,
+                    created_at TEXT NOT NULL,
+                    updated_at TEXT NOT NULL
+                );
+                CREATE TABLE IF NOT EXISTS alpha_evidence_revisions (
+                    evidence_id TEXT NOT NULL,
+                    revision INTEGER NOT NULL,
+                    snapshot_json TEXT NOT NULL,
+                    created_at TEXT NOT NULL,
+                    PRIMARY KEY (evidence_id, revision),
+                    FOREIGN KEY (evidence_id) REFERENCES alpha_evidence_contracts(id)
+                );
+                CREATE TABLE IF NOT EXISTS alpha_audit_events (
+                    sequence_number INTEGER PRIMARY KEY AUTOINCREMENT,
+                    id TEXT NOT NULL UNIQUE,
+                    event_type TEXT NOT NULL,
+                    actor_label TEXT NOT NULL,
+                    record_id TEXT NOT NULL,
+                    detail_json TEXT NOT NULL,
+                    created_at TEXT NOT NULL,
+                    boundary_label TEXT NOT NULL
+                );
+                CREATE TABLE IF NOT EXISTS alpha_deliberations (
+                    id TEXT PRIMARY KEY,
+                    record_json TEXT NOT NULL,
+                    created_at TEXT NOT NULL
+                );
+                CREATE INDEX IF NOT EXISTS idx_alpha_evidence_domain_state
+                    ON alpha_evidence_contracts(domain, state);
+                CREATE INDEX IF NOT EXISTS idx_alpha_audit_record
+                    ON alpha_audit_events(record_id, sequence_number);
+                """
+            )
+            set_schema_version(connection, 3)
     return pending
 
 
@@ -199,6 +247,47 @@ def initialize_database(db_path: str | Path) -> None:
                 reason TEXT NOT NULL,
                 created_at TEXT NOT NULL
             );
+
+            CREATE TABLE IF NOT EXISTS alpha_evidence_contracts (
+                id TEXT PRIMARY KEY,
+                domain TEXT NOT NULL,
+                state TEXT NOT NULL,
+                revision INTEGER NOT NULL,
+                record_json TEXT NOT NULL,
+                created_at TEXT NOT NULL,
+                updated_at TEXT NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS alpha_evidence_revisions (
+                evidence_id TEXT NOT NULL,
+                revision INTEGER NOT NULL,
+                snapshot_json TEXT NOT NULL,
+                created_at TEXT NOT NULL,
+                PRIMARY KEY (evidence_id, revision),
+                FOREIGN KEY (evidence_id) REFERENCES alpha_evidence_contracts(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS alpha_audit_events (
+                sequence_number INTEGER PRIMARY KEY AUTOINCREMENT,
+                id TEXT NOT NULL UNIQUE,
+                event_type TEXT NOT NULL,
+                actor_label TEXT NOT NULL,
+                record_id TEXT NOT NULL,
+                detail_json TEXT NOT NULL,
+                created_at TEXT NOT NULL,
+                boundary_label TEXT NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS alpha_deliberations (
+                id TEXT PRIMARY KEY,
+                record_json TEXT NOT NULL,
+                created_at TEXT NOT NULL
+            );
+
+            CREATE INDEX IF NOT EXISTS idx_alpha_evidence_domain_state
+                ON alpha_evidence_contracts(domain, state);
+            CREATE INDEX IF NOT EXISTS idx_alpha_audit_record
+                ON alpha_audit_events(record_id, sequence_number);
             """
         )
         current = get_schema_version(connection)

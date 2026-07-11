@@ -51,6 +51,9 @@ Task681–690 defines the architecture. Task691–700 implements only a bounded
 local skeleton: in-memory Evidence Contract candidates, fixture-only domains,
 human controls, deliberation records, audit, rollback, diagnostics, and a
 minimal local review screen. It does not implement production capability.
+Task701–720 adds bounded SQLite persistence, immutable revision snapshots,
+restart recovery, append-only Alpha audit, synthetic cross-domain scenarios,
+and a minimal persistent review presentation. It remains non-operational.
 
 ## Interface Separation
 
@@ -74,8 +77,8 @@ Cryptographic integrity can show whether content changed; it does not prove scie
 
 - Implemented: repository governance, documentation foundations, static
   skeleton, bounded local controlled prototype and hardening, and a local
-  in-memory Alpha Runtime Skeleton.
-- Planned: durable governed Alpha state, approved interfaces, domain adapters,
+  persistent local Alpha Review Loop.
+- Planned: approved interfaces, domain adapters,
   stronger security controls, and deliberation workflow maturity.
 - Vision: mature multi-domain ClimateOS supporting institutions, Sustainable Offices, communities, and individuals.
 

@@ -209,6 +209,7 @@
     [
       ["alpha-capabilities-button", "/api/alpha/capabilities"],
       ["alpha-domains-button", "/api/alpha/domains"],
+      ["alpha-scenarios-button", "/api/alpha/synthetic-scenarios"],
       ["alpha-evidence-button", "/api/alpha/evidence-contracts"],
       ["alpha-audit-button", "/api/alpha/audit-events"]
     ].forEach(function (binding) {

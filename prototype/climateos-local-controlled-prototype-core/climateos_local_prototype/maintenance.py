@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from .config import LOCAL_BACKUP_DIR
-from .database import SCHEMA_VERSION, connect
+from .database import connect, get_schema_version
 from .diagnostics import safe_integrity_check
 from .repository import PrototypeRepository, new_id, now_iso
 
@@ -75,11 +75,13 @@ def create_backup(
         backup_connection.close()
         source_connection.close()
 
+    with connect(backup_file) as backup_schema_connection:
+        backed_up_schema_version = get_schema_version(backup_schema_connection)
     manifest = {
         "backup_id": backup_dir.name,
         "created_at": now_iso(),
         "boundary_label": "Prototype / Candidate / Non-Operational",
-        "schema_version": SCHEMA_VERSION,
+        "schema_version": backed_up_schema_version,
         "source_database": str(source),
         "backup_file": str(backup_file),
         "file_size": backup_file.stat().st_size,

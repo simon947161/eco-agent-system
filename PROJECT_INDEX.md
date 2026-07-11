@@ -482,3 +482,13 @@ Task681-690 is closed as documentation-only Alpha Runtime architecture work. Roo
 Task691-700 adds a bounded localhost-only, in-memory Alpha Runtime Skeleton to
 the existing controlled prototype. It uses fixture data, preserves human
 authority, changes no SQLite schema, and stops at Task700.
+
+## Task701-720 - Bounded Persistent Alpha Review Loop
+
+- [Task701-720 README](docs/tasks/task701_720_climateos_bounded_persistent_alpha_review_loop/README.md)
+- [Task720 Closure And Hard Stop](docs/tasks/task701_720_climateos_bounded_persistent_alpha_review_loop/TASK720_CLOSURE_ROLLBACK_AND_TASK721_HARD_STOP.md)
+
+Task701-720 adds local SQLite v3 persistence, restart recovery, immutable
+revision snapshots, append-only Alpha audit, abstaining deliberation records,
+synthetic cross-domain scenarios and a minimal review presentation. It remains
+localhost-only, synthetic, human-controlled and non-operational.

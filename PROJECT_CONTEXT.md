@@ -33,6 +33,8 @@ Task001–680 has progressed through repository control, CarbonOS and ClimateOS 
 Task681–690 completed the documentation-only Alpha Runtime Architecture Brief.
 Task691–700 implements a bounded local Alpha Runtime Skeleton using synthetic
 fixtures and in-memory state without changing the SQLite schema.
+Task701–720 implements a bounded persistent Alpha Review Loop using additive
+SQLite schema v3, synthetic cross-domain cases and mandatory Human Review.
 
 ## Current Architecture Direction
 
@@ -48,9 +50,9 @@ Founder-reserved EcoEngine assets and `D:\eco_engine_v200` are private and outsi
 
 ## Current Hard Stop
 
-Task700 is the current hard stop. The repository contains a bounded local Alpha
-Runtime Skeleton, not a production runtime. No external model, live data, MCP,
-authentication, automation, deployment, private EcoEngine, or Task701+ starts
+Task720 is the current hard stop. The repository contains a bounded persistent
+local Alpha Review Loop, not a production runtime. No external model, live data,
+MCP, authentication, automation, deployment, private EcoEngine, or Task721+ starts
 automatically.
 
 ## Recovery Rule

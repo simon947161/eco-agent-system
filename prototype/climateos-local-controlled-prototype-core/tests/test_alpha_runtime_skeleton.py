@@ -24,7 +24,8 @@ def test_capabilities_and_fixture_domains(tmp_path):
     client = TestClient(create_app(tmp_path / "alpha.sqlite3"))
 
     capabilities = client.get("/api/alpha/capabilities").json()
-    assert capabilities["persistent"] is False
+    assert capabilities["persistent"] is True
+    assert capabilities["restart_clears_state"] is False
     assert capabilities["localhost_only"] is True
     assert capabilities["human_review_required"] is True
 
