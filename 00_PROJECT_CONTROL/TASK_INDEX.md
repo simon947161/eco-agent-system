@@ -184,3 +184,15 @@ Status changes should be supported by repository evidence.
 | Task1220-1239 | Limited Statistical Skill Evaluation Foundation | ClimateOS Model Assurance Foundation | Completed on isolated branch / Founder review pending | Establish reproducible metric calculation evidence using only bounded synthetic inputs. | Statistical Evaluation Contract v0.1, latitude-weighted MSE/RMSE/MAE/bias/ACC, synthetic baselines, blockers, reproducibility hash, tests and Task1239 closure | TASK1240 HARD STOP; no external model/data, real-model score, rank, comparison, admission or PR merge. |
 | Task1240-1269 | Limited Physical Consistency Assurance Foundation | ClimateOS Model Assurance Foundation | Completed on isolated branch / Founder review pending | Define evidence and metadata gates for nine physical-consistency diagnostics without executing them. | Metric catalog, variable/level gate, reference/grid/unit/surface-pressure declarations, tolerance governance, synthetic fixtures, Physical Consistency Evidence Passport, tests and Task1269 closure | TASK1270 HARD STOP; no external model/data, metric execution, invented threshold, score, rank, pass/fail, admission or PR merge. |
 | Task1270-1289 | Controlled Extreme Event and Regional Fitness Evidence Foundation | ClimateOS Regional Model Assurance Foundation | Completed on isolated branch / Founder review pending | Establish controlled real-source discovery and evidence gates for Karamay and NSW South East and Tablelands without creating a model fitness decision. | Region and event contracts, official-source registry, licence/cost gate, threshold governance, sample/non-stationarity/OOD gates, Regional Fitness Evidence Passport, tiny synthetic fixtures, tests, Task1289 closure | TASK1290 HARD STOP; real evidence allowed only after product-level checks; no unapproved paid access, external model execution, score, rank, admission, public-safety/compliance/legal conclusion or PR merge. |
+
+
+## Task1290-1299 Human-Governed Model Admission Gate v0.1
+
+Status: Review.
+
+Model Evidence Passport aggregation, deterministic completeness and blocker
+logic, explicit human decision records, synthetic refusal cases and Task1300
+preflight hard stop are implemented on a dedicated review branch. No real model
+was evaluated or admitted. External models, commercial software and paid APIs
+remain legitimate future capabilities through a scoped integration gate, Paid
+Decision Brief and explicit Founder approval.
