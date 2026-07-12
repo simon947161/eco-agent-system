@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Task1200 hard stop | Task1001-1199 bridge is completed on Draft PR #43 pending Founder review; Task1200 is not started. |
+| None | Task1220 hard stop | Task1200-1219 Model Registry Foundation completed on isolated execution branch pending Founder review; no evaluation, scoring, admission, external model/data, PR merge or Task1220+. |
 
 ## Recently Completed Local Work
 
