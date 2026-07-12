@@ -210,3 +210,10 @@ Provider-neutral registry, eight source states, controlled candidate metadata, s
 Status: Review.
 
 Provider-neutral time, grid, vertical, field, quality and provenance contract with synthetic deterministic and ensemble fixtures. No live ingestion or Task1380 work.
+
+
+## Task1380-1419 Hybrid Forecast Orchestrator Foundation
+
+Status: Review.
+
+Fixture-only parallel routing with availability, reference, fallback, audit and human-review declarations. No averaging, best-source selection, live source or Task1420 work.
