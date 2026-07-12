@@ -229,6 +229,6 @@ No live source, automatic failover, public warning or paid commitment. Hard stop
 
 ## Task1490-1499 Coupling Input Eligibility Gate
 
-Status: Implemented / Test Execution Pending / Founder Review Pending.
+Status: Validated / Founder Review Pending.
 
 No real source is declared ready. Hard stop: Task1500 Environmental Coupling Layer is not started and requires a fresh preflight and separate Founder authorization.
