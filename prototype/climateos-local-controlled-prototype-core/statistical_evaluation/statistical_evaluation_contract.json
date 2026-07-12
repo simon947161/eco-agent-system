@@ -1,0 +1,41 @@
+{
+  "contract_version": "0.1",
+  "task_range": "Task1220-1239",
+  "purpose": "Produce reproducible statistical calculation evidence for bounded synthetic inputs without scoring, ranking or admitting a model.",
+  "required": [
+    "evaluation_id",
+    "registry_id",
+    "evaluation_question",
+    "variable",
+    "units",
+    "region",
+    "forecast_lead",
+    "forecast_values",
+    "observation_values",
+    "latitudes",
+    "climatology_values",
+    "baseline_type",
+    "training_period",
+    "evaluation_period",
+    "leakage_declaration",
+    "formula_version",
+    "responsible_human",
+    "claim_boundary"
+  ],
+  "implemented_metrics": ["latitude_weighted_mse", "latitude_weighted_rmse", "latitude_weighted_mae", "latitude_weighted_bias", "latitude_weighted_acc"],
+  "baseline_types": ["synthetic_persistence", "synthetic_climatology", "synthetic_candidate"],
+  "blocking_conditions": [
+    "non_synthetic_input",
+    "missing_or_mismatched_units",
+    "dimension_mismatch",
+    "empty_input",
+    "non_finite_value",
+    "latitude_out_of_range",
+    "training_evaluation_period_overlap",
+    "missing_climatology_for_acc",
+    "zero_acc_anomaly_variance",
+    "missing_human_responsibility"
+  ],
+  "forbidden_outputs": ["overall_model_score", "model_rank", "better_model_claim", "scientific_validation", "operational_approval", "model_admission"],
+  "rule": "Metric values are calculation evidence for one declared synthetic slice. They are not a model score, ranking, fitness conclusion or admission decision."
+}

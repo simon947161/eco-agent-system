@@ -1,0 +1,42 @@
+{
+  "fixture_version": "0.1",
+  "fixture_only": true,
+  "shared": {
+    "evaluation_question": "Can the bounded calculation reproduce declared metrics for a synthetic temperature slice?",
+    "registry_id": "MODEL-REG-SYNTHETIC-001",
+    "variable": "synthetic_temperature",
+    "units": "synthetic_unit",
+    "region": "synthetic_south_east_box",
+    "forecast_lead": "synthetic_24h",
+    "observation_values": [10.0, 12.0, 14.0, 16.0],
+    "latitudes": [-35.0, -36.0, -37.0, -38.0],
+    "climatology_values": [9.0, 11.0, 13.0, 15.0],
+    "training_period": {"start": "2000-01-01", "end": "2000-01-31"},
+    "evaluation_period": {"start": "2000-02-01", "end": "2000-02-02"},
+    "leakage_declaration": "Synthetic periods are non-overlapping and contain no real data.",
+    "formula_version": "climateos-statistical-metrics-0.1",
+    "responsible_human": "Founder-controlled synthetic review",
+    "claim_boundary": "Calculation evidence only; no real model, forecast, score, rank or admission."
+  },
+  "cases": [
+    {
+      "evaluation_id": "STAT-EVAL-SYNTHETIC-CANDIDATE-001",
+      "baseline_type": "synthetic_candidate",
+      "forecast_values": [11.0, 11.0, 15.0, 15.0],
+      "expected_result": "synthetic_calculation_evidence"
+    },
+    {
+      "evaluation_id": "STAT-EVAL-SYNTHETIC-PERSISTENCE-001",
+      "baseline_type": "synthetic_persistence",
+      "forecast_values": [9.5, 11.5, 13.5, 15.5],
+      "expected_result": "synthetic_calculation_evidence"
+    },
+    {
+      "evaluation_id": "STAT-EVAL-SYNTHETIC-CLIMATOLOGY-001",
+      "baseline_type": "synthetic_climatology",
+      "forecast_values": [9.0, 11.0, 13.0, 15.0],
+      "expected_result": "blocked_acc_zero_anomaly_variance"
+    }
+  ],
+  "boundary": "All values, dates, regions and model identities are synthetic. Cases must remain separate and must not be ranked."
+}

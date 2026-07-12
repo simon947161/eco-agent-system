@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Task1220 hard stop | Task1200-1219 Model Registry Foundation completed on isolated execution branch pending Founder review; no evaluation, scoring, admission, external model/data, PR merge or Task1220+. |
+| None | Task1240 hard stop | Task1220-1239 synthetic statistical evaluation foundation completed on isolated branch pending Founder review; no physical evaluation, external model/data, real-model score/rank/admission, PR merge or Task1240+. |
 
 ## Recently Completed Local Work
 
