@@ -194,6 +194,6 @@ explicit authorization.
 
 ## Task1300-1339 Forecast Source Registry And Source-State Governance
 
-Status: Implemented / Test Execution Pending / Founder Review Pending.
+Status: Validated / Founder Review Pending.
 
 No external model, live API, paid commitment or public forecast. Hard stop: Task1340 is not started and requires a separate Founder Gate.
