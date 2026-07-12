@@ -25,7 +25,9 @@ Authoritative HEAD after controlled PR #43-#47 merge sequence:
 Closure and Brief documentation branch:
 `codex/task1200-1289-season-closure-task1290-brief`
 
-Draft PR: pending creation
+Draft PR: `#48` — `DRAFT_FOR_FOUNDER_REVIEW` / `NOT_EXECUTABLE`
+
+Documentation branch initial commit: `aedf274c3b7c250a01664feeea0492fb607e8487`
 
 ## Completed And Merged
 
