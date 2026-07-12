@@ -1,0 +1,20 @@
+{
+  "contract_version": "0.1",
+  "task_range": "Task1240-1269",
+  "purpose": "Register nine model-neutral physical-consistency diagnostics without executing them or interpreting them as pass/fail criteria.",
+  "metrics": [
+    {"metric_id": "dry_air_mass_drift", "category": "conservation", "variables": ["surface_pressure", "specific_humidity"], "vertical_requirement": "multi_pressure_level_column", "reference_required": false, "interpretation": "relative drift should be examined near zero but no admission tolerance is established"},
+    {"metric_id": "anomaly_water_drift", "category": "conservation", "variables": ["specific_humidity"], "vertical_requirement": "multi_pressure_level_column", "reference_required": true, "interpretation": "model trend relative to declared reference trend"},
+    {"metric_id": "anomaly_energy_drift", "category": "conservation", "variables": ["temperature", "specific_humidity", "geopotential", "u_wind", "v_wind"], "vertical_requirement": "multi_pressure_level_column", "reference_required": true, "interpretation": "model total-energy trend relative to declared reference trend"},
+    {"metric_id": "effective_resolution", "category": "spectral", "variables": ["u_wind", "v_wind"], "vertical_requirement": "500_hpa", "reference_required": true, "interpretation": "wavelength where declared reference kinetic-energy retention falls below an algorithm parameter"},
+    {"metric_id": "spectral_residual", "category": "spectral", "variables": ["u_wind", "v_wind"], "vertical_requirement": "500_hpa", "reference_required": true, "interpretation": "log-spectrum residual against a declared reference"},
+    {"metric_id": "spectral_divergence", "category": "spectral", "variables": ["u_wind", "v_wind"], "vertical_requirement": "500_hpa", "reference_required": true, "interpretation": "distributional divergence against a declared reference"},
+    {"metric_id": "geostrophic_rmse", "category": "dynamical_balance", "variables": ["u_wind", "v_wind", "geopotential"], "vertical_requirement": "declared_pressure_levels", "reference_required": true, "interpretation": "excess imbalance relative to natural reference residual; absolute zero is not the target"},
+    {"metric_id": "hydrostatic_rmse", "category": "dynamical_balance", "variables": ["temperature", "specific_humidity", "geopotential"], "vertical_requirement": "adjacent_pressure_level_pairs", "reference_required": true, "interpretation": "excess imbalance relative to declared reference; absolute zero is not the target"},
+    {"metric_id": "mean_lapse_rate_wasserstein", "category": "thermodynamic_stability", "variables": ["temperature", "geopotential"], "vertical_requirement": "500_and_850_hpa", "reference_required": true, "interpretation": "regional lapse-rate distribution distance against a declared reference"}
+  ],
+  "default_lead_time_labels": ["12h", "120h", "240h"],
+  "implemented_calculations": [],
+  "forbidden_outputs": ["physical_consistency_score", "model_rank", "pass_fail", "operational_readiness", "model_admission"],
+  "rule": "The catalog preserves scientific intent and requirements only. No metric is executed and no physical-consistency conclusion is produced in Task1240-1269."
+}

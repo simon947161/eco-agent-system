@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Task1240 hard stop | Task1220-1239 synthetic statistical evaluation foundation completed on isolated branch pending Founder review; no physical evaluation, external model/data, real-model score/rank/admission, PR merge or Task1240+. |
+| None | Task1270 hard stop | Task1240-1269 Physical Consistency Assurance Foundation completed on isolated branch pending Founder review; no regional/extreme evaluation, external model/data, score/rank/admission, PR merge or Task1270+. |
 
 ## Recently Completed Local Work
 
