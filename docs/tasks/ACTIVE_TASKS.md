@@ -201,6 +201,6 @@ No external model, live API, paid commitment or public forecast. Hard stop: Task
 
 ## Task1340-1379 Common Weather Data Contract
 
-Status: Implemented / Test Execution Pending / Founder Review Pending.
+Status: Validated / Founder Review Pending.
 
 No real API, live data, external model, paid service or public forecast. Hard stop: Task1380 is not started and requires a separate Founder Gate.
