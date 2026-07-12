@@ -177,3 +177,15 @@ creation, dispute, audit and restart recovery passed with guidance. Independent
 observer and Narrator tests remain carried blockers, not passed evidence.
 
 Hard stop: Task1001 is not started and requires a separate Founder Gate.
+
+
+## Task1290-1299 Human-Governed Model Admission Gate v0.1
+
+Status: Implemented / Founder Review Pending.
+
+The bounded human-governed admission foundation is implemented with synthetic
+fixtures and automatic-real-model-decision refusal logic. No real model, paid
+commitment, production connection or public forecast was created.
+
+Hard stop: Task1300 is not started and requires a separate Founder preflight and
+explicit authorization.
