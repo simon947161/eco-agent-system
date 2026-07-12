@@ -1,0 +1,7 @@
+{
+  "contract_version": "1.0",
+  "required": ["node_id", "node_type", "display_name", "jurisdiction", "declared_responsible_party", "responsibility_status"],
+  "node_types": ["local", "project", "ngo", "regional"],
+  "responsibility_statuses": ["declared_unverified", "human_reviewed"],
+  "forbidden_inferences": ["authenticated_identity", "legal_authority", "ownership", "approval"]
+}
