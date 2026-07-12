@@ -1,0 +1,46 @@
+{
+  "contract_id": "climateos.coupling_input_eligibility.v0.1",
+  "states": [
+    "COUPLING_INPUT_CANDIDATE",
+    "CANDIDATE_WITH_LIMITATIONS",
+    "REQUIRES_FURTHER_EVIDENCE",
+    "BLOCKED"
+  ],
+  "required_scope": [
+    "source_id",
+    "source_version",
+    "variables",
+    "region",
+    "forecast_horizons",
+    "licence_status",
+    "evidence_snapshot_id",
+    "review_date",
+    "expiry_date",
+    "responsible_human"
+  ],
+  "required_evidence": [
+    "model_admission",
+    "source_registry",
+    "common_weather_data",
+    "orchestration",
+    "comparison_divergence",
+    "failure_fallback",
+    "regional_fitness",
+    "licence_commercial_rights"
+  ],
+  "rules": [
+    "eligibility_is_not_connection",
+    "eligibility_is_not_scientific_validation",
+    "missing_evidence_is_not_favourable",
+    "limitations_propagate",
+    "human_decision_required",
+    "task1500_separate_authorization"
+  ],
+  "prohibited_actions": [
+    "source_connection",
+    "live_data",
+    "model_execution",
+    "coupling_calculation",
+    "automatic_task1500_start"
+  ]
+}
