@@ -217,3 +217,10 @@ Provider-neutral time, grid, vertical, field, quality and provenance contract wi
 Status: Review.
 
 Fixture-only parallel routing with availability, reference, fallback, audit and human-review declarations. No averaging, best-source selection, live source or Task1420 work.
+
+
+## Task1420-1459 Model Comparison And Divergence Layer
+
+Status: Review.
+
+Fixture-only agreement, divergence, degraded and OOD states with uncertainty, audit and human review. No ranking, averaging, live source or Task1460 work.
