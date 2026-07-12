@@ -2,7 +2,7 @@
 
 Date: 2026-07-12
 
-Status: TASK1290_1299_IMPLEMENTED_FOR_FOUNDER_REVIEW
+Status: TASK1290_1299_VALIDATED / FOUNDER_REVIEW_PENDING
 
 ## Closure
 
@@ -36,3 +36,24 @@ boundaries, human responsibility, provider exit and commercial terms.
 Task1300 is not authorised or started. This record authorises no external model,
 forecast source, production runtime, purchase, subscription, public forecast,
 public-safety action or later task.
+
+## Final Validation Evidence
+
+Founder-controlled Windows validation completed on 2026-07-12 from branch
+`agent/task1290-1299-human-governed-model-admission` at implementation HEAD
+`59a14e21d7d7a250889d51962d550b1cc3b7b3a9`.
+
+- targeted Task1290-1299 tests: 6 passed;
+- complete pytest suite: 100 passed in 170.58 seconds;
+- Python compilation: passed;
+- model-admission JSON parsing: passed;
+- `git diff --check`: passed;
+- final working tree: clean.
+
+Two non-failing warnings were observed: the existing Starlette TestClient
+`httpx` deprecation warning and a pytest cache write warning. The first is an
+existing dependency-maintenance notice. The second did not affect test
+execution or results; pytest used the separately controlled D-drive base temp.
+
+This validation closes Task1290-1299 implementation evidence for Founder
+review. It does not merge this branch or authorise Task1300.
