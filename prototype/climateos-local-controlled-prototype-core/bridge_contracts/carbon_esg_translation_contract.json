@@ -1,0 +1,7 @@
+{
+  "contract_version": "1.0",
+  "required": ["translation_id", "method_name", "method_version", "activity_data_refs", "factor_refs", "calculation_status", "uncertainty", "reviewer_label", "claim_boundary"],
+  "calculation_states": ["not_calculated", "method_pending", "candidate_result", "human_reviewed_candidate", "disputed", "superseded"],
+  "esg_plus_requires": ["environmental_reality_refs", "ecosystem_context", "uncertainty", "counter_evidence", "human_responsibility"],
+  "forbidden_claims": ["compliance", "assurance", "certification", "public_disclosure_ready", "financial_advice"]
+}
