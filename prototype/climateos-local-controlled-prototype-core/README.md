@@ -15,6 +15,14 @@ Evidence Contracts, immutable revision snapshots, Alpha audit events and
 abstaining deliberations survive restart. Four synthetic cross-domain scenario
 descriptors support Human Review demonstrations without real-world claims.
 
+Task1001-1024 begins limited local Beta preparation. It adds a Start Here path,
+readable evidence and audit presentation, local date/time display, explicit
+declared-human responsibility guidance, a bounded PowerShell launcher, and
+keyboard/200% zoom regression protection. It does not change the API or schema.
+
+For the bounded Founder retest, see
+[`FOUNDER_LIMITED_BETA_RETEST.md`](FOUNDER_LIMITED_BETA_RETEST.md).
+
 Boundary:
 
 - Prototype / Candidate / Non-Operational.

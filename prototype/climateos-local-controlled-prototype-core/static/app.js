@@ -3,6 +3,16 @@
     return value === undefined || value === null ? "" : String(value);
   }
 
+  function shown(value) {
+    return value === undefined || value === null || value === "" ? "Not provided" : text(value);
+  }
+
+  function localDateTime(value) {
+    if (!value) { return "Not provided"; }
+    var parsed = new Date(value);
+    return isNaN(parsed.getTime()) ? text(value) : parsed.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
+  }
+
   function splitList(value) {
     return text(value).split(",").map(function (item) {
       return item.trim();
@@ -34,7 +44,7 @@
   function field(label, value) {
     var row = el("div");
     row.appendChild(el("dt", "", label));
-    row.appendChild(el("dd", "", value));
+    row.appendChild(el("dd", "", shown(value)));
     return row;
   }
 
@@ -55,33 +65,72 @@
       ["Readiness", record.readiness_label],
       ["Risk", (record.risk_flags || []).join(", ")],
       ["Boundary", record.boundary_label],
-      ["Actor", record.actor_label],
-      ["Created", record.created_at]
+      ["Declared actor", record.actor_label || record.reviewer_label],
+      ["Created (local time)", localDateTime(record.created_at || record.timestamp)]
     ].forEach(function (item) {
       if (item[1]) {
         list.appendChild(field(item[0], item[1]));
       }
     });
     article.appendChild(list);
+    var responsibility = el("p", "responsibility-note", "Candidate only. A declared human remains responsible for review and use.");
+    article.appendChild(responsibility);
     return article;
+  }
+
+  function readable(containerId, payload) {
+    var container = document.getElementById(containerId);
+    container.replaceChildren();
+    var heading = el("h3", "", "Readable summary");
+    container.appendChild(heading);
+    var preview = el("pre", "readable-preview", JSON.stringify(payload, null, 2));
+    container.appendChild(preview);
+  }
+
+  var loaded = { candidates: [], audit: [], alpha: [] };
+
+  function titleFor(record) {
+    return text(record.title || record.event_type || record.id).toLocaleLowerCase();
+  }
+
+  function timeFor(record) {
+    var parsed = new Date(record.updated_at || record.created_at || record.timestamp || 0);
+    return isNaN(parsed.getTime()) ? 0 : parsed.getTime();
+  }
+
+  function sorted(records, controls) {
+    var key = controls.querySelector('[name="sort_key"]').value;
+    var direction = controls.querySelector('[name="sort_direction"]').value === "asc" ? 1 : -1;
+    return records.slice().sort(function (left, right) {
+      var comparison = key === "title"
+        ? titleFor(left).localeCompare(titleFor(right))
+        : timeFor(left) - timeFor(right);
+      if (comparison === 0) { comparison = text(left.id).localeCompare(text(right.id)); }
+      return comparison * direction;
+    });
+  }
+
+  function renderCards(kind, listId) {
+    var list = document.getElementById(listId);
+    var controls = document.querySelector('[data-sort-list="' + kind + '"]');
+    list.replaceChildren();
+    sorted(loaded[kind], controls).forEach(function (record) { list.appendChild(card(record)); });
   }
 
   async function loadCandidates() {
     var list = document.getElementById("candidate-list");
     list.replaceChildren();
     var records = await api("/api/candidates");
-    records.forEach(function (record) {
-      list.appendChild(card(record));
-    });
+    loaded.candidates = records;
+    renderCards("candidates", "candidate-list");
   }
 
   async function loadAudit() {
     var list = document.getElementById("audit-list");
     list.replaceChildren();
     var records = await api("/api/audit-events");
-    records.forEach(function (record) {
-      list.appendChild(card(record));
-    });
+    loaded.audit = records;
+    renderCards("audit", "audit-list");
   }
 
   function bindNavigation() {
@@ -99,6 +148,12 @@
         if (target === "audit") {
           loadAudit().catch(window.alert);
         }
+      });
+    });
+    document.querySelectorAll("[data-go-to]").forEach(function (control) {
+      control.addEventListener("click", function () {
+        var target = document.querySelector('.side-nav button[data-target="' + control.getAttribute("data-go-to") + '"]');
+        if (target) { target.click(); target.focus(); }
       });
     });
   }
@@ -185,6 +240,7 @@
         body: "[]"
       });
       box.value = JSON.stringify(bundle, null, 2);
+      readable("model-readable", bundle);
     });
     document.getElementById("mock-response-button").addEventListener("click", async function () {
       var response = await api("/api/model/mock-response", {
@@ -193,6 +249,7 @@
         body: "[]"
       });
       box.value = JSON.stringify(response, null, 2);
+      readable("model-readable", response);
     });
     document.getElementById("import-response-button").addEventListener("click", async function () {
       var imported = await api("/api/model/import-response", {
@@ -215,8 +272,27 @@
     ].forEach(function (binding) {
       document.getElementById(binding[0]).addEventListener("click", async function () {
         var payload = await api(binding[1]);
+        if (binding[0] === "alpha-evidence-button" || binding[0] === "alpha-audit-button") {
+          loaded.alpha = payload;
+          payload = sorted(payload, document.querySelector('[data-sort-list="alpha"]'));
+        }
         box.value = JSON.stringify(payload, null, 2);
+        readable("alpha-readable", payload);
       });
+    });
+
+    document.getElementById("alpha-load-record-button").addEventListener("click", async function () {
+      var form = document.getElementById("alpha-review-form");
+      var recordId = form.elements.record_id.value;
+      if (!recordId) { throw new Error("Enter an Evidence ID before loading a record."); }
+      var record = await api("/api/alpha/evidence-contracts/" + encodeURIComponent(recordId));
+      form.elements.action.value = "correct";
+      form.elements.corrected_title.value = record.title;
+      form.elements.correction_summary.value = record.summary;
+      form.elements.corrected_uncertainty.value = record.uncertainty;
+      document.getElementById("alpha-review-result").textContent = "Loaded revision " + record.revision + ". Edit the correction fields, then record the human action to create a new revision.";
+      box.value = JSON.stringify(record, null, 2);
+      readable("alpha-readable", record);
     });
 
     document.getElementById("alpha-create-form").addEventListener("submit", async function (event) {
@@ -242,6 +318,7 @@
       document.getElementById("alpha-create-result").textContent = "Created " + created.id + ". Candidate only; no truth or approval claim.";
       document.querySelector("#alpha-review-form [name=record_id]").value = created.id;
       box.value = JSON.stringify(created, null, 2);
+      readable("alpha-readable", created);
     });
 
     document.getElementById("alpha-review-form").addEventListener("submit", async function (event) {
@@ -255,6 +332,8 @@
       };
       if (payload.action === "correct") {
         payload.correction_summary = form.get("correction_summary");
+        payload.corrected_title = form.get("corrected_title");
+        payload.corrected_uncertainty = form.get("corrected_uncertainty");
       }
       var reviewed = await api("/api/alpha/evidence-contracts/" + encodeURIComponent(recordId) + "/review-actions", {
         method: "POST",
@@ -263,6 +342,7 @@
       });
       document.getElementById("alpha-review-result").textContent = "Recorded " + payload.action + " by a declared local label. Human responsibility remains; no conclusion was issued.";
       box.value = JSON.stringify(reviewed, null, 2);
+      readable("alpha-readable", reviewed);
     });
   }
 
@@ -270,5 +350,17 @@
   bindForms();
   bindModelBridge();
   bindAlphaReview();
+  document.querySelectorAll("[data-sort-list]").forEach(function (controls) {
+    controls.addEventListener("change", function () {
+      var kind = controls.getAttribute("data-sort-list");
+      if (kind === "candidates") { renderCards(kind, "candidate-list"); }
+      if (kind === "audit") { renderCards(kind, "audit-list"); }
+      if (kind === "alpha" && loaded.alpha.length) {
+        var payload = sorted(loaded.alpha, controls);
+        document.getElementById("alpha-json").value = JSON.stringify(payload, null, 2);
+        readable("alpha-readable", payload);
+      }
+    });
+  });
   loadCandidates().catch(window.alert);
 }());

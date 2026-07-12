@@ -1,0 +1,7 @@
+{
+  "contract_version": "1.0",
+  "required": ["observation_id", "tier", "observed_at", "observer_label", "method", "duration", "source_refs", "uncertainty"],
+  "tiers": ["casual", "structured", "professional", "validated"],
+  "promotion_requires": ["named_human_reviewer", "method_review", "source_review", "uncertainty_review", "audit_event"],
+  "rule": "No tier is promoted automatically and validated does not mean universal scientific truth."
+}

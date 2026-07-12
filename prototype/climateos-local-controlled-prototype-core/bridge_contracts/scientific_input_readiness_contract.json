@@ -1,0 +1,7 @@
+{
+  "contract_version": "1.0",
+  "required": ["input_id", "domain", "variable", "units", "spatial_support", "temporal_support", "source_lineage", "licence_status", "quality_state", "uncertainty", "human_review_status"],
+  "quality_states": ["unknown", "screened", "review_required", "disputed", "fit_for_bounded_evaluation"],
+  "task1200_gate_requires": ["model_registry", "version_and_licence_review", "provenance", "statistical_evaluation", "physical_consistency_evaluation", "regional_suitability", "human_admission_decision"],
+  "rule": "Bridge readiness is not model admission and cannot start Task1200."
+}

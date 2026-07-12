@@ -44,6 +44,10 @@ Task901–1000 closes the Beta-readiness review after a real Founder human test,
 keyboard and 200% zoom checks. The result is conditional readiness for limited
 local Beta preparation, with independent observer, Narrator, onboarding and
 readable-interface gaps carried forward.
+Task1001–1199 completes the bounded local-Beta-to-scientific-roadmap bridge on
+Draft PR #43. Task1001–1024 improves local usability; Task1025–1199 adds
+versioned bridge contracts and synthetic regression evidence. Task1200 remains
+unstarted pending Founder review, merge decision and a fresh scientific gate.
 
 ## Current Architecture Direction
 
@@ -59,10 +63,10 @@ Founder-reserved EcoEngine assets and `D:\eco_engine_v200` are private and outsi
 
 ## Current Hard Stop
 
-Task1000 is the current hard stop. The repository contains a human-tested
-synthetic local Alpha Review Workbench, not a production runtime. No external
-model, live data, MCP, authentication, automation, deployment, private
-EcoEngine, or Task1001+ starts automatically.
+Task1200 is the current hard stop on Draft PR #43. The repository contains a
+human-tested synthetic local review workbench and bounded bridge contracts,
+not a production runtime. No external model, live data, MCP, authentication,
+automation, deployment, private EcoEngine, or Task1200+ starts automatically.
 
 ## Recovery Rule
 

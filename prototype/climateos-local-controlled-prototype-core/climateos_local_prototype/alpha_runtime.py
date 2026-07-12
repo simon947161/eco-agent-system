@@ -55,6 +55,8 @@ class AlphaReviewAction(BaseModel):
     reviewer_label: str = Field(min_length=2, max_length=120)
     reason: str = Field(min_length=10, max_length=1200)
     correction_summary: str = Field(default="", max_length=3000)
+    corrected_title: str = Field(default="", max_length=240)
+    corrected_uncertainty: str = Field(default="", max_length=1200)
     supersedes_id: str = Field(default="", max_length=120)
 
 
@@ -191,14 +193,16 @@ class AlphaRuntimeStore:
                     {"state": record["state"], "attempted_action": payload.action, "reason": "missing supersedes_id"},
                 )
                 raise InvalidAlphaTransitionError("Supersede action requires supersedes_id.")
-            if payload.action == "correct" and not payload.correction_summary:
+            if payload.action == "correct" and not any(
+                [payload.correction_summary, payload.corrected_title, payload.corrected_uncertainty]
+            ):
                 self._audit_event(
                     "alpha_transition_refused",
                     payload.reviewer_label,
                     record_id,
                     {"state": record["state"], "attempted_action": payload.action, "reason": "missing correction summary"},
                 )
-                raise InvalidAlphaTransitionError("Correction action requires correction_summary.")
+                raise InvalidAlphaTransitionError("Correction action requires at least one corrected field.")
 
             snapshot = copy.deepcopy(record)
             snapshot.pop("revision_history", None)
@@ -210,6 +214,10 @@ class AlphaRuntimeStore:
             record["escalation_required"] = payload.action == "escalate"
             if payload.correction_summary:
                 record["summary"] = payload.correction_summary
+            if payload.corrected_title:
+                record["title"] = payload.corrected_title
+            if payload.corrected_uncertainty:
+                record["uncertainty"] = payload.corrected_uncertainty
             record["review_history"].append(
                 {
                     "action": payload.action,

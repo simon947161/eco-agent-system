@@ -1,0 +1,7 @@
+{
+  "contract_version": "1.0",
+  "required": ["source_id", "title", "publisher", "canonical_url", "retrieved_at", "version_or_date", "licence_status", "provenance", "submitter_label", "admission_state"],
+  "admission_states": ["observed", "evidence_pending", "under_review", "disputed", "corroborated", "rejected", "superseded"],
+  "licence_states": ["verified", "review_required", "unknown", "restricted"],
+  "rule": "A real source is not admitted as truth merely because it is official or publicly accessible."
+}

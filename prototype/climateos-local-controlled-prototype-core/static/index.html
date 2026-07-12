@@ -9,7 +9,7 @@
   <body>
     <header class="app-header">
       <div>
-        <p class="eyebrow">Bounded local Alpha human-use trial</p>
+        <p class="eyebrow">Limited local Beta preparation</p>
         <h1>ClimateOS Evidence Passport</h1>
         <p class="subtitle">Local candidate workflow with Human Review, Founder Gate, audit trail, mock model suggestions, and archive export.</p>
       </div>
@@ -21,7 +21,8 @@
 
     <main class="app-shell">
       <nav class="side-nav" aria-label="Prototype sections">
-        <button data-target="records" class="active">Candidates</button>
+        <button data-target="start" class="active">Start Here</button>
+        <button data-target="records">Evidence Cards</button>
         <button data-target="create">Create</button>
         <button data-target="review">Human Review</button>
         <button data-target="founder">Founder Gate</button>
@@ -37,8 +38,27 @@
           <span>Records remain candidate-only. This prototype does not verify, approve, score, certify, assure, determine compliance, or create ESG/carbon, standards, or framework conclusions.</span>
         </div>
 
-        <section id="records" class="screen active-screen">
-          <h2>Candidates</h2>
+        <section id="start" class="screen active-screen" aria-labelledby="start-title">
+          <h2 id="start-title">Start Here</h2>
+          <div class="onboarding-grid">
+            <article><span class="step-number">1</span><h3>Create</h3><p>Create a synthetic evidence candidate. Do not enter confidential or real operational data.</p></article>
+            <article><span class="step-number">2</span><h3>Review</h3><p>Declare who is submitting or reviewing, record uncertainty, and challenge weak evidence.</p></article>
+            <article><span class="step-number">3</span><h3>Check the audit</h3><p>Confirm the action, actor label, and local date/time before relying on the record history.</p></article>
+          </div>
+          <div class="authority-warning" role="note">
+            <strong>You remain responsible</strong>
+            <span>A submitter or reviewer label is self-declared, not authenticated. ClimateOS preserves the record; it does not transfer human responsibility or verify scientific truth.</span>
+          </div>
+          <button data-go-to="alpha">Begin a synthetic local review</button>
+        </section>
+
+        <section id="records" class="screen">
+          <h2>Evidence Cards</h2>
+          <p class="screen-note">Plain-language cards show candidate status, provenance and responsibility. Missing information is displayed as Not provided.</p>
+          <div class="sort-controls" data-sort-list="candidates" aria-label="Evidence Card ordering">
+            <label>Sort by <select name="sort_key"><option value="date">Date/time</option><option value="title">Name/title</option></select></label>
+            <label>Direction <select name="sort_direction"><option value="desc">Newest first</option><option value="asc">Oldest first</option></select></label>
+          </div>
           <div id="candidate-list" class="record-grid"></div>
         </section>
 
@@ -106,7 +126,8 @@
             <button id="prompt-bundle-button">Generate Prompt Bundle</button>
             <button id="mock-response-button">Generate Mock Response</button>
           </div>
-          <textarea id="model-json" class="json-box" aria-label="Model bridge JSON"></textarea>
+          <details class="technical-details"><summary>Technical JSON</summary><textarea id="model-json" class="json-box" aria-label="Model bridge JSON"></textarea></details>
+          <div id="model-readable" class="readable-data" aria-live="polite"></div>
           <button id="import-response-button">Import Response As Suggestions</button>
           <p id="model-result" class="screen-note"></p>
         </section>
@@ -124,6 +145,10 @@
 
         <section id="audit" class="screen">
           <h2>Audit Trail</h2>
+          <div class="sort-controls" data-sort-list="audit" aria-label="Audit Trail ordering">
+            <label>Sort by <select name="sort_key"><option value="date">Date/time</option><option value="title">Name/title</option></select></label>
+            <label>Direction <select name="sort_direction"><option value="desc">Newest first</option><option value="asc">Oldest first</option></select></label>
+          </div>
           <div id="audit-list" class="record-grid"></div>
         </section>
 
@@ -160,6 +185,9 @@
               <label>Declared reviewer label <input name="reviewer_label" required minlength="2"></label>
               <label>Reason <textarea name="reason" required minlength="10"></textarea></label>
               <label>Correction summary (only for correct) <textarea name="correction_summary"></textarea></label>
+              <label>Corrected title (optional) <input name="corrected_title" minlength="3"></label>
+              <label>Corrected uncertainty (optional) <textarea name="corrected_uncertainty"></textarea></label>
+              <button type="button" id="alpha-load-record-button">Load existing record for correction</button>
               <button type="submit">Record human action</button>
               <p id="alpha-review-result" class="screen-note" aria-live="polite"></p>
             </form>
@@ -171,7 +199,12 @@
             <button id="alpha-evidence-button">Load Evidence Contracts</button>
             <button id="alpha-audit-button">Load Alpha Audit</button>
           </div>
-          <textarea id="alpha-json" class="json-box" aria-label="Alpha Runtime skeleton JSON" readonly></textarea>
+          <div class="sort-controls" data-sort-list="alpha" aria-label="Alpha Evidence ordering">
+            <label>Sort loaded lists by <select name="sort_key"><option value="date">Date/time</option><option value="title">Name/title</option></select></label>
+            <label>Direction <select name="sort_direction"><option value="desc">Newest first</option><option value="asc">Oldest first</option></select></label>
+          </div>
+          <div id="alpha-readable" class="readable-data" aria-live="polite"></div>
+          <details class="technical-details"><summary>Technical JSON</summary><textarea id="alpha-json" class="json-box" aria-label="Alpha Runtime skeleton JSON" readonly></textarea></details>
         </section>
       </section>
     </main>
