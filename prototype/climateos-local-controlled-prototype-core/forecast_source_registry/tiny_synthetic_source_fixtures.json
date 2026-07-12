@@ -1,0 +1,62 @@
+{
+  "disclaimer": "Synthetic registry tests only.",
+  "cases": [
+    {
+      "version_status": "v1",
+      "variables": [
+        "temperature"
+      ],
+      "grid": "synthetic",
+      "vertical_levels": [
+        "surface"
+      ],
+      "update_cycle": "6h",
+      "latency": "none",
+      "archive": "fixture",
+      "interface": "none",
+      "access_status": "fixture",
+      "cost_status": "zero",
+      "service_level": "none",
+      "decision_owner": "Founder-governed review",
+      "evidence_date": "2026-07-12",
+      "source_id": "synthetic-complete",
+      "provider": "fixture",
+      "product": "physics-a",
+      "source_class": "PHYSICS_MODEL",
+      "licence": "synthetic",
+      "commercial_rights": "synthetic",
+      "maturity": "synthetic",
+      "limitations": [],
+      "review_trigger": "change",
+      "source_state": "VERIFIED_CANDIDATE"
+    },
+    {
+      "version_status": "not_pinned",
+      "variables": "not_verified",
+      "grid": "not_verified",
+      "vertical_levels": "not_verified",
+      "update_cycle": "not_verified",
+      "latency": "not_verified",
+      "archive": "not_verified",
+      "interface": "not_connected",
+      "access_status": "not_connected",
+      "cost_status": "not_committed",
+      "service_level": "not_contracted",
+      "decision_owner": "Founder-governed review",
+      "evidence_date": "2026-07-12",
+      "source_id": "synthetic-customer",
+      "provider": "fixture",
+      "product": "customer-c",
+      "source_class": "DOWNSCALING_PRODUCT",
+      "licence": "synthetic",
+      "commercial_rights": "synthetic",
+      "maturity": "experimental",
+      "limitations": [
+        "not approved"
+      ],
+      "review_trigger": "approval",
+      "source_state": "CUSTOMER_REQUESTED_EXPERIMENT",
+      "experiment_controls": {}
+    }
+  ]
+}
