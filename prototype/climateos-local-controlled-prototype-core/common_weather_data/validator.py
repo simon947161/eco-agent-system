@@ -16,7 +16,7 @@ def validate_record(record):
     if missing:
         return {'valid': False, 'blockers': [{'code': 'missing_sections', 'fields': missing}]}
     timing = record['forecast_time']
-    required_time = {'run_time_utc','valid_time_utc','lead_hours','member_type','member_id'}
+    required_time = {'run_time_utc','valid_time_utc','lead_hours','member_type'}
     absent = sorted(k for k in required_time if k not in timing or timing[k] in (None, ''))
     if absent:
         blockers.append({'code': 'missing_forecast_time', 'fields': absent})
