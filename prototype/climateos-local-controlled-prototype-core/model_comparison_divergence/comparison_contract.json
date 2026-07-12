@@ -1,0 +1,44 @@
+{
+  "contract_id": "climateos.model_comparison_divergence.v0.1",
+  "input_contract": "climateos.hybrid_forecast_orchestrator.v0.1",
+  "comparison_states": [
+    "AGREEMENT",
+    "EVENT_SPECIFIC_DIVERGENCE",
+    "SYSTEMATIC_BIAS_EVIDENCE_REQUIRED",
+    "INSUFFICIENT_EVIDENCE",
+    "SOURCE_DEGRADED",
+    "OOD_UNRESOLVED"
+  ],
+  "required_fields": [
+    "comparison_id",
+    "route_id",
+    "variable_id",
+    "run_time_utc",
+    "valid_time_utc",
+    "eligible_sources",
+    "excluded_sources",
+    "comparison_state",
+    "event_context",
+    "ood_status",
+    "systematic_bias_status",
+    "downstream_uncertainty",
+    "human_review_status",
+    "audit"
+  ],
+  "rules": [
+    "aligned_inputs_only",
+    "preserve_source_values",
+    "no_silent_averaging",
+    "no_model_ranking",
+    "single_event_cannot_establish_systematic_bias",
+    "degraded_and_ood_propagate",
+    "unresolved_disagreement_requires_human_review"
+  ],
+  "prohibited_actions": [
+    "automatic_best_model",
+    "score_or_rank",
+    "public_forecast",
+    "safety_decision",
+    "live_source_call"
+  ]
+}
