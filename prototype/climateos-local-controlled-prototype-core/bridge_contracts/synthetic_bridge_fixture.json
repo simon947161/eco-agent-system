@@ -1,0 +1,7 @@
+{
+  "fixture_only": true,
+  "node": {"node_id": "NODE-LOCAL-SYNTH-001", "node_type": "local", "display_name": "Synthetic local node", "jurisdiction": "Synthetic NSW", "declared_responsible_party": "Founder test label", "responsibility_status": "declared_unverified"},
+  "spatial": {"spatial_id": "SPACE-SYNTH-001", "geometry_type": "point", "geometry_reference": "synthetic://not-a-real-coordinate", "crs": "declared-not-evaluated", "jurisdiction": "Synthetic NSW", "spatial_uncertainty": "High; no real geometry", "source_refs": ["LOCAL-SYNTHETIC-FIXTURE"]},
+  "observation": {"observation_id": "OBS-SYNTH-001", "tier": "casual", "observed_at": "2026-07-12T00:00:00+10:00", "observer_label": "Founder test label", "method": "Synthetic demonstration", "duration": "not applicable", "source_refs": ["LOCAL-SYNTHETIC-FIXTURE"], "uncertainty": "No real-world meaning"},
+  "boundary": "No real source, scientific, carbon, ESG, compliance, financial or operational conclusion."
+}
