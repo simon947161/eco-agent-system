@@ -1,0 +1,7 @@
+{
+  "contract_version": "1.0",
+  "required": ["spatial_id", "geometry_type", "geometry_reference", "crs", "jurisdiction", "spatial_uncertainty", "source_refs"],
+  "geometry_types": ["point", "line", "polygon", "multipolygon", "administrative_reference"],
+  "admission_states": ["declared", "source_pending", "human_reviewed", "disputed", "superseded"],
+  "forbidden_inferences": ["survey_accuracy", "legal_boundary", "planning_approval", "automatic_geocoding"]
+}
