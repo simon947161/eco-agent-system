@@ -3,6 +3,16 @@
     return value === undefined || value === null ? "" : String(value);
   }
 
+  function shown(value) {
+    return value === undefined || value === null || value === "" ? "Not provided" : text(value);
+  }
+
+  function localDateTime(value) {
+    if (!value) { return "Not provided"; }
+    var parsed = new Date(value);
+    return isNaN(parsed.getTime()) ? text(value) : parsed.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
+  }
+
   function splitList(value) {
     return text(value).split(",").map(function (item) {
       return item.trim();
@@ -34,7 +44,7 @@
   function field(label, value) {
     var row = el("div");
     row.appendChild(el("dt", "", label));
-    row.appendChild(el("dd", "", value));
+    row.appendChild(el("dd", "", shown(value)));
     return row;
   }
 
@@ -55,15 +65,26 @@
       ["Readiness", record.readiness_label],
       ["Risk", (record.risk_flags || []).join(", ")],
       ["Boundary", record.boundary_label],
-      ["Actor", record.actor_label],
-      ["Created", record.created_at]
+      ["Declared actor", record.actor_label || record.reviewer_label],
+      ["Created (local time)", localDateTime(record.created_at || record.timestamp)]
     ].forEach(function (item) {
       if (item[1]) {
         list.appendChild(field(item[0], item[1]));
       }
     });
     article.appendChild(list);
+    var responsibility = el("p", "responsibility-note", "Candidate only. A declared human remains responsible for review and use.");
+    article.appendChild(responsibility);
     return article;
+  }
+
+  function readable(containerId, payload) {
+    var container = document.getElementById(containerId);
+    container.replaceChildren();
+    var heading = el("h3", "", "Readable summary");
+    container.appendChild(heading);
+    var preview = el("pre", "readable-preview", JSON.stringify(payload, null, 2));
+    container.appendChild(preview);
   }
 
   async function loadCandidates() {
@@ -99,6 +120,12 @@
         if (target === "audit") {
           loadAudit().catch(window.alert);
         }
+      });
+    });
+    document.querySelectorAll("[data-go-to]").forEach(function (control) {
+      control.addEventListener("click", function () {
+        var target = document.querySelector('.side-nav button[data-target="' + control.getAttribute("data-go-to") + '"]');
+        if (target) { target.click(); target.focus(); }
       });
     });
   }
@@ -185,6 +212,7 @@
         body: "[]"
       });
       box.value = JSON.stringify(bundle, null, 2);
+      readable("model-readable", bundle);
     });
     document.getElementById("mock-response-button").addEventListener("click", async function () {
       var response = await api("/api/model/mock-response", {
@@ -193,6 +221,7 @@
         body: "[]"
       });
       box.value = JSON.stringify(response, null, 2);
+      readable("model-readable", response);
     });
     document.getElementById("import-response-button").addEventListener("click", async function () {
       var imported = await api("/api/model/import-response", {
@@ -216,6 +245,7 @@
       document.getElementById(binding[0]).addEventListener("click", async function () {
         var payload = await api(binding[1]);
         box.value = JSON.stringify(payload, null, 2);
+        readable("alpha-readable", payload);
       });
     });
 
@@ -242,6 +272,7 @@
       document.getElementById("alpha-create-result").textContent = "Created " + created.id + ". Candidate only; no truth or approval claim.";
       document.querySelector("#alpha-review-form [name=record_id]").value = created.id;
       box.value = JSON.stringify(created, null, 2);
+      readable("alpha-readable", created);
     });
 
     document.getElementById("alpha-review-form").addEventListener("submit", async function (event) {
@@ -263,6 +294,7 @@
       });
       document.getElementById("alpha-review-result").textContent = "Recorded " + payload.action + " by a declared local label. Human responsibility remains; no conclusion was issued.";
       box.value = JSON.stringify(reviewed, null, 2);
+      readable("alpha-readable", reviewed);
     });
   }
 
