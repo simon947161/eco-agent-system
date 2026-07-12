@@ -1,0 +1,65 @@
+{
+  "contract_id": "climateos.common_weather_data.v0.1",
+  "required_sections": [
+    "source",
+    "forecast_time",
+    "spatial",
+    "vertical",
+    "fields",
+    "quality",
+    "provenance"
+  ],
+  "source_required": [
+    "source_id",
+    "source_version",
+    "source_class",
+    "registry_state"
+  ],
+  "forecast_time_required": [
+    "run_time_utc",
+    "valid_time_utc",
+    "lead_hours",
+    "member_type",
+    "member_id"
+  ],
+  "spatial_required": [
+    "coordinate_reference_system",
+    "grid_type",
+    "grid_spacing",
+    "effective_resolution_status"
+  ],
+  "vertical_required": [
+    "coordinate_type",
+    "levels",
+    "surface_definition"
+  ],
+  "field_required": [
+    "variable_id",
+    "standard_name",
+    "units",
+    "data_type",
+    "missing_value"
+  ],
+  "quality_flags": [
+    "VALID",
+    "MISSING",
+    "STALE",
+    "INVALID",
+    "TRANSFORMED",
+    "OUT_OF_DOMAIN"
+  ],
+  "provenance_required": [
+    "evidence_snapshot_id",
+    "retrieval_or_fixture_id",
+    "transformations",
+    "checksum",
+    "responsible_human"
+  ],
+  "rules": [
+    "valid_time_equals_run_time_plus_lead",
+    "ensemble_member_requires_member_id",
+    "grid_spacing_is_not_effective_resolution",
+    "transformation_history_is_append_only",
+    "no_live_data_authority"
+  ]
+}

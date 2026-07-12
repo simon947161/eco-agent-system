@@ -203,3 +203,10 @@ Decision Brief and explicit Founder approval.
 Status: Review.
 
 Provider-neutral registry, eight source states, controlled candidate metadata, synthetic fixtures and hard refusals for connection and customer-experiment activation. No live source or Task1340 work.
+
+
+## Task1340-1379 Common Weather Data Contract
+
+Status: Review.
+
+Provider-neutral time, grid, vertical, field, quality and provenance contract with synthetic deterministic and ensemble fixtures. No live ingestion or Task1380 work.

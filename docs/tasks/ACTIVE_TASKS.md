@@ -197,3 +197,10 @@ explicit authorization.
 Status: Validated / Founder Review Pending.
 
 No external model, live API, paid commitment or public forecast. Hard stop: Task1340 is not started and requires a separate Founder Gate.
+
+
+## Task1340-1379 Common Weather Data Contract
+
+Status: Validated / Founder Review Pending.
+
+No real API, live data, external model, paid service or public forecast. Hard stop: Task1380 is not started and requires a separate Founder Gate.

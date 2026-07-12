@@ -1,0 +1,167 @@
+{
+  "disclaimer": "Synthetic common-contract test data only.",
+  "records": [
+    {
+      "record_id": "synthetic-deterministic",
+      "source": {
+        "source_id": "synthetic-physics",
+        "source_version": "v1",
+        "source_class": "PHYSICS_MODEL",
+        "registry_state": "VERIFIED_CANDIDATE"
+      },
+      "forecast_time": {
+        "run_time_utc": "2026-07-12T00:00:00Z",
+        "valid_time_utc": "2026-07-12T06:00:00Z",
+        "lead_hours": 6,
+        "member_type": "DETERMINISTIC",
+        "member_id": "deterministic"
+      },
+      "spatial": {
+        "coordinate_reference_system": "EPSG:4326",
+        "grid_type": "regular_lat_lon",
+        "grid_spacing": "1 degree synthetic",
+        "effective_resolution_status": "NOT_ESTABLISHED"
+      },
+      "vertical": {
+        "coordinate_type": "pressure",
+        "levels": [
+          1000,
+          850,
+          500
+        ],
+        "surface_definition": "synthetic"
+      },
+      "fields": [
+        {
+          "variable_id": "t",
+          "standard_name": "air_temperature",
+          "units": "K",
+          "data_type": "float",
+          "missing_value": null,
+          "quality_flag": "VALID"
+        }
+      ],
+      "quality": {
+        "record_status": "VALID",
+        "flags": []
+      },
+      "provenance": {
+        "evidence_snapshot_id": "synthetic-snapshot-1",
+        "retrieval_or_fixture_id": "fixture-1",
+        "transformations": [],
+        "checksum": "synthetic-checksum-1",
+        "responsible_human": "synthetic-reviewer"
+      }
+    },
+    {
+      "record_id": "synthetic-ensemble-missing-member",
+      "source": {
+        "source_id": "synthetic-ai",
+        "source_version": "v1",
+        "source_class": "AI_MODEL",
+        "registry_state": "VERIFIED_CANDIDATE"
+      },
+      "forecast_time": {
+        "run_time_utc": "2026-07-12T00:00:00Z",
+        "valid_time_utc": "2026-07-12T12:00:00Z",
+        "lead_hours": 12,
+        "member_type": "ENSEMBLE",
+        "member_id": ""
+      },
+      "spatial": {
+        "coordinate_reference_system": "EPSG:4326",
+        "grid_type": "regular_lat_lon",
+        "grid_spacing": "1 degree synthetic",
+        "effective_resolution_status": "NOT_ESTABLISHED"
+      },
+      "vertical": {
+        "coordinate_type": "surface",
+        "levels": [
+          "surface"
+        ],
+        "surface_definition": "synthetic"
+      },
+      "fields": [
+        {
+          "variable_id": "tp",
+          "standard_name": "precipitation_amount",
+          "units": "kg m-2",
+          "data_type": "float",
+          "missing_value": null,
+          "quality_flag": "VALID"
+        }
+      ],
+      "quality": {
+        "record_status": "INVALID",
+        "flags": [
+          "INVALID"
+        ]
+      },
+      "provenance": {
+        "evidence_snapshot_id": "synthetic-snapshot-2",
+        "retrieval_or_fixture_id": "fixture-2",
+        "transformations": [],
+        "checksum": "synthetic-checksum-2",
+        "responsible_human": "synthetic-reviewer"
+      }
+    },
+    {
+      "record_id": "synthetic-time-mismatch",
+      "source": {
+        "source_id": "synthetic-downscale",
+        "source_version": "v1",
+        "source_class": "DOWNSCALING_PRODUCT",
+        "registry_state": "CONNECTED_WITH_LIMITATIONS"
+      },
+      "forecast_time": {
+        "run_time_utc": "2026-07-12T00:00:00Z",
+        "valid_time_utc": "2026-07-12T09:00:00Z",
+        "lead_hours": 6,
+        "member_type": "DETERMINISTIC",
+        "member_id": "deterministic"
+      },
+      "spatial": {
+        "coordinate_reference_system": "EPSG:4326",
+        "grid_type": "regional",
+        "grid_spacing": "synthetic",
+        "effective_resolution_status": "NOT_ESTABLISHED"
+      },
+      "vertical": {
+        "coordinate_type": "surface",
+        "levels": [
+          "surface"
+        ],
+        "surface_definition": "synthetic"
+      },
+      "fields": [
+        {
+          "variable_id": "wind",
+          "standard_name": "wind_speed",
+          "units": "m s-1",
+          "data_type": "float",
+          "missing_value": null,
+          "quality_flag": "TRANSFORMED"
+        }
+      ],
+      "quality": {
+        "record_status": "INVALID",
+        "flags": [
+          "TRANSFORMED",
+          "INVALID"
+        ]
+      },
+      "provenance": {
+        "evidence_snapshot_id": "synthetic-snapshot-3",
+        "retrieval_or_fixture_id": "fixture-3",
+        "transformations": [
+          {
+            "id": "synthetic-transform",
+            "version": "1"
+          }
+        ],
+        "checksum": "synthetic-checksum-3",
+        "responsible_human": "synthetic-reviewer"
+      }
+    }
+  ]
+}
