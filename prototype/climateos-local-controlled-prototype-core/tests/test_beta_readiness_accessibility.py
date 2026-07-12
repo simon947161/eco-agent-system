@@ -43,3 +43,14 @@ def test_keyboard_focus_and_zoom_reflow_protection_remain_explicit():
     assert "outline-offset: 2px" in styles
     assert ".onboarding-grid { grid-template-columns: 1fr; }" in styles
     assert "min-height: 44px" in styles
+
+
+def test_founder_gap_patch_exposes_accessible_sort_and_revision_controls():
+    page = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+    script = (STATIC_DIR / "app.js").read_text(encoding="utf-8")
+    assert page.count('name="sort_key"') == 3
+    assert "Date/time" in page and "Name/title" in page
+    assert "Newest first" in page and "Oldest first" in page
+    assert 'id="alpha-load-record-button"' in page
+    assert "corrected_title" in script and "corrected_uncertainty" in script
+    assert "localeCompare" in script

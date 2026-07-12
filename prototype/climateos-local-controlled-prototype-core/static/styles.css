@@ -203,6 +203,8 @@ button:focus,
 .technical-details { margin: 12px 0; }
 .technical-details summary { cursor: pointer; font-weight: 700; }
 .readable-preview { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 28rem; overflow: auto; }
+.sort-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; margin: 12px 0; }
+.sort-controls label { min-width: min(14rem, 100%); }
 
 .record-card header {
   display: flex;

@@ -1,6 +1,22 @@
 # Task1199 Bridge Closure And Task1200 Hard Stop
 
-Status: completed on Draft PR #43; Founder review pending; not merged
+Status: bridge completed on Draft PR #43; Founder retest gap patched; final Founder acceptance pending; not merged
+
+## Founder retest gap patch
+
+The first Founder retest found that the browser exposed only a summary-only correction action and did not let a human load and revise an existing Alpha record. The interface also lacked ordinary list-order controls.
+
+The bounded Task1199 continuation patch:
+
+- loads an existing Alpha Evidence record into correction fields;
+- permits documented correction of title, summary and uncertainty;
+- creates a new revision while retaining revision history, review history and append-only audit events;
+- leaves dispute and counter-evidence structures intact;
+- adds accessible date/time or name/title ordering, ascending or descending, for Evidence Cards, Audit Trail and loaded Alpha lists;
+- uses deterministic newest-first defaults with record ID tie-breaking;
+- treats ordering only as presentation, never scoring, ranking or scientific significance.
+
+Verification after the patch: 61 tests passed with the same existing TestClient deprecation warning. JavaScript syntax and `git diff --check` passed. Final Founder acceptance remains pending until the focused retest in `FOUNDER_LIMITED_BETA_RETEST.md` is completed.
 
 ## Original plan
 

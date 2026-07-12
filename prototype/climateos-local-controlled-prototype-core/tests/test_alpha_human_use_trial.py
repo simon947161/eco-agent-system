@@ -119,3 +119,18 @@ def test_correction_requires_summary_and_preserves_prior_revision(tmp_path):
     assert record["revision"] == 2
     assert len(record["revision_history"]) == 1
     assert record["revision_history"][0]["revision"] == 1
+
+
+def test_correction_updates_editable_fields_without_erasing_history(tmp_path):
+    client = TestClient(create_app(tmp_path / "alpha.sqlite3"))
+    created = client.post("/api/alpha/evidence-contracts", json=synthetic_payload()).json()
+    corrected = client.post(
+        f"/api/alpha/evidence-contracts/{created['id']}/review-actions",
+        json={"action": "correct", "reviewer_label": "Founder", "reason": "Correct fields while preserving the prior revision.",
+              "corrected_title": "Corrected synthetic title", "correction_summary": "Corrected synthetic summary.",
+              "corrected_uncertainty": "Corrected uncertainty remains synthetic."},
+    ).json()
+    assert corrected["revision"] == 2
+    assert corrected["title"] == "Corrected synthetic title"
+    assert corrected["revision_history"][0]["title"] == created["title"]
+    assert client.get("/api/alpha/audit-events").json()[-1]["event_type"] == "alpha_evidence_correct"
