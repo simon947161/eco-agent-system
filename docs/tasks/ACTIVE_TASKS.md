@@ -215,6 +215,6 @@ No live source, model execution, public forecast or paid commitment. Hard stop: 
 
 ## Task1420-1459 Model Comparison And Divergence Layer
 
-Status: Implemented / Test Execution Pending / Founder Review Pending.
+Status: Validated / Founder Review Pending.
 
 No live data, metric ranking, public forecast or paid commitment. Hard stop: Task1460 is not started and requires a separate Founder Gate.
