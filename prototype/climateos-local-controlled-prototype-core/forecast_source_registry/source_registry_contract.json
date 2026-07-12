@@ -1,0 +1,63 @@
+{
+  "contract_id": "climateos.forecast_source_registry.v0.1",
+  "source_classes": [
+    "PHYSICS_MODEL",
+    "AI_MODEL",
+    "OBSERVATION",
+    "ENSEMBLE",
+    "DOWNSCALING_PRODUCT"
+  ],
+  "source_states": [
+    "VERIFIED_CANDIDATE",
+    "CONNECTED_FOR_RESEARCH",
+    "CONNECTED_WITH_LIMITATIONS",
+    "DEFERRED_UNVERIFIED",
+    "DEFERRED_ACCESS_OR_LICENCE",
+    "CUSTOMER_REQUESTED_EXPERIMENT",
+    "NOT_SUITABLE_FOR_DECLARED_USE",
+    "RETIRED_OR_UNAVAILABLE"
+  ],
+  "required_fields": [
+    "source_id",
+    "provider",
+    "product",
+    "source_class",
+    "version_status",
+    "variables",
+    "grid",
+    "vertical_levels",
+    "update_cycle",
+    "latency",
+    "archive",
+    "licence",
+    "commercial_rights",
+    "interface",
+    "access_status",
+    "cost_status",
+    "service_level",
+    "maturity",
+    "limitations",
+    "decision_owner",
+    "evidence_date",
+    "review_trigger",
+    "source_state"
+  ],
+  "prohibited_actions": [
+    "download",
+    "api_call",
+    "model_execution",
+    "automatic_connection",
+    "automatic_endorsement",
+    "automatic_customer_experiment"
+  ],
+  "customer_experiment_requires": [
+    "separate_approval",
+    "explicit_opt_in",
+    "risk_disclosure",
+    "bounded_trial",
+    "audit",
+    "stop_condition",
+    "exit_path"
+  ],
+  "state_is_endorsement": false
+}
