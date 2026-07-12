@@ -1,0 +1,115 @@
+{
+  "disclaimer": "Synthetic structural test data only; no real model or scientific conclusion.",
+  "cases": [
+    {
+      "id": "synthetic_complete",
+      "kind": "synthetic",
+      "model_id": "synthetic-weather-a",
+      "model_version": "0.1",
+      "source_revision": "fixture-1",
+      "purpose": "contract_test",
+      "variables": [
+        "temperature"
+      ],
+      "region": "synthetic-region",
+      "forecast_horizons": [
+        "24h"
+      ],
+      "evidence_snapshot_id": "snapshot-complete-1",
+      "licence_status": "synthetic_fixture",
+      "review_date": "2026-07-12",
+      "expiry_date": "2026-08-12",
+      "evidence": {
+        "model_registry": {
+          "status": "present"
+        },
+        "statistical_evaluation": {
+          "status": "present"
+        },
+        "physical_consistency": {
+          "status": "present"
+        },
+        "extreme_event": {
+          "status": "present"
+        },
+        "regional_fitness": {
+          "status": "present"
+        },
+        "ood_nonstationarity": {
+          "status": "present"
+        },
+        "licence_provenance_cost_dependency_exit": {
+          "status": "present"
+        },
+        "disputes_counter_evidence": {
+          "status": "none_declared"
+        }
+      }
+    },
+    {
+      "id": "synthetic_blocked",
+      "kind": "synthetic",
+      "model_id": "synthetic-weather-b",
+      "model_version": "0.1",
+      "source_revision": "fixture-2",
+      "purpose": "contract_test",
+      "variables": [
+        "precipitation"
+      ],
+      "region": "synthetic-region",
+      "forecast_horizons": [
+        "24h"
+      ],
+      "evidence_snapshot_id": "snapshot-blocked-1",
+      "licence_status": "unknown",
+      "review_date": "2026-07-12",
+      "expiry_date": "2026-08-12",
+      "evidence": {}
+    },
+    {
+      "id": "synthetic_disputed",
+      "kind": "synthetic",
+      "model_id": "synthetic-weather-c",
+      "model_version": "0.1",
+      "source_revision": "fixture-3",
+      "purpose": "contract_test",
+      "variables": [
+        "wind"
+      ],
+      "region": "synthetic-region",
+      "forecast_horizons": [
+        "48h"
+      ],
+      "evidence_snapshot_id": "snapshot-disputed-1",
+      "licence_status": "synthetic_fixture",
+      "review_date": "2026-07-12",
+      "expiry_date": "2026-08-12",
+      "evidence": {
+        "model_registry": {
+          "status": "present"
+        },
+        "statistical_evaluation": {
+          "status": "present"
+        },
+        "physical_consistency": {
+          "status": "disputed"
+        },
+        "extreme_event": {
+          "status": "present"
+        },
+        "regional_fitness": {
+          "status": "limited"
+        },
+        "ood_nonstationarity": {
+          "status": "unresolved"
+        },
+        "licence_provenance_cost_dependency_exit": {
+          "status": "present"
+        },
+        "disputes_counter_evidence": {
+          "status": "open"
+        }
+      }
+    }
+  ]
+}
