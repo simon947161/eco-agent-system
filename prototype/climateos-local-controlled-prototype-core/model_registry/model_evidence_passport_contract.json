@@ -1,0 +1,44 @@
+{
+  "contract_version": "0.1",
+  "task_range": "Task1200-1219",
+  "purpose": "Preserve evidence about a registered model while abstaining from skill, physical-consistency and admission conclusions.",
+  "required": [
+    "passport_id",
+    "registry_id",
+    "identity_evidence",
+    "version_evidence",
+    "licence_evidence",
+    "training_data_evidence",
+    "evaluation_data_evidence",
+    "interface_evidence",
+    "limitation_evidence",
+    "uncertainty",
+    "disputes",
+    "counter_evidence",
+    "revision",
+    "revision_history_refs",
+    "audit_refs",
+    "responsible_human",
+    "passport_state",
+    "claim_boundary"
+  ],
+  "passport_states": ["metadata_candidate", "metadata_review_required", "metadata_disputed", "metadata_reviewed", "superseded", "archived"],
+  "evidence_item_states": ["declared", "source_linked", "human_reviewed", "disputed", "superseded"],
+  "future_sections_reserved_not_implemented": [
+    "statistical_skill_evaluation",
+    "physical_consistency_evaluation",
+    "extreme_event_fitness",
+    "regional_suitability",
+    "model_admission_decision"
+  ],
+  "forbidden_outputs": [
+    "model_score",
+    "model_rank",
+    "scientific_validation",
+    "operational_approval",
+    "model_admission",
+    "compliance_conclusion",
+    "public_warning_authority"
+  ],
+  "rule": "A Model Evidence Passport is an auditable evidence container, not proof that a model is accurate, physically consistent, operationally suitable or admitted."
+}
