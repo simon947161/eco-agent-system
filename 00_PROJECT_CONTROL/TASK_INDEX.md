@@ -224,3 +224,10 @@ Fixture-only parallel routing with availability, reference, fallback, audit and 
 Status: Review.
 
 Fixture-only agreement, divergence, degraded and OOD states with uncertainty, audit and human review. No ranking, averaging, live source or Task1460 work.
+
+
+## Task1460-1489 Failure, Fallback And Human Review
+
+Status: Review.
+
+Fixture-only failure, fallback proposal, human acknowledgement, recovery and stop governance. No automatic failover, public warning, live source or Task1490 work.
