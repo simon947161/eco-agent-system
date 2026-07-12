@@ -116,7 +116,8 @@ button:hover,
 button:focus,
 .side-nav button.active {
   background: #e9f4ee;
-  outline: none;
+  outline: 3px solid #183f68;
+  outline-offset: 2px;
 }
 
 .side-nav button {
@@ -164,6 +165,44 @@ button:focus,
   display: grid;
   gap: 8px;
 }
+
+.responsibility-note {
+  margin: 4px 0 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.onboarding-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.onboarding-grid article,
+.readable-data {
+  border: 1px solid var(--line);
+  padding: 14px;
+  background: #fbfdf9;
+}
+
+.step-number {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+.technical-details { margin: 12px 0; }
+.technical-details summary { cursor: pointer; font-weight: 700; }
+.readable-preview { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 28rem; overflow: auto; }
 
 .record-card header {
   display: flex;
@@ -292,4 +331,10 @@ textarea,
   .trial-grid {
     grid-template-columns: 1fr;
   }
+
+  .onboarding-grid { grid-template-columns: 1fr; }
+}
+
+@media (min-resolution: 1.5dppx) {
+  button, input, select, textarea { min-height: 44px; }
 }
