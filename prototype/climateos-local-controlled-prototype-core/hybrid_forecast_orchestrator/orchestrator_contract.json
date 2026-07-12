@@ -1,0 +1,40 @@
+{
+  "contract_id": "climateos.hybrid_forecast_orchestrator.v0.1",
+  "input_contract": "climateos.common_weather_data.v0.1",
+  "source_availability_states": [
+    "AVAILABLE",
+    "STALE",
+    "MISSING",
+    "INVALID",
+    "DEFERRED"
+  ],
+  "required_route_fields": [
+    "route_id",
+    "run_time_utc",
+    "valid_time_utc",
+    "variable_id",
+    "sources",
+    "reference_source_id",
+    "fallback_source_ids",
+    "disagreement_status",
+    "human_review_status",
+    "audit"
+  ],
+  "rules": [
+    "parallel_routes_only",
+    "no_silent_averaging",
+    "no_automatic_source_truth",
+    "physics_reference_is_declared_not_absolute",
+    "stale_missing_invalid_are_exposed",
+    "customer_experiment_not_auto_activated",
+    "consequential_interpretation_requires_human_review"
+  ],
+  "prohibited_actions": [
+    "live_api_call",
+    "model_execution",
+    "public_forecast",
+    "automatic_safety_decision",
+    "automatic_best_model_selection",
+    "numerical_averaging"
+  ]
+}
