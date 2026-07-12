@@ -1,0 +1,7 @@
+{
+  "contract_version": "1.0",
+  "required": ["evidence_asset_id", "identity_status", "source_lineage", "rights_status", "evidence_state", "responsible_human", "uncertainty", "audit_refs"],
+  "states": ["candidate", "under_review", "disputed", "corroborated", "superseded", "archived"],
+  "events": ["create", "challenge", "attach_counter_evidence", "review", "correct", "supersede", "archive"],
+  "forbidden_claims": ["scientific_truth", "certification", "legal_title", "token", "financial_asset", "investment_value"]
+}
