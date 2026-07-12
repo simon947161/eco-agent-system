@@ -1,0 +1,8 @@
+{
+  "contract_id": "CLIMATEOS-REGIONAL-FITNESS-EVIDENCE-PASSPORT-v0.1",
+  "required_sections": ["identity", "region_declaration", "event_declaration", "source_records", "licence_and_cost_review", "variables_and_units", "threshold_record", "sample_support", "nonstationarity", "ood_review", "reproducibility", "limitations", "human_review"],
+  "source_integrity_fields": ["source_id", "canonical_url", "retrieved_at", "licence_status", "content_checksum", "transformation_log"],
+  "decision_fields": [],
+  "prohibited_outputs": ["automatic model score", "model ranking", "scientific admission", "public safety conclusion", "compliance conclusion", "legal conclusion"],
+  "human_review_required": true
+}

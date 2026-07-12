@@ -1,0 +1,14 @@
+{
+  "contract_id": "CLIMATEOS-EXTREME-EVENT-v0.1",
+  "event_families": [
+    {"event_type": "extreme_heat", "required_variables": ["daily_max_temperature", "daily_min_temperature"], "required_declarations": ["duration", "threshold_source", "reference_period"]},
+    {"event_type": "heavy_precipitation", "required_variables": ["precipitation_amount"], "required_declarations": ["accumulation_window", "threshold_source", "spatial_support"]},
+    {"event_type": "meteorological_drought", "required_variables": ["precipitation_amount"], "required_declarations": ["index_method", "accumulation_period", "reference_period"], "prohibited_inference": "not automatically agricultural, hydrological or ecological drought"},
+    {"event_type": "strong_wind", "required_variables": ["wind_speed"], "required_declarations": ["gust_or_mean", "averaging_window", "measurement_height"]},
+    {"event_type": "dust_or_sand", "region_restriction": ["CN-XJ-KARAMAY"], "required_variables": ["visibility_or_weather_phenomenon_code", "wind_speed"], "block_if_missing": ["visibility_or_weather_phenomenon_code"]},
+    {"event_type": "hot_dry_windy_compound", "required_variables": ["temperature", "relative_humidity", "wind_speed"], "prohibited_inference": "not automatically a fire occurrence or official fire danger rating"}
+  ],
+  "event_identity_requires": ["region_id", "start_time", "end_time", "calendar", "variables", "units", "threshold_record_id", "declustering_method", "source_ids"],
+  "automatic_score_rank_or_admission": false,
+  "human_review_required": true
+}

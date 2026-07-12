@@ -11,7 +11,7 @@ For the canonical record, use the
 
 | Task | Status | Notes |
 | --- | --- | --- |
-| None | Task1270 hard stop | Task1240-1269 Physical Consistency Assurance Foundation completed on isolated branch pending Founder review; no regional/extreme evaluation, external model/data, score/rank/admission, PR merge or Task1270+. |
+| None | Task1290 hard stop | Task1270-1289 Controlled Extreme Event and Regional Fitness Evidence Foundation completed on isolated branch pending Founder review; no paid access, external model execution, score/rank/admission, PR merge or Task1290+. |
 
 ## Recently Completed Local Work
 

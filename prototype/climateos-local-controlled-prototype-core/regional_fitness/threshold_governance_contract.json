@@ -1,0 +1,14 @@
+{
+  "contract_id": "CLIMATEOS-REGIONAL-THRESHOLD-GOVERNANCE-v0.1",
+  "required_fields": ["threshold_record_id", "authority", "document_id", "version", "jurisdiction", "event_type", "variable", "unit", "time_window", "reference_period", "spatial_support", "threshold_purpose", "valid_from", "retrieved_at", "review_status"],
+  "threshold_purposes": ["operational_warning", "climate_extreme_index", "impact_threshold", "exploratory_research"],
+  "rules": [
+    "purposes are not interchangeable",
+    "operational warnings are not model admission thresholds",
+    "thresholds must not transfer across regions without explicit scientific review",
+    "post-test threshold selection is prohibited",
+    "unknown version, unit, time window or reference period blocks evaluation"
+  ],
+  "default_status": "not_established",
+  "human_review_required": true
+}
