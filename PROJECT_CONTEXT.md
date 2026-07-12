@@ -40,6 +40,10 @@ lock retry, atomic candidate/audit creation and deterministic regression checks.
 Task741–900 validates a bounded local Alpha Review Workbench through synthetic
 human-action trials and conditionally accepts it only for Founder-controlled
 local review.
+Task901–1000 closes the Beta-readiness review after a real Founder human test,
+keyboard and 200% zoom checks. The result is conditional readiness for limited
+local Beta preparation, with independent observer, Narrator, onboarding and
+readable-interface gaps carried forward.
 
 ## Current Architecture Direction
 
@@ -55,10 +59,10 @@ Founder-reserved EcoEngine assets and `D:\eco_engine_v200` are private and outsi
 
 ## Current Hard Stop
 
-Task900 is the current hard stop. The repository contains a synthetic local
-Alpha Review Workbench with Human Authority warnings, not a production runtime.
-No external model, live data, MCP, authentication, automation, deployment,
-private EcoEngine, or Task901+ starts automatically.
+Task1000 is the current hard stop. The repository contains a human-tested
+synthetic local Alpha Review Workbench, not a production runtime. No external
+model, live data, MCP, authentication, automation, deployment, private
+EcoEngine, or Task1001+ starts automatically.
 
 ## Recovery Rule
 

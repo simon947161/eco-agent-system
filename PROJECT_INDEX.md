@@ -502,6 +502,8 @@ localhost-only, synthetic, human-controlled and non-operational.
 - [Task741-900 Founder Gate Brief](docs/tasks/task741_900_founder_gate/CLIMATEOS_TASK741_900_FOUNDER_GATE_BRIEF.md)
 - [Task741-900 Bounded Local Human Use Trial](docs/tasks/task741_900_bounded_local_human_use_trial/README.md)
 - [Task901-1000 Beta Readiness Founder Gate Brief](docs/tasks/task901_1000_beta_readiness/CLIMATEOS_TASK901_1000_FOUNDER_GATE_BRIEF.md)
+- [Task901-960 Founder Human Test Evidence](docs/tasks/task901_1000_beta_readiness/TASK901_960_FOUNDER_HUMAN_TEST_EVIDENCE.md)
+- [Task1000 Closure To Task1200 Scientific Roadmap ACTP](docs/context-packets/2026-07-12_CLIMATEOS_TASK1000_CLOSURE_TO_TASK1200_SCIENTIFIC_ROADMAP_ACTP.md)
 
 Task721-740 resolves a repeatable SQLite lock baseline blocker in existing
 foreground write paths. It adds bounded lock retry and atomic candidate/audit

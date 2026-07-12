@@ -159,8 +159,10 @@ Hard stop: Task901 is not started and requires a separate Founder Gate.
 
 ## Task901-1000 Beta Readiness Review
 
-Status: In Progress / Waiting for Founder Human Test.
+Status: Completed / Conditionally Ready For Limited Local Beta Preparation.
 
-The Gate Brief, human-test kit, independent observer protocol and automated
-accessibility/security/deliberation review are prepared. Task1000 remains open
-until required human evidence is recorded.
+The Founder human test, keyboard and 200% zoom checks completed. Core evidence
+creation, dispute, audit and restart recovery passed with guidance. Independent
+observer and Narrator tests remain carried blockers, not passed evidence.
+
+Hard stop: Task1001 is not started and requires a separate Founder Gate.

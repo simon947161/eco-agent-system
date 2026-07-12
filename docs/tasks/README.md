@@ -653,5 +653,5 @@ acceptance review. Task901 is not started.
 - [Automated Review](task901_1000_beta_readiness/TASK961_980_AUTOMATED_VALIDATION_SECURITY_DELIBERATION_ESGPLUS.md)
 - [Pending Beta Decision](task901_1000_beta_readiness/TASK981_1000_BETA_READINESS_PENDING_DECISION.md)
 
-Status: In progress. Automated work may proceed, but Task1000 cannot close
-before the Founder human test is recorded.
+Status: Completed with conditional readiness for limited local Beta preparation.
+Task1001 is not started.

@@ -12,7 +12,7 @@ git switch task46-repository-control-codex-batch-queue
 git pull --ff-only origin task46-repository-control-codex-batch-queue
 cd prototype\climateos-local-controlled-prototype-core
 .\.venv\Scripts\Activate.ps1
-uvicorn climateos_local_prototype.main:app --host 127.0.0.1 --port 8000
+python scripts\run_local_service.py --host 127.0.0.1 --port 8000
 ```
 
 Open `http://127.0.0.1:8000` in Chrome and select **Alpha Review**.
@@ -56,3 +56,8 @@ Answer in your own words:
 
 Do not change a `CONFUSED` or `FAILED` result to `PASS`. Confusion is useful
 design evidence.
+
+## Completed Founder Session
+
+The 2026-07-12 session completed with `PASS_WITH_GUIDANCE`. See
+[Task901-960 Founder Human Test Evidence](TASK901_960_FOUNDER_HUMAN_TEST_EVIDENCE.md).
