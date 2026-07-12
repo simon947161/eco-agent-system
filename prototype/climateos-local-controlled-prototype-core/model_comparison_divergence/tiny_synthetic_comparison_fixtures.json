@@ -1,0 +1,81 @@
+{
+  "disclaimer": "Synthetic comparison fixtures only.",
+  "cases": [
+    {
+      "comparison_id": "cmp-agree",
+      "route_id": "r1",
+      "variable_id": "air_temperature",
+      "run_time_utc": "2026-07-12T00:00:00Z",
+      "valid_time_utc": "2026-07-12T06:00:00Z",
+      "eligible_sources": [
+        {
+          "source_id": "physics",
+          "value_token": "same"
+        },
+        {
+          "source_id": "ai",
+          "value_token": "same"
+        }
+      ],
+      "excluded_sources": [],
+      "comparison_state": "AGREEMENT",
+      "event_context": "synthetic-normal",
+      "ood_status": "IN_DOMAIN",
+      "systematic_bias_status": "NOT_EVALUATED",
+      "downstream_uncertainty": "DECLARED_NOT_QUANTIFIED",
+      "human_review_status": "AVAILABLE",
+      "audit": []
+    },
+    {
+      "comparison_id": "cmp-diverge",
+      "route_id": "r2",
+      "variable_id": "precipitation_amount",
+      "run_time_utc": "2026-07-12T00:00:00Z",
+      "valid_time_utc": "2026-07-12T12:00:00Z",
+      "eligible_sources": [
+        {
+          "source_id": "physics",
+          "value_token": "dry"
+        },
+        {
+          "source_id": "ai",
+          "value_token": "wet"
+        }
+      ],
+      "excluded_sources": [],
+      "comparison_state": "EVENT_SPECIFIC_DIVERGENCE",
+      "event_context": "synthetic-heavy-rain",
+      "ood_status": "IN_DOMAIN",
+      "systematic_bias_status": "INSUFFICIENT_WINDOWS",
+      "downstream_uncertainty": "HIGH_UNRESOLVED",
+      "human_review_status": "REQUIRED",
+      "audit": []
+    },
+    {
+      "comparison_id": "cmp-ood",
+      "route_id": "r3",
+      "variable_id": "wind_speed",
+      "run_time_utc": "2026-07-12T00:00:00Z",
+      "valid_time_utc": "2026-07-12T18:00:00Z",
+      "eligible_sources": [
+        {
+          "source_id": "physics",
+          "value_token": "token"
+        }
+      ],
+      "excluded_sources": [
+        {
+          "source_id": "ai",
+          "reason": "OOD"
+        }
+      ],
+      "comparison_state": "OOD_UNRESOLVED",
+      "event_context": "synthetic-extreme-wind",
+      "ood_status": "UNRESOLVED",
+      "systematic_bias_status": "NOT_EVALUATED",
+      "downstream_uncertainty": "HIGH_UNRESOLVED",
+      "human_review_status": "REQUIRED",
+      "audit": []
+    }
+  ]
+}
