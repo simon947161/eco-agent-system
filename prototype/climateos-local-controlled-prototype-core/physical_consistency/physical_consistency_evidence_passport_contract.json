@@ -1,0 +1,30 @@
+{
+  "contract_version": "0.1",
+  "task_range": "Task1240-1269",
+  "required": [
+    "physical_passport_id",
+    "model_registry_id",
+    "metric_catalog_version",
+    "prediction_declaration_ref",
+    "reference_declaration_ref",
+    "variable_gate_result",
+    "reference_sensitivity_status",
+    "tolerance_status",
+    "metric_evidence_items",
+    "missing_evidence",
+    "disputes",
+    "counter_evidence",
+    "uncertainty",
+    "revision",
+    "revision_history_refs",
+    "audit_refs",
+    "responsible_human",
+    "passport_state",
+    "claim_boundary"
+  ],
+  "passport_states": ["contract_candidate", "evidence_required", "metadata_reviewed_no_execution", "disputed", "superseded", "archived"],
+  "metric_evidence_states": ["not_evaluated", "requirements_incomplete", "synthetic_contract_checked", "disputed", "superseded"],
+  "reference_sensitivity_states": ["not_tested", "required_before_interpretation", "synthetic_declaration_only", "disputed"],
+  "forbidden_outputs": ["metric_value_from_real_data", "physical_consistency_score", "model_rank", "pass_fail", "scientific_validation", "operational_approval", "model_admission"],
+  "rule": "The passport records readiness, missing evidence and challenge history. Task1240-1269 does not calculate or conclude physical consistency."
+}

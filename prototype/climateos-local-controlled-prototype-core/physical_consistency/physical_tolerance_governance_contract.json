@@ -1,0 +1,25 @@
+{
+  "contract_version": "0.1",
+  "task_range": "Task1240-1269",
+  "tolerance_statuses": ["not_established", "research_default_recorded", "reference_relative_review_required", "disputed", "superseded"],
+  "global_default": "not_established",
+  "effective_resolution_algorithm_parameters": {
+    "energy_retention_fraction": 0.5,
+    "consecutive_wavenumbers": 5,
+    "status": "research_default_recorded",
+    "boundary": "Algorithm parameters reported by the PhysMetrics.Weather v2 preprint; not a pass/fail or admission threshold."
+  },
+  "other_metric_tolerances": {
+    "dry_air_mass_drift": "not_established",
+    "anomaly_water_drift": "not_established",
+    "anomaly_energy_drift": "not_established",
+    "spectral_residual": "not_established",
+    "spectral_divergence": "not_established",
+    "geostrophic_rmse": "not_established",
+    "hydrostatic_rmse": "not_established",
+    "mean_lapse_rate_wasserstein": "not_established"
+  },
+  "tolerance_proposal_requires": ["metric_version", "reference_dataset_version", "lead_time", "grid_and_regridding", "sensitivity_analysis", "scientific_rationale", "expert_reviewer", "uncertainty", "audit_event"],
+  "forbidden_actions": ["infer_tolerance_from_best_model", "convert_near_zero_to_zero_requirement", "reuse_reference_specific_value_as_universal_threshold", "automatic_pass_fail", "automatic_model_admission"],
+  "rule": "No numerical result can become a pass/fail threshold without separate evidence, sensitivity analysis and human scientific approval."
+}

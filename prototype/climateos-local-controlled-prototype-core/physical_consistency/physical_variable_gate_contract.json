@@ -1,0 +1,50 @@
+{
+  "contract_version": "0.1",
+  "task_range": "Task1240-1269",
+  "required_dataset_declarations": [
+    "dataset_id",
+    "dataset_role",
+    "canonical_source",
+    "version_or_snapshot",
+    "licence_status",
+    "variables",
+    "units",
+    "latitude_coordinate",
+    "longitude_coordinate",
+    "pressure_levels_hpa",
+    "initialization_times",
+    "forecast_leads",
+    "grid_type",
+    "grid_resolution",
+    "regridding_method",
+    "surface_pressure_method",
+    "missing_data_policy",
+    "uncertainty",
+    "responsible_human"
+  ],
+  "dataset_roles": ["synthetic_prediction_declaration", "synthetic_reference_declaration"],
+  "canonical_units": {
+    "surface_pressure": "Pa",
+    "temperature": "K",
+    "u_wind": "m s-1",
+    "v_wind": "m s-1",
+    "specific_humidity": "kg kg-1",
+    "geopotential": "m2 s-2"
+  },
+  "surface_pressure_methods": ["native_declared", "derived_declared", "reference_substitution_declared", "missing"],
+  "blocking_conditions": [
+    "non_synthetic_dataset",
+    "unknown_or_restricted_licence",
+    "missing_canonical_source_or_version",
+    "missing_required_variable",
+    "unit_mismatch",
+    "missing_or_insufficient_pressure_levels",
+    "prediction_reference_grid_mismatch",
+    "undeclared_regridding",
+    "missing_surface_pressure_method",
+    "missing_time_or_lead_alignment",
+    "missing_responsible_human"
+  ],
+  "gate_results": ["declaration_complete_no_execution", "evidence_required", "blocked"],
+  "rule": "Passing the declaration gate means only that metadata is sufficient for future review. It does not authorize data access, metric execution or model admission."
+}
