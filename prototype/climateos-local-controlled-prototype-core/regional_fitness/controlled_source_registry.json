@@ -1,0 +1,52 @@
+{
+  "registry_id": "CLIMATEOS-TASK1270-CONTROLLED-SOURCE-DISCOVERY-2026-07-12",
+  "cost_policy": "free_open_official_or_already_owned_first; Founder approval required before any paid commitment",
+  "sources": [
+    {
+      "source_id": "BOM-HEATWAVE-KNOWLEDGE-CENTRE",
+      "provider": "Australian Bureau of Meteorology",
+      "canonical_url": "https://www.bom.gov.au/resources/learn-and-explore/heatwave-knowledge-centre",
+      "authority_type": "Australian Government official",
+      "access_cost_status": "public_web_access",
+      "licence_status": "reuse_terms_not_yet_recorded",
+      "content_role": "definition and service metadata only",
+      "retrieved_at": "2026-07-12",
+      "ingestion_status": "metadata_snapshot_only_not_evaluation_data"
+    },
+    {
+      "source_id": "ADAPTNSW-SOUTH-EAST-TABLELANDS",
+      "provider": "NSW Government AdaptNSW",
+      "canonical_url": "https://www.climatechange.environment.nsw.gov.au/my-region/south-east-and-tablelands",
+      "authority_type": "NSW Government official",
+      "access_cost_status": "public_web_access",
+      "licence_status": "reuse_terms_not_yet_recorded",
+      "content_role": "regional authority and projection catalogue metadata",
+      "retrieved_at": "2026-07-12",
+      "ingestion_status": "metadata_snapshot_only_geometry_and_projection_values_not_ingested"
+    },
+    {
+      "source_id": "CMA-DATA-SERVICE-CENTRE",
+      "provider": "China Meteorological Administration data service",
+      "canonical_url": "https://data.cma.cn/",
+      "authority_type": "China official meteorological data portal candidate",
+      "access_cost_status": "account_product_and_cost_conditions_require_product_level_review",
+      "licence_status": "not_verified",
+      "content_role": "candidate observations and climate products",
+      "retrieved_at": "2026-07-12",
+      "ingestion_status": "blocked_pending_access_licence_and_product_review"
+    },
+    {
+      "source_id": "KARAMAY-GOVERNMENT-PORTAL",
+      "provider": "Karamay Municipal Government",
+      "canonical_url": "https://www.klmy.gov.cn/",
+      "authority_type": "local government source candidate",
+      "access_cost_status": "public_web_candidate",
+      "licence_status": "not_verified",
+      "content_role": "administrative and local contextual source discovery",
+      "retrieved_at": "2026-07-12",
+      "ingestion_status": "blocked_pending_specific_document_and_reuse_review"
+    }
+  ],
+  "environmental_observation_values_ingested": 0,
+  "note": "No observation value is copied or invented until product-level licence, variables, coverage and integrity checks pass."
+}

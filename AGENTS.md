@@ -105,6 +105,32 @@ single data provider is the system.
 11. Restore test-generated artifacts if they are unrelated to the task.
 12. Stop after task completion when the user asks for batch-control behavior.
 
+## Founder Cost And Dependency Principle
+
+This principle applies to every repository task, not only ClimateOS data work.
+
+1. Prefer free, open, inspectable, and locally controllable sources, tools, data,
+   models, services, and dependencies when they can meet the task need.
+2. Treat "free" and "open" as claims that require licence, access-condition,
+   provenance, privacy, security, sustainability, and exit-path checks.
+3. Keep downloads, storage, compute, API usage, subscriptions, and operational
+   commitments proportionate and observable. Use a small controlled sample
+   before proposing scale-up.
+4. Do not purchase, subscribe, start a paid trial requiring payment details,
+   incur metered cost, or create a paid external commitment without the
+   Founder's explicit prior approval.
+5. Before asking for paid approval, explain the need, expected cost and billing
+   basis, free or lower-cost alternatives, licence and lock-in implications,
+   expected value, and a bounded stop/exit plan.
+6. If cost, licence, access, or future obligation is unclear, pause the
+   chargeable action, record the uncertainty, and ask the Founder.
+7. Never interpret this principle as a ban on real data or external evidence.
+   Real evidence is encouraged when authorised, lawfully reusable, traceable,
+   scientifically suitable, and handled within the approved task boundary.
+
+The durable governance record is
+[Founder Resource and Cost Control Principle](00_PROJECT_CONTROL/FOUNDER_RESOURCE_AND_COST_CONTROL_PRINCIPLE.md).
+
 ## Documentation Standards
 
 Use plain Markdown. Write for future contributors, research collaborators,

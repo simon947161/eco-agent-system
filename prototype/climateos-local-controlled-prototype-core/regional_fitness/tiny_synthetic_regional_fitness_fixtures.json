@@ -1,0 +1,30 @@
+{
+  "fixture_boundary": "synthetic_only_no_real_event_or_location_measurement",
+  "fixtures": [
+    {
+      "fixture_id": "SYN-KARAMAY-HEAT-001",
+      "region_id": "CN-XJ-KARAMAY",
+      "event_type": "extreme_heat",
+      "threshold_status": "not_established",
+      "sample_status": "case_study_only",
+      "ood_status": "cannot_determine",
+      "expected_gate": "blocked"
+    },
+    {
+      "fixture_id": "SYN-NSW-RAIN-001",
+      "region_id": "AU-NSW-SOUTH-EAST-TABLELANDS",
+      "event_type": "heavy_precipitation",
+      "threshold_status": "not_established",
+      "sample_status": "insufficient_event_support",
+      "ood_status": "ood_suspected",
+      "expected_gate": "blocked"
+    },
+    {
+      "fixture_id": "SYN-KARAMAY-DUST-MISSING-VISIBILITY",
+      "region_id": "CN-XJ-KARAMAY",
+      "event_type": "dust_or_sand",
+      "available_variables": ["wind_speed"],
+      "expected_gate": "blocked_missing_visibility_or_weather_code"
+    }
+  ]
+}

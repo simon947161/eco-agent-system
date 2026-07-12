@@ -1,0 +1,11 @@
+{
+  "contract_id": "CLIMATEOS-SAMPLE-NONSTATIONARITY-OOD-GATE-v0.1",
+  "sample_fields": ["available_years", "time_steps", "independent_event_count", "events_by_season", "events_by_subregion", "missing_fraction", "declustering_method", "split_periods", "tail_effective_sample_size", "uncertainty_method"],
+  "sample_statuses": ["sample_requirement_not_established", "insufficient_event_support", "case_study_only", "exploratory_support", "method_specific_requirement_met"],
+  "numeric_universal_minimum": null,
+  "nonstationarity_fields": ["fixed_reference_period", "evaluation_period", "trend_treatment", "fixed_or_moving_threshold", "observation_system_changes", "land_use_changes", "applicability_period"],
+  "ood_dimensions": ["spatial", "climate_regime", "elevation_or_coast", "temporal", "event_magnitude", "seasonal", "variable_support", "reference_product"],
+  "ood_statuses": ["in_distribution", "ood_suspected", "ood_confirmed", "cannot_determine"],
+  "blocked_practices": ["overlapping windows counted as independent events", "test-period threshold tuning", "historical skill treated as future-climate fitness", "cross-region threshold transfer without review"],
+  "automatic_fitness_conclusion": false
+}

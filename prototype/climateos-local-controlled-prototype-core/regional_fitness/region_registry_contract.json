@@ -1,0 +1,30 @@
+{
+  "contract_id": "CLIMATEOS-REGION-REGISTRY-v0.1",
+  "required_fields": ["region_id", "name", "jurisdiction", "boundary_authority", "boundary_version", "geometry_status", "climate_context", "limitations", "human_review_required"],
+  "regions": [
+    {
+      "region_id": "CN-XJ-KARAMAY",
+      "name": "Karamay, Xinjiang, China",
+      "jurisdiction": "CN-XJ",
+      "boundary_authority": "official administrative boundary required",
+      "boundary_version": "not_yet_ingested",
+      "geometry_status": "blocked_pending_authoritative_geometry_and_reuse_review",
+      "climate_context": "inland arid regional case; must not represent all Xinjiang or China",
+      "subregions": ["Karamay District", "Dushanzi District", "Baijiantan District", "Urho District"],
+      "limitations": ["administrative and climate-study boundaries may differ", "local station representativeness requires review"],
+      "human_review_required": true
+    },
+    {
+      "region_id": "AU-NSW-SOUTH-EAST-TABLELANDS",
+      "name": "NSW South East and Tablelands",
+      "jurisdiction": "AU-NSW",
+      "boundary_authority": "NSW Government AdaptNSW",
+      "boundary_version": "retrieval_snapshot_2026-07-12",
+      "geometry_status": "metadata_discovered_geometry_not_ingested",
+      "climate_context": "coast, tablelands and alpine subregional differences must be retained",
+      "subregions": ["South Coast", "Southern Tablelands", "Snowy Mountains"],
+      "limitations": ["ACT is not included by default", "subregional elevation and coast effects require separate evidence"],
+      "human_review_required": true
+    }
+  ]
+}
