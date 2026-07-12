@@ -1,0 +1,81 @@
+{
+  "disclaimer": "Synthetic orchestration fixtures only; no forecasts.",
+  "cases": [
+    {
+      "case_id": "parallel-aligned",
+      "route_id": "route-1",
+      "run_time_utc": "2026-07-12T00:00:00Z",
+      "valid_time_utc": "2026-07-12T06:00:00Z",
+      "variable_id": "air_temperature",
+      "sources": [
+        {
+          "source_id": "synthetic-physics",
+          "source_class": "PHYSICS_MODEL",
+          "availability": "AVAILABLE",
+          "value_token": "physics-token"
+        },
+        {
+          "source_id": "synthetic-ai",
+          "source_class": "AI_MODEL",
+          "availability": "AVAILABLE",
+          "value_token": "ai-token"
+        }
+      ],
+      "reference_source_id": "synthetic-physics",
+      "fallback_source_ids": [
+        "synthetic-physics"
+      ],
+      "disagreement_status": "NOT_EVALUATED",
+      "human_review_status": "AVAILABLE",
+      "audit": []
+    },
+    {
+      "case_id": "stale-ai",
+      "route_id": "route-2",
+      "run_time_utc": "2026-07-12T00:00:00Z",
+      "valid_time_utc": "2026-07-12T12:00:00Z",
+      "variable_id": "precipitation_amount",
+      "sources": [
+        {
+          "source_id": "synthetic-physics",
+          "source_class": "PHYSICS_MODEL",
+          "availability": "AVAILABLE",
+          "value_token": "physics-token"
+        },
+        {
+          "source_id": "synthetic-ai",
+          "source_class": "AI_MODEL",
+          "availability": "STALE",
+          "value_token": "stale-token"
+        }
+      ],
+      "reference_source_id": "synthetic-physics",
+      "fallback_source_ids": [
+        "synthetic-physics"
+      ],
+      "disagreement_status": "SOURCE_DEGRADED",
+      "human_review_status": "REQUIRED",
+      "audit": []
+    },
+    {
+      "case_id": "no-reference",
+      "route_id": "route-3",
+      "run_time_utc": "2026-07-12T00:00:00Z",
+      "valid_time_utc": "2026-07-12T18:00:00Z",
+      "variable_id": "wind_speed",
+      "sources": [
+        {
+          "source_id": "synthetic-ai",
+          "source_class": "AI_MODEL",
+          "availability": "AVAILABLE",
+          "value_token": "ai-token"
+        }
+      ],
+      "reference_source_id": "",
+      "fallback_source_ids": [],
+      "disagreement_status": "INSUFFICIENT_SOURCES",
+      "human_review_status": "REQUIRED",
+      "audit": []
+    }
+  ]
+}
