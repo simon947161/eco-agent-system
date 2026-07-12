@@ -1,0 +1,44 @@
+{
+  "contract_id": "climateos.model_evidence_passport_aggregation.v0.2",
+  "decision_scope_required": [
+    "model_id",
+    "model_version",
+    "source_revision",
+    "purpose",
+    "variables",
+    "region",
+    "forecast_horizons",
+    "evidence_snapshot_id",
+    "licence_status",
+    "review_date",
+    "expiry_date"
+  ],
+  "evidence_sections": [
+    "model_registry",
+    "statistical_evaluation",
+    "physical_consistency",
+    "extreme_event",
+    "regional_fitness",
+    "ood_nonstationarity",
+    "licence_provenance_cost_dependency_exit",
+    "disputes_counter_evidence"
+  ],
+  "blocking_conditions": [
+    "missing_scope",
+    "missing_evidence_snapshot",
+    "missing_responsible_human",
+    "licence_or_provenance_blocked",
+    "automatic_real_model_decision_attempt"
+  ],
+  "candidate_states": [
+    "ADMITTED_FOR_RESEARCH",
+    "ADMITTED_WITH_LIMITATIONS",
+    "REQUIRES_FURTHER_EVIDENCE",
+    "NOT_ADMITTED",
+    "LICENCE_OR_PROVENANCE_BLOCKED"
+  ],
+  "real_model_rule": "human_decision_required",
+  "automatic_scoring": false,
+  "automatic_ranking": false,
+  "production_authority": false
+}
