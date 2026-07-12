@@ -1,0 +1,108 @@
+{
+  "disclaimer": "Synthetic failure and fallback fixtures only.",
+  "cases": [
+    {
+      "event_id": "failure-stale",
+      "route_id": "route-1",
+      "detected_at": "2026-07-12T00:00:00Z",
+      "source_conditions": [
+        {
+          "source_id": "ai-primary",
+          "condition": "STALE"
+        },
+        {
+          "source_id": "physics-reference",
+          "condition": "AVAILABLE"
+        }
+      ],
+      "primary_source_id": "ai-primary",
+      "fallback_candidates": [
+        {
+          "source_id": "physics-reference",
+          "eligibility": "RESEARCH_CANDIDATE"
+        }
+      ],
+      "failure_state": "HUMAN_ACK_REQUIRED",
+      "reason": "primary source stale",
+      "limitations": [
+        "fallback differs from primary"
+      ],
+      "human_review": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reason": null,
+        "reviewed_at": null
+      },
+      "expiry": "2026-07-12T06:00:00Z",
+      "recovery": {
+        "status": "NOT_STARTED",
+        "evidence_snapshot_id": null
+      },
+      "audit": []
+    },
+    {
+      "event_id": "failure-none",
+      "route_id": "route-2",
+      "detected_at": "2026-07-12T00:00:00Z",
+      "source_conditions": [
+        {
+          "source_id": "ai-primary",
+          "condition": "INVALID"
+        },
+        {
+          "source_id": "physics-reference",
+          "condition": "MISSING"
+        }
+      ],
+      "primary_source_id": "ai-primary",
+      "fallback_candidates": [],
+      "failure_state": "STOP_REQUIRED",
+      "reason": "no eligible source",
+      "limitations": [
+        "no forecast route available"
+      ],
+      "human_review": {
+        "status": "REQUIRED",
+        "reviewer": null,
+        "reason": null,
+        "reviewed_at": null
+      },
+      "expiry": "2026-07-12T01:00:00Z",
+      "recovery": {
+        "status": "NOT_STARTED",
+        "evidence_snapshot_id": null
+      },
+      "audit": []
+    },
+    {
+      "event_id": "failure-recovery",
+      "route_id": "route-3",
+      "detected_at": "2026-07-12T00:00:00Z",
+      "source_conditions": [
+        {
+          "source_id": "physics-primary",
+          "condition": "AVAILABLE"
+        }
+      ],
+      "primary_source_id": "physics-primary",
+      "fallback_candidates": [],
+      "failure_state": "RECOVERY_PENDING",
+      "reason": "source returned; new evidence review pending",
+      "limitations": [
+        "recovery not yet accepted"
+      ],
+      "human_review": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reason": null,
+        "reviewed_at": null
+      },
+      "expiry": "2026-07-12T06:00:00Z",
+      "recovery": {
+        "status": "EVIDENCE_REQUIRED",
+        "evidence_snapshot_id": null
+      },
+      "audit": []
+    }
+  ]
+}

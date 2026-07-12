@@ -1,0 +1,51 @@
+{
+  "contract_id": "climateos.failure_fallback_human_review.v0.1",
+  "failure_states": [
+    "NORMAL",
+    "DEGRADED",
+    "FALLBACK_PROPOSED",
+    "HUMAN_ACK_REQUIRED",
+    "RECOVERY_PENDING",
+    "RECOVERED",
+    "STOP_REQUIRED"
+  ],
+  "source_conditions": [
+    "AVAILABLE",
+    "STALE",
+    "MISSING",
+    "INVALID",
+    "CONFLICTING",
+    "OOD_UNRESOLVED"
+  ],
+  "required_record_fields": [
+    "event_id",
+    "route_id",
+    "detected_at",
+    "source_conditions",
+    "primary_source_id",
+    "fallback_candidates",
+    "failure_state",
+    "reason",
+    "limitations",
+    "human_review",
+    "expiry",
+    "recovery",
+    "audit"
+  ],
+  "rules": [
+    "fallback_never_masquerades_as_primary",
+    "no_automatic_production_failover",
+    "stale_missing_invalid_are_visible",
+    "human_ack_required_before_research_fallback",
+    "stop_when_no_eligible_source",
+    "recovery_requires_new_evidence",
+    "history_is_append_only"
+  ],
+  "prohibited_actions": [
+    "automatic_failover",
+    "public_warning",
+    "safety_decision",
+    "live_source_call",
+    "paid_service_activation"
+  ]
+}
