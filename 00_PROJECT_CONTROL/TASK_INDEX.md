@@ -196,3 +196,10 @@ preflight hard stop are implemented on a dedicated review branch. No real model
 was evaluated or admitted. External models, commercial software and paid APIs
 remain legitimate future capabilities through a scoped integration gate, Paid
 Decision Brief and explicit Founder approval.
+
+
+## Task1300-1339 Forecast Source Registry And Source-State Governance
+
+Status: Review.
+
+Provider-neutral registry, eight source states, controlled candidate metadata, synthetic fixtures and hard refusals for connection and customer-experiment activation. No live source or Task1340 work.
