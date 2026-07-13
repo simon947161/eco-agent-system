@@ -1,0 +1,36 @@
+{
+  "status": "NO_REAL_SOURCE_DECLARED_READY",
+  "review_date": "2026-07-12",
+  "records": [
+    {
+      "source_id": "ecmwf-ifs-aifs-open",
+      "state": "REQUIRES_FURTHER_EVIDENCE",
+      "reason": [
+        "no ClimateOS live connection",
+        "no source-specific regional evaluation snapshot",
+        "no Task1500 coupling evidence"
+      ]
+    },
+    {
+      "source_id": "dwd-aicon",
+      "state": "REQUIRES_FURTHER_EVIDENCE",
+      "reason": [
+        "public external access and licence not verified"
+      ]
+    },
+    {
+      "source_id": "bom-access-family",
+      "state": "BLOCKED",
+      "reason": [
+        "selected product licence and commercial rights unresolved"
+      ]
+    },
+    {
+      "source_id": "deepmind-weathernext",
+      "state": "BLOCKED",
+      "reason": [
+        "commercial weight rights not established"
+      ]
+    }
+  ]
+}

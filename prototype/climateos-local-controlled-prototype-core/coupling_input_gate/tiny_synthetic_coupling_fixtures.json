@@ -1,0 +1,90 @@
+{
+  "disclaimer": "Synthetic eligibility fixtures only.",
+  "cases": [
+    {
+      "case_id": "synthetic-complete",
+      "source_id": "synthetic-weather",
+      "source_version": "v1",
+      "variables": [
+        "temperature"
+      ],
+      "region": "synthetic-region",
+      "forecast_horizons": [
+        "6h"
+      ],
+      "licence_status": "synthetic",
+      "evidence_snapshot_id": "snap-1",
+      "review_date": "2026-07-12",
+      "expiry_date": "2026-08-12",
+      "responsible_human": "synthetic-reviewer",
+      "evidence": {
+        "model_admission": "present",
+        "source_registry": "present",
+        "common_weather_data": "present",
+        "orchestration": "present",
+        "comparison_divergence": "present",
+        "failure_fallback": "present",
+        "regional_fitness": "present",
+        "licence_commercial_rights": "present"
+      },
+      "requested_state": "COUPLING_INPUT_CANDIDATE",
+      "limitations": []
+    },
+    {
+      "case_id": "synthetic-limited",
+      "source_id": "synthetic-limited",
+      "source_version": "v1",
+      "variables": [
+        "precipitation"
+      ],
+      "region": "synthetic-region",
+      "forecast_horizons": [
+        "12h"
+      ],
+      "licence_status": "synthetic",
+      "evidence_snapshot_id": "snap-2",
+      "review_date": "2026-07-12",
+      "expiry_date": "2026-08-12",
+      "responsible_human": "synthetic-reviewer",
+      "evidence": {
+        "model_admission": "limited",
+        "source_registry": "present",
+        "common_weather_data": "present",
+        "orchestration": "present",
+        "comparison_divergence": "limited",
+        "failure_fallback": "present",
+        "regional_fitness": "limited",
+        "licence_commercial_rights": "present"
+      },
+      "requested_state": "CANDIDATE_WITH_LIMITATIONS",
+      "limitations": [
+        "regional evidence limited"
+      ]
+    },
+    {
+      "case_id": "synthetic-blocked",
+      "source_id": "synthetic-blocked",
+      "source_version": "v1",
+      "variables": [
+        "wind"
+      ],
+      "region": "synthetic-region",
+      "forecast_horizons": [
+        "18h"
+      ],
+      "licence_status": "unknown",
+      "evidence_snapshot_id": "snap-3",
+      "review_date": "2026-07-12",
+      "expiry_date": "2026-08-12",
+      "responsible_human": "synthetic-reviewer",
+      "evidence": {
+        "source_registry": "present"
+      },
+      "requested_state": "BLOCKED",
+      "limitations": [
+        "licence unknown",
+        "evidence incomplete"
+      ]
+    }
+  ]
+}

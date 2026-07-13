@@ -231,3 +231,10 @@ Fixture-only agreement, divergence, degraded and OOD states with uncertainty, au
 Status: Review.
 
 Fixture-only failure, fallback proposal, human acknowledgement, recovery and stop governance. No automatic failover, public warning, live source or Task1490 work.
+
+
+## Task1490-1499 Coupling Input Eligibility Gate
+
+Status: Review.
+
+Fixture-only eligibility states and evidence checklist with no real source declared ready. No connection, coupling calculation or Task1500 work.
