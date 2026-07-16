@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/contracts/cooma_regional_evidence_admission.schema.json",
+  "title": "ClimateOS Cooma regional evidence admission boundary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "research_anchor", "scale_objects", "evidence_classes", "candidate_records", "translation_rules", "review_roles", "climateos_workos_interface", "boundaries"],
+  "properties": {
+    "schema_id": {"const": "climateos.cooma_evidence_admission.v0.1"},
+    "research_anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["place_name", "anchor_status", "purpose", "future_work_context", "exact_worksite", "planning_terms_state", "local_conclusion_state"],
+      "properties": {
+        "place_name": {"const": "Cooma"},
+        "anchor_status": {"const": "NAMED_REAL_PLACE_NO_SOURCE_VERIFICATION"},
+        "purpose": {"const": "LONG_TERM_ENVIRONMENTAL_CONTEXT_AND_WATER_PROTECTION_SUPPORT"},
+        "future_work_context": {"const": "SEPARATE_WORKOS_BACKFLOW_LIQUID_TRADE_WASTE"},
+        "exact_worksite": {"const": "NOT_PROVIDED_NOT_REQUIRED"},
+        "planning_terms_state": {"const": "RP_DCP_TERMS_REQUIRE_FUTURE_OFFICIAL_VERIFICATION"},
+        "local_conclusion_state": {"const": "NONE"}
+      }
+    },
+    "scale_objects": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["scale_id", "scale_class", "rank", "label", "boundary_status", "automatic_translation_allowed"],
+        "properties": {
+          "scale_id": {"type": "string", "pattern": "^SCALE-[A-Z0-9-]+$"},
+          "scale_class": {"enum": ["GLOBAL_CLIMATE", "SOUTHEAST_AUSTRALIA_REGION", "COOMA_REGIONAL_CONTEXT", "TOWN_CATCHMENT", "OBSERVATION_STATION", "PROPERTY_OR_WORKSITE"]},
+          "rank": {"type": "integer", "minimum": 1, "maximum": 6},
+          "label": {"type": "string", "minLength": 1},
+          "boundary_status": {"const": "CONCEPT_ONLY_NOT_ACQUIRED"},
+          "automatic_translation_allowed": {"const": false}
+        }
+      }
+    },
+    "evidence_classes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": ["OFFICIAL_PLANNING_INSTRUMENT_METADATA", "WATER_CATCHMENT_HYDROLOGY", "METEOROLOGICAL_OBSERVATION", "CLIMATE_REANALYSIS_OR_MODEL_OUTPUT", "WATER_WASTEWATER_INFRASTRUCTURE", "ECOLOGICAL_ENVIRONMENTAL", "LOCAL_OPERATIONAL_KNOWLEDGE", "PRIVATE_WORKSITE_RECORD", "EXPERT_REVIEW"]}
+    },
+    "candidate_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/candidateRecord"}
+    },
+    "translation_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/translationRule"}
+    },
+    "review_roles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role_id", "role_class", "appointment_state", "decision_authority"],
+        "properties": {
+          "role_id": {"type": "string", "pattern": "^ROLE-[A-Z0-9-]+$"},
+          "role_class": {"enum": ["ENVIRONMENTAL_EVIDENCE_STEWARD", "WATER_SYSTEMS_REVIEWER", "PLANNING_INSTRUMENT_REVIEWER", "GIS_SPATIAL_REVIEWER", "DOMAIN_EXPERT", "WORKOS_ACCOUNTABLE_OFFICER"]},
+          "appointment_state": {"const": "UNASSIGNED"},
+          "decision_authority": {"const": "NONE_IN_THIS_BATCH"}
+        }
+      }
+    },
+    "climateos_workos_interface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["interface_status", "climateos_role", "workos_role", "allowed_context_fields", "blocked_fields", "writeback_state"],
+      "properties": {
+        "interface_status": {"const": "SPECIFICATION_ONLY"},
+        "climateos_role": {"const": "REGIONAL_ENVIRONMENTAL_CONTEXT_AND_EVIDENCE_GOVERNANCE"},
+        "workos_role": {"const": "FUTURE_OPERATIONAL_BACKFLOW_LIQUID_TRADE_WASTE_WORK"},
+        "allowed_context_fields": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "blocked_fields": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "writeback_state": {"const": "BLOCKED_PENDING_SEPARATE_AUTHORIZATION"}
+      }
+    },
+    "boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["network_used", "source_accessed", "real_data_acquired", "model_executed", "monitoring_active", "external_action", "private_worksite_data_included", "customer_or_person_data_included", "compliance_decision_formed", "local_environmental_conclusion_formed", "cost_aud", "human_review_required"],
+      "properties": {
+        "network_used": {"const": false},
+        "source_accessed": {"const": false},
+        "real_data_acquired": {"const": false},
+        "model_executed": {"const": false},
+        "monitoring_active": {"const": false},
+        "external_action": {"const": false},
+        "private_worksite_data_included": {"const": false},
+        "customer_or_person_data_included": {"const": false},
+        "compliance_decision_formed": {"const": false},
+        "local_environmental_conclusion_formed": {"const": false},
+        "cost_aud": {"const": 0},
+        "human_review_required": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "candidateRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_id", "fictional", "title", "evidence_class", "authority_state", "source_identity_state", "external_locator", "scale_id", "spatial_footprint_state", "licence_state", "visibility_state", "observed_time", "published_time", "retrieved_time", "revision_state", "content_retained", "temporal_alignment_state", "uncertainty", "review_state", "admission_decision", "allowed_uses", "prohibited_uses"],
+      "properties": {
+        "record_id": {"type": "string", "pattern": "^FIC-COOMA-[0-9]{3}$"},
+        "fictional": {"const": true},
+        "title": {"type": "string", "minLength": 1},
+        "evidence_class": {"type": "string"},
+        "authority_state": {"const": "UNVERIFIED_FIXTURE"},
+        "source_identity_state": {"const": "NOT_ACCESSED"},
+        "external_locator": {"type": "null"},
+        "scale_id": {"type": "string"},
+        "spatial_footprint_state": {"const": "NOT_ACQUIRED"},
+        "licence_state": {"enum": ["LICENCE_UNKNOWN", "RESTRICTED", "PRIVATE_WORKSITE", "QUARANTINED"]},
+        "visibility_state": {"enum": ["NOT_CHECKED", "PRIVATE_NOT_INCLUDED"]},
+        "observed_time": {"type": "null"},
+        "published_time": {"type": "null"},
+        "retrieved_time": {"type": "null"},
+        "revision_state": {"const": "FICTIONAL_V0"},
+        "content_retained": {"const": false},
+        "temporal_alignment_state": {"const": "NOT_TESTABLE_NO_SOURCE"},
+        "uncertainty": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["data_quality", "spatial_representativeness", "temporal_alignment", "stationarity", "alternative_explanations"],
+          "properties": {
+            "data_quality": {"const": "NOT_ASSESSED"},
+            "spatial_representativeness": {"const": "NOT_ASSESSED"},
+            "temporal_alignment": {"const": "NOT_ASSESSED"},
+            "stationarity": {"const": "NOT_ASSESSED"},
+            "alternative_explanations": {"const": "NOT_ASSESSED"}
+          }
+        },
+        "review_state": {"const": "NOT_REVIEWED"},
+        "admission_decision": {"const": "BLOCKED_NO_SOURCE_ACCESS"},
+        "allowed_uses": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"const": "INTERFACE_TEST_ONLY"}},
+        "prohibited_uses": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}
+      }
+    },
+    "translationRule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rule_id", "from_scale_id", "to_scale_id", "status", "required_checks", "automatic_translation", "output_state", "prohibited_inference"],
+      "properties": {
+        "rule_id": {"type": "string", "pattern": "^TRANS-[0-9]{3}$"},
+        "from_scale_id": {"type": "string"},
+        "to_scale_id": {"type": "string"},
+        "status": {"const": "SPECIFICATION_ONLY"},
+        "required_checks": {"type": "array", "minItems": 6, "uniqueItems": true, "items": {"type": "string"}},
+        "automatic_translation": {"const": false},
+        "output_state": {"const": "BLOCKED_PENDING_EVIDENCE_AND_HUMAN_REVIEW"},
+        "prohibited_inference": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
