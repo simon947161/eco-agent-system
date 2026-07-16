@@ -1,0 +1,60 @@
+{
+  "schema_id": "climateos.bondo.evidence_passport.v0.1",
+  "passport": {
+    "passport_id": "CLIMATEOS-AU-NSW-BONDO-WIND-EP-0001",
+    "subject": "proposed Bondo Wind Farm public wind-evidence state",
+    "project_identities": ["NSW SSD-86276211", "EPBC 2026/10465"],
+    "evidence_cutoff": "2026-07-15",
+    "steward": "ClimateOS Founder-controlled documentation process",
+    "raw_data_included": false,
+    "machine_readable_gis_included": false,
+    "models_or_weights_included": false,
+    "external_account_or_paid_source": false,
+    "human_scientific_approval": "NONE",
+    "permitted_uses": ["provenance review", "contradiction review", "readiness review"],
+    "prohibited_uses": ["wind resource conclusion", "energy yield conclusion", "design decision", "planning decision", "safety decision", "investment decision"]
+  },
+  "evidence": [
+    {
+      "evidence_id": "E-NSW-001",
+      "title": "NSW Planning project page identity from repository-authored passport",
+      "authority_class": "OFFICIAL",
+      "version_state": "ACCESSIBLE_METADATA",
+      "admission": "IDENTITY",
+      "retained_content": false,
+      "licence_state": "METADATA_ONLY"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C-001",
+      "statement": "Bondo Wind Farm is a real proposed project",
+      "classification": "official identity fact",
+      "readable_state": "admitted",
+      "controlled_states": ["ADMITTED_IDENTITY"],
+      "supporting_evidence_ids": ["E-NSW-001"],
+      "contradicting_evidence_ids": [],
+      "gap_ids": [],
+      "human_review_required": false
+    },
+    {
+      "claim_id": "C-010",
+      "statement": "Bondo has an independently validated strong wind resource",
+      "classification": "site-wind conclusion",
+      "readable_state": "prohibited/not established",
+      "controlled_states": ["MISSING_EVIDENCE", "PROHIBITED_CONCLUSION"],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [],
+      "gap_ids": ["G-009"],
+      "human_review_required": true
+    }
+  ],
+  "version_conflicts": [],
+  "gaps": [
+    {
+      "gap_id": "G-009",
+      "required_evidence": "consenting qualified reviewer",
+      "blocks": ["accountable scientific admission"]
+    }
+  ]
+}

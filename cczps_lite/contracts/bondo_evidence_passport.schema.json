@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "climateos.bondo.evidence_passport.v0.1",
+  "title": "ClimateOS Bondo Evidence Passport v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "passport", "evidence", "claims", "version_conflicts", "gaps"],
+  "properties": {
+    "schema_id": {"const": "climateos.bondo.evidence_passport.v0.1"},
+    "passport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passport_id", "subject", "project_identities", "evidence_cutoff", "steward", "raw_data_included", "machine_readable_gis_included", "models_or_weights_included", "external_account_or_paid_source", "human_scientific_approval", "permitted_uses", "prohibited_uses"],
+      "properties": {
+        "passport_id": {"type": "string", "minLength": 1},
+        "subject": {"type": "string", "minLength": 1},
+        "project_identities": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "evidence_cutoff": {"type": "string", "format": "date"},
+        "steward": {"type": "string", "minLength": 1},
+        "raw_data_included": {"const": false},
+        "machine_readable_gis_included": {"const": false},
+        "models_or_weights_included": {"const": false},
+        "external_account_or_paid_source": {"const": false},
+        "human_scientific_approval": {"const": "NONE"},
+        "permitted_uses": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "prohibited_uses": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+    "claims": {"type": "array", "items": {"$ref": "#/$defs/claim"}},
+    "version_conflicts": {"type": "array", "items": {"$ref": "#/$defs/versionConflict"}},
+    "gaps": {"type": "array", "items": {"$ref": "#/$defs/gap"}}
+  },
+  "$defs": {
+    "controlledState": {"enum": ["ADMITTED_IDENTITY", "ADMITTED_ATTRIBUTED_STATEMENT", "CONTEXT_ONLY", "VERSION_CONFLICT", "MISSING_EVIDENCE", "REJECTED_INFERENCE", "PROHIBITED_CONCLUSION", "HUMAN_REVIEW_REQUIRED"]},
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_id", "title", "authority_class", "version_state", "admission", "retained_content", "licence_state"],
+      "properties": {
+        "evidence_id": {"type": "string", "pattern": "^E-[A-Z0-9-]+$"},
+        "title": {"type": "string", "minLength": 1},
+        "authority_class": {"enum": ["OFFICIAL", "PROPONENT", "DERIVED_CONTEXT", "OTHER_EXPLICIT"]},
+        "version_state": {"enum": ["ACCESSIBLE_METADATA", "IDENTITY_ONLY", "INACCESSIBLE", "WITHDRAWN", "SUPERSEDED"]},
+        "admission": {"enum": ["IDENTITY", "ATTRIBUTED_STATEMENT", "CONTEXT_ONLY", "BLOCKED_USE"]},
+        "retained_content": {"const": false},
+        "licence_state": {"enum": ["METADATA_ONLY", "LICENCE_UNKNOWN", "REUSE_NOT_GRANTED"]}
+      }
+    },
+    "claim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["claim_id", "statement", "classification", "readable_state", "controlled_states", "supporting_evidence_ids", "contradicting_evidence_ids", "gap_ids", "human_review_required"],
+      "properties": {
+        "claim_id": {"type": "string", "pattern": "^C-[0-9]{3}$"},
+        "statement": {"type": "string", "minLength": 1},
+        "classification": {"type": "string", "minLength": 1},
+        "readable_state": {"type": "string", "minLength": 1},
+        "controlled_states": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/controlledState"}},
+        "supporting_evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "contradicting_evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "gap_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "human_review_required": {"type": "boolean"}
+      }
+    },
+    "versionConflict": {
+      "type": "object", "additionalProperties": false,
+      "required": ["conflict_id", "node_ids", "conflict_type", "resolution_rule", "state"],
+      "properties": {
+        "conflict_id": {"type": "string", "pattern": "^V-[0-9]{3}$"},
+        "node_ids": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string"}},
+        "conflict_type": {"type": "string", "minLength": 1},
+        "resolution_rule": {"type": "string", "minLength": 1},
+        "state": {"enum": ["UNRESOLVED", "BLOCKED", "RESOLVED_BY_HUMAN_REVIEW"]}
+      }
+    },
+    "gap": {
+      "type": "object", "additionalProperties": false,
+      "required": ["gap_id", "required_evidence", "blocks"],
+      "properties": {
+        "gap_id": {"type": "string", "pattern": "^G-[0-9]{3}$"},
+        "required_evidence": {"type": "string", "minLength": 1},
+        "blocks": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+      }
+    }
+  }
+}
