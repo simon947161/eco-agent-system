@@ -1,0 +1,21 @@
+{
+  "schema_id": "climateos.cooma_evidence_admission.v0.1",
+  "place_name": "Cooma",
+  "classification": "FICTIONAL_EVIDENCE_ADMISSION_PREVIEW_ONLY",
+  "scale_count": 6,
+  "candidate_record_count": 4,
+  "candidate_records_by_class": {
+    "METEOROLOGICAL_OBSERVATION": 1,
+    "OFFICIAL_PLANNING_INSTRUMENT_METADATA": 1,
+    "PRIVATE_WORKSITE_RECORD": 1,
+    "WATER_CATCHMENT_HYDROLOGY": 1
+  },
+  "translation_rule_count": 5,
+  "review_role_count": 6,
+  "admitted_evidence_count": 0,
+  "source_access_count": 0,
+  "local_environmental_conclusion": "NONE",
+  "compliance_decision": "NONE",
+  "workos_interface_status": "SPECIFICATION_ONLY_NO_PRIVATE_OR_OPERATIONAL_DATA",
+  "next_gate": "FOUNDER_DECISION_BEFORE_ANY_REAL_SOURCE_OR_TASK1681"
+}
