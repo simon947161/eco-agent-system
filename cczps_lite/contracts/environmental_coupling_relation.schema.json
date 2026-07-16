@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/contracts/environmental_coupling_relation.schema.json",
+  "title": "ClimateOS bounded environmental coupling graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "graph", "evidence_sources", "states", "relations", "boundaries"],
+  "properties": {
+    "schema_id": {"const": "climateos.environmental_coupling_graph.v0.1"},
+    "graph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["graph_id", "title", "classification", "purpose", "geography", "time_scope"],
+      "properties": {
+        "graph_id": {"type": "string", "pattern": "^ECG-[A-Z0-9-]+$"},
+        "title": {"type": "string", "minLength": 1},
+        "classification": {"const": "REPOSITORY_AUTHORED_STATIC_SYNTHETIC_ONLY"},
+        "purpose": {"const": "INTERFACE_AND_GOVERNANCE_VALIDATION_ONLY"},
+        "geography": {"type": "string", "minLength": 1},
+        "time_scope": {"const": "ILLUSTRATIVE_NOT_OBSERVED_OR_FORECAST"}
+      }
+    },
+    "evidence_sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "source_class", "description", "external_locator", "admission_state"],
+        "properties": {
+          "source_id": {"type": "string", "pattern": "^SYN-SRC-[0-9]{3}$"},
+          "source_class": {"const": "REPOSITORY_SYNTHETIC_FIXTURE"},
+          "description": {"type": "string", "minLength": 1},
+          "external_locator": {"type": "null"},
+          "admission_state": {"const": "SYNTHETIC_INTERFACE_ONLY"}
+        }
+      }
+    },
+    "states": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"$ref": "#/$defs/state"}
+    },
+    "relations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/relation"}
+    },
+    "boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["network_used", "real_data_accessed", "model_executed", "monitoring_active", "external_action", "scientific_conclusion_formed", "project_performance_conclusion_formed", "cost_aud", "human_review_required"],
+      "properties": {
+        "network_used": {"const": false},
+        "real_data_accessed": {"const": false},
+        "model_executed": {"const": false},
+        "monitoring_active": {"const": false},
+        "external_action": {"const": false},
+        "scientific_conclusion_formed": {"const": false},
+        "project_performance_conclusion_formed": {"const": false},
+        "cost_aud": {"const": 0},
+        "human_review_required": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state_id", "domain", "label", "state_class", "geography", "time_scope", "evidence_source_ids", "uncertainty_state", "human_review_status"],
+      "properties": {
+        "state_id": {"type": "string", "pattern": "^STATE-[A-Z0-9-]+$"},
+        "domain": {"enum": ["CLIMATE", "REGIONAL_WEATHER", "WATER", "LAND", "LIFE", "GOVERNANCE"]},
+        "label": {"type": "string", "minLength": 1},
+        "state_class": {"const": "SYNTHETIC_HYPOTHESIS_STATE"},
+        "geography": {"type": "string", "minLength": 1},
+        "time_scope": {"const": "ILLUSTRATIVE_ONLY"},
+        "evidence_source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "uncertainty_state": {"const": "NOT_ASSESSED"},
+        "human_review_status": {"const": "NOT_REVIEWED"}
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relation_id", "source_state_id", "target_state_id", "relationship_type", "lead_lag_window", "geography", "time_period", "evidence_source_ids", "model_method", "confidence", "uncertainty_transformation", "stationarity_warning", "expert_review_status", "future_mechanism_test_id", "governance_states", "prohibited_inferences"],
+      "properties": {
+        "relation_id": {"type": "string", "pattern": "^REL-[0-9]{3}$"},
+        "source_state_id": {"type": "string"},
+        "target_state_id": {"type": "string"},
+        "relationship_type": {"enum": ["observed_association", "lagged_signal", "model_inference", "causal_hypothesis"]},
+        "lead_lag_window": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["minimum", "maximum", "unit", "status"],
+          "properties": {
+            "minimum": {"type": "null"},
+            "maximum": {"type": "null"},
+            "unit": {"const": "NOT_ESTIMATED"},
+            "status": {"const": "ILLUSTRATIVE_ONLY"}
+          }
+        },
+        "geography": {"type": "string", "minLength": 1},
+        "time_period": {"const": "ILLUSTRATIVE_NOT_OBSERVED"},
+        "evidence_source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "model_method": {"const": "NONE_NO_MODEL_EXECUTION"},
+        "confidence": {"const": "NOT_ASSESSED"},
+        "uncertainty_transformation": {"type": "string", "minLength": 1},
+        "stationarity_warning": {"type": "string", "minLength": 1},
+        "expert_review_status": {"const": "NOT_REVIEWED"},
+        "future_mechanism_test_id": {"type": ["string", "null"]},
+        "governance_states": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["SYNTHETIC_ONLY", "HYPOTHESIS_ONLY", "HUMAN_REVIEW_REQUIRED", "PROHIBITED_CONCLUSION", "ROUTE_TO_TASK1701_PLUS"]}},
+        "prohibited_inferences": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}
+      }
+    }
+  }
+}
