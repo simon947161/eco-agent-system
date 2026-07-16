@@ -1,0 +1,20 @@
+{
+  "boundary_note": "Repository-authored static synthetic interface only; no observation, forecast, model execution, causal finding, project conclusion, monitoring or external action.",
+  "classification": "STATIC_SYNTHETIC_INTERFACE_PREVIEW_ONLY",
+  "decision_support_status": "NOT_READY_FOR_DECISION",
+  "future_mechanism_test_ids": [
+    "TASK1701-CANDIDATE-001",
+    "TASK1701-CANDIDATE-002",
+    "TASK1701-CANDIDATE-003"
+  ],
+  "governance_recommendation": "NONE",
+  "graph_id": "ECG-AU-SE-STATIC-001",
+  "human_review_required": true,
+  "relation_count": 4,
+  "relation_types": {
+    "causal_hypothesis": 3,
+    "lagged_signal": 1
+  },
+  "scientific_conclusion": "NONE",
+  "state_count": 5
+}

@@ -1,0 +1,162 @@
+{
+  "schema_id": "climateos.environmental_coupling_graph.v0.1",
+  "graph": {
+    "graph_id": "ECG-AU-SE-STATIC-001",
+    "title": "South-eastern Australian environmental coupling interface demonstration",
+    "classification": "REPOSITORY_AUTHORED_STATIC_SYNTHETIC_ONLY",
+    "purpose": "INTERFACE_AND_GOVERNANCE_VALIDATION_ONLY",
+    "geography": "South-eastern Australia / Snowy Valleys / Riverina illustrative context",
+    "time_scope": "ILLUSTRATIVE_NOT_OBSERVED_OR_FORECAST"
+  },
+  "evidence_sources": [
+    {
+      "source_id": "SYN-SRC-001",
+      "source_class": "REPOSITORY_SYNTHETIC_FIXTURE",
+      "description": "Invented climate-to-environment chain used only to validate fields and governance routing",
+      "external_locator": null,
+      "admission_state": "SYNTHETIC_INTERFACE_ONLY"
+    }
+  ],
+  "states": [
+    {
+      "state_id": "STATE-CLIMATE-001",
+      "domain": "CLIMATE",
+      "label": "Hypothetical combined ENSO / IOD / SAM background state",
+      "state_class": "SYNTHETIC_HYPOTHESIS_STATE",
+      "geography": "Australian climate background",
+      "time_scope": "ILLUSTRATIVE_ONLY",
+      "evidence_source_ids": ["SYN-SRC-001"],
+      "uncertainty_state": "NOT_ASSESSED",
+      "human_review_status": "NOT_REVIEWED"
+    },
+    {
+      "state_id": "STATE-REGIONAL-WEATHER-001",
+      "domain": "REGIONAL_WEATHER",
+      "label": "Hypothetical south-eastern rainfall and heat regime",
+      "state_class": "SYNTHETIC_HYPOTHESIS_STATE",
+      "geography": "South-eastern Australia",
+      "time_scope": "ILLUSTRATIVE_ONLY",
+      "evidence_source_ids": ["SYN-SRC-001"],
+      "uncertainty_state": "NOT_ASSESSED",
+      "human_review_status": "NOT_REVIEWED"
+    },
+    {
+      "state_id": "STATE-WATER-LAND-001",
+      "domain": "WATER",
+      "label": "Hypothetical soil-moisture and water-stress state",
+      "state_class": "SYNTHETIC_HYPOTHESIS_STATE",
+      "geography": "Snowy Valleys / Riverina illustrative context",
+      "time_scope": "ILLUSTRATIVE_ONLY",
+      "evidence_source_ids": ["SYN-SRC-001"],
+      "uncertainty_state": "NOT_ASSESSED",
+      "human_review_status": "NOT_REVIEWED"
+    },
+    {
+      "state_id": "STATE-LIFE-001",
+      "domain": "LIFE",
+      "label": "Hypothetical vegetation, fire, agriculture or biodiversity response state",
+      "state_class": "SYNTHETIC_HYPOTHESIS_STATE",
+      "geography": "Snowy Valleys / Riverina illustrative context",
+      "time_scope": "ILLUSTRATIVE_ONLY",
+      "evidence_source_ids": ["SYN-SRC-001"],
+      "uncertainty_state": "NOT_ASSESSED",
+      "human_review_status": "NOT_REVIEWED"
+    },
+    {
+      "state_id": "STATE-GOVERNANCE-001",
+      "domain": "GOVERNANCE",
+      "label": "Human-reviewed question about possible planning relevance",
+      "state_class": "SYNTHETIC_HYPOTHESIS_STATE",
+      "geography": "Illustrative regional governance context",
+      "time_scope": "ILLUSTRATIVE_ONLY",
+      "evidence_source_ids": ["SYN-SRC-001"],
+      "uncertainty_state": "NOT_ASSESSED",
+      "human_review_status": "NOT_REVIEWED"
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "REL-001",
+      "source_state_id": "STATE-CLIMATE-001",
+      "target_state_id": "STATE-REGIONAL-WEATHER-001",
+      "relationship_type": "lagged_signal",
+      "lead_lag_window": {"minimum": null, "maximum": null, "unit": "NOT_ESTIMATED", "status": "ILLUSTRATIVE_ONLY"},
+      "geography": "South-eastern Australia",
+      "time_period": "ILLUSTRATIVE_NOT_OBSERVED",
+      "evidence_source_ids": ["SYN-SRC-001"],
+      "model_method": "NONE_NO_MODEL_EXECUTION",
+      "confidence": "NOT_ASSESSED",
+      "uncertainty_transformation": "Uncertainty is retained and not quantified or reduced across this illustrative relation.",
+      "stationarity_warning": "Historical teleconnection behaviour may change under climate change; no stability is assumed here.",
+      "expert_review_status": "NOT_REVIEWED",
+      "future_mechanism_test_id": null,
+      "governance_states": ["SYNTHETIC_ONLY", "HYPOTHESIS_ONLY", "HUMAN_REVIEW_REQUIRED", "PROHIBITED_CONCLUSION"],
+      "prohibited_inferences": ["CURRENT_CLIMATE_STATE", "REGIONAL_FORECAST", "CAUSATION"]
+    },
+    {
+      "relation_id": "REL-002",
+      "source_state_id": "STATE-REGIONAL-WEATHER-001",
+      "target_state_id": "STATE-WATER-LAND-001",
+      "relationship_type": "causal_hypothesis",
+      "lead_lag_window": {"minimum": null, "maximum": null, "unit": "NOT_ESTIMATED", "status": "ILLUSTRATIVE_ONLY"},
+      "geography": "Snowy Valleys / Riverina illustrative context",
+      "time_period": "ILLUSTRATIVE_NOT_OBSERVED",
+      "evidence_source_ids": ["SYN-SRC-001"],
+      "model_method": "NONE_NO_MODEL_EXECUTION",
+      "confidence": "NOT_ASSESSED",
+      "uncertainty_transformation": "Regional translation and land-surface uncertainty remain unresolved.",
+      "stationarity_warning": "The direction, magnitude and timing require observations and controlled testing.",
+      "expert_review_status": "NOT_REVIEWED",
+      "future_mechanism_test_id": "TASK1701-CANDIDATE-001",
+      "governance_states": ["SYNTHETIC_ONLY", "HYPOTHESIS_ONLY", "HUMAN_REVIEW_REQUIRED", "PROHIBITED_CONCLUSION", "ROUTE_TO_TASK1701_PLUS"],
+      "prohibited_inferences": ["SOIL_MOISTURE_ESTIMATE", "WATER_STRESS_CONCLUSION", "CAUSATION"]
+    },
+    {
+      "relation_id": "REL-003",
+      "source_state_id": "STATE-WATER-LAND-001",
+      "target_state_id": "STATE-LIFE-001",
+      "relationship_type": "causal_hypothesis",
+      "lead_lag_window": {"minimum": null, "maximum": null, "unit": "NOT_ESTIMATED", "status": "ILLUSTRATIVE_ONLY"},
+      "geography": "Snowy Valleys / Riverina illustrative context",
+      "time_period": "ILLUSTRATIVE_NOT_OBSERVED",
+      "evidence_source_ids": ["SYN-SRC-001"],
+      "model_method": "NONE_NO_MODEL_EXECUTION",
+      "confidence": "NOT_ASSESSED",
+      "uncertainty_transformation": "Ecological, fire and agricultural responses remain unresolved and domain-specific.",
+      "stationarity_warning": "Land management, species, fuels and adaptation can alter any apparent relationship.",
+      "expert_review_status": "NOT_REVIEWED",
+      "future_mechanism_test_id": "TASK1701-CANDIDATE-002",
+      "governance_states": ["SYNTHETIC_ONLY", "HYPOTHESIS_ONLY", "HUMAN_REVIEW_REQUIRED", "PROHIBITED_CONCLUSION", "ROUTE_TO_TASK1701_PLUS"],
+      "prohibited_inferences": ["FIRE_RISK_CONCLUSION", "AGRICULTURAL_IMPACT", "BIODIVERSITY_IMPACT", "CAUSATION"]
+    },
+    {
+      "relation_id": "REL-004",
+      "source_state_id": "STATE-LIFE-001",
+      "target_state_id": "STATE-GOVERNANCE-001",
+      "relationship_type": "causal_hypothesis",
+      "lead_lag_window": {"minimum": null, "maximum": null, "unit": "NOT_ESTIMATED", "status": "ILLUSTRATIVE_ONLY"},
+      "geography": "Illustrative regional governance context",
+      "time_period": "ILLUSTRATIVE_NOT_OBSERVED",
+      "evidence_source_ids": ["SYN-SRC-001"],
+      "model_method": "NONE_NO_MODEL_EXECUTION",
+      "confidence": "NOT_ASSESSED",
+      "uncertainty_transformation": "Scientific uncertainty is preserved and no governance recommendation is generated.",
+      "stationarity_warning": "Governance relevance depends on current evidence, values, law, institutions and accountable review.",
+      "expert_review_status": "NOT_REVIEWED",
+      "future_mechanism_test_id": "TASK1701-CANDIDATE-003",
+      "governance_states": ["SYNTHETIC_ONLY", "HYPOTHESIS_ONLY", "HUMAN_REVIEW_REQUIRED", "PROHIBITED_CONCLUSION", "ROUTE_TO_TASK1701_PLUS"],
+      "prohibited_inferences": ["PLANNING_RECOMMENDATION", "POLICY_RECOMMENDATION", "PROJECT_DECISION", "CAUSATION"]
+    }
+  ],
+  "boundaries": {
+    "network_used": false,
+    "real_data_accessed": false,
+    "model_executed": false,
+    "monitoring_active": false,
+    "external_action": false,
+    "scientific_conclusion_formed": false,
+    "project_performance_conclusion_formed": false,
+    "cost_aud": 0,
+    "human_review_required": true
+  }
+}
