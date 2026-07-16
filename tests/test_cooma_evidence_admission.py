@@ -5,6 +5,7 @@ from pathlib import Path
 
 from cczps_lite.integration.cooma_evidence_admission import (
     CoomaAdmissionError,
+    REQUIRED_INTERFACE_ALLOWED,
     REQUIRED_INTERFACE_BLOCKS,
     REQUIRED_TRANSLATION_CHECKS,
     build_cooma_admission_preview,
@@ -108,12 +109,30 @@ class CoomaEvidenceAdmissionTests(unittest.TestCase):
 
     def test_workos_interface_blocks_private_compliance_legal_and_operational_fields(self) -> None:
         interface = self.pack["climateos_workos_interface"]
+        self.assertEqual(set(interface["allowed_context_fields"]), REQUIRED_INTERFACE_ALLOWED)
         self.assertTrue(REQUIRED_INTERFACE_BLOCKS <= set(interface["blocked_fields"]))
         self.assertEqual(interface["writeback_state"], "BLOCKED_PENDING_SEPARATE_AUTHORIZATION")
 
         changed = copy.deepcopy(self.pack)
         changed["climateos_workos_interface"]["blocked_fields"].remove("PROPERTY_OR_WORKSITE_ADDRESS")
         with self.assertRaises(CoomaAdmissionError):
+            validate_cooma_admission_pack(changed)
+
+        for sensitive_field in REQUIRED_INTERFACE_BLOCKS:
+            with self.subTest(sensitive_field=sensitive_field):
+                changed = copy.deepcopy(self.pack)
+                changed["climateos_workos_interface"]["allowed_context_fields"].append(sensitive_field)
+                with self.assertRaises(CoomaAdmissionError):
+                    validate_cooma_admission_pack(changed)
+
+        changed = copy.deepcopy(self.pack)
+        changed["climateos_workos_interface"]["allowed_context_fields"][0] = "UNREVIEWED_CONTEXT_FIELD"
+        with self.assertRaises(CoomaAdmissionError):
+            validate_cooma_admission_pack(changed)
+
+        changed = copy.deepcopy(self.pack)
+        changed["climateos_workos_interface"]["blocked_fields"].append("PLACE_ANCHOR")
+        with self.assertRaisesRegex(CoomaAdmissionError, "must be disjoint"):
             validate_cooma_admission_pack(changed)
 
     def test_preview_is_deterministic_and_admits_nothing(self) -> None:

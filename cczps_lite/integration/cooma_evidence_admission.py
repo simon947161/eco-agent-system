@@ -61,6 +61,15 @@ REQUIRED_INTERFACE_BLOCKS = {
     "OPERATIONAL_JOB_INSTRUCTION",
     "PRIVATE_WORKOS_RECORD",
 }
+REQUIRED_INTERFACE_ALLOWED = {
+    "PLACE_ANCHOR",
+    "EVIDENCE_ID_AND_CLASS",
+    "SCALE_AND_TIME_SCOPE",
+    "LICENCE_AND_VISIBILITY_STATE",
+    "UNCERTAINTY_AND_STATIONARITY",
+    "PROHIBITED_USES",
+    "HUMAN_REVIEW_STATE",
+}
 
 
 class CoomaAdmissionError(ValueError):
@@ -317,10 +326,14 @@ def _validate_interface(value: Any) -> None:
     for field, expected_value in expected.items():
         if interface[field] != expected_value:
             raise CoomaAdmissionError(f"Interface {field} crosses the authorized boundary")
-    _strings(interface["allowed_context_fields"], "allowed_context_fields", non_empty=True)
+    allowed = set(_strings(interface["allowed_context_fields"], "allowed_context_fields", non_empty=True))
     blocked = set(_strings(interface["blocked_fields"], "blocked_fields", non_empty=True))
+    if allowed != REQUIRED_INTERFACE_ALLOWED:
+        raise CoomaAdmissionError("Interface context fields must match the fixed safe allowlist")
     if not REQUIRED_INTERFACE_BLOCKS <= blocked:
         raise CoomaAdmissionError("Private, compliance, legal and operational fields must remain blocked")
+    if allowed & blocked:
+        raise CoomaAdmissionError("Allowed and blocked interface fields must be disjoint")
 
 
 def build_cooma_admission_preview(pack: dict[str, Any]) -> dict[str, Any]:
