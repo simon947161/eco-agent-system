@@ -1,0 +1,20 @@
+{
+  "case_id": "tiny_temperature_grid_001",
+  "contract_version": "climateos.weatherbench_x.synthetic_case.v0.1",
+  "data_classification": "SYNTHETIC_ONLY",
+  "origin": "REPOSITORY_INLINE_FIXTURE",
+  "variable": "2m_temperature",
+  "unit": "K",
+  "initial_time": "2026-01-01T00:00:00Z",
+  "valid_time": "2026-01-01T06:00:00Z",
+  "lead_time_hours": 6,
+  "latitude_degrees": [-60.0, 0.0, 60.0],
+  "longitude_degrees": [140.0, 141.0],
+  "forecast_values": [281.0, 280.0, 284.0, 282.0, 284.0, 287.0],
+  "reference_values": [280.0, 281.0, 282.0, 283.0, 284.0, 285.0],
+  "metric_request": [
+    "latitude_weighted_rmse",
+    "latitude_weighted_mae",
+    "latitude_weighted_bias"
+  ]
+}
