@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/contracts/mechanism_return_gate.schema.json",
+  "title": "ClimateOS Task1701-1710 mechanism experiment no-run return gate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "gate", "references", "model_components", "hypothesis_contract", "experiment_contract", "readiness", "trials", "decision", "boundaries"],
+  "properties": {
+    "schema_id": {"const": "climateos.mechanism_return_gate.v0.1"},
+    "gate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["base_main_sha", "task_range", "mode", "assessed_on"],
+      "properties": {
+        "base_main_sha": {"const": "5bfc2312b8d93783de7e94af57d8a86351f71563"},
+        "task_range": {"const": "TASK1701_1710"},
+        "mode": {"const": "NO_RUN_REFERENCE_REVALIDATION"},
+        "assessed_on": {"const": "2026-07-17"}
+      }
+    },
+    "references": {"type": "array", "minItems": 5, "maxItems": 5, "uniqueItems": true, "items": {"$ref": "#/$defs/reference"}},
+    "model_components": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"$ref": "#/$defs/component"}},
+    "hypothesis_contract": {"$ref": "#/$defs/hypothesis"},
+    "experiment_contract": {"$ref": "#/$defs/experiment"},
+    "readiness": {"$ref": "#/$defs/readiness"},
+    "trials": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/trial"}},
+    "decision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "model_run_authorized", "tiny_synthetic_execution_authorized", "task1711_authorized", "reason", "next_gate"],
+      "properties": {
+        "state": {"const": "REFERENCE_REVIEW_INCOMPLETE"},
+        "model_run_authorized": {"const": false},
+        "tiny_synthetic_execution_authorized": {"const": false},
+        "task1711_authorized": {"const": false},
+        "reason": {"type": "string", "minLength": 1},
+        "next_gate": {"const": "SEPARATE_FOUNDER_AUTHORIZATION_REQUIRED"}
+      }
+    },
+    "boundaries": {"$ref": "#/$defs/boundaries"}
+  },
+  "$defs": {
+    "reference": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reference_id", "name", "kind", "canonical_url", "identity", "licence_state", "artifact_state", "runtime_state", "climateos_use"],
+      "properties": {
+        "reference_id": {"type": "string", "pattern": "^MECH-REF-[0-9]{3}$"},
+        "name": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["PAPER", "SUPPORTING_REPOSITORY", "MODEL_REPOSITORY", "ALTERNATIVE_AGENT_SYSTEM"]},
+        "canonical_url": {"type": "string", "pattern": "^https://"},
+        "identity": {"type": "string", "minLength": 1},
+        "licence_state": {"enum": ["PAPER_REFERENCE_ONLY", "MIT_ARTIFACTS_THIRD_PARTY_SEPARATE", "PUBLIC_DOMAIN_NOTICE_TRADEMARK_RESERVED", "RESPONSIBLE_SOURCE_LICENCE_REVIEW_REQUIRED"]},
+        "artifact_state": {"enum": ["PREPRINT", "CURATED_ARTIFACTS_NOT_FULL_RUNTIME", "RELEASE_BRANCH_CANDIDATE", "PUBLIC_AUTONOMOUS_CODEBASE"]},
+        "runtime_state": {"const": "NOT_ADMITTED_NOT_EXECUTED"},
+        "climateos_use": {"const": "REFERENCE_ONLY"}
+      }
+    },
+    "component": {
+      "type": "object", "additionalProperties": false,
+      "required": ["component_id", "name", "role", "version_identity", "licence_state", "dependency_state", "admission_state"],
+      "properties": {
+        "component_id": {"type": "string", "pattern": "^MECH-COMP-[0-9]{3}$"},
+        "name": {"enum": ["WRF_CORE", "WRF_CHEM", "WPS", "PHYSICS_AND_CHEMISTRY_OPTIONS", "INPUT_AND_BOUNDARY_ASSETS", "COMPUTE_ENVIRONMENT"]},
+        "role": {"type": "string", "minLength": 1},
+        "version_identity": {"type": "string", "minLength": 1},
+        "licence_state": {"type": "string", "minLength": 1},
+        "dependency_state": {"type": "string", "minLength": 1},
+        "admission_state": {"enum": ["REFERENCE_CANDIDATE_ONLY", "UNRESOLVED_BLOCKED"]}
+      }
+    },
+    "hypothesis": {
+      "type": "object", "additionalProperties": false,
+      "required": ["required_fields", "causal_claim_prohibited", "expert_owner_required", "not_testable_is_valid"],
+      "properties": {
+        "required_fields": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"enum": ["research_question", "hypothesis", "mechanism_chain", "expected_direction", "required_diagnostics", "alternative_explanations", "falsification_criteria", "evidence_threshold", "scale_and_time_assumptions", "expert_owner"]}},
+        "causal_claim_prohibited": {"const": true},
+        "expert_owner_required": {"const": true},
+        "not_testable_is_valid": {"const": true}
+      }
+    },
+    "experiment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["required_fields", "immutable_registration_required", "run_permission", "allowed_outcomes"],
+      "properties": {
+        "required_fields": {"type": "array", "minItems": 12, "uniqueItems": true, "items": {"enum": ["baseline", "perturbation", "control", "sensitivity", "model_version", "configuration_hash", "input_identity", "boundary_identity", "diagnostics", "stop_conditions", "compute_ceiling", "failure_log"]}},
+        "immutable_registration_required": {"const": true},
+        "run_permission": {"const": "NOT_AUTHORIZED"},
+        "allowed_outcomes": {"type": "array", "minItems": 7, "uniqueItems": true, "items": {"enum": ["READY_FOR_TINY_SYNTHETIC_DESIGN_GATE", "REFERENCE_REVIEW_INCOMPLETE", "LICENCE_OR_VERSION_BLOCKED", "DATA_OR_COMPUTE_NOT_READY", "EXPERT_REVIEW_REQUIRED", "NOT_TESTABLE", "DO_NOT_PROCEED"]}}
+      }
+    },
+    "readiness": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reference_identity", "version", "licence", "data", "compute", "expert", "reproducibility", "overall"],
+      "properties": {
+        "reference_identity": {"const": "PARTIAL_PASS"},
+        "version": {"const": "CANDIDATE_LOCK_REQUIRES_RELEASE_RECHECK"},
+        "licence": {"const": "COMPONENT_LEVEL_REVIEW_REQUIRED"},
+        "data": {"const": "NOT_ADMITTED"},
+        "compute": {"const": "NOT_ADMITTED"},
+        "expert": {"const": "UNASSIGNED"},
+        "reproducibility": {"const": "CURATED_ARTIFACTS_NOT_FULL_REPRODUCTION"},
+        "overall": {"const": "REFERENCE_REVIEW_INCOMPLETE"}
+      }
+    },
+    "trial": {
+      "type": "object", "additionalProperties": false,
+      "required": ["trial_id", "request", "expected", "actual", "run_performed", "reason"],
+      "properties": {
+        "trial_id": {"type": "string", "pattern": "^MECH-GATE-TRIAL-[0-9]{3}$"},
+        "request": {"enum": ["REGISTER_NO_RUN_CONTRACT", "START_WRF_CHEM_EXPERIMENT"]},
+        "expected": {"enum": ["ALLOW_STATIC_REGISTRATION", "REJECT_EXECUTION"]},
+        "actual": {"enum": ["ALLOW_STATIC_REGISTRATION", "REJECT_EXECUTION"]},
+        "run_performed": {"const": false},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    },
+    "boundaries": {
+      "type": "object", "additionalProperties": false,
+      "required": ["public_metadata_read", "repository_cloned", "archive_downloaded", "dataset_downloaded", "observation_acquired", "model_installed", "model_executed", "cloud_used", "api_key_used", "cost_aud", "monitoring_active", "workos_data_used", "scientific_conclusion_formed", "local_conclusion_formed", "human_review_required"],
+      "properties": {
+        "public_metadata_read": {"const": true},
+        "repository_cloned": {"const": false}, "archive_downloaded": {"const": false},
+        "dataset_downloaded": {"const": false}, "observation_acquired": {"const": false},
+        "model_installed": {"const": false}, "model_executed": {"const": false},
+        "cloud_used": {"const": false}, "api_key_used": {"const": false},
+        "cost_aud": {"const": 0}, "monitoring_active": {"const": false},
+        "workos_data_used": {"const": false}, "scientific_conclusion_formed": {"const": false},
+        "local_conclusion_formed": {"const": false}, "human_review_required": {"const": true}
+      }
+    }
+  }
+}
