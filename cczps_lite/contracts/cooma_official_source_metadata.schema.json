@@ -121,7 +121,25 @@
         "claim_boundary": {"type": "string", "minLength": 1},
         "does_not_prove": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
         "human_review_required": {"const": true}
-      }
+      },
+      "allOf": [
+        {"if": {"properties": {"source_kind": {"const": "PLANNING_CONTROL_LANDING"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "COUNCIL_PRIMARY"}}}},
+        {"if": {"properties": {"source_kind": {"const": "STATUTORY_INSTRUMENT"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "STATUTORY_PRIMARY"}}}},
+        {"if": {"properties": {"source_kind": {"const": "REGIONAL_PLAN_LANDING"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "STATE_GOVERNMENT_PRIMARY"}}}},
+        {"if": {"properties": {"source_kind": {"const": "REGIONAL_PLAN_DELIVERY"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "STATE_GOVERNMENT_PRIMARY"}}}},
+        {"if": {"properties": {"source_kind": {"const": "COUNCIL_SERVICE_LANDING"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "COUNCIL_PRIMARY"}}}},
+        {"if": {"properties": {"source_kind": {"const": "COUNCIL_WATER_SOURCE_LANDING"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "COUNCIL_PRIMARY"}}}},
+        {"if": {"properties": {"source_kind": {"const": "STATION_METADATA"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "SCIENTIFIC_AGENCY_PRIMARY"}}}},
+        {"if": {"properties": {"source_kind": {"const": "PROJECT_PROPONENT_LANDING"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "PROJECT_PROPONENT_PRIMARY"}}}},
+        {"if": {"properties": {"source_kind": {"const": "FEDERAL_CATCHMENT_CONTEXT"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "SCIENTIFIC_AGENCY_PRIMARY"}}}},
+        {"if": {"properties": {"source_kind": {"const": "OFFICIAL_NEWS_ITEM"}}, "required": ["source_kind"]}, "then": {"properties": {"tier": {"const": "OFFICIAL_NEWS_DISCOVERY"}}}},
+        {"if": {"properties": {"domain": {"const": "snowymonaro.nsw.gov.au"}}, "required": ["domain"]}, "then": {"properties": {"tier": {"enum": ["COUNCIL_PRIMARY", "OFFICIAL_NEWS_DISCOVERY"]}}}},
+        {"if": {"properties": {"domain": {"const": "legislation.nsw.gov.au"}}, "required": ["domain"]}, "then": {"properties": {"tier": {"const": "STATUTORY_PRIMARY"}}}},
+        {"if": {"properties": {"domain": {"const": "planning.nsw.gov.au"}}, "required": ["domain"]}, "then": {"properties": {"tier": {"const": "STATE_GOVERNMENT_PRIMARY"}}}},
+        {"if": {"properties": {"domain": {"const": "bom.gov.au"}}, "required": ["domain"]}, "then": {"properties": {"tier": {"const": "SCIENTIFIC_AGENCY_PRIMARY"}}}},
+        {"if": {"properties": {"domain": {"const": "snowyhydro.com.au"}}, "required": ["domain"]}, "then": {"properties": {"tier": {"const": "PROJECT_PROPONENT_PRIMARY"}}}},
+        {"if": {"properties": {"domain": {"const": "dcceew.gov.au"}}, "required": ["domain"]}, "then": {"properties": {"tier": {"const": "SCIENTIFIC_AGENCY_PRIMARY"}}}}
+      ]
     }
   }
 }

@@ -9,7 +9,9 @@ from cczps_lite.integration.cooma_official_source_metadata import (
     ALLOWED_DOMAINS,
     BASE_MAIN_SHA,
     CoomaSourceMetadataError,
+    DOMAIN_ALLOWED_TIERS,
     RETAINED_FIELDS,
+    SOURCE_KIND_TO_TIER,
     SOURCE_TIERS,
     build_cooma_source_metadata_preview,
     load_cooma_source_metadata,
@@ -37,6 +39,21 @@ class CoomaOfficialSourceMetadataTests(unittest.TestCase):
         self.assertFalse(boundaries["pdf_or_document_downloaded"]["const"])
         self.assertEqual(boundaries["cost_aud"]["const"], 0)
 
+        record_schema = schema["$defs"]["sourceRecord"]
+        self.assertEqual(record_schema["properties"]["source_id"]["pattern"], "^COOMA-SRC-[0-9]{3}$")
+        kind_rules: dict[str, str] = {}
+        domain_rules: dict[str, set[str]] = {}
+        for rule in record_schema["allOf"]:
+            condition = rule["if"]["properties"]
+            tier_rule = rule["then"]["properties"]["tier"]
+            tiers = set(tier_rule["enum"]) if "enum" in tier_rule else {tier_rule["const"]}
+            if "source_kind" in condition:
+                kind_rules[condition["source_kind"]["const"]] = next(iter(tiers))
+            else:
+                domain_rules[condition["domain"]["const"]] = tiers
+        self.assertEqual(kind_rules, SOURCE_KIND_TO_TIER)
+        self.assertEqual(domain_rules, DOMAIN_ALLOWED_TIERS)
+
     def test_pilot_descends_from_current_main_and_records_real_metadata_access_truthfully(self) -> None:
         self.assertEqual(self.pack["pilot"]["base_main_sha"], BASE_MAIN_SHA)
         self.assertEqual(self.pack["pilot"]["accessed_on"], ACCESS_DATE)
@@ -48,6 +65,28 @@ class CoomaOfficialSourceMetadataTests(unittest.TestCase):
         self.assertEqual(set(self.pack["source_tiers"]), SOURCE_TIERS)
         self.assertEqual(len(self.pack["records"]), 10)
         self.assertEqual(len({record["source_id"] for record in self.pack["records"]}), 10)
+
+    def test_source_kind_tier_and_domain_tier_mappings_are_fixed(self) -> None:
+        for record in self.pack["records"]:
+            self.assertEqual(record["tier"], SOURCE_KIND_TO_TIER[record["source_kind"]])
+            self.assertIn(record["tier"], DOMAIN_ALLOWED_TIERS[record["domain"]])
+
+        changed = copy.deepcopy(self.pack)
+        changed["records"][0]["tier"] = "PROJECT_PROPONENT_PRIMARY"
+        with self.assertRaises(CoomaSourceMetadataError):
+            validate_cooma_source_metadata(changed)
+
+        changed = copy.deepcopy(self.pack)
+        changed["records"][0]["canonical_url"] = "https://www.snowyhydro.com.au/council-dcp"
+        changed["records"][0]["domain"] = "snowyhydro.com.au"
+        with self.assertRaises(CoomaSourceMetadataError):
+            validate_cooma_source_metadata(changed)
+
+    def test_invalid_source_id_format_is_rejected(self) -> None:
+        changed = copy.deepcopy(self.pack)
+        changed["records"][0]["source_id"] = "UNSCOPED-ID"
+        with self.assertRaises(CoomaSourceMetadataError):
+            validate_cooma_source_metadata(changed)
 
     def test_every_url_is_clean_https_on_an_approved_official_domain(self) -> None:
         for record in self.pack["records"]:

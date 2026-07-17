@@ -7,6 +7,7 @@ of official public HTML page identities inspected manually on 2026-07-17.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
@@ -44,6 +45,27 @@ SOURCE_KINDS = {
     "FEDERAL_CATCHMENT_CONTEXT",
     "OFFICIAL_NEWS_ITEM",
 }
+SOURCE_KIND_TO_TIER = {
+    "PLANNING_CONTROL_LANDING": "COUNCIL_PRIMARY",
+    "STATUTORY_INSTRUMENT": "STATUTORY_PRIMARY",
+    "REGIONAL_PLAN_LANDING": "STATE_GOVERNMENT_PRIMARY",
+    "REGIONAL_PLAN_DELIVERY": "STATE_GOVERNMENT_PRIMARY",
+    "COUNCIL_SERVICE_LANDING": "COUNCIL_PRIMARY",
+    "COUNCIL_WATER_SOURCE_LANDING": "COUNCIL_PRIMARY",
+    "STATION_METADATA": "SCIENTIFIC_AGENCY_PRIMARY",
+    "PROJECT_PROPONENT_LANDING": "PROJECT_PROPONENT_PRIMARY",
+    "FEDERAL_CATCHMENT_CONTEXT": "SCIENTIFIC_AGENCY_PRIMARY",
+    "OFFICIAL_NEWS_ITEM": "OFFICIAL_NEWS_DISCOVERY",
+}
+DOMAIN_ALLOWED_TIERS = {
+    "snowymonaro.nsw.gov.au": {"COUNCIL_PRIMARY", "OFFICIAL_NEWS_DISCOVERY"},
+    "legislation.nsw.gov.au": {"STATUTORY_PRIMARY"},
+    "planning.nsw.gov.au": {"STATE_GOVERNMENT_PRIMARY"},
+    "bom.gov.au": {"SCIENTIFIC_AGENCY_PRIMARY"},
+    "snowyhydro.com.au": {"PROJECT_PROPONENT_PRIMARY"},
+    "dcceew.gov.au": {"SCIENTIFIC_AGENCY_PRIMARY"},
+}
+SOURCE_ID_PATTERN = re.compile(r"COOMA-SRC-[0-9]{3}")
 RETAINED_FIELDS = {
     "TITLE",
     "PUBLISHER",
@@ -156,13 +178,19 @@ def _validate_records(value: Any) -> None:
     for item in value:
         record = _strict(item, fields, "source record")
         source_id = _text(record["source_id"], "source_id")
+        if SOURCE_ID_PATTERN.fullmatch(source_id) is None:
+            raise CoomaSourceMetadataError("source_id must match COOMA-SRC-NNN")
         if source_id in source_ids:
             raise CoomaSourceMetadataError(f"Duplicate source_id: {source_id}")
         source_ids.add(source_id)
         _text(record["title"], "title")
         _text(record["publisher"], "publisher")
-        if record["tier"] not in SOURCE_TIERS or record["source_kind"] not in SOURCE_KINDS:
+        tier = record["tier"]
+        source_kind = record["source_kind"]
+        if tier not in SOURCE_TIERS or source_kind not in SOURCE_KINDS:
             raise CoomaSourceMetadataError("Unknown source tier or kind")
+        if SOURCE_KIND_TO_TIER[source_kind] != tier:
+            raise CoomaSourceMetadataError("Source kind and authority tier must remain aligned")
         url = _text(record["canonical_url"], "canonical_url")
         parsed = urlparse(url)
         if parsed.scheme != "https" or parsed.username or parsed.password or parsed.query or parsed.fragment:
@@ -170,6 +198,8 @@ def _validate_records(value: Any) -> None:
         domain = parsed.netloc.lower().removeprefix("www.")
         if domain not in ALLOWED_DOMAINS or record["domain"] != domain:
             raise CoomaSourceMetadataError("Canonical URL must use an approved official domain")
+        if tier not in DOMAIN_ALLOWED_TIERS[domain]:
+            raise CoomaSourceMetadataError("Official domain and authority tier must remain aligned")
         if url in urls:
             raise CoomaSourceMetadataError("Canonical URLs must be unique")
         urls.add(url)
