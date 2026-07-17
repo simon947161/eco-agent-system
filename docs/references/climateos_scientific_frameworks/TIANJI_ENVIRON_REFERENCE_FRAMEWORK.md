@@ -33,6 +33,19 @@ ClimateOS may adapt TianJi-Environ's workflow ideas into a general Mechanism Hyp
 
 At Task1701, re-check the latest TianJi series papers, official repositories, licences, agent design, experiment safeguards and alternative systems. At Task1900, reassess whether any additional autonomy is scientifically justified.
 
+## Task1701 revalidation — 2026-07-17
+
+The Task1701–1710 return gate observed `arXiv:2606.07697` and the public
+`zwww-www/TianJi-Environ` supporting repository. The repository uses an MIT
+licence for released documentation and scripts while preserving separate terms
+for third-party models and data. It currently describes curated figures,
+sanitized summaries, selected scripts and system traces; it does not provide a
+complete WRF-Chem runtime or the external inputs needed for full reproduction.
+
+ClimateOS therefore retains TianJi-Environ as a reference architecture only.
+Its public availability does not authorize code adoption, model execution,
+scientific conclusions or a reduction in human review.
+
 ## Keywords
 
 TianJi-Environ; ClimateOS; Task1701; Task1900; WRF-Chem; AI Scientist; mechanism hypothesis; controlled experiment; diagnostics; Mechanism Evidence Passport; reproducibility; scientific governance; human review.

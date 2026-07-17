@@ -145,6 +145,13 @@ TianJi-Environ is a reference for mechanism workflow architecture. It is not com
 
 > **Task1900 is the return point for Environmental AI Scientist Runtime design.**
 
+Task1701–1710 returned on 2026-07-17 as a no-run readiness pack. Its result is
+`REFERENCE_REVIEW_INCOMPLETE`: WRF 4.8.0 is candidate-locked pending a
+consistent Release recheck, TianJi-Environ remains a curated-artifact reference,
+and model components, data, compute and expert ownership are not admitted.
+This update does not activate Task1711+, a tiny-synthetic run or any scientific
+model.
+
 At these gates, retrieve this roadmap, verify the latest TianJi-Environ work and alternative scientific-agent systems, reassess data, compute, licences and expert support, then obtain fresh Founder authorization.
 
 ## Keywords
