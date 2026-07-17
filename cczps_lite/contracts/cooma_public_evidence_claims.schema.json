@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/contracts/cooma_public_evidence_claims.schema.json",
+  "title": "ClimateOS Cooma public evidence claim admission and transition gate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "pilot", "selected_sources", "claims", "relation_trials", "transition_review", "boundaries"],
+  "properties": {
+    "schema_id": {"const": "climateos.cooma_public_evidence_claims.v0.1"},
+    "pilot": {
+      "type": "object", "additionalProperties": false,
+      "required": ["base_main_sha", "place_name", "accessed_on", "mode", "purpose"],
+      "properties": {
+        "base_main_sha": {"const": "b6c495b81e0a74afac1971f5b18366cb1aa1f99c"},
+        "place_name": {"const": "Cooma"},
+        "accessed_on": {"const": "2026-07-17"},
+        "mode": {"const": "ZERO_DOWNLOAD_OFFICIAL_HTML_STRUCTURED_CLAIMS"},
+        "purpose": {"const": "SOURCE_ASSERTION_ADMISSION_AND_RELATION_TRANSITION_GATE"}
+      }
+    },
+    "selected_sources": {"type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true, "items": {"$ref": "#/$defs/selectedSource"}},
+    "claims": {"type": "array", "minItems": 1, "maxItems": 5, "uniqueItems": true, "items": {"$ref": "#/$defs/claim"}},
+    "relation_trials": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/relationTrial"}},
+    "transition_review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["task1500_1700_state", "source_assertions_admitted", "evidence_relations_promoted", "carried_task1701_candidate_ids", "candidate_state", "task1701_execution_justified", "recommendation", "next_gate"],
+      "properties": {
+        "task1500_1700_state": {"const": "CLOSED_BOUNDED_PROTOTYPE_NO_EVIDENCE_RELATION_PROMOTED"},
+        "source_assertions_admitted": {"const": 5},
+        "evidence_relations_promoted": {"const": 0},
+        "carried_task1701_candidate_ids": {"type": "array", "minItems": 3, "maxItems": 3, "uniqueItems": true, "items": {"enum": ["TASK1701-CANDIDATE-001", "TASK1701-CANDIDATE-002", "TASK1701-CANDIDATE-003"]}},
+        "candidate_state": {"const": "SYNTHETIC_HYPOTHESES_ONLY_NOT_ACTIVATED"},
+        "task1701_execution_justified": {"const": false},
+        "recommendation": {"const": "DO_NOT_START_TASK1701_FROM_THIS_PILOT"},
+        "next_gate": {"const": "SEPARATE_FOUNDER_AUTHORIZATION_REQUIRED_FOR_TASK1701_PLUS"}
+      }
+    },
+    "boundaries": {
+      "type": "object", "additionalProperties": false,
+      "required": ["network_used", "public_html_accessed", "selected_source_count", "structured_claim_count", "raw_page_body_retained", "verbatim_excerpt_retained", "pdf_or_document_downloaded", "dataset_downloaded", "real_observations_acquired", "cloud_service_used", "external_contact_made", "model_executed", "monitoring_active", "private_worksite_data_included", "customer_or_person_data_included", "local_environmental_conclusion_formed", "planning_or_legal_conclusion_formed", "work_or_compliance_conclusion_formed", "scientific_causal_conclusion_formed", "project_performance_conclusion_formed", "cost_aud", "human_review_required"],
+      "properties": {
+        "network_used": {"const": true}, "public_html_accessed": {"const": true},
+        "selected_source_count": {"const": 3}, "structured_claim_count": {"const": 5},
+        "raw_page_body_retained": {"const": false}, "verbatim_excerpt_retained": {"const": false},
+        "pdf_or_document_downloaded": {"const": false}, "dataset_downloaded": {"const": false},
+        "real_observations_acquired": {"const": false}, "cloud_service_used": {"const": false},
+        "external_contact_made": {"const": false}, "model_executed": {"const": false},
+        "monitoring_active": {"const": false}, "private_worksite_data_included": {"const": false},
+        "customer_or_person_data_included": {"const": false}, "local_environmental_conclusion_formed": {"const": false},
+        "planning_or_legal_conclusion_formed": {"const": false}, "work_or_compliance_conclusion_formed": {"const": false},
+        "scientific_causal_conclusion_formed": {"const": false}, "project_performance_conclusion_formed": {"const": false},
+        "cost_aud": {"const": 0}, "human_review_required": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "selectedSource": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_id", "publisher", "canonical_url", "source_kind", "accessed_on", "page_format", "licence_state", "reuse_permission", "raw_page_body_retained", "verbatim_excerpt_retained", "file_downloaded", "dataset_downloaded", "claim_count"],
+      "properties": {
+        "source_id": {"enum": ["COOMA-SRC-006", "COOMA-SRC-007", "COOMA-SRC-009"]},
+        "publisher": {"type": "string", "minLength": 1},
+        "canonical_url": {"type": "string", "pattern": "^https://"},
+        "source_kind": {"enum": ["COUNCIL_WATER_SOURCE_LANDING", "STATION_METADATA", "FEDERAL_CATCHMENT_CONTEXT"]},
+        "accessed_on": {"const": "2026-07-17"}, "page_format": {"const": "HTML"},
+        "licence_state": {"const": "NOT_ASSESSED_REFERENCE_ONLY"}, "reuse_permission": {"const": "NOT_CLAIMED"},
+        "raw_page_body_retained": {"const": false}, "verbatim_excerpt_retained": {"const": false},
+        "file_downloaded": {"const": false}, "dataset_downloaded": {"const": false},
+        "claim_count": {"type": "integer", "minimum": 1, "maximum": 5}
+      },
+      "allOf": [
+        {"if": {"properties": {"source_id": {"const": "COOMA-SRC-006"}}, "required": ["source_id"]}, "then": {"properties": {"publisher": {"const": "Snowy Monaro Regional Council"}, "canonical_url": {"const": "https://www.snowymonaro.nsw.gov.au/Water-and-Wastewater/Water-Supply/Where-Does-My-Water-Come-From"}, "source_kind": {"const": "COUNCIL_WATER_SOURCE_LANDING"}}}},
+        {"if": {"properties": {"source_id": {"const": "COOMA-SRC-007"}}, "required": ["source_id"]}, "then": {"properties": {"publisher": {"const": "Australian Bureau of Meteorology"}, "canonical_url": {"const": "https://www.bom.gov.au/climate/averages/tables/cw_070217.shtml"}, "source_kind": {"const": "STATION_METADATA"}}}},
+        {"if": {"properties": {"source_id": {"const": "COOMA-SRC-009"}}, "required": ["source_id"]}, "then": {"properties": {"publisher": {"const": "Australian Government Department of Climate Change, Energy, the Environment and Water"}, "canonical_url": {"const": "https://www.dcceew.gov.au/cewh/water-region/murrumbidgee-river-valley/about"}, "source_kind": {"const": "FEDERAL_CATCHMENT_CONTEXT"}}}}
+      ]
+    },
+    "claim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["claim_id", "source_id", "claim_type", "claim_form", "controlled_paraphrase", "verbatim_excerpt", "locator_type", "locator_label", "subject", "predicate", "object_text", "geographic_relevance", "time_scope", "version_state", "licence_state", "admission_state", "evidence_relation_eligible", "uncertainty_flags", "prohibited_inferences", "human_review_state"],
+      "properties": {
+        "claim_id": {"type": "string", "pattern": "^COOMA-CLAIM-[0-9]{3}$"},
+        "source_id": {"enum": ["COOMA-SRC-006", "COOMA-SRC-007", "COOMA-SRC-009"]},
+        "claim_type": {"enum": ["WATER_SOURCE_DESCRIPTION", "WATER_TREATMENT_DESCRIPTION", "STATION_IDENTITY", "STATION_LOCATION_METADATA", "BROAD_VALLEY_GEOGRAPHY"]},
+        "claim_form": {"const": "CONTROLLED_PARAPHRASE"}, "controlled_paraphrase": {"type": "string", "minLength": 1},
+        "verbatim_excerpt": {"type": "null"}, "locator_type": {"const": "HTML_HEADING_AND_FIELD"},
+        "locator_label": {"type": "string", "minLength": 1}, "subject": {"type": "string", "minLength": 1},
+        "predicate": {"type": "string", "minLength": 1}, "object_text": {"type": "string", "minLength": 1},
+        "geographic_relevance": {"enum": ["DIRECT_COOMA", "OBSERVATION_STATION", "MURRUMBIDGEE_VALLEY"]},
+        "time_scope": {"const": "PAGE_STATE_AT_ACCESS"}, "version_state": {"type": "string", "minLength": 1},
+        "licence_state": {"const": "NOT_ASSESSED_REFERENCE_ONLY"},
+        "admission_state": {"const": "SOURCE_ASSERTION_REFERENCE_ONLY"},
+        "evidence_relation_eligible": {"const": false},
+        "uncertainty_flags": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "prohibited_inferences": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "human_review_state": {"const": "UNASSIGNED_NOT_APPROVED"}
+      },
+      "allOf": [
+        {"if": {"properties": {"claim_type": {"const": "WATER_SOURCE_DESCRIPTION"}}, "required": ["claim_type"]}, "then": {"properties": {"source_id": {"const": "COOMA-SRC-006"}, "geographic_relevance": {"const": "DIRECT_COOMA"}}}},
+        {"if": {"properties": {"claim_type": {"const": "WATER_TREATMENT_DESCRIPTION"}}, "required": ["claim_type"]}, "then": {"properties": {"source_id": {"const": "COOMA-SRC-006"}, "geographic_relevance": {"const": "DIRECT_COOMA"}}}},
+        {"if": {"properties": {"claim_type": {"const": "STATION_IDENTITY"}}, "required": ["claim_type"]}, "then": {"properties": {"source_id": {"const": "COOMA-SRC-007"}, "geographic_relevance": {"const": "OBSERVATION_STATION"}}}},
+        {"if": {"properties": {"claim_type": {"const": "STATION_LOCATION_METADATA"}}, "required": ["claim_type"]}, "then": {"properties": {"source_id": {"const": "COOMA-SRC-007"}, "geographic_relevance": {"const": "OBSERVATION_STATION"}}}},
+        {"if": {"properties": {"claim_type": {"const": "BROAD_VALLEY_GEOGRAPHY"}}, "required": ["claim_type"]}, "then": {"properties": {"source_id": {"const": "COOMA-SRC-009"}, "geographic_relevance": {"const": "MURRUMBIDGEE_VALLEY"}}}}
+      ]
+    },
+    "relationTrial": {
+      "type": "object", "additionalProperties": false,
+      "required": ["relation_trial_id", "claim_ids", "proposed_relation", "gate_checks", "outcome", "evidence_relation_promoted", "mechanism_candidate_activated", "reason", "human_review_required"],
+      "properties": {
+        "relation_trial_id": {"type": "string", "pattern": "^COOMA-REL-TRIAL-[0-9]{3}$"},
+        "claim_ids": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^COOMA-CLAIM-[0-9]{3}$"}},
+        "proposed_relation": {"type": "string", "minLength": 1},
+        "gate_checks": {
+          "type": "object", "additionalProperties": false,
+          "required": ["source_identity", "licence", "geography", "temporal_alignment", "uncertainty", "stationarity", "expert_review"],
+          "properties": {
+            "source_identity": {"const": "PASS_METADATA_BOUND"},
+            "licence": {"type": "string", "pattern": "^BLOCKED_"}, "geography": {"type": "string", "pattern": "^BLOCKED_"},
+            "temporal_alignment": {"type": "string", "pattern": "^BLOCKED_"}, "uncertainty": {"type": "string", "pattern": "^BLOCKED_"},
+            "stationarity": {"type": "string", "pattern": "^BLOCKED_"}, "expert_review": {"type": "string", "pattern": "^BLOCKED_"}
+          }
+        },
+        "outcome": {"enum": ["REJECTED_SCALE_AND_REVIEW_GAPS", "REJECTED_NO_REPRESENTATIVENESS_OR_OBSERVATIONS"]},
+        "evidence_relation_promoted": {"const": false}, "mechanism_candidate_activated": {"const": false},
+        "reason": {"type": "string", "minLength": 1}, "human_review_required": {"const": true}
+      }
+    }
+  }
+}
