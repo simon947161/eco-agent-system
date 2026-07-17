@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/contracts/cooma_official_source_metadata.schema.json",
+  "title": "ClimateOS Cooma official source identity and zero-download metadata pilot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "pilot", "source_tiers", "records", "deferred_candidates", "governance", "boundaries"],
+  "properties": {
+    "schema_id": {"const": "climateos.cooma_official_source_metadata.v0.1"},
+    "pilot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["base_main_sha", "place_name", "accessed_on", "mode", "purpose"],
+      "properties": {
+        "base_main_sha": {"const": "708aa9f5231e52aea85f4d280214070618ef1c52"},
+        "place_name": {"const": "Cooma"},
+        "accessed_on": {"const": "2026-07-17"},
+        "mode": {"const": "PUBLIC_OFFICIAL_HTML_METADATA_ONLY"},
+        "purpose": {"const": "SOURCE_IDENTITY_VERSION_SCOPE_AND_REUSE_BOUNDARY"}
+      }
+    },
+    "source_tiers": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {"enum": ["STATUTORY_PRIMARY", "STATE_GOVERNMENT_PRIMARY", "COUNCIL_PRIMARY", "PROJECT_PROPONENT_PRIMARY", "SCIENTIFIC_AGENCY_PRIMARY", "OFFICIAL_NEWS_DISCOVERY"]}
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/sourceRecord"}
+    },
+    "deferred_candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidate_id", "candidate_class", "state", "reason"],
+        "properties": {
+          "candidate_id": {"type": "string", "pattern": "^DEFER-[A-Z0-9-]+$"},
+          "candidate_class": {"enum": ["CSIRO_COOMA_SPECIFIC_SOURCE", "INTERNAL_COUNCIL_DATABASE"]},
+          "state": {"enum": ["NOT_IDENTIFIED_IN_BOUNDED_OFFICIAL_SEARCH", "OUT_OF_SCOPE_NOT_ACCESSED"]},
+          "reason": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["website_completeness_status", "conflict_policy", "news_policy", "document_policy", "evidence_promotion", "local_environmental_conclusion", "planning_conclusion", "legal_conclusion", "operational_or_compliance_conclusion"],
+      "properties": {
+        "website_completeness_status": {"const": "NOT_ASSUMED_COMPLETE"},
+        "conflict_policy": {"const": "RECORD_WITHOUT_RESOLUTION"},
+        "news_policy": {"const": "DISCOVERY_ONLY_REQUIRES_PRIMARY_CORROBORATION"},
+        "document_policy": {"const": "HTML_METADATA_ONLY_NO_PDF_OR_DATASET_DOWNLOAD"},
+        "evidence_promotion": {"const": "BLOCKED_PENDING_SEPARATE_AUTHORIZATION"},
+        "local_environmental_conclusion": {"const": "NONE"},
+        "planning_conclusion": {"const": "NONE"},
+        "legal_conclusion": {"const": "NONE"},
+        "operational_or_compliance_conclusion": {"const": "NONE"}
+      }
+    },
+    "boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["network_used", "public_pages_accessed", "real_page_metadata_retained", "raw_page_content_retained", "pdf_or_document_downloaded", "dataset_downloaded", "cloud_service_used", "external_contact_made", "monitoring_active", "model_executed", "private_worksite_data_included", "customer_or_person_data_included", "local_conclusion_formed", "cost_aud", "human_review_required"],
+      "properties": {
+        "network_used": {"const": true},
+        "public_pages_accessed": {"const": true},
+        "real_page_metadata_retained": {"const": true},
+        "raw_page_content_retained": {"const": false},
+        "pdf_or_document_downloaded": {"const": false},
+        "dataset_downloaded": {"const": false},
+        "cloud_service_used": {"const": false},
+        "external_contact_made": {"const": false},
+        "monitoring_active": {"const": false},
+        "model_executed": {"const": false},
+        "private_worksite_data_included": {"const": false},
+        "customer_or_person_data_included": {"const": false},
+        "local_conclusion_formed": {"const": false},
+        "cost_aud": {"const": 0},
+        "human_review_required": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "sourceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "title", "publisher", "tier", "source_kind", "canonical_url", "domain", "accessed_on", "page_format", "identity_status", "visible_date", "version_state", "geography_scope", "geographic_relevance", "retained_metadata_fields", "licence_state", "reuse_permission", "raw_content_retained", "file_downloaded", "dataset_downloaded", "admission_state", "claim_boundary", "does_not_prove", "human_review_required"],
+      "properties": {
+        "source_id": {"type": "string", "pattern": "^COOMA-SRC-[0-9]{3}$"},
+        "title": {"type": "string", "minLength": 1},
+        "publisher": {"type": "string", "minLength": 1},
+        "tier": {"enum": ["STATUTORY_PRIMARY", "STATE_GOVERNMENT_PRIMARY", "COUNCIL_PRIMARY", "PROJECT_PROPONENT_PRIMARY", "SCIENTIFIC_AGENCY_PRIMARY", "OFFICIAL_NEWS_DISCOVERY"]},
+        "source_kind": {"enum": ["PLANNING_CONTROL_LANDING", "STATUTORY_INSTRUMENT", "REGIONAL_PLAN_LANDING", "REGIONAL_PLAN_DELIVERY", "COUNCIL_SERVICE_LANDING", "COUNCIL_WATER_SOURCE_LANDING", "STATION_METADATA", "PROJECT_PROPONENT_LANDING", "FEDERAL_CATCHMENT_CONTEXT", "OFFICIAL_NEWS_ITEM"]},
+        "canonical_url": {"type": "string", "pattern": "^https://"},
+        "domain": {"enum": ["snowymonaro.nsw.gov.au", "legislation.nsw.gov.au", "planning.nsw.gov.au", "bom.gov.au", "snowyhydro.com.au", "dcceew.gov.au"]},
+        "accessed_on": {"const": "2026-07-17"},
+        "page_format": {"const": "HTML"},
+        "identity_status": {"const": "VERIFIED_PUBLIC_PAGE"},
+        "visible_date": {"type": ["string", "null"]},
+        "version_state": {"type": "string", "minLength": 1},
+        "geography_scope": {"type": "string", "minLength": 1},
+        "geographic_relevance": {"enum": ["DIRECT_COOMA", "FORMER_COOMA_MONARO", "SNOWY_MONARO_LGA", "SOUTH_EAST_TABLELANDS_REGION", "MURRUMBIDGEE_VALLEY", "SNOWY_SCHEME_PROJECT"]},
+        "retained_metadata_fields": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "uniqueItems": true,
+          "items": {"enum": ["TITLE", "PUBLISHER", "CANONICAL_URL", "VISIBLE_DATE_OR_VERSION", "DECLARED_GEOGRAPHY", "ACCESS_DATE", "ADMISSION_STATE"]}
+        },
+        "licence_state": {"const": "NOT_ASSESSED_REFERENCE_ONLY"},
+        "reuse_permission": {"const": "NOT_CLAIMED"},
+        "raw_content_retained": {"const": false},
+        "file_downloaded": {"const": false},
+        "dataset_downloaded": {"const": false},
+        "admission_state": {"enum": ["METADATA_ADMITTED_REFERENCE_ONLY", "DISCOVERY_ONLY_QUARANTINED"]},
+        "claim_boundary": {"type": "string", "minLength": 1},
+        "does_not_prove": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "human_review_required": {"const": true}
+      }
+    }
+  }
+}
