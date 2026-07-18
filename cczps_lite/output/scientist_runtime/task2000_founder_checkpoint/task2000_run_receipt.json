@@ -1,0 +1,41 @@
+{
+  "approval": {
+    "approved_at": "2026-07-18T02:49:19Z",
+    "decision": "APPROVE",
+    "reason": "The 2026-07-18 ACTP explicitly authorizes this repository-authored fictional tiny-synthetic local run within fixed zero-cost ceilings.",
+    "reviewer_label": "Founder ACTP scope authorization",
+    "scope": "EXACT_FIXED_TINY_SYNTHETIC_REQUEST_ONLY"
+  },
+  "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE",
+  "configuration_id": "MECH-CONFIG-203FBD83B74A5E19",
+  "experiment_id": "MECH-EXP-BB41AFB7FD821D52",
+  "hypothesis_id": "MECH-HYP-053D15DC4D950615",
+  "manifest_id": "MECH-MANIFEST-E50AE2A6D7868837",
+  "observed_end": "2026-07-18T02:49:19Z",
+  "output_digest": "sha256:b22800d863b09f327dc64df1cc5145eee6467e32a21b603e4bba229c70775de1",
+  "output_set_id": "MECH-OUTPUT-SET-36E8A21DC359BA1F",
+  "receipt_id": "MECH-RUN-RECEIPT-815D9E3187D2D0BF",
+  "receipt_state": "RECEIPT_STRUCTURALLY_ACCEPTED",
+  "requested_start": "2026-07-18T02:49:19Z",
+  "resource_ceiling": {
+    "cost_aud": 0,
+    "incremental_memory_mib": 64,
+    "logical_cpu_workers": 1,
+    "output_bytes": 100000,
+    "wall_time_seconds": 5
+  },
+  "resources_observed": {
+    "cost_aud": 0,
+    "cpu_time_seconds": 9.9e-05,
+    "incremental_memory_mib": 0.001579,
+    "logical_cpu_workers": 1,
+    "network_used": false,
+    "output_bytes": 503,
+    "secrets_used": false,
+    "subprocess_used": false,
+    "wall_time_seconds": 0.0001
+  },
+  "run_attempt_id": "MECH-RUN-ATTEMPT-91AC359A617AC3A1",
+  "run_request_id": "MECH-RUN-REQUEST-16C5C1450AAB885B",
+  "termination": "FIXED_EXECUTOR_COMPLETED"
+}

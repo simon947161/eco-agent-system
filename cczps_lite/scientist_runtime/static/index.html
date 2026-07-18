@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClimateOS Minimum Scientist Runtime</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">ClimateOS · Task2000 checkpoint</p>
+      <h1>Minimum Human–AI Scientist Runtime</h1>
+      <p class="lede">Ask one fictional question, inspect the structured hypothesis, approve the exact package, run a fixed local fixture, then review its receipt and quarantined passport.</p>
+      <div class="boundary">Local only · AUD 0 · no network · fictional tiny-synthetic · not environmental evidence</div>
+    </header>
+
+    <nav aria-label="Runtime stages">
+      <ol id="stageRail">
+        <li data-stage="question" class="active"><span>1</span>Question</li>
+        <li data-stage="hypothesis"><span>2</span>AI structure</li>
+        <li data-stage="approval"><span>3</span>Human approval</li>
+        <li data-stage="run"><span>4</span>Local run</li>
+        <li data-stage="receipt"><span>5</span>Receipt + passport</li>
+        <li data-stage="review"><span>6</span>Human review</li>
+      </ol>
+    </nav>
+
+    <section class="panel" id="questionPanel">
+      <div class="panel-heading"><p>01</p><h2>Human question</h2></div>
+      <label for="question">Use the fictional sealed scalar box only</label>
+      <textarea id="question" rows="4">In the fictional sealed scalar box, does the fixed input perturbation increase the response index compared with the fixed baseline?</textarea>
+      <button id="createButton">Record question</button>
+    </section>
+
+    <section class="panel hidden" id="hypothesisPanel">
+      <div class="panel-heading"><p>02</p><h2>AI-structured hypothesis</h2></div>
+      <p class="note">The local assistant is deterministic and template-based in v0.1. Read it; do not treat “AI proposed” as “scientifically correct.”</p>
+      <div id="hypothesisView" class="object-card"></div>
+      <button id="proposeButton">Structure hypothesis</button>
+    </section>
+
+    <section class="panel hidden" id="approvalPanel">
+      <div class="panel-heading"><p>03</p><h2>Human approval gate</h2></div>
+      <label for="reviewer">Reviewer label</label><input id="reviewer" value="Founder human reviewer">
+      <label for="approvalReason">Reason</label><textarea id="approvalReason" rows="3">I approve only this exact fictional, fixed, local tiny-synthetic package for workflow testing.</textarea>
+      <div class="actions"><button id="approveButton">Approve exact run</button><button class="secondary" id="stopButton">Stop</button></div>
+    </section>
+
+    <section class="panel hidden" id="runPanel">
+      <div class="panel-heading"><p>04</p><h2>Controlled local run</h2></div>
+      <div id="runLimits" class="metrics"></div>
+      <button id="runButton">Run fixed fixture</button>
+    </section>
+
+    <section class="panel hidden" id="resultPanel">
+      <div class="panel-heading"><p>05</p><h2>Run receipt and quarantined passport</h2></div>
+      <div id="receiptView" class="object-card"></div>
+      <div id="passportView" class="object-card warning"></div>
+    </section>
+
+    <section class="panel hidden" id="reviewPanel">
+      <div class="panel-heading"><p>06</p><h2>Human review</h2></div>
+      <label for="reviewReason">Review reason</label><textarea id="reviewReason" rows="3">The supervised workflow completed and its audit chain is understandable; the synthetic result remains non-environmental evidence.</textarea>
+      <div class="actions"><button id="acceptButton">Accept runtime demo</button><button class="secondary" id="insufficientButton">Mark evidence insufficient</button></div>
+      <div id="finalState" class="final-state hidden"></div>
+    </section>
+
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

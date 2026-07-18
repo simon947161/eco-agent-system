@@ -1,0 +1,286 @@
+{
+  "audit_chain_valid": true,
+  "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE",
+  "created_at": "2026-07-18T02:49:19Z",
+  "human_review": {
+    "decision": "ACCEPT_RUNTIME_DEMO",
+    "reason": "Founder explicitly confirmed ACCEPT_RUNTIME_DEMO on 2026-07-18; close Task2000 while all synthetic, quarantine and no-scientific-claim boundaries remain in force.",
+    "release_as_environmental_evidence": false,
+    "reviewed_at": "2026-07-18T02:57:43Z",
+    "reviewer_label": "Founder Simon / 舒民",
+    "scientific_signoff": false
+  },
+  "object_graph": {
+    "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE",
+    "configuration_identity": {
+      "configuration_digest": "sha256:35d1be6d8f12570ae4b5716ceb43aa4a0236e0cc1db891ff5863b42e09b8ffdf",
+      "configuration_id": "MECH-CONFIG-203FBD83B74A5E19",
+      "executor": "fixed_scalar_delta",
+      "manifest_id": "MECH-MANIFEST-E50AE2A6D7868837",
+      "resource_ceiling": {
+        "cost_aud": 0,
+        "incremental_memory_mib": 64,
+        "logical_cpu_workers": 1,
+        "output_bytes": 100000,
+        "wall_time_seconds": 5
+      }
+    },
+    "experiment_design": {
+      "baseline": "fixture.baseline",
+      "control": "same fixed scalar fixture and diagnostic",
+      "design_revision": "MECH-EXP-BB41AFB7FD821D52-R1",
+      "diagnostics": [
+        "response_index_delta"
+      ],
+      "experiment_id": "MECH-EXP-BB41AFB7FD821D52",
+      "hypothesis_id": "MECH-HYP-053D15DC4D950615",
+      "perturbation": "fixture.perturbation",
+      "sensitivity": "none in v0.1",
+      "status": "APPROVED_EXACT_SCOPE",
+      "stop_conditions": [
+        "missing approval",
+        "fixture boundary failure",
+        "resource ceiling expansion",
+        "malformed scalar"
+      ]
+    },
+    "hypothesis": {
+      "alternative_explanations": [
+        "The fixed fixture may encode the difference directly rather than represent a mechanism.",
+        "The diagnostic may be structurally valid while having no relevance outside this fictional box."
+      ],
+      "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE",
+      "diagnostics": [
+        "response_index_delta = perturbation response index - baseline response index"
+      ],
+      "evidence_threshold": "Synthetic support only when response_index_delta >= 2.0; never environmental support.",
+      "expected_direction": "POSITIVE response_index_delta",
+      "expert_owner_role": "human runtime reviewer; no scientific expert is assigned",
+      "falsification_criteria": [
+        "response_index_delta <= 0 contradicts the proposed positive direction",
+        "missing, malformed or boundary-crossing fixture makes the hypothesis not testable"
+      ],
+      "fixture_id": "TINY-SYNTH-SCALAR-001",
+      "hypothesis_id": "MECH-HYP-053D15DC4D950615",
+      "hypothesis_statement": "For the fictional sealed scalar box, the fixed perturbation will produce a larger response index than the fixed baseline.",
+      "limitations": [
+        "This is a deterministic workflow rehearsal, not a scientific experiment.",
+        "No result may be transferred to a real place, model, forecast or project decision."
+      ],
+      "mechanism_chain": [
+        "FICTIONAL_INPUT_INDEX --PROPOSED_INFLUENCE--> FICTIONAL_RESPONSE_INDEX",
+        "FIXED_DIAGNOSTIC --DIAGNOSTIC_ONLY--> RESPONSE_INDEX_DELTA"
+      ],
+      "research_question": "In the fictional sealed scalar box, does the fixed perturbation increase the response index compared with the fixed baseline?",
+      "revision_id": "MECH-HYP-053D15DC4D950615-R1",
+      "scale_and_time_assumptions": "One timeless fictional scalar pair; no geographic, atmospheric or project scale."
+    },
+    "reproducibility_manifest": {
+      "experiment_id": "MECH-EXP-BB41AFB7FD821D52",
+      "external_dependencies": [],
+      "fixture_digest": "sha256:2f8dee6b90da30354cb394f7801a20a0cd2a07b5daae951fa94cff514ebc878a",
+      "fixture_id": "TINY-SYNTH-SCALAR-001",
+      "manifest_id": "MECH-MANIFEST-E50AE2A6D7868837",
+      "network": "DENIED_BY_DESIGN",
+      "random_seed_policy": "fixed repository seed; executor is deterministic",
+      "runtime": "python-standard-library-fixed-function-v0.1",
+      "secrets": "NOT_USED"
+    },
+    "resource_ceiling": {
+      "cost_aud": 0,
+      "incremental_memory_mib": 64,
+      "logical_cpu_workers": 1,
+      "output_bytes": 100000,
+      "wall_time_seconds": 5
+    },
+    "run_request": {
+      "approval": {
+        "approved_at": "2026-07-18T02:49:19Z",
+        "decision": "APPROVE",
+        "reason": "The 2026-07-18 ACTP explicitly authorizes this repository-authored fictional tiny-synthetic local run within fixed zero-cost ceilings.",
+        "reviewer_label": "Founder ACTP scope authorization",
+        "scope": "EXACT_FIXED_TINY_SYNTHETIC_REQUEST_ONLY"
+      },
+      "approved": true,
+      "configuration_id": "MECH-CONFIG-203FBD83B74A5E19",
+      "experiment_id": "MECH-EXP-BB41AFB7FD821D52",
+      "fixture_id": "TINY-SYNTH-SCALAR-001",
+      "hypothesis_id": "MECH-HYP-053D15DC4D950615",
+      "manifest_id": "MECH-MANIFEST-E50AE2A6D7868837",
+      "run_request_id": "MECH-RUN-REQUEST-16C5C1450AAB885B",
+      "session_id": "MECH-SESSION-5473B2E44F2540FA"
+    },
+    "schema_id": "climateos.minimum_scientist_runtime.v0.1",
+    "session_id": "MECH-SESSION-5473B2E44F2540FA"
+  },
+  "passport": {
+    "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE",
+    "diagnostics": {
+      "baseline_response_index": 20.0,
+      "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE",
+      "diagnostic": "response_index_delta",
+      "fixture_id": "TINY-SYNTH-SCALAR-001",
+      "limitations": [
+        "Repository-authored fictional scalar values only.",
+        "No geographic, meteorological, wind-resource, project or causal conclusion."
+      ],
+      "passport_state": "SUPPORTED_SYNTHETIC_ONLY",
+      "perturbation_response_index": 23.5,
+      "quarantine_state": "QUARANTINED_NOT_ENVIRONMENTAL_EVIDENCE",
+      "response_index_delta": 3.5
+    },
+    "human_review_required": true,
+    "hypothesis_id": "MECH-HYP-053D15DC4D950615",
+    "limitations": [
+      "This passport records a fictional runtime demonstration only.",
+      "It is not an Environmental Evidence Passport and cannot support a real decision."
+    ],
+    "output_set_id": "MECH-OUTPUT-SET-36E8A21DC359BA1F",
+    "passport_id": "MECH-EVIDENCE-PASSPORT-613D6468ED0AF7E5",
+    "quarantine_state": "REVIEWED_BUT_REMAINS_NON_ENVIRONMENTAL_DEMO",
+    "regional_conclusion": null,
+    "run_receipt_id": "MECH-RUN-RECEIPT-815D9E3187D2D0BF",
+    "scientific_claim": null,
+    "session_id": "MECH-SESSION-5473B2E44F2540FA",
+    "state": "SUPPORTED_SYNTHETIC_ONLY"
+  },
+  "question": "In the fictional sealed scalar box, does the fixed perturbation increase the response index compared with the fixed baseline?",
+  "questioner_role": "FOUNDER_REQUEST_ASSISTANT_WORDED_QUESTION",
+  "receipt": {
+    "approval": {
+      "approved_at": "2026-07-18T02:49:19Z",
+      "decision": "APPROVE",
+      "reason": "The 2026-07-18 ACTP explicitly authorizes this repository-authored fictional tiny-synthetic local run within fixed zero-cost ceilings.",
+      "reviewer_label": "Founder ACTP scope authorization",
+      "scope": "EXACT_FIXED_TINY_SYNTHETIC_REQUEST_ONLY"
+    },
+    "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE",
+    "configuration_id": "MECH-CONFIG-203FBD83B74A5E19",
+    "experiment_id": "MECH-EXP-BB41AFB7FD821D52",
+    "hypothesis_id": "MECH-HYP-053D15DC4D950615",
+    "manifest_id": "MECH-MANIFEST-E50AE2A6D7868837",
+    "observed_end": "2026-07-18T02:49:19Z",
+    "output_digest": "sha256:b22800d863b09f327dc64df1cc5145eee6467e32a21b603e4bba229c70775de1",
+    "output_set_id": "MECH-OUTPUT-SET-36E8A21DC359BA1F",
+    "receipt_id": "MECH-RUN-RECEIPT-815D9E3187D2D0BF",
+    "receipt_state": "RECEIPT_STRUCTURALLY_ACCEPTED",
+    "requested_start": "2026-07-18T02:49:19Z",
+    "resource_ceiling": {
+      "cost_aud": 0,
+      "incremental_memory_mib": 64,
+      "logical_cpu_workers": 1,
+      "output_bytes": 100000,
+      "wall_time_seconds": 5
+    },
+    "resources_observed": {
+      "cost_aud": 0,
+      "cpu_time_seconds": 9.9e-05,
+      "incremental_memory_mib": 0.001579,
+      "logical_cpu_workers": 1,
+      "network_used": false,
+      "output_bytes": 503,
+      "secrets_used": false,
+      "subprocess_used": false,
+      "wall_time_seconds": 0.0001
+    },
+    "run_attempt_id": "MECH-RUN-ATTEMPT-91AC359A617AC3A1",
+    "run_request_id": "MECH-RUN-REQUEST-16C5C1450AAB885B",
+    "termination": "FIXED_EXECUTOR_COMPLETED"
+  },
+  "session_id": "MECH-SESSION-5473B2E44F2540FA",
+  "session_label": "task2000-founder-checkpoint",
+  "state": "REVIEWED_DEMO_ACCEPTED",
+  "updated_at": "2026-07-18T02:57:43Z",
+  "audit_events": [
+    {
+      "sequence_number": 1,
+      "event_id": "MECH-AUDIT-EVENT-B9A16FDFF8FEB8C9",
+      "session_id": "MECH-SESSION-5473B2E44F2540FA",
+      "event_type": "QUESTION_RECORDED",
+      "actor_role": "FOUNDER_REQUEST_ASSISTANT_WORDED_QUESTION",
+      "state_before": "NONE",
+      "state_after": "QUESTION_RECORDED",
+      "detail": {
+        "question_digest": "sha256:79e0966f1ec2b81ef0928401b52dbbc52bb34e8908d09bb46bfa6f078180dcb6"
+      },
+      "predecessor_digest": "GENESIS",
+      "event_digest": "sha256:08f97194db2101a4d69c2c56eab8ffdb382643fcd7a460aa5ca8d84f1f5002bc",
+      "created_at": "2026-07-18T02:49:19Z",
+      "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE"
+    },
+    {
+      "sequence_number": 2,
+      "event_id": "MECH-AUDIT-EVENT-2D7BB7730C95EF83",
+      "session_id": "MECH-SESSION-5473B2E44F2540FA",
+      "event_type": "AI_HYPOTHESIS_PROPOSED",
+      "actor_role": "LOCAL_AI_ASSISTANT",
+      "state_before": "QUESTION_RECORDED",
+      "state_after": "HYPOTHESIS_PROPOSED",
+      "detail": {
+        "assistant_kind": "DETERMINISTIC_STRUCTURING_ASSISTANT_NOT_LLM",
+        "hypothesis_id": "MECH-HYP-053D15DC4D950615"
+      },
+      "predecessor_digest": "sha256:08f97194db2101a4d69c2c56eab8ffdb382643fcd7a460aa5ca8d84f1f5002bc",
+      "event_digest": "sha256:a92d8df53127728b822f6462dd770d5d53bce3e2b303ed0da3b3d99a76005ac3",
+      "created_at": "2026-07-18T02:49:19Z",
+      "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE"
+    },
+    {
+      "sequence_number": 3,
+      "event_id": "MECH-AUDIT-EVENT-3DEAAE5442034950",
+      "session_id": "MECH-SESSION-5473B2E44F2540FA",
+      "event_type": "HUMAN_APPROVE_BEFORE_RUN",
+      "actor_role": "HUMAN_APPROVER",
+      "state_before": "HYPOTHESIS_PROPOSED",
+      "state_after": "APPROVED_TO_RUN",
+      "detail": {
+        "reason": "The 2026-07-18 ACTP explicitly authorizes this repository-authored fictional tiny-synthetic local run within fixed zero-cost ceilings.",
+        "reviewer_label": "Founder ACTP scope authorization"
+      },
+      "predecessor_digest": "sha256:a92d8df53127728b822f6462dd770d5d53bce3e2b303ed0da3b3d99a76005ac3",
+      "event_digest": "sha256:0812f30db23025ed9869ffb1761b6981fbef4afb508111fd6862552fa114f6ca",
+      "created_at": "2026-07-18T02:49:19Z",
+      "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE"
+    },
+    {
+      "sequence_number": 4,
+      "event_id": "MECH-AUDIT-EVENT-589A118AE500CFB5",
+      "session_id": "MECH-SESSION-5473B2E44F2540FA",
+      "event_type": "RUN_RECEIPT_AND_PASSPORT_QUARANTINED",
+      "actor_role": "FIXED_LOCAL_EXECUTOR",
+      "state_before": "APPROVED_TO_RUN",
+      "state_after": "RUN_COMPLETED_QUARANTINED",
+      "detail": {
+        "passport_id": "MECH-EVIDENCE-PASSPORT-613D6468ED0AF7E5",
+        "passport_state": "SUPPORTED_SYNTHETIC_ONLY",
+        "receipt_id": "MECH-RUN-RECEIPT-815D9E3187D2D0BF",
+        "receipt_state": "RECEIPT_STRUCTURALLY_ACCEPTED"
+      },
+      "predecessor_digest": "sha256:0812f30db23025ed9869ffb1761b6981fbef4afb508111fd6862552fa114f6ca",
+      "event_digest": "sha256:2b63235c475a9dcdbd0cfa9592423ec90fbabd09bb7f8feb78943ac53c18ea91",
+      "created_at": "2026-07-18T02:49:19Z",
+      "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE"
+    },
+    {
+      "sequence_number": 5,
+      "event_id": "MECH-AUDIT-EVENT-B5DCC10BDA70B3EF",
+      "session_id": "MECH-SESSION-5473B2E44F2540FA",
+      "event_type": "HUMAN_POST_RUN_REVIEW_RECORDED",
+      "actor_role": "HUMAN_REVIEWER",
+      "state_before": "RUN_COMPLETED_QUARANTINED",
+      "state_after": "REVIEWED_DEMO_ACCEPTED",
+      "detail": {
+        "decision": "ACCEPT_RUNTIME_DEMO",
+        "reason": "Founder explicitly confirmed ACCEPT_RUNTIME_DEMO on 2026-07-18; close Task2000 while all synthetic, quarantine and no-scientific-claim boundaries remain in force.",
+        "release_as_environmental_evidence": false,
+        "reviewed_at": "2026-07-18T02:57:43Z",
+        "reviewer_label": "Founder Simon / 舒民",
+        "scientific_signoff": false
+      },
+      "predecessor_digest": "sha256:2b63235c475a9dcdbd0cfa9592423ec90fbabd09bb7f8feb78943ac53c18ea91",
+      "event_digest": "sha256:8a54eec03b34a92d5127b4da87efa25256bd90385818bf190ca0136f8ffba604",
+      "created_at": "2026-07-18T02:57:43Z",
+      "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE"
+    }
+  ]
+}
