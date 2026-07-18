@@ -50,8 +50,33 @@ class ScientistRuntimeServerTests(unittest.TestCase):
         self.assertEqual(response.getheader("X-Frame-Options"), "DENY")
         status, html, _ = self.request("GET", "/")
         self.assertEqual(status, 200)
-        for text in ("Human question", "AI-structured hypothesis", "Human approval gate", "Run receipt", "Human review"):
+        for text in (
+            "Human question", "AI-structured hypothesis", "Human approval gate",
+            "Run receipt", "Human review", "Reject plan", "Save bounded revision",
+            "Start revised session",
+        ):
             self.assertIn(text, html)
+
+    def test_http_hypothesis_revision_is_bounded_and_audited(self):
+        question = "In this fictional offline test box, does a higher input produce a higher output score than baseline?"
+        status, session, _ = self.request("POST", "/api/sessions", {"question": question})
+        self.assertEqual(status, 201)
+        session_id = session["session_id"]
+        status, session, _ = self.request("POST", f"/api/sessions/{session_id}/propose", {})
+        self.assertEqual(status, 200)
+        hypothesis = session["object_graph"]["hypothesis"]
+        hypothesis["revision_id"] = f'{hypothesis["hypothesis_id"]}-R2'
+        hypothesis["hypothesis_statement"] = "For this fictional offline box, the higher fixed test input will produce a higher output score."
+        status, revised, _ = self.request("POST", f"/api/sessions/{session_id}/revise", {
+            "hypothesis": hypothesis,
+            "reviewer_label": "Founder reviewer",
+            "reason": "Clarify the statement without changing the fixed executor or fixture.",
+        })
+        self.assertEqual(status, 200)
+        self.assertEqual(revised["state"], "HYPOTHESIS_PROPOSED")
+        self.assertEqual(revised["object_graph"]["hypothesis"]["revision_id"], hypothesis["revision_id"])
+        self.assertEqual(revised["audit_events"][-1]["event_type"], "HUMAN_HYPOTHESIS_REVISED")
+        self.assertEqual(revised["object_graph"]["resource_ceiling"]["cost_aud"], 0)
 
     def test_complete_http_workflow(self):
         question = "In the fictional sealed scalar box, does the fixed perturbation increase the response index compared with baseline?"

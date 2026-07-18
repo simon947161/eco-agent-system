@@ -115,6 +115,10 @@ def build_handler(runtime: ScientistRuntime):
                         if body:
                             raise ContractError("propose accepts an empty JSON object")
                         result = runtime.propose_hypothesis(session_id)
+                    elif action == "revise":
+                        if set(body) != {"hypothesis", "reviewer_label", "reason"}:
+                            raise ContractError("revision fields are closed")
+                        result = runtime.revise_hypothesis(session_id, **body)
                     elif action == "decision":
                         if set(body) != {"decision", "reviewer_label", "reason"}:
                             raise ContractError("decision fields are closed")

@@ -112,10 +112,10 @@ def validate_hypothesis(value: Any) -> dict[str, Any]:
     if not isinstance(value, dict) or set(value) != fields:
         raise ContractError("hypothesis object fields are not closed")
     validate_question(value["research_question"])
+    validate_question(value["hypothesis_statement"])
     for key in (
         "hypothesis_id",
         "revision_id",
-        "hypothesis_statement",
         "expected_direction",
         "evidence_threshold",
         "scale_and_time_assumptions",
