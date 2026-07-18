@@ -4,6 +4,8 @@
 
 Eco Agent System is an early-stage open-source prototype for translating environmental observations into planning, resilience, maintenance, ESG interpretation, and climate-risk decision support.
 
+It is also the current public implementation home of **ClimateOS**, a long-horizon human–AI operating-system direction for shared climate stewardship and governance. ClimateOS combines human life experience, local observation, values and action responsibility with AI long-term memory, scientific synthesis, multi-model reasoning, evidence organisation and system execution. Its identity and cumulative history must not be reduced to the newest runtime or demonstration. See the [Stewardship and Civilization Care vision](docs/00_VISION/CLIMATEOS_STEWARDSHIP_AND_CIVILIZATION_CARE.md) and the [Integrity, Long-Horizon, and Human–AI Covenant](docs/00_VISION/CLIMATEOS_INTEGRITY_LONG_HORIZON_AND_HUMAN_AI_COVENANT.md).
+
 It explores how environmental data can become practical, human-reviewed action logic for communities, planners, land managers, researchers, and public-good projects.
 
 ## CCZPS-Lite v0.5
@@ -60,8 +62,10 @@ Committed outputs are under `cczps_lite/output/`; the static dashboard is under
 [v0.5 release package](docs/08_RELEASES/README.md) for release notes,
 architecture, demonstration guidance, and the output inventory.
 
-FarmerOS, GardenOS, WaterOS, and ClimateOS are future application-layer
-directions that may reuse this foundation; they are not implemented in v0.5.
+FarmerOS, GardenOS, and WaterOS remain future application-layer directions
+that may reuse this foundation. ClimateOS is the longer-horizon umbrella system
+to which this repository now contributes; its full intended capability is not
+implemented in v0.5 or in any single current runtime.
 
 ```text
 Climate · Water · Vegetation · Infrastructure · Maintenance · Resilience · Governance
@@ -256,6 +260,9 @@ python run_simple_check.py
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [License](LICENSE)
 - [Eco Decision DNA](docs/eco-decision-dna.md)
+- [ClimateOS Stewardship and Civilization Care](docs/00_VISION/CLIMATEOS_STEWARDSHIP_AND_CIVILIZATION_CARE.md)
+- [ClimateOS Integrity, Long-Horizon, and Human–AI Covenant](docs/00_VISION/CLIMATEOS_INTEGRITY_LONG_HORIZON_AND_HUMAN_AI_COVENANT.md)
+- [Build Week Participation and Long-Horizon Alignment CRP](docs/context-packets/2026-07-18_CLIMATEOS_BUILD_WEEK_PARTICIPATION_AND_LONG_HORIZON_CRP.md)
 
 ---
 
