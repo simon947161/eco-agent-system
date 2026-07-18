@@ -2,7 +2,7 @@
 
 Date: 2026-07-18
 
-Status: AUTHORIZED / STARTED / FOUNDER RETEST FEEDBACK RECEIVED / CORE MEANING BLOCKER OPEN
+Status: FOUNDER ACCEPTED FOUNDATION / TASK2001 CLOSED / NEXT RUNTIME AUTHORIZED
 
 Founder authorization:
 
@@ -217,13 +217,29 @@ Choose exactly one after direct operation:
 - `TASK2001_HUMAN_REVIEW_REVISE`
 - `TASK2001_HUMAN_REVIEW_REJECTED`
 
-Decision:
+Decision: `TASK2001_HUMAN_REVIEW_ACCEPTED`
 
-Reason:
+Reason: Simon directed ClimateOS to stop further cosmetic or conceptual polishing
+of the minimum scalar Runtime, accept it as a verified control foundation, and
+advance to the next Runtime capable of structuring a meaningful environmental
+question. This acceptance covers the supervised mechanics only. It does not
+declare the scalar experience sufficient for Build Week submission and does not
+create a scientific conclusion.
 
-Known limitations accepted for the submission:
+Known limitations accepted for the foundation:
 
-Blocking fixes still required:
+- the scalar-box experiment remains abstract and is not a meaningful
+  environmental research experience;
+- the local assistant remains deterministic and template-based, not a reasoning
+  model;
+- no current official data, model or expert evidence is used;
+- no real Cooma, ENSO, bushfire, drinking-water or wastewater conclusion exists;
+- public/judge-accessible deployment and the Build Week evidence package remain
+  incomplete.
+
+Blocking fixes still required in Task2001: none. The unresolved meaning gap is
+transferred as the primary capability objective of the separately bounded next
+Runtime milestone, not hidden or marked solved.
 
 ## 7. Completion and stop rule
 
@@ -238,6 +254,6 @@ Task2001 closes only when:
 
 Until then:
 
-`TASK2001_STARTED / CORE_MEANING_BLOCKER_OPEN / BUILD_WEEK_SUBMISSION_NOT_READY`
+`TASK2001_CLOSED / FOUNDATION_ACCEPTED_WITH_KNOWN_LIMITATIONS / NEXT_RUNTIME_AUTHORIZED / BUILD_WEEK_SUBMISSION_NOT_READY`
 
 Task2002+ remains not started.
