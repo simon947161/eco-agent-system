@@ -117,11 +117,11 @@ This section must be completed from Simon's direct experience. Do not infer or
 pre-fill observations on his behalf.
 
 - reviewer: Simon / Founder
-- review started at:
+- review started at: 2026-07-18 13:25 AEST (first startup attempt)
 - review completed at:
-- operating system:
-- browser:
-- Python version:
+- operating system: Windows (version not yet recorded)
+- browser: Microsoft Edge
+- Python version: Python 3.14 family inferred from the reported `Python314` executable path; exact patch version pending
 - baseline commit:
 - reviewed commit:
 - Runtime session ID:
@@ -137,7 +137,7 @@ pre-fill observations on his behalf.
 
 | Step | Directly completed? | Friction or failure | Severity | Suggested change |
 |---|---|---|---|---|
-| Open Runtime |  |  |  |  |
+| Open Runtime | NO | PowerShell was run from `C:\\Users\\doras\\OneDrive\\Desktop`, which was neither the repository nor a directory containing `run_scientist_runtime.py`. Git and Python commands failed, no server started, and Edge reported `ERR_CONNECTION_REFUSED` for `127.0.0.1:8765`. | BLOCKER | Add clone/location and `cd` steps before the launch command; re-test personally. |
 | Enter/select question |  |  |  |  |
 | Understand structured plan |  |  |  |  |
 | Approve plan |  |  |  |  |
@@ -166,7 +166,7 @@ pre-fill observations on his behalf.
 
 | ID | Description | Reproduction | Severity | Build Week blocker? | Resolution |
 |---|---|---|---|---|---|
-| T2001- |  |  |  |  |  |
+| T2001-001 | First-time startup instructions assumed the shell was already inside a local repository checkout. | From the Windows Desktop directory, run `git switch main`, `git pull --ff-only`, then `python run_scientist_runtime.py ...`; Git reports `not a git repository`, Python reports file not found, and localhost refuses the connection. | BLOCKER | YES | OPEN — provide exact clone/location and `cd` instructions, then repeat the startup attempt. |  |
 
 ## 6. Founder decision
 
