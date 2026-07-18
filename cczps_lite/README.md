@@ -1,4 +1,4 @@
-# CCZPS-Lite â€” Batlow Runtime Demonstrator
+# CCZPS-Lite — ClimateOS Runtime Demonstrator
 
 ## Minimum Human–AI Scientist Runtime (Task2000 checkpoint)
 
@@ -17,6 +17,28 @@ python run_scientist_runtime.py
 Then open `http://127.0.0.1:8765`. Runtime state is written beneath the ignored
 `runtime_data/` directory. The demonstration makes no environmental or regional
 claim, uses no external service, and cannot execute arbitrary code.
+
+### First-time Windows startup
+
+In PowerShell, clone the repository and enter its directory before starting the
+Runtime:
+
+```powershell
+Set-Location "$HOME\OneDrive\Desktop"
+git clone https://github.com/simon947161/eco-agent-system.git eco-agent-system-task2001
+Set-Location ".\eco-agent-system-task2001"
+git switch main
+git pull --ff-only
+python .\run_scientist_runtime.py --db .\runtime_data\scientist_runtime.sqlite3
+```
+
+Keep that PowerShell window open while using `http://127.0.0.1:8765`. Press
+`Ctrl+C` only when you want to stop the local server. If the repository is
+already cloned, begin with the second `Set-Location` command.
+
+The question field labels a fixed fictional demonstration. The v0.1 local
+assistant is deterministic and template-based; it does not semantically
+interpret arbitrary questions or design custom scientific experiments.
 
 CCZPS-Lite is a small, file-based demonstrator for comparing possible environmental resilience pathways. It supports evidence, runtime interpretation, reasoning, governance review, and pre-execution resource guards.
 

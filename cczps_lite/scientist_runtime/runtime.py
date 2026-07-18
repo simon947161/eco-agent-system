@@ -298,10 +298,21 @@ class ScientistRuntime:
         })
         return self.get_session(session_id)
 
-    def revise_hypothesis(self, session_id: str, hypothesis: dict[str, Any]) -> dict:
+    def revise_hypothesis(
+        self,
+        session_id: str,
+        hypothesis: dict[str, Any],
+        *,
+        reviewer_label: str,
+        reason: str,
+    ) -> dict:
         record = self.store.get(session_id)
         if record["state"] != "HYPOTHESIS_PROPOSED":
             raise RuntimeStateError("only a proposed hypothesis can be revised")
+        reviewer = reviewer_label.strip()
+        explanation = reason.strip()
+        if len(reviewer) < 2 or len(explanation) < 10:
+            raise ContractError("reviewer label and a meaningful revision reason are required")
         validate_hypothesis(hypothesis)
         if hypothesis["hypothesis_id"] != record["object_graph"]["hypothesis"]["hypothesis_id"]:
             raise ContractError("revision cannot replace the stable hypothesis identity")
@@ -309,7 +320,10 @@ class ScientistRuntime:
         record["object_graph"]["hypothesis"]["revision_id"] = hypothesis["revision_id"]
         record["updated_at"] = _now()
         self._audit(record, "HUMAN_HYPOTHESIS_REVISED", "HUMAN_REVIEWER", record["state"], {
-            "revision_id": hypothesis["revision_id"], "hypothesis_digest": digest(hypothesis)
+            "revision_id": hypothesis["revision_id"],
+            "hypothesis_digest": digest(hypothesis),
+            "reviewer_label": reviewer,
+            "reason": explanation,
         })
         return self.get_session(session_id)
 

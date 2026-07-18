@@ -76,6 +76,36 @@ class ScientistRuntimeTests(unittest.TestCase):
         with self.assertRaises(RuntimeBoundaryError):
             execute_fixed_fixture(graph)
 
+    def test_human_can_revise_wording_without_replacing_identity_or_fixture(self):
+        session = self.proposed()
+        hypothesis = copy.deepcopy(session["object_graph"]["hypothesis"])
+        hypothesis["revision_id"] = f'{hypothesis["hypothesis_id"]}-R2'
+        hypothesis["hypothesis_statement"] = (
+            "For this fictional offline box, the higher fixed test input will "
+            "produce a higher output score."
+        )
+        revised = self.runtime.revise_hypothesis(
+            session["session_id"], hypothesis,
+            reviewer_label="Founder reviewer",
+            reason="Clarify the wording without changing the fixed local execution package.",
+        )
+        self.assertEqual(revised["state"], "HYPOTHESIS_PROPOSED")
+        self.assertEqual(revised["object_graph"]["hypothesis"]["revision_id"], hypothesis["revision_id"])
+        self.assertEqual(revised["object_graph"]["hypothesis"]["fixture_id"], "TINY-SYNTH-SCALAR-001")
+        self.assertEqual(revised["audit_events"][-1]["event_type"], "HUMAN_HYPOTHESIS_REVISED")
+
+    def test_human_revision_cannot_cross_the_real_region_boundary(self):
+        session = self.proposed()
+        hypothesis = copy.deepcopy(session["object_graph"]["hypothesis"])
+        hypothesis["revision_id"] = f'{hypothesis["hypothesis_id"]}-R2'
+        hypothesis["hypothesis_statement"] = "Use this fictional result to make a Bondo project conclusion."
+        with self.assertRaises(ContractError):
+            self.runtime.revise_hypothesis(
+                session["session_id"], hypothesis,
+                reviewer_label="Founder reviewer",
+                reason="This deliberate boundary violation must be refused by the Runtime.",
+            )
+
     def test_reject_and_stop_are_terminal_before_run(self):
         for decision, state in (("REJECT", "REJECTED_BEFORE_RUN"), ("STOP", "STOPPED_BEFORE_RUN")):
             runtime = ScientistRuntime(Path(self.temp.name) / f"{decision}.sqlite3")

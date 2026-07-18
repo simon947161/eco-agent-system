@@ -11,7 +11,7 @@
     <header>
       <p class="eyebrow">ClimateOS · Task2000 checkpoint</p>
       <h1>Minimum Human–AI Scientist Runtime</h1>
-      <p class="lede">Ask one fictional question, inspect the structured hypothesis, approve the exact package, run a fixed local fixture, then review its receipt and quarantined passport.</p>
+      <p class="lede">Rehearse a supervised research workflow with two fixed fictional numbers. This checks the approval, run, receipt, evidence and review controls; it does not perform environmental science.</p>
       <div class="boundary">Local only · AUD 0 · no network · fictional tiny-synthetic · not environmental evidence</div>
     </header>
 
@@ -28,8 +28,9 @@
 
     <section class="panel" id="questionPanel">
       <div class="panel-heading"><p>01</p><h2>Human question</h2></div>
-      <label for="question">Use the fictional sealed scalar box only</label>
-      <textarea id="question" rows="4">In the fictional sealed scalar box, does the fixed input perturbation increase the response index compared with the fixed baseline?</textarea>
+      <label for="question">Plain-language fictional test question</label>
+      <p class="note">This wording labels the fixed offline demonstration. Version 0.1 does not interpret arbitrary questions or design a custom experiment.</p>
+      <textarea id="question" rows="4">In this fictional offline test box, does the higher test input produce a higher output score than the baseline?</textarea>
       <button id="createButton">Record question</button>
     </section>
 
@@ -38,13 +39,19 @@
       <p class="note">The local assistant is deterministic and template-based in v0.1. Read it; do not treat “AI proposed” as “scientifically correct.”</p>
       <div id="hypothesisView" class="object-card"></div>
       <button id="proposeButton">Structure hypothesis</button>
+      <label for="hypothesisEdit">Revise the hypothesis wording</label>
+      <p class="note">This changes the human-reviewed statement only. The fictional data, fixed executor, limits and evidence boundary cannot change.</p>
+      <textarea id="hypothesisEdit" rows="3" disabled></textarea>
+      <label for="revisionReason">Revision reason</label>
+      <textarea id="revisionReason" rows="2">Clarify the hypothesis wording before approval without changing the fixed run package.</textarea>
+      <button class="secondary" id="reviseButton" disabled>Save bounded revision</button>
     </section>
 
     <section class="panel hidden" id="approvalPanel">
       <div class="panel-heading"><p>03</p><h2>Human approval gate</h2></div>
       <label for="reviewer">Reviewer label</label><input id="reviewer" value="Founder human reviewer">
       <label for="approvalReason">Reason</label><textarea id="approvalReason" rows="3">I approve only this exact fictional, fixed, local tiny-synthetic package for workflow testing.</textarea>
-      <div class="actions"><button id="approveButton">Approve exact run</button><button class="secondary" id="stopButton">Stop</button></div>
+      <div class="actions"><button id="approveButton">Approve exact run</button><button class="secondary" id="rejectButton">Reject plan</button><button class="secondary" id="stopButton">Stop</button></div>
     </section>
 
     <section class="panel hidden" id="runPanel">
@@ -62,8 +69,14 @@
     <section class="panel hidden" id="reviewPanel">
       <div class="panel-heading"><p>06</p><h2>Human review</h2></div>
       <label for="reviewReason">Review reason</label><textarea id="reviewReason" rows="3">The supervised workflow completed and its audit chain is understandable; the synthetic result remains non-environmental evidence.</textarea>
-      <div class="actions"><button id="acceptButton">Accept runtime demo</button><button class="secondary" id="insufficientButton">Mark evidence insufficient</button></div>
+      <div class="actions"><button id="acceptButton">Accept runtime demo</button><button class="secondary" id="insufficientButton">Question evidence</button><button class="secondary" id="rejectDemoButton">Reject runtime demo</button></div>
       <div id="finalState" class="final-state hidden"></div>
+    </section>
+
+    <section class="panel hidden" id="recoveryPanel">
+      <div class="panel-heading"><p>07</p><h2>Revise and re-run</h2></div>
+      <p class="note">Create a new linked-by-label session from the same question. The new session must be structured and explicitly approved again before it can run.</p>
+      <button id="restartButton">Start revised session</button>
     </section>
 
     <p id="status" role="status" aria-live="polite"></p>
