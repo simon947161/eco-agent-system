@@ -263,6 +263,7 @@ python run_simple_check.py
 - [ClimateOS Stewardship and Civilization Care](docs/00_VISION/CLIMATEOS_STEWARDSHIP_AND_CIVILIZATION_CARE.md)
 - [ClimateOS Integrity, Long-Horizon, and Human–AI Covenant](docs/00_VISION/CLIMATEOS_INTEGRITY_LONG_HORIZON_AND_HUMAN_AI_COVENANT.md)
 - [Build Week Participation and Long-Horizon Alignment CRP](docs/context-packets/2026-07-18_CLIMATEOS_BUILD_WEEK_PARTICIPATION_AND_LONG_HORIZON_CRP.md)
+- [Build Week Integrity-to-Submission Next-Thread ACTP](docs/context-packets/2026-07-18_CLIMATEOS_BUILD_WEEK_INTEGRITY_TO_SUBMISSION_NEXT_THREAD_ACTP.md)
 
 ---
 
