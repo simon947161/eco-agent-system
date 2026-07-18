@@ -126,16 +126,16 @@ pre-fill observations on his behalf.
 - reviewed commit:
 - Runtime session ID: PENDING CAPTURE FROM RESULT PANEL
 - hypothesis ID: PENDING CAPTURE FROM RESULT PANEL
-- Run Receipt ID: PENDING CAPTURE FROM RESULT PANEL
-- Evidence Passport ID: PENDING CAPTURE FROM RESULT PANEL
-- audit chain valid: YES / NO / NOT CHECKED
+- Run Receipt ID: `MECH-RUN-RECEIPT-E04B32C73448C6BB`
+- Evidence Passport ID: PENDING — the current Web result card does not render the Passport ID
+- audit chain valid: YES (Founder screenshot)
 - time to first successful session:
 - external cost observed:
-- network dependency observed:
+- network dependency observed: NO — Receipt displayed `Network: not used`
 
 ### Direct evidence note
 
-At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human review panel with `REVIEWED_DEMO_ACCEPTED`, a human-readable statement that the supervised workflow completed, and `Environmental release: blocked`. This verifies the Founder personally completed the main acceptance path. Artifact identifiers were outside the captured viewport and remain pending.
+At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human review panel with `REVIEWED_DEMO_ACCEPTED`, a human-readable statement that the supervised workflow completed, and `Environmental release: blocked`. This verifies the Founder personally completed the main acceptance path. Artifact identifiers were outside the first captured viewport. Follow-up screenshots at 13:56 AEST verify Receipt `MECH-RUN-RECEIPT-E04B32C73448C6BB`, `RECEIPT_STRUCTURALLY_ACCEPTED`, `FIXED_EXECUTOR_COMPLETED`, wall time `0.048516 s`, output `503` bytes, no network, valid audit chain, Passport state `SUPPORTED_SYNTHETIC_ONLY`, quarantine state `REVIEWED_BUT_REMAINS_NON_ENVIRONMENTAL_DEMO`, diagnostic `3.5`, and both non-environmental limitations. The Web UI does not render the Passport ID, so that identifier remains pending.
 
 ### Step record
 
@@ -148,9 +148,9 @@ At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human re
 | Reject plan |  |  |  |  |
 | Modify plan |  |  |  |  |
 | Run controlled experiment | YES | Simon supplied a 2026-07-18 13:53 AEST screenshot of the completed Human review panel. | NONE ON SUCCESS PATH | Preserve the working controlled-run path. |
-| Understand result |  |  |  |  |
-| Inspect Evidence Passport |  |  |  |  |
-| Inspect Run Receipt |  |  |  |  |
+| Understand result | YES | Founder screenshot shows the completed fixed executor and diagnostic `3.5`; the meaning of the synthetic numbers required separate explanation. | T2001-002 REMAINS | Add plain-language labels and interpretation. |
+| Inspect Evidence Passport | YES WITH IDENTIFIER GAP | Screenshot shows `SUPPORTED_SYNTHETIC_ONLY`, `REVIEWED_BUT_REMAINS_NON_ENVIRONMENTAL_DEMO`, diagnostic `3.5`, and both limitations. The Passport ID is not rendered by the Web UI. | HIGH | Render the Passport ID and explain the Passport/Receipt distinction. |
+| Inspect Run Receipt | YES | Receipt `MECH-RUN-RECEIPT-E04B32C73448C6BB` is `RECEIPT_STRUCTURALLY_ACCEPTED`; termination `FIXED_EXECUTOR_COMPLETED`; wall time `0.048516 s`; output `503` bytes; network not used; audit chain valid. | NONE ON CORE RECORD | Preserve these fields and improve copyability. |
 | Accept/question result | PARTIAL | Simon personally selected `Accept runtime demo`; the page displayed `REVIEWED_DEMO_ACCEPTED` and `Environmental release: blocked`. The alternative question/revise path remains unavailable. | BLOCKER FOR ALTERNATIVE PATHS | Retain acceptance and add honest question/revise controls. |
 | Modify and re-run |  |  |  |  |
 
@@ -172,7 +172,8 @@ At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human re
 |---|---|---|---|---|---|
 | T2001-001 | First-time startup instructions assumed the shell was already inside a local repository checkout. | From the Windows Desktop directory, run `git switch main`, `git pull --ff-only`, then `python run_scientist_runtime.py ...`; Git reports `not a git repository`, Python reports file not found, and localhost refuses the connection. | BLOCKER | YES | PARTIAL — Simon opened the Runtime after corrected guidance; permanent README correction remains required. |
 | T2001-002 | The default question and page use unexplained terms such as `fictional sealed scalar box`, `fixed perturbation`, `response index` and `baseline`, so the Founder cannot tell what the question means or why it matters. | Open the Runtime and read the default question before creating a session. Simon directly reported that he did not understand it and asked whether he could enter a meaningful question of his own. | BLOCKER | YES | OPEN — add a plain-language explanation/preset and state clearly that this checkpoint compares fixed fictional numbers rather than performing environmental science. |
-| T2001-003 | The question field suggests free-form AI interpretation, but the current deterministic assistant does not semantically interpret arbitrary questions; permitted wording is attached to the same fixed synthetic plan. | Enter a different boundary-safe question and propose a plan; inspect that the fixed fixture and fixed experiment structure remain unchanged. | HIGH | YES | OPEN — make the deterministic limitation explicit and avoid implying that arbitrary questions produce custom AI-designed experiments. |  |
+| T2001-003 | The question field suggests free-form AI interpretation, but the current deterministic assistant does not semantically interpret arbitrary questions; permitted wording is attached to the same fixed synthetic plan. | Enter a different boundary-safe question and propose a plan; inspect that the fixed fixture and fixed experiment structure remain unchanged. | HIGH | YES | OPEN — make the deterministic limitation explicit and avoid implying that arbitrary questions produce custom AI-designed experiments. |
+| T2001-004 | The Web Passport card omits `passport_id`, preventing the Founder from capturing the required artifact identifier from the demonstrated UI. | Complete a run and inspect section 05. Receipt ID is visible, but the Passport card renders only state, quarantine state, diagnostic and limitations. | HIGH | YES | OPEN — display and make Passport ID copyable; also keep Session ID visible near the final state. |  |
 
 ## 6. Founder decision
 
