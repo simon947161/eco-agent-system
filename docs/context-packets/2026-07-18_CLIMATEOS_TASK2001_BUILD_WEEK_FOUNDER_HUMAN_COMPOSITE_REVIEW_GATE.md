@@ -177,6 +177,28 @@ At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human re
 | T2001-005 | The Web flow did not expose explicit plan rejection, bounded hypothesis revision, result rejection, or a recovery/re-run path. | Complete or reject a session and inspect the available controls. | BLOCKER | YES | IMPLEMENTED / RETEST PENDING — UI and HTTP adapter now expose reject, audited wording revision, result rejection, and a new-session recovery path requiring fresh approval. |
 | T2001-006 | After re-running the repaired version, the Founder still experienced it as substantially the same fixed scalar demonstration and could not understand the practical meaning of a Minimum Human–AI Scientist Runtime or what meaningful work the human should do. | Founder personally repeated the repaired flow and directly reported that the experience looked almost unchanged and that the purpose and usage remained unclear. | BLOCKER | YES | OPEN — replace the abstract scalar-box presentation with one intuitive, explicitly fictional environmental research rehearsal and explain the human/AI responsibilities at every stage; do not claim new scientific capability. |
 
+### Founder meaningful target question
+
+After the repaired scalar demonstration, Simon identified the kind of question he
+actually expects a Human–AI Scientist Runtime to support:
+
+> For Cooma and its surrounding highland catchments, how could plausible future
+> climate conditions affect bushfire risk, drinking-water security and wastewater
+> system resilience; what has current wastewater management achieved; what can it
+> realistically mitigate; and what are its technical, hydrological, regulatory
+> and capacity ceilings?
+
+This is a real, multi-domain and time-sensitive research question. The current
+Task2001 Runtime must not pretend to answer it: the local contract blocks real
+regions, uses no current data, has no scientific models and cannot establish the
+state of Cooma infrastructure or future ENSO, fire or water outcomes.
+
+For the Build Week demonstration, the bounded translation is a fictional
+Australian highland town with repository-authored synthetic snow, inflow,
+bushfire, drinking-water and wastewater indicators. A real Cooma study requires
+a separately authorized post-Task2001 data/source/model/expert gate and must use
+current official evidence. No conclusion is authorized here.
+
 ### Blocker-fix implementation checkpoint
 
 - implementation branch: `agent/task2001-founder-human-review`;
