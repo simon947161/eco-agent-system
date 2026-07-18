@@ -124,10 +124,10 @@ pre-fill observations on his behalf.
 - Python version: Python 3.14 family inferred from the reported `Python314` executable path; exact patch version pending
 - baseline commit:
 - reviewed commit:
-- Runtime session ID: PENDING CAPTURE FROM RESULT PANEL
-- hypothesis ID: PENDING CAPTURE FROM RESULT PANEL
-- Run Receipt ID: `MECH-RUN-RECEIPT-E04B32C73448C6BB`
-- Evidence Passport ID: PENDING — the current Web result card does not render the Passport ID
+- Runtime session ID: `MECH-SESSION-096A9CA000F7443D`
+- hypothesis ID: `MECH-HYP-282828C614DD655A`
+- Run Receipt ID: `MECH-RUN-RECEIPT-F94B32C73448C6BB`
+- Evidence Passport ID: `MECH-EVIDENCE-PASSPORT-5AA4237F899D4398` (recovered read-only from local SQLite because the Web card omitted it)
 - audit chain valid: YES (Founder screenshot)
 - time to first successful session:
 - external cost observed:
@@ -135,7 +135,7 @@ pre-fill observations on his behalf.
 
 ### Direct evidence note
 
-At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human review panel with `REVIEWED_DEMO_ACCEPTED`, a human-readable statement that the supervised workflow completed, and `Environmental release: blocked`. This verifies the Founder personally completed the main acceptance path. Artifact identifiers were outside the first captured viewport. Follow-up screenshots at 13:56 AEST verify Receipt `MECH-RUN-RECEIPT-E04B32C73448C6BB`, `RECEIPT_STRUCTURALLY_ACCEPTED`, `FIXED_EXECUTOR_COMPLETED`, wall time `0.048516 s`, output `503` bytes, no network, valid audit chain, Passport state `SUPPORTED_SYNTHETIC_ONLY`, quarantine state `REVIEWED_BUT_REMAINS_NON_ENVIRONMENTAL_DEMO`, diagnostic `3.5`, and both non-environmental limitations. The Web UI does not render the Passport ID, so that identifier remains pending.
+At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human review panel with `REVIEWED_DEMO_ACCEPTED`, a human-readable statement that the supervised workflow completed, and `Environmental release: blocked`. This verifies the Founder personally completed the main acceptance path. Artifact identifiers were outside the first captured viewport. Follow-up screenshots at 13:56 AEST verify Receipt `MECH-RUN-RECEIPT-F94B32C73448C6BB`, `RECEIPT_STRUCTURALLY_ACCEPTED`, `FIXED_EXECUTOR_COMPLETED`, wall time `0.048516 s`, output `503` bytes, no network, valid audit chain, Passport state `SUPPORTED_SYNTHETIC_ONLY`, quarantine state `REVIEWED_BUT_REMAINS_NON_ENVIRONMENTAL_DEMO`, diagnostic `3.5`, and both non-environmental limitations. The Web UI does not render the Passport ID; Simon recovered `MECH-EVIDENCE-PASSPORT-5AA4237F899D4398` with a read-only SQLite query. The same output verified Session `MECH-SESSION-096A9CA000F7443D`, Hypothesis `MECH-HYP-282828C614DD655A`, Receipt `MECH-RUN-RECEIPT-F94B32C73448C6BB`, and final state `REVIEWED_DEMO_ACCEPTED`.
 
 ### Step record
 
@@ -150,7 +150,7 @@ At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human re
 | Run controlled experiment | YES | Simon supplied a 2026-07-18 13:53 AEST screenshot of the completed Human review panel. | NONE ON SUCCESS PATH | Preserve the working controlled-run path. |
 | Understand result | YES | Founder screenshot shows the completed fixed executor and diagnostic `3.5`; the meaning of the synthetic numbers required separate explanation. | T2001-002 REMAINS | Add plain-language labels and interpretation. |
 | Inspect Evidence Passport | YES WITH IDENTIFIER GAP | Screenshot shows `SUPPORTED_SYNTHETIC_ONLY`, `REVIEWED_BUT_REMAINS_NON_ENVIRONMENTAL_DEMO`, diagnostic `3.5`, and both limitations. The Passport ID is not rendered by the Web UI. | HIGH | Render the Passport ID and explain the Passport/Receipt distinction. |
-| Inspect Run Receipt | YES | Receipt `MECH-RUN-RECEIPT-E04B32C73448C6BB` is `RECEIPT_STRUCTURALLY_ACCEPTED`; termination `FIXED_EXECUTOR_COMPLETED`; wall time `0.048516 s`; output `503` bytes; network not used; audit chain valid. | NONE ON CORE RECORD | Preserve these fields and improve copyability. |
+| Inspect Run Receipt | YES | Receipt `MECH-RUN-RECEIPT-F94B32C73448C6BB` is `RECEIPT_STRUCTURALLY_ACCEPTED`; termination `FIXED_EXECUTOR_COMPLETED`; wall time `0.048516 s`; output `503` bytes; network not used; audit chain valid. | NONE ON CORE RECORD | Preserve these fields and improve copyability. |
 | Accept/question result | PARTIAL | Simon personally selected `Accept runtime demo`; the page displayed `REVIEWED_DEMO_ACCEPTED` and `Environmental release: blocked`. The alternative question/revise path remains unavailable. | BLOCKER FOR ALTERNATIVE PATHS | Retain acceptance and add honest question/revise controls. |
 | Modify and re-run |  |  |  |  |
 
