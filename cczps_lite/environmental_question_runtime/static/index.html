@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ClimateOS Meaningful Environmental Question Runtime</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">ClimateOS · supervised local prototype</p>
+    <h1>Ask the environmental question you actually care about</h1>
+    <p class="lead">This Runtime preserves your real question and shows what evidence is needed. It will not invent a Cooma answer. Only a clearly labelled fictional highland-town rehearsal can run locally.</p>
+    <div class="boundary"><strong>Real place:</strong> research plan only · <strong>Local run:</strong> fictional synthetic data · <strong>Network:</strong> off · <strong>Cost:</strong> A$0</div>
+  </header>
+
+  <section>
+    <span class="step">01</span><h2>Your real question</h2>
+    <p class="role"><b>You do:</b> ask in your own words. <b>AI does:</b> structure a research plan. <b>Cannot prove:</b> any current real-world condition.</p>
+    <textarea id="question" rows="7">I observed less water and snow around Cooma. What could this mean for future bushfire risk and drinking-water security? What wastewater work exists, what are its practical limits, and how could wastewater management contribute to climate adaptation?</textarea>
+    <button id="structure">Structure my question</button>
+  </section>
+
+  <section id="planSection" hidden>
+    <span class="step">02</span><h2>Real-world evidence plan</h2>
+    <p class="role"><b>AI did:</b> split the question into five linked investigations. <b>You decide:</b> whether this is the right question structure. <b>Still blocked:</b> real analysis and conclusions.</p>
+    <div id="plan"></div>
+    <div class="gate"><strong>Red gate:</strong> current official data, provenance, place/time matching, domain experts and separate human approval are required before real analysis.</div>
+    <button id="rehearsal">Create a fictional rehearsal of this structure</button>
+  </section>
+
+  <section id="approvalSection" hidden>
+    <span class="step">03</span><h2>Human approval gate</h2>
+    <p class="role"><b>AI did:</b> translate the structure to an invented highland town. <b>You do:</b> approve or reject this exact synthetic plan. <b>Cannot prove:</b> anything about Cooma.</p>
+    <div id="rehearsalPlan"></div>
+    <label>Reviewer <input id="reviewer" value="Founder human reviewer"></label>
+    <label>Reason <textarea id="approvalReason" rows="3">I approve this exact fictional, offline rehearsal to test the joined-up workflow only.</textarea></label>
+    <div class="actions"><button id="approve">Approve synthetic plan</button><button class="secondary" id="reject">Reject</button></div>
+  </section>
+
+  <section id="runSection" hidden>
+    <span class="step">04</span><h2>Controlled local run</h2>
+    <p class="role"><b>Executor does:</b> fixed arithmetic over repository-authored indices. <b>You do:</b> start the approved run. <b>No network or external model is used.</b></p>
+    <button id="run">Run the fictional rehearsal</button>
+  </section>
+
+  <section id="resultSection" hidden>
+    <span class="step">05</span><h2>Result, Run Receipt and Evidence Passport</h2>
+    <div id="result"></div>
+  </section>
+
+  <section id="reviewSection" hidden>
+    <span class="step">06</span><h2>Human review</h2>
+    <p class="role"><b>You decide:</b> accept the workflow demo, question it, request revision or reject it. Every choice keeps the result non-environmental.</p>
+    <label>Review reason <textarea id="reviewReason" rows="3">The joined-up workflow is understandable, and I understand that its invented values do not answer the real Cooma question.</textarea></label>
+    <div class="actions review-actions">
+      <button data-review="ACCEPT_DEMO">Accept demo</button><button data-review="QUESTION">Question result</button><button data-review="REVISE">Request revision</button><button class="secondary" data-review="REJECT">Reject demo</button>
+    </div>
+    <div id="final"></div>
+  </section>
+  <div id="error" role="alert"></div>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
