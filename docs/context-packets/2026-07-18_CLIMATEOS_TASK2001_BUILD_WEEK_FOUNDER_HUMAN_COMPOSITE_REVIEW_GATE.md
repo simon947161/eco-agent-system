@@ -124,14 +124,18 @@ pre-fill observations on his behalf.
 - Python version: Python 3.14 family inferred from the reported `Python314` executable path; exact patch version pending
 - baseline commit:
 - reviewed commit:
-- Runtime session ID:
-- hypothesis ID:
-- Run Receipt ID:
-- Evidence Passport ID:
+- Runtime session ID: PENDING CAPTURE FROM RESULT PANEL
+- hypothesis ID: PENDING CAPTURE FROM RESULT PANEL
+- Run Receipt ID: PENDING CAPTURE FROM RESULT PANEL
+- Evidence Passport ID: PENDING CAPTURE FROM RESULT PANEL
 - audit chain valid: YES / NO / NOT CHECKED
 - time to first successful session:
 - external cost observed:
 - network dependency observed:
+
+### Direct evidence note
+
+At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human review panel with `REVIEWED_DEMO_ACCEPTED`, a human-readable statement that the supervised workflow completed, and `Environmental release: blocked`. This verifies the Founder personally completed the main acceptance path. Artifact identifiers were outside the captured viewport and remain pending.
 
 ### Step record
 
@@ -143,11 +147,11 @@ pre-fill observations on his behalf.
 | Approve plan |  |  |  |  |
 | Reject plan |  |  |  |  |
 | Modify plan |  |  |  |  |
-| Run controlled experiment |  |  |  |  |
+| Run controlled experiment | YES | Simon supplied a 2026-07-18 13:53 AEST screenshot of the completed Human review panel. | NONE ON SUCCESS PATH | Preserve the working controlled-run path. |
 | Understand result |  |  |  |  |
 | Inspect Evidence Passport |  |  |  |  |
 | Inspect Run Receipt |  |  |  |  |
-| Accept/question result |  |  |  |  |
+| Accept/question result | PARTIAL | Simon personally selected `Accept runtime demo`; the page displayed `REVIEWED_DEMO_ACCEPTED` and `Environmental release: blocked`. The alternative question/revise path remains unavailable. | BLOCKER FOR ALTERNATIVE PATHS | Retain acceptance and add honest question/revise controls. |
 | Modify and re-run |  |  |  |  |
 
 ### Evidence and comprehension questions
