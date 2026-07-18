@@ -1,0 +1,58 @@
+{
+  "schema_id": "climateos.cooma_official_source_monitor_allowlist.v0.1",
+  "program_id": "COOMA-WATER-FIRE-WASTEWATER-WATCH",
+  "policy": {
+    "https_only": true,
+    "manual_approval_each_refresh": true,
+    "raw_content_retained": false,
+    "cost_aud": 0,
+    "change_is_conclusion": false
+  },
+  "sources": [
+    {
+      "source_id": "COOMA-MON-BOM-ENSO",
+      "module": "CLIMATE_AND_SNOW_OUTLOOK",
+      "publisher": "Australian Bureau of Meteorology",
+      "title": "Southern hemisphere monitoring",
+      "url": "https://www.bom.gov.au/climate/enso/",
+      "allowed_host": "www.bom.gov.au",
+      "purpose": "Detect potential changes to the official climate-driver monitoring page; not an ENSO conclusion."
+    },
+    {
+      "source_id": "COOMA-MON-BOM-LONG-RANGE",
+      "module": "CLIMATE_AND_SNOW_OUTLOOK",
+      "publisher": "Australian Bureau of Meteorology",
+      "title": "Rainfall and temperature long-range forecasts",
+      "url": "https://www.bom.gov.au/climate/ahead/outlooks/",
+      "allowed_host": "www.bom.gov.au",
+      "purpose": "Detect potential official outlook-page changes; not a Cooma forecast interpretation."
+    },
+    {
+      "source_id": "COOMA-MON-RFS-FIRE-DANGER",
+      "module": "BUSHFIRE_RISK",
+      "publisher": "NSW Rural Fire Service",
+      "title": "Fire Danger Ratings and Total Fire Bans in NSW",
+      "url": "https://www.rfs.nsw.gov.au/fire-information/fdr-and-tobans",
+      "allowed_host": "www.rfs.nsw.gov.au",
+      "purpose": "Detect potential changes to the official state fire-danger page; not an emergency alert service."
+    },
+    {
+      "source_id": "COOMA-MON-SMRC-WATER-WASTEWATER",
+      "module": "WASTEWATER_RESILIENCE",
+      "publisher": "Snowy Monaro Regional Council",
+      "title": "Water and Wastewater",
+      "url": "https://www.snowymonaro.nsw.gov.au/Water-and-Wastewater",
+      "allowed_host": "www.snowymonaro.nsw.gov.au",
+      "purpose": "Detect potential changes to the public service landing page; not asset-condition or project-completion evidence."
+    },
+    {
+      "source_id": "COOMA-MON-SMRC-WATER-SOURCE",
+      "module": "DRINKING_WATER_SECURITY",
+      "publisher": "Snowy Monaro Regional Council",
+      "title": "Where Does My Water Come From?",
+      "url": "https://www.snowymonaro.nsw.gov.au/Water-and-Wastewater/Water-Supply/Where-Does-My-Water-Come-From",
+      "allowed_host": "www.snowymonaro.nsw.gov.au",
+      "purpose": "Detect potential changes to the published source-water description; not current flow, quality or shortage evidence."
+    }
+  ]
+}

@@ -43,6 +43,29 @@ class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
         status, session = self.request("POST", f"/api/sessions/{sid}/run", {}); self.assertEqual(status, 200)
         self.assertEqual(session["passport"]["state"], "SUPPORTED_SYNTHETIC_ONLY")
 
+    def test_persistent_program_http_flow_without_network(self):
+        status, program = self.request("GET", "/api/programs/COOMA-WATER-FIRE-WASTEWATER-WATCH")
+        self.assertEqual(status, 200)
+        self.assertEqual(program["current_hypothesis_version"], 0)
+        status, cycle = self.request("POST", "/api/programs/COOMA-WATER-FIRE-WASTEWATER-WATCH/cycles", {"year_month":"2026-07","trigger":"MONTHLY"})
+        self.assertEqual(status, 201)
+        cycle_id = cycle["cycle_id"]
+        status, _ = self.request("POST", f"/api/cycles/{cycle_id}/observations", {
+            "category":"WATER", "observed_on":"2026-07-18",
+            "note":"The river appeared low from a public location; no measurement was taken.",
+            "location_scope":"Cooma public area", "public_safe_confirmation":True,
+        })
+        self.assertEqual(status, 200)
+        status, cycle = self.request("POST", f"/api/cycles/{cycle_id}/compile", {})
+        self.assertEqual(status, 200)
+        self.assertIsNone(cycle["hypothesis_version"]["environmental_conclusion"])
+        status, reviewed = self.request("POST", f"/api/cycles/{cycle_id}/review", {
+            "decision":"ACCEPT_CYCLE", "reviewer":"Founder reviewer",
+            "reason":"Accept this as a monthly research record without an environmental signoff.",
+        })
+        self.assertEqual(status, 200)
+        self.assertFalse(reviewed["human_review"]["environmental_signoff"])
+
 
 if __name__ == "__main__":
     unittest.main()

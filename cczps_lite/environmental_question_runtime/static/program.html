@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ClimateOS Cooma Living Research Program</title>
+  <link rel="stylesheet" href="/program.css">
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">ClimateOS · persistent human–AI research</p>
+    <h1>Cooma Water–Fire–Wastewater Living Research Program</h1>
+    <p id="question" class="lead"></p>
+    <div class="boundary"><b>Meaning:</b> this program remembers monthly evidence and human decisions. A webpage or field observation changing is a research signal—not a Cooma environmental conclusion.</div>
+    <a href="/">One-time question and fictional rehearsal</a>
+  </header>
+
+  <section id="programSummary"></section>
+
+  <section>
+    <span class="step">01</span><h2>Start a monthly review cycle</h2>
+    <p><b>Human does:</b> open one dated research cycle. Prior cycles remain unchanged.</p>
+    <div class="row"><label>Month <input id="month" type="month"></label><label>Trigger <select id="trigger"><option>MONTHLY</option><option>MATERIAL_EVENT</option></select></label></div>
+    <button id="startCycle">Start cycle</button>
+  </section>
+
+  <section id="collect" hidden>
+    <span class="step">02</span><h2>Collect evidence</h2>
+    <div id="cycleIdentity"></div>
+    <h3>Add your field observation</h3>
+    <p class="muted">This remains an unverified human observation. Do not enter Council internal, customer, personal or non-public worksite information.</p>
+    <div class="row"><label>Category <select id="category"><option>WATER</option><option>SNOW</option><option>FIRE</option><option>VEGETATION</option><option>WASTEWATER</option><option>WEATHER</option><option>OTHER</option></select></label><label>Date <input id="observedOn" type="date"></label></div>
+    <label>Location scope <input id="location" value="Public area around Cooma"></label>
+    <label>What did you personally observe? <textarea id="note" rows="4" placeholder="Describe what you saw, when, and what remains uncertain."></textarea></label>
+    <label class="check"><input id="publicSafe" type="checkbox"> I confirm this contains no private Council, customer, personal or non-public worksite data.</label>
+    <button id="addObservation">Add observation</button>
+    <div id="observations"></div>
+
+    <h3>Refresh allowlisted official sources</h3>
+    <p class="muted">This makes five real HTTPS requests to public BOM, NSW RFS and Snowy Monaro Council pages. Only retrieval metadata and content digests are retained; raw pages are discarded.</p>
+    <label class="check"><input id="networkApproval" type="checkbox"> I approve this exact zero-cost public-source refresh.</label>
+    <button id="refresh">Refresh official sources</button>
+    <div id="snapshots"></div>
+    <button id="compile" class="accent">Compile monthly comparison</button>
+  </section>
+
+  <section id="review" hidden>
+    <span class="step">03</span><h2>Difference, Receipt and Passport</h2>
+    <div id="compiled"></div>
+    <h3>Human review</h3>
+    <label>Reviewer <input id="reviewer" value="Founder human reviewer"></label>
+    <label>Reason <textarea id="reviewReason" rows="3">I reviewed this monthly research record and understand that it does not establish a Cooma environmental conclusion.</textarea></label>
+    <div class="actions"><button data-decision="ACCEPT_CYCLE">Accept research record</button><button data-decision="QUESTION_CYCLE">Question</button><button data-decision="REVISE_CYCLE">Request revision</button><button data-decision="REJECT_CYCLE" class="secondary">Reject</button></div>
+    <div id="final"></div>
+  </section>
+
+  <section><span class="step">History</span><h2>Monthly timeline</h2><div id="timeline"></div></section>
+  <div id="error" role="alert"></div>
+</main>
+<script src="/program.js"></script>
+</body>
+</html>

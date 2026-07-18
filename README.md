@@ -42,6 +42,19 @@ Then open <http://127.0.0.1:8766>. The process must remain open while the page
 is in use; press `Ctrl+C` to stop it. The older scalar control demonstration
 continues to use port 8765 and is not the entry for this prototype.
 
+The same server now exposes the first persistent monthly research program at
+<http://127.0.0.1:8766/program.html>. It preserves the Cooma water, snow,
+bushfire, drinking-water and wastewater question across monthly cycles. A human
+may add explicitly public-safe field observations, approve an allowlisted live
+refresh of five public BOM, NSW RFS and Snowy Monaro Council pages, compile a
+change comparison, and review a versioned Receipt and Passport.
+
+Live refresh is manual and zero-cost. It stores response metadata and content
+digests but not raw page bodies. A changed digest is only a change candidate;
+it is never an automatic environmental, emergency, operational or compliance
+conclusion. Do not enter Council internal, customer, personal or non-public
+worksite information.
+
 The executable rehearsal is repository-authored tiny-synthetic data, runs with
 no network access and no paid service, and is not environmental evidence. In
 particular, it cannot support a Cooma condition, ENSO, bushfire, drinking-water,
