@@ -137,7 +137,7 @@ pre-fill observations on his behalf.
 
 | Step | Directly completed? | Friction or failure | Severity | Suggested change |
 |---|---|---|---|---|
-| Open Runtime | NO | PowerShell was run from `C:\\Users\\doras\\OneDrive\\Desktop`, which was neither the repository nor a directory containing `run_scientist_runtime.py`. Git and Python commands failed, no server started, and Edge reported `ERR_CONNECTION_REFUSED` for `127.0.0.1:8765`. | BLOCKER | Add clone/location and `cd` steps before the launch command; re-test personally. |
+| Open Runtime | YES AFTER RETRY | First attempt failed because PowerShell was outside the repository; after receiving clone/location and `cd` instructions, Simon reported that the Runtime website opened successfully. | DOCUMENTATION BLOCKER | Add permanent first-time Windows clone, directory and launch instructions to the Build Week README. |
 | Enter/select question |  |  |  |  |
 | Understand structured plan |  |  |  |  |
 | Approve plan |  |  |  |  |
@@ -166,7 +166,9 @@ pre-fill observations on his behalf.
 
 | ID | Description | Reproduction | Severity | Build Week blocker? | Resolution |
 |---|---|---|---|---|---|
-| T2001-001 | First-time startup instructions assumed the shell was already inside a local repository checkout. | From the Windows Desktop directory, run `git switch main`, `git pull --ff-only`, then `python run_scientist_runtime.py ...`; Git reports `not a git repository`, Python reports file not found, and localhost refuses the connection. | BLOCKER | YES | OPEN — provide exact clone/location and `cd` instructions, then repeat the startup attempt. |  |
+| T2001-001 | First-time startup instructions assumed the shell was already inside a local repository checkout. | From the Windows Desktop directory, run `git switch main`, `git pull --ff-only`, then `python run_scientist_runtime.py ...`; Git reports `not a git repository`, Python reports file not found, and localhost refuses the connection. | BLOCKER | YES | PARTIAL — Simon opened the Runtime after corrected guidance; permanent README correction remains required. |
+| T2001-002 | The default question and page use unexplained terms such as `fictional sealed scalar box`, `fixed perturbation`, `response index` and `baseline`, so the Founder cannot tell what the question means or why it matters. | Open the Runtime and read the default question before creating a session. Simon directly reported that he did not understand it and asked whether he could enter a meaningful question of his own. | BLOCKER | YES | OPEN — add a plain-language explanation/preset and state clearly that this checkpoint compares fixed fictional numbers rather than performing environmental science. |
+| T2001-003 | The question field suggests free-form AI interpretation, but the current deterministic assistant does not semantically interpret arbitrary questions; permitted wording is attached to the same fixed synthetic plan. | Enter a different boundary-safe question and propose a plan; inspect that the fixed fixture and fixed experiment structure remain unchanged. | HIGH | YES | OPEN — make the deterministic limitation explicit and avoid implying that arbitrary questions produce custom AI-designed experiments. |  |
 
 ## 6. Founder decision
 
