@@ -55,6 +55,20 @@ it is never an automatic environmental, emergency, operational or compliance
 conclusion. Do not enter Council internal, customer, personal or non-public
 worksite information.
 
+Each monthly cycle records its exact first and last calendar dates and sets the
+review due date to the last calendar day (including 28/29 February and 31-day
+months). A field observation separately preserves the human's exact words,
+observation date, report timestamp, place and structured category. After a
+human-reviewed December cycle, the Runtime can compile an immutable annual
+research record with missing months, observations, source snapshots, changes,
+failures, hypothesis versions, reviews, Receipt and Passport kept explicit.
+
+The repository defines—but does not yet connect—a conversation bridge. The
+intended path is natural-language report, AI-structured draft, human correction
+and confirmation, then private local intake. ChatGPT cannot silently write to a
+user's localhost SQLite database, and public GitHub must not be used as a store
+for private or work-derived observations.
+
 The executable rehearsal is repository-authored tiny-synthetic data, runs with
 no network access and no paid service, and is not environmental evidence. In
 particular, it cannot support a Cooma condition, ENSO, bushfire, drinking-water,

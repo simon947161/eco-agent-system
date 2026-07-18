@@ -33,6 +33,34 @@ the role wastewater management might play in climate adaptation.
 - cycle Run Receipt, Evidence Passport and human review;
 - no overwriting prior cycles or prior reviewed states.
 
+## Time contract
+
+- each monthly cycle records `period_start`, `period_end` and `review_due_on`;
+- `review_due_on` is the last calendar day, not a hard-coded day 30;
+- each field report records the human's `observed_on` date separately from the
+  system `reported_at` timestamp;
+- the original human wording is preserved as `verbatim_human_report` beside the
+  confirmed date, place and category structure;
+- a year-end report requires a human-reviewed December cycle and explicitly
+  lists missing months rather than presenting incomplete coverage as complete.
+
+## Conversation-to-Observation Inbox Bridge
+
+Intended workflow:
+
+`Human natural report → AI observation draft → human correction/confirmation → local private intake → monthly cycle`
+
+The human is responsible for an honest account of what was observed. The AI is
+responsible for preserving the original account, identifying missing date/place
+fields, separating observation from interpretation, and never upgrading an
+honest but incomplete report into an instrument measurement or verified fact.
+
+Current state: `CONTRACT_DEFINED_NOT_CONNECTED_TO_LOCALHOST`. ChatGPT cannot
+silently write into a SQLite database running on the Founder's computer. A
+future authenticated MCP/API bridge may connect them after privacy, identity,
+consent, failure and local-network controls are independently reviewed. Until
+then, the local Web form is the admitted intake path.
+
 ## Controlled real-network monitoring scope
 
 - public official HTTPS sources only;
@@ -67,8 +95,8 @@ behaviour and failure/alert obligations.
 
 ## Validation record
 
-- `python -m unittest discover`: 328 tests passed on 2026-07-18.
-- Targeted persistent-program and HTTP tests: 9 passed.
+- `python -m unittest discover`: 329 tests passed on 2026-07-18.
+- Targeted persistent-program and HTTP tests: 10 passed.
 - Local smoke test served `/program.html` and returned the stable
   `COOMA-WATER-FIRE-WASTEWATER-WATCH` program identity.
 - Official public entry verification found the allowlisted BOM climate-driver

@@ -8,6 +8,7 @@ import re
 import sqlite3
 import urllib.request
 import uuid
+from calendar import monthrange
 from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any, Callable
@@ -136,6 +137,12 @@ class PersistentResearchRuntime:
                     record_json TEXT NOT NULL, fetched_at TEXT NOT NULL,
                     UNIQUE(cycle_id, source_id), FOREIGN KEY(cycle_id) REFERENCES research_cycles(cycle_id)
                 );
+                CREATE TABLE IF NOT EXISTS annual_research_reports (
+                    report_id TEXT PRIMARY KEY, program_id TEXT NOT NULL, report_year INTEGER NOT NULL,
+                    record_json TEXT NOT NULL, created_at TEXT NOT NULL,
+                    UNIQUE(program_id, report_year),
+                    FOREIGN KEY(program_id) REFERENCES research_programs(program_id)
+                );
             """)
         self.ensure_cooma_program()
 
@@ -148,6 +155,25 @@ class PersistentResearchRuntime:
 
     def ensure_cooma_program(self) -> dict[str, Any]:
         try:
+            record = self.get_program(PROGRAM_ID)
+            record.pop("cycles", None)
+            changed = False
+            cadence_defaults = {
+                "monthly_review": True,
+                "monthly_due_rule": "LAST_CALENDAR_DAY",
+                "material_event_review": True,
+                "annual_report_rule": "AFTER_REVIEWED_DECEMBER_CYCLE",
+                "unattended_scheduler_installed": False,
+            }
+            for key, value in cadence_defaults.items():
+                if key not in record["cadence"]:
+                    record["cadence"][key] = value
+                    changed = True
+            if "conversation_bridge_state" not in record["boundaries"]:
+                record["boundaries"]["conversation_bridge_state"] = "CONTRACT_DEFINED_NOT_CONNECTED_TO_LOCALHOST"
+                changed = True
+            if changed:
+                self._save_program(record)
             return self.get_program(PROGRAM_ID)
         except KeyError:
             now = _now()
@@ -158,7 +184,13 @@ class PersistentResearchRuntime:
                 "question": QUESTION,
                 "place_scope": "Cooma / Snowy Monaro public-evidence research scope",
                 "modules": list(MODULES),
-                "cadence": {"monthly_review": True, "material_event_review": True, "unattended_scheduler_installed": False},
+                "cadence": {
+                    "monthly_review": True,
+                    "monthly_due_rule": "LAST_CALENDAR_DAY",
+                    "material_event_review": True,
+                    "annual_report_rule": "AFTER_REVIEWED_DECEMBER_CYCLE",
+                    "unattended_scheduler_installed": False,
+                },
                 "state": "ACTIVE_HUMAN_REVIEWED_RESEARCH_PROGRAM",
                 "current_hypothesis_version": 0,
                 "last_reviewed_cycle_id": None,
@@ -168,6 +200,7 @@ class PersistentResearchRuntime:
                     "private_council_or_customer_data_prohibited": True,
                     "automatic_environmental_conclusion": False,
                     "human_review_required": True,
+                    "conversation_bridge_state": "CONTRACT_DEFINED_NOT_CONNECTED_TO_LOCALHOST",
                 },
                 "created_at": now,
                 "updated_at": now,
@@ -229,11 +262,17 @@ class PersistentResearchRuntime:
             identity["event_nonce"] = uuid.uuid4().hex
         cycle_id = _stable_id("COOMA-CYCLE", identity)
         now = _now()
+        year, month = (int(item) for item in year_month.split("-"))
+        period_start = date(year, month, 1).isoformat()
+        period_end = date(year, month, monthrange(year, month)[1]).isoformat()
         cycle = {
             "schema_id": CYCLE_SCHEMA,
             "cycle_id": cycle_id,
             "program_id": program_id,
             "year_month": year_month,
+            "period_start": period_start,
+            "period_end": period_end,
+            "review_due_on": period_end,
             "trigger": trigger,
             "previous_cycle_id": previous_id,
             "state": "COLLECTING_EVIDENCE",
@@ -274,8 +313,17 @@ class PersistentResearchRuntime:
             "cycle_id": cycle_id,
             "category": category,
             "observed_on": observed_on,
+            "reported_at": now,
             "location_scope": clean_location,
             "note": clean_note,
+            "verbatim_human_report": clean_note,
+            "structured_record": {
+                "observed_on": observed_on,
+                "location_scope": clean_location,
+                "category": category,
+                "structuring_state": "HUMAN_ENTERED_AND_CONFIRMED",
+            },
+            "report_channel": "LOCAL_WEB_FORM",
             "evidence_class": "HUMAN_FIELD_OBSERVATION_UNVERIFIED",
             "does_not_prove": "measurement, trend, cause, forecast, compliance state or operational condition",
             "public_safe_confirmed": True,
@@ -449,3 +497,82 @@ class PersistentResearchRuntime:
             program["last_reviewed_cycle_id"] = cycle_id
             self._save_program(program)
         return reviewed
+
+    def annual_report(self, report_year: int, program_id: str = PROGRAM_ID) -> dict[str, Any]:
+        if not isinstance(report_year, int) or not 2000 <= report_year <= 2100:
+            raise ProgramContractError("report_year must be an integer in 2000..2100")
+        program = self.get_program(program_id)
+        cycles = [item for item in program["cycles"] if item["year_month"].startswith(f"{report_year}-")]
+        december = [item for item in cycles if item["year_month"] == f"{report_year}-12"]
+        reviewed_states = {
+            "CYCLE_REVIEWED_ACCEPTED_AS_RESEARCH_RECORD",
+            "CYCLE_REVIEWED_QUESTIONED",
+            "CYCLE_REVIEWED_REVISION_REQUIRED",
+            "CYCLE_REVIEWED_REJECTED",
+        }
+        if not december or december[-1]["state"] not in reviewed_states:
+            raise ProgramStateError("annual report requires a reviewed December cycle")
+        detailed = [self.get_cycle(item["cycle_id"]) for item in cycles]
+        category_counts = {category: 0 for category in sorted(OBSERVATION_CATEGORIES)}
+        for cycle in detailed:
+            for observation in cycle["observations"]:
+                category_counts[observation["category"]] += 1
+        months_present = sorted({item["year_month"] for item in cycles})
+        expected = {f"{report_year}-{month:02d}" for month in range(1, 13)}
+        summary = {
+            "report_year": report_year,
+            "cycle_count": len(cycles),
+            "months_present": months_present,
+            "missing_months": sorted(expected - set(months_present)),
+            "field_observation_count": sum(category_counts.values()),
+            "field_observation_counts_by_category": category_counts,
+            "official_source_snapshot_count": sum(len(item["source_snapshots"]) for item in detailed),
+            "potential_source_change_count": sum(
+                1 for item in detailed for snapshot in item["source_snapshots"]
+                if snapshot["change_state"] == "POTENTIAL_CONTENT_CHANGE"
+            ),
+            "retrieval_failure_count": sum(
+                1 for item in detailed for snapshot in item["source_snapshots"]
+                if snapshot["change_state"] == "RETRIEVAL_FAILED_VISIBLE"
+            ),
+            "review_decisions": [item["human_review"]["decision"] for item in detailed if item.get("human_review")],
+            "hypothesis_versions": [item["hypothesis_version"] for item in detailed if item.get("hypothesis_version")],
+        }
+        receipt = {
+            "receipt_id": _stable_id("ANNUAL-REPORT-RECEIPT", {"program": program_id, "summary": summary}),
+            "termination": "ANNUAL_RESEARCH_RECORD_COMPILED",
+            "report_digest": _digest(summary),
+            "network_calls_during_report_generation": 0,
+            "cost_aud": 0,
+        }
+        passport = {
+            "passport_id": _stable_id("ANNUAL-REPORT-PASSPORT", receipt),
+            "state": "ANNUAL_RESEARCH_RECORD_NOT_ENVIRONMENTAL_CERTIFICATION",
+            "supports": "annual inventory of recorded cycles, observations, source snapshots and human reviews",
+            "does_not_support": [
+                "complete monthly coverage when months are missing",
+                "Cooma environmental trend or causal conclusion",
+                "bushfire, drinking-water, wastewater, engineering or compliance decision",
+            ],
+            "human_review_required": True,
+        }
+        report = {
+            "report_id": _stable_id("COOMA-ANNUAL-REPORT", {"program": program_id, "year": report_year}),
+            "program_id": program_id,
+            "report_year": report_year,
+            "title": f"Cooma Water–Fire–Wastewater Research Record {report_year}",
+            "summary": summary,
+            "receipt": receipt,
+            "passport": passport,
+            "environmental_conclusion": None,
+            "created_at": _now(),
+        }
+        with self._connect() as db:
+            try:
+                db.execute(
+                    "INSERT INTO annual_research_reports VALUES(?,?,?,?,?)",
+                    (report["report_id"], program_id, report_year, _json(report), report["created_at"]),
+                )
+            except sqlite3.IntegrityError as exc:
+                raise ProgramStateError("this program already has an immutable annual report for that year") from exc
+        return report

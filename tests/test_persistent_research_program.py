@@ -32,6 +32,8 @@ class PersistentResearchProgramTests(unittest.TestCase):
         self.assertEqual(program["program_id"], PROGRAM_ID)
         self.assertIn("less water and snow around Cooma", program["question"])
         self.assertTrue(program["cadence"]["monthly_review"])
+        self.assertEqual(program["cadence"]["monthly_due_rule"], "LAST_CALENDAR_DAY")
+        self.assertEqual(program["cadence"]["annual_report_rule"], "AFTER_REVIEWED_DECEMBER_CYCLE")
         self.assertTrue(program["cadence"]["material_event_review"])
         self.assertFalse(program["cadence"]["unattended_scheduler_installed"])
         self.assertTrue(program["boundaries"]["private_council_or_customer_data_prohibited"])
@@ -39,6 +41,9 @@ class PersistentResearchProgramTests(unittest.TestCase):
     def test_monthly_cycles_are_unique_append_only_records(self):
         first = self.runtime.start_cycle("2026-07")
         self.assertEqual(first["state"], "COLLECTING_EVIDENCE")
+        self.assertEqual(first["period_start"], "2026-07-01")
+        self.assertEqual(first["period_end"], "2026-07-31")
+        self.assertEqual(first["review_due_on"], "2026-07-31")
         with self.assertRaises(ProgramStateError):
             self.runtime.start_cycle("2026-07")
         second = self.runtime.start_cycle("2026-08")
@@ -63,6 +68,9 @@ class PersistentResearchProgramTests(unittest.TestCase):
             location_scope="Cooma public area", public_safe_confirmation=True,
         )
         self.assertEqual(observation["evidence_class"], "HUMAN_FIELD_OBSERVATION_UNVERIFIED")
+        self.assertEqual(observation["verbatim_human_report"], observation["note"])
+        self.assertIn("reported_at", observation)
+        self.assertEqual(observation["structured_record"]["structuring_state"], "HUMAN_ENTERED_AND_CONFIRMED")
         self.assertIn("does_not_prove", observation)
 
     def test_live_refresh_requires_approval_and_retains_no_raw_body(self):
@@ -116,6 +124,30 @@ class PersistentResearchProgramTests(unittest.TestCase):
         program = self.runtime.get_program()
         self.assertEqual(program["current_hypothesis_version"], compiled["hypothesis_version"]["version"])
         self.assertEqual(program["last_reviewed_cycle_id"], cycle["cycle_id"])
+
+    def test_annual_report_requires_reviewed_december_and_preserves_missing_months(self):
+        with self.assertRaises(ProgramStateError):
+            self.runtime.annual_report(2026)
+        december = self.runtime.start_cycle("2026-12")
+        self.runtime.add_observation(
+            december["cycle_id"], category="SNOW", observed_on="2026-12-14",
+            note="A public-area visual snow observation was reported without an instrument measurement.",
+            location_scope="Cooma public area", public_safe_confirmation=True,
+        )
+        self.runtime.compile_cycle(december["cycle_id"])
+        self.runtime.review_cycle(
+            december["cycle_id"], decision="ACCEPT_CYCLE", reviewer="Founder reviewer",
+            reason="Accept the December cycle as a research record before annual compilation.",
+        )
+        report = self.runtime.annual_report(2026)
+        self.assertEqual(report["summary"]["cycle_count"], 1)
+        self.assertEqual(report["summary"]["field_observation_count"], 1)
+        self.assertIn("2026-01", report["summary"]["missing_months"])
+        self.assertNotIn("2026-12", report["summary"]["missing_months"])
+        self.assertIsNone(report["environmental_conclusion"])
+        self.assertEqual(report["receipt"]["network_calls_during_report_generation"], 0)
+        with self.assertRaises(ProgramStateError):
+            self.runtime.annual_report(2026)
 
 
 if __name__ == "__main__":

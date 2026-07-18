@@ -90,6 +90,8 @@ def build_handler(runtime: EnvironmentalQuestionRuntime, programs: PersistentRes
                     result, status = runtime.create_question(body["question"]), HTTPStatus.CREATED
                 elif len(parts) == 4 and parts[:2] == ["api", "programs"] and parts[3] == "cycles" and set(body) == {"year_month", "trigger"}:
                     result, status = programs.start_cycle(body["year_month"], parts[2], body["trigger"]), HTTPStatus.CREATED
+                elif len(parts) == 4 and parts[:2] == ["api", "programs"] and parts[3] == "annual-report" and set(body) == {"report_year"}:
+                    result, status = programs.annual_report(body["report_year"], parts[2]), HTTPStatus.CREATED
                 elif len(parts) == 4 and parts[:2] == ["api", "cycles"]:
                     cycle_id, action = parts[2:]
                     if action == "observations" and set(body) == {"category", "observed_on", "note", "location_scope", "public_safe_confirmation"}:

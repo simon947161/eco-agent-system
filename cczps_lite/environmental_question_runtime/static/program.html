@@ -20,7 +20,7 @@
 
   <section>
     <span class="step">01</span><h2>Start a monthly review cycle</h2>
-    <p><b>Human does:</b> open one dated research cycle. Prior cycles remain unchanged.</p>
+    <p><b>Human does:</b> open one dated research cycle. The review is due on the last calendar day of that month—not always the 30th. Prior cycles remain unchanged.</p>
     <div class="row"><label>Month <input id="month" type="month"></label><label>Trigger <select id="trigger"><option>MONTHLY</option><option>MATERIAL_EVENT</option></select></label></div>
     <button id="startCycle">Start cycle</button>
   </section>
@@ -32,7 +32,7 @@
     <p class="muted">This remains an unverified human observation. Do not enter Council internal, customer, personal or non-public worksite information.</p>
     <div class="row"><label>Category <select id="category"><option>WATER</option><option>SNOW</option><option>FIRE</option><option>VEGETATION</option><option>WASTEWATER</option><option>WEATHER</option><option>OTHER</option></select></label><label>Date <input id="observedOn" type="date"></label></div>
     <label>Location scope <input id="location" value="Public area around Cooma"></label>
-    <label>What did you personally observe? <textarea id="note" rows="4" placeholder="Describe what you saw, when, and what remains uncertain."></textarea></label>
+    <label>What did you personally observe? <textarea id="note" rows="4" placeholder="Speak naturally. Your exact words are preserved alongside the structured date, place and category."></textarea></label>
     <label class="check"><input id="publicSafe" type="checkbox"> I confirm this contains no private Council, customer, personal or non-public worksite data.</label>
     <button id="addObservation">Add observation</button>
     <div id="observations"></div>
@@ -56,6 +56,13 @@
   </section>
 
   <section><span class="step">History</span><h2>Monthly timeline</h2><div id="timeline"></div></section>
+  <section>
+    <span class="step">Year end</span><h2>Annual research record</h2>
+    <p class="muted">Available only after the December cycle has been human-reviewed. Missing months remain explicit.</p>
+    <label>Report year <input id="reportYear" type="number" min="2000" max="2100"></label>
+    <button id="annualReport">Generate annual report</button>
+    <div id="annualOutput"></div>
+  </section>
   <div id="error" role="alert"></div>
 </main>
 <script src="/program.js"></script>
