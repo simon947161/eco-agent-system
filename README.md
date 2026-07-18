@@ -23,6 +23,30 @@ Run the tests:
 python -m unittest discover
 ```
 
+## Meaningful Environmental Question Runtime (Task2002 prototype)
+
+This supervised local prototype accepts a real environmental question in the
+user's own words and structures it as an evidence plan. Real-place execution is
+blocked: the Runtime does not fetch current data or manufacture a regional
+conclusion. A separate, explicitly fictional Australian highland-town fixture
+can rehearse the human approval, deterministic run, Run Receipt, quarantined
+Evidence Passport, and human review workflow.
+
+From the repository folder, start it with:
+
+```bash
+python run_environmental_question_runtime.py
+```
+
+Then open <http://127.0.0.1:8766>. The process must remain open while the page
+is in use; press `Ctrl+C` to stop it. The older scalar control demonstration
+continues to use port 8765 and is not the entry for this prototype.
+
+The executable rehearsal is repository-authored tiny-synthetic data, runs with
+no network access and no paid service, and is not environmental evidence. In
+particular, it cannot support a Cooma condition, ENSO, bushfire, drinking-water,
+wastewater, Bondo/Riverina wind-resource, or project-feasibility conclusion.
+
 Generate the principal downstream outputs:
 
 ```bash

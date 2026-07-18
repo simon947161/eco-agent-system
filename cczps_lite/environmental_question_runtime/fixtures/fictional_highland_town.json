@@ -1,0 +1,27 @@
+{
+  "schema_id": "climateos.fictional_highland_town.v0.1",
+  "fixture_id": "TINY-SYNTH-HIGHLAND-TOWN-001",
+  "place_label": "FICTIONAL AUSTRALIAN HIGHLAND TOWN — NOT COOMA",
+  "origin": "REPOSITORY_AUTHORED_FICTIONAL_TINY_SYNTHETIC",
+  "not_environmental_evidence": true,
+  "network_required": false,
+  "baseline": {
+    "snowpack_index": 100.0,
+    "catchment_inflow_index": 100.0,
+    "bushfire_weather_index": 40.0,
+    "potable_demand_index": 100.0,
+    "wastewater_inflow_index": 72.0,
+    "wastewater_capacity_index": 100.0,
+    "recycled_water_offset_index": 8.0
+  },
+  "dry_rehearsal": {
+    "snowpack_index": 68.0,
+    "catchment_inflow_index": 71.0,
+    "bushfire_weather_index": 63.0,
+    "potable_demand_index": 112.0,
+    "wastewater_inflow_index": 76.0,
+    "wastewater_capacity_index": 100.0,
+    "recycled_water_offset_index": 15.0
+  },
+  "boundary_label": "FICTIONAL_HIGHLAND_TOWN / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE"
+}

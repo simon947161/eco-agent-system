@@ -1,0 +1,48 @@
+import http.client
+import json
+import tempfile
+import threading
+import unittest
+from pathlib import Path
+
+from cczps_lite.environmental_question_runtime.server import create_server
+from tests.test_environmental_question_runtime import QUESTION
+
+
+class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory(); self.addCleanup(self.temp.cleanup)
+        self.server = create_server(Path(self.temp.name) / "web.sqlite3", port=0)
+        self.thread = threading.Thread(target=self.server.serve_forever, daemon=True); self.thread.start()
+        self.addCleanup(self._stop); self.port = self.server.server_address[1]
+
+    def _stop(self):
+        self.server.shutdown(); self.server.server_close(); self.thread.join(timeout=2)
+
+    def request(self, method, path, body=None):
+        conn = http.client.HTTPConnection("127.0.0.1", self.port, timeout=2)
+        payload = None if body is None else json.dumps(body)
+        conn.request(method, path, payload, {"Host": "127.0.0.1", "Content-Type": "application/json"})
+        response = conn.getresponse(); raw = response.read(); kind = response.getheader("Content-Type", ""); conn.close()
+        return response.status, json.loads(raw) if "json" in kind else raw.decode()
+
+    def test_page_explains_real_plan_and_synthetic_run_boundary(self):
+        status, html = self.request("GET", "/")
+        self.assertEqual(status, 200)
+        for text in ("question you actually care about", "Real-world evidence plan", "Human approval gate", "Run Receipt", "Evidence Passport"):
+            self.assertIn(text, html)
+        source = "".join((Path(__file__).parents[1] / "cczps_lite/environmental_question_runtime/static" / name).read_text() for name in ("index.html", "app.js", "styles.css"))
+        for blocked in ("https://", "http://", "openai", "GraphCast", "WebSocket"):
+            self.assertNotIn(blocked, source)
+
+    def test_http_flow_to_quarantined_result(self):
+        status, session = self.request("POST", "/api/questions", {"question": QUESTION}); self.assertEqual(status, 201)
+        sid = session["session_id"]
+        status, session = self.request("POST", f"/api/sessions/{sid}/rehearsal", {}); self.assertEqual(status, 200)
+        status, session = self.request("POST", f"/api/sessions/{sid}/decision", {"decision":"APPROVE","reviewer":"Human","reason":"Approve this exact fictional rehearsal only."}); self.assertEqual(status, 200)
+        status, session = self.request("POST", f"/api/sessions/{sid}/run", {}); self.assertEqual(status, 200)
+        self.assertEqual(session["passport"]["state"], "SUPPORTED_SYNTHETIC_ONLY")
+
+
+if __name__ == "__main__":
+    unittest.main()
