@@ -2,7 +2,7 @@
 
 Date: 2026-07-18
 
-Status: AUTHORIZED / STARTED / BLOCKER FIXES IMPLEMENTED / FOUNDER RETEST PENDING
+Status: AUTHORIZED / STARTED / FOUNDER RETEST FEEDBACK RECEIVED / CORE MEANING BLOCKER OPEN
 
 Founder authorization:
 
@@ -175,6 +175,7 @@ At 2026-07-18 13:53 AEST, Simon supplied a screenshot showing the final Human re
 | T2001-003 | The question field suggests free-form AI interpretation, but the current deterministic assistant does not semantically interpret arbitrary questions; permitted wording is attached to the same fixed synthetic plan. | Enter a different boundary-safe question and propose a plan; inspect that the fixed fixture and fixed experiment structure remain unchanged. | HIGH | YES | IMPLEMENTED / RETEST PENDING — the question and hypothesis panels explicitly state the deterministic template limitation. |
 | T2001-004 | The Web Passport card omits `passport_id`, preventing the Founder from capturing the required artifact identifier from the demonstrated UI. | Complete a run and inspect section 05. Receipt ID is visible, but the Passport card renders only state, quarantine state, diagnostic and limitations. | HIGH | YES | IMPLEMENTED / RETEST PENDING — section 05 now renders Session and Passport identifiers alongside Receipt evidence. |
 | T2001-005 | The Web flow did not expose explicit plan rejection, bounded hypothesis revision, result rejection, or a recovery/re-run path. | Complete or reject a session and inspect the available controls. | BLOCKER | YES | IMPLEMENTED / RETEST PENDING — UI and HTTP adapter now expose reject, audited wording revision, result rejection, and a new-session recovery path requiring fresh approval. |
+| T2001-006 | After re-running the repaired version, the Founder still experienced it as substantially the same fixed scalar demonstration and could not understand the practical meaning of a Minimum Human–AI Scientist Runtime or what meaningful work the human should do. | Founder personally repeated the repaired flow and directly reported that the experience looked almost unchanged and that the purpose and usage remained unclear. | BLOCKER | YES | OPEN — replace the abstract scalar-box presentation with one intuitive, explicitly fictional environmental research rehearsal and explain the human/AI responsibilities at every stage; do not claim new scientific capability. |
 
 ### Blocker-fix implementation checkpoint
 
@@ -215,6 +216,6 @@ Task2001 closes only when:
 
 Until then:
 
-`TASK2001_STARTED / FOUNDER_RETEST_PENDING / BUILD_WEEK_SUBMISSION_NOT_READY`
+`TASK2001_STARTED / CORE_MEANING_BLOCKER_OPEN / BUILD_WEEK_SUBMISSION_NOT_READY`
 
 Task2002+ remains not started.
