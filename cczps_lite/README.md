@@ -1,5 +1,23 @@
 # CCZPS-Lite â€” Batlow Runtime Demonstrator
 
+## Minimum Human–AI Scientist Runtime (Task2000 checkpoint)
+
+The repository includes a dependency-free, localhost-only supervised Runtime
+demonstration under `cczps_lite/scientist_runtime/`. It uses one fixed,
+repository-authored fictional scalar fixture to exercise:
+
+`question -> structured hypothesis -> human approval -> local run -> receipt -> quarantined passport -> human review`
+
+Start it from the repository root:
+
+```bash
+python run_scientist_runtime.py
+```
+
+Then open `http://127.0.0.1:8765`. Runtime state is written beneath the ignored
+`runtime_data/` directory. The demonstration makes no environmental or regional
+claim, uses no external service, and cannot execute arbitrary code.
+
 CCZPS-Lite is a small, file-based demonstrator for comparing possible environmental resilience pathways. It supports evidence, runtime interpretation, reasoning, governance review, and pre-execution resource guards.
 
 ## How to Run

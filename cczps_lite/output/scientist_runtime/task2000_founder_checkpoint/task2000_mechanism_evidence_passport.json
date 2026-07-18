@@ -1,0 +1,31 @@
+{
+  "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE",
+  "diagnostics": {
+    "baseline_response_index": 20.0,
+    "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE",
+    "diagnostic": "response_index_delta",
+    "fixture_id": "TINY-SYNTH-SCALAR-001",
+    "limitations": [
+      "Repository-authored fictional scalar values only.",
+      "No geographic, meteorological, wind-resource, project or causal conclusion."
+    ],
+    "passport_state": "SUPPORTED_SYNTHETIC_ONLY",
+    "perturbation_response_index": 23.5,
+    "quarantine_state": "QUARANTINED_NOT_ENVIRONMENTAL_EVIDENCE",
+    "response_index_delta": 3.5
+  },
+  "human_review_required": true,
+  "hypothesis_id": "MECH-HYP-053D15DC4D950615",
+  "limitations": [
+    "This passport records a fictional runtime demonstration only.",
+    "It is not an Environmental Evidence Passport and cannot support a real decision."
+  ],
+  "output_set_id": "MECH-OUTPUT-SET-36E8A21DC359BA1F",
+  "passport_id": "MECH-EVIDENCE-PASSPORT-613D6468ED0AF7E5",
+  "quarantine_state": "REVIEWED_BUT_REMAINS_NON_ENVIRONMENTAL_DEMO",
+  "regional_conclusion": null,
+  "run_receipt_id": "MECH-RUN-RECEIPT-815D9E3187D2D0BF",
+  "scientific_claim": null,
+  "session_id": "MECH-SESSION-5473B2E44F2540FA",
+  "state": "SUPPORTED_SYNTHETIC_ONLY"
+}

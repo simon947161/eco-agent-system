@@ -1,0 +1,18 @@
+{
+  "schema_id": "climateos.tiny_synthetic_scalar_fixture.v0.1",
+  "fixture_id": "TINY-SYNTH-SCALAR-001",
+  "title": "Fictional sealed scalar response box",
+  "origin": "REPOSITORY_AUTHORED_FICTIONAL_TINY_SYNTHETIC",
+  "not_environmental_evidence": true,
+  "seed": 17,
+  "baseline": {"input_index": 10.0, "response_index": 20.0},
+  "perturbation": {"input_index": 12.0, "response_index": 23.5},
+  "diagnostic": {
+    "name": "response_index_delta",
+    "expected_direction": "POSITIVE",
+    "support_threshold": 2.0,
+    "contradiction_threshold": 0.0
+  },
+  "failure_mode": "NONE",
+  "boundary_label": "FICTIONAL_TINY_SYNTHETIC / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE"
+}
