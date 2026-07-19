@@ -108,8 +108,8 @@ environmental conclusion. Human and professional review remain necessary.
 - Testing instructions: `BUILD_WEEK_JUDGE_GUIDE.md`
 - Prior/new-work record: `BUILD_WEEK_CHANGELOG.md`
 - YouTube demo: `PENDING_FOUNDER_APPROVED_PUBLIC_UPLOAD`
-- Codex `/feedback` Session ID:
-  `PENDING_FOUNDER_PRIMARY_THREAD_FEEDBACK`
+- Codex `/feedback` evidence ID:
+  `019f73d3-1ba2-7073-aadf-ac68203c18f4`
 - Frozen submission commit: `PENDING_FINAL_FREEZE`
 
 ## Final form checklist
@@ -120,7 +120,8 @@ environmental conclusion. Human and professional review remain necessary.
       English captions present.
 - [ ] Frozen repository commit and test result recorded.
 - [ ] README, changelog and judge guide visible on the submitted branch.
-- [ ] `/feedback` Session ID copied from the primary core-development thread.
+- [x] `/feedback` evidence ID recorded from the primary development task after
+      confirmed log upload.
 - [ ] Demo operates exactly as described.
 - [ ] No third-party music, marks, private data or unsupported scientific claim.
 - [ ] Free judge access preserved through at least 2026-08-07.
