@@ -122,3 +122,19 @@ Founder-authorized pre-merge hardening corrected three evidence-contract gaps:
 The hardening tests use injected synthetic responses and a simulated process
 interruption. They do not access the five live sources. Founder completion of a
 real monthly cycle remains the next gate before any merge decision.
+
+## 2026-07-19 Founder cycle revision and concurrency gate
+
+The first Founder-operated cycle correctly ended
+`CYCLE_REVIEWED_REVISION_REQUIRED`. The source-refresh panel displayed five
+outcomes, including two visible Council HTTP 403 failures, while an overlapping
+Compile request recorded zero snapshots, zero failures and `network_used=false`.
+The Founder rejected that internally inconsistent Receipt. The cycle was also a
+`MATERIAL_EVENT`, so it did not satisfy the required first monthly-cycle gate.
+
+The repair adds a persisted `source_refresh_state`, serializes refresh/compile
+state transitions, rejects Compile during or after an interrupted refresh, and
+commits the complete snapshot set and completed state in one SQLite transaction.
+The browser disables Compile while Refresh is running and displays the gate
+state. Concurrency, interruption and three-success/two-visible-failure behavior
+are tested with synthetic fetchers only; no live source is revisited.

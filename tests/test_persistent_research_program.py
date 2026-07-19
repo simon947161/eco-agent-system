@@ -1,5 +1,6 @@
 import json
 import tempfile
+import threading
 import unittest
 from pathlib import Path
 
@@ -46,6 +47,7 @@ class PersistentResearchProgramTests(unittest.TestCase):
         self.assertEqual(first["period_start"], "2026-07-01")
         self.assertEqual(first["period_end"], "2026-07-31")
         self.assertEqual(first["review_due_on"], "2026-07-31")
+        self.assertEqual(first["source_refresh_state"], "NOT_REQUESTED")
         with self.assertRaises(ProgramStateError):
             self.runtime.start_cycle("2026-07")
         second = self.runtime.start_cycle("2026-08")
@@ -96,6 +98,7 @@ class PersistentResearchProgramTests(unittest.TestCase):
         self.assertEqual(result["expected_source_count"], 5)
         self.assertEqual(result["recorded_source_count"], 5)
         self.assertEqual(len(result["snapshots"]), 5)
+        self.assertEqual(self.runtime.get_cycle(cycle["cycle_id"])["source_refresh_state"], "COMPLETE_ATOMIC_SET")
         for snapshot in result["snapshots"]:
             self.assertEqual(snapshot["change_state"], "BASELINE_CAPTURED")
             self.assertFalse(snapshot["raw_content_retained"])
@@ -120,6 +123,75 @@ class PersistentResearchProgramTests(unittest.TestCase):
                 cycle["cycle_id"], human_approval=True, fetcher=interrupted_fetch,
             )
         self.assertEqual(self.runtime.source_snapshots(cycle["cycle_id"]), [])
+        self.assertEqual(
+            self.runtime.get_cycle(cycle["cycle_id"])["source_refresh_state"],
+            "REFRESH_INTERRUPTED_RETRY_ALLOWED",
+        )
+        with self.assertRaisesRegex(ProgramStateError, "retry it before compilation"):
+            self.runtime.compile_cycle(cycle["cycle_id"])
+        retry = self.runtime.refresh_official_sources(
+            cycle["cycle_id"], human_approval=True, fetcher=fake_fetch,
+        )
+        self.assertEqual(retry["snapshot_set_state"], "COMPLETE_ATOMIC_SET")
+
+    def test_compile_is_locked_while_refresh_is_in_progress(self):
+        cycle = self.runtime.start_cycle("2026-07")
+        refresh_started = threading.Event()
+        release_refresh = threading.Event()
+        outcome = {}
+
+        def slow_fetch(source):
+            if not refresh_started.is_set():
+                refresh_started.set()
+                release_refresh.wait(timeout=2)
+            return fake_fetch(source)
+
+        def run_refresh():
+            outcome["result"] = self.runtime.refresh_official_sources(
+                cycle["cycle_id"], human_approval=True, fetcher=slow_fetch,
+            )
+
+        thread = threading.Thread(target=run_refresh)
+        thread.start()
+        self.assertTrue(refresh_started.wait(timeout=2))
+        self.assertEqual(
+            self.runtime.get_cycle(cycle["cycle_id"])["source_refresh_state"],
+            "REFRESH_IN_PROGRESS",
+        )
+        with self.assertRaisesRegex(ProgramStateError, "refresh is still in progress"):
+            self.runtime.compile_cycle(cycle["cycle_id"])
+        release_refresh.set()
+        thread.join(timeout=2)
+        self.assertFalse(thread.is_alive())
+        self.assertEqual(outcome["result"]["snapshot_set_state"], "COMPLETE_ATOMIC_SET")
+        compiled = self.runtime.compile_cycle(cycle["cycle_id"])
+        self.assertEqual(compiled["comparison"]["source_snapshot_count"], 5)
+        self.assertTrue(compiled["receipt"]["network_used"])
+
+    def test_visible_source_failures_survive_refresh_and_compile(self):
+        cycle = self.runtime.start_cycle("2026-07")
+        failed_ids = {
+            "COOMA-MON-SMRC-WATER-WASTEWATER",
+            "COOMA-MON-SMRC-WATER-SOURCE",
+        }
+
+        def partly_blocked_fetch(source):
+            if source["source_id"] in failed_ids:
+                raise PermissionError("synthetic 403 fixture")
+            return fake_fetch(source)
+
+        result = self.runtime.refresh_official_sources(
+            cycle["cycle_id"], human_approval=True, fetcher=partly_blocked_fetch,
+        )
+        self.assertEqual(len(result["snapshots"]), 5)
+        self.assertEqual(
+            sum(item["change_state"] == "RETRIEVAL_FAILED_VISIBLE" for item in result["snapshots"]),
+            2,
+        )
+        compiled = self.runtime.compile_cycle(cycle["cycle_id"])
+        self.assertEqual(compiled["comparison"]["source_snapshot_count"], 5)
+        self.assertEqual(compiled["comparison"]["retrieval_failure_count"], 2)
+        self.assertTrue(compiled["receipt"]["network_used"])
 
     def test_compile_rejects_corrupted_partial_snapshot_set(self):
         cycle = self.runtime.start_cycle("2026-07")
@@ -138,7 +210,10 @@ class PersistentResearchProgramTests(unittest.TestCase):
                     json.dumps(snapshot), snapshot["fetched_at"],
                 ),
             )
-        with self.assertRaisesRegex(ProgramStateError, "snapshot set is incomplete"):
+        with self.assertRaisesRegex(
+            ProgramStateError,
+            "snapshots exist without a completed refresh state",
+        ):
             self.runtime.compile_cycle(cycle["cycle_id"])
 
     def test_second_cycle_detects_digest_change_but_forms_no_conclusion(self):

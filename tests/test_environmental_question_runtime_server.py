@@ -35,6 +35,14 @@ class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
         for blocked in ("https://", "http://", "openai", "GraphCast", "WebSocket"):
             self.assertNotIn(blocked, source)
 
+        program_source = "".join(
+            (Path(__file__).parents[1] / "cczps_lite/environmental_question_runtime/static" / name).read_text()
+            for name in ("program.html", "program.js")
+        )
+        self.assertIn("refreshStatus", program_source)
+        self.assertIn('applyRefreshGate("REFRESH_IN_PROGRESS")', program_source)
+        self.assertIn('$("compile").disabled=inProgress||retry', program_source)
+
     def test_health_truthfully_reports_manual_allowlisted_network_capability(self):
         status, health = self.request("GET", "/api/health")
         self.assertEqual(status, 200)

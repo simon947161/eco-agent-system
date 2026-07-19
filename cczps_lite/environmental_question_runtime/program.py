@@ -11,6 +11,7 @@ import uuid
 from calendar import monthrange
 from datetime import UTC, date, datetime
 from pathlib import Path
+from threading import RLock
 from typing import Any, Callable
 from urllib.parse import urlparse
 
@@ -117,6 +118,7 @@ def _default_fetch(source: dict[str, Any]) -> dict[str, Any]:
 class PersistentResearchRuntime:
     def __init__(self, db_path: str | Path) -> None:
         self.db_path = Path(db_path)
+        self._cycle_transition_lock = RLock()
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         with self._connect() as db:
             db.executescript("""
@@ -282,6 +284,9 @@ class PersistentResearchRuntime:
             "trigger": trigger,
             "previous_cycle_id": previous_id,
             "state": "COLLECTING_EVIDENCE",
+            "source_refresh_state": "NOT_REQUESTED",
+            "source_refresh_started_at": None,
+            "source_refresh_completed_at": None,
             "comparison": None,
             "hypothesis_version": None,
             "receipt": None,
@@ -345,85 +350,119 @@ class PersistentResearchRuntime:
         return [json.loads(row["record_json"]) for row in rows]
 
     def refresh_official_sources(self, cycle_id: str, *, human_approval: bool, fetcher: Callable[[dict[str, Any]], dict[str, Any]] | None = None) -> dict[str, Any]:
-        cycle = self.get_cycle(cycle_id)
-        if cycle["state"] != "COLLECTING_EVIDENCE":
-            raise ProgramStateError("source refresh requires COLLECTING_EVIDENCE")
-        if human_approval is not True:
-            raise ProgramContractError("explicit human approval is required for every live refresh")
-        if cycle["source_snapshots"]:
-            raise ProgramStateError("this cycle already has an immutable official-source snapshot set")
+        with self._cycle_transition_lock:
+            cycle = self.get_cycle(cycle_id)
+            if cycle["state"] != "COLLECTING_EVIDENCE":
+                raise ProgramStateError("source refresh requires COLLECTING_EVIDENCE")
+            if human_approval is not True:
+                raise ProgramContractError("explicit human approval is required for every live refresh")
+            if cycle["source_snapshots"]:
+                raise ProgramStateError("this cycle already has an immutable official-source snapshot set")
+            refresh_state = cycle.get("source_refresh_state", "NOT_REQUESTED")
+            if refresh_state not in {"NOT_REQUESTED", "REFRESH_INTERRUPTED_RETRY_ALLOWED"}:
+                raise ProgramStateError(f"source refresh is not admitted from {refresh_state}")
+            cycle["source_refresh_state"] = "REFRESH_IN_PROGRESS"
+            cycle["source_refresh_started_at"] = _now()
+            cycle["source_refresh_completed_at"] = None
+            cycle = self._save_cycle(cycle)
         fetch = fetcher or _default_fetch
         previous = self.get_cycle(cycle["previous_cycle_id"]) if cycle["previous_cycle_id"] else None
         previous_by_source = {item["source_id"]: item for item in (previous["source_snapshots"] if previous else [])}
         results = []
         sources = _allowlist()["sources"]
-        for source in sources:
-            fetched_at = _now()
-            try:
-                response = fetch(source)
-                body = response.pop("body")
-                if not isinstance(body, bytes):
-                    raise ProgramContractError("fetcher body must be bytes")
-                if len(body) > MAX_RESPONSE_BYTES:
-                    raise ProgramContractError("source response exceeded 2 MiB ceiling")
-                final = urlparse(response.get("final_url", ""))
-                if final.scheme != "https" or final.hostname != source["allowed_host"]:
-                    raise ProgramContractError("retrieved source is outside its exact allowlisted HTTPS host")
-                status = response.get("http_status")
-                if not isinstance(status, int) or not 200 <= status < 300:
-                    raise ProgramContractError("official source did not return a successful HTTP status")
-                content_digest = _digest(body)
-                previous_snapshot = previous_by_source.get(source["source_id"])
-                change_state = "BASELINE_CAPTURED" if previous_snapshot is None else (
-                    "POTENTIAL_CONTENT_CHANGE" if previous_snapshot.get("content_digest") != content_digest else "NO_CONTENT_DIGEST_CHANGE"
-                )
-                snapshot = {
-                    "snapshot_id": _stable_id("SOURCE-SNAPSHOT", {"cycle": cycle_id, "source": source["source_id"], "digest": content_digest}),
-                    "cycle_id": cycle_id,
-                    "source_id": source["source_id"],
-                    "module": source["module"],
-                    "publisher": source["publisher"],
-                    "title": source["title"],
-                    "requested_url": source["url"],
-                    "final_url": response["final_url"],
-                    "http_status": response["http_status"],
-                    "content_type": response.get("content_type", ""),
-                    "etag": response.get("etag"),
-                    "last_modified": response.get("last_modified"),
-                    "content_bytes": len(body),
-                    "content_digest": content_digest,
-                    "change_state": change_state,
-                    "admission_state": "SOURCE_FRESHNESS_METADATA_ONLY",
-                    "raw_content_retained": False,
-                    "environmental_conclusion": None,
-                    "fetched_at": fetched_at,
-                    "cost_aud": 0,
-                }
-            except Exception as exc:
-                snapshot = {
-                    "snapshot_id": _stable_id("SOURCE-SNAPSHOT-FAILED", {"cycle": cycle_id, "source": source["source_id"], "time": fetched_at}),
-                    "cycle_id": cycle_id,
-                    "source_id": source["source_id"],
-                    "module": source["module"],
-                    "publisher": source["publisher"],
-                    "title": source["title"],
-                    "requested_url": source["url"],
-                    "change_state": "RETRIEVAL_FAILED_VISIBLE",
-                    "admission_state": "NOT_ADMITTED_RETRIEVAL_FAILED",
-                    "error_type": type(exc).__name__,
-                    "error_detail": str(exc)[:500],
-                    "raw_content_retained": False,
-                    "environmental_conclusion": None,
-                    "fetched_at": fetched_at,
-                    "cost_aud": 0,
-                }
-            results.append(snapshot)
+        try:
+            for source in sources:
+                fetched_at = _now()
+                try:
+                    response = fetch(source)
+                    body = response.pop("body")
+                    if not isinstance(body, bytes):
+                        raise ProgramContractError("fetcher body must be bytes")
+                    if len(body) > MAX_RESPONSE_BYTES:
+                        raise ProgramContractError("source response exceeded 2 MiB ceiling")
+                    final = urlparse(response.get("final_url", ""))
+                    if final.scheme != "https" or final.hostname != source["allowed_host"]:
+                        raise ProgramContractError("retrieved source is outside its exact allowlisted HTTPS host")
+                    status = response.get("http_status")
+                    if not isinstance(status, int) or not 200 <= status < 300:
+                        raise ProgramContractError("official source did not return a successful HTTP status")
+                    content_digest = _digest(body)
+                    previous_snapshot = previous_by_source.get(source["source_id"])
+                    change_state = "BASELINE_CAPTURED" if previous_snapshot is None else (
+                        "POTENTIAL_CONTENT_CHANGE" if previous_snapshot.get("content_digest") != content_digest else "NO_CONTENT_DIGEST_CHANGE"
+                    )
+                    snapshot = {
+                        "snapshot_id": _stable_id("SOURCE-SNAPSHOT", {"cycle": cycle_id, "source": source["source_id"], "digest": content_digest}),
+                        "cycle_id": cycle_id,
+                        "source_id": source["source_id"],
+                        "module": source["module"],
+                        "publisher": source["publisher"],
+                        "title": source["title"],
+                        "requested_url": source["url"],
+                        "final_url": response["final_url"],
+                        "http_status": response["http_status"],
+                        "content_type": response.get("content_type", ""),
+                        "etag": response.get("etag"),
+                        "last_modified": response.get("last_modified"),
+                        "content_bytes": len(body),
+                        "content_digest": content_digest,
+                        "change_state": change_state,
+                        "admission_state": "SOURCE_FRESHNESS_METADATA_ONLY",
+                        "raw_content_retained": False,
+                        "environmental_conclusion": None,
+                        "fetched_at": fetched_at,
+                        "cost_aud": 0,
+                    }
+                except Exception as exc:
+                    snapshot = {
+                        "snapshot_id": _stable_id("SOURCE-SNAPSHOT-FAILED", {"cycle": cycle_id, "source": source["source_id"], "time": fetched_at}),
+                        "cycle_id": cycle_id,
+                        "source_id": source["source_id"],
+                        "module": source["module"],
+                        "publisher": source["publisher"],
+                        "title": source["title"],
+                        "requested_url": source["url"],
+                        "change_state": "RETRIEVAL_FAILED_VISIBLE",
+                        "admission_state": "NOT_ADMITTED_RETRIEVAL_FAILED",
+                        "error_type": type(exc).__name__,
+                        "error_detail": str(exc)[:500],
+                        "raw_content_retained": False,
+                        "environmental_conclusion": None,
+                        "fetched_at": fetched_at,
+                        "cost_aud": 0,
+                    }
+                results.append(snapshot)
+        except BaseException:
+            with self._cycle_transition_lock:
+                interrupted = self.get_cycle(cycle_id)
+                if interrupted["state"] == "COLLECTING_EVIDENCE":
+                    interrupted["source_refresh_state"] = "REFRESH_INTERRUPTED_RETRY_ALLOWED"
+                    interrupted["source_refresh_completed_at"] = _now()
+                    self._save_cycle(interrupted)
+            raise
         rows = [
             (item["snapshot_id"], cycle_id, item["source_id"], _json(item), item["fetched_at"])
             for item in results
         ]
-        with self._connect() as db:
-            db.executemany("INSERT INTO official_source_snapshots VALUES(?,?,?,?,?)", rows)
+        with self._cycle_transition_lock:
+            completed = self.get_cycle(cycle_id)
+            if completed["state"] != "COLLECTING_EVIDENCE":
+                raise ProgramStateError("cycle changed state before source refresh completed")
+            if completed.get("source_refresh_state") != "REFRESH_IN_PROGRESS":
+                raise ProgramStateError("source refresh state changed before atomic commit")
+            completed["source_refresh_state"] = "COMPLETE_ATOMIC_SET"
+            completed["source_refresh_completed_at"] = _now()
+            completed["updated_at"] = _now()
+            stored = {
+                key: value for key, value in completed.items()
+                if key not in {"observations", "source_snapshots"}
+            }
+            with self._connect() as db:
+                db.executemany("INSERT INTO official_source_snapshots VALUES(?,?,?,?,?)", rows)
+                db.execute(
+                    "UPDATE research_cycles SET state=?,record_json=?,updated_at=? WHERE cycle_id=?",
+                    (completed["state"], _json(stored), completed["updated_at"], cycle_id),
+                )
         return {
             "cycle_id": cycle_id,
             "network_used": True,
@@ -437,67 +476,77 @@ class PersistentResearchRuntime:
         }
 
     def compile_cycle(self, cycle_id: str) -> dict[str, Any]:
-        cycle = self.get_cycle(cycle_id)
-        if cycle["state"] != "COLLECTING_EVIDENCE":
-            raise ProgramStateError("cycle compilation requires COLLECTING_EVIDENCE")
-        observations, snapshots = cycle["observations"], cycle["source_snapshots"]
-        expected_source_ids = {item["source_id"] for item in _allowlist()["sources"]}
-        recorded_source_ids = {item["source_id"] for item in snapshots}
-        if snapshots and recorded_source_ids != expected_source_ids:
-            missing = sorted(expected_source_ids - recorded_source_ids)
-            unexpected = sorted(recorded_source_ids - expected_source_ids)
-            raise ProgramStateError(
-                "official-source snapshot set is incomplete or unexpected; "
-                f"missing={missing}, unexpected={unexpected}"
-            )
-        changes = [item for item in snapshots if item["change_state"] == "POTENTIAL_CONTENT_CHANGE"]
-        failures = [item for item in snapshots if item["change_state"] == "RETRIEVAL_FAILED_VISIBLE"]
-        previous = self.get_cycle(cycle["previous_cycle_id"]) if cycle["previous_cycle_id"] else None
-        comparison = {
-            "comparison_state": "FIRST_CYCLE_BASELINE" if previous is None else "COMPARED_WITH_PREVIOUS_CYCLE",
-            "previous_cycle_id": cycle["previous_cycle_id"],
-            "new_human_observation_count": len(observations),
-            "source_refresh_state": "COMPLETE_ATOMIC_SET" if snapshots else "NOT_REQUESTED",
-            "expected_source_count": len(expected_source_ids),
-            "source_snapshot_count": len(snapshots),
-            "potential_source_change_count": len(changes),
-            "retrieval_failure_count": len(failures),
-            "change_candidates": [
-                {"source_id": item["source_id"], "module": item["module"], "state": item["change_state"], "meaning": "human must inspect the official source; digest change is not environmental change"}
-                for item in changes
-            ],
-        }
-        program = self.get_program(cycle["program_id"])
-        version = program["current_hypothesis_version"] + 1
-        hypothesis = {
-            "version": version,
-            "state": "EVIDENCE_CHANGE_REVIEW_REQUIRED" if changes else "NO_REVIEWED_ENVIRONMENTAL_CHANGE_ESTABLISHED",
-            "module_states": {module: "UNRESOLVED_REQUIRES_EVIDENCE_AND_HUMAN_REVIEW" for module in MODULES},
-            "environmental_conclusion": None,
-            "forecast": None,
-            "recommendation": None,
-            "reason": "A source-page digest or field observation is a research signal only; no admitted analysis establishes a Cooma environmental change.",
-        }
-        receipt_body = {"cycle": cycle_id, "comparison": comparison, "hypothesis": hypothesis}
-        receipt = {
-            "receipt_id": _stable_id("PROGRAM-CYCLE-RECEIPT", receipt_body),
-            "termination": "MONTHLY_REVIEW_COMPILED_AWAITING_HUMAN_REVIEW",
-            "network_snapshot_count": len(snapshots),
-            "network_used": bool(snapshots),
-            "cost_aud": 0,
-            "comparison_digest": _digest(comparison),
-            "hypothesis_digest": _digest(hypothesis),
-        }
-        passport = {
-            "passport_id": _stable_id("PROGRAM-CYCLE-PASSPORT", receipt),
-            "state": "REAL_SOURCE_METADATA_AND_UNVERIFIED_OBSERVATIONS_QUARANTINED",
-            "supports": "a versioned record of source freshness, field observations and review workflow",
-            "does_not_support": ["Cooma environmental trend", "ENSO or seasonal forecast interpretation", "bushfire warning", "drinking-water shortage estimate", "wastewater asset, compliance or capacity conclusion"],
-            "human_review_required": True,
-            "release_as_environmental_evidence": False,
-        }
-        cycle.update(state="COMPILED_AWAITING_HUMAN_REVIEW", comparison=comparison, hypothesis_version=hypothesis, receipt=receipt, passport=passport)
-        return self._save_cycle(cycle)
+        with self._cycle_transition_lock:
+            cycle = self.get_cycle(cycle_id)
+            if cycle["state"] != "COLLECTING_EVIDENCE":
+                raise ProgramStateError("cycle compilation requires COLLECTING_EVIDENCE")
+            refresh_state = cycle.get("source_refresh_state", "NOT_REQUESTED")
+            if refresh_state == "REFRESH_IN_PROGRESS":
+                raise ProgramStateError("source refresh is still in progress; compilation is locked")
+            if refresh_state == "REFRESH_INTERRUPTED_RETRY_ALLOWED":
+                raise ProgramStateError("source refresh was interrupted; retry it before compilation")
+            if refresh_state not in {"NOT_REQUESTED", "COMPLETE_ATOMIC_SET"}:
+                raise ProgramStateError(f"cycle compilation is not admitted from source refresh state {refresh_state}")
+            observations, snapshots = cycle["observations"], cycle["source_snapshots"]
+            expected_source_ids = {item["source_id"] for item in _allowlist()["sources"]}
+            recorded_source_ids = {item["source_id"] for item in snapshots}
+            if refresh_state == "COMPLETE_ATOMIC_SET" and recorded_source_ids != expected_source_ids:
+                missing = sorted(expected_source_ids - recorded_source_ids)
+                unexpected = sorted(recorded_source_ids - expected_source_ids)
+                raise ProgramStateError(
+                    "official-source snapshot set is incomplete or unexpected; "
+                    f"missing={missing}, unexpected={unexpected}"
+                )
+            if refresh_state == "NOT_REQUESTED" and snapshots:
+                raise ProgramStateError("source snapshots exist without a completed refresh state")
+            changes = [item for item in snapshots if item["change_state"] == "POTENTIAL_CONTENT_CHANGE"]
+            failures = [item for item in snapshots if item["change_state"] == "RETRIEVAL_FAILED_VISIBLE"]
+            previous = self.get_cycle(cycle["previous_cycle_id"]) if cycle["previous_cycle_id"] else None
+            comparison = {
+                "comparison_state": "FIRST_CYCLE_BASELINE" if previous is None else "COMPARED_WITH_PREVIOUS_CYCLE",
+                "previous_cycle_id": cycle["previous_cycle_id"],
+                "new_human_observation_count": len(observations),
+                "source_refresh_state": refresh_state,
+                "expected_source_count": len(expected_source_ids),
+                "source_snapshot_count": len(snapshots),
+                "potential_source_change_count": len(changes),
+                "retrieval_failure_count": len(failures),
+                "change_candidates": [
+                    {"source_id": item["source_id"], "module": item["module"], "state": item["change_state"], "meaning": "human must inspect the official source; digest change is not environmental change"}
+                    for item in changes
+                ],
+            }
+            program = self.get_program(cycle["program_id"])
+            version = program["current_hypothesis_version"] + 1
+            hypothesis = {
+                "version": version,
+                "state": "EVIDENCE_CHANGE_REVIEW_REQUIRED" if changes else "NO_REVIEWED_ENVIRONMENTAL_CHANGE_ESTABLISHED",
+                "module_states": {module: "UNRESOLVED_REQUIRES_EVIDENCE_AND_HUMAN_REVIEW" for module in MODULES},
+                "environmental_conclusion": None,
+                "forecast": None,
+                "recommendation": None,
+                "reason": "A source-page digest or field observation is a research signal only; no admitted analysis establishes a Cooma environmental change.",
+            }
+            receipt_body = {"cycle": cycle_id, "comparison": comparison, "hypothesis": hypothesis}
+            receipt = {
+                "receipt_id": _stable_id("PROGRAM-CYCLE-RECEIPT", receipt_body),
+                "termination": "MONTHLY_REVIEW_COMPILED_AWAITING_HUMAN_REVIEW",
+                "network_snapshot_count": len(snapshots),
+                "network_used": bool(snapshots),
+                "cost_aud": 0,
+                "comparison_digest": _digest(comparison),
+                "hypothesis_digest": _digest(hypothesis),
+            }
+            passport = {
+                "passport_id": _stable_id("PROGRAM-CYCLE-PASSPORT", receipt),
+                "state": "REAL_SOURCE_METADATA_AND_UNVERIFIED_OBSERVATIONS_QUARANTINED",
+                "supports": "a versioned record of source freshness, field observations and review workflow",
+                "does_not_support": ["Cooma environmental trend", "ENSO or seasonal forecast interpretation", "bushfire warning", "drinking-water shortage estimate", "wastewater asset, compliance or capacity conclusion"],
+                "human_review_required": True,
+                "release_as_environmental_evidence": False,
+            }
+            cycle.update(state="COMPILED_AWAITING_HUMAN_REVIEW", comparison=comparison, hypothesis_version=hypothesis, receipt=receipt, passport=passport)
+            return self._save_cycle(cycle)
 
     def review_cycle(self, cycle_id: str, *, decision: str, reviewer: str, reason: str) -> dict[str, Any]:
         cycle = self.get_cycle(cycle_id)
