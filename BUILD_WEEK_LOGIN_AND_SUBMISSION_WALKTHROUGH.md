@@ -1,6 +1,6 @@
 # Build Week — Login and Submission Walkthrough
 
-Status: `GUIDANCE ONLY / NO ACCOUNT CREATED / NO UPLOAD / NO SUBMISSION`
+Status: `PUBLIC VIDEO REPORTED / DEVPOST NOT SUBMITTED`
 
 ## 1. Required Codex Session ID
 
