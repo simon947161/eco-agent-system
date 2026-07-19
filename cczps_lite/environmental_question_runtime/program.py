@@ -537,9 +537,15 @@ class PersistentResearchRuntime:
                 "comparison_digest": _digest(comparison),
                 "hypothesis_digest": _digest(hypothesis),
             }
+            if snapshots:
+                passport_state = "REAL_SOURCE_METADATA_AND_UNVERIFIED_OBSERVATIONS_QUARANTINED"
+            elif observations:
+                passport_state = "UNVERIFIED_OBSERVATIONS_QUARANTINED_NO_SOURCE_REFRESH"
+            else:
+                passport_state = "EMPTY_RESEARCH_RECORD_NO_SOURCE_REFRESH"
             passport = {
                 "passport_id": _stable_id("PROGRAM-CYCLE-PASSPORT", receipt),
-                "state": "REAL_SOURCE_METADATA_AND_UNVERIFIED_OBSERVATIONS_QUARANTINED",
+                "state": passport_state,
                 "supports": "a versioned record of source freshness, field observations and review workflow",
                 "does_not_support": ["Cooma environmental trend", "ENSO or seasonal forecast interpretation", "bushfire warning", "drinking-water shortage estimate", "wastewater asset, compliance or capacity conclusion"],
                 "human_review_required": True,

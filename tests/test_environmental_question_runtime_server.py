@@ -42,6 +42,8 @@ class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
         self.assertIn("refreshStatus", program_source)
         self.assertIn('applyRefreshGate("REFRESH_IN_PROGRESS")', program_source)
         self.assertIn('$("compile").disabled=inProgress||retry', program_source)
+        self.assertIn("function renderCycleIdentity()", program_source)
+        self.assertGreaterEqual(program_source.count("renderCycleIdentity();"), 2)
 
     def test_health_truthfully_reports_manual_allowlisted_network_capability(self):
         status, health = self.request("GET", "/api/health")

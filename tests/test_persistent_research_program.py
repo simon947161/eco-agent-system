@@ -86,6 +86,11 @@ class PersistentResearchProgramTests(unittest.TestCase):
         self.assertIn("reported_at", observation)
         self.assertEqual(observation["structured_record"]["structuring_state"], "HUMAN_ENTERED_AND_CONFIRMED")
         self.assertIn("does_not_prove", observation)
+        compiled = self.runtime.compile_cycle(cycle["cycle_id"])
+        self.assertEqual(
+            compiled["passport"]["state"],
+            "UNVERIFIED_OBSERVATIONS_QUARANTINED_NO_SOURCE_REFRESH",
+        )
 
     def test_live_refresh_requires_approval_and_retains_no_raw_body(self):
         cycle = self.runtime.start_cycle("2026-07")
@@ -192,6 +197,10 @@ class PersistentResearchProgramTests(unittest.TestCase):
         self.assertEqual(compiled["comparison"]["source_snapshot_count"], 5)
         self.assertEqual(compiled["comparison"]["retrieval_failure_count"], 2)
         self.assertTrue(compiled["receipt"]["network_used"])
+        self.assertEqual(
+            compiled["passport"]["state"],
+            "REAL_SOURCE_METADATA_AND_UNVERIFIED_OBSERVATIONS_QUARANTINED",
+        )
 
     def test_compile_rejects_corrupted_partial_snapshot_set(self):
         cycle = self.runtime.start_cycle("2026-07")
@@ -242,6 +251,7 @@ class PersistentResearchProgramTests(unittest.TestCase):
     def test_review_updates_program_version_without_environmental_signoff(self):
         cycle = self.runtime.start_cycle("2026-07")
         compiled = self.runtime.compile_cycle(cycle["cycle_id"])
+        self.assertEqual(compiled["passport"]["state"], "EMPTY_RESEARCH_RECORD_NO_SOURCE_REFRESH")
         reviewed = self.runtime.review_cycle(
             cycle["cycle_id"], decision="ACCEPT_CYCLE", reviewer="Founder reviewer",
             reason="The empty baseline is accepted as an auditable monthly research record.",
