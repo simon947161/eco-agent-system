@@ -1,17 +1,24 @@
 # ClimateOS Build Week — YouTube Package
 
-Status: `PREPARED / NOT UPLOADED / FOUNDER PUBLICATION APPROVAL REQUIRED`
+Status: `FOUNDER REPORTED PUBLIC / SIGNED-OUT VERIFICATION PENDING`
 
 ## Video file
 
-Local review cut: `ClimateOS_Build_Week_Review_Cut_v1.mp4`
+Uploaded review cut: `ClimateOS_Build_Week_Review_Cut_v2_Maple.mp4`
 
-- duration: 2:39.12;
+- duration: 2:14.94;
 - 1920×1080, 16:9, 30 fps;
 - H.264 video, AAC stereo audio at 48 kHz;
 - original Founder footage at opening and closing;
-- locally generated, clearly labelled AI narration in the middle;
+- ChatGPT Maple AI narration recorded by the Founder and cleaned locally in the
+  middle;
 - no music and no third-party visual material.
+
+Reported public URL: <https://youtu.be/mkLJ9X0XXMs>
+
+The Founder reported direct publication on 2026-07-19. Independent signed-out
+playback, exact live title, description, thumbnail and AI-disclosure state
+remain pending verification; publication is not Devpost submission authority.
 
 ## Recommended public title
 
