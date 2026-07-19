@@ -81,7 +81,8 @@ snapshot later records a stronger, explicitly approved Task2003 state.
 
 - Frozen submission commit: `PENDING_FINAL_FREEZE`
 - Public video URL: <https://youtu.be/mkLJ9X0XXMs>
-- Signed-out public playback check: `PENDING_FOUNDER_INCOGNITO_EVIDENCE`
+- Signed-out public playback check:
+  `PASS — FOUNDER INCOGNITO SCREENSHOT 2026-07-19`
 - Codex `/feedback` evidence ID:
   `019f73d3-1ba2-7073-aadf-ac68203c18f4`
 - Public judge access verified without login: `PENDING_FINAL_CHECK`
