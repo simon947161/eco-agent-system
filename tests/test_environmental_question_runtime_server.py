@@ -35,6 +35,16 @@ class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
         for blocked in ("https://", "http://", "openai", "GraphCast", "WebSocket"):
             self.assertNotIn(blocked, source)
 
+    def test_health_truthfully_reports_manual_allowlisted_network_capability(self):
+        status, health = self.request("GET", "/api/health")
+        self.assertEqual(status, 200)
+        self.assertTrue(health["network_egress"])
+        self.assertEqual(health["network_egress_mode"], "manual_allowlisted_https_only")
+        self.assertFalse(health["automatic_network_egress"])
+        self.assertTrue(health["live_refresh_requires_human_approval"])
+        self.assertFalse(health["raw_source_content_retained"])
+        self.assertEqual(health["cost_aud"], 0)
+
     def test_http_flow_to_quarantined_result(self):
         status, session = self.request("POST", "/api/questions", {"question": QUESTION}); self.assertEqual(status, 201)
         sid = session["session_id"]

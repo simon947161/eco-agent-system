@@ -172,6 +172,12 @@ class PersistentResearchRuntime:
             if "conversation_bridge_state" not in record["boundaries"]:
                 record["boundaries"]["conversation_bridge_state"] = "CONTRACT_DEFINED_NOT_CONNECTED_TO_LOCALHOST"
                 changed = True
+            if (
+                record.get("state") == "ACTIVE_HUMAN_REVIEWED_RESEARCH_PROGRAM"
+                and record.get("last_reviewed_cycle_id") is None
+            ):
+                record["state"] = "ACTIVE_AWAITING_FIRST_HUMAN_REVIEW"
+                changed = True
             if changed:
                 self._save_program(record)
             return self.get_program(PROGRAM_ID)
@@ -191,7 +197,7 @@ class PersistentResearchRuntime:
                     "annual_report_rule": "AFTER_REVIEWED_DECEMBER_CYCLE",
                     "unattended_scheduler_installed": False,
                 },
-                "state": "ACTIVE_HUMAN_REVIEWED_RESEARCH_PROGRAM",
+                "state": "ACTIVE_AWAITING_FIRST_HUMAN_REVIEW",
                 "current_hypothesis_version": 0,
                 "last_reviewed_cycle_id": None,
                 "boundaries": {
@@ -350,7 +356,8 @@ class PersistentResearchRuntime:
         previous = self.get_cycle(cycle["previous_cycle_id"]) if cycle["previous_cycle_id"] else None
         previous_by_source = {item["source_id"]: item for item in (previous["source_snapshots"] if previous else [])}
         results = []
-        for source in _allowlist()["sources"]:
+        sources = _allowlist()["sources"]
+        for source in sources:
             fetched_at = _now()
             try:
                 response = fetch(source)
@@ -410,16 +417,39 @@ class PersistentResearchRuntime:
                     "fetched_at": fetched_at,
                     "cost_aud": 0,
                 }
-            with self._connect() as db:
-                db.execute("INSERT OR REPLACE INTO official_source_snapshots VALUES(?,?,?,?,?)", (snapshot["snapshot_id"], cycle_id, source["source_id"], _json(snapshot), fetched_at))
             results.append(snapshot)
-        return {"cycle_id": cycle_id, "network_used": True, "human_approval_recorded": True, "raw_content_retained": False, "cost_aud": 0, "snapshots": results}
+        rows = [
+            (item["snapshot_id"], cycle_id, item["source_id"], _json(item), item["fetched_at"])
+            for item in results
+        ]
+        with self._connect() as db:
+            db.executemany("INSERT INTO official_source_snapshots VALUES(?,?,?,?,?)", rows)
+        return {
+            "cycle_id": cycle_id,
+            "network_used": True,
+            "human_approval_recorded": True,
+            "snapshot_set_state": "COMPLETE_ATOMIC_SET",
+            "expected_source_count": len(sources),
+            "recorded_source_count": len(results),
+            "raw_content_retained": False,
+            "cost_aud": 0,
+            "snapshots": results,
+        }
 
     def compile_cycle(self, cycle_id: str) -> dict[str, Any]:
         cycle = self.get_cycle(cycle_id)
         if cycle["state"] != "COLLECTING_EVIDENCE":
             raise ProgramStateError("cycle compilation requires COLLECTING_EVIDENCE")
         observations, snapshots = cycle["observations"], cycle["source_snapshots"]
+        expected_source_ids = {item["source_id"] for item in _allowlist()["sources"]}
+        recorded_source_ids = {item["source_id"] for item in snapshots}
+        if snapshots and recorded_source_ids != expected_source_ids:
+            missing = sorted(expected_source_ids - recorded_source_ids)
+            unexpected = sorted(recorded_source_ids - expected_source_ids)
+            raise ProgramStateError(
+                "official-source snapshot set is incomplete or unexpected; "
+                f"missing={missing}, unexpected={unexpected}"
+            )
         changes = [item for item in snapshots if item["change_state"] == "POTENTIAL_CONTENT_CHANGE"]
         failures = [item for item in snapshots if item["change_state"] == "RETRIEVAL_FAILED_VISIBLE"]
         previous = self.get_cycle(cycle["previous_cycle_id"]) if cycle["previous_cycle_id"] else None
@@ -427,6 +457,8 @@ class PersistentResearchRuntime:
             "comparison_state": "FIRST_CYCLE_BASELINE" if previous is None else "COMPARED_WITH_PREVIOUS_CYCLE",
             "previous_cycle_id": cycle["previous_cycle_id"],
             "new_human_observation_count": len(observations),
+            "source_refresh_state": "COMPLETE_ATOMIC_SET" if snapshots else "NOT_REQUESTED",
+            "expected_source_count": len(expected_source_ids),
             "source_snapshot_count": len(snapshots),
             "potential_source_change_count": len(changes),
             "retrieval_failure_count": len(failures),
@@ -493,6 +525,7 @@ class PersistentResearchRuntime:
         program = self.get_program(cycle["program_id"])
         program.pop("cycles", None)
         if decision == "ACCEPT_CYCLE":
+            program["state"] = "ACTIVE_HUMAN_REVIEWED_RESEARCH_PROGRAM"
             program["current_hypothesis_version"] = cycle["hypothesis_version"]["version"]
             program["last_reviewed_cycle_id"] = cycle_id
             self._save_program(program)

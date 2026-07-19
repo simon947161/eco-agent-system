@@ -63,7 +63,17 @@ def build_handler(runtime: EnvironmentalQuestionRuntime, programs: PersistentRes
             elif parts == ["program.html"]:
                 name, kind = "program.html", "text/html; charset=utf-8"
             elif parts == ["api", "health"]:
-                self._json(200, {"status": "ready", "real_execution": "blocked", "synthetic_execution": "local_only", "network_egress": False, "cost_aud": 0}); return
+                self._json(200, {
+                    "status": "ready",
+                    "real_execution": "blocked",
+                    "synthetic_execution": "local_only",
+                    "network_egress": True,
+                    "network_egress_mode": "manual_allowlisted_https_only",
+                    "automatic_network_egress": False,
+                    "live_refresh_requires_human_approval": True,
+                    "raw_source_content_retained": False,
+                    "cost_aud": 0,
+                }); return
             elif len(parts) == 3 and parts[:2] == ["api", "sessions"]:
                 try: self._json(200, runtime.get_session(parts[2]))
                 except KeyError: self._json(404, {"error": "session_not_found"})

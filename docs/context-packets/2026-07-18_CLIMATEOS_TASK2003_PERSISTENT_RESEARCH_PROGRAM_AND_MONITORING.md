@@ -105,3 +105,20 @@ behaviour and failure/alert obligations.
   wastewater pages publicly reachable at verification time.
 - The discontinued legacy BOM ENSO Outlook URL is not used; the allowlist uses
   the current Southern Hemisphere monitoring page.
+
+## 2026-07-19 narrow integrity hardening
+
+Founder-authorized pre-merge hardening corrected three evidence-contract gaps:
+
+- `/api/health` now reports that manual allowlisted HTTPS egress is available,
+  while separately reporting that automatic egress is disabled and every live
+  refresh requires human approval;
+- the five-source refresh is accumulated in memory and committed as one atomic
+  SQLite snapshot set, and cycle compilation rejects a corrupted partial set;
+- a new or legacy program with no accepted cycle is labelled
+  `ACTIVE_AWAITING_FIRST_HUMAN_REVIEW`; only an accepted reviewed cycle advances
+  it to `ACTIVE_HUMAN_REVIEWED_RESEARCH_PROGRAM`.
+
+The hardening tests use injected synthetic responses and a simulated process
+interruption. They do not access the five live sources. Founder completion of a
+real monthly cycle remains the next gate before any merge decision.

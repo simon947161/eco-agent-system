@@ -1,3 +1,4 @@
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -37,6 +38,7 @@ class PersistentResearchProgramTests(unittest.TestCase):
         self.assertTrue(program["cadence"]["material_event_review"])
         self.assertFalse(program["cadence"]["unattended_scheduler_installed"])
         self.assertTrue(program["boundaries"]["private_council_or_customer_data_prohibited"])
+        self.assertEqual(program["state"], "ACTIVE_AWAITING_FIRST_HUMAN_REVIEW")
 
     def test_monthly_cycles_are_unique_append_only_records(self):
         first = self.runtime.start_cycle("2026-07")
@@ -53,6 +55,16 @@ class PersistentResearchProgramTests(unittest.TestCase):
         self.assertNotEqual(event["cycle_id"], second["cycle_id"])
         with self.assertRaises(ProgramStateError):
             self.runtime.start_cycle("2026-06")
+
+    def test_legacy_premature_human_reviewed_state_is_migrated(self):
+        program = self.runtime.get_program()
+        program.pop("cycles", None)
+        program["state"] = "ACTIVE_HUMAN_REVIEWED_RESEARCH_PROGRAM"
+        program["last_reviewed_cycle_id"] = None
+        self.runtime._save_program(program)
+
+        reopened = PersistentResearchRuntime(self.runtime.db_path)
+        self.assertEqual(reopened.get_program()["state"], "ACTIVE_AWAITING_FIRST_HUMAN_REVIEW")
 
     def test_field_observation_is_unverified_and_privacy_confirmation_is_mandatory(self):
         cycle = self.runtime.start_cycle("2026-07")
@@ -80,6 +92,9 @@ class PersistentResearchProgramTests(unittest.TestCase):
         result = self.runtime.refresh_official_sources(cycle["cycle_id"], human_approval=True, fetcher=fake_fetch)
         self.assertTrue(result["network_used"])
         self.assertEqual(result["cost_aud"], 0)
+        self.assertEqual(result["snapshot_set_state"], "COMPLETE_ATOMIC_SET")
+        self.assertEqual(result["expected_source_count"], 5)
+        self.assertEqual(result["recorded_source_count"], 5)
         self.assertEqual(len(result["snapshots"]), 5)
         for snapshot in result["snapshots"]:
             self.assertEqual(snapshot["change_state"], "BASELINE_CAPTURED")
@@ -88,6 +103,43 @@ class PersistentResearchProgramTests(unittest.TestCase):
             self.assertIsNone(snapshot["environmental_conclusion"])
         with self.assertRaises(ProgramStateError):
             self.runtime.refresh_official_sources(cycle["cycle_id"], human_approval=True, fetcher=fake_fetch)
+
+    def test_interrupted_refresh_persists_no_partial_snapshot_set(self):
+        cycle = self.runtime.start_cycle("2026-07")
+        attempts = 0
+
+        def interrupted_fetch(source):
+            nonlocal attempts
+            attempts += 1
+            if attempts == 3:
+                raise KeyboardInterrupt("simulated process interruption")
+            return fake_fetch(source)
+
+        with self.assertRaises(KeyboardInterrupt):
+            self.runtime.refresh_official_sources(
+                cycle["cycle_id"], human_approval=True, fetcher=interrupted_fetch,
+            )
+        self.assertEqual(self.runtime.source_snapshots(cycle["cycle_id"]), [])
+
+    def test_compile_rejects_corrupted_partial_snapshot_set(self):
+        cycle = self.runtime.start_cycle("2026-07")
+        snapshot = {
+            "snapshot_id": "SOURCE-SNAPSHOT-PARTIAL",
+            "cycle_id": cycle["cycle_id"],
+            "source_id": "COOMA-MON-BOM-ENSO",
+            "change_state": "BASELINE_CAPTURED",
+            "fetched_at": "2026-07-19T00:00:00Z",
+        }
+        with self.runtime._connect() as db:
+            db.execute(
+                "INSERT INTO official_source_snapshots VALUES(?,?,?,?,?)",
+                (
+                    snapshot["snapshot_id"], cycle["cycle_id"], snapshot["source_id"],
+                    json.dumps(snapshot), snapshot["fetched_at"],
+                ),
+            )
+        with self.assertRaisesRegex(ProgramStateError, "snapshot set is incomplete"):
+            self.runtime.compile_cycle(cycle["cycle_id"])
 
     def test_second_cycle_detects_digest_change_but_forms_no_conclusion(self):
         first = self.runtime.start_cycle("2026-07")
@@ -122,6 +174,7 @@ class PersistentResearchProgramTests(unittest.TestCase):
         self.assertEqual(reviewed["state"], "CYCLE_REVIEWED_ACCEPTED_AS_RESEARCH_RECORD")
         self.assertFalse(reviewed["human_review"]["environmental_signoff"])
         program = self.runtime.get_program()
+        self.assertEqual(program["state"], "ACTIVE_HUMAN_REVIEWED_RESEARCH_PROGRAM")
         self.assertEqual(program["current_hypothesis_version"], compiled["hypothesis_version"]["version"])
         self.assertEqual(program["last_reviewed_cycle_id"], cycle["cycle_id"])
 
