@@ -108,7 +108,7 @@ did not replace that judgement.
 The final submission must record the `/feedback` Session ID for the primary
 core-development thread here before submission:
 
-`CODEX_SESSION_ID: PENDING_FOUNDER_PRIMARY_THREAD_FEEDBACK`
+`CODEX_FEEDBACK_EVIDENCE_ID: 019f73d3-1ba2-7073-aadf-ac68203c18f4`
 
 ## Claims not made
 
