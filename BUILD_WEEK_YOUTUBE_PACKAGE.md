@@ -1,6 +1,6 @@
 # ClimateOS Build Week — YouTube Package
 
-Status: `FOUNDER REPORTED PUBLIC / SIGNED-OUT VERIFICATION PENDING`
+Status: `PUBLIC / SIGNED-OUT PLAYBACK VERIFIED BY FOUNDER SCREENSHOT`
 
 ## Video file
 
@@ -16,9 +16,12 @@ Uploaded review cut: `ClimateOS_Build_Week_Review_Cut_v2_Maple.mp4`
 
 Reported public URL: <https://youtu.be/mkLJ9X0XXMs>
 
-The Founder reported direct publication on 2026-07-19. Independent signed-out
-playback, exact live title, description, thumbnail and AI-disclosure state
-remain pending verification; publication is not Devpost submission authority.
+The Founder reported direct publication on 2026-07-19 and supplied an incognito
+browser screenshot showing playback while signed out, the approved formal title
+and English captions. The screenshot is retained outside the public repository
+because it contains surrounding desktop context. Exact live description,
+thumbnail and AI-disclosure state remain form-review items. Publication is not
+Devpost submission authority.
 
 ## Recommended public title
 
