@@ -38,7 +38,8 @@ For a concise, reproducible judge path, read:
 - [Build Week change log and prior/new-work boundary](BUILD_WEEK_CHANGELOG.md)
 - [Build Week judge guide](BUILD_WEEK_JUDGE_GUIDE.md)
 - [Build Week submission draft](BUILD_WEEK_SUBMISSION_DRAFT.md)
-- [Build Week video script and truth contract](BUILD_WEEK_VIDEO_SCRIPT_AND_SHOTLIST.md)\n- [Build Week YouTube title, description, and upload contract](BUILD_WEEK_YOUTUBE_PACKAGE.md)
+- [Build Week video script and truth contract](BUILD_WEEK_VIDEO_SCRIPT_AND_SHOTLIST.md)
+- [Build Week YouTube title, description, and upload contract](BUILD_WEEK_YOUTUBE_PACKAGE.md)
 
 ### Collaboration with Codex and GPT-5.6
 
