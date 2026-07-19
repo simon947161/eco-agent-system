@@ -1,6 +1,6 @@
 # ClimateOS — OpenAI Build Week Submission Draft
 
-Status: `PREPARED / NOT SUBMITTED / FOUNDER FINAL APPROVAL REQUIRED`
+Status: `SUBMITTED TO OPENAI BUILD WEEK / 2026-07-19`
 
 ## Project title
 
@@ -105,13 +105,17 @@ environmental conclusion. Human and professional review remain necessary.
 ## Links and required fields
 
 - Repository: <https://github.com/simon947161/eco-agent-system>
+- Submitted repository snapshot:
+  <https://github.com/simon947161/eco-agent-system/tree/56f9ca2c8561953a7b2b5b963820ad2c7d5aeab3>
 - Testing instructions: `BUILD_WEEK_JUDGE_GUIDE.md`
 - Prior/new-work record: `BUILD_WEEK_CHANGELOG.md`
 - YouTube demo: <https://youtu.be/mkLJ9X0XXMs>
   (`PUBLIC_PLAYBACK_VERIFIED_SIGNED_OUT_BY_FOUNDER_SCREENSHOT`)
 - Codex `/feedback` evidence ID:
   `019f73d3-1ba2-7073-aadf-ac68203c18f4`
-- Frozen submission commit: `PENDING_FINAL_FREEZE`
+- Frozen submission commit: `56f9ca2c8561953a7b2b5b963820ad2c7d5aeab3`
+- Devpost project:
+  <https://devpost.com/software/climateos-human-ai-climate-stewardship>
 
 ## Final form checklist
 
@@ -126,5 +130,5 @@ environmental conclusion. Human and professional review remain necessary.
 - [ ] Demo operates exactly as described.
 - [ ] No third-party music, marks, private data or unsupported scientific claim.
 - [ ] Free judge access preserved through at least 2026-08-07.
-- [ ] Founder approves the exact final preview.
-- [ ] Submission receipt preserved after the separate submission authorization.
+- [x] Founder approved and submitted the exact final preview.
+- [x] Submission receipt preserved after submission authorization.
