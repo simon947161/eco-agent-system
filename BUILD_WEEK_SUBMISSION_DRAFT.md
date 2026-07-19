@@ -108,7 +108,7 @@ environmental conclusion. Human and professional review remain necessary.
 - Testing instructions: `BUILD_WEEK_JUDGE_GUIDE.md`
 - Prior/new-work record: `BUILD_WEEK_CHANGELOG.md`
 - YouTube demo: <https://youtu.be/mkLJ9X0XXMs>
-  (`FOUNDER_REPORTED_PUBLIC / SIGNED-OUT VERIFICATION PENDING`)
+  (`PUBLIC_PLAYBACK_VERIFIED_SIGNED_OUT_BY_FOUNDER_SCREENSHOT`)
 - Codex `/feedback` evidence ID:
   `019f73d3-1ba2-7073-aadf-ac68203c18f4`
 - Frozen submission commit: `PENDING_FINAL_FREEZE`
@@ -117,8 +117,8 @@ environmental conclusion. Human and professional review remain necessary.
 
 - [ ] Founder eligibility/representative details confirmed in Devpost.
 - [ ] Category confirmed.
-- [ ] Public YouTube URL verified without login; duration under 3:00; audio and
-      English captions present.
+- [x] Public YouTube URL verified without login by Founder screenshot; duration
+      under 3:00; audio and English captions present.
 - [ ] Frozen repository commit and test result recorded.
 - [ ] README, changelog and judge guide visible on the submitted branch.
 - [x] `/feedback` evidence ID recorded from the primary development task after
