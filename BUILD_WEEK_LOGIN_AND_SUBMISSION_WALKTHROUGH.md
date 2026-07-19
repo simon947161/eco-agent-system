@@ -1,6 +1,6 @@
 # Build Week — Login and Submission Walkthrough
 
-Status: `PUBLIC VIDEO REPORTED / DEVPOST NOT SUBMITTED`
+Status: `PUBLIC VIDEO VERIFIED / DEVPOST SUBMITTED 2026-07-19`
 
 ## 1. Required Codex Session ID
 
