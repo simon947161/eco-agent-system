@@ -19,6 +19,14 @@ required. Use only original Founder footage and repository-generated visuals.
 
 ## Narration bridge draft
 
+The preferred narration is now the shorter, prosody-ready script at
+`video_assets/voiceover_maple_ready.txt`. It is written for a warm, patient,
+quietly hopeful delivery with natural pauses and emphasis. It also states the
+long-term universal direction without claiming that the current prototype is
+already a finished consumer product.
+
+The earlier detailed bridge is retained below as source material:
+
 ClimateOS grew from years of environmental practice and earlier work on Eco
 Agent, contribution memory, evidence-first claims, Eco Decision DNA,
 CCZPS-Lite, Evidence Passports, scientific architecture and governance. That
