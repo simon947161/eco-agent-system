@@ -31,6 +31,13 @@ observation, values and action responsibility with AI long-term memory,
 scientific synthesis, multi-model reasoning, evidence organisation and system
 execution.
 
+The current executable slice starts with environmental research, but the
+long-term direction is broader: every person has a relationship with a place,
+and should eventually be able to use a human–AI system that remembers,
+understands and helps them care for that place. This is a direction of travel,
+not a claim that the present prototype is already a finished product for
+everyone.
+
 ClimateOS existed before Build Week. During the eligible period, we
 meaningfully extended that foundation toward a directly experienceable Runtime.
 The Task2000–Task2002 sequence moved from a minimum supervised control, through
