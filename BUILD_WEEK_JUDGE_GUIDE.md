@@ -80,7 +80,8 @@ snapshot later records a stronger, explicitly approved Task2003 state.
 ## Submission-time verification placeholders
 
 - Frozen submission commit: `PENDING_FINAL_FREEZE`
-- Public video URL: `PENDING_FOUNDER_APPROVED_PUBLIC_UPLOAD`
+- Public video URL: <https://youtu.be/mkLJ9X0XXMs>
+- Signed-out public playback check: `PENDING_FOUNDER_INCOGNITO_EVIDENCE`
 - Codex `/feedback` evidence ID:
   `019f73d3-1ba2-7073-aadf-ac68203c18f4`
 - Public judge access verified without login: `PENDING_FINAL_CHECK`
