@@ -25,6 +25,41 @@ Run the tests:
 python -m unittest discover
 ```
 
+## OpenAI Build Week 2026 evaluation path
+
+ClimateOS existed before Build Week. The eligible event increment meaningfully
+extended that foundation toward an experienceable human–AI Runtime; the event
+did not create the whole project. The stable merged demonstration is Task2002.
+Task2003 remains a separate Draft experiment whose current Founder evidence is
+`HTML_CHECK_PASS` only.
+
+For a concise, reproducible judge path, read:
+
+- [Build Week change log and prior/new-work boundary](BUILD_WEEK_CHANGELOG.md)
+- [Build Week judge guide](BUILD_WEEK_JUDGE_GUIDE.md)
+- [Build Week submission draft](BUILD_WEEK_SUBMISSION_DRAFT.md)
+- [Build Week video script and truth contract](BUILD_WEEK_VIDEO_SCRIPT_AND_SHOTLIST.md)
+
+### Collaboration with Codex and GPT-5.6
+
+Simon Shu supplied the environmental purpose, professional and lived context,
+meaningfulness tests, corrections, risk decisions and final authority. Codex
+with GPT-5.6 helped inspect and connect the repository, implement bounded
+Runtime increments, write and run tests, analyse failures, organise evidence
+and decisions, and preserve traceability across the Build Week work.
+
+The collaboration changed the product direction through human review. After
+Simon used the Task2000/Task2001 control Runtime and found that its scalar-box
+experience was technically functional but environmentally unmeaningful, the
+valid control foundation was retained and Task2002 was built around a
+meaningful environmental question. The AI did not replace this judgement.
+
+The project also records an AI recency-bias failure in submission planning and
+its correction through the [ClimateOS Integrity, Long-Horizon, and Human–AI
+Covenant](docs/00_VISION/CLIMATEOS_INTEGRITY_LONG_HORIZON_AND_HUMAN_AI_COVENANT.md).
+This prevents a competition, recent prompt or newest interface from erasing the
+project's long history or upgrading unsupported claims.
+
 ## Meaningful Environmental Question Runtime (Task2002 prototype)
 
 This supervised local prototype accepts a real environmental question in the
