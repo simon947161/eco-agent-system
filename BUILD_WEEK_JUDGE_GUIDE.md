@@ -81,8 +81,8 @@ snapshot later records a stronger, explicitly approved Task2003 state.
 
 - Frozen submission commit: `PENDING_FINAL_FREEZE`
 - Public video URL: `PENDING_FOUNDER_APPROVED_PUBLIC_UPLOAD`
-- Codex `/feedback` Session ID:
-  `PENDING_FOUNDER_PRIMARY_THREAD_FEEDBACK`
+- Codex `/feedback` evidence ID:
+  `019f73d3-1ba2-7073-aadf-ac68203c18f4`
 - Public judge access verified without login: `PENDING_FINAL_CHECK`
 
 Keep the repository and demonstration available free of charge through at
