@@ -1,6 +1,14 @@
 # ClimateOS Build Week — Codex Feedback Draft
 
-Status: `PREPARED / NOT SUBMITTED`
+Status: `SUBMITTED / LOG UPLOAD CONFIRMED BY FOUNDER SCREENSHOT`
+
+Feedback evidence ID:
+
+`019f73d3-1ba2-7073-aadf-ac68203c18f4`
+
+The confirmation screenshot is retained outside the public repository because
+it contains surrounding desktop context. The identifier and confirmation state
+are recorded here without publishing the screenshot.
 
 ## Suggested title
 
