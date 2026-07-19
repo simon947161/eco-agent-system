@@ -107,7 +107,8 @@ environmental conclusion. Human and professional review remain necessary.
 - Repository: <https://github.com/simon947161/eco-agent-system>
 - Testing instructions: `BUILD_WEEK_JUDGE_GUIDE.md`
 - Prior/new-work record: `BUILD_WEEK_CHANGELOG.md`
-- YouTube demo: `PENDING_FOUNDER_APPROVED_PUBLIC_UPLOAD`
+- YouTube demo: <https://youtu.be/mkLJ9X0XXMs>
+  (`FOUNDER_REPORTED_PUBLIC / SIGNED-OUT VERIFICATION PENDING`)
 - Codex `/feedback` evidence ID:
   `019f73d3-1ba2-7073-aadf-ac68203c18f4`
 - Frozen submission commit: `PENDING_FINAL_FREEZE`
