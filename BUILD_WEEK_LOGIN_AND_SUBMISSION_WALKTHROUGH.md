@@ -8,10 +8,22 @@ This is **Session ID**, not “Section AD” and not a video section.
 
 1. Open the primary Codex thread in which the core ClimateOS functionality was
    built.
-2. Run `/feedback` in that thread.
-3. Copy the returned Session ID into the Devpost field.
+2. In the composer, type `/` by itself and wait for the slash-command menu.
+3. Select **Feedback** from that menu. Do not send `/feedback` as an ordinary
+   chat message; that does not open the feedback dialog or create evidence.
+4. Complete the feedback dialog and enable log inclusion.
+5. Save the confirmation, any returned identifier, and a screenshot as Build
+   Week evidence.
+6. Copy the required confirmed identifier into the Devpost field only after
+   checking the exact label requested by the live submission form.
 
 Do not substitute a GitHub commit, task number or PR number.
+
+Suggested title:
+
+> ClimateOS Build Week — human-controlled environmental AI scientist prototype
+
+Paste-ready report: `BUILD_WEEK_CODEX_FEEDBACK_DRAFT.md`.
 
 ## 2. YouTube account and upload
 
