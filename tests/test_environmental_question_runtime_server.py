@@ -41,9 +41,13 @@ class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
         )
         self.assertIn("refreshStatus", program_source)
         self.assertIn('applyRefreshGate("REFRESH_IN_PROGRESS")', program_source)
-        self.assertIn('$("compile").disabled=inProgress||retry', program_source)
+        self.assertIn('$("compile").disabled = inProgress || retry', program_source)
         self.assertIn("function renderCycleIdentity()", program_source)
-        self.assertGreaterEqual(program_source.count("renderCycleIdentity();"), 2)
+        self.assertIn("function renderCycleWorkspace()", program_source)
+        self.assertIn("async function openCycle(cycleId)", program_source)
+        self.assertIn('data-open-cycle="${esc(item.cycle_id)}"', program_source)
+        self.assertIn("program.cycles.slice().reverse()", program_source)
+        self.assertIn("Opening a cycle never reruns it", program_source)
 
     def test_health_truthfully_reports_manual_allowlisted_network_capability(self):
         status, health = self.request("GET", "/api/health")
@@ -85,6 +89,14 @@ class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
         })
         self.assertEqual(status, 200)
         self.assertFalse(reviewed["human_review"]["environmental_signoff"])
+        status, reopened = self.request("GET", f"/api/cycles/{cycle_id}")
+        self.assertEqual(status, 200)
+        self.assertEqual(reopened["state"], "CYCLE_REVIEWED_ACCEPTED_AS_RESEARCH_RECORD")
+        self.assertEqual(len(reopened["observations"]), 1)
+        self.assertEqual(
+            reopened["passport"]["state"],
+            "UNVERIFIED_OBSERVATIONS_QUARANTINED_NO_SOURCE_REFRESH",
+        )
 
 
 if __name__ == "__main__":
