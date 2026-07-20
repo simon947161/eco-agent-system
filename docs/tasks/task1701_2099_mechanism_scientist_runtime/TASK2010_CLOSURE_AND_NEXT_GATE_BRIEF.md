@@ -2,7 +2,7 @@
 
 Date: 2026-07-20
 
-Status: CLOSED / DRAFT_REVIEW_GATE
+Status: CLOSED / DRAFT_REVIEW_GATE / FOUNDER_COMPUTER_REVIEW_MOBILE_DEFERRED
 
 ## Closure
 
@@ -47,4 +47,9 @@ After reviewing the Task2004–2010 Draft PR, decide whether to:
 - merge the resumable operations console;
 - request a bounded UI correction; or
 - hold before Task2011–2020 local continuity work.
+
+The Founder reported on 2026-07-20 that only mobile review was available. The
+visual localhost check is therefore recorded as
+`REMIND_AT_NEXT_COMPUTER_SESSION`; it is not failed, waived or silently treated
+as complete. See `TASK2010_FOUNDER_COMPUTER_REVIEW_REMINDER.md`.
 
