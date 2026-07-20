@@ -17,7 +17,11 @@ class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
         self.addCleanup(self._stop); self.port = self.server.server_address[1]
 
     def _stop(self):
-        self.server.shutdown(); self.server.server_close(); self.thread.join(timeout=2)
+        self.server.shutdown(); self.server.shutdown()
+        self.server.server_close(); self.server.server_close()
+        self.thread.join(timeout=2)
+        self.server.close_runtime_resources()
+        self.assertFalse(self.thread.is_alive())
 
     def request(self, method, path, body=None):
         conn = http.client.HTTPConnection("127.0.0.1", self.port, timeout=2)

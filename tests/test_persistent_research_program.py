@@ -28,6 +28,7 @@ class PersistentResearchProgramTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.runtime = PersistentResearchRuntime(Path(self.temp.name) / "program.sqlite3")
+        self.addCleanup(self.runtime.close)
 
     def test_cooma_question_is_saved_as_first_durable_program(self):
         program = self.runtime.get_program()

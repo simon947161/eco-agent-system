@@ -237,6 +237,10 @@ class ScientistRuntime:
     def __init__(self, db_path: str | Path) -> None:
         self.store = RuntimeStore(db_path)
 
+    def close(self) -> None:
+        """Idempotently close runtime persistence resources."""
+        self.store.close()
+
     def _audit(self, record: dict, event_type: str, actor_role: str, state_before: str, detail: dict) -> dict:
         event_id = stable_id("MECH-AUDIT-EVENT", {
             "session": record["session_id"],

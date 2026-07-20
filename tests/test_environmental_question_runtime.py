@@ -17,6 +17,7 @@ class EnvironmentalQuestionRuntimeTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.runtime = EnvironmentalQuestionRuntime(Path(self.temp.name) / "runtime.sqlite3")
+        self.addCleanup(self.runtime.close)
 
     def test_real_question_is_preserved_but_real_execution_is_blocked(self):
         session = self.runtime.create_question(QUESTION)
