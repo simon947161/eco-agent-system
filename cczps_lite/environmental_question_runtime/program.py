@@ -9,10 +9,11 @@ import sqlite3
 import urllib.request
 import uuid
 from calendar import monthrange
+from contextlib import contextmanager
 from datetime import UTC, date, datetime
 from pathlib import Path
 from threading import RLock
-from typing import Any, Callable
+from typing import Any, Callable, Iterator
 from urllib.parse import urlparse
 
 PROGRAM_SCHEMA = "climateos.persistent_research_program.v0.1"
@@ -148,12 +149,21 @@ class PersistentResearchRuntime:
             """)
         self.ensure_cooma_program()
 
-    def _connect(self) -> sqlite3.Connection:
+    @contextmanager
+    def _connect(self) -> Iterator[sqlite3.Connection]:
         db = sqlite3.connect(self.db_path, timeout=3)
         db.row_factory = sqlite3.Row
         db.execute("PRAGMA foreign_keys=ON")
         db.execute("PRAGMA busy_timeout=3000")
-        return db
+        try:
+            with db:
+                yield db
+        finally:
+            db.close()
+
+    def close(self) -> None:
+        """Close runtime resources; connections are operation-scoped and already closed."""
+        return None
 
     def ensure_cooma_program(self) -> dict[str, Any]:
         try:

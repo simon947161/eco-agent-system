@@ -6,6 +6,7 @@ import json
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from threading import Lock
 from urllib.parse import urlparse
 
 from .continuity import ContinuityBoundaryError, LocalPrivateContinuity
@@ -172,7 +173,47 @@ def build_handler(
     return Handler
 
 
-def create_server(db_path: str | Path, host: str = "127.0.0.1", port: int = 8766) -> ThreadingHTTPServer:
+class EnvironmentalQuestionHTTPServer(ThreadingHTTPServer):
+    """Threaded localhost server with explicit, idempotent resource shutdown."""
+
+    def __init__(self, address, handler, runtime, programs, continuity) -> None:
+        self.runtime = runtime
+        self.programs = programs
+        self.continuity = continuity
+        self._lifecycle_lock = Lock()
+        self._shutdown_requested = False
+        self._server_closed = False
+        self._resources_closed = False
+        super().__init__(address, handler)
+
+    def shutdown(self) -> None:
+        with self._lifecycle_lock:
+            if self._shutdown_requested:
+                return
+            self._shutdown_requested = True
+        super().shutdown()
+
+    def close_runtime_resources(self) -> None:
+        with self._lifecycle_lock:
+            if self._resources_closed:
+                return
+            self._resources_closed = True
+        self.continuity.close()
+        self.programs.close()
+        self.runtime.close()
+
+    def server_close(self) -> None:
+        with self._lifecycle_lock:
+            if self._server_closed:
+                return
+            self._server_closed = True
+        try:
+            super().server_close()
+        finally:
+            self.close_runtime_resources()
+
+
+def create_server(db_path: str | Path, host: str = "127.0.0.1", port: int = 8766) -> EnvironmentalQuestionHTTPServer:
     if host not in ALLOWED_HOSTS:
         raise RuntimeBoundaryError("server may bind only to localhost")
     if port != 0 and not 1024 <= port <= 65535:
@@ -180,9 +221,13 @@ def create_server(db_path: str | Path, host: str = "127.0.0.1", port: int = 8766
     db_path = Path(db_path)
     programs = PersistentResearchRuntime(db_path)
     continuity = LocalPrivateContinuity(programs, db_path.parent / "runtime_data" / "local_private_continuity")
-    return ThreadingHTTPServer(
+    runtime = EnvironmentalQuestionRuntime(db_path)
+    return EnvironmentalQuestionHTTPServer(
         (host, port),
-        build_handler(EnvironmentalQuestionRuntime(db_path), programs, continuity),
+        build_handler(runtime, programs, continuity),
+        runtime,
+        programs,
+        continuity,
     )
 
 

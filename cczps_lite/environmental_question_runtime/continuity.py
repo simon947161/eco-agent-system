@@ -60,6 +60,10 @@ class LocalPrivateContinuity:
         self.local_root = Path(local_root)
         self.max_bytes = max_bytes
 
+    def close(self) -> None:
+        """Close continuity resources; the shared program runtime is server-owned."""
+        return None
+
     def _selected_cycles(self, program_id: str, cycle_ids: Iterable[str] | None) -> list[dict[str, Any]]:
         available = self.programs.list_cycles(program_id)
         by_id = {item["cycle_id"]: item for item in available}

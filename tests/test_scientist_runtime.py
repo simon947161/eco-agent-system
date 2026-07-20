@@ -3,6 +3,7 @@ import json
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
 
 from cczps_lite.scientist_runtime import RuntimeBoundaryError, RuntimeStateError, ScientistRuntime
@@ -25,6 +26,7 @@ class ScientistRuntimeTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.db_path = Path(self.temp.name) / "runtime.sqlite3"
         self.runtime = ScientistRuntime(self.db_path)
+        self.addCleanup(self.runtime.close)
         self.question = (
             "In the fictional sealed scalar box, does the fixed perturbation "
             "increase the response index compared with baseline?"
@@ -157,15 +159,18 @@ class ScientistRuntimeTests(unittest.TestCase):
     def test_audit_is_persistent_append_only_and_hash_chained(self):
         run = self.runtime.run(self.approved()["session_id"])
         restarted = ScientistRuntime(self.db_path)
-        loaded = restarted.get_session(run["session_id"])
-        self.assertEqual(len(loaded["audit_events"]), 4)
-        self.assertTrue(loaded["audit_chain_valid"])
-        with sqlite3.connect(self.db_path) as connection:
-            connection.execute(
-                "UPDATE scientist_audit_events SET detail_json='{}' WHERE sequence_number=2"
-            )
-            connection.commit()
-        self.assertFalse(restarted.get_session(run["session_id"])["audit_chain_valid"])
+        try:
+            loaded = restarted.get_session(run["session_id"])
+            self.assertEqual(len(loaded["audit_events"]), 4)
+            self.assertTrue(loaded["audit_chain_valid"])
+            with closing(sqlite3.connect(self.db_path)) as connection:
+                with connection:
+                    connection.execute(
+                        "UPDATE scientist_audit_events SET detail_json='{}' WHERE sequence_number=2"
+                    )
+            self.assertFalse(restarted.get_session(run["session_id"])["audit_chain_valid"])
+        finally:
+            restarted.close()
 
     def test_fixture_is_repository_authored_closed_and_fictional(self):
         fixture = json.loads(FIXTURE_PATH.read_text(encoding="utf-8"))

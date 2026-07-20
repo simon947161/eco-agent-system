@@ -28,6 +28,16 @@ def connect(path: str | Path) -> sqlite3.Connection:
 
 
 @contextmanager
+def managed_connection(path: str | Path) -> Iterator[sqlite3.Connection]:
+    connection = connect(path)
+    try:
+        with connection:
+            yield connection
+    finally:
+        connection.close()
+
+
+@contextmanager
 def transaction(path: str | Path) -> Iterator[sqlite3.Connection]:
     connection = connect(path)
     try:
@@ -42,7 +52,7 @@ def transaction(path: str | Path) -> Iterator[sqlite3.Connection]:
 
 
 def initialize(path: str | Path) -> None:
-    with connect(path) as connection:
+    with managed_connection(path) as connection:
         connection.executescript(
             """
             CREATE TABLE IF NOT EXISTS schema_version (
@@ -85,6 +95,10 @@ class RuntimeStore:
     def __init__(self, db_path: str | Path) -> None:
         self.db_path = Path(db_path)
         initialize(self.db_path)
+
+    def close(self) -> None:
+        """Close store resources; every connection is operation-scoped."""
+        return None
 
     def create(self, record: dict) -> None:
         with transaction(self.db_path) as connection:
@@ -147,7 +161,7 @@ class RuntimeStore:
             raise StoreError("imported audit chain failed post-write verification")
 
     def get(self, session_id: str) -> dict:
-        with connect(self.db_path) as connection:
+        with managed_connection(self.db_path) as connection:
             row = connection.execute(
                 "SELECT record_json FROM scientist_sessions WHERE session_id = ?", (session_id,)
             ).fetchone()
@@ -224,7 +238,7 @@ class RuntimeStore:
         }
 
     def audit_events(self, session_id: str) -> list[dict]:
-        with connect(self.db_path) as connection:
+        with managed_connection(self.db_path) as connection:
             rows = connection.execute(
                 "SELECT * FROM scientist_audit_events WHERE session_id=? ORDER BY sequence_number", (session_id,)
             ).fetchall()

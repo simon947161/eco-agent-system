@@ -7,9 +7,10 @@ import json
 import sqlite3
 import time
 import uuid
+from contextlib import contextmanager
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterator
 
 SCHEMA_ID = "climateos.meaningful_environmental_question_runtime.v0.1"
 BOUNDARY = "FICTIONAL_HIGHLAND_TOWN / LOCAL_ONLY / NOT_ENVIRONMENTAL_EVIDENCE"
@@ -149,10 +150,19 @@ class EnvironmentalQuestionRuntime:
                 );
             """)
 
-    def _connect(self) -> sqlite3.Connection:
+    @contextmanager
+    def _connect(self) -> Iterator[sqlite3.Connection]:
         db = sqlite3.connect(self.db_path, timeout=2)
         db.row_factory = sqlite3.Row
-        return db
+        try:
+            with db:
+                yield db
+        finally:
+            db.close()
+
+    def close(self) -> None:
+        """Close runtime resources; connections are operation-scoped and already closed."""
+        return None
 
     def _save(self, record: dict[str, Any], event: str, actor: str, detail: dict[str, Any]) -> dict[str, Any]:
         previous = record["audit_events"][-1]["event_digest"] if record["audit_events"] else "GENESIS"

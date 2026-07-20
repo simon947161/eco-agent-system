@@ -6,6 +6,7 @@ import json
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from threading import Lock
 from urllib.parse import urlparse
 
 from .contracts import ContractError
@@ -150,13 +151,49 @@ def build_handler(runtime: ScientistRuntime):
     return RuntimeHandler
 
 
-def create_server(db_path: str | Path, host: str = "127.0.0.1", port: int = 8765) -> ThreadingHTTPServer:
+class ScientistHTTPServer(ThreadingHTTPServer):
+    """Threaded localhost server with explicit, idempotent resource shutdown."""
+
+    def __init__(self, address, handler, runtime) -> None:
+        self.runtime = runtime
+        self._lifecycle_lock = Lock()
+        self._shutdown_requested = False
+        self._server_closed = False
+        self._resources_closed = False
+        super().__init__(address, handler)
+
+    def shutdown(self) -> None:
+        with self._lifecycle_lock:
+            if self._shutdown_requested:
+                return
+            self._shutdown_requested = True
+        super().shutdown()
+
+    def close_runtime_resources(self) -> None:
+        with self._lifecycle_lock:
+            if self._resources_closed:
+                return
+            self._resources_closed = True
+        self.runtime.close()
+
+    def server_close(self) -> None:
+        with self._lifecycle_lock:
+            if self._server_closed:
+                return
+            self._server_closed = True
+        try:
+            super().server_close()
+        finally:
+            self.close_runtime_resources()
+
+
+def create_server(db_path: str | Path, host: str = "127.0.0.1", port: int = 8765) -> ScientistHTTPServer:
     if host not in ALLOWED_HOSTS:
         raise RuntimeBoundaryError("server may bind only to localhost")
     if port != 0 and not 1024 <= port <= 65535:
         raise RuntimeBoundaryError("port must be 0 for an ephemeral test port or in 1024..65535")
     runtime = ScientistRuntime(db_path)
-    return ThreadingHTTPServer((host, port), build_handler(runtime))
+    return ScientistHTTPServer((host, port), build_handler(runtime), runtime)
 
 
 def serve(db_path: str | Path, host: str = "127.0.0.1", port: int = 8765) -> None:

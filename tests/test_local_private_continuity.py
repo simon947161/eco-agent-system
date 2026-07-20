@@ -27,6 +27,8 @@ class LocalPrivateContinuityTests(unittest.TestCase):
         self.continuity = LocalPrivateContinuity(self.programs, self.backup_root, max_bytes=128 * 1024)
 
     def tearDown(self) -> None:
+        self.continuity.close()
+        self.programs.close()
         self.temp.cleanup()
 
     def _envelope(self):
