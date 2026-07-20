@@ -8,6 +8,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 
+from .continuity import ContinuityBoundaryError, LocalPrivateContinuity
 from .runtime import EnvironmentalQuestionRuntime, RuntimeBoundaryError, RuntimeStateError
 from .program import (
     PROGRAM_ID,
@@ -20,7 +21,11 @@ STATIC = Path(__file__).resolve().parent / "static"
 ALLOWED_HOSTS = {"127.0.0.1", "localhost"}
 
 
-def build_handler(runtime: EnvironmentalQuestionRuntime, programs: PersistentResearchRuntime):
+def build_handler(
+    runtime: EnvironmentalQuestionRuntime,
+    programs: PersistentResearchRuntime,
+    continuity: LocalPrivateContinuity,
+):
     class Handler(BaseHTTPRequestHandler):
         def _send(self, status: int, payload: bytes, content_type: str) -> None:
             self.send_response(status)
@@ -72,7 +77,19 @@ def build_handler(runtime: EnvironmentalQuestionRuntime, programs: PersistentRes
                     "automatic_network_egress": False,
                     "live_refresh_requires_human_approval": True,
                     "raw_source_content_retained": False,
+                    "local_private_continuity": "preview_and_new_file_export_only",
+                    "automatic_restore": False,
                     "cost_aud": 0,
+                }); return
+            elif parts == ["api", "continuity", "status"]:
+                self._json(200, {
+                    "status": "ready",
+                    "root": str(continuity.local_root),
+                    "max_bytes": continuity.max_bytes,
+                    "write_mode": "NEW_FILE_ONLY_OVERWRITE_REFUSED",
+                    "restore_mode": "PREVIEW_ONLY_NO_DATABASE_MUTATION",
+                    "cloud_or_external_transfer": False,
+                    "scientific_status": "NOT_AN_ENVIRONMENTAL_CONCLUSION",
                 }); return
             elif len(parts) == 3 and parts[:2] == ["api", "sessions"]:
                 try: self._json(200, runtime.get_session(parts[2]))
@@ -98,6 +115,17 @@ def build_handler(runtime: EnvironmentalQuestionRuntime, programs: PersistentRes
                 body, parts = self._body(), self._parts()
                 if parts == ["api", "questions"] and set(body) == {"question"}:
                     result, status = runtime.create_question(body["question"]), HTTPStatus.CREATED
+                elif parts == ["api", "continuity", "preview"] and set(body) == {"program_id", "cycle_ids"}:
+                    result = continuity.preview_backup(program_id=body["program_id"], cycle_ids=body["cycle_ids"])
+                    status = HTTPStatus.OK
+                elif parts == ["api", "continuity", "export"] and set(body) == {"program_id", "cycle_ids", "relative_name"}:
+                    result = continuity.export_new_file(
+                        body["relative_name"], program_id=body["program_id"], cycle_ids=body["cycle_ids"]
+                    )
+                    status = HTTPStatus.CREATED
+                elif parts == ["api", "continuity", "restore-preview"] and set(body) == {"relative_name"}:
+                    result = continuity.restore_difference_preview(body["relative_name"])
+                    status = HTTPStatus.OK
                 elif len(parts) == 4 and parts[:2] == ["api", "programs"] and parts[3] == "cycles" and set(body) == {"year_month", "trigger"}:
                     result, status = programs.start_cycle(body["year_month"], parts[2], body["trigger"]), HTTPStatus.CREATED
                 elif len(parts) == 4 and parts[:2] == ["api", "programs"] and parts[3] == "annual-report" and set(body) == {"report_year"}:
@@ -126,8 +154,16 @@ def build_handler(runtime: EnvironmentalQuestionRuntime, programs: PersistentRes
                 else: raise RuntimeBoundaryError("unknown endpoint or fields")
                 self._json(status, result)
             except KeyError:
-                self._json(404, {"error": "session_not_found"})
-            except (RuntimeBoundaryError, RuntimeStateError, ProgramContractError, ProgramStateError, json.JSONDecodeError, UnicodeDecodeError) as exc:
+                self._json(404, {"error": "record_not_found"})
+            except (
+                RuntimeBoundaryError,
+                RuntimeStateError,
+                ProgramContractError,
+                ProgramStateError,
+                ContinuityBoundaryError,
+                json.JSONDecodeError,
+                UnicodeDecodeError,
+            ) as exc:
                 conflict = isinstance(exc, (RuntimeStateError, ProgramStateError))
                 self._json(409 if conflict else 400, {"error": type(exc).__name__, "detail": str(exc)})
 
@@ -141,13 +177,20 @@ def create_server(db_path: str | Path, host: str = "127.0.0.1", port: int = 8766
         raise RuntimeBoundaryError("server may bind only to localhost")
     if port != 0 and not 1024 <= port <= 65535:
         raise RuntimeBoundaryError("invalid local port")
-    return ThreadingHTTPServer((host, port), build_handler(EnvironmentalQuestionRuntime(db_path), PersistentResearchRuntime(db_path)))
+    db_path = Path(db_path)
+    programs = PersistentResearchRuntime(db_path)
+    continuity = LocalPrivateContinuity(programs, db_path.parent / "runtime_data" / "local_private_continuity")
+    return ThreadingHTTPServer(
+        (host, port),
+        build_handler(EnvironmentalQuestionRuntime(db_path), programs, continuity),
+    )
 
 
 def serve(db_path: str | Path, host: str = "127.0.0.1", port: int = 8766) -> None:
     server = create_server(db_path, host, port)
     print(f"ClimateOS meaningful environmental question Runtime: http://{host}:{port}")
     print(f"Persistent program: http://{host}:{port}/program.html ({PROGRAM_ID})")
+    print("Local continuity: preview/new-file export only; restore is difference preview with no SQLite mutation.")
     print("Live source refresh requires a human click; source changes never become automatic conclusions. Ctrl+C stops.")
     try: server.serve_forever()
     except KeyboardInterrupt: pass
