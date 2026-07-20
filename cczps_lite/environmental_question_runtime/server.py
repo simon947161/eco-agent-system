@@ -9,12 +9,18 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from .runtime import EnvironmentalQuestionRuntime, RuntimeBoundaryError, RuntimeStateError
+from .program import (
+    PROGRAM_ID,
+    PersistentResearchRuntime,
+    ProgramContractError,
+    ProgramStateError,
+)
 
 STATIC = Path(__file__).resolve().parent / "static"
 ALLOWED_HOSTS = {"127.0.0.1", "localhost"}
 
 
-def build_handler(runtime: EnvironmentalQuestionRuntime):
+def build_handler(runtime: EnvironmentalQuestionRuntime, programs: PersistentResearchRuntime):
     class Handler(BaseHTTPRequestHandler):
         def _send(self, status: int, payload: bytes, content_type: str) -> None:
             self.send_response(status)
@@ -52,13 +58,33 @@ def build_handler(runtime: EnvironmentalQuestionRuntime):
             parts = self._parts()
             if not parts:
                 name, kind = "index.html", "text/html; charset=utf-8"
-            elif parts in (["app.js"], ["styles.css"]):
+            elif parts in (["app.js"], ["styles.css"], ["program.js"], ["program.css"]):
                 name = parts[0]; kind = "text/javascript; charset=utf-8" if name.endswith(".js") else "text/css; charset=utf-8"
+            elif parts == ["program.html"]:
+                name, kind = "program.html", "text/html; charset=utf-8"
             elif parts == ["api", "health"]:
-                self._json(200, {"status": "ready", "real_execution": "blocked", "synthetic_execution": "local_only", "network_egress": False, "cost_aud": 0}); return
+                self._json(200, {
+                    "status": "ready",
+                    "real_execution": "blocked",
+                    "synthetic_execution": "local_only",
+                    "network_egress": True,
+                    "network_egress_mode": "manual_allowlisted_https_only",
+                    "automatic_network_egress": False,
+                    "live_refresh_requires_human_approval": True,
+                    "raw_source_content_retained": False,
+                    "cost_aud": 0,
+                }); return
             elif len(parts) == 3 and parts[:2] == ["api", "sessions"]:
                 try: self._json(200, runtime.get_session(parts[2]))
                 except KeyError: self._json(404, {"error": "session_not_found"})
+                return
+            elif len(parts) == 3 and parts[:2] == ["api", "programs"]:
+                try: self._json(200, programs.get_program(parts[2]))
+                except KeyError: self._json(404, {"error": "program_not_found"})
+                return
+            elif len(parts) == 3 and parts[:2] == ["api", "cycles"]:
+                try: self._json(200, programs.get_cycle(parts[2]))
+                except KeyError: self._json(404, {"error": "cycle_not_found"})
                 return
             else:
                 self._json(404, {"error": "not_found"}); return
@@ -72,6 +98,23 @@ def build_handler(runtime: EnvironmentalQuestionRuntime):
                 body, parts = self._body(), self._parts()
                 if parts == ["api", "questions"] and set(body) == {"question"}:
                     result, status = runtime.create_question(body["question"]), HTTPStatus.CREATED
+                elif len(parts) == 4 and parts[:2] == ["api", "programs"] and parts[3] == "cycles" and set(body) == {"year_month", "trigger"}:
+                    result, status = programs.start_cycle(body["year_month"], parts[2], body["trigger"]), HTTPStatus.CREATED
+                elif len(parts) == 4 and parts[:2] == ["api", "programs"] and parts[3] == "annual-report" and set(body) == {"report_year"}:
+                    result, status = programs.annual_report(body["report_year"], parts[2]), HTTPStatus.CREATED
+                elif len(parts) == 4 and parts[:2] == ["api", "cycles"]:
+                    cycle_id, action = parts[2:]
+                    if action == "observations" and set(body) == {"category", "observed_on", "note", "location_scope", "public_safe_confirmation"}:
+                        result = programs.add_observation(cycle_id, **body)
+                    elif action == "refresh" and set(body) == {"human_approval"}:
+                        result = programs.refresh_official_sources(cycle_id, human_approval=body["human_approval"])
+                    elif action == "compile" and not body:
+                        result = programs.compile_cycle(cycle_id)
+                    elif action == "review" and set(body) == {"decision", "reviewer", "reason"}:
+                        result = programs.review_cycle(cycle_id, **body)
+                    else:
+                        raise ProgramContractError("program endpoint fields are closed")
+                    status = HTTPStatus.OK
                 elif len(parts) == 4 and parts[:2] == ["api", "sessions"]:
                     session_id, action = parts[2:]
                     if action == "rehearsal" and not body: result = runtime.create_rehearsal(session_id)
@@ -84,8 +127,9 @@ def build_handler(runtime: EnvironmentalQuestionRuntime):
                 self._json(status, result)
             except KeyError:
                 self._json(404, {"error": "session_not_found"})
-            except (RuntimeBoundaryError, RuntimeStateError, json.JSONDecodeError, UnicodeDecodeError) as exc:
-                self._json(409 if isinstance(exc, RuntimeStateError) else 400, {"error": type(exc).__name__, "detail": str(exc)})
+            except (RuntimeBoundaryError, RuntimeStateError, ProgramContractError, ProgramStateError, json.JSONDecodeError, UnicodeDecodeError) as exc:
+                conflict = isinstance(exc, (RuntimeStateError, ProgramStateError))
+                self._json(409 if conflict else 400, {"error": type(exc).__name__, "detail": str(exc)})
 
         def log_message(self, format: str, *args) -> None:
             return
@@ -97,13 +141,14 @@ def create_server(db_path: str | Path, host: str = "127.0.0.1", port: int = 8766
         raise RuntimeBoundaryError("server may bind only to localhost")
     if port != 0 and not 1024 <= port <= 65535:
         raise RuntimeBoundaryError("invalid local port")
-    return ThreadingHTTPServer((host, port), build_handler(EnvironmentalQuestionRuntime(db_path)))
+    return ThreadingHTTPServer((host, port), build_handler(EnvironmentalQuestionRuntime(db_path), PersistentResearchRuntime(db_path)))
 
 
 def serve(db_path: str | Path, host: str = "127.0.0.1", port: int = 8766) -> None:
     server = create_server(db_path, host, port)
     print(f"ClimateOS meaningful environmental question Runtime: http://{host}:{port}")
-    print("Real questions produce plans only; execution uses a fictional local fixture. Ctrl+C stops.")
+    print(f"Persistent program: http://{host}:{port}/program.html ({PROGRAM_ID})")
+    print("Live source refresh requires a human click; source changes never become automatic conclusions. Ctrl+C stops.")
     try: server.serve_forever()
     except KeyboardInterrupt: pass
     finally: server.server_close()
