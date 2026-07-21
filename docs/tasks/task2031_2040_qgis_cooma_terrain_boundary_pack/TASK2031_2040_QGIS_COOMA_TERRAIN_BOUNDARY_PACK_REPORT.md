@@ -67,6 +67,7 @@ Contours were intentionally omitted to keep the pack lightweight. No terrain val
 
 - Source-data total: `3,197,900 bytes`
 - Derived-data total: `5,758,963 bytes`
+- Complete local workspace total: `11,899,573 bytes`
 - Workspace limit remains enforced at runtime; QGIS profiles account for the remaining local-only workspace files.
 - Project: `runtime_data/qgis/cooma_spatial_foundation/project/Cooma_Spatial_Foundation_v0_2_terrain.qgz`
 - Project SHA-256: `d68b4016c8086ec44e9cc8001a8d972c5010953e17c06ddf36fd599e6ddbb17c`
