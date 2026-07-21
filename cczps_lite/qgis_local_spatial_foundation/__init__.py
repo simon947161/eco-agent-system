@@ -19,6 +19,13 @@ from .terrain_contract import (
     TERRAIN_PROJECT_FILENAME,
     size_limits,
 )
+from .hydrology_contract import (
+    HYDROLOGY_BOOKMARKS,
+    HYDROLOGY_LAYER_NAMES,
+    HYDROLOGY_PROJECT_FILENAME,
+    STACKED_PR_BASE,
+    hydrology_size_limits,
+)
 
 __all__ = [
     "BOOKMARKS",
@@ -37,4 +44,9 @@ __all__ = [
     "TERRAIN_PROJECT_CRS",
     "TERRAIN_PROJECT_FILENAME",
     "size_limits",
+    "HYDROLOGY_BOOKMARKS",
+    "HYDROLOGY_LAYER_NAMES",
+    "HYDROLOGY_PROJECT_FILENAME",
+    "STACKED_PR_BASE",
+    "hydrology_size_limits",
 ]

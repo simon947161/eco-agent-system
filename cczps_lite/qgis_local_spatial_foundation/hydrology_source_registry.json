@@ -1,0 +1,44 @@
+{
+  "schema_id": "climateos.qgis-hydrology-source-registry.v1",
+  "registry_status": "CLOSED_FOUNDER_AUTHORIZED",
+  "scientific_conclusion": "NONE",
+  "source_policy": "BOM_GEOFABRIC_ONLY_NO_SILENT_FALLBACK_COMBINATION",
+  "publisher": "Commonwealth of Australia, Bureau of Meteorology",
+  "product": "Australian Hydrological Geospatial Fabric (Geofabric)",
+  "version": "V3.3",
+  "service": "Geofabric_V3x_All_Products FeatureServer",
+  "service_url": "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/ahgf/Geofabric_V3x_All_Products/FeatureServer",
+  "access_method": "bounded ArcGIS FeatureServer GeoJSON queries",
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "attribution": "© Commonwealth of Australia (Bureau of Meteorology) 2022",
+  "source_crs": "EPSG:4283",
+  "temporal_currency": "Geofabric V3.3 service; Bureau attribution year 2022; foundation inputs include ANUDEM 5.3.0 (3 November 2016) and AusHydro V2",
+  "feature_scale": "approximately 1:100,000 foundation mapping; layer scale rules vary",
+  "layers": [
+    {
+      "id": 6,
+      "product_component": "Geofabric Surface Hydrology Network - V3.3",
+      "name": "AHGFNetworkStream - All",
+      "official_classification_fields": ["ahgfftype", "hierarchy", "perennial"],
+      "limitation": "Network streams are derived raster/vector network features informed by AusHydro V2; they are not observed flow, water availability, flood or supply evidence."
+    },
+    {
+      "id": 31,
+      "product_component": "Geofabric Hydrology Reporting Catchments - V3.3",
+      "name": "AHGFContractedCatchment",
+      "limitation": "Contracted catchments aggregate lower-level catchments to persistent contracted nodes; they do not establish drinking-water supply catchments."
+    },
+    {
+      "id": 33,
+      "product_component": "Geofabric Surface Catchments - V3.3",
+      "name": "AHGFCatchment (SH_Catchments)",
+      "limitation": "These are stream-segment catchments derived from 1-second DEM-S and are labelled subcatchment context only for visual distinction in this project."
+    },
+    {
+      "id": 27,
+      "product_component": "Geofabric Surface Hydrology Cartography - V3.3",
+      "name": "AHGFWaterbody (SH_Cartography)",
+      "limitation": "Cartographic waterbody presence and names do not establish current storage, quality, capacity or availability."
+    }
+  ]
+}
