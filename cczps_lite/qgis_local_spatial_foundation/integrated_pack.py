@@ -17,6 +17,7 @@ import sys
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 import zipfile
+from xml.etree import ElementTree
 
 from .hydrology_contract import HYDROLOGY_LAYER_NAMES, HYDROLOGY_PROJECT_FILENAME
 from .hydrology_pack import _hydrology_qgis_api
@@ -449,6 +450,21 @@ def build_project(repo_root: Path, osgeo_root: Path) -> dict[str, object]:
     return {"project": manifest, "project_path": str(layout["project"]), "workspace_sizes": _sizes(layout)}
 
 
+def _closed_imagery_sources_from_qgs(xml: str) -> list[str]:
+    """Return semantic XYZ datasource entries for the closed imagery service."""
+    try:
+        root = ElementTree.fromstring(xml)
+    except ElementTree.ParseError as exc:
+        raise IntegratedExperienceError("integrated QGS XML is invalid") from exc
+    return [
+        source
+        for element in root.iter("datasource")
+        if (source := (element.text or ""))
+        and "type=xyz" in source
+        and IMAGERY_SERVICE in source
+    ]
+
+
 def verify(repo_root: Path, osgeo_root: Path) -> dict[str, object]:
     layout = _layout(repo_root)
     required = (
@@ -510,8 +526,11 @@ def verify(repo_root: Path, osgeo_root: Path) -> dict[str, object]:
         if len(qgs_names) != 1:
             raise IntegratedExperienceError("integrated QGZ must contain one QGS document")
         xml = archive.read(qgs_names[0]).decode("utf-8")
-    if xml.count("type=xyz") != 1 or IMAGERY_SERVICE not in xml:
-        raise IntegratedExperienceError("integrated project must contain exactly one closed imagery XYZ source")
+    imagery_sources = _closed_imagery_sources_from_qgs(xml)
+    if len(imagery_sources) != 1:
+        raise IntegratedExperienceError(
+            "integrated project must contain exactly one closed imagery XYZ datasource"
+        )
     return {
         "project_path": str(layout["project"]),
         "project_sha256": _sha256(layout["project"]),
