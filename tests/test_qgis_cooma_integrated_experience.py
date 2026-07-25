@@ -24,6 +24,7 @@ from cczps_lite.qgis_local_spatial_foundation.integrated_contract import (
 from cczps_lite.qgis_local_spatial_foundation.integrated_pack import (
     IntegratedExperienceError,
     _assert_confined,
+    _closed_imagery_sources_from_qgs,
     _ensure_new_file,
     _road_query_parameters,
 )
@@ -139,7 +140,18 @@ class QgisCoomaIntegratedExperienceTests(unittest.TestCase):
         self.assertIn("Cooma_Spatial_Foundation_v0_4_integrated.qgz", launcher)
         self.assertIn('[ValidateSet("Plan", "Retrieve", "Derive", "BuildProject", "Verify", "Open")]', launcher)
 
-    def test_18_required_task_documents_exist(self) -> None:
+    def test_18_qgs_imagery_check_is_semantic_not_raw_text_count(self) -> None:
+        xml = (
+            "<qgis><properties><note>type=xyz duplicate incidental text</note></properties>"
+            f"<projectlayers><maplayer><datasource>type=xyz&amp;url={IMAGERY_TILE_URL}"
+            "&amp;zmin=0&amp;zmax=23&amp;crs=EPSG:3857</datasource>"
+            "</maplayer></projectlayers></qgis>"
+        )
+        self.assertEqual(_closed_imagery_sources_from_qgs(xml), [
+            f"type=xyz&url={IMAGERY_TILE_URL}&zmin=0&zmax=23&crs=EPSG:3857"
+        ])
+
+    def test_19_required_task_documents_exist(self) -> None:
         for name in (
             "TASK2051_2060_QGIS_COOMA_INTEGRATED_EXPERIENCE_REPORT.md",
             "QGIS_COOMA_INTEGRATED_FOUNDER_REVIEW_GUIDE.md",
@@ -147,12 +159,12 @@ class QgisCoomaIntegratedExperienceTests(unittest.TestCase):
         ):
             self.assertTrue((TASK_ROOT / name).is_file())
 
-    def test_19_gate_remains_independent(self) -> None:
+    def test_20_gate_remains_independent(self) -> None:
         gate = (TASK_ROOT / "TASK2060_FOUNDER_QGIS_INTEGRATED_GATE.md").read_text(encoding="utf-8")
         self.assertIn("READY_FOR_FOUNDER_QGIS_INTEGRATED_REVIEW", gate)
         self.assertIn("DO_NOT_AUTO_MERGE", gate)
 
-    def test_20_user_mental_model_is_one_map_many_layers(self) -> None:
+    def test_21_user_mental_model_is_one_map_many_layers(self) -> None:
         guide = (TASK_ROOT / "QGIS_COOMA_INTEGRATED_FOUNDER_REVIEW_GUIDE.md").read_text(encoding="utf-8")
         self.assertIn("one project", guide.lower())
         self.assertIn("layer", guide.lower())
