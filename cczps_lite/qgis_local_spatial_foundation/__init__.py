@@ -26,6 +26,13 @@ from .hydrology_contract import (
     STACKED_PR_BASE,
     hydrology_size_limits,
 )
+from .integrated_contract import (
+    IMAGERY_LAYER_NAME,
+    INTEGRATED_BOOKMARKS,
+    INTEGRATED_PROJECT_FILENAME,
+    ROAD_LAYER_NAME,
+    integrated_size_limits,
+)
 
 __all__ = [
     "BOOKMARKS",
@@ -49,4 +56,9 @@ __all__ = [
     "HYDROLOGY_PROJECT_FILENAME",
     "STACKED_PR_BASE",
     "hydrology_size_limits",
+    "IMAGERY_LAYER_NAME",
+    "INTEGRATED_BOOKMARKS",
+    "INTEGRATED_PROJECT_FILENAME",
+    "ROAD_LAYER_NAME",
+    "integrated_size_limits",
 ]
