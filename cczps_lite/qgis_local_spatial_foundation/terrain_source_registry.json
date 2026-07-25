@@ -1,0 +1,41 @@
+{
+  "schema_id": "climateos.qgis-terrain-source-registry.v1",
+  "registry_status": "CLOSED_FOUNDER_AUTHORIZED",
+  "scientific_conclusion": "NONE",
+  "sources": [
+    {
+      "id": "QGIS-TERRAIN-SRC-BOUNDARY-001",
+      "publisher": "NSW Spatial Services / Department of Customer Service",
+      "product": "NSW Foundation Spatial Data Framework - Administrative Boundaries - Suburb",
+      "service": "NSW_Administrative_Boundaries_Theme_multiCRS",
+      "layer": "Suburb (FeatureServer layer 2)",
+      "feature_name": "COOMA",
+      "feature_identifier": {
+        "OBJECTID": 16701,
+        "cadid": 108029985,
+        "shapeuuid": "42bcb472-a4e4-30cd-a949-077681669ffd"
+      },
+      "source_url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/FeatureServer/2/query",
+      "licence": "Creative Commons Attribution",
+      "source_crs": "EPSG:7844",
+      "update_frequency": "Daily service; feature timestamps retained in the response",
+      "limitation": "A gazetted locality boundary is not an LGA, catchment, hydrological boundary, or final scientific study boundary."
+    },
+    {
+      "id": "QGIS-TERRAIN-SRC-DEM-001",
+      "publisher": "Geoscience Australia",
+      "product": "Geoscience Australia SRTM 1 second Smoothed DEM (DEM-S) version 1.0",
+      "product_id": "ga_srtm_dem1sv1_0",
+      "catalogue_id": "72759",
+      "source_url": "https://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/elevation/ga_srtm_dem1sv1_0/dems1sv1_0.tif",
+      "metadata_url": "https://knowledge.dea.ga.gov.au/data/external-data/ga-srtm-1-second-dem/",
+      "licence": "Creative Commons Attribution 4.0 International",
+      "source_crs": "EPSG:4326",
+      "vertical_datum": "EGM96",
+      "cell_size": "1 arc second (0.0002777777777823 degrees; approximately 30 metres)",
+      "nodata": -3.4028235e+38,
+      "access_method": "HTTPS byte-range read from the official DEA public S3 object",
+      "limitation": "Regional terrain observation only; not building-scale detail and not aerial imagery. DEM-S contains residual artefacts and is not engineering evidence."
+    }
+  ]
+}

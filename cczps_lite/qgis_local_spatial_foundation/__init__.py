@@ -11,6 +11,14 @@ from .contract import (
     WORKSPACE_DIRECTORIES,
 )
 from .workspace import SpatialWorkspaceError, ensure_local_workspace
+from .terrain_contract import (
+    BOUNDARY_EXPECTED_IDENTITY,
+    BUFFER_METRES,
+    TERRAIN_LAYER_NAMES,
+    TERRAIN_PROJECT_CRS,
+    TERRAIN_PROJECT_FILENAME,
+    size_limits,
+)
 
 __all__ = [
     "BOOKMARKS",
@@ -23,4 +31,10 @@ __all__ = [
     "WORKSPACE_DIRECTORIES",
     "SpatialWorkspaceError",
     "ensure_local_workspace",
+    "BOUNDARY_EXPECTED_IDENTITY",
+    "BUFFER_METRES",
+    "TERRAIN_LAYER_NAMES",
+    "TERRAIN_PROJECT_CRS",
+    "TERRAIN_PROJECT_FILENAME",
+    "size_limits",
 ]
