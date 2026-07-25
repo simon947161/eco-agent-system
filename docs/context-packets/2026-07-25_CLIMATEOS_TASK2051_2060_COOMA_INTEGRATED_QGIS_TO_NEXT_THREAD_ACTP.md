@@ -214,7 +214,30 @@ After merge, define the next spatial sprint separately. Do not silently bundle i
 
 ---
 
-## 10. CRP Harvest Block
+## 10. 2026-07-26 Verify correction
+
+After the ACTP was prepared, Founder noticed that the Windows `-Action Verify` run had returned an error even though `-Action Open` and the visual review succeeded.
+
+Root cause: the final QGZ guard counted raw `type=xyz` text across the complete QGS XML. QGIS serialization may repeat, escape or otherwise represent datasource text outside the single semantic datasource node, so the raw-string count was stricter than the intended source contract.
+
+Narrow repair on PR #101:
+
+- parse the QGS XML;
+- inspect only `<datasource>` elements;
+- require exactly one datasource containing both `type=xyz` and the exact allowlisted NSWWebImagery service;
+- retain the existing QGIS API checks requiring exactly one online layer and the exact source;
+- add a regression test covering incidental duplicate `type=xyz` text outside the datasource;
+- GitHub Actions run 351 passed at repair Head `64cbc047cf02e4e2f9ae0f8ddb19c0cd5fc8693c`.
+
+Founder visual evidence remains valid as `FOUNDER_QGIS_INTEGRATED_EXPERIENCE_PASS`. Technical closure now additionally requires one Windows rerun of:
+
+```powershell
+.\run_qgis_cooma_integrated_experience.ps1 -Action Verify -OsgeoRoot D:\
+```
+
+Do not rebuild, retrieve or derive before this rerun. PR #101 remains Draft and unmerged.
+
+## 11. CRP Harvest Block
 
 ### 核心知识点
 
