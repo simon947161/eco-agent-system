@@ -185,7 +185,7 @@ The following is not yet authorized:
 
 Therefore the correct current gate is:
 
-`FOUNDER_QGIS_INTEGRATED_EXPERIENCE_PASS / PR101_MERGE_AUTHORIZATION_REQUIRED / DO_NOT_AUTO_MERGE`
+`FOUNDER_QGIS_INTEGRATED_EXPERIENCE_PASS / WINDOWS_INTEGRATED_VERIFY_PASS / PR101_MERGE_AUTHORIZATION_REQUIRED / DO_NOT_AUTO_MERGE`
 
 The next thread must not interpret this ACTP, the Founder review, or the end-of-day instruction as merge authorization.
 
@@ -214,28 +214,44 @@ After merge, define the next spatial sprint separately. Do not silently bundle i
 
 ---
 
-## 10. 2026-07-26 Verify correction
+## 10. 2026-07-26 Verify correction and Windows closure
 
-After the ACTP was prepared, Founder noticed that the Windows `-Action Verify` run had returned an error even though `-Action Open` and the visual review succeeded.
+After the ACTP was prepared, Founder noticed that the first Windows `-Action Verify` run had returned an error even though `-Action Open` and the visual review succeeded.
 
-Root cause: the final QGZ guard counted raw `type=xyz` text across the complete QGS XML. QGIS serialization may repeat, escape or otherwise represent datasource text outside the single semantic datasource node, so the raw-string count was stricter than the intended source contract.
-
-Narrow repair on PR #101:
+The first narrow defect was an over-strict imagery-source guard: it counted raw `type=xyz` text across the complete QGS XML instead of validating the semantic `<datasource>` node. PR #101 was repaired to:
 
 - parse the QGS XML;
 - inspect only `<datasource>` elements;
 - require exactly one datasource containing both `type=xyz` and the exact allowlisted NSWWebImagery service;
-- retain the existing QGIS API checks requiring exactly one online layer and the exact source;
-- add a regression test covering incidental duplicate `type=xyz` text outside the datasource;
-- GitHub Actions run 351 passed at repair Head `64cbc047cf02e4e2f9ae0f8ddb19c0cd5fc8693c`.
+- retain QGIS API checks requiring exactly one online layer and the exact source;
+- add regression coverage for incidental duplicate `type=xyz` text outside the datasource.
 
-Founder visual evidence remains valid as `FOUNDER_QGIS_INTEGRATED_EXPERIENCE_PASS`. Technical closure now additionally requires one Windows rerun of:
+After pulling the repair Head, the next Windows run reached the checksum guard and reported `integrated project checksum mismatch`. This was not a renewed imagery failure. The local QGZ had been opened or rewritten after its generation manifest was created, so its binary checksum no longer matched the recorded build artifact.
 
-```powershell
-.\run_qgis_cooma_integrated_experience.ps1 -Action Verify -OsgeoRoot D:\
-```
+The bounded recovery was:
 
-Do not rebuild, retrieve or derive before this rerun. PR #101 remains Draft and unmerged.
+1. close QGIS;
+2. move the existing integrated QGZ and its project manifest into a recoverable backup;
+3. run `-Action BuildProject` only;
+4. run `-Action Verify` before reopening QGIS;
+5. reopen through `-Action Open`.
+
+Founder screenshots on 2026-07-26 confirm the final Windows verification result:
+
+- `"status": "PASS"`;
+- project checksum `e142e83b32e1659f8f9d711372fbb2e9624e0eab7025a45dd2504843afd1fb41`;
+- `broken_layer_count: 0`;
+- `network_layer_count: 1`;
+- offline core: `terrain`, `hydrology`, `roads`;
+- online optional: `NSWWebImagery`;
+- scientific conclusion: `NONE`;
+- subsequent `-Action Open` succeeded and the integrated project displayed normally.
+
+Formal technical closure:
+
+`WINDOWS_INTEGRATED_VERIFY_PASS`
+
+This result closes both the imagery datasource and checksum blockers. It preserves the earlier `FOUNDER_QGIS_INTEGRATED_EXPERIENCE_PASS`. PR #101 remains Draft and unmerged; merge authorization is still not granted.
 
 ## 11. CRP Harvest Block
 
@@ -265,6 +281,7 @@ Do not rebuild, retrieve or derive before this rerun. PR #101 remains Draft and 
 ### 关键决策
 
 - `FOUNDER_QGIS_INTEGRATED_EXPERIENCE_PASS`。
+- `WINDOWS_INTEGRATED_VERIFY_PASS`。
 - 采用 `ONE_PROJECT_MANY_LAYERS` 作为 Cooma Spatial Foundation 的默认用户体验。
 - 今日工作到此结束。
 - PR #101 尚未获合并授权。
@@ -274,6 +291,8 @@ Do not rebuild, retrieve or derive before this rerun. PR #101 remains Draft and 
 - PR #101 的受控合并决定。
 - 合并后下一批空间任务的范围与优先级。
 - 更高层环境结论仍需后续证据、方法和独立科学门控。
+
+已解决：Windows integrated Verify 已正式通过，不再是未解决阻塞。
 
 ### 下一步行动
 
