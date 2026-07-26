@@ -1,0 +1,25 @@
+{
+  "schema_id": "climateos.qgis-integrated-reference-sources.v1",
+  "registry_status": "CLOSED_FOUNDER_AUTHORIZED",
+  "scope": "COOMA_OFFICIAL_LOCALITY_PLUS_10KM",
+  "roads": {
+    "publisher": "NSW Spatial Services",
+    "product": "NSW Foundation Spatial Data Framework — Transport Theme",
+    "layer": "RoadSegment",
+    "layer_id": 5,
+    "service": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Transport_Theme/FeatureServer/5",
+    "access": "bounded paginated GeoJSON query",
+    "retention": "git-ignored local runtime only",
+    "licence": "Creative Commons Attribution"
+  },
+  "imagery": {
+    "publisher": "NSW Spatial Services",
+    "product": "NSWWebImagery",
+    "service": "https://portal.spatial.nsw.gov.au/aid/tile/rest/services/NSWWebImagery/MapServer",
+    "access": "online cached tiles for current viewport only",
+    "retention": "no bulk download and no committed tiles",
+    "scientific_use": "VISUAL_ORIENTATION_ONLY_CAPTURE_DATE_NOT_ESTABLISHED"
+  },
+  "other_network_sources_allowed": [],
+  "scientific_conclusion": "NONE"
+}
