@@ -1,0 +1,74 @@
+{
+  "schema_id": "climateos.cooma_official_real_data_public_receipt.v0.1",
+  "pilot_id": "COOMA-OFFICIAL-REAL-DATA-PILOT-2026-07",
+  "retrieved_at": "2026-07-27T02:06:37Z",
+  "network_used": true,
+  "cost_aud": 0,
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "COOMA-BOM-DWO-2026-07",
+      "publisher": "Australian Bureau of Meteorology",
+      "title": "Daily Weather Observations for Cooma, July 2026",
+      "url": "https://www.bom.gov.au/climate/dwo/202607/text/IDCJDW2033.202607.csv",
+      "evidence_class": "OFFICIAL_OBSERVATION",
+      "retrieved_at": "2026-07-27T02:06:37Z",
+      "http_status": 200,
+      "final_url": "https://www.bom.gov.au/climate/dwo/202607/text/IDCJDW2033.202607.csv",
+      "content_type": "text/csv",
+      "content_digest": "sha256:a8012429aef55b5457bb2cbcda6cecab7a94c0526eb9a85ae8e15468465832c4",
+      "response_bytes": 3023,
+      "parsed_metadata": {
+        "product_id": "IDCJDW2033.202607",
+        "station_ids": [
+          "070278",
+          "070217"
+        ],
+        "row_count": 27,
+        "coverage_start": "2026-07-1",
+        "coverage_end": "2026-07-27",
+        "column_count": 22,
+        "rainfall_observation_count": 27,
+        "rainfall_missing_count": 0,
+        "quantitative_values_publicly_retained": false
+      },
+      "raw_content_retained_publicly": false,
+      "raw_content_local_path": "REDACTED_LOCAL_GITIGNORED_PATH"
+    },
+    {
+      "source_id": "BOM-ENSO-MONITORING-2026-07-14",
+      "publisher": "Australian Bureau of Meteorology",
+      "title": "Southern Hemisphere monitoring history, 14 July 2026",
+      "url": "https://www.bom.gov.au/climate/enso/wrap-up/archive/20260714.archive.shtml",
+      "evidence_class": "OFFICIAL_OUTLOOK",
+      "retrieved_at": "2026-07-27T02:06:37Z",
+      "http_status": 200,
+      "final_url": "https://www.bom.gov.au/climate/enso/wrap-up/archive/20260714.archive.shtml",
+      "content_type": "text/html; charset=UTF-8",
+      "content_digest": "sha256:1ac2451b7f36825555e6572406b0e57bce1b56c0238d00c5240e0cf5a41a9f35",
+      "response_bytes": 67020,
+      "parsed_metadata": {
+        "archive_date": "2026-07-14",
+        "state": "EL_NINO_UNDERWAY",
+        "nino34_week_ending": "2026-07-12",
+        "relative_nino34_c": 1.47,
+        "bom_el_nino_threshold_c": 0.8,
+        "soi_30_day_to_2026_07_12": -25.8,
+        "outlook_scope": "likely to persist until at least southern hemisphere summer",
+        "local_cooma_impact_claim": null
+      },
+      "raw_content_retained_publicly": false,
+      "raw_content_local_path": "REDACTED_LOCAL_GITIGNORED_PATH"
+    }
+  ],
+  "maximum_conclusion_level": "L1",
+  "environmental_conclusion": null,
+  "cooma_water_balance_status": "BLOCKED_MISSING_REQUIRED_TERMS",
+  "missing_terms": [
+    "storage",
+    "streamflow",
+    "water_use",
+    "ET",
+    "wastewater_operations"
+  ]
+}
