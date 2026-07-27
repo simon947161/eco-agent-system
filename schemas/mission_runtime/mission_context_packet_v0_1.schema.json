@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/schemas/mission_runtime/mission_context_packet_v0_1.schema.json",
+  "title": "Mission Context Packet v0.1",
+  "type": "object",
+  "required": ["packet_id", "mission_id", "authoritative_baseline", "current_status", "decisions", "evidence_refs", "next_actions", "gates"],
+  "properties": {
+    "packet_id": {"type": "string"}, "mission_id": {"type": "string"},
+    "authoritative_baseline": {
+      "type": "object",
+      "required": ["repository", "branch", "commit"],
+      "properties": {"repository": {"type": "string"}, "branch": {"type": "string"}, "commit": {"type": "string"}},
+      "additionalProperties": false
+    },
+    "current_status": {"type": "string"},
+    "decisions": {"type": "array", "items": {"type": "string"}},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "completed": {"type": "array", "items": {"type": "string"}},
+    "open_questions": {"type": "array", "items": {"type": "string"}},
+    "next_actions": {"type": "array", "items": {"type": "string"}},
+    "gates": {
+      "type": "object",
+      "required": ["founder_review_required", "implementation_authority", "mainline_change_allowed"],
+      "properties": {
+        "founder_review_required": {"type": "boolean"},
+        "implementation_authority": {"type": "boolean"},
+        "mainline_change_allowed": {"type": "boolean"},
+        "review_questions": {"type": "array", "items": {"type": "string"}}
+      }, "additionalProperties": false
+    },
+    "project_keywords": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
