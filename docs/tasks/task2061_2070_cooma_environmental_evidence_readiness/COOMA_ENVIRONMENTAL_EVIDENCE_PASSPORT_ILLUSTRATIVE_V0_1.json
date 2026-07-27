@@ -1,0 +1,81 @@
+{
+  "schema_name": "ClimateOS Cooma Environmental Evidence Passport illustrative v0.1",
+  "passport_id": "CLIMATEOS-COOMA-ILLUSTRATIVE-READINESS-0001",
+  "status": "ILLUSTRATIVE_ONLY_NO_REAL_EVIDENCE",
+  "created_at": "2026-07-27",
+  "subject": {
+    "place": "Cooma study system",
+    "question_id": "CQ-WATER-01",
+    "question": "What evidence would be required to calculate a bounded water balance?",
+    "scenario_class": "FOUNDER_SCENARIO",
+    "scenario_note": "Illustrative preparedness scenario only; no El Nino forecast is asserted."
+  },
+  "evidence_cutoff": null,
+  "spatial_boundary_id": "NOT_DECLARED_FOR_CALCULATION",
+  "time_period": {
+    "start": null,
+    "end": null
+  },
+  "evidence_objects": [
+    {
+      "evidence_object_id": "EEO-ILLUSTRATIVE-SPATIAL-001",
+      "object_class": "SPATIAL_REFERENCE",
+      "title": "Accepted Cooma integrated QGIS foundation identity",
+      "admission_state": "CONTEXT_ONLY",
+      "maximum_conclusion_level": "L0",
+      "supports_claim_ids": [
+        "CLAIM-ILLUSTRATIVE-001"
+      ],
+      "does_not_support": [
+        "rainfall quantity",
+        "storage sufficiency",
+        "evaporation estimate",
+        "water quality",
+        "wastewater performance"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "CLAIM-ILLUSTRATIVE-001",
+      "text": "The accepted spatial foundation can orient later evidence objects.",
+      "level": "L0",
+      "state": "ILLUSTRATIVE_CONTEXT_ONLY",
+      "supports": [
+        "EEO-ILLUSTRATIVE-SPATIAL-001"
+      ],
+      "unresolved_gaps": [
+        "accounting boundary",
+        "time period",
+        "precipitation",
+        "storage",
+        "inflow and outflow",
+        "evapotranspiration",
+        "withdrawal and discharge",
+        "uncertainty budget"
+      ]
+    }
+  ],
+  "conclusion": {
+    "level": "NONE",
+    "text": null,
+    "reason": "The example demonstrates structure only and contains no admitted quantitative Cooma evidence."
+  },
+  "permitted_use": [
+    "schema discussion",
+    "evidence-gap review",
+    "future implementation planning"
+  ],
+  "prohibited_use": [
+    "environmental conclusion",
+    "water sufficiency conclusion",
+    "water-quality conclusion",
+    "wastewater conclusion",
+    "bushfire conclusion",
+    "engineering or planning decision"
+  ],
+  "human_review": {
+    "state": "FOUNDER_GATE_REQUIRED_FOR_NEXT_IMPLEMENTATION",
+    "scientific_signoff": "NONE"
+  }
+}
