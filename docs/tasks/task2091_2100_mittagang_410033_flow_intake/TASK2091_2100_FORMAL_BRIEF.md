@@ -4,7 +4,8 @@ Date: 2026-07-28
 
 Status: FOUNDER_AUTHORIZED / REAL OFFICIAL DATA / L1 MAXIMUM
 
-Stacked base: PR #107 Head `106ab36354dc76a86da41d4c3e09e184d17c1c4b`
+Independent base after PR #107 merge:
+`main@7b7f4289f8c4af609495e675fc9f2150fe8d7cd1`
 
 ## Authorized boundary
 

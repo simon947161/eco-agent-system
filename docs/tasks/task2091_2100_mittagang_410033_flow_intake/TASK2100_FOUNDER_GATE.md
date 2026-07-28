@@ -5,8 +5,8 @@ Status: REAL_RUN_COMPLETE / L1 RECEIPT COMPLETE / CURRENT-DATA GAP OPEN
 ## Gate state
 
 ```text
-PR107_OPEN_DRAFT_MERGEABLE_NOT_MERGED
-/ STACKED_FROM_PR107_HEAD_106AB363
+PR107_MERGED_MAIN_7B7F4289
+/ INDEPENDENT_FROM_MAIN_7B7F4289
 / FIXED_BOM_HRS_HTTPS_ENDPOINT
 / HTTP_200_REAL_DOWNLOAD
 / STATION_410033_IDENTITY_VALIDATED
@@ -42,12 +42,12 @@ separate endpoint-access gate.
 
 ## Recommended next action
 
-1. Merge PR #107 after Founder review.
-2. Retarget this stacked PR to the resulting `main`.
-3. Decide whether to pursue a registered WaterNSW API/WaterInsights export for
+1. Preserve PR #107 merge and `main@7b7f4289f8c4af609495e675fc9f2150fe8d7cd1`
+   as the independent review base.
+2. Decide whether to pursue a registered WaterNSW API/WaterInsights export for
    current flow, or first use the admitted historical series for a strictly
    quality-aware climatology method design.
-4. Keep current flow, town extraction, treated storage and demand as separate
+3. Keep current flow, town extraction, treated storage and demand as separate
    evidence terms.
 
 ## CRP Harvest Block
@@ -58,5 +58,5 @@ separate endpoint-access gate.
 - 推理点：零缺日不等于全部直接观测；质量代码与模型补缺必须参与后续方法门。
 - 关键决策：当前只升至 L1；不把 2024 年截止的历史文件说成 2026 当前状态。
 - 未解决问题：WaterNSW 当前流量接口、明确 IANA 时区、取水量、储水量和需求。
-- 下一步行动：Founder review、合并 PR #107、重定向 stacked PR、选择当前流量端点策略。
+- 下一步行动：完成 PR #108 独立 Founder review，并在注册门后准入 WaterNSW 当前流量 API。
 - 项目关键词：`410033`, `Mittagang Crossing`, `BoM HRS`, `Streamflow`, `Quality Code`, `L1 Receipt`, `Water Balance`.
