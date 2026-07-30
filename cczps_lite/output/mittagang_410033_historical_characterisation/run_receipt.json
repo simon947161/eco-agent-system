@@ -1,0 +1,31 @@
+{
+  "schema_id": "climateos.mittagang_410033_historical_characterisation.v0.1",
+  "run_id": "MITTAGANG-410033-HISTORICAL-CHARACTERISATION-V0.1",
+  "method_version": "0.1.0",
+  "issued_at": "2026-07-30T12:30:00Z",
+  "source_digest": "sha256:12740d6edc884b3f7a960935215cdff1bdbe5bd85c9c9a96d3aa219272d31534",
+  "conclusion_level": "L2",
+  "evidence_maturity": "S0",
+  "output_digests": {
+    "characterisation_receipt.json": "sha256:ff7199b11a81ce12837b6120b89e8df287524e8bed772b9c742b3d3799f5e836",
+    "time_bounded_environmental_answer.json": "sha256:544d356a2e3ad61fd38bcb97482ac0b305c0362562556f329e6394af82f563ed",
+    "evidence_passport.json": "sha256:4e1034f50a4f9abc1207c201f6784252903ab79f2fa218358793b99a513d03f1",
+    "monthly_profile.csv": "sha256:fb0aade49d54970169b1a3a5fd4859e02d546dff8b16504ec9a1352b7c02d876",
+    "annual_complete_year_profile.csv": "sha256:e92d1e64402e177d03ea4807836c84f2760d09ccb34372a0e418fed94d88aa8c",
+    "monthly_distribution.svg": "sha256:623ed80f97d355d2931ada0952783620ee37c0732af04b664c1affb8f003157e",
+    "annual_medians.svg": "sha256:31fdbde2bcd6d8e33eaf8296f129663ea4c9f975ba917669ccc9a8a65d86c8cf",
+    "quality_composition_by_decade.svg": "sha256:a759138dc4186df72dfe39ee4a0b92338b4f2480db182e7db9369bf9a22f7392",
+    "METHOD_AND_RESULTS.md": "sha256:2ecb0cf2cf176a227a0ed70429d10bcec3c2506e22e449f91c6df77caa06c163"
+  },
+  "human_review": {
+    "status": "FOUNDER_EVIDENCE_REVIEW_PENDING",
+    "qualified_hydrology_review": "REQUIRED_BEFORE_L3",
+    "review_questions": [
+      "Is the A+B sensitivity framing defensible?",
+      "Which uncertainty treatment is required before trend analysis?",
+      "Is the gauge boundary fit for a proposed later local question?"
+    ]
+  },
+  "public_warning_issued": false,
+  "current_condition_conclusion": null
+}

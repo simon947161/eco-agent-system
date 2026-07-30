@@ -1,0 +1,4976 @@
+{
+  "schema_id": "climateos.mittagang_410033_historical_characterisation.v0.1",
+  "run_id": "MITTAGANG-410033-HISTORICAL-CHARACTERISATION-V0.1",
+  "method_version": "0.1.0",
+  "issued_at": "2026-07-30T12:30:00Z",
+  "source": {
+    "publisher": "Australian Bureau of Meteorology",
+    "product_family": "Hydrologic Reference Stations",
+    "station_id": "410033",
+    "station_name": "Murrumbidgee River at Mittagang Crossing",
+    "url": "https://www.bom.gov.au/water/hrs/content/data/410033/410033_daily_ts.csv",
+    "content_digest": "sha256:12740d6edc884b3f7a960935215cdff1bdbe5bd85c9c9a96d3aa219272d31534",
+    "retrieval_receipt_digest": "sha256:d5a690cedd569860cb23fcd7e0c3c57cb50860dbc93db074da7c4d6a9ffacb04",
+    "dataset_version": "August, 2024",
+    "data_extraction_date": "14/06/2024"
+  },
+  "boundary": {
+    "spatial": "BoM HRS gauge 410033 record; no catchment-wide inference",
+    "measurement": "daily streamflow",
+    "unit": "ML/day",
+    "coverage_start": "1964-03-01",
+    "coverage_end": "2024-02-29",
+    "day_boundary": "09:00 source-local time for previous 24 hours",
+    "iana_timezone": null
+  },
+  "quality_profile": {
+    "row_count": 21915,
+    "missing_calendar_date_count": 0,
+    "blank_flow_value_count": 0,
+    "duplicate_date_count": 0,
+    "quality_code_counts": {
+      "A": 11280,
+      "B": 7192,
+      "C": 156,
+      "E": 3287,
+      "G": 0
+    },
+    "quality_code_shares": {
+      "A": 0.514716,
+      "B": 0.328177,
+      "C": 0.007118,
+      "E": 0.149989,
+      "G": 0.0
+    },
+    "source_definitions": {
+      "A": "Best available data",
+      "B": "Good data",
+      "C": "Poor data",
+      "E": "Unreliable data",
+      "G": "Gap filled data"
+    },
+    "primary_published_series": "All source-published rows, with quality visible",
+    "sensitivity_screen": "A+B only; not treated as a replacement dataset"
+  },
+  "overall_distribution": {
+    "all_published": {
+      "count": 21915,
+      "mean_ml_per_day": 358.505,
+      "p10_ml_per_day": 37.325,
+      "p25_ml_per_day": 60.913,
+      "median_ml_per_day": 148.956,
+      "p75_ml_per_day": 375.112,
+      "p90_ml_per_day": 802.422,
+      "p95_ml_per_day": 1251.973,
+      "maximum_ml_per_day": 38352.186
+    },
+    "quality_screen_a_b": {
+      "count": 18472,
+      "mean_ml_per_day": 307.31,
+      "p10_ml_per_day": 36.029,
+      "p25_ml_per_day": 57.457,
+      "median_ml_per_day": 142.087,
+      "p75_ml_per_day": 353.554,
+      "p90_ml_per_day": 707.575,
+      "p95_ml_per_day": 1086.316,
+      "maximum_ml_per_day": 25583.446
+    },
+    "quality_screen_a_b_share": 0.842893
+  },
+  "monthly_profile": [
+    {
+      "month": 1,
+      "month_name": "Jan",
+      "all_published": {
+        "count": 1860,
+        "mean_ml_per_day": 162.695,
+        "p10_ml_per_day": 29.722,
+        "p25_ml_per_day": 45.598,
+        "median_ml_per_day": 80.008,
+        "p75_ml_per_day": 166.884,
+        "p90_ml_per_day": 315.927,
+        "p95_ml_per_day": 481.067,
+        "maximum_ml_per_day": 9749.185
+      },
+      "quality_screen_a_b": {
+        "count": 1563,
+        "mean_ml_per_day": 137.157,
+        "p10_ml_per_day": 28.944,
+        "p25_ml_per_day": 44.021,
+        "median_ml_per_day": 73.528,
+        "p75_ml_per_day": 144.377,
+        "p90_ml_per_day": 273.702,
+        "p95_ml_per_day": 375.82,
+        "maximum_ml_per_day": 9749.185
+      },
+      "quality_screen_a_b_share": 0.840323
+    },
+    {
+      "month": 2,
+      "month_name": "Feb",
+      "all_published": {
+        "count": 1695,
+        "mean_ml_per_day": 171.796,
+        "p10_ml_per_day": 27.216,
+        "p25_ml_per_day": 40.22,
+        "median_ml_per_day": 62.036,
+        "p75_ml_per_day": 133.359,
+        "p90_ml_per_day": 307.952,
+        "p95_ml_per_day": 521.89,
+        "maximum_ml_per_day": 17266.104
+      },
+      "quality_screen_a_b": {
+        "count": 1410,
+        "mean_ml_per_day": 137.801,
+        "p10_ml_per_day": 25.575,
+        "p25_ml_per_day": 38.125,
+        "median_ml_per_day": 57.803,
+        "p75_ml_per_day": 110.81,
+        "p90_ml_per_day": 291.095,
+        "p95_ml_per_day": 476.961,
+        "maximum_ml_per_day": 6459.539
+      },
+      "quality_screen_a_b_share": 0.831858
+    },
+    {
+      "month": 3,
+      "month_name": "Mar",
+      "all_published": {
+        "count": 1860,
+        "mean_ml_per_day": 181.653,
+        "p10_ml_per_day": 25.575,
+        "p25_ml_per_day": 36.44,
+        "median_ml_per_day": 55.34,
+        "p75_ml_per_day": 109.773,
+        "p90_ml_per_day": 263.956,
+        "p95_ml_per_day": 539.538,
+        "maximum_ml_per_day": 17836.699
+      },
+      "quality_screen_a_b": {
+        "count": 1583,
+        "mean_ml_per_day": 147.021,
+        "p10_ml_per_day": 24.21,
+        "p25_ml_per_day": 33.61,
+        "median_ml_per_day": 51.754,
+        "p75_ml_per_day": 100.226,
+        "p90_ml_per_day": 237.863,
+        "p95_ml_per_day": 445.442,
+        "maximum_ml_per_day": 9758.862
+      },
+      "quality_screen_a_b_share": 0.851075
+    },
+    {
+      "month": 4,
+      "month_name": "Apr",
+      "all_published": {
+        "count": 1800,
+        "mean_ml_per_day": 166.6,
+        "p10_ml_per_day": 29.878,
+        "p25_ml_per_day": 40.609,
+        "median_ml_per_day": 60.179,
+        "p75_ml_per_day": 113.423,
+        "p90_ml_per_day": 343.998,
+        "p95_ml_per_day": 729.042,
+        "maximum_ml_per_day": 5185.119
+      },
+      "quality_screen_a_b": {
+        "count": 1531,
+        "mean_ml_per_day": 146.828,
+        "p10_ml_per_day": 27.648,
+        "p25_ml_per_day": 38.535,
+        "median_ml_per_day": 55.988,
+        "p75_ml_per_day": 99.578,
+        "p90_ml_per_day": 315.019,
+        "p95_ml_per_day": 656.262,
+        "maximum_ml_per_day": 3223.722
+      },
+      "quality_screen_a_b_share": 0.850556
+    },
+    {
+      "month": 5,
+      "month_name": "May",
+      "all_published": {
+        "count": 1860,
+        "mean_ml_per_day": 154.605,
+        "p10_ml_per_day": 35.934,
+        "p25_ml_per_day": 46.743,
+        "median_ml_per_day": 81.476,
+        "p75_ml_per_day": 163.234,
+        "p90_ml_per_day": 315.65,
+        "p95_ml_per_day": 435.4,
+        "maximum_ml_per_day": 11920.538
+      },
+      "quality_screen_a_b": {
+        "count": 1586,
+        "mean_ml_per_day": 128.81,
+        "p10_ml_per_day": 34.733,
+        "p25_ml_per_day": 44.691,
+        "median_ml_per_day": 75.601,
+        "p75_ml_per_day": 147.811,
+        "p90_ml_per_day": 252.551,
+        "p95_ml_per_day": 414.683,
+        "maximum_ml_per_day": 2333.096
+      },
+      "quality_screen_a_b_share": 0.852688
+    },
+    {
+      "month": 6,
+      "month_name": "Jun",
+      "all_published": {
+        "count": 1800,
+        "mean_ml_per_day": 342.091,
+        "p10_ml_per_day": 41.965,
+        "p25_ml_per_day": 63.548,
+        "median_ml_per_day": 115.864,
+        "p75_ml_per_day": 255.726,
+        "p90_ml_per_day": 751.269,
+        "p95_ml_per_day": 1213.372,
+        "maximum_ml_per_day": 14566.666
+      },
+      "quality_screen_a_b": {
+        "count": 1492,
+        "mean_ml_per_day": 258.306,
+        "p10_ml_per_day": 40.177,
+        "p25_ml_per_day": 58.062,
+        "median_ml_per_day": 105.928,
+        "p75_ml_per_day": 222.656,
+        "p90_ml_per_day": 576.401,
+        "p95_ml_per_day": 994.73,
+        "maximum_ml_per_day": 9678.336
+      },
+      "quality_screen_a_b_share": 0.828889
+    },
+    {
+      "month": 7,
+      "month_name": "Jul",
+      "all_published": {
+        "count": 1860,
+        "mean_ml_per_day": 479.5,
+        "p10_ml_per_day": 61.077,
+        "p25_ml_per_day": 111.371,
+        "median_ml_per_day": 204.469,
+        "p75_ml_per_day": 481.364,
+        "p90_ml_per_day": 1031.598,
+        "p95_ml_per_day": 1571.051,
+        "maximum_ml_per_day": 25583.446
+      },
+      "quality_screen_a_b": {
+        "count": 1548,
+        "mean_ml_per_day": 400.089,
+        "p10_ml_per_day": 61.837,
+        "p25_ml_per_day": 109.06,
+        "median_ml_per_day": 199.63,
+        "p75_ml_per_day": 417.621,
+        "p90_ml_per_day": 831.008,
+        "p95_ml_per_day": 1374.106,
+        "maximum_ml_per_day": 25583.446
+      },
+      "quality_screen_a_b_share": 0.832258
+    },
+    {
+      "month": 8,
+      "month_name": "Aug",
+      "all_published": {
+        "count": 1860,
+        "mean_ml_per_day": 606.437,
+        "p10_ml_per_day": 89.054,
+        "p25_ml_per_day": 185.849,
+        "median_ml_per_day": 354.632,
+        "p75_ml_per_day": 685.487,
+        "p90_ml_per_day": 1179.681,
+        "p95_ml_per_day": 1555.817,
+        "maximum_ml_per_day": 38352.186
+      },
+      "quality_screen_a_b": {
+        "count": 1565,
+        "mean_ml_per_day": 518.682,
+        "p10_ml_per_day": 85.52,
+        "p25_ml_per_day": 184.294,
+        "median_ml_per_day": 337.052,
+        "p75_ml_per_day": 611.376,
+        "p90_ml_per_day": 1085.512,
+        "p95_ml_per_day": 1477.774,
+        "maximum_ml_per_day": 13801.928
+      },
+      "quality_screen_a_b_share": 0.841398
+    },
+    {
+      "month": 9,
+      "month_name": "Sep",
+      "all_published": {
+        "count": 1800,
+        "mean_ml_per_day": 674.677,
+        "p10_ml_per_day": 164.361,
+        "p25_ml_per_day": 283.202,
+        "median_ml_per_day": 461.772,
+        "p75_ml_per_day": 799.966,
+        "p90_ml_per_day": 1337.148,
+        "p95_ml_per_day": 1949.694,
+        "maximum_ml_per_day": 11207.122
+      },
+      "quality_screen_a_b": {
+        "count": 1520,
+        "mean_ml_per_day": 637.823,
+        "p10_ml_per_day": 186.679,
+        "p25_ml_per_day": 286.939,
+        "median_ml_per_day": 457.97,
+        "p75_ml_per_day": 771.219,
+        "p90_ml_per_day": 1260.734,
+        "p95_ml_per_day": 1847.244,
+        "maximum_ml_per_day": 5152.373
+      },
+      "quality_screen_a_b_share": 0.844444
+    },
+    {
+      "month": 10,
+      "month_name": "Oct",
+      "all_published": {
+        "count": 1860,
+        "mean_ml_per_day": 616.451,
+        "p10_ml_per_day": 111.924,
+        "p25_ml_per_day": 205.765,
+        "median_ml_per_day": 364.222,
+        "p75_ml_per_day": 645.224,
+        "p90_ml_per_day": 1279.673,
+        "p95_ml_per_day": 1940.737,
+        "maximum_ml_per_day": 15489.951
+      },
+      "quality_screen_a_b": {
+        "count": 1586,
+        "mean_ml_per_day": 533.858,
+        "p10_ml_per_day": 123.079,
+        "p25_ml_per_day": 215.528,
+        "median_ml_per_day": 360.078,
+        "p75_ml_per_day": 602.974,
+        "p90_ml_per_day": 1106.629,
+        "p95_ml_per_day": 1604.409,
+        "maximum_ml_per_day": 6701.204
+      },
+      "quality_screen_a_b_share": 0.852688
+    },
+    {
+      "month": 11,
+      "month_name": "Nov",
+      "all_published": {
+        "count": 1800,
+        "mean_ml_per_day": 421.743,
+        "p10_ml_per_day": 67.644,
+        "p25_ml_per_day": 138.804,
+        "median_ml_per_day": 251.685,
+        "p75_ml_per_day": 448.596,
+        "p90_ml_per_day": 788.738,
+        "p95_ml_per_day": 1233.724,
+        "maximum_ml_per_day": 12857.734
+      },
+      "quality_screen_a_b": {
+        "count": 1539,
+        "mean_ml_per_day": 356.379,
+        "p10_ml_per_day": 71.972,
+        "p25_ml_per_day": 139.409,
+        "median_ml_per_day": 250.737,
+        "p75_ml_per_day": 437.493,
+        "p90_ml_per_day": 696.948,
+        "p95_ml_per_day": 952.178,
+        "maximum_ml_per_day": 4967.733
+      },
+      "quality_screen_a_b_share": 0.855
+    },
+    {
+      "month": 12,
+      "month_name": "Dec",
+      "all_published": {
+        "count": 1860,
+        "mean_ml_per_day": 312.769,
+        "p10_ml_per_day": 40.946,
+        "p25_ml_per_day": 70.072,
+        "median_ml_per_day": 139.236,
+        "p75_ml_per_day": 303.075,
+        "p90_ml_per_day": 668.296,
+        "p95_ml_per_day": 1089.927,
+        "maximum_ml_per_day": 8655.898
+      },
+      "quality_screen_a_b": {
+        "count": 1549,
+        "mean_ml_per_day": 274.382,
+        "p10_ml_per_day": 40.004,
+        "p25_ml_per_day": 64.542,
+        "median_ml_per_day": 129.429,
+        "p75_ml_per_day": 279.422,
+        "p90_ml_per_day": 574.224,
+        "p95_ml_per_day": 928.003,
+        "maximum_ml_per_day": 7334.094
+      },
+      "quality_screen_a_b_share": 0.832796
+    }
+  ],
+  "seasonal_profile": [
+    {
+      "season": "Summer (DJF)",
+      "all_published": {
+        "count": 5415,
+        "mean_ml_per_day": 217.093,
+        "p10_ml_per_day": 31.364,
+        "p25_ml_per_day": 47.564,
+        "median_ml_per_day": 90.894,
+        "p75_ml_per_day": 199.069,
+        "p90_ml_per_day": 434.098,
+        "p95_ml_per_day": 743.208,
+        "maximum_ml_per_day": 17266.104
+      },
+      "quality_screen_a_b": {
+        "count": 4522,
+        "mean_ml_per_day": 184.364,
+        "p10_ml_per_day": 29.817,
+        "p25_ml_per_day": 45.706,
+        "median_ml_per_day": 81.217,
+        "p75_ml_per_day": 179.888,
+        "p90_ml_per_day": 374.369,
+        "p95_ml_per_day": 601.332,
+        "maximum_ml_per_day": 9749.185
+      },
+      "quality_screen_a_b_share": 0.835088
+    },
+    {
+      "season": "Autumn (MAM)",
+      "all_published": {
+        "count": 5520,
+        "mean_ml_per_day": 167.63,
+        "p10_ml_per_day": 29.204,
+        "p25_ml_per_day": 40.954,
+        "median_ml_per_day": 64.11,
+        "p75_ml_per_day": 127.615,
+        "p90_ml_per_day": 307.649,
+        "p95_ml_per_day": 520.84,
+        "maximum_ml_per_day": 17836.699
+      },
+      "quality_screen_a_b": {
+        "count": 4700,
+        "mean_ml_per_day": 140.813,
+        "p10_ml_per_day": 27.813,
+        "p25_ml_per_day": 38.967,
+        "median_ml_per_day": 59.703,
+        "p75_ml_per_day": 115.346,
+        "p90_ml_per_day": 263.74,
+        "p95_ml_per_day": 464.654,
+        "maximum_ml_per_day": 9758.862
+      },
+      "quality_screen_a_b_share": 0.851449
+    },
+    {
+      "season": "Winter (JJA)",
+      "all_published": {
+        "count": 5520,
+        "mean_ml_per_day": 477.465,
+        "p10_ml_per_day": 53.223,
+        "p25_ml_per_day": 97.547,
+        "median_ml_per_day": 210.344,
+        "p75_ml_per_day": 496.225,
+        "p90_ml_per_day": 1031.002,
+        "p95_ml_per_day": 1477.991,
+        "maximum_ml_per_day": 38352.186
+      },
+      "quality_screen_a_b": {
+        "count": 4605,
+        "mean_ml_per_day": 394.456,
+        "p10_ml_per_day": 51.322,
+        "p25_ml_per_day": 94.005,
+        "median_ml_per_day": 202.87,
+        "p75_ml_per_day": 443.498,
+        "p90_ml_per_day": 907.871,
+        "p95_ml_per_day": 1321.509,
+        "maximum_ml_per_day": 25583.446
+      },
+      "quality_screen_a_b_share": 0.834239
+    },
+    {
+      "season": "Spring (SON)",
+      "all_published": {
+        "count": 5460,
+        "mean_ml_per_day": 571.457,
+        "p10_ml_per_day": 99.526,
+        "p25_ml_per_day": 198.874,
+        "median_ml_per_day": 354.764,
+        "p75_ml_per_day": 634.92,
+        "p90_ml_per_day": 1167.308,
+        "p95_ml_per_day": 1836.729,
+        "maximum_ml_per_day": 15489.951
+      },
+      "quality_screen_a_b": {
+        "count": 4645,
+        "mean_ml_per_day": 509.076,
+        "p10_ml_per_day": 107.725,
+        "p25_ml_per_day": 205.808,
+        "median_ml_per_day": 354.591,
+        "p75_ml_per_day": 600.576,
+        "p90_ml_per_day": 1046.096,
+        "p95_ml_per_day": 1521.148,
+        "maximum_ml_per_day": 6701.204
+      },
+      "quality_screen_a_b_share": 0.850733
+    }
+  ],
+  "annual_profile_all": [
+    {
+      "year": 1964,
+      "calendar_day_count": 306,
+      "complete_calendar_year": false,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 292,
+        "C": 14,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 306,
+        "mean_ml_per_day": 909.195,
+        "p10_ml_per_day": 58.191,
+        "p25_ml_per_day": 127.075,
+        "median_ml_per_day": 326.122,
+        "p75_ml_per_day": 1209.166,
+        "p90_ml_per_day": 2370.983,
+        "p95_ml_per_day": 3336.821,
+        "maximum_ml_per_day": 8020.207
+      },
+      "quality_screen_a_b": {
+        "count": 292,
+        "mean_ml_per_day": 719.17,
+        "p10_ml_per_day": 56.714,
+        "p25_ml_per_day": 123.252,
+        "median_ml_per_day": 267.369,
+        "p75_ml_per_day": 1112.504,
+        "p90_ml_per_day": 2042.148,
+        "p95_ml_per_day": 2531.707,
+        "maximum_ml_per_day": 4819.123
+      },
+      "quality_screen_a_b_share": 0.954248
+    },
+    {
+      "year": 1965,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 144.615,
+        "p10_ml_per_day": 29.359,
+        "p25_ml_per_day": 37.671,
+        "median_ml_per_day": 68.775,
+        "p75_ml_per_day": 193.798,
+        "p90_ml_per_day": 344.776,
+        "p95_ml_per_day": 410.441,
+        "maximum_ml_per_day": 2270.196
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 144.615,
+        "p10_ml_per_day": 29.359,
+        "p25_ml_per_day": 37.671,
+        "median_ml_per_day": 68.775,
+        "p75_ml_per_day": 193.798,
+        "p90_ml_per_day": 344.776,
+        "p95_ml_per_day": 410.441,
+        "maximum_ml_per_day": 2270.196
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1966,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 361,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 423.357,
+        "p10_ml_per_day": 37.619,
+        "p25_ml_per_day": 61.863,
+        "median_ml_per_day": 188.441,
+        "p75_ml_per_day": 507.435,
+        "p90_ml_per_day": 815.456,
+        "p95_ml_per_day": 1080.708,
+        "maximum_ml_per_day": 12857.734
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 340.885,
+        "p10_ml_per_day": 37.585,
+        "p25_ml_per_day": 61.777,
+        "median_ml_per_day": 185.417,
+        "p75_ml_per_day": 496.721,
+        "p90_ml_per_day": 791.177,
+        "p95_ml_per_day": 1004.675,
+        "maximum_ml_per_day": 3976.105
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 1967,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 94.237,
+        "p10_ml_per_day": 34.906,
+        "p25_ml_per_day": 42.596,
+        "median_ml_per_day": 60.395,
+        "p75_ml_per_day": 114.914,
+        "p90_ml_per_day": 208.158,
+        "p95_ml_per_day": 264.198,
+        "maximum_ml_per_day": 717.995
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 94.237,
+        "p10_ml_per_day": 34.906,
+        "p25_ml_per_day": 42.596,
+        "median_ml_per_day": 60.395,
+        "p75_ml_per_day": 114.914,
+        "p90_ml_per_day": 208.158,
+        "p95_ml_per_day": 264.198,
+        "maximum_ml_per_day": 717.995
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1968,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 366,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 219.446,
+        "p10_ml_per_day": 16.848,
+        "p25_ml_per_day": 61.194,
+        "median_ml_per_day": 148.481,
+        "p75_ml_per_day": 300.31,
+        "p90_ml_per_day": 479.009,
+        "p95_ml_per_day": 645.613,
+        "maximum_ml_per_day": 1959.842
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 219.446,
+        "p10_ml_per_day": 16.848,
+        "p25_ml_per_day": 61.194,
+        "median_ml_per_day": 148.481,
+        "p75_ml_per_day": 300.31,
+        "p90_ml_per_day": 479.009,
+        "p95_ml_per_day": 645.613,
+        "maximum_ml_per_day": 1959.842
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1969,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 361,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 407.792,
+        "p10_ml_per_day": 49.957,
+        "p25_ml_per_day": 134.527,
+        "median_ml_per_day": 298.344,
+        "p75_ml_per_day": 463.111,
+        "p90_ml_per_day": 757.36,
+        "p95_ml_per_day": 1027.278,
+        "maximum_ml_per_day": 5822.416
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 363.234,
+        "p10_ml_per_day": 49.854,
+        "p25_ml_per_day": 134.268,
+        "median_ml_per_day": 289.185,
+        "p75_ml_per_day": 455.162,
+        "p90_ml_per_day": 743.743,
+        "p95_ml_per_day": 924.84,
+        "maximum_ml_per_day": 2969.961
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 1970,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 361,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 411.641,
+        "p10_ml_per_day": 48.938,
+        "p25_ml_per_day": 96.683,
+        "median_ml_per_day": 218.163,
+        "p75_ml_per_day": 494.302,
+        "p90_ml_per_day": 853.749,
+        "p95_ml_per_day": 1324.239,
+        "maximum_ml_per_day": 5139.845
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 371.454,
+        "p10_ml_per_day": 48.73,
+        "p25_ml_per_day": 96.51,
+        "median_ml_per_day": 210.387,
+        "p75_ml_per_day": 463.889,
+        "p90_ml_per_day": 811.914,
+        "p95_ml_per_day": 1117.775,
+        "maximum_ml_per_day": 3378.034
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 1971,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 316,
+        "B": 39,
+        "C": 10,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 455.597,
+        "p10_ml_per_day": 136.134,
+        "p25_ml_per_day": 174.444,
+        "median_ml_per_day": 237.517,
+        "p75_ml_per_day": 397.533,
+        "p90_ml_per_day": 700.56,
+        "p95_ml_per_day": 1048.066,
+        "maximum_ml_per_day": 17266.104
+      },
+      "quality_screen_a_b": {
+        "count": 355,
+        "mean_ml_per_day": 330.038,
+        "p10_ml_per_day": 135.322,
+        "p25_ml_per_day": 172.889,
+        "median_ml_per_day": 232.333,
+        "p75_ml_per_day": 377.833,
+        "p90_ml_per_day": 594.148,
+        "p95_ml_per_day": 809.996,
+        "maximum_ml_per_day": 3230.029
+      },
+      "quality_screen_a_b_share": 0.972603
+    },
+    {
+      "year": 1972,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 1,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 210.785,
+        "p10_ml_per_day": 71.886,
+        "p25_ml_per_day": 90.657,
+        "median_ml_per_day": 157.466,
+        "p75_ml_per_day": 259.658,
+        "p90_ml_per_day": 426.132,
+        "p95_ml_per_day": 576.081,
+        "maximum_ml_per_day": 1076.302
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 209.595,
+        "p10_ml_per_day": 71.851,
+        "p25_ml_per_day": 90.549,
+        "median_ml_per_day": 157.25,
+        "p75_ml_per_day": 259.463,
+        "p90_ml_per_day": 425.423,
+        "p95_ml_per_day": 569.402,
+        "maximum_ml_per_day": 1076.302
+      },
+      "quality_screen_a_b_share": 0.997268
+    },
+    {
+      "year": 1973,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 362,
+        "B": 0,
+        "C": 3,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 215.0,
+        "p10_ml_per_day": 24.555,
+        "p25_ml_per_day": 39.831,
+        "median_ml_per_day": 114.827,
+        "p75_ml_per_day": 263.87,
+        "p90_ml_per_day": 563.786,
+        "p95_ml_per_day": 793.165,
+        "maximum_ml_per_day": 2426.064
+      },
+      "quality_screen_a_b": {
+        "count": 362,
+        "mean_ml_per_day": 201.979,
+        "p10_ml_per_day": 24.348,
+        "p25_ml_per_day": 39.572,
+        "median_ml_per_day": 114.482,
+        "p75_ml_per_day": 257.001,
+        "p90_ml_per_day": 533.874,
+        "p95_ml_per_day": 729.249,
+        "maximum_ml_per_day": 1369.116
+      },
+      "quality_screen_a_b_share": 0.991781
+    },
+    {
+      "year": 1974,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 286,
+        "B": 0,
+        "C": 51,
+        "E": 28,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 1214.35,
+        "p10_ml_per_day": 60.533,
+        "p25_ml_per_day": 152.153,
+        "median_ml_per_day": 693.889,
+        "p75_ml_per_day": 1250.055,
+        "p90_ml_per_day": 2095.268,
+        "p95_ml_per_day": 3393.725,
+        "maximum_ml_per_day": 38352.186
+      },
+      "quality_screen_a_b": {
+        "count": 286,
+        "mean_ml_per_day": 682.87,
+        "p10_ml_per_day": 53.31,
+        "p25_ml_per_day": 109.967,
+        "median_ml_per_day": 605.89,
+        "p75_ml_per_day": 1053.751,
+        "p90_ml_per_day": 1364.71,
+        "p95_ml_per_day": 1718.502,
+        "maximum_ml_per_day": 2763.116
+      },
+      "quality_screen_a_b_share": 0.783562
+    },
+    {
+      "year": 1975,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 153,
+        "B": 23,
+        "C": 28,
+        "E": 161,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 922.829,
+        "p10_ml_per_day": 92.605,
+        "p25_ml_per_day": 139.452,
+        "median_ml_per_day": 348.37,
+        "p75_ml_per_day": 983.68,
+        "p90_ml_per_day": 2090.585,
+        "p95_ml_per_day": 3807.674,
+        "maximum_ml_per_day": 21078.219
+      },
+      "quality_screen_a_b": {
+        "count": 176,
+        "mean_ml_per_day": 869.012,
+        "p10_ml_per_day": 78.496,
+        "p25_ml_per_day": 441.619,
+        "median_ml_per_day": 764.739,
+        "p75_ml_per_day": 1122.289,
+        "p90_ml_per_day": 1670.009,
+        "p95_ml_per_day": 2081.755,
+        "maximum_ml_per_day": 3012.557
+      },
+      "quality_screen_a_b_share": 0.482192
+    },
+    {
+      "year": 1976,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 89,
+        "B": 0,
+        "C": 4,
+        "E": 273,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 397.171,
+        "p10_ml_per_day": 101.781,
+        "p25_ml_per_day": 117.16,
+        "median_ml_per_day": 158.503,
+        "p75_ml_per_day": 290.805,
+        "p90_ml_per_day": 487.909,
+        "p95_ml_per_day": 966.248,
+        "maximum_ml_per_day": 15489.951
+      },
+      "quality_screen_a_b": {
+        "count": 89,
+        "mean_ml_per_day": 627.543,
+        "p10_ml_per_day": 112.477,
+        "p25_ml_per_day": 153.881,
+        "median_ml_per_day": 386.214,
+        "p75_ml_per_day": 780.032,
+        "p90_ml_per_day": 1322.978,
+        "p95_ml_per_day": 1818.611,
+        "maximum_ml_per_day": 5249.143
+      },
+      "quality_screen_a_b_share": 0.243169
+    },
+    {
+      "year": 1977,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 164.284,
+        "p10_ml_per_day": 43.304,
+        "p25_ml_per_day": 65.838,
+        "median_ml_per_day": 118.715,
+        "p75_ml_per_day": 214.88,
+        "p90_ml_per_day": 338.97,
+        "p95_ml_per_day": 420.861,
+        "maximum_ml_per_day": 1087.88
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 164.284,
+        "p10_ml_per_day": 43.304,
+        "p25_ml_per_day": 65.838,
+        "median_ml_per_day": 118.715,
+        "p75_ml_per_day": 214.88,
+        "p90_ml_per_day": 338.97,
+        "p95_ml_per_day": 420.861,
+        "maximum_ml_per_day": 1087.88
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1978,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 357,
+        "B": 0,
+        "C": 8,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 981.294,
+        "p10_ml_per_day": 33.714,
+        "p25_ml_per_day": 199.069,
+        "median_ml_per_day": 494.475,
+        "p75_ml_per_day": 1179.552,
+        "p90_ml_per_day": 2201.559,
+        "p95_ml_per_day": 3473.577,
+        "maximum_ml_per_day": 11207.122
+      },
+      "quality_screen_a_b": {
+        "count": 357,
+        "mean_ml_per_day": 832.413,
+        "p10_ml_per_day": 32.988,
+        "p25_ml_per_day": 192.502,
+        "median_ml_per_day": 482.724,
+        "p75_ml_per_day": 1122.095,
+        "p90_ml_per_day": 2034.407,
+        "p95_ml_per_day": 2624.684,
+        "maximum_ml_per_day": 6060.019
+      },
+      "quality_screen_a_b_share": 0.978082
+    },
+    {
+      "year": 1979,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 156.252,
+        "p10_ml_per_day": 48.765,
+        "p25_ml_per_day": 83.55,
+        "median_ml_per_day": 97.979,
+        "p75_ml_per_day": 185.417,
+        "p90_ml_per_day": 285.626,
+        "p95_ml_per_day": 423.021,
+        "maximum_ml_per_day": 1665.473
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 156.252,
+        "p10_ml_per_day": 48.765,
+        "p25_ml_per_day": 83.55,
+        "median_ml_per_day": 97.979,
+        "p75_ml_per_day": 185.417,
+        "p90_ml_per_day": 285.626,
+        "p95_ml_per_day": 423.021,
+        "maximum_ml_per_day": 1665.473
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1980,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 366,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 115.842,
+        "p10_ml_per_day": 25.229,
+        "p25_ml_per_day": 35.273,
+        "median_ml_per_day": 70.288,
+        "p75_ml_per_day": 149.626,
+        "p90_ml_per_day": 270.998,
+        "p95_ml_per_day": 343.834,
+        "maximum_ml_per_day": 868.679
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 115.842,
+        "p10_ml_per_day": 25.229,
+        "p25_ml_per_day": 35.273,
+        "median_ml_per_day": 70.288,
+        "p75_ml_per_day": 149.626,
+        "p90_ml_per_day": 270.998,
+        "p95_ml_per_day": 343.834,
+        "maximum_ml_per_day": 868.679
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1981,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 284.406,
+        "p10_ml_per_day": 36.582,
+        "p25_ml_per_day": 50.631,
+        "median_ml_per_day": 115.173,
+        "p75_ml_per_day": 405.05,
+        "p90_ml_per_day": 805.364,
+        "p95_ml_per_day": 1121.352,
+        "maximum_ml_per_day": 1862.986
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 284.406,
+        "p10_ml_per_day": 36.582,
+        "p25_ml_per_day": 50.631,
+        "median_ml_per_day": 115.173,
+        "p75_ml_per_day": 405.05,
+        "p90_ml_per_day": 805.364,
+        "p95_ml_per_day": 1121.352,
+        "maximum_ml_per_day": 1862.986
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1982,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 41.711,
+        "p10_ml_per_day": 25.661,
+        "p25_ml_per_day": 29.376,
+        "median_ml_per_day": 36.461,
+        "p75_ml_per_day": 49.076,
+        "p90_ml_per_day": 64.507,
+        "p95_ml_per_day": 70.141,
+        "maximum_ml_per_day": 185.072
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 41.711,
+        "p10_ml_per_day": 25.661,
+        "p25_ml_per_day": 29.376,
+        "median_ml_per_day": 36.461,
+        "p75_ml_per_day": 49.076,
+        "p90_ml_per_day": 64.507,
+        "p95_ml_per_day": 70.141,
+        "maximum_ml_per_day": 185.072
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1983,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 364,
+        "B": 0,
+        "C": 1,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 317.81,
+        "p10_ml_per_day": 14.36,
+        "p25_ml_per_day": 44.151,
+        "median_ml_per_day": 225.248,
+        "p75_ml_per_day": 456.718,
+        "p90_ml_per_day": 727.793,
+        "p95_ml_per_day": 908.597,
+        "maximum_ml_per_day": 2205.481
+      },
+      "quality_screen_a_b": {
+        "count": 364,
+        "mean_ml_per_day": 312.624,
+        "p10_ml_per_day": 14.334,
+        "p25_ml_per_day": 44.0,
+        "median_ml_per_day": 225.162,
+        "p75_ml_per_day": 456.523,
+        "p90_ml_per_day": 721.676,
+        "p95_ml_per_day": 869.604,
+        "maximum_ml_per_day": 1981.011
+      },
+      "quality_screen_a_b_share": 0.99726
+    },
+    {
+      "year": 1984,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 364,
+        "B": 0,
+        "C": 2,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 546.734,
+        "p10_ml_per_day": 92.493,
+        "p25_ml_per_day": 142.562,
+        "median_ml_per_day": 227.149,
+        "p75_ml_per_day": 633.279,
+        "p90_ml_per_day": 1448.908,
+        "p95_ml_per_day": 1996.109,
+        "maximum_ml_per_day": 6537.992
+      },
+      "quality_screen_a_b": {
+        "count": 364,
+        "mean_ml_per_day": 517.334,
+        "p10_ml_per_day": 92.337,
+        "p25_ml_per_day": 142.519,
+        "median_ml_per_day": 225.162,
+        "p75_ml_per_day": 582.799,
+        "p90_ml_per_day": 1414.494,
+        "p95_ml_per_day": 1959.199,
+        "maximum_ml_per_day": 4324.389
+      },
+      "quality_screen_a_b_share": 0.994536
+    },
+    {
+      "year": 1985,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 245.834,
+        "p10_ml_per_day": 31.606,
+        "p25_ml_per_day": 48.298,
+        "median_ml_per_day": 93.745,
+        "p75_ml_per_day": 319.771,
+        "p90_ml_per_day": 568.175,
+        "p95_ml_per_day": 734.982,
+        "maximum_ml_per_day": 4967.733
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 245.834,
+        "p10_ml_per_day": 31.606,
+        "p25_ml_per_day": 48.298,
+        "median_ml_per_day": 93.745,
+        "p75_ml_per_day": 319.771,
+        "p90_ml_per_day": 568.175,
+        "p95_ml_per_day": 734.982,
+        "maximum_ml_per_day": 4967.733
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1986,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 254.614,
+        "p10_ml_per_day": 36.807,
+        "p25_ml_per_day": 44.583,
+        "median_ml_per_day": 121.653,
+        "p75_ml_per_day": 307.157,
+        "p90_ml_per_day": 568.417,
+        "p95_ml_per_day": 853.075,
+        "maximum_ml_per_day": 4606.576
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 254.614,
+        "p10_ml_per_day": 36.807,
+        "p25_ml_per_day": 44.583,
+        "median_ml_per_day": 121.653,
+        "p75_ml_per_day": 307.157,
+        "p90_ml_per_day": 568.417,
+        "p95_ml_per_day": 853.075,
+        "maximum_ml_per_day": 4606.576
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1987,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 134.726,
+        "p10_ml_per_day": 47.417,
+        "p25_ml_per_day": 58.667,
+        "median_ml_per_day": 99.534,
+        "p75_ml_per_day": 180.147,
+        "p90_ml_per_day": 297.255,
+        "p95_ml_per_day": 322.087,
+        "maximum_ml_per_day": 644.727
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 134.726,
+        "p10_ml_per_day": 47.417,
+        "p25_ml_per_day": 58.667,
+        "median_ml_per_day": 99.534,
+        "p75_ml_per_day": 180.147,
+        "p90_ml_per_day": 297.255,
+        "p95_ml_per_day": 322.087,
+        "maximum_ml_per_day": 644.727
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1988,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 359,
+        "B": 0,
+        "C": 7,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 530.211,
+        "p10_ml_per_day": 41.429,
+        "p25_ml_per_day": 65.082,
+        "median_ml_per_day": 348.068,
+        "p75_ml_per_day": 619.995,
+        "p90_ml_per_day": 1097.643,
+        "p95_ml_per_day": 1566.392,
+        "maximum_ml_per_day": 12401.102
+      },
+      "quality_screen_a_b": {
+        "count": 359,
+        "mean_ml_per_day": 438.633,
+        "p10_ml_per_day": 41.213,
+        "p25_ml_per_day": 64.499,
+        "median_ml_per_day": 331.695,
+        "p75_ml_per_day": 593.664,
+        "p90_ml_per_day": 994.653,
+        "p95_ml_per_day": 1479.58,
+        "maximum_ml_per_day": 2871.636
+      },
+      "quality_screen_a_b_share": 0.980874
+    },
+    {
+      "year": 1989,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 363,
+        "B": 0,
+        "C": 2,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 538.662,
+        "p10_ml_per_day": 95.404,
+        "p25_ml_per_day": 234.234,
+        "median_ml_per_day": 426.045,
+        "p75_ml_per_day": 662.526,
+        "p90_ml_per_day": 1066.59,
+        "p95_ml_per_day": 1420.231,
+        "maximum_ml_per_day": 3859.031
+      },
+      "quality_screen_a_b": {
+        "count": 363,
+        "mean_ml_per_day": 522.639,
+        "p10_ml_per_day": 95.18,
+        "p25_ml_per_day": 233.284,
+        "median_ml_per_day": 425.959,
+        "p75_ml_per_day": 657.644,
+        "p90_ml_per_day": 1046.165,
+        "p95_ml_per_day": 1405.811,
+        "maximum_ml_per_day": 3223.722
+      },
+      "quality_screen_a_b_share": 0.994521
+    },
+    {
+      "year": 1990,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 362,
+        "B": 0,
+        "C": 3,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 506.309,
+        "p10_ml_per_day": 52.152,
+        "p25_ml_per_day": 94.177,
+        "median_ml_per_day": 275.361,
+        "p75_ml_per_day": 726.808,
+        "p90_ml_per_day": 1275.647,
+        "p95_ml_per_day": 1690.374,
+        "maximum_ml_per_day": 3499.515
+      },
+      "quality_screen_a_b": {
+        "count": 362,
+        "mean_ml_per_day": 485.539,
+        "p10_ml_per_day": 52.048,
+        "p25_ml_per_day": 93.659,
+        "median_ml_per_day": 263.438,
+        "p75_ml_per_day": 723.611,
+        "p90_ml_per_day": 1240.646,
+        "p95_ml_per_day": 1587.841,
+        "maximum_ml_per_day": 2853.665
+      },
+      "quality_screen_a_b_share": 0.991781
+    },
+    {
+      "year": 1991,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 361,
+        "B": 0,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 689.959,
+        "p10_ml_per_day": 43.477,
+        "p25_ml_per_day": 59.185,
+        "median_ml_per_day": 117.938,
+        "p75_ml_per_day": 589.776,
+        "p90_ml_per_day": 1621.287,
+        "p95_ml_per_day": 2010.111,
+        "maximum_ml_per_day": 25583.446
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 594.093,
+        "p10_ml_per_day": 43.373,
+        "p25_ml_per_day": 59.185,
+        "median_ml_per_day": 112.927,
+        "p75_ml_per_day": 570.076,
+        "p90_ml_per_day": 1545.634,
+        "p95_ml_per_day": 1880.785,
+        "maximum_ml_per_day": 25583.446
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 1992,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 366,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 726.469,
+        "p10_ml_per_day": 93.357,
+        "p25_ml_per_day": 126.794,
+        "median_ml_per_day": 319.339,
+        "p75_ml_per_day": 847.9,
+        "p90_ml_per_day": 1576.393,
+        "p95_ml_per_day": 2629.95,
+        "maximum_ml_per_day": 9749.185
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 726.469,
+        "p10_ml_per_day": 93.357,
+        "p25_ml_per_day": 126.794,
+        "median_ml_per_day": 319.339,
+        "p75_ml_per_day": 847.9,
+        "p90_ml_per_day": 1576.393,
+        "p95_ml_per_day": 2629.95,
+        "maximum_ml_per_day": 9749.185
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1993,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 290.308,
+        "p10_ml_per_day": 86.453,
+        "p25_ml_per_day": 111.976,
+        "median_ml_per_day": 203.302,
+        "p75_ml_per_day": 350.962,
+        "p90_ml_per_day": 571.303,
+        "p95_ml_per_day": 767.503,
+        "maximum_ml_per_day": 3154.773
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 290.308,
+        "p10_ml_per_day": 86.453,
+        "p25_ml_per_day": 111.976,
+        "median_ml_per_day": 203.302,
+        "p75_ml_per_day": 350.962,
+        "p90_ml_per_day": 571.303,
+        "p95_ml_per_day": 767.503,
+        "maximum_ml_per_day": 3154.773
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1994,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 95.026,
+        "p10_ml_per_day": 46.951,
+        "p25_ml_per_day": 58.148,
+        "median_ml_per_day": 82.773,
+        "p75_ml_per_day": 106.446,
+        "p90_ml_per_day": 158.235,
+        "p95_ml_per_day": 213.446,
+        "maximum_ml_per_day": 422.157
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 95.026,
+        "p10_ml_per_day": 46.951,
+        "p25_ml_per_day": 58.148,
+        "median_ml_per_day": 82.773,
+        "p75_ml_per_day": 106.446,
+        "p90_ml_per_day": 158.235,
+        "p95_ml_per_day": 213.446,
+        "maximum_ml_per_day": 422.157
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1995,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 432.827,
+        "p10_ml_per_day": 46.605,
+        "p25_ml_per_day": 82.254,
+        "median_ml_per_day": 329.103,
+        "p75_ml_per_day": 468.814,
+        "p90_ml_per_day": 767.313,
+        "p95_ml_per_day": 1149.415,
+        "maximum_ml_per_day": 6701.204
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 432.827,
+        "p10_ml_per_day": 46.605,
+        "p25_ml_per_day": 82.254,
+        "median_ml_per_day": 329.103,
+        "p75_ml_per_day": 468.814,
+        "p90_ml_per_day": 767.313,
+        "p95_ml_per_day": 1149.415,
+        "maximum_ml_per_day": 6701.204
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1996,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 262,
+        "B": 104,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 356.957,
+        "p10_ml_per_day": 69.596,
+        "p25_ml_per_day": 95.927,
+        "median_ml_per_day": 193.15,
+        "p75_ml_per_day": 418.679,
+        "p90_ml_per_day": 745.039,
+        "p95_ml_per_day": 1229.816,
+        "maximum_ml_per_day": 3923.054
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 356.957,
+        "p10_ml_per_day": 69.596,
+        "p25_ml_per_day": 95.927,
+        "median_ml_per_day": 193.15,
+        "p75_ml_per_day": 418.679,
+        "p90_ml_per_day": 745.039,
+        "p95_ml_per_day": 1229.816,
+        "maximum_ml_per_day": 3923.054
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1997,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 205.123,
+        "p10_ml_per_day": 38.656,
+        "p25_ml_per_day": 50.026,
+        "median_ml_per_day": 92.017,
+        "p75_ml_per_day": 238.122,
+        "p90_ml_per_day": 390.828,
+        "p95_ml_per_day": 515.643,
+        "maximum_ml_per_day": 9678.336
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 205.123,
+        "p10_ml_per_day": 38.656,
+        "p25_ml_per_day": 50.026,
+        "median_ml_per_day": 92.017,
+        "p75_ml_per_day": 238.122,
+        "p90_ml_per_day": 390.828,
+        "p95_ml_per_day": 515.643,
+        "maximum_ml_per_day": 9678.336
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1998,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 353.708,
+        "p10_ml_per_day": 28.841,
+        "p25_ml_per_day": 45.274,
+        "median_ml_per_day": 105.237,
+        "p75_ml_per_day": 358.738,
+        "p90_ml_per_day": 680.549,
+        "p95_ml_per_day": 1017.687,
+        "maximum_ml_per_day": 13801.928
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 353.708,
+        "p10_ml_per_day": 28.841,
+        "p25_ml_per_day": 45.274,
+        "median_ml_per_day": 105.237,
+        "p75_ml_per_day": 358.738,
+        "p90_ml_per_day": 680.549,
+        "p95_ml_per_day": 1017.687,
+        "maximum_ml_per_day": 13801.928
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1999,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 137.564,
+        "p10_ml_per_day": 39.347,
+        "p25_ml_per_day": 55.124,
+        "median_ml_per_day": 91.499,
+        "p75_ml_per_day": 167.705,
+        "p90_ml_per_day": 301.886,
+        "p95_ml_per_day": 387.527,
+        "maximum_ml_per_day": 698.296
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 137.564,
+        "p10_ml_per_day": 39.347,
+        "p25_ml_per_day": 55.124,
+        "median_ml_per_day": 91.499,
+        "p75_ml_per_day": 167.705,
+        "p90_ml_per_day": 301.886,
+        "p95_ml_per_day": 387.527,
+        "maximum_ml_per_day": 698.296
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2000,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 366,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 226.52,
+        "p10_ml_per_day": 43.719,
+        "p25_ml_per_day": 60.935,
+        "median_ml_per_day": 130.12,
+        "p75_ml_per_day": 344.612,
+        "p90_ml_per_day": 507.435,
+        "p95_ml_per_day": 663.995,
+        "maximum_ml_per_day": 1641.453
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 226.52,
+        "p10_ml_per_day": 43.719,
+        "p25_ml_per_day": 60.935,
+        "median_ml_per_day": 130.12,
+        "p75_ml_per_day": 344.612,
+        "p90_ml_per_day": 507.435,
+        "p95_ml_per_day": 663.995,
+        "maximum_ml_per_day": 1641.453
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2001,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 173.104,
+        "p10_ml_per_day": 22.309,
+        "p25_ml_per_day": 28.512,
+        "median_ml_per_day": 70.417,
+        "p75_ml_per_day": 213.066,
+        "p90_ml_per_day": 364.908,
+        "p95_ml_per_day": 795.221,
+        "maximum_ml_per_day": 2290.068
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 173.104,
+        "p10_ml_per_day": 22.309,
+        "p25_ml_per_day": 28.512,
+        "median_ml_per_day": 70.417,
+        "p75_ml_per_day": 213.066,
+        "p90_ml_per_day": 364.908,
+        "p95_ml_per_day": 795.221,
+        "maximum_ml_per_day": 2290.068
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2002,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 165.727,
+        "p10_ml_per_day": 33.921,
+        "p25_ml_per_day": 56.852,
+        "median_ml_per_day": 99.794,
+        "p75_ml_per_day": 220.583,
+        "p90_ml_per_day": 298.949,
+        "p95_ml_per_day": 432.698,
+        "maximum_ml_per_day": 2007.622
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 165.727,
+        "p10_ml_per_day": 33.921,
+        "p25_ml_per_day": 56.852,
+        "median_ml_per_day": 99.794,
+        "p75_ml_per_day": 220.583,
+        "p90_ml_per_day": 298.949,
+        "p95_ml_per_day": 432.698,
+        "maximum_ml_per_day": 2007.622
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2003,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 169.611,
+        "p10_ml_per_day": 30.31,
+        "p25_ml_per_day": 37.239,
+        "median_ml_per_day": 60.74,
+        "p75_ml_per_day": 214.88,
+        "p90_ml_per_day": 384.745,
+        "p95_ml_per_day": 653.661,
+        "maximum_ml_per_day": 2034.493
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 169.611,
+        "p10_ml_per_day": 30.31,
+        "p25_ml_per_day": 37.239,
+        "median_ml_per_day": 60.74,
+        "p75_ml_per_day": 214.88,
+        "p90_ml_per_day": 384.745,
+        "p95_ml_per_day": 653.661,
+        "maximum_ml_per_day": 2034.493
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2004,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 178,
+        "B": 186,
+        "C": 2,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 127.008,
+        "p10_ml_per_day": 36.073,
+        "p25_ml_per_day": 41.602,
+        "median_ml_per_day": 62.684,
+        "p75_ml_per_day": 140.942,
+        "p90_ml_per_day": 305.947,
+        "p95_ml_per_day": 464.105,
+        "maximum_ml_per_day": 924.063
+      },
+      "quality_screen_a_b": {
+        "count": 364,
+        "mean_ml_per_day": 126.572,
+        "p10_ml_per_day": 36.055,
+        "p25_ml_per_day": 41.537,
+        "median_ml_per_day": 62.598,
+        "p75_ml_per_day": 137.119,
+        "p90_ml_per_day": 306.362,
+        "p95_ml_per_day": 464.813,
+        "maximum_ml_per_day": 924.063
+      },
+      "quality_screen_a_b_share": 0.994536
+    },
+    {
+      "year": 2005,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 354,
+        "B": 11,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 225.081,
+        "p10_ml_per_day": 23.052,
+        "p25_ml_per_day": 33.869,
+        "median_ml_per_day": 106.878,
+        "p75_ml_per_day": 331.522,
+        "p90_ml_per_day": 536.121,
+        "p95_ml_per_day": 737.367,
+        "maximum_ml_per_day": 1953.881
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 225.081,
+        "p10_ml_per_day": 23.052,
+        "p25_ml_per_day": 33.869,
+        "median_ml_per_day": 106.878,
+        "p75_ml_per_day": 331.522,
+        "p90_ml_per_day": 536.121,
+        "p95_ml_per_day": 737.367,
+        "maximum_ml_per_day": 1953.881
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2006,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 358,
+        "B": 7,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 58.59,
+        "p10_ml_per_day": 19.164,
+        "p25_ml_per_day": 32.66,
+        "median_ml_per_day": 47.953,
+        "p75_ml_per_day": 81.131,
+        "p90_ml_per_day": 111.561,
+        "p95_ml_per_day": 136.756,
+        "maximum_ml_per_day": 192.07
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 58.59,
+        "p10_ml_per_day": 19.164,
+        "p25_ml_per_day": 32.66,
+        "median_ml_per_day": 47.953,
+        "p75_ml_per_day": 81.131,
+        "p90_ml_per_day": 111.561,
+        "p95_ml_per_day": 136.756,
+        "maximum_ml_per_day": 192.07
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2007,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 225,
+        "B": 140,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 138.506,
+        "p10_ml_per_day": 10.766,
+        "p25_ml_per_day": 28.08,
+        "median_ml_per_day": 130.38,
+        "p75_ml_per_day": 219.287,
+        "p90_ml_per_day": 279.629,
+        "p95_ml_per_day": 361.78,
+        "maximum_ml_per_day": 553.142
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 138.506,
+        "p10_ml_per_day": 10.766,
+        "p25_ml_per_day": 28.08,
+        "median_ml_per_day": 130.38,
+        "p75_ml_per_day": 219.287,
+        "p90_ml_per_day": 279.629,
+        "p95_ml_per_day": 361.78,
+        "maximum_ml_per_day": 553.142
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2008,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 330,
+        "B": 36,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 135.823,
+        "p10_ml_per_day": 41.861,
+        "p25_ml_per_day": 50.264,
+        "median_ml_per_day": 85.278,
+        "p75_ml_per_day": 187.383,
+        "p90_ml_per_day": 266.375,
+        "p95_ml_per_day": 360.639,
+        "maximum_ml_per_day": 1097.989
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 135.823,
+        "p10_ml_per_day": 41.861,
+        "p25_ml_per_day": 50.264,
+        "median_ml_per_day": 85.278,
+        "p75_ml_per_day": 187.383,
+        "p90_ml_per_day": 266.375,
+        "p95_ml_per_day": 360.639,
+        "maximum_ml_per_day": 1097.989
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2009,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 248,
+        "B": 117,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 116.816,
+        "p10_ml_per_day": 28.167,
+        "p25_ml_per_day": 37.239,
+        "median_ml_per_day": 55.47,
+        "p75_ml_per_day": 109.557,
+        "p90_ml_per_day": 305.878,
+        "p95_ml_per_day": 529.398,
+        "maximum_ml_per_day": 757.135
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 116.816,
+        "p10_ml_per_day": 28.167,
+        "p25_ml_per_day": 37.239,
+        "median_ml_per_day": 55.47,
+        "p75_ml_per_day": 109.557,
+        "p90_ml_per_day": 305.878,
+        "p95_ml_per_day": 529.398,
+        "maximum_ml_per_day": 757.135
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2010,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 187,
+        "B": 178,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 370.848,
+        "p10_ml_per_day": 30.068,
+        "p25_ml_per_day": 43.633,
+        "median_ml_per_day": 176.345,
+        "p75_ml_per_day": 472.788,
+        "p90_ml_per_day": 822.921,
+        "p95_ml_per_day": 1362.118,
+        "maximum_ml_per_day": 4772.639
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 370.848,
+        "p10_ml_per_day": 30.068,
+        "p25_ml_per_day": 43.633,
+        "median_ml_per_day": 176.345,
+        "p75_ml_per_day": 472.788,
+        "p90_ml_per_day": 822.921,
+        "p95_ml_per_day": 1362.118,
+        "maximum_ml_per_day": 4772.639
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2011,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 372.026,
+        "p10_ml_per_day": 85.468,
+        "p25_ml_per_day": 136.255,
+        "median_ml_per_day": 243.479,
+        "p75_ml_per_day": 426.045,
+        "p90_ml_per_day": 759.416,
+        "p95_ml_per_day": 1029.766,
+        "maximum_ml_per_day": 4371.65
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 372.026,
+        "p10_ml_per_day": 85.468,
+        "p25_ml_per_day": 136.255,
+        "median_ml_per_day": 243.479,
+        "p75_ml_per_day": 426.045,
+        "p90_ml_per_day": 759.416,
+        "p95_ml_per_day": 1029.766,
+        "maximum_ml_per_day": 4371.65
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2012,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 222,
+        "B": 143,
+        "C": 0,
+        "E": 1,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 654.809,
+        "p10_ml_per_day": 175.049,
+        "p25_ml_per_day": 233.111,
+        "median_ml_per_day": 377.012,
+        "p75_ml_per_day": 563.207,
+        "p90_ml_per_day": 912.01,
+        "p95_ml_per_day": 1540.709,
+        "maximum_ml_per_day": 17836.699
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 607.735,
+        "p10_ml_per_day": 174.79,
+        "p25_ml_per_day": 232.938,
+        "median_ml_per_day": 376.364,
+        "p75_ml_per_day": 559.967,
+        "p90_ml_per_day": 900.475,
+        "p95_ml_per_day": 1434.263,
+        "maximum_ml_per_day": 9758.862
+      },
+      "quality_screen_a_b_share": 0.997268
+    },
+    {
+      "year": 2013,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 255,
+        "B": 106,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 258.987,
+        "p10_ml_per_day": 58.096,
+        "p25_ml_per_day": 76.292,
+        "median_ml_per_day": 129.602,
+        "p75_ml_per_day": 305.947,
+        "p90_ml_per_day": 527.843,
+        "p95_ml_per_day": 657.566,
+        "maximum_ml_per_day": 5093.534
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 260.413,
+        "p10_ml_per_day": 58.062,
+        "p25_ml_per_day": 75.342,
+        "median_ml_per_day": 129.602,
+        "p75_ml_per_day": 310.095,
+        "p90_ml_per_day": 528.431,
+        "p95_ml_per_day": 665.377,
+        "maximum_ml_per_day": 5093.534
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 2014,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 356.634,
+        "p10_ml_per_day": 55.867,
+        "p25_ml_per_day": 119.493,
+        "median_ml_per_day": 250.305,
+        "p75_ml_per_day": 523.679,
+        "p90_ml_per_day": 763.978,
+        "p95_ml_per_day": 936.021,
+        "maximum_ml_per_day": 2062.401
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 356.634,
+        "p10_ml_per_day": 55.867,
+        "p25_ml_per_day": 119.493,
+        "median_ml_per_day": 250.305,
+        "p75_ml_per_day": 523.679,
+        "p90_ml_per_day": 763.978,
+        "p95_ml_per_day": 936.021,
+        "maximum_ml_per_day": 2062.401
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2015,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 51,
+        "B": 314,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 400.716,
+        "p10_ml_per_day": 63.851,
+        "p25_ml_per_day": 144.031,
+        "median_ml_per_day": 226.717,
+        "p75_ml_per_day": 450.497,
+        "p90_ml_per_day": 722.471,
+        "p95_ml_per_day": 1209.533,
+        "maximum_ml_per_day": 6713.3
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 400.716,
+        "p10_ml_per_day": 63.851,
+        "p25_ml_per_day": 144.031,
+        "median_ml_per_day": 226.717,
+        "p75_ml_per_day": 450.497,
+        "p90_ml_per_day": 722.471,
+        "p95_ml_per_day": 1209.533,
+        "maximum_ml_per_day": 6713.3
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2016,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 127,
+        "B": 31,
+        "C": 0,
+        "E": 208,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 631.75,
+        "p10_ml_per_day": 38.017,
+        "p25_ml_per_day": 54.476,
+        "median_ml_per_day": 190.256,
+        "p75_ml_per_day": 990.16,
+        "p90_ml_per_day": 1729.021,
+        "p95_ml_per_day": 2211.422,
+        "maximum_ml_per_day": 9458.877
+      },
+      "quality_screen_a_b": {
+        "count": 158,
+        "mean_ml_per_day": 121.866,
+        "p10_ml_per_day": 28.357,
+        "p25_ml_per_day": 39.183,
+        "median_ml_per_day": 51.538,
+        "p75_ml_per_day": 74.37,
+        "p90_ml_per_day": 179.784,
+        "p95_ml_per_day": 270.765,
+        "maximum_ml_per_day": 5259.77
+      },
+      "quality_screen_a_b_share": 0.431694
+    },
+    {
+      "year": 2017,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 228.832,
+        "p10_ml_per_day": 46.432,
+        "p25_ml_per_day": 65.665,
+        "median_ml_per_day": 113.877,
+        "p75_ml_per_day": 276.399,
+        "p90_ml_per_day": 509.095,
+        "p95_ml_per_day": 810.447,
+        "maximum_ml_per_day": 1948.096
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2018,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 85.992,
+        "p10_ml_per_day": 42.993,
+        "p25_ml_per_day": 48.126,
+        "median_ml_per_day": 59.444,
+        "p75_ml_per_day": 113.013,
+        "p90_ml_per_day": 156.283,
+        "p95_ml_per_day": 189.686,
+        "maximum_ml_per_day": 455.682
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2019,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 70.665,
+        "p10_ml_per_day": 33.213,
+        "p25_ml_per_day": 42.942,
+        "median_ml_per_day": 60.913,
+        "p75_ml_per_day": 85.883,
+        "p90_ml_per_day": 115.83,
+        "p95_ml_per_day": 139.124,
+        "maximum_ml_per_day": 685.51
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2020,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 366,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 301.976,
+        "p10_ml_per_day": 37.411,
+        "p25_ml_per_day": 62.51,
+        "median_ml_per_day": 142.733,
+        "p75_ml_per_day": 372.146,
+        "p90_ml_per_day": 713.318,
+        "p95_ml_per_day": 1180.397,
+        "maximum_ml_per_day": 2254.003
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2021,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 662.53,
+        "p10_ml_per_day": 81.734,
+        "p25_ml_per_day": 143.251,
+        "median_ml_per_day": 487.728,
+        "p75_ml_per_day": 850.522,
+        "p90_ml_per_day": 1291.939,
+        "p95_ml_per_day": 1742.481,
+        "maximum_ml_per_day": 8655.898
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2022,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 1215.456,
+        "p10_ml_per_day": 406.356,
+        "p25_ml_per_day": 578.966,
+        "median_ml_per_day": 900.029,
+        "p75_ml_per_day": 1454.112,
+        "p90_ml_per_day": 2286.351,
+        "p95_ml_per_day": 3306.908,
+        "maximum_ml_per_day": 8991.216
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2023,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 321.638,
+        "p10_ml_per_day": 118.593,
+        "p25_ml_per_day": 160.877,
+        "median_ml_per_day": 247.882,
+        "p75_ml_per_day": 370.138,
+        "p90_ml_per_day": 548.225,
+        "p95_ml_per_day": 798.889,
+        "maximum_ml_per_day": 2375.05
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2024,
+      "calendar_day_count": 60,
+      "complete_calendar_year": false,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 60,
+        "G": 0
+      },
+      "all_published": {
+        "count": 60,
+        "mean_ml_per_day": 337.71,
+        "p10_ml_per_day": 119.111,
+        "p25_ml_per_day": 152.69,
+        "median_ml_per_day": 292.075,
+        "p75_ml_per_day": 459.281,
+        "p90_ml_per_day": 717.129,
+        "p95_ml_per_day": 817.564,
+        "maximum_ml_per_day": 1008.72
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    }
+  ],
+  "annual_profile_complete_years": [
+    {
+      "year": 1965,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 144.615,
+        "p10_ml_per_day": 29.359,
+        "p25_ml_per_day": 37.671,
+        "median_ml_per_day": 68.775,
+        "p75_ml_per_day": 193.798,
+        "p90_ml_per_day": 344.776,
+        "p95_ml_per_day": 410.441,
+        "maximum_ml_per_day": 2270.196
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 144.615,
+        "p10_ml_per_day": 29.359,
+        "p25_ml_per_day": 37.671,
+        "median_ml_per_day": 68.775,
+        "p75_ml_per_day": 193.798,
+        "p90_ml_per_day": 344.776,
+        "p95_ml_per_day": 410.441,
+        "maximum_ml_per_day": 2270.196
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1966,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 361,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 423.357,
+        "p10_ml_per_day": 37.619,
+        "p25_ml_per_day": 61.863,
+        "median_ml_per_day": 188.441,
+        "p75_ml_per_day": 507.435,
+        "p90_ml_per_day": 815.456,
+        "p95_ml_per_day": 1080.708,
+        "maximum_ml_per_day": 12857.734
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 340.885,
+        "p10_ml_per_day": 37.585,
+        "p25_ml_per_day": 61.777,
+        "median_ml_per_day": 185.417,
+        "p75_ml_per_day": 496.721,
+        "p90_ml_per_day": 791.177,
+        "p95_ml_per_day": 1004.675,
+        "maximum_ml_per_day": 3976.105
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 1967,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 94.237,
+        "p10_ml_per_day": 34.906,
+        "p25_ml_per_day": 42.596,
+        "median_ml_per_day": 60.395,
+        "p75_ml_per_day": 114.914,
+        "p90_ml_per_day": 208.158,
+        "p95_ml_per_day": 264.198,
+        "maximum_ml_per_day": 717.995
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 94.237,
+        "p10_ml_per_day": 34.906,
+        "p25_ml_per_day": 42.596,
+        "median_ml_per_day": 60.395,
+        "p75_ml_per_day": 114.914,
+        "p90_ml_per_day": 208.158,
+        "p95_ml_per_day": 264.198,
+        "maximum_ml_per_day": 717.995
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1968,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 366,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 219.446,
+        "p10_ml_per_day": 16.848,
+        "p25_ml_per_day": 61.194,
+        "median_ml_per_day": 148.481,
+        "p75_ml_per_day": 300.31,
+        "p90_ml_per_day": 479.009,
+        "p95_ml_per_day": 645.613,
+        "maximum_ml_per_day": 1959.842
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 219.446,
+        "p10_ml_per_day": 16.848,
+        "p25_ml_per_day": 61.194,
+        "median_ml_per_day": 148.481,
+        "p75_ml_per_day": 300.31,
+        "p90_ml_per_day": 479.009,
+        "p95_ml_per_day": 645.613,
+        "maximum_ml_per_day": 1959.842
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1969,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 361,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 407.792,
+        "p10_ml_per_day": 49.957,
+        "p25_ml_per_day": 134.527,
+        "median_ml_per_day": 298.344,
+        "p75_ml_per_day": 463.111,
+        "p90_ml_per_day": 757.36,
+        "p95_ml_per_day": 1027.278,
+        "maximum_ml_per_day": 5822.416
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 363.234,
+        "p10_ml_per_day": 49.854,
+        "p25_ml_per_day": 134.268,
+        "median_ml_per_day": 289.185,
+        "p75_ml_per_day": 455.162,
+        "p90_ml_per_day": 743.743,
+        "p95_ml_per_day": 924.84,
+        "maximum_ml_per_day": 2969.961
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 1970,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 361,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 411.641,
+        "p10_ml_per_day": 48.938,
+        "p25_ml_per_day": 96.683,
+        "median_ml_per_day": 218.163,
+        "p75_ml_per_day": 494.302,
+        "p90_ml_per_day": 853.749,
+        "p95_ml_per_day": 1324.239,
+        "maximum_ml_per_day": 5139.845
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 371.454,
+        "p10_ml_per_day": 48.73,
+        "p25_ml_per_day": 96.51,
+        "median_ml_per_day": 210.387,
+        "p75_ml_per_day": 463.889,
+        "p90_ml_per_day": 811.914,
+        "p95_ml_per_day": 1117.775,
+        "maximum_ml_per_day": 3378.034
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 1971,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 316,
+        "B": 39,
+        "C": 10,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 455.597,
+        "p10_ml_per_day": 136.134,
+        "p25_ml_per_day": 174.444,
+        "median_ml_per_day": 237.517,
+        "p75_ml_per_day": 397.533,
+        "p90_ml_per_day": 700.56,
+        "p95_ml_per_day": 1048.066,
+        "maximum_ml_per_day": 17266.104
+      },
+      "quality_screen_a_b": {
+        "count": 355,
+        "mean_ml_per_day": 330.038,
+        "p10_ml_per_day": 135.322,
+        "p25_ml_per_day": 172.889,
+        "median_ml_per_day": 232.333,
+        "p75_ml_per_day": 377.833,
+        "p90_ml_per_day": 594.148,
+        "p95_ml_per_day": 809.996,
+        "maximum_ml_per_day": 3230.029
+      },
+      "quality_screen_a_b_share": 0.972603
+    },
+    {
+      "year": 1972,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 1,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 210.785,
+        "p10_ml_per_day": 71.886,
+        "p25_ml_per_day": 90.657,
+        "median_ml_per_day": 157.466,
+        "p75_ml_per_day": 259.658,
+        "p90_ml_per_day": 426.132,
+        "p95_ml_per_day": 576.081,
+        "maximum_ml_per_day": 1076.302
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 209.595,
+        "p10_ml_per_day": 71.851,
+        "p25_ml_per_day": 90.549,
+        "median_ml_per_day": 157.25,
+        "p75_ml_per_day": 259.463,
+        "p90_ml_per_day": 425.423,
+        "p95_ml_per_day": 569.402,
+        "maximum_ml_per_day": 1076.302
+      },
+      "quality_screen_a_b_share": 0.997268
+    },
+    {
+      "year": 1973,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 362,
+        "B": 0,
+        "C": 3,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 215.0,
+        "p10_ml_per_day": 24.555,
+        "p25_ml_per_day": 39.831,
+        "median_ml_per_day": 114.827,
+        "p75_ml_per_day": 263.87,
+        "p90_ml_per_day": 563.786,
+        "p95_ml_per_day": 793.165,
+        "maximum_ml_per_day": 2426.064
+      },
+      "quality_screen_a_b": {
+        "count": 362,
+        "mean_ml_per_day": 201.979,
+        "p10_ml_per_day": 24.348,
+        "p25_ml_per_day": 39.572,
+        "median_ml_per_day": 114.482,
+        "p75_ml_per_day": 257.001,
+        "p90_ml_per_day": 533.874,
+        "p95_ml_per_day": 729.249,
+        "maximum_ml_per_day": 1369.116
+      },
+      "quality_screen_a_b_share": 0.991781
+    },
+    {
+      "year": 1974,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 286,
+        "B": 0,
+        "C": 51,
+        "E": 28,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 1214.35,
+        "p10_ml_per_day": 60.533,
+        "p25_ml_per_day": 152.153,
+        "median_ml_per_day": 693.889,
+        "p75_ml_per_day": 1250.055,
+        "p90_ml_per_day": 2095.268,
+        "p95_ml_per_day": 3393.725,
+        "maximum_ml_per_day": 38352.186
+      },
+      "quality_screen_a_b": {
+        "count": 286,
+        "mean_ml_per_day": 682.87,
+        "p10_ml_per_day": 53.31,
+        "p25_ml_per_day": 109.967,
+        "median_ml_per_day": 605.89,
+        "p75_ml_per_day": 1053.751,
+        "p90_ml_per_day": 1364.71,
+        "p95_ml_per_day": 1718.502,
+        "maximum_ml_per_day": 2763.116
+      },
+      "quality_screen_a_b_share": 0.783562
+    },
+    {
+      "year": 1975,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 153,
+        "B": 23,
+        "C": 28,
+        "E": 161,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 922.829,
+        "p10_ml_per_day": 92.605,
+        "p25_ml_per_day": 139.452,
+        "median_ml_per_day": 348.37,
+        "p75_ml_per_day": 983.68,
+        "p90_ml_per_day": 2090.585,
+        "p95_ml_per_day": 3807.674,
+        "maximum_ml_per_day": 21078.219
+      },
+      "quality_screen_a_b": {
+        "count": 176,
+        "mean_ml_per_day": 869.012,
+        "p10_ml_per_day": 78.496,
+        "p25_ml_per_day": 441.619,
+        "median_ml_per_day": 764.739,
+        "p75_ml_per_day": 1122.289,
+        "p90_ml_per_day": 1670.009,
+        "p95_ml_per_day": 2081.755,
+        "maximum_ml_per_day": 3012.557
+      },
+      "quality_screen_a_b_share": 0.482192
+    },
+    {
+      "year": 1976,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 89,
+        "B": 0,
+        "C": 4,
+        "E": 273,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 397.171,
+        "p10_ml_per_day": 101.781,
+        "p25_ml_per_day": 117.16,
+        "median_ml_per_day": 158.503,
+        "p75_ml_per_day": 290.805,
+        "p90_ml_per_day": 487.909,
+        "p95_ml_per_day": 966.248,
+        "maximum_ml_per_day": 15489.951
+      },
+      "quality_screen_a_b": {
+        "count": 89,
+        "mean_ml_per_day": 627.543,
+        "p10_ml_per_day": 112.477,
+        "p25_ml_per_day": 153.881,
+        "median_ml_per_day": 386.214,
+        "p75_ml_per_day": 780.032,
+        "p90_ml_per_day": 1322.978,
+        "p95_ml_per_day": 1818.611,
+        "maximum_ml_per_day": 5249.143
+      },
+      "quality_screen_a_b_share": 0.243169
+    },
+    {
+      "year": 1977,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 164.284,
+        "p10_ml_per_day": 43.304,
+        "p25_ml_per_day": 65.838,
+        "median_ml_per_day": 118.715,
+        "p75_ml_per_day": 214.88,
+        "p90_ml_per_day": 338.97,
+        "p95_ml_per_day": 420.861,
+        "maximum_ml_per_day": 1087.88
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 164.284,
+        "p10_ml_per_day": 43.304,
+        "p25_ml_per_day": 65.838,
+        "median_ml_per_day": 118.715,
+        "p75_ml_per_day": 214.88,
+        "p90_ml_per_day": 338.97,
+        "p95_ml_per_day": 420.861,
+        "maximum_ml_per_day": 1087.88
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1978,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 357,
+        "B": 0,
+        "C": 8,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 981.294,
+        "p10_ml_per_day": 33.714,
+        "p25_ml_per_day": 199.069,
+        "median_ml_per_day": 494.475,
+        "p75_ml_per_day": 1179.552,
+        "p90_ml_per_day": 2201.559,
+        "p95_ml_per_day": 3473.577,
+        "maximum_ml_per_day": 11207.122
+      },
+      "quality_screen_a_b": {
+        "count": 357,
+        "mean_ml_per_day": 832.413,
+        "p10_ml_per_day": 32.988,
+        "p25_ml_per_day": 192.502,
+        "median_ml_per_day": 482.724,
+        "p75_ml_per_day": 1122.095,
+        "p90_ml_per_day": 2034.407,
+        "p95_ml_per_day": 2624.684,
+        "maximum_ml_per_day": 6060.019
+      },
+      "quality_screen_a_b_share": 0.978082
+    },
+    {
+      "year": 1979,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 156.252,
+        "p10_ml_per_day": 48.765,
+        "p25_ml_per_day": 83.55,
+        "median_ml_per_day": 97.979,
+        "p75_ml_per_day": 185.417,
+        "p90_ml_per_day": 285.626,
+        "p95_ml_per_day": 423.021,
+        "maximum_ml_per_day": 1665.473
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 156.252,
+        "p10_ml_per_day": 48.765,
+        "p25_ml_per_day": 83.55,
+        "median_ml_per_day": 97.979,
+        "p75_ml_per_day": 185.417,
+        "p90_ml_per_day": 285.626,
+        "p95_ml_per_day": 423.021,
+        "maximum_ml_per_day": 1665.473
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1980,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 366,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 115.842,
+        "p10_ml_per_day": 25.229,
+        "p25_ml_per_day": 35.273,
+        "median_ml_per_day": 70.288,
+        "p75_ml_per_day": 149.626,
+        "p90_ml_per_day": 270.998,
+        "p95_ml_per_day": 343.834,
+        "maximum_ml_per_day": 868.679
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 115.842,
+        "p10_ml_per_day": 25.229,
+        "p25_ml_per_day": 35.273,
+        "median_ml_per_day": 70.288,
+        "p75_ml_per_day": 149.626,
+        "p90_ml_per_day": 270.998,
+        "p95_ml_per_day": 343.834,
+        "maximum_ml_per_day": 868.679
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1981,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 284.406,
+        "p10_ml_per_day": 36.582,
+        "p25_ml_per_day": 50.631,
+        "median_ml_per_day": 115.173,
+        "p75_ml_per_day": 405.05,
+        "p90_ml_per_day": 805.364,
+        "p95_ml_per_day": 1121.352,
+        "maximum_ml_per_day": 1862.986
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 284.406,
+        "p10_ml_per_day": 36.582,
+        "p25_ml_per_day": 50.631,
+        "median_ml_per_day": 115.173,
+        "p75_ml_per_day": 405.05,
+        "p90_ml_per_day": 805.364,
+        "p95_ml_per_day": 1121.352,
+        "maximum_ml_per_day": 1862.986
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1982,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 41.711,
+        "p10_ml_per_day": 25.661,
+        "p25_ml_per_day": 29.376,
+        "median_ml_per_day": 36.461,
+        "p75_ml_per_day": 49.076,
+        "p90_ml_per_day": 64.507,
+        "p95_ml_per_day": 70.141,
+        "maximum_ml_per_day": 185.072
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 41.711,
+        "p10_ml_per_day": 25.661,
+        "p25_ml_per_day": 29.376,
+        "median_ml_per_day": 36.461,
+        "p75_ml_per_day": 49.076,
+        "p90_ml_per_day": 64.507,
+        "p95_ml_per_day": 70.141,
+        "maximum_ml_per_day": 185.072
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1983,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 364,
+        "B": 0,
+        "C": 1,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 317.81,
+        "p10_ml_per_day": 14.36,
+        "p25_ml_per_day": 44.151,
+        "median_ml_per_day": 225.248,
+        "p75_ml_per_day": 456.718,
+        "p90_ml_per_day": 727.793,
+        "p95_ml_per_day": 908.597,
+        "maximum_ml_per_day": 2205.481
+      },
+      "quality_screen_a_b": {
+        "count": 364,
+        "mean_ml_per_day": 312.624,
+        "p10_ml_per_day": 14.334,
+        "p25_ml_per_day": 44.0,
+        "median_ml_per_day": 225.162,
+        "p75_ml_per_day": 456.523,
+        "p90_ml_per_day": 721.676,
+        "p95_ml_per_day": 869.604,
+        "maximum_ml_per_day": 1981.011
+      },
+      "quality_screen_a_b_share": 0.99726
+    },
+    {
+      "year": 1984,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 364,
+        "B": 0,
+        "C": 2,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 546.734,
+        "p10_ml_per_day": 92.493,
+        "p25_ml_per_day": 142.562,
+        "median_ml_per_day": 227.149,
+        "p75_ml_per_day": 633.279,
+        "p90_ml_per_day": 1448.908,
+        "p95_ml_per_day": 1996.109,
+        "maximum_ml_per_day": 6537.992
+      },
+      "quality_screen_a_b": {
+        "count": 364,
+        "mean_ml_per_day": 517.334,
+        "p10_ml_per_day": 92.337,
+        "p25_ml_per_day": 142.519,
+        "median_ml_per_day": 225.162,
+        "p75_ml_per_day": 582.799,
+        "p90_ml_per_day": 1414.494,
+        "p95_ml_per_day": 1959.199,
+        "maximum_ml_per_day": 4324.389
+      },
+      "quality_screen_a_b_share": 0.994536
+    },
+    {
+      "year": 1985,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 245.834,
+        "p10_ml_per_day": 31.606,
+        "p25_ml_per_day": 48.298,
+        "median_ml_per_day": 93.745,
+        "p75_ml_per_day": 319.771,
+        "p90_ml_per_day": 568.175,
+        "p95_ml_per_day": 734.982,
+        "maximum_ml_per_day": 4967.733
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 245.834,
+        "p10_ml_per_day": 31.606,
+        "p25_ml_per_day": 48.298,
+        "median_ml_per_day": 93.745,
+        "p75_ml_per_day": 319.771,
+        "p90_ml_per_day": 568.175,
+        "p95_ml_per_day": 734.982,
+        "maximum_ml_per_day": 4967.733
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1986,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 254.614,
+        "p10_ml_per_day": 36.807,
+        "p25_ml_per_day": 44.583,
+        "median_ml_per_day": 121.653,
+        "p75_ml_per_day": 307.157,
+        "p90_ml_per_day": 568.417,
+        "p95_ml_per_day": 853.075,
+        "maximum_ml_per_day": 4606.576
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 254.614,
+        "p10_ml_per_day": 36.807,
+        "p25_ml_per_day": 44.583,
+        "median_ml_per_day": 121.653,
+        "p75_ml_per_day": 307.157,
+        "p90_ml_per_day": 568.417,
+        "p95_ml_per_day": 853.075,
+        "maximum_ml_per_day": 4606.576
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1987,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 134.726,
+        "p10_ml_per_day": 47.417,
+        "p25_ml_per_day": 58.667,
+        "median_ml_per_day": 99.534,
+        "p75_ml_per_day": 180.147,
+        "p90_ml_per_day": 297.255,
+        "p95_ml_per_day": 322.087,
+        "maximum_ml_per_day": 644.727
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 134.726,
+        "p10_ml_per_day": 47.417,
+        "p25_ml_per_day": 58.667,
+        "median_ml_per_day": 99.534,
+        "p75_ml_per_day": 180.147,
+        "p90_ml_per_day": 297.255,
+        "p95_ml_per_day": 322.087,
+        "maximum_ml_per_day": 644.727
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1988,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 359,
+        "B": 0,
+        "C": 7,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 530.211,
+        "p10_ml_per_day": 41.429,
+        "p25_ml_per_day": 65.082,
+        "median_ml_per_day": 348.068,
+        "p75_ml_per_day": 619.995,
+        "p90_ml_per_day": 1097.643,
+        "p95_ml_per_day": 1566.392,
+        "maximum_ml_per_day": 12401.102
+      },
+      "quality_screen_a_b": {
+        "count": 359,
+        "mean_ml_per_day": 438.633,
+        "p10_ml_per_day": 41.213,
+        "p25_ml_per_day": 64.499,
+        "median_ml_per_day": 331.695,
+        "p75_ml_per_day": 593.664,
+        "p90_ml_per_day": 994.653,
+        "p95_ml_per_day": 1479.58,
+        "maximum_ml_per_day": 2871.636
+      },
+      "quality_screen_a_b_share": 0.980874
+    },
+    {
+      "year": 1989,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 363,
+        "B": 0,
+        "C": 2,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 538.662,
+        "p10_ml_per_day": 95.404,
+        "p25_ml_per_day": 234.234,
+        "median_ml_per_day": 426.045,
+        "p75_ml_per_day": 662.526,
+        "p90_ml_per_day": 1066.59,
+        "p95_ml_per_day": 1420.231,
+        "maximum_ml_per_day": 3859.031
+      },
+      "quality_screen_a_b": {
+        "count": 363,
+        "mean_ml_per_day": 522.639,
+        "p10_ml_per_day": 95.18,
+        "p25_ml_per_day": 233.284,
+        "median_ml_per_day": 425.959,
+        "p75_ml_per_day": 657.644,
+        "p90_ml_per_day": 1046.165,
+        "p95_ml_per_day": 1405.811,
+        "maximum_ml_per_day": 3223.722
+      },
+      "quality_screen_a_b_share": 0.994521
+    },
+    {
+      "year": 1990,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 362,
+        "B": 0,
+        "C": 3,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 506.309,
+        "p10_ml_per_day": 52.152,
+        "p25_ml_per_day": 94.177,
+        "median_ml_per_day": 275.361,
+        "p75_ml_per_day": 726.808,
+        "p90_ml_per_day": 1275.647,
+        "p95_ml_per_day": 1690.374,
+        "maximum_ml_per_day": 3499.515
+      },
+      "quality_screen_a_b": {
+        "count": 362,
+        "mean_ml_per_day": 485.539,
+        "p10_ml_per_day": 52.048,
+        "p25_ml_per_day": 93.659,
+        "median_ml_per_day": 263.438,
+        "p75_ml_per_day": 723.611,
+        "p90_ml_per_day": 1240.646,
+        "p95_ml_per_day": 1587.841,
+        "maximum_ml_per_day": 2853.665
+      },
+      "quality_screen_a_b_share": 0.991781
+    },
+    {
+      "year": 1991,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 361,
+        "B": 0,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 689.959,
+        "p10_ml_per_day": 43.477,
+        "p25_ml_per_day": 59.185,
+        "median_ml_per_day": 117.938,
+        "p75_ml_per_day": 589.776,
+        "p90_ml_per_day": 1621.287,
+        "p95_ml_per_day": 2010.111,
+        "maximum_ml_per_day": 25583.446
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 594.093,
+        "p10_ml_per_day": 43.373,
+        "p25_ml_per_day": 59.185,
+        "median_ml_per_day": 112.927,
+        "p75_ml_per_day": 570.076,
+        "p90_ml_per_day": 1545.634,
+        "p95_ml_per_day": 1880.785,
+        "maximum_ml_per_day": 25583.446
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 1992,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 366,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 726.469,
+        "p10_ml_per_day": 93.357,
+        "p25_ml_per_day": 126.794,
+        "median_ml_per_day": 319.339,
+        "p75_ml_per_day": 847.9,
+        "p90_ml_per_day": 1576.393,
+        "p95_ml_per_day": 2629.95,
+        "maximum_ml_per_day": 9749.185
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 726.469,
+        "p10_ml_per_day": 93.357,
+        "p25_ml_per_day": 126.794,
+        "median_ml_per_day": 319.339,
+        "p75_ml_per_day": 847.9,
+        "p90_ml_per_day": 1576.393,
+        "p95_ml_per_day": 2629.95,
+        "maximum_ml_per_day": 9749.185
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1993,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 290.308,
+        "p10_ml_per_day": 86.453,
+        "p25_ml_per_day": 111.976,
+        "median_ml_per_day": 203.302,
+        "p75_ml_per_day": 350.962,
+        "p90_ml_per_day": 571.303,
+        "p95_ml_per_day": 767.503,
+        "maximum_ml_per_day": 3154.773
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 290.308,
+        "p10_ml_per_day": 86.453,
+        "p25_ml_per_day": 111.976,
+        "median_ml_per_day": 203.302,
+        "p75_ml_per_day": 350.962,
+        "p90_ml_per_day": 571.303,
+        "p95_ml_per_day": 767.503,
+        "maximum_ml_per_day": 3154.773
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1994,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 95.026,
+        "p10_ml_per_day": 46.951,
+        "p25_ml_per_day": 58.148,
+        "median_ml_per_day": 82.773,
+        "p75_ml_per_day": 106.446,
+        "p90_ml_per_day": 158.235,
+        "p95_ml_per_day": 213.446,
+        "maximum_ml_per_day": 422.157
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 95.026,
+        "p10_ml_per_day": 46.951,
+        "p25_ml_per_day": 58.148,
+        "median_ml_per_day": 82.773,
+        "p75_ml_per_day": 106.446,
+        "p90_ml_per_day": 158.235,
+        "p95_ml_per_day": 213.446,
+        "maximum_ml_per_day": 422.157
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1995,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 365,
+        "B": 0,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 432.827,
+        "p10_ml_per_day": 46.605,
+        "p25_ml_per_day": 82.254,
+        "median_ml_per_day": 329.103,
+        "p75_ml_per_day": 468.814,
+        "p90_ml_per_day": 767.313,
+        "p95_ml_per_day": 1149.415,
+        "maximum_ml_per_day": 6701.204
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 432.827,
+        "p10_ml_per_day": 46.605,
+        "p25_ml_per_day": 82.254,
+        "median_ml_per_day": 329.103,
+        "p75_ml_per_day": 468.814,
+        "p90_ml_per_day": 767.313,
+        "p95_ml_per_day": 1149.415,
+        "maximum_ml_per_day": 6701.204
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1996,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 262,
+        "B": 104,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 356.957,
+        "p10_ml_per_day": 69.596,
+        "p25_ml_per_day": 95.927,
+        "median_ml_per_day": 193.15,
+        "p75_ml_per_day": 418.679,
+        "p90_ml_per_day": 745.039,
+        "p95_ml_per_day": 1229.816,
+        "maximum_ml_per_day": 3923.054
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 356.957,
+        "p10_ml_per_day": 69.596,
+        "p25_ml_per_day": 95.927,
+        "median_ml_per_day": 193.15,
+        "p75_ml_per_day": 418.679,
+        "p90_ml_per_day": 745.039,
+        "p95_ml_per_day": 1229.816,
+        "maximum_ml_per_day": 3923.054
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1997,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 205.123,
+        "p10_ml_per_day": 38.656,
+        "p25_ml_per_day": 50.026,
+        "median_ml_per_day": 92.017,
+        "p75_ml_per_day": 238.122,
+        "p90_ml_per_day": 390.828,
+        "p95_ml_per_day": 515.643,
+        "maximum_ml_per_day": 9678.336
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 205.123,
+        "p10_ml_per_day": 38.656,
+        "p25_ml_per_day": 50.026,
+        "median_ml_per_day": 92.017,
+        "p75_ml_per_day": 238.122,
+        "p90_ml_per_day": 390.828,
+        "p95_ml_per_day": 515.643,
+        "maximum_ml_per_day": 9678.336
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1998,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 353.708,
+        "p10_ml_per_day": 28.841,
+        "p25_ml_per_day": 45.274,
+        "median_ml_per_day": 105.237,
+        "p75_ml_per_day": 358.738,
+        "p90_ml_per_day": 680.549,
+        "p95_ml_per_day": 1017.687,
+        "maximum_ml_per_day": 13801.928
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 353.708,
+        "p10_ml_per_day": 28.841,
+        "p25_ml_per_day": 45.274,
+        "median_ml_per_day": 105.237,
+        "p75_ml_per_day": 358.738,
+        "p90_ml_per_day": 680.549,
+        "p95_ml_per_day": 1017.687,
+        "maximum_ml_per_day": 13801.928
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 1999,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 137.564,
+        "p10_ml_per_day": 39.347,
+        "p25_ml_per_day": 55.124,
+        "median_ml_per_day": 91.499,
+        "p75_ml_per_day": 167.705,
+        "p90_ml_per_day": 301.886,
+        "p95_ml_per_day": 387.527,
+        "maximum_ml_per_day": 698.296
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 137.564,
+        "p10_ml_per_day": 39.347,
+        "p25_ml_per_day": 55.124,
+        "median_ml_per_day": 91.499,
+        "p75_ml_per_day": 167.705,
+        "p90_ml_per_day": 301.886,
+        "p95_ml_per_day": 387.527,
+        "maximum_ml_per_day": 698.296
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2000,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 366,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 226.52,
+        "p10_ml_per_day": 43.719,
+        "p25_ml_per_day": 60.935,
+        "median_ml_per_day": 130.12,
+        "p75_ml_per_day": 344.612,
+        "p90_ml_per_day": 507.435,
+        "p95_ml_per_day": 663.995,
+        "maximum_ml_per_day": 1641.453
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 226.52,
+        "p10_ml_per_day": 43.719,
+        "p25_ml_per_day": 60.935,
+        "median_ml_per_day": 130.12,
+        "p75_ml_per_day": 344.612,
+        "p90_ml_per_day": 507.435,
+        "p95_ml_per_day": 663.995,
+        "maximum_ml_per_day": 1641.453
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2001,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 173.104,
+        "p10_ml_per_day": 22.309,
+        "p25_ml_per_day": 28.512,
+        "median_ml_per_day": 70.417,
+        "p75_ml_per_day": 213.066,
+        "p90_ml_per_day": 364.908,
+        "p95_ml_per_day": 795.221,
+        "maximum_ml_per_day": 2290.068
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 173.104,
+        "p10_ml_per_day": 22.309,
+        "p25_ml_per_day": 28.512,
+        "median_ml_per_day": 70.417,
+        "p75_ml_per_day": 213.066,
+        "p90_ml_per_day": 364.908,
+        "p95_ml_per_day": 795.221,
+        "maximum_ml_per_day": 2290.068
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2002,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 165.727,
+        "p10_ml_per_day": 33.921,
+        "p25_ml_per_day": 56.852,
+        "median_ml_per_day": 99.794,
+        "p75_ml_per_day": 220.583,
+        "p90_ml_per_day": 298.949,
+        "p95_ml_per_day": 432.698,
+        "maximum_ml_per_day": 2007.622
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 165.727,
+        "p10_ml_per_day": 33.921,
+        "p25_ml_per_day": 56.852,
+        "median_ml_per_day": 99.794,
+        "p75_ml_per_day": 220.583,
+        "p90_ml_per_day": 298.949,
+        "p95_ml_per_day": 432.698,
+        "maximum_ml_per_day": 2007.622
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2003,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 169.611,
+        "p10_ml_per_day": 30.31,
+        "p25_ml_per_day": 37.239,
+        "median_ml_per_day": 60.74,
+        "p75_ml_per_day": 214.88,
+        "p90_ml_per_day": 384.745,
+        "p95_ml_per_day": 653.661,
+        "maximum_ml_per_day": 2034.493
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 169.611,
+        "p10_ml_per_day": 30.31,
+        "p25_ml_per_day": 37.239,
+        "median_ml_per_day": 60.74,
+        "p75_ml_per_day": 214.88,
+        "p90_ml_per_day": 384.745,
+        "p95_ml_per_day": 653.661,
+        "maximum_ml_per_day": 2034.493
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2004,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 178,
+        "B": 186,
+        "C": 2,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 127.008,
+        "p10_ml_per_day": 36.073,
+        "p25_ml_per_day": 41.602,
+        "median_ml_per_day": 62.684,
+        "p75_ml_per_day": 140.942,
+        "p90_ml_per_day": 305.947,
+        "p95_ml_per_day": 464.105,
+        "maximum_ml_per_day": 924.063
+      },
+      "quality_screen_a_b": {
+        "count": 364,
+        "mean_ml_per_day": 126.572,
+        "p10_ml_per_day": 36.055,
+        "p25_ml_per_day": 41.537,
+        "median_ml_per_day": 62.598,
+        "p75_ml_per_day": 137.119,
+        "p90_ml_per_day": 306.362,
+        "p95_ml_per_day": 464.813,
+        "maximum_ml_per_day": 924.063
+      },
+      "quality_screen_a_b_share": 0.994536
+    },
+    {
+      "year": 2005,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 354,
+        "B": 11,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 225.081,
+        "p10_ml_per_day": 23.052,
+        "p25_ml_per_day": 33.869,
+        "median_ml_per_day": 106.878,
+        "p75_ml_per_day": 331.522,
+        "p90_ml_per_day": 536.121,
+        "p95_ml_per_day": 737.367,
+        "maximum_ml_per_day": 1953.881
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 225.081,
+        "p10_ml_per_day": 23.052,
+        "p25_ml_per_day": 33.869,
+        "median_ml_per_day": 106.878,
+        "p75_ml_per_day": 331.522,
+        "p90_ml_per_day": 536.121,
+        "p95_ml_per_day": 737.367,
+        "maximum_ml_per_day": 1953.881
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2006,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 358,
+        "B": 7,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 58.59,
+        "p10_ml_per_day": 19.164,
+        "p25_ml_per_day": 32.66,
+        "median_ml_per_day": 47.953,
+        "p75_ml_per_day": 81.131,
+        "p90_ml_per_day": 111.561,
+        "p95_ml_per_day": 136.756,
+        "maximum_ml_per_day": 192.07
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 58.59,
+        "p10_ml_per_day": 19.164,
+        "p25_ml_per_day": 32.66,
+        "median_ml_per_day": 47.953,
+        "p75_ml_per_day": 81.131,
+        "p90_ml_per_day": 111.561,
+        "p95_ml_per_day": 136.756,
+        "maximum_ml_per_day": 192.07
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2007,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 225,
+        "B": 140,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 138.506,
+        "p10_ml_per_day": 10.766,
+        "p25_ml_per_day": 28.08,
+        "median_ml_per_day": 130.38,
+        "p75_ml_per_day": 219.287,
+        "p90_ml_per_day": 279.629,
+        "p95_ml_per_day": 361.78,
+        "maximum_ml_per_day": 553.142
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 138.506,
+        "p10_ml_per_day": 10.766,
+        "p25_ml_per_day": 28.08,
+        "median_ml_per_day": 130.38,
+        "p75_ml_per_day": 219.287,
+        "p90_ml_per_day": 279.629,
+        "p95_ml_per_day": 361.78,
+        "maximum_ml_per_day": 553.142
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2008,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 330,
+        "B": 36,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 135.823,
+        "p10_ml_per_day": 41.861,
+        "p25_ml_per_day": 50.264,
+        "median_ml_per_day": 85.278,
+        "p75_ml_per_day": 187.383,
+        "p90_ml_per_day": 266.375,
+        "p95_ml_per_day": 360.639,
+        "maximum_ml_per_day": 1097.989
+      },
+      "quality_screen_a_b": {
+        "count": 366,
+        "mean_ml_per_day": 135.823,
+        "p10_ml_per_day": 41.861,
+        "p25_ml_per_day": 50.264,
+        "median_ml_per_day": 85.278,
+        "p75_ml_per_day": 187.383,
+        "p90_ml_per_day": 266.375,
+        "p95_ml_per_day": 360.639,
+        "maximum_ml_per_day": 1097.989
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2009,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 248,
+        "B": 117,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 116.816,
+        "p10_ml_per_day": 28.167,
+        "p25_ml_per_day": 37.239,
+        "median_ml_per_day": 55.47,
+        "p75_ml_per_day": 109.557,
+        "p90_ml_per_day": 305.878,
+        "p95_ml_per_day": 529.398,
+        "maximum_ml_per_day": 757.135
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 116.816,
+        "p10_ml_per_day": 28.167,
+        "p25_ml_per_day": 37.239,
+        "median_ml_per_day": 55.47,
+        "p75_ml_per_day": 109.557,
+        "p90_ml_per_day": 305.878,
+        "p95_ml_per_day": 529.398,
+        "maximum_ml_per_day": 757.135
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2010,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 187,
+        "B": 178,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 370.848,
+        "p10_ml_per_day": 30.068,
+        "p25_ml_per_day": 43.633,
+        "median_ml_per_day": 176.345,
+        "p75_ml_per_day": 472.788,
+        "p90_ml_per_day": 822.921,
+        "p95_ml_per_day": 1362.118,
+        "maximum_ml_per_day": 4772.639
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 370.848,
+        "p10_ml_per_day": 30.068,
+        "p25_ml_per_day": 43.633,
+        "median_ml_per_day": 176.345,
+        "p75_ml_per_day": 472.788,
+        "p90_ml_per_day": 822.921,
+        "p95_ml_per_day": 1362.118,
+        "maximum_ml_per_day": 4772.639
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2011,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 372.026,
+        "p10_ml_per_day": 85.468,
+        "p25_ml_per_day": 136.255,
+        "median_ml_per_day": 243.479,
+        "p75_ml_per_day": 426.045,
+        "p90_ml_per_day": 759.416,
+        "p95_ml_per_day": 1029.766,
+        "maximum_ml_per_day": 4371.65
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 372.026,
+        "p10_ml_per_day": 85.468,
+        "p25_ml_per_day": 136.255,
+        "median_ml_per_day": 243.479,
+        "p75_ml_per_day": 426.045,
+        "p90_ml_per_day": 759.416,
+        "p95_ml_per_day": 1029.766,
+        "maximum_ml_per_day": 4371.65
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2012,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 222,
+        "B": 143,
+        "C": 0,
+        "E": 1,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 654.809,
+        "p10_ml_per_day": 175.049,
+        "p25_ml_per_day": 233.111,
+        "median_ml_per_day": 377.012,
+        "p75_ml_per_day": 563.207,
+        "p90_ml_per_day": 912.01,
+        "p95_ml_per_day": 1540.709,
+        "maximum_ml_per_day": 17836.699
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 607.735,
+        "p10_ml_per_day": 174.79,
+        "p25_ml_per_day": 232.938,
+        "median_ml_per_day": 376.364,
+        "p75_ml_per_day": 559.967,
+        "p90_ml_per_day": 900.475,
+        "p95_ml_per_day": 1434.263,
+        "maximum_ml_per_day": 9758.862
+      },
+      "quality_screen_a_b_share": 0.997268
+    },
+    {
+      "year": 2013,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 255,
+        "B": 106,
+        "C": 4,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 258.987,
+        "p10_ml_per_day": 58.096,
+        "p25_ml_per_day": 76.292,
+        "median_ml_per_day": 129.602,
+        "p75_ml_per_day": 305.947,
+        "p90_ml_per_day": 527.843,
+        "p95_ml_per_day": 657.566,
+        "maximum_ml_per_day": 5093.534
+      },
+      "quality_screen_a_b": {
+        "count": 361,
+        "mean_ml_per_day": 260.413,
+        "p10_ml_per_day": 58.062,
+        "p25_ml_per_day": 75.342,
+        "median_ml_per_day": 129.602,
+        "p75_ml_per_day": 310.095,
+        "p90_ml_per_day": 528.431,
+        "p95_ml_per_day": 665.377,
+        "maximum_ml_per_day": 5093.534
+      },
+      "quality_screen_a_b_share": 0.989041
+    },
+    {
+      "year": 2014,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 365,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 356.634,
+        "p10_ml_per_day": 55.867,
+        "p25_ml_per_day": 119.493,
+        "median_ml_per_day": 250.305,
+        "p75_ml_per_day": 523.679,
+        "p90_ml_per_day": 763.978,
+        "p95_ml_per_day": 936.021,
+        "maximum_ml_per_day": 2062.401
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 356.634,
+        "p10_ml_per_day": 55.867,
+        "p25_ml_per_day": 119.493,
+        "median_ml_per_day": 250.305,
+        "p75_ml_per_day": 523.679,
+        "p90_ml_per_day": 763.978,
+        "p95_ml_per_day": 936.021,
+        "maximum_ml_per_day": 2062.401
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2015,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 51,
+        "B": 314,
+        "C": 0,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 400.716,
+        "p10_ml_per_day": 63.851,
+        "p25_ml_per_day": 144.031,
+        "median_ml_per_day": 226.717,
+        "p75_ml_per_day": 450.497,
+        "p90_ml_per_day": 722.471,
+        "p95_ml_per_day": 1209.533,
+        "maximum_ml_per_day": 6713.3
+      },
+      "quality_screen_a_b": {
+        "count": 365,
+        "mean_ml_per_day": 400.716,
+        "p10_ml_per_day": 63.851,
+        "p25_ml_per_day": 144.031,
+        "median_ml_per_day": 226.717,
+        "p75_ml_per_day": 450.497,
+        "p90_ml_per_day": 722.471,
+        "p95_ml_per_day": 1209.533,
+        "maximum_ml_per_day": 6713.3
+      },
+      "quality_screen_a_b_share": 1.0
+    },
+    {
+      "year": 2016,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 127,
+        "B": 31,
+        "C": 0,
+        "E": 208,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 631.75,
+        "p10_ml_per_day": 38.017,
+        "p25_ml_per_day": 54.476,
+        "median_ml_per_day": 190.256,
+        "p75_ml_per_day": 990.16,
+        "p90_ml_per_day": 1729.021,
+        "p95_ml_per_day": 2211.422,
+        "maximum_ml_per_day": 9458.877
+      },
+      "quality_screen_a_b": {
+        "count": 158,
+        "mean_ml_per_day": 121.866,
+        "p10_ml_per_day": 28.357,
+        "p25_ml_per_day": 39.183,
+        "median_ml_per_day": 51.538,
+        "p75_ml_per_day": 74.37,
+        "p90_ml_per_day": 179.784,
+        "p95_ml_per_day": 270.765,
+        "maximum_ml_per_day": 5259.77
+      },
+      "quality_screen_a_b_share": 0.431694
+    },
+    {
+      "year": 2017,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 228.832,
+        "p10_ml_per_day": 46.432,
+        "p25_ml_per_day": 65.665,
+        "median_ml_per_day": 113.877,
+        "p75_ml_per_day": 276.399,
+        "p90_ml_per_day": 509.095,
+        "p95_ml_per_day": 810.447,
+        "maximum_ml_per_day": 1948.096
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2018,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 85.992,
+        "p10_ml_per_day": 42.993,
+        "p25_ml_per_day": 48.126,
+        "median_ml_per_day": 59.444,
+        "p75_ml_per_day": 113.013,
+        "p90_ml_per_day": 156.283,
+        "p95_ml_per_day": 189.686,
+        "maximum_ml_per_day": 455.682
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2019,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 70.665,
+        "p10_ml_per_day": 33.213,
+        "p25_ml_per_day": 42.942,
+        "median_ml_per_day": 60.913,
+        "p75_ml_per_day": 85.883,
+        "p90_ml_per_day": 115.83,
+        "p95_ml_per_day": 139.124,
+        "maximum_ml_per_day": 685.51
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2020,
+      "calendar_day_count": 366,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 366,
+        "G": 0
+      },
+      "all_published": {
+        "count": 366,
+        "mean_ml_per_day": 301.976,
+        "p10_ml_per_day": 37.411,
+        "p25_ml_per_day": 62.51,
+        "median_ml_per_day": 142.733,
+        "p75_ml_per_day": 372.146,
+        "p90_ml_per_day": 713.318,
+        "p95_ml_per_day": 1180.397,
+        "maximum_ml_per_day": 2254.003
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2021,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 662.53,
+        "p10_ml_per_day": 81.734,
+        "p25_ml_per_day": 143.251,
+        "median_ml_per_day": 487.728,
+        "p75_ml_per_day": 850.522,
+        "p90_ml_per_day": 1291.939,
+        "p95_ml_per_day": 1742.481,
+        "maximum_ml_per_day": 8655.898
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2022,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 1215.456,
+        "p10_ml_per_day": 406.356,
+        "p25_ml_per_day": 578.966,
+        "median_ml_per_day": 900.029,
+        "p75_ml_per_day": 1454.112,
+        "p90_ml_per_day": 2286.351,
+        "p95_ml_per_day": 3306.908,
+        "maximum_ml_per_day": 8991.216
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    },
+    {
+      "year": 2023,
+      "calendar_day_count": 365,
+      "complete_calendar_year": true,
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 365,
+        "G": 0
+      },
+      "all_published": {
+        "count": 365,
+        "mean_ml_per_day": 321.638,
+        "p10_ml_per_day": 118.593,
+        "p25_ml_per_day": 160.877,
+        "median_ml_per_day": 247.882,
+        "p75_ml_per_day": 370.138,
+        "p90_ml_per_day": 548.225,
+        "p95_ml_per_day": 798.889,
+        "maximum_ml_per_day": 2375.05
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    }
+  ],
+  "decadal_profile": [
+    {
+      "decade": 1960,
+      "period": "1964-03-01/1969-12-31",
+      "quality_code_counts": {
+        "A": 0,
+        "B": 2110,
+        "C": 22,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 2132,
+        "mean_ml_per_day": 351.351,
+        "p10_ml_per_day": 35.183,
+        "p25_ml_per_day": 52.77,
+        "median_ml_per_day": 147.617,
+        "p75_ml_per_day": 364.895,
+        "p90_ml_per_day": 748.573,
+        "p95_ml_per_day": 1265.046,
+        "maximum_ml_per_day": 12857.734
+      },
+      "quality_screen_a_b": {
+        "count": 2110,
+        "mean_ml_per_day": 299.376,
+        "p10_ml_per_day": 35.079,
+        "p25_ml_per_day": 52.554,
+        "median_ml_per_day": 142.951,
+        "p75_ml_per_day": 353.101,
+        "p90_ml_per_day": 692.904,
+        "p95_ml_per_day": 1102.702,
+        "maximum_ml_per_day": 4819.123
+      },
+      "quality_screen_a_b_share": 0.989681
+    },
+    {
+      "decade": 1970,
+      "period": "1970-01-01/1979-12-31",
+      "quality_code_counts": {
+        "A": 2658,
+        "B": 423,
+        "C": 109,
+        "E": 462,
+        "G": 0
+      },
+      "all_published": {
+        "count": 3652,
+        "mean_ml_per_day": 512.806,
+        "p10_ml_per_day": 50.545,
+        "p25_ml_per_day": 97.806,
+        "median_ml_per_day": 198.032,
+        "p75_ml_per_day": 448.704,
+        "p90_ml_per_day": 1075.749,
+        "p95_ml_per_day": 1791.144,
+        "maximum_ml_per_day": 38352.186
+      },
+      "quality_screen_a_b": {
+        "count": 3081,
+        "mean_ml_per_day": 395.697,
+        "p10_ml_per_day": 46.57,
+        "p25_ml_per_day": 90.549,
+        "median_ml_per_day": 200.019,
+        "p75_ml_per_day": 467.518,
+        "p90_ml_per_day": 994.653,
+        "p95_ml_per_day": 1371.276,
+        "maximum_ml_per_day": 6060.019
+      },
+      "quality_screen_a_b_share": 0.843647
+    },
+    {
+      "decade": 1980,
+      "period": "1980-01-01/1989-12-31",
+      "quality_code_counts": {
+        "A": 3641,
+        "B": 0,
+        "C": 12,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 3653,
+        "mean_ml_per_day": 301.134,
+        "p10_ml_per_day": 32.314,
+        "p25_ml_per_day": 48.471,
+        "median_ml_per_day": 131.676,
+        "p75_ml_per_day": 361.849,
+        "p90_ml_per_day": 724.285,
+        "p95_ml_per_day": 1074.073,
+        "maximum_ml_per_day": 12401.102
+      },
+      "quality_screen_a_b": {
+        "count": 3641,
+        "mean_ml_per_day": 286.339,
+        "p10_ml_per_day": 32.228,
+        "p25_ml_per_day": 48.298,
+        "median_ml_per_day": 130.034,
+        "p75_ml_per_day": 357.442,
+        "p90_ml_per_day": 707.973,
+        "p95_ml_per_day": 1048.135,
+        "maximum_ml_per_day": 4967.733
+      },
+      "quality_screen_a_b_share": 0.996715
+    },
+    {
+      "decade": 1990,
+      "period": "1990-01-01/1999-12-31",
+      "quality_code_counts": {
+        "A": 2446,
+        "B": 1199,
+        "C": 7,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 3652,
+        "mean_ml_per_day": 379.514,
+        "p10_ml_per_day": 45.801,
+        "p25_ml_per_day": 69.812,
+        "median_ml_per_day": 137.508,
+        "p75_ml_per_day": 386.344,
+        "p90_ml_per_day": 837.834,
+        "p95_ml_per_day": 1312.234,
+        "maximum_ml_per_day": 25583.446
+      },
+      "quality_screen_a_b": {
+        "count": 3645,
+        "mean_ml_per_day": 367.511,
+        "p10_ml_per_day": 45.793,
+        "p25_ml_per_day": 69.726,
+        "median_ml_per_day": 137.033,
+        "p75_ml_per_day": 384.918,
+        "p90_ml_per_day": 818.428,
+        "p95_ml_per_day": 1294.673,
+        "maximum_ml_per_day": 25583.446
+      },
+      "quality_screen_a_b_share": 0.998083
+    },
+    {
+      "decade": 2000,
+      "period": "2000-01-01/2009-12-31",
+      "quality_code_counts": {
+        "A": 1693,
+        "B": 1958,
+        "C": 2,
+        "E": 0,
+        "G": 0
+      },
+      "all_published": {
+        "count": 3653,
+        "mean_ml_per_day": 153.686,
+        "p10_ml_per_day": 27.476,
+        "p25_ml_per_day": 40.09,
+        "median_ml_per_day": 72.491,
+        "p75_ml_per_day": 196.65,
+        "p90_ml_per_day": 366.998,
+        "p95_ml_per_day": 522.193,
+        "maximum_ml_per_day": 2290.068
+      },
+      "quality_screen_a_b": {
+        "count": 3651,
+        "mean_ml_per_day": 153.657,
+        "p10_ml_per_day": 27.476,
+        "p25_ml_per_day": 40.09,
+        "median_ml_per_day": 72.404,
+        "p75_ml_per_day": 196.563,
+        "p90_ml_per_day": 367.206,
+        "p95_ml_per_day": 522.21,
+        "maximum_ml_per_day": 2290.068
+      },
+      "quality_screen_a_b_share": 0.999453
+    },
+    {
+      "decade": 2010,
+      "period": "2010-01-01/2019-12-31",
+      "quality_code_counts": {
+        "A": 842,
+        "B": 1502,
+        "C": 4,
+        "E": 1304,
+        "G": 0
+      },
+      "all_published": {
+        "count": 3652,
+        "mean_ml_per_day": 343.29,
+        "p10_ml_per_day": 44.583,
+        "p25_ml_per_day": 66.205,
+        "median_ml_per_day": 156.776,
+        "p75_ml_per_day": 394.811,
+        "p90_ml_per_day": 718.246,
+        "p95_ml_per_day": 1170.717,
+        "maximum_ml_per_day": 17836.699
+      },
+      "quality_screen_a_b": {
+        "count": 2344,
+        "mean_ml_per_day": 376.565,
+        "p10_ml_per_day": 49.62,
+        "p25_ml_per_day": 92.536,
+        "median_ml_per_day": 221.706,
+        "p75_ml_per_day": 452.333,
+        "p90_ml_per_day": 715.602,
+        "p95_ml_per_day": 1069.437,
+        "maximum_ml_per_day": 9758.862
+      },
+      "quality_screen_a_b_share": 0.64184
+    },
+    {
+      "decade": 2020,
+      "period": "2020-01-01/2024-02-29",
+      "quality_code_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "E": 1521,
+        "G": 0
+      },
+      "all_published": {
+        "count": 1521,
+        "mean_ml_per_day": 613.839,
+        "p10_ml_per_day": 74.736,
+        "p25_ml_per_day": 152.755,
+        "median_ml_per_day": 364.522,
+        "p75_ml_per_day": 798.509,
+        "p90_ml_per_day": 1354.925,
+        "p95_ml_per_day": 1867.709,
+        "maximum_ml_per_day": 8991.216
+      },
+      "quality_screen_a_b": {
+        "count": 0,
+        "mean_ml_per_day": null,
+        "p10_ml_per_day": null,
+        "p25_ml_per_day": null,
+        "median_ml_per_day": null,
+        "p75_ml_per_day": null,
+        "p90_ml_per_day": null,
+        "p95_ml_per_day": null,
+        "maximum_ml_per_day": null
+      },
+      "quality_screen_a_b_share": 0.0
+    }
+  ],
+  "sensitivity": {
+    "all_published_median_ml_per_day": 148.956,
+    "a_b_screen_median_ml_per_day": 142.087,
+    "a_b_minus_all_median_percent": -4.61,
+    "interpretation": "A difference between the all-published and A+B-screened summaries demonstrates method sensitivity; it is not an estimate of measurement error."
+  },
+  "trend_assessment": {
+    "status": "NOT_PERFORMED_IN_V0_1",
+    "reason": "Quality-code composition changes materially through the record. A trend or change-point claim requires a separately reviewed method that addresses quality, serial dependence, seasonality and multiple testing."
+  },
+  "maximum_conclusion_level": "L2",
+  "evidence_maturity": "S0",
+  "prohibited_conclusions": [
+    "current 2026 flow",
+    "Cooma drinking-water sufficiency or safety",
+    "reservoir storage or demand balance",
+    "causal attribution",
+    "engineering, wastewater or public-safety status",
+    "catchment-wide behaviour"
+  ]
+}

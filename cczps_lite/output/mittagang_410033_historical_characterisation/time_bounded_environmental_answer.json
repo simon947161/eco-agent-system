@@ -1,0 +1,87 @@
+{
+  "schema_id": "climateos.time_bounded_environmental_answer.v0.1",
+  "answer_id": "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1",
+  "question": "What does the admitted 1964-03-01 to 2024-02-29 daily streamflow record for Murrumbidgee River at Mittagang Crossing show about historical coverage, seasonality, variability and source quality?",
+  "decision_use": "Historical baseline and method foundation for later, separately admitted near-current comparison",
+  "place": "Murrumbidgee River at Mittagang Crossing, gauge 410033",
+  "spatial_boundary": "BoM HRS gauge 410033 record; no catchment-wide inference",
+  "assessment_period": "1964-03-01/2024-02-29",
+  "evidence_cutoff": "2024-02-29",
+  "issued_at": "2026-07-30T12:30:00Z",
+  "valid_until": "Until the source digest, source quality definitions, station identity or method version changes",
+  "conclusion_level": "L2",
+  "evidence_maturity": "S0",
+  "answer": "For the declared gauge record and method, 21,915 daily values cover every calendar date from 1964-03-01 to 2024-02-29. The all-published daily median is 148.956 ML/day and the central 80% spans 37.325 to 802.422 ML/day. Monthly and annual distributions vary substantially. These are historical descriptive indicators, not a statement of current conditions.",
+  "confidence": "High for computational reproducibility and calendar coverage; limited for treating all values as equivalent observations because source quality categories include C and E.",
+  "supporting_evidence": [
+    "sha256:12740d6edc884b3f7a960935215cdff1bdbe5bd85c9c9a96d3aa219272d31534",
+    "BoM HRS station identity and source quality codes",
+    "complete daily calendar coverage in the admitted record",
+    "reproducible standard-library method and tests"
+  ],
+  "conflicting_evidence": [
+    "All-published and A+B-screened summaries differ; the sensitivity is recorded rather than averaged away."
+  ],
+  "missing_critical_evidence": [
+    "equivalent-method observations after 2024-02-29",
+    "qualified hydrology review",
+    "uncertainty model beyond source quality categories",
+    "storage, extraction, demand, rainfall and snow evidence"
+  ],
+  "local_translation_path": [
+    "official gauge record",
+    "quality-aware historical distributions",
+    "future equivalent-method near-current comparison"
+  ],
+  "alternative_explanations": [
+    "Differences across years or decades may reflect hydrology, quality classification, gauging or source-processing changes."
+  ],
+  "consequence_if_true": "A lawful reproducible historical baseline is available for bounded future comparison.",
+  "consequence_if_false": "If source identity, digest or method checks fail, the derived indicators must be withdrawn and recomputed.",
+  "intervention_window": "No environmental intervention is supported; the current window is for method review and evidence preparation only.",
+  "permitted_actions": [
+    "review the method and quality sensitivity",
+    "prepare an equivalent-method near-current evidence gate",
+    "request qualified hydrology review"
+  ],
+  "prohibited_actions": [
+    "represent the result as current 2026 flow",
+    "infer water sufficiency, safety, causality or engineering status",
+    "issue a public warning"
+  ],
+  "update_triggers": [
+    "source digest or dataset version changes",
+    "new equivalent-method flow record is lawfully admitted",
+    "quality-code definitions or station identity change",
+    "method version changes"
+  ],
+  "demotion_triggers": [
+    "source correction",
+    "calculation error",
+    "licence or provenance failure",
+    "qualified review identifies a material method defect"
+  ],
+  "stop_conditions": [
+    "attempted use for current conditions or public safety",
+    "unresolved source identity mismatch",
+    "silent exclusion or relabelling of quality categories"
+  ],
+  "human_review": {
+    "status": "FOUNDER_EVIDENCE_REVIEW_PENDING",
+    "qualified_hydrology_review": "REQUIRED_BEFORE_L3",
+    "review_questions": [
+      "Is the A+B sensitivity framing defensible?",
+      "Which uncertainty treatment is required before trend analysis?",
+      "Is the gauge boundary fit for a proposed later local question?"
+    ]
+  },
+  "official_confirmation": {
+    "issuer": "Australian Bureau of Meteorology",
+    "scope": "official HRS source record and quality classification",
+    "relationship_to_answer": "Supports source identity and L1 facts; does not itself confirm the L2 calculations or any current local condition."
+  },
+  "retrospective_validation": {
+    "plan": "On source or method update, rerun from the exact admitted bytes, compare output digests and indicators, explain differences, and preserve the prior version.",
+    "status": "PLANNED"
+  }
+}
