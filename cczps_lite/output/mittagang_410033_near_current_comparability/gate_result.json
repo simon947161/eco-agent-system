@@ -1,0 +1,105 @@
+{
+  "schema_id": "climateos.mittagang_410033_near_current_comparability.v0.1",
+  "method_version": "0.1.0",
+  "issued_at": "2026-07-31T00:00:00Z",
+  "station_id": "410033",
+  "gate_status": "NOT_COMPARABLE_YET",
+  "evidence_maturity": "S0",
+  "maximum_conclusion_level": "L1",
+  "checks": [
+    {
+      "dimension": "station_identity",
+      "status": "PASS",
+      "historical": "410033",
+      "near_current": "410033",
+      "reason": "The same gauge identifier must be explicit in both products."
+    },
+    {
+      "dimension": "measurement",
+      "status": "BLOCKED",
+      "historical": "daily streamflow",
+      "near_current": "FlowRate",
+      "reason": "A FlowRate label does not by itself prove equivalence to a daily discharge total."
+    },
+    {
+      "dimension": "unit",
+      "status": "PASS",
+      "historical": "ML/day",
+      "near_current": "ML/day",
+      "reason": "Canonical units must match before values can be compared."
+    },
+    {
+      "dimension": "aggregation_window",
+      "status": "BLOCKED",
+      "historical": "previous 24 hours",
+      "near_current": null,
+      "reason": "Instantaneous, interval and previous-24-hour values are not interchangeable."
+    },
+    {
+      "dimension": "day_boundary",
+      "status": "BLOCKED",
+      "historical": "09:00 source-local time",
+      "near_current": null,
+      "reason": "The observation timestamp must be mapped to the historical 09:00 local reporting boundary."
+    },
+    {
+      "dimension": "timezone",
+      "status": "BLOCKED",
+      "historical": null,
+      "near_current": "AEST as displayed; DST rule unresolved",
+      "reason": "A stable timezone rule, including daylight-saving treatment, is required."
+    },
+    {
+      "dimension": "quality_semantics",
+      "status": "BLOCKED",
+      "historical": "BoM HRS A/B/C/E/G",
+      "near_current": "WaterNSW numeric code",
+      "reason": "Numeric WaterNSW quality code 125 is not yet mapped to the HRS A/B/C/E/G definitions."
+    },
+    {
+      "dimension": "provenance",
+      "status": "BLOCKED",
+      "historical": "sha256:12740d6edc884b3f7a960935215cdff1bdbe5bd85c9c9a96d3aa219272d31534",
+      "near_current": {
+        "content_digest": null,
+        "retrieval_receipt_digest": null
+      },
+      "reason": "The exact near-current response and retrieval receipt must be content-addressed."
+    }
+  ],
+  "required_dimensions": [
+    "station_identity",
+    "measurement",
+    "unit",
+    "aggregation_window",
+    "day_boundary",
+    "timezone",
+    "quality_semantics",
+    "provenance"
+  ],
+  "near_current_value_retained_for_identity_only": {
+    "observed_at": "2026-07-28T19:45:00+10:00",
+    "value": 194.296,
+    "unit": "ML/day",
+    "quality_code": 125
+  },
+  "comparison_statistics": null,
+  "environmental_conclusion": null,
+  "trend_assessment": {
+    "status": "DEFERRED_PENDING_QUALIFIED_HYDROLOGY_REVIEW",
+    "performed": false
+  },
+  "next_admissible_actions": [
+    "retain the exact WaterNSW response bytes and SHA-256 receipt",
+    "obtain official parameter and aggregation metadata for FlowRate",
+    "resolve AEST/AEDT and historical local-time day boundaries",
+    "obtain an official mapping or documented treatment for quality code 125",
+    "rerun this gate before calculating any percentile"
+  ],
+  "prohibited_actions": [
+    "compare 194.296 ML/day directly with the historical distribution",
+    "label the observation above, below or within normal",
+    "make a current water, supply, drinking-water, engineering or public-safety claim",
+    "perform or imply a formal trend assessment"
+  ]
+}
