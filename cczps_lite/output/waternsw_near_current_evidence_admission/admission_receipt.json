@@ -1,0 +1,16 @@
+{
+  "schema_id": "climateos.waternsw_near_current_admission.v0.1",
+  "run_id": "WATERNSW-410033-NEAR-CURRENT-ADMISSION-V0.1",
+  "attempted_at": "2026-07-31T00:00:00Z",
+  "admission_status": "ADMISSION_BLOCKED_MISSING_RAW_RESPONSE",
+  "reason": "The authorised runtime has neither the exact 2026-07-28 WaterNSW response bytes nor a configured subscription key. A copied field summary cannot be promoted to raw evidence.",
+  "response_content_digest": null,
+  "retrieval_receipt_digest": null,
+  "maximum_conclusion_level": "L1",
+  "comparison_statistics": null,
+  "environmental_conclusion": null,
+  "trend_assessment": {
+    "status": "DEFERRED_PENDING_QUALIFIED_HYDROLOGY_REVIEW",
+    "performed": false
+  }
+}
