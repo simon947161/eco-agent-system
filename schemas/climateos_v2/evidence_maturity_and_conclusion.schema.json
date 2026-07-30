@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.example/schemas/evidence_maturity_and_conclusion.v0.1.json",
+  "title": "ClimateOS Evidence Maturity and Conclusion State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "conclusion_level",
+    "evidence_maturity",
+    "evidence_cutoff",
+    "valid_until",
+    "human_review_status"
+  ],
+  "properties": {
+    "conclusion_level": {
+      "type": "string",
+      "enum": ["L0", "L1", "L2", "L3", "L4"]
+    },
+    "evidence_maturity": {
+      "type": "string",
+      "enum": ["S0", "S1", "S2", "S3", "S4", "S5", "S6", "S7"]
+    },
+    "evidence_cutoff": {
+      "type": "string",
+      "minLength": 1
+    },
+    "valid_until": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_review_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "official_confirmation": {
+      "type": ["object", "null"]
+    }
+  }
+}

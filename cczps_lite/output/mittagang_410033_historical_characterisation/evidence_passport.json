@@ -1,0 +1,56 @@
+{
+  "schema_id": "climateos.environmental_evidence_passport.v0.1",
+  "passport_id": "MITTAGANG-410033-HISTORICAL-PASSPORT-V0.1",
+  "subject": "Historical daily streamflow characterisation",
+  "source_identity": {
+    "publisher": "Australian Bureau of Meteorology",
+    "product_family": "Hydrologic Reference Stations",
+    "station_id": "410033",
+    "station_name": "Murrumbidgee River at Mittagang Crossing",
+    "url": "https://www.bom.gov.au/water/hrs/content/data/410033/410033_daily_ts.csv",
+    "content_digest": "sha256:12740d6edc884b3f7a960935215cdff1bdbe5bd85c9c9a96d3aa219272d31534",
+    "retrieval_receipt_digest": "sha256:d5a690cedd569860cb23fcd7e0c3c57cb50860dbc93db074da7c4d6a9ffacb04",
+    "dataset_version": "August, 2024",
+    "data_extraction_date": "14/06/2024"
+  },
+  "method": {
+    "run_id": "MITTAGANG-410033-HISTORICAL-CHARACTERISATION-V0.1",
+    "version": "0.1.0",
+    "unit": "ML/day",
+    "calendar_basis": "source-local daily record",
+    "quality_treatment": "A+B only; not treated as a replacement dataset"
+  },
+  "derived_claim": {
+    "answer_id": "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1",
+    "conclusion_level": "L2",
+    "evidence_maturity": "S0",
+    "evidence_cutoff": "2024-02-29"
+  },
+  "limitations": {
+    "missing_critical_evidence": [
+      "equivalent-method observations after 2024-02-29",
+      "qualified hydrology review",
+      "uncertainty model beyond source quality categories",
+      "storage, extraction, demand, rainfall and snow evidence"
+    ],
+    "prohibited_actions": [
+      "represent the result as current 2026 flow",
+      "infer water sufficiency, safety, causality or engineering status",
+      "issue a public warning"
+    ],
+    "trend_status": "NOT_PERFORMED_IN_V0_1"
+  },
+  "review": {
+    "status": "FOUNDER_EVIDENCE_REVIEW_PENDING",
+    "qualified_hydrology_review": "REQUIRED_BEFORE_L3",
+    "review_questions": [
+      "Is the A+B sensitivity framing defensible?",
+      "Which uncertainty treatment is required before trend analysis?",
+      "Is the gauge boundary fit for a proposed later local question?"
+    ]
+  },
+  "retrospective_validation": {
+    "plan": "On source or method update, rerun from the exact admitted bytes, compare output digests and indicators, explain differences, and preserve the prior version.",
+    "status": "PLANNED"
+  }
+}
