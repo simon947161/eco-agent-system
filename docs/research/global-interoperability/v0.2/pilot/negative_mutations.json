@@ -1,0 +1,7 @@
+[
+  {"case": "evidence_state_upgrade", "base": "02_buildingos_to_ecochain.json", "path": "evidence_state", "value": "OBSERVED", "expected": "SYNTHETIC_STATE_NOT_PRESERVED"},
+  {"case": "capability_escalation", "base": "01_climateos_to_buildingos.json", "path": "governance.child_capabilities", "value": ["read_fixture", "validate_fixture", "contact_customer"], "expected": "CHILD_CAPABILITY_ESCALATION"},
+  {"case": "protected_write_without_approval", "base": "03_ecochain_to_mission_control.json", "path": "governance.protected_write_requested", "value": true, "expected": "PROTECTED_WRITE_APPROVAL_MISSING"},
+  {"case": "private_asset_boundary", "base": "01_climateos_to_buildingos.json", "path": "privacy_boundary.private_person_assets_included", "value": true, "expected": "PRIVATE_ASSET_BOUNDARY_BREACH"},
+  {"case": "ecochain_truth_upgrade", "base": "03_ecochain_to_mission_control.json", "path": "payload.truth_status_upgraded", "value": true, "expected": "REGISTRY_TRUTH_UPGRADE_FORBIDDEN"}
+]
