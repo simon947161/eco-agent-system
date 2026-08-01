@@ -1,0 +1,16 @@
+{
+  "receipt_version": "ggg-receipt-v0.2",
+  "receipt_id": "RCP-GGG-PILOT-001-003",
+  "handoff_id": "HO-SYN-ECO-MC-003",
+  "correlation_id": "COR-GGG-PILOT-001",
+  "receiver": "MISSION_CONTROL",
+  "status": "ACCEPTED",
+  "received_at": "2026-08-01T00:00:03Z",
+  "envelope_sha256": "0ade87dcbf523acbc0b5be44aa5505e8cdd57b73e0b4e1e184119cc18e3857ce",
+  "validator_version": "ggg-transport-validator-v0.2",
+  "evidence_state_preserved": true,
+  "authority_preserved": true,
+  "external_action": false,
+  "mainline_write": false,
+  "reasons": []
+}
