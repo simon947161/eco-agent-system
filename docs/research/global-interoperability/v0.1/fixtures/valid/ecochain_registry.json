@@ -1,0 +1,13 @@
+{
+  "schema_version": "mission-runtime-v0.1", "mission_id": "GGG-VAL-004",
+  "title": "ECOChain registry adapter fixture", "domain": "ECOCHAIN",
+  "north_star": "EVIDENCE_TRUST_GOVERNANCE_RUNTIME", "state": "PLANNED",
+  "transition": {"from": "DRAFT", "to": "PLANNED", "actor": "Mission Control", "reason": "Registry adapter scope documented"},
+  "authority": {"owner": "ECOChain", "approver": "Founder", "approval_id": "APPROVE_CAPABILITY_INHERITANCE_V0_1", "external_action_authorized": false},
+  "evidence_refs": [{"source": "ClimateOS-Trust-Architecture-v0.1", "version": "v0.1", "sha256": "4444444444444444444444444444444444444444444444444444444444444444", "confidence": "SUPPORTED"}],
+  "declared_write_set": [], "protected_write": {"requested": false, "approval_required": true, "approval_present": false},
+  "capability_envelope": {"parent": ["read", "register_fixture", "validate"], "child": ["read", "validate"]},
+  "resume_safety": {"persisted_state": "PLANNED", "restart_state": "PLANNED", "next_safe_action": "await bounded adapter approval"},
+  "interoperability": {"provides": ["EvidencePassport", "RegistryReceipt"], "consumes": ["Credential", "Proof"], "claim_authority": "REGISTRY_ADAPTER_ONLY"},
+  "privacy_boundary": {"private_person_assets_included": false, "biometric_assets_included": false}
+}
