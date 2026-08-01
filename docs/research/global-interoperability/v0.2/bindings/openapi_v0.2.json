@@ -1,0 +1,7 @@
+{
+  "openapi": "3.1.0",
+  "info": {"title": "GGG Cross-System Handoff API", "version": "0.2.0", "description": "RFC-only synthetic transport binding."},
+  "servers": [{"url": "http://127.0.0.1:8787", "description": "non-production loopback example only"}],
+  "paths": {"/v0.2/handoffs": {"post": {"operationId": "handoffEvidenceV02", "summary": "Validate a bounded synthetic cross-OS handoff", "requestBody": {"required": true, "content": {"application/vnd.ggg.handoff+json;version=0.2": {"schema": {"$ref": "../schemas/cross_os_transport_envelope.schema.json"}}}}, "responses": {"200": {"description": "Accepted or governance-rejected receipt", "content": {"application/json": {"schema": {"$ref": "../schemas/cross_os_transport_receipt.schema.json"}}}}}, "security": []}}},
+  "x-rfc-boundary": {"synthetic-only": true, "external-action": false, "mainline-write": false, "production-deployment": false}
+}
