@@ -1,0 +1,6 @@
+{
+  "base_fixture": "mission_control_research.json",
+  "mutation": "transition",
+  "value": {"from": "DRAFT", "to": "COMPLETED", "actor": "Agent", "reason": "skip all gates"},
+  "expected_error": "INVALID_TRANSITION"
+}
