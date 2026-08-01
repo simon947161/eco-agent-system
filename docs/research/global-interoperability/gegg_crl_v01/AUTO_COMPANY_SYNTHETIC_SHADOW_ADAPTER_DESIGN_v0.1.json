@@ -1,0 +1,10 @@
+{
+  "version":"auto-company-shadow-adapter.v0.1","implementation_state":"DESIGN_ONLY",
+  "daemon_installed":false,"network_actions":false,"real_data":false,
+  "input":{"allowed_evidence_state":"SYNTHETIC","required":["task_id","capability_grant","expiry","max_iterations","allowed_writes","stop_conditions"]},
+  "translation":{"consensus_baton":"structured_runtime_state","team_selection":"capability_registry_query","ceo_decision":"founder_gate_candidate","loop_output":"evidence_object_and_next_action"},
+  "protected_actions":["CONTACT","QUOTE","CONTRACT","DEPLOY","CAPITAL_COMMITMENT","MAINLINE_WRITE","CREDENTIAL_ACCESS"],
+  "stop_conditions":["GRANT_EXPIRED","ITERATION_LIMIT","UNSUPPORTED_CLAIM","PROTECTED_ACTION","COST_LIMIT","VALIDATION_FAILURE","FOUNDER_PAUSE"],
+  "output":{"must_preserve":["provenance","authority","evidence_state","limitations","hash","next_gate"]}
+}
+
