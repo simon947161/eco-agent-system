@@ -1,0 +1,23 @@
+{
+  "manifest_version": "v0.1",
+  "generated_on": "2026-08-01",
+  "sources": [
+    {"id": "SRC-001", "path": "docs/mission-control/research/grok-build/MISSION_GROK_BUILD_RESEARCH.md", "sha256": "150e1640a9adac1fc018051d5a5846014ded1987b83380e9f2ef025ba6f4c658", "role": "approved research mission and boundaries"},
+    {"id": "SRC-002", "path": "docs/mission-control/research/grok-build/SOURCE_REGISTER_AND_ARCHITECTURE_MAP_V0.1.md", "sha256": "89246fd57ec7665e767e880974967b78cedc3be4263580f29cabad8e90dcdd8b", "role": "source baseline and architecture map"},
+    {"id": "SRC-003", "path": "docs/mission-control/research/grok-build/AGENT_HARNESS_AND_PLAN_MODE_FILE_REVIEW_V0.1.md", "sha256": "713b0668fd58b70350bb22878b295564f399612aef142388230284a7b0eef1f8", "role": "file-level harness and plan-mode evidence"},
+    {"id": "SRC-004", "path": "docs/mission-control/research/grok-build/CLIMATEOS_EXISTING_CAPABILITY_CROSSWALK_V0.1.md", "sha256": "3ac6950921536f5b7a13f2ceb19185808c18c25906ea47b2f5e66113a303c2ee", "role": "existing capability crosswalk"},
+    {"id": "SRC-005", "path": "docs/mission-control/research/grok-build/ADOPTION_MATRIX_V0.1.md", "sha256": "7005f0bb3f2a3e0cbfb0b024bf2944ecb4008d69981f7abf8364fcb3d2dd8f0b", "role": "adopt adapt observe reject decisions"},
+    {"id": "SRC-006", "path": "docs/mission-control/research/grok-build/MISSION_RUNTIME_RFC_V0.1.md", "sha256": "eb1c6924223c796ad1bb1b956ba987c124d62f519c4d9b49f58bd69a5d175366", "role": "approved prototype contract"},
+    {"id": "SRC-007", "path": "GEGG_COMPANY_DEVELOPMENT_PROJECT_INDEX_v0.1.md", "sha256": "8e68ca517df7da2de0b0d0233267c2aa22ca22b4ba346a5f31b53f4a837dbbcd", "role": "GEGG authority and artifact status"},
+    {"id": "SRC-008", "path": "GEGG_R9_003_COMPANY_DEVELOPMENT_STEWARD_SHADOW_RUNTIME_v0.1.json", "sha256": "555042966c5805da3f9957fb334b985916f48832a87cbed1178454e4e66a467e", "role": "shadow-mode company runtime boundary"},
+    {"id": "SRC-009", "path": "GEGG_R9_007_CLIMATEOS_INDUSTRIAL_HEAT_EVIDENCE_ADAPTER_RFC_v0.1.md", "sha256": "a94598039dce2e6e4446130ac5ddeb68e8f9180155bf939d2dfa83a980957126", "role": "ClimateOS support-only adapter boundary"}
+  ],
+  "founder_decisions_inherited": [
+    "APPROVE_LIFECYCLE_V0_1",
+    "APPROVE_PROTECTED_WRITE_BASELINE_V0_1",
+    "APPROVE_CAPABILITY_INHERITANCE_V0_1",
+    "APPROVE_RESUME_SAFETY_V0_1",
+    "APPROVE_BOUNDED_EXECUTABLE_VALIDATOR_PROTOTYPE"
+  ],
+  "recovery_note": "No authoritative artifact containing verbatim GGG-001 through GGG-008 labels was found. Execution IDs are bound to the already-approved Phase 0-2 deliverable sequence; architecture and authority were not replanned."
+}
