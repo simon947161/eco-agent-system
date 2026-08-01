@@ -1,0 +1,6 @@
+{
+  "base_fixture": "climateos_evidence.json",
+  "mutation": "protected_write",
+  "value": {"requested": true, "approval_required": true, "approval_present": false},
+  "expected_error": "PROTECTED_WRITE_APPROVAL_MISSING"
+}
