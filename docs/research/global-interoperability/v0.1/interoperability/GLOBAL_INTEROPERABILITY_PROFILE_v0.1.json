@@ -1,0 +1,18 @@
+{
+  "profile_version": "v0.1",
+  "north_star": "EVIDENCE_TRUST_GOVERNANCE_RUNTIME",
+  "shared_sequence": ["Observation", "Evidence", "Trust", "Governance", "Action", "KnowledgeEvolution"],
+  "shared_objects": ["Identity", "EvidenceObject", "Proof", "Credential", "Permission", "DecisionRecord", "ValidationReceipt"],
+  "systems": {
+    "GEGG": {"role": "company development and governed opportunity system", "authority": "company strategy and internal gates", "must_not": ["replace domain science", "claim external support without evidence"]},
+    "MissionControl": {"role": "mission orchestration and continuity", "authority": "routing, lifecycle, bounded execution and checkpointing", "must_not": ["invent domain conclusions", "bypass Founder gates"]},
+    "ClimateOS": {"role": "environmental evidence trust operating system", "authority": "environmental evidence admission, uncertainty and governance", "must_not": ["manage GEGG sales", "replace qualified professionals"]},
+    "CarbonOS": {"role": "disclosure and evidence runtime", "authority": "ISSB, TNFD, ASRS and China carbon interface mappings", "must_not": ["issue unverified assurance", "replace ClimateOS environmental reasoning"]},
+    "BuildingOS": {"role": "building-domain workflow and evidence producer", "authority": "building-domain engineering workflow within professional boundaries", "must_not": ["override ClimateOS evidence state", "make unauthorized external commitments"]},
+    "ECOChain": {"role": "evidence chain and registry adapter", "authority": "register credential, proof, version and receipt", "must_not": ["upgrade weak evidence into truth", "act as speculative token platform by default"]}
+  },
+  "canonical_flow": ["DomainObservation", "EvidenceObject", "ValidationReceipt", "CredentialOrProof", "GovernanceDecision", "RegistryReceipt", "BoundedAction"],
+  "privacy_boundary": {"private_person_assets_allowed": false, "biometric_assets_allowed": false, "personal_os_runtime_connected": false},
+  "external_execution": false,
+  "mainline_changes": false
+}
