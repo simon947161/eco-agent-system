@@ -1,0 +1,22 @@
+{
+  "contract_version": "ggg-transport-v0.2",
+  "handoff_id": "HO-SYN-ECO-MC-003",
+  "correlation_id": "COR-GGG-PILOT-001",
+  "object_id": "OBJ-SYN-REGISTRY-003",
+  "object_type": "RegistrySubmission",
+  "source_system": "ECOCHAIN",
+  "target_system": "MISSION_CONTROL",
+  "evidence_state": "SYNTHETIC",
+  "synthetic": true,
+  "authority": {"sender_role": "registry adapter", "receiver_role": "mission lifecycle recorder", "claim_authority": "REGISTRY_ADAPTER_ONLY", "decision_authorized": false},
+  "provenance": {"source_id": "SYNTHETIC-ECOCHAIN-ADAPTER-V0.2", "publisher_or_provider": "ECOChain bounded pilot", "source_version": "v0.2", "retrieved_at": "2026-08-01T00:00:02Z", "event_time": "2026-08-01T00:00:01Z", "sha256": "3333333333333333333333333333333333333333333333333333333333333333", "upstream_object_ids": ["OBJ-SYN-BUILD-002", "OBJ-SYN-CLIMATE-001"]},
+  "boundaries": {"spatial": "local fixture registry only", "process": "receipt and lineage registration test", "time": "pilot execution window"},
+  "measurement": {"value": 2, "unit": "upstream-object-count", "quality_code": "SYNTHETIC", "missing_data_treatment": "not applicable"},
+  "transformations": ["registered object identifiers and hashes in local validation memory", "did not alter upstream evidence state or authority"],
+  "uncertainty": "Receipt proves bounded fixture handling only, not truth, assurance or durable registration.",
+  "limitations": ["not a production registry receipt", "not a credential or assurance statement", "no external or distributed ledger write occurred"],
+  "permitted_use": {"licence": "internal synthetic test fixture", "uses": ["mission checkpoint test", "lineage receipt validation"], "prohibited_uses": ["truth assertion", "token issuance", "production registry claim"]},
+  "governance": {"parent_capabilities": ["read_fixture", "validate_fixture", "register_fixture_receipt"], "child_capabilities": ["read_fixture", "validate_fixture"], "protected_write_requested": false, "protected_write_approval_present": false, "external_action_authorized": false, "freshness_due_at": null, "supersedes": null},
+  "privacy_boundary": {"private_person_assets_included": false, "biometric_assets_included": false, "personal_os_connected": false},
+  "payload": {"registry_scope": "in-memory synthetic fixture", "registered_objects": ["OBJ-SYN-CLIMATE-001", "OBJ-SYN-BUILD-002"], "truth_status_upgraded": false}
+}
