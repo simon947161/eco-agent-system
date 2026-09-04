@@ -1,7 +1,7 @@
 # Cooma Site Reading v0.1 - R1
 
 ## 1. Question asked
-What can admitted evidence currently support as a bounded environmental Site Reading for Cooma, and what remains blocked or unknown?  
+What can admitted evidence currently support as a bounded environmental Site Reading for Cooma, and what remains blocked or unknown?
 Decision use: Founder review, evidence-gap prioritisation and preparation of later professional review; not approval or operational action
 
 ## 2. Place and spatial boundary
