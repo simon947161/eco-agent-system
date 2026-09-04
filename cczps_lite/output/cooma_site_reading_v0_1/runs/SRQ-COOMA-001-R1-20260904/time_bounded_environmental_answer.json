@@ -8,7 +8,7 @@
   "assessment_period": "Historical evidence 1964-03-01/2024-02-29; bounded source context through 2026-07-27",
   "evidence_cutoff": "2026-07-27",
   "issued_at": "2026-09-04T02:00:00Z",
-  "valid_until": "2026-12-04 or earlier upon any update, demotion or stop trigger",
+  "valid_until": "2026-12-04T23:59:59Z",
   "conclusion_level": "L2",
   "evidence_maturity": "S0",
   "answer": "Admitted official and spatial context supports a bounded Site Reading and historical Mittagang L2 baseline. No direct site observation is admitted; current hydrology, comparison and trend remain blocked/deferred.",
@@ -90,5 +90,13 @@
   "retrospective_validation": {
     "status": "PLANNED",
     "plan": "On trigger, rerun with immutable prior revision retained; compare digests, explain changes and obtain review."
-  }
+  },
+  "validity_basis": "Founder review cadence for this evidence package; not a claim that current environmental conditions remain unchanged",
+  "expiry_conditions": [
+    "new admitted evidence",
+    "source or method version change",
+    "spatial context revision",
+    "professional review finding",
+    "demotion or stop trigger"
+  ]
 }

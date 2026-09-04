@@ -21,6 +21,7 @@ Cooma, New South Wales, Australia. Cooma locality and +10 km orientation context
 ## 4. Known from admitted official evidence
 - The admitted BoM product records 27 dated rows covering 2026-07-1 to 2026-07-27.
 - The admitted Mittagang 410033 historical answer covers 1964-03-01/2024-02-29 at S0/L2 with cutoff 2024-02-29.
+- The admitted BoM archive records El Nino Underway on 2026-07-14; no local Cooma impact is inferred, and tree-to-leaf translation requires separately admitted local evidence and method.
 
 ## 5. Historical hydrology at L2
 The admitted Mittagang 410033 TBEA is `S0 / L2`, covers `1964-03-01/2024-02-29`, and has cutoff `2024-02-29`. It is historical only, not a current-flow statement.
@@ -44,7 +45,9 @@ Exact near-current WaterNSW response bytes and qualified hydrology review are mi
 Evidence maturity `S0`; conclusion ceiling `L2`; intervention ceiling `A0`.
 
 ## 12. Expiry and triggers
-Issued: `2026-09-04T02:00:00Z`. Evidence cutoff: `2026-07-27`. Valid until: `2026-12-04 or earlier upon any update, demotion or stop trigger`.
+Issued: `2026-09-04T02:00:00Z`. Evidence cutoff: `2026-07-27`. Valid until: `2026-12-04T23:59:59Z`.
+
+Validity basis: Founder review cadence for this evidence package; not a claim that current environmental conditions remain unchanged. Expiry conditions: new admitted evidence, source or method version change, spatial context revision, professional review finding, demotion or stop trigger.
 
 - Update: new admitted evidence; source or method version change; spatial context revision; professional review finding.
 - Demote: source identity/provenance failure; calculation or contract error; evidence expiry; material professional-review defect.
