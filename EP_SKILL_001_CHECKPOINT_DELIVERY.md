@@ -18,6 +18,24 @@ RESUME_POINTER: CP3 tests
 === END DELIVERY ===
 ```
 
+## CP7
+
+```text
+=== CLIMATEOS CHECKPOINT DELIVERY ===
+
+CHECKPOINT: CP7 Draft PR
+STATE: COMPLETE
+VERIFIED_WORK: Branch published and draft PR #118 opened against main
+FILES_CHANGED: EP_SKILL_001_CHECKPOINT_DELIVERY.md
+COMMIT: 1342f9f0ecd001912f6f170b877e24f477a13d53 (implementation); final receipt follow-up commit
+TESTS: 466 passed, 1 skipped before publication
+LIMITATIONS: Human review remains pending; PR is draft
+NEXT_ACTION: Human review of PR #118; keep hydrology professional review in parallel on PR #115
+RESUME_POINTER: https://github.com/simon947161/eco-agent-system/pull/118
+
+=== END DELIVERY ===
+```
+
 ## CP3
 
 ```text
@@ -89,4 +107,3 @@ RESUME_POINTER: CP7 Draft PR
 
 === END DELIVERY ===
 ```
-
