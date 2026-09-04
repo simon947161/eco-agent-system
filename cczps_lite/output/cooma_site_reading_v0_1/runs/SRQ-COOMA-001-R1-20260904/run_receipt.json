@@ -1,0 +1,33 @@
+{
+  "schema_id": "climateos.cooma_site_reading.run_receipt.v0.1-r1",
+  "skill_id": "EP-SKILL-001",
+  "skill_version": "0.1-r1",
+  "request_id": "SRQ-COOMA-001",
+  "revision_id": "SRQ-COOMA-001-R1-20260904",
+  "parent_revision": null,
+  "issued_at": "2026-09-04T02:00:00Z",
+  "network_used": false,
+  "artifact_root": "cczps_lite/output/cooma_site_reading_v0_1",
+  "inputs": [
+    "cczps_lite/input/cooma_site_reading_request_r1.json",
+    "cczps_lite/output/cooma_official_real_data_pilot_receipt.json",
+    "cczps_lite/output/waternsw_near_current_evidence_admission/admission_receipt.json",
+    "cczps_lite/output/mittagang_410033_historical_characterisation/time_bounded_environmental_answer.json",
+    "cczps_lite/output/mittagang_410033_historical_characterisation/evidence_passport.json",
+    "cczps_lite/output/mittagang_410033_historical_characterisation/run_receipt.json"
+  ],
+  "outputs": {
+    "reading": "runs/SRQ-COOMA-001-R1-20260904/site_reading.json",
+    "answer": "runs/SRQ-COOMA-001-R1-20260904/time_bounded_environmental_answer.json",
+    "passport": "runs/SRQ-COOMA-001-R1-20260904/evidence_passport.json",
+    "action_passport": "runs/SRQ-COOMA-001-R1-20260904/action_passport.json",
+    "contracts": "runs/SRQ-COOMA-001-R1-20260904/planner_contracts.json"
+  },
+  "reading_digest": "sha256:ca1a0a8c217b7a86fdbc864dbddf2411b34bc5831d37d78571b90b8af8de1588",
+  "result": "BOUNDED_SITE_READING_PRODUCED",
+  "limitations": [
+    "ADMISSION_BLOCKED_MISSING_RAW_RESPONSE",
+    "NOT_COMPARABLE_YET",
+    "TREND_DEFERRED"
+  ]
+}
