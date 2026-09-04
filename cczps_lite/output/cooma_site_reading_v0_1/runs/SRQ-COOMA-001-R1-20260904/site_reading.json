@@ -1,0 +1,262 @@
+{
+  "skill_id": "EP-SKILL-001",
+  "skill_version": "0.1-r1",
+  "request_id": "SRQ-COOMA-001",
+  "revision_id": "SRQ-COOMA-001-R1-20260904",
+  "parent_revision": "EP-SKILL-001-COOMA-SITE-READING-V0.1",
+  "issued_at": "2026-09-04T02:00:00Z",
+  "evidence_cutoff": "2026-07-27",
+  "valid_until": "2026-12-04 or earlier upon any update, demotion or stop trigger",
+  "maximum_intervention_class": "A0",
+  "schema_id": "climateos.cooma_site_reading.v0.1-r1",
+  "reading_id": "SITE-READING-SRQ-COOMA-001-R1-20260904",
+  "place": "Cooma, New South Wales, Australia",
+  "question": "What can admitted evidence currently support as a bounded environmental Site Reading for Cooma, and what remains blocked or unknown?",
+  "decision_use": "Founder review, evidence-gap prioritisation and preparation of later professional review; not approval or operational action",
+  "direct_observation_status": "NONE_ADMITTED_FOR_THIS_READING",
+  "spatial_context": [
+    {
+      "spatial_context_id": "COOMA-LOCALITY",
+      "class": "LOCALITY_BOUNDARY",
+      "reference": "docs/tasks/task2031_2040_qgis_cooma_terrain_boundary_pack/QGIS_COOMA_TERRAIN_REVIEW_GUIDE.md",
+      "boundary": "Official NSW Cooma locality; not an LGA, catchment, hydrological boundary or final scientific study boundary."
+    },
+    {
+      "spatial_context_id": "COOMA-TERRAIN-DEM",
+      "class": "TERRAIN_DEM",
+      "reference": "docs/tasks/task2031_2040_qgis_cooma_terrain_boundary_pack/TASK2031_2040_QGIS_COOMA_TERRAIN_BOUNDARY_PACK_REPORT.md",
+      "boundary": "Bounded GA SRTM DEM and derived terrain context within the locality plus 10 km orientation extent."
+    },
+    {
+      "spatial_context_id": "COOMA-WATERCOURSES",
+      "class": "HYDROLOGY_WATERCOURSE",
+      "reference": "docs/tasks/task2041_2050_qgis_cooma_hydrology_pack/TASK2041_2050_QGIS_COOMA_HYDROLOGY_PACK_REPORT.md",
+      "boundary": "Official main-watercourse spatial context; presence is not flow, quality or condition."
+    },
+    {
+      "spatial_context_id": "COOMA-CATCHMENTS",
+      "class": "CATCHMENT_CONTEXT",
+      "reference": "docs/tasks/task2041_2050_qgis_cooma_hydrology_pack/TASK2041_2050_QGIS_COOMA_HYDROLOGY_PACK_REPORT.md",
+      "boundary": "Contracted and stream-segment catchment context; none is identified as a drinking-water supply catchment."
+    },
+    {
+      "spatial_context_id": "COOMA-ROADS-SETTLEMENT",
+      "class": "ROADS_SETTLEMENT",
+      "reference": "docs/tasks/task2051_2060_qgis_cooma_integrated_experience/TASK2051_2060_QGIS_COOMA_INTEGRATED_EXPERIENCE_REPORT.md",
+      "boundary": "Official roads and locality context bounded to the Cooma plus 10 km orientation extent."
+    }
+  ],
+  "spatial_context_warning": "Spatial presence does not itself establish environmental condition.",
+  "claims": [
+    {
+      "reasoning_type": "KNOWN_FROM_ADMITTED_EVIDENCE",
+      "statement": "The admitted BoM product records 27 dated rows covering 2026-07-1 to 2026-07-27.",
+      "evidence_ids": [
+        "COOMA-BOM-DWO-2026-07"
+      ]
+    },
+    {
+      "reasoning_type": "KNOWN_FROM_ADMITTED_EVIDENCE",
+      "statement": "The admitted Mittagang 410033 historical answer covers 1964-03-01/2024-02-29 at S0/L2 with cutoff 2024-02-29.",
+      "evidence_ids": [
+        "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1",
+        "MITTAGANG-410033-HISTORICAL-PASSPORT-V0.1",
+        "MITTAGANG-410033-HISTORICAL-CHARACTERISATION-V0.1"
+      ]
+    },
+    {
+      "reasoning_type": "DERIVED",
+      "method": "Cross-object boundary check without calculating a flow comparison",
+      "statement": "Historical L2 context exists, but the missing exact near-current response prevents a current comparison.",
+      "evidence_ids": [
+        "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1",
+        "WATERNSW-410033-NEAR-CURRENT-ADMISSION-V0.1"
+      ]
+    },
+    {
+      "reasoning_type": "INFERRED",
+      "assumptions": [
+        "Spatial layers are orientation context only",
+        "No station-to-locality representativeness is assumed"
+      ],
+      "statement": "Spatial references help scope later evidence requests but do not establish environmental condition.",
+      "evidence_ids": [
+        "COOMA-LOCALITY",
+        "COOMA-TERRAIN-DEM",
+        "COOMA-WATERCOURSES",
+        "COOMA-CATCHMENTS",
+        "COOMA-ROADS-SETTLEMENT"
+      ]
+    },
+    {
+      "reasoning_type": "UNKNOWN",
+      "statement": "Current Mittagang flow and current Cooma catchment condition are unknown."
+    },
+    {
+      "reasoning_type": "MISSING_EVIDENCE",
+      "statement": "Exact near-current WaterNSW response bytes and qualified hydrology review are missing."
+    },
+    {
+      "reasoning_type": "PROHIBITED_CONCLUSION",
+      "statement": "No current flow, trend, water security, water quality, causation, planning approval, engineering, regulatory or public-warning conclusion is permitted."
+    }
+  ],
+  "historical_hydrology": {
+    "answer_id": "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1",
+    "passport_id": "MITTAGANG-410033-HISTORICAL-PASSPORT-V0.1",
+    "run_id": "MITTAGANG-410033-HISTORICAL-CHARACTERISATION-V0.1",
+    "evidence_cutoff": "2024-02-29",
+    "maturity": "S0",
+    "conclusion_level": "L2",
+    "answer": "For the declared gauge record and method, 21,915 daily values cover every calendar date from 1964-03-01 to 2024-02-29. The all-published daily median is 148.956 ML/day and the central 80% spans 37.325 to 802.422 ML/day. Monthly and annual distributions vary substantially. These are historical descriptive indicators, not a statement of current conditions."
+  },
+  "current_hydrology": {
+    "admission_status": "ADMISSION_BLOCKED_MISSING_RAW_RESPONSE",
+    "comparison_status": "NOT_COMPARABLE_YET",
+    "trend_status": "TREND_DEFERRED",
+    "current_flow": null
+  },
+  "contracts": {
+    "PC-01": {
+      "skill_id": "EP-SKILL-001",
+      "skill_version": "0.1-r1",
+      "request_id": "SRQ-COOMA-001",
+      "revision_id": "SRQ-COOMA-001-R1-20260904",
+      "parent_revision": "EP-SKILL-001-COOMA-SITE-READING-V0.1",
+      "issued_at": "2026-09-04T02:00:00Z",
+      "evidence_cutoff": "2026-07-27",
+      "valid_until": "2026-12-04 or earlier upon any update, demotion or stop trigger",
+      "maximum_intervention_class": "A0",
+      "schema_id": "climateos.planner.pc01.site_observation.v0.1",
+      "object_id": "PC01-SRQ-COOMA-001-R1-20260904",
+      "state": "EVIDENCE_REQUIRED",
+      "observation_status": "NONE_ADMITTED_FOR_THIS_READING",
+      "observation_method": null,
+      "geometry": null,
+      "observed_at": null,
+      "limitations": [
+        "No direct human/instrument observation with time, method and geometry was admitted"
+      ]
+    },
+    "PC-02": {
+      "skill_id": "EP-SKILL-001",
+      "skill_version": "0.1-r1",
+      "request_id": "SRQ-COOMA-001",
+      "revision_id": "SRQ-COOMA-001-R1-20260904",
+      "parent_revision": "EP-SKILL-001-COOMA-SITE-READING-V0.1",
+      "issued_at": "2026-09-04T02:00:00Z",
+      "evidence_cutoff": "2026-07-27",
+      "valid_until": "2026-12-04 or earlier upon any update, demotion or stop trigger",
+      "maximum_intervention_class": "A0",
+      "schema_id": "climateos.planner.pc02.evidence_request.v0.1",
+      "object_id": "PC02-SRQ-COOMA-001-R1-20260904",
+      "state": "OPEN",
+      "question_served": "What can admitted evidence currently support as a bounded environmental Site Reading for Cooma, and what remains blocked or unknown?",
+      "requested_objects": [
+        "Exact WaterNSW 410033 near-current response and receipt",
+        "Qualified hydrology review",
+        "Admitted local ecological/soil/land-cover observations"
+      ],
+      "acceptable_source_class": "AUTHORITATIVE_AND_LAWFULLY_ADMITTED",
+      "network_limit": "SEPARATE_AUTHORIZATION_REQUIRED",
+      "cost_limit_aud": 0,
+      "fulfilment_test": "Identity, provenance, temporal/spatial fitness and review gates pass"
+    },
+    "PC-03": {
+      "skill_id": "EP-SKILL-001",
+      "skill_version": "0.1-r1",
+      "request_id": "SRQ-COOMA-001",
+      "revision_id": "SRQ-COOMA-001-R1-20260904",
+      "parent_revision": "EP-SKILL-001-COOMA-SITE-READING-V0.1",
+      "issued_at": "2026-09-04T02:00:00Z",
+      "evidence_cutoff": "2026-07-27",
+      "valid_until": "2026-12-04 or earlier upon any update, demotion or stop trigger",
+      "maximum_intervention_class": "A0",
+      "schema_id": "climateos.planner.pc03.professional_review_gate_reference.v0.1",
+      "object_id": "PC03-SRQ-COOMA-001-R1-20260904",
+      "state": "PENDING",
+      "domain": "HYDROLOGY",
+      "reference": "PR #115 / H1-H8 professional review card",
+      "evidence_version": "MITTAGANG-410033-HISTORICAL-PASSPORT-V0.1",
+      "review_questions": [
+        "Is the A+B sensitivity framing defensible?",
+        "Which uncertainty treatment is required before trend analysis?",
+        "Is the gauge boundary fit for a proposed later local question?"
+      ],
+      "signature": null,
+      "professional_signoff_simulated": false
+    },
+    "PC-04": {
+      "skill_id": "EP-SKILL-001",
+      "skill_version": "0.1-r1",
+      "request_id": "SRQ-COOMA-001",
+      "revision_id": "SRQ-COOMA-001-R1-20260904",
+      "parent_revision": "EP-SKILL-001-COOMA-SITE-READING-V0.1",
+      "issued_at": "2026-09-04T02:00:00Z",
+      "evidence_cutoff": "2026-07-27",
+      "valid_until": "2026-12-04 or earlier upon any update, demotion or stop trigger",
+      "maximum_intervention_class": "A0",
+      "schema_id": "climateos.planner.pc04.environmental_state.v0.1",
+      "object_id": "PC04-SRQ-COOMA-001-R1-20260904",
+      "state": "UNKNOWN",
+      "state_variable": "CURRENT_COOMA_AND_MITTAGANG_HYDROLOGICAL_CONDITION",
+      "assertion_class": "UNKNOWN",
+      "value": null,
+      "supporting_evidence": [
+        "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1"
+      ],
+      "blocked_evidence": [
+        "WATERNSW-410033-NEAR-CURRENT-ADMISSION-V0.1"
+      ],
+      "derivation": "No current-state derivation performed",
+      "confidence_basis": "Historical baseline reproducible; current evidence blocked"
+    },
+    "PC-13": {
+      "skill_id": "EP-SKILL-001",
+      "skill_version": "0.1-r1",
+      "request_id": "SRQ-COOMA-001",
+      "revision_id": "SRQ-COOMA-001-R1-20260904",
+      "parent_revision": "EP-SKILL-001-COOMA-SITE-READING-V0.1",
+      "issued_at": "2026-09-04T02:00:00Z",
+      "evidence_cutoff": "2026-07-27",
+      "valid_until": "2026-12-04 or earlier upon any update, demotion or stop trigger",
+      "maximum_intervention_class": "A0",
+      "schema_id": "climateos.planner.pc13.action_passport.v0.1",
+      "action_passport_id": "PC13-SRQ-COOMA-001-R1-20260904",
+      "status": "READY_FOR_HUMAN_REVIEW",
+      "question": "What can admitted evidence currently support as a bounded environmental Site Reading for Cooma, and what remains blocked or unknown?",
+      "environmental_state_ids": [
+        "PC04-SRQ-COOMA-001-R1-20260904"
+      ],
+      "permissible_claims": [
+        "Historical S0/L2 context exists",
+        "Current comparison remains blocked"
+      ],
+      "recommended_consideration": "Preserve records, request missing evidence and prepare qualified review",
+      "permitted_a0_actions": [
+        "MONITORING_PREPARATION",
+        "EVIDENCE_REQUEST",
+        "RECORD_PRESERVATION",
+        "REVIEW_PREPARATION"
+      ],
+      "prohibited_actions": [
+        "A1_OR_HIGHER",
+        "ENGINEERING",
+        "REGULATORY",
+        "PROCUREMENT",
+        "PUBLIC_WARNING"
+      ],
+      "authority": {
+        "accountable_human_role": "Founder or authorised reviewer",
+        "maximum_intervention_class": "A0"
+      },
+      "professional_review_gates": [
+        "PC03-SRQ-COOMA-001-R1-20260904"
+      ]
+    }
+  },
+  "time_bounded_answer_id": "TBEA-SRQ-COOMA-001-R1-20260904",
+  "evidence_passport_id": "EEP-SRQ-COOMA-001-R1-20260904",
+  "review_state": "PENDING_HUMAN_REVIEW",
+  "content_digest": "sha256:95dd00df3dd670ad3f2569224d82617a31be1907851574a9b0c23a9e3299788b"
+}

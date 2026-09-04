@@ -1,0 +1,43 @@
+{
+  "skill_id": "EP-SKILL-001",
+  "skill_version": "0.1-r1",
+  "request_id": "SRQ-COOMA-001",
+  "revision_id": "SRQ-COOMA-001-R1-20260904",
+  "parent_revision": "EP-SKILL-001-COOMA-SITE-READING-V0.1",
+  "issued_at": "2026-09-04T02:00:00Z",
+  "evidence_cutoff": "2026-07-27",
+  "valid_until": "2026-12-04 or earlier upon any update, demotion or stop trigger",
+  "maximum_intervention_class": "A0",
+  "schema_id": "climateos.planner.pc13.action_passport.v0.1",
+  "action_passport_id": "PC13-SRQ-COOMA-001-R1-20260904",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "question": "What can admitted evidence currently support as a bounded environmental Site Reading for Cooma, and what remains blocked or unknown?",
+  "environmental_state_ids": [
+    "PC04-SRQ-COOMA-001-R1-20260904"
+  ],
+  "permissible_claims": [
+    "Historical S0/L2 context exists",
+    "Current comparison remains blocked"
+  ],
+  "recommended_consideration": "Preserve records, request missing evidence and prepare qualified review",
+  "permitted_a0_actions": [
+    "MONITORING_PREPARATION",
+    "EVIDENCE_REQUEST",
+    "RECORD_PRESERVATION",
+    "REVIEW_PREPARATION"
+  ],
+  "prohibited_actions": [
+    "A1_OR_HIGHER",
+    "ENGINEERING",
+    "REGULATORY",
+    "PROCUREMENT",
+    "PUBLIC_WARNING"
+  ],
+  "authority": {
+    "accountable_human_role": "Founder or authorised reviewer",
+    "maximum_intervention_class": "A0"
+  },
+  "professional_review_gates": [
+    "PC03-SRQ-COOMA-001-R1-20260904"
+  ]
+}

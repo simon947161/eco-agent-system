@@ -1,0 +1,58 @@
+{
+  "schema_id": "climateos.environmental_evidence_passport.v0.1",
+  "passport_id": "EEP-SRQ-COOMA-001-R1-20260904",
+  "subject": "Cooma bounded Site Reading",
+  "source_identity": {
+    "request_id": "SRQ-COOMA-001",
+    "evidence_object_ids": [
+      "COOMA-OFFICIAL-REAL-DATA-PILOT-2026-07",
+      "WATERNSW-410033-NEAR-CURRENT-ADMISSION-V0.1",
+      "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1",
+      "MITTAGANG-410033-HISTORICAL-PASSPORT-V0.1",
+      "MITTAGANG-410033-HISTORICAL-CHARACTERISATION-V0.1"
+    ],
+    "input_digests": [
+      "sha256:5c5c3d1657285f8c90ba7e871544aed7face0bde2131474babe506bb578d6dec",
+      "sha256:33b22092f0332426e39a5414fbeb545c717b4382b4e8bae5006cad4418071bc5",
+      "sha256:fbd9d664b155ca5b5d6f8804e0ed2ed63051bf85162b4974c9ab5b8a95a73d35",
+      "sha256:a0ec146f737da595a942bfffc8abc231a8142ae0afeb08c141f14cabcd6378c6",
+      "sha256:3207d59476dd2b80d18b7f39b8e4f7b641e42c129f1d2c0912280537e75ac4cf"
+    ]
+  },
+  "method": {
+    "skill_id": "EP-SKILL-001",
+    "version": "0.1-r1",
+    "revision_id": "SRQ-COOMA-001-R1-20260904",
+    "parent_revision": "EP-SKILL-001-COOMA-SITE-READING-V0.1",
+    "method": "Validated resolution and boundary-preserving synthesis; no new environmental calculation"
+  },
+  "derived_claim": {
+    "answer_id": "TBEA-SRQ-COOMA-001-R1-20260904",
+    "conclusion_level": "L2",
+    "evidence_maturity": "S0",
+    "evidence_cutoff": "2026-07-27"
+  },
+  "limitations": {
+    "missing_critical_evidence": [
+      "Current Mittagang flow and current Cooma catchment condition are unknown.",
+      "Exact near-current WaterNSW response bytes and qualified hydrology review are missing."
+    ],
+    "prohibited_actions": [
+      "A1_OR_HIGHER",
+      "ENGINEERING",
+      "REGULATORY",
+      "PROCUREMENT",
+      "PUBLIC_WARNING"
+    ],
+    "trend_status": "TREND_DEFERRED"
+  },
+  "review": {
+    "status": "PENDING_HUMAN_REVIEW",
+    "professional_gate_id": "PC03-SRQ-COOMA-001-R1-20260904",
+    "professional_signoff_simulated": false
+  },
+  "retrospective_validation": {
+    "status": "PLANNED",
+    "plan": "On trigger, rerun with immutable prior revision retained; compare digests, explain changes and obtain review."
+  }
+}

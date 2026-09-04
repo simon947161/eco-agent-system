@@ -1,0 +1,94 @@
+{
+  "schema_id": "climateos.time_bounded_environmental_answer.v0.1",
+  "answer_id": "TBEA-SRQ-COOMA-001-R1-20260904",
+  "question": "What can admitted evidence currently support as a bounded environmental Site Reading for Cooma, and what remains blocked or unknown?",
+  "decision_use": "Founder review, evidence-gap prioritisation and preparation of later professional review; not approval or operational action",
+  "place": "Cooma, New South Wales, Australia",
+  "spatial_boundary": "Cooma locality and +10 km orientation context; Mittagang gauge 410033 remains station-bounded; no catchment-wide inference",
+  "assessment_period": "Historical evidence 1964-03-01/2024-02-29; bounded source context through 2026-07-27",
+  "evidence_cutoff": "2026-07-27",
+  "issued_at": "2026-09-04T02:00:00Z",
+  "valid_until": "2026-12-04 or earlier upon any update, demotion or stop trigger",
+  "conclusion_level": "L2",
+  "evidence_maturity": "S0",
+  "answer": "Admitted official and spatial context supports a bounded Site Reading and historical Mittagang L2 baseline. No direct site observation is admitted; current hydrology, comparison and trend remain blocked/deferred.",
+  "confidence": "High for identity and historical provenance; none for current condition because near-current raw evidence and professional review are absent.",
+  "supporting_evidence": [
+    "COOMA-OFFICIAL-REAL-DATA-PILOT-2026-07",
+    "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1",
+    "MITTAGANG-410033-HISTORICAL-PASSPORT-V0.1",
+    "MITTAGANG-410033-HISTORICAL-CHARACTERISATION-V0.1",
+    "COOMA-LOCALITY",
+    "COOMA-TERRAIN-DEM",
+    "COOMA-WATERCOURSES",
+    "COOMA-CATCHMENTS",
+    "COOMA-ROADS-SETTLEMENT"
+  ],
+  "conflicting_evidence": [
+    "All-published and A+B historical summaries differ; sensitivity is preserved",
+    "ADMISSION_BLOCKED_MISSING_RAW_RESPONSE",
+    "NOT_COMPARABLE_YET",
+    "TREND_DEFERRED"
+  ],
+  "missing_critical_evidence": [
+    "Current Mittagang flow and current Cooma catchment condition are unknown.",
+    "Exact near-current WaterNSW response bytes and qualified hydrology review are missing."
+  ],
+  "local_translation_path": [
+    "official evidence",
+    "bounded spatial context",
+    "historical L2 baseline",
+    "current evidence gate",
+    "human review"
+  ],
+  "alternative_explanations": [
+    "Differences across years or decades may reflect hydrology, quality classification, gauging or source-processing changes."
+  ],
+  "consequence_if_true": "A reusable bounded evidence request and review package is available.",
+  "consequence_if_false": "Demote and preserve this revision; correct inputs or method in a new revision.",
+  "intervention_window": "A0 evidence, monitoring preparation, record preservation and review preparation only.",
+  "permitted_actions": [
+    "MONITORING_PREPARATION",
+    "EVIDENCE_REQUEST",
+    "RECORD_PRESERVATION",
+    "REVIEW_PREPARATION"
+  ],
+  "prohibited_actions": [
+    "A1_OR_HIGHER",
+    "ENGINEERING",
+    "REGULATORY",
+    "PROCUREMENT",
+    "PUBLIC_WARNING"
+  ],
+  "update_triggers": [
+    "new admitted evidence",
+    "source or method version change",
+    "spatial context revision",
+    "professional review finding"
+  ],
+  "demotion_triggers": [
+    "source identity/provenance failure",
+    "calculation or contract error",
+    "evidence expiry",
+    "material professional-review defect"
+  ],
+  "stop_conditions": [
+    "attempted A1+ use",
+    "attempted current flow/trend claim",
+    "unresolved identity mismatch",
+    "attempted engineering/regulatory/procurement/public-warning use"
+  ],
+  "human_review": {
+    "status": "PENDING_HUMAN_REVIEW",
+    "professional_gate_id": "PC03-SRQ-COOMA-001-R1-20260904",
+    "professional_signoff_simulated": false
+  },
+  "official_confirmation": {
+    "scope": "Source identity and admitted facts only",
+    "relationship_to_answer": "Does not confirm local current condition or Site Reading interpretation"
+  },
+  "retrospective_validation": {
+    "status": "PLANNED",
+    "plan": "On trigger, rerun with immutable prior revision retained; compare digests, explain changes and obtain review."
+  }
+}
