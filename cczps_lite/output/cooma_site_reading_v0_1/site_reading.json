@@ -1,0 +1,91 @@
+{
+  "schema_id": "climateos.cooma_site_reading.v0.1",
+  "reading_id": "EP-SKILL-001-COOMA-SITE-READING-V0.1",
+  "generated_at": "2026-09-04T01:54:54Z",
+  "place": {
+    "name": "Cooma",
+    "jurisdiction": "New South Wales, Australia",
+    "reasoning_type": "KNOWN_FROM_ADMITTED_EVIDENCE"
+  },
+  "workflow": [
+    "LOCATE",
+    "OBSERVE",
+    "CONTEXTUALISE",
+    "COMPARE_WHERE_PERMITTED",
+    "IDENTIFY_EVIDENCE_GAPS",
+    "PRODUCE_BOUNDED_SITE_READING",
+    "RECOMMEND_NEXT_EVIDENCE",
+    "HUMAN_REVIEW"
+  ],
+  "claims": [
+    {
+      "reasoning_type": "OBSERVED",
+      "statement": "The admitted BoM product contains 27 dated Cooma rows from 2026-07-1 to 2026-07-27.",
+      "evidence_ids": [
+        "COOMA-BOM-DWO-2026-07"
+      ],
+      "maximum_conclusion_level": "L1"
+    },
+    {
+      "reasoning_type": "KNOWN_FROM_ADMITTED_EVIDENCE",
+      "statement": "The dated BoM outlook recorded El Nino Underway on 2026-07-14.",
+      "evidence_ids": [
+        "BOM-ENSO-MONITORING-2026-07-14"
+      ],
+      "maximum_conclusion_level": "L1"
+    },
+    {
+      "reasoning_type": "DERIVED",
+      "statement": "The committed public receipt supports source identity and bounded coverage, but intentionally omits public quantitative observation rows.",
+      "evidence_ids": [
+        "COOMA-BOM-DWO-2026-07",
+        "COOMA-OFFICIAL-REAL-DATA-PILOT-2026-07"
+      ],
+      "maximum_conclusion_level": "L1"
+    },
+    {
+      "reasoning_type": "PROHIBITED_CONCLUSION",
+      "statement": "The admitted evidence does not establish Cooma water security, water quality, catchment condition, causation, forecast, planning approval, or operational action.",
+      "evidence_ids": [
+        "COOMA-OFFICIAL-REAL-DATA-PILOT-2026-07"
+      ],
+      "maximum_conclusion_level": "L1"
+    }
+  ],
+  "comparison": {
+    "status": "NOT_COMPARABLE_YET",
+    "statistics": null,
+    "reasoning_type": "MISSING_EVIDENCE"
+  },
+  "evidence_gaps": [
+    {
+      "reasoning_type": "MISSING_EVIDENCE",
+      "status": "ADMISSION_BLOCKED_MISSING_RAW_RESPONSE",
+      "item": "Exact near-current WaterNSW raw response and retrieval receipt"
+    },
+    {
+      "reasoning_type": "UNKNOWN",
+      "status": "TREND_DEFERRED",
+      "item": "Qualified hydrology interpretation of station representativeness, aggregation, timezone and quality semantics"
+    },
+    {
+      "reasoning_type": "MISSING_EVIDENCE",
+      "status": "OPEN",
+      "item": "Admitted local ecological, soil, land-cover and catchment-scale observations"
+    }
+  ],
+  "site_reading": "Cooma is located and represented by admitted official source identities and a bounded July 2026 BoM receipt. The receipt proves product coverage and a dated large-scale outlook state, not a complete local environmental condition. Hydrology comparison and trend remain deferred; this does not prevent the bounded location, evidence inventory, gap finding, and next-evidence recommendation.",
+  "next_evidence": [
+    "Retrieve and content-address the exact authorised WaterNSW 410033 response with its receipt.",
+    "Obtain qualified hydrology review before any cross-period comparison or trend statement.",
+    "Admit spatially explicit catchment, terrain, land-cover and ecological observations under existing evidence contracts."
+  ],
+  "human_review": {
+    "required": true,
+    "status": "PENDING_HUMAN_REVIEW",
+    "professional_signoff_simulated": false
+  },
+  "evidence_maturity": "S0",
+  "maximum_conclusion_level": "L1",
+  "content_digest": "sha256:fca39852d420eeb11f7dcefe89550f97ba8f0cfdc5f5b006c3ce6f9300be8e53"
+}
