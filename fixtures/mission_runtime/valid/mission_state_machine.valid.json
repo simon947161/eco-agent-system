@@ -1,0 +1,37 @@
+{
+  "mission_id": "MISSION-RUNTIME-PHASE-A",
+  "current_state": "FOUNDER_GATE",
+  "transition_history": [
+    {
+      "from": null,
+      "to": "DRAFT",
+      "timestamp": "2026-07-27T00:00:00Z",
+      "authority": "Mission Control",
+      "reason": "Mission registered",
+      "evidence_refs": ["issue:103"]
+    },
+    {
+      "from": "DRAFT",
+      "to": "PLANNED",
+      "timestamp": "2026-07-27T00:10:00Z",
+      "authority": "Founder Decision",
+      "reason": "Prototype design approved",
+      "evidence_refs": ["actp:2026-07-27"]
+    },
+    {
+      "from": "PLANNED",
+      "to": "FOUNDER_GATE",
+      "timestamp": "2026-07-27T01:00:00Z",
+      "authority": "Mission Control",
+      "reason": "Static evidence package complete",
+      "evidence_refs": ["pr:104"]
+    }
+  ],
+  "authority_context": {
+    "founder_gate_required": true,
+    "implementation_authority": false,
+    "approved_transition_classes": ["STATIC_DESIGN"]
+  },
+  "resume_pointer": "checkpoint:MISSION-RUNTIME-PHASE-A-001",
+  "blocked_reason": null
+}

@@ -1,0 +1,34 @@
+{
+  "mission_id": "MISSION-RUNTIME-PHASE-A",
+  "objective": "Design and statically validate a shared Mission Runtime before executable implementation.",
+  "domain_runtime": "SHARED",
+  "work_packages": [
+    {
+      "id": "A1",
+      "purpose": "Define lifecycle and plan contracts",
+      "deliverables": ["state schema", "plan schema"],
+      "dependencies": [],
+      "completion_criteria": ["schemas parse", "valid fixtures pass"],
+      "validation_method": ["JSON Schema Draft 2020-12"]
+    },
+    {
+      "id": "A2",
+      "purpose": "Define checkpoint and context packet",
+      "deliverables": ["checkpoint schema", "context schema"],
+      "dependencies": ["A1"],
+      "completion_criteria": ["resume safety encoded"],
+      "validation_method": ["positive and negative fixtures"]
+    }
+  ],
+  "capability_envelope": {
+    "allowed_tools": ["repository_read", "draft_branch_write", "static_validation"],
+    "protected_writes": ["mainline_write", "merge", "deploy", "external_contact"],
+    "network_access": false,
+    "external_contact": false,
+    "merge_authority": false,
+    "child_may_widen": false
+  },
+  "validation_plan": ["schema meta-validation", "positive fixtures", "negative mutation cases"],
+  "stop_conditions": ["executable implementation requested", "mainline change requested", "merge requested"],
+  "founder_gate": ["approve lifecycle", "approve protected writes", "approve authority inheritance", "approve resume policy", "decide executable validator"]
+}
