@@ -1,0 +1,80 @@
+{
+  "PC-01": {
+    "state": "NO_NEW_OBSERVATION",
+    "revision_id": "SRQ-COOMA-001-R2-20260905",
+    "parent_revision": "SRQ-COOMA-001-R1-20260904"
+  },
+  "PC-02": {
+    "state": "OPEN",
+    "revision_id": "SRQ-COOMA-001-R2-20260905",
+    "parent_revision": "SRQ-COOMA-001-R1-20260904",
+    "requests": [
+      "ADMITTED_EQUIVALENT_NEAR_CURRENT_FLOW",
+      "QUALIFIED_HYDROLOGY_REVIEW",
+      "LOCAL_OBSERVATIONS"
+    ]
+  },
+  "PC-03": {
+    "state": "PENDING",
+    "revision_id": "SRQ-COOMA-001-R2-20260905",
+    "parent_revision": "SRQ-COOMA-001-R1-20260904",
+    "reference": "PR #115 parallel human hydrology review"
+  },
+  "PC-04": {
+    "state": "UNKNOWN",
+    "revision_id": "SRQ-COOMA-001-R2-20260905",
+    "parent_revision": "SRQ-COOMA-001-R1-20260904",
+    "value": null,
+    "current_flow": null
+  },
+  "PC-13": {
+    "schema_id": "climateos.planner.pc13.action_passport.v0.1",
+    "action_passport_id": "PC13-SRQ-COOMA-001-R2-20260905",
+    "revision_id": "SRQ-COOMA-001-R2-20260905",
+    "parent_revision": "SRQ-COOMA-001-R1-20260904",
+    "maximum_intervention_class": "A0",
+    "permitted_a0_actions": [
+      "EVIDENCE_FRESHNESS_INSPECTION",
+      "EVIDENCE_REQUEST_PREPARATION",
+      "RECORD_PRESERVATION",
+      "MONITORING_PREPARATION",
+      "INTERNAL_WATCH_GENERATION",
+      "PROFESSIONAL_REVIEW_REQUEST"
+    ],
+    "a1_candidates": [
+      {
+        "candidate": "SCHEDULE_LOW_REGRET_INSPECTION",
+        "status": "NOT_AUTHORISED",
+        "authority_required": "NAMED_HUMAN_APPROVAL_REQUIRED"
+      },
+      {
+        "candidate": "INCREASE_MONITORING_FREQUENCY",
+        "status": "NOT_AUTHORISED",
+        "authority_required": "NAMED_HUMAN_APPROVAL_REQUIRED"
+      },
+      {
+        "candidate": "PRESERVE_OPTIONS",
+        "status": "NOT_AUTHORISED",
+        "authority_required": "NAMED_HUMAN_APPROVAL_REQUIRED"
+      },
+      {
+        "candidate": "COMMUNICATE_UNCERTAINTY_INTERNALLY",
+        "status": "NOT_AUTHORISED",
+        "authority_required": "NAMED_HUMAN_APPROVAL_REQUIRED"
+      }
+    ],
+    "prohibited_actions": [
+      "A2_OR_HIGHER",
+      "PUBLIC_WARNING",
+      "CURRENT_FLOW_CLAIM",
+      "DROUGHT_DECLARATION",
+      "DRINKING_WATER_CONCLUSION",
+      "ENGINEERING",
+      "REGULATORY",
+      "PROCUREMENT",
+      "AUTONOMOUS_OPERATION",
+      "PRIVATE_COUNCIL_DATA_USE"
+    ],
+    "status": "READY_FOR_HUMAN_REVIEW"
+  }
+}

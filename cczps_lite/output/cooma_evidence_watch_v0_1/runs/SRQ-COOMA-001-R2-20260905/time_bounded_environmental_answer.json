@@ -1,0 +1,89 @@
+{
+  "schema_id": "climateos.time_bounded_environmental_answer.v0.1",
+  "answer_id": "TBEA-SRQ-COOMA-001-R2-20260905",
+  "question": "As of the declared cutoff, which committed Cooma evidence is current, stale, context-only, blocked or missing, and what bounded action is proportionate?",
+  "decision_use": "Founder review of offline evidence freshness and convergence mechanics; not a real refresh or operational decision",
+  "place": "Cooma, New South Wales, Australia",
+  "spatial_boundary": "Cooma locality +10 km orientation; gauge 410033 remains station-bounded",
+  "assessment_period": "Offline evaluation of committed evidence at fixed clock 2026-09-05T03:00:00Z",
+  "evidence_cutoff": "2026-07-27",
+  "issued_at": "2026-09-05T03:00:00Z",
+  "valid_until": "2026-10-05T23:59:59Z",
+  "conclusion_level": "L2",
+  "evidence_maturity": "S0",
+  "answer": "The historical Mittagang L2 baseline remains valid for historical use. Committed July weather and ENSO context are stale for current-condition use; ENSO and QGIS remain context only. Current hydrology is unknown because near-current flow is not admitted.",
+  "confidence": "High for offline state classification; none for current hydrological condition",
+  "supporting_evidence": [
+    "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1"
+  ],
+  "conflicting_evidence": [
+    "Historical all-published and A+B summaries differ; sensitivity remains visible"
+  ],
+  "missing_critical_evidence": [
+    "ADMITTED_EQUIVALENT_NEAR_CURRENT_FLOW",
+    "QUALIFIED_HYDROLOGY_REVIEW",
+    "LOCAL_OBSERVATIONS"
+  ],
+  "local_translation_path": [
+    "freshness records",
+    "convergence matrix",
+    "human review"
+  ],
+  "alternative_explanations": [
+    "equivalent-method observations after 2024-02-29",
+    "qualified hydrology review",
+    "uncertainty model beyond source quality categories",
+    "storage, extraction, demand, rainfall and snow evidence"
+  ],
+  "consequence_if_true": "An auditable refresh plan is available without claiming a real refresh",
+  "consequence_if_false": "Demote this revision and correct inputs or policy in a new immutable revision",
+  "intervention_window": "A0 only",
+  "permitted_actions": [
+    "EVIDENCE_FRESHNESS_INSPECTION",
+    "EVIDENCE_REQUEST_PREPARATION",
+    "RECORD_PRESERVATION",
+    "MONITORING_PREPARATION",
+    "INTERNAL_WATCH_GENERATION",
+    "PROFESSIONAL_REVIEW_REQUEST"
+  ],
+  "prohibited_actions": [
+    "A2_OR_HIGHER",
+    "PUBLIC_WARNING",
+    "CURRENT_FLOW_CLAIM",
+    "DROUGHT_DECLARATION",
+    "DRINKING_WATER_CONCLUSION",
+    "ENGINEERING",
+    "REGULATORY",
+    "PROCUREMENT",
+    "AUTONOMOUS_OPERATION",
+    "PRIVATE_COUNCIL_DATA_USE"
+  ],
+  "update_triggers": [
+    "new separately authorised admitted evidence",
+    "source or method revision",
+    "professional review"
+  ],
+  "demotion_triggers": [
+    "identity/provenance failure",
+    "calculation error",
+    "expiry",
+    "material review defect"
+  ],
+  "stop_conditions": [
+    "attempted current-condition claim",
+    "network attempt",
+    "A2+ or public action"
+  ],
+  "human_review": {
+    "status": "PENDING_FOUNDER_REVIEW",
+    "professional_gate": "PR #115 remains parallel and non-blocking"
+  },
+  "official_confirmation": {
+    "scope": "source facts only",
+    "relationship_to_answer": "No current local confirmation"
+  },
+  "retrospective_validation": {
+    "status": "PLANNED",
+    "plan": "Compare immutable revisions after authorised evidence update"
+  }
+}
