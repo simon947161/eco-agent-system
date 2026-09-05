@@ -1,6 +1,6 @@
 # EP-SKILL-002 Founder Gate — Cooma Current Evidence Refresh & Convergence v0.1
 
-Date: 2026-09-04  
+Date: 2026-09-04
 State: `FOUNDER_AUTHORISED_OPTION_B / DESIGN_GATE_COMPLETE / IMPLEMENTATION_NOT_STARTED`
 Authoritative baseline: `598eed3d65c9d7d9521166908df50475d20951ca`
 
