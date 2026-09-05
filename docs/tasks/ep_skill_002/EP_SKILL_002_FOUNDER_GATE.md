@@ -1,8 +1,14 @@
 # EP-SKILL-002 Founder Gate — Cooma Current Evidence Refresh & Convergence v0.1
 
 Date: 2026-09-04  
-State: `FOUNDER_REVIEW_REQUIRED / DESIGN_GATE_ONLY / IMPLEMENTATION_NOT_STARTED`  
+State: `FOUNDER_AUTHORISED_OPTION_B / DESIGN_GATE_COMPLETE / IMPLEMENTATION_NOT_STARTED`  
 Authoritative baseline: `598eed3d65c9d7d9521166908df50475d20951ca`
+
+## Founder decision — 2026-09-05
+
+`AUTHORISE_OPTION_B`
+
+Founder authorises the bounded offline EP-SKILL-002 implementation described in Option B, subject to the orthogonal-state correction below. This is not network authority: no external API call, new environmental-data retrieval, WaterNSW authentication, public release, A2+ action or current-condition conclusion is authorised. Any future Option A execution requires a separate exact Founder network token.
 
 ## 1. Current accepted baseline
 
@@ -25,15 +31,17 @@ PR #115 is `PARALLEL HUMAN REVIEW / NOT MAINLINE BLOCKER`. PR #116 is `DESIGN PR
 
 > As of a declared evidence cutoff, which Cooma evidence streams are current, stale, conflicting, blocked or missing; what pattern, if any, is supportable; when must the answer be refreshed; and what A0/A1 action is proportionate?
 
-```text
-available → retrieved → admitted → current
-                         ├─ stale → expired
-                         ├─ conflicting
-                         ├─ blocked
-                         └─ missing
+The states are orthogonal and may coexist. They must not be implemented as one mutually exclusive freshness enum:
+
+```yaml
+availability_state: AVAILABLE | NOT_AVAILABLE | ACCESS_BLOCKED | UNKNOWN
+admission_state: NOT_RETRIEVED | RETRIEVED_PENDING_VALIDATION | ADMITTED | REJECTED | ADMISSION_BLOCKED
+temporal_state: NOT_EVALUATED | CURRENT_FOR_DECLARED_USE | STALE | EXPIRED | NOT_APPLICABLE_HISTORICAL_BASELINE
+evidence_relation: SUPPORTING | CONFLICTING | CONTEXT_ONLY | MISSING_FOR_QUESTION | NOT_FIT_FOR_USE | UNKNOWN
+evidence_role: CURRENT_OBSERVATION | HISTORICAL_BASELINE | LARGE_SCALE_CONTEXT | SPATIAL_CONTEXT | METADATA | REVIEW_GATE | MISSING_REQUIRED_LINE
 ```
 
-`available` is discoverable, not retrieved. `retrieved` requires bytes and receipt, not admission. `admitted` requires identity, provenance, integrity, licence, spatial/temporal fitness and review gates. `current` is question-specific and requires a declared freshness rule. Official status alone grants none of the later states.
+Availability is not retrieval. Retrieval is not admission. Admission is not currency. Conflict is claim-relative, not temporal. A historical baseline can remain valid for its declared role while being inapplicable to current-condition freshness. Official status alone grants no temporal or local fitness, and a source cannot promote itself.
 
 ## 3. Evidence-source and freshness matrix
 
@@ -92,7 +100,11 @@ observed_at:
 retrieved_at:
 admitted_at:
 evidence_cutoff:
-freshness_class: AVAILABLE | RETRIEVED | ADMITTED | CURRENT | STALE | EXPIRED | CONFLICTING | BLOCKED | MISSING
+evidence_role: CURRENT_OBSERVATION | HISTORICAL_BASELINE | LARGE_SCALE_CONTEXT | SPATIAL_CONTEXT | METADATA | REVIEW_GATE | MISSING_REQUIRED_LINE
+availability_state: AVAILABLE | NOT_AVAILABLE | ACCESS_BLOCKED | UNKNOWN
+admission_state: NOT_RETRIEVED | RETRIEVED_PENDING_VALIDATION | ADMITTED | REJECTED | ADMISSION_BLOCKED
+temporal_state: NOT_EVALUATED | CURRENT_FOR_DECLARED_USE | STALE | EXPIRED | NOT_APPLICABLE_HISTORICAL_BASELINE
+evidence_relation: SUPPORTING | CONFLICTING | CONTEXT_ONLY | MISSING_FOR_QUESTION | NOT_FIT_FOR_USE | UNKNOWN
 fresh_until:
 expiry_reason:
 update_trigger:
@@ -101,7 +113,7 @@ temporal_fitness:
 review_state:
 ```
 
-The three timestamps are distinct and nullable with reason. `fresh_until` is machine-readable when time-based, otherwise paired with a deterministic event rule. A record cannot promote its own source.
+The three timestamps are distinct and nullable with reason. `fresh_until` is machine-readable when time-based, otherwise paired with a deterministic event rule. The five state dimensions are independently evaluated and can coexist; a record cannot promote its own source.
 
 ### Evidence Convergence Matrix
 
@@ -199,9 +211,7 @@ Benefit: no implementation risk. Cost: no reusable freshness/convergence/watch m
 
 ## 12. Next executable work unit
 
-Only after `AUTHORISE_OPTION_B`: branch from then-current `main`; add versioned Freshness/Convergence/Refresh objects by reusing EP-SKILL-001 envelopes; add a fixed-clock offline R2 fixture parented to `SRQ-COOMA-001-R1-20260904`; issue revised Answer/Passport/Receipt/Founder Watch without unsupported promotion; run targeted/full tests; open a separate Draft PR; stop before network access.
-
-Founder must choose: `AUTHORISE_OPTION_B`, `AUTHORISE_OPTION_A_WITH_EXACT_NETWORK_TOKEN`, or `HOLD_OPTION_C`.
+Founder selected `AUTHORISE_OPTION_B`. After this Gate is merged: branch from the new `main`; add versioned Freshness/Convergence/Refresh objects by reusing EP-SKILL-001 envelopes; add a fixed-clock offline R2 fixture parented to `SRQ-COOMA-001-R1-20260904`; issue revised Answer/Passport/Receipt/Founder Watch without unsupported promotion; run targeted/full tests; open a separate Draft PR; stop before network access.
 
 ## 13. CRP harvest block
 
