@@ -1,0 +1,16 @@
+{
+  "receipt_version": "ggg-receipt-v0.2",
+  "receipt_id": "RCP-GGG-PILOT-001-001",
+  "handoff_id": "HO-SYN-CLIMATE-BUILD-001",
+  "correlation_id": "COR-GGG-PILOT-001",
+  "receiver": "BUILDINGOS",
+  "status": "ACCEPTED",
+  "received_at": "2026-08-01T00:00:01Z",
+  "envelope_sha256": "3e4373fcf25da7ef3bdfeddc91387bda6e03feb5c3068a43d524ccf36756c402",
+  "validator_version": "ggg-transport-validator-v0.2",
+  "evidence_state_preserved": true,
+  "authority_preserved": true,
+  "external_action": false,
+  "mainline_write": false,
+  "reasons": []
+}

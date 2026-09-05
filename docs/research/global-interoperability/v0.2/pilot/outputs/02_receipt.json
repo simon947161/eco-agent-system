@@ -1,0 +1,16 @@
+{
+  "receipt_version": "ggg-receipt-v0.2",
+  "receipt_id": "RCP-GGG-PILOT-001-002",
+  "handoff_id": "HO-SYN-BUILD-ECO-002",
+  "correlation_id": "COR-GGG-PILOT-001",
+  "receiver": "ECOCHAIN",
+  "status": "ACCEPTED",
+  "received_at": "2026-08-01T00:00:02Z",
+  "envelope_sha256": "8d522a667359eae4868534f50824a4c1e620730d4b18c57467a7e53130c2265c",
+  "validator_version": "ggg-transport-validator-v0.2",
+  "evidence_state_preserved": true,
+  "authority_preserved": true,
+  "external_action": false,
+  "mainline_write": false,
+  "reasons": []
+}

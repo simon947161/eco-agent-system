@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/schemas/cross-os-transport-envelope-v0.2.json",
+  "title": "GGG Cross-OS Transport Envelope v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "handoff_id", "correlation_id", "object_id", "object_type", "source_system", "target_system", "evidence_state", "synthetic", "authority", "provenance", "boundaries", "measurement", "transformations", "uncertainty", "limitations", "permitted_use", "governance", "privacy_boundary", "payload"],
+  "properties": {
+    "contract_version": {"const": "ggg-transport-v0.2"},
+    "handoff_id": {"type": "string", "pattern": "^HO-[A-Z0-9-]{3,80}$"},
+    "correlation_id": {"type": "string", "pattern": "^COR-[A-Z0-9-]{3,80}$"},
+    "object_id": {"type": "string", "pattern": "^OBJ-[A-Z0-9-]{3,80}$"},
+    "object_type": {"enum": ["EvidenceObject", "DomainClaim", "RegistrySubmission"]},
+    "source_system": {"enum": ["MISSION_CONTROL", "CLIMATEOS", "CARBONOS", "BUILDINGOS", "ECOCHAIN", "GEGG"]},
+    "target_system": {"enum": ["MISSION_CONTROL", "CLIMATEOS", "CARBONOS", "BUILDINGOS", "ECOCHAIN", "GEGG"]},
+    "evidence_state": {"enum": ["OBSERVED", "PUBLISHED_PLAN", "MODELLED", "INFERRED", "SYNTHETIC"]},
+    "synthetic": {"const": true},
+    "authority": {"type": "object", "additionalProperties": false, "required": ["sender_role", "receiver_role", "claim_authority", "decision_authorized"], "properties": {"sender_role": {"type": "string"}, "receiver_role": {"type": "string"}, "claim_authority": {"enum": ["DOMAIN_ONLY", "SUPPORT_ONLY", "REGISTRY_ADAPTER_ONLY"]}, "decision_authorized": {"const": false}}},
+    "provenance": {"type": "object", "additionalProperties": false, "required": ["source_id", "publisher_or_provider", "source_version", "retrieved_at", "event_time", "sha256", "upstream_object_ids"], "properties": {"source_id": {"type": "string", "minLength": 3}, "publisher_or_provider": {"type": "string", "minLength": 2}, "source_version": {"type": "string"}, "retrieved_at": {"type": "string", "format": "date-time"}, "event_time": {"type": "string", "format": "date-time"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "upstream_object_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}}},
+    "boundaries": {"type": "object", "additionalProperties": false, "required": ["spatial", "process", "time"], "properties": {"spatial": {"type": "string", "minLength": 2}, "process": {"type": "string", "minLength": 2}, "time": {"type": "string", "minLength": 2}}},
+    "measurement": {"type": "object", "additionalProperties": false, "required": ["value", "unit", "quality_code", "missing_data_treatment"], "properties": {"value": {}, "unit": {"type": "string"}, "quality_code": {"type": "string"}, "missing_data_treatment": {"type": "string"}}},
+    "transformations": {"type": "array", "items": {"type": "string"}},
+    "uncertainty": {"type": "string", "minLength": 3},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 3}},
+    "permitted_use": {"type": "object", "additionalProperties": false, "required": ["licence", "uses", "prohibited_uses"], "properties": {"licence": {"type": "string"}, "uses": {"type": "array", "items": {"type": "string"}}, "prohibited_uses": {"type": "array", "minItems": 1, "items": {"type": "string"}}}},
+    "governance": {"type": "object", "additionalProperties": false, "required": ["parent_capabilities", "child_capabilities", "protected_write_requested", "protected_write_approval_present", "external_action_authorized", "freshness_due_at", "supersedes"], "properties": {"parent_capabilities": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}, "child_capabilities": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}, "protected_write_requested": {"type": "boolean"}, "protected_write_approval_present": {"type": "boolean"}, "external_action_authorized": {"const": false}, "freshness_due_at": {"type": ["string", "null"]}, "supersedes": {"type": ["string", "null"]}}},
+    "privacy_boundary": {"type": "object", "additionalProperties": false, "required": ["private_person_assets_included", "biometric_assets_included", "personal_os_connected"], "properties": {"private_person_assets_included": {"const": false}, "biometric_assets_included": {"const": false}, "personal_os_connected": {"const": false}}},
+    "payload": {"type": "object"}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model_version": "gegg.business-operating-model.v0.1",
+  "date": "2026-08-01",
+  "mode": "SHADOW_INTERNAL_ONLY",
+  "north_stars": {
+    "trust_runtime": ["EVIDENCE", "TRUST", "GOVERNANCE", "ACTION", "KNOWLEDGE_EVOLUTION"],
+    "business_loop": ["DEMAND", "OFFER", "DELIVERY", "ACCEPTANCE", "INVOICE", "CASH", "LEARNING"]
+  },
+  "domains": [
+    {"id":"GOVERNANCE","state":"STRONG_INTERNAL","owner":"GEGG_FOUNDER","gap":"LEGAL_ROLES_RISK_APPETITE_BOARD_CADENCE"},
+    {"id":"FINANCE","state":"DESIGNED_NOT_VALIDATED","owner":"GEGG","gap":"COST_PRICE_BUDGET_CASH_UNIT_ECONOMICS"},
+    {"id":"MARKET","state":"HYPOTHESIS_ONLY","owner":"GEGG","gap":"BUYER_WTP_PROCUREMENT_COMPETITION"},
+    {"id":"OPERATIONS","state":"PROTOTYPE_VALIDATED","owner":"GEGG","gap":"REAL_DELIVERY_CAPACITY_QA_SLA_COST"}
+  ],
+  "entry_offers": [
+    "EVIDENCE_READINESS_SCAN",
+    "REGIONAL_INDUSTRIAL_HEAT_READINESS_PACK",
+    "PUBLIC_EVIDENCE_CASE_PATTERN_ATLAS",
+    "PROJECT_CONCEPT_GOVERNANCE_PACK"
+  ],
+  "market": {
+    "first_geography":"AUSTRALIA",
+    "corridor":"CHINA_AUSTRALIA_CAPABILITY_QUALIFICATION",
+    "validated_customers":0,
+    "validated_willingness_to_pay":0
+  },
+  "finance": {
+    "price":"UNKNOWN",
+    "revenue":"UNKNOWN",
+    "delivery_cost":"UNKNOWN",
+    "gross_margin":"UNKNOWN",
+    "cash_runway":"UNKNOWN"
+  },
+  "stage_state": {"sg_01":"NOT_ENTERED","sg_02":"HOLD_UNCHANGED"},
+  "controls": {
+    "external_contact":false,
+    "quote":false,
+    "contract":false,
+    "application":false,
+    "capital_commitment":false,
+    "customer_selected":false,
+    "supplier_selected":false,
+    "technology_selected":false,
+    "climateos_mainline_write":false,
+    "private_personal_assets_included":false
+  },
+  "next_stage":"COMMERCIAL_READINESS_LAYER_DESIGN_ONLY"
+}

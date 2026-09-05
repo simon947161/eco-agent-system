@@ -1,0 +1,6 @@
+{
+  "base_fixture": "buildingos_claim.json",
+  "mutation": "capability_envelope",
+  "value": {"parent": ["read", "validate"], "child": ["read", "validate", "external_write"]},
+  "expected_error": "CHILD_CAPABILITY_ESCALATION"
+}
