@@ -4,6 +4,8 @@
 
 Eco Agent System is an early-stage open-source prototype for translating environmental observations into planning, resilience, maintenance, ESG interpretation, and climate-risk decision support.
 
+It is also the current public implementation home of **ClimateOS**, a long-horizon human–AI operating-system direction for shared climate stewardship and governance. ClimateOS combines human life experience, local observation, values and action responsibility with AI long-term memory, scientific synthesis, multi-model reasoning, evidence organisation and system execution. Its identity and cumulative history must not be reduced to the newest runtime or demonstration. See the [Stewardship and Civilization Care vision](docs/00_VISION/CLIMATEOS_STEWARDSHIP_AND_CIVILIZATION_CARE.md) and the [Integrity, Long-Horizon, and Human–AI Covenant](docs/00_VISION/CLIMATEOS_INTEGRITY_LONG_HORIZON_AND_HUMAN_AI_COVENANT.md).
+
 It explores how environmental data can become practical, human-reviewed action logic for communities, planners, land managers, researchers, and public-good projects.
 
 ## CCZPS-Lite v0.5
@@ -22,6 +24,42 @@ Run the tests:
 ```bash
 python -m unittest discover
 ```
+
+## OpenAI Build Week 2026 evaluation path
+
+ClimateOS existed before Build Week. The eligible event increment meaningfully
+extended that foundation toward an experienceable human–AI Runtime; the event
+did not create the whole project. The stable merged demonstration is Task2002.
+Task2003 remains a separate Draft experiment whose current Founder evidence is
+`HTML_CHECK_PASS` only.
+
+For a concise, reproducible judge path, read:
+
+- [Build Week change log and prior/new-work boundary](BUILD_WEEK_CHANGELOG.md)
+- [Build Week judge guide](BUILD_WEEK_JUDGE_GUIDE.md)
+- [Build Week submission draft](BUILD_WEEK_SUBMISSION_DRAFT.md)
+- [Build Week video script and truth contract](BUILD_WEEK_VIDEO_SCRIPT_AND_SHOTLIST.md)
+- [Build Week YouTube title, description, and upload contract](BUILD_WEEK_YOUTUBE_PACKAGE.md)
+
+### Collaboration with Codex and GPT-5.6
+
+Simon Shu supplied the environmental purpose, professional and lived context,
+meaningfulness tests, corrections, risk decisions and final authority. Codex
+with GPT-5.6 helped inspect and connect the repository, implement bounded
+Runtime increments, write and run tests, analyse failures, organise evidence
+and decisions, and preserve traceability across the Build Week work.
+
+The collaboration changed the product direction through human review. After
+Simon used the Task2000/Task2001 control Runtime and found that its scalar-box
+experience was technically functional but environmentally unmeaningful, the
+valid control foundation was retained and Task2002 was built around a
+meaningful environmental question. The AI did not replace this judgement.
+
+The project also records an AI recency-bias failure in submission planning and
+its correction through the [ClimateOS Integrity, Long-Horizon, and Human–AI
+Covenant](docs/00_VISION/CLIMATEOS_INTEGRITY_LONG_HORIZON_AND_HUMAN_AI_COVENANT.md).
+This prevents a competition, recent prompt or newest interface from erasing the
+project's long history or upgrading unsupported claims.
 
 ## Meaningful Environmental Question Runtime (Task2002 prototype)
 
@@ -87,8 +125,10 @@ Committed outputs are under `cczps_lite/output/`; the static dashboard is under
 [v0.5 release package](docs/08_RELEASES/README.md) for release notes,
 architecture, demonstration guidance, and the output inventory.
 
-FarmerOS, GardenOS, WaterOS, and ClimateOS are future application-layer
-directions that may reuse this foundation; they are not implemented in v0.5.
+FarmerOS, GardenOS, and WaterOS remain future application-layer directions
+that may reuse this foundation. ClimateOS is the longer-horizon umbrella system
+to which this repository now contributes; its full intended capability is not
+implemented in v0.5 or in any single current runtime.
 
 ```text
 Climate · Water · Vegetation · Infrastructure · Maintenance · Resilience · Governance
@@ -283,6 +323,10 @@ python run_simple_check.py
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [License](LICENSE)
 - [Eco Decision DNA](docs/eco-decision-dna.md)
+- [ClimateOS Stewardship and Civilization Care](docs/00_VISION/CLIMATEOS_STEWARDSHIP_AND_CIVILIZATION_CARE.md)
+- [ClimateOS Integrity, Long-Horizon, and Human–AI Covenant](docs/00_VISION/CLIMATEOS_INTEGRITY_LONG_HORIZON_AND_HUMAN_AI_COVENANT.md)
+- [Build Week Participation and Long-Horizon Alignment CRP](docs/context-packets/2026-07-18_CLIMATEOS_BUILD_WEEK_PARTICIPATION_AND_LONG_HORIZON_CRP.md)
+- [Build Week Integrity-to-Submission Next-Thread ACTP](docs/context-packets/2026-07-18_CLIMATEOS_BUILD_WEEK_INTEGRITY_TO_SUBMISSION_NEXT_THREAD_ACTP.md)
 
 ---
 
