@@ -1,0 +1,53 @@
+{
+  "schema_id": "climateos.evidence_convergence_matrix.v0.1",
+  "matrix_id": "ECM-SRQ-COOMA-001-R2-20260905",
+  "question": "As of the declared cutoff, which committed Cooma evidence is current, stale, context-only, blocked or missing, and what bounded action is proportionate?",
+  "signal_or_state": "CURRENT_COOMA_HYDROLOGICAL_CONDITION_UNKNOWN",
+  "supporting_lines": [
+    "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1"
+  ],
+  "conflicting_lines": [
+    "Historical all-published and A+B summaries differ; sensitivity remains visible"
+  ],
+  "context_only_lines": [
+    "BOM-ENSO-MONITORING-2026-07-14",
+    "COOMA-LOCALITY",
+    "COOMA-TERRAIN-DEM",
+    "COOMA-WATERCOURSES",
+    "COOMA-CATCHMENTS",
+    "COOMA-ROADS-SETTLEMENT"
+  ],
+  "blocked_lines": [
+    "WATERNSW-410033-NEAR-CURRENT-ADMISSION-V0.1"
+  ],
+  "missing_required_lines": [
+    "ADMITTED_EQUIVALENT_NEAR_CURRENT_FLOW",
+    "QUALIFIED_HYDROLOGY_REVIEW",
+    "LOCAL_OBSERVATIONS"
+  ],
+  "source_independence": "INSUFFICIENT_FOR_PROMOTION",
+  "independence_basis": "Object count is not independence; publisher, instrument, measurement and processing lineage are preserved categorically",
+  "shared_lineage": {
+    "QGIS_CONTEXT": "five objects share a context role and are not five independent signals",
+    "BOM": "DWO, ENSO and HRS differ in product and scale but publisher count alone is not independence"
+  },
+  "spatial_alignment": "PARTIAL_STATION_AND_ORIENTATION_ONLY",
+  "temporal_alignment": "NOT_ALIGNED_FOR_CURRENT_COMPARISON",
+  "method_alignment": "NOT_COMPARABLE_YET",
+  "alternative_explanations": [
+    "equivalent-method observations after 2024-02-29",
+    "qualified hydrology review",
+    "uncertainty model beyond source quality categories",
+    "storage, extraction, demand, rainfall and snow evidence"
+  ],
+  "evidence_maturity_ceiling": "S0",
+  "conclusion_level_ceiling": "L2",
+  "promotion_allowed": false,
+  "promotion_blockers": [
+    "No admitted near-current flow",
+    "Stale local weather for current use",
+    "ENSO and QGIS are context only",
+    "Qualified hydrology review pending"
+  ],
+  "review_state": "PENDING_HUMAN_REVIEW"
+}

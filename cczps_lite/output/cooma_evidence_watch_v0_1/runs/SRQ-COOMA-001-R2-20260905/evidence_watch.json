@@ -1,0 +1,35 @@
+{
+  "schema_id": "climateos.cooma_evidence_watch.v0.1",
+  "watch_id": "WATCH-SRQ-COOMA-001-R2-20260905",
+  "title": "Cooma Evidence Watch v0.1 — Offline Readiness Fixture",
+  "revision_id": "SRQ-COOMA-001-R2-20260905",
+  "parent_revision": "SRQ-COOMA-001-R1-20260904",
+  "network_used": false,
+  "data_fetched": false,
+  "freshness_record_ids": [
+    "COOMA-BOM-DWO-2026-07",
+    "BOM-ENSO-MONITORING-2026-07-14",
+    "MITTAGANG-410033-HISTORICAL-ANSWER-V0.1",
+    "WATERNSW-410033-NEAR-CURRENT-ADMISSION-V0.1",
+    "COOMA-LOCALITY",
+    "COOMA-TERRAIN-DEM",
+    "COOMA-WATERCOURSES",
+    "COOMA-CATCHMENTS",
+    "COOMA-ROADS-SETTLEMENT"
+  ],
+  "convergence_matrix_id": "ECM-SRQ-COOMA-001-R2-20260905",
+  "refresh_plan_count": 4,
+  "answer_id": "TBEA-SRQ-COOMA-001-R2-20260905",
+  "passport_id": "EEP-SRQ-COOMA-001-R2-20260905",
+  "action_passport_id": "PC13-SRQ-COOMA-001-R2-20260905",
+  "evidence_maturity": "S0",
+  "conclusion_level": "L2",
+  "current_hydrology": {
+    "admission_status": "ADMISSION_BLOCKED_MISSING_RAW_RESPONSE",
+    "comparison_status": "NOT_COMPARABLE_YET",
+    "trend_status": "TREND_DEFERRED",
+    "current_flow": null
+  },
+  "result": "OFFLINE_READINESS_WATCH_NO_REAL_REFRESH",
+  "content_digest": "sha256:a883fc9d1b7222184578f681127b3b40b6a2369d177147af547b76112ca37156"
+}

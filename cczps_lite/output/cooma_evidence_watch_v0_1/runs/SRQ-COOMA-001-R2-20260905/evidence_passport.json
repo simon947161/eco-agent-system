@@ -1,0 +1,29 @@
+{
+  "schema_id": "climateos.environmental_evidence_passport.v0.1",
+  "passport_id": "EEP-SRQ-COOMA-001-R2-20260905",
+  "subject": "Cooma Evidence Watch offline readiness fixture",
+  "source_identity": {
+    "prior_revision": "SRQ-COOMA-001-R1-20260904",
+    "committed_inputs_only": true
+  },
+  "method": {
+    "skill_id": "EP-SKILL-002",
+    "version": "0.1",
+    "fixed_clock": "2026-09-05T03:00:00Z",
+    "network_used": false
+  },
+  "derived_claim": {
+    "answer_id": "TBEA-SRQ-COOMA-001-R2-20260905",
+    "convergence_matrix_id": "ECM-SRQ-COOMA-001-R2-20260905",
+    "evidence_maturity": "S0",
+    "conclusion_level": "L2"
+  },
+  "limitations": {
+    "current_flow": null,
+    "comparison_status": "NOT_COMPARABLE_YET",
+    "trend_status": "TREND_DEFERRED"
+  },
+  "review": {
+    "status": "PENDING_FOUNDER_REVIEW"
+  }
+}

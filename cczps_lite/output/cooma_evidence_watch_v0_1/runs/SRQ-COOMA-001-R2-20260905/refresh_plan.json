@@ -1,0 +1,73 @@
+{
+  "schema_id": "climateos.refresh_plan.v0.1",
+  "plans": [
+    {
+      "source_object_id": "COOMA-BOM-DWO",
+      "refresh_needed": true,
+      "reason": "Committed daily evidence is stale for current use",
+      "required_evidence_role": "CURRENT_OBSERVATION",
+      "proposed_access_method": "FUTURE_EXACT_BOM_HTTPS_GET",
+      "network_authorised": false,
+      "cost_ceiling": {
+        "currency": "AUD",
+        "amount": 0
+      },
+      "admission_test": "Identity, provenance, digest, licence, spatial/temporal/question fitness and review gates",
+      "failure_state": "NETWORK_NOT_AUTHORISED",
+      "fallback_request": "Prepare exact-source request",
+      "next_review_time": "2026-10-05T23:59:59Z",
+      "owner_role": "FOUNDER_OR_NAMED_REVIEWER"
+    },
+    {
+      "source_object_id": "BOM-ENSO-MONITORING",
+      "refresh_needed": true,
+      "reason": "Committed outlook is stale context",
+      "required_evidence_role": "LARGE_SCALE_CONTEXT",
+      "proposed_access_method": "FUTURE_EXACT_BOM_HTTPS_GET",
+      "network_authorised": false,
+      "cost_ceiling": {
+        "currency": "AUD",
+        "amount": 0
+      },
+      "admission_test": "Identity, provenance, digest, licence, spatial/temporal/question fitness and review gates",
+      "failure_state": "NETWORK_NOT_AUTHORISED",
+      "fallback_request": "Retain context-only state",
+      "next_review_time": "2026-10-05T23:59:59Z",
+      "owner_role": "FOUNDER_OR_NAMED_REVIEWER"
+    },
+    {
+      "source_object_id": "WATERNSW-410033",
+      "refresh_needed": true,
+      "reason": "Raw response and credential absent",
+      "required_evidence_role": "CURRENT_OBSERVATION",
+      "proposed_access_method": "FUTURE_SEPARATELY_AUTHORISED_API",
+      "network_authorised": false,
+      "cost_ceiling": {
+        "currency": "AUD",
+        "amount": 0
+      },
+      "admission_test": "Identity, provenance, digest, licence, spatial/temporal/question fitness and review gates",
+      "failure_state": "ADMISSION_BLOCKED_MISSING_RAW_RESPONSE",
+      "fallback_request": "Request an alternative equivalent official flow source; do not substitute silently",
+      "next_review_time": "2026-10-05T23:59:59Z",
+      "owner_role": "FOUNDER_OR_NAMED_REVIEWER"
+    },
+    {
+      "source_object_id": "LOCAL-OBSERVATIONS",
+      "refresh_needed": true,
+      "reason": "No admitted local observation",
+      "required_evidence_role": "CURRENT_OBSERVATION",
+      "proposed_access_method": "HUMAN_EVIDENCE_REQUEST",
+      "network_authorised": false,
+      "cost_ceiling": {
+        "currency": "AUD",
+        "amount": 0
+      },
+      "admission_test": "Identity, provenance, digest, licence, spatial/temporal/question fitness and review gates",
+      "failure_state": "MISSING_FOR_QUESTION",
+      "fallback_request": "Request bounded inspection with named owner",
+      "next_review_time": "2026-10-05T23:59:59Z",
+      "owner_role": "FOUNDER_OR_NAMED_REVIEWER"
+    }
+  ]
+}
