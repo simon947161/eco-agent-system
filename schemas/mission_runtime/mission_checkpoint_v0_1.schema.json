@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/schemas/mission_runtime/mission_checkpoint_v0_1.schema.json",
+  "title": "Mission Checkpoint Bundle v0.1",
+  "type": "object",
+  "required": ["checkpoint_id", "mission_id", "created_at", "state_snapshot", "plan_snapshot", "evidence_refs", "permission_snapshot", "recovery_instruction"],
+  "properties": {
+    "checkpoint_id": {"type": "string"}, "mission_id": {"type": "string"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "state_snapshot": {"type": "object"}, "plan_snapshot": {"type": "object"},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "permission_snapshot": {"type": "object"},
+    "completed_items": {"type": "array", "items": {"type": "string"}},
+    "open_items": {"type": "array", "items": {"type": "string"}},
+    "unresolved_questions": {"type": "array", "items": {"type": "string"}},
+    "recovery_instruction": {
+      "type": "object",
+      "required": ["resume_from", "revalidate_permissions", "revalidate_external_state", "always_approve_restored"],
+      "properties": {
+        "resume_from": {"type": "string"},
+        "revalidate_permissions": {"const": true},
+        "revalidate_external_state": {"type": "boolean"},
+        "always_approve_restored": {"const": false},
+        "next_safe_action": {"type": "string"}
+      }, "additionalProperties": false
+    },
+    "integrity_hash": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

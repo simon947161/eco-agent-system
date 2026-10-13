@@ -1,0 +1,24 @@
+{
+  "checkpoint_id": "MISSION-RUNTIME-PHASE-A-001",
+  "mission_id": "MISSION-RUNTIME-PHASE-A",
+  "created_at": "2026-07-27T01:00:00Z",
+  "state_snapshot": {"current_state": "FOUNDER_GATE"},
+  "plan_snapshot": {"revision": "v0.1"},
+  "evidence_refs": ["issue:103", "pr:104", "validation-report:v0.1"],
+  "permission_snapshot": {
+    "implementation_authority": false,
+    "merge_authority": false,
+    "mainline_change_allowed": false
+  },
+  "completed_items": ["four schemas", "fixtures", "static validation"],
+  "open_items": ["Founder decisions"],
+  "unresolved_questions": ["Executable validator authority"],
+  "recovery_instruction": {
+    "resume_from": "FOUNDER_GATE",
+    "revalidate_permissions": true,
+    "revalidate_external_state": true,
+    "always_approve_restored": false,
+    "next_safe_action": "Request five Founder decisions"
+  },
+  "integrity_hash": null
+}

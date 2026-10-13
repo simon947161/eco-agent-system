@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/schemas/mission_runtime/mission_state_machine_v0_1.schema.json",
+  "title": "Mission Runtime State Machine v0.1",
+  "type": "object",
+  "required": ["mission_id", "current_state", "transition_history", "authority_context"],
+  "properties": {
+    "mission_id": {"type": "string", "minLength": 1},
+    "current_state": {
+      "enum": ["DRAFT", "PLANNED", "READY", "RUNNING", "CHECKPOINTED", "BLOCKED", "FOUNDER_GATE", "COMPLETED", "ARCHIVED", "CANCELLED"]
+    },
+    "transition_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "timestamp", "authority", "reason"],
+        "properties": {
+          "from": {"type": ["string", "null"]},
+          "to": {"type": "string"},
+          "timestamp": {"type": "string", "format": "date-time"},
+          "authority": {"type": "string"},
+          "reason": {"type": "string"},
+          "evidence_refs": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    },
+    "authority_context": {
+      "type": "object",
+      "required": ["founder_gate_required", "implementation_authority"],
+      "properties": {
+        "founder_gate_required": {"type": "boolean"},
+        "implementation_authority": {"type": "boolean"},
+        "approved_transition_classes": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "resume_pointer": {"type": ["string", "null"]},
+    "blocked_reason": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

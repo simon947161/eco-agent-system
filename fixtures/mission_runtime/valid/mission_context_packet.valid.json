@@ -1,0 +1,26 @@
+{
+  "packet_id": "ACTP-MISSION-RUNTIME-PHASE-A-FINAL",
+  "mission_id": "MISSION-RUNTIME-PHASE-A",
+  "authoritative_baseline": {
+    "repository": "simon947161/eco-agent-system",
+    "branch": "agent/mission-runtime-phase-a-schema",
+    "commit": "PENDING_FINAL_COMMIT"
+  },
+  "current_status": "FOUNDER_GATE_READY",
+  "decisions": [
+    "Prototype design approved",
+    "Implementation authority not granted",
+    "Mainline runtime unchanged"
+  ],
+  "evidence_refs": ["issue:103", "pr:104", "validation-report:v0.1"],
+  "completed": ["schemas", "fixtures", "static validation", "evidence package"],
+  "open_questions": ["five Founder decisions"],
+  "next_actions": ["Founder reviews evidence package", "record decision", "only then scope executable validator"],
+  "gates": {
+    "founder_review_required": true,
+    "implementation_authority": false,
+    "mainline_change_allowed": false,
+    "review_questions": ["lifecycle", "protected writes", "parent-child authority", "resume behaviour", "executable validator"]
+  },
+  "project_keywords": ["Mission Runtime", "Mission Control", "ClimateOS", "BuildingOS", "Validator", "Checkpoint"]
+}

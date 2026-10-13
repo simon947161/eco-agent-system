@@ -1,0 +1,42 @@
+{
+  "suite_id": "MISSION-RUNTIME-NEGATIVE-MUTATIONS-V0.1",
+  "cases": [
+    {
+      "case_id": "STATE-INVALID-UNKNOWN-STATE",
+      "schema": "mission_state_machine_v0_1.schema.json",
+      "mutation": "current_state=EXECUTING",
+      "expected_result": "FAIL",
+      "expected_error_contains": "is not one of",
+      "payload": {
+        "mission_id": "MISSION-RUNTIME-PHASE-A",
+        "current_state": "EXECUTING",
+        "transition_history": [],
+        "authority_context": {
+          "founder_gate_required": true,
+          "implementation_authority": false
+        }
+      }
+    },
+    {
+      "case_id": "PLAN-INVALID-CHILD-WIDENS",
+      "schema": "mission_plan_contract_v0_1.schema.json",
+      "mutation": "capability_envelope.child_may_widen=true",
+      "expected_result": "FAIL",
+      "expected_error_contains": "False was expected"
+    },
+    {
+      "case_id": "CHECKPOINT-INVALID-ALWAYS-APPROVE",
+      "schema": "mission_checkpoint_v0_1.schema.json",
+      "mutation": "recovery_instruction.always_approve_restored=true",
+      "expected_result": "FAIL",
+      "expected_error_contains": "False was expected"
+    },
+    {
+      "case_id": "CONTEXT-INVALID-MISSING-COMMIT",
+      "schema": "mission_context_packet_v0_1.schema.json",
+      "mutation": "remove authoritative_baseline.commit",
+      "expected_result": "FAIL",
+      "expected_error_contains": "commit is a required property"
+    }
+  ]
+}
