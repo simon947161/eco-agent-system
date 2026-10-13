@@ -1,0 +1,13 @@
+{
+  "schema_version": "mission-runtime-v0.1", "mission_id": "GGG-VAL-003",
+  "title": "BuildingOS bounded claim handoff", "domain": "BUILDINGOS",
+  "north_star": "EVIDENCE_TRUST_GOVERNANCE_RUNTIME", "state": "COMPLETED",
+  "transition": {"from": "VALIDATING", "to": "COMPLETED", "actor": "BuildingOS Reviewer", "reason": "Acceptance evidence passed"},
+  "authority": {"owner": "BuildingOS", "approver": "Founder", "approval_id": "APPROVE_PROTECTED_WRITE_BASELINE_V0_1", "external_action_authorized": false},
+  "evidence_refs": [{"source": "BuildingOS-Core-Batch-01", "version": "d88acc55", "sha256": "3333333333333333333333333333333333333333333333333333333333333333", "confidence": "PROVISIONAL"}],
+  "declared_write_set": [], "protected_write": {"requested": false, "approval_required": true, "approval_present": false},
+  "capability_envelope": {"parent": ["read", "validate"], "child": ["read"]},
+  "resume_safety": {"persisted_state": "COMPLETED", "restart_state": "COMPLETED", "next_safe_action": "remain closed unless reopened"},
+  "interoperability": {"provides": ["BuildingEvidence", "DomainClaim"], "consumes": ["EvidenceObject"], "claim_authority": "DOMAIN_ONLY"},
+  "privacy_boundary": {"private_person_assets_included": false, "biometric_assets_included": false}
+}

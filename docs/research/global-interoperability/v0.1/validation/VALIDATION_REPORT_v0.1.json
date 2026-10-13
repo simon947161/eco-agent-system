@@ -1,0 +1,16 @@
+{
+  "report_version": "v0.1",
+  "executed_on": "2026-08-01",
+  "validator": "validator/validate_runtime.py",
+  "schema": "schemas/mission_runtime.schema.json",
+  "valid_fixture_results": {"total": 4, "passed": 4, "failed": 0},
+  "negative_control_results": {"total": 4, "passed": 4, "failed": 0},
+  "syntax_checks": {"json_files": "PASS", "python_compile": "PASS"},
+  "boundary_checks": {"external_action": false, "mainline_change": false, "private_person_assets_copied": false},
+  "overall": "PASS",
+  "limitations": [
+    "Validator implements the bounded v0.1 contract, not a complete JSON Schema engine.",
+    "Fixtures are synthetic and do not authorize production actions.",
+    "No authoritative file with verbatim GGG-001 through GGG-008 definitions was recovered; IDs follow the approved Phase 0-2 delivery sequence."
+  ]
+}

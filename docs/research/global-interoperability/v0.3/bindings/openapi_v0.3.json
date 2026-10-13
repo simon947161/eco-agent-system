@@ -1,0 +1,12 @@
+{
+  "openapi": "3.1.0",
+  "info": {"title": "GGG Local Loopback Adapter", "version": "0.3.0", "description": "Non-production localhost-only adapter for synthetic cross-OS handoffs."},
+  "servers": [{"url": "http://127.0.0.1:8787", "description": "Loopback only"}],
+  "paths": {
+    "/health": {"get": {"operationId": "health", "responses": {"200": {"description": "Loopback adapter health"}}}},
+    "/capabilities": {"get": {"operationId": "capabilities", "responses": {"200": {"description": "Bounded capabilities"}}}},
+    "/v0.3/handoffs": {"post": {"operationId": "handoffEvidenceV03", "requestBody": {"required": true, "content": {"application/json": {"schema": {"$ref": "../../ggg_global_interoperability_v02/schemas/cross_os_transport_envelope.schema.json"}}}}, "responses": {"200": {"description": "Accepted or governance-rejected receipt"}, "409": {"description": "Idempotency conflict"}, "415": {"description": "Unsupported content type"}}}},
+    "/mcp": {"post": {"operationId": "mcpJsonRpc", "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object"}}}}, "responses": {"200": {"description": "MCP JSON-RPC response"}}}}
+  },
+  "x-runtime-boundary": {"bind-address": "127.0.0.1", "synthetic-only": true, "external-action": false, "mainline-write": false, "production-deployment": false}
+}

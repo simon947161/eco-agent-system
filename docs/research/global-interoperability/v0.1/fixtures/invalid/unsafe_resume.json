@@ -1,0 +1,6 @@
+{
+  "base_fixture": "ecochain_registry.json",
+  "mutation": "resume_safety",
+  "value": {"persisted_state": "EXECUTING", "restart_state": "EXECUTING", "next_safe_action": "continue without review"},
+  "expected_error": "UNSAFE_RESUME_STATE"
+}

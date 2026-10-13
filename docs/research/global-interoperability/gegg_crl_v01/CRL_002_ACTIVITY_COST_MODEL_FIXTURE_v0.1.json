@@ -1,0 +1,11 @@
+{
+  "version":"crl-002.v0.1","evidence_state":"SYNTHETIC","currency":"AUD",
+  "assumptions":{"hourly_rates_are_hypotheses":true,"external_costs_unknown":true,"tax_excluded":true},
+  "offers":[
+    {"id":"EVIDENCE_READINESS_SCAN","hours":{"founder_review":1,"research":6,"evidence_qa":3,"production":2},"rate_hypotheses":{"founder_review":150,"research":90,"evidence_qa":110,"production":80},"contingency_rate":0.20},
+    {"id":"INDUSTRIAL_HEAT_READINESS_PACK","hours":{"founder_review":2,"research":14,"evidence_qa":7,"production":5},"rate_hypotheses":{"founder_review":150,"research":100,"evidence_qa":120,"production":85},"contingency_rate":0.25},
+    {"id":"PUBLIC_CASE_PATTERN_ATLAS","hours":{"founder_review":1,"research":18,"evidence_qa":8,"production":7},"rate_hypotheses":{"founder_review":150,"research":90,"evidence_qa":110,"production":80},"contingency_rate":0.20},
+    {"id":"PROJECT_CONCEPT_GOVERNANCE_PACK","hours":{"founder_review":3,"research":8,"evidence_qa":6,"production":5},"rate_hypotheses":{"founder_review":150,"research":100,"evidence_qa":120,"production":90},"contingency_rate":0.30}
+  ]
+}
+

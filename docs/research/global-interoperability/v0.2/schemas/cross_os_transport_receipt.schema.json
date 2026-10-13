@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/schemas/cross-os-transport-receipt-v0.2.json",
+  "title": "GGG Cross-OS Transport Receipt v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["receipt_version", "receipt_id", "handoff_id", "correlation_id", "receiver", "status", "received_at", "envelope_sha256", "validator_version", "evidence_state_preserved", "authority_preserved", "external_action", "mainline_write", "reasons"],
+  "properties": {
+    "receipt_version": {"const": "ggg-receipt-v0.2"},
+    "receipt_id": {"type": "string"},
+    "handoff_id": {"type": "string"},
+    "correlation_id": {"type": "string"},
+    "receiver": {"type": "string"},
+    "status": {"enum": ["ACCEPTED", "REJECTED"]},
+    "received_at": {"type": "string", "format": "date-time"},
+    "envelope_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "validator_version": {"const": "ggg-transport-validator-v0.2"},
+    "evidence_state_preserved": {"type": "boolean"},
+    "authority_preserved": {"type": "boolean"},
+    "external_action": {"const": false},
+    "mainline_write": {"const": false},
+    "reasons": {"type": "array", "items": {"type": "string"}}
+  }
+}

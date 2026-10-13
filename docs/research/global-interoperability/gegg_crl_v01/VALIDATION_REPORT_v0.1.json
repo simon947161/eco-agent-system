@@ -1,0 +1,57 @@
+{
+  "version": "crl-validation.v0.1",
+  "summary": {
+    "pass": 12,
+    "total": 12
+  },
+  "checks": [
+    {
+      "check": "all_crl_tasks_complete",
+      "status": "PASS"
+    },
+    {
+      "check": "all_data_synthetic",
+      "status": "PASS"
+    },
+    {
+      "check": "no_external_commercial_action",
+      "status": "PASS"
+    },
+    {
+      "check": "no_daemon",
+      "status": "PASS"
+    },
+    {
+      "check": "no_unattended_execution",
+      "status": "PASS"
+    },
+    {
+      "check": "protected_actions_present",
+      "status": "PASS"
+    },
+    {
+      "check": "founder_gate_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "no_fake_revenue",
+      "status": "PASS"
+    },
+    {
+      "check": "no_fake_market_evidence",
+      "status": "PASS"
+    },
+    {
+      "check": "fair_exit_controls",
+      "status": "PASS"
+    },
+    {
+      "check": "mainline_protected",
+      "status": "PASS"
+    },
+    {
+      "check": "next_gate_founder_review",
+      "status": "PASS"
+    }
+  ]
+}

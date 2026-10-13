@@ -1,0 +1,13 @@
+{
+  "schema_version": "mission-runtime-v0.1", "mission_id": "GGG-VAL-002",
+  "title": "ClimateOS evidence admission", "domain": "CLIMATEOS",
+  "north_star": "EVIDENCE_TRUST_GOVERNANCE_RUNTIME", "state": "APPROVED",
+  "transition": {"from": "PLANNED", "to": "APPROVED", "actor": "Founder", "reason": "Evidence-only fixture approved"},
+  "authority": {"owner": "ClimateOS", "approver": "Founder", "approval_id": "APPROVE_LIFECYCLE_V0_1", "external_action_authorized": false},
+  "evidence_refs": [{"source": "CLIMATEOS_EXISTING_CAPABILITY_CROSSWALK_V0.1.md", "version": "v0.1", "sha256": "2222222222222222222222222222222222222222222222222222222222222222", "confidence": "SUPPORTED"}],
+  "declared_write_set": [], "protected_write": {"requested": false, "approval_required": true, "approval_present": false},
+  "capability_envelope": {"parent": ["read", "validate", "admit_fixture"], "child": ["read", "validate"]},
+  "resume_safety": {"persisted_state": "APPROVED", "restart_state": "APPROVED", "next_safe_action": "begin fixture-only execution"},
+  "interoperability": {"provides": ["EvidenceObject", "GovernanceDecision"], "consumes": ["SourceReceipt", "DomainClaim"], "claim_authority": "DOMAIN_ONLY"},
+  "privacy_boundary": {"private_person_assets_included": false, "biometric_assets_included": false}
+}

@@ -1,0 +1,136 @@
+{
+  "pilot": "GGG synthetic cross-OS handoff pilot v0.2",
+  "route": [
+    "CLIMATEOS",
+    "BUILDINGOS",
+    "ECOCHAIN",
+    "MISSION_CONTROL"
+  ],
+  "validator": "ggg-transport-validator-v0.2",
+  "handoffs_accepted": "3/3",
+  "correlation_lineage_preserved": true,
+  "synthetic_state_preserved": true,
+  "external_action": false,
+  "mainline_write": false,
+  "real_data": false,
+  "private_person_or_biometric_assets": false,
+  "total_cases": 8,
+  "passed": 8,
+  "failed": 0,
+  "result": "PASS",
+  "receipts": [
+    {
+      "receipt_version": "ggg-receipt-v0.2",
+      "receipt_id": "RCP-GGG-PILOT-001-001",
+      "handoff_id": "HO-SYN-CLIMATE-BUILD-001",
+      "correlation_id": "COR-GGG-PILOT-001",
+      "receiver": "BUILDINGOS",
+      "status": "ACCEPTED",
+      "received_at": "2026-08-01T00:00:01Z",
+      "envelope_sha256": "3e4373fcf25da7ef3bdfeddc91387bda6e03feb5c3068a43d524ccf36756c402",
+      "validator_version": "ggg-transport-validator-v0.2",
+      "evidence_state_preserved": true,
+      "authority_preserved": true,
+      "external_action": false,
+      "mainline_write": false,
+      "reasons": []
+    },
+    {
+      "receipt_version": "ggg-receipt-v0.2",
+      "receipt_id": "RCP-GGG-PILOT-001-002",
+      "handoff_id": "HO-SYN-BUILD-ECO-002",
+      "correlation_id": "COR-GGG-PILOT-001",
+      "receiver": "ECOCHAIN",
+      "status": "ACCEPTED",
+      "received_at": "2026-08-01T00:00:02Z",
+      "envelope_sha256": "8d522a667359eae4868534f50824a4c1e620730d4b18c57467a7e53130c2265c",
+      "validator_version": "ggg-transport-validator-v0.2",
+      "evidence_state_preserved": true,
+      "authority_preserved": true,
+      "external_action": false,
+      "mainline_write": false,
+      "reasons": []
+    },
+    {
+      "receipt_version": "ggg-receipt-v0.2",
+      "receipt_id": "RCP-GGG-PILOT-001-003",
+      "handoff_id": "HO-SYN-ECO-MC-003",
+      "correlation_id": "COR-GGG-PILOT-001",
+      "receiver": "MISSION_CONTROL",
+      "status": "ACCEPTED",
+      "received_at": "2026-08-01T00:00:03Z",
+      "envelope_sha256": "0ade87dcbf523acbc0b5be44aa5505e8cdd57b73e0b4e1e184119cc18e3857ce",
+      "validator_version": "ggg-transport-validator-v0.2",
+      "evidence_state_preserved": true,
+      "authority_preserved": true,
+      "external_action": false,
+      "mainline_write": false,
+      "reasons": []
+    }
+  ],
+  "cases": [
+    {
+      "case": "01_climateos_to_buildingos.json",
+      "class": "pilot_handoff",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "02_buildingos_to_ecochain.json",
+      "class": "pilot_handoff",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "03_ecochain_to_mission_control.json",
+      "class": "pilot_handoff",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "evidence_state_upgrade",
+      "class": "negative",
+      "passed": true,
+      "expected": "SYNTHETIC_STATE_NOT_PRESERVED",
+      "errors": [
+        "SYNTHETIC_STATE_NOT_PRESERVED"
+      ]
+    },
+    {
+      "case": "capability_escalation",
+      "class": "negative",
+      "passed": true,
+      "expected": "CHILD_CAPABILITY_ESCALATION",
+      "errors": [
+        "CHILD_CAPABILITY_ESCALATION"
+      ]
+    },
+    {
+      "case": "protected_write_without_approval",
+      "class": "negative",
+      "passed": true,
+      "expected": "PROTECTED_WRITE_APPROVAL_MISSING",
+      "errors": [
+        "PROTECTED_WRITE_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "case": "private_asset_boundary",
+      "class": "negative",
+      "passed": true,
+      "expected": "PRIVATE_ASSET_BOUNDARY_BREACH",
+      "errors": [
+        "PRIVATE_ASSET_BOUNDARY_BREACH"
+      ]
+    },
+    {
+      "case": "ecochain_truth_upgrade",
+      "class": "negative",
+      "passed": true,
+      "expected": "REGISTRY_TRUTH_UPGRADE_FORBIDDEN",
+      "errors": [
+        "REGISTRY_TRUTH_UPGRADE_FORBIDDEN"
+      ]
+    }
+  ]
+}

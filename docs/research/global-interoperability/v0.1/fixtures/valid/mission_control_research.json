@@ -1,0 +1,17 @@
+{
+  "schema_version": "mission-runtime-v0.1",
+  "mission_id": "GGG-VAL-001",
+  "title": "Grok Building research continuation",
+  "domain": "MISSION_CONTROL",
+  "north_star": "EVIDENCE_TRUST_GOVERNANCE_RUNTIME",
+  "state": "VALIDATING",
+  "transition": {"from": "EXECUTING", "to": "VALIDATING", "actor": "Mission Control", "reason": "Artifacts ready for validation"},
+  "authority": {"owner": "Mission Control", "approver": "Founder", "approval_id": "APPROVE_BOUNDED_EXECUTABLE_VALIDATOR_PROTOTYPE", "external_action_authorized": false},
+  "evidence_refs": [{"source": "MISSION_RUNTIME_RFC_V0.1.md", "version": "v0.1", "sha256": "1111111111111111111111111111111111111111111111111111111111111111", "confidence": "CONFIRMED"}],
+  "declared_write_set": ["ggg_global_interoperability_v01/"],
+  "protected_write": {"requested": false, "approval_required": true, "approval_present": false},
+  "capability_envelope": {"parent": ["read", "write_sandbox", "validate"], "child": ["read", "validate"]},
+  "resume_safety": {"persisted_state": "VALIDATING", "restart_state": "PAUSED_RECOVERY", "next_safe_action": "rerun bounded validation"},
+  "interoperability": {"provides": ["MissionPlan", "ValidationReceipt"], "consumes": ["EvidenceObject"], "claim_authority": "SUPPORT_ONLY"},
+  "privacy_boundary": {"private_person_assets_included": false, "biometric_assets_included": false}
+}

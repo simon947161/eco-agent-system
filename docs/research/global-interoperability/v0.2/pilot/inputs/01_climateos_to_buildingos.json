@@ -1,0 +1,22 @@
+{
+  "contract_version": "ggg-transport-v0.2",
+  "handoff_id": "HO-SYN-CLIMATE-BUILD-001",
+  "correlation_id": "COR-GGG-PILOT-001",
+  "object_id": "OBJ-SYN-CLIMATE-001",
+  "object_type": "EvidenceObject",
+  "source_system": "CLIMATEOS",
+  "target_system": "BUILDINGOS",
+  "evidence_state": "SYNTHETIC",
+  "synthetic": true,
+  "authority": {"sender_role": "environmental evidence steward", "receiver_role": "building evidence translator", "claim_authority": "DOMAIN_ONLY", "decision_authorized": false},
+  "provenance": {"source_id": "SYNTHETIC-CLIMATE-GENERATOR-V0.2", "publisher_or_provider": "GGG bounded pilot", "source_version": "v0.2", "retrieved_at": "2026-08-01T00:00:00Z", "event_time": "2026-08-01T00:00:00Z", "sha256": "1111111111111111111111111111111111111111111111111111111111111111", "upstream_object_ids": []},
+  "boundaries": {"spatial": "fictional site CELL-SYN-001", "process": "synthetic climate-to-building translation test only", "time": "single synthetic event at 2026-08-01T00:00:00Z"},
+  "measurement": {"value": 42, "unit": "synthetic-index", "quality_code": "SYNTHETIC", "missing_data_treatment": "not applicable"},
+  "transformations": ["created by deterministic fixture; no observed source used"],
+  "uncertainty": "No empirical validity; value exists only to test transport and governance.",
+  "limitations": ["not weather or climate evidence", "not suitable for design, safety, procurement or public communication"],
+  "permitted_use": {"licence": "internal synthetic test fixture", "uses": ["schema validation", "bounded interoperability test"], "prohibited_uses": ["real-world decision", "external publication", "engineering conclusion"]},
+  "governance": {"parent_capabilities": ["read_fixture", "validate_fixture", "derive_synthetic_claim"], "child_capabilities": ["read_fixture", "validate_fixture", "derive_synthetic_claim"], "protected_write_requested": false, "protected_write_approval_present": false, "external_action_authorized": false, "freshness_due_at": null, "supersedes": null},
+  "privacy_boundary": {"private_person_assets_included": false, "biometric_assets_included": false, "personal_os_connected": false},
+  "payload": {"driver": "SYNTHETIC_HEAT_STRESS_SIGNAL", "confidence": "PROVISIONAL", "candidate_use": "test whether BuildingOS preserves evidence state and limitations"}
+}

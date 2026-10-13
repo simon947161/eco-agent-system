@@ -1,0 +1,22 @@
+{
+  "contract_version": "ggg-transport-v0.2",
+  "handoff_id": "HO-SYN-LOOPBACK-001",
+  "correlation_id": "COR-GGG-LOOPBACK-001",
+  "object_id": "OBJ-SYN-LOOPBACK-001",
+  "object_type": "EvidenceObject",
+  "source_system": "CLIMATEOS",
+  "target_system": "BUILDINGOS",
+  "evidence_state": "SYNTHETIC",
+  "synthetic": true,
+  "authority": {"sender_role": "environmental evidence steward", "receiver_role": "building evidence translator", "claim_authority": "DOMAIN_ONLY", "decision_authorized": false},
+  "provenance": {"source_id": "SYNTHETIC-LOOPBACK-GENERATOR-V0.3", "publisher_or_provider": "GGG bounded prototype", "source_version": "v0.3", "retrieved_at": "2026-08-01T00:00:00Z", "event_time": "2026-08-01T00:00:00Z", "sha256": "3333333333333333333333333333333333333333333333333333333333333333", "upstream_object_ids": []},
+  "boundaries": {"spatial": "fictional site CELL-LOOPBACK-001", "process": "local adapter conformance only", "time": "single synthetic event"},
+  "measurement": {"value": 42, "unit": "synthetic-index", "quality_code": "SYNTHETIC", "missing_data_treatment": "not applicable"},
+  "transformations": ["deterministic synthetic fixture"],
+  "uncertainty": "No empirical validity; transport test only.",
+  "limitations": ["not real evidence", "not suitable for engineering, safety, procurement or external communication"],
+  "permitted_use": {"licence": "internal synthetic test fixture", "uses": ["adapter validation"], "prohibited_uses": ["real-world decision", "external action"]},
+  "governance": {"parent_capabilities": ["read_fixture", "validate_fixture"], "child_capabilities": ["read_fixture", "validate_fixture"], "protected_write_requested": false, "protected_write_approval_present": false, "external_action_authorized": false, "freshness_due_at": null, "supersedes": null},
+  "privacy_boundary": {"private_person_assets_included": false, "biometric_assets_included": false, "personal_os_connected": false},
+  "payload": {"driver": "SYNTHETIC_HEAT_STRESS_SIGNAL", "confidence": "PROVISIONAL"}
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.local/schemas/mission-runtime-v0.1.json",
+  "title": "ClimateOS Mission Runtime Contract v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "mission_id", "title", "domain", "north_star",
+    "state", "transition", "authority", "evidence_refs",
+    "declared_write_set", "protected_write", "capability_envelope",
+    "resume_safety", "interoperability", "privacy_boundary"
+  ],
+  "properties": {
+    "schema_version": {"const": "mission-runtime-v0.1"},
+    "mission_id": {"type": "string", "pattern": "^[A-Z0-9-]{3,80}$"},
+    "title": {"type": "string", "minLength": 3},
+    "domain": {
+      "enum": ["MISSION_CONTROL", "CLIMATEOS", "CARBONOS", "BUILDINGOS", "ECOCHAIN", "GEGG"]
+    },
+    "north_star": {"const": "EVIDENCE_TRUST_GOVERNANCE_RUNTIME"},
+    "state": {
+      "enum": ["DRAFT", "PLANNED", "APPROVED", "EXECUTING", "VALIDATING", "PAUSED_RECOVERY", "COMPLETED", "REJECTED"]
+    },
+    "transition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to", "actor", "reason"],
+      "properties": {
+        "from": {"type": "string"}, "to": {"type": "string"},
+        "actor": {"type": "string", "minLength": 2},
+        "reason": {"type": "string", "minLength": 3}
+      }
+    },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["owner", "approver", "approval_id", "external_action_authorized"],
+      "properties": {
+        "owner": {"type": "string"}, "approver": {"type": "string"},
+        "approval_id": {"type": "string"},
+        "external_action_authorized": {"type": "boolean"}
+      }
+    },
+    "evidence_refs": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["source", "version", "sha256", "confidence"],
+        "properties": {
+          "source": {"type": "string"}, "version": {"type": "string"},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "confidence": {"enum": ["CONFIRMED", "SUPPORTED", "PROVISIONAL"]}
+        }
+      }
+    },
+    "declared_write_set": {"type": "array", "items": {"type": "string"}},
+    "protected_write": {
+      "type": "object", "additionalProperties": false,
+      "required": ["requested", "approval_required", "approval_present"],
+      "properties": {
+        "requested": {"type": "boolean"},
+        "approval_required": {"type": "boolean"},
+        "approval_present": {"type": "boolean"}
+      }
+    },
+    "capability_envelope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["parent", "child"],
+      "properties": {
+        "parent": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "child": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "resume_safety": {
+      "type": "object", "additionalProperties": false,
+      "required": ["persisted_state", "restart_state", "next_safe_action"],
+      "properties": {
+        "persisted_state": {"type": "string"},
+        "restart_state": {"type": "string"},
+        "next_safe_action": {"type": "string", "minLength": 3}
+      }
+    },
+    "interoperability": {
+      "type": "object", "additionalProperties": false,
+      "required": ["provides", "consumes", "claim_authority"],
+      "properties": {
+        "provides": {"type": "array", "items": {"type": "string"}},
+        "consumes": {"type": "array", "items": {"type": "string"}},
+        "claim_authority": {"enum": ["DOMAIN_ONLY", "SUPPORT_ONLY", "REGISTRY_ADAPTER_ONLY"]}
+      }
+    },
+    "privacy_boundary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["private_person_assets_included", "biometric_assets_included"],
+      "properties": {
+        "private_person_assets_included": {"const": false},
+        "biometric_assets_included": {"const": false}
+      }
+    }
+  }
+}

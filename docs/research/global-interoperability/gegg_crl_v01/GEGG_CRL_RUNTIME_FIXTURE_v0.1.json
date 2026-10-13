@@ -1,0 +1,9 @@
+{
+  "version":"gegg-crl-runtime.v0.1","date":"2026-08-02","mode":"SHADOW_SYNTHETIC_ONLY",
+  "founder_decisions":["ACCEPT_BUSINESS_OPERATING_MAP","ACCEPT_FOUR_ENTRY_OFFERS","AUTHORISE_CRL_001_006_DESIGN_ONLY","MAINTAIN_NO_CONTACT_NO_QUOTE_NO_CONTRACT","DEFER_REAL_DISCOVERY_AND_PRICE_RELEASE"],
+  "tasks":{"CRL-001":"COMPLETE","CRL-002":"COMPLETE","CRL-003":"COMPLETE","CRL-004":"COMPLETE","CRL-005":"COMPLETE","CRL-006":"COMPLETE","AUTO_COMPANY_CROSSWALK":"COMPLETE","SHADOW_ADAPTER_DESIGN":"COMPLETE","FAIR_EXIT_PROTOCOL":"COMPLETE"},
+  "controls":{"external_contact":false,"quote":false,"contract":false,"price_release":false,"daemon_install":false,"unattended_execution":false,"real_data":false,"mainline_write":false},
+  "exit_design":{"purpose_completion_review":true,"fair_leaver_default":true,"mission_asset_register_required":true,"solvency_before_distribution":true,"professional_implementation_review_required":true},
+  "next_gate":"FOUNDER_REVIEW_CRL_V0_1"
+}
+

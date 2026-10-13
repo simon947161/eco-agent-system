@@ -1,0 +1,62 @@
+{
+  "prototype": "GGG local loopback adapter v0.3",
+  "binding": "127.0.0.1 only",
+  "interfaces": [
+    "OpenAPI HTTP",
+    "MCP JSON-RPC"
+  ],
+  "total_cases": 11,
+  "passed": 11,
+  "failed": 0,
+  "result": "PASS",
+  "real_data": false,
+  "external_action": false,
+  "mainline_write": false,
+  "private_person_assets": false,
+  "cases": [
+    {
+      "case": "health",
+      "passed": true
+    },
+    {
+      "case": "capabilities",
+      "passed": true
+    },
+    {
+      "case": "openapi_handoff",
+      "passed": true
+    },
+    {
+      "case": "mcp_same_contract",
+      "passed": true
+    },
+    {
+      "case": "block_real_state",
+      "passed": true
+    },
+    {
+      "case": "block_decision_authority",
+      "passed": true
+    },
+    {
+      "case": "block_private_assets",
+      "passed": true
+    },
+    {
+      "case": "block_capability_escalation",
+      "passed": true
+    },
+    {
+      "case": "block_unapproved_protected_write",
+      "passed": true
+    },
+    {
+      "case": "block_idempotency_conflict",
+      "passed": true
+    },
+    {
+      "case": "block_wrong_content_type",
+      "passed": true
+    }
+  ]
+}

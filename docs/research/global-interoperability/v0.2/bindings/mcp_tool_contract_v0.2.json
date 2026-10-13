@@ -1,0 +1,9 @@
+{
+  "name": "ggg.handoff_evidence.v0_2",
+  "title": "GGG bounded cross-OS evidence handoff",
+  "description": "Accept one canonical synthetic evidence envelope and return a validation receipt. Transport does not grant truth, decision or external-action authority.",
+  "inputSchema": {"$ref": "../schemas/cross_os_transport_envelope.schema.json"},
+  "outputSchema": {"$ref": "../schemas/cross_os_transport_receipt.schema.json"},
+  "annotations": {"readOnlyHint": false, "destructiveHint": false, "idempotentHint": true, "openWorldHint": false},
+  "security_boundary": {"synthetic_only": true, "external_action": false, "mainline_write": false, "private_person_assets": false}
+}

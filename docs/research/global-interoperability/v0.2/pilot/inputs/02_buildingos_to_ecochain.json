@@ -1,0 +1,22 @@
+{
+  "contract_version": "ggg-transport-v0.2",
+  "handoff_id": "HO-SYN-BUILD-ECO-002",
+  "correlation_id": "COR-GGG-PILOT-001",
+  "object_id": "OBJ-SYN-BUILD-002",
+  "object_type": "DomainClaim",
+  "source_system": "BUILDINGOS",
+  "target_system": "ECOCHAIN",
+  "evidence_state": "SYNTHETIC",
+  "synthetic": true,
+  "authority": {"sender_role": "building evidence translator", "receiver_role": "registry adapter", "claim_authority": "DOMAIN_ONLY", "decision_authorized": false},
+  "provenance": {"source_id": "SYNTHETIC-BUILDING-TRANSLATOR-V0.2", "publisher_or_provider": "BuildingOS bounded pilot", "source_version": "v0.2", "retrieved_at": "2026-08-01T00:00:01Z", "event_time": "2026-08-01T00:00:00Z", "sha256": "2222222222222222222222222222222222222222222222222222222222222222", "upstream_object_ids": ["OBJ-SYN-CLIMATE-001"]},
+  "boundaries": {"spatial": "fictional site CELL-SYN-001", "process": "synthetic building-risk candidate translation test only", "time": "derived from single synthetic event at 2026-08-01T00:00:00Z"},
+  "measurement": {"value": "REVIEW_CANDIDATE", "unit": "categorical", "quality_code": "SYNTHETIC", "missing_data_treatment": "upstream synthetic fixture contains no missing value"},
+  "transformations": ["mapped synthetic heat-stress signal to a review candidate", "preserved SYNTHETIC evidence state and all upstream limitations"],
+  "uncertainty": "No empirical or engineering validity; translation tests semantic preservation only.",
+  "limitations": ["not a building defect or engineering conclusion", "requires qualified evidence and professional review before any real use", "inherits upstream synthetic-only restriction"],
+  "permitted_use": {"licence": "internal synthetic test fixture", "uses": ["registry conformance test", "lineage validation"], "prohibited_uses": ["design change", "customer advice", "supplier or technology selection", "public-safety decision"]},
+  "governance": {"parent_capabilities": ["read_fixture", "validate_fixture", "derive_synthetic_claim", "submit_fixture_to_registry"], "child_capabilities": ["read_fixture", "validate_fixture", "submit_fixture_to_registry"], "protected_write_requested": false, "protected_write_approval_present": false, "external_action_authorized": false, "freshness_due_at": null, "supersedes": null},
+  "privacy_boundary": {"private_person_assets_included": false, "biometric_assets_included": false, "personal_os_connected": false},
+  "payload": {"claim": "Synthetic signal warrants synthetic review candidate", "confidence": "PROVISIONAL", "not_authorized_as": ["engineering conclusion", "customer recommendation", "procurement input"]}
+}

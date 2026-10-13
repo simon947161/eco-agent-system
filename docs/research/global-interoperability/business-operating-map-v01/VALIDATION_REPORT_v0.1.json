@@ -1,0 +1,51 @@
+{
+  "model": "gegg.business-operating-model.v0.1",
+  "checks": [
+    {
+      "check": "four_domains_present",
+      "result": "PASS"
+    },
+    {
+      "check": "business_loop_complete",
+      "result": "PASS"
+    },
+    {
+      "check": "no_customer_claim",
+      "result": "PASS"
+    },
+    {
+      "check": "no_wtp_claim",
+      "result": "PASS"
+    },
+    {
+      "check": "financial_unknowns_preserved",
+      "result": "PASS"
+    },
+    {
+      "check": "shadow_controls",
+      "result": "PASS"
+    },
+    {
+      "check": "selection_controls",
+      "result": "PASS"
+    },
+    {
+      "check": "climateos_boundary",
+      "result": "PASS"
+    },
+    {
+      "check": "personal_asset_boundary",
+      "result": "PASS"
+    },
+    {
+      "check": "stage_hold",
+      "result": "PASS"
+    },
+    {
+      "check": "next_stage_bounded",
+      "result": "PASS"
+    }
+  ],
+  "passed": 11,
+  "total": 11
+}
