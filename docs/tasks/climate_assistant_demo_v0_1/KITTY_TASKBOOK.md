@@ -12,9 +12,9 @@
 
 - KITTY 已实际读到 #124 Issue 正文与既有评论，并能复述第 4 节固定案例和公式边界。
 - 首次结果明确承认 Issue 正文读取到 4000 字符截断，尚未读取官方来源包；故定级为 `CASE_STRUCTURE_ONLY`，不是证据版简报。
-- KITTY 尚未因此自动读到本分支文件；Issue 读取不等于仓库 blob 读取。
-- 来源包必须先推送成可读取远程文件，再以一个明确的后续提示交给现有 KITTY。
-- 后续提示是“读取已发布证据包并补全简报”，不是重复启动 #124。
+- 固定 commit 推送后，后续任务 `BR-mv8vd0cg-k5ibu` 实际读取来源包、案例公式、原审计和 Host 底稿，四项均为 `FOUND_AND_READ`，随后以 `SUCCESS / DELIVERED` 返回证据版简报。
+- 首次 Issue 读取并不等于仓库 blob 读取；来源包推送后，才以“读取已发布证据包并补全简报”的明确后续提示交给同一个 KITTY。
+- 该后续提示补充了新证据输入，不是重复启动 #124。
 
 ## 3. 期望交付
 
@@ -32,4 +32,4 @@
 - `EVIDENCE_BASED_DEMO`：KITTY 实际读取固定版本 `SOURCE_PACK.md`，并返回与来源边界一致的简报后才可用。
 - `NOT_DELIVERED`：只有 pending/timeout/failed 而无完整回执。
 
-归档时的最终状态、实际 run id、回执时间和是否采用 KITTY 文本，见 `DEMO_RESULT.md` 与 `REVIEW_AND_CRP.md`。Host Codex 文字始终单独署名。首次 KITTY 输出包含与本任务无关的 WCOS 排序意见，归档只记录其农场案例内容和边界，不将该意见扩展为 ClimateOS 前置条件。
+归档时的最终状态、实际 run id、回执时间和采用的 KITTY 文本，见 `DEMO_RESULT.md` 与 `REVIEW_AND_CRP.md`。Host Codex 文字始终单独署名。KITTY 输出中与本任务无关的 WCOS 提醒不属于本示范，未归档为 ClimateOS 前置条件。
