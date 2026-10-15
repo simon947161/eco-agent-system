@@ -283,6 +283,7 @@ python run_simple_check.py
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [License](LICENSE)
 - [Eco Decision DNA](docs/eco-decision-dna.md)
+- [Cooma farm climate resource evidence demo v0.1](docs/tasks/climate_assistant_demo_v0_1/README.md)
 
 ---
 
