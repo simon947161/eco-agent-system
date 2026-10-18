@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["executor", "result", "observed_repo", "observed_head", "read_file", "reason", "boundary"],
+  "properties": {
+    "executor": { "const": "Codex" },
+    "result": { "enum": ["PASS", "FAIL"] },
+    "observed_repo": { "type": "string" },
+    "observed_head": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+    "read_file": { "const": "README.md" },
+    "reason": { "type": "string" },
+    "boundary": { "const": "READ_ONLY_NO_PUSH_NO_MERGE_NO_COUNCIL" }
+  }
+}
