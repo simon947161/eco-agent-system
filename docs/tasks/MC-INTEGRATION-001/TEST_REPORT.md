@@ -2,37 +2,42 @@
 
 Date: 2026-10-19 (Australia/Sydney)
 
-## Results
+Review status: `REVIEW_PENDING`
 
-| Test | Result | Evidence boundary |
+Deployment status: `PRODUCTION_NO-GO`
+
+## F-1–F-6 remediation
+
+| Finding | Result | Regression evidence |
 |---|---|---|
-| KITTY -> Codex -> receipt -> GitHub | PASS | Prior live no-tool job `MC126-1792354654093-3dd81a`; Issue comment `6254653915`. This is real CLI/writeback evidence, not a mock, but it uses host-prechecked evidence. |
-| Success receipt/writeback state | PASS | Injected isolation test. |
-| Unsupported model | PASS | Rejected before executor invocation. |
-| Codex CLI unavailable | PASS | Explicit `CODEX_UNAVAILABLE` receipt. |
-| Missing/invalid result | PASS | Explicit `INVALID_RESULT` receipt. |
-| GitHub permission/write failure | PASS | Explicit failed writeback with redaction. |
-| Duplicate job | PASS | Same receipt returned; executor invoked once. |
-| Cancellation | PASS | Pre-start marker prevents execution. |
-| Restart/recovery | PASS | Stale `RUNNING` receipt becomes `RECOVERY_REQUIRED`. |
-| Rollback switch | PASS | Default configuration rejects work as `ADAPTER_DISABLED`. |
-| Credential redaction | PASS | Credential-shaped values removed from failure text. |
-| Production service unchanged | PASS | PID `18172`, HEAD `23fd401...`, and source hashes captured read-only; no restart or file write. |
+| F-1 corrupt recovery | FIXED / PASS | A corrupt receipt is renamed and preserved, a failed placeholder is written, and a separate stale `RUNNING` job still recovers. |
+| F-2 empty receipt race | FIXED / PASS | Claim and receipt use separate files; 12 concurrent duplicates return one readable receipt while the executor starts once. |
+| F-3 cooperative cancellation | FIXED / PASS | Executor receives `AbortSignal`; timeout retry reaches maximum concurrency 1; unconfirmed termination suppresses retry; post-start cancel returns `CANCELLED`. |
+| F-4 mutable allowlist | FIXED / PASS | Exported defaults, copied effective array and returned config reject mutation; caller-array mutation cannot widen policy. |
+| F-5 unbounded failure | FIXED / PASS | UTF-8 failure text is redacted and remains at or below configured byte limit, including multibyte input. |
+| F-6 success-result leakage | FIXED / PASS | Nested secret-named keys and token-shaped strings are sanitized before both persistence and Issue-writer invocation. |
 
-Commands:
+## Required coverage
+
+PASS: repository and Issue policy denial, invalid job ID, empty and oversized prompt, unsupported model, unavailable CLI, missing result, non-PASS result, oversized result, writeback permission failure, sequential/concurrent duplicate job, pre-start and post-start cancellation, confirmed timeout retry, unconfirmed termination fail-closed, corrupt recovery, rollback switch, redaction and byte bounding.
+
+The existing runner suite remains included and passed. The pinned review packet must include both:
+
+- `tests/test_mc_integration_runner.mjs`
+- `tests/test_production_adapter.mjs`
+
+## Commands and results
 
 - `node --check tools/mc_integration/production-adapter.mjs` — PASS
-- `node --test tests/test_mc_integration_runner.mjs tests/test_production_adapter.mjs` — PASS, 14/14 on normal Windows host filesystem semantics
+- `node --test tests/test_mc_integration_runner.mjs tests/test_production_adapter.mjs` — PASS, 21/21
 - `git diff --check` — PASS
 
-## Important environment finding
+The first regression run was 19/20 because the policy-denial test matched message text even though the implementation correctly exposed `error.code = POLICY_DENIED`. The assertion was corrected to inspect the structured code; no production behavior was weakened.
 
-The same Node tests initially failed inside Codex's virtualized sandbox temporary directory because Windows `rename` returned `EPERM`. The unchanged suite passed outside that filesystem virtualization. This is evidence that the adapter's atomic replacement must be rechecked in the exact future service state directory; it is not evidence of production readiness.
+## Evidence boundary
 
-## Validation boundaries
-
-- The new adapter tests use injected executor and Issue-writer functions. They validate state transitions and safety controls, not live KITTY wiring.
-- The prior live job proves real Codex CLI invocation and GitHub writeback, but Codex was instructed not to invoke tools; KITTY's host collected the repository evidence.
-- A prior attempt at actual Codex shell use in Windows read-only sandbox failed with `CreateProcessWithLogonW failed: 2`.
-- The DeepSeek diagnostics endpoint was read and healthy; no paid DeepSeek job was launched.
-- Timeout logic is bounded in code but a production child-process termination strategy remains unverified.
+- Tests use injected executor and Issue-writer functions to verify adapter state, concurrency, cancellation and safety behavior. They do not claim live KITTY route integration.
+- Prior live no-tool Codex/writeback evidence remains job `MC126-1792354654093-3dd81a`, Issue comment `6254653915`.
+- Actual Codex tool/shell execution in the Windows read-only sandbox remains unverified after the prior `CreateProcessWithLogonW failed: 2` result.
+- `start-mission-control.ps1` is verified as the canonical Founder entry point; no automated rollback command is verified.
+- The formal service was not deployed, restarted or modified by this remediation.

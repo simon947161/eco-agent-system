@@ -2,7 +2,7 @@
 
 ## Safety controls
 
-The isolated candidate is default-off, Issue-126-only, creates no listener, reads no credential values, and exposes no Council or public-system path. Runtime state must live outside Git. Logs and receipts contain IDs, status, hashes and redacted failures, not prompts or environment dumps.
+The isolated candidate is default-off, Issue-126-only, creates no listener, reads no credential values, and exposes no Council or public-system path. Runtime state must live outside Git. Logs and receipts contain IDs, status, hashes, sanitized results and byte-bounded redacted failures, not prompts or environment dumps.
 
 Current production source fingerprints (read-only capture, 2026-10-19):
 
@@ -20,7 +20,7 @@ These hashes are evidence, not a claim that the dirty tree is safe to overwrite.
 Rollback is fail-closed and does not require deleting receipts:
 
 1. Set `KITTY_CODEX_ADAPTER_ENABLED=0` in the reviewed service configuration.
-2. Stop accepting new Codex jobs; allow any active child process to terminate at its bounded timeout.
+2. Stop accepting new Codex jobs; abort active jobs cooperatively and require confirmed executor termination. If termination is not confirmed within the grace period, fail closed and do not retry.
 3. Preserve the state directory and Issue comments as audit evidence.
 4. Revert only the reviewed adapter import/route/config patch in a clean worktree or deploy the prior reviewed artifact.
 5. Restart only after Founder approval and confirm `/api/status`, `/api/kitty/diagnostics`, and the existing DeepSeek path.
@@ -28,11 +28,11 @@ Rollback is fail-closed and does not require deleting receipts:
 
 ## Exact executor actions after approval
 
-The deployer must work from a clean worktree created at the approved production commit, review the patch, run the two focused Node test files, and use the existing service supervisor/launcher to perform a controlled restart. The current process was started directly as:
+The deployer must work from a clean worktree created at the approved production commit, review the patch, run the two focused Node test files, and use the existing canonical launcher for a controlled restart only after separate approval:
 
-`node D:\Codex\ClimbOS-Mission-Control\docs\taskboard\server\taskboard-server.mjs`
+`D:\Codex\ClimbOS-Mission-Control\start-mission-control.ps1`
 
-No verified supervisor or automatic rollback command was discovered in this audit. Therefore a production command sequence is intentionally not asserted until the service owner identifies the canonical launcher. This is a deployment blocker, not permission to kill PID `18172` manually.
+That script is the single Founder entry point, holds mutex `Local\KITTYCanonicalStartup3543`, reuses a healthy bridge, launches the exact Node server when required, retries startup once, and checks health. No automated rollback command was identified. The absence of automated rollback remains a deployment blocker and is not permission to kill the live PID manually.
 
 ## Rollback acceptance
 
@@ -41,4 +41,4 @@ No verified supervisor or automatic rollback command was discovered in this audi
 - existing KITTY and DeepSeek diagnostics remain healthy;
 - prior receipts remain readable;
 - Issue #126 receives the rollback outcome or explicit writeback failure;
-- no unrelated dirty-tree entry changes.
+- sorted pre/post `git status --porcelain=v1` entry sets have no unexplained delta; no fixed dirty-entry count is an acceptance criterion.
