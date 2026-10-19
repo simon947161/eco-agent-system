@@ -1,0 +1,232 @@
+diff --git a/docs/taskboard/server/github-evidence-routing.mjs b/docs/taskboard/server/github-evidence-routing.mjs
+new file mode 100644
+--- /dev/null
++++ b/docs/taskboard/server/github-evidence-routing.mjs
+@@ -0,0 +1,136 @@
++// Production-candidate evidence routing for MC-INTEGRATION-001.
++// Kept in the isolated staging branch until a separately approved deployment.
++
++const SUCCESS = new Set(["SUCCESS", "FOUND_AND_READ", "ACCESS_CONFIRMED"]);
++const BLOCKED = new Set([
++  "AUTH_REQUIRED",
++  "NOT_FOUND",
++  "NOT_READABLE",
++  "NOT_ALLOWLISTED",
++  "UNVERIFIED_CONTENT",
++  "404",
++  "RATE_LIMIT",
++  "NETWORK_ERROR",
++  "ACCESS_BLOCKED",
++]);
++
++export function resolveAuthorizedRepoBinding({
++  requestBinding = null,
++  configuredBinding = null,
++  isAllowlisted = () => false,
++} = {}) {
++  const candidates = [
++    { value: requestBinding, source: "REQUEST" },
++    { value: configuredBinding, source: "CONFIG" },
++  ];
++  for (const candidate of candidates) {
++    const repo = String(candidate.value || "").trim();
++    if (!repo) continue;
++    if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repo)) {
++      return { repo: null, source: candidate.source, reason: "INVALID_REPOSITORY_BINDING" };
++    }
++    if (!isAllowlisted(repo)) {
++      return { repo: null, source: candidate.source, reason: "REPOSITORY_BINDING_NOT_ALLOWLISTED" };
++    }
++    return { repo, source: candidate.source, reason: "AUTHORIZED_REPOSITORY_BINDING" };
++  }
++  return { repo: null, source: "NONE", reason: "MISSING_AUTHORIZED_REPOSITORY_BINDING" };
++}
++
++export function hasGitHubEvidenceIntent(message) {
++  const text = String(message || "");
++  return /github\.com\/[^\s]+\/(?:issues|blob)\/|\/api\/github\/evidence|issue\s*#?\d+|comment\s*\d+|commit\s+[0-9a-f]{7,40}|[0-9a-f]{40}|github[^\n]{0,80}(?:issue|comment|commit|file|repo|仓库|文件|证据)/i.test(text);
++}
++
++export function classifyGitHubAccess({
++  message,
++  githubReads = [],
++  readerAvailable = true,
++  targetCount = 0,
++  missingTargetReason = "NO_CANONICAL_TARGET_PARSED",
++} = {}) {
++  const intent = hasGitHubEvidenceIntent(message);
++  if (!intent) {
++    return { intent: false, status: null, reason: "NO_GITHUB_EVIDENCE_INTENT" };
++  }
++
++  const reads = Array.isArray(githubReads) ? githubReads : [];
++  const statusOf = (read) => String(read?.status || read?.type || "").toUpperCase();
++  const confirmed = reads.find((read) => read?.ok === true || SUCCESS.has(statusOf(read)));
++  if (confirmed) {
++    return { intent: true, status: "ACCESS_CONFIRMED", reason: "CANONICAL_READER_RETURNED_CONTENT" };
++  }
++
++  const blocked = reads.find((read) => read?.ok === false || BLOCKED.has(statusOf(read)));
++  if (blocked) {
++    return {
++      intent: true,
++      status: "ACCESS_BLOCKED",
++      reason: statusOf(blocked) || "CANONICAL_READER_FAILED",
++    };
++  }
++
++  return {
++    intent: true,
++    status: "TOOL_UNAVAILABLE",
++    reason: !readerAvailable
++      ? "CANONICAL_READER_UNAVAILABLE"
++      : targetCount > 0
++      ? "CANONICAL_READER_RETURNED_NO_RESULT"
++      : missingTargetReason,
++  };
++}
++
++export function decideEvidenceRoute({
++  message,
++  needsResearch = false,
++  githubReads = [],
++  readerAvailable = true,
++  targetCount = 0,
++  missingTargetReason = "NO_CANONICAL_TARGET_PARSED",
++  publicSearchResults = [],
++} = {}) {
++  const access = classifyGitHubAccess({ message, githubReads, readerAvailable, targetCount, missingTargetReason });
++
++  // Public search is neither an access probe nor evidence for repository bytes.
++  // It must not run as a fallback for GitHub evidence intent, and its results must
++  // never change the canonical reader's access classification.
++  const allowPublicResearch = Boolean(needsResearch) && !access.intent;
++  return {
++    ...access,
++    allowPublicResearch,
++    ignoredPublicSearchResultCount: access.intent && Array.isArray(publicSearchResults)
++      ? publicSearchResults.length
++      : 0,
++  };
++}
++
++export function safeRouteTelemetry(decision, {
++  bindingSource = "NONE",
++  issueTargetCount = 0,
++  fileTargetCount = 0,
++  githubReads = [],
++} = {}) {
++  return {
++    intent: Boolean(decision?.intent),
++    status: decision?.status || null,
++    reason: decision?.reason || null,
++    bindingSource,
++    issueTargetCount,
++    fileTargetCount,
++    readStatuses: (Array.isArray(githubReads) ? githubReads : [])
++      .slice(0, 8)
++      .map((read) => String(read?.status || read?.type || (read?.ok ? "SUCCESS" : "UNKNOWN")).slice(0, 48)),
++    publicResearchAllowed: Boolean(decision?.allowPublicResearch),
++  };
++}
++
++export function formatAccessDecisionForPrompt(decision) {
++  if (!decision?.intent || decision.status === "ACCESS_CONFIRMED") return "";
++  return [
++    "## GitHub 证据路由结果（不是网页搜索结果）",
++    `status: ${decision.status}`,
++    `reason: ${decision.reason}`,
++    "规则：公开网页搜索不能证明 GitHub issue 或文件可访问或不可访问。没有 canonical reader 原文时，不得声称已读取，也不得用搜索零命中补足。",
++  ].join("\n");
++}
+diff --git a/docs/taskboard/server/taskboard-server.mjs b/docs/taskboard/server/taskboard-server.mjs
+--- a/docs/taskboard/server/taskboard-server.mjs
++++ b/docs/taskboard/server/taskboard-server.mjs
+@@ -15,6 +15,7 @@ import * as workTelemetry from "./work-telemetry.mjs";
+ import * as founderActions from "./founder-actions.mjs";
+ import * as missionSpec from "./mission-spec.mjs";
+ import * as githubIssues from "./github-issues.mjs";
++import * as githubRouting from "./github-evidence-routing.mjs";
+ import * as executionIntelligence from "./execution-intelligence.mjs";
+ import * as capabilityPanel from "./capability-panel.mjs";
+ import * as autonomyPolicy from "./autonomy-policy.mjs";
+@@ -767,5 +768,10 @@ async function handleApi(req, res, urlPath, method) {
+     try {
+       const body = await readBody(req);
+       const message = String(body.message || "").trim();
++      const githubRepoBinding = githubRouting.resolveAuthorizedRepoBinding({
++        requestBinding: body.githubRepository || null,
++        configuredBinding: process.env.KITTY_GITHUB_REPO_BINDING || null,
++        isAllowlisted: githubIssues.isAllowlisted,
++      });
+       if (!message) return sendError(res, 400, "message required");
+       katie.appendTurn({ role: "simon", text: message });
+@@ -800,10 +807,12 @@ async function handleApi(req, res, urlPath, method) {
+       let githubEvidence = "";
+       let githubReads = [];
+       let remoteBrainRunId = null;
++      let issueRefs = [];
++      let evidenceRefs = [];
+       const githubResults = [];
+       try {
+-        const refs = githubIssues.extractIssueRefs(message);
+-        for (const ref of refs.slice(0, 4)) {
++        issueRefs = githubIssues.extractIssueRefs(message, githubRepoBinding.repo);
++        for (const ref of issueRefs.slice(0, 4)) {
+           const r = await githubIssues.readIssueThread(ref.repo, ref.number); // exactly one read per issue
+           githubResults.push(r);
+           githubReads.push({ repo: r.repo, number: r.number, ok: r.ok, type: r.type, title: r.title || null, comment_ids: (r.comments || []).map((c) => c.id), url: r.url, evidence: r.evidence || null, reason: r.reason || null, next: r.next || null });
+@@ -812,8 +821,8 @@ async function handleApi(req, res, urlPath, method) {
+         // ---- FILE EVIDENCE ROUTE (DSH-KITTY-EVIDENCE-FINAL-003) ---------------------------------
+         // A message naming an allowlisted repository FILE is read by the file evidence reader. The
+         // issue path above is untouched, so existing issue/PR-description behaviour is preserved.
+-        const evidenceRefs = githubIssues.extractEvidenceRefs(message);
+-        for (const fr of evidenceRefs.slice(0, 4)) {
++        evidenceRefs = githubIssues.extractEvidenceRefs(message, githubRepoBinding.repo);
++        for (const fr of evidenceRefs.slice(0, 4)) {
+           const fe = await githubIssues.readEvidenceFile(fr.repo, fr.refOrPr || "HEAD", fr.path);
+           githubResults.push(Object.assign({ kind: "file" }, fe));
+           githubReads.push({ kind: "file", invocation_id: fe.invocation_id || null, request_binding: fe.request_binding || null, repo: fe.repository, ref_or_pr: fe.ref_or_pr, path: fe.path, status: fe.status, ok: fe.status === "FOUND_AND_READ", commit_sha: fe.commit_sha || null, content_hash: fe.content_hash || null, bytes: fe.content_bytes || 0, error: fe.error || null });
+@@ -826,6 +835,26 @@ async function handleApi(req, res, urlPath, method) {
+       } catch (e) {
+         store.audit({ action: "github:read-error", actor: "bridge", detail: { message: String(e.message || e).slice(0, 200) } });
+       }
+-      const willThink = githubReads.length > 0 || (() => { try { const c0 = katie.classify(message); return katieBrain.needsBrain(message, c0, c0.projectId); } catch { return false; } })();
++      const routeDecision = githubRouting.decideEvidenceRoute({
++        message,
++        needsResearch: katieBrain.needsResearch(message) && !missionSpec.isPrivateMissionText(message),
++        githubReads,
++        readerAvailable: true,
++        targetCount: issueRefs.length + evidenceRefs.length,
++        missingTargetReason: githubRepoBinding.reason,
++      });
++      const routePrompt = githubRouting.formatAccessDecisionForPrompt(routeDecision);
++      if (routePrompt) githubEvidence += (githubEvidence ? "\n\n" : "") + routePrompt;
++      store.audit({
++        action: "github:route",
++        actor: "bridge",
++        detail: githubRouting.safeRouteTelemetry(routeDecision, {
++          bindingSource: githubRepoBinding.source,
++          issueTargetCount: issueRefs.length,
++          fileTargetCount: evidenceRefs.length,
++          githubReads,
++        }),
++      });
++      const willThink = routeDecision.intent || githubReads.length > 0 || (() => { try { const c0 = katie.classify(message); return katieBrain.needsBrain(message, c0, c0.projectId); } catch { return false; } })();
+       // Two-stage: on a thinking turn the ONLY immediate output is a short acknowledgement.
+       // A fast generic "answer" must never be shown before the real reasoning.
+@@ -856,12 +884,12 @@ async function handleApi(req, res, urlPath, method) {
+           katie.appendTurn({ role: "katie", text: notice, kind: "BRAIN_PENDING" });
+           katieBrain.think({
+             message,
+-            depth: githubReads.some((r) => r.ok) ? "deep" : katieBrain.depthFor(message, c),
++            depth: routeDecision.status === "ACCESS_CONFIRMED" ? "deep" : katieBrain.depthFor(message, c),
+             githubEvidence,
+             brainRunId: remoteBrainRunId,
+             // PRIVATE MISSION NAMES NEVER GO TO A PUBLIC WEB SEARCH: a mission name is an internal
+             // identifier, and a public query would leak it while still not returning the spec.
+-            research: katieBrain.needsResearch(message) && !missionSpec.isPrivateMissionText(message) && !githubReads.some((r) => r.ok),
++            research: routeDecision.allowPublicResearch,
+             projectId: c.projectId,
+             thread: katie.readThread(8),
+             appendTurn: (turn) => {
