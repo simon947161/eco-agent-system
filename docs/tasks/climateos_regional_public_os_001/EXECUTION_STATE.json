@@ -1,0 +1,19 @@
+{
+  "schema": "climateos.regional_public_os.execution_state.v1",
+  "task_id": "CLIMATEOS-REGIONAL-PUBLIC-OS-001",
+  "updated_on": "2026-10-22",
+  "timezone": "Australia/Sydney",
+  "repository": "https://github.com/simon947161/eco-agent-system",
+  "taskbook_path": "docs/tasks/climateos_regional_public_os_001/TASKBOOK.md",
+  "taskbook_branch": "codex/regional-public-os-001-taskbook",
+  "status": "planned",
+  "execution_started": false,
+  "bridge_dependency": {"pr": 127, "state_checked_on": "2026-10-22", "state": "draft_unmerged", "head_sha": "6a20de8c21ed3587e521e3d10b0785b11be6d8f5"},
+  "site": {"project_id": null, "url": null, "deployment_verified": false, "public_access_verified": false},
+  "automation": {"schedule_created": false, "unattended_write_readback_verified": false},
+  "packages": {"P00": "planned", "P01": "planned", "P02": "planned", "P03": "planned", "P04": "planned", "P05": "planned", "P06": "planned", "P07": "planned", "P08": "planned", "P09": "planned", "P10": "planned"},
+  "external_spending_authorized_aud": 0,
+  "next_action": "Read repository rules and TASKBOOK; verify current main and open work; create isolated implementation checkout; execute P00-P02 as the first working vertical slice.",
+  "blockers": []
+}
+
