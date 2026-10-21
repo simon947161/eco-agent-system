@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://climateos.example/schemas/council_bridge_compute_request.v0.1.json",
+  "title": "Council Bridge synthetic Compute Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_id", "council_id", "question_id", "spatial_ids", "variable", "unit", "period_start", "period_end", "input_digest", "data_classification", "licence", "model_version", "budget_aud", "approval_digest", "idempotency_key", "output_requirement"],
+  "properties": {
+    "request_id": {"$ref": "#/$defs/identifier"},
+    "council_id": {"$ref": "#/$defs/identifier"},
+    "question_id": {"$ref": "#/$defs/identifier"},
+    "idempotency_key": {"$ref": "#/$defs/identifier"},
+    "spatial_ids": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"$ref": "#/$defs/identifier"}},
+    "variable": {"const": "fixture_resource_index"},
+    "unit": {"const": "1"},
+    "period_start": {"type": "string", "format": "date-time"},
+    "period_end": {"type": "string", "format": "date-time"},
+    "input_digest": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "approval_digest": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "data_classification": {"const": "SYNTHETIC_ONLY"},
+    "licence": {"const": "MIT_REPOSITORY_FIXTURE"},
+    "model_version": {"const": "fixed-fixture-v1"},
+    "budget_aud": {"type": "number", "const": 0},
+    "output_requirement": {"const": "SYNTHETIC_DIAGNOSTIC_ONLY"}
+  },
+  "$defs": {"identifier": {"type": "string", "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]{0,79}$"}},
+  "$comment": "Runtime additionally verifies Council ownership, configured spatial identities, ordered timestamps, exact input digest and content-bound approval. Digest uses the repository canonical-json helper; see contracts.py. No real provider admitted."
+}

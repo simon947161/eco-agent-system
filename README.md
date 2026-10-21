@@ -1,325 +1,94 @@
-# Eco Agent System
+# ClimateOS
 
-**Open-source Environmental Decision Support Framework**
+**Trustworthy, time-bounded local environmental intelligence — connecting global, regional and local evidence while preserving human responsibility.**
 
-Eco Agent System is an early-stage open-source prototype for translating environmental observations into planning, resilience, maintenance, ESG interpretation, and climate-risk decision support.
+ClimateOS helps environmental practitioners, land managers, communities and infrastructure stewards organise evidence around practical questions, compare possibilities, review uncertainty and learn from outcomes.
 
-It explores how environmental data can become practical, human-reviewed action logic for communities, planners, land managers, researchers, and public-good projects.
+This repository retains the historical name `eco-agent-system`. Its accepted foundations include local research runtimes, evidence admission, official-data pilots, QGIS spatial-workbench workflows and bounded Cooma site reading. The [original README](docs/council_bridge/LEGACY_README_2026-09-28.md) is preserved as history; its relative links refer to the repository root.
 
-## CCZPS-Lite v0.5
+## Council-level Bridge
 
-CCZPS-Lite v0.5 is the repository's deterministic, local-first environmental
-intelligence and planning-support foundation. It connects evidence,
-meteorology, spatial context, planning hypotheses, validation support,
-traceability, internal governance support, and scenario comparison.
+The standard implementation unit is a **Council**, including its jurisdiction and responsibilities. Farms, settlements, catchments, ecosystems and infrastructure are connected local objects. The earlier hypothetical farm remains a child case, not the whole deployment scope.
 
-It is not a statutory approval tool, professional certification system,
-engineering or construction decision system, regulatory determination, or
-financial recommendation system. Human and professional review remain required.
+This branch adds an offline Council Bridge rehearsal:
 
-Run the tests:
-
-```bash
-python -m unittest discover
+```text
+Question and scope → evidence → compute request → quarantined result
+→ local fitness check → human review → time-bounded answer → outcome record
 ```
 
-## Meaningful Environmental Question Runtime (Task2002 prototype)
+Snowy Monaro Regional Council is the first candidate context. Official boundary geometry is not admitted. The second node is fictional. Neither is a real Council deployment or endorsed service.
 
-This supervised local prototype accepts a real environmental question in the
-user's own words and structures it as an evidence plan. Real-place execution is
-blocked: the Runtime does not fetch current data or manufacture a regional
-conclusion. A separate, explicitly fictional Australian highland-town fixture
-can rehearse the human approval, deterministic run, Run Receipt, quarantined
-Evidence Passport, and human review workflow.
+```bash
+python run_council_bridge.py
+```
 
-From the repository folder, start it with:
+Open the full local URL printed by the process. It runs on loopback only, uses Python's standard library, and stores ignored runtime data locally. See the [Bridge guide](docs/council_bridge/README.md) for the complete walkthrough and limitations.
+
+## What is implemented
+
+| Capability | Current scope |
+| --- | --- |
+| Environmental question and persistent research workflows | Local questions, research cycles, receipts and human review |
+| Scientist runtime | Deterministic structuring and fixed synthetic execution; not an autonomous scientist |
+| Evidence admission | Source identity, provenance, spatial/temporal fitness and bounded official-data pilots |
+| QGIS workbench | Cooma terrain/hydrology/spatial-context builder workflows; not causal inference |
+| Site Reading | Accepted bounded historical context and evidence requests; current-flow/trend gaps remain |
+| Council Bridge | Separate local node databases, spatial relationship schematic, exact synthetic requests, mock compute, L0/S0 answers, demo review and outcome records |
+| Evidence Commons rehearsal | Preview, exact approval and export of synthetic metadata; same-host broker exchange, expiry and withdrawal reconciliation |
+
+The Bridge uses existing canonical digest helpers and the Time-Bounded Environmental Answer schema. It follows existing Passport and Receipt patterns without importing private records or merging old draft work.
+
+## What remains unconnected
+
+- Representative real multi-source Council assessments and retrospective model-skill validation.
+- Verified, version-pinned Council geometry and its exact licence/attribution.
+- Global/regional model computation and real Matrix One access.
+- Independent scientific/professional sign-off.
+- Multi-user identity, signed cross-host federation and production deployment.
+
+Synthetic, historical, observed, projected and modelled evidence must remain distinguishable. Accepting a workflow demonstration does not create an environmental conclusion. Missing evidence stays visible.
+
+## Existing local entry points
 
 ```bash
 python run_environmental_question_runtime.py
+python run_scientist_runtime.py
+python run_cooma_site_reading.py --verify-fixture
 ```
 
-Then open <http://127.0.0.1:8766>. The process must remain open while the page
-is in use; press `Ctrl+C` to stop it. The older scalar control demonstration
-continues to use port 8765 and is not the entry for this prototype.
+The environmental-question server uses port 8766, the fixed scalar demonstration 8765, and Council Bridge 8767. They have separate purposes and storage. The existing research workflow's manual allowlisted source refresh does not grant Bridge permission to fetch data.
 
-The same server now exposes the first persistent monthly research program at
-<http://127.0.0.1:8766/program.html>. It preserves the Cooma water, snow,
-bushfire, drinking-water and wastewater question across monthly cycles. A human
-may add explicitly public-safe field observations, approve an allowlisted live
-refresh of five public BOM, NSW RFS and Snowy Monaro Council pages, compile a
-change comparison, and review a versioned Receipt and Passport.
+## Work status checked 2026-10-21
 
-Live refresh is manual and zero-cost. It stores response metadata and content
-digests but not raw page bodies. A changed digest is only a change candidate;
-it is never an automatic environmental, emergency, operational or compliance
-conclusion. Do not enter Council internal, customer, personal or non-public
-worksite information.
+| Work | State |
+| --- | --- |
+| PR118 Site Reading | Merged |
+| PR120 offline freshness/convergence | Draft; not merged |
+| PR121 Task3000 mission review | Draft; broader freeze preserved |
+| PR125 hypothetical farm evidence | Draft; preserved as lineage |
+| Issue126 agent/tool orchestration | Task registered; execution must be independently verified |
+| Council Bridge | Isolated local synthetic implementation in this branch, awaiting review |
 
-Each monthly cycle records its exact first and last calendar dates and sets the
-review due date to the last calendar day (including 28/29 February and 31-day
-months). A field observation separately preserves the human's exact words,
-observation date, report timestamp, place and structured category. After a
-human-reviewed December cycle, the Runtime can compile an immutable annual
-research record with missing months, observations, source snapshots, changes,
-failures, hypothesis versions, reviews, Receipt and Passport kept explicit.
+The Founder supplied a bounded Council Bridge implementation authorisation. It does not approve old PR merges, a mission rewrite, external contacts, private disclosures, paid compute or production activation.
 
-The repository defines—but does not yet connect—a conversation bridge. The
-intended path is natural-language report, AI-structured draft, human correction
-and confirmation, then private local intake. ChatGPT cannot silently write to a
-user's localhost SQLite database, and public GitHub must not be used as a store
-for private or work-derived observations.
-
-The executable rehearsal is repository-authored tiny-synthetic data, runs with
-no network access and no paid service, and is not environmental evidence. In
-particular, it cannot support a Cooma condition, ENSO, bushfire, drinking-water,
-wastewater, Bondo/Riverina wind-resource, or project-feasibility conclusion.
-
-Generate the principal downstream outputs:
+## Verification and documentation
 
 ```bash
-python cczps_lite/engine/evidence_traceability.py
-python cczps_lite/engine/governance_decision_support.py
-python cczps_lite/engine/scenario_comparison.py
+python -m unittest tests.test_council_bridge
+python -m unittest discover
 ```
 
-Committed outputs are under `cczps_lite/output/`; the static dashboard is under
-`cczps_lite/dashboard/`. See the
-[v0.5 release package](docs/08_RELEASES/README.md) for release notes,
-architecture, demonstration guidance, and the output inventory.
-
-FarmerOS, GardenOS, WaterOS, and ClimateOS are future application-layer
-directions that may reuse this foundation; they are not implemented in v0.5.
-
-```text
-Climate · Water · Vegetation · Infrastructure · Maintenance · Resilience · Governance
-```
-
----
-
-## Why This Project Exists
-
-Environmental data is growing rapidly.
-
-However, local governments, planners, land managers, and communities often struggle to translate environmental information into practical decisions.
-
-Eco Agent System explores a simple but important question:
-
-> How can environmental observations become structured decisions, maintenance actions, and resilience evidence?
-
-The project is not designed to replace expert judgement. It is designed to support human-reviewed reasoning by connecting environmental system logic with professional decision workflows.
-
----
-
-## Core Idea
-
-Environmental systems can be described in physical terms such as water, heat, vegetation, soil, infrastructure stress, and climate exposure.
-
-Eco Agent System translates these observations into a structured decision layer called **Eco Decision DNA**.
-
-Eco Decision DNA is a way to make environmental actions:
-
-- computable
-- comparable
-- reviewable
-- environmentally accountable
-- useful for long-term maintenance and resilience planning
-
----
-
-## System Architecture
-
-```text
-Environmental Inputs
-Climate · Water · Heat · Vegetation · Soil · Infrastructure · Maintenance
-        ↓
-Eco Decision DNA
-        ↓
-Agent Framework
-Planning Agent · Delivery Agent · Operations Agent · ESG Interpretation Agent · Resilience Review Agent
-        ↓
-Decision Support Outputs
-Planning notes · Risk interpretation · Maintenance priorities · Resilience evidence · Governance reports
-```
-
-The system connects:
-
-- **Eco Engine** — physical environment and modelling logic
-- **Professional Agents** — planning, delivery, operations, and review logic
-- **ESG-style Interpretation** — governance and reporting interface
-- **Climate Resilience Layer** — risk reduction, maintenance, and adaptation support
-
----
-
-## Key Themes
-
-### Climate Resilience
-
-The project supports climate adaptation, disaster-risk reduction, and long-term environmental maintenance.
-
-It may help structure reasoning around:
-
-- bushfire risk
-- flood risk
-- drought stress
-- heat exposure
-- vegetation health
-- infrastructure vulnerability
-- community resilience
-
-### Climate Risk, Insurance and Resilience Finance Interface
-
-A future direction is to explore how prediction, microclimate governance, and maintenance records can support evidence of climate-risk reduction.
-
-```text
-Climate and weather prediction
-↓
-Microclimate and environmental intervention
-↓
-Risk-score reduction
-↓
-Maintenance and monitoring records
-↓
-Evidence for insurers, local governments, communities, and resilience-finance partners
-```
-
-This project does **not** provide insurance, financial advice, actuarial certification, or investment products.
-
-It aims to build an open decision-support and evidence-recording framework that may support better collaboration with climate-insurance and resilience-finance sectors.
-
-### Eco Chain Contribution Logic
-
-Eco Chain is treated here as a contribution-recording and environmental value interpretation concept.
-
-It is not presented as a speculative token system or financial product.
-
-In this project, Eco Chain means:
-
-- recording environmental actions
-- recording maintenance work
-- linking actions with observed outcomes
-- supporting public-good environmental contribution
-- making long-term ecological value easier to review and explain
-
----
-
-## Integration Vision
-
-Eco Agent System should not exist as an isolated tool.
-
-A long-term goal is to connect with existing and emerging software used in spatial planning, environmental modelling, engineering simulation, digital twins, and climate data analysis.
-
-Future integration directions may include:
-
-- GIS platforms
-- CFD and fluid simulation tools such as ANSYS Fluent or equivalent systems
-- hydrology and terrain models
-- vegetation and heat-flow models
-- remote sensing and open climate datasets
-- smart city and digital twin platforms
-- APIs or export formats for other modelling environments
-
-The long-term vision is to create an interface layer between traditional simulation tools and agent-based decision-support systems.
-
-In simple terms:
-
-```text
-Simulation Tools + Spatial Data + Environmental Monitoring
-↓
-Eco Agent System
-↓
-Human-reviewed Planning, Maintenance, Risk and Governance Decisions
-```
-
----
-
-## Current Development Status
-
-Current status:
-
-- Prototype structure established
-- README, License, Roadmap, and Contributing guidelines added
-- Basic environmental decision-support concept defined
-- Initial agent roles defined
-- Simple CLI direction included
-
-In progress:
-
-- clearer example inputs and outputs
-- climate-risk interpretation logic
-- resilience and maintenance evidence structure
-- GIS and simulation-tool integration concepts
-- field pilot use-case documentation
-
-Future work:
-
-- open environmental indicator library
-- climate insurance evidence interface
-- regional resilience pilot examples
-- API and data exchange structure
-- stronger documentation for contributors
-
----
-
-## How to Run
-
-Run the full system:
-
-```bash
-cd eco_agent_system
-python main.py
-```
-
-Try a simple check:
-
-```bash
-python run_simple_check.py
-```
-
----
-
-## Documentation
-
-- [Roadmap](ROADMAP.md)
-- [Contributing Guidelines](CONTRIBUTING.md)
-- [License](LICENSE)
-- [Eco Decision DNA](docs/eco-decision-dna.md)
-
----
-
-## Contributing
-
-Contributions are welcome from developers, planners, environmental researchers, engineers, climate specialists, GIS users, local government practitioners, land managers, insurers, and community contributors.
-
-Useful contributions include:
-
-- documentation improvements
-- environmental indicators
-- climate-risk logic
-- GIS or simulation integration ideas
-- regional use cases
-- testing and example workflows
-- resilience and maintenance evidence structures
-
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
-
----
-
-## Maintainer
-
-Maintained by **Min Shu / Simon Shu**.
-
-Environmental planner, landscape and sustainability practitioner, and open-source environmental decision-support explorer based in Australia.
-
----
-
-## License
-
-This project is released under the [MIT License](LICENSE).
-
----
-
-## Project Status Notice
-
-Eco Agent System is an early-stage experimental prototype.
-
-It is intended for research, learning, open-source collaboration, and human-reviewed decision-support exploration. It should not be used as the sole basis for legal, engineering, financial, insurance, environmental approval, or emergency-management decisions.
+- [Bridge operation and architecture](docs/council_bridge/README.md)
+- [Baseline, reuse and official-source checks](docs/council_bridge/BASELINE_AND_REUSE.md)
+- [Validation and delivery status](docs/council_bridge/VALIDATION.md)
+- [Unsent partner entry pack](docs/council_bridge/PARTNER_ENTRY_UNSENT.md)
+- [ClimateOS v2 architecture](docs/architecture/climateos_v2_review/README.md)
+- [Project principles](docs/project-principles.md)
+- [Contributing](CONTRIBUTING.md)
+
+## Collaboration and licence
+
+Contributions are welcome in environmental methods, local evidence, uncertainty, adapters, professional review and usable workflows. Include source, scope, validation and limitations. Do not commit personal, customer or Council-internal records, secrets or unauthorised material.
+
+Maintained by **Min Shu / Simon Shu**. Repository code uses the [MIT License](LICENSE); third-party data, models and services retain their own terms.
