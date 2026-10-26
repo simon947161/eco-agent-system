@@ -51,12 +51,12 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "P04 CASE001: admit one licensed catchment polygon, precipitation product and soil-moisture product; resolve HRS time semantics before numerical joins. See P04_CASE001_TASK.md.",
+  "next_action": "Restore existing WaterNSW subscription credential binding locally (never chat/GitHub); independently verify AWRA product licence/variable definitions and exact Geofabric410033 catchment before P04 subset.",
   "blockers": [
     {
       "scope": "P03_recent_operational_adapter",
       "status": "BLOCKED",
-      "reason": "WaterNSW requires account/product key; price, terms and schema unverified. Public WaterInsights 410033 latest observation is 2022-12-14; units, quality and exact-layer licence/automation rights unresolved."
+      "reason": "Existing WaterNSW subscription/prior success acknowledged. Current local credential binding and official operation/entitlement configuration not recovered; zero authenticated requests. Unrelated public ArcGIS staleness does not imply authenticated API staleness."
     },
     {
       "scope": "P04_scientific_execution",
@@ -172,7 +172,8 @@
       "incremental_adapter_implemented": false,
       "automatic_updates": false,
       "evidence": "P03_PUBLIC_SOURCE_CHECK.json",
-      "interpretation": "Feasibility decision completed; recent operational data acquisition not verified."
+      "interpretation": "Feasibility decision completed; recent operational data acquisition not verified.",
+      "historical_access_correction": "See WATERNSW_PRIOR_API_ACCESS_RECOVERY_20261026.md; blocked current configuration is not absence of prior subscription."
     },
     "p04_case001": {
       "status": "PREPARED_NOT_SCIENTIFICALLY_EXECUTED",
@@ -189,7 +190,30 @@
         "passed": 1
       },
       "task": "P04_CASE001_TASK.md",
-      "readiness": "P04_CASE001_READINESS.json"
+      "readiness": "P04_CASE001_READINESS.json",
+      "input_admission": "PARTIAL_METADATA_VERIFIED_NUMERIC_JOIN_BLOCKED",
+      "input_admission_record": "P04_INPUT_ADMISSION_20261026.md"
+    },
+    "waternsw_prior_access_recovery": {
+      "status": "BLOCKED_LOCAL_CREDENTIAL_CONFIGURATION",
+      "historical_subscription_acknowledged": true,
+      "merged_prs_reused": [
+        111,
+        112,
+        113
+      ],
+      "credential_binding_recovered": false,
+      "exact_capture_recovered": false,
+      "authenticated_requests": 0,
+      "byte_admission": "BLOCKED_MISSING_RAW_RESPONSE",
+      "scientific_comparability": "NOT_COMPARABLE_YET",
+      "tests": {
+        "run": 19,
+        "passed": 19,
+        "initial_sandbox_temp_errors": 5,
+        "permission_enabled_rerun_passed": true
+      },
+      "record": "WATERNSW_RECOVERY_VALIDATION_20261026.md"
     }
   },
   "recovery": {

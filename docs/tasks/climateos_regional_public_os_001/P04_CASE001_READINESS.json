@@ -34,7 +34,7 @@
     "unit": "ML per daily interval",
     "time_basis": "source date labels; previous 24h reported at 09:00 local time; UTC offset unspecified, no invented UTC conversion",
     "licence": "https://creativecommons.org/licenses/by/3.0/au/",
-    "attribution": "© WaterNSW; Australian Bureau of Meteorology Hydrologic Reference Stations. ClimateOS parsed daily records; no source values altered.",
+    "attribution": "Â© WaterNSW; Australian Bureau of Meteorology Hydrologic Reference Stations. ClimateOS parsed daily records; no source values altered.",
     "receipt": {
       "cost_aud": 0,
       "input_digest": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
@@ -91,5 +91,9 @@
     },
     "fully_a_b_nonnull_months": 216,
     "generation_command": "python -B tools/p04_water_soil_climate_preflight.py"
-  }
+  },
+  "input_admission_status": "PARTIAL_METADATA_VERIFIED_NUMERIC_JOIN_BLOCKED",
+  "input_admission_record": "P04_INPUT_ADMISSION_20261026.md",
+  "live_metadata_record": "P04_SOURCE_METADATA_CHECK.json",
+  "waternsw_credentials_required_for_p04": false
 }
