@@ -17,7 +17,7 @@ for(const shard of JSON.parse(index).shards) {
 const javascript=await readFile(path.join(repo,'cczps_lite/environmental_question_runtime/static/streamflow.js'),'utf8');
 const sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:repo,encoding:'utf8'}).trim();
 const bundle={index,indexSha256:manifest.index_sha256,shards,javascript,html:await read('worker/page.html'),
-  release:{github_repository:'simon947161/eco-agent-system',github_commit:sourceCommit,adapter:'p02-sites-v1',snapshot_baseline:manifest.source_code_baseline}};
+  release:{github_repository:'simon947161/eco-agent-system',github_commit:sourceCommit,adapter:'p02-sites-v1',release_label:'P02_PRIVATE_ACCEPTANCE',access_boundary:'SITES_OWNER_PRIVATE_DISPATCH',snapshot_baseline:manifest.source_code_baseline}};
 const handler=await read('worker/handler.mjs');
 await mkdir(path.join(root,'dist/server'),{recursive:true});
 await mkdir(path.join(root,'dist/.openai'),{recursive:true});
