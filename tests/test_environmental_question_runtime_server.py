@@ -40,7 +40,7 @@ class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
             self.assertNotIn(blocked, source)
 
         program_source = "".join(
-            (Path(__file__).parents[1] / "cczps_lite/environmental_question_runtime/static" / name).read_text()
+            (Path(__file__).parents[1] / "cczps_lite/environmental_question_runtime/static" / name).read_text(encoding="utf-8")
             for name in ("program.html", "program.js")
         )
         self.assertIn("refreshStatus", program_source)
@@ -105,3 +105,4 @@ class EnvironmentalQuestionRuntimeServerTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

@@ -11,6 +11,7 @@ from urllib.parse import urlparse
 
 from .continuity import ContinuityBoundaryError, LocalPrivateContinuity
 from .runtime import EnvironmentalQuestionRuntime, RuntimeBoundaryError, RuntimeStateError
+from .policy import console_packet
 from .program import (
     PROGRAM_ID,
     PersistentResearchRuntime,
@@ -64,10 +65,16 @@ def build_handler(
             parts = self._parts()
             if not parts:
                 name, kind = "index.html", "text/html; charset=utf-8"
-            elif parts in (["app.js"], ["styles.css"], ["program.js"], ["program.css"]):
+            elif parts in (["app.js"], ["styles.css"], ["program.js"], ["program.css"], ["policy.js"]):
                 name = parts[0]; kind = "text/javascript; charset=utf-8" if name.endswith(".js") else "text/css; charset=utf-8"
             elif parts == ["program.html"]:
                 name, kind = "program.html", "text/html; charset=utf-8"
+            elif parts == ["api", "policy-context"]:
+                try:
+                    self._json(200, console_packet())
+                except (OSError, ValueError, KeyError, TypeError):
+                    self._json(503, {"error": "policy_context_unavailable", "detail": "Policy context could not be validated. Existing research remains available."})
+                return
             elif parts == ["api", "health"]:
                 self._json(200, {
                     "status": "ready",
@@ -240,3 +247,4 @@ def serve(db_path: str | Path, host: str = "127.0.0.1", port: int = 8766) -> Non
     try: server.serve_forever()
     except KeyboardInterrupt: pass
     finally: server.server_close()
+

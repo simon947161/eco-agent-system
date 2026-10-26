@@ -18,6 +18,15 @@
 
   <section id="programSummary"></section>
 
+  <section id="policyContext" aria-labelledby="policyHeading">
+    <span class="step">Council context · 政策与研究</span><h2 id="policyHeading">SMRC policy evidence</h2>
+    <p>Connect community goals, spatial planning and implementation documents to the same monthly research program. These are research mappings, not official decisions or proof of current funding.</p>
+    <div class="row"><label>Policy version / 政策版本<select id="policySource"></select></label><label>Research line / 研究主线<select id="policyLine"></select></label></div>
+    <div id="policyStatus" role="status">Loading policy metadata…</div>
+    <div id="policySourceCard"></div><div id="policyLineCard"></div>
+    <details><summary>Evidence and governance boundary / 证据边界</summary><p>Historic signatories are not current officers. CSP–LSPS relationships are researcher interpretations; the historical DP link is separately identified. Current DP/OP candidates require content review. Local file matching is not policy adoption, environmental validation or permission to act. Policy references do not create a Receipt or Passport; those remain in the monthly research workflow below.</p><p id="policyDigest" class="muted"></p></details>
+  </section>
+
   <section>
     <span class="step">01</span><h2>Start a monthly review cycle</h2>
     <p><b>Human does:</b> open one dated research cycle. The review is due on the last calendar day of that month—not always the 30th. Prior cycles remain unchanged.</p>
@@ -68,5 +77,7 @@
   <div id="error" role="alert"></div>
 </main>
 <script src="/program.js"></script>
+<script src="/policy.js"></script>
 </body>
 </html>
+

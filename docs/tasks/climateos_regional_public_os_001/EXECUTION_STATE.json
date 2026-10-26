@@ -28,9 +28,9 @@
     "P00": "in_progress",
     "P01": "in_progress",
     "P02": "planned",
-    "P03": "planned",
+    "P03": "in_progress",
     "P04": "planned",
-    "P05": "planned",
+    "P05": "in_progress",
     "P06": "planned",
     "P07": "planned",
     "P08": "planned",
@@ -38,26 +38,34 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "Read TASKBOOK section17 and smrc_policy_console/START_HERE.md; use existing Council Bridge/Console path; preserve Draft PR dependencies and verify current 2026 DP/OP.",
+  "next_action": "Continue parent P02 licensed real-data persistence/chart/evidence slice and Sites staging; verify current DP/OP content when retrievable. Do not repeat completed policy UI work.",
   "blockers": [],
   "workstreams": {
     "smrc_policy_console": {
       "task_id": "CLIMATEOS-SMRC-POLICY-CONSOLE-001",
       "status": "in_progress",
-      "implementation": "offline source resolver and policy packet implemented; UI integration pending",
+      "implementation": "Policy API and three-line interactive view integrated into existing monthly research Console; no separate OS or Bridge merge.",
       "validated_sources": 3,
       "latest_execution_documents": "2026 DP/OP official links discovered; content unverified",
       "targeted_tests": {
-        "run": 5,
-        "passed": 5
+        "run": 7,
+        "passed": 7
       },
-      "console_ui_verified": false,
+      "console_ui_verified": true,
       "team_routing": {
         "parent_issue": 128,
         "orchestration_issue": 126,
         "bridge_pr": 127
       },
-      "next_action": "Read smrc_policy_console/START_HERE.md; resolve local originals using private config; integrate policy cards into existing Console and continue parent P02."
+      "next_action": "Continue parent P02 licensed real-data persistence/chart/evidence slice and Sites staging; verify current DP/OP content when retrievable. Do not repeat completed policy UI work.",
+      "regression_tests": {
+        "run": 489,
+        "result": "OK",
+        "skipped": 1
+      },
+      "verification_scope": "Desktop browser: source/version selection, land/catchment and evidence/scenario switching, linked-policy navigation. Mobile not yet checked.",
+      "source_check": "Three recorded public PDFs matched again in permission-enabled read-only check; normal sandbox reports inaccessible; current DP/OP candidates remain missing/unverified."
     }
   }
 }
+
