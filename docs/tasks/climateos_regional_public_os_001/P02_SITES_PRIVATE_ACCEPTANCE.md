@@ -10,7 +10,7 @@ Status: **PARTIAL — hosted owner browser sign-in pending**. The real private d
 - Sites dispatch performs server-side authentication/authorization before the Worker for HTML, scripts and APIs. Private deploy operations independently verified the owner-only policy. Hidden URLs and frontend controls are not the security mechanism.
 - Anonymous GETs for `/`, `/api/streamflow`, `/api/release`, `/streamflow.js`: **401**, no source data/Receipt leaked. Spoofed `oai-authenticated-user-id/email` without legitimate authorization: **401**.
 - Supported Sites service authorization: `/api/release` and February API **200**. Credentials used only in hidden stdin/process memory, never committed or written to disk. Service access does not manufacture human identity or prove a human login journey.
-- Real browser showed the platform sign-in gate; sign-in link led to ChatGPT authentication. The owner agreed to log in; authenticated hosted browser UI has not yet been checked. No password or code was requested in chat.
+- Real browser showed the platform sign-in gate; sign-in link led to ChatGPT authentication. The owner completed ChatGPT authentication directly; authenticated hosted browser displayed the research page, 28 February records and linked evidence. No password or code was collected in chat.
 
 ## Snapshot provenance and integrity
 
@@ -40,13 +40,13 @@ The page retains original quality codes; E unreliable is shown separately from A
 
 | Criterion | Result |
 |---|---|
-| Server-side private authorization | Verified policy, anonymous/spoofed identity401, authorized service200; human browser sign-in pending |
+| Server-side private authorization | Verified policy, anonymous/spoofed identity401, authorized service200; owner ChatGPT browser sign-in verified |
 | Local/hosted data match | All returned February rows exactly equal local shard; source/index/package hashes match |
 | February 2026 | 28 records, 2026-02-01–2026-02-28; E present |
 | Evidence | Source header, quality, station/catchment, licence, Receipt/Passport and release provenance read back |
 | Corruption | Index, selected shard and missing shard rejected; exporter rejects raw/metadata tampering |
-| Failure/empty/stale UI | Local same-code browser: empty March gives no-data/28 absent dates; oversize gives unavailable and clears chart/table; stale status visible |
-| Desktop/mobile | Local browser interaction passed; 390px requested mobile viewport rendered at375px CSS content width, no horizontal overflow; hosted post-login UI pending |
+| Failure/empty/stale UI | Local browser: oversize gives unavailable and clears chart/table; authenticated hosted browser: empty March gives no-data/28 absent dates and clears chart/table; February stale status visible |
+| Desktop/mobile | Local browser interaction passed; 390px requested mobile viewport rendered at375px CSS content width, no horizontal overflow; authenticated hosted desktop/mobile also passed |
 | Regression | Existing HRS4 passed; Worker8 passed; full Python493 OK, 1 skipped in isolated copy |
 | Deploy and rollback | Version2→version1→version2 all native succeeded; release SHA/28 rows/anonymous401 verified at each checkpoint |
 
@@ -85,6 +85,10 @@ No rebuild, source overwrite, force push, data mutation or access change is need
 
 ## Remaining and next minimum task
 
-Complete the owner's ChatGPT browser sign-in, then repeat hosted February chart/evidence and basic mobile interaction. Until that is observed, retain PARTIAL rather than claiming the human access journey passed. Automatic updates, scientific approval, recovered Work prototype and KITTY scheduler remain outside this acceptance. No need to repeat policy Console engineering or rebuild the snapshot.
+Next minimum task is P03: attach this accepted snapshot/Receipt/Passport as a read-only evidence reference to one existing monthly research cycle. Preserve scientific-review pending and historical status. Automatic updates, scientific approval, recovered Work prototype and KITTY scheduler remain outside this acceptance. No need to repeat policy Console engineering or rebuild the snapshot.
 
 Conversation Radar: knowledge—private dispatch gates APIs as well as pages; decision—immutable versioned snapshot, no D1/R2 or new research core; risk—human sign-in still unverified, stale source/quality ambiguity retained; open question—owner post-login journey; next action—finish that bounded check; keywords—ClimateOS/P02/Sites/410033/Receipt/Passport/private-access/rollback.
+
+## Owner browser completion addendum
+
+Owner completed sign-in in the test browser. On the real deployed version2, February2026 returned28 records and the Evidence details contained the accepted Passport. Selecting March1�28 returned0 records/28 absent dates and cleared the chart. At a requested390px mobile viewport (375px CSS content area), selecting February again returned28 records with distinct quality styling, stale label and no horizontal overflow. Temporary viewport override reset; owner Site tab retained as deliverable. This completes the previously pending human-browser criterion. Deployment version/source/hashes are unchanged; only acceptance records were updated.

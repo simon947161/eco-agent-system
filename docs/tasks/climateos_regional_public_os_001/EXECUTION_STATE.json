@@ -28,7 +28,8 @@
     "forged_identity_denied": true,
     "service_authorized_readback_verified": true,
     "rollback_and_restore_verified": true,
-    "owner_browser_signin_verified": false
+    "owner_browser_signin_verified": true,
+    "hosted_desktop_mobile_verified": true
   },
   "automation": {
     "schedule_created": false,
@@ -37,7 +38,7 @@
   "packages": {
     "P00": "in_progress",
     "P01": "in_progress",
-    "P02": "in_progress",
+    "P02": "verified",
     "P03": "in_progress",
     "P04": "planned",
     "P05": "in_progress",
@@ -48,7 +49,7 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "Complete owner ChatGPT browser sign-in and verify the deployed February 2026 chart/evidence on desktop and mobile; preserve private audience.",
+  "next_action": "P03: attach the accepted HRS snapshot/Receipt/Passport as a read-only evidence reference to one existing monthly research cycle; preserve scientific-review pending status and no automatic fetching.",
   "blockers": [],
   "workstreams": {
     "smrc_policy_console": {
@@ -111,7 +112,7 @@
       "validation_record": "P02_RECOVERY_VALIDATION_20261026.md"
     },
     "p02_sites_private": {
-      "status": "partial_pending_owner_browser_signin",
+      "status": "verified",
       "local_worker_tests": {
         "run": 8,
         "passed": 8
@@ -123,11 +124,11 @@
       },
       "snapshot_replay": "byte-identical; raw/packet corruption rejected",
       "server_access": "owner-only policy; anonymous/forged identity 401; authorized service 200",
-      "desktop_mobile": "local same-code desktop and mobile interaction verified; hosted browser sign-in pending",
+      "desktop_mobile": "Authenticated deployed Site verified: February28 rows, Receipt/Passport, no-data clears chart; mobile375px CSS width no overflow",
       "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
       "data_package_sha256": "f664b75674059bcdd907941afcfdf0b6c4a19ffa79f3835bfaa79b5967097452",
       "acceptance_record": "P02_SITES_PRIVATE_ACCEPTANCE.md",
-      "next_action": "Complete owner ChatGPT browser sign-in and verify the deployed February 2026 chart/evidence on desktop and mobile; preserve private audience."
+      "next_action": "P03: attach the accepted HRS snapshot/Receipt/Passport as a read-only evidence reference to one existing monthly research cycle; preserve scientific-review pending status and no automatic fetching."
     }
   },
   "recovery": {

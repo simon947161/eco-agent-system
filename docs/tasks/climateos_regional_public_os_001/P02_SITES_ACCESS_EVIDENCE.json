@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-10-26",
   "credential_handling": "supported Sites service token used only in hidden stdin/process memory; not retained",
-  "authorization_scope": "service access for the owner-private Site; not a substitute for human browser sign-in",
+  "authorization_scope": "Owner browser ChatGPT sign-in and separately supported service access both verified; anonymous/forged access denied",
   "checks": [
     {
       "test": "anonymous",
@@ -107,6 +107,21 @@
         "records": 22645
       },
       "receipt": "HRS-RECEIPT-E70B4670978ABFD6"
+    },
+    {
+      "test": "authenticated_owner_browser",
+      "status": "VERIFIED",
+      "url": "https://climateos-snowy-monaro.minshu.chatgpt.site/",
+      "selected_start": "2026-02-01",
+      "selected_end": "2026-02-28",
+      "rows": 28,
+      "passport_visible": "HRS-PASSPORT-3CCD749190E38305",
+      "missing_interval": "2026-03-01 to 2026-03-28: 0rows,28absent,chart cleared",
+      "mobile_requested_width": 390,
+      "mobile_css_width": 375,
+      "content_css_width": 375,
+      "horizontal_overflow": false,
+      "credential_handling": "Owner completed authentication directly; no password/OTP collected in chat"
     }
   ]
 }
