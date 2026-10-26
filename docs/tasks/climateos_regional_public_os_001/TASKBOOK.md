@@ -325,3 +325,10 @@ Sites项目、版本、访问范围、部署结果：
 
 成功标准是形成能够持续学习、接受质疑、修正结论并帮助地方共同解决问题的平台；不能把赢得机构支持或证明某个预设气候叙事当作科学验收标准。
 
+
+
+## 17. 2026-10-26：SMRC政策证据Console工作包
+
+Founder已要求把CSP、LSPS、DP/OP与三条研究主线接入本任务，作为现有Council Console的工作分支，沿用#126协作与PR127依赖。
+
+先读 [`smrc_policy_console/START_HERE.md`](smrc_policy_console/START_HERE.md) 及 [`CONSOLE_INTEGRATION.md`](smrc_policy_console/CONSOLE_INTEGRATION.md)。三份用户提供的公开PDF已核对哈希，LSPS全文缺口已补齐；2025年DP v1.6保留为历史基线，当前2026 DP/OP候选需继续核验。新增 `tools/smrc_policy_console.py` 是可运行的离线政策数据包生成器，尚未接UI；5项针对性测试通过，不能据此宣称整个平台完成。完整PDF、本机路径与私有位置配置不提交公共Git。按P01/P03/P05集成，同时继续P02真实数据纵向案例。

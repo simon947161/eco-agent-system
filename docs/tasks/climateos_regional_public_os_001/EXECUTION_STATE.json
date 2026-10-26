@@ -1,19 +1,63 @@
 {
   "schema": "climateos.regional_public_os.execution_state.v1",
   "task_id": "CLIMATEOS-REGIONAL-PUBLIC-OS-001",
-  "updated_on": "2026-10-22",
+  "updated_on": "2026-10-26",
   "timezone": "Australia/Sydney",
   "repository": "https://github.com/simon947161/eco-agent-system",
   "taskbook_path": "docs/tasks/climateos_regional_public_os_001/TASKBOOK.md",
   "taskbook_branch": "codex/regional-public-os-001-taskbook",
-  "status": "planned",
-  "execution_started": false,
-  "bridge_dependency": {"pr": 127, "state_checked_on": "2026-10-22", "state": "draft_unmerged", "head_sha": "6a20de8c21ed3587e521e3d10b0785b11be6d8f5"},
-  "site": {"project_id": null, "url": null, "deployment_verified": false, "public_access_verified": false},
-  "automation": {"schedule_created": false, "unattended_write_readback_verified": false},
-  "packages": {"P00": "planned", "P01": "planned", "P02": "planned", "P03": "planned", "P04": "planned", "P05": "planned", "P06": "planned", "P07": "planned", "P08": "planned", "P09": "planned", "P10": "planned"},
+  "status": "in_progress",
+  "execution_started": true,
+  "bridge_dependency": {
+    "pr": 127,
+    "state_checked_on": "2026-10-22",
+    "state": "draft_unmerged",
+    "head_sha": "6a20de8c21ed3587e521e3d10b0785b11be6d8f5"
+  },
+  "site": {
+    "project_id": null,
+    "url": null,
+    "deployment_verified": false,
+    "public_access_verified": false
+  },
+  "automation": {
+    "schedule_created": false,
+    "unattended_write_readback_verified": false
+  },
+  "packages": {
+    "P00": "in_progress",
+    "P01": "in_progress",
+    "P02": "planned",
+    "P03": "planned",
+    "P04": "planned",
+    "P05": "planned",
+    "P06": "planned",
+    "P07": "planned",
+    "P08": "planned",
+    "P09": "planned",
+    "P10": "planned"
+  },
   "external_spending_authorized_aud": 0,
-  "next_action": "Read repository rules and TASKBOOK; verify current main and open work; create isolated implementation checkout; execute P00-P02 as the first working vertical slice.",
-  "blockers": []
+  "next_action": "Read TASKBOOK section17 and smrc_policy_console/START_HERE.md; use existing Council Bridge/Console path; preserve Draft PR dependencies and verify current 2026 DP/OP.",
+  "blockers": [],
+  "workstreams": {
+    "smrc_policy_console": {
+      "task_id": "CLIMATEOS-SMRC-POLICY-CONSOLE-001",
+      "status": "in_progress",
+      "implementation": "offline source resolver and policy packet implemented; UI integration pending",
+      "validated_sources": 3,
+      "latest_execution_documents": "2026 DP/OP official links discovered; content unverified",
+      "targeted_tests": {
+        "run": 5,
+        "passed": 5
+      },
+      "console_ui_verified": false,
+      "team_routing": {
+        "parent_issue": 128,
+        "orchestration_issue": 126,
+        "bridge_pr": 127
+      },
+      "next_action": "Read smrc_policy_console/START_HERE.md; resolve local originals using private config; integrate policy cards into existing Console and continue parent P02."
+    }
+  }
 }
-
