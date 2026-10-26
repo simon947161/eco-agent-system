@@ -1,0 +1,112 @@
+{
+  "checked_on": "2026-10-26",
+  "credential_handling": "supported Sites service token used only in hidden stdin/process memory; not retained",
+  "authorization_scope": "service access for the owner-private Site; not a substitute for human browser sign-in",
+  "checks": [
+    {
+      "test": "anonymous",
+      "path": "/",
+      "status": 401,
+      "leaks_data": false
+    },
+    {
+      "test": "anonymous",
+      "path": "/api/streamflow?start=2026-02-01&end=2026-02-28",
+      "status": 401,
+      "leaks_data": false
+    },
+    {
+      "test": "anonymous",
+      "path": "/api/release",
+      "status": 401,
+      "leaks_data": false
+    },
+    {
+      "test": "anonymous",
+      "path": "/streamflow.js",
+      "status": 401,
+      "leaks_data": false
+    },
+    {
+      "test": "forged_identity",
+      "status": 401
+    },
+    {
+      "test": "authorized",
+      "path": "/api/release",
+      "status": 200,
+      "records_returned": null,
+      "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+      "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+      "github_commit": "cff9ea16dd945b91e4b37cf8a9502ee23846caf6",
+      "receipt_id": null,
+      "passport_id": null
+    },
+    {
+      "test": "authorized",
+      "path": "/api/streamflow?start=2026-02-01&end=2026-02-28",
+      "status": 200,
+      "records_returned": 28,
+      "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+      "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+      "github_commit": "cff9ea16dd945b91e4b37cf8a9502ee23846caf6",
+      "receipt_id": "HRS-RECEIPT-E70B4670978ABFD6",
+      "passport_id": "HRS-PASSPORT-3CCD749190E38305"
+    },
+    {
+      "checkpoint": "version2",
+      "authorized_status": 200,
+      "anonymous_status": 401,
+      "rows": 28,
+      "release": {
+        "github_repository": "simon947161/eco-agent-system",
+        "github_commit": "6a5c3b88af4536066fbc66f379decd74318e6571",
+        "adapter": "p02-sites-v1",
+        "release_label": "P02_PRIVATE_ACCEPTANCE",
+        "access_boundary": "SITES_OWNER_PRIVATE_DISPATCH",
+        "snapshot_baseline": "6ca8f9d913e99ba66d4743790b2e4f0df11cf571",
+        "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+        "data_package_sha256": "f664b75674059bcdd907941afcfdf0b6c4a19ffa79f3835bfaa79b5967097452",
+        "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+        "records": 22645
+      },
+      "receipt": "HRS-RECEIPT-E70B4670978ABFD6"
+    },
+    {
+      "checkpoint": "rollback-v1",
+      "authorized_status": 200,
+      "anonymous_status": 401,
+      "rows": 28,
+      "release": {
+        "github_repository": "simon947161/eco-agent-system",
+        "github_commit": "cff9ea16dd945b91e4b37cf8a9502ee23846caf6",
+        "adapter": "p02-sites-v1",
+        "snapshot_baseline": "6ca8f9d913e99ba66d4743790b2e4f0df11cf571",
+        "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+        "data_package_sha256": "f664b75674059bcdd907941afcfdf0b6c4a19ffa79f3835bfaa79b5967097452",
+        "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+        "records": 22645
+      },
+      "receipt": "HRS-RECEIPT-E70B4670978ABFD6"
+    },
+    {
+      "checkpoint": "restored-v2",
+      "authorized_status": 200,
+      "anonymous_status": 401,
+      "rows": 28,
+      "release": {
+        "github_repository": "simon947161/eco-agent-system",
+        "github_commit": "6a5c3b88af4536066fbc66f379decd74318e6571",
+        "adapter": "p02-sites-v1",
+        "release_label": "P02_PRIVATE_ACCEPTANCE",
+        "access_boundary": "SITES_OWNER_PRIVATE_DISPATCH",
+        "snapshot_baseline": "6ca8f9d913e99ba66d4743790b2e4f0df11cf571",
+        "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+        "data_package_sha256": "f664b75674059bcdd907941afcfdf0b6c4a19ffa79f3835bfaa79b5967097452",
+        "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+        "records": 22645
+      },
+      "receipt": "HRS-RECEIPT-E70B4670978ABFD6"
+    }
+  ]
+}
