@@ -1,7 +1,7 @@
 {
   "schema": "climateos.regional_public_os.execution_state.v1",
   "task_id": "CLIMATEOS-REGIONAL-PUBLIC-OS-001",
-  "updated_on": "2026-10-26",
+  "updated_on": "2026-10-27",
   "timezone": "Australia/Sydney",
   "repository": "https://github.com/simon947161/eco-agent-system",
   "taskbook_path": "docs/tasks/climateos_regional_public_os_001/TASKBOOK.md",
@@ -51,7 +51,7 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "P04: inspect one documented monthly NetCDF metadata contract for rain_day/sm_pct scaling/time bounds; establish official HRS410033 reporting-day/DST/month assignment before any numeric join. WaterNSW local key gate remains separate; no repeat secret search.",
+  "next_action": "Resolve P04 provider product contract: AWRA-L v7 native monthly sum/mean and soil fraction encoding; HRS410033 DST/date-month membership and February2026 missing from official monthly summary. UNSENT questions prepared. Keep numerical join blocked; WaterNSW credentials independent.",
   "blockers": [
     {
       "scope": "P03_recent_operational_adapter",
@@ -61,7 +61,7 @@
     {
       "scope": "P04_scientific_execution",
       "status": "BLOCKED_NUMERIC_JOIN",
-      "reason": "Official station polygon recovered and validated; AWRA licence/access and variables identified. HRS DST/day/month and header-unit interpretation, raw soil fraction/percent and full-month statistic, exact grid revision/mask/QC and scientific equivalence review remain unresolved."
+      "reason": "Native AWRA monthly units, absent packing attrs and sampled time bounds verified. Monthly sum/mean, fraction encoding contract, HRS DST/date-month/unit interpretation, official monthly coverage discrepancy, basin completeness and scientific QC/equivalence remain unresolved."
     }
   ],
   "workstreams": {
@@ -200,12 +200,28 @@
       "awo_product_licence": "CC BY4.0 unless otherwise noted; documented AWDS/NetCDF access",
       "numeric_subset_prepared": false,
       "regression_tests": {
-        "run": 508,
+        "run": 518,
         "result": "OK",
         "skipped": 1,
         "isolated_copy": true
       },
-      "waternsw_credential_dependency": false
+      "waternsw_credential_dependency": false,
+      "semantic_acceptance": {
+        "status": "PARTIAL_METADATA_VERIFIED_NUMERIC_JOIN_BLOCKED",
+        "record": "P04_SEMANTICS_ACCEPTANCE_20261027.md",
+        "result": "P04_SEMANTICS_RESULT_20261027.json",
+        "evidence": "evidence/p04_semantics_20261027/manifest.json",
+        "native_netcdf_bytes_received": 163840,
+        "physical_arrays_read": false,
+        "monthly_hrs_candidate": "February1965-2025 only; no QC column; 2026 absent",
+        "waternsw_dependency": false,
+        "targeted_tests": {
+          "run": 19,
+          "passed": 19,
+          "new_semantics_tests": 10
+        },
+        "tests_record": "P04_SEMANTICS_TESTS_20261027.md"
+      }
     },
     "waternsw_prior_access_recovery": {
       "status": "BLOCKED_LOCAL_CREDENTIAL_CONFIGURATION",
