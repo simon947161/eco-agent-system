@@ -51,7 +51,7 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "Restore existing WaterNSW subscription credential binding locally (never chat/GitHub); independently verify AWRA product licence/variable definitions and exact Geofabric410033 catchment before P04 subset.",
+  "next_action": "P04: inspect one documented monthly NetCDF metadata contract for rain_day/sm_pct scaling/time bounds; establish official HRS410033 reporting-day/DST/month assignment before any numeric join. WaterNSW local key gate remains separate; no repeat secret search.",
   "blockers": [
     {
       "scope": "P03_recent_operational_adapter",
@@ -60,8 +60,8 @@
     },
     {
       "scope": "P04_scientific_execution",
-      "status": "BLOCKED_INPUT_ADMISSION",
-      "reason": "Licensed spatially compatible catchment/precipitation/soil moisture inputs, HRS time interpretation and scientific method review pending; availability preflight completed."
+      "status": "BLOCKED_NUMERIC_JOIN",
+      "reason": "Official station polygon recovered and validated; AWRA licence/access and variables identified. HRS DST/day/month and header-unit interpretation, raw soil fraction/percent and full-month statistic, exact grid revision/mask/QC and scientific equivalence review remain unresolved."
     }
   ],
   "workstreams": {
@@ -176,7 +176,7 @@
       "historical_access_correction": "See WATERNSW_PRIOR_API_ACCESS_RECOVERY_20261026.md; blocked current configuration is not absence of prior subscription."
     },
     "p04_case001": {
-      "status": "PREPARED_NOT_SCIENTIFICALLY_EXECUTED",
+      "status": "PARTIAL_SPATIAL_VERIFIED_NUMERIC_JOIN_BLOCKED",
       "case_id": "P04-WATER-SOIL-CLIMATE-001",
       "preflight_months": 312,
       "study_period": [
@@ -186,13 +186,26 @@
       "environmental_conclusion": null,
       "causal_conclusion": null,
       "targeted_tests": {
-        "run": 1,
-        "passed": 1
+        "run": 15,
+        "passed": 15
       },
       "task": "P04_CASE001_TASK.md",
       "readiness": "P04_CASE001_READINESS.json",
-      "input_admission": "PARTIAL_METADATA_VERIFIED_NUMERIC_JOIN_BLOCKED",
-      "input_admission_record": "P04_INPUT_ADMISSION_20261026.md"
+      "input_admission": "PARTIAL",
+      "input_admission_record": "P04_CASE001_ADMISSION_VALIDATION.md",
+      "spatial_result": "P04_SPATIAL_ADMISSION_RESULT.json",
+      "geometry_status": "VERIFIED_PUBLISHER_GEOMETRY_NOT_SCIENTIFIC_EQUIVALENCE",
+      "geometry_area_km2": 1902.4598112560498,
+      "geometry_difference_from_hrs_percent": 0.6699021725076637,
+      "awo_product_licence": "CC BY4.0 unless otherwise noted; documented AWDS/NetCDF access",
+      "numeric_subset_prepared": false,
+      "regression_tests": {
+        "run": 508,
+        "result": "OK",
+        "skipped": 1,
+        "isolated_copy": true
+      },
+      "waternsw_credential_dependency": false
     },
     "waternsw_prior_access_recovery": {
       "status": "BLOCKED_LOCAL_CREDENTIAL_CONFIGURATION",

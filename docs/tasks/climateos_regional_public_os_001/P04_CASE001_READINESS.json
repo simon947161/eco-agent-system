@@ -1,6 +1,6 @@
 {
   "case_id": "P04-WATER-SOIL-CLIMATE-001",
-  "status": "PREPARED_NOT_SCIENTIFICALLY_EXECUTED",
+  "status": "PARTIAL_SPATIAL_VERIFIED_NUMERIC_JOIN_BLOCKED",
   "question": "Do precipitation anomalies and antecedent soil moisture align with low-flow months within the same verified upstream catchment, after considering seasonality and competing explanations?",
   "study_period": [
     "2000-01-01",
@@ -67,11 +67,10 @@
   "source_coverage_end": "2026-02-28",
   "availability_method": "Calendar-label counts by original quality code; no value interpolation or physical/statistical inference",
   "missing_dependencies": [
-    "Licensed catchment polygon and confirmed gauge spatial alignment",
-    "Licensed precipitation series with compatible time/space definition",
-    "Licensed soil moisture series with depth/units and observed/modelled distinction",
-    "Resolution of daily interval/UTC alignment and source header ambiguity",
-    "Independent scientific review of analysis protocol and water record quality"
+    "HRS daily interval/DST/month assignment and header-unit interpretation unresolved",
+    "AWRA raw fraction versus percent encoding and full-month soil statistic need product contract",
+    "Exact grid revision, basin mask/completeness and scientific QC review pending",
+    "Independent hydrology review of GeofabricV3.3 versus HRS reference area/version"
   ],
   "operational_series": "NOT_ADMITTED; API account/rights and public-layer staleness/units/QC unresolved",
   "environmental_conclusion": null,
@@ -92,8 +91,55 @@
     "fully_a_b_nonnull_months": 216,
     "generation_command": "python -B tools/p04_water_soil_climate_preflight.py"
   },
-  "input_admission_status": "PARTIAL_METADATA_VERIFIED_NUMERIC_JOIN_BLOCKED",
-  "input_admission_record": "P04_INPUT_ADMISSION_20261026.md",
+  "input_admission_status": "PARTIAL",
+  "input_admission_record": "P04_CASE001_ADMISSION_VALIDATION.md",
   "live_metadata_record": "P04_SOURCE_METADATA_CHECK.json",
-  "waternsw_credentials_required_for_p04": false
+  "waternsw_credentials_required_for_p04": false,
+  "spatial_verification": {
+    "status": "VERIFIED_PUBLISHER_GEOMETRY_NOT_SCIENTIFIC_EQUIVALENCE",
+    "station_id": "410033",
+    "network_node_id": 43408271,
+    "catchment_hydroid": 43677907,
+    "publisher_confidence_code": 4,
+    "source_crs": "EPSG:4283",
+    "area_crs": "EPSG:3577",
+    "topology_valid": true,
+    "parts": 2,
+    "holes": 2,
+    "computed_area_km2": 1902.4598112560498,
+    "publisher_area_km2": 1902.45981049,
+    "hrs_reference_area_km2": 1889.8,
+    "difference_from_hrs_percent": 0.6699021725076637,
+    "network_node_covered": true,
+    "node_boundary_distance_m": 11.50980309111302,
+    "publisher_near_dist_raw": 4.76780007,
+    "snap_method": "Exact stationno and netnodeid join; no new snapping or geometry repair",
+    "new_snap_tolerance_m": null,
+    "original_publisher_snap_tolerance": "NOT_DOCUMENTED_IN_RETURNED_METADATA",
+    "scientific_equivalence_to_hrs_polygon": "PENDING_VERSION_AND_AREA_REVIEW"
+  },
+  "awra_variable_verification": {
+    "rain_day": {
+      "description": "Daily Rainfall",
+      "raw_unit": "mm",
+      "study_month_labels": 312,
+      "all_labels": 501,
+      "latest_label_utc": "2026-09-30T00:00:00+00:00",
+      "numeric_cell_completeness_verified": false
+    },
+    "sm_pct": {
+      "description": "Total rootzone soil moisture (0-100 cm)",
+      "raw_unit": "fraction of fullness",
+      "study_month_labels": 312,
+      "all_labels": 501,
+      "latest_label_utc": "2026-09-30T00:00:00+00:00",
+      "numeric_cell_completeness_verified": false
+    }
+  },
+  "numeric_subset_prepared": false,
+  "remaining_admission_blockers": [
+    "HRS daily interval/DST/month assignment and header-unit interpretation unresolved",
+    "AWRA raw fraction versus percent encoding and full-month soil statistic need product contract",
+    "Exact grid revision, basin mask/completeness and scientific QC review pending"
+  ]
 }
