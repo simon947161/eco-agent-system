@@ -254,11 +254,13 @@ class PersistentResearchRuntime:
         cycle = json.loads(row["record_json"])
         cycle["observations"] = self.observations(cycle_id)
         cycle["source_snapshots"] = self.source_snapshots(cycle_id)
+        from .evidence_links import read_references
+        cycle["evidence_references"] = read_references(self.db_path, cycle_id)
         return cycle
 
     def _save_cycle(self, cycle: dict[str, Any]) -> dict[str, Any]:
         cycle["updated_at"] = _now()
-        stored = {key: value for key, value in cycle.items() if key not in {"observations", "source_snapshots"}}
+        stored = {key: value for key, value in cycle.items() if key not in {"observations", "source_snapshots", "evidence_references"}}
         with self._connect() as db:
             db.execute("UPDATE research_cycles SET state=?,record_json=?,updated_at=? WHERE cycle_id=?", (cycle["state"], _json(stored), cycle["updated_at"], cycle["cycle_id"]))
         return self.get_cycle(cycle["cycle_id"])
@@ -465,7 +467,7 @@ class PersistentResearchRuntime:
             completed["updated_at"] = _now()
             stored = {
                 key: value for key, value in completed.items()
-                if key not in {"observations", "source_snapshots"}
+                if key not in {"observations", "source_snapshots", "evidence_references"}
             }
             with self._connect() as db:
                 db.executemany("INSERT INTO official_source_snapshots VALUES(?,?,?,?,?)", rows)

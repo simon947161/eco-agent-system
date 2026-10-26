@@ -1,0 +1,95 @@
+{
+  "case_id": "P04-WATER-SOIL-CLIMATE-001",
+  "status": "PREPARED_NOT_SCIENTIFICALLY_EXECUTED",
+  "question": "Do precipitation anomalies and antecedent soil moisture align with low-flow months within the same verified upstream catchment, after considering seasonality and competing explanations?",
+  "study_period": [
+    "2000-01-01",
+    "2025-12-31"
+  ],
+  "spatial_scope": {
+    "catchment_km2": 1889.8,
+    "id": "410033",
+    "latitude": -36.17,
+    "longitude": 149.09,
+    "name": "Murrumbidgee River at Mittagang Crossing",
+    "scope": "gauge upstream catchment; not Council or town supply boundary"
+  },
+  "historical_water_reference": {
+    "source_id": "COOMA-FLOW-STATION-410033",
+    "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+    "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+    "data_package_sha256": "f664b75674059bcdd907941afcfdf0b6c4a19ffa79f3835bfaa79b5967097452",
+    "source_url": "https://www.bom.gov.au/water/hrs/content/data/410033/410033_daily_ts.csv",
+    "source_version": "September, 2026",
+    "coverage_start": "1964-03-01",
+    "coverage_end": "2026-02-28",
+    "station": {
+      "catchment_km2": 1889.8,
+      "id": "410033",
+      "latitude": -36.17,
+      "longitude": 149.09,
+      "name": "Murrumbidgee River at Mittagang Crossing",
+      "scope": "gauge upstream catchment; not Council or town supply boundary"
+    },
+    "unit": "ML per daily interval",
+    "time_basis": "source date labels; previous 24h reported at 09:00 local time; UTC offset unspecified, no invented UTC conversion",
+    "licence": "https://creativecommons.org/licenses/by/3.0/au/",
+    "attribution": "© WaterNSW; Australian Bureau of Meteorology Hydrologic Reference Stations. ClimateOS parsed daily records; no source values altered.",
+    "receipt": {
+      "cost_aud": 0,
+      "input_digest": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+      "method": "hrs-410033-daily-v1",
+      "receipt_id": "HRS-RECEIPT-E70B4670978ABFD6",
+      "result_digest": "sha256:b3103538910f2dc55a06eb818a9fbfba4501f9cacc81ed701cf102a97bb07d25",
+      "termination": "VALIDATED_SOURCE_RECORDS_AWAITING_HUMAN_REVIEW"
+    },
+    "passport": {
+      "does_not_support": [
+        "town supply adequacy",
+        "water quality",
+        "causality",
+        "current conditions"
+      ],
+      "human_review_required": true,
+      "passport_id": "HRS-PASSPORT-3CCD749190E38305",
+      "release_as_environmental_evidence": false,
+      "state": "SOURCE_RECORDS_AWAITING_HUMAN_REVIEW",
+      "supports": "dated source streamflow records with original quality flags"
+    },
+    "reference_path": "apps/regional-public-os/data/index.json",
+    "private_site": "https://climateos-snowy-monaro.minshu.chatgpt.site",
+    "temporal_status": "HISTORICAL_STALE_FOR_CURRENT_USE",
+    "human_scientific_review": "PENDING",
+    "association_meaning": "POSTHOC_READ_ONLY_REFERENCE_NOT_PART_OF_ORIGINAL_MONTHLY_REVIEW",
+    "original_monthly_receipt_amended": false,
+    "current_conditions_supported": false
+  },
+  "source_coverage_end": "2026-02-28",
+  "availability_method": "Calendar-label counts by original quality code; no value interpolation or physical/statistical inference",
+  "missing_dependencies": [
+    "Licensed catchment polygon and confirmed gauge spatial alignment",
+    "Licensed precipitation series with compatible time/space definition",
+    "Licensed soil moisture series with depth/units and observed/modelled distinction",
+    "Resolution of daily interval/UTC alignment and source header ambiguity",
+    "Independent scientific review of analysis protocol and water record quality"
+  ],
+  "operational_series": "NOT_ADMITTED; API account/rights and public-layer staleness/units/QC unresolved",
+  "environmental_conclusion": null,
+  "causal_conclusion": null,
+  "automatic_updates": false,
+  "readiness_summary": {
+    "months": 312,
+    "calendar_records": 9497,
+    "missing_calendar_labels": 0,
+    "null_values": 0,
+    "quality_counts": {
+      "A": 3266,
+      "B": 3460,
+      "C": 10,
+      "E": 2761,
+      "G": 0
+    },
+    "fully_a_b_nonnull_months": 216,
+    "generation_command": "python -B tools/p04_water_soil_climate_preflight.py"
+  }
+}

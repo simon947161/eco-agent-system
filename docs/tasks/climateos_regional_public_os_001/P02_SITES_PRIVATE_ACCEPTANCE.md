@@ -1,6 +1,6 @@
 # P02 private Sites acceptance — 2026-10-26
 
-Status: **PARTIAL — hosted owner browser sign-in pending**. The real private deployment, server-side access tests, source matching and rollback/restore are verified. This is not PRIVATE_ACCESS_BLOCKED: owner-only access is confirmed. No public publication or Draft merge occurred.
+Status: **VERIFIED**. Owner browser completion is recorded in the final addendum below. Earlier pending statements describe the pre-login stage. Private deployment, server-side access, source matching and rollback/restore are verified. No public publication or Draft merge occurred.
 
 ## Actual site and access boundary
 

@@ -1,0 +1,78 @@
+{
+  "cycle_id": "COOMA-CYCLE-5B67DD16E0116301",
+  "year_month": "2026-07",
+  "original_state": "CYCLE_REVIEWED_ACCEPTED_AS_RESEARCH_RECORD",
+  "link": {
+    "association_meaning": "POSTHOC_READ_ONLY_REFERENCE_NOT_PART_OF_ORIGINAL_MONTHLY_REVIEW",
+    "attribution": "© WaterNSW; Australian Bureau of Meteorology Hydrologic Reference Stations. ClimateOS parsed daily records; no source values altered.",
+    "coverage_end": "2026-02-28",
+    "coverage_start": "1964-03-01",
+    "current_conditions_supported": false,
+    "cycle_id": "COOMA-CYCLE-5B67DD16E0116301",
+    "data_package_sha256": "f664b75674059bcdd907941afcfdf0b6c4a19ffa79f3835bfaa79b5967097452",
+    "human_scientific_review": "PENDING",
+    "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+    "licence": "https://creativecommons.org/licenses/by/3.0/au/",
+    "original_cycle_sha256": "1f10cea6d0ce4b7ff613d580a82a2fd00409846be971d837229b974aca3c5a1b",
+    "original_monthly_receipt_amended": false,
+    "passport": {
+      "does_not_support": [
+        "town supply adequacy",
+        "water quality",
+        "causality",
+        "current conditions"
+      ],
+      "human_review_required": true,
+      "passport_id": "HRS-PASSPORT-3CCD749190E38305",
+      "release_as_environmental_evidence": false,
+      "state": "SOURCE_RECORDS_AWAITING_HUMAN_REVIEW",
+      "supports": "dated source streamflow records with original quality flags"
+    },
+    "private_site": "https://climateos-snowy-monaro.minshu.chatgpt.site",
+    "receipt": {
+      "cost_aud": 0,
+      "input_digest": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+      "method": "hrs-410033-daily-v1",
+      "receipt_id": "HRS-RECEIPT-E70B4670978ABFD6",
+      "result_digest": "sha256:b3103538910f2dc55a06eb818a9fbfba4501f9cacc81ed701cf102a97bb07d25",
+      "termination": "VALIDATED_SOURCE_RECORDS_AWAITING_HUMAN_REVIEW"
+    },
+    "reference_id": "HRS-CYCLE-LINK-5786CE400E77B343",
+    "reference_path": "apps/regional-public-os/data/index.json",
+    "source_id": "COOMA-FLOW-STATION-410033",
+    "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+    "source_url": "https://www.bom.gov.au/water/hrs/content/data/410033/410033_daily_ts.csv",
+    "source_version": "September, 2026",
+    "station": {
+      "catchment_km2": 1889.8,
+      "id": "410033",
+      "latitude": -36.17,
+      "longitude": 149.09,
+      "name": "Murrumbidgee River at Mittagang Crossing",
+      "scope": "gauge upstream catchment; not Council or town supply boundary"
+    },
+    "temporal_status": "HISTORICAL_STALE_FOR_CURRENT_USE",
+    "time_basis": "source date labels; previous 24h reported at 09:00 local time; UTC offset unspecified, no invented UTC conversion",
+    "unit": "ML per daily interval",
+    "year_month": "2026-07",
+    "linked_at": "2026-10-26T08:06:12.049011+00:00",
+    "reference_status": "VERIFIED_REFERENCE_ONLY"
+  },
+  "existing_project_tables_unchanged": true,
+  "repeat_attach_identical": true,
+  "prior_table_digests": {
+    "research_programs": "aeadac502c2a2c5109e5487fb6a204234e450a339c17fff8a985c13f052f949a",
+    "research_cycles": "72e0f178b8cab129e7953213c0f9baedfcf9802f3a54ae1008b9600df9af8281",
+    "research_observations": "37a096bcdef0d554033f9b77f8488a7893ba178b0c05e2f17db6cc746ce02315",
+    "official_source_snapshots": "dbef60f03246a81476e92d2368dee58ead39f3f753f57312c542d46d53760dc9",
+    "annual_research_reports": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "environmental_question_sessions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "browser_validation": {
+    "existing_console_reopened": true,
+    "reference_visible": true,
+    "posthoc_meaning_visible": true,
+    "reviewed_compile_remains_disabled": true,
+    "database_used": "ignored local copy of original runtime for UI QA"
+  }
+}

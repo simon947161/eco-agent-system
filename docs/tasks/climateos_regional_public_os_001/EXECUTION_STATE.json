@@ -29,7 +29,9 @@
     "service_authorized_readback_verified": true,
     "rollback_and_restore_verified": true,
     "owner_browser_signin_verified": true,
-    "hosted_desktop_mobile_verified": true
+    "hosted_desktop_mobile_verified": true,
+    "owner_private_control_plane_rechecked_on": "2026-10-26",
+    "p03_deployment_performed": false
   },
   "automation": {
     "schedule_created": false,
@@ -40,7 +42,7 @@
     "P01": "in_progress",
     "P02": "verified",
     "P03": "in_progress",
-    "P04": "planned",
+    "P04": "in_progress",
     "P05": "in_progress",
     "P06": "planned",
     "P07": "planned",
@@ -49,8 +51,19 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "P03: attach the accepted HRS snapshot/Receipt/Passport as a read-only evidence reference to one existing monthly research cycle; preserve scientific-review pending status and no automatic fetching.",
-  "blockers": [],
+  "next_action": "P04 CASE001: admit one licensed catchment polygon, precipitation product and soil-moisture product; resolve HRS time semantics before numerical joins. See P04_CASE001_TASK.md.",
+  "blockers": [
+    {
+      "scope": "P03_recent_operational_adapter",
+      "status": "BLOCKED",
+      "reason": "WaterNSW requires account/product key; price, terms and schema unverified. Public WaterInsights 410033 latest observation is 2022-12-14; units, quality and exact-layer licence/automation rights unresolved."
+    },
+    {
+      "scope": "P04_scientific_execution",
+      "status": "BLOCKED_INPUT_ADMISSION",
+      "reason": "Licensed spatially compatible catchment/precipitation/soil moisture inputs, HRS time interpretation and scientific method review pending; availability preflight completed."
+    }
+  ],
   "workstreams": {
     "smrc_policy_console": {
       "task_id": "CLIMATEOS-SMRC-POLICY-CONSOLE-001",
@@ -68,7 +81,7 @@
         "orchestration_issue": 126,
         "bridge_pr": 127
       },
-      "next_action": "Continue parent P02 licensed real-data persistence/chart/evidence slice and Sites staging; verify current DP/OP content when retrievable. Do not repeat completed policy UI work.",
+      "next_action": "Reuse completed Console; follow P03/P04 evidence work. Current DP/OP content verification remains separate.",
       "regression_tests": {
         "run": 489,
         "result": "OK",
@@ -108,7 +121,7 @@
       },
       "browser_verified": "Existing program.html: February 2026 selection returns 28 rows, chart, quality distinction, evidence expansion",
       "direct_python_fetch": "HTTP_403; official fixed CSV retrieved using Windows Invoke-WebRequest; snapshot import verified",
-      "deployment": "NOT_DEPLOYED; Sites access confirmed, no ClimateOS site exists; Python/SQLite needs Worker adapter",
+      "deployment": "VERIFIED_PRIVATE_SITES_V2; see p02_sites_private and site; former NOT_DEPLOYED state superseded.",
       "validation_record": "P02_RECOVERY_VALIDATION_20261026.md"
     },
     "p02_sites_private": {
@@ -128,7 +141,55 @@
       "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
       "data_package_sha256": "f664b75674059bcdd907941afcfdf0b6c4a19ffa79f3835bfaa79b5967097452",
       "acceptance_record": "P02_SITES_PRIVATE_ACCEPTANCE.md",
-      "next_action": "P03: attach the accepted HRS snapshot/Receipt/Passport as a read-only evidence reference to one existing monthly research cycle; preserve scientific-review pending status and no automatic fetching."
+      "next_action": "P03 historical reference accepted locally; keep Sites v2 owner-private. No redeployment required."
+    },
+    "p03_monthly_evidence": {
+      "status": "verified",
+      "cycle_id": "COOMA-CYCLE-5B67DD16E0116301",
+      "year_month": "2026-07",
+      "reference_id": "HRS-CYCLE-LINK-5786CE400E77B343",
+      "association": "POSTHOC_READ_ONLY_REFERENCE_NOT_PART_OF_ORIGINAL_MONTHLY_REVIEW",
+      "original_tables_unchanged": true,
+      "original_receipt_amended": false,
+      "acceptance_record": "P03_ACCEPTANCE_20261026.md",
+      "targeted_tests": {
+        "run": 5,
+        "passed": 5
+      },
+      "regression_tests": {
+        "run": 499,
+        "result": "OK",
+        "skipped": 1
+      },
+      "worker_tests": {
+        "run": 8,
+        "passed": 8
+      }
+    },
+    "p03_recent_source_feasibility": {
+      "status": "completed_with_adapter_blocked",
+      "recent_source_admitted": false,
+      "incremental_adapter_implemented": false,
+      "automatic_updates": false,
+      "evidence": "P03_PUBLIC_SOURCE_CHECK.json",
+      "interpretation": "Feasibility decision completed; recent operational data acquisition not verified."
+    },
+    "p04_case001": {
+      "status": "PREPARED_NOT_SCIENTIFICALLY_EXECUTED",
+      "case_id": "P04-WATER-SOIL-CLIMATE-001",
+      "preflight_months": 312,
+      "study_period": [
+        "2000-01-01",
+        "2025-12-31"
+      ],
+      "environmental_conclusion": null,
+      "causal_conclusion": null,
+      "targeted_tests": {
+        "run": 1,
+        "passed": 1
+      },
+      "task": "P04_CASE001_TASK.md",
+      "readiness": "P04_CASE001_READINESS.json"
     }
   },
   "recovery": {
