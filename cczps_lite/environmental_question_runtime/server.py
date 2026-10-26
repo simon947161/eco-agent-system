@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 import json
+import sqlite3
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Lock
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
+from .streamflow import read_series
 
 from .continuity import ContinuityBoundaryError, LocalPrivateContinuity
 from .runtime import EnvironmentalQuestionRuntime, RuntimeBoundaryError, RuntimeStateError
@@ -65,10 +67,21 @@ def build_handler(
             parts = self._parts()
             if not parts:
                 name, kind = "index.html", "text/html; charset=utf-8"
-            elif parts in (["app.js"], ["styles.css"], ["program.js"], ["program.css"], ["policy.js"]):
+            elif parts in (["app.js"], ["styles.css"], ["program.js"], ["program.css"], ["policy.js"], ["streamflow.js"]):
                 name = parts[0]; kind = "text/javascript; charset=utf-8" if name.endswith(".js") else "text/css; charset=utf-8"
             elif parts == ["program.html"]:
                 name, kind = "program.html", "text/html; charset=utf-8"
+            elif parts == ["api", "streamflow"]:
+                try:
+                    query = parse_qs(urlparse(self.path).query)
+                    if set(query) - {'start', 'end'} or any(len(v) != 1 for v in query.values()):
+                        raise ValueError('Only start/end dates are supported')
+                    self._json(200, read_series(programs.db_path, query.get('start', [None])[0], query.get('end', [None])[0]))
+                except ValueError as exc:
+                    self._json(400, {'error': str(exc)})
+                except (OSError, sqlite3.Error):
+                    self._json(503, {'error': 'streamflow_unavailable'})
+                return
             elif parts == ["api", "policy-context"]:
                 try:
                     self._json(200, console_packet())

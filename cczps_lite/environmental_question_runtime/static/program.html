@@ -74,10 +74,23 @@
     <button id="annualReport">Generate annual report</button>
     <div id="annualOutput"></div>
   </section>
+  <section aria-labelledby="flowHeading">
+    <h2 id="flowHeading">T1 / T2 · Historical catchment streamflow · 历史流量</h2>
+    <p>Mittagang Crossing 410033 · T3 evidence shared by water and landscape research. Historical gauge records cannot establish town supply adequacy, water quality or causality.</p>
+    <label>From <input id="flowStart" type="date"></label>
+    <label>To <input id="flowEnd" type="date"></label>
+    <button id="flowLoad">Read stored interval</button>
+    <p id="flowStatus" role="status"></p>
+    <svg id="flowChart" viewBox="0 0 900 260" role="img" aria-label="Daily streamflow; gaps break lines; poor, unreliable and gap-filled records appear separately" style="width:100%;background:#f4f7fa"></svg>
+    <p>Blue: A/B. Orange points: C/E/G. Missing days break the line; no interpolation or trend fitted. Units: ML per daily interval.</p>
+    <details><summary>Evidence, licence, quality and Run Receipt / 证据链</summary><pre id="flowEvidence" style="white-space:pre-wrap;overflow-wrap:anywhere"></pre></details>
+    <details><summary>Accessible daily records and quality flags</summary><div style="max-height:300px;overflow:auto"><table><thead><tr><th>Date</th><th>ML per daily interval</th><th>Quality</th></tr></thead><tbody id="flowRows"></tbody></table></div></details>
+  </section>
   <div id="error" role="alert"></div>
 </main>
 <script src="/program.js"></script>
 <script src="/policy.js"></script>
+<script src="/streamflow.js"></script>
 </body>
 </html>
 

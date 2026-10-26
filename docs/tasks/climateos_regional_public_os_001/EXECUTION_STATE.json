@@ -27,7 +27,7 @@
   "packages": {
     "P00": "in_progress",
     "P01": "in_progress",
-    "P02": "planned",
+    "P02": "in_progress",
     "P03": "in_progress",
     "P04": "planned",
     "P05": "in_progress",
@@ -38,7 +38,7 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "Continue parent P02 licensed real-data persistence/chart/evidence slice and Sites staging; verify current DP/OP content when retrievable. Do not repeat completed policy UI work.",
+  "next_action": "Port the verified HRS read-only slice to a private Sites Worker/data package, preserving this SQLite import as the authoritative local replay; verify private access and version mapping. Do not repeat policy UI.",
   "blockers": [],
   "workstreams": {
     "smrc_policy_console": {
@@ -65,7 +65,52 @@
       },
       "verification_scope": "Desktop browser: source/version selection, land/catchment and evidence/scenario switching, linked-policy navigation. Mobile not yet checked.",
       "source_check": "Three recorded public PDFs matched again in permission-enabled read-only check; normal sandbox reports inaccessible; current DP/OP candidates remain missing/unverified."
+    },
+    "p02_streamflow": {
+      "status": "verified_local_vertical_slice",
+      "source_id": "COOMA-FLOW-STATION-410033",
+      "source_version": "September, 2026",
+      "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+      "coverage_start": "1964-03-01",
+      "coverage_end": "2026-02-28",
+      "records": 22645,
+      "licence": "CC BY 3.0 AU; copyright WaterNSW; BOM HRS product-specific attribution",
+      "quality_counts": {
+        "A": 12058,
+        "B": 7192,
+        "C": 160,
+        "E": 3235,
+        "G": 0
+      },
+      "absent_dates": 0,
+      "null_values": 0,
+      "current_condition_status": "HISTORICAL_STALE_FOR_CURRENT_USE",
+      "human_scientific_review": "pending",
+      "targeted_tests": {
+        "run": 4,
+        "passed": 4
+      },
+      "regression_tests": {
+        "run": 493,
+        "result": "OK",
+        "skipped": 1
+      },
+      "browser_verified": "Existing program.html: February 2026 selection returns 28 rows, chart, quality distinction, evidence expansion",
+      "direct_python_fetch": "HTTP_403; official fixed CSV retrieved using Windows Invoke-WebRequest; snapshot import verified",
+      "deployment": "NOT_DEPLOYED; Sites access confirmed, no ClimateOS site exists; Python/SQLite needs Worker adapter",
+      "validation_record": "P02_RECOVERY_VALIDATION_20261026.md"
     }
+  },
+  "recovery": {
+    "status": "PARTIAL",
+    "baseline_commit": "11327bc70ba1fa4c2ff995b604acbca48622a3d4",
+    "historical_policy_commit": "42e8df72a549752a7f15a64f0ba6c58c1f11f49d",
+    "gate1_targeted_passed": 7,
+    "baseline_regression_run": 489,
+    "baseline_skipped": 1,
+    "local_prototype": "LOCAL_PROTOTYPE_NOT_RECOVERED",
+    "prototype_note": "An older untracked directory scaffold was found; no matching source, Chinese taskbook/acceptance files or eleven-test suite recovered in inspected authorized workspace/history. Not copied or executed.",
+    "pr127": "open Draft unmerged; head 6a20de8c21ed3587e521e3d10b0785b11be6d8f5",
+    "pr129": "open Draft unmerged; recovered branch retained"
   }
 }
-
