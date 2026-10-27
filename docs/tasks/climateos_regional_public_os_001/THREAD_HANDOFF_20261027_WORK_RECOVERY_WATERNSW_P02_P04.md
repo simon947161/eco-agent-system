@@ -80,7 +80,7 @@
 - 版权/许可：WaterNSW 产品特定 **CC BY 3.0 AU**，保留 BoM/HRS 来源及修改说明；
 - CSV 有 `Flow (ML)` 与 `ML/day` 描述并存、9am local 前24h 与提取时间/单位歧义；不强行同义转换。
 
-原有研究 Console 已增加数据校验、原始/解析版本、SQLite、日期查询、SVG 图表、质量标识、Evidence Passport 和 Run Receipt；2016（更正：**2026**）年 2 月 28 条记录经过本地和私有部署读回，原报告所称 493 项回归通过、1 skip。页面仅展示可追踪**历史**数据，不能直接推断当前水情、水质、供水容量或因果关系。
+原有研究 Console 已增加数据校验、原始/解析版本、SQLite、日期查询、SVG 图表、质量标识、Evidence Passport 和 Run Receipt；**2026** 年 2 月 28 条记录经过本地和私有部署读回，原报告所称 493 项回归通过、1 skip。页面仅展示可追踪**历史**数据，不能直接推断当前水情、水质、供水容量或因果关系。
 
 私有网址：`https://climateos-snowy-monaro.minshu.chatgpt.site`；Owner-Private v2，记录有拒绝匿名访问、授权访问、移动/桌面及回滚/恢复验收。未经用户批准不得公共部署、修改受众或合并。
 
