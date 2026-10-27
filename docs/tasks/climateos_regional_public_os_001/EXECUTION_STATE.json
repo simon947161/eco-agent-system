@@ -51,7 +51,7 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "Resolve P04 provider product contract: AWRA-L v7 native monthly sum/mean and soil fraction encoding; HRS410033 DST/date-month membership and February2026 missing from official monthly summary. UNSENT questions prepared. Keep numerical join blocked; WaterNSW credentials independent.",
+  "next_action": "P04 only: run a bounded same-grid-cell AWRA daily-vs-monthly semantic reproduction to test rain_day monthly sum and sm_pct month-end versus mean. HRS monthly sum/grouping is publisher-documented and sm_pct raw 0–1 fraction is strongly supported. Keep cross-source numeric join blocked pending AWRA reducer, HRS DST/interval, monthly QC/completeness and basin numeric admission. Provider questions remain UNSENT; WaterNSW credentials independent.",
   "blockers": [
     {
       "scope": "P03_recent_operational_adapter",
@@ -61,7 +61,7 @@
     {
       "scope": "P04_scientific_execution",
       "status": "BLOCKED_NUMERIC_JOIN",
-      "reason": "Native AWRA monthly units, absent packing attrs and sampled time bounds verified. Monthly sum/mean, fraction encoding contract, HRS DST/date-month/unit interpretation, official monthly coverage discrepancy, basin completeness and scientific QC/equivalence remain unresolved."
+      "reason": "P04 public-document review narrowed the blocker: HRS monthly totals are publisher-documented sums of gap-filled daily data by month; HRS daily values are declared 9am totals for the previous 24h; official AWRA services support sm_pct raw scale as 0–1 fraction of fullness. Still unresolved: exact NCI monthly rain_day reducer, exact NCI monthly sm_pct statistic, HRS DST/interval/date handling and monthly QC/completeness, plus basin numeric completeness/scientific equivalence. Numeric join remains blocked."
     }
   ],
   "workstreams": {
@@ -220,7 +220,19 @@
           "passed": 19,
           "new_semantics_tests": 10
         },
-        "tests_record": "P04_SEMANTICS_TESTS_20261027.md"
+        "tests_record": "P04_SEMANTICS_TESTS_20261027.md",
+        "public_document_review": {
+          "status": "EVIDENCE_NARROWED_NUMERIC_JOIN_BLOCKED",
+          "record": "P04_PUBLIC_DOCUMENT_SEMANTIC_REVIEW_20261027.md",
+          "baseline_pr_head": "564b9f830efadc07341e2eeee9c33a181b5e6382",
+          "hrs_monthly_reducer": "VERIFIED_PUBLISHER_SUM_OF_GAP_FILLED_DAILY_BY_MONTH",
+          "hrs_daily_interval": "VERIFIED_DECLARATION_9AM_PREVIOUS_24H_DST_UNRESOLVED",
+          "awra_sm_pct_scale": "SUPPORTED_RAW_FRACTION_0_TO_1_PERCENT_PRESENTATION",
+          "awra_monthly_rain_reducer": "STRONG_CORROBORATION_PROVIDER_CONTRACT_NOT_VERIFIED",
+          "awra_monthly_soil_statistic": "UNRESOLVED",
+          "provider_contact": "NOT_SENT",
+          "numeric_join": "BLOCKED"
+        }
       }
     },
     "waternsw_prior_access_recovery": {
