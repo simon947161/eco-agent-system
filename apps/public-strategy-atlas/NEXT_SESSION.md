@@ -1,3 +1,13 @@
+# Active V1.6 checkpoint — E3 scalable content delivered, full system incomplete
+
+Previous remote checkpoint `5dc26c4f515df125192d329b5d055f1a4ea51379` (E2). Read latest remote HEAD before resuming; this file is in its checkpoint commit.
+
+E3 implementation removes fixed 20-depth/500-item limits: iterative indexed content/source/local receipts, 100,000-record safety ceiling, flat deep transport, paginated children and subtree search. Nine native suites PASS; actual Chromium 1,000-level chain and 10,000-item fixture at desktop/mobile PASS, downloaded deep snapshots independently verified. E0 browser regression including two-tab conflict rerun PASS. Legacy base digest/127 records and exact original receipt hashes preserved. See `qa/E3_RECURSION_RESULTS.md`, qa/system/native-e3.json and deep screenshots. Synthetic capacity is not official corpus completion.
+
+Next executable step E4: add `atlas-execution.js` plus execution.test.cjs using AtlasModel.domainIndex/queryRelationships for bounded forward/reverse work and dependency routes; enrich explicitly synthetic water/land work packages in atlas-domain.js; connect dossier entities to recursive work/dependency/resource views. Then E5 three-ledger derivations, E6 legal/time applicability, E7 safe three-way merge, E8 discovery/review, E9 integration and E10 final acceptance matrix. Official source retrieval still BLOCKED_BY_PERMISSION; E2 real strands UNKNOWN. Source hosts saved in configuration draft require settings save to apply. PR #130 stays Draft; no deploy/merge/main/PR129 writes.
+
+--- Previous checkpoint ---
+
 # Active V1.6 checkpoint — E2 intake capability delivered, real retrieval blocked
 
 Previous verified remote: `271d5b21513158ab063d778328f1a72021f6a877` (E1). Read current remote HEAD; this file is in its checkpoint commit.

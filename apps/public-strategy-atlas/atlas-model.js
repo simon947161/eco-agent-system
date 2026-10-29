@@ -99,12 +99,16 @@ async function appendEvent(events,event){
  return [...events,Object.freeze({...payload,digest:await objectDigest(payload)})];
 }
 const contentKinds=new Set(['TOPIC','DOCUMENT','SECTION','CLAUSE','ACTION','INDICATOR','EVIDENCE','QUESTION']);
+function contentIndex(d){
+ const items=new Map(),children=new Map();
+ for(const c of d.contentItems||[]){items.set(c.id,c);if(!children.has(c.parentId))children.set(c.parentId,[]);children.get(c.parentId).push(c);}
+ return {items,children};
+}
 function validateContent(d){
  if(d.contentItems===undefined)return [];
  if(!Array.isArray(d.contentItems))return ['CONTENT_ARRAY_REQUIRED'];
- if(d.contentItems.length>500)return ['CONTENT_LIMIT'];
- const issues=[],items=new Map(),versions=new Set();
- const owners=new Set(d.nodes.map(n=>n.id)),observations=new Map((d.sourceObservations||[]).map(o=>[o.id,o]));
+ if(d.contentItems.length>100000)return ['CONTENT_LIMIT'];
+ const issues=[],items=new Map(),versions=new Set(),owners=new Set(d.nodes.map(n=>n.id)),observations=new Map((d.sourceObservations||[]).map(o=>[o.id,o]));
  for(const item of d.contentItems){
   if(!item||typeof item!=='object'||typeof item.id!=='string'||!item.id||items.has(item.id)){issues.push('CONTENT_ID');continue;}
   items.set(item.id,item);
@@ -114,43 +118,59 @@ function validateContent(d){
    if(!owners.has(item.ownerNodeId)||!d.revisions.some(r=>r.id===item.revisionId&&r.classification==='SYNTHETIC')||item.observationId!==null)issues.push('CONTENT_SCOPE:'+item.id);
   }else if(item.ownerNodeId!==null||item.revisionId!==null||observations.get(item.observationId)?.status!==item.status)issues.push('CONTENT_OBSERVATION:'+item.id);
  }
+ const visited=new Set();
  for(const item of items.values()){
-  if(item.parentId!==null){const parent=items.get(item.parentId);if(!parent||parent.ownerNodeId!==item.ownerNodeId||parent.revisionId!==item.revisionId||parent.observationId!==item.observationId||parent.status!==item.status)issues.push('CONTENT_PARENT:'+item.id);}
-  let cursor=item;const seen=new Set();while(cursor){if(seen.has(cursor.id)){issues.push('CONTENT_CYCLE:'+item.id);break;}seen.add(cursor.id);if(seen.size>20){issues.push('CONTENT_DEPTH:'+item.id);break;}cursor=items.get(cursor.parentId);}
+  if(item.parentId!==null){const p=items.get(item.parentId);if(!p||p.ownerNodeId!==item.ownerNodeId||p.revisionId!==item.revisionId||p.observationId!==item.observationId||p.status!==item.status)issues.push('CONTENT_PARENT:'+item.id);}
+  if(visited.has(item.id))continue;
+  let cursor=item;const path=new Set();
+  while(cursor&&!visited.has(cursor.id)){if(path.has(cursor.id)){issues.push('CONTENT_CYCLE:'+item.id);break;}path.add(cursor.id);cursor=items.get(cursor.parentId);}
+  for(const id of path)visited.add(id);
  }
  return issues;
 }
 function contentTrail(d,id){
- const items=new Map((d.contentItems||[]).map(c=>[c.id,c])),trail=[],seen=new Set();
- let item=items.get(id);while(item){if(seen.has(item.id))throw Error('CONTENT_CYCLE');seen.add(item.id);trail.unshift(item);item=items.get(item.parentId);}return trail;
+ const {items}=contentIndex(d),trail=[],seen=new Set();let item=items.get(id);
+ while(item){if(seen.has(item.id))throw Error('CONTENT_CYCLE');seen.add(item.id);trail.push(item);item=items.get(item.parentId);}return trail.reverse();
 }
-function contentChildren(d,id){return (d.contentItems||[]).filter(c=>c.parentId===id);}
+function contentChildren(d,id){return contentIndex(d).children.get(id)||[];}
+function contentPage(d,id,{offset=0,limit=50,query=''}={}){
+ if(!Number.isInteger(offset)||offset<0||!Number.isInteger(limit)||limit<1||limit>200||typeof query!=='string')throw Error('CONTENT_PAGE_BOUNDS');
+ const {items,children}=contentIndex(d);if(!items.has(id))throw Error('CONTENT_NOT_FOUND');
+ const queue=[id],matches=[],seen=new Set();let total=0;
+ for(let i=0;i<queue.length;i++){
+  const next=queue[i];if(seen.has(next))throw Error('CONTENT_CYCLE');seen.add(next);const item=items.get(next);
+  if((item.title+' '+item.text).toLowerCase().includes(query.toLowerCase())){if(total>=offset&&matches.length<limit)matches.push(item);total++;}
+  for(const child of children.get(next)||[])queue.push(child.id);
+ }
+ return {items:matches,total,offset,nextOffset:offset+matches.length<total?offset+matches.length:null};
+}
 async function contentReceipt(d,id){
  const errors=validateContent(d);if(errors.length)throw Error(errors.join(';'));
- const item=d.contentItems.find(c=>c.id===id);if(!item)throw Error('CONTENT_NOT_FOUND');
- const children=await Promise.all(contentChildren(d,id).sort((a,b)=>(a.id<b.id?-1:a.id>b.id?1:0)).map(c=>contentReceiptUnchecked(d,c)));
- return {id:item.id,versionId:item.versionId,itemDigest:await objectDigest(item),subtreeDigest:await objectDigest({item,children:children.map(c=>({id:c.id,digest:c.subtreeDigest}))}),children};
-}
-async function contentReceiptUnchecked(d,item){
- const children=await Promise.all(contentChildren(d,item.id).sort((a,b)=>(a.id<b.id?-1:a.id>b.id?1:0)).map(c=>contentReceiptUnchecked(d,c)));
- return {id:item.id,versionId:item.versionId,itemDigest:await objectDigest(item),subtreeDigest:await objectDigest({item,children:children.map(c=>({id:c.id,digest:c.subtreeDigest}))}),children};
+ const {items,children}=contentIndex(d),root=items.get(id);if(!root)throw Error('CONTENT_NOT_FOUND');
+ const order=[{id,depth:0}],receipts=new Map();let maxDepth=0;
+ for(let i=0;i<order.length;i++){const entry=order[i];maxDepth=Math.max(maxDepth,entry.depth);for(const c of children.get(entry.id)||[])order.push({id:c.id,depth:entry.depth+1});}
+ for(let i=order.length-1;i>=0;i--){const item=items.get(order[i].id),childReceipts=(children.get(item.id)||[]).slice().sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0).map(c=>receipts.get(c.id));
+  receipts.set(item.id,{id:item.id,versionId:item.versionId,itemDigest:await objectDigest(item),subtreeDigest:await objectDigest({item,children:childReceipts.map(c=>({id:c.id,digest:c.subtreeDigest}))}),children:childReceipts});
+ }
+ const result=receipts.get(id);if(maxDepth<=128)return result;
+ // Flat transport prevents JSON/canonical stack overflow; node hashes are unchanged.
+ return {format:'atlas-content-receipt-flat-2',id,versionId:root.versionId,itemDigest:result.itemDigest,subtreeDigest:result.subtreeDigest,records:[...receipts.values()].sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0).map(r=>({...r,children:r.children.map(c=>({id:c.id,digest:c.subtreeDigest}))}))};
 }
 function layoutContent(d,rootId,{expanded=new Set(),limit=200}={}){
  if(!Number.isInteger(limit)||limit<1||limit>500)throw Error('LAYOUT_BOUNDS');
  if(validateContent(d).length)throw Error('INVALID_CONTENT');
- const root=(d.contentItems||[]).find(c=>c.id===rootId);if(!root)return {nodes:[],edges:[],truncated:false};
+ const {items,children}=contentIndex(d),root=items.get(rootId);if(!root)return {nodes:[],edges:[],truncated:false};
  const positions=new Map(),allQueue=[{item:root,depth:0}],rows=new Map();
- while(allQueue.length){const {item,depth}=allQueue.shift(),row=rows.get(depth)||0;rows.set(depth,row+1);positions.set(item.id,{x:45+depth*270,y:70+row*100});for(const child of contentChildren(d,item.id))allQueue.push({item:child,depth:depth+1});}
- const result=[],edges=[],queue=[root];let truncated=false;
- while(queue.length){if(result.length>=limit){truncated=true;break;}const item=queue.shift();result.push({...item,...positions.get(item.id)});
-  if(expanded.has(item.id))for(const child of contentChildren(d,item.id)){queue.push(child);edges.push({from:item.id,to:child.id});}
- }
- const ids=new Set(result.map(n=>n.id));return {nodes:result,edges:edges.filter(e=>ids.has(e.from)&&ids.has(e.to)),truncated};
+ for(let i=0;i<allQueue.length;i++){const {item,depth}=allQueue[i],row=rows.get(depth)||0;rows.set(depth,row+1);positions.set(item.id,{x:45+depth*270,y:70+row*100});for(const child of children.get(item.id)||[])allQueue.push({item:child,depth:depth+1});}
+ const result=[],edges=[],queue=[root];let i=0;
+ while(i<queue.length&&result.length<limit){const item=queue[i++];result.push({...item,...positions.get(item.id)});if(expanded.has(item.id))for(const child of children.get(item.id)||[]){queue.push(child);edges.push({from:item.id,to:child.id});}}
+ const ids=new Set(result.map(n=>n.id));return {nodes:result,edges:edges.filter(e=>ids.has(e.from)&&ids.has(e.to)),truncated:i<queue.length};
 }
-function densityFixture(d,count){
- if(![60,200].includes(count))throw Error('DENSITY_BOUNDS');
- const copy=structuredClone(d);
- for(let i=0;i<count;i++)copy.contentItems.push({id:'density:'+i,logicalId:'density:'+i,versionId:'density:'+i+':v1',revisionId:'synthetic-v1',ownerNodeId:'csp',parentId:i===0?null:'density:'+Math.floor((i-1)/3),kind:i===0?'TOPIC':'SECTION',title:i===0?'Synthetic density fixture':('Demo item '+i),text:'Generated synthetic layout fixture only. Not a Council document or an evidence claim.',status:'SYNTHETIC',observationId:null});
+function densityFixture(d,count,{shape='branching'}={}){
+ if(!['branching','chain'].includes(shape))throw Error('DENSITY_SHAPE');
+ if(![60,200,1000,10000].includes(count))throw Error('DENSITY_BOUNDS');
+ const copy=structuredClone(d);delete copy.domain;
+ for(let i=0;i<count;i++)copy.contentItems.push({id:'density:'+i,logicalId:'density:'+i,versionId:'density:'+i+':v1',revisionId:'synthetic-v1',ownerNodeId:'csp',parentId:i===0?null:'density:'+(shape==='chain'?i-1:Math.floor((i-1)/3)),kind:i===0?'TOPIC':'SECTION',title:i===0?'Synthetic density fixture':('Demo item '+i),text:'Generated synthetic layout fixture only. Not a Council document or an evidence claim.',status:'SYNTHETIC',observationId:null});
  return copy;
 }
 function discover(d){
@@ -185,5 +205,5 @@ async function verifySnapshot(bundle,expectedDigest=null){
  if(!bundle||bundle.format!=='atlas-public-snapshot-1'||!bundle.dataset||!bundle.audit||!Array.isArray(bundle.contentRoots))return false;
  try{const recomputed=await exportSnapshot(bundle.dataset);return (!expectedDigest||recomputed.audit.datasetDigest===expectedDigest)&&canonical(recomputed.audit)===canonical(bundle.audit)&&canonical(recomputed.contentRoots)===canonical(bundle.contentRoots);}catch{return false;}
 }
-const api={legacyBase:d=>domain.legacyBase(d),migrateDataset:(d,cases,catalogue)=>domain.migrateDataset(d,cases,api,catalogue),domainIndex:d=>domain.index(d),domainForStation:domain.forStation,queryRelationships:domain.relationships,commitDomainRevision:(d,options)=>domain.commitRevision(d,api,options),findCrossPaths,exportSnapshot,verifySnapshot,densityFixture,validateContent,contentTrail,contentChildren,contentReceipt,layoutContent,sha256,discover,auditSnapshot,canonical,digest,objectDigest,validate,applicability,paths,appendEvent,verifyEvents};root.AtlasModel=api;if(typeof module!=='undefined')module.exports=api;
+const api={contentIndex,contentPage,legacyBase:d=>domain.legacyBase(d),migrateDataset:(d,cases,catalogue)=>domain.migrateDataset(d,cases,api,catalogue),domainIndex:d=>domain.index(d),domainForStation:domain.forStation,queryRelationships:domain.relationships,commitDomainRevision:(d,options)=>domain.commitRevision(d,api,options),findCrossPaths,exportSnapshot,verifySnapshot,densityFixture,validateContent,contentTrail,contentChildren,contentReceipt,layoutContent,sha256,discover,auditSnapshot,canonical,digest,objectDigest,validate,applicability,paths,appendEvent,verifyEvents};root.AtlasModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

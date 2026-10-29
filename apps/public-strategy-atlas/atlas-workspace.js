@@ -66,10 +66,12 @@ function replay(workspace,dataset,through=workspace.revisions.length-1){
 async function subtreeReceipt(workspace,dataset,rootId,through=workspace.revisions.length-1){
  const errors=await validate(workspace,dataset);if(errors.length)throw Error(errors.join(';'));
  const view=replay(workspace,dataset,through),items=new Map(dataset.contentItems.map(c=>[c.id,c]));if(!items.has(rootId))throw Error('CONTENT_NOT_FOUND');
- async function visit(id){const item=items.get(id),local=view.get(id);const children=await Promise.all(m.contentChildren(dataset,id).sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0).map(c=>visit(c.id)));
-  const payload={id,sourceItemDigest:await m.objectDigest(item),localView:local,children:children.map(c=>({id:c.id,digest:c.digest}))};return {id,digest:await m.objectDigest(payload),children};
+ const {children}=m.contentIndex(dataset),order=[{id:rootId,depth:0}],receipts=new Map(),seen=new Set();let maxDepth=0;
+ for(let i=0;i<order.length;i++){const {id,depth}=order[i];if(seen.has(id))throw Error('CONTENT_CYCLE');seen.add(id);maxDepth=Math.max(maxDepth,depth);for(const c of children.get(id)||[])order.push({id:c.id,depth:depth+1});}
+ for(let i=order.length-1;i>=0;i--){const id=order[i].id,item=items.get(id),local=view.get(id),childReceipts=(children.get(id)||[]).slice().sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0).map(c=>receipts.get(c.id));
+  const payload={id,sourceItemDigest:await m.objectDigest(item),localView:local,children:childReceipts.map(c=>({id:c.id,digest:c.digest}))};receipts.set(id,{id,digest:await m.objectDigest(payload),children:childReceipts});
  }
- return visit(rootId);
+ const receipt=receipts.get(rootId);return maxDepth<=128?receipt:{format:'atlas-local-subtree-flat-2',id:rootId,digest:receipt.digest,records:[...receipts.values()].sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0).map(r=>({...r,children:r.children.map(c=>({id:c.id,digest:c.digest}))}))};
 }
 function assessAdmission(record){
  const stages=['SOURCE_OBSERVED','BYTE_VERIFIED','CONTENT_EXTRACTED','OFFICIAL_REVISION_CONFIRMED','ADMISSION_PENDING_REVIEW','ADMITTED'];

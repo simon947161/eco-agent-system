@@ -32,7 +32,7 @@ const d=require('./atlas-data.js'),m=require('./atlas-model.js');
   assert.equal(new Set(layout.nodes.map(n=>n.x+','+n.y)).size,count);
   console.log(`PASS: ${count} synthetic content nodes, ${count-1} edges, stable coordinates, bounded truncation (${Math.round(performance.now()-start)}ms)`);
  }
- await assert.rejects(()=>m.contentReceipt(d,'missing'),/CONTENT_NOT_FOUND/);assert.throws(()=>m.densityFixture(d,1000),/DENSITY_BOUNDS/);
+ await assert.rejects(()=>m.contentReceipt(d,'missing'),/CONTENT_NOT_FOUND/);assert.throws(()=>m.densityFixture(d,1001),/DENSITY_BOUNDS/);
  for(const c of d.contentItems)assert(!/[\u4e00-\u9fff]/.test(c.title+c.text),'English content '+c.id);
  for(const n of d.nodes)assert(!/[\u4e00-\u9fff]/.test(n.label+n.sub+n.detail),'English graph '+n.id);
  for(const f of ['index.html','atlas.js'])assert(!/[\u4e00-\u9fff]/.test(fs.readFileSync(path.join(__dirname,f),'utf8')),'English UI '+f);

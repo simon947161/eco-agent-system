@@ -2,7 +2,7 @@
 (async () => {
 'use strict';
 const m=AtlasModel,fixtureSize=Number(new URLSearchParams(location.search).get('fixture'));
-let d=await m.migrateDataset([60,200].includes(fixtureSize)?m.densityFixture(AtlasData,fixtureSize):AtlasData,AtlasAccounting.cases,AtlasSourceCatalogue);const NS='http://www.w3.org/2000/svg';
+let d=await m.migrateDataset([60,200,1000,10000].includes(fixtureSize)?m.densityFixture(AtlasData,fixtureSize,{shape:new URLSearchParams(location.search).get('shape')||'branching'}):AtlasData,AtlasAccounting.cases,AtlasSourceCatalogue);const NS='http://www.w3.org/2000/svg';
 const $=id=>document.getElementById(id),graph=$('atlasGraph'),details=$('details'),empty=details.innerHTML;
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const byId=new Map(d.nodes.map(n=>[n.id,n])),contentById=new Map(d.contentItems.map(c=>[c.id,c]));
@@ -73,14 +73,18 @@ function renderBreadcrumbs(){
  const target=$('breadcrumbs');target.replaceChildren();if(state.view!=='content')return;
  target.append(button('Route map',returnToRoute));
  const id=state.contentSelected||state.contentRoot;
- for(const c of m.contentTrail(d,id)){target.append(document.createTextNode(' / '),button(c.title,()=>openContent(c.id)));}
+ const trail=m.contentTrail(d,id);if(trail.length>20)target.append(button(trail[0].title,()=>openContent(trail[0].id)),document.createTextNode(' / '+(trail.length-20)+' earlier ancestors / '));
+ for(const c of trail.slice(-20)){target.append(document.createTextNode(' / '),button(c.title,()=>openContent(c.id)));}
 }
-function treeHTML(id,depth=0){
- const c=contentById.get(id),children=m.contentChildren(d,id);if(!c||depth>20)return '';
- const select='<button type="button" data-content="'+esc(c.id)+'">'+esc(c.title)+'</button>';
- return children.length?'<details class="content-tree"'+(depth===0?' open':'')+'><summary>'+esc(c.kind+' · '+c.title)+' <span>'+children.length+' items</span></summary>'+select+children.map(child=>treeHTML(child.id,depth+1)).join('')+'</details>':'<div class="content-leaf"><span class="key">'+esc(c.kind)+'</span>'+select+'</div>';
+function treeHTML(id,offset=0){
+ const c=contentById.get(id),children=m.contentChildren(d,id);if(!c)return '';
+ const link=item=>'<button type="button" data-content="'+esc(item.id)+'">'+esc(item.title)+'</button>';
+ return '<div class="content-page"><p>'+esc(c.kind+' · '+c.title)+' · '+children.length+' direct children</p>'+link(c)+children.slice(offset,offset+50).map(child=>'<div class="content-leaf">'+link(child)+'</div>').join('')+(offset?'<button data-page-root="'+esc(id)+'" data-offset="'+Math.max(0,offset-50)+'">Previous children</button>':'')+(offset+50<children.length?'<button data-page-root="'+esc(id)+'" data-offset="'+(offset+50)+'">Next children</button>':'')+'</div>';
 }
-function wireContent(){details.querySelectorAll('[data-content]').forEach(b=>b.addEventListener('click',()=>openContent(b.dataset.content)));}
+function wireContent(){
+ details.querySelectorAll('[data-content]').forEach(b=>b.addEventListener('click',()=>openContent(b.dataset.content)));
+ details.querySelectorAll('[data-page-root]').forEach(b=>b.addEventListener('click',()=>{b.closest('.content-page').outerHTML=treeHTML(b.dataset.pageRoot,Number(b.dataset.offset));wireContent();}));
+}
 function revealRelationship(id){if(!state.incremental)return;for(const root of ['csp','lsps'])for(const path of m.paths(d,root,id,{includeCandidates:state.candidates}))for(const edgeId of path)state.expanded.add(d.edges.find(e=>e.id===edgeId).from);}
 function inspectNode(id){
  const n=byId.get(id);if(!n)return;state.followId=null;if(n.type==='candidate'){state.candidates=true;$('showCandidates').checked=true;}state.selected=id;lastGraphFocus=id;revealRelationship(id);const current=++request;
@@ -114,7 +118,7 @@ function inspectLink(edge){
 }
 function openContent(id){
  const c=contentById.get(id);if(!c)return;saveMapContext();
- const trail=m.contentTrail(d,id);state.view='content';state.contentRoot=fixtureSize?trail[Math.max(0,trail.length-3)].id:trail[0].id;for(const item of trail)state.contentExpanded.add(item.id);inspectContent(id);centerContent(id);
+ const trail=m.contentTrail(d,id);state.view='content';state.contentRoot=fixtureSize||trail.length>8?trail[Math.max(0,trail.length-3)].id:trail[0].id;for(const item of trail)state.contentExpanded.add(item.id);inspectContent(id);centerContent(id);
 }
 function centerContent(id){const node=graph.querySelector(`[data-node-id="${CSS.escape(id)}"]`);if(!node)return;const rect=node.getBoundingClientRect(),shell=graph.parentElement,box=shell.getBoundingClientRect(),mobile=matchMedia('(max-width:600px)').matches;shell.scrollBy({left:rect.left+rect.width/2-(box.left+shell.clientWidth*(mobile?0.45:0.4)),top:rect.top+rect.height/2-(mobile?190:box.top+shell.clientHeight*.4),behavior:'instant'});}
 function inspectContent(id){
@@ -124,7 +128,8 @@ function inspectContent(id){
  const local=workspace&&w.head(workspace,id);if(local)details.insertAdjacentHTML('beforeend','<div class="local-note"><strong>'+esc('LOCAL_ANNOTATION / '+local.state)+'</strong><p>'+esc(local.content.title)+'</p><p>'+esc(local.content.text)+'</p><p>'+esc(local.reason)+'</p><p>'+esc(local.digest)+'</p></div>');
  details.insertAdjacentHTML('beforeend','<button id="editLocalContent" class="subtle-btn">Edit local annotation / compare versions</button><p class="detail-text">Local drafts never replace the source observation or its status.</p>');$('editLocalContent').addEventListener('click',()=>openEditor(id));
  $('contextActions').replaceChildren(button('Explore branch',()=>{state.incremental=true;$('incremental').checked=true;state.contentExpanded.add(id);$('inspector').hidden=true;render();}),button('Back to route map',returnToRoute));
- wireContent();$('scopeContent').addEventListener('click',()=>{state.contentRoot=id;render();});if(c.ownerNodeId)$('ownerNode').addEventListener('click',()=>{returnToRoute();inspectNode(c.ownerNodeId);});
+ wireContent();$('scopeContent').addEventListener('click',()=>{state.contentRoot=id;render();});
+ const searchWrap=document.createElement('div');searchWrap.innerHTML='<label for="subtreeQuery">Search this subtree</label><input id="subtreeQuery" type="search"><div id="subtreeResults" role="status"></div>';details.append(searchWrap);$('subtreeQuery').addEventListener('input',()=>{const result=m.contentPage(d,id,{query:$('subtreeQuery').value,limit:12});$('subtreeResults').replaceChildren(document.createTextNode(result.total+' matches; first 12 shown'),...result.items.map(item=>button(item.title,()=>openContent(item.id))));});if(c.ownerNodeId)$('ownerNode').addEventListener('click',()=>{returnToRoute();inspectNode(c.ownerNodeId);});
  m.contentReceipt(d,id).then(receipt=>{if(current===request)$('contentDigest').textContent='Item '+receipt.itemDigest+' · Subtree '+receipt.subtreeDigest+'. Child changes alter the ancestor receipt. No external witness or official signature.';}).catch(()=>{if(current===request)$('contentDigest').textContent='Content receipt failed validation.';});render();openInspector();
 }
 function closeDetails(){request++;$('inspector').hidden=true;$('toolsMenu').open=false;render();const target=lastEdgeFocus?graph.querySelector(`[data-edge-id="${CSS.escape(lastEdgeFocus)}"]`):lastGraphFocus?graph.querySelector(`[data-node-id="${CSS.escape(lastGraphFocus)}"]`):lastUtilityFocus;target?.focus({preventScroll:true});}
@@ -161,7 +166,7 @@ $('discoveryBtn').addEventListener('click',()=>panel('<h3>Cross-path hypotheses 
 $('auditBtn').addEventListener('click',async()=>{const current=panel('<h3>Audit & version history</h3><p>Recomputing dataset and linked event history…</p>');try{const a=await m.auditSnapshot(d);if(current!==request)return;details.innerHTML='<h3>Audit & version history</h3><p class="detail-text">Snapshot '+esc(a.datasetDigest)+'</p><p>Structure issues: '+a.issues.length+' · Event chain: '+(a.historyValid?'PASS':'FAIL')+'</p>'+d.events.map(e=>'<div class="warn">'+esc(e.sequence+' / '+e.type+' / '+e.objectId)+'<p>'+esc(e.observedAt)+'</p><p>'+esc(e.reason)+'</p><p>'+esc(e.digest)+'</p></div>').join('')+'<p class="detail-text">'+d.contentItems.length+' content items have distinct logical and version identities. Each subtree has a reproducible child-linked receipt. Export the snapshot to retain a checkpoint.</p><div class="warn">History contains synthetic fixture events only. Hashes do not prove truth, completeness, official adoption or protection against whole-history replacement. No independent signature or witness.</div>';}catch{if(current===request)details.textContent='Audit failed. Do not rely on this dataset.';}});
 $('exportBtn').addEventListener('click',async()=>{try{const bundle=await m.exportSnapshot(d);const blob=new Blob([JSON.stringify(bundle,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='atlas-public-snapshot.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('appStatus').textContent='Public/synthetic snapshot exported. Verify its digest independently; it is not an official credential.';}catch{$('appStatus').textContent='Export blocked: dataset verification failed.';}});
 $('aboutBtn').addEventListener('click',()=>panel('<h3>About this independent atlas</h3><p class="detail-text">An English, offline-capable research prototype for public strategy and internal content exploration. It runs without paid services or external runtime dependencies. Synthetic containment is kept separate from observed public text and official relationships.</p><div class="warn">No Council internal records. No real case data. No actual KPI. No deployment or official endorsement. Current source-admission and large-graph limits remain documented in NEXT_SESSION.md.</div>'));
-if([60,200].includes(fixtureSize)){state.view='content';state.contentRoot='density:0';state.contentExpanded=new Set(['density:0']);state.incremental=true;$('incremental').checked=true;$('fixtureSize').value=String(fixtureSize);$('appStatus').textContent='SYNTHETIC '+fixtureSize+'-item density fixture. No official content.';}
+if([60,200,1000,10000].includes(fixtureSize)){state.view='content';state.contentRoot='density:0';state.contentExpanded=new Set(['density:0']);state.incremental=true;$('incremental').checked=true;$('fixtureSize').value=String(fixtureSize);$('appStatus').textContent='SYNTHETIC '+fixtureSize+'-item density fixture. No official content.';}
 $('fixtureSize').addEventListener('change',e=>{const url=new URL(location.href);if(e.target.value==='base')url.searchParams.delete('fixture');else url.searchParams.set('fixture',e.target.value);location.href=url.href;});
 function downloadJSON(name,value){const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function admissionPanel(){
