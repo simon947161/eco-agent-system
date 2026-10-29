@@ -20,6 +20,7 @@ function recordIssues(record){
  if(record.officialUrl!==null&&!safeUrl(record.officialUrl))issues.push('UNSAFE_SOURCE_URL');
  if(record.directoryUrl!==null&&!safeUrl(record.directoryUrl))issues.push('UNSAFE_DIRECTORY_URL');
  if(record.recordType==='DOCUMENT'&&!safeUrl(record.officialUrl))issues.push('DOCUMENT_URL_REQUIRED');
+ if(typeof record.stationId!=='string'||!record.stationId||!record.access||!['BLOCKED_BY_PERMISSION','NOT_CHECKED','AVAILABLE','UNAVAILABLE','LOST'].includes(record.access.state))issues.push('SOURCE_ACCESS_OR_STATION');
  if(record.classification!=='PUBLIC'&&record.classification!=='SYNTHETIC')issues.push('PUBLIC_ONLY');
  if(!record.rights||!['UNKNOWN','METADATA_AND_SHORT_EXCERPTS','LICENCED','SYNTHETIC_AUTHORED'].includes(record.rights.status)||!Array.isArray(record.rights.permittedUses)||record.rights.permittedUses.some(use=>!USES.has(use)))issues.push('RIGHTS_REQUIRED');
  if(record.rights?.permittedUses?.includes('FULL_TEXT')&&!['LICENCED','SYNTHETIC_AUTHORED'].includes(record.rights.status))issues.push('FULL_TEXT_RIGHTS_REQUIRED');
@@ -44,6 +45,12 @@ async function createCatalogue(records,{registeredAt,actor='local-researcher'}={
  let result={format:FORMAT,algorithmVersion:'atlas-source-intake-1',sources,events:[]};
  for(const record of sources)result=await appendStage(result,record.id,'DISCOVERED',{actor,at:registeredAt,reason:'Registered source requirement or public research metadata; no admission implied.'});
  return freeze(result);
+}
+async function registerSource(catalogue,record,{registeredAt,actor='local-researcher',reason='Register a newly identified document revision'}={}){
+ requireThat(await verifyCatalogue(catalogue),'INVALID_CATALOGUE');requireThat(date(registeredAt)&&reason,'REGISTERED_AT_REQUIRED');
+ const errors=recordIssues(record);requireThat(!errors.length,errors.join(';'));requireThat(!catalogue.sources.some(s=>s.id===record.id),'DUPLICATE_SOURCE');requireThat(record.lineage.supersedes.every(id=>catalogue.sources.some(s=>s.id===id)),'SOURCE_LINEAGE');
+ const source={...structuredClone(record),revisionId:await M.objectDigest(record)},next={...catalogue,sources:[...catalogue.sources,source]};
+ return appendStage(next,source.id,'DISCOVERED',{actor,at:registeredAt,reason});
 }
 function replay(catalogue){
  const state=new Map(catalogue.sources.map(source=>[source.id,{stage:null,evidence:{},corrections:[]}])) ;
@@ -87,7 +94,7 @@ async function correctStage(catalogue,sourceId,stage,evidence){
 async function verifyCatalogue(catalogue,expectedDigest=null){
  try{
   if(!catalogue||catalogue.format!==FORMAT||catalogue.algorithmVersion!=='atlas-source-intake-1'||!Array.isArray(catalogue.sources)||catalogue.sources.length>10000||!Array.isArray(catalogue.events)||catalogue.events.length>100000)return false;
-  const ids=new Set();for(const source of catalogue.sources){const {revisionId,...record}=source;if(ids.has(source.id)||recordIssues(record).length||await M.objectDigest(record)!==revisionId)return false;ids.add(source.id);}
+  const ids=new Set();for(const source of catalogue.sources){const {revisionId,...record}=source;if(ids.has(source.id)||recordIssues(record).length||await M.objectDigest(record)!==revisionId)return false;if(source.lineage.supersedes.some(id=>!ids.has(id)))return false;ids.add(source.id);}
   const scratch={sources:catalogue.sources,events:[]};let previous=null;
   for(let i=0;i<catalogue.events.length;i++){
    const event=catalogue.events[i],{digest,...payload}=event,source=scratch.sources.find(s=>s.id===event.sourceId);if(!source||source.revisionId!==event.sourceRevision||event.sequence!==i||event.previousDigest!==previous||await M.objectDigest(payload)!==digest)return false;
@@ -109,5 +116,5 @@ function contentRecords(catalogue,sourceId){
  const source=catalogue.sources.find(source=>source.id===sourceId);requireThat(source,'SOURCE_NOT_FOUND');
  return source.extraction.anchors.map(anchor=>({id:'source:'+source.id+':'+anchor.id,logicalId:'source:'+source.id+':'+anchor.id,sourceId:source.id,sourceRevision:source.revisionId,locator:anchor.locator,textKind:anchor.textKind,title:anchor.title||anchor.locator,text:anchor.text,status:source.classification==='SYNTHETIC'?'SYNTHETIC':STAGES.indexOf(replay(catalogue).get(source.id).stage)>=STAGES.indexOf('EXTRACTED')?'PUBLIC_TEXT_OBSERVED':'PUBLIC_TEXT_REPORTED_NOT_REVERIFIED',reviewStatus:'PENDING',machineVerification:replay(catalogue).get(source.id).stage,officialMapping:'UNKNOWN'}));
 }
-const api={FORMAT,STAGES,recordIssues,safeUrl,createCatalogue,appendStage,correctStage,verifyCatalogue,replay,coverage,sourceGaps,contentRecords};root.AtlasIntake=api;if(typeof module!=='undefined')module.exports=api;
+const api={registerSource,FORMAT,STAGES,recordIssues,safeUrl,createCatalogue,appendStage,correctStage,verifyCatalogue,replay,coverage,sourceGaps,contentRecords};root.AtlasIntake=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

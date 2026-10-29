@@ -1,3 +1,30 @@
+# Active V1.6 checkpoint — E0–E10 bounded engineering delivered; full acceptance PARTIAL
+
+Latest remotely verified **before this final checkpoint**: `89fcb037091f44666cbd01ed554abbbafa98e727` (E9). The current checkpoint is the commit containing this file and qa/V1_6_SYSTEM_RESULTS.md. Resolve its exact SHA with `git rev-parse HEAD` and `git ls-remote origin refs/heads/feature/public-strategy-atlas-web-mvp-20261029`; compare the tested-source-manifest. A tracked file cannot contain its own commit hash. Final push/readback is reported at handoff. Use this branch / existing Draft PR #130 only.
+
+## Current verified capabilities and verdicts
+
+SOFTWARE_CAPABILITY **PARTIAL**; PUBLIC_CORPUS_COVERAGE **PARTIAL / BLOCKED_BY_PERMISSION**; OFFICIAL_ADMISSION **PENDING**. Do not call the full Atlas complete. E0–E10 produced successive working code/checkpoints, not corpus adoption. Real source permission/version/review and exact official implementation relationships remain missing.
+
+Original AtlasData is unchanged: 15 stations, 127 items, 16 assertions, sha256:13e765c81f1340918322b1e985da85f2362da3c72e1997804f952865edf365d2. Default additive registry has 30 typed entities / 40 assertions / 70 revision/events; migrated digest sha256:6236a12009115cd338e1f1c0db75906b4dbf4139d85bed84397c471e40a872fc. Local interactions append more revisions; no automatic save/upload.
+
+Delivered: versioned unified accounting/work/source/review schema and portable snapshots; indexed arbitrary-depth content/flat deep receipts/pagination/tables; forward/reverse work/dependency graphs; three-ledger reproducible calculations/input invalidation; scope/as-of/legal-effect rejection; explicit three-way branch resolution preserving histories; explainable candidates/falsifiers/local questions/reviews; route-first integrated dossiers/search/history/minimap and safe import/export. Source public 29.9 is still t CO2e/person, not price/operations/result. Water/land tasks/budgets are explicitly synthetic.
+
+Final actual checks: 15 native files PASS, zero failed/skipped, Node engine coverage 98.35% lines / 83.18% branches / 97.30% functions. Six real Chromium runners PASS; desktop/mobile/16:9/21:9/32:9; base/60/200/1000/10000 fixtures; 5000-level native / 1000-level browser depth; original/extended/deep/merged export verification; two-tab conflict; hostile-text/corruption/forged-approval rejection. Latest actual logs/screenshots/runtime: qa/system/, coverage-e10.txt and browser-e10.json. Physical touch/professional screen-reader/WCAG/Safari/Firefox NOT_TESTED. Original PDF byte verifier remains NOT_TESTED/BLOCKED here; old receipt preserved.
+
+Read qa/V1_6_SYSTEM_RESULTS.md and qa/V1_6_ACCEPTANCE.json for the full matrix/limits. README and DATA_CONTRACT are current. No deployment, merge, paid infrastructure, Council nonpublic data or main/PR129 changes. PR #130 public title independently confirmed Draft; Git pull/130/head matches this branch. GitHub API read was denied, so public page + Git refs were used, without requesting a token or changing PR metadata.
+
+## Exact next executable step — official data access, then real acceptance
+
+1. User/environment admin: review/save the pending official-source domain additions in environment settings and publish the environment configuration if required. Runtime currently has no custom allowed hosts; exact Council/legislation requests returned proxy CONNECT 403. No secret is missing.
+2. Retry official IP&R directory and the exact summary PDF URL in sources/csp61-admission.json, writing original bytes only under /tmp; run `python3 apps/public-strategy-atlas/verify-source.py /tmp/csp-summary.pdf` when obtained. Do not substitute the full CSP for the summary verifier's expected digest.
+3. Extend the immutable register with AtlasIntake.registerSource and ordered appendStage/correction events; retrieve actual adopted DP/OP/LSPS/resourcing/budget/reporting editions and permitted exact anchors, independently verify dates/scope/rights, identify authorised review. Thirteen catalogue entries are requirements, not concrete confirmed documents. Current catalogue: 15 requirements / 14 families / 2 known CSP URLs; fresh retrieved/extracted/version-confirmed/admitted = 0. Full inventory denominator UNKNOWN.
+4. Connect verified real records to the existing typed station/work/quantity/evidence paths, retain UNKNOWN where missing, then rerun the bounded end-to-end/native/browser suite and revise acceptance. Never infer CSP→LSPS, Council responsibility, budgets/spend/outcomes, legal effect or official approval from thematic similarity or a local reviewer string.
+
+While access remains blocked, do not replace this continuation with another research-only taskbook or restart the graph. The working code and exact gaps are already durable on the existing branch. No claim of autonomous execution outside an active session.
+
+--- Historical checkpoints below ---
+
 # Active V1.6 checkpoint — E9 integrated route-first product delivered
 
 Previous remote `a6f5ed976144d2a2f8541092f33b1e5631fa8d56` (E8). Read current remote HEAD.

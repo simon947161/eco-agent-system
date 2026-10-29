@@ -123,7 +123,7 @@ async function resolveMerge(local,incoming,dataset,{preview,resolutions,reason,o
 }
 function assessAdmission(record){
  const stages=['SOURCE_OBSERVED','BYTE_VERIFIED','CONTENT_EXTRACTED','OFFICIAL_REVISION_CONFIRMED','ADMISSION_PENDING_REVIEW','ADMITTED'];
- const blockers=[];
+ const blockers=['OFFICIAL_REVIEW_AUTHORITY_NOT_CONFIGURED'];
  if(!record||!record.sourceUrl?.startsWith('https://www.snowymonaro.nsw.gov.au/')||!checkTime(record.retrievedAt)||record.httpStatus!==200||record?.stages?.SOURCE_OBSERVED!=='PASS')blockers.push('SOURCE_NOT_VERIFIED');
  if(!hash.test(record?.rawDigest)||!Number.isInteger(record?.byteLength)||record.byteLength<1||record?.stages?.BYTE_VERIFIED!=='PASS')blockers.push('BYTES_NOT_VERIFIED');
  if(!record?.extraction?.text||record?.extraction?.digest!=='sha256:'+m.sha256(new TextEncoder().encode(record.extraction.text))||record?.stages?.CONTENT_EXTRACTED!=='PASS'||!Number.isInteger(record?.anchor?.page)||record.anchor.page<1)blockers.push('EXTRACTION_NOT_VERIFIED');

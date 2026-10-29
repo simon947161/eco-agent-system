@@ -1,0 +1,144 @@
+{
+  "format": "atlas-v1.6-acceptance-1",
+  "generatedAt": "2026-10-29T12:27:08.764594+00:00",
+  "baselineRemote": "c0683cf504333d97fc593660fd18f4b3fa006af5",
+  "testedWorktreeParent": "89fcb037091f44666cbd01ed554abbbafa98e727",
+  "commitIdentity": "Commit containing this report; resolve git HEAD / remote branch and compare tested-source-manifest.json. A tracked file cannot include its own commit hash.",
+  "branch": "feature/public-strategy-atlas-web-mvp-20261029",
+  "draftPr": 130,
+  "fullAcceptance": false,
+  "verdicts": {
+    "SOFTWARE_CAPABILITY": "PARTIAL",
+    "PUBLIC_CORPUS_COVERAGE": "PARTIAL_BLOCKED_BY_PERMISSION",
+    "OFFICIAL_ADMISSION": "PENDING"
+  },
+  "native": {
+    "status": "PASS_TESTED_HERE",
+    "testFiles": 15,
+    "failed": 0,
+    "skipped": 0,
+    "coverage": {
+      "linesPercent": 98.35,
+      "branchesPercent": 83.18,
+      "functionsPercent": 97.3
+    },
+    "coverageScope": "Loaded atlas-*.js engine modules in Node; atlas.js browser renderer is excluded. Line/branch coverage is not semantic/corpus completeness.",
+    "evidence": "system/coverage-e10.txt"
+  },
+  "browser": {
+    "status": "PASS_TESTED_HERE",
+    "runners": 6,
+    "viewports": [
+      "1440x900",
+      "390x844",
+      "1920x1080",
+      "2560x1080",
+      "3840x1080"
+    ],
+    "densities": [
+      15,
+      60,
+      200,
+      1000,
+      10000
+    ],
+    "deepNativeLevels": 5000,
+    "deepBrowserLevels": 1000,
+    "runtime": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+    "evidence": "system/browser-e10.json",
+    "limits": "Viewport emulation and Chromium accessibility tree are not physical hardware, cross-browser or professional screen-reader certification."
+  },
+  "preservedBaseDigest": "sha256:13e765c81f1340918322b1e985da85f2362da3c72e1997804f952865edf365d2",
+  "defaultMigratedDigest": "sha256:6236a12009115cd338e1f1c0db75906b4dbf4139d85bed84397c471e40a872fc",
+  "coverage": {
+    "requirements": 15,
+    "families": 14,
+    "knownConcreteDocuments": 2,
+    "completeInventoryDenominator": "UNKNOWN",
+    "freshRetrieved": 0,
+    "freshExtracted": 0,
+    "versionConfirmed": 0,
+    "admittedDocuments": 0,
+    "admittedRelationships": 0,
+    "eligibleOfficialRelationshipDenominator": "UNKNOWN",
+    "actualOutcomeKpi": "UNKNOWN",
+    "historicalCsp61Receipt": "PRESERVED; prior bytes/excerpt checked then, not freshly retrieved in this executor"
+  },
+  "definitionOfDone": [
+    {
+      "criterion": "A",
+      "status": "PARTIAL",
+      "basis": "Every station has a dossier/gaps; arbitrary-depth content and 3 bounded verticals work. Real source/work decomposition remains blocked."
+    },
+    {
+      "criterion": "B",
+      "status": "PARTIAL",
+      "basis": "15 source requirements / 14 families / 2 concrete CSP URLs. Inventory completeness UNKNOWN; no newly retrieved/version-confirmed/admitted documents."
+    },
+    {
+      "criterion": "C",
+      "status": "PARTIAL",
+      "basis": "Forward/reverse WBS/dependencies work as research. No formal source-admitted CSP/DP/OP relationship; official admission blocked."
+    },
+    {
+      "criterion": "D",
+      "status": "PARTIAL",
+      "basis": "Water/land/finance/results formulas and observed carbon marker work; real spending/results and authorised denominator/factors remain unavailable."
+    },
+    {
+      "criterion": "E",
+      "status": "PASS",
+      "basis": "Bounded offline integrity, revisions/events/roots, corruption rejection, snapshots and three-way local archives verified. No signature/witness claimed."
+    },
+    {
+      "criterion": "F",
+      "status": "PASS",
+      "basis": "Bounded explainable candidates, falsifiers/counterevidence/negative outcomes and local reviews verified; official known links remain UNKNOWN."
+    },
+    {
+      "criterion": "G",
+      "status": "PARTIAL",
+      "basis": "Route-first desktop/mobile/16:9/21:9/32:9 and synthetic capacities verified. Physical devices/full WCAG/screen-reader/cross-browser certification not tested."
+    },
+    {
+      "criterion": "H",
+      "status": "PARTIAL",
+      "basis": "15 native files and 6 actual browser suites passed; original PDF bytes remain NOT_TESTED because source access is blocked."
+    },
+    {
+      "criterion": "I",
+      "status": "PARTIAL",
+      "basis": "Successive checkpoints pushed to existing Draft PR130; final checkpoint/readback is performed after report generation. No deployment/merge."
+    }
+  ],
+  "externalBlockers": [
+    {
+      "id": "OFFICIAL_HOST_ACCESS",
+      "status": "BLOCKED_BY_PERMISSION",
+      "ownerType": "ENVIRONMENT_ADMIN",
+      "evidence": "system/source-access.json",
+      "nextAction": "Review/save official-host additions in environment settings; publish the environment configuration if required, then retry exact public URLs."
+    },
+    {
+      "id": "SOURCE_REUSE_CURRENT_SCOPE_REVIEW",
+      "status": "PENDING",
+      "ownerType": "SOURCE_RESEARCHER_AND_AUTHORISED_REVIEWER",
+      "nextAction": "Independently verify current adopted documents, reuse basis, exact anchors/effective geography and authorised review. Never replace unknowns with generated Council facts."
+    }
+  ],
+  "notTested": [
+    "Fresh original PDF byte verification",
+    "Professional screen-reader/WCAG certification",
+    "Physical touch hardware",
+    "Safari/Firefox",
+    "Official legal applicability/real Council financial or environmental outcomes",
+    "Independent signatures/witnesses"
+  ],
+  "governance": {
+    "deployment": false,
+    "merge": false,
+    "mainOrPr129Changes": false,
+    "paidInfrastructure": false,
+    "nonpublicCouncilDataAdded": false
+  }
+}

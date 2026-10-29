@@ -7,7 +7,7 @@ def tool(page,id):
  page.locator('#'+id).click()
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
- for width,height in [(1440,900),(390,844),(2560,1080),(3840,1080)]:
+ for width,height in [(1440,900),(390,844),(1920,1080),(2560,1080),(3840,1080)]:
   ctx=b.new_context(viewport={'width':width,'height':height},reduced_motion='reduce',accept_downloads=True)
   page=ctx.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
   page.goto('http://127.0.0.1:8877/');expect(page.locator('#contentCount')).to_have_text('127')
@@ -19,6 +19,10 @@ with sync_playwright() as p:
   page.locator('.mini-map>summary').click();expect(page.locator('#miniProjection')).to_be_visible()
   old=page.locator('#miniViewport').get_attribute('x');page.locator('[data-pan=end]').click();page.wait_for_function('document.querySelector("#miniViewport").getAttribute("x")!=='+repr(old)) if width==390 else None
   page.locator('[data-pan=start]').click();page.locator('.mini-map>summary').click()
+  if page.locator('#toolsMenu').get_attribute('open') is None:page.locator('#toolsMenu>summary').click()
+  page.locator('[data-mode=coverage]').click();expect(page.locator('#modeExplanation')).to_contain_text('SYNTHETIC DEMO');assert page.locator('.atlas-edge.colour').count()>0
+  page.locator('[data-mode=kpi]').click();expect(page.locator('#modeExplanation')).to_contain_text('UNKNOWN');assert page.locator('.atlas-edge.colour').count()==0
+  page.locator('[data-mode=routes]').click();page.locator('#toolsMenu>summary').click()
   page.locator('#search').fill('29.9 t CO2e/person');page.locator('#searchResults button').first.click();expect(page.locator('#details')).to_contain_text('PUBLIC_TEXT_OBSERVED')
   assert page.locator('#reviseScenarioValue').count()==0
   tool(page,'searchToolsBtn');page.locator('#recordKind').fill('WorkPackage');page.locator('#searchRecords').click()

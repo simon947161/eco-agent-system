@@ -8,6 +8,19 @@ with sync_playwright() as p:
  for width,height in [(1440,900),(390,844)]:
   context=b.new_context(viewport={'width':width,'height':height},reduced_motion='reduce',accept_downloads=True)
   page=context.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+  for count in [60,200]:
+   page.goto(f'http://127.0.0.1:8877/?fixture={count}')
+   expect(page.locator('#contentCount')).to_have_text(str(count+127))
+   assert page.locator('[data-node-id]').count()<=4
+   page.locator('[data-node-id="density:0"]').focus();page.keyboard.press('Enter')
+   page.locator('#toolsMenu>summary').click();page.locator('#collapseNode').click()
+   assert page.locator('[data-node-id]').count()==1
+   page.locator('#expandNode').click();assert page.locator('[data-node-id]').count()==4
+   page.locator('#toolsMenu>summary').click()
+   page.locator('#search').fill(f'Demo item {count-1}');page.locator('#searchResults button').first.click()
+   expect(page.locator('#details h3').first).to_have_text(f'Demo item {count-1}')
+   assert page.locator('[data-node-id]').count()<=200
+  print(f'PASS: {width}x{height} 60/200 progressive fixtures and last-item search',flush=True)
   page.goto('http://127.0.0.1:8877/?fixture=1000&shape=chain')
   expect(page.locator('#contentCount')).to_have_text('1127')
   assert page.locator('[data-node-id]').count()<=200

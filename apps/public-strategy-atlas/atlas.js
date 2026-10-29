@@ -207,6 +207,7 @@ $('fitScope').addEventListener('click',()=>{const width=graph.viewBox.baseVal.wi
 $('contentView').addEventListener('click',()=>openContent(state.selected?rootContent(state.selected).id:state.contentRoot));
 $('incremental').addEventListener('change',e=>{state.incremental=e.target.checked;render();});
 $('expandNode').addEventListener('click',()=>{const id=state.view==='content'?state.contentSelected:state.selected;if(!id){$('expansionStatus').textContent='Select a node to expand.';return;}state.incremental=true;$('incremental').checked=true;(state.view==='content'?state.contentExpanded:state.expanded).add(id);render();});
+$('collapseNode').addEventListener('click',()=>{const id=state.view==='content'?state.contentSelected:state.selected;if(!id){$('expansionStatus').textContent='Select a station to collapse.';return;}state.incremental=true;$('incremental').checked=true;(state.view==='content'?state.contentExpanded:state.expanded).delete(id);render();});
 $('resetExpansion').addEventListener('click',()=>{state.expanded=new Set(['csp','lsps']);state.contentExpanded=new Set([state.contentRoot]);state.selected=null;state.contentSelected=null;request++;details.innerHTML=empty;render();});
 document.querySelectorAll('[data-root]').forEach(b=>b.addEventListener('click',()=>{state.root=b.dataset.root;state.view='relationships';state.followId=null;state.selected=null;$('inspector').hidden=true;request++;details.innerHTML=empty;document.querySelectorAll('[data-root]').forEach(other=>{other.classList.toggle('selected',other===b);other.setAttribute('aria-pressed',other===b);});render();}));
 document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{state.mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(other=>other.setAttribute('aria-pressed',other===b));render();}));
@@ -218,12 +219,14 @@ $('search').addEventListener('input',e=>{
  if(!result.total)out.append(document.createTextNode(' No matching registered content; unregistered sources remain UNKNOWN.'));
 });
 function intakePanel(){
+ if(!d.domain.sourceCatalogue){panel('<h3>Source register not included in this snapshot</h3><p>UNKNOWN. This older snapshot is retained unchanged; no current corpus or admission state can be inferred. Export before importing a newer same-base snapshot.</p>');return;}
  const catalogue=d.domain.sourceCatalogue,coverage=AtlasIntake.coverage(catalogue),gaps=AtlasIntake.sourceGaps(catalogue);
  panel('<h3>Coverage & source gaps</h3><p>Inventory completeness UNKNOWN. Required families are a research checklist, not proof of a complete Council document inventory.</p><dl>'+Object.entries(coverage).filter(([k,v])=>typeof v!=='object').map(([k,v])=>'<div class="accounting-pair"><dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd></div>').join('')+'</dl><button id="exportCatalogue">Export verifiable catalogue</button><h4>Source gap queue</h4>'+gaps.map(g=>'<div class="warn"><button data-source-record="'+esc(g.sourceId)+'">'+esc(g.title)+'</button><p>'+esc(g.family+' · '+g.stage+' → '+g.nextStage)+'</p><p>'+esc(g.access.state+' · '+g.ownerType)+'</p><p>'+esc(g.nextAction)+'</p></div>').join(''));
  $('exportCatalogue').addEventListener('click',()=>downloadJSON('atlas-source-catalogue.json',catalogue));
  details.querySelectorAll('[data-source-record]').forEach(b=>b.addEventListener('click',()=>intakeSource(b.dataset.sourceRecord)));
 }
 function intakeSource(id){
+ if(!d.domain.sourceCatalogue){intakePanel();return;}
  const c=d.domain.sourceCatalogue,s=c.sources.find(s=>s.id===id),records=AtlasIntake.contentRecords(c,id);
  panel('<h3>'+esc(s.title)+'</h3><p>'+esc(AtlasIntake.replay(c).get(id).stage)+' · rights '+esc(s.rights.status)+'</p><p>'+esc(s.revisionId)+'</p>'+sourceLink(s.officialUrl||s.directoryUrl)+'<p>Current version / effective scope: UNKNOWN. Source availability alone does not grant reuse.</p><p>'+esc(s.access.state+' · '+s.access.checkedAt+' · '+s.access.reason)+'</p>'+records.map(r=>'<div class="warn"><h4>'+esc(r.title)+'</h4><p>'+esc(r.text)+'</p><p>'+esc(r.textKind+' · '+r.status+' · '+r.locator)+'</p></div>').join('')+(records.length?'':'<p>No source content retrieved. Required sections and anchors remain UNKNOWN.</p>'));
  $('contextActions').replaceChildren(button('Related route station',()=>inspectNode(s.stationId)),button('Coverage & gaps',intakePanel));
