@@ -1,3 +1,13 @@
+# Active V1.6 checkpoint — E4 work/dependency graph delivered
+
+Previous verified remote `be79eb77c4516060822375b040aaf58d1ed61156` (E3). Read latest remote HEAD before continuation.
+
+E4 adds AtlasExecution bounded forward/reverse/both traversal, research-only WBS and dependency order/cycle detection on the unified AtlasModel registry. Synthetic water/land program→project→work→activity→task→deliverable/resource/finance links reuse existing records. Dossier/work panels and linked entity traversal work at desktop/mobile. Ten native suites + actual Chromium system checks PASS; evidence qa/E4_WORK_RESULTS.md, qa/system/native-e4.json and work screenshots. Official KNOWN_LINK stays UNKNOWN; actual responsibilities, schedules and outputs are not fabricated.
+
+Next exact step E5: extend atlas-execution.js with reproducible three-ledger derivation receipts (input revision IDs/anchors, invalidation, unit/period/boundary/financial class/allocation guards), test with ledger.test.cjs, integrate calculator/receipt UI. Then E6 applicability, E7 conflict reconciliation, E8 discovery and E9/E10 acceptance. Source access remains BLOCKED_BY_PERMISSION; user must save official-host domain additions in environment settings before real source retrieval can resume. PR #130 stays Draft; no deployment/merge.
+
+--- Previous checkpoint ---
+
 # Active V1.6 checkpoint — E3 scalable content delivered, full system incomplete
 
 Previous remote checkpoint `5dc26c4f515df125192d329b5d055f1a4ea51379` (E2). Read latest remote HEAD before resuming; this file is in its checkpoint commit.

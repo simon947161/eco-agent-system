@@ -56,6 +56,20 @@ async function addRevision(domain,record,m,{parentRevision=null,reason='Migrate 
  domain.revisions.push(revision);domain.events=await m.appendEvent(domain.events,{id:'domain-event-'+domain.events.length,type,objectId:revision.id,actor:'local-researcher',reason,observedAt});
  return {...record,revisionId:revision.id};
 }
+async function addWorkBreakdowns(d,m){
+ const x=d.domain;
+ for(const stationId of ['water','area']){
+  const seed=x.entities.find(e=>e.stationId===stationId),work=x.entities.find(e=>e.stationId===stationId&&e.kind==='WorkPackage');
+  const {id:unused,revisionId:unusedRevision,kind:unusedKind,label:unusedLabel,data:unusedData,...common}=seed;
+  const definitions=[['program','Program','Synthetic service research program'],['project','Project','Synthetic evidence and delivery proposal'],['activity','Activity','Synthetic scoped work preparation'],['review','Task','Synthetic prerequisite source and safety review'],['task','Task','Synthetic activity execution proposal'],['deliverable','Deliverable','Synthetic work record and evidence bundle'],['role','Role','Synthetic reviewer role; not Council responsibility'],['asset','Asset','Synthetic service-area resource; no real asset identified']];
+  for(const [suffix,kind,label] of definitions)x.entities.push(await addRevision(x,{...common,id:'wbs:'+stationId+':'+suffix,kind,label,data:{status:'SYNTHETIC',executionStatus:'PROPOSED',responsibility:'SYNTHETIC_ROLE_NOT_COUNCIL_ASSIGNMENT',quantity:'UNKNOWN',schedule:'UNKNOWN',approvalGate:'RESEARCH_REVIEW_PENDING'}},m));
+  const entity=id=>x.entities.find(e=>e.id===id)||d.nodes.find(e=>e.id===id);
+  const program='wbs:'+stationId+':program',project='wbs:'+stationId+':project',activity='wbs:'+stationId+':activity',review='wbs:'+stationId+':review',task='wbs:'+stationId+':task',deliverable='wbs:'+stationId+':deliverable';
+  const links=[[stationId,program,'HAS_ACTIVITY'],[program,project,'HAS_ACTIVITY'],[project,work.id,'HAS_ACTIVITY'],[work.id,activity,'HAS_ACTIVITY'],[activity,task,'HAS_ACTIVITY'],[activity,review,'HAS_ACTIVITY'],[task,review,'HAS_DEPENDENCY'],[task,deliverable,'REPORTS_OUTPUT'],[task,'wbs:'+stationId+':role','RESOURCED_BY'],[task,'wbs:'+stationId+':asset','RESOURCED_BY']];
+  for(const record of x.entities.filter(e=>e.stationId===stationId&&['ResourceAccount','FinancialEntry','QuantifiedObservation','Output'].includes(e.kind)))links.push([work.id,record.id,record.kind==='FinancialEntry'?'FUNDED_BY':record.kind==='ResourceAccount'?'RESOURCED_BY':record.kind==='Output'?'REPORTS_OUTPUT':'MEASURED_BY']);
+  for(const [from,to,predicate] of links){const a=entity(from),b=entity(to);x.assertions.push(await addRevision(x,{...common,id:'wbs-link:'+from+':'+predicate+':'+to,from,to,fromRevisionId:a.versionId||a.revisionId,toRevisionId:b.versionId||b.revisionId,predicate,method:'synthetic-work-breakdown-1',issuer:'local-researcher',reviewer:null,evidenceRefs:[],counterevidenceRefs:common.gaps.map(reason=>({reason}))},m));}
+ }
+}
 async function migrateDataset(base,cases,m,catalogue=null){
  if(base.domain){if(!await verify(base,m))throw Error('INVALID_DOMAIN');return structuredClone(base);}
  if(m.validate(base).length)throw Error('INVALID_BASE');
@@ -73,6 +87,7 @@ async function migrateDataset(base,cases,m,catalogue=null){
    x.assertions.push(await addRevision(x,link,m));
   }
  }
+ await addWorkBreakdowns(d,m);
  if(catalogue)x.sourceCatalogue=structuredClone(catalogue);
  if(!await verify(d,m))throw Error('MIGRATION_FAILED');return d;
 }
