@@ -1,3 +1,13 @@
+# Active V1.6 checkpoint — E5 reproducible ledger receipts delivered
+
+Previous verified remote `5728b699cc78ea5d0962dd8ccf427f2acb9b60f7` (E4). Read current remote HEAD before resuming.
+
+E5 adds three-ledger derive/verify APIs, synthetic scenario revision support, typed financial/physical/results formulas, allocation guards, source/revision-bound AuditReceipt entities and input relationships. Input changes retain history but invalidate current derived results. Eleven native suites and actual desktop/mobile ledger UI/download verification PASS. See qa/E5_LEDGER_RESULTS.md, qa/system/native-e5.json and ledger screenshots. Observed carbon remains 29.9 t CO2e/person, PENDING; public extrapolation is rejected. No real Council budget, expenditure or achieved KPI.
+
+Next exact step E6: implement AtlasExecution.applicability/timeRange/scopeIndex/asOf; add wrong-region/expired/draft/legal-effect/source-revision tests and a visible rejected planning candidate, with station where/when forms. Continue E7 merge reconciliation, E8 discovery, E9 product integration and E10 acceptance. Full real sources still blocked by proxy; required domains saved to draft need settings save to apply. PR #130 remains Draft; no deploy/merge/main/PR129 writes.
+
+--- Previous checkpoint ---
+
 # Active V1.6 checkpoint — E4 work/dependency graph delivered
 
 Previous verified remote `be79eb77c4516060822375b040aaf58d1ed61156` (E3). Read latest remote HEAD before continuation.

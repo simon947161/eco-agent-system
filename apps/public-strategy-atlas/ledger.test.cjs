@@ -1,0 +1,25 @@
+const assert=require('node:assert/strict'),M=require('./atlas-model.js'),E=require('./atlas-execution.js'),D=require('./atlas-data.js'),A=require('./atlas-accounting.js');
+(async()=>{
+ const d=await M.migrateDataset(D,A.cases),cost={formula:'COST_PER_OUTPUT',inputIds:['synthetic-water-spend','synthetic-water-output']};
+ const receipt=await E.derive(d,cost);assert.equal(receipt.result.value,2000);assert.equal(receipt.result.unit,'AUD/ML');assert.equal((await E.verifyDerivation(d,receipt)).current,true);
+ const recorded=await M.appendCalculation(d,receipt);assert(recorded.domain.entities.some(e=>e.id===receipt.digest));assert(await M.verifySnapshot(await M.exportSnapshot(recorded)));assert.equal(M.queryRelationships(recorded,receipt.digest).length,2);
+ const old=M.domainIndex(recorded).get('synthetic-water-spend');
+ const changed=await M.commitDomainRevision(recorded,{id:old.id,expectedRevisionId:old.revisionId,patch:{data:{...old.data,value:12000}},reason:'Change synthetic cost input'});
+ assert.equal((await E.verifyDerivation(changed,receipt)).status,'INVALIDATED_INPUT_REVISION');assert(await M.verifySnapshot(await M.exportSnapshot(changed)));assert.equal((await E.derive(changed,cost)).result.value,1000);
+ const variance=await E.derive(d,{formula:'BUDGET_VARIANCE',inputIds:['synthetic-water-budget','synthetic-water-spend']});assert.equal(variance.result.value,-6000);
+ assert.equal((await E.derive(d,{formula:'UNIT_CONVERSION',inputIds:['synthetic-land-area'],outputUnit:'km2'})).result.value,.5);
+ for(const request of [{formula:'UNIT_CONVERSION',inputIds:['synthetic-water-output'],outputUnit:'ML/day'},{formula:'PER_CAPITA_TOTAL',inputIds:['csp2035-carbon-per-capita-baseline','synthetic-land-area']},{formula:'COST_PER_OUTPUT',inputIds:['synthetic-water-budget','synthetic-water-output']},{formula:'ALLOCATED_SUM',inputIds:['synthetic-water-spend','synthetic-water-spend'],allocations:[]}])await assert.rejects(()=>E.derive(d,request));
+ const allocations=[{inputId:'synthetic-water-spend',goalId:'g1',share:.6},{inputId:'synthetic-water-spend',goalId:'g2',share:.4}];
+ assert.equal((await E.derive(d,{formula:'ALLOCATED_SUM',inputIds:['synthetic-water-spend'],allocations,goalId:'g1'})).result.value,14400);
+ await assert.rejects(()=>E.derive(d,{formula:'ALLOCATED_SUM',inputIds:['synthetic-water-spend'],allocations:allocations.map(s=>({...s,share:1})),goalId:'g1'}),/DOUBLE_COUNT/);
+ for(const [field,value] of [['period','FY2025-26'],['area','WRONG_REGION'],['boundary','COUNCIL_OPERATIONS'],['value',0]]){
+  const o=M.domainIndex(d).get('synthetic-water-output'),bad=await M.commitDomainRevision(d,{id:o.id,expectedRevisionId:o.revisionId,patch:{data:{...o.data,[field]:value}},reason:'Adversarial synthetic input'});await assert.rejects(()=>E.derive(bad,cost));
+ }
+ let scenario=d;const common={unit:'ha',period:{from:'2026-01-01',to:'2026-12-31'},area:'SYNTHETIC_PLACE',boundary:'DEMO_LAND_SCOPE',method:'fixture-1',status:'SYNTHETIC'};
+ for(const [id,value,role] of [['baseline',100,'baseline'],['target',50,'target'],['actual',75,'actual']])scenario=await M.registerScenario(scenario,{id:'result:'+id,kind:'QuantifiedObservation',label:'Synthetic '+id,stationId:'area',data:{...common,id:'result:'+id,value,[role]:true},reason:'Synthetic outcome formula QA'});
+ const result=await E.derive(scenario,{formula:'RESULT_COMPARISON',inputIds:['result:baseline','result:target','result:actual']});assert.equal(result.result.value,.5);assert.equal(result.result.causalAttribution,'UNKNOWN');assert.equal(result.result.ledger,'RESULTS_EVIDENCE');
+ scenario=await M.registerScenario(scenario,{id:'duration-volume',kind:'QuantifiedObservation',label:'Synthetic 12-day flow',stationId:'water',data:{...common,id:'duration-volume',unit:'ML',value:12,period:{from:'2026-07-01',to:'2026-07-12'}},reason:'Duration QA'});assert.equal((await E.derive(scenario,{formula:'UNIT_CONVERSION',inputIds:['duration-volume'],outputUnit:'ML/day',durationDays:12})).result.value,1);
+ await assert.rejects(()=>E.derive(scenario,{formula:'UNIT_CONVERSION',inputIds:['duration-volume'],outputUnit:'ML/day',durationDays:10}),/DURATION_MISMATCH/);
+ const forged=structuredClone(receipt);forged.result.value=999;assert.equal((await E.verifyDerivation(d,forged)).integrity,false);
+ console.log('PASS: three-ledger typed formulas, cost/variance/conversion/allocation, pinned provenance, immutable receipt snapshots, changed-input invalidation, stale historical verification and unit/scope/year/zero/official/double-count rejection');
+})().catch(e=>{console.error(e);process.exitCode=1});

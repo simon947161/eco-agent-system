@@ -47,6 +47,7 @@ async function verify(d,m){
    const r=x.revisions[i],{id,...payload}=r;
    if(await m.objectDigest(payload)!==id||r.parentRevision!==null&&!seen.has(r.parentRevision)||x.events[i].objectId!==id)return false;seen.add(id);
   }
+  for(const e of x.entities.filter(e=>e.kind==='AuditReceipt')){const execution=typeof module!=='undefined'?require('./atlas-execution.js'):root.AtlasExecution;if(!execution||!(await execution.verifyDerivation(d,e.data.receipt)).integrity)return false;}
   for(const record of [...x.entities,...x.assertions]){const rev=x.revisions.find(r=>r.id===record.revisionId),{revisionId,...payload}=record;if(!rev||m.canonical(rev.record)!==m.canonical(payload))return false;}
   return true;
  }catch{return false;}
@@ -63,6 +64,7 @@ async function addWorkBreakdowns(d,m){
   const {id:unused,revisionId:unusedRevision,kind:unusedKind,label:unusedLabel,data:unusedData,...common}=seed;
   const definitions=[['program','Program','Synthetic service research program'],['project','Project','Synthetic evidence and delivery proposal'],['activity','Activity','Synthetic scoped work preparation'],['review','Task','Synthetic prerequisite source and safety review'],['task','Task','Synthetic activity execution proposal'],['deliverable','Deliverable','Synthetic work record and evidence bundle'],['role','Role','Synthetic reviewer role; not Council responsibility'],['asset','Asset','Synthetic service-area resource; no real asset identified']];
   for(const [suffix,kind,label] of definitions)x.entities.push(await addRevision(x,{...common,id:'wbs:'+stationId+':'+suffix,kind,label,data:{status:'SYNTHETIC',executionStatus:'PROPOSED',responsibility:'SYNTHETIC_ROLE_NOT_COUNCIL_ASSIGNMENT',quantity:'UNKNOWN',schedule:'UNKNOWN',approvalGate:'RESEARCH_REVIEW_PENDING'}},m));
+  if(stationId==='water'){const spend=x.entities.find(e=>e.stationId===stationId&&e.kind==='FinancialEntry');x.entities.push(await addRevision(x,{...common,id:'synthetic-water-budget',kind:'FinancialEntry',label:'Synthetic approved budget; not Council funds',data:{...spend.data,id:'synthetic-water-budget',type:'APPROVED_BUDGET',value:30000}},m));}
   const entity=id=>x.entities.find(e=>e.id===id)||d.nodes.find(e=>e.id===id);
   const program='wbs:'+stationId+':program',project='wbs:'+stationId+':project',activity='wbs:'+stationId+':activity',review='wbs:'+stationId+':review',task='wbs:'+stationId+':task',deliverable='wbs:'+stationId+':deliverable';
   const links=[[stationId,program,'HAS_ACTIVITY'],[program,project,'HAS_ACTIVITY'],[project,work.id,'HAS_ACTIVITY'],[work.id,activity,'HAS_ACTIVITY'],[activity,task,'HAS_ACTIVITY'],[activity,review,'HAS_ACTIVITY'],[task,review,'HAS_DEPENDENCY'],[task,deliverable,'REPORTS_OUTPUT'],[task,'wbs:'+stationId+':role','RESOURCED_BY'],[task,'wbs:'+stationId+':asset','RESOURCED_BY']];
@@ -77,7 +79,7 @@ async function migrateDataset(base,cases,m,catalogue=null){
  for(const c of cases){
   const cls=c.metric.status==='SYNTHETIC'?'SYNTHETIC_SCENARIO':'PUBLIC_TEXT_OBSERVED';
   const common={stationId:c.entryNodeId,state:cls==='PUBLIC_TEXT_OBSERVED'?'SOURCE_OBSERVED':'PROPOSED',classification:cls,admission:cls==='PUBLIC_TEXT_OBSERVED'?'PENDING':'NOT_APPLICABLE',provenance:c.metric.source||null,scope:{region:c.metric.area,period:c.metric.period,boundary:c.metric.boundary},gaps:c.uncertainties};
-  const records=[{id:c.metric.id,kind:'QuantifiedObservation',label:c.metric.label,data:c.metric},...c.resources.map(r=>({id:r.id,kind:'ResourceAccount',label:r.id,data:r})),...c.funding.map(r=>({id:r.id,kind:'FinancialEntry',label:r.id,data:r}))];
+  const records=[{id:c.metric.id,kind:'QuantifiedObservation',label:c.metric.label,data:c.metric},...c.resources.map(r=>({id:r.id,kind:'ResourceAccount',label:r.id,data:r})),...c.funding.map(r=>({id:r.id,kind:'FinancialEntry',label:r.id,data:{...r,currencyBasis:'NOMINAL_AUD_'+r.period,costClass:'OPEX',lineId:'SYNTHETIC_WATER_SERVICE'}}))];
   if(c.work.id)records.push({id:c.work.id,kind:'WorkPackage',label:c.work.description,data:c.work});
   for(const [i,o] of c.outputs.entries())records.push({id:c.id+':output:'+i,kind:'Output',label:o.description,data:o});
   for(const record of records){
@@ -96,12 +98,27 @@ async function commitRevision(d,m,{id,expectedRevisionId,patch,reason,observedAt
  const current=d.domain.entities.find(e=>e.id===id);if(!current)throw Error('DOMAIN_TARGET');
  if(current.revisionId!==expectedRevisionId)throw Error('DOMAIN_CONFLICT');
  if(!reason||typeof reason!=='string')throw Error('REASON_REQUIRED');
- if(!patch||Object.keys(patch).some(k=>!['label','localNote','state'].includes(k))||patch.state&&!STATES.has(patch.state)||Object.values(patch).some(v=>typeof v!=='string'))throw Error('LOCAL_RESEARCH_FIELDS_ONLY');
+ if(!patch||Object.keys(patch).some(k=>!['label','localNote','state','data'].includes(k))||patch.data&&current.classification!=='SYNTHETIC_SCENARIO'||patch.state&&!STATES.has(patch.state)||Object.entries(patch).some(([key,v])=>key==='data'?(!v||Object.getPrototypeOf(v)!==Object.prototype):typeof v!=='string'))throw Error('LOCAL_RESEARCH_FIELDS_ONLY');
  const result=structuredClone(d),{revisionId,...old}=current;
  const next=await addRevision(result.domain,{...old,...patch},m,{parentRevision:revisionId,reason,observedAt,type:patch.state==='CONTESTED'?'CONTEST':'REVIEW'});
  result.domain.entities=result.domain.entities.map(e=>e.id===id?next:e);
  if(!await verify(result,m))throw Error('INVALID_REVISION');return result;
 }
+async function registerScenario(d,m,{id,kind,label,stationId,data,scope,reason}){
+ if(!await verify(d,m)||index(d).has(id)||!TYPES.has(kind)||!d.nodes.some(n=>n.id===stationId)||!label||!reason||data?.status!=='SYNTHETIC')throw Error('SYNTHETIC_SCENARIO_REQUIRED');
+ const result=structuredClone(d);result.domain.entities.push(await addRevision(result.domain,{id,kind,label,stationId,data,scope:scope||{region:data.area||'UNKNOWN',period:data.period||'UNKNOWN',boundary:data.boundary||'UNKNOWN'},state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,gaps:['User-authored synthetic scenario; not Council facts or official performance.']},m,{reason}));
+ if(!await verify(result,m))throw Error('INVALID_SCENARIO');return result;
+}
+async function appendCalculation(d,m,receipt){
+ const execution=typeof module!=='undefined'?require('./atlas-execution.js'):root.AtlasExecution;
+ if(!await verify(d,m)||!(await execution.verifyDerivation(d,receipt)).current)throw Error('DERIVATION_NOT_CURRENT');
+ if(d.domain.entities.some(e=>e.id===receipt.digest))return structuredClone(d);
+ const first=index(d).get(receipt.inputs[0].id),result=structuredClone(d);
+ result.domain.entities.push(await addRevision(result.domain,{id:receipt.digest,kind:'AuditReceipt',stationId:first.stationId,label:receipt.request.formula+' — '+receipt.result.value+' '+receipt.result.unit,state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,scope:first.scope,gaps:first.gaps,data:{status:'SYNTHETIC',receipt}},m,{reason:'Record reproducible synthetic calculation'}));
+ const calculation=result.domain.entities.find(e=>e.id===receipt.digest);
+ for(const input of receipt.inputs)result.domain.assertions.push(await addRevision(result.domain,{id:receipt.digest+':input:'+input.id,stationId:first.stationId,state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,scope:first.scope,gaps:first.gaps,from:calculation.id,to:input.id,fromRevisionId:calculation.revisionId,toRevisionId:input.revisionId,predicate:'EVIDENCED_BY',method:receipt.methodVersion,evidenceRefs:[],counterevidenceRefs:[],issuer:'local-researcher',reviewer:null},m,{reason:'Pin calculation input revision'}));
+ return result;
+}
 function forStation(d,id){return {stationId:id,entities:(d.domain?.entities||[]).filter(e=>e.stationId===id),assertions:(d.domain?.assertions||[]).filter(e=>e.stationId===id),trust:'SELF_ATTESTED',signature:'RECEIPT_NOT_PRESENT',witness:'EXTERNAL_WITNESS_UNKNOWN'};}
-root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
+root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,registerScenario,appendCalculation,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
 })(typeof window!=='undefined'?window:globalThis);
