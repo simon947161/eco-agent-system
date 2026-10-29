@@ -6,6 +6,14 @@ Repository: simon947161/eco-agent-system.
 Only remote engineering branch: feature/public-strategy-atlas-web-mvp-20261029.
 Draft PR130: no merge. Read its latest engineering continuation comment too.
 
+## Founder V1.5 — quantified goal-to-work logic takes priority over additional visual polish
+
+**Founder direction (2026-10-29):** The routes must encode the *real reasoning and work* beneath CSP and LSPS: each goal's decomposed work packages, spatial applicability, physical work volumes, staffing/resources, financing/budget vs actual spend, measurable outputs, regional environmental/economic outcomes, published evidence and review state. A pretty graph without supported accounting logic is insufficient. The new **[V1.5 Strategy-to-Work & Accounting Directive](../../docs/research/public-strategy-atlas/FOUNDER_V1_5_STRATEGY_TO_QUANTIFIED_WORK_AND_ACCOUNTING_20261029.md)** becomes highest priority for domain modelling and first official/unknown evidence pathways. V1.4 route-first remains the required presentation: **real data and work semantics before decoration, then render those semantics as routes and drill-downs**.
+
+**Crucial verified correction:** CSP 2035 p.30 reports `CO2e emissions per capita = 29.9 tonnes`, sourced to `Snapshot Climate — Australian Emissions Profiles 2021–22`, desired trend `Decrease`. It means **29.9 t CO2e/person**, NOT `AUD 29.9/t`, a carbon credit price, an annual Council-operational emission rate, or a measured carbon saving. Source: `https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/smrc-csp-2035-endorsed-20250501.pdf`. Preserve time/region/denominator/boundary and admission status; no formal new mapping is automatically granted.
+
+**Next engineering action, in order:** (1) recheck remote PR HEAD; (2) bounded source-to-work/physical/financial crosswalk for environment-carbon, water/wastewater, land-use/economy; (3) implement dimensionally validated work/metric/resource/financial/review objects in **existing** Atlas model, with one real `PUBLIC_TEXT_OBSERVED` anchor and explicit UNKNOWNs; (4) add route-first station/edge breakdown and accounting inspector; (5) test/capture browser QA, save actual findings and push. Avoid a research-only report or a second graph. Current V1.4 preview and earlier code are not invalidated.
+
 ## Founder V1.4 route-first correction — highest UI priority (2026-10-29)
 
 Founder examined `qa/workspace-desktop.jpg` and rejected the *three-column management-dashboard experience* as the principal Atlas metaphor. The core product must be a **route/line map of knowledge modules and logic**: strategic/planning spines, branching stops, visible and hidden intersections, and auditable evidence behind every connection. The editor/history/sidebar become contextual tools, not the main composition. This **does not invalidate the byte-backed CSP 6.1, local editing, two-tab conflict, 127 recursive items, or verified tests**.
