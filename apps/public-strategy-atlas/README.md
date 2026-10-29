@@ -12,6 +12,24 @@ A standalone functional **[Route Map Preview](route-map-preview.html)** uses **t
 
 Preview contract: `node apps/public-strategy-atlas/route-map.test.cjs` (mock-DOM smoke; real-browser/screenshots and accessibility still required). Do not mistake coloured lines for real strategic progress or approved legal mappings.
 
+## Founder V1.5: quantified work, resources and evidence (W1 first slice)
+
+The active implementation now includes `atlas-accounting.js` (loaded before the route renderer) and a **station-context accounting breakdown**. Select a synthetic **Objective 6.1** theme (`csp6`), **Water action** (`water`) or **Geographic scope** (`area`) station. The contextual inspector shows **Why / Work / Where / Quantity / Resources / Budget vs actual / Outcome / Evidence gaps**, and a **Quantities & budget** shortcut. These are **model cases bound to existing node IDs**, not a second knowledge graph.
+
+- **Carbon** is an attributed *published observation*: **29.9 t CO2e/person** in CSP 2035 printed p.30, citing Snapshot Climate 2021–22, desired trend decrease. Its position next to the synthetic Objective 6.1 station **does not validate that specific goal-to-metric link**, its output or funding. **NOT** AUD/t, Council operational emissions, carbon cost, total emissions or verified outcome.
+- **Water and land** are fully **synthetic fixtures** with purpose-labelled quantities and optional synthetic cost intensity. No Council project/spend/land-use permission has been inferred.
+- `assertComparable`, `totalFromPerCapita`, `costPerOutput`, `validateAllocations` and `unitConvert` enforce time, geography, scope, unit, methodology, cost class, and allocation constraints. Missing official data stays `UNKNOWN`.
+
+Read [V1.5 source/work crosswalk](sources/STRATEGY_WORK_ACCOUNTING_CROSSWALK_20261029.md) and [first-slice QA](qa/QUANT_ACCOUNTING_FIRST_SLICE_RESULTS.md). This is a bounded, read-only accounting layer and **is not yet included in portable content-addressed snapshots/revision event histories**. It does not complete official source admission or a real CSP→DP→OP financial chain.
+
+Run from repo root:
+
+```bash
+node apps/public-strategy-atlas/accounting.test.cjs
+```
+
+**The new Node and Chrome suite needs to be run in a suitable engineering/browser environment.** Connector V8 smoke checks have run; the new browser acceptance and prior regression suites have **not** been re-executed in this particular development slice.
+
 ## Run
 
 Keep this entire directory together. No package installation is required.
