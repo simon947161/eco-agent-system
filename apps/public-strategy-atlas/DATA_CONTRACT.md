@@ -44,3 +44,13 @@ Local workspace schema `atlas-local-workspace-1` has a base dataset digest, orde
 IndexedDB `saveLocal` atomically checks the expected stored checkpoint and monotonic revision prefix before saving a head plus a checkpoint-keyed snapshot. Saves/loads require explicit UI actions; nothing is restored or transmitted automatically. A branch that diverges from the saved prefix cannot overwrite it. Import does not silently replace/truncate the current in-memory history. Resolving divergent branches currently requires retaining/exporting the unsaved branch and deliberate reconciliation; there is no automated merge.
 
 Old statements about absence of editing above describe the previous implementation boundary. The new scope is local annotation editing only; official document replacement, public-source approval, independent signatures/witnessing and server synchronization remain unimplemented. Source admission, base snapshots and local-workspace exports have distinct formats and do not imply each other's checks have passed.
+
+## Route-first presentation contract (V1.4)
+
+`AtlasRouteLayout.project` maps existing node IDs onto reproducible display coordinates and retains only original visible edges. Its `path` starts/ends at the actual station centres, so merges and branches correspond to original assertion endpoints. Display geometry is not an additional source/relationship schema. AtlasData remains byte-for-byte unchanged by this UX stage, as confirmed by the exported base dataset digest.
+
+The default view includes both synthetic route systems. Hidden cross-route paths are opt-in and retain HYPOTHESIS_ONLY. Internal networks reuse contentItems/layoutContent, with progressive disclosure and bounded ancestor-corridor focus for density fixtures. Containment is not legal authority. Context sheets call the existing source/admission, local revision, import/export, comparison, conflict and receipt functions.
+
+A coloured category route over a neutral baseline is separate from demo review/time fill. Unknown actual KPI has no progress fill. Public observations use hollow light stops and explicit status; local states are overlay markers labelled LOCAL, never a change to source admission. Text-route alternatives list actual visible IDs and endpoints. Hashes, raw extraction and review fields remain in the context layer.
+
+No new data, revision, source-admission or workspace format was introduced. Source permission/human approval, whole-history trust limits and no automatic persistence remain unchanged.

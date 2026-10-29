@@ -1,6 +1,6 @@
 # ClimateOS Public Strategy Atlas
 
-English, local-first public-strategy research website. Explore cross-document relationships and recursively inspect the content inside each topic. The main graph has 15 synthetic topics; the internal model has 127 items, including separately labelled public-source observations.
+English, local-first interactive knowledge route map. Follow continuous strategic/planning routes, then open contextual evidence and the internal network inside each station. The main graph has 15 synthetic topics; the internal model has 127 items, including separately labelled public-source observations.
 
 **Status:** working research prototype; M0 retained, M1 validation extended, M2 recursive-content slice verified. Not a complete authoritative knowledge system. No deployment, official endorsement or real Council KPI.
 
@@ -25,15 +25,15 @@ Open `http://127.0.0.1:8877/`. Direct `index.html` opening also uses classic scr
 
 ## Explore
 
-1. Select a topic in **Relationships** to inspect its source entry and upstream/downstream links. Links themselves are also keyboard-selectable.
+1. Select a station in the default **Route map** to inspect its source entry and upstream/downstream links. Links themselves are also keyboard-selectable.
 2. In **Inside this topic**, expand the nested disclosure controls or select any content item.
-3. **Inside content** displays the selected topic's internal tree. Synthetic paths can run through topic → section → clause → action → indicator → evidence. These are demonstration breakdowns, not extracted Council provisions.
+3. **Explore inside** displays the selected station's internal route. Synthetic paths can run through topic → section → clause → action → indicator → evidence. These are demonstration breakdowns, not extracted Council provisions.
 4. Follow the breadcrumb trail or **Parent content**, **Focus this subtree**, and **Back to relationship topic**. Leaves explicitly state that no further content has been admitted.
 5. Search titles and internal text. Results show their topic context, with up to 12 displayed matches. Other topics remain accessible through the graph.
 6. Use **Expand progressively**, **Expand selected**, **Reset expansion**, **Fit scope**, and zoom. Reduced zoom is an overview; use normal zoom and the inspector to read details.
-7. **Public sources** opens five dated observations. The CSP one-page summary observation decomposes into document → Objective 6 → clause 6.1, preserving its exact public locator and observation status. It has no invented downstream actions.
-8. **Discover links** computes bounded cross-root structural convergence, shows the actual paths and evidence count, and retains authored hypotheses and synthetic counterexamples. Structural detection is not semantic or legal validation.
-9. **Layout demo** loads explicitly synthetic 60/200-item fixtures. They test rendering and selection, not the completeness or usability of real policy data.
+7. **Tools & views → Public sources** opens five dated observations. The CSP one-page summary observation decomposes into document → Objective 6 → clause 6.1, preserving its exact public locator and observation status. It has no invented downstream actions.
+8. **Find a crossing** computes bounded cross-root structural convergence, shows the actual paths and evidence count, and retains authored hypotheses and synthetic counterexamples. Structural detection is not semantic or legal validation.
+9. **Tools & views → Synthetic density rehearsal** loads explicitly synthetic 60/200-item fixtures. They test rendering and selection, not the completeness or usability of real policy data.
 
 ## Content addressing and portable evidence
 
@@ -85,7 +85,7 @@ The engineering checker requires `pdfplumber` (already present in the Work runti
 
 Inside any content item, choose **Edit local annotation / compare versions**. Edit only the local title/text, enter a reason, compare and append a CORRECT, SUPERSEDE, CONTEST or RETRACT event. A revert selects an earlier annotation or the original base and appends a new REVERT version. Original observed/synthetic records and source statuses never change. Local annotations have a separate classification and graph marker.
 
-The editor compares retained versions and computes a local subtree receipt binding source-item identities to the separate local view. Earlier versions remain immutable in the application model; replay can reconstruct any retained step. Whole-history replacement by a privileged local writer is not cryptographically prevented without an external checkpoint.
+The contextual editor compares retained versions and computes a local subtree receipt binding source-item identities to the separate local view. Earlier versions remain immutable in the application model; replay can reconstruct any retained step. Whole-history replacement by a privileged local writer is not cryptographically prevented without an external checkpoint.
 
 **Local workspace** provides explicit **Save locally**, **Load saved workspace**, import and export. There is no automatic persistence, restoration, network upload or remote collaboration. Local IndexedDB saves use an atomic read/write transaction, an expected saved checkpoint and an append-only lineage check. A stale tab or rewritten/truncated saved history is rejected. Export an unsaved conflicting branch before resolving it; this release intentionally does not silently merge or overwrite divergent histories.
 
@@ -99,3 +99,17 @@ node apps/public-strategy-atlas/workspace.test.cjs
 Imports are bounded at 2 MB / 500 revisions, validate the base dataset, version/event chains and allowed annotation fields, and reject unsupported signature claims and official-status promotion. The exported base snapshot, source-admission receipt and local workspace are separate artifacts with distinct verification contracts.
 
 At overview zoom, an unscaled row of readable content labels opens the full-size inspector. Public observations are blue, unaudited hypotheses dashed, active local annotations purple, contested ones dashed amber and retracted local views grey/dashed. Prior versions are labelled SUPERSEDED_HISTORY without rewriting the stored revisions. See `qa/ADMISSION_WORKSPACE_RESULTS.md` for actual tests and limits.
+
+## Default route-first experience — Founder V1.4
+
+`index.html` is now the actual route-map application, not a link to a separate visual experiment. Two continuous synthetic corridors, circular stations, branches and explicit amber hypothesis connections occupy the main viewport. `atlas-route-layout.js` is a deterministic display projection of the existing AtlasData nodes/edges, not a parallel data model. The older route-map-preview.html is retained as a historical experiment.
+
+Select a station for its contextual slide-over; use **Follow route**, **Explore inside** or **Compare paths**. Internal content becomes a station sub-route, preserving the existing 127 records and receipts. **Back to route map** restores the prior route selection, zoom and pan. Connections are keyboard-selectable and open their real typed assertion IDs. Candidate links remain HYPOTHESIS_ONLY and can be hidden again.
+
+**Tools & views** contains sources/admission, local workspace/history, audit, portable snapshot export, a linear **Text route guide**, progress semantics and synthetic density fixtures. The inspector is closed initially. On a 390px viewport it becomes a scrollable bottom sheet with bounded keyboard focus and Escape-to-station return. Arrow-key scroll, mouse dragging on map background, native touch scrolling, zoom and a pan guide expose offscreen routes. Physical touch hardware is not certified by the browser tests.
+
+Default lines indicate category only, not progress. Explicit demo review/demo time modes use a separate white fill and conspicuous SYNTHETIC DEMO explanation; actual KPI stays UNKNOWN with no progress fill. Public observations and local annotation states are visually distinct; local revision markers never confer Council authority.
+
+60/200-item fixtures now start with progressive branches at 100% zoom. Search can focus a bounded ancestor corridor for deep items; normal labels remain 14px before optional zoom. This is bounded synthetic route acceptance, not full real-corpus or ultrawide accessibility certification.
+
+Executed acceptance and screenshots: `qa/ROUTE_FIRST_RESULTS.md`. Additional production projection test: `node apps/public-strategy-atlas/route-main.test.cjs`; the older `route-map.test.cjs` still tests only the historical preview. All previous model/content/workspace tests remain required.
