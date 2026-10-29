@@ -1,13 +1,13 @@
 # ClimateOS Public Strategy Atlas — 网站工程 M0
 
-**状态：** IMPLEMENTED IN GITHUB / BROWSER QA NOT YET VERIFIED / SYNTHETIC DEMO ONLY  
-**GitHub 独立开发分支：** `feature/public-strategy-atlas-web-mvp-20261029`  
-**正式开发任务书：** [V1.3](../../docs/research/public-strategy-atlas/PROJECT_TASKBOOK_V1_3_BUILD_AND_CONTINUITY_20261029.md)  
+**状态：** IMPLEMENTED IN GITHUB / EDGE SMOKE VERIFIED / M1 SKELETON / SYNTHETIC DEMO ONLY
+**GitHub 独立开发分支：** `feature/public-strategy-atlas-web-mvp-20261029`
+**正式开发任务书：** [V1.3](../../docs/research/public-strategy-atlas/PROJECT_TASKBOOK_V1_3_BUILD_AND_CONTINUITY_20261029.md)
 **跨电脑唯一续接入口：** [NEXT_SESSION.md](NEXT_SESSION.md)
 
 ## 立即运行
 
-下载/检出这个 GitHub 分支，将此目录的 `index.html`、`atlas.css`、`atlas.js` 放在一起。优先使用个人设备/个人研究环境。
+下载/检出这个 GitHub 分支，将此目录的 整个目录保留在一起（包括 atlas-data.js 和 atlas-model.js）。优先使用个人设备/个人研究环境。
 
 可直接双击 `index.html`；若浏览器对本地文件有额外限制，用标准 Python 从目录启动：
 
@@ -29,7 +29,7 @@ python -m http.server 8877 --bind 127.0.0.1
 
 ## 需要进一步验证和建设
 
-**目前未进行实际浏览器启动及截图验证。** 文件存在于 GitHub 并不证明“浏览器交互测试通过”。下一阶段须在合法个人或 Work 工程环境运行并检查浏览器控制台、加载/点击/搜索/切换、键盘、手机布局、交叉连线和变更后状态。前端 M0 不是完整 Atlas。
+**已进行真实 Edge 浏览器冒烟检查和390px响应式iframe检查，见qa/M0_RESULTS.md与qa/M1_RESULTS.md；真实手机及完整无障碍验收仍未完成。** 文件存在于 GitHub 并不证明“浏览器交互测试通过”。下一阶段须在合法个人或 Work 工程环境运行并检查浏览器控制台、加载/点击/搜索/切换、键盘、手机布局、交叉连线和变更后状态。前端 M0 不是完整 Atlas。
 
 后续按 V1.3 进行：
 1. M0 浏览器运行/修错与真实截图、可复现测试；
@@ -43,3 +43,5 @@ python -m http.server 8877 --bind 127.0.0.1
 所有重要文件必须 **commit + push 至这个远程工程分支**；每次执行后更新 `NEXT_SESSION.md` 并核实远程 SHA。新设备或新的 ChatGPT Work 会话不需要找原桌面路径，也不要用记忆凭空推断状态：从 GitHub 读这个 README + NEXT_SESSION + V1.3，直接在最新远程提交继续。
 
 **注意：** Codex 本地工作会话、ChatGPT Work 云电脑和 GitHub 彼此不会自动实时同步。GitHub 能持久保存已推送文件；额度刷新和不同设备的 Work 会话**不会自动触发开发**，必须从新会话显式发出续接指令。仅在本地提交未推送的工作不能保证异机可用。
+
+M1合约与限制见[DATA_CONTRACT.md](DATA_CONTRACT.md)。运行 `node apps/public-strategy-atlas/model.test.cjs` 校验合成数据、反例与摘要事件。当前真实条款准入仍未完成。

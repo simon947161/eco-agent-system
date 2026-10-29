@@ -1,0 +1,25 @@
+const assert=require('node:assert/strict');
+const d=require('./atlas-data.js'),m=require('./atlas-model.js');
+(async()=>{
+ assert.deepEqual(m.validate(d),[]);
+ assert(await m.verifyEvents(d.events));
+ assert.equal(await m.digest(new Uint8Array(require('node:fs').readFileSync(require('node:path').join(__dirname,'qa/synthetic-source.txt')))),d.contentBlocks[0].digest);
+ assert.equal(m.applicability(d.assertions[0],d.revisions[0],{date:'2026-99-99',region:'SYNTHETIC_REGION'}),'UNKNOWN');
+ assert.equal(m.paths(d,'csp','water').length,2);
+ assert.equal(m.paths(d,'lsps','scope').length,2);
+ assert.equal(m.paths(d,'csp','candidate').length,0);
+ assert.equal(m.paths(d,'csp','candidate',{includeCandidates:true}).length,1);
+ const bad=structuredClone(d);bad.assertions[0].status='EXPLICIT_OFFICIAL';assert(m.validate(bad).some(x=>x.startsWith('OFFICIAL_WITHOUT_EVIDENCE')));
+ bad.assertions[1].to='missing';assert(m.validate(bad).some(x=>x.startsWith('MISSING_TARGET')));
+ assert.equal(m.applicability(d.assertions[0],d.revisions[0],{date:'2025-01-01',region:'SYNTHETIC_REGION'}),'VERSION_OR_SCOPE_CONFLICT');
+ assert.equal(m.applicability(d.assertions[0],d.revisions[0],{date:'2026-06-01',region:'OTHER'}),'VERSION_OR_SCOPE_CONFLICT');
+ assert.equal(m.applicability(d.assertions[0],d.revisions[0],{}),'UNKNOWN');
+ assert.equal(await m.objectDigest({b:2,a:1}),await m.objectDigest({a:1,b:2}));
+ assert.notEqual(await m.digest(new Uint8Array([1])),await m.digest(new Uint8Array([2])));
+ const event={id:'demo-add',type:'ADD',objectId:'e1',actor:'synthetic-reviewer',reason:'fixture only',observedAt:'2026-10-29T00:00:00Z'};
+ const first=await m.appendEvent([],event);const second=await m.appendEvent(first,{...event,id:'demo-retract',type:'RETRACT',reason:'synthetic counterevidence'});
+ assert.equal(first.length,1);assert(await m.verifyEvents(second));
+ const tampered=structuredClone(second);tampered[0].reason='rewritten';assert.equal(await m.verifyEvents(tampered),false);
+ await assert.rejects(()=>m.appendEvent(first,event),/DUPLICATE_EVENT/);
+ console.log('PASS: schema, multipath, candidate exclusion, false official promotion, missing target, time/region rejection, unknown context, canonical digest, byte tamper, append/retract, history tamper, duplicate event');
+})().catch(e=>{console.error(e);process.exitCode=1});
