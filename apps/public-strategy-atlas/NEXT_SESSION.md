@@ -7,7 +7,7 @@
 
 ## HEAD 与同步
 启动远程基线：baaedfaf315e6554a84b26e01743e3952302fc1f。
-M0阶段5ef063a已实际push成功。当前文件所在提交包含M1数据骨架及检查结果；最新HEAD须读取GitHub分支，不将文件内自写哈希当当前HEAD。最终远端readback在本轮交付消息，下一设备必须再次核对。没有自动后台续跑。
+M0阶段5ef063a002f5a27554da3bd6da4040b5846a0551及M1阶段e4cf9f24c74797f1e45b13ba61ed1ad9f4476127已实际push成功。当前文件所在提交包含M1数据骨架及检查结果；最新HEAD须读取GitHub分支，不将文件内自写哈希当当前HEAD。最终远端readback在本轮交付消息，下一设备必须再次核对。没有自动后台续跑。
 
 ## 已完成
 - 保留原站点；修复键盘重绘焦点、抽屉残留、搜索与邻接筛选冲突、上溯/下游方向、移动搜索与可读SVG、关闭/Escape。
@@ -27,3 +27,5 @@ node apps/public-strategy-atlas/model.test.cjs （仓库根目录）
 ## 边界与未完成
 M1只是骨架，不是已完成可信知识系统。事件API无持久化、无独立见证；没有官方签名/Merkle证明/SCITT；原始R0-K5279eed仍LOCAL_UNAVAILABLE，不假称恢复。两V1.2历史保留，V1.3为当前开发授权。
 只用公开/合成资料。每个可验证阶段检查、安全审查、commit+push，再读远端SHA；失败写SYNC_BLOCKED。禁止Council非公开资料、付费服务、部署Sites、修改PR129/main/业务系统。结束后停，下一设备显式续接。
+
+跨设备修复：.gitattributes禁止原始合成字节文件换行转换；最终提交为该修复与续接更新，读取远端HEAD确定完整SHA。
