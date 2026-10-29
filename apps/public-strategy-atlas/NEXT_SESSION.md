@@ -1,7 +1,11 @@
+<!-- Stage checkpoint: baseline remote baaedfaf315e6554a84b26e01743e3952302fc1f; this commit is discoverable via GitHub HEAD, no self-referential SHA. -->
+## 2026-10-29 M0 actual browser update
+Real Edge smoke and 390px responsive frame completed; see qa/M0_RESULTS.md and actual PNG captures. Fixed focus, stale drawer, navigation direction and mobile search. Older pending statements below are historical. Next: M1 data/assertion/event skeleton. Public-safe synthetic code only; no deployment.
+
 # Atlas 网站 — 永久续接状态（唯一当前位置）
 
 **日期/时区：** 2026-10-29 Australia/Sydney  
-**状态：** `M0_CODE_COMMITTED / JS_STUB_SMOKE_PASS / BROWSER_QA_PENDING / M1_NOT_STARTED`  
+**状态：** `M0_BROWSER_SMOKE_PASS / M1_NEXT`  
 **用户明确授权：** 开始网站设计与开发，允许隔离 GitHub 分支上的实际开发、测试与推送；**未授权**实际 Council 系统、正式部署、付费服务、合并主线。  
 **仓库：** `simon947161/eco-agent-system`  
 **唯一工程分支：** `feature/public-strategy-atlas-web-mvp-20261029`  

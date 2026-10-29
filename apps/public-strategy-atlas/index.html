@@ -58,7 +58,7 @@
         <div class="canvas-toolbar">
           <div class="title-stack">
             <div class="eyebrow">RELATIONSHIP EXPLORER</div>
-            <h2 id="canvas-title">从战略目标到可追溯证据</h2>
+            <h2 id="canvas-title" tabindex="-1">从战略目标到可追溯证据</h2>
             <p>点击节点查看来源、关系类型与不确定性；未确认关系不会自动变成事实。</p>
           </div>
           <div class="mode-switch" role="group" aria-label="线条填充指标">
@@ -90,6 +90,7 @@
 
       <aside class="inspector" id="inspector" aria-labelledby="inspector-title">
         <div class="inspector-heading"><span class="eyebrow">EVIDENCE DRAWER</span><h2 id="inspector-title">证据与关系</h2></div>
+        <button id="closeDetails" type="button" class="subtle-btn">关闭详情 / Escape</button>
         <div id="details" aria-live="polite">
           <div class="empty-state"><div class="empty-icon">◎</div><strong>选择任意节点</strong><p>可以查看所属类型、关联路径、证据入口，以及尚未得到证实的事项。</p></div>
         </div>

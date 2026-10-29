@@ -46,6 +46,7 @@
   const graph = document.getElementById("atlasGraph");
   const details = document.getElementById("details");
   const search = document.getElementById("search");
+  const emptyDetails = details.innerHTML;
   const explain = document.getElementById("modeExplanation");
   const el = (tag,attrs={}) => {const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));return e;};
   const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -66,6 +67,7 @@
     return new Set([state.selected,...edges.filter(e=>e.from===state.selected||e.to===state.selected).flatMap(e=>[e.from,e.to])]);
   }
   function draw() {
+    const activeNode = document.activeElement?.getAttribute("data-node-id");
     graph.querySelectorAll("[data-drawn]").forEach(e=>e.remove());
     const base=el("g",{"data-drawn":"yes"}); graph.append(base);
     const caption=el("text",{x:70,y:45,class:"lane-caption"});caption.textContent="STRATEGY / DELIVERY / EVIDENCE";base.append(caption);
@@ -95,7 +97,7 @@
       const dim=state.search&&!((n.label+" "+n.sub+" "+n.detail).toLowerCase().includes(state.search)) ||
         state.selected&&state.neighbours&&!focus.has(n.id) ||
         !state.selected&&state.root!=="all"&&!inBranch(n);
-      const g=el("g",{class:"atlas-node "+n.type+(state.selected===n.id?" selected":"")+(dim?" faded":""),transform:"translate("+n.x+" "+n.y+")",tabindex:"0",role:"button","aria-label":"查看 "+n.label+" 的证据详情"});
+      const g=el("g",{class:"atlas-node "+n.type+(state.selected===n.id?" selected":"")+(dim?" faded":""),transform:"translate("+n.x+" "+n.y+")","data-node-id":n.id,tabindex:"0",role:"button","aria-pressed":String(state.selected===n.id),"aria-label":"查看 "+n.label+" 的证据详情"});
       g.append(el("rect",{width:155,height:56,rx:12}));
       const t=el("text",{x:13,y:23}); t.textContent=n.label;g.append(t);
       const sub=el("text",{x:13,y:41,class:"sub"});sub.textContent=n.sub;g.append(sub);
@@ -104,6 +106,7 @@
       g.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();select(n.id);}});
       base.append(g);
     }
+    if(activeNode) graph.querySelector(`[data-node-id="${activeNode}"]`)?.focus({preventScroll:true});
     const note=el("text",{x:1100,y:725,class:"svg-note"});note.textContent="M0 / SYNTHETIC DATA / NO COUNCIL KPI";base.append(note);
     explain.textContent=state.mode==="coverage"?"演示性关系核验填充；尚无真实 Council 核验率。":
       state.mode==="time"?"演示性期限经过比例；绝不代表行动完成或绩效达成。":
@@ -116,7 +119,7 @@
     const connected=edges.filter(e=>(e.from===id||e.to===id)&&(!e.candidate||state.candidates));
     const relationButtons=connected.map(e=>{
       const other=map[e.from===id?e.to:e.from];
-      return '<button type="button" data-target="'+esc(other.id)+'" title="'+esc(e.kind)+'">'+esc(other.label)+' · '+(e.candidate?"暗线候选":"合成路径")+'</button>';
+      return '<button type="button" data-target="'+esc(other.id)+'" title="'+esc(e.kind)+'">'+(e.to===id?'↑ 上溯：':'↓ 下游：')+esc(other.label)+' · '+(e.candidate?"暗线候选":"合成路径")+'</button>';
     }).join("");
     const source=n.source?'<a href="'+esc(n.source)+'" target="_blank" rel="noopener noreferrer">查看公开资料目录 ↗</a>':'没有官方来源可验证';
     details.innerHTML='<div class="detail-head"><div><div class="eyebrow">NODE · '+esc(n.id.toUpperCase())+'</div><h3>'+esc(n.label)+'</h3></div><span class="detail-badge">'+(n.type==="candidate"?"HYPOTHESIS":"SYNTHETIC")+'</span></div>'+
@@ -130,10 +133,11 @@
       '<div class="warn">'+(n.type==="candidate"?"暗线是待证伪的研究候选，不可自动成为官方事实。":"这里只演示追溯交互，没有任何已审核的实际绩效、法规适用或政策映射。")+'</div>';
     details.querySelectorAll("[data-target]").forEach(b=>b.addEventListener("click",()=>select(b.dataset.target)));
     draw();
+    graph.querySelector(`[data-node-id="${id}"]`)?.scrollIntoView({block:"nearest",inline:"nearest",behavior:"instant"});
   }
   document.querySelectorAll("[data-root]").forEach(btn=>btn.addEventListener("click",()=>{
-    state.root=btn.dataset.root;state.selected=null;
-    document.querySelectorAll("[data-root]").forEach(b=>b.classList.toggle("selected",b===btn));
+    state.root=btn.dataset.root;state.selected=null;details.innerHTML=emptyDetails;
+    document.querySelectorAll("[data-root]").forEach(b=>(b.classList.toggle("selected",b===btn), b.setAttribute("aria-pressed",String(b===btn))));
     draw();
   }));
   document.querySelectorAll("[data-mode]").forEach(btn=>btn.addEventListener("click",()=>{
@@ -141,11 +145,13 @@
     document.querySelectorAll("[data-mode]").forEach(b=>b.setAttribute("aria-pressed",String(b===btn)));
     draw();
   }));
-  document.getElementById("showCandidates").addEventListener("change",e=>{state.candidates=e.target.checked;if(!state.candidates&&state.selected==="candidate")state.selected=null;draw();});
+  document.getElementById("showCandidates").addEventListener("change",e=>{state.candidates=e.target.checked;if(!state.candidates&&state.selected==="candidate"){state.selected=null;details.innerHTML=emptyDetails;}if(state.selected)select(state.selected);else draw();});
   document.getElementById("showNeighbours").addEventListener("change",e=>{state.neighbours=e.target.checked;draw();});
   search.addEventListener("input",e=>{state.search=e.target.value.trim().toLowerCase();draw();});
   document.getElementById("aboutBtn").addEventListener("click",()=>{
     details.innerHTML='<div class="detail-head"><div><div class="eyebrow">RESEARCH NOTICE</div><h3>关于本地原型</h3></div></div><p class="detail-text">本网站是 ClimateOS Public Strategy Atlas 的 M0 工程起点，供独立学习与 UI 验证。图上所有关系、合成进度、节点路径均是人工设计的虚构样本，不可用于官方决策。目录链接并不意味着条款已核准。不会上传任何 Council 内部或个人业务数据。区块链式内容寻址、数字凭证与审计仅在任务书设计范围中，尚未实装。</p><div class="warn">本地演示 ≠ 正式部署；合成关系 ≠ 现行法规；文件完整性 ≠ 语义真实性。</div>';
   });
+  document.getElementById("closeDetails").addEventListener("click",()=>{const id=state.selected;state.selected=null;details.innerHTML=emptyDetails;draw();if(id)graph.querySelector(`[data-node-id="${id}"]`)?.focus();});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")document.getElementById("closeDetails").click();});
   draw();
 })();
