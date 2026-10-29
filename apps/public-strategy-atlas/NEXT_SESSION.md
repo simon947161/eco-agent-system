@@ -1,5 +1,19 @@
 # Atlas — authoritative continuation checkpoint
 
+## Founder V1.6 FULL-SYSTEM MASTER TASKBOOK — active development priority
+
+**2026-10-29 Founder instruction:** Do **not** treat the current site, 15 synthetic route topics, 127 demo content items or 3 accounting fixtures as a finished Atlas. Every station and nested item should lead to substantive, arbitrarily deep source/work/quantity/resource/budget/output/outcome/evidence/history decomposition and typed cross-branch links. The route map must reveal the logic; the underlying data/verification/calc/workflow systems must actually exist.
+
+**Authoritative new complete engineering directive:**
+`docs/research/public-strategy-atlas/FOUNDER_V1_6_COMPLETE_SYSTEM_BUILD_MASTER_TASKBOOK_20261029.md`
+
+It contains the full source corpus/intake and licence gates, unlimited recursive content, semantic relation ontology and work breakdown, physical/financial/outcome ledgers, spatial and time/legal applicability, blockchain-inspired version/audit structure, explainable hidden-link falsification, route-first full website capabilities, reproducible test matrix, **E0–E10 continuous coding waves** and explicit FULL-SYSTEM Definition of Done. It supersedes earlier *minimum acceptance* and development order, **not** existing verified work or safety gates. Read the entire file, not only the short kickoff command.
+
+**Immediate next engineering work:** E0 run true native Node + Chrome tests for the new V1.5 accounting panel and fix any defects; E1 integrate quantitative objects with original source-aware AtlasModel, content-addressed snapshots, local immutable workspace and migrations; E2–E10 continue substantive source/admitted content, arbitrary-depth work breakdown, ledgers, spatial/temporal applicability, review and hidden-link discovery, full UI and QA. Do not stop after another screenshot or Markdown file. Do not recreate a competing graph, reset 127-item tests or solicit the pasted V1.5 order again.
+
+**State at taskbook issue:** the V1.6 directive is committed but **E0–E10 have not been executed by virtue of writing it**. Existing V1.5 W1 remains PARTIAL; native Node and newest Chrome accounting-panel QA remain pending. Founder has authorised continuous bounded development within this public/synthetic isolated branch, not Council internal access, deployment, added fees, any PR merge or work on PR #129/main.
+
+
 Date: 2026-10-29 Australia/Sydney.
 Status: V1_4_U1_ACCEPTED / V1_5_W1_QUANT_MODEL_PARTIAL / CONNECTOR_V8_TEST_LOGIC_PASS / NEW_BROWSER_QA_PENDING / NOT_DEPLOYED.
 Repository: simon947161/eco-agent-system.
