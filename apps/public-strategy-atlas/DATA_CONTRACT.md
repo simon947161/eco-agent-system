@@ -39,6 +39,8 @@ Tables retain caption, columns/units, rows, fiscal basis and footnotes inside th
 
 Intake states: DISCOVERED → DIRECTORY_OBSERVED → SOURCE_RETRIEVED → RAW_BYTES_VERIFIED → EXTRACTED → ANCHOR_VERIFIED → CURRENT_VERSION_AND_SCOPE_CHECKED → REVIEW_PENDING → ADMITTED. Gates are ordered; rights, raw/extraction/anchor digests and version/scope evidence are distinct. Corrections append downgrade events. Official ADMITTED is blocked without a configured independently authorised review mechanism. Source availability or local claims are not permission/authority.
 
+`sourceStatus` and `sourceGaps` derive recorded availability and the next review action from replayed intake evidence. Retained SOURCE_RETRIEVED evidence reports AVAILABLE at its retrieval time, separately from immutable `historicalAccess`; it does not assert current live connectivity. A correction withdrawing retrieval reports NOT_CHECKED and requires a new check. Corrections above retrieval retain it. Rights and reviewer gaps remain separate, and synthetic sources can never receive official admission.
+
 Current catalogue: 15 requirements, 14 families, 2 known concrete CSP URLs, zero newly retrieved/extracted/version-confirmed/admitted documents. Full inventory denominator UNKNOWN. Existing CSP6.1 byte/excerpt receipt is preserved historical evidence; no fresh retrieval pass is inferred. No entire restricted PDF is shipped. Metadata/research summaries do not count as fresh source extraction.
 
 ## Calculations, execution and scope

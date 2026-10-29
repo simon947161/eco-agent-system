@@ -2,7 +2,7 @@
 
 A route-first, local research application for exploring strategy, work, quantities, sources and audit history. It extends the original 15 stations and 127 content records. No package installation, backend, paid API or production deployment is required.
 
-**V1.6 status: PARTIAL, not a complete authoritative Atlas.** The bounded software workflows below run and have real Node/Chromium evidence. Current official corpus intake is blocked by environment network policy and unresolved source rights/version/review gates. No official relationship, Council expenditure, achieved outcome or parcel-level legal applicability is admitted. See [NEXT_SESSION.md](NEXT_SESSION.md) and the [V1.6 taskbook](../../docs/research/public-strategy-atlas/FOUNDER_V1_6_COMPLETE_SYSTEM_BUILD_MASTER_TASKBOOK_20261029.md).
+**V1.6 status: PARTIAL, not a complete authoritative Atlas.** The bounded software workflows below run and have real Node/Chromium evidence. The latest runtime recovery retrieved and byte/anchor-verified the CSP summary; catalogue intake and source rights/version/review gates remain incomplete. No official relationship, Council expenditure, achieved outcome or parcel-level legal applicability is admitted. V1.7 task acceptance awaits its supplied authoritative handoff files; no COI task is claimed VERIFIED. See [NEXT_SESSION.md](NEXT_SESSION.md) and the [V1.6 taskbook](../../docs/research/public-strategy-atlas/FOUNDER_V1_6_COMPLETE_SYSTEM_BUILD_MASTER_TASKBOOK_20261029.md).
 
 ## Run
 
@@ -47,7 +47,7 @@ node apps/public-strategy-atlas/verify-intake.cjs CATALOGUE.json [sha256:checkpo
 python3 apps/public-strategy-atlas/verify-source.py OFFICIAL_SUMMARY.pdf
 ```
 
-The last command needs `pdfplumber` and the separately obtained original PDF. No restricted full PDF is redistributed. Fresh PDF verification in this environment is BLOCKED/NOT_TESTED because the proxy denied the official source destinations. Public availability is not a redistribution licence.
+The last command needs `pdfplumber` and the separately obtained original PDF. No restricted full PDF is redistributed. The latest [runtime recovery](qa/NEW_RUNTIME_ACCESS_RECOVERY_20261030.md) records a successful original-byte/page-anchor check; that QA observation has not been promoted into catalogue admission. Public availability is not a redistribution licence.
 
 ## Repeatable verification
 

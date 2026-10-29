@@ -54,7 +54,7 @@ async function registerSource(catalogue,record,{registeredAt,actor='local-resear
 }
 function replay(catalogue){
  const state=new Map(catalogue.sources.map(source=>[source.id,{stage:null,evidence:{},corrections:[]}])) ;
- for(const event of catalogue.events){const current=state.get(event.sourceId);if(event.operation==='CORRECTION'){current.corrections.push(event);current.stage=event.stage;for(const stage of STAGES.slice(STAGES.indexOf(event.stage)+1))delete current.evidence[stage];}else{current.stage=event.stage;current.evidence[event.stage]=event.evidence;}}
+ for(const event of catalogue.events){const current=state.get(event.sourceId);if(event.operation==='CORRECTION'){current.corrections.push(event);current.stage=event.stage;if(STAGES.indexOf(event.stage)<STAGES.indexOf('SOURCE_RETRIEVED')&&current.evidence.SOURCE_RETRIEVED)current.retrievalWithdrawal={at:event.evidence.at};for(const stage of STAGES.slice(STAGES.indexOf(event.stage)+1))delete current.evidence[stage];}else{current.stage=event.stage;current.evidence[event.stage]=event.evidence;if(event.stage==='SOURCE_RETRIEVED')delete current.retrievalWithdrawal;}}
  return state;
 }
 function gate(source,stage,evidence,current){
@@ -111,10 +111,37 @@ function coverage(catalogue){
  const states=replay(catalogue),documents=catalogue.sources.filter(source=>source.recordType==='DOCUMENT'),atLeast=(source,stage)=>STAGES.indexOf(states.get(source.id).stage)>=STAGES.indexOf(stage);
  return {inventoryCompleteness:'UNKNOWN',registeredRequirements:catalogue.sources.length,documentDenominator:documents.length,directoryDenominator:catalogue.sources.filter(source=>source.recordType==='DIRECTORY').length,requiredFamilyDenominator:new Set(catalogue.sources.map(source=>source.family)).size,discoveredDocuments:documents.length,accessibleDocuments:documents.filter(source=>atLeast(source,'SOURCE_RETRIEVED')).length,byteVerified:documents.filter(source=>atLeast(source,'RAW_BYTES_VERIFIED')).length,partiallyExtracted:documents.filter(source=>atLeast(source,'EXTRACTED')&&states.get(source.id).evidence.EXTRACTED?.coverage==='PARTIAL').length,fullyExtracted:documents.filter(source=>atLeast(source,'EXTRACTED')&&states.get(source.id).evidence.EXTRACTED?.coverage==='FULL').length,anchorReviewed:documents.filter(source=>atLeast(source,'ANCHOR_VERIFIED')).length,versionConfirmed:documents.filter(source=>atLeast(source,'CURRENT_VERSION_AND_SCOPE_CHECKED')).length,admittedDocuments:documents.filter(source=>atLeast(source,'ADMITTED')).length,admittedRelationships:0,relationshipCoverage:'NOT_COMPUTED_BY_SOURCE_REGISTER',officialOutcomeKpi:'UNKNOWN',warning:'Registered requirements are not a complete official document inventory. Historical reported checks do not count as current executed stages.'};
 }
-function sourceGaps(catalogue){const states=replay(catalogue);return catalogue.sources.filter(source=>states.get(source.id).stage!=='ADMITTED').map(source=>({sourceId:source.id,family:source.family,title:source.title,stage:states.get(source.id).stage,nextStage:STAGES[STAGES.indexOf(states.get(source.id).stage)+1],access:source.access,rights:source.rights.status,ownerType:source.access?.state==='BLOCKED_BY_PERMISSION'?'ENVIRONMENT_ADMIN':'SOURCE_RESEARCHER_AND_AUTHORISED_REVIEWER',nextAction:source.access?.state==='BLOCKED_BY_PERMISSION'?'Allow official host in environment settings, then retry public retrieval; retain UNKNOWN until successful.':'Retrieve official source, anchor permitted content, independently confirm version/scope and obtain authorised review.'}));}
+function statusFor(source,current){
+ const retrieval=current.evidence.SOURCE_RETRIEVED,withdrawal=current.retrievalWithdrawal;
+ // Source metadata is immutable. Availability follows retained intake evidence;
+ // withdrawing that evidence requires a new check, not a new claim of denial.
+ const access=retrieval?{state:'AVAILABLE',checkedAt:retrieval.retrievedAt,url:retrieval.url,reason:'HTTP 200 retrieval retained in the replayed intake history; current live availability is not implied.',basis:'INTAKE_EVENT'}:
+  withdrawal?{state:'NOT_CHECKED',checkedAt:withdrawal.at,reason:'Retrieval evidence was withdrawn by correction; recheck the official source.',basis:'CORRECTION'}:
+  {...source.access,basis:'HISTORICAL_SOURCE_RECORD'};
+ const nextStage=STAGES[STAGES.indexOf(current.stage)+1]??null;
+ let ownerType='SOURCE_RESEARCHER_AND_AUTHORISED_REVIEWER',nextAction='Independently review source evidence; retain unknowns and pending admission.';
+ if(access.state==='BLOCKED_BY_PERMISSION'&&STAGES.indexOf(current.stage)<STAGES.indexOf('SOURCE_RETRIEVED')){
+  ownerType='ENVIRONMENT_ADMIN';nextAction='Review the recorded destination-policy failure, then retry official retrieval through the configured proxy; retain UNKNOWN until successful.';
+ }else if(nextStage==='DIRECTORY_OBSERVED')nextAction='Observe the official directory and record its digest before retrieving the document.';
+ else if(nextStage==='SOURCE_RETRIEVED')nextAction='Retrieve the exact official source through the configured proxy and record the HTTP result, time, byte length and digest.';
+ else if(nextStage==='RAW_BYTES_VERIFIED')nextAction='Verify the retrieved original bytes against their recorded digest; retain immutable prior receipts.';
+ else if(nextStage==='EXTRACTED'){
+  if(source.classification!=='SYNTHETIC'&&!source.rights.permittedUses.some(use=>['SHORT_EXCERPT','FULL_TEXT'].includes(use))){ownerType='SOURCE_RIGHTS_REVIEWER';nextAction='Confirm permitted reuse before extracting source content; public access alone does not grant reuse rights.';}
+  else nextAction='Extract only permitted content and retain parser version, coverage, units, footnotes and exact anchors.';
+ }else if(nextStage==='ANCHOR_VERIFIED')nextAction='Verify the extracted page/section anchors, content digests and extraction uncertainty.';
+ else if(nextStage==='CURRENT_VERSION_AND_SCOPE_CHECKED')nextAction='Independently confirm the document revision, current-as-of date and geographic/effective scope.';
+ else if(nextStage==='REVIEW_PENDING')nextAction='Identify the independently authorised reviewer and record the pending review scope.';
+ else if(nextStage==='ADMITTED'){
+  if(source.classification==='SYNTHETIC')nextAction='Synthetic research sources cannot receive official admission; retain them as explicitly synthetic research.';
+  else {ownerType='AUTHORISED_SOURCE_REVIEWER';nextAction='Await independently authorised human review; official admission remains disabled until its authority verifier is configured.';}
+ }
+ return {sourceId:source.id,family:source.family,title:source.title,stage:current.stage,nextStage,access,historicalAccess:{...source.access},rights:source.rights.status,ownerType,nextAction};
+}
+function sourceStatus(catalogue,sourceId){const source=catalogue.sources.find(source=>source.id===sourceId);requireThat(source,'SOURCE_NOT_FOUND');return statusFor(source,replay(catalogue).get(sourceId));}
+function sourceGaps(catalogue){const states=replay(catalogue);return catalogue.sources.filter(source=>states.get(source.id).stage!=='ADMITTED').map(source=>statusFor(source,states.get(source.id)));}
 function contentRecords(catalogue,sourceId){
  const source=catalogue.sources.find(source=>source.id===sourceId);requireThat(source,'SOURCE_NOT_FOUND');
  return source.extraction.anchors.map(anchor=>({id:'source:'+source.id+':'+anchor.id,logicalId:'source:'+source.id+':'+anchor.id,sourceId:source.id,sourceRevision:source.revisionId,locator:anchor.locator,textKind:anchor.textKind,title:anchor.title||anchor.locator,text:anchor.text,status:source.classification==='SYNTHETIC'?'SYNTHETIC':STAGES.indexOf(replay(catalogue).get(source.id).stage)>=STAGES.indexOf('EXTRACTED')?'PUBLIC_TEXT_OBSERVED':'PUBLIC_TEXT_REPORTED_NOT_REVERIFIED',reviewStatus:'PENDING',machineVerification:replay(catalogue).get(source.id).stage,officialMapping:'UNKNOWN'}));
 }
-const api={registerSource,FORMAT,STAGES,recordIssues,safeUrl,createCatalogue,appendStage,correctStage,verifyCatalogue,replay,coverage,sourceGaps,contentRecords};root.AtlasIntake=api;if(typeof module!=='undefined')module.exports=api;
+const api={registerSource,FORMAT,STAGES,recordIssues,safeUrl,createCatalogue,appendStage,correctStage,verifyCatalogue,replay,coverage,sourceStatus,sourceGaps,contentRecords};root.AtlasIntake=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

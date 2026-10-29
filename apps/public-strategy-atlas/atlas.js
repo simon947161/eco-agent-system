@@ -228,7 +228,8 @@ function intakePanel(){
 function intakeSource(id){
  if(!d.domain.sourceCatalogue){intakePanel();return;}
  const c=d.domain.sourceCatalogue,s=c.sources.find(s=>s.id===id),records=AtlasIntake.contentRecords(c,id);
- panel('<h3>'+esc(s.title)+'</h3><p>'+esc(AtlasIntake.replay(c).get(id).stage)+' · rights '+esc(s.rights.status)+'</p><p>'+esc(s.revisionId)+'</p>'+sourceLink(s.officialUrl||s.directoryUrl)+'<p>Current version / effective scope: UNKNOWN. Source availability alone does not grant reuse.</p><p>'+esc(s.access.state+' · '+s.access.checkedAt+' · '+s.access.reason)+'</p>'+records.map(r=>'<div class="warn"><h4>'+esc(r.title)+'</h4><p>'+esc(r.text)+'</p><p>'+esc(r.textKind+' · '+r.status+' · '+r.locator)+'</p></div>').join('')+(records.length?'':'<p>No source content retrieved. Required sections and anchors remain UNKNOWN.</p>'));
+ const status=AtlasIntake.sourceStatus(c,id);
+ panel('<h3>'+esc(s.title)+'</h3><p>'+esc(status.stage)+' · rights '+esc(s.rights.status)+'</p><p>'+esc(s.revisionId)+'</p>'+sourceLink(s.officialUrl||s.directoryUrl)+'<p>Current version / effective scope: UNKNOWN. Source availability alone does not grant reuse.</p><p>Access from retained evidence: '+esc(status.access.state+' · '+status.access.checkedAt+' · '+status.access.reason)+'</p><details><summary>Historical access at registration</summary><p>'+esc(s.access.state+' · '+s.access.checkedAt+' · '+s.access.reason)+'</p></details><p>'+esc(status.ownerType+' · '+status.nextAction)+'</p>'+records.map(r=>'<div class="warn"><h4>'+esc(r.title)+'</h4><p>'+esc(r.text)+'</p><p>'+esc(r.textKind+' · '+r.status+' · '+r.locator)+'</p></div>').join('')+(records.length?'':'<p>No extracted source content registered. Required sections and anchors remain UNKNOWN.</p>'));
  $('contextActions').replaceChildren(button('Related route station',()=>inspectNode(s.stationId)),button('Coverage & gaps',intakePanel));
 }
 $('coverageBtn').addEventListener('click',intakePanel);

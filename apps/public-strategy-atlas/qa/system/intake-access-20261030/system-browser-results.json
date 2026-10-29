@@ -1,0 +1,29 @@
+{
+  "recordedAt": "2026-10-29T22:45:24.955447+00:00",
+  "runner": "qa/system-browser.py",
+  "status": "PASS_TESTED_HERE",
+  "exitCode": 0,
+  "viewports": [
+    [
+      1440,
+      900
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "checks": [
+    "Original 127 items",
+    "Domain dossier and immutable challenge",
+    "Recorded carbon retains t CO2e/person semantics",
+    "Source detail and coverage",
+    "Work/dependency paths",
+    "Water ledger/variance and unadmitted extrapolation rejection",
+    "Geographic/time applicability rejection",
+    "Downloaded snapshots independently verified",
+    "No page errors or horizontal overflow"
+  ],
+  "otherBrowserSuites": "NOT_RERUN_THIS_BATCH",
+  "nodeCoveragePercentage": "NOT_REMEASURED_THIS_BATCH"
+}

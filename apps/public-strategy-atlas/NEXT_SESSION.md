@@ -1,3 +1,17 @@
+# V1.7 continuation — 2026-10-30: handoff missing; existing source-gap repair verified
+
+Start remote/local/PR #130 HEAD: `c1a859af97c0bc0e22411c303db94d67f252f422`, clean checkout. Read `qa/V1_7_CONTINUATION_BASELINE_20261030.md`, `qa/V1_7_HANDOFF_INTAKE_STATUS.json`, and `qa/system/intake-access-20261030/`. This checkpoint is the commit containing this update; obtain its exact pushed SHA from remote HEAD.
+
+**V1.7 input BLOCKED:** user names `CSOI_V1_7_CODEX_HANDOFF_PACK.zip`, but tools received no accessible attachment/file ID and workspace searches found neither ZIP nor its three files: `CSOI_V1_7_80_Task_Master_Plan.md`, `COI_TASK_REGISTRY_V1_7.json`, `CODEX_CSOI_V1_7_START_HERE.txt`. Do not recreate their 80 definitions from the brief. COI-001 acceptance has not been evaluated; zero V1.7 tasks marked VERIFIED, zero packs complete, no invented task registry.
+
+**Actual authorised engineering completed:** fixed V1.6 stale source-access gaps. New `AtlasIntake.sourceStatus` and `sourceGaps` derive availability and next owner/action from active replay evidence; retain immutable historical access separately; withdrawing retrieval resets to NOT_CHECKED while later-stage correction retains it. Metadata-only rights need rights review; public official admission remains authority-blocked; synthetic sources cannot be admitted. Source detail distinguishes missing extraction from missing retrieval. Original 127 records, source catalogue/receipt and immutable histories preserved.
+
+**Fresh final checks:** 16/16 native files PASS; focused actual Chromium 1440×900/390×844 access/retrieval-withdrawal/rights-label tests PASS; existing desktop/mobile system browser regression PASS, with independent snapshot verifiers and screenshots. New browser fixtures are QA ONLY under example.invalid, never actual intake. Other historical browser suites/coverage percentages not rerun. No new official source request/stage/admission; corpus remains 15 requirements / 14 families / 2 concrete URLs, integrated retrieval/extraction/version/admission 0; prior fresh CSP verifier remains separate QA evidence.
+
+**Next executable step:** obtain the actual attachment, read all three files completely, then map and execute COI-001 onwards using the verified existing architecture, applying only the supplied registry's acceptance rules. Do not treat this repair as completing any unknown COI task. Runtime now responds running/connected with unrestricted/enforced HTTP policy; no settings were changed. Keep PR #130 Draft, no deployment/merge/main/PR129/Council nonpublic data/WCOS private production changes. Overall SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING; V1.7 acceptance BLOCKED_HANDOFF_NOT_AVAILABLE.
+
+--- Previous checkpoint ---
+
 # New runtime recovery — 2026-10-30: access PASS, numeric revision guard held
 
 Read `qa/NEW_RUNTIME_ACCESS_RECOVERY_20261030.md` and `qa/system/new-runtime-recovery-20261030/` first. Start remote/local/PR #130 HEAD was `c7dcd0e6e18f565f89b77391b59a48d711e8b584`. Resolve this checkpoint's exact SHA from remote HEAD after push; a file cannot contain its own commit hash.
