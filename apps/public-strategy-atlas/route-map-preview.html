@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClimateOS Atlas · Route-first Preview</title>
+<meta name="description" content="Founder route-first interactive map experiment using the existing synthetic Atlas graph.">
+<style>
+:root{color-scheme:dark;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--bg:#07171e;--ink:#effaf6;--muted:#9bb4bd;--line:#23404a;--teal:#66e7c7;--blue:#8db6ff;--orange:#f8b868}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink)}button,a{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,.map-shell:focus-visible{outline:3px solid #faf4a8;outline-offset:3px}
+a{color:#9ce9d7}header{height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 35px;gap:16px;border-bottom:1px solid #1b3b43;background:#0a1c24}
+.logo{display:flex;align-items:center;gap:15px}.mark{width:42px;height:42px;border:1px solid #7edec7;border-radius:50%;display:grid;place-items:center;position:relative;color:#c7fff3;font-size:15px;font-weight:900}.mark:after{content:"";position:absolute;right:-4px;top:18px;background:#ffb968;width:7px;height:7px;border-radius:50%}.brand small{letter-spacing:.18em;font-size:10px;font-weight:800;color:#82aeb6}.brand strong{display:block;font-size:19px;font-weight:750;letter-spacing:-.5px;margin-top:5px}.topright{display:flex;gap:12px;align-items:center}.tag{font-size:11px;white-space:nowrap;border:1px solid #3d6054;background:#17362f;color:#b9ead7;border-radius:40px;padding:8px 12px}.quiet-link{text-decoration:none;background:#142b33;border:1px solid #33505a;padding:11px 15px;border-radius:10px;font-size:12px}
+.hero{display:flex;align-items:end;justify-content:space-between;padding:31px 36px 16px;gap:20px}.eyebrow{letter-spacing:.22em;color:#7bafa9;font-size:10px;font-weight:900}.hero h1{font-weight:760;font-size:clamp(27px,3.2vw,45px);letter-spacing:-1.8px;line-height:1.13;margin:11px 0 8px}.hero h1 em{color:#80d9c4;font-style:normal}.hero p{margin:0;max-width:650px;color:#a0b8bc;font-size:13px;line-height:1.65}.controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center}.control{border:1px solid #2a4850;border-radius:11px;color:#c2d8d9;background:#122a33;padding:10px 13px;font-size:12px}.control[aria-pressed=true]{border-color:#71cdb5;color:#b9f7e7;background:#173b37}.control:hover{background:#1b3b44}
+.layout{padding:0 24px 18px}.map-frame{position:relative;height:min(68vh,640px);min-height:475px;overflow:hidden;border:1px solid #24414a;border-radius:20px;background:radial-gradient(circle at 45% 30%,#0e3032,#0b2129 55%,#081c24 100%);box-shadow:inset 0 0 85px #02111780}
+.map-shell{width:100%;height:100%;overflow:auto;scrollbar-color:#46636a #10252d;scrollbar-width:thin;outline:0}.map-shell svg{display:block;min-width:1260px;height:auto}
+.grid-dot{fill:#b6f0dd;opacity:.08}.line-back{fill:none;stroke:#28434a;stroke-width:17;stroke-linecap:round}.line-colour{fill:none;stroke-width:5.5;stroke-linecap:round;stroke-linejoin:round}.line-colour.teal{stroke:var(--teal)}.line-colour.blue{stroke:var(--blue)}.line-colour.candidate{stroke:var(--orange);stroke-width:3;stroke-dasharray:5 10}.route-segment{cursor:pointer}.route-segment:focus-visible{outline:none}.route-segment:focus-visible .line-colour{stroke-width:10}.route-segment.dim,.stop.dim{opacity:.13}.route-segment:not(.dim){transition:opacity .16s}.stop{cursor:pointer;transition:opacity .16s}.stop:focus-visible{outline:none}.stop:focus-visible .stop-ring{stroke:#fff6c2;stroke-width:4}.stop-ring{stroke:#0b2228;stroke-width:5}.stop-ring.teal{fill:var(--teal)}.stop-ring.blue{fill:var(--blue)}.stop-ring.candidate{fill:var(--orange)}.stop-inner{fill:#0d2730}.stop-label{font-size:13px;fill:#effaf7;font-weight:700;pointer-events:none}.stop-sub{font-size:10px;fill:#8eabb3;pointer-events:none}.stop.emphasis .stop-ring{stroke:white}.lane-title{font-size:11px;fill:#9cb7bf;letter-spacing:1.7px;font-weight:800}.lane-no{fill:#6c999a;font-size:10px;font-weight:700}.map-hint{fill:#658c94;font-size:12px}
+.map-meta{position:absolute;top:18px;left:22px;background:#0c2530ce;border:1px solid #34505c;padding:10px 13px;border-radius:10px;max-width:320px;pointer-events:none}.map-meta strong{display:block;font-size:11px;letter-spacing:.09em;color:#caeee9}.map-meta span{font-size:11px;color:#9fbbc2;line-height:1.5}
+.map-tools{position:absolute;right:18px;top:18px;display:flex;gap:7px}.map-tools button{height:34px;min-width:34px;border-radius:9px;border:1px solid #45606a;background:#112e36d9;color:#dbf4ee;font-weight:800}
+.selection{position:absolute;right:18px;bottom:18px;width:min(350px,calc(100% - 36px));background:#f6fbf8;color:#163940;border-radius:15px;padding:17px 19px;box-shadow:0 14px 50px #0007;min-height:142px}.selection.hidden{display:none}.selection .mini{color:#688a89;font-size:10px;font-weight:850;letter-spacing:.13em}.selection h2{font-size:22px;margin:7px 0}.selection p{font-size:12px;color:#4a6c6d;line-height:1.55;margin:8px 0}.selection .chip{display:inline-block;font-size:10px;font-weight:700;background:#e2eeea;border-radius:7px;padding:4px 7px;color:#3e716b}.selection .actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.selection .actions a,.selection .actions button{border:1px solid #a8c7be;border-radius:8px;color:#174d4b;background:white;text-decoration:none;font-size:11px;padding:8px 10px}.selection .close{position:absolute;right:14px;top:10px;border:0;background:transparent;font-size:20px;color:#6c8c87}
+.bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:16px 12px 0}.legend{display:flex;gap:19px;flex-wrap:wrap}.legend span{font-size:12px;color:#abc6c9;display:flex;align-items:center;gap:8px}.legend i{width:21px;height:4px;border-radius:10px;background:var(--teal)}.legend .blue{background:var(--blue)}.legend .dotted{height:0;border-top:3px dashed var(--orange);background:none}.notes{font-size:11px;color:#7ba0a5;max-width:490px;line-height:1.55}.safety{margin:0 36px 27px;display:flex;gap:14px;justify-content:space-between;align-items:center;color:#91adaf;font-size:11px;line-height:1.6}.safety strong{color:#b6eee0}
+@media(max-width:800px){header{height:auto;min-height:70px;padding:12px 16px}.brand strong{font-size:15px}.topright .tag{display:none}.hero{padding:22px 17px 15px;display:block}.hero h1{font-size:30px}.controls{margin-top:17px}.layout{padding:0 10px 10px}.map-frame{min-height:530px;height:70vh}.map-meta{top:12px;left:12px}.selection{right:9px;bottom:9px}.bottom{padding:15px 7px 0}.safety{margin:8px 17px 20px;display:block}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script src="./atlas-data.js"></script>
+</head>
+<body>
+<header><div class="logo"><div class="mark">CO</div><div class="brand"><small>CLIMATEOS / KNOWLEDGE NETWORK</small><strong>Public Strategy Atlas</strong></div></div><div class="topright"><span class="tag">SYNTHETIC ROUTES · NOT COUNCIL OFFICIAL</span><a class="quiet-link" href="./index.html">Open detailed workspace ↗</a></div></header>
+<section class="hero"><div><span class="eyebrow">FOLLOW THE REASONING</span><h1>Ideas become <em>routes.</em></h1><p>Trace the logic from strategic intent to plans, action, evidence and the connections that need questioning. Select any station to examine its basis.</p></div><div class="controls"><button id="allRoutes" class="control" aria-pressed="true">All routes</button><button id="strategyOnly" class="control" aria-pressed="false">Strategy line</button><button id="planningOnly" class="control" aria-pressed="false">Planning line</button><button id="showCandidates" class="control" aria-pressed="false">Reveal hidden links ···</button></div></section>
+<div class="layout"><div class="map-frame"><div id="mapShell" class="map-shell" role="region" tabindex="0" aria-label="Scrollable knowledge route map"><svg id="routeSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 755" aria-label="Synthetic knowledge route map" role="group"><title>Public Strategy Atlas — two route systems and optional hypothesis links</title></svg></div>
+<div class="map-meta"><strong>ROUTE EXPLORER / EXPERIMENT</strong><span>Every stop is a model node. Every line is an existing typed relationship — not an official policy mapping.</span></div>
+<div class="map-tools"><button id="zoomOut" type="button" aria-label="Zoom out">−</button><button id="zoomIn" type="button" aria-label="Zoom in">+</button><button id="resetView" type="button" aria-label="Reset view">↺</button></div>
+<div id="selection" class="selection hidden" aria-live="polite"><button id="closeSelection" class="close" aria-label="Close station details">×</button><span class="mini" id="selectionKind">ROUTE STATION</span><h2 id="selectionTitle"></h2><span class="chip" id="selectionStatus"></span><p id="selectionText"></p><div class="actions"><a href="./index.html">Explore internal content ↗</a><button id="clearFocus" type="button">Show whole map</button></div></div></div>
+<div class="bottom"><div class="legend"><span><i></i>Strategy / execution</span><span><i class="blue"></i>Land-use / scope</span><span><i class="dotted"></i>Hypothesis, not established</span></div><div class="notes">Lines show types of research relationships, <strong>not achievement percentages</strong>. No official cross-document mappings or actual KPIs have been admitted.</div></div></div>
+<div class="safety"><span><strong>Experimental route-first UI.</strong> Reuses AtlasData (15 synthetic nodes, 16 typed links). This is a design preview and does not replace the current editor, receipts, or review workflow.</span><span>Latest source admission: CSP 6.1 remains PENDING REVIEW</span></div>
+<script>
+(() => {
+'use strict';
+const d=window.AtlasData,byId=new Map(d.nodes.map(n=>[n.id,n]));
+const pos={
+ csp:[108,225],csp6:[340,121],csp8:[350,320],dp:[589,178],op:[828,178],
+ kpi:[1062,103],water:[1058,322],audit:[1322,322],
+ lsps:[117,571],priority:[380,571],lep:[641,483],dcp:[674,661],
+ area:[951,574],scope:[1231,574],candidate:[1320,456]
+};
+const svg=document.getElementById('routeSvg'),shell=document.getElementById('mapShell');
+const NS='http://www.w3.org/2000/svg',el=(name,attrs={})=>{const e=document.createElementNS(NS,name);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));return e};
+const state={view:'all',candidate:false,selected:null,zoom:1};
+function addText(parent,x,y,str,cls){const t=el('text',{x,y,class:cls});t.textContent=str;parent.append(t);return t}
+function pathOf(a,b,candidate){
+ const [x,y]=pos[a],[x2,y2]=pos[b];
+ if(candidate){const hump=Math.min(y,y2)-80;return `M${x} ${y} Q${(x+x2)/2} ${hump} ${x2} ${y2}`;}
+ const dx=x2-x,mid=x+dx*.48;return `M${x} ${y} C${mid} ${y} ${x2-dx*.42} ${y2} ${x2} ${y2}`;
+}
+function available(n){return n.id!=='candidate'||state.candidate}
+function dim(type,ids){return (state.view!=='all'&&type!==state.view) || (state.selected&&!ids.includes(state.selected));}
+function render(){
+ svg.querySelectorAll('.drawn').forEach(e=>e.remove());
+ const root=el('g',{class:'drawn'});svg.append(root);
+ for(let x=35;x<1450;x+=34)for(let y=33;y<755;y+=34)root.append(el('circle',{class:'grid-dot',cx:x,cy:y,r:1.1}));
+ addText(root,44,74,'01 / STRATEGY & DELIVERY','lane-title');addText(root,44,430,'02 / LAND-USE & APPLICABILITY','lane-title');
+ addText(root,990,718,'ALL CONNECTIONS SHOWN ARE SYNTHETIC','map-hint');
+ for(const e of d.edges){
+  if(e.candidate&&!state.candidate)continue;
+  const a=byId.get(e.from),b=byId.get(e.to),type=a.type==='lsps'?'planning':a.type==='csp'?'strategy':'planning';
+  const cl=e.candidate?'candidate':a.type==='lsps'?'blue':'teal';
+  const faded=dim(type,[a.id,b.id]);const group=el('g',{class:'route-segment'+(faded?' dim':''),tabindex:0,role:'button','aria-label':e.kind+' from '+a.label+' to '+b.label});
+  let d0=pathOf(a.id,b.id,!!e.candidate);
+  group.append(el('path',{d:d0,class:'line-back'}));group.append(el('path',{d:d0,class:'line-colour '+cl}));
+  const ti=el('title');ti.textContent=e.id+' / '+e.kind+' — '+(e.candidate?'HYPOTHESIS_ONLY':'SYNTHETIC');group.append(ti);
+  const act=()=>select(e.from,e);group.addEventListener('click',act);group.addEventListener('keydown',v=>{if(['Enter',' '].includes(v.key)){v.preventDefault();act()}});root.append(group);
+ }
+ for(const n of d.nodes){
+  if(!available(n))continue;
+  const [x,y]=pos[n.id],type=n.type==='lsps'?'planning':'strategy';
+  const className=n.type==='candidate'?'candidate':n.type==='lsps'?'blue':'teal';
+  const faded=dim(type,[n.id]);const group=el('g',{class:'stop'+(faded?' dim':'')+(state.selected===n.id?' emphasis':''),tabindex:0,role:'button','aria-label':'Inspect route station '+n.label});
+  const outer=el('circle',{cx:x,cy:y,r:n.id==='csp'||n.id==='lsps'?17:12,class:'stop-ring '+className});
+  group.append(outer,el('circle',{cx:x,cy:y,r:4.2,class:'stop-inner'}));
+  const labelsAbove=['csp6','kpi','lep','area','audit','candidate'].includes(n.id);const ty=labelsAbove?y-28:y+33;
+  addText(group,x-3,ty,n.label,'stop-label');addText(group,x-3,ty+16,n.sub.length>28?n.sub.slice(0,26)+'…':n.sub,'stop-sub');
+  const ti=el('title');ti.textContent=n.label+' — '+n.status;group.append(ti);
+  group.addEventListener('click',()=>select(n.id));group.addEventListener('keydown',v=>{if(['Enter',' '].includes(v.key)){v.preventDefault();select(n.id)}});root.append(group);
+ }
+ for(const b of ['allRoutes','strategyOnly','planningOnly'])document.getElementById(b).setAttribute('aria-pressed',String(({allRoutes:'all',strategyOnly:'strategy',planningOnly:'planning'}[b])===state.view));
+ document.getElementById('showCandidates').setAttribute('aria-pressed',String(state.candidate));
+}
+function select(id,edge=null){
+ const n=byId.get(id);if(!n)return;state.selected=id;
+ document.getElementById('selection').classList.remove('hidden');
+ document.getElementById('selectionKind').textContent=edge?'TYPED PATH / '+edge.id:'ROUTE STATION / '+id.toUpperCase();
+ document.getElementById('selectionTitle').textContent=edge?byId.get(edge.from).label+' → '+byId.get(edge.to).label:n.label;
+ document.getElementById('selectionStatus').textContent=edge?(edge.candidate?'HYPOTHESIS ONLY':'SYNTHETIC · '+edge.kind):'SYNTHETIC · '+n.type.toUpperCase();
+ document.getElementById('selectionText').textContent=edge?'This existing model link is '+edge.kind+'. No official source has been admitted for this link. Query and challenge its evidence before relying on it.':n.detail;
+ render();
+}
+function close(){state.selected=null;document.getElementById('selection').classList.add('hidden');render();}
+for(const [key,view] of [['allRoutes','all'],['strategyOnly','strategy'],['planningOnly','planning']])document.getElementById(key).addEventListener('click',()=>{state.view=view;state.selected=null;document.getElementById('selection').classList.add('hidden');render()});
+document.getElementById('showCandidates').addEventListener('click',()=>{state.candidate=!state.candidate;close()});
+document.getElementById('closeSelection').addEventListener('click',close);document.getElementById('clearFocus').addEventListener('click',close);
+function zoom(next){state.zoom=Math.min(1.45,Math.max(.8,next));svg.style.width=(1450*state.zoom)+'px';svg.style.height=(755*state.zoom)+'px'}
+document.getElementById('zoomIn').addEventListener('click',()=>zoom(state.zoom+.15));
+document.getElementById('zoomOut').addEventListener('click',()=>zoom(state.zoom-.15));
+document.getElementById('resetView').addEventListener('click',()=>{zoom(1);shell.scrollTo({top:0,left:0});close()});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')close()});
+zoom(1);render();
+})();
+</script>
+</body>
+</html>
