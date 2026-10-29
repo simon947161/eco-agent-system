@@ -84,7 +84,7 @@
         const n=state.mode==="coverage"?e.coverage:state.mode==="time"?e.time:null;
         if(n!==null) {
           const fill=el("path",{d,class:"atlas-edge colour"+(dim?" faded":""),
-            stroke:inBranch(a)?(a.type==="lsps"?"#477fad":"#238e86"):"#8c9fa7",
+            style:"stroke:"+(a.type==="lsps"?"#477fad":"#238e86")+";",
             "stroke-dasharray":(n*100)+" 100",pathLength:"100"});
           makeTitle(fill,"示例填充 "+Math.round(n*100)+"%；与真实 Council 进度无关");base.append(fill);
         }
