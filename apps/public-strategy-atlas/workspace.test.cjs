@@ -1,0 +1,30 @@
+const assert=require('node:assert/strict'),fs=require('node:fs');
+const d=require('./atlas-data.js'),m=require('./atlas-model.js'),w=require('./atlas-workspace.js'),source=require('./sources/csp61-admission.js');
+(async()=>{
+ const original=JSON.stringify(d),empty=await w.create(d),id='obs-csp-summary-61:clause-61',base=d.contentItems.find(c=>c.id===id);
+ const first=await w.commit(empty,d,{targetId:id,content:{title:'Local monitoring annotation',text:'Synthetic research annotation: require a reporting period.'},reason:'Separate local interpretation from the public source'});
+ assert(Object.isFrozen(first.revisions[0].content));assert.equal(empty.revisions.length,0);assert.equal(JSON.stringify(d),original);
+ assert.deepEqual(await w.validate(first,d),[]);
+ const root='obs-csp-summary-61:content';assert.notEqual((await w.subtreeReceipt(empty,d,root)).digest,(await w.subtreeReceipt(first,d,root)).digest);assert.equal((await w.subtreeReceipt(empty,d,'csp:content')).digest,(await w.subtreeReceipt(first,d,'csp:content')).digest);assert.equal((await w.subtreeReceipt(first,d,root,-1)).digest,(await w.subtreeReceipt(empty,d,root)).digest);assert.equal(w.compare(w.fields(base),first.revisions[0].content).length,2);
+ await assert.rejects(()=>w.commit(first,d,{targetId:id,expectedHead:null,content:w.fields(base),reason:'stale editor'}),/CONFLICT/);
+ const second=await w.commit(first,d,{targetId:id,expectedHead:first.revisions[0].digest,content:{...first.revisions[0].content,text:'Corrected synthetic note'},action:'SUPERSEDE',reason:'Correct the research wording'});
+ const reverted=await w.revert(second,d,{targetId:id,expectedHead:second.revisions[1].digest,revertsTo:first.revisions[0].digest,reason:'Restore first annotation'});
+ assert.deepEqual(reverted.revisions[2].content,first.revisions[0].content);assert.equal(reverted.revisions.length,3);
+ const baseRevert=await w.revert(reverted,d,{targetId:id,expectedHead:reverted.revisions[2].digest,reason:'Return local text to original base'});assert.deepEqual(baseRevert.revisions[3].content,w.fields(base));
+ const retracted=await w.commit(baseRevert,d,{targetId:id,expectedHead:baseRevert.revisions[3].digest,content:w.fields(base),action:'RETRACT',reason:'Withdraw local interpretation'});
+ assert.equal(w.replay(retracted,d).get(id).localState,'RETRACTED');assert.equal(w.replay(retracted,d,0).get(id).text,first.revisions[0].content.text);assert.equal(w.replay(retracted,d,-1).get(id).text,base.text);
+ assert.deepEqual(await w.validate(retracted,d),[]);assert(w.extendsHistory(first,retracted));assert(!w.extendsHistory(retracted,first));
+ assert.deepEqual(await w.importWorkspace(JSON.stringify(retracted),d,await m.objectDigest(retracted)),retracted);
+ await assert.rejects(()=>w.importWorkspace(JSON.stringify(retracted),d,'sha256:'+'0'.repeat(64)),/CHECKPOINT/);
+ for(const mutate of [x=>x.revisions[0].content.text='tampered',x=>x.events[0].reason='rewritten',x=>x.revisions[1].parentRevisionDigest=null,x=>x.revisions[0].classification='EXPLICIT_OFFICIAL',x=>x.signature='pretend-signature',x=>x.baseDigest='sha256:'+'0'.repeat(64)]){const copy=structuredClone(retracted);mutate(copy);await assert.rejects(()=>w.importWorkspace(JSON.stringify(copy),d));}
+ await assert.rejects(()=>w.commit(empty,d,{targetId:id,content:{...w.fields(base),status:'EXPLICIT_OFFICIAL'},reason:'bad promotion'}));
+ await assert.rejects(()=>w.commit(empty,d,{targetId:id,content:w.fields(base),reason:''}));
+ await assert.rejects(()=>w.importWorkspace('x'.repeat(2*1024*1024+1),d),/TOO_LARGE/);
+ await assert.rejects(()=>w.commit(empty,d,{targetId:id,content:w.fields(base),reason:'bad date',observedAt:'2026-02-30T00:00:00Z'}));
+ const contested=await w.commit(first,d,{targetId:id,expectedHead:first.revisions[0].digest,content:first.revisions[0].content,reason:'Challenge the interpretation',action:'CONTEST'});assert.equal(w.head(contested,id).state,'CONTESTED');
+ const a=w.assessAdmission(source);assert.equal(a.status,'ADMISSION_PENDING_REVIEW');assert(a.blockers.includes('REUSE_PERMISSION_UNKNOWN'));assert(a.blockers.includes('HUMAN_REVIEW_PENDING'));assert(a.blockers.includes('REVISION_NOT_CONFIRMED'));assert(a.blockers.includes('APPLICABILITY_UNKNOWN'));assert(!a.blockers.includes('EXTRACTION_NOT_VERIFIED'));
+ const corrupt=structuredClone(source);corrupt.extraction.text='Changed';assert(w.assessAdmission(corrupt).blockers.includes('EXTRACTION_NOT_VERIFIED'));
+ assert.deepEqual(source,JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'sources/csp61-admission.json'),'utf8')));
+ assert.equal(JSON.stringify(d),original);
+ console.log('PASS: edit/diff, immutable source/history, supersede/revert/retract/replay, stale editor conflict, monotonic history, import roundtrip/checkpoint/tamper/signature/promotion rejection, source admission pending gates and excerpt hash');
+})().catch(e=>{console.error(e);process.exitCode=1});

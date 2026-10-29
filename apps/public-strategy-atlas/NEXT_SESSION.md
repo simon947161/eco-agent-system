@@ -1,51 +1,45 @@
 # Atlas — authoritative continuation checkpoint
 
 Date: 2026-10-29 Australia/Sydney.
-Status: ENGLISH_UI_PASS / RECURSIVE_CONTENT_SLICE_PASS / M1_ADMISSION_PENDING / M2_PARTIAL / NOT_DEPLOYED.
+Status: M1_A_BYTE_ANCHOR_PASS_ADMISSION_PENDING / M1_B_LOCAL_REVISIONS_BROWSER_PASS / M2_READABILITY_EXTENDED / NOT_DEPLOYED.
 Repository: simon947161/eco-agent-system.
 Only remote engineering branch: feature/public-strategy-atlas-web-mvp-20261029.
-Review: Draft PR130; do not merge.
+Draft PR130: no merge. Read its latest engineering continuation comment too.
 
-## Remote baseline and continuity
+## Baseline and durable handoff
 
-This stage started from remote 4547f30ea53d13783cfd0c020b0f298409daba5f. The previous local engineering commit and connector-created remote commit had identical trees; the checkout was aligned to the remote parent before this work. Current HEAD must be read from GitHub because this checkpoint is contained in its own commit. Never treat a self-written hash as proof of push. Verify the remote readback after committing. No automatic background work is running.
+Started from remote 3024a6acf597602167be8a19bead200df9dd821c and PR130 continuation comment 6491788231. Existing English recursive explorer (15 topics / 127 internal items) retained, not rebuilt. Work used an isolated local checkout branch at that remote parent without resetting research history. This file is inside the current commit; determine actual HEAD from GitHub and verify remote readback, not a self-written hash. No background execution is running.
 
-M0 was not restarted. The V1.3 research/build authority was not rewritten. Current user direction: English website and deeper decomposition inside every content topic; continue toward the full system.
+## Implemented and actually verified
 
-## Implemented this stage
+- CSP 6.1 official summary fetched as actual PDF bytes, SHA-256 verified, rendered/visually inspected and extracted using a bounded page-1 word-origin anchor. Receipt/short excerpt: sources/csp61-admission.json and tested classic-script mirror. Original PDF/page image not redistributed because reuse permission is unknown. verify-source.py reproduces the byte/anchor checks with a separately obtained PDF.
+- Admission stages stay distinct. Observation/bytes/extraction PASS. Official current revision, reuse permission, legal effective scope and identified human approval remain incomplete; ADMISSION_PENDING_REVIEW, not ADMITTED. No CSP→DP/OP mapping; official graph assertions still 0.
+- Local annotation editor with before/after version comparisons; immutable CORRECT/SUPERSEDE/CONTEST/RETRACT/REVERT revisions and linked correction events; target-head optimistic conflict, replay and child-linked local subtree receipts. Original source content/status never changes.
+- Explicit local IndexedDB Save/Load, portable JSON import/export and independent verifier. Atomic stored-head/prefix checks reject stale tabs or overwritten/truncated history. Actual two-tab conflict test passed. No silent persistence/restoration/upload. Imported/saved annotations remain LOCAL_ANNOTATION.
+- Overview labels remain 13px independent of graph zoom; observed public nodes blue, local active/contested/retracted markers distinct. History links source anchors and shows projected SUPERSEDED_HISTORY without mutating earlier versions.
+- Actual desktop/390px iframe, real export/download/import and 60/200 fixtures rechecked. Details and screenshots: qa/ADMISSION_WORKSPACE_RESULTS.md.
 
-- English interface and current engineering guide; historical research/QA preserved.
-- 15 synthetic relationship topics and 127 recursively addressable content items. Six-level synthetic trails: topic → section → clause → action → indicator → evidence. All existing topics have internal breakdowns. Public observations remain separate; observed CSP summary has document/Objective 6/clause 6.1 without invented official descendants.
-- Native nested disclosure, searchable internal text, owner-labelled results, breadcrumbs, parent and topic return, subtree focus and explicit leaves. Search displays at most 12 results.
-- O2 progressive expansion with stable coordinates, fit/zoom and selectable relationship/containment links.
-- Actual 60/200 synthetic layout fixtures exposed through Layout demo. Full fixture rendering, deep selection and collapse tested in Chrome; not full real-corpus readability acceptance.
-- Item and child-linked subtree receipts, linked build ADD event, public/synthetic JSON snapshot export and independent verify-snapshot.cjs. Optional separately retained expected digest. No new dependency or purchase.
-- Bounded cross-root structural convergence detection with actual path IDs and challenge questions, plus retained authored hypotheses/counterexample. HYPOTHESIS_ONLY, not semantic discovery or official validation.
+## Run and verify
 
-## Executed verification
-
-Run at repository root:
-
+Website directory: python -m http.server 8877 --bind 127.0.0.1; open http://127.0.0.1:8877/.
+Repository root:
 - node apps/public-strategy-atlas/model.test.cjs
 - node apps/public-strategy-atlas/content.test.cjs
+- node apps/public-strategy-atlas/workspace.test.cjs
+- python apps/public-strategy-atlas/verify-source.py OFFICIAL_PDF
+- node apps/public-strategy-atlas/verify-workspace.cjs WORKSPACE_JSON [sha256:CHECKPOINT]
 - node apps/public-strategy-atlas/audit-cli.cjs
-- node apps/public-strategy-atlas/verify-snapshot.cjs EXPORTED_JSON [EXPECTED_DIGEST]
-- node --check apps/public-strategy-atlas/atlas.js
 
-PASS. Actual browser export was downloaded and independently verified. Desktop Chrome and 390px iframe checks, screenshots, negative tests, source boundaries and exact limits: qa/ENGLISH_CONTENT_RESULTS.md. Current receipt: qa/snapshot-receipt.json. Raw synthetic fixture bytes remain unchanged.
+All described tests actually ran; altered source bytes and unsupported signature/hash/promotion cases rejected. Source Python checker requires pdfplumber already present here; website adds no installed dependency. Direct-file source/browser persistence may differ by browser; HTTP tested. QA local saved workspaces are synthetic test data in the browser, not GitHub business records.
 
-Local run: in apps/public-strategy-atlas, python -m http.server 8877 --bind 127.0.0.1; open http://127.0.0.1:8877/. No installation required. This Work stage used a temporary private engineering preview; no registration or deployment.
+## Next executable work
 
-## Next smallest system step
+1. Obtain/record an explicit permitted reuse basis and independent human review of current adopted-version equivalence/geographic/effective scope for this exact PDF digest. Keep unknown gates pending until evidence exists. The UI does not issue approvals/signatures.
+2. Implement a deliberate divergent-workspace reconciliation preview (three-way base/local/import diffs) that appends resolutions without replacing retained histories. Current conflict handling rejects divergent overwrite and asks the user to preserve/export unsaved work; no automatic merge.
+3. Continue keyboard/screen-reader acceptance and real-corpus readability checks; do not reinterpret synthetic density fixtures as official-content completeness.
 
-Complete one real source-to-content admission chain for CSP one-page summary page 1 §6.1: original-byte digest, permitted reuse, official revision/adoption context, exact locator, geographic/effective scope and independent review. Do not transform a public-text observation or synthetic internal decomposition into a verified CSP→DP/OP mapping. Then implement a reviewable content-version diff/editing lifecycle with retained previous receipts and explicit conflict handling; keep official admission separate from local edits.
+## Limitations and boundaries
 
-## Open limits
+The full authoritative system is not complete. No admitted official relation, actual KPI, server collaboration, independent witness or official cryptographic signature. A privileged writer can rewrite a whole unsigned history; retain external checkpoints for stronger comparison. Browser storage can be lost; export explicitly. Full physical-mobile/Safari/Firefox/WCAG acceptance untested. Original R0-K LOCAL_UNAVAILABLE remains unchanged.
 
-Full system remains incomplete. Official graph mappings = 0; actual KPI = UNKNOWN. Source byte/permission/current applicability admission incomplete. No persistent content editor, version-diff interface, database, independent witness/signature or protection against whole-history rewrite. Two linked repository fixture/build events are not an official document history. Git preserves engineering history; browser exports do not silently persist edits.
-
-Content validation allows at most 500 records / ancestry depth 20, and graph views cap at 200. 60/200 checks use generated synthetic items. Physical mobile, Safari/Firefox, screen-reader/full accessibility and multi-screen acceptance not executed. Original R0-K remains LOCAL_UNAVAILABLE. Do not claim recovery.
-
-## Boundaries
-
-Public/synthetic materials only. No Council nonpublic records, employer systems, personal cases, new procurement, deployment, PR129/main changes or merge. One remote writer at a time. For every verified stage: update this checkpoint, run checks/privacy review, commit and push through authorised GitHub access, then read remote HEAD. If sync fails, record SYNC_BLOCKED. A local Work checkout alone is not a durable handoff.
+Public/synthetic only. No Council nonpublic records, employer/internal accounts or systems, personal cases, new procurement, deployment, PR129/main changes or merge. One remote writer at a time. Each verified stage: checks/privacy review, commit/push to the only remote branch, update this checkpoint and remotely verify HEAD. If sync fails, record SYNC_BLOCKED. Do not save the only handoff in Work scratch.
