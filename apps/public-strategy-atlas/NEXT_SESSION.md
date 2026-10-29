@@ -6,6 +6,16 @@ Repository: simon947161/eco-agent-system.
 Only remote engineering branch: feature/public-strategy-atlas-web-mvp-20261029.
 Draft PR130: no merge. Read its latest engineering continuation comment too.
 
+## Founder V1.4 route-first correction — highest UI priority (2026-10-29)
+
+Founder examined `qa/workspace-desktop.jpg` and rejected the *three-column management-dashboard experience* as the principal Atlas metaphor. The core product must be a **route/line map of knowledge modules and logic**: strategic/planning spines, branching stops, visible and hidden intersections, and auditable evidence behind every connection. The editor/history/sidebar become contextual tools, not the main composition. This **does not invalidate the byte-backed CSP 6.1, local editing, two-tab conflict, 127 recursive items, or verified tests**.
+
+- Authoritative new implementation direction: `docs/research/public-strategy-atlas/FOUNDER_UX_V1_4_ROUTE_FIRST_DIRECTIVE_20261029.md`.
+- Actual exploratory code: `apps/public-strategy-atlas/route-map-preview.html`, linked from `index.html`. It imports the existing `atlas-data.js` (no parallel source dataset), draws two spatially separated route corridors, toggles the two candidate links, selects stations, gives contextual details and zoom controls. **Prototype only; not yet the default Atlas main view.**
+- New `route-map.test.cjs` supplies deterministic mock-DOM regression. Connector-executed JS syntax and mock-DOM initialization/selection/candidate/filter checks PASS; **actual route preview browser/screenshot QA NOT_TESTED** at this checkpoint.
+- **Next FIRST task:** implement V1.4 U1 route-first as **the actual main index page** using existing model/evidence/history editor APIs, with station→six-level-content drill-down, typed-edge inspection, optional slide-over rather than full-time sidebars, keyboard/text alternative, 1440×900 and 390px Chrome visual QA. Then U2 audit/history overlays, U3 60/200 route density. Run previous tests and preserve M1 admission gates. **Do not return another study-only deliverable.**
+- Keep Draft PR #130 and the only engineering branch. Commit+push and read remote HEAD on completion. Do not merge, deploy, purchase, or access Council internal material.
+
 ## Baseline and durable handoff
 
 Started from remote 3024a6acf597602167be8a19bead200df9dd821c and PR130 continuation comment 6491788231. Existing English recursive explorer (15 topics / 127 internal items) retained, not rebuilt. Work used an isolated local checkout branch at that remote parent without resetting research history. This file is inside the current commit; determine actual HEAD from GitHub and verify remote readback, not a self-written hash. No background execution is running.
