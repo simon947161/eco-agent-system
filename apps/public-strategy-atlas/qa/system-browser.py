@@ -54,6 +54,15 @@ with sync_playwright() as p:
   page.locator('#runCalculation').click()
   expect(page.locator('#calculationMessage')).to_contain_text('REJECTED: UNADMITTED_INPUTS')
   page.screenshot(path=str(OUT/f'ledger-{width}.png'))
+  page.keyboard.press('Escape')
+  page.locator('[data-node-id=area]').focus();page.keyboard.press('Enter')
+  page.get_by_role('button',name='Knowledge & work dossier',exact=True).click()
+  page.get_by_role('button',name='Where & when',exact=True).click()
+  for text in ['SYNTHETIC_ONLY','REJECTED_REGION','REJECTED_DRAFT','REJECTED_TIME']:
+   expect(page.locator('#scopeResults')).to_contain_text(text)
+  page.screenshot(path=str(OUT/f'applicability-{width}.png'))
+  page.locator('#scopeType').fill('PARCEL');page.locator('#checkScope').click()
+  expect(page.locator('#scopeResults')).to_contain_text('REJECTED_SPATIAL_GRAIN')
   with page.expect_download() as download:
    page.locator('#toolsMenu>summary').click();page.locator('#exportBtn').click()
   target=Path(f'/tmp/atlas-domain-{width}.json');download.value.save_as(str(target))

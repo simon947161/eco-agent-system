@@ -1,3 +1,13 @@
+# Active V1.6 checkpoint — E6 applicability and historical queries delivered
+
+Previous verified remote `3f07b3272410ab2c242bc3fb01c91d687c477545` (E5). Read current remote HEAD.
+
+E6 implements AtlasExecution timeRange/applicability/scopeIndex/asOf, context-filtered paths and visible wrong-region/draft/expired/parcel/legal-effect rejection. Historical source version conflicts remain explicit. Twelve native suites + desktop/mobile real Chromium system checks PASS; evidence qa/E6_APPLICABILITY_RESULTS.md and qa/system/native-e6.json. Fixtures are synthetic; no real legal applicability or polygon is admitted. Real sources remain proxy BLOCKED_BY_PERMISSION; official admission PENDING.
+
+Next exact step E7: add AtlasWorkspace.previewMerge/resolveMerge, checkpoint-bound BASE/LOCAL/IMPORT field choices, archived imported history and appended RESOLVE events; wire conflict import preview UI and independent verifier. Preserve legacy workspace format and stale-save rejection. Then E8 explainable discovery/review, E9 full product integration and E10 matrix. PR #130 remains Draft, no deployment/merge/main/PR129 changes.
+
+--- Previous checkpoint ---
+
 # Active V1.6 checkpoint — E5 reproducible ledger receipts delivered
 
 Previous verified remote `5728b699cc78ea5d0962dd8ccf427f2acb9b60f7` (E4). Read current remote HEAD before resuming.

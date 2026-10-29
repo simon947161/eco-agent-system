@@ -3,10 +3,10 @@
 'use strict';
 const M=typeof module!=='undefined'?require('./atlas-model.js'):root.AtlasModel;
 function assertions(d){return [...d.assertions,...(d.domain?.assertions||[])];}
-function shortestPath(d,from,to,{direction='forward',mode='DISCOVERY_CANDIDATE',maxVisited=10000}={}){
+function shortestPath(d,from,to,{direction='forward',mode='DISCOVERY_CANDIDATE',maxVisited=10000,context=null}={}){
  if(!['forward','reverse','both'].includes(direction)||!['KNOWN_LINK','DISCOVERY_CANDIDATE'].includes(mode)||!Number.isInteger(maxVisited)||maxVisited<1||maxVisited>100000)throw Error('QUERY_BOUNDS');
  const entities=M.domainIndex(d);if(!entities.has(from)||!entities.has(to))throw Error('QUERY_ENDPOINT');
- const edges=assertions(d).filter(a=>!['CONTRADICTED','SUPERSEDED','RETRACTED','CONTESTED'].includes(a.status||a.state));
+ const edges=assertions(d).filter(a=>(!context||![a,entities.get(a.to)].filter(Boolean).some(r=>applicability(r,context).status.startsWith('REJECTED')))&&!['CONTRADICTED','SUPERSEDED','RETRACTED','CONTESTED'].includes(a.status||a.state));
  // No authority verifier is configured; local claims cannot create KNOWN_LINK.
  if(mode==='KNOWN_LINK')return {status:'UNKNOWN',path:[],nodeIds:[],reason:'No officially admitted authority-backed relationships are configured.',truncated:false};
  const adjacency=new Map();
@@ -79,5 +79,40 @@ async function verifyDerivation(d,receipt){
   return {integrity:true,current,status:current?'CURRENT_INPUTS':'INVALIDATED_INPUT_REVISION'};
  }catch{return {integrity:false,current:false,status:'INVALID_DERIVATION'};}
 }
-const api={derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
+function day(value){return typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&Number.isFinite(Date.parse(value))&&new Date(value).toISOString().slice(0,10)===value;}
+function timeRange(record){
+ const data=record.data||{},scope=record.scope||{};
+ let from=data.validFrom||data.period?.from||scope.period?.from||record.validFrom,to=data.validTo||data.period?.to||scope.period?.to||record.validTo;
+ const fiscal=typeof data.period==='string'?/^FY(\d{4})-(\d{2})$/.exec(data.period):null;
+ if(fiscal&&Number(fiscal[2])===(Number(fiscal[1])+1)%100){from=fiscal[1]+'-07-01';to=(Number(fiscal[1])+1)+'-06-30';}
+ return day(from)&&day(to)&&from<=to?{from,to}:null;
+}
+function applicability(record,context){
+ if(!record||!context||!day(context.date)||!context.region||context.region==='UNKNOWN')return {status:'UNKNOWN',reason:'Explicit valid date and region required.'};
+ const data=record.data||{},region=data.area||record.scope?.region||record.region;
+ if(!region||region==='UNKNOWN')return {status:'UNKNOWN',reason:'Source geography is unconfirmed.'};
+ if(region!==context.region)return {status:'REJECTED_REGION',reason:'Jurisdiction/area differs; shared wording is insufficient.'};
+ if(context.spatialType&&!(data.spatialType||record.scope?.spatialType))return {status:'UNKNOWN',reason:'Spatial grain is not established.'};
+ if(context.spatialType&&context.spatialType!==(data.spatialType||record.scope?.spatialType))return {status:'REJECTED_SPATIAL_GRAIN',reason:'Administrative/service/parcel scopes are not interchangeable.'};
+ const interval=timeRange(record);if(!interval)return {status:'UNKNOWN',reason:'Effective interval is not established. A planning horizon is not an effective date.'};
+ if(context.date<interval.from||context.date>interval.to)return {status:'REJECTED_TIME',reason:'Selected date lies outside this effective interval.'};
+ if(data.legalState==='DRAFT')return {status:'REJECTED_DRAFT',reason:'A draft is not an adopted control.'};
+ if(data.supersededAt&&(!day(data.supersededAt)||context.date>=data.supersededAt))return {status:'REJECTED_SUPERSEDED',reason:'Selected source revision has been superseded at this date.'};
+ if(context.soughtEffect&&!data.legalRole)return {status:'UNKNOWN',reason:'Legal role is not established.'};
+ if(context.soughtEffect&&data.legalRole!==context.soughtEffect)return {status:'REJECTED_LEGAL_EFFECT',reason:'LEP statutory control, DCP guidance and strategic policy have different legal roles.'};
+ if(context.sourceRevision&&context.sourceRevision!==(data.sourceRevision||record.revisionId))return {status:'REJECTED_REVISION',reason:'The requested document revision does not match.'};
+ if(record.kind==='StatutoryControl'&&data.legalState!=='ADOPTED')return {status:'UNKNOWN',reason:'Adoption/effectiveness not verified.'};
+ if(record.classification==='SYNTHETIC_SCENARIO')return {status:'SYNTHETIC_ONLY',reason:'Compatible fixture scope only; no real legal applicability.'};
+ return {status:'REQUIRES_REVIEW',reason:'Matching metadata does not establish legal applicability or authorised admission.'};
+}
+function scopeIndex(d){
+ const regions=new Map();for(const r of d.domain?.entities||[]){const area=r.data?.area||r.scope?.region||'UNKNOWN';if(!regions.has(area))regions.set(area,[]);regions.get(area).push({id:r.id,revisionId:r.revisionId,kind:r.kind,interval:timeRange(r)});}return regions;
+}
+function asOf(d,context){
+ const matched=new Map(),rejected=[];
+ for(const revision of d.domain?.revisions||[]){if(!revision.record.kind||context.kind&&revision.record.kind!==context.kind)continue;const r={...revision.record,revisionId:revision.id},result=applicability(r,context);if(!['SYNTHETIC_ONLY','REQUIRES_REVIEW'].includes(result.status)){rejected.push({id:r.id,revisionId:r.revisionId,...result});continue;}if(!matched.has(r.id))matched.set(r.id,new Map());matched.get(r.id).set(r.data.sourceRevision||'LOCAL',r);}
+ const records=[],conflicts=[];for(const [id,versions] of matched){if(versions.size>1)conflicts.push({id,status:'CONFLICTING_SOURCE_REVISIONS',revisionIds:[...versions.values()].map(v=>v.revisionId)});else records.push([...versions.values()][0]);}
+ return {records,conflicts,rejected,officialApplicability:'UNKNOWN'};
+}
+const api={timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

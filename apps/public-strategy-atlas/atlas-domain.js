@@ -72,6 +72,12 @@ async function addWorkBreakdowns(d,m){
   for(const [from,to,predicate] of links){const a=entity(from),b=entity(to);x.assertions.push(await addRevision(x,{...common,id:'wbs-link:'+from+':'+predicate+':'+to,from,to,fromRevisionId:a.versionId||a.revisionId,toRevisionId:b.versionId||b.revisionId,predicate,method:'synthetic-work-breakdown-1',issuer:'local-researcher',reviewer:null,evidenceRefs:[],counterevidenceRefs:common.gaps.map(reason=>({reason}))},m));}
  }
 }
+async function addApplicabilityFixtures(d,m){
+ const x=d.domain,common={stationId:'area',state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,gaps:['Synthetic scope falsification case. No real LEP/DCP/parcel control is inferred.'],scope:{region:'SYNTHETIC_PLACE',period:{from:'2026-07-01',to:'2027-06-30'},boundary:'DEMO_LAND_SCOPE'}};
+ const cases=[['current','SYNTHETIC_PLACE','ADOPTED','LEP_STATUTORY','2026-07-01','2027-06-30'],['wrong-region','OTHER_SYNTHETIC_PLACE','ADOPTED','LEP_STATUTORY','2026-07-01','2027-06-30'],['draft','SYNTHETIC_PLACE','DRAFT','DCP_GUIDANCE','2026-07-01','2027-06-30'],['expired','SYNTHETIC_PLACE','ADOPTED','LEP_STATUTORY','2024-07-01','2025-06-30']];
+ for(const [suffix,area,legalState,legalRole,validFrom,validTo] of cases){const entity=await addRevision(x,{...common,id:'legal-fixture:'+suffix,kind:'StatutoryControl',label:'Synthetic land control — '+suffix,data:{status:'SYNTHETIC',area,legalState,legalRole,spatialType:'SCENARIO_AREA',validFrom,validTo,sourceRevision:'synthetic-source-'+suffix,adoptedAt:legalState==='ADOPTED'?validFrom:null,currentAsOf:'2026-10-29',parcelGeometry:'UNKNOWN'}},m);x.entities.push(entity);
+ x.assertions.push(await addRevision(x,{...common,id:'legal-candidate:'+suffix,from:'area',to:entity.id,fromRevisionId:d.nodes.find(n=>n.id==='area').versionId,toRevisionId:entity.revisionId,predicate:'RESEARCH_CANDIDATE',method:'synthetic-spatial-falsification-1',issuer:'local-researcher',reviewer:null,evidenceRefs:[],counterevidenceRefs:common.gaps.map(reason=>({reason}))},m));}
+}
 async function migrateDataset(base,cases,m,catalogue=null){
  if(base.domain){if(!await verify(base,m))throw Error('INVALID_DOMAIN');return structuredClone(base);}
  if(m.validate(base).length)throw Error('INVALID_BASE');
@@ -90,6 +96,7 @@ async function migrateDataset(base,cases,m,catalogue=null){
   }
  }
  await addWorkBreakdowns(d,m);
+ await addApplicabilityFixtures(d,m);
  if(catalogue)x.sourceCatalogue=structuredClone(catalogue);
  if(!await verify(d,m))throw Error('MIGRATION_FAILED');return d;
 }
