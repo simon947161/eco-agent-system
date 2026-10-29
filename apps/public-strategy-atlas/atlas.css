@@ -3,3 +3,5 @@
 /* M0 browser QA: retain usable labels, search and touch targets. */
 .canvas-shell svg{min-width:1500px;flex-shrink:0}.topbar,.identity{min-width:0}.topbar{flex-wrap:wrap}.eyebrow{overflow-wrap:anywhere}.relation-list button,.toggle-row,.mode-switch button{min-height:44px}.atlas-node.candidate rect{stroke:#9b6727;stroke-dasharray:5 3}.atlas-node text.sub{font-size:11px}
 @media(max-width:960px){.sidebar input[type=search],.sidebar label[for=search]{display:block}.sidebar label[for=search]{margin-bottom:0}.canvas-shell{flex:none;height:500px}.canvas-shell svg{min-width:1500px;max-height:none}.inspector{scroll-margin-top:12px}}
+
+.expansion-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.expansion-controls label{min-height:44px;display:flex;align-items:center;gap:8px}.expansion-controls span{font-size:12px;color:#59737e}#nodeAudit{overflow-wrap:anywhere}#details{overflow-wrap:anywhere}.top-actions{flex-wrap:wrap}

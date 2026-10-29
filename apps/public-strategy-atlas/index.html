@@ -24,7 +24,7 @@
       </div>
       <div class="top-actions">
         <span class="draft-tag">合成演示 · 非 Council 官方</span>
-        <button id="aboutBtn" class="subtle-btn" type="button">关于与限制</button>
+        <button id="auditBtn" class="subtle-btn" type="button">审计与版本</button><button id="discoveryBtn" class="subtle-btn" type="button">发现暗线</button><button id="sourcesBtn" class="subtle-btn" type="button">来源核验</button><button id="aboutBtn" class="subtle-btn" type="button">关于与限制</button>
       </div>
     </header>
     <div class="notice" role="note"><strong>M0 工程起点：</strong>节点、连线、进度均为虚构示例。官方目录链接仅用于引导核对，不构成条款对应、法律解释、Council 实施或绩效证明。</div>
@@ -73,7 +73,7 @@
           <span id="modeExplanation">演示性核验比例，仅用于说明视觉语义；并非 Council 核验覆盖率。</span>
           <span class="micro">稳定布局 · 不等长分支 · 点击查看</span>
         </div>
-        <div class="canvas-shell" tabindex="0" role="region" aria-label="可横向滚动的关系图">
+        <div class="expansion-controls"><label><input id="incremental" type="checkbox">逐层展开 O2</label><button id="expandNode" class="subtle-btn" type="button">展开选中节点下一层</button><button id="resetExpansion" class="subtle-btn" type="button">重置展开</button><span id="expansionStatus" role="status"></span></div><div class="canvas-shell" tabindex="0" role="region" aria-label="可横向滚动的关系图">
           <svg id="atlasGraph" viewBox="0 0 1500 760" aria-labelledby="svgTitle svgDesc" role="group" xmlns="http://www.w3.org/2000/svg">
             <title id="svgTitle">公开战略知识图谱演示</title>
             <desc id="svgDesc">可选择的横向有机关系树；所有节点及连接都是合成示例，不代表官方文件之间实际存在对应关系。</desc>

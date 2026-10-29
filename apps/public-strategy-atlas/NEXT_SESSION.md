@@ -1,31 +1,34 @@
 # Atlas — 唯一续接状态
 日期：2026-10-29 Australia/Sydney
-状态：M0_BROWSER_SMOKE_PASS / M1_SKELETON_IMPLEMENTED / M1_SOURCE_ADMISSION_PENDING / NOT_DEPLOYED
+状态：M0_BROWSER_SMOKE_PASS / M1_VALIDATION_EXTENDED / M1_SOURCE_OBSERVATIONS_ONLY / M2_INTERACTION_SLICE_PASS / NOT_DEPLOYED
 仓库：simon947161/eco-agent-system
 唯一工程分支：feature/public-strategy-atlas-web-mvp-20261029
 评审入口：Draft PR #130；不得合并。
 
 ## HEAD 与同步
-启动远程基线：baaedfaf315e6554a84b26e01743e3952302fc1f。
-M0阶段5ef063a002f5a27554da3bd6da4040b5846a0551及M1阶段e4cf9f24c74797f1e45b13ba61ed1ad9f4476127已实际push成功。当前文件所在提交包含M1数据骨架及检查结果；最新HEAD须读取GitHub分支，不将文件内自写哈希当当前HEAD。最终远端readback在本轮交付消息，下一设备必须再次核对。没有自动后台续跑。
+本轮读取远端基线 b18cc861e05fc3fbea3990ce3fff3ae7be78903a；办公室 M0/M1 成果已保留，未重做M0或研究任务书。当前提交包含本状态文件；当前HEAD必须再从GitHub读取，避免自引用哈希。提交/推送及远端readback以交付结果核验；没有后台自动续跑。单一写入人，先核远端再继续。
 
-## 已完成
-- 保留原站点；修复键盘重绘焦点、抽屉残留、搜索与邻接筛选冲突、上溯/下游方向、移动搜索与可读SVG、关闭/Escape。
-- 真实Edge桌面和390px iframe响应式检查；实际截图在qa/，不是模拟DOM测试。物理手机、跨浏览器及全WCAG未验。
-- atlas-data.js / atlas-model.js拆分：来源、版本、节点、断言、内容块、事件和暗线反证；SHA-256、确定性序列化、不可原位追加API、篡改检测、有限多路径搜索。
-- 网页显示关系状态和多路径，官方条款/实际KPI仍UNKNOWN。
-- Node反例检查实际PASS，详见DATA_CONTRACT.md、qa/M0_RESULTS.md、qa/M1_RESULTS.md。
+## 本轮真实代码成果
+- M1：严格来源/版本/日期/地域/摘要一致性、证据与反证引用、假设目标、反证和重复记录校验。
+- 5条公开来源观察：CSP/DP/OP目录版本、规划地域例外、CSP一页摘要p1 §6.1中文释义。独立于合成关系；官方图谱断言仍0。版本、定位与观察日期可在来源核验面板查看。
+- M2切片：保留原坐标的逐层展开/重置、暗线两路汇聚解释和合成反证、本地审计/版本面板、节点摘要、离线复验CLI及快照回执。
+- HTTP缺少Web Crypto的实际失败已修；便携SHA-256与Node标准实现12个长度比对通过。无新增依赖或采购。
+- 实际Chrome桌面和390px iframe检查、截图及限制见qa/M1_M2_WORK_RESULTS.md。M2不是完整完成。
 
-## 运行
-python -m http.server 8877 --bind 127.0.0.1 （在本目录）
-打开http://127.0.0.1:8877/；本轮实际测试端口8878。
-node apps/public-strategy-atlas/model.test.cjs （仓库根目录）
+## 运行与检查
+在网站目录：python -m http.server 8877 --bind 127.0.0.1；打开http://127.0.0.1:8877/。
+仓库根目录：
+- node apps/public-strategy-atlas/model.test.cjs
+- node apps/public-strategy-atlas/audit-cli.cjs
+- node --check apps/public-strategy-atlas/atlas.js
+实际PASS。云端本轮通过Sites私有工程预览执行，无注册/部署。预览临时manifest不入库。
 
-## 唯一下一步
-先读README、本文件和V1.3，核GitHub最新HEAD；继续M1的严格字段/引用校验及少量合法官方来源准入。逐一核版本、原文锚点、日期和地域；拿不到就UNKNOWN。补真实移动设备/窄屏抽屉导航验收，再考虑M2密度与增量展开。当前相邻导航不是动态展开算法。
+## 唯一最小下一步
+完成已观察的CSP一页摘要p1 §6.1的原始字节摘要、许可与正式版本/日期/地域审查，形成一条可复验的证据准入链；不把摘要观察直接提升为CSP→DP/OP正式映射。之后推进60/200节点布局与浏览器密度测试。
 
-## 边界与未完成
-M1只是骨架，不是已完成可信知识系统。事件API无持久化、无独立见证；没有官方签名/Merkle证明/SCITT；原始R0-K5279eed仍LOCAL_UNAVAILABLE，不假称恢复。两V1.2历史保留，V1.3为当前开发授权。
-只用公开/合成资料。每个可验证阶段检查、安全审查、commit+push，再读远端SHA；失败写SYNC_BLOCKED。禁止Council非公开资料、付费服务、部署Sites、修改PR129/main/业务系统。结束后停，下一设备显式续接。
+## 未完成与技术限制
+当前仅15节点合成图；逐层展开是现有图显示算法。暗线面板枚举已写入假设，不是自动语义发现。事件仍为单条合成事件，无持久编辑、外部见证、官方签名、Merkle证明或防整链重写。原始R0-K5279eed仍LOCAL_UNAVAILABLE。
+公开PDF通过检索提取读取，但本轮未获取原始字节/许可证及独立版本审查，不能声明正式准入。390px为真实浏览器iframe，不是物理触屏；Safari/Firefox、全WCAG、多屏未验。全局浏览器有扩展自身错误，未观察到Atlas脚本来源错误。最后关闭抽屉的强制瞬时滚动修复仅静态检查，需下一轮复核。
 
-跨设备修复：.gitattributes禁止原始合成字节文件换行转换；最终提交为该修复与续接更新，读取远端HEAD确定完整SHA。
+## 边界
+仅公开/合成资料。Council非公开记录、个人案件、雇主系统、商业采购、部署Sites、修改PR129/main及合并均禁止。每阶段更新此文件、检查、commit+push、核远端SHA；失败标SYNC_BLOCKED。原V1.2/V1.3任务书未改写。

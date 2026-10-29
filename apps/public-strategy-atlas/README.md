@@ -45,3 +45,9 @@ python -m http.server 8877 --bind 127.0.0.1
 **注意：** Codex 本地工作会话、ChatGPT Work 云电脑和 GitHub 彼此不会自动实时同步。GitHub 能持久保存已推送文件；额度刷新和不同设备的 Work 会话**不会自动触发开发**，必须从新会话显式发出续接指令。仅在本地提交未推送的工作不能保证异机可用。
 
 M1合约与限制见[DATA_CONTRACT.md](DATA_CONTRACT.md)。运行 `node apps/public-strategy-atlas/model.test.cjs` 校验合成数据、反例与摘要事件。当前真实条款准入仍未完成。
+
+## Work continuation: M1 validation + M2 interaction slice
+
+Added strict reference/scope rejection, public observation register (separate from official graph assertions), O2 incremental expansion, discovery/falsifier panel, and local audit/version panel. See [actual checks and limits](qa/M1_M2_WORK_RESULTS.md).
+
+Offline reproducible receipt: `node apps/public-strategy-atlas/audit-cli.cjs`. Pass an expected `sha256:…` argument to compare against a separately retained checkpoint. This does not provide an independent signature or prevent rewriting the entire chain. Portable SHA-256 supports ordinary HTTP/file contexts without new dependencies. Screenshot evidence and a 390px iframe harness are under `qa/`; these do not certify physical mobile devices.

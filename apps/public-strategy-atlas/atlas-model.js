@@ -9,7 +9,23 @@ function canonical(v){
  if(v&&Object.getPrototypeOf(v)===Object.prototype)return '{'+Object.keys(v).sort().map(k=>JSON.stringify(k)+':'+canonical(v[k])).join(',')+'}';
  throw Error('UNSUPPORTED_VALUE');
 }
-async function digest(bytes){if(!(bytes instanceof Uint8Array))throw Error('BYTES_REQUIRED');return 'sha256:'+Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');}
+// Portable SHA-256 fallback for offline file:// and HTTP preview contexts.
+function sha256(bytes){
+ const k=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+ const h=[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19];
+ const padded=new Uint8Array(Math.ceil((bytes.length+9)/64)*64);padded.set(bytes);padded[bytes.length]=128;
+ const view=new DataView(padded.buffer);view.setUint32(padded.length-8,Math.floor(bytes.length/0x20000000));view.setUint32(padded.length-4,(bytes.length*8)>>>0);
+ const ro=(v,n)=>(v>>>n)|(v<<(32-n));
+ for(let offset=0;offset<padded.length;offset+=64){
+  const w=new Uint32Array(64);for(let i=0;i<16;i++)w[i]=view.getUint32(offset+i*4);
+  for(let i=16;i<64;i++){const x=w[i-15],y=w[i-2];w[i]=(w[i-16]+(ro(x,7)^ro(x,18)^(x>>>3))+w[i-7]+(ro(y,17)^ro(y,19)^(y>>>10)))>>>0;}
+  let [a,b,c,d,e,f,g,j]=h;
+  for(let i=0;i<64;i++){const t1=(j+(ro(e,6)^ro(e,11)^ro(e,25))+((e&f)^(~e&g))+k[i]+w[i])>>>0,t2=((ro(a,2)^ro(a,13)^ro(a,22))+((a&b)^(a&c)^(b&c)))>>>0;j=g;g=f;f=e;e=(d+t1)>>>0;d=c;c=b;b=a;a=(t1+t2)>>>0;}
+  [a,b,c,d,e,f,g,j].forEach((v,i)=>h[i]=(h[i]+v)>>>0);
+ }
+ return h.map(v=>v.toString(16).padStart(8,'0')).join('');
+}
+async function digest(bytes){if(!(bytes instanceof Uint8Array))throw Error('BYTES_REQUIRED');return 'sha256:'+(globalThis.crypto?.subtle?Array.from(new Uint8Array(await globalThis.crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join(''):sha256(bytes));}
 async function objectDigest(value){return digest(new TextEncoder().encode(canonical(value)));}
 function applicability(assertion,revision,context){
  if(!revision||!context?.date||!context?.region||!revision.validFrom||!revision.validTo||!revision.region)return 'UNKNOWN';
@@ -19,11 +35,40 @@ function applicability(assertion,revision,context){
  return assertion.status==='SYNTHETIC'?'SYNTHETIC_ONLY':'REQUIRES_REVIEW';
 }
 function validate(d){
- const issues=[];if(d.schemaVersion!=='atlas-1')issues.push('SCHEMA_VERSION');
+ const issues=[];if(!d||typeof d!=='object')return ['DATASET_REQUIRED'];if(d.schemaVersion!=='atlas-1')issues.push('SCHEMA_VERSION');
  for(const key of ['sources','revisions','nodes','assertions','hypotheses','contentBlocks','events','edges'])if(!Array.isArray(d[key]))issues.push('ARRAY_REQUIRED:'+key);
  if(issues.length)return issues;
- for(const key of ['sources','revisions','nodes','assertions','hypotheses','contentBlocks']){const seen=new Set();for(const o of d[key]){if(!o.id||seen.has(o.id))issues.push('DUPLICATE_OR_MISSING_ID:'+key);seen.add(o.id);}}
+ for(const key of ['sources','revisions','nodes','assertions','hypotheses','contentBlocks','events','edges'])if(d[key].some(o=>!o||typeof o!=='object'||Array.isArray(o)))issues.push('OBJECT_REQUIRED:'+key);
+ if(issues.length)return issues;
+ for(const key of ['sources','revisions','nodes','assertions','hypotheses','contentBlocks','events','edges']){const seen=new Set();for(const o of d[key]){if(!o.id||seen.has(o.id))issues.push('DUPLICATE_OR_MISSING_ID:'+key);seen.add(o.id);}}
  const nodes=new Map(d.nodes.map(n=>[n.id,n])),revs=new Map(d.revisions.map(r=>[r.id,r])),sources=new Map(d.sources.map(s=>[s.id,s]));
+ const blocks=new Map(d.contentBlocks.map(b=>[b.id,b]));
+ const hash=x=>/^sha256:[a-f0-9]{64}$/.test(x);
+ const day=x=>typeof x==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(x)&&Number.isFinite(Date.parse(x))&&new Date(x).toISOString().slice(0,10)===x;
+ for(const s of d.sources){
+  if(typeof s.url!=='string'||!(/^(https:\/\/|\.\/qa\/)/.test(s.url)))issues.push('UNSAFE_SOURCE_URL:'+s.id);
+  if(s.revisionId!==null&&!revs.has(s.revisionId))issues.push('SOURCE_REVISION:'+s.id);
+  if(s.rawDigest!==null&&!hash(s.rawDigest))issues.push('SOURCE_DIGEST:'+s.id);
+ }
+ for(const r of d.revisions){
+  if(!r.logicalId||!r.region||!day(r.validFrom)||!day(r.validTo)||r.validFrom>r.validTo)issues.push('REVISION_SCOPE:'+r.id);
+  const source=sources.get(r.sourceId);
+  if(!source||source.revisionId!==r.id||r.rawDigest!==source.rawDigest)issues.push('REVISION_SOURCE:'+r.id);
+ }
+ for(const a of d.assertions){
+  const r=revs.get(a.revisionId);
+  if(!a.predicate||!r||a.region!==r.region||!day(a.validFrom)||!day(a.validTo)||a.validFrom>a.validTo||a.validFrom<r.validFrom||a.validTo>r.validTo)issues.push('ASSERTION_SCOPE:'+a.id);
+  for(const key of ['evidenceRefs','counterevidenceRefs'])for(const ref of Array.isArray(a[key])?a[key]:[]){
+   if(!ref||typeof ref!=='object'){issues.push('BROKEN_EVIDENCE_REF:'+a.id);continue;}
+   const b=blocks.get(ref.blockId),rev=revs.get(ref.revisionId);
+   if(!b||!rev||!ref.locator||b.sourceId!==ref.sourceId||rev.sourceId!==ref.sourceId)issues.push('BROKEN_EVIDENCE_REF:'+a.id);
+  }
+ }
+ for(const h of d.hypotheses)if(h.status!=='HYPOTHESIS_ONLY'||!h.ruleVersion||!h.explanation||!Array.isArray(h.counterevidence)||!h.counterevidence.length||!Array.isArray(h.assertionIds)||!h.assertionIds.length||h.assertionIds.some(id=>!d.assertions.some(a=>a.id===id)))issues.push('INVALID_HYPOTHESIS:'+h.id);
+ if(d.sourceObservations!==undefined){
+  if(!Array.isArray(d.sourceObservations))issues.push('OBSERVATIONS_ARRAY');
+  else {const seen=new Set();for(const o of d.sourceObservations){if(!o||!o.id||seen.has(o.id)||!sources.has(o.sourceId)||!day(o.observedOn)||!o.locator||!o.note||!['METADATA_OBSERVED','PUBLIC_TEXT_OBSERVED'].includes(o.status)||o.rawDigest!==null||o.url&&!o.url.startsWith('https://'))issues.push('INVALID_SOURCE_OBSERVATION');if(o)seen.add(o.id);}}
+ }
  for(const b of d.contentBlocks)if(!Number.isInteger(b.offset)||b.offset<0||!Number.isInteger(b.length)||b.length<1||!/^sha256:[a-f0-9]{64}$/.test(b.digest)||!sources.has(b.sourceId))issues.push('INVALID_BLOCK:'+b.id);
  for(const n of d.nodes)if(!n.logicalId||!n.versionId||!revs.has(n.revisionId))issues.push('NODE_IDENTITY:'+n.id);
  for(const e of d.edges)if(!nodes.has(e.from)||!nodes.has(e.to)||!d.assertions.some(a=>a.id===e.id&&a.from===e.from&&a.to===e.to))issues.push('EDGE_TARGET:'+e.id);
@@ -33,7 +78,7 @@ function validate(d){
   if(a.status==='EXPLICIT_OFFICIAL'){
    const r=revs.get(a.revisionId);
    if(!a.reviewedBy||a.reviewStatus!=='APPROVED'||!a.evidenceRefs?.length||r?.classification==='SYNTHETIC'||nodes.get(a.from)?.status==='SYNTHETIC'||nodes.get(a.to)?.status==='SYNTHETIC')issues.push('OFFICIAL_WITHOUT_EVIDENCE:'+a.id);
-   for(const e of a.evidenceRefs||[])if(sources.get(e.sourceId)?.verification!=='VERIFIED'||!e.locator||e.revisionId!==a.revisionId)issues.push('UNVERIFIED_ANCHOR:'+a.id);
+   for(const e of Array.isArray(a.evidenceRefs)?a.evidenceRefs:[])if(!e||sources.get(e.sourceId)?.verification!=='VERIFIED'||!e.locator||e.revisionId!==a.revisionId)issues.push('UNVERIFIED_ANCHOR:'+a.id);
   }
  }
  return issues;
@@ -52,5 +97,15 @@ async function appendEvent(events,event){
  const payload={id:event.id,type:event.type,objectId:event.objectId,actor:event.actor,reason:event.reason,observedAt:event.observedAt,sequence:events.length,previousDigest:events.at(-1)?.digest??null};
  return [...events,Object.freeze({...payload,digest:await objectDigest(payload)})];
 }
-const api={canonical,digest,objectDigest,validate,applicability,paths,appendEvent,verifyEvents};root.AtlasModel=api;if(typeof module!=='undefined')module.exports=api;
+function discover(d){
+ return d.hypotheses.map(h=>({id:h.id,status:h.status,ruleVersion:h.ruleVersion,explanation:h.explanation,counterevidence:h.counterevidence,
+  paths:h.assertionIds.map(id=>{const a=d.assertions.find(a=>a.id===id);return {assertionId:id,from:a?.from,to:a?.to,status:a?.status??'UNKNOWN',evidenceRefs:a?.evidenceRefs??[],counterevidenceRefs:a?.counterevidenceRefs??[]};}),
+  conclusion:'REQUIRES_REVIEW'}));
+}
+async function auditSnapshot(d){
+ const issues=validate(d),historyValid=await verifyEvents(d.events);
+ return {schemaVersion:'atlas-audit-1',datasetDigest:await objectDigest(d),historyHead:d.events.at(-1)?.digest??null,historyValid,issues,
+ warning:'Digest verifies supplied content only; no independent witness, signature or semantic truth.'};
+}
+const api={sha256,discover,auditSnapshot,canonical,digest,objectDigest,validate,applicability,paths,appendEvent,verifyEvents};root.AtlasModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

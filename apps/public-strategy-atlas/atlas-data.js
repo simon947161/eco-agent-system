@@ -46,6 +46,14 @@
   sources.push({id:"synthetic-source",url:"./qa/synthetic-source.txt",classification:"SYNTHETIC",revisionId:"synthetic-v1",rawDigest:"sha256:52b668dd9d583951d8cb9db04e27618d236293b7aa22db217c2b8cf1edfac408",verification:"SYNTHETIC_ONLY",licence:"MIT"});
   revisions[0].rawDigest=sources.find(s=>s.id==="synthetic-source").rawDigest;revisions[0].sourceId="synthetic-source";
   const dataset={schemaVersion:"atlas-1",sources,revisions,nodes,edges,assertions,hypotheses,contentBlocks:[{id:"block-demo",sourceId:"synthetic-source",offset:0,length:44,digest:"sha256:52b668dd9d583951d8cb9db04e27618d236293b7aa22db217c2b8cf1edfac408",algorithm:"SHA-256",chunking:"whole-file-v1"}],events:[]};
+  // Reviewed public metadata observations; never used as official graph assertions.
+  dataset.sourceObservations=[
+    {id:'obs-csp-2035',title:'CSP 2035',sourceId:'smrc-ipr-directory',locator:'Snowy Monaro 2035 Community Strategic Plan / adoption paragraph',observedOn:'2026-10-29',adoptedOn:'2025-05-01',status:'METADATA_OBSERVED',note:'官方目录记载采用日期2025-05-01；完整正文和许可未核验。',rawDigest:null},
+    {id:'obs-dp-2026',title:'DP 2025–2029，2026修订',sourceId:'smrc-ipr-directory',locator:'Delivery Program and Operational Plan / 2026 Revision',observedOn:'2026-10-29',adoptedOn:'2026-06-26',status:'METADATA_OBSERVED',note:'官方目录列明2026修订；不得把旧版自动视为现行。',rawDigest:null},
+    {id:'obs-op-2026',title:'OP 2026–2027',sourceId:'smrc-ipr-directory',locator:'Delivery Program and Operational Plan / 2026–2027 adoption paragraph',observedOn:'2026-10-29',adoptedOn:'2026-06-26',status:'METADATA_OBSERVED',note:'目录列明2026–2027采用日期，但仍保留旧年度介绍，需逐件核验。',rawDigest:null},
+    {id:'obs-planning-scope',title:'LEP / DCP 地域反证',sourceId:'smrc-planning-directory',locator:'How is the region planned by Council? / Snowy Mountains SAP catalyst precinct (exception)',observedOn:'2026-10-29',adoptedOn:null,status:'METADATA_OBSERVED',note:'目录区分原辖区规划工具，并列出特殊激活区例外；不能推出全区统一适用。',rawDigest:null},
+    {id:'obs-csp-summary-61',title:'CSP一页摘要 · 6.1',sourceId:'smrc-ipr-directory',url:'https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/csp-2035-plan-on-a-page.pdf',locator:'PDF page 1 / Strategic Objective 6 / 6.1',observedOn:'2026-10-29',adoptedOn:null,status:'PUBLIC_TEXT_OBSERVED',note:'中文释义：监测空气、土地和水道等环境资产，保障其得到保护。此摘要观察没有建立任何DP/OP对应关系；PDF原始字节、许可与现行适用性仍待核验。',rawDigest:null}
+  ];
   dataset.events=[{"id":"fixture-created","type":"ADD","objectId":"synthetic-v1","actor":"synthetic-fixture-author","reason":"Public synthetic fixture only","observedAt":"2026-10-29T00:00:00Z","sequence":0,"previousDigest":null,"digest":"sha256:db8c07372567b6b273240f67a3825ed560a89708128e329cb06f4733be8860ea"}];
   root.AtlasData=dataset;if(typeof module!=="undefined")module.exports=dataset;
 })(typeof window!=="undefined"?window:globalThis);
