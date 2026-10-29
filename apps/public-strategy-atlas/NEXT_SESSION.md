@@ -1,5 +1,18 @@
 # Active V1.6 checkpoint — E0–E10 bounded engineering delivered; full acceptance PARTIAL
 
+## 2026-10-30 network-access recovery — environment publication still REQUIRED
+
+**Current GitHub checkpoint:** V1.6 E0–E10 code is integrated; full acceptance remains PARTIAL because official source retrieval is blocked by inherited-proxy CONNECT 403 and human rights/revision/approval gates. **New security review + exact public-source recovery checklist:** `apps/public-strategy-atlas/qa/NETWORK_ACCESS_AND_SOURCE_RECOVERY_20261030.md`.
+
+**Important distinction:** reviewing/saving this GitHub file **does not save or publish Codex Cloud environment settings.** This conversation has GitHub source tools but no Codex Cloud environment settings write capability. User/environment owner must open `Settings → Codex Cloud → Environments → Edit`, review restricted **Additional allowed domains**, save and publish/republish the exact environment, then start a NEW cloud task to test. Start with `www.snowymonaro.nsw.gov.au` and `www.legislation.nsw.gov.au`; add public planning/OLG/SnapshotClimate exact domains only if independently necessary. No wildcard internet, proxy bypass, new tokens, Council internal endpoint or HTTP secret.
+
+**New publicly visible directory evidence:** Council IP&R directory lists adopted 2026–2027 OP, DP 2025–29 2026 revision, CSP and asset plan links. These are `DIRECTORY_LINK_OBSERVED` **outside the blocked task**, not fresh PDF bytes or approved content in this environment; do not inflate registered source/official admission counts.
+
+**Next exact Codex action AFTER environment republish:** read new QA document; fetch same branch latest HEAD; test normal HTTPS over configured proxy to official IP&R HTML and CSP summary PDF into `/tmp`; run `verify-source.py`, compare byte hash and rights, append legitimate source-register event, rerun native/browser tests, push and checkpoint. If 403 persists, report `BLOCKED_BY_PERMISSION` with error class; do not bypass restrictions or claim an admitted official relation. No deployment/merge/main/PR129 changes.
+
+---
+
+
 Latest remotely verified **before this final checkpoint**: `89fcb037091f44666cbd01ed554abbbafa98e727` (E9). The current checkpoint is the commit containing this file and qa/V1_6_SYSTEM_RESULTS.md. Resolve its exact SHA with `git rev-parse HEAD` and `git ls-remote origin refs/heads/feature/public-strategy-atlas-web-mvp-20261029`; compare the tested-source-manifest. A tracked file cannot contain its own commit hash. Final push/readback is reported at handoff. Use this branch / existing Draft PR #130 only.
 
 ## Current verified capabilities and verdicts
