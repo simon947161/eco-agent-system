@@ -1,3 +1,13 @@
+# Active V1.6 engineering checkpoint — E0 verified
+
+Remote read at start: `c0683cf504333d97fc593660fd18f4b3fa006af5`. This file is included in the checkpoint commit; read `git ls-remote origin refs/heads/feature/public-strategy-atlas-web-mvp-20261029` to obtain its exact remotely pushed SHA (a file cannot contain its own commit hash).
+
+E0 PASS_TESTED_HERE: all six native Node suites, preserved base digest/127 records, actual Chromium 1440×900/390×844/2560×1080 accounting panels, legacy snapshot/workspace offline verification, explicit editing and two-tab stale-save rejection. Fixed accounting heading scroll-under and styling. See `qa/E0_STABILISATION_RESULTS.md`, `qa/e0/native-results.json` and actual screenshots. Repeat: `node apps/public-strategy-atlas/run-tests.cjs /tmp/atlas-native.json`; serve app at 8877 then `python3 apps/public-strategy-atlas/qa/e0-browser.py`.
+
+Next exact step: implement `atlas-domain.js` with migration/validation/versioned accounting entities and integrate through `atlas-model.js` snapshot audit/export plus `atlas.js` station dossier. Preserve original AtlasData bytes and legacy workspace digest. E1–E10 NOT_COMPLETE. Source intake files may exist from interrupted preparation but are not yet verified delivery. Official-site fetches BLOCKED_BY_PERMISSION; proposed domain additions were saved in environment draft, not applied. Public PR page confirms Draft #130; leave Draft. No deployment or main/PR129 changes.
+
+---
+
 # Atlas — authoritative continuation checkpoint
 
 ## Founder V1.6 FULL-SYSTEM MASTER TASKBOOK — active development priority
