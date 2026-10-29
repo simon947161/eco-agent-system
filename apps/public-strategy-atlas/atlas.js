@@ -1,8 +1,8 @@
 /* English public/synthetic Atlas. No Council business data or external runtime services. */
-(() => {
+(async () => {
 'use strict';
 const m=AtlasModel,fixtureSize=Number(new URLSearchParams(location.search).get('fixture'));
-const d=[60,200].includes(fixtureSize)?m.densityFixture(AtlasData,fixtureSize):AtlasData,NS='http://www.w3.org/2000/svg';
+let d=await m.migrateDataset([60,200].includes(fixtureSize)?m.densityFixture(AtlasData,fixtureSize):AtlasData,AtlasAccounting.cases);const NS='http://www.w3.org/2000/svg';
 const $=id=>document.getElementById(id),graph=$('atlasGraph'),details=$('details'),empty=details.innerHTML;
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const byId=new Map(d.nodes.map(n=>[n.id,n])),contentById=new Map(d.contentItems.map(c=>[c.id,c]));
@@ -88,8 +88,22 @@ function inspectNode(id){
  const paths=['csp','lsps'].flatMap(start=>m.paths(d,start,id,{includeCandidates:state.candidates}));
  details.innerHTML='<div class="detail-head"><h3>'+esc(n.label)+'</h3><span class="detail-badge">'+(n.type==='candidate'?'HYPOTHESIS':'SYNTHETIC')+'</span></div><p class="detail-text">'+esc(n.detail)+'</p><div class="detail-list"><div class="detail-item"><span class="key">Logical identity / revision</span><span class="value">'+esc(n.logicalId+' / '+n.versionId)+'</span></div><div class="detail-item"><span class="key">Official clause / applicability / KPI</span><span class="value">UNKNOWN / UNKNOWN / UNKNOWN</span></div><div class="detail-item"><span class="key">Public discovery entry</span><span class="value">'+(n.source?sourceLink(n.source,'Open directory ↗'):'No verified public source')+'</span></div><div class="detail-item"><span class="key">Synthetic paths</span><span class="value">'+esc(paths.map(p=>p.join(' → ')||'Start').join(' / ')||'No path')+'</span></div></div><h3 class="section-title">Inside this topic</h3><p class="detail-text">Open each level. Internal examples remain synthetic.</p>'+treeHTML(root.id)+'<h3 class="section-title">Adjacent relationships</h3><div class="relation-list">'+connected.map(e=>{const a=d.assertions.find(a=>a.id===e.id),other=e.from===id?e.to:e.from;return '<button data-target="'+esc(other)+'">'+(e.to===id?'↑ Upstream: ':'↓ Downstream: ')+esc(byId.get(other).label)+'<small>'+esc(a.id+' · '+a.status)+'</small></button>';}).join('')+'</div><p id="contentDigest" class="detail-text">Computing content digest…</p>'+AtlasAccounting.panelHTML(id);
  $('contextActions').replaceChildren(button('Follow route',()=>{state.followId=id;$('inspector').hidden=true;render();}),button('Explore inside',()=>openContent(root.id)),...(AtlasAccounting.caseForNode(id)?[button('Quantities & budget',()=>details.querySelector('#accountingFlow')?.scrollIntoView({block:'start',behavior:'smooth'}))]:[]),button('Compare paths',()=>{$('discoveryBtn').click();}));
+ $('contextActions').append(button('Knowledge & work dossier',()=>domainDossier(id)));
  wireContent();details.querySelectorAll('[data-target]').forEach(b=>b.addEventListener('click',()=>inspectNode(b.dataset.target)));
  m.objectDigest(n).then(hash=>{if(current===request)$('contentDigest').textContent='Node digest '+hash+'. Integrity only; no official signature.';}).catch(()=>{if(current===request)$('contentDigest').textContent='Digest unavailable.';});render();openInspector();
+}
+function domainDossier(id){
+ const dossier=m.domainForStation(d,id);
+ panel('<h3>Knowledge & work dossier</h3><p>'+esc(byId.get(id)?.label||id)+'</p><p>SELF_ATTESTED · RECEIPT_NOT_PRESENT · EXTERNAL_WITNESS_UNKNOWN</p><p>Versioned records share the route station identity. Context links do not prove official implementation or causation.</p>'+dossier.entities.map(e=>'<div class="warn"><button data-entity="'+esc(e.id)+'">'+esc(e.label)+'</button><p>'+esc(e.kind+' · '+e.classification+' · '+e.state)+'</p></div>').join('')+(dossier.entities.length?'':'<div class="warn">UNKNOWN: source-backed work, quantities, budgets, outputs and outcomes have not been registered for this station. No completion is claimed.</div>'));
+ details.querySelectorAll('[data-entity]').forEach(b=>b.addEventListener('click',()=>domainEntity(b.dataset.entity)));
+ $('contextActions').replaceChildren(button('Back to station',()=>inspectNode(id)));
+}
+function domainEntity(id){
+ const e=m.domainIndex(d).get(id);if(!e)return;
+ const links=m.queryRelationships(d,id,{direction:'both'}),history=d.domain.revisions.filter(r=>r.logicalId===id);
+ panel('<h3>'+esc(e.label)+'</h3><div class="detail-badge">'+esc(e.classification+' / '+e.state)+'</div><p>Admission '+esc(e.admission)+' · '+esc(e.revisionId)+'</p><h4>Record and calculation inputs</h4><pre class="record-json">'+esc(JSON.stringify(e.data,null,2))+'</pre><h4>Where / when / boundary</h4><pre class="record-json">'+esc(JSON.stringify(e.scope,null,2))+'</pre>'+(e.provenance?'<h4>Source anchor</h4><p>'+esc(e.provenance.locator)+'</p>'+sourceLink(e.provenance.url):'<p>Source: SYNTHETIC_SCENARIO. Not Council work or expenditure.</p>')+'<h4>Upstream / downstream</h4>'+links.map(a=>'<p>'+esc(a.id+' · '+a.predicate+' · '+a.from+' → '+a.to)+'</p>').join('')+'<h4>Revision history</h4>'+history.map(r=>'<details><summary>'+esc(r.id)+'</summary><pre class="record-json">'+esc(JSON.stringify(r.record,null,2))+'</pre></details>').join('')+'<h4>Evidence gaps</h4><ul>'+e.gaps.map(g=>'<li>'+esc(g)+'</li>').join('')+'</ul><label for="domainReason">Local review reason</label><input id="domainReason" maxlength="1000"><button id="contestDomain">Append local challenge</button><p id="domainMessage" role="status"></p><p>Export snapshot to retain this in-memory review. Official approval is unavailable.</p>');
+ $('contextActions').replaceChildren(button('Trace back to strategy station',()=>inspectNode(e.stationId)),button('Back to dossier',()=>domainDossier(e.stationId)));
+ $('contestDomain').addEventListener('click',async()=>{try{d=await m.commitDomainRevision(d,{id,expectedRevisionId:e.revisionId,patch:{state:'CONTESTED',localNote:$('domainReason').value},reason:$('domainReason').value});domainEntity(id);$('domainMessage').textContent='Local challenge appended. Prior revisions retained; no source approval changed.';}catch(error){$('domainMessage').textContent=error.message;}});
 }
 function inspectLink(edge){
  state.selected=null;state.followId=null;const edgeKey=edge.id||edge.from+'->'+edge.to;

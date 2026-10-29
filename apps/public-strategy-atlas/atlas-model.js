@@ -1,6 +1,7 @@
 /* atlas-1: bounded, offline evidence contracts. Hashes prove bytes, not truth. */
 (function(root){
 'use strict';
+const domain=typeof module!=='undefined'?require('./atlas-domain.js'):root.AtlasDomain;
 const statuses=new Set(['EXPLICIT_OFFICIAL','RESEARCH_INFERRED','HYPOTHESIS_ONLY','SYNTHETIC','UNKNOWN','CONTRADICTED','SUPERSEDED']);
 function canonical(v){
  if(v===null||typeof v==='boolean'||typeof v==='string')return JSON.stringify(v);
@@ -81,7 +82,7 @@ function validate(d){
    for(const e of Array.isArray(a.evidenceRefs)?a.evidenceRefs:[])if(!e||sources.get(e.sourceId)?.verification!=='VERIFIED'||!e.locator||e.revisionId!==a.revisionId)issues.push('UNVERIFIED_ANCHOR:'+a.id);
   }
  }
- return issues.concat(validateContent(d));
+ return issues.concat(validateContent(d),domain?domain.validate(d):d.domain?['DOMAIN_VERIFIER_REQUIRED']:[]);
 }
 function paths(d,from,to,{includeCandidates=false,maxDepth=8,limit=10}={}){
  if(!Number.isInteger(maxDepth)||maxDepth<1||maxDepth>20||!Number.isInteger(limit)||limit<1||limit>100)throw Error('BOUNDS_REQUIRED');
@@ -171,7 +172,7 @@ function findCrossPaths(d,{rootIds=['csp','lsps'],includeCandidates=true,limit=1
  return results;
 }
 async function auditSnapshot(d){
- const issues=validate(d),historyValid=await verifyEvents(d.events);
+ const issues=validate(d),historyValid=await verifyEvents(d.events)&&(!d.domain||await domain.verify(d,api));
  return {schemaVersion:'atlas-audit-1',datasetDigest:await objectDigest(d),historyHead:d.events.at(-1)?.digest??null,historyValid,issues,
  warning:'Digest verifies supplied content only; no independent witness, signature or semantic truth.'};
 }
@@ -184,5 +185,5 @@ async function verifySnapshot(bundle,expectedDigest=null){
  if(!bundle||bundle.format!=='atlas-public-snapshot-1'||!bundle.dataset||!bundle.audit||!Array.isArray(bundle.contentRoots))return false;
  try{const recomputed=await exportSnapshot(bundle.dataset);return (!expectedDigest||recomputed.audit.datasetDigest===expectedDigest)&&canonical(recomputed.audit)===canonical(bundle.audit)&&canonical(recomputed.contentRoots)===canonical(bundle.contentRoots);}catch{return false;}
 }
-const api={findCrossPaths,exportSnapshot,verifySnapshot,densityFixture,validateContent,contentTrail,contentChildren,contentReceipt,layoutContent,sha256,discover,auditSnapshot,canonical,digest,objectDigest,validate,applicability,paths,appendEvent,verifyEvents};root.AtlasModel=api;if(typeof module!=='undefined')module.exports=api;
+const api={legacyBase:d=>domain.legacyBase(d),migrateDataset:(d,cases)=>domain.migrateDataset(d,cases,api),domainIndex:d=>domain.index(d),domainForStation:domain.forStation,queryRelationships:domain.relationships,commitDomainRevision:(d,options)=>domain.commitRevision(d,api,options),findCrossPaths,exportSnapshot,verifySnapshot,densityFixture,validateContent,contentTrail,contentChildren,contentReceipt,layoutContent,sha256,discover,auditSnapshot,canonical,digest,objectDigest,validate,applicability,paths,appendEvent,verifyEvents};root.AtlasModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

@@ -1,3 +1,13 @@
+# Active V1.6 checkpoint — E1 accounting registry delivered, system incomplete
+
+Previous remotely verified checkpoint: `481a91d1c0b0ae6e4995024703b7f5e5b608406a` (E0). Read current remote branch HEAD before resuming; this file belongs to its own checkpoint commit.
+
+Actual changes: `atlas-domain.js`, AtlasModel migration/audit/snapshot integration, legacy workspace-base adapter, every-station dossier entry, entity source/scope/history/local-challenge panels and reverse station trace. Seven native suites PASS; E0 browser regression rerun PASS; new domain browser checks PASS at 1440×900 and 390×844. Actual screenshots/output and limits: `qa/E1_DOMAIN_RESULTS.md`, `qa/system/`. Original 127-item dataset digest unchanged. Local domain reviews are in-memory until snapshot export; no import UI yet.
+
+Next exact step: validate `atlas-intake.js` and `sources/public-catalogue.*` left by interrupted source worker; add intake.test.cjs, source-family coverage/gap UI, and bind catalogue verification into the domain snapshot. The catalogue is metadata only until retrieval succeeds. Official hosts remain proxy BLOCKED_BY_PERMISSION; domains were saved to environment draft, requiring user settings save to apply. Continue E3 iterative indexed deep content and subsequent E4–E10; do not call the full system complete. PR #130 public title confirmed Draft. No merge/deploy/main/PR129 changes.
+
+--- Previous checkpoint ---
+
 # Active V1.6 engineering checkpoint — E0 verified
 
 Remote read at start: `c0683cf504333d97fc593660fd18f4b3fa006af5`. This file is included in the checkpoint commit; read `git ls-remote origin refs/heads/feature/public-strategy-atlas-web-mvp-20261029` to obtain its exact remotely pushed SHA (a file cannot contain its own commit hash).

@@ -1,0 +1,9 @@
+# V1.6 E1 — additive domain/accounting registry
+
+PASS_TESTED_HERE: seven native suites (`run-tests.cjs`), full E0 browser rerun, plus `qa/system-browser.py` at actual 1440×900 and 390×844 Chromium. Screenshots and native output: `qa/system/`. These tests cover accounting entity exploration, local challenge append, reverse station trace, browser snapshot download and independent CLI verification.
+
+`atlas-domain.js` extends AtlasModel through an additive migrated dataset. Existing station IDs remain route anchors; original AtlasData and its 127 records are unchanged. Typed accounting/work/resource/output entities, pinned relationship revisions, original source provenance, distinct content hashes, linked append-only local review events and corruption checks are now included in snapshot exports. `domain.test.cjs` tests migration idempotence, old snapshot/workspace compatibility, descendant endpoint references, immutable review/stale writers, forged admission and tamper rejection. AtlasWorkspace retains the exact legacy base digest through `legacyBase`; old exports continue to validate.
+
+Every station has a Knowledge & work dossier entry. Registered records show data, scope, sources, gaps and revision history; unregistered stations explicitly show UNKNOWN. Metric/cost records reverse to the same strategy station. Local challenge events remain local research and must be explicitly exported to survive reload. They do not grant official approval. This checkpoint does not yet provide domain-snapshot import UI or arbitrary deep source/work trees.
+
+E1 PARTIAL: registry and audited accounting bridge work, but full source/version ontology validation and richer work/metric revision editing remain pending. E2–E10 remain incomplete. PUBLIC_CORPUS_COVERAGE UNKNOWN/PARTIAL; OFFICIAL_ADMISSION PENDING. No official mapping or achieved outcome created. No independent witness/signature. No paid service, deployment or main/PR129 changes.

@@ -8,7 +8,7 @@ function freeze(value){if(value&&typeof value==='object'){Object.values(value).f
 function checkDay(s){return typeof s==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(s)&&Number.isFinite(Date.parse(s))&&new Date(s).toISOString().slice(0,10)===s;}
 function checkTime(s){return typeof s==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?Z$/.test(s)&&Number.isFinite(Date.parse(s))&&new Date(s).toISOString().slice(0,10)===s.slice(0,10);}
 function fields(item){return {title:item.title,text:item.text};}
-async function create(dataset){return freeze({format:'atlas-local-workspace-1',baseDigest:await m.objectDigest(dataset),revisions:[],events:[],signature:null});}
+async function create(dataset){return freeze({format:'atlas-local-workspace-1',baseDigest:await m.objectDigest(m.legacyBase(dataset)),revisions:[],events:[],signature:null});}
 function head(workspace,targetId){return workspace.revisions.filter(r=>r.targetId===targetId).at(-1)||null;}
 function compare(before,after){return ['title','text'].filter(k=>before[k]!==after[k]).map(field=>({field,before:before[field],after:after[field]}));}
 async function validate(workspace,dataset){
@@ -16,7 +16,7 @@ async function validate(workspace,dataset){
  if(!workspace||workspace.format!=='atlas-local-workspace-1'||!Array.isArray(workspace.revisions)||!Array.isArray(workspace.events))return ['WORKSPACE_FORMAT'];
  if(workspace.signature!==null)return ['UNSUPPORTED_SIGNATURE'];
  if(workspace.revisions.length>500||workspace.events.length!==workspace.revisions.length)return ['WORKSPACE_BOUNDS'];
- if(workspace.baseDigest!==await m.objectDigest(dataset))return ['BASE_DATASET_CONFLICT'];
+ if(workspace.baseDigest!==await m.objectDigest(m.legacyBase(dataset)))return ['BASE_DATASET_CONFLICT'];
  const heads=new Map(),versions=new Map(),items=new Map(dataset.contentItems.map(c=>[c.id,c]));let previous=null;
  for(let i=0;i<workspace.revisions.length;i++){
   const r=workspace.revisions[i],e=workspace.events[i];

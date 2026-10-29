@@ -10,3 +10,5 @@
 .station-hit{fill:transparent;stroke:none;pointer-events:all}
 .map-stage.map-panned .map-heading{visibility:hidden}.map-stage.map-panned .map-tutorial{display:none}
 .accounting-flow{scroll-margin-top:95px;overflow-wrap:anywhere}.accounting-flow dl{margin:16px 0}.accounting-pair{padding:10px 0;border-bottom:1px solid #d1e2df}.accounting-pair dt{font-size:11px;color:#527b7b}.accounting-pair dd{margin:5px 0 0;font-size:13px;line-height:1.6}.accounting-unknown{color:#805818}
+
+.record-json{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;line-height:1.6;max-width:100%}
