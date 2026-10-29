@@ -1,3 +1,19 @@
+# New runtime recovery — 2026-10-30: access PASS, numeric revision guard held
+
+Read `qa/NEW_RUNTIME_ACCESS_RECOVERY_20261030.md` and `qa/system/new-runtime-recovery-20261030/` first. Start remote/local/PR #130 HEAD was `c7dcd0e6e18f565f89b77391b59a48d711e8b584`. Resolve this checkpoint's exact SHA from remote HEAD after push; a file cannot contain its own commit hash.
+
+**Fresh executed result:** 30 October 2026 08:39:06–08 AEDT: official IP&R directory and exact CSP one-page PDF both HTTP 200 through inherited proxy. New runtime/source configuration version differs from prior blocked instance. Effective policy is unrestricted/enforced; desired/observed spec revision still 1. No environment setting was changed/published here. No CONNECT 403 occurred.
+
+The user's explicit “revision 1 or CONNECT 403” stop condition was retained after this initial pair. Continuation classification is **ENVIRONMENT_POLICY_BLOCKED (USER_REQUESTED_SPEC_REVISION_1_GUARD)**, not an observed destination-policy denial. Clarification requested because actual access is restored. No further official-source requests or intake stage integration occurred.
+
+**Original verifier PASS:** summary 416031 bytes, SHA-256 `1f1be67a25c0c2468b7f69d5959300430b840ebe5beb05eb1e77dd8516c3261e` equals historical receipt; one page and bounded clause 6.1 text/excerpt hash verified offline. PDF/HTML remain only in `/tmp/atlas-new-runtime-20261030/`; no raw source redistributed. Historical receipt, base data and catalogue untouched. Rights/current edition/geographic effective scope UNKNOWN, authorised admission PENDING.
+
+**Fresh tests:** 15/15 native files PASS. Browser NOT_TESTED_THIS_ATTEMPT (application/data unchanged). Actual QA observation coverage is 1 accessible byte/anchor-verified PDF + 1 accessible directory. Catalogue stages remain unchanged: 15 requirements / 14 families / 2 concrete documents, retrieved/extracted/version-confirmed/admitted 0. Official admitted relationships 0; inventory denominator/outcome KPI UNKNOWN. SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING.
+
+**Next executable action after revision-gate clarification:** append the evidenced directory/retrieval/raw-byte events through existing AtlasIntake, preserve unknown reuse/current-scope/review gates, repair stale `sourceGaps()` ownership derived from old access metadata, and continue real adopted CSP/DP/OP/LSPS/resourcing/budget/asset/planning/performance intake. No auto official mapping. Re-run native/affected browser suites and checkpoint Draft PR #130 only. No merge/deployment/main/PR129/nonpublic information.
+
+--- Previous checkpoint ---
+
 # Latest runtime retest — 2026-10-30: proxy still blocks official sources
 
 Read `qa/NETWORK_ACCESS_RETEST_20261030.md` and `qa/system/source-recovery-20261030/` first. Read/fetched remote at attempt start: `94d44c597c057322688640bfd977abd903679eda`; this checkpoint is the commit containing this update, whose exact SHA must be read from remote HEAD.
