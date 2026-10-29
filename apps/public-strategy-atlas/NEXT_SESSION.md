@@ -1,3 +1,13 @@
+# Active V1.6 checkpoint — E7 explicit conflict reconciliation delivered
+
+Previous remote `851196bab4214ea2675d9f7d3532270bfef47bb3` (E6). Read current remote HEAD before continuation.
+
+E7 implements AtlasWorkspace.previewMerge/resolveMerge with checkpoint-bound BASE/LOCAL/IMPORT choices, immutable imported archives and appended RESOLVE events; old workspace exports remain compatible. UI divergent-import flow and independent verification PASS at desktop/mobile; same-base domain snapshot compare/import and hostile-HTML/corruption rejection PASS. Thirteen native suites PASS; qa/E7_RECONCILIATION_RESULTS.md and qa/system/native-e7.json document bounds and limits. No automatic save/cloud sync; domain state uses explicit snapshot export/import.
+
+Next exact step E8: implement AtlasExecution discovery candidates with rule/version/source paths/reasons/alternative explanation/falsifier/counterevidence and context rejection, persist research questions/review decisions as versioned domain entities; add discovery.test.cjs and UI query/challenge tools. Then E9 integrate search/time/area/history/readability and E10 system acceptance. Source coverage remains blocked by official-host policy; settings save needed to apply saved domain additions. PR #130 remains Draft, no deployment/merge/main/PR129 writes.
+
+--- Previous checkpoint ---
+
 # Active V1.6 checkpoint — E6 applicability and historical queries delivered
 
 Previous verified remote `3f07b3272410ab2c242bc3fb01c91d687c477545` (E5). Read current remote HEAD.
