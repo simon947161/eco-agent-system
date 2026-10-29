@@ -3,21 +3,21 @@
   const IP = "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting";
   const DEV = "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development";
   const nodes = [
-    {id:"csp",label:"CSP",sub:"战略总览 · 示例",type:"csp",x:58,y:147,source:IP,detail:"虚构战略树的根节点。CSP 是真实的公开文件家族，但图中的关系没有进行逐条官方核对。"},
-    {id:"csp6",label:"目标 6.1",sub:"环境主题 · 示例",type:"csp",x:287,y:66,source:IP,detail:"以环境主题为演示方向；具体条款文字、正式版本与 DP/OP 对应关系尚待核实。"},
-    {id:"csp8",label:"目标 8.2",sub:"基础设施 · 示例",type:"csp",x:287,y:231,source:IP,detail:"用于展示战略目标一对多的路径；不声明本演示的下游行动在正式文件中逐项对应。"},
-    {id:"dp",label:"交付计划",sub:"DP · 结构示例",type:"csp",x:553,y:92,source:IP,detail:"用 DP 文件家族展示战略实施层级；未加载已批准版本的具体条款。"},
-    {id:"op",label:"年度计划",sub:"OP · 结构示例",type:"csp",x:791,y:120,source:IP,detail:"用 OP 文件家族展示年度行动；这里的连接仅是建模示意。"},
-    {id:"kpi",label:"指标定义",sub:"口径待验证",type:"csp",x:1074,y:65,source:IP,detail:"绩效指标必须有正式目标、分母、期间和质量信息。这里没有真实 KPI 结果。"},
-    {id:"water",label:"水务行动",sub:"合成活动节点",type:"csp",x:1052,y:249,source:IP,detail:"完全虚构的水务工作节点，不对应真实 Council 个案、检查或完成数量。"},
-    {id:"audit",label:"证据记录",sub:"合成审核示例",type:"csp",x:1300,y:237,source:IP,detail:"合成审核位置。未产生官方数字凭证、哈希证明、第三方透明收据或实际审核结论。"},
-    {id:"lsps",label:"LSPS",sub:"土地利用规划",type:"lsps",x:58,y:496,source:DEV,detail:"LSPS 文件家族作为规划支路入口；它不自动构成 CSP 或 LEP 的下级任务。"},
-    {id:"priority",label:"规划优先项",sub:"示例优先事项",type:"lsps",x:304,y:540,source:DEV,detail:"虚构的规划优先事项节点，正式条款编号、原文与适用区域尚待核实。"},
-    {id:"lep",label:"LEP 条款",sub:"辖区待核对",type:"lsps",x:568,y:447,source:DEV,detail:"LEP 是需核对适用范围、版本和生效时间的法定规划工具。此节点没有指向实际条款。"},
-    {id:"dcp",label:"DCP 控制",sub:"指导性质待核",type:"lsps",x:813,y:536,source:DEV,detail:"DCP 详细规划指导与 LEP 法定效力不能混同。具体条款和辖区没有在本示例核验。"},
-    {id:"area",label:"地区适用性",sub:"Berridale · 演示",type:"lsps",x:1074,y:494,source:DEV,detail:"Berridale 仅作地区维度演示。不能据此断言任何特定地块属于某项 LEP/DCP 条款。"},
-    {id:"scope",label:"生效时间",sub:"需官方版本",type:"lsps",x:1291,y:496,source:DEV,detail:"必须另行证明指定条款在指定日期及区域有效；没有凭证时保持 UNKNOWN。"},
-    {id:"candidate",label:"潜在暗线",sub:"研究假设 · 非事实",type:"candidate",x:1324,y:644,source:null,detail:"这是人为构造的跨文件候选关系。一个主题相近的连接并不能自动证明它在法规、行政或科学上成立。"}
+    {id:"csp",label:"CSP",sub:"Strategy overview · demo",type:"csp",x:58,y:147,source:IP,detail:"A synthetic strategy-tree root. CSP is a public document family; this graph does not establish official clause mappings."},
+    {id:"csp6",label:"Objective 6.1",sub:"Environment · demo",type:"csp",x:287,y:66,source:IP,detail:"An environmental theme for the synthetic graph. Wording, revision and DP/OP mappings remain unverified."},
+    {id:"csp8",label:"Objective 8.2",sub:"Infrastructure · demo",type:"csp",x:287,y:231,source:IP,detail:"Demonstrates multiple downstream paths. No official one-to-one mapping to these illustrative actions is claimed."},
+    {id:"dp",label:"Delivery program",sub:"DP · structure demo",type:"csp",x:553,y:92,source:IP,detail:"Illustrates a delivery-program layer. Approved document clauses have not been admitted."},
+    {id:"op",label:"Operational plan",sub:"OP · structure demo",type:"csp",x:791,y:120,source:IP,detail:"Illustrates annual actions. Connections are synthetic modelling examples."},
+    {id:"kpi",label:"Indicator definition",sub:"Definition unverified",type:"csp",x:1074,y:65,source:IP,detail:"A KPI needs an approved target, denominator, reporting period and quality evidence. Actual results remain UNKNOWN."},
+    {id:"water",label:"Water action",sub:"Synthetic activity",type:"csp",x:1052,y:249,source:IP,detail:"A fictional water activity. It represents no Council case, inspection or completed work count."},
+    {id:"audit",label:"Evidence record",sub:"Synthetic review",type:"csp",x:1300,y:237,source:IP,detail:"A synthetic evidence location. No official credential, third-party receipt or real review conclusion exists."},
+    {id:"lsps",label:"LSPS",sub:"Land-use planning",type:"lsps",x:58,y:496,source:DEV,detail:"An LSPS document-family entry. It is not automatically a subordinate CSP or LEP task."},
+    {id:"priority",label:"Planning priority",sub:"Illustrative priority",type:"lsps",x:304,y:540,source:DEV,detail:"A fictional planning priority. Official clause numbering, original wording and geographic scope remain unverified."},
+    {id:"lep",label:"LEP provision",sub:"Scope unverified",type:"lsps",x:568,y:447,source:DEV,detail:"LEP scope, revision and effective dates require evidence. This synthetic node does not identify an actual provision."},
+    {id:"dcp",label:"DCP control",sub:"Guidance unverified",type:"lsps",x:813,y:536,source:DEV,detail:"DCP guidance and LEP statutory effect must be distinguished. Clauses and jurisdictions are unverified here."},
+    {id:"area",label:"Geographic scope",sub:"Berridale · demo",type:"lsps",x:1074,y:494,source:DEV,detail:"Berridale illustrates geographic context only. No parcel-level LEP or DCP applicability is established."},
+    {id:"scope",label:"Effective period",sub:"Official version needed",type:"lsps",x:1291,y:496,source:DEV,detail:"Applicability at a particular date and region requires separate evidence. Without it, the result remains UNKNOWN."},
+    {id:"candidate",label:"Hidden-link candidate",sub:"Hypothesis · not fact",type:"candidate",x:1324,y:644,source:null,detail:"An authored cross-document hypothesis. Thematic similarity alone does not establish legal, administrative or scientific validity."}
   ];
   const edges = [
     {id:"e1",from:"csp",to:"csp6",kind:"EXAMPLE_PARENT",coverage:.88,time:.42},
@@ -48,12 +48,37 @@
   const dataset={schemaVersion:"atlas-1",sources,revisions,nodes,edges,assertions,hypotheses,contentBlocks:[{id:"block-demo",sourceId:"synthetic-source",offset:0,length:44,digest:"sha256:52b668dd9d583951d8cb9db04e27618d236293b7aa22db217c2b8cf1edfac408",algorithm:"SHA-256",chunking:"whole-file-v1"}],events:[]};
   // Reviewed public metadata observations; never used as official graph assertions.
   dataset.sourceObservations=[
-    {id:'obs-csp-2035',title:'CSP 2035',sourceId:'smrc-ipr-directory',locator:'Snowy Monaro 2035 Community Strategic Plan / adoption paragraph',observedOn:'2026-10-29',adoptedOn:'2025-05-01',status:'METADATA_OBSERVED',note:'官方目录记载采用日期2025-05-01；完整正文和许可未核验。',rawDigest:null},
-    {id:'obs-dp-2026',title:'DP 2025–2029，2026修订',sourceId:'smrc-ipr-directory',locator:'Delivery Program and Operational Plan / 2026 Revision',observedOn:'2026-10-29',adoptedOn:'2026-06-26',status:'METADATA_OBSERVED',note:'官方目录列明2026修订；不得把旧版自动视为现行。',rawDigest:null},
-    {id:'obs-op-2026',title:'OP 2026–2027',sourceId:'smrc-ipr-directory',locator:'Delivery Program and Operational Plan / 2026–2027 adoption paragraph',observedOn:'2026-10-29',adoptedOn:'2026-06-26',status:'METADATA_OBSERVED',note:'目录列明2026–2027采用日期，但仍保留旧年度介绍，需逐件核验。',rawDigest:null},
-    {id:'obs-planning-scope',title:'LEP / DCP 地域反证',sourceId:'smrc-planning-directory',locator:'How is the region planned by Council? / Snowy Mountains SAP catalyst precinct (exception)',observedOn:'2026-10-29',adoptedOn:null,status:'METADATA_OBSERVED',note:'目录区分原辖区规划工具，并列出特殊激活区例外；不能推出全区统一适用。',rawDigest:null},
-    {id:'obs-csp-summary-61',title:'CSP一页摘要 · 6.1',sourceId:'smrc-ipr-directory',url:'https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/csp-2035-plan-on-a-page.pdf',locator:'PDF page 1 / Strategic Objective 6 / 6.1',observedOn:'2026-10-29',adoptedOn:null,status:'PUBLIC_TEXT_OBSERVED',note:'中文释义：监测空气、土地和水道等环境资产，保障其得到保护。此摘要观察没有建立任何DP/OP对应关系；PDF原始字节、许可与现行适用性仍待核验。',rawDigest:null}
+    {id:'obs-csp-2035',title:'CSP 2035',sourceId:'smrc-ipr-directory',locator:'Snowy Monaro 2035 Community Strategic Plan / adoption paragraph',observedOn:'2026-10-29',adoptedOn:'2025-05-01',status:'METADATA_OBSERVED',note:'The directory records adoption on 1 May 2025. Full text and reuse permission have not been verified.',rawDigest:null},
+    {id:'obs-dp-2026',title:'DP 2025–2029, 2026 revision',sourceId:'smrc-ipr-directory',locator:'Delivery Program and Operational Plan / 2026 Revision',observedOn:'2026-10-29',adoptedOn:'2026-06-26',status:'METADATA_OBSERVED',note:'The directory lists a 2026 revision. An older revision must not automatically be treated as current.',rawDigest:null},
+    {id:'obs-op-2026',title:'OP 2026–2027',sourceId:'smrc-ipr-directory',locator:'Delivery Program and Operational Plan / 2026–2027 adoption paragraph',observedOn:'2026-10-29',adoptedOn:'2026-06-26',status:'METADATA_OBSERVED',note:'The directory lists 2026–2027 adoption but retains older annual-plan prose. Verify the individual document.',rawDigest:null},
+    {id:'obs-planning-scope',title:'LEP / DCP scope counterexample',sourceId:'smrc-planning-directory',locator:'How is the region planned by Council? / Snowy Mountains SAP catalyst precinct (exception)',observedOn:'2026-10-29',adoptedOn:null,status:'METADATA_OBSERVED',note:'The directory distinguishes former shire instruments and a special-activation-precinct exception. Region-wide uniform applicability cannot be inferred.',rawDigest:null},
+    {id:'obs-csp-summary-61',title:'CSP one-page summary · 6.1',sourceId:'smrc-ipr-directory',url:'https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/csp-2035-plan-on-a-page.pdf',locator:'PDF page 1 / Strategic Objective 6 / 6.1',observedOn:'2026-10-29',adoptedOn:null,status:'PUBLIC_TEXT_OBSERVED',note:'Paraphrase: monitor environmental assets, including air, land and waterways, to protect them. This observation establishes no DP/OP mapping. Original PDF bytes, reuse permission and current applicability remain unverified.',rawDigest:null}
   ];
   dataset.events=[{"id":"fixture-created","type":"ADD","objectId":"synthetic-v1","actor":"synthetic-fixture-author","reason":"Public synthetic fixture only","observedAt":"2026-10-29T00:00:00Z","sequence":0,"previousDigest":null,"digest":"sha256:db8c07372567b6b273240f67a3825ed560a89708128e329cb06f4733be8860ea"}];
+  // Recursive content decomposition is separate from cross-document assertions.
+  // These authored children are synthetic examples, not extracted Council clauses.
+  dataset.contentItems=[];
+  const addContent=(owner,parent,suffix,kind,title,text,status='SYNTHETIC',observationId=null)=>{
+    const id=owner+':'+suffix;
+    dataset.contentItems.push({id,logicalId:id,versionId:id+':v1',revisionId:status==='SYNTHETIC'?'synthetic-v1':null,ownerNodeId:status==='SYNTHETIC'?owner:null,parentId:parent,kind,title,text,status,observationId});return id;
+  };
+  for(const n of nodes){
+    const base=addContent(n.id,null,'content','TOPIC',n.label,n.detail);
+    const context=addContent(n.id,base,'context','SECTION','Purpose and context','Illustrative internal structure for '+n.label+'. These are authored demonstration items, not official document text.');
+    const clause=addContent(n.id,context,'basis','CLAUSE','Illustrative requirement','State the intended outcome and the conditions that would need to be checked. Official wording and applicability: UNKNOWN.');
+    const action=addContent(n.id,clause,'action','ACTION','Illustrative follow-through','Identify an activity, accountable role and review period. No real officer, work order or completed Council activity is recorded.');
+    const indicator=addContent(n.id,action,'indicator','INDICATOR','Measurement definition','Target: UNKNOWN. Denominator: UNKNOWN. Reporting period: UNKNOWN. Actual result: UNKNOWN.');
+    addContent(n.id,indicator,'evidence','EVIDENCE','Evidence required','Obtain a public source, exact locator, revision, geographic scope, effective date, byte digest and independent review before relying on a claim.');
+    const review=addContent(n.id,base,'review','SECTION','Evidence and challenge','A source directory is a discovery entry, not proof of a specific policy relationship.');
+    addContent(n.id,review,'falsifier','QUESTION','What could disprove this?','A different revision, region, effective period or explicit exception may invalidate the proposed relationship.');
+  }
+  for(const o of dataset.sourceObservations){
+    const base=addContent(o.id,null,'content','DOCUMENT',o.title,o.note,o.status,o.id);
+    if(o.id==='obs-csp-summary-61'){
+      const section=addContent(o.id,base,'objective-6','SECTION','Strategic Objective 6','Location observed in the one-page summary; no full-document applicability decision.',o.status,o.id);
+      addContent(o.id,section,'clause-61','CLAUSE','6.1 — environmental asset monitoring',o.note,o.status,o.id);
+    }
+  }
+  dataset.events.push({"id":"english-content-v1-added","type":"ADD","objectId":"csp:content","actor":"atlas-public-research-build","reason":"Added 127 English internal-content items and child-linked receipts. Synthetic breakdowns remain separate from observed public text.","observedAt":"2026-10-29T08:11:32.949Z","sequence":1,"previousDigest":"sha256:db8c07372567b6b273240f67a3825ed560a89708128e329cb06f4733be8860ea","digest":"sha256:963d8d32f0807a40a90db8c255cba4da5cac53a2491b94589139e96d3b372126"});
   root.AtlasData=dataset;if(typeof module!=="undefined")module.exports=dataset;
 })(typeof window!=="undefined"?window:globalThis);

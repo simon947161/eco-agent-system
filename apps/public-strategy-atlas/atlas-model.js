@@ -81,7 +81,7 @@ function validate(d){
    for(const e of Array.isArray(a.evidenceRefs)?a.evidenceRefs:[])if(!e||sources.get(e.sourceId)?.verification!=='VERIFIED'||!e.locator||e.revisionId!==a.revisionId)issues.push('UNVERIFIED_ANCHOR:'+a.id);
   }
  }
- return issues;
+ return issues.concat(validateContent(d));
 }
 function paths(d,from,to,{includeCandidates=false,maxDepth=8,limit=10}={}){
  if(!Number.isInteger(maxDepth)||maxDepth<1||maxDepth>20||!Number.isInteger(limit)||limit<1||limit>100)throw Error('BOUNDS_REQUIRED');
@@ -97,15 +97,92 @@ async function appendEvent(events,event){
  const payload={id:event.id,type:event.type,objectId:event.objectId,actor:event.actor,reason:event.reason,observedAt:event.observedAt,sequence:events.length,previousDigest:events.at(-1)?.digest??null};
  return [...events,Object.freeze({...payload,digest:await objectDigest(payload)})];
 }
+const contentKinds=new Set(['TOPIC','DOCUMENT','SECTION','CLAUSE','ACTION','INDICATOR','EVIDENCE','QUESTION']);
+function validateContent(d){
+ if(d.contentItems===undefined)return [];
+ if(!Array.isArray(d.contentItems))return ['CONTENT_ARRAY_REQUIRED'];
+ if(d.contentItems.length>500)return ['CONTENT_LIMIT'];
+ const issues=[],items=new Map(),versions=new Set();
+ const owners=new Set(d.nodes.map(n=>n.id)),observations=new Map((d.sourceObservations||[]).map(o=>[o.id,o]));
+ for(const item of d.contentItems){
+  if(!item||typeof item!=='object'||typeof item.id!=='string'||!item.id||items.has(item.id)){issues.push('CONTENT_ID');continue;}
+  items.set(item.id,item);
+  if(!item.logicalId||!item.versionId||versions.has(item.versionId)||!contentKinds.has(item.kind)||typeof item.title!=='string'||!item.title||typeof item.text!=='string'||!['SYNTHETIC','METADATA_OBSERVED','PUBLIC_TEXT_OBSERVED'].includes(item.status))issues.push('CONTENT_FIELDS:'+item.id);
+  versions.add(item.versionId);
+  if(item.status==='SYNTHETIC'){
+   if(!owners.has(item.ownerNodeId)||!d.revisions.some(r=>r.id===item.revisionId&&r.classification==='SYNTHETIC')||item.observationId!==null)issues.push('CONTENT_SCOPE:'+item.id);
+  }else if(item.ownerNodeId!==null||item.revisionId!==null||observations.get(item.observationId)?.status!==item.status)issues.push('CONTENT_OBSERVATION:'+item.id);
+ }
+ for(const item of items.values()){
+  if(item.parentId!==null){const parent=items.get(item.parentId);if(!parent||parent.ownerNodeId!==item.ownerNodeId||parent.revisionId!==item.revisionId||parent.observationId!==item.observationId||parent.status!==item.status)issues.push('CONTENT_PARENT:'+item.id);}
+  let cursor=item;const seen=new Set();while(cursor){if(seen.has(cursor.id)){issues.push('CONTENT_CYCLE:'+item.id);break;}seen.add(cursor.id);if(seen.size>20){issues.push('CONTENT_DEPTH:'+item.id);break;}cursor=items.get(cursor.parentId);}
+ }
+ return issues;
+}
+function contentTrail(d,id){
+ const items=new Map((d.contentItems||[]).map(c=>[c.id,c])),trail=[],seen=new Set();
+ let item=items.get(id);while(item){if(seen.has(item.id))throw Error('CONTENT_CYCLE');seen.add(item.id);trail.unshift(item);item=items.get(item.parentId);}return trail;
+}
+function contentChildren(d,id){return (d.contentItems||[]).filter(c=>c.parentId===id);}
+async function contentReceipt(d,id){
+ const errors=validateContent(d);if(errors.length)throw Error(errors.join(';'));
+ const item=d.contentItems.find(c=>c.id===id);if(!item)throw Error('CONTENT_NOT_FOUND');
+ const children=await Promise.all(contentChildren(d,id).sort((a,b)=>(a.id<b.id?-1:a.id>b.id?1:0)).map(c=>contentReceiptUnchecked(d,c)));
+ return {id:item.id,versionId:item.versionId,itemDigest:await objectDigest(item),subtreeDigest:await objectDigest({item,children:children.map(c=>({id:c.id,digest:c.subtreeDigest}))}),children};
+}
+async function contentReceiptUnchecked(d,item){
+ const children=await Promise.all(contentChildren(d,item.id).sort((a,b)=>(a.id<b.id?-1:a.id>b.id?1:0)).map(c=>contentReceiptUnchecked(d,c)));
+ return {id:item.id,versionId:item.versionId,itemDigest:await objectDigest(item),subtreeDigest:await objectDigest({item,children:children.map(c=>({id:c.id,digest:c.subtreeDigest}))}),children};
+}
+function layoutContent(d,rootId,{expanded=new Set(),limit=200}={}){
+ if(!Number.isInteger(limit)||limit<1||limit>500)throw Error('LAYOUT_BOUNDS');
+ if(validateContent(d).length)throw Error('INVALID_CONTENT');
+ const root=(d.contentItems||[]).find(c=>c.id===rootId);if(!root)return {nodes:[],edges:[],truncated:false};
+ const positions=new Map(),allQueue=[{item:root,depth:0}],rows=new Map();
+ while(allQueue.length){const {item,depth}=allQueue.shift(),row=rows.get(depth)||0;rows.set(depth,row+1);positions.set(item.id,{x:45+depth*270,y:70+row*100});for(const child of contentChildren(d,item.id))allQueue.push({item:child,depth:depth+1});}
+ const result=[],edges=[],queue=[root];let truncated=false;
+ while(queue.length){if(result.length>=limit){truncated=true;break;}const item=queue.shift();result.push({...item,...positions.get(item.id)});
+  if(expanded.has(item.id))for(const child of contentChildren(d,item.id)){queue.push(child);edges.push({from:item.id,to:child.id});}
+ }
+ const ids=new Set(result.map(n=>n.id));return {nodes:result,edges:edges.filter(e=>ids.has(e.from)&&ids.has(e.to)),truncated};
+}
+function densityFixture(d,count){
+ if(![60,200].includes(count))throw Error('DENSITY_BOUNDS');
+ const copy=structuredClone(d);
+ for(let i=0;i<count;i++)copy.contentItems.push({id:'density:'+i,logicalId:'density:'+i,versionId:'density:'+i+':v1',revisionId:'synthetic-v1',ownerNodeId:'csp',parentId:i===0?null:'density:'+Math.floor((i-1)/3),kind:i===0?'TOPIC':'SECTION',title:i===0?'Synthetic density fixture':('Demo item '+i),text:'Generated synthetic layout fixture only. Not a Council document or an evidence claim.',status:'SYNTHETIC',observationId:null});
+ return copy;
+}
 function discover(d){
  return d.hypotheses.map(h=>({id:h.id,status:h.status,ruleVersion:h.ruleVersion,explanation:h.explanation,counterevidence:h.counterevidence,
   paths:h.assertionIds.map(id=>{const a=d.assertions.find(a=>a.id===id);return {assertionId:id,from:a?.from,to:a?.to,status:a?.status??'UNKNOWN',evidenceRefs:a?.evidenceRefs??[],counterevidenceRefs:a?.counterevidenceRefs??[]};}),
   conclusion:'REQUIRES_REVIEW'}));
+}
+function findCrossPaths(d,{rootIds=['csp','lsps'],includeCandidates=true,limit=10}={}){
+ if(!Array.isArray(rootIds)||rootIds.length<2||rootIds.length>5||!Number.isInteger(limit)||limit<1||limit>100)throw Error('DISCOVERY_BOUNDS');
+ const roots=[...new Set(rootIds)];if(roots.some(id=>!d.nodes.some(n=>n.id===id)))throw Error('DISCOVERY_ROOT');
+ const results=[];
+ for(const target of d.nodes){
+  const branches=roots.map(rootId=>({rootId,paths:paths(d,rootId,target.id,{includeCandidates,maxDepth:8,limit:5})})).filter(b=>b.paths.length);
+  if(branches.length<2)continue;
+  const ids=new Set(branches.flatMap(b=>b.paths.flat()));const assertions=d.assertions.filter(a=>ids.has(a.id));
+  results.push({id:'convergence:'+target.id,targetId:target.id,status:'HYPOTHESIS_ONLY',ruleVersion:'bounded-cross-root-convergence-v1',branches,evidenceCount:assertions.reduce((n,a)=>n+a.evidenceRefs.length,0),explanation:'Distinct starting paths converge on this target. Structural convergence alone does not establish a valid policy relationship.',questions:['Do both paths refer to the same revision, geography and effective period?','Is there an explicit exception or conflicting source?','Does primary evidence establish each proposed relationship?']});
+  if(results.length>=limit)break;
+ }
+ return results;
 }
 async function auditSnapshot(d){
  const issues=validate(d),historyValid=await verifyEvents(d.events);
  return {schemaVersion:'atlas-audit-1',datasetDigest:await objectDigest(d),historyHead:d.events.at(-1)?.digest??null,historyValid,issues,
  warning:'Digest verifies supplied content only; no independent witness, signature or semantic truth.'};
 }
-const api={sha256,discover,auditSnapshot,canonical,digest,objectDigest,validate,applicability,paths,appendEvent,verifyEvents};root.AtlasModel=api;if(typeof module!=='undefined')module.exports=api;
+async function exportSnapshot(d){
+ const audit=await auditSnapshot(d);if(audit.issues.length||!audit.historyValid)throw Error('INVALID_DATA');
+ const roots=await Promise.all((d.contentItems||[]).filter(c=>c.parentId===null).sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0).map(c=>contentReceipt(d,c.id)));
+ return {format:'atlas-public-snapshot-1',dataset:d,audit,contentRoots:roots};
+}
+async function verifySnapshot(bundle,expectedDigest=null){
+ if(!bundle||bundle.format!=='atlas-public-snapshot-1'||!bundle.dataset||!bundle.audit||!Array.isArray(bundle.contentRoots))return false;
+ try{const recomputed=await exportSnapshot(bundle.dataset);return (!expectedDigest||recomputed.audit.datasetDigest===expectedDigest)&&canonical(recomputed.audit)===canonical(bundle.audit)&&canonical(recomputed.contentRoots)===canonical(bundle.contentRoots);}catch{return false;}
+}
+const api={findCrossPaths,exportSnapshot,verifySnapshot,densityFixture,validateContent,contentTrail,contentChildren,contentReceipt,layoutContent,sha256,discover,auditSnapshot,canonical,digest,objectDigest,validate,applicability,paths,appendEvent,verifyEvents};root.AtlasModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

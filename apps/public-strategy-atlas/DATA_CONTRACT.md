@@ -18,3 +18,17 @@ paths is bounded simple-path forward search with cycle exclusion, maximum depth/
 Tests: node apps/public-strategy-atlas/model.test.cjs. Includes three counterexamples: false official promotion, expired time, different region; plus missing endpoint, digest/history tampering and duplicate events. Existing fixture event and raw source digest verified. These are actual Node unit tests, separate from browser QA.
 
 Remaining: richer machine-readable schema validation (all field types, anchors, references), durable event storage and conflict handling, source admission review, clause anchors, larger graph and mobile device tests. No database created. No official clauses admitted. Content hashes cannot prove semantic truth, legal applicability or KPI causation.
+
+## Recursive content extension (English continuation)
+
+`contentItems` is a separate containment layer. Its records carry id, logicalId, versionId, revisionId, ownerNodeId, parentId, kind, title, text, status and observationId. The kind vocabulary is TOPIC, DOCUMENT, SECTION, CLAUSE, ACTION, INDICATOR, EVIDENCE and QUESTION. Kind is descriptive; a containment edge does not imply statutory hierarchy.
+
+All 15 synthetic graph topics have authored internal examples. Observed public content has a null graph owner/revision and an explicit observation reference. It may not become EXPLICIT_OFFICIAL through this layer. Parent and child must retain the same owner, revision, observation and status. Duplicate IDs/versions, missing parents, mixed scope, cycles, unknown owners/observations, more than 500 items or ancestry deeper than 20 are rejected.
+
+`contentTrail`, `contentChildren` and `layoutContent` provide recursive navigation. Coordinates are determined using the complete subtree before visible expansion, so expansion does not relocate already visible nodes. Views are capped at 200 nodes and explicitly mark truncation. Synthetic density fixtures add 60 or 200 records; they are not real source ingestion.
+
+`contentReceipt` hashes the item and a child-ID-sorted array of child subtree digests using deterministic lexical ordering. This provides local child-linked hash propagation. It is not an official Merkle inclusion proof, signed checkpoint, distributed consensus or chain deployment. `exportSnapshot` includes every root receipt; `verifySnapshot` recomputes both content roots and the dataset/event audit and can compare a separately retained expected digest. Export verification does not establish a licence, authenticity, applicability or truth.
+
+Current history includes the original synthetic fixture event and a linked ADD event recording the English content implementation. No persistent content editor or version-diff interface exists. Git commit history remains the durable engineering history. Public observation content is limited to its recorded scope; no official full-document clause mappings have been admitted.
+
+Additional tests: `node apps/public-strategy-atlas/content.test.cjs` covers all topic roots, six-level traversal, subtree mutation propagation, unrelated-root independence, input order, containment counterexamples, 60/200 stable layouts, bounded truncation, export verification and English UI/content checks.

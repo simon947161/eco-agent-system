@@ -1,155 +1,118 @@
-/* ClimateOS Public Strategy Atlas M0 — SYNTHETIC EXAMPLE GRAPH ONLY.
-   No Council business records, no verified statutory relationships, no KPI results.
-   Local content digests are not official signatures or truth proofs. */
+/* English public/synthetic Atlas. No Council business data or external runtime services. */
 (() => {
-  "use strict";
-  const NS = "http://www.w3.org/2000/svg";
-  const {nodes,edges,assertions,hypotheses} = AtlasData;
-  const map = Object.fromEntries(nodes.map(n => [n.id,n]));
-  const state = {root:"csp", selected:null,mode:"coverage",candidates:false,neighbours:true,search:"",incremental:false,expanded:new Set(["csp","lsps"])};
-  const graph = document.getElementById("atlasGraph");
-  const details = document.getElementById("details");
-  const search = document.getElementById("search");
-  const emptyDetails = details.innerHTML;
-  const explain = document.getElementById("modeExplanation");
-  const el = (tag,attrs={}) => {const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));return e;};
-  const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-  function visibleIds(){
-    if(!state.incremental)return new Set(nodes.map(n=>n.id));
-    const ids=new Set(['csp','lsps']);
-    let changed=true;while(changed){changed=false;for(const e of edges)if(ids.has(e.from)&&state.expanded.has(e.from)&&(!e.candidate||state.candidates)&&!ids.has(e.to)){ids.add(e.to);changed=true;}}
-    return ids;
-  }
-  function visibleNode(n) {return (n.id!=="candidate" || state.candidates)&&visibleIds().has(n.id);}
-  function inBranch(n) {
-    if(state.root==="all")return true;
-    return state.root==="csp" ? n.type==="csp" : n.type==="lsps";
-  }
-  function edgePath(e) {
-    const a=map[e.from], b=map[e.to];
-    const x1=a.x+155,y1=a.y+28,x2=b.x,y2=b.y+28;
-    const span=Math.max(26,(x2-x1)*.46);
-    return "M "+x1+" "+y1+" C "+(x1+span)+" "+y1+" "+(x2-span)+" "+y2+" "+x2+" "+y2;
-  }
-  function makeTitle(node,text){const t=el("title");t.textContent=text;node.append(t);}
-  function focusIds() {
-    if(!state.selected) return new Set();
-    return new Set([state.selected,...edges.filter(e=>e.from===state.selected||e.to===state.selected).flatMap(e=>[e.from,e.to])]);
-  }
-  function draw() {
-    const activeNode = document.activeElement?.getAttribute("data-node-id");
-    graph.querySelectorAll("[data-drawn]").forEach(e=>e.remove());
-    const base=el("g",{"data-drawn":"yes"}); graph.append(base);
-    const caption=el("text",{x:70,y:45,class:"lane-caption"});caption.textContent="STRATEGY / DELIVERY / EVIDENCE";base.append(caption);
-    const p=el("text",{x:70,y:424,class:"lane-caption"});p.textContent="SPATIAL PLANNING / STATUTORY CONTEXT";base.append(p);
-    const focus=focusIds();
-    for(const e of edges) {
-      if(e.candidate&&!state.candidates||!visibleNode(map[e.from])||!visibleNode(map[e.to]))continue;
-      const a=map[e.from],b=map[e.to],hi=focus.has(e.from)&&focus.has(e.to);
-      const dim=state.search&&!([a.label,a.sub,b.label,b.sub].join(" ").toLowerCase().includes(state.search)) ||
-        state.selected&&state.neighbours&&!hi ||
-        !state.selected&&state.root!=="all"&&!inBranch(a)&&!inBranch(b);
-      const d=edgePath(e);
-      const path=el("path",{d,class:"atlas-edge"+(e.candidate?" candidate":"")+(dim?" faded":"")});
-      makeTitle(path,e.kind+" — 合成示例，未经官方核实");base.append(path);
-      if(!e.candidate) {
-        const n=state.mode==="coverage"?e.coverage:state.mode==="time"?e.time:null;
-        if(n!==null) {
-          const fill=el("path",{d,class:"atlas-edge colour"+(dim?" faded":""),
-            style:"stroke:"+(a.type==="lsps"?"#477fad":"#238e86")+";",
-            "stroke-dasharray":(n*100)+" 100",pathLength:"100"});
-          makeTitle(fill,"示例填充 "+Math.round(n*100)+"%；与真实 Council 进度无关");base.append(fill);
-        }
-      }
-    }
-    for(const n of nodes) {
-      if(!visibleNode(n))continue;
-      const dim=state.search&&!((n.label+" "+n.sub+" "+n.detail).toLowerCase().includes(state.search)) ||
-        state.selected&&state.neighbours&&!focus.has(n.id) ||
-        !state.selected&&state.root!=="all"&&!inBranch(n);
-      const g=el("g",{class:"atlas-node "+n.type+(state.selected===n.id?" selected":"")+(dim?" faded":""),transform:"translate("+n.x+" "+n.y+")","data-node-id":n.id,tabindex:"0",role:"button","aria-pressed":String(state.selected===n.id),"aria-label":"查看 "+n.label+" 的证据详情"});
-      g.append(el("rect",{width:155,height:56,rx:12}));
-      const t=el("text",{x:13,y:23}); t.textContent=n.label;g.append(t);
-      const sub=el("text",{x:13,y:41,class:"sub"});sub.textContent=n.sub;g.append(sub);
-      makeTitle(g,n.label+" — "+n.sub+"（合成示例）");
-      g.addEventListener("click",()=>select(n.id));
-      g.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();select(n.id);}});
-      base.append(g);
-    }
-    if(activeNode) graph.querySelector(`[data-node-id="${activeNode}"]`)?.focus({preventScroll:true});
-    const note=el("text",{x:1100,y:725,class:"svg-note"});note.textContent="M0 / SYNTHETIC DATA / NO COUNCIL KPI";base.append(note);
-    explain.textContent=state.mode==="coverage"?"演示性关系核验填充；尚无真实 Council 核验率。":
-      state.mode==="time"?"演示性期限经过比例；绝不代表行动完成或绩效达成。":
-      "实际绩效：无经核验的公开结果与分母，所有进度保持 UNKNOWN（灰色）。";
-    document.getElementById("nodeCount").textContent=String(nodes.filter(visibleNode).length);
-    document.getElementById("edgeCount").textContent=String(edges.filter(e=>(!e.candidate||state.candidates)&&visibleNode(map[e.from])&&visibleNode(map[e.to])).length);
-  }
-  let panelRequest=0;
-  function select(id) {
-    state.selected=id;const n=map[id];if(!n)return;const request=++panelRequest;
-    if(state.incremental)for(const root of ['csp','lsps'])for(const path of AtlasModel.paths(AtlasData,root,id,{includeCandidates:state.candidates}))for(const edgeId of path)state.expanded.add(edges.find(e=>e.id===edgeId).from);
-    const paths=AtlasModel.paths(AtlasData,n.type==="lsps"?"lsps":"csp",id,{includeCandidates:state.candidates});
-    const connected=edges.filter(e=>(e.from===id||e.to===id)&&(!e.candidate||state.candidates));
-    const relationButtons=connected.map(e=>{
-      const other=map[e.from===id?e.to:e.from];
-      return '<button type="button" data-target="'+esc(other.id)+'" title="'+esc(e.kind)+'">'+(e.to===id?'↑ 上溯：':'↓ 下游：')+esc(other.label)+' · '+(e.candidate?"暗线候选":"合成路径")+'</button>';
-    }).join("");
-    const source=n.source?'<a href="'+esc(n.source)+'" target="_blank" rel="noopener noreferrer">查看公开资料目录 ↗</a>':'没有官方来源可验证';
-    details.innerHTML='<div class="detail-head"><div><div class="eyebrow">NODE · '+esc(n.id.toUpperCase())+'</div><h3>'+esc(n.label)+'</h3></div><span class="detail-badge">'+(n.type==="candidate"?"HYPOTHESIS":"SYNTHETIC")+'</span></div>'+
-      '<p class="detail-text">'+esc(n.detail)+'</p>'+
-      '<p class="detail-text">合成多路径：'+esc(paths.map(p=>p.join(' → ')||'起点').join(' / ')||'无可用路径')+'；不证明正式适用。</p>'+
-      '<div class="detail-list">'+
-      '<div class="detail-item"><span class="key">身份与来源</span><span class="value">合成展示节点；非真实 Council 条款关系</span></div>'+
-      '<div class="detail-item"><span class="key">内容哈希 / 数字签名</span><span class="value">合成版本 synthetic-v1；原始资料摘要 UNKNOWN；无官方数字签名</span></div>'+
-      '<div class="detail-item"><span class="key">条款、时点与辖区</span><span class="value">UNKNOWN · 尚未进行正式资料核验</span></div>'+
-      '<div class="detail-item"><span class="key">可核对入口</span><span class="value">'+source+'</span></div></div>'+
-      '<div class="detail-item"><span class="key">关系声明 / 审核</span><span class="value">'+connected.map(e=>{const a=assertions.find(a=>a.id===e.id);return esc(a.id+' · '+a.status+' · '+a.reviewStatus);}).join('<br>')+'</span></div>'+
-      '<h3 style="margin-top:20px">邻接关系（演示）</h3><div class="relation-list">'+(relationButtons||'<span class="detail-text">当前未展示邻接关系</span>')+'</div>'+
-      '<div class="warn">'+(n.type==="candidate"?"暗线是待证伪的研究候选，不可自动成为官方事实。合成反证：仅适用于2025年、外地区的版本不能支持2026年本地区结论。":"这里只演示追溯交互，没有任何已审核的实际绩效、法规适用或政策映射。")+'</div>';
-    details.querySelectorAll("[data-target]").forEach(b=>b.addEventListener("click",()=>select(b.dataset.target)));
-    details.insertAdjacentHTML('beforeend','<h3>版本与可审计标识</h3><div id="nodeAudit" class="detail-text">正在计算本地摘要…</div>');
-    const revision=AtlasData.revisions.find(r=>r.id===n.revisionId);
-    AtlasModel.objectDigest(n).then(hash=>{if(request===panelRequest){const out=document.getElementById('nodeAudit');if(out)out.textContent='逻辑身份 '+n.logicalId+'；版本 '+n.versionId+'；节点内容 '+hash+'；合成原件 '+revision.rawDigest+'。无官方签名。';}}).catch(()=>{if(request===panelRequest){const out=document.getElementById('nodeAudit');if(out)out.textContent='摘要不可用：需要支持 Web Crypto 的浏览器安全上下文。';}});
-    draw();
-    if(matchMedia('(max-width:960px)').matches)document.getElementById('inspector').scrollIntoView({block:'start',behavior:'instant'});
-    else graph.querySelector(`[data-node-id="${id}"]`)?.scrollIntoView({block:"nearest",inline:"nearest",behavior:"instant"});
-  }
-  document.querySelectorAll("[data-root]").forEach(btn=>btn.addEventListener("click",()=>{
-    state.root=btn.dataset.root;state.selected=null;panelRequest++;details.innerHTML=emptyDetails;
-    document.querySelectorAll("[data-root]").forEach(b=>(b.classList.toggle("selected",b===btn), b.setAttribute("aria-pressed",String(b===btn))));
-    draw();
-  }));
-  document.querySelectorAll("[data-mode]").forEach(btn=>btn.addEventListener("click",()=>{
-    state.mode=btn.dataset.mode;
-    document.querySelectorAll("[data-mode]").forEach(b=>b.setAttribute("aria-pressed",String(b===btn)));
-    draw();
-  }));
-  document.getElementById("showCandidates").addEventListener("change",e=>{state.candidates=e.target.checked;if(!state.candidates&&state.selected==="candidate"){state.selected=null;panelRequest++;details.innerHTML=emptyDetails;}if(state.selected)select(state.selected);else draw();});
-  document.getElementById("showNeighbours").addEventListener("change",e=>{state.neighbours=e.target.checked;draw();});
-  search.addEventListener("input",e=>{state.search=e.target.value.trim().toLowerCase();state.selected=null;panelRequest++;details.innerHTML=emptyDetails;state.root="all";document.querySelectorAll("[data-root]").forEach(b=>{b.classList.toggle("selected",b.dataset.root==="all");b.setAttribute("aria-pressed",String(b.dataset.root==="all"));});draw();});
-  document.getElementById("aboutBtn").addEventListener("click",()=>{
-    openPanel();
-    details.innerHTML='<div class="detail-head"><div><div class="eyebrow">RESEARCH NOTICE</div><h3>关于本地原型</h3></div></div><p class="detail-text">本网站是 ClimateOS Public Strategy Atlas 的 M0 工程起点，供独立学习与 UI 验证。图上所有关系、合成进度、节点路径均是人工设计的虚构样本，不可用于官方决策。目录链接并不意味着条款已核准。不会上传任何 Council 内部或个人业务数据。M1 已实现本地合成数据结构、摘要和事件链校验函数；没有官方签名、外部见证或防管理员重写保证。</p><div class="warn">本地演示 ≠ 正式部署；合成关系 ≠ 现行法规；文件完整性 ≠ 语义真实性。</div>';
-  });
-  document.getElementById("closeDetails").addEventListener("click",()=>{const id=state.selected;state.selected=null;panelRequest++;details.innerHTML=emptyDetails;draw();if(id){const target=graph.querySelector(`[data-node-id="${id}"]`);target?.focus({preventScroll:true});target?.scrollIntoView({block:"nearest",inline:"nearest",behavior:"instant"});}});
-  document.addEventListener("keydown",e=>{if(e.key==="Escape")document.getElementById("closeDetails").click();});
-  const openPanel=()=>{panelRequest++;state.selected=null;draw();if(matchMedia('(max-width:960px)').matches)document.getElementById('inspector').scrollIntoView({block:'start',behavior:'instant'});};
-  document.getElementById('auditBtn').addEventListener('click',async()=>{
-    openPanel();const request=panelRequest;details.textContent='正在复验数据与事件链…';
-    try {const audit=await AtlasModel.auditSnapshot(AtlasData);if(request!==panelRequest)return;
-    details.innerHTML='<h3>本地审计与版本历史</h3><p class="detail-text">'+esc(audit.datasetDigest)+'</p><p>结构问题 '+audit.issues.length+'；事件链 '+(audit.historyValid?'PASS':'FAIL')+'</p><p class="detail-text">链头 '+esc(audit.historyHead)+'</p>'+AtlasData.events.map(e=>'<div class="warn">'+esc(e.sequence+' · '+e.type+' · '+e.objectId+' · '+e.observedAt)+'<br>'+esc(e.reason)+'<br>'+esc(e.digest)+'</div>').join('')+'<div class="warn">摘要证明本次输入一致；不能证明事实、完整历史或防止整链重写。无独立见证、无官方签名。</div>';
-    }catch{if(request===panelRequest)details.textContent='摘要不可用：需要支持 Web Crypto 的浏览器安全上下文。';}
-  });
-  document.getElementById('discoveryBtn').addEventListener('click',()=>{
-    openPanel();details.innerHTML='<h3>跨路径暗线与反证</h3>'+AtlasModel.discover(AtlasData).map(h=>'<div class="warn"><strong>'+esc(h.id+' · '+h.status)+'</strong><p>规则 '+esc(h.ruleVersion)+'</p><p>'+esc(h.explanation)+'</p>'+h.paths.map(p=>'<p>'+esc(p.from+' → '+p.to+' · '+p.assertionId+' · '+p.status)+'；支持证据 '+p.evidenceRefs.length+'，引用反证 '+p.counterevidenceRefs.length+'</p>').join('')+'<p>合成反证：'+esc(h.counterevidence.map(c=>c.reason).join(' / '))+'</p><p>结论：待人工审查，不升级为官方事实。</p></div>').join('');
-  });
-  document.getElementById('sourcesBtn').addEventListener('click',()=>{
-    openPanel();details.innerHTML='<h3>公开来源核验登记</h3><p class="detail-text">2026-10-29 人工检视官方网页；以下为目录元数据观察，原始 PDF、条款、许可及适用性未准入。官方图谱关系仍为 0。</p>'+AtlasData.sourceObservations.map(o=>'<div class="warn"><strong>'+esc(o.title)+'</strong><p>'+esc(o.note)+'</p><p>定位 '+esc(o.locator)+'；观察日期 '+esc(o.observedOn)+'；采用日期 '+esc(o.adoptedOn??'UNKNOWN')+'</p><a target="_blank" rel="noopener noreferrer" href="'+esc(o.url??AtlasData.sources.find(s=>s.id===o.sourceId).url)+'">公开原始入口 ↗</a><p>'+esc(o.status)+' / 条款映射 UNKNOWN / 原件哈希 UNKNOWN</p></div>').join('');
-  });
-  document.getElementById('incremental').addEventListener('change',e=>{state.incremental=e.target.checked;state.selected=null;panelRequest++;details.innerHTML=emptyDetails;draw();document.getElementById('expansionStatus').textContent=state.incremental?'仅显示根与已展开的后代':'显示全部节点';});
-  document.getElementById('expandNode').addEventListener('click',()=>{if(!state.incremental||!state.selected){document.getElementById('expansionStatus').textContent='请启用逐层展开并选择节点';return;}state.expanded.add(state.selected);draw();document.getElementById('expansionStatus').textContent='已展开 '+map[state.selected].label+'；节点位置保持稳定';});
-  document.getElementById('resetExpansion').addEventListener('click',()=>{state.expanded=new Set(['csp','lsps']);state.selected=null;panelRequest++;details.innerHTML=emptyDetails;draw();document.getElementById('expansionStatus').textContent='展开状态已重置';});
-  const issues=AtlasModel.validate(AtlasData);
-  if(issues.length){details.textContent="DATA_INVALID: "+issues.join("; ");return;}
-  draw();
+'use strict';
+const m=AtlasModel,fixtureSize=Number(new URLSearchParams(location.search).get('fixture'));
+const d=[60,200].includes(fixtureSize)?m.densityFixture(AtlasData,fixtureSize):AtlasData,NS='http://www.w3.org/2000/svg';
+const $=id=>document.getElementById(id),graph=$('atlasGraph'),details=$('details'),empty=details.innerHTML;
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const byId=new Map(d.nodes.map(n=>[n.id,n])),contentById=new Map(d.contentItems.map(c=>[c.id,c]));
+const state={view:'relationships',root:'csp',selected:null,contentRoot:'csp:content',contentSelected:null,mode:'coverage',candidates:false,neighbours:true,incremental:false,expanded:new Set(['csp','lsps']),contentExpanded:new Set(['csp:content']),search:'',zoom:1};
+let request=0,lastGraphFocus=null;
+const svg=(tag,attrs={})=>{const e=document.createElementNS(NS,tag);for(const [k,v]of Object.entries(attrs))e.setAttribute(k,v);return e;};
+function button(label,action){const b=document.createElement('button');b.type='button';b.textContent=label;b.addEventListener('click',action);return b;}
+function sourceLink(url,label='Open public source ↗'){return '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(label)+'</a>';}
+function rootContent(owner){return d.contentItems.find(c=>c.ownerNodeId===owner&&c.parentId===null);}
+function visibleRelationshipIds(){
+ if(!state.incremental)return new Set(d.nodes.filter(n=>n.type!=='candidate'||state.candidates).map(n=>n.id));
+ const ids=new Set(['csp','lsps']);let changed=true;
+ while(changed){changed=false;for(const e of d.edges)if(ids.has(e.from)&&state.expanded.has(e.from)&&(!e.candidate||state.candidates)&&!ids.has(e.to)){ids.add(e.to);changed=true;}}
+ return ids;
+}
+function relationshipLayout(){const ids=visibleRelationshipIds();return {nodes:d.nodes.filter(n=>ids.has(n.id)).map(n=>({...n,title:n.label,subtitle:n.sub})),edges:d.edges.filter(e=>ids.has(e.from)&&ids.has(e.to)),truncated:false};}
+function contentLayout(){const expanded=state.incremental?state.contentExpanded:new Set(d.contentItems.map(c=>c.id));return m.layoutContent(d,state.contentRoot,{expanded,limit:200});}
+function isBranch(n){return state.root==='all'||n.type===state.root;}
+function focusSet(){if(!state.selected)return new Set();return new Set([state.selected,...d.edges.filter(e=>e.from===state.selected||e.to===state.selected).flatMap(e=>[e.from,e.to])]);}
+function render(){
+ const active=document.activeElement?.getAttribute('data-node-id');
+ graph.querySelectorAll('[data-drawn]').forEach(e=>e.remove());const base=svg('g',{'data-drawn':'true'});graph.append(base);
+ const layout=state.view==='content'?contentLayout():relationshipLayout(),map=new Map(layout.nodes.map(n=>[n.id,n])),focus=focusSet();
+ const maxX=Math.max(1500,...layout.nodes.map(n=>n.x+250)),maxY=Math.max(760,...layout.nodes.map(n=>n.y+100));graph.setAttribute('viewBox',`0 0 ${maxX} ${maxY}`);graph.style.width=(maxX*state.zoom)+'px';graph.style.minWidth=(maxX*state.zoom)+'px';graph.style.height=(maxY*state.zoom)+'px';
+ for(const e of layout.edges){
+  const a=map.get(e.from),b=map.get(e.to);const span=Math.max(30,(b.x-a.x-170)*.46);const path=`M ${a.x+170} ${a.y+28} C ${a.x+170+span} ${a.y+28} ${b.x-span} ${b.y+28} ${b.x} ${b.y+28}`;
+  const dim=state.view==='relationships'&&(state.selected&&state.neighbours&&!(focus.has(a.id)&&focus.has(b.id))||!state.selected&&!isBranch(a)&&!isBranch(b));
+  const p=svg('path',{d:path,tabindex:0,role:'button','data-edge-id':e.id||e.from+'->'+e.to,'aria-label':'Inspect link from '+(a.title||a.label)+' to '+(b.title||b.label),class:'atlas-edge'+(e.candidate?' candidate':'')+(dim?' faded':'')});base.append(p);p.addEventListener('click',()=>inspectLink(e));p.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();inspectLink(e);}});
+  if(state.view==='relationships'&&!e.candidate&&state.mode!=='kpi'){base.append(svg('path',{d:path,'pointer-events':'none',class:'atlas-edge colour'+(dim?' faded':''),style:'stroke:'+(a.type==='lsps'?'#477fad':'#238e86'),pathLength:100,'stroke-dasharray':`${(state.mode==='coverage'?e.coverage:e.time)*100} 100`}));}
+ }
+ for(const n of layout.nodes){
+  const selected=state.view==='content'?state.contentSelected===n.id:state.selected===n.id;
+  const dim=state.view==='relationships'&&(state.selected&&state.neighbours&&!focus.has(n.id)||!state.selected&&!isBranch(n));
+  const g=svg('g',{class:'atlas-node '+(n.type||'csp')+(selected?' selected':'')+(dim?' faded':''),transform:`translate(${n.x} ${n.y})`,tabindex:0,role:'button','aria-pressed':String(selected),'data-node-id':n.id,'aria-label':'Inspect '+(n.title||n.label)});
+  g.append(svg('rect',{width:170,height:62,rx:12}));
+  const full=n.title||n.label,title=svg('title');title.textContent=full+' · '+(n.status||'SYNTHETIC');g.append(title);
+  const t=svg('text',{x:12,y:24});t.textContent=full.length>21?full.slice(0,20)+'…':full;g.append(t);
+  const sub=svg('text',{x:12,y:44,class:'sub'});sub.textContent=n.kind||n.subtitle;g.append(sub);
+  const choose=()=>state.view==='content'?inspectContent(n.id):inspectNode(n.id);
+  g.addEventListener('click',choose);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}});base.append(g);
+ }
+ if(active)graph.querySelector(`[data-node-id="${CSS.escape(active)}"]`)?.focus({preventScroll:true});
+ $('nodeCount').textContent=layout.nodes.length;$('edgeCount').textContent=layout.edges.length;$('contentCount').textContent=d.contentItems.length;
+ $('modeExplanation').textContent=state.view==='content'?'Containment tree: structure only, with no progress fill.':state.mode==='coverage'?'Synthetic verification coverage: a visual demonstration, not actual Council review coverage.':state.mode==='time'?'Synthetic elapsed-time proportion. This is not action completion.':'Actual KPI: UNKNOWN. No verified outcome or denominator; all paths remain grey.';
+ $('viewContext').textContent=state.view==='content'?'Inside: '+contentById.get(state.contentRoot).title:'Cross-document relationships · synthetic';
+ $('relationshipsView').setAttribute('aria-pressed',state.view==='relationships');$('contentView').setAttribute('aria-pressed',state.view==='content');
+ $('expansionStatus').textContent=layout.truncated?'View capped at 200 items. Open a narrower content scope.':state.incremental?'Progressive expansion is on.':'All items in this scope are visible.';
+ renderBreadcrumbs();
+}
+function openInspector(){if(matchMedia('(max-width:960px)').matches)$('inspector').scrollIntoView({block:'start',behavior:'instant'});}
+function panel(html){request++;state.selected=null;state.contentSelected=null;details.innerHTML=html;render();openInspector();return request;}
+function renderBreadcrumbs(){
+ const target=$('breadcrumbs');target.replaceChildren();if(state.view!=='content')return;
+ target.append(button('Relationship atlas',()=>{state.view='relationships';render();}));
+ const id=state.contentSelected||state.contentRoot;
+ for(const c of m.contentTrail(d,id)){target.append(document.createTextNode(' / '),button(c.title,()=>openContent(c.id)));}
+}
+function treeHTML(id,depth=0){
+ const c=contentById.get(id),children=m.contentChildren(d,id);if(!c||depth>20)return '';
+ const select='<button type="button" data-content="'+esc(c.id)+'">'+esc(c.title)+'</button>';
+ return children.length?'<details class="content-tree"'+(depth===0?' open':'')+'><summary>'+esc(c.kind+' · '+c.title)+' <span>'+children.length+' items</span></summary>'+select+children.map(child=>treeHTML(child.id,depth+1)).join('')+'</details>':'<div class="content-leaf"><span class="key">'+esc(c.kind)+'</span>'+select+'</div>';
+}
+function wireContent(){details.querySelectorAll('[data-content]').forEach(b=>b.addEventListener('click',()=>openContent(b.dataset.content)));}
+function revealRelationship(id){if(!state.incremental)return;for(const root of ['csp','lsps'])for(const path of m.paths(d,root,id,{includeCandidates:state.candidates}))for(const edgeId of path)state.expanded.add(d.edges.find(e=>e.id===edgeId).from);}
+function inspectNode(id){
+ const n=byId.get(id);if(!n)return;if(n.type==='candidate'){state.candidates=true;$('showCandidates').checked=true;}state.selected=id;lastGraphFocus=id;revealRelationship(id);const current=++request;
+ const connected=d.edges.filter(e=>(e.from===id||e.to===id)&&(!e.candidate||state.candidates)),root=rootContent(id);
+ const paths=['csp','lsps'].flatMap(start=>m.paths(d,start,id,{includeCandidates:state.candidates}));
+ details.innerHTML='<div class="detail-head"><h3>'+esc(n.label)+'</h3><span class="detail-badge">'+(n.type==='candidate'?'HYPOTHESIS':'SYNTHETIC')+'</span></div><p class="detail-text">'+esc(n.detail)+'</p><div class="detail-list"><div class="detail-item"><span class="key">Logical identity / revision</span><span class="value">'+esc(n.logicalId+' / '+n.versionId)+'</span></div><div class="detail-item"><span class="key">Official clause / applicability / KPI</span><span class="value">UNKNOWN / UNKNOWN / UNKNOWN</span></div><div class="detail-item"><span class="key">Public discovery entry</span><span class="value">'+(n.source?sourceLink(n.source,'Open directory ↗'):'No verified public source')+'</span></div><div class="detail-item"><span class="key">Synthetic paths</span><span class="value">'+esc(paths.map(p=>p.join(' → ')||'Start').join(' / ')||'No path')+'</span></div></div><h3 class="section-title">Inside this topic</h3><p class="detail-text">Open each level. Internal examples remain synthetic.</p>'+treeHTML(root.id)+'<h3 class="section-title">Adjacent relationships</h3><div class="relation-list">'+connected.map(e=>{const a=d.assertions.find(a=>a.id===e.id),other=e.from===id?e.to:e.from;return '<button data-target="'+esc(other)+'">'+(e.to===id?'↑ Upstream: ':'↓ Downstream: ')+esc(byId.get(other).label)+'<small>'+esc(a.id+' · '+a.status)+'</small></button>';}).join('')+'</div><p id="contentDigest" class="detail-text">Computing content digest…</p>';
+ wireContent();details.querySelectorAll('[data-target]').forEach(b=>b.addEventListener('click',()=>inspectNode(b.dataset.target)));
+ m.objectDigest(n).then(hash=>{if(current===request)$('contentDigest').textContent='Node digest '+hash+'. Integrity only; no official signature.';}).catch(()=>{if(current===request)$('contentDigest').textContent='Digest unavailable.';});render();openInspector();
+}
+function inspectLink(edge){
+ const a=d.assertions.find(a=>a.id===edge.id);
+ const from=state.view==='content'?contentById.get(edge.from).title:byId.get(edge.from).label,to=state.view==='content'?contentById.get(edge.to).title:byId.get(edge.to).label;
+ panel('<h3>'+esc(from)+' → '+esc(to)+'</h3>'+(a?'<div class="detail-badge">'+esc(a.status)+'</div><p class="detail-text">Predicate: '+esc(a.predicate)+' / Review: '+esc(a.reviewStatus)+'</p><p class="detail-text">Revision '+esc(a.revisionId)+' · Region '+esc(a.region)+' · '+esc(a.validFrom)+' to '+esc(a.validTo)+'</p><p class="detail-text">Supporting references: '+a.evidenceRefs.length+' · Counter-references: '+a.counterevidenceRefs.length+'</p><div class="warn">Synthetic or research relationship. No official source-to-clause mapping has been admitted.</div>':'<div class="detail-badge">CONTAINS</div><p class="detail-text">This is internal content containment. It does not establish statutory effect or a cross-document policy relationship.</p>'));
+}
+function openContent(id){
+ const c=contentById.get(id);if(!c)return;
+ const trail=m.contentTrail(d,id);state.view='content';state.contentRoot=trail[0].id;for(const item of trail)state.contentExpanded.add(item.id);inspectContent(id);
+}
+function inspectContent(id){
+ const c=contentById.get(id);if(!c)return;state.contentSelected=id;lastGraphFocus=id;const current=++request,children=m.contentChildren(d,id),o=d.sourceObservations.find(o=>o.id===c.observationId);
+ details.innerHTML='<div class="detail-head"><h3>'+esc(c.title)+'</h3><span class="detail-badge">'+esc(c.status)+'</span></div><p class="detail-text">'+esc(c.text)+'</p><div class="detail-list"><div class="detail-item"><span class="key">Content type / logical identity</span><span class="value">'+esc(c.kind+' / '+c.logicalId)+'</span></div><div class="detail-item"><span class="key">Version / official applicability</span><span class="value">'+esc(c.versionId)+' / UNKNOWN</span></div>'+(o?'<div class="detail-item"><span class="key">Observed public anchor</span><span class="value">'+esc(o.locator)+' · '+esc(o.observedOn)+'<br>'+sourceLink(o.url||d.sources.find(s=>s.id===o.sourceId).url)+'</span></div>':'<div class="detail-item"><span class="key">Evidence status</span><span class="value">Authored synthetic breakdown. Not extracted official text.</span></div>')+'</div><div class="relation-list">'+(c.parentId?'<button data-content="'+esc(c.parentId)+'">↑ Parent content</button>':'')+'<button id="scopeContent">Focus this subtree</button>'+(c.ownerNodeId?'<button id="ownerNode">Back to relationship topic</button>':'')+'</div><h3 class="section-title">'+(children.length?'Internal breakdown':'End of admitted content')+'</h3>'+(children.length?treeHTML(id):'<p class="detail-text">No further content has been admitted. This is an explicit leaf, not a missing percentage or an invented clause.</p>')+'<h3 class="section-title">Content-addressed receipt</h3><p id="contentDigest" class="detail-text">Computing item and subtree digests…</p>';
+ wireContent();$('scopeContent').addEventListener('click',()=>{state.contentRoot=id;render();});if(c.ownerNodeId)$('ownerNode').addEventListener('click',()=>{state.view='relationships';inspectNode(c.ownerNodeId);});
+ m.contentReceipt(d,id).then(receipt=>{if(current===request)$('contentDigest').textContent='Item '+receipt.itemDigest+' · Subtree '+receipt.subtreeDigest+'. Child changes alter the ancestor receipt. No external witness or official signature.';}).catch(()=>{if(current===request)$('contentDigest').textContent='Content receipt failed validation.';});render();openInspector();
+}
+function closeDetails(){request++;state.selected=null;state.contentSelected=null;details.innerHTML=empty;render();const target=lastGraphFocus&&graph.querySelector(`[data-node-id="${CSS.escape(lastGraphFocus)}"]`);target?.focus({preventScroll:true});target?.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});}
+$('closeDetails').addEventListener('click',closeDetails);document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetails();});
+$('zoom').addEventListener('input',e=>{state.zoom=Number(e.target.value)/100;$('zoomValue').textContent=e.target.value+'%';render();});
+$('fitScope').addEventListener('click',()=>{const width=graph.viewBox.baseVal.width;state.zoom=Math.max(.35,Math.min(1,graph.parentElement.clientWidth/width));$('zoom').value=String(Math.round(state.zoom*100));$('zoomValue').textContent=Math.round(state.zoom*100)+'%';render();});
+$('relationshipsView').addEventListener('click',()=>{state.view='relationships';render();});$('contentView').addEventListener('click',()=>openContent(state.selected?rootContent(state.selected).id:state.contentRoot));
+$('incremental').addEventListener('change',e=>{state.incremental=e.target.checked;render();});
+$('expandNode').addEventListener('click',()=>{const id=state.view==='content'?state.contentSelected:state.selected;if(!id){$('expansionStatus').textContent='Select a node to expand.';return;}state.incremental=true;$('incremental').checked=true;(state.view==='content'?state.contentExpanded:state.expanded).add(id);render();});
+$('resetExpansion').addEventListener('click',()=>{state.expanded=new Set(['csp','lsps']);state.contentExpanded=new Set([state.contentRoot]);state.selected=null;state.contentSelected=null;request++;details.innerHTML=empty;render();});
+document.querySelectorAll('[data-root]').forEach(b=>b.addEventListener('click',()=>{state.root=b.dataset.root;state.view='relationships';state.selected=null;request++;details.innerHTML=empty;document.querySelectorAll('[data-root]').forEach(other=>{other.classList.toggle('selected',other===b);other.setAttribute('aria-pressed',other===b);});render();}));
+document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{state.mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(other=>other.setAttribute('aria-pressed',other===b));render();}));
+$('showCandidates').addEventListener('change',e=>{state.candidates=e.target.checked;if(!state.candidates&&state.selected==='candidate')closeDetails();render();});$('showNeighbours').addEventListener('change',e=>{state.neighbours=e.target.checked;render();});
+$('search').addEventListener('input',e=>{
+ state.search=e.target.value.trim().toLowerCase();const out=$('searchResults');out.replaceChildren();if(!state.search)return;
+ const matches=d.contentItems.filter(c=>(c.title+' '+c.text).toLowerCase().includes(state.search));out.append(document.createTextNode(matches.length+' internal-content matches. Showing up to 12.'));
+ for(const c of matches.slice(0,12)){out.append(button(m.contentTrail(d,c.id)[0].title+' / '+c.title+' · '+c.kind,()=>openContent(c.id)));}
+ if(!matches.length)out.append(document.createTextNode(' No matching admitted content.'));
+});
+$('sourcesBtn').addEventListener('click',()=>{panel('<h3>Public-source observations</h3><p class="detail-text">Observed metadata and limited public text. Original-byte, permission and applicability admission remains incomplete. Official graph mappings: 0.</p>'+d.sourceObservations.map(o=>'<div class="warn"><strong>'+esc(o.title)+'</strong><p>'+esc(o.note)+'</p><p>Anchor: '+esc(o.locator)+'</p><p>Observed '+esc(o.observedOn)+' · Adopted '+esc(o.adoptedOn||'UNKNOWN')+'</p>'+sourceLink(o.url||d.sources.find(s=>s.id===o.sourceId).url)+'<p>'+esc(o.status)+' · Raw digest UNKNOWN</p><button data-content="'+esc(o.id+':content')+'">Explore observed content</button></div>').join(''));wireContent();});
+$('discoveryBtn').addEventListener('click',()=>panel('<h3>Cross-path hypotheses & counterevidence</h3><h3 class="section-title">Detected structural convergence</h3>'+m.findCrossPaths(d).map(h=>'<div class="warn"><strong>'+esc(h.id+' · '+h.status)+'</strong><p>'+esc(h.explanation)+'</p>'+h.branches.map(b=>'<p>'+esc(b.rootId+': '+b.paths.map(p=>p.join(' → ')).join(' / '))+'</p>').join('')+'<p>Evidence references: '+h.evidenceCount+'</p>'+h.questions.map(q=>'<p>'+esc(q)+'</p>').join('')+'</div>').join('')+'<h3 class="section-title">Authored hypotheses and falsifiers</h3>'+m.discover(d).map(h=>'<div class="warn"><strong>'+esc(h.id+' · '+h.status)+'</strong><p>Rule: '+esc(h.ruleVersion)+'</p><p>'+esc(h.explanation)+'</p>'+h.paths.map(p=>'<p>'+esc(p.from+' → '+p.to+' / '+p.assertionId+' / '+p.status)+'; support references: '+p.evidenceRefs.length+'; counter-references: '+p.counterevidenceRefs.length+'</p>').join('')+'<p>Synthetic counterexample: '+esc(h.counterevidence.map(c=>c.reason).join(' / '))+'</p><p>Requires review. This enumerates authored candidates, not automatic semantic discovery.</p></div>').join('')));
+$('auditBtn').addEventListener('click',async()=>{const current=panel('<h3>Audit & version history</h3><p>Recomputing dataset and linked event history…</p>');try{const a=await m.auditSnapshot(d);if(current!==request)return;details.innerHTML='<h3>Audit & version history</h3><p class="detail-text">Snapshot '+esc(a.datasetDigest)+'</p><p>Structure issues: '+a.issues.length+' · Event chain: '+(a.historyValid?'PASS':'FAIL')+'</p>'+d.events.map(e=>'<div class="warn">'+esc(e.sequence+' / '+e.type+' / '+e.objectId)+'<p>'+esc(e.observedAt)+'</p><p>'+esc(e.reason)+'</p><p>'+esc(e.digest)+'</p></div>').join('')+'<p class="detail-text">'+d.contentItems.length+' content items have distinct logical and version identities. Each subtree has a reproducible child-linked receipt. Export the snapshot to retain a checkpoint.</p><div class="warn">History contains synthetic fixture events only. Hashes do not prove truth, completeness, official adoption or protection against whole-history replacement. No independent signature or witness.</div>';}catch{if(current===request)details.textContent='Audit failed. Do not rely on this dataset.';}});
+$('exportBtn').addEventListener('click',async()=>{try{const bundle=await m.exportSnapshot(d);const blob=new Blob([JSON.stringify(bundle,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='atlas-public-snapshot.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('appStatus').textContent='Public/synthetic snapshot exported. Verify its digest independently; it is not an official credential.';}catch{$('appStatus').textContent='Export blocked: dataset verification failed.';}});
+$('aboutBtn').addEventListener('click',()=>panel('<h3>About this independent atlas</h3><p class="detail-text">An English, offline-capable research prototype for public strategy and internal content exploration. It runs without paid services or external runtime dependencies. Synthetic containment is kept separate from observed public text and official relationships.</p><div class="warn">No Council internal records. No real case data. No actual KPI. No deployment or official endorsement. Current source-admission and large-graph limits remain documented in NEXT_SESSION.md.</div>'));
+if([60,200].includes(fixtureSize)){state.view='content';state.contentRoot='density:0';state.contentExpanded=new Set(['density:0']);$('fixtureSize').value=String(fixtureSize);$('appStatus').textContent='SYNTHETIC '+fixtureSize+'-item density fixture. No official content.';}
+$('fixtureSize').addEventListener('change',e=>{const url=new URL(location.href);if(e.target.value==='base')url.searchParams.delete('fixture');else url.searchParams.set('fixture',e.target.value);location.href=url.href;});
+const issues=m.validate(d);if(issues.length){details.textContent='DATA_INVALID: '+issues.join('; ');return;}render();
 })();
