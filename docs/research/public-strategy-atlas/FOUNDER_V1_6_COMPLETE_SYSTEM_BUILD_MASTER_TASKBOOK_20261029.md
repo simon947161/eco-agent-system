@@ -1,11 +1,11 @@
 # ClimateOS Public Strategy Atlas — Founder V1.6 FULL-SYSTEM ENGINEERING MASTER TASKBOOK
 **Issued:** 2026-10-29 (Australia/Sydney)
 **Status:** FOUNDER AUTHORISED — CONTINUE REAL SOFTWARE ENGINEERING, NOT A DESIGN EXERCISE
-**Repository:** \`simon947161/eco-agent-system\`
-**Existing engineering branch:** \`feature/public-strategy-atlas-web-mvp-20261029\`
+**Repository:** `simon947161/eco-agent-system`
+**Existing engineering branch:** `feature/public-strategy-atlas-web-mvp-20261029`
 **Existing Draft PR:** #130. Do not create a competing PR, merge, deploy, alter main/PR #129, or overwrite prior verified code.
-**Single durable continuation file:** \`apps/public-strategy-atlas/NEXT_SESSION.md\`
-**Latest remotely verified before this document was written:** \`2bc6fe1201e965c5f5e3ed70917278ee89298160\`. THIS IS A CHECKPOINT, NOT A PIN — always reread GitHub remote HEAD.
+**Single durable continuation file:** `apps/public-strategy-atlas/NEXT_SESSION.md`
+**Latest remotely verified before this document was written:** `2bc6fe1201e965c5f5e3ed70917278ee89298160`. THIS IS A CHECKPOINT, NOT A PIN — always reread GitHub remote HEAD.
 **This document:** v1.6 supersedes earlier **development priority and minimum completion claims**; preserves v1.1/O2, v1.2 trust/data research, v1.3 implementation/continuity, v1.4 route-first visual direction and v1.5 strategy-to-work/accounting requirements. The Founder-provided v1.5 kickoff is already available; DO NOT ask to paste it again or stop for an unrecovered P21–P30 phrase.
 
 ## 0. FOUNDER'S NON-NEGOTIABLE PRODUCT REQUIREMENT
@@ -23,14 +23,14 @@ A complete product is a **workflow of knowledge discovery, source verification, 
 ## 1. PREFLIGHT, BASELINE AND RECONCILIATION (FIRST ACTION)
 
 1. Fetch remote PR #130 HEAD, current branch commit, actual diff and staged/uncommitted state. Read:
-   - \`apps/public-strategy-atlas/NEXT_SESSION.md\`
-   - \`apps/public-strategy-atlas/README.md\`, \`DATA_CONTRACT.md\`
-   - \`apps/public-strategy-atlas/atlas-data.js\`, \`atlas-model.js\`, \`atlas-workspace.js\`, \`atlas-accounting.js\`, \`atlas-route-layout.js\`, \`atlas.js\`, \`index.html\`
-   - \`apps/public-strategy-atlas/sources/csp61-admission.json\`
-   - \`apps/public-strategy-atlas/qa/ROUTE_FIRST_RESULTS.md\` and \`qa/QUANT_ACCOUNTING_FIRST_SLICE_RESULTS.md\`
+   - `apps/public-strategy-atlas/NEXT_SESSION.md`
+   - `apps/public-strategy-atlas/README.md`, `DATA_CONTRACT.md`
+   - `apps/public-strategy-atlas/atlas-data.js`, `atlas-model.js`, `atlas-workspace.js`, `atlas-accounting.js`, `atlas-route-layout.js`, `atlas.js`, `index.html`
+   - `apps/public-strategy-atlas/sources/csp61-admission.json`
+   - `apps/public-strategy-atlas/qa/ROUTE_FIRST_RESULTS.md` and `qa/QUANT_ACCOUNTING_FIRST_SLICE_RESULTS.md`
    - Founder v1.4 route-first and v1.5 accounting directives, and this v1.6.
 2. Use existing code and data, not a fresh framework or repository. Distinguish reported PASS vs actual re-executed PASS vs NOT_TESTED. P21–30 and R0-K missing originals do not block the confirmed active instructions.
-3. First rerun all available Node tests (model/content/workspace/route/accounting), source/hash/snapshot verifiers with permitted fixtures, and real Chrome 1440×900 plus ~390px inspection, including \`csp6\`, \`water\`, \`area\` quantitative panels. Repair failures before adding features. If the environment cannot run the real browser, mark BROWSER_NOT_TESTED and advance nonbrowser engineering; do not invent a screenshot.
+3. First rerun all available Node tests (model/content/workspace/route/accounting), source/hash/snapshot verifiers with permitted fixtures, and real Chrome 1440×900 plus ~390px inspection, including `csp6`, `water`, `area` quantitative panels. Repair failures before adding features. If the environment cannot run the real browser, mark BROWSER_NOT_TESTED and advance nonbrowser engineering; do not invent a screenshot.
 4. Freeze the existing public/synthetic base digest and prove backward compatibility of snapshots and workspace versions; build explicit migrations only when schemas change. Use one writer per branch and reconcile GitHub changes rather than force push.
 
 ## 2. REAL PUBLIC CORPUS — DOCUMENT INTAKE, PROVENANCE AND COVERAGE
@@ -54,11 +54,11 @@ Deliver a source coverage dashboard with denominators: number of discovered/acce
 ## 3. UNBOUNDED RECURSIVE CONTENT SYSTEM — EVERY STATION OPENS A NETWORK
 
 Implement a generic recursive model, not a hardcoded six-layer demo:
-\`KnowledgeStation → ContentRoot → section → subsection → clause → subclause → commitment → workstream → project → work package → activity → task → resource → metric/observation → evidence\` as possible types. **No type is required at every depth**; child nesting and typed semantic cross-links are distinct. Support zero, many or tens of thousands of descendants; a source-backed leaf can honestly have no child.
+`KnowledgeStation → ContentRoot → section → subsection → clause → subclause → commitment → workstream → project → work package → activity → task → resource → metric/observation → evidence` as possible types. **No type is required at every depth**; child nesting and typed semantic cross-links are distinct. Support zero, many or tens of thousands of descendants; a source-backed leaf can honestly have no child.
 
 Each node/child must provide:
 1. Unique stable logical ID, content-addressed revision ID, parent/children identity, source document and exact section/table/page anchor.
-2. Actual text or concise permitted summary; explicit \`SOURCE_EXCERPT\` vs \`RESEARCH_SUMMARY\` vs \`SYNTHETIC\`. No AI-generated prose presented as official text.
+2. Actual text or concise permitted summary; explicit `SOURCE_EXCERPT` vs `RESEARCH_SUMMARY` vs `SYNTHETIC`. No AI-generated prose presented as official text.
 3. What the content means, domain/category, why it exists, responsible body **if publicly evidenced**, current adoption/effectiveness status, time and geographic applicability, conflicts and superseded history.
 4. Direct source evidence, all supporting/opposing typed assertions, reviewer state, machine-verification state and verification limitations.
 5. Connected strategic goal, implementation mechanisms, tasks, quantities, budgets, outputs/outcomes, including independently labelled UNKNOWN gaps.
@@ -73,24 +73,24 @@ Each node/child must provide:
 Extend **the existing AtlasModel**, immutable workspace, graph assertions and content records (schema migration with tests). Do not build an isolated extra graph that the existing route UI cannot traverse.
 
 Entity families:
-- \`StrategicOutcome\`, \`Goal\`, \`Objective\`, \`PolicyRequirement\`, \`PlanningPriority\`, \`StatutoryControl\`, \`Decision\`
-- \`ImplementationMechanism\`, \`Program\`, \`Project\`, \`WorkPackage\`, \`Activity\`, \`Task\`, \`Dependency\`, \`Deliverable\`
-- \`Area/SpatialUnit\`, \`PopulationGroup\`, \`IndustrySector\`, \`ServiceArea\`, \`Asset\`, \`Infrastructure\`, \`Workforce/Role\`, \`ResourceAccount\`
-- \`MetricDefinition\`, \`QuantifiedObservation\`, \`Assumption\`, \`Baseline\`, \`Target\`, \`Output\`, \`Outcome\`, \`Impact/ContributionClaim\`
-- \`FinancialEntry\`, \`CostAllocation\`, \`FundingSource\`, \`BudgetRevision\`, \`ActualExpenditure\`
-- \`SourceArtifact\`, \`DocumentRevision\`, \`ContentBlock\`, \`EvidenceAnchor\`, \`RelationshipAssertion\`, \`CounterEvidence\`, \`DiscoveryHypothesis\`, \`ChangeEvent\`, \`ReviewDecision\`, \`AuditReceipt\`.
+- `StrategicOutcome`, `Goal`, `Objective`, `PolicyRequirement`, `PlanningPriority`, `StatutoryControl`, `Decision`
+- `ImplementationMechanism`, `Program`, `Project`, `WorkPackage`, `Activity`, `Task`, `Dependency`, `Deliverable`
+- `Area/SpatialUnit`, `PopulationGroup`, `IndustrySector`, `ServiceArea`, `Asset`, `Infrastructure`, `Workforce/Role`, `ResourceAccount`
+- `MetricDefinition`, `QuantifiedObservation`, `Assumption`, `Baseline`, `Target`, `Output`, `Outcome`, `Impact/ContributionClaim`
+- `FinancialEntry`, `CostAllocation`, `FundingSource`, `BudgetRevision`, `ActualExpenditure`
+- `SourceArtifact`, `DocumentRevision`, `ContentBlock`, `EvidenceAnchor`, `RelationshipAssertion`, `CounterEvidence`, `DiscoveryHypothesis`, `ChangeEvent`, `ReviewDecision`, `AuditReceipt`.
 
-Typed edges include \`STATES_GOAL\`, \`ALIGNS_WITH\`, \`IMPLEMENTS\`, \`HAS_ACTIVITY\`, \`HAS_DEPENDENCY\`, \`FUNDED_BY\`, \`RESOURCED_BY\`, \`MEASURED_BY\`, \`REPORTS_OUTPUT\`, \`CONTRIBUTES_TO_OUTCOME\`, \`EVIDENCED_BY\`, \`APPLIES_IN_AREA\`, \`CONSTRAINED_BY_LEP\`, \`GUIDED_BY_DCP\`, \`RELEVANT_TO\`, \`CONTESTED_BY\`, \`SUPERSEDED_BY\`, \`RESEARCH_CANDIDATE\`. Each relationship requires explicit predicate, source/target revisions, evidence anchors, issuer/reviewer, status, geographic and temporal scope, method/basis and applicable counterevidence.
+Typed edges include `STATES_GOAL`, `ALIGNS_WITH`, `IMPLEMENTS`, `HAS_ACTIVITY`, `HAS_DEPENDENCY`, `FUNDED_BY`, `RESOURCED_BY`, `MEASURED_BY`, `REPORTS_OUTPUT`, `CONTRIBUTES_TO_OUTCOME`, `EVIDENCED_BY`, `APPLIES_IN_AREA`, `CONSTRAINED_BY_LEP`, `GUIDED_BY_DCP`, `RELEVANT_TO`, `CONTESTED_BY`, `SUPERSEDED_BY`, `RESEARCH_CANDIDATE`. Each relationship requires explicit predicate, source/target revisions, evidence anchors, issuer/reviewer, status, geographic and temporal scope, method/basis and applicable counterevidence.
 
 **Crucial relationship distinction:** CSP→DP→OP is the formal IP&R implementation/reporting path; LSPS aligns with CSP and broader regional/NSW land-use priorities but is not automatically a legal child of each CSP objective; LEP statutory controls and DCP guidance have distinct legal effect and applicability; budget allocation does not prove expenditure, output or environmental result; thematic similarity does not establish causation or official implementation.
 
-**Work breakdown engine:** start from an evidenced goal; recursively map official programs/actions and conditional work packages; identify dependencies, required labor/time/asset resources, physical quantities, schedules, responsible role, service territory, approval and review gates, cost sources, outputs and measurable outcomes. Provide a WBS tree, dependency route and execution status separately from evidence/information completeness. For hypothetical implementation suggestions, mark \`SYNTHETIC_SCENARIO\` or \`RESEARCH_PROPOSAL\`; do not invent Council actual tasks or owners.
+**Work breakdown engine:** start from an evidenced goal; recursively map official programs/actions and conditional work packages; identify dependencies, required labor/time/asset resources, physical quantities, schedules, responsible role, service territory, approval and review gates, cost sources, outputs and measurable outcomes. Provide a WBS tree, dependency route and execution status separately from evidence/information completeness. For hypothetical implementation suggestions, mark `SYNTHETIC_SCENARIO` or `RESEARCH_PROPOSAL`; do not invent Council actual tasks or owners.
 
-Use workflow states \`PROPOSED\`, \`SOURCE_OBSERVED\`, \`IN_REVIEW\`, \`APPROVED_FOR_RESEARCH\`, \`CONTESTED\`, \`SUPERSEDED\`, \`RETRACTED\`, \`UNKNOWN\` as appropriate; do not equate a UI research status with a real Council workflow approval. Implement reversible audit of proposed→reviewed/contested and reject unauthorised official promotion.
+Use workflow states `PROPOSED`, `SOURCE_OBSERVED`, `IN_REVIEW`, `APPROVED_FOR_RESEARCH`, `CONTESTED`, `SUPERSEDED`, `RETRACTED`, `UNKNOWN` as appropriate; do not equate a UI research status with a real Council workflow approval. Implement reversible audit of proposed→reviewed/contested and reject unauthorised official promotion.
 
 ## 5. ACCOUNTING AND CALCULATION ENGINE — REAL UNITS, NO FAKE PRECISION
 
-The first \`atlas-accounting.js\` v1.5 three-case read-only overlay is **PARTIAL**. Integrate it into schema, source provenance, immutable revisions, UI and portable snapshots; keep old data import compatible and source records untouched. Build reusable typed calculations with explicit formula, input IDs, method/version, units, boundaries, fiscal/calendar periods, quality and uncertainty. Derivations must be **reproducible, invalidate when inputs change, and trace to every input anchor**.
+The first `atlas-accounting.js` v1.5 three-case read-only overlay is **PARTIAL**. Integrate it into schema, source provenance, immutable revisions, UI and portable snapshots; keep old data import compatible and source records untouched. Build reusable typed calculations with explicit formula, input IDs, method/version, units, boundaries, fiscal/calendar periods, quality and uncertainty. Derivations must be **reproducible, invalidate when inputs change, and trace to every input anchor**.
 
 Implement three independent but linkable ledgers:
 - **Physical/environmental:** land ha/km² and spatial overlays, population, housing/service demand, water volumes ML and capacity ML/day, wastewater throughput, energy MWh, regional emissions t CO2e/person and t CO2e/year, waste, asset stocks/flows. Specify rate versus accumulated quantity, denominators, operations versus community inventory, sector/fuel/scope and assumptions.
@@ -99,7 +99,7 @@ Implement three independent but linkable ledgers:
 
 Minimum calculation rules:
 - Population normalization only with matching coverage and method: rate × valid matching population = derived total; never derive a Council operational emissions number from municipal regional data.
-- Stock, flow and intensity measurements are not interchangeable; explicit conversions (ha⇄km², ML⇄kL) allowed when valid; ML to ML/day requires known duration and compatible boundary; no \`AUD/t CO2e\` inference from 29.9 t CO2e/person.
+- Stock, flow and intensity measurements are not interchangeable; explicit conversions (ha⇄km², ML⇄kL) allowed when valid; ML to ML/day requires known duration and compatible boundary; no `AUD/t CO2e` inference from 29.9 t CO2e/person.
 - Budget vs actual variance only after fiscal year/line/amount/definition alignment; cost-per-output requires eligible actual cost and verified output with same units, scope and period; treat unknown zero denominators as errors not zero performance.
 - Derivation of project contribution to CSP outcome is not automatic causality; compare actual outputs against declared outputs, then separately assess observed outcomes with appropriate method.
 - No cross-area or cross-time addition without accounting for boundaries, overlap, sector classifications, shared costs and the year/currency basis.
@@ -116,7 +116,7 @@ Require a visible WHY → WORK → WHERE → HOW MUCH → RESOURCES → BUDGET /
 
 Introduce typed spatial scope and effective-time indexes. Country/state/LGA/locality/parcel/catchment/service area have different geometry and authority; no claim that Berridale whole town has one identical parcel-level control. Respect legacy LEP areas and amended planning instruments. Link to legally reusable public GIS polygons/maps when possible; otherwise preserve jurisdiction/source metadata and explicit UNKNOWN.
 
-Keep \`validFrom/validTo\`, \`observedAt\`, \`adoptedAt\`, \`supersededAt\`, \`sourceRevision\`, \`currentAsOf\` separate. Re-query "what did the valid/official plan say on date X?" without silently substituting today's document. A planned development control is not in force until formally adopted/effective. Historical and current clauses may coexist in audit history, but only the applicable latest effective revision becomes default.
+Keep `validFrom/validTo`, `observedAt`, `adoptedAt`, `supersededAt`, `sourceRevision`, `currentAsOf` separate. Re-query "what did the valid/official plan say on date X?" without silently substituting today's document. A planned development control is not in force until formally adopted/effective. Historical and current clauses may coexist in audit history, but only the applicable latest effective revision becomes default.
 
 Build tests for wrong jurisdiction, expired provision, draft-vs-adopted and mismatched administrative coverage, and ensure a rejected constraint cannot become a green verified route through a hidden-link search.
 
@@ -131,21 +131,21 @@ The founder's blockchain thinking is **architectural, not just a marketing badge
 4. **Derived/calculation/discovery overlays** (recomputable methods, hypotheses, contradictions, uncertainty, no hidden AI "truth").
 5. Optional future signature/transparency/witness integration after evidence of need, technical choice and separate security/legal approval.
 
-Implement offline independent bundle validation: source byte digest if available, content/subtree roots, mutation of a child changes ancestor root, event chain replay, snapshot comparison and export/import. An editable local chain is NOT a distributed consensus ledger; a digest is NOT a government signature; a verified file is NOT a correct policy interpretation. Clearly display \`SELF_ATTESTED\`, \`BYTE_VERIFIED\`, \`RECEIPT_NOT_PRESENT\`, \`EXTERNAL_WITNESS_UNKNOWN\` etc.
+Implement offline independent bundle validation: source byte digest if available, content/subtree roots, mutation of a child changes ancestor root, event chain replay, snapshot comparison and export/import. An editable local chain is NOT a distributed consensus ledger; a digest is NOT a government signature; a verified file is NOT a correct policy interpretation. Clearly display `SELF_ATTESTED`, `BYTE_VERIFIED`, `RECEIPT_NOT_PRESENT`, `EXTERNAL_WITNESS_UNKNOWN` etc.
 
 Enhance local workspace beyond the current divergent-save rejection: three-way BASE / LOCAL / IMPORT conflict preview, explicit field-level resolution and appended resolution events; preserve both histories. No automatic silent merge or overwriting official source. Guard against storage losses via explicit export and independent verifier; no auto cloud upload.
 
 ## 8. MULTI-PATH DISCOVERY, HIDDEN LINKS AND FALSIFICATION
 
 Build **two complementary query paths**:
-- \`KNOWN_LINK\`: follow only verified/admitted typed assertions with version/time/geography and evidence criteria.
-- \`DISCOVERY_CANDIDATE\`: surface potential links through official cross-reference, controlled vocabulary, shared area, similar work/metric/resourcing, overlapping time, budget/project code, process dependency and (if available locally and licensed) semantic similarities. Record algorithm/rule version, candidate endpoints and supporting/counterevidence, not an unexplained confidence score.
+- `KNOWN_LINK`: follow only verified/admitted typed assertions with version/time/geography and evidence criteria.
+- `DISCOVERY_CANDIDATE`: surface potential links through official cross-reference, controlled vocabulary, shared area, similar work/metric/resourcing, overlapping time, budget/project code, process dependency and (if available locally and licensed) semantic similarities. Record algorithm/rule version, candidate endpoints and supporting/counterevidence, not an unexplained confidence score.
 
 Each generated hypothesis needs: traceable source paths, rationale, exact scope, reviewer state, alternative explanations, falsifier test, counterevidence, status and negative outcomes. A candidate is never upgraded solely because a LLM suggested it or many paths agree. Similar wording, organization name or proximity in a document is insufficient proof.
 
 Provide forward, reverse, two-point shortest evidence path, cross-branch discovery, within-area and point-in-time queries, cause/attribution limits, and "show all evidence/contradictions for this edge." Avoid cycles and unbounded traversal. User can save a local research question and review decision with hash history, no government official signature.
 
-Mandatory adversarial cases: same keyword but wrong region; superseded LEP; an apparently related project with different financial year; per-capita rate confused with total/price; double-counted budget; a source link that disappeared; conflicting source revisions; forged claim of \`ADMITTED\`; no evidence for a supposed CSP→LSPS goal mapping.
+Mandatory adversarial cases: same keyword but wrong region; superseded LEP; an apparently related project with different financial year; per-capita rate confused with total/price; double-counted budget; a source link that disappeared; conflicting source revisions; forged claim of `ADMITTED`; no evidence for a supposed CSP→LSPS goal mapping.
 
 ## 9. ACTUAL ROUTE-FIRST WEBSITE — FULL PRODUCT, NOT ANOTHER LANDING PAGE
 
@@ -170,7 +170,7 @@ At any station, context should expose clear questions: **Why? What work? Which p
 ## 10. TEST ENGINEERING, QUALITY AND ATTACK CASES
 
 Build and maintain a runnable project-level test runner/manifest and repeatable pass/fail artefacts. At a minimum:
-- Existing \`model.test.cjs\`, \`content.test.cjs\`, \`workspace.test.cjs\`, \`route-main.test.cjs\`, \`route-map.test.cjs\`, \`accounting.test.cjs\`, source/PDF byte verifier, bundle/snapshot/workspace verification remain passing. Do not delete tests to make a pass.
+- Existing `model.test.cjs`, `content.test.cjs`, `workspace.test.cjs`, `route-main.test.cjs`, `route-map.test.cjs`, `accounting.test.cjs`, source/PDF byte verifier, bundle/snapshot/workspace verification remain passing. Do not delete tests to make a pass.
 - Intake/rights, exact anchor, effective revision, extraction, schema migration, deterministic chunk/hash/child root, event replay, export/import, corrupted bundle and stale/divergent writes.
 - Work decomposition depth and grouping, multiple parents, cycles, invalid dangling references, source review, missing official map.
 - Units/quantity/currency/fiscal year, stock-vs-flow, budget-vs-spend, allocation/double count, zero denominator, regional-vs-operations, emissions factor source and incomplete method, unknown value fail-closed.
@@ -178,13 +178,13 @@ Build and maintain a runnable project-level test runner/manifest and repeatable 
 - Browser desktop/390px interactions: opening deep nodes, searching nested content, reference links, edge selection, accounting pane, local edit and two-tab conflicts, export + independent verification. Test failure recovery and long text/tables.
 - Security: no executable untrusted HTML injection from public PDF text; sanitize DOM and URL schemes, boundary checks on JSON import, no external arbitrary calls, no secrets/PII/internal records in public repository or screenshots, no source copyright misuse.
 
-Record precise commands, test outputs, screenshots, source digests and commit SHA; distinguish \`PASS_TESTED_HERE\`, \`PASS_IN_EXECUTOR_REPORT\`, \`NOT_TESTED\`, \`BLOCKED_BY_PERMISSION\`, \`KNOWN_FAIL\`. Test coverage is not a proxy for complete official source coverage.
+Record precise commands, test outputs, screenshots, source digests and commit SHA; distinguish `PASS_TESTED_HERE`, `PASS_IN_EXECUTOR_REPORT`, `NOT_TESTED`, `BLOCKED_BY_PERMISSION`, `KNOWN_FAIL`. Test coverage is not a proxy for complete official source coverage.
 
 ## 11. REQUIRED ENGINEERING DELIVERY WAVES — CONTINUE IN ORDER
 
 **E0 — Stabilise latest branch**: Rerun native Node/browser regression and fix the newly added accounting panel; preserve digest and old workspaces. Produce an exact actual QA report. No time spent rewriting prior research.
 
-**E1 — Full extensible schema**: Unified entity/relationship/measurement/provenance types, migrations, source/version/event registries, recursive child graph/indices; bridge \`AtlasAccounting\` into real content-addressed export/import and local event history (currently NOT included).
+**E1 — Full extensible schema**: Unified entity/relationship/measurement/provenance types, migrations, source/version/event registries, recursive child graph/indices; bridge `AtlasAccounting` into real content-addressed export/import and local event history (currently NOT included).
 
 **E2 — Public source intake**: official source discovery/version ledger and page/table/section extractions for *at least one real usable strand each* across CSP, DP, OP, LSPS, resourcing/budget, reporting/land-use, subject to rights, dates, and access. Where a source is blocked, use permitted metadata + test fixtures and record BLOCKED; do not fake.
 
@@ -204,7 +204,7 @@ Record precise commands, test outputs, screenshots, source digests and commit SH
 
 **E10 — System verification and controlled handoff**: test and screenshot all layers, source coverage and provenance audit, reproducibility instructions, final gaps, Draft PR review packet and next iteration. **Do not declare 'full Atlas complete' unless the entire software-capability acceptance matrix passes and corpus coverage is explicitly quantified; do not conflate with full official data adoption.**
 
-At the end of **each wave**, deliver **working code** and meaningful tests, not just documents; review permissions; commit & push the same branch; update \`NEXT_SESSION.md\` with current HEAD, status, commands, evidence, open source gaps and **the next exact executable file/function/test**. Then continue the next wave within authorised available time and tools. If quota/session forces a handoff, push a truthful checkpoint first; another device/Work must be able to resume from remote only. If GitHub sync fails, label \`SYNC_BLOCKED\` and do not claim remote persistence. Work on one branch writer at a time.
+At the end of **each wave**, deliver **working code** and meaningful tests, not just documents; review permissions; commit & push the same branch; update `NEXT_SESSION.md` with current HEAD, status, commands, evidence, open source gaps and **the next exact executable file/function/test**. Then continue the next wave within authorised available time and tools. If quota/session forces a handoff, push a truthful checkpoint first; another device/Work must be able to resume from remote only. If GitHub sync fails, label `SYNC_BLOCKED` and do not claim remote persistence. Work on one branch writer at a time.
 
 **Do not use an excuse of 'scope is large' to finish after E0 or E1 and call it the deliverable.** Deliver incremental usable features and progress persistently. There is no permission here to create paid infrastructure, publish a site, merge a PR, use Council internal systems or assert official statutory/policy outcomes. Distinguish engineering completion from legal/regulatory/human approval.
 
@@ -218,13 +218,13 @@ E. **Audit is reproducible** for authorised data source digest, content/chunk/su
 F. **Hidden link search is functional**, interpretable and falsifiable, distinguishes direct/indirect/candidate/rejected and retains counterevidence and reviewer decisions without a fabricated official linkage.
 G. **Route-first interface remains primary**, contextual tools offer unlimited drilling and reverse trace; accessible desktop/mobile and synthetic load performance verified.
 H. **Real tests + evidence**: native tests and Chrome (or transparently marked NOT_TESTED) with reproducible QA reports; all prior regression capabilities preserved; no unreviewed private data or restricted PDF shipped.
-I. **Continuity and governance**: \`NEXT_SESSION.md\` matches remote HEAD, PR #130 remains Draft and no deployment/merge performed; known gaps have owner type and next executable action. Give separate verdicts: \`SOFTWARE_CAPABILITY\` and \`PUBLIC_CORPUS_COVERAGE\` and \`OFFICIAL_ADMISSION\`, never one misleading global PASS.
+I. **Continuity and governance**: `NEXT_SESSION.md` matches remote HEAD, PR #130 remains Draft and no deployment/merge performed; known gaps have owner type and next executable action. Give separate verdicts: `SOFTWARE_CAPABILITY` and `PUBLIC_CORPUS_COVERAGE` and `OFFICIAL_ADMISSION`, never one misleading global PASS.
 
 **No premature acceptance conditions:** a screenshot, a new demo, N synthetic nodes, a README, a Git hash alone, self-signed receipt, completed plan, or 100% synthetic test pass does NOT establish full product readiness, official legal accuracy, actual Council programme completion or a verified environmental outcome.
 
 ## 13. NEXT IMMEDIATE TASK — DO THIS WITHOUT A NEW APPROVAL REQUEST
 
-**Start now from latest PR #130 HEAD.** Run \`accounting.test.cjs\` and existing test suites in real Node and real Chrome for the newest accounting UI; fix what breaks; then integrate accounting entities into content-addressed snapshot/versioned workspace and build **one rich arbitrary-depth, source/gap-backed strategy-to-work dossier** which can be explored both from the route map and its nested content pages. This is the first of successive E0–E10 waves, **not the end of the assignment**.
+**Start now from latest PR #130 HEAD.** Run `accounting.test.cjs` and existing test suites in real Node and real Chrome for the newest accounting UI; fix what breaks; then integrate accounting entities into content-addressed snapshot/versioned workspace and build **one rich arbitrary-depth, source/gap-backed strategy-to-work dossier** which can be explored both from the route map and its nested content pages. This is the first of successive E0–E10 waves, **not the end of the assignment**.
 
 In parallel incrementally ingest/review the official publicly available adopted documents with correct source/rights gates. Do not delay substantive code while trying to retrieve inaccessible documents, and do not substitute another synthetic tree for real ingestion.
 
@@ -232,4 +232,4 @@ In parallel incrementally ingest/review the official publicly available adopted 
 
 ## SHORT EXECUTION COMMAND (paste with this taskbook)
 
-> Execute the Founder V1.6 **FULL-SYSTEM BUILD**, not a shallow web-page demo. Read this entire taskbook, latest GitHub PR #130 HEAD and \`apps/public-strategy-atlas/NEXT_SESSION.md\`. Resume from completed V1.4 route-first and partial V1.5 accounting. Build actual recursive content, current public source intake, typed goal/work/resource/finance/outcome logic, evidence/hashing/version history, spatial/temporal applicability, explainable hidden links and full-route website integration. Run code, native tests and real browser acceptance, fix defects, commit and PUSH in bounded successive waves E0–E10, updating NEXT_SESSION each time. Never claim finished from a single graphic or synthetic content count. No Council nonpublic data, paid deployment, merger, production Site or PR #129/main changes.
+> Execute the Founder V1.6 **FULL-SYSTEM BUILD**, not a shallow web-page demo. Read this entire taskbook, latest GitHub PR #130 HEAD and `apps/public-strategy-atlas/NEXT_SESSION.md`. Resume from completed V1.4 route-first and partial V1.5 accounting. Build actual recursive content, current public source intake, typed goal/work/resource/finance/outcome logic, evidence/hashing/version history, spatial/temporal applicability, explainable hidden links and full-route website integration. Run code, native tests and real browser acceptance, fix defects, commit and PUSH in bounded successive waves E0–E10, updating NEXT_SESSION each time. Never claim finished from a single graphic or synthetic content count. No Council nonpublic data, paid deployment, merger, production Site or PR #129/main changes.
