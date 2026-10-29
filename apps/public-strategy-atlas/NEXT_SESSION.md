@@ -1,3 +1,17 @@
+# Latest runtime retest — 2026-10-30: proxy still blocks official sources
+
+Read `qa/NETWORK_ACCESS_RETEST_20261030.md` and `qa/system/source-recovery-20261030/` first. Read/fetched remote at attempt start: `94d44c597c057322688640bfd977abd903679eda`; this checkpoint is the commit containing this update, whose exact SHA must be read from remote HEAD.
+
+**Actual fresh result:** 30 October 2026 07:09:42 AEDT, both official IP&R HTML and CSP one-page PDF failed through the inherited proxy with `<urlopen error Tunnel connection failed: 403 Forbidden>` during CONNECT. No origin response/PDF bytes. Byte/anchor verifier NOT_TESTED this attempt; source receipt/catalogue unchanged. No bypass attempted.
+
+**Diagnosis:** this attached instance still reports restricted/enforced original spec revision 1, custom allowed hosts []. The saved draft revision 3 contains the requested domains, but that does not establish publication/activation in this running task. Do not assert the owner failed to republish; a different/new version may have been published. Start a new cloud task attached to the intended republished environment/version, then test the same two exact URLs. Do not overwrite network settings or request tokens. If a new task still fails, the authorised administrator must inspect its effective destination policy.
+
+**Fresh verification:** 15/15 native files PASS; base 127 items/hash and migrated/catalogue digests unchanged. Real-browser checks are historical, NOT rerun in this retest (no application/data changes). Coverage remains 15 requirements / 14 families / 2 concrete CSP documents, fresh retrieved/extracted/version-confirmed/admitted 0, official relationships 0. New externally reported DP/OP/Water AMP links remain leads, not executed intake or increased coverage. Full V1.6 PARTIAL, official admission PENDING.
+
+**Next executable step once correctly attached:** GET official IP&R directory and summary PDF into /tmp through normal inherited proxy with TLS verification; run verify-source.py against the exact summary; then use ordered AtlasIntake stages/new revisions with rights/version/geographic/review gates. Continue real CSP/DP/OP/LSPS/resourcing/budget/planning intake only after actual access. Do not silently substitute an alternate host or invent official facts. Existing Draft PR #130 only; no deployment/merge/main/PR129/nonpublic information.
+
+--- Previous checkpoint ---
+
 # Active V1.6 checkpoint — E0–E10 bounded engineering delivered; full acceptance PARTIAL
 
 ## 2026-10-30 network-access recovery — environment publication still REQUIRED
