@@ -1,10 +1,11 @@
 # Atlas 网站 — 永久续接状态（唯一当前位置）
 
 **日期/时区：** 2026-10-29 Australia/Sydney  
-**状态：** `M0_CODE_COMMITTED / BROWSER_QA_PENDING / M1_NOT_STARTED`  
+**状态：** `M0_CODE_COMMITTED / JS_STUB_SMOKE_PASS / BROWSER_QA_PENDING / M1_NOT_STARTED`  
 **用户明确授权：** 开始网站设计与开发，允许隔离 GitHub 分支上的实际开发、测试与推送；**未授权**实际 Council 系统、正式部署、付费服务、合并主线。  
 **仓库：** `simon947161/eco-agent-system`  
 **唯一工程分支：** `feature/public-strategy-atlas-web-mvp-20261029`  
+**跨设备评审入口：** [Draft PR #130](https://github.com/simon947161/eco-agent-system/pull/130)（指向本功能分支，尚未合并）  
 **网站入口：** `apps/public-strategy-atlas/index.html`  
 **开发任务书：** `docs/research/public-strategy-atlas/PROJECT_TASKBOOK_V1_3_BUILD_AND_CONTINUITY_20261029.md`  
 **跨会话检索：** 不要依赖原 Codex 本地路径、办公室 Work 会话或仅存在于 OneDrive 的研究原件。最新真实远程 HEAD 请用 GitHub 查询，不要把此文件自写 SHA 当最新 HEAD。
@@ -15,6 +16,8 @@
 - 关系节点点击、相邻回溯、来源抽屉、暗线候选开关、文本筛选和三种不混合的进度解释模式。
 - 单屏横向滚动和基本辅助功能；不依赖外部收费服务。
 - [README](README.md) 提供启动命令和已知限制。
+
+**本轮静态与模拟 DOM 检查：** GitHub 远程六文件 readback PASS；JavaScript 语法编译 PASS；模拟 DOM 启动 PASS；15 个唯一节点/16 条连接、端点引用 PASS；点击打开证据抽屉 PASS；“关于”说明 PASS；暗线开关 PASS；实际 KPI UNKNOWN 模式 PASS。**这些不是实际浏览器操作测试，也不是截图或正式可访问性测试。**
 
 **未做、不能假称已通过**：真实浏览器打开/截图/E2E；真实官方条款逐项查证；真实网站部署；哈希/Merkle DAG/VC/SCITT 编程；60/200 节点运行负载；跨浏览器/双屏同步。
 
@@ -38,8 +41,8 @@
 > 继续已授权的 Atlas 网站**实际编码、浏览器测试与 GitHub 交付**：仓库 `simon947161/eco-agent-system`，分支 `feature/public-strategy-atlas-web-mvp-20261029`；第一步读 `apps/public-strategy-atlas/NEXT_SESSION.md`、`README.md` 和 `docs/research/public-strategy-atlas/PROJECT_TASKBOOK_V1_3_BUILD_AND_CONTINUITY_20261029.md`。从远程 HEAD 修复并实测 M0，然后推进 M1，不要只写研究报告；每轮 commit+push 并更新 NEXT_SESSION。不得接 Council 内部信息、花钱或部署生产，不碰 PR #129/main。
 
 ## 工程核验状态登记
-- GitHub 目录/文件创建：PASS（待本轮最终远程 readback）
-- 源码静态结构：PRESENT；runtime/browser：NOT_TESTED
+- GitHub 目录/文件创建：PASS（已完成远程 readback）
+- JavaScript 静态语法 + 模拟 DOM 冒烟测试：PASS；实际浏览器：NOT_TESTED
 - 真实政策/法效：UNKNOWN/NOT_LOADED
 - O2 页面设计：INITIAL_IMPLEMENTATION
 - R0-K 研究原件恢复：LOCAL_UNAVAILABLE
