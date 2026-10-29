@@ -13,7 +13,7 @@ const cases=[
   goal:{label:'Environmental protection and emissions context',status:'RESEARCH_CONTEXT',sourceClaim:'CSP environmental measures table, not a proven Objective 6.1→DP/OP action'},
   work:{id:null,description:UNKNOWN,status:UNKNOWN,effort:UNKNOWN},resources:[],funding:[],outputs:[],outcomes:[],
   metric:{id:'csp2035-carbon-per-capita-baseline',label:'CO2e emissions per capita',unit:'t_CO2e/person',value:29.9,
-   period:{from:'2021-07-01',to:'2022-06-30',basis:'Snapshot Climate 2021–22 reference period (financial-year label; exact inventory interval needs review)'},
+   period:{from:'2021-22',to:'2021-22',basis:'Source uses the 2021–22 year label; exact inventory interval has not been independently confirmed'},
    area:'Snowy Monaro Regional LGA',boundary:'REGIONAL_COMMUNITY_INVENTORY',denominator:'population',method:'Snapshot Climate Australian Emissions Profiles 2021–22',direction:'DECREASE',
    baseline:true,target:UNKNOWN,actual:UNKNOWN,status:OBSERVED,
    source:{url:'https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/smrc-csp-2035-endorsed-20250501.pdf',locator:'printed page 30; Our environmental, CO2e emissions per capita',publisher:'Snowy Monaro Regional Council',adoptedOn:'2025-05-01',rawDigest:UNKNOWN,revisionConfirmed:false,humanReviewed:false}},
@@ -39,7 +39,7 @@ function caseForNode(id){return index[id]||null;}
 function assertMeasurement(m) {
  requireValid(m&&typeof m.id==='string'&&typeof m.unit==='string','METRIC_ID_OR_UNIT_MISSING');
  requireValid(m.value===UNKNOWN||finite(m.value),'METRIC_VALUE_INVALID');
- requireValid(m.status===SYNTH||m.status===OBSERVED||m.status===UNKNOWN,'METRIC_STATUS_INVALID');
+ requireValid(m.status===SYNTH||m.status===OBSERVED||m.status===UNKNOWN||m.status==='ADMITTED','METRIC_STATUS_INVALID');
  requireValid(typeof m.area==='string'&&m.area.length>0,'METRIC_AREA_MISSING');
  requireValid(typeof m.boundary==='string'&&m.boundary.length>0,'METRIC_BOUNDARY_MISSING');
  requireValid(m.period&&typeof m.period.from==='string'&&typeof m.period.to==='string','METRIC_TIME_MISSING');
@@ -53,18 +53,21 @@ function assertComparable(a,b) {
  requireValid(a.boundary===b.boundary,'BOUNDARY_MISMATCH');
  requireValid(a.period.from===b.period.from&&a.period.to===b.period.to,'PERIOD_MISMATCH');
  requireValid(norm(a.method||UNKNOWN)===norm(b.method||UNKNOWN),'METHOD_MISMATCH');
+ if(a.unit.includes('/')||a.unit.includes('_per_'))requireValid(a.denominator&&b.denominator&&a.denominator!==UNKNOWN&&b.denominator!==UNKNOWN,'DENOMINATOR_UNKNOWN');
  requireValid((a.denominator||UNKNOWN)===(b.denominator||UNKNOWN),'DENOMINATOR_MISMATCH');
  return true;
 }
 function totalFromPerCapita(rate,population) {
  assertMeasurement(rate);requireValid(rate.unit==='t_CO2e/person','NOT_EMISSIONS_PER_CAPITA');
  requireValid(population&&finite(population.value)&&population.value>0,'POPULATION_DENOMINATOR_UNKNOWN');
+ requireValid(finite(rate.value)&&rate.value>=0,'RATE_VALUE_UNKNOWN');
+ requireValid((rate.status===SYNTH&&population.status===SYNTH)||(rate.status==='ADMITTED'&&population.status==='ADMITTED'),'UNADMITTED_INPUTS');
  requireValid(population.unit==='person','POPULATION_UNIT_MISMATCH');
  requireValid(rate.area===population.area,'GEOGRAPHY_MISMATCH');
  requireValid(rate.boundary===population.boundary,'BOUNDARY_MISMATCH');
  requireValid(rate.period.from===population.period.from&&rate.period.to===population.period.to,'PERIOD_MISMATCH');
  requireValid(population.methodologyCompatible===true,'INVENTORY_METHOD_UNVERIFIED');
- return {value:rate.value*population.value,unit:'t_CO2e',status:rate.status===SYNTH&&population.status===SYNTH?SYNTH:'DERIVED_REVIEW_REQUIRED'};
+ return {value:rate.value*population.value,unit:'t_CO2e',status:rate.status===SYNTH?SYNTH:'DERIVED_REVIEW_REQUIRED'};
 }
 function unitConvert(value,from,to) {
  requireValid(finite(value),'QUANTITY_INVALID');
