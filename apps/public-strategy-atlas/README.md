@@ -4,6 +4,14 @@ English, local-first public-strategy research website. Explore cross-document re
 
 **Status:** working research prototype; M0 retained, M1 validation extended, M2 recursive-content slice verified. Not a complete authoritative knowledge system. No deployment, official endorsement or real Council KPI.
 
+## Founder V1.4: route-first redesign now active
+
+The 2026-10-29 Founder review determined the existing three-column dashboard **does not express the central line/route logic strongly enough**. Read [Founder V1.4 Route-First Directive](../../docs/research/public-strategy-atlas/FOUNDER_UX_V1_4_ROUTE_FIRST_DIRECTIVE_20261029.md) before further UI work. This is an **implementation decision**, not a research hold.
+
+A standalone functional **[Route Map Preview](route-map-preview.html)** uses **the same existing AtlasData** (15 synthetic nodes / 16 typed edges). It gives a large route-first canvas with strategy/planning lines, a separately enabled hypothesis crossover, selectable stations, focus/filter, contextual details and zoom. From the current main website, use **Explore route map** to open it. The preview does **not** yet integrate the full recursive content editor/history/cross-device state into its own overlay. Keep the original main application fully operational while making this visual the **default main-page experience** in the next controlled engineering stage.
+
+Preview contract: `node apps/public-strategy-atlas/route-map.test.cjs` (mock-DOM smoke; real-browser/screenshots and accessibility still required). Do not mistake coloured lines for real strategic progress or approved legal mappings.
+
 ## Run
 
 Keep this entire directory together. No package installation is required.
