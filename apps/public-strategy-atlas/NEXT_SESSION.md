@@ -1,10 +1,31 @@
 # Atlas — authoritative continuation checkpoint
 
 Date: 2026-10-29 Australia/Sydney.
-Status: V1_4_ROUTE_FIRST_DEFAULT / U1_CHROME_SLICE_PASS / U2_PARTIAL / U3_PARTIAL / NOT_DEPLOYED.
+Status: V1_4_U1_ACCEPTED / V1_5_W1_QUANT_MODEL_PARTIAL / CONNECTOR_V8_TEST_LOGIC_PASS / NEW_BROWSER_QA_PENDING / NOT_DEPLOYED.
 Repository: simon947161/eco-agent-system.
 Only remote engineering branch: feature/public-strategy-atlas-web-mvp-20261029.
 Draft PR130: remain OPEN/DRAFT, no merge.
+
+## V1.5 W1 bounded engineering checkpoint — NEW (2026-10-29)
+
+Founder pasted the complete V1.5 engineering kickoff directly into the conversation and clarified it is the active instruction. **Do not ask for P21–P30 to be repasted, repeat the old historical-search question or replace this brief with new study-only documents.** A separate historical P21–30 text is not required to begin authorised work; where past tasks are ambiguous, use the pasted V1.5 and verified HEAD as the implementation baseline.
+
+**Actual new GitHub source files:**
+- `atlas-accounting.js` — public-observed carbon and explicitly SYNTHETIC water/land work-accounting cases **reusing existing node IDs**; typed and time/region/method/dimensionality safe comparisons, cost/output check, per-capita gate and multi-goal allocation guard. No second graph and no new external dependencies.
+- `accounting.test.cjs` — source/status and unit/period/region/boundary, unadmitted 29.9 total extrapolation, financial-class, cost intensity, shared-allocation and panel HTML regression tests.
+- `sources/STRATEGY_WORK_ACCOUNTING_CROSSWALK_20261029.md` — official OLG/NSW Planning/CSP/DP/OP/Resourcing/LSPS references and exact UNKNOWNs; do not mistake the source register for validated action-to-budget mappings.
+- `qa/QUANT_ACCOUNTING_FIRST_SLICE_RESULTS.md` — explicit executed V8 checks and remaining QA gaps.
+- `index.html` loads `atlas-accounting.js` before `atlas.js`; the existing station inspector shows `Work · quantity · accounting` and a `Quantities & budget` shortcut for `csp6`, `water`, `area`. The 127-item content model, byte-backed CSP 6.1 source receipt, local revisions, saved workspaces and original route map were not reset.
+
+**Verification actually performed in this ChatGPT GitHub-connected session:** remotely fetched source and ran the **committed accounting.test.cjs logic** in a sandboxed V8 isolate using strict assertion/require shims: PASS, including 17+ positive/negative checks. Confirmed full main atlas.js parses and HTML script/inspector hooks exist. Earlier W1 focused smoke checks PASS. **NOT native Node CLI, NOT actual Chrome screenshot QA**, and prior two-tab/long-run suites were not rerun here. New first-slice code is PARTIAL, not full V1.5 acceptance.
+
+**Precise safety boundaries:** the CSP full-document p.30 published 29.9 t CO2e/person is `PUBLIC_TEXT_OBSERVED` with Snapshot Climate 2021–22 period label, not a metric-to-CSP6.1/DP/OP mapping, official financial value, Council operating GHG inventory, a reduction outcome or an admitted population denominator. The full p.30 PDF original bytes have NOT been verified by this new slice (CSP 6.1 one-page separate admission remains PENDING). Fictional water 12 ML/AUD24,000 and land 50 ha are labelled SYNTHETIC and cannot be shown as Council actuals.
+
+**IMMEDIATE next execution (DO THIS FIRST):**
+1. Read current remote HEAD/this file; run `node apps/public-strategy-atlas/accounting.test.cjs` and all prior `model.test.cjs`, `content.test.cjs`, `workspace.test.cjs`, `route-main.test.cjs`; report actual results and repair any failure. Inspect in real Chrome 1440×900 and 390×844 the stations Objective 6.1 (`csp6`), Water action (`water`), Geographic scope (`area`), quantity/budget shortcut, cross-links and local workspace; screenshot and test keyboard/scroll/overlap. Do not borrow previous U1 QA as new W1 acceptance.
+2. Ensure the read-only accounting extension is **included in verifiable, content-addressed snapshots and immutable change/review models** before presenting as independently audit-ready. Currently it is a separate immutable-ish source code fixture but not part of the exported base snapshot digest or event chain; mark `NOT_ATTESTED` until integrated and reproducibly checked.
+3. Advance real document-bound source admission: exact current 2026 DP/OP budget water line and LSPS/LEP/DCP applicability under copyright, as-of, region, reviewer gates. Missing direct relationships remain UNKNOWN. Add typed source-to-work crosswalk only when actual anchors exist; no invented budgets.
+4. Then U2 provenance/revision timeline, U3 route density/accessibility/mobile controls and deliberate three-way workspace reconciliation. Commit/push on same PR #130, update NEXT_SESSION with fresh verified HEAD and next executable step. No public deployment/merge/paid service/Council nonpublic information.
 
 ## Founder V1.5 — quantified goal-to-work logic takes priority over additional visual polish
 
