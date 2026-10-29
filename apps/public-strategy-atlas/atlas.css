@@ -12,3 +12,9 @@
 .accounting-flow{scroll-margin-top:95px;overflow-wrap:anywhere}.accounting-flow dl{margin:16px 0}.accounting-pair{padding:10px 0;border-bottom:1px solid #d1e2df}.accounting-pair dt{font-size:11px;color:#527b7b}.accounting-pair dd{margin:5px 0 0;font-size:13px;line-height:1.6}.accounting-unknown{color:#805818}
 
 .record-json{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;line-height:1.6;max-width:100%}
+
+#miniProjection{display:block;width:210px;max-width:100%;height:110px;background:#0c222b;border:1px solid #54767b;margin-top:7px}#recordResults button{display:block;width:100%;margin:8px 0;text-align:left;overflow-wrap:anywhere}
+
+.table-scroll{max-width:100%;overflow:auto}.table-scroll table{border-collapse:collapse;width:100%;font-size:12px}.table-scroll th,.table-scroll td{padding:9px;border:1px solid #bdcecb;text-align:left}.table-scroll th small{display:block}.content-table{overflow-wrap:anywhere}
+
+.content-table{scroll-margin-top:95px}

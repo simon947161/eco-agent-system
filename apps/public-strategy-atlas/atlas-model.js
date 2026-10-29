@@ -113,6 +113,7 @@ function validateContent(d){
   if(!item||typeof item!=='object'||typeof item.id!=='string'||!item.id||items.has(item.id)){issues.push('CONTENT_ID');continue;}
   items.set(item.id,item);
   if(!item.logicalId||!item.versionId||versions.has(item.versionId)||!contentKinds.has(item.kind)||typeof item.title!=='string'||!item.title||typeof item.text!=='string'||!['SYNTHETIC','METADATA_OBSERVED','PUBLIC_TEXT_OBSERVED'].includes(item.status))issues.push('CONTENT_FIELDS:'+item.id);
+  if(item.table){const t=item.table;if(!t||typeof t.caption!=='string'||typeof t.fiscalBasis!=='string'||!Array.isArray(t.columns)||!t.columns.length||t.columns.length>50||t.columns.some(c=>!c||typeof c.label!=='string'||typeof c.unit!=='string')||!Array.isArray(t.rows)||t.rows.length>10000||t.rows.some(row=>!Array.isArray(row)||row.length!==t.columns.length||row.some(v=>!['string','number'].includes(typeof v)||typeof v==='number'&&!Number.isFinite(v)))||!Array.isArray(t.footnotes)||t.footnotes.some(f=>typeof f!=='string'))issues.push('CONTENT_TABLE:'+item.id);}
   versions.add(item.versionId);
   if(item.status==='SYNTHETIC'){
    if(!owners.has(item.ownerNodeId)||!d.revisions.some(r=>r.id===item.revisionId&&r.classification==='SYNTHETIC')||item.observationId!==null)issues.push('CONTENT_SCOPE:'+item.id);
@@ -166,11 +167,12 @@ function layoutContent(d,rootId,{expanded=new Set(),limit=200}={}){
  while(i<queue.length&&result.length<limit){const item=queue[i++];result.push({...item,...positions.get(item.id)});if(expanded.has(item.id))for(const child of children.get(item.id)||[]){queue.push(child);edges.push({from:item.id,to:child.id});}}
  const ids=new Set(result.map(n=>n.id));return {nodes:result,edges:edges.filter(e=>ids.has(e.from)&&ids.has(e.to)),truncated:i<queue.length};
 }
-function densityFixture(d,count,{shape='branching'}={}){
+function densityFixture(d,count,{shape='branching',table=false}={}){
  if(!['branching','chain'].includes(shape))throw Error('DENSITY_SHAPE');
  if(![60,200,1000,10000].includes(count))throw Error('DENSITY_BOUNDS');
  const copy=structuredClone(d);delete copy.domain;
  for(let i=0;i<count;i++)copy.contentItems.push({id:'density:'+i,logicalId:'density:'+i,versionId:'density:'+i+':v1',revisionId:'synthetic-v1',ownerNodeId:'csp',parentId:i===0?null:'density:'+(shape==='chain'?i-1:Math.floor((i-1)/3)),kind:i===0?'TOPIC':'SECTION',title:i===0?'Synthetic density fixture':('Demo item '+i),text:'Generated synthetic layout fixture only. Not a Council document or an evidence claim.',status:'SYNTHETIC',observationId:null});
+ if(table)copy.contentItems.find(c=>c.id==='density:0').table={caption:'Synthetic quantity table — no Council figures',fiscalBasis:'SYNTHETIC_FY2026-27',columns:[{label:'Synthetic activity',unit:'identifier'},{label:'Illustrative volume',unit:'ML'}],rows:Array.from({length:101},(_,i)=>['Synthetic row '+i,i/10]),footnotes:['Synthetic rendering fixture only. Not actual water, spend, output or statutory evidence.']};
  return copy;
 }
 function discover(d){

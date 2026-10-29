@@ -1,3 +1,13 @@
+# Active V1.6 checkpoint — E9 integrated route-first product delivered
+
+Previous remote `a6f5ed976144d2a2f8541092f33b1e5631fa8d56` (E8). Read current remote HEAD.
+
+E9 adds grounded entity/content/source/numeric/unit search and effective scope filters; bounded minimap/viewport; paginated all-layer audit and revision diffs; synthetic numeric input editing/invalidation; structured table captions/units/fiscal/footnotes and row pagination; unsafe URL rejection. Fifteen native suites + actual 1440×900/390×844/2560×1080/3840×1080 integration browser checks PASS. See qa/E9_INTEGRATION_RESULTS.md and qa/system/native-e9.json plus actual map/history/table screenshots/accessibility tree. Full official corpus/physical hardware/professional accessibility certification NOT_TESTED.
+
+Next exact step E10: run the full native runner with actual coverage, all real browser runners (e0/system/deep/merge/discovery/integration), independent verifiers, syntax and privacy/source-rights review; repair failures; update README/DATA_CONTRACT and a machine-readable V1.6 acceptance matrix with separate SOFTWARE_CAPABILITY/PUBLIC_CORPUS_COVERAGE/OFFICIAL_ADMISSION verdicts and precise external blockers. Save final QA review packet to Draft PR #130 branch; confirm remote HEAD and Draft state. Real public source retrieval remains proxy BLOCKED_BY_PERMISSION; settings save is required to apply saved official-host domain additions. No deployment/merge/main/PR129 changes.
+
+--- Previous checkpoint ---
+
 # Active V1.6 checkpoint — E8 explainable discovery/review delivered
 
 Previous verified remote `77b5760d719987938b0797a25dc4c99ae4314fef` (E7). Read current remote HEAD.

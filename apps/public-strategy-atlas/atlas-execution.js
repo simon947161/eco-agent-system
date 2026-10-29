@@ -152,5 +152,18 @@ async function verifyCandidate(d,candidate){
   return Array.isArray(candidate.signals)&&candidate.signals.length>0&&Array.isArray(candidate.sourcePaths)&&candidate.sourcePaths.every(id=>assertions(d).some(a=>a.id===id))&&typeof candidate.falsifier==='string'&&candidate.falsifier.length>0;
  }catch{return false;}
 }
-const api={candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
+function searchRecords(d,query,{stationId=null,region=null,date=null,kind=null,classification=null,includeUnknownScope=false,offset=0,limit=12}={}){
+ need(typeof query==='string'&&Number.isInteger(offset)&&offset>=0&&Number.isInteger(limit)&&limit>0&&limit<=100,'SEARCH_BOUNDS');
+ const tokens=query.toLowerCase().replace(/_/g,' ').trim().split(/\s+/).filter(Boolean),results=[];
+ const rows=[...d.nodes.map(record=>({category:'station',record})),...d.contentItems.map(record=>({category:'content',record})),...(d.domain?.entities||[]).map(record=>({category:'entity',record})),...(d.domain?.sourceCatalogue?.sources||[]).map(record=>({category:'source',record:{...record,kind:'SourceArtifact',label:record.title}}))];
+ for(const row of rows){const r=row.record,area=r.data?.area||r.scope?.region||r.geographicExtent?.label||null,owner=r.stationId||r.ownerNodeId||(row.category==='station'?r.id:null),status=r.classification||r.status||'UNKNOWN';
+  if(stationId&&owner!==stationId||region&&area!==region||kind&&(r.kind||r.type)!==kind||classification&&status!==classification)continue;
+  let applicabilityStatus='NOT_REQUESTED';if(date){const result=applicability(r,{date,region:region||area});applicabilityStatus=result.status;if(result.status.startsWith('REJECTED')||result.status==='UNKNOWN'&&!includeUnknownScope)continue;}
+  const text=[r.id,r.label,r.title,r.text,r.localNote,r.kind,status,r.data?.value,r.data?.unit,r.provenance?.locator,r.officialUrl,r.directoryUrl,M.canonical(r.data||{}),M.canonical(r.scope||{}),r.family].filter(v=>v!==undefined).join(' ').toLowerCase().replace(/_/g,' ');
+  if(tokens.every(token=>text.includes(token)))results.push({...row,stationId:owner,classification:status,applicability:applicabilityStatus});
+ }
+ return {total:results.length,items:results.slice(offset,offset+limit),offset,nextOffset:offset+limit<results.length?offset+limit:null};
+}
+function diffRecords(before,after){return [...new Set([...Object.keys(before||{}),...Object.keys(after||{})])].sort().filter(field=>M.canonical(before?.[field]??null)!==M.canonical(after?.[field]??null)).map(field=>({field,before:before?.[field]??null,after:after?.[field]??null}));}
+const api={searchRecords,diffRecords,candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

@@ -19,6 +19,7 @@ function validate(d){
   if(!r||typeof r.id!=='string'||!r.id||ids.has(r.id)){errors.push('DOMAIN_ID');continue;}ids.add(r.id);
   if(!STATES.has(r.state)||!CLASSES.has(r.classification)||!stations.has(r.stationId)||!revisions.has(r.revisionId))errors.push('DOMAIN_FIELDS:'+r.id);
   if(r.kind&&!TYPES.has(r.kind))errors.push('DOMAIN_KIND:'+r.id);
+  if(r.provenance?.url){try{const url=new URL(r.provenance.url);if(url.protocol!=='https:'||url.username||url.password)errors.push('DOMAIN_UNSAFE_URL:'+r.id);}catch{errors.push('DOMAIN_UNSAFE_URL:'+r.id);}}
   if(r.classification==='PUBLIC_TEXT_OBSERVED'&&(!r.provenance?.url?.startsWith('https://')||!r.provenance?.locator))errors.push('DOMAIN_PROVENANCE:'+r.id);
   if(r.admission!=='PENDING'&&r.admission!=='NOT_APPLICABLE')errors.push('DOMAIN_OFFICIAL_PROMOTION:'+r.id);
  }
@@ -26,6 +27,8 @@ function validate(d){
  for(const e of x.entities){
   if(!TYPES.has(e.kind)||typeof e.label!=='string'||!e.data||typeof e.data!=='object')errors.push('DOMAIN_ENTITY:'+e.id);
   if(e.data?.status&&!['SYNTHETIC','PUBLIC_TEXT_OBSERVED','UNKNOWN'].includes(e.data.status))errors.push('DOMAIN_DATA_PROMOTION:'+e.id);
+  if(e.kind==='FinancialEntry'&&(!['APPROVED_BUDGET','REVISED_BUDGET','COMMITTED','ACTUAL_EXPENDITURE'].includes(e.data.type)||e.data.unit!=='AUD'||!Number.isFinite(e.data.value)||e.data.value<0||typeof e.data.period!=='string'||!e.data.area||!e.data.boundary))errors.push('DOMAIN_FINANCIAL:'+e.id);
+  if(['ML','ha','t_CO2e/person'].includes(e.data?.unit)&&e.data.value!=='UNKNOWN'&&(!Number.isFinite(e.data.value)||e.data.value<0))errors.push('DOMAIN_QUANTITY:'+e.id);
   if(e.kind==='QuantifiedObservation'&&(!e.data.unit||e.data.value!=='UNKNOWN'&&!(typeof e.data.value==='number'&&Number.isFinite(e.data.value))))errors.push('DOMAIN_MEASUREMENT:'+e.id);
  }
  for(const a of x.assertions){

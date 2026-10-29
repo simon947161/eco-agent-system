@@ -1,0 +1,217 @@
+- link "Skip to route map":
+  - /url: "#canvas-title"
+- banner:
+  - link "Atlas home":
+    - /url: ./index.html
+    - strong: Public Strategy Atlas
+  - text: Search stations and internal content
+  - searchbox "Search stations and internal content": 29.9 t CO2e/person
+  - group: Tools & views
+- main:
+  - text: INDEPENDENT RESEARCH · SYNTHETIC ROUTES
+  - heading "Follow the reasoning." [level=1]:
+    - text: Follow the
+    - emphasis: reasoning.
+  - paragraph: Two routes. Many questions. Follow any station.
+  - region "Scrollable route map. Arrow keys scroll; Tab selects stations and connections.":
+    - group "Public strategy knowledge route map Strategy and planning routes branch and converge at synthetic stations. Dashed amber connections are hypotheses, not official policy mappings.":
+      - text: 01 / STRATEGY & DELIVERY 02 / LAND-USE & APPLICABILITY
+      - 'button "Inspect connection: CSP to Objective 6.1"'
+      - 'button "Inspect connection: CSP to Objective 8.2"'
+      - 'button "Inspect connection: Objective 6.1 to Delivery program"'
+      - 'button "Inspect connection: Objective 8.2 to Delivery program"'
+      - 'button "Inspect connection: Delivery program to Operational plan"'
+      - 'button "Inspect connection: Operational plan to Indicator definition"'
+      - 'button "Inspect connection: Operational plan to Water action"'
+      - 'button "Inspect connection: Water action to Evidence record"'
+      - 'button "Inspect connection: LSPS to Planning priority"'
+      - 'button "Inspect connection: Planning priority to LEP provision"'
+      - 'button "Inspect connection: Planning priority to DCP control"'
+      - 'button "Inspect connection: LEP provision to Geographic scope"'
+      - 'button "Inspect connection: DCP control to Geographic scope"'
+      - 'button "Inspect connection: Geographic scope to Effective period"'
+      - button "Inspect station CSP · SYNTHETIC": CSP SYNTHETIC ORIGIN
+      - button "Inspect station Objective 6.1 · SYNTHETIC": Objective 6.1 Environment · demo
+      - button "Inspect station Objective 8.2 · SYNTHETIC": Objective 8.2 Infrastructure · demo
+      - button "Inspect station Delivery program · SYNTHETIC": Delivery program DP · structure demo
+      - button "Inspect station Operational plan · SYNTHETIC": Operational plan OP · structure demo
+      - button "Inspect station Indicator definition · SYNTHETIC": Indicator definition Definition unverified
+      - button "Inspect station Water action · SYNTHETIC": Water action Synthetic activity
+      - button "Inspect station Evidence record · SYNTHETIC": Evidence record Synthetic review
+      - button "Inspect station LSPS · SYNTHETIC": LSPS Land-use planning
+      - button "Inspect station Planning priority · SYNTHETIC": Planning priority Illustrative priority
+      - button "Inspect station LEP provision · SYNTHETIC": LEP provision Scope unverified
+      - button "Inspect station DCP control · SYNTHETIC": DCP control Guidance unverified
+      - button "Inspect station Geographic scope · SYNTHETIC": Geographic scope Berridale · demo
+      - button "Inspect station Effective period · SYNTHETIC": Effective period Official version needed
+  - navigation "Choose a route":
+    - button "All routes" [pressed]
+    - button "Strategy"
+    - button "Planning"
+    - checkbox "Hidden links"
+    - text: Hidden links
+  - button "Zoom out": −
+  - text: Map zoom
+  - status: 100%
+  - button "Zoom in": +
+  - button "Overview"
+  - button "Reset map position and focus": Reset
+  - text: Strategy · synthetic Planning · synthetic Hypothesis · unverified Observed public text · pending Local review overlay
+  - paragraph: Lines show relationship categories, not achievement. All strategic/planning connections are synthetic.
+  - text: Not Council official · No admitted policy mapping · No actual KPI
+  - group: Map guide
+- dialog "Follow the evidence":
+  - text: STATION / CONNECTION CONTEXT
+  - heading "Follow the evidence" [level=2]
+  - button "Close context panel": ×
+  - heading "Audit & version history" [level=3]
+  - paragraph: sha256:4aeebc412e51dcad10267f22d39277259533d833ae1024fcf3fb20fd1b1a2496
+  - paragraph: "Structure issues: 0 · Event chain: PASS"
+  - paragraph: SELF_ATTESTED · RECEIPT_NOT_PRESENT · EXTERNAL_WITNESS_UNKNOWN
+  - heading "Events 30–60 / 91" [level=4]
+  - strong: DOMAIN_RESEARCH · ADD · sha256:34fe9814c583476ab23dccbf4c7806abc36fcf9ea13cb47557f224a60c9ec84e
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:48c1e9c53268f6684a829a2fe48c43ea64396a419c6e77d5661db56d24e5d904
+  - strong: DOMAIN_RESEARCH · ADD · sha256:1b944844493f843f2715d6aca38707e4beb01988462aba4db01eba3700cd8454
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:adcf20faca82df1664187d91c625f2bec681b701ff476e4eea32c2181eaafeea
+  - strong: DOMAIN_RESEARCH · ADD · sha256:f3c17ab4bfc088431497db4228726e26d0342be0db6345ab4b884edd404114b5
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:450bc9386bbdf2758bab94f8491d8da8e30339ea6c106195786092af2312fe67
+  - strong: DOMAIN_RESEARCH · ADD · sha256:2b065ab82620271c72313e844481248d79c0d0cbd9f5b61e57b7a926e95e3bde
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:3119704d061e73e85e247a254cde6dc869617ff335f4c6413de4529e363c176f
+  - strong: DOMAIN_RESEARCH · ADD · sha256:8de5204f17a3d5836f4d7338a0337798d33daa23cdec57d41e85de8e4b3da4e0
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:6ec15f8316bb85c9cdbc06662d0b2a268be8b75622b4efc0f61610d695e06311
+  - strong: DOMAIN_RESEARCH · ADD · sha256:6b795c890c59d0a7c78b9894946fc4f84fbee0b348ef89c2356e7285018144dc
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:8c074e93e623d1184fefa372128d700c6c6e09794b734bd6a3724f911618aa32
+  - strong: DOMAIN_RESEARCH · ADD · sha256:7592d0fd6b6c52e197b17829a61f99d569bbb67dd9d9c8043b7d3fc597b4b323
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:4504c3231e764b4e9fc702d6736b7ec86e14d01db96a89abb6db095d3783adc1
+  - strong: DOMAIN_RESEARCH · ADD · sha256:4453aa98643641f62787d3a4aa00ff5d667b8118340936597dc3cc4ff3be19b8
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:8ee7e8853b8af38086270f580819f34d5848bfd4aa47878dfaa8b2cfe398b75c
+  - strong: DOMAIN_RESEARCH · ADD · sha256:0944fba0fbe68c0d092a71eb1a6fac3c91f935aaba7a014d846aeafae13fa447
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:065e1ea5895ff8aa44bb9bdf7c1c996cc0ba7af5bb81bb13421563f47c072b72
+  - strong: DOMAIN_RESEARCH · ADD · sha256:93c1ffafbce7f0cdb3483accb329d14064df2ce27c7f5f9a529d523ecab7a274
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:11630fdf00e8377c586d6cf54e85c0665f5dc8d804ee598da1ea816b8b824100
+  - strong: DOMAIN_RESEARCH · ADD · sha256:653ad786c12096383004a75dde758eedc8ea181f96d019d83a672c31ae4ea856
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:78eabeab8e2f9c5116ef489caf255ba78d70b38f950edd5642b780888f45ba57
+  - strong: DOMAIN_RESEARCH · ADD · sha256:28e171dc2ee3b44d1640f48dceac9d329effb61d4b08292c0aee30c19a7f2864
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:be15116ea14b9ccbcf4a6cda958ae31060cb8a8d8220cfaf76df8b1dd30cb208
+  - strong: DOMAIN_RESEARCH · ADD · sha256:5f141f37c873c597b755ba3358c822e5b82288433d05fa510c797ffbd3eda006
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:16aaafe8b130648718373dc12ab464ad67d9d2b7c7317636e68efc8a2486fd1b
+  - strong: DOMAIN_RESEARCH · ADD · sha256:8fce3e7869a25253ce5b4f62ad0adaa8bd73c2be1fdfc3d35a5c622cea17e361
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:e49cc1bb079e9ec0dd0f4e4da7ab338b43ff59a68d60404f427e5ff39db7688d
+  - strong: DOMAIN_RESEARCH · ADD · sha256:e716ffc98b2fcd00927c8e650e46fc0d57b8f1c62cd15682f1e377829539f186
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:79615e2efbb638080c432ca54968b2781e4be3ccc9b76cd961d2de00e371ca39
+  - strong: DOMAIN_RESEARCH · ADD · sha256:3590183efcab44d7a9a8725fbc43dddb848fc97d2fcdf74d51f4a2d844ff2680
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:3c2f4f03c6f2d626838bbb5185f7cb1bfe949a3a393178828212678df0377a41
+  - strong: DOMAIN_RESEARCH · ADD · sha256:8496ff060980ca0d39562375bbb32a81a6e13bbed0d35f0c6c920e761d7f0f2e
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:122b9b7a28170882686d857a271fb22ba092547d8a15bfe973637f8370408d4b
+  - strong: DOMAIN_RESEARCH · ADD · sha256:dfff1c0f37206cb4dd93463ecb747561d09a1de7acf0c105a1203d0c2c485f88
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:5a3471cc2d626f5598e557f376a6573ab16e2b30ed053388c0a963ec3f5e1105
+  - strong: DOMAIN_RESEARCH · ADD · sha256:a0d8109ab9cf45ea1c526ee2a077c90b11d1e798db8e66d81a1c496156e0deef
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:4cd5d37b9787c60e8fd8540664dfcb8d5c83692fbdfc3f417821080ae9093cc1
+  - strong: DOMAIN_RESEARCH · ADD · sha256:b511fe4b507294575eadc7117e5e6d41968468480997174fbcf3bcded82a4a62
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:060b792ae842b4a93a66690876aac810b757700781bea09aa146d4692aa7d3d9
+  - strong: DOMAIN_RESEARCH · ADD · sha256:4031816575f16ada6de15830ad307b281afd5742131f68917629a342f398a4f5
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:a8c134fe7ca1e70eb8b8b6dbe8e2d6d6d4beb3c34cd6f15f19ec28f74675d3e6
+  - strong: DOMAIN_RESEARCH · ADD · sha256:1216ee614d2fc923e1c3c24c7b674a8774355b2ea6a4940572fb51af49bbfb67
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:86a6d0bf27027943ade91449824e1cf46c9e6db8797f779bf5adf2f00670539e
+  - strong: DOMAIN_RESEARCH · ADD · sha256:f6ecd3da45b05f44b4685727a22b2151d58bb1c8596cc0e0db535a63e2bf689b
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:591b5bae1ccd3eccd170898849330aec9f7c8ed6b003762ff7158078e1ffe077
+  - strong: DOMAIN_RESEARCH · ADD · sha256:8a31da77a0b37fa5ce61b7e9fc4cfd8e95f777247ecbb32d07b6b268bae8216a
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:f68ff06eeddb91a7d4480ca048b3210a07ecaeebd3d6c73c28d2bc59dd6f53a0
+  - strong: DOMAIN_RESEARCH · ADD · sha256:dcc76c728ab7370a1b329f346441bde1a7cbe860ef6bd7a5b9225d8e8b04e254
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:d2edc29bf27836479daefcf873fc35f21e1b1198b5f2274e54066fe56b75896a
+  - strong: DOMAIN_RESEARCH · ADD · sha256:0e9ab44c8f4972114c6dd769c8974ee61871fad8f3ec2e7965134dcd5f886078
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:0fe45a803ba895e708217c858473a8741482d99c3ca9366c11f9addbaee01d53
+  - strong: DOMAIN_RESEARCH · ADD · sha256:c6a3e7918f9f2ee7af496bfc51df80747321816888f622417d9578aefce6ba7f
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:b25afc4e570a2178cb7aaa16fda831e2546a95c04299c114b98b6d641af39964
+  - strong: DOMAIN_RESEARCH · ADD · sha256:ec9e443b55d4296aa6777a588a3071e2c0f1fe3d25ebb2cc90c8b96bcbc43cc0
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:202d34eb220f48ea458dc8f367675d63758df8fc082e0e20cafd0b387538f6db
+  - strong: DOMAIN_RESEARCH · ADD · sha256:79f03fe60ac77c533287205afd8980f3e4384ba32cbc8ab761cf98f0ad854fba
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:43033453107cd072fd6ef97063fc0a9e691e95ba7c1e85450618a64e30507964
+  - strong: DOMAIN_RESEARCH · ADD · sha256:763ed95c712d96a833f08f93b44c7acea1c460221c3677fb08d24b0f49fa6524
+  - paragraph: 2026-10-29T00:00:00.000Z
+  - paragraph: Migrate source-bounded accounting record
+  - paragraph: sha256:ae09a449beba98a769fb1b05ad07adf64135509877320bc374aafcd5835d3ba1
+  - button "Newer events"
+  - button "Older events"
+  - heading "Revision field differences 0–15 / 74" [level=4]
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02:input:synthetic-water-output · sha256:07d4e9b907372272d33dd1047254f0ac93ced3a794aabc762e27886636a9dfcf
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02:input:synthetic-water-spend · sha256:1df00b20ca3e0373ddc44d083cd039379147afab9934f804cf2868018b399a44
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02 · sha256:67edf84d7a2fdf6227e3bc426e8311d79df0e5f35e18764e00dd97f9e5e4fd7a
+  - group: synthetic-water-spend · sha256:af6817d5f43d5d0a391e96347affaf7f2ec59208f58a273fb457f33a919afec3
+  - group: legal-candidate:expired · sha256:49b55780108bfed4e672a4be7460568cedc7e310d0135ec6324d00caf274f2a9
+  - group: legal-fixture:expired · sha256:e90b3dc667cb59dc66dfbb4ebc1c019ce628f9e432d2bc9aabf1574ac465f7a4
+  - group: legal-candidate:draft · sha256:bf5f42202f769f2e7631f44c6ed8324324d5be0ec1ffcaadf0af0e5227bea264
+  - group: legal-fixture:draft · sha256:f06ff64d274f0603d922352c44018f6acb500703e5fe464c309a726ff63dfc14
+  - group: legal-candidate:wrong-region · sha256:cdd9001a37a162c13d15572e5840068bd2a363526e499665e881d2ec775e91ad
+  - group: legal-fixture:wrong-region · sha256:0f3098064df1020495a89486b42597c21e9f131830fa8f00acb2bd0750139825
+  - group: legal-candidate:current · sha256:8ba8b4cec27364e688f516096e2b1eb700d80bebd2a30ada2ea76bdd132a0f7a
+  - group: legal-fixture:current · sha256:15ca8f9fa21744757bb1d6d86e0012a5bafa6d9c87d9cc0e418c51cac92a74af
+  - group: wbs-link:synthetic-land-review:RESOURCED_BY:synthetic-land-area · sha256:0afb50d68d48919cb4b246fba001647e852243a52a0184adf23641cfb2a73ebe
+  - group: wbs-link:synthetic-land-review:MEASURED_BY:synthetic-area · sha256:20cb4d625e3f3291a632c42b0d01c6ef1c7da290fa39c5cae99e94a9ac6113b6
+  - group: wbs-link:wbs:area:task:RESOURCED_BY:wbs:area:asset · sha256:4240d0cf9f4aa85321e6aad7faefe9bbae8bd967ae467939206d192229a89318
+  - button "Older revisions"
+  - paragraph: Original content, semantic assertions, source intake, calculations and local research have separate histories. Integrity is not source rights, truth, legal applicability or official approval. Full history is included in explicit exports.
+  - heading "Public reference directories" [level=3]
+  - link "Integrated planning and reporting ↗":
+    - /url: https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting
+  - link "Development and land-use planning ↗":
+    - /url: https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development
+  - paragraph: Directories do not prove clause mappings. CSP 6.1 admission remains pending.
