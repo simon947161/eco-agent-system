@@ -114,5 +114,43 @@ function asOf(d,context){
  const records=[],conflicts=[];for(const [id,versions] of matched){if(versions.size>1)conflicts.push({id,status:'CONFLICTING_SOURCE_REVISIONS',revisionIds:[...versions.values()].map(v=>v.revisionId)});else records.push([...versions.values()][0]);}
  return {records,conflicts,rejected,officialApplicability:'UNKNOWN'};
 }
-const api={timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
+function candidateSignals(from,to){
+ const a=from.data||{},b=to.data||{},signals=[];
+ if((a.crossReferences||[]).includes(to.id)||(b.crossReferences||[]).includes(from.id))signals.push('EXPLICIT_REFERENCE');
+ if(a.projectCode&&a.projectCode===b.projectCode)signals.push('SHARED_PROJECT_CODE');
+ if(a.area&&a.area!=='UNKNOWN'&&a.area===b.area)signals.push('SHARED_AREA');
+ if(a.unit&&a.unit===b.unit)signals.push('SHARED_UNIT');
+ const vocab=(a.vocabulary||[]).filter(word=>(b.vocabulary||[]).includes(word));if(vocab.length)signals.push('CONTROLLED_VOCABULARY:'+vocab.join(','));
+ const stop=new Set(['synthetic','the','and','for','not','unknown','scenario','research','council','source']);
+ const tokens=text=>new Set(String(text).toLowerCase().match(/[a-z]{4,}/g)?.filter(w=>!stop.has(w))||[]);
+ const left=tokens(from.label||from.title),right=tokens(to.label||to.title);if([...left].some(w=>right.has(w)))signals.push('WORDING_OVERLAP_WEAK');
+ return signals;
+}
+async function candidates(d,fromId,{context=null,limit=20,maxVisited=10000}={}){
+ need(Number.isInteger(limit)&&limit>0&&limit<=100&&Number.isInteger(maxVisited)&&maxVisited>0&&maxVisited<=100000,'DISCOVERY_BOUNDS');
+ const index=M.domainIndex(d),from=index.get(fromId);need(from,'DISCOVERY_ENDPOINT');const out=[];let visited=0;
+ for(const to of index.values()){
+  if(visited++>=maxVisited||out.length>=limit)break;if(to.id===fromId)continue;const signals=candidateSignals(from,to);if(!signals.length)continue;
+  const a=from.data||{},b=to.data||{},reasons=[];
+  if(a.area&&b.area&&a.area!=='UNKNOWN'&&b.area!=='UNKNOWN'&&a.area!==b.area)reasons.push('REJECTED_REGION');
+  if(a.period&&b.period&&M.canonical(a.period)!==M.canonical(b.period))reasons.push('REJECTED_PERIOD');
+  if(a.unit&&b.unit&&a.unit!==b.unit&&['QuantifiedObservation','MetricDefinition'].includes(from.kind)&&['QuantifiedObservation','MetricDefinition'].includes(to.kind))reasons.push('REJECTED_UNIT_MEANING');
+  if(b.sourceLost||b.sourceStatus==='LOST')reasons.push('REJECTED_SOURCE_LOST');
+  if(b.conflictingSourceRevisions?.length)reasons.push('REJECTED_SOURCE_REVISION_CONFLICT');
+  if(context)for(const r of [from,to]){const result=applicability(r,context);if(result.status.startsWith('REJECTED'))reasons.push(result.status);}
+  const path=shortestPath(d,fromId,to.id,{direction:'both',context});
+  const payload={format:'atlas-discovery-candidate-1',ruleVersion:'atlas-scope-signals-1',from:fromId,to:to.id,fromRevisionId:from.versionId||from.revisionId,toRevisionId:to.versionId||to.revisionId,context,signals,status:reasons.length?'REJECTED_CANDIDATE':'DISCOVERY_CANDIDATE',rejectionReasons:[...new Set(reasons)],sourcePaths:path.path,sourceNodeIds:path.nodeIds,rationale:'Signals identify a research question, not an official implementation, legal or causal relationship.',alternativeExplanation:'Shared terminology, accounting units or administrative context can occur without any direct policy or delivery link.',falsifier:'Reject or contest if official anchors do not explicitly support this relation, or region/effective period/legal role/units/accounting basis conflict.',counterevidence:[...(to.gaps||[]),...reasons],reviewState:'PENDING',knownLink:'UNKNOWN',trust:'SELF_ATTESTED'};
+  out.push({...payload,digest:await M.objectDigest(payload)});
+ }
+ return out;
+}
+async function verifyCandidate(d,candidate){
+ try{
+  const {digest,...payload}=candidate;if(candidate.format!=='atlas-discovery-candidate-1'||candidate.ruleVersion!=='atlas-scope-signals-1'||!['REJECTED_CANDIDATE','DISCOVERY_CANDIDATE'].includes(candidate.status)||candidate.knownLink!=='UNKNOWN'||candidate.reviewState!=='PENDING'||await M.objectDigest(payload)!==digest)return false;
+  const index=M.domainIndex(d),revs=new Map((d.domain?.revisions||[]).map(r=>[r.id,r]));
+  for(const [id,revision] of [[candidate.from,candidate.fromRevisionId],[candidate.to,candidate.toRevisionId]])if(index.get(id)?.versionId!==revision&&revs.get(revision)?.logicalId!==id)return false;
+  return Array.isArray(candidate.signals)&&candidate.signals.length>0&&Array.isArray(candidate.sourcePaths)&&candidate.sourcePaths.every(id=>assertions(d).some(a=>a.id===id))&&typeof candidate.falsifier==='string'&&candidate.falsifier.length>0;
+ }catch{return false;}
+}
+const api={candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

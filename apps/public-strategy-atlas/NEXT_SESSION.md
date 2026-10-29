@@ -1,3 +1,13 @@
+# Active V1.6 checkpoint — E8 explainable discovery/review delivered
+
+Previous verified remote `77b5760d719987938b0797a25dc4c99ae4314fef` (E7). Read current remote HEAD.
+
+E8 adds deterministic multi-signal candidates with revision/source paths, alternatives, falsifiers, negative/counterevidence states; bounded forward/reverse queries; local research questions/reviews in immutable domain history. Fourteen native suites + desktop/mobile discovery browser checks PASS. See qa/E8_DISCOVERY_RESULTS.md, qa/system/native-e8.json and discovery screenshots. Rejected candidates cannot be research-approved via this workflow; official KNOWN_LINK remains UNKNOWN. No real CSP→LSPS or causal/financial linkage invented.
+
+Next exact step E9: add unified entity/content/source numeric/unit search and filters, expose complete domain/source/review histories in audit UI, preserve contextual route-first layout, add bounded minimap and accessibility/integration checks. E10 run all native/browser suites and publish an accurate acceptance matrix/coverage/gaps/reproducibility report to Draft PR #130 branch. Source access still BLOCKED_BY_PERMISSION; saved official-host domain additions require settings save. No deploy/merge/main/PR129 changes.
+
+--- Previous checkpoint ---
+
 # Active V1.6 checkpoint — E7 explicit conflict reconciliation delivered
 
 Previous remote `851196bab4214ea2675d9f7d3532270bfef47bb3` (E6). Read current remote HEAD before continuation.

@@ -47,6 +47,8 @@ async function verify(d,m){
    const r=x.revisions[i],{id,...payload}=r;
    if(await m.objectDigest(payload)!==id||r.parentRevision!==null&&!seen.has(r.parentRevision)||x.events[i].objectId!==id)return false;seen.add(id);
   }
+  for(const e of x.entities.filter(e=>e.kind==='DiscoveryHypothesis')){const execution=typeof module!=='undefined'?require('./atlas-execution.js'):root.AtlasExecution;if(!execution||!await execution.verifyCandidate(d,e.data.candidate)||e.data.candidate.status==='REJECTED_CANDIDATE'&&e.state==='APPROVED_FOR_RESEARCH')return false;}
+  for(const e of x.entities.filter(e=>e.kind==='ReviewDecision'))if(!['APPROVED_FOR_RESEARCH','CONTESTED','RETRACTED'].includes(e.data.decision)||e.data.governmentApproval!==false||!x.entities.some(h=>h.kind==='DiscoveryHypothesis'&&h.data.candidate.digest===e.data.candidateDigest))return false;
   for(const e of x.entities.filter(e=>e.kind==='AuditReceipt')){const execution=typeof module!=='undefined'?require('./atlas-execution.js'):root.AtlasExecution;if(!execution||!(await execution.verifyDerivation(d,e.data.receipt)).integrity)return false;}
   for(const record of [...x.entities,...x.assertions]){const rev=x.revisions.find(r=>r.id===record.revisionId),{revisionId,...payload}=record;if(!rev||m.canonical(rev.record)!==m.canonical(payload))return false;}
   return true;
@@ -111,6 +113,17 @@ async function commitRevision(d,m,{id,expectedRevisionId,patch,reason,observedAt
  result.domain.entities=result.domain.entities.map(e=>e.id===id?next:e);
  if(!await verify(result,m))throw Error('INVALID_REVISION');return result;
 }
+async function recordResearchReview(d,m,{candidate,question,decision,reason,observedAt=new Date().toISOString()}){
+ const execution=typeof module!=='undefined'?require('./atlas-execution.js'):root.AtlasExecution;
+ if(!await verify(d,m)||!await execution.verifyCandidate(d,candidate)||!question||question.length>1000||!reason||reason.length>1000||!['APPROVED_FOR_RESEARCH','CONTESTED','RETRACTED'].includes(decision)||candidate.status==='REJECTED_CANDIDATE'&&decision==='APPROVED_FOR_RESEARCH')throw Error('RESEARCH_REVIEW_INVALID');
+ const result=structuredClone(d),from=index(d).get(candidate.from),stationId=from.stationId||d.nodes.find(n=>n.id===from.ownerNodeId)?.id||d.nodes.find(n=>n.id===from.id)?.id;
+ if(!stationId)throw Error('RESEARCH_STATION');
+ const common={stationId,state:decision,classification:'LOCAL_RESEARCH',admission:'NOT_APPLICABLE',provenance:null,scope:from.scope||{region:'UNKNOWN',period:'UNKNOWN',boundary:'UNKNOWN'},gaps:['Local research review is not government approval or official relationship admission.']};
+ const hypothesisId='hypothesis:'+candidate.digest,reviewId='review:'+await m.objectDigest({candidate:candidate.digest,question,decision,reason,observedAt});
+ if(!result.domain.entities.some(e=>e.id===hypothesisId))result.domain.entities.push(await addRevision(result.domain,{...common,id:hypothesisId,kind:'DiscoveryHypothesis',label:question,data:{status:'UNKNOWN',candidate}},m,{reason,observedAt,type:'ADD'}));
+ result.domain.entities.push(await addRevision(result.domain,{...common,id:reviewId,kind:'ReviewDecision',label:decision+' · '+question,data:{status:'UNKNOWN',question,candidateDigest:candidate.digest,decision,reason,observedAt,reviewer:'local-researcher',governmentApproval:false}},m,{reason,observedAt,type:decision==='CONTESTED'?'CONTEST':decision==='RETRACTED'?'RETRACT':'REVIEW'}));
+ return result;
+}
 async function registerScenario(d,m,{id,kind,label,stationId,data,scope,reason}){
  if(!await verify(d,m)||index(d).has(id)||!TYPES.has(kind)||!d.nodes.some(n=>n.id===stationId)||!label||!reason||data?.status!=='SYNTHETIC')throw Error('SYNTHETIC_SCENARIO_REQUIRED');
  const result=structuredClone(d);result.domain.entities.push(await addRevision(result.domain,{id,kind,label,stationId,data,scope:scope||{region:data.area||'UNKNOWN',period:data.period||'UNKNOWN',boundary:data.boundary||'UNKNOWN'},state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,gaps:['User-authored synthetic scenario; not Council facts or official performance.']},m,{reason}));
@@ -127,5 +140,5 @@ async function appendCalculation(d,m,receipt){
  return result;
 }
 function forStation(d,id){return {stationId:id,entities:(d.domain?.entities||[]).filter(e=>e.stationId===id),assertions:(d.domain?.assertions||[]).filter(e=>e.stationId===id),trust:'SELF_ATTESTED',signature:'RECEIPT_NOT_PRESENT',witness:'EXTERNAL_WITNESS_UNKNOWN'};}
-root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,registerScenario,appendCalculation,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
+root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,recordResearchReview,registerScenario,appendCalculation,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
 })(typeof window!=='undefined'?window:globalThis);
