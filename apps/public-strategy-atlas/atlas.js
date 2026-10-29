@@ -21,7 +21,7 @@
     {id:"dcp",label:"DCP 控制",sub:"指导性质待核",type:"lsps",x:813,y:536,source:DEV,detail:"DCP 详细规划指导与 LEP 法定效力不能混同。具体条款和辖区没有在本示例核验。"},
     {id:"area",label:"地区适用性",sub:"Berridale · 演示",type:"lsps",x:1074,y:494,source:DEV,detail:"Berridale 仅作地区维度演示。不能据此断言任何特定地块属于某项 LEP/DCP 条款。"},
     {id:"scope",label:"生效时间",sub:"需官方版本",type:"lsps",x:1291,y:496,source:DEV,detail:"必须另行证明指定条款在指定日期及区域有效；没有凭证时保持 UNKNOWN。"},
-    {id:"candidate",label:"潜在暗线",sub:"研究假设 · 非事实",type:"candidate",x:1126,y:646,source:null,detail:"这是人为构造的跨文件候选关系。一个主题相近的连接并不能自动证明它在法规、行政或科学上成立。"}
+    {id:"candidate",label:"潜在暗线",sub:"研究假设 · 非事实",type:"candidate",x:1324,y:644,source:null,detail:"这是人为构造的跨文件候选关系。一个主题相近的连接并不能自动证明它在法规、行政或科学上成立。"}
   ];
   const edges = [
     {id:"e1",from:"csp",to:"csp6",kind:"EXAMPLE_PARENT",coverage:.88,time:.42},
@@ -39,7 +39,7 @@
     {id:"e13",from:"dcp",to:"area",kind:"EXAMPLE_APPLICABILITY",coverage:.24,time:.29},
     {id:"e14",from:"area",to:"scope",kind:"EXAMPLE_APPLICABILITY",coverage:.12,time:.12},
     {id:"e15",from:"csp8",to:"candidate",kind:"RESEARCH_CANDIDATE",coverage:null,time:null,candidate:true},
-    {id:"e16",from:"candidate",to:"area",kind:"RESEARCH_CANDIDATE",coverage:null,time:null,candidate:true}
+    {id:"e16",from:"area",to:"candidate",kind:"RESEARCH_CANDIDATE",coverage:null,time:null,candidate:true}
   ];
   const map = Object.fromEntries(nodes.map(n => [n.id,n]));
   const state = {root:"csp", selected:null,mode:"coverage",candidates:false,neighbours:true,search:""};
