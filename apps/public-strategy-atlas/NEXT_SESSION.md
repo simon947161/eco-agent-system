@@ -1,3 +1,15 @@
+# Active V1.6 checkpoint — E2 intake capability delivered, real retrieval blocked
+
+Previous verified remote: `271d5b21513158ab063d778328f1a72021f6a877` (E1). Read current remote HEAD; this file is in its checkpoint commit.
+
+E0 PASS; E1 PARTIAL registry/accounting versioning; E2 PARTIAL staged intake/catalogue/gap UI. Eight native suites PASS and desktop/mobile source/dossier/export browser checks PASS. See `qa/E2_INTAKE_RESULTS.md`, `qa/system/native-e2.json`, actual source/domain screenshots. Catalogue: 15 requirements / 14 families / 2 known concrete CSP documents; zero current retrieved/extracted/version-confirmed/admitted; full inventory UNKNOWN. Original source receipts remain historical evidence. Source catalogue is included in audited snapshots.
+
+Source access is BLOCKED_BY_PERMISSION (exact six requests recorded in qa/system/source-access.json). Environment domain additions are saved in draft; user settings save is needed to apply them. Do not fabricate current editions, rights, statutory links or accounting outcomes. Existing PR #130 remains Draft; no deployment.
+
+Next executable step: replace AtlasModel fixed 20-depth/500-item content implementation with indexed iterative validation/traversal/receipts/layout, preserve exact original receipts, add 1000+ and deep-chain tests and bounded route UI; then E4–E10 execution/accounting/applicability/merge/discovery integration. Do not stop at this source gap; independent coding remains.
+
+--- Previous checkpoint ---
+
 # Active V1.6 checkpoint — E1 accounting registry delivered, system incomplete
 
 Previous remotely verified checkpoint: `481a91d1c0b0ae6e4995024703b7f5e5b608406a` (E0). Read current remote branch HEAD before resuming; this file belongs to its own checkpoint commit.

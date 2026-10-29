@@ -70,7 +70,7 @@ with sync_playwright() as p:
         tool(page,'exportBtn')
     snapshot = TEMP/'snapshot.json'
     download_info.value.save_as(str(snapshot))
-    subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(snapshot),page.evaluate('AtlasModel.migrateDataset(AtlasData,AtlasAccounting.cases).then(d=>AtlasModel.objectDigest(d))')],check=True)
+    subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(snapshot),page.evaluate('AtlasModel.migrateDataset(AtlasData,AtlasAccounting.cases,AtlasSourceCatalogue).then(d=>AtlasModel.objectDigest(d))')],check=True)
     passed('Browser-exported base snapshot independently verified against frozen checkpoint')
     page.locator('#toolsMenu > summary').click() if page.locator('#toolsMenu').get_attribute('open') is not None else None
     station(page,'csp6')

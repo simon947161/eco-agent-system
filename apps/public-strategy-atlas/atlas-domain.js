@@ -12,6 +12,7 @@ function validate(d){
  const x=d.domain;if(!x)return [];const errors=[];
  if(x.format!=='atlas-domain-1'||x.algorithmVersion!=='atlas-domain-sha256-1'||!Array.isArray(x.entities)||!Array.isArray(x.assertions)||!Array.isArray(x.revisions)||!Array.isArray(x.events))return ['DOMAIN_FORMAT'];
  if(x.entities.length+x.assertions.length>100000||x.revisions.length>200000)return ['DOMAIN_LIMIT'];
+ if(x.sourceCatalogue&&x.sourceCatalogue.sources?.some(s=>!d.nodes.some(n=>n.id===s.stationId)))errors.push('CATALOGUE_STATION');
  const ids=new Set([...d.nodes,...d.contentItems].map(r=>r.id)),stations=new Set(d.nodes.map(n=>n.id)),revisions=new Map(x.revisions.map(r=>[r.id,r]));
  if(revisions.size!==x.revisions.length)errors.push('DOMAIN_DUPLICATE_REVISION');
  for(const r of [...x.entities,...x.assertions]){
@@ -40,6 +41,7 @@ function validate(d){
 async function verify(d,m){
  try{
   const x=d.domain;if(!x)return true;if(validate(d).length||x.baseDigest!==await m.objectDigest(legacyBase(d))||!await m.verifyEvents(x.events)||x.events.length!==x.revisions.length)return false;
+  if(x.sourceCatalogue){const intake=typeof module!=='undefined'?require('./atlas-intake.js'):root.AtlasIntake;if(!intake||!await intake.verifyCatalogue(x.sourceCatalogue))return false;}
   const seen=new Set();
   for(let i=0;i<x.revisions.length;i++){
    const r=x.revisions[i],{id,...payload}=r;
@@ -54,7 +56,7 @@ async function addRevision(domain,record,m,{parentRevision=null,reason='Migrate 
  domain.revisions.push(revision);domain.events=await m.appendEvent(domain.events,{id:'domain-event-'+domain.events.length,type,objectId:revision.id,actor:'local-researcher',reason,observedAt});
  return {...record,revisionId:revision.id};
 }
-async function migrateDataset(base,cases,m){
+async function migrateDataset(base,cases,m,catalogue=null){
  if(base.domain){if(!await verify(base,m))throw Error('INVALID_DOMAIN');return structuredClone(base);}
  if(m.validate(base).length)throw Error('INVALID_BASE');
  const d=structuredClone(base),x={format:'atlas-domain-1',algorithmVersion:'atlas-domain-sha256-1',baseDigest:await m.objectDigest(base),entities:[],assertions:[],revisions:[],events:[]};d.domain=x;
@@ -71,6 +73,7 @@ async function migrateDataset(base,cases,m){
    x.assertions.push(await addRevision(x,link,m));
   }
  }
+ if(catalogue)x.sourceCatalogue=structuredClone(catalogue);
  if(!await verify(d,m))throw Error('MIGRATION_FAILED');return d;
 }
 async function commitRevision(d,m,{id,expectedRevisionId,patch,reason,observedAt=new Date().toISOString()}){

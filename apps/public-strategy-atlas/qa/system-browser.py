@@ -25,6 +25,12 @@ with sync_playwright() as p:
   page.screenshot(path=str(OUT/f'domain-{width}.png'))
   page.get_by_role('button',name='Trace back to strategy station',exact=True).click()
   expect(page.locator('#details')).to_contain_text('Objective 6.1')
+  page.locator('#toolsMenu>summary').click();page.locator('#coverageBtn').click()
+  expect(page.locator('#details')).to_contain_text('registeredRequirements')
+  expect(page.locator('#details')).to_contain_text('BLOCKED_BY_PERMISSION')
+  page.locator('[data-source-record=smrc-csp-full]').click()
+  expect(page.locator('#details')).to_contain_text('REPORTED_NOT_REVERIFIED')
+  page.screenshot(path=str(OUT/f'source-{width}.png'))
   with page.expect_download() as download:
    page.locator('#toolsMenu>summary').click();page.locator('#exportBtn').click()
   target=Path(f'/tmp/atlas-domain-{width}.json');download.value.save_as(str(target))
