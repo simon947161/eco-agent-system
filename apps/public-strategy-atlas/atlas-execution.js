@@ -242,5 +242,11 @@ async function compareRecords(dataset,{left,right}={}){
  return {format:'atlas-record-comparison-1',methodVersion:'pinned-public-comparison-1',datasetDigest:await M.objectDigest(d),left:{...l,facts:a},right:{...r,facts:b},checks,fieldDiffs:diffRecords(l.record,r.record),compatibility:{status:conflicts.length?'CONFLICT':unknowns.length?'UNKNOWN':'MATCHED_METADATA_ONLY',conflicts:conflicts.map(c=>c.field),unknowns:unknowns.map(c=>c.field),arithmeticAllowed:false},arithmetic:'NOT_PERFORMED',officialRelationship:'UNKNOWN',trust:'SELF_ATTESTED',externalWitness:'EXTERNAL_WITNESS_UNKNOWN',limitations:['This read-only comparison does not change source records or create a semantic relationship.','Matching labels, values, sources or scopes do not prove legal applicability, causation or official admission.','No subtraction, aggregation, conversion or budget-to-expenditure inference is performed.','Historical pins display their exact retained revision; missing history is rejected rather than replaced with a current record.']};
 }
 
-const api={compareRecords,searchRecords,diffRecords,candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
+async function pinRecords(dataset,requests){
+ need(Array.isArray(requests)&&requests.length>0&&requests.length<=512,'PIN_RECORDS_BOUNDS');
+ const d=structuredClone(dataset);need(await M.verifySnapshot(await M.exportSnapshot(d)),'COMPARISON_SNAPSHOT_INVALID');
+ const records=[];for(const request of requests)records.push(await resolveComparisonRecord(d,request));
+ return {datasetDigest:await M.objectDigest(d),records};
+}
+const api={pinRecords,compareRecords,searchRecords,diffRecords,candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

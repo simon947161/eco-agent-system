@@ -8,6 +8,7 @@ allowed={'csoi-corpus-browser.py','csoi-calendar-browser.py','csoi-work-browser.
 allowed.add('csoi-compare-browser.py')
 allowed.add('csoi-snowy-browser.py')
 allowed.add('csoi-clauses-browser.py')
+allowed.add('csoi-paths-browser.py')
 scripts=sys.argv[1:] or ['csoi-browser.py']
 if any(s not in allowed for s in scripts):raise SystemExit('UNRECOGNISED_LOCAL_BROWSER_SUITE')
 class Quiet(SimpleHTTPRequestHandler):

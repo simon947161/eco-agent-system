@@ -1,6 +1,6 @@
 {
   "format": "csoi-v17-current-results-1",
-  "at": "2026-10-30T08:08:37.759041+00:00",
+  "at": "2026-10-30T08:32:17.216007+00:00",
   "systemAcceptance": "PARTIAL",
   "softwareStatus": "PARTIAL",
   "taskCounts": {
@@ -31,18 +31,16 @@
   },
   "native": {
     "status": "PASS_TESTED_HERE",
-    "filesPassed": 32,
-    "evidence": "csoi/native-clauses.json"
+    "filesPassed": 33,
+    "evidence": "csoi/native-paths.json"
   },
   "browser": {
     "status": "PASS_TESTED_HERE",
     "latestAffectedSuites": [
-      "csoi/browser-comparison.json",
-      "csoi/browser-h.json",
-      "csoi/browser-source-extension.json",
-      "csoi/browser-b.json"
+      "csoi/browser-paths.json",
+      "csoi/browser-h.json"
     ],
-    "navigationRoutes": 23,
+    "navigationRoutes": 24,
     "viewports": 5,
     "priorFullRegression": "csoi/browser-final-h.json",
     "priorFullRegressionScope": "Historical Pack H13-suite run, not relabelled as current comparison invocation"
@@ -66,7 +64,7 @@
     "private WCOS/Outlook compatibility",
     "independent privacy/legal certification"
   ],
-  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_clause_batch.code_sha",
+  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_path_batch.code_sha",
   "codeManifest": {
     "atlas-execution.js": "sha256:9689dbdedc409a254979f175e59b3acdae49e5b272c3a18ef60c56469188a862",
     "comparison.test.cjs": "sha256:58be492dd962beebe763f32d1edbff988a168f2b10bffd3ddc453566dca47936",
@@ -76,5 +74,6 @@
   },
   "report": "CSOI_COMPARISON_RESULTS_20261030.md",
   "latestSourceBatch": "csoi/snowy-source-results.json",
-  "latestClauseBatch": "csoi/clause-results.json"
+  "latestClauseBatch": "csoi/clause-results.json",
+  "latestPathBatch": "csoi/path-results.json"
 }
