@@ -1,3 +1,19 @@
+# V1.7 recursive clause checkpoint — PARTIAL
+
+Pushed code/evidence and remote branch+PR130head: `d8a8ae85c9ec0852a558af83612bdc36bcecbe51`. This continuity commit follows it; resolve latest remote HEAD on resume.
+
+30source-pinned own DCPclause observations now live in the SAMEdomain registry. Real8-level document→part→chapter→section→control→subclause→evidencefacet navigation;15researchpagehashanchors verified fromtemporary original;3historical110/90/40L/person/day references in existingtypedquantitative model. Not actualdemand/currentobligations/money. Domainverifier checks allhistorical/current source/parent pins, schema, source-byte history and containmentcycles; withdrawn/changed contexts invalidatecurrentuse while historicalsnapshotsverify. Genericgovernedinput refs now checked on snapshotimport. Original15stations/127items unchanged.
+
+PASS32/32native files; actualdesktop/390px realclausedrilldown/parentreturn/referencequantity/export/independent snapshot; OP/Snowy source regressions;6000level syntheticiterativetraversal. Defaultdataset93entities/48assertions;digest `sha256:2897418d1391dfe004b1d7e63a6085474647818c29160771424d6d6ff7d736f2`. Currentcorpus52records/33byte receipts(13PDF/20HTML),25own source notes plus30clauseobservations/3designreferences separatelycounted. Formalcatalogueextraction/current-version/licence/admission0; officialrelationships0; actualCouncilKPI UNKNOWN. FullsystemPARTIAL;49VERIFIED/28PARTIAL/3BLOCKED.
+
+Report `qa/CSOI_CLAUSE_RESULTS_20261030.md`; result `qa/csoi/clause-results.json`. AuthoredsourceJSON `sources/snowy-dcp-outline.json`; derive JS mirror via `node tools/sync-csoi-outline.cjs`. Verify originalpagehashes via `tools/verify-document-anchors.py ORIGINAL.pdf sources/snowy-dcp-outline-anchors.json`. Original remains/tmp only, no bodies committed.
+
+NEXT executable: implement typed independentlypinned PATH-SET comparison using existingassertions and governedinput lineage (no secondgraph), scope/legal/time/denominator/finance/source/admission gates and counterevidence; extend /compare and testactualpublicOP/DCPpaths. Then register independentPUBLICsource-review workplans (notCounciltasks), attach them to existingAnnualEdition day/week/month/year navigation with assumedhour/unknownactualcost boundaries. Calendar currently accepts onlySYNTHETIC csoiTask capsules; do not relabelpublicCouncilrecords as synthetic to bypassthatguard. Use a separatelytyped governedresearchplan and projection, no accounts/reminders/assignments.
+
+ThreeprivateWCOS tasksCOI002/031/040 deferred. KeepPR130Draft; no deploy/merge/main/PR129changes, privateCouncil/WCOS/accountdata, paidservice orformaldecisions. Continuewithinactivesession.
+
+--- Previous checkpoint ---
+
 # V1.7 Snowy River source checkpoint — PARTIAL
 
 Pushed code/evidence SHA and remote branch/PR130 readback: `598da2e819034be3e74097ef2bcd5cfcc8641305`. This continuity commit follows it; resolve latest remote HEAD on resume.
