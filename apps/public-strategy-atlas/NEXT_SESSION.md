@@ -1,3 +1,18 @@
+# V1.7 HANDOFF RECOVERED — original 80-task plan and registry now on PR #130
+
+Date: 2026-10-30 Australia/Sydney. Original attached ZIP was recovered and examined. **Previous V1.7 handoff-missing blocker has been resolved for the engineering branch.** The earlier blocked report below is historical and must not cause further restart or re-upload requests.
+
+Read these THREE remote files in full:
+- `docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md` — Founder V1.7 full plan, 8 Packs / COI-001–080.
+- `apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json` — initial machine-readable 80-task status registry (all TODO means *not yet verified under V1.7*, not that V1.6 functions are absent).
+- `apps/public-strategy-atlas/CODEX_CSOI_V1_7_START_HERE.txt` — exact startup order and security boundaries.
+
+**Important:** no COI-001…080 task has been independently verified just by publishing these files. Actual prior V1.6 capabilities and new V1.7 source-gap fix remain preserved. At next execution, check current remote PR #130 HEAD and reconcile existing tested code with each task, then mark VERIFIED only with source/test/browser evidence; proceed through continuous Packs A–H during the active task. Never claim all 80 completed from a taskbook, counts or screenshots. New public source access and admission are separate from official approval; source 403 historical records remain evidence.
+
+**Do not ask Founder to re-upload ZIP or any of the three files.** GitHub branch now contains all three. Keep single writer discipline, source/licence/privacy limits, WCOS private boundary, no Council nonpublic data, no deployment/merge/main or PR129 changes, and update NEXT_SESSION / registry with actual commit/test status at each Pack checkpoint.
+
+---
+
 # V1.7 continuation — 2026-10-30: handoff missing; existing source-gap repair verified
 
 Start remote/local/PR #130 HEAD: `c1a859af97c0bc0e22411c303db94d67f252f422`, clean checkout. Read `qa/V1_7_CONTINUATION_BASELINE_20261030.md`, `qa/V1_7_HANDOFF_INTAKE_STATUS.json`, and `qa/system/intake-access-20261030/`. This checkpoint is the commit containing this update; obtain its exact pushed SHA from remote HEAD.
