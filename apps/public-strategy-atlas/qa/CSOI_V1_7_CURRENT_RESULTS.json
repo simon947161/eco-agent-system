@@ -1,6 +1,6 @@
 {
   "format": "csoi-v17-current-results-1",
-  "at": "2026-10-30T08:58:26.552430+00:00",
+  "at": "2026-10-30T09:02:38.475781+00:00",
   "systemAcceptance": "PARTIAL",
   "softwareStatus": "PARTIAL",
   "taskCounts": {
@@ -34,7 +34,7 @@
     "filesPassed": 34,
     "evidence": "csoi/native-review-work.json",
     "finalAllFilesCoverageRun": "csoi/coverage-review-work.txt",
-    "finalChangedModuleNegatives": "csoi/native-review-work-final.log"
+    "finalChangedModuleNegatives": "csoi/native-review-work-pin-fix.log"
   },
   "browser": {
     "status": "PASS_TESTED_HERE",
@@ -50,11 +50,12 @@
     "legacySuitesPassed": 6,
     "latestRegressionLog": "csoi/browser-review-work-regression.log",
     "priorFullRegression": "csoi/browser-final-h.json",
-    "priorFullRegressionScope": "Historical Pack H13-suite run; current invocation separately reran six legacy suites plus affected public work/path/clause suites; detailed calendar and24-route acceptance ran earlier on this batch."
+    "priorFullRegressionScope": "Historical Pack H13-suite run; current invocation separately reran six legacy suites plus affected public work/path/clause suites; detailed calendar and24-route acceptance ran earlier on this batch.",
+    "postReviewPinFix": "csoi/browser-review-work-pin-fix.log"
   },
   "nodeCoverage": {
     "lines": 91.38,
-    "branches": 84.27,
+    "branches": 84.31,
     "functions": 95.56,
     "scope": "Loaded atlas-*.js/csoi-*.js modules under Node; csoi-pages renderer has11.76% lines in this run. No browser-renderer coverage, tools/*.cjs coverage, physical-hardware or regulatory certification is inferred.",
     "evidence": "csoi/coverage-review-work.txt"
@@ -63,7 +64,7 @@
   "pr": {
     "number": 130,
     "state": "DRAFT",
-    "evidence": "csoi/pr130-draft-readback.json"
+    "evidence": "csoi/pr130-review-calendar-readback.json"
   },
   "notTested": [
     "physical touch/monitors",
@@ -76,8 +77,8 @@
   "codeManifest": {
     "atlas-domain.js": "sha256:db4c547bc3fb55a7292d94411153354b335be5463bc59d9104bcd4a632832f29",
     "atlas.js": "sha256:57da3f5b952115e0e022d8899430ff70df22fb7380399f5ba42ec94c687351e3",
-    "csoi-review-work.js": "sha256:fa82b0267961752141b84a163d508830aec25ee0bb4e4ca6a849b8c438f1f353",
-    "csoi-review-work.test.cjs": "sha256:ae66e13d42e613ba69e557137fb09d1d6bcfa178ddb3f64925136cbfcc837b67",
+    "csoi-review-work.js": "sha256:a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+    "csoi-review-work.test.cjs": "sha256:f2bdd7de9399d73f309b3c497ff86c0e30d4fc06293f1c54fedbd0b8124d7fe6",
     "csoi-pages.js": "sha256:4f9dd079864695fbbb15303345a367b09468273bd57bd038e2623fa6b46bef93",
     "index.html": "sha256:9fb58c6ac16e3f0e082a37590b60cb27da5928d9f008836f4d77f4661fd4903a",
     "qa/csoi-review-work-browser.py": "sha256:55fe11236ae5ff6e4ba5301c1f5d9362f1aa2572ab5a333fbc83937cb322b1d8",

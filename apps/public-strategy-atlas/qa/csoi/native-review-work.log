@@ -14,7 +14,7 @@ PASS calendar execution roles use the actual task schema without inventing outco
 PASS inert public source text stays data, source state and unknowns are retained
 PASS dataset remains byte-identical after all comparisons
 comparison: 12 groups PASS
-PASS: 60 synthetic content nodes, 59 edges, stable coordinates, bounded truncation (2ms)
+PASS: 60 synthetic content nodes, 59 edges, stable coordinates, bounded truncation (1ms)
 PASS: 200 synthetic content nodes, 199 edges, stable coordinates, bounded truncation (2ms)
 PASS: export/verify roundtrip, external checkpoint and corrupted dataset/receipt rejection
 PASS: 15 decomposable topics, 127 items, six-level trail, child/ancestor tamper propagation, order independence, 8 negative cases, English UI/content
