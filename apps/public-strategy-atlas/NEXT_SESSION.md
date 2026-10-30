@@ -1,3 +1,21 @@
+# V1.7 comparison checkpoint — PARTIAL
+
+Code/evidence commit and verified remote branch + PR130 head: `bb8c0f567cb8f0974aa37dd1cd9097b1a1314910`. This continuity commit follows it; resolve the current remote HEAD before new work. PR130 public Draft icon/label was observed (read-only); no deployment or merge.
+
+**49 VERIFIED / 28 PARTIAL / 3 BLOCKED tasks.** Packs A–H and subsequent real-source/comparison batches have executable evidence; full-system acceptance remains PARTIAL. COI-074 now has a real `/#/compare` page, exact current/historical pins, typed source/scope/quantity/finance/task/legal differences, recorded-law/work filters and source/object entry links. It stays PARTIAL for complete source-backed obligation indexing and full path-set comparison.
+
+Verification: **31/31 native files PASS**,12comparison adversarial groups; final Node loaded-module coverage91.28%lines/84.74%branches/95.06%functions (not browser/tool coverage). Actual comparison/source/hierarchy/filter/companion suites PASS on desktop/mobile;23registered pages×5viewports PASS. Legacy comparison pins now use content digests; declared labels alone are not cryptographic pins. Missing/malformed/duplicate pins fail, including independent windows. Private markers, hidden source bodies, percent/zero/structured denominators, currency rates, calendar execution states and conflicting legal roles are guarded. No comparison arithmetic, record mutation, merge or official relationship is created.
+
+Current source coverage unchanged by this software batch: **51records/31families;32byte receipts (12PDF,20HTML);25retrieved documents+7directories;24own notes across22sources;5published OP planning records**. Source rights/current consolidation/full corpus UNKNOWN/PENDING; catalogue extraction/current-version/reuse approval/admission0; official relationships0; actual Council output/spend/compliance/environmental KPI UNKNOWN. Original15stations/127items, route map, recursive model, threeledgers, auditing, localediting and conflicts remain. Default datasetdigest `sha256:4023b091396d03acf391be78d2b2148bfc825651519a1114cd5ed129d9cff62a`.
+
+Current review packet: `qa/CSOI_COMPARISON_RESULTS_20261030.md`, machinepacket `qa/CSOI_V1_7_CURRENT_RESULTS.json`;31native log/results, coverage, screenshots and Draft readback under `qa/csoi`. Prior Pack H full13suite browser run and source-extension evidence remain separately dated, not relabelled as the current invocation. Physical hardware/professional screenreader/crossbrowser/privateWCOS compatibility NOT_TESTED.
+
+**Next executable public work:** fetch the exact already-discovered Snowy River DCP PDF using ordinary inherited proxy/TLS, retain metadata/byte evidence and use the existing offline append tool with an immutable-prefix proof. Source lead is in `CsoiSourceObservations` observation `smrc-dcp-snowy-page`. Continue legitimately permitted chapter/work-item/obligation indexing and full path-set comparison. Jindabyne is advertised74MB and needs an explicit bounded large-transfer path. Do not retry known statutory403responses repeatedly or bypassrestrictions. Do not invent current legal scope, finance, internal procedures or outcomes. Keep independent rights/version/geographic/human admission gates pending.
+
+COI-002/031/040 privateWCOS inventory/compatibility remains BLOCKED without its independently authorised contract/environment; no production/account access authorised. No paid services, formal Council decisions, deployment/merge/main/PR129 changes or Council nonpublic data.
+
+--- Previous checkpoint ---
+
 # V1.7 public-source extension checkpoint — PARTIAL
 
 Code/evidence commit and last remote branch/PR-head readback: `a0526c89c93684fd4dac3f3948622fd261f294b5`. This continuity commit follows it; resolve current remote HEAD before continuing.

@@ -2306,14 +2306,21 @@
         "csoi-governance.js",
         "csoi-calendar.js",
         "csoi-assistant.js",
-        "csoi-planning.test.cjs"
+        "csoi-planning.test.cjs",
+        "atlas-execution.js",
+        "comparison.test.cjs",
+        "csoi-router.test.cjs",
+        "csoi-pages.css"
       ],
       "actual_test_commands": [
         "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
         "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
         "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
         "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
-        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-comparison-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py csoi-browser.py csoi-corpus-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py"
       ],
       "evidence_links": [
         "qa/csoi/native-h.json",
@@ -2323,13 +2330,40 @@
         "qa/csoi/original-source-h.txt",
         "qa/csoi/op-planning-quantity-390.png",
         "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
-        "qa/CSOI_V1_7_ACCEPTANCE.json"
+        "qa/CSOI_V1_7_ACCEPTANCE.json",
+        "qa/CSOI_COMPARISON_RESULTS_20261030.md",
+        "qa/CSOI_V1_7_CURRENT_RESULTS.json",
+        "qa/csoi/native-comparison.json",
+        "qa/csoi/coverage-comparison.txt",
+        "qa/csoi/browser-comparison.json",
+        "qa/csoi/pr130-draft-readback.json"
       ],
-      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "remote_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": "Complete current-law/work filter index and dedicated cross-path comparison workflow unfinished; existing combined recorded-scope/source/unit/state filters, linear content and explainable candidates are tested.",
-      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+      "blocker": "Verified pinned two-record comparison and recorded-law/work metadata filters now implemented. Complete source-backed obligation indexing and full path-set comparison remain unfinished; current-law corpus and authorised applicability review are incomplete.",
+      "next_action": "Continue exact Snowy River DCP public intake, permitted chapter/obligation/work indexing and full path-set comparison; preserve all unknowns and source/authority gates.",
+      "evidence_updates": [
+        {
+          "at": "2026-10-30T07:08:12.754999+00:00",
+          "code_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
+          "evidence": [
+            "qa/CSOI_COMPARISON_RESULTS_20261030.md",
+            "qa/CSOI_V1_7_CURRENT_RESULTS.json",
+            "qa/csoi/native-comparison.json",
+            "qa/csoi/coverage-comparison.txt",
+            "qa/csoi/browser-comparison.json",
+            "qa/csoi/pr130-draft-readback.json"
+          ],
+          "test_commands": [
+            "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-comparison-native.json",
+            "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py csoi-browser.py csoi-corpus-browser.py csoi-source-browser.py",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py"
+          ],
+          "observation": "31native files and affected actual Chromium suites PASS. Added pinned two-record comparison with legacy digest pins, type/scope/denominator/financial/task/legal conflict checks and no arithmetic/data mutation; recorded-law/work filters,23routes×5viewports, malformed-pin/private/body guards. Full-system/corpus remainPARTIAL; admissionPENDING."
+        }
+      ]
     },
     {
       "id": "COI-075",
@@ -2371,7 +2405,28 @@
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits.",
+      "evidence_updates": [
+        {
+          "at": "2026-10-30T07:08:12.754999+00:00",
+          "code_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
+          "evidence": [
+            "qa/CSOI_COMPARISON_RESULTS_20261030.md",
+            "qa/CSOI_V1_7_CURRENT_RESULTS.json",
+            "qa/csoi/native-comparison.json",
+            "qa/csoi/coverage-comparison.txt",
+            "qa/csoi/browser-comparison.json",
+            "qa/csoi/pr130-draft-readback.json"
+          ],
+          "test_commands": [
+            "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-comparison-native.json",
+            "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py csoi-browser.py csoi-corpus-browser.py csoi-source-browser.py",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py"
+          ],
+          "observation": "31native files and affected actual Chromium suites PASS. Added pinned two-record comparison with legacy digest pins, type/scope/denominator/financial/task/legal conflict checks and no arithmetic/data mutation; recorded-law/work filters,23routes×5viewports, malformed-pin/private/body guards. Full-system/corpus remainPARTIAL; admissionPENDING."
+        }
+      ]
     },
     {
       "id": "COI-076",
@@ -2426,6 +2481,25 @@
             "qa/csoi/coverage-source-extension.json"
           ],
           "observation": "Appended9 actual public DCP/Water AMP receipts with42source/111event/28observation prefix preserved; added recursive discovery navigation, closed offline byte-check intake and visible focused headings.32byte receipts/51records.30native files and affected Chromium suites PASS; review/currentness/rights/admission pending."
+        },
+        {
+          "at": "2026-10-30T07:08:12.754999+00:00",
+          "code_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
+          "evidence": [
+            "qa/CSOI_COMPARISON_RESULTS_20261030.md",
+            "qa/CSOI_V1_7_CURRENT_RESULTS.json",
+            "qa/csoi/native-comparison.json",
+            "qa/csoi/coverage-comparison.txt",
+            "qa/csoi/browser-comparison.json",
+            "qa/csoi/pr130-draft-readback.json"
+          ],
+          "test_commands": [
+            "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-comparison-native.json",
+            "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py csoi-browser.py csoi-corpus-browser.py csoi-source-browser.py",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py"
+          ],
+          "observation": "31native files and affected actual Chromium suites PASS. Added pinned two-record comparison with legacy digest pins, type/scope/denominator/financial/task/legal conflict checks and no arithmetic/data mutation; recorded-law/work filters,23routes×5viewports, malformed-pin/private/body guards. Full-system/corpus remainPARTIAL; admissionPENDING."
         }
       ]
     },
@@ -2511,7 +2585,28 @@
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits.",
+      "evidence_updates": [
+        {
+          "at": "2026-10-30T07:08:12.754999+00:00",
+          "code_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
+          "evidence": [
+            "qa/CSOI_COMPARISON_RESULTS_20261030.md",
+            "qa/CSOI_V1_7_CURRENT_RESULTS.json",
+            "qa/csoi/native-comparison.json",
+            "qa/csoi/coverage-comparison.txt",
+            "qa/csoi/browser-comparison.json",
+            "qa/csoi/pr130-draft-readback.json"
+          ],
+          "test_commands": [
+            "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-comparison-native.json",
+            "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py csoi-browser.py csoi-corpus-browser.py csoi-source-browser.py",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py"
+          ],
+          "observation": "31native files and affected actual Chromium suites PASS. Added pinned two-record comparison with legacy digest pins, type/scope/denominator/financial/task/legal conflict checks and no arithmetic/data mutation; recorded-law/work filters,23routes×5viewports, malformed-pin/private/body guards. Full-system/corpus remainPARTIAL; admissionPENDING."
+        }
+      ]
     },
     {
       "id": "COI-079",
@@ -2553,7 +2648,28 @@
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits.",
+      "evidence_updates": [
+        {
+          "at": "2026-10-30T07:08:12.754999+00:00",
+          "code_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
+          "evidence": [
+            "qa/CSOI_COMPARISON_RESULTS_20261030.md",
+            "qa/CSOI_V1_7_CURRENT_RESULTS.json",
+            "qa/csoi/native-comparison.json",
+            "qa/csoi/coverage-comparison.txt",
+            "qa/csoi/browser-comparison.json",
+            "qa/csoi/pr130-draft-readback.json"
+          ],
+          "test_commands": [
+            "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-comparison-native.json",
+            "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py csoi-browser.py csoi-corpus-browser.py csoi-source-browser.py",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py"
+          ],
+          "observation": "31native files and affected actual Chromium suites PASS. Added pinned two-record comparison with legacy digest pins, type/scope/denominator/financial/task/legal conflict checks and no arithmetic/data mutation; recorded-law/work filters,23routes×5viewports, malformed-pin/private/body guards. Full-system/corpus remainPARTIAL; admissionPENDING."
+        }
+      ]
     },
     {
       "id": "COI-080",
@@ -2595,10 +2711,31 @@
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits.",
+      "evidence_updates": [
+        {
+          "at": "2026-10-30T07:08:12.754999+00:00",
+          "code_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
+          "evidence": [
+            "qa/CSOI_COMPARISON_RESULTS_20261030.md",
+            "qa/CSOI_V1_7_CURRENT_RESULTS.json",
+            "qa/csoi/native-comparison.json",
+            "qa/csoi/coverage-comparison.txt",
+            "qa/csoi/browser-comparison.json",
+            "qa/csoi/pr130-draft-readback.json"
+          ],
+          "test_commands": [
+            "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-comparison-native.json",
+            "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py csoi-browser.py csoi-corpus-browser.py csoi-source-browser.py",
+            "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-compare-browser.py"
+          ],
+          "observation": "31native files and affected actual Chromium suites PASS. Added pinned two-record comparison with legacy digest pins, type/scope/denominator/financial/task/legal conflict checks and no arithmetic/data mutation; recorded-law/work filters,23routes×5viewports, malformed-pin/private/body guards. Full-system/corpus remainPARTIAL; admissionPENDING."
+        }
+      ]
     }
   ],
-  "updated_at": "2026-10-30T03:23:10.126147+00:00",
+  "updated_at": "2026-10-30T07:08:12.754999+00:00",
   "pack_assessments": {
     "A": {
       "pack": "A",
@@ -2685,5 +2822,24 @@
     "software": "PARTIAL",
     "corpus": "PARTIAL",
     "admission": "PENDING"
+  },
+  "latest_comparison": {
+    "code_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
+    "evidence": [
+      "qa/CSOI_COMPARISON_RESULTS_20261030.md",
+      "qa/CSOI_V1_7_CURRENT_RESULTS.json",
+      "qa/csoi/native-comparison.json",
+      "qa/csoi/coverage-comparison.txt",
+      "qa/csoi/browser-comparison.json",
+      "qa/csoi/pr130-draft-readback.json"
+    ],
+    "software": "PARTIAL",
+    "corpus": "PARTIAL",
+    "admission": "PENDING",
+    "task_counts": {
+      "VERIFIED": 49,
+      "BLOCKED": 3,
+      "PARTIAL": 28
+    }
   }
 }
