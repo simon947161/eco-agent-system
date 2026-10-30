@@ -1,5 +1,7 @@
 # Founder V1.7 system acceptance — PARTIAL
 
+This is the immutable Pack H assessment scope (42 records / 23 byte receipts / 29 native files). The [subsequent public-source batch](CSOI_PUBLIC_SOURCE_EXTENSION_20261030.md) records newer coverage and affected tests; historical H evidence below is not relabelled as a later full run.
+
 Assessed 30 October 2026, Australia/Sydney. All eight packs have engineering evidence; the complete Council system is **not accepted as complete**. The authoritative 80-task registry records 49 VERIFIED, 28 PARTIAL and 3 BLOCKED tasks at this checkpoint. VERIFIED describes the bounded software or delivery requirement and its actual tests, not corpus completeness or Council approval. The code/evidence SHA is bound in the registry and newest `NEXT_SESSION.md` checkpoint after commit.
 
 ## Working system and retained architecture

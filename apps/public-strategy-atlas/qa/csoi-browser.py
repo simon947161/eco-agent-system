@@ -49,6 +49,8 @@ with sync_playwright() as p:
             expect(page.locator('#csoiWorkspace')).to_be_visible()
             expect(page.locator('#routeMap')).to_be_hidden()
             expect(page.locator('#csoiWorkspace')).not_to_contain_text('Workspace could not be verified:')
+            expect(page.locator('#csoiWorkspace h1')).to_be_focused()
+            assert page.locator('#csoiWorkspace h1').evaluate('(e)=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}'),(width,path,'focused heading outside viewport')
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'), (width,path,'document overflow')
             assert page.locator('#csoiWorkspace').evaluate('(e)=>e.scrollWidth<=e.clientWidth'),(width,path,'workspace overflow')
         page.evaluate('location.hash="\u0023/strategy"')

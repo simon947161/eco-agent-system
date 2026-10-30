@@ -79,7 +79,12 @@ function mount(bridge={}){
  }
  function sourcesPage(main,dataset,route){
   const cat=catalogue(dataset),items=publicOnly(cat?.sources||dataset.sources||[]);
-  if(route.params.id){const record=items.find(s=>s.id===route.params.id);if(!record){text(main,'Source not found.');return;}text(main,title(record),'h2');sourceUrl(main,record.officialUrl||record.url);if(cat&&root.AtlasIntake)details(main,root.AtlasIntake.sourceStatus(cat,record.id));records(section(main,'Attributed research notes — source admission pending'),(dataset.domain?.entities||[]).filter(e=>e.data?.csoiRecord?.data?.sourceId===record.id),'/knowledge');details(main,record);}
+  if(route.params.id){const record=items.find(s=>s.id===route.params.id);if(!record){text(main,'Source not found.');return;}text(main,title(record),'h2');sourceUrl(main,record.officialUrl||record.url);if(cat&&root.AtlasIntake)details(main,root.AtlasIntake.sourceStatus(cat,record.id));
+   const observation=values(root.CsoiSourceObservations?.observations).find(o=>o.intakeRecord?.id===record.id),parent=items.find(s=>s.id!==record.id&&s.officialUrl===record.directoryUrl);
+   if(parent)main.append(link('↑ Retrieved discovery directory','/sources/'+recordId(parent)));
+   if(observation?.revisionObservation)details(section(main,'Observed revision and conflicts — independent review pending'),observation.revisionObservation);
+   if(observation?.documentLinks?.length){const leads=section(main,'Discovery links — not legal applicability');text(leads,'These are observed public hyperlinks. A directory is not an adopted instrument, and a document receipt is not an admitted legal or implementation relationship.');for(const lead of observation.documentLinks){const registered=items.find(s=>s.officialUrl===lead.url),row=element('div',null,{class:'csoi-source-lead'});text(row,lead.title||lead.url,'h3');if(registered)row.append(link('Inspect registered source receipt','/sources/'+recordId(registered)));else text(row,'Exact original not yet retrieved or independently reviewed.');sourceUrl(row,lead.url,'Open this official discovery link');leads.append(row);}}
+   records(section(main,'Attributed research notes — source admission pending'),(dataset.domain?.entities||[]).filter(e=>e.data?.csoiRecord?.data?.sourceId===record.id),'/knowledge');details(main,record);}
   else{records(main,queryFilter(items,route.query),'/sources');tools(main,[['Open source intake inspector','openSources']]);}
  }
  function coreRecordsPage(main,dataset,route){
@@ -147,7 +152,7 @@ function mount(bridge={}){
    else if(route.name.startsWith('phe')||route.name.startsWith('wcos'))professionalPage(content,dataset,route);
    else if(route.name.startsWith('calendar'))calendarPage(content,dataset,route);
    else await auxiliaryPage(content,dataset,route);
-   if(token===generation)heading.focus({preventScroll:true});
+   if(token===generation)heading.focus();
   }catch(error){if(token===generation){text(content,'Workspace could not be verified: '+error.message);content.append(action('Retry this page',()=>render(currentRoute)));}}
  }
  const unsubscribe=R.subscribe(render);

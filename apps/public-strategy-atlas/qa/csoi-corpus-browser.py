@@ -1,0 +1,47 @@
+"""Real recursive official-directory navigation; no legal/admission promotion."""
+from pathlib import Path
+import json,datetime,hashlib
+from playwright.sync_api import sync_playwright,expect
+APP=Path(__file__).resolve().parents[1];OUT=APP/'qa/csoi';results=[]
+with sync_playwright() as p:
+ b=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+ for width,height in [(1440,900),(390,844)]:
+  page=b.new_page(viewport={'width':width,'height':height},reduced_motion='reduce');errors=[];page.on('pageerror',lambda error:errors.append(str(error)))
+  page.goto('http://127.0.0.1:8877/#/sources/csoi%3Asmrc-dcp-controls%3A20261030')
+  expect(page.locator('#csoiWorkspace h1')).to_have_text('Source evidence',timeout=20000)
+  expect(page.locator('#csoiWorkspace')).to_contain_text('Discovery links — not legal applicability')
+  page.locator('a[href="#/sources/csoi%3Asmrc-dcp-bombala-page%3A20261030"]').click()
+  expect(page.locator('#csoiWorkspace')).to_contain_text('Bombala Development Control Plan 2014')
+  page.locator('a[href="#/sources/csoi%3Asmrc-dcp-bombala-2014%3A20261030"]').click()
+  expect(page.locator('#csoiWorkspace')).to_contain_text('Bombala Development Control Plan 2012')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('Directory link label says 2014')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('UNKNOWN')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('91375ba17012f891593bb200a533d3de12e6e48e579b1d7e9212af0be66a7ee6')
+  page.get_by_role('heading',name='Observed revision and conflicts — independent review pending').scroll_into_view_if_needed()
+  page.screenshot(path=str(OUT/f'bombala-revision-{width}.png'))
+  page.locator('a[href="#/knowledge/csoi%3Asource-note%3Asmrc-dcp-bombala-2014%3Aopening-scope-amendment"]').click()
+  expect(page.locator('#csoiWorkspace')).to_contain_text('rather than the whole merged Council area')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('Official applicability: PENDING')
+  page.evaluate('location.hash="#/sources/csoi%3Asmrc-dcp-cooma-2014-amend4%3A20261030"')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('Amendment 4')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('362/19')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('58/22')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('Former Cooma-Monaro area')
+  page.evaluate('location.hash="#/sources/csoi%3Asmrc-water-amp-2025%3A20261030"')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('2025–2035')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('2025-2029')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('142/25')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('RAW_BYTES_VERIFIED')
+  page.get_by_role('heading',name='Observed revision and conflicts — independent review pending').scroll_into_view_if_needed()
+  page.screenshot(path=str(OUT/f'water-plan-conflict-{width}.png'))
+  page.evaluate('location.hash="#/coverage"')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('registeredRecords')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('32')
+  expect(page.locator('#csoiWorkspace')).to_contain_text('sourceExtractionAdmitted')
+  assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+  assert not errors,errors
+  results.append({'viewport':[width,height],'status':'PASS_TESTED_HERE','officialAdmitted':0,'legalApplicability':'UNKNOWN','directoryToSubpageToPdfToNote':'EXECUTED'})
+  page.close()
+ b.close()
+(OUT/'browser-source-extension.json').write_text(json.dumps({'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'testedFiles':{name:'sha256:'+hashlib.sha256((APP/name).read_bytes()).hexdigest() for name in ['csoi-pages.js','sources/csoi-catalogue.json','sources/csoi-source-observations.json']},'results':results},indent=2)+'\n')
+print('PASS: desktop/mobile DCP directory→subpage→original receipt→research note, former-shire scope, conflicting amendments and Water AMP horizon discrepancy; no legal or official admission')

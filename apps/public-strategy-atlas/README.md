@@ -2,7 +2,7 @@
 
 A route-first, local research application for exploring strategy, work, quantities, sources and audit history. It extends the original 15 stations and 127 content records. No package installation, backend, paid API or production deployment is required.
 
-**V1.7 system acceptance: PARTIAL.** All eight engineering packs have executable public/synthetic capabilities over the existing Atlas registry. The recovered authoritative 80-task handoff is tracked in [the task registry](COI_TASK_REGISTRY_V1_7.json); VERIFIED applies only to the stated code/test scope. Current source coverage has 23 successful original-byte receipts across 42 catalogue records, with 20 attributed research notes and five published planning records. Source rights, current legal versions, complete corpus coverage and authorised admission remain pending. No official relationship, Council expenditure, achieved outcome or parcel-level legal applicability is admitted. See [the acceptance report](qa/CSOI_V1_7_SYSTEM_RESULTS.md), [NEXT_SESSION.md](NEXT_SESSION.md) and the [V1.6 taskbook](../../docs/research/public-strategy-atlas/FOUNDER_V1_6_COMPLETE_SYSTEM_BUILD_MASTER_TASKBOOK_20261029.md).
+**V1.7 system acceptance: PARTIAL.** All eight engineering packs have executable public/synthetic capabilities over the existing Atlas registry. The recovered authoritative 80-task handoff is tracked in [the task registry](COI_TASK_REGISTRY_V1_7.json); VERIFIED applies only to the stated code/test scope. Current source coverage has 32 successful original-byte receipts across 51 catalogue records, with 24 attributed research notes and five published planning records. Source rights, current legal versions, complete corpus coverage and authorised admission remain pending. No official relationship, Council expenditure, achieved outcome or parcel-level legal applicability is admitted. See [the acceptance report](qa/CSOI_V1_7_SYSTEM_RESULTS.md), [the subsequent source batch](qa/CSOI_PUBLIC_SOURCE_EXTENSION_20261030.md), [NEXT_SESSION.md](NEXT_SESSION.md) and the [V1.6 taskbook](../../docs/research/public-strategy-atlas/FOUNDER_V1_6_COMPLETE_SYSTEM_BUILD_MASTER_TASKBOOK_20261029.md).
 
 ## Run
 
@@ -53,6 +53,8 @@ python3 apps/public-strategy-atlas/verify-source.py OFFICIAL_SUMMARY.pdf
 
 The last command needs `pdfplumber` and the separately obtained original PDF. No restricted full PDF is redistributed. The latest [runtime recovery](qa/NEW_RUNTIME_ACCESS_RECOVERY_20261030.md) records a successful original-byte/page-anchor check; that QA observation has not been promoted into catalogue admission. Public availability is not a redistribution licence.
 
+`tools/csoi-append-receipts.cjs TEMP_BATCH.json` dry-runs an offline public-source append; `--apply` writes only after all proposed receipts validate. The command rehashes originals under `/tmp`, checks a pinned retrieved discovery directory, closes/bounds retained metadata and preserves exact source/event/observation prefixes. It rejects body/excerpt fields, private or signed URLs and caller rights/approval promotion. It performs no network request and never commits original bodies. Discovery-directory links in source pages are separate from legal or strategic relationships.
+
 ## Repeatable verification
 
 From repository root:
@@ -60,7 +62,7 @@ From repository root:
 ```sh
 node apps/public-strategy-atlas/run-tests.cjs /tmp/atlas-native.json
 node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs
-python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py
+python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-corpus-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py
 ```
 
 Browser tests require engineering Python Playwright and system Chromium. The harness runs a temporary localhost server for the suite lifetime. These are not app dependencies. Actual results, screenshots, runtime versions, coverage, limits and acceptance verdicts are recorded under `qa/`. Node coverage measures loaded modules and is not browser rendering coverage. Mock-DOM historical preview tests are labelled separately from real Chromium acceptance. Full professional screen-reader/WCAG, physical touch and cross-browser certification are not claimed.
