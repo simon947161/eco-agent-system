@@ -8,7 +8,7 @@ const ROUTES=Object.freeze([
  ['metrics','/metrics'],['metric','/metrics/:id'],['resources','/resources'],['resource','/resources/:id'],
  ['sources','/sources'],['source','/sources/:id'],['discovery','/discovery'],['audit','/audit'],['coverage','/coverage'],['assistant','/assistant']
 ].map(([name,pattern])=>Object.freeze({name,pattern})));
-const QUERY=new Set(['q','year','date','region','status','unit','source','domain','page','item','companion']);
+const QUERY=new Set(['q','year','yearBasis','date','region','status','unit','source','domain','page','item','companion']);
 function allowed(value,max=512){return typeof value==='string'&&value.length<=max&&!/[\x00-\x1f\x7f]/.test(value);}
 function queryState(input){
  const result={},params=input instanceof URLSearchParams?input:new URLSearchParams(input||'');
@@ -16,6 +16,7 @@ function queryState(input){
   if(['page','year'].includes(key)&&!/^\d{1,4}$/.test(value))continue;
   if(key==='date'&&!/^\d{4}-\d{2}-\d{2}$/.test(value))continue;
   if(key==='companion'&&value!=='1')continue;
+  if(key==='yearBasis'&&!['CALENDAR','AU_FISCAL'].includes(value))continue;
   result[key]=value;
  }
  return result;

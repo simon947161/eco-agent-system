@@ -45,6 +45,11 @@ async function verify(d,m){
  try{
   const x=d.domain;if(!x)return true;if(validate(d).length||x.baseDigest!==await m.objectDigest(legacyBase(d))||!await m.verifyEvents(x.events)||x.events.length!==x.revisions.length)return false;
   if(x.sourceCatalogue){const intake=typeof module!=='undefined'?require('./atlas-intake.js'):root.AtlasIntake;if(!intake||!await intake.verifyCatalogue(x.sourceCatalogue))return false;}
+  const publicGuard=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;
+  for(const revision of x.revisions){const data=revision.record?.data;if((data?.csoiTask||data?.assistantDraft)&&!publicGuard)return false;if(publicGuard&&data&&publicGuard.inspectPayload(data).length)return false;
+   if(data?.csoiTask){const calendar=typeof module!=='undefined'?require('./csoi-calendar.js'):root.AtlasCSOICalendar;if(!calendar||data.csoiTask.classification!=='SYNTHETIC')return false;calendar.validateTask(data.csoiTask);}
+   if(data?.assistantDraft){const assistant=typeof module!=='undefined'?require('./csoi-assistant.js'):root.AtlasCSOIAssistant;if(!assistant||data.assistantDraft.classification!=='SYNTHETIC')return false;assistant.validateDraft(data.assistantDraft);}
+  }
   const csoiRecords=x.revisions.filter(r=>r.record?.data?.csoiRecord).map(r=>r.record.data.csoiRecord);
   if(csoiRecords.length){const governance=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;if(!governance)return false;for(const record of csoiRecords){if(!await governance.verifyRecord(record)||!governance.assessPublic(record,{operation:'STORAGE'}).allowed)return false;if(record.layer==='L3'&&record.data.receipt){const layers=typeof module!=='undefined'?require('./csoi-layers.js'):root.AtlasCSOILayers;if(!layers||!(await layers.verifyDerivation(d,record)).integrity)return false;}}}
   const seen=new Set();
@@ -129,9 +134,9 @@ async function recordResearchReview(d,m,{candidate,question,decision,reason,obse
  result.domain.entities.push(await addRevision(result.domain,{...common,id:reviewId,kind:'ReviewDecision',label:decision+' · '+question,data:{status:'UNKNOWN',question,candidateDigest:candidate.digest,decision,reason,observedAt,reviewer:'local-researcher',governmentApproval:false}},m,{reason,observedAt,type:decision==='CONTESTED'?'CONTEST':decision==='RETRACTED'?'RETRACT':'REVIEW'}));
  return result;
 }
-async function registerScenario(d,m,{id,kind,label,stationId,data,scope,reason}){
+async function registerScenario(d,m,{id,kind,label,stationId,data,scope,reason,observedAt=new Date().toISOString()}){
  if(!await verify(d,m)||index(d).has(id)||!TYPES.has(kind)||!d.nodes.some(n=>n.id===stationId)||!label||!reason||data?.status!=='SYNTHETIC')throw Error('SYNTHETIC_SCENARIO_REQUIRED');
- const result=structuredClone(d);result.domain.entities.push(await addRevision(result.domain,{id,kind,label,stationId,data,scope:scope||{region:data.area||'UNKNOWN',period:data.period||'UNKNOWN',boundary:data.boundary||'UNKNOWN'},state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,gaps:['User-authored synthetic scenario; not Council facts or official performance.']},m,{reason}));
+ const result=structuredClone(d);result.domain.entities.push(await addRevision(result.domain,{id,kind,label,stationId,data,scope:scope||{region:data.area||'UNKNOWN',period:data.period||'UNKNOWN',boundary:data.boundary||'UNKNOWN'},state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,gaps:['User-authored synthetic scenario; not Council facts or official performance.']},m,{reason,observedAt}));
  if(!await verify(result,m))throw Error('INVALID_SCENARIO');return result;
 }
 async function registerResearchRecord(d,m,{record,kind='ContentBlock',label,stationId,reason}){
@@ -163,10 +168,10 @@ async function appendCalculation(d,m,receipt){
  const execution=typeof module!=='undefined'?require('./atlas-execution.js'):root.AtlasExecution;
  if(!await verify(d,m)||!(await execution.verifyDerivation(d,receipt)).current)throw Error('DERIVATION_NOT_CURRENT');
  if(d.domain.entities.some(e=>e.id===receipt.digest))return structuredClone(d);
- const first=index(d).get(receipt.inputs[0].id),result=structuredClone(d);
- result.domain.entities.push(await addRevision(result.domain,{id:receipt.digest,kind:'AuditReceipt',stationId:first.stationId,label:receipt.request.formula+' — '+receipt.result.value+' '+receipt.result.unit,state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,scope:first.scope,gaps:first.gaps,data:{status:'SYNTHETIC',receipt}},m,{reason:'Record reproducible synthetic calculation'}));
+ const first=index(d).get(receipt.inputs[0].id),result=structuredClone(d),observedAt=new Date().toISOString();
+ result.domain.entities.push(await addRevision(result.domain,{id:receipt.digest,kind:'AuditReceipt',stationId:first.stationId,label:receipt.request.formula+' — '+receipt.result.value+' '+receipt.result.unit,state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,scope:first.scope,gaps:first.gaps,data:{status:'SYNTHETIC',receipt}},m,{reason:'Record reproducible synthetic calculation',observedAt}));
  const calculation=result.domain.entities.find(e=>e.id===receipt.digest);
- for(const input of receipt.inputs)result.domain.assertions.push(await addRevision(result.domain,{id:receipt.digest+':input:'+input.id,stationId:first.stationId,state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,scope:first.scope,gaps:first.gaps,from:calculation.id,to:input.id,fromRevisionId:calculation.revisionId,toRevisionId:input.revisionId,predicate:'EVIDENCED_BY',method:receipt.methodVersion,evidenceRefs:[],counterevidenceRefs:[],issuer:'local-researcher',reviewer:null},m,{reason:'Pin calculation input revision'}));
+ for(const input of receipt.inputs)result.domain.assertions.push(await addRevision(result.domain,{id:receipt.digest+':input:'+input.id,stationId:first.stationId,state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,scope:first.scope,gaps:first.gaps,from:calculation.id,to:input.id,fromRevisionId:calculation.revisionId,toRevisionId:input.revisionId,predicate:'EVIDENCED_BY',method:receipt.methodVersion,evidenceRefs:[],counterevidenceRefs:[],issuer:'local-researcher',reviewer:null},m,{reason:'Pin calculation input revision',observedAt}));
  return result;
 }
 function forStation(d,id){return {stationId:id,entities:(d.domain?.entities||[]).filter(e=>e.stationId===id),assertions:(d.domain?.assertions||[]).filter(e=>e.stationId===id),trust:'SELF_ATTESTED',signature:'RECEIPT_NOT_PRESENT',witness:'EXTERNAL_WITNESS_UNKNOWN'};}
