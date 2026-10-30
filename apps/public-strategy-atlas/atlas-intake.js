@@ -137,8 +137,9 @@ function statusFor(source,current){
  }
  return {sourceId:source.id,family:source.family,title:source.title,stage:current.stage,nextStage,access,historicalAccess:{...source.access},rights:source.rights.status,ownerType,nextAction};
 }
-function sourceStatus(catalogue,sourceId){const source=catalogue.sources.find(source=>source.id===sourceId);requireThat(source,'SOURCE_NOT_FOUND');return statusFor(source,replay(catalogue).get(sourceId));}
-function sourceGaps(catalogue){const states=replay(catalogue);return catalogue.sources.filter(source=>states.get(source.id).stage!=='ADMITTED').map(source=>statusFor(source,states.get(source.id)));}
+function observationStatus(catalogue,source,current){const status=statusFor(source,current),newer=catalogue.sources.filter(s=>s.lineage.supersedes.includes(source.id));if(newer.length){status.newerObservationIds=newer.map(s=>s.id);status.ownerType='SOURCE_RESEARCHER_AND_AUTHORISED_REVIEWER';status.nextAction='Review later registered source observations '+status.newerObservationIds.join(', ')+'. This historical observation is retained; document legal supersession and current live access are not inferred.';}return status;}
+function sourceStatus(catalogue,sourceId){const source=catalogue.sources.find(source=>source.id===sourceId);requireThat(source,'SOURCE_NOT_FOUND');return observationStatus(catalogue,source,replay(catalogue).get(sourceId));}
+function sourceGaps(catalogue){const states=replay(catalogue);return catalogue.sources.filter(source=>states.get(source.id).stage!=='ADMITTED').map(source=>observationStatus(catalogue,source,states.get(source.id)));}
 function contentRecords(catalogue,sourceId){
  const source=catalogue.sources.find(source=>source.id===sourceId);requireThat(source,'SOURCE_NOT_FOUND');
  return source.extraction.anchors.map(anchor=>({id:'source:'+source.id+':'+anchor.id,logicalId:'source:'+source.id+':'+anchor.id,sourceId:source.id,sourceRevision:source.revisionId,locator:anchor.locator,textKind:anchor.textKind,title:anchor.title||anchor.locator,text:anchor.text,status:source.classification==='SYNTHETIC'?'SYNTHETIC':STAGES.indexOf(replay(catalogue).get(source.id).stage)>=STAGES.indexOf('EXTRACTED')?'PUBLIC_TEXT_OBSERVED':'PUBLIC_TEXT_REPORTED_NOT_REVERIFIED',reviewStatus:'PENDING',machineVerification:replay(catalogue).get(source.id).stage,officialMapping:'UNKNOWN'}));

@@ -4,7 +4,7 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 import subprocess, sys, threading
 APP=Path(__file__).resolve().parents[1]
-allowed={'csoi-browser.py','system-browser.py','e0-browser.py','deep-browser.py','merge-browser.py','discovery-browser.py','integration-browser.py','intake-access-browser.py','run-browser-suite.py'}
+allowed={'csoi-browser.py','csoi-source-browser.py','system-browser.py','e0-browser.py','deep-browser.py','merge-browser.py','discovery-browser.py','integration-browser.py','intake-access-browser.py','run-browser-suite.py'}
 scripts=sys.argv[1:] or ['csoi-browser.py']
 if any(s not in allowed for s in scripts):raise SystemExit('UNRECOGNISED_LOCAL_BROWSER_SUITE')
 class Quiet(SimpleHTTPRequestHandler):
