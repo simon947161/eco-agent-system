@@ -1,3 +1,17 @@
+# V1.7 Pack G checkpoint — PARTIAL
+
+Code/evidence commit: `10cf2dcc84aac35e94604154d505bdb7ad7288e8`. This continuity/registry commit follows it; resolve current remote HEAD after push.
+
+Delivered calendar/fiscal Annual Edition projections, full mission-to-day-to-task/brief/evidence/report navigation, custom synthetic task creation, immutable plan edits with retained history, source/OP/CSP context links marked UNKNOWN, and draft-only weekly/meeting preparation. All28 native files, five viewport navigation/companion runs and detailed desktop/mobile end-to-end exports PASS. Caller verification booleans cannot authorise statutory schedules/assignments; protected task/draft capsules are rejected during snapshot verification. No Council accounts, email, calendar writes or manager decisions occur. Nine tasks VERIFIED; private WCOS concept compatibility PARTIAL.
+
+SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING. Task statuses are evidence-based and do not imply Council approval.
+
+Next executable task: **COI-071 — complete final multi-page/privacy/coverage acceptance and real-source planning depth**. Continue the recovered V1.7 registry using the same model. Retain Draft PR #130; no deployment, merge, main/PR129 changes, protected business data or production WCOS writes.
+
+Assessment: `qa/csoi/pack-g-assessment.json`.
+
+--- Previous checkpoint ---
+
 # V1.7 Pack F checkpoint — PARTIAL
 
 Code/evidence commit: `5b533a2f96203b29c08bcfec49b6b97987cb8af4`. This continuity/registry commit follows it; resolve current remote HEAD after push.

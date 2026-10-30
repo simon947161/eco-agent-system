@@ -1722,150 +1722,340 @@
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "实现 Mission/Project→Operating Year→Quarter→Month→Week→Day→Task→Work Item→Field Brief→Evidence→Follow-up→Report 的可导航对象与父子链接。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "实现 Mission/Project→Operating Year→Quarter→Month→Week→Day→Task→Work Item→Field Brief→Evidence→Follow-up→Report 的可导航对象与父子链接。"
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-062",
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "复用 WCOS Annual Edition 年度总览、月份工作、Planning Queue、Execution Log 与 Annual Report 的概念契约；不能直接覆写现存 Excel/Outlook。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "复用 WCOS Annual Edition 年度总览、月份工作、Planning Queue、Execution Log 与 Annual Report 的概念契约；不能直接覆写现存 Excel/Outlook。"
+      "blocker": "Original private WCOS Annual Edition technical contract/production compatibility remains unavailable; only plan-level concepts reused.",
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-063",
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "给每个任务记录来源类型：法定义务/公开运营目标/经授权分配/本人学习/研究建议；角色与审批证据不可猜测。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "给每个任务记录来源类型：法定义务/公开运营目标/经授权分配/本人学习/研究建议；角色与审批证据不可猜测。"
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-064",
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "构建循环事件和风险提示：检查到期、设备检测、复检/整改、季度报告和年终回顾；错误/冲突循环有检测和解释。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "构建循环事件和风险提示：检查到期、设备检测、复检/整改、季度报告和年终回顾；错误/冲突循环有检测和解释。"
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-065",
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "完整工作卡：依据、适用条件、工作量、预计时长、附件状态、下一步、人为裁量、复核责任、证据和版本历史。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "完整工作卡：依据、适用条件、工作量、预计时长、附件状态、下一步、人为裁量、复核责任、证据和版本历史。"
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-066",
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "年度→季度→月→周→日编制与实际执行/回顾双向导航，实际数据不足时只显示计划或 UNKNOWN，不伪报完成。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "年度→季度→月→周→日编制与实际执行/回顾双向导航，实际数据不足时只显示计划或 UNKNOWN，不伪报完成。"
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-067",
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "Michele 辅助台草案：本周关注、监管风险、待审批准项、资源瓶颈、材料缺口及建议，所有信息基于合成/公开或另行获准来源。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "Michele 辅助台草案：本周关注、监管风险、待审批准项、资源瓶颈、材料缺口及建议，所有信息基于合成/公开或另行获准来源。"
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-068",
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "会议准备/回顾功能：议题、准备问题、决策待确认、跟进行动、责任角色、来源、截止时间；未经确认不能标“主管同意”。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "会议准备/回顾功能：议题、准备问题、决策待确认、跟进行动、责任角色、来源、截止时间；未经确认不能标“主管同意”。"
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-069",
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "Outlook/日历接入默认只读/模拟；实际读写、提醒、邮件、团队共享、账号授权分别需要明确权限、操作确认和审计日志。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "Outlook/日历接入默认只读/模拟；实际读写、提醒、邮件、团队共享、账号授权分别需要明确权限、操作确认和审计日志。"
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-070",
       "pack": "G",
       "pack_name": "年度日历、任务系统与 Michele 辅助台",
       "title_and_scope": "在真实网站完成从年度总图进入某月/周/工作卡、下钻资料/法规/证据，再向上追踪 OP/CSP 的端到端桌面/移动测试；继续 Pack H。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-calendar.js",
+        "csoi-calendar.test.cjs",
+        "csoi-assistant.js",
+        "csoi-assistant.test.cjs",
+        "csoi-capsule.test.cjs",
+        "atlas-domain.js",
+        "atlas.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-g-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-calendar-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-g.json",
+        "qa/csoi/browser-g.json",
+        "qa/csoi/browser-g-detail.json",
+        "qa/csoi/calendar-report-1440.png",
+        "qa/csoi/weekly-draft-390.png"
+      ],
+      "remote_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8",
+      "source_admission_status": "PENDING_SYNTHETIC_PLANS_AND_DRAFTS_ONLY",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "在真实网站完成从年度总图进入某月/周/工作卡、下钻资料/法规/证据，再向上追踪 OP/CSP 的端到端桌面/移动测试；继续 Pack H。"
+      "next_action": "Preserve source-gated task/calendar/draft flows and disabled account actions; perform final multi-page, privacy and regression acceptance."
     },
     {
       "id": "COI-071",
@@ -2018,7 +2208,7 @@
       "next_action": "交付 Founder 验收报告、来源/权限缺口、工作链与定量验证、可用页面清单、软件与真实资料分别计分、下期目标；保留 Draft PR，不部署/合并。"
     }
   ],
-  "updated_at": "2026-10-30T01:52:35.317588+00:00",
+  "updated_at": "2026-10-30T02:17:13.465473+00:00",
   "pack_assessments": {
     "A": {
       "pack": "A",
@@ -2073,6 +2263,15 @@
       "summary": "Delivered distinct service/object/device/property/event/issue counts, six workload phases with estimated/measured/assumed totals, explicit resource-capacity scenarios, three-ledger calculation UI, receipt export and reverse trace. All27 native files and desktop/mobile receipt/guard tests PASS. Actual OP table references produce source-pinned RESEARCH_CANDIDATE edges only, never admitted implementation/causal links. Seven tasks VERIFIED, three deeper risk/finance/admission tasks PARTIAL. Carbon remains29.9tCO2e/person; unadmitted extrapolation is rejected; hours are never financial spend.",
       "next_executable": "COI-061 — annual edition navigation, task cards and draft-only management preparation",
       "code_sha": "5b533a2f96203b29c08bcfec49b6b97987cb8af4"
+    },
+    "G": {
+      "pack": "G",
+      "software_status": "PARTIAL",
+      "corpus_status": "PARTIAL",
+      "admission_status": "PENDING",
+      "summary": "Delivered calendar/fiscal Annual Edition projections, full mission-to-day-to-task/brief/evidence/report navigation, custom synthetic task creation, immutable plan edits with retained history, source/OP/CSP context links marked UNKNOWN, and draft-only weekly/meeting preparation. All28 native files, five viewport navigation/companion runs and detailed desktop/mobile end-to-end exports PASS. Caller verification booleans cannot authorise statutory schedules/assignments; protected task/draft capsules are rejected during snapshot verification. No Council accounts, email, calendar writes or manager decisions occur. Nine tasks VERIFIED; private WCOS concept compatibility PARTIAL.",
+      "next_executable": "COI-071 — complete final multi-page/privacy/coverage acceptance and real-source planning depth",
+      "code_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8"
     }
   }
 }
