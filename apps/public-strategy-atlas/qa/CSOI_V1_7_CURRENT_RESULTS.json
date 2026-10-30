@@ -1,6 +1,6 @@
 {
   "format": "csoi-v17-current-results-1",
-  "at": "2026-10-30T08:32:17.216007+00:00",
+  "at": "2026-10-30T08:58:26.552430+00:00",
   "systemAcceptance": "PARTIAL",
   "softwareStatus": "PARTIAL",
   "taskCounts": {
@@ -31,25 +31,33 @@
   },
   "native": {
     "status": "PASS_TESTED_HERE",
-    "filesPassed": 33,
-    "evidence": "csoi/native-paths.json"
+    "filesPassed": 34,
+    "evidence": "csoi/native-review-work.json",
+    "finalAllFilesCoverageRun": "csoi/coverage-review-work.txt",
+    "finalChangedModuleNegatives": "csoi/native-review-work-final.log"
   },
   "browser": {
     "status": "PASS_TESTED_HERE",
     "latestAffectedSuites": [
+      "csoi/browser-review-work.json",
       "csoi/browser-paths.json",
+      "csoi/browser-clauses.json",
       "csoi/browser-h.json"
     ],
     "navigationRoutes": 24,
     "viewports": 5,
+    "legacyRegression": "system/browser-e10.json",
+    "legacySuitesPassed": 6,
+    "latestRegressionLog": "csoi/browser-review-work-regression.log",
     "priorFullRegression": "csoi/browser-final-h.json",
-    "priorFullRegressionScope": "Historical Pack H13-suite run, not relabelled as current comparison invocation"
+    "priorFullRegressionScope": "Historical Pack H13-suite run; current invocation separately reran six legacy suites plus affected public work/path/clause suites; detailed calendar and24-route acceptance ran earlier on this batch."
   },
   "nodeCoverage": {
-    "lines": 91.28,
-    "branches": 84.74,
-    "functions": 95.06,
-    "scope": "Loaded atlas-*.js/csoi-*.js modules, not browser renderer/tools/*.cjs"
+    "lines": 91.38,
+    "branches": 84.27,
+    "functions": 95.56,
+    "scope": "Loaded atlas-*.js/csoi-*.js modules under Node; csoi-pages renderer has11.76% lines in this run. No browser-renderer coverage, tools/*.cjs coverage, physical-hardware or regulatory certification is inferred.",
+    "evidence": "csoi/coverage-review-work.txt"
   },
   "defaultSnapshotDigest": "sha256:2897418d1391dfe004b1d7e63a6085474647818c29160771424d6d6ff7d736f2",
   "pr": {
@@ -64,16 +72,20 @@
     "private WCOS/Outlook compatibility",
     "independent privacy/legal certification"
   ],
-  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_path_batch.code_sha",
+  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_review_calendar_batch.code_sha",
   "codeManifest": {
-    "atlas-execution.js": "sha256:9689dbdedc409a254979f175e59b3acdae49e5b272c3a18ef60c56469188a862",
-    "comparison.test.cjs": "sha256:58be492dd962beebe763f32d1edbff988a168f2b10bffd3ddc453566dca47936",
-    "csoi-pages.js": "sha256:4a817e0242c03298ae74b59535a79558cd927fe02f1753c28802b1e67e7f34b5",
-    "csoi-router.js": "sha256:9a3c8e73d7cc96b80089547229556008d26e2154301d619a41cc6f44efb571a4",
-    "csoi-pages.css": "sha256:737dc7c8f214d1157e80c4ff7def61b6710aa0425bb3adfb7b4329f572863ae5"
+    "atlas-domain.js": "sha256:db4c547bc3fb55a7292d94411153354b335be5463bc59d9104bcd4a632832f29",
+    "atlas.js": "sha256:57da3f5b952115e0e022d8899430ff70df22fb7380399f5ba42ec94c687351e3",
+    "csoi-review-work.js": "sha256:fa82b0267961752141b84a163d508830aec25ee0bb4e4ca6a849b8c438f1f353",
+    "csoi-review-work.test.cjs": "sha256:ae66e13d42e613ba69e557137fb09d1d6bcfa178ddb3f64925136cbfcc837b67",
+    "csoi-pages.js": "sha256:4f9dd079864695fbbb15303345a367b09468273bd57bd038e2623fa6b46bef93",
+    "index.html": "sha256:9fb58c6ac16e3f0e082a37590b60cb27da5928d9f008836f4d77f4661fd4903a",
+    "qa/csoi-review-work-browser.py": "sha256:55fe11236ae5ff6e4ba5301c1f5d9362f1aa2572ab5a333fbc83937cb322b1d8",
+    "qa/merge-browser.py": "sha256:570ddb07e7008cb9fcdfab56dc07939a6c690042cd256c8400440572df124721"
   },
-  "report": "CSOI_COMPARISON_RESULTS_20261030.md",
+  "report": "CSOI_REVIEW_CALENDAR_RESULTS_20261030.md",
   "latestSourceBatch": "csoi/snowy-source-results.json",
   "latestClauseBatch": "csoi/clause-results.json",
-  "latestPathBatch": "csoi/path-results.json"
+  "latestPathBatch": "csoi/path-results.json",
+  "latestReviewCalendarBatch": "csoi/review-calendar-results.json"
 }

@@ -40,7 +40,7 @@ with sync_playwright() as p:
   page.locator('#snapshotFile').set_input_files(str(snapshot));expect(page.locator('#snapshotMessage')).to_contain_text('Explicit replacement required');page.locator('#applySnapshot').click();expect(page.locator('#snapshotMessage')).to_contain_text('explicitly loaded in memory')
   page.screenshot(path=str(OUT/f'snapshot-import-{width}.png'))
   old=Path(f'/tmp/atlas-older-domain-{width}.json')
-  subprocess.run(['node','-e',"const fs=require('fs'),m=require('./atlas-model.js');(async()=>{const s=JSON.parse(fs.readFileSync(process.argv[1]));delete s.dataset.domain.sourceCatalogue;fs.writeFileSync(process.argv[2],JSON.stringify(await m.exportSnapshot(s.dataset)));})();",str(snapshot),str(old)],cwd=APP,check=True)
+  subprocess.run(['node','-e',"const fs=require('fs'),assert=require('node:assert/strict'),m=require('./atlas-model.js');(async()=>{const s=JSON.parse(fs.readFileSync(process.argv[1])),orphan=structuredClone(s.dataset);delete orphan.domain.sourceCatalogue;await assert.rejects(()=>m.exportSnapshot(orphan),/INVALID_DATA/);const legacy=await m.migrateDataset(m.legacyBase(s.dataset),require('./atlas-accounting.js').cases);fs.writeFileSync(process.argv[2],JSON.stringify(await m.exportSnapshot(legacy)));})();",str(snapshot),str(old)],cwd=APP,check=True)
   tool(page,'importSnapshotBtn');page.locator('#snapshotFile').set_input_files(str(old));expect(page.locator('#snapshotMessage')).to_contain_text('Explicit replacement required');page.locator('#applySnapshot').click()
   tool(page,'coverageBtn');expect(page.locator('#details')).to_contain_text('Source register not included in this snapshot')
   assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');assert not errors,errors

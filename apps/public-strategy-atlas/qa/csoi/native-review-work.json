@@ -1,0 +1,277 @@
+{
+  "runner": "atlas-native-1",
+  "results": [
+    {
+      "test": "accounting.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: source-bounded 29.9 t CO2e/person, work/accounting type validation, 3 Atlas node overlays, 17+ negative/positive cases.\nNotice: modelling/unit tests only; official source admission and real Chrome QA are not implied.\n",
+      "stderr": ""
+    },
+    {
+      "test": "applicability.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: spatial/effective-time indexes, historical as-of queries, wrong region/date/parcel/revision/draft/legal-effect rejection, overlapping source revision conflict and rejected candidate path exclusion\n",
+      "stderr": ""
+    },
+    {
+      "test": "comparison.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS current comparison pins exact content identities and does not perform finance arithmetic\nPASS historical pin resolves retained version after current revision changes\nPASS missing identities and revision pins are rejected without substituting current objects\nPASS tampered current record or history fails snapshot verification before rendering\nPASS legacy stations, content and source catalogue use existing exact identities\nPASS same unknown method or scope is not a compatibility match and null is never zero\nPASS unit, stock/flow, fiscal interval, region and actual/planned roles remain distinct\nPASS protected payloads, unknown classification and forged approved releases are denied\nPASS percent denominators, financial rates and legal roles participate in compatibility\nPASS calendar execution roles use the actual task schema without inventing outcomes\nPASS inert public source text stays data, source state and unknowns are retained\nPASS dataset remains byte-identical after all comparisons\ncomparison: 12 groups PASS\n",
+      "stderr": ""
+    },
+    {
+      "test": "content.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: 60 synthetic content nodes, 59 edges, stable coordinates, bounded truncation (2ms)\nPASS: 200 synthetic content nodes, 199 edges, stable coordinates, bounded truncation (2ms)\nPASS: export/verify roundtrip, external checkpoint and corrupted dataset/receipt rejection\nPASS: 15 decomposable topics, 127 items, six-level trail, child/ancestor tamper propagation, order independence, 8 negative cases, English UI/content\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-assistant.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: draft weekly concerns/review/material gaps and capacity basis, meeting questions/followups, UNKNOWN decisions, immutable preparations, disabled Outlook/account/mail actions, privacy/forged approval rejection, portable verification and Atlas snapshot integration\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-calendar.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: Annual Edition leap/fiscal/ISO dates, bounded bidirectional calendar/work/evidence/report navigation, source/approval cards, recurrence applicability/cycle/due guards, private/forged approval rejection, safe portability and existing Atlas snapshot integration\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-capsule.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: calendar/assistant capsules stay governed in legacy snapshots; claimed statutory verification cannot authorise tasks/recurrence, and new audit events use actual execution time\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-clauses.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: existing-registry clause containment, exact source/page/parent pins, real eight-level outline,6000-level traversal, source/parent withdrawal, missing/foreign/cyclic/PII/authority rejections and historical110/90/40reference rates without actual demand or legal admission\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-governance.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: CSOI module boundaries; 90 layer/channel deny checks; rights, nested PII, confidentiality, small-cell, forged release/authority and tampered bundle rejections.\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-intake.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: actual public observation receipts extend original catalogue, preserve histories/rights gates, and bind bounded research summaries to existing Atlas snapshots\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-layers.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: L0–L5 public/synthetic lineage in existing Atlas snapshots; source withdrawal invalidates downstream; replay; identity/activity separation; units, scope, denominators, duplicates, conflicts, stale rules and authority denials.\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-model.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: CSOI records use the existing Atlas registry, immutable revisions, legacy base, independent snapshots, stale-write and protected/official rejection\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-paths.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: independently pinned source/goal/input path sets, relationship/counterevidence/admission gates, source withdrawal with retained history, corrupt/missing/foreign pins, finance/unit conflicts, bounded discovery and no data mutation/arithmetic/official promotion\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-phe.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: eight source-backed public PHE/WCOS domains, conditional multi-stage research workflows, exclusions/wrong-region/conflicts, current-law and official-decision unknowns, source anchors and privacy negatives\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-planning.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: exact reviewed OP bytes/anchor bind five planning records, unknown volume units stay unknown, target/funded/actual/money are distinct, source candidates stay pending and false typed values are rejected\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-receipts.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: offline original-byte append preserves catalogue/observation prefixes, rejects mismatched bytes/unpinned directory/private host/PII/rights promotion/excerpts, retains gates and never commits temporary source bodies\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-recompute.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: independently recomputed pinned historical layer receipts reject self-consistent false math; source changes invalidate current use while historical exports remain verifiable\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-review-work.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: public independent source-review work/calendar plans, exact clause/source pins, assumed-hours/unknown-actuals accounting, fiscal/civil navigation, source withdrawal, immutable identity and forbidden Council/action/private/actual-field rejection\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-router.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: CSOI functional route manifest, deep links, bounded public query, hostile path and companion URL guards\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-wcos.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS plan-level read-only fixture contains complete annual/field/report concept chain\nPASS adapter refuses writes, private and protected records, forged release, arbitrary synthetic labels and PII\nPASS public metadata needs trusted review callback and excludes business fields/unsafe URL\nPASS Food/LTW/Backflow conditional cross-search never grants all approvals by business/property name\nPASS LTW template distinguishes stages/classification/concurrence but cannot decide or approve\nPASS backflow schedule requires testable device, date, applicable interval and matching scope\nPASS four judgment classes retain review boundaries and formal decisions are blocked\nPASS summary is synthetic only and never releases a small real aggregate\ncsoi-wcos: 8 groups PASS\n",
+      "stderr": ""
+    },
+    {
+      "test": "csoi-work.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS service/object/type denominators separate properties, events, issues and actual outcomes\nPASS duplicate denominator input deduplicates objects/events and rejects conflicting values\nPASS unknown eligibility and inspection need are not false zeros or compliance\nPASS completion, issue closure, dates and real protected objects require evidence\nPASS hours preserve six phases and measured/estimated/assumed categories; no dollar conversion\nPASS resource demand needs explicit annual capacity and never creates personnel/spend claims\nPASS three ledgers reuse existing identities and reverse trace stops at unsupported official mapping\nPASS calculation input receipts detect corruption and changed revisions\nPASS inherited water/carbon/land unit and finance engines preserve source gates\ncsoi-work: 9 groups PASS\n",
+      "stderr": ""
+    },
+    {
+      "test": "deep-content.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: exact legacy receipt hashes, 10000-wide indexed pagination/bounded layout, 5000-level iterative traversal/local+source receipts, flat deep snapshot roundtrip and ancestor mutation/cycle rejection\n",
+      "stderr": ""
+    },
+    {
+      "test": "discovery.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: explainable versioned multi-signal candidates with trace paths/alternatives/falsifiers/counterevidence, wrong-region/draft/period/source-loss rejections, persistent local review and forged official promotion prevention\n",
+      "stderr": ""
+    },
+    {
+      "test": "domain.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: additive domain migration, 127-item/base digest preservation, legacy workspace/snapshot compatibility, versioned accounting provenance/reverse links, immutable local reviews, stale/forged/corrupt history rejection\n",
+      "stderr": ""
+    },
+    {
+      "test": "execution.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: unified synthetic WBS, typed dependency/resource/finance/output routes, forward/reverse bounded BFS, multi-parent identity reuse, dependency cycle detection, separate execution/evidence states and known-link fail-closed\n",
+      "stderr": ""
+    },
+    {
+      "test": "intake-access.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: replayed source availability, retained historical access, stage-specific rights/review owners, correction withdrawal/re-retrieval and immutable catalogue identity\n",
+      "stderr": ""
+    },
+    {
+      "test": "intake.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: 15 source requirements, exact catalogue mirror/hash, ordered intake/correction replay, permitted synthetic pipeline, rights/date/URL/private-data gates, corruption/forged stage rejection and honest coverage denominators\n",
+      "stderr": ""
+    },
+    {
+      "test": "integration.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: unified numeric/unit/source/work search, typed scope filters/pagination, revision diffs and scenario editing with receipt invalidation and invalid finance rejection\n",
+      "stderr": ""
+    },
+    {
+      "test": "ledger.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: three-ledger typed formulas, cost/variance/conversion/allocation, pinned provenance, immutable receipt snapshots, changed-input invalidation, stale historical verification and unit/scope/year/zero/official/double-count rejection\n",
+      "stderr": ""
+    },
+    {
+      "test": "model.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: 10 additional admission rejection cases; snapshot tamper; discovery explanations and falsifier\nPASS: schema, multipath, candidate exclusion, false official promotion, missing target, time/region rejection, unknown context, canonical digest, byte tamper, append/retract, history tamper, duplicate event\n",
+      "stderr": ""
+    },
+    {
+      "test": "route-main.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: production route projection, model-backed continuous endpoints, stable partial expansion, distinct corridors/candidate exclusion, 127-item data unchanged, default map/hidden panel/utility entry contracts. Browser acceptance is separate.\n",
+      "stderr": ""
+    },
+    {
+      "test": "route-map.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS route-preview: 15 existing nodes / 16 edges, station selection, candidate toggle, line filter, zoom and inspector closing.\nNOTE this is a mock-DOM smoke test, not real browser visual, keyboard or WCAG acceptance.\n",
+      "stderr": ""
+    },
+    {
+      "test": "workspace-merge.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: checkpoint-bound three-way preview, explicit field choices, archived imported history, appended RESOLVE events, old workspace compatibility, stale preview and corruption/promotion rejection\n",
+      "stderr": ""
+    },
+    {
+      "test": "workspace.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: edit/diff, immutable source/history, supersede/revert/retract/replay, stale editor conflict, monotonic history, import roundtrip/checkpoint/tamper/signature/promotion rejection, source admission pending gates and excerpt hash\n",
+      "stderr": ""
+    }
+  ]
+}
