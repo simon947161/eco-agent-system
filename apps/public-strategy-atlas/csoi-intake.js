@@ -2,7 +2,7 @@
 (function(root){
 'use strict';
 const M=typeof module!=='undefined'?require('./atlas-model.js'):root.AtlasModel,I=typeof module!=='undefined'?require('./atlas-intake.js'):root.AtlasIntake,G=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;
-async function extendCatalogue(base,observations){
+async function extendCatalogue(base,observations,unavailableReferences=[]){
  if(!await I.verifyCatalogue(base)||observations?.format!=='csoi-public-source-observations-1'||observations.originalBytesCommitted!==false)throw Error('CSOI_SOURCE_OBSERVATIONS_REQUIRED');
  let catalogue=base;
  for(const observation of observations.observations){
@@ -13,6 +13,12 @@ async function extendCatalogue(base,observations){
   if(catalogue.sources.some(s=>s.id===record.id))throw Error('CSOI_SOURCE_ID_CONFLICT');
   catalogue=await I.registerSource(catalogue,record,{registeredAt:observation.retrievedAt,actor:'public-source-research',reason:'Append actual public-source observation; rights, legal currency and human admission remain pending.'});
   for(const stage of ['DIRECTORY_OBSERVED','SOURCE_RETRIEVED','RAW_BYTES_VERIFIED'])catalogue=await I.appendStage(catalogue,record.id,stage,{...observation.stageEvidence[stage],actor:'public-source-research',at:observation.retrievedAt,reason:'Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred.'});
+ }
+ for(const reference of unavailableReferences){
+  if(reference.access!=='UNAVAILABLE')throw Error('CSOI_UNAVAILABLE_REFERENCE_REQUIRED');
+  const record=structuredClone(base.sources[0]);delete record.revisionId;
+  Object.assign(record,{id:'csoi:'+reference.id+':20261030',family:reference.family,publisher:'NSW legislation website — content not retrieved',officialUrl:reference.url,directoryUrl:reference.url,title:reference.id+' — statutory reference pending retrieval',recordType:'REQUIREMENT',mediaType:'UNKNOWN',rawDigest:null,retrievedAt:null,adoptedAt:null,effectiveFrom:null,effectiveTo:null,currentAsOf:null,geographicExtent:{type:'STATE',label:'NSW, Australia',parcelApplicability:'UNKNOWN'},extraction:{coverage:'NONE',anchors:[]},lineage:{supersedes:[],revisionLabel:'UNKNOWN'},corroboratingEvidence:[],access:{state:'UNAVAILABLE',checkedAt:reference.retrievedAt,reason:'HTTP response 403; statutory content, current consolidation and applicability remain unverified.'}});
+  catalogue=await I.registerSource(catalogue,record,{registeredAt:reference.retrievedAt,actor:'public-source-research',reason:'Register failed official reference as a requirement, not a retrieved/admitted statutory document.'});
  }
  return catalogue;
 }
@@ -27,6 +33,6 @@ async function registerSummaries(dataset,observations){
  }
  return result;
 }
-function coverage(catalogue,observations){const coverage=I.coverage(catalogue);return {...coverage,registeredDocumentRevisionDenominator:coverage.documentDenominator,uniqueOfficialUrls:new Set(catalogue.sources.filter(s=>s.officialUrl).map(s=>s.officialUrl)).size,observedUrlDenominator:observations.coverage.observedUrlDenominator,freshHttp200:observations.coverage.http200,freshByteVerified:observations.coverage.byteVerified,authoredResearchSummarySources:observations.coverage.researchSummarySourceCount,sourceExtractionAdmitted:0,rightsApproved:0,currentLegalVersionConfirmed:0,note:'Document revisions, unique URLs, research notes, source extraction and official admission are separate measures.'};}
+function coverage(catalogue,observations){const coverage=I.coverage(catalogue),unavailableStatutoryReferences=catalogue.sources.filter(s=>s.publisher==='NSW legislation website — content not retrieved').length;return {...coverage,registeredDocumentRevisionDenominator:coverage.documentDenominator,uniqueRegisteredUrls:new Set(catalogue.sources.filter(s=>s.officialUrl).map(s=>s.officialUrl)).size,coreObservedUrlDenominator:observations.coverage.observedUrlDenominator,unavailableStatutoryReferences,totalAttemptedUrls:observations.coverage.observedUrlDenominator+unavailableStatutoryReferences,freshHttp200:observations.coverage.http200,freshByteVerified:observations.coverage.byteVerified,authoredResearchSummarySources:observations.coverage.researchSummarySourceCount,sourceExtractionAdmitted:0,rightsApproved:0,currentLegalVersionConfirmed:0,note:'Document revisions, registered URL leads, successful receipts, research notes, source extraction and official admission are separate measures.'};}
 root.CsoiIntake={extendCatalogue,registerSummaries,coverage};if(typeof module!=='undefined')module.exports=root.CsoiIntake;
 })(typeof window!=='undefined'?window:globalThis);

@@ -2372,6 +2372,226 @@
         "reason": "Actual inherited-proxy HTTPS 200 and local original-byte digest verification"
       },
       "revisionId": "sha256:1649f06f7e21efd866c321af124131bfe4de0cf91761f984ab05f7259f17584f"
+    },
+    {
+      "id": "csoi:nsw-food-act:20261030",
+      "family": "FOOD_LEGISLATION",
+      "publisher": "NSW legislation website — content not retrieved",
+      "officialUrl": "https://legislation.nsw.gov.au/view/html/inforce/current/act-2003-043",
+      "directoryUrl": "https://legislation.nsw.gov.au/view/html/inforce/current/act-2003-043",
+      "title": "nsw-food-act — statutory reference pending retrieval",
+      "recordType": "REQUIREMENT",
+      "stationId": "csp",
+      "classification": "PUBLIC",
+      "mediaType": "UNKNOWN",
+      "rights": {
+        "status": "UNKNOWN",
+        "licence": null,
+        "basis": "Public availability does not establish redistribution permission. Preserve metadata and permitted research summaries only.",
+        "permittedUses": [
+          "METADATA_ONLY"
+        ]
+      },
+      "rawDigest": null,
+      "retrievedAt": null,
+      "adoptedAt": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "amendedAt": null,
+      "supersededAt": null,
+      "currentAsOf": null,
+      "geographicExtent": {
+        "type": "STATE",
+        "label": "NSW, Australia",
+        "parcelApplicability": "UNKNOWN"
+      },
+      "extraction": {
+        "coverage": "NONE",
+        "anchors": []
+      },
+      "lineage": {
+        "supersedes": [],
+        "revisionLabel": "UNKNOWN"
+      },
+      "corroboratingEvidence": [],
+      "reportedPriorEvidence": {
+        "status": "PASS_IN_EXECUTOR_REPORT_NOT_REEXECUTED",
+        "basis": "Existing V1.5 taskbook/crosswalk committed before this intake register",
+        "reportedAdoptedAt": "2025-05-01",
+        "reportPath": "sources/STRATEGY_WORK_ACCOUNTING_CROSSWALK_20261029.md",
+        "currentVersionConfirmed": false
+      },
+      "access": {
+        "state": "UNAVAILABLE",
+        "checkedAt": "2026-10-30T01:32:46.434481+00:00",
+        "reason": "HTTP response 403; statutory content, current consolidation and applicability remain unverified."
+      },
+      "revisionId": "sha256:758962ce305ba601efc25233fe580e3e326f424565e14b4f4bbc177b3df88bf9"
+    },
+    {
+      "id": "csoi:nsw-public-health-act:20261030",
+      "family": "PUBLIC_HEALTH_LEGISLATION",
+      "publisher": "NSW legislation website — content not retrieved",
+      "officialUrl": "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-2010-127",
+      "directoryUrl": "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-2010-127",
+      "title": "nsw-public-health-act — statutory reference pending retrieval",
+      "recordType": "REQUIREMENT",
+      "stationId": "csp",
+      "classification": "PUBLIC",
+      "mediaType": "UNKNOWN",
+      "rights": {
+        "status": "UNKNOWN",
+        "licence": null,
+        "basis": "Public availability does not establish redistribution permission. Preserve metadata and permitted research summaries only.",
+        "permittedUses": [
+          "METADATA_ONLY"
+        ]
+      },
+      "rawDigest": null,
+      "retrievedAt": null,
+      "adoptedAt": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "amendedAt": null,
+      "supersededAt": null,
+      "currentAsOf": null,
+      "geographicExtent": {
+        "type": "STATE",
+        "label": "NSW, Australia",
+        "parcelApplicability": "UNKNOWN"
+      },
+      "extraction": {
+        "coverage": "NONE",
+        "anchors": []
+      },
+      "lineage": {
+        "supersedes": [],
+        "revisionLabel": "UNKNOWN"
+      },
+      "corroboratingEvidence": [],
+      "reportedPriorEvidence": {
+        "status": "PASS_IN_EXECUTOR_REPORT_NOT_REEXECUTED",
+        "basis": "Existing V1.5 taskbook/crosswalk committed before this intake register",
+        "reportedAdoptedAt": "2025-05-01",
+        "reportPath": "sources/STRATEGY_WORK_ACCOUNTING_CROSSWALK_20261029.md",
+        "currentVersionConfirmed": false
+      },
+      "access": {
+        "state": "UNAVAILABLE",
+        "checkedAt": "2026-10-30T01:32:46.435652+00:00",
+        "reason": "HTTP response 403; statutory content, current consolidation and applicability remain unverified."
+      },
+      "revisionId": "sha256:32a244456810a6cd9aee780eecdd231700ceb87a246971fe41e6a64c2a40b316"
+    },
+    {
+      "id": "csoi:nsw-public-health-regulation:20261030",
+      "family": "PUBLIC_HEALTH_LEGISLATION",
+      "publisher": "NSW legislation website — content not retrieved",
+      "officialUrl": "https://legislation.nsw.gov.au/view/html/inforce/current/sl-2022-0502",
+      "directoryUrl": "https://legislation.nsw.gov.au/view/html/inforce/current/sl-2022-0502",
+      "title": "nsw-public-health-regulation — statutory reference pending retrieval",
+      "recordType": "REQUIREMENT",
+      "stationId": "csp",
+      "classification": "PUBLIC",
+      "mediaType": "UNKNOWN",
+      "rights": {
+        "status": "UNKNOWN",
+        "licence": null,
+        "basis": "Public availability does not establish redistribution permission. Preserve metadata and permitted research summaries only.",
+        "permittedUses": [
+          "METADATA_ONLY"
+        ]
+      },
+      "rawDigest": null,
+      "retrievedAt": null,
+      "adoptedAt": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "amendedAt": null,
+      "supersededAt": null,
+      "currentAsOf": null,
+      "geographicExtent": {
+        "type": "STATE",
+        "label": "NSW, Australia",
+        "parcelApplicability": "UNKNOWN"
+      },
+      "extraction": {
+        "coverage": "NONE",
+        "anchors": []
+      },
+      "lineage": {
+        "supersedes": [],
+        "revisionLabel": "UNKNOWN"
+      },
+      "corroboratingEvidence": [],
+      "reportedPriorEvidence": {
+        "status": "PASS_IN_EXECUTOR_REPORT_NOT_REEXECUTED",
+        "basis": "Existing V1.5 taskbook/crosswalk committed before this intake register",
+        "reportedAdoptedAt": "2025-05-01",
+        "reportPath": "sources/STRATEGY_WORK_ACCOUNTING_CROSSWALK_20261029.md",
+        "currentVersionConfirmed": false
+      },
+      "access": {
+        "state": "UNAVAILABLE",
+        "checkedAt": "2026-10-30T01:32:46.437253+00:00",
+        "reason": "HTTP response 403; statutory content, current consolidation and applicability remain unverified."
+      },
+      "revisionId": "sha256:0ec7abfbb3ecc61ec1efeee495c402869b3a7880a9b874c20e140132b2348749"
+    },
+    {
+      "id": "csoi:nsw-local-government-act:20261030",
+      "family": "LOCAL_GOVERNMENT_LEGISLATION",
+      "publisher": "NSW legislation website — content not retrieved",
+      "officialUrl": "https://legislation.nsw.gov.au/view/html/inforce/current/act-1993-030",
+      "directoryUrl": "https://legislation.nsw.gov.au/view/html/inforce/current/act-1993-030",
+      "title": "nsw-local-government-act — statutory reference pending retrieval",
+      "recordType": "REQUIREMENT",
+      "stationId": "csp",
+      "classification": "PUBLIC",
+      "mediaType": "UNKNOWN",
+      "rights": {
+        "status": "UNKNOWN",
+        "licence": null,
+        "basis": "Public availability does not establish redistribution permission. Preserve metadata and permitted research summaries only.",
+        "permittedUses": [
+          "METADATA_ONLY"
+        ]
+      },
+      "rawDigest": null,
+      "retrievedAt": null,
+      "adoptedAt": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "amendedAt": null,
+      "supersededAt": null,
+      "currentAsOf": null,
+      "geographicExtent": {
+        "type": "STATE",
+        "label": "NSW, Australia",
+        "parcelApplicability": "UNKNOWN"
+      },
+      "extraction": {
+        "coverage": "NONE",
+        "anchors": []
+      },
+      "lineage": {
+        "supersedes": [],
+        "revisionLabel": "UNKNOWN"
+      },
+      "corroboratingEvidence": [],
+      "reportedPriorEvidence": {
+        "status": "PASS_IN_EXECUTOR_REPORT_NOT_REEXECUTED",
+        "basis": "Existing V1.5 taskbook/crosswalk committed before this intake register",
+        "reportedAdoptedAt": "2025-05-01",
+        "reportPath": "sources/STRATEGY_WORK_ACCOUNTING_CROSSWALK_20261029.md",
+        "currentVersionConfirmed": false
+      },
+      "access": {
+        "state": "UNAVAILABLE",
+        "checkedAt": "2026-10-30T01:32:46.437762+00:00",
+        "reason": "HTTP response 403; statutory content, current consolidation and applicability remain unverified."
+      },
+      "revisionId": "sha256:51ab7cec4b1df42ed51f75ea896bc3e0d00115ece41fee92380edcecb0e3e914"
     }
   ],
   "events": [
@@ -3992,6 +4212,62 @@
       "sequence": 102,
       "previousDigest": "sha256:db6bb164b4ecd2bcc684d58d0ec97e7e3f7991ec5a749612fbb8ea039c87da08",
       "digest": "sha256:dc83159f524aa58362e8c1c2626093f13832321a70633069a5390bad2e08a6c6"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:nsw-food-act:20261030",
+      "sourceRevision": "sha256:758962ce305ba601efc25233fe580e3e326f424565e14b4f4bbc177b3df88bf9",
+      "stage": "DISCOVERED",
+      "evidence": {
+        "actor": "public-source-research",
+        "at": "2026-10-30T01:32:46.434481+00:00",
+        "reason": "Register failed official reference as a requirement, not a retrieved/admitted statutory document."
+      },
+      "sequence": 103,
+      "previousDigest": "sha256:dc83159f524aa58362e8c1c2626093f13832321a70633069a5390bad2e08a6c6",
+      "digest": "sha256:3a1938b67aef6494451bb4c0843342fbbefdf0dc27c3321c23533b5ae2995ecc"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:nsw-public-health-act:20261030",
+      "sourceRevision": "sha256:32a244456810a6cd9aee780eecdd231700ceb87a246971fe41e6a64c2a40b316",
+      "stage": "DISCOVERED",
+      "evidence": {
+        "actor": "public-source-research",
+        "at": "2026-10-30T01:32:46.435652+00:00",
+        "reason": "Register failed official reference as a requirement, not a retrieved/admitted statutory document."
+      },
+      "sequence": 104,
+      "previousDigest": "sha256:3a1938b67aef6494451bb4c0843342fbbefdf0dc27c3321c23533b5ae2995ecc",
+      "digest": "sha256:89b0e49607485d4348ed55b8ab6d429e078adced7002e2eeac98df7ae267d09f"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:nsw-public-health-regulation:20261030",
+      "sourceRevision": "sha256:0ec7abfbb3ecc61ec1efeee495c402869b3a7880a9b874c20e140132b2348749",
+      "stage": "DISCOVERED",
+      "evidence": {
+        "actor": "public-source-research",
+        "at": "2026-10-30T01:32:46.437253+00:00",
+        "reason": "Register failed official reference as a requirement, not a retrieved/admitted statutory document."
+      },
+      "sequence": 105,
+      "previousDigest": "sha256:89b0e49607485d4348ed55b8ab6d429e078adced7002e2eeac98df7ae267d09f",
+      "digest": "sha256:d078ea6d9012b3c849f368fd44fe1a4df9f50fd3f4900fd9ca74018e07ea0fd0"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:nsw-local-government-act:20261030",
+      "sourceRevision": "sha256:51ab7cec4b1df42ed51f75ea896bc3e0d00115ece41fee92380edcecb0e3e914",
+      "stage": "DISCOVERED",
+      "evidence": {
+        "actor": "public-source-research",
+        "at": "2026-10-30T01:32:46.437762+00:00",
+        "reason": "Register failed official reference as a requirement, not a retrieved/admitted statutory document."
+      },
+      "sequence": 106,
+      "previousDigest": "sha256:d078ea6d9012b3c849f368fd44fe1a4df9f50fd3f4900fd9ca74018e07ea0fd0",
+      "digest": "sha256:b48cb25a4103d2c2c1237c45147cd202037902a8e4b5b8f2333223f1e361d9e1"
     }
   ]
 }
