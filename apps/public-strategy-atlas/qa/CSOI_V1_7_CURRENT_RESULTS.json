@@ -1,6 +1,6 @@
 {
   "format": "csoi-v17-current-results-1",
-  "at": "2026-10-30T07:05:20.119789+00:00",
+  "at": "2026-10-30T07:39:34.952690+00:00",
   "systemAcceptance": "PARTIAL",
   "softwareStatus": "PARTIAL",
   "taskCounts": {
@@ -10,13 +10,13 @@
   },
   "publicCorpus": {
     "status": "PARTIAL",
-    "catalogueRecords": 51,
+    "catalogueRecords": 52,
     "families": 31,
-    "byteReceipts": 32,
-    "pdfReceipts": 12,
+    "byteReceipts": 33,
+    "pdfReceipts": 13,
     "htmlReceipts": 20,
-    "researchNotes": 24,
-    "researchNoteSources": 22,
+    "researchNotes": 25,
+    "researchNoteSources": 23,
     "publishedPlanningRecords": 5,
     "completeInventory": "UNKNOWN"
   },
@@ -30,7 +30,7 @@
   "native": {
     "status": "PASS_TESTED_HERE",
     "filesPassed": 31,
-    "evidence": "csoi/native-comparison.json"
+    "evidence": "csoi/native-snowy.json"
   },
   "browser": {
     "status": "PASS_TESTED_HERE",
@@ -72,5 +72,6 @@
     "csoi-router.js": "sha256:9a3c8e73d7cc96b80089547229556008d26e2154301d619a41cc6f44efb571a4",
     "csoi-pages.css": "sha256:737dc7c8f214d1157e80c4ff7def61b6710aa0425bb3adfb7b4329f572863ae5"
   },
-  "report": "CSOI_COMPARISON_RESULTS_20261030.md"
+  "report": "CSOI_COMPARISON_RESULTS_20261030.md",
+  "latestSourceBatch": "csoi/snowy-source-results.json"
 }

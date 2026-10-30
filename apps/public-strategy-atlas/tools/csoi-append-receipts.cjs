@@ -57,17 +57,19 @@ async function prepare(catalogue,observations,batch,read=readOriginal){
  const proof={format:'csoi-source-prefix-proof-1',previousCatalogueDigest:await M.objectDigest(catalogue),previousSourceCount:catalogue.sources.length,previousEventCount:catalogue.events.length,previousEventHead:catalogue.events.at(-1).digest,previousObservationCount:observations.observations.length,previousObservationsDigest:await M.objectDigest(observations.observations),addedObservationIds:added,currentCatalogueDigest:await M.objectDigest(result),cataloguePrefixUnchanged:true,observationPrefixUnchanged:true,originalBodiesCommitted:false,rights:'UNKNOWN',admission:'PENDING'};
  return {catalogue:result,observations:next,proof,summary:{added:added.length,totalRecords:result.sources.length,successfulByteReceipts:successful.length,officialAdmitted:0}};
 }
-module.exports={prepare,readOriginal,publicCouncilUrl};
+function proofName(proof){requireThat(/^sha256:[a-f0-9]{64}$/.test(proof.currentCatalogueDigest),'PROOF_DIGEST_REQUIRED');return 'source-prefix-'+proof.currentCatalogueDigest.slice(7)+'.json';}
+module.exports={prepare,readOriginal,publicCouncilUrl,proofName};
 if(require.main===module)(async()=>{
  requireThat(process.argv[2],'Usage: node tools/csoi-append-receipts.cjs TEMP_BATCH.json [--apply]');
  const filename=path.resolve(process.argv[2]);requireThat(fs.statSync(filename).size<=1024*1024,'MANIFEST_LIMIT');
  const result=await prepare(JSON.parse(fs.readFileSync(path.join(APP,'sources/csoi-catalogue.json'))),JSON.parse(fs.readFileSync(path.join(APP,'sources/csoi-source-observations.json'))),JSON.parse(fs.readFileSync(filename)));
  if(process.argv[3]==='--apply'){
+  const proofFile=path.join(APP,'qa/csoi',proofName(result.proof)),proofBody=JSON.stringify(result.proof,null,2)+'\n';
+  if(fs.existsSync(proofFile))requireThat(fs.readFileSync(proofFile,'utf8')===proofBody,'IMMUTABLE_PROOF_CONFLICT');else fs.writeFileSync(proofFile,proofBody,{flag:'wx'});
   for(const [name,value,globalName]of [['csoi-catalogue',result.catalogue,'CsoiRegisteredSources'],['csoi-source-observations',result.observations,'CsoiSourceObservations']]){
    fs.writeFileSync(path.join(APP,'sources',name+'.json'),JSON.stringify(value,null,2)+'\n');
    fs.writeFileSync(path.join(APP,'sources',name+'.js'),`(function(root){const value=${JSON.stringify(value)};root.${globalName}=value;if(typeof module!=='undefined')module.exports=value;})(typeof window!=='undefined'?window:globalThis);\n`);
   }
-  fs.writeFileSync(path.join(APP,'qa/csoi/source-extension-prefix-20261030.json'),JSON.stringify(result.proof,null,2)+'\n');
  }
- console.log(JSON.stringify({mode:process.argv[3]==='--apply'?'APPLIED':'DRY_RUN',...result.summary,proof:result.proof},null,2));
+ console.log(JSON.stringify({mode:process.argv[3]==='--apply'?'APPLIED':'DRY_RUN',...result.summary,proofFile:'qa/csoi/'+proofName(result.proof),proof:result.proof},null,2));
 })().catch(error=>{console.error(error.message);process.exitCode=1});

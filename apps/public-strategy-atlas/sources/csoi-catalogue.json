@@ -3108,6 +3108,58 @@
         "reason": "Original bytes independently rehashed from temporary public-source retrieval; permission/currentness/admission pending."
       },
       "revisionId": "sha256:b813e406df80b14903d20e8dec61aafdcef69b342b1881c6b7e8214f707d13ba"
+    },
+    {
+      "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+      "family": "DCP",
+      "publisher": "Snowy Monaro Regional Council",
+      "officialUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+      "directoryUrl": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Snowy-River-Shire-Development-Control-Plan",
+      "title": "Snowy River Development Control Plan 2013 — Amendment3 observed",
+      "recordType": "DOCUMENT",
+      "stationId": "dcp",
+      "classification": "PUBLIC",
+      "mediaType": "application/pdf",
+      "rights": {
+        "status": "UNKNOWN",
+        "licence": null,
+        "basis": "Public original temporarily verified. Only metadata and bounded own factual research wording are retained; original redistribution rights remain UNKNOWN.",
+        "permittedUses": [
+          "METADATA_ONLY"
+        ]
+      },
+      "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+      "retrievedAt": "2026-10-30T07:27:40.568411+00:00",
+      "adoptedAt": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "amendedAt": null,
+      "supersededAt": null,
+      "currentAsOf": null,
+      "geographicExtent": {
+        "type": "HISTORICAL_PLAN_CONTEXT",
+        "label": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+        "parcelApplicability": "UNKNOWN"
+      },
+      "extraction": {
+        "parser": "local review; no formal source extraction",
+        "version": "csoi-receipt-append-1",
+        "coverage": "NONE",
+        "totalPages": 465,
+        "extractedPages": [],
+        "anchors": []
+      },
+      "lineage": {
+        "supersedes": [],
+        "revisionLabel": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d"
+      },
+      "corroboratingEvidence": [],
+      "access": {
+        "state": "AVAILABLE",
+        "checkedAt": "2026-10-30T07:27:40.568411+00:00",
+        "reason": "Original bytes independently rehashed from temporary public-source retrieval; permission/currentness/admission pending."
+      },
+      "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
     }
   ],
   "events": [
@@ -5433,6 +5485,71 @@
       "sequence": 146,
       "previousDigest": "sha256:1388c629d14d2510cce1b792c59439992ee7ac2738bf6cf9e38004ae053882f7",
       "digest": "sha256:a6a85998f0a2281e6ac23b15bb64e399dea32be873f661612b77c96e1c598f1c"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+      "sourceRevision": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e",
+      "stage": "DISCOVERED",
+      "evidence": {
+        "actor": "public-source-research",
+        "at": "2026-10-30T07:27:40.568411+00:00",
+        "reason": "Append actual public-source observation; rights, legal currency and human admission remain pending."
+      },
+      "sequence": 147,
+      "previousDigest": "sha256:a6a85998f0a2281e6ac23b15bb64e399dea32be873f661612b77c96e1c598f1c",
+      "digest": "sha256:fb00f0b7396ebec2a341d02510c3914c0df84909efc124ae7da515c030c53d53"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+      "sourceRevision": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e",
+      "stage": "DIRECTORY_OBSERVED",
+      "evidence": {
+        "url": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Snowy-River-Shire-Development-Control-Plan",
+        "directoryDigest": "sha256:d6ef5fbe644fe641be3fa39dbd2fc836b1dd0f22113cf0e1b4af759bfda44e61",
+        "actor": "public-source-research",
+        "at": "2026-10-30T07:27:40.568411+00:00",
+        "reason": "Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred."
+      },
+      "sequence": 148,
+      "previousDigest": "sha256:fb00f0b7396ebec2a341d02510c3914c0df84909efc124ae7da515c030c53d53",
+      "digest": "sha256:ff9a78340781ac988197ede271d69eb8772d07c088a8a418e17297253d7d1539"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+      "sourceRevision": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e",
+      "stage": "SOURCE_RETRIEVED",
+      "evidence": {
+        "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+        "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+        "retrievedAt": "2026-10-30T07:27:40.568411+00:00",
+        "httpStatus": 200,
+        "byteLength": 16569676,
+        "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+        "actor": "public-source-research",
+        "at": "2026-10-30T07:27:40.568411+00:00",
+        "reason": "Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred."
+      },
+      "sequence": 149,
+      "previousDigest": "sha256:ff9a78340781ac988197ede271d69eb8772d07c088a8a418e17297253d7d1539",
+      "digest": "sha256:023121b7e681ab92eaf2151a5f86bef3c780c011479f439c297be282efac9665"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+      "sourceRevision": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e",
+      "stage": "RAW_BYTES_VERIFIED",
+      "evidence": {
+        "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+        "actor": "public-source-research",
+        "at": "2026-10-30T07:27:40.568411+00:00",
+        "reason": "Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred."
+      },
+      "sequence": 150,
+      "previousDigest": "sha256:023121b7e681ab92eaf2151a5f86bef3c780c011479f439c297be282efac9665",
+      "digest": "sha256:b26bec05c57bec1e9f96628ba8559de1ce71c646b9af3dc2449454fcf719b4f3"
     }
   ]
 }

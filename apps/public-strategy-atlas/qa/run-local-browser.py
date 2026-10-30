@@ -6,6 +6,7 @@ import subprocess, sys, threading
 APP=Path(__file__).resolve().parents[1]
 allowed={'csoi-corpus-browser.py','csoi-calendar-browser.py','csoi-work-browser.py','csoi-phe-browser.py','csoi-wcos-browser.py','csoi-browser.py','csoi-source-browser.py','csoi-layer-browser.py','system-browser.py','e0-browser.py','deep-browser.py','merge-browser.py','discovery-browser.py','integration-browser.py','intake-access-browser.py','run-browser-suite.py'}
 allowed.add('csoi-compare-browser.py')
+allowed.add('csoi-snowy-browser.py')
 scripts=sys.argv[1:] or ['csoi-browser.py']
 if any(s not in allowed for s in scripts):raise SystemExit('UNRECOGNISED_LOCAL_BROWSER_SUITE')
 class Quiet(SimpleHTTPRequestHandler):

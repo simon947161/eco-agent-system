@@ -1,6 +1,6 @@
 {
   "format": "csoi-public-source-observations-1",
-  "observedAt": "2026-10-30T03:01:21.082Z",
+  "observedAt": "2026-10-30T07:27:40.568Z",
   "policy": "Inherited proxy and TLS verification; official-public hosts; same-host HTTPS redirects only; no automatic admission",
   "originalBytesCommitted": false,
   "observations": [
@@ -4068,6 +4068,130 @@
           "rawDigest": "sha256:4347cd774b6d2508422a9e5fce8200ae470df9572ec644045d7abdfba9040bed"
         }
       }
+    },
+    {
+      "id": "smrc-dcp-snowy-2013-amend3",
+      "family": "DCP",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+      "retrievedAt": "2026-10-30T07:27:40.568411+00:00",
+      "classification": "PUBLIC",
+      "rights": "UNKNOWN",
+      "currentVersion": "UNKNOWN",
+      "legalApplicability": "UNKNOWN",
+      "admission": "PENDING",
+      "geography": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+      "mediaType": "application/pdf",
+      "byteLength": 16569676,
+      "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+      "title": "Snowy River Development Control Plan 2013 — Amendment3 observed",
+      "documentLinks": [],
+      "access": "AVAILABLE",
+      "knowledgeAnchors": [
+        {
+          "id": "amendment-and-historical-scope",
+          "title": "Observed amendment and historical planning scope",
+          "locator": "PDF p2 (printed i), versions; PDF pp16–17 (printed1–2), A1sections3–5",
+          "textKind": "RESEARCH_SUMMARY",
+          "text": "Research summary: the version table records Amendment3(Issue4), adoption16March2023, resolution58/23 and commencement29March2023. A1section3 references land under Snowy River LEP2013 with a T2Tyrolean Village Stage3 exception; section5 states LEP precedence for inconsistency. These are document observations, not a current all-LGA or parcel legal finding. Independent rights, consolidation, geographic and human admission review remain pending.",
+          "digest": "sha256:555bfba81b48f9fe81b8762a448dcea7364c4782731c8046329bd420d074adb8",
+          "verification": "SOURCE_OBSERVED_NOT_FORMAL_ADMISSION",
+          "parserVersion": "reviewed-public-summary-2",
+          "uncertainty": "Reuse rights, current consolidation, legal applicability and authorised admission remain UNKNOWN/PENDING."
+        }
+      ],
+      "rightsNote": "Public original temporarily verified. Only metadata and bounded own factual research wording are retained; original redistribution rights remain UNKNOWN.",
+      "originalBytesCommitted": false,
+      "currentAsOf": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "adoptedAt": null,
+      "revisionObservation": {
+        "titleOnCover": "Snowy River Development Control Plan2013 (footer/version table)",
+        "directoryLinkLabel": "Snowy River Development Control Plan(PDF, 16MB)",
+        "versionObserved": "Amendment3 (Issue4)",
+        "adoptionDateObserved": "2023-03-16",
+        "effectiveDateObserved": "2023-03-29",
+        "resolutionObserved": "58/23",
+        "locator": "PDF page2 (printed i), Record of Versions; PDF pages16–17 (printed1–2), A1 sections3–5",
+        "scopeObserved": "A1section3 refers to land under Snowy River LEP2013, excluding the site-specific T2Tyrolean Village Stage3 DCP. This is observed historical scope, not current parcel applicability.",
+        "conflicts": [
+          "A1retains original2013commencement and historical authority/legislation references; later version-table observations do not independently confirm the current consolidation.",
+          "A separate Jindabyne DCP2024 lead is listed by Council; supersession/overlap with this historical plan requires independent review."
+        ],
+        "currentness": "UNKNOWN",
+        "legalApplicability": "UNKNOWN"
+      },
+      "byteVerification": "PASS_TESTED_HERE",
+      "intakeRecord": {
+        "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+        "family": "DCP",
+        "publisher": "Snowy Monaro Regional Council",
+        "officialUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+        "directoryUrl": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Snowy-River-Shire-Development-Control-Plan",
+        "title": "Snowy River Development Control Plan 2013 — Amendment3 observed",
+        "recordType": "DOCUMENT",
+        "stationId": "dcp",
+        "classification": "PUBLIC",
+        "mediaType": "application/pdf",
+        "rights": {
+          "status": "UNKNOWN",
+          "licence": null,
+          "basis": "Public original temporarily verified. Only metadata and bounded own factual research wording are retained; original redistribution rights remain UNKNOWN.",
+          "permittedUses": [
+            "METADATA_ONLY"
+          ]
+        },
+        "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+        "retrievedAt": "2026-10-30T07:27:40.568411+00:00",
+        "adoptedAt": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "amendedAt": null,
+        "supersededAt": null,
+        "currentAsOf": null,
+        "geographicExtent": {
+          "type": "HISTORICAL_PLAN_CONTEXT",
+          "label": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+          "parcelApplicability": "UNKNOWN"
+        },
+        "extraction": {
+          "parser": "local review; no formal source extraction",
+          "version": "csoi-receipt-append-1",
+          "coverage": "NONE",
+          "totalPages": 465,
+          "extractedPages": [],
+          "anchors": []
+        },
+        "lineage": {
+          "supersedes": [],
+          "revisionLabel": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d"
+        },
+        "corroboratingEvidence": [],
+        "access": {
+          "state": "AVAILABLE",
+          "checkedAt": "2026-10-30T07:27:40.568411+00:00",
+          "reason": "Original bytes independently rehashed from temporary public-source retrieval; permission/currentness/admission pending."
+        }
+      },
+      "stageEvidence": {
+        "DIRECTORY_OBSERVED": {
+          "url": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Snowy-River-Shire-Development-Control-Plan",
+          "directoryDigest": "sha256:d6ef5fbe644fe641be3fa39dbd2fc836b1dd0f22113cf0e1b4af759bfda44e61"
+        },
+        "SOURCE_RETRIEVED": {
+          "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+          "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+          "retrievedAt": "2026-10-30T07:27:40.568411+00:00",
+          "httpStatus": 200,
+          "byteLength": 16569676,
+          "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d"
+        },
+        "RAW_BYTES_VERIFIED": {
+          "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d"
+        }
+      }
     }
   ],
   "originalSummaryVerifier": {
@@ -4077,16 +4201,16 @@
     "admission": "PENDING"
   },
   "coverage": {
-    "observedUrlDenominator": 37,
-    "http200": 32,
-    "byteVerified": 32,
-    "researchSummarySourceCount": 22,
+    "observedUrlDenominator": 38,
+    "http200": 33,
+    "byteVerified": 33,
+    "researchSummarySourceCount": 23,
     "currentLegalVersionConfirmed": 0,
     "reuseApproved": 0,
     "officialAdmitted": 0,
     "inventoryCompleteness": "UNKNOWN",
     "note": "Selected URL request-attempt records include retries; same-host redirects can add HTTP exchanges. Complete corpus coverage and official admission are separate.",
-    "uniqueAttemptedUrls": 36,
+    "uniqueAttemptedUrls": 37,
     "httpExchangeCount": "UNKNOWN_REDIRECTS_NOT_INSTRUMENTED"
   }
 }

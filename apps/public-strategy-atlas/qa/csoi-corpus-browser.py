@@ -1,6 +1,6 @@
 """Real recursive official-directory navigation; no legal/admission promotion."""
 from pathlib import Path
-import json,datetime,hashlib
+import json,datetime,hashlib,re
 from playwright.sync_api import sync_playwright,expect
 APP=Path(__file__).resolve().parents[1];OUT=APP/'qa/csoi';results=[]
 with sync_playwright() as p:
@@ -36,7 +36,8 @@ with sync_playwright() as p:
   page.screenshot(path=str(OUT/f'water-plan-conflict-{width}.png'))
   page.evaluate('location.hash="#/coverage"')
   expect(page.locator('#csoiWorkspace')).to_contain_text('registeredRecords')
-  expect(page.locator('#csoiWorkspace')).to_contain_text('32')
+  expected=json.loads((APP/'sources/csoi-source-observations.json').read_text())['coverage']['byteVerified']
+  expect(page.locator('#csoiWorkspace dt').filter(has_text=re.compile('^freshByteVerified$')).locator('xpath=following-sibling::dd[1]')).to_have_text(str(expected))
   expect(page.locator('#csoiWorkspace')).to_contain_text('sourceExtractionAdmitted')
   assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
   assert not errors,errors
