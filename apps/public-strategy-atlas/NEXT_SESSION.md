@@ -1,3 +1,19 @@
+# V1.7 source-review work and calendar checkpoint — PARTIAL
+
+Verified pushed code/evidence branch HEAD: `65c1ab1d78b567a9b9175c9aa7b446aad81f292d` (feature `7b2d592579ec80aa09208f89b19e53c280f16b7d`, then reviewed provenance fixes). This continuity commit follows the code; resolve actual remote branch and PR130 refs on resume. Public PR HTTP200 Draft icon/label observed in `qa/csoi/pr130-review-calendar-readback.json`.
+
+The existing DCP clause→independent review form now creates a same-domain PUBLIC/LOCAL_RESEARCH Task pinned to exact source+clause revisions, locator and station. User-selected date/ASSUMED hours project under existing Annual Edition day/week/month/quarter/year. Work dossiers link back to clause/source/path proof; the assistant shows separate personal research preparation. Actual hours/spend/outcome UNKNOWN, admission PENDING, Council assignment NOT_CREATED. No default plans seeded; default remains93entities/48assertions/127original items and digest `sha256:2897418d1391dfe004b1d7e63a6085474647818c29160771424d6d6ff7d736f2`.
+
+PASS34/34native files, repeated after independent review found/fixed locator/station misbinding; final Node loaded-module coverage91.38%lines/84.31%branches/95.56%functions (renderer11.76%lines; not browser coverage). Actual desktop/390px full review/calendar/dossier/preparation/export/independent snapshot PASS. Detailed calendar and24routes×5viewports PASS on this batch. Final6legacy browser suites plus affected review/path/clause suites PASS; post-provenance-fix review browsers PASS. Old-snapshot fixture now constructs a genuine pre-catalogue migration and explicitly rejects provenance deletion from a new snapshot. Report `qa/CSOI_REVIEW_CALENDAR_RESULTS_20261030.md`; machine `qa/csoi/review-calendar-results.json` and `qa/CSOI_V1_7_CURRENT_RESULTS.json`.
+
+Corpus remains52records/31families;33byte receipts(13PDF/20HTML),25own notes,30DCP clause observations,3historical design references,5published OP planning records. Complete corpus/current law/rights/parcel applicability UNKNOWN/PENDING; official admitted relationships0. Full software/system/corpus PARTIAL;49VERIFIED/28PARTIAL/3BLOCKED. COI-002/031/040 remain deferred private WCOS tasks. No deployment/merge/accounts/nonpublic data.
+
+NEXT executable public batch: extend the same clause model to the already byte-receipted Cooma-Monaro DCP2014 Amendment4 (`csoi:smrc-dcp-cooma-2014-amend4:20261030`), using local `/tmp/csoi-next-source-batch-20261030/smrc-dcp-cooma-2014-amend4.pdf` if still present. Original213pages/16,499,726bytes; compare its existing raw receipt before use. Retain cover/body/version-resolution conflicts and historical former-shire scope. Add only own bounded observations/page hashes, not source bodies. Generalise intake/mirrors to multiple existing source outlines without replacing Snowy or creating another graph. Test independent source anchors, foreign-parent rejection, cross-DCP path comparison, and review/calendar links; no source-to-current-duty promotion. Agent source_recovery_review is preparing a /tmp-only Cooma draft in the current session; it is not yet verified or repository code.
+
+Jindabyne ~74MB remains NOT_REQUESTED without explicit bounded-transfer design. No repeated statutory403 attempts or proxy bypass. KeepPR130Draft, main/PR129 unchanged; no private WCOS/Council accounts/paid services/formal decisions.
+
+--- Previous checkpoint ---
+
 # V1.7 typed path-set checkpoint — PARTIAL
 
 Pushedcode/evidence and remote branch/PR130head: `3bc35c18c5e8700d74f919d43077b5c532b940e3`. Resolve latestremoteHEAD onresume;continuitycommitfollowsthiscode.
