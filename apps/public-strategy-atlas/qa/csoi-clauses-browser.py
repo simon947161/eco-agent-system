@@ -39,4 +39,4 @@ with sync_playwright() as p:
   page.close()
  b.close()
 (OUT/'browser-clauses.json').write_text(json.dumps({'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results},indent=2)+'\n')
-print('PASS: desktop/mobile real eight-level DCP outline, parent return, historical design rate, source gates and independent93entity snapshot')
+print('PASS: desktop/mobile real eight-level DCP outline, parent return, historical design rate, source gates and independently verified expanded snapshot')
