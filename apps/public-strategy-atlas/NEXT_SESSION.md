@@ -1,3 +1,17 @@
+# V1.7 Pack F checkpoint — PARTIAL
+
+Code/evidence commit: `5b533a2f96203b29c08bcfec49b6b97987cb8af4`. This continuity/registry commit follows it; resolve current remote HEAD after push.
+
+Delivered distinct service/object/device/property/event/issue counts, six workload phases with estimated/measured/assumed totals, explicit resource-capacity scenarios, three-ledger calculation UI, receipt export and reverse trace. All27 native files and desktop/mobile receipt/guard tests PASS. Actual OP table references produce source-pinned RESEARCH_CANDIDATE edges only, never admitted implementation/causal links. Seven tasks VERIFIED, three deeper risk/finance/admission tasks PARTIAL. Carbon remains29.9tCO2e/person; unadmitted extrapolation is rejected; hours are never financial spend.
+
+SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING. Task statuses are evidence-based and do not imply Council approval.
+
+Next executable task: **COI-061 — annual edition navigation, task cards and draft-only management preparation**. Continue the recovered V1.7 registry using the same model. Retain Draft PR #130; no deployment, merge, main/PR129 changes, protected business data or production WCOS writes.
+
+Assessment: `qa/csoi/pack-f-assessment.json`.
+
+--- Previous checkpoint ---
+
 # V1.7 Pack E checkpoint — PARTIAL
 
 Code/evidence commit: `566e3254676ae91cb497dbbabacf2572971592b0`. This continuity/registry commit follows it; resolve current remote HEAD after push.
