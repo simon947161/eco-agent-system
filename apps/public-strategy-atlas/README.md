@@ -15,6 +15,8 @@ Use a browser against the local server. Scripts are classic scripts and have no 
 
 The route map stays the homepage. The navigation menu opens bookmarkable hash routes such as `/#/strategy/csp`, `/#/domains/phe/food`, `/#/domains/wcos/ltw`, `/#/calendar`, `/#/metrics`, `/#/sources` and `/#/compare`. Companion windows use independent public state and `noopener`; unsaved edits are transferred only through an explicitly verified snapshot import.
 
+The Snowy River DCP dossier now exposes 30 source-pinned own clause observations with conditions, exceptions, parent revision history and an eight-level evidence path. Three historical110/90/40L/person/day design references remain separate from actual water demand, current law and admitted calculation inputs.
+
 V1.7 workspaces include public PHE source/condition chains; read-only synthetic WCOS contracts; L0–L5 lineage with independent calculation replay and source-withdrawal invalidation; service-specific workload/resource denominators; calendar/fiscal Annual Editions down to task/brief/evidence/follow-up/report; and draft-only Michele weekly/meeting preparation. Calendar/task/draft retention appends immutable revisions in the same registry. Outlook actions and formal Council decisions are disabled. The original private WCOS contract remains unavailable; no production compatibility is claimed.
 
 ## Working flows

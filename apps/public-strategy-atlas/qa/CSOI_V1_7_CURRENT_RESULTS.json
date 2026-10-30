@@ -1,6 +1,6 @@
 {
   "format": "csoi-v17-current-results-1",
-  "at": "2026-10-30T07:39:34.952690+00:00",
+  "at": "2026-10-30T08:08:37.759041+00:00",
   "systemAcceptance": "PARTIAL",
   "softwareStatus": "PARTIAL",
   "taskCounts": {
@@ -18,7 +18,9 @@
     "researchNotes": 25,
     "researchNoteSources": 23,
     "publishedPlanningRecords": 5,
-    "completeInventory": "UNKNOWN"
+    "completeInventory": "UNKNOWN",
+    "authoredClauseObservations": 30,
+    "historicalDesignReferences": 3
   },
   "officialAdmission": {
     "status": "PENDING",
@@ -29,8 +31,8 @@
   },
   "native": {
     "status": "PASS_TESTED_HERE",
-    "filesPassed": 31,
-    "evidence": "csoi/native-snowy.json"
+    "filesPassed": 32,
+    "evidence": "csoi/native-clauses.json"
   },
   "browser": {
     "status": "PASS_TESTED_HERE",
@@ -51,7 +53,7 @@
     "functions": 95.06,
     "scope": "Loaded atlas-*.js/csoi-*.js modules, not browser renderer/tools/*.cjs"
   },
-  "defaultSnapshotDigest": "sha256:4023b091396d03acf391be78d2b2148bfc825651519a1114cd5ed129d9cff62a",
+  "defaultSnapshotDigest": "sha256:2897418d1391dfe004b1d7e63a6085474647818c29160771424d6d6ff7d736f2",
   "pr": {
     "number": 130,
     "state": "DRAFT",
@@ -64,7 +66,7 @@
     "private WCOS/Outlook compatibility",
     "independent privacy/legal certification"
   ],
-  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_public_source_intake.code_sha",
+  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_clause_batch.code_sha",
   "codeManifest": {
     "atlas-execution.js": "sha256:9689dbdedc409a254979f175e59b3acdae49e5b272c3a18ef60c56469188a862",
     "comparison.test.cjs": "sha256:58be492dd962beebe763f32d1edbff988a168f2b10bffd3ddc453566dca47936",
@@ -73,5 +75,6 @@
     "csoi-pages.css": "sha256:737dc7c8f214d1157e80c4ff7def61b6710aa0425bb3adfb7b4329f572863ae5"
   },
   "report": "CSOI_COMPARISON_RESULTS_20261030.md",
-  "latestSourceBatch": "csoi/snowy-source-results.json"
+  "latestSourceBatch": "csoi/snowy-source-results.json",
+  "latestClauseBatch": "csoi/clause-results.json"
 }

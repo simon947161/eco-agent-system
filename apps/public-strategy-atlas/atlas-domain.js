@@ -52,7 +52,9 @@ async function verify(d,m){
    if(data?.assistantDraft){const assistant=typeof module!=='undefined'?require('./csoi-assistant.js'):root.AtlasCSOIAssistant;if(!assistant||data.assistantDraft.classification!=='SYNTHETIC'||data.assistantDraft.id!==revision.record.id)return false;assistant.validateDraft(data.assistantDraft);}
   }
   const csoiRecords=x.revisions.filter(r=>r.record?.data?.csoiRecord).map(r=>r.record.data.csoiRecord);
+  if(csoiRecords.some(record=>!researchInputsPresent(d,record)))return false;
   if(csoiRecords.length){const governance=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;if(!governance)return false;for(const record of csoiRecords){if(!await governance.verifyRecord(record)||!governance.assessPublic(record,{operation:'STORAGE'}).allowed)return false;if(record.layer==='L3'&&record.data.receipt){const layers=typeof module!=='undefined'?require('./csoi-layers.js'):root.AtlasCSOILayers;if(!layers||!(await layers.verifyDerivation(d,record)).integrity)return false;}}}
+  if(csoiRecords.some(r=>r.data.dcpClause)){const clauses=typeof module!=='undefined'?require('./csoi-clauses.js'):root.AtlasCSOIClauses;if(!clauses||!(await clauses.verifyStructure(d)).integrity)return false;}
   const seen=new Set();
   for(let i=0;i<x.revisions.length;i++){
    const r=x.revisions[i],{id,...payload}=r;

@@ -33,7 +33,26 @@ async function registerSummaries(dataset,observations){
   const targets=observation.id==='smrc-op-2026'&&anchor.id==='food-program-p27'?['csp6']:observation.id==='smrc-op-2026'&&anchor.id==='ltw-complaints-p30'?['csp6','csp8']:[];
   for(const to of targets)if(M.domainIndex(result).has(to))result=await M.registerResearchLink(result,{id:'csoi:reported-reference:'+anchor.id+':'+to,from:id,to,reason:'Retain exact OP table CSP Link reference as a research candidate only; no automatic official admission.'});
  }
- return registerPlanningFacts(result,observations);
+ result=await registerPlanningFacts(result,observations);
+ const outline=typeof module!=='undefined'?require('./sources/snowy-dcp-outline.json'):root.CsoiDcpOutline,clauses=typeof module!=='undefined'?require('./csoi-clauses.js'):root.AtlasCSOIClauses;
+ if(outline&&result.domain.sourceCatalogue.sources.some(s=>s.id===outline.sourceId)){
+  if(!clauses||outline.format!=='csoi-public-dcp-outline-1'||outline.originalBytesCommitted!==false)throw Error('DCP_OUTLINE_REQUIRED');
+  result=await clauses.registerOutline(result,{sourceId:outline.sourceId,sourceRevision:outline.sourceRevision,nodes:outline.nodes});
+  result=await registerReferenceMeasurements(result,outline);
+ }
+ return result;
+}
+async function registerReferenceMeasurements(dataset,outline){
+ let result=dataset;const source=result.domain.sourceCatalogue.sources.find(s=>s.id===outline.sourceId);
+ for(const reference of outline.referenceMeasurements){if(M.domainIndex(result).has(reference.id))continue;
+  if(Object.keys(reference).some(k=>!['id','clauseId','value','unit','role','label'].includes(k))||!Number.isFinite(reference.value)||reference.value<0||reference.unit!=='L/person/day')throw Error('DCP_REFERENCE_MEASUREMENT_INVALID');
+  const clause=M.domainIndex(result).get(reference.clauseId),data=clause?.data?.csoiRecord?.data;
+  if(!data?.dcpClause||data.sourceId!==source.id||data.sourceDigest!==source.rawDigest)throw Error('DCP_REFERENCE_CLAUSE_PIN');
+  const scope={region:source.geographicExtent.label,boundary:'HISTORICAL_DOCUMENT_REFERENCE_NOT_ACTUAL_OR_CURRENT_LAW',period:{from:source.retrievedAt.slice(0,10),to:source.retrievedAt.slice(0,10)}},measurement={value:reference.value,unit:reference.unit,role:reference.role,meaning:'HISTORICAL_DESIGN_REFERENCE_NOT_ACTUAL_OUTPUT_OR_CURRENT_OBLIGATION',area:scope.region,boundary:scope.boundary,period:scope.period,quantityNature:'REFERENCE_RATE',eligibleDenominator:'UNKNOWN'};
+  const record=await G.makeRecord({id:reference.id,ownerModule:'CSOI_OPERATIONS',security:'PUBLIC',layer:'L0',sourceClass:'INDEPENDENT_RESEARCH',judgment:'OBSERVATION',authority:'INDEPENDENT_RESEARCH',scope,inputs:[{id:source.id,revisionId:source.revisionId},{id:clause.id,revisionId:clause.revisionId}],data:{title:reference.label,summary:'Own observation of a historical document design rate, not actual demand, delivery, spend or a verified current duty. Source admission, actual population and outcome remain UNKNOWN/PENDING.',sourceId:source.id,sourceDigest:source.rawDigest,sourceClauseId:clause.id,measurement,actualDemand:'UNKNOWN',actualSpend:'UNKNOWN',actualOutcome:'UNKNOWN',legalApplicability:'UNKNOWN'},sensitivity:{personalData:false,confidential:false,reidentifiable:false},provenance:{contentMode:'RESEARCH_SUMMARY',url:source.officialUrl,locator:data.locator,sourceRevision:source.rawDigest,rights:{mode:'AUTHORED_RESEARCH',basis:'Bounded authored observation of numeric facts only. Original source reuse rights/current applicability/admission remain UNKNOWN/PENDING.'}},observedAt:source.retrievedAt});
+  result=await M.registerResearchRecord(result,{record,kind:'QuantifiedObservation',label:reference.label,stationId:'dcp',reason:'Retain independently traceable historical design reference; no operational calculation, current legal duty or actual result admitted.'});
+ }
+ return result;
 }
 async function registerPlanningFacts(dataset,observations){
  const observation=observations.observations.find(o=>o.id==='smrc-op-2026'),anchor=observation?.knowledgeAnchors.find(a=>a.id==='food-program-p27');
