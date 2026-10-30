@@ -19,150 +19,253 @@
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "核验最新 PR #130、NEXT_SESSION、V1.6 测试与最新资料访问记录；形成 DONE/PARTIAL/TODO/BLOCKED 基线矩阵，避免重写已有系统。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "qa/CSOI_BASELINE_MATRIX.md",
+        "qa/CSOI_TEST_MATRIX.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "核验最新 PR #130、NEXT_SESSION、V1.6 测试与最新资料访问记录；形成 DONE/PARTIAL/TODO/BLOCKED 基线矩阵，避免重写已有系统。"
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
     },
     {
       "id": "COI-002",
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "只在有权访问的范围清点 WCOS 已有 Annual Calendar、Guideline Reader、Premises/Task Card、Planning Queue、Execution Log、Annual Report、Decision Navigator；记录接口而不导出受保护内容。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "BLOCKED",
+      "actual_code_files": [
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "只在有权访问的范围清点 WCOS 已有 Annual Calendar、Guideline Reader、Premises/Task Card、Planning Queue、Execution Log、Annual Report、Decision Navigator；记录接口而不导出受保护内容。"
+      "blocker": "No independently authorised private WCOS technical contract/inventory; private records not accessed.",
+      "next_action": "Obtain a separately authorised abstract technical contract without protected data."
     },
     {
       "id": "COI-003",
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "明确 Atlas Core、CSOI Operations、WCOS Adapter、PHE Public Pack 的模块所有权、ID 边界和依赖方向。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "明确 Atlas Core、CSOI Operations、WCOS Adapter、PHE Public Pack 的模块所有权、ID 边界和依赖方向。"
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
     },
     {
       "id": "COI-004",
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "建立公开/个人私有/Council 受保护/获批准发布四层安全分类与跨层默认拒绝策略。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-governance.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "建立公开/个人私有/Council 受保护/获批准发布四层安全分类与跨层默认拒绝策略。"
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
     },
     {
       "id": "COI-005",
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "确立 Council 工作系统为其业务记录的权威来源，Atlas 是独立研究/工作支持系统，不能自行发出官方结论。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "确立 Council 工作系统为其业务记录的权威来源，Atlas 是独立研究/工作支持系统，不能自行发出官方结论。"
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
     },
     {
       "id": "COI-006",
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "建立来源许可、版权、员工/客户 PII、商业机密、小样本反识别、存储/截图/导入/导出检查。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-governance.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "建立来源许可、版权、员工/客户 PII、商业机密、小样本反识别、存储/截图/导入/导出检查。"
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
     },
     {
       "id": "COI-007",
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "完成统一逻辑 ID、版本 ID、时空范围、机构权限、事项、来源、事件、证据的类型契约和迁移计划。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas-domain.js",
+        "atlas-model.js",
+        "csoi-model.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "完成统一逻辑 ID、版本 ID、时空范围、机构权限、事项、来源、事件、证据的类型契约和迁移计划。"
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
     },
     {
       "id": "COI-008",
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "提交多页面站点架构和真正可运行的页面骨架，保留路线优先、原 127 项和原快照兼容。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-router.js",
+        "csoi-pages.js",
+        "csoi-pages.css",
+        "atlas.js",
+        "index.html",
+        "qa/csoi-browser.py"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "提交多页面站点架构和真正可运行的页面骨架，保留路线优先、原 127 项和原快照兼容。"
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
     },
     {
       "id": "COI-009",
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "制定每一 Pack 的软件能力/公开资料覆盖/人类审核准入三重验收状态与测试矩阵。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "qa/CSOI_TEST_MATRIX.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "制定每一 Pack 的软件能力/公开资料覆盖/人类审核准入三重验收状态与测试矩阵。"
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
     },
     {
       "id": "COI-010",
       "pack": "A",
       "pack_name": "既有资产、边界和架构",
       "title_and_scope": "完成基线、权限、页面导航和回归实际测试；提交 Push + NEXT_SESSION 后**立即继续 Pack B**。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "run-tests.cjs",
+        "qa/run-local-browser.py",
+        "qa/csoi-browser.py"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "remote_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "完成基线、权限、页面导航和回归实际测试；提交 Push + NEXT_SESSION 后**立即继续 Pack B**。"
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
     },
     {
       "id": "COI-011",
@@ -1214,5 +1317,17 @@
       "blocker": null,
       "next_action": "交付 Founder 验收报告、来源/权限缺口、工作链与定量验证、可用页面清单、软件与真实资料分别计分、下期目标；保留 Draft PR，不部署/合并。"
     }
-  ]
+  ],
+  "updated_at": "2026-10-30T01:13:00.668858+00:00",
+  "pack_assessments": {
+    "A": {
+      "pack": "A",
+      "software_status": "PARTIAL",
+      "corpus_status": "PARTIAL",
+      "admission_status": "PENDING",
+      "summary": "Nine Pack A tasks verified against code and actual native/Chromium evidence; COI-002 is BLOCKED for private WCOS inventory. New governance enforces orthogonal security/layers and public-channel checks, CSOI records use existing immutable Atlas entities, and 21 functional page shells preserve the route map/127 items/legacy snapshots. Calendar/assistant engines are deferred in this Pack A browser run. Full system is not complete.",
+      "next_executable": "COI-011 — append independently observed public source revisions and intake evidence",
+      "code_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac"
+    }
+  }
 }

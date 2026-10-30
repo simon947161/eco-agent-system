@@ -1,3 +1,17 @@
+# V1.7 Pack A checkpoint — PARTIAL
+
+Code/evidence commit: `85ebef1f2e9491804b5ae20e3aede6853ef16eac`. This continuity/registry commit follows it; resolve current remote HEAD after push.
+
+Nine Pack A tasks verified against code and actual native/Chromium evidence; COI-002 is BLOCKED for private WCOS inventory. New governance enforces orthogonal security/layers and public-channel checks, CSOI records use existing immutable Atlas entities, and 21 functional page shells preserve the route map/127 items/legacy snapshots. Calendar/assistant engines are deferred in this Pack A browser run. Full system is not complete.
+
+SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING. Task statuses are evidence-based and do not imply Council approval.
+
+Next executable task: **COI-011 — append independently observed public source revisions and intake evidence**. Continue the recovered V1.7 registry using the same model. Retain Draft PR #130; no deployment, merge, main/PR129 changes, protected business data or production WCOS writes.
+
+Assessment: `qa/csoi/pack-a-assessment.json`.
+
+--- Previous checkpoint ---
+
 # V1.7 HANDOFF RECOVERED — original 80-task plan and registry now on PR #130
 
 Date: 2026-10-30 Australia/Sydney. Original attached ZIP was recovered and examined. **Previous V1.7 handoff-missing blocker has been resolved for the engineering branch.** The earlier blocked report below is historical and must not cause further restart or re-upload requests.
