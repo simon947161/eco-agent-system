@@ -1,3 +1,19 @@
+# V1.7 Snowy River source checkpoint — PARTIAL
+
+Pushed code/evidence SHA and remote branch/PR130 readback: `598da2e819034be3e74097ef2bcd5cfcc8641305`. This continuity commit follows it; resolve latest remote HEAD on resume.
+
+Exact Snowy River DCP2013 Amendment3 PDF retrieved via inherited HTTPS/TLS: HTTP200,16,569,676bytes,465pages,SHA256 `f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d`,oneHTTPexchange. Source ID `csoi:smrc-dcp-snowy-2013-amend3:20261030`. Versiontable observes adoption16March2023/resolution58/23/commencement29March2023; A1§3historicalSnowyRiverLEP2013land excludesT2TyroleanStage3. No currentall-LGA/parcel legalfinding.
+
+Currentcorpus52records/31families;33byte receipts(13PDF/20HTML);26retrieved documents+7directories;25own notes/23sources. Prior51records/147events/37observations unchanged; immutable proof named in `qa/csoi/snowy-source-results.json`. Formalextraction/current-law/licence/admission0; officialrelationships0; actualCouncilKPI UNKNOWN. Gate statuses separate in that result. Jindabyne NOT_REQUESTED.
+
+PASS31/31native suites; affected desktop/390px source/hierarchy/E0snapshot/edit/conflict browser checks; independent3researchpageanchor verifier and4corruption negatives. Source PDF/tmp only; no originalbody committed. Report `qa/CSOI_SNOWY_SOURCE_RESULTS_20261030.md`. FullsystemPARTIAL; registry49VERIFIED/28PARTIAL/3BLOCKED unchanged.
+
+NEXT executable: integrate `csoi-clauses.js` (currently untracked partial work, notverified orshipped) into existingdomain verifier and knowledgeUI; build source-pinned ownfact outline withparentrevisions/conditions/exceptions and independentpagehashanchors from temporaryPDF. Then typed path-setcomparison and publicresearch-review work/calendar integration. Current sourceforlocalreading `/tmp/csoi-dcp-continued-20261030/`; can disappear. Re-fetch only exactregisteredlead ifneeded, preservebytes/hash/history. Do notturnclausematches intolegalobligations orCouncilassignments.
+
+LatestFounderPRexecutioncomment (30Oct2026) wasread: SnowyDCPfirst→recursiveclauses→typedpathsets→existingwork/accounting/calendar, source/currentlawgates separate. ThreeprivateWCOS tasksCOI002/031/040 staydeferred. No privateWCOS, Councilnonpublicdata, production/accounts, paidservice, deployment/merge/main/PR129changes. KeepPR130Draft.
+
+--- Previous checkpoint ---
+
 # V1.7 comparison checkpoint — PARTIAL
 
 Code/evidence commit and verified remote branch + PR130 head: `bb8c0f567cb8f0974aa37dd1cd9097b1a1314910`. This continuity commit follows it; resolve the current remote HEAD before new work. PR130 public Draft icon/label was observed (read-only); no deployment or merge.
