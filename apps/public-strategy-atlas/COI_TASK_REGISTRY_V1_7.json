@@ -872,150 +872,270 @@
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "读取已授权的 WCOS 技术契约，映射 Annual Calendar→Month→Week→Day→Task/Premises→Field Brief→Execution→Follow-up→Annual Report。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "BLOCKED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "读取已授权的 WCOS 技术契约，映射 Annual Calendar→Month→Week→Day→Task/Premises→Field Brief→Execution→Follow-up→Annual Report。"
+      "blocker": "Original private WCOS technical contract and non-destructive compatibility environment were not supplied or accessed.",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-032",
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "写只读、默认不传真实资料的 WCOS Adapter，首个示例只处理模拟场所、公开规则、合成工时和已授权的非识别性汇总。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "写只读、默认不传真实资料的 WCOS Adapter，首个示例只处理模拟场所、公开规则、合成工时和已授权的非识别性汇总。"
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-033",
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "接入公开 NSW LTW 2021 Guidelines 的章节、分类 A/B/C/S、排放类型、设施、批准及 concurrence 等规则，保存准确来源和适用条件。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "接入公开 NSW LTW 2021 Guidelines 的章节、分类 A/B/C/S、排放类型、设施、批准及 concurrence 等规则，保存准确来源和适用条件。"
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-034",
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "建 LTW 实务链：登记/初筛→补件→分类/许可与 concurrence 证据→现场→预处理→监测→整改/复检→关闭/报告；禁止 AI 作正式审批。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "建 LTW 实务链：登记/初筛→补件→分类/许可与 concurrence 证据→现场→预处理→监测→整改/复检→关闭/报告；禁止 AI 作正式审批。"
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-035",
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "以 Council 公布的 Backflow 要求建水连接点、风险级别、装置、到期检测、缺陷维修、合规状态、通知和结案模型。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "以 Council 公布的 Backflow 要求建水连接点、风险级别、装置、到期检测、缺陷维修、合规状态、通知和结案模型。"
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-036",
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "将 Backflow 年度检查/准备与日历的排程逻辑结合，按真实装置类型和适用条件计算到期，不对所有物业默认同样义务。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "将 Backflow 年度检查/准备与日历的排程逻辑结合，按真实装置类型和适用条件计算到期，不对所有物业默认同样义务。"
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-037",
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "将 WCOS Decision Navigator 的 RULE / EVIDENCE_INFERENCE / DISCRETION / FORMAL_DECISION 四层接入治理/审核结构。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "将 WCOS Decision Navigator 的 RULE / EVIDENCE_INFERENCE / DISCRETION / FORMAL_DECISION 四层接入治理/审核结构。"
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-038",
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "实现“同一模拟餐饮场所可能涉及 Food/LTW/Backflow”条件化交叉检索，负例确保不是所有场所都默认需三项审批。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "实现“同一模拟餐饮场所可能涉及 Food/LTW/Backflow”条件化交叉检索，负例确保不是所有场所都默认需三项审批。"
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-039",
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "开发安全只读汇总：合规监管对象、应检数、已检数、复核、工时和风险；必须标来源/分母、抑制小样本数据。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "开发安全只读汇总：合规监管对象、应检数、已检数、复核、工时和风险；必须标来源/分母、抑制小样本数据。"
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-040",
       "pack": "D",
       "pack_name": "WCOS、LTW、Backflow 与 Annual Calendar 桥接",
       "title_and_scope": "运行原 WCOS 和 Outlook Calendar 不破坏性兼容演练；不触碰真实同步、私有正式版本或用户实际排班，然后提交继续 Pack E。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "BLOCKED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "remote_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "运行原 WCOS 和 Outlook Calendar 不破坏性兼容演练；不触碰真实同步、私有正式版本或用户实际排班，然后提交继续 Pack E。"
+      "blocker": "Original private WCOS technical contract and non-destructive compatibility environment were not supplied or accessed.",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
     },
     {
       "id": "COI-041",
@@ -1618,7 +1738,7 @@
       "next_action": "交付 Founder 验收报告、来源/权限缺口、工作链与定量验证、可用页面清单、软件与真实资料分别计分、下期目标；保留 Draft PR，不部署/合并。"
     }
   ],
-  "updated_at": "2026-10-30T01:26:46.674873+00:00",
+  "updated_at": "2026-10-30T01:31:50.808486+00:00",
   "pack_assessments": {
     "A": {
       "pack": "A",
@@ -1646,6 +1766,15 @@
       "summary": "Added the functioning Data & evidence workspace over existing Atlas entities: L0 identities, L1 separate property/activity/device/event IDs, L2 rule/inference/discretion, L3 pinned reproducible calculations, L4 defined coverage and L5 draft sharing review. Nine tasks verified; formal Council decision representation is PARTIAL because authority is unavailable. Final26 native files PASS. Desktop/mobile builds a 6/10 synthetic work-coverage chain, withdraws its source, invalidates descendants, and independently verifies historical exports. Re-signing false calculation arithmetic is rejected by formula replay. No security class is downgraded by an analytical layer.",
       "next_executable": "COI-031 — safe read-only WCOS/LTW/Backflow contracts and conditional applicability",
       "code_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d"
+    },
+    "D": {
+      "pack": "D",
+      "software_status": "PARTIAL",
+      "corpus_status": "PARTIAL",
+      "admission_status": "PENDING",
+      "summary": "Delivered read-only abstract WCOS adapter, a ten-stage LTW research workflow, conditional Food/LTW/Backflow assessment and device/date/scope-specific scheduling checks. All26 native files and desktop/mobile workflow tests PASS. Three tasks VERIFIED, five PARTIAL, two original/private compatibility tasks BLOCKED. No production WCOS, real Outlook, customer data, universal device obligation or formal decision is introduced.",
+      "next_executable": "COI-041 — source-backed public PHE domain knowledge and conditional work chains",
+      "code_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea"
     }
   }
 }

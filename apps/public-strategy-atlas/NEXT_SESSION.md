@@ -1,3 +1,17 @@
+# V1.7 Pack D checkpoint — PARTIAL
+
+Code/evidence commit: `5d73de1945252e3435abbd21e45f53e940e2cfea`. This continuity/registry commit follows it; resolve current remote HEAD after push.
+
+Delivered read-only abstract WCOS adapter, a ten-stage LTW research workflow, conditional Food/LTW/Backflow assessment and device/date/scope-specific scheduling checks. All26 native files and desktop/mobile workflow tests PASS. Three tasks VERIFIED, five PARTIAL, two original/private compatibility tasks BLOCKED. No production WCOS, real Outlook, customer data, universal device obligation or formal decision is introduced.
+
+SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING. Task statuses are evidence-based and do not imply Council approval.
+
+Next executable task: **COI-041 — source-backed public PHE domain knowledge and conditional work chains**. Continue the recovered V1.7 registry using the same model. Retain Draft PR #130; no deployment, merge, main/PR129 changes, protected business data or production WCOS writes.
+
+Assessment: `qa/csoi/pack-d-assessment.json`.
+
+--- Previous checkpoint ---
+
 # V1.7 Pack C checkpoint — PARTIAL
 
 Code/evidence commit: `c51d7935285e0d7c7c45428edaa003fc9fcaba1d`. This continuity/registry commit follows it; resolve current remote HEAD after push.
