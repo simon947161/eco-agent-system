@@ -1,3 +1,17 @@
+# V1.7 Pack C checkpoint — PARTIAL
+
+Code/evidence commit: `c51d7935285e0d7c7c45428edaa003fc9fcaba1d`. This continuity/registry commit follows it; resolve current remote HEAD after push.
+
+Added the functioning Data & evidence workspace over existing Atlas entities: L0 identities, L1 separate property/activity/device/event IDs, L2 rule/inference/discretion, L3 pinned reproducible calculations, L4 defined coverage and L5 draft sharing review. Nine tasks verified; formal Council decision representation is PARTIAL because authority is unavailable. Final26 native files PASS. Desktop/mobile builds a 6/10 synthetic work-coverage chain, withdraws its source, invalidates descendants, and independently verifies historical exports. Re-signing false calculation arithmetic is rejected by formula replay. No security class is downgraded by an analytical layer.
+
+SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING. Task statuses are evidence-based and do not imply Council approval.
+
+Next executable task: **COI-031 — safe read-only WCOS/LTW/Backflow contracts and conditional applicability**. Continue the recovered V1.7 registry using the same model. Retain Draft PR #130; no deployment, merge, main/PR129 changes, protected business data or production WCOS writes.
+
+Assessment: `qa/csoi/pack-c-assessment.json`.
+
+--- Previous checkpoint ---
+
 # V1.7 Pack B checkpoint — PARTIAL
 
 Code/evidence commit: `a06f0f03ee39d78a40695b2636a97fab49bcd4f3`. This continuity/registry commit follows it; resolve current remote HEAD after push.

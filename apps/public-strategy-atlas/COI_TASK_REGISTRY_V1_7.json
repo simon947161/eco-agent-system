@@ -572,150 +572,300 @@
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "L0：支持授权原件与公开原文的记录身份和版本，敏感原件原地保留，公共 GitHub 仅存合法元数据与短摘录。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "L0：支持授权原件与公开原文的记录身份和版本，敏感原件原地保留，公共 GitHub 仅存合法元数据与短摘录。"
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-022",
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "L1：对象与事件 ID 清洗，支持同物业多个业务活动、不同场所/水连接点/装置及历史身份去重。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "L1：对象与事件 ID 清洗，支持同物业多个业务活动、不同场所/水连接点/装置及历史身份去重。"
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-023",
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "L2：证据、规则、观察、研究推断、人为裁量、正式决定分栏保存，含反证与 UNKNOWN。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "L2：证据、规则、观察、研究推断、人为裁量、正式决定分栏保存，含反证与 UNKNOWN。"
+      "blocker": "Formal Council decision records require separately authorised authority and remain unsupported on public channels.",
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-024",
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "L3：计算公式、计量单位、时空口径、分子/分母、输入版本与收据绑定，变动后必须失效重算。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "L3：计算公式、计量单位、时空口径、分子/分母、输入版本与收据绑定，变动后必须失效重算。"
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-025",
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "L4：管理统计有明确定义的分母、抽样覆盖率、数据质量和权限标记；“未检查”不等于“合规”。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "L4：管理统计有明确定义的分母、抽样覆盖率、数据质量和权限标记；“未检查”不等于“合规”。"
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-026",
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "L5：生成审批待办与可分享数据审查流程；研究版 CSP 关联与 Council 正式报送保持不同身份。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "L5：生成审批待办与可分享数据审查流程；研究版 CSP 关联与 Council 正式报送保持不同身份。"
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-027",
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "所有跨层升格要有质量核验、责任角色和撤回/重算事件，权限升格另有独立审查。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "所有跨层升格要有质量核验、责任角色和撤回/重算事件，权限升格另有独立审查。"
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-028",
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "自动检测缺失、重复、错单位、时间地域不一致、来源冲突、过期法规、错误统计分母及重复计数。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "自动检测缺失、重复、错单位、时间地域不一致、来源冲突、过期法规、错误统计分母及重复计数。"
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-029",
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "将层级数据并入现有 Atlas 内容寻址、事件链、快照、独立复验和可兼容迁移；不可创建第二正式图谱。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "将层级数据并入现有 Atlas 内容寻址、事件链、快照、独立复验和可兼容迁移；不可创建第二正式图谱。"
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-030",
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "实测拒绝未授权公布、修订回放、历史兼容和跨层来源追溯；提交并继续 Pack D。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "实测拒绝未授权公布、修订回放、历史兼容和跨层来源追溯；提交并继续 Pack D。"
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
     },
     {
       "id": "COI-031",
@@ -1468,7 +1618,7 @@
       "next_action": "交付 Founder 验收报告、来源/权限缺口、工作链与定量验证、可用页面清单、软件与真实资料分别计分、下期目标；保留 Draft PR，不部署/合并。"
     }
   ],
-  "updated_at": "2026-10-30T01:21:03.171431+00:00",
+  "updated_at": "2026-10-30T01:26:46.674873+00:00",
   "pack_assessments": {
     "A": {
       "pack": "A",
@@ -1487,6 +1637,15 @@
       "summary": "Appended22actualpublicsourceobservations to original source register without rewriting15legacyrecords/events:37registerrecords,23documentrevisions+1directory,21retrieveddocuments+1retrieveddirectory,22uniqueURLs.27URLattempts;22HTTP200byteverified;18sourceswithboundedauthorednotes. OPpage27 plannedfoodprogram6.1/168optimal/84funded/84target/98percentserviceKPIisavailableasattributedresearch,notactualresults. Rights/extraction/currentlegalconfirmation/officialadmission remain0. DPv2.4currentdirectorydateconflict and annualreporttransfercapare retained. Three software/intake-page tasks VERIFIED; seven deeper corpus/relationship tasks PARTIAL.",
       "next_executable": "COI-021 — integrate layered quality/evidence transformations in the same Atlas registry",
       "code_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3"
+    },
+    "C": {
+      "pack": "C",
+      "software_status": "PARTIAL",
+      "corpus_status": "PARTIAL",
+      "admission_status": "PENDING",
+      "summary": "Added the functioning Data & evidence workspace over existing Atlas entities: L0 identities, L1 separate property/activity/device/event IDs, L2 rule/inference/discretion, L3 pinned reproducible calculations, L4 defined coverage and L5 draft sharing review. Nine tasks verified; formal Council decision representation is PARTIAL because authority is unavailable. Final26 native files PASS. Desktop/mobile builds a 6/10 synthetic work-coverage chain, withdraws its source, invalidates descendants, and independently verifies historical exports. Re-signing false calculation arithmetic is rejected by formula replay. No security class is downgraded by an analytical layer.",
+      "next_executable": "COI-031 — safe read-only WCOS/LTW/Backflow contracts and conditional applicability",
+      "code_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d"
     }
   }
 }
