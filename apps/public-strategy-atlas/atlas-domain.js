@@ -45,6 +45,8 @@ async function verify(d,m){
  try{
   const x=d.domain;if(!x)return true;if(validate(d).length||x.baseDigest!==await m.objectDigest(legacyBase(d))||!await m.verifyEvents(x.events)||x.events.length!==x.revisions.length)return false;
   if(x.sourceCatalogue){const intake=typeof module!=='undefined'?require('./atlas-intake.js'):root.AtlasIntake;if(!intake||!await intake.verifyCatalogue(x.sourceCatalogue))return false;}
+  const csoiRecords=x.revisions.filter(r=>r.record?.data?.csoiRecord).map(r=>r.record.data.csoiRecord);
+  if(csoiRecords.length){const governance=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;if(!governance)return false;for(const record of csoiRecords)if(!await governance.verifyRecord(record)||!governance.assessPublic(record,{operation:'STORAGE'}).allowed)return false;}
   const seen=new Set();
   for(let i=0;i<x.revisions.length;i++){
    const r=x.revisions[i],{id,...payload}=r;
@@ -132,6 +134,24 @@ async function registerScenario(d,m,{id,kind,label,stationId,data,scope,reason})
  const result=structuredClone(d);result.domain.entities.push(await addRevision(result.domain,{id,kind,label,stationId,data,scope:scope||{region:data.area||'UNKNOWN',period:data.period||'UNKNOWN',boundary:data.boundary||'UNKNOWN'},state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,gaps:['User-authored synthetic scenario; not Council facts or official performance.']},m,{reason}));
  if(!await verify(result,m))throw Error('INVALID_SCENARIO');return result;
 }
+async function registerResearchRecord(d,m,{record,kind='ContentBlock',label,stationId,reason}){
+ const governance=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;
+ if(!governance||!await governance.verifyRecord(record)||!governance.assessPublic(record,{operation:'STORAGE'}).allowed)throw Error('CSOI_PUBLIC_RECORD_REQUIRED');
+ if(!await verify(d,m)||index(d).has(record.id)||!TYPES.has(kind)||['ReviewDecision','AuditReceipt','DiscoveryHypothesis'].includes(kind)||!d.nodes.some(n=>n.id===stationId)||!label||!reason)throw Error('CSOI_REGISTRATION_INVALID');
+ if(!researchInputsPresent(d,record))throw Error('CSOI_INPUT_REVISION_MISSING');
+ const synthetic=record.sourceClass==='SYNTHETIC',result=structuredClone(d);
+ result.domain.entities.push(await addRevision(result.domain,{id:record.id,kind,label,stationId,data:{status:synthetic?'SYNTHETIC':'PUBLIC_TEXT_OBSERVED',csoiRecord:structuredClone(record)},scope:record.scope,state:synthetic?'PROPOSED':'SOURCE_OBSERVED',classification:synthetic?'SYNTHETIC_SCENARIO':'LOCAL_RESEARCH',admission:synthetic?'NOT_APPLICABLE':'PENDING',provenance:synthetic?null:record.provenance,gaps:['Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship.']},m,{reason,observedAt:record.observedAt}));
+ if(!await verify(result,m))throw Error('CSOI_REGISTRATION_INVALID');return result;
+}
+async function reviseResearchRecord(d,m,{id,expectedRevisionId,record,reason}){
+ const governance=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance,old=d.domain?.entities.find(e=>e.id===id);
+ if(!await verify(d,m)||!old?.data?.csoiRecord||old.revisionId!==expectedRevisionId||record?.id!==id||!reason)throw Error('CSOI_REVISION_CONFLICT');
+ if(!governance||!await governance.verifyRecord(record)||!governance.assessPublic(record,{operation:'STORAGE'}).allowed||record.security!==old.data.csoiRecord.security||record.sourceClass!==old.data.csoiRecord.sourceClass||record.ownerModule!==old.data.csoiRecord.ownerModule)throw Error('CSOI_PUBLIC_RECORD_REQUIRED');
+ if(!researchInputsPresent(d,record))throw Error('CSOI_INPUT_REVISION_MISSING');
+ const {revisionId,...payload}=old,result=structuredClone(d),next=await addRevision(result.domain,{...payload,scope:record.scope,provenance:old.classification==='SYNTHETIC_SCENARIO'?null:record.provenance,data:{...payload.data,csoiRecord:structuredClone(record)}},m,{parentRevision:revisionId,reason,observedAt:record.observedAt,type:'REVIEW'});
+ result.domain.entities=result.domain.entities.map(e=>e.id===id?next:e);if(!await verify(result,m))throw Error('CSOI_REVISION_INVALID');return result;
+}
+function researchInputsPresent(d,record){return record.inputs.every(input=>d.domain.revisions.some(revision=>revision.logicalId===input.id&&(revision.id===input.revisionId||revision.record.data?.csoiRecord?.revisionId===input.revisionId))||(d.domain.sourceCatalogue?.sources||[]).some(source=>source.id===input.id&&source.revisionId===input.revisionId));}
 async function appendCalculation(d,m,receipt){
  const execution=typeof module!=='undefined'?require('./atlas-execution.js'):root.AtlasExecution;
  if(!await verify(d,m)||!(await execution.verifyDerivation(d,receipt)).current)throw Error('DERIVATION_NOT_CURRENT');
@@ -143,5 +163,5 @@ async function appendCalculation(d,m,receipt){
  return result;
 }
 function forStation(d,id){return {stationId:id,entities:(d.domain?.entities||[]).filter(e=>e.stationId===id),assertions:(d.domain?.assertions||[]).filter(e=>e.stationId===id),trust:'SELF_ATTESTED',signature:'RECEIPT_NOT_PRESENT',witness:'EXTERNAL_WITNESS_UNKNOWN'};}
-root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,recordResearchReview,registerScenario,appendCalculation,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
+root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,recordResearchReview,registerScenario,registerResearchRecord,reviseResearchRecord,appendCalculation,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
 })(typeof window!=='undefined'?window:globalThis);
