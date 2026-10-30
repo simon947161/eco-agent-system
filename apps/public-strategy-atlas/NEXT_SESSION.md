@@ -1,3 +1,17 @@
+# V1.7 typed path-set checkpoint — PARTIAL
+
+Pushedcode/evidence and remote branch/PR130head: `3bc35c18c5e8700d74f919d43077b5c532b940e3`. Resolve latestremoteHEAD onresume;continuitycommitfollowsthiscode.
+
+Typed path-set comparison now at /#/compare/paths: up to4paths/side,32nodes/path, exact current/historical node+relationship pins, assertions and governedinputlineage, evidence/counterevidence, sourcewithdrawal, legacylabelgaps and typedmatching-role geography/time/legal/unit/denominator/finance checks. Structured traversal retains9-node DCPquantity→clauseancestry→source. Missinglinks/unpairedrecords UNKNOWN; operationaluseREJECTED_UNKNOWN_ADMISSION; no arithmetic, graphmutation or officialpromotion. Standalone `node verify-paths.cjs SNAPSHOT.json PATH_COMPARISON.json` recomputesproofs/results. Historicalproof survives sourcewithdrawal whilecurrentuseinvalidates, includingevidence-onlysources.
+
+PASS33/33nativefiles; targetedwithdrawal/admissionnegatives; actualdesktop/390px proofexport+independentverification;24routes×5viewports. Report qa/CSOI_PATH_RESULTS_20261030.md; results qa/csoi/path-results.json. Corpusunchanged52records/33byte receipts;30clauses/3historicaldesignrefs;default93entities/48assertions. FullsystemPARTIAL;49VERIFIED/28PARTIAL/3BLOCKED; officialrelationships0/currentlaw-rights-admissionpending.
+
+NEXT executable: source-review work/card/calendar integration. Register separatelytyped PUBLIC independent research-review plans in SAMEdomain, pinned to source+clause versions, with user-chosen date and ASSUMEDplannedhours; actualhours/spend/resultsUNKNOWN, approvalpending, noCouncilassignment/accounts. ProjectasSOURCE_REVIEW nodes into existingAnnualEdition day/week/month/year; do not relabelPUBLICCouncilrecords asSYNTHETIC csoiTask to bypassguards. AddsourceClause→reviewform/workcard→calendar→source/pathproof links and meaningfulnegative/export/browsertests. Continue permittedpublic engineering; privateWCOSCOI002/031/040 deferred.
+
+KeepPR130Draft; no deploy/merge/main/PR129changes, Councilnonpublic/privateWCOS/accountdata, procurement orformaldecisions.
+
+--- Previous checkpoint ---
+
 # V1.7 recursive clause checkpoint — PARTIAL
 
 Pushed code/evidence and remote branch+PR130head: `d8a8ae85c9ec0852a558af83612bdc36bcecbe51`. This continuity commit follows it; resolve latest remote HEAD on resume.
