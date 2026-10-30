@@ -312,6 +312,7 @@ const issues=m.validate(d);if(issues.length){details.textContent='DATA_INVALID: 
 if(typeof CsoiPages!=='undefined')CsoiPages.mount({
  getDataset:()=>d,openContent,openStation:inspectNode,openSources:intakePanel,openAudit:auditPanel,openDiscovery:()=>discoveryPanel(),openCoverage:intakePanel,openWorkspace:workspacePanel,
  buildLayers:async()=>{if(m.domainIndex(d).has('csoi:demo:work-coverage'))throw Error('LAYER_RUN_ALREADY_REGISTERED');const result=await AtlasCSOILayers.demo(d);d=result.dataset;return result;},
+ calculate:async request=>{const receipt=await AtlasExecution.derive(d,request);d=await m.appendCalculation(d,receipt);return receipt;},
  withdrawLayer:async(id,reason)=>{const old=AtlasCSOILayers.find(d,id);const record=await AtlasCSOILayers.revise(old,{state:'WITHDRAWN',reason,observedAt:new Date().toISOString()});d=await AtlasCSOILayers.register(d,record);return d;},
  openPublicItem:id=>{if(contentById.has(id))openContent(id);else if(byId.has(id))inspectNode(id);else if(m.domainIndex(d).has(id))domainEntity(id);},
  registerScenario:async options=>{const violations=AtlasCSOIGovernance.inspectPayload(options);if(violations.length)throw Error('CSOI_PUBLIC_DENIED:'+violations.join(','));d=await m.registerScenario(d,options);render();$('appStatus').textContent='Synthetic research record appended in memory. Export snapshot explicitly to retain; no Council action or automatic save.';return d;}

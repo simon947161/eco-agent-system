@@ -152,6 +152,13 @@ async function reviseResearchRecord(d,m,{id,expectedRevisionId,record,reason}){
  result.domain.entities=result.domain.entities.map(e=>e.id===id?next:e);if(!await verify(result,m))throw Error('CSOI_REVISION_INVALID');return result;
 }
 function researchInputsPresent(d,record){return record.inputs.every(input=>d.domain.revisions.some(revision=>revision.logicalId===input.id&&(revision.id===input.revisionId||revision.record.data?.csoiRecord?.revisionId===input.revisionId))||(d.domain.sourceCatalogue?.sources||[]).some(source=>source.id===input.id&&source.revisionId===input.revisionId));}
+async function registerResearchLink(d,m,{id,from,to,reason}){
+ if(!await verify(d,m)||!id||index(d).has(id)||[...d.assertions,...d.domain.assertions].some(a=>a.id===id)||!reason)throw Error('RESEARCH_LINK_INVALID');
+ const a=index(d).get(from),b=index(d).get(to),record=a?.data?.csoiRecord,source=d.domain.sourceCatalogue?.sources.find(s=>s.id===record?.data?.sourceId);
+ if(!a||!b||!record||record.sourceClass!=='INDEPENDENT_RESEARCH'||!source||source.rawDigest!==record.provenance.sourceRevision||source.officialUrl!==record.provenance.url)throw Error('RESEARCH_SOURCE_REFERENCE_REQUIRED');
+ const result=structuredClone(d);result.domain.assertions.push(await addRevision(result.domain,{id,from,to,fromRevisionId:a.revisionId,toRevisionId:b.versionId||b.revisionId,predicate:'RESEARCH_CANDIDATE',method:'source-reported-reference-pending-review-1',issuer:'local-researcher',reviewer:null,evidenceRefs:[{sourceId:source.id,sourceRevision:source.revisionId,url:source.officialUrl,locator:record.provenance.locator,rawDigest:source.rawDigest}],counterevidenceRefs:[{reason:'Target Atlas station is a research projection. Formal adoption, current applicability and official relationship admission remain unverified.'}],stationId:a.stationId,classification:'LOCAL_RESEARCH',state:'PROPOSED',admission:'PENDING',provenance:record.provenance,scope:record.scope,gaps:['Source-reported cross-reference retained as a candidate only; not an official implementation or causal claim.']},m,{reason,observedAt:record.observedAt}));
+ if(!await verify(result,m))throw Error('RESEARCH_LINK_INVALID');return result;
+}
 async function appendCalculation(d,m,receipt){
  const execution=typeof module!=='undefined'?require('./atlas-execution.js'):root.AtlasExecution;
  if(!await verify(d,m)||!(await execution.verifyDerivation(d,receipt)).current)throw Error('DERIVATION_NOT_CURRENT');
@@ -163,5 +170,5 @@ async function appendCalculation(d,m,receipt){
  return result;
 }
 function forStation(d,id){return {stationId:id,entities:(d.domain?.entities||[]).filter(e=>e.stationId===id),assertions:(d.domain?.assertions||[]).filter(e=>e.stationId===id),trust:'SELF_ATTESTED',signature:'RECEIPT_NOT_PRESENT',witness:'EXTERNAL_WITNESS_UNKNOWN'};}
-root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,recordResearchReview,registerScenario,registerResearchRecord,reviseResearchRecord,appendCalculation,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
+root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,recordResearchReview,registerScenario,registerResearchRecord,reviseResearchRecord,registerResearchLink,appendCalculation,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
 })(typeof window!=='undefined'?window:globalThis);
