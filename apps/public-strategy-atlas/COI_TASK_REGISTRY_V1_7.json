@@ -272,150 +272,300 @@
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "从官方目录独立核验现行 CSP 2035、DP 2025–29（2026 修订）、OP 2026–27、资源战略/财务/资产计划和年度报告的具体版本与日期。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "从官方目录独立核验现行 CSP 2035、DP 2025–29（2026 修订）、OP 2026–27、资源战略/财务/资产计划和年度报告的具体版本与日期。"
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
     },
     {
       "id": "COI-012",
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "收集官方 LSPS 2020 与适用 LEP/DCP/SEPP 的法规、地图、地域和生效版本；不得把战略一致性推为自动法定执行关系。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "收集官方 LSPS 2020 与适用 LEP/DCP/SEPP 的法规、地图、地域和生效版本；不得把战略一致性推为自动法定执行关系。"
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
     },
     {
       "id": "COI-013",
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "建立可检索 Source Register：URL、标题、出版社、版本、采用/生效/提取时间、地域、复用权、原始文件哈希、页/表/条款定位。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "建立可检索 Source Register：URL、标题、出版社、版本、采用/生效/提取时间、地域、复用权、原始文件哈希、页/表/条款定位。"
+      "next_action": "Preserve staged public evidence and advance Pack C."
     },
     {
       "id": "COI-014",
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "运行分阶段 intake：目录→合法获取→字节验证→内容/表格提取→确切锚点→版本范围→人工待审；不能自动升格 ADMITTED。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "运行分阶段 intake：目录→合法获取→字节验证→内容/表格提取→确切锚点→版本范围→人工待审；不能自动升格 ADMITTED。"
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
     },
     {
       "id": "COI-015",
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "在有确切证据时建立 CSP→DP→OP 类型化关联、工作/资金条目，并显示没有关联的战略目标。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "在有确切证据时建立 CSP→DP→OP 类型化关联、工作/资金条目，并显示没有关联的战略目标。"
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
     },
     {
       "id": "COI-016",
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "将 LSPS→土地使用行动→LEP/DCP 作为独立空间规划路径，检查地方旧 LEP、日期与地域，保留未知。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "将 LSPS→土地使用行动→LEP/DCP 作为独立空间规划路径，检查地方旧 LEP、日期与地域，保留未知。"
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
     },
     {
       "id": "COI-017",
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "建立 NSW Food Authority、NSW Health Public Health、NSW LTW Guidelines、饮用水/Backflow、OSSM 的公开权威资料登记。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "建立 NSW Food Authority、NSW Health Public Health、NSW LTW Guidelines、饮用水/Backflow、OSSM 的公开权威资料登记。"
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
     },
     {
       "id": "COI-018",
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "把每一法规/指引拆成义务、前提、适用对象、风险、例外、来源与人类裁量点，不编 Council 内部程序。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "把每一法规/指引拆成义务、前提、适用对象、风险、例外、来源与人类裁量点，不编 Council 内部程序。"
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
     },
     {
       "id": "COI-019",
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "建立可实测公开语料覆盖率和缺口队列，区分目录、字节、提取、条款、复用权、准入和法定审核。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "建立可实测公开语料覆盖率和缺口队列，区分目录、字节、提取、条款、复用权、准入和法定审核。"
+      "next_action": "Preserve staged public evidence and advance Pack C."
     },
     {
       "id": "COI-020",
       "pack": "B",
       "pack_name": "公开 CSP/规划/PHE 法规来源",
       "title_and_scope": "交付来源支持的真实知识页、版本/页码追溯与负例测试；即使部分 PDF 未获许可，也继续非受阻研发并进入 Pack C。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "交付来源支持的真实知识页、版本/页码追溯与负例测试；即使部分 PDF 未获许可，也继续非受阻研发并进入 Pack C。"
+      "next_action": "Preserve staged public evidence and advance Pack C."
     },
     {
       "id": "COI-021",
@@ -1318,7 +1468,7 @@
       "next_action": "交付 Founder 验收报告、来源/权限缺口、工作链与定量验证、可用页面清单、软件与真实资料分别计分、下期目标；保留 Draft PR，不部署/合并。"
     }
   ],
-  "updated_at": "2026-10-30T01:13:00.668858+00:00",
+  "updated_at": "2026-10-30T01:21:03.171431+00:00",
   "pack_assessments": {
     "A": {
       "pack": "A",
@@ -1328,6 +1478,15 @@
       "summary": "Nine Pack A tasks verified against code and actual native/Chromium evidence; COI-002 is BLOCKED for private WCOS inventory. New governance enforces orthogonal security/layers and public-channel checks, CSOI records use existing immutable Atlas entities, and 21 functional page shells preserve the route map/127 items/legacy snapshots. Calendar/assistant engines are deferred in this Pack A browser run. Full system is not complete.",
       "next_executable": "COI-011 — append independently observed public source revisions and intake evidence",
       "code_sha": "85ebef1f2e9491804b5ae20e3aede6853ef16eac"
+    },
+    "B": {
+      "pack": "B",
+      "software_status": "PARTIAL",
+      "corpus_status": "PARTIAL",
+      "admission_status": "PENDING",
+      "summary": "Appended22actualpublicsourceobservations to original source register without rewriting15legacyrecords/events:37registerrecords,23documentrevisions+1directory,21retrieveddocuments+1retrieveddirectory,22uniqueURLs.27URLattempts;22HTTP200byteverified;18sourceswithboundedauthorednotes. OPpage27 plannedfoodprogram6.1/168optimal/84funded/84target/98percentserviceKPIisavailableasattributedresearch,notactualresults. Rights/extraction/currentlegalconfirmation/officialadmission remain0. DPv2.4currentdirectorydateconflict and annualreporttransfercapare retained. Three software/intake-page tasks VERIFIED; seven deeper corpus/relationship tasks PARTIAL.",
+      "next_executable": "COI-021 — integrate layered quality/evidence transformations in the same Atlas registry",
+      "code_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3"
     }
   }
 }

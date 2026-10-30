@@ -1,3 +1,17 @@
+# V1.7 Pack B checkpoint — PARTIAL
+
+Code/evidence commit: `a06f0f03ee39d78a40695b2636a97fab49bcd4f3`. This continuity/registry commit follows it; resolve current remote HEAD after push.
+
+Appended22actualpublicsourceobservations to original source register without rewriting15legacyrecords/events:37registerrecords,23documentrevisions+1directory,21retrieveddocuments+1retrieveddirectory,22uniqueURLs.27URLattempts;22HTTP200byteverified;18sourceswithboundedauthorednotes. OPpage27 plannedfoodprogram6.1/168optimal/84funded/84target/98percentserviceKPIisavailableasattributedresearch,notactualresults. Rights/extraction/currentlegalconfirmation/officialadmission remain0. DPv2.4currentdirectorydateconflict and annualreporttransfercapare retained. Three software/intake-page tasks VERIFIED; seven deeper corpus/relationship tasks PARTIAL.
+
+SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING. Task statuses are evidence-based and do not imply Council approval.
+
+Next executable task: **COI-021 — integrate layered quality/evidence transformations in the same Atlas registry**. Continue the recovered V1.7 registry using the same model. Retain Draft PR #130; no deployment, merge, main/PR129 changes, protected business data or production WCOS writes.
+
+Assessment: `qa/csoi/pack-b-assessment.json`.
+
+--- Previous checkpoint ---
+
 # V1.7 Pack A checkpoint — PARTIAL
 
 Code/evidence commit: `85ebef1f2e9491804b5ae20e3aede6853ef16eac`. This continuity/registry commit follows it; resolve current remote HEAD after push.
