@@ -4,7 +4,7 @@
 const ROUTES=Object.freeze([
  ['atlas','/atlas'],['knowledge','/knowledge/:id'],['strategy','/strategy'],['strategy-detail','/strategy/:id'],
  ['wcos','/domains/wcos'],['wcos-domain','/domains/wcos/:domain'],['phe','/domains/phe'],['phe-domain','/domains/phe/:domain'],
- ['operations','/operations'],['operation','/operations/:id'],['calendar','/calendar'],['calendar-item','/calendar/:id'],
+ ['data','/data'],['data-record','/data/:id'],['operations','/operations'],['operation','/operations/:id'],['calendar','/calendar'],['calendar-item','/calendar/:id'],
  ['metrics','/metrics'],['metric','/metrics/:id'],['resources','/resources'],['resource','/resources/:id'],
  ['sources','/sources'],['source','/sources/:id'],['discovery','/discovery'],['audit','/audit'],['coverage','/coverage'],['assistant','/assistant']
 ].map(([name,pattern])=>Object.freeze({name,pattern})));

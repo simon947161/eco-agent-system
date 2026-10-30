@@ -2,8 +2,8 @@
 (function(root){
 'use strict';
 const R=typeof module!=='undefined'?require('./csoi-router.js'):root.CsoiRouter;
-const NAV=[['Route map','/atlas'],['Strategy','/strategy'],['WCOS','/domains/wcos'],['PHE knowledge','/domains/phe'],['Operations','/operations'],['Calendar','/calendar'],['Metrics','/metrics'],['Resources','/resources'],['Sources','/sources'],['Discovery','/discovery'],['Audit','/audit'],['Coverage','/coverage'],['Michele drafts','/assistant']];
-const TITLES={atlas:'Knowledge route map',knowledge:'Inside the knowledge',strategy:'Strategy and plans','strategy-detail':'Strategy dossier',wcos:'WCOS — controlled interface','wcos-domain':'WCOS professional knowledge',phe:'Public health and environment','phe-domain':'Public professional knowledge',operations:'Operations and work','operation':'Work card',calendar:'Operational year','calendar-item':'Calendar work item',metrics:'Metrics and evidence',metric:'Metric dossier',resources:'Resource requirements',resource:'Resource dossier',sources:'Source register',source:'Source evidence',discovery:'Discovery and challenge',audit:'History and independent audit',coverage:'Coverage and gaps',assistant:'Michele — draft assistance','not-found':'Page not found'};
+const NAV=[['Route map','/atlas'],['Data & evidence','/data'],['Strategy','/strategy'],['WCOS','/domains/wcos'],['PHE knowledge','/domains/phe'],['Operations','/operations'],['Calendar','/calendar'],['Metrics','/metrics'],['Resources','/resources'],['Sources','/sources'],['Discovery','/discovery'],['Audit','/audit'],['Coverage','/coverage'],['Michele drafts','/assistant']];
+const TITLES={data:'Data layers and evidence','data-record':'Layer record and lineage',atlas:'Knowledge route map',knowledge:'Inside the knowledge',strategy:'Strategy and plans','strategy-detail':'Strategy dossier',wcos:'WCOS — controlled interface','wcos-domain':'WCOS professional knowledge',phe:'Public health and environment','phe-domain':'Public professional knowledge',operations:'Operations and work','operation':'Work card',calendar:'Operational year','calendar-item':'Calendar work item',metrics:'Metrics and evidence',metric:'Metric dossier',resources:'Resource requirements',resource:'Resource dossier',sources:'Source register',source:'Source evidence',discovery:'Discovery and challenge',audit:'History and independent audit',coverage:'Coverage and gaps',assistant:'Michele — draft assistance','not-found':'Page not found'};
 function element(tag,text,attrs={}){const e=document.createElement(tag);if(text!==undefined&&text!==null)e.textContent=String(text);for(const [name,value]of Object.entries(attrs))if(value!==null&&value!==undefined)e.setAttribute(name,String(value));return e;}
 function link(label,path,query={}){return element('a',label,{href:R.href(path,query)});}
 function action(label,callback){const e=element('button',label,{type:'button'});e.addEventListener('click',callback);return e;}
@@ -41,6 +41,16 @@ function mount(bridge={}){
  const onNavClick=e=>{if(e.target.closest('a'))menu.open=false;};nav.addEventListener('click',onNavClick);
  function mapContext(method,id){R.navigate('/atlas',{item:id});setTimeout(()=>bridge[method]?.(id),0);}
  function tools(host,entries){const row=element('div',null,{class:'csoi-actions'});for(const [label,method,arg]of entries)if(typeof bridge[method]==='function')row.append(action(label,()=>bridge[method](arg)));host.append(row);}
+ async function dataPage(main,dataset,route){
+  const L=root.AtlasCSOILayers;if(!L){text(main,'Layered transformation engine is unavailable in this checkpoint.');return;}
+  text(main,'L0–L5 analytical layers never change security classification. This workbench uses repository-authored synthetic inputs; Council data remains in its authorised system. Unchecked does not mean compliant.');
+  const items=L.currentRecords(dataset).filter(r=>Array.isArray(r.history));
+  if(route.params.id){const record=items.find(r=>r.id===route.params.id);if(!record){text(main,'Layer record not found.');return;}text(main,record.layer+' · '+record.id,'h2');details(main,await L.verifyCurrent(dataset,record));details(main,record);const lineage=section(main,'Pinned inputs and reverse trace');for(const ref of record.inputs)lineage.append(link(ref.id+' · '+ref.revisionId,'/data/'+encodeURIComponent(ref.id)));main.append(link('All layers','/data'));return;}
+  const status=element('p','No automatic save or public release.',{id:'csoiLayerStatus',role:'status'});main.append(status);
+  if(!items.some(r=>r.id==='csoi:demo:work-coverage'))main.append(action('Build synthetic L0–L5 evidence chain',async()=>{try{status.textContent='Validating and recording source-to-review lineage…';await bridge.buildLayers();render(currentRoute);}catch(error){status.textContent='Rejected: '+error.message;}}));
+  else main.append(action('Withdraw synthetic source and invalidate descendants',async()=>{try{await bridge.withdrawLayer('csoi:demo:inspected:source','Synthetic source withdrawn for lineage verification');render(currentRoute);}catch(error){status.textContent='Rejected: '+error.message;}}));
+  for(const record of items){const s=section(main,record.layer+' — '+record.id);s.append(link('Inspect record and exact inputs','/data/'+encodeURIComponent(record.id)));details(s,await L.verifyCurrent(dataset,record));if(['L3','L4','L5'].includes(record.layer))details(s,record.data);}
+ }
  function contentPage(main,dataset,route){
   const id=route.params.id,item=allEntities(dataset).find(record=>record.id===id);
   if(!item){text(main,'No object with this identity exists in the loaded dataset.');main.append(link('Return to strategy','/strategy'));return;}
@@ -118,7 +128,8 @@ function mount(bridge={}){
   if(['strategy','sources','operations','metrics','resources'].includes(route.name)){const form=element('form',null,{class:'csoi-filters','aria-label':'Filter public workspace records'});for(const [name,label]of [['q','Search records'],['region','Region'],['unit','Unit'],['status','Evidence state']]){const field=element('label',label),input=element('input',null,{name,value:route.query[name]||'',maxlength:name==='q'?'200':'512'});field.append(input);form.append(field);}form.append(element('button','Apply filters',{type:'submit'}));form.addEventListener('submit',e=>{e.preventDefault();const query={};for(const [key,value]of new FormData(form))if(String(value).trim())query[key]=String(value).trim();R.navigate(route.path,query);});host.append(form);}
   const content=element('div',null,{class:'csoi-page-content'});host.append(content);
   try{const dataset=await bridge.getDataset();if(destroyed||token!==generation)return;
-   if(route.name==='knowledge')contentPage(content,dataset,route);
+   if(route.name==='data'||route.name==='data-record')await dataPage(content,dataset,route);
+   else if(route.name==='knowledge')contentPage(content,dataset,route);
    else if(route.name.startsWith('strategy'))strategyPage(content,dataset,route);
    else if(['sources','source'].includes(route.name))sourcesPage(content,dataset,route);
    else if(['operations','operation','metrics','metric','resources','resource'].includes(route.name))coreRecordsPage(content,dataset,route);
