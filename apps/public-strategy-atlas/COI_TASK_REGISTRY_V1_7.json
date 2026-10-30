@@ -1142,150 +1142,290 @@
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "列出 Council PHE 的公开职能及 NSW 不同主管机构的责任；分开法定权力、Council 公开政策、研究观点、当前 SMRC 内部分工未知。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "列出 Council PHE 的公开职能及 NSW 不同主管机构的责任；分开法定权力、Council 公开政策、研究观点、当前 SMRC 内部分工未知。"
+      "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-042",
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "Food Safety：Food Act、Food Regulation Partnership、登记/风险、卫生检查、投诉、复检、培训、处罚/决定审查与来源。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "Food Safety：Food Act、Food Regulation Partnership、登记/风险、卫生检查、投诉、复检、培训、处罚/决定审查与来源。"
+      "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-043",
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "On-site Sewage：安装/运营批准、系统类型、风险、维护、现场检查、失败整改与地表水/土地联系。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "On-site Sewage：安装/运营批准、系统类型、风险、维护、现场检查、失败整改与地表水/土地联系。"
+      "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-044",
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "Public Pools & Spas：场所通知、消毒/水质监测、记录与检查、缺陷/复检、相关公共卫生义务。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "Public Pools & Spas：场所通知、消毒/水质监测、记录与检查、缺陷/复检、相关公共卫生义务。"
+      "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-045",
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "Cooling/ Warm Water Systems：登记、风险管理、维护与检查、主管部门和法定通知范围；职责未确认的地方明示 UNKNOWN。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "Cooling/ Warm Water Systems：登记、风险管理、维护与检查、主管部门和法定通知范围；职责未确认的地方明示 UNKNOWN。"
+      "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-046",
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "Skin Penetration：法规适用场所、卫生检查、通知/整改、年度法定报告统计依据。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "Skin Penetration：法规适用场所、卫生检查、通知/整改、年度法定报告统计依据。"
+      "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-047",
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "环境卫生与保护、投诉、噪声/污染等模块：按现行法定机构权限区分 Council、EPA、NSW Health 等职责。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "环境卫生与保护、投诉、噪声/污染等模块：按现行法定机构权限区分 Council、EPA、NSW Health 等职责。"
+      "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-048",
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "建“物业/活动/设施/风险/法定条款/检查活动/整改/结果”通用概念图，跨 PHE/WCOS 查询但不复制真实客户。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "建“物业/活动/设施/风险/法定条款/检查活动/整改/结果”通用概念图，跨 PHE/WCOS 查询但不复制真实客户。"
+      "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-049",
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "用公开知识与明确合成的业务对象，创建至少五条有条件判断与反例的多级 PHE 工作链，并核验页码/效期/地域。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "用公开知识与明确合成的业务对象，创建至少五条有条件判断与反例的多级 PHE 工作链，并核验页码/效期/地域。"
+      "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-050",
       "pack": "E",
       "pack_name": "PHE 公共知识包",
       "title_and_scope": "交付真实可点击的 PHE 目录、领域子站、法定来源、工作流、可学习案例和未验证事项面板；进入 Pack F。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-phe.js",
+        "csoi-phe.test.cjs",
+        "csoi-pages.js",
+        "sources/csoi-legislation-access.json",
+        "sources/csoi-catalogue.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-e-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-e.json",
+        "qa/csoi/browser-e.json",
+        "qa/csoi/phe-food-1440.png",
+        "qa/csoi/phe-pools-390.png"
+      ],
+      "remote_sha": "566e3254676ae91cb497dbbabacf2572971592b0",
+      "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "交付真实可点击的 PHE 目录、领域子站、法定来源、工作流、可学习案例和未验证事项面板；进入 Pack F。"
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
     },
     {
       "id": "COI-051",
@@ -1738,7 +1878,7 @@
       "next_action": "交付 Founder 验收报告、来源/权限缺口、工作链与定量验证、可用页面清单、软件与真实资料分别计分、下期目标；保留 Draft PR，不部署/合并。"
     }
   ],
-  "updated_at": "2026-10-30T01:31:50.808486+00:00",
+  "updated_at": "2026-10-30T01:41:05.916406+00:00",
   "pack_assessments": {
     "A": {
       "pack": "A",
@@ -1775,6 +1915,15 @@
       "summary": "Delivered read-only abstract WCOS adapter, a ten-stage LTW research workflow, conditional Food/LTW/Backflow assessment and device/date/scope-specific scheduling checks. All26 native files and desktop/mobile workflow tests PASS. Three tasks VERIFIED, five PARTIAL, two original/private compatibility tasks BLOCKED. No production WCOS, real Outlook, customer data, universal device obligation or formal decision is introduced.",
       "next_executable": "COI-041 — source-backed public PHE domain knowledge and conditional work chains",
       "code_sha": "5d73de1945252e3435abbd21e45f53e940e2cfea"
+    },
+    "E": {
+      "pack": "E",
+      "software_status": "PARTIAL",
+      "corpus_status": "PARTIAL",
+      "admission_status": "PENDING",
+      "summary": "Delivered eight source-backed PHE/WCOS domain projections, exact source-note/byte-receipt links and conditional six-stage research workflows with exclusions and counterexamples. Desktop/mobile visits all eight domains; all27 native files PASS. Four direct NSW statutory references returned HTTP403 and are registered as unavailable REQUIREMENTS, not retrieved legal documents. Register now41 records,23document revisions,1directory; successful fresh receipts remain22, current legal confirmations/permissions/admissions0. Nine deeper professional/legal tasks PARTIAL; functional learning-site delivery VERIFIED. No invented Council SOP or actual customer case.",
+      "next_executable": "COI-051 — quantify regulatory denominators, workload and resource/ledger evidence",
+      "code_sha": "566e3254676ae91cb497dbbabacf2572971592b0"
     }
   }
 }

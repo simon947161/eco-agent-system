@@ -1,3 +1,17 @@
+# V1.7 Pack E checkpoint — PARTIAL
+
+Code/evidence commit: `566e3254676ae91cb497dbbabacf2572971592b0`. This continuity/registry commit follows it; resolve current remote HEAD after push.
+
+Delivered eight source-backed PHE/WCOS domain projections, exact source-note/byte-receipt links and conditional six-stage research workflows with exclusions and counterexamples. Desktop/mobile visits all eight domains; all27 native files PASS. Four direct NSW statutory references returned HTTP403 and are registered as unavailable REQUIREMENTS, not retrieved legal documents. Register now41 records,23document revisions,1directory; successful fresh receipts remain22, current legal confirmations/permissions/admissions0. Nine deeper professional/legal tasks PARTIAL; functional learning-site delivery VERIFIED. No invented Council SOP or actual customer case.
+
+SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING. Task statuses are evidence-based and do not imply Council approval.
+
+Next executable task: **COI-051 — quantify regulatory denominators, workload and resource/ledger evidence**. Continue the recovered V1.7 registry using the same model. Retain Draft PR #130; no deployment, merge, main/PR129 changes, protected business data or production WCOS writes.
+
+Assessment: `qa/csoi/pack-e-assessment.json`.
+
+--- Previous checkpoint ---
+
 # V1.7 Pack D checkpoint — PARTIAL
 
 Code/evidence commit: `5d73de1945252e3435abbd21e45f53e940e2cfea`. This continuity/registry commit follows it; resolve current remote HEAD after push.
