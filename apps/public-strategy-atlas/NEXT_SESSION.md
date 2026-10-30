@@ -1,3 +1,23 @@
+# V1.7 public-source extension checkpoint — PARTIAL
+
+Code/evidence commit and last remote branch/PR-head readback: `a0526c89c93684fd4dac3f3948622fd261f294b5`. This continuity commit follows it; resolve current remote HEAD before continuing.
+
+Packs A–H are implemented/assessed with **49 VERIFIED / 28 PARTIAL / 3 BLOCKED** tasks. Full-system acceptance remains PARTIAL. The latest nine-source batch adds the Water Asset Management Plan, six DCP directory/subpages and two DCP PDFs, plus recursive directory→source receipt→research note navigation and visible focused page headings. No competing graph or official promotion.
+
+Current public source register: **51 records / 31 families; 32 byte receipts (12 PDF,20 HTML);25 retrieved documents+7directories;24 own research notes across22sources;5 published OP planning records**.37core selected attempt records plus4statutory403 records =41selected attempts/40distinct requested URLs. Same-host Bombala redirect adds uninstrumented exchanges: total wire HTTP count UNKNOWN. Source rights/current versions/complete corpus remain UNKNOWN/PENDING; official admission and admitted relationships0; actual outcome KPI UNKNOWN.
+
+Observed conflicts: Water AMP cover2025–2035 vs directory2025–2029; Bombala link2014 vs DCP2012Amendment2; Cooma-Monaro Amendment4 vs inconsistent resolution/amendment/footer text. Historical former-area scope is not merged-LGA or parcel applicability. Adopted/effective/current-as-of fields remain unpromoted.
+
+Verified: **30/30 native files PASS**; final loaded-module coverage91.66%lines/83.93%branches/94.73%functions (not UI/tool coverage); affected actual Chromium DCP/source/filter/companion/E0snapshot/edit/conflict suites PASS;22routes×5viewports plus visible-focus/touch-emulation checks PASS. Pack H full13-suite run is retained separately as dated evidence. Physical touch, professional screenreader/cross-browser/privateWCOS compatibility NOT_TESTED. Public originals remain/tmp only; no source bodies committed.
+
+Evidence: `qa/CSOI_PUBLIC_SOURCE_EXTENSION_20261030.md`, `qa/csoi/verification-source-extension.json`, `qa/csoi/source-extension-prefix-20261030.json`. Offline reusable append command: `tools/csoi-append-receipts.cjs TEMP_BATCH.json [--apply]`; default dry-run, exact bytes/closed metadata/pinned directory required. Temporary raw originals can disappear; durable receipt URLs/hashes remain.
+
+**Next executable engineering:** COI-074 dedicated pinned cross-path comparison and recorded-law/work filters, using existing AtlasExecution identities; then exact Snowy River DCP lead intake and permitted real-source chapter depth. Source/current-law review blocks only dependent official admission, not other public engineering. COI-002/031/040 private WCOS compatibility remains BLOCKED; no production/account access is authorised.
+
+Keep Draft PR#130; no deployment/merge/main/PR129 changes, paid services, Council nonpublic data or automatic formal decisions.
+
+--- Previous checkpoint ---
+
 # V1.7 Pack H checkpoint — PARTIAL
 
 Code/evidence commit: `68c645f56a74bcdffaf06b5cb893d7bd88eb90b4` (pushed and branch HEAD read back). This continuity/registry commit follows it; resolve current remote HEAD after push.
