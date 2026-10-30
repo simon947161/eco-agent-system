@@ -1,3 +1,17 @@
+# V1.7 Pack H checkpoint — PARTIAL
+
+Code/evidence commit: `68c645f56a74bcdffaf06b5cb893d7bd88eb90b4` (pushed and branch HEAD read back). This continuity/registry commit follows it; resolve current remote HEAD after push.
+
+All eight packs now have executable code and evidence. Pack H adds five source-pinned OP planning records, controlled annual-report byte recovery with immutable prefix proof, recorded-scope filters, separate five-axis coverage, companion refresh/context warnings and full real-browser regression.29/29 native files and all13 browser suites PASS; loaded-module Node coverage91.88% lines/83.93% branches/94.73% functions is not UI coverage. H has8 VERIFIED and2 PARTIAL tasks. Overall49 VERIFIED/28 PARTIAL/3 BLOCKED; full-system acceptance remains PARTIAL.23 successful original-byte receipts; source extraction/current-law/admission incomplete, official relationships0.
+
+SOFTWARE_CAPABILITY PARTIAL; PUBLIC_CORPUS_COVERAGE PARTIAL; OFFICIAL_ADMISSION PENDING. Task statuses are evidence-based and do not imply Council approval.
+
+Next executable task: **COI-011/012/019/020 — append exact official DCP/asset-plan source receipts already recovered in temporary storage, preserve history, and expose revision/scope/rights gaps; continue unresolved public-source tasks without private WCOS access**. Continue the recovered V1.7 registry using the same model. Retain Draft PR #130; no deployment, merge, main/PR129 changes, protected business data or production WCOS writes.
+
+Assessment: `qa/csoi/pack-h-assessment.json`.
+
+--- Previous checkpoint ---
+
 # V1.7 Pack G checkpoint — PARTIAL
 
 Code/evidence commit: `10cf2dcc84aac35e94604154d505bdb7ad7288e8`. This continuity/registry commit follows it; resolve current remote HEAD after push.

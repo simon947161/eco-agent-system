@@ -294,8 +294,18 @@
       "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
       "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
-      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
+      "blocker": "Complete official document/version inventory, source reuse rights and independent review remain incomplete. Annual-report transfer-cap gap resolved in Pack H.",
+      "next_action": "Append exact officially linked DCP and asset-plan receipts, retain geographic/revision conflicts and source gates; do not retry known statutory403 responses.",
+      "evidence_updates": [
+        {
+          "code_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+          "evidence": [
+            "qa/csoi/annual-prefix-proof.json",
+            "qa/CSOI_V1_7_SYSTEM_RESULTS.md"
+          ],
+          "observation": "Annual-report transfer-cap gap resolved with controlled64MiB byte retrieval. Prior failed observation retained. No extraction/rights/current-version/admission promotion."
+        }
+      ]
     },
     {
       "id": "COI-012",
@@ -2062,153 +2072,423 @@
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "保持有机网络为首页，路线长度不同、分叉/交汇/隐性候选连接有类型/证据，布局稳定且可聚焦，不回到三栏管理仪表板。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "保持有机网络为首页，路线长度不同、分叉/交汇/隐性候选连接有类型/证据，布局稳定且可聚焦，不回到三栏管理仪表板。"
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     },
     {
       "id": "COI-072",
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "建多个真正可工作的专业和计划页面：CSP、LSPS、DP/OP、资源、WCOS、Backflow、LTW、Food、OSSM、其他 PHE、Calendar、Metrics、Sources、Audit。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "建多个真正可工作的专业和计划页面：CSP、LSPS、DP/OP、资源、WCOS、Backflow、LTW、Food、OSSM、其他 PHE、Calendar、Metrics、Sources、Audit。"
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     },
     {
       "id": "COI-073",
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "每个合法节点与子项支持多层递归、章节/工作包/成本/证据/版本/缺口的下钻和反向返回，不能限制为固定六级，也不能用虚构文本凑满。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "每个合法节点与子项支持多层递归、章节/工作包/成本/证据/版本/缺口的下钻和反向返回，不能限制为固定六级，也不能用虚构文本凑满。"
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     },
     {
       "id": "COI-074",
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "统一搜索、按年度/地区/法规/来源/工作/单位过滤、跨路径比较、问题导航和解释性候选暗线；同时具备线性文字替代。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "统一搜索、按年度/地区/法规/来源/工作/单位过滤、跨路径比较、问题导航和解释性候选暗线；同时具备线性文字替代。"
+      "blocker": "Complete current-law/work filter index and dedicated cross-path comparison workflow unfinished; existing combined recorded-scope/source/unit/state filters, linear content and explainable candidates are tested.",
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     },
     {
       "id": "COI-075",
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "双屏模式：主屏线路图、副屏独立查看工作卡、日历、条款、核算和审核；普通单屏与手机有同等功能，不需要双显示器。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "双屏模式：主屏线路图、副屏独立查看工作卡、日历、条款、核算和审核；普通单屏与手机有同等功能，不需要双显示器。"
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     },
     {
       "id": "COI-076",
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "实测 390px 移动端、16:9、21:9、32:9、键盘/触屏、低动效、可聚焦上下文、长表分页和基本读屏无障碍。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": null,
-      "next_action": "实测 390px 移动端、16:9、21:9、32:9、键盘/触屏、低动效、可聚焦上下文、长表分页和基本读屏无障碍。"
+      "blocker": "Chromium viewports, keyboard/reduced-motion, emulated touch and ARIA tree tested; physical hardware, professional screen-reader and cross-browser checks NOT_TESTED.",
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     },
     {
       "id": "COI-077",
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "建单独覆盖量表：软件能力、公开语料覆盖、关系审核、数据质量、实际结果 KPI 五者不能合并成虚假 100%。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "建单独覆盖量表：软件能力、公开语料覆盖、关系审核、数据质量、实际结果 KPI 五者不能合并成虚假 100%。"
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     },
     {
       "id": "COI-078",
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "运行隐私/权限/恶意来源文本、HTML 注入、JSON 导入、记录反识别、版权、权限越界、虚假官方批准的负例测试。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "运行隐私/权限/恶意来源文本、HTML 注入、JSON 导入、记录反识别、版权、权限越界、虚假官方批准的负例测试。"
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     },
     {
       "id": "COI-079",
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "跑全部 Node、真实 Chromium、快照/不可变历史/导出导入、并发编辑、15/127/60/200/1000/10000 合成负载及许可范围内真实资料，保存日志和截图。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "跑全部 Node、真实 Chromium、快照/不可变历史/导出导入、并发编辑、15/127/60/200/1000/10000 合成负载及许可范围内真实资料，保存日志和截图。"
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     },
     {
       "id": "COI-080",
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "交付 Founder 验收报告、来源/权限缺口、工作链与定量验证、可用页面清单、软件与真实资料分别计分、下期目标；保留 Draft PR，不部署/合并。",
-      "status": "TODO",
-      "actual_code_files": [],
-      "actual_test_commands": [],
-      "evidence_links": [],
-      "remote_sha": null,
-      "source_admission_status": "NOT_ASSESSED",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
+      "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "交付 Founder 验收报告、来源/权限缺口、工作链与定量验证、可用页面清单、软件与真实资料分别计分、下期目标；保留 Draft PR，不部署/合并。"
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
     }
   ],
-  "updated_at": "2026-10-30T02:17:13.465473+00:00",
+  "updated_at": "2026-10-30T02:58:55.183310+00:00",
   "pack_assessments": {
     "A": {
       "pack": "A",
@@ -2272,6 +2552,15 @@
       "summary": "Delivered calendar/fiscal Annual Edition projections, full mission-to-day-to-task/brief/evidence/report navigation, custom synthetic task creation, immutable plan edits with retained history, source/OP/CSP context links marked UNKNOWN, and draft-only weekly/meeting preparation. All28 native files, five viewport navigation/companion runs and detailed desktop/mobile end-to-end exports PASS. Caller verification booleans cannot authorise statutory schedules/assignments; protected task/draft capsules are rejected during snapshot verification. No Council accounts, email, calendar writes or manager decisions occur. Nine tasks VERIFIED; private WCOS concept compatibility PARTIAL.",
       "next_executable": "COI-071 — complete final multi-page/privacy/coverage acceptance and real-source planning depth",
       "code_sha": "10cf2dcc84aac35e94604154d505bdb7ad7288e8"
+    },
+    "H": {
+      "pack": "H",
+      "software_status": "PARTIAL",
+      "corpus_status": "PARTIAL",
+      "admission_status": "PENDING",
+      "summary": "All eight packs now have executable code and evidence. Pack H adds five source-pinned OP planning records, controlled annual-report byte recovery with immutable prefix proof, recorded-scope filters, separate five-axis coverage, companion refresh/context warnings and full real-browser regression.29/29 native files and all13 browser suites PASS; loaded-module Node coverage91.88% lines/83.93% branches/94.73% functions is not UI coverage. H has8 VERIFIED and2 PARTIAL tasks. Overall49 VERIFIED/28 PARTIAL/3 BLOCKED; full-system acceptance remains PARTIAL.23 successful original-byte receipts; source extraction/current-law/admission incomplete, official relationships0.",
+      "next_executable": "COI-011/012/019/020 — append exact official DCP/asset-plan source receipts already recovered in temporary storage, preserve history, and expose revision/scope/rights gaps; continue unresolved public-source tasks without private WCOS access",
+      "code_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4"
     }
   }
 }
