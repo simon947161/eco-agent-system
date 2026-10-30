@@ -7,5 +7,11 @@ assert.equal(R.href('/atlas',{q:'<img src=x>',password:'secret',year:'2026'}),'#
 assert.equal(R.companionUrl('https://example.invalid/index.html?token=secret#/audit','/knowledge/csp:content',{q:'carbon',token:'secret'}),'https://example.invalid/index.html#/knowledge/csp%3Acontent?companion=1&q=carbon');
 for(const url of ['javascript:alert(1)','data:text/html,hello','https://user:password@example.invalid/'])assert.throws(()=>R.companionUrl(url,'/atlas'),/UNSAFE/);
 assert.throws(()=>R.href('/unknown'),/INVALID/);assert.equal(R.parse('#/atlas?region=Snowy+Monaro').query.region,'Snowy Monaro');
+assert.equal(R.parse(R.href('/compare',{left:'csoi:source-note:test',leftRevision:'sha256:abc',right:'water',law:'DCP',work:'WorkPackage'})).query.leftRevision,'sha256:abc');
+assert.deepEqual(R.queryState({left:'fixture@example.invalid',right:'<img src=x>'}),{});
+for(const query of ['left=water&right=area&leftRevision=bad%40pin','left=water&right=area&leftRevision=','left=water&right=area&leftRevision=old&leftRevision=new'])assert.equal(R.parse('#/compare?'+query).valid,false);
+assert.throws(()=>R.href('/compare',{left:'water',right:'area',leftRevision:'invalid@pin'}),/INVALID_COMPARISON_QUERY/);
+assert.throws(()=>R.companionUrl('https://example.invalid/','/compare',{left:'water',leftRevision:'invalid@pin'}),/INVALID_COMPARISON_QUERY/);
 const P=require('./csoi-pages.js');assert.equal(P.publicOnly([{id:'safe',status:'SYNTHETIC'},{id:'private',data:{security:'COUNCIL_PROTECTED'}},{id:'release',security:'APPROVED_RELEASE'}]).length,1);assert.equal(P.displayAllowed({data:{csoiRecord:{format:'csoi-record-1',security:'PUBLIC',data:{governmentApproval:true}}}}),false);
+assert.equal(P.queryFilter([{id:'public:food',kind:'WorkPackage',label:'Observed Food reference',scope:{region:'Snowy Monaro'},data:{}},{id:'public:water',kind:'WorkPackage',label:'Water',scope:{region:'Snowy Monaro'},data:{}}],{region:'snowy monaro',law:'Food',work:'WorkPackage'}).length,1);
 console.log('PASS: CSOI functional route manifest, deep links, bounded public query, hostile path and companion URL guards');

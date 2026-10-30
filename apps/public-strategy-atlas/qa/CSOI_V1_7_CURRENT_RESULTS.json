@@ -1,0 +1,76 @@
+{
+  "format": "csoi-v17-current-results-1",
+  "at": "2026-10-30T07:05:20.119789+00:00",
+  "systemAcceptance": "PARTIAL",
+  "softwareStatus": "PARTIAL",
+  "taskCounts": {
+    "VERIFIED": 49,
+    "PARTIAL": 28,
+    "BLOCKED": 3
+  },
+  "publicCorpus": {
+    "status": "PARTIAL",
+    "catalogueRecords": 51,
+    "families": 31,
+    "byteReceipts": 32,
+    "pdfReceipts": 12,
+    "htmlReceipts": 20,
+    "researchNotes": 24,
+    "researchNoteSources": 22,
+    "publishedPlanningRecords": 5,
+    "completeInventory": "UNKNOWN"
+  },
+  "officialAdmission": {
+    "status": "PENDING",
+    "admittedDocuments": 0,
+    "admittedRelationships": 0,
+    "sourceReportedCandidates": 8,
+    "actualOutcomeKpi": "UNKNOWN"
+  },
+  "native": {
+    "status": "PASS_TESTED_HERE",
+    "filesPassed": 31,
+    "evidence": "csoi/native-comparison.json"
+  },
+  "browser": {
+    "status": "PASS_TESTED_HERE",
+    "latestAffectedSuites": [
+      "csoi/browser-comparison.json",
+      "csoi/browser-h.json",
+      "csoi/browser-source-extension.json",
+      "csoi/browser-b.json"
+    ],
+    "navigationRoutes": 23,
+    "viewports": 5,
+    "priorFullRegression": "csoi/browser-final-h.json",
+    "priorFullRegressionScope": "Historical Pack H13-suite run, not relabelled as current comparison invocation"
+  },
+  "nodeCoverage": {
+    "lines": 91.28,
+    "branches": 84.74,
+    "functions": 95.06,
+    "scope": "Loaded atlas-*.js/csoi-*.js modules, not browser renderer/tools/*.cjs"
+  },
+  "defaultSnapshotDigest": "sha256:4023b091396d03acf391be78d2b2148bfc825651519a1114cd5ed129d9cff62a",
+  "pr": {
+    "number": 130,
+    "state": "DRAFT",
+    "evidence": "csoi/pr130-draft-readback.json"
+  },
+  "notTested": [
+    "physical touch/monitors",
+    "professional screen-reader certification",
+    "cross-browser",
+    "private WCOS/Outlook compatibility",
+    "independent privacy/legal certification"
+  ],
+  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_comparison.code_sha after code checkpoint",
+  "codeManifest": {
+    "atlas-execution.js": "sha256:9689dbdedc409a254979f175e59b3acdae49e5b272c3a18ef60c56469188a862",
+    "comparison.test.cjs": "sha256:58be492dd962beebe763f32d1edbff988a168f2b10bffd3ddc453566dca47936",
+    "csoi-pages.js": "sha256:4a817e0242c03298ae74b59535a79558cd927fe02f1753c28802b1e67e7f34b5",
+    "csoi-router.js": "sha256:9a3c8e73d7cc96b80089547229556008d26e2154301d619a41cc6f44efb571a4",
+    "csoi-pages.css": "sha256:737dc7c8f214d1157e80c4ff7def61b6710aa0425bb3adfb7b4329f572863ae5"
+  },
+  "report": "CSOI_COMPARISON_RESULTS_20261030.md"
+}

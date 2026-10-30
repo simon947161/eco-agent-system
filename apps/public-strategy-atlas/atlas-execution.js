@@ -165,5 +165,82 @@ function searchRecords(d,query,{stationId=null,region=null,date=null,kind=null,c
  return {total:results.length,items:results.slice(offset,offset+limit),offset,nextOffset:offset+limit<results.length?offset+limit:null};
 }
 function diffRecords(before,after){return [...new Set([...Object.keys(before||{}),...Object.keys(after||{})])].sort().filter(field=>M.canonical(before?.[field]??null)!==M.canonical(after?.[field]??null)).map(field=>({field,before:before?.[field]??null,after:after?.[field]??null}));}
-const api={searchRecords,diffRecords,candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
+
+// Comparison is a read-only projection of pinned existing objects, never a new graph.
+function publicComparisonRecord(record){
+ const governance=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;
+ need(governance&&governance.inspectPayload(record).length===0,'COMPARISON_PUBLIC_CONTENT_REQUIRED');
+ const forbidden=new Set(['PERSONAL_PRIVATE','PRIVATE','COUNCIL_PROTECTED','APPROVED_RELEASE']);
+ const queue=[record];for(let i=0;i<queue.length;i++){
+  need(i<10000,'COMPARISON_CONTENT_BOUNDS');const value=queue[i];if(!value||typeof value!=='object')continue;
+  for(const [key,child]of Object.entries(value))if(['classification','security','privacy','permission','confidentiality'].includes(key.toLowerCase()))need(!forbidden.has(typeof child==='string'?child.toUpperCase():child),'COMPARISON_PUBLIC_CONTENT_REQUIRED');
+  for(const [key,child]of Object.entries(value))if(['fulltext','sourcebody','originalbody','rawhtml','pdfbytes','base64body'].includes(key.toLowerCase()))need(child===null||child===''||child===false,'COMPARISON_SOURCE_BODY_NOT_PERMITTED');
+  if(value.format==='csoi-record-1')need(governance.assessPublic(value,{operation:'DISPLAY'}).allowed,'COMPARISON_PUBLIC_CONTENT_REQUIRED');
+  for(const child of Object.values(value))if(child&&typeof child==='object')queue.push(child);
+ }
+ const label=record.classification||record.status||record.security;
+ need(['SYNTHETIC_SCENARIO','PUBLIC_TEXT_OBSERVED','LOCAL_RESEARCH','SYNTHETIC','METADATA_OBSERVED','PUBLIC','PUBLIC_DIRECTORY_REFERENCE','HYPOTHESIS_ONLY','RESEARCH_INFERRED','EXPLICIT_OFFICIAL','CONTRADICTED','SUPERSEDED'].includes(label),'COMPARISON_PUBLIC_CLASSIFICATION_REQUIRED');
+}
+async function resolveComparisonRecord(d,request){
+ need(request&&typeof request.id==='string'&&request.id.length>0&&request.id.length<=512&&Object.keys(request).every(key=>['id','revisionId'].includes(key)),'COMPARISON_ID_REQUIRED');
+ if(request.revisionId!==undefined)need(typeof request.revisionId==='string'&&request.revisionId.length>0&&request.revisionId.length<=512,'COMPARISON_REVISION_REQUIRED');
+ const index=M.domainIndex(d),catalogue=d.domain?.sourceCatalogue?.sources||[];
+ let record=index.get(request.id),category=record?(d.nodes.some(r=>r.id===request.id)?'station':d.contentItems.some(r=>r.id===request.id)?'content':'entity'):null;
+ if(!record){record=assertions(d).find(r=>r.id===request.id);if(record)category='assertion';}
+ if(!record){record=catalogue.find(r=>r.id===request.id);if(record)category='source';}
+ if(!record){record=d.sources.find(r=>r.id===request.id);if(record)category='legacy-source';}
+ need(record,'COMPARISON_RECORD_NOT_FOUND');
+ const domainCurrent=!!d.domain&&[...d.domain.entities,...d.domain.assertions].some(r=>r.id===record.id);
+ const currentRevision=domainCurrent||category==='source'?record.revisionId:await M.objectDigest(record);
+ let selected=structuredClone(record),pinnedRevision=currentRevision,historical=false;
+ if(request.revisionId!==undefined&&request.revisionId!==currentRevision){
+  const revision=d.domain?.revisions.find(r=>r.id===request.revisionId&&r.logicalId===request.id);
+  need(revision,'COMPARISON_REVISION_NOT_FOUND');const {id,...payload}=revision;
+  need(await M.objectDigest(payload)===id&&revision.record.id===request.id,'COMPARISON_REVISION_INVALID');
+  selected={...structuredClone(revision.record),revisionId:revision.id};pinnedRevision=revision.id;historical=true;
+ }
+ publicComparisonRecord(selected);
+ return {category,id:request.id,revisionId:pinnedRevision,currentRevisionId:currentRevision,declaredVersionId:selected.versionId||null,historical,contentDigest:await M.objectDigest(selected),record:selected};
+}
+function comparisonFacts(view){
+ const record=view.record,data=record.data||{},research=data.csoiRecord,scope=research?.scope||record.scope||{};
+ const known=value=>value!==null&&value!==undefined&&value!==''&&value!=='UNKNOWN'&&value!=='PENDING';
+ const region=data.area||scope.region||record.region||record.geographicExtent?.label||record.geography?.region||null;
+ const period=timeRange(record)||((day(record.effectiveFrom)&&day(record.effectiveTo)&&record.effectiveFrom<=record.effectiveTo)?{from:record.effectiveFrom,to:record.effectiveTo}:null);
+ const rawPeriod=data.period??scope.period??null;
+ const source=research?.provenance||record.provenance||data.source||{},unit=data.unit??null;
+ const financialTypes=new Set(['APPROVED_BUDGET','REVISED_BUDGET','COMMITTED','ACTUAL_EXPENDITURE']);
+ const financial=financialTypes.has(data.type)||['FinancialEntry','CostAllocation','FundingSource','BudgetRevision','ActualExpenditure'].includes(record.kind)||/^(?:AUD|USD|NZD|EUR|GBP|JPY|CAD)(?:\/|_per_|$)/.test(unit||'')||data.currencyBasis!==undefined||data.costClass!==undefined;
+ let quantityNature=data.quantityNature||data.quantityKind||null;
+ if(!quantityNature&&['PHYSICAL_STOCK','PHYSICAL_FLOW'].includes(data.type))quantityNature=data.type;
+ if(!quantityNature&&unit==='t_CO2e/person')quantityNature='PER_CAPITA_INTENSITY';
+ if(!quantityNature&&['ML/day','kL/day','MWh/day'].includes(unit))quantityNature='FLOW_RATE';
+ if(!quantityNature&&financial&&unit)quantityNature=/\/|_per_/.test(unit)?'FINANCIAL_RATE':'FINANCIAL_AMOUNT';
+ let role=data.observationRole||data.measurementRole||data.role||research?.data?.measurement?.role||null;
+ if(!role&&financialTypes.has(data.type))role=data.type;
+ if(!role)role=data.actual===true?'ACTUAL':data.target===true?'TARGET':data.baseline===true?'BASELINE':null;
+ if(!role&&data.csoiTask)role=({PLANNED:'PLANNED_RESEARCH',IN_PROGRESS:'IN_PROGRESS_RESEARCH',RECORDED:'RECORDED_EXECUTION',CANCELLED:'CANCELLED_RESEARCH'})[data.csoiTask.executionStatus]||null;
+ return {logicalId:record.logicalId||record.id,revisionId:view.revisionId,kind:record.kind||record.type||null,classification:record.classification||record.status||null,region:known(region)?region:null,boundary:data.boundary||scope.boundary||null,spatialType:data.spatialType||scope.spatialType||record.geographicExtent?.type||null,period,rawPeriod,unit,value:Object.hasOwn(data,'value')?data.value:null,valueState:typeof data.value==='number'&&Number.isFinite(data.value)?'KNOWN':'UNKNOWN',quantityNature,method:data.method||data.methodVersion||null,denominator:data.denominator??null,financial,financialRole:financialTypes.has(data.type)?data.type:null,observationRole:role,currencyBasis:data.currencyBasis||null,costClass:data.costClass||null,lineId:data.lineId||null,sourceId:research?.data?.sourceId||record.sourceId||data.sourceId||(view.category.includes('source')?record.id:null),sourceUrl:source.url||record.officialUrl||record.url||null,sourceRevision:source.sourceRevision||source.revisionId||source.rawDigest||record.rawDigest||null,locator:source.locator||record.locator||null,rawDigest:source.rawDigest||record.rawDigest||null,sourceState:record.access?.state||data.sourceStatus||null,legalRole:data.legalRole||null,legalState:data.legalState||null,supersededAt:data.supersededAt||record.supersededAt||null};
+}
+async function compareRecords(dataset,{left,right}={}){
+ // Snapshot verification precedes resolution. Clone to prevent asynchronous edits changing pins.
+ let d;try{d=structuredClone(dataset);const snapshot=await M.exportSnapshot(d);need(await M.verifySnapshot(snapshot),'COMPARISON_SNAPSHOT_INVALID');}catch{throw Error('COMPARISON_SNAPSHOT_INVALID');}
+ const [l,r]=await Promise.all([resolveComparisonRecord(d,left),resolveComparisonRecord(d,right)]),a=comparisonFacts(l),b=comparisonFacts(r),checks=[];
+ const known=value=>value!==null&&value!==undefined&&value!==''&&value!=='UNKNOWN'&&value!=='PENDING'&&(typeof value!=='object'||Object.keys(value).length>0&&Object.values(value).every(known));
+ function check(field,group,{applicable=true,reason=null}={}){
+  const before=a[field]??null,after=b[field]??null,structuredDenominator=field==='denominator'&&[before,after].some(v=>v!==null&&typeof v==='object'),invalidDenominator=field==='denominator'&&[before,after].some(v=>typeof v==='number'&&v<=0),status=structuredDenominator||invalidDenominator||!known(before)||!known(after)?'UNKNOWN':M.canonical(before)===M.canonical(after)?'MATCH':'CONFLICT';
+  checks.push({field,group,applicable,status,left:before,right:after,reason:reason||(structuredDenominator?'Structured denominator definitions require a supported typed validation rule; matching objects do not establish a usable rate.':invalidDenominator?'A zero or negative denominator cannot establish a usable rate; no calculation is performed.':!applicable?'Not applicable to these record kinds.':status==='UNKNOWN'?'One or both recorded values are unknown; equal missing values are not evidence of compatibility.':status==='MATCH'?'Recorded values match; no equivalence or official relationship is inferred.':'Recorded values differ; inspect scope and evidence before any proposed use.')});
+ }
+ for(const field of ['logicalId','revisionId'])check(field,'IDENTITY');
+ for(const field of ['sourceId','sourceUrl','sourceRevision','locator','rawDigest'])check(field,'PROVENANCE');
+ for(const field of ['kind','classification'])check(field,'DESCRIPTION');
+ for(const field of ['region','boundary','spatialType','period','unit','quantityNature','method','denominator','observationRole'])check(field,'COMPATIBILITY',{applicable:field!=='denominator'||a.denominator!==null||b.denominator!==null||/\/|percent|%|ratio|_per_|per_capita/i.test([a.unit,b.unit].join(' '))});
+ for(const field of ['financialRole','currencyBasis','costClass','lineId'])check(field,'COMPATIBILITY',{applicable:a.financial||b.financial});
+ check('value','OBSERVATION');
+ for(const field of ['legalRole','legalState','supersededAt'])check(field,'APPLICABILITY',{applicable:l.record.kind==='StatutoryControl'||r.record.kind==='StatutoryControl'});
+ const compatibilityChecks=checks.filter(c=>['COMPATIBILITY','APPLICABILITY'].includes(c.group)&&c.applicable),conflicts=compatibilityChecks.filter(c=>c.status==='CONFLICT'),unknowns=compatibilityChecks.filter(c=>c.status==='UNKNOWN');
+ return {format:'atlas-record-comparison-1',methodVersion:'pinned-public-comparison-1',datasetDigest:await M.objectDigest(d),left:{...l,facts:a},right:{...r,facts:b},checks,fieldDiffs:diffRecords(l.record,r.record),compatibility:{status:conflicts.length?'CONFLICT':unknowns.length?'UNKNOWN':'MATCHED_METADATA_ONLY',conflicts:conflicts.map(c=>c.field),unknowns:unknowns.map(c=>c.field),arithmeticAllowed:false},arithmetic:'NOT_PERFORMED',officialRelationship:'UNKNOWN',trust:'SELF_ATTESTED',externalWitness:'EXTERNAL_WITNESS_UNKNOWN',limitations:['This read-only comparison does not change source records or create a semantic relationship.','Matching labels, values, sources or scopes do not prove legal applicability, causation or official admission.','No subtraction, aggregation, conversion or budget-to-expenditure inference is performed.','Historical pins display their exact retained revision; missing history is rejected rather than replaced with a current record.']};
+}
+
+const api={compareRecords,searchRecords,diffRecords,candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

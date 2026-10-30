@@ -13,7 +13,7 @@ python3 -m http.server 8877 --bind 127.0.0.1
 
 Use a browser against the local server. Scripts are classic scripts and have no external runtime calls. Services must restart in a new task; live browser storage and processes are not durable GitHub delivery.
 
-The route map stays the homepage. The navigation menu opens bookmarkable hash routes such as `/#/strategy/csp`, `/#/domains/phe/food`, `/#/domains/wcos/ltw`, `/#/calendar`, `/#/metrics` and `/#/sources`. Companion windows use independent public state and `noopener`; unsaved edits are transferred only through an explicitly verified snapshot import.
+The route map stays the homepage. The navigation menu opens bookmarkable hash routes such as `/#/strategy/csp`, `/#/domains/phe/food`, `/#/domains/wcos/ltw`, `/#/calendar`, `/#/metrics`, `/#/sources` and `/#/compare`. Companion windows use independent public state and `noopener`; unsaved edits are transferred only through an explicitly verified snapshot import.
 
 V1.7 workspaces include public PHE source/condition chains; read-only synthetic WCOS contracts; L0–L5 lineage with independent calculation replay and source-withdrawal invalidation; service-specific workload/resource denominators; calendar/fiscal Annual Editions down to task/brief/evidence/follow-up/report; and draft-only Michele weekly/meeting preparation. Calendar/task/draft retention appends immutable revisions in the same registry. Outlook actions and formal Council decisions are disabled. The original private WCOS contract remains unavailable; no production compatibility is claimed.
 
@@ -55,6 +55,8 @@ The last command needs `pdfplumber` and the separately obtained original PDF. No
 
 `tools/csoi-append-receipts.cjs TEMP_BATCH.json` dry-runs an offline public-source append; `--apply` writes only after all proposed receipts validate. The command rehashes originals under `/tmp`, checks a pinned retrieved discovery directory, closes/bounds retained metadata and preserves exact source/event/observation prefixes. It rejects body/excerpt fields, private or signed URLs and caller rights/approval promotion. It performs no network request and never commits original bodies. Discovery-directory links in source pages are separate from legal or strategic relationships.
 
+The **Compare** page reads two retained records from any registered branch, pins their exact revisions and shows typed scope/provenance/quantity/finance differences. Missing or malformed pins fail. Legacy declared version labels stay metadata; their comparison pins use payload digests. Percent denominators, financial rates, task execution states and legal-role conflicts remain distinct. Unknown/zero/unsupported structured denominators stay UNKNOWN. Comparison performs no arithmetic, merge, admission or data mutation. Source and object dossiers link directly to this page; recorded-law/work filters search available metadata rather than claim current legal applicability.
+
 ## Repeatable verification
 
 From repository root:
@@ -62,7 +64,7 @@ From repository root:
 ```sh
 node apps/public-strategy-atlas/run-tests.cjs /tmp/atlas-native.json
 node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs
-python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-corpus-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py
+python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-corpus-browser.py csoi-compare-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py
 ```
 
 Browser tests require engineering Python Playwright and system Chromium. The harness runs a temporary localhost server for the suite lifetime. These are not app dependencies. Actual results, screenshots, runtime versions, coverage, limits and acceptance verdicts are recorded under `qa/`. Node coverage measures loaded modules and is not browser rendering coverage. Mock-DOM historical preview tests are labelled separately from real Chromium acceptance. Full professional screen-reader/WCAG, physical touch and cross-browser certification are not claimed.

@@ -1,12 +1,12 @@
 {
   "runner": "csoi-browser-1",
-  "generatedAt": "2026-10-30T03:14:30.962417+00:00",
+  "generatedAt": "2026-10-30T06:59:57.169848+00:00",
   "testedFiles": {
     "atlas.js": "sha256:014ca484ea2d0209801571a94f80275ec4c10058038b33f3693ce8382b032c1e",
     "atlas-domain.js": "sha256:6ecdc1d06ee0cb0b7a04876fbf3bfe53ae3a7396f9373c2d0f2ad61b5dfede44",
     "atlas-model.js": "sha256:05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
-    "csoi-pages.js": "sha256:90c36d86be6ff2dd2a60ef547b23ac32bb116fdf22f9ca239e9b6a52cd675d97",
-    "csoi-router.js": "sha256:bf1c210ad4c031eb6e228b1429b12fecdfcda26c1a5e2a9a2b8d9cc7fde7ebf9",
+    "csoi-pages.js": "sha256:4a817e0242c03298ae74b59535a79558cd927fe02f1753c28802b1e67e7f34b5",
+    "csoi-router.js": "sha256:9a3c8e73d7cc96b80089547229556008d26e2154301d619a41cc6f44efb571a4",
     "csoi-governance.js": "sha256:02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c"
   },
   "physicalTouch": "NOT_TESTED",
@@ -19,7 +19,7 @@
         "width": 1440,
         "height": 900
       },
-      "routes": 22,
+      "routes": 23,
       "status": "PASS_TESTED_HERE",
       "browserErrors": []
     },
@@ -28,7 +28,7 @@
         "width": 390,
         "height": 844
       },
-      "routes": 22,
+      "routes": 23,
       "status": "PASS_TESTED_HERE",
       "browserErrors": []
     },
@@ -37,7 +37,7 @@
         "width": 1600,
         "height": 900
       },
-      "routes": 22,
+      "routes": 23,
       "status": "PASS_TESTED_HERE",
       "browserErrors": []
     },
@@ -46,7 +46,7 @@
         "width": 2560,
         "height": 1080
       },
-      "routes": 22,
+      "routes": 23,
       "status": "PASS_TESTED_HERE",
       "browserErrors": []
     },
@@ -55,7 +55,7 @@
         "width": 3840,
         "height": 1080
       },
-      "routes": 22,
+      "routes": 23,
       "status": "PASS_TESTED_HERE",
       "browserErrors": []
     }
