@@ -2592,6 +2592,54 @@
         "reason": "HTTP response 403; statutory content, current consolidation and applicability remain unverified."
       },
       "revisionId": "sha256:51ab7cec4b1df42ed51f75ea896bc3e0d00115ece41fee92380edcecb0e3e914"
+    },
+    {
+      "id": "csoi:smrc-annual-report-2025-retrieved:20261030",
+      "family": "PERFORMANCE_REPORTING",
+      "publisher": "Snowy Monaro Regional Council",
+      "officialUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/2/council/ipr/annual-reports/2025-annual-report-v3.1-20251127-endorsed-with-statements-final.pdf",
+      "directoryUrl": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+      "title": "2024/25 Annual Report(PDF, 57MB)",
+      "recordType": "DOCUMENT",
+      "stationId": "csp6",
+      "classification": "PUBLIC",
+      "mediaType": "application/pdf",
+      "rights": {
+        "status": "UNKNOWN",
+        "licence": null,
+        "basis": "Only metadata and authored bounded research summaries are committed. Originals/extracted full text remain temporary and are not redistributed.",
+        "permittedUses": [
+          "METADATA_ONLY"
+        ]
+      },
+      "rawDigest": "sha256:39fd5776dc2578cdaaee49939841b1ad9300fc6d13f131212c52db4e93e72d4b",
+      "retrievedAt": "2026-10-30T02:30:29.596267+00:00",
+      "adoptedAt": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "amendedAt": null,
+      "supersededAt": null,
+      "currentAsOf": null,
+      "geographicExtent": {
+        "type": "LGA_CONTEXT",
+        "label": "Snowy Monaro, NSW, Australia",
+        "parcelApplicability": "UNKNOWN"
+      },
+      "extraction": {
+        "coverage": "NONE",
+        "anchors": []
+      },
+      "lineage": {
+        "supersedes": [],
+        "revisionLabel": "sha256:39fd5776dc2578cdaaee49939841b1ad9300fc6d13f131212c52db4e93e72d4b"
+      },
+      "corroboratingEvidence": [],
+      "access": {
+        "state": "AVAILABLE",
+        "checkedAt": "2026-10-30T02:30:29.596267+00:00",
+        "reason": "Officially linked original PDF retrieved within explicit 64MiB cap; rights/currentness/admission remain pending."
+      },
+      "revisionId": "sha256:a43990a247ab8afcd044657a4cfbd262d6495c4b03cc7998f80039d1ae03db0c"
     }
   ],
   "events": [
@@ -4268,6 +4316,70 @@
       "sequence": 106,
       "previousDigest": "sha256:d078ea6d9012b3c849f368fd44fe1a4df9f50fd3f4900fd9ca74018e07ea0fd0",
       "digest": "sha256:b48cb25a4103d2c2c1237c45147cd202037902a8e4b5b8f2333223f1e361d9e1"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:smrc-annual-report-2025-retrieved:20261030",
+      "sourceRevision": "sha256:a43990a247ab8afcd044657a4cfbd262d6495c4b03cc7998f80039d1ae03db0c",
+      "stage": "DISCOVERED",
+      "evidence": {
+        "actor": "public-source-research",
+        "at": "2026-10-30T02:30:29.596267+00:00",
+        "reason": "Append actual public-source observation; rights, legal currency and human admission remain pending."
+      },
+      "sequence": 107,
+      "previousDigest": "sha256:b48cb25a4103d2c2c1237c45147cd202037902a8e4b5b8f2333223f1e361d9e1",
+      "digest": "sha256:35ee80d0ea4b4d80939948955736e01c59f51db7d1c73a11b483708f4629d38c"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:smrc-annual-report-2025-retrieved:20261030",
+      "sourceRevision": "sha256:a43990a247ab8afcd044657a4cfbd262d6495c4b03cc7998f80039d1ae03db0c",
+      "stage": "DIRECTORY_OBSERVED",
+      "evidence": {
+        "url": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+        "directoryDigest": "sha256:1637d6aa3a53a1a0b23ad2f54964d55394f03736b95041685ed6f3d5292ece2c",
+        "actor": "public-source-research",
+        "at": "2026-10-30T02:30:29.596267+00:00",
+        "reason": "Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred."
+      },
+      "sequence": 108,
+      "previousDigest": "sha256:35ee80d0ea4b4d80939948955736e01c59f51db7d1c73a11b483708f4629d38c",
+      "digest": "sha256:13d9cbada4ebbe1e5c183daeaeb3c0270f023ec7a998bdfe649cf6a4004e4e5b"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:smrc-annual-report-2025-retrieved:20261030",
+      "sourceRevision": "sha256:a43990a247ab8afcd044657a4cfbd262d6495c4b03cc7998f80039d1ae03db0c",
+      "stage": "SOURCE_RETRIEVED",
+      "evidence": {
+        "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/2/council/ipr/annual-reports/2025-annual-report-v3.1-20251127-endorsed-with-statements-final.pdf",
+        "retrievedAt": "2026-10-30T02:30:29.596267+00:00",
+        "httpStatus": 200,
+        "byteLength": 59485890,
+        "rawDigest": "sha256:39fd5776dc2578cdaaee49939841b1ad9300fc6d13f131212c52db4e93e72d4b",
+        "actor": "public-source-research",
+        "at": "2026-10-30T02:30:29.596267+00:00",
+        "reason": "Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred."
+      },
+      "sequence": 109,
+      "previousDigest": "sha256:13d9cbada4ebbe1e5c183daeaeb3c0270f023ec7a998bdfe649cf6a4004e4e5b",
+      "digest": "sha256:b6b1a9f3aa46708dbe4150395d51b219bab119b51cf1bc389b30ebb7618adbd5"
+    },
+    {
+      "operation": "STAGE",
+      "sourceId": "csoi:smrc-annual-report-2025-retrieved:20261030",
+      "sourceRevision": "sha256:a43990a247ab8afcd044657a4cfbd262d6495c4b03cc7998f80039d1ae03db0c",
+      "stage": "RAW_BYTES_VERIFIED",
+      "evidence": {
+        "rawDigest": "sha256:39fd5776dc2578cdaaee49939841b1ad9300fc6d13f131212c52db4e93e72d4b",
+        "actor": "public-source-research",
+        "at": "2026-10-30T02:30:29.596267+00:00",
+        "reason": "Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred."
+      },
+      "sequence": 110,
+      "previousDigest": "sha256:b6b1a9f3aa46708dbe4150395d51b219bab119b51cf1bc389b30ebb7618adbd5",
+      "digest": "sha256:8c405a44c15176f7a329990856063522253472fefa025506b8cd48cd94d85abe"
     }
   ]
 }

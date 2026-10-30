@@ -2,7 +2,7 @@
 
 A route-first, local research application for exploring strategy, work, quantities, sources and audit history. It extends the original 15 stations and 127 content records. No package installation, backend, paid API or production deployment is required.
 
-**V1.6 status: PARTIAL, not a complete authoritative Atlas.** The bounded software workflows below run and have real Node/Chromium evidence. The latest runtime recovery retrieved and byte/anchor-verified the CSP summary; catalogue intake and source rights/version/review gates remain incomplete. No official relationship, Council expenditure, achieved outcome or parcel-level legal applicability is admitted. V1.7 task acceptance awaits its supplied authoritative handoff files; no COI task is claimed VERIFIED. See [NEXT_SESSION.md](NEXT_SESSION.md) and the [V1.6 taskbook](../../docs/research/public-strategy-atlas/FOUNDER_V1_6_COMPLETE_SYSTEM_BUILD_MASTER_TASKBOOK_20261029.md).
+**V1.7 system acceptance: PARTIAL.** All eight engineering packs have executable public/synthetic capabilities over the existing Atlas registry. The recovered authoritative 80-task handoff is tracked in [the task registry](COI_TASK_REGISTRY_V1_7.json); VERIFIED applies only to the stated code/test scope. Current source coverage has 23 successful original-byte receipts across 42 catalogue records, with 20 attributed research notes and five published planning records. Source rights, current legal versions, complete corpus coverage and authorised admission remain pending. No official relationship, Council expenditure, achieved outcome or parcel-level legal applicability is admitted. See [the acceptance report](qa/CSOI_V1_7_SYSTEM_RESULTS.md), [NEXT_SESSION.md](NEXT_SESSION.md) and the [V1.6 taskbook](../../docs/research/public-strategy-atlas/FOUNDER_V1_6_COMPLETE_SYSTEM_BUILD_MASTER_TASKBOOK_20261029.md).
 
 ## Run
 
@@ -12,6 +12,10 @@ python3 -m http.server 8877 --bind 127.0.0.1
 ```
 
 Use a browser against the local server. Scripts are classic scripts and have no external runtime calls. Services must restart in a new task; live browser storage and processes are not durable GitHub delivery.
+
+The route map stays the homepage. The navigation menu opens bookmarkable hash routes such as `/#/strategy/csp`, `/#/domains/phe/food`, `/#/domains/wcos/ltw`, `/#/calendar`, `/#/metrics` and `/#/sources`. Companion windows use independent public state and `noopener`; unsaved edits are transferred only through an explicitly verified snapshot import.
+
+V1.7 workspaces include public PHE source/condition chains; read-only synthetic WCOS contracts; L0–L5 lineage with independent calculation replay and source-withdrawal invalidation; service-specific workload/resource denominators; calendar/fiscal Annual Editions down to task/brief/evidence/follow-up/report; and draft-only Michele weekly/meeting preparation. Calendar/task/draft retention appends immutable revisions in the same registry. Outlook actions and formal Council decisions are disabled. The original private WCOS contract remains unavailable; no production compatibility is claimed.
 
 ## Working flows
 
@@ -23,7 +27,7 @@ Use a browser against the local server. Scripts are classic scripts and have no 
 - **Where & when** checks exact area, spatial grain, effective dates, source revision and legal role. Explicit synthetic wrong-region/draft/expired cases are rejected. A scope match is not legal approval. No actual GIS polygon/parcel determination is supplied.
 - **Discovery & challenge** generates explainable candidates with signals, paths, alternatives, falsifiers and counterevidence. Local question/review records are versioned. `KNOWN_LINK` stays UNKNOWN without configured official admission; similarity never grants authority.
 - Header search and **Search & questions** cover original content, work, quantities/units, source records and local research. Type/region/as-of filters, unknown-scope labels and result pages are explicit.
-- **Coverage & source gaps** shows 15 research requirements across 14 families and 2 known concrete CSP URLs. This is not a complete official document inventory. Fresh retrieved/extracted/version-confirmed/admitted counts in this catalogue are zero. Prior source receipts remain separately labelled historical evidence.
+- **Coverage & source gaps** separates software tasks, public corpus, relationship review, data quality and actual outcome KPIs. The active catalogue extends the immutable original requirements with source receipts and pending statutory leads. Complete inventory coverage and actual Council KPIs stay UNKNOWN; formal source extraction, current-version confirmation and official admission remain zero.
 - **Audit & receipts** shows paged base/domain/source events and field-level revision differences. No digest is an official signature, independent witness, legal opinion or proof of semantic truth.
 
 ## Content capacity and tables
@@ -55,10 +59,10 @@ From repository root:
 
 ```sh
 node apps/public-strategy-atlas/run-tests.cjs /tmp/atlas-native.json
-node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' apps/public-strategy-atlas/*.test.cjs
-python3 apps/public-strategy-atlas/qa/run-browser-suite.py
+node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs
+python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py
 ```
 
-Browser tests require engineering Python Playwright and system Chromium, with the local server running. They are not app dependencies. Actual results, screenshots, runtime versions, coverage, limits and acceptance verdicts are recorded under `qa/`. Mock-DOM historical preview tests are labelled separately from real Chromium acceptance. Full professional screen-reader/WCAG, physical touch and cross-browser certification are not claimed.
+Browser tests require engineering Python Playwright and system Chromium. The harness runs a temporary localhost server for the suite lifetime. These are not app dependencies. Actual results, screenshots, runtime versions, coverage, limits and acceptance verdicts are recorded under `qa/`. Node coverage measures loaded modules and is not browser rendering coverage. Mock-DOM historical preview tests are labelled separately from real Chromium acceptance. Full professional screen-reader/WCAG, physical touch and cross-browser certification are not claimed.
 
 All work remains on `feature/public-strategy-atlas-web-mvp-20261029`, Draft PR #130. No merge, deployment, main/PR129 change, paid infrastructure, Council nonpublic records or government endorsement.

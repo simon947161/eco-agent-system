@@ -70,8 +70,14 @@ with sync_playwright() as p:
         tool(page,'exportBtn')
     snapshot = TEMP/'snapshot.json'
     download_info.value.save_as(str(snapshot))
-    subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(snapshot),page.evaluate('AtlasModel.migrateDataset(AtlasData,AtlasAccounting.cases,AtlasSourceCatalogue).then(d=>AtlasModel.objectDigest(d))')],check=True)
-    passed('Browser-exported base snapshot independently verified against frozen checkpoint')
+    legacy_digest = page.evaluate('AtlasModel.migrateDataset(AtlasData,AtlasAccounting.cases,AtlasSourceCatalogue).then(d=>AtlasModel.objectDigest(d))')
+    assert legacy_digest == 'sha256:6236a12009115cd338e1f1c0db75906b4dbf4139d85bed84397c471e40a872fc', legacy_digest
+    expected_digest = page.evaluate('''async()=>{
+        const d=await AtlasModel.migrateDataset(AtlasData,AtlasAccounting.cases,CsoiRegisteredSources);
+        return AtlasModel.objectDigest(await CsoiIntake.registerSummaries(d,CsoiSourceObservations));
+    }''')
+    subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(snapshot),expected_digest],check=True)
+    passed('Frozen legacy checkpoint unchanged; extended browser snapshot independently reconstructed and verified')
     page.locator('#toolsMenu > summary').click() if page.locator('#toolsMenu').get_attribute('open') is not None else None
     station(page,'csp6')
     page.get_by_role('button',name='Explore inside',exact=True).click()

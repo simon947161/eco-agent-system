@@ -30,6 +30,7 @@ function validate(d){
   if(e.kind==='FinancialEntry'&&(!['APPROVED_BUDGET','REVISED_BUDGET','COMMITTED','ACTUAL_EXPENDITURE'].includes(e.data.type)||e.data.unit!=='AUD'||!Number.isFinite(e.data.value)||e.data.value<0||typeof e.data.period!=='string'||!e.data.area||!e.data.boundary))errors.push('DOMAIN_FINANCIAL:'+e.id);
   if(['ML','ha','t_CO2e/person'].includes(e.data?.unit)&&e.data.value!=='UNKNOWN'&&(!Number.isFinite(e.data.value)||e.data.value<0))errors.push('DOMAIN_QUANTITY:'+e.id);
   if(e.kind==='QuantifiedObservation'&&(!e.data.unit||e.data.value!=='UNKNOWN'&&!(typeof e.data.value==='number'&&Number.isFinite(e.data.value))))errors.push('DOMAIN_MEASUREMENT:'+e.id);
+  if(e.kind==='QuantifiedObservation'&&e.data.csoiRecord){const q=e.data.csoiRecord.data.measurement;if(!q||['value','unit','role','meaning','area','boundary'].some(key=>q[key]!==e.data[key])||q.period?.from!==e.data.period?.from||q.period?.to!==e.data.period?.to)errors.push('DOMAIN_MEASUREMENT_RECEIPT_MISMATCH:'+e.id);}
  }
  for(const a of x.assertions){
   if(!PREDICATES.has(a.predicate)||!ids.has(a.from)||!ids.has(a.to)||!Array.isArray(a.evidenceRefs)||!Array.isArray(a.counterevidenceRefs)||!a.method||!a.scope)errors.push('DOMAIN_ASSERTION:'+a.id);
@@ -47,8 +48,8 @@ async function verify(d,m){
   if(x.sourceCatalogue){const intake=typeof module!=='undefined'?require('./atlas-intake.js'):root.AtlasIntake;if(!intake||!await intake.verifyCatalogue(x.sourceCatalogue))return false;}
   const publicGuard=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;
   for(const revision of x.revisions){const data=revision.record?.data;if((data?.csoiTask||data?.assistantDraft)&&!publicGuard)return false;if(publicGuard&&data&&publicGuard.inspectPayload(data).length)return false;
-   if(data?.csoiTask){const calendar=typeof module!=='undefined'?require('./csoi-calendar.js'):root.AtlasCSOICalendar;if(!calendar||data.csoiTask.classification!=='SYNTHETIC')return false;calendar.validateTask(data.csoiTask);}
-   if(data?.assistantDraft){const assistant=typeof module!=='undefined'?require('./csoi-assistant.js'):root.AtlasCSOIAssistant;if(!assistant||data.assistantDraft.classification!=='SYNTHETIC')return false;assistant.validateDraft(data.assistantDraft);}
+   if(data?.csoiTask){const calendar=typeof module!=='undefined'?require('./csoi-calendar.js'):root.AtlasCSOICalendar;if(!calendar||data.csoiTask.classification!=='SYNTHETIC'||data.csoiTask.id!==revision.record.id)return false;calendar.validateTask(data.csoiTask);}
+   if(data?.assistantDraft){const assistant=typeof module!=='undefined'?require('./csoi-assistant.js'):root.AtlasCSOIAssistant;if(!assistant||data.assistantDraft.classification!=='SYNTHETIC'||data.assistantDraft.id!==revision.record.id)return false;assistant.validateDraft(data.assistantDraft);}
   }
   const csoiRecords=x.revisions.filter(r=>r.record?.data?.csoiRecord).map(r=>r.record.data.csoiRecord);
   if(csoiRecords.length){const governance=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;if(!governance)return false;for(const record of csoiRecords){if(!await governance.verifyRecord(record)||!governance.assessPublic(record,{operation:'STORAGE'}).allowed)return false;if(record.layer==='L3'&&record.data.receipt){const layers=typeof module!=='undefined'?require('./csoi-layers.js'):root.AtlasCSOILayers;if(!layers||!(await layers.verifyDerivation(d,record)).integrity)return false;}}}
@@ -145,7 +146,9 @@ async function registerResearchRecord(d,m,{record,kind='ContentBlock',label,stat
  if(!await verify(d,m)||index(d).has(record.id)||!TYPES.has(kind)||['ReviewDecision','AuditReceipt','DiscoveryHypothesis'].includes(kind)||!d.nodes.some(n=>n.id===stationId)||!label||!reason)throw Error('CSOI_REGISTRATION_INVALID');
  if(!researchInputsPresent(d,record))throw Error('CSOI_INPUT_REVISION_MISSING');
  const synthetic=record.sourceClass==='SYNTHETIC',result=structuredClone(d);
- result.domain.entities.push(await addRevision(result.domain,{id:record.id,kind,label,stationId,data:{status:synthetic?'SYNTHETIC':'PUBLIC_TEXT_OBSERVED',csoiRecord:structuredClone(record)},scope:record.scope,state:synthetic?'PROPOSED':'SOURCE_OBSERVED',classification:synthetic?'SYNTHETIC_SCENARIO':'LOCAL_RESEARCH',admission:synthetic?'NOT_APPLICABLE':'PENDING',provenance:synthetic?null:record.provenance,gaps:['Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship.']},m,{reason,observedAt:record.observedAt}));
+ const measurement=kind==='QuantifiedObservation'?record.data.measurement:null;
+ if(kind==='QuantifiedObservation'&&(!measurement||typeof measurement.unit!=='string'||!(measurement.value==='UNKNOWN'||Number.isFinite(measurement.value))))throw Error('CSOI_MEASUREMENT_REQUIRED');
+ result.domain.entities.push(await addRevision(result.domain,{id:record.id,kind,label,stationId,data:{...(measurement||{}),status:synthetic?'SYNTHETIC':'PUBLIC_TEXT_OBSERVED',csoiRecord:structuredClone(record)},scope:record.scope,state:synthetic?'PROPOSED':'SOURCE_OBSERVED',classification:synthetic?'SYNTHETIC_SCENARIO':'LOCAL_RESEARCH',admission:synthetic?'NOT_APPLICABLE':'PENDING',provenance:synthetic?null:record.provenance,gaps:['Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship.']},m,{reason,observedAt:record.observedAt}));
  if(!await verify(result,m))throw Error('CSOI_REGISTRATION_INVALID');return result;
 }
 async function reviseResearchRecord(d,m,{id,expectedRevisionId,record,reason}){

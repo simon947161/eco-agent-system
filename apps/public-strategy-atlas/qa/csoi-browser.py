@@ -1,6 +1,6 @@
 """Actual CSOI hash-route acceptance, standalone localhost only; no deployment."""
 from pathlib import Path
-import json, os
+import json, os, datetime, hashlib
 from playwright.sync_api import sync_playwright, expect
 
 APP = Path(__file__).resolve().parents[1]
@@ -8,6 +8,7 @@ OUT = APP / 'qa' / 'csoi'
 OUT.mkdir(exist_ok=True)
 BASE = os.environ.get('ATLAS_URL', 'http://127.0.0.1:8877/').rstrip('/') + '/'
 ROUTES = {
+    '/data': 'Data layers and evidence',
     '/strategy': 'Strategy and plans',
     '/knowledge/csp%3Acontent': 'Inside the knowledge',
     '/domains/wcos': 'WCOS — controlled interface',
@@ -35,7 +36,7 @@ PACK=os.environ.get('CSOI_PACK','H')
 with sync_playwright() as p:
     browser=p.chromium.launch(executable_path='/usr/bin/chromium', headless=True, args=['--no-sandbox'])
     for width,height in [(1440,900),(390,844),(1600,900),(2560,1080),(3840,1080)]:
-        context=browser.new_context(viewport={'width':width,'height':height}, reduced_motion='reduce')
+        context=browser.new_context(viewport={'width':width,'height':height}, reduced_motion='reduce',has_touch=width==390)
         page=context.new_page(); errors=[]
         page.on('pageerror',lambda error: errors.append(str(error)))
         page.goto(BASE)
@@ -95,10 +96,15 @@ with sync_playwright() as p:
         page.locator('#csoiNavigation a[href="\u0023/domains/phe"]').click()
         expect(page.locator('#csoiWorkspace h1')).to_have_text('Public health and environment')
         page.screenshot(path=str(OUT/f'phe-{width}.png'))
+        if width==390:
+            (OUT/'accessibility-h-390.txt').write_text(page.locator('body').aria_snapshot())
+            page.locator('#csoiNavigation>summary').tap()
+            page.locator('#csoiNavigation a[href="\u0023/calendar"]').tap()
+            expect(page.locator('#csoiWorkspace h1')).to_have_text('Operational year')
         assert not errors,errors
         results.append({'viewport':{'width':width,'height':height},'routes':len(ROUTES),'status':'PASS_TESTED_HERE','browserErrors':errors})
         scope='page shells (calendar/draft engines deferred)' if PACK=='A' else 'calendar and draft assistant'
         print(f'PASS: {width}×{height} {len(ROUTES)} routes, back/forward/reload, source filter/HTML rejection, independent companion, {scope}',flush=True)
         context.close()
     browser.close()
-(OUT/('browser-'+PACK.lower()+'.json')).write_text(json.dumps({'runner':'csoi-browser-1','pack':PACK,'calendarAndAssistantChecks':'NOT_TESTED_PACK_A' if PACK=='A' else 'EXECUTED','results':results},indent=2)+'\n')
+(OUT/('browser-'+PACK.lower()+'.json')).write_text(json.dumps({'runner':'csoi-browser-1','generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'testedFiles':{name:'sha256:'+hashlib.sha256((APP/name).read_bytes()).hexdigest() for name in ['atlas.js','atlas-domain.js','atlas-model.js','csoi-pages.js','csoi-router.js','csoi-governance.js']},'physicalTouch':'NOT_TESTED','mobileTouch':'EMULATED_TAP' if PACK!='A' else 'EMULATED','pack':PACK,'calendarAndAssistantChecks':'NOT_TESTED_PACK_A' if PACK=='A' else 'EXECUTED','results':results},indent=2)+'\n')
