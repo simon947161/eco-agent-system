@@ -1,6 +1,6 @@
 {
   "format": "csoi-v17-current-results-1",
-  "at": "2026-10-31T08:57:43.205413+00:00",
+  "at": "2026-10-31T10:54:38.814787+00:00",
   "systemAcceptance": "PARTIAL",
   "softwareStatus": "PARTIAL",
   "taskCounts": {
@@ -19,8 +19,10 @@
     "researchNoteSources": 23,
     "publishedPlanningRecords": 5,
     "completeInventory": "UNKNOWN",
-    "authoredClauseObservations": 72,
-    "historicalDesignReferences": 3
+    "authoredClauseObservations": 74,
+    "historicalDesignReferences": 3,
+    "activeDcpObservations": 73,
+    "withdrawnDcpObservations": 1
   },
   "officialAdmission": {
     "status": "PENDING",
@@ -31,30 +33,16 @@
   },
   "native": {
     "status": "PASS_TESTED_HERE",
-    "filesPassed": 38,
-    "evidence": "csoi/native-phe-bombala.json"
+    "filesPassed": 40,
+    "evidence": "remediation/phase1-native.json",
+    "additionalTargetedKnowledgeContract": "remediation/phase1-knowledge-contract-native.log",
+    "totalDistinctFilesPassed": 41
   },
   "browser": {
     "status": "PASS_TESTED_HERE",
-    "currentLeafSuitesPassed": 16,
-    "affectedSuitesPassed": 10,
-    "legacySuitesPassed": 6,
-    "navigationRoutes": 24,
-    "viewports": 5,
-    "latestAffectedSuites": [
-      "csoi/browser-phe-context.json",
-      "csoi/browser-bombala.json",
-      "csoi/phe-bombala-regression/csoi/browser-e.json",
-      "csoi/phe-bombala-regression/csoi/browser-cooma.json",
-      "csoi/phe-bombala-regression/csoi/browser-clauses.json",
-      "csoi/phe-bombala-regression/csoi/browser-paths.json",
-      "csoi/phe-bombala-regression/csoi/browser-review-work.json",
-      "csoi/phe-bombala-regression/csoi/browser-g-detail.json",
-      "csoi/phe-bombala-regression/csoi/browser-b.json",
-      "csoi/phe-bombala-regression/csoi/browser-h.json"
-    ],
-    "legacyRegression": "csoi/phe-bombala-regression/system/browser-e10.json",
-    "latestRegressionLog": "csoi/browser-phe-bombala.log"
+    "scope": "Currentphase1realdesktop1440/mobile390sourcecorrections,exports,notes,withdrawal;olderfullregressionretainedhistorical",
+    "evidence": "remediation/phase1-browser-results.json",
+    "priorFullRegression": "csoi/browser-phe-bombala.log"
   },
   "nodeCoverage": {
     "lines": 91.38,
@@ -64,7 +52,7 @@
     "evidence": "csoi/coverage-cooma.txt",
     "status": "HISTORICAL_NOT_RERUN_THIS_BATCH"
   },
-  "defaultSnapshotDigest": "sha256:621a3a17781a60ae7b18f0006fc98cf498292b1f5d49ae52e4c4776478f967dd",
+  "defaultSnapshotDigest": "sha256:53841d668ffdb78a42edb9ad515a64dcb6956dd390b6c777531f2c4d72311375",
   "pr": {
     "number": 130,
     "state": "OPEN_DRAFT",
@@ -79,36 +67,25 @@
     "private WCOS/Outlook compatibility",
     "independent privacy/legal certification"
   ],
-  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_phe_bombala_batch",
+  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_integrity_remediation.code_sha",
   "codeManifest": {
-    "atlas.js": "sha256:9b0594a8881504e5290cf6f3dc2d742860549b2209e24232ea5f36eb772146ca",
-    "csoi-boot.js": "sha256:49ad12d9a19fb51a1fc2e73e83ee516f36b390fdb8d70b43b86c80936c4d9f16",
-    "csoi-boot.test.cjs": "sha256:0f64b0e26fe5f964efec2c90c4d0fd97e6b1cf6589330707ac5f08b04ae529db",
-    "tools/build-csoi-boot.cjs": "sha256:a9e4a8bb8b3856d3263580055150eae1ed59c19d6c4a0a4a4a22a47400716de9",
-    "sources/csoi-default-snapshot.js": "sha256:fd8fa5ca562cf82edb4e12e4149021340910c45dce4bfd87b38cd74f2aee5a9c",
-    "csoi-pages.js": "sha256:d6e690fd0e7e763bf763286f7ba5db13ee338a88025f099dbf4b7a7b64cf5a6b",
-    "csoi-phe.js": "sha256:438bd49e7f4b27c22bdb03758c57c4a6e9273bdc898f1151a86af15b457cc3b1",
-    "csoi-intake.js": "sha256:5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
-    "index.html": "sha256:bc1fba78a4ee7c9e16d9b4d1d0867a84bc79fba8bafa92d3f053b5216ce691bc",
-    "tools/sync-csoi-outline.cjs": "sha256:f5a75ae3d59e41e166fbc584b7bcd12fafad21160e09680636b2acad5f45814e",
-    "csoi-phe-context.test.cjs": "sha256:d4dca837a491002f3971ccc32677d6d756471ee5bd4c895de4160dc02822097e",
-    "csoi-bombala.test.cjs": "sha256:9d096418db6a9f9c139e7fedce35edacd542e77ea6de539aab40b2f6dae527c9",
-    "csoi-cooma.test.cjs": "sha256:703c279abebfa1cf23f7b418018a30c68afca9020d4511da484e7f63594d226b",
-    "qa/csoi-phe-context-browser.py": "sha256:0636c9b13fab57bae172161b3131d90211af1e64ffd6fd885bb988271b958bc9",
-    "qa/csoi-bombala-browser.py": "sha256:091147a15b7a421ba737a08c02f0a3053a0c3db52b907db750107ee75b434ce3",
-    "qa/csoi-cooma-browser.py": "sha256:97a0aa2a8a8647ad8461b7227e022b9db536dc72d23c9388308689523cca921e",
-    "qa/run-local-browser.py": "sha256:b7dbe9d9787e435117418f3794f31ae5322a10e0667ab00a4cab5b53ff448348",
-    "sources/bombala-dcp-outline.json": "sha256:e2b30d6bbc387281ff789f9130136461a951f07163a80e760a0512f5f05d9853",
-    "sources/bombala-dcp-outline.js": "sha256:a04dd1cb841b1de6100feac873c59d14076ee8a9bf35ea746d045d2a46cb1a08",
-    "sources/bombala-dcp-outline-anchors.json": "sha256:703022dab989edc12704ee235608e74f89d769da818a625adc2b6bd936fd8df6"
+    "atlas-domain.js": "sha256:b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+    "csoi-paths.js": "sha256:cb8e0702246d0cf1958ca494f444773bd03daebce62961784e4c1c3841b14a44",
+    "csoi-clauses.js": "sha256:f9b3f8c4b7a2aabec9ee0aa3928e03b31bebcbb87ce289441ee32712c876cc86",
+    "csoi-remediation.js": "sha256:b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",
+    "csoi-knowledge.js": "sha256:2377f1c0a8e4717512d688b091a656fa016d9b8e6193543e030f850a227f0229",
+    "csoi-pages.js": "sha256:a7c617a1e835ec54b6681a42d8c5e68610d729bf881e75f1590708b6fcccfa81",
+    "index.html": "sha256:0fa241853f2932234cefb374d73b7073390f0a4b3e97b4db2974340663fc4a11",
+    "sources/csoi-default-snapshot.js": "sha256:0ede52c98bdd3d2bf08630e2d307bd7565f401f768965c33ae5e8040d8862b85"
   },
-  "report": "CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+  "report": "remediation/PHASE1_ACCEPTANCE_20261031.md",
   "latestSourceBatch": "csoi/snowy-source-results.json",
   "latestClauseBatch": "csoi/clause-results.json",
   "latestPathBatch": "csoi/path-results.json",
   "latestReviewCalendarBatch": "csoi/review-calendar-results.json",
-  "defaultDomainEntities": 135,
+  "defaultDomainEntities": 137,
   "defaultDomainAssertions": 48,
   "latestCoomaBatch": "csoi/cooma-results.json",
-  "latestPheBombalaBatch": "csoi/phe-bombala-results.json"
+  "latestPheBombalaBatch": "csoi/phe-bombala-results.json",
+  "latestIntegrityRemediation": "remediation/PHASE1_ACCEPTANCE_20261031.md"
 }

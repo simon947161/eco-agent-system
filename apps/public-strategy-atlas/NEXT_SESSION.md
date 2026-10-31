@@ -1,3 +1,17 @@
+# P0/P1 integrity remediation phase1 — verified; full system PARTIAL
+
+Pushed verified code/evidence: `cca314ce244235895779676a222e22537949dcc8`, based on audited remoteHEAD `744ab46b2bec2ad601da0c4ae528694a4c982154`. This continuity commit follows code; resolve current remote branch/PR130 HEAD on resume. KeepPR130Draft, no merge/deployment. Existing owner-only Site and protected water Site/config are untouched; new GitHub code is not automatically deployed.
+
+Full Chinese audit report, Excel ALL worksheets and reproduction scripts read and archived under `qa/remediation/audit-baseline/`; receipt `audit-intake.json`. Append-only30corrections preserve original135entities/183revision+event prefix: withdraw wrongSnowy§4.1drainage ID, addcorrect§4.2parent+conditionalleaf, AMP Table4PDF13locator, sourceinputs for25notes,110MINIMUM/≥. New137entities/48assertions/127legacyitems. Digest `sha256:53841d668ffdb78a42edb9ad515a64dcb6956dd390b6c777531f2c4d72311375`. Fullold/newrecords andoriginalcitations inphase1-record-before-after.json/phase1-before-after.csv; sixindependentoriginalpagechecks incorrections-original-verification.json.
+
+SourceID/digest/URL/revision/locator consistency enforced forretainedhistory; validlegacyemptyinputs importable, current25notespinned. Recursive node-only source/upstreamwithdrawal invalidatescurrentcontext whilehistoricalproofintegrity remains. Newknowledgecontract rejects wrongscope/quantity/category/actual/authority/rights/fake relationtargets. Noofficialadmission orCouncilassignment.
+
+Actual40/40native runnerfilesPASS plusnewknowledgecontracttargetPASS (41distinctfiles); real1440/390browser sourcecorrections, all50note links,25pins+oldhistories,independentexports/proofs, explicitmemorywithdrawal/import/isolationPASS. Report `qa/remediation/PHASE1_ACCEPTANCE_20261031.md`; latestmachine `qa/CSOI_V1_7_CURRENT_RESULTS.json`. Historicalfull38/16run isnot relabelled current. Fullsystem/corpusPARTIAL;49VERIFIED/28PARTIAL/3BLOCKED unchanged; rights/currentlaw/admissionUNKNOWN/PENDING.
+
+NEXT already-authorised implementation: integrate uncommitted source-primaryJSON forCSP63metrics+14objectives/44strategies andLSPS12priorities+83actions through `csoi-knowledge.js` intoexistingdomain/cache/UI. Independentexactoriginalcolumnverifiers prepared `tools/verify-csp-knowledge.py`/`verify-lsps-knowledge.py`, manifests/evidence qa/remediation. ThenOP73–74 source-backed8wateractivities/52.5FTEplan with9explicitCSP8.2/12.2 references, no carboncausalclaim. All3dataagents completed originalsverified andportabletools; filesworkingtreeuncommittedpendingmodelintegration (not yetshipped). Buildbrowsermirrors, extendbootinputs/cache andstructuredwebnavigation; supersedeoldunpinned29.9recordbycanonicalsource-pinnedmetric whilekeepinghistory. Test all63/12/83/8recordscensuses,7519query,typedsourcepath andwithdrawals; produceboundedcoveragechange/fullremaininggaps andFounderacceptancereport. No paid/private services, no Councilinternal/WCOSdata orautomaticofficialrelationships.
+
+--- Previous checkpoint ---
+
 # Owner-private Council trial published — 31 October 2026
 
 Live URL: https://council-strategy-intelligence.minshu.chatgpt.site — Sites v1, owner-only custom access (one owner, zero editors/groups/external visitors). Keep and reuse app-scoped `.openai/hosting.json` project `appgprj_6ae5b063565c8191802c9d7f7eb3214b`; never recreate it or reuse the water Site binding.
