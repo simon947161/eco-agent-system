@@ -1,0 +1,72 @@
+{
+  "schema": "climateos.p04.rainfall_source_candidate.v1",
+  "status": "BLOCKED_EXACT_DAILY_MONTHLY_LINEAGE_UNVERIFIED",
+  "month": "2000-07",
+  "cell": {
+    "latitude": -36.25,
+    "longitude": 149.1,
+    "nci_latitude_index": 525,
+    "nci_longitude_index": 742
+  },
+  "accepted_monthly_value_mm": 11.300000190734863,
+  "accepted_monthly_evidence": "../p04_awra_20261031/month-rain_day.dods",
+  "candidate_service": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer",
+  "candidate_status": "OFFICIAL_HISTORICAL_PRODUCT_FAMILY_CANDIDATE_NOT_ADMITTED_AS_EXACT_NCI_COUNTERPART",
+  "variable": {
+    "name": "rain_day",
+    "unit": "mm",
+    "dimensions": [
+      {
+        "name": "StdTime",
+        "field": "StdTime",
+        "description": "time",
+        "unit": "ISO8601",
+        "interval": 1,
+        "hasRegularIntervals": true,
+        "intervalUnit": "Days",
+        "extent": [
+          473385600000,
+          1104451200000
+        ],
+        "hasRanges": false
+      }
+    ]
+  },
+  "grid_metadata": {
+    "extent": {
+      "xmin": 111.975,
+      "ymin": -44.025000000000006,
+      "xmax": 154.025,
+      "ymax": -9.975,
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      }
+    },
+    "pixelSizeX": 0.05000000000000002,
+    "pixelSizeY": 0.05000000000000001,
+    "pixelType": "F32",
+    "noDataValue": 3.4e+38,
+    "compressionType": "LERC2D",
+    "defaultResamplingMethod": "Bilinear"
+  },
+  "source_mapping": {
+    "same_provider": true,
+    "historical_awo_family_documented": true,
+    "nci_historical_model_version_documented": "AWRA-L v7",
+    "exact_archive_source_revision_to_nci_monthly_mapping": null,
+    "daily_physical_sample_acquired": false,
+    "monthly_sum_compared": false
+  },
+  "blocked_inventory_request": {
+    "url": "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/Hosted/file_download_inventory_multivariable_all_data/FeatureServer/0?f=pjson",
+    "http_status": 200,
+    "arcgis_error_code": 499,
+    "message": "Token Required",
+    "outcome": "CONFIRMED_APPLICATION_LEVEL_ACCESS_DENIAL",
+    "retry_count": 0,
+    "token_acquired": false
+  },
+  "scientific_admission": false,
+  "cross_source_numeric_join": "BLOCKED"
+}

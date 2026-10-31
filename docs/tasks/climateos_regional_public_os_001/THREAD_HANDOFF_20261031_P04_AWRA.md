@@ -52,3 +52,19 @@ Founder does not need to locate files, transfer taskbooks or supply credentials
 for this completed batch. This is one engineering batch within ongoing
 ClimateOS work; it is not full product delivery. End human reports explicitly
 with “本次汇报讲完了；ClimateOS 整体工程尚未完成。”
+
+## Rainfall-only continuation after independent review
+
+See `P04_RAINFALL_LINEAGE_REVIEW_20261031.md`. The previous next-step search was
+executed and this bounded batch is now stopped as BLOCKED exact lineage.
+AWDS official daily rain archive1985–2004 is a candidate on the compatible grid;
+BOM documents near-real-time daily inputs aggregated for AWO rainfall. Exact
+input edition/revision mapping to the captured NCI monthly file is still missing.
+The read-only AWO download-inventory schema returned HTTP200 with ArcGIS499
+Token Required: confirmed provider access denial, stopped without retry, token
+acquisition or credential action. No known404 retry, physical candidate sample,
+soil rerun or substitution occurred. Resume only on new product-specific official
+source mapping/clarification; the unsent source question is in the review.
+No Founder credential/file action is requested. Previous full regression is
+still the accepted baseline result; this documentation continuation validated
+its own saved metadata/JSON/hash receipts only.

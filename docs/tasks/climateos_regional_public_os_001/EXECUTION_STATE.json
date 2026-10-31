@@ -51,7 +51,7 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "P04 only: identify an officially documented daily rainfall counterpart/lineage for exact NCI monthly rain_day.nc so the same-cell July 2000 sum can be checked. Current documented-convention daily candidate returns HTTP 404 and is absent from inspected catalogues. Reuse the completed July2000 soil mean-vs-final-day reproduction; do not redo it or HRS reducer/soil-scale reviews. Keep numerical join blocked pending rain evidence, HRS DST/interval, monthly QC/completeness and catchment numeric admission. Provider contact remains UNSENT; Sites v2 and WaterNSW unchanged.",
+  "next_action": "P04 rainfall-only bounded continuation stopped as BLOCKED_EXACT_LINEAGE_UNVERIFIED. Official AWDS daily rain archive1985-2004 is a candidate, but its daily input edition/revision mapping to the captured NCI monthly rain_day.nc is not established. Resume only with new official product-specific mapping or a separately authorized clarification. Download-inventory schema returned ArcGIS499 Token Required; no retry/token/credential action. Do not repeat known404 or completed soil/HRS/scale work. See P04_RAINFALL_LINEAGE_REVIEW_20261031.md.",
   "blockers": [
     {
       "scope": "P03_recent_operational_adapter",
@@ -61,7 +61,7 @@
     {
       "scope": "P04_scientific_execution",
       "status": "BLOCKED_NUMERIC_JOIN",
-      "reason": "July2000 same-cell exact NCI sm_pct empirically matches 31-day mean, not final day; this is not a general product-contract proof. Rainfall comparison is blocked: monthly sample captured but convention-derived daily rain_day_2000.nc endpoint returns HTTP404 and is absent from inspected official catalogues; matched daily product/lineage missing. HRS DST/interval/date handling, monthly QC/completeness and basin numeric completeness/scientific equivalence remain independently unresolved."
+      "reason": "The accepted July2000 soil comparison remains sample-specific empirical mean agreement, not general semantics. Rainfall now has an official AWDS daily archive candidate, but exact daily input edition/revision lineage to captured NCI monthly rain_day.nc is unverified; no candidate physical sample or sum comparison performed. Official download-inventory schema request returned HTTP200/ArcGIS499 Token Required and was stopped without retry or token acquisition. HRS DST/interval, monthly QC/completeness and catchment scientific/numeric admission remain unresolved."
     }
   ],
   "workstreams": {
@@ -269,6 +269,31 @@
             "skipped": 4,
             "new_tests_passed": 15
           }
+        },
+        "rainfall_source_review": {
+          "status": "BLOCKED_EXACT_DAILY_MONTHLY_LINEAGE_UNVERIFIED",
+          "bounded_batch_stopped": true,
+          "baseline_commit": "7940f3ab0c992cf1b406571d46ecce77bf81a26a",
+          "record": "P04_RAINFALL_LINEAGE_REVIEW_20261031.md",
+          "evidence": "evidence/p04_rain_lineage_20261031/manifest.json",
+          "candidate_result": "evidence/p04_rain_lineage_20261031/candidate-result.json",
+          "official_candidate": "awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer",
+          "candidate_variable": "rain_day",
+          "candidate_unit": "mm",
+          "same_product_family_documented": true,
+          "exact_revision_lineage_verified": false,
+          "physical_sample_requests": 0,
+          "monthly_sum_compared": false,
+          "inventory_http_status": 200,
+          "inventory_application_error": 499,
+          "inventory_outcome": "CONFIRMED_TOKEN_REQUIRED_STOPPED",
+          "known_404_retries": 0,
+          "token_requests": 0,
+          "authenticated_requests": 0,
+          "provider_contact": "NOT_SENT",
+          "scientific_admission": false,
+          "cross_source_numeric_join": "BLOCKED",
+          "validation": "Eight complete retained HTTP bodies checked for bytes/SHA256/completeness; all new JSON valid; candidate facts and blocked state checked. Prior soil calculation and code unchanged; no new local full-suite run."
         }
       }
     },
