@@ -13,6 +13,7 @@ function plain(value){return !!value&&typeof value==='object'&&!Array.isArray(va
 function closed(value,keys){return plain(value)&&Object.keys(value).every(k=>keys.includes(k));}
 function text(value,max){return typeof value==='string'&&value.trim().length>0&&value.length<=max;}
 function strings(value){return Array.isArray(value)&&value.length<=20&&value.every(s=>text(s,600));}
+function observationTime(value,source){try{return typeof value==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?(?:Z|[+-]\d{2}:\d{2})$/.test(value)&&new Date(value.slice(0,10)+'T00:00:00.000Z').toISOString().slice(0,10)===value.slice(0,10)&&Number.isFinite(Date.parse(value))&&Date.parse(value)>=Date.parse(source.retrievedAt);}catch{return false;}}
 function anchorValid(anchor,source){return closed(anchor,['pdfPage','normalizedPageDigest','parserVersion'])&&Number.isSafeInteger(anchor.pdfPage)&&anchor.pdfPage>0&&anchor.pdfPage<=(source?.extraction?.totalPages||100000)&&hash.test(anchor.normalizedPageDigest||'')&&/^pypdf-[\w.-]+-layout-whitespace-1$/.test(anchor.parserVersion||'');}
 function capsule(entity){return entity?.data?.csoiRecord?.data?.dcpClause||null;}
 function records(d){return (d.domain?.entities||[]).filter(e=>capsule(e));}
@@ -70,12 +71,13 @@ function validateNode(node){
  need(G.inspectPayload(node).length===0,'CLAUSE_PUBLIC_PAYLOAD');
 }
 async function registerOutline(d,input){
- need(closed(input,['sourceId','sourceRevision','nodes'])&&Array.isArray(input.nodes)&&input.nodes.length>0&&input.nodes.length<=10000,'CLAUSE_OUTLINE_REQUIRED');
+ need(closed(input,['sourceId','sourceRevision','nodes','observedAt'])&&Array.isArray(input.nodes)&&input.nodes.length>0&&input.nodes.length<=10000,'CLAUSE_OUTLINE_REQUIRED');
  need((await verifyStructure(d)).integrity,'CLAUSE_EXISTING_STRUCTURE_INVALID');
  need(await M.verifySnapshot(await M.exportSnapshot(d)),'CLAUSE_DATASET_INVALID');
  const source=sourceFor(d,input.sourceId),catalogue=d.domain?.sourceCatalogue;
  need(source&&source.recordType==='DOCUMENT'&&source.classification==='PUBLIC'&&source.rawDigest===input.sourceRevision&&hash.test(input.sourceRevision||''),'CLAUSE_SOURCE_REQUIRED');
  need(I.STAGES.indexOf(I.sourceStatus(catalogue,source.id).stage)>=I.STAGES.indexOf('RAW_BYTES_VERIFIED'),'CLAUSE_SOURCE_BYTES_NOT_CURRENT');
+ const observedAt=input.observedAt===undefined?source.retrievedAt:input.observedAt;if(input.observedAt!==undefined)need(observationTime(observedAt,source),'CLAUSE_OBSERVATION_TIME');
  const ids=new Set(),available=new Map(records(d).map(e=>[e.id,e]));
  for(const node of input.nodes){validateNode(node);need(!ids.has(node.id),'CLAUSE_DUPLICATE_ID');ids.add(node.id);
   if(node.parentId!==null){need(available.has(node.parentId),'CLAUSE_PARENT_FIRST_REQUIRED');const parent=available.get(node.parentId);if(parent?.data)need(parent.data.csoiRecord.data.sourceId===source.id&&parent.data.csoiRecord.data.sourceDigest===source.rawDigest,'CLAUSE_FOREIGN_PARENT');}
@@ -87,7 +89,7 @@ async function registerOutline(d,input){
   if(parent)need(parentRecord?.data.sourceId===source.id&&parentRecord?.data.sourceDigest===source.rawDigest&&parentRecord.state==='ACTIVE','CLAUSE_PARENT_NOT_CURRENT');
   need(anchorValid(node.anchor,source),'CLAUSE_SOURCE_PAGE_BOUNDS');
   const day=source.retrievedAt.slice(0,10),clause={format:FORMAT,parentId:node.parentId,parentRevisionId:parent?.revisionId||null,section:node.section,category:node.category||'CLAUSE',conditions:node.conditions||[],exceptions:node.exceptions||[],obligations:node.obligations||[],quantities:UNKNOWN,legalApplicability:UNKNOWN,reviewState:'PENDING',currentVersion:UNKNOWN,anchor:structuredClone(node.anchor)};
-  const record=await G.makeRecord({id:node.id,ownerModule:'CSOI_OPERATIONS',security:'PUBLIC',layer:'L0',sourceClass:'INDEPENDENT_RESEARCH',judgment:'OBSERVATION',authority:'INDEPENDENT_RESEARCH',scope:{region:source.geographicExtent.label,boundary:BOUNDARY,period:{from:day,to:day}},inputs:[{id:source.id,revisionId:source.revisionId},...(parent?[{id:parent.id,revisionId:parent.revisionId}]:[])],data:{title:node.label,summary:node.summary,sourceId:source.id,sourceDigest:source.rawDigest,locator:node.locator,methodVersion:METHOD,dcpClause:clause},sensitivity:{personalData:false,confidential:false,reidentifiable:false},provenance:{contentMode:'RESEARCH_SUMMARY',url:source.officialUrl,locator:node.locator,sourceRevision:source.rawDigest,rights:{mode:'AUTHORED_RESEARCH',basis:'Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING.'}},observedAt:source.retrievedAt,state:'ACTIVE'});
+  const record=await G.makeRecord({id:node.id,ownerModule:'CSOI_OPERATIONS',security:'PUBLIC',layer:'L0',sourceClass:'INDEPENDENT_RESEARCH',judgment:'OBSERVATION',authority:'INDEPENDENT_RESEARCH',scope:{region:source.geographicExtent.label,boundary:BOUNDARY,period:{from:day,to:day}},inputs:[{id:source.id,revisionId:source.revisionId},...(parent?[{id:parent.id,revisionId:parent.revisionId}]:[])],data:{title:node.label,summary:node.summary,sourceId:source.id,sourceDigest:source.rawDigest,locator:node.locator,methodVersion:METHOD,dcpClause:clause},sensitivity:{personalData:false,confidential:false,reidentifiable:false},provenance:{contentMode:'RESEARCH_SUMMARY',url:source.officialUrl,locator:node.locator,sourceRevision:source.rawDigest,rights:{mode:'AUTHORED_RESEARCH',basis:'Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING.'}},observedAt,state:'ACTIVE'});
   const existing=M.domainIndex(next).get(node.id);
   if(existing){need(existing.data?.csoiRecord?.revisionId===record.revisionId,'CLAUSE_ID_CONFLICT');continue;}
   next=await M.registerResearchRecord(next,{record,kind:'ContentBlock',label:node.label,stationId:source.stationId,reason:'Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.'});

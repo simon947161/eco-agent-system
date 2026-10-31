@@ -1,0 +1,95 @@
+{
+  "auditedHead": "744ab46b2bec2ad601da0c4ae528694a4c982154",
+  "snapshotIntegrity": true,
+  "datasetDigest": "sha256:621a3a17781a60ae7b18f0006fc98cf498292b1f5d49ae52e4c4776478f967dd",
+  "legacyAssertions": 16,
+  "domainAssertions": 48,
+  "totalAssertions": 64,
+  "assertionCategories": {
+    "SYNTHETIC_OR_HYPOTHESIS": 55,
+    "OBSERVED_METRIC_CONTEXT_NOT_VERIFIED_MAPPING": 1,
+    "SOURCE_REPORTED_RESEARCH_CANDIDATE": 8
+  },
+  "predicateCounts": {
+    "EXAMPLE_PARENT": 3,
+    "EXAMPLE_LINK": 5,
+    "EXAMPLE_EVIDENCE": 1,
+    "EXAMPLE_PLANNING": 2,
+    "EXAMPLE_APPLICABILITY": 3,
+    "RESEARCH_CANDIDATE": 14,
+    "MEASURED_BY": 5,
+    "RESOURCED_BY": 8,
+    "FUNDED_BY": 3,
+    "HAS_ACTIVITY": 14,
+    "REPORTS_OUTPUT": 4,
+    "HAS_DEPENDENCY": 2
+  },
+  "domainMethodCounts": {
+    "accounting-migration-v1; context only, not official implementation": 9,
+    "synthetic-work-breakdown-1": 27,
+    "synthetic-spatial-falsification-1": 4,
+    "source-reported-reference-pending-review-1": 8
+  },
+  "governedInputCount": 152,
+  "inputKinds": {
+    "SOURCE_REVISION_INPUT": 80,
+    "CLAUSE_CONTAINMENT_INPUT": 69,
+    "RECORD_PROVENANCE_INPUT": 3
+  },
+  "clauseContainmentCount": 69,
+  "matrixRows": 216,
+  "officialAdmittedAssertions": 0,
+  "sourceReportedCandidates": 8,
+  "legalOrCausalRelationsVerified": 0,
+  "requestedChainKnownPaths": [
+    {
+      "from": "csp",
+      "to": "lsps",
+      "status": "UNKNOWN"
+    },
+    {
+      "from": "csp6",
+      "to": "dp",
+      "status": "UNKNOWN"
+    },
+    {
+      "from": "dp",
+      "to": "op",
+      "status": "UNKNOWN"
+    },
+    {
+      "from": "lsps",
+      "to": "lep",
+      "status": "UNKNOWN"
+    },
+    {
+      "from": "lsps",
+      "to": "dcp",
+      "status": "UNKNOWN"
+    },
+    {
+      "from": "dcp",
+      "to": "water",
+      "status": "UNKNOWN"
+    },
+    {
+      "from": "water",
+      "to": "csp2035-carbon-per-capita-baseline",
+      "status": "UNKNOWN"
+    },
+    {
+      "from": "csoi:published-plan:food-2026:target",
+      "to": "csp6",
+      "status": "UNKNOWN"
+    },
+    {
+      "from": "csoi:dcp:snowy2013:C9:3:1:b:soil",
+      "to": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+      "status": "QUERY_ENDPOINT"
+    }
+  ],
+  "limits": "Cryptographic integrity is not original-text semantic verification. Source-reported OP references require original-page comparison by the source audit. No network requests; no original/snapshot files modified.",
+  "explicitDocumentCrossReferenceAssertionsOriginalChecked": 4,
+  "distinctOriginalDocumentCrossReferencesChecked": 3,
+  "researchTableRowAssociations": 4
+}

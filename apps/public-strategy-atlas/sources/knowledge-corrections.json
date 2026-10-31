@@ -1,0 +1,130 @@
+{
+  "format": "csoi-knowledge-corrections-1",
+  "auditBaseline": "744ab46b2bec2ad601da0c4ae528694a4c982154",
+  "observedAt": "2026-10-31T10:28:36.640Z",
+  "rights": "UNKNOWN",
+  "currentLaw": "UNKNOWN",
+  "officialAdmission": "PENDING",
+  "sources": [
+    {
+      "id": "snowy-drainage",
+      "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+      "officialUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+      "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+      "byteLength": 16569676,
+      "totalPages": 465,
+      "anchors": [
+        {
+          "pdfPage": 27,
+          "normalizedPageDigest": "sha256:f6d0918336301322cb26250e735931d724fa2b61106e7f6471fea99ca8155abe",
+          "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+          "requiredTokens": [
+            "4.2.",
+            "Development Application (Other Than Subdivision)",
+            "drainage and stormwater management plans",
+            "Depending on the type and scale"
+          ],
+          "tokenVerification": "PASS"
+        },
+        {
+          "pdfPage": 164,
+          "normalizedPageDigest": "sha256:063ca60c58095b25bcce7effcf46297001ca68b86f89fb4c491c432938908770",
+          "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+          "requiredTokens": [
+            "C6.2-3",
+            "peak occupancy or use",
+            "at least 110 litres",
+            "accommodation"
+          ],
+          "tokenVerification": "PASS"
+        }
+      ],
+      "status": "PASS_ORIGINAL_BYTES_AND_PAGE_HASHES",
+      "rights": "UNKNOWN",
+      "currentLegalApplicability": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "id": "water-amp-locator",
+      "sourceId": "csoi:smrc-water-amp-2025:20261030",
+      "officialUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/1/council/ipr/20252026/adopted-amp-water-20250619.pdf",
+      "rawDigest": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+      "byteLength": 11359299,
+      "totalPages": 56,
+      "anchors": [
+        {
+          "pdfPage": 1,
+          "normalizedPageDigest": "sha256:2b8ed91e26efe0c7ca60f78426c25f5cdbe896493e5379071de88f9d6a1949a5",
+          "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+          "requiredTokens": [
+            "ASSET MANAGEMENT PLAN",
+            "WATER",
+            "2025",
+            "2035"
+          ],
+          "tokenVerification": "PASS"
+        },
+        {
+          "pdfPage": 3,
+          "normalizedPageDigest": "sha256:93e91a513493fc1252356a45bd16498b1f8fc1462c6949e7762bf793e6771e8b",
+          "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+          "requiredTokens": [
+            "Record of Versions",
+            "19/06/2025",
+            "142/25"
+          ],
+          "tokenVerification": "PASS"
+        },
+        {
+          "pdfPage": 13,
+          "normalizedPageDigest": "sha256:43fd6b7b598297b40e1e712b2d88836bb037e084d0aa1e3c5ad5708eb06e522a",
+          "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+          "requiredTokens": [
+            "Table 4",
+            "Assets by Location"
+          ],
+          "tokenVerification": "PASS"
+        },
+        {
+          "pdfPage": 14,
+          "normalizedPageDigest": "sha256:0ceaf920415d2dda722a3beadba7ee01d8b34a4e2b2488f53cde4fac4005404b",
+          "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+          "requiredTokens": [
+            "Table 5",
+            "Assets by Type"
+          ],
+          "tokenVerification": "PASS"
+        }
+      ],
+      "status": "PASS_ORIGINAL_BYTES_AND_PAGE_HASHES",
+      "rights": "UNKNOWN",
+      "currentLegalApplicability": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    }
+  ],
+  "replacement": {
+    "oldId": "csoi:dcp:snowy2013:A2:4:1:drainage",
+    "newParentId": "csoi:dcp:snowy2013:A2:4:2",
+    "newId": "csoi:dcp:snowy2013:A2:4:2:drainage",
+    "reason": "Original PDF page27/printed12 places conditional drainage and stormwater information under A2 section4.2 Development Application (Other Than Subdivision), not subdivision section4.1."
+  },
+  "waterAmp": {
+    "id": "csoi:source-note:smrc-water-amp-2025:revision-and-network-scope",
+    "locator": "PDF pages1,3,13; cover, Record of Versions, and Table4 Assets by Location (PDF14 is Table5 Assets by Type)",
+    "reason": "Correct the table-body locator from PDF14 to PDF13; retain original cover/version evidence and the prior erroneous research record."
+  },
+  "minimumReference": {
+    "clauseId": "csoi:dcp:snowy2013:C9:2:potable:b",
+    "referenceId": "csoi:dcp-reference:snowy:potable-accommodation",
+    "operator": "MINIMUM",
+    "comparison": ">=",
+    "value": 110,
+    "unit": "L/person/day",
+    "reason": "Original PDF164/printed149 C6.2-3(b), within C9, states capacity for at least110litres/person/day for accommodation; peak occupancy/use context is in preceding(a). Not actual demand or a verified current duty."
+  },
+  "sourceNoteBindings": {
+    "idPrefix": "csoi:source-note:",
+    "expectedBaselineCount": 25,
+    "reason": "Append the exact retained public-source revision input; source ID, digest and URL are validated without rewriting previous empty-input history."
+  }
+}

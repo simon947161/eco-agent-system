@@ -2,7 +2,7 @@
 (async () => {
 'use strict';
 const m=AtlasModel,fixtureSize=Number(new URLSearchParams(location.search).get('fixture'));
-const bootInputs={base:AtlasData,cases:AtlasAccounting.cases,catalogue:CsoiRegisteredSources,observations:CsoiSourceObservations,outlines:[CsoiDcpOutline,CsoiCoomaDcpOutline,CsoiBombalaDcpOutline]};
+const bootInputs={base:AtlasData,cases:AtlasAccounting.cases,catalogue:CsoiRegisteredSources,observations:CsoiSourceObservations,outlines:[CsoiDcpOutline,CsoiCoomaDcpOutline,CsoiBombalaDcpOutline],corrections:CsoiKnowledgeCorrections};
 let d=await AtlasCSOIBoot.load(CsoiDefaultSnapshot,bootInputs,[60,200,1000,10000].includes(fixtureSize)?{count:fixtureSize,options:{shape:new URLSearchParams(location.search).get('shape')||'branching',table:new URLSearchParams(location.search).get('table')==='1'}}:null);const NS='http://www.w3.org/2000/svg';
 const $=id=>document.getElementById(id),graph=$('atlasGraph'),details=$('details'),empty=details.innerHTML;
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

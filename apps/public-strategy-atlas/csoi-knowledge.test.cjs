@@ -1,0 +1,18 @@
+const assert=require('node:assert/strict'),M=require('./atlas-model.js'),G=require('./csoi-governance.js'),I=require('./atlas-intake.js'),K=require('./csoi-knowledge.js'),P=require('./csoi-paths.js'),B=require('./qa/remediation/knowledge-contract-fixture.json');
+(async()=>{
+ assert(K.validateBundle(B));const base=await M.migrateDataset(require('./atlas-data.js'),require('./atlas-accounting.js').cases,require('./sources/csoi-catalogue.json')),d=await K.registerBundle(base,B),metric=M.domainIndex(d).get('csoi:csp:2025:metric:29:community:01');assert(await M.verifySnapshot(await M.exportSnapshot(d)));assert.equal(K.parents(d,metric.id).length,3);assert.equal(K.children(d,'csoi:csp:2025:pillar:community').total,2);assert((await K.status(d,metric.id)).current);assert.equal(K.coverage(d).cspIndicators.structured,1);assert.equal(K.coverage(d).wholeDocumentCoverage,'UNKNOWN');assert.deepEqual(await K.registerBundle(d,B),d);
+ const old=metric.data.csoiRecord;
+ for(const [name,patch]of [
+  ['scope',r=>r.scope.region='Another place'],
+  ['baseline mismatch',r=>r.data.publicKnowledge.facts.baseline.value=12345],
+  ['actual result',r=>r.data.publicKnowledge.facts.actualValue=1],
+  ['hidden authority',r=>r.data.publicKnowledge.facts.officialAdmission='ADMITTED'],
+  ['reuse permission',r=>r.provenance.rights.mode='PERMITTED_REUSE'],
+  ['capsule removal',r=>{delete r.data.publicKnowledge;delete r.data.sourceId;delete r.data.sourceDigest;}],
+  ['unknown relation',r=>r.data.publicKnowledge.relations=[{type:'EXPLICIT_DOCUMENT_REFERENCE',targetId:'csoi:missing',locator:'Missing',targetRevisionId:'sha256:'+'0'.repeat(64)}]]
+ ]){const altered=structuredClone(old);patch(altered);const resigned=await G.makeRecord(altered);await assert.rejects(()=>M.reviseResearchRecord(d,{id:metric.id,expectedRevisionId:metric.revisionId,record:resigned,reason:'Reject '+name}),/INVALID|BINDING/);}
+ const wrong=structuredClone(B);wrong.records.at(-1).kind='Task';assert.throws(()=>K.validateBundle(wrong),/CATEGORY_FACT/);const page=structuredClone(B);page.records.at(-1).anchor.pdfPage=37;assert.throws(()=>K.validateBundle(page),/ANCHOR_BOUNDS/);
+ const proof=await P.pinPath(d,{nodes:[{id:metric.id}],relationships:[]}),changed=structuredClone(d);changed.domain.sourceCatalogue=await I.correctStage(changed.domain.sourceCatalogue,B.sourceId,'SOURCE_RETRIEVED',{actor:'QA',at:new Date().toISOString(),reason:'Withdraw source bytes in memory'});const retained=await P.verifyPath(changed,proof);assert(retained.integrity);assert(!retained.current);assert(!(await K.status(changed,metric.id)).current);assert(await M.verifySnapshot(await M.exportSnapshot(changed)));await assert.rejects(()=>require('./atlas-execution.js').derive(d,{formula:'UNIT_CONVERSION',inputIds:[metric.id],outputUnit:'person'}),/UNADMITTED_INPUTS/);
+ const original=M.domainIndex(d).get('csoi:csp:2025:strategy:1.1'),moved=structuredClone(original.data.csoiRecord);moved.data.publicKnowledge.code='2.1';moved.data.publicKnowledge.facts.printedCode='2.1';const relabelled=await G.makeRecord(moved);await assert.rejects(()=>M.reviseResearchRecord(d,{id:original.id,expectedRevisionId:original.revisionId,record:relabelled,reason:'Reject strategy under wrong objective'}),/INVALID/);
+ console.log('PASS: same-domain source knowledge, exact parent/source provenance, bounded original coordinates, typed metric/action contracts, rejection of false actuals/authority/rights/source scope/quantity/relations/capsule removal, idempotence, retained source-withdrawal proofs and no admitted arithmetic');
+})().catch(error=>{console.error(error);process.exitCode=1});
