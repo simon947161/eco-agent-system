@@ -1,0 +1,87 @@
+{
+  "checked_on": "2026-10-26",
+  "documents": [
+    {
+      "source_url": "https://awo.bom.gov.au/about/overview/licence",
+      "capture_kind": "rendered_accessibility_text",
+      "local_capture_name": "awo-licence.ax.txt",
+      "sha256": "cc858799a921ae15a8c9c6d6e12f6435d62dadc4a63be4cafd029c5cf3332d6b",
+      "captured_at_utc": "2026-10-26T12:16:33.405939+00:00",
+      "redistributed": false
+    },
+    {
+      "source_url": "https://awo.bom.gov.au/about/overview/dataAccess",
+      "capture_kind": "rendered_accessibility_text",
+      "local_capture_name": "awo-data-access.ax.txt",
+      "sha256": "57747966ec6059428babc4dbaa9cbc32ee34cafd60cf05be926955990495cf83",
+      "captured_at_utc": "2026-10-26T12:16:38.869235+00:00",
+      "redistributed": false
+    },
+    {
+      "source_url": "https://awo.bom.gov.au/about/overview/historical",
+      "capture_kind": "rendered_accessibility_text",
+      "local_capture_name": "awo-historical.ax.txt",
+      "sha256": "c4ad63c9297710d0f62603db81f9d7d4645eac99d934338f6b60b00e2335e896",
+      "captured_at_utc": "2026-10-26T12:12:06.063481+00:00",
+      "redistributed": false
+    },
+    {
+      "source_url": "https://awo.bom.gov.au/faqs/historical",
+      "capture_kind": "rendered_accessibility_text",
+      "local_capture_name": "awo-faq-historical.ax.txt",
+      "sha256": "345417bb210889ae3af4d9c9f1b920c3c6fa94bea12cfc35e18b2a8c4e9621e2",
+      "captured_at_utc": "2026-10-26T12:13:08.413713+00:00",
+      "redistributed": false
+    },
+    {
+      "source_url": "https://awo.bom.gov.au/products/historical/soilMoisture-rootZone",
+      "capture_kind": "rendered_accessibility_text",
+      "local_capture_name": "awo-rootzone.ax.txt",
+      "sha256": "b925ea61dd32480ab461c1f3bb9920a59e282bd4c48a2410228415495ab9cab3",
+      "captured_at_utc": "2026-10-26T12:13:45.486890+00:00",
+      "redistributed": false
+    },
+    {
+      "source_url": "https://awo.bom.gov.au/products/historical/soilMoisture-rootZone",
+      "capture_kind": "rendered_accessibility_text",
+      "local_capture_name": "awo-precipitation.ax.txt",
+      "sha256": "347b5cae655dfc1790117d05871227296f29f7c61c7a58f8efcbeb2dc16dd82f",
+      "captured_at_utc": "2026-10-26T12:14:30.505161+00:00",
+      "redistributed": false
+    },
+    {
+      "source_url": "https://www.bom.gov.au/water/hrs/faq.shtml",
+      "capture_kind": "HTTP_body",
+      "local_capture_name": "hrs-faq.html",
+      "sha256": "fa6e5524c727fffcfc67aa44fb7a215da743f13136c9a8eb84189c5f555d269f",
+      "captured_at_utc": "2026-10-26T12:13:24.212767+00:00",
+      "redistributed": false
+    },
+    {
+      "source_url": "https://www.bom.gov.au/water/hrs/methodology.shtml",
+      "capture_kind": "HTTP_body",
+      "local_capture_name": "hrs-methodology.html",
+      "sha256": "70f8bafee97f696b6d10348972546bb62911bdc3bdda2e43933b2424a606ba03",
+      "captured_at_utc": "2026-10-26T12:17:33.625542+00:00",
+      "redistributed": false
+    }
+  ],
+  "hrs_source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+  "hrs_rules": {
+    "daily_label": "previous24h reported9am local",
+    "DST": "UNRESOLVED",
+    "month_assignment": "UNRESOLVED",
+    "header_units": "ML/day vs Flow(ML), extraction description cubic metres; preserve ambiguity"
+  },
+  "awo_licence": "CC BY4.0 unless otherwise noted",
+  "authorised_access_methods": [
+    "AWO product NetCDF/CSV download",
+    "AWDS published web services",
+    "NCI data collection"
+  ],
+  "fees_observed_aud": 0,
+  "unlimited_automation_quota": "NOT_DOCUMENTED",
+  "soil_full_month_statistic": "Not fully established for exact returned raw variable; MTD average documented",
+  "rain_month_statistic": "Aggregation of near-real-time daily inputs, documented by product tooltip",
+  "scientific_join": "BLOCKED"
+}

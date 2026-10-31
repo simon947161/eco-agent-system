@@ -1,0 +1,110 @@
+{
+  "status": "BLOCKED_NUMERIC_JOIN",
+  "variables": {
+    "rain_day": {
+      "units": "mm",
+      "dtype": "float32",
+      "absent_attributes": [
+        "scale_factor",
+        "add_offset",
+        "missing_value",
+        "valid_range",
+        "cell_methods"
+      ],
+      "fill_value": [
+        -999.0
+      ],
+      "sampled_months": [
+        {
+          "label": "2000-01-31",
+          "start": "2000-01-01",
+          "end_boundary": "2000-02-01",
+          "days": 31
+        },
+        {
+          "label": "2000-02-29",
+          "start": "2000-02-01",
+          "end_boundary": "2000-03-01",
+          "days": 29
+        },
+        {
+          "label": "2000-03-31",
+          "start": "2000-03-01",
+          "end_boundary": "2000-04-01",
+          "days": 31
+        },
+        {
+          "label": "2026-09-30",
+          "start": "2026-09-01",
+          "end_boundary": "2026-10-01",
+          "days": 30
+        }
+      ],
+      "aggregation": "UNRESOLVED",
+      "numeric_completeness": "NOT_TESTED",
+      "time_zone_alignment_to_hrs": "UNRESOLVED"
+    },
+    "sm_pct": {
+      "units": "fraction of fullness",
+      "dtype": "float32",
+      "absent_attributes": [
+        "scale_factor",
+        "add_offset",
+        "missing_value",
+        "valid_range",
+        "cell_methods"
+      ],
+      "fill_value": [
+        -999.0
+      ],
+      "sampled_months": [
+        {
+          "label": "2000-01-31",
+          "start": "2000-01-01",
+          "end_boundary": "2000-02-01",
+          "days": 31
+        },
+        {
+          "label": "2000-02-29",
+          "start": "2000-02-01",
+          "end_boundary": "2000-03-01",
+          "days": 29
+        },
+        {
+          "label": "2000-03-31",
+          "start": "2000-03-01",
+          "end_boundary": "2000-04-01",
+          "days": 31
+        },
+        {
+          "label": "2026-09-30",
+          "start": "2026-09-01",
+          "end_boundary": "2026-10-01",
+          "days": 30
+        }
+      ],
+      "aggregation": "UNRESOLVED",
+      "numeric_completeness": "NOT_TESTED",
+      "time_zone_alignment_to_hrs": "UNRESOLVED"
+    }
+  },
+  "physical_values_read": false,
+  "hrs_monthly_sample": {
+    "source_file": "410033_monthly_total_02.csv",
+    "columns": [
+      "Year",
+      "February streamflow (ML/month)"
+    ],
+    "row_count": 61,
+    "first_year": "1965",
+    "last_year": "2025",
+    "february_2026_present": false,
+    "quality_column_present": false,
+    "aggregation": "Publisher UI describes summing daily records by month and excluding partial first/last months",
+    "daily_reporting_rule": "Header: 9am local time, previous 24 hours; DST and month membership unresolved",
+    "version": "September, 2026",
+    "extraction_date_literal": "4/06/2024",
+    "unit_ambiguity_retained": true,
+    "admitted_for_join": false
+  }
+}

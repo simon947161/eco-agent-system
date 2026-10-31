@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2">
+  <service name="all" serviceType="Compound" base="">
+    <service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncdods" serviceType="OPENDAP" base="/thredds/dodsC/" />
+    <service name="subsetServer" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+    <service name="wcs" serviceType="WCS" base="/thredds/wcs/" />
+  </service>
+  <service name="HTTPonly" serviceType="Compound" base="">
+    <service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/" />
+  </service>
+  <service name="HTTP_OPeNDAP" serviceType="Compound" base="">
+    <service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncdods" serviceType="OPENDAP" base="/thredds/dodsC/" />
+  </service>
+  <dataset name="processed/values/month/">
+    <property name="DatasetScan" value="true" />
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataType>Grid</dataType>
+      <documentation xlink:href="https://geonetwork.nci.org.au/geonetwork/srv/eng/catalog.search#/metadata/f7227_1526_2937_8137" xlink:title="NCI Catalogue: Metadata, Licence and Readme" />
+      <documentation type="rights" xlink:href="/thredds/fileServer/iu04/australian-water-outlook/license.txt" xlink:title="Licence" />
+    </metadata>
+    <dataset name="dd.nc" ID="iu04/processed/values/month/dd.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/dd.nc">
+      <dataSize units="Gbytes">1.381</dataSize>
+      <date type="modified">2026-10-30T13:59:09Z</date>
+    </dataset>
+    <dataset name="e0.nc" ID="iu04/processed/values/month/e0.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/e0.nc">
+      <dataSize units="Gbytes">1.087</dataSize>
+      <date type="modified">2026-10-30T13:59:16Z</date>
+    </dataset>
+    <dataset name="etot.nc" ID="iu04/processed/values/month/etot.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/etot.nc">
+      <dataSize units="Gbytes">1.337</dataSize>
+      <date type="modified">2026-10-30T13:59:25Z</date>
+    </dataset>
+    <dataset name="qtot.nc" ID="iu04/processed/values/month/qtot.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/qtot.nc">
+      <dataSize units="Gbytes">1.422</dataSize>
+      <date type="modified">2026-10-30T13:59:35Z</date>
+    </dataset>
+    <dataset name="rain_day.nc" ID="iu04/processed/values/month/rain_day.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc">
+      <dataSize units="Mbytes">704.4</dataSize>
+      <date type="modified">2026-10-30T13:59:40Z</date>
+    </dataset>
+    <dataset name="s0.nc" ID="iu04/processed/values/month/s0.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/s0.nc">
+      <dataSize units="Gbytes">1.332</dataSize>
+      <date type="modified">2026-10-30T13:59:49Z</date>
+    </dataset>
+    <dataset name="s0_pct.nc" ID="iu04/processed/values/month/s0_pct.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/s0_pct.nc">
+      <dataSize units="Gbytes">1.329</dataSize>
+      <date type="modified">2026-10-30T13:59:57Z</date>
+    </dataset>
+    <dataset name="sd.nc" ID="iu04/processed/values/month/sd.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sd.nc">
+      <dataSize units="Gbytes">1.337</dataSize>
+      <date type="modified">2026-10-30T14:00:06Z</date>
+    </dataset>
+    <dataset name="sd_pct.nc" ID="iu04/processed/values/month/sd_pct.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sd_pct.nc">
+      <dataSize units="Gbytes">1.333</dataSize>
+      <date type="modified">2026-10-30T14:00:15Z</date>
+    </dataset>
+    <dataset name="sm.nc" ID="iu04/processed/values/month/sm.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm.nc">
+      <dataSize units="Gbytes">1.340</dataSize>
+      <date type="modified">2026-10-30T14:00:24Z</date>
+    </dataset>
+    <dataset name="sm_pct.nc" ID="iu04/processed/values/month/sm_pct.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc">
+      <dataSize units="Gbytes">1.354</dataSize>
+      <date type="modified">2026-10-30T14:00:33Z</date>
+    </dataset>
+    <dataset name="ss.nc" ID="iu04/processed/values/month/ss.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/ss.nc">
+      <dataSize units="Gbytes">1.345</dataSize>
+      <date type="modified">2026-10-30T14:00:42Z</date>
+    </dataset>
+    <dataset name="ss_pct.nc" ID="iu04/processed/values/month/ss_pct.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/ss_pct.nc">
+      <dataSize units="Gbytes">1.359</dataSize>
+      <date type="modified">2026-10-30T14:00:51Z</date>
+    </dataset>
+  </dataset>
+</catalog>

@@ -1,0 +1,82 @@
+{
+  "captured_on_local": "2026-10-27",
+  "timezone": "Australia/Sydney",
+  "baseline_commit": "f5967f25d2829183b8fb60cd3cc178c3927f1a75",
+  "awra_attribution": "Bureau of Meteorology, Australian Landscape Water Balance AWRA-L; NCI distribution; metadata extracted by ClimateOS",
+  "awra_licence": "CC BY 4.0",
+  "hrs_attribution": "WaterNSW; Bureau of Meteorology Hydrologic Reference Stations",
+  "hrs_licence": "CC BY 3.0 AU; https://www.bom.gov.au/water/hrs/copyright.shtml",
+  "native_ranges": "Exact range bytes retained locally only; JSON includes range digests. These are NOT full NetCDF file hashes. Physical arrays never indexed; aligned blocks can contain adjacent bytes.",
+  "files": [
+    {
+      "file": "410033_monthly_total_02.csv",
+      "sha256": "5723fea1442671ae2097f28577b3463461ff9b565a053beeb0ad71a7407079a8",
+      "bytes": 1637,
+      "source_url": "https://www.bom.gov.au/water/hrs/content/data/410033/410033_monthly_total_02.csv",
+      "representation": "HTTP response bytes"
+    },
+    {
+      "file": "license.txt",
+      "sha256": "35b38d9d52abeb3ff66658b7a9948bbf38a08168a4d2b73eedc9e44ae1c075ed",
+      "bytes": 173,
+      "source_url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/license.txt",
+      "representation": "HTTP response bytes"
+    },
+    {
+      "file": "rain_day-coordinates.ascii",
+      "sha256": "623a0cd7363ef68581453c2fef6f0965376b4b477bd86b7bf9b9b0a38b578985",
+      "bytes": 444,
+      "source_url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc.ascii?time%5B1068:1:1070%5D,time_bounds%5B1068:1:1070%5D%5B0:1:1%5D,latitude%5B0:1:1%5D,longitude%5B0:1:1%5D",
+      "representation": "HTTP response bytes"
+    },
+    {
+      "file": "rain_day-native-header.json",
+      "sha256": "09bfbf0e9d0e835675e2b3498dc31632e0bb1e9322dfa7eb8db96dd83eaf7cf6",
+      "bytes": 5152,
+      "source_url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc",
+      "representation": "derived metadata JSON"
+    },
+    {
+      "file": "rain_day.das",
+      "sha256": "a4ef0cd69ccc2c2c2d0da4f76a7470681b52ca8b0744eddab80ba3b383d7f360",
+      "bytes": 1923,
+      "source_url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc.das",
+      "representation": "HTTP response bytes"
+    },
+    {
+      "file": "rain_day.dds",
+      "sha256": "4bbc761f82c03fa954993dea8ae067f989a359564b3fd672eda129a444a09e5a",
+      "bytes": 492,
+      "source_url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc.dds",
+      "representation": "HTTP response bytes"
+    },
+    {
+      "file": "sm_pct-coordinates.ascii",
+      "sha256": "de86063246598e559a470a591c7b60abd37a51c39480c2f725d3b94ee76b4c78",
+      "bytes": 442,
+      "source_url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc.ascii?time%5B1068:1:1070%5D,time_bounds%5B1068:1:1070%5D%5B0:1:1%5D,latitude%5B0:1:1%5D,longitude%5B0:1:1%5D",
+      "representation": "HTTP response bytes"
+    },
+    {
+      "file": "sm_pct-native-header.json",
+      "sha256": "b63a8aca0a81bbcf3a3e7f7c021a0dca9a23a663590e30f28720dd1766d49761",
+      "bytes": 5151,
+      "source_url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc",
+      "representation": "derived metadata JSON"
+    },
+    {
+      "file": "sm_pct.das",
+      "sha256": "a9cdf89e86d3ad49355fd1dcd04296383f6ab4a6fd4c9b41e8e3986eda57172e",
+      "bytes": 1929,
+      "source_url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc.das",
+      "representation": "HTTP response bytes"
+    },
+    {
+      "file": "sm_pct.dds",
+      "sha256": "ece14a160f0d0107114d22b50b74eae514324a643013d2ed3efc87813581cc8c",
+      "bytes": 486,
+      "source_url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc.dds",
+      "representation": "HTTP response bytes"
+    }
+  ]
+}

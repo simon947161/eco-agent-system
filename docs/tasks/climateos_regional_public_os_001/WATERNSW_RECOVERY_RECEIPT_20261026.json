@@ -1,0 +1,21 @@
+{
+  "schema_id": "climateos.waternsw_near_current_admission.v0.1",
+  "run_id": "WATERNSW-410033-NEAR-CURRENT-ADMISSION-V0.1",
+  "attempted_at": "2026-10-26T08:41:45.573367+00:00",
+  "admission_status": "ADMISSION_BLOCKED_MISSING_RAW_RESPONSE",
+  "reason": "Existing subscription acknowledged; no WaterNSW credential binding or exact response recovered in the authorized current workspace. No authenticated request attempted.",
+  "response_content_digest": null,
+  "retrieval_receipt_digest": null,
+  "maximum_conclusion_level": "L1",
+  "comparison_statistics": null,
+  "environmental_conclusion": null,
+  "trend_assessment": {
+    "status": "DEFERRED_PENDING_QUALIFIED_HYDROLOGY_REVIEW",
+    "performed": false
+  },
+  "recovery_status": "BLOCKED_LOCAL_CREDENTIAL_CONFIGURATION",
+  "http_requests_attempted": 0,
+  "credential_value_disclosed": false,
+  "comparability_status": "NOT_COMPARABLE_YET",
+  "validation_record": "WATERNSW_RECOVERY_VALIDATION_20261026.md"
+}

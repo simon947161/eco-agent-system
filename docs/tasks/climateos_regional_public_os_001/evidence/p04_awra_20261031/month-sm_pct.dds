@@ -1,0 +1,14 @@
+Dataset {
+    Int32 time[time = 1389];
+    Float64 latitude[latitude = 681];
+    Float64 longitude[longitude = 841];
+    Int32 time_bounds[time = 1389][nv = 2];
+    Grid {
+     ARRAY:
+        Float32 sm_pct[time = 1389][latitude = 681][longitude = 841];
+     MAPS:
+        Int32 time[time = 1389];
+        Float64 latitude[latitude = 681];
+        Float64 longitude[longitude = 841];
+    } sm_pct;
+} iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc;

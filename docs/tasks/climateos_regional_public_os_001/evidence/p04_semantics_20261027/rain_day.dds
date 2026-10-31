@@ -1,0 +1,14 @@
+Dataset {
+    Int32 time[time = 1389];
+    Float64 latitude[latitude = 681];
+    Float64 longitude[longitude = 841];
+    Int32 time_bounds[time = 1389][nv = 2];
+    Grid {
+     ARRAY:
+        Float32 rain_day[time = 1389][latitude = 681][longitude = 841];
+     MAPS:
+        Int32 time[time = 1389];
+        Float64 latitude[latitude = 681];
+        Float64 longitude[longitude = 841];
+    } rain_day;
+} iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc;

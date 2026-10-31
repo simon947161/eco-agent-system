@@ -1,0 +1,222 @@
+{
+  "schema": "climateos.p04.awra_empirical_reproduction.v1",
+  "status": "PARTIAL",
+  "month": "2000-07",
+  "cell": {
+    "latitude_index": 525,
+    "longitude_index": 742,
+    "latitude": -36.25,
+    "longitude": 149.1
+  },
+  "source_products": {
+    "day-sm_pct": "iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2000.nc",
+    "month-sm_pct": "iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc",
+    "day-rain_day": "iu04/australian-water-outlook/historical/v1/AWRALv7/rain_day_2000.nc",
+    "month-rain_day": "iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc"
+  },
+  "unverified_candidate_products": [
+    "day-rain_day"
+  ],
+  "metadata": {
+    "day-sm_pct": {
+      "units": "fraction of fullness",
+      "fill_value": -999,
+      "valid_samples": 31,
+      "masked_samples": 0,
+      "global_attributes": {
+        "var_name": "sm_pct",
+        "title": "Australian Landscape Water Balance AWRA-L Model",
+        "Description": "This data is provided by the Bureau of Meteorology and can be further visualised at www.bom.gov.au/water/landscape . The data has been simulated using the Australian Water Resource Assessment Modelling System (AWRA MS).",
+        "summary": "Data produced by Bureau of Meteorology Australian Water Resources Assessment Landscape Model (AWRA-L)",
+        "source": "AWRA-L",
+        "date_created": "2021-09-19T23:42:46",
+        "Conventions": "CF-1.6, ACDD-1.3",
+        "institution": "Bureau of Meteorology",
+        "email": "awrams@bom.gov.au",
+        "url": "http://www.bom.gov.au/water/landscape",
+        "date_modified": "2021-09-19T23:42:46"
+      }
+    },
+    "month-sm_pct": {
+      "units": "fraction of fullness",
+      "fill_value": -999,
+      "valid_samples": 1,
+      "masked_samples": 0,
+      "global_attributes": {
+        "var_name": "sm_pct",
+        "title": "Australian Landscape Water Balance AWRA-L Model",
+        "Description": "This data is provided by the Bureau of Meteorology and can be further visualised at www.bom.gov.au/water/landscape . The data has been simulated using the Australian Water Resource Assessment Modelling System (AWRA MS).",
+        "summary": "Data produced by Bureau of Meteorology Australian Water Resources Assessment Landscape Model (AWRA-L)",
+        "source": "AWRA-L",
+        "date_created": "2021-09-20T00:48:31",
+        "Conventions": "CF-1.6, ACDD-1.3",
+        "institution": "Bureau of Meteorology",
+        "email": "awrams@bom.gov.au",
+        "url": "http://www.bom.gov.au/water/landscape",
+        "date_modified": "2021-09-20T00:48:31"
+      }
+    },
+    "month-rain_day": {
+      "units": "mm",
+      "fill_value": -999,
+      "valid_samples": 1,
+      "masked_samples": 0,
+      "global_attributes": {
+        "var_name": "rain_day",
+        "title": "Australian Landscape Water Balance AWRA-L Model",
+        "Description": "This data is provided by the Bureau of Meteorology and can be further visualised at www.bom.gov.au/water/landscape . The data has been simulated using the Australian Water Resource Assessment Modelling System (AWRA MS).",
+        "summary": "Data produced by Bureau of Meteorology Australian Water Resources Assessment Landscape Model (AWRA-L)",
+        "source": "AWRA-L",
+        "date_created": "2021-09-19T19:54:37",
+        "Conventions": "CF-1.6, ACDD-1.3",
+        "institution": "Bureau of Meteorology",
+        "email": "awrams@bom.gov.au",
+        "url": "http://www.bom.gov.au/water/landscape",
+        "date_modified": "2021-09-19T19:54:37"
+      }
+    }
+  },
+  "failures": {
+    "day-rain_day": "Missing or unsuccessful official product capture: day-rain_day.dds (HTTP 404), day-rain_day.das (HTTP not captured), day-rain_day.dods (HTTP not captured), day-rain_day-before.head (HTTP not captured), day-rain_day-after.head (HTTP not captured)"
+  },
+  "cross_source_numeric_join": "BLOCKED",
+  "scientific_admission": false,
+  "provider_general_semantics_proven": false,
+  "time_basis": "Product calendar labels only; no UTC, local-time or HRS interval alignment inferred.",
+  "samples": {
+    "day-sm_pct": {
+      "sm_pct": [
+        0.15876387059688568,
+        0.15617331862449646,
+        0.15367382764816284,
+        0.15795525908470154,
+        0.1590525358915329,
+        0.15519070625305176,
+        0.15522648394107819,
+        0.15206259489059448,
+        0.14842699468135834,
+        0.14827154576778412,
+        0.14495766162872314,
+        0.14185580611228943,
+        0.1384855955839157,
+        0.135796457529068,
+        0.13245177268981934,
+        0.12867151200771332,
+        0.12640886008739471,
+        0.12398648262023926,
+        0.12063891440629959,
+        0.12064554542303085,
+        0.1216750517487526,
+        0.11897560209035873,
+        0.1162155270576477,
+        0.1130325123667717,
+        0.11134430021047592,
+        0.11514564603567123,
+        0.11424523591995239,
+        0.11355353146791458,
+        0.11044187098741531,
+        0.1072758361697197,
+        0.10436807572841644
+      ],
+      "time": [
+        36706,
+        36707,
+        36708,
+        36709,
+        36710,
+        36711,
+        36712,
+        36713,
+        36714,
+        36715,
+        36716,
+        36717,
+        36718,
+        36719,
+        36720,
+        36721,
+        36722,
+        36723,
+        36724,
+        36725,
+        36726,
+        36727,
+        36728,
+        36729,
+        36730,
+        36731,
+        36732,
+        36733,
+        36734,
+        36735,
+        36736
+      ],
+      "latitude": [
+        -36.25
+      ],
+      "longitude": [
+        149.1
+      ]
+    },
+    "month-sm_pct": {
+      "time_bounds": [
+        36706,
+        36737
+      ],
+      "sm_pct": [
+        0.13241834938526154
+      ],
+      "time": [
+        36736
+      ],
+      "latitude": [
+        -36.25
+      ],
+      "longitude": [
+        149.1
+      ]
+    },
+    "month-rain_day": {
+      "time_bounds": [
+        36706,
+        36737
+      ],
+      "rain_day": [
+        11.300000190734863
+      ],
+      "time": [
+        36736
+      ],
+      "latitude": [
+        -36.25
+      ],
+      "longitude": [
+        149.1
+      ]
+    }
+  },
+  "comparisons": {
+    "rain_day": {
+      "status": "BLOCKED_MISSING_MATCHED_DAILY_MONTHLY_SAMPLE"
+    },
+    "sm_pct": {
+      "status": "PASS_EMPIRICAL_COMPARISON",
+      "daily_mean": {
+        "observed": 0.13241834938526154,
+        "reference": 0.13241835275003988,
+        "difference": -3.364778344838726e-09,
+        "absolute_tolerance": 2.648367055000798e-07,
+        "agrees": true
+      },
+      "final_day": {
+        "observed": 0.13241834938526154,
+        "reference": 0.10436807572841644,
+        "difference": 0.028050273656845093,
+        "absolute_tolerance": 2.087361514568329e-07,
+        "agrees": false
+      },
+      "minimum_daily": 0.10436807572841644,
+      "maximum_daily": 0.1590525358915329
+    }
+  }
+}

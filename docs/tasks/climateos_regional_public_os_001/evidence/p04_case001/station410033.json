@@ -1,0 +1,198 @@
+{
+ "displayFieldName": "stationno",
+ "fieldAliases": {
+  "hydroid": "HydroID",
+  "ahgfftype": "AHGFFeatureType",
+  "stationno": "StationNo",
+  "stnname": "StationName",
+  "wdo_link": "WateDataOnlineLink",
+  "confidence": "Confidence",
+  "gn_qa_code": "GN_QA_Code",
+  "dataownrid": "DataOwnerID",
+  "monpointid": "MonitoringPointID",
+  "netwstrmid": "NetworkStreamID",
+  "note": "GN Location & QA Review Notes",
+  "namematch": "NameMatch",
+  "matchcount": "MatchCount",
+  "near_dist": "NearDistance",
+  "flagissues": "Flagged Issues to Check",
+  "upstrgeoln": "UpstreamGeodesicLength_m",
+  "upstrdarea": "UpstreamDrainageArea_m2",
+  "conlevel": "ContractLevel",
+  "connodeid": "ContractedNodeID",
+  "concatid": "ContractedCatchmentID",
+  "featrel": "FeatureReliability",
+  "attrrel": "AttributeReliability",
+  "objectid": "OBJECTID LUT1",
+  "displaylevel": "Display_Level"
+ },
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "hydroid",
+   "type": "esriFieldTypeInteger",
+   "alias": "HydroID"
+  },
+  {
+   "name": "ahgfftype",
+   "type": "esriFieldTypeInteger",
+   "alias": "AHGFFeatureType"
+  },
+  {
+   "name": "stationno",
+   "type": "esriFieldTypeString",
+   "alias": "StationNo",
+   "length": 25
+  },
+  {
+   "name": "stnname",
+   "type": "esriFieldTypeString",
+   "alias": "StationName",
+   "length": 255
+  },
+  {
+   "name": "wdo_link",
+   "type": "esriFieldTypeString",
+   "alias": "WateDataOnlineLink",
+   "length": 100
+  },
+  {
+   "name": "confidence",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Confidence"
+  },
+  {
+   "name": "gn_qa_code",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "GN_QA_Code"
+  },
+  {
+   "name": "dataownrid",
+   "type": "esriFieldTypeString",
+   "alias": "DataOwnerID",
+   "length": 25
+  },
+  {
+   "name": "monpointid",
+   "type": "esriFieldTypeInteger",
+   "alias": "MonitoringPointID"
+  },
+  {
+   "name": "netwstrmid",
+   "type": "esriFieldTypeInteger",
+   "alias": "NetworkStreamID"
+  },
+  {
+   "name": "note",
+   "type": "esriFieldTypeString",
+   "alias": "GN Location & QA Review Notes",
+   "length": 255
+  },
+  {
+   "name": "namematch",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "NameMatch"
+  },
+  {
+   "name": "matchcount",
+   "type": "esriFieldTypeInteger",
+   "alias": "MatchCount"
+  },
+  {
+   "name": "near_dist",
+   "type": "esriFieldTypeDouble",
+   "alias": "NearDistance"
+  },
+  {
+   "name": "flagissues",
+   "type": "esriFieldTypeString",
+   "alias": "Flagged Issues to Check",
+   "length": 100
+  },
+  {
+   "name": "upstrgeoln",
+   "type": "esriFieldTypeDouble",
+   "alias": "UpstreamGeodesicLength_m"
+  },
+  {
+   "name": "upstrdarea",
+   "type": "esriFieldTypeDouble",
+   "alias": "UpstreamDrainageArea_m2"
+  },
+  {
+   "name": "conlevel",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "ContractLevel"
+  },
+  {
+   "name": "connodeid",
+   "type": "esriFieldTypeInteger",
+   "alias": "ContractedNodeID"
+  },
+  {
+   "name": "concatid",
+   "type": "esriFieldTypeInteger",
+   "alias": "ContractedCatchmentID"
+  },
+  {
+   "name": "featrel",
+   "type": "esriFieldTypeDate",
+   "alias": "FeatureReliability",
+   "length": 8
+  },
+  {
+   "name": "attrrel",
+   "type": "esriFieldTypeDate",
+   "alias": "AttributeReliability",
+   "length": 8
+  },
+  {
+   "name": "objectid",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID LUT1"
+  },
+  {
+   "name": "displaylevel",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Display_Level"
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "hydroid": 43408271,
+    "ahgfftype": 8,
+    "stationno": "410033",
+    "stnname": "MURRUMBIDGEE RIVER AT MITTAGANG CROSSING",
+    "wdo_link": "http://www.bom.gov.au/waterdata/station.html?dataowner=w00077&station=410033",
+    "confidence": 4,
+    "gn_qa_code": 4,
+    "dataownrid": "w00077",
+    "monpointid": 43661442,
+    "netwstrmid": 43553570,
+    "note": null,
+    "namematch": 3,
+    "matchcount": 5,
+    "near_dist": 4.76780007,
+    "flagissues": null,
+    "upstrgeoln": 1654371.80957749,
+    "upstrdarea": 1839315639.60989285,
+    "conlevel": 1,
+    "connodeid": 439039,
+    "concatid": 455016,
+    "featrel": 1559484000000,
+    "attrrel": 1559484000000,
+    "objectid": 2319092,
+    "displaylevel": 2
+   },
+   "geometry": {
+    "x": 149.09473337500003,
+    "y": -36.164433373100771
+   }
+  }
+ ]
+}

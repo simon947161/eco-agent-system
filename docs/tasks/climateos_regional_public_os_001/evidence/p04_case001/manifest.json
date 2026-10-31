@@ -1,0 +1,75 @@
+{
+  "case_id": "P04-WATER-SOIL-CLIMATE-001",
+  "baseline_commit": "891d8a9a1893a3b0280672166fbfef973de1e9f6",
+  "attribution": "Bureau of Meteorology, Commonwealth of Australia; CC BY 4.0. Exact returned public geometry and metadata, no endorsement.",
+  "licence_sources": [
+    "https://portal.wsapi.cloud.bom.gov.au/arcgis/sharing/rest/content/items/ea9f7296abeb49c3a45430cd322400b1?f=pjson",
+    "https://awo.bom.gov.au/about/overview/licence"
+  ],
+  "files": [
+    {
+      "file": "geofabric.json",
+      "url": "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/ahgf/Geofabric_V3x_All_Products/MapServer?f=pjson",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-26T12:10:00.498614+00:00",
+      "sha256": "605b11f98adbd0f1aff0f97ab7fa38145afaca6a9500cd95f91cac4bf8227761",
+      "bytes": 19437
+    },
+    {
+      "file": "geofabric2.json",
+      "url": "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/ahgf/Geofabric_V3x_All_Products/MapServer/2?f=pjson",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-26T12:10:00.577452+00:00",
+      "sha256": "208d2a638827122e47cb4a3a3c5aa41f5e0857b942793a24070a40317b50768d",
+      "bytes": 10060
+    },
+    {
+      "file": "geofabric49.json",
+      "url": "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/ahgf/Geofabric_V3x_All_Products/MapServer/49?f=pjson",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-26T12:10:25.693540+00:00",
+      "sha256": "5a7a1abbd7c6cd1395547e41679e2c5a8debbeb76977a12218f400964deec90e",
+      "bytes": 7617
+    },
+    {
+      "file": "geofabric-item.json",
+      "url": "https://portal.wsapi.cloud.bom.gov.au/arcgis/sharing/rest/content/items/ea9f7296abeb49c3a45430cd322400b1?f=pjson",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-26T12:10:26.404186+00:00",
+      "sha256": "9f80a13dd0d01fa59be1cabcd116b6243ddcd8c29c3eddf9faa255ddf59d524a",
+      "bytes": 3104
+    },
+    {
+      "file": "station410033.json",
+      "url": "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/ahgf/Geofabric_V3x_All_Products/MapServer/2/query?where=stationno%3D%27410033%27&outFields=*&returnGeometry=true&outSR=4326&f=pjson",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-26T12:10:26.280838+00:00",
+      "sha256": "b8b2226e2a2121e584c78640e87daf715b5dbbbd614abbad13df73a28a911bc8",
+      "bytes": 4339
+    },
+    {
+      "file": "catchment410033.geojson",
+      "url": "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/ahgf/Geofabric_V3x_All_Products/MapServer/49/query?where=stationno%3D%27410033%27&outFields=*&returnGeometry=true&outSR=4283&f=geojson",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-26T12:10:50.429532+00:00",
+      "sha256": "0bba67fd746387172a2437fb0c9a48b2dd0c846c5c6899a024909900b3f50c7f",
+      "bytes": 332879
+    },
+    {
+      "file": "awra-service.json",
+      "url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_month_crf_multivariable_all_data/ImageServer?f=pjson",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-26T12:13:23.924835+00:00",
+      "sha256": "174240f4ddfeb440f7a9d5338fdde1f710e2121a2a7c051d1b3893327581ec23",
+      "bytes": 4571
+    },
+    {
+      "file": "awra-dimensions.json",
+      "url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_month_crf_multivariable_all_data/ImageServer/multiDimensionalInfo?f=pjson",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-26T12:13:23.851381+00:00",
+      "sha256": "3ef7f25c48f07ca837a621ac84cf5cafe122a17f0dff3ccbdfe87e32add78907",
+      "bytes": 213518
+    }
+  ]
+}

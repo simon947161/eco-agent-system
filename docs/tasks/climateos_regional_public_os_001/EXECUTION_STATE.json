@@ -1,0 +1,334 @@
+{
+  "schema": "climateos.regional_public_os.execution_state.v1",
+  "task_id": "CLIMATEOS-REGIONAL-PUBLIC-OS-001",
+  "updated_on": "2026-10-31",
+  "timezone": "Australia/Sydney",
+  "repository": "https://github.com/simon947161/eco-agent-system",
+  "taskbook_path": "docs/tasks/climateos_regional_public_os_001/TASKBOOK.md",
+  "taskbook_branch": "codex/regional-public-os-001-taskbook",
+  "status": "in_progress",
+  "execution_started": true,
+  "bridge_dependency": {
+    "pr": 127,
+    "state_checked_on": "2026-10-22",
+    "state": "draft_unmerged",
+    "head_sha": "6a20de8c21ed3587e521e3d10b0785b11be6d8f5"
+  },
+  "site": {
+    "project_id": "appgprj_6adefcfe720881918b4e32874f12dd86",
+    "url": "https://climateos-snowy-monaro.minshu.chatgpt.site",
+    "deployment_verified": true,
+    "public_access_verified": false,
+    "access_mode": "custom_owner_only",
+    "version_number": 2,
+    "version_id": "appgprj_6adefcfe720881918b4e32874f12dd86~appgver_6e7858f94ab881918228f1f9a742ff59",
+    "github_implementation_commit": "6a5c3b88af4536066fbc66f379decd74318e6571",
+    "sites_source_commit": "9f3a201d40c4b70d72f0b69c319805258769c242",
+    "anonymous_access_denied": true,
+    "forged_identity_denied": true,
+    "service_authorized_readback_verified": true,
+    "rollback_and_restore_verified": true,
+    "owner_browser_signin_verified": true,
+    "hosted_desktop_mobile_verified": true,
+    "owner_private_control_plane_rechecked_on": "2026-10-26",
+    "p03_deployment_performed": false
+  },
+  "automation": {
+    "schedule_created": false,
+    "unattended_write_readback_verified": false
+  },
+  "packages": {
+    "P00": "in_progress",
+    "P01": "in_progress",
+    "P02": "verified",
+    "P03": "in_progress",
+    "P04": "in_progress",
+    "P05": "in_progress",
+    "P06": "planned",
+    "P07": "planned",
+    "P08": "planned",
+    "P09": "planned",
+    "P10": "planned"
+  },
+  "external_spending_authorized_aud": 0,
+  "next_action": "P04 rainfall-only bounded continuation stopped as BLOCKED_EXACT_LINEAGE_UNVERIFIED. Official AWDS daily rain archive1985-2004 is a candidate, but its daily input edition/revision mapping to the captured NCI monthly rain_day.nc is not established. Resume only with new official product-specific mapping or a separately authorized clarification. Download-inventory schema returned ArcGIS499 Token Required; no retry/token/credential action. Do not repeat known404 or completed soil/HRS/scale work. See P04_RAINFALL_LINEAGE_REVIEW_20261031.md.",
+  "blockers": [
+    {
+      "scope": "P03_recent_operational_adapter",
+      "status": "BLOCKED",
+      "reason": "Existing WaterNSW subscription/prior success acknowledged. Current local credential binding and official operation/entitlement configuration not recovered; zero authenticated requests. Unrelated public ArcGIS staleness does not imply authenticated API staleness."
+    },
+    {
+      "scope": "P04_scientific_execution",
+      "status": "BLOCKED_NUMERIC_JOIN",
+      "reason": "The accepted July2000 soil comparison remains sample-specific empirical mean agreement, not general semantics. Rainfall now has an official AWDS daily archive candidate, but exact daily input edition/revision lineage to captured NCI monthly rain_day.nc is unverified; no candidate physical sample or sum comparison performed. Official download-inventory schema request returned HTTP200/ArcGIS499 Token Required and was stopped without retry or token acquisition. HRS DST/interval, monthly QC/completeness and catchment scientific/numeric admission remain unresolved."
+    }
+  ],
+  "workstreams": {
+    "smrc_policy_console": {
+      "task_id": "CLIMATEOS-SMRC-POLICY-CONSOLE-001",
+      "status": "in_progress",
+      "implementation": "Policy API and three-line interactive view integrated into existing monthly research Console; no separate OS or Bridge merge.",
+      "validated_sources": 3,
+      "latest_execution_documents": "2026 DP/OP official links discovered; content unverified",
+      "targeted_tests": {
+        "run": 7,
+        "passed": 7
+      },
+      "console_ui_verified": true,
+      "team_routing": {
+        "parent_issue": 128,
+        "orchestration_issue": 126,
+        "bridge_pr": 127
+      },
+      "next_action": "Reuse completed Console; follow P03/P04 evidence work. Current DP/OP content verification remains separate.",
+      "regression_tests": {
+        "run": 489,
+        "result": "OK",
+        "skipped": 1
+      },
+      "verification_scope": "Desktop browser: source/version selection, land/catchment and evidence/scenario switching, linked-policy navigation. Mobile not yet checked.",
+      "source_check": "Three recorded public PDFs matched again in permission-enabled read-only check; normal sandbox reports inaccessible; current DP/OP candidates remain missing/unverified."
+    },
+    "p02_streamflow": {
+      "status": "verified_local_vertical_slice",
+      "source_id": "COOMA-FLOW-STATION-410033",
+      "source_version": "September, 2026",
+      "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+      "coverage_start": "1964-03-01",
+      "coverage_end": "2026-02-28",
+      "records": 22645,
+      "licence": "CC BY 3.0 AU; copyright WaterNSW; BOM HRS product-specific attribution",
+      "quality_counts": {
+        "A": 12058,
+        "B": 7192,
+        "C": 160,
+        "E": 3235,
+        "G": 0
+      },
+      "absent_dates": 0,
+      "null_values": 0,
+      "current_condition_status": "HISTORICAL_STALE_FOR_CURRENT_USE",
+      "human_scientific_review": "pending",
+      "targeted_tests": {
+        "run": 4,
+        "passed": 4
+      },
+      "regression_tests": {
+        "run": 493,
+        "result": "OK",
+        "skipped": 1
+      },
+      "browser_verified": "Existing program.html: February 2026 selection returns 28 rows, chart, quality distinction, evidence expansion",
+      "direct_python_fetch": "HTTP_403; official fixed CSV retrieved using Windows Invoke-WebRequest; snapshot import verified",
+      "deployment": "VERIFIED_PRIVATE_SITES_V2; see p02_sites_private and site; former NOT_DEPLOYED state superseded.",
+      "validation_record": "P02_RECOVERY_VALIDATION_20261026.md"
+    },
+    "p02_sites_private": {
+      "status": "verified",
+      "local_worker_tests": {
+        "run": 8,
+        "passed": 8
+      },
+      "python_regression": {
+        "run": 493,
+        "result": "OK",
+        "skipped": 1
+      },
+      "snapshot_replay": "byte-identical; raw/packet corruption rejected",
+      "server_access": "owner-only policy; anonymous/forged identity 401; authorized service 200",
+      "desktop_mobile": "Authenticated deployed Site verified: February28 rows, Receipt/Passport, no-data clears chart; mobile375px CSS width no overflow",
+      "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+      "data_package_sha256": "f664b75674059bcdd907941afcfdf0b6c4a19ffa79f3835bfaa79b5967097452",
+      "acceptance_record": "P02_SITES_PRIVATE_ACCEPTANCE.md",
+      "next_action": "P03 historical reference accepted locally; keep Sites v2 owner-private. No redeployment required."
+    },
+    "p03_monthly_evidence": {
+      "status": "verified",
+      "cycle_id": "COOMA-CYCLE-5B67DD16E0116301",
+      "year_month": "2026-07",
+      "reference_id": "HRS-CYCLE-LINK-5786CE400E77B343",
+      "association": "POSTHOC_READ_ONLY_REFERENCE_NOT_PART_OF_ORIGINAL_MONTHLY_REVIEW",
+      "original_tables_unchanged": true,
+      "original_receipt_amended": false,
+      "acceptance_record": "P03_ACCEPTANCE_20261026.md",
+      "targeted_tests": {
+        "run": 5,
+        "passed": 5
+      },
+      "regression_tests": {
+        "run": 499,
+        "result": "OK",
+        "skipped": 1
+      },
+      "worker_tests": {
+        "run": 8,
+        "passed": 8
+      }
+    },
+    "p03_recent_source_feasibility": {
+      "status": "completed_with_adapter_blocked",
+      "recent_source_admitted": false,
+      "incremental_adapter_implemented": false,
+      "automatic_updates": false,
+      "evidence": "P03_PUBLIC_SOURCE_CHECK.json",
+      "interpretation": "Feasibility decision completed; recent operational data acquisition not verified.",
+      "historical_access_correction": "See WATERNSW_PRIOR_API_ACCESS_RECOVERY_20261026.md; blocked current configuration is not absence of prior subscription."
+    },
+    "p04_case001": {
+      "status": "PARTIAL_SPATIAL_VERIFIED_NUMERIC_JOIN_BLOCKED",
+      "case_id": "P04-WATER-SOIL-CLIMATE-001",
+      "preflight_months": 312,
+      "study_period": [
+        "2000-01-01",
+        "2025-12-31"
+      ],
+      "environmental_conclusion": null,
+      "causal_conclusion": null,
+      "targeted_tests": {
+        "run": 15,
+        "passed": 15
+      },
+      "task": "P04_CASE001_TASK.md",
+      "readiness": "P04_CASE001_READINESS.json",
+      "input_admission": "PARTIAL",
+      "input_admission_record": "P04_CASE001_ADMISSION_VALIDATION.md",
+      "spatial_result": "P04_SPATIAL_ADMISSION_RESULT.json",
+      "geometry_status": "VERIFIED_PUBLISHER_GEOMETRY_NOT_SCIENTIFIC_EQUIVALENCE",
+      "geometry_area_km2": 1902.4598112560498,
+      "geometry_difference_from_hrs_percent": 0.6699021725076637,
+      "awo_product_licence": "CC BY4.0 unless otherwise noted; documented AWDS/NetCDF access",
+      "numeric_subset_prepared": false,
+      "regression_tests": {
+        "run": 533,
+        "passed": 529,
+        "result": "OK",
+        "skipped": 4,
+        "isolated_copy": true,
+        "skip_reason": "Existing optional GIS audit dependencies unavailable; geometry not repeated"
+      },
+      "waternsw_credential_dependency": false,
+      "semantic_acceptance": {
+        "status": "PARTIAL_METADATA_VERIFIED_NUMERIC_JOIN_BLOCKED",
+        "record": "P04_SEMANTICS_ACCEPTANCE_20261027.md",
+        "result": "P04_SEMANTICS_RESULT_20261027.json",
+        "evidence": "evidence/p04_semantics_20261027/manifest.json",
+        "native_netcdf_bytes_received": 163840,
+        "physical_arrays_read": false,
+        "monthly_hrs_candidate": "February1965-2025 only; no QC column; 2026 absent",
+        "waternsw_dependency": false,
+        "targeted_tests": {
+          "run": 19,
+          "passed": 19,
+          "new_semantics_tests": 10
+        },
+        "tests_record": "P04_SEMANTICS_TESTS_20261027.md",
+        "public_document_review": {
+          "status": "EVIDENCE_NARROWED_NUMERIC_JOIN_BLOCKED",
+          "record": "P04_PUBLIC_DOCUMENT_SEMANTIC_REVIEW_20261027.md",
+          "baseline_pr_head": "564b9f830efadc07341e2eeee9c33a181b5e6382",
+          "hrs_monthly_reducer": "VERIFIED_PUBLISHER_SUM_OF_GAP_FILLED_DAILY_BY_MONTH",
+          "hrs_daily_interval": "VERIFIED_DECLARATION_9AM_PREVIOUS_24H_DST_UNRESOLVED",
+          "awra_sm_pct_scale": "SUPPORTED_RAW_FRACTION_0_TO_1_PERCENT_PRESENTATION",
+          "awra_monthly_rain_reducer": "STRONG_CORROBORATION_PROVIDER_CONTRACT_NOT_VERIFIED",
+          "awra_monthly_soil_statistic": "UNRESOLVED",
+          "provider_contact": "NOT_SENT",
+          "numeric_join": "BLOCKED"
+        },
+        "bounded_reproduction": {
+          "status": "PARTIAL_SOIL_EMPIRICAL_PASS_RAIN_BLOCKED_NUMERIC_JOIN_BLOCKED",
+          "record": "P04_AWRA_REPRODUCTION_20261031.md",
+          "result": "P04_AWRA_REPRODUCTION_RESULT_20261031.json",
+          "evidence": "evidence/p04_awra_20261031/manifest.json",
+          "runtime_record": "P04_RUNTIME_20261031.md",
+          "baseline_commit": "67bc471ebeaab02cd09b0ee9dd8edd917483f3fc",
+          "month": "2000-07",
+          "cell": {
+            "latitude": -36.25,
+            "longitude": 149.1,
+            "latitude_index": 525,
+            "longitude_index": 742
+          },
+          "daily_soil_values": 31,
+          "soil_monthly_matches_mean": true,
+          "soil_monthly_matches_final_day": false,
+          "rainfall_comparison": "BLOCKED_MISSING_MATCHED_DAILY_PRODUCT",
+          "rain_daily_candidate_http_status": 404,
+          "final_capture_requests": 21,
+          "final_capture_body_bytes": 402356,
+          "physical_subset_response_bytes": 1517,
+          "physical_values_count": 33,
+          "basin_numeric_subset_prepared": false,
+          "scientific_admission": false,
+          "provider_general_semantics_proven": false,
+          "waternsw_authenticated_requests": 0,
+          "sites_deployment_performed": false,
+          "targeted_tests": {
+            "run": 35,
+            "passed": 31,
+            "skipped": 4,
+            "new_tests_passed": 15
+          }
+        },
+        "rainfall_source_review": {
+          "status": "BLOCKED_EXACT_DAILY_MONTHLY_LINEAGE_UNVERIFIED",
+          "bounded_batch_stopped": true,
+          "baseline_commit": "7940f3ab0c992cf1b406571d46ecce77bf81a26a",
+          "record": "P04_RAINFALL_LINEAGE_REVIEW_20261031.md",
+          "evidence": "evidence/p04_rain_lineage_20261031/manifest.json",
+          "candidate_result": "evidence/p04_rain_lineage_20261031/candidate-result.json",
+          "official_candidate": "awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer",
+          "candidate_variable": "rain_day",
+          "candidate_unit": "mm",
+          "same_product_family_documented": true,
+          "exact_revision_lineage_verified": false,
+          "physical_sample_requests": 0,
+          "monthly_sum_compared": false,
+          "inventory_http_status": 200,
+          "inventory_application_error": 499,
+          "inventory_outcome": "CONFIRMED_TOKEN_REQUIRED_STOPPED",
+          "known_404_retries": 0,
+          "token_requests": 0,
+          "authenticated_requests": 0,
+          "provider_contact": "NOT_SENT",
+          "scientific_admission": false,
+          "cross_source_numeric_join": "BLOCKED",
+          "validation": "Eight complete retained HTTP bodies checked for bytes/SHA256/completeness; all new JSON valid; candidate facts and blocked state checked. Prior soil calculation and code unchanged; no new local full-suite run."
+        }
+      }
+    },
+    "waternsw_prior_access_recovery": {
+      "status": "BLOCKED_LOCAL_CREDENTIAL_CONFIGURATION",
+      "historical_subscription_acknowledged": true,
+      "merged_prs_reused": [
+        111,
+        112,
+        113
+      ],
+      "credential_binding_recovered": false,
+      "exact_capture_recovered": false,
+      "authenticated_requests": 0,
+      "byte_admission": "BLOCKED_MISSING_RAW_RESPONSE",
+      "scientific_comparability": "NOT_COMPARABLE_YET",
+      "tests": {
+        "run": 19,
+        "passed": 19,
+        "initial_sandbox_temp_errors": 5,
+        "permission_enabled_rerun_passed": true
+      },
+      "record": "WATERNSW_RECOVERY_VALIDATION_20261026.md"
+    }
+  },
+  "recovery": {
+    "status": "PARTIAL",
+    "baseline_commit": "11327bc70ba1fa4c2ff995b604acbca48622a3d4",
+    "historical_policy_commit": "42e8df72a549752a7f15a64f0ba6c58c1f11f49d",
+    "gate1_targeted_passed": 7,
+    "baseline_regression_run": 489,
+    "baseline_skipped": 1,
+    "local_prototype": "LOCAL_PROTOTYPE_NOT_RECOVERED",
+    "prototype_note": "An older untracked directory scaffold was found; no matching source, Chinese taskbook/acceptance files or eleven-test suite recovered in inspected authorized workspace/history. Not copied or executed.",
+    "pr127": "open Draft unmerged; head 6a20de8c21ed3587e521e3d10b0785b11be6d8f5",
+    "pr129": "open Draft unmerged; recovered branch retained"
+  }
+}
