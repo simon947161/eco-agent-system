@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),P=require('./csoi-phe.js'),W=require('./csoi-wcos.js'),S=require('./sources/csoi-source-observations.json');
+assert.equal(P.domains.length,8);
+for(const d of P.domains){assert(d.children.length);for(const c of d.children){assert(S.observations.some(o=>o.rawDigest===c.sourceRevision&&o.httpStatus===200));assert(c.locator);assert.equal(c.reviewState,'PENDING');}const flow=P.workflow(d.id,P.examples[d.id]);assert.equal(flow.applicability,'APPLICABLE_FOR_RESEARCH');assert(flow.steps.length>=6);assert(flow.steps.every(s=>s.evidence==='UNKNOWN'));assert.equal(flow.officialDecision,'BLOCKED');assert.equal(P.workflow(d.id,{}).applicability,'UNKNOWN');}
+for(const [id,activity]of [['food',{handlesFood:false}],['ossm',{onSiteSewage:false,reticulatedSewer:true}],['pools',{publicPool:false}],['cooling',{coolingWaterSystem:false,warmWaterSystem:false}],['skin',{laserHairRemovalOnly:true}],['environment',{pollutionComplaint:false,noiseComplaint:false}],['ltw',{sewerConnection:false}],['backflow',{testableBackflowDevice:false}]])assert.equal(P.workflow(id,activity).applicability,'NOT_APPLICABLE');
+assert.equal(P.workflow('skin',{deliberateSkinPenetration:true,registeredPractitionerInHealthService:true}).applicability,'NOT_APPLICABLE');
+assert.equal(P.workflow('ossm',{onSiteSewage:true,reticulatedSewer:true}).applicability,'UNKNOWN_CONFLICTING_SYSTEMS');
+assert.equal(P.workflow('food',{handlesFood:true,region:'OTHER_STATE'}).applicability,'REJECTED_REGION');assert.throws(()=>P.workflow('food',{note:'fictional@example.invalid'}),/PUBLIC_INPUT_DENIED/);
+assert.equal(W.backflowDue({testable:true,deviceType:'RPZ',lastTestDate:'2025-01-01',region:'Snowy Monaro, NSW, Australia'},P.backflowRule(),'2026-10-30').status,'UNKNOWN');
+assert(P.domains.find(d=>d.id==='pools').summary.includes('different Regulation editions'));
+console.log('PASS: eight source-backed public PHE/WCOS domains, conditional multi-stage research workflows, exclusions/wrong-region/conflicts, current-law and official-decision unknowns, source anchors and privacy negatives');

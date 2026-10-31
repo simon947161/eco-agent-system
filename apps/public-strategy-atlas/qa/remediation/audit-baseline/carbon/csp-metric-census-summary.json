@@ -1,0 +1,19 @@
+{
+  "scope": "Only CSP fullPDF29–31 published metric rows, not all goals/strategies/documents",
+  "expected_metric_rows": 63,
+  "structured_project_metrics": 1,
+  "source_row_verified_correct_project_metrics": 1,
+  "not_structured": 62,
+  "structured_coverage_percent": 1.5873015873015872,
+  "full_CSP_semantic_coverage": "UNKNOWN_NEEDS_COMBINED_GRAINS",
+  "independent_double_census": true,
+  "counterevidence": [
+    {
+      "topic": "Public transport access",
+      "page29_baseline": 2.1,
+      "page31_baseline": 3.1,
+      "same_printed_source": "UoC Regional Wellbeing Survey2021",
+      "status": "APPARENT_SOURCE_CONFLICT_REQUIRES_RECONCILIATION_NOT_AUTO_MERGE"
+    }
+  ]
+}

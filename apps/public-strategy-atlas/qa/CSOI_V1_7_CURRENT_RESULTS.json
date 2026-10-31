@@ -1,0 +1,91 @@
+{
+  "format": "csoi-v17-current-results-1",
+  "at": "2026-10-31T10:54:38.814787+00:00",
+  "systemAcceptance": "PARTIAL",
+  "softwareStatus": "PARTIAL",
+  "taskCounts": {
+    "VERIFIED": 49,
+    "PARTIAL": 28,
+    "BLOCKED": 3
+  },
+  "publicCorpus": {
+    "status": "PARTIAL",
+    "catalogueRecords": 52,
+    "families": 31,
+    "byteReceipts": 33,
+    "pdfReceipts": 13,
+    "htmlReceipts": 20,
+    "researchNotes": 25,
+    "researchNoteSources": 23,
+    "publishedPlanningRecords": 5,
+    "completeInventory": "UNKNOWN",
+    "authoredClauseObservations": 74,
+    "historicalDesignReferences": 3,
+    "activeDcpObservations": 73,
+    "withdrawnDcpObservations": 1
+  },
+  "officialAdmission": {
+    "status": "PENDING",
+    "admittedDocuments": 0,
+    "admittedRelationships": 0,
+    "sourceReportedCandidates": 8,
+    "actualOutcomeKpi": "UNKNOWN"
+  },
+  "native": {
+    "status": "PASS_TESTED_HERE",
+    "filesPassed": 40,
+    "evidence": "remediation/phase1-native.json",
+    "additionalTargetedKnowledgeContract": "remediation/phase1-knowledge-contract-native.log",
+    "totalDistinctFilesPassed": 41
+  },
+  "browser": {
+    "status": "PASS_TESTED_HERE",
+    "scope": "Currentphase1realdesktop1440/mobile390sourcecorrections,exports,notes,withdrawal;olderfullregressionretainedhistorical",
+    "evidence": "remediation/phase1-browser-results.json",
+    "priorFullRegression": "csoi/browser-phe-bombala.log"
+  },
+  "nodeCoverage": {
+    "lines": 91.38,
+    "branches": 84.62,
+    "functions": 95.56,
+    "scope": "Loaded atlas-*.js/csoi-*.js modules under Node only; renderer line coverage11.76%, no browser/tool coverage inferred",
+    "evidence": "csoi/coverage-cooma.txt",
+    "status": "HISTORICAL_NOT_RERUN_THIS_BATCH"
+  },
+  "defaultSnapshotDigest": "sha256:53841d668ffdb78a42edb9ad515a64dcb6956dd390b6c777531f2c4d72311375",
+  "pr": {
+    "number": 130,
+    "state": "OPEN_DRAFT",
+    "testedCodeSha": "94c70e9c11a9fe0b2f518fd39cf3737f1a044330",
+    "evidence": "csoi/pr130-phe-bombala-readback.json",
+    "ci": "No commit statuses or PR-triggered workflow runs returned; no independent CI pass claimed."
+  },
+  "notTested": [
+    "physical touch/monitors",
+    "professional screen-reader certification",
+    "cross-browser",
+    "private WCOS/Outlook compatibility",
+    "independent privacy/legal certification"
+  ],
+  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_integrity_remediation.code_sha",
+  "codeManifest": {
+    "atlas-domain.js": "sha256:b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+    "csoi-paths.js": "sha256:cb8e0702246d0cf1958ca494f444773bd03daebce62961784e4c1c3841b14a44",
+    "csoi-clauses.js": "sha256:f9b3f8c4b7a2aabec9ee0aa3928e03b31bebcbb87ce289441ee32712c876cc86",
+    "csoi-remediation.js": "sha256:b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",
+    "csoi-knowledge.js": "sha256:2377f1c0a8e4717512d688b091a656fa016d9b8e6193543e030f850a227f0229",
+    "csoi-pages.js": "sha256:a7c617a1e835ec54b6681a42d8c5e68610d729bf881e75f1590708b6fcccfa81",
+    "index.html": "sha256:0fa241853f2932234cefb374d73b7073390f0a4b3e97b4db2974340663fc4a11",
+    "sources/csoi-default-snapshot.js": "sha256:0ede52c98bdd3d2bf08630e2d307bd7565f401f768965c33ae5e8040d8862b85"
+  },
+  "report": "remediation/PHASE1_ACCEPTANCE_20261031.md",
+  "latestSourceBatch": "csoi/snowy-source-results.json",
+  "latestClauseBatch": "csoi/clause-results.json",
+  "latestPathBatch": "csoi/path-results.json",
+  "latestReviewCalendarBatch": "csoi/review-calendar-results.json",
+  "defaultDomainEntities": 137,
+  "defaultDomainAssertions": 48,
+  "latestCoomaBatch": "csoi/cooma-results.json",
+  "latestPheBombalaBatch": "csoi/phe-bombala-results.json",
+  "latestIntegrityRemediation": "remediation/PHASE1_ACCEPTANCE_20261031.md"
+}

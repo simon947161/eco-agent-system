@@ -1,0 +1,102 @@
+{
+  "format": "csoi-v17-acceptance-1",
+  "assessedAt": "2026-10-30T02:58:16.535971+00:00",
+  "fullSystemAccepted": false,
+  "status": "PARTIAL",
+  "assessedTaskCounts": {
+    "VERIFIED": 49,
+    "PARTIAL": 28,
+    "BLOCKED": 3,
+    "TODO": 0
+  },
+  "software": {
+    "status": "PARTIAL",
+    "nativeFilesPassed": 29,
+    "nativeFailures": 0,
+    "legacyBrowserSuitesPassed": 6,
+    "csoiBrowserSuitesPassed": 7,
+    "nodeCoverage": {
+      "lines": 91.88,
+      "branches": 83.93,
+      "functions": 94.73,
+      "scope": "loaded atlas-*.js and csoi-*.js modules; csoi-pages12.10% line coverage; browser renderer not measured"
+    }
+  },
+  "publicCorpus": {
+    "status": "PARTIAL",
+    "catalogueRecords": 42,
+    "families": 30,
+    "documentRevisions": 24,
+    "directories": 1,
+    "requirements": 17,
+    "totalRequestAttempts": 32,
+    "distinctAttemptedUrls": 31,
+    "successfulOriginalByteReceipts": 23,
+    "retrievedDocuments": 22,
+    "pdfReceipts": 9,
+    "htmlReceipts": 14,
+    "authoredResearchNotes": 20,
+    "researchNoteSources": 18,
+    "publishedPlanningRecords": 5,
+    "formalSourceExtraction": 0,
+    "catalogueAnchorVerified": 0,
+    "currentVersionConfirmed": 0,
+    "inventoryCompleteness": "UNKNOWN"
+  },
+  "relationshipReview": {
+    "status": "PENDING",
+    "sourceReportedResearchCandidates": 8,
+    "officialAdmittedRelationships": 0,
+    "eligibleDenominator": "UNKNOWN"
+  },
+  "dataQuality": {
+    "status": "PARTIAL",
+    "unresolvedPlanningVolumeUnits": 3,
+    "businessRecords": "UNKNOWN_NO_AUTHORISED_COUNCIL_DATA",
+    "sourceRightsApproved": 0,
+    "statutoryRequests403": 4,
+    "independentLegalReview": "PENDING"
+  },
+  "actualOutcomeKpi": {
+    "status": "UNKNOWN",
+    "actualCouncilSpend": "UNKNOWN",
+    "actualDelivery": "UNKNOWN",
+    "actualCompliance": "UNKNOWN",
+    "environmentalCausation": "UNKNOWN"
+  },
+  "notTested": [
+    "physical hardware",
+    "professional screen reader/WCAG certification",
+    "cross-browser",
+    "independent privacy/legal certification",
+    "private WCOS/Outlook compatibility"
+  ],
+  "testCommands": [
+    "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+    "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+    "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+    "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+    "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+  ],
+  "evidence": [
+    "qa/csoi/native-h.json",
+    "qa/csoi/coverage-h.txt",
+    "qa/csoi/browser-final-h.json",
+    "qa/csoi/annual-prefix-proof.json",
+    "qa/csoi/original-source-h.txt",
+    "qa/csoi/op-planning-quantity-390.png",
+    "qa/CSOI_V1_7_SYSTEM_RESULTS.md"
+  ],
+  "codeManifest": "csoi/browser-final-h.json",
+  "registryBinding": "Task registry binds this assessment to the actual code/evidence commit through tools/csoi-checkpoint.py; current pushed SHA is resolved in NEXT_SESSION.md.",
+  "latestContinuationAssessment": {
+    "at": "2026-10-31T08:57:43.205413+00:00",
+    "status": "PARTIAL",
+    "batchStatus": "PASS_TESTED_HERE",
+    "nativeFilesPassed": 38,
+    "browserLeafSuitesPassed": 16,
+    "currentReport": "CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+    "currentResults": "CSOI_V1_7_CURRENT_RESULTS.json",
+    "note": "Earlier top-level measurements remain the dated Pack H assessment; use this continuation and current-results file for the latest tested code, corpus and task state."
+  }
+}

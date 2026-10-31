@@ -1,0 +1,15 @@
+{
+  "recordedAt": "2026-10-29T22:45:24.955447+00:00",
+  "files": {
+    "atlas-intake.js": "sha256:f01252e3d121d98c24f447fde82314dce137c1df7ea33cd6e7f541bb197f0f46",
+    "atlas.js": "sha256:ebb0cf32b1f9782020271f33d66df5063c251ef688c4cf81f7077d99a1741c95",
+    "intake-access.test.cjs": "sha256:e1439fbb8ee26feb84b9f588fa60c3178db5b5c488cd1f4f901063bd1f682228",
+    "qa/intake-access-browser.py": "sha256:b819994ad847b4b038a4da8c22b391d1032806387dd936be025516e51eb98cdd",
+    "qa/intake-access-fixture.cjs": "sha256:ae353565830adbf8cd4947a7bf851fa0074a8a42b4e8a66de6124a66ef382535",
+    "sources/public-catalogue.json": "sha256:5a7fa9286368f3e7833846b25c5d4acb11d7cbc01fb8424988c19a3b48d50357",
+    "sources/public-catalogue.js": "sha256:4b59b5794cdeaef6ca5a7e0ccab23666d052adc7fc65f42c9a748e0ed83d10ca",
+    "atlas-data.js": "sha256:6a061b80d5f47a79f8d4e34d7e09dc0c236d4fbaec3b46f788a1dece5f267fe4",
+    "sources/csp61-admission.json": "sha256:6a15566a895927d5b923f48b4f63a8e81e30859e2b39d68c8f4a168e00c4de2c"
+  },
+  "note": "Final native tests and focused browser runner executed on this code. Existing system-browser regression also passed; its tested flows do not use the later reviewed synthetic admission wording."
+}

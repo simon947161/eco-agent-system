@@ -1,0 +1,635 @@
+{
+  "format": "csoi-v1.7-pack-test-matrix-1",
+  "generatedAt": "2026-10-30T00:55:04.180454+00:00",
+  "purpose": "Historical Pack A entry baseline plus required acceptance definitions; not a final Pack A verdict or registry replacement.",
+  "baselineCheckoutAtStart": "f787ed8f3e0af748144b1c73220e50b3aeabe05f",
+  "remoteVerification": "Parent/root performs authoritative remote and Draft PR readback; this audit made no remote requests.",
+  "taskbook": {
+    "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+    "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+    "registry": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+    "readScope": "Entire 201-line master plan, start-here instructions and COI-001–010 entries"
+  },
+  "taskStates": [
+    "TODO",
+    "IN_PROGRESS",
+    "VERIFIED",
+    "PARTIAL",
+    "BLOCKED"
+  ],
+  "axisVerdicts": [
+    "PASS",
+    "PARTIAL",
+    "FAIL",
+    "BLOCKED",
+    "UNKNOWN",
+    "NOT_TESTED"
+  ],
+  "baseline": {
+    "native": {
+      "status": "PASS_TESTED_HERE",
+      "command": "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-baseline.json",
+      "fileCount": 16,
+      "passedFiles": 16,
+      "failedFiles": 0,
+      "results": [
+        {
+          "test": "accounting.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: source-bounded 29.9 t CO2e/person, work/accounting type validation, 3 Atlas node overlays, 17+ negative/positive cases.\nNotice: modelling/unit tests only; official source admission and real Chrome QA are not implied.\n",
+          "stderr": ""
+        },
+        {
+          "test": "applicability.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: spatial/effective-time indexes, historical as-of queries, wrong region/date/parcel/revision/draft/legal-effect rejection, overlapping source revision conflict and rejected candidate path exclusion\n",
+          "stderr": ""
+        },
+        {
+          "test": "content.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: 60 synthetic content nodes, 59 edges, stable coordinates, bounded truncation (1ms)\nPASS: 200 synthetic content nodes, 199 edges, stable coordinates, bounded truncation (3ms)\nPASS: export/verify roundtrip, external checkpoint and corrupted dataset/receipt rejection\nPASS: 15 decomposable topics, 127 items, six-level trail, child/ancestor tamper propagation, order independence, 8 negative cases, English UI/content\n",
+          "stderr": ""
+        },
+        {
+          "test": "deep-content.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: exact legacy receipt hashes, 10000-wide indexed pagination/bounded layout, 5000-level iterative traversal/local+source receipts, flat deep snapshot roundtrip and ancestor mutation/cycle rejection\n",
+          "stderr": ""
+        },
+        {
+          "test": "discovery.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: explainable versioned multi-signal candidates with trace paths/alternatives/falsifiers/counterevidence, wrong-region/draft/period/source-loss rejections, persistent local review and forged official promotion prevention\n",
+          "stderr": ""
+        },
+        {
+          "test": "domain.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: additive domain migration, 127-item/base digest preservation, legacy workspace/snapshot compatibility, versioned accounting provenance/reverse links, immutable local reviews, stale/forged/corrupt history rejection\n",
+          "stderr": ""
+        },
+        {
+          "test": "execution.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: unified synthetic WBS, typed dependency/resource/finance/output routes, forward/reverse bounded BFS, multi-parent identity reuse, dependency cycle detection, separate execution/evidence states and known-link fail-closed\n",
+          "stderr": ""
+        },
+        {
+          "test": "intake-access.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: replayed source availability, retained historical access, stage-specific rights/review owners, correction withdrawal/re-retrieval and immutable catalogue identity\n",
+          "stderr": ""
+        },
+        {
+          "test": "intake.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: 15 source requirements, exact catalogue mirror/hash, ordered intake/correction replay, permitted synthetic pipeline, rights/date/URL/private-data gates, corruption/forged stage rejection and honest coverage denominators\n",
+          "stderr": ""
+        },
+        {
+          "test": "integration.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: unified numeric/unit/source/work search, typed scope filters/pagination, revision diffs and scenario editing with receipt invalidation and invalid finance rejection\n",
+          "stderr": ""
+        },
+        {
+          "test": "ledger.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: three-ledger typed formulas, cost/variance/conversion/allocation, pinned provenance, immutable receipt snapshots, changed-input invalidation, stale historical verification and unit/scope/year/zero/official/double-count rejection\n",
+          "stderr": ""
+        },
+        {
+          "test": "model.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: 10 additional admission rejection cases; snapshot tamper; discovery explanations and falsifier\nPASS: schema, multipath, candidate exclusion, false official promotion, missing target, time/region rejection, unknown context, canonical digest, byte tamper, append/retract, history tamper, duplicate event\n",
+          "stderr": ""
+        },
+        {
+          "test": "route-main.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: production route projection, model-backed continuous endpoints, stable partial expansion, distinct corridors/candidate exclusion, 127-item data unchanged, default map/hidden panel/utility entry contracts. Browser acceptance is separate.\n",
+          "stderr": ""
+        },
+        {
+          "test": "route-map.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS route-preview: 15 existing nodes / 16 edges, station selection, candidate toggle, line filter, zoom and inspector closing.\nNOTE this is a mock-DOM smoke test, not real browser visual, keyboard or WCAG acceptance.\n",
+          "stderr": ""
+        },
+        {
+          "test": "workspace-merge.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: checkpoint-bound three-way preview, explicit field choices, archived imported history, appended RESOLVE events, old workspace compatibility, stale preview and corruption/promotion rejection\n",
+          "stderr": ""
+        },
+        {
+          "test": "workspace.test.cjs",
+          "status": "PASS_TESTED_HERE",
+          "exit": 0,
+          "error": null,
+          "stdout": "PASS: edit/diff, immutable source/history, supersede/revert/retract/replay, stale editor conflict, monotonic history, import roundtrip/checkpoint/tamper/signature/promotion rejection, source admission pending gates and excerpt hash\n",
+          "stderr": ""
+        }
+      ],
+      "scope": "Existing 16 native files before new Pack A modules/routes are accepted; file-level pass count is not system/corpus completion."
+    },
+    "freshBrowser": {
+      "status": "NOT_TESTED",
+      "basis": "No browser runner was executed by this baseline audit. Root integrates and runs actual changed-code browser checks."
+    },
+    "coverageRemeasured": false,
+    "legacyContent": {
+      "itemCount": 127,
+      "baseDigest": "sha256:13e765c81f1340918322b1e985da85f2362da3c72e1997804f952865edf365d2",
+      "status": "PRESERVATION_VERIFIED_BY_NATIVE_TESTS"
+    },
+    "publicSourceCoverage": {
+      "registeredRequirements": 15,
+      "families": 14,
+      "concreteDocumentUrls": 2,
+      "integratedRetrieved": 0,
+      "integratedByteVerified": 0,
+      "integratedExtracted": 0,
+      "integratedVersionConfirmed": 0,
+      "admittedDocuments": 0,
+      "admittedRelationships": 0,
+      "completeInventoryDenominator": "UNKNOWN",
+      "actualOutcomeKpi": "UNKNOWN",
+      "datedSeparateObservation": "qa/NEW_RUNTIME_ACCESS_RECOVERY_20261030.md records HTTP 200 for official directory and summary, plus offline summary byte/anchor verifier PASS. It is separate from unchanged catalogue stages and was not rerun by this baseline audit.",
+      "rights": "UNKNOWN",
+      "currentOfficialEditionAndEffectiveScope": "UNKNOWN",
+      "humanAdmission": "PENDING"
+    },
+    "wcos": {
+      "privateRepositoryPermission": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "technicalInterfaces": "NOT_ACCESSED",
+      "protectedRecordsCopied": false,
+      "taskStatus": "BLOCKED",
+      "blocker": "Independent authorisation and accessible technical-only contract are not established; do not infer contents from the taskbook."
+    }
+  },
+  "packATaskBaseline": [
+    {
+      "id": "COI-001",
+      "baselineStatus": "PARTIAL",
+      "scope": "Existing-system baseline and source-state reconciliation",
+      "existingEvidence": [
+        "atlas-model.js",
+        "atlas-intake.js",
+        "NEXT_SESSION.md"
+      ],
+      "basis": "All 16 existing native files pass in this baseline. Latest source-access report records HTTP 200 and offline CSP summary byte/anchor verification; catalogue stages were not advanced. Remote/PR readback and final new-code acceptance belong to the integration checkpoint.",
+      "nextExecutableAction": "Retain this baseline; attach final permissions/navigation tests and remote push readback."
+    },
+    {
+      "id": "COI-002",
+      "baselineStatus": "BLOCKED",
+      "scope": "Authorised WCOS interface inventory",
+      "existingEvidence": [
+        "No private WCOS code read or copied"
+      ],
+      "basis": "Private repository permission and technical interfaces were not independently verified or accessed in this audit. Named Annual Calendar/Guideline Reader/Task Card/Planning Queue/Execution Log/Annual Report/Decision Navigator interfaces are taskbook requirements, not an inspected contract.",
+      "nextExecutableAction": "Inspect only separately authorised technical interface metadata in an approved environment; continue public/synthetic work meanwhile."
+    },
+    {
+      "id": "COI-003",
+      "baselineStatus": "TODO",
+      "scope": "Module ownership, identity boundaries and dependency direction",
+      "existingEvidence": [
+        "Existing AtlasModel / AtlasDomain / AtlasExecution / AtlasIntake modules"
+      ],
+      "basis": "V1.6 has one additive graph and reusable module APIs, but no tested four-module CSOI/WCOS/PHE ownership contract at the baseline.",
+      "nextExecutableAction": "Verify the new Pack A module boundary contract without creating another authoritative graph."
+    },
+    {
+      "id": "COI-004",
+      "baselineStatus": "PARTIAL",
+      "scope": "Four security classifications and default-deny transfer",
+      "existingEvidence": [
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "atlas-workspace.js"
+      ],
+      "basis": "V1.6 rejects unsupported source classifications and forged official promotion. PUBLIC/PERSONAL_PRIVATE/COUNCIL_PROTECTED/APPROVED_RELEASE cross-layer policy is not yet tested at this baseline.",
+      "nextExecutableAction": "Verify orthogonal classification and L0-L5 permissions; deny unapproved transfer regardless of layer or aggregation."
+    },
+    {
+      "id": "COI-005",
+      "baselineStatus": "PARTIAL",
+      "scope": "Council record authority and independent Atlas support",
+      "existingEvidence": [
+        "atlas-execution.js",
+        "atlas-intake.js",
+        "atlas-domain.js"
+      ],
+      "basis": "KNOWN_LINK fails closed, local review is not official approval, and official source admission is disabled without configured authority. A unified business-record authority policy remains to be tested.",
+      "nextExecutableAction": "Verify independent-research labelling and rejection of caller-invented Council decisions/authority."
+    },
+    {
+      "id": "COI-006",
+      "baselineStatus": "PARTIAL",
+      "scope": "Rights, privacy, small-cohort and output checks",
+      "existingEvidence": [
+        "atlas-intake.js",
+        "atlas-workspace.js",
+        "model.test.cjs"
+      ],
+      "basis": "Existing rights, URL, immutable-history, hostile-text and forged-admission tests pass. Comprehensive PII/commercial-secret/small-cohort checks across storage/screenshots/import/export are not established by them.",
+      "nextExecutableAction": "Verify explicit public-output guards and negative cases; do not claim automated privacy detection proves safe release."
+    },
+    {
+      "id": "COI-007",
+      "baselineStatus": "PARTIAL",
+      "scope": "Unified typed contracts and compatible migration",
+      "existingEvidence": [
+        "atlas-domain.js",
+        "atlas-model.js",
+        "atlas-execution.js"
+      ],
+      "basis": "Logical/revision IDs, typed work/evidence/source records, scope and immutable revisions exist. Domain migration, source catalogue and old snapshot compatibility pass. Orthogonal L0-L5/security/agency/judgment contracts remain untested.",
+      "nextExecutableAction": "Verify the additive contract and migration against the existing model and old snapshots."
+    },
+    {
+      "id": "COI-008",
+      "baselineStatus": "PARTIAL",
+      "scope": "Functional route-first page architecture",
+      "existingEvidence": [
+        "index.html",
+        "atlas.js",
+        "atlas-route-layout.js",
+        "route-main.test.cjs"
+      ],
+      "basis": "The original route map, recursive dossiers and 127 items are tested. Baseline panels alone do not establish every V1.7 shareable page, browser history or operational workflow.",
+      "nextExecutableAction": "Verify new route skeletons, deep links and back/forward in real Chromium; leave later-pack functionality explicitly incomplete."
+    },
+    {
+      "id": "COI-009",
+      "baselineStatus": "TODO",
+      "scope": "Three-axis acceptance and test definitions",
+      "existingEvidence": [
+        "qa/CSOI_BASELINE_MATRIX.md",
+        "qa/CSOI_TEST_MATRIX.json"
+      ],
+      "basis": "This delivery defines separate software, public-source and human-review acceptance for all packs. Definitions are not evidence that packs have passed.",
+      "nextExecutableAction": "Use the matrix at each actual pack checkpoint; attach executable evidence before registry promotion."
+    },
+    {
+      "id": "COI-010",
+      "baselineStatus": "PARTIAL",
+      "scope": "Pack A integrated tests and durable delivery",
+      "existingEvidence": [
+        "run-tests.cjs",
+        "qa/CSOI_TEST_MATRIX.json"
+      ],
+      "basis": "Fresh baseline native 16/16 passes. New permissions/page navigation integration, actual Pack A browser results, push and NEXT_SESSION checkpoint are pending this baseline.",
+      "nextExecutableAction": "Run final changed-code native/browser/negative checks, update registry/NEXT_SESSION, push/read back via the sole writer, then begin Pack B."
+    }
+  ],
+  "packAcceptanceDefinitions": [
+    {
+      "pack": "A",
+      "tasks": "COI-001–010",
+      "acceptance": {
+        "softwareCapability": {
+          "status": "PARTIAL",
+          "requiredEvidence": [
+            "One additive model; documented module/dependency/identity boundaries",
+            "Default-deny classification, rights and independent-authority guards with negative tests",
+            "Functional page skeleton deep links, shareable public state and browser back/forward",
+            "Legacy 127 items, prior snapshots and source histories remain verifiable"
+          ],
+          "actualNewPackEvidence": []
+        },
+        "publicSourceCoverage": {
+          "status": "PARTIAL",
+          "requiredEvidence": [
+            "Distinguish existing source requirements from concrete documents and actual retrieved bytes",
+            "Do not claim private WCOS interface inventory without authorised technical access"
+          ],
+          "completeInventoryDenominator": "UNKNOWN",
+          "measuredCoveragePercent": null
+        },
+        "humanReviewAdmission": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Record missing private-WCOS authorisation without copying protected content",
+            "Reject official decisions and release claims without independently validated authority"
+          ],
+          "authorisedReviewerVerified": false,
+          "officialAdmissionComplete": false
+        }
+      },
+      "fullPackAcceptance": false,
+      "continuationRule": "Track blocked scope and continue unrelated authorised public/synthetic engineering."
+    },
+    {
+      "pack": "B",
+      "tasks": "COI-011–020",
+      "acceptance": {
+        "softwareCapability": {
+          "status": "NOT_TESTED",
+          "requiredEvidence": [
+            "Searchable immutable source register and ordered intake/correction stages",
+            "Knowledge pages preserve exact source/version/page/table/clause anchors",
+            "Conditional strategic/planning paths and negative applicability tests"
+          ],
+          "actualNewPackEvidence": []
+        },
+        "publicSourceCoverage": {
+          "status": "PARTIAL",
+          "requiredEvidence": [
+            "Fresh exact official URLs and current revision/date/geography corroboration",
+            "Separate directory/retrieval/raw-byte/extraction/anchor/version/rights denominators",
+            "PHE and statutory sources remain UNKNOWN where retrieval or scope is unverified"
+          ],
+          "completeInventoryDenominator": "UNKNOWN",
+          "measuredCoveragePercent": null
+        },
+        "humanReviewAdmission": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "No automatic ADMITTED or formal CSP/DP/OP/LSPS relation",
+            "Rights and independent authorised review recorded separately"
+          ],
+          "authorisedReviewerVerified": false,
+          "officialAdmissionComplete": false
+        }
+      },
+      "fullPackAcceptance": false,
+      "continuationRule": "Track blocked scope and continue unrelated authorised public/synthetic engineering."
+    },
+    {
+      "pack": "C",
+      "tasks": "COI-021–030",
+      "acceptance": {
+        "softwareCapability": {
+          "status": "NOT_TESTED",
+          "requiredEvidence": [
+            "L0-L5 types, identity/data-quality checks and version-bound derivation",
+            "Correction/withdrawal invalidates dependent results without destroying history",
+            "Cross-layer provenance, old snapshot migration and public-output negative tests"
+          ],
+          "actualNewPackEvidence": []
+        },
+        "publicSourceCoverage": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Every derived item retains actual source/input revisions and coverage",
+            "Missing/duplicate/unit/time/geography/source conflicts remain visible"
+          ],
+          "completeInventoryDenominator": "UNKNOWN",
+          "measuredCoveragePercent": null
+        },
+        "humanReviewAdmission": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Security classification remains orthogonal to analytic layer",
+            "No anonymisation or aggregation automatically authorises release"
+          ],
+          "authorisedReviewerVerified": false,
+          "officialAdmissionComplete": false
+        }
+      },
+      "fullPackAcceptance": false,
+      "continuationRule": "Track blocked scope and continue unrelated authorised public/synthetic engineering."
+    },
+    {
+      "pack": "D",
+      "tasks": "COI-031–040",
+      "acceptance": {
+        "softwareCapability": {
+          "status": "NOT_TESTED",
+          "requiredEvidence": [
+            "Read-only WCOS adapter with no production mutation",
+            "Conditional LTW/Backflow/public-rule workflow and calendar bridge",
+            "Synthetic compatibility tests preserve independent WCOS/Outlook contracts"
+          ],
+          "actualNewPackEvidence": []
+        },
+        "publicSourceCoverage": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Inspect actual WCOS technical contracts only with separate authority",
+            "Use exact public LTW/Backflow rule anchors and explicit non-applicable cases"
+          ],
+          "completeInventoryDenominator": "UNKNOWN",
+          "measuredCoveragePercent": null
+        },
+        "humanReviewAdmission": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "No protected business record copied into public artifacts",
+            "No AI formal approval, real calendar synchronisation or unapproved private integration"
+          ],
+          "authorisedReviewerVerified": false,
+          "officialAdmissionComplete": false
+        }
+      },
+      "fullPackAcceptance": false,
+      "continuationRule": "Track blocked scope and continue unrelated authorised public/synthetic engineering."
+    },
+    {
+      "pack": "E",
+      "tasks": "COI-041–050",
+      "acceptance": {
+        "softwareCapability": {
+          "status": "NOT_TESTED",
+          "requiredEvidence": [
+            "Clickable PHE domain pages and reusable conditional workflow objects",
+            "At least five tested conditional public/synthetic work chains with counterexamples",
+            "Missing local procedure/ownership information is exposed rather than generated"
+          ],
+          "actualNewPackEvidence": []
+        },
+        "publicSourceCoverage": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Exact public legal/source versions, dates, applicability and locators",
+            "Distinguish NSW agencies, public Council policy and unknown local responsibility"
+          ],
+          "completeInventoryDenominator": "UNKNOWN",
+          "measuredCoveragePercent": null
+        },
+        "humanReviewAdmission": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "No generated internal SOP, customer data or assumed Council delegation",
+            "Formal decisions remain independent human actions"
+          ],
+          "authorisedReviewerVerified": false,
+          "officialAdmissionComplete": false
+        }
+      },
+      "fullPackAcceptance": false,
+      "continuationRule": "Track blocked scope and continue unrelated authorised public/synthetic engineering."
+    },
+    {
+      "pack": "F",
+      "tasks": "COI-051–060",
+      "acceptance": {
+        "softwareCapability": {
+          "status": "NOT_TESTED",
+          "requiredEvidence": [
+            "Distinct due/planned/actual/overdue/unknown denominators",
+            "Workload/resource and physical/financial/outcome ledgers with input receipts",
+            "Reverse tracing and duplicate-denominator/unit/fiscal/attribution rejection"
+          ],
+          "actualNewPackEvidence": []
+        },
+        "publicSourceCoverage": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Separate measured/assumed/estimated quantities and actual public evidence",
+            "Keep 29.9 t CO2e/person distinct from price, total and Council operational emissions",
+            "No invented Council budget, expenditure or achieved environmental outcome"
+          ],
+          "completeInventoryDenominator": "UNKNOWN",
+          "measuredCoveragePercent": null
+        },
+        "humanReviewAdmission": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Strategic contribution and causal attribution need exact evidence and review",
+            "Synthetic financial examples cannot become official actuals"
+          ],
+          "authorisedReviewerVerified": false,
+          "officialAdmissionComplete": false
+        }
+      },
+      "fullPackAcceptance": false,
+      "continuationRule": "Track blocked scope and continue unrelated authorised public/synthetic engineering."
+    },
+    {
+      "pack": "G",
+      "tasks": "COI-061–070",
+      "acceptance": {
+        "softwareCapability": {
+          "status": "NOT_TESTED",
+          "requiredEvidence": [
+            "Year/quarter/month/week/day/task/brief/execution/follow-up/report navigation",
+            "Recurrence/conflict handling and versioned task cards",
+            "Draft-only Michele preparation workspace and real desktop/mobile end-to-end tests"
+          ],
+          "actualNewPackEvidence": []
+        },
+        "publicSourceCoverage": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Every task retains source type, applicability, evidence and plan/actual distinction",
+            "Do not infer task completion from elapsed dates or imply inspected private calendars"
+          ],
+          "completeInventoryDenominator": "UNKNOWN",
+          "measuredCoveragePercent": null
+        },
+        "humanReviewAdmission": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "No impersonation or assumed manager approval",
+            "Email/calendar/Outlook reads, writes and sharing require explicit separate authorisation"
+          ],
+          "authorisedReviewerVerified": false,
+          "officialAdmissionComplete": false
+        }
+      },
+      "fullPackAcceptance": false,
+      "continuationRule": "Track blocked scope and continue unrelated authorised public/synthetic engineering."
+    },
+    {
+      "pack": "H",
+      "tasks": "COI-071–080",
+      "acceptance": {
+        "softwareCapability": {
+          "status": "NOT_TESTED",
+          "requiredEvidence": [
+            "Functional interconnected pages, recursive/reverse exploration and independent secondary view",
+            "Real Chromium mobile/16:9/21:9/32:9 keyboard/reduced-motion/overflow checks",
+            "Full native/browser/negative/snapshot/conflict/density regressions and handoff"
+          ],
+          "actualNewPackEvidence": []
+        },
+        "publicSourceCoverage": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Separate software/corpus/relationship-review/data-quality/actual-outcome measures",
+            "Run five required end-to-end demonstrations with public or explicit synthetic inputs",
+            "No blanket completion percentage or fabricated corpus denominator"
+          ],
+          "completeInventoryDenominator": "UNKNOWN",
+          "measuredCoveragePercent": null
+        },
+        "humanReviewAdmission": {
+          "status": "UNKNOWN",
+          "requiredEvidence": [
+            "Founder acceptance distinguishes working software from admitted official corpus",
+            "No deployment, merge, paid procurement or protected-data release; PR remains Draft"
+          ],
+          "authorisedReviewerVerified": false,
+          "officialAdmissionComplete": false
+        }
+      },
+      "fullPackAcceptance": false,
+      "continuationRule": "Track blocked scope and continue unrelated authorised public/synthetic engineering."
+    }
+  ],
+  "fiveRequiredEndToEndDemonstrations": [
+    {
+      "name": "LTW/Backflow rule-to-work-to-evidence-to-strategy",
+      "status": "NOT_TESTED_UNDER_V1_7"
+    },
+    {
+      "name": "Conditional fictitious food/LTW/backflow premises with non-applicable cases",
+      "status": "NOT_TESTED_UNDER_V1_7"
+    },
+    {
+      "name": "Public PHE obligation to synthetic work/resource/management chain",
+      "status": "NOT_TESTED_UNDER_V1_7"
+    },
+    {
+      "name": "Finance/environment reverse trace with units/period/formula/limits",
+      "status": "NOT_TESTED_UNDER_V1_7"
+    },
+    {
+      "name": "Operational-year to month/week/day/task/evidence/annual report and strategy",
+      "status": "NOT_TESTED_UNDER_V1_7"
+    }
+  ],
+  "limitations": [
+    "No new official network/source request or private-WCOS access in this audit.",
+    "No code coverage percentage remeasured; historical V1.6 percentages are not fresh V1.7 evidence.",
+    "Existing code is reused only where its specific tested contract matches the new task.",
+    "Matrix definitions and native test-file counts do not prove task, pack or full-system acceptance.",
+    "No official authority verifier is configured; forged local role/signature strings cannot create official admission.",
+    "No final remote SHA, final changed-code browser result or registry promotion is asserted by this baseline."
+  ]
+}

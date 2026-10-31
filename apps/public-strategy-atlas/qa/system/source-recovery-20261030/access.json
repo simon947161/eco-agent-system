@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ipr-directory",
+    "url": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+    "checkedAt": "2026-10-29T20:09:42.705628+00:00",
+    "method": "GET",
+    "tlsVerification": true,
+    "inheritedProxy": true,
+    "redirectPolicy": "HTTPS_SAME_EXACT_HOST_ONLY",
+    "status": "BLOCKED_BY_PERMISSION",
+    "failureClass": "PROXY_CONNECT_403",
+    "httpStatus": null,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "elapsedSeconds": 0.022,
+    "clientCheckedAt": "2026-10-30T07:09:42.705628+11:00"
+  },
+  {
+    "id": "csp-summary",
+    "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/csp-2035-plan-on-a-page.pdf",
+    "checkedAt": "2026-10-29T20:09:42.706145+00:00",
+    "method": "GET",
+    "tlsVerification": true,
+    "inheritedProxy": true,
+    "redirectPolicy": "HTTPS_SAME_EXACT_HOST_ONLY",
+    "status": "BLOCKED_BY_PERMISSION",
+    "failureClass": "PROXY_CONNECT_403",
+    "httpStatus": null,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "elapsedSeconds": 0.03,
+    "clientCheckedAt": "2026-10-30T07:09:42.706145+11:00"
+  }
+]

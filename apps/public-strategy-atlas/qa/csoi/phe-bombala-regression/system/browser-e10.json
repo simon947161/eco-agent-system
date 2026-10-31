@@ -1,0 +1,72 @@
+{
+  "invocationSuites": [
+    "e0-browser.py",
+    "system-browser.py",
+    "deep-browser.py",
+    "merge-browser.py",
+    "discovery-browser.py",
+    "integration-browser.py"
+  ],
+  "allSuitesExecutedThisInvocation": true,
+  "generatedAt": "2026-10-31T08:56:45.667162+00:00",
+  "browser": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "playwright": "1.62.0",
+  "python": "3.12.14",
+  "results": [
+    {
+      "script": "e0-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 9,
+      "log": "e10-e0-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667127+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "system-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 4,
+      "log": "e10-system-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667144+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "deep-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 8,
+      "log": "e10-deep-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667147+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "merge-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 4,
+      "log": "e10-merge-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667150+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "discovery-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 4,
+      "log": "e10-discovery-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667152+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "integration-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 5,
+      "log": "e10-integration-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667154+00:00",
+      "executedThisInvocation": true
+    }
+  ],
+  "limits": "Viewport emulation and Chromium accessibility tree are not physical hardware, cross-browser or professional screen-reader certification."
+}

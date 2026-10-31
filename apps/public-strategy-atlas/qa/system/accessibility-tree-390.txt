@@ -1,0 +1,218 @@
+- link "Skip to route map":
+  - /url: "#canvas-title"
+- banner:
+  - link "Atlas home":
+    - /url: ./index.html
+    - strong: Public Strategy Atlas
+  - text: Search stations and internal content
+  - searchbox "Search stations and internal content": 29.9 t CO2e/person
+  - group: Tools & views
+  - group: Pages
+- main:
+  - text: INDEPENDENT RESEARCH · SYNTHETIC ROUTES
+  - heading "Follow the reasoning." [level=1]:
+    - text: Follow the
+    - emphasis: reasoning.
+  - paragraph: Two routes. Many questions. Follow any station.
+  - region "Scrollable route map. Arrow keys scroll; Tab selects stations and connections.":
+    - group "Public strategy knowledge route map Strategy and planning routes branch and converge at synthetic stations. Dashed amber connections are hypotheses, not official policy mappings.":
+      - text: 01 / STRATEGY & DELIVERY 02 / LAND-USE & APPLICABILITY
+      - 'button "Inspect connection: CSP to Objective 6.1"'
+      - 'button "Inspect connection: CSP to Objective 8.2"'
+      - 'button "Inspect connection: Objective 6.1 to Delivery program"'
+      - 'button "Inspect connection: Objective 8.2 to Delivery program"'
+      - 'button "Inspect connection: Delivery program to Operational plan"'
+      - 'button "Inspect connection: Operational plan to Indicator definition"'
+      - 'button "Inspect connection: Operational plan to Water action"'
+      - 'button "Inspect connection: Water action to Evidence record"'
+      - 'button "Inspect connection: LSPS to Planning priority"'
+      - 'button "Inspect connection: Planning priority to LEP provision"'
+      - 'button "Inspect connection: Planning priority to DCP control"'
+      - 'button "Inspect connection: LEP provision to Geographic scope"'
+      - 'button "Inspect connection: DCP control to Geographic scope"'
+      - 'button "Inspect connection: Geographic scope to Effective period"'
+      - button "Inspect station CSP · SYNTHETIC": CSP SYNTHETIC ORIGIN
+      - button "Inspect station Objective 6.1 · SYNTHETIC": Objective 6.1 Environment · demo
+      - button "Inspect station Objective 8.2 · SYNTHETIC": Objective 8.2 Infrastructure · demo
+      - button "Inspect station Delivery program · SYNTHETIC": Delivery program DP · structure demo
+      - button "Inspect station Operational plan · SYNTHETIC": Operational plan OP · structure demo
+      - button "Inspect station Indicator definition · SYNTHETIC": Indicator definition Definition unverified
+      - button "Inspect station Water action · SYNTHETIC": Water action Synthetic activity
+      - button "Inspect station Evidence record · SYNTHETIC": Evidence record Synthetic review
+      - button "Inspect station LSPS · SYNTHETIC": LSPS Land-use planning
+      - button "Inspect station Planning priority · SYNTHETIC": Planning priority Illustrative priority
+      - button "Inspect station LEP provision · SYNTHETIC": LEP provision Scope unverified
+      - button "Inspect station DCP control · SYNTHETIC": DCP control Guidance unverified
+      - button "Inspect station Geographic scope · SYNTHETIC": Geographic scope Berridale · demo
+      - button "Inspect station Effective period · SYNTHETIC": Effective period Official version needed
+  - navigation "Choose a route":
+    - button "All routes" [pressed]
+    - button "Strategy"
+    - button "Planning"
+    - checkbox "Hidden links"
+    - text: Hidden links
+  - button "Zoom out": −
+  - text: Map zoom
+  - status: 100%
+  - button "Zoom in": +
+  - button "Overview"
+  - button "Reset map position and focus": Reset
+  - text: Strategy · synthetic Planning · synthetic Hypothesis · unverified Observed public text · pending Local review overlay
+  - paragraph: Lines show relationship categories, not achievement. All strategic/planning connections are synthetic.
+  - text: Not Council official · No admitted policy mapping · No actual KPI
+  - group: Map guide
+- dialog "Follow the evidence":
+  - text: STATION / CONNECTION CONTEXT
+  - heading "Follow the evidence" [level=2]
+  - button "Close context panel": ×
+  - heading "Audit & version history" [level=3]
+  - paragraph: sha256:b6308f79722ee1d53fcb30e826659564eacd7f68226dfc37bf542a7d0a90ab2e
+  - paragraph: "Structure issues: 0 · Event chain: PASS"
+  - paragraph: SELF_ATTESTED · RECEIPT_NOT_PRESENT · EXTERNAL_WITNESS_UNKNOWN
+  - heading "Events 30–60 / 323" [level=4]
+  - strong: DOMAIN_RESEARCH · ADD · sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:93d44941be17f90741498f9c0d5c26dd64d567af611e346f89022d382afc8473
+  - strong: DOMAIN_RESEARCH · ADD · sha256:fb3cd4aac307efc143afbfaeb298557b7a33672479788a33c6f43c11b6b7d201
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:fd1c1e7eb59253d10648c2fd59c2860565ddb8d7748328999acef4c30e9ab2e4
+  - strong: DOMAIN_RESEARCH · ADD · sha256:c054dd7e3ba7824678b1854c1902e8edefb723d790f0885798d5dfb933c1b96a
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:a7bdd3a1dc33573bfbda6bdce32df0c96f26a7f6ea76e29b6de3a8641256fa1f
+  - strong: DOMAIN_RESEARCH · ADD · sha256:90f1189d648bd53efb709000cf76aaa2d60784c3e2864414f296737cf3413a46
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:ead115a893e5e9f8993723980f0c9194bae5d36f4802498e2da692765d4431a9
+  - strong: DOMAIN_RESEARCH · ADD · sha256:be78ec3620373546f730a273a6c0e33cb8f898242a0b5d5fd4f4472983efa28a
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:578233bf85688f75d3b07978f76248d8ce959bb089fbddcec0a779a55caa9d05
+  - strong: DOMAIN_RESEARCH · ADD · sha256:f4461d2f5823b17da3b57f887ce8631d08e1a65f9558a88e4e53fdf0e60dae7a
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:d347f4da446148b4b0d32c3a426096695c8796285e2aff30e3c5e4646d834f5a
+  - strong: DOMAIN_RESEARCH · ADD · sha256:b47c14f8bc6701c63eee540bd3a86df0a554344384115aceed06fb79bed2937e
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:2052351bfbfb6d671ff38310abfc3536ceb0c46a2fcd4921f842bdfa22c47ee3
+  - strong: DOMAIN_RESEARCH · ADD · sha256:1677a85ad2b637fd64c52631f27892c477bcd177077907ed6f60b0a64da324d1
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:7649f1bb73257b2cf72915a92c38dbc582f66f0d9430644f933d0f212db5d625
+  - strong: DOMAIN_RESEARCH · ADD · sha256:261e685b3762fd196b74f661511c8751a5cf35c1370cdfc0bb7a2f23a8cca246
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:8e638127e50a2f3538f24c05b12f5b41f52a7f4c586bbae5935becdfa7ada388
+  - strong: DOMAIN_RESEARCH · ADD · sha256:4ec96263addfa6d5249ccd77c3022256a16da066794f8285068a1911d2ab3ab9
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:a1de70003b8f9d545c56dc0e65edf85f728498e36b5cf60a9faff750c44c5098
+  - strong: DOMAIN_RESEARCH · ADD · sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:3bb6c975fd278d18d3fcaaacaa82f922251d4ba01b09ebdc38355274534bba90
+  - strong: DOMAIN_RESEARCH · ADD · sha256:56202fadf304c3c59b31afea1f260e8eb6e14eb473690d3ba99fd1ebdb8948c1
+  - paragraph: 2026-10-30T07:27:40.568411+00:00
+  - paragraph: Append bounded attributed public research note, not admitted official source extraction or Council approval.
+  - paragraph: sha256:bc505981ed7bbbc33a424a94e0ef103aaae513906fbe6860641c0c9b19d3ccca
+  - strong: SOURCE_INTAKE · STAGE · csoi:smrc-dcp-bombala-2014:20261030
+  - paragraph: 2026-10-30T03:01:21.082448+00:00
+  - paragraph: Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred.
+  - paragraph: sha256:cfd067e961db20759982f9733f22f45aff88b6de03375d226846039b91761ff0
+  - strong: SOURCE_INTAKE · STAGE · csoi:smrc-dcp-bombala-2014:20261030
+  - paragraph: 2026-10-30T03:01:21.082448+00:00
+  - paragraph: Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred.
+  - paragraph: sha256:e91dcf4d37fa6033e7d444b92f8354515933f1560bced6e1e932f21444003e22
+  - strong: SOURCE_INTAKE · STAGE · csoi:smrc-dcp-bombala-2014:20261030
+  - paragraph: 2026-10-30T03:01:21.082448+00:00
+  - paragraph: Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred.
+  - paragraph: sha256:7d3ca94c8e9beb7a4e681c13ab9f55b7c45251b5e771a039108d7ed9f622dcf7
+  - strong: SOURCE_INTAKE · STAGE · csoi:smrc-dcp-bombala-2014:20261030
+  - paragraph: 2026-10-30T03:01:21.082448+00:00
+  - paragraph: Append actual public-source observation; rights, legal currency and human admission remain pending.
+  - paragraph: sha256:b9f2c0c64810969a11f4e5a614157c55f02e74a91c182f8dd8830b7f2a622262
+  - strong: DOMAIN_RESEARCH · ADD · sha256:b34464016f5712920ece1ef68da0e76ba7d825dc209db62b55536e8aedadc49f
+  - paragraph: 2026-10-30T03:01:21.082448+00:00
+  - paragraph: Append bounded attributed public research note, not admitted official source extraction or Council approval.
+  - paragraph: sha256:b043c0fca3c863cab0ccbe1960f3a1a44937a916282d509eb17a878f4fe1c413
+  - strong: SOURCE_INTAKE · STAGE · csoi:smrc-dcp-cooma-2014-amend4:20261030
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred.
+  - paragraph: sha256:a6a85998f0a2281e6ac23b15bb64e399dea32be873f661612b77c96e1c598f1c
+  - strong: SOURCE_INTAKE · STAGE · csoi:smrc-dcp-cooma-2014-amend4:20261030
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred.
+  - paragraph: sha256:1388c629d14d2510cce1b792c59439992ee7ac2738bf6cf9e38004ae053882f7
+  - strong: SOURCE_INTAKE · STAGE · csoi:smrc-dcp-cooma-2014-amend4:20261030
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Executed HTTPS retrieval and original-byte digest evidence; no extraction/admission permission inferred.
+  - paragraph: sha256:64d6146acf9f4545c2b8add24c274509ed13aa85a26b04a9933dc0885d6544bd
+  - strong: SOURCE_INTAKE · STAGE · csoi:smrc-dcp-cooma-2014-amend4:20261030
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append actual public-source observation; rights, legal currency and human admission remain pending.
+  - paragraph: sha256:6848ac7caae95526f10b5d12246ad11235d2407bcb061273ff5185e68a3a18d3
+  - strong: DOMAIN_RESEARCH · ADD · sha256:355141c8d410a315dc3603a05beaa052235a63249489e7bfc83118e8da4fb58d
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:95e9c360077e5d654c73fd85fe3721c3114bda00e7d739a6086ba7eedf2e9c86
+  - strong: DOMAIN_RESEARCH · ADD · sha256:c85aab082e2198ea3ecb97ae9dacbbad95d551262ec033812cf7057193da7f3e
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:e258ca2d511ca2cdbcb066481d26f570d70f99bcb17a5c6361e1bf8a2f21d30b
+  - strong: DOMAIN_RESEARCH · ADD · sha256:04f209db773acb9d7bc4e29205b632950a19e9342c30cfc6ac6d5415c7b1cd45
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:fd229e45e34d0b54f5c2150a77cf3ba7d8ab6fd17fbf1c0aa41b1427d5d9f1dc
+  - strong: DOMAIN_RESEARCH · ADD · sha256:69addb9127e8f6a8388874eee2022f064672d4d0ab4c76f66f494d2c6f051fcd
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:5db7d45356a484982a10423953cba9e8249dee5817d908064307c9798f4d94c9
+  - strong: DOMAIN_RESEARCH · ADD · sha256:6e82abc9a80e57c2031a7c3a98617ff186c3e87a60a581143b1708010745f107
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:030ec5ff9f8b5aff94c78adccaf3ee86f580852ab580d20631c62476598aa356
+  - strong: DOMAIN_RESEARCH · ADD · sha256:8d0ba0f97356650e3fb9b4c840476c39e54f2d7923e87ecef0aa828475f794e7
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:952f8b74b9375a6ecc9a42d3d473ef3580ce9486f95a265cf00c15d528b601a6
+  - strong: DOMAIN_RESEARCH · ADD · sha256:2e2d2215977b5fbcf024ce9028d986f683d9adb52281c667575be9f41260b41e
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:03b090932caba37e701b25a52548e8a1ddc3cdbb8d5d7040bd1f860ac14ede18
+  - strong: DOMAIN_RESEARCH · ADD · sha256:f3cf145da5fa5ed070a6529b70655273e618bb0c570e96fa20d096be0c39945f
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:3423559b6317a0f7e21b9147e61e89900133321bb9e4b56ececffa793a12a4f3
+  - strong: DOMAIN_RESEARCH · ADD · sha256:2542e2c6f400c5eb9f54f8caca12cac43ad3af65452dd14824547138f4a21f69
+  - paragraph: 2026-10-30T03:01:17.272171+00:00
+  - paragraph: Append source-pinned authored clause observation; no official rule, applicability, quantity or semantic relationship admitted.
+  - paragraph: sha256:c7295fae132304099e12b943377af15cbfdb8fec4f490cfc5c6d657964b3a499
+  - button "Newer events"
+  - button "Older events"
+  - heading "Revision field differences 0–15 / 170" [level=4]
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02:input:synthetic-water-output · sha256:07d4e9b907372272d33dd1047254f0ac93ced3a794aabc762e27886636a9dfcf
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02:input:synthetic-water-spend · sha256:1df00b20ca3e0373ddc44d083cd039379147afab9934f804cf2868018b399a44
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02 · sha256:67edf84d7a2fdf6227e3bc426e8311d79df0e5f35e18764e00dd97f9e5e4fd7a
+  - group: synthetic-water-spend · sha256:af6817d5f43d5d0a391e96347affaf7f2ec59208f58a273fb457f33a919afec3
+  - group: csoi:dcp:cooma2014:7:4:inspections · sha256:355141c8d410a315dc3603a05beaa052235a63249489e7bfc83118e8da4fb58d
+  - group: csoi:dcp:cooma2014:7:4:2:5 · sha256:c85aab082e2198ea3ecb97ae9dacbbad95d551262ec033812cf7057193da7f3e
+  - group: csoi:dcp:cooma2014:7:4:2:3 · sha256:04f209db773acb9d7bc4e29205b632950a19e9342c30cfc6ac6d5415c7b1cd45
+  - group: csoi:dcp:cooma2014:7:4:2:2:soil · sha256:69addb9127e8f6a8388874eee2022f064672d4d0ab4c76f66f494d2c6f051fcd
+  - group: csoi:dcp:cooma2014:7:4:2:2 · sha256:6e82abc9a80e57c2031a7c3a98617ff186c3e87a60a581143b1708010745f107
+  - group: csoi:dcp:cooma2014:7:4:2:1 · sha256:8d0ba0f97356650e3fb9b4c840476c39e54f2d7923e87ecef0aa828475f794e7
+  - group: csoi:dcp:cooma2014:7:4 · sha256:2e2d2215977b5fbcf024ce9028d986f683d9adb52281c667575be9f41260b41e
+  - group: csoi:dcp:cooma2014:7 · sha256:f3cf145da5fa5ed070a6529b70655273e618bb0c570e96fa20d096be0c39945f
+  - group: csoi:dcp:cooma2014:4:1:9 · sha256:2542e2c6f400c5eb9f54f8caca12cac43ad3af65452dd14824547138f4a21f69
+  - group: csoi:dcp:cooma2014:4 · sha256:84da6535d62b285b49f9b04a9465a0c6388a9fb4619f7eaa3dc6dc5b1737fd26
+  - group: csoi:dcp:cooma2014:2:8:plan · sha256:9fec27278b618412cf6d29f373ce1f244aba4777e2dd4224a4250f4f16afa97c
+  - button "Older revisions"
+  - paragraph: Original content, semantic assertions, source intake, calculations and local research have separate histories. Integrity is not source rights, truth, legal applicability or official approval. Full history is included in explicit exports.
+  - heading "Public reference directories" [level=3]
+  - link "Integrated planning and reporting ↗":
+    - /url: https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting
+  - link "Development and land-use planning ↗":
+    - /url: https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development
+  - paragraph: Directories do not prove clause mappings. CSP 6.1 admission remains pending.

@@ -1,0 +1,473 @@
+{
+  "format": "csoi-public-dcp-outline-1",
+  "sourceId": "csoi:smrc-dcp-cooma-2014-amend4:20261030",
+  "sourceRevision": "sha256:4347cd774b6d2508422a9e5fce8200ae470df9572ec644045d7abdfba9040bed",
+  "originalBytesCommitted": false,
+  "rights": "UNKNOWN",
+  "currentLaw": "UNKNOWN",
+  "officialAdmission": "PENDING",
+  "nodes": [
+    {
+      "id": "csoi:dcp:cooma2014:document",
+      "parentId": null,
+      "section": "Document",
+      "label": "Cooma-Monaro DCP 2014 — selected research outline",
+      "locator": "PDF page 1, printed page 1; Document",
+      "summary": "Own outline of selected introductory, drainage, erosion, water-service and on-site wastewater material in the retrieved Amendment 4 PDF. Revision inconsistencies remain visible. Unindexed chapters are gaps; current law, source reuse rights, parcel application and official admission are unconfirmed.",
+      "category": "DOCUMENT",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 1,
+        "normalizedPageDigest": "sha256:c4b7f348c2d3259cfc6a57222928daac711c382fb0cea9236075100773e860cb",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:versions",
+      "parentId": "csoi:dcp:cooma2014:document",
+      "section": "Record of Versions",
+      "label": "Observed amendment history",
+      "locator": "PDF page 2, printed page 2; Record of Versions",
+      "summary": "The version table names Amendment 4 as Issue 6, adopted on 17 March 2022 under resolution 58/22 and commencing on 7 April 2022. These are observations of the supplied PDF, not independent confirmation of the currently operative consolidation.",
+      "category": "SECTION",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 2,
+        "normalizedPageDigest": "sha256:3b78c8c44d69a191e84e10c5e03cc82f64495ef9a73b33bf09d1a8a47eee2a80",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:versions:conflicts",
+      "parentId": "csoi:dcp:cooma2014:versions",
+      "section": "Record of Versions — conflicting resolution",
+      "label": "Resolution wording needs reconciliation",
+      "locator": "PDF page 2, printed page 2; Record of Versions — conflicting resolution",
+      "summary": "The page heading associates the March 2022 adoption wording with resolution 362/19, while its Amendment 4 row gives 58/22. The table also associates 362/19 with an earlier amendment. Both readings are retained; no corrected official resolution is invented.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Which official adoption record resolves the inconsistent heading and version-table row?"
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 2,
+        "normalizedPageDigest": "sha256:3b78c8c44d69a191e84e10c5e03cc82f64495ef9a73b33bf09d1a8a47eee2a80",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:cover:conflict",
+      "parentId": "csoi:dcp:cooma2014:document",
+      "section": "Cover title and footer",
+      "label": "Cover identity conflict",
+      "locator": "PDF page 1, printed page 1; Cover title and footer",
+      "summary": "The cover identifies Cooma-Monaro Shire DCP 2014, Amendment 4, but the footer names Snowy River DCP 2013. The conflict is a source-quality flag; it does not establish that either plan applies to a particular parcel.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Confirm document identity against current official planning records before operational use."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 1,
+        "normalizedPageDigest": "sha256:c4b7f348c2d3259cfc6a57222928daac711c382fb0cea9236075100773e860cb",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:1",
+      "parentId": "csoi:dcp:cooma2014:document",
+      "section": "1 Introduction",
+      "label": "Introduction — historical planning context",
+      "locator": "PDF page 9, printed page 9; 1 Introduction",
+      "summary": "The introduction presents the DCP as detailed development guidance associated with Cooma-Monaro LEP 2013 and other planning instruments. Its historical legislative references are not treated as a verified statement of current law.",
+      "category": "CHAPTER",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 9,
+        "normalizedPageDigest": "sha256:a578a7f53c8e06420cc11b6312a7879e95a0633fa9eaafe11bea0a62d523f96d",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:1:3",
+      "parentId": "csoi:dcp:cooma2014:1",
+      "section": "1.3 Relationship to other plans",
+      "label": "Recorded LEP and SEPP precedence",
+      "locator": "PDF page 11, printed page 11; 1.3 Relationship to other plans",
+      "summary": "The text describes precedence for inconsistent LEP or SEPP provisions and lists earlier plans being replaced. This is a historical document relationship observation, not an admitted current statutory conclusion for a development proposal.",
+      "category": "SECTION",
+      "conditions": [
+        "Which instrument versions and proposal facts are relevant now?"
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 11,
+        "normalizedPageDigest": "sha256:19c0ade3ba4f620b569d3b04593e4184d3e84cae9072fcdabd15a3f02c4d4fb2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:1:4",
+      "parentId": "csoi:dcp:cooma2014:1",
+      "section": "1.4 Name of this Plan",
+      "label": "Body amendment label differs from cover",
+      "locator": "PDF page 12, printed page 12; 1.4 Name of this Plan",
+      "summary": "Section 1.4 still names Amendment 1 although the cover names Amendment 4. This internal label difference remains unresolved rather than being silently normalised to a single verified version.",
+      "category": "CLAUSE",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 12,
+        "normalizedPageDigest": "sha256:2b35b86515b2897004ed7697cb5b9c6bbedcd10335cd9526d50a576040379f16",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:1:5",
+      "parentId": "csoi:dcp:cooma2014:1",
+      "section": "1.5 Land to which this Plan applies",
+      "label": "Former Cooma-Monaro land context",
+      "locator": "PDF page 12, printed page 12; 1.5 Land to which this Plan applies",
+      "summary": "The application clause describes the whole Cooma-Monaro local government area. This historical geographic wording cannot be expanded to every part of the merged Snowy Monaro Council area or used as parcel-level applicability evidence.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Establish the former-area boundary and current parcel/instrument context independently."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 12,
+        "normalizedPageDigest": "sha256:2b35b86515b2897004ed7697cb5b9c6bbedcd10335cd9526d50a576040379f16",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:1:6",
+      "parentId": "csoi:dcp:cooma2014:1",
+      "section": "1.6 Commencement date",
+      "label": "Original and early amendment dates",
+      "locator": "PDF page 12, printed page 12; 1.6 Commencement date",
+      "summary": "This section describes the original April 2014 adoption and commencement and the March 2016 Amendment 1 dates. Those early dates are distinct from the later version-table entry and do not prove that the supplied consolidation is current.",
+      "category": "CLAUSE",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 12,
+        "normalizedPageDigest": "sha256:2b35b86515b2897004ed7697cb5b9c6bbedcd10335cd9526d50a576040379f16",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:2",
+      "parentId": "csoi:dcp:cooma2014:document",
+      "section": "2 General Development Controls",
+      "label": "General controls — conditional context",
+      "locator": "PDF page 17, printed page 17; 2 General Development Controls",
+      "summary": "The chapter groups general design controls, including drainage and erosion topics, and distinguishes general provisions from proposal-specific material elsewhere. The outline does not assign all controls to every development.",
+      "category": "CHAPTER",
+      "conditions": [
+        "Identify the proposal type and any specific provision or exception before considering a general control."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 17,
+        "normalizedPageDigest": "sha256:488126984ead06a78609723f3c6692f8d7b8c98f84c79bb5892bb35cebd640d2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:2:6",
+      "parentId": "csoi:dcp:cooma2014:2",
+      "section": "2.6 Stormwater",
+      "label": "Stormwater and receiving-land context",
+      "locator": "PDF page 28, printed page 28; 2.6 Stormwater",
+      "summary": "The stormwater section separates runoff impacts, drainage arrangements and detention-system topics. Potential impacts described in a plan are not measurements of current runoff or proof of an environmental outcome.",
+      "category": "SECTION",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 28,
+        "normalizedPageDigest": "sha256:8ba45f219b91090466b62a78b5703f20b8ec94272b84542985a9c696c485c0dc",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:2:6:easements",
+      "parentId": "csoi:dcp:cooma2014:2:6",
+      "section": "2.6 Performance based requirements",
+      "label": "Cross-boundary drainage evidence questions",
+      "locator": "PDF page 28, printed page 28; 2.6 Performance based requirements",
+      "summary": "The performance text discusses drainage through another lot, easement rights and supporting title information. No easement, adjoining-owner right or approved drainage design is established by this outline.",
+      "category": "CLAUSE",
+      "conditions": [
+        "What drainage route, title evidence and current engineering specification support the proposed arrangement?"
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 28,
+        "normalizedPageDigest": "sha256:8ba45f219b91090466b62a78b5703f20b8ec94272b84542985a9c696c485c0dc",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:2:6:3:1:1",
+      "parentId": "csoi:dcp:cooma2014:2:6",
+      "section": "2.6.3.1.1 On-site detention systems",
+      "label": "Mapped detention context and exceptions",
+      "locator": "PDF page 29, printed page 29; 2.6.3.1.1 On-site detention systems",
+      "summary": "This subsection ties detention discussion to mapped catchments and distinguishes exempt development and other stated conditions. It also refers to design calculations. No storage quantity, discharge rate, current map boundary or property obligation is inferred.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Check the relevant mapped catchment, proposal type and current design evidence."
+      ],
+      "exceptions": [
+        "The historical text distinguishes exempt development and other stated limitations; their current operation is unverified."
+      ],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 29,
+        "normalizedPageDigest": "sha256:3bfca851568716879225fac020df42453c999710f3dca72af45899da0d5ff792",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:2:8",
+      "parentId": "csoi:dcp:cooma2014:2",
+      "section": "2.8 Erosion and sediment control",
+      "label": "Erosion, sediment and downstream water",
+      "locator": "PDF page 34, printed page 34; 2.8 Erosion and sediment control",
+      "summary": "The introductory discussion links disturbed ground and construction runoff with sediment and water-quality concerns. It provides a research context, not evidence that a particular site is eroding or that a control has achieved an outcome.",
+      "category": "SECTION",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 34,
+        "normalizedPageDigest": "sha256:73deb4eeb7fee70ef5d1f462d846e32e63fc50ee026bcc844ae82b46df23c0cb",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:2:8:plan",
+      "parentId": "csoi:dcp:cooma2014:2:8",
+      "section": "2.8 Performance-based requirements",
+      "label": "Soil-and-water plan evidence facets",
+      "locator": "PDF page 35, printed page 35; 2.8 Performance-based requirements",
+      "summary": "The continued section discusses circumstances for an erosion and sediment control plan and identifies drawings, drainage features, stockpiles and stabilisation material. No numerical trigger, inspection schedule or actual control performance is asserted here.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Which source condition, construction stage and site facts make each evidence item relevant?"
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 35,
+        "normalizedPageDigest": "sha256:920f583b913200d1085f3bd3c93c22e4bda1bf7ebc3173d11849b01a4a6338c2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:4",
+      "parentId": "csoi:dcp:cooma2014:document",
+      "section": "4 Requirements for Subdivision",
+      "label": "Subdivision-specific branch",
+      "locator": "PDF page 88, printed page 88; 4 Requirements for Subdivision",
+      "summary": "The chapter distinguishes subdivision categories and refers to LEP mapping and clauses for context. This branch is retained separately from general building controls; no subdivision entitlement or minimum lot quantity is derived.",
+      "category": "CHAPTER",
+      "conditions": [
+        "Establish the subdivision type, current LEP and applicable mapping."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 88,
+        "normalizedPageDigest": "sha256:e90cc76f542b114caf2af3601942c7e407ed446ee83ecaa413d95160ee3af20b",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:4:1:9",
+      "parentId": "csoi:dcp:cooma2014:4",
+      "section": "4.1.9 Water supply and sewerage systems",
+      "label": "Subdivision water and wastewater references",
+      "locator": "PDF page 97, printed page 97; 4.1.9 Water supply and sewerage systems",
+      "summary": "The water/sewerage subsection discusses new lots, network connection, metering, services and easements. Its historical connection thresholds and engineering references are not converted into a current connection duty, actual capacity or approved works.",
+      "category": "SECTION",
+      "conditions": [
+        "Verify proposed-lot identity, current network availability, instrument scope and engineering evidence."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 97,
+        "normalizedPageDigest": "sha256:e2b75a70d15e2ad7890a05a01b121018602c5842963d1ffe4facfa3d3c80e831",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:7",
+      "parentId": "csoi:dcp:cooma2014:document",
+      "section": "7 Non-Design Related Provisions",
+      "label": "Non-design topics — selected branch",
+      "locator": "PDF page 148, printed page 5; 7 Non-Design Related Provisions",
+      "summary": "The chapter groups non-design topics and includes on-site waste management alongside other material. Only the selected wastewater branch below is outlined; the remaining chapter is not claimed to be fully decomposed.",
+      "category": "CHAPTER",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 148,
+        "normalizedPageDigest": "sha256:107877e225583294182696604d69bd49c1a20532f51144a9e0afa17804ed2693",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:7:4",
+      "parentId": "csoi:dcp:cooma2014:7",
+      "section": "7.4 On-site Waste Management Systems",
+      "label": "On-site wastewater context",
+      "locator": "PDF page 158, printed page 15; 7.4 On-site Waste Management Systems",
+      "summary": "The text contrasts its described sewered localities with on-site system situations and discusses maintenance and pollution concerns. That historical description is not a current sewer-network inventory, a finding about any system or a verified duty for a property.",
+      "category": "SECTION",
+      "conditions": [
+        "Establish actual sewer availability and the proposed development or system before following this branch."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 158,
+        "normalizedPageDigest": "sha256:bab90ea9f4a360fcf3436aeda210e2274f0c73a1703fd274edd674c2f194924c",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:7:4:2:1",
+      "parentId": "csoi:dcp:cooma2014:7:4",
+      "section": "7.4.2.1 Historical approval reference",
+      "label": "Section 68 and accreditation references",
+      "locator": "PDF page 158, printed page 15; 7.4.2.1 Historical approval reference",
+      "summary": "This subsection refers to Section 68 and NSW Health accreditation in its approval discussion. The reference is preserved for review; it does not verify current legislation, delegate Council authority or grant a system approval.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Independently verify the current legal provision, accreditation context and authorised decision-maker."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 158,
+        "normalizedPageDigest": "sha256:bab90ea9f4a360fcf3436aeda210e2274f0c73a1703fd274edd674c2f194924c",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:7:4:2:2",
+      "parentId": "csoi:dcp:cooma2014:7:4",
+      "section": "7.4.2.2 Land capability assessment",
+      "label": "Land-capability report context",
+      "locator": "PDF page 158, printed page 15; 7.4.2.2 Land capability assessment",
+      "summary": "The assessment subsection names historical guidance and a standard and begins an effluent-disposal-report information list. The cited editions, assessment method and professional sufficiency require separate current review.",
+      "category": "SECTION",
+      "conditions": [
+        "Which current source and suitably qualified assessment establish the relevant land-capability evidence?"
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 158,
+        "normalizedPageDigest": "sha256:bab90ea9f4a360fcf3436aeda210e2274f0c73a1703fd274edd674c2f194924c",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:7:4:2:2:soil",
+      "parentId": "csoi:dcp:cooma2014:7:4:2:2",
+      "section": "7.4.2.2 Assessment information continued",
+      "label": "Soil, terrain and laboratory evidence facets",
+      "locator": "PDF page 159, printed page 16; 7.4.2.2 Assessment information continued",
+      "summary": "The continued list separates soil and terrain information, testing records, system details and operation/maintenance material. This outline supplies no sample, test result, suitability conclusion or actual maintenance record.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Identify the provenance and professional review of each distinct evidence item."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 159,
+        "normalizedPageDigest": "sha256:edcbd8f34ee77253319c10eb9528dc87d59824c4ef14191f8e406d410febf047",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:7:4:2:3",
+      "parentId": "csoi:dcp:cooma2014:7:4",
+      "section": "7.4.2.3 Environmentally sensitive areas",
+      "label": "Sensitive-area treatment question",
+      "locator": "PDF page 159, printed page 16; 7.4.2.3 Environmentally sensitive areas",
+      "summary": "The subsection discusses alternative treatment in sensitive settings, including drinking-water collection areas. It does not classify a real site, establish a current catchment boundary or select an approved treatment system.",
+      "category": "CLAUSE",
+      "conditions": [
+        "What current spatial and technical evidence establishes the proposed site context?"
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 159,
+        "normalizedPageDigest": "sha256:edcbd8f34ee77253319c10eb9528dc87d59824c4ef14191f8e406d410febf047",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:7:4:2:5",
+      "parentId": "csoi:dcp:cooma2014:7:4",
+      "section": "7.4.2.5 Existing systems",
+      "label": "Existing-system adequacy question",
+      "locator": "PDF page 159, printed page 16; 7.4.2.5 Existing systems",
+      "summary": "The existing-system paragraph raises adequacy and satisfactory functioning in the context of a development proposal. An existing asset is not presumed adequate, defective or approved simply because it appears in this document.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Establish the proposal, current system condition and appropriate human review."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 159,
+        "normalizedPageDigest": "sha256:edcbd8f34ee77253319c10eb9528dc87d59824c4ef14191f8e406d410febf047",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:cooma2014:7:4:inspections",
+      "parentId": "csoi:dcp:cooma2014:7:4",
+      "section": "7.4 Prescriptive Requirements — On-going system inspections",
+      "label": "Referenced inspection strategy remains a gap",
+      "locator": "PDF page 159, printed page 16; 7.4 Prescriptive Requirements — On-going system inspections",
+      "summary": "The historical paragraph refers to ongoing inspections and a separate Cooma-Monaro sewage-management strategy. That reference does not establish the strategy edition, current inspection frequency, Council allocation, completed inspections or compliance outcome.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Locate and independently review the current authorised strategy before deriving any operational programme."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 159,
+        "normalizedPageDigest": "sha256:edcbd8f34ee77253319c10eb9528dc87d59824c4ef14191f8e406d410febf047",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    }
+  ],
+  "referenceMeasurements": []
+}

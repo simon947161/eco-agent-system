@@ -1,0 +1,9 @@
+/* Rebuild the default cache through the normal verified registration APIs. */
+const fs=require('node:fs'),path=require('node:path'),M=require('../atlas-model.js');
+function inputs(){return {base:require('../atlas-data.js'),cases:require('../atlas-accounting.js').cases,catalogue:require('../sources/csoi-catalogue.json'),observations:require('../sources/csoi-source-observations.json'),outlines:[require('../sources/snowy-dcp-outline.json'),require('../sources/cooma-dcp-outline.json'),require('../sources/bombala-dcp-outline.json')],corrections:require('../sources/knowledge-corrections.json')};}
+async function registerAll(base,source=inputs()){const legacy=await require('../csoi-intake.js').registerSummaries(await M.migrateDataset(base,source.cases,source.catalogue),source.observations);return (await require('../csoi-remediation.js').apply(legacy)).dataset;}
+async function build(){const source=inputs(),d=await registerAll(source.base,source),snapshot=await M.exportSnapshot(d);if(!await M.verifySnapshot(snapshot))throw Error('BOOT_GENERATION_INVALID');return {format:'csoi-default-snapshot-cache-1',inputDigest:await M.objectDigest(source),snapshot};}
+async function main(){const seed=await build(),file=path.resolve(__dirname,'../sources/csoi-default-snapshot.js'),content=`(function(root){const value=${JSON.stringify(seed)};root.CsoiDefaultSnapshot=value;if(typeof module!=='undefined')module.exports=value;})(typeof window!=='undefined'?window:globalThis);\n`;
+ if(process.argv.includes('--check')){if(fs.readFileSync(file,'utf8')!==content)throw Error('BOOT_CACHE_REBUILD_REQUIRED');}else fs.writeFileSync(file,content);
+ console.log('PASS: default cache exactly matches normal source registration and verified snapshot; no new facts/history/admission');}
+if(require.main===module)main().catch(e=>{console.error(e);process.exitCode=1});module.exports={inputs,registerAll,build};
