@@ -67,8 +67,10 @@
   "defaultSnapshotDigest": "sha256:621a3a17781a60ae7b18f0006fc98cf498292b1f5d49ae52e4c4776478f967dd",
   "pr": {
     "number": 130,
-    "state": "DRAFT",
-    "evidence": "csoi/pr130-review-calendar-readback.json"
+    "state": "OPEN_DRAFT",
+    "testedCodeSha": "94c70e9c11a9fe0b2f518fd39cf3737f1a044330",
+    "evidence": "csoi/pr130-phe-bombala-readback.json",
+    "ci": "No commit statuses or PR-triggered workflow runs returned; no independent CI pass claimed."
   },
   "notTested": [
     "physical touch/monitors",

@@ -3861,7 +3861,7 @@
       "qa/csoi/phe-bombala-regression/system/browser-e10.json"
     ],
     "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion.",
-    "codeCommitBinding": "Commit containing this code/evidence; precise remote SHA recorded at push readback",
+    "codeCommitBinding": "Exact tested code SHA plus recorded remote/PR readback; subsequent checkpoint commit changes documentation/evidence only.",
     "system": "PARTIAL",
     "corpus": "PARTIAL",
     "admission": "PENDING",
@@ -3869,6 +3869,8 @@
       "VERIFIED": 49,
       "BLOCKED": 3,
       "PARTIAL": 28
-    }
+    },
+    "code_sha": "94c70e9c11a9fe0b2f518fd39cf3737f1a044330",
+    "readback": "qa/csoi/pr130-phe-bombala-readback.json"
   }
 }
