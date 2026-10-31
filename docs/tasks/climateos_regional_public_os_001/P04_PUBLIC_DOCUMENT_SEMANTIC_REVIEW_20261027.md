@@ -107,3 +107,8 @@ If this bounded reproduction cannot be obtained reliably from the official endpo
 - Unresolved: exact NCI monthly rain/soil reducer; HRS DST interval; monthly QC/completeness; basin numeric mask completeness.
 - Next action: bounded same-cell daily/monthly AWRA reproduction, then update the semantic matrix.
 - Keywords: ClimateOS, P04, AWRA-L v7, HRS 410033, monthly reducer, sm_pct, rain_day, DST, QC, Evidence Passport.
+
+
+## 2026-10-31 continuation
+
+The bounded reproduction has now run. See [P04_AWRA_REPRODUCTION_20261031.md](P04_AWRA_REPRODUCTION_20261031.md): one July2000 NCI monthly soil sample matches the daily mean, not the final day; matched daily rainfall is unavailable at the inspected endpoint (HTTP404). This narrows the historical hypotheses above without claiming general semantics or reopening the blocked cross-source join.

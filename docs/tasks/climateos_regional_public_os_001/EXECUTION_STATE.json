@@ -1,7 +1,7 @@
 {
   "schema": "climateos.regional_public_os.execution_state.v1",
   "task_id": "CLIMATEOS-REGIONAL-PUBLIC-OS-001",
-  "updated_on": "2026-10-27",
+  "updated_on": "2026-10-31",
   "timezone": "Australia/Sydney",
   "repository": "https://github.com/simon947161/eco-agent-system",
   "taskbook_path": "docs/tasks/climateos_regional_public_os_001/TASKBOOK.md",
@@ -51,7 +51,7 @@
     "P10": "planned"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "P04 only: run a bounded same-grid-cell AWRA daily-vs-monthly semantic reproduction to test rain_day monthly sum and sm_pct month-end versus mean. HRS monthly sum/grouping is publisher-documented and sm_pct raw 0–1 fraction is strongly supported. Keep cross-source numeric join blocked pending AWRA reducer, HRS DST/interval, monthly QC/completeness and basin numeric admission. Provider questions remain UNSENT; WaterNSW credentials independent.",
+  "next_action": "P04 only: identify an officially documented daily rainfall counterpart/lineage for exact NCI monthly rain_day.nc so the same-cell July 2000 sum can be checked. Current documented-convention daily candidate returns HTTP 404 and is absent from inspected catalogues. Reuse the completed July2000 soil mean-vs-final-day reproduction; do not redo it or HRS reducer/soil-scale reviews. Keep numerical join blocked pending rain evidence, HRS DST/interval, monthly QC/completeness and catchment numeric admission. Provider contact remains UNSENT; Sites v2 and WaterNSW unchanged.",
   "blockers": [
     {
       "scope": "P03_recent_operational_adapter",
@@ -61,7 +61,7 @@
     {
       "scope": "P04_scientific_execution",
       "status": "BLOCKED_NUMERIC_JOIN",
-      "reason": "P04 public-document review narrowed the blocker: HRS monthly totals are publisher-documented sums of gap-filled daily data by month; HRS daily values are declared 9am totals for the previous 24h; official AWRA services support sm_pct raw scale as 0–1 fraction of fullness. Still unresolved: exact NCI monthly rain_day reducer, exact NCI monthly sm_pct statistic, HRS DST/interval/date handling and monthly QC/completeness, plus basin numeric completeness/scientific equivalence. Numeric join remains blocked."
+      "reason": "July2000 same-cell exact NCI sm_pct empirically matches 31-day mean, not final day; this is not a general product-contract proof. Rainfall comparison is blocked: monthly sample captured but convention-derived daily rain_day_2000.nc endpoint returns HTTP404 and is absent from inspected official catalogues; matched daily product/lineage missing. HRS DST/interval/date handling, monthly QC/completeness and basin numeric completeness/scientific equivalence remain independently unresolved."
     }
   ],
   "workstreams": {
@@ -200,10 +200,12 @@
       "awo_product_licence": "CC BY4.0 unless otherwise noted; documented AWDS/NetCDF access",
       "numeric_subset_prepared": false,
       "regression_tests": {
-        "run": 518,
+        "run": 533,
+        "passed": 529,
         "result": "OK",
-        "skipped": 1,
-        "isolated_copy": true
+        "skipped": 4,
+        "isolated_copy": true,
+        "skip_reason": "Existing optional GIS audit dependencies unavailable; geometry not repeated"
       },
       "waternsw_credential_dependency": false,
       "semantic_acceptance": {
@@ -232,6 +234,41 @@
           "awra_monthly_soil_statistic": "UNRESOLVED",
           "provider_contact": "NOT_SENT",
           "numeric_join": "BLOCKED"
+        },
+        "bounded_reproduction": {
+          "status": "PARTIAL_SOIL_EMPIRICAL_PASS_RAIN_BLOCKED_NUMERIC_JOIN_BLOCKED",
+          "record": "P04_AWRA_REPRODUCTION_20261031.md",
+          "result": "P04_AWRA_REPRODUCTION_RESULT_20261031.json",
+          "evidence": "evidence/p04_awra_20261031/manifest.json",
+          "runtime_record": "P04_RUNTIME_20261031.md",
+          "baseline_commit": "67bc471ebeaab02cd09b0ee9dd8edd917483f3fc",
+          "month": "2000-07",
+          "cell": {
+            "latitude": -36.25,
+            "longitude": 149.1,
+            "latitude_index": 525,
+            "longitude_index": 742
+          },
+          "daily_soil_values": 31,
+          "soil_monthly_matches_mean": true,
+          "soil_monthly_matches_final_day": false,
+          "rainfall_comparison": "BLOCKED_MISSING_MATCHED_DAILY_PRODUCT",
+          "rain_daily_candidate_http_status": 404,
+          "final_capture_requests": 21,
+          "final_capture_body_bytes": 402356,
+          "physical_subset_response_bytes": 1517,
+          "physical_values_count": 33,
+          "basin_numeric_subset_prepared": false,
+          "scientific_admission": false,
+          "provider_general_semantics_proven": false,
+          "waternsw_authenticated_requests": 0,
+          "sites_deployment_performed": false,
+          "targeted_tests": {
+            "run": 35,
+            "passed": 31,
+            "skipped": 4,
+            "new_tests_passed": 15
+          }
         }
       }
     },
