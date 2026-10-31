@@ -19,7 +19,7 @@ The Snowy River, Cooma-Monaro and Bombala DCP dossiers expose 72 source-pinned a
 
 For the latest complete research flow, use **Pages → PHE knowledge → On-site sewage**, or `/#/domains/phe/ossm`. Six curated Snowy/Cooma reading cards open exact source/page evidence, historical clauses, a user-chosen review date, independent work cards and the Annual Calendar. Source withdrawal removes the affected new-review links while retaining historical plans; current statutory/operational linkage stays UNKNOWN. See [this batch's evidence and screenshots](qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md).
 
-No externally reachable website preview URL has been verified for this batch. The loopback address above works only on the computer running the server. Cloud browser screenshots demonstrate the tested website; they do not make cloud localhost reachable from a user's PC.
+An owner-private trial is now published at https://council-strategy-intelligence.minshu.chatgpt.site. Open it with the owning ChatGPT account. Sites access is custom with only the owner allowed, no editors/groups/external visitors. The earlier loopback address works only on the computer running its server. See `qa/PRIVATE_TRIAL_DEPLOYMENT_20261031.md` for deployment and verification limits.
 
 V1.7 workspaces include public PHE source/condition chains; read-only synthetic WCOS contracts; L0–L5 lineage with independent calculation replay and source-withdrawal invalidation; service-specific workload/resource denominators; calendar/fiscal Annual Editions down to task/brief/evidence/follow-up/report; and draft-only Michele weekly/meeting preparation. Calendar/task/draft retention appends immutable revisions in the same registry. Outlook actions and formal Council decisions are disabled. The original private WCOS contract remains unavailable; no production compatibility is claimed.
 
@@ -77,7 +77,7 @@ Browser tests require engineering Python Playwright and system Chromium. The har
 
 Startup reads a generated default snapshot of the same registry and immutable history, verifies its input digest, complete snapshot and original base, then clones it for use. This avoids rebuilding every default research record on every page load. A stale or corrupt cache is rejected; exports/imports use the existing formats. After changing source assets or default registration code, rebuild with `node apps/public-strategy-atlas/tools/build-csoi-boot.cjs`. The native cache test compares the result with full registration, including an exact synthetic-fixture comparison.
 
-All work remains on `feature/public-strategy-atlas-web-mvp-20261029`, Draft PR #130. No merge, deployment, main/PR129 change, paid infrastructure, Council nonpublic records or government endorsement.
+All work remains on `feature/public-strategy-atlas-web-mvp-20261029`, Draft PR #130. The owner-private Sites trial is deployed separately; no merge, main/PR129 change, purchases, Council nonpublic records or government endorsement.
 
 The **Typed path-set comparison** at `/#/compare/paths` reads existing assertions and governed input lineage. It independently pins all nodes/relationships, retains evidence/counterevidence and distinguishes current input pins from unreviewed law/admission. Source withdrawal invalidates current use while historical proofs remain reproducible. Export proof JSON explicitly; verify with `node verify-paths.cjs SNAPSHOT.json PATH_COMPARISON.json`. No arithmetic or official route is admitted.
 

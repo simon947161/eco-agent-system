@@ -1,3 +1,17 @@
+# Owner-private Council trial published — 31 October 2026
+
+Live URL: https://council-strategy-intelligence.minshu.chatgpt.site — Sites v1, owner-only custom access (one owner, zero editors/groups/external visitors). Keep and reuse app-scoped `.openai/hosting.json` project `appgprj_6ae5b063565c8191802c9d7f7eb3214b`; never recreate it or reuse the water Site binding.
+
+Canonical implementation remains this PR130 app. Packaging commit `997a55a01e3571ebb91aa67eea36b767e3cca442` preserves the tested `13c64f44aa6b6dac40748bb7096a7dadd3d7352d` application. Sites source mirror SHA `54fed0a1b624a13c8670dc8bf01854587a73bb9b`, deployment `appgdep_6ae5b102d3c48191b2c6da8b77417b92`. The following GitHub checkpoint only records deployment evidence and instructions; read current PR HEAD on resume. Do not infer newer GitHub documentation is a newer deployed app version.
+
+Actual deployment checks: 35 runtime assets match canonical bytes; anonymous homepage and protected JS return 403; two existing real Chromium suites pass using supported Sites service authentication, including 1440px/390px PHE → source → review/work/calendar, export/import/withdrawal, explicit IndexedDB save/load and stale-tab conflict. Service access is not an interactive owner session. Owner browser login remains unverified; the Founder should open the URL with the owning ChatGPT account. Direct anonymous browser infrastructure limitation is separately recorded. No application code or test thresholds were changed for hosting.
+
+Report: `qa/PRIVATE_TRIAL_DEPLOYMENT_20261031.md`; receipt/live tests/screenshots: `qa/private-trial/`. Static packaging: `node tools/package-private-trial.cjs`; serve only generated `dist/`, not the full source/QA tree. The original ClimateOS water Site is unchanged by exact read-only metadata comparisons (version 2, original source/deployment/URL/access policy).
+
+The registry remains 49 VERIFIED / 28 PARTIAL / 3 BLOCKED; private trial delivery does not finish CSOI. The next public research batch below remains applicable. No production GitHub merge, new sharing, private data imports or purchases are authorised. Future changes must preserve owner-only access and the protected water Site; no autonomous background execution is implied.
+
+--- Previous implementation checkpoint ---
+
 # V1.7 PHE historical review flow and Bombala checkpoint — PARTIAL
 
 Continued the canonical `/workspace/eco-agent-system` checkout from independently verified remote/PR #130 HEAD `1447e925e7490bf3f6a645b90a1e995c586bdd0e`. Exact tested code commit `94c70e9c11a9fe0b2f518fd39cf3737f1a044330` was pushed and independently matched by git remote and GitHub PR readback. `qa/csoi/pr130-phe-bombala-readback.json` records OPEN/DRAFT, unmerged, and no commit-status/PR-triggered workflow results returned. This checkpoint commit only adds evidence; read the current branch and PR HEAD on resume. Keep the same branch `feature/public-strategy-atlas-web-mvp-20261029` and PR #130 OPEN/DRAFT. No deployment or merge.
