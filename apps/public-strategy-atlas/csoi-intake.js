@@ -34,7 +34,7 @@ async function registerSummaries(dataset,observations){
   for(const to of targets)if(M.domainIndex(result).has(to))result=await M.registerResearchLink(result,{id:'csoi:reported-reference:'+anchor.id+':'+to,from:id,to,reason:'Retain exact OP table CSP Link reference as a research candidate only; no automatic official admission.'});
  }
  result=await registerPlanningFacts(result,observations);
- const outlines=typeof module!=='undefined'?[require('./sources/snowy-dcp-outline.json'),require('./sources/cooma-dcp-outline.json')]:[root.CsoiDcpOutline,root.CsoiCoomaDcpOutline],clauses=typeof module!=='undefined'?require('./csoi-clauses.js'):root.AtlasCSOIClauses;
+ const outlines=typeof module!=='undefined'?[require('./sources/snowy-dcp-outline.json'),require('./sources/cooma-dcp-outline.json'),require('./sources/bombala-dcp-outline.json')]:[root.CsoiDcpOutline,root.CsoiCoomaDcpOutline,root.CsoiBombalaDcpOutline],clauses=typeof module!=='undefined'?require('./csoi-clauses.js'):root.AtlasCSOIClauses;
  for(const outline of outlines)if(outline&&result.domain.sourceCatalogue.sources.some(s=>s.id===outline.sourceId)){
   if(!clauses||outline.format!=='csoi-public-dcp-outline-1'||outline.originalBytesCommitted!==false)throw Error('DCP_OUTLINE_REQUIRED');
   result=await clauses.registerOutline(result,{sourceId:outline.sourceId,sourceRevision:outline.sourceRevision,nodes:outline.nodes});

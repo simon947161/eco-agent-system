@@ -88,5 +88,15 @@
     "qa/CSOI_V1_7_SYSTEM_RESULTS.md"
   ],
   "codeManifest": "csoi/browser-final-h.json",
-  "registryBinding": "Task registry binds this assessment to the actual code/evidence commit through tools/csoi-checkpoint.py; current pushed SHA is resolved in NEXT_SESSION.md."
+  "registryBinding": "Task registry binds this assessment to the actual code/evidence commit through tools/csoi-checkpoint.py; current pushed SHA is resolved in NEXT_SESSION.md.",
+  "latestContinuationAssessment": {
+    "at": "2026-10-31T08:57:43.205413+00:00",
+    "status": "PARTIAL",
+    "batchStatus": "PASS_TESTED_HERE",
+    "nativeFilesPassed": 38,
+    "browserLeafSuitesPassed": 16,
+    "currentReport": "CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+    "currentResults": "CSOI_V1_7_CURRENT_RESULTS.json",
+    "note": "Earlier top-level measurements remain the dated Pack H assessment; use this continuation and current-results file for the latest tested code, corpus and task state."
+  }
 }

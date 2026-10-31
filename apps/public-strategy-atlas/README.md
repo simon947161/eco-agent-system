@@ -15,7 +15,11 @@ Use a browser against the local server. Scripts are classic scripts and have no 
 
 The route map stays the homepage. The navigation menu opens bookmarkable hash routes such as `/#/strategy/csp`, `/#/domains/phe/food`, `/#/domains/wcos/ltw`, `/#/calendar`, `/#/metrics`, `/#/sources` and `/#/compare`. Companion windows use independent public state and `noopener`; unsaved edits are transferred only through an explicitly verified snapshot import.
 
-The Snowy River and Cooma-Monaro DCP dossiers now expose55source-pinned own clause observations (30Snowy/25Cooma), with conditions, exceptions, parent revision history and real five/eight-level evidence paths. Three historical110/90/40L/person/day design references remain separate from actual water demand, current law and admitted calculation inputs.
+The Snowy River, Cooma-Monaro and Bombala DCP dossiers expose 72 source-pinned authored observations (30 Snowy / 25 Cooma / 17 Bombala), with conditions, exceptions, parent revisions and real five/eight-level evidence paths. Bombala retains its 2012 cover versus 2014 directory label, historical date conflicts and discontinuous printed page numbers. Three earlier historical 110/90/40 L/person/day design references remain separate from actual water demand, current law and admitted calculation inputs.
+
+For the latest complete research flow, use **Pages → PHE knowledge → On-site sewage**, or `/#/domains/phe/ossm`. Six curated Snowy/Cooma reading cards open exact source/page evidence, historical clauses, a user-chosen review date, independent work cards and the Annual Calendar. Source withdrawal removes the affected new-review links while retaining historical plans; current statutory/operational linkage stays UNKNOWN. See [this batch's evidence and screenshots](qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md).
+
+No externally reachable website preview URL has been verified for this batch. The loopback address above works only on the computer running the server. Cloud browser screenshots demonstrate the tested website; they do not make cloud localhost reachable from a user's PC.
 
 V1.7 workspaces include public PHE source/condition chains; read-only synthetic WCOS contracts; L0–L5 lineage with independent calculation replay and source-withdrawal invalidation; service-specific workload/resource denominators; calendar/fiscal Annual Editions down to task/brief/evidence/follow-up/report; and draft-only Michele weekly/meeting preparation. Calendar/task/draft retention appends immutable revisions in the same registry. Outlook actions and formal Council decisions are disabled. The original private WCOS contract remains unavailable; no production compatibility is claimed.
 
@@ -70,6 +74,8 @@ python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py 
 ```
 
 Browser tests require engineering Python Playwright and system Chromium. The harness runs a temporary localhost server for the suite lifetime. These are not app dependencies. Actual results, screenshots, runtime versions, coverage, limits and acceptance verdicts are recorded under `qa/`. Node coverage measures loaded modules and is not browser rendering coverage. Mock-DOM historical preview tests are labelled separately from real Chromium acceptance. Full professional screen-reader/WCAG, physical touch and cross-browser certification are not claimed.
+
+Startup reads a generated default snapshot of the same registry and immutable history, verifies its input digest, complete snapshot and original base, then clones it for use. This avoids rebuilding every default research record on every page load. A stale or corrupt cache is rejected; exports/imports use the existing formats. After changing source assets or default registration code, rebuild with `node apps/public-strategy-atlas/tools/build-csoi-boot.cjs`. The native cache test compares the result with full registration, including an exact synthetic-fixture comparison.
 
 All work remains on `feature/public-strategy-atlas-web-mvp-20261029`, Draft PR #130. No merge, deployment, main/PR129 change, paid infrastructure, Council nonpublic records or government endorsement.
 

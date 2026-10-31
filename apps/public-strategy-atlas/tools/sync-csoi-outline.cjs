@@ -1,6 +1,6 @@
 /* Derive distributable metadata mirrors; authored JSON is the primary research file. */
 const fs=require('node:fs'),path=require('node:path'),G=require('../csoi-governance.js');
-const app=path.resolve(__dirname,'..'),assets=[['snowy-dcp-outline','CsoiDcpOutline'],['cooma-dcp-outline','CsoiCoomaDcpOutline']];
+const app=path.resolve(__dirname,'..'),assets=[['snowy-dcp-outline','CsoiDcpOutline'],['cooma-dcp-outline','CsoiCoomaDcpOutline'],['bombala-dcp-outline','CsoiBombalaDcpOutline']];
 function validate(outline){
  if(outline.format!=='csoi-public-dcp-outline-1'||outline.originalBytesCommitted!==false||outline.rights!=='UNKNOWN'||outline.currentLaw!=='UNKNOWN'||outline.officialAdmission!=='PENDING'||G.inspectPayload(outline).length)throw Error('PUBLIC_AUTHORED_OUTLINE_REQUIRED');
  if(Object.keys(outline).some(k=>!['format','sourceId','sourceRevision','originalBytesCommitted','rights','currentLaw','officialAdmission','nodes','referenceMeasurements'].includes(k))||!Array.isArray(outline.nodes)||!outline.nodes.length||!Array.isArray(outline.referenceMeasurements))throw Error('OUTLINE_FIELDS');

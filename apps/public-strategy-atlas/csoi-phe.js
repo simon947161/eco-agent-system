@@ -34,6 +34,31 @@ function workflow(id,activity={}){
 }
 function backflowRule(){const source=bySource.get('smrc-backflow');return {classification:'PUBLIC',sourceId:source.intakeRecord.id,revisionId:source.rawDigest,url:source.url,locator:source.knowledgeAnchors[0].locator,intervalMonths:12,applicability:'TESTABLE_DEVICE',region:'Snowy Monaro, NSW, Australia',anchorVerified:false,currentVersionChecked:false,rights:'UNKNOWN',admission:'PENDING',limitation:'Observed public summary supports research; current legal applicability and formal source admission have not been approved.'};}
 const examples={food:{handlesFood:true},ossm:{onSiteSewage:true,reticulatedSewer:false},pools:{publicPool:true},cooling:{coolingWaterSystem:true,warmWaterSystem:false},skin:{deliberateSkinPenetration:true,registeredPractitionerInHealthService:false,laserHairRemovalOnly:false},environment:{pollutionComplaint:true,noiseComplaint:false},ltw:{dischargesLiquidTradeWaste:true,sewerConnection:true},backflow:{testableBackflowDevice:true,waterConnection:true}};
-const api={domains,workflow,applicable,backflowRule,examples,authority:{statutoryPowers:'UNKNOWN_PENDING_CURRENT_LEGISLATION',publicReferences:['NSW Health','NSW Food Authority — retrieval unavailable','NSW Water','Council published service pages','NSW EPA referral named in Council guidance'],localInternalAllocation:'UNKNOWN',formalDecisions:'NOT_DELEGATED'}};
+// Explicit reading selections, not inferred regulatory or operational relationships.
+// Resolve records in the existing registry; never seed a second graph or a work plan.
+const OSSM_READING=[
+ ['csoi:dcp:snowy2013:C9:3','snowy','On-site disposal and sewer-connection scope'],
+ ['csoi:dcp:snowy2013:C9:3:1:b','snowy','Unavailable sewer connection and land suitability'],
+ ['csoi:dcp:snowy2013:C9:3:1:b:soil','snowy','Soil evidence to review'],
+ ['csoi:dcp:cooma2014:7:4:2:1','cooma','Historical installation approval references'],
+ ['csoi:dcp:cooma2014:7:4:2:2:soil','cooma','Land, soil and terrain evidence to review'],
+ ['csoi:dcp:cooma2014:7:4:inspections','cooma','Inspection-strategy reference remains a gap']
+];
+function readingDomains(clauseId){return OSSM_READING.some(([id])=>id===clauseId)?['ossm']:[];}
+async function historicalContexts(dataset,domain){
+ if(!domains.some(d=>d.id===domain))throw Error('PHE_DOMAIN_REQUIRED');
+ const result={domain,relationship:'CURATED_READING_SELECTION',statutoryLinkage:'UNKNOWN',operationalLinkage:'UNKNOWN',officialAdmission:'PENDING',cards:[]};
+ if(domain!=='ossm')return result;
+ const M=typeof module!=='undefined'?require('./atlas-model.js'):root.AtlasModel,C=typeof module!=='undefined'?require('./csoi-clauses.js'):root.AtlasCSOIClauses;
+ const outlines=typeof module!=='undefined'?{snowy:require('./sources/snowy-dcp-outline.json'),cooma:require('./sources/cooma-dcp-outline.json')}:{snowy:root.CsoiDcpOutline,cooma:root.CsoiCoomaDcpOutline};
+ for(const [id,family,purpose]of OSSM_READING){
+  const outline=outlines[family],expected=outline?.nodes.find(n=>n.id===id),entity=M.domainIndex(dataset).get(id),data=entity?.data?.csoiRecord?.data,clause=data?.dcpClause;
+  const selected=!!expected&&!!clause&&data.sourceId===outline.sourceId&&data.sourceDigest===outline.sourceRevision&&clause.section===expected.section&&M.canonical(clause.anchor)===M.canonical(expected.anchor);
+  const status=selected?await C.status(dataset,id):{current:false,status:'CURATED_CONTEXT_UNAVAILABLE',reasons:['SELECTED_SOURCE_OR_PAGE_MISSING_OR_CHANGED']};
+  result.cards.push({id,purpose,family,label:expected?.label||id,sourceId:outline?.sourceId||'UNKNOWN',sourceRevision:outline?.sourceRevision||'UNKNOWN',clauseRevision:entity?.revisionId||'UNKNOWN',locator:selected?data.locator:expected?.locator||'UNKNOWN',anchor:expected?.anchor||null,summary:selected?data.summary:'The selected historical evidence is unavailable in this snapshot.',conditions:selected?clause.conditions:[],exceptions:selected?clause.exceptions:[],region:selected?entity.scope.region:'UNKNOWN',current:status.current,status:status.status,reasons:status.reasons,reviewPlans:(dataset.domain?.entities||[]).filter(e=>e.data?.csoiRecord?.data?.reviewPlan?.clauseId===id).map(e=>({id:e.id,date:e.data.csoiRecord.data.reviewPlan.date,clauseRevision:e.data.csoiRecord.data.reviewPlan.clauseRevisionId}))});
+ }
+ return result;
+}
+const api={domains,workflow,applicable,backflowRule,examples,historicalContexts,readingDomains,authority:{statutoryPowers:'UNKNOWN_PENDING_CURRENT_LEGISLATION',publicReferences:['NSW Health','NSW Food Authority — retrieval unavailable','NSW Water','Council published service pages','NSW EPA referral named in Council guidance'],localInternalAllocation:'UNKNOWN',formalDecisions:'NOT_DELEGATED'}};
 root.CsoiPhe=api;root.AtlasCSOIPhe=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

@@ -1,0 +1,329 @@
+{
+  "format": "csoi-public-dcp-outline-1",
+  "sourceId": "csoi:smrc-dcp-bombala-2014:20261030",
+  "sourceRevision": "sha256:91375ba17012f891593bb200a533d3de12e6e48e579b1d7e9212af0be66a7ee6",
+  "originalBytesCommitted": false,
+  "rights": "UNKNOWN",
+  "currentLaw": "UNKNOWN",
+  "officialAdmission": "PENDING",
+  "nodes": [
+    {
+      "id": "csoi:dcp:bombala2012:document",
+      "parentId": null,
+      "section": "Document",
+      "label": "Bombala DCP 2012 \u2014 selected historical outline",
+      "locator": "PDF page 1, printed cover (unnumbered); Document",
+      "summary": "The retrieved cover names Bombala DCP 2012 and Amendment 2. The registered directory lead used 2014; the source identity is retained rather than silently renamed. Current consolidation, rights and parcel applicability remain unknown.",
+      "category": "DOCUMENT",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 1,
+        "normalizedPageDigest": "sha256:25fef57ce309d16f33eec1900d49f43ad0c11e8a4d1a1968624ba3fa90bd0f26",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:history",
+      "parentId": "csoi:dcp:bombala2012:document",
+      "section": "Document history",
+      "label": "Amendment dates need reconciliation",
+      "locator": "PDF page 4, printed history (unnumbered); Document history",
+      "summary": "The history table records original adoption in December 2012 and later amendments. Amendment 2 adoption is shown as 17 March 2022; its effective-date entry contains both 7 April 2022 and parenthetical 30 March 2022. The cover names 7 April. No single current legal effective date is inferred.",
+      "category": "CLAUSE",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 4,
+        "normalizedPageDigest": "sha256:4dda60826d96f5e50fe5f1a05591afb6194290fe60abae3e2f63e175053c2087",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:1:1:1",
+      "parentId": "csoi:dcp:bombala2012:document",
+      "section": "1.1.1 Application",
+      "label": "Listed historical zones and LEP scope",
+      "locator": "PDF page 5, printed page 1; 1.1.1 Application",
+      "summary": "Application is described by Bombala LEP 2012 and eight listed historical zone codes. This is not the whole merged Snowy Monaro area, a current zone translation or a parcel determination.",
+      "category": "SECTION",
+      "conditions": [
+        "Establish the relevant historical plan, land and zone before discussing application."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 5,
+        "normalizedPageDigest": "sha256:413feb2c7483c778ddfb6cbaf86fa65d1779095d1268e74e027d77e147176cfc",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:1:1:3",
+      "parentId": "csoi:dcp:bombala2012:document",
+      "section": "1.1.3 Savings provisions",
+      "label": "Pre-commencement application exception",
+      "locator": "PDF page 5, printed page 1; 1.1.3 Savings provisions",
+      "summary": "The document distinguishes applications lodged before commencement, including its historical modification reference. Lodgement and version evidence must be reviewed; the old statutory reference is not promoted to current law.",
+      "category": "CLAUSE",
+      "conditions": [],
+      "exceptions": [
+        "Earlier applications are described as assessed under the plan or policy then applying."
+      ],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 5,
+        "normalizedPageDigest": "sha256:413feb2c7483c778ddfb6cbaf86fa65d1779095d1268e74e027d77e147176cfc",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:1:1:4",
+      "parentId": "csoi:dcp:bombala2012:document",
+      "section": "1.1.4 How to use this Plan",
+      "label": "Performance criteria and acceptable solutions are distinct",
+      "locator": "PDF page 6, printed page 2; 1.1.4 How to use this Plan",
+      "summary": "The text explains intent, performance criteria and acceptable solutions. It expressly warns that adjacent columns do not necessarily correspond. The outline keeps P and A observations as siblings and creates no inferred one-to-one control relationship.",
+      "category": "CLAUSE",
+      "conditions": [],
+      "exceptions": [
+        "The text describes merit variation and alternative solutions, with a legislative-requirement qualification; no variation or approval is granted here."
+      ],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 6,
+        "normalizedPageDigest": "sha256:c74c684dbc41a61cadce79cf54c36f8fbd53e8e1b352d16b7e070b58484d02f6",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:3",
+      "parentId": "csoi:dcp:bombala2012:document",
+      "section": "3 / 3.1 Subdivision",
+      "label": "Subdivision \u2014 historical listed-zone branch",
+      "locator": "PDF page 42, printed page 40; 3 / 3.1 Subdivision",
+      "summary": "This branch is for subdivision in its listed historical zones. The PDF has discontinuous printed pagination; page 42 prints 40 while later service pages print 33 and 34. Both coordinates are retained.",
+      "category": "CHAPTER",
+      "conditions": [
+        "Establish subdivision proposal and applicable listed zone."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 42,
+        "normalizedPageDigest": "sha256:b342c18cbac1729a50730a51208c00470a20a444355d2723737aef929948ad0c",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:3:1:5",
+      "parentId": "csoi:dcp:bombala2012:3",
+      "section": "3.1.5 Services",
+      "label": "Subdivision services and effluent evidence",
+      "locator": "PDF page 54, printed page 33; 3.1.5 Services",
+      "summary": "The section distinguishes reticulated services, on-site disposal and service capacity. Its intent and separate performance/acceptable-solution columns are historical research context, not completed service delivery.",
+      "category": "SECTION",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 54,
+        "normalizedPageDigest": "sha256:cb02432e6f86bd93622291d53a2d1c3e4b77d2e0e13b2132d2f7c66c2b6f1183",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:3:1:5:P1",
+      "parentId": "csoi:dcp:bombala2012:3:1:5",
+      "section": "3.1.5 P1",
+      "label": "Network availability versus on-site capacity",
+      "locator": "PDF page 54, printed page 33; 3.1.5 P1",
+      "summary": "This performance criterion distinguishes available reticulated services from unavailable services and the land capacity question for domestic water and effluent. No actual network availability or suitability is supplied.",
+      "category": "CLAUSE",
+      "conditions": [
+        "The observed branch depends on whether reticulated services are available."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 54,
+        "normalizedPageDigest": "sha256:cb02432e6f86bd93622291d53a2d1c3e4b77d2e0e13b2132d2f7c66c2b6f1183",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:3:1:5:P2",
+      "parentId": "csoi:dcp:bombala2012:3:1:5",
+      "section": "3.1.5 P2",
+      "label": "Water-supply pollution question",
+      "locator": "PDF page 54, printed page 33; 3.1.5 P2",
+      "summary": "The separate performance criterion concerns pollution of water-supply systems from reticulated or on-site servicing. It is not a measurement of pollution or compliance.",
+      "category": "CLAUSE",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [
+        "Identify relevant water-supply receptors and evidence before reaching a conclusion."
+      ],
+      "anchor": {
+        "pdfPage": 54,
+        "normalizedPageDigest": "sha256:cb02432e6f86bd93622291d53a2d1c3e4b77d2e0e13b2132d2f7c66c2b6f1183",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:3:1:5:A8",
+      "parentId": "csoi:dcp:bombala2012:3:1:5",
+      "section": "3.1.5 A8",
+      "label": "Conditional R5 connection and other-land evidence",
+      "locator": "PDF page 55, printed page 34; 3.1.5 A8",
+      "summary": "The solution discusses R5 connection subject to network capacity and efficiency, then evidence of land suitability for domestic wastewater disposal elsewhere. No connection approval, network capacity result or mandatory treatment choice is inferred.",
+      "category": "CLAUSE",
+      "conditions": [
+        "The R5 connection statement is conditional on capacity and efficiency."
+      ],
+      "exceptions": [
+        "Elsewhere is a distinct land-suitability evidence branch; its current scope remains unreviewed."
+      ],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 55,
+        "normalizedPageDigest": "sha256:4c73b8d87c7d55908cde158c433eff38bb8fe3b14b574d8b85653893ae59e6d6",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:3:1:5:A9",
+      "parentId": "csoi:dcp:bombala2012:3:1:5",
+      "section": "3.1.5 A9",
+      "label": "Unavailable sewer and disposal-envelope evidence",
+      "locator": "PDF page 55, printed page 34; 3.1.5 A9",
+      "summary": "Where reticulated sewer is unavailable, the text describes disposal envelopes on subdivision plans accompanied by analysis of soil type, permeability and absorption capability. This is an evidence request in historical text, not a site assessment.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Reticulated sewerage is unavailable."
+      ],
+      "exceptions": [],
+      "obligations": [
+        "Locate an independently reviewed plan and soil assessment if evaluating a real proposal."
+      ],
+      "anchor": {
+        "pdfPage": 55,
+        "normalizedPageDigest": "sha256:4c73b8d87c7d55908cde158c433eff38bb8fe3b14b574d8b85653893ae59e6d6",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:3:1:5:A9:soil",
+      "parentId": "csoi:dcp:bombala2012:3:1:5:A9",
+      "section": "3.1.5 A9 evidence facet",
+      "label": "Soil and permeability \u2014 evidence facet",
+      "locator": "PDF page 55, printed page 34; 3.1.5 A9 evidence facet",
+      "summary": "Soil type, permeability and absorption capability are named facets of the report. No soil sample, laboratory value, assessor conclusion or actual inspection is present.",
+      "category": "CLAUSE",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [
+        "Review the provenance and suitability of any future soil evidence."
+      ],
+      "anchor": {
+        "pdfPage": 55,
+        "normalizedPageDigest": "sha256:4c73b8d87c7d55908cde158c433eff38bb8fe3b14b574d8b85653893ae59e6d6",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:4",
+      "parentId": "csoi:dcp:bombala2012:document",
+      "section": "4 Building \u2014 contents",
+      "label": "Building topics \u2014 selected historical branch",
+      "locator": "PDF page 3, printed contents (unnumbered); 4 Building \u2014 contents",
+      "summary": "The contents distinguish general, residential, rural-residential, business/industrial and rural building topics. Only the selected rural effluent branch below is observed here.",
+      "category": "CHAPTER",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 3,
+        "normalizedPageDigest": "sha256:bf5b2b42d7f0745b26044d4b0fd8315f4cb4c20c5f76912adcc8fcdf584b97a3",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:4:5:4",
+      "parentId": "csoi:dcp:bombala2012:4",
+      "section": "4.5.4 Setbacks to waterways and effluent disposal",
+      "label": "Rural waterways and effluent context",
+      "locator": "PDF page 84, printed page 63; 4.5.4 Setbacks to waterways and effluent disposal",
+      "summary": "This rural-development section discusses waterways and on-site disposal. Building setbacks, effluent envelopes and environmental objectives are separate evidence questions.",
+      "category": "SECTION",
+      "conditions": [
+        "Establish the relevant rural-development and historical land context."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 84,
+        "normalizedPageDigest": "sha256:4208fcfadc0db9ce061e203efed25ffb14c48d28a45bbc1f711a0cf0e3a42fdf",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:4:5:4:P2",
+      "parentId": "csoi:dcp:bombala2012:4:5:4",
+      "section": "4.5.4 P2",
+      "label": "Rural wastewater environmental-impact question",
+      "locator": "PDF page 85, printed page 64; 4.5.4 P2",
+      "summary": "The criterion describes on-site treatment and disposal with minimal environmental impact. This is an intended performance condition, not an achieved environmental result.",
+      "category": "CLAUSE",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 85,
+        "normalizedPageDigest": "sha256:58d39b5194ee34863e93fc8fb51eb418fdf86e779219fb2ed4d08f73338df257",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:4:5:4:A2",
+      "parentId": "csoi:dcp:bombala2012:4:5:4",
+      "section": "4.5.4 A2",
+      "label": "Rural disposal envelopes and soil report",
+      "locator": "PDF page 85, printed page 64; 4.5.4 A2",
+      "summary": "The solution names development-plan disposal envelopes and a soil report. It stays separate from the subdivision A9 observation and from any actual site design or approval.",
+      "category": "CLAUSE",
+      "conditions": [],
+      "exceptions": [],
+      "obligations": [
+        "Review proposed envelope, terrain and soil evidence within the correct source context."
+      ],
+      "anchor": {
+        "pdfPage": 85,
+        "normalizedPageDigest": "sha256:58d39b5194ee34863e93fc8fb51eb418fdf86e779219fb2ed4d08f73338df257",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    },
+    {
+      "id": "csoi:dcp:bombala2012:4:5:4:A3",
+      "parentId": "csoi:dcp:bombala2012:4:5:4",
+      "section": "4.5.4 A3",
+      "label": "Waterway-distance reference \u2014 unverified application",
+      "locator": "PDF page 85, printed page 64; 4.5.4 A3",
+      "summary": "The solution contains a distance reference for effluent envelopes from the bank of a creek or waterway. The Atlas does not calculate a site buffer or admit a current design requirement.",
+      "category": "CLAUSE",
+      "conditions": [
+        "Professional spatial and current-version review are required."
+      ],
+      "exceptions": [],
+      "obligations": [],
+      "anchor": {
+        "pdfPage": 85,
+        "normalizedPageDigest": "sha256:58d39b5194ee34863e93fc8fb51eb418fdf86e779219fb2ed4d08f73338df257",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      }
+    }
+  ],
+  "referenceMeasurements": []
+}

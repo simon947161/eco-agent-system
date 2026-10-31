@@ -2,7 +2,8 @@
 (async () => {
 'use strict';
 const m=AtlasModel,fixtureSize=Number(new URLSearchParams(location.search).get('fixture'));
-let d=await m.migrateDataset([60,200,1000,10000].includes(fixtureSize)?m.densityFixture(AtlasData,fixtureSize,{shape:new URLSearchParams(location.search).get('shape')||'branching',table:new URLSearchParams(location.search).get('table')==='1'}):AtlasData,AtlasAccounting.cases,typeof CsoiRegisteredSources!=='undefined'?CsoiRegisteredSources:AtlasSourceCatalogue);if(typeof CsoiIntake!=='undefined'&&typeof CsoiSourceObservations!=='undefined')d=await CsoiIntake.registerSummaries(d,CsoiSourceObservations);const NS='http://www.w3.org/2000/svg';
+const bootInputs={base:AtlasData,cases:AtlasAccounting.cases,catalogue:CsoiRegisteredSources,observations:CsoiSourceObservations,outlines:[CsoiDcpOutline,CsoiCoomaDcpOutline,CsoiBombalaDcpOutline]};
+let d=await AtlasCSOIBoot.load(CsoiDefaultSnapshot,bootInputs,[60,200,1000,10000].includes(fixtureSize)?{count:fixtureSize,options:{shape:new URLSearchParams(location.search).get('shape')||'branching',table:new URLSearchParams(location.search).get('table')==='1'}}:null);const NS='http://www.w3.org/2000/svg';
 const $=id=>document.getElementById(id),graph=$('atlasGraph'),details=$('details'),empty=details.innerHTML;
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const byId=new Map(d.nodes.map(n=>[n.id,n])),contentById=new Map(d.contentItems.map(c=>[c.id,c]));

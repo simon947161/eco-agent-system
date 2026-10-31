@@ -1625,7 +1625,7 @@
       "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
-      "next_action": "Connect the PHE OSSM page to explicitly curated historical Snowy/Cooma clause/source/review branches; current statutory law, parcel applicability and Council operational responsibilities remain independently unverified.",
+      "next_action": "Extend explicitly selected historical PHE reading context to Bombala and separately verify current statutory/inspection-strategy sources; actual local duties and Council assignments remain UNKNOWN.",
       "evidence_updates": [
         {
           "code_sha": "d086113b13f3a3a7bd670ac47e9882a4e8a61a5f",
@@ -1642,6 +1642,23 @@
             "qa/system/browser-e10.json"
           ],
           "scope": "25Cooma authored observations added to30Snowy in SAME118entity/48assertion domain;15independent page hashes+4negative checks; six/nine-node cross-DCP proof retains geographic CONFLICT/UNKNOWN law/unknown admission, no arithmetic or official relationships. Historical source conflict records and source-isolated withdrawal verified. Source review/calendar retains assumed hours and UNKNOWN actuals.35native,12actual browser leaf suites,24routes×5viewports PASS. No task status promotion or official source admission."
+        },
+        {
+          "at": "2026-10-31T08:57:43.205413+00:00",
+          "batch": "PHE historical review flow and Bombala outline",
+          "evidence": [
+            "qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+            "qa/csoi/phe-bombala-results.json",
+            "qa/csoi/native-phe-bombala.json",
+            "qa/csoi/browser-phe-bombala.log",
+            "qa/csoi/browser-phe-context.json",
+            "qa/csoi/browser-bombala.json",
+            "qa/csoi/bombala-anchor-verification.json",
+            "qa/csoi/bombala-anchor-negative.json",
+            "qa/csoi/boot-startup-observations.json",
+            "qa/csoi/phe-bombala-regression/system/browser-e10.json"
+          ],
+          "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion."
         }
       ]
     },
@@ -1817,7 +1834,26 @@
       "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": "Current statutory consolidations returned HTTP403; Food Authority503 and historic/conflicting Council/Health references prevent legal completeness. Internal allocation and actual local cases remain UNKNOWN.",
-      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
+      "next_action": "Extend independently verified source/page/scope conditions across remaining PHE domains; retain current-law unknowns and negative cases.",
+      "evidence_updates": [
+        {
+          "at": "2026-10-31T08:57:43.205413+00:00",
+          "batch": "PHE historical review flow and Bombala outline",
+          "evidence": [
+            "qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+            "qa/csoi/phe-bombala-results.json",
+            "qa/csoi/native-phe-bombala.json",
+            "qa/csoi/browser-phe-bombala.log",
+            "qa/csoi/browser-phe-context.json",
+            "qa/csoi/browser-bombala.json",
+            "qa/csoi/bombala-anchor-verification.json",
+            "qa/csoi/bombala-anchor-negative.json",
+            "qa/csoi/boot-startup-observations.json",
+            "qa/csoi/phe-bombala-regression/system/browser-e10.json"
+          ],
+          "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion."
+        }
+      ]
     },
     {
       "id": "COI-050",
@@ -1846,7 +1882,26 @@
       "source_admission_status": "PENDING_STATUTORY_RETRIEVAL_RIGHTS_AND_CURRENT_SCOPE_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use."
+      "next_action": "Preserve source-backed research workflows; independently verify current statutory versions/rights/local roles before any operational or legal use.",
+      "evidence_updates": [
+        {
+          "at": "2026-10-31T08:57:43.205413+00:00",
+          "batch": "PHE historical review flow and Bombala outline",
+          "evidence": [
+            "qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+            "qa/csoi/phe-bombala-results.json",
+            "qa/csoi/native-phe-bombala.json",
+            "qa/csoi/browser-phe-bombala.log",
+            "qa/csoi/browser-phe-context.json",
+            "qa/csoi/browser-bombala.json",
+            "qa/csoi/bombala-anchor-verification.json",
+            "qa/csoi/bombala-anchor-negative.json",
+            "qa/csoi/boot-startup-observations.json",
+            "qa/csoi/phe-bombala-regression/system/browser-e10.json"
+          ],
+          "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion."
+        }
+      ]
     },
     {
       "id": "COI-051",
@@ -2096,7 +2151,7 @@
       "source_admission_status": "PENDING_NO_ACTUAL_COUNCIL_SPEND_OR_OUTCOME_ADMITTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": "Current source-backed risk/frequency requirements, complete finance/fees records and formal strategy-to-actual-work admission remain unavailable.",
-      "next_action": "Independent source-review work plans, explicit assumed-hours/unknown actuals and projection into existingAnnualEdition; then further real-source obligation/current-law review.",
+      "next_action": "Source-review work/calendar now implemented; independently verify actual strategy-to-regulatory-work evidence before any official relationship or performance admission.",
       "evidence_updates": [
         {
           "at": "2026-10-30T08:12:50.439004+00:00",
@@ -2121,6 +2176,23 @@
             "qa/csoi/browser-paths.json"
           ],
           "observation": "Typed up-to4paths/side with independentlypinned nodes/assertions/inputlineage, candidate/evidence/counterevidence/admission diagnostics and standalone proof verification.33native+desktop/mobile+24routes/5viewports PASS. No data mutation/arithmetic/statutory promotion."
+        },
+        {
+          "at": "2026-10-31T08:57:43.205413+00:00",
+          "batch": "PHE historical review flow and Bombala outline",
+          "evidence": [
+            "qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+            "qa/csoi/phe-bombala-results.json",
+            "qa/csoi/native-phe-bombala.json",
+            "qa/csoi/browser-phe-bombala.log",
+            "qa/csoi/browser-phe-context.json",
+            "qa/csoi/browser-bombala.json",
+            "qa/csoi/bombala-anchor-verification.json",
+            "qa/csoi/bombala-anchor-negative.json",
+            "qa/csoi/boot-startup-observations.json",
+            "qa/csoi/phe-bombala-regression/system/browser-e10.json"
+          ],
+          "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion."
         }
       ]
     },
@@ -2493,6 +2565,23 @@
             "qa/system/browser-e10.json"
           ],
           "scope": "25Cooma authored observations added to30Snowy in SAME118entity/48assertion domain;15independent page hashes+4negative checks; six/nine-node cross-DCP proof retains geographic CONFLICT/UNKNOWN law/unknown admission, no arithmetic or official relationships. Historical source conflict records and source-isolated withdrawal verified. Source review/calendar retains assumed hours and UNKNOWN actuals.35native,12actual browser leaf suites,24routes×5viewports PASS. No task status promotion or official source admission."
+        },
+        {
+          "at": "2026-10-31T08:57:43.205413+00:00",
+          "batch": "PHE historical review flow and Bombala outline",
+          "evidence": [
+            "qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+            "qa/csoi/phe-bombala-results.json",
+            "qa/csoi/native-phe-bombala.json",
+            "qa/csoi/browser-phe-bombala.log",
+            "qa/csoi/browser-phe-context.json",
+            "qa/csoi/browser-bombala.json",
+            "qa/csoi/bombala-anchor-verification.json",
+            "qa/csoi/bombala-anchor-negative.json",
+            "qa/csoi/boot-startup-observations.json",
+            "qa/csoi/phe-bombala-regression/system/browser-e10.json"
+          ],
+          "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion."
         }
       ]
     },
@@ -2545,6 +2634,23 @@
             "qa/csoi/browser-review-work-regression.log"
           ],
           "scope": "Same-domain PUBLIC/LOCAL_RESEARCH Task pinned to source/clause/station/locator; own date and ASSUMED hours; calendar projection and dossier/path/preparation links. Actual hours/spend/outcome UNKNOWN; no Council assignment or automatic persistence.34native PASS, final6legacy plus affected actual Chromium desktop/mobile PASS. No status promotion; current-law and full source-backed obligation coverage remain incomplete."
+        },
+        {
+          "at": "2026-10-31T08:57:43.205413+00:00",
+          "batch": "PHE historical review flow and Bombala outline",
+          "evidence": [
+            "qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+            "qa/csoi/phe-bombala-results.json",
+            "qa/csoi/native-phe-bombala.json",
+            "qa/csoi/browser-phe-bombala.log",
+            "qa/csoi/browser-phe-context.json",
+            "qa/csoi/browser-bombala.json",
+            "qa/csoi/bombala-anchor-verification.json",
+            "qa/csoi/bombala-anchor-negative.json",
+            "qa/csoi/boot-startup-observations.json",
+            "qa/csoi/phe-bombala-regression/system/browser-e10.json"
+          ],
+          "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion."
         }
       ]
     },
@@ -2733,6 +2839,23 @@
             "qa/system/browser-e10.json"
           ],
           "scope": "25Cooma authored observations added to30Snowy in SAME118entity/48assertion domain;15independent page hashes+4negative checks; six/nine-node cross-DCP proof retains geographic CONFLICT/UNKNOWN law/unknown admission, no arithmetic or official relationships. Historical source conflict records and source-isolated withdrawal verified. Source review/calendar retains assumed hours and UNKNOWN actuals.35native,12actual browser leaf suites,24routes×5viewports PASS. No task status promotion or official source admission."
+        },
+        {
+          "at": "2026-10-31T08:57:43.205413+00:00",
+          "batch": "PHE historical review flow and Bombala outline",
+          "evidence": [
+            "qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+            "qa/csoi/phe-bombala-results.json",
+            "qa/csoi/native-phe-bombala.json",
+            "qa/csoi/browser-phe-bombala.log",
+            "qa/csoi/browser-phe-context.json",
+            "qa/csoi/browser-bombala.json",
+            "qa/csoi/bombala-anchor-verification.json",
+            "qa/csoi/bombala-anchor-negative.json",
+            "qa/csoi/boot-startup-observations.json",
+            "qa/csoi/phe-bombala-regression/system/browser-e10.json"
+          ],
+          "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion."
         }
       ]
     },
@@ -2928,8 +3051,8 @@
       "remote_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": "Verified pinned two-record comparison and recorded-law/work metadata filters now implemented. Complete source-backed obligation indexing and full path-set comparison remain unfinished; current-law corpus and authorised applicability review are incomplete.",
-      "next_action": "Typed path sets and independent source-review calendar integration verified; extend additional source-backed clause/work questions while legal-currentness, inventory and authorised admission remain independently pending.",
+      "blocker": "Pinned record/path-set comparison, source review/calendar and PHE historical navigation are implemented. Complete source-backed current-obligation indexing, current-law corpus and authorised applicability review remain incomplete.",
+      "next_action": "Extend curated Bombala/PHE questions using existing source, path, review and calendar contracts; keep statutory/operational relationships UNKNOWN until separately supported.",
       "evidence_updates": [
         {
           "at": "2026-10-30T07:08:12.754999+00:00",
@@ -3005,6 +3128,23 @@
             "qa/system/browser-e10.json"
           ],
           "scope": "25Cooma authored observations added to30Snowy in SAME118entity/48assertion domain;15independent page hashes+4negative checks; six/nine-node cross-DCP proof retains geographic CONFLICT/UNKNOWN law/unknown admission, no arithmetic or official relationships. Historical source conflict records and source-isolated withdrawal verified. Source review/calendar retains assumed hours and UNKNOWN actuals.35native,12actual browser leaf suites,24routes×5viewports PASS. No task status promotion or official source admission."
+        },
+        {
+          "at": "2026-10-31T08:57:43.205413+00:00",
+          "batch": "PHE historical review flow and Bombala outline",
+          "evidence": [
+            "qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+            "qa/csoi/phe-bombala-results.json",
+            "qa/csoi/native-phe-bombala.json",
+            "qa/csoi/browser-phe-bombala.log",
+            "qa/csoi/browser-phe-context.json",
+            "qa/csoi/browser-bombala.json",
+            "qa/csoi/bombala-anchor-verification.json",
+            "qa/csoi/bombala-anchor-negative.json",
+            "qa/csoi/boot-startup-observations.json",
+            "qa/csoi/phe-bombala-regression/system/browser-e10.json"
+          ],
+          "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion."
         }
       ]
     },
@@ -3498,7 +3638,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-30T10:14:09.202117+00:00",
+  "updated_at": "2026-10-31T08:57:43.205413+00:00",
   "pack_assessments": {
     "A": {
       "pack": "A",
@@ -3704,5 +3844,31 @@
       "COI-031",
       "COI-040"
     ]
+  },
+  "latest_phe_bombala_batch": {
+    "at": "2026-10-31T08:57:43.205413+00:00",
+    "batch": "PHE historical review flow and Bombala outline",
+    "evidence": [
+      "qa/CSOI_PHE_BOMBALA_RESULTS_20261031.md",
+      "qa/csoi/phe-bombala-results.json",
+      "qa/csoi/native-phe-bombala.json",
+      "qa/csoi/browser-phe-bombala.log",
+      "qa/csoi/browser-phe-context.json",
+      "qa/csoi/browser-bombala.json",
+      "qa/csoi/bombala-anchor-verification.json",
+      "qa/csoi/bombala-anchor-negative.json",
+      "qa/csoi/boot-startup-observations.json",
+      "qa/csoi/phe-bombala-regression/system/browser-e10.json"
+    ],
+    "scope": "Six curated Snowy/Cooma source/page-pinned PHE reading cards → independent review/work/calendar; isolated source withdrawal and explicit import/export verified.17 Bombala observations and10original-page anchors;72total clauses/135entities/48assertions.38native files and16real browser leaf suites PASS; verified startup cache preserves exact default/fixture history after a reproduced load-timeout regression; no official or task-status promotion.",
+    "codeCommitBinding": "Commit containing this code/evidence; precise remote SHA recorded at push readback",
+    "system": "PARTIAL",
+    "corpus": "PARTIAL",
+    "admission": "PENDING",
+    "taskCounts": {
+      "VERIFIED": 49,
+      "BLOCKED": 3,
+      "PARTIAL": 28
+    }
   }
 }
