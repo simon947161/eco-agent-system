@@ -1,5 +1,6 @@
 // Hosted access is enforced by Sites dispatch's owner-only policy for EVERY route.
 // Never publish this module to a separate unauthenticated Worker origin.
+import {evaluateProgress} from './research-progress.mjs';
 const headers = {'Cache-Control':'private, no-store', 'X-Content-Type-Options':'nosniff',
   'X-Frame-Options':'DENY', 'Referrer-Policy':'no-referrer',
   'Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"};
@@ -12,13 +13,22 @@ const day = value => {
   return result;
 };
 
-export function createWorker(bundle) {
+export function createWorker(bundle, {now = () => Date.now()} = {}) {
   return {async fetch(request) {
     const url = new URL(request.url);
     if (!['GET','HEAD'].includes(request.method)) return response({error:'READ_ONLY'},405);
     if (url.pathname==='/signin-with-chatgpt' || url.pathname==='/callback') return response({error:'AUTH_OWNED_BY_SITES_DISPATCH'},404);
     if (url.pathname==='/' || url.pathname==='/program.html') return response(bundle.html,200,'text/html; charset=utf-8');
     if (url.pathname==='/streamflow.js') return response(bundle.javascript,200,'text/javascript; charset=utf-8');
+    if (url.pathname==='/research' || url.pathname==='/research.html') return response(bundle.researchHtml,200,'text/html; charset=utf-8');
+    if (url.pathname==='/research.js') return response(bundle.researchJavascript,200,'text/javascript; charset=utf-8');
+    if (url.pathname==='/api/research-progress') {
+      if (url.search) return response({error:'NO_RESEARCH_QUERY_PARAMETERS',cards:[]},400);
+      try {
+        if (typeof bundle.researchManifest!=='string' || await digest(bundle.researchManifest)!==bundle.researchManifestSha256) throw new Error('Research manifest integrity failure');
+        return response({...evaluateProgress(JSON.parse(bundle.researchManifest), now()),manifest_sha256:bundle.researchManifestSha256});
+      } catch { return response({error:'RESEARCH_EVIDENCE_UNVERIFIED',snapshot_status:'UNKNOWN',cards:[]},503); }
+    }
     if (!['/api/streamflow','/api/release'].includes(url.pathname)) return response({error:'NOT_FOUND'},404);
     let index;
     try {

@@ -1,0 +1,189 @@
+{
+  "schema": "climateos.owner_research_progress.v1",
+  "repository": "simon947161/eco-agent-system",
+  "source_commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+  "generated_on": "2026-11-01",
+  "evidence_as_of": "2026-10-31",
+  "deployment_status": "NOT_DEPLOYED",
+  "automation_status": "NOT_ESTABLISHED",
+  "scientific_admission": false,
+  "evidence": {
+    "execution": {
+      "commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+      "path": "docs/tasks/climateos_regional_public_os_001/EXECUTION_STATE.json",
+      "recorded_on": "2026-10-31",
+      "sha256": "1744bef61cc284d22a53837fddf3523749d29262562315f182765f6dd5fc9b26",
+      "bytes": 15362,
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9a2f31660889e6272cdeb8a21d34583c838947c3/docs/tasks/climateos_regional_public_os_001/EXECUTION_STATE.json"
+    },
+    "p02": {
+      "commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+      "path": "docs/tasks/climateos_regional_public_os_001/P02_SITES_PRIVATE_ACCEPTANCE.md",
+      "recorded_on": "2026-10-26",
+      "sha256": "ad7df5df06ee79f2a368d19fc7f142df082f4ffb256990e4e40bd8a267e7207b",
+      "bytes": 9689,
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9a2f31660889e6272cdeb8a21d34583c838947c3/docs/tasks/climateos_regional_public_os_001/P02_SITES_PRIVATE_ACCEPTANCE.md"
+    },
+    "p03": {
+      "commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+      "path": "docs/tasks/climateos_regional_public_os_001/P03_ACCEPTANCE_20261026.md",
+      "recorded_on": "2026-10-26",
+      "sha256": "6236a925d033593d568765759fd79007ed4cbea7d352418b0c8d0d1d007a93ff",
+      "bytes": 8666,
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9a2f31660889e6272cdeb8a21d34583c838947c3/docs/tasks/climateos_regional_public_os_001/P03_ACCEPTANCE_20261026.md"
+    },
+    "p03_reference": {
+      "commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+      "path": "docs/tasks/climateos_regional_public_os_001/P03_MONTHLY_REFERENCE_ACCEPTANCE.json",
+      "recorded_on": "2026-10-26",
+      "sha256": "dbf264ceb8dbdd2bbf1276f36b0bdcdfe65a38c7ff713d05925e0ed3c117b9c2",
+      "bytes": 3894,
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9a2f31660889e6272cdeb8a21d34583c838947c3/docs/tasks/climateos_regional_public_os_001/P03_MONTHLY_REFERENCE_ACCEPTANCE.json"
+    },
+    "soil": {
+      "commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+      "path": "docs/tasks/climateos_regional_public_os_001/P04_AWRA_REPRODUCTION_20261031.md",
+      "recorded_on": "2026-10-31",
+      "sha256": "286cd9b4b86c6e7c3da82ee04cd146a1150a46bbfced0ae4c48914de229ad36a",
+      "bytes": 10839,
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9a2f31660889e6272cdeb8a21d34583c838947c3/docs/tasks/climateos_regional_public_os_001/P04_AWRA_REPRODUCTION_20261031.md"
+    },
+    "soil_result": {
+      "commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+      "path": "docs/tasks/climateos_regional_public_os_001/P04_AWRA_REPRODUCTION_RESULT_20261031.json",
+      "recorded_on": "2026-10-31",
+      "sha256": "7b553459fb79d511ea4191e5bcee901e737e6c9f7cb1681e69d418df62f37c5a",
+      "bytes": 6951,
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9a2f31660889e6272cdeb8a21d34583c838947c3/docs/tasks/climateos_regional_public_os_001/P04_AWRA_REPRODUCTION_RESULT_20261031.json"
+    },
+    "rainfall": {
+      "commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+      "path": "docs/tasks/climateos_regional_public_os_001/P04_RAINFALL_LINEAGE_REVIEW_20261031.md",
+      "recorded_on": "2026-10-31",
+      "sha256": "372d65f97568272d8e18b96241019f4f5fa9d4b20d63f510a8fdda7dc3cbc65a",
+      "bytes": 8211,
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9a2f31660889e6272cdeb8a21d34583c838947c3/docs/tasks/climateos_regional_public_os_001/P04_RAINFALL_LINEAGE_REVIEW_20261031.md"
+    },
+    "rainfall_result": {
+      "commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+      "path": "docs/tasks/climateos_regional_public_os_001/evidence/p04_rain_lineage_20261031/candidate-result.json",
+      "recorded_on": "2026-10-31",
+      "sha256": "14a061ea14ee56f8097d32717d4c4672055a3c03a9212e5fe77d9bf4aec53b7b",
+      "bytes": 2297,
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9a2f31660889e6272cdeb8a21d34583c838947c3/docs/tasks/climateos_regional_public_os_001/evidence/p04_rain_lineage_20261031/candidate-result.json"
+    }
+  },
+  "cards": [
+    {
+      "id": "P02",
+      "title": "历史流量网站",
+      "recorded_status": "VERIFIED_HISTORICAL_RECORD",
+      "publication_status": "PUBLISHED_PRIVATE_V2",
+      "evidence_date": "2026-10-26",
+      "scope": "HRS 410033 · 1964-03-01 至 2026-02-28 · 22,645 条日记录",
+      "summary": "已在 Owner 私有网站展示历史流量、质量标记和证据链。网站验收记录日期为 2026-10-26，本页没有重新检查线上状态。",
+      "facts": [
+        {
+          "label": "网站版本",
+          "value": "Sites v2 · Owner 私有"
+        },
+        {
+          "label": "最后观测日",
+          "value": "2026-02-28"
+        },
+        {
+          "label": "数据版本标签",
+          "value": "September, 2026"
+        },
+        {
+          "label": "网站源提交",
+          "value": "9f3a201d40c4b70d72f0b69c319805258769c242"
+        },
+        {
+          "label": "网站实现提交",
+          "value": "6a5c3b88af4536066fbc66f379decd74318e6571"
+        }
+      ],
+      "limits": [
+        "历史数据不能表示当前水况；数据版本标签不是最后观测日期。",
+        "人工科学复核仍待完成；不能据此判断饮水能力、污染或因果关系。"
+      ],
+      "evidence_ids": [
+        "p02",
+        "execution"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "月度研究证据引用",
+      "recorded_status": "VERIFIED_REFERENCE_ONLY",
+      "publication_status": "NOT_ON_SITES",
+      "evidence_date": "2026-10-26",
+      "scope": "2026 年 7 月已有研究周期 · 一条事后只读补充引用",
+      "summary": "仓库验收记录证明：已在原本的本地研究流程中挂接历史流量证据。本页仅展示已提交的验收信息。",
+      "facts": [
+        {
+          "label": "研究月份",
+          "value": "2026-07"
+        },
+        {
+          "label": "引用编号",
+          "value": "HRS-CYCLE-LINK-5786CE400E77B343"
+        },
+        {
+          "label": "原始研究记录",
+          "value": "验收记录：原有六张表未改变；原 Receipt 未修改"
+        }
+      ],
+      "limits": [
+        "这条引用是在原 7 月研究审阅后补加，不属于原始月度审阅证据。",
+        "引用功能尚未部署到 Sites；本页没有读取、复制或迁移原始月度数据库。",
+        "近期 WaterNSW 数据仍因凭据绑定未恢复而受阻；未建立自动更新。"
+      ],
+      "evidence_ids": [
+        "p03",
+        "p03_reference",
+        "execution"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "土壤与降雨验证",
+      "recorded_status": "PARTIAL_EMPIRICAL_ONLY",
+      "publication_status": "NOT_ON_SITES",
+      "evidence_date": "2026-10-31",
+      "scope": "AWRA-L v7 · 2000 年 7 月 · 36.25°S / 149.10°E 单个网格（525 / 742）",
+      "summary": "已有的 31 天土壤样本支持：该格点该月的月值与日均值在预设容差内一致，与月末日值不一致。降雨日值与月值的精确产品来源关系仍未确认。",
+      "facts": [
+        {
+          "label": "土壤月值（原始比例）",
+          "value": "0.13241834938526154"
+        },
+        {
+          "label": "31 天均值（原始比例）",
+          "value": "0.13241835275003988"
+        },
+        {
+          "label": "降雨验证",
+          "value": "BLOCKED · 来源关系未确认，未比较日值总和"
+        },
+        {
+          "label": "受阻访问",
+          "value": "ArcGIS 499 Token Required · 已停止，未重试"
+        }
+      ],
+      "limits": [
+        "仅是一个格点、一个月的经验复现，不能推广为产品通用规则或流域结论。",
+        "HRS 日界线与夏令时、月度质量及完整性、流域网格准入仍未解决。",
+        "没有科学准入、跨来源数值拼接或因果结论；降雨调查保持停止。"
+      ],
+      "evidence_ids": [
+        "soil",
+        "soil_result",
+        "rainfall",
+        "rainfall_result",
+        "execution"
+      ]
+    }
+  ]
+}

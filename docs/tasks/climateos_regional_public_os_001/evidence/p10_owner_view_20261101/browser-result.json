@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-11-01T09:41:44.162341+00:00",
+  "scope": "LOCAL_LOOPBACK_NOT_DEPLOYED",
+  "checks": [
+    "desktop 1440px: 3 cards, publication boundaries, pinned links and keyboard evidence disclosure",
+    "mobile 390px: no overflow with every SHA/path expanded",
+    "simulated stale, unavailable and unknown-state UI: last-known warning or all cards hidden",
+    "mobile HRS navigation: February 28 rows, historical warning, empty March clears rows, return to progress"
+  ],
+  "screenshots": {
+    "desktop": {
+      "file": "desktop.png",
+      "sha256": "65ce86015b5b77e1c9770ec5de8f7281331828f9106fa055e0874ce400cbfa1d"
+    },
+    "mobile": {
+      "file": "mobile.png",
+      "sha256": "aecc6720dda734d13f0d56da3afc5fe8d9d3d1ea782066a119f154816b080913"
+    },
+    "stale-mobile": {
+      "file": "stale-mobile.png",
+      "sha256": "3f7292d7aaa03227c28683d687caf2e462c0c27ed45b8ba9289542ebc98a6843"
+    },
+    "unavailable-mobile": {
+      "file": "unavailable-mobile.png",
+      "sha256": "eb8da3b9df994f5fe58efc001ba37d7aa96a23fb58d48df081b90f22d9b97f15"
+    }
+  },
+  "manifest_sha256": "de1ae2d9ee11b9bc4f30eb551e1183f4082a2a88bcb34f938c4716295422ab29",
+  "evidence_commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+  "local_release": {
+    "github_repository": "simon947161/eco-agent-system",
+    "github_commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+    "working_tree_dirty": true,
+    "adapter": "p02-sites-v1-with-owner-progress",
+    "release_label": "OWNER_RESEARCH_PROGRESS_PREVIEW",
+    "deployment_status": "NOT_DEPLOYED",
+    "access_boundary": "SITES_OWNER_PRIVATE_DISPATCH",
+    "snapshot_baseline": "6ca8f9d913e99ba66d4743790b2e4f0df11cf571",
+    "index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+    "data_package_sha256": "f664b75674059bcdd907941afcfdf0b6c4a19ffa79f3835bfaa79b5967097452",
+    "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+    "records": 22645
+  },
+  "page_errors": [],
+  "external_requests": [],
+  "status": "PASS"
+}

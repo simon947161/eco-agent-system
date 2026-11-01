@@ -3,6 +3,7 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
+import {checkedProgress,sha256} from './generate-research-progress.mjs';
 const root=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
 const repo=path.resolve(root,'../..');
 const read=p=>readFile(path.join(root,p),'utf8');
@@ -16,11 +17,15 @@ for(const shard of JSON.parse(index).shards) {
 }
 const javascript=await readFile(path.join(repo,'cczps_lite/environmental_question_runtime/static/streamflow.js'),'utf8');
 const sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:repo,encoding:'utf8'}).trim();
+const researchManifest=await checkedProgress();
+const workingTreeDirty=execFileSync('git',['status','--porcelain','--untracked-files=normal'],{cwd:repo,encoding:'utf8'}).trim().length>0;
 const bundle={index,indexSha256:manifest.index_sha256,shards,javascript,html:await read('worker/page.html'),
-  release:{github_repository:'simon947161/eco-agent-system',github_commit:sourceCommit,adapter:'p02-sites-v1',release_label:'P02_PRIVATE_ACCEPTANCE',access_boundary:'SITES_OWNER_PRIVATE_DISPATCH',snapshot_baseline:manifest.source_code_baseline}};
-const handler=await read('worker/handler.mjs');
+  researchManifest,researchManifestSha256:sha256(researchManifest),researchHtml:await read('worker/research.html'),researchJavascript:await read('worker/research.js'),
+  release:{github_repository:'simon947161/eco-agent-system',github_commit:sourceCommit,working_tree_dirty:workingTreeDirty,adapter:'p02-sites-v1-with-owner-progress',release_label:'OWNER_RESEARCH_PROGRESS_PREVIEW',deployment_status:'NOT_DEPLOYED',access_boundary:'SITES_OWNER_PRIVATE_DISPATCH',snapshot_baseline:manifest.source_code_baseline}};
+// Keep the existing dependency-free single-module Worker artifact.
+const handler=(await read('worker/research-progress.mjs'))+'\n'+(await read('worker/handler.mjs')).replace("import {evaluateProgress} from './research-progress.mjs';",'');
 await mkdir(path.join(root,'dist/server'),{recursive:true});
 await mkdir(path.join(root,'dist/.openai'),{recursive:true});
 await writeFile(path.join(root,'dist/server/index.js'),handler+'\nexport default createWorker('+JSON.stringify(bundle)+');\n');
 await writeFile(path.join(root,'dist/.openai/hosting.json'),await read('.openai/hosting.json'));
-console.log(JSON.stringify({github_commit:sourceCommit,index_sha256:manifest.index_sha256,data_package_sha256:manifest.data_package_sha256}));
+console.log(JSON.stringify({...bundle.release,index_sha256:manifest.index_sha256,data_package_sha256:manifest.data_package_sha256,research_manifest_sha256:bundle.researchManifestSha256}));

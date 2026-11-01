@@ -1,7 +1,7 @@
 {
   "schema": "climateos.regional_public_os.execution_state.v1",
   "task_id": "CLIMATEOS-REGIONAL-PUBLIC-OS-001",
-  "updated_on": "2026-10-31",
+  "updated_on": "2026-11-01",
   "timezone": "Australia/Sydney",
   "repository": "https://github.com/simon947161/eco-agent-system",
   "taskbook_path": "docs/tasks/climateos_regional_public_os_001/TASKBOOK.md",
@@ -46,12 +46,12 @@
     "P05": "in_progress",
     "P06": "planned",
     "P07": "planned",
-    "P08": "planned",
+    "P08": "in_progress",
     "P09": "planned",
-    "P10": "planned"
+    "P10": "in_progress"
   },
   "external_spending_authorized_aud": 0,
-  "next_action": "P04 rainfall-only bounded continuation stopped as BLOCKED_EXACT_LINEAGE_UNVERIFIED. Official AWDS daily rain archive1985-2004 is a candidate, but its daily input edition/revision mapping to the captured NCI monthly rain_day.nc is not established. Resume only with new official product-specific mapping or a separately authorized clarification. Download-inventory schema returned ArcGIS499 Token Required; no retry/token/credential action. Do not repeat known404 or completed soil/HRS/scale work. See P04_RAINFALL_LINEAGE_REVIEW_20261031.md.",
+  "next_action": "Review the read-only Owner research progress/evidence view in apps/regional-public-os (/research), acceptance P10_OWNER_VIEW_ACCEPTANCE_20261101.md. LOCAL_VERIFIED_NOT_DEPLOYED; parent reviews and obtains any separate publication decision. Sites v2 remains unchanged. P08/P10 are partial; no scientific gate passed. Rainfall lineage batch stays stopped; no ArcGIS499 inventory retry, credential work or provider acquisition. Preserve P03/P04 blockers and absent automation.",
   "blockers": [
     {
       "scope": "P03_recent_operational_adapter",
@@ -317,6 +317,39 @@
         "permission_enabled_rerun_passed": true
       },
       "record": "WATERNSW_RECOVERY_VALIDATION_20261026.md"
+    },
+    "owner_research_progress_view": {
+      "status": "LOCAL_VERIFIED_NOT_DEPLOYED",
+      "implemented_on": "2026-11-01",
+      "packages": [
+        "P10",
+        "P08"
+      ],
+      "package_completion_claimed": false,
+      "app": "apps/regional-public-os",
+      "route": "/research",
+      "api": "/api/research-progress",
+      "source_commit": "9a2f31660889e6272cdeb8a21d34583c838947c3",
+      "source_scope": "Eight fixed public-safe repository metadata/acceptance files only; no monthly DB or new acquisition",
+      "manifest": "apps/regional-public-os/data/research-progress.json",
+      "manifest_sha256": "de1ae2d9ee11b9bc4f30eb551e1183f4082a2a88bcb34f938c4716295422ab29",
+      "evidence_as_of": "2026-10-31",
+      "status_review_window_days": 7,
+      "deployment_status": "NOT_DEPLOYED",
+      "live_site_rechecked": false,
+      "scientific_admission": false,
+      "automation_established": false,
+      "acceptance_record": "P10_OWNER_VIEW_ACCEPTANCE_20261101.md",
+      "handoff": "THREAD_HANDOFF_20261101_OWNER_VIEW.md",
+      "tests": {
+        "node_passed": 17,
+        "hrs_monthly_python_passed": 9,
+        "full_python_run": 533,
+        "full_python_passed": 529,
+        "full_python_skipped": 4,
+        "browser": "PASS desktop1440/mobile390, expanded evidence, stale/unknown/unavailable UI, HRS regression; loopback only"
+      },
+      "next_action": "Parent evidence review and separate publication decision; no deployment in this batch. Rainfall and WaterNSW work remains stopped/blocked."
     }
   },
   "recovery": {

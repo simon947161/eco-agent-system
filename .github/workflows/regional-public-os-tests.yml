@@ -1,0 +1,29 @@
+name: Regional Public OS read-only adapter
+
+on:
+  push:
+    paths:
+      - 'apps/regional-public-os/**'
+      - '.github/workflows/regional-public-os-tests.yml'
+  pull_request:
+    paths:
+      - 'apps/regional-public-os/**'
+      - '.github/workflows/regional-public-os-tests.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  adapter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Validate the exact historical Git evidence blobs.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test --prefix apps/regional-public-os
+      - run: npm run evidence:check --prefix apps/regional-public-os
+      - run: npm run build --prefix apps/regional-public-os
+      - run: npm run validate --prefix apps/regional-public-os
