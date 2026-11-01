@@ -57,9 +57,9 @@
     "number": 130,
     "state": "OPEN_DRAFT",
     "verifiedBaseSha": "ad203014caa2fb2c67b7457b2d720b528baa6a7a",
-    "testedCodeSha": null,
+    "testedCodeSha": "129b35d2e400f5fd372f5eafac3b3a5048f1bb53",
     "evidence": "bombala-phe/pr130-readback.json",
-    "ci": "Readback pending code push; local results do not imply independent CI."
+    "ci": "No commit statuses or PR-triggered workflow runs returned at tested code SHA; no independent CI pass claimed."
   },
   "notTested": [
     "physical touch/monitors",

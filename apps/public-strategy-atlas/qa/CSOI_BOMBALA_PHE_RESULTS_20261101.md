@@ -46,7 +46,7 @@ Machine packet: [results.json](bombala-phe/results.json); [native results](bomba
 
 The first new browser attempt failed because its assertion expected JSON punctuation in a definition-list value. The assertion was corrected to inspect the exact `dt`/`dd` value; application behavior and timeouts were not relaxed. [Initial log](bombala-phe/target-browser-initial.log) and [passing target log](bombala-phe/target-browser.log) remain separate. Existing PHE tests now expect eleven cards, existing Bombala/Cooma browser census checks use the remediated 137-entity/74-clause baseline, and the legacy reconstructed default applies the existing remediation stage while preserving its original legacy-base digest test. Historical fixture-only native output may still describe its deliberately unremediated 135/72 fixture; that is not the default app census.
 
-Node coverage was **not rerun**. Real Chromium viewport emulation is not physical-device, cross-browser or professional screen-reader certification. No independent CI pass is inferred from local results. Remote commit/PR/CI evidence is recorded separately after push.
+Node coverage was **not rerun**. Real Chromium viewport emulation is not physical-device, cross-browser or professional screen-reader certification. No independent CI pass is inferred from local results. Code/evidence commit `129b35d2e400f5fd372f5eafac3b3a5048f1bb53` is pushed and matches both git remote and GitHub PR #130 head, OPEN/DRAFT/unmerged. [Readback](bombala-phe/pr130-readback.json) returned no commit statuses or PR-triggered workflow runs. A subsequent documentation-only checkpoint records this result.
 
 ## Actual screenshots and next work
 
