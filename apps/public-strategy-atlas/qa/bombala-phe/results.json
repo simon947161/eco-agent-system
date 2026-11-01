@@ -1,0 +1,115 @@
+{
+  "format": "csoi-bombala-phe-results-1",
+  "at": "2026-11-01T09:44:34.951079+00:00",
+  "batchStatus": "PASS_TESTED_HERE",
+  "systemStatus": "PARTIAL",
+  "baseRemoteSha": "ad203014caa2fb2c67b7457b2d720b528baa6a7a",
+  "codeCommitBinding": "pr130-readback.json testedCodeSha after code/evidence push",
+  "taskCounts": {
+    "VERIFIED": 49,
+    "PARTIAL": 28,
+    "BLOCKED": 3
+  },
+  "defaultDomainEntities": 137,
+  "defaultAssertions": 48,
+  "legacyContentItems": 127,
+  "dcpObservations": {
+    "total": 74,
+    "active": 73,
+    "withdrawn": 1
+  },
+  "defaultDatasetDigest": "sha256:53841d668ffdb78a42edb9ad515a64dcb6956dd390b6c777531f2c4d72311375",
+  "curatedPheCards": 11,
+  "bombalaPheCards": 5,
+  "unresolvedEvidenceGaps": [
+    "current-rule",
+    "inspection-strategy"
+  ],
+  "newDefaultDataRecords": 0,
+  "native": {
+    "status": "PASS_TESTED_HERE",
+    "filesPassed": 42,
+    "evidence": "native-results.json",
+    "log": "native.log"
+  },
+  "browser": {
+    "status": "PASS_TESTED_HERE",
+    "leafSuitesPassed": 17,
+    "suiteResults": {
+      "csoi-bombala-phe-browser.py": "browser-results.json",
+      "csoi-phe-context-browser.py": "regression/csoi/browser-phe-context.json",
+      "csoi-bombala-browser.py": "regression/csoi/browser-bombala.json",
+      "csoi-cooma-browser.py": "regression/csoi/browser-cooma.json",
+      "csoi-clauses-browser.py": "regression/csoi/browser-clauses.json",
+      "csoi-paths-browser.py": "regression/csoi/browser-paths.json",
+      "csoi-review-work-browser.py": "regression/csoi/browser-review-work.json",
+      "csoi-calendar-browser.py": "regression/csoi/browser-g-detail.json",
+      "csoi-source-browser.py": "regression/csoi/browser-b.json",
+      "csoi-browser.py": "regression/csoi/browser-h.json",
+      "csoi-remediation-browser.py": "remediation-regression/phase1-browser-results.json"
+    },
+    "legacySix": "regression/system/browser-e10.json",
+    "viewports": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "routeRegression": "24 routes × 5 viewports",
+    "aggregateLog": "browser-regression.log",
+    "remediationLog": "remediation-regression.log"
+  },
+  "source": {
+    "anchorChecksPassed": 10,
+    "corruptManifestsRejected": 4,
+    "newCatalogueReceipts": 0,
+    "original": "source-access.json",
+    "anchors": "original-page-verification.json",
+    "negatives": "original-page-negative.json"
+  },
+  "codeManifest": {
+    "csoi-phe.js": "sha256:4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+    "csoi-pages.js": "sha256:b2393f34abaa3c1da2bc19a1a2362a5e7d68a95612cb60acfc4f2b9a9a7d6127",
+    "csoi-clauses.js": "sha256:f9b3f8c4b7a2aabec9ee0aa3928e03b31bebcbb87ce289441ee32712c876cc86",
+    "csoi-review-work.js": "sha256:a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+    "csoi-calendar.js": "sha256:3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+    "atlas-domain.js": "sha256:b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+    "atlas-model.js": "sha256:05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+    "atlas.js": "sha256:f55e43cad6bc6618dd37b0bb11ba4c78634dd0692a67daa22a9f86cc3ecb15e4",
+    "csoi-remediation.js": "sha256:b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",
+    "csoi-knowledge.js": "sha256:2377f1c0a8e4717512d688b091a656fa016d9b8e6193543e030f850a227f0229",
+    "csoi-boot.js": "sha256:49ad12d9a19fb51a1fc2e73e83ee516f36b390fdb8d70b43b86c80936c4d9f16",
+    "index.html": "sha256:0fa241853f2932234cefb374d73b7073390f0a4b3e97b4db2974340663fc4a11",
+    "sources/csoi-default-snapshot.js": "sha256:0ede52c98bdd3d2bf08630e2d307bd7565f401f768965c33ae5e8040d8862b85",
+    "sources/bombala-dcp-outline.json": "sha256:e2b30d6bbc387281ff789f9130136461a951f07163a80e760a0512f5f05d9853",
+    "sources/bombala-dcp-outline.js": "sha256:a04dd1cb841b1de6100feac873c59d14076ee8a9bf35ea746d045d2a46cb1a08",
+    "csoi-bombala-phe.test.cjs": "sha256:5328989924e82d5fc6884ee04e89ce733b36f7187330c1807f3fc2b9cfcac8d5",
+    "csoi-phe-context.test.cjs": "sha256:145951bd91eaf41da6601bdf7fbaa1441ff281e1f25ef86dbbd2379f3599ed6e",
+    "qa/csoi-bombala-phe-browser.py": "sha256:56898cdafefa30cde7e199368b3d564a527f84529c9d7510f07cc7763a7152cd",
+    "qa/csoi-phe-context-browser.py": "sha256:764e069bf41aa739b0982ce59b1a823a9b17d58e5118e2d4066bef0dbcaa3d97",
+    "qa/csoi-bombala-browser.py": "sha256:a58fd2eb5aabc77b0f0f4090721e3b46d88d0c4008e261caa846690337fb2fcb",
+    "qa/csoi-cooma-browser.py": "sha256:63edd72380a0060298e5287ea50522b803097b374d9557453464a7fc11cb011d",
+    "qa/e0-browser.py": "sha256:e353e8ecc0ec3b5f9491092552272963c83bcaf064e5711abd8b111f83df95f2",
+    "qa/run-local-browser.py": "sha256:acbdc0ccc396e83d4d6d3a9b2fe6283a90bb91a75fb749eea671ce3dfa1008e2"
+  },
+  "commandsFromAppDirectory": [
+    "node run-tests.cjs qa/bombala-phe/native-results.json",
+    "python3 qa/run-local-browser.py csoi-bombala-phe-browser.py",
+    "python3 qa/run-local-browser.py csoi-phe-context-browser.py csoi-bombala-browser.py csoi-cooma-browser.py csoi-clauses-browser.py csoi-paths-browser.py csoi-review-work-browser.py csoi-calendar-browser.py csoi-source-browser.py csoi-browser.py run-browser-suite.py",
+    "CSOI_QA_OUT=qa/bombala-phe/remediation-regression python3 qa/csoi-remediation-browser.py",
+    "python3 tools/fetch-csoi-document.py --parent smrc-dcp-bombala-page --match bombala-development-control-plan.pdf --id smrc-dcp-bombala-2014 --out /tmp/csoi-bombala-20261101 --max-mib 6",
+    "python3 tools/verify-document-anchors.py /tmp/csoi-bombala-20261101/smrc-dcp-bombala-2014.pdf sources/bombala-dcp-outline-anchors.json --out qa/bombala-phe/original-page-verification.json"
+  ],
+  "coverage": "HISTORICAL_NOT_RERUN_THIS_BATCH",
+  "deployment": "NOT_PERFORMED_NOT_AUTHORISED_THIS_BATCH",
+  "sitesCalls": 0,
+  "currentTrial": "Existing owner-private v1 unchanged by this task; this batch and P0/P1 corrections are not deployed. No new live-site metadata verification.",
+  "privateWcos": "DEFERRED_COI_002_031_040",
+  "nextSourceInputs": "CSP/LSPS/OP uncommitted files described in prior NEXT_SESSION absent from this checkout; retrieve from originating task before integrating.",
+  "officialAdmission": "PENDING",
+  "legalApplicability": "UNKNOWN"
+}

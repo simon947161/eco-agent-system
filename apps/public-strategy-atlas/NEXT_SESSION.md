@@ -1,3 +1,17 @@
+# Bombala PHE selections / current-evidence gaps — batch verified, system PARTIAL
+
+Continued canonical PR #130 after fast-forwarding clean checkout from `744ab46b2bec2ad601da0c4ae528694a4c982154` to current remote `ad203014caa2fb2c67b7457b2d720b528baa6a7a`. All P0/P1 fixes retained. Exact tested code and remote/CI readback are recorded after push in `qa/bombala-phe/pr130-readback.json`; always resolve latest remote before new edits.
+
+Eleven PHE on-site-sewage reading cards now include five existing Bombala subdivision/rural selections, inherited parent conditions and exact source/page/revision pins. Existing review/work/Annual Calendar and comparison flow reused. Two explicit gaps keep current rules/parcel applicability and inspection strategy UNKNOWN; personal reviews never resolve them. No automatic P/A pairing, Council assignments or official admission. Default remains137entities/48assertions/127items,74DCP observations(73active+1withdrawn),52sources/33byte receipts, digest `sha256:53841d668ffdb78a42edb9ad515a64dcb6956dd390b6c777531f2c4d72311375`.
+
+Final42/42native and17realChromium leaf suites PASS, including desktop1440/mobile390,24routes×5viewports, full legacy regression and P0/P1 corrections. New parent/source withdrawal isolation, exports/proofs and unresolved-gap behavior pass. Fresh registered Bombala original matches historic byte receipt;10page anchors pass and4corrupt manifests reject. Coverage not rerun. Report `qa/CSOI_BOMBALA_PHE_RESULTS_20261101.md`; machine/logs/screenshots `qa/bombala-phe/`; registry remains49VERIFIED/28PARTIAL/3BLOCKED.
+
+**No deployment or merge this batch.** Current owner-private Council Site remains prior v1 and does not yet show these changes or P0/P1 fixes. Do not deploy until parent reviews and confirms publication scope. No Sites calls or protected water-Site/config changes. Hosting identity must be reused if later authorised; never create another app or touch the water binding.
+
+**Next:** preserve the prior checkpoint's larger CSP63metrics/14objectives/44strategies, LSPS12priorities/83actions and OP8activities follow-up. Its described uncommitted source-primary data/verifiers are absent from this checkout; reconcile/retrieve them from the originating task before integrating, without manufacturing them. COI-043's Bombala historical selection step is now done; current-rule/inspection-strategy and parcel/authority evidence remain missing. Continue existing knowledge/cache/UI/source contracts after checking latest remote. COI-002/031/040 private WCOS work stays deferred; no purchases/private imports/credential or permission expansion.
+
+--- Previous checkpoint ---
+
 # P0/P1 integrity remediation phase1 — verified; full system PARTIAL
 
 Pushed verified code/evidence: `cca314ce244235895779676a222e22537949dcc8`, based on audited remoteHEAD `744ab46b2bec2ad601da0c4ae528694a4c982154`. This continuity commit follows code; resolve current remote branch/PR130 HEAD on resume. KeepPR130Draft, no merge/deployment. Existing owner-only Site and protected water Site/config are untouched; new GitHub code is not automatically deployed.

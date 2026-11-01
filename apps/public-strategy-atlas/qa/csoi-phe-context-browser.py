@@ -7,7 +7,7 @@ with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
  for width,height in [(1440,900),(390,844)]:
   page=b.new_page(viewport={'width':width,'height':height},reduced_motion='reduce',accept_downloads=True);errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
-  page.goto('http://127.0.0.1:8877/#/domains/phe/ossm');host=page.locator('#csoiPheHistorical');expect(host.locator('[data-clause-id]')).to_have_count(6,timeout=30000)
+  page.goto('http://127.0.0.1:8877/#/domains/phe/ossm');host=page.locator('#csoiPheHistorical');expect(host.locator('[data-clause-id]')).to_have_count(11,timeout=30000)
   expect(host).to_contain_text('operational linkage remain UNKNOWN');host.scroll_into_view_if_needed();page.screenshot(path=str(OUT/f'phe-historical-{width}.png'))
   for clause in ['csoi:dcp:snowy2013:C9:3:1:b:soil','csoi:dcp:cooma2014:7:4:2:2:soil']:
    card=host.locator('[data-clause-id="'+clause+'"]');card.locator('summary').click();expect(card).to_contain_text('normalizedPageDigest');expect(card).to_contain_text('sha256:');expect(card).to_contain_text('PENDING')
@@ -26,12 +26,12 @@ with sync_playwright() as p:
   script="""const fs=require('fs'),M=require('./atlas-model.js'),I=require('./atlas-intake.js');(async()=>{const d=JSON.parse(fs.readFileSync(process.argv[1])).dataset;d.domain.sourceCatalogue=await I.correctStage(d.domain.sourceCatalogue,'csoi:smrc-dcp-cooma-2014-amend4:20261030','SOURCE_RETRIEVED',{actor:'QA',at:new Date().toISOString(),reason:'Withdraw Cooma byte verification for browser negative'});fs.writeFileSync(process.argv[2],JSON.stringify(await M.exportSnapshot(d)));})().catch(e=>{console.error(e);process.exitCode=1});"""
   subprocess.run(['node','-e',script,str(snapshot),str(withdrawn)],cwd=APP,check=True);subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(withdrawn)],check=True)
   page.locator('#importSnapshotBtn').click();page.locator('#snapshotFile').set_input_files(str(withdrawn));expect(page.locator('#snapshotMessage')).to_contain_text('Explicit replacement required',timeout=30000);page.locator('#applySnapshot').click()
-  page.evaluate('location.hash="#/domains/phe/ossm"');expect(host.locator('[data-clause-id]')).to_have_count(6,timeout=30000)
+  page.evaluate('location.hash="#/domains/phe/ossm"');expect(host.locator('[data-clause-id]')).to_have_count(11,timeout=30000)
   for card in host.locator('[data-clause-id*="cooma2014"]').all():expect(card.get_by_role('link',name='Choose own review date',exact=True)).to_have_count(0);expect(card).to_contain_text('invalidated')
   expect(host.locator('[data-clause-id*="snowy2013"]').get_by_role('link',name='Choose own review date',exact=True)).to_have_count(3)
   cooma=host.locator('[data-clause-id="csoi:dcp:cooma2014:7:4:2:2:soil"]');cooma.scroll_into_view_if_needed();page.screenshot(path=str(OUT/f'phe-withdrawn-{width}.png'));cooma.get_by_role('link',name='Review work card · 2026-11-03',exact=True).click();expect(page.locator('#csoiWorkspace')).to_contain_text('inputPinsCurrent');expect(page.locator('#csoiWorkspace')).to_contain_text('false');expect(page.locator('#csoiWorkspace')).to_contain_text('UNKNOWN')
   assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');assert not errors,errors
-  results.append({'viewport':[width,height],'status':'PASS_TESTED_HERE','curatedCards':6,'independentPlans':2,'exportAndProofRevalidation':'PASS','withdrawalImport':'PASS','crossSourceIsolation':'PASS','CouncilAssignment':'NOT_CREATED'});page.close()
+  results.append({'viewport':[width,height],'status':'PASS_TESTED_HERE','curatedCards':11,'independentPlans':2,'exportAndProofRevalidation':'PASS','withdrawalImport':'PASS','crossSourceIsolation':'PASS','CouncilAssignment':'NOT_CREATED'});page.close()
  b.close()
 (OUT/'browser-phe-context.json').write_text(json.dumps({'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results},indent=2)+'\n')
 print('PASS: PHE/source/work/calendar navigation, exact pins, independent exports, explicit withdrawn-snapshot import and source-isolated review blocking at desktop/390px')

@@ -138,20 +138,27 @@ function mount(bridge={}){
   const P=root.AtlasCSOIPhe;if(!P?.historicalContexts)return;
   const context=await P.historicalContexts(dataset,domain);if(!context.cards.length)return;
   const host=section(main,'Historical DCP evidence for on-site sewage');host.id='csoiPheHistorical';
-  text(host,'Read the selected Snowy River and Cooma-Monaro provisions, inspect their page evidence, then choose your own review date. These are curated reading links; statutory and operational linkage remain UNKNOWN. Former-shire scope and conflicting editions need human review.');
-  const compare=context.cards.filter(c=>c.id.endsWith(':soil'));
+  text(host,'Read the selected Snowy River, Cooma-Monaro and Bombala provisions, inspect their page evidence, then choose your own review date. These are curated reading links; statutory and operational linkage remain UNKNOWN. Former-shire scope and conflicting editions need human review. Bombala subdivision and rural-development branches remain distinct; adjacent performance criteria and acceptable solutions are not automatically paired.');
+  const gaps=section(host,'Evidence still needed before current use');gaps.id='csoiPheEvidenceGaps';
+  for(const gap of context.gaps){const item=section(gaps,gap.title);item.dataset.evidenceGap=gap.id;text(item,gap.detail);text(item,'MISSING_EVIDENCE · current applicability UNKNOWN · no official duty or inspection interval established.');if(gap.relatedHistoricalClauseId)item.append(link('Inspect the historical inspection-strategy reference','/knowledge/'+encodeURIComponent(gap.relatedHistoricalClauseId)));const evidence=element('details');evidence.append(element('summary','Evidence gap details'));details(evidence,gap);item.append(evidence);}
+  const compare=context.cards.filter(c=>c.family!=='bombala'&&c.id.endsWith(':soil'));
   if(compare.length===2&&compare.every(c=>c.current))host.append(link('Compare Snowy and Cooma evidence paths','/compare/paths',{leftPaths:compare[0].id+' | '+compare[0].sourceId,rightPaths:compare[1].id+' | '+compare[1].sourceId}));
+  const bombala=context.cards.find(c=>c.family==='bombala'&&c.id.endsWith(':soil'));
+  if(bombala?.current)for(const other of compare.filter(c=>c.current))host.append(link('Compare Bombala and '+(other.family==='snowy'?'Snowy':'Cooma')+' evidence paths','/compare/paths',{leftPaths:bombala.id+' | '+bombala.sourceId,rightPaths:other.id+' | '+other.sourceId}));
   for(const card of context.cards){
    const item=section(host,card.purpose);item.dataset.clauseId=card.id;text(item,card.summary);
    text(item,card.locator+' · '+card.region);
+   if(card.parentContext.length){text(item,'Historical parent context: '+card.parentContext.map(p=>p.section).join(' → '));for(const parent of card.parentContext)for(const condition of parent.conditions)text(item,parent.section+': '+condition);}
+   for(const condition of card.conditions)text(item,'Historical condition: '+condition);
+   for(const exception of card.exceptions)text(item,'Historical exception: '+exception);
    text(item,card.current?'Historical source/page pins match; current applicability is UNKNOWN.':'Historical context unavailable or invalidated. A new review plan is blocked.');
-   const evidence=element('details');evidence.append(element('summary','Source IDs, page evidence and revision pins'));details(evidence,{sourceId:card.sourceId,sourceRevision:card.sourceRevision,clauseId:card.id,clauseRevision:card.clauseRevision,anchor:card.anchor,conditions:card.conditions,exceptions:card.exceptions,researchState:card.status,reasons:card.reasons,statutoryLinkage:context.statutoryLinkage,operationalLinkage:context.operationalLinkage,officialAdmission:context.officialAdmission});item.append(evidence);const actions=element('nav',null,{'aria-label':card.purpose+' actions'});item.append(actions);
+   const evidence=element('details');evidence.append(element('summary','Source IDs, page evidence and revision pins'));details(evidence,{sourceId:card.sourceId,sourceRevision:card.sourceRevision,clauseId:card.id,clauseRevision:card.clauseRevision,anchor:card.anchor,conditions:card.conditions,exceptions:card.exceptions,parentContext:card.parentContext,researchState:card.status,reasons:card.reasons,statutoryLinkage:context.statutoryLinkage,operationalLinkage:context.operationalLinkage,officialAdmission:context.officialAdmission});item.append(evidence);const actions=element('nav',null,{'aria-label':card.purpose+' actions'});item.append(actions);
    actions.append(link('Read historical clause','/knowledge/'+encodeURIComponent(card.id)),link('Inspect source receipt','/sources/'+encodeURIComponent(card.sourceId)));
    if(card.current)actions.append(link('Choose own review date','/calendar',{review:card.id,year:String(new Date().getFullYear())}));
    for(const plan of card.reviewPlans){actions.append(link('Review work card · '+plan.date,'/operations/'+encodeURIComponent(plan.id)),link('Annual calendar · '+plan.date,'/calendar/'+encodeURIComponent(plan.id),{year:plan.date.slice(0,4)}));}
   }
  }
- function readingReturn(main,clauseId){for(const domain of root.AtlasCSOIPhe?.readingDomains(clauseId)||[])main.append(link('Return to on-site sewage evidence','/domains/phe/'+domain));}
+ function readingReturn(main,clauseId){for(const domain of root.AtlasCSOIPhe?.readingDomains(clauseId)||[]){main.append(link('Return to on-site sewage evidence','/domains/phe/'+domain));text(main,'A personal historical-source review does not resolve missing current-rule or inspection-strategy evidence.');}}
  async function professionalPage(main,dataset,route){
   const isPhe=route.name.startsWith('phe'),P=root.CsoiPhe||root.AtlasCSOIPhe,W=root.AtlasCSOIWcos||root.CsoiWcos;
   text(main,isPhe?'Public-source professional knowledge. Council-specific responsibility, current legal applicability and internal procedures require separate review.':'Read-only synthetic interface contracts. Council business records remain in their authorised professional system; no private WCOS data has been imported.');

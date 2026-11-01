@@ -17,7 +17,7 @@ with sync_playwright() as p:
   page.evaluate('location.hash="#/atlas"');expect(page.locator('#routeMap')).to_be_visible();page.locator('#toolsMenu>summary').click()
   with page.expect_download() as download:page.locator('#exportBtn').click()
   snapshot=Path(tempfile.gettempdir())/f'bombala-final-{width}.json';download.value.save_as(str(snapshot));subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(snapshot)],check=True)
-  data=json.loads(snapshot.read_text())['dataset'];assert len(data['domain']['entities'])==136;assert len(data['contentItems'])==127;assert len([e for e in data['domain']['entities'] if e.get('data',{}).get('csoiRecord',{}).get('data',{}).get('dcpClause')])==72
+  data=json.loads(snapshot.read_text())['dataset'];assert len(data['domain']['entities'])==138;assert len(data['contentItems'])==127;assert len([e for e in data['domain']['entities'] if e.get('data',{}).get('csoiRecord',{}).get('data',{}).get('dcpClause')])==74
   assert not errors,errors;results.append({'viewport':[width,height],'status':'PASS_TESTED_HERE','BombalaDepth':5,'pagePin':'PDF55/printed34','reviewCalendar':'PASS','independentSnapshot':'PASS','legalApplicability':'UNKNOWN'});page.close()
  b.close()
 (OUT/'browser-bombala.json').write_text(json.dumps({'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results},indent=2)+'\n')

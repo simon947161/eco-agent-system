@@ -42,21 +42,34 @@ const OSSM_READING=[
  ['csoi:dcp:snowy2013:C9:3:1:b:soil','snowy','Soil evidence to review'],
  ['csoi:dcp:cooma2014:7:4:2:1','cooma','Historical installation approval references'],
  ['csoi:dcp:cooma2014:7:4:2:2:soil','cooma','Land, soil and terrain evidence to review'],
- ['csoi:dcp:cooma2014:7:4:inspections','cooma','Inspection-strategy reference remains a gap']
+ ['csoi:dcp:cooma2014:7:4:inspections','cooma','Inspection-strategy reference remains a gap'],
+ ['csoi:dcp:bombala2012:3:1:5:P1','bombala','Bombala subdivision: network availability and land capacity'],
+ ['csoi:dcp:bombala2012:3:1:5:A8','bombala','Bombala subdivision: conditional R5 connection'],
+ ['csoi:dcp:bombala2012:3:1:5:A9:soil','bombala','Bombala subdivision: soil evidence when sewer is unavailable'],
+ ['csoi:dcp:bombala2012:4:5:4:A2','bombala','Bombala rural development: disposal envelopes and soil report'],
+ ['csoi:dcp:bombala2012:4:5:4:A3','bombala','Bombala rural development: historical waterway-distance reference']
 ];
 function readingDomains(clauseId){return OSSM_READING.some(([id])=>id===clauseId)?['ossm']:[];}
 async function historicalContexts(dataset,domain){
  if(!domains.some(d=>d.id===domain))throw Error('PHE_DOMAIN_REQUIRED');
- const result={domain,relationship:'CURATED_READING_SELECTION',statutoryLinkage:'UNKNOWN',operationalLinkage:'UNKNOWN',officialAdmission:'PENDING',cards:[]};
+ const result={domain,relationship:'CURATED_READING_SELECTION',statutoryLinkage:'UNKNOWN',operationalLinkage:'UNKNOWN',officialAdmission:'PENDING',cards:[],gaps:[]};
  if(domain!=='ossm')return result;
  const M=typeof module!=='undefined'?require('./atlas-model.js'):root.AtlasModel,C=typeof module!=='undefined'?require('./csoi-clauses.js'):root.AtlasCSOIClauses;
- const outlines=typeof module!=='undefined'?{snowy:require('./sources/snowy-dcp-outline.json'),cooma:require('./sources/cooma-dcp-outline.json')}:{snowy:root.CsoiDcpOutline,cooma:root.CsoiCoomaDcpOutline};
+ const outlines=typeof module!=='undefined'?{snowy:require('./sources/snowy-dcp-outline.json'),cooma:require('./sources/cooma-dcp-outline.json'),bombala:require('./sources/bombala-dcp-outline.json')}:{snowy:root.CsoiDcpOutline,cooma:root.CsoiCoomaDcpOutline,bombala:root.CsoiBombalaDcpOutline};
  for(const [id,family,purpose]of OSSM_READING){
   const outline=outlines[family],expected=outline?.nodes.find(n=>n.id===id),entity=M.domainIndex(dataset).get(id),data=entity?.data?.csoiRecord?.data,clause=data?.dcpClause;
   const selected=!!expected&&!!clause&&data.sourceId===outline.sourceId&&data.sourceDigest===outline.sourceRevision&&clause.section===expected.section&&M.canonical(clause.anchor)===M.canonical(expected.anchor);
   const status=selected?await C.status(dataset,id):{current:false,status:'CURATED_CONTEXT_UNAVAILABLE',reasons:['SELECTED_SOURCE_OR_PAGE_MISSING_OR_CHANGED']};
-  result.cards.push({id,purpose,family,label:expected?.label||id,sourceId:outline?.sourceId||'UNKNOWN',sourceRevision:outline?.sourceRevision||'UNKNOWN',clauseRevision:entity?.revisionId||'UNKNOWN',locator:selected?data.locator:expected?.locator||'UNKNOWN',anchor:expected?.anchor||null,summary:selected?data.summary:'The selected historical evidence is unavailable in this snapshot.',conditions:selected?clause.conditions:[],exceptions:selected?clause.exceptions:[],region:selected?entity.scope.region:'UNKNOWN',current:status.current,status:status.status,reasons:status.reasons,reviewPlans:(dataset.domain?.entities||[]).filter(e=>e.data?.csoiRecord?.data?.reviewPlan?.clauseId===id).map(e=>({id:e.id,date:e.data.csoiRecord.data.reviewPlan.date,clauseRevision:e.data.csoiRecord.data.reviewPlan.clauseRevisionId}))});
+  const parentContext=selected&&status.integrity?C.parents(dataset,id).slice(1).reverse().map(parent=>{const p=parent.data.csoiRecord.data.dcpClause;return {id:parent.id,revisionId:parent.revisionId,section:p.section,conditions:structuredClone(p.conditions),exceptions:structuredClone(p.exceptions),anchor:structuredClone(p.anchor)};}):[];
+  result.cards.push({id,purpose,family,label:expected?.label||id,sourceId:outline?.sourceId||'UNKNOWN',sourceRevision:outline?.sourceRevision||'UNKNOWN',clauseRevision:entity?.revisionId||'UNKNOWN',locator:selected?data.locator:expected?.locator||'UNKNOWN',anchor:expected?.anchor||null,summary:selected?data.summary:'The selected historical evidence is unavailable in this snapshot.',conditions:selected?clause.conditions:[],exceptions:selected?clause.exceptions:[],parentContext,region:selected?entity.scope.region:'UNKNOWN',current:status.current,status:status.status,reasons:status.reasons,reviewPlans:(dataset.domain?.entities||[]).filter(e=>e.data?.csoiRecord?.data?.reviewPlan?.clauseId===id).map(e=>({id:e.id,date:e.data.csoiRecord.data.reviewPlan.date,clauseRevision:e.data.csoiRecord.data.reviewPlan.clauseRevisionId}))});
  }
+ // Missing evidence is a reading aid, not a new source, obligation or graph edge.
+ // Creating a personal review plan never resolves these gaps automatically.
+ const inspection=result.cards.find(c=>c.id==='csoi:dcp:cooma2014:7:4:inspections');
+ result.gaps=[
+  {id:'current-rule',title:'Current rules and parcel applicability — evidence missing',status:'MISSING_EVIDENCE',resolved:false,currentSourceId:null,detail:'These historical reading selections do not establish the current consolidated rules, effective version or parcel applicability. Current legislation, plan scope, exceptions and authorised human review are still needed.',currentLegalApplicability:'UNKNOWN'},
+  {id:'inspection-strategy',title:'Current inspection strategy — evidence missing',status:'MISSING_EVIDENCE',resolved:false,currentSourceId:null,detail:'The Cooma historical inspection reference is not a current inspection strategy. This reading set has no separately verified strategy revision, applicable interval or local responsibility. A personal source-review date is not a Council inspection deadline.',relatedHistoricalClauseId:inspection.id,relatedHistoricalReferenceCurrent:inspection.current,inspectionFrequency:'UNKNOWN',localResponsibleRole:'UNKNOWN'}
+ ];
  return result;
 }
 const api={domains,workflow,applicable,backflowRule,examples,historicalContexts,readingDomains,authority:{statutoryPowers:'UNKNOWN_PENDING_CURRENT_LEGISLATION',publicReferences:['NSW Health','NSW Food Authority — retrieval unavailable','NSW Water','Council published service pages','NSW EPA referral named in Council guidance'],localInternalAllocation:'UNKNOWN',formalDecisions:'NOT_DELEGATED'}};
