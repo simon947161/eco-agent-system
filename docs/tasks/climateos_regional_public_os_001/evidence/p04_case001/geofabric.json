@@ -1,0 +1,776 @@
+{
+ "currentVersion": 10.91,
+ "cimVersion": "2.9.0",
+ "serviceDescription": "<div style='text-align:Left;'><div><div><div style='font-size:12pt;'><p><span>The Australian Hydrological Geospatial Fabric (Geofabric) is a specialised Geographic Information System (GIS). It registers the spatial relationships between important hydrological features such as rivers, catchments, water bodies, aquifers and monitoring points. The enduring nature of the Geofabric is based on a set of contracted nodes (points) which represent important hydrological features in the landscape.<\/span><\/p><p><span>A subset of the contracted nodes is used to create a simplified node-link network with associated contracted catchments. There is also a hierarchy of catchments, as well as alternate representations to meet varied user requirements. <\/span><\/p><\/div><\/div><\/div><\/div>",
+ "mapName": "Geofabric V3x All Products",
+ "description": "<DIV STYLE=\"text-align:Left;font-size:12pt\"><DIV><DIV><DIV><P><SPAN>The Australian Hydrological Geospatial Fabric (Geofabric) is a specialised Geographic Information System (GIS). It registers the spatial relationships between important hydrological features such as rivers, catchments, water bodies, aquifers and monitoring points. The enduring nature of the Geofabric is based on a set of contracted nodes (points) which represent important hydrological features in the landscape.<\/SPAN><\/P><P><SPAN>A subset of the contracted nodes is used to create a simplified node-link network with associated contracted catchments. There is also a hierarchy of catchments, as well as alternate representations to meet varied user requirements.<\/SPAN><\/P><\/DIV><\/DIV><\/DIV><\/DIV>",
+ "copyrightText": "We request attribution as © Commonwealth of Australia (Bureau of Meteorology) 2022",
+ "supportsDynamicLayers": true,
+ "layers": [
+  {
+   "id": 0,
+   "name": "Geofabric Surface Hydrology Network - V3.3",
+   "parentLayerId": -1,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    1,
+    4,
+    7,
+    8
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 1,
+   "name": "AHGFNetworkNode",
+   "parentLayerId": 0,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    2,
+    3
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 2,
+   "name": "AHGFNetworkNode - Gauging Stations",
+   "parentLayerId": 1,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPoint",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 3,
+   "name": "AHGFNetworkNode - All",
+   "parentLayerId": 1,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 288895.277144,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPoint",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 4,
+   "name": "AHGFNetworkStream",
+   "parentLayerId": 0,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    5,
+    6
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 5,
+   "name": "AHGFNetworkStream - Major, Named",
+   "parentLayerId": 4,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 1155581.108577,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolyline",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 6,
+   "name": "AHGFNetworkStream - All",
+   "parentLayerId": 4,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 1155582,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolyline",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 7,
+   "name": "AHGFCatchment (SH_Network)",
+   "parentLayerId": 0,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 144447.638572,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 8,
+   "name": "AHGFWaterbody",
+   "parentLayerId": 0,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    9,
+    10,
+    11
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 9,
+   "name": "AHGFWaterbody - Largest",
+   "parentLayerId": 8,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 2000000,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 10,
+   "name": "AHGFWaterbody - All",
+   "parentLayerId": 8,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 11,
+   "name": "Water Storages",
+   "parentLayerId": 8,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 9244648.868618,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 12,
+   "name": "Geofabric Hydrology Reporting Regions - V3.3",
+   "parentLayerId": -1,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    13,
+    14,
+    49
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 13,
+   "name": "RiverRegion",
+   "parentLayerId": 12,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 9244648.868618,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 14,
+   "name": "AWRADrainageDivision",
+   "parentLayerId": 12,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 49,
+   "name": "StationCatchments",
+   "parentLayerId": 12,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 15,
+   "name": "Geofabric Surface Hydrology Cartography - V3.3",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    69,
+    22,
+    25,
+    26,
+    27
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 16,
+   "name": "AHGFDam",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 500000,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPoint",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 17,
+   "name": "AHGFHydroPoint",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 500000,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPoint",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 18,
+   "name": "AHGFStructure",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 500000,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPoint",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 19,
+   "name": "AHGFHydroLine",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 500000,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolyline",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 20,
+   "name": "AHGFCanalLine",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 500000,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolyline",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 21,
+   "name": "AHGFMonitoringPoint",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPoint",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 69,
+   "name": "AHGFMappedNode",
+   "parentLayerId": 15,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 250000,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPoint",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 22,
+   "name": "AHGFMappedStream",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    23,
+    24
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 23,
+   "name": "AHGFMappedStream -Major, Named",
+   "parentLayerId": 22,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 2000000,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolyline",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 24,
+   "name": "AHGFMappedStream - All",
+   "parentLayerId": 22,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 1999999,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolyline",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 25,
+   "name": "AHGFWaterPipeline",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 500000,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolyline",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 26,
+   "name": "AHGFHydroArea",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 1000000,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 27,
+   "name": "AHGFWaterbody (SH_Cartography)",
+   "parentLayerId": 15,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 28,
+   "name": "Geofabric Hydrology Reporting Catchments - V3.3",
+   "parentLayerId": -1,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    29,
+    30,
+    31
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 29,
+   "name": "AHGFNode",
+   "parentLayerId": 28,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 4622324.434309,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPoint",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 30,
+   "name": "AHGFLink",
+   "parentLayerId": 28,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolyline",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 31,
+   "name": "AHGFContractedCatchment",
+   "parentLayerId": 28,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 4622324.434309,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 32,
+   "name": "Geofabric Surface Catchments - V3.3",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    33,
+    34,
+    35
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 33,
+   "name": "AHGFCatchment (SH_Catchments)",
+   "parentLayerId": 32,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 144447.638572,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 34,
+   "name": "NCBLevel2DrainageBasinGroup",
+   "parentLayerId": 32,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 10000000,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 35,
+   "name": "NCBLevel1DrainageDivision",
+   "parentLayerId": 32,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 55,
+   "name": "Geofabric Groundwater Cartography - V3.3",
+   "parentLayerId": -1,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    56,
+    51,
+    52,
+    53,
+    54
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 56,
+   "name": "Aquifer Boundary",
+   "parentLayerId": 55,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    57,
+    58,
+    59,
+    50
+   ],
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Group Layer",
+   "supportsDynamicLegends": false
+  },
+  {
+   "id": 57,
+   "name": "Upper Aquifer",
+   "parentLayerId": 56,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 58,
+   "name": "Middle Aquifer",
+   "parentLayerId": 56,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 59,
+   "name": "Lower Aquifer",
+   "parentLayerId": 56,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 50,
+   "name": "Fractured Rock",
+   "parentLayerId": 56,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 51,
+   "name": "AHGFAquiferOutcrop",
+   "parentLayerId": 55,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 52,
+   "name": "AHGFAquiferContour",
+   "parentLayerId": 55,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolyline",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 53,
+   "name": "AHGFAquiferSalinity",
+   "parentLayerId": 55,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  },
+  {
+   "id": 54,
+   "name": "AHGFAquiferYield",
+   "parentLayerId": 55,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0,
+   "type": "Feature Layer",
+   "geometryType": "esriGeometryPolygon",
+   "supportsDynamicLegends": true
+  }
+ ],
+ "tables": [
+  {
+   "id": 36,
+   "name": "AHGFNetworkNodeLUT",
+   "type": "Table"
+  },
+  {
+   "id": 37,
+   "name": "AHGFPreferredFlowNode",
+   "type": "Table"
+  },
+  {
+   "id": 38,
+   "name": "AHGFNetworkConnectivityDown",
+   "type": "Table"
+  },
+  {
+   "id": 39,
+   "name": "AHGFNetworkConnectivityUp",
+   "type": "Table"
+  },
+  {
+   "id": 40,
+   "name": "AHGFNetworkStream_FS",
+   "type": "Table"
+  },
+  {
+   "id": 41,
+   "name": "AHGFNetworkStreamLUT",
+   "type": "Table"
+  },
+  {
+   "id": 42,
+   "name": "AWRADDContractedCatchmentLUT",
+   "type": "Table"
+  },
+  {
+   "id": 43,
+   "name": "RRContractedCatchmentLUT",
+   "type": "Table"
+  },
+  {
+   "id": 44,
+   "name": "AHGFNodeLinkConnectivityDown",
+   "type": "Table"
+  },
+  {
+   "id": 45,
+   "name": "AHGFNodeLinkConnectivityUp",
+   "type": "Table"
+  },
+  {
+   "id": 46,
+   "name": "AHGFLinkLUT",
+   "type": "Table"
+  }
+ ],
+ "spatialReference": {
+  "wkid": 4283,
+  "latestWkid": 4283,
+  "xyTolerance": 2.0E-9,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "xyUnits": 9.999999999999999E8,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "singleFusedMapCache": false,
+ "initialExtent": {
+  "xmin": 101.75519915237308,
+  "ymin": -53.262092270435375,
+  "xmax": 177.8609874903909,
+  "ymax": -1.7199883522373156,
+  "spatialReference": {
+   "wkid": 4283,
+   "latestWkid": 4283,
+   "xyTolerance": 2.0E-9,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -400,
+   "falseY": -400,
+   "xyUnits": 9.999999999999999E8,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "fullExtent": {
+  "xmin": 112.92137000000002,
+  "ymin": -43.86152776899996,
+  "xmax": 159.13099670400004,
+  "ymax": -9.219939999999951,
+  "spatialReference": {
+   "wkid": 4283,
+   "latestWkid": 4283,
+   "xyTolerance": 2.0E-9,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -400,
+   "falseY": -400,
+   "xyUnits": 9.999999999999999E8,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "datesInUnknownTimezone": false,
+ "minScale": 0,
+ "maxScale": 0,
+ "units": "esriDecimalDegrees",
+ "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+ "documentInfo": {
+  "Title": "Geofabric V3x All Products",
+  "Author": "",
+  "Comments": "<DIV STYLE=\"text-align:Left;font-size:12pt\"><DIV><DIV><DIV><P><SPAN>The Australian Hydrological Geospatial Fabric (Geofabric) is a specialised Geographic Information System (GIS). It registers the spatial relationships between important hydrological features such as rivers, catchments, water bodies, aquifers and monitoring points. The enduring nature of the Geofabric is based on a set of contracted nodes (points) which represent important hydrological features in the landscape.<\/SPAN><\/P><P><SPAN>A subset of the contracted nodes is used to create a simplified node-link network with associated contracted catchments. There is also a hierarchy of catchments, as well as alternate representations to meet varied user requirements.<\/SPAN><\/P><\/DIV><\/DIV><\/DIV><\/DIV>",
+  "Subject": "The Australian Hydrological Geospatial Fabric (Geofabric) V3.3",
+  "Category": "",
+  "AntialiasingMode": "Fast",
+  "TextAntialiasingMode": "Force",
+  "Version": "2.9.0",
+  "Keywords": "network,streams,nodes,catchments,gauges,stations,observations,streamflow,monitoring,waterbodies,storages,lakes,reservoirs,water storages,links,modelling,drainage divisions,river regions,contracted catchments,contracted nodes,basins,canals,pipelines,dams,mapping,cartography,rivers,node link network,dendritic"
+ },
+ "capabilities": "Map,Query,Data",
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "exportTilesAllowed": false,
+ "referenceScale": 0.0,
+ "supportsDatumTransformation": true,
+ "floorAwareMapProperties": {
+  "defaultFloorFilterSettings": {"isEnabled": true}
+ },
+ "archivingInfo": {"supportsHistoricMoment": false},
+ "supportsClipping": true,
+ "supportsSpatialFilter": true,
+ "supportsTimeRelation": true,
+ "supportsQueryDataElements": true,
+ "maxRecordCount": 10000,
+ "maxImageHeight": 4096,
+ "maxImageWidth": 4096,
+ "supportedExtensions": "FeatureServer, WMSServer",
+ "resampling": false,
+ "serviceItemId": "ea9f7296abeb49c3a45430cd322400b1"
+}

@@ -1,0 +1,175 @@
+{
+  "method": "Judgment scores, not empirical measurements or success probabilities. 1–5 higher better. Conflict score higher means easier independence.",
+  "dimensions": [
+    "policy fit",
+    "career learning",
+    "public data",
+    "1–2 year falsifiability",
+    "transfer potential",
+    "conflict manageability"
+  ],
+  "weights": {
+    "base": [
+      20,
+      20,
+      15,
+      15,
+      15,
+      15
+    ],
+    "field_first": [
+      15,
+      30,
+      10,
+      20,
+      10,
+      15
+    ],
+    "independence_first": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      25
+    ]
+  },
+  "rows": [
+    {
+      "id": "T1",
+      "title": "水务韧性与水—能—碳",
+      "scores": [
+        5,
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "totals": {
+        "base": 85,
+        "field_first": 86,
+        "independence_first": 81
+      }
+    },
+    {
+      "id": "T2",
+      "title": "土壤—植被—流域韧性",
+      "scores": [
+        5,
+        3,
+        4,
+        3,
+        5,
+        4
+      ],
+      "totals": {
+        "base": 80,
+        "field_first": 75,
+        "independence_first": 80
+      }
+    },
+    {
+      "id": "T3",
+      "title": "区域证据与情景治理",
+      "scores": [
+        5,
+        4,
+        5,
+        5,
+        5,
+        3
+      ],
+      "totals": {
+        "base": 90,
+        "field_first": 88,
+        "independence_first": 87
+      }
+    },
+    {
+      "id": "T4",
+      "title": "分布式能源与设施弹性",
+      "scores": [
+        4,
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "totals": {
+        "base": 67,
+        "field_first": 65,
+        "independence_first": 66
+      }
+    },
+    {
+      "id": "T5",
+      "title": "土壤碳与碳信用MRV",
+      "scores": [
+        4,
+        2,
+        2,
+        2,
+        4,
+        2
+      ],
+      "totals": {
+        "base": 54,
+        "field_first": 50,
+        "independence_first": 52
+      }
+    },
+    {
+      "id": "T6",
+      "title": "旅游、住房与服务压力",
+      "scores": [
+        4,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "totals": {
+        "base": 64,
+        "field_first": 63,
+        "independence_first": 63
+      }
+    },
+    {
+      "id": "T7",
+      "title": "资源循环与安全再利用",
+      "scores": [
+        4,
+        4,
+        2,
+        2,
+        4,
+        2
+      ],
+      "totals": {
+        "base": 62,
+        "field_first": 62,
+        "independence_first": 58
+      }
+    },
+    {
+      "id": "T8",
+      "title": "旱地生态综合示范区",
+      "scores": [
+        3,
+        2,
+        2,
+        1,
+        5,
+        2
+      ],
+      "totals": {
+        "base": 50,
+        "field_first": 45,
+        "independence_first": 49
+      }
+    }
+  ]
+}

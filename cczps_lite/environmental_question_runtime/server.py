@@ -3,14 +3,17 @@
 from __future__ import annotations
 
 import json
+import sqlite3
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Lock
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
+from .streamflow import read_series
 
 from .continuity import ContinuityBoundaryError, LocalPrivateContinuity
 from .runtime import EnvironmentalQuestionRuntime, RuntimeBoundaryError, RuntimeStateError
+from .policy import console_packet
 from .program import (
     PROGRAM_ID,
     PersistentResearchRuntime,
@@ -64,10 +67,27 @@ def build_handler(
             parts = self._parts()
             if not parts:
                 name, kind = "index.html", "text/html; charset=utf-8"
-            elif parts in (["app.js"], ["styles.css"], ["program.js"], ["program.css"]):
+            elif parts in (["app.js"], ["styles.css"], ["program.js"], ["program.css"], ["policy.js"], ["streamflow.js"]):
                 name = parts[0]; kind = "text/javascript; charset=utf-8" if name.endswith(".js") else "text/css; charset=utf-8"
             elif parts == ["program.html"]:
                 name, kind = "program.html", "text/html; charset=utf-8"
+            elif parts == ["api", "streamflow"]:
+                try:
+                    query = parse_qs(urlparse(self.path).query)
+                    if set(query) - {'start', 'end'} or any(len(v) != 1 for v in query.values()):
+                        raise ValueError('Only start/end dates are supported')
+                    self._json(200, read_series(programs.db_path, query.get('start', [None])[0], query.get('end', [None])[0]))
+                except ValueError as exc:
+                    self._json(400, {'error': str(exc)})
+                except (OSError, sqlite3.Error):
+                    self._json(503, {'error': 'streamflow_unavailable'})
+                return
+            elif parts == ["api", "policy-context"]:
+                try:
+                    self._json(200, console_packet())
+                except (OSError, ValueError, KeyError, TypeError):
+                    self._json(503, {"error": "policy_context_unavailable", "detail": "Policy context could not be validated. Existing research remains available."})
+                return
             elif parts == ["api", "health"]:
                 self._json(200, {
                     "status": "ready",
@@ -240,3 +260,4 @@ def serve(db_path: str | Path, host: str = "127.0.0.1", port: int = 8766) -> Non
     try: server.serve_forever()
     except KeyboardInterrupt: pass
     finally: server.server_close()
+

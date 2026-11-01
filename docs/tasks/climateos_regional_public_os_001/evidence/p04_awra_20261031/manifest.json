@@ -1,0 +1,366 @@
+{
+  "schema": "climateos.p04.awra_single_cell_capture.v1",
+  "baseline_commit": "67bc471ebeaab02cd09b0ee9dd8edd917483f3fc",
+  "month": "2000-07",
+  "cell": {
+    "latitude_index": 525,
+    "longitude_index": 742,
+    "latitude": -36.25,
+    "longitude": 149.1
+  },
+  "files": [
+    {
+      "file": "awral-catalog.xml",
+      "url": "https://thredds.nci.org.au/thredds/catalog/iu04/australian-water-outlook/historical/v1/AWRALv7/catalog.xml",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:18.416348+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:19 GMT",
+        "content-type": "application/xml;charset=UTF-8"
+      },
+      "complete": true,
+      "bytes": 205635,
+      "sha256": "de521fd60574802fd29c21ab1dd6b2c7ead4ea75ff457b0f6f46a2cbfb3c7f72",
+      "completed_at_utc": "2026-10-31T08:17:21.154673+00:00"
+    },
+    {
+      "file": "day-catalog.xml",
+      "url": "https://thredds.nci.org.au/thredds/catalog/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/catalog.xml",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:21.155004+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:21 GMT",
+        "content-type": "application/xml;charset=UTF-8"
+      },
+      "complete": true,
+      "bytes": 175955,
+      "sha256": "6eab4cb622d5ee39fda939f755c1775fd073b80a243de257488fef4345f5909f",
+      "completed_at_utc": "2026-10-31T08:17:22.976646+00:00"
+    },
+    {
+      "file": "month-catalog.xml",
+      "url": "https://thredds.nci.org.au/thredds/catalog/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/catalog.xml",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:22.976962+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:23 GMT",
+        "content-type": "application/xml;charset=UTF-8"
+      },
+      "complete": true,
+      "bytes": 5327,
+      "sha256": "8f1199de2184d1d13a6594cfe58eb6ab904bc2024d8bf2ae0d71ce85a36d7b20",
+      "completed_at_utc": "2026-10-31T08:17:23.750997+00:00"
+    },
+    {
+      "file": "license.txt",
+      "url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/license.txt",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:23.751312+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:24 GMT",
+        "last-modified": "Tue, 09 Nov 2021 01:32:21 GMT",
+        "content-length": "173",
+        "content-type": "text/plain"
+      },
+      "complete": true,
+      "bytes": 173,
+      "sha256": "35b38d9d52abeb3ff66658b7a9948bbf38a08168a4d2b73eedc9e44ae1c075ed",
+      "completed_at_utc": "2026-10-31T08:17:24.144678+00:00"
+    },
+    {
+      "file": "official-readme.md",
+      "url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/README.md",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:24.146211+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:24 GMT",
+        "last-modified": "Tue, 04 Jul 2023 11:01:04 GMT",
+        "content-length": "6623",
+        "content-type": "application/octet-stream"
+      },
+      "complete": true,
+      "bytes": 6623,
+      "sha256": "afe6078e27fc11c5ba78f68fd10d981e129b6a8b96f4e62257fe7173f5e888f7",
+      "completed_at_utc": "2026-10-31T08:17:24.664317+00:00"
+    },
+    {
+      "file": "day-sm_pct.dds",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2000.nc.dds",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:24.664606+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:25 GMT",
+        "content-type": "text/plain",
+        "content-description": "dods-dds"
+      },
+      "complete": true,
+      "bytes": 442,
+      "sha256": "37c49f78f30d60b408399973932127cf03f3c4b51912b9a155e78188609acab8",
+      "completed_at_utc": "2026-10-31T08:17:25.304770+00:00"
+    },
+    {
+      "file": "day-sm_pct-before.head",
+      "url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2000.nc",
+      "method": "HEAD",
+      "started_at_utc": "2026-10-31T08:17:25.305494+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:25 GMT",
+        "last-modified": "Fri, 01 Oct 2021 05:07:14 GMT",
+        "content-length": "330799618",
+        "content-type": "application/x-netcdf"
+      },
+      "complete": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_at_utc": "2026-10-31T08:17:25.677907+00:00"
+    },
+    {
+      "file": "day-sm_pct.das",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2000.nc.das",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:25.678285+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:26 GMT",
+        "content-type": "text/plain",
+        "content-description": "dods-das"
+      },
+      "complete": true,
+      "bytes": 1770,
+      "sha256": "c5f8112ecc185b45a71491f3994bd1638675a379d6ce6dffd1c883c380135dc0",
+      "completed_at_utc": "2026-10-31T08:17:26.685574+00:00"
+    },
+    {
+      "file": "day-sm_pct.dods",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2000.nc.dods?sm_pct%5B182:1:212%5D%5B525:1:525%5D%5B742:1:742%5D",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:26.685855+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:27 GMT",
+        "content-type": "application/octet-stream",
+        "content-description": "dods-data"
+      },
+      "complete": true,
+      "bytes": 629,
+      "sha256": "0db0587bc97ac0fa5c432b4b71f347b1cbf560dffb0432a2ca94bb486f088a6d",
+      "completed_at_utc": "2026-10-31T08:17:27.936535+00:00"
+    },
+    {
+      "file": "day-sm_pct-after.head",
+      "url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2000.nc",
+      "method": "HEAD",
+      "started_at_utc": "2026-10-31T08:17:27.936814+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:28 GMT",
+        "last-modified": "Fri, 01 Oct 2021 05:07:14 GMT",
+        "content-length": "330799618",
+        "content-type": "application/x-netcdf"
+      },
+      "complete": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_at_utc": "2026-10-31T08:17:28.133040+00:00"
+    },
+    {
+      "file": "month-sm_pct.dds",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc.dds",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:28.133305+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:28 GMT",
+        "content-type": "text/plain",
+        "content-description": "dods-dds"
+      },
+      "complete": true,
+      "bytes": 486,
+      "sha256": "ece14a160f0d0107114d22b50b74eae514324a643013d2ed3efc87813581cc8c",
+      "completed_at_utc": "2026-10-31T08:17:28.519175+00:00"
+    },
+    {
+      "file": "month-sm_pct-before.head",
+      "url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc",
+      "method": "HEAD",
+      "started_at_utc": "2026-10-31T08:17:28.519473+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:28 GMT",
+        "last-modified": "Fri, 30 Oct 2026 14:00:33 GMT",
+        "content-length": "1354589298",
+        "content-type": "application/x-netcdf"
+      },
+      "complete": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_at_utc": "2026-10-31T08:17:29.053143+00:00"
+    },
+    {
+      "file": "month-sm_pct.das",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc.das",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:29.053396+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:29 GMT",
+        "content-type": "text/plain",
+        "content-description": "dods-das"
+      },
+      "complete": true,
+      "bytes": 1929,
+      "sha256": "a9cdf89e86d3ad49355fd1dcd04296383f6ab4a6fd4c9b41e8e3986eda57172e",
+      "completed_at_utc": "2026-10-31T08:17:29.276627+00:00"
+    },
+    {
+      "file": "month-sm_pct.dods",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc.dods?sm_pct%5B1074:1:1074%5D%5B525:1:525%5D%5B742:1:742%5D,time_bounds%5B1074:1:1074%5D%5B0:1:1%5D",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:29.277167+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:29 GMT",
+        "content-type": "application/octet-stream",
+        "content-description": "dods-data"
+      },
+      "complete": true,
+      "bytes": 441,
+      "sha256": "54d04b4a7285b4cc7225e5224819fee7b09be116ec7674940aa953b89c2c39d8",
+      "completed_at_utc": "2026-10-31T08:17:29.649994+00:00"
+    },
+    {
+      "file": "month-sm_pct-after.head",
+      "url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc",
+      "method": "HEAD",
+      "started_at_utc": "2026-10-31T08:17:29.650280+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:29 GMT",
+        "last-modified": "Fri, 30 Oct 2026 14:00:33 GMT",
+        "content-length": "1354589298",
+        "content-type": "application/x-netcdf"
+      },
+      "complete": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_at_utc": "2026-10-31T08:17:29.848046+00:00"
+    },
+    {
+      "file": "day-rain_day.dds",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/rain_day_2000.nc.dds",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:29.848331+00:00",
+      "http_status": 404,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:29 GMT",
+        "content-type": "text/plain;charset=ISO-8859-1",
+        "content-description": "dods-error"
+      },
+      "complete": true,
+      "bytes": 84,
+      "sha256": "6276e73b67c9e3349be3cc4760c14320d4ea7db2bedfa4ae0608c798bd1c9f4a",
+      "completed_at_utc": "2026-10-31T08:17:30.055908+00:00"
+    },
+    {
+      "file": "month-rain_day.dds",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc.dds",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:30.056284+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:30 GMT",
+        "content-type": "text/plain",
+        "content-description": "dods-dds"
+      },
+      "complete": true,
+      "bytes": 492,
+      "sha256": "4bbc761f82c03fa954993dea8ae067f989a359564b3fd672eda129a444a09e5a",
+      "completed_at_utc": "2026-10-31T08:17:30.296726+00:00"
+    },
+    {
+      "file": "month-rain_day-before.head",
+      "url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc",
+      "method": "HEAD",
+      "started_at_utc": "2026-10-31T08:17:30.298160+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:30 GMT",
+        "last-modified": "Fri, 30 Oct 2026 13:59:40 GMT",
+        "content-length": "704425413",
+        "content-type": "application/x-netcdf"
+      },
+      "complete": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_at_utc": "2026-10-31T08:17:30.513022+00:00"
+    },
+    {
+      "file": "month-rain_day.das",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc.das",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:30.513303+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:30 GMT",
+        "content-type": "text/plain",
+        "content-description": "dods-das"
+      },
+      "complete": true,
+      "bytes": 1923,
+      "sha256": "a4ef0cd69ccc2c2c2d0da4f76a7470681b52ca8b0744eddab80ba3b383d7f360",
+      "completed_at_utc": "2026-10-31T08:17:30.722778+00:00"
+    },
+    {
+      "file": "month-rain_day.dods",
+      "url": "https://thredds.nci.org.au/thredds/dodsC/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc.dods?rain_day%5B1074:1:1074%5D%5B525:1:525%5D%5B742:1:742%5D,time_bounds%5B1074:1:1074%5D%5B0:1:1%5D",
+      "method": "GET",
+      "started_at_utc": "2026-10-31T08:17:30.723045+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:30 GMT",
+        "content-type": "application/octet-stream",
+        "content-description": "dods-data"
+      },
+      "complete": true,
+      "bytes": 447,
+      "sha256": "7fac17686fbd1616938d26266355dcaf5530a8559a600f367304601aa3bb379a",
+      "completed_at_utc": "2026-10-31T08:17:31.083943+00:00"
+    },
+    {
+      "file": "month-rain_day-after.head",
+      "url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc",
+      "method": "HEAD",
+      "started_at_utc": "2026-10-31T08:17:31.084257+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:17:31 GMT",
+        "last-modified": "Fri, 30 Oct 2026 13:59:40 GMT",
+        "content-length": "704425413",
+        "content-type": "application/x-netcdf"
+      },
+      "complete": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_at_utc": "2026-10-31T08:17:31.282131+00:00"
+    }
+  ],
+  "attribution": "Bureau of Meteorology, Australian Landscape Water Balance AWRA-L; NCI distribution; ClimateOS extraction and calculations.",
+  "licence": "CC BY 4.0; see captured license.txt",
+  "budget": {
+    "max_requests": 32,
+    "max_body_bytes": 2097152,
+    "actual_requests": 21,
+    "actual_body_bytes": 402356,
+    "external_spending_aud": 0,
+    "credentials_used": false
+  },
+  "representation": "Exact bounded HTTP response bodies; .dods is a DAP2 subset, not a whole NetCDF file. HEAD files are empty bodies; source headers are in receipts.",
+  "revision_limit": "Last-Modified/size compared before and after each subset. No immutable publisher revision or whole-file hash; HTTP Date is retrieval, not observation time."
+}

@@ -142,6 +142,15 @@ function setWorkspacePermissions() {
 
 function renderCycleWorkspace() {
   renderCycleIdentity();
+  const references = $("evidenceReferences");
+  references.replaceChildren();
+  for (const item of cycle.evidence_references || []) {
+    const detail = document.createElement("pre");
+    detail.style.whiteSpace = "pre-wrap";
+    detail.style.overflowWrap = "anywhere";
+    detail.textContent = JSON.stringify(item, null, 2);
+    references.appendChild(detail);
+  }
   $("cycleNextAction").textContent = nextActionText();
   renderObservations();
   renderSnapshots();

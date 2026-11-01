@@ -1,0 +1,176 @@
+{
+  "schema_id": "climateos.smrc_policy_sources.v0.1",
+  "mission_id": "CLIMATEOS-SMRC-POLICY-CONSOLE-001",
+  "data_class": "PUBLIC_REFERENCE_METADATA",
+  "as_of": "2026-10-26",
+  "parent_mission": "CLIMATEOS-REGIONAL-PUBLIC-OS-001",
+  "documents": [
+    {
+      "id": "SMRC-LSPS-2020",
+      "filename": "snowy-monaro-local-strategic-planning-statement.pdf",
+      "sha256": "9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pages": 118,
+      "version": "Adopted 2020-05-21",
+      "publisher": "Snowy Monaro Regional Council",
+      "official_url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/2/building-and-planning/strategic-planning/documents/snowy-monaro-local-strategic-planning-statement.pdf",
+      "temporal_status": "STRATEGIC_CONTEXT_CURRENT_APPLICABILITY_RECHECK",
+      "review_scope": "Full PDF text extracted; selected action tables read",
+      "locators": [
+        "PDF p1: adoption",
+        "PDF p93 / printed92: PP4 actions",
+        "PDF p102 / printed101: 11.5–11.6",
+        "PDF p103 / printed102:12.1–12.6"
+      ],
+      "licence_state": "REFERENCE_ONLY_FULL_TEXT_REPUBLICATION_NOT_ASSESSED"
+    },
+    {
+      "id": "SMRC-DP-2025-V1.6",
+      "filename": "adopted-dp-2025-2029-v1.6-20251111.pdf",
+      "sha256": "3deaeaef1ae1a814bd2e430cd75088f3a531bf1f488172a4ccb6e3fd4606d6e9",
+      "pages": 94,
+      "version": "1.6;2025-11-11",
+      "publisher": "Snowy Monaro Regional Council",
+      "official_url": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+      "temporal_status": "HISTORICAL_BASELINE_NEWER_REVISION_LISTED",
+      "review_scope": "Full PDF text extracted; version table and selected water projects read",
+      "locators": [
+        "PDF p3: versions 1.0–1.6 and retained working-draft wording",
+        "PDF p68: water/wastewater project links to CSP8.2"
+      ],
+      "licence_state": "REFERENCE_ONLY_FULL_TEXT_REPUBLICATION_NOT_ASSESSED"
+    },
+    {
+      "id": "SMRC-CSP-2035-V3",
+      "filename": "smrc-csp-2035-endorsed-20250501.pdf",
+      "sha256": "dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "pages": 36,
+      "version": "3.0;2025-05-01;73/25",
+      "publisher": "Snowy Monaro Regional Council",
+      "official_url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/smrc-csp-2035-endorsed-20250501.pdf",
+      "temporal_status": "STRATEGIC_CONTEXT_EXECUTION_DOCUMENTS_SEPARATE",
+      "review_scope": "Uploaded original full text read and selected measure table rendered",
+      "locators": [
+        "PDF pp22–24:6.1–8.2",
+        "PDF pp28–31:measures",
+        "PDF p35:version"
+      ],
+      "licence_state": "REFERENCE_ONLY_FULL_TEXT_REPUBLICATION_NOT_ASSESSED"
+    },
+    {
+      "id": "SMRC-DP-2026-CANDIDATE",
+      "filename": "dp-2025-2029-2026-revision-v2.4-20261022_adopted.pdf",
+      "sha256": null,
+      "pages": null,
+      "version": "Filename suggests v2.4 2026-10-22; content unverified",
+      "publisher": "Snowy Monaro Regional Council",
+      "official_url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/5/council/ipr/20262027/dp-2025-2029-2026-revision-v2.4-20261022_adopted.pdf",
+      "temporal_status": "OFFICIAL_LINK_DISCOVERED_CONTENT_UNVERIFIED",
+      "review_scope": "Official index link only; web PDF fetch failed",
+      "locators": [
+        "IP&R index:2025–2029 Delivery Program,2026 Revision"
+      ],
+      "licence_state": "NOT_ASSESSED"
+    },
+    {
+      "id": "SMRC-OP-2026-27-CANDIDATE",
+      "filename": "adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+      "sha256": null,
+      "pages": null,
+      "version": "Filename suggests v3.1; content unverified",
+      "publisher": "Snowy Monaro Regional Council",
+      "official_url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+      "temporal_status": "OFFICIAL_LINK_DISCOVERED_CONTENT_UNVERIFIED",
+      "review_scope": "Official index link only; web PDF fetch failed",
+      "locators": [
+        "IP&R index:2026–2027 Operational Plan"
+      ],
+      "licence_state": "NOT_ASSESSED"
+    }
+  ],
+  "research_lines": [
+    {
+      "id": "WATER-ENERGY-CARBON",
+      "title_zh": "水务韧性与水—能—碳",
+      "csp": [
+        "8.2",
+        "6.1"
+      ],
+      "lsps": [
+        "11.5",
+        "11.6",
+        "12.2"
+      ],
+      "dp": [
+        {
+          "source_id": "SMRC-DP-2025-V1.6",
+          "locator": "PDF p68",
+          "relationship": "EXPLICIT_CSP_8.2_LINK_HISTORICAL"
+        }
+      ],
+      "crosswalk": "CSP_TO_LSPS_RESEARCH_INTERPRETATION",
+      "hypothesis": "Demand management and energy efficiency may improve resilience at acceptable lifecycle cost.",
+      "metrics": [
+        "ML/year",
+        "peak demand",
+        "water kWh/kL",
+        "wastewater kWh/kL",
+        "bounded tCO2e"
+      ],
+      "failure_test": "No conservative lifecycle benefit or unacceptable service/environment tradeoff",
+      "opportunity_gate": "RESEARCH_ONLY_DEMAND_COST_AUTHORITY_AND_CONFLICT_UNVERIFIED"
+    },
+    {
+      "id": "LAND-CATCHMENT-RESILIENCE",
+      "title_zh": "土壤—植被—流域韧性",
+      "csp": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "7.4"
+      ],
+      "lsps": [
+        "PP3",
+        "PP5",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "crosswalk": "RESEARCH_INTERPRETATION_NOT_OFFICIAL_CROSSWALK",
+      "hypothesis": "Ground-cover and soil-water interventions may improve resilience without carbon-credit revenue.",
+      "metrics": [
+        "cover fraction",
+        "soil moisture with depth",
+        "erosion proxy",
+        "production",
+        "matched control outcome"
+      ],
+      "failure_test": "Effect within measurement uncertainty or harmful ecological/water tradeoff",
+      "opportunity_gate": "RESEARCH_ONLY_INDEPENDENT_SITE_AND_METHOD_VALIDATION_REQUIRED"
+    },
+    {
+      "id": "EVIDENCE-SCENARIO-GOVERNANCE",
+      "title_zh": "区域证据与情景研究",
+      "csp": [
+        "12.3",
+        "13.1",
+        "13.3",
+        "14.1"
+      ],
+      "lsps": [
+        "PP8",
+        "PP11",
+        "12.1"
+      ],
+      "crosswalk": "RESEARCH_INTERPRETATION_NOT_STATUTORY_AUTHORITY",
+      "hypothesis": "Versioned sources and explicit assumptions may reduce rework and improve traceability.",
+      "metrics": [
+        "source-locator accuracy",
+        "critical unit/time errors",
+        "review time",
+        "reopen success"
+      ],
+      "failure_test": "Untraceable claims, unchanged errors or maintenance burden exceeding benefits",
+      "opportunity_gate": "RESEARCH_ONLY_NO_REGULATED_CUSTOMER_SOLICITATION"
+    }
+  ]
+}

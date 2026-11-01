@@ -1,0 +1,171 @@
+{
+ "currentVersion": 10.91,
+ "serviceDescription": "awra_historical/physical_month_crf_multivariable_all_data",
+ "name": "awra_historical/physical_month_crf_multivariable_all_data",
+ "description": "",
+ "extent": {
+  "xmin": 111.975,
+  "ymin": -44.025000000000006,
+  "xmax": 154.025,
+  "ymax": -9.975,
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  }
+ },
+ "initialExtent": {
+  "xmin": 111.975,
+  "ymin": -44.025000000000006,
+  "xmax": 154.025,
+  "ymax": -9.975,
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  }
+ },
+ "fullExtent": {
+  "xmin": 111.975,
+  "ymin": -44.025000000000006,
+  "xmax": 154.025,
+  "ymax": -9.975,
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  }
+ },
+ "hasMultidimensions": true,
+ "timeInfo": {
+  "startTimeField": "StdTime",
+  "endTimeField": "StdTime",
+  "timeExtent": [
+   475977600000,
+   1790726400000
+  ],
+  "timeReference": null,
+  "defaultTimeInterval": 28,
+  "defaultTimeIntervalUnits": "esriTimeUnitsDays"
+ },
+ "pixelSizeX": 0.05000000000000002,
+ "pixelSizeY": 0.05000000000000001,
+ "datasetFormat": "Cache/LERC2D",
+ "uncompressedSize": 2290884,
+ "blockWidth": 256,
+ "blockHeight": 256,
+ "compressionType": "LERC2D",
+ "bandNames": [
+  "Band_1"
+ ],
+ "allowCopy": true,
+ "allowAnalysis": true,
+ "defaultVariable": "",
+ "bandCount": 1,
+ "noDataValue": 3.4E38,
+ "noDataValues": [
+  3.4E38
+ ],
+ "pixelType": "F32",
+ "minPixelSize": 0,
+ "maxPixelSize": 0,
+ "copyrightText": "",
+ "serviceDataType": "esriImageServiceDataTypeScientific",
+ "serviceSourceType": "esriImageServiceSourceTypeDataset",
+ "minValues": [
+  -4.052351951599121
+ ],
+ "maxValues": [
+  561.4321899414062
+ ],
+ "meanValues": [
+  219.5401893272274
+ ],
+ "stdvValues": [
+  89.33570067095486
+ ],
+ "objectIdField": "",
+ "fields": [],
+ "capabilities": "Mensuration,Image,Metadata",
+ "defaultMosaicMethod": "Center",
+ "allowedMosaicMethods": "",
+ "sortField": "",
+ "sortValue": null,
+ "sortAscending": true,
+ "mosaicOperator": "First",
+ "defaultCompressionQuality": 10000,
+ "defaultResamplingMethod": "Bilinear",
+ "maxImageHeight": 5000,
+ "maxImageWidth": 5000,
+ "allowRasterFunction": true,
+ "rasterFunctionInfos": [
+  {
+   "name": "None",
+   "description": "Make a Raster or Raster Dataset into a Function Raster Dataset.",
+   "help": ""
+  },
+  {
+   "name": "e0_month",
+   "description": "A raster function table that categorises evaporation in mm to 10 categories and colours based on corporate colours for measurements in mm for monthly data.",
+   "help": "\n  "
+  },
+  {
+   "name": "etot_month",
+   "description": "A raster function table that categorises modelled total evaporation in mm to 10 categories and colours based on corporate colours for measurements in mm for monthly data.",
+   "help": "\n  "
+  },
+  {
+   "name": "qtot_month",
+   "description": "A raster function table that categorises runoff in mm to 10 categories and colours based on corporate colours for measurements in mm for monthly data.",
+   "help": "\n  "
+  },
+  {
+   "name": "dd_month",
+   "description": "A raster function table that categorises deep drainage in mm to 10 categories and colours based on corporate colours for measurements in mm for monthly data.",
+   "help": "\n  "
+  },
+  {
+   "name": "precip_month",
+   "description": "A raster function table that categorises precipitation in mm to 10 categories and colours based on corporate colours for measurements in mm for monthly data.",
+   "help": "\n  "
+  },
+  {
+   "name": "smpfull",
+   "description": "A raster function table that categorises soil moisture in percent sull to 10 categories and colours based on corporate colours for measurements in percentages.",
+   "help": "\n  "
+  },
+  {
+   "name": "None",
+   "description": "Make a Raster or Raster Dataset into a Function Raster Dataset.",
+   "help": ""
+  }
+ ],
+ "rasterTypeInfos": [
+  {
+   "name": "Raster Dataset",
+   "description": "Supports all ArcGIS Raster Datasets",
+   "help": ""
+  }
+ ],
+ "mensurationCapabilities": "Basic",
+ "hasHistograms": true,
+ "hasColormap": false,
+ "hasRasterAttributeTable": false,
+ "minScale": 0,
+ "maxScale": 0,
+ "exportTilesAllowed": false,
+ "supportsStatistics": false,
+ "supportsAdvancedQueries": false,
+ "editFieldsInfo": null,
+ "ownershipBasedAccessControlForRasters": null,
+ "allowComputeTiePoints": false,
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": false,
+  "supportsOrderBy": false,
+  "supportsDistinct": false,
+  "supportsPagination": false
+ },
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ }
+}

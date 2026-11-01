@@ -1,0 +1,2346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2">
+  <service name="all" serviceType="Compound" base="">
+    <service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncdods" serviceType="OPENDAP" base="/thredds/dodsC/" />
+    <service name="subsetServer" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+    <service name="wcs" serviceType="WCS" base="/thredds/wcs/" />
+  </service>
+  <service name="HTTPonly" serviceType="Compound" base="">
+    <service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/" />
+  </service>
+  <service name="HTTP_OPeNDAP" serviceType="Compound" base="">
+    <service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncdods" serviceType="OPENDAP" base="/thredds/dodsC/" />
+  </service>
+  <dataset name="processed/values/day/">
+    <property name="DatasetScan" value="true" />
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataType>Grid</dataType>
+      <documentation xlink:href="https://geonetwork.nci.org.au/geonetwork/srv/eng/catalog.search#/metadata/f7227_1526_2937_8137" xlink:title="NCI Catalogue: Metadata, Licence and Readme" />
+      <documentation type="rights" xlink:href="/thredds/fileServer/iu04/australian-water-outlook/license.txt" xlink:title="Licence" />
+    </metadata>
+    <dataset name="s0_pct_1911.nc" ID="iu04/processed/values/day/s0_pct_1911.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1911.nc">
+      <dataSize units="Mbytes">319.0</dataSize>
+      <date type="modified">2021-09-30T23:16:49Z</date>
+    </dataset>
+    <dataset name="s0_pct_1912.nc" ID="iu04/processed/values/day/s0_pct_1912.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1912.nc">
+      <dataSize units="Mbytes">310.3</dataSize>
+      <date type="modified">2021-09-30T23:17:37Z</date>
+    </dataset>
+    <dataset name="s0_pct_1913.nc" ID="iu04/processed/values/day/s0_pct_1913.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1913.nc">
+      <dataSize units="Mbytes">310.1</dataSize>
+      <date type="modified">2021-09-30T23:18:26Z</date>
+    </dataset>
+    <dataset name="s0_pct_1914.nc" ID="iu04/processed/values/day/s0_pct_1914.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1914.nc">
+      <dataSize units="Mbytes">311.9</dataSize>
+      <date type="modified">2021-09-30T23:19:17Z</date>
+    </dataset>
+    <dataset name="s0_pct_1915.nc" ID="iu04/processed/values/day/s0_pct_1915.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1915.nc">
+      <dataSize units="Mbytes">312.6</dataSize>
+      <date type="modified">2021-09-30T23:20:06Z</date>
+    </dataset>
+    <dataset name="s0_pct_1916.nc" ID="iu04/processed/values/day/s0_pct_1916.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1916.nc">
+      <dataSize units="Mbytes">314.7</dataSize>
+      <date type="modified">2021-09-30T23:21:01Z</date>
+    </dataset>
+    <dataset name="s0_pct_1917.nc" ID="iu04/processed/values/day/s0_pct_1917.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1917.nc">
+      <dataSize units="Mbytes">314.3</dataSize>
+      <date type="modified">2021-09-30T23:21:53Z</date>
+    </dataset>
+    <dataset name="s0_pct_1918.nc" ID="iu04/processed/values/day/s0_pct_1918.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1918.nc">
+      <dataSize units="Mbytes">315.9</dataSize>
+      <date type="modified">2021-09-30T23:22:43Z</date>
+    </dataset>
+    <dataset name="s0_pct_1919.nc" ID="iu04/processed/values/day/s0_pct_1919.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1919.nc">
+      <dataSize units="Mbytes">316.0</dataSize>
+      <date type="modified">2021-09-30T23:23:36Z</date>
+    </dataset>
+    <dataset name="s0_pct_1920.nc" ID="iu04/processed/values/day/s0_pct_1920.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1920.nc">
+      <dataSize units="Mbytes">317.9</dataSize>
+      <date type="modified">2021-09-30T23:24:29Z</date>
+    </dataset>
+    <dataset name="s0_pct_1921.nc" ID="iu04/processed/values/day/s0_pct_1921.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1921.nc">
+      <dataSize units="Mbytes">317.6</dataSize>
+      <date type="modified">2021-09-30T23:25:22Z</date>
+    </dataset>
+    <dataset name="s0_pct_1922.nc" ID="iu04/processed/values/day/s0_pct_1922.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1922.nc">
+      <dataSize units="Mbytes">317.7</dataSize>
+      <date type="modified">2021-09-30T23:26:12Z</date>
+    </dataset>
+    <dataset name="s0_pct_1923.nc" ID="iu04/processed/values/day/s0_pct_1923.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1923.nc">
+      <dataSize units="Mbytes">317.8</dataSize>
+      <date type="modified">2021-09-30T23:27:04Z</date>
+    </dataset>
+    <dataset name="s0_pct_1924.nc" ID="iu04/processed/values/day/s0_pct_1924.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1924.nc">
+      <dataSize units="Mbytes">315.0</dataSize>
+      <date type="modified">2021-09-30T23:27:44Z</date>
+    </dataset>
+    <dataset name="s0_pct_1925.nc" ID="iu04/processed/values/day/s0_pct_1925.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1925.nc">
+      <dataSize units="Mbytes">316.1</dataSize>
+      <date type="modified">2021-09-30T23:28:30Z</date>
+    </dataset>
+    <dataset name="s0_pct_1926.nc" ID="iu04/processed/values/day/s0_pct_1926.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1926.nc">
+      <dataSize units="Mbytes">315.6</dataSize>
+      <date type="modified">2021-09-30T23:29:16Z</date>
+    </dataset>
+    <dataset name="s0_pct_1927.nc" ID="iu04/processed/values/day/s0_pct_1927.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1927.nc">
+      <dataSize units="Mbytes">316.1</dataSize>
+      <date type="modified">2021-09-30T23:30:03Z</date>
+    </dataset>
+    <dataset name="s0_pct_1928.nc" ID="iu04/processed/values/day/s0_pct_1928.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1928.nc">
+      <dataSize units="Mbytes">315.1</dataSize>
+      <date type="modified">2021-09-30T23:30:58Z</date>
+    </dataset>
+    <dataset name="s0_pct_1929.nc" ID="iu04/processed/values/day/s0_pct_1929.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1929.nc">
+      <dataSize units="Mbytes">313.8</dataSize>
+      <date type="modified">2021-09-30T23:31:37Z</date>
+    </dataset>
+    <dataset name="s0_pct_1930.nc" ID="iu04/processed/values/day/s0_pct_1930.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1930.nc">
+      <dataSize units="Mbytes">317.1</dataSize>
+      <date type="modified">2021-09-30T23:32:24Z</date>
+    </dataset>
+    <dataset name="s0_pct_1931.nc" ID="iu04/processed/values/day/s0_pct_1931.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1931.nc">
+      <dataSize units="Mbytes">317.7</dataSize>
+      <date type="modified">2021-09-30T23:33:24Z</date>
+    </dataset>
+    <dataset name="s0_pct_1932.nc" ID="iu04/processed/values/day/s0_pct_1932.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1932.nc">
+      <dataSize units="Mbytes">318.3</dataSize>
+      <date type="modified">2021-09-30T23:34:10Z</date>
+    </dataset>
+    <dataset name="s0_pct_1933.nc" ID="iu04/processed/values/day/s0_pct_1933.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1933.nc">
+      <dataSize units="Mbytes">317.6</dataSize>
+      <date type="modified">2021-09-30T23:34:57Z</date>
+    </dataset>
+    <dataset name="s0_pct_1934.nc" ID="iu04/processed/values/day/s0_pct_1934.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1934.nc">
+      <dataSize units="Mbytes">317.9</dataSize>
+      <date type="modified">2021-09-30T23:35:50Z</date>
+    </dataset>
+    <dataset name="s0_pct_1935.nc" ID="iu04/processed/values/day/s0_pct_1935.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1935.nc">
+      <dataSize units="Mbytes">319.4</dataSize>
+      <date type="modified">2021-09-30T23:36:37Z</date>
+    </dataset>
+    <dataset name="s0_pct_1936.nc" ID="iu04/processed/values/day/s0_pct_1936.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1936.nc">
+      <dataSize units="Mbytes">318.6</dataSize>
+      <date type="modified">2021-09-30T23:37:26Z</date>
+    </dataset>
+    <dataset name="s0_pct_1937.nc" ID="iu04/processed/values/day/s0_pct_1937.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1937.nc">
+      <dataSize units="Mbytes">321.1</dataSize>
+      <date type="modified">2021-09-30T23:38:27Z</date>
+    </dataset>
+    <dataset name="s0_pct_1938.nc" ID="iu04/processed/values/day/s0_pct_1938.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1938.nc">
+      <dataSize units="Mbytes">322.6</dataSize>
+      <date type="modified">2021-09-30T23:39:23Z</date>
+    </dataset>
+    <dataset name="s0_pct_1939.nc" ID="iu04/processed/values/day/s0_pct_1939.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1939.nc">
+      <dataSize units="Mbytes">322.0</dataSize>
+      <date type="modified">2021-09-30T23:40:24Z</date>
+    </dataset>
+    <dataset name="s0_pct_1940.nc" ID="iu04/processed/values/day/s0_pct_1940.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1940.nc">
+      <dataSize units="Mbytes">323.4</dataSize>
+      <date type="modified">2021-09-30T23:41:16Z</date>
+    </dataset>
+    <dataset name="s0_pct_1941.nc" ID="iu04/processed/values/day/s0_pct_1941.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1941.nc">
+      <dataSize units="Mbytes">332.5</dataSize>
+      <date type="modified">2021-09-30T23:41:54Z</date>
+    </dataset>
+    <dataset name="s0_pct_1942.nc" ID="iu04/processed/values/day/s0_pct_1942.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1942.nc">
+      <dataSize units="Mbytes">333.3</dataSize>
+      <date type="modified">2021-09-30T23:42:45Z</date>
+    </dataset>
+    <dataset name="s0_pct_1943.nc" ID="iu04/processed/values/day/s0_pct_1943.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1943.nc">
+      <dataSize units="Mbytes">333.1</dataSize>
+      <date type="modified">2021-09-30T23:43:33Z</date>
+    </dataset>
+    <dataset name="s0_pct_1944.nc" ID="iu04/processed/values/day/s0_pct_1944.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1944.nc">
+      <dataSize units="Mbytes">333.0</dataSize>
+      <date type="modified">2021-09-30T23:44:27Z</date>
+    </dataset>
+    <dataset name="s0_pct_1945.nc" ID="iu04/processed/values/day/s0_pct_1945.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1945.nc">
+      <dataSize units="Mbytes">332.5</dataSize>
+      <date type="modified">2021-09-30T23:45:24Z</date>
+    </dataset>
+    <dataset name="s0_pct_1946.nc" ID="iu04/processed/values/day/s0_pct_1946.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1946.nc">
+      <dataSize units="Mbytes">324.3</dataSize>
+      <date type="modified">2021-09-30T23:46:18Z</date>
+    </dataset>
+    <dataset name="s0_pct_1947.nc" ID="iu04/processed/values/day/s0_pct_1947.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1947.nc">
+      <dataSize units="Mbytes">331.6</dataSize>
+      <date type="modified">2021-09-30T23:47:11Z</date>
+    </dataset>
+    <dataset name="s0_pct_1948.nc" ID="iu04/processed/values/day/s0_pct_1948.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1948.nc">
+      <dataSize units="Mbytes">330.7</dataSize>
+      <date type="modified">2021-09-30T23:48:03Z</date>
+    </dataset>
+    <dataset name="s0_pct_1949.nc" ID="iu04/processed/values/day/s0_pct_1949.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1949.nc">
+      <dataSize units="Mbytes">332.4</dataSize>
+      <date type="modified">2021-09-30T23:48:55Z</date>
+    </dataset>
+    <dataset name="s0_pct_1950.nc" ID="iu04/processed/values/day/s0_pct_1950.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1950.nc">
+      <dataSize units="Mbytes">296.3</dataSize>
+      <date type="modified">2021-09-30T23:49:35Z</date>
+    </dataset>
+    <dataset name="s0_pct_1951.nc" ID="iu04/processed/values/day/s0_pct_1951.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1951.nc">
+      <dataSize units="Mbytes">331.9</dataSize>
+      <date type="modified">2021-09-30T23:50:26Z</date>
+    </dataset>
+    <dataset name="s0_pct_1952.nc" ID="iu04/processed/values/day/s0_pct_1952.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1952.nc">
+      <dataSize units="Mbytes">332.6</dataSize>
+      <date type="modified">2021-09-30T23:51:06Z</date>
+    </dataset>
+    <dataset name="s0_pct_1953.nc" ID="iu04/processed/values/day/s0_pct_1953.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1953.nc">
+      <dataSize units="Mbytes">332.4</dataSize>
+      <date type="modified">2021-09-30T23:51:58Z</date>
+    </dataset>
+    <dataset name="s0_pct_1954.nc" ID="iu04/processed/values/day/s0_pct_1954.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1954.nc">
+      <dataSize units="Mbytes">333.5</dataSize>
+      <date type="modified">2021-09-30T23:52:52Z</date>
+    </dataset>
+    <dataset name="s0_pct_1955.nc" ID="iu04/processed/values/day/s0_pct_1955.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1955.nc">
+      <dataSize units="Mbytes">333.1</dataSize>
+      <date type="modified">2021-09-30T23:53:43Z</date>
+    </dataset>
+    <dataset name="s0_pct_1956.nc" ID="iu04/processed/values/day/s0_pct_1956.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1956.nc">
+      <dataSize units="Mbytes">334.5</dataSize>
+      <date type="modified">2021-09-30T23:54:42Z</date>
+    </dataset>
+    <dataset name="s0_pct_1957.nc" ID="iu04/processed/values/day/s0_pct_1957.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1957.nc">
+      <dataSize units="Mbytes">334.8</dataSize>
+      <date type="modified">2021-09-30T23:55:26Z</date>
+    </dataset>
+    <dataset name="s0_pct_1958.nc" ID="iu04/processed/values/day/s0_pct_1958.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1958.nc">
+      <dataSize units="Mbytes">334.6</dataSize>
+      <date type="modified">2021-09-30T23:56:21Z</date>
+    </dataset>
+    <dataset name="s0_pct_1959.nc" ID="iu04/processed/values/day/s0_pct_1959.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1959.nc">
+      <dataSize units="Mbytes">330.2</dataSize>
+      <date type="modified">2021-09-30T23:57:18Z</date>
+    </dataset>
+    <dataset name="s0_pct_1960.nc" ID="iu04/processed/values/day/s0_pct_1960.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1960.nc">
+      <dataSize units="Mbytes">335.5</dataSize>
+      <date type="modified">2021-09-30T23:58:11Z</date>
+    </dataset>
+    <dataset name="s0_pct_1961.nc" ID="iu04/processed/values/day/s0_pct_1961.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1961.nc">
+      <dataSize units="Mbytes">332.9</dataSize>
+      <date type="modified">2021-09-30T23:59:07Z</date>
+    </dataset>
+    <dataset name="s0_pct_1962.nc" ID="iu04/processed/values/day/s0_pct_1962.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1962.nc">
+      <dataSize units="Mbytes">334.6</dataSize>
+      <date type="modified">2021-10-01T00:00:02Z</date>
+    </dataset>
+    <dataset name="s0_pct_1963.nc" ID="iu04/processed/values/day/s0_pct_1963.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1963.nc">
+      <dataSize units="Mbytes">333.8</dataSize>
+      <date type="modified">2021-10-01T00:00:55Z</date>
+    </dataset>
+    <dataset name="s0_pct_1964.nc" ID="iu04/processed/values/day/s0_pct_1964.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1964.nc">
+      <dataSize units="Mbytes">334.6</dataSize>
+      <date type="modified">2021-10-01T00:01:59Z</date>
+    </dataset>
+    <dataset name="s0_pct_1965.nc" ID="iu04/processed/values/day/s0_pct_1965.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1965.nc">
+      <dataSize units="Mbytes">331.2</dataSize>
+      <date type="modified">2021-10-01T00:02:59Z</date>
+    </dataset>
+    <dataset name="s0_pct_1966.nc" ID="iu04/processed/values/day/s0_pct_1966.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1966.nc">
+      <dataSize units="Mbytes">334.9</dataSize>
+      <date type="modified">2021-10-01T00:03:38Z</date>
+    </dataset>
+    <dataset name="s0_pct_1967.nc" ID="iu04/processed/values/day/s0_pct_1967.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1967.nc">
+      <dataSize units="Mbytes">332.6</dataSize>
+      <date type="modified">2021-10-01T00:04:40Z</date>
+    </dataset>
+    <dataset name="s0_pct_1968.nc" ID="iu04/processed/values/day/s0_pct_1968.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1968.nc">
+      <dataSize units="Mbytes">335.6</dataSize>
+      <date type="modified">2021-10-01T00:05:33Z</date>
+    </dataset>
+    <dataset name="s0_pct_1969.nc" ID="iu04/processed/values/day/s0_pct_1969.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1969.nc">
+      <dataSize units="Mbytes">335.1</dataSize>
+      <date type="modified">2021-10-01T00:06:28Z</date>
+    </dataset>
+    <dataset name="s0_pct_1970.nc" ID="iu04/processed/values/day/s0_pct_1970.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1970.nc">
+      <dataSize units="Mbytes">334.6</dataSize>
+      <date type="modified">2021-10-01T00:07:34Z</date>
+    </dataset>
+    <dataset name="s0_pct_1971.nc" ID="iu04/processed/values/day/s0_pct_1971.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1971.nc">
+      <dataSize units="Mbytes">335.5</dataSize>
+      <date type="modified">2021-10-01T00:08:27Z</date>
+    </dataset>
+    <dataset name="s0_pct_1972.nc" ID="iu04/processed/values/day/s0_pct_1972.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1972.nc">
+      <dataSize units="Mbytes">336.3</dataSize>
+      <date type="modified">2021-10-01T00:09:29Z</date>
+    </dataset>
+    <dataset name="s0_pct_1973.nc" ID="iu04/processed/values/day/s0_pct_1973.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1973.nc">
+      <dataSize units="Mbytes">335.4</dataSize>
+      <date type="modified">2021-10-01T00:10:21Z</date>
+    </dataset>
+    <dataset name="s0_pct_1974.nc" ID="iu04/processed/values/day/s0_pct_1974.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1974.nc">
+      <dataSize units="Mbytes">336.1</dataSize>
+      <date type="modified">2021-10-01T00:11:19Z</date>
+    </dataset>
+    <dataset name="s0_pct_1975.nc" ID="iu04/processed/values/day/s0_pct_1975.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1975.nc">
+      <dataSize units="Mbytes">336.8</dataSize>
+      <date type="modified">2021-10-01T00:12:04Z</date>
+    </dataset>
+    <dataset name="s0_pct_1976.nc" ID="iu04/processed/values/day/s0_pct_1976.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1976.nc">
+      <dataSize units="Mbytes">335.6</dataSize>
+      <date type="modified">2021-10-01T00:12:59Z</date>
+    </dataset>
+    <dataset name="s0_pct_1977.nc" ID="iu04/processed/values/day/s0_pct_1977.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1977.nc">
+      <dataSize units="Mbytes">334.4</dataSize>
+      <date type="modified">2021-10-01T00:13:48Z</date>
+    </dataset>
+    <dataset name="s0_pct_1978.nc" ID="iu04/processed/values/day/s0_pct_1978.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1978.nc">
+      <dataSize units="Mbytes">336.1</dataSize>
+      <date type="modified">2021-10-01T00:14:38Z</date>
+    </dataset>
+    <dataset name="s0_pct_1979.nc" ID="iu04/processed/values/day/s0_pct_1979.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1979.nc">
+      <dataSize units="Mbytes">334.8</dataSize>
+      <date type="modified">2021-10-01T00:15:30Z</date>
+    </dataset>
+    <dataset name="s0_pct_1980.nc" ID="iu04/processed/values/day/s0_pct_1980.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1980.nc">
+      <dataSize units="Mbytes">336.3</dataSize>
+      <date type="modified">2021-10-01T00:16:29Z</date>
+    </dataset>
+    <dataset name="s0_pct_1981.nc" ID="iu04/processed/values/day/s0_pct_1981.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1981.nc">
+      <dataSize units="Mbytes">334.7</dataSize>
+      <date type="modified">2021-10-01T00:17:16Z</date>
+    </dataset>
+    <dataset name="s0_pct_1982.nc" ID="iu04/processed/values/day/s0_pct_1982.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1982.nc">
+      <dataSize units="Mbytes">335.3</dataSize>
+      <date type="modified">2021-10-01T00:18:17Z</date>
+    </dataset>
+    <dataset name="s0_pct_1983.nc" ID="iu04/processed/values/day/s0_pct_1983.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1983.nc">
+      <dataSize units="Mbytes">335.9</dataSize>
+      <date type="modified">2021-10-01T00:19:12Z</date>
+    </dataset>
+    <dataset name="s0_pct_1984.nc" ID="iu04/processed/values/day/s0_pct_1984.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1984.nc">
+      <dataSize units="Mbytes">337.4</dataSize>
+      <date type="modified">2021-10-01T00:20:08Z</date>
+    </dataset>
+    <dataset name="s0_pct_1985.nc" ID="iu04/processed/values/day/s0_pct_1985.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1985.nc">
+      <dataSize units="Mbytes">336.2</dataSize>
+      <date type="modified">2021-10-01T00:21:01Z</date>
+    </dataset>
+    <dataset name="s0_pct_1986.nc" ID="iu04/processed/values/day/s0_pct_1986.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1986.nc">
+      <dataSize units="Mbytes">335.8</dataSize>
+      <date type="modified">2021-10-01T00:21:46Z</date>
+    </dataset>
+    <dataset name="s0_pct_1987.nc" ID="iu04/processed/values/day/s0_pct_1987.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1987.nc">
+      <dataSize units="Mbytes">336.1</dataSize>
+      <date type="modified">2021-10-01T00:22:47Z</date>
+    </dataset>
+    <dataset name="s0_pct_1988.nc" ID="iu04/processed/values/day/s0_pct_1988.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1988.nc">
+      <dataSize units="Mbytes">337.4</dataSize>
+      <date type="modified">2021-10-20T23:29:17Z</date>
+    </dataset>
+    <dataset name="s0_pct_1989.nc" ID="iu04/processed/values/day/s0_pct_1989.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1989.nc">
+      <dataSize units="Mbytes">334.6</dataSize>
+      <date type="modified">2021-10-01T00:24:26Z</date>
+    </dataset>
+    <dataset name="s0_pct_1990.nc" ID="iu04/processed/values/day/s0_pct_1990.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1990.nc">
+      <dataSize units="Mbytes">334.5</dataSize>
+      <date type="modified">2021-10-01T00:25:20Z</date>
+    </dataset>
+    <dataset name="s0_pct_1991.nc" ID="iu04/processed/values/day/s0_pct_1991.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1991.nc">
+      <dataSize units="Mbytes">334.2</dataSize>
+      <date type="modified">2021-10-01T00:26:10Z</date>
+    </dataset>
+    <dataset name="s0_pct_1992.nc" ID="iu04/processed/values/day/s0_pct_1992.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1992.nc">
+      <dataSize units="Mbytes">335.6</dataSize>
+      <date type="modified">2021-10-01T00:26:58Z</date>
+    </dataset>
+    <dataset name="s0_pct_1993.nc" ID="iu04/processed/values/day/s0_pct_1993.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1993.nc">
+      <dataSize units="Mbytes">334.7</dataSize>
+      <date type="modified">2021-10-01T00:27:46Z</date>
+    </dataset>
+    <dataset name="s0_pct_1994.nc" ID="iu04/processed/values/day/s0_pct_1994.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1994.nc">
+      <dataSize units="Mbytes">334.1</dataSize>
+      <date type="modified">2021-10-01T00:28:40Z</date>
+    </dataset>
+    <dataset name="s0_pct_1995.nc" ID="iu04/processed/values/day/s0_pct_1995.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1995.nc">
+      <dataSize units="Mbytes">335.0</dataSize>
+      <date type="modified">2021-10-01T00:29:36Z</date>
+    </dataset>
+    <dataset name="s0_pct_1996.nc" ID="iu04/processed/values/day/s0_pct_1996.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1996.nc">
+      <dataSize units="Mbytes">335.9</dataSize>
+      <date type="modified">2021-10-01T00:30:26Z</date>
+    </dataset>
+    <dataset name="s0_pct_1997.nc" ID="iu04/processed/values/day/s0_pct_1997.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1997.nc">
+      <dataSize units="Mbytes">335.3</dataSize>
+      <date type="modified">2021-10-01T00:31:19Z</date>
+    </dataset>
+    <dataset name="s0_pct_1998.nc" ID="iu04/processed/values/day/s0_pct_1998.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1998.nc">
+      <dataSize units="Mbytes">336.5</dataSize>
+      <date type="modified">2021-10-01T00:32:12Z</date>
+    </dataset>
+    <dataset name="s0_pct_1999.nc" ID="iu04/processed/values/day/s0_pct_1999.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_1999.nc">
+      <dataSize units="Mbytes">336.7</dataSize>
+      <date type="modified">2021-10-01T00:33:11Z</date>
+    </dataset>
+    <dataset name="s0_pct_2000.nc" ID="iu04/processed/values/day/s0_pct_2000.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2000.nc">
+      <dataSize units="Mbytes">337.8</dataSize>
+      <date type="modified">2021-10-01T00:34:04Z</date>
+    </dataset>
+    <dataset name="s0_pct_2001.nc" ID="iu04/processed/values/day/s0_pct_2001.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2001.nc">
+      <dataSize units="Mbytes">337.0</dataSize>
+      <date type="modified">2021-10-01T00:34:50Z</date>
+    </dataset>
+    <dataset name="s0_pct_2002.nc" ID="iu04/processed/values/day/s0_pct_2002.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2002.nc">
+      <dataSize units="Mbytes">334.6</dataSize>
+      <date type="modified">2021-10-01T00:35:47Z</date>
+    </dataset>
+    <dataset name="s0_pct_2003.nc" ID="iu04/processed/values/day/s0_pct_2003.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2003.nc">
+      <dataSize units="Mbytes">336.5</dataSize>
+      <date type="modified">2021-10-01T00:36:38Z</date>
+    </dataset>
+    <dataset name="s0_pct_2004.nc" ID="iu04/processed/values/day/s0_pct_2004.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2004.nc">
+      <dataSize units="Mbytes">339.0</dataSize>
+      <date type="modified">2021-10-01T00:37:33Z</date>
+    </dataset>
+    <dataset name="s0_pct_2005.nc" ID="iu04/processed/values/day/s0_pct_2005.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2005.nc">
+      <dataSize units="Mbytes">337.1</dataSize>
+      <date type="modified">2021-10-01T00:38:30Z</date>
+    </dataset>
+    <dataset name="s0_pct_2006.nc" ID="iu04/processed/values/day/s0_pct_2006.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2006.nc">
+      <dataSize units="Mbytes">337.7</dataSize>
+      <date type="modified">2021-10-01T00:39:39Z</date>
+    </dataset>
+    <dataset name="s0_pct_2007.nc" ID="iu04/processed/values/day/s0_pct_2007.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2007.nc">
+      <dataSize units="Mbytes">337.6</dataSize>
+      <date type="modified">2021-10-01T00:40:38Z</date>
+    </dataset>
+    <dataset name="s0_pct_2008.nc" ID="iu04/processed/values/day/s0_pct_2008.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2008.nc">
+      <dataSize units="Mbytes">337.3</dataSize>
+      <date type="modified">2021-10-01T00:41:20Z</date>
+    </dataset>
+    <dataset name="s0_pct_2009.nc" ID="iu04/processed/values/day/s0_pct_2009.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2009.nc">
+      <dataSize units="Mbytes">336.9</dataSize>
+      <date type="modified">2021-10-01T00:42:10Z</date>
+    </dataset>
+    <dataset name="s0_pct_2010.nc" ID="iu04/processed/values/day/s0_pct_2010.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2010.nc">
+      <dataSize units="Mbytes">336.3</dataSize>
+      <date type="modified">2021-10-01T00:42:58Z</date>
+    </dataset>
+    <dataset name="s0_pct_2011.nc" ID="iu04/processed/values/day/s0_pct_2011.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2011.nc">
+      <dataSize units="Mbytes">336.9</dataSize>
+      <date type="modified">2021-10-01T00:43:53Z</date>
+    </dataset>
+    <dataset name="s0_pct_2012.nc" ID="iu04/processed/values/day/s0_pct_2012.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2012.nc">
+      <dataSize units="Mbytes">337.9</dataSize>
+      <date type="modified">2021-10-01T00:44:41Z</date>
+    </dataset>
+    <dataset name="s0_pct_2013.nc" ID="iu04/processed/values/day/s0_pct_2013.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2013.nc">
+      <dataSize units="Mbytes">337.5</dataSize>
+      <date type="modified">2021-10-01T00:45:37Z</date>
+    </dataset>
+    <dataset name="s0_pct_2014.nc" ID="iu04/processed/values/day/s0_pct_2014.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2014.nc">
+      <dataSize units="Mbytes">336.8</dataSize>
+      <date type="modified">2021-10-01T00:46:30Z</date>
+    </dataset>
+    <dataset name="s0_pct_2015.nc" ID="iu04/processed/values/day/s0_pct_2015.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2015.nc">
+      <dataSize units="Mbytes">354.5</dataSize>
+      <date type="modified">2022-01-29T06:26:48Z</date>
+    </dataset>
+    <dataset name="s0_pct_2016.nc" ID="iu04/processed/values/day/s0_pct_2016.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2016.nc">
+      <dataSize units="Mbytes">366.5</dataSize>
+      <date type="modified">2022-02-01T18:09:47Z</date>
+    </dataset>
+    <dataset name="s0_pct_2017.nc" ID="iu04/processed/values/day/s0_pct_2017.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2017.nc">
+      <dataSize units="Mbytes">372.8</dataSize>
+      <date type="modified">2022-02-01T18:10:57Z</date>
+    </dataset>
+    <dataset name="s0_pct_2018.nc" ID="iu04/processed/values/day/s0_pct_2018.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2018.nc">
+      <dataSize units="Mbytes">402.1</dataSize>
+      <date type="modified">2022-02-01T18:11:41Z</date>
+    </dataset>
+    <dataset name="s0_pct_2019.nc" ID="iu04/processed/values/day/s0_pct_2019.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2019.nc">
+      <dataSize units="Mbytes">409.0</dataSize>
+      <date type="modified">2022-02-01T18:12:34Z</date>
+    </dataset>
+    <dataset name="s0_pct_2020.nc" ID="iu04/processed/values/day/s0_pct_2020.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2020.nc">
+      <dataSize units="Mbytes">337.6</dataSize>
+      <date type="modified">2024-06-02T14:58:47Z</date>
+    </dataset>
+    <dataset name="s0_pct_2021.nc" ID="iu04/processed/values/day/s0_pct_2021.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2021.nc">
+      <dataSize units="Mbytes">336.7</dataSize>
+      <date type="modified">2024-06-02T14:58:52Z</date>
+    </dataset>
+    <dataset name="s0_pct_2022.nc" ID="iu04/processed/values/day/s0_pct_2022.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2022.nc">
+      <dataSize units="Mbytes">336.7</dataSize>
+      <date type="modified">2024-06-02T14:58:58Z</date>
+    </dataset>
+    <dataset name="s0_pct_2023.nc" ID="iu04/processed/values/day/s0_pct_2023.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2023.nc">
+      <dataSize units="Mbytes">337.3</dataSize>
+      <date type="modified">2024-09-02T13:56:25Z</date>
+    </dataset>
+    <dataset name="s0_pct_2024.nc" ID="iu04/processed/values/day/s0_pct_2024.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2024.nc">
+      <dataSize units="Mbytes">337.5</dataSize>
+      <date type="modified">2025-07-02T14:23:21Z</date>
+    </dataset>
+    <dataset name="s0_pct_2025.nc" ID="iu04/processed/values/day/s0_pct_2025.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2025.nc">
+      <dataSize units="Mbytes">336.5</dataSize>
+      <date type="modified">2026-07-02T13:19:52Z</date>
+    </dataset>
+    <dataset name="s0_pct_2026.nc" ID="iu04/processed/values/day/s0_pct_2026.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/s0_pct_2026.nc">
+      <dataSize units="Mbytes">964.4</dataSize>
+      <date type="modified">2026-10-30T13:52:41Z</date>
+    </dataset>
+    <dataset name="sd_pct_1911.nc" ID="iu04/processed/values/day/sd_pct_1911.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1911.nc">
+      <dataSize units="Mbytes">281.4</dataSize>
+      <date type="modified">2021-10-01T02:28:11Z</date>
+    </dataset>
+    <dataset name="sd_pct_1912.nc" ID="iu04/processed/values/day/sd_pct_1912.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1912.nc">
+      <dataSize units="Mbytes">279.8</dataSize>
+      <date type="modified">2021-10-01T02:29:04Z</date>
+    </dataset>
+    <dataset name="sd_pct_1913.nc" ID="iu04/processed/values/day/sd_pct_1913.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1913.nc">
+      <dataSize units="Mbytes">277.1</dataSize>
+      <date type="modified">2021-10-01T02:29:49Z</date>
+    </dataset>
+    <dataset name="sd_pct_1914.nc" ID="iu04/processed/values/day/sd_pct_1914.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1914.nc">
+      <dataSize units="Mbytes">273.8</dataSize>
+      <date type="modified">2021-10-01T02:30:46Z</date>
+    </dataset>
+    <dataset name="sd_pct_1915.nc" ID="iu04/processed/values/day/sd_pct_1915.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1915.nc">
+      <dataSize units="Mbytes">276.5</dataSize>
+      <date type="modified">2021-10-01T02:31:37Z</date>
+    </dataset>
+    <dataset name="sd_pct_1916.nc" ID="iu04/processed/values/day/sd_pct_1916.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1916.nc">
+      <dataSize units="Mbytes">278.0</dataSize>
+      <date type="modified">2021-10-01T02:32:28Z</date>
+    </dataset>
+    <dataset name="sd_pct_1917.nc" ID="iu04/processed/values/day/sd_pct_1917.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1917.nc">
+      <dataSize units="Mbytes">279.7</dataSize>
+      <date type="modified">2021-10-01T02:33:09Z</date>
+    </dataset>
+    <dataset name="sd_pct_1918.nc" ID="iu04/processed/values/day/sd_pct_1918.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1918.nc">
+      <dataSize units="Mbytes">279.2</dataSize>
+      <date type="modified">2021-10-01T02:34:07Z</date>
+    </dataset>
+    <dataset name="sd_pct_1919.nc" ID="iu04/processed/values/day/sd_pct_1919.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1919.nc">
+      <dataSize units="Mbytes">274.9</dataSize>
+      <date type="modified">2021-10-01T02:34:58Z</date>
+    </dataset>
+    <dataset name="sd_pct_1920.nc" ID="iu04/processed/values/day/sd_pct_1920.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1920.nc">
+      <dataSize units="Mbytes">276.8</dataSize>
+      <date type="modified">2021-10-01T02:35:49Z</date>
+    </dataset>
+    <dataset name="sd_pct_1921.nc" ID="iu04/processed/values/day/sd_pct_1921.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1921.nc">
+      <dataSize units="Mbytes">282.2</dataSize>
+      <date type="modified">2021-10-01T02:36:34Z</date>
+    </dataset>
+    <dataset name="sd_pct_1922.nc" ID="iu04/processed/values/day/sd_pct_1922.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1922.nc">
+      <dataSize units="Mbytes">278.1</dataSize>
+      <date type="modified">2021-10-01T02:37:35Z</date>
+    </dataset>
+    <dataset name="sd_pct_1923.nc" ID="iu04/processed/values/day/sd_pct_1923.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1923.nc">
+      <dataSize units="Mbytes">277.2</dataSize>
+      <date type="modified">2021-10-01T02:38:18Z</date>
+    </dataset>
+    <dataset name="sd_pct_1924.nc" ID="iu04/processed/values/day/sd_pct_1924.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1924.nc">
+      <dataSize units="Mbytes">273.4</dataSize>
+      <date type="modified">2021-10-01T02:39:24Z</date>
+    </dataset>
+    <dataset name="sd_pct_1925.nc" ID="iu04/processed/values/day/sd_pct_1925.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1925.nc">
+      <dataSize units="Mbytes">275.0</dataSize>
+      <date type="modified">2021-10-01T02:40:17Z</date>
+    </dataset>
+    <dataset name="sd_pct_1926.nc" ID="iu04/processed/values/day/sd_pct_1926.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1926.nc">
+      <dataSize units="Mbytes">276.9</dataSize>
+      <date type="modified">2021-10-01T02:41:07Z</date>
+    </dataset>
+    <dataset name="sd_pct_1927.nc" ID="iu04/processed/values/day/sd_pct_1927.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1927.nc">
+      <dataSize units="Mbytes">275.8</dataSize>
+      <date type="modified">2021-10-01T02:41:52Z</date>
+    </dataset>
+    <dataset name="sd_pct_1928.nc" ID="iu04/processed/values/day/sd_pct_1928.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1928.nc">
+      <dataSize units="Mbytes">273.1</dataSize>
+      <date type="modified">2021-10-01T02:42:26Z</date>
+    </dataset>
+    <dataset name="sd_pct_1929.nc" ID="iu04/processed/values/day/sd_pct_1929.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1929.nc">
+      <dataSize units="Mbytes">272.6</dataSize>
+      <date type="modified">2021-10-01T02:43:21Z</date>
+    </dataset>
+    <dataset name="sd_pct_1930.nc" ID="iu04/processed/values/day/sd_pct_1930.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1930.nc">
+      <dataSize units="Mbytes">274.5</dataSize>
+      <date type="modified">2021-10-01T02:44:03Z</date>
+    </dataset>
+    <dataset name="sd_pct_1931.nc" ID="iu04/processed/values/day/sd_pct_1931.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1931.nc">
+      <dataSize units="Mbytes">278.8</dataSize>
+      <date type="modified">2021-10-01T02:44:45Z</date>
+    </dataset>
+    <dataset name="sd_pct_1932.nc" ID="iu04/processed/values/day/sd_pct_1932.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1932.nc">
+      <dataSize units="Mbytes">275.1</dataSize>
+      <date type="modified">2021-10-01T02:45:22Z</date>
+    </dataset>
+    <dataset name="sd_pct_1933.nc" ID="iu04/processed/values/day/sd_pct_1933.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1933.nc">
+      <dataSize units="Mbytes">272.4</dataSize>
+      <date type="modified">2021-10-01T02:46:00Z</date>
+    </dataset>
+    <dataset name="sd_pct_1934.nc" ID="iu04/processed/values/day/sd_pct_1934.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1934.nc">
+      <dataSize units="Mbytes">274.3</dataSize>
+      <date type="modified">2021-10-01T02:46:53Z</date>
+    </dataset>
+    <dataset name="sd_pct_1935.nc" ID="iu04/processed/values/day/sd_pct_1935.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1935.nc">
+      <dataSize units="Mbytes">271.6</dataSize>
+      <date type="modified">2021-10-01T02:47:33Z</date>
+    </dataset>
+    <dataset name="sd_pct_1936.nc" ID="iu04/processed/values/day/sd_pct_1936.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1936.nc">
+      <dataSize units="Mbytes">274.6</dataSize>
+      <date type="modified">2021-10-01T02:48:18Z</date>
+    </dataset>
+    <dataset name="sd_pct_1937.nc" ID="iu04/processed/values/day/sd_pct_1937.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1937.nc">
+      <dataSize units="Mbytes">273.8</dataSize>
+      <date type="modified">2021-10-01T02:49:03Z</date>
+    </dataset>
+    <dataset name="sd_pct_1938.nc" ID="iu04/processed/values/day/sd_pct_1938.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1938.nc">
+      <dataSize units="Mbytes">273.4</dataSize>
+      <date type="modified">2021-10-01T02:49:46Z</date>
+    </dataset>
+    <dataset name="sd_pct_1939.nc" ID="iu04/processed/values/day/sd_pct_1939.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1939.nc">
+      <dataSize units="Mbytes">277.4</dataSize>
+      <date type="modified">2021-10-01T02:50:42Z</date>
+    </dataset>
+    <dataset name="sd_pct_1940.nc" ID="iu04/processed/values/day/sd_pct_1940.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1940.nc">
+      <dataSize units="Mbytes">277.4</dataSize>
+      <date type="modified">2021-10-01T02:51:19Z</date>
+    </dataset>
+    <dataset name="sd_pct_1941.nc" ID="iu04/processed/values/day/sd_pct_1941.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1941.nc">
+      <dataSize units="Mbytes">275.9</dataSize>
+      <date type="modified">2021-10-01T02:52:07Z</date>
+    </dataset>
+    <dataset name="sd_pct_1942.nc" ID="iu04/processed/values/day/sd_pct_1942.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1942.nc">
+      <dataSize units="Mbytes">280.8</dataSize>
+      <date type="modified">2021-10-01T02:52:49Z</date>
+    </dataset>
+    <dataset name="sd_pct_1943.nc" ID="iu04/processed/values/day/sd_pct_1943.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1943.nc">
+      <dataSize units="Mbytes">276.3</dataSize>
+      <date type="modified">2021-10-01T02:53:34Z</date>
+    </dataset>
+    <dataset name="sd_pct_1944.nc" ID="iu04/processed/values/day/sd_pct_1944.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1944.nc">
+      <dataSize units="Mbytes">276.6</dataSize>
+      <date type="modified">2021-10-01T02:54:10Z</date>
+    </dataset>
+    <dataset name="sd_pct_1945.nc" ID="iu04/processed/values/day/sd_pct_1945.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1945.nc">
+      <dataSize units="Mbytes">275.5</dataSize>
+      <date type="modified">2021-10-01T02:54:57Z</date>
+    </dataset>
+    <dataset name="sd_pct_1946.nc" ID="iu04/processed/values/day/sd_pct_1946.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1946.nc">
+      <dataSize units="Mbytes">277.8</dataSize>
+      <date type="modified">2021-10-01T02:55:37Z</date>
+    </dataset>
+    <dataset name="sd_pct_1947.nc" ID="iu04/processed/values/day/sd_pct_1947.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1947.nc">
+      <dataSize units="Mbytes">275.6</dataSize>
+      <date type="modified">2021-10-01T02:56:33Z</date>
+    </dataset>
+    <dataset name="sd_pct_1948.nc" ID="iu04/processed/values/day/sd_pct_1948.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1948.nc">
+      <dataSize units="Mbytes">275.8</dataSize>
+      <date type="modified">2021-10-01T02:57:18Z</date>
+    </dataset>
+    <dataset name="sd_pct_1949.nc" ID="iu04/processed/values/day/sd_pct_1949.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1949.nc">
+      <dataSize units="Mbytes">276.5</dataSize>
+      <date type="modified">2021-10-01T02:58:12Z</date>
+    </dataset>
+    <dataset name="sd_pct_1950.nc" ID="iu04/processed/values/day/sd_pct_1950.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1950.nc">
+      <dataSize units="Mbytes">278.1</dataSize>
+      <date type="modified">2021-10-01T02:59:02Z</date>
+    </dataset>
+    <dataset name="sd_pct_1951.nc" ID="iu04/processed/values/day/sd_pct_1951.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1951.nc">
+      <dataSize units="Mbytes">280.6</dataSize>
+      <date type="modified">2021-10-01T02:59:46Z</date>
+    </dataset>
+    <dataset name="sd_pct_1952.nc" ID="iu04/processed/values/day/sd_pct_1952.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1952.nc">
+      <dataSize units="Mbytes">275.8</dataSize>
+      <date type="modified">2021-10-01T03:00:33Z</date>
+    </dataset>
+    <dataset name="sd_pct_1953.nc" ID="iu04/processed/values/day/sd_pct_1953.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1953.nc">
+      <dataSize units="Mbytes">278.5</dataSize>
+      <date type="modified">2021-10-01T03:01:26Z</date>
+    </dataset>
+    <dataset name="sd_pct_1954.nc" ID="iu04/processed/values/day/sd_pct_1954.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1954.nc">
+      <dataSize units="Mbytes">274.6</dataSize>
+      <date type="modified">2021-10-01T03:02:08Z</date>
+    </dataset>
+    <dataset name="sd_pct_1955.nc" ID="iu04/processed/values/day/sd_pct_1955.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1955.nc">
+      <dataSize units="Mbytes">280.4</dataSize>
+      <date type="modified">2021-10-01T03:02:57Z</date>
+    </dataset>
+    <dataset name="sd_pct_1956.nc" ID="iu04/processed/values/day/sd_pct_1956.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1956.nc">
+      <dataSize units="Mbytes">284.4</dataSize>
+      <date type="modified">2021-10-01T03:03:56Z</date>
+    </dataset>
+    <dataset name="sd_pct_1957.nc" ID="iu04/processed/values/day/sd_pct_1957.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1957.nc">
+      <dataSize units="Mbytes">279.8</dataSize>
+      <date type="modified">2021-10-01T03:04:43Z</date>
+    </dataset>
+    <dataset name="sd_pct_1958.nc" ID="iu04/processed/values/day/sd_pct_1958.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1958.nc">
+      <dataSize units="Mbytes">276.7</dataSize>
+      <date type="modified">2021-10-01T03:05:34Z</date>
+    </dataset>
+    <dataset name="sd_pct_1959.nc" ID="iu04/processed/values/day/sd_pct_1959.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1959.nc">
+      <dataSize units="Mbytes">273.7</dataSize>
+      <date type="modified">2021-10-01T03:06:27Z</date>
+    </dataset>
+    <dataset name="sd_pct_1960.nc" ID="iu04/processed/values/day/sd_pct_1960.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1960.nc">
+      <dataSize units="Mbytes">279.5</dataSize>
+      <date type="modified">2021-10-01T03:07:12Z</date>
+    </dataset>
+    <dataset name="sd_pct_1961.nc" ID="iu04/processed/values/day/sd_pct_1961.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1961.nc">
+      <dataSize units="Mbytes">275.9</dataSize>
+      <date type="modified">2021-10-01T03:07:54Z</date>
+    </dataset>
+    <dataset name="sd_pct_1962.nc" ID="iu04/processed/values/day/sd_pct_1962.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1962.nc">
+      <dataSize units="Mbytes">275.9</dataSize>
+      <date type="modified">2021-10-01T03:08:51Z</date>
+    </dataset>
+    <dataset name="sd_pct_1963.nc" ID="iu04/processed/values/day/sd_pct_1963.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1963.nc">
+      <dataSize units="Mbytes">280.2</dataSize>
+      <date type="modified">2021-10-01T03:09:50Z</date>
+    </dataset>
+    <dataset name="sd_pct_1964.nc" ID="iu04/processed/values/day/sd_pct_1964.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1964.nc">
+      <dataSize units="Mbytes">277.0</dataSize>
+      <date type="modified">2021-10-01T03:10:46Z</date>
+    </dataset>
+    <dataset name="sd_pct_1965.nc" ID="iu04/processed/values/day/sd_pct_1965.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1965.nc">
+      <dataSize units="Mbytes">275.6</dataSize>
+      <date type="modified">2021-10-01T03:11:31Z</date>
+    </dataset>
+    <dataset name="sd_pct_1966.nc" ID="iu04/processed/values/day/sd_pct_1966.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1966.nc">
+      <dataSize units="Mbytes">276.0</dataSize>
+      <date type="modified">2021-10-01T03:12:10Z</date>
+    </dataset>
+    <dataset name="sd_pct_1967.nc" ID="iu04/processed/values/day/sd_pct_1967.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1967.nc">
+      <dataSize units="Mbytes">280.8</dataSize>
+      <date type="modified">2021-10-01T03:12:55Z</date>
+    </dataset>
+    <dataset name="sd_pct_1968.nc" ID="iu04/processed/values/day/sd_pct_1968.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1968.nc">
+      <dataSize units="Mbytes">285.0</dataSize>
+      <date type="modified">2021-10-01T03:13:41Z</date>
+    </dataset>
+    <dataset name="sd_pct_1969.nc" ID="iu04/processed/values/day/sd_pct_1969.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1969.nc">
+      <dataSize units="Mbytes">279.7</dataSize>
+      <date type="modified">2021-10-01T03:14:33Z</date>
+    </dataset>
+    <dataset name="sd_pct_1970.nc" ID="iu04/processed/values/day/sd_pct_1970.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1970.nc">
+      <dataSize units="Mbytes">275.3</dataSize>
+      <date type="modified">2021-10-01T03:15:14Z</date>
+    </dataset>
+    <dataset name="sd_pct_1971.nc" ID="iu04/processed/values/day/sd_pct_1971.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1971.nc">
+      <dataSize units="Mbytes">278.0</dataSize>
+      <date type="modified">2021-10-01T03:16:06Z</date>
+    </dataset>
+    <dataset name="sd_pct_1972.nc" ID="iu04/processed/values/day/sd_pct_1972.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1972.nc">
+      <dataSize units="Mbytes">278.9</dataSize>
+      <date type="modified">2021-10-01T03:17:07Z</date>
+    </dataset>
+    <dataset name="sd_pct_1973.nc" ID="iu04/processed/values/day/sd_pct_1973.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1973.nc">
+      <dataSize units="Mbytes">282.6</dataSize>
+      <date type="modified">2021-10-01T03:17:50Z</date>
+    </dataset>
+    <dataset name="sd_pct_1974.nc" ID="iu04/processed/values/day/sd_pct_1974.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1974.nc">
+      <dataSize units="Mbytes">292.1</dataSize>
+      <date type="modified">2021-10-01T03:18:42Z</date>
+    </dataset>
+    <dataset name="sd_pct_1975.nc" ID="iu04/processed/values/day/sd_pct_1975.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1975.nc">
+      <dataSize units="Mbytes">285.6</dataSize>
+      <date type="modified">2021-10-01T03:19:34Z</date>
+    </dataset>
+    <dataset name="sd_pct_1976.nc" ID="iu04/processed/values/day/sd_pct_1976.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1976.nc">
+      <dataSize units="Mbytes">286.9</dataSize>
+      <date type="modified">2021-10-01T03:20:30Z</date>
+    </dataset>
+    <dataset name="sd_pct_1977.nc" ID="iu04/processed/values/day/sd_pct_1977.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1977.nc">
+      <dataSize units="Mbytes">281.1</dataSize>
+      <date type="modified">2021-10-01T03:21:16Z</date>
+    </dataset>
+    <dataset name="sd_pct_1978.nc" ID="iu04/processed/values/day/sd_pct_1978.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1978.nc">
+      <dataSize units="Mbytes">281.6</dataSize>
+      <date type="modified">2021-10-01T03:22:03Z</date>
+    </dataset>
+    <dataset name="sd_pct_1979.nc" ID="iu04/processed/values/day/sd_pct_1979.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1979.nc">
+      <dataSize units="Mbytes">281.4</dataSize>
+      <date type="modified">2021-10-01T03:22:58Z</date>
+    </dataset>
+    <dataset name="sd_pct_1980.nc" ID="iu04/processed/values/day/sd_pct_1980.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1980.nc">
+      <dataSize units="Mbytes">282.9</dataSize>
+      <date type="modified">2021-10-01T03:23:46Z</date>
+    </dataset>
+    <dataset name="sd_pct_1981.nc" ID="iu04/processed/values/day/sd_pct_1981.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1981.nc">
+      <dataSize units="Mbytes">284.7</dataSize>
+      <date type="modified">2021-10-01T03:24:26Z</date>
+    </dataset>
+    <dataset name="sd_pct_1982.nc" ID="iu04/processed/values/day/sd_pct_1982.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1982.nc">
+      <dataSize units="Mbytes">281.1</dataSize>
+      <date type="modified">2021-10-01T03:25:07Z</date>
+    </dataset>
+    <dataset name="sd_pct_1983.nc" ID="iu04/processed/values/day/sd_pct_1983.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1983.nc">
+      <dataSize units="Mbytes">280.8</dataSize>
+      <date type="modified">2021-10-01T03:25:58Z</date>
+    </dataset>
+    <dataset name="sd_pct_1984.nc" ID="iu04/processed/values/day/sd_pct_1984.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1984.nc">
+      <dataSize units="Mbytes">284.2</dataSize>
+      <date type="modified">2021-10-01T03:26:42Z</date>
+    </dataset>
+    <dataset name="sd_pct_1985.nc" ID="iu04/processed/values/day/sd_pct_1985.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1985.nc">
+      <dataSize units="Mbytes">276.4</dataSize>
+      <date type="modified">2021-10-01T03:27:27Z</date>
+    </dataset>
+    <dataset name="sd_pct_1986.nc" ID="iu04/processed/values/day/sd_pct_1986.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1986.nc">
+      <dataSize units="Mbytes">277.9</dataSize>
+      <date type="modified">2021-10-01T03:28:13Z</date>
+    </dataset>
+    <dataset name="sd_pct_1987.nc" ID="iu04/processed/values/day/sd_pct_1987.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1987.nc">
+      <dataSize units="Mbytes">277.8</dataSize>
+      <date type="modified">2021-10-01T03:28:56Z</date>
+    </dataset>
+    <dataset name="sd_pct_1988.nc" ID="iu04/processed/values/day/sd_pct_1988.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1988.nc">
+      <dataSize units="Mbytes">280.3</dataSize>
+      <date type="modified">2021-10-20T23:32:38Z</date>
+    </dataset>
+    <dataset name="sd_pct_1989.nc" ID="iu04/processed/values/day/sd_pct_1989.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1989.nc">
+      <dataSize units="Mbytes">284.7</dataSize>
+      <date type="modified">2021-10-01T03:30:36Z</date>
+    </dataset>
+    <dataset name="sd_pct_1990.nc" ID="iu04/processed/values/day/sd_pct_1990.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1990.nc">
+      <dataSize units="Mbytes">281.5</dataSize>
+      <date type="modified">2021-10-01T03:31:19Z</date>
+    </dataset>
+    <dataset name="sd_pct_1991.nc" ID="iu04/processed/values/day/sd_pct_1991.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1991.nc">
+      <dataSize units="Mbytes">282.5</dataSize>
+      <date type="modified">2021-10-01T03:32:16Z</date>
+    </dataset>
+    <dataset name="sd_pct_1992.nc" ID="iu04/processed/values/day/sd_pct_1992.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1992.nc">
+      <dataSize units="Mbytes">280.0</dataSize>
+      <date type="modified">2021-10-01T03:33:02Z</date>
+    </dataset>
+    <dataset name="sd_pct_1993.nc" ID="iu04/processed/values/day/sd_pct_1993.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1993.nc">
+      <dataSize units="Mbytes">280.6</dataSize>
+      <date type="modified">2021-10-01T03:33:52Z</date>
+    </dataset>
+    <dataset name="sd_pct_1994.nc" ID="iu04/processed/values/day/sd_pct_1994.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1994.nc">
+      <dataSize units="Mbytes">279.4</dataSize>
+      <date type="modified">2021-10-01T03:34:44Z</date>
+    </dataset>
+    <dataset name="sd_pct_1995.nc" ID="iu04/processed/values/day/sd_pct_1995.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1995.nc">
+      <dataSize units="Mbytes">280.8</dataSize>
+      <date type="modified">2021-10-01T03:35:36Z</date>
+    </dataset>
+    <dataset name="sd_pct_1996.nc" ID="iu04/processed/values/day/sd_pct_1996.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1996.nc">
+      <dataSize units="Mbytes">279.6</dataSize>
+      <date type="modified">2021-10-01T03:36:33Z</date>
+    </dataset>
+    <dataset name="sd_pct_1997.nc" ID="iu04/processed/values/day/sd_pct_1997.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1997.nc">
+      <dataSize units="Mbytes">281.5</dataSize>
+      <date type="modified">2021-10-01T03:37:18Z</date>
+    </dataset>
+    <dataset name="sd_pct_1998.nc" ID="iu04/processed/values/day/sd_pct_1998.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1998.nc">
+      <dataSize units="Mbytes">280.4</dataSize>
+      <date type="modified">2021-10-01T03:38:11Z</date>
+    </dataset>
+    <dataset name="sd_pct_1999.nc" ID="iu04/processed/values/day/sd_pct_1999.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_1999.nc">
+      <dataSize units="Mbytes">281.0</dataSize>
+      <date type="modified">2021-10-01T03:39:18Z</date>
+    </dataset>
+    <dataset name="sd_pct_2000.nc" ID="iu04/processed/values/day/sd_pct_2000.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2000.nc">
+      <dataSize units="Mbytes">287.2</dataSize>
+      <date type="modified">2021-10-01T03:40:11Z</date>
+    </dataset>
+    <dataset name="sd_pct_2001.nc" ID="iu04/processed/values/day/sd_pct_2001.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2001.nc">
+      <dataSize units="Mbytes">285.6</dataSize>
+      <date type="modified">2021-10-01T03:40:58Z</date>
+    </dataset>
+    <dataset name="sd_pct_2002.nc" ID="iu04/processed/values/day/sd_pct_2002.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2002.nc">
+      <dataSize units="Mbytes">281.8</dataSize>
+      <date type="modified">2021-10-01T03:41:36Z</date>
+    </dataset>
+    <dataset name="sd_pct_2003.nc" ID="iu04/processed/values/day/sd_pct_2003.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2003.nc">
+      <dataSize units="Mbytes">278.9</dataSize>
+      <date type="modified">2021-10-01T03:42:19Z</date>
+    </dataset>
+    <dataset name="sd_pct_2004.nc" ID="iu04/processed/values/day/sd_pct_2004.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2004.nc">
+      <dataSize units="Mbytes">283.7</dataSize>
+      <date type="modified">2021-10-01T03:43:09Z</date>
+    </dataset>
+    <dataset name="sd_pct_2005.nc" ID="iu04/processed/values/day/sd_pct_2005.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2005.nc">
+      <dataSize units="Mbytes">280.4</dataSize>
+      <date type="modified">2021-10-01T03:43:51Z</date>
+    </dataset>
+    <dataset name="sd_pct_2006.nc" ID="iu04/processed/values/day/sd_pct_2006.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2006.nc">
+      <dataSize units="Mbytes">282.8</dataSize>
+      <date type="modified">2021-10-01T03:44:44Z</date>
+    </dataset>
+    <dataset name="sd_pct_2007.nc" ID="iu04/processed/values/day/sd_pct_2007.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2007.nc">
+      <dataSize units="Mbytes">281.1</dataSize>
+      <date type="modified">2021-10-01T03:45:36Z</date>
+    </dataset>
+    <dataset name="sd_pct_2008.nc" ID="iu04/processed/values/day/sd_pct_2008.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2008.nc">
+      <dataSize units="Mbytes">279.2</dataSize>
+      <date type="modified">2021-10-01T03:46:26Z</date>
+    </dataset>
+    <dataset name="sd_pct_2009.nc" ID="iu04/processed/values/day/sd_pct_2009.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2009.nc">
+      <dataSize units="Mbytes">280.6</dataSize>
+      <date type="modified">2021-10-01T03:47:12Z</date>
+    </dataset>
+    <dataset name="sd_pct_2010.nc" ID="iu04/processed/values/day/sd_pct_2010.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2010.nc">
+      <dataSize units="Mbytes">281.8</dataSize>
+      <date type="modified">2021-10-01T03:48:01Z</date>
+    </dataset>
+    <dataset name="sd_pct_2011.nc" ID="iu04/processed/values/day/sd_pct_2011.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2011.nc">
+      <dataSize units="Mbytes">289.3</dataSize>
+      <date type="modified">2021-10-01T03:48:42Z</date>
+    </dataset>
+    <dataset name="sd_pct_2012.nc" ID="iu04/processed/values/day/sd_pct_2012.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2012.nc">
+      <dataSize units="Mbytes">285.9</dataSize>
+      <date type="modified">2021-10-01T03:49:21Z</date>
+    </dataset>
+    <dataset name="sd_pct_2013.nc" ID="iu04/processed/values/day/sd_pct_2013.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2013.nc">
+      <dataSize units="Mbytes">280.3</dataSize>
+      <date type="modified">2021-10-01T03:50:05Z</date>
+    </dataset>
+    <dataset name="sd_pct_2014.nc" ID="iu04/processed/values/day/sd_pct_2014.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2014.nc">
+      <dataSize units="Mbytes">281.9</dataSize>
+      <date type="modified">2021-10-01T03:50:44Z</date>
+    </dataset>
+    <dataset name="sd_pct_2015.nc" ID="iu04/processed/values/day/sd_pct_2015.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2015.nc">
+      <dataSize units="Mbytes">295.5</dataSize>
+      <date type="modified">2022-01-29T06:42:08Z</date>
+    </dataset>
+    <dataset name="sd_pct_2016.nc" ID="iu04/processed/values/day/sd_pct_2016.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2016.nc">
+      <dataSize units="Mbytes">307.0</dataSize>
+      <date type="modified">2022-02-01T18:22:28Z</date>
+    </dataset>
+    <dataset name="sd_pct_2017.nc" ID="iu04/processed/values/day/sd_pct_2017.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2017.nc">
+      <dataSize units="Mbytes">312.5</dataSize>
+      <date type="modified">2022-02-01T18:23:17Z</date>
+    </dataset>
+    <dataset name="sd_pct_2018.nc" ID="iu04/processed/values/day/sd_pct_2018.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2018.nc">
+      <dataSize units="Mbytes">336.0</dataSize>
+      <date type="modified">2022-02-01T18:24:09Z</date>
+    </dataset>
+    <dataset name="sd_pct_2019.nc" ID="iu04/processed/values/day/sd_pct_2019.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2019.nc">
+      <dataSize units="Mbytes">335.2</dataSize>
+      <date type="modified">2022-02-01T18:24:55Z</date>
+    </dataset>
+    <dataset name="sd_pct_2020.nc" ID="iu04/processed/values/day/sd_pct_2020.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2020.nc">
+      <dataSize units="Mbytes">278.9</dataSize>
+      <date type="modified">2024-06-02T15:00:26Z</date>
+    </dataset>
+    <dataset name="sd_pct_2021.nc" ID="iu04/processed/values/day/sd_pct_2021.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2021.nc">
+      <dataSize units="Mbytes">278.7</dataSize>
+      <date type="modified">2024-06-02T15:00:31Z</date>
+    </dataset>
+    <dataset name="sd_pct_2022.nc" ID="iu04/processed/values/day/sd_pct_2022.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2022.nc">
+      <dataSize units="Mbytes">280.8</dataSize>
+      <date type="modified">2024-06-02T15:00:35Z</date>
+    </dataset>
+    <dataset name="sd_pct_2023.nc" ID="iu04/processed/values/day/sd_pct_2023.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2023.nc">
+      <dataSize units="Mbytes">282.2</dataSize>
+      <date type="modified">2024-09-02T13:58:10Z</date>
+    </dataset>
+    <dataset name="sd_pct_2024.nc" ID="iu04/processed/values/day/sd_pct_2024.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2024.nc">
+      <dataSize units="Mbytes">281.1</dataSize>
+      <date type="modified">2025-07-02T14:24:50Z</date>
+    </dataset>
+    <dataset name="sd_pct_2025.nc" ID="iu04/processed/values/day/sd_pct_2025.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2025.nc">
+      <dataSize units="Mbytes">280.2</dataSize>
+      <date type="modified">2026-07-02T13:21:33Z</date>
+    </dataset>
+    <dataset name="sd_pct_2026.nc" ID="iu04/processed/values/day/sd_pct_2026.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sd_pct_2026.nc">
+      <dataSize units="Mbytes">759.0</dataSize>
+      <date type="modified">2026-10-30T13:54:41Z</date>
+    </dataset>
+    <dataset name="sm_1911.nc" ID="iu04/processed/values/day/sm_1911.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1911.nc">
+      <dataSize units="Mbytes">313.2</dataSize>
+      <date type="modified">2021-09-30T16:42:09Z</date>
+    </dataset>
+    <dataset name="sm_1912.nc" ID="iu04/processed/values/day/sm_1912.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1912.nc">
+      <dataSize units="Mbytes">300.4</dataSize>
+      <date type="modified">2021-09-30T16:43:44Z</date>
+    </dataset>
+    <dataset name="sm_1913.nc" ID="iu04/processed/values/day/sm_1913.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1913.nc">
+      <dataSize units="Mbytes">299.6</dataSize>
+      <date type="modified">2021-09-30T16:45:20Z</date>
+    </dataset>
+    <dataset name="sm_1914.nc" ID="iu04/processed/values/day/sm_1914.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1914.nc">
+      <dataSize units="Mbytes">301.2</dataSize>
+      <date type="modified">2021-09-30T16:46:55Z</date>
+    </dataset>
+    <dataset name="sm_1915.nc" ID="iu04/processed/values/day/sm_1915.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1915.nc">
+      <dataSize units="Mbytes">304.0</dataSize>
+      <date type="modified">2021-09-30T16:48:32Z</date>
+    </dataset>
+    <dataset name="sm_1916.nc" ID="iu04/processed/values/day/sm_1916.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1916.nc">
+      <dataSize units="Mbytes">306.5</dataSize>
+      <date type="modified">2021-09-30T16:50:13Z</date>
+    </dataset>
+    <dataset name="sm_1917.nc" ID="iu04/processed/values/day/sm_1917.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1917.nc">
+      <dataSize units="Mbytes">306.8</dataSize>
+      <date type="modified">2021-09-30T16:51:53Z</date>
+    </dataset>
+    <dataset name="sm_1918.nc" ID="iu04/processed/values/day/sm_1918.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1918.nc">
+      <dataSize units="Mbytes">306.3</dataSize>
+      <date type="modified">2021-09-30T16:53:34Z</date>
+    </dataset>
+    <dataset name="sm_1919.nc" ID="iu04/processed/values/day/sm_1919.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1919.nc">
+      <dataSize units="Mbytes">305.8</dataSize>
+      <date type="modified">2021-09-30T16:55:11Z</date>
+    </dataset>
+    <dataset name="sm_1920.nc" ID="iu04/processed/values/day/sm_1920.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1920.nc">
+      <dataSize units="Mbytes">311.0</dataSize>
+      <date type="modified">2021-09-30T16:56:51Z</date>
+    </dataset>
+    <dataset name="sm_1921.nc" ID="iu04/processed/values/day/sm_1921.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1921.nc">
+      <dataSize units="Mbytes">309.3</dataSize>
+      <date type="modified">2021-09-30T16:58:30Z</date>
+    </dataset>
+    <dataset name="sm_1922.nc" ID="iu04/processed/values/day/sm_1922.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1922.nc">
+      <dataSize units="Mbytes">308.1</dataSize>
+      <date type="modified">2021-09-30T17:00:12Z</date>
+    </dataset>
+    <dataset name="sm_1923.nc" ID="iu04/processed/values/day/sm_1923.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1923.nc">
+      <dataSize units="Mbytes">309.6</dataSize>
+      <date type="modified">2021-09-30T17:01:57Z</date>
+    </dataset>
+    <dataset name="sm_1924.nc" ID="iu04/processed/values/day/sm_1924.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1924.nc">
+      <dataSize units="Mbytes">302.6</dataSize>
+      <date type="modified">2021-09-30T17:03:35Z</date>
+    </dataset>
+    <dataset name="sm_1925.nc" ID="iu04/processed/values/day/sm_1925.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1925.nc">
+      <dataSize units="Mbytes">306.6</dataSize>
+      <date type="modified">2021-09-30T17:05:11Z</date>
+    </dataset>
+    <dataset name="sm_1926.nc" ID="iu04/processed/values/day/sm_1926.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1926.nc">
+      <dataSize units="Mbytes">305.4</dataSize>
+      <date type="modified">2021-09-30T17:06:52Z</date>
+    </dataset>
+    <dataset name="sm_1927.nc" ID="iu04/processed/values/day/sm_1927.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1927.nc">
+      <dataSize units="Mbytes">306.1</dataSize>
+      <date type="modified">2021-09-30T17:08:43Z</date>
+    </dataset>
+    <dataset name="sm_1928.nc" ID="iu04/processed/values/day/sm_1928.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1928.nc">
+      <dataSize units="Mbytes">302.3</dataSize>
+      <date type="modified">2021-09-30T17:10:28Z</date>
+    </dataset>
+    <dataset name="sm_1929.nc" ID="iu04/processed/values/day/sm_1929.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1929.nc">
+      <dataSize units="Mbytes">302.8</dataSize>
+      <date type="modified">2021-09-30T17:12:09Z</date>
+    </dataset>
+    <dataset name="sm_1930.nc" ID="iu04/processed/values/day/sm_1930.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1930.nc">
+      <dataSize units="Mbytes">308.2</dataSize>
+      <date type="modified">2021-09-30T17:13:50Z</date>
+    </dataset>
+    <dataset name="sm_1931.nc" ID="iu04/processed/values/day/sm_1931.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1931.nc">
+      <dataSize units="Mbytes">308.4</dataSize>
+      <date type="modified">2021-09-30T17:15:31Z</date>
+    </dataset>
+    <dataset name="sm_1932.nc" ID="iu04/processed/values/day/sm_1932.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1932.nc">
+      <dataSize units="Mbytes">309.3</dataSize>
+      <date type="modified">2021-09-30T17:17:09Z</date>
+    </dataset>
+    <dataset name="sm_1933.nc" ID="iu04/processed/values/day/sm_1933.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1933.nc">
+      <dataSize units="Mbytes">311.0</dataSize>
+      <date type="modified">2021-09-30T17:18:52Z</date>
+    </dataset>
+    <dataset name="sm_1934.nc" ID="iu04/processed/values/day/sm_1934.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1934.nc">
+      <dataSize units="Mbytes">309.8</dataSize>
+      <date type="modified">2021-09-30T17:20:34Z</date>
+    </dataset>
+    <dataset name="sm_1935.nc" ID="iu04/processed/values/day/sm_1935.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1935.nc">
+      <dataSize units="Mbytes">310.8</dataSize>
+      <date type="modified">2021-09-30T17:22:14Z</date>
+    </dataset>
+    <dataset name="sm_1936.nc" ID="iu04/processed/values/day/sm_1936.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1936.nc">
+      <dataSize units="Mbytes">307.9</dataSize>
+      <date type="modified">2021-09-30T17:23:53Z</date>
+    </dataset>
+    <dataset name="sm_1937.nc" ID="iu04/processed/values/day/sm_1937.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1937.nc">
+      <dataSize units="Mbytes">313.1</dataSize>
+      <date type="modified">2021-09-30T17:25:34Z</date>
+    </dataset>
+    <dataset name="sm_1938.nc" ID="iu04/processed/values/day/sm_1938.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1938.nc">
+      <dataSize units="Mbytes">313.8</dataSize>
+      <date type="modified">2021-09-30T17:27:09Z</date>
+    </dataset>
+    <dataset name="sm_1939.nc" ID="iu04/processed/values/day/sm_1939.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1939.nc">
+      <dataSize units="Mbytes">315.3</dataSize>
+      <date type="modified">2021-09-30T17:28:43Z</date>
+    </dataset>
+    <dataset name="sm_1940.nc" ID="iu04/processed/values/day/sm_1940.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1940.nc">
+      <dataSize units="Mbytes">310.1</dataSize>
+      <date type="modified">2021-09-30T17:30:20Z</date>
+    </dataset>
+    <dataset name="sm_1941.nc" ID="iu04/processed/values/day/sm_1941.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1941.nc">
+      <dataSize units="Mbytes">323.9</dataSize>
+      <date type="modified">2021-09-30T17:32:03Z</date>
+    </dataset>
+    <dataset name="sm_1942.nc" ID="iu04/processed/values/day/sm_1942.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1942.nc">
+      <dataSize units="Mbytes">324.2</dataSize>
+      <date type="modified">2021-09-30T17:33:46Z</date>
+    </dataset>
+    <dataset name="sm_1943.nc" ID="iu04/processed/values/day/sm_1943.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1943.nc">
+      <dataSize units="Mbytes">324.2</dataSize>
+      <date type="modified">2021-09-30T17:35:27Z</date>
+    </dataset>
+    <dataset name="sm_1944.nc" ID="iu04/processed/values/day/sm_1944.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1944.nc">
+      <dataSize units="Mbytes">320.9</dataSize>
+      <date type="modified">2021-09-30T17:37:07Z</date>
+    </dataset>
+    <dataset name="sm_1945.nc" ID="iu04/processed/values/day/sm_1945.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1945.nc">
+      <dataSize units="Mbytes">321.7</dataSize>
+      <date type="modified">2021-09-30T17:38:50Z</date>
+    </dataset>
+    <dataset name="sm_1946.nc" ID="iu04/processed/values/day/sm_1946.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1946.nc">
+      <dataSize units="Mbytes">316.5</dataSize>
+      <date type="modified">2021-09-30T17:40:36Z</date>
+    </dataset>
+    <dataset name="sm_1947.nc" ID="iu04/processed/values/day/sm_1947.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1947.nc">
+      <dataSize units="Mbytes">324.6</dataSize>
+      <date type="modified">2021-09-30T17:42:16Z</date>
+    </dataset>
+    <dataset name="sm_1948.nc" ID="iu04/processed/values/day/sm_1948.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1948.nc">
+      <dataSize units="Mbytes">325.2</dataSize>
+      <date type="modified">2021-09-30T17:43:58Z</date>
+    </dataset>
+    <dataset name="sm_1949.nc" ID="iu04/processed/values/day/sm_1949.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1949.nc">
+      <dataSize units="Mbytes">323.6</dataSize>
+      <date type="modified">2021-09-30T17:45:38Z</date>
+    </dataset>
+    <dataset name="sm_1950.nc" ID="iu04/processed/values/day/sm_1950.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1950.nc">
+      <dataSize units="Mbytes">323.9</dataSize>
+      <date type="modified">2021-09-30T17:47:21Z</date>
+    </dataset>
+    <dataset name="sm_1951.nc" ID="iu04/processed/values/day/sm_1951.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1951.nc">
+      <dataSize units="Mbytes">321.5</dataSize>
+      <date type="modified">2021-09-30T17:49:01Z</date>
+    </dataset>
+    <dataset name="sm_1952.nc" ID="iu04/processed/values/day/sm_1952.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1952.nc">
+      <dataSize units="Mbytes">323.4</dataSize>
+      <date type="modified">2021-09-30T17:50:41Z</date>
+    </dataset>
+    <dataset name="sm_1953.nc" ID="iu04/processed/values/day/sm_1953.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1953.nc">
+      <dataSize units="Mbytes">323.5</dataSize>
+      <date type="modified">2021-09-30T17:52:21Z</date>
+    </dataset>
+    <dataset name="sm_1954.nc" ID="iu04/processed/values/day/sm_1954.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1954.nc">
+      <dataSize units="Mbytes">324.0</dataSize>
+      <date type="modified">2021-09-30T17:54:03Z</date>
+    </dataset>
+    <dataset name="sm_1955.nc" ID="iu04/processed/values/day/sm_1955.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1955.nc">
+      <dataSize units="Mbytes">325.5</dataSize>
+      <date type="modified">2021-09-30T17:55:45Z</date>
+    </dataset>
+    <dataset name="sm_1956.nc" ID="iu04/processed/values/day/sm_1956.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1956.nc">
+      <dataSize units="Mbytes">326.1</dataSize>
+      <date type="modified">2021-09-30T17:57:28Z</date>
+    </dataset>
+    <dataset name="sm_1957.nc" ID="iu04/processed/values/day/sm_1957.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1957.nc">
+      <dataSize units="Mbytes">326.6</dataSize>
+      <date type="modified">2021-09-30T17:59:11Z</date>
+    </dataset>
+    <dataset name="sm_1958.nc" ID="iu04/processed/values/day/sm_1958.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1958.nc">
+      <dataSize units="Mbytes">326.3</dataSize>
+      <date type="modified">2021-09-30T18:00:55Z</date>
+    </dataset>
+    <dataset name="sm_1959.nc" ID="iu04/processed/values/day/sm_1959.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1959.nc">
+      <dataSize units="Mbytes">326.7</dataSize>
+      <date type="modified">2021-09-30T18:02:40Z</date>
+    </dataset>
+    <dataset name="sm_1960.nc" ID="iu04/processed/values/day/sm_1960.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1960.nc">
+      <dataSize units="Mbytes">327.2</dataSize>
+      <date type="modified">2021-09-30T18:04:20Z</date>
+    </dataset>
+    <dataset name="sm_1961.nc" ID="iu04/processed/values/day/sm_1961.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1961.nc">
+      <dataSize units="Mbytes">320.0</dataSize>
+      <date type="modified">2021-09-30T18:06:01Z</date>
+    </dataset>
+    <dataset name="sm_1962.nc" ID="iu04/processed/values/day/sm_1962.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1962.nc">
+      <dataSize units="Mbytes">326.2</dataSize>
+      <date type="modified">2021-09-30T18:07:42Z</date>
+    </dataset>
+    <dataset name="sm_1963.nc" ID="iu04/processed/values/day/sm_1963.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1963.nc">
+      <dataSize units="Mbytes">324.0</dataSize>
+      <date type="modified">2021-09-30T18:09:28Z</date>
+    </dataset>
+    <dataset name="sm_1964.nc" ID="iu04/processed/values/day/sm_1964.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1964.nc">
+      <dataSize units="Mbytes">325.9</dataSize>
+      <date type="modified">2021-09-30T18:11:15Z</date>
+    </dataset>
+    <dataset name="sm_1965.nc" ID="iu04/processed/values/day/sm_1965.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1965.nc">
+      <dataSize units="Mbytes">320.1</dataSize>
+      <date type="modified">2021-09-30T18:12:57Z</date>
+    </dataset>
+    <dataset name="sm_1966.nc" ID="iu04/processed/values/day/sm_1966.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1966.nc">
+      <dataSize units="Mbytes">327.9</dataSize>
+      <date type="modified">2021-09-30T18:14:42Z</date>
+    </dataset>
+    <dataset name="sm_1967.nc" ID="iu04/processed/values/day/sm_1967.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1967.nc">
+      <dataSize units="Mbytes">322.7</dataSize>
+      <date type="modified">2021-09-30T18:16:23Z</date>
+    </dataset>
+    <dataset name="sm_1968.nc" ID="iu04/processed/values/day/sm_1968.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1968.nc">
+      <dataSize units="Mbytes">328.6</dataSize>
+      <date type="modified">2021-09-30T18:18:08Z</date>
+    </dataset>
+    <dataset name="sm_1969.nc" ID="iu04/processed/values/day/sm_1969.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1969.nc">
+      <dataSize units="Mbytes">326.7</dataSize>
+      <date type="modified">2021-09-30T18:19:49Z</date>
+    </dataset>
+    <dataset name="sm_1970.nc" ID="iu04/processed/values/day/sm_1970.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1970.nc">
+      <dataSize units="Mbytes">326.6</dataSize>
+      <date type="modified">2021-09-30T18:21:29Z</date>
+    </dataset>
+    <dataset name="sm_1971.nc" ID="iu04/processed/values/day/sm_1971.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1971.nc">
+      <dataSize units="Mbytes">328.0</dataSize>
+      <date type="modified">2021-09-30T18:23:06Z</date>
+    </dataset>
+    <dataset name="sm_1972.nc" ID="iu04/processed/values/day/sm_1972.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1972.nc">
+      <dataSize units="Mbytes">326.3</dataSize>
+      <date type="modified">2021-09-30T18:24:46Z</date>
+    </dataset>
+    <dataset name="sm_1973.nc" ID="iu04/processed/values/day/sm_1973.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1973.nc">
+      <dataSize units="Mbytes">328.7</dataSize>
+      <date type="modified">2021-09-30T18:26:27Z</date>
+    </dataset>
+    <dataset name="sm_1974.nc" ID="iu04/processed/values/day/sm_1974.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1974.nc">
+      <dataSize units="Mbytes">328.9</dataSize>
+      <date type="modified">2021-09-30T18:28:08Z</date>
+    </dataset>
+    <dataset name="sm_1975.nc" ID="iu04/processed/values/day/sm_1975.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1975.nc">
+      <dataSize units="Mbytes">330.1</dataSize>
+      <date type="modified">2021-09-30T18:29:50Z</date>
+    </dataset>
+    <dataset name="sm_1976.nc" ID="iu04/processed/values/day/sm_1976.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1976.nc">
+      <dataSize units="Mbytes">324.4</dataSize>
+      <date type="modified">2021-09-30T18:31:34Z</date>
+    </dataset>
+    <dataset name="sm_1977.nc" ID="iu04/processed/values/day/sm_1977.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1977.nc">
+      <dataSize units="Mbytes">326.2</dataSize>
+      <date type="modified">2021-09-30T18:33:22Z</date>
+    </dataset>
+    <dataset name="sm_1978.nc" ID="iu04/processed/values/day/sm_1978.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1978.nc">
+      <dataSize units="Mbytes">329.2</dataSize>
+      <date type="modified">2021-09-30T18:35:07Z</date>
+    </dataset>
+    <dataset name="sm_1979.nc" ID="iu04/processed/values/day/sm_1979.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1979.nc">
+      <dataSize units="Mbytes">327.7</dataSize>
+      <date type="modified">2021-09-30T18:36:51Z</date>
+    </dataset>
+    <dataset name="sm_1980.nc" ID="iu04/processed/values/day/sm_1980.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1980.nc">
+      <dataSize units="Mbytes">327.5</dataSize>
+      <date type="modified">2021-09-30T18:38:35Z</date>
+    </dataset>
+    <dataset name="sm_1981.nc" ID="iu04/processed/values/day/sm_1981.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1981.nc">
+      <dataSize units="Mbytes">325.9</dataSize>
+      <date type="modified">2021-09-30T18:40:25Z</date>
+    </dataset>
+    <dataset name="sm_1982.nc" ID="iu04/processed/values/day/sm_1982.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1982.nc">
+      <dataSize units="Mbytes">326.3</dataSize>
+      <date type="modified">2021-09-30T18:42:08Z</date>
+    </dataset>
+    <dataset name="sm_1983.nc" ID="iu04/processed/values/day/sm_1983.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1983.nc">
+      <dataSize units="Mbytes">327.0</dataSize>
+      <date type="modified">2021-09-30T18:43:51Z</date>
+    </dataset>
+    <dataset name="sm_1984.nc" ID="iu04/processed/values/day/sm_1984.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1984.nc">
+      <dataSize units="Mbytes">330.5</dataSize>
+      <date type="modified">2021-09-30T18:45:36Z</date>
+    </dataset>
+    <dataset name="sm_1985.nc" ID="iu04/processed/values/day/sm_1985.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1985.nc">
+      <dataSize units="Mbytes">327.5</dataSize>
+      <date type="modified">2021-09-30T18:47:21Z</date>
+    </dataset>
+    <dataset name="sm_1986.nc" ID="iu04/processed/values/day/sm_1986.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1986.nc">
+      <dataSize units="Mbytes">328.5</dataSize>
+      <date type="modified">2021-09-30T18:49:04Z</date>
+    </dataset>
+    <dataset name="sm_1987.nc" ID="iu04/processed/values/day/sm_1987.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1987.nc">
+      <dataSize units="Mbytes">327.9</dataSize>
+      <date type="modified">2021-09-30T18:50:47Z</date>
+    </dataset>
+    <dataset name="sm_1988.nc" ID="iu04/processed/values/day/sm_1988.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1988.nc">
+      <dataSize units="Mbytes">329.6</dataSize>
+      <date type="modified">2021-10-20T23:16:39Z</date>
+    </dataset>
+    <dataset name="sm_1989.nc" ID="iu04/processed/values/day/sm_1989.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1989.nc">
+      <dataSize units="Mbytes">326.2</dataSize>
+      <date type="modified">2021-09-30T18:54:09Z</date>
+    </dataset>
+    <dataset name="sm_1990.nc" ID="iu04/processed/values/day/sm_1990.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1990.nc">
+      <dataSize units="Mbytes">325.0</dataSize>
+      <date type="modified">2021-09-30T18:55:50Z</date>
+    </dataset>
+    <dataset name="sm_1991.nc" ID="iu04/processed/values/day/sm_1991.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1991.nc">
+      <dataSize units="Mbytes">324.6</dataSize>
+      <date type="modified">2021-09-30T18:57:34Z</date>
+    </dataset>
+    <dataset name="sm_1992.nc" ID="iu04/processed/values/day/sm_1992.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1992.nc">
+      <dataSize units="Mbytes">328.7</dataSize>
+      <date type="modified">2021-09-30T18:59:17Z</date>
+    </dataset>
+    <dataset name="sm_1993.nc" ID="iu04/processed/values/day/sm_1993.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1993.nc">
+      <dataSize units="Mbytes">328.3</dataSize>
+      <date type="modified">2021-09-30T19:01:13Z</date>
+    </dataset>
+    <dataset name="sm_1994.nc" ID="iu04/processed/values/day/sm_1994.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1994.nc">
+      <dataSize units="Mbytes">320.8</dataSize>
+      <date type="modified">2021-09-30T19:03:01Z</date>
+    </dataset>
+    <dataset name="sm_1995.nc" ID="iu04/processed/values/day/sm_1995.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1995.nc">
+      <dataSize units="Mbytes">327.8</dataSize>
+      <date type="modified">2021-09-30T19:04:41Z</date>
+    </dataset>
+    <dataset name="sm_1996.nc" ID="iu04/processed/values/day/sm_1996.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1996.nc">
+      <dataSize units="Mbytes">327.9</dataSize>
+      <date type="modified">2021-09-30T19:06:27Z</date>
+    </dataset>
+    <dataset name="sm_1997.nc" ID="iu04/processed/values/day/sm_1997.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1997.nc">
+      <dataSize units="Mbytes">328.6</dataSize>
+      <date type="modified">2021-09-30T19:08:11Z</date>
+    </dataset>
+    <dataset name="sm_1998.nc" ID="iu04/processed/values/day/sm_1998.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1998.nc">
+      <dataSize units="Mbytes">329.6</dataSize>
+      <date type="modified">2021-09-30T19:10:01Z</date>
+    </dataset>
+    <dataset name="sm_1999.nc" ID="iu04/processed/values/day/sm_1999.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_1999.nc">
+      <dataSize units="Mbytes">329.1</dataSize>
+      <date type="modified">2021-09-30T19:11:46Z</date>
+    </dataset>
+    <dataset name="sm_2000.nc" ID="iu04/processed/values/day/sm_2000.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2000.nc">
+      <dataSize units="Mbytes">330.8</dataSize>
+      <date type="modified">2021-09-30T19:13:31Z</date>
+    </dataset>
+    <dataset name="sm_2001.nc" ID="iu04/processed/values/day/sm_2001.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2001.nc">
+      <dataSize units="Mbytes">330.3</dataSize>
+      <date type="modified">2021-09-30T19:15:14Z</date>
+    </dataset>
+    <dataset name="sm_2002.nc" ID="iu04/processed/values/day/sm_2002.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2002.nc">
+      <dataSize units="Mbytes">321.4</dataSize>
+      <date type="modified">2021-09-30T19:16:57Z</date>
+    </dataset>
+    <dataset name="sm_2003.nc" ID="iu04/processed/values/day/sm_2003.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2003.nc">
+      <dataSize units="Mbytes">329.3</dataSize>
+      <date type="modified">2021-09-30T19:18:38Z</date>
+    </dataset>
+    <dataset name="sm_2004.nc" ID="iu04/processed/values/day/sm_2004.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2004.nc">
+      <dataSize units="Mbytes">332.4</dataSize>
+      <date type="modified">2021-09-30T19:20:19Z</date>
+    </dataset>
+    <dataset name="sm_2005.nc" ID="iu04/processed/values/day/sm_2005.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2005.nc">
+      <dataSize units="Mbytes">330.1</dataSize>
+      <date type="modified">2021-09-30T19:21:57Z</date>
+    </dataset>
+    <dataset name="sm_2006.nc" ID="iu04/processed/values/day/sm_2006.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2006.nc">
+      <dataSize units="Mbytes">331.2</dataSize>
+      <date type="modified">2021-09-30T19:23:40Z</date>
+    </dataset>
+    <dataset name="sm_2007.nc" ID="iu04/processed/values/day/sm_2007.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2007.nc">
+      <dataSize units="Mbytes">329.7</dataSize>
+      <date type="modified">2021-09-30T19:25:22Z</date>
+    </dataset>
+    <dataset name="sm_2008.nc" ID="iu04/processed/values/day/sm_2008.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2008.nc">
+      <dataSize units="Mbytes">328.8</dataSize>
+      <date type="modified">2021-09-30T19:27:01Z</date>
+    </dataset>
+    <dataset name="sm_2009.nc" ID="iu04/processed/values/day/sm_2009.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2009.nc">
+      <dataSize units="Mbytes">326.7</dataSize>
+      <date type="modified">2021-09-30T19:28:42Z</date>
+    </dataset>
+    <dataset name="sm_2010.nc" ID="iu04/processed/values/day/sm_2010.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2010.nc">
+      <dataSize units="Mbytes">329.8</dataSize>
+      <date type="modified">2021-09-30T19:30:31Z</date>
+    </dataset>
+    <dataset name="sm_2011.nc" ID="iu04/processed/values/day/sm_2011.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2011.nc">
+      <dataSize units="Mbytes">329.9</dataSize>
+      <date type="modified">2021-09-30T19:32:15Z</date>
+    </dataset>
+    <dataset name="sm_2012.nc" ID="iu04/processed/values/day/sm_2012.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2012.nc">
+      <dataSize units="Mbytes">329.0</dataSize>
+      <date type="modified">2021-09-30T19:33:57Z</date>
+    </dataset>
+    <dataset name="sm_2013.nc" ID="iu04/processed/values/day/sm_2013.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2013.nc">
+      <dataSize units="Mbytes">329.4</dataSize>
+      <date type="modified">2021-09-30T19:35:38Z</date>
+    </dataset>
+    <dataset name="sm_2014.nc" ID="iu04/processed/values/day/sm_2014.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2014.nc">
+      <dataSize units="Mbytes">328.7</dataSize>
+      <date type="modified">2021-09-30T19:37:14Z</date>
+    </dataset>
+    <dataset name="sm_2015.nc" ID="iu04/processed/values/day/sm_2015.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2015.nc">
+      <dataSize units="Mbytes">391.4</dataSize>
+      <date type="modified">2022-01-29T05:49:48Z</date>
+    </dataset>
+    <dataset name="sm_2016.nc" ID="iu04/processed/values/day/sm_2016.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2016.nc">
+      <dataSize units="Mbytes">443.2</dataSize>
+      <date type="modified">2022-02-01T17:41:01Z</date>
+    </dataset>
+    <dataset name="sm_2017.nc" ID="iu04/processed/values/day/sm_2017.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2017.nc">
+      <dataSize units="Mbytes">446.3</dataSize>
+      <date type="modified">2022-02-01T17:42:39Z</date>
+    </dataset>
+    <dataset name="sm_2018.nc" ID="iu04/processed/values/day/sm_2018.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2018.nc">
+      <dataSize units="Mbytes">553.4</dataSize>
+      <date type="modified">2022-02-01T17:44:24Z</date>
+    </dataset>
+    <dataset name="sm_2019.nc" ID="iu04/processed/values/day/sm_2019.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2019.nc">
+      <dataSize units="Mbytes">550.1</dataSize>
+      <date type="modified">2022-02-01T17:46:06Z</date>
+    </dataset>
+    <dataset name="sm_2020.nc" ID="iu04/processed/values/day/sm_2020.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2020.nc">
+      <dataSize units="Mbytes">330.6</dataSize>
+      <date type="modified">2024-06-02T15:02:15Z</date>
+    </dataset>
+    <dataset name="sm_2021.nc" ID="iu04/processed/values/day/sm_2021.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2021.nc">
+      <dataSize units="Mbytes">329.3</dataSize>
+      <date type="modified">2024-06-02T15:02:20Z</date>
+    </dataset>
+    <dataset name="sm_2022.nc" ID="iu04/processed/values/day/sm_2022.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2022.nc">
+      <dataSize units="Mbytes">330.5</dataSize>
+      <date type="modified">2024-06-02T15:02:26Z</date>
+    </dataset>
+    <dataset name="sm_2023.nc" ID="iu04/processed/values/day/sm_2023.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2023.nc">
+      <dataSize units="Mbytes">329.8</dataSize>
+      <date type="modified">2024-09-02T13:59:56Z</date>
+    </dataset>
+    <dataset name="sm_2024.nc" ID="iu04/processed/values/day/sm_2024.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2024.nc">
+      <dataSize units="Mbytes">330.8</dataSize>
+      <date type="modified">2025-07-02T14:26:21Z</date>
+    </dataset>
+    <dataset name="sm_2025.nc" ID="iu04/processed/values/day/sm_2025.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2025.nc">
+      <dataSize units="Mbytes">330.0</dataSize>
+      <date type="modified">2026-07-02T13:23:16Z</date>
+    </dataset>
+    <dataset name="sm_2026.nc" ID="iu04/processed/values/day/sm_2026.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_2026.nc">
+      <dataSize units="Gbytes">1.820</dataSize>
+      <date type="modified">2026-10-30T13:56:58Z</date>
+    </dataset>
+    <dataset name="sm_pct_1911.nc" ID="iu04/processed/values/day/sm_pct_1911.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1911.nc">
+      <dataSize units="Mbytes">313.4</dataSize>
+      <date type="modified">2021-10-01T03:57:09Z</date>
+    </dataset>
+    <dataset name="sm_pct_1912.nc" ID="iu04/processed/values/day/sm_pct_1912.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1912.nc">
+      <dataSize units="Mbytes">300.5</dataSize>
+      <date type="modified">2021-10-01T03:58:07Z</date>
+    </dataset>
+    <dataset name="sm_pct_1913.nc" ID="iu04/processed/values/day/sm_pct_1913.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1913.nc">
+      <dataSize units="Mbytes">299.7</dataSize>
+      <date type="modified">2021-10-01T03:58:52Z</date>
+    </dataset>
+    <dataset name="sm_pct_1914.nc" ID="iu04/processed/values/day/sm_pct_1914.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1914.nc">
+      <dataSize units="Mbytes">301.3</dataSize>
+      <date type="modified">2021-10-01T03:59:40Z</date>
+    </dataset>
+    <dataset name="sm_pct_1915.nc" ID="iu04/processed/values/day/sm_pct_1915.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1915.nc">
+      <dataSize units="Mbytes">304.2</dataSize>
+      <date type="modified">2021-10-01T04:00:28Z</date>
+    </dataset>
+    <dataset name="sm_pct_1916.nc" ID="iu04/processed/values/day/sm_pct_1916.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1916.nc">
+      <dataSize units="Mbytes">306.4</dataSize>
+      <date type="modified">2021-10-01T04:01:08Z</date>
+    </dataset>
+    <dataset name="sm_pct_1917.nc" ID="iu04/processed/values/day/sm_pct_1917.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1917.nc">
+      <dataSize units="Mbytes">306.8</dataSize>
+      <date type="modified">2021-10-01T04:01:53Z</date>
+    </dataset>
+    <dataset name="sm_pct_1918.nc" ID="iu04/processed/values/day/sm_pct_1918.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1918.nc">
+      <dataSize units="Mbytes">306.4</dataSize>
+      <date type="modified">2021-10-01T04:02:35Z</date>
+    </dataset>
+    <dataset name="sm_pct_1919.nc" ID="iu04/processed/values/day/sm_pct_1919.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1919.nc">
+      <dataSize units="Mbytes">305.9</dataSize>
+      <date type="modified">2021-10-01T04:03:18Z</date>
+    </dataset>
+    <dataset name="sm_pct_1920.nc" ID="iu04/processed/values/day/sm_pct_1920.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1920.nc">
+      <dataSize units="Mbytes">310.9</dataSize>
+      <date type="modified">2021-10-01T04:03:56Z</date>
+    </dataset>
+    <dataset name="sm_pct_1921.nc" ID="iu04/processed/values/day/sm_pct_1921.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1921.nc">
+      <dataSize units="Mbytes">309.4</dataSize>
+      <date type="modified">2021-10-01T04:04:46Z</date>
+    </dataset>
+    <dataset name="sm_pct_1922.nc" ID="iu04/processed/values/day/sm_pct_1922.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1922.nc">
+      <dataSize units="Mbytes">308.3</dataSize>
+      <date type="modified">2021-10-01T04:05:28Z</date>
+    </dataset>
+    <dataset name="sm_pct_1923.nc" ID="iu04/processed/values/day/sm_pct_1923.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1923.nc">
+      <dataSize units="Mbytes">309.6</dataSize>
+      <date type="modified">2021-10-01T04:06:09Z</date>
+    </dataset>
+    <dataset name="sm_pct_1924.nc" ID="iu04/processed/values/day/sm_pct_1924.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1924.nc">
+      <dataSize units="Mbytes">302.7</dataSize>
+      <date type="modified">2021-10-01T04:06:56Z</date>
+    </dataset>
+    <dataset name="sm_pct_1925.nc" ID="iu04/processed/values/day/sm_pct_1925.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1925.nc">
+      <dataSize units="Mbytes">306.8</dataSize>
+      <date type="modified">2021-10-01T04:07:43Z</date>
+    </dataset>
+    <dataset name="sm_pct_1926.nc" ID="iu04/processed/values/day/sm_pct_1926.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1926.nc">
+      <dataSize units="Mbytes">305.6</dataSize>
+      <date type="modified">2021-10-01T04:08:37Z</date>
+    </dataset>
+    <dataset name="sm_pct_1927.nc" ID="iu04/processed/values/day/sm_pct_1927.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1927.nc">
+      <dataSize units="Mbytes">306.2</dataSize>
+      <date type="modified">2021-10-01T04:09:29Z</date>
+    </dataset>
+    <dataset name="sm_pct_1928.nc" ID="iu04/processed/values/day/sm_pct_1928.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1928.nc">
+      <dataSize units="Mbytes">302.7</dataSize>
+      <date type="modified">2021-10-01T04:10:22Z</date>
+    </dataset>
+    <dataset name="sm_pct_1929.nc" ID="iu04/processed/values/day/sm_pct_1929.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1929.nc">
+      <dataSize units="Mbytes">303.0</dataSize>
+      <date type="modified">2021-10-01T04:11:06Z</date>
+    </dataset>
+    <dataset name="sm_pct_1930.nc" ID="iu04/processed/values/day/sm_pct_1930.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1930.nc">
+      <dataSize units="Mbytes">308.2</dataSize>
+      <date type="modified">2021-10-01T04:11:50Z</date>
+    </dataset>
+    <dataset name="sm_pct_1931.nc" ID="iu04/processed/values/day/sm_pct_1931.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1931.nc">
+      <dataSize units="Mbytes">308.4</dataSize>
+      <date type="modified">2021-10-01T04:12:29Z</date>
+    </dataset>
+    <dataset name="sm_pct_1932.nc" ID="iu04/processed/values/day/sm_pct_1932.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1932.nc">
+      <dataSize units="Mbytes">309.4</dataSize>
+      <date type="modified">2021-10-01T04:13:24Z</date>
+    </dataset>
+    <dataset name="sm_pct_1933.nc" ID="iu04/processed/values/day/sm_pct_1933.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1933.nc">
+      <dataSize units="Mbytes">311.0</dataSize>
+      <date type="modified">2021-10-01T04:14:07Z</date>
+    </dataset>
+    <dataset name="sm_pct_1934.nc" ID="iu04/processed/values/day/sm_pct_1934.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1934.nc">
+      <dataSize units="Mbytes">309.9</dataSize>
+      <date type="modified">2021-10-01T04:14:51Z</date>
+    </dataset>
+    <dataset name="sm_pct_1935.nc" ID="iu04/processed/values/day/sm_pct_1935.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1935.nc">
+      <dataSize units="Mbytes">310.8</dataSize>
+      <date type="modified">2021-10-01T04:15:39Z</date>
+    </dataset>
+    <dataset name="sm_pct_1936.nc" ID="iu04/processed/values/day/sm_pct_1936.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1936.nc">
+      <dataSize units="Mbytes">308.1</dataSize>
+      <date type="modified">2021-10-01T04:16:19Z</date>
+    </dataset>
+    <dataset name="sm_pct_1937.nc" ID="iu04/processed/values/day/sm_pct_1937.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1937.nc">
+      <dataSize units="Mbytes">313.2</dataSize>
+      <date type="modified">2021-10-01T04:17:10Z</date>
+    </dataset>
+    <dataset name="sm_pct_1938.nc" ID="iu04/processed/values/day/sm_pct_1938.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1938.nc">
+      <dataSize units="Mbytes">313.9</dataSize>
+      <date type="modified">2021-10-01T04:17:58Z</date>
+    </dataset>
+    <dataset name="sm_pct_1939.nc" ID="iu04/processed/values/day/sm_pct_1939.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1939.nc">
+      <dataSize units="Mbytes">315.2</dataSize>
+      <date type="modified">2021-10-01T04:18:47Z</date>
+    </dataset>
+    <dataset name="sm_pct_1940.nc" ID="iu04/processed/values/day/sm_pct_1940.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1940.nc">
+      <dataSize units="Mbytes">310.4</dataSize>
+      <date type="modified">2021-10-01T04:19:37Z</date>
+    </dataset>
+    <dataset name="sm_pct_1941.nc" ID="iu04/processed/values/day/sm_pct_1941.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1941.nc">
+      <dataSize units="Mbytes">324.0</dataSize>
+      <date type="modified">2021-10-01T04:20:20Z</date>
+    </dataset>
+    <dataset name="sm_pct_1942.nc" ID="iu04/processed/values/day/sm_pct_1942.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1942.nc">
+      <dataSize units="Mbytes">324.2</dataSize>
+      <date type="modified">2021-10-01T04:21:13Z</date>
+    </dataset>
+    <dataset name="sm_pct_1943.nc" ID="iu04/processed/values/day/sm_pct_1943.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1943.nc">
+      <dataSize units="Mbytes">324.3</dataSize>
+      <date type="modified">2021-10-01T04:21:48Z</date>
+    </dataset>
+    <dataset name="sm_pct_1944.nc" ID="iu04/processed/values/day/sm_pct_1944.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1944.nc">
+      <dataSize units="Mbytes">321.1</dataSize>
+      <date type="modified">2021-10-01T04:22:46Z</date>
+    </dataset>
+    <dataset name="sm_pct_1945.nc" ID="iu04/processed/values/day/sm_pct_1945.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1945.nc">
+      <dataSize units="Mbytes">321.8</dataSize>
+      <date type="modified">2021-10-01T04:23:29Z</date>
+    </dataset>
+    <dataset name="sm_pct_1946.nc" ID="iu04/processed/values/day/sm_pct_1946.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1946.nc">
+      <dataSize units="Mbytes">316.6</dataSize>
+      <date type="modified">2021-10-01T04:24:27Z</date>
+    </dataset>
+    <dataset name="sm_pct_1947.nc" ID="iu04/processed/values/day/sm_pct_1947.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1947.nc">
+      <dataSize units="Mbytes">324.4</dataSize>
+      <date type="modified">2021-10-01T04:25:00Z</date>
+    </dataset>
+    <dataset name="sm_pct_1948.nc" ID="iu04/processed/values/day/sm_pct_1948.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1948.nc">
+      <dataSize units="Mbytes">325.1</dataSize>
+      <date type="modified">2021-10-01T04:25:58Z</date>
+    </dataset>
+    <dataset name="sm_pct_1949.nc" ID="iu04/processed/values/day/sm_pct_1949.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1949.nc">
+      <dataSize units="Mbytes">323.6</dataSize>
+      <date type="modified">2021-10-01T04:26:32Z</date>
+    </dataset>
+    <dataset name="sm_pct_1950.nc" ID="iu04/processed/values/day/sm_pct_1950.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1950.nc">
+      <dataSize units="Mbytes">323.8</dataSize>
+      <date type="modified">2021-10-01T04:27:29Z</date>
+    </dataset>
+    <dataset name="sm_pct_1951.nc" ID="iu04/processed/values/day/sm_pct_1951.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1951.nc">
+      <dataSize units="Mbytes">321.7</dataSize>
+      <date type="modified">2021-10-01T04:28:22Z</date>
+    </dataset>
+    <dataset name="sm_pct_1952.nc" ID="iu04/processed/values/day/sm_pct_1952.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1952.nc">
+      <dataSize units="Mbytes">323.4</dataSize>
+      <date type="modified">2021-10-01T04:29:08Z</date>
+    </dataset>
+    <dataset name="sm_pct_1953.nc" ID="iu04/processed/values/day/sm_pct_1953.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1953.nc">
+      <dataSize units="Mbytes">323.7</dataSize>
+      <date type="modified">2021-10-01T04:29:57Z</date>
+    </dataset>
+    <dataset name="sm_pct_1954.nc" ID="iu04/processed/values/day/sm_pct_1954.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1954.nc">
+      <dataSize units="Mbytes">324.0</dataSize>
+      <date type="modified">2021-10-01T04:30:39Z</date>
+    </dataset>
+    <dataset name="sm_pct_1955.nc" ID="iu04/processed/values/day/sm_pct_1955.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1955.nc">
+      <dataSize units="Mbytes">325.4</dataSize>
+      <date type="modified">2021-10-01T04:31:32Z</date>
+    </dataset>
+    <dataset name="sm_pct_1956.nc" ID="iu04/processed/values/day/sm_pct_1956.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1956.nc">
+      <dataSize units="Mbytes">326.1</dataSize>
+      <date type="modified">2021-10-01T04:32:20Z</date>
+    </dataset>
+    <dataset name="sm_pct_1957.nc" ID="iu04/processed/values/day/sm_pct_1957.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1957.nc">
+      <dataSize units="Mbytes">326.7</dataSize>
+      <date type="modified">2021-10-01T04:33:13Z</date>
+    </dataset>
+    <dataset name="sm_pct_1958.nc" ID="iu04/processed/values/day/sm_pct_1958.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1958.nc">
+      <dataSize units="Mbytes">326.4</dataSize>
+      <date type="modified">2021-10-01T04:34:01Z</date>
+    </dataset>
+    <dataset name="sm_pct_1959.nc" ID="iu04/processed/values/day/sm_pct_1959.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1959.nc">
+      <dataSize units="Mbytes">326.8</dataSize>
+      <date type="modified">2021-10-01T04:34:58Z</date>
+    </dataset>
+    <dataset name="sm_pct_1960.nc" ID="iu04/processed/values/day/sm_pct_1960.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1960.nc">
+      <dataSize units="Mbytes">327.2</dataSize>
+      <date type="modified">2021-10-01T04:35:40Z</date>
+    </dataset>
+    <dataset name="sm_pct_1961.nc" ID="iu04/processed/values/day/sm_pct_1961.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1961.nc">
+      <dataSize units="Mbytes">320.3</dataSize>
+      <date type="modified">2021-10-01T04:36:30Z</date>
+    </dataset>
+    <dataset name="sm_pct_1962.nc" ID="iu04/processed/values/day/sm_pct_1962.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1962.nc">
+      <dataSize units="Mbytes">326.3</dataSize>
+      <date type="modified">2021-10-01T04:37:20Z</date>
+    </dataset>
+    <dataset name="sm_pct_1963.nc" ID="iu04/processed/values/day/sm_pct_1963.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1963.nc">
+      <dataSize units="Mbytes">324.2</dataSize>
+      <date type="modified">2021-10-01T04:38:05Z</date>
+    </dataset>
+    <dataset name="sm_pct_1964.nc" ID="iu04/processed/values/day/sm_pct_1964.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1964.nc">
+      <dataSize units="Mbytes">326.0</dataSize>
+      <date type="modified">2021-10-01T04:39:04Z</date>
+    </dataset>
+    <dataset name="sm_pct_1965.nc" ID="iu04/processed/values/day/sm_pct_1965.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1965.nc">
+      <dataSize units="Mbytes">320.3</dataSize>
+      <date type="modified">2021-10-01T04:40:04Z</date>
+    </dataset>
+    <dataset name="sm_pct_1966.nc" ID="iu04/processed/values/day/sm_pct_1966.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1966.nc">
+      <dataSize units="Mbytes">327.9</dataSize>
+      <date type="modified">2021-10-01T04:41:05Z</date>
+    </dataset>
+    <dataset name="sm_pct_1967.nc" ID="iu04/processed/values/day/sm_pct_1967.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1967.nc">
+      <dataSize units="Mbytes">322.7</dataSize>
+      <date type="modified">2021-10-01T04:41:41Z</date>
+    </dataset>
+    <dataset name="sm_pct_1968.nc" ID="iu04/processed/values/day/sm_pct_1968.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1968.nc">
+      <dataSize units="Mbytes">328.5</dataSize>
+      <date type="modified">2021-10-01T04:42:28Z</date>
+    </dataset>
+    <dataset name="sm_pct_1969.nc" ID="iu04/processed/values/day/sm_pct_1969.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1969.nc">
+      <dataSize units="Mbytes">326.8</dataSize>
+      <date type="modified">2021-10-01T04:43:17Z</date>
+    </dataset>
+    <dataset name="sm_pct_1970.nc" ID="iu04/processed/values/day/sm_pct_1970.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1970.nc">
+      <dataSize units="Mbytes">326.7</dataSize>
+      <date type="modified">2021-10-01T04:43:56Z</date>
+    </dataset>
+    <dataset name="sm_pct_1971.nc" ID="iu04/processed/values/day/sm_pct_1971.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1971.nc">
+      <dataSize units="Mbytes">328.0</dataSize>
+      <date type="modified">2021-10-01T04:44:52Z</date>
+    </dataset>
+    <dataset name="sm_pct_1972.nc" ID="iu04/processed/values/day/sm_pct_1972.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1972.nc">
+      <dataSize units="Mbytes">326.5</dataSize>
+      <date type="modified">2021-10-01T04:45:45Z</date>
+    </dataset>
+    <dataset name="sm_pct_1973.nc" ID="iu04/processed/values/day/sm_pct_1973.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1973.nc">
+      <dataSize units="Mbytes">328.4</dataSize>
+      <date type="modified">2021-10-01T04:46:22Z</date>
+    </dataset>
+    <dataset name="sm_pct_1974.nc" ID="iu04/processed/values/day/sm_pct_1974.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1974.nc">
+      <dataSize units="Mbytes">328.9</dataSize>
+      <date type="modified">2021-10-01T04:47:20Z</date>
+    </dataset>
+    <dataset name="sm_pct_1975.nc" ID="iu04/processed/values/day/sm_pct_1975.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1975.nc">
+      <dataSize units="Mbytes">330.0</dataSize>
+      <date type="modified">2021-10-01T04:47:58Z</date>
+    </dataset>
+    <dataset name="sm_pct_1976.nc" ID="iu04/processed/values/day/sm_pct_1976.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1976.nc">
+      <dataSize units="Mbytes">324.6</dataSize>
+      <date type="modified">2021-10-01T04:48:51Z</date>
+    </dataset>
+    <dataset name="sm_pct_1977.nc" ID="iu04/processed/values/day/sm_pct_1977.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1977.nc">
+      <dataSize units="Mbytes">326.4</dataSize>
+      <date type="modified">2021-10-01T04:49:31Z</date>
+    </dataset>
+    <dataset name="sm_pct_1978.nc" ID="iu04/processed/values/day/sm_pct_1978.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1978.nc">
+      <dataSize units="Mbytes">329.0</dataSize>
+      <date type="modified">2021-10-01T04:50:29Z</date>
+    </dataset>
+    <dataset name="sm_pct_1979.nc" ID="iu04/processed/values/day/sm_pct_1979.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1979.nc">
+      <dataSize units="Mbytes">327.6</dataSize>
+      <date type="modified">2021-10-01T04:51:16Z</date>
+    </dataset>
+    <dataset name="sm_pct_1980.nc" ID="iu04/processed/values/day/sm_pct_1980.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1980.nc">
+      <dataSize units="Mbytes">327.4</dataSize>
+      <date type="modified">2021-10-01T04:52:04Z</date>
+    </dataset>
+    <dataset name="sm_pct_1981.nc" ID="iu04/processed/values/day/sm_pct_1981.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1981.nc">
+      <dataSize units="Mbytes">326.0</dataSize>
+      <date type="modified">2021-10-01T04:52:51Z</date>
+    </dataset>
+    <dataset name="sm_pct_1982.nc" ID="iu04/processed/values/day/sm_pct_1982.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1982.nc">
+      <dataSize units="Mbytes">326.3</dataSize>
+      <date type="modified">2021-10-01T04:53:39Z</date>
+    </dataset>
+    <dataset name="sm_pct_1983.nc" ID="iu04/processed/values/day/sm_pct_1983.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1983.nc">
+      <dataSize units="Mbytes">327.0</dataSize>
+      <date type="modified">2021-10-01T04:54:27Z</date>
+    </dataset>
+    <dataset name="sm_pct_1984.nc" ID="iu04/processed/values/day/sm_pct_1984.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1984.nc">
+      <dataSize units="Mbytes">330.4</dataSize>
+      <date type="modified">2021-10-01T04:55:08Z</date>
+    </dataset>
+    <dataset name="sm_pct_1985.nc" ID="iu04/processed/values/day/sm_pct_1985.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1985.nc">
+      <dataSize units="Mbytes">327.5</dataSize>
+      <date type="modified">2021-10-01T04:55:48Z</date>
+    </dataset>
+    <dataset name="sm_pct_1986.nc" ID="iu04/processed/values/day/sm_pct_1986.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1986.nc">
+      <dataSize units="Mbytes">328.4</dataSize>
+      <date type="modified">2021-10-01T04:56:31Z</date>
+    </dataset>
+    <dataset name="sm_pct_1987.nc" ID="iu04/processed/values/day/sm_pct_1987.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1987.nc">
+      <dataSize units="Mbytes">327.9</dataSize>
+      <date type="modified">2021-10-01T04:57:19Z</date>
+    </dataset>
+    <dataset name="sm_pct_1988.nc" ID="iu04/processed/values/day/sm_pct_1988.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1988.nc">
+      <dataSize units="Mbytes">329.5</dataSize>
+      <date type="modified">2021-10-20T23:34:19Z</date>
+    </dataset>
+    <dataset name="sm_pct_1989.nc" ID="iu04/processed/values/day/sm_pct_1989.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1989.nc">
+      <dataSize units="Mbytes">326.1</dataSize>
+      <date type="modified">2021-10-01T04:58:37Z</date>
+    </dataset>
+    <dataset name="sm_pct_1990.nc" ID="iu04/processed/values/day/sm_pct_1990.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1990.nc">
+      <dataSize units="Mbytes">325.0</dataSize>
+      <date type="modified">2021-10-01T04:59:21Z</date>
+    </dataset>
+    <dataset name="sm_pct_1991.nc" ID="iu04/processed/values/day/sm_pct_1991.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1991.nc">
+      <dataSize units="Mbytes">324.7</dataSize>
+      <date type="modified">2021-10-01T05:00:03Z</date>
+    </dataset>
+    <dataset name="sm_pct_1992.nc" ID="iu04/processed/values/day/sm_pct_1992.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1992.nc">
+      <dataSize units="Mbytes">328.7</dataSize>
+      <date type="modified">2021-10-01T05:00:53Z</date>
+    </dataset>
+    <dataset name="sm_pct_1993.nc" ID="iu04/processed/values/day/sm_pct_1993.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1993.nc">
+      <dataSize units="Mbytes">328.1</dataSize>
+      <date type="modified">2021-10-01T05:01:34Z</date>
+    </dataset>
+    <dataset name="sm_pct_1994.nc" ID="iu04/processed/values/day/sm_pct_1994.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1994.nc">
+      <dataSize units="Mbytes">321.1</dataSize>
+      <date type="modified">2021-10-01T05:02:27Z</date>
+    </dataset>
+    <dataset name="sm_pct_1995.nc" ID="iu04/processed/values/day/sm_pct_1995.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1995.nc">
+      <dataSize units="Mbytes">327.8</dataSize>
+      <date type="modified">2021-10-01T05:03:10Z</date>
+    </dataset>
+    <dataset name="sm_pct_1996.nc" ID="iu04/processed/values/day/sm_pct_1996.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1996.nc">
+      <dataSize units="Mbytes">327.8</dataSize>
+      <date type="modified">2021-10-01T05:04:00Z</date>
+    </dataset>
+    <dataset name="sm_pct_1997.nc" ID="iu04/processed/values/day/sm_pct_1997.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1997.nc">
+      <dataSize units="Mbytes">328.5</dataSize>
+      <date type="modified">2021-10-01T05:04:51Z</date>
+    </dataset>
+    <dataset name="sm_pct_1998.nc" ID="iu04/processed/values/day/sm_pct_1998.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1998.nc">
+      <dataSize units="Mbytes">329.4</dataSize>
+      <date type="modified">2021-10-01T05:05:35Z</date>
+    </dataset>
+    <dataset name="sm_pct_1999.nc" ID="iu04/processed/values/day/sm_pct_1999.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_1999.nc">
+      <dataSize units="Mbytes">329.1</dataSize>
+      <date type="modified">2021-10-01T05:06:28Z</date>
+    </dataset>
+    <dataset name="sm_pct_2000.nc" ID="iu04/processed/values/day/sm_pct_2000.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2000.nc">
+      <dataSize units="Mbytes">330.7</dataSize>
+      <date type="modified">2021-10-01T05:07:14Z</date>
+    </dataset>
+    <dataset name="sm_pct_2001.nc" ID="iu04/processed/values/day/sm_pct_2001.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2001.nc">
+      <dataSize units="Mbytes">330.2</dataSize>
+      <date type="modified">2021-10-01T05:08:00Z</date>
+    </dataset>
+    <dataset name="sm_pct_2002.nc" ID="iu04/processed/values/day/sm_pct_2002.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2002.nc">
+      <dataSize units="Mbytes">321.6</dataSize>
+      <date type="modified">2021-10-01T05:09:10Z</date>
+    </dataset>
+    <dataset name="sm_pct_2003.nc" ID="iu04/processed/values/day/sm_pct_2003.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2003.nc">
+      <dataSize units="Mbytes">329.2</dataSize>
+      <date type="modified">2021-10-01T05:10:06Z</date>
+    </dataset>
+    <dataset name="sm_pct_2004.nc" ID="iu04/processed/values/day/sm_pct_2004.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2004.nc">
+      <dataSize units="Mbytes">332.3</dataSize>
+      <date type="modified">2021-10-01T05:11:04Z</date>
+    </dataset>
+    <dataset name="sm_pct_2005.nc" ID="iu04/processed/values/day/sm_pct_2005.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2005.nc">
+      <dataSize units="Mbytes">330.1</dataSize>
+      <date type="modified">2021-10-01T05:11:39Z</date>
+    </dataset>
+    <dataset name="sm_pct_2006.nc" ID="iu04/processed/values/day/sm_pct_2006.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2006.nc">
+      <dataSize units="Mbytes">331.1</dataSize>
+      <date type="modified">2021-10-01T05:12:24Z</date>
+    </dataset>
+    <dataset name="sm_pct_2007.nc" ID="iu04/processed/values/day/sm_pct_2007.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2007.nc">
+      <dataSize units="Mbytes">329.6</dataSize>
+      <date type="modified">2021-10-01T05:13:00Z</date>
+    </dataset>
+    <dataset name="sm_pct_2008.nc" ID="iu04/processed/values/day/sm_pct_2008.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2008.nc">
+      <dataSize units="Mbytes">328.9</dataSize>
+      <date type="modified">2021-10-01T05:13:46Z</date>
+    </dataset>
+    <dataset name="sm_pct_2009.nc" ID="iu04/processed/values/day/sm_pct_2009.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2009.nc">
+      <dataSize units="Mbytes">326.8</dataSize>
+      <date type="modified">2021-10-01T05:14:33Z</date>
+    </dataset>
+    <dataset name="sm_pct_2010.nc" ID="iu04/processed/values/day/sm_pct_2010.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2010.nc">
+      <dataSize units="Mbytes">329.6</dataSize>
+      <date type="modified">2021-10-01T05:15:15Z</date>
+    </dataset>
+    <dataset name="sm_pct_2011.nc" ID="iu04/processed/values/day/sm_pct_2011.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2011.nc">
+      <dataSize units="Mbytes">329.9</dataSize>
+      <date type="modified">2021-10-01T05:16:06Z</date>
+    </dataset>
+    <dataset name="sm_pct_2012.nc" ID="iu04/processed/values/day/sm_pct_2012.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2012.nc">
+      <dataSize units="Mbytes">329.1</dataSize>
+      <date type="modified">2021-10-01T05:16:52Z</date>
+    </dataset>
+    <dataset name="sm_pct_2013.nc" ID="iu04/processed/values/day/sm_pct_2013.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2013.nc">
+      <dataSize units="Mbytes">329.4</dataSize>
+      <date type="modified">2021-10-01T05:17:43Z</date>
+    </dataset>
+    <dataset name="sm_pct_2014.nc" ID="iu04/processed/values/day/sm_pct_2014.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2014.nc">
+      <dataSize units="Mbytes">328.7</dataSize>
+      <date type="modified">2021-10-01T05:18:24Z</date>
+    </dataset>
+    <dataset name="sm_pct_2015.nc" ID="iu04/processed/values/day/sm_pct_2015.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2015.nc">
+      <dataSize units="Mbytes">346.8</dataSize>
+      <date type="modified">2022-01-29T06:49:21Z</date>
+    </dataset>
+    <dataset name="sm_pct_2016.nc" ID="iu04/processed/values/day/sm_pct_2016.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2016.nc">
+      <dataSize units="Mbytes">359.9</dataSize>
+      <date type="modified">2022-02-01T18:28:28Z</date>
+    </dataset>
+    <dataset name="sm_pct_2017.nc" ID="iu04/processed/values/day/sm_pct_2017.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2017.nc">
+      <dataSize units="Mbytes">364.9</dataSize>
+      <date type="modified">2022-02-01T18:29:23Z</date>
+    </dataset>
+    <dataset name="sm_pct_2018.nc" ID="iu04/processed/values/day/sm_pct_2018.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2018.nc">
+      <dataSize units="Mbytes">389.9</dataSize>
+      <date type="modified">2022-02-01T18:30:09Z</date>
+    </dataset>
+    <dataset name="sm_pct_2019.nc" ID="iu04/processed/values/day/sm_pct_2019.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2019.nc">
+      <dataSize units="Mbytes">392.4</dataSize>
+      <date type="modified">2022-02-01T18:31:08Z</date>
+    </dataset>
+    <dataset name="sm_pct_2020.nc" ID="iu04/processed/values/day/sm_pct_2020.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2020.nc">
+      <dataSize units="Mbytes">330.8</dataSize>
+      <date type="modified">2024-06-02T15:04:18Z</date>
+    </dataset>
+    <dataset name="sm_pct_2021.nc" ID="iu04/processed/values/day/sm_pct_2021.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2021.nc">
+      <dataSize units="Mbytes">329.4</dataSize>
+      <date type="modified">2024-06-02T15:04:22Z</date>
+    </dataset>
+    <dataset name="sm_pct_2022.nc" ID="iu04/processed/values/day/sm_pct_2022.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2022.nc">
+      <dataSize units="Mbytes">330.5</dataSize>
+      <date type="modified">2024-06-02T15:04:28Z</date>
+    </dataset>
+    <dataset name="sm_pct_2023.nc" ID="iu04/processed/values/day/sm_pct_2023.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2023.nc">
+      <dataSize units="Mbytes">329.9</dataSize>
+      <date type="modified">2024-09-02T14:02:02Z</date>
+    </dataset>
+    <dataset name="sm_pct_2024.nc" ID="iu04/processed/values/day/sm_pct_2024.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2024.nc">
+      <dataSize units="Mbytes">330.8</dataSize>
+      <date type="modified">2025-07-02T14:28:02Z</date>
+    </dataset>
+    <dataset name="sm_pct_2025.nc" ID="iu04/processed/values/day/sm_pct_2025.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2025.nc">
+      <dataSize units="Mbytes">330.2</dataSize>
+      <date type="modified">2026-07-02T13:25:10Z</date>
+    </dataset>
+    <dataset name="sm_pct_2026.nc" ID="iu04/processed/values/day/sm_pct_2026.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/sm_pct_2026.nc">
+      <dataSize units="Mbytes">946.3</dataSize>
+      <date type="modified">2026-10-30T13:58:50Z</date>
+    </dataset>
+    <dataset name="ss_pct_1911.nc" ID="iu04/processed/values/day/ss_pct_1911.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1911.nc">
+      <dataSize units="Mbytes">311.0</dataSize>
+      <date type="modified">2021-10-01T00:53:14Z</date>
+    </dataset>
+    <dataset name="ss_pct_1912.nc" ID="iu04/processed/values/day/ss_pct_1912.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1912.nc">
+      <dataSize units="Mbytes">298.1</dataSize>
+      <date type="modified">2021-10-01T00:54:08Z</date>
+    </dataset>
+    <dataset name="ss_pct_1913.nc" ID="iu04/processed/values/day/ss_pct_1913.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1913.nc">
+      <dataSize units="Mbytes">297.0</dataSize>
+      <date type="modified">2021-10-01T00:55:02Z</date>
+    </dataset>
+    <dataset name="ss_pct_1914.nc" ID="iu04/processed/values/day/ss_pct_1914.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1914.nc">
+      <dataSize units="Mbytes">299.3</dataSize>
+      <date type="modified">2021-10-01T00:55:52Z</date>
+    </dataset>
+    <dataset name="ss_pct_1915.nc" ID="iu04/processed/values/day/ss_pct_1915.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1915.nc">
+      <dataSize units="Mbytes">301.9</dataSize>
+      <date type="modified">2021-10-01T00:56:40Z</date>
+    </dataset>
+    <dataset name="ss_pct_1916.nc" ID="iu04/processed/values/day/ss_pct_1916.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1916.nc">
+      <dataSize units="Mbytes">304.5</dataSize>
+      <date type="modified">2021-10-01T00:57:41Z</date>
+    </dataset>
+    <dataset name="ss_pct_1917.nc" ID="iu04/processed/values/day/ss_pct_1917.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1917.nc">
+      <dataSize units="Mbytes">304.5</dataSize>
+      <date type="modified">2021-10-01T00:58:26Z</date>
+    </dataset>
+    <dataset name="ss_pct_1918.nc" ID="iu04/processed/values/day/ss_pct_1918.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1918.nc">
+      <dataSize units="Mbytes">303.7</dataSize>
+      <date type="modified">2021-10-01T00:59:16Z</date>
+    </dataset>
+    <dataset name="ss_pct_1919.nc" ID="iu04/processed/values/day/ss_pct_1919.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1919.nc">
+      <dataSize units="Mbytes">303.2</dataSize>
+      <date type="modified">2021-10-01T01:00:08Z</date>
+    </dataset>
+    <dataset name="ss_pct_1920.nc" ID="iu04/processed/values/day/ss_pct_1920.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1920.nc">
+      <dataSize units="Mbytes">309.2</dataSize>
+      <date type="modified">2021-10-01T01:01:00Z</date>
+    </dataset>
+    <dataset name="ss_pct_1921.nc" ID="iu04/processed/values/day/ss_pct_1921.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1921.nc">
+      <dataSize units="Mbytes">307.3</dataSize>
+      <date type="modified">2021-10-01T01:02:00Z</date>
+    </dataset>
+    <dataset name="ss_pct_1922.nc" ID="iu04/processed/values/day/ss_pct_1922.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1922.nc">
+      <dataSize units="Mbytes">305.4</dataSize>
+      <date type="modified">2021-10-01T01:02:53Z</date>
+    </dataset>
+    <dataset name="ss_pct_1923.nc" ID="iu04/processed/values/day/ss_pct_1923.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1923.nc">
+      <dataSize units="Mbytes">307.5</dataSize>
+      <date type="modified">2021-10-01T01:03:41Z</date>
+    </dataset>
+    <dataset name="ss_pct_1924.nc" ID="iu04/processed/values/day/ss_pct_1924.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1924.nc">
+      <dataSize units="Mbytes">299.9</dataSize>
+      <date type="modified">2021-10-01T01:04:27Z</date>
+    </dataset>
+    <dataset name="ss_pct_1925.nc" ID="iu04/processed/values/day/ss_pct_1925.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1925.nc">
+      <dataSize units="Mbytes">303.8</dataSize>
+      <date type="modified">2021-10-01T01:05:24Z</date>
+    </dataset>
+    <dataset name="ss_pct_1926.nc" ID="iu04/processed/values/day/ss_pct_1926.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1926.nc">
+      <dataSize units="Mbytes">302.9</dataSize>
+      <date type="modified">2021-10-01T01:06:22Z</date>
+    </dataset>
+    <dataset name="ss_pct_1927.nc" ID="iu04/processed/values/day/ss_pct_1927.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1927.nc">
+      <dataSize units="Mbytes">303.7</dataSize>
+      <date type="modified">2021-10-01T01:07:04Z</date>
+    </dataset>
+    <dataset name="ss_pct_1928.nc" ID="iu04/processed/values/day/ss_pct_1928.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1928.nc">
+      <dataSize units="Mbytes">299.1</dataSize>
+      <date type="modified">2021-10-01T01:08:07Z</date>
+    </dataset>
+    <dataset name="ss_pct_1929.nc" ID="iu04/processed/values/day/ss_pct_1929.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1929.nc">
+      <dataSize units="Mbytes">299.7</dataSize>
+      <date type="modified">2021-10-01T01:08:55Z</date>
+    </dataset>
+    <dataset name="ss_pct_1930.nc" ID="iu04/processed/values/day/ss_pct_1930.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1930.nc">
+      <dataSize units="Mbytes">305.7</dataSize>
+      <date type="modified">2021-10-01T01:10:00Z</date>
+    </dataset>
+    <dataset name="ss_pct_1931.nc" ID="iu04/processed/values/day/ss_pct_1931.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1931.nc">
+      <dataSize units="Mbytes">305.8</dataSize>
+      <date type="modified">2021-10-01T01:11:09Z</date>
+    </dataset>
+    <dataset name="ss_pct_1932.nc" ID="iu04/processed/values/day/ss_pct_1932.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1932.nc">
+      <dataSize units="Mbytes">307.7</dataSize>
+      <date type="modified">2021-10-01T01:11:48Z</date>
+    </dataset>
+    <dataset name="ss_pct_1933.nc" ID="iu04/processed/values/day/ss_pct_1933.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1933.nc">
+      <dataSize units="Mbytes">309.7</dataSize>
+      <date type="modified">2021-10-01T01:12:28Z</date>
+    </dataset>
+    <dataset name="ss_pct_1934.nc" ID="iu04/processed/values/day/ss_pct_1934.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1934.nc">
+      <dataSize units="Mbytes">307.7</dataSize>
+      <date type="modified">2021-10-01T01:13:14Z</date>
+    </dataset>
+    <dataset name="ss_pct_1935.nc" ID="iu04/processed/values/day/ss_pct_1935.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1935.nc">
+      <dataSize units="Mbytes">309.1</dataSize>
+      <date type="modified">2021-10-01T01:14:04Z</date>
+    </dataset>
+    <dataset name="ss_pct_1936.nc" ID="iu04/processed/values/day/ss_pct_1936.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1936.nc">
+      <dataSize units="Mbytes">305.7</dataSize>
+      <date type="modified">2021-10-01T01:14:47Z</date>
+    </dataset>
+    <dataset name="ss_pct_1937.nc" ID="iu04/processed/values/day/ss_pct_1937.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1937.nc">
+      <dataSize units="Mbytes">311.2</dataSize>
+      <date type="modified">2021-10-01T01:15:32Z</date>
+    </dataset>
+    <dataset name="ss_pct_1938.nc" ID="iu04/processed/values/day/ss_pct_1938.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1938.nc">
+      <dataSize units="Mbytes">312.2</dataSize>
+      <date type="modified">2021-10-01T01:16:18Z</date>
+    </dataset>
+    <dataset name="ss_pct_1939.nc" ID="iu04/processed/values/day/ss_pct_1939.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1939.nc">
+      <dataSize units="Mbytes">313.5</dataSize>
+      <date type="modified">2021-10-01T01:17:09Z</date>
+    </dataset>
+    <dataset name="ss_pct_1940.nc" ID="iu04/processed/values/day/ss_pct_1940.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1940.nc">
+      <dataSize units="Mbytes">306.8</dataSize>
+      <date type="modified">2021-10-01T01:18:02Z</date>
+    </dataset>
+    <dataset name="ss_pct_1941.nc" ID="iu04/processed/values/day/ss_pct_1941.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1941.nc">
+      <dataSize units="Mbytes">322.1</dataSize>
+      <date type="modified">2021-10-01T01:18:50Z</date>
+    </dataset>
+    <dataset name="ss_pct_1942.nc" ID="iu04/processed/values/day/ss_pct_1942.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1942.nc">
+      <dataSize units="Mbytes">321.8</dataSize>
+      <date type="modified">2021-10-01T01:19:46Z</date>
+    </dataset>
+    <dataset name="ss_pct_1943.nc" ID="iu04/processed/values/day/ss_pct_1943.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1943.nc">
+      <dataSize units="Mbytes">322.0</dataSize>
+      <date type="modified">2021-10-01T01:20:41Z</date>
+    </dataset>
+    <dataset name="ss_pct_1944.nc" ID="iu04/processed/values/day/ss_pct_1944.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1944.nc">
+      <dataSize units="Mbytes">318.1</dataSize>
+      <date type="modified">2021-10-01T01:21:20Z</date>
+    </dataset>
+    <dataset name="ss_pct_1945.nc" ID="iu04/processed/values/day/ss_pct_1945.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1945.nc">
+      <dataSize units="Mbytes">319.4</dataSize>
+      <date type="modified">2021-10-01T01:22:02Z</date>
+    </dataset>
+    <dataset name="ss_pct_1946.nc" ID="iu04/processed/values/day/ss_pct_1946.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1946.nc">
+      <dataSize units="Mbytes">313.2</dataSize>
+      <date type="modified">2021-10-01T01:22:51Z</date>
+    </dataset>
+    <dataset name="ss_pct_1947.nc" ID="iu04/processed/values/day/ss_pct_1947.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1947.nc">
+      <dataSize units="Mbytes">322.9</dataSize>
+      <date type="modified">2021-10-01T01:23:41Z</date>
+    </dataset>
+    <dataset name="ss_pct_1948.nc" ID="iu04/processed/values/day/ss_pct_1948.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1948.nc">
+      <dataSize units="Mbytes">323.7</dataSize>
+      <date type="modified">2021-10-01T01:24:29Z</date>
+    </dataset>
+    <dataset name="ss_pct_1949.nc" ID="iu04/processed/values/day/ss_pct_1949.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1949.nc">
+      <dataSize units="Mbytes">321.9</dataSize>
+      <date type="modified">2021-10-01T01:25:22Z</date>
+    </dataset>
+    <dataset name="ss_pct_1950.nc" ID="iu04/processed/values/day/ss_pct_1950.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1950.nc">
+      <dataSize units="Mbytes">321.9</dataSize>
+      <date type="modified">2021-10-01T01:26:15Z</date>
+    </dataset>
+    <dataset name="ss_pct_1951.nc" ID="iu04/processed/values/day/ss_pct_1951.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1951.nc">
+      <dataSize units="Mbytes">318.5</dataSize>
+      <date type="modified">2021-10-01T01:27:03Z</date>
+    </dataset>
+    <dataset name="ss_pct_1952.nc" ID="iu04/processed/values/day/ss_pct_1952.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1952.nc">
+      <dataSize units="Mbytes">320.9</dataSize>
+      <date type="modified">2021-10-01T01:28:01Z</date>
+    </dataset>
+    <dataset name="ss_pct_1953.nc" ID="iu04/processed/values/day/ss_pct_1953.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1953.nc">
+      <dataSize units="Mbytes">321.5</dataSize>
+      <date type="modified">2021-10-01T01:28:49Z</date>
+    </dataset>
+    <dataset name="ss_pct_1954.nc" ID="iu04/processed/values/day/ss_pct_1954.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1954.nc">
+      <dataSize units="Mbytes">321.6</dataSize>
+      <date type="modified">2021-10-01T01:29:42Z</date>
+    </dataset>
+    <dataset name="ss_pct_1955.nc" ID="iu04/processed/values/day/ss_pct_1955.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1955.nc">
+      <dataSize units="Mbytes">323.2</dataSize>
+      <date type="modified">2021-10-01T01:30:36Z</date>
+    </dataset>
+    <dataset name="ss_pct_1956.nc" ID="iu04/processed/values/day/ss_pct_1956.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1956.nc">
+      <dataSize units="Mbytes">323.6</dataSize>
+      <date type="modified">2021-10-01T01:31:24Z</date>
+    </dataset>
+    <dataset name="ss_pct_1957.nc" ID="iu04/processed/values/day/ss_pct_1957.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1957.nc">
+      <dataSize units="Mbytes">324.7</dataSize>
+      <date type="modified">2021-10-01T01:32:20Z</date>
+    </dataset>
+    <dataset name="ss_pct_1958.nc" ID="iu04/processed/values/day/ss_pct_1958.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1958.nc">
+      <dataSize units="Mbytes">324.6</dataSize>
+      <date type="modified">2021-10-01T01:33:15Z</date>
+    </dataset>
+    <dataset name="ss_pct_1959.nc" ID="iu04/processed/values/day/ss_pct_1959.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1959.nc">
+      <dataSize units="Mbytes">325.4</dataSize>
+      <date type="modified">2021-10-01T01:33:59Z</date>
+    </dataset>
+    <dataset name="ss_pct_1960.nc" ID="iu04/processed/values/day/ss_pct_1960.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1960.nc">
+      <dataSize units="Mbytes">325.2</dataSize>
+      <date type="modified">2021-10-01T01:34:51Z</date>
+    </dataset>
+    <dataset name="ss_pct_1961.nc" ID="iu04/processed/values/day/ss_pct_1961.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1961.nc">
+      <dataSize units="Mbytes">317.6</dataSize>
+      <date type="modified">2021-10-01T01:35:57Z</date>
+    </dataset>
+    <dataset name="ss_pct_1962.nc" ID="iu04/processed/values/day/ss_pct_1962.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1962.nc">
+      <dataSize units="Mbytes">324.3</dataSize>
+      <date type="modified">2021-10-01T01:36:38Z</date>
+    </dataset>
+    <dataset name="ss_pct_1963.nc" ID="iu04/processed/values/day/ss_pct_1963.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1963.nc">
+      <dataSize units="Mbytes">322.3</dataSize>
+      <date type="modified">2021-10-01T01:37:32Z</date>
+    </dataset>
+    <dataset name="ss_pct_1964.nc" ID="iu04/processed/values/day/ss_pct_1964.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1964.nc">
+      <dataSize units="Mbytes">323.5</dataSize>
+      <date type="modified">2021-10-01T01:38:35Z</date>
+    </dataset>
+    <dataset name="ss_pct_1965.nc" ID="iu04/processed/values/day/ss_pct_1965.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1965.nc">
+      <dataSize units="Mbytes">317.7</dataSize>
+      <date type="modified">2021-10-01T01:39:31Z</date>
+    </dataset>
+    <dataset name="ss_pct_1966.nc" ID="iu04/processed/values/day/ss_pct_1966.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1966.nc">
+      <dataSize units="Mbytes">326.4</dataSize>
+      <date type="modified">2021-10-01T01:40:37Z</date>
+    </dataset>
+    <dataset name="ss_pct_1967.nc" ID="iu04/processed/values/day/ss_pct_1967.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1967.nc">
+      <dataSize units="Mbytes">320.3</dataSize>
+      <date type="modified">2021-10-01T01:41:20Z</date>
+    </dataset>
+    <dataset name="ss_pct_1968.nc" ID="iu04/processed/values/day/ss_pct_1968.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1968.nc">
+      <dataSize units="Mbytes">326.4</dataSize>
+      <date type="modified">2021-10-01T01:42:04Z</date>
+    </dataset>
+    <dataset name="ss_pct_1969.nc" ID="iu04/processed/values/day/ss_pct_1969.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1969.nc">
+      <dataSize units="Mbytes">325.0</dataSize>
+      <date type="modified">2021-10-01T01:42:50Z</date>
+    </dataset>
+    <dataset name="ss_pct_1970.nc" ID="iu04/processed/values/day/ss_pct_1970.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1970.nc">
+      <dataSize units="Mbytes">325.0</dataSize>
+      <date type="modified">2021-10-01T01:43:39Z</date>
+    </dataset>
+    <dataset name="ss_pct_1971.nc" ID="iu04/processed/values/day/ss_pct_1971.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1971.nc">
+      <dataSize units="Mbytes">326.3</dataSize>
+      <date type="modified">2021-10-01T01:44:35Z</date>
+    </dataset>
+    <dataset name="ss_pct_1972.nc" ID="iu04/processed/values/day/ss_pct_1972.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1972.nc">
+      <dataSize units="Mbytes">324.3</dataSize>
+      <date type="modified">2021-10-01T01:45:25Z</date>
+    </dataset>
+    <dataset name="ss_pct_1973.nc" ID="iu04/processed/values/day/ss_pct_1973.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1973.nc">
+      <dataSize units="Mbytes">326.9</dataSize>
+      <date type="modified">2021-10-01T01:46:16Z</date>
+    </dataset>
+    <dataset name="ss_pct_1974.nc" ID="iu04/processed/values/day/ss_pct_1974.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1974.nc">
+      <dataSize units="Mbytes">325.2</dataSize>
+      <date type="modified">2021-10-01T01:47:06Z</date>
+    </dataset>
+    <dataset name="ss_pct_1975.nc" ID="iu04/processed/values/day/ss_pct_1975.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1975.nc">
+      <dataSize units="Mbytes">328.4</dataSize>
+      <date type="modified">2021-10-01T01:47:59Z</date>
+    </dataset>
+    <dataset name="ss_pct_1976.nc" ID="iu04/processed/values/day/ss_pct_1976.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1976.nc">
+      <dataSize units="Mbytes">321.7</dataSize>
+      <date type="modified">2021-10-01T01:48:54Z</date>
+    </dataset>
+    <dataset name="ss_pct_1977.nc" ID="iu04/processed/values/day/ss_pct_1977.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1977.nc">
+      <dataSize units="Mbytes">324.2</dataSize>
+      <date type="modified">2021-10-01T01:49:52Z</date>
+    </dataset>
+    <dataset name="ss_pct_1978.nc" ID="iu04/processed/values/day/ss_pct_1978.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1978.nc">
+      <dataSize units="Mbytes">328.2</dataSize>
+      <date type="modified">2021-10-01T01:50:44Z</date>
+    </dataset>
+    <dataset name="ss_pct_1979.nc" ID="iu04/processed/values/day/ss_pct_1979.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1979.nc">
+      <dataSize units="Mbytes">325.6</dataSize>
+      <date type="modified">2021-10-01T01:51:25Z</date>
+    </dataset>
+    <dataset name="ss_pct_1980.nc" ID="iu04/processed/values/day/ss_pct_1980.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1980.nc">
+      <dataSize units="Mbytes">325.3</dataSize>
+      <date type="modified">2021-10-01T01:52:09Z</date>
+    </dataset>
+    <dataset name="ss_pct_1981.nc" ID="iu04/processed/values/day/ss_pct_1981.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1981.nc">
+      <dataSize units="Mbytes">323.3</dataSize>
+      <date type="modified">2021-10-01T01:53:02Z</date>
+    </dataset>
+    <dataset name="ss_pct_1982.nc" ID="iu04/processed/values/day/ss_pct_1982.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1982.nc">
+      <dataSize units="Mbytes">323.6</dataSize>
+      <date type="modified">2021-10-01T01:54:02Z</date>
+    </dataset>
+    <dataset name="ss_pct_1983.nc" ID="iu04/processed/values/day/ss_pct_1983.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1983.nc">
+      <dataSize units="Mbytes">325.5</dataSize>
+      <date type="modified">2021-10-01T01:54:41Z</date>
+    </dataset>
+    <dataset name="ss_pct_1984.nc" ID="iu04/processed/values/day/ss_pct_1984.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1984.nc">
+      <dataSize units="Mbytes">328.6</dataSize>
+      <date type="modified">2021-10-01T01:55:39Z</date>
+    </dataset>
+    <dataset name="ss_pct_1985.nc" ID="iu04/processed/values/day/ss_pct_1985.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1985.nc">
+      <dataSize units="Mbytes">326.0</dataSize>
+      <date type="modified">2021-10-01T01:56:26Z</date>
+    </dataset>
+    <dataset name="ss_pct_1986.nc" ID="iu04/processed/values/day/ss_pct_1986.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1986.nc">
+      <dataSize units="Mbytes">327.2</dataSize>
+      <date type="modified">2021-10-01T01:57:20Z</date>
+    </dataset>
+    <dataset name="ss_pct_1987.nc" ID="iu04/processed/values/day/ss_pct_1987.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1987.nc">
+      <dataSize units="Mbytes">326.0</dataSize>
+      <date type="modified">2021-10-01T01:58:09Z</date>
+    </dataset>
+    <dataset name="ss_pct_1988.nc" ID="iu04/processed/values/day/ss_pct_1988.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1988.nc">
+      <dataSize units="Mbytes">328.1</dataSize>
+      <date type="modified">2021-10-20T23:30:58Z</date>
+    </dataset>
+    <dataset name="ss_pct_1989.nc" ID="iu04/processed/values/day/ss_pct_1989.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1989.nc">
+      <dataSize units="Mbytes">324.4</dataSize>
+      <date type="modified">2021-10-01T01:59:54Z</date>
+    </dataset>
+    <dataset name="ss_pct_1990.nc" ID="iu04/processed/values/day/ss_pct_1990.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1990.nc">
+      <dataSize units="Mbytes">323.2</dataSize>
+      <date type="modified">2021-10-01T02:00:58Z</date>
+    </dataset>
+    <dataset name="ss_pct_1991.nc" ID="iu04/processed/values/day/ss_pct_1991.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1991.nc">
+      <dataSize units="Mbytes">321.2</dataSize>
+      <date type="modified">2021-10-01T02:01:36Z</date>
+    </dataset>
+    <dataset name="ss_pct_1992.nc" ID="iu04/processed/values/day/ss_pct_1992.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1992.nc">
+      <dataSize units="Mbytes">327.4</dataSize>
+      <date type="modified">2021-10-01T02:02:37Z</date>
+    </dataset>
+    <dataset name="ss_pct_1993.nc" ID="iu04/processed/values/day/ss_pct_1993.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1993.nc">
+      <dataSize units="Mbytes">326.3</dataSize>
+      <date type="modified">2021-10-01T02:03:25Z</date>
+    </dataset>
+    <dataset name="ss_pct_1994.nc" ID="iu04/processed/values/day/ss_pct_1994.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1994.nc">
+      <dataSize units="Mbytes">317.7</dataSize>
+      <date type="modified">2021-10-01T02:04:19Z</date>
+    </dataset>
+    <dataset name="ss_pct_1995.nc" ID="iu04/processed/values/day/ss_pct_1995.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1995.nc">
+      <dataSize units="Mbytes">325.9</dataSize>
+      <date type="modified">2021-10-01T02:05:07Z</date>
+    </dataset>
+    <dataset name="ss_pct_1996.nc" ID="iu04/processed/values/day/ss_pct_1996.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1996.nc">
+      <dataSize units="Mbytes">326.2</dataSize>
+      <date type="modified">2021-10-01T02:06:01Z</date>
+    </dataset>
+    <dataset name="ss_pct_1997.nc" ID="iu04/processed/values/day/ss_pct_1997.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1997.nc">
+      <dataSize units="Mbytes">326.8</dataSize>
+      <date type="modified">2021-10-01T02:07:06Z</date>
+    </dataset>
+    <dataset name="ss_pct_1998.nc" ID="iu04/processed/values/day/ss_pct_1998.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1998.nc">
+      <dataSize units="Mbytes">328.0</dataSize>
+      <date type="modified">2021-10-01T02:07:57Z</date>
+    </dataset>
+    <dataset name="ss_pct_1999.nc" ID="iu04/processed/values/day/ss_pct_1999.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_1999.nc">
+      <dataSize units="Mbytes">327.2</dataSize>
+      <date type="modified">2021-10-01T02:08:51Z</date>
+    </dataset>
+    <dataset name="ss_pct_2000.nc" ID="iu04/processed/values/day/ss_pct_2000.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2000.nc">
+      <dataSize units="Mbytes">328.4</dataSize>
+      <date type="modified">2021-10-01T02:09:57Z</date>
+    </dataset>
+    <dataset name="ss_pct_2001.nc" ID="iu04/processed/values/day/ss_pct_2001.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2001.nc">
+      <dataSize units="Mbytes">328.5</dataSize>
+      <date type="modified">2021-10-01T02:10:57Z</date>
+    </dataset>
+    <dataset name="ss_pct_2002.nc" ID="iu04/processed/values/day/ss_pct_2002.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2002.nc">
+      <dataSize units="Mbytes">318.4</dataSize>
+      <date type="modified">2021-10-01T02:11:37Z</date>
+    </dataset>
+    <dataset name="ss_pct_2003.nc" ID="iu04/processed/values/day/ss_pct_2003.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2003.nc">
+      <dataSize units="Mbytes">327.4</dataSize>
+      <date type="modified">2021-10-01T02:12:22Z</date>
+    </dataset>
+    <dataset name="ss_pct_2004.nc" ID="iu04/processed/values/day/ss_pct_2004.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2004.nc">
+      <dataSize units="Mbytes">330.4</dataSize>
+      <date type="modified">2021-10-01T02:13:08Z</date>
+    </dataset>
+    <dataset name="ss_pct_2005.nc" ID="iu04/processed/values/day/ss_pct_2005.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2005.nc">
+      <dataSize units="Mbytes">329.0</dataSize>
+      <date type="modified">2021-10-01T02:14:03Z</date>
+    </dataset>
+    <dataset name="ss_pct_2006.nc" ID="iu04/processed/values/day/ss_pct_2006.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2006.nc">
+      <dataSize units="Mbytes">329.2</dataSize>
+      <date type="modified">2021-10-01T02:14:51Z</date>
+    </dataset>
+    <dataset name="ss_pct_2007.nc" ID="iu04/processed/values/day/ss_pct_2007.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2007.nc">
+      <dataSize units="Mbytes">327.9</dataSize>
+      <date type="modified">2021-10-01T02:15:47Z</date>
+    </dataset>
+    <dataset name="ss_pct_2008.nc" ID="iu04/processed/values/day/ss_pct_2008.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2008.nc">
+      <dataSize units="Mbytes">326.2</dataSize>
+      <date type="modified">2021-10-01T02:16:38Z</date>
+    </dataset>
+    <dataset name="ss_pct_2009.nc" ID="iu04/processed/values/day/ss_pct_2009.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2009.nc">
+      <dataSize units="Mbytes">323.2</dataSize>
+      <date type="modified">2021-10-01T02:17:27Z</date>
+    </dataset>
+    <dataset name="ss_pct_2010.nc" ID="iu04/processed/values/day/ss_pct_2010.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2010.nc">
+      <dataSize units="Mbytes">327.8</dataSize>
+      <date type="modified">2021-10-01T02:18:24Z</date>
+    </dataset>
+    <dataset name="ss_pct_2011.nc" ID="iu04/processed/values/day/ss_pct_2011.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2011.nc">
+      <dataSize units="Mbytes">327.1</dataSize>
+      <date type="modified">2021-10-01T02:19:23Z</date>
+    </dataset>
+    <dataset name="ss_pct_2012.nc" ID="iu04/processed/values/day/ss_pct_2012.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2012.nc">
+      <dataSize units="Mbytes">327.2</dataSize>
+      <date type="modified">2021-10-01T02:20:15Z</date>
+    </dataset>
+    <dataset name="ss_pct_2013.nc" ID="iu04/processed/values/day/ss_pct_2013.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2013.nc">
+      <dataSize units="Mbytes">327.7</dataSize>
+      <date type="modified">2021-10-01T02:20:55Z</date>
+    </dataset>
+    <dataset name="ss_pct_2014.nc" ID="iu04/processed/values/day/ss_pct_2014.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2014.nc">
+      <dataSize units="Mbytes">326.6</dataSize>
+      <date type="modified">2021-10-01T02:21:33Z</date>
+    </dataset>
+    <dataset name="ss_pct_2015.nc" ID="iu04/processed/values/day/ss_pct_2015.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2015.nc">
+      <dataSize units="Mbytes">344.6</dataSize>
+      <date type="modified">2022-01-29T06:34:35Z</date>
+    </dataset>
+    <dataset name="ss_pct_2016.nc" ID="iu04/processed/values/day/ss_pct_2016.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2016.nc">
+      <dataSize units="Mbytes">361.3</dataSize>
+      <date type="modified">2022-02-01T18:16:17Z</date>
+    </dataset>
+    <dataset name="ss_pct_2017.nc" ID="iu04/processed/values/day/ss_pct_2017.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2017.nc">
+      <dataSize units="Mbytes">362.4</dataSize>
+      <date type="modified">2022-02-01T18:17:16Z</date>
+    </dataset>
+    <dataset name="ss_pct_2018.nc" ID="iu04/processed/values/day/ss_pct_2018.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2018.nc">
+      <dataSize units="Mbytes">389.1</dataSize>
+      <date type="modified">2022-02-01T18:18:12Z</date>
+    </dataset>
+    <dataset name="ss_pct_2019.nc" ID="iu04/processed/values/day/ss_pct_2019.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2019.nc">
+      <dataSize units="Mbytes">389.7</dataSize>
+      <date type="modified">2022-02-01T18:19:03Z</date>
+    </dataset>
+    <dataset name="ss_pct_2020.nc" ID="iu04/processed/values/day/ss_pct_2020.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2020.nc">
+      <dataSize units="Mbytes">329.3</dataSize>
+      <date type="modified">2024-06-02T15:05:57Z</date>
+    </dataset>
+    <dataset name="ss_pct_2021.nc" ID="iu04/processed/values/day/ss_pct_2021.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2021.nc">
+      <dataSize units="Mbytes">327.6</dataSize>
+      <date type="modified">2024-06-02T15:06:02Z</date>
+    </dataset>
+    <dataset name="ss_pct_2022.nc" ID="iu04/processed/values/day/ss_pct_2022.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2022.nc">
+      <dataSize units="Mbytes">329.4</dataSize>
+      <date type="modified">2024-06-02T15:06:08Z</date>
+    </dataset>
+    <dataset name="ss_pct_2023.nc" ID="iu04/processed/values/day/ss_pct_2023.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2023.nc">
+      <dataSize units="Mbytes">327.7</dataSize>
+      <date type="modified">2024-09-02T14:03:50Z</date>
+    </dataset>
+    <dataset name="ss_pct_2024.nc" ID="iu04/processed/values/day/ss_pct_2024.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2024.nc">
+      <dataSize units="Mbytes">328.8</dataSize>
+      <date type="modified">2025-07-02T14:29:35Z</date>
+    </dataset>
+    <dataset name="ss_pct_2025.nc" ID="iu04/processed/values/day/ss_pct_2025.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2025.nc">
+      <dataSize units="Mbytes">328.6</dataSize>
+      <date type="modified">2026-07-02T13:26:53Z</date>
+    </dataset>
+    <dataset name="ss_pct_2026.nc" ID="iu04/processed/values/day/ss_pct_2026.nc" urlPath="iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/day/ss_pct_2026.nc">
+      <dataSize units="Mbytes">932.9</dataSize>
+      <date type="modified">2026-10-30T13:59:00Z</date>
+    </dataset>
+  </dataset>
+</catalog>

@@ -1,0 +1,328 @@
+{
+ "currentVersion": 10.91,
+ "cimVersion": "2.9.0",
+ "id": 49,
+ "name": "StationCatchments",
+ "type": "Feature Layer",
+ "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The Station Catchments feature class is primarily derived using the geofabric toolset from aggregations of catchments from the Geofabric Surface Hydrology Network product, with splitting of some AHGFCatchments at the outlets of Station Catchments. Station Catchments represent upstream contributing catchments of important Gauging Stations. These boundaries were developed for use in regional scale reporting and hydrological modelling.<\/SPAN><\/P><\/DIV><\/DIV><\/DIV>",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 4283,
+  "latestWkid": 4283,
+  "xyTolerance": 2.0E-9,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "xyUnits": 9.999999999999999E8,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "copyrightText": "We request attribution as © Commonwealth of Australia (Bureau of Meteorology) 2022",
+ "parentLayer": {
+  "id": 12,
+  "name": "Geofabric Hydrology Reporting Regions - V3.3"
+ },
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSFS",
+    "style": "esriSFSBackwardDiagonal",
+    "color": [
+     255,
+     85,
+     0,
+     255
+    ],
+    "outline": {
+     "type": "esriSLS",
+     "style": "esriSLSSolid",
+     "color": [
+      230,
+      76,
+      0,
+      255
+     ],
+     "width": 0.4
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": 113.76791667300006,
+  "ymin": -43.51486109899997,
+  "xmax": 153.42902797300007,
+  "ymax": -11.05763868899993,
+  "spatialReference": {
+   "wkid": 4283,
+   "latestWkid": 4283,
+   "xyTolerance": 2.0E-9,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -400,
+   "falseY": -400,
+   "xyUnits": 9.999999999999999E8,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "StnName",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "objectid",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "hydroid",
+   "type": "esriFieldTypeInteger",
+   "alias": "HydroID",
+   "domain": null
+  },
+  {
+   "name": "stationno",
+   "type": "esriFieldTypeString",
+   "alias": "StationNumber",
+   "length": 25,
+   "domain": null
+  },
+  {
+   "name": "stnname",
+   "type": "esriFieldTypeString",
+   "alias": "StationName",
+   "length": 100,
+   "domain": null
+  },
+  {
+   "name": "catchnotes",
+   "type": "esriFieldTypeString",
+   "alias": "CatchmentNotes",
+   "length": 255,
+   "domain": null
+  },
+  {
+   "name": "confidence",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Confidence",
+   "domain": {
+    "type": "codedValue",
+    "name": "AHGFConfidence",
+    "description": "Confidence Rating for Use of Gauging Station GNs & Station Catchments",
+    "codedValues": [
+     {
+      "name": "None",
+      "code": 0
+     },
+     {
+      "name": "Best",
+      "code": 1
+     },
+     {
+      "name": "Very Good",
+      "code": 2
+     },
+     {
+      "name": "Good",
+      "code": 3
+     },
+     {
+      "name": "Good",
+      "code": 4
+     },
+     {
+      "name": "Low",
+      "code": 5
+     },
+     {
+      "name": "Low",
+      "code": 6
+     },
+     {
+      "name": "Not Recommended for Use",
+      "code": 7
+     },
+     {
+      "name": "Not Recommended for Use",
+      "code": 8
+     },
+     {
+      "name": "Not Recommended for Use",
+      "code": 9
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "netnodeid",
+   "type": "esriFieldTypeInteger",
+   "alias": "NetworkNodeID",
+   "domain": null
+  },
+  {
+   "name": "symbol",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Symbol",
+   "domain": null
+  },
+  {
+   "name": "textnote",
+   "type": "esriFieldTypeString",
+   "alias": "TextNote",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "albersareakm2",
+   "type": "esriFieldTypeDouble",
+   "alias": "AlbersAreaKm2",
+   "domain": null
+  },
+  {
+   "name": "divname",
+   "type": "esriFieldTypeString",
+   "alias": "DivisionName",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "rivregname",
+   "type": "esriFieldTypeString",
+   "alias": "RiverRegionName",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "st_area(shape)",
+   "type": "esriFieldTypeDouble",
+   "alias": "st_area(shape)",
+   "domain": null
+  },
+  {
+   "name": "st_perimeter(shape)",
+   "type": "esriFieldTypeDouble",
+   "alias": "st_perimeter(shape)",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape"
+ },
+ "indexes": [
+  {
+   "name": "r360_sde_rowid_uk",
+   "fields": "objectid",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "a138_ix1",
+   "fields": "shape",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 10000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": false
+ },
+ "dateFieldsTimeReference": {
+  "timeZone": "AUS Eastern Standard Time",
+  "respectsDaylightSaving": false
+ },
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeAreaFieldName": "st_area(shape)",
+  "shapeLengthFieldName": "st_perimeter(shape)",
+  "units": "esriDecimalDegrees"
+ },
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true,
+ "serviceItemId": "ea9f7296abeb49c3a45430cd322400b1"
+}

@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-10-26T08:41:45.573367+00:00",
+  "source_url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_month_crf_multivariable_all_data/ImageServer?f=pjson",
+  "http_status": 200,
+  "sha256": "174240f4ddfeb440f7a9d5338fdde1f710e2121a2a7c051d1b3893327581ec23",
+  "scope": "metadata only; no raster subset",
+  "service_software_version": 10.91,
+  "hydrological_dataset_version": null,
+  "spatial_reference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+  },
+  "pixel_degrees": [
+    0.05000000000000002,
+    0.05000000000000001
+  ],
+  "time_info": {
+    "startTimeField": "StdTime",
+    "endTimeField": "StdTime",
+    "timeExtent": [
+      475977600000,
+      1790726400000
+    ],
+    "timeReference": null,
+    "defaultTimeInterval": 28,
+    "defaultTimeIntervalUnits": "esriTimeUnitsDays"
+  },
+  "extent_date_labels_utc": [
+    "1985-01-31T00:00:00+00:00",
+    "2026-09-30T00:00:00+00:00"
+  ],
+  "time_labels_are_not_an_aggregation_contract": true,
+  "no_data_sentinel": 3.4e+38,
+  "licence_status": "UNVERIFIED_PRODUCT_SPECIFIC",
+  "copyright_as_returned": "",
+  "numeric_data_admitted": false
+}

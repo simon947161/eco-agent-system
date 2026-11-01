@@ -3,3 +3,6 @@ __pycache__/
 .pytest_cache/
 runtime_data/
 *.sqlite3
+
+# Private source locations and generated research packets
+.local/

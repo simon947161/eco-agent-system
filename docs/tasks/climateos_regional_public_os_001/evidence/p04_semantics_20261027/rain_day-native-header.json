@@ -1,0 +1,195 @@
+{
+  "source_url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/rain_day.nc",
+  "captured_at_utc": "2026-10-26T20:56:34.829701+00:00",
+  "capture_kind": "native_HDF5_metadata_via_bounded_HTTP_ranges",
+  "whole_file_sha256": null,
+  "whole_file_downloaded": false,
+  "hydrological_arrays_read": false,
+  "global_attributes": {
+    "var_name": "rain_day",
+    "title": "Australian Landscape Water Balance AWRA-L Model",
+    "Description": "This data is provided by the Bureau of Meteorology and can be further visualised at www.bom.gov.au/water/landscape . The data has been simulated using the Australian Water Resource Assessment Modelling System (AWRA MS).",
+    "summary": "Data produced by Bureau of Meteorology Australian Water Resources Assessment Landscape Model (AWRA-L)",
+    "source": "AWRA-L",
+    "date_created": "2021-09-19T19:54:37",
+    "Conventions": "CF-1.6, ACDD-1.3",
+    "institution": "Bureau of Meteorology",
+    "email": "awrams@bom.gov.au",
+    "url": "http://www.bom.gov.au/water/landscape",
+    "date_modified": "2021-09-19T19:54:37"
+  },
+  "variables": {
+    "time": {
+      "dtype": "int32",
+      "shape": [
+        1389
+      ],
+      "attributes": {
+        "name": "time",
+        "standard_name": "time",
+        "long_name": "time",
+        "units": "days since 1900-01-01",
+        "calendar": "gregorian",
+        "bounds": "time_bounds"
+      }
+    },
+    "latitude": {
+      "dtype": "float64",
+      "shape": [
+        681
+      ],
+      "attributes": {
+        "name": "latitude",
+        "standard_name": "latitude",
+        "long_name": "latitude",
+        "units": "degrees_north"
+      }
+    },
+    "longitude": {
+      "dtype": "float64",
+      "shape": [
+        841
+      ],
+      "attributes": {
+        "name": "longitude",
+        "standard_name": "longitude",
+        "long_name": "longitude",
+        "units": "degrees_east"
+      }
+    },
+    "time_bounds": {
+      "dtype": "int32",
+      "shape": [
+        1389,
+        2
+      ],
+      "attributes": {}
+    },
+    "rain_day": {
+      "dtype": "float32",
+      "shape": [
+        1389,
+        681,
+        841
+      ],
+      "attributes": {
+        "_FillValue": [
+          -999.0
+        ],
+        "name": "rain_day",
+        "standard_name": "lwe_thickness_of_precipitation_amount",
+        "long_name": "Daily Rainfall",
+        "units": "mm"
+      }
+    }
+  },
+  "coordinate_sample": {
+    "time_indices": [
+      1068,
+      1069,
+      1070
+    ],
+    "time": [
+      36554,
+      36583,
+      36614
+    ],
+    "time_bounds": [
+      [
+        36524,
+        36555
+      ],
+      [
+        36555,
+        36584
+      ],
+      [
+        36584,
+        36615
+      ]
+    ],
+    "latitude": [
+      -10.0,
+      -10.05
+    ],
+    "longitude": [
+      112.0,
+      112.05
+    ],
+    "last_time": [
+      46293
+    ],
+    "last_time_bounds": [
+      [
+        46264,
+        46294
+      ]
+    ]
+  },
+  "remote_size_bytes": 702814481,
+  "last_modified": "Mon, 26 Oct 2026 13:54:45 GMT",
+  "range_requests": 10,
+  "bytes_received": 81920,
+  "ranges": [
+    {
+      "file": "rain_day-0.bin",
+      "offset": 0,
+      "length": 8192,
+      "sha256": "aaae35ce7d02dc73d14660a67a4385a00de10a27100cea9ed116e573c2c52ba8"
+    },
+    {
+      "file": "rain_day-8192.bin",
+      "offset": 8192,
+      "length": 8192,
+      "sha256": "d84b69439e43608ef6fe6e142ac72c988dba6122024d88bc8c223acf9643c172"
+    },
+    {
+      "file": "rain_day-16384.bin",
+      "offset": 16384,
+      "length": 8192,
+      "sha256": "2f5ac73592bf7a2de68bcc1cddfdacf71f25ad67ac6953357fb3cec3d9816dbb"
+    },
+    {
+      "file": "rain_day-691707904.bin",
+      "offset": 691707904,
+      "length": 8192,
+      "sha256": "ef8f94bd91f262f31cc8c6262c730a7bef85cab8b3231c2cad2a051f4b84f265"
+    },
+    {
+      "file": "rain_day-691716096.bin",
+      "offset": 691716096,
+      "length": 8192,
+      "sha256": "ae8b82eabac55cbc2a8c7edcb0f7db887192c5ffca2ab600c61ba39cebd38a1c"
+    },
+    {
+      "file": "rain_day-691724288.bin",
+      "offset": 691724288,
+      "length": 8192,
+      "sha256": "3d213df265fbd9d67aeb60ebfd12e03287fe45066279dc4116de4aa4e45b096a"
+    },
+    {
+      "file": "rain_day-691757056.bin",
+      "offset": 691757056,
+      "length": 8192,
+      "sha256": "29256fb8ce5ab0861a5ebe8fbba4cb6ca065962832bacc034ead55ee2cc8c424"
+    },
+    {
+      "file": "rain_day-691765248.bin",
+      "offset": 691765248,
+      "length": 8192,
+      "sha256": "ff953d4423a52cb27768c16ef83842280693f9923ee526c53d860e410f9dc2ef"
+    },
+    {
+      "file": "rain_day-691773440.bin",
+      "offset": 691773440,
+      "length": 8192,
+      "sha256": "8698d9ac54f01c826fad23136329825f378abc0f1c4e1d5c722b0b741a95c83e"
+    },
+    {
+      "file": "rain_day-691781632.bin",
+      "offset": 691781632,
+      "length": 8192,
+      "sha256": "99cc8bb5edfff2ba0a294ff2c79e99e15f41a8f3c5108898f47db4b8f89fe2dd"
+    }
+  ]
+}

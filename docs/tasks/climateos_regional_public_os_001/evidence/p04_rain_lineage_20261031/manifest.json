@@ -1,0 +1,363 @@
+{
+  "schema": "climateos.p04.rainfall_lineage_review.v1",
+  "baseline_commit": "7940f3ab0c992cf1b406571d46ecce77bf81a26a",
+  "captured_on_utc": "2026-10-31",
+  "files": [
+    {
+      "url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer/info/metadata",
+      "file": "awds-day-archive-metadata.xml",
+      "started_at_utc": "2026-10-31T08:28:54.010266+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer/info/metadata",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:28:54 GMT",
+        "content-type": "text/xml;charset=UTF-8",
+        "content-length": "1027"
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:28:54.625432+00:00",
+      "bytes": 1027,
+      "sha256": "c6f36265a44a314b2b4ba7c376ef197867be65dd6ece9831e3a61b4fc25f53b4",
+      "retained_in_repository": true,
+      "representation": "Exact HTTP response body"
+    },
+    {
+      "url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer?f=pjson",
+      "file": "awds-day-archive-service.json",
+      "started_at_utc": "2026-10-31T08:28:46.705701+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer?f=pjson",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:28:47 GMT",
+        "content-type": "text/plain;charset=UTF-8",
+        "content-length": "6105",
+        "etag": "\"b0d92331\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:28:47.350332+00:00",
+      "bytes": 6105,
+      "sha256": "7b73cb1decdbeb041c735c4bc7c8621c3d896d150ae38ae5562c9cbd6b4f07b0",
+      "retained_in_repository": true,
+      "representation": "Exact HTTP response body"
+    },
+    {
+      "url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer/multiDimensionalInfo?f=pjson&returnDimensionValues=never",
+      "file": "awds-day-dimensions-bounded.json",
+      "started_at_utc": "2026-10-31T08:30:10.961005+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer/multiDimensionalInfo?f=pjson&returnDimensionValues=never",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:30:11 GMT",
+        "content-type": "text/plain;charset=UTF-8",
+        "etag": "\"b0d92331\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:30:11.994932+00:00",
+      "bytes": 62256,
+      "sha256": "431c5547cdc14ffb6c9c26a25c59fa2055f86c6a852c89c13c130f0b3bd58d00",
+      "retained_in_repository": true,
+      "representation": "Exact HTTP response body"
+    },
+    {
+      "url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer/multiDimensionalInfo?f=pjson&returnDimensionValues=false",
+      "file": "awds-day-dimensions.json",
+      "started_at_utc": "2026-10-31T08:29:27.136536+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_day_crf_multivariable_archive_1985_2004_data/ImageServer/multiDimensionalInfo?f=pjson&returnDimensionValues=false",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:29:28 GMT",
+        "content-type": "text/plain;charset=UTF-8",
+        "etag": "\"b0d92331\""
+      },
+      "complete": false,
+      "error": "Response cap reached",
+      "completed_at_utc": "2026-10-31T08:29:29.262020+00:00",
+      "bytes": 524289,
+      "sha256": "ff3624871befd06c066976e1a1a56975e2d1731d8a1d7c76b04a94338af0e6f4",
+      "retained_in_repository": false,
+      "representation": "Receipt only; full response or capped prefix retained in ignored local diagnostics"
+    },
+    {
+      "url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical?f=pjson",
+      "file": "awds-historical-services.json",
+      "started_at_utc": "2026-10-31T08:28:35.316572+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical?f=pjson",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:28:36 GMT",
+        "content-type": "text/plain;charset=UTF-8",
+        "content-length": "2046"
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:28:36.125570+00:00",
+      "bytes": 2046,
+      "sha256": "8f6e0e2f1c8ad929043093dfc82196109348d2e4e9484f0e269c39aacac03118",
+      "retained_in_repository": true,
+      "representation": "Exact HTTP response body"
+    },
+    {
+      "url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_month_crf_multivariable_all_data/ImageServer?f=pjson",
+      "file": "awds-month-service.json",
+      "started_at_utc": "2026-10-31T08:28:46.720550+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://image.wsapi.cloud.bom.gov.au/arcgis/rest/services/awra_historical/physical_month_crf_multivariable_all_data/ImageServer?f=pjson",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:28:47 GMT",
+        "content-type": "text/plain;charset=UTF-8",
+        "content-length": "4571",
+        "etag": "\"cfb03898\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:28:47.359895+00:00",
+      "bytes": 4571,
+      "sha256": "c8d37e92f28bbccaab13f06121823f34a4b5952bccd5a0e11c6defafacda229b",
+      "retained_in_repository": true,
+      "representation": "Exact HTTP response body"
+    },
+    {
+      "url": "https://awo.bom.gov.au/app/42.cbe9cb1a.chunk.js",
+      "file": "awo-about.js",
+      "started_at_utc": "2026-10-31T08:28:03.142023+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://awo.bom.gov.au/app/42.cbe9cb1a.chunk.js",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:28:03 GMT",
+        "last-modified": "Thu, 02 Jul 2026 02:41:47 GMT",
+        "content-type": "application/javascript",
+        "content-length": "4178",
+        "etag": "\"f95922d9dfa6705f22fc26577b2e67b8\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:28:03.924669+00:00",
+      "bytes": 4178,
+      "sha256": "a133043633e486e46ce14d08b7037378209a2b62074f54a8e408fd5aca780736",
+      "retained_in_repository": false,
+      "representation": "Receipt only; full response or capped prefix retained in ignored local diagnostics"
+    },
+    {
+      "url": "https://awo.bom.gov.au/app/app.cbe9cb1a.js",
+      "file": "awo-app.js",
+      "started_at_utc": "2026-10-31T08:27:43.972002+00:00",
+      "body_cap": 2097152,
+      "status": 200,
+      "final_url": "https://awo.bom.gov.au/app/app.cbe9cb1a.js",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:27:44 GMT",
+        "last-modified": "Thu, 02 Jul 2026 02:41:48 GMT",
+        "content-type": "application/javascript",
+        "content-length": "418939",
+        "etag": "\"34a85b4cca1199f0660df243ffc8a265\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:27:45.338713+00:00",
+      "bytes": 418939,
+      "sha256": "a42cf7d2507356ace7134ed437cf83752b70c80c66adcb4f78808095efd4f92b",
+      "retained_in_repository": false,
+      "representation": "Receipt only; full response or capped prefix retained in ignored local diagnostics"
+    },
+    {
+      "url": "https://awo.bom.gov.au/app/51.cbe9cb1a.chunk.js",
+      "file": "awo-data-access.js",
+      "started_at_utc": "2026-10-31T08:28:13.059896+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://awo.bom.gov.au/app/51.cbe9cb1a.chunk.js",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:28:13 GMT",
+        "last-modified": "Thu, 02 Jul 2026 02:41:48 GMT",
+        "content-type": "application/javascript",
+        "content-length": "4240",
+        "etag": "\"c2b3003005e4b24b86270c72503db74c\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:28:13.627340+00:00",
+      "bytes": 4240,
+      "sha256": "b70af8e60146847b4220d2a91861f118a30d51fc1422abb75b2857427889568b",
+      "retained_in_repository": false,
+      "representation": "Receipt only; full response or capped prefix retained in ignored local diagnostics"
+    },
+    {
+      "url": "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/Hosted/file_download_inventory_multivariable_all_data/FeatureServer/0?f=pjson",
+      "file": "awo-download-inventory-schema.json",
+      "started_at_utc": "2026-10-31T08:29:26.213557+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/Hosted/file_download_inventory_multivariable_all_data/FeatureServer/0?f=pjson",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:29:26 GMT",
+        "content-type": "text/plain;charset=UTF-8",
+        "content-length": "80"
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:29:26.868052+00:00",
+      "bytes": 80,
+      "sha256": "5350d216bd85c7df18dcf66b9257114af99f04e5ffdbdfff3f4d425cf4a8db79",
+      "retained_in_repository": true,
+      "representation": "Exact HTTP response body"
+    },
+    {
+      "url": "https://awo.bom.gov.au/app/34.cbe9cb1a.chunk.js",
+      "file": "awo-faq.js",
+      "started_at_utc": "2026-10-31T08:28:03.137350+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://awo.bom.gov.au/app/34.cbe9cb1a.chunk.js",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:28:03 GMT",
+        "last-modified": "Thu, 02 Jul 2026 02:41:47 GMT",
+        "content-type": "application/javascript",
+        "content-length": "3723",
+        "etag": "\"31ae8ff124b98765b8a69d4a0ea776e2\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:28:03.727240+00:00",
+      "bytes": 3723,
+      "sha256": "daa3e489d975968e93112d6a3d7bfe29352604fe3d5cb454e53c499b0d8034bd",
+      "retained_in_repository": false,
+      "representation": "Receipt only; full response or capped prefix retained in ignored local diagnostics"
+    },
+    {
+      "url": "https://awo.bom.gov.au/app/37.cbe9cb1a.chunk.js",
+      "file": "awo-historical-doc.js",
+      "started_at_utc": "2026-10-31T08:28:13.124505+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://awo.bom.gov.au/app/37.cbe9cb1a.chunk.js",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:28:13 GMT",
+        "last-modified": "Thu, 02 Jul 2026 02:41:47 GMT",
+        "content-type": "application/javascript",
+        "content-length": "18291",
+        "etag": "\"5283bacd622666216526e88eaffc7ce5\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:28:13.702665+00:00",
+      "bytes": 18291,
+      "sha256": "ac24c0db1c1d763164e53bd1a68ea2b08879ac0f4e270a0f130c31746e4f5c11",
+      "retained_in_repository": false,
+      "representation": "Receipt only; full response or capped prefix retained in ignored local diagnostics"
+    },
+    {
+      "url": "https://awo.bom.gov.au/app/32.cbe9cb1a.chunk.js",
+      "file": "awo-historical-faq.js",
+      "started_at_utc": "2026-10-31T08:28:13.100567+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://awo.bom.gov.au/app/32.cbe9cb1a.chunk.js",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:28:13 GMT",
+        "last-modified": "Thu, 02 Jul 2026 02:41:47 GMT",
+        "content-type": "application/javascript",
+        "content-length": "96412",
+        "etag": "\"90d7056e38c030c4f642249a7005f598\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:28:14.187356+00:00",
+      "bytes": 96412,
+      "sha256": "275e89c6b5636aeed012ad998b9466760986d168151845ea830eeeb33f07d195",
+      "retained_in_repository": false,
+      "representation": "Receipt only; full response or capped prefix retained in ignored local diagnostics"
+    },
+    {
+      "url": "https://awo.bom.gov.au/about/overview/historical",
+      "file": "awo-historical.html",
+      "started_at_utc": "2026-10-31T08:27:30.240696+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://awo.bom.gov.au/about/overview/historical",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:27:31 GMT",
+        "last-modified": "Thu, 02 Jul 2026 02:41:53 GMT",
+        "content-type": "text/html",
+        "content-length": "3716",
+        "etag": "\"cb5b3a0eb960d9d5b84dd9497a078472\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:27:31.570720+00:00",
+      "bytes": 3716,
+      "sha256": "344a7f105b8b4194d20294c55c7c980e11a578eaea2236e63379bc171d64d877",
+      "retained_in_repository": false,
+      "representation": "Receipt only; full response or capped prefix retained in ignored local diagnostics"
+    },
+    {
+      "url": "https://awo.bom.gov.au/app/hydrovarinfo9.cbe9cb1a.chunk.js",
+      "file": "awo-precipitation-info.js",
+      "started_at_utc": "2026-10-31T08:29:52.245482+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://awo.bom.gov.au/app/hydrovarinfo9.cbe9cb1a.chunk.js",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:29:52 GMT",
+        "last-modified": "Thu, 02 Jul 2026 02:41:49 GMT",
+        "content-type": "application/javascript",
+        "content-length": "1973",
+        "etag": "\"60b7a2792a2c4c0b10b059f8576d24ae\""
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:29:52.829202+00:00",
+      "bytes": 1973,
+      "sha256": "17f2a8abfe12ba6bc4e9de45cc42bd5dc9a17d60ae53ac4537700a4c2b44cc18",
+      "retained_in_repository": false,
+      "representation": "Receipt only; full response or capped prefix retained in ignored local diagnostics"
+    },
+    {
+      "url": "https://geonetwork.nci.org.au/geonetwork/srv/api/records/f6683_9441_8676_1139/formatters/xml",
+      "file": "nci-collection.xml",
+      "started_at_utc": "2026-10-31T08:30:42.721091+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://geonetwork.nci.org.au/geonetwork/srv/api/records/f6683_9441_8676_1139/formatters/xml",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:30:44 GMT",
+        "content-type": "application/xml"
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:30:44.358396+00:00",
+      "bytes": 30620,
+      "sha256": "ce791007e7d038148031bd2f1eb1330903b7e4e0fa5d8746f2bfc89bb24121b3",
+      "retained_in_repository": true,
+      "representation": "Exact HTTP response body"
+    },
+    {
+      "url": "https://geonetwork.nci.org.au/geonetwork/srv/api/records/f0536_4866_6103_7890/formatters/xml",
+      "file": "nci-historical-collection.xml",
+      "started_at_utc": "2026-10-31T08:30:42.729608+00:00",
+      "body_cap": 524288,
+      "status": 200,
+      "final_url": "https://geonetwork.nci.org.au/geonetwork/srv/api/records/f0536_4866_6103_7890/formatters/xml",
+      "headers": {
+        "date": "Sat, 31 Oct 2026 08:30:43 GMT",
+        "content-type": "application/xml"
+      },
+      "complete": true,
+      "completed_at_utc": "2026-10-31T08:30:44.052428+00:00",
+      "bytes": 35926,
+      "sha256": "f09be7da3f4be0ddd6b1ce10c168da02098770886cffdafd4023149e9d1f2a80",
+      "retained_in_repository": true,
+      "representation": "Exact HTTP response body"
+    }
+  ],
+  "total_requests": 17,
+  "total_response_body_bytes": 1218392,
+  "physical_sample_requests": 0,
+  "known_404_retries": 0,
+  "authenticated_requests": 0,
+  "spending_aud": 0,
+  "attribution": "Bureau of Meteorology Australian Water Outlook/Australian Water Data Service; NCI metadata distribution. No source-code bundles redistributed; see source URLs and response hashes.",
+  "scope": "Documentation and service metadata discovery only. Shared product family does not establish exact daily revision mapping to captured NCI monthly file.",
+  "derived_files": [
+    {
+      "file": "candidate-result.json",
+      "bytes": 2297,
+      "sha256": "14a061ea14ee56f8097d32717d4c4672055a3c03a9212e5fe77d9bf4aec53b7b",
+      "representation": "Derived source-candidate assessment; no physical samples"
+    }
+  ]
+}

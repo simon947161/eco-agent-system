@@ -1,0 +1,195 @@
+{
+  "source_url": "https://thredds.nci.org.au/thredds/fileServer/iu04/australian-water-outlook/historical/v1/AWRALv7/processed/values/month/sm_pct.nc",
+  "captured_at_utc": "2026-10-26T20:56:36.143225+00:00",
+  "capture_kind": "native_HDF5_metadata_via_bounded_HTTP_ranges",
+  "whole_file_sha256": null,
+  "whole_file_downloaded": false,
+  "hydrological_arrays_read": false,
+  "global_attributes": {
+    "var_name": "sm_pct",
+    "title": "Australian Landscape Water Balance AWRA-L Model",
+    "Description": "This data is provided by the Bureau of Meteorology and can be further visualised at www.bom.gov.au/water/landscape . The data has been simulated using the Australian Water Resource Assessment Modelling System (AWRA MS).",
+    "summary": "Data produced by Bureau of Meteorology Australian Water Resources Assessment Landscape Model (AWRA-L)",
+    "source": "AWRA-L",
+    "date_created": "2021-09-20T00:48:31",
+    "Conventions": "CF-1.6, ACDD-1.3",
+    "institution": "Bureau of Meteorology",
+    "email": "awrams@bom.gov.au",
+    "url": "http://www.bom.gov.au/water/landscape",
+    "date_modified": "2021-09-20T00:48:31"
+  },
+  "variables": {
+    "time": {
+      "dtype": "int32",
+      "shape": [
+        1389
+      ],
+      "attributes": {
+        "name": "time",
+        "standard_name": "time",
+        "long_name": "time",
+        "units": "days since 1900-01-01",
+        "calendar": "gregorian",
+        "bounds": "time_bounds"
+      }
+    },
+    "latitude": {
+      "dtype": "float64",
+      "shape": [
+        681
+      ],
+      "attributes": {
+        "name": "latitude",
+        "standard_name": "latitude",
+        "long_name": "latitude",
+        "units": "degrees_north"
+      }
+    },
+    "longitude": {
+      "dtype": "float64",
+      "shape": [
+        841
+      ],
+      "attributes": {
+        "name": "longitude",
+        "standard_name": "longitude",
+        "long_name": "longitude",
+        "units": "degrees_east"
+      }
+    },
+    "time_bounds": {
+      "dtype": "int32",
+      "shape": [
+        1389,
+        2
+      ],
+      "attributes": {}
+    },
+    "sm_pct": {
+      "dtype": "float32",
+      "shape": [
+        1389,
+        681,
+        841
+      ],
+      "attributes": {
+        "_FillValue": [
+          -999.0
+        ],
+        "name": "sm_pct",
+        "standard_name": "sm_pct",
+        "long_name": "Total rootzone soil moisture (0-100 cm)",
+        "units": "fraction of fullness"
+      }
+    }
+  },
+  "coordinate_sample": {
+    "time_indices": [
+      1068,
+      1069,
+      1070
+    ],
+    "time": [
+      36554,
+      36583,
+      36614
+    ],
+    "time_bounds": [
+      [
+        36524,
+        36555
+      ],
+      [
+        36555,
+        36584
+      ],
+      [
+        36584,
+        36615
+      ]
+    ],
+    "latitude": [
+      -10.0,
+      -10.05
+    ],
+    "longitude": [
+      112.0,
+      112.05
+    ],
+    "last_time": [
+      46293
+    ],
+    "last_time_bounds": [
+      [
+        46264,
+        46294
+      ]
+    ]
+  },
+  "remote_size_bytes": 1347725821,
+  "last_modified": "Mon, 26 Oct 2026 13:55:37 GMT",
+  "range_requests": 10,
+  "bytes_received": 81920,
+  "ranges": [
+    {
+      "file": "sm_pct-0.bin",
+      "offset": 0,
+      "length": 8192,
+      "sha256": "5e5412a1e37d19615232cd9756a4e6953c2cccddd577acbc50f6d16c2fc76e7f"
+    },
+    {
+      "file": "sm_pct-8192.bin",
+      "offset": 8192,
+      "length": 8192,
+      "sha256": "3b4be41432af0c59ccac2956d8e424f3eb4bb95cacee038702565f94c4864a09"
+    },
+    {
+      "file": "sm_pct-16384.bin",
+      "offset": 16384,
+      "length": 8192,
+      "sha256": "ef17fda4fca99ccd31c9aea92924afd8f6a3be29da367e83dec585f6060f7619"
+    },
+    {
+      "file": "sm_pct-1296506880.bin",
+      "offset": 1296506880,
+      "length": 8192,
+      "sha256": "fca52069f877ab38325e493f34f9e89b88fa7e396e31ab6155ec2d1433da50a3"
+    },
+    {
+      "file": "sm_pct-1296515072.bin",
+      "offset": 1296515072,
+      "length": 8192,
+      "sha256": "eeeee9c670b43abba3049b17c280fa854bdcda375f92105a721be3f08a49e132"
+    },
+    {
+      "file": "sm_pct-1296523264.bin",
+      "offset": 1296523264,
+      "length": 8192,
+      "sha256": "4fb889a457061b095933e137799a491fe49bded6d2be1489a8da14a60e1c1d7b"
+    },
+    {
+      "file": "sm_pct-1296547840.bin",
+      "offset": 1296547840,
+      "length": 8192,
+      "sha256": "84210285377c20dd9e8dfb2f80da7bafdaec72c6f081ed5c9cddd115e5a4a59f"
+    },
+    {
+      "file": "sm_pct-1296556032.bin",
+      "offset": 1296556032,
+      "length": 8192,
+      "sha256": "93ea6092503e542e9c85e8b7766a2f0b507423ef9ec14bef128625cc77afce8a"
+    },
+    {
+      "file": "sm_pct-1296564224.bin",
+      "offset": 1296564224,
+      "length": 8192,
+      "sha256": "6f0826af43219ff45730ec7bec567939a2e46d6ba3659c7928a345c3abc5dae3"
+    },
+    {
+      "file": "sm_pct-1296572416.bin",
+      "offset": 1296572416,
+      "length": 8192,
+      "sha256": "4a0f27dffdae30d2ae917c8d70f3c74c69560550097dd3112e44adecaa67e4a6"
+    }
+  ]
+}
