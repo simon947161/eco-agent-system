@@ -1,0 +1,47 @@
+{
+  "unitId": "csoi:op2026:finance:p140:pensioner-eligibility",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:140",
+  "cacheRevisionId": "sha256:5f47aa0b925d195fbff304d8bec336e59c9bbafafb6cec34f164d4a64428d209",
+  "actualFullUnitDigest": "sha256:4e846a320bcecacce499c2d3b1ca00f31ebda862516b6f032d856be16b512825",
+  "page": 140,
+  "category": "OP_REVENUE_POLICY",
+  "summary": "持 Pensioner Concession Card 或其他符合资格者，针对唯一或主要居所按 s.575 获减免；表列金额为每年最高额。",
+  "conditions": [
+    "资格和主要居所条件同时保留。"
+  ],
+  "qualifiers": [],
+  "facts": {
+    "legalCitationAsPrinted": "s.575",
+    "eligibility": "Pensioner Concession Card or otherwise qualifying",
+    "residence": "Sole or principal place of residence"
+  },
+  "sourceAnchorCount": 2,
+  "sourceLocations": [
+    {
+      "field": "summary",
+      "pdfPage": 140,
+      "bbox": [
+        46.64998779296875,
+        94.92839965820312,
+        507.6581176757812,
+        123.01607360839844
+      ],
+      "normalizedTextDigest": "sha256:7056a9c49585adec818890148fed8938a5d8e63f9edd69cc77e2cdac22bb629d",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "summary",
+      "pdfPage": 140,
+      "bbox": [
+        46.64998779296875,
+        126.12743530273437,
+        544.3660034179687,
+        154.2151092529297
+      ],
+      "normalizedTextDigest": "sha256:8416c4a378b540789e18a2705a52b63b65c7b8a67d906ecca45788ba344332dc",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:4e846a320bcecacce499c2d3b1ca00f31ebda862516b6f032d856be16b512825",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

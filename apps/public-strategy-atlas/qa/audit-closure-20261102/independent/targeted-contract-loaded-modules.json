@@ -1,0 +1,60 @@
+{
+  "format": "actual-node-module-load-sha256-1",
+  "entry": "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/audit-closure-20261102/independent/targeted-contract-readback.cjs",
+  "modules": [
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/atlas-domain.js",
+      "sha256AtLoad": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "sha256AfterLoad": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/atlas-model.js",
+      "sha256AtLoad": "05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+      "sha256AfterLoad": "05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-governance.js",
+      "sha256AtLoad": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "sha256AfterLoad": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/atlas-accounting.js",
+      "sha256AtLoad": "5710e8900188eb4af880b6a50730037901448bad6166a6012d373b3fcd71f99f",
+      "sha256AfterLoad": "5710e8900188eb4af880b6a50730037901448bad6166a6012d373b3fcd71f99f",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-layers.js",
+      "sha256AtLoad": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "sha256AfterLoad": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-wcos.js",
+      "sha256AtLoad": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "sha256AfterLoad": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-router.js",
+      "sha256AtLoad": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+      "sha256AfterLoad": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-pages.js",
+      "sha256AtLoad": "6d70ba43debd0bff25c7c17113612808a296d58d411283dc6f011b7c2c0d9fc7",
+      "sha256AfterLoad": "6d70ba43debd0bff25c7c17113612808a296d58d411283dc6f011b7c2c0d9fc7",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/audit-closure-20261102/independent/targeted-contract-readback.cjs",
+      "sha256AtLoad": "37e3be66922a3e02a0d5c24e1c1e4baa476d06ff3de7680e8c32ed08a3898c36",
+      "sha256AfterLoad": "37e3be66922a3e02a0d5c24e1c1e4baa476d06ff3de7680e8c32ed08a3898c36",
+      "stableDuringLoad": true
+    }
+  ]
+}

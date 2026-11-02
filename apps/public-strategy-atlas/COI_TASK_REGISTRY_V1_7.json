@@ -2153,7 +2153,7 @@
       "pack": "C",
       "pack_name": "数据分层、质量、来源与权限",
       "title_and_scope": "L2：证据、规则、观察、研究推断、人为裁量、正式决定分栏保存，含反证与 UNKNOWN。",
-      "status": "PARTIAL",
+      "status": "VERIFIED",
       "actual_code_files": [
         "csoi-governance.js",
         "csoi-layers.js",
@@ -2170,13 +2170,15 @@
         "qa/csoi/native-c.json",
         "qa/csoi/browser-c.json",
         "qa/csoi/layers-current-1440.png",
-        "qa/csoi/layers-withdrawn-390.png"
+        "qa/csoi/layers-withdrawn-390.png",
+        "qa/audit-closure-20261102/root-readback.json",
+        "qa/audit-closure-20261102/independent/REPORT_ZH.md"
       ],
       "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": "五种研究陈述与正式决定拒绝已有代码和测试。本审计尚未形成原要求逐子项验收的独立闭合判断；不得把正式决定授权接入新增为023的软件前提。",
-      "next_action": "按原023逐类列证据：规则、观察、推论、裁量、正式决定边界、反证、UNKNOWN；父任务完成独立读回后判断窄软件范围状态。",
+      "blocker": "原软件范围已验收通过；公开语料、法律适用和正式准入由相应任务分别记录。",
+      "next_action": "保留既有行为的回归；按其他来源任务补公开研究，不将其重新作为本软件项前提。",
       "evidence_updates": [
         {
           "at": "2026-10-30T08:12:50.439004+00:00",
@@ -2239,6 +2241,16 @@
             "state": "PARENT_READBACK_PENDING",
             "evidenceMeaning": "作者仅指出原通用阻塞过宽；状态调整由父任务逐子项证据读回后决定。"
           }
+        ]
+      },
+      "closureUpdate": {
+        "batch": "OP-FULL-REVIEW-20261102",
+        "completedNow": "L2 research classification and evidence/counterevidence/UNKNOWN preservation. Original source evidence stays pinned; five research judgments stay distinct; formal decisions are explicitly blocked/separated. No official decision service or complete law corpus added as a software prerequisite.",
+        "remainingGap": "原软件范围本轮验收通过；完整研究语料、法律适用与正式准入由相应独立任务继续。",
+        "nextPublicAction": "保留既有行为的回归；按其他来源任务补公开研究，不将其重新作为本软件项前提。",
+        "runtimeAcceptance": "PASS_BOUNDED_SOFTWARE",
+        "evidence": [
+          "qa/audit-closure-20261102/root-readback.json"
         ]
       }
     },
@@ -6379,7 +6391,7 @@
       "pack": "H",
       "pack_name": "完整多页面站点、双屏、审计和验收",
       "title_and_scope": "统一搜索、按年度/地区/法规/来源/工作/单位过滤、跨路径比较、问题导航和解释性候选暗线；同时具备线性文字替代。",
-      "status": "PARTIAL",
+      "status": "VERIFIED",
       "actual_code_files": [
         "atlas.js",
         "atlas-domain.js",
@@ -6424,13 +6436,15 @@
         "qa/csoi/pr130-draft-readback.json",
         "qa/strategy-completion/REPORT_ZH.md",
         "qa/strategy-completion/item-coverage.json",
-        "qa/strategy-completion/acceptance.json"
+        "qa/strategy-completion/acceptance.json",
+        "qa/audit-closure-20261102/root-readback.json",
+        "qa/audit-closure-20261102/independent/REPORT_ZH.md"
       ],
       "remote_sha": "bb8c0f567cb8f0974aa37dd1cd9097b1a1314910",
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": "原074要求的软件入口均可找到：搜索/7类过滤、两记录及路径集比较、问题/候选与文本路线。尚需把这些实际验收证据逐子项汇总读回；完整法规或OP语料不是074的软件新增前提。",
-      "next_action": "汇总已存搜索、比较、路径、问题候选、线性替代的实际断言/浏览器证据；父任务只复测证据不足子项，独立判断软件闭合。公开语料覆盖另归011–018。",
+      "blocker": "原软件范围已验收通过；公开语料、法律适用和正式准入由相应任务分别记录。",
+      "next_action": "保留既有行为的回归；按其他来源任务补公开研究，不将其重新作为本软件项前提。",
       "evidence_updates": [
         {
           "at": "2026-10-30T07:08:12.754999+00:00",
@@ -6620,6 +6634,16 @@
             "evidenceMeaning": "旧总体PARTIAL不能用完整法律语料缺失代替软件差距判断；父任务补不足验收证据后决定。"
           }
         ]
+      },
+      "closureUpdate": {
+        "batch": "OP-FULL-REVIEW-20261102",
+        "completedNow": "Existing unified search; q/year/region/law/source/work/unit filters; typed path and record comparisons; questions/candidates and linear route alternative. Recorded references and research candidates only.",
+        "remainingGap": "原软件范围本轮验收通过；完整研究语料、法律适用与正式准入由相应独立任务继续。",
+        "nextPublicAction": "保留既有行为的回归；按其他来源任务补公开研究，不将其重新作为本软件项前提。",
+        "runtimeAcceptance": "PASS_BOUNDED_SOFTWARE",
+        "evidence": [
+          "qa/audit-closure-20261102/root-readback.json"
+        ]
       }
     },
     {
@@ -6757,13 +6781,15 @@
         "qa/csoi/original-source-h.txt",
         "qa/csoi/op-planning-quantity-390.png",
         "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
-        "qa/CSOI_V1_7_ACCEPTANCE.json"
+        "qa/CSOI_V1_7_ACCEPTANCE.json",
+        "qa/audit-closure-20261102/root-readback.json",
+        "qa/audit-closure-20261102/independent/REPORT_ZH.md"
       ],
       "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
-      "blocker": "五种视口、键盘、触摸模拟、低动效、焦点和分页已有不同批次证据；基本读屏实际体验的可检查回执未找到。原要求不等于完整WCAG认证或强制购买真实多屏硬件。",
-      "next_action": "先映射原076各子项已存浏览器证据，补基本读屏的可访问名称/阅读顺序/控件状态实际检查；使用可用辅助技术记录结果，只有必须人工操作的环节才安排人工验收。",
+      "blocker": "Actual basic screen-reader listening/interaction not tested; no available screen-reader in this environment. No professional certification or physical wide-screen purchase requirement invented.",
+      "next_action": "在可用辅助技术或人工环境补实际读屏听读和控件反馈；当前AX树结果只证明对应程序化检查。",
       "evidence_updates": [
         {
           "at": "2026-10-30T03:23:10.126147+00:00",
@@ -6846,6 +6872,16 @@
             "state": "EVIDENCE_GAP",
             "evidenceMeaning": "未找到实际基本朗读/可访问树+阅读顺序/控件状态的逐流程验收回执；不新增专业认证要求。"
           }
+        ]
+      },
+      "closureUpdate": {
+        "batch": "OP-FULL-REVIEW-20261102",
+        "completedNow": "Current five-viewports, keyboard/emulated touch, reduced motion, focus, pagination and AX-name evidence accepted.",
+        "remainingGap": "Actual basic screen-reader listening/interaction not tested; no available screen-reader in this environment. No professional certification or physical wide-screen purchase requirement invented.",
+        "nextPublicAction": "在可用辅助技术或人工环境补实际读屏听读和控件反馈；当前AX树结果只证明对应程序化检查。",
+        "runtimeAcceptance": "PARTIAL_BASIC_SCREEN_READER_PENDING",
+        "evidence": [
+          "qa/audit-closure-20261102/root-readback.json"
         ]
       }
     },
@@ -7454,7 +7490,7 @@
       }
     }
   ],
-  "updated_at": "2026-11-02",
+  "updated_at": "2026-11-02T04:02:29.720196+00:00",
   "pack_assessments": {
     "A": {
       "pack": "A",
@@ -7725,5 +7761,22 @@
     "reviewId": "LSPS-CONTEXT-REVIEW-20261102",
     "scope": "Historical118-pageLSPS source reading; maps/narrative/conditions; no official promotion",
     "acceptance": "qa/lsps-completion/acceptance.json"
+  },
+  "latest_op_full_review_batch": {
+    "batch": "OP-FULL-REVIEW-20261102",
+    "status": "SOURCE_COMPLETE_FINAL_APPLICATION_ACCEPTANCE_IN_PROGRESS",
+    "sourcePages": 142,
+    "sourceUnits": 911,
+    "newKnowledgeRecords": 143,
+    "sourceBundleSHA256": "345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0",
+    "engineeringCounts": {
+      "VERIFIED": 51,
+      "BLOCKED": 3,
+      "PARTIAL": 26
+    },
+    "currentClosureEvidence": "qa/audit-closure-20261102/root-readback.json",
+    "historicalPackAssessments": "Earlier pack_assessments retain their original code_sha and are historical; current per-task status and closureUpdate are authoritative for this batch.",
+    "officialAdmission": "PENDING",
+    "actualCouncilDelivery": "UNKNOWN"
   }
 }

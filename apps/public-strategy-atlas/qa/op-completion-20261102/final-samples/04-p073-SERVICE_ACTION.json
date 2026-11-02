@@ -1,0 +1,297 @@
+{
+  "unitId": "csoi:op-full:p073-t00-r01",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:073",
+  "cacheRevisionId": "sha256:e5416325357e888d4d049c7fd294ddafe6692665817140c4ed59109fa45085a7",
+  "actualFullUnitDigest": "sha256:14cf097706b54f5d9e1b730b8c2858cd6eea763c9ec9ce525e0ffa26fb1a7ee7",
+  "page": 73,
+  "category": "SERVICE_ACTION",
+  "summary": "水管破裂KPI为每100公里主干管每年<15次；独立Target为每年<47次。",
+  "conditions": [
+    "复用既有asset-maintenance节点；率分母与年度总量不同，不反推网络长度。"
+  ],
+  "qualifiers": [
+    "复用既有水务Activity；此处为完整原表上下文，不新增第二个语义行动。"
+  ],
+  "facts": {
+    "sourceTableType": "SERVICE",
+    "rows": [
+      {
+        "id": "p073-t00-r01",
+        "pdfPage": 73,
+        "tableId": "p073-t00",
+        "printedSection": "Planned – Water Operations",
+        "summary": "水管破裂KPI为每100公里主干管每年<15次；独立Target为每年<47次。",
+        "conditions": [
+          "复用既有asset-maintenance节点；率分母与年度总量不同，不反推网络长度。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p073-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 73,
+              "bbox": [
+                36.42857142857143,
+                410.09803263346356,
+                226.77190144856772,
+                445.0419921875
+              ],
+              "normalizedTextDigest": "sha256:246537e7817cd76803fa5c4fd9143c72f4aa99d6062b622903893db8eec48186",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "供水管网预防维护",
+            "nativeTextRedistributed": false
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p073-t00-r01",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 73,
+              "bbox": [
+                226.77190144856772,
+                410.09803263346356,
+                456.37799072265625,
+                445.0419921875
+              ],
+              "normalizedTextDigest": "sha256:a40f8e2c532d53e100448dbe72cdc0f6a8ccb70ab05f7f4e5566244b8712ba85",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "水管破裂KPI为每100公里主干管每年<15次；独立Target为每年<47次。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p073-t00-r01",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 73,
+              "bbox": [
+                456.37799072265625,
+                410.09803263346356,
+                525.8269246419271,
+                445.0419921875
+              ],
+              "normalizedTextDigest": "sha256:daf49f360168b019e290f394fee94b487b5bb229abaf6942b67551dbf7c2febe",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Benchmarked as an Local Water Utility",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p073-t00-r01",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 73,
+              "bbox": [
+                525.8269246419271,
+                410.09803263346356,
+                589.6064656575521,
+                445.0419921875
+              ],
+              "normalizedTextDigest": "sha256:090eb184ba0717e057bb8f235183cfc62aefb802c1a3dd1839928e065c0d96c7",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "<47 pa",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p073-t00-r01",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 73,
+              "bbox": [
+                589.6064656575521,
+                410.09803263346356,
+                657.0709838867188,
+                445.0419921875
+              ],
+              "normalizedTextDigest": "sha256:9b11f6b707d2a03e0265465f32520bc1bc213de121de958539662d0ec1453fcb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Monthly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p073-t00-r01",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 73,
+              "bbox": [
+                657.0709838867188,
+                410.09803263346356,
+                739.2758585611979,
+                445.0419921875
+              ],
+              "normalizedTextDigest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "8.2"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p073-t00-r01",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 73,
+              "bbox": [
+                739.2758585611979,
+                410.09803263346356,
+                805.4612775530134,
+                445.0419921875
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "action",
+            "pdfPage": 73,
+            "bbox": [
+              36.42857142857143,
+              410.09803263346356,
+              226.77190144856772,
+              445.0419921875
+            ],
+            "normalizedTextDigest": "sha256:246537e7817cd76803fa5c4fd9143c72f4aa99d6062b622903893db8eec48186",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 73,
+            "bbox": [
+              226.77190144856772,
+              410.09803263346356,
+              456.37799072265625,
+              445.0419921875
+            ],
+            "normalizedTextDigest": "sha256:a40f8e2c532d53e100448dbe72cdc0f6a8ccb70ab05f7f4e5566244b8712ba85",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 73,
+            "bbox": [
+              456.37799072265625,
+              410.09803263346356,
+              525.8269246419271,
+              445.0419921875
+            ],
+            "normalizedTextDigest": "sha256:daf49f360168b019e290f394fee94b487b5bb229abaf6942b67551dbf7c2febe",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 73,
+            "bbox": [
+              525.8269246419271,
+              410.09803263346356,
+              589.6064656575521,
+              445.0419921875
+            ],
+            "normalizedTextDigest": "sha256:090eb184ba0717e057bb8f235183cfc62aefb802c1a3dd1839928e065c0d96c7",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 73,
+            "bbox": [
+              589.6064656575521,
+              410.09803263346356,
+              657.0709838867188,
+              445.0419921875
+            ],
+            "normalizedTextDigest": "sha256:9b11f6b707d2a03e0265465f32520bc1bc213de121de958539662d0ec1453fcb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 73,
+            "bbox": [
+              657.0709838867188,
+              410.09803263346356,
+              739.2758585611979,
+              445.0419921875
+            ],
+            "normalizedTextDigest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 73,
+            "bbox": [
+              739.2758585611979,
+              410.09803263346356,
+              805.4612775530134,
+              445.0419921875
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      }
+    ],
+    "interpretation": {
+      "currentVersion": "UNKNOWN",
+      "currentLegalApplicability": "UNKNOWN",
+      "actualOutput": "UNKNOWN",
+      "actualExecution": "UNKNOWN",
+      "actualSpend": "UNKNOWN",
+      "actualOutcome": "UNKNOWN",
+      "activityResourceAllocation": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "councilAssignmentCreated": false
+    },
+    "logicalGrouping": "FIRST_PRINTED_ACTION_OR_PROJECT_CELL_WITH_MERGED_SUBROWS; EXPLICIT_CONTINUATION_ONLY",
+    "physicalRowCount": 1,
+    "newNativeActivity": false
+  },
+  "sourceAnchorCount": 7,
+  "sourceLocations": [
+    {
+      "field": "action",
+      "pdfPage": 73,
+      "bbox": [
+        36.42857142857143,
+        410.09803263346356,
+        226.77190144856772,
+        445.0419921875
+      ],
+      "normalizedTextDigest": "sha256:246537e7817cd76803fa5c4fd9143c72f4aa99d6062b622903893db8eec48186",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "kpi",
+      "pdfPage": 73,
+      "bbox": [
+        226.77190144856772,
+        410.09803263346356,
+        456.37799072265625,
+        445.0419921875
+      ],
+      "normalizedTextDigest": "sha256:a40f8e2c532d53e100448dbe72cdc0f6a8ccb70ab05f7f4e5566244b8712ba85",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "regulatory",
+      "pdfPage": 73,
+      "bbox": [
+        456.37799072265625,
+        410.09803263346356,
+        525.8269246419271,
+        445.0419921875
+      ],
+      "normalizedTextDigest": "sha256:daf49f360168b019e290f394fee94b487b5bb229abaf6942b67551dbf7c2febe",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:14cf097706b54f5d9e1b730b8c2858cd6eea763c9ec9ce525e0ffa26fb1a7ee7",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

@@ -1,0 +1,201 @@
+{
+  "format": "op-final-source-and-boot-cache-readback-1",
+  "at": "2026-11-02T04:04:16.141722+00:00",
+  "status": "PASS_ALL_911_ACTUAL_UNITS",
+  "sourceBundle": {
+    "file": "sources/op-completion-review.json",
+    "bytes": 12848409,
+    "sha256": "345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0"
+  },
+  "bootCache": {
+    "file": "sources/csoi-default-snapshot.js",
+    "bytes": 22744179,
+    "sha256": "ae055df61798e20c63c988414cb28e107d0adc603842f5606cba6a7161d7105b"
+  },
+  "originalPDF": {
+    "sha256": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+    "pages": 142
+  },
+  "independentPDFReview": "independent/REPORT_ZH.md",
+  "independentActualProjectionComparison": "independent/model-readback-review.json",
+  "semanticsLimit": "This readback proves byte/structure transfer of all previously independently PDF-reviewed units; hash equality alone is not semantic review. Source conflicts and unknowns are retained.",
+  "unitCount": 911,
+  "recordCount": 143,
+  "numericEncodingNote": "Source Python JSON can encode integral coordinates as1.0; JavaScript boot serialization encodes1. Both are JSON numbers. Exact facts/anchors and every unit compare structurally equal; source digest matches prior semantic review; actual cache unit digests are reported separately. Native OP tests also use JavaScript strict deep equality.",
+  "unitsWithDifferentNumberEncoding": 110,
+  "matrix": {
+    "file": "final-actual-unit-readback.csv",
+    "sha256": "2c2e12864580b1d4579c2bffb4175a7b3391a1570ff195edda432110b771ef3f"
+  },
+  "samples": [
+    {
+      "unitId": "csoi:op-full:p028-t00-r01",
+      "page": 28,
+      "category": "SERVICE_ACTION",
+      "summary": "每年检查25%的地下石油产品储存设施；工作量23，Target7。",
+      "actualFullUnitDigest": "sha256:dba587a84c2a7abc678d592ea1b32eb78d553fe0039862e43a82991ee5920866",
+      "reviewedSourceUnitDigest": "sha256:dba587a84c2a7abc678d592ea1b32eb78d553fe0039862e43a82991ee5920866",
+      "file": "final-samples/01-p028-SERVICE_ACTION.json",
+      "bytes": 13059,
+      "sha256": "da2541efbc17533601307ad0d780bbc28b20f4ab9646aced255dafd0ccc26ea9"
+    },
+    {
+      "unitId": "csoi:op-full:p029-t00-r01",
+      "page": 29,
+      "category": "SERVICE_ACTION",
+      "summary": "90%的新食品场所在通知后14日内登记。；90%的皮肤穿刺投诉在投诉后14日内检查。；90%的预制住宅相关投诉在14日内调查。；80%的商业泳池/SPA投诉按风险处理：低风险通知经营者，高风险调查。；80%的蚊虫或害兽投诉按风险处理：低风险通知经营者，高风险调查。",
+      "actualFullUnitDigest": "sha256:bd8abf33644dc3732dac84111c2d14b8622085951fca4eaf8f3309ee2dcea807",
+      "reviewedSourceUnitDigest": "sha256:bd8abf33644dc3732dac84111c2d14b8622085951fca4eaf8f3309ee2dcea807",
+      "file": "final-samples/02-p029-SERVICE_ACTION.json",
+      "bytes": 53998,
+      "sha256": "13a40973ea50bc151c38f0fa165babab373244eb82c05e2e3790957b08368488"
+    },
+    {
+      "unitId": "csoi:op-full:p029-t00-r08",
+      "page": 29,
+      "category": "SERVICE_ACTION",
+      "summary": "非法倾倒子行保留80%，原文同时提及石棉倾倒及有合理机会识别违法者；Optimal25、Funded3。；80%的土地污染投诉在投诉后14日内调查。；80%的onsite sewer tank投诉在付款后14日内调查。；80%的乱丢垃圾投诉在报告后48小时内调查。；90%的全部现场污水管理系统投诉在14日内检查。；90%的LTW投诉在72小时内检查。；50%的地下储油设施投诉在投诉后14日内调查，Optimal8、Funded4。；90%的地下储油设施污染事件在投诉后14日内调查。；40%的噪声投诉在投诉后14日内调查，Optimal5、Funded2。；40%的空气污染投诉在投诉后14日内调查，Optimal35、Funded17。；80%的水污染投诉在投诉后14日内调查。；90%的污染事件在24小时内报告EPA。",
+      "actualFullUnitDigest": "sha256:4b7807450680df032bb98bdebb7cbeb3ea7b13edee3d1a2f02152aaa83a38116",
+      "reviewedSourceUnitDigest": "sha256:4b7807450680df032bb98bdebb7cbeb3ea7b13edee3d1a2f02152aaa83a38116",
+      "file": "final-samples/03-p029-SERVICE_ACTION.json",
+      "bytes": 126191,
+      "sha256": "90cb8ca6843c4bcde29a119561a945805af2a8993a745b456e8ccb2b598d0571"
+    },
+    {
+      "unitId": "csoi:op-full:p073-t00-r01",
+      "page": 73,
+      "category": "SERVICE_ACTION",
+      "summary": "水管破裂KPI为每100公里主干管每年<15次；独立Target为每年<47次。",
+      "actualFullUnitDigest": "sha256:14cf097706b54f5d9e1b730b8c2858cd6eea763c9ec9ce525e0ffa26fb1a7ee7",
+      "reviewedSourceUnitDigest": "sha256:14cf097706b54f5d9e1b730b8c2858cd6eea763c9ec9ce525e0ffa26fb1a7ee7",
+      "file": "final-samples/04-p073-SERVICE_ACTION.json",
+      "bytes": 10979,
+      "sha256": "e66aa86f80384b94339261bfeb80a4f8d24347dafe8641de4900beeca1e1da46"
+    },
+    {
+      "unitId": "csoi:op-full:p073:programme_context",
+      "page": 73,
+      "category": "PROGRAMME_CONTEXT",
+      "summary": "供排水业务日常运营维护区域饮用水、非饮用水及污水服务，目标兼顾可靠性、成本、社区及接纳环境保护。DP分别为安全可靠供水和排污系统运营维护；此服务/FTE背景与既有水务节点对应。",
+      "actualFullUnitDigest": "sha256:a1d3c4e0094a606d8a872c22c967ab7f9d55895e8a7b7f458d3f1cbaf6cd758c",
+      "reviewedSourceUnitDigest": "sha256:f0220a6b6f973dcb2cfcc5018f98489b3ab5177f538ea99389274fa572eddaef",
+      "file": "final-samples/05-p073-PROGRAMME_CONTEXT.json",
+      "bytes": 3722,
+      "sha256": "7f3da49f9a4e325cfccc663dcb30c2b5646fd10ffa7aae8519dbce548b77015f"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p111:capital-footnote",
+      "page": 111,
+      "category": "OP_DOCUMENT_CONTEXT",
+      "summary": "可见原页为设施现场照片。抽取文字层残留星号与 Corporate Projects team 的说明，但原件像素中被照片覆盖；不能当作本页可见脚注或项目完成证据。",
+      "actualFullUnitDigest": "sha256:56b654b8a477719c257329d710b166bdbe627489d917618f4bc477a203250b6f",
+      "reviewedSourceUnitDigest": "sha256:010ad00e6b522f69af2d4a00c4569d0be5479da6086ae9c45c11de3ab9735e9a",
+      "file": "final-samples/06-p111-OP_DOCUMENT_CONTEXT.json",
+      "bytes": 1956,
+      "sha256": "a4637d17febf86383ac7e26b4498e45d59f1064c7656e1b63eaff7913ecf6ed6"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p116:service-revenue-r01",
+      "page": 116,
+      "category": "OP_SERVICE_BUDGET_ROW",
+      "summary": "Revenue 的Income component原值为 27,533，单位为千元格式 $'000；这是拟议年度预算。",
+      "actualFullUnitDigest": "sha256:a3511321bc0eeaddf61811e26740d85f718d057cc7221c03ccbbdf306c506678",
+      "reviewedSourceUnitDigest": "sha256:a3511321bc0eeaddf61811e26740d85f718d057cc7221c03ccbbdf306c506678",
+      "file": "final-samples/07-p116-OP_SERVICE_BUDGET_ROW.json",
+      "bytes": 2555,
+      "sha256": "baeb465355ec4f47b818f03af6bcd331eb289917e26b3bfa2b697030e59db4d9"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p116:service-tourism-r04",
+      "page": 116,
+      "category": "OP_SERVICE_BUDGET_ROW",
+      "summary": "Tourism 的Expenditure component原值为 647，单位为千元格式 $'000；这是拟议年度预算。",
+      "actualFullUnitDigest": "sha256:801e3394f6fbb899b29b97bf390a33ff6d46aa3af7dac369211c6b2e15ccd10b",
+      "reviewedSourceUnitDigest": "sha256:801e3394f6fbb899b29b97bf390a33ff6d46aa3af7dac369211c6b2e15ccd10b",
+      "file": "final-samples/08-p116-OP_SERVICE_BUDGET_ROW.json",
+      "bytes": 2546,
+      "sha256": "de1888bbd293f2504c5dcf171fc6c668e0f4c246fd032ada97dfb7100ad9e95d"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p120:fund-r02",
+      "page": 120,
+      "category": "OP_FUND_FINANCIAL_ROW",
+      "summary": "Income Statement by Fund 的“Rates and Annual Charges”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+      "actualFullUnitDigest": "sha256:027e543f5348204abcd07e94f62b9f51653ee1c816616fa4bdfae7f0c9c4271a",
+      "reviewedSourceUnitDigest": "sha256:027e543f5348204abcd07e94f62b9f51653ee1c816616fa4bdfae7f0c9c4271a",
+      "file": "final-samples/09-p120-OP_FUND_FINANCIAL_ROW.json",
+      "bytes": 4008,
+      "sha256": "d0edffcc58cf54960173ec2e1eee276d31fa6b514d5d3b8b3f498a8cd74fd6a0"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p120:fund-r08",
+      "page": 120,
+      "category": "OP_FUND_FINANCIAL_ROW",
+      "summary": "Income Statement by Fund 的“Net Gains from the Disposal of Assets”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+      "actualFullUnitDigest": "sha256:aac95676e02f15766ff6f05f3bf9e534c218b1304d5ffc898c98b8ce269fce00",
+      "reviewedSourceUnitDigest": "sha256:aac95676e02f15766ff6f05f3bf9e534c218b1304d5ffc898c98b8ce269fce00",
+      "file": "final-samples/10-p120-OP_FUND_FINANCIAL_ROW.json",
+      "bytes": 4077,
+      "sha256": "3b818f7dfa69c1fea9a236d63a79cc17d25aaae72cec397addda124efedce8dc"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p120:fund-r19",
+      "page": 120,
+      "category": "OP_FUND_FINANCIAL_ROW",
+      "summary": "Income Statement by Fund 的“Operating Result from Continuing Operations Surplus/(Deficit)”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+      "actualFullUnitDigest": "sha256:d328fec0621a45ea9f0dd8d475cd9c6b853879f6893864ff7d382ed4ae2ada1e",
+      "reviewedSourceUnitDigest": "sha256:d328fec0621a45ea9f0dd8d475cd9c6b853879f6893864ff7d382ed4ae2ada1e",
+      "file": "final-samples/11-p120-OP_FUND_FINANCIAL_ROW.json",
+      "bytes": 4269,
+      "sha256": "9c213497ac776292d1d16a9d2c1400068db3f3acca326e5fd40058ba0c1d5df0"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p121:fund-r02",
+      "page": 121,
+      "category": "OP_FUND_FINANCIAL_ROW",
+      "summary": "Cash Flow Summary 的“Receipts - Operating Activities”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+      "actualFullUnitDigest": "sha256:05850d84f3dc0323982dff77d81d6884f962041f7e7eaff325afa745461546b7",
+      "reviewedSourceUnitDigest": "sha256:05850d84f3dc0323982dff77d81d6884f962041f7e7eaff325afa745461546b7",
+      "file": "final-samples/12-p121-OP_FUND_FINANCIAL_ROW.json",
+      "bytes": 4054,
+      "sha256": "0361a12c7492f8652c1c1c3e1908e2e351f7c8404b354bf5874556f1517a5111"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p132:rating-map-1",
+      "page": 132,
+      "category": "OP_REVENUE_MAP",
+      "summary": "原页用红色突出 Business 相关区域；只记录图例和地域背景，不据低分辨率轮廓裁定某个地块应缴税率。",
+      "actualFullUnitDigest": "sha256:14ba769e1ea82a719b23bdb5988cffa9f08ac55272d4ddd43e06d6d8c54e053c",
+      "reviewedSourceUnitDigest": "sha256:14ba769e1ea82a719b23bdb5988cffa9f08ac55272d4ddd43e06d6d8c54e053c",
+      "file": "final-samples/13-p132-OP_REVENUE_MAP.json",
+      "bytes": 2680,
+      "sha256": "6227546262bbe6175dfd1c1bf78b9dda8f4c5d90a47cc9dedbf9c73be951da73"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p140:pensioner-eligibility",
+      "page": 140,
+      "category": "OP_REVENUE_POLICY",
+      "summary": "持 Pensioner Concession Card 或其他符合资格者，针对唯一或主要居所按 s.575 获减免；表列金额为每年最高额。",
+      "actualFullUnitDigest": "sha256:4e846a320bcecacce499c2d3b1ca00f31ebda862516b6f032d856be16b512825",
+      "reviewedSourceUnitDigest": "sha256:4e846a320bcecacce499c2d3b1ca00f31ebda862516b6f032d856be16b512825",
+      "file": "final-samples/14-p140-OP_REVENUE_POLICY.json",
+      "bytes": 1814,
+      "sha256": "6df9ef7dc5f089452b0b968acf346dfc7dd453a677545dbd707749fde99fc0b6"
+    },
+    {
+      "unitId": "csoi:op2026:finance:p140:pensioner-rebate-1",
+      "page": 140,
+      "category": "OP_REVENUE_REBATE",
+      "summary": "Ordinary rates and domestic waste management charge 的年度最高减免额为 $250.00；须满足养老金资格及唯一/主要居所条件。",
+      "actualFullUnitDigest": "sha256:4c3570d92a68dd5e27d312cabad5f34c1b6d0b1a590d5335834345af3d619ee4",
+      "reviewedSourceUnitDigest": "sha256:5bfc18887b8d0a29d245a40a96c7af772ee2e4dd4e9f2fbbde36c1f0bbfc86ae",
+      "file": "final-samples/15-p140-OP_REVENUE_REBATE.json",
+      "bytes": 2107,
+      "sha256": "c1a0f203f7ccbf4cd58519ec402e9409f6fd3bc2b097c8052db8a5e2240bf637"
+    }
+  ],
+  "exporterImplementationNotes": [
+    "The first exporter assumed Python and JavaScript would encode integral JSON numbers identically; explicit separate digests now retain both encodings while full fields compare equal.",
+    "Finance units use pdfPage without the optional services pages array; the exporter now reads that existing schema. These were exporter assumptions, not source changes."
+  ]
+}

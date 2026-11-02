@@ -1,0 +1,121 @@
+{
+  "unitId": "csoi:op2026:finance:p121:fund-r02",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:121",
+  "cacheRevisionId": "sha256:258b75ca426e3b1a77a70e037e78a2818cfa2333664f748c9d371bfa00fe2a16",
+  "actualFullUnitDigest": "sha256:05850d84f3dc0323982dff77d81d6884f962041f7e7eaff325afa745461546b7",
+  "page": 121,
+  "category": "OP_FUND_FINANCIAL_ROW",
+  "summary": "Cash Flow Summary 的“Receipts - Operating Activities”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+  "conditions": [],
+  "qualifiers": [],
+  "facts": {
+    "tableId": "op-finance:p121:fund-statement",
+    "rowLabel": "Receipts - Operating Activities",
+    "statementSection": "Cash Flows from Operating Activities",
+    "rowRole": "SOURCE_LINE_ITEM",
+    "budgetStatus": "PROJECTED_CASH_FLOW_NOT_ACTUAL",
+    "columnValues": [
+      {
+        "column": "Consolidated",
+        "display": "104,699",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Receipts - Operating Activities",
+        "status": "PRINTED_VALUE",
+        "numericValue": 104699,
+        "numericValueText": "104699",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "General",
+        "display": "65,084",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Receipts - Operating Activities",
+        "status": "PRINTED_VALUE",
+        "numericValue": 65084,
+        "numericValueText": "65084",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "Water",
+        "display": "12,978",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Receipts - Operating Activities",
+        "status": "PRINTED_VALUE",
+        "numericValue": 12978,
+        "numericValueText": "12978",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "Sewer",
+        "display": "14,454",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Receipts - Operating Activities",
+        "status": "PRINTED_VALUE",
+        "numericValue": 14454,
+        "numericValueText": "14454",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "Waste",
+        "display": "12,183",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Receipts - Operating Activities",
+        "status": "PRINTED_VALUE",
+        "numericValue": 12183,
+        "numericValueText": "12183",
+        "signConvention": "AS_PRINTED"
+      }
+    ]
+  },
+  "sourceAnchorCount": 7,
+  "sourceLocations": [
+    {
+      "field": "facts.rowLabel",
+      "pdfPage": 121,
+      "bbox": [
+        72.32780151367187,
+        249.7600341796875,
+        305.9290069580078,
+        263.9790405273437
+      ],
+      "normalizedTextDigest": "sha256:7cdb9e78f17ac5d769764f32ea33ecc5b8c235a993316cd7b798ca96d78e5fe3",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "tableHeader",
+      "pdfPage": 121,
+      "bbox": [
+        66.71599731445312,
+        207.2037139892578,
+        522.1317504882812,
+        236.201513671875
+      ],
+      "normalizedTextDigest": "sha256:1ff784b4b3752d4416493f3e52f20334e72244bd2d78f339acb457472d0780e8",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "facts.columnValues[0]",
+      "pdfPage": 121,
+      "bbox": [
+        305.62900695800784,
+        249.7600341796875,
+        359.8090118408203,
+        263.9790405273437
+      ],
+      "normalizedTextDigest": "sha256:40092b552de3dd6a501da3bb4701b3b889b624b70cb7cd1045318d33298f67b4",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:05850d84f3dc0323982dff77d81d6884f962041f7e7eaff325afa745461546b7",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

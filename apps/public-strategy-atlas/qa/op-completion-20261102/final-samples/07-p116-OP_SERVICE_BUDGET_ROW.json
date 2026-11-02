@@ -1,0 +1,73 @@
+{
+  "unitId": "csoi:op2026:finance:p116:service-revenue-r01",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:116",
+  "cacheRevisionId": "sha256:12440053f45ca792739764d005ece07d2e8d28f9525c5671a834027309d04441",
+  "actualFullUnitDigest": "sha256:a3511321bc0eeaddf61811e26740d85f718d057cc7221c03ccbbdf306c506678",
+  "page": 116,
+  "category": "OP_SERVICE_BUDGET_ROW",
+  "summary": "Revenue 的Income component原值为 27,533，单位为千元格式 $'000；这是拟议年度预算。",
+  "conditions": [],
+  "qualifiers": [],
+  "facts": {
+    "tableId": "op-finance:p116:service-revenue",
+    "service": "Revenue",
+    "resourceGroup": "Rates & Annual Charges",
+    "rowRole": "Income component",
+    "budgetStatus": "DRAFT_BUDGET_AS_PRINTED_NOT_ACTUAL",
+    "columnValues": [
+      {
+        "column": "2026/27 Draft Budget",
+        "display": "27,533",
+        "unit": "$'000",
+        "currency": "UNKNOWN",
+        "period": "2026/27",
+        "meaning": "Income component",
+        "status": "PRINTED_VALUE",
+        "numericValue": 27533,
+        "numericValueText": "27533",
+        "signConvention": "AS_PRINTED"
+      }
+    ]
+  },
+  "sourceAnchorCount": 3,
+  "sourceLocations": [
+    {
+      "field": "facts.columnValues[0]",
+      "pdfPage": 116,
+      "bbox": [
+        432.91929779052737,
+        197.74625244140626,
+        557.3243886311849,
+        210.87140502929688
+      ],
+      "normalizedTextDigest": "sha256:a17b0f4574d4e16334473fad79f23f21eb4f4e6c655ed562b272f01baaca3fb9",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "tableHeader",
+      "pdfPage": 116,
+      "bbox": [
+        39.9768310546875,
+        171.04273376464843,
+        557.3243774414062,
+        198.04625549316407
+      ],
+      "normalizedTextDigest": "sha256:f7192711f811fc2f85cf4702b606452603458114abeaaca9c6b4c65b6ece8518",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "facts.resourceGroup",
+      "pdfPage": 116,
+      "bbox": [
+        198.19323998653527,
+        197.74625244140626,
+        433.2192977905273,
+        210.87140502929688
+      ],
+      "normalizedTextDigest": "sha256:ea909b9f5fe5c4903e71aacd611d4a81afdcdd6081f64ab68f4ed8da873c9917",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:a3511321bc0eeaddf61811e26740d85f718d057cc7221c03ccbbdf306c506678",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

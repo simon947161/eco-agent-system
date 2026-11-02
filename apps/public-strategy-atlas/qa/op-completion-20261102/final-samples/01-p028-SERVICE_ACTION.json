@@ -1,0 +1,355 @@
+{
+  "unitId": "csoi:op-full:p028-t00-r01",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:028",
+  "cacheRevisionId": "sha256:0992678dc1873576d7810dfedd3d48260119f77fd0d89890989291aa38e55586",
+  "actualFullUnitDigest": "sha256:dba587a84c2a7abc678d592ea1b32eb78d553fe0039862e43a82991ee5920866",
+  "page": 28,
+  "category": "SERVICE_ACTION",
+  "summary": "每年检查25%的地下石油产品储存设施；工作量23，Target7。",
+  "conditions": [
+    "保留百分比和数量的原列差异。"
+  ],
+  "qualifiers": [],
+  "facts": {
+    "sourceTableType": "SERVICE",
+    "rows": [
+      {
+        "id": "p028-t00-r01",
+        "pdfPage": 28,
+        "tableId": "p028-t00",
+        "printedSection": "Planned – Public Health and Environment",
+        "summary": "每年检查25%的地下石油产品储存设施；工作量23，Target7。",
+        "conditions": [
+          "保留百分比和数量的原列差异。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p028-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 28,
+              "bbox": [
+                36.47826086956522,
+                76.55755615234375,
+                211.65381992885045,
+                130.70189412434897
+              ],
+              "normalizedTextDigest": "sha256:7e26c8e2d41568569b703d89fa37042a0b959976056ec3d2a940f3b9253ae0e4",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "地下储油设施检查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p028-t00-r01",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 28,
+              "bbox": [
+                211.65381992885045,
+                76.55755615234375,
+                257.0079650878906,
+                130.70189412434897
+              ],
+              "normalizedTextDigest": "sha256:535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "23",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p028-t00-r01",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 28,
+              "bbox": [
+                257.0079650878906,
+                76.55755615234375,
+                302.36207071940106,
+                130.70189412434897
+              ],
+              "normalizedTextDigest": "sha256:535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "23",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p028-t00-r01",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 28,
+              "bbox": [
+                302.36207071940106,
+                76.55755615234375,
+                496.06298828125,
+                130.70189412434897
+              ],
+              "normalizedTextDigest": "sha256:29d6172176e1cfa56da306717ca5e0fdbfcd03a3c5e452efc87e282095067d2b",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "每年检查25%的地下石油产品储存设施；工作量23，Target7。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p028-t00-r01",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 28,
+              "bbox": [
+                496.06298828125,
+                76.55755615234375,
+                557.4800848709909,
+                130.70189412434897
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p028-t00-r01",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 28,
+              "bbox": [
+                557.4800848709909,
+                76.55755615234375,
+                597.7320963541666,
+                130.70189412434897
+              ],
+              "normalizedTextDigest": "sha256:7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "7",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p028-t00-r01",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 28,
+              "bbox": [
+                597.7320963541666,
+                76.55755615234375,
+                652.4409586588541,
+                130.70189412434897
+              ],
+              "normalizedTextDigest": "sha256:2c5e81714652558fe11969ae6152aee6f95b48a2d4605740a628906f69bbf692",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Annual",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p028-t00-r01",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 28,
+              "bbox": [
+                652.4409586588541,
+                76.55755615234375,
+                730.3938802083334,
+                130.70189412434897
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p028-t00-r01",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 28,
+              "bbox": [
+                730.3938802083334,
+                76.55755615234375,
+                805.4084020543982,
+                130.70189412434897
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "action",
+            "pdfPage": 28,
+            "bbox": [
+              36.47826086956522,
+              76.55755615234375,
+              211.65381992885045,
+              130.70189412434897
+            ],
+            "normalizedTextDigest": "sha256:7e26c8e2d41568569b703d89fa37042a0b959976056ec3d2a940f3b9253ae0e4",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "optimalVolume",
+            "pdfPage": 28,
+            "bbox": [
+              211.65381992885045,
+              76.55755615234375,
+              257.0079650878906,
+              130.70189412434897
+            ],
+            "normalizedTextDigest": "sha256:535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 28,
+            "bbox": [
+              257.0079650878906,
+              76.55755615234375,
+              302.36207071940106,
+              130.70189412434897
+            ],
+            "normalizedTextDigest": "sha256:535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 28,
+            "bbox": [
+              302.36207071940106,
+              76.55755615234375,
+              496.06298828125,
+              130.70189412434897
+            ],
+            "normalizedTextDigest": "sha256:29d6172176e1cfa56da306717ca5e0fdbfcd03a3c5e452efc87e282095067d2b",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 28,
+            "bbox": [
+              496.06298828125,
+              76.55755615234375,
+              557.4800848709909,
+              130.70189412434897
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 28,
+            "bbox": [
+              557.4800848709909,
+              76.55755615234375,
+              597.7320963541666,
+              130.70189412434897
+            ],
+            "normalizedTextDigest": "sha256:7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 28,
+            "bbox": [
+              597.7320963541666,
+              76.55755615234375,
+              652.4409586588541,
+              130.70189412434897
+            ],
+            "normalizedTextDigest": "sha256:2c5e81714652558fe11969ae6152aee6f95b48a2d4605740a628906f69bbf692",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 28,
+            "bbox": [
+              652.4409586588541,
+              76.55755615234375,
+              730.3938802083334,
+              130.70189412434897
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 28,
+            "bbox": [
+              730.3938802083334,
+              76.55755615234375,
+              805.4084020543982,
+              130.70189412434897
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      }
+    ],
+    "interpretation": {
+      "currentVersion": "UNKNOWN",
+      "currentLegalApplicability": "UNKNOWN",
+      "actualOutput": "UNKNOWN",
+      "actualExecution": "UNKNOWN",
+      "actualSpend": "UNKNOWN",
+      "actualOutcome": "UNKNOWN",
+      "activityResourceAllocation": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "councilAssignmentCreated": false
+    },
+    "logicalGrouping": "FIRST_PRINTED_ACTION_OR_PROJECT_CELL_WITH_MERGED_SUBROWS; EXPLICIT_CONTINUATION_ONLY",
+    "physicalRowCount": 1,
+    "newNativeActivity": false
+  },
+  "sourceAnchorCount": 9,
+  "sourceLocations": [
+    {
+      "field": "action",
+      "pdfPage": 28,
+      "bbox": [
+        36.47826086956522,
+        76.55755615234375,
+        211.65381992885045,
+        130.70189412434897
+      ],
+      "normalizedTextDigest": "sha256:7e26c8e2d41568569b703d89fa37042a0b959976056ec3d2a940f3b9253ae0e4",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "optimalVolume",
+      "pdfPage": 28,
+      "bbox": [
+        211.65381992885045,
+        76.55755615234375,
+        257.0079650878906,
+        130.70189412434897
+      ],
+      "normalizedTextDigest": "sha256:535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "fundedVolume",
+      "pdfPage": 28,
+      "bbox": [
+        257.0079650878906,
+        76.55755615234375,
+        302.36207071940106,
+        130.70189412434897
+      ],
+      "normalizedTextDigest": "sha256:535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:dba587a84c2a7abc678d592ea1b32eb78d553fe0039862e43a82991ee5920866",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

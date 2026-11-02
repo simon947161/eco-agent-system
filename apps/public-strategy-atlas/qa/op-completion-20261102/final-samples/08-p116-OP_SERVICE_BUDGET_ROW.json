@@ -1,0 +1,73 @@
+{
+  "unitId": "csoi:op2026:finance:p116:service-tourism-r04",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:116",
+  "cacheRevisionId": "sha256:12440053f45ca792739764d005ece07d2e8d28f9525c5671a834027309d04441",
+  "actualFullUnitDigest": "sha256:801e3394f6fbb899b29b97bf390a33ff6d46aa3af7dac369211c6b2e15ccd10b",
+  "page": 116,
+  "category": "OP_SERVICE_BUDGET_ROW",
+  "summary": "Tourism 的Expenditure component原值为 647，单位为千元格式 $'000；这是拟议年度预算。",
+  "conditions": [],
+  "qualifiers": [],
+  "facts": {
+    "tableId": "op-finance:p116:service-tourism",
+    "service": "Tourism",
+    "resourceGroup": "Employee Costs",
+    "rowRole": "Expenditure component",
+    "budgetStatus": "DRAFT_BUDGET_AS_PRINTED_NOT_ACTUAL",
+    "columnValues": [
+      {
+        "column": "2026/27 Draft Budget",
+        "display": "647",
+        "unit": "$'000",
+        "currency": "UNKNOWN",
+        "period": "2026/27",
+        "meaning": "Expenditure component",
+        "status": "PRINTED_VALUE",
+        "numericValue": 647,
+        "numericValueText": "647",
+        "signConvention": "AS_PRINTED"
+      }
+    ]
+  },
+  "sourceAnchorCount": 3,
+  "sourceLocations": [
+    {
+      "field": "facts.columnValues[0]",
+      "pdfPage": 116,
+      "bbox": [
+        432.91929779052737,
+        676.8385498046875,
+        557.3243886311849,
+        689.9635833740234
+      ],
+      "normalizedTextDigest": "sha256:86bc00bf176c8b99e9cbdd89afdd2492de002c1dcce63606f711e0c04203c4da",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "tableHeader",
+      "pdfPage": 116,
+      "bbox": [
+        39.9768310546875,
+        610.0168090820313,
+        557.3243774414062,
+        636.7748779296875
+      ],
+      "normalizedTextDigest": "sha256:f7192711f811fc2f85cf4702b606452603458114abeaaca9c6b4c65b6ece8518",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "facts.resourceGroup",
+      "pdfPage": 116,
+      "bbox": [
+        198.19323998653527,
+        676.8385498046875,
+        433.2192977905273,
+        689.9635833740234
+      ],
+      "normalizedTextDigest": "sha256:270dcebde32e063698e2637c6856be992830801f815dc5a9b31a31b0a8021dbe",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:801e3394f6fbb899b29b97bf390a33ff6d46aa3af7dac369211c6b2e15ccd10b",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

@@ -1,7 +1,7 @@
 """Real OP page/unit interactions and import negatives at desktop and mobile."""
 from pathlib import Path
 from urllib.parse import quote
-import datetime,json,os,subprocess,tempfile
+import datetime,json,os,subprocess,tempfile,time
 from playwright.sync_api import sync_playwright,expect
 APP=Path(__file__).resolve().parents[1];OUT=APP/os.environ.get('ATLAS_OP_BROWSER_OUTPUT','qa/op-completion-20261102/browser');OUT.mkdir(parents=True,exist_ok=True)
 BASE=os.environ.get('ATLAS_TEST_URL','http://127.0.0.1:8877/');plan=json.loads((APP/'sources/op-completion-review.json').read_text());results=[]
@@ -17,16 +17,22 @@ def download(page,name,path):
  with page.expect_download() as info:page.get_by_role('button',name=name,exact=True).click()
  info.value.save_as(str(path));return path
 def export(page,path):
+ started=time.perf_counter()
  go(page,'/atlas');expect(page.locator('#routeMap')).to_be_visible()
  with page.expect_download() as info:tool(page,'exportBtn')
- info.value.save_as(str(path));subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(path)],check=True)
+ info.value.save_as(str(path));subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(path)],check=True);return round(time.perf_counter()-started,3)
 def load(page,path):
- go(page,'/atlas');expect(page.locator('#routeMap')).to_be_visible();tool(page,'importSnapshotBtn');page.locator('#snapshotFile').set_input_files(str(path));expect(page.locator('#snapshotMessage')).to_contain_text('Explicit replacement required',timeout=30000);page.locator('#applySnapshot').click();expect(page.locator('#snapshotMessage')).to_contain_text('explicitly loaded in memory')
+ started=time.perf_counter()
+ go(page,'/atlas');expect(page.locator('#routeMap')).to_be_visible();tool(page,'importSnapshotBtn');page.locator('#snapshotFile').set_input_files(str(path));expect(page.locator('#snapshotMessage')).to_contain_text('Explicit replacement required',timeout=30000);page.locator('#applySnapshot').click();expect(page.locator('#snapshotMessage')).to_contain_text('explicitly loaded in memory');return round(time.perf_counter()-started,3)
 with tempfile.TemporaryDirectory(prefix='csoi-op-browser-')as tmp,sync_playwright()as p:
  tmp=Path(tmp);browser=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
  for width,height in [(1440,900),(390,844)]:
   page=browser.new_page(viewport={'width':width,'height':height},reduced_motion='reduce',accept_downloads=True,has_touch=width==390);errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
-  page.goto(BASE);expect(page.locator('#contentCount')).to_have_text('127');research(page);expect(page.locator('#csoiOpReviewProgress')).to_contain_text('143 / 143');page.locator('#csoiOpReviewProgress').scroll_into_view_if_needed();page.screenshot(path=str(OUT/f'op-progress-{width}.png'))
+  started=time.perf_counter();cdp=page.context.new_cdp_session(page);cdp.send('Performance.enable');samples=[];phases=[]
+  def sample(label=None):
+   metrics={m['name']:m['value']for m in cdp.send('Performance.getMetrics')['metrics']};row={'elapsedSeconds':round(time.perf_counter()-started,3),'jsHeapUsedBytes':int(metrics.get('JSHeapUsedSize',0)),'jsHeapTotalBytes':int(metrics.get('JSHeapTotalSize',0))};samples.append(row)
+   if label:phases.append({'phase':label,**row})
+  page.goto(BASE);expect(page.locator('#contentCount')).to_have_text('127');sample('applicationReady');research(page);expect(page.locator('#csoiOpReviewProgress')).to_contain_text('143 / 143');page.locator('#csoiOpReviewProgress').scroll_into_view_if_needed();page.screenshot(path=str(OUT/f'op-progress-{width}.png'))
   matrix=json.loads(download(page,'Export OP unit coverage JSON',tmp/f'units-{width}.json').read_text());assert len(matrix['rows'])==911 and all(r['verification']=='SOURCE_CHECKED_BOUNDED'for r in matrix['rows']);assert matrix['officialRelationships']==0
   opened=[];unit_ids=[]
   for node in plan['records']:
@@ -43,23 +49,24 @@ with tempfile.TemporaryDirectory(prefix='csoi-op-browser-')as tmp,sync_playwrigh
     assert reading.get_by_role('link',name='打开官方 OP PDF 第 '+str(node['anchor']['pdfPage'])+' 页').get_attribute('href').endswith('#page='+str(node['anchor']['pdfPage']))
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
     if group==0 and node['anchor']['pdfPage']in [28,73,116,121,132]:reading.get_by_role('heading',name='OP 全文有界梳理 / 计划、条件和预算',exact=True).scroll_into_view_if_needed();page.screenshot(path=str(OUT/f'op-page-{node["anchor"]["pdfPage"]}-{width}.png'))
-   opened.append(node['id'])
+   opened.append(node['id']);sample()
+  sample('all142PagesAnd911UnitsRead')
   assert len(opened)==142 and len(unit_ids)==911 and len(set(unit_ids))==911
   # Real controls: per-page query, pagination and the original retained water activity.
   knowledge(page,'csoi:knowledge:op2026:review:page:073');reading=page.locator('#csoiOpSourceReading');reading.get_by_role('textbox',name='Search OP page units').fill('service');reading.get_by_role('button',name='查询本页',exact=True).click();expect(page).to_have_url(__import__('re').compile('q=service'))
   knowledge(page,'csoi:knowledge:op2026:review:page:112');page.get_by_role('link',name='本页单元下一组',exact=True).click();expect(page).to_have_url(__import__('re').compile('page=2'));assert page.locator('[data-op-unit]').count()<=15
   research(page);task=page.locator('[data-task-id="COI-011"]');task.evaluate('(e)=>e.open=true');expect(task).to_contain_text('验收条件：');expect(task).to_contain_text('具体缺口：')
-  snapshot=tmp/f'current-{width}.json';export(page,snapshot)
+  snapshot=tmp/f'current-{width}.json';export_seconds=export(page,snapshot);sample('snapshotExportedAndOfflineVerified');snapshot_bytes=snapshot.stat().st_size;import_seconds={}
   if width==1440:
    over=tmp/'oversize.json'
    with over.open('wb')as stream:stream.truncate(32*1024*1024+1)
    tool(page,'importSnapshotBtn');page.locator('#snapshotFile').set_input_files(str(over));expect(page.locator('#snapshotMessage')).to_contain_text('SNAPSHOT_TOO_LARGE');expect(page.locator('#applySnapshot')).to_be_disabled()
   code="""const fs=require('fs'),M=require('./atlas-model.js'),I=require('./atlas-intake.js'),G=require('./csoi-governance.js'),B=require('./qa/op-completion-20261102/baseline-prefix.json');(async()=>{const d=JSON.parse(fs.readFileSync(process.argv[1])).dataset,x=structuredClone(d);x.domain.sourceCatalogue=await I.correctStage(x.domain.sourceCatalogue,'csoi:smrc-op-2026:20261030','SOURCE_RETRIEVED',{actor:'QA',at:'2026-11-02T03:30:00.000Z',reason:'Browser OP source withdrawal'});fs.writeFileSync(process.argv[2],JSON.stringify(await M.exportSnapshot(x)));const e=M.domainIndex(d).get('csoi:knowledge:op2026:review:page:028'),r=structuredClone(e.data.csoiRecord);r.data.publicKnowledge.facts.units.find(u=>u.conditions.length).conditions=[];const y=await M.reviseResearchRecord(d,{id:e.id,expectedRevisionId:e.revisionId,record:await G.makeRecord(r),reason:'Missing OP action condition after source review'});fs.writeFileSync(process.argv[3],JSON.stringify(await M.exportSnapshot(y)));const old=structuredClone(d);old.domain.revisions=old.domain.revisions.slice(0,B.domainRevisions);old.domain.events=old.domain.events.slice(0,B.domainEvents);const by=new Map(old.domain.revisions.map(r=>[r.logicalId,{...r.record,revisionId:r.id}]));old.domain.entities=B.entityIds.map(id=>by.get(id));old.domain.assertions=B.assertionIds.map(id=>by.get(id));if(await M.objectDigest(old)!==B.datasetDigest)throw Error('V4_PREFIX_CHANGED');fs.writeFileSync(process.argv[4],JSON.stringify(await M.exportSnapshot(old)));})().catch(e=>{console.error(e);process.exitCode=1});"""
   withdrawn=tmp/f'withdrawn-{width}.json';edited=tmp/f'edited-{width}.json';old=tmp/f'old-{width}.json';subprocess.run(['node','-e',code,str(snapshot),str(withdrawn),str(edited),str(old)],cwd=APP,check=True)
-  load(page,edited);knowledge(page,'csoi:knowledge:op2026:review:page:028');expect(page.locator('#csoiOpSourceReading')).to_contain_text('当前内容、来源或关联版本已变化');research(page);expect(page.locator('#csoiOpReviewProgress')).to_contain_text('142 / 143')
-  load(page,withdrawn);research(page);expect(page.locator('#csoiOpReviewProgress')).to_contain_text('0 / 143');page.locator('#csoiOpReviewProgress').scroll_into_view_if_needed();page.screenshot(path=str(OUT/f'op-withdrawn-{width}.png'))
-  load(page,old);research(page);expect(page.locator('#csoiOpReviewProgress')).to_contain_text('0 / 143');expect(page.locator('#csoiMetricReviewProgress')).to_contain_text('63 / 63');expect(page.locator('#csoiLspsReviewProgress')).to_contain_text('103 / 103')
-  assert not errors,errors;results.append({'viewport':[width,height],'touchEnabled':width==390,'status':'PASS_TESTED_HERE','pageDetailsOpened':opened,'unitsExpandedAndRead':unit_ids,'sourceWithdrawal':'PASS','missingConditionLosesReview':'PASS','oldV4MissingOP':'PASS','exportIndependentRevalidation':'PASS','browserErrors':errors});page.close()
+  import_seconds['conditionEditedSnapshot']=load(page,edited);sample('conditionEditedSnapshotImported');knowledge(page,'csoi:knowledge:op2026:review:page:028');expect(page.locator('#csoiOpSourceReading')).to_contain_text('当前内容、来源或关联版本已变化');research(page);expect(page.locator('#csoiOpReviewProgress')).to_contain_text('142 / 143')
+  import_seconds['sourceWithdrawnSnapshot']=load(page,withdrawn);sample('sourceWithdrawnSnapshotImported');research(page);expect(page.locator('#csoiOpReviewProgress')).to_contain_text('0 / 143');page.locator('#csoiOpReviewProgress').scroll_into_view_if_needed();page.screenshot(path=str(OUT/f'op-withdrawn-{width}.png'))
+  import_seconds['oldV4Snapshot']=load(page,old);sample('oldV4SnapshotImported');research(page);expect(page.locator('#csoiOpReviewProgress')).to_contain_text('0 / 143');expect(page.locator('#csoiMetricReviewProgress')).to_contain_text('63 / 63');expect(page.locator('#csoiLspsReviewProgress')).to_contain_text('103 / 103')
+  assert not errors,errors;results.append({'viewport':[width,height],'touchEnabled':width==390,'status':'PASS_TESTED_HERE','pageDetailsOpened':opened,'unitsExpandedAndRead':unit_ids,'sourceWithdrawal':'PASS','missingConditionLosesReview':'PASS','oldV4MissingOP':'PASS','exportIndependentRevalidation':'PASS','browserErrors':errors,'performance':{'measurement':'Real Chromium on cloud Linux;390px/touch emulation, not a physical phone or memory-constrained mobile OS. Sampled JS heap excludes native process/GPU memory and is not a full peak-memory proof.','snapshotBytes':snapshot_bytes,'importLimitBytes':32*1024*1024,'exportWithOfflineVerificationSeconds':export_seconds,'snapshotImportSeconds':import_seconds,'sampleCount':len(samples),'maxSampledJSHeapUsedBytes':max(r['jsHeapUsedBytes']for r in samples),'maxSampledJSHeapTotalBytes':max(r['jsHeapTotalBytes']for r in samples),'phases':phases}});page.close()
  browser.close()
 (OUT/'results.json').write_text(json.dumps({'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'results':results},indent=2)+'\n')
 print('PASS:142 OP pages and911 units expanded/read on desktop/mobile, actual query/pagination, source withdrawal, condition loss, v4 import and independent export verification')

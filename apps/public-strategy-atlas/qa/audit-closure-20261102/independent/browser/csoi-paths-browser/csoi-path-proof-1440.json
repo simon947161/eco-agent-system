@@ -1,0 +1,2501 @@
+{
+  "core": {
+    "format": "atlas-path-set-comparison-1",
+    "methodVersion": "atlas-pinned-path-sets-1",
+    "left": [
+      {
+        "core": {
+          "format": "atlas-path-proof-1",
+          "methodVersion": "atlas-pinned-path-sets-1",
+          "spec": {
+            "nodes": [
+              {
+                "id": "csoi:published-plan:food-2026:target",
+                "revisionId": "sha256:8505a50cd44a6562beab86315485a58ef599b2801ecc41ce2f9924886f692d89"
+              },
+              {
+                "id": "csoi:published-plan:food-2026:programme",
+                "revisionId": "sha256:8d7c1bf58d8f96bfbf1ec59cf4828cdbf37fa73e6973a8f6f4ec7be1a2ea9503"
+              },
+              {
+                "id": "csp6",
+                "revisionId": "sha256:47e0e20c084bc15cc2d1ae5215d86de91079882388ff16c342f5e313df79d025"
+              }
+            ],
+            "relationships": [
+              {
+                "kind": "ASSERTION",
+                "id": "csoi:published-plan-link:target",
+                "revisionId": "sha256:66878a7f1ac47647071db5fff6005be197d3d795183d5c5f4024b48f25bb1e11",
+                "direction": "FORWARD"
+              },
+              {
+                "kind": "ASSERTION",
+                "id": "csoi:published-plan-link:programme",
+                "revisionId": "sha256:3fb175272722b0ce62b2b594bfd9c1da81db33e92e1415f9a41671be9ae28b52",
+                "direction": "FORWARD"
+              }
+            ]
+          },
+          "nodePins": [
+            {
+              "id": "csoi:published-plan:food-2026:target",
+              "revisionId": "sha256:8505a50cd44a6562beab86315485a58ef599b2801ecc41ce2f9924886f692d89",
+              "contentDigest": "sha256:0e896f797a5b59976d9b13f66f00403d4c31f4e93dd67641c117102e135eac90"
+            },
+            {
+              "id": "csoi:published-plan:food-2026:programme",
+              "revisionId": "sha256:8d7c1bf58d8f96bfbf1ec59cf4828cdbf37fa73e6973a8f6f4ec7be1a2ea9503",
+              "contentDigest": "sha256:4e61343eb6300acc50104469e5ff7bbc47f4abfb89c4bec4075571c2a47ea88c"
+            },
+            {
+              "id": "csp6",
+              "revisionId": "sha256:47e0e20c084bc15cc2d1ae5215d86de91079882388ff16c342f5e313df79d025",
+              "contentDigest": "sha256:47e0e20c084bc15cc2d1ae5215d86de91079882388ff16c342f5e313df79d025"
+            }
+          ],
+          "relationships": [
+            {
+              "kind": "ASSERTION",
+              "id": "csoi:published-plan-link:target",
+              "revisionId": "sha256:66878a7f1ac47647071db5fff6005be197d3d795183d5c5f4024b48f25bb1e11",
+              "from": "csoi:published-plan:food-2026:target",
+              "to": "csoi:published-plan:food-2026:programme",
+              "direction": "FORWARD",
+              "predicate": "RESEARCH_CANDIDATE",
+              "state": "PROPOSED",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceId": "csoi:smrc-op-2026:20261030",
+                  "sourceRevision": "sha256:43300767db8484a0bf72e96e104083705899d87f1b60f80859b8f5103ecfbd43",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+                  "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+                  "rawDigest": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Target Atlas station is a research projection. Formal adoption, current applicability and official relationship admission remain unverified."
+                }
+              ]
+            },
+            {
+              "kind": "ASSERTION",
+              "id": "csoi:published-plan-link:programme",
+              "revisionId": "sha256:3fb175272722b0ce62b2b594bfd9c1da81db33e92e1415f9a41671be9ae28b52",
+              "from": "csoi:published-plan:food-2026:programme",
+              "to": "csp6",
+              "direction": "FORWARD",
+              "predicate": "RESEARCH_CANDIDATE",
+              "state": "PROPOSED",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceId": "csoi:smrc-op-2026:20261030",
+                  "sourceRevision": "sha256:43300767db8484a0bf72e96e104083705899d87f1b60f80859b8f5103ecfbd43",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+                  "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+                  "rawDigest": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Target Atlas station is a research projection. Formal adoption, current applicability and official relationship admission remain unverified."
+                }
+              ]
+            }
+          ]
+        },
+        "digest": "sha256:b39fbc33459f6d327b1fbd548de62f3770b468350a9763e05a9e49dccceea730"
+      }
+    ],
+    "right": [
+      {
+        "core": {
+          "format": "atlas-path-proof-1",
+          "methodVersion": "atlas-pinned-path-sets-1",
+          "spec": {
+            "nodes": [
+              {
+                "id": "csoi:dcp-reference:snowy:potable-accommodation",
+                "revisionId": "sha256:04a2abccffb56b84a8bb139a96971460dcc445d8c0cb2d657cc1f398da64ce99"
+              },
+              {
+                "id": "csoi:dcp:snowy2013:C9:2:potable:b",
+                "revisionId": "sha256:5c9096485ad56dd19d72c350515ed3341e80a97ba277f7d9daf5cbed8f110170"
+              },
+              {
+                "id": "csoi:dcp:snowy2013:C9:2:potable",
+                "revisionId": "sha256:61dc76214933473515d0d7a5bf8588af9966b347f1b588abf51088d243b19240"
+              },
+              {
+                "id": "csoi:dcp:snowy2013:C9:2:unreticulated",
+                "revisionId": "sha256:49ff2f8155edc8052beed24a525c0353f149b1b6b42319357b53ff7da5be0728"
+              },
+              {
+                "id": "csoi:dcp:snowy2013:C9:2",
+                "revisionId": "sha256:dd37156e3a74a699cae5002f5fb2444b4d3f14ee80631a13be875ea607cb2b05"
+              },
+              {
+                "id": "csoi:dcp:snowy2013:C9",
+                "revisionId": "sha256:d203be12361d7fff4b6d4a4db69538198043e0c61ae079b77b0e2716cea79a24"
+              },
+              {
+                "id": "csoi:dcp:snowy2013:C",
+                "revisionId": "sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186"
+              },
+              {
+                "id": "csoi:dcp:snowy2013:document",
+                "revisionId": "sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6"
+              },
+              {
+                "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+              }
+            ],
+            "relationships": [
+              {
+                "kind": "INPUT",
+                "ownerId": "csoi:dcp-reference:snowy:potable-accommodation",
+                "inputIndex": 1,
+                "revisionId": "sha256:a82dc8fdb71275226937957239397f225ed55bcb30b668c8194188a7062fea5a",
+                "direction": "FORWARD"
+              },
+              {
+                "kind": "INPUT",
+                "ownerId": "csoi:dcp:snowy2013:C9:2:potable:b",
+                "inputIndex": 1,
+                "revisionId": "sha256:b2f57f9ffe20fdfc76060be40461df96cd8c147161d4179228e70cea5bdd3d26",
+                "direction": "FORWARD"
+              },
+              {
+                "kind": "INPUT",
+                "ownerId": "csoi:dcp:snowy2013:C9:2:potable",
+                "inputIndex": 1,
+                "revisionId": "sha256:40ee6c4caf0cd36a5323246a23d238f22ae49765603e6c3984d5e74de18df594",
+                "direction": "FORWARD"
+              },
+              {
+                "kind": "INPUT",
+                "ownerId": "csoi:dcp:snowy2013:C9:2:unreticulated",
+                "inputIndex": 1,
+                "revisionId": "sha256:11670556e6e07b73d17c21ba8ff6892a28863e14217b6cf95486367b4e09a51d",
+                "direction": "FORWARD"
+              },
+              {
+                "kind": "INPUT",
+                "ownerId": "csoi:dcp:snowy2013:C9:2",
+                "inputIndex": 1,
+                "revisionId": "sha256:d33bb74fe42258b2a2c5a06a59327190aa58bd23e967f603fc0b2a92c186b179",
+                "direction": "FORWARD"
+              },
+              {
+                "kind": "INPUT",
+                "ownerId": "csoi:dcp:snowy2013:C9",
+                "inputIndex": 1,
+                "revisionId": "sha256:7ba40046e2b435b062dcfcc238082fdb80000443f87f9976d31f331894efec6a",
+                "direction": "FORWARD"
+              },
+              {
+                "kind": "INPUT",
+                "ownerId": "csoi:dcp:snowy2013:C",
+                "inputIndex": 1,
+                "revisionId": "sha256:158ca486393aef76072bc352f5350b6e518579db8b393a4c43cd99f7d037a805",
+                "direction": "FORWARD"
+              },
+              {
+                "kind": "INPUT",
+                "ownerId": "csoi:dcp:snowy2013:document",
+                "inputIndex": 0,
+                "revisionId": "sha256:47ba4a9a068e2e79db098114de6afe641dff7f8c7de6de22645ce509996954db",
+                "direction": "FORWARD"
+              }
+            ]
+          },
+          "nodePins": [
+            {
+              "id": "csoi:dcp-reference:snowy:potable-accommodation",
+              "revisionId": "sha256:04a2abccffb56b84a8bb139a96971460dcc445d8c0cb2d657cc1f398da64ce99",
+              "contentDigest": "sha256:9c7e468c6e50f24c7facc564f40403caad198027be0bd80e1638159900599cf0"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9:2:potable:b",
+              "revisionId": "sha256:5c9096485ad56dd19d72c350515ed3341e80a97ba277f7d9daf5cbed8f110170",
+              "contentDigest": "sha256:d13f14a701a9022328dc831ca24d51ad1584bd67d129eef86f2eaddd956c9dfb"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9:2:potable",
+              "revisionId": "sha256:61dc76214933473515d0d7a5bf8588af9966b347f1b588abf51088d243b19240",
+              "contentDigest": "sha256:e2ef4e581965e814127b6781cf9d1105c7d041eb863aa23787d461571365898d"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9:2:unreticulated",
+              "revisionId": "sha256:49ff2f8155edc8052beed24a525c0353f149b1b6b42319357b53ff7da5be0728",
+              "contentDigest": "sha256:c052229fdbd80cbcd2f86e0e3b97a37b50e560eb7e6390d146b2f0ee75ae9e65"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9:2",
+              "revisionId": "sha256:dd37156e3a74a699cae5002f5fb2444b4d3f14ee80631a13be875ea607cb2b05",
+              "contentDigest": "sha256:772fa06aa73f0687024bdc39ace0a3ebd50dce43c754e0ab0540f8bb741b5be6"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9",
+              "revisionId": "sha256:d203be12361d7fff4b6d4a4db69538198043e0c61ae079b77b0e2716cea79a24",
+              "contentDigest": "sha256:bc9809f92c0ba1120ad9a3fceb38e6f5d16e5b8b66de7cb8c07a25faa4fcf4da"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C",
+              "revisionId": "sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186",
+              "contentDigest": "sha256:4c7c4dc995100f97699d6bd6aa30367dd056942602ccabab05d3474dab28aa59"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:document",
+              "revisionId": "sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6",
+              "contentDigest": "sha256:ccd12b432a093a8d39824eb4911e567f87d1a8aaa4d467a6ff81591cc397f82a"
+            },
+            {
+              "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+              "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e",
+              "contentDigest": "sha256:ce173662c5856f0e4f826852c5dd726edf2ffcd6630f43351ffeb8316c4adabd"
+            }
+          ],
+          "relationships": [
+            {
+              "kind": "INPUT",
+              "id": "input:csoi:dcp-reference:snowy:potable-accommodation:1",
+              "revisionId": "sha256:a82dc8fdb71275226937957239397f225ed55bcb30b668c8194188a7062fea5a",
+              "ownerId": "csoi:dcp-reference:snowy:potable-accommodation",
+              "inputIndex": 1,
+              "from": "csoi:dcp-reference:snowy:potable-accommodation",
+              "to": "csoi:dcp:snowy2013:C9:2:potable:b",
+              "direction": "FORWARD",
+              "predicate": "GOVERNED_INPUT_LINEAGE",
+              "state": "ACTIVE",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page164, printed page149; Printed C6.2-3(b)"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+                }
+              ]
+            },
+            {
+              "kind": "INPUT",
+              "id": "input:csoi:dcp:snowy2013:C9:2:potable:b:1",
+              "revisionId": "sha256:b2f57f9ffe20fdfc76060be40461df96cd8c147161d4179228e70cea5bdd3d26",
+              "ownerId": "csoi:dcp:snowy2013:C9:2:potable:b",
+              "inputIndex": 1,
+              "from": "csoi:dcp:snowy2013:C9:2:potable:b",
+              "to": "csoi:dcp:snowy2013:C9:2:potable",
+              "direction": "FORWARD",
+              "predicate": "GOVERNED_INPUT_LINEAGE",
+              "state": "ACTIVE",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page164, printed page149; Printed C6.2-3(b)"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+                }
+              ]
+            },
+            {
+              "kind": "INPUT",
+              "id": "input:csoi:dcp:snowy2013:C9:2:potable:1",
+              "revisionId": "sha256:40ee6c4caf0cd36a5323246a23d238f22ae49765603e6c3984d5e74de18df594",
+              "ownerId": "csoi:dcp:snowy2013:C9:2:potable",
+              "inputIndex": 1,
+              "from": "csoi:dcp:snowy2013:C9:2:potable",
+              "to": "csoi:dcp:snowy2013:C9:2:unreticulated",
+              "direction": "FORWARD",
+              "predicate": "GOVERNED_INPUT_LINEAGE",
+              "state": "ACTIVE",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page164, printed page149; Printed C6.2-3 within C9"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+                }
+              ]
+            },
+            {
+              "kind": "INPUT",
+              "id": "input:csoi:dcp:snowy2013:C9:2:unreticulated:1",
+              "revisionId": "sha256:11670556e6e07b73d17c21ba8ff6892a28863e14217b6cf95486367b4e09a51d",
+              "ownerId": "csoi:dcp:snowy2013:C9:2:unreticulated",
+              "inputIndex": 1,
+              "from": "csoi:dcp:snowy2013:C9:2:unreticulated",
+              "to": "csoi:dcp:snowy2013:C9:2",
+              "direction": "FORWARD",
+              "predicate": "GOVERNED_INPUT_LINEAGE",
+              "state": "ACTIVE",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page164, printed page149; C9 §2.2 continued"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+                }
+              ]
+            },
+            {
+              "kind": "INPUT",
+              "id": "input:csoi:dcp:snowy2013:C9:2:1",
+              "revisionId": "sha256:d33bb74fe42258b2a2c5a06a59327190aa58bd23e967f603fc0b2a92c186b179",
+              "ownerId": "csoi:dcp:snowy2013:C9:2",
+              "inputIndex": 1,
+              "from": "csoi:dcp:snowy2013:C9:2",
+              "to": "csoi:dcp:snowy2013:C9",
+              "direction": "FORWARD",
+              "predicate": "GOVERNED_INPUT_LINEAGE",
+              "state": "ACTIVE",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page163, printed page148; C9 §2"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+                }
+              ]
+            },
+            {
+              "kind": "INPUT",
+              "id": "input:csoi:dcp:snowy2013:C9:1",
+              "revisionId": "sha256:7ba40046e2b435b062dcfcc238082fdb80000443f87f9976d31f331894efec6a",
+              "ownerId": "csoi:dcp:snowy2013:C9",
+              "inputIndex": 1,
+              "from": "csoi:dcp:snowy2013:C9",
+              "to": "csoi:dcp:snowy2013:C",
+              "direction": "FORWARD",
+              "predicate": "GOVERNED_INPUT_LINEAGE",
+              "state": "ACTIVE",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page158, printed page143; C9"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+                }
+              ]
+            },
+            {
+              "kind": "INPUT",
+              "id": "input:csoi:dcp:snowy2013:C:1",
+              "revisionId": "sha256:158ca486393aef76072bc352f5350b6e518579db8b393a4c43cd99f7d037a805",
+              "ownerId": "csoi:dcp:snowy2013:C",
+              "inputIndex": 1,
+              "from": "csoi:dcp:snowy2013:C",
+              "to": "csoi:dcp:snowy2013:document",
+              "direction": "FORWARD",
+              "predicate": "GOVERNED_INPUT_LINEAGE",
+              "state": "ACTIVE",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page17, printed page2; Part C"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+                }
+              ]
+            },
+            {
+              "kind": "INPUT",
+              "id": "input:csoi:dcp:snowy2013:document:0",
+              "revisionId": "sha256:47ba4a9a068e2e79db098114de6afe641dff7f8c7de6de22645ce509996954db",
+              "ownerId": "csoi:dcp:snowy2013:document",
+              "inputIndex": 0,
+              "from": "csoi:dcp:snowy2013:document",
+              "to": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+              "direction": "FORWARD",
+              "predicate": "GOVERNED_INPUT_LINEAGE",
+              "state": "ACTIVE",
+              "admission": "PENDING",
+              "evidenceRefs": [
+                {
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page2, printed pagei; Document"
+                }
+              ],
+              "counterevidenceRefs": [
+                {
+                  "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+                }
+              ]
+            }
+          ]
+        },
+        "digest": "sha256:d11015e711ed5adecd53d8ca32917b41c6b4ac0cf06b30953e466d5d7c9a3c00"
+      }
+    ],
+    "pairs": [
+      {
+        "left": {
+          "id": "csoi:published-plan:food-2026:target",
+          "revisionId": "sha256:8505a50cd44a6562beab86315485a58ef599b2801ecc41ce2f9924886f692d89"
+        },
+        "right": {
+          "id": "csoi:dcp-reference:snowy:potable-accommodation",
+          "revisionId": "sha256:04a2abccffb56b84a8bb139a96971460dcc445d8c0cb2d657cc1f398da64ce99"
+        },
+        "checks": [
+          {
+            "field": "logicalId",
+            "group": "IDENTITY",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": "csoi:published-plan:food-2026:target",
+            "right": "csoi:dcp-reference:snowy:potable-accommodation",
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "revisionId",
+            "group": "IDENTITY",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": "sha256:8505a50cd44a6562beab86315485a58ef599b2801ecc41ce2f9924886f692d89",
+            "right": "sha256:04a2abccffb56b84a8bb139a96971460dcc445d8c0cb2d657cc1f398da64ce99",
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "sourceId",
+            "group": "PROVENANCE",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": "csoi:smrc-op-2026:20261030",
+            "right": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "sourceUrl",
+            "group": "PROVENANCE",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+            "right": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "sourceRevision",
+            "group": "PROVENANCE",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+            "right": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "locator",
+            "group": "PROVENANCE",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+            "right": "PDF page164, printed page149; Printed C6.2-3(b)",
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "rawDigest",
+            "group": "PROVENANCE",
+            "applicable": true,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "One or both recorded values are unknown; equal missing values are not evidence of compatibility."
+          },
+          {
+            "field": "kind",
+            "group": "DESCRIPTION",
+            "applicable": true,
+            "status": "MATCH",
+            "left": "QuantifiedObservation",
+            "right": "QuantifiedObservation",
+            "reason": "Recorded values match; no equivalence or official relationship is inferred."
+          },
+          {
+            "field": "classification",
+            "group": "DESCRIPTION",
+            "applicable": true,
+            "status": "MATCH",
+            "left": "LOCAL_RESEARCH",
+            "right": "LOCAL_RESEARCH",
+            "reason": "Recorded values match; no equivalence or official relationship is inferred."
+          },
+          {
+            "field": "region",
+            "group": "COMPATIBILITY",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": "Snowy Monaro, NSW, Australia",
+            "right": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "boundary",
+            "group": "COMPATIBILITY",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": "PUBLISHED_OP_PLANNING_ROW_NOT_ACTUAL_OUTPUT_OR_LEGAL_APPLICABILITY",
+            "right": "HISTORICAL_DOCUMENT_REFERENCE_NOT_ACTUAL_OR_CURRENT_LAW",
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "spatialType",
+            "group": "COMPATIBILITY",
+            "applicable": true,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "One or both recorded values are unknown; equal missing values are not evidence of compatibility."
+          },
+          {
+            "field": "period",
+            "group": "COMPATIBILITY",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": {
+              "from": "2026-07-01",
+              "to": "2027-06-30"
+            },
+            "right": {
+              "from": "2026-10-30",
+              "to": "2026-10-30"
+            },
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "unit",
+            "group": "COMPATIBILITY",
+            "applicable": true,
+            "status": "UNKNOWN",
+            "left": "UNKNOWN",
+            "right": "L/person/day",
+            "reason": "One or both recorded values are unknown; equal missing values are not evidence of compatibility."
+          },
+          {
+            "field": "quantityNature",
+            "group": "COMPATIBILITY",
+            "applicable": true,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": "REFERENCE_RATE",
+            "reason": "One or both recorded values are unknown; equal missing values are not evidence of compatibility."
+          },
+          {
+            "field": "method",
+            "group": "COMPATIBILITY",
+            "applicable": true,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "One or both recorded values are unknown; equal missing values are not evidence of compatibility."
+          },
+          {
+            "field": "denominator",
+            "group": "COMPATIBILITY",
+            "applicable": true,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "One or both recorded values are unknown; equal missing values are not evidence of compatibility."
+          },
+          {
+            "field": "observationRole",
+            "group": "COMPATIBILITY",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": "TARGET_VOLUME",
+            "right": "HISTORICAL_POTABLE_ACCOMMODATION_REFERENCE",
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "financialRole",
+            "group": "COMPATIBILITY",
+            "applicable": false,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "Not applicable to these record kinds."
+          },
+          {
+            "field": "currencyBasis",
+            "group": "COMPATIBILITY",
+            "applicable": false,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "Not applicable to these record kinds."
+          },
+          {
+            "field": "costClass",
+            "group": "COMPATIBILITY",
+            "applicable": false,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "Not applicable to these record kinds."
+          },
+          {
+            "field": "lineId",
+            "group": "COMPATIBILITY",
+            "applicable": false,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "Not applicable to these record kinds."
+          },
+          {
+            "field": "value",
+            "group": "OBSERVATION",
+            "applicable": true,
+            "status": "CONFLICT",
+            "left": 84,
+            "right": 110,
+            "reason": "Recorded values differ; inspect scope and evidence before any proposed use."
+          },
+          {
+            "field": "legalRole",
+            "group": "APPLICABILITY",
+            "applicable": false,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "Not applicable to these record kinds."
+          },
+          {
+            "field": "legalState",
+            "group": "APPLICABILITY",
+            "applicable": false,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "Not applicable to these record kinds."
+          },
+          {
+            "field": "supersededAt",
+            "group": "APPLICABILITY",
+            "applicable": false,
+            "status": "UNKNOWN",
+            "left": null,
+            "right": null,
+            "reason": "Not applicable to these record kinds."
+          }
+        ],
+        "compatibility": {
+          "status": "CONFLICT",
+          "conflicts": [
+            "region",
+            "boundary",
+            "period",
+            "observationRole"
+          ],
+          "unknowns": [
+            "spatialType",
+            "unit",
+            "quantityNature",
+            "method",
+            "denominator"
+          ],
+          "arithmeticAllowed": false
+        }
+      }
+    ],
+    "unpairedRecords": 10,
+    "arithmetic": "NOT_PERFORMED",
+    "officialRelationship": "UNKNOWN"
+  },
+  "digest": "sha256:fa08e22bf051414a1ed823f5e838e7cb1235c2078b15ea82ecd4323efb4ff438",
+  "left": [
+    {
+      "core": {
+        "format": "atlas-path-proof-1",
+        "methodVersion": "atlas-pinned-path-sets-1",
+        "spec": {
+          "nodes": [
+            {
+              "id": "csoi:published-plan:food-2026:target",
+              "revisionId": "sha256:8505a50cd44a6562beab86315485a58ef599b2801ecc41ce2f9924886f692d89"
+            },
+            {
+              "id": "csoi:published-plan:food-2026:programme",
+              "revisionId": "sha256:8d7c1bf58d8f96bfbf1ec59cf4828cdbf37fa73e6973a8f6f4ec7be1a2ea9503"
+            },
+            {
+              "id": "csp6",
+              "revisionId": "sha256:47e0e20c084bc15cc2d1ae5215d86de91079882388ff16c342f5e313df79d025"
+            }
+          ],
+          "relationships": [
+            {
+              "kind": "ASSERTION",
+              "id": "csoi:published-plan-link:target",
+              "revisionId": "sha256:66878a7f1ac47647071db5fff6005be197d3d795183d5c5f4024b48f25bb1e11",
+              "direction": "FORWARD"
+            },
+            {
+              "kind": "ASSERTION",
+              "id": "csoi:published-plan-link:programme",
+              "revisionId": "sha256:3fb175272722b0ce62b2b594bfd9c1da81db33e92e1415f9a41671be9ae28b52",
+              "direction": "FORWARD"
+            }
+          ]
+        },
+        "nodePins": [
+          {
+            "id": "csoi:published-plan:food-2026:target",
+            "revisionId": "sha256:8505a50cd44a6562beab86315485a58ef599b2801ecc41ce2f9924886f692d89",
+            "contentDigest": "sha256:0e896f797a5b59976d9b13f66f00403d4c31f4e93dd67641c117102e135eac90"
+          },
+          {
+            "id": "csoi:published-plan:food-2026:programme",
+            "revisionId": "sha256:8d7c1bf58d8f96bfbf1ec59cf4828cdbf37fa73e6973a8f6f4ec7be1a2ea9503",
+            "contentDigest": "sha256:4e61343eb6300acc50104469e5ff7bbc47f4abfb89c4bec4075571c2a47ea88c"
+          },
+          {
+            "id": "csp6",
+            "revisionId": "sha256:47e0e20c084bc15cc2d1ae5215d86de91079882388ff16c342f5e313df79d025",
+            "contentDigest": "sha256:47e0e20c084bc15cc2d1ae5215d86de91079882388ff16c342f5e313df79d025"
+          }
+        ],
+        "relationships": [
+          {
+            "kind": "ASSERTION",
+            "id": "csoi:published-plan-link:target",
+            "revisionId": "sha256:66878a7f1ac47647071db5fff6005be197d3d795183d5c5f4024b48f25bb1e11",
+            "from": "csoi:published-plan:food-2026:target",
+            "to": "csoi:published-plan:food-2026:programme",
+            "direction": "FORWARD",
+            "predicate": "RESEARCH_CANDIDATE",
+            "state": "PROPOSED",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceId": "csoi:smrc-op-2026:20261030",
+                "sourceRevision": "sha256:43300767db8484a0bf72e96e104083705899d87f1b60f80859b8f5103ecfbd43",
+                "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+                "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+                "rawDigest": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Target Atlas station is a research projection. Formal adoption, current applicability and official relationship admission remain unverified."
+              }
+            ]
+          },
+          {
+            "kind": "ASSERTION",
+            "id": "csoi:published-plan-link:programme",
+            "revisionId": "sha256:3fb175272722b0ce62b2b594bfd9c1da81db33e92e1415f9a41671be9ae28b52",
+            "from": "csoi:published-plan:food-2026:programme",
+            "to": "csp6",
+            "direction": "FORWARD",
+            "predicate": "RESEARCH_CANDIDATE",
+            "state": "PROPOSED",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceId": "csoi:smrc-op-2026:20261030",
+                "sourceRevision": "sha256:43300767db8484a0bf72e96e104083705899d87f1b60f80859b8f5103ecfbd43",
+                "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+                "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+                "rawDigest": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Target Atlas station is a research projection. Formal adoption, current applicability and official relationship admission remain unverified."
+              }
+            ]
+          }
+        ]
+      },
+      "digest": "sha256:b39fbc33459f6d327b1fbd548de62f3770b468350a9763e05a9e49dccceea730",
+      "views": [
+        {
+          "category": "entity",
+          "id": "csoi:published-plan:food-2026:target",
+          "revisionId": "sha256:8505a50cd44a6562beab86315485a58ef599b2801ecc41ce2f9924886f692d89",
+          "currentRevisionId": "sha256:8505a50cd44a6562beab86315485a58ef599b2801ecc41ce2f9924886f692d89",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:0e896f797a5b59976d9b13f66f00403d4c31f4e93dd67641c117102e135eac90",
+          "record": {
+            "id": "csoi:published-plan:food-2026:target",
+            "kind": "QuantifiedObservation",
+            "label": "OP target volume — not completed work",
+            "stationId": "csp6",
+            "data": {
+              "value": 84,
+              "unit": "UNKNOWN",
+              "role": "TARGET_VOLUME",
+              "period": {
+                "from": "2026-07-01",
+                "to": "2027-06-30"
+              },
+              "area": "Snowy Monaro, NSW, Australia",
+              "boundary": "PUBLISHED_OP_PLANNING_ROW_NOT_ACTUAL_OUTPUT_OR_LEGAL_APPLICABILITY",
+              "meaning": "PUBLISHED_PLAN_NOT_ACTUAL",
+              "eligibleDenominator": "UNKNOWN",
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:published-plan:food-2026:target",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy Monaro, NSW, Australia",
+                  "boundary": "PUBLISHED_OP_PLANNING_ROW_NOT_ACTUAL_OUTPUT_OR_LEGAL_APPLICABILITY",
+                  "period": {
+                    "from": "2026-07-01",
+                    "to": "2027-06-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-op-2026:20261030",
+                    "revisionId": "sha256:43300767db8484a0bf72e96e104083705899d87f1b60f80859b8f5103ecfbd43"
+                  }
+                ],
+                "data": {
+                  "title": "OP target volume — not completed work",
+                  "domain": "food",
+                  "sourceId": "csoi:smrc-op-2026:20261030",
+                  "summary": "Attributed research observation of the OP page27 planning row. Funded volume is not expenditure; actual inspections, eligible population, outcome and official applicability remain UNKNOWN.",
+                  "tableCaption": "Planned – Public Health and Environment",
+                  "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+                  "fiscalBasis": "OP2026–27 planning period; adoption/currentness requires review",
+                  "footnotes": [
+                    "Planning volume units have not been independently resolved.",
+                    "98% refers to the published annual P1/P2/P3 premises target; the actual eligible denominator and performance are UNKNOWN."
+                  ],
+                  "actualOutput": "UNKNOWN",
+                  "actualSpend": "UNKNOWN",
+                  "actualOutcome": "UNKNOWN",
+                  "responsibleRole": "UNKNOWN",
+                  "measurement": {
+                    "value": 84,
+                    "unit": "UNKNOWN",
+                    "role": "TARGET_VOLUME",
+                    "period": {
+                      "from": "2026-07-01",
+                      "to": "2027-06-30"
+                    },
+                    "area": "Snowy Monaro, NSW, Australia",
+                    "boundary": "PUBLISHED_OP_PLANNING_ROW_NOT_ACTUAL_OUTPUT_OR_LEGAL_APPLICABILITY",
+                    "meaning": "PUBLISHED_PLAN_NOT_ACTUAL",
+                    "eligibleDenominator": "UNKNOWN"
+                  }
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+                  "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+                  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded authored observations of published numeric facts. Original source redistribution rights and admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-30T00:52:00.166409+00:00",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:17d123719c18f8c1bba2eb90564ed62b13f1fc9995b922ec650cde9de0fee702"
+              }
+            },
+            "scope": {
+              "region": "Snowy Monaro, NSW, Australia",
+              "boundary": "PUBLISHED_OP_PLANNING_ROW_NOT_ACTUAL_OUTPUT_OR_LEGAL_APPLICABILITY",
+              "period": {
+                "from": "2026-07-01",
+                "to": "2027-06-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+              "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+              "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded authored observations of published numeric facts. Original source redistribution rights and admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:8505a50cd44a6562beab86315485a58ef599b2801ecc41ce2f9924886f692d89"
+          }
+        },
+        {
+          "category": "entity",
+          "id": "csoi:published-plan:food-2026:programme",
+          "revisionId": "sha256:8d7c1bf58d8f96bfbf1ec59cf4828cdbf37fa73e6973a8f6f4ec7be1a2ea9503",
+          "currentRevisionId": "sha256:8d7c1bf58d8f96bfbf1ec59cf4828cdbf37fa73e6973a8f6f4ec7be1a2ea9503",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:4e61343eb6300acc50104469e5ff7bbc47f4abfb89c4bec4075571c2a47ea88c",
+          "record": {
+            "id": "csoi:published-plan:food-2026:programme",
+            "kind": "WorkPackage",
+            "label": "Published food inspection programme — planned only",
+            "stationId": "csp6",
+            "data": {
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:published-plan:food-2026:programme",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy Monaro, NSW, Australia",
+                  "boundary": "PUBLISHED_OP_PLANNING_ROW_NOT_ACTUAL_OUTPUT_OR_LEGAL_APPLICABILITY",
+                  "period": {
+                    "from": "2026-07-01",
+                    "to": "2027-06-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-op-2026:20261030",
+                    "revisionId": "sha256:43300767db8484a0bf72e96e104083705899d87f1b60f80859b8f5103ecfbd43"
+                  }
+                ],
+                "data": {
+                  "title": "Published food inspection programme — planned only",
+                  "domain": "food",
+                  "sourceId": "csoi:smrc-op-2026:20261030",
+                  "summary": "Attributed research observation of the OP page27 planning row. Funded volume is not expenditure; actual inspections, eligible population, outcome and official applicability remain UNKNOWN.",
+                  "tableCaption": "Planned – Public Health and Environment",
+                  "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+                  "fiscalBasis": "OP2026–27 planning period; adoption/currentness requires review",
+                  "footnotes": [
+                    "Planning volume units have not been independently resolved.",
+                    "98% refers to the published annual P1/P2/P3 premises target; the actual eligible denominator and performance are UNKNOWN."
+                  ],
+                  "actualOutput": "UNKNOWN",
+                  "actualSpend": "UNKNOWN",
+                  "actualOutcome": "UNKNOWN",
+                  "responsibleRole": "UNKNOWN"
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+                  "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+                  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded authored observations of published numeric facts. Original source redistribution rights and admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-30T00:52:00.166409+00:00",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:404d18f0332dcbca0c787b6d31c1d2cbbf2c35cf85296a7f0d4a03f118b1a5c2"
+              }
+            },
+            "scope": {
+              "region": "Snowy Monaro, NSW, Australia",
+              "boundary": "PUBLISHED_OP_PLANNING_ROW_NOT_ACTUAL_OUTPUT_OR_LEGAL_APPLICABILITY",
+              "period": {
+                "from": "2026-07-01",
+                "to": "2027-06-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+              "locator": "PDF/printed page 27; Planned – Public Health and Environment; food inspection program; CSP Link column",
+              "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded authored observations of published numeric facts. Original source redistribution rights and admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:8d7c1bf58d8f96bfbf1ec59cf4828cdbf37fa73e6973a8f6f4ec7be1a2ea9503"
+          }
+        },
+        {
+          "category": "station",
+          "id": "csp6",
+          "revisionId": "sha256:47e0e20c084bc15cc2d1ae5215d86de91079882388ff16c342f5e313df79d025",
+          "currentRevisionId": "sha256:47e0e20c084bc15cc2d1ae5215d86de91079882388ff16c342f5e313df79d025",
+          "declaredVersionId": "synthetic-v1:csp6",
+          "historical": false,
+          "contentDigest": "sha256:47e0e20c084bc15cc2d1ae5215d86de91079882388ff16c342f5e313df79d025",
+          "record": {
+            "id": "csp6",
+            "label": "Objective 6.1",
+            "sub": "Environment · demo",
+            "type": "csp",
+            "x": 287,
+            "y": 66,
+            "source": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+            "detail": "An environmental theme for the synthetic graph. Wording, revision and DP/OP mappings remain unverified.",
+            "logicalId": "csp6",
+            "versionId": "synthetic-v1:csp6",
+            "revisionId": "synthetic-v1",
+            "status": "SYNTHETIC",
+            "sourceId": "smrc-ipr-directory"
+          }
+        }
+      ],
+      "assessment": {
+        "current": true,
+        "currentMeaning": "RECORDED_INPUT_CONTEXT_NOT_LIVE_SITE_OR_CURRENT_LAW",
+        "researchStatus": "PINNED_RESEARCH_PATH_ONLY",
+        "invalidations": [],
+        "gaps": [
+          "OFFICIAL_ADMISSION_UNKNOWN",
+          "COUNTEREVIDENCE_RETAINED",
+          "RELATIONSHIP_NOT_ADMITTED",
+          "LEGACY_ENDPOINT_LABEL_NOT_INDEPENDENTLY_WITNESSED",
+          "SOURCE_RIGHTS_UNKNOWN",
+          "SOURCE_CURRENT_VERSION_UNKNOWN"
+        ],
+        "dependencyRecordsChecked": 3,
+        "geographicContext": "NOT_PROOF_OF_APPLICABILITY",
+        "currentLaw": "UNKNOWN",
+        "officialUse": "REJECTED_UNKNOWN_ADMISSION",
+        "arithmetic": "NOT_PERFORMED"
+      },
+      "datasetDigest": "sha256:a4dc6c0d819b184f8091baeda533ae9135502fa309b9f2594c8beef868b9686e"
+    }
+  ],
+  "right": [
+    {
+      "core": {
+        "format": "atlas-path-proof-1",
+        "methodVersion": "atlas-pinned-path-sets-1",
+        "spec": {
+          "nodes": [
+            {
+              "id": "csoi:dcp-reference:snowy:potable-accommodation",
+              "revisionId": "sha256:04a2abccffb56b84a8bb139a96971460dcc445d8c0cb2d657cc1f398da64ce99"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9:2:potable:b",
+              "revisionId": "sha256:5c9096485ad56dd19d72c350515ed3341e80a97ba277f7d9daf5cbed8f110170"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9:2:potable",
+              "revisionId": "sha256:61dc76214933473515d0d7a5bf8588af9966b347f1b588abf51088d243b19240"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9:2:unreticulated",
+              "revisionId": "sha256:49ff2f8155edc8052beed24a525c0353f149b1b6b42319357b53ff7da5be0728"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9:2",
+              "revisionId": "sha256:dd37156e3a74a699cae5002f5fb2444b4d3f14ee80631a13be875ea607cb2b05"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C9",
+              "revisionId": "sha256:d203be12361d7fff4b6d4a4db69538198043e0c61ae079b77b0e2716cea79a24"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:C",
+              "revisionId": "sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186"
+            },
+            {
+              "id": "csoi:dcp:snowy2013:document",
+              "revisionId": "sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6"
+            },
+            {
+              "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+              "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+            }
+          ],
+          "relationships": [
+            {
+              "kind": "INPUT",
+              "ownerId": "csoi:dcp-reference:snowy:potable-accommodation",
+              "inputIndex": 1,
+              "revisionId": "sha256:a82dc8fdb71275226937957239397f225ed55bcb30b668c8194188a7062fea5a",
+              "direction": "FORWARD"
+            },
+            {
+              "kind": "INPUT",
+              "ownerId": "csoi:dcp:snowy2013:C9:2:potable:b",
+              "inputIndex": 1,
+              "revisionId": "sha256:b2f57f9ffe20fdfc76060be40461df96cd8c147161d4179228e70cea5bdd3d26",
+              "direction": "FORWARD"
+            },
+            {
+              "kind": "INPUT",
+              "ownerId": "csoi:dcp:snowy2013:C9:2:potable",
+              "inputIndex": 1,
+              "revisionId": "sha256:40ee6c4caf0cd36a5323246a23d238f22ae49765603e6c3984d5e74de18df594",
+              "direction": "FORWARD"
+            },
+            {
+              "kind": "INPUT",
+              "ownerId": "csoi:dcp:snowy2013:C9:2:unreticulated",
+              "inputIndex": 1,
+              "revisionId": "sha256:11670556e6e07b73d17c21ba8ff6892a28863e14217b6cf95486367b4e09a51d",
+              "direction": "FORWARD"
+            },
+            {
+              "kind": "INPUT",
+              "ownerId": "csoi:dcp:snowy2013:C9:2",
+              "inputIndex": 1,
+              "revisionId": "sha256:d33bb74fe42258b2a2c5a06a59327190aa58bd23e967f603fc0b2a92c186b179",
+              "direction": "FORWARD"
+            },
+            {
+              "kind": "INPUT",
+              "ownerId": "csoi:dcp:snowy2013:C9",
+              "inputIndex": 1,
+              "revisionId": "sha256:7ba40046e2b435b062dcfcc238082fdb80000443f87f9976d31f331894efec6a",
+              "direction": "FORWARD"
+            },
+            {
+              "kind": "INPUT",
+              "ownerId": "csoi:dcp:snowy2013:C",
+              "inputIndex": 1,
+              "revisionId": "sha256:158ca486393aef76072bc352f5350b6e518579db8b393a4c43cd99f7d037a805",
+              "direction": "FORWARD"
+            },
+            {
+              "kind": "INPUT",
+              "ownerId": "csoi:dcp:snowy2013:document",
+              "inputIndex": 0,
+              "revisionId": "sha256:47ba4a9a068e2e79db098114de6afe641dff7f8c7de6de22645ce509996954db",
+              "direction": "FORWARD"
+            }
+          ]
+        },
+        "nodePins": [
+          {
+            "id": "csoi:dcp-reference:snowy:potable-accommodation",
+            "revisionId": "sha256:04a2abccffb56b84a8bb139a96971460dcc445d8c0cb2d657cc1f398da64ce99",
+            "contentDigest": "sha256:9c7e468c6e50f24c7facc564f40403caad198027be0bd80e1638159900599cf0"
+          },
+          {
+            "id": "csoi:dcp:snowy2013:C9:2:potable:b",
+            "revisionId": "sha256:5c9096485ad56dd19d72c350515ed3341e80a97ba277f7d9daf5cbed8f110170",
+            "contentDigest": "sha256:d13f14a701a9022328dc831ca24d51ad1584bd67d129eef86f2eaddd956c9dfb"
+          },
+          {
+            "id": "csoi:dcp:snowy2013:C9:2:potable",
+            "revisionId": "sha256:61dc76214933473515d0d7a5bf8588af9966b347f1b588abf51088d243b19240",
+            "contentDigest": "sha256:e2ef4e581965e814127b6781cf9d1105c7d041eb863aa23787d461571365898d"
+          },
+          {
+            "id": "csoi:dcp:snowy2013:C9:2:unreticulated",
+            "revisionId": "sha256:49ff2f8155edc8052beed24a525c0353f149b1b6b42319357b53ff7da5be0728",
+            "contentDigest": "sha256:c052229fdbd80cbcd2f86e0e3b97a37b50e560eb7e6390d146b2f0ee75ae9e65"
+          },
+          {
+            "id": "csoi:dcp:snowy2013:C9:2",
+            "revisionId": "sha256:dd37156e3a74a699cae5002f5fb2444b4d3f14ee80631a13be875ea607cb2b05",
+            "contentDigest": "sha256:772fa06aa73f0687024bdc39ace0a3ebd50dce43c754e0ab0540f8bb741b5be6"
+          },
+          {
+            "id": "csoi:dcp:snowy2013:C9",
+            "revisionId": "sha256:d203be12361d7fff4b6d4a4db69538198043e0c61ae079b77b0e2716cea79a24",
+            "contentDigest": "sha256:bc9809f92c0ba1120ad9a3fceb38e6f5d16e5b8b66de7cb8c07a25faa4fcf4da"
+          },
+          {
+            "id": "csoi:dcp:snowy2013:C",
+            "revisionId": "sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186",
+            "contentDigest": "sha256:4c7c4dc995100f97699d6bd6aa30367dd056942602ccabab05d3474dab28aa59"
+          },
+          {
+            "id": "csoi:dcp:snowy2013:document",
+            "revisionId": "sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6",
+            "contentDigest": "sha256:ccd12b432a093a8d39824eb4911e567f87d1a8aaa4d467a6ff81591cc397f82a"
+          },
+          {
+            "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+            "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e",
+            "contentDigest": "sha256:ce173662c5856f0e4f826852c5dd726edf2ffcd6630f43351ffeb8316c4adabd"
+          }
+        ],
+        "relationships": [
+          {
+            "kind": "INPUT",
+            "id": "input:csoi:dcp-reference:snowy:potable-accommodation:1",
+            "revisionId": "sha256:a82dc8fdb71275226937957239397f225ed55bcb30b668c8194188a7062fea5a",
+            "ownerId": "csoi:dcp-reference:snowy:potable-accommodation",
+            "inputIndex": 1,
+            "from": "csoi:dcp-reference:snowy:potable-accommodation",
+            "to": "csoi:dcp:snowy2013:C9:2:potable:b",
+            "direction": "FORWARD",
+            "predicate": "GOVERNED_INPUT_LINEAGE",
+            "state": "ACTIVE",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                "locator": "PDF page164, printed page149; Printed C6.2-3(b)"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+              }
+            ]
+          },
+          {
+            "kind": "INPUT",
+            "id": "input:csoi:dcp:snowy2013:C9:2:potable:b:1",
+            "revisionId": "sha256:b2f57f9ffe20fdfc76060be40461df96cd8c147161d4179228e70cea5bdd3d26",
+            "ownerId": "csoi:dcp:snowy2013:C9:2:potable:b",
+            "inputIndex": 1,
+            "from": "csoi:dcp:snowy2013:C9:2:potable:b",
+            "to": "csoi:dcp:snowy2013:C9:2:potable",
+            "direction": "FORWARD",
+            "predicate": "GOVERNED_INPUT_LINEAGE",
+            "state": "ACTIVE",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                "locator": "PDF page164, printed page149; Printed C6.2-3(b)"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+              }
+            ]
+          },
+          {
+            "kind": "INPUT",
+            "id": "input:csoi:dcp:snowy2013:C9:2:potable:1",
+            "revisionId": "sha256:40ee6c4caf0cd36a5323246a23d238f22ae49765603e6c3984d5e74de18df594",
+            "ownerId": "csoi:dcp:snowy2013:C9:2:potable",
+            "inputIndex": 1,
+            "from": "csoi:dcp:snowy2013:C9:2:potable",
+            "to": "csoi:dcp:snowy2013:C9:2:unreticulated",
+            "direction": "FORWARD",
+            "predicate": "GOVERNED_INPUT_LINEAGE",
+            "state": "ACTIVE",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                "locator": "PDF page164, printed page149; Printed C6.2-3 within C9"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+              }
+            ]
+          },
+          {
+            "kind": "INPUT",
+            "id": "input:csoi:dcp:snowy2013:C9:2:unreticulated:1",
+            "revisionId": "sha256:11670556e6e07b73d17c21ba8ff6892a28863e14217b6cf95486367b4e09a51d",
+            "ownerId": "csoi:dcp:snowy2013:C9:2:unreticulated",
+            "inputIndex": 1,
+            "from": "csoi:dcp:snowy2013:C9:2:unreticulated",
+            "to": "csoi:dcp:snowy2013:C9:2",
+            "direction": "FORWARD",
+            "predicate": "GOVERNED_INPUT_LINEAGE",
+            "state": "ACTIVE",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                "locator": "PDF page164, printed page149; C9 §2.2 continued"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+              }
+            ]
+          },
+          {
+            "kind": "INPUT",
+            "id": "input:csoi:dcp:snowy2013:C9:2:1",
+            "revisionId": "sha256:d33bb74fe42258b2a2c5a06a59327190aa58bd23e967f603fc0b2a92c186b179",
+            "ownerId": "csoi:dcp:snowy2013:C9:2",
+            "inputIndex": 1,
+            "from": "csoi:dcp:snowy2013:C9:2",
+            "to": "csoi:dcp:snowy2013:C9",
+            "direction": "FORWARD",
+            "predicate": "GOVERNED_INPUT_LINEAGE",
+            "state": "ACTIVE",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                "locator": "PDF page163, printed page148; C9 §2"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+              }
+            ]
+          },
+          {
+            "kind": "INPUT",
+            "id": "input:csoi:dcp:snowy2013:C9:1",
+            "revisionId": "sha256:7ba40046e2b435b062dcfcc238082fdb80000443f87f9976d31f331894efec6a",
+            "ownerId": "csoi:dcp:snowy2013:C9",
+            "inputIndex": 1,
+            "from": "csoi:dcp:snowy2013:C9",
+            "to": "csoi:dcp:snowy2013:C",
+            "direction": "FORWARD",
+            "predicate": "GOVERNED_INPUT_LINEAGE",
+            "state": "ACTIVE",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                "locator": "PDF page158, printed page143; C9"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+              }
+            ]
+          },
+          {
+            "kind": "INPUT",
+            "id": "input:csoi:dcp:snowy2013:C:1",
+            "revisionId": "sha256:158ca486393aef76072bc352f5350b6e518579db8b393a4c43cd99f7d037a805",
+            "ownerId": "csoi:dcp:snowy2013:C",
+            "inputIndex": 1,
+            "from": "csoi:dcp:snowy2013:C",
+            "to": "csoi:dcp:snowy2013:document",
+            "direction": "FORWARD",
+            "predicate": "GOVERNED_INPUT_LINEAGE",
+            "state": "ACTIVE",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                "locator": "PDF page17, printed page2; Part C"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+              }
+            ]
+          },
+          {
+            "kind": "INPUT",
+            "id": "input:csoi:dcp:snowy2013:document:0",
+            "revisionId": "sha256:47ba4a9a068e2e79db098114de6afe641dff7f8c7de6de22645ce509996954db",
+            "ownerId": "csoi:dcp:snowy2013:document",
+            "inputIndex": 0,
+            "from": "csoi:dcp:snowy2013:document",
+            "to": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+            "direction": "FORWARD",
+            "predicate": "GOVERNED_INPUT_LINEAGE",
+            "state": "ACTIVE",
+            "admission": "PENDING",
+            "evidenceRefs": [
+              {
+                "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                "locator": "PDF page2, printed pagei; Document"
+              }
+            ],
+            "counterevidenceRefs": [
+              {
+                "reason": "Input lineage is not an official implementation, legal duty or causal relationship."
+              }
+            ]
+          }
+        ]
+      },
+      "digest": "sha256:d11015e711ed5adecd53d8ca32917b41c6b4ac0cf06b30953e466d5d7c9a3c00",
+      "views": [
+        {
+          "category": "entity",
+          "id": "csoi:dcp-reference:snowy:potable-accommodation",
+          "revisionId": "sha256:04a2abccffb56b84a8bb139a96971460dcc445d8c0cb2d657cc1f398da64ce99",
+          "currentRevisionId": "sha256:04a2abccffb56b84a8bb139a96971460dcc445d8c0cb2d657cc1f398da64ce99",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:9c7e468c6e50f24c7facc564f40403caad198027be0bd80e1638159900599cf0",
+          "record": {
+            "id": "csoi:dcp-reference:snowy:potable-accommodation",
+            "kind": "QuantifiedObservation",
+            "label": "Historical accommodation potable-water reference",
+            "stationId": "dcp",
+            "data": {
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:dcp-reference:snowy:potable-accommodation",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+                  "boundary": "HISTORICAL_DOCUMENT_REFERENCE_NOT_ACTUAL_OR_CURRENT_LAW",
+                  "period": {
+                    "from": "2026-10-30",
+                    "to": "2026-10-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                    "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+                  },
+                  {
+                    "id": "csoi:dcp:snowy2013:C9:2:potable:b",
+                    "revisionId": "sha256:5c9096485ad56dd19d72c350515ed3341e80a97ba277f7d9daf5cbed8f110170"
+                  }
+                ],
+                "data": {
+                  "title": "Historical accommodation potable-water reference",
+                  "summary": "Own observation of a historical minimum potable-water capacity: at least110 L/person/day for accommodation, in peak occupancy/use context. Not actual water demand, delivery, expenditure, outcome, or verified current applicability.",
+                  "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                  "sourceDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "sourceClauseId": "csoi:dcp:snowy2013:C9:2:potable:b",
+                  "measurement": {
+                    "value": 110,
+                    "unit": "L/person/day",
+                    "role": "HISTORICAL_POTABLE_ACCOMMODATION_REFERENCE",
+                    "meaning": "HISTORICAL_DESIGN_REFERENCE_NOT_ACTUAL_OUTPUT_OR_CURRENT_OBLIGATION",
+                    "area": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+                    "boundary": "HISTORICAL_DOCUMENT_REFERENCE_NOT_ACTUAL_OR_CURRENT_LAW",
+                    "period": {
+                      "from": "2026-10-30",
+                      "to": "2026-10-30"
+                    },
+                    "quantityNature": "REFERENCE_RATE",
+                    "eligibleDenominator": "UNKNOWN",
+                    "operator": "MINIMUM",
+                    "comparison": ">=",
+                    "applicationContext": "Historical accommodation minimum capacity; peak occupancy/use context; actual population and demand UNKNOWN."
+                  },
+                  "actualDemand": "UNKNOWN",
+                  "actualSpend": "UNKNOWN",
+                  "actualOutcome": "UNKNOWN",
+                  "legalApplicability": "UNKNOWN"
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+                  "locator": "PDF page164, printed page149; Printed C6.2-3(b)",
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded authored observation of numeric facts only. Original source reuse rights/current applicability/admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-31T10:28:36.640Z",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:bd86818f81477ec77f035ad8dd00097e88e09755e7604197580bd2bb6d2e272f"
+              },
+              "value": 110,
+              "unit": "L/person/day",
+              "role": "HISTORICAL_POTABLE_ACCOMMODATION_REFERENCE",
+              "meaning": "HISTORICAL_DESIGN_REFERENCE_NOT_ACTUAL_OUTPUT_OR_CURRENT_OBLIGATION",
+              "area": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "boundary": "HISTORICAL_DOCUMENT_REFERENCE_NOT_ACTUAL_OR_CURRENT_LAW",
+              "period": {
+                "from": "2026-10-30",
+                "to": "2026-10-30"
+              },
+              "quantityNature": "REFERENCE_RATE",
+              "eligibleDenominator": "UNKNOWN",
+              "operator": "MINIMUM",
+              "comparison": ">=",
+              "applicationContext": "Historical accommodation minimum capacity; peak occupancy/use context; actual population and demand UNKNOWN."
+            },
+            "scope": {
+              "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "boundary": "HISTORICAL_DOCUMENT_REFERENCE_NOT_ACTUAL_OR_CURRENT_LAW",
+              "period": {
+                "from": "2026-10-30",
+                "to": "2026-10-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+              "locator": "PDF page164, printed page149; Printed C6.2-3(b)",
+              "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded authored observation of numeric facts only. Original source reuse rights/current applicability/admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:04a2abccffb56b84a8bb139a96971460dcc445d8c0cb2d657cc1f398da64ce99"
+          }
+        },
+        {
+          "category": "entity",
+          "id": "csoi:dcp:snowy2013:C9:2:potable:b",
+          "revisionId": "sha256:5c9096485ad56dd19d72c350515ed3341e80a97ba277f7d9daf5cbed8f110170",
+          "currentRevisionId": "sha256:5c9096485ad56dd19d72c350515ed3341e80a97ba277f7d9daf5cbed8f110170",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:d13f14a701a9022328dc831ca24d51ad1584bd67d129eef86f2eaddd956c9dfb",
+          "record": {
+            "id": "csoi:dcp:snowy2013:C9:2:potable:b",
+            "kind": "ContentBlock",
+            "label": "Accommodation reference rate",
+            "stationId": "dcp",
+            "data": {
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:dcp:snowy2013:C9:2:potable:b",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+                  "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+                  "period": {
+                    "from": "2026-10-30",
+                    "to": "2026-10-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                    "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+                  },
+                  {
+                    "id": "csoi:dcp:snowy2013:C9:2:potable",
+                    "revisionId": "sha256:61dc76214933473515d0d7a5bf8588af9966b347f1b588abf51088d243b19240"
+                  }
+                ],
+                "data": {
+                  "title": "Accommodation reference rate",
+                  "summary": "The printed C6.2-3(b), within C9, asks an accommodation proposal to demonstrate potable-water capacity of at least110 litres/person/day. The preceding(a) concerns peak occupancy or use. This is a historical minimum-capacity reference, not measured demand or a current duty.",
+                  "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                  "sourceDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page164, printed page149; Printed C6.2-3(b)",
+                  "methodVersion": "source-pinned-clause-outline-1",
+                  "dcpClause": {
+                    "format": "csoi-dcp-clause-1",
+                    "parentId": "csoi:dcp:snowy2013:C9:2:potable",
+                    "parentRevisionId": "sha256:61dc76214933473515d0d7a5bf8588af9966b347f1b588abf51088d243b19240",
+                    "section": "Printed C6.2-3(b)",
+                    "category": "CLAUSE",
+                    "conditions": [
+                      "Accommodation use and the surrounding conditional scope must be established.",
+                      "Historical accommodation capacity minimum: at least110 L/person/day (>=110), with peak occupancy/use context in preceding(a); not actual demand."
+                    ],
+                    "exceptions": [],
+                    "obligations": [],
+                    "quantities": "UNKNOWN",
+                    "legalApplicability": "UNKNOWN",
+                    "reviewState": "PENDING",
+                    "currentVersion": "UNKNOWN",
+                    "anchor": {
+                      "pdfPage": 164,
+                      "normalizedPageDigest": "sha256:063ca60c58095b25bcce7effcf46297001ca68b86f89fb4c491c432938908770",
+                      "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+                    }
+                  }
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+                  "locator": "PDF page164, printed page149; Printed C6.2-3(b)",
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-31T10:28:36.640Z",
+                "state": "ACTIVE",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:c97ec52e73f16f97afbf183eeeeb1e636de1c938aa6dbd46c8e631fa76ab5fe8"
+              }
+            },
+            "scope": {
+              "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+              "period": {
+                "from": "2026-10-30",
+                "to": "2026-10-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+              "locator": "PDF page164, printed page149; Printed C6.2-3(b)",
+              "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:5c9096485ad56dd19d72c350515ed3341e80a97ba277f7d9daf5cbed8f110170"
+          }
+        },
+        {
+          "category": "entity",
+          "id": "csoi:dcp:snowy2013:C9:2:potable",
+          "revisionId": "sha256:61dc76214933473515d0d7a5bf8588af9966b347f1b588abf51088d243b19240",
+          "currentRevisionId": "sha256:61dc76214933473515d0d7a5bf8588af9966b347f1b588abf51088d243b19240",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:e2ef4e581965e814127b6781cf9d1105c7d041eb863aa23787d461571365898d",
+          "record": {
+            "id": "csoi:dcp:snowy2013:C9:2:potable",
+            "kind": "ContentBlock",
+            "label": "Non-domestic rural potable-water references",
+            "stationId": "dcp",
+            "data": {
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:dcp:snowy2013:C9:2:potable",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+                  "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+                  "period": {
+                    "from": "2026-10-30",
+                    "to": "2026-10-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                    "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+                  },
+                  {
+                    "id": "csoi:dcp:snowy2013:C9:2:unreticulated",
+                    "revisionId": "sha256:49ff2f8155edc8052beed24a525c0353f149b1b6b42319357b53ff7da5be0728"
+                  }
+                ],
+                "data": {
+                  "title": "Non-domestic rural potable-water references",
+                  "summary": "The potable-water block is printed C6.2-3 inside chapterC9. That label discrepancy is retained. Accommodation and non-accommodation rates, storage and professional justification are separate reference conditions.",
+                  "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                  "sourceDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page164, printed page149; Printed C6.2-3 within C9",
+                  "methodVersion": "source-pinned-clause-outline-1",
+                  "dcpClause": {
+                    "format": "csoi-dcp-clause-1",
+                    "parentId": "csoi:dcp:snowy2013:C9:2:unreticulated",
+                    "parentRevisionId": "sha256:49ff2f8155edc8052beed24a525c0353f149b1b6b42319357b53ff7da5be0728",
+                    "section": "Printed C6.2-3 within C9",
+                    "category": "SECTION",
+                    "conditions": [
+                      "Establish proposed use/occupancy and water-connection context.",
+                      "Current design standards and professional review remain pending."
+                    ],
+                    "exceptions": [
+                      "The document discusses a justified reduced storage rate where safe non-potable use is demonstrated."
+                    ],
+                    "obligations": [],
+                    "quantities": "UNKNOWN",
+                    "legalApplicability": "UNKNOWN",
+                    "reviewState": "PENDING",
+                    "currentVersion": "UNKNOWN",
+                    "anchor": {
+                      "pdfPage": 164,
+                      "normalizedPageDigest": "sha256:063ca60c58095b25bcce7effcf46297001ca68b86f89fb4c491c432938908770",
+                      "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+                    }
+                  }
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+                  "locator": "PDF page164, printed page149; Printed C6.2-3 within C9",
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-30T07:27:40.568411+00:00",
+                "state": "ACTIVE",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:b58785c3af6051075a9002c54efef4ee40aa7b6e75227843edb34ed31bade3ef"
+              }
+            },
+            "scope": {
+              "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+              "period": {
+                "from": "2026-10-30",
+                "to": "2026-10-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+              "locator": "PDF page164, printed page149; Printed C6.2-3 within C9",
+              "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:61dc76214933473515d0d7a5bf8588af9966b347f1b588abf51088d243b19240"
+          }
+        },
+        {
+          "category": "entity",
+          "id": "csoi:dcp:snowy2013:C9:2:unreticulated",
+          "revisionId": "sha256:49ff2f8155edc8052beed24a525c0353f149b1b6b42319357b53ff7da5be0728",
+          "currentRevisionId": "sha256:49ff2f8155edc8052beed24a525c0353f149b1b6b42319357b53ff7da5be0728",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:c052229fdbd80cbcd2f86e0e3b97a37b50e560eb7e6390d146b2f0ee75ae9e65",
+          "record": {
+            "id": "csoi:dcp:snowy2013:C9:2:unreticulated",
+            "kind": "ContentBlock",
+            "label": "Where town-water connection is unavailable",
+            "stationId": "dcp",
+            "data": {
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:dcp:snowy2013:C9:2:unreticulated",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+                  "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+                  "period": {
+                    "from": "2026-10-30",
+                    "to": "2026-10-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                    "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+                  },
+                  {
+                    "id": "csoi:dcp:snowy2013:C9:2",
+                    "revisionId": "sha256:dd37156e3a74a699cae5002f5fb2444b4d3f14ee80631a13be875ea607cb2b05"
+                  }
+                ],
+                "data": {
+                  "title": "Where town-water connection is unavailable",
+                  "summary": "This part explicitly conditions some controls on town-water connection not being available. The condition must be evidenced, rather than presumed for all rural properties.",
+                  "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                  "sourceDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page164, printed page149; C9 §2.2 continued",
+                  "methodVersion": "source-pinned-clause-outline-1",
+                  "dcpClause": {
+                    "format": "csoi-dcp-clause-1",
+                    "parentId": "csoi:dcp:snowy2013:C9:2",
+                    "parentRevisionId": "sha256:dd37156e3a74a699cae5002f5fb2444b4d3f14ee80631a13be875ea607cb2b05",
+                    "section": "C9 §2.2 continued",
+                    "category": "SECTION",
+                    "conditions": [
+                      "The document conditions these provisions on unavailable reticulated town-water connection."
+                    ],
+                    "exceptions": [],
+                    "obligations": [],
+                    "quantities": "UNKNOWN",
+                    "legalApplicability": "UNKNOWN",
+                    "reviewState": "PENDING",
+                    "currentVersion": "UNKNOWN",
+                    "anchor": {
+                      "pdfPage": 164,
+                      "normalizedPageDigest": "sha256:063ca60c58095b25bcce7effcf46297001ca68b86f89fb4c491c432938908770",
+                      "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+                    }
+                  }
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+                  "locator": "PDF page164, printed page149; C9 §2.2 continued",
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-30T07:27:40.568411+00:00",
+                "state": "ACTIVE",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:076face0f507d684104d3321b3d8cc6f0981bf429c7e87881f9a105318b0f218"
+              }
+            },
+            "scope": {
+              "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+              "period": {
+                "from": "2026-10-30",
+                "to": "2026-10-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+              "locator": "PDF page164, printed page149; C9 §2.2 continued",
+              "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:49ff2f8155edc8052beed24a525c0353f149b1b6b42319357b53ff7da5be0728"
+          }
+        },
+        {
+          "category": "entity",
+          "id": "csoi:dcp:snowy2013:C9:2",
+          "revisionId": "sha256:dd37156e3a74a699cae5002f5fb2444b4d3f14ee80631a13be875ea607cb2b05",
+          "currentRevisionId": "sha256:dd37156e3a74a699cae5002f5fb2444b4d3f14ee80631a13be875ea607cb2b05",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:772fa06aa73f0687024bdc39ace0a3ebd50dce43c754e0ab0540f8bb741b5be6",
+          "record": {
+            "id": "csoi:dcp:snowy2013:C9:2",
+            "kind": "ContentBlock",
+            "label": "Water-supply context",
+            "stationId": "dcp",
+            "data": {
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:dcp:snowy2013:C9:2",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+                  "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+                  "period": {
+                    "from": "2026-10-30",
+                    "to": "2026-10-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                    "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+                  },
+                  {
+                    "id": "csoi:dcp:snowy2013:C9",
+                    "revisionId": "sha256:d203be12361d7fff4b6d4a4db69538198043e0c61ae079b77b0e2716cea79a24"
+                  }
+                ],
+                "data": {
+                  "title": "Water-supply context",
+                  "summary": "Water-supply objectives and controls distinguish reticulated and other supply situations. Actual network availability or a current duty for a property is unknown.",
+                  "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                  "sourceDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page163, printed page148; C9 §2",
+                  "methodVersion": "source-pinned-clause-outline-1",
+                  "dcpClause": {
+                    "format": "csoi-dcp-clause-1",
+                    "parentId": "csoi:dcp:snowy2013:C9",
+                    "parentRevisionId": "sha256:d203be12361d7fff4b6d4a4db69538198043e0c61ae079b77b0e2716cea79a24",
+                    "section": "C9 §2",
+                    "category": "SECTION",
+                    "conditions": [],
+                    "exceptions": [],
+                    "obligations": [],
+                    "quantities": "UNKNOWN",
+                    "legalApplicability": "UNKNOWN",
+                    "reviewState": "PENDING",
+                    "currentVersion": "UNKNOWN",
+                    "anchor": {
+                      "pdfPage": 163,
+                      "normalizedPageDigest": "sha256:cb7c44a7a870f98cc5d0b4d97646ae1ec882f87beca9627485e50b9916926da3",
+                      "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+                    }
+                  }
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+                  "locator": "PDF page163, printed page148; C9 §2",
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-30T07:27:40.568411+00:00",
+                "state": "ACTIVE",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:e77a271ab3b1f0a89f038dfcfad15bd99578d8e7ba6aa4c78f076c2be0ce8b5c"
+              }
+            },
+            "scope": {
+              "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+              "period": {
+                "from": "2026-10-30",
+                "to": "2026-10-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+              "locator": "PDF page163, printed page148; C9 §2",
+              "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:dd37156e3a74a699cae5002f5fb2444b4d3f14ee80631a13be875ea607cb2b05"
+          }
+        },
+        {
+          "category": "entity",
+          "id": "csoi:dcp:snowy2013:C9",
+          "revisionId": "sha256:d203be12361d7fff4b6d4a4db69538198043e0c61ae079b77b0e2716cea79a24",
+          "currentRevisionId": "sha256:d203be12361d7fff4b6d4a4db69538198043e0c61ae079b77b0e2716cea79a24",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:bc9809f92c0ba1120ad9a3fceb38e6f5d16e5b8b66de7cb8c07a25faa4fcf4da",
+          "record": {
+            "id": "csoi:dcp:snowy2013:C9",
+            "kind": "ContentBlock",
+            "label": "C9 — water, energy and effluent",
+            "stationId": "dcp",
+            "data": {
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:dcp:snowy2013:C9",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+                  "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+                  "period": {
+                    "from": "2026-10-30",
+                    "to": "2026-10-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                    "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+                  },
+                  {
+                    "id": "csoi:dcp:snowy2013:C",
+                    "revisionId": "sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186"
+                  }
+                ],
+                "data": {
+                  "title": "C9 — water, energy and effluent",
+                  "summary": "The chapter separates building efficiency, water supply and effluent disposal. Water availability, sewage connection, design references and actual environmental outcomes are different facts.",
+                  "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                  "sourceDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page158, printed page143; C9",
+                  "methodVersion": "source-pinned-clause-outline-1",
+                  "dcpClause": {
+                    "format": "csoi-dcp-clause-1",
+                    "parentId": "csoi:dcp:snowy2013:C",
+                    "parentRevisionId": "sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186",
+                    "section": "C9",
+                    "category": "CHAPTER",
+                    "conditions": [],
+                    "exceptions": [],
+                    "obligations": [],
+                    "quantities": "UNKNOWN",
+                    "legalApplicability": "UNKNOWN",
+                    "reviewState": "PENDING",
+                    "currentVersion": "UNKNOWN",
+                    "anchor": {
+                      "pdfPage": 158,
+                      "normalizedPageDigest": "sha256:e41aec243c089867b5d65c12f0eb229046ae352d2b131fa4e02d2c14e2a63a07",
+                      "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+                    }
+                  }
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+                  "locator": "PDF page158, printed page143; C9",
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-30T07:27:40.568411+00:00",
+                "state": "ACTIVE",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:ef2878b7feee08bd47d8cdb04f508bda6efaadb642d6bbae0d8bbeee7506aefe"
+              }
+            },
+            "scope": {
+              "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+              "period": {
+                "from": "2026-10-30",
+                "to": "2026-10-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+              "locator": "PDF page158, printed page143; C9",
+              "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:d203be12361d7fff4b6d4a4db69538198043e0c61ae079b77b0e2716cea79a24"
+          }
+        },
+        {
+          "category": "entity",
+          "id": "csoi:dcp:snowy2013:C",
+          "revisionId": "sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186",
+          "currentRevisionId": "sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:4c7c4dc995100f97699d6bd6aa30367dd056942602ccabab05d3474dab28aa59",
+          "record": {
+            "id": "csoi:dcp:snowy2013:C",
+            "kind": "ContentBlock",
+            "label": "Part C — general controls",
+            "stationId": "dcp",
+            "data": {
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:dcp:snowy2013:C",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+                  "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+                  "period": {
+                    "from": "2026-10-30",
+                    "to": "2026-10-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                    "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+                  },
+                  {
+                    "id": "csoi:dcp:snowy2013:document",
+                    "revisionId": "sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6"
+                  }
+                ],
+                "data": {
+                  "title": "Part C — general controls",
+                  "summary": "The introduction groups general development controls in PartC and says relevant provisions depend on the proposal. The outline does not assume that every provision applies to every development.",
+                  "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                  "sourceDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page17, printed page2; Part C",
+                  "methodVersion": "source-pinned-clause-outline-1",
+                  "dcpClause": {
+                    "format": "csoi-dcp-clause-1",
+                    "parentId": "csoi:dcp:snowy2013:document",
+                    "parentRevisionId": "sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6",
+                    "section": "Part C",
+                    "category": "CHAPTER",
+                    "conditions": [],
+                    "exceptions": [],
+                    "obligations": [],
+                    "quantities": "UNKNOWN",
+                    "legalApplicability": "UNKNOWN",
+                    "reviewState": "PENDING",
+                    "currentVersion": "UNKNOWN",
+                    "anchor": {
+                      "pdfPage": 17,
+                      "normalizedPageDigest": "sha256:523d9e56b86acfb193c8659ba16f45f879c9836a205bb4de02ee867b8763545b",
+                      "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+                    }
+                  }
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+                  "locator": "PDF page17, printed page2; Part C",
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-30T07:27:40.568411+00:00",
+                "state": "ACTIVE",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:3e1f463533adf9709de9533bb06d07e339c76f63d5930cc3fe9eaefe9694ae26"
+              }
+            },
+            "scope": {
+              "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+              "period": {
+                "from": "2026-10-30",
+                "to": "2026-10-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+              "locator": "PDF page17, printed page2; Part C",
+              "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:5c5e619fbbecfb658881395a2a305e8110442754fd7af9f70b2592d8402c9186"
+          }
+        },
+        {
+          "category": "entity",
+          "id": "csoi:dcp:snowy2013:document",
+          "revisionId": "sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6",
+          "currentRevisionId": "sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:ccd12b432a093a8d39824eb4911e567f87d1a8aaa4d467a6ff81591cc397f82a",
+          "record": {
+            "id": "csoi:dcp:snowy2013:document",
+            "kind": "ContentBlock",
+            "label": "Snowy River DCP2013 — research outline",
+            "stationId": "dcp",
+            "data": {
+              "status": "PUBLIC_TEXT_OBSERVED",
+              "csoiRecord": {
+                "id": "csoi:dcp:snowy2013:document",
+                "ownerModule": "CSOI_OPERATIONS",
+                "security": "PUBLIC",
+                "layer": "L0",
+                "sourceClass": "INDEPENDENT_RESEARCH",
+                "judgment": "OBSERVATION",
+                "authority": "INDEPENDENT_RESEARCH",
+                "scope": {
+                  "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+                  "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+                  "period": {
+                    "from": "2026-10-30",
+                    "to": "2026-10-30"
+                  }
+                },
+                "inputs": [
+                  {
+                    "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                    "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+                  }
+                ],
+                "data": {
+                  "title": "Snowy River DCP2013 — research outline",
+                  "summary": "Own factual research outline of selected sections in the retrieved Amendment3/Issue4 document. Current consolidation, reuse rights and parcel application require independent review. Unindexed chapters are gaps.",
+                  "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+                  "sourceDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "locator": "PDF page2, printed pagei; Document",
+                  "methodVersion": "source-pinned-clause-outline-1",
+                  "dcpClause": {
+                    "format": "csoi-dcp-clause-1",
+                    "parentId": null,
+                    "parentRevisionId": null,
+                    "section": "Document",
+                    "category": "DOCUMENT",
+                    "conditions": [],
+                    "exceptions": [],
+                    "obligations": [],
+                    "quantities": "UNKNOWN",
+                    "legalApplicability": "UNKNOWN",
+                    "reviewState": "PENDING",
+                    "currentVersion": "UNKNOWN",
+                    "anchor": {
+                      "pdfPage": 2,
+                      "normalizedPageDigest": "sha256:925bb78bdccf85ad9b84236cc69cc4c4671043f8524a078eeb28d8a4b27496bb",
+                      "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+                    }
+                  }
+                },
+                "sensitivity": {
+                  "personalData": false,
+                  "confidential": false,
+                  "reidentifiable": false
+                },
+                "provenance": {
+                  "contentMode": "RESEARCH_SUMMARY",
+                  "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+                  "locator": "PDF page2, printed pagei; Document",
+                  "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+                  "rights": {
+                    "mode": "AUTHORED_RESEARCH",
+                    "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+                  }
+                },
+                "observedAt": "2026-10-30T07:27:40.568411+00:00",
+                "state": "ACTIVE",
+                "format": "csoi-record-1",
+                "revisionId": "sha256:baa5a8000f367a621fc8a63e7ee9b69bb359dd7d45b60a1ab8c42adc9476dc97"
+              }
+            },
+            "scope": {
+              "region": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "boundary": "PUBLIC_DOCUMENT_CLAUSE_RESEARCH_NOT_LEGAL_APPLICABILITY",
+              "period": {
+                "from": "2026-10-30",
+                "to": "2026-10-30"
+              }
+            },
+            "state": "SOURCE_OBSERVED",
+            "classification": "LOCAL_RESEARCH",
+            "admission": "PENDING",
+            "provenance": {
+              "contentMode": "RESEARCH_SUMMARY",
+              "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+              "locator": "PDF page2, printed pagei; Document",
+              "sourceRevision": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+              "rights": {
+                "mode": "AUTHORED_RESEARCH",
+                "basis": "Bounded repository-authored factual observations only. Original source reuse rights, current legal consolidation and authorised admission remain UNKNOWN/PENDING."
+              }
+            },
+            "gaps": [
+              "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+            ],
+            "revisionId": "sha256:be80b78ddf5114b923f3845af42ce85ab2fb983c5f3217e1fc59def4aae9e6e6"
+          }
+        },
+        {
+          "category": "source",
+          "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+          "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e",
+          "currentRevisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e",
+          "declaredVersionId": null,
+          "historical": false,
+          "contentDigest": "sha256:ce173662c5856f0e4f826852c5dd726edf2ffcd6630f43351ffeb8316c4adabd",
+          "record": {
+            "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+            "family": "DCP",
+            "publisher": "Snowy Monaro Regional Council",
+            "officialUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/building-and-planning/development/documents/2023-03-23-snowy-river-dcp-2013-amendment-3.pdf",
+            "directoryUrl": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Snowy-River-Shire-Development-Control-Plan",
+            "title": "Snowy River Development Control Plan 2013 — Amendment3 observed",
+            "recordType": "DOCUMENT",
+            "stationId": "dcp",
+            "classification": "PUBLIC",
+            "mediaType": "application/pdf",
+            "rights": {
+              "status": "UNKNOWN",
+              "licence": null,
+              "basis": "Public original temporarily verified. Only metadata and bounded own factual research wording are retained; original redistribution rights remain UNKNOWN.",
+              "permittedUses": [
+                "METADATA_ONLY"
+              ]
+            },
+            "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+            "retrievedAt": "2026-10-30T07:27:40.568411+00:00",
+            "adoptedAt": null,
+            "effectiveFrom": null,
+            "effectiveTo": null,
+            "amendedAt": null,
+            "supersededAt": null,
+            "currentAsOf": null,
+            "geographicExtent": {
+              "type": "HISTORICAL_PLAN_CONTEXT",
+              "label": "Snowy River LEP2013 historical land context, NSW; current parcel applicability UNKNOWN",
+              "parcelApplicability": "UNKNOWN"
+            },
+            "extraction": {
+              "parser": "local review; no formal source extraction",
+              "version": "csoi-receipt-append-1",
+              "coverage": "NONE",
+              "totalPages": 465,
+              "extractedPages": [],
+              "anchors": []
+            },
+            "lineage": {
+              "supersedes": [],
+              "revisionLabel": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d"
+            },
+            "corroboratingEvidence": [],
+            "access": {
+              "state": "AVAILABLE",
+              "checkedAt": "2026-10-30T07:27:40.568411+00:00",
+              "reason": "Original bytes independently rehashed from temporary public-source retrieval; permission/currentness/admission pending."
+            },
+            "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+          }
+        }
+      ],
+      "assessment": {
+        "current": true,
+        "currentMeaning": "RECORDED_INPUT_CONTEXT_NOT_LIVE_SITE_OR_CURRENT_LAW",
+        "researchStatus": "PINNED_RESEARCH_PATH_ONLY",
+        "invalidations": [],
+        "gaps": [
+          "OFFICIAL_ADMISSION_UNKNOWN",
+          "EVIDENCE_SOURCE_VERSION_UNKNOWN",
+          "COUNTEREVIDENCE_RETAINED",
+          "RELATIONSHIP_NOT_ADMITTED",
+          "SOURCE_RIGHTS_UNKNOWN",
+          "SOURCE_CURRENT_VERSION_UNKNOWN"
+        ],
+        "dependencyRecordsChecked": 9,
+        "geographicContext": "NOT_PROOF_OF_APPLICABILITY",
+        "currentLaw": "UNKNOWN",
+        "officialUse": "REJECTED_UNKNOWN_ADMISSION",
+        "arithmetic": "NOT_PERFORMED"
+      },
+      "datasetDigest": "sha256:a4dc6c0d819b184f8091baeda533ae9135502fa309b9f2594c8beef868b9686e"
+    }
+  ],
+  "metadataCompatibility": "CONFLICT",
+  "officialUse": "REJECTED_UNKNOWN_ADMISSION",
+  "current": true,
+  "meaning": "Typed research paths and gaps only; no statutory/implementation/causal promotion or arithmetic."
+}

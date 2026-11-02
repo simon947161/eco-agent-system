@@ -1,0 +1,122 @@
+{
+  "format": "csoi-large-browser-export-archive-1",
+  "at": "2026-11-02T03:53:00.331767+00:00",
+  "movedAfterBrowserProcessCompleted": true,
+  "files": [
+    {
+      "originalRelativePath": "browser/csoi-paths-browser/csoi-path-snapshot-1440.json",
+      "bytes": 22743874,
+      "sha256": "7851d7bb8111939cbcfd2ece6106cccfad3958f9df870b78b28782baa2da71a4",
+      "newLocalPath": "/tmp/csoi-closure-exports-20261102/browser/csoi-paths-browser/csoi-path-snapshot-1440.json",
+      "datasetEntities": 635,
+      "offlineVerification": {
+        "verifier": "verify-paths.cjs",
+        "result": {
+          "integrity": true,
+          "current": true,
+          "officialUse": "REJECTED_UNKNOWN_ADMISSION"
+        },
+        "proof": "browser/csoi-paths-browser/csoi-path-proof-1440.json",
+        "status": "PASS_ACTUALLY_EXECUTED_BY_BROWSER_SUITE",
+        "evidenceLog": "browser/csoi-paths-browser/execution.log",
+        "evidenceLogSHA256": "9eb6c2b55dd15a962a2db9206120659847e2e7a093d5b4c21eb5f07f41c05eb8",
+        "verificationScope": "Exact exported snapshot; signature/legal truth/official authority not established.",
+        "verifierFileSHA256AtFinalReadback": "1298e42acbb22e2f5125175dedd117ea225a77d5b86e0db10efa3a9656941bd3"
+      },
+      "moveDigestMatched": true,
+      "committedToGit": false,
+      "overallBrowserSuiteStatus": "INITIAL_LATER_MOBILE_CLICK_FAILED_DESKTOP_EXPORT_VALIDATION_PASSED"
+    },
+    {
+      "originalRelativePath": "browser/csoi-paths-browser-endpoint-transaction/csoi-path-snapshot-1440.json",
+      "bytes": 22743874,
+      "sha256": "7851d7bb8111939cbcfd2ece6106cccfad3958f9df870b78b28782baa2da71a4",
+      "newLocalPath": "/tmp/csoi-closure-exports-20261102/browser/csoi-paths-browser-endpoint-transaction/csoi-path-snapshot-1440.json",
+      "datasetEntities": 635,
+      "offlineVerification": {
+        "verifier": "verify-paths.cjs",
+        "result": {
+          "integrity": true,
+          "current": true,
+          "officialUse": "REJECTED_UNKNOWN_ADMISSION"
+        },
+        "proof": "browser/csoi-paths-browser-endpoint-transaction/csoi-path-proof-1440.json",
+        "status": "PASS_ACTUALLY_EXECUTED_BY_BROWSER_SUITE",
+        "evidenceLog": "browser/csoi-paths-browser-endpoint-transaction/execution.log",
+        "evidenceLogSHA256": "51c605982b87615362ab2e26e7c1a2bdc1a0f55d54ff296fd9e6a961382a5afd",
+        "verificationScope": "Exact exported snapshot; signature/legal truth/official authority not established.",
+        "verifierFileSHA256AtFinalReadback": "1298e42acbb22e2f5125175dedd117ea225a77d5b86e0db10efa3a9656941bd3"
+      },
+      "moveDigestMatched": true,
+      "committedToGit": false,
+      "overallBrowserSuiteStatus": "PASS_ACTUALLY_TESTED"
+    },
+    {
+      "originalRelativePath": "browser/csoi-paths-browser-endpoint-transaction/csoi-path-snapshot-390.json",
+      "bytes": 22743874,
+      "sha256": "7851d7bb8111939cbcfd2ece6106cccfad3958f9df870b78b28782baa2da71a4",
+      "newLocalPath": "/tmp/csoi-closure-exports-20261102/browser/csoi-paths-browser-endpoint-transaction/csoi-path-snapshot-390.json",
+      "datasetEntities": 635,
+      "offlineVerification": {
+        "verifier": "verify-paths.cjs",
+        "result": {
+          "integrity": true,
+          "current": true,
+          "officialUse": "REJECTED_UNKNOWN_ADMISSION"
+        },
+        "proof": "browser/csoi-paths-browser-endpoint-transaction/csoi-path-proof-390.json",
+        "status": "PASS_ACTUALLY_EXECUTED_BY_BROWSER_SUITE",
+        "evidenceLog": "browser/csoi-paths-browser-endpoint-transaction/execution.log",
+        "evidenceLogSHA256": "51c605982b87615362ab2e26e7c1a2bdc1a0f55d54ff296fd9e6a961382a5afd",
+        "verificationScope": "Exact exported snapshot; signature/legal truth/official authority not established.",
+        "verifierFileSHA256AtFinalReadback": "1298e42acbb22e2f5125175dedd117ea225a77d5b86e0db10efa3a9656941bd3"
+      },
+      "moveDigestMatched": true,
+      "committedToGit": false,
+      "overallBrowserSuiteStatus": "PASS_ACTUALLY_TESTED"
+    },
+    {
+      "originalRelativePath": "browser/discovery-browser-endpoint-transaction/atlas-discovery-1440.json",
+      "bytes": 22750808,
+      "sha256": "705af8d68375b2f0184eeca27c1ba246acb2106241fd1c00f1871ee51d7cf2b4",
+      "newLocalPath": "/tmp/csoi-closure-exports-20261102/browser/discovery-browser-endpoint-transaction/atlas-discovery-1440.json",
+      "datasetEntities": 637,
+      "offlineVerification": {
+        "verifier": "verify-snapshot.cjs",
+        "result": "PASS_DATASET_LINKED_HISTORY_CONTENT_ROOT_RECEIPTS",
+        "status": "PASS_ACTUALLY_EXECUTED_BY_BROWSER_SUITE",
+        "evidenceLog": "browser/discovery-browser-endpoint-transaction/execution.log",
+        "evidenceLogSHA256": "560d7acee508c2733f2366bd5ae4f4749e3140ee27bd30e63aeb646da0748275",
+        "verificationScope": "Exact exported snapshot; signature/legal truth/official authority not established.",
+        "verifierFileSHA256AtFinalReadback": "f69ba680181e63c48d09bff43f67405fbfa090c9af57e1096f863371a6a72a98"
+      },
+      "moveDigestMatched": true,
+      "committedToGit": false,
+      "overallBrowserSuiteStatus": "PASS_ACTUALLY_TESTED"
+    },
+    {
+      "originalRelativePath": "browser/discovery-browser-endpoint-transaction/atlas-discovery-390.json",
+      "bytes": 22750808,
+      "sha256": "e5cc5146a7e5aab23168dd77391b1a84d99202abeabf43eb1ce444d6834fb46f",
+      "newLocalPath": "/tmp/csoi-closure-exports-20261102/browser/discovery-browser-endpoint-transaction/atlas-discovery-390.json",
+      "datasetEntities": 637,
+      "offlineVerification": {
+        "verifier": "verify-snapshot.cjs",
+        "result": "PASS_DATASET_LINKED_HISTORY_CONTENT_ROOT_RECEIPTS",
+        "status": "PASS_ACTUALLY_EXECUTED_BY_BROWSER_SUITE",
+        "evidenceLog": "browser/discovery-browser-endpoint-transaction/execution.log",
+        "evidenceLogSHA256": "560d7acee508c2733f2366bd5ae4f4749e3140ee27bd30e63aeb646da0748275",
+        "verificationScope": "Exact exported snapshot; signature/legal truth/official authority not established.",
+        "verifierFileSHA256AtFinalReadback": "f69ba680181e63c48d09bff43f67405fbfa090c9af57e1096f863371a6a72a98"
+      },
+      "moveDigestMatched": true,
+      "committedToGit": false,
+      "overallBrowserSuiteStatus": "PASS_ACTUALLY_TESTED"
+    }
+  ],
+  "fileCount": 5,
+  "totalBytes": 113733238,
+  "reason": "Preserve regenerable public/synthetic whole-history exports locally without committing five duplicate histories to Git. Proofs, smaller JSON, logs and screenshots remain in QA.",
+  "newOfflineVerificationExecutedDuringMove": false,
+  "verificationBasis": "Retained actual CLI results from the completed browser suites, associated by exact viewport/output file and suite iteration order; file SHA and byte count rechecked during move."
+}
