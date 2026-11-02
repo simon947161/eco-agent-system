@@ -1,0 +1,50 @@
+{
+  "wrong-source-digest": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "SOURCE_BINDING_MISMATCH"
+  },
+  "missing-activity": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "RECORD_CENSUS_MISMATCH"
+  },
+  "out-of-page-bounds": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "ANCHOR_OUTSIDE_ORIGINAL_PAGE"
+  },
+  "wrong-page": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "PAGE_ANCHOR_MISMATCH"
+  },
+  "wrong-source-column": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "SOURCE_COLUMN_MISMATCH:asset-maintenance:target"
+  },
+  "target-promoted-or-substituted": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "TARGET_VALUE_MISMATCH"
+  },
+  "invented-reference": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "SOURCE_CSP_REFERENCE_MISMATCH"
+  },
+  "duplicate-source-occurrence-erased": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "SOURCE_CSP_REFERENCE_MISMATCH"
+  },
+  "invented-bare-percentage-equality": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "KPI_NUMBER_OR_COMPARATOR_MISMATCH"
+  },
+  "invented-bare-percentage-minimum": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "KPI_NUMBER_OR_COMPARATOR_MISMATCH"
+  },
+  "false-actual-result": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "FALSE_ACTUAL"
+  },
+  "missing-version-conflict": {
+    "status": "REJECTED_EXPECTED",
+    "reason": "VERSION_CONFLICT_HIDDEN"
+  }
+}

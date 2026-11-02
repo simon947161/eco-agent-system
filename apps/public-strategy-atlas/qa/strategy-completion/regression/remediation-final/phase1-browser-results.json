@@ -1,0 +1,61 @@
+{
+  "format": "csoi-remediation-browser-1",
+  "startedAt": "2026-11-01T23:53:20.755102+00:00",
+  "appPath": "/workspace/eco-agent-system/apps/public-strategy-atlas",
+  "browserChecks": "REAL_CHROMIUM",
+  "results": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS_TESTED_HERE",
+      "withdrawnWrongApplicationAndCorrectedParent": "PASS",
+      "waterAmpPdf13Table4": "PASS",
+      "minimumCapacitySemantics": "PASS",
+      "independentSnapshotVerifier": "PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.",
+      "currentNoteSourcePins": 25,
+      "retainedEmptyInputNoteHistory": 25,
+      "legacyContentItems": 127,
+      "exportedEntities": 389,
+      "datasetDigest": "sha256:f2ec9adec008d5c0f5a39bac013ffb76aff73e08061d76b3512c572f1c8c1962",
+      "immutableAuditBaselinePrefix": "PASS exact audit-baseline dataset/history reconstructed from retained prefix",
+      "genericNoteReceiptAndTraceLinks": 25,
+      "independentNotePathProofVerifier": "{\"integrity\":true,\"current\":true,\"metadataCompatibility\":\"UNKNOWN\",\"officialUse\":\"REJECTED_UNKNOWN_ADMISSION\"}",
+      "withdrawalBlocksNewCorrectedClauseReview": "PASS",
+      "withdrawalInvalidatesGenericNoteContext": "PASS",
+      "unaffectedSourceContextRetained": "PASS",
+      "browserErrors": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS_TESTED_HERE",
+      "withdrawnWrongApplicationAndCorrectedParent": "PASS",
+      "waterAmpPdf13Table4": "PASS",
+      "minimumCapacitySemantics": "PASS",
+      "independentSnapshotVerifier": "PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.",
+      "currentNoteSourcePins": 25,
+      "retainedEmptyInputNoteHistory": 25,
+      "legacyContentItems": 127,
+      "exportedEntities": 389,
+      "datasetDigest": "sha256:f2ec9adec008d5c0f5a39bac013ffb76aff73e08061d76b3512c572f1c8c1962",
+      "immutableAuditBaselinePrefix": "PASS exact audit-baseline dataset/history reconstructed from retained prefix",
+      "genericNoteReceiptAndTraceLinks": 25,
+      "independentNotePathProofVerifier": "{\"integrity\":true,\"current\":true,\"metadataCompatibility\":\"UNKNOWN\",\"officialUse\":\"REJECTED_UNKNOWN_ADMISSION\"}",
+      "withdrawalBlocksNewCorrectedClauseReview": "PASS",
+      "withdrawalInvalidatesGenericNoteContext": "PASS",
+      "unaffectedSourceContextRetained": "PASS",
+      "browserErrors": []
+    }
+  ],
+  "externalRequests": [],
+  "sourceBodiesCommitted": false,
+  "CouncilAccountWrites": false,
+  "automaticPersistence": false,
+  "browserVersion": "154.0.8037.57",
+  "finishedAt": "2026-11-01T23:53:54.998295+00:00",
+  "status": "PASS_TESTED_HERE"
+}

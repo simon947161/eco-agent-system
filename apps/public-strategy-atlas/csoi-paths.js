@@ -56,8 +56,8 @@ function assessDependencies(d,records,{maxVisited=10000}={}){
  }
  return {current:invalid.size===0,invalidations:[...invalid],gaps:[...gaps],dependencyRecordsChecked:seen.size};
 }
-async function pinPath(d,spec){
- validate(spec);const requests=[...spec.nodes,...spec.relationships.filter(r=>r.kind==='ASSERTION').map(r=>({id:r.id,...(r.revisionId?{revisionId:r.revisionId}:{})}))],batch=await E.pinRecords(d,requests),views=batch.records.slice(0,spec.nodes.length),edges=[],gaps=new Set(['OFFICIAL_ADMISSION_UNKNOWN']),invalid=new Set();let edgeIndex=views.length;
+async function pinPathVerified(d,spec,session){
+ validate(spec);const requests=[...spec.nodes,...spec.relationships.filter(r=>r.kind==='ASSERTION').map(r=>({id:r.id,...(r.revisionId?{revisionId:r.revisionId}:{})}))],batch=await session.pinRecords(requests),views=batch.records.slice(0,spec.nodes.length),edges=[],gaps=new Set(['OFFICIAL_ADMISSION_UNKNOWN']),invalid=new Set();let edgeIndex=views.length;
  for(let n=0;n<spec.relationships.length;n++){
   const r=spec.relationships[n],reverse=r.direction==='REVERSE',from=views[n+(reverse?1:0)],to=views[n+(reverse?0:1)];let edge;
   if(r.kind==='ASSERTION'){
@@ -80,6 +80,7 @@ async function pinPath(d,spec){
  const regions=views.map(v=>v.record.data?.area||v.record.scope?.region||v.record.geographicExtent?.label||v.record.region).filter(v=>v&&v!=='UNKNOWN'),regionConflict=new Set(regions).size>1;
  return {core,digest:await M.objectDigest(core),views,assessment:{current:invalid.size===0,currentMeaning:'RECORDED_INPUT_CONTEXT_NOT_LIVE_SITE_OR_CURRENT_LAW',researchStatus:invalid.size?'INVALIDATED_RESEARCH_PATH':'PINNED_RESEARCH_PATH_ONLY',invalidations:[...invalid],gaps:[...gaps],dependencyRecordsChecked:dependencies.dependencyRecordsChecked,geographicContext:regionConflict?'CONFLICT_REQUIRES_REVIEW':'NOT_PROOF_OF_APPLICABILITY',currentLaw:'UNKNOWN',officialUse:'REJECTED_UNKNOWN_ADMISSION',arithmetic:'NOT_PERFORMED'},datasetDigest:batch.datasetDigest};
 }
+async function pinPath(dataset,spec){validate(spec);const d=structuredClone(dataset),session=await E.comparisonSession(d);return pinPathVerified(d,spec,session);}
 async function verifyPath(d,proof){try{need(proof.core?.methodVersion===METHOD&&await M.objectDigest(proof.core)===proof.digest,'PATH_PROOF_DIGEST');const check=await pinPath(d,proof.core.spec);return {integrity:check.digest===proof.digest,current:check.assessment.current,assessment:check.assessment};}catch(error){return {integrity:false,current:false,reason:error.message};}}
 async function discover(d,{from,to,mode='BOTH',maxVisited=2000}={}){
  need(['ASSERTION','INPUT','BOTH','STRUCTURED'].includes(mode)&&Number.isSafeInteger(maxVisited)&&maxVisited>0&&maxVisited<=10000,'PATH_DISCOVERY_BOUNDS');const adjacency=new Map(),add=(a,b,r)=>{if(!adjacency.has(a))adjacency.set(a,[]);adjacency.get(a).push({to:b,relationship:r});};
@@ -91,10 +92,10 @@ async function discover(d,{from,to,mode='BOTH',maxVisited=2000}={}){
  const ids=[to],relationships=[];let cursor=to;while(cursor!==from){const step=previous.get(cursor);need(step,'PATH_TRACE_MISSING');relationships.push(step.relationship);ids.push(step.from);cursor=step.from;if(ids.length>32)return {status:'UNKNOWN',truncated:true,reason:'Path exceeds32display/proof nodes; inspect smaller retained segments.'};}
  const spec={nodes:ids.reverse().map(id=>({id})),relationships:relationships.reverse()};return {status:'FOUND_RESEARCH_ONLY',truncated:false,path:await pinPath(d,spec)};
 }
-async function comparePathSets(d,{left,right}={}){
- need(Array.isArray(left)&&Array.isArray(right)&&left.length>0&&right.length>0&&left.length<=4&&right.length<=4,'PATH_SET_BOUNDS');const l=[],r=[];for(const spec of left)l.push(await pinPath(d,spec));for(const spec of right)r.push(await pinPath(d,spec));
+async function comparePathSets(dataset,{left,right}={}){
+ need(Array.isArray(left)&&Array.isArray(right)&&left.length>0&&right.length>0&&left.length<=4&&right.length<=4,'PATH_SET_BOUNDS');const d=structuredClone(dataset),session=await E.comparisonSession(d),l=[],r=[];for(const spec of left)l.push(await pinPathVerified(d,spec,session));for(const spec of right)r.push(await pinPathVerified(d,spec,session));
  const unique=paths=>[...new Map(paths.flatMap(p=>p.views).map(v=>[key(v),v])).values()],a=unique(l),b=unique(r),pairs=[];const used=new Set();let omitted=0;
- for(const v of a){const bucket=v.record.kind||v.record.recordType||v.category,w=b.find(w=>!used.has(key(w))&&(w.record.kind||w.record.recordType||w.category)===bucket);if(!w){omitted++;continue;}used.add(key(w));if(pairs.length>=16){omitted++;continue;}const compared=await E.compareRecords(d,{left:{id:v.id,revisionId:v.revisionId},right:{id:w.id,revisionId:w.revisionId}});pairs.push({left:{id:v.id,revisionId:v.revisionId},right:{id:w.id,revisionId:w.revisionId},checks:compared.checks,compatibility:compared.compatibility});}
+ for(const v of a){const bucket=v.record.kind||v.record.recordType||v.category,w=b.find(w=>!used.has(key(w))&&(w.record.kind||w.record.recordType||w.category)===bucket);if(!w){omitted++;continue;}used.add(key(w));if(pairs.length>=16){omitted++;continue;}const compared=await session.compareRecords({left:{id:v.id,revisionId:v.revisionId},right:{id:w.id,revisionId:w.revisionId}});pairs.push({left:{id:v.id,revisionId:v.revisionId},right:{id:w.id,revisionId:w.revisionId},checks:compared.checks,compatibility:compared.compatibility});}
  const core={format:'atlas-path-set-comparison-1',methodVersion:METHOD,left:l.map(p=>({core:p.core,digest:p.digest})),right:r.map(p=>({core:p.core,digest:p.digest})),pairs,unpairedRecords:omitted+b.filter(v=>!used.has(key(v))).length,arithmetic:'NOT_PERFORMED',officialRelationship:'UNKNOWN'};
  return {core,digest:await M.objectDigest(core),left:l,right:r,metadataCompatibility:pairs.some(p=>p.compatibility.status==='CONFLICT')?'CONFLICT':core.unpairedRecords||pairs.some(p=>p.compatibility.status==='UNKNOWN')?'UNKNOWN':'MATCHED_METADATA_ONLY',officialUse:'REJECTED_UNKNOWN_ADMISSION',current:l.concat(r).every(p=>p.assessment.current),meaning:'Typed research paths and gaps only; no statutory/implementation/causal promotion or arithmetic.'};
 }

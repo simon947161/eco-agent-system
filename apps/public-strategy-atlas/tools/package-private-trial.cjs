@@ -14,5 +14,5 @@ for(const file of [...assets].sort()){
 }
 function files(dir,prefix=''){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?files(path.join(dir,e.name),prefix+e.name+'/'):[prefix+e.name]);}
 if(files(out).some(file=>!assets.has(file)&&file!=='deployment-assets.json'))throw Error('UNEXPECTED_DIST_FILE');
-fs.writeFileSync(path.join(out,'deployment-assets.json'),JSON.stringify({format:'csoi-static-assets-1',project_id:manifest.project_id,applicationBaseline:'13c64f44aa6b6dac40748bb7096a7dadd3d7352d',files:hashes},null,2)+'\n');
+fs.writeFileSync(path.join(out,'deployment-assets.json'),JSON.stringify({format:'csoi-static-assets-1',project_id:manifest.project_id,applicationSourceCommit:require('node:child_process').execFileSync('git',['rev-parse','HEAD'],{cwd:app,encoding:'utf8'}).trim(),files:hashes},null,2)+'\n');
 console.log('PASS: '+assets.size+' exact existing runtime assets packaged; no test outputs, private imports, dependencies or app behavior changes.');

@@ -1,0 +1,1443 @@
+{
+  "format": "csoi-public-knowledge-1",
+  "sourceId": "csoi:smrc-op-2026:20261030",
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "sourcePageCount": 142,
+  "rights": "UNKNOWN",
+  "currentVersion": "UNKNOWN",
+  "officialAdmission": "PENDING",
+  "originalBytesCommitted": false,
+  "records": [
+    {
+      "id": "csoi:knowledge:op2026:water:document",
+      "kind": "DocumentRevision",
+      "category": "WATER_DOCUMENT",
+      "code": "OP2026-27",
+      "parentId": null,
+      "title": "Operational Plan 2026–2027 — selected water programme",
+      "summary": "This research set covers eight action rows on pages73–74. Further wastewater and capital activity appears on pages75–78, and the entire 142-page OP is not extracted.",
+      "locator": "OP 2026–2027 PDF/printed page 3; OP2026-27",
+      "anchor": {
+        "pdfPage": 3,
+        "normalizedPageDigest": "sha256:31672cbcc26ef34dd2fd5fb94af1b9eef916dcde88e0f8fa57949325ddc5d321",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36,
+          35,
+          559,
+          810
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "totalPages": 142,
+        "selectedPages": [
+          73,
+          74
+        ],
+        "wholeDocumentCoverage": "PARTIAL_SELECTED_TWO_PAGE_PROGRAMME",
+        "publishedDocument": {
+          "registeredUrlVersionLabel": "adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf",
+          "latestPopulatedVersionTableLabel": "1.3",
+          "printedDate": "30/06/2026",
+          "printedResolution": "225/26",
+          "versionConflict": "Filename v3.1 differs from internal table1.3. Page3 also retains working-draft and controlled-copy language. Current authoritative version remains UNKNOWN.",
+          "versionEvidencePage": 3
+        }
+      },
+      "relations": []
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:programme",
+      "kind": "WorkPackage",
+      "category": "WATER_PROGRAM",
+      "code": "Water and Wastewater",
+      "parentId": "csoi:knowledge:op2026:water:document",
+      "title": "Water and wastewater service programme",
+      "summary": "The source groups potable-water and wastewater operation and maintenance under one department. Its staff total is programme-level planning, not hours or expenditure allocated to any one activity.",
+      "locator": "OP 2026–2027 PDF/printed page 73; Water and Wastewater",
+      "anchor": {
+        "pdfPage": 73,
+        "normalizedPageDigest": "sha256:6d5342fc7f934da70099eb4e1d4528805fd9344531443a1b1712e7dca054b9f2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36,
+          35,
+          805,
+          328
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedDepartment": "Water and Wastewater",
+        "printedResponsibleManager": "Manager Water and Wastewater Operations",
+        "managerRoleBasis": "Published role label only; no individual identity or delegated authority inferred.",
+        "publicServicePurpose": "Operate water supplies and wastewater services, with reliability, public health and receiving-environment considerations.",
+        "deliveryProgramActivities": [
+          "Operate and maintain safe, reliable reticulated potable-water supplies.",
+          "Operate and maintain sewerage systems."
+        ],
+        "budget": {
+          "selectedPageAmount": "NOT_STATED",
+          "pointer": "Page73 directs the reader to end-of-document service-area budgets.",
+          "allocationToSelectedActivities": "UNKNOWN"
+        }
+      },
+      "relations": []
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:staff-plan",
+      "kind": "QuantifiedObservation",
+      "category": "WATER_PLANNED_QUANTITY",
+      "code": "52.5 FTE",
+      "parentId": "csoi:knowledge:op2026:water:programme",
+      "title": "Water and wastewater planned staffing — 52.5 FTE",
+      "summary": "The programme publishes52.5FTE under its people resources. This is not measured staff time, proof of occupied posts, an activity allocation or money.",
+      "locator": "OP 2026–2027 PDF/printed page 73; 52.5 FTE",
+      "anchor": {
+        "pdfPage": 73,
+        "normalizedPageDigest": "sha256:6d5342fc7f934da70099eb4e1d4528805fd9344531443a1b1712e7dca054b9f2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36,
+          220,
+          190,
+          262
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedResource": "52.5 FTE",
+        "baseline": {
+          "value": 52.5,
+          "scale": 1,
+          "unit": "FTE",
+          "printedUnit": "FTE",
+          "unitStatus": "PRINTED",
+          "role": "PUBLISHED_PLANNED_PROGRAMME_RESOURCE"
+        },
+        "allocationToIndividualActivities": "UNKNOWN",
+        "formula": "NOT_COMPUTABLE_FROM_FTE_ALONE; contracted hours, vacancies, activity allocation and observed execution are missing."
+      },
+      "relations": []
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:asset-maintenance",
+      "kind": "Activity",
+      "category": "WATER_ACTIVITY",
+      "code": "asset-maintenance",
+      "parentId": "csoi:knowledge:op2026:water:programme",
+      "title": "Preventive water-main maintenance",
+      "summary": "Planned maintenance is described against an annual main-break rate and a separate annual count target.",
+      "locator": "OP 2026–2027 PDF/printed page 73; asset-maintenance",
+      "anchor": {
+        "pdfPage": 73,
+        "normalizedPageDigest": "sha256:6d5342fc7f934da70099eb4e1d4528805fd9344531443a1b1712e7dca054b9f2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          410.1,
+          805.39,
+          445.04
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedAction": "Undertake asset maintenance to prevent water main breaks",
+        "programmeSection": "Planned water operations",
+        "printedServiceLevel": {
+          "sourceCellDigest": "sha256:a40f8e2c532d53e100448dbe72cdc0f6a8ccb70ab05f7f4e5566244b8712ba85",
+          "representation": "Authored typed facts in serviceStandards; original prose not redistributed."
+        },
+        "serviceStandards": [
+          {
+            "measure": "water-main breaks",
+            "comparator": "<",
+            "value": 15,
+            "unit": "count",
+            "denominator": "100 km of water main",
+            "period": "year"
+          }
+        ],
+        "printedRegulatory": "Benchmarked as an Local Water Utility",
+        "regulatoryInterpretation": "Published table classification only. N, benchmarked and named legislation do not establish current statutory applicability.",
+        "target": {
+          "printed": "<47 pa",
+          "meaning": "PUBLISHED_PLAN_TARGET_NOT_ACTUAL_RESULT"
+        },
+        "printedReportingFrequency": "Monthly",
+        "reportingFrequency": "Monthly",
+        "printedCspReferences": [
+          "8.2"
+        ],
+        "sourceCspCodes": [
+          "8.2"
+        ],
+        "printedOtherPlans": "Nil",
+        "otherPlanDocumentVersions": "UNKNOWN_NOT_SEPARATELY_VERIFIED",
+        "resourceAllocation": "UNKNOWN",
+        "budgetOrSpendAllocatedToThisActivity": "UNKNOWN",
+        "originalColumnBounds": {
+          "action": [
+            36.5,
+            410.1,
+            226.77,
+            445.04
+          ],
+          "serviceStandard": [
+            226.77,
+            410.1,
+            456.38,
+            445.04
+          ],
+          "regulatory": [
+            456.38,
+            410.1,
+            525.83,
+            445.04
+          ],
+          "target": [
+            525.83,
+            410.1,
+            589.61,
+            445.04
+          ],
+          "reporting": [
+            589.61,
+            410.1,
+            657.07,
+            445.04
+          ],
+          "cspReference": [
+            657.07,
+            410.1,
+            739.28,
+            445.04
+          ],
+          "otherPlans": [
+            739.28,
+            410.1,
+            805.39,
+            445.04
+          ]
+        },
+        "originalColumns": {
+          "action": {
+            "normalizedTextDigest": "sha256:246537e7817cd76803fa5c4fd9143c72f4aa99d6062b622903893db8eec48186",
+            "normalizedCharacterCount": 56
+          },
+          "serviceStandard": {
+            "normalizedTextDigest": "sha256:a40f8e2c532d53e100448dbe72cdc0f6a8ccb70ab05f7f4e5566244b8712ba85",
+            "normalizedCharacterCount": 50
+          },
+          "regulatory": {
+            "normalizedTextDigest": "sha256:daf49f360168b019e290f394fee94b487b5bb229abaf6942b67551dbf7c2febe",
+            "normalizedCharacterCount": 37
+          },
+          "target": {
+            "normalizedTextDigest": "sha256:090eb184ba0717e057bb8f235183cfc62aefb802c1a3dd1839928e065c0d96c7",
+            "normalizedCharacterCount": 6
+          },
+          "reporting": {
+            "normalizedTextDigest": "sha256:9b11f6b707d2a03e0265465f32520bc1bc213de121de958539662d0ec1453fcb",
+            "normalizedCharacterCount": 7
+          },
+          "cspReference": {
+            "normalizedTextDigest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba",
+            "normalizedCharacterCount": 3
+          },
+          "otherPlans": {
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "normalizedCharacterCount": 3
+          }
+        }
+      },
+      "relations": [
+        {
+          "type": "EXPLICIT_DOCUMENT_REFERENCE",
+          "targetId": "csoi:knowledge:csp2035:strategy:8.2",
+          "locator": "OP PDF/printed page73; asset-maintenance; CSP Link Strategy Action column"
+        }
+      ]
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:potable-water",
+      "kind": "Activity",
+      "category": "WATER_ACTIVITY",
+      "code": "potable-water",
+      "parentId": "csoi:knowledge:op2026:water:programme",
+      "title": "Reticulated potable-water service",
+      "summary": "The service plan uses a connection-based complaint rate and a separate annual complaint-count target.",
+      "locator": "OP 2026–2027 PDF/printed page 73; potable-water",
+      "anchor": {
+        "pdfPage": 73,
+        "normalizedPageDigest": "sha256:6d5342fc7f934da70099eb4e1d4528805fd9344531443a1b1712e7dca054b9f2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          445.04,
+          805.39,
+          521.22
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedAction": "Provide reticulated potable water",
+        "programmeSection": "Planned water operations",
+        "printedServiceLevel": {
+          "sourceCellDigest": "sha256:2351b38985105081365fa1bcc77df61c99b1a4bb68aaa58a0219deea11f3ec9a",
+          "representation": "Authored typed facts in serviceStandards; original prose not redistributed."
+        },
+        "serviceStandards": [
+          {
+            "measure": "reticulated-water complaints",
+            "comparator": "<",
+            "value": 20,
+            "unit": "count",
+            "denominator": "1000 connections",
+            "period": "year"
+          }
+        ],
+        "printedRegulatory": "If Provided NSW Public health Act 2010 Fluoridation of Public water Supplies Act 1957",
+        "regulatoryInterpretation": "Published table classification only. N, benchmarked and named legislation do not establish current statutory applicability.",
+        "target": {
+          "printed": "<175 pa",
+          "meaning": "PUBLISHED_PLAN_TARGET_NOT_ACTUAL_RESULT"
+        },
+        "printedReportingFrequency": "Monthly",
+        "reportingFrequency": "Monthly",
+        "printedCspReferences": [
+          "8.2"
+        ],
+        "sourceCspCodes": [
+          "8.2"
+        ],
+        "printedOtherPlans": "Nil",
+        "otherPlanDocumentVersions": "UNKNOWN_NOT_SEPARATELY_VERIFIED",
+        "resourceAllocation": "UNKNOWN",
+        "budgetOrSpendAllocatedToThisActivity": "UNKNOWN",
+        "originalColumnBounds": {
+          "action": [
+            36.5,
+            445.04,
+            226.77,
+            521.22
+          ],
+          "serviceStandard": [
+            226.77,
+            445.04,
+            456.38,
+            521.22
+          ],
+          "regulatory": [
+            456.38,
+            445.04,
+            525.83,
+            521.22
+          ],
+          "target": [
+            525.83,
+            445.04,
+            589.61,
+            521.22
+          ],
+          "reporting": [
+            589.61,
+            445.04,
+            657.07,
+            521.22
+          ],
+          "cspReference": [
+            657.07,
+            445.04,
+            739.28,
+            521.22
+          ],
+          "otherPlans": [
+            739.28,
+            445.04,
+            805.39,
+            521.22
+          ]
+        },
+        "originalColumns": {
+          "action": {
+            "normalizedTextDigest": "sha256:1efe924e357f05c775407e4969ae479a32ad7cb3be3501e5fed7266c1f34d48f",
+            "normalizedCharacterCount": 33
+          },
+          "serviceStandard": {
+            "normalizedTextDigest": "sha256:2351b38985105081365fa1bcc77df61c99b1a4bb68aaa58a0219deea11f3ec9a",
+            "normalizedCharacterCount": 59
+          },
+          "regulatory": {
+            "normalizedTextDigest": "sha256:23fa807cde17d10635f59ab3b65e74b76eaa1bb85847130edbe8548b390931db",
+            "normalizedCharacterCount": 85
+          },
+          "target": {
+            "normalizedTextDigest": "sha256:2951fd46cf31f081a81a4ebf5371777025871239937ba58fb0ef85d11ec9c232",
+            "normalizedCharacterCount": 7
+          },
+          "reporting": {
+            "normalizedTextDigest": "sha256:9b11f6b707d2a03e0265465f32520bc1bc213de121de958539662d0ec1453fcb",
+            "normalizedCharacterCount": 7
+          },
+          "cspReference": {
+            "normalizedTextDigest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba",
+            "normalizedCharacterCount": 3
+          },
+          "otherPlans": {
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "normalizedCharacterCount": 3
+          }
+        }
+      },
+      "relations": [
+        {
+          "type": "EXPLICIT_DOCUMENT_REFERENCE",
+          "targetId": "csoi:knowledge:csp2035:strategy:8.2",
+          "locator": "OP PDF/printed page73; potable-water; CSP Link Strategy Action column"
+        }
+      ]
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:daily-testing",
+      "kind": "Activity",
+      "category": "WATER_ACTIVITY",
+      "code": "daily-testing",
+      "parentId": "csoi:knowledge:op2026:water:programme",
+      "title": "Water compliance testing and inspection",
+      "summary": "The plan seeks completion of scheduled daily testing; monthly refers to reporting, not the testing interval.",
+      "locator": "OP 2026–2027 PDF/printed page 74; daily-testing",
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          76.56,
+          805.39,
+          149.9
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedAction": "Daily operations water compliance testing and inspections",
+        "programmeSection": "Planned water operations",
+        "printedServiceLevel": {
+          "sourceCellDigest": "sha256:07335ad78020a9ec1cc4244f45f5fba068e46057f70ce395fd8ca0675a4f5d74",
+          "representation": "Authored typed facts in serviceStandards; original prose not redistributed."
+        },
+        "serviceStandards": [
+          {
+            "measure": "scheduled testing requirements completed",
+            "comparator": "UNKNOWN",
+            "comparisonBasis": "Source prints a nominal100% value without a comparison sign; no equality or minimum rule is inferred.",
+            "value": 100,
+            "unit": "percent",
+            "denominator": "scheduled testing requirements",
+            "period": "scheduled daily testing"
+          }
+        ],
+        "printedRegulatory": "If Provided NSW Public health Act 2010 Fluoridation of Public water Supplies Act 1957",
+        "regulatoryInterpretation": "Published table classification only. N, benchmarked and named legislation do not establish current statutory applicability.",
+        "target": {
+          "printed": "100% of Daily testing requirements met",
+          "meaning": "PUBLISHED_PLAN_TARGET_NOT_ACTUAL_RESULT"
+        },
+        "printedReportingFrequency": "Monthly",
+        "reportingFrequency": "Monthly",
+        "printedCspReferences": [
+          "8.2"
+        ],
+        "sourceCspCodes": [
+          "8.2"
+        ],
+        "printedOtherPlans": "Nil",
+        "otherPlanDocumentVersions": "UNKNOWN_NOT_SEPARATELY_VERIFIED",
+        "resourceAllocation": "UNKNOWN",
+        "budgetOrSpendAllocatedToThisActivity": "UNKNOWN",
+        "originalColumnBounds": {
+          "action": [
+            36.5,
+            76.56,
+            226.77,
+            149.9
+          ],
+          "serviceStandard": [
+            226.77,
+            76.56,
+            456.38,
+            149.9
+          ],
+          "regulatory": [
+            456.38,
+            76.56,
+            525.83,
+            149.9
+          ],
+          "target": [
+            525.83,
+            76.56,
+            589.61,
+            149.9
+          ],
+          "reporting": [
+            589.61,
+            76.56,
+            657.07,
+            149.9
+          ],
+          "cspReference": [
+            657.07,
+            76.56,
+            739.28,
+            149.9
+          ],
+          "otherPlans": [
+            739.28,
+            76.56,
+            805.39,
+            149.9
+          ]
+        },
+        "originalColumns": {
+          "action": {
+            "normalizedTextDigest": "sha256:fba46f4cb55f3482dd64a25558c615d7d6f52450671756d7376ef9547d832577",
+            "normalizedCharacterCount": 57
+          },
+          "serviceStandard": {
+            "normalizedTextDigest": "sha256:07335ad78020a9ec1cc4244f45f5fba068e46057f70ce395fd8ca0675a4f5d74",
+            "normalizedCharacterCount": 50
+          },
+          "regulatory": {
+            "normalizedTextDigest": "sha256:23fa807cde17d10635f59ab3b65e74b76eaa1bb85847130edbe8548b390931db",
+            "normalizedCharacterCount": 85
+          },
+          "target": {
+            "normalizedTextDigest": "sha256:453ee677fd91503cd99d0dfe59e5cd25011ddada78bd325b6b74aeef144edb38",
+            "normalizedCharacterCount": 38
+          },
+          "reporting": {
+            "normalizedTextDigest": "sha256:9b11f6b707d2a03e0265465f32520bc1bc213de121de958539662d0ec1453fcb",
+            "normalizedCharacterCount": 7
+          },
+          "cspReference": {
+            "normalizedTextDigest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba",
+            "normalizedCharacterCount": 3
+          },
+          "otherPlans": {
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "normalizedCharacterCount": 3
+          }
+        }
+      },
+      "relations": [
+        {
+          "type": "EXPLICIT_DOCUMENT_REFERENCE",
+          "targetId": "csoi:knowledge:csp2035:strategy:8.2",
+          "locator": "OP PDF/printed page74; daily-testing; CSP Link Strategy Action column"
+        }
+      ]
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:service-requests",
+      "kind": "Activity",
+      "category": "WATER_ACTIVITY",
+      "code": "service-requests",
+      "parentId": "csoi:knowledge:op2026:water:programme",
+      "title": "Water and wastewater service requests",
+      "summary": "The published response target refers to the Customer Service Charter and cites two CSP strategies; actual response results are absent.",
+      "locator": "OP 2026–2027 PDF/printed page 74; service-requests",
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          218.77,
+          805.39,
+          253.71
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedAction": "Respond to service requests",
+        "programmeSection": "Reactive general services",
+        "printedServiceLevel": {
+          "sourceCellDigest": "sha256:0ddcd72691f6f245c1233b267304fe7cbacf056fbb55952ada48993d05e61886",
+          "representation": "Authored typed facts in serviceStandards; original prose not redistributed."
+        },
+        "serviceStandards": [
+          {
+            "measure": "responses consistent with Customer Service Charter",
+            "comparator": "UNKNOWN",
+            "comparisonBasis": "Source prints a nominal80% value without a comparison sign; no equality or minimum rule is inferred.",
+            "value": 80,
+            "unit": "percent",
+            "denominator": "water and wastewater service requests",
+            "period": "charter interval not separately verified"
+          }
+        ],
+        "printedRegulatory": "N",
+        "regulatoryInterpretation": "Published table classification only. N, benchmarked and named legislation do not establish current statutory applicability.",
+        "target": {
+          "printed": "80%",
+          "meaning": "PUBLISHED_PLAN_TARGET_NOT_ACTUAL_RESULT"
+        },
+        "printedReportingFrequency": "Monthly",
+        "reportingFrequency": "Monthly",
+        "printedCspReferences": [
+          "8.2",
+          "12.2"
+        ],
+        "sourceCspCodes": [
+          "8.2",
+          "12.2"
+        ],
+        "printedOtherPlans": "Customer Service Charter",
+        "otherPlanDocumentVersions": "UNKNOWN_NOT_SEPARATELY_VERIFIED",
+        "resourceAllocation": "UNKNOWN",
+        "budgetOrSpendAllocatedToThisActivity": "UNKNOWN",
+        "originalColumnBounds": {
+          "action": [
+            36.5,
+            218.77,
+            226.77,
+            253.71
+          ],
+          "serviceStandard": [
+            226.77,
+            218.77,
+            463.46,
+            253.71
+          ],
+          "regulatory": [
+            463.46,
+            218.77,
+            532.91,
+            253.71
+          ],
+          "target": [
+            532.91,
+            218.77,
+            588.19,
+            253.71
+          ],
+          "reporting": [
+            588.19,
+            218.77,
+            655.65,
+            253.71
+          ],
+          "cspReference": [
+            655.65,
+            218.77,
+            737.86,
+            253.71
+          ],
+          "otherPlans": [
+            737.86,
+            218.77,
+            805.39,
+            253.71
+          ]
+        },
+        "originalColumns": {
+          "action": {
+            "normalizedTextDigest": "sha256:c77b8ae4a17461748715581f0aba0b14115eda04e5a55b90358f9bc7e657f16c",
+            "normalizedCharacterCount": 27
+          },
+          "serviceStandard": {
+            "normalizedTextDigest": "sha256:0ddcd72691f6f245c1233b267304fe7cbacf056fbb55952ada48993d05e61886",
+            "normalizedCharacterCount": 121
+          },
+          "regulatory": {
+            "normalizedTextDigest": "sha256:8ce86a6ae65d3692e7305e2c58ac62eebd97d3d943e093f577da25c36988246b",
+            "normalizedCharacterCount": 1
+          },
+          "target": {
+            "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+            "normalizedCharacterCount": 3
+          },
+          "reporting": {
+            "normalizedTextDigest": "sha256:9b11f6b707d2a03e0265465f32520bc1bc213de121de958539662d0ec1453fcb",
+            "normalizedCharacterCount": 7
+          },
+          "cspReference": {
+            "normalizedTextDigest": "sha256:a18eacc8c687ded516097ab49e9ffba1488a02457d7d59a14f4b310bf14a87a7",
+            "normalizedCharacterCount": 8
+          },
+          "otherPlans": {
+            "normalizedTextDigest": "sha256:6e0907926728a3574e8b5e5c48164f748d0e4b4d75ddad7c59281b34185862d6",
+            "normalizedCharacterCount": 24
+          }
+        }
+      },
+      "relations": [
+        {
+          "type": "EXPLICIT_DOCUMENT_REFERENCE",
+          "targetId": "csoi:knowledge:csp2035:strategy:8.2",
+          "locator": "OP PDF/printed page74; service-requests; CSP Link Strategy Action column"
+        },
+        {
+          "type": "EXPLICIT_DOCUMENT_REFERENCE",
+          "targetId": "csoi:knowledge:csp2035:strategy:12.2",
+          "locator": "OP PDF/printed page74; service-requests; CSP Link Strategy Action column"
+        }
+      ]
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:water-incidents",
+      "kind": "Activity",
+      "category": "WATER_ACTIVITY",
+      "code": "water-incidents",
+      "parentId": "csoi:knowledge:op2026:water:programme",
+      "title": "Water incidents and interruptions",
+      "summary": "One action has two KPI subrows: response time and unplanned interruptions. Its repeated 8.2 labels are one distinct strategy reference for this action.",
+      "locator": "OP 2026–2027 PDF/printed page 74; water-incidents",
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          322.58,
+          805.39,
+          373.26
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedAction": "Respond to water incidents",
+        "programmeSection": "Reactive water operations",
+        "printedServiceLevel": {
+          "sourceCellDigest": "sha256:4a6a96855e7cc79c4bcb4cd9734b9cb3289adc470dbbdbb699252d7896bed7e4",
+          "representation": "Authored typed facts in serviceStandards; original prose not redistributed."
+        },
+        "serviceStandards": [
+          {
+            "measure": "average water-incident response",
+            "comparator": "<",
+            "value": 4,
+            "unit": "hours",
+            "denominator": "water incidents",
+            "period": "response duration"
+          },
+          {
+            "measure": "unplanned water interruptions",
+            "comparator": "<",
+            "value": 50,
+            "unit": "count",
+            "denominator": "1000 connections",
+            "period": "year"
+          }
+        ],
+        "printedRegulatory": "N Benchmarked as an Local Water Utility",
+        "regulatoryInterpretation": "Published table classification only. N, benchmarked and named legislation do not establish current statutory applicability.",
+        "target": {
+          "printed": "- -",
+          "meaning": "NOT_STATED_DASH; do not replace with zero or infer from KPI"
+        },
+        "printedReportingFrequency": "- -",
+        "reportingFrequency": "UNKNOWN_NOT_STATED_DASH",
+        "printedCspReferences": [
+          "8.2",
+          "8.2"
+        ],
+        "sourceCspCodes": [
+          "8.2"
+        ],
+        "printedOtherPlans": "Nil Nil",
+        "otherPlanDocumentVersions": "UNKNOWN_NOT_SEPARATELY_VERIFIED",
+        "resourceAllocation": "UNKNOWN",
+        "budgetOrSpendAllocatedToThisActivity": "UNKNOWN",
+        "originalColumnBounds": {
+          "action": [
+            36.5,
+            322.58,
+            226.77,
+            373.26
+          ],
+          "serviceStandard": [
+            226.77,
+            322.58,
+            463.46,
+            373.26
+          ],
+          "regulatory": [
+            463.46,
+            322.58,
+            532.91,
+            373.26
+          ],
+          "target": [
+            532.91,
+            322.58,
+            588.19,
+            373.26
+          ],
+          "reporting": [
+            588.19,
+            322.58,
+            655.65,
+            373.26
+          ],
+          "cspReference": [
+            655.65,
+            322.58,
+            737.86,
+            373.26
+          ],
+          "otherPlans": [
+            737.86,
+            322.58,
+            805.39,
+            373.26
+          ]
+        },
+        "originalColumns": {
+          "action": {
+            "normalizedTextDigest": "sha256:968762925c57de230598d08f24a44894df277d39cd7dd7f003b3724979c697a6",
+            "normalizedCharacterCount": 26
+          },
+          "serviceStandard": {
+            "normalizedTextDigest": "sha256:4a6a96855e7cc79c4bcb4cd9734b9cb3289adc470dbbdbb699252d7896bed7e4",
+            "normalizedCharacterCount": 125
+          },
+          "regulatory": {
+            "normalizedTextDigest": "sha256:9e4808ddb2807fa2bec97d4ff1ffb74ba673ddae1a7bd0f6f247a74dfe64ca45",
+            "normalizedCharacterCount": 39
+          },
+          "target": {
+            "normalizedTextDigest": "sha256:be9388cce5b5cd2d93dd2483af6be4960cb842868b622cf6fe912cf9b4db4e92",
+            "normalizedCharacterCount": 3
+          },
+          "reporting": {
+            "normalizedTextDigest": "sha256:be9388cce5b5cd2d93dd2483af6be4960cb842868b622cf6fe912cf9b4db4e92",
+            "normalizedCharacterCount": 3
+          },
+          "cspReference": {
+            "normalizedTextDigest": "sha256:26d1b79dbd5173f37a7fbfbcbed84a9cdafa3b423d6d151cfd62625cb8c5d659",
+            "normalizedCharacterCount": 7
+          },
+          "otherPlans": {
+            "normalizedTextDigest": "sha256:f436299d2cf3ad85ee6c172b61b965379ff01d98fe3b71228ec522b66e607d89",
+            "normalizedCharacterCount": 7
+          }
+        }
+      },
+      "relations": [
+        {
+          "type": "EXPLICIT_DOCUMENT_REFERENCE",
+          "targetId": "csoi:knowledge:csp2035:strategy:8.2",
+          "locator": "OP PDF/printed page74; water-incidents; CSP Link Strategy Action column"
+        }
+      ]
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:reactive-repairs",
+      "kind": "Activity",
+      "category": "WATER_ACTIVITY",
+      "code": "reactive-repairs",
+      "parentId": "csoi:knowledge:op2026:water:programme",
+      "title": "Reactive potable-water plant repairs",
+      "summary": "The planning KPI gives an average response-time threshold for incidents involving reticulated plant and equipment; the target cell is a dash.",
+      "locator": "OP 2026–2027 PDF/printed page 74; reactive-repairs",
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          373.26,
+          805.39,
+          398.61
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedAction": "Undertake reactive repairs to reticulated potable water plant and equipment",
+        "programmeSection": "Reactive water operations",
+        "printedServiceLevel": {
+          "sourceCellDigest": "sha256:7a68663059e7b49806c64937c73eccb273025074eeba9851195d5ce1eb0bd8f7",
+          "representation": "Authored typed facts in serviceStandards; original prose not redistributed."
+        },
+        "serviceStandards": [
+          {
+            "measure": "average incident response for reticulated water plant and equipment",
+            "comparator": "<",
+            "value": 4,
+            "unit": "hours",
+            "denominator": "relevant water incidents",
+            "period": "response duration"
+          }
+        ],
+        "printedRegulatory": "N",
+        "regulatoryInterpretation": "Published table classification only. N, benchmarked and named legislation do not establish current statutory applicability.",
+        "target": {
+          "printed": "-",
+          "meaning": "NOT_STATED_DASH; do not replace with zero or infer from KPI"
+        },
+        "printedReportingFrequency": "-",
+        "reportingFrequency": "UNKNOWN_NOT_STATED_DASH",
+        "printedCspReferences": [
+          "8.2"
+        ],
+        "sourceCspCodes": [
+          "8.2"
+        ],
+        "printedOtherPlans": "Nil",
+        "otherPlanDocumentVersions": "UNKNOWN_NOT_SEPARATELY_VERIFIED",
+        "resourceAllocation": "UNKNOWN",
+        "budgetOrSpendAllocatedToThisActivity": "UNKNOWN",
+        "originalColumnBounds": {
+          "action": [
+            36.5,
+            373.26,
+            226.77,
+            398.61
+          ],
+          "serviceStandard": [
+            226.77,
+            373.26,
+            463.46,
+            398.61
+          ],
+          "regulatory": [
+            463.46,
+            373.26,
+            532.91,
+            398.61
+          ],
+          "target": [
+            532.91,
+            373.26,
+            588.19,
+            398.61
+          ],
+          "reporting": [
+            588.19,
+            373.26,
+            655.65,
+            398.61
+          ],
+          "cspReference": [
+            655.65,
+            373.26,
+            737.86,
+            398.61
+          ],
+          "otherPlans": [
+            737.86,
+            373.26,
+            805.39,
+            398.61
+          ]
+        },
+        "originalColumns": {
+          "action": {
+            "normalizedTextDigest": "sha256:60b58b022088112f41a5de8c3f9c18cf9dca4edd17ae3d32866fb8c99fda6cbe",
+            "normalizedCharacterCount": 75
+          },
+          "serviceStandard": {
+            "normalizedTextDigest": "sha256:7a68663059e7b49806c64937c73eccb273025074eeba9851195d5ce1eb0bd8f7",
+            "normalizedCharacterCount": 90
+          },
+          "regulatory": {
+            "normalizedTextDigest": "sha256:8ce86a6ae65d3692e7305e2c58ac62eebd97d3d943e093f577da25c36988246b",
+            "normalizedCharacterCount": 1
+          },
+          "target": {
+            "normalizedTextDigest": "sha256:3973e022e93220f9212c18d0d0c543ae7c309e46640da93a4a0314de999f5112",
+            "normalizedCharacterCount": 1
+          },
+          "reporting": {
+            "normalizedTextDigest": "sha256:3973e022e93220f9212c18d0d0c543ae7c309e46640da93a4a0314de999f5112",
+            "normalizedCharacterCount": 1
+          },
+          "cspReference": {
+            "normalizedTextDigest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba",
+            "normalizedCharacterCount": 3
+          },
+          "otherPlans": {
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "normalizedCharacterCount": 3
+          }
+        }
+      },
+      "relations": [
+        {
+          "type": "EXPLICIT_DOCUMENT_REFERENCE",
+          "targetId": "csoi:knowledge:csp2035:strategy:8.2",
+          "locator": "OP PDF/printed page74; reactive-repairs; CSP Link Strategy Action column"
+        }
+      ]
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:quality-complaints",
+      "kind": "Activity",
+      "category": "WATER_ACTIVITY",
+      "code": "quality-complaints",
+      "parentId": "csoi:knowledge:op2026:water:programme",
+      "title": "Investigate water-quality complaints",
+      "summary": "The published measure is a complaint-investigation count, with monthly reporting and no numeric target supplied in the target cell.",
+      "locator": "OP 2026–2027 PDF/printed page 74; quality-complaints",
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          398.61,
+          805.39,
+          414.35
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedAction": "Investigate water quality complaints",
+        "programmeSection": "Reactive water operations",
+        "printedServiceLevel": {
+          "sourceCellDigest": "sha256:dba2d250e4c361de02361d7fb24b6088efd4d147a666ebb4b72e9e1141631ad9",
+          "representation": "Authored typed facts in serviceStandards; original prose not redistributed."
+        },
+        "serviceStandards": [
+          {
+            "measure": "water-quality complaints investigated",
+            "comparator": "UNKNOWN",
+            "value": "UNKNOWN",
+            "unit": "count",
+            "denominator": "UNKNOWN",
+            "period": "UNKNOWN"
+          }
+        ],
+        "printedRegulatory": "N",
+        "regulatoryInterpretation": "Published table classification only. N, benchmarked and named legislation do not establish current statutory applicability.",
+        "target": {
+          "printed": "-",
+          "meaning": "NOT_STATED_DASH; do not replace with zero or infer from KPI"
+        },
+        "printedReportingFrequency": "Monthly",
+        "reportingFrequency": "Monthly",
+        "printedCspReferences": [
+          "8.2"
+        ],
+        "sourceCspCodes": [
+          "8.2"
+        ],
+        "printedOtherPlans": "Nil",
+        "otherPlanDocumentVersions": "UNKNOWN_NOT_SEPARATELY_VERIFIED",
+        "resourceAllocation": "UNKNOWN",
+        "budgetOrSpendAllocatedToThisActivity": "UNKNOWN",
+        "originalColumnBounds": {
+          "action": [
+            36.5,
+            398.61,
+            226.77,
+            414.35
+          ],
+          "serviceStandard": [
+            226.77,
+            398.61,
+            463.46,
+            414.35
+          ],
+          "regulatory": [
+            463.46,
+            398.61,
+            532.91,
+            414.35
+          ],
+          "target": [
+            532.91,
+            398.61,
+            588.19,
+            414.35
+          ],
+          "reporting": [
+            588.19,
+            398.61,
+            655.65,
+            414.35
+          ],
+          "cspReference": [
+            655.65,
+            398.61,
+            737.86,
+            414.35
+          ],
+          "otherPlans": [
+            737.86,
+            398.61,
+            805.39,
+            414.35
+          ]
+        },
+        "originalColumns": {
+          "action": {
+            "normalizedTextDigest": "sha256:4e1079526999e5102f4355ecb124b86051f8b0344857deecd37d54c1e2de1e3c",
+            "normalizedCharacterCount": 36
+          },
+          "serviceStandard": {
+            "normalizedTextDigest": "sha256:dba2d250e4c361de02361d7fb24b6088efd4d147a666ebb4b72e9e1141631ad9",
+            "normalizedCharacterCount": 47
+          },
+          "regulatory": {
+            "normalizedTextDigest": "sha256:8ce86a6ae65d3692e7305e2c58ac62eebd97d3d943e093f577da25c36988246b",
+            "normalizedCharacterCount": 1
+          },
+          "target": {
+            "normalizedTextDigest": "sha256:3973e022e93220f9212c18d0d0c543ae7c309e46640da93a4a0314de999f5112",
+            "normalizedCharacterCount": 1
+          },
+          "reporting": {
+            "normalizedTextDigest": "sha256:9b11f6b707d2a03e0265465f32520bc1bc213de121de958539662d0ec1453fcb",
+            "normalizedCharacterCount": 7
+          },
+          "cspReference": {
+            "normalizedTextDigest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba",
+            "normalizedCharacterCount": 3
+          },
+          "otherPlans": {
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "normalizedCharacterCount": 3
+          }
+        }
+      },
+      "relations": [
+        {
+          "type": "EXPLICIT_DOCUMENT_REFERENCE",
+          "targetId": "csoi:knowledge:csp2035:strategy:8.2",
+          "locator": "OP PDF/printed page74; quality-complaints; CSP Link Strategy Action column"
+        }
+      ]
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:sewer-maintenance",
+      "kind": "Activity",
+      "category": "WATER_ACTIVITY",
+      "code": "sewer-maintenance",
+      "parentId": "csoi:knowledge:op2026:water:programme",
+      "title": "Sewer network and equipment maintenance",
+      "summary": "A programme-completion percentage appears in the service KPI column while the separate target and reporting cells contain dashes.",
+      "locator": "OP 2026–2027 PDF/printed page 74; sewer-maintenance",
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          483.22,
+          805.39,
+          508.56
+        ]
+      },
+      "facts": {
+        "sourceYear": "2026–27",
+        "planPeriodLabel": "Operational Plan 2026–2027",
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Document year label retained; exact service observation dates and reporting cutoffs not established by selected rows."
+        },
+        "sourceType": "PUBLISHED_OPERATIONAL_PLAN",
+        "actualExecution": "UNKNOWN",
+        "actualOutput": "UNKNOWN",
+        "actualSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "Source names a water/wastewater manager role; an authorised individual assignment is not established.",
+        "actualCouncilAssignment": "NOT_CREATED",
+        "humanReview": "PENDING",
+        "computability": "NOT_COMPUTABLE",
+        "carbonContribution": "UNKNOWN_NO_CAUSAL_EVIDENCE",
+        "relationshipMeaning": "Explicit source-table reference only; not legal applicability, completed implementation or causal environmental benefit.",
+        "printedAction": "Operate and maintain sewer network and equipment",
+        "programmeSection": "Planned wastewater operations",
+        "printedServiceLevel": {
+          "sourceCellDigest": "sha256:3d86ad57ae46d85aea919fffd5108b902486bcc0d5a350a43e8072ff686c2c53",
+          "representation": "Authored typed facts in serviceStandards; original prose not redistributed."
+        },
+        "serviceStandards": [
+          {
+            "measure": "sewer network and equipment maintenance programme achieved",
+            "comparator": "UNKNOWN",
+            "comparisonBasis": "Source prints a nominal80% value without a comparison sign; no equality or minimum rule is inferred.",
+            "value": 80,
+            "unit": "percent",
+            "denominator": "maintenance programme",
+            "period": "UNKNOWN"
+          }
+        ],
+        "printedRegulatory": "N",
+        "regulatoryInterpretation": "Published table classification only. N, benchmarked and named legislation do not establish current statutory applicability.",
+        "target": {
+          "printed": "-",
+          "meaning": "NOT_STATED_DASH; do not replace with zero or infer from KPI"
+        },
+        "printedReportingFrequency": "-",
+        "reportingFrequency": "UNKNOWN_NOT_STATED_DASH",
+        "printedCspReferences": [
+          "8.2"
+        ],
+        "sourceCspCodes": [
+          "8.2"
+        ],
+        "printedOtherPlans": "Nil",
+        "otherPlanDocumentVersions": "UNKNOWN_NOT_SEPARATELY_VERIFIED",
+        "resourceAllocation": "UNKNOWN",
+        "budgetOrSpendAllocatedToThisActivity": "UNKNOWN",
+        "originalColumnBounds": {
+          "action": [
+            36.5,
+            483.22,
+            226.77,
+            508.56
+          ],
+          "serviceStandard": [
+            226.77,
+            483.22,
+            460.63,
+            508.56
+          ],
+          "regulatory": [
+            460.63,
+            483.22,
+            530.08,
+            508.56
+          ],
+          "target": [
+            530.08,
+            483.22,
+            588.19,
+            508.56
+          ],
+          "reporting": [
+            588.19,
+            483.22,
+            655.65,
+            508.56
+          ],
+          "cspReference": [
+            655.65,
+            483.22,
+            737.86,
+            508.56
+          ],
+          "otherPlans": [
+            737.86,
+            483.22,
+            805.39,
+            508.56
+          ]
+        },
+        "originalColumns": {
+          "action": {
+            "normalizedTextDigest": "sha256:55053a11a8b3bdd8a617b6d70add39b8345a35bb0149941c15a6f6b0a892b794",
+            "normalizedCharacterCount": 48
+          },
+          "serviceStandard": {
+            "normalizedTextDigest": "sha256:3d86ad57ae46d85aea919fffd5108b902486bcc0d5a350a43e8072ff686c2c53",
+            "normalizedCharacterCount": 66
+          },
+          "regulatory": {
+            "normalizedTextDigest": "sha256:8ce86a6ae65d3692e7305e2c58ac62eebd97d3d943e093f577da25c36988246b",
+            "normalizedCharacterCount": 1
+          },
+          "target": {
+            "normalizedTextDigest": "sha256:3973e022e93220f9212c18d0d0c543ae7c309e46640da93a4a0314de999f5112",
+            "normalizedCharacterCount": 1
+          },
+          "reporting": {
+            "normalizedTextDigest": "sha256:3973e022e93220f9212c18d0d0c543ae7c309e46640da93a4a0314de999f5112",
+            "normalizedCharacterCount": 1
+          },
+          "cspReference": {
+            "normalizedTextDigest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba",
+            "normalizedCharacterCount": 3
+          },
+          "otherPlans": {
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "normalizedCharacterCount": 3
+          }
+        }
+      },
+      "relations": [
+        {
+          "type": "EXPLICIT_DOCUMENT_REFERENCE",
+          "targetId": "csoi:knowledge:csp2035:strategy:8.2",
+          "locator": "OP PDF/printed page74; sewer-maintenance; CSP Link Strategy Action column"
+        }
+      ]
+    }
+  ]
+}

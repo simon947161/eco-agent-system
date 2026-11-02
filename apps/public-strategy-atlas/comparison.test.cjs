@@ -72,6 +72,13 @@ const field=(comparison,name)=>comparison.checks.find(c=>c.field===name);
  await check('inert public source text stays data, source state and unknowns are retained',async()=>{
   const inert=clone(B);inert.nodes[0].detail='<img src=x onerror=alert(1)> literal public fixture';const c=await E.compareRecords(inert,{left:{id:'csp'},right:{id:'water'}});assert.equal(c.left.record.detail,inert.nodes[0].detail);assert.equal(c.arithmetic,'NOT_PERFORMED');assert.equal(c.officialRelationship,'UNKNOWN');assert.equal(field(c,'sourceRevision').status,'UNKNOWN');
  });
+ await check('verified comparison transaction isolates caller and result mutations, retains exact output and rejects tampered input',async()=>{
+  const source=clone(d),session=await E.comparisonSession(source),request={left:{id:'synthetic-water-budget'},right:{id:'synthetic-water-spend'}},expected=await E.compareRecords(d,request);
+  source.domain.entities.find(e=>e.id==='synthetic-water-spend').data.value=1;
+  const first=await session.compareRecords(request);assert.deepEqual(first,expected);first.left.record.data.value=999;
+  assert.deepEqual(await session.compareRecords(request),expected);const pinned=await session.pinRecords([request.left,request.right]);pinned.records[0].record.data.value=999;assert.equal((await session.pinRecords([request.left])).records[0].record.data.value,30000);
+  await assert.rejects(()=>E.comparisonSession(source),/INVALID/);await assert.rejects(()=>session.pinRecords([]),/BOUNDS/);assert.equal(session.datasetDigest,before);
+ });
  assert.equal(await M.objectDigest(d),before);console.log('PASS dataset remains byte-identical after all comparisons');count++;
  console.log('comparison: '+count+' groups PASS');
 })().catch(error=>{console.error(error);process.exitCode=1;});

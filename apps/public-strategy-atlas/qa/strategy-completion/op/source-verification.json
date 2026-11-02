@@ -1,0 +1,438 @@
+{
+  "status": "PASS_TESTED_HERE",
+  "at": "2026-11-01T23:25:09.048576+00:00",
+  "sourceId": "csoi:smrc-op-2026:20261030",
+  "rawDigest": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "sourcePages": 142,
+  "selectedActivityPages": [
+    73,
+    74
+  ],
+  "recordsChecked": 11,
+  "activityRows": 8,
+  "sourceCellsChecked": 56,
+  "independentActionStartCensus": [
+    {
+      "page": 73,
+      "y": 415.91,
+      "firstWord": "Undertake"
+    },
+    {
+      "page": 73,
+      "y": 450.86,
+      "firstWord": "Provide"
+    },
+    {
+      "page": 74,
+      "y": 82.37,
+      "firstWord": "Daily"
+    },
+    {
+      "page": 74,
+      "y": 224.58,
+      "firstWord": "Respond"
+    },
+    {
+      "page": 74,
+      "y": 328.39,
+      "firstWord": "Respond"
+    },
+    {
+      "page": 74,
+      "y": 379.08,
+      "firstWord": "Undertake"
+    },
+    {
+      "page": 74,
+      "y": 404.42,
+      "firstWord": "Investigate"
+    },
+    {
+      "page": 74,
+      "y": 489.03,
+      "firstWord": "Operate"
+    }
+  ],
+  "distinctActionStrategyReferences": 9,
+  "printedCspOccurrences": 10,
+  "records": [
+    {
+      "id": "csoi:knowledge:op2026:water:activity:asset-maintenance",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 73,
+      "printedPage": 73,
+      "anchor": {
+        "pdfPage": 73,
+        "normalizedPageDigest": "sha256:6d5342fc7f934da70099eb4e1d4528805fd9344531443a1b1712e7dca054b9f2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          410.1,
+          805.39,
+          445.04
+        ]
+      },
+      "category": "WATER_ACTIVITY",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_COLUMNS_AND_BOUNDED_FACTS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Current applicability, actual execution and financial/activity allocations UNKNOWN; whole OP not extracted.",
+      "evidence": "qa/strategy-completion/op/source-verification.json",
+      "sourceCellChecks": 7
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:potable-water",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 73,
+      "printedPage": 73,
+      "anchor": {
+        "pdfPage": 73,
+        "normalizedPageDigest": "sha256:6d5342fc7f934da70099eb4e1d4528805fd9344531443a1b1712e7dca054b9f2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          445.04,
+          805.39,
+          521.22
+        ]
+      },
+      "category": "WATER_ACTIVITY",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_COLUMNS_AND_BOUNDED_FACTS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Current applicability, actual execution and financial/activity allocations UNKNOWN; whole OP not extracted.",
+      "evidence": "qa/strategy-completion/op/source-verification.json",
+      "sourceCellChecks": 7
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:daily-testing",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 74,
+      "printedPage": 74,
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          76.56,
+          805.39,
+          149.9
+        ]
+      },
+      "category": "WATER_ACTIVITY",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_COLUMNS_AND_BOUNDED_FACTS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Current applicability, actual execution and financial/activity allocations UNKNOWN; whole OP not extracted.",
+      "evidence": "qa/strategy-completion/op/source-verification.json",
+      "sourceCellChecks": 7
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:service-requests",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 74,
+      "printedPage": 74,
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          218.77,
+          805.39,
+          253.71
+        ]
+      },
+      "category": "WATER_ACTIVITY",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_COLUMNS_AND_BOUNDED_FACTS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Current applicability, actual execution and financial/activity allocations UNKNOWN; whole OP not extracted.",
+      "evidence": "qa/strategy-completion/op/source-verification.json",
+      "sourceCellChecks": 7
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:water-incidents",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 74,
+      "printedPage": 74,
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          322.58,
+          805.39,
+          373.26
+        ]
+      },
+      "category": "WATER_ACTIVITY",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_COLUMNS_AND_BOUNDED_FACTS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Current applicability, actual execution and financial/activity allocations UNKNOWN; whole OP not extracted.",
+      "evidence": "qa/strategy-completion/op/source-verification.json",
+      "sourceCellChecks": 7
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:reactive-repairs",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 74,
+      "printedPage": 74,
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          373.26,
+          805.39,
+          398.61
+        ]
+      },
+      "category": "WATER_ACTIVITY",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_COLUMNS_AND_BOUNDED_FACTS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Current applicability, actual execution and financial/activity allocations UNKNOWN; whole OP not extracted.",
+      "evidence": "qa/strategy-completion/op/source-verification.json",
+      "sourceCellChecks": 7
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:quality-complaints",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 74,
+      "printedPage": 74,
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          398.61,
+          805.39,
+          414.35
+        ]
+      },
+      "category": "WATER_ACTIVITY",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_COLUMNS_AND_BOUNDED_FACTS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Current applicability, actual execution and financial/activity allocations UNKNOWN; whole OP not extracted.",
+      "evidence": "qa/strategy-completion/op/source-verification.json",
+      "sourceCellChecks": 7
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:sewer-maintenance",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 74,
+      "printedPage": 74,
+      "anchor": {
+        "pdfPage": 74,
+        "normalizedPageDigest": "sha256:872d42f5ed699e2e65eef8567ccaeefda6d475be605a8a708da60a5dd8add31a",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36.5,
+          483.22,
+          805.39,
+          508.56
+        ]
+      },
+      "category": "WATER_ACTIVITY",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_COLUMNS_AND_BOUNDED_FACTS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Current applicability, actual execution and financial/activity allocations UNKNOWN; whole OP not extracted.",
+      "evidence": "qa/strategy-completion/op/source-verification.json",
+      "sourceCellChecks": 7
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:document",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 3,
+      "printedPage": 3,
+      "anchor": {
+        "pdfPage": 3,
+        "normalizedPageDigest": "sha256:31672cbcc26ef34dd2fd5fb94af1b9eef916dcde88e0f8fa57949325ddc5d321",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36,
+          35,
+          559,
+          810
+        ]
+      },
+      "category": "WATER_DOCUMENT",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_METADATA_OR_RESOURCE",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Programme staffing is not assigned hours/spend; authoritative current version UNKNOWN.",
+      "evidence": "qa/strategy-completion/op/source-verification.json"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:programme",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 73,
+      "printedPage": 73,
+      "anchor": {
+        "pdfPage": 73,
+        "normalizedPageDigest": "sha256:6d5342fc7f934da70099eb4e1d4528805fd9344531443a1b1712e7dca054b9f2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36,
+          35,
+          805,
+          328
+        ]
+      },
+      "category": "WATER_PROGRAM",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_METADATA_OR_RESOURCE",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Programme staffing is not assigned hours/spend; authoritative current version UNKNOWN.",
+      "evidence": "qa/strategy-completion/op/source-verification.json"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:staff-plan",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 73,
+      "printedPage": 73,
+      "anchor": {
+        "pdfPage": 73,
+        "normalizedPageDigest": "sha256:6d5342fc7f934da70099eb4e1d4528805fd9344531443a1b1712e7dca054b9f2",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          36,
+          220,
+          190,
+          262
+        ]
+      },
+      "category": "WATER_PLANNED_QUANTITY",
+      "extracted": "YES_BOUNDED_RESEARCH",
+      "implemented": "PENDING_PARENT_INTEGRATION",
+      "sourceVerified": "PASS_ORIGINAL_METADATA_OR_RESOURCE",
+      "semanticReview": "AI_ASSISTED_BOUNDED_REVIEW_NOT_FORMAL_ADMISSION",
+      "gap": "Programme staffing is not assigned hours/spend; authoritative current version UNKNOWN.",
+      "evidence": "qa/strategy-completion/op/source-verification.json"
+    }
+  ],
+  "references": [
+    {
+      "from": "csoi:knowledge:op2026:water:activity:asset-maintenance",
+      "to": "csoi:knowledge:csp2035:strategy:8.2",
+      "pdfPage": 73,
+      "printedOccurrencesInThisRow": 1,
+      "type": "EXPLICIT_DOCUMENT_REFERENCE",
+      "actualImplementation": "UNKNOWN",
+      "causalEffect": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "from": "csoi:knowledge:op2026:water:activity:potable-water",
+      "to": "csoi:knowledge:csp2035:strategy:8.2",
+      "pdfPage": 73,
+      "printedOccurrencesInThisRow": 1,
+      "type": "EXPLICIT_DOCUMENT_REFERENCE",
+      "actualImplementation": "UNKNOWN",
+      "causalEffect": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "from": "csoi:knowledge:op2026:water:activity:daily-testing",
+      "to": "csoi:knowledge:csp2035:strategy:8.2",
+      "pdfPage": 74,
+      "printedOccurrencesInThisRow": 1,
+      "type": "EXPLICIT_DOCUMENT_REFERENCE",
+      "actualImplementation": "UNKNOWN",
+      "causalEffect": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "from": "csoi:knowledge:op2026:water:activity:service-requests",
+      "to": "csoi:knowledge:csp2035:strategy:8.2",
+      "pdfPage": 74,
+      "printedOccurrencesInThisRow": 1,
+      "type": "EXPLICIT_DOCUMENT_REFERENCE",
+      "actualImplementation": "UNKNOWN",
+      "causalEffect": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "from": "csoi:knowledge:op2026:water:activity:service-requests",
+      "to": "csoi:knowledge:csp2035:strategy:12.2",
+      "pdfPage": 74,
+      "printedOccurrencesInThisRow": 1,
+      "type": "EXPLICIT_DOCUMENT_REFERENCE",
+      "actualImplementation": "UNKNOWN",
+      "causalEffect": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "from": "csoi:knowledge:op2026:water:activity:water-incidents",
+      "to": "csoi:knowledge:csp2035:strategy:8.2",
+      "pdfPage": 74,
+      "printedOccurrencesInThisRow": 2,
+      "type": "EXPLICIT_DOCUMENT_REFERENCE",
+      "actualImplementation": "UNKNOWN",
+      "causalEffect": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "from": "csoi:knowledge:op2026:water:activity:reactive-repairs",
+      "to": "csoi:knowledge:csp2035:strategy:8.2",
+      "pdfPage": 74,
+      "printedOccurrencesInThisRow": 1,
+      "type": "EXPLICIT_DOCUMENT_REFERENCE",
+      "actualImplementation": "UNKNOWN",
+      "causalEffect": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "from": "csoi:knowledge:op2026:water:activity:quality-complaints",
+      "to": "csoi:knowledge:csp2035:strategy:8.2",
+      "pdfPage": 74,
+      "printedOccurrencesInThisRow": 1,
+      "type": "EXPLICIT_DOCUMENT_REFERENCE",
+      "actualImplementation": "UNKNOWN",
+      "causalEffect": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "from": "csoi:knowledge:op2026:water:activity:sewer-maintenance",
+      "to": "csoi:knowledge:csp2035:strategy:8.2",
+      "pdfPage": 74,
+      "printedOccurrencesInThisRow": 1,
+      "type": "EXPLICIT_DOCUMENT_REFERENCE",
+      "actualImplementation": "UNKNOWN",
+      "causalEffect": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    }
+  ],
+  "wholeDocumentCoverage": "PARTIAL",
+  "sourceAdmission": "PENDING",
+  "originalBodyCommitted": false
+}

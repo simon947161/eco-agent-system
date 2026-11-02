@@ -1,0 +1,2701 @@
+{
+  "format": "CSOI_INDEPENDENT_BOUNDED_SEMANTIC_REVIEW_V1",
+  "date": "2026-11-01",
+  "reviewer": "independent AI research reviewer /root/source_semantic_review",
+  "method": "Manual AI reading of original PDF row/section extracts with source columns and cross-page continuations, followed by read-back of semantic corrections. Hashes bind reviewed artifacts; hashes/counts do not prove meaning. This JSON only serializes that reading; it does not automatically classify semantic truth.",
+  "sources": {
+    "csp": {
+      "pdfSha256": "dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "sourceId": "csoi:smrc-csp-full-2025:20261030",
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/smrc-csp-2035-endorsed-20250501.pdf"
+    },
+    "lsps": {
+      "pdfSha256": "9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "sourceId": "csoi:smrc-lsps-2020:20261030",
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/2/building-and-planning/strategic-planning/documents/snowy-monaro-local-strategic-planning-statement.pdf"
+    },
+    "op-water": {
+      "pdfSha256": "4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf"
+    }
+  },
+  "reviewedBundleSha256": {
+    "csp": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+    "lsps": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+    "op-water": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2"
+  },
+  "scope": {
+    "cspStrategyParaphrases": 44,
+    "lspsImplementationActions": 83,
+    "lspsDistinctConflictingIntentObservations": 18,
+    "opSelectedActivities": 8,
+    "totalItemReviews": 153
+  },
+  "limitations": [
+    "Bounded AI semantic comparison, not formal Council, legal, planning or scientific admission.",
+    "CSP objective/indicator cells are separately checked by the primary source worker; this independent153-item reading does not claim independent semantic review of every indicator or objective.",
+    "LSPS118-page inventory and134 numbered occurrences are not complete narrative, map, policy interaction or legal-applicability understanding. Unnumbered rationale and spatial conditions remain incompletely structured.",
+    "LSPS PDF43 adaptable-housing rationale distinguishes incentives from a universal requirement; PDF45 rural-residential narrative includes conflict, infrastructure and environmental/scenic considerations. Existing action summaries preserve encouragement/strategy conditions; no whole-chapter interpretation claimed.",
+    "OP is restricted to8 activities on PDF73–74, not all142pages or all water/wastewater/capital work.",
+    "UNKNOWN current applicability, actual work, expenditure and outcomes remain UNKNOWN.",
+    "Original PDFs and temporary full/row text used for comparison are not committed."
+  ],
+  "findings": [
+    {
+      "findingId": "SEM-CSP-12.1",
+      "document": "csp",
+      "ids": [
+        "csoi:knowledge:csp2035:strategy:12.1"
+      ],
+      "pdfPages": [
+        26
+      ],
+      "severity": "BOUNDED_QUALIFIER_OMISSION",
+      "issue": "The summary retained accessibility but omitted leadership visibility.",
+      "requiredCorrection": "Retain both visible and accessible leadership.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:csp2035:strategy:12.1": "Make leadership visible and accessible to the community."
+      }
+    },
+    {
+      "findingId": "SEM-LSPS-1.2",
+      "document": "lsps",
+      "ids": [
+        "csoi:knowledge:lsps2020:action:1.2"
+      ],
+      "pdfPages": [
+        90
+      ],
+      "severity": "GEOGRAPHIC_SCOPE_OMISSION",
+      "issue": "The generic town-controls summary omitted Bombala and Delegate; no separate location fact preserved them.",
+      "requiredCorrection": "Name Bombala and Delegate and retain built form, streetscape, heritage and visual quality.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:lsps2020:action:1.2": "Review development controls for Bombala and Delegate, addressing streetscape, built form, heritage significance and visual amenity."
+      }
+    },
+    {
+      "findingId": "SEM-LSPS-1.8",
+      "document": "lsps",
+      "ids": [
+        "csoi:knowledge:lsps2020:action:1.8"
+      ],
+      "pdfPages": [
+        91
+      ],
+      "severity": "GEOGRAPHIC_SCOPE_OMISSION",
+      "issue": "The heritage-controls summary omitted Nimmitabel.",
+      "requiredCorrection": "Name Nimmitabel; preserve compatible development, restoration and adaptive reuse.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:lsps2020:action:1.8": "Review Nimmitabel heritage controls for compatible development and encourage restoration and adaptive reuse of heritage items."
+      }
+    },
+    {
+      "findingId": "SEM-LSPS-4.2",
+      "document": "lsps",
+      "ids": [
+        "csoi:knowledge:lsps2020:action:4.2"
+      ],
+      "pdfPages": [
+        93
+      ],
+      "severity": "ACTION_SCOPE_OMISSION",
+      "issue": "The summary mentioned review but omitted updating the DCP and its subdivision-sustainability purpose.",
+      "requiredCorrection": "Retain both review and update, subdivision sustainability, and the four planning themes.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:lsps2020:action:4.2": "Review and update DCP provisions to improve subdivision sustainability, considering solar orientation, active transport, stormwater management and open space."
+      }
+    },
+    {
+      "findingId": "SEM-LSPS-5.2",
+      "document": "lsps",
+      "ids": [
+        "csoi:knowledge:lsps2020:action:5.2"
+      ],
+      "pdfPages": [
+        94
+      ],
+      "severity": "INSTRUMENT_AND_MODALITY_OMISSION",
+      "issue": "Removing preparation of a consolidated LEP made a planning action resemble a direct land-use restriction.",
+      "requiredCorrection": "State preparation of a consolidated LEP intended to prevent fragmentation and facilitate compatible rural/value-adding agriculture.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:lsps2020:action:5.2": "Prepare a consolidated LEP intended to prevent fragmentation of agricultural and resource land while facilitating compatible rural development and value-adding agriculture."
+      }
+    },
+    {
+      "findingId": "SEM-LSPS-5.3",
+      "document": "lsps",
+      "ids": [
+        "csoi:knowledge:lsps2020:action:5.3"
+      ],
+      "pdfPages": [
+        94
+      ],
+      "severity": "CORE_ACTIVITY_OMISSION",
+      "issue": "The diversification summary omitted agri-tourism, the specific investigation subject.",
+      "requiredCorrection": "Retain agri-tourism investigation and recommended land uses; keep figure19/28 geographic uncertainty explicit.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:lsps2020:action:5.3": "Investigate agri-tourism opportunities near the corridors shown in figures19 and28 and recommend land uses supporting farm innovation and diversification."
+      }
+    },
+    {
+      "findingId": "SEM-LSPS-6.7",
+      "document": "lsps",
+      "ids": [
+        "csoi:knowledge:lsps2020:action:6.7"
+      ],
+      "pdfPages": [
+        95
+      ],
+      "severity": "GEOGRAPHIC_SCOPE_OMISSION",
+      "issue": "Town-centre amenity summary omitted Berridale.",
+      "requiredCorrection": "Name Berridale; retain investigation and settlement-strategy context.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:lsps2020:action:6.7": "Investigate options for Berridale town-centre amenity and appearance through settlement-strategy work."
+      }
+    },
+    {
+      "findingId": "SEM-LSPS-11.6",
+      "document": "lsps",
+      "ids": [
+        "csoi:knowledge:lsps2020:action:11.6"
+      ],
+      "pdfPages": [
+        102
+      ],
+      "severity": "ACTION_SCOPE_OMISSION",
+      "issue": "Revisit hid the stated review-and-update action.",
+      "requiredCorrection": "Retain both review and update for controls, policies, guidelines and public-domain projects, with drought/water-availability purpose.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:lsps2020:action:11.6": "Review and update development controls, policies, guidelines and public-domain projects to improve water efficiency in response to drought and water availability."
+      }
+    },
+    {
+      "findingId": "SEM-LSPS-LOCAL-6.8",
+      "document": "lsps",
+      "ids": [
+        "csoi:knowledge:lsps2020:narrative-action:p71:6.8"
+      ],
+      "pdfPages": [
+        71
+      ],
+      "severity": "ANOMALY_SUMMARY_PRECISION",
+      "issue": "The anomaly summary called the proposed investigation generic amenity work.",
+      "requiredCorrection": "Clarify investigation of highway-services road-reserve options; preserve absence of code6.8 from the implementation table.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:lsps2020:narrative-action:p71:6.8": "The Berridale chapter labels investigation of highway-services road-reserve amenity options6.8, a code absent from the implementation table; related town-centre work appears there as6.7."
+      }
+    },
+    {
+      "findingId": "SEM-OP-BARE-PERCENT",
+      "document": "op-water",
+      "ids": [
+        "csoi:knowledge:op2026:water:activity:service-requests",
+        "csoi:knowledge:op2026:water:activity:sewer-maintenance",
+        "csoi:knowledge:op2026:water:activity:daily-testing"
+      ],
+      "pdfPages": [
+        74
+      ],
+      "severity": "INFERRED_COMPARATOR",
+      "issue": "Bare percentage values were encoded with equality comparators that are not printed. In particular80% must not imply an exact-equality acceptance rule.",
+      "requiredCorrection": "Retain80/100 and units; mark comparison direction unprinted/unknown, without inferring equality or a minimum threshold.",
+      "status": "CORRECTED_AND_READ_BACK_AGAINST_ORIGINAL",
+      "reviewedFinalParaphrases": {
+        "csoi:knowledge:op2026:water:activity:service-requests": "The published response target refers to the Customer Service Charter and cites two CSP strategies; actual response results are absent.",
+        "csoi:knowledge:op2026:water:activity:sewer-maintenance": "A programme-completion percentage appears in the service KPI column while the separate target and reporting cells contain dashes.",
+        "csoi:knowledge:op2026:water:activity:daily-testing": "The plan seeks completion of scheduled daily testing; monthly refers to reporting, not the testing interval."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "csoi:knowledge:csp2035:strategy:1.1",
+      "document": "csp",
+      "pdfPages": [
+        18
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "3307d600b018dcea13e86acbad2301ca16319150a04798f75d42e721e1e572f2",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Seek quality, accessible aged, disability and health services across different life stages.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:1.2",
+      "document": "csp",
+      "pdfPages": [
+        18
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "ede88eb779c5eab843df5486441e25b9483b923cf957f942d813a2d3e3e1f42d",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Support facilities that enable healthier ways of living.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:2.1",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "93f2e3b2d7a53227b5bd4d575441d58a6acc6a33bfc7649325bc6ad3e3a99714",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Maintain the region’s Aboriginal and wider cultural heritage.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:2.2",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "278fb2d6b6e85f426402a270962fd4f4a73742936dca3e046f91bf5c59515cbc",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Protect significant historic places, including museum settings.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:2.3",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "0df3bf5442e530f512a4a0724653263ccbec681e7d50525fa2ab24ab39b5494f",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Encourage people to share and participate in diverse cultures.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:2.4",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "be0c293dd56b903e6549b4cdcb9e3635410bbc27ccfb7fbc4cb1318039e71dbd",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Assist arts activity across the region.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:2.5",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "b950899d11f3a41bf3c7db0804513891e2f8e51437580c830ef49bc5d28238b0",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Support a varied programme of cultural and community events.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:3.1",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "3dbf1b580b9bf2690eac36e3cb0818be80af6352fca9b9df970c13af65384a01",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Encourage organisations to strengthen inclusion, respect and safety.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:3.2",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "7e86e43683e04ece23d69ef3d7a99fd9f3c1ec28dd7703aa7b95571be6998c19",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Promote preventive work against crime.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:3.3",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "4c694818aae4f74a22a8e70ced019148f233725004860d9198c597db605a6cc3",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Support volunteering programmes that assist people needing help.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:3.4",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "f0a951f33d1366988e8a6c76cf65ec47bdd7a045b1f4f40023e55a72f64408bc",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use jobs, education and social opportunities to help young people settle or remain locally.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:3.5",
+      "document": "csp",
+      "pdfPages": [
+        19
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "9de104ac6e2aa4d700d1634ce4745daa22ddba32b4311adc43e17eb9be269e4c",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Support policing activity that protects community safety.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:4.1",
+      "document": "csp",
+      "pdfPages": [
+        21
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "f65e2f6cfe68b8ed99a27d82d03e9f67683765517ae2cc5afc83d2bc4d7ce85d",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Improve the economic value of tourism.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:4.2",
+      "document": "csp",
+      "pdfPages": [
+        21
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "4695dfe86651a56faae1efcae1191ff99243ab37b09ea647691165ac3ebf2412",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Identify ways to expand manufacturing activity.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:4.3",
+      "document": "csp",
+      "pdfPages": [
+        21
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "59f419cc00712df90e16ae002bb72090e15544409198ed3236f368324824fd4e",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Help local businesses and industries remain successful and resilient.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:4.4",
+      "document": "csp",
+      "pdfPages": [
+        21
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "e455a11b4f859de4c3bead9044e12daad630a1d11f5bd01061e84d384b828a39",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Support good education choices and vocational pathways.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:5.1",
+      "document": "csp",
+      "pdfPages": [
+        21
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "7a2283a9833827a77535b6ad71dff98af546ceea027920ade3aff0b6848213a5",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use regional strengths and opportunities to improve economic stability and development.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:5.2",
+      "document": "csp",
+      "pdfPages": [
+        21
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "d555d84ec4807eacea7678dba7a035a014036e15a6e324f2f923b33fa55045b8",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Plan for a range of housing types that responds to demand.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:5.3",
+      "document": "csp",
+      "pdfPages": [
+        21
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "6e927b0ec154869b5ce370c1bf70d05d7e7f5c63369dd5150fbff5e8043471f2",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Encourage jobs that add greater economic value.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:6.1",
+      "document": "csp",
+      "pdfPages": [
+        22
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "5a4cd3d88668386ae8a6a7546ef7dc81d50db46b54d1a3f27ee7325d8f06edf3",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Observe environmental assets so protection needs can be identified; this is not a carbon-calculation rule.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:6.2",
+      "document": "csp",
+      "pdfPages": [
+        22
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "47ea386f6b1585cc699b79367abccfd18aeaea52459cb87f08ca83ec40319d89",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prevent degradation, restore damaged places and manage pressures on vulnerable environments, including invasive species, to preserve biodiversity.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:6.3",
+      "document": "csp",
+      "pdfPages": [
+        22
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "d4fa3a304947d2d329c5a717595da1135e8059fd6420e8b1cb8ee87a336c5356",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Encourage collective environmental care and sustainable practices.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:7.1",
+      "document": "csp",
+      "pdfPages": [
+        23
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "d136841806f3a9fcdccb6b1f728979d3a2cde24a43926ba2ecc1c99beff705d1",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use land-use plans to guide development sensitive to environmental and heritage values.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:7.2",
+      "document": "csp",
+      "pdfPages": [
+        23
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "35ac06289d1545684dacd5f048339e72133e7aa5fb1933ca52957e42682c867c",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Plan recreation and open spaces to limit harm and improve environmental sustainability.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:7.3",
+      "document": "csp",
+      "pdfPages": [
+        23
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "6634f32a73a30ebddfdd948a17437f2a651d2379c021fd3261388383ccfb6218",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use planning to sustain local lifestyles while balancing development.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:7.4",
+      "document": "csp",
+      "pdfPages": [
+        23
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "e1cd02ab4e5904eb082cd390644d421aa4f5b72d45953e169522c803ec50e078",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Identify important agricultural and forestry land and support its continued productive use.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:8.1",
+      "document": "csp",
+      "pdfPages": [
+        24
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "2480350c867437b237a53a3b6db761ada29a79c50502ee349ce7625739712750",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Advocate modern, equipped medical facilities that meet community needs.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:8.2",
+      "document": "csp",
+      "pdfPages": [
+        24
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "5a7730347a4db1929fc89b3efba040479126eacc57453a8c13a0b5289fc3c9e3",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Maintain water and wastewater infrastructure and its ability to accommodate regional growth.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:8.3",
+      "document": "csp",
+      "pdfPages": [
+        24
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "921faeeb76e03ab129b43032b53c510d1b9cd7e3af99a47ed81f3d4d8d940c40",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use facilities, services and programmes to manage waste streams efficiently.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:9.1",
+      "document": "csp",
+      "pdfPages": [
+        25
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "a3779a674901858b501ad43d44e2c48e649a2ac0911f4d17592bc96548f7823d",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Maintain transport infrastructure so travel needs can be met safely.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:9.2",
+      "document": "csp",
+      "pdfPages": [
+        25
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "27be08c24d943743fabbe1037863180a8c8e1e7ca05ebf57e35f8a99ea6c44bc",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Align future transport services with changing regional demand.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:9.3",
+      "document": "csp",
+      "pdfPages": [
+        25
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "fd0a4b981ce3bfdaa21c1512b530b0c5ae8d10790b5002a586864721a2ea70e0",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Improve existing transport assets to support sustainable growth and connectivity.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:10.1",
+      "document": "csp",
+      "pdfPages": [
+        25
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "70359a50434ddedd906193a6d0c067854e336ed2ce6b7c0e4d5bbabcf7a63fca",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Develop digital networks for changing needs and growth, with resilience and security.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:11.1",
+      "document": "csp",
+      "pdfPages": [
+        25
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "6815ae93aeaf6edd572482ad2d73bdbb93ad2de475f8ca0a48e85a6226eb6adc",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Make public buildings and facilities usable by all people.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:11.2",
+      "document": "csp",
+      "pdfPages": [
+        25
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "c8c6103e0d14deec844139ceffd6be231d1931b6298720c4b681d8f396c02d56",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Plan the infrastructure needed to support communities.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:11.3",
+      "document": "csp",
+      "pdfPages": [
+        25
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "e615dd706e8a2ae44569bebffa5a4a179cc69c5821a92555c4da2c3cf12e8292",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Develop regional trails and accessible shared pathways.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:11.4",
+      "document": "csp",
+      "pdfPages": [
+        25
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "48f6b6ea66081e035baba2e7a850b89aa46a679bc8fca18e4e96c322a1e48517",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Keep sporting and leisure facilities in good condition.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:12.1",
+      "document": "csp",
+      "pdfPages": [
+        26
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "6a14ca6423ed2e2850c937468bc160cf14f8318342e9f8f6f99beb33babf1beb",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "Make leadership visible and accessible to the community.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [
+        "SEM-CSP-12.1"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:12.2",
+      "document": "csp",
+      "pdfPages": [
+        26
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "fd754488d61c152da31e7975ebb9e7f497d916ee27eab2c19cd0a4a4469b2991",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Establish and apply agreed public-service standards.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:12.3",
+      "document": "csp",
+      "pdfPages": [
+        26
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "ed5d3e49d5f26d2205369a476cdbd5fabd98cb0a7d979f98512358b192ece008",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Manage Council resources, systems and processes with sound governance.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:13.1",
+      "document": "csp",
+      "pdfPages": [
+        27
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "a5452282c700d2271a3a7881cf51c7dcea25ab65d85cb49756d02ec849ef15b1",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use engagement strategies to consult stakeholders effectively.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:13.2",
+      "document": "csp",
+      "pdfPages": [
+        27
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "649923ddfb057a888d5bbdee717e9a423022ac1b535a46082936b7ecfd54d43b",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Offer different consultation mechanisms so stakeholders can provide input.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:13.3",
+      "document": "csp",
+      "pdfPages": [
+        27
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "d8a38ba5dc45e4066fe816496399798167dc534b709c85e5f8a0c0aa69415a34",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Communicate relevant information about matters affecting stakeholders in time to be useful.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:csp2035:strategy:14.1",
+      "document": "csp",
+      "pdfPages": [
+        27
+      ],
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "reviewedBundleSha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "reviewedSummarySha256": "92706866f346dc56375b5adbb5415b013c418828b959d2506ff624ab31e0a5e3",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Maintain up-to-date strategies for major community issues.",
+      "semanticFocus": "Original strategy intent and separate role/partner columns read; summary preserves bounded planning intent without claiming delivery, legal duty or environmental result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:1.1",
+      "document": "lsps",
+      "pdfPages": [
+        90
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "9837448dc25a761e39b72873db44adf75b67f8dbf7f0e4f0f13fa708afa56e9d",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Study regional Aboriginal heritage with Ngarigo and local land-council participation, then pursue the study actions.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:1.2",
+      "document": "lsps",
+      "pdfPages": [
+        90
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "9517b086ad03be1badeea1ee77ca2458c7e8ebead5f353a5dd14b6fc6371e98d",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "Review development controls for Bombala and Delegate, addressing streetscape, built form, heritage significance and visual amenity.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [
+        "SEM-LSPS-1.2"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:1.3",
+      "document": "lsps",
+      "pdfPages": [
+        91
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "b87ba10587a5af088f0c34efe06eca66b2e1f5d78d7c67cb930a8afb3980935b",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Re-examine controls applying to Cooma heritage conservation areas.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:1.4",
+      "document": "lsps",
+      "pdfPages": [
+        91
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "4c0c29c3f049179a5f5b77b1974fb5af145cb96a4d0d6bd780615133e64ef3dc",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare a region-wide heritage strategy.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:1.5",
+      "document": "lsps",
+      "pdfPages": [
+        91
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "b7b1461f0c7b2b8652968836901e62d24407deb264872144d19317edd972063b",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Advance Bundian Way with Eden Aboriginal Land Council, Ngarigo representatives and Delegate Progress Association.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:1.6",
+      "document": "lsps",
+      "pdfPages": [
+        91
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "60ec853608e17c260e89d6f5995e3d5aef7f6c9d4429c9e08620bcd57c3b976c",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Establish a heritage conservation area for Maybe Street, informed by the heritage study.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:1.7",
+      "document": "lsps",
+      "pdfPages": [
+        91
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "f56a36f62b8aa48bbf46d2421ac48ac38037617f144a8c2de2d35ef2f778b4bb",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use a heritage conservation area to retain Delegate main-street character.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:1.8",
+      "document": "lsps",
+      "pdfPages": [
+        91
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "37c969ed52700002c6ad8fe8b535307c009ac36b1266202d14978104bdc5fd5e",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "Review Nimmitabel heritage controls for compatible development and encourage restoration and adaptive reuse of heritage items.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [
+        "SEM-LSPS-1.8"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:2.1",
+      "document": "lsps",
+      "pdfPages": [
+        92
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "40531d21f62ec2c071e8f2f86c626bade78d8619336f966b7c38f7cdfb6f9753",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Identify valued scenic areas for protection through the LEP and DCP.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:2.2",
+      "document": "lsps",
+      "pdfPages": [
+        92
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "7810c39fe442c65f01f3f291332fecb808a8801f5e6296147af5fcf9aab226a0",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare rural land-use strategy work that addresses the visual importance of the regional landscape.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:2.3",
+      "document": "lsps",
+      "pdfPages": [
+        92
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "e81bf1d73c0caf4b01765a51fc2ccdcf12fc70c86a9af88749ff3d13d06e3d10",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Implement planning controls governing the form and scale of permissible rural development.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:3.1",
+      "document": "lsps",
+      "pdfPages": [
+        92
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "1943b9963f4970152d78aa388f7a95c89b1f817546f76fdb6255af6d7d1c4ea1",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use rural-land and biodiversity studies to inform zones and local LEP provisions.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:3.2",
+      "document": "lsps",
+      "pdfPages": [
+        92
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "5ea32a07e014848a122a27292ed605b16f73f414773a5fc8b302deef8ebe4f88",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Complete and put a comprehensive koala management plan into operation as a historical planning intention.",
+      "semanticFocus": "Implementation Koala-plan intent preserved separately from narrative3.2 ecosystem-protection intent.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:3.3",
+      "document": "lsps",
+      "pdfPages": [
+        92
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "bbb363f587f90fa286b6f1059ef84f04859007e0b5abb90234eea8a88b02462a",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare planning controls intended to protect rivers and other waterways against pollution.",
+      "semanticFocus": "Waterway-pollution controls preserved; narrative3.3 Koala intent remains a separate observation.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:3.4",
+      "document": "lsps",
+      "pdfPages": [
+        92
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "733cce606f647bf4fac8da77004cb436c728e010f4825a2f343d7852657eaa0c",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Explore local domestic-animal management options for Jindabyne.",
+      "semanticFocus": "Jindabyne domestic-animal intent is not replaced by narrative3.4 waterway intent.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:3.5",
+      "document": "lsps",
+      "pdfPages": [
+        92
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "ea8aeaac8e744ef920abf543524733f3ea3aa56580b06a1804988450648bfa88",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Coordinate with the NSW Government on a koala management plan under the then-described Koala SEPP.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:4.1",
+      "document": "lsps",
+      "pdfPages": [
+        93
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "5d613ab2ae3eb035254726da5273144fad65c6512773ea13691ab9d3b4fecc59",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Examine Council greenhouse-gas emissions to identify improvement opportunities; no resulting inventory is supplied here.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:4.2",
+      "document": "lsps",
+      "pdfPages": [
+        93
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "4521c93036099dea921b794039a503f0f7859e706f5d942c83f1e8110a1d1505",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "Review and update DCP provisions to improve subdivision sustainability, considering solar orientation, active transport, stormwater management and open space.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [
+        "SEM-LSPS-4.2"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:4.3",
+      "document": "lsps",
+      "pdfPages": [
+        93
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "85b7d1ef8da572a0cfed4e4626088d6ab5bd07744552033f3c298ac45ad3ba04",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Expand the amount and variety of planting in public streets, parks and spaces.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:4.4",
+      "document": "lsps",
+      "pdfPages": [
+        93
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "32f56f812341671a87d1ccd4ca4e39b09a8e870045cb43602d5dc193bedb9aa5",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Implementation wording calls for best-practice stormwater design, including tanks for non-potable reuse; narrative wording is less mandatory.",
+      "semanticFocus": "Implementation requirement and less-mandatory narrative wording remain distinguished; no present legal obligation inferred.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:4.5",
+      "document": "lsps",
+      "pdfPages": [
+        93
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "4ecdd758884ec01d510d244c1cced78d08ecc77b5198f813748fb0cae76014b9",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Explore agroforestry and its possible carbon-offset role without treating a potential benefit as measured reduction.",
+      "semanticFocus": "Agroforestry encouragement does not establish offsets already created or scientifically admitted.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:4.6",
+      "document": "lsps",
+      "pdfPages": [
+        93
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "eb46699a709c28dad6b4a6429a5d04f3e5b91ce7c7e6fbd88e61e48a5b78a247",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Map areas considered unsuitable for large renewable-energy development because of ecological or scenic values.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:5.1",
+      "document": "lsps",
+      "pdfPages": [
+        94
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "f06f7094aba0ce93558a719466e60b67e1a669e5b6ea0ea748e8c9b5061083ab",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare a detailed regional rural land-use strategy.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:5.2",
+      "document": "lsps",
+      "pdfPages": [
+        94
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "b7d7336ae856ee386ada17172eae5d52e6f17d537794f2d3ab21a912da6296bd",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "Prepare a consolidated LEP intended to prevent fragmentation of agricultural and resource land while facilitating compatible rural development and value-adding agriculture.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [
+        "SEM-LSPS-5.2"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:5.3",
+      "document": "lsps",
+      "pdfPages": [
+        94
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "4c92e1c5fb1de749c45f1b358592fb18e88a1d3c96569bdc407bddf767791bd8",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "Investigate agri-tourism opportunities near the corridors shown in figures19 and28 and recommend land uses supporting farm innovation and diversification.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [
+        "SEM-LSPS-5.3"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:5.4",
+      "document": "lsps",
+      "pdfPages": [
+        94
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "f14b7830739f1b31f6b148196568a0acefe641fbdf7f0dbec0c23a8d2543032f",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Investigate locations and planning controls for productive intensive-agriculture precincts.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:5.5",
+      "document": "lsps",
+      "pdfPages": [
+        94
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "af4d325c0d7f264d8f1797edb7376b96afe99145dc6d68209a9ee41f30480da1",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use section10.7 planning certificates to inform prospective rural purchasers about agricultural priorities.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:6.1",
+      "document": "lsps",
+      "pdfPages": [
+        94
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "1d18ffbb16234e765963713577bb54950a173b478f1515aa996d266abc0eca81",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Analyse how much industrial and employment land is needed for prospective growth.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:6.2",
+      "document": "lsps",
+      "pdfPages": [
+        95
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "1cbcb8cd425229738f94e97d0073fc810ed9c7a1343f72a24fcdfd0f70f6a81a",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Revisit controls for shared offices and collaboration suited to a mobile, flexible workforce.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:6.3",
+      "document": "lsps",
+      "pdfPages": [
+        95
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "333d44015b35cdb653d8558fb54fabc9fc3d3411c301c74dede976966baf7b79",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Plan upgrades in Polo Flat, Cooma, intended to support further industrial investment.",
+      "semanticFocus": "Polo Flat plan belongs to implementation6.3; local6.4 observation is not silently renumbered.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:6.4",
+      "document": "lsps",
+      "pdfPages": [
+        95
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "009272e96dad39453bdcd61de90859d58309a7f17a5873839cc8cafad4f3cdc5",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Identify public sites in major towns that could accommodate business or industry investment.",
+      "semanticFocus": "Government-owned investment-site identification is distinct from local6.4 Polo Flat plan.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:6.5",
+      "document": "lsps",
+      "pdfPages": [
+        95
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "5069d5e0e60572715458a548f73274f6faa4062eb67244ccb7759eca1a842d45",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare a masterplan to guide the future of the Cooma central business district.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:6.6",
+      "document": "lsps",
+      "pdfPages": [
+        95
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "4456448de8bc95c36da8c40d656008df8f8af4225955ef3f53b7392a20b86757",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Locate candidate Cooma sites suitable for businesses or industries needing large floor areas.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:6.7",
+      "document": "lsps",
+      "pdfPages": [
+        95
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "24df9167c9e13e33e107ce5afba54b15193cb2890ddd1dc2849f75b3c2ce1489",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "Investigate options for Berridale town-centre amenity and appearance through settlement-strategy work.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [
+        "SEM-LSPS-6.7"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:7.1",
+      "document": "lsps",
+      "pdfPages": [
+        95,
+        96
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "60b385a72402d77955acf839b7aa781cb9c477be7e48dfe4e345e37adc373843",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Assess current and potential uses of the Alpine Way corridor through KNP and the suitability of tourism planning controls.",
+      "semanticFocus": "Tourism-activity continuation on PDF96 read with PDF95; review is not permission already granted.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:7.2",
+      "document": "lsps",
+      "pdfPages": [
+        96
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "15fca2b94d1230868099c95442ac3495df3aa72683ed9812f2c65eabf3978dd1",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Investigate ways of funding tourism, including possible levies.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:7.3",
+      "document": "lsps",
+      "pdfPages": [
+        96
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "16c62e1dd5046af3115d2581086e98572b79ba626a69100a96abec08b11ea38d",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Identify control changes supporting varied tourism development and propose a planning-reform lead.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:7.4",
+      "document": "lsps",
+      "pdfPages": [
+        96
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "d5202cfc5e0e51b17971bcc03d03978bba3b3608f1bc11f11e5c50a3ed249bf2",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Broaden tourism activities in Jindabyne and the Snowy Mountains across the year.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:7.5",
+      "document": "lsps",
+      "pdfPages": [
+        96
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "97f758eafd9b1d1b177a9010f9a22f734304904adc8899cfcf6452c6293f2799",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Develop a regional masterplan for trails.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.1",
+      "document": "lsps",
+      "pdfPages": [
+        97
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "732dd4ac9a4fd16cd60b5e9fbf69ba8be1cc1eea694c3692e258630acec10d05",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare the LEP and supporting documents around differing community, locality and landscape needs.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.2",
+      "document": "lsps",
+      "pdfPages": [
+        97
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "3a56ee99decf9b7d64941a2c9108fa141c02382379932c28d0752f5b48e2acd5",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Review State environmental-planning proposals and provide feedback or seek exclusions where warranted.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.3",
+      "document": "lsps",
+      "pdfPages": [
+        97
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "c0e6c4516e437c8338bda00e4b8ae018e0a09a388523e811295291d1e636a4b2",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare settlement direction for distinct towns and villages using the stated planning priorities and objectives.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.4",
+      "document": "lsps",
+      "pdfPages": [
+        97
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "7bb37fa698316c39118790e81c13f13180664ea514a5063623e0799ee3cfc8b0",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use controls to support varied alpine design and environmental performance in Jindabyne.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.5",
+      "document": "lsps",
+      "pdfPages": [
+        97
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "15e219f95a9de4e8b2a65102561059f12aaffb87e9fb88565ddff5dbc8655f0b",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Examine Berridale zoning and potential surrounding growth.",
+      "semanticFocus": "Berridale zoning/growth review is not a completed rezoning or Michelago structure plan.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.6",
+      "document": "lsps",
+      "pdfPages": [
+        97
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "7838d485611acbfd54524301b8d370e9080efbe19813b70dc25cd796e4b4ac74",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare a structure plan to guide future Michelago growth.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.7",
+      "document": "lsps",
+      "pdfPages": [
+        98
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "ee5427d937a41d44f7870ea66bd51e8e3554bee00a7aada552833875362749f3",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare rural-land strategy direction responsive to different landscapes.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.8",
+      "document": "lsps",
+      "pdfPages": [
+        98
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "4cf2e5c9cc294e97f1b87936a247ef334598ce20bfaa66bd68e1ba892a7ff213",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare tailored DCP chapters for maintaining and enhancing village character.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.9",
+      "document": "lsps",
+      "pdfPages": [
+        98
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "adcb682870993375202e43085757f774c425a6129ba5bbaff0233e4065e7e9fb",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Plan for future community recreation needs through a recreation strategy.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:8.10",
+      "document": "lsps",
+      "pdfPages": [
+        98
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "0532834e39e5ffe353261effb2360be570461509f90acecbfa0d7638816f93c6",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "The plan proposes completing the final Stronger Communities Fund stage at Therry Street Pocket Park; completion is unverified.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:9.1",
+      "document": "lsps",
+      "pdfPages": [
+        98
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "134187cb9206570a986ef417954294db4662ff66e38b6f64024ce94076eed5d2",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Rezone greenfield land following settlement-strategy staging and sequencing.",
+      "semanticFocus": "Greenfield rezoning intention remains conditional on settlement-strategy staging/sequencing; no actual rezoning inferred.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:9.2",
+      "document": "lsps",
+      "pdfPages": [
+        98
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "36193c5cd4c1c6acdece5af8e933ae7935f9131a14a888469eafe1967e685985",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Review and update settlement planning against community housing needs and demand.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:9.3",
+      "document": "lsps",
+      "pdfPages": [
+        98,
+        99
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "f234c46aa4d7d780ad607d484f0aea0771472d497429e7e15934d6dbaffa5c3c",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Consider the final Snowy Mountains SAP with government and community participation to widen housing options around Jindabyne.",
+      "semanticFocus": "Final SAP consideration, government/community cooperation and Jindabyne surrounds retained; PDF99 continuation checked.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:9.4",
+      "document": "lsps",
+      "pdfPages": [
+        99
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "b909ae9e79ef9840a664c52b6dda7c74bdc4ffef15410504c41e43c67df1d5fb",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Support adaptable housing through relevant planning instruments and controls.",
+      "semanticFocus": "Encouragement of adaptable housing is not a requirement for all housing. PDF43 narrative explicitly distinguishes incentives.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:9.5",
+      "document": "lsps",
+      "pdfPages": [
+        99
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "5fc304804ae69ecbfa702aed84eb1c1f73e269043f69b6cc85cfc177c83ecf57",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Plan rural-residential locations consistently with land-use strategies and the regional plan.",
+      "semanticFocus": "Rural residential provision retains appropriate-location and land-use strategy/regional-plan conditions.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:9.6",
+      "document": "lsps",
+      "pdfPages": [
+        99
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "b09e70fb4afb7042965dbfedbf1bd019006a29aad6a10a7cb5e64e1d2fd6f61e",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use controls to reduce conflicts between rural housing and primary production.",
+      "semanticFocus": "Controls target potential rural-residential/primary-production conflict; local5.7 remains separately identified.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.1",
+      "document": "lsps",
+      "pdfPages": [
+        100
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "aaccb42d7b4c4167e58c0ced3a0bce56eaea23092491c5f695fd7c98f6929b03",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Develop integrated regional transport and access planning.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.2",
+      "document": "lsps",
+      "pdfPages": [
+        100
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "e8e73261ed6982d176af181b1b0bea36f961bf836b239ffca72e120f383cce2d",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Develop and implement a strategy for footpaths and shared paths.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.3",
+      "document": "lsps",
+      "pdfPages": [
+        100
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "e2e30af37cd8bbbabba5eb978ce1c81e7b7c3201bff7b3f5ba8a8c91e27e0737",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Develop and implement pedestrian access and mobility planning.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.4",
+      "document": "lsps",
+      "pdfPages": [
+        100
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "860d8ee1abe6fb984c42d87b5c99107871136b7f837e4c3f65d1012290a54cf0",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Explore a Monaro rail trail on the Bombala rail corridor and retain rail reinstatement as a conditional option if viable.",
+      "semanticFocus": "Rail reinstatement retains if-viable condition; investigation/support is not an approved railway project.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.5",
+      "document": "lsps",
+      "pdfPages": [
+        100
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "e0fc2431c87788fba42309e65bf1baf6df13ea809dd7f0d0234d850406aeb13f",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Engage NSW and ACT authorities on improvements to the nine named road corridors.",
+      "semanticFocus": "Nine road names retained in namedRoads rather than lost behind generic summary.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.6",
+      "document": "lsps",
+      "pdfPages": [
+        100,
+        101
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "961a92b71910ac3e89d22f5c1c7eecd5b6ecb0762ea8accb0567f624124c3dd3",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Work with NSW and the Snowy Mountains SAP team on Jindabyne traffic and parking problems.",
+      "semanticFocus": "Jindabyne continuation on PDF101 checked; NSW/SAP coordination retained.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.7",
+      "document": "lsps",
+      "pdfPages": [
+        101
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "139b7cc443d7bf3c8bc57cfef4dd79fbc17e66e0eba98175790355fc7f19abb0",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Investigate heavy-vehicle alternatives for Cooma, Bombala and Berridale; the core narrative also mentions a Jindabyne bypass investigation.",
+      "semanticFocus": "Implementation three-town heavy-vehicle scope distinguished from narrative Jindabyne bypass mention.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.8",
+      "document": "lsps",
+      "pdfPages": [
+        101
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "93368f0581c5832a2615dc6b769aa0a2a6eb8f543b166a0243bdf62f610d8049",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Explore safer, more accessible pedestrian movement and better traffic permeability in central Cooma.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.9",
+      "document": "lsps",
+      "pdfPages": [
+        101
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "4b09a978b74edda36f05fe1b5cc97b9c702bd751ab1bf061ae8dc908314b7e65",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Improve amenity along Maybe Street as a published intention.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.10",
+      "document": "lsps",
+      "pdfPages": [
+        101
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "1ccb597a4db380cdffbd65eba4d6b7276cfb56786029dc431d20a0d0bfd2b9b5",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare a development-contributions plan for roads, recreation, active transport and community infrastructure.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:10.11",
+      "document": "lsps",
+      "pdfPages": [
+        101
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "893fe213e3d3c5e49063310b639dbf99daa40c2fb2d53bff90940777ce5e5a73",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Include the identified causeway and road upgrades in a Michelago development-contributions plan.",
+      "semanticFocus": "Causeway/road names retained in facts; Michelago contribution-plan action distinct from regional10.10.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:11.1",
+      "document": "lsps",
+      "pdfPages": [
+        101
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "d7fc182d97686e96b389f1dbf204d5512b2aeee14bfc5ca081661f1b6ed477e2",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Update mapping to represent bushfire exposure, including grassland risk.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:11.2",
+      "document": "lsps",
+      "pdfPages": [
+        102
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "4400691b09da7e5a65fd88fe11a65b5fcc5e7b9ed2fc1463d6522d8389188ea8",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Translate flood-risk management plans for five named settlements into planning controls.",
+      "semanticFocus": "Five flood-plan settlements retained in namedLocations; no current flood zoning inferred.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:11.3",
+      "document": "lsps",
+      "pdfPages": [
+        102
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "c991f849e1186d6efa7adaf8c455a1a2ae26c6134a50478ceaddf478b34f4733",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Assess land-use compatibility with hazards, giving specific consideration to hospitals, schools and aged-care facilities.",
+      "semanticFocus": "Compatibility assessment retains sensitive uses including hospitals, schools and aged care.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:11.4",
+      "document": "lsps",
+      "pdfPages": [
+        102
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "a9d00127c516ec46e7382cf52ae317ded7f983d413ccada68c41104bad2ec619",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Use Snowy Hydro flood information for planning near lakes Jindabyne and Eucumbene.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:11.5",
+      "document": "lsps",
+      "pdfPages": [
+        102
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "ac20d237e596ee340b789a1f7f3af75fcb2ab2366178c14b82df866db8846280",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Develop integrated water-cycle management planning.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:11.6",
+      "document": "lsps",
+      "pdfPages": [
+        102
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "6a0806477e11aa2906568235138098669657d870070c5efda08c3ca7f25e5675",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "Review and update development controls, policies, guidelines and public-domain projects to improve water efficiency in response to drought and water availability.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [
+        "SEM-LSPS-11.6"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:11.7",
+      "document": "lsps",
+      "pdfPages": [
+        102
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "7170ce5fe908351f69a6350191e23d3deb5f04a721dae4fec3292fc14d85547f",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Map landslide exposure and develop associated planning controls.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:11.8",
+      "document": "lsps",
+      "pdfPages": [
+        102
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "6d3dfa6c5062ad8896e2b64c5e66afd497b0a1c9b1b0bdca6c1a488a0133f2eb",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Review DCP design provisions in light of shade guidance.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:11.9",
+      "document": "lsps",
+      "pdfPages": [
+        102,
+        103
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "5f94936e45f13d0b10b9d56d88424d542330ab6a85651201327f2b7afbae2437",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Review development controls against Heart Foundation themes for healthy active ageing.",
+      "semanticFocus": "Healthy active ageing continuation on PDF103 read with PDF102.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:12.1",
+      "document": "lsps",
+      "pdfPages": [
+        103
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "b8df3c60b4d8aca099f75b742760ee6bade1666a51b1ea98339180cbbf67585f",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare a policy setting out alternative regional population-change scenarios.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:12.2",
+      "document": "lsps",
+      "pdfPages": [
+        103
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "43461de0541fdb4b141fea90a4b03bd4d94e56888162174e7000ab9c3c2fcd0b",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Investigate Michelago water and wastewater options; the core narrative names water only.",
+      "semanticFocus": "Implementation water-and-wastewater scope distinguished from narrative water-only wording.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:12.3",
+      "document": "lsps",
+      "pdfPages": [
+        103
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "2c7e73a8a267182e2cec9f7a647ae8f55c602d562f9b93fe79fa9ab2e2bd5b1f",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Assess infrastructure needs in places including Jindabyne and Berridale and work with NSW on provision.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:12.4",
+      "document": "lsps",
+      "pdfPages": [
+        103
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "c69c0d4cf272307b942bb90240eaf02a97249a013bd1ed1435b9c679ce960ad0",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Direct and encourage growth toward existing infrastructure capacity through strategic plans.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:12.5",
+      "document": "lsps",
+      "pdfPages": [
+        103
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "74b1482fbb776d5712dff09b3d8a0d02dddf9302013c3840cb50e64e6c5120ea",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Prepare a business-investment portfolio and a policy aimed at long-term residents.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:12.6",
+      "document": "lsps",
+      "pdfPages": [
+        103
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "769e6c1bf19d6fb42d28dea1d47572ee812d95506f1bbd3007128af076c19e28",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Investigate with electricity providers effective ways to expand Berridale system capacity.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:12.7",
+      "document": "lsps",
+      "pdfPages": [
+        104
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "7ecfbea4b706631968ef28d5f1c0202d8cf5b045679d8763aa7f06dd0f31923d",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Investigate sewage-treatment upgrades against anticipated Berridale growth.",
+      "semanticFocus": "Investigation of Berridale sewage-treatment options is not an upgrade already funded or delivered.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:action:12.8",
+      "document": "lsps",
+      "pdfPages": [
+        104
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "83ba2e6d6bf4f875afabddd7a20733da0a0ff8b2ac0ca1375246e5b446a7e543",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Investigate potable-water options for Old Adaminaby.",
+      "semanticFocus": "Original action subject, scope and modality read alongside institutional attribution; historical plan is not a current assignment, funded execution or observed result.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p27:3.2",
+      "document": "lsps",
+      "pdfPages": [
+        27
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "ba567aba77ad1dc1f9c9ff71a1f6bc732fe74b32d94483781f92cf23510d3ef1",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The core narrative associates code3.2 with protection of high-value land and aquatic ecosystems; the implementation table uses that code for koala planning.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p27:3.3",
+      "document": "lsps",
+      "pdfPages": [
+        27
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "90e155e03a1f99a35f5620e065ccd80a104774d763601bbbdfbcd1d9c9d7c524",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The narrative assigns koala-plan completion to3.3, whereas the implementation table assigns it to3.2.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p27:3.4",
+      "document": "lsps",
+      "pdfPages": [
+        27
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "85838436ceb2c7d202f7f403998b47fcaecd9e5c08f44d03e90c9e68f629d0a7",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The narrative uses3.4 for waterway-pollution controls; implementation3.4 instead concerns domestic animals in Jindabyne.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p34:5.4",
+      "document": "lsps",
+      "pdfPages": [
+        34
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "2cb280c38605c1d7a3241d0d5de8f66e4e0789f8b88e09f7adf5a3b0ee79eb8d",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "Narrative5.4 concerns links between agriculture and suitable rural tourism; implementation5.4 concerns intensive-agriculture precincts.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p42:8.1",
+      "document": "lsps",
+      "pdfPages": [
+        42
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "303fc65c41c8c0456dd3a4c4de3c5d54383cfc61aba4bf3778d614dd72b79d83",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "Narrative8.1 calls for a rural-land strategy tailored to different landscapes; implementation8.1 refers to an LEP and supporting planning documents.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p59:6.4",
+      "document": "lsps",
+      "pdfPages": [
+        59
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "c27dd17629211213dc023f5271a6269ffb85a1717e25a871a97d604b192cc412",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Cooma chapter labels the Polo Flat upgrade plan6.4; implementation6.4 instead identifies government sites and6.3 covers Polo Flat.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p59:6.6",
+      "document": "lsps",
+      "pdfPages": [
+        59
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "2a8d0944d4a1ac2f479f82108f68ad8e4267112316df5c5c65428ffbe3af1849",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Cooma chapter uses6.6 for its CBD masterplan; implementation6.6 instead concerns large-floor-area sites.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p59:6.7",
+      "document": "lsps",
+      "pdfPages": [
+        59
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "9a93697179dcc20109bba1439ec4fe2181bd4850658498e709d192ed8b5150aa",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Cooma chapter labels large-floor-area business sites6.7; implementation6.7 instead concerns Berridale centre amenity.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p64:7.1",
+      "document": "lsps",
+      "pdfPages": [
+        64
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "4f887aeb6864fd8acb8dc21e96e60dc92c9564198fb60d9030b647fc88bececb",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Jindabyne chapter uses7.1 for congestion coordination with NSW; implementation7.1 concerns the Alpine Way tourism corridor.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p64:7.2",
+      "document": "lsps",
+      "pdfPages": [
+        64
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "28d3945c725b97b5133031fa2205775b2393e8561e9f69cddaa6724661180b04",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Jindabyne chapter labels the Alpine Way corridor review7.2; implementation7.2 concerns tourism funding.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p64:8.5",
+      "document": "lsps",
+      "pdfPages": [
+        64
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "78993d9bdfffb0dd70dccd27e1e6f58639a8bac9c0b19e7151640310ff5699d3",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Jindabyne chapter uses8.5 for alpine architecture controls; implementation8.5 concerns Berridale zoning.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p64:12.6",
+      "document": "lsps",
+      "pdfPages": [
+        64
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "2bffea0695043a49aaa5bd37c1ef76bc988be76d416bb8f71d1bb19fca32a8ee",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Jindabyne chapter uses12.6 for masterplan/SAP infrastructure coordination; implementation12.6 concerns Berridale electricity.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p71:6.8",
+      "document": "lsps",
+      "pdfPages": [
+        71
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "8ddb449004d6e62dbdc2fab1c9ad2d0fd2c8e9dc9b139749a51ce29d2a34c9ed",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "The Berridale chapter labels investigation of highway-services road-reserve amenity options6.8, a code absent from the implementation table; related town-centre work appears there as6.7.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [
+        "SEM-LSPS-LOCAL-6.8"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p71:8.6",
+      "document": "lsps",
+      "pdfPages": [
+        71
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "c47b3075b5c85a5f2e422f35d5d9388cee3a5a78478f0675da3a81e5003104ad",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Berridale chapter labels zoning/growth review8.6; implementation8.6 is a Michelago structure plan.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p74:8.7",
+      "document": "lsps",
+      "pdfPages": [
+        74
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "ae5a984c262208c34b26eab179c048d8e953b0acb36337ed5203f85e9d589621",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Michelago chapter labels its structure plan8.7; implementation8.7 instead concerns rural-land strategy.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p74:10.10",
+      "document": "lsps",
+      "pdfPages": [
+        74
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "ab7040c638f84ee31586b35134c4da474152f31c6581c903196b8a23e49fff75",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The Michelago chapter labels specific road/causeway contributions10.10; implementation10.10 is the regional plan and10.11 carries the Michelago works.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p83:8.9",
+      "document": "lsps",
+      "pdfPages": [
+        83
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "d7ccf21d8b6abd52b3eb78539ccd70337a35c8573a4121b3836ad5b800bdb34d",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The village chapter labels local-character DCP chapters8.9; implementation8.9 concerns recreation and8.8 covers village chapters.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:lsps2020:narrative-action:p89:5.7",
+      "document": "lsps",
+      "pdfPages": [
+        89
+      ],
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "reviewedBundleSha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "reviewedSummarySha256": "c468ca9f8b02e1986cb6c7e3647e198d04891ef7e0065d9b09ec68992107a407",
+      "semanticStatus": "CONFLICT_REPRESENTED_NOT_RESOLVED",
+      "reviewedMeaning": "The rural chapter labels conflict controls5.7, a code absent from the implementation table; the corresponding general action is listed there as9.6.",
+      "semanticFocus": "Original section and implementation-code meaning compared; difference is preserved as an observation, not an authoritative replacement action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:asset-maintenance",
+      "document": "op-water",
+      "pdfPages": [
+        73
+      ],
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "reviewedBundleSha256": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+      "reviewedSummarySha256": "c3b10f0981b68c9837ddde212b8fc0af8ec8ed8c43ab355f068c9a13b86a6711",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "Planned maintenance is described against an annual main-break rate and a separate annual count target.",
+      "semanticFocus": "<15 breaks/100km/year and separate<47pa count target are not converted or treated as achieved.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:potable-water",
+      "document": "op-water",
+      "pdfPages": [
+        73
+      ],
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "reviewedBundleSha256": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+      "reviewedSummarySha256": "1abe5cc1fcd2613874928754b8db62df62def5bd241afad7e1d5d9466926b3f0",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "The service plan uses a connection-based complaint rate and a separate annual complaint-count target.",
+      "semanticFocus": "<20 complaints/1000connections/year and separate<175pa target remain distinct; legal applicability UNKNOWN.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:daily-testing",
+      "document": "op-water",
+      "pdfPages": [
+        74
+      ],
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "reviewedBundleSha256": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+      "reviewedSummarySha256": "4bb3a025a892c2021440d69252135c23310d0b093f32fb97048bfaf3412ca034",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "The plan seeks completion of scheduled daily testing; monthly refers to reporting, not the testing interval.",
+      "semanticFocus": "Scheduled daily testing and monthly reporting are distinct;100% is a published intended value, not a measured outcome.",
+      "findingIds": [
+        "SEM-OP-BARE-PERCENT"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:service-requests",
+      "document": "op-water",
+      "pdfPages": [
+        74
+      ],
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "reviewedBundleSha256": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+      "reviewedSummarySha256": "f760ab39e84b886e7fb500376828e05e5fdf1771f7ea9f1b3c5ee27e69129efa",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "The published response target refers to the Customer Service Charter and cites two CSP strategies; actual response results are absent.",
+      "semanticFocus": "Water/wastewater request denominator and unverified Charter interval retained; two CSP references are not causal or legal admission.",
+      "findingIds": [
+        "SEM-OP-BARE-PERCENT"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:water-incidents",
+      "document": "op-water",
+      "pdfPages": [
+        74
+      ],
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "reviewedBundleSha256": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+      "reviewedSummarySha256": "8dec8feb2121afcf3d04e7c263c3a61693150379ab914f18e72c2096dbd8d6a7",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "One action has two KPI subrows: response time and unplanned interruptions. Its repeated 8.2 labels are one distinct strategy reference for this action.",
+      "semanticFocus": "Two KPI subrows retain average<4hours and<50 interruptions/1000connections/year; repeated8.2 deduplicated only within this action.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:reactive-repairs",
+      "document": "op-water",
+      "pdfPages": [
+        74
+      ],
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "reviewedBundleSha256": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+      "reviewedSummarySha256": "664b2a34b4a8a7b0c2dae6fca510bd78cd5a81889f936c43a2350889ecca968e",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "The planning KPI gives an average response-time threshold for incidents involving reticulated plant and equipment; the target cell is a dash.",
+      "semanticFocus": "Average<4hour response applies to reticulated plant/equipment incidents; target/reporting dashes remain unknown.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:quality-complaints",
+      "document": "op-water",
+      "pdfPages": [
+        74
+      ],
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "reviewedBundleSha256": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+      "reviewedSummarySha256": "ada7c5272a261ca85ab893e986ebba37c8fe6b724d5295ab89b5e08b6ceb7a23",
+      "semanticStatus": "BOUNDED_MATCH_AI_REVIEW",
+      "reviewedMeaning": "The published measure is a complaint-investigation count, with monthly reporting and no numeric target supplied in the target cell.",
+      "semanticFocus": "Investigation count has no numeric target in the source; missing target is not zero.",
+      "findingIds": [],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:knowledge:op2026:water:activity:sewer-maintenance",
+      "document": "op-water",
+      "pdfPages": [
+        74
+      ],
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "reviewedBundleSha256": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+      "reviewedSummarySha256": "59446be9588782c867d6119a91111cebcc8f6d39da82aeae867ed6923ef9b4ec",
+      "semanticStatus": "CORRECTED_AND_RECHECKED_BOUNDED_MATCH",
+      "reviewedMeaning": "A programme-completion percentage appears in the service KPI column while the separate target and reporting cells contain dashes.",
+      "semanticFocus": "80% refers to intended maintenance-programme completion in the KPI column; dash target is not copied from KPI or treated as actual.",
+      "findingIds": [
+        "SEM-OP-BARE-PERCENT"
+      ],
+      "currentLegalApplicability": "UNKNOWN",
+      "formalHumanAdmission": "PENDING"
+    }
+  ]
+}

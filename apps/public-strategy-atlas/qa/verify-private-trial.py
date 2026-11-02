@@ -15,7 +15,7 @@ from playwright.sync_api import Page,sync_playwright,expect
 settings=termios.tcgetattr(sys.stdin.fileno());settings[3]&=~termios.ECHO;termios.tcsetattr(sys.stdin.fileno(),termios.TCSANOW,settings)
 print('Ready for supported Site service credential JSON (hidden stdin).',flush=True)
 args=json.loads(sys.stdin.readline());token=args['token'];base=args['url'].rstrip('/');assert base=='https://council-strategy-intelligence.minshu.chatgpt.site'
-app=Path(__file__).resolve().parents[1];out=app/'qa/private-trial';out.mkdir(exist_ok=True)
+app=Path(__file__).resolve().parents[1];out=app/'qa/strategy-completion/live';out.mkdir(parents=True,exist_ok=True)
 record={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'url':base,'authMode':'Supported Sites service access; no visitor identity or sign-in emulation','ownerSignedInBrowser':'NOT_TESTED_NO_OWNER_SESSION','anonymous':[],'assets':[],'browserSuites':[]}
 def save(): (out/'live-validation.json').write_text(json.dumps(record,indent=2)+'\n')
 for path in ['/', '/atlas.js','/sources/csoi-default-snapshot.js']:
@@ -36,8 +36,8 @@ def check(item):
  assert r.status_code==200,(file,r.status_code)
  actual='sha256:'+hashlib.sha256(r.content).hexdigest();assert actual==digest,file
  return {'file':file,'sha256':actual,'status':'PASS_EXACT_DEPLOYED_BYTES'}
-record['assets']=list(concurrent.futures.ThreadPoolExecutor(max_workers=4).map(check,manifest['files'].items()));save()
-print('PASS: all 35 deployed runtime assets byte-match the canonical packaged application',flush=True)
+items=list(manifest['files'].items())+[('deployment-assets.json','sha256:'+hashlib.sha256((app/'dist/deployment-assets.json').read_bytes()).hexdigest())];record['applicationSourceCommit']=manifest['applicationSourceCommit'];record['assets']=list(concurrent.futures.ThreadPoolExecutor(max_workers=4).map(check,items));save()
+print('PASS: all '+str(len(record['assets']))+' deployed runtime assets byte-match the canonical packaged application',flush=True)
 # Platform service authentication is scoped to this exact Site. Fetch without
 # following redirects, then preserve the real response; no visitor headers forged.
 native_goto=Page.goto
@@ -54,9 +54,11 @@ def guarded_goto(page,url,*pos,**kw):
   page.on('request',lambda r:network.append({'method':r.method,'origin':urllib.parse.urlsplit(r.url).netloc}))
  return native_goto(page,url,*pos,**kw)
 Page.goto=guarded_goto
-for name in ['csoi-phe-context-browser.py','e0-browser.py']:
+for name in ['csoi-strategy-browser.py','csoi-phe-context-browser.py','e0-browser.py']:
  script=app/'qa'/name;source=script.read_text().replace('http://127.0.0.1:8877',base)
- if name.startswith('csoi'):
+ if name=='csoi-strategy-browser.py':
+  source=source.replace("OUT=APP/'qa/strategy-completion/browser'","OUT=Path("+repr(str(out/'strategy'))+')')
+ elif name.startswith('csoi'):
   source=source.replace("OUT=APP/'qa/csoi'","OUT=Path("+repr(str(out))+')')
  else: source=source.replace("OUT = Path(__file__).resolve().parent / 'e0'","OUT = Path("+repr(str(out))+')')
  exec(compile(source,str(script),'exec'),{'__file__':str(script),'__name__':'__main__'})

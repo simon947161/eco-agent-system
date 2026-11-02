@@ -32,7 +32,7 @@ with tempfile.TemporaryDirectory(prefix='bombala-phe-browser-')as tmp,sync_playw
   page.get_by_role('link',name='Compare Bombala and Cooma evidence paths',exact=True).click();page.get_by_role('button',name='Inspect pinned path sets',exact=True).click();expect(page.locator('#csoiWorkspace')).to_contain_text('Metadata compatibility: CONFLICT',timeout=30000)
   with page.expect_download()as download:page.get_by_role('button',name='Export pinned path comparison proof',exact=True).click()
   proof=tmp/f'proof-{width}.json';download.value.save_as(str(proof));snapshot=tmp/f'snapshot-{width}.json';export(page,snapshot);subprocess.run(['node',str(APP/'verify-paths.cjs'),str(snapshot),str(proof)],check=True)
-  data=json.loads(snapshot.read_text())['dataset'];index={e['id']:e for e in data['domain']['entities']};assert len(index)==139;assert len(data['domain']['assertions'])==48;assert len(data['contentItems'])==127;assert index['csoi:dcp:snowy2013:A2:4:1:drainage']['data']['csoiRecord']['state']=='WITHDRAWN'
+  data=json.loads(snapshot.read_text())['dataset'];index={e['id']:e for e in data['domain']['entities']};assert len(index)==391;assert len(data['domain']['assertions'])==48;assert len(data['contentItems'])==127;assert index['csoi:dcp:snowy2013:A2:4:1:drainage']['data']['csoiRecord']['state']=='WITHDRAWN'
   plans=[e for e in index.values()if e.get('data',{}).get('csoiRecord',{}).get('data',{}).get('reviewPlan')];assert len(plans)==2
   for task in plans:
    plan=task['data']['csoiRecord']['data']['reviewPlan'];assert plan['clauseRevisionId']==index[plan['clauseId']]['revisionId'];assert task['provenance']['locator']==index[plan['clauseId']]['provenance']['locator'];assert plan['actualHours']=='UNKNOWN'

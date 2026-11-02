@@ -35,7 +35,7 @@ const d=require('./atlas-data.js'),m=require('./atlas-model.js');
  await assert.rejects(()=>m.contentReceipt(d,'missing'),/CONTENT_NOT_FOUND/);assert.throws(()=>m.densityFixture(d,1001),/DENSITY_BOUNDS/);
  for(const c of d.contentItems)assert(!/[\u4e00-\u9fff]/.test(c.title+c.text),'English content '+c.id);
  for(const n of d.nodes)assert(!/[\u4e00-\u9fff]/.test(n.label+n.sub+n.detail),'English graph '+n.id);
- for(const f of ['index.html','atlas.js'])assert(!/[\u4e00-\u9fff]/.test(fs.readFileSync(path.join(__dirname,f),'utf8')),'English UI '+f);
+ for(const f of ['index.html','atlas.js']){let ui=fs.readFileSync(path.join(__dirname,f),'utf8');if(f==='index.html'){assert.match(ui,/<a[^>]*id="sourceResearchLink"[^>]*lang="zh-CN"[^>]*>[\s\S]*?<\/a>/);ui=ui.replace(/<a[^>]*id="sourceResearchLink"[^>]*>[\s\S]*?<\/a>/,'');}assert(!/[\u4e00-\u9fff]/.test(ui),'English legacy UI '+f);}
  const cross=m.findCrossPaths(d);assert.equal(cross.length,1);assert.equal(cross[0].targetId,'candidate');assert.equal(cross[0].branches.length,2);assert.equal(cross[0].evidenceCount,0);assert.equal(cross[0].status,'HYPOTHESIS_ONLY');assert.equal(m.findCrossPaths(d,{includeCandidates:false}).length,0);
  const disconnected=structuredClone(d);disconnected.assertions.find(a=>a.id==='e16').status='CONTRADICTED';assert.equal(m.findCrossPaths(disconnected).length,0);
  const bundle=await m.exportSnapshot(d);assert(await m.verifySnapshot(bundle));assert(await m.verifySnapshot(bundle,bundle.audit.datasetDigest));assert.equal(await m.verifySnapshot(bundle,'sha256:'+'0'.repeat(64)),false);

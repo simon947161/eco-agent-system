@@ -8,6 +8,7 @@ OUT = APP / 'qa' / 'csoi'
 OUT.mkdir(exist_ok=True)
 BASE = os.environ.get('ATLAS_URL', 'http://127.0.0.1:8877/').rstrip('/') + '/'
 ROUTES = {
+    '/research': 'Source research and delivery / 来源梳理与交付',
     '/compare/paths': 'Typed path-set comparison',
     '/compare': 'Compare records across paths',
     '/data': 'Data layers and evidence',

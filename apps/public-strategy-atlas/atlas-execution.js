@@ -222,9 +222,7 @@ function comparisonFacts(view){
  if(!role&&data.csoiTask)role=({PLANNED:'PLANNED_RESEARCH',IN_PROGRESS:'IN_PROGRESS_RESEARCH',RECORDED:'RECORDED_EXECUTION',CANCELLED:'CANCELLED_RESEARCH'})[data.csoiTask.executionStatus]||null;
  return {logicalId:record.logicalId||record.id,revisionId:view.revisionId,kind:record.kind||record.type||null,classification:record.classification||record.status||null,region:known(region)?region:null,boundary:data.boundary||scope.boundary||null,spatialType:data.spatialType||scope.spatialType||record.geographicExtent?.type||null,period,rawPeriod,unit,value:Object.hasOwn(data,'value')?data.value:null,valueState:typeof data.value==='number'&&Number.isFinite(data.value)?'KNOWN':'UNKNOWN',quantityNature,method:data.method||data.methodVersion||null,denominator:data.denominator??null,financial,financialRole:financialTypes.has(data.type)?data.type:null,observationRole:role,currencyBasis:data.currencyBasis||null,costClass:data.costClass||null,lineId:data.lineId||null,sourceId:research?.data?.sourceId||record.sourceId||data.sourceId||(view.category.includes('source')?record.id:null),sourceUrl:source.url||record.officialUrl||record.url||null,sourceRevision:source.sourceRevision||source.revisionId||source.rawDigest||record.rawDigest||null,locator:source.locator||record.locator||null,rawDigest:source.rawDigest||record.rawDigest||null,sourceState:record.access?.state||data.sourceStatus||null,legalRole:data.legalRole||null,legalState:data.legalState||null,supersededAt:data.supersededAt||record.supersededAt||null};
 }
-async function compareRecords(dataset,{left,right}={}){
- // Snapshot verification precedes resolution. Clone to prevent asynchronous edits changing pins.
- let d;try{d=structuredClone(dataset);const snapshot=await M.exportSnapshot(d);need(await M.verifySnapshot(snapshot),'COMPARISON_SNAPSHOT_INVALID');}catch{throw Error('COMPARISON_SNAPSHOT_INVALID');}
+async function compareVerifiedRecords(d,{left,right}={},datasetDigest){
  const [l,r]=await Promise.all([resolveComparisonRecord(d,left),resolveComparisonRecord(d,right)]),a=comparisonFacts(l),b=comparisonFacts(r),checks=[];
  const known=value=>value!==null&&value!==undefined&&value!==''&&value!=='UNKNOWN'&&value!=='PENDING'&&(typeof value!=='object'||Object.keys(value).length>0&&Object.values(value).every(known));
  function check(field,group,{applicable=true,reason=null}={}){
@@ -239,14 +237,18 @@ async function compareRecords(dataset,{left,right}={}){
  check('value','OBSERVATION');
  for(const field of ['legalRole','legalState','supersededAt'])check(field,'APPLICABILITY',{applicable:l.record.kind==='StatutoryControl'||r.record.kind==='StatutoryControl'});
  const compatibilityChecks=checks.filter(c=>['COMPATIBILITY','APPLICABILITY'].includes(c.group)&&c.applicable),conflicts=compatibilityChecks.filter(c=>c.status==='CONFLICT'),unknowns=compatibilityChecks.filter(c=>c.status==='UNKNOWN');
- return {format:'atlas-record-comparison-1',methodVersion:'pinned-public-comparison-1',datasetDigest:await M.objectDigest(d),left:{...l,facts:a},right:{...r,facts:b},checks,fieldDiffs:diffRecords(l.record,r.record),compatibility:{status:conflicts.length?'CONFLICT':unknowns.length?'UNKNOWN':'MATCHED_METADATA_ONLY',conflicts:conflicts.map(c=>c.field),unknowns:unknowns.map(c=>c.field),arithmeticAllowed:false},arithmetic:'NOT_PERFORMED',officialRelationship:'UNKNOWN',trust:'SELF_ATTESTED',externalWitness:'EXTERNAL_WITNESS_UNKNOWN',limitations:['This read-only comparison does not change source records or create a semantic relationship.','Matching labels, values, sources or scopes do not prove legal applicability, causation or official admission.','No subtraction, aggregation, conversion or budget-to-expenditure inference is performed.','Historical pins display their exact retained revision; missing history is rejected rather than replaced with a current record.']};
+ return {format:'atlas-record-comparison-1',methodVersion:'pinned-public-comparison-1',datasetDigest,left:{...l,facts:a},right:{...r,facts:b},checks,fieldDiffs:diffRecords(l.record,r.record),compatibility:{status:conflicts.length?'CONFLICT':unknowns.length?'UNKNOWN':'MATCHED_METADATA_ONLY',conflicts:conflicts.map(c=>c.field),unknowns:unknowns.map(c=>c.field),arithmeticAllowed:false},arithmetic:'NOT_PERFORMED',officialRelationship:'UNKNOWN',trust:'SELF_ATTESTED',externalWitness:'EXTERNAL_WITNESS_UNKNOWN',limitations:['This read-only comparison does not change source records or create a semantic relationship.','Matching labels, values, sources or scopes do not prove legal applicability, causation or official admission.','No subtraction, aggregation, conversion or budget-to-expenditure inference is performed.','Historical pins display their exact retained revision; missing history is rejected rather than replaced with a current record.']};
 }
 
-async function pinRecords(dataset,requests){
- need(Array.isArray(requests)&&requests.length>0&&requests.length<=512,'PIN_RECORDS_BOUNDS');
- const d=structuredClone(dataset);need(await M.verifySnapshot(await M.exportSnapshot(d)),'COMPARISON_SNAPSHOT_INVALID');
- const records=[];for(const request of requests)records.push(await resolveComparisonRecord(d,request));
- return {datasetDigest:await M.objectDigest(d),records};
+// A transaction owns one private verified clone. Returned views are fresh clones;
+// neither caller edits nor edits to earlier results can change later pins.
+async function comparisonSession(dataset){
+ const d=structuredClone(dataset);need(await M.verifySnapshot(await M.exportSnapshot(d)),'COMPARISON_SNAPSHOT_INVALID');const datasetDigest=await M.objectDigest(d);
+ return Object.freeze({datasetDigest,compareRecords:request=>compareVerifiedRecords(d,request,datasetDigest),pinRecords:async requests=>{
+  need(Array.isArray(requests)&&requests.length>0&&requests.length<=512,'PIN_RECORDS_BOUNDS');const records=[];for(const request of requests)records.push(await resolveComparisonRecord(d,request));return {datasetDigest,records};
+ }});
 }
-const api={pinRecords,compareRecords,searchRecords,diffRecords,candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
+async function compareRecords(dataset,request){let session;try{session=await comparisonSession(dataset);}catch{throw Error('COMPARISON_SNAPSHOT_INVALID');}return session.compareRecords(request);}
+async function pinRecords(dataset,requests){need(Array.isArray(requests)&&requests.length>0&&requests.length<=512,'PIN_RECORDS_BOUNDS');return (await comparisonSession(dataset)).pinRecords(requests);}
+const api={pinRecords,compareRecords,comparisonSession,searchRecords,diffRecords,candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

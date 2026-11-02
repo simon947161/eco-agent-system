@@ -1,0 +1,6 @@
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+Traceback (most recent call last):
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/csoi-strategy-browser.py", line 53, in <module>
+    load(page,parent);knowledge(page,'csoi:knowledge:csp2035:strategy:6.1');expect(page.locator('#csoiSourceReading')).to_contain_text('已经失效');research(page);m=json.loads(download(page,'Export source coverage JSON',tmp/f'parent-matrix-{width}.json').read_text());assert next(r for r in m['rows']if r['id'].endswith('strategy:6.1'))['verification']=='INVALIDATED'
+                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Locator' object is not callable

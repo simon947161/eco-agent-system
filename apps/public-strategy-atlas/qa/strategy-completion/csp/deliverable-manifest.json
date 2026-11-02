@@ -1,0 +1,71 @@
+{
+  "workType": "NEW_OFFICIAL_SOURCE_RECONSTRUCTION",
+  "implementation": "PENDING_PARENT_INTEGRATION",
+  "files": [
+    {
+      "path": "sources/csp-public-knowledge.json",
+      "sha256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+      "bytes": 361268
+    },
+    {
+      "path": "tools/build-csp-knowledge.py",
+      "sha256": "806905a032e1bc2cfaabe4a2f4fdabafa43ec30f911bcd523469026775ddb640",
+      "bytes": 21160
+    },
+    {
+      "path": "tools/verify-csp-knowledge.py",
+      "sha256": "60e49293f91fc28b5ba4c041455ea57059b98f888f43756e3d41e7ecc3941749",
+      "bytes": 11975
+    },
+    {
+      "path": "qa/strategy-completion/csp/REPORT_ZH.md",
+      "sha256": "9ead5799a8c814e6faeddc54da01135a75c3bc3761eab608eb3567763075877c",
+      "bytes": 4761
+    },
+    {
+      "path": "qa/strategy-completion/csp/build-coverage.py",
+      "sha256": "daf064036a93a4d15af7d5b591388b0bf8ec521494194a4980190c935bc54327",
+      "bytes": 11281
+    },
+    {
+      "path": "qa/strategy-completion/csp/item-coverage.csv",
+      "sha256": "b43575895d7bafcf2964c145d48bc1b5f1af284a3099b429054e99c72f90eb2a",
+      "bytes": 101913
+    },
+    {
+      "path": "qa/strategy-completion/csp/item-coverage.json",
+      "sha256": "367adee74e586921388d0671a19a9f6c9f650181f291c568c762a0566bc49689",
+      "bytes": 153588
+    },
+    {
+      "path": "qa/strategy-completion/csp/negative-results.json",
+      "sha256": "27f8ad3273c368641165dcf42c353a54990b095f88f0ad795f14d8494f97f300",
+      "bytes": 1561
+    },
+    {
+      "path": "qa/strategy-completion/csp/original-verification.json",
+      "sha256": "cf463bd21ee55aac8be2554b26b49ca85d85df3d673cb69eb1d0d2edb056f659",
+      "bytes": 774
+    },
+    {
+      "path": "qa/strategy-completion/csp/page-coverage.csv",
+      "sha256": "266070ae31970f4da7ef6e032bd30007fa2252ecee57f4fbcdf970de2630cf14",
+      "bytes": 16886
+    },
+    {
+      "path": "qa/strategy-completion/csp/page-coverage.json",
+      "sha256": "bfbfb23de48f75efb719a046df0c63e0d7d2078c2fb34f04bc868d7a7a393293",
+      "bytes": 28057
+    },
+    {
+      "path": "qa/strategy-completion/csp/source-receipt.json",
+      "sha256": "6358e386369f2b94469998311425910b3b958a5af122509aa9458e20d49c4db2",
+      "bytes": 658
+    },
+    {
+      "path": "qa/strategy-completion/csp/verification.log",
+      "sha256": "d72e82d3664355de54dd6a28bd4309fa1fa681fdb970d446dfd79f182f6dbade",
+      "bytes": 751
+    }
+  ]
+}

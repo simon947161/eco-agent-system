@@ -1,0 +1,144 @@
+{
+  "at": "2026-11-01T23:26:11.311115+00:00",
+  "status": "COMPLETE_BOUNDED_SOURCE_RECONSTRUCTION",
+  "method": "NEW_OFFICIAL_SOURCE_RECONSTRUCTION_NOT_RECOVERED_PHASE2_FILES",
+  "bundleSHA256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+  "sourceId": "csoi:smrc-lsps-2020:20261030",
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "counts": {
+    "sourcePagesInventoried": 118,
+    "priorities": 12,
+    "implementationTableActions": 83,
+    "narrativeLocalNumberedOccurrences": 134,
+    "combinedNumberedOccurrences": 217,
+    "distinctPrintedCodes": 85,
+    "supplementalConflictActions": 18,
+    "actionObservationRecords": 101,
+    "totalRecords": 114,
+    "tickImagesChecked": 162,
+    "sourceDifferenceRowsIncludingReverseReferences": 50
+  },
+  "checks": {
+    "sourceVerifierExitCode": 0,
+    "sourceVerification": "PASS_BOUNDED_SOURCE_VERIFICATION",
+    "semanticQualifierAssertions": 7,
+    "negativeCases": 10,
+    "negativeExpectedRejections": 10,
+    "existingKnowledgeSchemaValidation": "PASS",
+    "pythonSyntax": "PASS",
+    "csvJsonRowCounts": "PASS"
+  },
+  "integration": "PENDING_PARENT_INTEGRATION_AND_BROWSER_ACCEPTANCE",
+  "currentLegalApplicability": "UNKNOWN",
+  "actualExecution": "UNKNOWN",
+  "officialAdmission": "PENDING",
+  "reviewLimits": [
+    "Original byte/hash, full implementation row/column census, and all identified numbered narrative/local occurrence anchors verified.",
+    "Descriptions and source-internal conflicts reviewed by AI; not authorised independent human semantic admission.",
+    "Maps/diagrams and non-action narrative are inventoried but not fully structured; whole-document knowledge remains PARTIAL.",
+    "Historical reference codes/category ticks are not admitted current CSP2035, LEP/DCP, implementation or causal relationships."
+  ],
+  "remainingWork": [
+    "Parent integrates existing-model records, rebuilds cache and runs app/browser/export/withdrawal checks.",
+    "All maps, spatial boundaries, non-numbered narrative and current referenced instruments are not fully structured; whole-document research completeness remains PARTIAL.",
+    "Historical Who/timing/funding and CSP Delivery Program references are not present-day assignments, deadlines, budgets or admitted relationships."
+  ],
+  "mutations": "Owned source bundle, builder/verifier and LSPS evidence only; no commit or deployment by this agent.",
+  "artifacts": [
+    {
+      "path": "sources/lsps-public-knowledge.json",
+      "bytes": 638267,
+      "sha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753"
+    },
+    {
+      "path": "tools/build-lsps-knowledge.py",
+      "bytes": 35733,
+      "sha256": "1ab4b5384c77963741dca8ac584e6bb5b8bc49b55757bec607a6fdc7cccff92b"
+    },
+    {
+      "path": "tools/verify-lsps-knowledge.py",
+      "bytes": 14848,
+      "sha256": "85452a54f68f31861680f3d278b500a38d8c38c222f691b5d3cac931812b7b3d"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/LSPS_SOURCE_REVIEW_ZH.md",
+      "bytes": 6111,
+      "sha256": "8c321504ed3c74896e5323c80f7589c1668e6a1145ad4225d14227ff2bd0bfe1"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/build.log",
+      "bytes": 843,
+      "sha256": "80f2673157f6d0ca3def5146bd1580487a4793657528542dd66d16e42b480c97"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/census-summary.json",
+      "bytes": 843,
+      "sha256": "80f2673157f6d0ca3def5146bd1580487a4793657528542dd66d16e42b480c97"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/coverage-matrix.csv",
+      "bytes": 72359,
+      "sha256": "47403f1c25a2858bb40686e23366e76c1db2b9936673dd338d40fb8b3f650526"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/coverage-matrix.json",
+      "bytes": 109699,
+      "sha256": "901aabde99be3b570b7221f43c7acb581b7c8a294c2a82a01df658e73c043119"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/narrative-occurrence-matrix.csv",
+      "bytes": 39890,
+      "sha256": "2d72bc79f6f52799cc83eb76568573f48da45180692b38bd661428de96ec8d69"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/narrative-occurrence-matrix.json",
+      "bytes": 69535,
+      "sha256": "fd33ea9dcb8c8147d3a64ba27c5309a669b1419c8b7c5002c697184ee4d36a2c"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/negative-results.json",
+      "bytes": 1314,
+      "sha256": "19d3f36413e20d58ff56e08855edc81f0276a69ddce95d95fd1cea5b3ce9ef4c"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/original-verification.json",
+      "bytes": 97885,
+      "sha256": "15cbd8b93d561815986d955c839cf977da42d7290ee9d21c4f481786bd8c60c9"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/page-inventory.csv",
+      "bytes": 50980,
+      "sha256": "1f9c3b4170720cf7fb6b17a39d30ad6cd43ca336231936f3c5949338af080f10"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/page-inventory.json",
+      "bytes": 78157,
+      "sha256": "8852cce34e30a23dff8ca34188ea46be99b8a158f9e2212adc59cc471c63e8bc"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/source-differences.csv",
+      "bytes": 12232,
+      "sha256": "c4a6493a1b597605a308fc204d715bf42c3ff6c295848987a32665b14ebc4e09"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/source-differences.json",
+      "bytes": 18902,
+      "sha256": "5d97abe1efc7270e249a9926b06d7e7454d0f69bc320efb467dfec686e301fee"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/source-receipt.json",
+      "bytes": 876,
+      "sha256": "dd6c9276d5611b2de419e75472187453d134c7eb07e0ac73da02e2cb46442e30"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/verify-final.log",
+      "bytes": 617,
+      "sha256": "f28bfcb11e694a4fb850634eaa580514dbfb4a0da844f1b0caed6c8e63e20fb9"
+    },
+    {
+      "path": "qa/strategy-completion/lsps/verify.log",
+      "bytes": 504,
+      "sha256": "62e6acccb783d5b1dedba5f2dedb681aa1fd71c2be45bcbbacd4918a11011f80"
+    }
+  ]
+}

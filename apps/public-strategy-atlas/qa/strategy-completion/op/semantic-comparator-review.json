@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-01T23:25:21.444334+00:00",
+  "finding": "Bare published80% and100% cells have no explicit comparison sign. Prior equals comparator was overly specific.",
+  "resolution": "Keep numeric nominal published values; comparatorUNKNOWN and sourcebasis retained. Do not infer equals or greaterthanorequal. Printedless-than thresholds unchanged.",
+  "affectedActivities": [
+    "daily-testing",
+    "service-requests",
+    "sewer-maintenance"
+  ],
+  "sourceVerification": "PASS_ORIGINAL_COLUMNS",
+  "schemaValidation": "PASS_EXISTING_CONTRACT",
+  "negativeCases": [
+    "invented-bare-percentage-equality",
+    "invented-bare-percentage-minimum"
+  ],
+  "integrationCache": "PARENT_REBUILD_REQUIRED_AFTER_SOURCE_HASH_CHANGE"
+}

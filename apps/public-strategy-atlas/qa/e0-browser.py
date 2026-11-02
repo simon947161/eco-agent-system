@@ -74,7 +74,7 @@ with sync_playwright() as p:
     assert legacy_digest == 'sha256:6236a12009115cd338e1f1c0db75906b4dbf4139d85bed84397c471e40a872fc', legacy_digest
     expected_digest = page.evaluate('''async()=>{
         const d=await AtlasModel.migrateDataset(AtlasData,AtlasAccounting.cases,CsoiRegisteredSources);
-        return AtlasModel.objectDigest((await AtlasCSOIRemediation.apply(await CsoiIntake.registerSummaries(d,CsoiSourceObservations))).dataset);
+        return AtlasModel.objectDigest(await AtlasStrategyResearch.registerAll((await AtlasCSOIRemediation.apply(await CsoiIntake.registerSummaries(d,CsoiSourceObservations))).dataset));
     }''')
     subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(snapshot),expected_digest],check=True)
     passed('Frozen legacy checkpoint unchanged; extended browser snapshot independently reconstructed and verified')

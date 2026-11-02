@@ -1,3 +1,11 @@
+## 来源梳理与交付 / source research
+
+Open `#/research` from the visible map heading. Browse CSP goals/strategies/indicators, LSPS priorities and implementation/conflicting source occurrences, and selected OP water activities. Each record has a source version/page, scope, relevant roles/partners or planned targets, and explicit missing evidence. Export item-level JSON/CSV and page inventories; importing an older snapshot shows missing items instead of completion. The same page lists all80 engineering tasks; these are not80Council projects.
+
+The original archived audit report and workbook are recovered and hash-verified; the old task’s uncommitted Phase2 files are not accessible here. New source records are official-source reconstruction, independently reviewed. See [current research report](qa/strategy-completion/REPORT_ZH.md) and [final acceptance](qa/strategy-completion/acceptance.json). Selected core tables are complete within stated denominators; whole narratives, maps, current-law applicability, DP/fullOP and actual Council outcomes are not claimed complete.
+
+Rebuild exact browser inputs with `node tools/sync-strategy-knowledge.cjs`, `node tools/sync-strategy-review-scope.cjs`, then `node tools/build-csoi-boot.cjs`. Original verification tools require the hash-matched official PDF supplied as their input; originals are not committed or deployed.
+
 # ClimateOS Public Strategy Atlas
 
 A route-first, local research application for exploring strategy, work, quantities, sources and audit history. It extends the original 15 stations and 127 content records. No package installation, backend, paid API or production deployment is required.

@@ -2,7 +2,7 @@
 (function(root){
 'use strict';
 const ROUTES=Object.freeze([
- ['atlas','/atlas'],['knowledge','/knowledge/:id'],['strategy','/strategy'],['strategy-detail','/strategy/:id'],
+ ['atlas','/atlas'],['research','/research'],['knowledge','/knowledge/:id'],['strategy','/strategy'],['strategy-detail','/strategy/:id'],
  ['wcos','/domains/wcos'],['wcos-domain','/domains/wcos/:domain'],['phe','/domains/phe'],['phe-domain','/domains/phe/:domain'],
  ['data','/data'],['data-record','/data/:id'],['operations','/operations'],['operation','/operations/:id'],['calendar','/calendar'],['calendar-item','/calendar/:id'],
  ['metrics','/metrics'],['metric','/metrics/:id'],['resources','/resources'],['resource','/resources/:id'],

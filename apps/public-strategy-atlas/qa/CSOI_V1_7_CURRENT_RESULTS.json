@@ -1,6 +1,6 @@
 {
   "format": "csoi-v17-current-results-1",
-  "at": "2026-11-01T09:44:34.951079+00:00",
+  "at": "2026-11-02T00:02:20.264936+00:00",
   "systemAcceptance": "PARTIAL",
   "softwareStatus": "PARTIAL",
   "taskCounts": {
@@ -22,27 +22,29 @@
     "authoredClauseObservations": 74,
     "historicalDesignReferences": 3,
     "activeDcpObservations": 73,
-    "withdrawnDcpObservations": 1
+    "withdrawnDcpObservations": 1,
+    "structuredStrategyRecords": 252,
+    "sourceItemCoverage": "strategy-completion/item-coverage.json"
   },
   "officialAdmission": {
     "status": "PENDING",
     "admittedDocuments": 0,
     "admittedRelationships": 0,
     "sourceReportedCandidates": 8,
-    "actualOutcomeKpi": "UNKNOWN"
+    "actualOutcomeKpi": "UNKNOWN",
+    "newExplicitDocumentReferencePairs": 9
   },
   "native": {
     "status": "PASS_TESTED_HERE",
-    "filesPassed": 42,
-    "totalDistinctFilesPassed": 42,
-    "evidence": "bombala-phe/native-results.json"
+    "filesPassed": 43,
+    "totalDistinctFilesPassed": 43,
+    "evidence": "strategy-completion/native-final.json"
   },
   "browser": {
     "status": "PASS_TESTED_HERE",
-    "leafSuitesPassed": 17,
-    "scope": "New Bombala PHE and nine affected existing suites, six legacy suites, plus P0/P1 remediation desktop/mobile; 24 routes × five viewports.",
-    "evidence": "bombala-phe/results.json",
-    "aggregateLog": "bombala-phe/browser-regression.log"
+    "leafSuitesPassed": 26,
+    "scope": "All current browser leaf suites reconciled with affected reruns; desktop1440/mobile390,25routes×5viewports; final data/export/sourcewithdrawal checks.",
+    "evidence": "strategy-completion/browser-final.json"
   },
   "nodeCoverage": {
     "lines": 91.38,
@@ -52,14 +54,14 @@
     "evidence": "csoi/coverage-cooma.txt",
     "status": "HISTORICAL_NOT_RERUN_THIS_BATCH"
   },
-  "defaultSnapshotDigest": "sha256:53841d668ffdb78a42edb9ad515a64dcb6956dd390b6c777531f2c4d72311375",
+  "defaultSnapshotDigest": "sha256:f2ec9adec008d5c0f5a39bac013ffb76aff73e08061d76b3512c572f1c8c1962",
   "pr": {
     "number": 130,
     "state": "OPEN_DRAFT",
-    "verifiedBaseSha": "ad203014caa2fb2c67b7457b2d720b528baa6a7a",
-    "testedCodeSha": "129b35d2e400f5fd372f5eafac3b3a5048f1bb53",
-    "evidence": "bombala-phe/pr130-readback.json",
-    "ci": "No commit statuses or PR-triggered workflow runs returned at tested code SHA; no independent CI pass claimed."
+    "verifiedBaseSha": "6da39daca06173eb3bdaa6d9f690271dc5318c03",
+    "testedCodeSha": "PENDING_COMMIT_READBACK",
+    "evidence": "strategy-completion/pr130-readback.json",
+    "ci": "PENDING_REMOTE_READBACK"
   },
   "notTested": [
     "physical touch/monitors",
@@ -104,5 +106,34 @@
   "latestCoomaBatch": "csoi/cooma-results.json",
   "latestPheBombalaBatch": "csoi/phe-bombala-results.json",
   "latestIntegrityRemediation": "remediation/PHASE1_ACCEPTANCE_20261031.md",
-  "latestBombalaPheBatch": "bombala-phe/results.json"
+  "latestBombalaPheBatch": "bombala-phe/results.json",
+  "sourceReconstruction": {
+    "newRecords": 252,
+    "CSP": {
+      "objectives": 14,
+      "strategies": 44,
+      "indicators": 63
+    },
+    "LSPS": {
+      "priorities": 12,
+      "implementationRows": 83,
+      "distinctConflictingOccurrences": 18,
+      "narrativeOccurrencesChecked": 134
+    },
+    "OP": {
+      "selectedActivities": 8,
+      "newExplicitCspPairs": 9,
+      "existingGraphRepresentationsRechecked": 8,
+      "existingDistinctSourceFacts": 3
+    },
+    "sourceNegativeCases": 34,
+    "independentSemanticItems": 153,
+    "semanticFindingGroupsRepaired": 10,
+    "semanticRecordsAffected": 12,
+    "wholeDocumentUnderstanding": "NOT_CLAIMED"
+  },
+  "publication": {
+    "status": "PENDING_SEPARATE_RECEIPT",
+    "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b"
+  }
 }
