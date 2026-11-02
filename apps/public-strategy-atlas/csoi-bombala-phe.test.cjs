@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),M=require('./atlas-model.js'),P=require('./csoi-phe.js'),B=require('./csoi-boot.js'),Build=require('./tools/build-csoi-boot.cjs'),R=require('./csoi-review-work.js'),I=require('./atlas-intake.js'),G=require('./csoi-governance.js'),Calendar=require('./csoi-calendar.js');
 (async()=>{
  const d=await B.load(require('./sources/csoi-default-snapshot.js'),Build.inputs()),before=await M.objectDigest(d);
- assert.equal(before,require('./qa/lsps-completion/default-digest.json').datasetDigest);
+ assert.equal(before,require('./qa/op-completion-20261102/cache-build-receipt.json').digest);
  const context=await P.historicalContexts(d,'ossm'),cards=context.cards.filter(c=>c.family==='bombala');assert.equal(context.cards.length,11);assert.equal(cards.length,5);assert(cards.every(c=>c.current&&c.reviewPlans.length===0&&P.readingDomains(c.id).includes('ossm')));
  const soil=cards.find(c=>c.id.endsWith(':soil')),rural=cards.find(c=>c.id.endsWith(':4:5:4:A2')),a8=cards.find(c=>c.id.endsWith(':A8'));
  assert.equal(soil.anchor.pdfPage,55);assert.equal(rural.anchor.pdfPage,85);assert(soil.locator.includes('printed page 34'));assert(soil.parentContext.some(p=>p.id.endsWith(':A9')&&p.conditions.includes('Reticulated sewerage is unavailable.')));assert(rural.parentContext.some(p=>p.section.startsWith('4.5.4')&&p.conditions.some(c=>c.includes('rural-development'))));assert(a8.conditions.some(c=>c.includes('capacity and efficiency')));
@@ -15,6 +15,6 @@ const assert=require('node:assert/strict'),M=require('./atlas-model.js'),P=requi
  const wrong=structuredClone(d);M.domainIndex(wrong).get(soil.id).data.csoiRecord.data.dcpClause.anchor.pdfPage=85;assert(!(await P.historicalContexts(wrong,'ossm')).cards.find(c=>c.id===soil.id).current);
  const foreign=structuredClone(d);M.domainIndex(foreign).get(soil.id).data.csoiRecord.data.sourceId=context.cards[0].sourceId;assert(!(await P.historicalContexts(foreign,'ossm')).cards.find(c=>c.id===soil.id).current);
  const missing=structuredClone(d);missing.domain.entities=missing.domain.entities.filter(e=>e.id!==soil.id);assert(!(await P.historicalContexts(missing,'ossm')).cards.find(c=>c.id===soil.id).current);
- assert.equal(await M.objectDigest(d),before);assert.equal(d.domain.entities.length,389+require('./sources/lsps-context-review.json').records.length);assert.equal(d.domain.assertions.length,48);assert.equal(d.contentItems.length,127);
+ assert.equal(await M.objectDigest(d),before);assert.equal(d.domain.entities.length,389+require('./sources/lsps-context-review.json').records.length+require('./sources/op-completion-review.json').records.length);assert.equal(d.domain.assertions.length,48);assert.equal(d.contentItems.length,127);
  console.log('PASS: five Bombala PHE selections, inherited conditional scope, two unresolved evidence gaps, pinned independent work/calendar, retained history/export, isolated parent/source withdrawal and wrong-page/foreign-source/missing-record rejection; remediated default unchanged');
 })().catch(e=>{console.error(e);process.exitCode=1});

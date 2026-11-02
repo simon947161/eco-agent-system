@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-02T02:43:03.009211+00:00",
+  "repositoryPath": "/workspace/eco-agent-system",
+  "applicationPath": "/workspace/eco-agent-system/apps/public-strategy-atlas",
+  "startingRemoteHead": "1bd44ea96bf742e63072d866502479ca34d34061",
+  "branch": "feature/public-strategy-atlas-web-mvp-20261029",
+  "pr": 130,
+  "scope": [
+    "Evidence-backed closure baseline for all80engineering tasks, with individual28PARTIAL/3BLOCKED explanations and actionable categories",
+    "Complete bounded source reading of the existing registered142-pageOP,including exactCSP/LSPSreferences, planning/resource/budget/actual distinctions"
+  ],
+  "registeredSource": {
+    "id": "csoi:smrc-op-2026:20261030",
+    "sha256": "4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+    "pages": 142,
+    "bytes": 37500187,
+    "localOriginal": "/tmp/csoi-strategy-completion-20261101/op.pdf",
+    "receipt": "../strategy-completion/op/source-receipt.json",
+    "method": "Reuse existing original; exact bytes independently rehashed this batch",
+    "currentVersion": "UNKNOWN",
+    "sourceVersionConflict": "URLfilenamev3.1versusinternalversion1.3;adoptedentryandworking-draftwordingretained"
+  },
+  "startingRegistry": {
+    "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+    "counts": {
+      "VERIFIED": 49,
+      "PARTIAL": 28,
+      "BLOCKED": 3
+    },
+    "semantics": "Engineering task acceptance, not80Councilprojects"
+  },
+  "previousDelivery": {
+    "siteVersion": 4,
+    "applicationSha": "4abe263be3d383ecf3ac1367ffb462d8fe683035",
+    "sitesSourceSha": "c488e14fcdde671698e826179cf2e3ccd57491e2",
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "ownerOnly": true
+  },
+  "boundaries": {
+    "dynamicArchitectureUI": "SAVED_FUTURE_TASK_NO_IMPLEMENTATION",
+    "privateData": "NOT_AUTHORISED",
+    "merge": "NOT_AUTHORISED",
+    "otherSites": "DO_NOT_MODIFY",
+    "newFeesOrPermissions": "STOP_AFFECTED_ACTION_AND_REPORT"
+  },
+  "originalUncommittedPhase2": "Originalstorageinaccessible;thisisnewsourcework,norecoveryclaim",
+  "blockersAtStart": [],
+  "status": "SOURCE_REVIEW_AND_CLOSURE_AUDIT_IN_PROGRESS"
+}

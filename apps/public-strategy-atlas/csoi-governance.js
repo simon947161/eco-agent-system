@@ -31,7 +31,7 @@ function inspectPayload(value){
   if(++visited>10000||current.depth>40){issues.add('PAYLOAD_BOUNDS');break;}
   if(typeof v==='string'){
    if(v.length>20000)issues.add('TEXT_BOUNDS');
-   if(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i.test(v)||/(?:\+61\s?\d|\b04\d{2})[\d\s()-]{6,}/.test(v))issues.add('POSSIBLE_PERSONAL_DATA');
+   if(!/^sha256:[a-f0-9]{64}$/.test(v)&&(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i.test(v)||/(?:\+61\s?\d|\b04\d{2})[\d\s()-]{6,}/.test(v)))issues.add('POSSIBLE_PERSONAL_DATA');
    if(/\b(?:COUNCIL_PROTECTED|PERSONAL_PRIVATE|COMMERCIAL_IN_CONFIDENCE|CONFIDENTIAL_INTERNAL|EMPLOYEE_ONLY)\b/.test(v))issues.add('PROTECTED_CONTENT_MARKER');
    if(/^(?:javascript|data|vbscript):/i.test(v.trim()))issues.add('UNSAFE_URL_SCHEME');
    if(['authority','admission','decisionstatus','approvalstatus'].includes(k)&&['ADMITTED','COUNCIL_APPROVED','OFFICIAL_APPROVED','APPROVED'].includes(v))issues.add('UNVERIFIED_OFFICIAL_PROMOTION');

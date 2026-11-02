@@ -3,16 +3,17 @@
 const M=typeof module!=='undefined'?require('./atlas-model.js'):root.AtlasModel,K=typeof module!=='undefined'?require('./csoi-knowledge.js'):root.AtlasCSOIKnowledge;
 const LEGACY_CARBON='csp2035-carbon-per-capita-baseline';
 function bundles(){return typeof module!=='undefined'?[require('./sources/csp-public-knowledge.json'),require('./sources/lsps-public-knowledge.json'),require('./sources/op-water-public-knowledge.json')]:[root.CsoiCspKnowledge,root.CsoiLspsKnowledge,root.CsoiOpWaterKnowledge];}
-function reviewedBundles(source=bundles()){const metrics=(typeof module!=='undefined'?require('./csoi-metric-review.js'):root.AtlasCspMetricReview).project(source);return (typeof module!=='undefined'?require('./csoi-lsps-context.js'):root.AtlasLspsContext).project(metrics);}
+function reviewedBundles(source=bundles()){const metrics=(typeof module!=='undefined'?require('./csoi-metric-review.js'):root.AtlasCspMetricReview).project(source);const context=(typeof module!=='undefined'?require('./csoi-lsps-context.js'):root.AtlasLspsContext).project(metrics);return (typeof module!=='undefined'?require('./csoi-op-review.js'):root.AtlasOpReview).project(context);}
 function capsule(e){return e?.data?.csoiRecord?.data?.publicKnowledge||null;}
 function canonicalCarbon(source=bundles()){return source[0].records.find(n=>n.category==='CSP_INDICATOR'&&n.anchor.pdfPage===30&&n.facts.baseline?.value===29.9);}
-async function registerAll(dataset,source=bundles(),metricReview,lspsReview){
+async function registerAll(dataset,source=bundles(),metricReview,lspsReview,opReview){
  let next=dataset;for(const bundle of source)next=await K.registerBundle(next,bundle);
  const old=M.domainIndex(next).get(LEGACY_CARBON),replacement=canonicalCarbon(source);
  if(!replacement)throw Error('CANONICAL_CARBON_SOURCE_REQUIRED');
  if(old&&old.state!=='SUPERSEDED')next=await M.commitDomainRevision(next,{id:old.id,expectedRevisionId:old.revisionId,patch:{state:'SUPERSEDED',localNote:'Retained unpinned historical observation. Use source-pinned research record '+replacement.id+'. This correction does not admit arithmetic, current law or actual Council emissions.'},reason:'Append a supersession marker after independently checking the canonical CSP indicator; retain original value, source gap and immutable history.',observedAt:'2026-11-01T23:12:00.000Z'});
  next=(await (typeof module!=='undefined'?require('./csoi-metric-review.js'):root.AtlasCspMetricReview).apply(next,metricReview)).dataset;
- return (typeof module!=='undefined'?require('./csoi-lsps-context.js'):root.AtlasLspsContext).apply(next,source,lspsReview);
+ next=await (typeof module!=='undefined'?require('./csoi-lsps-context.js'):root.AtlasLspsContext).apply(next,source,lspsReview);
+ return (typeof module!=='undefined'?require('./csoi-op-review.js'):root.AtlasOpReview).apply(next,source,opReview);
 }
 function family(bundle){return bundle.sourceId.includes('csp-full')?'CSP':bundle.sourceId.includes('lsps')?'LSPS':'OP';}
 function group(n){return n.category==='ACTION'?(n.facts.sourceSection==='IMPLEMENTATION_TABLE'?'LSPS_IMPLEMENTATION_ACTION':'LSPS_OTHER_ACTION_OCCURRENCE'):n.category;}
@@ -27,7 +28,7 @@ async function matrix(dataset,source=reviewedBundles()){
  const categories=[...new Set(rows.map(r=>r.category))].map(category=>{const all=rows.filter(r=>r.category===category);return {category,expected:all.length,implemented:all.filter(r=>r.implemented==='PRESENT').length,sourceCheckedCurrent:all.filter(r=>r.verification==='SOURCE_CHECKED_BOUNDED').length,missing:all.filter(r=>r.implemented==='MISSING').length,invalidated:all.filter(r=>r.implemented==='PRESENT'&&r.verification!=='SOURCE_CHECKED_BOUNDED').length};});
  return {format:'csoi-item-coverage-1',basis:'Individually checked source items; counts do not certify full-document meaning, current law, implementation or outcomes.',rows,categories,wholeDocumentUnderstanding:'NOT_CLAIMED',officialRelationships:0,actualOutcome:'UNKNOWN'};
 }
-function publishedReferences(dataset){return K.records(dataset).filter(e=>capsule(e).category==='WATER_ACTIVITY').flatMap(e=>capsule(e).relations.map(r=>({from:e.id,to:r.targetId,type:r.type,locator:r.locator,targetRevision:r.targetRevisionId,meaning:'Printed OP reference only; not proof of implementation, legal authority or causality.'})));}
+function publishedReferences(dataset){return K.records(dataset).filter(e=>['WATER_ACTIVITY','OP_PAGE'].includes(capsule(e).category)).flatMap(e=>capsule(e).relations.filter(r=>r.type==='EXPLICIT_DOCUMENT_REFERENCE').map(r=>({from:e.id,to:r.targetId,type:r.type,locator:r.locator,targetRevision:r.targetRevisionId,meaning:'Printed OP reference only; not proof of implementation, legal authority or causality.'})));}
 function matches(e,{family:which,category,q=''}={}){const c=capsule(e),sid=e.data.csoiRecord.data.sourceId;return (!which||family({sourceId:sid})===which)&&(!category||group({...c,facts:c.facts})===category)&&(!q||JSON.stringify([e.id,e.label,e.data.csoiRecord.data.summary,c.code,c.facts]).toLowerCase().includes(q.toLowerCase()));}
 function select(dataset,{family:which,category,q='',page=1,limit=25}={}){
  if(!Number.isSafeInteger(page)||page<1||!Number.isSafeInteger(limit)||limit<1||limit>100)throw Error('RESEARCH_QUERY_BOUNDS');

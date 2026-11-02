@@ -1,3 +1,15 @@
+# Current OP /80-task batch — final application acceptance in progress
+
+Canonical app remains `apps/public-strategy-atlas`, same PR130/branch. Started at1bd44ea96bf742e63072d866502479ca34d34061; current published Council v4 remains unchanged until this batch passes and is released. Do not mistake lower historical sections for current missing-work claims.
+
+Source review is frozen:142 pages /911 unique units, source bundle345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0.143 appended records yield635 entities /48 assertions /775 revisions+events; exactv4prefix retained. The normal append-cache build passed; full rebuild/native/browser acceptance is running. See `qa/op-completion-20261102/REPORT_ZH.md` and actual logs, not old batch results.
+
+All80 original requirements have individual closure evidence/remaining gaps in `qa/audit-closure-20261102/author/closure-baseline.json`, preserved as pre-OP history. The registry has `closureBaseline` and per-task `closureUpdate`; don't promote legal/actual/private states because source reading is complete. COI023/074 are undergoing bounded software acceptance;076 still lacks actual basic screen-reader experience evidence. Private002/031/040 remain deferred and do not block public work.
+
+New dynamic architecture-map task remains unimplemented. Read the [implementation plan](docs/COUNCIL_DYNAMIC_ARCHITECTURE_IMPLEMENTATION_PLAN_V1.md) after this research acceptance closes. There is no live task-executor API. Prototype must be runnable and actually reviewed, and this new main-interface release needs separate Founder approval. Research publication permission does not cover the interface. No secondSite; never touch the waterSite.
+
+## Historical completed batches follow
+
 # LSPS historical context — private Council v4 delivered
 
 Same PR130, branch and Council Site. The118-page official2020LSPS is boundedly reviewed:76page records /512reading units /27map occurrences. Original114records,83implementation actions and18conflicting observations retained;217 reading-context links do not create official relationships. Source bundle e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f. Independent semantic, pixel and original-position readback passed;15 source negatives rejected. See qa/lsps-completion/REPORT_ZH.md and acceptance.json.

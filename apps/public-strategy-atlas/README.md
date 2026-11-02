@@ -1,4 +1,6 @@
-Latest source work: **LSPS historical narrative, maps and action conditions** — [Chinese report and readable matrix](qa/lsps-completion/REPORT_ZH.md), [current acceptance record](qa/lsps-completion/acceptance.json). 45 native files and6 local browser suites pass; [private v4 release evidence](qa/lsps-completion/DEPLOYMENT_ZH.md) records48exact live files and5live browser suites.
+Latest batch in acceptance: **the registered142-page OP and explicit closure criteria for all80 engineering tasks** — [Chinese report](qa/op-completion-20261102/REPORT_ZH.md), [independent911-unit source review](qa/op-completion-20261102/independent/REPORT_ZH.md), [workbook](qa/op-completion-20261102/OP与工程验收矩阵.xlsx). The dynamic architecture-map [implementation plan](docs/COUNCIL_DYNAMIC_ARCHITECTURE_IMPLEMENTATION_PLAN_V1.md) is saved for review; no new interface has been implemented or published.
+
+Previous completed batch: **LSPS historical narrative, maps and action conditions** — [Chinese report and readable matrix](qa/lsps-completion/REPORT_ZH.md), [current acceptance record](qa/lsps-completion/acceptance.json). 45 native files and6 local browser suites pass; [private v4 release evidence](qa/lsps-completion/DEPLOYMENT_ZH.md) records48exact live files and5live browser suites.
 
 Previous delivered batch: **63 CSP indicators independently reviewed and corrected with immutable history**. [Chinese report and Excel](qa/csp-metric-review/REPORT_ZH.md), [44 native /5 browser acceptance](qa/csp-metric-review/acceptance.json). That prior batch was delivered as owner-private Council version3; [release evidence](qa/csp-metric-review/DEPLOYMENT_ZH.md) records 46 exact live files and 4 live browser suites.
 
@@ -6,7 +8,7 @@ Current private trial: [Council source research](https://council-strategy-intell
 
 ## 来源梳理与交付 / source research
 
-Open `#/research` from the visible map heading. Browse CSP goals/strategies/indicators, LSPS priorities and implementation/conflicting source occurrences, and selected OP water activities. Each record has a source version/page, scope, relevant roles/partners or planned targets, and explicit missing evidence. Export item-level JSON/CSV and page inventories; importing an older snapshot shows missing items instead of completion. The same page lists all80 engineering tasks; these are not80Council projects.
+Open `#/research` from the visible map heading. Browse CSP goals/strategies/indicators, LSPS priorities and implementation/conflicting source occurrences, and the registered OP page/unit reading alongside the original selected water activities. Each record has a source version/page, scope, relevant roles/partners or planned targets, and explicit missing evidence. Export item-level JSON/CSV and page inventories; importing an older snapshot shows missing items instead of completion. The same page lists all80 engineering tasks; these are not80Council projects.
 
 The original archived audit report and workbook are recovered and hash-verified; the old task’s uncommitted Phase2 files are not accessible here. New source records are official-source reconstruction, independently reviewed. See [current research report](qa/strategy-completion/REPORT_ZH.md) and [final acceptance](qa/strategy-completion/acceptance.json). Selected core tables are complete within stated denominators; the later LSPS narrative/map batch has its own explicit bounded coverage. Current-law applicability, DP/fullOP and actual Council outcomes are not claimed complete.
 
@@ -61,6 +63,8 @@ The UI supports 60/200/1,000/10,000-item synthetic fixtures. `?fixture=1000&shap
 Original source records remain unchanged. Content annotations use the legacy immutable AtlasWorkspace; synthetic quantities use separate domain revisions. Domain challenges/questions/calculations are retained by explicit snapshot export/import. Nothing uploads, saves or restores automatically.
 
 Workspace **Save locally / Load saved workspace** uses atomic IndexedDB expected-checkpoint and append-prefix checks. Divergent import opens BASE/LOCAL/IMPORT field choices and requires a reason. RESOLVE events append and exact imported histories are archived. The bounded format supports 2 MB, 500 primary revisions, 20 archives, nesting depth 5. Storage can be lost; export explicitly. No remote collaboration or silent merge is claimed.
+
+The complete OP default snapshot measures22,743,874bytes. Snapshot JSON transfer is bounded at32MiB in the browser and both snapshot/path CLI verifiers; oversized files are rejected before parsing. The original10MiB capacity no longer fits this legitimate corpus. Integrity, source withdrawal, privacy, legacy-base and explicit replacement checks remain required. This is a size-capacity change, not a timeout increase or broader content permission.
 
 **Export snapshot** includes the original base plus typed domain records, revision/event history, calculations, source catalogue and content roots. **Compare & import snapshot** verifies integrity, optional independent checkpoint and exact legacy base before explicit domain replacement. Export current state before replacing it. Legacy snapshots/workspaces remain supported.
 

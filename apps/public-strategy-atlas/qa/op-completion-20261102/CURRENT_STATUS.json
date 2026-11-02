@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-02T03:34:57.190053+00:00",
+  "repo": "/workspace/eco-agent-system",
+  "startingHead": "1bd44ea96bf742e63072d866502479ca34d34061",
+  "sourceReview": "911 units independently reviewed; frozen source SHA345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0",
+  "cache": "Normal verified append complete;635entities/775revisions;22,743,874byte snapshot. Full independent fresh-build equivalence running.",
+  "nativeCompleted": 27,
+  "nativeTotal": 48,
+  "initialFailures": [
+    {
+      "test": "csoi-bombala-phe.test.cjs",
+      "reason": "Previous v4 expected digest/count fixture; updated without changing behavioral assertions; targeted rerun pending."
+    },
+    {
+      "test": "csoi-op-review.test.cjs",
+      "reason": "Negative-test helper mutated original by alias; clone fix applied; targeted rerun pending."
+    }
+  ],
+  "browser": "OP desktop complete, mobile actual page/unit reading in progress; separate023/074/076 closure readback running.",
+  "publication": "Not started; original owner-onlyv4 unchanged.",
+  "blockedByNewPermission": false,
+  "nextAcceptance": "All current native tests and desktop/mobile applicable browser suites, then samePR push and owner-only research publication."
+}

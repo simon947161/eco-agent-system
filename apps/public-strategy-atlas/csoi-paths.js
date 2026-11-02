@@ -82,7 +82,7 @@ async function pinPathVerified(d,spec,session){
 }
 async function pinPath(dataset,spec){validate(spec);const d=structuredClone(dataset),session=await E.comparisonSession(d);return pinPathVerified(d,spec,session);}
 async function verifyPath(d,proof){try{need(proof.core?.methodVersion===METHOD&&await M.objectDigest(proof.core)===proof.digest,'PATH_PROOF_DIGEST');const check=await pinPath(d,proof.core.spec);return {integrity:check.digest===proof.digest,current:check.assessment.current,assessment:check.assessment};}catch(error){return {integrity:false,current:false,reason:error.message};}}
-async function discover(d,{from,to,mode='BOTH',maxVisited=2000}={}){
+function discoverSpec(d,{from,to,mode='BOTH',maxVisited=2000}={}){
  need(['ASSERTION','INPUT','BOTH','STRUCTURED'].includes(mode)&&Number.isSafeInteger(maxVisited)&&maxVisited>0&&maxVisited<=10000,'PATH_DISCOVERY_BOUNDS');const adjacency=new Map(),add=(a,b,r)=>{if(!adjacency.has(a))adjacency.set(a,[]);adjacency.get(a).push({to:b,relationship:r});};
  if(mode!=='INPUT')for(const a of E.assertions(d)){if(badStates.has(a.state||a.status))continue;add(a.from,a.to,{kind:'ASSERTION',id:a.id,direction:'FORWARD'});add(a.to,a.from,{kind:'ASSERTION',id:a.id,direction:'REVERSE'});}
  if(mode!=='ASSERTION')for(const owner of d.domain?.entities||[])for(const [index,input]of (owner.data?.csoiRecord?.inputs||[]).entries()){const data=owner.data.csoiRecord.data,parent=data.dcpClause?.parentId||data.sourceClauseId||data.reviewPlan?.clauseId;if(mode==='STRUCTURED'&&parent&&input.id!==parent)continue;add(owner.id,input.id,{kind:'INPUT',ownerId:owner.id,inputIndex:index,direction:'FORWARD'});add(input.id,owner.id,{kind:'INPUT',ownerId:owner.id,inputIndex:index,direction:'REVERSE'});}
@@ -90,15 +90,27 @@ async function discover(d,{from,to,mode='BOTH',maxVisited=2000}={}){
  while(i<queue.length&&i<maxVisited&&!seen.has(to)){const node=queue[i++];for(const step of adjacency.get(node)||[]){if(seen.has(step.to))continue;seen.add(step.to);previous.set(step.to,{from:node,relationship:step.relationship});queue.push(step.to);}}
  if(!seen.has(to))return {status:'UNKNOWN',truncated:i>=maxVisited,reason:'No eligible bounded relationship/input path; missing links are not inferred.'};
  const ids=[to],relationships=[];let cursor=to;while(cursor!==from){const step=previous.get(cursor);need(step,'PATH_TRACE_MISSING');relationships.push(step.relationship);ids.push(step.from);cursor=step.from;if(ids.length>32)return {status:'UNKNOWN',truncated:true,reason:'Path exceeds32display/proof nodes; inspect smaller retained segments.'};}
- const spec={nodes:ids.reverse().map(id=>({id})),relationships:relationships.reverse()};return {status:'FOUND_RESEARCH_ONLY',truncated:false,path:await pinPath(d,spec)};
+ const spec={nodes:ids.reverse().map(id=>({id})),relationships:relationships.reverse()};return {status:'FOUND_RESEARCH_ONLY',truncated:false,spec};
 }
+async function discover(d,options){const found=discoverSpec(d,options);return found.spec?{status:found.status,truncated:found.truncated,path:await pinPath(d,found.spec)}:found;}
+function validateSets(left,right){need(Array.isArray(left)&&Array.isArray(right)&&left.length>0&&right.length>0&&left.length<=4&&right.length<=4,'PATH_SET_BOUNDS');}
 async function comparePathSets(dataset,{left,right}={}){
- need(Array.isArray(left)&&Array.isArray(right)&&left.length>0&&right.length>0&&left.length<=4&&right.length<=4,'PATH_SET_BOUNDS');const d=structuredClone(dataset),session=await E.comparisonSession(d),l=[],r=[];for(const spec of left)l.push(await pinPathVerified(d,spec,session));for(const spec of right)r.push(await pinPathVerified(d,spec,session));
+ validateSets(left,right);const d=structuredClone(dataset),session=await E.comparisonSession(d);return compareVerified(d,left,right,session);
+}
+// One isolated, fully verified transaction also covers endpoint discovery. No
+// trusted session is exposed to callers or reused across dataset mutations.
+async function compareEndpointSets(dataset,{left,right}={}){
+ validateSets(left,right);for(const endpoint of [...left,...right])need(closed(endpoint,['from','to','mode','maxVisited'])&&typeof endpoint.from==='string'&&endpoint.from.length>0&&endpoint.from.length<=240&&typeof endpoint.to==='string'&&endpoint.to.length>0&&endpoint.to.length<=240,'PATH_ENDPOINT_FIELDS');
+ const d=structuredClone(dataset),session=await E.comparisonSession(d),find=endpoints=>endpoints.map(endpoint=>{const found=discoverSpec(d,{mode:'STRUCTURED',...endpoint});need(found.spec,'PATH_UNKNOWN: '+found.reason);return found.spec;});
+ return compareVerified(d,find(left),find(right),session);
+}
+async function compareVerified(d,left,right,session){
+ const l=[],r=[];for(const spec of left)l.push(await pinPathVerified(d,spec,session));for(const spec of right)r.push(await pinPathVerified(d,spec,session));
  const unique=paths=>[...new Map(paths.flatMap(p=>p.views).map(v=>[key(v),v])).values()],a=unique(l),b=unique(r),pairs=[];const used=new Set();let omitted=0;
  for(const v of a){const bucket=v.record.kind||v.record.recordType||v.category,w=b.find(w=>!used.has(key(w))&&(w.record.kind||w.record.recordType||w.category)===bucket);if(!w){omitted++;continue;}used.add(key(w));if(pairs.length>=16){omitted++;continue;}const compared=await session.compareRecords({left:{id:v.id,revisionId:v.revisionId},right:{id:w.id,revisionId:w.revisionId}});pairs.push({left:{id:v.id,revisionId:v.revisionId},right:{id:w.id,revisionId:w.revisionId},checks:compared.checks,compatibility:compared.compatibility});}
  const core={format:'atlas-path-set-comparison-1',methodVersion:METHOD,left:l.map(p=>({core:p.core,digest:p.digest})),right:r.map(p=>({core:p.core,digest:p.digest})),pairs,unpairedRecords:omitted+b.filter(v=>!used.has(key(v))).length,arithmetic:'NOT_PERFORMED',officialRelationship:'UNKNOWN'};
  return {core,digest:await M.objectDigest(core),left:l,right:r,metadataCompatibility:pairs.some(p=>p.compatibility.status==='CONFLICT')?'CONFLICT':core.unpairedRecords||pairs.some(p=>p.compatibility.status==='UNKNOWN')?'UNKNOWN':'MATCHED_METADATA_ONLY',officialUse:'REJECTED_UNKNOWN_ADMISSION',current:l.concat(r).every(p=>p.assessment.current),meaning:'Typed research paths and gaps only; no statutory/implementation/causal promotion or arithmetic.'};
 }
 async function verifyComparison(d,proof){try{need(proof.core?.methodVersion===METHOD&&await M.objectDigest(proof.core)===proof.digest,'PATH_SET_PROOF_DIGEST');const check=await comparePathSets(d,{left:proof.core.left.map(p=>p.core.spec),right:proof.core.right.map(p=>p.core.spec)});return {integrity:check.digest===proof.digest,current:check.current,metadataCompatibility:check.metadataCompatibility,officialUse:check.officialUse};}catch(error){return {integrity:false,current:false,reason:error.message};}}
-const api={pinPath,verifyPath,discover,comparePathSets,verifyComparison,assessDependencies};root.AtlasCSOIPaths=api;if(typeof module!=='undefined')module.exports=api;
+const api={pinPath,verifyPath,discover,comparePathSets,compareEndpointSets,verifyComparison,assessDependencies};root.AtlasCSOIPaths=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

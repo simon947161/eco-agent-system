@@ -1,0 +1,22 @@
+{
+  "sourceId": "csoi:smrc-op-2026:20261030",
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "sourceBytes": 37500187,
+  "sourcePageCount": 142,
+  "inputHashes": {
+    "row-readings.tsv": "sha256:53debefad910c600b189f6a1495c09eeef59e0838ba843c4b302931ad33b2cba",
+    "context-author.py": "sha256:dd65c63789c82c79427b2cad43f688db9e4c6b035c4c105dba10d56fe00643e9",
+    "build-services-author.py": "sha256:cc8105f65df6493867b369ff42cb77eaff8d5e7f75629cf2f09640c4b6abf234"
+  },
+  "outputHashes": {
+    "services-author.json": "sha256:97b090d6815a474d0fb24b8ce401e54600a616e64a97e42806ecb3c8f608209f",
+    "physical-row-coverage.json": "sha256:30d1940aa61fbbe56695e2b11206f8c798bb5ac38ff67b57ef37ca83c9fbd668",
+    "physical-row-coverage.csv": "sha256:608bbfbc3ff2cf2743c1f14f41f9af9d5f44a3200657d6b6e5a85ca010002455",
+    "unit-coverage.csv": "sha256:25879aac84659bf3330162a503284157abc8345893b78a88c84afe469f324af9",
+    "coverage-summary.json": "sha256:aea78d9e5dc4f09b0eda63fd961228ee8abfc1cb7cb7c57e49a914cef7c609f5"
+  },
+  "nativeWaterBundleDigest": "sha256:6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+  "originalPdfCommitted": false,
+  "independentSemanticReview": "PENDING_FINAL_PACKAGE_READBACK",
+  "sourceAnchorVerification": "PENDING_INDEPENDENT_ORIGINAL_VERIFIER"
+}
