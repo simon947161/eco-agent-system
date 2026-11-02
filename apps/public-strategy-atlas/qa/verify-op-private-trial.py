@@ -1,4 +1,4 @@
-import sys,termios,json,hashlib,datetime,subprocess,concurrent.futures,urllib.parse
+import sys,termios,json,hashlib,datetime,subprocess,concurrent.futures,urllib.parse,uuid
 from pathlib import Path
 import urllib.request,urllib.error,ssl,types
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -15,8 +15,14 @@ from playwright.sync_api import Page,sync_playwright,expect
 settings=termios.tcgetattr(sys.stdin.fileno());settings[3]&=~termios.ECHO;termios.tcsetattr(sys.stdin.fileno(),termios.TCSANOW,settings)
 print('Ready for supported Site service credential JSON (hidden stdin).',flush=True)
 args=json.loads(sys.stdin.readline());token=args['token'];base=args['url'].rstrip('/');assert base=='https://council-strategy-intelligence.minshu.chatgpt.site'
-app=Path(__file__).resolve().parents[1];out=app/'qa/op-completion-20261102/live';out.mkdir(parents=True,exist_ok=True)
-record={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'url':base,'authMode':'Supported Sites service access; no visitor identity or sign-in emulation','ownerSignedInBrowser':'NOT_TESTED_NO_OWNER_SESSION','anonymous':[],'assets':[],'browserSuites':[]}
+app=Path(__file__).resolve().parents[1]
+# Every future run has an immutable output identity. Moving/reusing a shared
+# directory while an older process is alive can mix otherwise valid receipts.
+run_id=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S')+'-'+uuid.uuid4().hex[:12]
+out=app/'qa/op-completion-20261102/live-runs'/run_id;out.mkdir(parents=True,exist_ok=False)
+print('Isolated evidence directory: '+str(out),flush=True)
+execution_log=(out/'execution.log').open('w',buffering=1);sys.stdout=execution_log;sys.stderr=execution_log
+record={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'runId':run_id,'url':base,'authMode':'Supported Sites service access; no visitor identity or sign-in emulation','ownerSignedInBrowser':'NOT_TESTED_NO_OWNER_SESSION','anonymous':[],'assets':[],'browserSuites':[]}
 def save(): (out/'live-validation.json').write_text(json.dumps(record,indent=2)+'\n')
 for path in ['/', '/atlas.js','/sources/csoi-default-snapshot.js']:
  r=requests.get(base+path,allow_redirects=False,timeout=30,headers={'Accept':'text/html'})
@@ -69,8 +75,10 @@ for name in ['csoi-op-browser.py','csoi-phe-context-browser.py','live-workspace-
  elif name.startswith('csoi'):
   source=source.replace("OUT=APP/'qa/csoi'","OUT=Path("+repr(str(out))+')')
  else: source=source.replace("OUT = Path(__file__).resolve().parent / 'live-workspace'","OUT = Path("+repr(str(out/'workspace'))+')')
- source=source.replace("Path('/tmp/atlas-e0')","Path('/tmp/atlas-e0-live-op')")
- exec(compile(source,str(script),'exec'),{'__file__':str(script),'__name__':'__main__'})
+ source=source.replace("Path('/tmp/atlas-e0')","Path("+repr('/tmp/atlas-e0-live-op-'+run_id)+")")
+ try:exec(compile(source,str(script),'exec'),{'__file__':str(script),'__name__':'__main__'})
+ except BaseException as error:
+  record['status']='FAILED';record['failure']={'suite':name,'type':type(error).__name__,'message':str(error)[:1500]};save();raise
  record['browserSuites'].append({'script':name,'scriptSha256':hashlib.sha256(script.read_bytes()).hexdigest(),'status':'PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH'});save()
 record['network']={'requests':len(network),'mutationRequests':[r for r in network if r['method'] not in ['GET','HEAD']],'externalOrigins':sorted(set(r['origin'] for r in network if r['origin'] and r['origin']!=urllib.parse.urlsplit(base).netloc))}
 assert not record['network']['mutationRequests'];assert not record['network']['externalOrigins']

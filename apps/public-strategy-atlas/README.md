@@ -1,10 +1,10 @@
-Latest locally accepted batch: **the registered142-page OP and explicit closure criteria for all80 engineering tasks** — [Chinese report](qa/op-completion-20261102/REPORT_ZH.md), [independent911-unit source review](qa/op-completion-20261102/independent/REPORT_ZH.md), [workbook](qa/op-completion-20261102/OP与工程验收矩阵.xlsx). The dynamic architecture-map [implementation plan](docs/COUNCIL_DYNAMIC_ARCHITECTURE_IMPLEMENTATION_PLAN_V1.md) is saved for review; no new interface has been implemented or published.
+Latest delivered batch: **the registered142-page OP and explicit closure criteria for all80 engineering tasks** — [Chinese report](qa/op-completion-20261102/REPORT_ZH.md), [independent911-unit source review](qa/op-completion-20261102/independent/REPORT_ZH.md), [workbook](qa/op-completion-20261102/OP与工程验收矩阵.xlsx). The dynamic architecture-map [implementation plan](docs/COUNCIL_DYNAMIC_ARCHITECTURE_IMPLEMENTATION_PLAN_V1.md) is saved for review; no new interface has been implemented or published.
 
 Previous completed batch: **LSPS historical narrative, maps and action conditions** — [Chinese report and readable matrix](qa/lsps-completion/REPORT_ZH.md), [current acceptance record](qa/lsps-completion/acceptance.json). 45 native files and6 local browser suites pass; [private v4 release evidence](qa/lsps-completion/DEPLOYMENT_ZH.md) records48exact live files and5live browser suites.
 
 Previous delivered batch: **63 CSP indicators independently reviewed and corrected with immutable history**. [Chinese report and Excel](qa/csp-metric-review/REPORT_ZH.md), [44 native /5 browser acceptance](qa/csp-metric-review/acceptance.json). That prior batch was delivered as owner-private Council version3; [release evidence](qa/csp-metric-review/DEPLOYMENT_ZH.md) records 46 exact live files and 4 live browser suites.
 
-Current private trial: [Council source research](https://council-strategy-intelligence.minshu.chatgpt.site/#/research), version4, owner-only. [Verified release and limits](qa/lsps-completion/DEPLOYMENT_ZH.md). No GitHub merge; overall system remainsPARTIAL.
+Current private trial: [Council source research](https://council-strategy-intelligence.minshu.chatgpt.site/#/research), version6, owner-only. [Verified release and limits](qa/op-completion-20261102/DEPLOYMENT_ZH.md). No GitHub merge; overall system remainsPARTIAL.
 
 ## 来源梳理与交付 / source research
 

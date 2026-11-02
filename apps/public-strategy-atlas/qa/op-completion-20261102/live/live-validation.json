@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-02T04:18:45.652601+00:00",
+  "at": "2026-11-02T04:32:10.587718+00:00",
   "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
   "authMode": "Supported Sites service access; no visitor identity or sign-in emulation",
   "ownerSignedInBrowser": "NOT_TESTED_NO_OWNER_SESSION",
@@ -144,7 +144,7 @@
     },
     {
       "file": "csoi-pages.js",
-      "sha256": "sha256:6e32420f20c41e6a9bb18e6f17d77be4cdc9ca16a399a8174c3c45168b12f817",
+      "sha256": "sha256:e4eb95bb10d828b62d17a906e8ecd5ae3b9e30680a37036d270d2fd0c56dd298",
       "status": "PASS_EXACT_DEPLOYED_BYTES"
     },
     {
@@ -274,7 +274,7 @@
     },
     {
       "file": "deployment-assets.json",
-      "sha256": "sha256:4688ac78ea32a6798da4b26883fb8f7f67f7d36f0257a5fbad51cbb869566ba8",
+      "sha256": "sha256:4283a62e4f82720bedc8d6344893a7a730fd1e8d0d691be8e108c33afb973cfc",
       "status": "PASS_EXACT_DEPLOYED_BYTES"
     }
   ],
@@ -283,7 +283,28 @@
       "script": "csoi-op-browser.py",
       "scriptSha256": "ca47cb40569b2804731178b4f3278011044736337054ad31028ca965c0a10d10",
       "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    },
+    {
+      "script": "csoi-phe-context-browser.py",
+      "scriptSha256": "764e069bf41aa739b0982ce59b1a823a9b17d58e5118e2d4066bef0dbcaa3d97",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    },
+    {
+      "script": "live-workspace-browser.py",
+      "scriptSha256": "e9657ccc77b3acdbb0059c293c85e199e5639de7c1f5aacad05ee9ee43324db7",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    },
+    {
+      "script": "op-readable-browser.py",
+      "scriptSha256": "b3eca4c2e27cdeadca15d0f9bc3358c13d8cb3d40e6b5ac3925eba12ed8967b8",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
     }
   ],
-  "applicationSourceCommit": "385e37df79f4a6731186f0767aec7734e3760a13"
+  "applicationSourceCommit": "cf0936474e00cad07acf6782100fc7e35db431ee",
+  "network": {
+    "requests": 492,
+    "mutationRequests": [],
+    "externalOrigins": []
+  },
+  "status": "PASS"
 }

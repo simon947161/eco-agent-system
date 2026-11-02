@@ -1,0 +1,52 @@
+{
+  "at": "2026-11-02T04:49:08.425Z",
+  "council": {
+    "siteId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "status": "active",
+    "version": 6,
+    "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_800266427f648191a9edcd40c1b79c59",
+    "source": {
+      "commit_sha": "ad876b976278d437878822c7eb6e24e7d3e64598"
+    },
+    "deploymentId": "appgdep_6ae81182c56c81918558879a487b447f",
+    "accessMode": "custom",
+    "policyRevision": 1,
+    "allowedAccounts": 1,
+    "allowedUsers": [
+      {
+        "role": "owner"
+      }
+    ],
+    "allowedGroups": 0,
+    "allowedEditors": 0,
+    "externalVisitorCount": 0
+  },
+  "water": {
+    "siteId": "appgprj_6adefcfe720881918b4e32874f12dd86",
+    "url": "https://climateos-snowy-monaro.minshu.chatgpt.site",
+    "status": "active",
+    "version": 2,
+    "versionId": "appgprj_6adefcfe720881918b4e32874f12dd86~appgver_6e7858f94ab881918228f1f9a742ff59",
+    "source": {
+      "commit_sha": "9f3a201d40c4b70d72f0b69c319805258769c242"
+    },
+    "deploymentId": "appgdep_6adf008a3d1c81918a673531038410d1",
+    "accessMode": "custom",
+    "policyRevision": 1,
+    "allowedAccounts": 1,
+    "allowedUsers": [
+      {
+        "role": "owner"
+      }
+    ],
+    "allowedGroups": 0,
+    "allowedEditors": 0,
+    "externalVisitorCount": 0
+  },
+  "waterUnchanged": true,
+  "councilPolicyUnchanged": true,
+  "ownerInteractiveLogin": "NOT_TESTED_NO_OWNER_SESSION",
+  "liveEvidence": "live/live-validation.json",
+  "runtimeSourceCommit": "cf0936474e00cad07acf6782100fc7e35db431ee"
+}

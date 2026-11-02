@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-02T04:26:59.935408+00:00",
+  "at": "2026-11-02T04:38:54.108544+00:00",
   "results": [
     {
       "viewport": [
@@ -1074,51 +1074,51 @@
         "measurement": "Real Chromium on cloud Linux;390px/touch emulation, not a physical phone or memory-constrained mobile OS. Sampled JS heap excludes native process/GPU memory and is not a full peak-memory proof.",
         "snapshotBytes": 22743874,
         "importLimitBytes": 33554432,
-        "exportWithOfflineVerificationSeconds": 10.174,
+        "exportWithOfflineVerificationSeconds": 9.877,
         "snapshotImportSeconds": {
-          "conditionEditedSnapshot": 4.345,
-          "sourceWithdrawnSnapshot": 6.873,
-          "oldV4Snapshot": 22.332
+          "conditionEditedSnapshot": 5.487,
+          "sourceWithdrawnSnapshot": 5.193,
+          "oldV4Snapshot": 1.857
         },
         "sampleCount": 148,
-        "maxSampledJSHeapUsedBytes": 396789832,
-        "maxSampledJSHeapTotalBytes": 461930496,
+        "maxSampledJSHeapUsedBytes": 400566732,
+        "maxSampledJSHeapTotalBytes": 456216576,
         "phases": [
           {
             "phase": "applicationReady",
-            "elapsedSeconds": 18.449,
-            "jsHeapUsedBytes": 53062164,
-            "jsHeapTotalBytes": 99848192
+            "elapsedSeconds": 16.036,
+            "jsHeapUsedBytes": 52418852,
+            "jsHeapTotalBytes": 121118720
           },
           {
             "phase": "all142PagesAnd911UnitsRead",
-            "elapsedSeconds": 161.516,
-            "jsHeapUsedBytes": 84610572,
-            "jsHeapTotalBytes": 151248896
+            "elapsedSeconds": 146.376,
+            "jsHeapUsedBytes": 66874404,
+            "jsHeapTotalBytes": 141148160
           },
           {
             "phase": "snapshotExportedAndOfflineVerified",
-            "elapsedSeconds": 179.014,
-            "jsHeapUsedBytes": 374849952,
-            "jsHeapTotalBytes": 450596864
+            "elapsedSeconds": 165.213,
+            "jsHeapUsedBytes": 383904144,
+            "jsHeapTotalBytes": 456216576
           },
           {
             "phase": "conditionEditedSnapshotImported",
-            "elapsedSeconds": 203.201,
-            "jsHeapUsedBytes": 396789832,
-            "jsHeapTotalBytes": 461930496
+            "elapsedSeconds": 185.612,
+            "jsHeapUsedBytes": 400566732,
+            "jsHeapTotalBytes": 455856128
           },
           {
             "phase": "sourceWithdrawnSnapshotImported",
-            "elapsedSeconds": 215.55,
-            "jsHeapUsedBytes": 242141244,
-            "jsHeapTotalBytes": 308572160
+            "elapsedSeconds": 194.575,
+            "jsHeapUsedBytes": 254219328,
+            "jsHeapTotalBytes": 320028672
           },
           {
             "phase": "oldV4SnapshotImported",
-            "elapsedSeconds": 255.21,
-            "jsHeapUsedBytes": 84243632,
-            "jsHeapTotalBytes": 189935616
+            "elapsedSeconds": 199.089,
+            "jsHeapUsedBytes": 270401688,
+            "jsHeapTotalBytes": 366198784
           }
         ]
       }
@@ -2196,51 +2196,51 @@
         "measurement": "Real Chromium on cloud Linux;390px/touch emulation, not a physical phone or memory-constrained mobile OS. Sampled JS heap excludes native process/GPU memory and is not a full peak-memory proof.",
         "snapshotBytes": 22743874,
         "importLimitBytes": 33554432,
-        "exportWithOfflineVerificationSeconds": 8.267,
+        "exportWithOfflineVerificationSeconds": 9.283,
         "snapshotImportSeconds": {
-          "conditionEditedSnapshot": 4.51,
-          "sourceWithdrawnSnapshot": 4.751,
-          "oldV4Snapshot": 2.132
+          "conditionEditedSnapshot": 3.946,
+          "sourceWithdrawnSnapshot": 3.502,
+          "oldV4Snapshot": 2.691
         },
         "sampleCount": 148,
-        "maxSampledJSHeapUsedBytes": 406804800,
-        "maxSampledJSHeapTotalBytes": 465559552,
+        "maxSampledJSHeapUsedBytes": 415210484,
+        "maxSampledJSHeapTotalBytes": 470151168,
         "phases": [
           {
             "phase": "applicationReady",
-            "elapsedSeconds": 24.912,
-            "jsHeapUsedBytes": 51295600,
-            "jsHeapTotalBytes": 110157824
+            "elapsedSeconds": 16.766,
+            "jsHeapUsedBytes": 198882332,
+            "jsHeapTotalBytes": 263192576
           },
           {
             "phase": "all142PagesAnd911UnitsRead",
-            "elapsedSeconds": 177.175,
-            "jsHeapUsedBytes": 89617900,
-            "jsHeapTotalBytes": 149274624
+            "elapsedSeconds": 151.686,
+            "jsHeapUsedBytes": 68027436,
+            "jsHeapTotalBytes": 143245312
           },
           {
             "phase": "snapshotExportedAndOfflineVerified",
-            "elapsedSeconds": 192.688,
-            "jsHeapUsedBytes": 377328992,
-            "jsHeapTotalBytes": 453345280
+            "elapsedSeconds": 166.592,
+            "jsHeapUsedBytes": 381819948,
+            "jsHeapTotalBytes": 454135808
           },
           {
             "phase": "conditionEditedSnapshotImported",
-            "elapsedSeconds": 212.094,
-            "jsHeapUsedBytes": 406804800,
-            "jsHeapTotalBytes": 465559552
+            "elapsedSeconds": 183.622,
+            "jsHeapUsedBytes": 415210484,
+            "jsHeapTotalBytes": 470151168
           },
           {
             "phase": "sourceWithdrawnSnapshotImported",
-            "elapsedSeconds": 220.41,
-            "jsHeapUsedBytes": 242134776,
-            "jsHeapTotalBytes": 309854208
+            "elapsedSeconds": 190.162,
+            "jsHeapUsedBytes": 263222008,
+            "jsHeapTotalBytes": 331173888
           },
           {
             "phase": "oldV4SnapshotImported",
-            "elapsedSeconds": 225.172,
-            "jsHeapUsedBytes": 85803276,
-            "jsHeapTotalBytes": 184692736
+            "elapsedSeconds": 195.169,
+            "jsHeapUsedBytes": 273577992,
+            "jsHeapTotalBytes": 389644288
           }
         ]
       }
