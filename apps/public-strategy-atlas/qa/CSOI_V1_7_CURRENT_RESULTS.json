@@ -1,6 +1,6 @@
 {
   "format": "csoi-v17-current-results-1",
-  "at": "2026-11-02T00:02:20.264936+00:00",
+  "at": "2026-11-02T00:13:36.612942+00:00",
   "systemAcceptance": "PARTIAL",
   "softwareStatus": "PARTIAL",
   "taskCounts": {
@@ -59,9 +59,9 @@
     "number": 130,
     "state": "OPEN_DRAFT",
     "verifiedBaseSha": "6da39daca06173eb3bdaa6d9f690271dc5318c03",
-    "testedCodeSha": "PENDING_COMMIT_READBACK",
+    "testedCodeSha": "c46aceb115c05860266bcd7c4746af3c3a8c9d20",
     "evidence": "strategy-completion/pr130-readback.json",
-    "ci": "PENDING_REMOTE_READBACK"
+    "ci": "No commit statuses or PR-triggered workflow runs returned at tested code SHA; no independent CI pass claimed."
   },
   "notTested": [
     "physical touch/monitors",
@@ -133,7 +133,13 @@
     "wholeDocumentUnderstanding": "NOT_CLAIMED"
   },
   "publication": {
-    "status": "PENDING_SEPARATE_RECEIPT",
-    "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b"
+    "status": "PUBLISHED_AND_LIVE_VALIDATED",
+    "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "version": 2,
+    "sitesSourceSha": "74f240e27cbfbbec5dffe225259eee1d42e58798",
+    "canonicalApplicationSha": "c46aceb115c05860266bcd7c4746af3c3a8c9d20",
+    "access": "OWNER_ONLY_UNCHANGED_POLICY_REVISION1",
+    "evidence": "strategy-completion/deployment.json"
   }
 }

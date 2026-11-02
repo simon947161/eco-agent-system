@@ -1,3 +1,13 @@
+# Current checkpoint: audited strategy research + owner-private Council v2 delivered
+
+Live https://council-strategy-intelligence.minshu.chatgpt.site/#/research ; existingSite appgprj_6ae5b063565c8191802c9d7f7eb3214b only. Version2 source 74f240e27cbfbbec5dffe225259eee1d42e58798, canonical tested app c46aceb115c05860266bcd7c4746af3c3a8c9d20; deployment appgdep_6ae7d38f16108191bffb543c69b2cd79. Subsequent documentation checkpoint does not change deployed application; resolve current PR130 remoteHEAD before edits. OPEN/DRAFT/unmerged.
+
+43/43native final full rerunPASS;26realChromium leaf suites reconciledPASS;44livefiles exact plus3service-authenticated realbrowser suitesPASS. Anonymous3paths403;owner-onlycustompolicyrevision1,1owner/0others. Ownerinteractivebrowserlogin NOT_TESTED; open usingowningChatGPTaccount. ProtectedwaterSite exactversion/source/deployment/URL/access unchanged. OldCouncilv1 retainedforrollback. Receipts/reports/screenshots inqa/strategy-completion/; DEPLOYMENT_ZH.md anddeployment.json are current.
+
+This batch completed; systemstillPARTIAL with49VERIFIED/28PARTIAL/3BLOCKEDengineering tasks. OriginaluncommittedPhase2 inaccessible, notdeclaredlost; newofficial-source reconstructioncommitted. Preserveimmutable137entityprefix andnew389entitydefault. Nextpublicbatch needsnoadditionalpermissions: independentlysemanticallyreview all63CSPindicators (definition/unit/denominator/year/geography/source/communityvsCouncil), thenLSPSmaps/non-numbered narrative gaps, thencompleteOPdenominatorandDP/resource/budget/annualreport explicitrelationships inexistingmodel, whilecurrentlaw/rights/admission/actualoutcomes remainunknown. PrivateWCOS002/031/040deferred. No merge, sharing expansion, privateimports, fees orwatersitechanges. Keep sameCouncilidentity andowner-onlyaudience foranyauthorised continuation.
+
+--- Prior implementation checkpoint ---
+
 # CSP / LSPS source reconstruction and private trial update — system remains PARTIAL
 
 Active canonical continuation of PR130 from `6da39daca06173eb3bdaa6d9f690271dc5318c03`, same feature branch; no replacement application. Resolve actual latest remote HEAD before resuming. New tested-code/deployment receipts are under `qa/strategy-completion/`; read `acceptance.json` and `deployment.json` for actual completed outcomes, not prior checkpoints below.

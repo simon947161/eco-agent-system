@@ -1,3 +1,5 @@
+Current private trial: [Council source research](https://council-strategy-intelligence.minshu.chatgpt.site/#/research), version2, owner-only. [Verified release and limits](qa/strategy-completion/DEPLOYMENT_ZH.md). No GitHub merge; overall system remainsPARTIAL.
+
 ## 来源梳理与交付 / source research
 
 Open `#/research` from the visible map heading. Browse CSP goals/strategies/indicators, LSPS priorities and implementation/conflicting source occurrences, and selected OP water activities. Each record has a source version/page, scope, relevant roles/partners or planned targets, and explicit missing evidence. Export item-level JSON/CSV and page inventories; importing an older snapshot shows missing items instead of completion. The same page lists all80 engineering tasks; these are not80Council projects.

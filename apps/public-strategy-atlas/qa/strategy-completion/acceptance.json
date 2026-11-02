@@ -59,7 +59,13 @@
   "officialAdmission": "PENDING",
   "currentLegalApplicability": "UNKNOWN",
   "actualCouncilOutcomes": "UNKNOWN",
-  "deployment": "PENDING_SEPARATE_RECEIPT",
+  "deployment": {
+    "status": "PUBLISHED_AND_LIVE_VALIDATED",
+    "version": 2,
+    "evidence": "deployment.json",
+    "ownerOnly": true,
+    "interactiveOwnerLogin": "NOT_TESTED_NO_OWNER_SESSION"
+  },
   "runtimeFileSha256": {
     "atlas-execution.js": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
     "atlas.js": "4f066dae4ac439bfbf60e1d3d5eb9d3ee969278ec66992063dc33b0d25a32ce8",

@@ -1,0 +1,272 @@
+{
+  "at": "2026-11-02T00:05:16.183891+00:00",
+  "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+  "authMode": "Supported Sites service access; no visitor identity or sign-in emulation",
+  "ownerSignedInBrowser": "NOT_TESTED_NO_OWNER_SESSION",
+  "anonymous": [
+    {
+      "path": "/",
+      "status": 403,
+      "redirectOrigin": null,
+      "redirectPath": "",
+      "blocked": true
+    },
+    {
+      "path": "/atlas.js",
+      "status": 403,
+      "redirectOrigin": null,
+      "redirectPath": "",
+      "blocked": true
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 403,
+      "redirectOrigin": null,
+      "redirectPath": "",
+      "blocked": true
+    }
+  ],
+  "assets": [
+    {
+      "file": "COI_TASK_REGISTRY_V1_7.json",
+      "sha256": "sha256:7f84215fc9fcadd14f022042f539fe42b27d3c66c09e325afeff7a484a707b19",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas-accounting.js",
+      "sha256": "sha256:5710e8900188eb4af880b6a50730037901448bad6166a6012d373b3fcd71f99f",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas-data.js",
+      "sha256": "sha256:6a061b80d5f47a79f8d4e34d7e09dc0c236d4fbaec3b46f788a1dece5f267fe4",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas-domain.js",
+      "sha256": "sha256:b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas-execution.js",
+      "sha256": "sha256:f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas-intake.js",
+      "sha256": "sha256:e521b7d35218dda4fc2f10a47d0d6b0d68f23de254f55872234d2f8c33a1712d",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas-model.js",
+      "sha256": "sha256:05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas-route-layout.js",
+      "sha256": "sha256:163a669fb4af413a27bf6231b0a4d50e7b4877b9f397ea641b7a1906a53a4925",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas-workspace.js",
+      "sha256": "sha256:3147a6b6cac7b8a5420537f76c7c3b1a0cacdf10ef1b0c9e40944f972ae4d621",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas.css",
+      "sha256": "sha256:e7d9d8e7f0d78cd53706ac10ea52ca92fde1f6ef4034f096c18e788d91455cd6",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "atlas.js",
+      "sha256": "sha256:4f066dae4ac439bfbf60e1d3d5eb9d3ee969278ec66992063dc33b0d25a32ce8",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-assistant.js",
+      "sha256": "sha256:2ff1b6b3004f133fd4a0d1b09197a5b549f6348fa307536d1699f3a4dbea3f58",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-boot.js",
+      "sha256": "sha256:49ad12d9a19fb51a1fc2e73e83ee516f36b390fdb8d70b43b86c80936c4d9f16",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-calendar.js",
+      "sha256": "sha256:3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-clauses.js",
+      "sha256": "sha256:f9b3f8c4b7a2aabec9ee0aa3928e03b31bebcbb87ce289441ee32712c876cc86",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-governance.js",
+      "sha256": "sha256:02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-intake.js",
+      "sha256": "sha256:5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-knowledge.js",
+      "sha256": "sha256:013e830b35845f9f0e1b0e5a1d1e952e319cf01d544380e4c783125e24417c23",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-layers.js",
+      "sha256": "sha256:8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-pages.css",
+      "sha256": "sha256:9a03eb74e01dc407cf4d0182e8931ec8f0ae4c8fd5d86bf47de0f69fa78d60cd",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-pages.js",
+      "sha256": "sha256:568e365639d6425c0013a2b705f4b0c3d5d8af5027ec79a1e6bd1e67407014f9",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-paths.js",
+      "sha256": "sha256:cb0a7e33e3df1fa9e2fa16ecf1f2394a25b1eee51d8bc38c4b6ead2b636ca03b",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-phe.js",
+      "sha256": "sha256:4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-remediation.js",
+      "sha256": "sha256:b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-review-work.js",
+      "sha256": "sha256:a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-router.js",
+      "sha256": "sha256:c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-strategy-research.js",
+      "sha256": "sha256:720b08f96f4c301b8fe897af8a8a43cce2039a76b260d723bb4da4d6f3ab0fcb",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-wcos.js",
+      "sha256": "sha256:c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "csoi-work.js",
+      "sha256": "sha256:541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "index.html",
+      "sha256": "sha256:1e0b02a1f7daab1a4da88b2a6b5ad40439de51e4d660a4899702b8a89849afef",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/bombala-dcp-outline.js",
+      "sha256": "sha256:a04dd1cb841b1de6100feac873c59d14076ee8a9bf35ea746d045d2a46cb1a08",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/cooma-dcp-outline.js",
+      "sha256": "sha256:bc0a929467eed24c3972ecc5ca086fc0de82577322995728835a3c6520b7443c",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/csoi-catalogue.js",
+      "sha256": "sha256:2c4411805b7224713c4af824bddae5e7f3d21f14a7a6c041c6f3e7858263f841",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/csoi-default-snapshot.js",
+      "sha256": "sha256:55a87f27e6aeeffcef8698d6bbac5175895aa1277ecfc83dbd4ff6c339747030",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/csoi-source-observations.js",
+      "sha256": "sha256:92e05c0436f6667a8e33878f01585ec4059e8325364fcb32631c67db5ed21593",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/csp-public-knowledge.js",
+      "sha256": "sha256:d73515ba79df8361b306fc4c240358890f3119ae3bade4d0a4a6ebdd3082e942",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/csp61-admission.js",
+      "sha256": "sha256:9d3e6311cc0e3976e2c11f26cefff508352bda33f029a89af99b5010d53f7b02",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/knowledge-corrections.js",
+      "sha256": "sha256:dd39ca5bc0e53eab3f4be428cede3ebd66f9d3ee551ae684801c2e3eb421a279",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/lsps-public-knowledge.js",
+      "sha256": "sha256:d110376685848056fa9765bfbea1c1125b77419212020ca3e17ff58dd650c3c4",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/op-water-public-knowledge.js",
+      "sha256": "sha256:d626f80c33497eb78911b5a0088430a38a10c3e5927a0487c7ad0f3cffc32189",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/public-catalogue.js",
+      "sha256": "sha256:4b59b5794cdeaef6ca5a7e0ccab23666d052adc7fc65f42c9a748e0ed83d10ca",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/snowy-dcp-outline.js",
+      "sha256": "sha256:0e5d7cb093a9b945bfb0d898c6e2a21ba79809557ad063500bcef47d83eb9271",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "sources/strategy-review-scope.js",
+      "sha256": "sha256:ba88d92fd8c2fcafc3bd9aec7b32d526b30bc285452751ff9da97d72ebaa0018",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    },
+    {
+      "file": "deployment-assets.json",
+      "sha256": "sha256:403bd419e4d526e1c218c553fc324ad887e225b55208dfc3e77a8cc86d9a7a2d",
+      "status": "PASS_EXACT_DEPLOYED_BYTES"
+    }
+  ],
+  "browserSuites": [
+    {
+      "script": "csoi-strategy-browser.py",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    },
+    {
+      "script": "csoi-phe-context-browser.py",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    },
+    {
+      "script": "e0-browser.py",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    }
+  ],
+  "applicationSourceCommit": "c46aceb115c05860266bcd7c4746af3c3a8c9d20",
+  "network": {
+    "requests": 374,
+    "mutationRequests": [],
+    "externalOrigins": []
+  },
+  "status": "PASS"
+}
