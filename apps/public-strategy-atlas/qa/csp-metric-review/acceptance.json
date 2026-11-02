@@ -1,7 +1,7 @@
 {
   "format": "csoi-csp63-review-acceptance-1",
-  "at": "2026-11-02T00:51:23.996975+00:00",
-  "batchStatus": "SOURCE_AND_APPLICATION_ACCEPTED_PUBLICATION_PENDING",
+  "at": "2026-11-02T01:09:08.470629+00:00",
+  "batchStatus": "CSP63_REVIEW_AND_PRIVATE_V3_ACCEPTED",
   "systemAcceptance": "PARTIAL",
   "sourceBaseCommit": "7cbde005fff40194822b62ad0a80b70ed1ce923c",
   "sourceReview": {
@@ -100,8 +100,15 @@
     "csoi-bombala-phe.test.cjs": "sha256:6c9384623caab8e3a73f7677aaf53116b00e76b2fc877407002bfe0d43dd7670"
   },
   "publication": {
-    "status": "PENDING",
-    "existingVersion": 2,
-    "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b"
-  }
+    "status": "PUBLISHED_AND_LIVE_VALIDATED",
+    "version": 3,
+    "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "evidence": "deployment.json",
+    "liveRuntimeFilesMatched": 46,
+    "liveBrowserSuitesPassed": 4,
+    "ownerSignedInBrowser": "NOT_TESTED_NO_OWNER_SESSION",
+    "protectedWaterSiteUnchanged": true
+  },
+  "canonicalTestedCodeSha": "2ec0be11f39cdb49577319c41b03dae9bb802baf"
 }

@@ -39,7 +39,7 @@
 
 44 个原生测试文件完整运行通过，包括默认库和合成库重建；5 组真实 Chromium 浏览器回归通过。桌面1440px与手机390px分别实际打开全部63个指标详情，检查完整定义和不能复算原因；旧快照、修改、来源撤回、导入导出和工作／日历保持原有边界。旧版466条修订和事件可完整重建，追加63条后为529条；实体389、关联48、原内容127项不变。
 
-验收回执：[acceptance.json](acceptance.json)、[原生结果](native-final.json)、[浏览器结果](regression/browser-run.json)、[63条前后修订](revision-changes.json)。初始测试预期问题及修正均保留，未放宽测试时限。原私人站发布等待本批提交和部署回执；此处尚不声称新版已上线。
+验收回执：[acceptance.json](acceptance.json)、[原生结果](native-final.json)、[浏览器结果](regression/browser-run.json)、[63条前后修订](revision-changes.json)。初始测试预期问题及修正均保留，未放宽测试时限。原私人站已更新为第 3 版；46 个线上文件逐字节匹配，4 组线上真实浏览器测试通过。匿名首页和两项关键资源均返回 403，owner-only 权限未变，水文站完整选定元数据未变。服务认证测试不等于本人交互登录；后者没有可用会话，仍为未测。详见 [发布报告](DEPLOYMENT_ZH.md) 与 [线上回执](live/live-validation.json)。
 
 ## 后续范围与真实依赖
 
