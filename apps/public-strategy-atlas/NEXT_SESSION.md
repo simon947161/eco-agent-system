@@ -1,3 +1,17 @@
+# LSPS historical context — source/runtime accepted; private publication pending
+
+Same PR130, branch and Council Site. The118-page official2020LSPS is boundedly reviewed:76page records /512reading units /27map occurrences. Original114records,83implementation actions and18conflicting observations retained;217 reading-context links do not create official relationships. Source bundle e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f. Independent semantic, pixel and original-position readback passed;15 source negatives rejected. See qa/lsps-completion/REPORT_ZH.md and acceptance.json.
+
+45 native test files (complete aggregate plus targeted fixture repair) and6 real Chromium suites passed. Desktop1440/mobile390 opened103new details and512units/27legends. Compact export fixes10MiB overflow without increasing limits; per-page visibility set fixes repeated whole-dataset scans without relaxing checks/timeouts. Final default492entities/48assertions/127legacyitems,632revisions/events; originalv3prefix reconstructable. Dataset sha256:e09600c7ff8f8491c10bc35872fa9c9e4e2a9d1b309c028b2d66696108d2e874.
+
+Publication pending: existing Councilv3 remains live until same owner-only Site update is verified. Keepv3rollback. No other Site changes, merge, private data or permission expansion. Check the final deployment receipt before claiming live acceptance.
+
+Next public research: fullOP plus explicit DP/resource/budget/annual-report evidence. Current legal/geographic applicability and authorised professional review remainUNKNOWN/PENDING. Engineering49VERIFIED/28PARTIAL/3BLOCKED unchanged. PrivateWCOS002/031/040deferred. Original uncommittedPhase2 still inaccessible, not declared lost or recovered.
+
+Saved future request, not started: [动态情报架构地图任务书 V1.0](docs/COUNCIL_DYNAMIC_ARCHITECTURE_MAP_V1.md). Complete research audit/regression first; inspect actual architecture and submit an implementation plan. New animated main UI requires Founder review of the running result and separate explicit publication approval. Existing research-release authorization does not cover it.
+
+--- Previous checkpoint (historical) ---
+
 # CSP63 second semantic review — private Council v3 delivered
 
 Continue the same PR130 and same owner-only Council Site. Resolve current remote HEAD first. Review artifact `qa/csp-metric-review/acceptance.json`:44/44 native files and5/5 applicable real Chromium suites PASS. All63 actual metric details opened at1440/390.27 definition/scope findings repaired;45 source-year hints separated from observation periods;63 indicators remain NOT_COMPUTABLE, no numeric targets/actuals/official admission added. Original CSP bundle unchanged;63 new revisions append to exact466 revision/event prefix, current529 revisions,389entities/48assertions/127legacyitems. Digest sha256:a4360b900ba0593fac2d9239dd1a0728e7ba2cf2463e05bd2181340796fa88d8.

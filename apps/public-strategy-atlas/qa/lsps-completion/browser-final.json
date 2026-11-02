@@ -1,0 +1,67 @@
+{
+  "at": "2026-11-02T02:21:12.998893+00:00",
+  "status": "PASS_TESTED_HERE",
+  "scope": "6 applicable real Chromium suites; final LSPS and strategy reruns include separated 44px reading links. About text-only correction separately checked at both widths. Earlier failures retained, no timeout widening.",
+  "results": [
+    {
+      "script": "csoi-lsps-browser.py",
+      "startedAt": "2026-11-02T02:13:41.842339+00:00",
+      "finishedAt": "2026-11-02T02:15:53.704390+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-lsps-browser.py.log",
+      "evidenceDirectory": "final-reading",
+      "scriptSHA256": "94c9d0f75c3c40b1ec8ac592d5d14ed3fa82d1fd833c60687991412aab6ed6cb"
+    },
+    {
+      "script": "csoi-strategy-browser.py",
+      "startedAt": "2026-11-02T02:15:53.704724+00:00",
+      "finishedAt": "2026-11-02T02:16:51.576454+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-strategy-browser.py.log",
+      "evidenceDirectory": "final-reading",
+      "scriptSHA256": "65bd018a8d1454c3d85146a7d0149b700c946c1e3c2a599832cfc68b11e8ed42"
+    },
+    {
+      "script": "csoi-metric-browser.py",
+      "startedAt": "2026-11-02T02:13:15.879526+00:00",
+      "finishedAt": "2026-11-02T02:14:12.433016+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-metric-browser.py.log",
+      "evidenceDirectory": "final-ui",
+      "scriptSHA256": "0e7334c12ee3181a19b7d42959c43a8edbb55fb7f9d756b60d358f0e792dd315"
+    },
+    {
+      "script": "csoi-phe-context-browser.py",
+      "startedAt": "2026-11-02T02:14:12.434946+00:00",
+      "finishedAt": "2026-11-02T02:15:51.031280+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-phe-context-browser.py.log",
+      "evidenceDirectory": "final-ui",
+      "scriptSHA256": "764e069bf41aa739b0982ce59b1a823a9b17d58e5118e2d4066bef0dbcaa3d97"
+    },
+    {
+      "script": "e0-browser.py",
+      "startedAt": "2026-11-02T02:15:51.032092+00:00",
+      "finishedAt": "2026-11-02T02:20:43.212680+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "e0-browser.py.log",
+      "evidenceDirectory": "final-ui",
+      "scriptSHA256": "ac61b6e954139ec1210d279ec65b2d9513b7ce8aa22c13787b5d44ec11e7f494"
+    },
+    {
+      "script": "system-browser.py",
+      "startedAt": "2026-11-02T02:20:43.214508+00:00",
+      "finishedAt": "2026-11-02T02:21:03.899153+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "system-browser.py.log",
+      "evidenceDirectory": "final-ui",
+      "scriptSHA256": "14a8f6fd26aed7cb2f3d633343581e24b7f5477bf0d2feaf8f83cc3a55c96c77"
+    }
+  ]
+}

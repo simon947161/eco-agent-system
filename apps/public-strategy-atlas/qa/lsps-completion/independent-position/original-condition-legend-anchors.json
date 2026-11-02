@@ -1,0 +1,105 @@
+{
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "assertionCandidates": [
+    {
+      "assertionCandidateId": "pdf56-conditional-development",
+      "candidateInventoryId": "p056-b09-u01",
+      "sourceAnchor": {
+        "pdfPage": 56,
+        "bbox": [
+          325.78,
+          229.36996,
+          526.54559,
+          362.39999
+        ],
+        "sourceTextHash": "sha256:bbb1e20ab6167a73feee0f8c32c97a50d087ffe701098019cb2164642d99daa6",
+        "width": 280,
+        "height": 186,
+        "cropHash": "sha256:46e93c058baedc72576353f81e6333177b92aca58078bcadf7b1334252d1f8ca",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "if required",
+      "requiredMeaning": "Additional employment land remains conditional on need, not a committed expansion.",
+      "finalAuthoredRecordReview": "PENDING"
+    },
+    {
+      "assertionCandidateId": "pdf73-conditional-development",
+      "candidateInventoryId": "p073-b05-u01",
+      "sourceAnchor": {
+        "pdfPage": 73,
+        "bbox": [
+          71.524,
+          423.57999,
+          282.92307,
+          559.27002
+        ],
+        "sourceTextHash": "sha256:de84a3a7b123bc6cb60c659556e6bfa913cb8b8dffdd107554880d8d2e202f67",
+        "width": 294,
+        "height": 189,
+        "cropHash": "sha256:fdd770c7e1516794033c07a61673b29efa0168f38c033a2c02c6fa7d8a3bd4a6",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "if re-opened",
+      "requiredMeaning": "Rail-linked transit development is conditional on reopening, not evidence the railway operates.",
+      "finalAuthoredRecordReview": "PENDING"
+    },
+    {
+      "assertionCandidateId": "pdf78-conditional-development",
+      "candidateInventoryId": "p078-b07-u01",
+      "sourceAnchor": {
+        "pdfPage": 78,
+        "bbox": [
+          71.524,
+          576.98999,
+          282.95502,
+          762.836
+        ],
+        "sourceTextHash": "sha256:989c92439cfb3cb2ae0145c81a342522fcc369604f215e7914f880704d523a07",
+        "width": 294,
+        "height": 259,
+        "cropHash": "sha256:47363804b368564bcbdec7c2630fd340eea49e307d326c51f047eee64083b946",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "should it become operational again",
+      "requiredMeaning": "Rail growth is conditional on resumed operation; commuter service and rail-trail alternatives remain scenarios.",
+      "finalAuthoredRecordReview": "PENDING"
+    },
+    {
+      "assertionCandidateId": "pdf114-bombala-investigation-options",
+      "sourceAnchor": {
+        "pdfPage": 114,
+        "bbox": [
+          631.439987,
+          59.520001,
+          808.243184,
+          190.464004
+        ],
+        "width": 246,
+        "height": 183,
+        "cropHash": "sha256:593cac52c7242b541cf507e15a2f06bd6771567bc9e7e4781fd4dc272bd2bcf6",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalLegendFacts": [
+        {
+          "option": 1,
+          "colour": "yellow",
+          "style": "dashed"
+        },
+        {
+          "option": 2,
+          "colour": "blue",
+          "style": "dashed"
+        },
+        {
+          "option": 5,
+          "colour": "purple",
+          "style": "dashed"
+        }
+      ],
+      "requiredMeaning": "These are heavy vehicle investigation route options, not approved construction routes; regional Option 3/4 cannot replace local Option 1/2/5.",
+      "reviewBasis": "Original PDF crop visually read by independent visual reviewer and source-position verifier.",
+      "finalAuthoredRecordReview": "PENDING"
+    }
+  ],
+  "scope": "Selected original-source guards; not exhaustive semantic review."
+}

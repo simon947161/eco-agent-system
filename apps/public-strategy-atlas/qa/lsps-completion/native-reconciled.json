@@ -1,0 +1,458 @@
+{
+  "method": "Complete aggregate run plus targeted rerun after fixing test-fixture aliasing; original failure log preserved. Research-page render optimization is separately tested in real Chromium. No timeout/limits widened.",
+  "at": "2026-11-02T02:11:57.191229+00:00",
+  "initialFullRun": "native-final.json",
+  "results": [
+    {
+      "test": "accounting.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: source-bounded 29.9 t CO2e/person, work/accounting type validation, 3 Atlas node overlays, 17+ negative/positive cases.\nNotice: modelling/unit tests only; official source admission and real Chrome QA are not implied.\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "9c31d8c2e971e22136d37081a4e6110d39f47432abf4f9f62369e1e5c8b935f9"
+    },
+    {
+      "test": "applicability.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: spatial/effective-time indexes, historical as-of queries, wrong region/date/parcel/revision/draft/legal-effect rejection, overlapping source revision conflict and rejected candidate path exclusion\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "2f8bc46901a8421ae47a2e85b874e26f21b97baa0bd4b90eb49727db32093db2"
+    },
+    {
+      "test": "comparison.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS current comparison pins exact content identities and does not perform finance arithmetic\nPASS historical pin resolves retained version after current revision changes\nPASS missing identities and revision pins are rejected without substituting current objects\nPASS tampered current record or history fails snapshot verification before rendering\nPASS legacy stations, content and source catalogue use existing exact identities\nPASS same unknown method or scope is not a compatibility match and null is never zero\nPASS unit, stock/flow, fiscal interval, region and actual/planned roles remain distinct\nPASS protected payloads, unknown classification and forged approved releases are denied\nPASS percent denominators, financial rates and legal roles participate in compatibility\nPASS calendar execution roles use the actual task schema without inventing outcomes\nPASS inert public source text stays data, source state and unknowns are retained\nPASS verified comparison transaction isolates caller and result mutations, retains exact output and rejects tampered input\nPASS dataset remains byte-identical after all comparisons\ncomparison: 13 groups PASS\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "1c96c885e8ed0ffc0f78fcbd84b7ce0c18ae4c49760be1d236f64960e1dac2bd"
+    },
+    {
+      "test": "content.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: 60 synthetic content nodes, 59 edges, stable coordinates, bounded truncation (2ms)\nPASS: 200 synthetic content nodes, 199 edges, stable coordinates, bounded truncation (2ms)\nPASS: export/verify roundtrip, external checkpoint and corrupted dataset/receipt rejection\nPASS: 15 decomposable topics, 127 items, six-level trail, child/ancestor tamper propagation, order independence, 8 negative cases, English UI/content\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "11dfb76aabeb131d2ba86f59a59a33274b800af38027d4fe1e0c1eea0df9cf20"
+    },
+    {
+      "test": "csoi-assistant.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: draft weekly concerns/review/material gaps and capacity basis, meeting questions/followups, UNKNOWN decisions, immutable preparations, disabled Outlook/account/mail actions, privacy/forged approval rejection, portable verification and Atlas snapshot integration\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "4bd6c797f86aa12f1ae71d3c281db93b0a34053ec6715b29d40d75a84494abd0"
+    },
+    {
+      "test": "csoi-bombala-phe.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: five Bombala PHE selections, inherited conditional scope, two unresolved evidence gaps, pinned independent work/calendar, retained history/export, isolated parent/source withdrawal and wrong-page/foreign-source/missing-record rejection; remediated default unchanged\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "20e4e56966410b7be90644afd097fb77cc837366b7834d1be5e2b82e8cbddde5"
+    },
+    {
+      "test": "csoi-bombala.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS:17 Bombala authored observations,72total clauses,135entities/48assertions; discontinuous page pins, distinct table columns, historical identity/date/scope conflicts, six-node path, no legal/arithmetic promotion, source-isolated withdrawal and review/export verification\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "9d096418db6a9f9c139e7fedce35edacd542e77ea6de539aab40b2f6dae527c9"
+    },
+    {
+      "test": "csoi-boot.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: startup cache equals full registration, synthetic fixture equals rebuilt history/base, exact default digest, isolated clones and stale/tampered/unsupported cache rejection\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "32a64fab8b3a1bcf7f4f94d60d6b9f320c644dccbf16f9393c4437832e239e29"
+    },
+    {
+      "test": "csoi-calendar.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: Annual Edition leap/fiscal/ISO dates, bounded bidirectional calendar/work/evidence/report navigation, source/approval cards, recurrence applicability/cycle/due guards, private/forged approval rejection, safe portability and existing Atlas snapshot integration\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "3e30d32d45c20eabf7afe36dfadca628a4a19c1a79b0be919625f8f4a0f19fa6"
+    },
+    {
+      "test": "csoi-capsule.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: calendar/assistant capsules stay governed in legacy snapshots; claimed statutory verification cannot authorise tasks/recurrence, and new audit events use actual execution time\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "6e945bf082308b49fc0938a45b53e785c6a811f5caef820d1b82b51908a25d90"
+    },
+    {
+      "test": "csoi-clauses.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: existing-registry clause containment, exact source/page/parent pins, real eight-level outline,6000-level traversal, source/parent withdrawal, missing/foreign/cyclic/PII/authority rejections and historical110/90/40reference rates without actual demand or legal admission\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "cb1cd7d57ee31966045fe18a1eb9df3891e95361f820a06447715ed148dbbaf9"
+    },
+    {
+      "test": "csoi-cooma.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: second real DCP outline,72total clauses in same135entity domain, source-specific ancestry, geographic conflict across pinned path sets, no law/arithmetic promotion, foreign-parent rejection, independent calendar plan and isolated source withdrawal\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "703c279abebfa1cf23f7b418018a30c68afca9020d4511da484e7f63594d226b"
+    },
+    {
+      "test": "csoi-governance.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: CSOI module boundaries; 90 layer/channel deny checks; rights, nested PII, confidentiality, small-cell, forged release/authority and tampered bundle rejections.\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "b30c94ab408f351f0141bc0156eec1c4989c6d3cae4dff26748285e483cee7f2"
+    },
+    {
+      "test": "csoi-intake.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: actual public observation receipts extend original catalogue, preserve histories/rights gates, and bind bounded research summaries to existing Atlas snapshots\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "b6acabfb721887688684a3b771d1810d6ceb5ac75602c48e5cf22ab59afd6a2a"
+    },
+    {
+      "test": "csoi-knowledge.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: same-domain source knowledge, exact parent/source provenance, bounded original coordinates, typed metric/action contracts, rejection of false actuals/authority/rights/source scope/quantity/relations/capsule removal, idempotence, retained source-withdrawal proofs and no admitted arithmetic\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "9561ee807421e3d00aed896aa690013c38af6ed1d842116ed3ede023843398be"
+    },
+    {
+      "test": "csoi-layers.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: L0\u2013L5 public/synthetic lineage in existing Atlas snapshots; source withdrawal invalidates downstream; replay; identity/activity separation; units, scope, denominators, duplicates, conflicts, stale rules and authority denials.\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "0ae7cf2919ca4586f71f3519a270afd4517d24fecc79d32721d72f272557190e"
+    },
+    {
+      "test": "csoi-lsps-context.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: LSPS source context, original v3 reconstruction, immutable actions/conflicts, wrong page/legend/location, dropped conditions, source/linked-priority withdrawal, old import gaps and no legal/spatial/actual promotion.\n",
+      "stderr": "",
+      "evidence": "native-lsps-retry.log",
+      "initialStatus": "FAIL",
+      "testSHA256": "9f0417614b1063e311bd6771acea58066e1aa21726fcbf33b3a5c3ed4a8e16df"
+    },
+    {
+      "test": "csoi-metric-review.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS:63 reviewed indicator revisions preserve exact v2 history; source/parent/edit isolation, import/export, unknown units/targets/actuals and source-year separation retained; concurrent edits and invented approval/targets rejected.\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "94f532e8cb3a7d1292c6cbdf92e43e6bd4765d8e69e5bd88cf751b2359da9936"
+    },
+    {
+      "test": "csoi-model.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: CSOI records use the existing Atlas registry, immutable revisions, legacy base, independent snapshots, stale-write and protected/official rejection\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "907373039e91feb88e93b4ad73fc9899d37afa39d2a467f75975e40a07b8c11a"
+    },
+    {
+      "test": "csoi-paths.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: independently pinned source/goal/input path sets, relationship/counterevidence/admission gates, source withdrawal with retained history, corrupt/missing/foreign pins, finance/unit conflicts, bounded discovery and no data mutation/arithmetic/official promotion\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "a1d626d719084604745909e15c314473117d7e46e52c9d154ffc7ce8b33e604e"
+    },
+    {
+      "test": "csoi-phe-context.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: explicit PHE historical selections, exact source/page/clause pins, no graph mutation or legal link, two-source review/calendar plans, export verification and isolated withdrawal/missing/wrong-page rejection\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "145951bd91eaf41da6601bdf7fbaa1441ff281e1f25ef86dbbd2379f3599ed6e"
+    },
+    {
+      "test": "csoi-phe.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: eight source-backed public PHE/WCOS domains, conditional multi-stage research workflows, exclusions/wrong-region/conflicts, current-law and official-decision unknowns, source anchors and privacy negatives\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "0c6d8e83cee34f13ec34547eef12549571bcaae261dab80c72d10303d6881695"
+    },
+    {
+      "test": "csoi-planning.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: exact reviewed OP bytes/anchor bind five planning records, unknown volume units stay unknown, target/funded/actual/money are distinct, source candidates stay pending and false typed values are rejected\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "6588770744165f4b975b71a41a737dcef8f4416173205d2e8b84a99187c88fa9"
+    },
+    {
+      "test": "csoi-receipts.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: offline original-byte append preserves catalogue/observation prefixes, rejects mismatched bytes/unpinned directory/private host/PII/rights promotion/excerpts, retains gates and never commits temporary source bodies\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "f6cadd7ee4945f22d30ca68800041c8fcc792f141df0ec8d03a7001fa18e0d7d"
+    },
+    {
+      "test": "csoi-recompute.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: independently recomputed pinned historical layer receipts reject self-consistent false math; source changes invalidate current use while historical exports remain verifiable\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "fd774514b471310d11c9acd2c8baa7c0b95a229161dcd36867ff592bdeb5c9b6"
+    },
+    {
+      "test": "csoi-remediation.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: retained135entity audit history;30append-only corrections;correctnon-subdivision drainage;AMPTable4PDF13;25source-note pins;110minimum capacity;stale old review plan;idempotent migration;127items/48assertions/source register unchanged and no official admission\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "54540ddf4a84169c5cabcda55ea6164a27be6d20317c685785642938790ecb4d"
+    },
+    {
+      "test": "csoi-review-work.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: public independent source-review work/calendar plans, exact clause/source pins, assumed-hours/unknown-actuals accounting, fiscal/civil navigation, source withdrawal, immutable identity and forbidden Council/action/private/actual-field rejection\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "f2bdd7de9399d73f309b3c497ff86c0e30d4fc06293f1c54fedbd0b8124d7fe6"
+    },
+    {
+      "test": "csoi-router.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: CSOI functional route manifest, deep links, bounded public query, hostile path and companion URL guards\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "3c572433cd402799d91d240b2a1b8296e5ac221a7724e9e7acf2bd05bbdb7dce"
+    },
+    {
+      "test": "csoi-source-integrity.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: consistent legacy imports, contradictory re-signed source bindings rejected, appended source-input upgrades, node-only recursive source/parent withdrawal with retained proof integrity, unpinned legacy carbon invalidation, flattened quantity revisions and bounded cycle-safe dependency assessment\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "776c03336cd7a07e073c6225680d4098633990066b6945d978665a2b2ee6753d"
+    },
+    {
+      "test": "csoi-strategy-research.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS:252 core source records plus LSPS context extension; exact immutable137entity baseline reconstruction;14/44/63 CSP,12/83+18LSPS,8OP+9references; source withdrawal propagates without deleting history, old snapshots show missing, edited summaries lose checked status, no actual/legal/causal promotion or unadmitted arithmetic\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "7a0b26cd1283072876df5b2ca53bf99be33478c3073926d3544c90b07d57da99"
+    },
+    {
+      "test": "csoi-wcos.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS plan-level read-only fixture contains complete annual/field/report concept chain\nPASS adapter refuses writes, private and protected records, forged release, arbitrary synthetic labels and PII\nPASS public metadata needs trusted review callback and excludes business fields/unsafe URL\nPASS Food/LTW/Backflow conditional cross-search never grants all approvals by business/property name\nPASS LTW template distinguishes stages/classification/concurrence but cannot decide or approve\nPASS backflow schedule requires testable device, date, applicable interval and matching scope\nPASS four judgment classes retain review boundaries and formal decisions are blocked\nPASS summary is synthetic only and never releases a small real aggregate\ncsoi-wcos: 8 groups PASS\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "0da93a0471f5f916918d307dac3b0a82aefd9a8f79700059e06e2ac719101059"
+    },
+    {
+      "test": "csoi-work.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS service/object/type denominators separate properties, events, issues and actual outcomes\nPASS duplicate denominator input deduplicates objects/events and rejects conflicting values\nPASS unknown eligibility and inspection need are not false zeros or compliance\nPASS completion, issue closure, dates and real protected objects require evidence\nPASS hours preserve six phases and measured/estimated/assumed categories; no dollar conversion\nPASS resource demand needs explicit annual capacity and never creates personnel/spend claims\nPASS three ledgers reuse existing identities and reverse trace stops at unsupported official mapping\nPASS calculation input receipts detect corruption and changed revisions\nPASS inherited water/carbon/land unit and finance engines preserve source gates\ncsoi-work: 9 groups PASS\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "6005481fa6da942f8d0ace2d6eb478c48d236a8aa07e13251675f736e0f48088"
+    },
+    {
+      "test": "deep-content.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: exact legacy receipt hashes, 10000-wide indexed pagination/bounded layout, 5000-level iterative traversal/local+source receipts, flat deep snapshot roundtrip and ancestor mutation/cycle rejection\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "ad534b3d173858a50feba00214ab4a2ef2ac3ff3eecdb536840e64d9fba38a43"
+    },
+    {
+      "test": "discovery.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: explainable versioned multi-signal candidates with trace paths/alternatives/falsifiers/counterevidence, wrong-region/draft/period/source-loss rejections, persistent local review and forged official promotion prevention\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "7474414046dbe40e38bb297fc54e86ae9200a0c964e9df6756dfd80e91d3a6b4"
+    },
+    {
+      "test": "domain.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: additive domain migration, 127-item/base digest preservation, legacy workspace/snapshot compatibility, versioned accounting provenance/reverse links, immutable local reviews, stale/forged/corrupt history rejection\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "b58d08d5bdf06eb7a42cf88e5b3c7f12e3e25f3b0e423f57cd2822bdc17d586f"
+    },
+    {
+      "test": "execution.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: unified synthetic WBS, typed dependency/resource/finance/output routes, forward/reverse bounded BFS, multi-parent identity reuse, dependency cycle detection, separate execution/evidence states and known-link fail-closed\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "40dc271ef2dd23d267528c191ae1bf7d02d0ca74a97bfda934581fb19bce70cd"
+    },
+    {
+      "test": "intake-access.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: replayed source availability, retained historical access, stage-specific rights/review owners, correction withdrawal/re-retrieval and immutable catalogue identity\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "e1439fbb8ee26feb84b9f588fa60c3178db5b5c488cd1f4f901063bd1f682228"
+    },
+    {
+      "test": "intake.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: 15 source requirements, exact catalogue mirror/hash, ordered intake/correction replay, permitted synthetic pipeline, rights/date/URL/private-data gates, corruption/forged stage rejection and honest coverage denominators\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "6a4689aff55ee59d4dc9f94c83fdbc19df0fe5287af9db56586c47845e7c3beb"
+    },
+    {
+      "test": "integration.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: unified numeric/unit/source/work search, typed scope filters/pagination, revision diffs and scenario editing with receipt invalidation and invalid finance rejection\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "0fda7c22057ee116ef5fe95da6979c00db445696531e8fd3df9a56a3eb09ba34"
+    },
+    {
+      "test": "ledger.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: three-ledger typed formulas, cost/variance/conversion/allocation, pinned provenance, immutable receipt snapshots, changed-input invalidation, stale historical verification and unit/scope/year/zero/official/double-count rejection\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "eacf37017379c8bd8cf511bd382cf8754471d24b60127ed5bc50ce434962939a"
+    },
+    {
+      "test": "model.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: 10 additional admission rejection cases; snapshot tamper; discovery explanations and falsifier\nPASS: schema, multipath, candidate exclusion, false official promotion, missing target, time/region rejection, unknown context, canonical digest, byte tamper, append/retract, history tamper, duplicate event\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "9220a967fecaff1de03c818d3d5af4b75b3419ca97d6c334a90eaf58a778ef2f"
+    },
+    {
+      "test": "route-main.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: production route projection, model-backed continuous endpoints, stable partial expansion, distinct corridors/candidate exclusion, 127-item data unchanged, default map/hidden panel/utility entry contracts. Browser acceptance is separate.\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "0cbb1f22d65c09ab70e5413f541d8786277f8376b39802991b0f289695547b56"
+    },
+    {
+      "test": "route-map.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS route-preview: 15 existing nodes / 16 edges, station selection, candidate toggle, line filter, zoom and inspector closing.\nNOTE this is a mock-DOM smoke test, not real browser visual, keyboard or WCAG acceptance.\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "f68a4dc1f8464065ec2d4bba327aced33786324888f4addc7c5fa43e9a352325"
+    },
+    {
+      "test": "workspace-merge.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: checkpoint-bound three-way preview, explicit field choices, archived imported history, appended RESOLVE events, old workspace compatibility, stale preview and corruption/promotion rejection\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "5795de5d637428efdb9fcce8c848f098183cb54f0eeed3beef9a3df3a22deebe"
+    },
+    {
+      "test": "workspace.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: edit/diff, immutable source/history, supersede/revert/retract/replay, stale editor conflict, monotonic history, import roundtrip/checkpoint/tamper/signature/promotion rejection, source admission pending gates and excerpt hash\n",
+      "stderr": "",
+      "evidence": "native-final.json",
+      "testSHA256": "baf29f4c4a1501b4058b36982e7e3209ae3ebc64292b6fbb29c943960e2cf846"
+    }
+  ]
+}

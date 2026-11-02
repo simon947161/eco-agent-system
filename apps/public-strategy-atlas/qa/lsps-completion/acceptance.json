@@ -1,0 +1,70 @@
+{
+  "batch": "LSPS-CONTEXT-REVIEW-20261102",
+  "status": "LOCAL_SOURCE_AND_RUNTIME_ACCEPTED_PUBLICATION_PENDING",
+  "updatedAt": "2026-11-02T02:21:12.998893+00:00",
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "sourceBundleSHA256": "e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f",
+  "scope": {
+    "pages": 118,
+    "narrativePageRecords": 76,
+    "semanticUnits": 512,
+    "mapOccurrences": 27,
+    "implementationActionsRetained": 83,
+    "conflictingObservationsRetained": 18
+  },
+  "semanticReview": "512 actual units independently read back; historical source interpretation only",
+  "mapReview": "27 map nodes and54 fresh-document-v2 pixel fingerprints independently verified;5 visual negatives rejected",
+  "native": {
+    "status": "PASS_TESTED_HERE",
+    "files": 45,
+    "method": "Full aggregate44PASS/1fixture-failure plus corrected isolated test rerun; no runtime/model weakening",
+    "file": "native-reconciled.json"
+  },
+  "browser": {
+    "status": "PASS_TESTED_HERE",
+    "suites": 6,
+    "viewports": [
+      1440,
+      390
+    ],
+    "file": "browser-final.json"
+  },
+  "publication": "PENDING; existing owner-only Council v3 still live",
+  "overallProject": "PARTIAL",
+  "currentLegalApplicability": "UNKNOWN",
+  "officialAdmission": "PENDING",
+  "privateData": "NOT_ACCESSED",
+  "engineeringTasks": {
+    "VERIFIED": 49,
+    "PARTIAL": 28,
+    "BLOCKED": 3
+  },
+  "default": {
+    "datasetDigest": "sha256:e09600c7ff8f8491c10bc35872fa9c9e4e2a9d1b309c028b2d66696108d2e874",
+    "entities": 492,
+    "revisions": 632,
+    "events": 632,
+    "assertions": 48,
+    "legacyItems": 127
+  },
+  "sourceOriginalVerification": {
+    "status": "PASS",
+    "sourceNegativeCases": 15,
+    "file": "independent-position/verification.json"
+  },
+  "lspsBrowser": {
+    "status": "PASS",
+    "viewports": [
+      1440,
+      390
+    ],
+    "detailsOpenedEach": 103,
+    "unitsExpandedEach": 512,
+    "mapLegendsReadEach": 27,
+    "file": "final-reading/csoi-lsps-browser/results.json"
+  },
+  "cacheEquivalence": {
+    "status": "PASS_TESTED_HERE",
+    "method": "Exact v3 baseline append cache equals complete normal registration; synthetic-fixture cache equals its independent full rebuild; original v3 prefix is separately checked."
+  }
+}

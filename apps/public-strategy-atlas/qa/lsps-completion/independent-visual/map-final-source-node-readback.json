@@ -1,0 +1,1001 @@
+{
+  "schema": "lsps-independent-map-final-source-node-readback-2",
+  "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+  "previousV1Evidence": "historical-v1/ — nonfinal, not accepted by this verifier",
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "reviewedAuthorSnapshotSha256": "36defe88b37d1abf24f00fd63b6b71fe0406bac45c6284477232bce5dd0adad7",
+  "bundlePath": "sources/lsps-context-review.json",
+  "bundleSha256AtReadback": "62ec9838d2c930071bdd76bfccb9344b6913fb67880d7594fdd2489cd0c7ace7",
+  "reviewedMapRecordsCanonicalSha256": "d231aa218b6490c417f3e4e2ed770cc006d1fedf5d663c5fffa47d92e6872740",
+  "scope": "54 map/legend crops recomputed from the byte-verified original with a fresh Document for EACH crop; 27 generated source-bundle LSPS_MAP nodes retain reviewed semantics and unknown/pending boundaries. Only v2 accepted. No browser or deployment claim.",
+  "counts": {
+    "sourceCropsChecked": 54,
+    "mapNodesChecked": 27,
+    "negativeCasesRejected": 3,
+    "rendererDowngradesRejected": 2
+  },
+  "sourceCropChecks": [
+    {
+      "mapId": "lsps-map-p008",
+      "pdfPage": 8,
+      "kind": "map",
+      "bbox": [
+        27.75,
+        47.25,
+        570.25,
+        766.5
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:a4d507df5f8f6514160eabd5d723bedf4aa04a2a5e035bd2f4001c2a032a82a5",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p008",
+      "pdfPage": 8,
+      "kind": "legend",
+      "bbox": [
+        27.75,
+        694.575,
+        570.25,
+        766.5
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:1eb9a313638a106134e84fce398dc7bd945ba0b76346ffb9d5cf70fbf6cb1155",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p016",
+      "pdfPage": 16,
+      "kind": "map",
+      "bbox": [
+        2.7699999809265137,
+        0.13006591796875,
+        841.9199829101562,
+        595.2000122070312
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:ee8a30b5c7ce0171d361669687f106ed9f116cf0fba484f2dffc5ada37f3d1e9",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p016",
+      "pdfPage": 16,
+      "kind": "legend",
+      "bbox": [
+        19.552999639511107,
+        89.39055786132812,
+        229.34049537181855,
+        583.29861328125
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:e6d136d7c5fd03811d9f607f026bac3bf2da5024f5eea60c26fa192c9e47dd7a",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p026",
+      "pdfPage": 26,
+      "kind": "map",
+      "bbox": [
+        72.0,
+        336.54998779296875,
+        376.70001220703125,
+        768.5499877929688
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:76545e0dc5211de1b606d841d574e77d9cf8fb100b440c48e8eda0d973457277",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p026",
+      "pdfPage": 26,
+      "kind": "legend",
+      "bbox": [
+        72.0,
+        682.1499877929688,
+        376.70001220703125,
+        768.5499877929688
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:a01a53eb3c6b9480b609164d9380f58b95ebd2266fe351a8cc8f3e8a896772de",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p027",
+      "pdfPage": 27,
+      "kind": "map",
+      "bbox": [
+        58.619998931884766,
+        445.7190246582031,
+        314.7608947753906,
+        808.1256713867188
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:3530dcbf616f4db112c229c3a65fccf22cb9aa8682163726103754b16d6246f9",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p027",
+      "pdfPage": 27,
+      "kind": "legend",
+      "bbox": [
+        58.619998931884766,
+        710.2758767700195,
+        222.5501722717285,
+        808.1256713867188
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:0f96549f743ad4f9dcaa345a242514cbebc9fe4578790d2b65d2f3816c251965",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p028",
+      "pdfPage": 28,
+      "kind": "map",
+      "bbox": [
+        36.849998474121094,
+        14.5499267578125,
+        564.0499877929688,
+        771.949951171875
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:6a15ff7578ad4c92a6c9f3e36c8ebd7b53f7cf818fccc07868648e3f51de19db",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p028",
+      "pdfPage": 28,
+      "kind": "legend",
+      "bbox": [
+        42.12199836730957,
+        537.1559436035155,
+        247.72999420166016,
+        756.8019506835938
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:50e540556679b8c5a39af87f36ec19b4dfa07193a9db1da5f3659611b295f359",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p048",
+      "pdfPage": 48,
+      "kind": "map",
+      "bbox": [
+        60.0,
+        115.54998779296875,
+        522.75,
+        736.8499755859375
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:ef95d596c9cca67c83a8c864662210e7cd9e1d17ec2aee2c585e09403048b6b9",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p048",
+      "pdfPage": 48,
+      "kind": "legend",
+      "bbox": [
+        69.255,
+        562.8859790039062,
+        212.7075,
+        724.4239758300781
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:ba05d54ea3c91de91cf76fb7341e18a76590a0a069b628bc65d3aa630dd691a3",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p057",
+      "pdfPage": 57,
+      "kind": "map",
+      "bbox": [
+        48.5,
+        86.79998779296875,
+        548.5499877929688,
+        771.0
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:f7627a8d65672f85276010754dd6cdb82a09aa35533c18cb176666441f8d9381",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p057",
+      "pdfPage": 57,
+      "kind": "legend",
+      "bbox": [
+        48.5,
+        695.7379986572266,
+        548.5499877929688,
+        771.0
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:22606d1bbdb4bafcc925acf199a6cb4fcebd04ecbd2f6dee8acb247fe48bf6d4",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p060",
+      "pdfPage": 60,
+      "kind": "map",
+      "bbox": [
+        54.20000076293945,
+        37.3499755859375,
+        559.0999755859375,
+        774.3999633789062
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:5831ede573699ab5116ae557c6766c6cee75df55c00c66da4a75eb05e7a2c2a2",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p060",
+      "pdfPage": 60,
+      "kind": "legend",
+      "bbox": [
+        54.20000076293945,
+        649.1014654541016,
+        559.0999755859375,
+        774.3999633789062
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:3afec4b8d837bc127a957b8572c4935161b9614d6254591902837889056d6d29",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p061",
+      "pdfPage": 61,
+      "kind": "map",
+      "bbox": [
+        48.849998474121094,
+        33.449951171875,
+        569.199951171875,
+        771.199951171875
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:827407e08332dc2b5f7499d723d745e2d0ff8934443c19dbf03c27d408da0a35",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p061",
+      "pdfPage": 61,
+      "kind": "legend",
+      "bbox": [
+        48.849998474121094,
+        645.782451171875,
+        569.199951171875,
+        771.199951171875
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:94cad871a1b4a6caf1d1a9647d89cddb784f0dfebf3012350422ef29beb31dfb",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p065",
+      "pdfPage": 65,
+      "kind": "map",
+      "bbox": [
+        45.650001525878906,
+        4.25,
+        788.800048828125,
+        529.0
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:1654dbcd2be7e5988a83674ec0be2b98dcf3098e3087aad805537ea012b1a532",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p065",
+      "pdfPage": 65,
+      "kind": "legend",
+      "bbox": [
+        610.4440374755859,
+        25.240000000000002,
+        788.800048828125,
+        298.11
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:6aa223489d00250f0bd6585460188766cd2af29059bb698ad80fb0d1e60f2e02",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p066",
+      "pdfPage": 66,
+      "kind": "map",
+      "bbox": [
+        42.5,
+        7.300048828125,
+        785.0499877929688,
+        531.6500244140625
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:e38c74c1156c234ddf62f4537e149acfa80ec5d2900b8cc2c13462642aa31439",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p066",
+      "pdfPage": 66,
+      "kind": "legend",
+      "bbox": [
+        606.8379907226563,
+        28.2740478515625,
+        785.0499877929688,
+        311.42303466796875
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:01ac354b916bcc71a2b7abc1b8c70dfd54620d4375895c03348d98062baefb08",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p069",
+      "pdfPage": 69,
+      "kind": "map",
+      "bbox": [
+        66.0999984741211,
+        26.000030517578125,
+        792.5999755859375,
+        526.3500366210938
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:2396bb920289be67b2823fe45b3ac59ed71b7a71ba31073ad55b5de17e9079ea",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p069",
+      "pdfPage": 69,
+      "kind": "legend",
+      "bbox": [
+        625.5049808502198,
+        51.01753082275391,
+        792.5999755859375,
+        371.2415347290039
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:384ff14ed1f6a665fa8a4fc2093a01765cd0ba1bb497724275d02e433ec169ed",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p072",
+      "pdfPage": 72,
+      "kind": "map",
+      "bbox": [
+        74.19999694824219,
+        26.199981689453125,
+        779.2000122070312,
+        526.0499877929688
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:33566e3afc26a6f8184083ff8a6403d60d5f96b8d1cee1e35ce235fff819ccd8",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p072",
+      "pdfPage": 72,
+      "kind": "legend",
+      "bbox": [
+        624.1000088500977,
+        56.190982055664065,
+        779.2000122070312,
+        376.09498596191406
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:7ab259292faaba00a053f5005aef5741c327d0fa771fa19cd60c9a2e55110c59",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p075",
+      "pdfPage": 75,
+      "kind": "map",
+      "bbox": [
+        32.650001525878906,
+        33.5999755859375,
+        560.1500244140625,
+        765.75
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:671ee5e41d861cb22ba237be6760cbdf431ce5fd003045670c00ba1ce1e517c6",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p075",
+      "pdfPage": 75,
+      "kind": "legend",
+      "bbox": [
+        32.650001525878906,
+        641.2844958496094,
+        560.1500244140625,
+        743.7854992675781
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:f45062fa0e3c4f76033dec804d00907908ab8ac7da11969abd494c6759bfd3cc",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p088",
+      "pdfPage": 88,
+      "kind": "map",
+      "bbox": [
+        41.25,
+        51.0,
+        560.2000122070312,
+        757.5000610351562
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:9fdfdfba7fffe9008f44e5bf0d8318a138ccaafd05028017f0b82412dc2978ac",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p088",
+      "pdfPage": 88,
+      "kind": "legend",
+      "bbox": [
+        41.25,
+        686.8500549316407,
+        560.2000122070312,
+        757.5000610351562
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:ef87f020c63a4b1e771d54b59cc6244200936e80b750ce607ec18962fcf7fbf7",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p105",
+      "pdfPage": 105,
+      "kind": "map",
+      "bbox": [
+        56.099998474121094,
+        97.20001220703125,
+        556.6499633789062,
+        769.5
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:b80de8efef0edc6f2e99144163437cdacba5812caa7038f7eca47c07201b0c92",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p105",
+      "pdfPage": 105,
+      "kind": "legend",
+      "bbox": [
+        56.099998474121094,
+        702.2700012207032,
+        556.6499633789062,
+        769.5
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:2a14896f4d6bafc47e83b9d2df8f7b016ae18f34ca19f73fbd58690c4fdff2c3",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p106",
+      "pdfPage": 106,
+      "kind": "map",
+      "bbox": [
+        60.5,
+        94.39996337890625,
+        560.5499877929688,
+        778.5999755859375
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:7ae0fad993ae1226931484c080a70b7d621c638df14a73b48a462f33183dddfc",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p106",
+      "pdfPage": 106,
+      "kind": "legend",
+      "bbox": [
+        60.5,
+        703.3379742431641,
+        560.5499877929688,
+        778.5999755859375
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:f7ea677f067196f23c961e34f030b6eb2c2f540d5af774937d3b63f5ccb3b06c",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p107",
+      "pdfPage": 107,
+      "kind": "map",
+      "bbox": [
+        33.599998474121094,
+        30.8499755859375,
+        561.3999633789062,
+        761.0999755859375
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:cbdceefe7b000e459c7fdb9df103493aae69bd7a8ebb69ee00b9e8d4b1732957",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p107",
+      "pdfPage": 107,
+      "kind": "legend",
+      "bbox": [
+        33.599998474121094,
+        644.2599755859375,
+        561.3999633789062,
+        761.0999755859375
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:f41a630a3e6e939577629298eca1e89c8789562cf423c656bf9288a85c401b77",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p108",
+      "pdfPage": 108,
+      "kind": "map",
+      "bbox": [
+        35.400001525878906,
+        13.64996337890625,
+        561.9500122070312,
+        770.1499633789062
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:bc7ee38124540658b685904279e77d181ce781932b78a858c664540f623810b3",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p108",
+      "pdfPage": 108,
+      "kind": "legend",
+      "bbox": [
+        40.66550163269043,
+        535.6349633789063,
+        246.02000579833987,
+        755.0199633789063
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:41079e807abaeb46b2af2bc76fc8b70042ace9b811af9617f2a39cc229a09638",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p109",
+      "pdfPage": 109,
+      "kind": "map",
+      "bbox": [
+        43.29999923706055,
+        52.949951171875,
+        572.5999755859375,
+        763.5999755859375
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:54977766e1418d2feb381298c4d205031334b0ce59b1a683dd184278b05e4cf6",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p109",
+      "pdfPage": 109,
+      "kind": "legend",
+      "bbox": [
+        53.885998764038085,
+        564.61796875,
+        217.96899143218994,
+        749.3869750976562
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:24b0e84c3860e3901e59221cceeccd7516b90b90d429c74aa427296510cdd316",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p110",
+      "pdfPage": 110,
+      "kind": "map",
+      "bbox": [
+        39.25,
+        23.3499755859375,
+        555.4000244140625,
+        776.7999877929688
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:886cedffbec5a3f2cbc2f03993939f11b9279c4ba4dbe838c07e82c6844554a8",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p110",
+      "pdfPage": 110,
+      "kind": "legend",
+      "bbox": [
+        39.25,
+        648.7134857177734,
+        555.4000244140625,
+        776.7999877929688
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:4b8b013eee3e0ebf9a4cf439395927ce24df756aaee305e56c0ee342c2db49a6",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p111",
+      "pdfPage": 111,
+      "kind": "map",
+      "bbox": [
+        36.849998474121094,
+        21.449951171875,
+        557.199951171875,
+        759.199951171875
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:cacf2470591d1080f87de95cf0fdd6bf781fc8deaee638999105eac1a4c50e53",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p111",
+      "pdfPage": 111,
+      "kind": "legend",
+      "bbox": [
+        36.849998474121094,
+        633.782451171875,
+        557.199951171875,
+        759.199951171875
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:fb71e0f027d822efcacbda0aff0d9d876810a6a87f695dffeeaacd63a535ff63",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p112",
+      "pdfPage": 112,
+      "kind": "map",
+      "bbox": [
+        55.349998474121094,
+        39.45001220703125,
+        781.25,
+        529.7000122070312
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:9a29bd8dbd9fcd6f347c4d5210c34780af32c205eaa56bc30b7cebf2752e8685",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p112",
+      "pdfPage": 112,
+      "kind": "legend",
+      "bbox": [
+        607.0339996337891,
+        59.06001220703125,
+        781.25,
+        313.99001220703127
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:78a09199e0d882dfc291cd1263db06ccb9b58edd3c19ac40f95f684fe1de5284",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p113",
+      "pdfPage": 113,
+      "kind": "map",
+      "bbox": [
+        55.400001525878906,
+        27.45001220703125,
+        792.4500122070312,
+        528.5
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:4c31297d3b541ad6080d70855912b7c7e78cedca5cf69468505e4a6060326acb",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p113",
+      "pdfPage": 113,
+      "kind": "legend",
+      "bbox": [
+        615.5580096435547,
+        47.49201171875,
+        792.4500122070312,
+        318.0590051269531
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:4dc0899fc7e3971836201f8431613abb17dbb0fcc46b40cc27bbcb8e1a1c717c",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p114",
+      "pdfPage": 114,
+      "kind": "map",
+      "bbox": [
+        65.4000015258789,
+        27.100006103515625,
+        791.9000244140625,
+        527.4500122070312
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:3312609ce5b8b817b9cf015bb77c8de80016c5838b88ee95f78c2ecb765f14f7",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p114",
+      "pdfPage": 114,
+      "kind": "legend",
+      "bbox": [
+        624.8050191497803,
+        52.11750640869141,
+        791.9000244140625,
+        372.3415103149414
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:265fe7d2939af4d306459b99998ca319aeda4e6c93f914e8a6f69ea70572bd1a",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p115",
+      "pdfPage": 115,
+      "kind": "map",
+      "bbox": [
+        74.75,
+        25.199981689453125,
+        779.75,
+        525.0499877929688
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:6e883bc0d4b7d1bf99acf19b384d27071f336de98c7acff9619a12c2bbe1551b",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p115",
+      "pdfPage": 115,
+      "kind": "legend",
+      "bbox": [
+        624.65,
+        55.190982055664065,
+        779.75,
+        375.09498596191406
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:bbc6298932f1c1df85755bc2fdd9e242b3065e961c20eb470bc79654c66bbec7",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p116",
+      "pdfPage": 116,
+      "kind": "map",
+      "bbox": [
+        47.650001525878906,
+        54.199951171875,
+        566.4000244140625,
+        774.199951171875
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:15b667284f115cee0e32a4bad76a7a22f543776633c6926671fb0b6d18b561cd",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    },
+    {
+      "mapId": "lsps-map-p116",
+      "pdfPage": 116,
+      "kind": "legend",
+      "bbox": [
+        47.650001525878906,
+        651.799951171875,
+        566.4000244140625,
+        752.599951171875
+      ],
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "rasterDigest": "sha256:ea65f74bc17b9364f92c804046151d4f65b06385103378f80ff9045cdf83fe90",
+      "status": "MATCH_INDEPENDENT_FRESH_DOCUMENT_RENDER"
+    }
+  ],
+  "checks": [
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:008",
+      "mapId": "lsps-map-p008",
+      "pdfPage": 8,
+      "reviewedMapCanonicalSha256": "468a15d5db09bdc86121c545d23451c8caf49117eb808c5860bd4d73a27931dd",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:016",
+      "mapId": "lsps-map-p016",
+      "pdfPage": 16,
+      "reviewedMapCanonicalSha256": "64648c5713822bc266ad17cf1314f6bfa427b5cf08ebaaf7d622eff3854ab673",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:026",
+      "mapId": "lsps-map-p026",
+      "pdfPage": 26,
+      "reviewedMapCanonicalSha256": "945a70cd1ba8ee47b831993faca07a7119c5129ebff7a589fdab5fd5fe7c86a1",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:027",
+      "mapId": "lsps-map-p027",
+      "pdfPage": 27,
+      "reviewedMapCanonicalSha256": "3bd540b499d97127c6f91ea0c504dea4705c58889199e8b85bb4f4c721431169",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:028",
+      "mapId": "lsps-map-p028",
+      "pdfPage": 28,
+      "reviewedMapCanonicalSha256": "3b7efe61564736a33e5fb5fab6708047108366b6b0a40e8b55df5b689cda880c",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:048",
+      "mapId": "lsps-map-p048",
+      "pdfPage": 48,
+      "reviewedMapCanonicalSha256": "fa411f571402c9a250d5f5670601e0eba4466b63932d690c607da5999ef83c3a",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:057",
+      "mapId": "lsps-map-p057",
+      "pdfPage": 57,
+      "reviewedMapCanonicalSha256": "da2482052b1266ec5e0abdbac38956df8e720752150d4acaae709c06bd1579b3",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:060",
+      "mapId": "lsps-map-p060",
+      "pdfPage": 60,
+      "reviewedMapCanonicalSha256": "72f39ffc0f4916f04c37f9f8a79871cd4d6e86914f52797560b8edbde8631652",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:061",
+      "mapId": "lsps-map-p061",
+      "pdfPage": 61,
+      "reviewedMapCanonicalSha256": "5731d93415dd2eefdcf4503df7d9a1c884897425847e11dfb8c8ed22124f7552",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:065",
+      "mapId": "lsps-map-p065",
+      "pdfPage": 65,
+      "reviewedMapCanonicalSha256": "feff4d54bd11279f966e9f62ef9ddeb64d68ae92daa9f675f489b39065417ff6",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:066",
+      "mapId": "lsps-map-p066",
+      "pdfPage": 66,
+      "reviewedMapCanonicalSha256": "256ba82e6da935d0eabd168c5c715d30b459c3372c96bd9a6b932b7e3446e1b0",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:069",
+      "mapId": "lsps-map-p069",
+      "pdfPage": 69,
+      "reviewedMapCanonicalSha256": "942afe52fc35e6af25e64611b70d936c6ec2e6249f6ba449dd3cc186804d8531",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:072",
+      "mapId": "lsps-map-p072",
+      "pdfPage": 72,
+      "reviewedMapCanonicalSha256": "17430e7344340f15bba09caefee752918e1def469409e88200262e5fa7022de0",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:075",
+      "mapId": "lsps-map-p075",
+      "pdfPage": 75,
+      "reviewedMapCanonicalSha256": "dad16e66013c7143849b8d497fa3d5e17f7fa0deb03e72aca864c313729554ac",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:088",
+      "mapId": "lsps-map-p088",
+      "pdfPage": 88,
+      "reviewedMapCanonicalSha256": "987f778e63b9ab4f3c554b99ff5e9270d889672df3fa6bcc75eb99ceedc9e38b",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:105",
+      "mapId": "lsps-map-p105",
+      "pdfPage": 105,
+      "reviewedMapCanonicalSha256": "e5db394ad7d4fe78c9d6aefe57079ede842461d2415f89efcc0b7d038364ed4c",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:106",
+      "mapId": "lsps-map-p106",
+      "pdfPage": 106,
+      "reviewedMapCanonicalSha256": "53b38ebad353875733a468635bddbedcc05533c5c3115aea53da9499627d863e",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:107",
+      "mapId": "lsps-map-p107",
+      "pdfPage": 107,
+      "reviewedMapCanonicalSha256": "1a8c7a3c6cc15e33b2e53d705db9f8372fc3cd3b573befac4dfeb63a9a1709e5",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:108",
+      "mapId": "lsps-map-p108",
+      "pdfPage": 108,
+      "reviewedMapCanonicalSha256": "ae891d53defe5591c908482c45f157150245e7e0ee3910a456ec98b54149f1cf",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:109",
+      "mapId": "lsps-map-p109",
+      "pdfPage": 109,
+      "reviewedMapCanonicalSha256": "0db8a440091837df58a4291391d19bbebc30f241b4190b6f943f003654498936",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:110",
+      "mapId": "lsps-map-p110",
+      "pdfPage": 110,
+      "reviewedMapCanonicalSha256": "3f9060609bc5f22ab00a4b2052b3a141abeee5c44292a5764333565627a88115",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:111",
+      "mapId": "lsps-map-p111",
+      "pdfPage": 111,
+      "reviewedMapCanonicalSha256": "a57a685259cb8e4a899e9e220cfea5a55fb05cf0930652544ecabab36ba74a48",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:112",
+      "mapId": "lsps-map-p112",
+      "pdfPage": 112,
+      "reviewedMapCanonicalSha256": "546242500d8d852dfd360f2d8292a3b878d1f8516dbb785d6ebcf14c4c21eb63",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:113",
+      "mapId": "lsps-map-p113",
+      "pdfPage": 113,
+      "reviewedMapCanonicalSha256": "1cab7804f25750868633fd596d5fcc5f6e63b72ef91612d61b5f77bde949b2e7",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:114",
+      "mapId": "lsps-map-p114",
+      "pdfPage": 114,
+      "reviewedMapCanonicalSha256": "70ed346e27841f238caf91db7ea75feb9f98b0a058cd57fb014795cfc7a8b0bd",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:115",
+      "mapId": "lsps-map-p115",
+      "pdfPage": 115,
+      "reviewedMapCanonicalSha256": "44f33c55862154bf19203a2fdc162fea1844142c2eabe059fd2e22c9ad7c9437",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:116",
+      "mapId": "lsps-map-p116",
+      "pdfPage": 116,
+      "reviewedMapCanonicalSha256": "da5758f76ee0f8248ff1f8c889c3befebab95e47c1dd1c0458e3d8ccbb7da878",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    }
+  ],
+  "negativeCases": [
+    {
+      "case": "missing-map",
+      "status": "REJECTED",
+      "reason": "MAP_OCCURRENCE_MISSING_OR_ADDED"
+    },
+    {
+      "case": "changed-option-preserving-source-hashes",
+      "status": "REJECTED",
+      "reason": "PIXEL_REVIEWED_MAP_CONTENT_CHANGED"
+    },
+    {
+      "case": "invented-crs-preserving-source-hashes",
+      "status": "REJECTED",
+      "reason": "PIXEL_REVIEWED_MAP_CONTENT_CHANGED"
+    }
+  ],
+  "rendererDowngradeChecks": [
+    {
+      "case": "map-v1-downgrade",
+      "status": "REJECTED",
+      "reason": "MAP_REQUIRES_FRESH_DOCUMENT_V2"
+    },
+    {
+      "case": "legend-v1-downgrade",
+      "status": "REJECTED",
+      "reason": "LEGEND_REQUIRES_FRESH_DOCUMENT_V2"
+    }
+  ],
+  "limitations": [
+    "No parcel/GIS geometry verification",
+    "No current-law or actual-delivery verification",
+    "Non-map narrative excluded from this node readback",
+    "Browser and publication acceptance belong to root task"
+  ]
+}

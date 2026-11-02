@@ -1,0 +1,34 @@
+{
+  "browser": "system Chromium via Python Playwright",
+  "results": [
+    {
+      "check": "Original 127-item base digest preserved",
+      "status": "PASS_TESTED_HERE"
+    },
+    {
+      "check": "Desktop csp6/water/area accounting shortcuts, units, explicit unknowns, keyboard return, overflow",
+      "status": "PASS_TESTED_HERE"
+    },
+    {
+      "check": "Frozen legacy checkpoint unchanged; extended browser snapshot independently reconstructed and verified",
+      "status": "PASS_TESTED_HERE"
+    },
+    {
+      "check": "Real local edit/diff/save/load, two-tab stale-save rejection and exported workspace verification",
+      "status": "PASS_TESTED_HERE"
+    },
+    {
+      "check": "Desktop browser no unhandled script errors",
+      "status": "PASS_TESTED_HERE"
+    },
+    {
+      "check": "390x844 actual Chromium accounting panels and no horizontal document/panel overflow",
+      "status": "PASS_TESTED_HERE"
+    },
+    {
+      "check": "2560x1080 actual Chromium accounting panels and no horizontal document/panel overflow",
+      "status": "PASS_TESTED_HERE"
+    }
+  ],
+  "scriptErrors": []
+}

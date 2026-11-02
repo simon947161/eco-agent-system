@@ -1,0 +1,227 @@
+{
+  "schema": "lsps-independent-map-node-readback-1",
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "reviewedAuthorSnapshotSha256": "6e08d6b592e525b571da2a0c22472ec52d6a719f3314210d5efb62b8cf7c19c2",
+  "bundlePath": "sources/lsps-context-review.json",
+  "bundleSha256AtReadback": "4427e21b1962bd6776ea0ee14253804f8cf7f25172a93a854aaa2fd03cdd526a",
+  "reviewedMapRecordsCanonicalSha256": "6c2164e5f048485f21d9a8462dff2990f30f832b285b6da1b09b82b75a485532",
+  "scope": "27 generated source-bundle LSPS_MAP nodes exactly retain the independently pixel-reviewed maps and unknown/pending admission boundaries. No browser or deployment claim.",
+  "counts": {
+    "mapNodesChecked": 27,
+    "negativeCasesRejected": 3
+  },
+  "checks": [
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:008",
+      "mapId": "lsps-map-p008",
+      "pdfPage": 8,
+      "reviewedMapCanonicalSha256": "85364d030c4a82cabd3a788fbd9fdd7f4bb42e61a3fedb40769aa4d22e8f5916",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:016",
+      "mapId": "lsps-map-p016",
+      "pdfPage": 16,
+      "reviewedMapCanonicalSha256": "7f3ad436cd6ea5c303c8c029cee86fd8f78885ba880e38cc727f840fa46c4991",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:026",
+      "mapId": "lsps-map-p026",
+      "pdfPage": 26,
+      "reviewedMapCanonicalSha256": "f06dcaf7affdb38345cdf7ff12ebc8d3697bfa03e2cc742bbc87e67b2048f261",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:027",
+      "mapId": "lsps-map-p027",
+      "pdfPage": 27,
+      "reviewedMapCanonicalSha256": "28380ce628e04a458b3128102a2eb1e0aa4522455ee1caf320b737e797d7fabb",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:028",
+      "mapId": "lsps-map-p028",
+      "pdfPage": 28,
+      "reviewedMapCanonicalSha256": "66c8e5510528257268af4014f3a33d7b55c8a5a4c252360fef82b617606f49b8",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:048",
+      "mapId": "lsps-map-p048",
+      "pdfPage": 48,
+      "reviewedMapCanonicalSha256": "1e096e905690fdc5b31d3e881e02bb98f13396873a74face354aaf04d0cf7b93",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:057",
+      "mapId": "lsps-map-p057",
+      "pdfPage": 57,
+      "reviewedMapCanonicalSha256": "82bab02ac77dd8a16fcc22881a116bc9dc0e7c0df66631278320eed479704633",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:060",
+      "mapId": "lsps-map-p060",
+      "pdfPage": 60,
+      "reviewedMapCanonicalSha256": "f65a01a57b1b6c30015ac6ec276f7b25efa6ff61a9c695b441d45633bd0ae81d",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:061",
+      "mapId": "lsps-map-p061",
+      "pdfPage": 61,
+      "reviewedMapCanonicalSha256": "9608c43ac3988c647e6531c4f9d3417389b63346e558bba761cee086d11d7948",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:065",
+      "mapId": "lsps-map-p065",
+      "pdfPage": 65,
+      "reviewedMapCanonicalSha256": "6e0d36fc8845e51a3dd1459c355459681b9b739f244a56e46d1f7132c85492ab",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:066",
+      "mapId": "lsps-map-p066",
+      "pdfPage": 66,
+      "reviewedMapCanonicalSha256": "b578eb3e24da9d923257187e53af92e9131ea9788d6a3c54c47385782689df79",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:069",
+      "mapId": "lsps-map-p069",
+      "pdfPage": 69,
+      "reviewedMapCanonicalSha256": "13b03af26d5a82d058612b7424300957dabdaa854cb86316f382fae1a75adbd3",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:072",
+      "mapId": "lsps-map-p072",
+      "pdfPage": 72,
+      "reviewedMapCanonicalSha256": "64e60405ea50eae2a6c17af89445c925a956cc43c5b00ed946da4399a0538c79",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:075",
+      "mapId": "lsps-map-p075",
+      "pdfPage": 75,
+      "reviewedMapCanonicalSha256": "f7d8eee28dcabd9f39969adf26cd3ebf0a3c40e3e76470fdafb87506bbf0e933",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:088",
+      "mapId": "lsps-map-p088",
+      "pdfPage": 88,
+      "reviewedMapCanonicalSha256": "3e089c2cc3b42ed17b97627645c55e5f0a9965afac599b62839c892f15ed8648",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:105",
+      "mapId": "lsps-map-p105",
+      "pdfPage": 105,
+      "reviewedMapCanonicalSha256": "de5c0de8183fe7ce5a8153e30f71511b4c605c040aba07660e84a42485be0bd1",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:106",
+      "mapId": "lsps-map-p106",
+      "pdfPage": 106,
+      "reviewedMapCanonicalSha256": "02aff0a2771e14e3d1b1f63bbee10c172fd3e65337ff59bc6d6798d77eb2c839",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:107",
+      "mapId": "lsps-map-p107",
+      "pdfPage": 107,
+      "reviewedMapCanonicalSha256": "d06047fd0f094c5ef49456d169a5ad7a28c539a04e1eab8e7be8ea806d358aec",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:108",
+      "mapId": "lsps-map-p108",
+      "pdfPage": 108,
+      "reviewedMapCanonicalSha256": "18f2af7c7b8734d1dd7a71d93a9d63c8579d34af43c48ff20041b8b3a505b341",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:109",
+      "mapId": "lsps-map-p109",
+      "pdfPage": 109,
+      "reviewedMapCanonicalSha256": "ed4befe470d6a504957424537f2dd7d79bbf55b1b41a7f4e2481e07c859df8a2",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:110",
+      "mapId": "lsps-map-p110",
+      "pdfPage": 110,
+      "reviewedMapCanonicalSha256": "e949518bdf1b77a874fec1caa77627a3511e4745423026455bfc61bf7ea43a25",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:111",
+      "mapId": "lsps-map-p111",
+      "pdfPage": 111,
+      "reviewedMapCanonicalSha256": "62da29362c43fc11ab9477a4a6d82c7b14652d3254e9c7c9b5cdbaffb78d76dc",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:112",
+      "mapId": "lsps-map-p112",
+      "pdfPage": 112,
+      "reviewedMapCanonicalSha256": "201d3dbddf7d170781812f33822f03aa926497755df72177c8349e2f0dc44381",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:113",
+      "mapId": "lsps-map-p113",
+      "pdfPage": 113,
+      "reviewedMapCanonicalSha256": "6cd62739177312bc346d5a37fe6ef0ea93d149b93268a19241f8dc2aef8d8132",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:114",
+      "mapId": "lsps-map-p114",
+      "pdfPage": 114,
+      "reviewedMapCanonicalSha256": "74ffe1a1b1f6f2b2dbe5d4912cd4c6f5f2f2a7f2d81130c53d5ddb29a7498031",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:115",
+      "mapId": "lsps-map-p115",
+      "pdfPage": 115,
+      "reviewedMapCanonicalSha256": "db605ec030fc9e4db33dfb48f712641c1c53ac893ccde6a2dd784a570d58ccb2",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    },
+    {
+      "nodeId": "csoi:knowledge:lsps2020:context:map:116",
+      "mapId": "lsps-map-p116",
+      "pdfPage": 116,
+      "reviewedMapCanonicalSha256": "63702691b6b26293b97d4c277883bf91fd84a6468e199faa46ab6836d15a428b",
+      "status": "PASS_REVIEWED_MAP_CONTENT_AND_BOUNDARIES"
+    }
+  ],
+  "negativeCases": [
+    {
+      "case": "missing-map",
+      "status": "REJECTED",
+      "reason": "MAP_OCCURRENCE_MISSING_OR_ADDED"
+    },
+    {
+      "case": "changed-option-preserving-source-hashes",
+      "status": "REJECTED",
+      "reason": "PIXEL_REVIEWED_MAP_CONTENT_CHANGED"
+    },
+    {
+      "case": "invented-crs-preserving-source-hashes",
+      "status": "REJECTED",
+      "reason": "PIXEL_REVIEWED_MAP_CONTENT_CHANGED"
+    }
+  ],
+  "limitations": [
+    "No parcel/GIS geometry verification",
+    "No current-law or actual-delivery verification",
+    "Non-map narrative excluded from this node readback",
+    "Browser and publication acceptance belong to root task"
+  ]
+}

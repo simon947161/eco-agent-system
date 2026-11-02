@@ -1,0 +1,201 @@
+{
+  "format": "LSPS_INDEPENDENT_NARRATIVE_CONDITION_ASSERTIONS_V1",
+  "scope": "Seven selected conditions actually read from original PDF and compared to the current authored units. Additional narrative review remains in progress.",
+  "assertions": [
+    {
+      "assertionId": "LSPS-NARR-ASSERT-heritage-no-adverse-effect",
+      "recordId": "csoi:lsps2020:narrative:p023-b05-u01",
+      "sourceAnchor": {
+        "pdfPage": 23,
+        "bbox": [
+          71.524,
+          518.19,
+          282.783,
+          646.17
+        ],
+        "sourceTextHash": "sha256:48a4539d981aa70ed7535e75e5d25017b4e54c0db2fcf2c273b3584ad50a6b92",
+        "cropHash": "sha256:7042bb624deae0dcfcd0e4b7c46267c1321e6eb6b764ac609664f3a45dacd6f6",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "where\\s+they\\s+do\\s+not\\s+adversely",
+      "requiredPatterns": {
+        "summary": [
+          "前提.*不损害"
+        ],
+        "conditions": [
+          "不利影响"
+        ]
+      },
+      "meaning": "Selected original-grounded condition-preservation assertion following independent source reading; not full semantic verification or current-law admission."
+    },
+    {
+      "assertionId": "LSPS-NARR-ASSERT-bombala-only-if-needed",
+      "recordId": "csoi:lsps2020:narrative:p056-b09-u01",
+      "sourceAnchor": {
+        "pdfPage": 56,
+        "bbox": [
+          325.78,
+          229.37,
+          526.546,
+          362.4
+        ],
+        "sourceTextHash": "sha256:bbb1e20ab6167a73feee0f8c32c97a50d087ffe701098019cb2164642d99daa6",
+        "cropHash": "sha256:46e93c058baedc72576353f81e6333177b92aca58078bcadf7b1334252d1f8ca",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "if\\s+required",
+      "requiredPatterns": {
+        "summary": [
+          "如有需要|若有需要|有需要时"
+        ],
+        "conditions": [
+          "需要.*条件|以需要"
+        ]
+      },
+      "meaning": "Selected original-grounded condition-preservation assertion following independent source reading; not full semantic verification or current-law admission."
+    },
+    {
+      "assertionId": "LSPS-NARR-ASSERT-michelago-rail-reopening",
+      "recordId": "csoi:lsps2020:narrative:p073-b05-u01",
+      "sourceAnchor": {
+        "pdfPage": 73,
+        "bbox": [
+          71.524,
+          423.58,
+          282.923,
+          559.27
+        ],
+        "sourceTextHash": "sha256:de84a3a7b123bc6cb60c659556e6bfa913cb8b8dffdd107554880d8d2e202f67",
+        "cropHash": "sha256:fdd770c7e1516794033c07a61673b29efa0168f38c033a2c02c6fa7d8a3bd4a6",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "if\\s+re.opened",
+      "requiredPatterns": {
+        "summary": [
+          "若铁路重开|铁路.*重新"
+        ],
+        "conditions": [
+          "重新开通.*前提",
+          "备选未来|备选"
+        ]
+      },
+      "meaning": "Selected original-grounded condition-preservation assertion following independent source reading; not full semantic verification or current-law admission."
+    },
+    {
+      "assertionId": "LSPS-NARR-ASSERT-bredbo-reopening-plus-commuter",
+      "recordId": "csoi:lsps2020:narrative:p078-b07-u01",
+      "sourceAnchor": {
+        "pdfPage": 78,
+        "bbox": [
+          71.524,
+          576.99,
+          282.955,
+          762.836
+        ],
+        "sourceTextHash": "sha256:989c92439cfb3cb2ae0145c81a342522fcc369604f215e7914f880704d523a07",
+        "cropHash": "sha256:47363804b368564bcbdec7c2630fd340eea49e307d326c51f047eee64083b946",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "particularly\\s+if\\s+commuter",
+      "requiredPatterns": {
+        "summary": [
+          "铁路若重开|铁路.*重新",
+          "Canberra.*通勤"
+        ],
+        "conditions": [
+          "重开.*前提",
+          "通勤服务.*条件",
+          "替代情景"
+        ]
+      },
+      "meaning": "Selected original-grounded condition-preservation assertion following independent source reading; not full semantic verification or current-law admission."
+    },
+    {
+      "assertionId": "LSPS-NARR-ASSERT-smiths-road-four-factors",
+      "recordId": "csoi:lsps2020:narrative:p086-b08-u01",
+      "sourceAnchor": {
+        "pdfPage": 86,
+        "bbox": [
+          71.524,
+          476.88,
+          282.955,
+          749.876
+        ],
+        "sourceTextHash": "sha256:c5b47f3d1ba6993a1f0070fa406afabcda9600ea05d23bf30a3541c42d93f831",
+        "cropHash": "sha256:ead56fb5b1d5569bce9a68232b012ca70a80b78b9835c34048fc9faf55738b30",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "taking\\s+into\\s+account",
+      "requiredPatterns": {
+        "summary": [
+          "生物多样性",
+          "火险|林火",
+          "通达|出入",
+          "地下水"
+        ],
+        "conditions": [
+          "生物多样性",
+          "林火|火险",
+          "出入|通达",
+          "地下水"
+        ]
+      },
+      "meaning": "Selected original-grounded condition-preservation assertion following independent source reading; not full semantic verification or current-law admission."
+    },
+    {
+      "assertionId": "LSPS-NARR-ASSERT-sap-boundary-unconfirmed",
+      "recordId": "csoi:lsps2020:narrative:p063-b10-u01",
+      "sourceAnchor": {
+        "pdfPage": 63,
+        "bbox": [
+          318.34,
+          490.08,
+          527.435,
+          610.17
+        ],
+        "sourceTextHash": "sha256:fd125fb7a437c4c3dd0a0a5d333ee510e6bd143afc4c1d5ada573efa36fd62ce",
+        "cropHash": "sha256:d6b702963a26d49f5a0652e16c3b6996475bbdd21582259fe0c53b58b6528857",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "confirmed\\s+through\\s+the\\s+planning\\s+process",
+      "requiredPatterns": {
+        "summary": [
+          "边界.*待.*确认"
+        ],
+        "conditions": [
+          "尚待确认",
+          "不能.*现行法定"
+        ]
+      },
+      "meaning": "Selected original-grounded condition-preservation assertion following independent source reading; not full semantic verification or current-law admission."
+    },
+    {
+      "assertionId": "LSPS-NARR-ASSERT-adaptable-housing-not-universal",
+      "recordId": "csoi:lsps2020:narrative:p043-b07-u01",
+      "sourceAnchor": {
+        "pdfPage": 43,
+        "bbox": [
+          314.98,
+          284.84,
+          526.251,
+          398.18
+        ],
+        "sourceTextHash": "sha256:1a9a1c6055617541b8f8bc565cad3f9bd4af9eabc0a94f7a00148c8e42bd291e",
+        "cropHash": "sha256:5d2ae283681b41494f38b6a4c0f88d96313a4b594123b8ed1cc8f439e0ea4db1",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "originalPattern": "all\\s+new\\s+housing\\s+stock\\s+does\\s+not\\s+have\\s+to",
+      "requiredPatterns": {
+        "summary": [
+          "并非全部新住宅.*必须"
+        ],
+        "conditions": [
+          "不要求所有新房"
+        ]
+      },
+      "meaning": "Selected original-grounded condition-preservation assertion following independent source reading; not full semantic verification or current-law admission."
+    }
+  ],
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "sourceAnchorRefresh": "Coordinates and source text unchanged; pixel renderer refreshed to fresh-document-per-crop v2 after independent source-verifier finding."
+}
