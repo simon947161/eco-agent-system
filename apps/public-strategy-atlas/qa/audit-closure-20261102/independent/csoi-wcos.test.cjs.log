@@ -1,0 +1,9 @@
+PASS plan-level read-only fixture contains complete annual/field/report concept chain
+PASS adapter refuses writes, private and protected records, forged release, arbitrary synthetic labels and PII
+PASS public metadata needs trusted review callback and excludes business fields/unsafe URL
+PASS Food/LTW/Backflow conditional cross-search never grants all approvals by business/property name
+PASS LTW template distinguishes stages/classification/concurrence but cannot decide or approve
+PASS backflow schedule requires testable device, date, applicable interval and matching scope
+PASS four judgment classes retain review boundaries and formal decisions are blocked
+PASS summary is synthetic only and never releases a small real aggregate
+csoi-wcos: 8 groups PASS

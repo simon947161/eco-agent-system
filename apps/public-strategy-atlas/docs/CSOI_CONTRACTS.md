@@ -1,0 +1,11 @@
+# CSOI public research contracts
+
+Atlas Core owns the existing graph, source catalogue, logical objects, immutable revisions, events and snapshot verification. CSOI Operations adds public/synthetic work, analytical layers, calendar projections and drafts through those same entities. WCOS Adapter depends on Core/Operations and is a read-only abstract boundary. PHE Public Pack supplies attributed public-reference knowledge and keeps local responsibilities unknown.
+
+`AtlasCSOIGovernance.MODULES` defines namespaces/dependencies. Every governed record has a logical ID, content revision, security class, L0–L5 analytical layer, judgment class, source class, provenance/rights basis, scope, exact input references and observation time. Security is orthogonal to analytical layer. Private/protected and unverified approved-release records are denied on public storage/import/export/display/screenshot channels. Conservative PII and disclosure screening complements human review; it is not a privacy certification.
+
+`registerResearchRecord` / `reviseResearchRecord` append to AtlasModel's existing domain revisions/events, validate inputs and enforce public boundaries. Default legacy migration, 127 records and old snapshots retain their identities. All historical governed envelopes are independently verified. L3 layer receipts recompute against exact historical inputs; current input changes or withdrawal invalidate present use without destroying historical integrity.
+
+Layers separate L0 source identities, L1 object/activity/device/event normalization, L2 observations/rules/inference/discretion, L3 units/denominators/formulas, L4 defined management coverage and L5 draft sharing review. Formal Council decisions/releases require separately authorised systems; no local role, digest or aggregate grants that authority. A bounded authored factual research summary owns only its wording; AUTHORED_RESEARCH never grants rights to redistribute the underlying document. Source extraction/admission gates remain independent.
+
+Calendar year/quarter/month/week/day objects are projections over work identities. All sample work is explicitly synthetic; scheduling is not completion. WCOS/Outlook production connectivity is disabled. Public app URLs carry only allowlisted navigation/filter state; independent companion windows receive no protected record channel.

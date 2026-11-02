@@ -1,0 +1,63 @@
+{
+  "runner": "csoi-browser-1",
+  "generatedAt": "2026-10-31T08:52:56.076211+00:00",
+  "testedFiles": {
+    "atlas.js": "sha256:9b0594a8881504e5290cf6f3dc2d742860549b2209e24232ea5f36eb772146ca",
+    "atlas-domain.js": "sha256:db4c547bc3fb55a7292d94411153354b335be5463bc59d9104bcd4a632832f29",
+    "atlas-model.js": "sha256:05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+    "csoi-pages.js": "sha256:d6e690fd0e7e763bf763286f7ba5db13ee338a88025f099dbf4b7a7b64cf5a6b",
+    "csoi-router.js": "sha256:687446a4989c0c5dd25e76689bb19be936c86a54f7437414d1633eae86295c44",
+    "csoi-governance.js": "sha256:02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c"
+  },
+  "physicalTouch": "NOT_TESTED",
+  "mobileTouch": "EMULATED_TAP",
+  "pack": "H",
+  "calendarAndAssistantChecks": "EXECUTED",
+  "results": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "routes": 24,
+      "status": "PASS_TESTED_HERE",
+      "browserErrors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "routes": 24,
+      "status": "PASS_TESTED_HERE",
+      "browserErrors": []
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "routes": 24,
+      "status": "PASS_TESTED_HERE",
+      "browserErrors": []
+    },
+    {
+      "viewport": {
+        "width": 2560,
+        "height": 1080
+      },
+      "routes": 24,
+      "status": "PASS_TESTED_HERE",
+      "browserErrors": []
+    },
+    {
+      "viewport": {
+        "width": 3840,
+        "height": 1080
+      },
+      "routes": 24,
+      "status": "PASS_TESTED_HERE",
+      "browserErrors": []
+    }
+  ]
+}

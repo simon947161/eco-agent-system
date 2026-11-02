@@ -1,0 +1,54 @@
+{
+  "at": "2026-11-02T04:49:49.072850+00:00",
+  "repo": "/workspace/eco-agent-system",
+  "startingHead": "1bd44ea96bf742e63072d866502479ca34d34061",
+  "sourceReview": "911 units independently reviewed; frozen source SHA345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0",
+  "publication": "VERIFIED_OWNER_ONLY_V6",
+  "blockedByNewPermission": false,
+  "performanceFix": "One isolated endpoint comparison transaction; unchanged full validation and30second browser limit; desktop/mobile targeted PASS.",
+  "engineeringCounts": {
+    "VERIFIED": 51,
+    "PARTIAL": 26,
+    "BLOCKED": 3
+  },
+  "independentFinalActualReadback": "911 actual source/cache unit rows and15samples PASS; source data unchanged. Historical intermediate-field naming corrected transparently.",
+  "nativeReconciledDistinct": 49,
+  "nativeStatus": "PASS_COMPLETE48_WITH_TARGETED4_RECONCILIATION_49_DISTINCT",
+  "fullBootRebuild": "PASS:2582.22seconds, default full fresh registration and60-item fixture, historic prefix/clone/stale/tamper checks. Original aggregate exit1 retains two initial test-fixture failures; final affected reruns pass.",
+  "measuredOPBrowser": "PASS desktop1440/mobile390 all142pages/911units;22,743,874byte snapshot export/import/negative checks;148JSheap samples each. Mobile max sampled391,075,440bytes, import6.782s; physical low-memory phone NOT_TESTED.",
+  "remainingTests": "No pending check for this bounded batch. Actual owner login, physical low-memory phone and basic screenreader remain explicitly untested limitations.",
+  "localAcceptance": "PASS_ALL_APPLICABLE_CHECKS",
+  "batchStatus": "COMPLETE_BOUNDED_BATCH",
+  "overallSystem": "PARTIAL",
+  "remainingPublicWork": "RegisteredDP/CSP/OP intermediary and resource/annual-report/current-rule evidence; see all80 current gaps.",
+  "canonicalApplicationSha": "cf0936474e00cad07acf6782100fc7e35db431ee",
+  "siteSourceSha": "ad876b976278d437878822c7eb6e24e7d3e64598",
+  "cache": "PASS: independent full fresh registration equals final cache; 635 entities /775 revisions;22,743,874 byte snapshot.",
+  "browser": "PASS:7 principal local suites,4 closure suites plus5-viewport linear/AX checks, measured OP and final readability checks;4 final deployed suites.",
+  "nextAcceptance": "Bounded OP batch delivered. Remaining public research and basic screenreader gaps are explicit; no active batch check or deployment is pending.",
+  "historicalCheckpoint": {
+    "status": "SUPERSEDED_BY_FINAL_ACCEPTANCE",
+    "record": {
+      "cache": "Normal verified append complete;635entities/775revisions;22,743,874byte snapshot. Full independent fresh-build equivalence running.",
+      "nativeCompleted": 48,
+      "nativeTotal": 48,
+      "initialFailures": [
+        {
+          "test": "csoi-bombala-phe.test.cjs",
+          "reason": "Previous v4 expected digest/count fixture; updated without changing behavioral assertions; targeted rerun pending."
+        },
+        {
+          "test": "csoi-op-review.test.cjs",
+          "reason": "Negative-test helper mutated original by alias; clone fix applied; targeted rerun pending."
+        }
+      ],
+      "browser": "OP original complete desktop/mobile;4/6 legacy suites PASS, long E0 rebuild running; additional measured snapshot performance desktop complete/mobile running.",
+      "nextAcceptance": "All current native tests and desktop/mobile applicable browser suites, then samePR push and owner-only research publication.",
+      "checkpointCommit": "8fcab3b92bc192406d52976c1d699fc273ccc23e",
+      "checkpointRemoteVerified": true,
+      "targetedReconciliation": "4/4 PASS: corrected two test fixtures plus final path transaction and existing paths; aggregate full registration cache test still running."
+    }
+  },
+  "finalLiveEvidence": "live/live-validation.json",
+  "provenanceCorrection": "live-run-provenance-correction.json"
+}

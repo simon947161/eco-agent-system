@@ -1,0 +1,50 @@
+{
+  "testFiles": 4,
+  "completed": 4,
+  "results": [
+    {
+      "file": "csoi-knowledge.test.cjs",
+      "startedAt": "2026-11-02T04:23:01.976695+00:00",
+      "finishedAt": "2026-11-02T04:23:12.205694+00:00",
+      "seconds": 10.23,
+      "sha256": "9561ee807421e3d00aed896aa690013c38af6ed1d842116ed3ede023843398be",
+      "fileUnchanged": true,
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-knowledge.test.cjs.log"
+    },
+    {
+      "file": "csoi-path-transaction.test.cjs",
+      "startedAt": "2026-11-02T04:23:00.870641+00:00",
+      "finishedAt": "2026-11-02T04:24:30.788320+00:00",
+      "seconds": 89.92,
+      "sha256": "6d2b95f3ad945f0186df26defde3c74c56e221667dfb82bc8be5749040f65f27",
+      "fileUnchanged": true,
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-path-transaction.test.cjs.log"
+    },
+    {
+      "file": "csoi-router.test.cjs",
+      "startedAt": "2026-11-02T04:23:00.871586+00:00",
+      "finishedAt": "2026-11-02T04:23:01.975990+00:00",
+      "seconds": 1.1,
+      "sha256": "3c572433cd402799d91d240b2a1b8296e5ac221a7724e9e7acf2bd05bbdb7dce",
+      "fileUnchanged": true,
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-router.test.cjs.log"
+    },
+    {
+      "file": "csoi-strategy-research.test.cjs",
+      "startedAt": "2026-11-02T04:23:12.205887+00:00",
+      "finishedAt": "2026-11-02T04:24:29.538742+00:00",
+      "seconds": 77.33,
+      "sha256": "524ce9c7a0990ba86ce4728a76abee2fe8ba417f59646842055363270ef6d583",
+      "fileUnchanged": true,
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-strategy-research.test.cjs.log"
+    }
+  ]
+}

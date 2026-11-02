@@ -1,0 +1,76 @@
+{
+  "format": "csoi-owner-private-deployment-2",
+  "status": "PUBLISHED_AND_LIVE_VALIDATED",
+  "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+  "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+  "versionNumber": 2,
+  "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_cb01c72c5bf48191bc3fa90a8ee3183f",
+  "deploymentId": "appgdep_6ae7d38f16108191bffb543c69b2cd79",
+  "deploymentStatus": "succeeded",
+  "publishedAt": "2026-11-02T00:04:39.753297+00:00",
+  "canonicalRepository": "simon947161/eco-agent-system",
+  "canonicalPr": 130,
+  "canonicalApplicationSha": "c46aceb115c05860266bcd7c4746af3c3a8c9d20",
+  "sitesSourceSha": "74f240e27cbfbbec5dffe225259eee1d42e58798",
+  "sourcePushRemoteVerified": true,
+  "artifact": {
+    "localTarSha256": "2d1143106c3896334588acf630e9c7b5335a700c7f80eec46eafa4b30d960848",
+    "localBytes": 7045120,
+    "serverReported": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000a9bc823080ce3ff86ccee7d4",
+      "content_hash": "sha256:8b5fc975c7c334bab706e431c39718d75a068ddedde585024f7234929329cf9d",
+      "size_bytes": 6993920,
+      "file_count": 45
+    },
+    "comparison": "Tar container hashes differ; no archive-byte equality claimed. All43runtime files plus deployment-assets.json independently match canonical bytes on the live Site."
+  },
+  "access": {
+    "mode": "custom",
+    "policyRevision": 1,
+    "currentUserRole": "owner",
+    "owners": 1,
+    "otherAllowedUsers": 0,
+    "editors": 0,
+    "groups": 0,
+    "workspaceGroups": 0,
+    "tenantGroups": 0,
+    "externalVisitors": 0
+  },
+  "rollback": {
+    "versionNumber": 1,
+    "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_92bb5f7bf77481918a10f954d9067e9e",
+    "sourceSha": "54fed0a1b624a13c8670dc8bf01854587a73bb9b"
+  },
+  "liveEvidence": "live/live-validation.json",
+  "ownerInteractiveLogin": "NOT_TESTED_NO_OWNER_SESSION",
+  "protectedWaterSiteUnchanged": true,
+  "scope": "Same existing PR130 app and existing Council Site; owner-only trial is not fullCSOI completion. No merge, sharing change, private data import, purchases or water Site mutation.",
+  "verifiedAt": "2026-11-02T00:13:36.612942+00:00",
+  "liveSummary": {
+    "assetsExact": 44,
+    "anonymousPathsDenied": 3,
+    "anonymousHttpStatus": 403,
+    "realChromiumSuites": [
+      {
+        "script": "csoi-strategy-browser.py",
+        "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+      },
+      {
+        "script": "csoi-phe-context-browser.py",
+        "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+      },
+      {
+        "script": "e0-browser.py",
+        "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+      }
+    ],
+    "network": {
+      "requests": 374,
+      "mutationRequests": [],
+      "externalOrigins": []
+    },
+    "authentication": "Supported Sites service access; no visitor identity or sign-in emulation",
+    "ownerInteractiveLogin": "NOT_TESTED_NO_OWNER_SESSION"
+  }
+}

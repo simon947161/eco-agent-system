@@ -1,0 +1,86 @@
+{
+  "at": "2026-11-02T01:40:01.818849+00:00",
+  "status": "AUTHOR_BATCH_DELIVERED",
+  "frozenNarrativeSHA256": "e3e5cb716d36cda05b54e7fd0f89183f0f38aad6243bff2279b848f557caa763",
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "preservedOriginalBundleSHA256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+  "counts": {
+    "pagesInventoried": 118,
+    "authorSemanticUnits": 512,
+    "authorTextUnitsIncludingMetadataReferencesGlossary": 491,
+    "visualSemanticUnits": 21,
+    "independentNonMapChartOccurrences": 17,
+    "additionalPurposeListVisuallyReviewed": 1,
+    "originalTextInventoryUnits": 1384,
+    "imageInventoryUnits": 234,
+    "unclassifiedTextInventoryUnits": 0,
+    "explicitlyLinkedExistingActionInventoryUnits": 354
+  },
+  "authorChecks": {
+    "pythonSyntax": "PASS",
+    "jsonCsvCountsUniqueIDs": "PASS",
+    "visualOccurrenceCrosswalk": "PASS",
+    "allInventoryDispositions": "PASS",
+    "originalBundleUntouched": "PASS"
+  },
+  "independentSemanticReview": {
+    "status": "COMPLETE_WITH_STATED_BOUNDARIES",
+    "evidencePath": "qa/lsps-completion/independent-narrative/semantic-readback.json",
+    "evidenceSHA256": "eb7ef81b27014e20e416a40689c32a05e71813158df318b5c0abe401a85c72a5",
+    "authorUnitsReviewed": 512,
+    "actualAppUnitsMatched": 512,
+    "bindingErrors": []
+  },
+  "separateVerification": "Final independent source-position/pixel negatives and parent aggregate/browser checks are reported by their owning tasks; not inferred from author delivery.",
+  "currentLaw": "UNKNOWN",
+  "actualExecution": "UNKNOWN",
+  "authorisedHumanAdmission": "PENDING",
+  "mutations": "Only qa/lsps-completion/author/ files; no runtime/source bundle changes, commit or deployment by this author.",
+  "artifacts": [
+    {
+      "path": "qa/lsps-completion/author/REPORT_ZH.md",
+      "bytes": 5417,
+      "sha256": "426d86215b987bb36b411287226bf710ae0620047a1fea041cda29992707b567"
+    },
+    {
+      "path": "qa/lsps-completion/author/authored-units.tsv",
+      "bytes": 76480,
+      "sha256": "8debb488db44ef624324d328f408d82b20e63cea9a54332d1affece97735e766"
+    },
+    {
+      "path": "qa/lsps-completion/author/build-narrative-review.py",
+      "bytes": 12985,
+      "sha256": "61e0263b0998309be80d36b263f00cd767a13987cefb174c129e5ce23a04c3d5"
+    },
+    {
+      "path": "qa/lsps-completion/author/narrative-review.json",
+      "bytes": 2979252,
+      "sha256": "e3e5cb716d36cda05b54e7fd0f89183f0f38aad6243bff2279b848f557caa763"
+    },
+    {
+      "path": "qa/lsps-completion/author/page-coverage.csv",
+      "bytes": 28732,
+      "sha256": "6651e2131f2daeef3e42f7154d2993a9ddc78b3b511f9c56598b4ca2e9cd26c2"
+    },
+    {
+      "path": "qa/lsps-completion/author/semantic-corrections.json",
+      "bytes": 8179,
+      "sha256": "b594e3eb9ecb2a1dd8ae6dcd8adff8bbbc61eb10184d91a36c5d360a180adf70"
+    },
+    {
+      "path": "qa/lsps-completion/author/unit-coverage.csv",
+      "bytes": 224269,
+      "sha256": "b1fc74e83a5cc4c390d13863fd2b28231866a9e756c39c0f6e7983e78d5a3edc"
+    },
+    {
+      "path": "qa/lsps-completion/author/visual-occurrence-crosswalk.json",
+      "bytes": 3651,
+      "sha256": "5a9888ba5ab2bfbe53457122c183c22cbd5e10f601b0b2c48c78e37f30273edb"
+    },
+    {
+      "path": "qa/lsps-completion/author/visual-units.json",
+      "bytes": 15451,
+      "sha256": "dcdf8eea46c3a98106509b24ee40812294df25e3b4e4b38113d9bb567b0b89d9"
+    }
+  ]
+}

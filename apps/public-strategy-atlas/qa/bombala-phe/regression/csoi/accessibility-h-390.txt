@@ -1,0 +1,49 @@
+- link "Skip to route map":
+  - /url: "#canvas-title"
+- banner:
+  - link "Atlas home":
+    - /url: ./index.html
+    - strong: Public Strategy Atlas
+  - text: Search stations and internal content
+  - searchbox "Search stations and internal content"
+  - group: Tools & views
+  - group: Pages
+- main:
+  - text: COUNCIL STRATEGY & OPERATIONS INTELLIGENCE
+  - heading "Public health and environment" [level=1]
+  - link "Open this page in a companion window":
+    - /url: http://127.0.0.1:8877/#/domains/phe?companion=1
+  - button "Refresh this public view"
+  - paragraph: Independent public/synthetic research · official admission and real Council performance remain separately reviewed.
+  - paragraph: Public-source professional knowledge. Council-specific responsibility, current legal applicability and internal procedures require separate review.
+  - list:
+    - listitem:
+      - link "Food safety":
+        - /url: "#/domains/phe/food"
+      - text: UNKNOWN
+    - listitem:
+      - link "On-site sewage":
+        - /url: "#/domains/phe/ossm"
+      - text: UNKNOWN
+    - listitem:
+      - link "Public pools and spas":
+        - /url: "#/domains/phe/pools"
+      - text: UNKNOWN
+    - listitem:
+      - link "Cooling and warm water systems":
+        - /url: "#/domains/phe/cooling"
+      - text: UNKNOWN
+    - listitem:
+      - link "Skin penetration":
+        - /url: "#/domains/phe/skin"
+      - text: UNKNOWN
+    - listitem:
+      - link "Environmental health and complaints":
+        - /url: "#/domains/phe/environment"
+      - text: UNKNOWN
+  - link "Browse source evidence":
+    - /url: "#/sources"
+  - link "Open work cards":
+    - /url: "#/operations"
+  - link "Operational calendar":
+    - /url: "#/calendar"

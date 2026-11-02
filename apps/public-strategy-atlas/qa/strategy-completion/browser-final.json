@@ -1,0 +1,236 @@
+{
+  "results": [
+    {
+      "script": "e0-browser.py",
+      "startedAt": "2026-11-01T23:37:52.244366+00:00",
+      "finishedAt": "2026-11-01T23:40:16.694780+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "e0-browser.py.log",
+      "evidence": "initial-browser-regression/e0-browser.py.log"
+    },
+    {
+      "script": "system-browser.py",
+      "startedAt": "2026-11-01T23:40:16.694947+00:00",
+      "finishedAt": "2026-11-01T23:40:32.125404+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "system-browser.py.log",
+      "evidence": "initial-browser-regression/system-browser.py.log"
+    },
+    {
+      "script": "deep-browser.py",
+      "startedAt": "2026-11-01T23:40:32.125733+00:00",
+      "finishedAt": "2026-11-01T23:40:59.953754+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "deep-browser.py.log",
+      "evidence": "initial-browser-regression/deep-browser.py.log"
+    },
+    {
+      "script": "merge-browser.py",
+      "startedAt": "2026-11-01T23:40:59.953969+00:00",
+      "finishedAt": "2026-11-01T23:41:12.281692+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "merge-browser.py.log",
+      "evidence": "initial-browser-regression/merge-browser.py.log"
+    },
+    {
+      "script": "discovery-browser.py",
+      "startedAt": "2026-11-01T23:41:12.281932+00:00",
+      "finishedAt": "2026-11-01T23:41:21.809027+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "discovery-browser.py.log",
+      "evidence": "initial-browser-regression/discovery-browser.py.log"
+    },
+    {
+      "script": "integration-browser.py",
+      "startedAt": "2026-11-01T23:41:21.809556+00:00",
+      "finishedAt": "2026-11-01T23:41:58.363826+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "integration-browser.py.log",
+      "evidence": "initial-browser-regression/integration-browser.py.log"
+    },
+    {
+      "script": "intake-access-browser.py",
+      "startedAt": "2026-11-01T23:41:58.364053+00:00",
+      "finishedAt": "2026-11-01T23:42:07.033616+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "intake-access-browser.py.log",
+      "evidence": "initial-browser-regression/intake-access-browser.py.log"
+    },
+    {
+      "script": "csoi-browser.py",
+      "startedAt": "2026-11-01T23:55:29.947009+00:00",
+      "finishedAt": "2026-11-01T23:57:05.802974+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-browser.py.log",
+      "evidence": "regression/csoi-browser.py.log"
+    },
+    {
+      "script": "csoi-source-browser.py",
+      "startedAt": "2026-11-01T23:43:27.011581+00:00",
+      "finishedAt": "2026-11-01T23:43:44.335292+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-source-browser.py.log",
+      "evidence": "initial-browser-regression/csoi-source-browser.py.log"
+    },
+    {
+      "script": "csoi-corpus-browser.py",
+      "startedAt": "2026-11-01T23:43:44.335569+00:00",
+      "finishedAt": "2026-11-01T23:43:50.866831+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-corpus-browser.py.log",
+      "evidence": "initial-browser-regression/csoi-corpus-browser.py.log"
+    },
+    {
+      "script": "csoi-layer-browser.py",
+      "startedAt": "2026-11-01T23:43:50.867080+00:00",
+      "finishedAt": "2026-11-01T23:44:11.228038+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-layer-browser.py.log",
+      "evidence": "initial-browser-regression/csoi-layer-browser.py.log"
+    },
+    {
+      "script": "csoi-compare-browser.py",
+      "startedAt": "2026-11-01T23:53:19.216677+00:00",
+      "finishedAt": "2026-11-01T23:53:43.188211+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-compare-browser.py.log",
+      "evidence": "regression/csoi-compare-browser.py.log"
+    },
+    {
+      "script": "csoi-wcos-browser.py",
+      "startedAt": "2026-11-01T23:44:31.338010+00:00",
+      "finishedAt": "2026-11-01T23:44:35.815768+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-wcos-browser.py.log",
+      "evidence": "initial-browser-regression/csoi-wcos-browser.py.log"
+    },
+    {
+      "script": "csoi-phe-browser.py",
+      "startedAt": "2026-11-01T23:44:35.816790+00:00",
+      "finishedAt": "2026-11-01T23:44:45.207908+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-phe-browser.py.log",
+      "evidence": "initial-browser-regression/csoi-phe-browser.py.log"
+    },
+    {
+      "script": "csoi-work-browser.py",
+      "startedAt": "2026-11-01T23:44:45.208208+00:00",
+      "finishedAt": "2026-11-01T23:44:53.047724+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-work-browser.py.log",
+      "evidence": "initial-browser-regression/csoi-work-browser.py.log"
+    },
+    {
+      "script": "csoi-calendar-browser.py",
+      "startedAt": "2026-11-01T23:44:53.048072+00:00",
+      "finishedAt": "2026-11-01T23:45:08.429320+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-calendar-browser.py.log",
+      "evidence": "initial-browser-regression/csoi-calendar-browser.py.log"
+    },
+    {
+      "script": "csoi-clauses-browser.py",
+      "startedAt": "2026-11-01T23:45:08.429994+00:00",
+      "finishedAt": "2026-11-01T23:45:17.435126+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-clauses-browser.py.log",
+      "evidence": "initial-browser-regression/csoi-clauses-browser.py.log"
+    },
+    {
+      "script": "csoi-snowy-browser.py",
+      "startedAt": "2026-11-01T23:45:17.435432+00:00",
+      "finishedAt": "2026-11-01T23:45:22.448332+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-snowy-browser.py.log",
+      "evidence": "initial-browser-regression/csoi-snowy-browser.py.log"
+    },
+    {
+      "script": "csoi-paths-browser.py",
+      "startedAt": "2026-11-01T23:53:43.188955+00:00",
+      "finishedAt": "2026-11-01T23:54:01.603447+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-paths-browser.py.log",
+      "evidence": "regression/csoi-paths-browser.py.log"
+    },
+    {
+      "script": "csoi-review-work-browser.py",
+      "startedAt": "2026-11-01T23:54:01.603671+00:00",
+      "finishedAt": "2026-11-01T23:54:14.219285+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-review-work-browser.py.log",
+      "evidence": "regression/csoi-review-work-browser.py.log"
+    },
+    {
+      "script": "csoi-cooma-browser.py",
+      "startedAt": "2026-11-01T23:54:14.219733+00:00",
+      "finishedAt": "2026-11-01T23:54:37.216761+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-cooma-browser.py.log",
+      "evidence": "regression/csoi-cooma-browser.py.log"
+    },
+    {
+      "script": "csoi-phe-context-browser.py",
+      "startedAt": "2026-11-01T23:54:50.258321+00:00",
+      "finishedAt": "2026-11-01T23:55:29.946543+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-phe-context-browser.py.log",
+      "evidence": "regression/csoi-phe-context-browser.py.log"
+    },
+    {
+      "script": "csoi-bombala-browser.py",
+      "startedAt": "2026-11-01T23:54:37.217808+00:00",
+      "finishedAt": "2026-11-01T23:54:50.257799+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-bombala-browser.py.log",
+      "evidence": "regression/csoi-bombala-browser.py.log"
+    },
+    {
+      "script": "csoi-bombala-phe-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "evidence": "browser-bombala-phe-performance.log",
+      "executedAt": "2026-11-01T23:52:46.489565+00:00",
+      "initialFailure": "initial-browser-regression/csoi-bombala-phe-browser.py.log"
+    },
+    {
+      "script": "csoi-strategy-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "evidence": "browser/results.json",
+      "executedAt": "2026-11-01T23:37:47.693520+00:00",
+      "scope": "All252records listed across source pagination; selected detailed workflows, all252matrixrows exported, source/parentwithdrawal and oldsnapshot missing checks. Not a claim of manually opening every detail."
+    },
+    {
+      "script": "csoi-remediation-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "evidence": "regression/remediation-final/phase1-browser-results.json",
+      "executedAt": "2026-11-01T23:53:54.998295+00:00"
+    }
+  ],
+  "distinctSuites": 26,
+  "initialFullRun": "initial-browser-regression/browser-run.json",
+  "affectedReruns": "regression/browser-run.json",
+  "timeouts": "UNCHANGED",
+  "scope": "Chromium desktop/mobile plus25routes at5viewports; physical devices/crossbrowser/professional screenreader NOT_TESTED."
+}

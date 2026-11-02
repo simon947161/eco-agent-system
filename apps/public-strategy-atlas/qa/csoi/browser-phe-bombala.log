@@ -1,0 +1,104 @@
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+{"integrity":true,"current":true,"metadataCompatibility":"CONFLICT","officialUse":"REJECTED_UNKNOWN_ADMISSION"}
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+{"integrity":true,"current":true,"metadataCompatibility":"CONFLICT","officialUse":"REJECTED_UNKNOWN_ADMISSION"}
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: PHE/source/work/calendar navigation, exact pins, independent exports, explicit withdrawn-snapshot import and source-isolated review blocking at desktop/390px
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: desktop/mobile Bombala five-level source/page evidence, independent source-review work/calendar and exported snapshot revalidation
+PASS: eight source-backed public domains, exact source-note/receipt links, conditional research chains and missing-fact cases on desktop/mobile
+{"integrity":true,"current":true,"metadataCompatibility":"CONFLICT","officialUse":"REJECTED_UNKNOWN_ADMISSION"}
+{"integrity":true,"current":true,"metadataCompatibility":"CONFLICT","officialUse":"REJECTED_UNKNOWN_ADMISSION"}
+PASS: desktop/mobile Cooma five-level OSSM outline, six/nine-node independent cross-DCP proof with geographic conflict,135entity snapshot and assumed-hours review/calendar return
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: desktop/mobile real eight-level DCP outline, parent return, historical design rate, source gates and independently verified expanded snapshot
+{"integrity":true,"current":true,"metadataCompatibility":"CONFLICT","officialUse":"REJECTED_UNKNOWN_ADMISSION"}
+{"integrity":true,"current":true,"metadataCompatibility":"CONFLICT","officialUse":"REJECTED_UNKNOWN_ADMISSION"}
+PASS: desktop/mobile independently pinned OP/CSP and nine-node DCP path sets, retained candidate/counterevidence gates and standalone proof verification
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: desktop/mobile clause→independent public work plan→day/week/month/quarter/year→draft preparation, assumed-hours boundary and independent snapshot
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+PASS: desktop/mobile mission→year→quarter→month→week→day→task→brief→evidence→report, fiscal projection, immutable task revision, weekly DRAFT and independent snapshot
+PASS: real OP page27 source and typed planning target, combined period/source/domain/unit/status filters, five coverage axes and independent work/calendar/source/accounting/audit companions on desktop/mobile
+PASS: 1440×900 24 routes, back/forward/reload, source filter/HTML rejection, independent companion, calendar and draft assistant
+PASS: 390×844 24 routes, back/forward/reload, source filter/HTML rejection, independent companion, calendar and draft assistant
+PASS: 1600×900 24 routes, back/forward/reload, source filter/HTML rejection, independent companion, calendar and draft assistant
+PASS: 2560×1080 24 routes, back/forward/reload, source filter/HTML rejection, independent companion, calendar and draft assistant
+PASS: 3840×1080 24 routes, back/forward/reload, source filter/HTML rejection, independent companion, calendar and draft assistant
+{
+  "invocationSuites": [
+    "e0-browser.py",
+    "system-browser.py",
+    "deep-browser.py",
+    "merge-browser.py",
+    "discovery-browser.py",
+    "integration-browser.py"
+  ],
+  "allSuitesExecutedThisInvocation": true,
+  "generatedAt": "2026-10-31T08:56:45.667162+00:00",
+  "browser": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "playwright": "1.62.0",
+  "python": "3.12.14",
+  "results": [
+    {
+      "script": "e0-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 9,
+      "log": "e10-e0-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667127+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "system-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 4,
+      "log": "e10-system-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667144+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "deep-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 8,
+      "log": "e10-deep-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667147+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "merge-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 4,
+      "log": "e10-merge-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667150+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "discovery-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 4,
+      "log": "e10-discovery-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667152+00:00",
+      "executedThisInvocation": true
+    },
+    {
+      "script": "integration-browser.py",
+      "status": "PASS_TESTED_HERE",
+      "exitCode": 0,
+      "functionalCheckGroups": 5,
+      "log": "e10-integration-browser.py.log",
+      "executedAt": "2026-10-31T08:56:45.667154+00:00",
+      "executedThisInvocation": true
+    }
+  ],
+  "limits": "Viewport emulation and Chromium accessibility tree are not physical hardware, cross-browser or professional screen-reader certification."
+}

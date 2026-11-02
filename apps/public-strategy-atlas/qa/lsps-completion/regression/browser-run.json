@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "script": "csoi-lsps-browser.py",
+      "startedAt": "2026-11-02T01:48:28.204871+00:00",
+      "finishedAt": "2026-11-02T01:49:28.178132+00:00",
+      "exitCode": 1,
+      "status": "FAIL",
+      "log": "csoi-lsps-browser.py.log"
+    },
+    {
+      "script": "csoi-metric-browser.py",
+      "startedAt": "2026-11-02T01:49:28.178829+00:00",
+      "finishedAt": "2026-11-02T01:49:54.895197+00:00",
+      "exitCode": 1,
+      "status": "FAIL",
+      "log": "csoi-metric-browser.py.log"
+    },
+    {
+      "script": "csoi-strategy-browser.py",
+      "startedAt": "2026-11-02T01:49:54.896508+00:00",
+      "finishedAt": "2026-11-02T01:50:28.767211+00:00",
+      "exitCode": 1,
+      "status": "FAIL",
+      "log": "csoi-strategy-browser.py.log"
+    },
+    {
+      "script": "csoi-phe-context-browser.py",
+      "startedAt": "2026-11-02T01:50:28.768340+00:00",
+      "finishedAt": "2026-11-02T01:52:08.220690+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-phe-context-browser.py.log"
+    },
+    {
+      "script": "e0-browser.py",
+      "startedAt": "2026-11-02T01:52:08.222621+00:00",
+      "finishedAt": "2026-11-02T01:57:05.238790+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "e0-browser.py.log"
+    },
+    {
+      "script": "system-browser.py",
+      "startedAt": "2026-11-02T01:57:05.240725+00:00",
+      "finishedAt": "2026-11-02T01:57:28.791225+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "system-browser.py.log"
+    }
+  ]
+}

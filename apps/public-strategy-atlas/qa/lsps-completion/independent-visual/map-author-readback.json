@@ -1,0 +1,1127 @@
+{
+  "schema": "lsps-independent-map-author-readback-1",
+  "sourceSha256": "9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "reviewedArtifact": "qa/lsps-completion/maps/map-review.json",
+  "reviewedArtifactSha256": "6e08d6b592e525b571da2a0c22472ec52d6a719f3314210d5efb62b8cf7c19c2",
+  "initialIndependentObservationsSha256": "321ec0f60b137af5072b1702d731bb458089553fc2163eb9288819de1c1a97a2",
+  "method": "原件全页与图例像素审读后，逐条对照作者记录；54 个裁图指纹从原件再次计算。哈希一致不是自动语义充分证明，语义结论来自显式视觉阅读。",
+  "count": 27,
+  "authorCorrections": [
+    {
+      "findingId": "MAP-01",
+      "pages": [
+        61,
+        111
+      ],
+      "observedProblem": "作者初稿写 95 Approved Lots。",
+      "originalPixelFinding": "4x 原图明确读为 85 Approved Lots。",
+      "resolution": "作者已更正；原文字不等于许可文件核验。"
+    },
+    {
+      "findingId": "MAP-02",
+      "pages": [
+        105,
+        107
+      ],
+      "observedProblem": "作者初稿 legend 为二元数组，其余记录为对象。",
+      "originalPixelFinding": "需要与正文图区别保存这些独立图例。",
+      "resolution": "已统一为 {label,symbol}；105/107 不按无差异复制合并。"
+    },
+    {
+      "findingId": "MAP-03",
+      "pages": [
+        16
+      ],
+      "observedProblem": "作者初稿 transport link 色、wilderness 纹理、农业类颜色错配。",
+      "originalPixelFinding": "橙红线、绿色斜线、棕橙色分别对应原图三类。",
+      "resolution": "已纠正；Port of Eden 符号也按原图修为船。"
+    },
+    {
+      "findingId": "MAP-04",
+      "pages": [
+        107
+      ],
+      "observedProblem": "作者初稿 legendAnchor y0=688.075 截去图例首行。",
+      "originalPixelFinding": "LSPS Study Areas / State Forest / Scenic Protection Areas 首行必须完整纳入。",
+      "resolution": "裁框扩展为 y0=644.2599755859375，重新渲染视觉确认完整。"
+    },
+    {
+      "findingId": "MAP-05",
+      "pages": [
+        16,
+        26,
+        28,
+        108
+      ],
+      "observedProblem": "部分记录缺来源标注与年份角色。",
+      "originalPixelFinding": "DPE 2017 为图注来源年；geoADAPT 日期为制作日；其他本地图多为 2020 版权标记。",
+      "resolution": "作者已新增 printedSourceMark；不把这些年视为观测年。"
+    }
+  ],
+  "initialReviewerErrata": [
+    {
+      "recordIds": [
+        "lsps2020:visual:pdf027:figure08"
+      ],
+      "initialObservation": "National Parks/Nature Reserves 初始概要写浅绿填充。",
+      "correctedPixelObservation": "图例符号实际为白色/浅灰外框；地图背景淡绿不能用来替代图例符号。"
+    },
+    {
+      "recordIds": [
+        "lsps2020:visual:pdf048:figure17",
+        "lsps2020:visual:pdf109:map"
+      ],
+      "initialObservation": "初始概要把图例缩写规范为 Not SMRC Road。",
+      "correctedPixelObservation": "可见原图拼写为 Not SMSC Road，应保留原字串，不自动纠正。"
+    },
+    {
+      "recordIds": [
+        "lsps2020:visual:pdf061:figure21",
+        "lsps2020:visual:pdf111:map"
+      ],
+      "initialObservation": "初始概要复用了广域图部分额外图例。",
+      "correctedPixelObservation": "城区图例没有广域图的 Biodiversity Corridors、Koala POM、Heavy Vehicle Investigation Route，不应继承；根任务最终图例已区分。"
+    },
+    {
+      "recordIds": [
+        "lsps2020:visual:pdf107:map"
+      ],
+      "initialObservation": "初始概要说比正文增列 LSPS Study Areas，并误保留 Strategic Centres。",
+      "correctedPixelObservation": "附录图例首项实际为 LSPS Study Areas，正文首项为 Strategic Centres；此处是替代，不是同时新增。"
+    }
+  ],
+  "minorRefinement": "已落实：p88/p107 Scenic Protection Areas 补为 pale pink outline and hatched fill；审读快照已包含此修正。",
+  "checks": [
+    {
+      "recordId": "lsps-map-p008",
+      "pdfPage": 8,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "A–H 与七类图例逐一对照；红圈中心、蓝框乡村分区与附录粉框研究区分开。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            27.75,
+            47.25,
+            570.25,
+            766.5
+          ],
+          "rasterDigest": "sha256:a4d507df5f8f6514160eabd5d723bedf4aa04a2a5e035bd2f4001c2a032a82a5",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            27.75,
+            694.575,
+            570.25,
+            766.5
+          ],
+          "rasterDigest": "sha256:20adc163b149becbf109e536879ff55298dadd1eae3ad6002b408ac2f8604128",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "85364d030c4a82cabd3a788fbd9fdd7f4bb42e61a3fedb40769aa4d22e8f5916",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p016",
+      "pdfPage": 16,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "区域范围及 22 类图例审读；橙红 transport link、绿色斜线 wilderness、棕橙农业类已纠正；图标类别不推导建设关系。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            2.7699999809265137,
+            0.13006591796875,
+            841.9199829101562,
+            595.2000122070312
+          ],
+          "rasterDigest": "sha256:ee8a30b5c7ce0171d361669687f106ed9f116cf0fba484f2dffc5ada37f3d1e9",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            19.552999639511107,
+            89.39055786132812,
+            229.34049537181855,
+            583.29861328125
+          ],
+          "rasterDigest": "sha256:e6d136d7c5fd03811d9f607f026bac3bf2da5024f5eea60c26fa192c9e47dd7a",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "7f3ad436cd6ea5c303c8c029cee86fd8f78885ba880e38cc727f840fa46c4991",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p026",
+      "pdfPage": 26,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "十类环境图例完整；Sydney 集水区斜线圆与 biodiversity corridor 不混同；来源年 2017 作为图注年。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            72.0,
+            336.54998779296875,
+            376.70001220703125,
+            768.5499877929688
+          ],
+          "rasterDigest": "sha256:76545e0dc5211de1b606d841d574e77d9cf8fb100b440c48e8eda0d973457277",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            72.0,
+            682.1499877929688,
+            376.70001220703125,
+            768.5499877929688
+          ],
+          "rasterDigest": "sha256:b7be6b1910b8a916d7abe887c5f71c804573c1eed24934a7d8f979353f9d5ee3",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "4d7edff63f460e1424a15a3a3e5cfb94157680f279a83cdacbe01a59c5d8fd6e",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p027",
+      "pdfPage": 27,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "草案 KPoM 范围、1:600000 与北向可见；Parks/Reserves 为白/浅灰边框，非考拉已验证栖息地。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            58.619998931884766,
+            445.7190246582031,
+            314.7608947753906,
+            808.1256713867188
+          ],
+          "rasterDigest": "sha256:3530dcbf616f4db112c229c3a65fccf22cb9aa8682163726103754b16d6246f9",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            58.619998931884766,
+            710.2758767700195,
+            222.5501722717285,
+            808.1256713867188
+          ],
+          "rasterDigest": "sha256:73a6b9f4f56c1275ceb1722ae76ddd1059fc073af7c3282e9e4ee037d3a96210",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "28380ce628e04a458b3128102a2eb1e0aa4522455ee1caf320b737e797d7fabb",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p028",
+      "pdfPage": 28,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "13 类环境/道路/未知/研究区图例完整；2019.12 图层标签与 geoADAPT 制图日期分开；实地验证条件保留。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            36.849998474121094,
+            14.5499267578125,
+            564.0499877929688,
+            771.949951171875
+          ],
+          "rasterDigest": "sha256:6a15ff7578ad4c92a6c9f3e36c8ebd7b53f7cf818fccc07868648e3f51de19db",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            42.12199836730957,
+            537.1559436035155,
+            247.72999420166016,
+            756.8019506835938
+          ],
+          "rasterDigest": "sha256:50e540556679b8c5a39af87f36ec19b4dfa07193a9db1da5f3659611b295f359",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "66c8e5510528257268af4014f3a33d7b55c8a5a4c252360fef82b617606f49b8",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p048",
+      "pdfPage": 48,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "州/区域/地方道路虚实与颜色保留；Not SMSC Road 原拼写与责任未核实边界保留；无北向标识强补。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            60.0,
+            115.54998779296875,
+            522.75,
+            736.8499755859375
+          ],
+          "rasterDigest": "sha256:ef95d596c9cca67c83a8c864662210e7cd9e1d17ec2aee2c585e09403048b6b9",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            69.255,
+            562.8859790039062,
+            212.7075,
+            724.4239758300781
+          ],
+          "rasterDigest": "sha256:863ba6e0bc5c13e6cf283e7ddee83574ffde6ffaf01f2c5c9db3880857e8d206",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "d80d3b13c61dc9f43aa3e04195dca5dc6eecdb5ed0be6a8027b8968be1c62b5c",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p057",
+      "pdfPage": 57,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "调查线路 Bombala 3/4、Cooma 箭头、Bundian Way 与 Railway/MRT 分开；无批准或实建推断。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            48.5,
+            86.79998779296875,
+            548.5499877929688,
+            771.0
+          ],
+          "rasterDigest": "sha256:f7627a8d65672f85276010754dd6cdb82a09aa35533c18cb176666441f8d9381",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            48.5,
+            695.7379986572266,
+            548.5499877929688,
+            771.0
+          ],
+          "rasterDigest": "sha256:22606d1bbdb4bafcc925acf199a6cb4fcebd04ecbd2f6dee8acb247fe48bf6d4",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "e49754e1c0c7b86d1a4757075643eeba349f4eac898ce97664c016fc9aa4e95a",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p060",
+      "pdfPage": 60,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "广域 Cooma 的机场与住宅调查区存在；existing/use 图层与 investigation 斜纹分开；8km 条尺。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            54.20000076293945,
+            37.3499755859375,
+            559.0999755859375,
+            774.3999633789062
+          ],
+          "rasterDigest": "sha256:5831ede573699ab5116ae557c6766c6cee75df55c00c66da4a75eb05e7a2c2a2",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            54.20000076293945,
+            649.1014654541016,
+            559.0999755859375,
+            774.3999633789062
+          ],
+          "rasterDigest": "sha256:1a990ae35d84f1e2e577c8a9a14da7de60c678d8afc8e7c594dc74e8ed9b41c1",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "f65a01a57b1b6c30015ac6ec276f7b25efa6ff61a9c695b441d45633bd0ae81d",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p061",
+      "pdfPage": 61,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "城区图不从广域图继承不存在的图例；>850m ASL 与 4km 条尺；85 Approved Lots 重新放大确认，历史状态限定保留。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            48.849998474121094,
+            33.449951171875,
+            569.199951171875,
+            771.199951171875
+          ],
+          "rasterDigest": "sha256:827407e08332dc2b5f7499d723d745e2d0ff8934443c19dbf03c27d408da0a35",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            48.849998474121094,
+            645.782451171875,
+            569.199951171875,
+            771.199951171875
+          ],
+          "rasterDigest": "sha256:db5f7705c55e2d535dcccdf4f7709b04c3ad77dd8f6cb3287f3611cc2b039d86",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "9608c43ac3988c647e6531c4f9d3417389b63346e558bba761cee086d11d7948",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p065",
+      "pdfPage": 65,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "广域 Jindabyne / Kalkite / Crackenback 与 4km 条尺；40m 缓冲图例不升级法律义务；编号不补号。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            45.650001525878906,
+            4.25,
+            788.800048828125,
+            529.0
+          ],
+          "rasterDigest": "sha256:1654dbcd2be7e5988a83674ec0be2b98dcf3098e3087aad805537ea012b1a532",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            610.4440374755859,
+            25.240000000000002,
+            788.800048828125,
+            298.11
+          ],
+          "rasterDigest": "sha256:fff22506c5359dab8d075367074765b0af031f70ad71bef1013ed35a053c0a00",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "964f37f443080c765fd13c9104a667ea8d431304f3f9f9bfb44d79a563c9028d",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p066",
+      "pdfPage": 66,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "城区与 1km 条尺；教育、健康、营地符号有别于广域图；SAP 语境与空间适用性未知保留。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            42.5,
+            7.300048828125,
+            785.0499877929688,
+            531.6500244140625
+          ],
+          "rasterDigest": "sha256:e38c74c1156c234ddf62f4537e149acfa80ec5d2900b8cc2c13462642aa31439",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            606.8379907226563,
+            28.2740478515625,
+            785.0499877929688,
+            311.42303466796875
+          ],
+          "rasterDigest": "sha256:07457ab710ef66b187e21876a9c50902432f148b6d2a5948dfc20dfbbff2e92b",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "b578eb3e24da9d923257187e53af92e9131ea9788d6a3c54c47385782689df79",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p069",
+      "pdfPage": 69,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "Bombala 1/2/5 黄/蓝/紫虚线与调查语义逐项核对；河溪缓冲未套用其他地图 40m；750/850/950 高程类别。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            66.0999984741211,
+            26.000030517578125,
+            792.5999755859375,
+            526.3500366210938
+          ],
+          "rasterDigest": "sha256:2396bb920289be67b2823fe45b3ac59ed71b7a71ba31073ad55b5de17e9079ea",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            625.5049808502198,
+            51.01753082275391,
+            792.5999755859375,
+            371.2415347290039
+          ],
+          "rasterDigest": "sha256:2f2ef7eaf7c77837843e8bd733723dd212d90b7a75eedb1275b97fb9e81160a5",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "13b03af26d5a82d058612b7424300957dabdaa854cb86316f382fae1a75adbd3",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p072",
+      "pdfPage": 72,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "城镇扩展调查橙黑斜纹与既有住宅分开；重车调查路线红虚线；900/1000/1200 与 40m 图例。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            74.19999694824219,
+            26.199981689453125,
+            779.2000122070312,
+            526.0499877929688
+          ],
+          "rasterDigest": "sha256:33566e3afc26a6f8184083ff8a6403d60d5f96b8d1cee1e35ce235fff819ccd8",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            624.1000088500977,
+            56.190982055664065,
+            779.2000122070312,
+            376.09498596191406
+          ],
+          "rasterDigest": "sha256:2f380d10ccb08887265e1ad555604e1c3cb2b696325deba2a2dd6aca776b5aef",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "64e60405ea50eae2a6c17af89445c925a956cc43c5b00ed946da4399a0538c79",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p075",
+      "pdfPage": 75,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "Michelago 镇与乡居调查图层分开；景观视域、考拉 POM、生物廊道与 770 等高线保留；不推造地形基准。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            32.650001525878906,
+            33.5999755859375,
+            560.1500244140625,
+            765.75
+          ],
+          "rasterDigest": "sha256:671ee5e41d861cb22ba237be6760cbdf431ce5fd003045670c00ba1ce1e517c6",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            32.650001525878906,
+            641.2844958496094,
+            560.1500244140625,
+            743.7854992675781
+          ],
+          "rasterDigest": "sha256:f45062fa0e3c4f76033dec804d00907908ab8ac7da11969abd494c6759bfd3cc",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "f7d8eee28dcabd9f39969adf26cd3ebf0a3c40e3e76470fdafb87506bbf0e933",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p088",
+      "pdfPage": 88,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "正文乡村图有红色 Strategic Centres；图中景观、保护、乡居调查类不等于现行法定分区。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            41.25,
+            51.0,
+            560.2000122070312,
+            757.5000610351562
+          ],
+          "rasterDigest": "sha256:9fdfdfba7fffe9008f44e5bf0d8318a138ccaafd05028017f0b82412dc2978ac",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            41.25,
+            686.8500549316407,
+            560.2000122070312,
+            757.5000610351562
+          ],
+          "rasterDigest": "sha256:d89f15b4e99378c57da9c21021446bf50006a497f8075d549e652a9c8dc45705",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "1605792160610a171ce3c7b7e28a5c810452d316321884c6c52cebc1c386fc0c",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p105",
+      "pdfPage": 105,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录单独审读；LSPS Study Areas 粉框而非正文 8 的红圈中心/蓝框乡村图例，schema 已统一对象。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            56.099998474121094,
+            97.20001220703125,
+            556.6499633789062,
+            769.5
+          ],
+          "rasterDigest": "sha256:b80de8efef0edc6f2e99144163437cdacba5812caa7038f7eca47c07201b0c92",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            56.099998474121094,
+            702.2700012207032,
+            556.6499633789062,
+            769.5
+          ],
+          "rasterDigest": "sha256:3641e075e3d726a22299b1c344e1a2e1a11b9459f8bfe68e36d03c45e104be73",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "de5c0de8183fe7ce5a8153e30f71511b4c605c040aba07660e84a42485be0bd1",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p106",
+      "pdfPage": 106,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录交通图单独审读；3/4 与 Cooma 调查箭头和正文的主题关联一致，不假定字节相同。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            60.5,
+            94.39996337890625,
+            560.5499877929688,
+            778.5999755859375
+          ],
+          "rasterDigest": "sha256:7ae0fad993ae1226931484c080a70b7d621c638df14a73b48a462f33183dddfc",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            60.5,
+            703.3379742431641,
+            560.5499877929688,
+            778.5999755859375
+          ],
+          "rasterDigest": "sha256:f7ea677f067196f23c961e34f030b6eb2c2f540d5af774937d3b63f5ccb3b06c",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "02aff0a2771e14e3d1b1f63bbee10c172fd3e65337ff59bc6d6798d77eb2c839",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p107",
+      "pdfPage": 107,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录首行 LSPS Study Areas 替代正文红圈中心；新裁框完整包含三行图例。保留独立出现位置。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            33.599998474121094,
+            30.8499755859375,
+            561.3999633789062,
+            761.0999755859375
+          ],
+          "rasterDigest": "sha256:cbdceefe7b000e459c7fdb9df103493aae69bd7a8ebb69ee00b9e8d4b1732957",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            33.599998474121094,
+            644.2599755859375,
+            561.3999633789062,
+            761.0999755859375
+          ],
+          "rasterDigest": "sha256:f41a630a3e6e939577629298eca1e89c8789562cf423c656bf9288a85c401b77",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "d06047fd0f094c5ef49456d169a5ad7a28c539a04e1eab8e7be8ea806d358aec",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p108",
+      "pdfPage": 108,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录生态图单独审读；13 类图例、未知类、制作日期及不替代地面验证条件均保留。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            35.400001525878906,
+            13.64996337890625,
+            561.9500122070312,
+            770.1499633789062
+          ],
+          "rasterDigest": "sha256:bc7ee38124540658b685904279e77d181ce781932b78a858c664540f623810b3",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            40.66550163269043,
+            535.6349633789063,
+            246.02000579833987,
+            755.0199633789063
+          ],
+          "rasterDigest": "sha256:a6ed842d452e55ec0fecf2e5b7eacf3ecd2a692963152312d79a022c68396373",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "18f2af7c7b8734d1dd7a71d93a9d63c8579d34af43c48ff20041b8b3a505b341",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p109",
+      "pdfPage": 109,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录道路图单独审读；Not SMSC 原字串、铺装虚实、管理责任与日期未知均保留。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            43.29999923706055,
+            52.949951171875,
+            572.5999755859375,
+            763.5999755859375
+          ],
+          "rasterDigest": "sha256:54977766e1418d2feb381298c4d205031334b0ce59b1a683dd184278b05e4cf6",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            53.885998764038085,
+            564.61796875,
+            217.96899143218994,
+            749.3869750976562
+          ],
+          "rasterDigest": "sha256:5696569c85e8ddf2e1ffb539928c5d20295f4309b538877467fd32336f2548ba",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "ed4befe470d6a504957424537f2dd7d79bbf55b1b41a7f4e2481e07c859df8a2",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p110",
+      "pdfPage": 110,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录广域 Cooma 单独审读；机场调查类存在，8km 尺度；历史 existing 不升级为今日现状。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            39.25,
+            23.3499755859375,
+            555.4000244140625,
+            776.7999877929688
+          ],
+          "rasterDigest": "sha256:886cedffbec5a3f2cbc2f03993939f11b9279c4ba4dbe838c07e82c6844554a8",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            39.25,
+            648.7134857177734,
+            555.4000244140625,
+            776.7999877929688
+          ],
+          "rasterDigest": "sha256:4b8b013eee3e0ebf9a4cf439395927ce24df756aaee305e56c0ee342c2db49a6",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "e949518bdf1b77a874fec1caa77627a3511e4745423026455bfc61bf7ea43a25",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p111",
+      "pdfPage": 111,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录 Cooma 城区单独审读；85 Approved Lots 曾被误读为 95，已按 4x 原图纠正。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            36.849998474121094,
+            21.449951171875,
+            557.199951171875,
+            759.199951171875
+          ],
+          "rasterDigest": "sha256:cacf2470591d1080f87de95cf0fdd6bf781fc8deaee638999105eac1a4c50e53",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            36.849998474121094,
+            633.782451171875,
+            557.199951171875,
+            759.199951171875
+          ],
+          "rasterDigest": "sha256:ff6f1da0c3113bd58341e13d57a01ae05e90d23b065e127683c1860829e4ff60",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "62da29362c43fc11ab9477a4a6d82c7b14652d3254e9c7c9b5cdbaffb78d76dc",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p112",
+      "pdfPage": 112,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录 Jindabyne 广域单独审读；4km 尺度；正文 SAP 图注未在此页重复，限定来源明确。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            55.349998474121094,
+            39.45001220703125,
+            781.25,
+            529.7000122070312
+          ],
+          "rasterDigest": "sha256:9a29bd8dbd9fcd6f347c4d5210c34780af32c205eaa56bc30b7cebf2752e8685",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            607.0339996337891,
+            59.06001220703125,
+            781.25,
+            313.99001220703127
+          ],
+          "rasterDigest": "sha256:c5595fd4f66371b19e0390a7c08c3846a2d3a317e118eaf2178e1256a25e57ed",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "201d3dbddf7d170781812f33822f03aa926497755df72177c8349e2f0dc44381",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p113",
+      "pdfPage": 113,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录 Jindabyne 城区单独审读；1km 尺度、教育/健康/营地及替代路线类别核对。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            55.400001525878906,
+            27.45001220703125,
+            792.4500122070312,
+            528.5
+          ],
+          "rasterDigest": "sha256:4c31297d3b541ad6080d70855912b7c7e78cedca5cf69468505e4a6060326acb",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            615.5580096435547,
+            47.49201171875,
+            792.4500122070312,
+            318.0590051269531
+          ],
+          "rasterDigest": "sha256:fddab2fed938fa1bb155d8477f8a2b5ae4a6e6acd20a4cdda2f657a59a6726e1",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "6cd62739177312bc346d5a37fe6ef0ea93d149b93268a19241f8dc2aef8d8132",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p114",
+      "pdfPage": 114,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录 Bombala 单独审读；1/2/5 及黄/蓝/紫虚线为可复放的语义负例依据，不只校验图像哈希。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            65.4000015258789,
+            27.100006103515625,
+            791.9000244140625,
+            527.4500122070312
+          ],
+          "rasterDigest": "sha256:3312609ce5b8b817b9cf015bb77c8de80016c5838b88ee95f78c2ecb765f14f7",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            624.8050191497803,
+            52.11750640869141,
+            791.9000244140625,
+            372.3415103149414
+          ],
+          "rasterDigest": "sha256:433b43a3eea26200cc23404d0657a1fd58f153561928d1d2c218bf833204b8c4",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "74ffe1a1b1f6f2b2dbe5d4912cd4c6f5f2f2a7f2d81130c53d5ddb29a7498031",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p115",
+      "pdfPage": 115,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录 Berridale 单独审读；扩展/乡居/工业调查类别与已用地分开；2km 尺度。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            74.75,
+            25.199981689453125,
+            779.75,
+            525.0499877929688
+          ],
+          "rasterDigest": "sha256:6e883bc0d4b7d1bf99acf19b384d27071f336de98c7acff9619a12c2bbe1551b",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            624.65,
+            55.190982055664065,
+            779.75,
+            375.09498596191406
+          ],
+          "rasterDigest": "sha256:d8c7a902e117635b7a30cadff6b052bdabd8af05e8af3dd048f0e77a3fccffce",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "db605ec030fc9e4db33dfb48f712641c1c53ac893ccde6a2dd784a570d58ccb2",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    },
+    {
+      "recordId": "lsps-map-p116",
+      "pdfPage": 116,
+      "status": "PASS_BOUNDED_AUTHOR_MAP_READBACK",
+      "reason": "附录 Michelago 单独审读；蓝灰景观视域、绿斜线廊道、粉竖纹 Koala POM 与镇/乡居调查类别保留。",
+      "legendAnchorComplete": true,
+      "sourceRasterChecks": [
+        {
+          "kind": "map",
+          "bbox": [
+            47.650001525878906,
+            54.199951171875,
+            566.4000244140625,
+            774.199951171875
+          ],
+          "rasterDigest": "sha256:15b667284f115cee0e32a4bad76a7a22f543776633c6926671fb0b6d18b561cd",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        },
+        {
+          "kind": "legend",
+          "bbox": [
+            47.650001525878906,
+            651.799951171875,
+            566.4000244140625,
+            752.599951171875
+          ],
+          "rasterDigest": "sha256:ea65f74bc17b9364f92c804046151d4f65b06385103378f80ff9045cdf83fe90",
+          "status": "MATCH_FRESH_ORIGINAL_RENDER"
+        }
+      ],
+      "reviewedRecordCanonicalSha256": "63702691b6b26293b97d4c277883bf91fd84a6468e199faa46ab6836d15a428b",
+      "unresolvedSpatialLimits": [
+        "NO_PARCEL_GEOMETRY",
+        "NO_CURRENT_LEGAL_ADMISSION",
+        "NO_CURRENT_EXECUTION_VERIFICATION"
+      ],
+      "runtimeStatus": "PENDING_ACTUAL_NODE_READBACK"
+    }
+  ],
+  "runtimeNodeReadback": "PENDING_ROOT_GENERATION",
+  "appTestsAndPublication": "NOT_PERFORMED_BY_THIS_REVIEWER",
+  "rasterEvidenceStatus": "HISTORICAL_V1_NONFINAL_SUPERSEDED",
+  "finalEvidence": "map-final-source-node-readback.json",
+  "supersessionReason": "Shared Document state affected some rendered pixels. All 54 source crops must use one fresh Document per crop under strict v2; old exact bytes retained in historical-v1/."
+}

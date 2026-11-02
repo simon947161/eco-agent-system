@@ -1,0 +1,83 @@
+{"integrity":true,"current":true,"metadataCompatibility":"CONFLICT","officialUse":"REJECTED_UNKNOWN_ADMISSION"}
+{"integrity":true,"current":true,"metadataCompatibility":"CONFLICT","officialUse":"REJECTED_UNKNOWN_ADMISSION"}
+Traceback (most recent call last):
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/csoi-cooma-browser.py", line 25, in <module>
+    page.evaluate('(id)=>location.hash="#/knowledge/"+encodeURIComponent(id)',leaf);expect(page.locator('#csoiWorkspace h1')).to_have_text('Inside the knowledge');page.get_by_role('link',name='Plan an independent source review',exact=True).click();page.locator('input[name=sourceReviewDate]').fill('2026-11-03');page.locator('input[name=sourceReviewHours]').fill('2.25');page.get_by_role('button',name='Append independent review plan',exact=True).click();expect(page.locator('#csoiWorkspace h1')).to_have_text('Calendar work item',timeout=20000);expect(page.locator('#csoiWorkspace')).to_contain_text('ASSUMED');expect(page.locator('#csoiWorkspace')).to_contain_text('NOT_CREATED');expect(page.locator('#csoiWorkspace')).to_contain_text('2.25');page.get_by_role('link',name='Return to source clause',exact=True).click();expect(page.locator('#csoiWorkspace')).to_contain_text('Soil, terrain and laboratory evidence facets');assert not errors,errors
+                                                                                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 17876, in click
+    self._sync(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 593, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("link", name="Plan an independent source review", exact=True)
+    - locator resolved to <a href="#/calendar?review=csoi%3Adcp%3Acooma2014%3A7%3A4%3A2%3A2%3Asoil&year=2026">Plan an independent source review</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <button id="contentView" aria-pressed="false">Inside selected station</button> from <header class="command-bar">…</header> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <button data-mode="time" aria-pressed="false">Demo time</button> from <header class="command-bar">…</header> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 100ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <button id="discoveryEngineBtn">Discovery & challenge</button> from <header class="command-bar">…</header> subtree intercepts pointer events
+  14 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <button id="contentView" aria-pressed="false">Inside selected station</button> from <header class="command-bar">…</header> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <button data-mode="time" aria-pressed="false">Demo time</button> from <header class="command-bar">…</header> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <button id="discoveryEngineBtn">Discovery & challenge</button> from <header class="command-bar">…</header> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <button id="discoveryEngineBtn">Discovery & challenge</button> from <header class="command-bar">…</header> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <button id="contentView" aria-pressed="false">Inside selected station</button> from <header class="command-bar">…</header> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+

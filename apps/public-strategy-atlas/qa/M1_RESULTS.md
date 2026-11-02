@@ -1,0 +1,6 @@
+# M1 actual checks — 2026-10-29
+PASS: node model.test.cjs; node --check atlas.js / atlas-data.js / atlas-model.js.
+PASS: real Edge reload with separated scripts; water drawer shows two distinct synthetic CSP paths and e7/e8 SYNTHETIC UNREVIEWED; upstream water→OP and downstream OP→water via Enter; downstream water→audit via click; search 水务 yields only water after fixing selected-neighbour filter conflict; KPI mode zero colour paths and UNKNOWN; official directory anchor href/rel inspected; console warn/error capture empty.
+Screenshots m1-desktop.png and m1-kpi-unknown.png are real viewport captures. The latter explicitly shows selected KPI mode. Browser compositor can lag a DOM change; the final screenshot was recaptured in a subsequent observation.
+NOT_TESTED: live official directory navigation/content availability, formal clauses, screen reader, physical phone, 60/200 nodes, all browsers, cryptographic adversarial audit, source import or persistent event editing. No official legal or performance result.
+Public-safety review: changed scope confined to apps/public-strategy-atlas; hand-authored synthetic records and directory URLs; no credentials, personal cases, absolute private paths or Council internal text. PNG captures contain only localhost app content and browser extension overlay, not user tabs/accounts. No dependency download or purchase.

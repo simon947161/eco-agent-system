@@ -1,0 +1,121 @@
+{
+  "unitId": "csoi:op2026:finance:p120:fund-r08",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:120",
+  "cacheRevisionId": "sha256:12857f7ecff76fa3afc84c814c5267f2a3c780d2d2bd4204b6ed35c60227a3a1",
+  "actualFullUnitDigest": "sha256:aac95676e02f15766ff6f05f3bf9e534c218b1304d5ffc898c98b8ce269fce00",
+  "page": 120,
+  "category": "OP_FUND_FINANCIAL_ROW",
+  "summary": "Income Statement by Fund 的“Net Gains from the Disposal of Assets”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+  "conditions": [],
+  "qualifiers": [],
+  "facts": {
+    "tableId": "op-finance:p120:fund-statement",
+    "rowLabel": "Net Gains from the Disposal of Assets",
+    "statementSection": "Income from continuing operations",
+    "rowRole": "SOURCE_LINE_ITEM",
+    "budgetStatus": "PROJECTED_BASE_SCENARIO_NOT_ACTUAL",
+    "columnValues": [
+      {
+        "column": "Consolidated",
+        "display": "684",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Net Gains from the Disposal of Assets",
+        "status": "PRINTED_VALUE",
+        "numericValue": 684,
+        "numericValueText": "684",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "General",
+        "display": "578",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Net Gains from the Disposal of Assets",
+        "status": "PRINTED_VALUE",
+        "numericValue": 578,
+        "numericValueText": "578",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "Water",
+        "display": "59",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Net Gains from the Disposal of Assets",
+        "status": "PRINTED_VALUE",
+        "numericValue": 59,
+        "numericValueText": "59",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "Sewer",
+        "display": "47",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Net Gains from the Disposal of Assets",
+        "status": "PRINTED_VALUE",
+        "numericValue": 47,
+        "numericValueText": "47",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "Waste",
+        "display": "-",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Net Gains from the Disposal of Assets",
+        "status": "DASH_NOT_INTERPRETED_AS_ZERO",
+        "numericValue": null,
+        "numericValueText": null,
+        "signConvention": "AS_PRINTED"
+      }
+    ]
+  },
+  "sourceAnchorCount": 7,
+  "sourceLocations": [
+    {
+      "field": "facts.rowLabel",
+      "pdfPage": 120,
+      "bbox": [
+        70.93571515764508,
+        320.9260498046875,
+        304.5280059814453,
+        335.14601745605466
+      ],
+      "normalizedTextDigest": "sha256:c74d7ed7c3a1761719f4c20f00153df0af5edcb14270aad2547fc7d5c0aefea2",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "tableHeader",
+      "pdfPage": 120,
+      "bbox": [
+        65.37700042724609,
+        209.59600219726562,
+        520.7672485351562,
+        237.7685302734375
+      ],
+      "normalizedTextDigest": "sha256:4f7fc4daf833758af51867e42daac92a9dbc66d71091a9015d57cc1e317263f4",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "facts.columnValues[0]",
+      "pdfPage": 120,
+      "bbox": [
+        304.22800598144534,
+        320.9260498046875,
+        358.4080108642578,
+        335.14601745605466
+      ],
+      "normalizedTextDigest": "sha256:10ba045e9ee40807e57f6093280b9fa9eaf640ba4955e340ae4c749382ad96fc",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:aac95676e02f15766ff6f05f3bf9e534c218b1304d5ffc898c98b8ce269fce00",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

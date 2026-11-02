@@ -1,0 +1,203 @@
+{
+  "pack": "A",
+  "software_status": "PARTIAL",
+  "corpus_status": "PARTIAL",
+  "admission_status": "PENDING",
+  "summary": "Nine Pack A tasks verified against code and actual native/Chromium evidence; COI-002 is BLOCKED for private WCOS inventory. New governance enforces orthogonal security/layers and public-channel checks, CSOI records use existing immutable Atlas entities, and 21 functional page shells preserve the route map/127 items/legacy snapshots. Calendar/assistant engines are deferred in this Pack A browser run. Full system is not complete.",
+  "next_executable": "COI-011 \u2014 append independently observed public source revisions and intake evidence",
+  "tasks": [
+    {
+      "id": "COI-001",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "qa/CSOI_BASELINE_MATRIX.md",
+        "qa/CSOI_TEST_MATRIX.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
+    },
+    {
+      "id": "COI-002",
+      "status": "BLOCKED",
+      "actual_code_files": [
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": "No independently authorised private WCOS technical contract/inventory; private records not accessed.",
+      "next_action": "Obtain a separately authorised abstract technical contract without protected data."
+    },
+    {
+      "id": "COI-003",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
+    },
+    {
+      "id": "COI-004",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-governance.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
+    },
+    {
+      "id": "COI-005",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
+    },
+    {
+      "id": "COI-006",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-governance.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
+    },
+    {
+      "id": "COI-007",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas-domain.js",
+        "atlas-model.js",
+        "csoi-model.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
+    },
+    {
+      "id": "COI-008",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-router.js",
+        "csoi-pages.js",
+        "csoi-pages.css",
+        "atlas.js",
+        "index.html",
+        "qa/csoi-browser.py"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
+    },
+    {
+      "id": "COI-009",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "qa/CSOI_TEST_MATRIX.json"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
+    },
+    {
+      "id": "COI-010",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "run-tests.cjs",
+        "qa/run-local-browser.py",
+        "qa/csoi-browser.py"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-a-native.json",
+        "CSOI_PACK=A python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-a.json",
+        "qa/csoi/browser-a.json",
+        "qa/CSOI_BASELINE_MATRIX.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve tested capability and advance Pack B; later packs add source/domain/operational depth."
+    }
+  ]
+}

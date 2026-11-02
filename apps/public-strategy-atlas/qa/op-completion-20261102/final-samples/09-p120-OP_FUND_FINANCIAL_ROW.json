@@ -1,0 +1,121 @@
+{
+  "unitId": "csoi:op2026:finance:p120:fund-r02",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:120",
+  "cacheRevisionId": "sha256:12857f7ecff76fa3afc84c814c5267f2a3c780d2d2bd4204b6ed35c60227a3a1",
+  "actualFullUnitDigest": "sha256:027e543f5348204abcd07e94f62b9f51653ee1c816616fa4bdfae7f0c9c4271a",
+  "page": 120,
+  "category": "OP_FUND_FINANCIAL_ROW",
+  "summary": "Income Statement by Fund 的“Rates and Annual Charges”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+  "conditions": [],
+  "qualifiers": [],
+  "facts": {
+    "tableId": "op-finance:p120:fund-statement",
+    "rowLabel": "Rates and Annual Charges",
+    "statementSection": "Income from continuing operations",
+    "rowRole": "SOURCE_LINE_ITEM",
+    "budgetStatus": "PROJECTED_BASE_SCENARIO_NOT_ACTUAL",
+    "columnValues": [
+      {
+        "column": "Consolidated",
+        "display": "51,373",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Rates and Annual Charges",
+        "status": "PRINTED_VALUE",
+        "numericValue": 51373,
+        "numericValueText": "51373",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "General",
+        "display": "27,676",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Rates and Annual Charges",
+        "status": "PRINTED_VALUE",
+        "numericValue": 27676,
+        "numericValueText": "27676",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "Water",
+        "display": "3,843",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Rates and Annual Charges",
+        "status": "PRINTED_VALUE",
+        "numericValue": 3843,
+        "numericValueText": "3843",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "Sewer",
+        "display": "12,027",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Rates and Annual Charges",
+        "status": "PRINTED_VALUE",
+        "numericValue": 12027,
+        "numericValueText": "12027",
+        "signConvention": "AS_PRINTED"
+      },
+      {
+        "column": "Waste",
+        "display": "7,827",
+        "unit": "$000",
+        "currency": "UNKNOWN",
+        "period": "2027",
+        "meaning": "Rates and Annual Charges",
+        "status": "PRINTED_VALUE",
+        "numericValue": 7827,
+        "numericValueText": "7827",
+        "signConvention": "AS_PRINTED"
+      }
+    ]
+  },
+  "sourceAnchorCount": 7,
+  "sourceLocations": [
+    {
+      "field": "facts.rowLabel",
+      "pdfPage": 120,
+      "bbox": [
+        70.93571515764508,
+        237.4685302734375,
+        304.5280059814453,
+        251.62601318359376
+      ],
+      "normalizedTextDigest": "sha256:78458307311f18cfe1738a627d14bf05788ba56db0c59ea72a39e285f8fe087a",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "tableHeader",
+      "pdfPage": 120,
+      "bbox": [
+        65.37700042724609,
+        209.59600219726562,
+        520.7672485351562,
+        237.7685302734375
+      ],
+      "normalizedTextDigest": "sha256:4f7fc4daf833758af51867e42daac92a9dbc66d71091a9015d57cc1e317263f4",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "facts.columnValues[0]",
+      "pdfPage": 120,
+      "bbox": [
+        304.22800598144534,
+        237.4685302734375,
+        358.4080108642578,
+        251.62601318359376
+      ],
+      "normalizedTextDigest": "sha256:5865fd65d0490bb7198c87be58411eaaa481e7481d0565188a9c0acece389dbf",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:027e543f5348204abcd07e94f62b9f51653ee1c816616fa4bdfae7f0c9c4271a",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

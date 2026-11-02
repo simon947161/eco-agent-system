@@ -1,0 +1,380 @@
+{
+  "pack": "H",
+  "software_status": "PARTIAL",
+  "corpus_status": "PARTIAL",
+  "admission_status": "PENDING",
+  "summary": "All eight packs now have executable code and evidence. Pack H adds five source-pinned OP planning records, controlled annual-report byte recovery with immutable prefix proof, recorded-scope filters, separate five-axis coverage, companion refresh/context warnings and full real-browser regression.29/29 native files and all13 browser suites PASS; loaded-module Node coverage91.88% lines/83.93% branches/94.73% functions is not UI coverage. H has8 VERIFIED and2 PARTIAL tasks. Overall49 VERIFIED/28 PARTIAL/3 BLOCKED; full-system acceptance remains PARTIAL.23 successful original-byte receipts; source extraction/current-law/admission incomplete, official relationships0.",
+  "next_executable": "COI-011/012/019/020 \u2014 append exact official DCP/asset-plan source receipts already recovered in temporary storage, preserve history, and expose revision/scope/rights gaps; continue unresolved public-source tasks without private WCOS access",
+  "tasks": [
+    {
+      "id": "COI-071",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    },
+    {
+      "id": "COI-072",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    },
+    {
+      "id": "COI-073",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    },
+    {
+      "id": "COI-074",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": "Complete current-law/work filter index and dedicated cross-path comparison workflow unfinished; existing combined recorded-scope/source/unit/state filters, linear content and explainable candidates are tested.",
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    },
+    {
+      "id": "COI-075",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    },
+    {
+      "id": "COI-076",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": "Chromium viewports, keyboard/reduced-motion, emulated touch and ARIA tree tested; physical hardware, professional screen-reader and cross-browser checks NOT_TESTED.",
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    },
+    {
+      "id": "COI-077",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    },
+    {
+      "id": "COI-078",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    },
+    {
+      "id": "COI-079",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    },
+    {
+      "id": "COI-080",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "atlas.js",
+        "atlas-domain.js",
+        "atlas-intake.js",
+        "csoi-intake.js",
+        "csoi-layers.js",
+        "csoi-pages.js",
+        "csoi-router.js",
+        "csoi-governance.js",
+        "csoi-calendar.js",
+        "csoi-assistant.js",
+        "csoi-planning.test.cjs"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
+        "node --test --experimental-test-coverage --test-coverage-include='apps/public-strategy-atlas/atlas-*.js' --test-coverage-include='apps/public-strategy-atlas/csoi-*.js' apps/public-strategy-atlas/*.test.cjs",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py",
+        "python3 apps/public-strategy-atlas/verify-source.py /tmp/csoi-sources-v17/smrc-csp-summary.pdf"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-h.json",
+        "qa/csoi/coverage-h.txt",
+        "qa/csoi/browser-final-h.json",
+        "qa/csoi/annual-prefix-proof.json",
+        "qa/csoi/original-source-h.txt",
+        "qa/csoi/op-planning-quantity-390.png",
+        "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
+        "qa/CSOI_V1_7_ACCEPTANCE.json"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+    }
+  ]
+}

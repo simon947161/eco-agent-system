@@ -1,0 +1,22 @@
+const assert=require('node:assert/strict');
+const C=require('./csoi-calendar.js'),A=require('./csoi-assistant.js'),M=require('./atlas-model.js'),D=require('./atlas-data.js'),Accounting=require('./atlas-accounting.js');
+(async()=>{
+ const edition=C.annualEdition({year:2026,tasks:C.syntheticTasks(2026)}),draft=A.compileWeek(edition,{date:'2026-11-02',capacityHours:8});
+ assert.equal(draft.status,'DRAFT');assert.equal(draft.taskIds.length,4);assert.equal(draft.resources.expectedHoursKnown,9);assert.equal(draft.resources.actualHours,'UNKNOWN');assert.equal(draft.resources.bottleneck,true);assert.equal(draft.resources.financialSpend,'UNKNOWN');assert.equal(draft.governmentApproval,false);assert.equal(draft.reviewQueue.length,4);assert.equal(draft.missingMaterials.length,4);assert.equal(draft.concerns.length,1);assert.equal(draft.ownerRole,'UNKNOWN');
+ const noCapacity=A.compileWeek(edition,{date:'2026-11-02'});assert.equal(noCapacity.resources.bottleneck,'UNKNOWN');assert.equal(noCapacity.resources.availableHours,'UNKNOWN');
+ const emptyWeek=A.compileWeek(edition,{date:'2026-01-01'});assert.equal(emptyWeek.taskIds.length,0);assert.equal(emptyWeek.resources.expectedHoursKnown,0);assert(!emptyWeek.concerns.length);
+ const after=A.compileWeek(edition,{date:'2026-11-16'});assert.equal(after.overdue.length,4);assert(after.overdue.every(x=>x.detail.includes('not proof')));
+ const meeting=A.meetingDraft(draft);assert(meeting.agenda.length);assert.equal(meeting.questions.length,4);assert.equal(meeting.followUpActions.length,4);assert(meeting.followUpActions.every(a=>a.responsibleRole==='UNKNOWN'&&a.dueDate==='UNKNOWN'&&a.state==='DRAFT'));assert.equal(meeting.managerAgreement,'UNKNOWN');assert.equal(meeting.governmentApproval,false);
+ assert(Object.isFrozen(draft.resources));assert(Object.isFrozen(meeting));assert.throws(()=>A.compileWeek(edition,{date:'2025-01-01'}),/OUTSIDE/);assert.throws(()=>A.compileWeek(edition,{date:'2026-11-02',capacityHours:-1}),/CAPACITY/);
+ const adapter=A.outlookAdapter();assert.equal(adapter.connected,false);assert.equal(adapter.simulate(draft).networkCalls,0);assert.equal(adapter.simulate(meeting).written,false);
+ for(const method of ['read','write','send','remind'])assert.throws(()=>adapter[method](meeting),/NOT_AUTHORISED/);
+ for(const mutate of [x=>x.status='APPROVED',x=>x.governmentApproval=true,x=>x.authority='COUNCIL',x=>x.managerAgreement='Michele approved',x=>x.outlook='CONNECTED',x=>x.classification='COUNCIL_PROTECTED']){const bad=structuredClone(meeting);mutate(bad);assert.throws(()=>A.validateDraft(bad));assert.throws(()=>adapter.simulate(bad));}
+ const nestedApproval=structuredClone(meeting);nestedApproval.decisionsToConfirm[0].answer='APPROVED';assert.throws(()=>A.validateDraft(nestedApproval),/NOT_AUTHORISED/);assert.throws(()=>A.scenarioPayload(nestedApproval),/NOT_AUTHORISED/);
+ const assigned=structuredClone(meeting);assigned.followUpActions[0].responsibleRole='Michele';assert.throws(()=>A.validateDraft(assigned),/ASSIGNMENT_NOT_AUTHORISED/);
+ for(const mutate of [x=>x.title='Contact fictional@example.invalid',x=>x.reason='Phone 0412 345 678',x=>x.reason='COUNCIL_PROTECTED',x=>x.agenda[0].nested={security:'PERSONAL_PRIVATE'}]){const bad=structuredClone(meeting);mutate(bad);assert.throws(()=>A.validateDraft(bad),/PUBLIC_DENIED/);assert.throws(()=>A.scenarioPayload(bad),/PUBLIC_DENIED/);assert.throws(()=>adapter.simulate(bad),/PUBLIC_DENIED/);}
+ const bundle=await A.exportDraft(meeting);assert.deepEqual(await A.importDraft(JSON.stringify(bundle)),meeting);
+ const sensitive=structuredClone(meeting);sensitive.title='Email person@example.com';await assert.rejects(()=>A.exportDraft(sensitive),/PUBLIC_DENIED/);
+ const badBundle=structuredClone(bundle);badBundle.records[0].data.draft.managerAgreement='Approved';await assert.rejects(()=>A.importDraft(JSON.stringify(badBundle)),/DIGEST/);
+ let dataset=await M.migrateDataset(D,Accounting.cases);dataset=await M.registerScenario(dataset,A.scenarioPayload(draft));assert(M.domainIndex(dataset).has(draft.id));assert(await M.verifySnapshot(await M.exportSnapshot(dataset)));
+ console.log('PASS: draft weekly concerns/review/material gaps and capacity basis, meeting questions/followups, UNKNOWN decisions, immutable preparations, disabled Outlook/account/mail actions, privacy/forged approval rejection, portable verification and Atlas snapshot integration');
+})().catch(e=>{console.error(e);process.exitCode=1;});

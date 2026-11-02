@@ -1,0 +1,2551 @@
+{
+  "format": "csoi-closure-evidence-index-1",
+  "baselineCommit": "1bd44ea96bf742e63072d866502479ca34d34061",
+  "references": [
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 49,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-001**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 18,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-001\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/CSOI_BASELINE_MATRIX.md",
+      "line": 1,
+      "sha256": "3a7b73bfba7c1789ce8ed8c7d7b58237771fea26fba1b9a09f5d14aa9fbbaf30",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/NEXT_SESSION.md",
+      "line": 1,
+      "sha256": "34f29004c16a524513a8c8bab779040a8b5170e33b3c654a83a4345025a79211",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-model.test.cjs",
+      "line": 1,
+      "sha256": "907373039e91feb88e93b4ad73fc9899d37afa39d2a467f75975e40a07b8c11a",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 188,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-model.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 50,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-002**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 43,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-002\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/docs/CSOI_WCOS_BOUNDARY.md",
+      "line": 5,
+      "sha256": "c8d62254deb06be9836a7d0d6a9380dceeae95ffb6074a854661853529caf039",
+      "locator": "COI-002",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-wcos.js",
+      "line": 34,
+      "sha256": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "locator": "function adapt",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-wcos.test.cjs",
+      "line": 1,
+      "sha256": "0da93a0471f5f916918d307dac3b0a82aefd9a8f79700059e06e2ac719101059",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 308,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-wcos.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 51,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-003**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 67,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-003\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-governance.js",
+      "line": 6,
+      "sha256": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "locator": "const MODULES",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-governance.js",
+      "line": 26,
+      "sha256": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "locator": "function dependencies",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-governance.test.cjs",
+      "line": 1,
+      "sha256": "b30c94ab408f351f0141bc0156eec1c4989c6d3cae4dff26748285e483cee7f2",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 127,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-governance.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 52,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-004**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 91,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-004\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-governance.js",
+      "line": 12,
+      "sha256": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "locator": "const SECURITY",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-governance.js",
+      "line": 84,
+      "sha256": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "locator": "function assessPublic",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 53,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-005**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 116,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-005\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-governance.js",
+      "line": 125,
+      "sha256": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "locator": "function authority",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/docs/CSOI_WCOS_BOUNDARY.md",
+      "line": 3,
+      "sha256": "c8d62254deb06be9836a7d0d6a9380dceeae95ffb6074a854661853529caf039",
+      "locator": "The bridge",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 54,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-006**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 141,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-006\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-governance.js",
+      "line": 28,
+      "sha256": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "locator": "function inspectPayload",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-governance.js",
+      "line": 102,
+      "sha256": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "locator": "SMALL_CELL_OR_DISCLOSURE_RISK",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 55,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-007**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 166,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-007\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas-domain.js",
+      "line": 4,
+      "sha256": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "locator": "const TYPES",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas-domain.js",
+      "line": 107,
+      "sha256": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "locator": "async function migrateDataset",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/domain.test.cjs",
+      "line": 1,
+      "sha256": "b58d08d5bdf06eb7a42cf88e5b3c7f12e3e25f3b0e423f57cd2822bdc17d586f",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 348,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"domain.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 56,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-008**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 192,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-008\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-router.js",
+      "line": 4,
+      "sha256": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+      "locator": "const ROUTES",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-pages.js",
+      "line": 268,
+      "sha256": "d2bf2261b36bec5f48753ce14158476ee77b0ace91c788efbd7f082e39d396ee",
+      "locator": "async function render",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas.js",
+      "line": 28,
+      "sha256": "3d46b0425a4645f8ea56867958b1e3ba56eedc801bcd46d68bbc951c6e830567",
+      "locator": "function render",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-router.test.cjs",
+      "line": 1,
+      "sha256": "3c572433cd402799d91d240b2a1b8296e5ac221a7724e9e7acf2bd05bbdb7dce",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/route-main.test.cjs",
+      "line": 1,
+      "sha256": "0cbb1f22d65c09ab70e5413f541d8786277f8376b39802991b0f289695547b56",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 278,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-router.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 418,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"route-main.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 57,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-009**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 221,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-009\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/CSOI_TEST_MATRIX.json",
+      "line": 1,
+      "sha256": "676b247ed2e62007ba7a626a4abbde18fc9fbc676170d1928ded60a06ea39456",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/acceptance.json",
+      "line": 48,
+      "sha256": "dc7d2c0ca165464d8e1403ae538953a2bc0f5c0dbc6c4c398fffd366cb9ca63c",
+      "locator": "overallProject",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 58,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-010**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 245,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-010\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/run-tests.cjs",
+      "line": 1,
+      "sha256": "8ba60c9df35033fb4de78d823b3fff8551f2a1a23541f18d2b6fffedc340a7ce",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/run-local-browser.py",
+      "line": 1,
+      "sha256": "8e4395c861108fd0e40dfeecf7e0786c42c38190d006f8d30b876ff048ab0a42",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 63,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-011**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 271,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-011\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-intake.js",
+      "line": 5,
+      "sha256": "5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+      "locator": "async function extendCatalogue",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/strategy-completion/REPORT_ZH.md",
+      "line": 23,
+      "sha256": "d9abcaa185a173ac4cfe148bede428ef6474349454485e06394903c3529ca7fc",
+      "locator": "OP 2026",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/csp-metric-review/acceptance.json",
+      "line": 7,
+      "sha256": "154862f25e09bf83fb50f1f0977b9542ddfd9468cb955c24efb4d7defaae9956",
+      "locator": "sourceReview",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/acceptance.json",
+      "line": 10,
+      "sha256": "dc7d2c0ca165464d8e1403ae538953a2bc0f5c0dbc6c4c398fffd366cb9ca63c",
+      "locator": "semanticUnits",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-intake.test.cjs",
+      "line": 1,
+      "sha256": "b6acabfb721887688684a3b771d1810d6ceb5ac75602c48e5cf22ab59afd6a2a",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-strategy-research.test.cjs",
+      "line": 1,
+      "sha256": "7a0b26cd1283072876df5b2ca53bf99be33478c3073926d3544c90b07d57da99",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 137,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-intake.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 298,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-strategy-research.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 64,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-012**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 391,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-012\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-lsps-context.js",
+      "line": 15,
+      "sha256": "55275ff9c6e1f04e34ebf14e5dca8b57efe52bd25b454d07d9d264d55bcd511e",
+      "locator": "function scope",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/acceptance.json",
+      "line": 11,
+      "sha256": "dc7d2c0ca165464d8e1403ae538953a2bc0f5c0dbc6c4c398fffd366cb9ca63c",
+      "locator": "mapOccurrences",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/applicability.test.cjs",
+      "line": 1,
+      "sha256": "2f8bc46901a8421ae47a2e85b874e26f21b97baa0bd4b90eb49727db32093db2",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-lsps-context.test.cjs",
+      "line": 1,
+      "sha256": "9f0417614b1063e311bd6771acea58066e1aa21726fcbf33b3a5c3ed4a8e16df",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 167,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-lsps-context.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 17,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"applicability.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 65,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-013**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 509,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-013\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-pages.js",
+      "line": 153,
+      "sha256": "d2bf2261b36bec5f48753ce14158476ee77b0ace91c788efbd7f082e39d396ee",
+      "locator": "function sourcesPage",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/intake.test.cjs",
+      "line": 1,
+      "sha256": "6a4689aff55ee59d4dc9f94c83fdbc19df0fe5287af9db56586c47845e7c3beb",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 378,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"intake.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 66,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-014**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 613,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-014\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-intake.js",
+      "line": 25,
+      "sha256": "5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+      "locator": "async function registerSummaries",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas-intake.js",
+      "line": 1,
+      "sha256": "e521b7d35218dda4fc2f10a47d0d6b0d68f23de254f55872234d2f8c33a1712d",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/independent-position/verification.json",
+      "line": 1,
+      "sha256": "a4f8afcf5af97af1571104885f371d26c80536873f910bea82298a0ca35d87b5",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-receipts.test.cjs",
+      "line": 1,
+      "sha256": "f6cadd7ee4945f22d30ca68800041c8fcc792f141df0ec8d03a7001fa18e0d7d",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 238,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-receipts.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 67,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-015**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 726,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-015\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/strategy-completion/relationship-coverage.json",
+      "line": 1,
+      "sha256": "9865a56826d7985782aa69e88806e36b3e20d8917fcbd161fa684f9aa0c8b346",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-intake.js",
+      "line": 57,
+      "sha256": "5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+      "locator": "async function registerPlanningFacts",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-knowledge.js",
+      "line": 1,
+      "sha256": "3d38e14bb8b14be7f931fb2ac8d276a13d88b0cb121197da4da246c59aca0d79",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-planning.test.cjs",
+      "line": 1,
+      "sha256": "6588770744165f4b975b71a41a737dcef8f4416173205d2e8b84a99187c88fa9",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 228,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-planning.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 68,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-016**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 803,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-016\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/sources/lsps-public-knowledge.json",
+      "line": 1,
+      "sha256": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-lsps-context.js",
+      "line": 5,
+      "sha256": "55275ff9c6e1f04e34ebf14e5dca8b57efe52bd25b454d07d9d264d55bcd511e",
+      "locator": "function project",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-paths.js",
+      "line": 1,
+      "sha256": "cb0a7e33e3df1fa9e2fa16ecf1f2394a25b1eee51d8bc38c4b6ead2b636ca03b",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-paths.test.cjs",
+      "line": 1,
+      "sha256": "a1d626d719084604745909e15c314473117d7e46e52c9d154ffc7ce8b33e604e",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 198,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-paths.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 69,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-017**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 905,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-017\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 5,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "const SPECS",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/sources/csoi-legislation-access.json",
+      "line": 1,
+      "sha256": "a4be3780daed3514b52fa091861be1e0f3cd974e0250df35dd32b36d84ab839f",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/sources/csoi-source-observations.json",
+      "line": 151,
+      "sha256": "1d883d93de129d551e8b24055e6bacda887308347d0c65b06bc51b3c583b9ceb",
+      "locator": "\"coverage\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.test.cjs",
+      "line": 1,
+      "sha256": "0c6d8e83cee34f13ec34547eef12549571bcaae261dab80c72d10303d6881695",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 218,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-phe.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 70,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-018**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 935,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-018\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 16,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "const domains=",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 30,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "function workflow",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 67,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "async function statement",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.test.cjs",
+      "line": 1,
+      "sha256": "0ae7cf2919ca4586f71f3519a270afd4517d24fecc79d32721d72f272557190e",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 157,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-layers.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 71,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-019**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 979,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-019\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-intake.js",
+      "line": 68,
+      "sha256": "5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+      "locator": "function coverage",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 72,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-020**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1080,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-020\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-pages.js",
+      "line": 53,
+      "sha256": "d2bf2261b36bec5f48753ce14158476ee77b0ace91c788efbd7f082e39d396ee",
+      "locator": "async function knowledgeEvidence",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-pages.js",
+      "line": 82,
+      "sha256": "d2bf2261b36bec5f48753ce14158476ee77b0ace91c788efbd7f082e39d396ee",
+      "locator": "async function researchPage",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-knowledge.test.cjs",
+      "line": 1,
+      "sha256": "9561ee807421e3d00aed896aa690013c38af6ed1d842116ed3ede023843398be",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-source-integrity.test.cjs",
+      "line": 1,
+      "sha256": "776c03336cd7a07e073c6225680d4098633990066b6945d978665a2b2ee6753d",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 147,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-knowledge.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 288,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-source-integrity.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 77,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-021**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1197,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-021\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 43,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "async function source",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 78,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-022**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1227,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-022\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 14,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "function normalizeIdentity",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 61,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "async function normalize",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 79,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-023**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1257,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-023\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-governance.js",
+      "line": 63,
+      "sha256": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+      "locator": "FORMAL_DECISION_NOT_AUTHORISED",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 80,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-024**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1301,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-024\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 74,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "function calculate",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 92,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "async function quantify",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-metric-review.js",
+      "line": 13,
+      "sha256": "d36958c7d24021a4a97b53f6343dc60aa021e13e0eae47ebb2e6bd8098d03d65",
+      "locator": "function project",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-recompute.test.cjs",
+      "line": 1,
+      "sha256": "fd774514b471310d11c9acd2c8baa7c0b95a229161dcd36867ff592bdeb5c9b6",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-metric-review.test.cjs",
+      "line": 1,
+      "sha256": "94f532e8cb3a7d1292c6cbdf92e43e6bd4765d8e69e5bd88cf751b2359da9936",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 248,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-recompute.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 178,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-metric-review.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 81,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-025**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1352,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-025\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 97,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "async function aggregate",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.test.cjs",
+      "line": 1,
+      "sha256": "6005481fa6da942f8d0ace2d6eb478c48d236a8aa07e13251675f736e0f48088",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 318,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-work.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 82,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-026**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1382,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-026\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 106,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "async function prepareRelease",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 83,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-027**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1412,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-027\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 49,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "async function transform",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 111,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "async function verifyDerivation",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 84,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-028**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1442,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-028\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-layers.js",
+      "line": 20,
+      "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "locator": "function quality",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 85,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-029**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1472,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-029\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas-domain.js",
+      "line": 156,
+      "sha256": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "locator": "async function registerResearchRecord",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-lsps-context.js",
+      "line": 9,
+      "sha256": "55275ff9c6e1f04e34ebf14e5dca8b57efe52bd25b454d07d9d264d55bcd511e",
+      "locator": "async function apply",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-boot.test.cjs",
+      "line": 1,
+      "sha256": "32a64fab8b3a1bcf7f4f94d60d6b9f320c644dccbf16f9393c4437832e239e29",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 77,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-boot.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 86,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-030**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1528,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-030\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 91,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-031**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1558,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-031\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 92,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-032**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1585,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-032\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 93,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-033**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1612,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-033\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-wcos.js",
+      "line": 63,
+      "sha256": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "locator": "function ltwWorkflow",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 12,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "['ltw'",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 94,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-034**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1639,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-034\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 95,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-035**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1666,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-035\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 35,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "function backflowRule",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-wcos.js",
+      "line": 72,
+      "sha256": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "locator": "function backflowDue",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 96,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-036**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1693,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-036\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-calendar.js",
+      "line": 104,
+      "sha256": "3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+      "locator": "function recurrence",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-calendar.test.cjs",
+      "line": 1,
+      "sha256": "3e30d32d45c20eabf7afe36dfadca628a4a19c1a79b0be919625f8f4a0f19fa6",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 87,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-calendar.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 97,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-037**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1720,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-037\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-wcos.js",
+      "line": 86,
+      "sha256": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "locator": "function judgment",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/docs/CSOI_WCOS_BOUNDARY.md",
+      "line": 17,
+      "sha256": "c8d62254deb06be9836a7d0d6a9380dceeae95ffb6074a854661853529caf039",
+      "locator": "judgment()",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 98,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-038**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1747,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-038\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-wcos.js",
+      "line": 55,
+      "sha256": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "locator": "function conditionalServices",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 99,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-039**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1774,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-039\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-wcos.js",
+      "line": 91,
+      "sha256": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "locator": "function summary",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 35,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "function coverage",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 100,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-040**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1801,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-040\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-assistant.js",
+      "line": 50,
+      "sha256": "2ff1b6b3004f133fd4a0d1b09197a5b549f6348fa307536d1699f3a4dbea3f58",
+      "locator": "function outlookAdapter",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-assistant.test.cjs",
+      "line": 1,
+      "sha256": "4bd6c797f86aa12f1ae71d3c281db93b0a34053ec6715b29d40d75a84494abd0",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 47,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-assistant.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 105,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-041**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1828,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-041\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 75,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "authority:{",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 106,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-042**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1857,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-042\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 6,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "['food'",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 107,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-043**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1886,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-043\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 39,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "const OSSM_READING",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 53,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "function historicalContexts",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-review-work.js",
+      "line": 38,
+      "sha256": "a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+      "locator": "async function status",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-bombala-phe.test.cjs",
+      "line": 1,
+      "sha256": "20e4e56966410b7be90644afd097fb77cc837366b7834d1be5e2b82e8cbddde5",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe-context.test.cjs",
+      "line": 1,
+      "sha256": "145951bd91eaf41da6601bdf7fbaa1441ff281e1f25ef86dbbd2379f3599ed6e",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 57,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-bombala-phe.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 208,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-phe-context.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 108,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-044**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1966,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-044\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 8,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "['pools'",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.test.cjs",
+      "line": 9,
+      "sha256": "0c6d8e83cee34f13ec34547eef12549571bcaae261dab80c72d10303d6881695",
+      "locator": "Regulation",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 109,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-045**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 1995,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-045\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 9,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "['cooling'",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 110,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-046**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2024,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-046\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 24,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "if(domain==='skin')",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 10,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "['skin'",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 111,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-047**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2053,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-047\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 11,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "['environment'",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 112,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-048**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2082,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-048\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 113,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-049**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2111,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-049\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-phe.js",
+      "line": 36,
+      "sha256": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "locator": "const examples=",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 114,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-050**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2175,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-050\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-router.js",
+      "line": 6,
+      "sha256": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+      "locator": "['wcos'",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 119,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-051**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2223,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-051\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 34,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "function denominatorKey",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 120,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-052**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2252,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-052\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 54,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "const required=",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 58,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "governmentKpi",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 121,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-053**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2281,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-053\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 7,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "const PHASES",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 60,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "function workload",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 122,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-054**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2328,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-054\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 66,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "function resources",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 123,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-055**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2357,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-055\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas-domain.js",
+      "line": 37,
+      "sha256": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "locator": "DOMAIN_FINANCIAL",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 73,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "function ledgerSummary",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/ledger.test.cjs",
+      "line": 1,
+      "sha256": "eacf37017379c8bd8cf511bd382cf8754471d24b60127ed5bc50ce434962939a",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 398,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"ledger.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 124,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-056**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2386,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-056\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas-execution.js",
+      "line": 65,
+      "sha256": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+      "locator": "async function derive",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/accounting.test.cjs",
+      "line": 1,
+      "sha256": "9c31d8c2e971e22136d37081a4e6110d39f47432abf4f9f62369e1e5c8b935f9",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 7,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"accounting.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 125,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-057**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2415,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-057\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 55,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "environmentalOutcome",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 126,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-058**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2444,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-058\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.js",
+      "line": 80,
+      "sha256": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "locator": "function reverseTrace",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 127,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-059**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2547,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-059\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas-execution.js",
+      "line": 6,
+      "sha256": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+      "locator": "function shortestPath",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 128,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-060**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2647,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-060\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-work.test.cjs",
+      "line": 46,
+      "sha256": "6005481fa6da942f8d0ace2d6eb478c48d236a8aa07e13251675f736e0f48088",
+      "locator": "PER_CAPITA_TOTAL",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 133,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-061**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2676,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-061\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-calendar.js",
+      "line": 65,
+      "sha256": "3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+      "locator": "function annualEdition",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-review-work.js",
+      "line": 37,
+      "sha256": "a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+      "locator": "function project",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-review-work.test.cjs",
+      "line": 1,
+      "sha256": "f2bdd7de9399d73f309b3c497ff86c0e30d4fc06293f1c54fedbd0b8124d7fe6",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 268,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-review-work.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 134,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-062**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2744,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-062\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/docs/CSOI_WCOS_BOUNDARY.md",
+      "line": 9,
+      "sha256": "c8d62254deb06be9836a7d0d6a9380dceeae95ffb6074a854661853529caf039",
+      "locator": "Annual",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 135,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-063**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2778,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-063\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-calendar.js",
+      "line": 26,
+      "sha256": "3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+      "locator": "function validateTask",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-capsule.test.cjs",
+      "line": 1,
+      "sha256": "6e945bf082308b49fc0938a45b53e785c6a811f5caef820d1b82b51908a25d90",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 97,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-capsule.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 136,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-064**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2830,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-064\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-calendar.js",
+      "line": 119,
+      "sha256": "3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+      "locator": "function conflicts",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 137,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-065**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2864,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-065\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-calendar.js",
+      "line": 54,
+      "sha256": "3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+      "locator": "function taskCard",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-review-work.js",
+      "line": 28,
+      "sha256": "a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+      "locator": "async function register",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 138,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-066**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 2965,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-066\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-calendar.js",
+      "line": 100,
+      "sha256": "3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+      "locator": "function children",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-calendar.js",
+      "line": 101,
+      "sha256": "3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+      "locator": "function parents",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-pages.js",
+      "line": 244,
+      "sha256": "d2bf2261b36bec5f48753ce14158476ee77b0ace91c788efbd7f082e39d396ee",
+      "locator": "async function calendarPage",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 139,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-067**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3050,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-067\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-assistant.js",
+      "line": 9,
+      "sha256": "2ff1b6b3004f133fd4a0d1b09197a5b549f6348fa307536d1699f3a4dbea3f58",
+      "locator": "function compileWeek",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 140,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-068**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3102,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-068\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-assistant.js",
+      "line": 25,
+      "sha256": "2ff1b6b3004f133fd4a0d1b09197a5b549f6348fa307536d1699f3a4dbea3f58",
+      "locator": "function meetingDraft",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 141,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-069**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3136,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-069\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 142,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-070**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3170,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-070\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/browser-final.json",
+      "line": 1,
+      "sha256": "14f6c166ff61800e06acef66786663c0986712c81dfac9451dd7c7c1212cc08c",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/csoi-browser.py",
+      "line": 41,
+      "sha256": "7b7302e4413ea0cd6ad626e91c0e0ff2f9cbac9ddcefa26917864a61440e6840",
+      "locator": "for width,height",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 147,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-071**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3271,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-071\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas.js",
+      "line": 311,
+      "sha256": "3d46b0425a4645f8ea56867958b1e3ba56eedc801bcd46d68bbc951c6e830567",
+      "locator": "textRoutesBtn",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/route-map.test.cjs",
+      "line": 1,
+      "sha256": "f68a4dc1f8464065ec2d4bba327aced33786324888f4addc7c5fa43e9a352325",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 428,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"route-map.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 148,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-072**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3313,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-072\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 149,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-073**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3376,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-073\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/deep-content.test.cjs",
+      "line": 1,
+      "sha256": "ad534b3d173858a50feba00214ab4a2ef2ac3ff3eecdb536840e64d9fba38a43",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-clauses.test.cjs",
+      "line": 1,
+      "sha256": "cb1cd7d57ee31966045fe18a1eb9df3891e95361f820a06447715ed148dbbaf9",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 328,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"deep-content.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 107,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"csoi-clauses.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 150,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-074**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3432,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-074\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-router.js",
+      "line": 11,
+      "sha256": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+      "locator": "const QUERY",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-pages.js",
+      "line": 183,
+      "sha256": "d2bf2261b36bec5f48753ce14158476ee77b0ace91c788efbd7f082e39d396ee",
+      "locator": "async function pathComparePage",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas-execution.js",
+      "line": 251,
+      "sha256": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+      "locator": "async function compareRecords",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/atlas.js",
+      "line": 238,
+      "sha256": "3d46b0425a4645f8ea56867958b1e3ba56eedc801bcd46d68bbc951c6e830567",
+      "locator": "const showLegacyCrossings",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/csoi/browser-paths.json",
+      "line": 1,
+      "sha256": "75acc49805da1339f4416bc67b2d446a3f7af5d32d4812b62b8b1550ef3d0c58",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/csoi/browser-comparison.json",
+      "line": 1,
+      "sha256": "fc1f8c20113df85b1073f9686aa351097f3ee9a83ea33c98a9e1cecb4c2d8e06",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/comparison.test.cjs",
+      "line": 1,
+      "sha256": "1c96c885e8ed0ffc0f78fcbd84b7ce0c18ae4c49760be1d236f64960e1dac2bd",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/integration.test.cjs",
+      "line": 1,
+      "sha256": "0fda7c22057ee116ef5fe95da6979c00db445696531e8fd3df9a56a3eb09ba34",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/discovery.test.cjs",
+      "line": 1,
+      "sha256": "7474414046dbe40e38bb297fc54e86ae9200a0c964e9df6756dfd80e91d3a6b4",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 27,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"comparison.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 388,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"integration.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 338,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"discovery.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 151,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-075**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3625,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-075\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-router.js",
+      "line": 52,
+      "sha256": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+      "locator": "function companionUrl",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/csoi-browser.py",
+      "line": 71,
+      "sha256": "7b7302e4413ea0cd6ad626e91c0e0ff2f9cbac9ddcefa26917864a61440e6840",
+      "locator": "companion=popup.value",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 152,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-076**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3688,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-076\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/csoi-browser.py",
+      "line": 42,
+      "sha256": "7b7302e4413ea0cd6ad626e91c0e0ff2f9cbac9ddcefa26917864a61440e6840",
+      "locator": "reduced_motion",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/csoi/browser-h.json",
+      "line": 1,
+      "sha256": "93817a5cf4dcded1c7d9d83044ac48977e236e4f2c9ef8451e2c2b127625d628",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-pages.js",
+      "line": 256,
+      "sha256": "d2bf2261b36bec5f48753ce14158476ee77b0ace91c788efbd7f082e39d396ee",
+      "locator": "Next calendar items",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 153,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-077**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3763,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-077\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 154,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-078**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3822,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-078\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/csoi-pages.js",
+      "line": 7,
+      "sha256": "d2bf2261b36bec5f48753ce14158476ee77b0ace91c788efbd7f082e39d396ee",
+      "locator": "textContent",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/workspace.test.cjs",
+      "line": 1,
+      "sha256": "baf29f4c4a1501b4058b36982e7e3209ae3ebc64292b6fbb29c943960e2cf846",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 448,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"workspace.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 155,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-079**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 3957,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-079\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 1,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/workspace-merge.test.cjs",
+      "line": 1,
+      "sha256": "5795de5d637428efdb9fcce8c848f098183cb54f0eeed3beef9a3df3a22deebe",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/native-reconciled.json",
+      "line": 438,
+      "sha256": "44e575df828bcbc03699399e2d5e306ded0e3e1d56fcbaf9db7f897112688a03",
+      "locator": "\"test\": \"workspace-merge.test.cjs\"",
+      "note": ""
+    },
+    {
+      "path": "docs/research/public-strategy-atlas/CSOI_V1_7_80_Task_Master_Plan.md",
+      "line": 156,
+      "sha256": "eee591d2b30254947ac876caeef2bdc4be8b9ba7267c3eb08aa09ef19fa24611",
+      "locator": "**COI-080**",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/COI_TASK_REGISTRY_V1_7.json",
+      "line": 4092,
+      "sha256": "9f00f10b8f57c0c848c5744d7212bda574352a11145860dde636ba75c8fe9aa0",
+      "locator": "\"id\": \"COI-080\"",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/REPORT_ZH.md",
+      "line": 1,
+      "sha256": "dfe17ca830e32ef6a3a92ab8d5bec205198317d5fa8472a9257ad32cd6f6d9c8",
+      "locator": "line 1",
+      "note": ""
+    },
+    {
+      "path": "apps/public-strategy-atlas/qa/lsps-completion/deployment.json",
+      "line": 32,
+      "sha256": "532ed143348ee1299c0d7321e7a0804803d9e8c3dcf437580d72a4bab91fdc15",
+      "locator": "ownerSignedInBrowser",
+      "note": ""
+    }
+  ],
+  "referenceCount": 363,
+  "files": 81,
+  "currentTestSHAAllMatch": true,
+  "newTestsExecuted": false
+}

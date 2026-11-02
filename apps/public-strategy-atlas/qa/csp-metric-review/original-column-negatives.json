@@ -1,0 +1,62 @@
+[
+  {
+    "case": "omitted-visible-leadership-qualifier",
+    "status": "REJECTED_EXPECTED",
+    "reason": "LEADERSHIP_SUMMARY_QUALIFIERS"
+  },
+  {
+    "case": "omitted-supporting-document",
+    "status": "REJECTED_EXPECTED",
+    "reason": "SUPPORTING_DOCUMENT_CENSUS:community"
+  },
+  {
+    "case": "changed-source-revision",
+    "status": "REJECTED_EXPECTED",
+    "reason": "SOURCE_ID_OR_REVISION"
+  },
+  {
+    "case": "omitted-last-indicator",
+    "status": "REJECTED_EXPECTED",
+    "reason": "MISSING_OR_EXTRA_METRIC"
+  },
+  {
+    "case": "forged-water-tonnes",
+    "status": "REJECTED_EXPECTED",
+    "reason": "WATER_UNIT_NOT_STATED"
+  },
+  {
+    "case": "changed-baseline-value",
+    "status": "REJECTED_EXPECTED",
+    "reason": "BASELINE_NUMERIC"
+  },
+  {
+    "case": "wrong-row-page",
+    "status": "REJECTED_EXPECTED",
+    "reason": "PAGE_HASH:csoi:knowledge:csp2035:indicator:31-infrastructure-05"
+  },
+  {
+    "case": "shifted-cell-bounds",
+    "status": "REJECTED_EXPECTED",
+    "reason": "COLUMN_BOUNDS"
+  },
+  {
+    "case": "fabricated-role",
+    "status": "REJECTED_EXPECTED",
+    "reason": "STRATEGY_ROLES:8.1['Advocate']"
+  },
+  {
+    "case": "missing-partner",
+    "status": "REJECTED_EXPECTED",
+    "reason": "STRATEGY_PARTNERS:8.2 expected=NSW DPIE NSW Health Ngarigo community"
+  },
+  {
+    "case": "promoted-actual",
+    "status": "REJECTED_EXPECTED",
+    "reason": "METRIC_AUTHORITY_OR_COMPUTABILITY"
+  },
+  {
+    "case": "removed-source-conflict",
+    "status": "REJECTED_EXPECTED",
+    "reason": "TRANSPORT_CONFLICT_NOT_RETAINED"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "format": "OP_COMPACT_FINAL_READBACK_INDEPENDENT_CHECK_V1",
+  "at": "2026-11-02T04:07:19.166646+00:00",
+  "status": "PASS_BOUNDED_EVIDENCE_CHECK",
+  "scope": "Read-only independent check of compact artifacts against frozen source, actual boot cache, and prior full PDF semantic review; no new source semantic audit, browser run or deployment.",
+  "files": {
+    "sources/op-completion-review.json": {
+      "bytes": 12848409,
+      "sha256": "345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0"
+    },
+    "sources/csoi-default-snapshot.js": {
+      "bytes": 22744179,
+      "sha256": "ae055df61798e20c63c988414cb28e107d0adc603842f5606cba6a7161d7105b"
+    },
+    "qa/op-completion-20261102/final-actual-readback-samples.json": {
+      "bytes": 13066,
+      "sha256": "f12677eef9f97ab49631904dec1aecd4e4ebaa9d757ed33e9eeeb35f26859733"
+    },
+    "qa/op-completion-20261102/final-actual-unit-readback.csv": {
+      "bytes": 164262,
+      "sha256": "2c2e12864580b1d4579c2bffb4175a7b3391a1570ff195edda432110b771ef3f"
+    },
+    "qa/export-op-final-readback.py": {
+      "bytes": 5678,
+      "sha256": "e8fec2c04b945c7c34048b37af35ce54527aec05c76402eebc55f9079d3afd62"
+    }
+  },
+  "recordCount": 143,
+  "unitCount": 911,
+  "csvUniqueUnits": 911,
+  "sampleCount": 15,
+  "allFourFindingExamplesPresent": true,
+  "page29to30ContinuationExamplePresent": true,
+  "allSampleSelectedFieldsAndAnchorMetadataMatchActualCache": true,
+  "allSourceUnitDigestsMatchPriorIndependentReview": true,
+  "allUnitAndPageFactsAndAnchorsMatchCacheWithJSONNumericEquivalence": true,
+  "unitsWithDifferentCanonicalPythonNumberEncoding": 110,
+  "numericRepresentationChangesOnly": {
+    "from": "float",
+    "to": "int",
+    "numberValuesEqual": true,
+    "observedPathCountIncludingPageFacts": 934,
+    "examplePaths": [
+      "csoi:knowledge:op2026:review:page:001/facts/units/0/bbox/0",
+      "csoi:knowledge:op2026:review:page:001/facts/units/0/bbox/1",
+      "csoi:knowledge:op2026:review:page:001/facts/units/0/sourceSegments/0/bbox/0",
+      "csoi:knowledge:op2026:review:page:001/facts/units/0/sourceSegments/0/bbox/1",
+      "csoi:knowledge:op2026:review:page:001/facts/units/0/sourceAnchors/0/bbox/0"
+    ]
+  },
+  "limitations": [
+    "Integral JSON numbers serialize as1.0 in source and1 in JavaScript cache; this is structure/value equality, not identical serialized bytes. Separate digests are correctly retained.",
+    "The 15 examples omit some anchor fields and are not the full911-unit audit; the911-row CSV links every unit to the existing independent semantic receipt.",
+    "Native-test run evidence is outside this bounded check; no new native/browser checks were claimed."
+  ],
+  "failures": []
+}

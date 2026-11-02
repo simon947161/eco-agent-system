@@ -1,0 +1,48 @@
+{
+  "status": "COMPLETE_BOUNDED_SOURCE_AUTHOR_PART",
+  "sourceAuthorDigest": "sha256:97b090d6815a474d0fb24b8ce401e54600a616e64a97e42806ecb3c8f608209f",
+  "reviewedPages": [
+    1,
+    106
+  ],
+  "sourcePages": 142,
+  "unitCount": 483,
+  "formalPhysicalRows": 517,
+  "formalLogicalGroups": 417,
+  "authorOriginalVerification": "PASS_AUTHOR_SIDE_ORIGINAL_POSITION_AND_COLUMN_CHECKS",
+  "uniqueOriginalTextAnchors": 4134,
+  "uniqueOriginalPixelAnchors": 14,
+  "negativeCasesRejected": 21,
+  "independentSemanticReview": {
+    "status": "AI_INDEPENDENTLY_REVIEWED_WITH_SOURCE_LIMITS",
+    "reviewedUnits": 483,
+    "materialMisstatementsIdentified": 0,
+    "evidence": "qa/op-completion-20261102/independent/services-readback-review.json",
+    "evidenceDigest": "sha256:008097271ac7e7dd61b9acc264d385aa85daade3f5fb1705ca91eb427ca56a65",
+    "humanAdmission": "PENDING"
+  },
+  "originalWaterBundleByteIdenticalToHead": true,
+  "originalWaterBundleDigest": "sha256:6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+  "deploymentPerformed": false,
+  "runtimeEdited": false,
+  "blockers": [],
+  "remainingOutsidePart": [
+    "PDF107-142 finance author part",
+    "Root runtime integration, browser acceptance and authorized private Site update"
+  ],
+  "deliverableDigests": {
+    "AUTHOR_REPORT_ZH.md": "sha256:74abefa741b56c920eca07f6f2fc6618dc8c56c120cef5f4f2254c4ea9c50a6d",
+    "author-receipt.json": "sha256:b72ef75a50dfed68a33b26dc5676858a88648344d9072e3c07a798c2429099fe",
+    "author-verification.json": "sha256:1b92d4e107d81592430fc7d78148a1f00ab71dc94e893a2aec44913fdbbe7fad",
+    "build-services-author.py": "sha256:cc8105f65df6493867b369ff42cb77eaff8d5e7f75629cf2f09640c4b6abf234",
+    "context-author.py": "sha256:dd65c63789c82c79427b2cad43f688db9e4c6b035c4c105dba10d56fe00643e9",
+    "coverage-summary.json": "sha256:aea78d9e5dc4f09b0eda63fd961228ee8abfc1cb7cb7c57e49a914cef7c609f5",
+    "page-disposition.csv": "sha256:c07b13995e5a85d52be8087cac94909b266b12aa4155cbce4cce0ca2b2e3659d",
+    "physical-row-coverage.csv": "sha256:608bbfbc3ff2cf2743c1f14f41f9af9d5f44a3200657d6b6e5a85ca010002455",
+    "physical-row-coverage.json": "sha256:30d1940aa61fbbe56695e2b11206f8c798bb5ac38ff67b57ef37ca83c9fbd668",
+    "row-readings.tsv": "sha256:53debefad910c600b189f6a1495c09eeef59e0838ba843c4b302931ad33b2cba",
+    "services-author.json": "sha256:97b090d6815a474d0fb24b8ce401e54600a616e64a97e42806ecb3c8f608209f",
+    "unit-coverage.csv": "sha256:25879aac84659bf3330162a503284157abc8345893b78a88c84afe469f324af9",
+    "verify-services-author.py": "sha256:1aefe2fdecba118ca1d137d238ebc9e5550f784e7130c1b36eace311ec11129c"
+  }
+}

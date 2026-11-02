@@ -1,0 +1,89 @@
+Traceback (most recent call last):
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/csoi-navigation-state-browser.py", line 21, in <module>
+    page=browser.new_page(viewport={'width':390,'height':844},has_touch=True);page.goto(BASE,wait_until='domcontentloaded');expect(page.locator('#startupNotice')).to_be_visible();expect(page.locator('.app')).to_have_attribute('inert','');ready(page);report['checks'].append('Real cold-load notice visible while validation pending; app becomes interactive only after boot')
+                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 23332, in to_be_visible
+    self._sync(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 852, in to_be_visible
+    await self._expect_impl(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 128, in _expect_impl
+    _record_soft_or_raise(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 60, in _record_soft_or_raise
+    raise error
+AssertionError: Locator expected to be visible
+Actual value: hidden 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for locator("#startupNotice")
+    13 × locator resolved to <section hidden="" role="status" id="startupNotice" aria-live="polite" class="startup-notice">…</section>
+       - unexpected value "hidden"
+
+Aria snapshot:
+- link "Skip to route map":
+  - /url: "#canvas-title"
+- banner:
+  - link "Atlas home":
+    - /url: ./index.html
+    - strong: Public Strategy Atlas
+  - text: Search stations and internal content
+  - searchbox "Search stations and internal content"
+  - group: Tools & views
+  - group: Pages
+- main:
+  - text: INDEPENDENT RESEARCH · SYNTHETIC ROUTES
+  - heading "Follow the reasoning." [level=1]:
+    - text: Follow the
+    - emphasis: reasoning.
+  - paragraph: Two routes. Many questions. Follow any station.
+  - link "来源梳理 · 查看完成与缺口":
+    - /url: "#/research"
+  - region "Scrollable route map. Arrow keys scroll; Tab selects stations and connections.":
+    - group "Public strategy knowledge route map Strategy and planning routes branch and converge at synthetic stations. Dashed amber connections are hypotheses, not official policy mappings.":
+      - text: 01 / STRATEGY & DELIVERY 02 / LAND-USE & APPLICABILITY
+      - 'button "Inspect connection: CSP to Objective 6.1"'
+      - 'button "Inspect connection: CSP to Objective 8.2"'
+      - 'button "Inspect connection: Objective 6.1 to Delivery program"'
+      - 'button "Inspect connection: Objective 8.2 to Delivery program"'
+      - 'button "Inspect connection: Delivery program to Operational plan"'
+      - 'button "Inspect connection: Operational plan to Indicator definition"'
+      - 'button "Inspect connection: Operational plan to Water action"'
+      - 'button "Inspect connection: Water action to Evidence record"'
+      - 'button "Inspect connection: LSPS to Planning priority"'
+      - 'button "Inspect connection: Planning priority to LEP provision"'
+      - 'button "Inspect connection: Planning priority to DCP control"'
+      - 'button "Inspect connection: LEP provision to Geographic scope"'
+      - 'button "Inspect connection: DCP control to Geographic scope"'
+      - 'button "Inspect connection: Geographic scope to Effective period"'
+      - button "Inspect station CSP · SYNTHETIC": CSP SYNTHETIC ORIGIN
+      - button "Inspect station Objective 6.1 · SYNTHETIC": Objective 6.1 Environment · demo
+      - button "Inspect station Objective 8.2 · SYNTHETIC": Objective 8.2 Infrastructure · demo
+      - button "Inspect station Delivery program · SYNTHETIC": Delivery program DP · structure demo
+      - button "Inspect station Operational plan · SYNTHETIC": Operational plan OP · structure demo
+      - button "Inspect station Indicator definition · SYNTHETIC": Indicator definition Definition unverified
+      - button "Inspect station Water action · SYNTHETIC": Water action Synthetic activity
+      - button "Inspect station Evidence record · SYNTHETIC": Evidence record Synthetic review
+      - button "Inspect station LSPS · SYNTHETIC": LSPS Land-use planning
+      - button "Inspect station Planning priority · SYNTHETIC": Planning priority Illustrative priority
+      - button "Inspect station LEP provision · SYNTHETIC": LEP provision Scope unverified
+      - button "Inspect station DCP control · SYNTHETIC": DCP control Guidance unverified
+      - button "Inspect station Geographic scope · SYNTHETIC": Geographic scope Berridale · demo
+      - button "Inspect station Effective period · SYNTHETIC": Effective period Official version needed
+  - navigation "Choose a route":
+    - button "All routes" [pressed]
+    - button "Strategy"
+    - button "Planning"
+    - checkbox "Hidden links"
+    - text: Hidden links
+  - button "Zoom out": −
+  - text: Map zoom
+  - status: 100%
+  - button "Zoom in": +
+  - button "Overview"
+  - button "Reset map position and focus": Reset
+  - text: Strategy · synthetic Planning · synthetic Hypothesis · unverified Observed public text · pending Local review overlay
+  - paragraph: Lines show relationship categories, not achievement. All strategic/planning connections are synthetic.
+  - text: Not Council official · No admitted policy mapping · No actual KPI
+  - group: Map guide

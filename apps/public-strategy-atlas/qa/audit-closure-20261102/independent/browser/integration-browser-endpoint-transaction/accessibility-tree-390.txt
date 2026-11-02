@@ -1,0 +1,220 @@
+- link "Skip to route map":
+  - /url: "#canvas-title"
+- banner:
+  - link "Atlas home":
+    - /url: ./index.html
+    - strong: Public Strategy Atlas
+  - text: Search stations and internal content
+  - searchbox "Search stations and internal content": 29.9 t CO2e/person
+  - group: Tools & views
+  - group: Pages
+- main:
+  - text: INDEPENDENT RESEARCH · SYNTHETIC ROUTES
+  - heading "Follow the reasoning." [level=1]:
+    - text: Follow the
+    - emphasis: reasoning.
+  - paragraph: Two routes. Many questions. Follow any station.
+  - link "来源梳理 · 查看完成与缺口":
+    - /url: "#/research"
+  - region "Scrollable route map. Arrow keys scroll; Tab selects stations and connections.":
+    - group "Public strategy knowledge route map Strategy and planning routes branch and converge at synthetic stations. Dashed amber connections are hypotheses, not official policy mappings.":
+      - text: 01 / STRATEGY & DELIVERY 02 / LAND-USE & APPLICABILITY
+      - 'button "Inspect connection: CSP to Objective 6.1"'
+      - 'button "Inspect connection: CSP to Objective 8.2"'
+      - 'button "Inspect connection: Objective 6.1 to Delivery program"'
+      - 'button "Inspect connection: Objective 8.2 to Delivery program"'
+      - 'button "Inspect connection: Delivery program to Operational plan"'
+      - 'button "Inspect connection: Operational plan to Indicator definition"'
+      - 'button "Inspect connection: Operational plan to Water action"'
+      - 'button "Inspect connection: Water action to Evidence record"'
+      - 'button "Inspect connection: LSPS to Planning priority"'
+      - 'button "Inspect connection: Planning priority to LEP provision"'
+      - 'button "Inspect connection: Planning priority to DCP control"'
+      - 'button "Inspect connection: LEP provision to Geographic scope"'
+      - 'button "Inspect connection: DCP control to Geographic scope"'
+      - 'button "Inspect connection: Geographic scope to Effective period"'
+      - button "Inspect station CSP · SYNTHETIC": CSP SYNTHETIC ORIGIN
+      - button "Inspect station Objective 6.1 · SYNTHETIC": Objective 6.1 Environment · demo
+      - button "Inspect station Objective 8.2 · SYNTHETIC": Objective 8.2 Infrastructure · demo
+      - button "Inspect station Delivery program · SYNTHETIC": Delivery program DP · structure demo
+      - button "Inspect station Operational plan · SYNTHETIC": Operational plan OP · structure demo
+      - button "Inspect station Indicator definition · SYNTHETIC": Indicator definition Definition unverified
+      - button "Inspect station Water action · SYNTHETIC": Water action Synthetic activity
+      - button "Inspect station Evidence record · SYNTHETIC": Evidence record Synthetic review
+      - button "Inspect station LSPS · SYNTHETIC": LSPS Land-use planning
+      - button "Inspect station Planning priority · SYNTHETIC": Planning priority Illustrative priority
+      - button "Inspect station LEP provision · SYNTHETIC": LEP provision Scope unverified
+      - button "Inspect station DCP control · SYNTHETIC": DCP control Guidance unverified
+      - button "Inspect station Geographic scope · SYNTHETIC": Geographic scope Berridale · demo
+      - button "Inspect station Effective period · SYNTHETIC": Effective period Official version needed
+  - navigation "Choose a route":
+    - button "All routes" [pressed]
+    - button "Strategy"
+    - button "Planning"
+    - checkbox "Hidden links"
+    - text: Hidden links
+  - button "Zoom out": −
+  - text: Map zoom
+  - status: 100%
+  - button "Zoom in": +
+  - button "Overview"
+  - button "Reset map position and focus": Reset
+  - text: Strategy · synthetic Planning · synthetic Hypothesis · unverified Observed public text · pending Local review overlay
+  - paragraph: Lines show relationship categories, not achievement. All strategic/planning connections are synthetic.
+  - text: Not Council official · No admitted policy mapping · No actual KPI
+  - group: Map guide
+- dialog "Follow the evidence":
+  - text: STATION / CONNECTION CONTEXT
+  - heading "Follow the evidence" [level=2]
+  - button "Close context panel": ×
+  - heading "Audit & version history" [level=3]
+  - paragraph: sha256:6e4bbe5264b0cdb0bb90188cfa1c17af916a7b91ca24204fc918c2c61224d58c
+  - paragraph: "Structure issues: 0 · Event chain: PASS"
+  - paragraph: SELF_ATTESTED · RECEIPT_NOT_PRESENT · EXTERNAL_WITNESS_UNKNOWN
+  - heading "Events 30–60 / 932" [level=4]
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:2c76c5283ca482242a85eebc68ac0d588fd215b6cfa9aa41f55d451444e08f41
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row2: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:3b8c00a3b5cba889d97af9af919e1755a7a88aa1af3d5be766dcb70c45e2e97e
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:1140dbb167a51b121c5b3a4b1723264d4403d98766db82a7df176cb07b8646ee
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row1: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:1e83dc7af289a77d9bde26b9c724d031614d98ed2cde5a0a401997160735484c
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:bc86a66e134aaf309aa74b00d4cad30f837822190ec42b825f13a1fa7a94bb5f
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row11: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:e5ab2ecccb8fe574c399ea62ad1edf1e5fb7e957f0aa572e94e732b78f90d541
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:de1050d42f33ac93b1be4be756ce0d6c9b4d4c526c8ca66212337faf0daf121f
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row10: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:9fac6b90aacd8fd5142e5c72bd87e48fee27bc4e1fbfb00feab35f41349ed485
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:9d75fe20424e4b9ac18682dbc95f31221b13cbd7f3013c5e6cf55775b7de3336
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row9: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:ec93666c5510b155a338f3f63bc0a00e8dd771d7f58b32f532deee5357be087b
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:a98a49b797313828e1c62dd65f36edcb0a6784e3f2d60c6a141b090c4d464ff7
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row8: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:be41218a933609afaade5b2383fff360d0e3123f9418a5b4dd2d79e7eee53ec9
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:f2cc12c28f8a617e21ee49aa1a3bb639a1b86e79e48de4643e41cc918c47090a
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row7: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:bfab8297007dfe876bd95eae7bd608d9ca22b94b89ddab8f0dfc39aa6d9c649b
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:afa8f06b7611bf97dbd8be759ae99444fa32e17b28ba2e9e570af760e3e7bde9
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row6: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:8e51175a4e8fafe7962ca56b212e9ed1a629fe00ca3ca67ac60c66627a23d983
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:eb3e62b4115fbb26cdc0edb47223afbf2a04ae02fc4d70cfa2aec73f5f8019c4
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row5: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:6aefcbd1540c94fc90e2b07087a5cc1d60ed4bcbf1eeefaa9674780f5fb2e02a
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:f14702d385138f35fa42a3e41a768d687f5ce0327e4967d13359ea9cd9013dc0
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row4: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:dbddb8d1859e4fe984e52b59f2fd8c86e991f069657c82b22932b0649356efeb
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:4312c31bde7d9a09541f12f8c8e266f6cc5653f4fefbcbcbe3c7b8a1453895a4
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row3: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:cffa1be18db59f08809d595174b4ce3f6d58d4b69e6fdb93fc6a3d3f93937d44
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:31ffdce4e14c8111703dc0d1f6a413bcc68937cbebafeeb4dfbcc9cacbb9cf11
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row2: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:5e7bdac237f4b0c41bf6c1a4162c4d6d92d186bf7fe9335e9da54982fd69b160
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:8b5ee11ee818af5fd32ad6141b023c5fa8c03b7fe089e75df959fb54d470e4fe
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF30 row1: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:7712029c13cc8f333fa8bf286dcd9edd792ccfe6785a0f94737f6d61629280de
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:a2bcb37a97c18ccae48f9791a2d0c96abe04b6d29116b62adac6c23b57110c9e
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row24: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:08c719163f1f24047f244b30021bd5742d82070bb0e93c06cb686c9793103ccf
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:0ce86e04b7797eb47dc75936afaf614876600cc0189991ffed6e045fe193d189
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row23: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:30f9e8ea8123d6dc028c0ef25447ef0d8129a3da47ba5f181d0611204e0425e3
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:22b9291ca5e6d7dd36e19e448663d712ebc07793aae365645e6bc16e79904350
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row22: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:27ada010650d73c76b96e619cdd16e953b20a7f7f407189edf65dfc00b24637a
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:3677ea8c777948fe50c3ea80a27abe07fbded9786b6ddb0cf82e4ebe0748b55c
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row21: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:758dbe634c125f1c1c7ad12bcba3a9a5d0acabba48b10c455a6ca7efcd3b03d7
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:de49d403cb4c69df1e5103e9d6c302cef836a520686b33fccb3bbb9b3160f0ab
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row20: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:9cc92efaed626c9d4fac3db845e878e580c698d3728916ddd57a1f766900a8a6
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:ce0dd3039e38d07107664244f3115c53d2a0a14772459d9401d9e27e34a7f5bb
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row19: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:c88bb2235f0bc788e0a9b502bb7feb630e30e0ab0ccf9b3dc75c221921f11f19
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:14a91e356a98b84e5fb7a5c0422172210c909181e74a7615dbc6e37b60c23cfc
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row18: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:bdb46b1420071fa2aa644eae690689d9abf0889c2fc3bd1c19e51a63e0d11e15
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:a124e667adac41ca163a6dff1c8525133c193e40ee9b6d3f08cfa4e0c522c372
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row17: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:fa87961e977b23dc9eef44cd29519d35e9a563e1b0169646b38f670dcc5c0289
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:afe865f34dfe1177bcf692aadfb9e6918f228375ffcb6fc1745e57da1964b0e7
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row16: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:af5793257194301d2012d49342adfc0f0b8d7fa272ef8e177dd76b1b6850c84e
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:486862158438e0cf09532e4f2f0e977fdce73f964fc28fb7c3a70ac09398e143
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row15: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:10fbeece4e08b732809ea715f12754661cf4b4834223f015e62c09a16cbc7d66
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:2da03aed6ee9452d0fcc258fc9d1e0d3dbd4a5db481a2b2d101786ec909d95ab
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row14: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:335212261286a60bcd07de3b13e927267f2b6ade5138f9bf62b2de7f6918794a
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:37a9b3fccab4411d837d06c98a51cfcbb29bc98ce4a4653cc8d4528e27dd1953
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row13: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:2f39bc872e2f4b52237192cb3eb841c51f73c9af5d87e18641190b194a5cd0a8
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:36fbc6d2362832f34d557d8b266027c00cb28b898acb0c1a68aa4ca6905b823b
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row12: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:a711aa67a1bb005b61b0582f04479d3724be2f9baee13dcaca6b21c1cba04ba4
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:a800e4c7a4e5f398abbf4e0d804e84fc9f75715ae73a65735ba9bfe001349756
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row11: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:c77924b68d539bc96c01bfe25b7090ac52e5734f2b90b89d5ac4d601323d96ee
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:40df47adadaf7bbfc9cf3209be85dc6ab9e8f4283ad8ace82f6b018ca9d0813e
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row10: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:1e01da14b4b5e74a1406a40d327f1c5446cd1fba0cdf76419c5040d6b1dec1f4
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:f100000bd6a162c9ccc5bb649a796dcee7b4cba3f05dc3b68ed3a04a3492c861
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row9: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:a2542d4ae059eb6ef17e81e2bab3c13cc1331f726ecfa6d9515b9d3a2f2b7ad5
+  - strong: DOMAIN_RESEARCH · REVIEW · sha256:e7a88a0f3bc0da1df8743ec42a5b0ce4f991cc8fcb73e1c37df1907b00b64703
+  - paragraph: 2026-11-02T00:27:13.000Z
+  - paragraph: "Second independent source-semantic review of CSP PDF29 row8: preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority."
+  - paragraph: sha256:ab4f0dc0d862f8251b0ec4060b30ece8a7f11ee92ebd456c864f15ae625d8eb2
+  - button "Newer events"
+  - button "Older events"
+  - heading "Revision field differences 0–15 / 779" [level=4]
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02:input:synthetic-water-output · sha256:07d4e9b907372272d33dd1047254f0ac93ced3a794aabc762e27886636a9dfcf
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02:input:synthetic-water-spend · sha256:1df00b20ca3e0373ddc44d083cd039379147afab9934f804cf2868018b399a44
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02 · sha256:67edf84d7a2fdf6227e3bc426e8311d79df0e5f35e18764e00dd97f9e5e4fd7a
+  - group: synthetic-water-spend · sha256:af6817d5f43d5d0a391e96347affaf7f2ec59208f58a273fb457f33a919afec3
+  - group: csoi:knowledge:op2026:review:page:142 · sha256:79fcfa1f6bee3df1072c5663634ded7d9ca039942f33f4a51983ae9328443d42
+  - group: csoi:knowledge:op2026:review:page:141 · sha256:da0f083d28c535ed269714f7945c064c86b63d93d0afe9c4e03bc3876a882d5b
+  - group: csoi:knowledge:op2026:review:page:140 · sha256:5f47aa0b925d195fbff304d8bec336e59c9bbafafb6cec34f164d4a64428d209
+  - group: csoi:knowledge:op2026:review:page:139 · sha256:f0c8cc3ab4f852f83606c90fb0422e6da79c88c79adf4a2e3272b8920c92ade7
+  - group: csoi:knowledge:op2026:review:page:138 · sha256:8d0f3da37663fcf17b1540026fbfc7030b2eea56c90788c222de414bea0adf91
+  - group: csoi:knowledge:op2026:review:page:137 · sha256:ca7327d03d5348c032d438146dec2f181e7350dcd7f8d630e02b757547c4c2c5
+  - group: csoi:knowledge:op2026:review:page:136 · sha256:863bb317ae65c5935e79c2df065ac64ab0733493196fb9d418bba4fa92968f3a
+  - group: csoi:knowledge:op2026:review:page:135 · sha256:f74c99cd6598af98c60767119d9cd0f1d0a2ecef308478478e1121be6ad80853
+  - group: csoi:knowledge:op2026:review:page:134 · sha256:d2a7a87d3cbb954160b98f44eebceb6de131662a701915f7fd13e5a95e9612fb
+  - group: csoi:knowledge:op2026:review:page:133 · sha256:69f79d1b75975951bca9670f81faef1f4280dd9abfabf1e9d592426b29664890
+  - group: csoi:knowledge:op2026:review:page:132 · sha256:772f1ae2841d1f758650050e886417c03da6d2d98eecdaec95ee9d5bdfa0aa85
+  - button "Older revisions"
+  - paragraph: Original content, semantic assertions, source intake, calculations and local research have separate histories. Integrity is not source rights, truth, legal applicability or official approval. Full history is included in explicit exports.
+  - heading "Public reference directories" [level=3]
+  - link "Integrated planning and reporting ↗":
+    - /url: https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting
+  - link "Development and land-use planning ↗":
+    - /url: https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development
+  - paragraph: Directories do not prove clause mappings. CSP 6.1 admission remains pending.

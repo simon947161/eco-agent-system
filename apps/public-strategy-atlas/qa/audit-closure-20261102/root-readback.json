@@ -1,0 +1,41 @@
+{
+  "format": "original-80-task-root-closure-readback-1",
+  "at": "2026-11-02T04:02:29.720196+00:00",
+  "status": "BOUNDED_CLOSURE_ACCEPTED",
+  "reviewer": "Root agent separate from baseline author and follow-up test reader; code, exact original conditions, evidence and current module hashes read back. No official/professional human admission.",
+  "evidenceSHA256": {
+    "qa/audit-closure-20261102/independent/readback.json": "430d09f4f989e72017b75defc4d54323dd25629f585ba894eb160658df8c07de",
+    "qa/audit-closure-20261102/independent/browser-results.json": "01c7adf3aa6164bc889f327e2c304d2c56a3063a20372127021e93b4b3ae4998",
+    "qa/audit-closure-20261102/independent/final-core-results.json": "1d7678dac09d3d0dfbe9ce1aa5ea99f80b8d8d0d8b2533f13f4d127a1435095a",
+    "qa/audit-closure-20261102/independent/source-unit-filter-readback.json": "ef0d9a8804fcdb4f8f62d79671862f291a3d67675feddccd2f6cdcca1c01320d",
+    "qa/audit-closure-20261102/independent/path-validation-callgraph.json": "b7697c13a5232a600e188440cbee60c393ac81a1ce5f7b01b0ef380c6c30c2e7"
+  },
+  "decisions": [
+    {
+      "id": "COI-023",
+      "before": "PARTIAL",
+      "after": "VERIFIED",
+      "scope": "L2 research classification and evidence/counterevidence/UNKNOWN preservation. Original source evidence stays pinned; five research judgments stay distinct; formal decisions are explicitly blocked/separated. No official decision service or complete law corpus added as a software prerequisite.",
+      "evidence": "Module-pinned layers/governance and targeted-contract-readback positive/negative assertions."
+    },
+    {
+      "id": "COI-074",
+      "before": "PARTIAL",
+      "after": "VERIFIED",
+      "scope": "Existing unified search; q/year/region/law/source/work/unit filters; typed path and record comparisons; questions/candidates and linear route alternative. Recorded references and research candidates only.",
+      "evidence": "4 final browser suites, five-viewports linear/AX supplement,38 actual-source unit filter records and root final path transaction native tests. Original mobile timeout retained; unchanged-limit retry passes after eliminating repeated full validation."
+    },
+    {
+      "id": "COI-076",
+      "before": "PARTIAL",
+      "after": "PARTIAL",
+      "scope": "Current five-viewports, keyboard/emulated touch, reduced motion, focus, pagination and AX-name evidence accepted.",
+      "remaining": "Actual basic screen-reader listening/interaction not tested; no available screen-reader in this environment. No professional certification or physical wide-screen purchase requirement invented.",
+      "actionStatus": "PENDING_TOOL_OR_HUMAN_ACCEPTANCE_NOT_DENIED"
+    }
+  ],
+  "sourceResearchStatus": "PARTIAL",
+  "officialAdmission": "PENDING",
+  "actualCouncilDelivery": "UNKNOWN",
+  "stateOnlyUpdateAfterBrowser": "Only registry status/evidence metadata may now change; no runtime implementation/source bundle change is authorised by this receipt."
+}

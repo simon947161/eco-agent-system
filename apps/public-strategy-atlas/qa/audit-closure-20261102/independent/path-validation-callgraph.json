@@ -1,0 +1,62 @@
+{
+  "format": "path-comparison-repeated-validation-static-readback-1",
+  "at": "2026-11-02T03:38:03.483340+00:00",
+  "task": "COI-074",
+  "method": "Static source callgraph; no profiler timing attribution",
+  "fileSHA256": {
+    "csoi-pages.js": "2a82356268bb99364ec917fe80f1ac4b231bc9e6bfd1f39082efb496f2698188",
+    "csoi-paths.js": "cb0a7e33e3df1fa9e2fa16ecf1f2394a25b1eee51d8bc38c4b6ead2b636ca03b",
+    "atlas-execution.js": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+    "atlas-model.js": "ab147972fdbb9ec982c96380dfbaac0a6c82d2e8102eb7a888268c1587487594"
+  },
+  "trigger": "Default UI left/right endpoint pair submission",
+  "callgraph": [
+    "pathComparePage: one hash-route navigation",
+    "two endpoint rows -> P.discover -> pinPath -> E.comparisonSession",
+    "final P.comparePathSets -> E.comparisonSession",
+    "each session -> M.verifySnapshot(await M.exportSnapshot(d))",
+    "verifySnapshot -> another exportSnapshot -> auditSnapshot"
+  ],
+  "defaultTwoPathCounts": {
+    "comparisonSessions": 3,
+    "fullAuditSnapshotCalls": 6,
+    "explicitFullDatasetClones": 6,
+    "additionalDatasetDigests": 3
+  },
+  "maxEightPathCounts": {
+    "comparisonSessions": 9,
+    "fullAuditSnapshotCalls": 18
+  },
+  "confirmedRedundancy": "Discovery pins and final comparison separately validate equivalent cloned whole datasets within one unchanged UI request. Per-pair comparison already reuses its session.",
+  "notEstablished": "This alone does not establish the sole cause of the mobile click timeout; concurrent CPU load and exact time breakdown were not profiled.",
+  "originalFailure": "browser/csoi-paths-browser/execution.log",
+  "safeRemediationPrinciple": "One private verified transaction for bounded endpoint discovery and comparison, retaining all integrity/privacy checks, exact pins, source withdrawal, export proof equivalence and caller-mutation isolation. No cross-revision unchecked cache.",
+  "parentRemediationStatus": "Parent is implementing compareEndpointSets and negatives; no runtime edits by this reviewer.",
+  "remediationAfterThisFinding": {
+    "owner": "parent implementation",
+    "interface": "compareEndpointSets",
+    "meaning": "Endpoint discovery and comparison now share one fully verified private transaction. Existing pinning, integrity, privacy, withdrawal and comparison semantics remain. The standard comparisonSession still performs its original export/verify checks.",
+    "sourceFileSHA256": {
+      "csoi-pages.js": "6e32420f20c41e6a9bb18e6f17d77be4cdc9ca16a399a8174c3c45168b12f817",
+      "csoi-paths.js": "782c14b344e253c000e49a3d1726c0bb5e6f78caab16f6c214d46d5215a9fd6d",
+      "atlas-execution.js": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+      "atlas-model.js": "ab147972fdbb9ec982c96380dfbaac0a6c82d2e8102eb7a888268c1587487594"
+    },
+    "nativeEvidence": "qa/op-completion-20261102/native-retry/csoi-path-transaction.test.cjs.log",
+    "browserEvidence": "browser/csoi-paths-browser-endpoint-transaction/execution.log",
+    "browserStatus": "PASS_DESKTOP_AND_390_WITH_ORIGINAL_TIMEOUTS",
+    "earlierFailureRetained": "browser/csoi-paths-browser/execution.log",
+    "causalityLimit": "The implementation removed proven repeated verification; this successful run does not isolate concurrent CPU conditions as a controlled performance experiment.",
+    "observedStage": "POST_FIX_CURRENT_SOURCE",
+    "defaultTwoPathCountsAfter": {
+      "comparisonSessions": 1,
+      "fullAuditSnapshotCalls": 2,
+      "explicitFullDatasetClones": 2,
+      "additionalDatasetDigests": 1
+    },
+    "countsMeaning": "One verified transaction; the standard comparisonSession retains both export/verify audit passes. Not a claim of one audit call."
+  },
+  "observedStage": "PRE_FIX_CALLGRAPH_OBSERVED_BEFORE_COMPARE_ENDPOINT_SETS",
+  "sourceBindingEvidence": "browser-results-initial.json#runtimeFileSHA256Before: exact pre-fix working-tree bytes, not the later corrected file bytes",
+  "bindingCorrection": "Earlier author receipt incorrectly attached current hashes to the pre-fix callgraph. Corrected here using preserved first-run runtime manifest; old observations remain pre-fix only."
+}

@@ -1,0 +1,1028 @@
+{
+  "format": "op-full-bounded-acceptance-1",
+  "at": "2026-11-02T04:27:33.364720+00:00",
+  "status": "PASS_BOUNDED_APPLICATION_ACCEPTANCE",
+  "projectCompletion": "PARTIAL",
+  "checkpointCommit": "385e37df79f4a6731186f0767aec7734e3760a13",
+  "native": {
+    "distinctFiles": 49,
+    "results": [
+      {
+        "file": "accounting.test.cjs",
+        "startedAt": "2026-11-02T03:26:11.909499+00:00",
+        "finishedAt": "2026-11-02T03:26:11.993762+00:00",
+        "seconds": 0.08,
+        "sha256": "9c31d8c2e971e22136d37081a4e6110d39f47432abf4f9f62369e1e5c8b935f9",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "accounting.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "applicability.test.cjs",
+        "startedAt": "2026-11-02T03:26:11.909841+00:00",
+        "finishedAt": "2026-11-02T03:26:12.600318+00:00",
+        "seconds": 0.69,
+        "sha256": "2f8bc46901a8421ae47a2e85b874e26f21b97baa0bd4b90eb49727db32093db2",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "applicability.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "atlas-snapshot-capacity.test.cjs",
+        "startedAt": "2026-11-02T03:26:11.994102+00:00",
+        "finishedAt": "2026-11-02T03:26:13.422361+00:00",
+        "seconds": 1.43,
+        "sha256": "3091367ae8942e8e94077ea0b8ee05e27a968fd318d8ba03fce047d7a24ffd54",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "atlas-snapshot-capacity.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "comparison.test.cjs",
+        "startedAt": "2026-11-02T03:26:12.600544+00:00",
+        "finishedAt": "2026-11-02T03:26:18.138084+00:00",
+        "seconds": 5.54,
+        "sha256": "1c96c885e8ed0ffc0f78fcbd84b7ce0c18ae4c49760be1d236f64960e1dac2bd",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "comparison.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "content.test.cjs",
+        "startedAt": "2026-11-02T03:26:13.422516+00:00",
+        "finishedAt": "2026-11-02T03:26:13.733787+00:00",
+        "seconds": 0.31,
+        "sha256": "11dfb76aabeb131d2ba86f59a59a33274b800af38027d4fe1e0c1eea0df9cf20",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "content.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-assistant.test.cjs",
+        "startedAt": "2026-11-02T03:26:13.733998+00:00",
+        "finishedAt": "2026-11-02T03:26:14.471133+00:00",
+        "seconds": 0.74,
+        "sha256": "4bd6c797f86aa12f1ae71d3c281db93b0a34053ec6715b29d40d75a84494abd0",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-assistant.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-bombala-phe.test.cjs",
+        "startedAt": "2026-11-02T03:40:04.423055+00:00",
+        "finishedAt": "2026-11-02T03:41:46.728002+00:00",
+        "seconds": 102.3,
+        "sha256": "3924da987a13bafaa32bd6f247e2eb451327a4a243019b424a02835dc675a5f6",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-bombala-phe.test.cjs.log",
+        "evidenceDirectory": "native-retry"
+      },
+      {
+        "file": "csoi-bombala.test.cjs",
+        "startedAt": "2026-11-02T03:26:18.141044+00:00",
+        "finishedAt": "2026-11-02T03:27:00.441174+00:00",
+        "seconds": 42.3,
+        "sha256": "9d096418db6a9f9c139e7fedce35edacd542e77ea6de539aab40b2f6dae527c9",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-bombala.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-boot.test.cjs",
+        "startedAt": "2026-11-02T03:26:22.688843+00:00",
+        "finishedAt": "2026-11-02T04:09:24.912134+00:00",
+        "seconds": 2582.22,
+        "sha256": "b11928b13d32037f519cb77098a6662a3ae2cf2f0760c6b9846d4b3072416ff3",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-boot.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-calendar.test.cjs",
+        "startedAt": "2026-11-02T03:27:00.441718+00:00",
+        "finishedAt": "2026-11-02T03:27:01.193710+00:00",
+        "seconds": 0.75,
+        "sha256": "3e30d32d45c20eabf7afe36dfadca628a4a19c1a79b0be919625f8f4a0f19fa6",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-calendar.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-capsule.test.cjs",
+        "startedAt": "2026-11-02T03:27:01.193855+00:00",
+        "finishedAt": "2026-11-02T03:27:02.248561+00:00",
+        "seconds": 1.05,
+        "sha256": "6e945bf082308b49fc0938a45b53e785c6a811f5caef820d1b82b51908a25d90",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-capsule.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-clauses.test.cjs",
+        "startedAt": "2026-11-02T03:27:02.248730+00:00",
+        "finishedAt": "2026-11-02T03:27:40.114003+00:00",
+        "seconds": 37.86,
+        "sha256": "cb1cd7d57ee31966045fe18a1eb9df3891e95361f820a06447715ed148dbbaf9",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-clauses.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-cooma.test.cjs",
+        "startedAt": "2026-11-02T03:27:40.115366+00:00",
+        "finishedAt": "2026-11-02T03:28:17.866719+00:00",
+        "seconds": 37.75,
+        "sha256": "703c279abebfa1cf23f7b418018a30c68afca9020d4511da484e7f63594d226b",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-cooma.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-digest-screening.test.cjs",
+        "startedAt": "2026-11-02T03:28:17.867282+00:00",
+        "finishedAt": "2026-11-02T03:28:17.949715+00:00",
+        "seconds": 0.08,
+        "sha256": "cefc200b1f0c8f1f92b07130d14821425fd0fb2441fb988d38c26ca4d4498725",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-digest-screening.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-governance.test.cjs",
+        "startedAt": "2026-11-02T03:28:17.949886+00:00",
+        "finishedAt": "2026-11-02T03:28:18.084060+00:00",
+        "seconds": 0.13,
+        "sha256": "b30c94ab408f351f0141bc0156eec1c4989c6d3cae4dff26748285e483cee7f2",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-governance.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-intake.test.cjs",
+        "startedAt": "2026-11-02T03:28:18.084190+00:00",
+        "finishedAt": "2026-11-02T03:29:05.705679+00:00",
+        "seconds": 47.62,
+        "sha256": "b6acabfb721887688684a3b771d1810d6ceb5ac75602c48e5cf22ab59afd6a2a",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-intake.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-knowledge.test.cjs",
+        "startedAt": "2026-11-02T04:23:01.976695+00:00",
+        "finishedAt": "2026-11-02T04:23:12.205694+00:00",
+        "seconds": 10.23,
+        "sha256": "9561ee807421e3d00aed896aa690013c38af6ed1d842116ed3ede023843398be",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-knowledge.test.cjs.log",
+        "evidenceDirectory": "native-rendering"
+      },
+      {
+        "file": "csoi-layers.test.cjs",
+        "startedAt": "2026-11-02T03:29:09.621198+00:00",
+        "finishedAt": "2026-11-02T03:29:12.598461+00:00",
+        "seconds": 2.98,
+        "sha256": "0ae7cf2919ca4586f71f3519a270afd4517d24fecc79d32721d72f272557190e",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-layers.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-lsps-context.test.cjs",
+        "startedAt": "2026-11-02T03:29:12.598655+00:00",
+        "finishedAt": "2026-11-02T03:30:44.269614+00:00",
+        "seconds": 91.67,
+        "sha256": "22a17456e59555aee2f073aaf8eda47069d3c67e36abbf66c719a4372521a467",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-lsps-context.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-metric-review.test.cjs",
+        "startedAt": "2026-11-02T03:30:44.269794+00:00",
+        "finishedAt": "2026-11-02T03:31:30.481428+00:00",
+        "seconds": 46.21,
+        "sha256": "bd7d2afee747319ecba2d83c558d031c30511b609835ed46d9c24becbe84405e",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-metric-review.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-model.test.cjs",
+        "startedAt": "2026-11-02T03:31:30.481772+00:00",
+        "finishedAt": "2026-11-02T03:31:31.503057+00:00",
+        "seconds": 1.02,
+        "sha256": "907373039e91feb88e93b4ad73fc9899d37afa39d2a467f75975e40a07b8c11a",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-model.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-op-review.test.cjs",
+        "startedAt": "2026-11-02T03:41:46.728335+00:00",
+        "finishedAt": "2026-11-02T03:44:21.357403+00:00",
+        "seconds": 154.63,
+        "sha256": "dfdcd65384b42f4f607b0ef622339506f1125a552cf4049fda1e79efe85b086f",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-op-review.test.cjs.log",
+        "evidenceDirectory": "native-retry"
+      },
+      {
+        "file": "csoi-paths.test.cjs",
+        "startedAt": "2026-11-02T03:39:28.334621+00:00",
+        "finishedAt": "2026-11-02T03:40:04.421651+00:00",
+        "seconds": 36.09,
+        "sha256": "a1d626d719084604745909e15c314473117d7e46e52c9d154ffc7ce8b33e604e",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-paths.test.cjs.log",
+        "evidenceDirectory": "native-retry"
+      },
+      {
+        "file": "csoi-phe-context.test.cjs",
+        "startedAt": "2026-11-02T03:32:29.334711+00:00",
+        "finishedAt": "2026-11-02T03:33:09.740354+00:00",
+        "seconds": 40.41,
+        "sha256": "145951bd91eaf41da6601bdf7fbaa1441ff281e1f25ef86dbbd2379f3599ed6e",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-phe-context.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-phe.test.cjs",
+        "startedAt": "2026-11-02T03:33:09.740883+00:00",
+        "finishedAt": "2026-11-02T03:33:09.809940+00:00",
+        "seconds": 0.07,
+        "sha256": "0c6d8e83cee34f13ec34547eef12549571bcaae261dab80c72d10303d6881695",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-phe.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-planning.test.cjs",
+        "startedAt": "2026-11-02T03:33:09.810116+00:00",
+        "finishedAt": "2026-11-02T03:33:44.299747+00:00",
+        "seconds": 34.49,
+        "sha256": "6588770744165f4b975b71a41a737dcef8f4416173205d2e8b84a99187c88fa9",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-planning.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-receipts.test.cjs",
+        "startedAt": "2026-11-02T03:33:44.301188+00:00",
+        "finishedAt": "2026-11-02T03:33:45.045980+00:00",
+        "seconds": 0.74,
+        "sha256": "f6cadd7ee4945f22d30ca68800041c8fcc792f141df0ec8d03a7001fa18e0d7d",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-receipts.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-recompute.test.cjs",
+        "startedAt": "2026-11-02T03:33:45.046206+00:00",
+        "finishedAt": "2026-11-02T03:33:47.052921+00:00",
+        "seconds": 2.01,
+        "sha256": "fd774514b471310d11c9acd2c8baa7c0b95a229161dcd36867ff592bdeb5c9b6",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-recompute.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-remediation.test.cjs",
+        "startedAt": "2026-11-02T03:33:47.053081+00:00",
+        "finishedAt": "2026-11-02T03:34:57.607388+00:00",
+        "seconds": 70.55,
+        "sha256": "54540ddf4a84169c5cabcda55ea6164a27be6d20317c685785642938790ecb4d",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-remediation.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-review-work.test.cjs",
+        "startedAt": "2026-11-02T03:34:57.608444+00:00",
+        "finishedAt": "2026-11-02T03:35:29.744081+00:00",
+        "seconds": 32.13,
+        "sha256": "f2bdd7de9399d73f309b3c497ff86c0e30d4fc06293f1c54fedbd0b8124d7fe6",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-review-work.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-router.test.cjs",
+        "startedAt": "2026-11-02T04:23:00.871586+00:00",
+        "finishedAt": "2026-11-02T04:23:01.975990+00:00",
+        "seconds": 1.1,
+        "sha256": "3c572433cd402799d91d240b2a1b8296e5ac221a7724e9e7acf2bd05bbdb7dce",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-router.test.cjs.log",
+        "evidenceDirectory": "native-rendering"
+      },
+      {
+        "file": "csoi-source-integrity.test.cjs",
+        "startedAt": "2026-11-02T03:35:29.837274+00:00",
+        "finishedAt": "2026-11-02T03:36:32.486157+00:00",
+        "seconds": 62.65,
+        "sha256": "776c03336cd7a07e073c6225680d4098633990066b6945d978665a2b2ee6753d",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-source-integrity.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-strategy-research.test.cjs",
+        "startedAt": "2026-11-02T04:23:12.205887+00:00",
+        "finishedAt": "2026-11-02T04:24:29.538742+00:00",
+        "seconds": 77.33,
+        "sha256": "524ce9c7a0990ba86ce4728a76abee2fe8ba417f59646842055363270ef6d583",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-strategy-research.test.cjs.log",
+        "evidenceDirectory": "native-rendering"
+      },
+      {
+        "file": "csoi-wcos.test.cjs",
+        "startedAt": "2026-11-02T03:37:46.573118+00:00",
+        "finishedAt": "2026-11-02T03:37:46.651538+00:00",
+        "seconds": 0.08,
+        "sha256": "0da93a0471f5f916918d307dac3b0a82aefd9a8f79700059e06e2ac719101059",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-wcos.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-work.test.cjs",
+        "startedAt": "2026-11-02T03:37:46.651666+00:00",
+        "finishedAt": "2026-11-02T03:37:47.392080+00:00",
+        "seconds": 0.74,
+        "sha256": "6005481fa6da942f8d0ace2d6eb478c48d236a8aa07e13251675f736e0f48088",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-work.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "deep-content.test.cjs",
+        "startedAt": "2026-11-02T03:37:47.392216+00:00",
+        "finishedAt": "2026-11-02T03:37:57.545342+00:00",
+        "seconds": 10.15,
+        "sha256": "ad534b3d173858a50feba00214ab4a2ef2ac3ff3eecdb536840e64d9fba38a43",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "deep-content.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "discovery.test.cjs",
+        "startedAt": "2026-11-02T03:37:57.545616+00:00",
+        "finishedAt": "2026-11-02T03:38:00.328298+00:00",
+        "seconds": 2.78,
+        "sha256": "7474414046dbe40e38bb297fc54e86ae9200a0c964e9df6756dfd80e91d3a6b4",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "discovery.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "domain.test.cjs",
+        "startedAt": "2026-11-02T03:38:00.337360+00:00",
+        "finishedAt": "2026-11-02T03:38:03.675768+00:00",
+        "seconds": 3.33,
+        "sha256": "b58d08d5bdf06eb7a42cf88e5b3c7f12e3e25f3b0e423f57cd2822bdc17d586f",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "domain.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "execution.test.cjs",
+        "startedAt": "2026-11-02T03:38:03.676072+00:00",
+        "finishedAt": "2026-11-02T03:38:04.786128+00:00",
+        "seconds": 1.11,
+        "sha256": "40dc271ef2dd23d267528c191ae1bf7d02d0ca74a97bfda934581fb19bce70cd",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "execution.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "intake-access.test.cjs",
+        "startedAt": "2026-11-02T03:38:04.786325+00:00",
+        "finishedAt": "2026-11-02T03:38:04.937637+00:00",
+        "seconds": 0.15,
+        "sha256": "e1439fbb8ee26feb84b9f588fa60c3178db5b5c488cd1f4f901063bd1f682228",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "intake-access.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "intake.test.cjs",
+        "startedAt": "2026-11-02T03:38:04.937780+00:00",
+        "finishedAt": "2026-11-02T03:38:06.186843+00:00",
+        "seconds": 1.25,
+        "sha256": "6a4689aff55ee59d4dc9f94c83fdbc19df0fe5287af9db56586c47845e7c3beb",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "intake.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "integration.test.cjs",
+        "startedAt": "2026-11-02T03:38:06.187180+00:00",
+        "finishedAt": "2026-11-02T03:38:09.433237+00:00",
+        "seconds": 3.24,
+        "sha256": "0fda7c22057ee116ef5fe95da6979c00db445696531e8fd3df9a56a3eb09ba34",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "integration.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "ledger.test.cjs",
+        "startedAt": "2026-11-02T03:38:09.433399+00:00",
+        "finishedAt": "2026-11-02T03:38:12.059146+00:00",
+        "seconds": 2.63,
+        "sha256": "eacf37017379c8bd8cf511bd382cf8754471d24b60127ed5bc50ce434962939a",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "ledger.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "model.test.cjs",
+        "startedAt": "2026-11-02T03:38:12.059283+00:00",
+        "finishedAt": "2026-11-02T03:38:12.351996+00:00",
+        "seconds": 0.29,
+        "sha256": "9220a967fecaff1de03c818d3d5af4b75b3419ca97d6c334a90eaf58a778ef2f",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "model.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "route-main.test.cjs",
+        "startedAt": "2026-11-02T03:38:12.352213+00:00",
+        "finishedAt": "2026-11-02T03:38:12.432071+00:00",
+        "seconds": 0.08,
+        "sha256": "0cbb1f22d65c09ab70e5413f541d8786277f8376b39802991b0f289695547b56",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "route-main.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "route-map.test.cjs",
+        "startedAt": "2026-11-02T03:38:12.432268+00:00",
+        "finishedAt": "2026-11-02T03:38:12.566028+00:00",
+        "seconds": 0.13,
+        "sha256": "f68a4dc1f8464065ec2d4bba327aced33786324888f4addc7c5fa43e9a352325",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "route-map.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "workspace-merge.test.cjs",
+        "startedAt": "2026-11-02T03:38:12.567969+00:00",
+        "finishedAt": "2026-11-02T03:38:12.928617+00:00",
+        "seconds": 0.36,
+        "sha256": "5795de5d637428efdb9fcce8c848f098183cb54f0eeed3beef9a3df3a22deebe",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "workspace-merge.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "workspace.test.cjs",
+        "startedAt": "2026-11-02T03:38:12.928755+00:00",
+        "finishedAt": "2026-11-02T03:38:13.230099+00:00",
+        "seconds": 0.3,
+        "sha256": "baf29f4c4a1501b4058b36982e7e3209ae3ebc64292b6fbb29c943960e2cf846",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "workspace.test.cjs.log",
+        "evidenceDirectory": "native"
+      },
+      {
+        "file": "csoi-path-transaction.test.cjs",
+        "startedAt": "2026-11-02T04:23:00.870641+00:00",
+        "finishedAt": "2026-11-02T04:24:30.788320+00:00",
+        "seconds": 89.92,
+        "sha256": "6d2b95f3ad945f0186df26defde3c74c56e221667dfb82bc8be5749040f65f27",
+        "fileUnchanged": true,
+        "exitCode": 0,
+        "status": "PASS_TESTED_HERE",
+        "log": "csoi-path-transaction.test.cjs.log",
+        "evidenceDirectory": "native-rendering"
+      }
+    ],
+    "initialFailuresPreserved": [
+      {
+        "file": "csoi-bombala-phe.test.cjs",
+        "startedAt": "2026-11-02T03:26:14.471282+00:00",
+        "finishedAt": "2026-11-02T03:26:22.688640+00:00",
+        "seconds": 8.22,
+        "sha256": "20e4e56966410b7be90644afd097fb77cc837366b7834d1be5e2b82e8cbddde5",
+        "fileUnchanged": true,
+        "exitCode": 1,
+        "status": "FAIL",
+        "log": "csoi-bombala-phe.test.cjs.log"
+      },
+      {
+        "file": "csoi-op-review.test.cjs",
+        "startedAt": "2026-11-02T03:31:31.503302+00:00",
+        "finishedAt": "2026-11-02T03:31:46.325515+00:00",
+        "seconds": 14.82,
+        "sha256": "f5cd0fbc8dde75a62d1b6dfd31d5d3fcdf9af8cb0b49037b3b7de86418757b09",
+        "fileUnchanged": true,
+        "exitCode": 1,
+        "status": "FAIL",
+        "log": "csoi-op-review.test.cjs.log"
+      }
+    ],
+    "reconciliation": "Complete initial48-file run plus4affected reruns covers49 distinct final test files. Path transaction was added during the initial run; final paths and transaction tests reran. The full cache build uses unchanged registration/assessDependencies logic, while final browser suites use the final path transaction. Then4 affected native reruns and a desktop/mobile rendering check cover the final OP disclosure correction; this is a complete run plus targeted reconciliation, not a fresh full rerun of unchanged cache registration. No widened timeouts."
+  },
+  "localBrowser": {
+    "suiteCount": 7,
+    "regression": {
+      "results": [
+        {
+          "script": "csoi-lsps-browser.py",
+          "startedAt": "2026-11-02T03:39:42.123819+00:00",
+          "finishedAt": "2026-11-02T03:46:00.731808+00:00",
+          "exitCode": 0,
+          "status": "PASS_TESTED_HERE",
+          "log": "csoi-lsps-browser.py.log"
+        },
+        {
+          "script": "csoi-metric-browser.py",
+          "startedAt": "2026-11-02T03:46:00.734746+00:00",
+          "finishedAt": "2026-11-02T03:49:08.814908+00:00",
+          "exitCode": 0,
+          "status": "PASS_TESTED_HERE",
+          "log": "csoi-metric-browser.py.log"
+        },
+        {
+          "script": "csoi-strategy-browser.py",
+          "startedAt": "2026-11-02T03:49:08.816770+00:00",
+          "finishedAt": "2026-11-02T03:53:07.035069+00:00",
+          "exitCode": 0,
+          "status": "PASS_TESTED_HERE",
+          "log": "csoi-strategy-browser.py.log"
+        },
+        {
+          "script": "csoi-phe-context-browser.py",
+          "startedAt": "2026-11-02T03:53:07.037559+00:00",
+          "finishedAt": "2026-11-02T03:56:04.813827+00:00",
+          "exitCode": 0,
+          "status": "PASS_TESTED_HERE",
+          "log": "csoi-phe-context-browser.py.log"
+        },
+        {
+          "script": "e0-browser.py",
+          "startedAt": "2026-11-02T03:56:04.817393+00:00",
+          "finishedAt": "2026-11-02T04:12:25.697329+00:00",
+          "exitCode": 0,
+          "status": "PASS_TESTED_HERE",
+          "log": "e0-browser.py.log"
+        },
+        {
+          "script": "system-browser.py",
+          "startedAt": "2026-11-02T04:12:25.699413+00:00",
+          "finishedAt": "2026-11-02T04:13:21.572465+00:00",
+          "exitCode": 0,
+          "status": "PASS_TESTED_HERE",
+          "log": "system-browser.py.log"
+        }
+      ]
+    },
+    "opDetails": {
+      "evidence": "browser/results.json",
+      "viewports": [
+        [
+          1440,
+          900
+        ],
+        [
+          390,
+          844
+        ]
+      ],
+      "pagesOpenedEach": 142,
+      "uniqueUnitsExpandedEach": 911,
+      "sourceWithdrawal": true,
+      "missingCondition": true,
+      "oldV4Import": true,
+      "exportIndependentRevalidation": true
+    }
+  },
+  "performance": {
+    "evidence": "performance-browser/results.json",
+    "results": [
+      {
+        "viewport": [
+          1440,
+          900
+        ],
+        "measurement": "Real Chromium on cloud Linux;390px/touch emulation, not a physical phone or memory-constrained mobile OS. Sampled JS heap excludes native process/GPU memory and is not a full peak-memory proof.",
+        "snapshotBytes": 22743874,
+        "importLimitBytes": 33554432,
+        "exportWithOfflineVerificationSeconds": 13.355,
+        "snapshotImportSeconds": {
+          "conditionEditedSnapshot": 8.655,
+          "sourceWithdrawnSnapshot": 4.166,
+          "oldV4Snapshot": 2.025
+        },
+        "sampleCount": 148,
+        "maxSampledJSHeapUsedBytes": 394444380,
+        "maxSampledJSHeapTotalBytes": 448950272,
+        "phases": [
+          {
+            "phase": "applicationReady",
+            "elapsedSeconds": 7.004,
+            "jsHeapUsedBytes": 51098256,
+            "jsHeapTotalBytes": 118284288
+          },
+          {
+            "phase": "all142PagesAnd911UnitsRead",
+            "elapsedSeconds": 215.459,
+            "jsHeapUsedBytes": 55033832,
+            "jsHeapTotalBytes": 141934592
+          },
+          {
+            "phase": "snapshotExportedAndOfflineVerified",
+            "elapsedSeconds": 234.132,
+            "jsHeapUsedBytes": 62251804,
+            "jsHeapTotalBytes": 161857536
+          },
+          {
+            "phase": "conditionEditedSnapshotImported",
+            "elapsedSeconds": 266.964,
+            "jsHeapUsedBytes": 394444380,
+            "jsHeapTotalBytes": 448950272
+          },
+          {
+            "phase": "sourceWithdrawnSnapshotImported",
+            "elapsedSeconds": 276.873,
+            "jsHeapUsedBytes": 283948204,
+            "jsHeapTotalBytes": 348323840
+          },
+          {
+            "phase": "oldV4SnapshotImported",
+            "elapsedSeconds": 281.639,
+            "jsHeapUsedBytes": 257859080,
+            "jsHeapTotalBytes": 377593856
+          }
+        ]
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "measurement": "Real Chromium on cloud Linux;390px/touch emulation, not a physical phone or memory-constrained mobile OS. Sampled JS heap excludes native process/GPU memory and is not a full peak-memory proof.",
+        "snapshotBytes": 22743874,
+        "importLimitBytes": 33554432,
+        "exportWithOfflineVerificationSeconds": 12.385,
+        "snapshotImportSeconds": {
+          "conditionEditedSnapshot": 6.782,
+          "sourceWithdrawnSnapshot": 5.54,
+          "oldV4Snapshot": 2.709
+        },
+        "sampleCount": 148,
+        "maxSampledJSHeapUsedBytes": 391075440,
+        "maxSampledJSHeapTotalBytes": 446468096,
+        "phases": [
+          {
+            "phase": "applicationReady",
+            "elapsedSeconds": 6.579,
+            "jsHeapUsedBytes": 237365996,
+            "jsHeapTotalBytes": 306900992
+          },
+          {
+            "phase": "all142PagesAnd911UnitsRead",
+            "elapsedSeconds": 204.048,
+            "jsHeapUsedBytes": 82189288,
+            "jsHeapTotalBytes": 144252928
+          },
+          {
+            "phase": "snapshotExportedAndOfflineVerified",
+            "elapsedSeconds": 221.797,
+            "jsHeapUsedBytes": 62234220,
+            "jsHeapTotalBytes": 140361728
+          },
+          {
+            "phase": "conditionEditedSnapshotImported",
+            "elapsedSeconds": 245.962,
+            "jsHeapUsedBytes": 391075440,
+            "jsHeapTotalBytes": 446468096
+          },
+          {
+            "phase": "sourceWithdrawnSnapshotImported",
+            "elapsedSeconds": 257.208,
+            "jsHeapUsedBytes": 241271704,
+            "jsHeapTotalBytes": 313499648
+          },
+          {
+            "phase": "oldV4SnapshotImported",
+            "elapsedSeconds": 262.516,
+            "jsHeapUsedBytes": 83992824,
+            "jsHeapTotalBytes": 186265600
+          }
+        ]
+      }
+    ]
+  },
+  "actualFinalUnitReadback": {
+    "index": "final-actual-readback-samples.json",
+    "indexSHA256": "f12677eef9f97ab49631904dec1aecd4e4ebaa9d757ed33e9eeeb35f26859733",
+    "matrix": "final-actual-unit-readback.csv",
+    "independentCheck": "independent/compact-final-readback-check.json"
+  },
+  "workbookSHA256": "523595444a8f55f75670a5508f5e89b52f68c39a2e24a5e8a75b4f4294feea0e",
+  "finalRenderingCorrection": {
+    "evidence": "readable-browser/results.json",
+    "observedIssue": "Generic OP sourceAnomalies duplicated an expanded technical block already present in the OP disclosure.",
+    "change": "One DOM rendering condition excludes the duplicate; original data and all existing disclosure content remain.",
+    "validation": "4 affected native reruns plus1440/390 targeted actual rendering, collapse/open content, source link and51/26/3 checks. Full cache/data-input proofs remain applicable; source/cache bytes unchanged.",
+    "initialTestAuthorErrors": "First new selector expected pre instead of existing dl; next used getClientRects on nested closed details. Corrected to actual dl and Playwright visibility, original logs retained.",
+    "readback": {
+      "at": "2026-11-02T04:26:42.288095+00:00",
+      "status": "PASS",
+      "pagesModuleSHA256": "e4eb95bb10d828b62d17a906e8ecd5ae3b9e30680a37036d270d2fd0c56dd298",
+      "results": [
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "pages": [
+            28,
+            73,
+            111,
+            121,
+            132
+          ],
+          "technicalJsonDefault": "COLLAPSED",
+          "conflictCanBeOpenedAndRead": true,
+          "unitSummaryReadableWithoutTechnicalJson": true,
+          "originalSourceLinks": "PASS",
+          "engineeringCounts": [
+            51,
+            26,
+            3
+          ],
+          "status": "PASS",
+          "errors": []
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "pages": [
+            28,
+            73,
+            111,
+            121,
+            132
+          ],
+          "technicalJsonDefault": "COLLAPSED",
+          "conflictCanBeOpenedAndRead": true,
+          "unitSummaryReadableWithoutTechnicalJson": true,
+          "originalSourceLinks": "PASS",
+          "engineeringCounts": [
+            51,
+            26,
+            3
+          ],
+          "status": "PASS",
+          "errors": []
+        }
+      ]
+    }
+  },
+  "closureReadback": {
+    "format": "original-80-task-root-closure-readback-1",
+    "at": "2026-11-02T04:02:29.720196+00:00",
+    "status": "BOUNDED_CLOSURE_ACCEPTED",
+    "reviewer": "Root agent separate from baseline author and follow-up test reader; code, exact original conditions, evidence and current module hashes read back. No official/professional human admission.",
+    "evidenceSHA256": {
+      "qa/audit-closure-20261102/independent/readback.json": "430d09f4f989e72017b75defc4d54323dd25629f585ba894eb160658df8c07de",
+      "qa/audit-closure-20261102/independent/browser-results.json": "01c7adf3aa6164bc889f327e2c304d2c56a3063a20372127021e93b4b3ae4998",
+      "qa/audit-closure-20261102/independent/final-core-results.json": "1d7678dac09d3d0dfbe9ce1aa5ea99f80b8d8d0d8b2533f13f4d127a1435095a",
+      "qa/audit-closure-20261102/independent/source-unit-filter-readback.json": "ef0d9a8804fcdb4f8f62d79671862f291a3d67675feddccd2f6cdcca1c01320d",
+      "qa/audit-closure-20261102/independent/path-validation-callgraph.json": "b7697c13a5232a600e188440cbee60c393ac81a1ce5f7b01b0ef380c6c30c2e7"
+    },
+    "decisions": [
+      {
+        "id": "COI-023",
+        "before": "PARTIAL",
+        "after": "VERIFIED",
+        "scope": "L2 research classification and evidence/counterevidence/UNKNOWN preservation. Original source evidence stays pinned; five research judgments stay distinct; formal decisions are explicitly blocked/separated. No official decision service or complete law corpus added as a software prerequisite.",
+        "evidence": "Module-pinned layers/governance and targeted-contract-readback positive/negative assertions."
+      },
+      {
+        "id": "COI-074",
+        "before": "PARTIAL",
+        "after": "VERIFIED",
+        "scope": "Existing unified search; q/year/region/law/source/work/unit filters; typed path and record comparisons; questions/candidates and linear route alternative. Recorded references and research candidates only.",
+        "evidence": "4 final browser suites, five-viewports linear/AX supplement,38 actual-source unit filter records and root final path transaction native tests. Original mobile timeout retained; unchanged-limit retry passes after eliminating repeated full validation."
+      },
+      {
+        "id": "COI-076",
+        "before": "PARTIAL",
+        "after": "PARTIAL",
+        "scope": "Current five-viewports, keyboard/emulated touch, reduced motion, focus, pagination and AX-name evidence accepted.",
+        "remaining": "Actual basic screen-reader listening/interaction not tested; no available screen-reader in this environment. No professional certification or physical wide-screen purchase requirement invented.",
+        "actionStatus": "PENDING_TOOL_OR_HUMAN_ACCEPTANCE_NOT_DENIED"
+      }
+    ],
+    "sourceResearchStatus": "PARTIAL",
+    "officialAdmission": "PENDING",
+    "actualCouncilDelivery": "UNKNOWN",
+    "stateOnlyUpdateAfterBrowser": "Only registry status/evidence metadata may now change; no runtime implementation/source bundle change is authorised by this receipt."
+  },
+  "registryCounts": {
+    "VERIFIED": 51,
+    "BLOCKED": 3,
+    "PARTIAL": 26
+  },
+  "source": {
+    "sourceBundleSha256": "345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0",
+    "pages": 142,
+    "units": 911,
+    "newRecords": 143,
+    "semanticReview": "independent/model-readback-review.json",
+    "originalPhase2Recovery": "NOT_RECOVERED_INACCESSIBLE_NOT_DECLARED_LOST"
+  },
+  "cache": {
+    "snapshotBytes": 22743874,
+    "cacheBytes": 22744179,
+    "entities": 635,
+    "revisions": 775,
+    "events": 775,
+    "assertions": 48,
+    "digest": "sha256:a4dc6c0d819b184f8091baeda533ae9135502fa309b9f2594c8beef868b9686e",
+    "manifestSourceSha": "345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0"
+  },
+  "publication": "RECORDED_SEPARATELY_IN_DEPLOYMENT_JSON",
+  "limits": [
+    "Current controlled source version remains UNKNOWN where original conflict exists.",
+    "No actual expenditure/outcome, legal applicability, parcel boundary or official relationship is admitted.",
+    "COI076 actual speech-screenreader experience remains pending; AX/touch simulation is bounded evidence.",
+    "Private002/031/040 deferred; no private data imported.",
+    "Architecture-map plan only; no new main interface implemented."
+  ],
+  "runtimeSHA256": {
+    "COI_TASK_REGISTRY_V1_7.json": "0d36efc725402b8fc89944a20361577c3f8b3e5e15e40bdaa2fd687023f08993",
+    "atlas-accounting.js": "5710e8900188eb4af880b6a50730037901448bad6166a6012d373b3fcd71f99f",
+    "atlas-data.js": "6a061b80d5f47a79f8d4e34d7e09dc0c236d4fbaec3b46f788a1dece5f267fe4",
+    "atlas-domain.js": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+    "atlas-execution.js": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+    "atlas-intake.js": "e521b7d35218dda4fc2f10a47d0d6b0d68f23de254f55872234d2f8c33a1712d",
+    "atlas-model.js": "ab147972fdbb9ec982c96380dfbaac0a6c82d2e8102eb7a888268c1587487594",
+    "atlas-route-layout.js": "163a669fb4af413a27bf6231b0a4d50e7b4877b9f397ea641b7a1906a53a4925",
+    "atlas-workspace.js": "3147a6b6cac7b8a5420537f76c7c3b1a0cacdf10ef1b0c9e40944f972ae4d621",
+    "atlas.css": "e7d9d8e7f0d78cd53706ac10ea52ca92fde1f6ef4034f096c18e788d91455cd6",
+    "atlas.js": "f595646d62ce69db239ecb4a2d29a4ed2d6b3463df1d9bda5e51f462982a847c",
+    "csoi-assistant.js": "2ff1b6b3004f133fd4a0d1b09197a5b549f6348fa307536d1699f3a4dbea3f58",
+    "csoi-boot.js": "49ad12d9a19fb51a1fc2e73e83ee516f36b390fdb8d70b43b86c80936c4d9f16",
+    "csoi-calendar.js": "3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+    "csoi-clauses.js": "f9b3f8c4b7a2aabec9ee0aa3928e03b31bebcbb87ce289441ee32712c876cc86",
+    "csoi-governance.js": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+    "csoi-intake.js": "5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+    "csoi-knowledge.js": "64281e02e9c60df961d0163c89fb77cfd6abde80beae03c9e88cb5cb7386e8d5",
+    "csoi-layers.js": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+    "csoi-lsps-context.js": "55275ff9c6e1f04e34ebf14e5dca8b57efe52bd25b454d07d9d264d55bcd511e",
+    "csoi-metric-review.js": "d36958c7d24021a4a97b53f6343dc60aa021e13e0eae47ebb2e6bd8098d03d65",
+    "csoi-op-review.js": "1a16b41a0fde72ed5952d7c275e9eb2d89156ad99731e7c85e3fe07b529ef890",
+    "csoi-pages.css": "9a03eb74e01dc407cf4d0182e8931ec8f0ae4c8fd5d86bf47de0f69fa78d60cd",
+    "csoi-pages.js": "e4eb95bb10d828b62d17a906e8ecd5ae3b9e30680a37036d270d2fd0c56dd298",
+    "csoi-paths.js": "782c14b344e253c000e49a3d1726c0bb5e6f78caab16f6c214d46d5215a9fd6d",
+    "csoi-phe.js": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+    "csoi-remediation.js": "b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",
+    "csoi-review-work.js": "a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+    "csoi-router.js": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+    "csoi-strategy-research.js": "8c16cb5f43db7abb4d036bc177b1fd7e39dc90a837c2c114ac32112f6c7bcbe7",
+    "csoi-wcos.js": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+    "csoi-work.js": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+    "index.html": "eaa5c30e4f33da2967c3e332fbcb6e513d19557e1bb0a4f8c59592d8a86ad421",
+    "sources/bombala-dcp-outline-anchors.json": "703022dab989edc12704ee235608e74f89d769da818a625adc2b6bd936fd8df6",
+    "sources/bombala-dcp-outline.js": "a04dd1cb841b1de6100feac873c59d14076ee8a9bf35ea746d045d2a46cb1a08",
+    "sources/bombala-dcp-outline.json": "e2b30d6bbc387281ff789f9130136461a951f07163a80e760a0512f5f05d9853",
+    "sources/cooma-dcp-outline-anchors.json": "ad1e292036d10315b3e151e94b5b0080ef92f2bc1d16a547807586c90910f042",
+    "sources/cooma-dcp-outline.js": "bc0a929467eed24c3972ecc5ca086fc0de82577322995728835a3c6520b7443c",
+    "sources/cooma-dcp-outline.json": "1dc656d1afea21578862cd5dac7e84a20551a47c801859051e70685a4ada80e6",
+    "sources/csoi-catalogue.js": "2c4411805b7224713c4af824bddae5e7f3d21f14a7a6c041c6f3e7858263f841",
+    "sources/csoi-catalogue.json": "f778466bfe4710b6fe8e27357f9736d3e891166326bb7264fdf22244268e9c89",
+    "sources/csoi-default-snapshot.js": "ae055df61798e20c63c988414cb28e107d0adc603842f5606cba6a7161d7105b",
+    "sources/csoi-legislation-access.json": "a4be3780daed3514b52fa091861be1e0f3cd974e0250df35dd32b36d84ab839f",
+    "sources/csoi-source-observations.js": "92e05c0436f6667a8e33878f01585ec4059e8325364fcb32631c67db5ed21593",
+    "sources/csoi-source-observations.json": "1d883d93de129d551e8b24055e6bacda887308347d0c65b06bc51b3c583b9ceb",
+    "sources/csp-indicator-review.js": "fe26fa7fec74a72c62467ff51ff8326ffe2f00af378c93e6feada631b71d578b",
+    "sources/csp-indicator-review.json": "0b8b781917e347fc1d51c47ca84bbcee1e48051d23f39fb5ea6652bbe52f87be",
+    "sources/csp-public-knowledge.js": "d73515ba79df8361b306fc4c240358890f3119ae3bade4d0a4a6ebdd3082e942",
+    "sources/csp-public-knowledge.json": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+    "sources/csp61-admission.js": "9d3e6311cc0e3976e2c11f26cefff508352bda33f029a89af99b5010d53f7b02",
+    "sources/csp61-admission.json": "6a15566a895927d5b923f48b4f63a8e81e30859e2b39d68c8f4a168e00c4de2c",
+    "sources/knowledge-corrections.js": "dd39ca5bc0e53eab3f4be428cede3ebd66f9d3ee551ae684801c2e3eb421a279",
+    "sources/knowledge-corrections.json": "8e54dffe6bdd10e698802a079a8293ebbd2b66eedefa3156cc1300364b06a928",
+    "sources/lsps-context-review.js": "8921c8a97915b80596efa1b1bb3ade5eeda00fb147cdd5a2340e004bf4abe972",
+    "sources/lsps-context-review.json": "e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f",
+    "sources/lsps-public-knowledge.js": "d110376685848056fa9765bfbea1c1125b77419212020ca3e17ff58dd650c3c4",
+    "sources/lsps-public-knowledge.json": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+    "sources/op-completion-review.js": "166a27ca25381e238ca237bb27945bc204fcaddc7cd5decd7b78c95f382beada",
+    "sources/op-completion-review.json": "345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0",
+    "sources/op-water-public-knowledge.js": "d626f80c33497eb78911b5a0088430a38a10c3e5927a0487c7ad0f3cffc32189",
+    "sources/op-water-public-knowledge.json": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+    "sources/public-catalogue.js": "4b59b5794cdeaef6ca5a7e0ccab23666d052adc7fc65f42c9a748e0ed83d10ca",
+    "sources/public-catalogue.json": "5a7fa9286368f3e7833846b25c5d4acb11d7cbc01fb8424988c19a3b48d50357",
+    "sources/snowy-dcp-outline-anchors.json": "4406592679e12289c8b30c2bd0d473b51fbb9d5c4b31002320ae5163a73d5a6c",
+    "sources/snowy-dcp-outline.js": "0e5d7cb093a9b945bfb0d898c6e2a21ba79809557ad063500bcef47d83eb9271",
+    "sources/snowy-dcp-outline.json": "0fcb582046b42433004b920fbd7706440bc82e1afcaeeaffa3d970805b0c53c4",
+    "sources/snowy-dcp-research-anchors.json": "f4481fd47898d3ed3cd9f20c5d7714706f282ccff96df03338be5a3970a03453",
+    "sources/strategy-review-scope.js": "f8ad50f496e26e1361068df0e062e6c36dda5ff33f8f91b6678ab71faa5fc8d0",
+    "sources/strategy-review-scope.json": "dc0c4632f5d3b74c5c982bac573591fdf1db5a31f0f11a8d6d5297c6451c71af"
+  }
+}

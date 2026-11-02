@@ -1,0 +1,40 @@
+{
+  "at": "2026-11-02T04:45:47.479370+00:00",
+  "status": "INTERMEDIATE_RECEIPT_PROVENANCE_CORRECTION",
+  "affected": "live-v6-initial-failed/live-validation.json",
+  "actualEmbeddedStart": "2026-11-02T04:18:45.652601+00:00",
+  "actualEmbeddedApplicationSource": "385e37df79f4a6731186f0767aec7734e3760a13",
+  "finding": "This intermediate receipt is a late v5 write after the shared output directory was moved/reused. It is NOT a v6 initial validation receipt. The attempted interrupt did not establish all descendant writers had stopped. Do not count its browser suites for final v6 acceptance.",
+  "initialV6Failure": "Tool output confirms Page.goto error followed by TargetClosedError/pipe-closed cleanup; primary exception and precise failure timestamp were not retained. Detected by04:31:16UTC. No application regression asserted.",
+  "finalRun": {
+    "startedAt": "2026-11-02T04:32:10.587718+00:00",
+    "source": "cf0936474e00cad07acf6782100fc7e35db431ee",
+    "suites": [
+      {
+        "script": "csoi-op-browser.py",
+        "scriptSha256": "ca47cb40569b2804731178b4f3278011044736337054ad31028ca965c0a10d10",
+        "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+      },
+      {
+        "script": "csoi-phe-context-browser.py",
+        "scriptSha256": "764e069bf41aa739b0982ce59b1a823a9b17d58e5118e2d4066bef0dbcaa3d97",
+        "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+      },
+      {
+        "script": "live-workspace-browser.py",
+        "scriptSha256": "e9657ccc77b3acdbb0059c293c85e199e5639de7c1f5aacad05ee9ee43324db7",
+        "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+      },
+      {
+        "script": "op-readable-browser.py",
+        "scriptSha256": "b3eca4c2e27cdeadca15d0f9bc3358c13d8cb3d40e6b5ac3925eba12ed8967b8",
+        "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+      }
+    ],
+    "assets": 50,
+    "status": "PASS"
+  },
+  "remainingVerifierProcesses": [],
+  "limits": "Current full4-suite result is a separately started final run. No interrupted/intermediate runs count toward it.",
+  "futurePrevention": "Verifier now creates a unique run-specific output and temporary workspace for every new run. This harness-only change follows the accepted final run; syntax/path-isolation verified separately, no new live PASS claimed."
+}

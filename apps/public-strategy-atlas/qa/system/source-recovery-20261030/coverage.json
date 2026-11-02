@@ -1,0 +1,31 @@
+{
+  "status": "BLOCKED_BY_PERMISSION",
+  "coverage": {
+    "inventoryCompleteness": "UNKNOWN",
+    "registeredRequirements": 15,
+    "documentDenominator": 2,
+    "directoryDenominator": 0,
+    "requiredFamilyDenominator": 14,
+    "discoveredDocuments": 2,
+    "accessibleDocuments": 0,
+    "byteVerified": 0,
+    "partiallyExtracted": 0,
+    "fullyExtracted": 0,
+    "anchorReviewed": 0,
+    "versionConfirmed": 0,
+    "admittedDocuments": 0,
+    "admittedRelationships": 0,
+    "relationshipCoverage": "NOT_COMPUTED_BY_SOURCE_REGISTER",
+    "officialOutcomeKpi": "UNKNOWN",
+    "warning": "Registered requirements are not a complete official document inventory. Historical reported checks do not count as current executed stages."
+  },
+  "baseDigest": "sha256:13e765c81f1340918322b1e985da85f2362da3c72e1997804f952865edf365d2",
+  "migratedDigest": "sha256:6236a12009115cd338e1f1c0db75906b4dbf4139d85bed84397c471e40a872fc",
+  "catalogueDigest": "sha256:d03244417a78b09f2b21776564ffeabaa308d97f3d89f4de1304facb24e5180a",
+  "sourceReceiptUnchanged": true,
+  "pdfByteVerification": "NOT_TESTED_NO_PDF_RETRIEVED",
+  "nativeTests": "PASS_TESTED_HERE_15_FILES",
+  "browserTests": "NOT_TESTED_THIS_ATTEMPT_APP_AND_DATA_UNCHANGED",
+  "officialAdmission": "PENDING",
+  "reportedDiscoveryLeads": "Recovery-note leads retained; no catalogue stage/count advancement from external research"
+}

@@ -1,0 +1,1258 @@
+{
+  "format": "OP_INDEPENDENT_AUTHOR_FINDINGS_V1",
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "authorFile": "qa/op-completion-20261102/finance/finance-author.json",
+  "capturedIntermediateAuthorFileSHA256": "1a0932749a2e8076afe07a42a341230cf52b7b782d32c4e6a8a630214614edfa",
+  "method": "Independent original full-text reading preceded author comparison. All428 finance units were read, numerical role/period/column semantics compared with original pages; actual pixels additionally inspected where graphs or merged cells/native-layer conflicts matter. Findings were communicated before correction, but the structured field capture was made while the author was applying fixes. The captured file is an intermediate revision, not a complete pre-correction snapshot; per-finding capture stages are distinguished below.",
+  "findings": [
+    {
+      "id": "OP-AUTH-001",
+      "type": "EXPENDITURE_MISCLASSIFIED_AS_INCOME",
+      "initialStatus": "CONFIRMED_AUTHOR_SEMANTIC_DEFECT",
+      "recordIds": [
+        "csoi:op2026:finance:p116:service-tourism-r04",
+        "csoi:op2026:finance:p116:service-tourism-r05",
+        "csoi:op2026:finance:p116:service-tourism-r06",
+        "csoi:op2026:finance:p117:service-fleet-and-plant-r05"
+      ],
+      "pdfPages": [
+        116,
+        117
+      ],
+      "originalBasis": "The original visible merged expenditure block spans these expense rows even though its printed label is vertically aligned near a later leaf.",
+      "proposedCorrection": "Set rowRole and amount meaning to Expenditure component, revise summary, recalculate diagnostics, test merged-block inheritance.",
+      "originalPositions": [
+        {
+          "id": "csoi:op2026:finance:p116:service-tourism-r04",
+          "pdfPage": 116,
+          "bbox": [
+            40.1268310546875,
+            676.988525390625,
+            557.1743774414062,
+            715.7223510742188
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p116:service-tourism-r05",
+          "pdfPage": 116,
+          "bbox": [
+            198.34324645996094,
+            689.8135986328125,
+            557.1743774414062,
+            702.7683715820312
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p116:service-tourism-r06",
+          "pdfPage": 116,
+          "bbox": [
+            198.34324645996094,
+            702.7683715820312,
+            557.1743774414062,
+            715.7223510742188
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p117:service-fleet-and-plant-r05",
+          "pdfPage": 117,
+          "bbox": [
+            38.346588134765625,
+            691.694091796875,
+            555.3807983398438,
+            704.5189208984375
+          ]
+        }
+      ],
+      "intermediateCapturedFields": [
+        {
+          "id": "csoi:op2026:finance:p116:service-tourism-r04",
+          "summary": "Tourism 的Expenditure component原值为 647，单位为千元格式 $'000；这是拟议年度预算。",
+          "facts": {
+            "tableId": "op-finance:p116:service-tourism",
+            "service": "Tourism",
+            "resourceGroup": "Employee Costs",
+            "rowRole": "Expenditure component",
+            "budgetStatus": "DRAFT_BUDGET_AS_PRINTED_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "2026/27 Draft Budget",
+                "display": "647",
+                "unit": "$'000",
+                "currency": "UNKNOWN",
+                "period": "2026/27",
+                "meaning": "Expenditure component",
+                "status": "PRINTED_VALUE",
+                "numericValue": 647,
+                "numericValueText": "647",
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        },
+        {
+          "id": "csoi:op2026:finance:p116:service-tourism-r05",
+          "summary": "Tourism 的Expenditure component原值为 311，单位为千元格式 $'000；这是拟议年度预算。",
+          "facts": {
+            "tableId": "op-finance:p116:service-tourism",
+            "service": "Tourism",
+            "resourceGroup": "Materials & Contracts",
+            "rowRole": "Expenditure component",
+            "budgetStatus": "DRAFT_BUDGET_AS_PRINTED_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "2026/27 Draft Budget",
+                "display": "311",
+                "unit": "$'000",
+                "currency": "UNKNOWN",
+                "period": "2026/27",
+                "meaning": "Expenditure component",
+                "status": "PRINTED_VALUE",
+                "numericValue": 311,
+                "numericValueText": "311",
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        },
+        {
+          "id": "csoi:op2026:finance:p116:service-tourism-r06",
+          "summary": "Tourism 的Expenditure component原值为 10，单位为千元格式 $'000；这是拟议年度预算。",
+          "facts": {
+            "tableId": "op-finance:p116:service-tourism",
+            "service": "Tourism",
+            "resourceGroup": "Other Expenses",
+            "rowRole": "Expenditure component",
+            "budgetStatus": "DRAFT_BUDGET_AS_PRINTED_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "2026/27 Draft Budget",
+                "display": "10",
+                "unit": "$'000",
+                "currency": "UNKNOWN",
+                "period": "2026/27",
+                "meaning": "Expenditure component",
+                "status": "PRINTED_VALUE",
+                "numericValue": 10,
+                "numericValueText": "10",
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        },
+        {
+          "id": "csoi:op2026:finance:p117:service-fleet-and-plant-r05",
+          "summary": "Fleet and Plant 的Expenditure component原值为 935，单位为千元格式 $'000；这是拟议年度预算。",
+          "facts": {
+            "tableId": "op-finance:p117:service-fleet-and-plant",
+            "service": "Fleet and Plant",
+            "resourceGroup": "Employee Costs",
+            "rowRole": "Expenditure component",
+            "budgetStatus": "DRAFT_BUDGET_AS_PRINTED_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "2026/27 Draft Budget",
+                "display": "935",
+                "unit": "$'000",
+                "currency": "UNKNOWN",
+                "period": "2026/27",
+                "meaning": "Expenditure component",
+                "status": "PRINTED_VALUE",
+                "numericValue": 935,
+                "numericValueText": "935",
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        }
+      ],
+      "resolution": {
+        "status": "CORRECTED_AND_INDEPENDENTLY_READ_BACK",
+        "correctedAuthorSHA256": "7878038eac612cb440620c565a11e7edc04378c6a01e946753947b1638d4a01a",
+        "scope": "Revised fields independently read back against the original. Earlier reported defects are preserved as observations; the captured fields are explicitly an intermediate state, not a full original snapshot.",
+        "correctedFields": [
+          {
+            "id": "csoi:op2026:finance:p116:service-tourism-r04",
+            "category": "OP_SERVICE_BUDGET_ROW",
+            "summary": "Tourism 的Expenditure component原值为 647，单位为千元格式 $'000；这是拟议年度预算。",
+            "rowRole": "Expenditure component",
+            "statementSection": null,
+            "textVisibility": null,
+            "amountMeaning": [
+              "Expenditure component"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p116:service-tourism-r05",
+            "category": "OP_SERVICE_BUDGET_ROW",
+            "summary": "Tourism 的Expenditure component原值为 311，单位为千元格式 $'000；这是拟议年度预算。",
+            "rowRole": "Expenditure component",
+            "statementSection": null,
+            "textVisibility": null,
+            "amountMeaning": [
+              "Expenditure component"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p116:service-tourism-r06",
+            "category": "OP_SERVICE_BUDGET_ROW",
+            "summary": "Tourism 的Expenditure component原值为 10，单位为千元格式 $'000；这是拟议年度预算。",
+            "rowRole": "Expenditure component",
+            "statementSection": null,
+            "textVisibility": null,
+            "amountMeaning": [
+              "Expenditure component"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p117:service-fleet-and-plant-r05",
+            "category": "OP_SERVICE_BUDGET_ROW",
+            "summary": "Fleet and Plant 的Expenditure component原值为 935，单位为千元格式 $'000；这是拟议年度预算。",
+            "rowRole": "Expenditure component",
+            "statementSection": null,
+            "textVisibility": null,
+            "amountMeaning": [
+              "Expenditure component"
+            ]
+          }
+        ]
+      },
+      "captureStage": "AFTER_RELEVANT_FIXES",
+      "initialObservation": {
+        "basis": "Earlier review tool output and immediate internal author/parent messages in this task; no full pre-correction author JSON snapshot retained here.",
+        "description": "Before correction, the review tool output and immediate message to the author identified all four expense rows as Income component: Tourism Employee Costs 647, Materials & Contracts 311, Other Expenses 10, and Fleet and Plant Employee Costs 935. This is a transcript-backed observation, not a reconstructed original JSON snapshot.",
+        "isOriginalJSONSnapshot": false
+      }
+    },
+    {
+      "id": "OP-AUTH-002",
+      "type": "INCOME_COMPONENT_MISCLASSIFIED_AS_TOTAL",
+      "initialStatus": "CONFIRMED_AUTHOR_SEMANTIC_DEFECT",
+      "recordIds": [
+        "csoi:op2026:finance:p120:fund-r08"
+      ],
+      "pdfPages": [
+        120
+      ],
+      "originalBasis": "Net gains from disposal is one income component before total income, not a table aggregate.",
+      "proposedCorrection": "Set SOURCE_LINE_ITEM; do not infer subtotal role from Net prefix.",
+      "originalPositions": [
+        {
+          "id": "csoi:op2026:finance:p120:fund-r08",
+          "pdfPage": 120,
+          "bbox": [
+            71.0857162475586,
+            321.0760498046875,
+            520.6172485351562,
+            334.99603271484375
+          ]
+        }
+      ],
+      "intermediateCapturedFields": [
+        {
+          "id": "csoi:op2026:finance:p120:fund-r08",
+          "summary": "Income Statement by Fund 的“Net Gains from the Disposal of Assets”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+          "facts": {
+            "tableId": "op-finance:p120:fund-statement",
+            "rowLabel": "Net Gains from the Disposal of Assets",
+            "statementSection": "Income from continuing operations",
+            "rowRole": "SOURCE_LINE_ITEM",
+            "budgetStatus": "PROJECTED_BASE_SCENARIO_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "Consolidated",
+                "display": "684",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Gains from the Disposal of Assets",
+                "status": "PRINTED_VALUE",
+                "numericValue": 684,
+                "numericValueText": "684",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "General",
+                "display": "578",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Gains from the Disposal of Assets",
+                "status": "PRINTED_VALUE",
+                "numericValue": 578,
+                "numericValueText": "578",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Water",
+                "display": "59",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Gains from the Disposal of Assets",
+                "status": "PRINTED_VALUE",
+                "numericValue": 59,
+                "numericValueText": "59",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Sewer",
+                "display": "47",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Gains from the Disposal of Assets",
+                "status": "PRINTED_VALUE",
+                "numericValue": 47,
+                "numericValueText": "47",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Waste",
+                "display": "-",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Gains from the Disposal of Assets",
+                "status": "DASH_NOT_INTERPRETED_AS_ZERO",
+                "numericValue": null,
+                "numericValueText": null,
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        }
+      ],
+      "resolution": {
+        "status": "CORRECTED_AND_INDEPENDENTLY_READ_BACK",
+        "correctedAuthorSHA256": "7878038eac612cb440620c565a11e7edc04378c6a01e946753947b1638d4a01a",
+        "scope": "Revised fields independently read back against the original. Earlier reported defects are preserved as observations; the captured fields are explicitly an intermediate state, not a full original snapshot.",
+        "correctedFields": [
+          {
+            "id": "csoi:op2026:finance:p120:fund-r08",
+            "category": "OP_FUND_FINANCIAL_ROW",
+            "summary": "Income Statement by Fund 的“Net Gains from the Disposal of Assets”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+            "rowRole": "SOURCE_LINE_ITEM",
+            "statementSection": "Income from continuing operations",
+            "textVisibility": null,
+            "amountMeaning": [
+              "Net Gains from the Disposal of Assets",
+              "Net Gains from the Disposal of Assets",
+              "Net Gains from the Disposal of Assets",
+              "Net Gains from the Disposal of Assets",
+              "Net Gains from the Disposal of Assets"
+            ]
+          }
+        ]
+      },
+      "captureStage": "AFTER_RELEVANT_FIXES",
+      "initialObservation": {
+        "basis": "Earlier review tool output and immediate internal author/parent messages in this task; no full pre-correction author JSON snapshot retained here.",
+        "description": "Before correction, the review tool output and immediate message identified the Net Gains from the Disposal of Assets row as SOURCE_DECLARED_TOTAL although it is an income component. This is an observed field description, not a complete original unit snapshot.",
+        "isOriginalJSONSnapshot": false
+      }
+    },
+    {
+      "id": "OP-AUTH-003",
+      "type": "RESULTS_AND_BALANCES_INHERIT_WRONG_SECTION",
+      "initialStatus": "CONFIRMED_AUTHOR_SEMANTIC_DEFECT",
+      "recordIds": [
+        "csoi:op2026:finance:p120:fund-r19",
+        "csoi:op2026:finance:p120:fund-r21",
+        "csoi:op2026:finance:p121:fund-r15",
+        "csoi:op2026:finance:p121:fund-r17",
+        "csoi:op2026:finance:p121:fund-r19",
+        "csoi:op2026:finance:p121:fund-r20",
+        "csoi:op2026:finance:p121:fund-r22",
+        "csoi:op2026:finance:p121:fund-r23"
+      ],
+      "pdfPages": [
+        120,
+        121
+      ],
+      "originalBasis": "Operating results are not expenses; cash change, cash balances, investments and unrestricted forecast are not financing cashflow activities. The prior heading must not leak across separate result/balance bands.",
+      "proposedCorrection": "Assign explicit authored result/balance context, label inferred context as such, preserve printed rows and amounts; review diagnostics.",
+      "originalPositions": [
+        {
+          "id": "csoi:op2026:finance:p120:fund-r19",
+          "pdfPage": 120,
+          "bbox": [
+            71.0857162475586,
+            474.22601318359375,
+            520.6172485351562,
+            496.18603515625
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p120:fund-r21",
+          "pdfPage": 120,
+          "bbox": [
+            71.0857162475586,
+            510.10601806640625,
+            520.6172485351562,
+            533.9046630859375
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r15",
+          "pdfPage": 121,
+          "bbox": [
+            72.47779846191406,
+            430.9000244140625,
+            521.9817504882812,
+            444.81903076171875
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r17",
+          "pdfPage": 121,
+          "bbox": [
+            72.47779846191406,
+            458.739013671875,
+            521.9817504882812,
+            480.69903564453125
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r19",
+          "pdfPage": 121,
+          "bbox": [
+            72.47779846191406,
+            494.6195068359375,
+            521.9817504882812,
+            508.53900146484375
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r20",
+          "pdfPage": 121,
+          "bbox": [
+            72.47779846191406,
+            508.53900146484375,
+            521.9817504882812,
+            522.458984375
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r22",
+          "pdfPage": 121,
+          "bbox": [
+            72.47779846191406,
+            536.3800048828125,
+            521.9817504882812,
+            557.8590087890625
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r23",
+          "pdfPage": 121,
+          "bbox": [
+            72.47779846191406,
+            557.8590087890625,
+            521.9817504882812,
+            571.9390258789062
+          ]
+        }
+      ],
+      "intermediateCapturedFields": [
+        {
+          "id": "csoi:op2026:finance:p120:fund-r19",
+          "summary": "Income Statement by Fund 的“Operating Result from Continuing Operations Surplus/(Deficit)”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+          "facts": {
+            "tableId": "op-finance:p120:fund-statement",
+            "rowLabel": "Operating Result from Continuing Operations Surplus/(Deficit)",
+            "statementSection": "Operating results",
+            "rowRole": "SOURCE_RESULT",
+            "budgetStatus": "PROJECTED_BASE_SCENARIO_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "Consolidated",
+                "display": "(1,981)",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Operating Result from Continuing Operations Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": -1981,
+                "numericValueText": "-1981",
+                "signConvention": "PARENTHESES_NEGATIVE"
+              },
+              {
+                "column": "General",
+                "display": "440",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Operating Result from Continuing Operations Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": 440,
+                "numericValueText": "440",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Water",
+                "display": "(2,471)",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Operating Result from Continuing Operations Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": -2471,
+                "numericValueText": "-2471",
+                "signConvention": "PARENTHESES_NEGATIVE"
+              },
+              {
+                "column": "Sewer",
+                "display": "230",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Operating Result from Continuing Operations Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": 230,
+                "numericValueText": "230",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Waste",
+                "display": "(180)",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Operating Result from Continuing Operations Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": -180,
+                "numericValueText": "-180",
+                "signConvention": "PARENTHESES_NEGATIVE"
+              }
+            ]
+          },
+          "qualifiers": []
+        },
+        {
+          "id": "csoi:op2026:finance:p120:fund-r21",
+          "summary": "Income Statement by Fund 的“Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+          "facts": {
+            "tableId": "op-finance:p120:fund-statement",
+            "rowLabel": "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+            "statementSection": "Expenses from Continuing Operations",
+            "rowRole": "SOURCE_LINE_ITEM",
+            "budgetStatus": "PROJECTED_BASE_SCENARIO_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "Consolidated",
+                "display": "(4,137)",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": -4137,
+                "numericValueText": "-4137",
+                "signConvention": "PARENTHESES_NEGATIVE"
+              },
+              {
+                "column": "General",
+                "display": "(216)",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": -216,
+                "numericValueText": "-216",
+                "signConvention": "PARENTHESES_NEGATIVE"
+              },
+              {
+                "column": "Water",
+                "display": "(2,471)",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": -2471,
+                "numericValueText": "-2471",
+                "signConvention": "PARENTHESES_NEGATIVE"
+              },
+              {
+                "column": "Sewer",
+                "display": "(1,270)",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": -1270,
+                "numericValueText": "-1270",
+                "signConvention": "PARENTHESES_NEGATIVE"
+              },
+              {
+                "column": "Waste",
+                "display": "(180)",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+                "status": "PRINTED_VALUE",
+                "numericValue": -180,
+                "numericValueText": "-180",
+                "signConvention": "PARENTHESES_NEGATIVE"
+              }
+            ]
+          },
+          "qualifiers": []
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r15",
+          "summary": "Cash Flow Summary 的“Net Increase/(Decrease) in Cash Assets Held”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+          "facts": {
+            "tableId": "op-finance:p121:fund-statement",
+            "rowLabel": "Net Increase/(Decrease) in Cash Assets Held",
+            "statementSection": "Net movement in cash assets",
+            "rowRole": "SOURCE_CASH_MOVEMENT",
+            "budgetStatus": "PROJECTED_CASH_FLOW_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "Consolidated",
+                "display": "(424)",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Increase/(Decrease) in Cash Assets Held",
+                "status": "PRINTED_VALUE",
+                "numericValue": -424,
+                "numericValueText": "-424",
+                "signConvention": "PARENTHESES_NEGATIVE"
+              },
+              {
+                "column": "General",
+                "display": "585",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Increase/(Decrease) in Cash Assets Held",
+                "status": "PRINTED_VALUE",
+                "numericValue": 585,
+                "numericValueText": "585",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Water",
+                "display": "616",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Increase/(Decrease) in Cash Assets Held",
+                "status": "PRINTED_VALUE",
+                "numericValue": 616,
+                "numericValueText": "616",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Sewer",
+                "display": "616",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Increase/(Decrease) in Cash Assets Held",
+                "status": "PRINTED_VALUE",
+                "numericValue": 616,
+                "numericValueText": "616",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Waste",
+                "display": "616",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Net Increase/(Decrease) in Cash Assets Held",
+                "status": "PRINTED_VALUE",
+                "numericValue": 616,
+                "numericValueText": "616",
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": [
+            "General 的印刷净变动 585 与期末减期初 2935 不一致（单位 $000）；详见独立冲突记录。",
+            "Water 的印刷净变动 616 与期末减期初 -4880 不一致（单位 $000）；详见独立冲突记录。",
+            "Sewer 的印刷净变动 616 与期末减期初 -262 不一致（单位 $000）；详见独立冲突记录。",
+            "Waste 的印刷净变动 616 与期末减期初 1783 不一致（单位 $000）；详见独立冲突记录。"
+          ]
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r17",
+          "summary": "Cash Flow Summary 的“Cash and Cash Equivalents at Beginning of Reporting Period”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+          "facts": {
+            "tableId": "op-finance:p121:fund-statement",
+            "rowLabel": "Cash and Cash Equivalents at Beginning of Reporting Period",
+            "statementSection": "Cash balances",
+            "rowRole": "SOURCE_BALANCE",
+            "budgetStatus": "PROJECTED_CASH_FLOW_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "Consolidated",
+                "display": "27,845",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at Beginning of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 27845,
+                "numericValueText": "27845",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "General",
+                "display": "2,922",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at Beginning of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 2922,
+                "numericValueText": "2922",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Water",
+                "display": "16,436",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at Beginning of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 16436,
+                "numericValueText": "16436",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Sewer",
+                "display": "6,108",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at Beginning of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 6108,
+                "numericValueText": "6108",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Waste",
+                "display": "2,379",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at Beginning of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 2379,
+                "numericValueText": "2379",
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r19",
+          "summary": "Cash Flow Summary 的“Cash and Cash Equivalents at End of Reporting Period”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+          "facts": {
+            "tableId": "op-finance:p121:fund-statement",
+            "rowLabel": "Cash and Cash Equivalents at End of Reporting Period",
+            "statementSection": "Cash balances",
+            "rowRole": "SOURCE_BALANCE",
+            "budgetStatus": "PROJECTED_CASH_FLOW_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "Consolidated",
+                "display": "27,421",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 27421,
+                "numericValueText": "27421",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "General",
+                "display": "5,857",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 5857,
+                "numericValueText": "5857",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Water",
+                "display": "11,556",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 11556,
+                "numericValueText": "11556",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Sewer",
+                "display": "5,846",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 5846,
+                "numericValueText": "5846",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Waste",
+                "display": "4,162",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Cash and Cash Equivalents at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 4162,
+                "numericValueText": "4162",
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r20",
+          "summary": "Cash Flow Summary 的“Plus Investments on Hand - End of Reporting Period”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+          "facts": {
+            "tableId": "op-finance:p121:fund-statement",
+            "rowLabel": "Plus Investments on Hand - End of Reporting Period",
+            "statementSection": "Cash Flow from Financing Activities",
+            "rowRole": "SOURCE_LINE_ITEM",
+            "budgetStatus": "PROJECTED_CASH_FLOW_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "Consolidated",
+                "display": "45,073",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Plus Investments on Hand - End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 45073,
+                "numericValueText": "45073",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "General",
+                "display": "19,508",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Plus Investments on Hand - End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 19508,
+                "numericValueText": "19508",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Water",
+                "display": "13,913",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Plus Investments on Hand - End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 13913,
+                "numericValueText": "13913",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Sewer",
+                "display": "10,000",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Plus Investments on Hand - End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 10000,
+                "numericValueText": "10000",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Waste",
+                "display": "1,652",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Plus Investments on Hand - End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 1652,
+                "numericValueText": "1652",
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r22",
+          "summary": "Cash Flow Summary 的“Total Cash, Cash Equivalents and Investments at End of Reporting Period”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+          "facts": {
+            "tableId": "op-finance:p121:fund-statement",
+            "rowLabel": "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+            "statementSection": "Cash Flow from Financing Activities",
+            "rowRole": "SOURCE_DECLARED_TOTAL",
+            "budgetStatus": "PROJECTED_CASH_FLOW_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "Consolidated",
+                "display": "72494",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 72494,
+                "numericValueText": "72494",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "General",
+                "display": "25365",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 25365,
+                "numericValueText": "25365",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Water",
+                "display": "25469",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 25469,
+                "numericValueText": "25469",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Sewer",
+                "display": "15846",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 15846,
+                "numericValueText": "15846",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Waste",
+                "display": "5814",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+                "status": "PRINTED_VALUE",
+                "numericValue": 5814,
+                "numericValueText": "5814",
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        },
+        {
+          "id": "csoi:op2026:finance:p121:fund-r23",
+          "summary": "Cash Flow Summary 的“Forecast General Fund Unrestricted Balance”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+          "facts": {
+            "tableId": "op-finance:p121:fund-statement",
+            "rowLabel": "Forecast General Fund Unrestricted Balance",
+            "statementSection": "Forecast unrestricted funds",
+            "rowRole": "SOURCE_FORECAST",
+            "budgetStatus": "PROJECTED_CASH_FLOW_NOT_ACTUAL",
+            "columnValues": [
+              {
+                "column": "Consolidated",
+                "display": "-",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Forecast General Fund Unrestricted Balance",
+                "status": "DASH_NOT_INTERPRETED_AS_ZERO",
+                "numericValue": null,
+                "numericValueText": null,
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "General",
+                "display": "4090",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Forecast General Fund Unrestricted Balance",
+                "status": "PRINTED_VALUE",
+                "numericValue": 4090,
+                "numericValueText": "4090",
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Water",
+                "display": "",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Forecast General Fund Unrestricted Balance",
+                "status": "BLANK_NOT_ZERO",
+                "numericValue": null,
+                "numericValueText": null,
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Sewer",
+                "display": "",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Forecast General Fund Unrestricted Balance",
+                "status": "BLANK_NOT_ZERO",
+                "numericValue": null,
+                "numericValueText": null,
+                "signConvention": "AS_PRINTED"
+              },
+              {
+                "column": "Waste",
+                "display": "",
+                "unit": "$000",
+                "currency": "UNKNOWN",
+                "period": "2027",
+                "meaning": "Forecast General Fund Unrestricted Balance",
+                "status": "BLANK_NOT_ZERO",
+                "numericValue": null,
+                "numericValueText": null,
+                "signConvention": "AS_PRINTED"
+              }
+            ]
+          },
+          "qualifiers": []
+        }
+      ],
+      "resolution": {
+        "status": "CORRECTED_AND_INDEPENDENTLY_READ_BACK",
+        "correctedAuthorSHA256": "7878038eac612cb440620c565a11e7edc04378c6a01e946753947b1638d4a01a",
+        "scope": "Revised fields independently read back against the original. Earlier reported defects are preserved as observations; the captured fields are explicitly an intermediate state, not a full original snapshot.",
+        "correctedFields": [
+          {
+            "id": "csoi:op2026:finance:p120:fund-r19",
+            "category": "OP_FUND_FINANCIAL_ROW",
+            "summary": "Income Statement by Fund 的“Operating Result from Continuing Operations Surplus/(Deficit)”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+            "rowRole": "SOURCE_RESULT",
+            "statementSection": "Operating results",
+            "textVisibility": null,
+            "amountMeaning": [
+              "Operating Result from Continuing Operations Surplus/(Deficit)",
+              "Operating Result from Continuing Operations Surplus/(Deficit)",
+              "Operating Result from Continuing Operations Surplus/(Deficit)",
+              "Operating Result from Continuing Operations Surplus/(Deficit)",
+              "Operating Result from Continuing Operations Surplus/(Deficit)"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p120:fund-r21",
+            "category": "OP_FUND_FINANCIAL_ROW",
+            "summary": "Income Statement by Fund 的“Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+            "rowRole": "SOURCE_RESULT",
+            "statementSection": "Operating results",
+            "textVisibility": null,
+            "amountMeaning": [
+              "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+              "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+              "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+              "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)",
+              "Net Operating Result for the year before Grants and Contributions provided for Capital Purposes Surplus/(Deficit)"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p121:fund-r15",
+            "category": "OP_FUND_FINANCIAL_ROW",
+            "summary": "Cash Flow Summary 的“Net Increase/(Decrease) in Cash Assets Held”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+            "rowRole": "SOURCE_CASH_MOVEMENT",
+            "statementSection": "Net movement in cash assets",
+            "textVisibility": null,
+            "amountMeaning": [
+              "Net Increase/(Decrease) in Cash Assets Held",
+              "Net Increase/(Decrease) in Cash Assets Held",
+              "Net Increase/(Decrease) in Cash Assets Held",
+              "Net Increase/(Decrease) in Cash Assets Held",
+              "Net Increase/(Decrease) in Cash Assets Held"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p121:fund-r17",
+            "category": "OP_FUND_FINANCIAL_ROW",
+            "summary": "Cash Flow Summary 的“Cash and Cash Equivalents at Beginning of Reporting Period”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+            "rowRole": "SOURCE_BALANCE",
+            "statementSection": "Cash balances",
+            "textVisibility": null,
+            "amountMeaning": [
+              "Cash and Cash Equivalents at Beginning of Reporting Period",
+              "Cash and Cash Equivalents at Beginning of Reporting Period",
+              "Cash and Cash Equivalents at Beginning of Reporting Period",
+              "Cash and Cash Equivalents at Beginning of Reporting Period",
+              "Cash and Cash Equivalents at Beginning of Reporting Period"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p121:fund-r19",
+            "category": "OP_FUND_FINANCIAL_ROW",
+            "summary": "Cash Flow Summary 的“Cash and Cash Equivalents at End of Reporting Period”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+            "rowRole": "SOURCE_BALANCE",
+            "statementSection": "Cash balances",
+            "textVisibility": null,
+            "amountMeaning": [
+              "Cash and Cash Equivalents at End of Reporting Period",
+              "Cash and Cash Equivalents at End of Reporting Period",
+              "Cash and Cash Equivalents at End of Reporting Period",
+              "Cash and Cash Equivalents at End of Reporting Period",
+              "Cash and Cash Equivalents at End of Reporting Period"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p121:fund-r20",
+            "category": "OP_FUND_FINANCIAL_ROW",
+            "summary": "Cash Flow Summary 的“Plus Investments on Hand - End of Reporting Period”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+            "rowRole": "SOURCE_INVESTMENT_BALANCE",
+            "statementSection": "Investments on hand",
+            "textVisibility": null,
+            "amountMeaning": [
+              "Plus Investments on Hand - End of Reporting Period",
+              "Plus Investments on Hand - End of Reporting Period",
+              "Plus Investments on Hand - End of Reporting Period",
+              "Plus Investments on Hand - End of Reporting Period",
+              "Plus Investments on Hand - End of Reporting Period"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p121:fund-r22",
+            "category": "OP_FUND_FINANCIAL_ROW",
+            "summary": "Cash Flow Summary 的“Total Cash, Cash Equivalents and Investments at End of Reporting Period”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+            "rowRole": "SOURCE_DECLARED_TOTAL",
+            "statementSection": "Cash and investment balances",
+            "textVisibility": null,
+            "amountMeaning": [
+              "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+              "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+              "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+              "Total Cash, Cash Equivalents and Investments at End of Reporting Period",
+              "Total Cash, Cash Equivalents and Investments at End of Reporting Period"
+            ]
+          },
+          {
+            "id": "csoi:op2026:finance:p121:fund-r23",
+            "category": "OP_FUND_FINANCIAL_ROW",
+            "summary": "Cash Flow Summary 的“Forecast General Fund Unrestricted Balance”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
+            "rowRole": "SOURCE_FORECAST",
+            "statementSection": "Forecast unrestricted funds",
+            "textVisibility": null,
+            "amountMeaning": [
+              "Forecast General Fund Unrestricted Balance",
+              "Forecast General Fund Unrestricted Balance",
+              "Forecast General Fund Unrestricted Balance",
+              "Forecast General Fund Unrestricted Balance",
+              "Forecast General Fund Unrestricted Balance"
+            ]
+          }
+        ]
+      },
+      "captureStage": "PARTIALLY_CORRECTED_INTERMEDIATE_STATE",
+      "initialObservation": {
+        "basis": "Earlier review tool output and immediate internal author/parent messages in this task; no full pre-correction author JSON snapshot retained here.",
+        "description": "Before correction, the review tool output and immediate message identified the two operating-result rows as inherited from Expenses from Continuing Operations and the cash movement/balance/investment rows as inherited from Cash Flow from Financing Activities. The intermediate capture below contains a mixture of repaired and still-unrepaired fields; it must not be presented as a complete original or final revision.",
+        "isOriginalJSONSnapshot": false
+      }
+    },
+    {
+      "id": "OP-AUTH-004",
+      "type": "HIDDEN_LAYER_PRESENTED_AS_VISIBLE_FOOTNOTE",
+      "initialStatus": "CONFIRMED_AUTHOR_SEMANTIC_DEFECT",
+      "recordIds": [
+        "csoi:op2026:finance:p111:capital-footnote"
+      ],
+      "pdfPages": [
+        111
+      ],
+      "originalBasis": "Original full-page photograph occludes native-text footnote and footer. The native string exists but is not visible in the original page render.",
+      "proposedCorrection": "Retain as hidden/occluded text-layer observation if needed; do not count it as visible policy content or rely on it to establish role. Correct page disposition and coverage labels.",
+      "originalPositions": [
+        {
+          "id": "csoi:op2026:finance:p111:capital-footnote",
+          "pdfPage": 111,
+          "bbox": [
+            36.0,
+            546.7159423828125,
+            211.4409637451172,
+            555.6759033203125
+          ]
+        }
+      ],
+      "initialAuthoredFields": [
+        {
+          "id": "csoi:op2026:finance:p111:capital-footnote",
+          "summary": "脚注说明带星号的项目由 Corporate Projects team 交付；本页照片不能证明任一项目完成。",
+          "facts": {
+            "marker": "*",
+            "namedTeam": "Corporate Projects team",
+            "photoDisposition": "DECORATIVE_OR_CONTEXT_PHOTO_NOT_PROGRESS_EVIDENCE"
+          },
+          "qualifiers": [
+            "仅有脚注和设施现场照片；本页没有资本金额行。"
+          ]
+        }
+      ],
+      "resolution": {
+        "status": "CORRECTED_AND_INDEPENDENTLY_READ_BACK",
+        "correctedAuthorSHA256": "7878038eac612cb440620c565a11e7edc04378c6a01e946753947b1638d4a01a",
+        "scope": "Actual revised fields read back against independently reviewed original; original deficiency retained above.",
+        "correctedFields": [
+          {
+            "id": "csoi:op2026:finance:p111:capital-footnote",
+            "category": "OP_DOCUMENT_CONTEXT",
+            "summary": "可见原页为设施现场照片。抽取文字层残留星号与 Corporate Projects team 的说明，但原件像素中被照片覆盖；不能当作本页可见脚注或项目完成证据。",
+            "rowRole": null,
+            "statementSection": null,
+            "textVisibility": "HIDDEN_OR_OCCLUDED_TEXT_LAYER",
+            "amountMeaning": []
+          }
+        ]
+      },
+      "captureStage": "BEFORE_THIS_FINDING_WAS_CORRECTED",
+      "captureNote": "The P111 visible-footnote error was still present when the shared intermediate author file was captured; these initialAuthoredFields really show that defect."
+    }
+  ],
+  "historyBindingErratum": {
+    "receipt": "history-binding-correction.json",
+    "originalLabel": "initialAuthoredFields / initialAuthorFileSHA256",
+    "reason": "Evidence recording raced with concurrent author corrections. Original field values and the captured file fingerprint are preserved; the timing labels are corrected. No original before-state has been invented.",
+    "originalCompleteSnapshotRetained": false
+  }
+}

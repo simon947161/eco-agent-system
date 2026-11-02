@@ -1,0 +1,38 @@
+{
+  "initialIssues": [
+    {
+      "evidence": "native-strategy-initial.log",
+      "cause": "New negative test expected verifySnapshot(false) after removing a retained entity, but exportSnapshot correctly rejects INVALID_DATA earlier.",
+      "resolution": "Assert the earlier fail-closed export rejection; final isolated strategy suite passed."
+    },
+    {
+      "evidence": "native.log",
+      "cause": "Historical content test banned any Chinese in index.html. User now explicitly requires visible Chinese explanation.",
+      "resolution": "Add lang=zh-CN to the single Founder research entry; retain English invariant for legacy graph/content and remaining index/atlas UI."
+    },
+    {
+      "evidence": "browser-initial.log",
+      "cause": "Initial new browser run was intentionally interrupted during isolated fixture generation while investigating runtime; no pass attributed.",
+      "resolution": "Run complete final suite after corrections."
+    },
+    {
+      "evidence": "browser-strategy-initial-failure.log",
+      "cause": "New test local variable next shadowed Python built-in next during parent-withdrawal assertion.",
+      "resolution": "Rename to next_link, rerun entire new desktop/mobile suite."
+    },
+    {
+      "evidence": "initial-browser-regression/csoi-bombala-phe-browser.py.log",
+      "cause": "Final mobile path-comparison click exceeded unchanged30second timeout because each typed pair repeated complete snapshot verification and overlapping submissions could duplicate work.",
+      "resolution": "Each path-set comparison uses one private verified snapshot transaction; output/caller mutation isolation and tampered-input negatives pass. UI disables duplicate submission while computing. All43nativefiles rerunPASS; failedsuite and7affected suites plusremediation rerunPASS without widenedtimeouts."
+    }
+  ],
+  "sourceCorrections": "See independent-review/semantic-review.json:10groups/12records repaired and independently read back.",
+  "appReviewCorrections": [
+    "Shared query predicate for records and exported coverage",
+    "Missing imported records retain matrix pagination",
+    "Citation edits invalidate checked status; current locator/revision retained",
+    "Filtered exports state global count scope",
+    "OP reference currentness and source comparator/version facts visible"
+  ],
+  "performance": "Research matrix reused only while full dataset digest matches. Explicit import/withdrawal changes fingerprint and forces fresh currentness evaluation. No widened browser timeouts."
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "test": "wrong-original-digest",
+    "status": "PASS_REJECTED",
+    "reason": "ORIGINAL_BYTE_MISMATCH"
+  },
+  {
+    "test": "wrong-page-digest",
+    "status": "PASS_REJECTED",
+    "reason": "PAGE_ANCHOR_DIGEST_MISMATCH:cooma-page-1"
+  },
+  {
+    "test": "out-of-range-page",
+    "status": "PASS_REJECTED",
+    "reason": "ANCHOR_PAGE_BOUNDS"
+  },
+  {
+    "test": "absent-fact-token",
+    "status": "PASS_REJECTED",
+    "reason": "PAGE_ANCHOR_TOKEN_MISMATCH:cooma-page-1"
+  }
+]

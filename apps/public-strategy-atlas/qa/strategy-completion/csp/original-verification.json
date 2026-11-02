@@ -1,0 +1,21 @@
+{
+  "status": "PASS_ORIGINAL_COLUMNS_AND_CENSUS",
+  "sourceId": "csoi:smrc-csp-full-2025:20261030",
+  "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+  "pages": 36,
+  "itemCounts": {
+    "CSP_STRATEGY": 44,
+    "CSP_DOCUMENT": 1,
+    "CSP_INDICATOR": 63,
+    "CSP_PILLAR": 5,
+    "CSP_OBJECTIVE": 14
+  },
+  "verifiedMetricColumnCells": 252,
+  "verifiedStrategyRolePartnerRows": 44,
+  "precision": "Two-parser source/page/row/column checks plus authored paraphrase review; hashes alone do not establish semantic truth.",
+  "officialAdmission": "PENDING",
+  "currentLaw": "UNKNOWN",
+  "fullDocumentSemanticCoverage": "NOT_CLAIMED",
+  "independentActualRecalculation": "NOT_COMPUTABLE",
+  "at": "2026-11-01T23:25:08.572768+00:00"
+}

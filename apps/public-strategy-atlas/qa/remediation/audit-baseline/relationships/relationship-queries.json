@@ -1,0 +1,286 @@
+[
+  {
+    "from": "csp",
+    "to": "lsps",
+    "mode": "KNOWN_LINK",
+    "result": {
+      "status": "UNKNOWN",
+      "path": [],
+      "nodeIds": [],
+      "reason": "No officially admitted authority-backed relationships are configured.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "csp",
+    "to": "lsps",
+    "mode": "DISCOVERY_CANDIDATE",
+    "result": {
+      "status": "DISCOVERY_CANDIDATE",
+      "path": [
+        "e2",
+        "e15",
+        "e16",
+        "e12",
+        "e10",
+        "e9"
+      ],
+      "nodeIds": [
+        "csp",
+        "csp8",
+        "candidate",
+        "area",
+        "lep",
+        "priority",
+        "lsps"
+      ],
+      "reason": "Model path only. Synthetic/research links do not establish causation, statutory authority or official implementation.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "csp6",
+    "to": "dp",
+    "mode": "KNOWN_LINK",
+    "result": {
+      "status": "UNKNOWN",
+      "path": [],
+      "nodeIds": [],
+      "reason": "No officially admitted authority-backed relationships are configured.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "csp6",
+    "to": "dp",
+    "mode": "DISCOVERY_CANDIDATE",
+    "result": {
+      "status": "DISCOVERY_CANDIDATE",
+      "path": [
+        "e3"
+      ],
+      "nodeIds": [
+        "csp6",
+        "dp"
+      ],
+      "reason": "Model path only. Synthetic/research links do not establish causation, statutory authority or official implementation.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "dp",
+    "to": "op",
+    "mode": "KNOWN_LINK",
+    "result": {
+      "status": "UNKNOWN",
+      "path": [],
+      "nodeIds": [],
+      "reason": "No officially admitted authority-backed relationships are configured.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "dp",
+    "to": "op",
+    "mode": "DISCOVERY_CANDIDATE",
+    "result": {
+      "status": "DISCOVERY_CANDIDATE",
+      "path": [
+        "e5"
+      ],
+      "nodeIds": [
+        "dp",
+        "op"
+      ],
+      "reason": "Model path only. Synthetic/research links do not establish causation, statutory authority or official implementation.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "lsps",
+    "to": "lep",
+    "mode": "KNOWN_LINK",
+    "result": {
+      "status": "UNKNOWN",
+      "path": [],
+      "nodeIds": [],
+      "reason": "No officially admitted authority-backed relationships are configured.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "lsps",
+    "to": "lep",
+    "mode": "DISCOVERY_CANDIDATE",
+    "result": {
+      "status": "DISCOVERY_CANDIDATE",
+      "path": [
+        "e9",
+        "e10"
+      ],
+      "nodeIds": [
+        "lsps",
+        "priority",
+        "lep"
+      ],
+      "reason": "Model path only. Synthetic/research links do not establish causation, statutory authority or official implementation.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "lsps",
+    "to": "dcp",
+    "mode": "KNOWN_LINK",
+    "result": {
+      "status": "UNKNOWN",
+      "path": [],
+      "nodeIds": [],
+      "reason": "No officially admitted authority-backed relationships are configured.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "lsps",
+    "to": "dcp",
+    "mode": "DISCOVERY_CANDIDATE",
+    "result": {
+      "status": "DISCOVERY_CANDIDATE",
+      "path": [
+        "e9",
+        "e11"
+      ],
+      "nodeIds": [
+        "lsps",
+        "priority",
+        "dcp"
+      ],
+      "reason": "Model path only. Synthetic/research links do not establish causation, statutory authority or official implementation.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "dcp",
+    "to": "water",
+    "mode": "KNOWN_LINK",
+    "result": {
+      "status": "UNKNOWN",
+      "path": [],
+      "nodeIds": [],
+      "reason": "No officially admitted authority-backed relationships are configured.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "dcp",
+    "to": "water",
+    "mode": "DISCOVERY_CANDIDATE",
+    "result": {
+      "status": "DISCOVERY_CANDIDATE",
+      "path": [
+        "e13",
+        "e16",
+        "e15",
+        "e4",
+        "e5",
+        "e7"
+      ],
+      "nodeIds": [
+        "dcp",
+        "area",
+        "candidate",
+        "csp8",
+        "dp",
+        "op",
+        "water"
+      ],
+      "reason": "Model path only. Synthetic/research links do not establish causation, statutory authority or official implementation.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "water",
+    "to": "csp2035-carbon-per-capita-baseline",
+    "mode": "KNOWN_LINK",
+    "result": {
+      "status": "UNKNOWN",
+      "path": [],
+      "nodeIds": [],
+      "reason": "No officially admitted authority-backed relationships are configured.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "water",
+    "to": "csp2035-carbon-per-capita-baseline",
+    "mode": "DISCOVERY_CANDIDATE",
+    "result": {
+      "status": "DISCOVERY_CANDIDATE",
+      "path": [
+        "e7",
+        "e5",
+        "e3",
+        "carbon-regional-baseline:MEASURED_BY:csp2035-carbon-per-capita-baseline"
+      ],
+      "nodeIds": [
+        "water",
+        "op",
+        "dp",
+        "csp6",
+        "csp2035-carbon-per-capita-baseline"
+      ],
+      "reason": "Model path only. Synthetic/research links do not establish causation, statutory authority or official implementation.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "csoi:published-plan:food-2026:target",
+    "to": "csp6",
+    "mode": "KNOWN_LINK",
+    "result": {
+      "status": "UNKNOWN",
+      "path": [],
+      "nodeIds": [],
+      "reason": "No officially admitted authority-backed relationships are configured.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "csoi:published-plan:food-2026:target",
+    "to": "csp6",
+    "mode": "DISCOVERY_CANDIDATE",
+    "result": {
+      "status": "DISCOVERY_CANDIDATE",
+      "path": [
+        "csoi:published-plan-link:target",
+        "csoi:published-plan-link:programme"
+      ],
+      "nodeIds": [
+        "csoi:published-plan:food-2026:target",
+        "csoi:published-plan:food-2026:programme",
+        "csp6"
+      ],
+      "reason": "Model path only. Synthetic/research links do not establish causation, statutory authority or official implementation.",
+      "truncated": false
+    }
+  },
+  {
+    "from": "csoi:dcp:snowy2013:C9:3:1:b:soil",
+    "to": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+    "mode": "KNOWN_LINK",
+    "error": "QUERY_ENDPOINT"
+  },
+  {
+    "from": "csoi:dcp:snowy2013:C9:3:1:b:soil",
+    "to": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+    "mode": "DISCOVERY_CANDIDATE",
+    "error": "QUERY_ENDPOINT"
+  },
+  {
+    "from": "Snowy soil clause",
+    "to": "Snowy source",
+    "mode": "STRUCTURED_GOVERNED_INPUT",
+    "status": "FOUND_RESEARCH_ONLY",
+    "nodes": 9,
+    "officialUse": "REJECTED_UNKNOWN_ADMISSION"
+  }
+]

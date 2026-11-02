@@ -1,0 +1,3350 @@
+{
+  "unitId": "csoi:op-full:p029-t00-r08",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:029",
+  "cacheRevisionId": "sha256:04f5a85a8bb4df9653c8b118de169526844bf0f58803a3c0ad185b2aefb4f529",
+  "actualFullUnitDigest": "sha256:4b7807450680df032bb98bdebb7cbeb3ea7b13edee3d1a2f02152aaa83a38116",
+  "page": 29,
+  "category": "SERVICE_ACTION",
+  "summary": "非法倾倒子行保留80%，原文同时提及石棉倾倒及有合理机会识别违法者；Optimal25、Funded3。；80%的土地污染投诉在投诉后14日内调查。；80%的onsite sewer tank投诉在付款后14日内调查。；80%的乱丢垃圾投诉在报告后48小时内调查。；90%的全部现场污水管理系统投诉在14日内检查。；90%的LTW投诉在72小时内检查。；50%的地下储油设施投诉在投诉后14日内调查，Optimal8、Funded4。；90%的地下储油设施污染事件在投诉后14日内调查。；40%的噪声投诉在投诉后14日内调查，Optimal5、Funded2。；40%的空气污染投诉在投诉后14日内调查，Optimal35、Funded17。；80%的水污染投诉在投诉后14日内调查。；90%的污染事件在24小时内报告EPA。",
+  "conditions": [
+    "原句语法与范围有歧义，不把它改写成所有倾倒都须调查。",
+    "投诉起算，与本组污水子行的付款起算不统一。",
+    "原文payment起算保留；与P30全部系统投诉90%条目并存，不擅自合并修正。",
+    "报告时间起算。",
+    "明确续接P29行动但KPI独立；不消除P29的80%及付款起算差异。",
+    "CSP6.1和8.2均为原格明确引用。",
+    "设施投诉与下一行污染事件不同。",
+    "保留污染事件范围。",
+    "低比例目标原样保存，不提高为100%。",
+    "保留17与百分比的原列差异，不重新计算。",
+    "限本子行的投诉类型。",
+    "这是对EPA报告时限，不等于调查完成时限。"
+  ],
+  "qualifiers": [
+    "原文cont.明确延续PDF29的环境投诉动作，合并逻辑动作但保留PDF29/30所有独立及相互不同的KPI子行。"
+  ],
+  "facts": {
+    "sourceTableType": "SERVICE",
+    "rows": [
+      {
+        "id": "p029-t00-r08",
+        "pdfPage": 29,
+        "tableId": "p029-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "非法倾倒子行保留80%，原文同时提及石棉倾倒及有合理机会识别违法者；Optimal25、Funded3。",
+        "conditions": [
+          "原句语法与范围有歧义，不把它改写成所有倾倒都须调查。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 29,
+              "bbox": [
+                36.47222222222222,
+                329.9460754394531,
+                211.65379859661235,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:1c5c8e757f8dc1215ba69fffa67165f52dda331842017acf6eec89ee606dc520",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 29,
+              "bbox": [
+                211.65379859661235,
+                329.9460754394531,
+                257.0079650878906,
+                384.0900370279948
+              ],
+              "normalizedTextDigest": "sha256:b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "25",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 29,
+              "bbox": [
+                257.0079650878906,
+                329.9460754394531,
+                302.36207071940106,
+                384.0900370279948
+              ],
+              "normalizedTextDigest": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "3",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 29,
+              "bbox": [
+                302.36207071940106,
+                329.9460754394531,
+                490.39357503255206,
+                384.0900370279948
+              ],
+              "normalizedTextDigest": "sha256:dbd15b944618a2ea0259d5806e1eebb98183d8bdd3609bf3ad119905175ee6ce",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "非法倾倒子行保留80%，原文同时提及石棉倾倒及有合理机会识别违法者；Optimal25、Funded3。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 29,
+              "bbox": [
+                490.39357503255206,
+                329.9460754394531,
+                554.1734008789062,
+                384.0900370279948
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 29,
+              "bbox": [
+                554.1734008789062,
+                329.9460754394531,
+                600.9449462890625,
+                384.0900370279948
+              ],
+              "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "80%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 29,
+              "bbox": [
+                600.9449462890625,
+                329.9460754394531,
+                655.6538696289062,
+                384.0900370279948
+              ],
+              "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Quarterly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 29,
+              "bbox": [
+                655.6538696289062,
+                329.9460754394531,
+                737.8584187825521,
+                384.0900370279948
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 29,
+              "bbox": [
+                737.8584187825521,
+                329.9460754394531,
+                806.2600903320313,
+                384.0900370279948
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "action",
+            "pdfPage": 29,
+            "bbox": [
+              36.47222222222222,
+              329.9460754394531,
+              211.65379859661235,
+              527.3219058388158
+            ],
+            "normalizedTextDigest": "sha256:1c5c8e757f8dc1215ba69fffa67165f52dda331842017acf6eec89ee606dc520",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "optimalVolume",
+            "pdfPage": 29,
+            "bbox": [
+              211.65379859661235,
+              329.9460754394531,
+              257.0079650878906,
+              384.0900370279948
+            ],
+            "normalizedTextDigest": "sha256:b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 29,
+            "bbox": [
+              257.0079650878906,
+              329.9460754394531,
+              302.36207071940106,
+              384.0900370279948
+            ],
+            "normalizedTextDigest": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 29,
+            "bbox": [
+              302.36207071940106,
+              329.9460754394531,
+              490.39357503255206,
+              384.0900370279948
+            ],
+            "normalizedTextDigest": "sha256:dbd15b944618a2ea0259d5806e1eebb98183d8bdd3609bf3ad119905175ee6ce",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 29,
+            "bbox": [
+              490.39357503255206,
+              329.9460754394531,
+              554.1734008789062,
+              384.0900370279948
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 29,
+            "bbox": [
+              554.1734008789062,
+              329.9460754394531,
+              600.9449462890625,
+              384.0900370279948
+            ],
+            "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 29,
+            "bbox": [
+              600.9449462890625,
+              329.9460754394531,
+              655.6538696289062,
+              384.0900370279948
+            ],
+            "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 29,
+            "bbox": [
+              655.6538696289062,
+              329.9460754394531,
+              737.8584187825521,
+              384.0900370279948
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 29,
+            "bbox": [
+              737.8584187825521,
+              329.9460754394531,
+              806.2600903320313,
+              384.0900370279948
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p029-t00-r09",
+        "pdfPage": 29,
+        "tableId": "p029-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "80%的土地污染投诉在投诉后14日内调查。",
+        "conditions": [
+          "投诉起算，与本组污水子行的付款起算不统一。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 29,
+              "bbox": [
+                36.47222222222222,
+                329.9460754394531,
+                211.65379859661235,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:1c5c8e757f8dc1215ba69fffa67165f52dda331842017acf6eec89ee606dc520",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r09",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 29,
+              "bbox": [
+                211.65379859661235,
+                384.0900370279948,
+                257.0079650878906,
+                438.2340087890625
+              ],
+              "normalizedTextDigest": "sha256:e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "15",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r09",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 29,
+              "bbox": [
+                257.0079650878906,
+                384.0900370279948,
+                302.36207071940106,
+                438.2340087890625
+              ],
+              "normalizedTextDigest": "sha256:e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "15",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r09",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 29,
+              "bbox": [
+                302.36207071940106,
+                384.0900370279948,
+                490.39357503255206,
+                438.2340087890625
+              ],
+              "normalizedTextDigest": "sha256:5b8e51dd0e7dd8da279913ed7e751b83474d5ef14e93fd7be1bf8460a85be411",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "80%的土地污染投诉在投诉后14日内调查。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r09",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 29,
+              "bbox": [
+                490.39357503255206,
+                384.0900370279948,
+                554.1734008789062,
+                438.2340087890625
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r09",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 29,
+              "bbox": [
+                554.1734008789062,
+                384.0900370279948,
+                600.9449462890625,
+                438.2340087890625
+              ],
+              "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "80%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r09",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 29,
+              "bbox": [
+                600.9449462890625,
+                384.0900370279948,
+                655.6538696289062,
+                438.2340087890625
+              ],
+              "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Quarterly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r09",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 29,
+              "bbox": [
+                655.6538696289062,
+                384.0900370279948,
+                737.8584187825521,
+                438.2340087890625
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p029-t00-r09",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 29,
+              "bbox": [
+                737.8584187825521,
+                384.0900370279948,
+                806.2600903320313,
+                438.2340087890625
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 29,
+            "bbox": [
+              211.65379859661235,
+              384.0900370279948,
+              257.0079650878906,
+              438.2340087890625
+            ],
+            "normalizedTextDigest": "sha256:e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 29,
+            "bbox": [
+              257.0079650878906,
+              384.0900370279948,
+              302.36207071940106,
+              438.2340087890625
+            ],
+            "normalizedTextDigest": "sha256:e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 29,
+            "bbox": [
+              302.36207071940106,
+              384.0900370279948,
+              490.39357503255206,
+              438.2340087890625
+            ],
+            "normalizedTextDigest": "sha256:5b8e51dd0e7dd8da279913ed7e751b83474d5ef14e93fd7be1bf8460a85be411",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 29,
+            "bbox": [
+              490.39357503255206,
+              384.0900370279948,
+              554.1734008789062,
+              438.2340087890625
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 29,
+            "bbox": [
+              554.1734008789062,
+              384.0900370279948,
+              600.9449462890625,
+              438.2340087890625
+            ],
+            "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 29,
+            "bbox": [
+              600.9449462890625,
+              384.0900370279948,
+              655.6538696289062,
+              438.2340087890625
+            ],
+            "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 29,
+            "bbox": [
+              655.6538696289062,
+              384.0900370279948,
+              737.8584187825521,
+              438.2340087890625
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 29,
+            "bbox": [
+              737.8584187825521,
+              384.0900370279948,
+              806.2600903320313,
+              438.2340087890625
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p029-t00-r10",
+        "pdfPage": 29,
+        "tableId": "p029-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "80%的onsite sewer tank投诉在付款后14日内调查。",
+        "conditions": [
+          "原文payment起算保留；与P30全部系统投诉90%条目并存，不擅自合并修正。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 29,
+              "bbox": [
+                36.47222222222222,
+                329.9460754394531,
+                211.65379859661235,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:1c5c8e757f8dc1215ba69fffa67165f52dda331842017acf6eec89ee606dc520",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r10",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 29,
+              "bbox": [
+                211.65379859661235,
+                438.2340087890625,
+                257.0079650878906,
+                473.17796834309894
+              ],
+              "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "50",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r10",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 29,
+              "bbox": [
+                257.0079650878906,
+                438.2340087890625,
+                302.36207071940106,
+                473.17796834309894
+              ],
+              "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "50",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r10",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 29,
+              "bbox": [
+                302.36207071940106,
+                438.2340087890625,
+                490.39357503255206,
+                473.17796834309894
+              ],
+              "normalizedTextDigest": "sha256:d92b2121c6830002edd9b842021b27dc326871b06a2542c13e4e94c24e54d3e2",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "80%的onsite sewer tank投诉在付款后14日内调查。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r10",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 29,
+              "bbox": [
+                490.39357503255206,
+                438.2340087890625,
+                554.1734008789062,
+                473.17796834309894
+              ],
+              "normalizedTextDigest": "sha256:74ac92bc348f22f0b37f12fbf475b95143d49a8d67ca0c63ec4fa0b4d8a822fa",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Local Government Act 1993",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r10",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 29,
+              "bbox": [
+                554.1734008789062,
+                438.2340087890625,
+                600.9449462890625,
+                473.17796834309894
+              ],
+              "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "80%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r10",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 29,
+              "bbox": [
+                600.9449462890625,
+                438.2340087890625,
+                655.6538696289062,
+                473.17796834309894
+              ],
+              "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Quarterly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r10",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 29,
+              "bbox": [
+                655.6538696289062,
+                438.2340087890625,
+                737.8584187825521,
+                473.17796834309894
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p029-t00-r10",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 29,
+              "bbox": [
+                737.8584187825521,
+                438.2340087890625,
+                806.2600903320313,
+                473.17796834309894
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 29,
+            "bbox": [
+              211.65379859661235,
+              438.2340087890625,
+              257.0079650878906,
+              473.17796834309894
+            ],
+            "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 29,
+            "bbox": [
+              257.0079650878906,
+              438.2340087890625,
+              302.36207071940106,
+              473.17796834309894
+            ],
+            "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 29,
+            "bbox": [
+              302.36207071940106,
+              438.2340087890625,
+              490.39357503255206,
+              473.17796834309894
+            ],
+            "normalizedTextDigest": "sha256:d92b2121c6830002edd9b842021b27dc326871b06a2542c13e4e94c24e54d3e2",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 29,
+            "bbox": [
+              490.39357503255206,
+              438.2340087890625,
+              554.1734008789062,
+              473.17796834309894
+            ],
+            "normalizedTextDigest": "sha256:74ac92bc348f22f0b37f12fbf475b95143d49a8d67ca0c63ec4fa0b4d8a822fa",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 29,
+            "bbox": [
+              554.1734008789062,
+              438.2340087890625,
+              600.9449462890625,
+              473.17796834309894
+            ],
+            "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 29,
+            "bbox": [
+              600.9449462890625,
+              438.2340087890625,
+              655.6538696289062,
+              473.17796834309894
+            ],
+            "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 29,
+            "bbox": [
+              655.6538696289062,
+              438.2340087890625,
+              737.8584187825521,
+              473.17796834309894
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 29,
+            "bbox": [
+              737.8584187825521,
+              438.2340087890625,
+              806.2600903320313,
+              473.17796834309894
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p029-t00-r11",
+        "pdfPage": 29,
+        "tableId": "p029-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "80%的乱丢垃圾投诉在报告后48小时内调查。",
+        "conditions": [
+          "报告时间起算。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p029-t00-r08",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 29,
+              "bbox": [
+                36.47222222222222,
+                329.9460754394531,
+                211.65379859661235,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:1c5c8e757f8dc1215ba69fffa67165f52dda331842017acf6eec89ee606dc520",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r11",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 29,
+              "bbox": [
+                211.65379859661235,
+                473.17796834309894,
+                257.0079650878906,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "50",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r11",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 29,
+              "bbox": [
+                257.0079650878906,
+                473.17796834309894,
+                302.36207071940106,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "50",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r11",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 29,
+              "bbox": [
+                302.36207071940106,
+                473.17796834309894,
+                490.39357503255206,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:e1981f9509e312855b4be92679a7a3106393a96f323daad152933bbc97e4e74f",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "80%的乱丢垃圾投诉在报告后48小时内调查。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r11",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 29,
+              "bbox": [
+                490.39357503255206,
+                473.17796834309894,
+                554.1734008789062,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r11",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 29,
+              "bbox": [
+                554.1734008789062,
+                473.17796834309894,
+                600.9449462890625,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "80%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r11",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 29,
+              "bbox": [
+                600.9449462890625,
+                473.17796834309894,
+                655.6538696289062,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Quarterly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p029-t00-r11",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 29,
+              "bbox": [
+                655.6538696289062,
+                473.17796834309894,
+                737.8584187825521,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p029-t00-r11",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 29,
+              "bbox": [
+                737.8584187825521,
+                473.17796834309894,
+                806.2600903320313,
+                527.3219058388158
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 29,
+            "bbox": [
+              211.65379859661235,
+              473.17796834309894,
+              257.0079650878906,
+              527.3219058388158
+            ],
+            "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 29,
+            "bbox": [
+              257.0079650878906,
+              473.17796834309894,
+              302.36207071940106,
+              527.3219058388158
+            ],
+            "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 29,
+            "bbox": [
+              302.36207071940106,
+              473.17796834309894,
+              490.39357503255206,
+              527.3219058388158
+            ],
+            "normalizedTextDigest": "sha256:e1981f9509e312855b4be92679a7a3106393a96f323daad152933bbc97e4e74f",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 29,
+            "bbox": [
+              490.39357503255206,
+              473.17796834309894,
+              554.1734008789062,
+              527.3219058388158
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 29,
+            "bbox": [
+              554.1734008789062,
+              473.17796834309894,
+              600.9449462890625,
+              527.3219058388158
+            ],
+            "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 29,
+            "bbox": [
+              600.9449462890625,
+              473.17796834309894,
+              655.6538696289062,
+              527.3219058388158
+            ],
+            "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 29,
+            "bbox": [
+              655.6538696289062,
+              473.17796834309894,
+              737.8584187825521,
+              527.3219058388158
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 29,
+            "bbox": [
+              737.8584187825521,
+              473.17796834309894,
+              806.2600903320313,
+              527.3219058388158
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p030-t00-r01",
+        "pdfPage": 30,
+        "tableId": "p030-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "90%的全部现场污水管理系统投诉在14日内检查。",
+        "conditions": [
+          "明确续接P29行动但KPI独立；不消除P29的80%及付款起算差异。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 30,
+              "bbox": [
+                36.458333333333336,
+                76.55759684244792,
+                211.65378036499024,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:8e1347ec0401430a98a3daa32e18e04e6d42edb885a25d8a55a4548d31562655",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 30,
+              "bbox": [
+                211.65378036499024,
+                76.55759684244792,
+                257.0079650878906,
+                111.5019022623698
+              ],
+              "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "50",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 30,
+              "bbox": [
+                257.0079650878906,
+                76.55759684244792,
+                302.36207071940106,
+                111.5019022623698
+              ],
+              "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "50",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 30,
+              "bbox": [
+                302.36207071940106,
+                76.55759684244792,
+                490.39357503255206,
+                111.5019022623698
+              ],
+              "normalizedTextDigest": "sha256:568bd585c754cf349363500e0864da851b8461e239a717107ecde2aeb91620a8",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "90%的全部现场污水管理系统投诉在14日内检查。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 30,
+              "bbox": [
+                490.39357503255206,
+                76.55759684244792,
+                554.1734008789062,
+                111.5019022623698
+              ],
+              "normalizedTextDigest": "sha256:74ac92bc348f22f0b37f12fbf475b95143d49a8d67ca0c63ec4fa0b4d8a822fa",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Local Government Act 1993",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 30,
+              "bbox": [
+                554.1734008789062,
+                76.55759684244792,
+                600.9449462890625,
+                111.5019022623698
+              ],
+              "normalizedTextDigest": "sha256:883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "90%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 30,
+              "bbox": [
+                600.9449462890625,
+                76.55759684244792,
+                655.6538696289062,
+                111.5019022623698
+              ],
+              "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Quarterly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 30,
+              "bbox": [
+                655.6538696289062,
+                76.55759684244792,
+                737.8584187825521,
+                111.5019022623698
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 30,
+              "bbox": [
+                737.8584187825521,
+                76.55759684244792,
+                806.2664088199014,
+                111.5019022623698
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "action",
+            "pdfPage": 30,
+            "bbox": [
+              36.458333333333336,
+              76.55759684244792,
+              211.65378036499024,
+              471.3090049342105
+            ],
+            "normalizedTextDigest": "sha256:8e1347ec0401430a98a3daa32e18e04e6d42edb885a25d8a55a4548d31562655",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "optimalVolume",
+            "pdfPage": 30,
+            "bbox": [
+              211.65378036499024,
+              76.55759684244792,
+              257.0079650878906,
+              111.5019022623698
+            ],
+            "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 30,
+            "bbox": [
+              257.0079650878906,
+              76.55759684244792,
+              302.36207071940106,
+              111.5019022623698
+            ],
+            "normalizedTextDigest": "sha256:1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 30,
+            "bbox": [
+              302.36207071940106,
+              76.55759684244792,
+              490.39357503255206,
+              111.5019022623698
+            ],
+            "normalizedTextDigest": "sha256:568bd585c754cf349363500e0864da851b8461e239a717107ecde2aeb91620a8",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 30,
+            "bbox": [
+              490.39357503255206,
+              76.55759684244792,
+              554.1734008789062,
+              111.5019022623698
+            ],
+            "normalizedTextDigest": "sha256:74ac92bc348f22f0b37f12fbf475b95143d49a8d67ca0c63ec4fa0b4d8a822fa",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 30,
+            "bbox": [
+              554.1734008789062,
+              76.55759684244792,
+              600.9449462890625,
+              111.5019022623698
+            ],
+            "normalizedTextDigest": "sha256:883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 30,
+            "bbox": [
+              600.9449462890625,
+              76.55759684244792,
+              655.6538696289062,
+              111.5019022623698
+            ],
+            "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 30,
+            "bbox": [
+              655.6538696289062,
+              76.55759684244792,
+              737.8584187825521,
+              111.5019022623698
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 30,
+            "bbox": [
+              737.8584187825521,
+              76.55759684244792,
+              806.2664088199014,
+              111.5019022623698
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p030-t00-r02",
+        "pdfPage": 30,
+        "tableId": "p030-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "90%的LTW投诉在72小时内检查。",
+        "conditions": [
+          "CSP6.1和8.2均为原格明确引用。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 30,
+              "bbox": [
+                36.458333333333336,
+                76.55759684244792,
+                211.65378036499024,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:8e1347ec0401430a98a3daa32e18e04e6d42edb885a25d8a55a4548d31562655",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r02",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 30,
+              "bbox": [
+                211.65378036499024,
+                111.5019022623698,
+                257.0079650878906,
+                146.44587198893228
+              ],
+              "normalizedTextDigest": "sha256:b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "25",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r02",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 30,
+              "bbox": [
+                257.0079650878906,
+                111.5019022623698,
+                302.36207071940106,
+                146.44587198893228
+              ],
+              "normalizedTextDigest": "sha256:b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "25",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r02",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 30,
+              "bbox": [
+                302.36207071940106,
+                111.5019022623698,
+                490.39357503255206,
+                146.44587198893228
+              ],
+              "normalizedTextDigest": "sha256:eaceb151d68ea98055053dc62850cc75e2ea5608e0492db187ef0a8f052f602d",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "90%的LTW投诉在72小时内检查。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r02",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 30,
+              "bbox": [
+                490.39357503255206,
+                111.5019022623698,
+                554.1734008789062,
+                146.44587198893228
+              ],
+              "normalizedTextDigest": "sha256:74ac92bc348f22f0b37f12fbf475b95143d49a8d67ca0c63ec4fa0b4d8a822fa",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Local Government Act 1993",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r02",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 30,
+              "bbox": [
+                554.1734008789062,
+                111.5019022623698,
+                600.9449462890625,
+                146.44587198893228
+              ],
+              "normalizedTextDigest": "sha256:883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "90%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r02",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 30,
+              "bbox": [
+                600.9449462890625,
+                111.5019022623698,
+                655.6538696289062,
+                146.44587198893228
+              ],
+              "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Quarterly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r02",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 30,
+              "bbox": [
+                655.6538696289062,
+                111.5019022623698,
+                737.8584187825521,
+                146.44587198893228
+              ],
+              "normalizedTextDigest": "sha256:eafba2fd6655ca4afb681ddcabf77dca2e8e199007b967c72375a640f7ea3260",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1 8.2"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p030-t00-r02",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 30,
+              "bbox": [
+                737.8584187825521,
+                111.5019022623698,
+                806.2664088199014,
+                146.44587198893228
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 30,
+            "bbox": [
+              211.65378036499024,
+              111.5019022623698,
+              257.0079650878906,
+              146.44587198893228
+            ],
+            "normalizedTextDigest": "sha256:b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 30,
+            "bbox": [
+              257.0079650878906,
+              111.5019022623698,
+              302.36207071940106,
+              146.44587198893228
+            ],
+            "normalizedTextDigest": "sha256:b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 30,
+            "bbox": [
+              302.36207071940106,
+              111.5019022623698,
+              490.39357503255206,
+              146.44587198893228
+            ],
+            "normalizedTextDigest": "sha256:eaceb151d68ea98055053dc62850cc75e2ea5608e0492db187ef0a8f052f602d",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 30,
+            "bbox": [
+              490.39357503255206,
+              111.5019022623698,
+              554.1734008789062,
+              146.44587198893228
+            ],
+            "normalizedTextDigest": "sha256:74ac92bc348f22f0b37f12fbf475b95143d49a8d67ca0c63ec4fa0b4d8a822fa",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 30,
+            "bbox": [
+              554.1734008789062,
+              111.5019022623698,
+              600.9449462890625,
+              146.44587198893228
+            ],
+            "normalizedTextDigest": "sha256:883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 30,
+            "bbox": [
+              600.9449462890625,
+              111.5019022623698,
+              655.6538696289062,
+              146.44587198893228
+            ],
+            "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 30,
+            "bbox": [
+              655.6538696289062,
+              111.5019022623698,
+              737.8584187825521,
+              146.44587198893228
+            ],
+            "normalizedTextDigest": "sha256:eafba2fd6655ca4afb681ddcabf77dca2e8e199007b967c72375a640f7ea3260",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 30,
+            "bbox": [
+              737.8584187825521,
+              111.5019022623698,
+              806.2664088199014,
+              146.44587198893228
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p030-t00-r03",
+        "pdfPage": 30,
+        "tableId": "p030-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "50%的地下储油设施投诉在投诉后14日内调查，Optimal8、Funded4。",
+        "conditions": [
+          "设施投诉与下一行污染事件不同。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 30,
+              "bbox": [
+                36.458333333333336,
+                76.55759684244792,
+                211.65378036499024,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:8e1347ec0401430a98a3daa32e18e04e6d42edb885a25d8a55a4548d31562655",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r03",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 30,
+              "bbox": [
+                211.65378036499024,
+                146.44587198893228,
+                257.0079650878906,
+                200.58950805664062
+              ],
+              "normalizedTextDigest": "sha256:2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "8",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r03",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 30,
+              "bbox": [
+                257.0079650878906,
+                146.44587198893228,
+                302.36207071940106,
+                200.58950805664062
+              ],
+              "normalizedTextDigest": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "4",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r03",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 30,
+              "bbox": [
+                302.36207071940106,
+                146.44587198893228,
+                490.39357503255206,
+                200.58950805664062
+              ],
+              "normalizedTextDigest": "sha256:98bbec18a073e1050e1e864ec0c126b79311745f7c03decbe5c06fc8af6f6625",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "50%的地下储油设施投诉在投诉后14日内调查，Optimal8、Funded4。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r03",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 30,
+              "bbox": [
+                490.39357503255206,
+                146.44587198893228,
+                554.1734008789062,
+                200.58950805664062
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r03",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 30,
+              "bbox": [
+                554.1734008789062,
+                146.44587198893228,
+                600.9449462890625,
+                200.58950805664062
+              ],
+              "normalizedTextDigest": "sha256:28fdae8deae31d6eafd18b70d878f6d8a3136f267ce273777c089a42ac590438",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "50%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r03",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 30,
+              "bbox": [
+                600.9449462890625,
+                146.44587198893228,
+                655.6538696289062,
+                200.58950805664062
+              ],
+              "normalizedTextDigest": "sha256:2c5e81714652558fe11969ae6152aee6f95b48a2d4605740a628906f69bbf692",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Annual",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r03",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 30,
+              "bbox": [
+                655.6538696289062,
+                146.44587198893228,
+                737.8584187825521,
+                200.58950805664062
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p030-t00-r03",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 30,
+              "bbox": [
+                737.8584187825521,
+                146.44587198893228,
+                806.2664088199014,
+                200.58950805664062
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 30,
+            "bbox": [
+              211.65378036499024,
+              146.44587198893228,
+              257.0079650878906,
+              200.58950805664062
+            ],
+            "normalizedTextDigest": "sha256:2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 30,
+            "bbox": [
+              257.0079650878906,
+              146.44587198893228,
+              302.36207071940106,
+              200.58950805664062
+            ],
+            "normalizedTextDigest": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 30,
+            "bbox": [
+              302.36207071940106,
+              146.44587198893228,
+              490.39357503255206,
+              200.58950805664062
+            ],
+            "normalizedTextDigest": "sha256:98bbec18a073e1050e1e864ec0c126b79311745f7c03decbe5c06fc8af6f6625",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 30,
+            "bbox": [
+              490.39357503255206,
+              146.44587198893228,
+              554.1734008789062,
+              200.58950805664062
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 30,
+            "bbox": [
+              554.1734008789062,
+              146.44587198893228,
+              600.9449462890625,
+              200.58950805664062
+            ],
+            "normalizedTextDigest": "sha256:28fdae8deae31d6eafd18b70d878f6d8a3136f267ce273777c089a42ac590438",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 30,
+            "bbox": [
+              600.9449462890625,
+              146.44587198893228,
+              655.6538696289062,
+              200.58950805664062
+            ],
+            "normalizedTextDigest": "sha256:2c5e81714652558fe11969ae6152aee6f95b48a2d4605740a628906f69bbf692",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 30,
+            "bbox": [
+              655.6538696289062,
+              146.44587198893228,
+              737.8584187825521,
+              200.58950805664062
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 30,
+            "bbox": [
+              737.8584187825521,
+              146.44587198893228,
+              806.2664088199014,
+              200.58950805664062
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p030-t00-r04",
+        "pdfPage": 30,
+        "tableId": "p030-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "90%的地下储油设施污染事件在投诉后14日内调查。",
+        "conditions": [
+          "保留污染事件范围。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 30,
+              "bbox": [
+                36.458333333333336,
+                76.55759684244792,
+                211.65378036499024,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:8e1347ec0401430a98a3daa32e18e04e6d42edb885a25d8a55a4548d31562655",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r04",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 30,
+              "bbox": [
+                211.65378036499024,
+                200.58950805664062,
+                257.0079650878906,
+                254.7331339518229
+              ],
+              "normalizedTextDigest": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "4",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r04",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 30,
+              "bbox": [
+                257.0079650878906,
+                200.58950805664062,
+                302.36207071940106,
+                254.7331339518229
+              ],
+              "normalizedTextDigest": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "4",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r04",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 30,
+              "bbox": [
+                302.36207071940106,
+                200.58950805664062,
+                490.39357503255206,
+                254.7331339518229
+              ],
+              "normalizedTextDigest": "sha256:cfdd8f3150247a75eee4da5efa4547b44eea0b01a4699ce2194e3260aed8468b",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "90%的地下储油设施污染事件在投诉后14日内调查。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r04",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 30,
+              "bbox": [
+                490.39357503255206,
+                200.58950805664062,
+                554.1734008789062,
+                254.7331339518229
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r04",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 30,
+              "bbox": [
+                554.1734008789062,
+                200.58950805664062,
+                600.9449462890625,
+                254.7331339518229
+              ],
+              "normalizedTextDigest": "sha256:883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "90%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r04",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 30,
+              "bbox": [
+                600.9449462890625,
+                200.58950805664062,
+                655.6538696289062,
+                254.7331339518229
+              ],
+              "normalizedTextDigest": "sha256:2c5e81714652558fe11969ae6152aee6f95b48a2d4605740a628906f69bbf692",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Annual",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r04",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 30,
+              "bbox": [
+                655.6538696289062,
+                200.58950805664062,
+                737.8584187825521,
+                254.7331339518229
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p030-t00-r04",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 30,
+              "bbox": [
+                737.8584187825521,
+                200.58950805664062,
+                806.2664088199014,
+                254.7331339518229
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 30,
+            "bbox": [
+              211.65378036499024,
+              200.58950805664062,
+              257.0079650878906,
+              254.7331339518229
+            ],
+            "normalizedTextDigest": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 30,
+            "bbox": [
+              257.0079650878906,
+              200.58950805664062,
+              302.36207071940106,
+              254.7331339518229
+            ],
+            "normalizedTextDigest": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 30,
+            "bbox": [
+              302.36207071940106,
+              200.58950805664062,
+              490.39357503255206,
+              254.7331339518229
+            ],
+            "normalizedTextDigest": "sha256:cfdd8f3150247a75eee4da5efa4547b44eea0b01a4699ce2194e3260aed8468b",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 30,
+            "bbox": [
+              490.39357503255206,
+              200.58950805664062,
+              554.1734008789062,
+              254.7331339518229
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 30,
+            "bbox": [
+              554.1734008789062,
+              200.58950805664062,
+              600.9449462890625,
+              254.7331339518229
+            ],
+            "normalizedTextDigest": "sha256:883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 30,
+            "bbox": [
+              600.9449462890625,
+              200.58950805664062,
+              655.6538696289062,
+              254.7331339518229
+            ],
+            "normalizedTextDigest": "sha256:2c5e81714652558fe11969ae6152aee6f95b48a2d4605740a628906f69bbf692",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 30,
+            "bbox": [
+              655.6538696289062,
+              200.58950805664062,
+              737.8584187825521,
+              254.7331339518229
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 30,
+            "bbox": [
+              737.8584187825521,
+              200.58950805664062,
+              806.2664088199014,
+              254.7331339518229
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p030-t00-r05",
+        "pdfPage": 30,
+        "tableId": "p030-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "40%的噪声投诉在投诉后14日内调查，Optimal5、Funded2。",
+        "conditions": [
+          "低比例目标原样保存，不提高为100%。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 30,
+              "bbox": [
+                36.458333333333336,
+                76.55759684244792,
+                211.65378036499024,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:8e1347ec0401430a98a3daa32e18e04e6d42edb885a25d8a55a4548d31562655",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r05",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 30,
+              "bbox": [
+                211.65378036499024,
+                254.7331339518229,
+                257.0079650878906,
+                308.8771057128906
+              ],
+              "normalizedTextDigest": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "5",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r05",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 30,
+              "bbox": [
+                257.0079650878906,
+                254.7331339518229,
+                302.36207071940106,
+                308.8771057128906
+              ],
+              "normalizedTextDigest": "sha256:d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "2",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r05",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 30,
+              "bbox": [
+                302.36207071940106,
+                254.7331339518229,
+                490.39357503255206,
+                308.8771057128906
+              ],
+              "normalizedTextDigest": "sha256:990d77b8fa21646cacb0422f169ae6e6d66219f353c136afd977e86d32824954",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "40%的噪声投诉在投诉后14日内调查，Optimal5、Funded2。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r05",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 30,
+              "bbox": [
+                490.39357503255206,
+                254.7331339518229,
+                554.1734008789062,
+                308.8771057128906
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r05",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 30,
+              "bbox": [
+                554.1734008789062,
+                254.7331339518229,
+                600.9449462890625,
+                308.8771057128906
+              ],
+              "normalizedTextDigest": "sha256:b322f5a716ebd783d166094ab1fab818ca782f1c61ab0dd2bff11af2f743bde9",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "40%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r05",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 30,
+              "bbox": [
+                600.9449462890625,
+                254.7331339518229,
+                655.6538696289062,
+                308.8771057128906
+              ],
+              "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Quarterly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r05",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 30,
+              "bbox": [
+                655.6538696289062,
+                254.7331339518229,
+                737.8584187825521,
+                308.8771057128906
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p030-t00-r05",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 30,
+              "bbox": [
+                737.8584187825521,
+                254.7331339518229,
+                806.2664088199014,
+                308.8771057128906
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 30,
+            "bbox": [
+              211.65378036499024,
+              254.7331339518229,
+              257.0079650878906,
+              308.8771057128906
+            ],
+            "normalizedTextDigest": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 30,
+            "bbox": [
+              257.0079650878906,
+              254.7331339518229,
+              302.36207071940106,
+              308.8771057128906
+            ],
+            "normalizedTextDigest": "sha256:d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 30,
+            "bbox": [
+              302.36207071940106,
+              254.7331339518229,
+              490.39357503255206,
+              308.8771057128906
+            ],
+            "normalizedTextDigest": "sha256:990d77b8fa21646cacb0422f169ae6e6d66219f353c136afd977e86d32824954",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 30,
+            "bbox": [
+              490.39357503255206,
+              254.7331339518229,
+              554.1734008789062,
+              308.8771057128906
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 30,
+            "bbox": [
+              554.1734008789062,
+              254.7331339518229,
+              600.9449462890625,
+              308.8771057128906
+            ],
+            "normalizedTextDigest": "sha256:b322f5a716ebd783d166094ab1fab818ca782f1c61ab0dd2bff11af2f743bde9",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 30,
+            "bbox": [
+              600.9449462890625,
+              254.7331339518229,
+              655.6538696289062,
+              308.8771057128906
+            ],
+            "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 30,
+            "bbox": [
+              655.6538696289062,
+              254.7331339518229,
+              737.8584187825521,
+              308.8771057128906
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 30,
+            "bbox": [
+              737.8584187825521,
+              254.7331339518229,
+              806.2664088199014,
+              308.8771057128906
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p030-t00-r06",
+        "pdfPage": 30,
+        "tableId": "p030-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "40%的空气污染投诉在投诉后14日内调查，Optimal35、Funded17。",
+        "conditions": [
+          "保留17与百分比的原列差异，不重新计算。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 30,
+              "bbox": [
+                36.458333333333336,
+                76.55759684244792,
+                211.65378036499024,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:8e1347ec0401430a98a3daa32e18e04e6d42edb885a25d8a55a4548d31562655",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r06",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 30,
+              "bbox": [
+                211.65378036499024,
+                308.8771057128906,
+                257.0079650878906,
+                363.02105712890625
+              ],
+              "normalizedTextDigest": "sha256:9f14025af0065b30e47e23ebb3b491d39ae8ed17d33739e5ff3827ffb3634953",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "35",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r06",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 30,
+              "bbox": [
+                257.0079650878906,
+                308.8771057128906,
+                302.36207071940106,
+                363.02105712890625
+              ],
+              "normalizedTextDigest": "sha256:4523540f1504cd17100c4835e85b7eefd49911580f8efff0599a8f283be6b9e3",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "17",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r06",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 30,
+              "bbox": [
+                302.36207071940106,
+                308.8771057128906,
+                490.39357503255206,
+                363.02105712890625
+              ],
+              "normalizedTextDigest": "sha256:3f2347c0a8c67382d38ba8eefcd47e7d280e073647ec96e7155921d43b94b7e2",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "40%的空气污染投诉在投诉后14日内调查，Optimal35、Funded17。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r06",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 30,
+              "bbox": [
+                490.39357503255206,
+                308.8771057128906,
+                554.1734008789062,
+                363.02105712890625
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r06",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 30,
+              "bbox": [
+                554.1734008789062,
+                308.8771057128906,
+                600.9449462890625,
+                363.02105712890625
+              ],
+              "normalizedTextDigest": "sha256:b322f5a716ebd783d166094ab1fab818ca782f1c61ab0dd2bff11af2f743bde9",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "40%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r06",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 30,
+              "bbox": [
+                600.9449462890625,
+                308.8771057128906,
+                655.6538696289062,
+                363.02105712890625
+              ],
+              "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Quarterly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r06",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 30,
+              "bbox": [
+                655.6538696289062,
+                308.8771057128906,
+                737.8584187825521,
+                363.02105712890625
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p030-t00-r06",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 30,
+              "bbox": [
+                737.8584187825521,
+                308.8771057128906,
+                806.2664088199014,
+                363.02105712890625
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 30,
+            "bbox": [
+              211.65378036499024,
+              308.8771057128906,
+              257.0079650878906,
+              363.02105712890625
+            ],
+            "normalizedTextDigest": "sha256:9f14025af0065b30e47e23ebb3b491d39ae8ed17d33739e5ff3827ffb3634953",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 30,
+            "bbox": [
+              257.0079650878906,
+              308.8771057128906,
+              302.36207071940106,
+              363.02105712890625
+            ],
+            "normalizedTextDigest": "sha256:4523540f1504cd17100c4835e85b7eefd49911580f8efff0599a8f283be6b9e3",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 30,
+            "bbox": [
+              302.36207071940106,
+              308.8771057128906,
+              490.39357503255206,
+              363.02105712890625
+            ],
+            "normalizedTextDigest": "sha256:3f2347c0a8c67382d38ba8eefcd47e7d280e073647ec96e7155921d43b94b7e2",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 30,
+            "bbox": [
+              490.39357503255206,
+              308.8771057128906,
+              554.1734008789062,
+              363.02105712890625
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 30,
+            "bbox": [
+              554.1734008789062,
+              308.8771057128906,
+              600.9449462890625,
+              363.02105712890625
+            ],
+            "normalizedTextDigest": "sha256:b322f5a716ebd783d166094ab1fab818ca782f1c61ab0dd2bff11af2f743bde9",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 30,
+            "bbox": [
+              600.9449462890625,
+              308.8771057128906,
+              655.6538696289062,
+              363.02105712890625
+            ],
+            "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 30,
+            "bbox": [
+              655.6538696289062,
+              308.8771057128906,
+              737.8584187825521,
+              363.02105712890625
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 30,
+            "bbox": [
+              737.8584187825521,
+              308.8771057128906,
+              806.2664088199014,
+              363.02105712890625
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p030-t00-r07",
+        "pdfPage": 30,
+        "tableId": "p030-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "80%的水污染投诉在投诉后14日内调查。",
+        "conditions": [
+          "限本子行的投诉类型。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 30,
+              "bbox": [
+                36.458333333333336,
+                76.55759684244792,
+                211.65378036499024,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:8e1347ec0401430a98a3daa32e18e04e6d42edb885a25d8a55a4548d31562655",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r07",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 30,
+              "bbox": [
+                211.65378036499024,
+                363.02105712890625,
+                257.0079650878906,
+                417.16502888997394
+              ],
+              "normalizedTextDigest": "sha256:e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "15",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r07",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 30,
+              "bbox": [
+                257.0079650878906,
+                363.02105712890625,
+                302.36207071940106,
+                417.16502888997394
+              ],
+              "normalizedTextDigest": "sha256:e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "15",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r07",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 30,
+              "bbox": [
+                302.36207071940106,
+                363.02105712890625,
+                490.39357503255206,
+                417.16502888997394
+              ],
+              "normalizedTextDigest": "sha256:22c041112cc8db3883a4c8f9f7cd5e6d655c8bd7c7409d7f056f58937170c73b",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "80%的水污染投诉在投诉后14日内调查。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r07",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 30,
+              "bbox": [
+                490.39357503255206,
+                363.02105712890625,
+                554.1734008789062,
+                417.16502888997394
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r07",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 30,
+              "bbox": [
+                554.1734008789062,
+                363.02105712890625,
+                600.9449462890625,
+                417.16502888997394
+              ],
+              "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "80%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r07",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 30,
+              "bbox": [
+                600.9449462890625,
+                363.02105712890625,
+                655.6538696289062,
+                417.16502888997394
+              ],
+              "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Quarterly",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r07",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 30,
+              "bbox": [
+                655.6538696289062,
+                363.02105712890625,
+                737.8584187825521,
+                417.16502888997394
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p030-t00-r07",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 30,
+              "bbox": [
+                737.8584187825521,
+                363.02105712890625,
+                806.2664088199014,
+                417.16502888997394
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 30,
+            "bbox": [
+              211.65378036499024,
+              363.02105712890625,
+              257.0079650878906,
+              417.16502888997394
+            ],
+            "normalizedTextDigest": "sha256:e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 30,
+            "bbox": [
+              257.0079650878906,
+              363.02105712890625,
+              302.36207071940106,
+              417.16502888997394
+            ],
+            "normalizedTextDigest": "sha256:e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 30,
+            "bbox": [
+              302.36207071940106,
+              363.02105712890625,
+              490.39357503255206,
+              417.16502888997394
+            ],
+            "normalizedTextDigest": "sha256:22c041112cc8db3883a4c8f9f7cd5e6d655c8bd7c7409d7f056f58937170c73b",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 30,
+            "bbox": [
+              490.39357503255206,
+              363.02105712890625,
+              554.1734008789062,
+              417.16502888997394
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 30,
+            "bbox": [
+              554.1734008789062,
+              363.02105712890625,
+              600.9449462890625,
+              417.16502888997394
+            ],
+            "normalizedTextDigest": "sha256:f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 30,
+            "bbox": [
+              600.9449462890625,
+              363.02105712890625,
+              655.6538696289062,
+              417.16502888997394
+            ],
+            "normalizedTextDigest": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 30,
+            "bbox": [
+              655.6538696289062,
+              363.02105712890625,
+              737.8584187825521,
+              417.16502888997394
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 30,
+            "bbox": [
+              737.8584187825521,
+              363.02105712890625,
+              806.2664088199014,
+              417.16502888997394
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      },
+      {
+        "id": "p030-t00-r08",
+        "pdfPage": 30,
+        "tableId": "p030-t00",
+        "printedSection": "Reactive – Public Health and Environment",
+        "summary": "90%的污染事件在24小时内报告EPA。",
+        "conditions": [
+          "这是对EPA报告时限，不等于调查完成时限。"
+        ],
+        "fields": {
+          "action": {
+            "sourceState": "MERGED_FROM_PRINTED_CELL",
+            "sourceCellOwnerRow": "p030-t00-r01",
+            "sourceAnchor": {
+              "field": "action",
+              "pdfPage": 30,
+              "bbox": [
+                36.458333333333336,
+                76.55759684244792,
+                211.65378036499024,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:8e1347ec0401430a98a3daa32e18e04e6d42edb885a25d8a55a4548d31562655",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "环境投诉调查",
+            "nativeTextRedistributed": false
+          },
+          "optimalVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r08",
+            "sourceAnchor": {
+              "field": "optimalVolume",
+              "pdfPage": 30,
+              "bbox": [
+                211.65378036499024,
+                417.16502888997394,
+                257.0079650878906,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:2fca346db656187102ce806ac732e06a62df0dbb2829e511a770556d398e1a6e",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "54",
+            "actualOutput": "UNKNOWN"
+          },
+          "fundedVolume": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r08",
+            "sourceAnchor": {
+              "field": "fundedVolume",
+              "pdfPage": 30,
+              "bbox": [
+                257.0079650878906,
+                417.16502888997394,
+                302.36207071940106,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:2fca346db656187102ce806ac732e06a62df0dbb2829e511a770556d398e1a6e",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "54",
+            "actualOutput": "UNKNOWN"
+          },
+          "kpi": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r08",
+            "sourceAnchor": {
+              "field": "kpi",
+              "pdfPage": 30,
+              "bbox": [
+                302.36207071940106,
+                417.16502888997394,
+                490.39357503255206,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:7f7199c7420ed6ba902cb8daf1b9157992626aeb41c2418b66de2dc3ea627d34",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "summary": "90%的污染事件在24小时内报告EPA。",
+            "nativeTextRedistributed": false
+          },
+          "regulatory": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r08",
+            "sourceAnchor": {
+              "field": "regulatory",
+              "pdfPage": 30,
+              "bbox": [
+                490.39357503255206,
+                417.16502888997394,
+                554.1734008789062,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Protection of the Environment Operations Act 1997",
+            "currentLegalApplicability": "UNKNOWN"
+          },
+          "target": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r08",
+            "sourceAnchor": {
+              "field": "target",
+              "pdfPage": 30,
+              "bbox": [
+                554.1734008789062,
+                417.16502888997394,
+                600.9449462890625,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "90%",
+            "actualOutput": "UNKNOWN"
+          },
+          "reportingFrequency": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r08",
+            "sourceAnchor": {
+              "field": "reportingFrequency",
+              "pdfPage": 30,
+              "bbox": [
+                600.9449462890625,
+                417.16502888997394,
+                655.6538696289062,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:2c5e81714652558fe11969ae6152aee6f95b48a2d4605740a628906f69bbf692",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Annual",
+            "legalOperationalFrequency": "UNKNOWN"
+          },
+          "csp": {
+            "sourceState": "PRINTED",
+            "sourceCellOwnerRow": "p030-t00-r08",
+            "sourceAnchor": {
+              "field": "csp",
+              "pdfPage": 30,
+              "bbox": [
+                655.6538696289062,
+                417.16502888997394,
+                737.8584187825521,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "6.1"
+          },
+          "otherPlans": {
+            "sourceState": "PRINTED_NIL",
+            "sourceCellOwnerRow": "p030-t00-r08",
+            "sourceAnchor": {
+              "field": "otherPlans",
+              "pdfPage": 30,
+              "bbox": [
+                737.8584187825521,
+                417.16502888997394,
+                806.2664088199014,
+                471.3090049342105
+              ],
+              "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+              "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+            },
+            "publishedValue": "Nil"
+          }
+        },
+        "sourceAnchors": [
+          {
+            "field": "optimalVolume",
+            "pdfPage": 30,
+            "bbox": [
+              211.65378036499024,
+              417.16502888997394,
+              257.0079650878906,
+              471.3090049342105
+            ],
+            "normalizedTextDigest": "sha256:2fca346db656187102ce806ac732e06a62df0dbb2829e511a770556d398e1a6e",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "fundedVolume",
+            "pdfPage": 30,
+            "bbox": [
+              257.0079650878906,
+              417.16502888997394,
+              302.36207071940106,
+              471.3090049342105
+            ],
+            "normalizedTextDigest": "sha256:2fca346db656187102ce806ac732e06a62df0dbb2829e511a770556d398e1a6e",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "kpi",
+            "pdfPage": 30,
+            "bbox": [
+              302.36207071940106,
+              417.16502888997394,
+              490.39357503255206,
+              471.3090049342105
+            ],
+            "normalizedTextDigest": "sha256:7f7199c7420ed6ba902cb8daf1b9157992626aeb41c2418b66de2dc3ea627d34",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "regulatory",
+            "pdfPage": 30,
+            "bbox": [
+              490.39357503255206,
+              417.16502888997394,
+              554.1734008789062,
+              471.3090049342105
+            ],
+            "normalizedTextDigest": "sha256:b8d2bcdaff8a1664f0b0e379ae7956c64c9132dcccee94c5d7ad6a2237316f89",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "target",
+            "pdfPage": 30,
+            "bbox": [
+              554.1734008789062,
+              417.16502888997394,
+              600.9449462890625,
+              471.3090049342105
+            ],
+            "normalizedTextDigest": "sha256:883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "reportingFrequency",
+            "pdfPage": 30,
+            "bbox": [
+              600.9449462890625,
+              417.16502888997394,
+              655.6538696289062,
+              471.3090049342105
+            ],
+            "normalizedTextDigest": "sha256:2c5e81714652558fe11969ae6152aee6f95b48a2d4605740a628906f69bbf692",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "csp",
+            "pdfPage": 30,
+            "bbox": [
+              655.6538696289062,
+              417.16502888997394,
+              737.8584187825521,
+              471.3090049342105
+            ],
+            "normalizedTextDigest": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          },
+          {
+            "field": "otherPlans",
+            "pdfPage": 30,
+            "bbox": [
+              737.8584187825521,
+              417.16502888997394,
+              806.2664088199014,
+              471.3090049342105
+            ],
+            "normalizedTextDigest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654",
+            "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+          }
+        ]
+      }
+    ],
+    "interpretation": {
+      "currentVersion": "UNKNOWN",
+      "currentLegalApplicability": "UNKNOWN",
+      "actualOutput": "UNKNOWN",
+      "actualExecution": "UNKNOWN",
+      "actualSpend": "UNKNOWN",
+      "actualOutcome": "UNKNOWN",
+      "activityResourceAllocation": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "councilAssignmentCreated": false
+    },
+    "logicalGrouping": "FIRST_PRINTED_ACTION_OR_PROJECT_CELL_WITH_MERGED_SUBROWS; EXPLICIT_CONTINUATION_ONLY",
+    "physicalRowCount": 12,
+    "newNativeActivity": false
+  },
+  "sourceAnchorCount": 98,
+  "sourceLocations": [
+    {
+      "field": "action",
+      "pdfPage": 29,
+      "bbox": [
+        36.47222222222222,
+        329.9460754394531,
+        211.65379859661235,
+        527.3219058388158
+      ],
+      "normalizedTextDigest": "sha256:1c5c8e757f8dc1215ba69fffa67165f52dda331842017acf6eec89ee606dc520",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "optimalVolume",
+      "pdfPage": 29,
+      "bbox": [
+        211.65379859661235,
+        329.9460754394531,
+        257.0079650878906,
+        384.0900370279948
+      ],
+      "normalizedTextDigest": "sha256:b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "fundedVolume",
+      "pdfPage": 29,
+      "bbox": [
+        257.0079650878906,
+        329.9460754394531,
+        302.36207071940106,
+        384.0900370279948
+      ],
+      "normalizedTextDigest": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:4b7807450680df032bb98bdebb7cbeb3ea7b13edee3d1a2f02152aaa83a38116",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

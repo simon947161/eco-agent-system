@@ -1,0 +1,61 @@
+{
+  "runner": "atlas-native-1",
+  "results": [
+    {
+      "test": "accounting.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: source-bounded 29.9 t CO2e/person, work/accounting type validation, 3 Atlas node overlays, 17+ negative/positive cases.\nNotice: modelling/unit tests only; official source admission and real Chrome QA are not implied.\n",
+      "stderr": ""
+    },
+    {
+      "test": "content.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: 60 synthetic content nodes, 59 edges, stable coordinates, bounded truncation (3ms)\nPASS: 200 synthetic content nodes, 199 edges, stable coordinates, bounded truncation (5ms)\nPASS: export/verify roundtrip, external checkpoint and corrupted dataset/receipt rejection\nPASS: 15 decomposable topics, 127 items, six-level trail, child/ancestor tamper propagation, order independence, 8 negative cases, English UI/content\n",
+      "stderr": ""
+    },
+    {
+      "test": "domain.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: additive domain migration, 127-item/base digest preservation, legacy workspace/snapshot compatibility, versioned accounting provenance/reverse links, immutable local reviews, stale/forged/corrupt history rejection\n",
+      "stderr": ""
+    },
+    {
+      "test": "model.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: 10 additional admission rejection cases; snapshot tamper; discovery explanations and falsifier\nPASS: schema, multipath, candidate exclusion, false official promotion, missing target, time/region rejection, unknown context, canonical digest, byte tamper, append/retract, history tamper, duplicate event\n",
+      "stderr": ""
+    },
+    {
+      "test": "route-main.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: production route projection, model-backed continuous endpoints, stable partial expansion, distinct corridors/candidate exclusion, 127-item data unchanged, default map/hidden panel/utility entry contracts. Browser acceptance is separate.\n",
+      "stderr": ""
+    },
+    {
+      "test": "route-map.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS route-preview: 15 existing nodes / 16 edges, station selection, candidate toggle, line filter, zoom and inspector closing.\nNOTE this is a mock-DOM smoke test, not real browser visual, keyboard or WCAG acceptance.\n",
+      "stderr": ""
+    },
+    {
+      "test": "workspace.test.cjs",
+      "status": "PASS_TESTED_HERE",
+      "exit": 0,
+      "error": null,
+      "stdout": "PASS: edit/diff, immutable source/history, supersede/revert/retract/replay, stale editor conflict, monotonic history, import roundtrip/checkpoint/tamper/signature/promotion rejection, source admission pending gates and excerpt hash\n",
+      "stderr": ""
+    }
+  ]
+}

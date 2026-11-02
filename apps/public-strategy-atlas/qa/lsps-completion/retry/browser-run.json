@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "script": "csoi-lsps-browser.py",
+      "startedAt": "2026-11-02T01:52:27.453644+00:00",
+      "finishedAt": "2026-11-02T01:57:47.654923+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-lsps-browser.py.log"
+    },
+    {
+      "script": "csoi-metric-browser.py",
+      "startedAt": "2026-11-02T01:57:47.655597+00:00",
+      "finishedAt": "2026-11-02T02:01:49.295825+00:00",
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-metric-browser.py.log"
+    },
+    {
+      "script": "csoi-strategy-browser.py",
+      "startedAt": "2026-11-02T02:01:49.297776+00:00",
+      "finishedAt": "2026-11-02T02:05:39.681429+00:00",
+      "exitCode": 1,
+      "status": "FAIL",
+      "log": "csoi-strategy-browser.py.log"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "format": "actual-node-module-load-sha256-1",
+  "entry": "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-layers.test.cjs",
+  "modules": [
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/atlas-domain.js",
+      "sha256AtLoad": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "sha256AfterLoad": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/atlas-model.js",
+      "sha256AtLoad": "ab147972fdbb9ec982c96380dfbaac0a6c82d2e8102eb7a888268c1587487594",
+      "sha256AfterLoad": "ab147972fdbb9ec982c96380dfbaac0a6c82d2e8102eb7a888268c1587487594",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/atlas-accounting.js",
+      "sha256AtLoad": "5710e8900188eb4af880b6a50730037901448bad6166a6012d373b3fcd71f99f",
+      "sha256AfterLoad": "5710e8900188eb4af880b6a50730037901448bad6166a6012d373b3fcd71f99f",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/atlas-data.js",
+      "sha256AtLoad": "6a061b80d5f47a79f8d4e34d7e09dc0c236d4fbaec3b46f788a1dece5f267fe4",
+      "sha256AfterLoad": "6a061b80d5f47a79f8d4e34d7e09dc0c236d4fbaec3b46f788a1dece5f267fe4",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-governance.js",
+      "sha256AtLoad": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+      "sha256AfterLoad": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-layers.js",
+      "sha256AtLoad": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "sha256AfterLoad": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "stableDuringLoad": true
+    },
+    {
+      "file": "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-layers.test.cjs",
+      "sha256AtLoad": "0ae7cf2919ca4586f71f3519a270afd4517d24fecc79d32721d72f272557190e",
+      "sha256AfterLoad": "0ae7cf2919ca4586f71f3519a270afd4517d24fecc79d32721d72f272557190e",
+      "stableDuringLoad": true
+    }
+  ]
+}

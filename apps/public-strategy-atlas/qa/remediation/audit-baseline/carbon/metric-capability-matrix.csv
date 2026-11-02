@@ -1,0 +1,11 @@
+﻿metric_or_capability,formula_or_operation,result,audit_status,evidence,boundary_or_missing_inputs
+CSP人均CO2e基线,原文读取,29.9 t CO2e/person,SOURCE_ROW_VERIFIED,CSP PDF/printed30,本次原始字节及四列表格核对；不是重算
+独立重算人均CO2e,E_region / P_sameyear,NOT COMPUTABLE,NOT_COMPUTABLE,CSP30 + default135entity model,缺原始排放总量/匹配人口/方法版本/范围
+地区排放总量,29.9 × matching_population,NOT COMPUTABLE,NOT_COMPUTABLE,atlas-accounting.js60–70,"人口记录0；CSP8headline22,132无匹配源年信息，不能代入"
+水务占地区排放比例,E_water / E_region,NOT COMPUTABLE,NOT_COMPUTABLE,CSP30–31,水务7519CO2eq与地区人均29.9年份/单位/边界不匹配
+实际减排或目标完成率,(current-baseline)/(target-baseline),NOT COMPUTABLE,NOT_COMPUTABLE,atlas-execution.js52–53,无当前实际值或量化目标，Decrease只有方向
+Council实际水务单位成本,actual_cost / actual_output,NOT COMPUTABLE,NOT_COMPUTABLE,atlas-accounting.js83–92,无已匹配的实际支出/服务量输入
+合成水务单位成本,24000 / 12,2000 AUD/ML,SYNTHETIC_ONLY,carbon-code-evidence.json,数值来自合成fixture，不是Council实际
+合成预算差额,24000-30000,-6000 AUD,SYNTHETIC_ONLY,carbon-code-evidence.json,数值来自合成fixture，不是Council财务
+合成面积转换,50 × 0.01,0.5 km2,SYNTHETIC_ONLY,carbon-code-evidence.json,单位数学正确；面积fixture非真实地块
+独立研究者计划工时汇总,sum(assumed_plan_hours),1.5 assumed hours in audit fixture,ASSUMPTION_ONLY,carbon-code-evidence.json lastcheck,个人自选研究计划；实际工时/支出/结果UNKNOWN

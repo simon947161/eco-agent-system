@@ -1,0 +1,3 @@
+/* Verify a user-exported local workspace against this checked-out base dataset. */
+const fs=require('node:fs'),w=require('./atlas-workspace.js'),d=require('./atlas-data.js'),m=require('./atlas-model.js');
+(async()=>{if(!process.argv[2])throw Error('Usage: node verify-workspace.cjs FILE.json [sha256:checkpoint]');const b=fs.readFileSync(process.argv[2]);if(b.length>2*1024*1024)throw Error('IMPORT_TOO_LARGE');const workspace=await w.importWorkspace(b.toString('utf8'),d,process.argv[3]||null);console.log('PASS: '+workspace.revisions.length+' immutable local revisions/events; base, version and event digests verified. Workspace checkpoint '+await m.objectDigest(workspace));})().catch(e=>{console.error(e.message);process.exitCode=1});

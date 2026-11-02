@@ -1,0 +1,73 @@
+{
+  "datasetIntegrity": true,
+  "populationRecords": 0,
+  "actualInventoryInputs": 0,
+  "checks": [
+    {
+      "name": "observed29.9_times_unverified_population_is_rejected",
+      "error": "UNADMITTED_INPUTS"
+    },
+    {
+      "name": "absent_population_is_rejected",
+      "error": "POPULATION_DENOMINATOR_UNKNOWN"
+    },
+    {
+      "name": "governed_kernel_public_rate_total_is_rejected",
+      "error": "UNADMITTED_INPUTS"
+    },
+    {
+      "name": "governed_kernel_public_rate_conversion_is_rejected",
+      "error": "UNADMITTED_INPUTS"
+    },
+    {
+      "name": "synthetic_water_unit_cost_is_reproducible",
+      "result": {
+        "value": 2000,
+        "unit": "AUD/ML",
+        "status": "SYNTHETIC_SCENARIO",
+        "ledger": "FINANCIAL_RESOURCE",
+        "quality": "RESEARCH_FIXTURE",
+        "uncertainty": "Not real Council evidence; input uncertainties remain",
+        "causalAttribution": "UNKNOWN"
+      }
+    },
+    {
+      "name": "synthetic_budget_variance_is_reproducible",
+      "result": {
+        "value": -6000,
+        "unit": "AUD",
+        "status": "SYNTHETIC_SCENARIO",
+        "ledger": "FINANCIAL_RESOURCE",
+        "quality": "RESEARCH_FIXTURE",
+        "uncertainty": "Not real Council evidence; input uncertainties remain",
+        "causalAttribution": "UNKNOWN"
+      }
+    },
+    {
+      "name": "area_conversion_is_synthetic_only",
+      "result": {
+        "value": 0.5,
+        "unit": "km2",
+        "status": "SYNTHETIC_SCENARIO",
+        "ledger": "PHYSICAL_ENVIRONMENTAL",
+        "quality": "RESEARCH_FIXTURE",
+        "uncertainty": "Not real Council evidence; input uncertainties remain",
+        "causalAttribution": "UNKNOWN"
+      }
+    },
+    {
+      "name": "carbon_to_council_water_known_link",
+      "status": "UNKNOWN"
+    },
+    {
+      "name": "carbon_to_received_csp_rawsource_path",
+      "status": "UNKNOWN"
+    },
+    {
+      "name": "carbon_pin_currentness_before_and_after_full_csp_receipt_withdrawal"
+    },
+    {
+      "name": "own_review_planned_hours_are_assumptions_not_council_actuals"
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "reportDigest": "c403dce8ce91996c363a61b12da5a3177a15a0867e05c7bd4bd47f2c82e345f4",
+  "workbookDigest": "e6a52cb93a1e2190d84fc04c6872b40034bbe0d538ca15d3dad17e18d52a6aeb",
+  "allSheetsRead": [
+    {
+      "sheet": "口径与结论",
+      "rows": 13,
+      "columns": 2,
+      "digest": "4349454c6d360ddb7c662fafa99e6cecd6770637ae418c9eaa40209bcef10347",
+      "headers": [
+        "项目",
+        "审计结论"
+      ]
+    },
+    {
+      "sheet": "登记52条",
+      "rows": 52,
+      "columns": 43,
+      "digest": "da42b026adb88bf0ff5c3c593d47c10b62b6ab412020abe42d948048c65e1d5f",
+      "headers": [
+        "source_id",
+        "record_type",
+        "family",
+        "title",
+        "official_url",
+        "registered_raw_digest",
+        "audit_byte_receipt",
+        "audit_original_path",
+        "observed_version",
+        "pdf_pages_audit",
+        "pdf_pages_registered",
+        "original_structure_to_extract",
+        "expected_original_atomic_items_total",
+        "research_note_records",
+        "clause_records",
+        "historical_reference_records",
+        "published_plan_records",
+        "actual_governed_record_total",
+        "omitted_or_incomplete_original_items_total",
+        "missing_or_incomplete_examples",
+        "full_document_knowledge_coverage",
+        "subset_scope",
+        "subset_original_total",
+        "subset_structured_units",
+        "subset_coverage",
+        "legacy_exact_excerpt_separately_verified",
+        "coverage_unknown_reason",
+        "source_current_version_review",
+        "legal_or_authorised_admission",
+        "rights_status",
+        "resolved_receipted_source_id",
+        "physical_document_key",
+        "duplicate_legacy_alias",
+        "duplicate_alias_note",
+        "bounded_correct_records_combined_audit",
+        "partial_records_combined_audit",
+        "wrong_records_combined_audit",
+        "not_verified_records_combined_audit",
+        "combined_correctness_basis",
+        "csp_fullfield_strategy_capsules",
+        "existing_records_outside_initial_coverage_subtask_sample",
+        "verified_selected_claim_samples_coverage_subtask",
+        "partial_selected_claim_samples_coverage_subtask"
+      ]
+    },
+    {
+      "sheet": "原文遗漏",
+      "rows": 19,
+      "columns": 13,
+      "digest": "6a60589bfab546dd922c7330517b892158e490ba0894619a0678888a5fdda4bb",
+      "headers": [
+        "omissionId",
+        "sourceId",
+        "observationId",
+        "pdfPage",
+        "printedPage",
+        "originalSection",
+        "omittedOrIncompleteContent",
+        "status",
+        "verification",
+        "rawDigest",
+        "officialUrl",
+        "originalPageDigest",
+        "notAClaimOfCurrentLegalApplicability"
+      ]
+    },
+    {
+      "sheet": "CSP策略44",
+      "rows": 44,
+      "columns": 8,
+      "digest": "756dc5bcc1209d778288a0a4668e06a811fd1e33acb3e91be94ded01766fa833",
+      "headers": [
+        "策略编号",
+        "所属目标编号",
+        "完整CSP_PDF及印刷页",
+        "一页摘要_PDF页",
+        "独立摘录原文锚定",
+        "项目完整字段策略对象",
+        "缺口",
+        "备注"
+      ]
+    },
+    {
+      "sheet": "CSP指标63",
+      "rows": 63,
+      "columns": 12,
+      "digest": "f65a2b8a0f238ea3f8b3a9b240e22470a68e658eec9ca814836b15fdc329d676",
+      "headers": [
+        "inventory_id",
+        "source_id",
+        "pdf_page",
+        "printed_page",
+        "pillar",
+        "authored_short_name_zh",
+        "project_structured_record_id",
+        "project_structured_present",
+        "project_row_correctness_this_audit",
+        "project_independent_recalculation",
+        "census_basis",
+        "source_text_redistributed"
+      ]
+    },
+    {
+      "sheet": "DCP语义72",
+      "rows": 72,
+      "columns": 11,
+      "digest": "4d087a383f07cf977260b7b920627736baf865d1e5146e375ab49f40b21098c0",
+      "headers": [
+        "sourceId",
+        "recordId",
+        "pdfPage",
+        "section",
+        "locator",
+        "status",
+        "pageHashMatch",
+        "reason",
+        "fullClauseCompleteness",
+        "currentLaw",
+        "officialAdmission"
+      ]
+    },
+    {
+      "sheet": "关系216",
+      "rows": 216,
+      "columns": 31,
+      "digest": "75d994d7e7ea9871412ded1acb180e340b3195af336ab307827248b08c227730",
+      "headers": [
+        "collection",
+        "id",
+        "from",
+        "to",
+        "fromLabel",
+        "toLabel",
+        "predicate",
+        "category",
+        "state",
+        "classification",
+        "admission",
+        "method",
+        "sourceLocations",
+        "evidenceCount",
+        "counterevidenceCount",
+        "counterevidence",
+        "officialExplicitRelationship",
+        "evidenceSufficientForOfficialImplementation",
+        "evidenceSufficientForLegalDuty",
+        "evidenceSufficientForCausality",
+        "semanticVerification",
+        "scope",
+        "revisionId",
+        "fromRevisionId",
+        "toRevisionId",
+        "sourceDocument",
+        "pageOrSection",
+        "originalTextCheck",
+        "errorRisk",
+        "officialOrAIInference",
+        "notDistinctLinkWarning"
+      ]
+    },
+    {
+      "sheet": "原文关系补充6",
+      "rows": 6,
+      "columns": 15,
+      "digest": "2c22f3348ac3e97e0579416266d8933a5f7ffa7001f616e666bad0dda5eaf134",
+      "headers": [
+        "审计关系编号",
+        "原始来源ID",
+        "原文URL",
+        "PDF页码",
+        "起点",
+        "终点",
+        "关系类型",
+        "原文明确",
+        "AI推断",
+        "审计结论",
+        "原件SHA256",
+        "规范页SHA256",
+        "现行法/地块/实施/因果证据足够",
+        "已写入项目知识库",
+        "官方准入"
+      ]
+    },
+    {
+      "sheet": "E2E12路径",
+      "rows": 12,
+      "columns": 22,
+      "digest": "e3433975db0bc462f275eeadd6ba1f2a21cb7621b3e83a93dd60bed23ebd3ba3",
+      "headers": [
+        "test_id",
+        "topic",
+        "original_source_id",
+        "source_url",
+        "original_locator",
+        "original_fact_spotcheck",
+        "historical_bytes_match",
+        "source_to_structured_record",
+        "record_id",
+        "source_relation_type",
+        "forward_model_trace",
+        "reverse_model_trace",
+        "relation_official_or_inferred",
+        "website_route",
+        "actual_user_query",
+        "search_exact_match",
+        "desktop_ui",
+        "mobile_ui",
+        "reverse_website_link",
+        "known_link_to_CSP",
+        "actual_operational_environmental_chain",
+        "original_error"
+      ]
+    },
+    {
+      "sheet": "计算能力",
+      "rows": 10,
+      "columns": 6,
+      "digest": "8dacabb63279a309bcb465eba980fb6f50579db859f45413182b1b264892da2a",
+      "headers": [
+        "metric_or_capability",
+        "formula_or_operation",
+        "result",
+        "audit_status",
+        "evidence",
+        "boundary_or_missing_inputs"
+      ]
+    },
+    {
+      "sheet": "缺口与验收",
+      "rows": 12,
+      "columns": 7,
+      "digest": "73122d5c1cd4fd7df59e8aa4d38dfd7082def24d6fe97316972fed371c4204bc",
+      "headers": [
+        "任务ID",
+        "严重程度",
+        "缺口",
+        "证据",
+        "影响",
+        "拟议修复范围",
+        "验收标准"
+      ]
+    }
+  ],
+  "auditBaseline": "744ab46b2bec2ad601da0c4ae528694a4c982154",
+  "mode": "FULL_REPORT_ALL_WORKBOOK_CELLS_AND_REPRODUCTION_SOURCE_INTAKE",
+  "reproductionScripts": [
+    {
+      "path": "carbon/make-metric-census.py",
+      "sha256": "d4f1d25d865af671d3b4104aecab468045d411f943a70cdd14ea65489c0a44bd",
+      "bytes": 3450
+    },
+    {
+      "path": "carbon/reproduce-carbon.cjs",
+      "sha256": "510f340a491ea135378d6cd9a312ab1496c87609417e00c80f2dd37994c48f25",
+      "bytes": 4108
+    },
+    {
+      "path": "carbon/verify-carbon-original.py",
+      "sha256": "53f5dc1593645a9850622c49ede5db890fe32860e762fc484a620f52e6afce5f",
+      "bytes": 2623
+    },
+    {
+      "path": "clause-semantics/reproduce-snowy-review.py",
+      "sha256": "bcc0465dec6ef2fd2e344ea7e984330f8f3b625c38482a4561bcabf7c4fbb2cc",
+      "bytes": 7572
+    },
+    {
+      "path": "coverage/reproduce-coverage.py",
+      "sha256": "b36ca3eb82f648a965408e7a5de8aa1a89b97df6a3a2c2ae272015445f74b66e",
+      "bytes": 24242
+    },
+    {
+      "path": "e2e/audit-browser.py",
+      "sha256": "18dc6168f1857c39a285fa3e8765110dbc4091cd40a5affe5fea46adafcea6d9",
+      "bytes": 8163
+    },
+    {
+      "path": "e2e/audit-model.cjs",
+      "sha256": "126da54433ffe33a1792455a78e91c4a3f3c878f90e427463235b851e82648be",
+      "bytes": 5088
+    },
+    {
+      "path": "e2e/audit-note-binding.cjs",
+      "sha256": "8962e36f42c0715698a0aae18f4b9c873406650913cd45cec5c52a191010e97f",
+      "bytes": 1543
+    },
+    {
+      "path": "e2e/audit-originals.py",
+      "sha256": "1d3906fa7288997eaee13f2b83a332ff4cfdc5f78be2a9b4b76be6d7ac4729b9",
+      "bytes": 3699
+    },
+    {
+      "path": "relationships/lineage-gap-check.cjs",
+      "sha256": "25995f4d147489df4ac2979fedf1b43acea34bc6aa08ceaa675401f0e86ca054",
+      "bytes": 1716
+    },
+    {
+      "path": "relationships/notes-lineage.cjs",
+      "sha256": "994aaec481c2d29dffe9599a65250dc47d2daef006add1daa57d3741889afba9",
+      "bytes": 993
+    },
+    {
+      "path": "relationships/refine-matrix.py",
+      "sha256": "999fbde9404148d3ab53f655102527f41eefa370d7c4fe324c350e055f1887ba",
+      "bytes": 4165
+    },
+    {
+      "path": "relationships/relationship-audit.cjs",
+      "sha256": "31eeba68430613829a3cd38d5086a363b11e33323a97112a275181c06732dc9d",
+      "bytes": 6290
+    },
+    {
+      "path": "scripts/csp_strategy_census.py",
+      "sha256": "f1d39289e111791d94dd79853a3819028f9aa229c320c81605dcc1267e5e4734",
+      "bytes": 2632
+    },
+    {
+      "path": "scripts/export_audit_input.cjs",
+      "sha256": "89ed4a95c6ff67eb9c10c81f020f1d5da3d32af3e442e312abc52a69ba7f637b",
+      "bytes": 561
+    },
+    {
+      "path": "scripts/recover_originals.py",
+      "sha256": "273796532e834cfb1825e3f3553a06048b777b853586a114753ca480d5c8749c",
+      "bytes": 3037
+    }
+  ],
+  "originalsRedistributed": false
+}

@@ -1,0 +1,35 @@
+{
+  "format": "atlas-offline-original-verification-1",
+  "recordedAt": "2026-10-29T21:40:40.973987+00:00",
+  "command": "python3 apps/public-strategy-atlas/verify-source.py /tmp/atlas-new-runtime-20261030/csp-summary.pdf",
+  "exitCode": 0,
+  "stdout": "PASS: original PDF bytes, page count, bounded anchor extraction and excerpt digest. Admission/permission approval is not implied.",
+  "rawDigest": "sha256:1f1be67a25c0c2468b7f69d5959300430b840ebe5beb05eb1e77dd8516c3261e",
+  "expectedRawDigest": "sha256:1f1be67a25c0c2468b7f69d5959300430b840ebe5beb05eb1e77dd8516c3261e",
+  "byteLength": 416031,
+  "historicalByteLength": 416031,
+  "anchor": {
+    "page": 1,
+    "pageCount": 1,
+    "section": "Strategic Objective 6",
+    "clause": "6.1",
+    "bbox": [
+      490,
+      316,
+      705,
+      337
+    ],
+    "coordinateSystem": "PDF points; origin top-left; filter word x0/top"
+  },
+  "excerptDigest": "sha256:49300a9a5424250d5a543fbc08007e29f73b792b361240d0dc9fae775287f5f3",
+  "historicalReceiptDigest": "sha256:6a15566a895927d5b923f48b4f63a8e81e30859e2b39d68c8f4a168e00c4de2c",
+  "verifierCodeDigest": "sha256:7819d5080a6786546ff24dcf2bfa05b623338119e8e7b600e9475830b2238a77",
+  "historicalReceiptChanged": false,
+  "originalPdfCommitted": false,
+  "pageCount": "PASS",
+  "boundedAnchorText": "PASS",
+  "reuseRights": "UNKNOWN",
+  "currentRevision": "UNKNOWN",
+  "effectiveGeographicScope": "UNKNOWN",
+  "officialAdmission": "PENDING"
+}

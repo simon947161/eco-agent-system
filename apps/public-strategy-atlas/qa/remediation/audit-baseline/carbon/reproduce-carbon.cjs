@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('node:fs'),app='/tmp/csoi-integrity-audit-20261031/readonly-head/apps/public-strategy-atlas',out='/tmp/csoi-integrity-audit-20261031/carbon';
+const M=require(app+'/atlas-model.js'),A=require(app+'/atlas-accounting.js'),E=require(app+'/atlas-execution.js'),P=require(app+'/csoi-paths.js'),I=require(app+'/atlas-intake.js'),seed=require(app+'/sources/csoi-default-snapshot.js');
+(async()=>{
+ const d=structuredClone(seed.snapshot.dataset),index=M.domainIndex(d),carbon=index.get('csp2035-carbon-per-capita-baseline'),csp='csoi:smrc-csp-full-2025:20261030',results={auditedCommit:'744ab46b2bec2ad601da0c4ae528694a4c982154',datasetIntegrity:await M.verifySnapshot(seed.snapshot),datasetDigest:await M.objectDigest(d),carbonMetric:carbon,sourceNote:index.get('csoi:source-note:smrc-csp-full-2025:carbon-p30'),sourceReceipt:d.domain.sourceCatalogue.sources.find(s=>s.id===csp),populationRecords:d.domain.entities.filter(e=>e.data?.unit==='person').map(e=>({id:e.id,data:e.data})),actualInventoryInputs:d.domain.entities.filter(e=>['MWh','kWh','t_CO2e/MWh'].includes(e.data?.unit)).map(e=>({id:e.id,data:e.data}))};
+ const R=require(app+'/csoi-review-work.js');const checks=[];async function check(name,fn){try{checks.push({name,executed:true,result:await fn()});}catch(e){checks.push({name,executed:true,error:e.message});}}
+ const pop={value:23000,unit:'person',status:'ADMITTED',area:carbon.data.area,boundary:carbon.data.boundary,period:carbon.data.period,methodologyCompatible:true};
+ await check('observed29.9_times_unverified_population_is_rejected',()=>A.totalFromPerCapita(carbon.data,pop));
+ await check('absent_population_is_rejected',()=>A.totalFromPerCapita(carbon.data,null));
+ await check('governed_kernel_public_rate_total_is_rejected',()=>E.derive(d,{formula:'PER_CAPITA_TOTAL',inputIds:[carbon.id]}));
+ await check('governed_kernel_public_rate_conversion_is_rejected',()=>E.derive(d,{formula:'UNIT_CONVERSION',inputIds:[carbon.id],outputUnit:'t_CO2e'}));
+ await check('synthetic_water_unit_cost_is_reproducible',()=>E.derive(d,{formula:'COST_PER_OUTPUT',inputIds:['synthetic-water-spend','synthetic-water-output']}));
+ await check('synthetic_budget_variance_is_reproducible',()=>E.derive(d,{formula:'BUDGET_VARIANCE',inputIds:['synthetic-water-budget','synthetic-water-spend']}));
+ await check('area_conversion_is_synthetic_only',()=>E.derive(d,{formula:'UNIT_CONVERSION',inputIds:['synthetic-land-area'],outputUnit:'km2'}));
+ await check('carbon_to_council_water_known_link',()=>E.shortestPath(d,carbon.id,'water',{direction:'both',mode:'KNOWN_LINK'}));
+ await check('carbon_to_received_csp_rawsource_path',()=>P.discover(d,{from:carbon.id,to:csp,mode:'STRUCTURED'}));
+ await check('carbon_pin_currentness_before_and_after_full_csp_receipt_withdrawal',async()=>{const proof=await P.pinPath(d,{nodes:[{id:carbon.id}],relationships:[]}),changed=structuredClone(d);changed.domain.sourceCatalogue=await I.correctStage(changed.domain.sourceCatalogue,csp,'SOURCE_RETRIEVED',{actor:'READ_ONLY_AUDIT_FIXTURE',at:'2026-10-31T09:00:00Z',reason:'In-memory source-byte withdrawal audit; no stored knowledge altered'});return {before:await P.verifyPath(d,proof),after:await P.verifyPath(changed,proof),storedMetricStillPresent:M.domainIndex(changed).get(carbon.id).data.value,originalDatasetUnchanged:await M.objectDigest(d)===results.datasetDigest};});
+ await check('own_review_planned_hours_are_assumptions_not_council_actuals',async()=>{const proposal=await R.register(d,{clauseId:'csoi:dcp:snowy2013:C9:3:1:b:soil',date:'2026-10-31',plannedHours:1.5});return R.summary(proposal.dataset);});
+ results.checks=checks;fs.writeFileSync(out+'/carbon-code-evidence.json',JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify({datasetIntegrity:results.datasetIntegrity,populationRecords:results.populationRecords.length,actualInventoryInputs:results.actualInventoryInputs.length,checks:checks.map(c=>({name:c.name,error:c.error,status:c.result?.status,result:c.result?.result||c.result?.value||undefined}))},null,2));
+})().catch(e=>{console.error(e);process.exitCode=1});

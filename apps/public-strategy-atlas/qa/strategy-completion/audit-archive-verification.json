@@ -1,0 +1,75 @@
+{
+  "at": "2026-11-01T23:12:53.668958+00:00",
+  "historicalBaseline": "744ab46b2bec2ad601da0c4ae528694a4c982154",
+  "reportDigest": "c403dce8ce91996c363a61b12da5a3177a15a0867e05c7bd4bd47f2c82e345f4",
+  "workbookDigest": "e6a52cb93a1e2190d84fc04c6872b40034bbe0d538ca15d3dad17e18d52a6aeb",
+  "worksheets": [
+    {
+      "sheet": "口径与结论",
+      "rows": 13,
+      "columns": 2,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "登记52条",
+      "rows": 52,
+      "columns": 43,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "原文遗漏",
+      "rows": 19,
+      "columns": 13,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "CSP策略44",
+      "rows": 44,
+      "columns": 8,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "CSP指标63",
+      "rows": 63,
+      "columns": 12,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "DCP语义72",
+      "rows": 72,
+      "columns": 11,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "关系216",
+      "rows": 216,
+      "columns": 31,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "原文关系补充6",
+      "rows": 6,
+      "columns": 15,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "E2E12路径",
+      "rows": 12,
+      "columns": 22,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "计算能力",
+      "rows": 10,
+      "columns": 6,
+      "allCellsRead": true
+    },
+    {
+      "sheet": "缺口与验收",
+      "rows": 12,
+      "columns": 7,
+      "allCellsRead": true
+    }
+  ],
+  "distinction": "Original archived report and workbook recovered from Git. Phase2 uncommitted data is not thereby recovered. Current P0/P1 fixes must be checked against current code, not called still broken from baseline report."
+}

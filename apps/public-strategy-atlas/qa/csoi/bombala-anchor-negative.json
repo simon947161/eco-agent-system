@@ -1,0 +1,22 @@
+[
+  {
+    "case": "raw_digest",
+    "result": "REJECTED_EXPECTED",
+    "reason": "ORIGINAL_BYTE_MISMATCH"
+  },
+  {
+    "case": "page_digest",
+    "result": "REJECTED_EXPECTED",
+    "reason": "PAGE_ANCHOR_DIGEST_MISMATCH:bombala-page-1"
+  },
+  {
+    "case": "page_bounds",
+    "result": "REJECTED_EXPECTED",
+    "reason": "ANCHOR_PAGE_BOUNDS"
+  },
+  {
+    "case": "missing_token",
+    "result": "REJECTED_EXPECTED",
+    "reason": "PAGE_ANCHOR_TOKEN_MISMATCH:bombala-page-1"
+  }
+]

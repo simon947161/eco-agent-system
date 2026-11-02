@@ -1,0 +1,3202 @@
+{
+  "format": "lsps-map-source-review-1",
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "sourcePageCount": 118,
+  "maps": [
+    {
+      "id": "lsps-map-p008",
+      "pdfPage": 8,
+      "printedPage": 7,
+      "title": "Figure 1 — landscape and rural regions",
+      "summary": "以 A–H 八个分区组织区域景观、保护地及土壤背景；这是历史战略示意，不是地块边界判定。",
+      "legend": [
+        {
+          "label": "Biodiversity Corridors",
+          "symbol": "green diagonal hatch"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "dark green"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Soil Fertility: High",
+          "symbol": "beige"
+        },
+        {
+          "label": "Soil Fertility: Moderately high",
+          "symbol": "pale yellow"
+        },
+        {
+          "label": "Strategic Centres",
+          "symbol": "red circle"
+        },
+        {
+          "label": "Rural Regions",
+          "symbol": "blue outline"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [],
+      "qualifiers": [
+        "A–H 是图上分区标识，不能转换为法定分区。"
+      ],
+      "bbox": [
+        27.75,
+        47.25,
+        570.25,
+        766.5
+      ],
+      "rasterDigest": "sha256:a4d507df5f8f6514160eabd5d723bedf4aa04a2a5e035bd2f4001c2a032a82a5",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 8,
+        "bbox": [
+          27.75,
+          694.575,
+          570.25,
+          766.5
+        ],
+        "rasterDigest": "sha256:1eb9a313638a106134e84fce398dc7bd945ba0b76346ffb9d5cf70fbf6cb1155",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "A Canberra Corridor",
+        "B Eastern Valleys",
+        "C Cooma",
+        "D Monaro",
+        "E Bombala",
+        "F Jindabyne",
+        "G Eucumbene",
+        "H Murrumbidgee Mountains"
+      ],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p016",
+      "pdfPage": 16,
+      "printedPage": 15,
+      "title": "Figure 2 — South East and Tablelands regional plan map",
+      "summary": "显示整个 South East and Tablelands 区域的中心、连接及基础设施；范围超过 Snowy Monaro，不能把所有符号归到本 Council。",
+      "legend": [
+        {
+          "label": "Strategic Centre",
+          "symbol": "red ring"
+        },
+        {
+          "label": "Centre",
+          "symbol": "black dot"
+        },
+        {
+          "label": "Inter-regional Connection",
+          "symbol": "large blue arrow"
+        },
+        {
+          "label": "Strategic Transport Link",
+          "symbol": "orange red solid line"
+        },
+        {
+          "label": "Main Southern Rail Line",
+          "symbol": "railway line"
+        },
+        {
+          "label": "Rail Line to Canberra",
+          "symbol": "railway line"
+        },
+        {
+          "label": "Canberra Airport – Global Gateway",
+          "symbol": "aircraft symbol"
+        },
+        {
+          "label": "Port of Eden – Global Gateway",
+          "symbol": "ship symbol"
+        },
+        {
+          "label": "Commonwealth Public Service",
+          "symbol": "building symbol"
+        },
+        {
+          "label": "University",
+          "symbol": "academic symbol"
+        },
+        {
+          "label": "Regional Airport",
+          "symbol": "aircraft symbol"
+        },
+        {
+          "label": "General Aviation",
+          "symbol": "aircraft symbol"
+        },
+        {
+          "label": "Tertiary Hospital",
+          "symbol": "hospital symbol"
+        },
+        {
+          "label": "Snowy Hydro Electricity",
+          "symbol": "electricity symbol"
+        },
+        {
+          "label": "Snowy Mountains",
+          "symbol": "mountain symbol"
+        },
+        {
+          "label": "Wind Farm Corridor",
+          "symbol": "wind turbine symbol"
+        },
+        {
+          "label": "National Park and Reserve",
+          "symbol": "green"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "light green"
+        },
+        {
+          "label": "Declared Wilderness",
+          "symbol": "green diagonal hatch"
+        },
+        {
+          "label": "Biophysical Strategic Agricultural Land",
+          "symbol": "brown orange fill"
+        },
+        {
+          "label": "NSW Marine Park",
+          "symbol": "blue"
+        },
+        {
+          "label": "Waterway",
+          "symbol": "light blue"
+        }
+      ],
+      "scale": "NOT_STATED",
+      "north": "NOT_STATED",
+      "scope": "South East and Tablelands regional area, including ACT context",
+      "conditions": [],
+      "qualifiers": [
+        "原图引用 NSW Department of Planning and Environment 2017；箭头不构成工程线路。"
+      ],
+      "bbox": [
+        2.7699999809265137,
+        0.13006591796875,
+        841.9199829101562,
+        595.2000122070312
+      ],
+      "rasterDigest": "sha256:ee8a30b5c7ce0171d361669687f106ed9f116cf0fba484f2dffc5ada37f3d1e9",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 16,
+        "bbox": [
+          19.552999639511107,
+          89.39055786132812,
+          229.34049537181855,
+          583.29861328125
+        ],
+        "rasterDigest": "sha256:e6d136d7c5fd03811d9f607f026bac3bf2da5024f5eea60c26fa192c9e47dd7a",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "Department of Planning and Environment 2017 (caption reference year)"
+    },
+    {
+      "id": "lsps-map-p026",
+      "pdfPage": 26,
+      "printedPage": 25,
+      "title": "Figure 7 — environmental assets",
+      "summary": "区域环境资产图结合保护地、饮用水集水区及生物多样性廊道；原图是区域背景，不能证明具体地块存在某项当前法定约束。",
+      "legend": [
+        {
+          "label": "Strategic Centre",
+          "symbol": "red ring"
+        },
+        {
+          "label": "Centre",
+          "symbol": "black dot"
+        },
+        {
+          "label": "Sydney Drinking Water Catchment",
+          "symbol": "blue hatched circle"
+        },
+        {
+          "label": "State and Regional Biodiversity Corridor",
+          "symbol": "orange"
+        },
+        {
+          "label": "High Environmental Value",
+          "symbol": "pale yellow green"
+        },
+        {
+          "label": "National Park and Reserve",
+          "symbol": "green"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "light green"
+        },
+        {
+          "label": "World Heritage Area",
+          "symbol": "dark green"
+        },
+        {
+          "label": "NSW Marine Park",
+          "symbol": "cyan"
+        },
+        {
+          "label": "Waterway",
+          "symbol": "light blue"
+        }
+      ],
+      "scale": "NOT_STATED",
+      "north": "NOT_STATED",
+      "scope": "South East and Tablelands region",
+      "conditions": [],
+      "qualifiers": [
+        "图例中的指定名称按历史原图记录，当前地位未知。"
+      ],
+      "bbox": [
+        72.0,
+        336.54998779296875,
+        376.70001220703125,
+        768.5499877929688
+      ],
+      "rasterDigest": "sha256:76545e0dc5211de1b606d841d574e77d9cf8fb100b440c48e8eda0d973457277",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 26,
+        "bbox": [
+          72.0,
+          682.1499877929688,
+          376.70001220703125,
+          768.5499877929688
+        ],
+        "rasterDigest": "sha256:a01a53eb3c6b9480b609164d9380f58b95ebd2266fe351a8cc8f3e8a896772de",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "Department of Planning and Environment 2017 (caption reference year)"
+    },
+    {
+      "id": "lsps-map-p027",
+      "pdfPage": 27,
+      "printedPage": 26,
+      "title": "Figure 8 — draft Koala Plan of Management study area",
+      "summary": "前 Cooma-Monaro 区域草案 KPoM 的研究范围图。图例所写 Plan Applies 是草案研究语境，不证明现行计划已采纳或此处均为考拉栖息地。",
+      "legend": [
+        {
+          "label": "Main Towns",
+          "symbol": "black dot"
+        },
+        {
+          "label": "Main Rivers",
+          "symbol": "blue line"
+        },
+        {
+          "label": "Minor Road",
+          "symbol": "grey line"
+        },
+        {
+          "label": "Major Road",
+          "symbol": "red line"
+        },
+        {
+          "label": "National Parks & Nature Reserves",
+          "symbol": "white outline"
+        },
+        {
+          "label": "Area to which the Plan Applies",
+          "symbol": "dark green outline"
+        },
+        {
+          "label": "Cooma-Monaro Shire",
+          "symbol": "brown outline"
+        }
+      ],
+      "scale": "1:600000",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "必须保留 draft KPoM 草案状态；当前采纳及空间适用性未知。"
+      ],
+      "qualifiers": [
+        "这是前 Cooma-Monaro 地域，不能外推全 LGA。"
+      ],
+      "bbox": [
+        58.619998931884766,
+        445.7190246582031,
+        314.7608947753906,
+        808.1256713867188
+      ],
+      "rasterDigest": "sha256:3530dcbf616f4db112c229c3a65fccf22cb9aa8682163726103754b16d6246f9",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 27,
+        "bbox": [
+          58.619998931884766,
+          710.2758767700195,
+          222.5501722717285,
+          808.1256713867188
+        ],
+        "rasterDigest": "sha256:0f96549f743ad4f9dcaa345a242514cbebc9fe4578790d2b65d2f3816c251965",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "Draft KPoM; former Cooma-Monaro; map date not stated"
+    },
+    {
+      "id": "lsps-map-p028",
+      "pdfPage": 28,
+      "printedPage": 27,
+      "title": "Figure 9 — regional biodiversity values",
+      "summary": "geoADAPT 2019 年 12 月 13 日的环境证据综合图；分别标记已命名价值类别、开发约束、研究区及未知生物多样性价值。",
+      "legend": [
+        {
+          "label": "Threatened Entities (Validated)",
+          "symbol": "bright green"
+        },
+        {
+          "label": "Criteria2 HEV Native Vegetation",
+          "symbol": "teal"
+        },
+        {
+          "label": "Criteria3 HEV Threatened Entities",
+          "symbol": "pale mint"
+        },
+        {
+          "label": "Criteria4 HEV Waterbodies",
+          "symbol": "blue"
+        },
+        {
+          "label": "Criteria5 HEV Geological Heritage",
+          "symbol": "black"
+        },
+        {
+          "label": "Criteria6 HEV Heritage",
+          "symbol": "yellow"
+        },
+        {
+          "label": "Criteria7 Development Constraints",
+          "symbol": "orange"
+        },
+        {
+          "label": "NSW Biodiversity Values Map (2019.12)",
+          "symbol": "pink"
+        },
+        {
+          "label": "Localities",
+          "symbol": "black dot"
+        },
+        {
+          "label": "Roads",
+          "symbol": "grey line"
+        },
+        {
+          "label": "Railway",
+          "symbol": "dashed line"
+        },
+        {
+          "label": "Study Areas",
+          "symbol": "purple outline"
+        },
+        {
+          "label": "Unknown Biodiversity Values",
+          "symbol": "grey"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "地图仅作指导，改分区或开发前必须进行实地验证，不能以图替代。",
+        "多数数据注明 CC 4.0；敏感/脆弱土地及部分受威胁物种记录另需数据许可协议。"
+      ],
+      "qualifiers": [
+        "Validated 是原图类别名称，不是本系统完成了验证。",
+        "Unknown 类别不能解释为没有生物多样性价值。"
+      ],
+      "bbox": [
+        36.849998474121094,
+        14.5499267578125,
+        564.0499877929688,
+        771.949951171875
+      ],
+      "rasterDigest": "sha256:6a15ff7578ad4c92a6c9f3e36c8ebd7b53f7cf818fccc07868648e3f51de19db",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 28,
+        "bbox": [
+          42.12199836730957,
+          537.1559436035155,
+          247.72999420166016,
+          756.8019506835938
+        ],
+        "rasterDigest": "sha256:50e540556679b8c5a39af87f36ec19b4dfa07193a9db1da5f3659611b295f359",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "geoADAPT, 13 December 2019 (map production date)"
+    },
+    {
+      "id": "lsps-map-p048",
+      "pdfPage": 48,
+      "printedPage": 47,
+      "title": "Figure 17 — classified roads",
+      "summary": "原图按州级、区域和地方道路及铺装情况分类；颜色和虚实线共同决定图例含义。它不提供当前通行、道路状况或管理责任认定。",
+      "legend": [
+        {
+          "label": "Snowy Monaro Regional Council",
+          "symbol": "thick black outline"
+        },
+        {
+          "label": "Local Government Boundaries",
+          "symbol": "thin black outline"
+        },
+        {
+          "label": "Towns and Villages",
+          "symbol": "small mauve dot"
+        },
+        {
+          "label": "Regional Sealed Surface",
+          "symbol": "solid pink line"
+        },
+        {
+          "label": "Regional Unsealed Surface",
+          "symbol": "dashed pink line"
+        },
+        {
+          "label": "State Sealed Surface",
+          "symbol": "solid purple line"
+        },
+        {
+          "label": "State Unsealed Surface",
+          "symbol": "dashed purple line"
+        },
+        {
+          "label": "Not SMSC Road",
+          "symbol": "tan line"
+        },
+        {
+          "label": "Sealed Road",
+          "symbol": "grey line"
+        },
+        {
+          "label": "Unsealed Road",
+          "symbol": "grey dashed line"
+        },
+        {
+          "label": "Forestry NSW",
+          "symbol": "green patterned fill"
+        },
+        {
+          "label": "NPWS reserve",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Major Rivers",
+          "symbol": "blue line"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "NOT_STATED",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [],
+      "qualifiers": [
+        "保留原图拼写 Not SMSC Road，未擅自改成 SMRC。"
+      ],
+      "bbox": [
+        60.0,
+        115.54998779296875,
+        522.75,
+        736.8499755859375
+      ],
+      "rasterDigest": "sha256:ef95d596c9cca67c83a8c864662210e7cd9e1d17ec2aee2c585e09403048b6b9",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 48,
+        "bbox": [
+          69.255,
+          562.8859790039062,
+          212.7075,
+          724.4239758300781
+        ],
+        "rasterDigest": "sha256:ba05d54ea3c91de91cf76fb7341e18a76590a0a069b628bc65d3aa630dd691a3",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "Map date/source mark not identified; no year inferred"
+    },
+    {
+      "id": "lsps-map-p057",
+      "pdfPage": 57,
+      "printedPage": 56,
+      "title": "Figure 19 — strategic transport and connectivity",
+      "summary": "以区域图显示农业旅游、铁路/MRT、Bundian Way 与重型车辆路线调查选项；Bombala 在此区域图为 Option 3/4。",
+      "legend": [
+        {
+          "label": "Strategic Centres",
+          "symbol": "red circle"
+        },
+        {
+          "label": "Rural Regions",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "dark green"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Snowy SAP Study Area",
+          "symbol": "pink area"
+        },
+        {
+          "label": "Snowy Mts Airport",
+          "symbol": "aircraft"
+        },
+        {
+          "label": "Railway / MRT Corridor",
+          "symbol": "black dashed line"
+        },
+        {
+          "label": "Bundian Way",
+          "symbol": "purple dashed line"
+        },
+        {
+          "label": "Agri-Tourism Routes",
+          "symbol": "brown dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Route Investigation Options: Bombala Option 3",
+          "symbol": "yellow dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Route Investigation Options: Bombala Option 4",
+          "symbol": "blue dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Route Investigation Options: Cooma Option",
+          "symbol": "red double arrow"
+        },
+        {
+          "label": "Classified Roads: Regional",
+          "symbol": "grey line"
+        },
+        {
+          "label": "Classified Roads: State",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "重型车辆线路仅为 investigation options，不是已建或批准路线。",
+        "Snowy SAP 标为 study area，不能当作最终法定边界。"
+      ],
+      "qualifiers": [
+        "区域 Bombala 3/4 与城镇图 1/2/5 分开保留；不按同名路线合并。"
+      ],
+      "bbox": [
+        48.5,
+        86.79998779296875,
+        548.5499877929688,
+        771.0
+      ],
+      "rasterDigest": "sha256:f7627a8d65672f85276010754dd6cdb82a09aa35533c18cb176666441f8d9381",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 57,
+        "bbox": [
+          48.5,
+          695.7379986572266,
+          548.5499877929688,
+          771.0
+        ],
+        "rasterDigest": "sha256:22606d1bbdb4bafcc925acf199a6cb4fcebd04ecbd2f6dee8acb247fe48bf6d4",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "A Canberra Corridor",
+        "B Eastern Valleys",
+        "C Cooma",
+        "D Monaro",
+        "E Bombala",
+        "F Jindabyne",
+        "G Eucumbene",
+        "H Murrumbidgee Mountains"
+      ],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p060",
+      "pdfPage": 60,
+      "printedPage": 59,
+      "title": "Figure 20 — Cooma area",
+      "summary": "Cooma 大范围图把现状用途与未来调查区域分开，南侧红弧线为重型车辆调查路线，图中机场与环境叠层均为历史参考。",
+      "legend": [
+        {
+          "label": "Investigation Areas: Industrial",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Investigation Areas: Residential",
+          "symbol": "black orange hatch"
+        },
+        {
+          "label": "Investigation Areas: Rural Residential",
+          "symbol": "beige hatch"
+        },
+        {
+          "label": "Investigation Areas: Health/Education Precincts",
+          "symbol": "red outline"
+        },
+        {
+          "label": "Investigation Areas: Cooma Creek Recreational Precinct",
+          "symbol": "green blue hatch"
+        },
+        {
+          "label": "Investigation Areas: Cooma Sports Hub",
+          "symbol": "blue hatch"
+        },
+        {
+          "label": "Investigation Areas: Airport Precinct",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Mixed Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Infrastructure",
+          "symbol": "yellow"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Approved Lots",
+          "symbol": "vertical hatch"
+        },
+        {
+          "label": "Biodiversity Corridors",
+          "symbol": "green hatch"
+        },
+        {
+          "label": "Koala POM",
+          "symbol": "purple vertical hatch"
+        },
+        {
+          "label": "Riparian Buffers",
+          "symbol": "cyan"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Snowy Mts Airport",
+          "symbol": "aircraft"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Route",
+          "symbol": "red double arrow"
+        },
+        {
+          "label": "Railway Corridor",
+          "symbol": "dashed black line"
+        },
+        {
+          "label": "State or Regional Road",
+          "symbol": "double line"
+        },
+        {
+          "label": "Local Roads",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–8 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "调查区和路线仍需后续研究及审批，不代表已改分区或施工。"
+      ],
+      "qualifiers": [
+        "Approved Lots 只是历史图上标记，未核验当前许可。"
+      ],
+      "bbox": [
+        54.20000076293945,
+        37.3499755859375,
+        559.0999755859375,
+        774.3999633789062
+      ],
+      "rasterDigest": "sha256:5831ede573699ab5116ae557c6766c6cee75df55c00c66da4a75eb05e7a2c2a2",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 60,
+        "bbox": [
+          54.20000076293945,
+          649.1014654541016,
+          559.0999755859375,
+          774.3999633789062
+        ],
+        "rasterDigest": "sha256:3afec4b8d837bc127a957b8572c4935161b9614d6254591902837889056d6d29",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p061",
+      "pdfPage": 61,
+      "printedPage": 60,
+      "title": "Figure 21 — Cooma close view",
+      "summary": "Cooma 近景保留学校、医院和运动设施编号，并单列调查区域及大于 850 m ASL 的背景；图例不同于大范围图。",
+      "legend": [
+        {
+          "label": "Investigation Areas: Industrial",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Investigation Areas: Rural Residential",
+          "symbol": "beige hatch"
+        },
+        {
+          "label": "Investigation Areas: Health/Education Precincts",
+          "symbol": "red outline"
+        },
+        {
+          "label": "Investigation Areas: Cooma Creek Recreational Precinct",
+          "symbol": "green blue hatch"
+        },
+        {
+          "label": "Investigation Areas: Cooma Sports Hub",
+          "symbol": "blue hatch"
+        },
+        {
+          "label": "Mixed Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Infrastructure",
+          "symbol": "yellow"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "Approved Lots",
+          "symbol": "vertical hatch"
+        },
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "> 850 m ASL",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Riparian Buffers",
+          "symbol": "cyan"
+        },
+        {
+          "label": "Railway Corridor",
+          "symbol": "dashed black line"
+        },
+        {
+          "label": "State or Regional Road",
+          "symbol": "double line"
+        },
+        {
+          "label": "Local Road",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–4 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "调查区不是已实施分区。"
+      ],
+      "qualifiers": [
+        "85 Approved Lots 属原图历史标签，不证明当前仍有效。"
+      ],
+      "bbox": [
+        48.849998474121094,
+        33.449951171875,
+        569.199951171875,
+        771.199951171875
+      ],
+      "rasterDigest": "sha256:827407e08332dc2b5f7499d723d745e2d0ff8934443c19dbf03c27d408da0a35",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 61,
+        "bbox": [
+          48.849998474121094,
+          645.782451171875,
+          569.199951171875,
+          771.199951171875
+        ],
+        "rasterDigest": "sha256:94cad871a1b4a6caf1d1a9647d89cddb784f0dfebf3012350422ef29beb31dfb",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Monaro High School",
+        "2 Cooma North",
+        "3 Cooma Public",
+        "4 St Patricks Parish School",
+        "5 Snowy Mountains Christian School",
+        "6 Alpine School",
+        "7 Cooma TAFE",
+        "8 Cooma Hospital",
+        "9 Nijong Oval",
+        "10 Cooma Showground Multifunction Centre",
+        "11 Rotary Oval",
+        "12 Snowy Oval",
+        "13 Snowy Hydro",
+        "14 Cooma Saleyards",
+        "15 Cooma Racecourse"
+      ],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p065",
+      "pdfPage": 65,
+      "printedPage": 64,
+      "title": "Figure 22 — Jindabyne, East Jindabyne, Kalkite and Crackenback",
+      "summary": "广域图展示历史城镇用途、旅游设施和替代路线选项。与近景地图不同，含州森林、公园、步道及 Ski Tube。",
+      "legend": [
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Leesville Industrial Precinct",
+          "symbol": "purple outline"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Local Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "green"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Agritourism Routes",
+          "symbol": "brown dashed line"
+        },
+        {
+          "label": "Riparian Creeks 40m Buffer",
+          "symbol": "cyan"
+        },
+        {
+          "label": "Airfield",
+          "symbol": "aircraft"
+        },
+        {
+          "label": "Tourism Centre",
+          "symbol": "brown square"
+        },
+        {
+          "label": "Activity",
+          "symbol": "green circle"
+        },
+        {
+          "label": "Food & Beverage",
+          "symbol": "yellow circle"
+        },
+        {
+          "label": "Alternative Route Option",
+          "symbol": "red dashed double arrow"
+        },
+        {
+          "label": "Recreational Trails",
+          "symbol": "dotted line"
+        },
+        {
+          "label": "Ski Tube",
+          "symbol": "black patterned line"
+        }
+      ],
+      "scale": "0–4 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "原正文说明未来 20 年随 Snowy Mountains SAP 调整，不能当作最终 SAP 方案。",
+        "Alternative Route 是 option；40m riparian buffer 是原图标示，当前法律适用性未确定。"
+      ],
+      "qualifiers": [
+        "设施编号不连续；未补造缺号 21。"
+      ],
+      "bbox": [
+        45.650001525878906,
+        4.25,
+        788.800048828125,
+        529.0
+      ],
+      "rasterDigest": "sha256:1654dbcd2be7e5988a83674ec0be2b98dcf3098e3087aad805537ea012b1a532",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 65,
+        "bbox": [
+          610.4440374755859,
+          25.240000000000002,
+          788.800048828125,
+          298.11
+        ],
+        "rasterDigest": "sha256:6aa223489d00250f0bd6585460188766cd2af29059bb698ad80fb0d1e60f2e02",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "8 Station Resort",
+        "9 Lake Crackenback Resort",
+        "10 Jindabyne ALA",
+        "11 Bungarra",
+        "12 Alpine Adventist",
+        "13 Sport & Recreation",
+        "14 EcoCrackenback",
+        "15 Habitat Chalet",
+        "16 Thredbo Valley Horseriding",
+        "17 Sailing Club",
+        "18 Snowy Mountains Cookies",
+        "19 Wild Brumby Distillery",
+        "20 Crackenback Farm",
+        "22 Mill Creek Reserve",
+        "23 Trout Hatchery",
+        "24 Bungarra Bike Trails",
+        "25 Lake Foreshore",
+        "26 Ski Tube Terminal",
+        "27 Thredbo Valley Trail"
+      ],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p066",
+      "pdfPage": 66,
+      "printedPage": 65,
+      "title": "Figure 23 — Jindabyne and East Jindabyne",
+      "summary": "近景显示湖边城镇和健康、教育、假日公园等设施；保留与广域图不同的图例。",
+      "legend": [
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Leesville Industrial Precinct",
+          "symbol": "purple outline"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Local Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "Agritourism Routes",
+          "symbol": "brown dashed line"
+        },
+        {
+          "label": "Riparian Creeks 40m Buffer",
+          "symbol": "cyan"
+        },
+        {
+          "label": "Airfield",
+          "symbol": "aircraft"
+        },
+        {
+          "label": "Tourism Centre",
+          "symbol": "brown square"
+        },
+        {
+          "label": "Activity",
+          "symbol": "green circle"
+        },
+        {
+          "label": "Food & Beverage",
+          "symbol": "yellow circle"
+        },
+        {
+          "label": "Alternative Route Option",
+          "symbol": "red dashed double arrow"
+        },
+        {
+          "label": "Education",
+          "symbol": "blue circle"
+        },
+        {
+          "label": "Health",
+          "symbol": "pink circle"
+        },
+        {
+          "label": "Holiday Park",
+          "symbol": "caravan symbol"
+        }
+      ],
+      "scale": "0–1 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "原正文的 SAP 未来变化限定仍适用。",
+        "替代路线为选项；40m 缓冲带是历史图例，不是当前法定判断。"
+      ],
+      "qualifiers": [],
+      "bbox": [
+        42.5,
+        7.300048828125,
+        785.0499877929688,
+        531.6500244140625
+      ],
+      "rasterDigest": "sha256:e38c74c1156c234ddf62f4537e149acfa80ec5d2900b8cc2c13462642aa31439",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 66,
+        "bbox": [
+          606.8379907226563,
+          28.2740478515625,
+          785.0499877929688,
+          311.42303466796875
+        ],
+        "rasterDigest": "sha256:01ac354b916bcc71a2b7abc1b8c70dfd54620d4375895c03348d98062baefb08",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Jindabyne Central School",
+        "2 Snowy Mountains Grammar",
+        "3 Snowy River Health Centre",
+        "4 Rydges Resort",
+        "5 Snowy Valley Resort",
+        "6 Jindabyne Holiday Park",
+        "7 Discovery Park",
+        "10 Jindabyne ALA",
+        "12 Alpine Adventist",
+        "13 Sport & Recreation",
+        "17 Sailing Club",
+        "21 Jindabyne Brewery",
+        "22 Mill Creek Reserve",
+        "25 Lake Foreshore"
+      ],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p069",
+      "pdfPage": 69,
+      "printedPage": 68,
+      "title": "Figure 24 — Bombala",
+      "summary": "Bombala 城镇图分别展示调查工业/住宅/遗产/休闲区域，重型车辆路线为黄 Option 1、蓝 Option 2、紫 Option 5。",
+      "legend": [
+        {
+          "label": "Investigation Areas: Industrial",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Investigation Areas: Residential",
+          "symbol": "black orange hatch"
+        },
+        {
+          "label": "Investigation Areas: Heritage Precinct",
+          "symbol": "vertical grey hatch"
+        },
+        {
+          "label": "Investigation Areas: Recreational Precincts",
+          "symbol": "green blue hatch"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Routes: Option 1",
+          "symbol": "yellow dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Routes: Option 2",
+          "symbol": "blue dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Routes: Option 5",
+          "symbol": "purple dashed line"
+        },
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Health & Education Precinct",
+          "symbol": "red outline"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Railway",
+          "symbol": "black dashed line"
+        },
+        {
+          "label": "Elevation >750m: 750",
+          "symbol": "white"
+        },
+        {
+          "label": "Elevation >750m: 850",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Elevation >750m: 950",
+          "symbol": "dark green"
+        },
+        {
+          "label": "750 m",
+          "symbol": "green contour"
+        },
+        {
+          "label": "Riparian River Creek Buffer",
+          "symbol": "cyan"
+        },
+        {
+          "label": "State/Regional Road",
+          "symbol": "double line"
+        },
+        {
+          "label": "Local Road",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–1 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "全部 investigation route/area 保留调查状态，不能称已批准或实施。"
+      ],
+      "qualifiers": [
+        "本页文本层还有 Figure 20，视觉修订题注为 Figure 24；保留版本内题注冲突。",
+        "不得把区域图 Option 3/4 替换进本图。"
+      ],
+      "bbox": [
+        66.0999984741211,
+        26.000030517578125,
+        792.5999755859375,
+        526.3500366210938
+      ],
+      "rasterDigest": "sha256:2396bb920289be67b2823fe45b3ac59ed71b7a71ba31073ad55b5de17e9079ea",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 69,
+        "bbox": [
+          625.5049808502198,
+          51.01753082275391,
+          792.5999755859375,
+          371.2415347290039
+        ],
+        "rasterDigest": "sha256:384ff14ed1f6a665fa8a4fc2093a01765cd0ba1bb497724275d02e433ec169ed",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Bombala Racecourse",
+        "2 Platypus Sanctuary",
+        "3 Airfield",
+        "4 River and Rail Recreational Prec",
+        "5 Recreational Precinct",
+        "6 Primary and High School",
+        "7 Primary School",
+        "8 Hospital and Medical Centre",
+        "9 Timber Processing Precinct",
+        "10 Rosemeath Industrial Precinct Future Expansion Area",
+        "11 Endeavour Reserve"
+      ],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p072",
+      "pdfPage": 72,
+      "printedPage": 71,
+      "title": "Figure 25 — Berridale",
+      "summary": "Berridale 图分开现状用途和工业、城镇扩展、农村居住调查区，并标示海拔与重型车辆调查线路。",
+      "legend": [
+        {
+          "label": "Industrial Investigation Area",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Town Expansion Investigation Area",
+          "symbol": "black orange hatch"
+        },
+        {
+          "label": "Rural Residential",
+          "symbol": "beige hatch"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Route",
+          "symbol": "red dashed line"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Mixed Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Infrastructure",
+          "symbol": "yellow"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "Primary Production",
+          "symbol": "beige"
+        },
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Elevation m ASL: 900",
+          "symbol": "white"
+        },
+        {
+          "label": "Elevation m ASL: 1000",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Elevation m ASL: 1200",
+          "symbol": "dark green"
+        },
+        {
+          "label": "900m",
+          "symbol": "green contour"
+        },
+        {
+          "label": "Riparian Creeks 40m Buffer",
+          "symbol": "cyan"
+        },
+        {
+          "label": "State and Regional Roads",
+          "symbol": "double line"
+        },
+        {
+          "label": "Local Roads",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–2 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "调查路线和土地用途方案并非批准结果。",
+        "40m 缓冲仅为原图图例；须另核现行规划及现场条件。"
+      ],
+      "qualifiers": [],
+      "bbox": [
+        74.19999694824219,
+        26.199981689453125,
+        779.2000122070312,
+        526.0499877929688
+      ],
+      "rasterDigest": "sha256:33566e3afc26a6f8184083ff8a6403d60d5f96b8d1cee1e35ce235fff819ccd8",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 72,
+        "bbox": [
+          624.1000088500977,
+          56.190982055664065,
+          779.2000122070312,
+          376.09498596191406
+        ],
+        "rasterDigest": "sha256:7ab259292faaba00a053f5005aef5741c327d0fa771fa19cd60c9a2e55110c59",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Berridale Public School",
+        "2 Gegedzerick Cemetery",
+        "3 Wastewater Treatment Plant",
+        "4 Myack Creek Reserve",
+        "5 Coolamatong Golf Club",
+        "6 Travelling Stock Reserve"
+      ],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p075",
+      "pdfPage": 75,
+      "printedPage": 74,
+      "title": "Figure 26 — Michelago",
+      "summary": "Michelago 图对照现有村庄和未来城镇/农村住宅调查区域；地形、考拉、生态廊道及景观因素仍是规划研究背景。",
+      "legend": [
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Existing Town",
+          "symbol": "orange"
+        },
+        {
+          "label": "Investigation Areas: Rural Residential",
+          "symbol": "beige hatch"
+        },
+        {
+          "label": "Investigation Areas: Town",
+          "symbol": "black orange hatch"
+        },
+        {
+          "label": "Biodiversity Corridors",
+          "symbol": "green diagonal hatch"
+        },
+        {
+          "label": "Koala POM",
+          "symbol": "purple vertical hatch"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Landscape Vistas",
+          "symbol": "blue grey"
+        },
+        {
+          "label": "Riparian Areas",
+          "symbol": "cyan"
+        },
+        {
+          "label": "Soil Fertility: Moderately high",
+          "symbol": "dotted beige"
+        },
+        {
+          "label": "Local Road",
+          "symbol": "grey line"
+        },
+        {
+          "label": "State Road",
+          "symbol": "double line"
+        },
+        {
+          "label": "Railway Corridor",
+          "symbol": "black dashed line"
+        },
+        {
+          "label": "770 m",
+          "symbol": "green contour"
+        },
+        {
+          "label": "Elevation: 770",
+          "symbol": "white"
+        },
+        {
+          "label": "Elevation: 1113",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Elevation: 1457",
+          "symbol": "green"
+        },
+        {
+          "label": "Elevation: 1800",
+          "symbol": "dark green"
+        }
+      ],
+      "scale": "0–2 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "调查区不等于新增开发许可；需结合正文保留村庄及环境、水质、山脊保护条件。"
+      ],
+      "qualifiers": [
+        "Elevation 未单列基准或单位；仅 770 m 等高线明确带 m，不补造其它空间基准。"
+      ],
+      "bbox": [
+        32.650001525878906,
+        33.5999755859375,
+        560.1500244140625,
+        765.75
+      ],
+      "rasterDigest": "sha256:671ee5e41d861cb22ba237be6760cbdf431ce5fd003045670c00ba1ce1e517c6",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 75,
+        "bbox": [
+          32.650001525878906,
+          641.2844958496094,
+          560.1500244140625,
+          743.7854992675781
+        ],
+        "rasterDigest": "sha256:f45062fa0e3c4f76033dec804d00907908ab8ac7da11969abd494c6759bfd3cc",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Michelago Public School"
+      ],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p088",
+      "pdfPage": 88,
+      "printedPage": 87,
+      "title": "Figure 28 — rural land use characteristics",
+      "summary": "区域农村土地特征图把现有 Burra 农村住宅、住宅调查区、风景/生态背景和农业旅游路线分开；A–H 保留为图上八个区域。",
+      "legend": [
+        {
+          "label": "Strategic Centres",
+          "symbol": "red circle"
+        },
+        {
+          "label": "Burra Rural Residential Area",
+          "symbol": "pink"
+        },
+        {
+          "label": "Rural Residential Investigation Area",
+          "symbol": "yellow"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "dark green"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Koala POM",
+          "symbol": "pale grey"
+        },
+        {
+          "label": "Scenic Protection Areas",
+          "symbol": "pale pink outline and hatched fill"
+        },
+        {
+          "label": "Landscape Vistas",
+          "symbol": "blue grey"
+        },
+        {
+          "label": "AgriTourism Routes",
+          "symbol": "brown dashed line"
+        },
+        {
+          "label": "Soil Fertility: High",
+          "symbol": "beige"
+        },
+        {
+          "label": "Soil Fertility: Moderately high",
+          "symbol": "pale yellow"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "Rural Residential Investigation Area 仍为调查候选，不构成土地权利或开发许可。"
+      ],
+      "qualifiers": [],
+      "bbox": [
+        41.25,
+        51.0,
+        560.2000122070312,
+        757.5000610351562
+      ],
+      "rasterDigest": "sha256:9fdfdfba7fffe9008f44e5bf0d8318a138ccaafd05028017f0b82412dc2978ac",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 88,
+        "bbox": [
+          41.25,
+          686.8500549316407,
+          560.2000122070312,
+          757.5000610351562
+        ],
+        "rasterDigest": "sha256:ef87f020c63a4b1e771d54b59cc6244200936e80b750ce607ec18962fcf7fbf7",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "A Canberra Corridor",
+        "B Eastern Valleys",
+        "C Cooma",
+        "D Monaro",
+        "E Bombala",
+        "F Jindabyne",
+        "G Eucumbene",
+        "H Murrumbidgee Mountains"
+      ],
+      "relatedMainPage": null,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p105",
+      "pdfPage": 105,
+      "printedPage": 104,
+      "title": "Appendix — landscape and rural regions",
+      "summary": "附录景观图以粉色 LSPS Study Areas 标示研究区；图例没有正文第 8 页的战略中心和农村区域两项，不能合并成同一图例。",
+      "legend": [
+        {
+          "label": "LSPS Study Areas",
+          "symbol": "pink outline"
+        },
+        {
+          "label": "Biodiversity Corridors",
+          "symbol": "green diagonal hatch"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "dark green"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Soil Fertility: High",
+          "symbol": "beige"
+        },
+        {
+          "label": "Soil Fertility: Moderately high",
+          "symbol": "pale yellow"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [],
+      "qualifiers": [
+        "A–H 是图上分区标识，不能转换为法定分区。",
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        56.099998474121094,
+        97.20001220703125,
+        556.6499633789062,
+        769.5
+      ],
+      "rasterDigest": "sha256:b80de8efef0edc6f2e99144163437cdacba5812caa7038f7eca47c07201b0c92",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 105,
+        "bbox": [
+          56.099998474121094,
+          702.2700012207032,
+          556.6499633789062,
+          769.5
+        ],
+        "rasterDigest": "sha256:2a14896f4d6bafc47e83b9d2df8f7b016ae18f34ca19f73fbd58690c4fdff2c3",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "A Canberra Corridor",
+        "B Eastern Valleys",
+        "C Cooma",
+        "D Monaro",
+        "E Bombala",
+        "F Jindabyne",
+        "G Eucumbene",
+        "H Murrumbidgee Mountains"
+      ],
+      "relatedMainPage": 8,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p106",
+      "pdfPage": 106,
+      "printedPage": 105,
+      "title": "Appendix — strategic transport and connectivity",
+      "summary": "以区域图显示农业旅游、铁路/MRT、Bundian Way 与重型车辆路线调查选项；Bombala 在此区域图为 Option 3/4。",
+      "legend": [
+        {
+          "label": "Strategic Centres",
+          "symbol": "red circle"
+        },
+        {
+          "label": "Rural Regions",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "dark green"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Snowy SAP Study Area",
+          "symbol": "pink area"
+        },
+        {
+          "label": "Snowy Mts Airport",
+          "symbol": "aircraft"
+        },
+        {
+          "label": "Railway / MRT Corridor",
+          "symbol": "black dashed line"
+        },
+        {
+          "label": "Bundian Way",
+          "symbol": "purple dashed line"
+        },
+        {
+          "label": "Agri-Tourism Routes",
+          "symbol": "brown dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Route Investigation Options: Bombala Option 3",
+          "symbol": "yellow dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Route Investigation Options: Bombala Option 4",
+          "symbol": "blue dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Route Investigation Options: Cooma Option",
+          "symbol": "red double arrow"
+        },
+        {
+          "label": "Classified Roads: Regional",
+          "symbol": "grey line"
+        },
+        {
+          "label": "Classified Roads: State",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "重型车辆线路仅为 investigation options，不是已建或批准路线。",
+        "Snowy SAP 标为 study area，不能当作最终法定边界。"
+      ],
+      "qualifiers": [
+        "区域 Bombala 3/4 与城镇图 1/2/5 分开保留；不按同名路线合并。",
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        60.5,
+        94.39996337890625,
+        560.5499877929688,
+        778.5999755859375
+      ],
+      "rasterDigest": "sha256:7ae0fad993ae1226931484c080a70b7d621c638df14a73b48a462f33183dddfc",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 106,
+        "bbox": [
+          60.5,
+          703.3379742431641,
+          560.5499877929688,
+          778.5999755859375
+        ],
+        "rasterDigest": "sha256:f7ea677f067196f23c961e34f030b6eb2c2f540d5af774937d3b63f5ccb3b06c",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "A Canberra Corridor",
+        "B Eastern Valleys",
+        "C Cooma",
+        "D Monaro",
+        "E Bombala",
+        "F Jindabyne",
+        "G Eucumbene",
+        "H Murrumbidgee Mountains"
+      ],
+      "relatedMainPage": 57,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p107",
+      "pdfPage": 107,
+      "printedPage": 106,
+      "title": "Appendix — rural land use characteristics",
+      "summary": "附录农村土地特征图改以 LSPS Study Areas 研究范围图例；不同于正文第 88 页的战略中心图例，保留两处差异。",
+      "legend": [
+        {
+          "label": "LSPS Study Areas",
+          "symbol": "pink outline"
+        },
+        {
+          "label": "Burra Rural Residential Area",
+          "symbol": "pink"
+        },
+        {
+          "label": "Rural Residential Investigation Area",
+          "symbol": "yellow"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "dark green"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Koala POM",
+          "symbol": "pale grey"
+        },
+        {
+          "label": "Scenic Protection Areas",
+          "symbol": "pale pink outline and hatched fill"
+        },
+        {
+          "label": "Landscape Vistas",
+          "symbol": "blue grey"
+        },
+        {
+          "label": "AgriTourism Routes",
+          "symbol": "brown dashed line"
+        },
+        {
+          "label": "Soil Fertility: High",
+          "symbol": "beige"
+        },
+        {
+          "label": "Soil Fertility: Moderately high",
+          "symbol": "pale yellow"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "Rural Residential Investigation Area 仍为调查候选，不构成土地权利或开发许可。"
+      ],
+      "qualifiers": [
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        33.599998474121094,
+        30.8499755859375,
+        561.3999633789062,
+        761.0999755859375
+      ],
+      "rasterDigest": "sha256:cbdceefe7b000e459c7fdb9df103493aae69bd7a8ebb69ee00b9e8d4b1732957",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 107,
+        "bbox": [
+          33.599998474121094,
+          644.2599755859375,
+          561.3999633789062,
+          761.0999755859375
+        ],
+        "rasterDigest": "sha256:f41a630a3e6e939577629298eca1e89c8789562cf423c656bf9288a85c401b77",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "A Canberra Corridor",
+        "B Eastern Valleys",
+        "C Cooma",
+        "D Monaro",
+        "E Bombala",
+        "F Jindabyne",
+        "G Eucumbene",
+        "H Murrumbidgee Mountains"
+      ],
+      "relatedMainPage": 88,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p108",
+      "pdfPage": 108,
+      "printedPage": 107,
+      "title": "Appendix — regional biodiversity values",
+      "summary": "geoADAPT 2019 年 12 月 13 日的环境证据综合图；分别标记已命名价值类别、开发约束、研究区及未知生物多样性价值。",
+      "legend": [
+        {
+          "label": "Threatened Entities (Validated)",
+          "symbol": "bright green"
+        },
+        {
+          "label": "Criteria2 HEV Native Vegetation",
+          "symbol": "teal"
+        },
+        {
+          "label": "Criteria3 HEV Threatened Entities",
+          "symbol": "pale mint"
+        },
+        {
+          "label": "Criteria4 HEV Waterbodies",
+          "symbol": "blue"
+        },
+        {
+          "label": "Criteria5 HEV Geological Heritage",
+          "symbol": "black"
+        },
+        {
+          "label": "Criteria6 HEV Heritage",
+          "symbol": "yellow"
+        },
+        {
+          "label": "Criteria7 Development Constraints",
+          "symbol": "orange"
+        },
+        {
+          "label": "NSW Biodiversity Values Map (2019.12)",
+          "symbol": "pink"
+        },
+        {
+          "label": "Localities",
+          "symbol": "black dot"
+        },
+        {
+          "label": "Roads",
+          "symbol": "grey line"
+        },
+        {
+          "label": "Railway",
+          "symbol": "dashed line"
+        },
+        {
+          "label": "Study Areas",
+          "symbol": "purple outline"
+        },
+        {
+          "label": "Unknown Biodiversity Values",
+          "symbol": "grey"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "地图仅作指导，改分区或开发前必须进行实地验证，不能以图替代。",
+        "多数数据注明 CC 4.0；敏感/脆弱土地及部分受威胁物种记录另需数据许可协议。"
+      ],
+      "qualifiers": [
+        "Validated 是原图类别名称，不是本系统完成了验证。",
+        "Unknown 类别不能解释为没有生物多样性价值。",
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        35.400001525878906,
+        13.64996337890625,
+        561.9500122070312,
+        770.1499633789062
+      ],
+      "rasterDigest": "sha256:bc7ee38124540658b685904279e77d181ce781932b78a858c664540f623810b3",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 108,
+        "bbox": [
+          40.66550163269043,
+          535.6349633789063,
+          246.02000579833987,
+          755.0199633789063
+        ],
+        "rasterDigest": "sha256:41079e807abaeb46b2af2bc76fc8b70042ace9b811af9617f2a39cc229a09638",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [],
+      "relatedMainPage": 28,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "geoADAPT, 13 December 2019 (map production date)"
+    },
+    {
+      "id": "lsps-map-p109",
+      "pdfPage": 109,
+      "printedPage": 108,
+      "title": "Appendix — classified roads",
+      "summary": "原图按州级、区域和地方道路及铺装情况分类；颜色和虚实线共同决定图例含义。它不提供当前通行、道路状况或管理责任认定。",
+      "legend": [
+        {
+          "label": "Snowy Monaro Regional Council",
+          "symbol": "thick black outline"
+        },
+        {
+          "label": "Local Government Boundaries",
+          "symbol": "thin black outline"
+        },
+        {
+          "label": "Towns and Villages",
+          "symbol": "small mauve dot"
+        },
+        {
+          "label": "Regional Sealed Surface",
+          "symbol": "solid pink line"
+        },
+        {
+          "label": "Regional Unsealed Surface",
+          "symbol": "dashed pink line"
+        },
+        {
+          "label": "State Sealed Surface",
+          "symbol": "solid purple line"
+        },
+        {
+          "label": "State Unsealed Surface",
+          "symbol": "dashed purple line"
+        },
+        {
+          "label": "Not SMSC Road",
+          "symbol": "tan line"
+        },
+        {
+          "label": "Sealed Road",
+          "symbol": "grey line"
+        },
+        {
+          "label": "Unsealed Road",
+          "symbol": "grey dashed line"
+        },
+        {
+          "label": "Forestry NSW",
+          "symbol": "green patterned fill"
+        },
+        {
+          "label": "NPWS reserve",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Major Rivers",
+          "symbol": "blue line"
+        }
+      ],
+      "scale": "0–40 km",
+      "north": "NOT_STATED",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [],
+      "qualifiers": [
+        "保留原图拼写 Not SMSC Road，未擅自改成 SMRC。",
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        43.29999923706055,
+        52.949951171875,
+        572.5999755859375,
+        763.5999755859375
+      ],
+      "rasterDigest": "sha256:54977766e1418d2feb381298c4d205031334b0ce59b1a683dd184278b05e4cf6",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 109,
+        "bbox": [
+          53.885998764038085,
+          564.61796875,
+          217.96899143218994,
+          749.3869750976562
+        ],
+        "rasterDigest": "sha256:24b0e84c3860e3901e59221cceeccd7516b90b90d429c74aa427296510cdd316",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [],
+      "relatedMainPage": 48,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "Map date/source mark not identified; no year inferred"
+    },
+    {
+      "id": "lsps-map-p110",
+      "pdfPage": 110,
+      "printedPage": 109,
+      "title": "Appendix — Cooma area",
+      "summary": "Cooma 大范围图把现状用途与未来调查区域分开，南侧红弧线为重型车辆调查路线，图中机场与环境叠层均为历史参考。",
+      "legend": [
+        {
+          "label": "Investigation Areas: Industrial",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Investigation Areas: Residential",
+          "symbol": "black orange hatch"
+        },
+        {
+          "label": "Investigation Areas: Rural Residential",
+          "symbol": "beige hatch"
+        },
+        {
+          "label": "Investigation Areas: Health/Education Precincts",
+          "symbol": "red outline"
+        },
+        {
+          "label": "Investigation Areas: Cooma Creek Recreational Precinct",
+          "symbol": "green blue hatch"
+        },
+        {
+          "label": "Investigation Areas: Cooma Sports Hub",
+          "symbol": "blue hatch"
+        },
+        {
+          "label": "Investigation Areas: Airport Precinct",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Mixed Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Infrastructure",
+          "symbol": "yellow"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Approved Lots",
+          "symbol": "vertical hatch"
+        },
+        {
+          "label": "Biodiversity Corridors",
+          "symbol": "green hatch"
+        },
+        {
+          "label": "Koala POM",
+          "symbol": "purple vertical hatch"
+        },
+        {
+          "label": "Riparian Buffers",
+          "symbol": "cyan"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Snowy Mts Airport",
+          "symbol": "aircraft"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Route",
+          "symbol": "red double arrow"
+        },
+        {
+          "label": "Railway Corridor",
+          "symbol": "dashed black line"
+        },
+        {
+          "label": "State or Regional Road",
+          "symbol": "double line"
+        },
+        {
+          "label": "Local Roads",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–8 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "调查区和路线仍需后续研究及审批，不代表已改分区或施工。"
+      ],
+      "qualifiers": [
+        "Approved Lots 只是历史图上标记，未核验当前许可。",
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        39.25,
+        23.3499755859375,
+        555.4000244140625,
+        776.7999877929688
+      ],
+      "rasterDigest": "sha256:886cedffbec5a3f2cbc2f03993939f11b9279c4ba4dbe838c07e82c6844554a8",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 110,
+        "bbox": [
+          39.25,
+          648.7134857177734,
+          555.4000244140625,
+          776.7999877929688
+        ],
+        "rasterDigest": "sha256:4b8b013eee3e0ebf9a4cf439395927ce24df756aaee305e56c0ee342c2db49a6",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [],
+      "relatedMainPage": 60,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p111",
+      "pdfPage": 111,
+      "printedPage": 110,
+      "title": "Appendix — Cooma close view",
+      "summary": "Cooma 近景保留学校、医院和运动设施编号，并单列调查区域及大于 850 m ASL 的背景；图例不同于大范围图。",
+      "legend": [
+        {
+          "label": "Investigation Areas: Industrial",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Investigation Areas: Rural Residential",
+          "symbol": "beige hatch"
+        },
+        {
+          "label": "Investigation Areas: Health/Education Precincts",
+          "symbol": "red outline"
+        },
+        {
+          "label": "Investigation Areas: Cooma Creek Recreational Precinct",
+          "symbol": "green blue hatch"
+        },
+        {
+          "label": "Investigation Areas: Cooma Sports Hub",
+          "symbol": "blue hatch"
+        },
+        {
+          "label": "Mixed Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Infrastructure",
+          "symbol": "yellow"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "Approved Lots",
+          "symbol": "vertical hatch"
+        },
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "> 850 m ASL",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Riparian Buffers",
+          "symbol": "cyan"
+        },
+        {
+          "label": "Railway Corridor",
+          "symbol": "dashed black line"
+        },
+        {
+          "label": "State or Regional Road",
+          "symbol": "double line"
+        },
+        {
+          "label": "Local Road",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–4 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "调查区不是已实施分区。"
+      ],
+      "qualifiers": [
+        "85 Approved Lots 属原图历史标签，不证明当前仍有效。",
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        36.849998474121094,
+        21.449951171875,
+        557.199951171875,
+        759.199951171875
+      ],
+      "rasterDigest": "sha256:cacf2470591d1080f87de95cf0fdd6bf781fc8deaee638999105eac1a4c50e53",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 111,
+        "bbox": [
+          36.849998474121094,
+          633.782451171875,
+          557.199951171875,
+          759.199951171875
+        ],
+        "rasterDigest": "sha256:fb71e0f027d822efcacbda0aff0d9d876810a6a87f695dffeeaacd63a535ff63",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Monaro High School",
+        "2 Cooma North",
+        "3 Cooma Public",
+        "4 St Patricks Parish School",
+        "5 Snowy Mountains Christian School",
+        "6 Alpine School",
+        "7 Cooma TAFE",
+        "8 Cooma Hospital",
+        "9 Nijong Oval",
+        "10 Cooma Showground Multifunction Centre",
+        "11 Rotary Oval",
+        "12 Snowy Oval",
+        "13 Snowy Hydro",
+        "14 Cooma Saleyards",
+        "15 Cooma Racecourse"
+      ],
+      "relatedMainPage": 61,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p112",
+      "pdfPage": 112,
+      "printedPage": 111,
+      "title": "Appendix — Jindabyne, East Jindabyne, Kalkite and Crackenback",
+      "summary": "广域图展示历史城镇用途、旅游设施和替代路线选项。与近景地图不同，含州森林、公园、步道及 Ski Tube。",
+      "legend": [
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Leesville Industrial Precinct",
+          "symbol": "purple outline"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Local Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "State Forest",
+          "symbol": "green"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Agritourism Routes",
+          "symbol": "brown dashed line"
+        },
+        {
+          "label": "Riparian Creeks 40m Buffer",
+          "symbol": "cyan"
+        },
+        {
+          "label": "Airfield",
+          "symbol": "aircraft"
+        },
+        {
+          "label": "Tourism Centre",
+          "symbol": "brown square"
+        },
+        {
+          "label": "Activity",
+          "symbol": "green circle"
+        },
+        {
+          "label": "Food & Beverage",
+          "symbol": "yellow circle"
+        },
+        {
+          "label": "Alternative Route Option",
+          "symbol": "red dashed double arrow"
+        },
+        {
+          "label": "Recreational Trails",
+          "symbol": "dotted line"
+        },
+        {
+          "label": "Ski Tube",
+          "symbol": "black patterned line"
+        }
+      ],
+      "scale": "0–4 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "原正文说明未来 20 年随 Snowy Mountains SAP 调整，不能当作最终 SAP 方案。",
+        "Alternative Route 是 option；40m riparian buffer 是原图标示，当前法律适用性未确定。"
+      ],
+      "qualifiers": [
+        "设施编号不连续；未补造缺号 21。",
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。",
+        "附录图不重复正文 SAP 变化题注；该限定由正文页及第 63 页叙述提供，不伪称印在本图上。"
+      ],
+      "bbox": [
+        55.349998474121094,
+        39.45001220703125,
+        781.25,
+        529.7000122070312
+      ],
+      "rasterDigest": "sha256:9a29bd8dbd9fcd6f347c4d5210c34780af32c205eaa56bc30b7cebf2752e8685",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 112,
+        "bbox": [
+          607.0339996337891,
+          59.06001220703125,
+          781.25,
+          313.99001220703127
+        ],
+        "rasterDigest": "sha256:78a09199e0d882dfc291cd1263db06ccb9b58edd3c19ac40f95f684fe1de5284",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "8 Station Resort",
+        "9 Lake Crackenback Resort",
+        "10 Jindabyne ALA",
+        "11 Bungarra",
+        "12 Alpine Adventist",
+        "13 Sport & Recreation",
+        "14 EcoCrackenback",
+        "15 Habitat Chalet",
+        "16 Thredbo Valley Horseriding",
+        "17 Sailing Club",
+        "18 Snowy Mountains Cookies",
+        "19 Wild Brumby Distillery",
+        "20 Crackenback Farm",
+        "22 Mill Creek Reserve",
+        "23 Trout Hatchery",
+        "24 Bungarra Bike Trails",
+        "25 Lake Foreshore",
+        "26 Ski Tube Terminal",
+        "27 Thredbo Valley Trail"
+      ],
+      "relatedMainPage": 65,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p113",
+      "pdfPage": 113,
+      "printedPage": 112,
+      "title": "Appendix — Jindabyne and East Jindabyne",
+      "summary": "近景显示湖边城镇和健康、教育、假日公园等设施；保留与广域图不同的图例。",
+      "legend": [
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Leesville Industrial Precinct",
+          "symbol": "purple outline"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Local Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "Agritourism Routes",
+          "symbol": "brown dashed line"
+        },
+        {
+          "label": "Riparian Creeks 40m Buffer",
+          "symbol": "cyan"
+        },
+        {
+          "label": "Airfield",
+          "symbol": "aircraft"
+        },
+        {
+          "label": "Tourism Centre",
+          "symbol": "brown square"
+        },
+        {
+          "label": "Activity",
+          "symbol": "green circle"
+        },
+        {
+          "label": "Food & Beverage",
+          "symbol": "yellow circle"
+        },
+        {
+          "label": "Alternative Route Option",
+          "symbol": "red dashed double arrow"
+        },
+        {
+          "label": "Education",
+          "symbol": "blue circle"
+        },
+        {
+          "label": "Health",
+          "symbol": "pink circle"
+        },
+        {
+          "label": "Holiday Park",
+          "symbol": "caravan symbol"
+        }
+      ],
+      "scale": "0–1 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "原正文的 SAP 未来变化限定仍适用。",
+        "替代路线为选项；40m 缓冲带是历史图例，不是当前法定判断。"
+      ],
+      "qualifiers": [
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。",
+        "附录图不重复正文 SAP 变化题注；该限定由正文页及第 63 页叙述提供，不伪称印在本图上。"
+      ],
+      "bbox": [
+        55.400001525878906,
+        27.45001220703125,
+        792.4500122070312,
+        528.5
+      ],
+      "rasterDigest": "sha256:4c31297d3b541ad6080d70855912b7c7e78cedca5cf69468505e4a6060326acb",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 113,
+        "bbox": [
+          615.5580096435547,
+          47.49201171875,
+          792.4500122070312,
+          318.0590051269531
+        ],
+        "rasterDigest": "sha256:4dc0899fc7e3971836201f8431613abb17dbb0fcc46b40cc27bbcb8e1a1c717c",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Jindabyne Central School",
+        "2 Snowy Mountains Grammar",
+        "3 Snowy River Health Centre",
+        "4 Rydges Resort",
+        "5 Snowy Valley Resort",
+        "6 Jindabyne Holiday Park",
+        "7 Discovery Park",
+        "10 Jindabyne ALA",
+        "12 Alpine Adventist",
+        "13 Sport & Recreation",
+        "17 Sailing Club",
+        "21 Jindabyne Brewery",
+        "22 Mill Creek Reserve",
+        "25 Lake Foreshore"
+      ],
+      "relatedMainPage": 66,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p114",
+      "pdfPage": 114,
+      "printedPage": 113,
+      "title": "Appendix — Bombala",
+      "summary": "Bombala 城镇图分别展示调查工业/住宅/遗产/休闲区域，重型车辆路线为黄 Option 1、蓝 Option 2、紫 Option 5。",
+      "legend": [
+        {
+          "label": "Investigation Areas: Industrial",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Investigation Areas: Residential",
+          "symbol": "black orange hatch"
+        },
+        {
+          "label": "Investigation Areas: Heritage Precinct",
+          "symbol": "vertical grey hatch"
+        },
+        {
+          "label": "Investigation Areas: Recreational Precincts",
+          "symbol": "green blue hatch"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Routes: Option 1",
+          "symbol": "yellow dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Routes: Option 2",
+          "symbol": "blue dashed line"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Routes: Option 5",
+          "symbol": "purple dashed line"
+        },
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Health & Education Precinct",
+          "symbol": "red outline"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Railway",
+          "symbol": "black dashed line"
+        },
+        {
+          "label": "Elevation >750m: 750",
+          "symbol": "white"
+        },
+        {
+          "label": "Elevation >750m: 850",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Elevation >750m: 950",
+          "symbol": "dark green"
+        },
+        {
+          "label": "750 m",
+          "symbol": "green contour"
+        },
+        {
+          "label": "Riparian River Creek Buffer",
+          "symbol": "cyan"
+        },
+        {
+          "label": "State/Regional Road",
+          "symbol": "double line"
+        },
+        {
+          "label": "Local Road",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–1 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "全部 investigation route/area 保留调查状态，不能称已批准或实施。"
+      ],
+      "qualifiers": [
+        "不得把区域图 Option 3/4 替换进本图。",
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        65.4000015258789,
+        27.100006103515625,
+        791.9000244140625,
+        527.4500122070312
+      ],
+      "rasterDigest": "sha256:3312609ce5b8b817b9cf015bb77c8de80016c5838b88ee95f78c2ecb765f14f7",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 114,
+        "bbox": [
+          624.8050191497803,
+          52.11750640869141,
+          791.9000244140625,
+          372.3415103149414
+        ],
+        "rasterDigest": "sha256:265fe7d2939af4d306459b99998ca319aeda4e6c93f914e8a6f69ea70572bd1a",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Bombala Racecourse",
+        "2 Platypus Sanctuary",
+        "3 Airfield",
+        "4 River and Rail Recreational Prec",
+        "5 Recreational Precinct",
+        "6 Primary and High School",
+        "7 Primary School",
+        "8 Hospital and Medical Centre",
+        "9 Timber Processing Precinct",
+        "10 Rosemeath Industrial Precinct Future Expansion Area",
+        "11 Endeavour Reserve"
+      ],
+      "relatedMainPage": 69,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p115",
+      "pdfPage": 115,
+      "printedPage": 114,
+      "title": "Appendix — Berridale",
+      "summary": "Berridale 图分开现状用途和工业、城镇扩展、农村居住调查区，并标示海拔与重型车辆调查线路。",
+      "legend": [
+        {
+          "label": "Industrial Investigation Area",
+          "symbol": "purple hatch"
+        },
+        {
+          "label": "Town Expansion Investigation Area",
+          "symbol": "black orange hatch"
+        },
+        {
+          "label": "Rural Residential",
+          "symbol": "beige hatch"
+        },
+        {
+          "label": "Heavy Vehicle Investigation Route",
+          "symbol": "red dashed line"
+        },
+        {
+          "label": "Existing Industrial",
+          "symbol": "grey"
+        },
+        {
+          "label": "Existing Residential",
+          "symbol": "orange"
+        },
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Mixed Use",
+          "symbol": "light blue"
+        },
+        {
+          "label": "Infrastructure",
+          "symbol": "yellow"
+        },
+        {
+          "label": "Existing Environmental Mgt",
+          "symbol": "lime"
+        },
+        {
+          "label": "Primary Production",
+          "symbol": "beige"
+        },
+        {
+          "label": "Town Centre",
+          "symbol": "blue outline"
+        },
+        {
+          "label": "Elevation m ASL: 900",
+          "symbol": "white"
+        },
+        {
+          "label": "Elevation m ASL: 1000",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Elevation m ASL: 1200",
+          "symbol": "dark green"
+        },
+        {
+          "label": "900m",
+          "symbol": "green contour"
+        },
+        {
+          "label": "Riparian Creeks 40m Buffer",
+          "symbol": "cyan"
+        },
+        {
+          "label": "State and Regional Roads",
+          "symbol": "double line"
+        },
+        {
+          "label": "Local Roads",
+          "symbol": "grey line"
+        }
+      ],
+      "scale": "0–2 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "调查路线和土地用途方案并非批准结果。",
+        "40m 缓冲仅为原图图例；须另核现行规划及现场条件。"
+      ],
+      "qualifiers": [
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        74.75,
+        25.199981689453125,
+        779.75,
+        525.0499877929688
+      ],
+      "rasterDigest": "sha256:6e883bc0d4b7d1bf99acf19b384d27071f336de98c7acff9619a12c2bbe1551b",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 115,
+        "bbox": [
+          624.65,
+          55.190982055664065,
+          779.75,
+          375.09498596191406
+        ],
+        "rasterDigest": "sha256:bbc6298932f1c1df85755bc2fdd9e242b3065e961c20eb470bc79654c66bbec7",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Berridale Public School",
+        "2 Gegedzerick Cemetery",
+        "3 Wastewater Treatment Plant",
+        "4 Myack Creek Reserve",
+        "5 Coolamatong Golf Club",
+        "6 Travelling Stock Reserve"
+      ],
+      "relatedMainPage": 72,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    },
+    {
+      "id": "lsps-map-p116",
+      "pdfPage": 116,
+      "printedPage": 115,
+      "title": "Appendix — Michelago",
+      "summary": "Michelago 图对照现有村庄和未来城镇/农村住宅调查区域；地形、考拉、生态廊道及景观因素仍是规划研究背景。",
+      "legend": [
+        {
+          "label": "Parks and Recreational Spaces",
+          "symbol": "green"
+        },
+        {
+          "label": "Existing Rural Residential",
+          "symbol": "pale orange"
+        },
+        {
+          "label": "Existing Town",
+          "symbol": "orange"
+        },
+        {
+          "label": "Investigation Areas: Rural Residential",
+          "symbol": "beige hatch"
+        },
+        {
+          "label": "Investigation Areas: Town",
+          "symbol": "black orange hatch"
+        },
+        {
+          "label": "Biodiversity Corridors",
+          "symbol": "green diagonal hatch"
+        },
+        {
+          "label": "Koala POM",
+          "symbol": "purple vertical hatch"
+        },
+        {
+          "label": "NPWS Parks Reserves",
+          "symbol": "light green"
+        },
+        {
+          "label": "Landscape Vistas",
+          "symbol": "blue grey"
+        },
+        {
+          "label": "Riparian Areas",
+          "symbol": "cyan"
+        },
+        {
+          "label": "Soil Fertility: Moderately high",
+          "symbol": "dotted beige"
+        },
+        {
+          "label": "Local Road",
+          "symbol": "grey line"
+        },
+        {
+          "label": "State Road",
+          "symbol": "double line"
+        },
+        {
+          "label": "Railway Corridor",
+          "symbol": "black dashed line"
+        },
+        {
+          "label": "770 m",
+          "symbol": "green contour"
+        },
+        {
+          "label": "Elevation: 770",
+          "symbol": "white"
+        },
+        {
+          "label": "Elevation: 1113",
+          "symbol": "pale green"
+        },
+        {
+          "label": "Elevation: 1457",
+          "symbol": "green"
+        },
+        {
+          "label": "Elevation: 1800",
+          "symbol": "dark green"
+        }
+      ],
+      "scale": "0–2 km",
+      "north": "PRINTED_NORTH_SYMBOL",
+      "scope": "Snowy Monaro historical strategic study",
+      "conditions": [
+        "调查区不等于新增开发许可；需结合正文保留村庄及环境、水质、山脊保护条件。"
+      ],
+      "qualifiers": [
+        "Elevation 未单列基准或单位；仅 770 m 等高线明确带 m，不补造其它空间基准。",
+        "附录独立出现位置；与正文分别锚定并经实际像素核对。"
+      ],
+      "bbox": [
+        47.650001525878906,
+        54.199951171875,
+        566.4000244140625,
+        774.199951171875
+      ],
+      "rasterDigest": "sha256:15b667284f115cee0e32a4bad76a7a22f543776633c6926671fb0b6d18b561cd",
+      "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+      "legendAnchor": {
+        "pdfPage": 116,
+        "bbox": [
+          47.650001525878906,
+          651.799951171875,
+          566.4000244140625,
+          752.599951171875
+        ],
+        "rasterDigest": "sha256:ea65f74bc17b9364f92c804046151d4f65b06385103378f80ff9045cdf83fe90",
+        "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2"
+      },
+      "featureLabels": [
+        "1 Michelago Public School"
+      ],
+      "relatedMainPage": 75,
+      "coordinateReferenceSystem": "NOT_STATED",
+      "spatialApplicability": "UNKNOWN",
+      "legalStatus": "HISTORICAL_RESEARCH_NOT_CURRENT_LAW",
+      "actualExecution": "UNKNOWN",
+      "geometryExtracted": false,
+      "reviewMethod": "PIXEL_AND_LEGEND_READ_NOT_GIS_VALIDATION",
+      "printedSourceMark": "NSW Department of Customer Service 2020 (copyright year, not observation year)"
+    }
+  ],
+  "limitations": [
+    "27 occurrences are not 27 unique GIS datasets.",
+    "All source pages and each legend were visually read; current planning status and parcel applicability remain UNKNOWN.",
+    "Original pixels and full PDF not redistributed."
+  ]
+}

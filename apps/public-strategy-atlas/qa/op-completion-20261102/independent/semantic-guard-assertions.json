@@ -1,0 +1,334 @@
+{
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "authorSHA256": "d1c9a1abe6785e4154c96426cb51c8f9c7908248f5de858966fb0f1e1ab2120c",
+  "guards": [
+    {
+      "id": "OP-SEM-GUARD-01",
+      "unitId": "csoi:op2026:finance:p116:service-tourism-r04",
+      "pdfPage": 116,
+      "sourceBBox": [
+        40.1268310546875,
+        676.988525390625,
+        557.1743774414062,
+        715.7223510742188
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Merged expenditure group must cover these costs, even when text label is vertically near a later leaf.",
+      "requiredFieldValues": {
+        "facts.rowRole": "Expenditure component",
+        "facts.columnValues[0].meaning": "Expenditure component"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-02",
+      "unitId": "csoi:op2026:finance:p116:service-tourism-r05",
+      "pdfPage": 116,
+      "sourceBBox": [
+        198.34324645996094,
+        689.8135986328125,
+        557.1743774414062,
+        702.7683715820312
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Merged expenditure group must cover these costs, even when text label is vertically near a later leaf.",
+      "requiredFieldValues": {
+        "facts.rowRole": "Expenditure component",
+        "facts.columnValues[0].meaning": "Expenditure component"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-03",
+      "unitId": "csoi:op2026:finance:p116:service-tourism-r06",
+      "pdfPage": 116,
+      "sourceBBox": [
+        198.34324645996094,
+        702.7683715820312,
+        557.1743774414062,
+        715.7223510742188
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Merged expenditure group must cover these costs, even when text label is vertically near a later leaf.",
+      "requiredFieldValues": {
+        "facts.rowRole": "Expenditure component",
+        "facts.columnValues[0].meaning": "Expenditure component"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-04",
+      "unitId": "csoi:op2026:finance:p117:service-fleet-and-plant-r05",
+      "pdfPage": 117,
+      "sourceBBox": [
+        38.346588134765625,
+        691.694091796875,
+        555.3807983398438,
+        704.5189208984375
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Merged expenditure group must cover these costs, even when text label is vertically near a later leaf.",
+      "requiredFieldValues": {
+        "facts.rowRole": "Expenditure component",
+        "facts.columnValues[0].meaning": "Expenditure component"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-05",
+      "unitId": "csoi:op2026:finance:p120:fund-r08",
+      "pdfPage": 120,
+      "sourceBBox": [
+        71.0857162475586,
+        321.0760498046875,
+        520.6172485351562,
+        334.99603271484375
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Net disposal gains are an income component, not total income.",
+      "requiredFieldValues": {
+        "facts.rowRole": "SOURCE_LINE_ITEM"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-06",
+      "unitId": "csoi:op2026:finance:p120:fund-r19",
+      "pdfPage": 120,
+      "sourceBBox": [
+        71.0857162475586,
+        474.22601318359375,
+        520.6172485351562,
+        496.18603515625
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Preserve result/flow/balance/forecast scope rather than inheriting previous section heading.",
+      "requiredFieldValues": {
+        "facts.rowRole": "SOURCE_RESULT",
+        "facts.statementSection": "Operating results"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-07",
+      "unitId": "csoi:op2026:finance:p120:fund-r21",
+      "pdfPage": 120,
+      "sourceBBox": [
+        71.0857162475586,
+        510.10601806640625,
+        520.6172485351562,
+        533.9046630859375
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Preserve result/flow/balance/forecast scope rather than inheriting previous section heading.",
+      "requiredFieldValues": {
+        "facts.rowRole": "SOURCE_RESULT",
+        "facts.statementSection": "Operating results"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-08",
+      "unitId": "csoi:op2026:finance:p121:fund-r15",
+      "pdfPage": 121,
+      "sourceBBox": [
+        72.47779846191406,
+        430.9000244140625,
+        521.9817504882812,
+        444.81903076171875
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Preserve result/flow/balance/forecast scope rather than inheriting previous section heading.",
+      "requiredFieldValues": {
+        "facts.rowRole": "SOURCE_CASH_MOVEMENT",
+        "facts.statementSection": "Net movement in cash assets"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-09",
+      "unitId": "csoi:op2026:finance:p121:fund-r17",
+      "pdfPage": 121,
+      "sourceBBox": [
+        72.47779846191406,
+        458.739013671875,
+        521.9817504882812,
+        480.69903564453125
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Preserve result/flow/balance/forecast scope rather than inheriting previous section heading.",
+      "requiredFieldValues": {
+        "facts.rowRole": "SOURCE_BALANCE",
+        "facts.statementSection": "Cash balances"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-10",
+      "unitId": "csoi:op2026:finance:p121:fund-r19",
+      "pdfPage": 121,
+      "sourceBBox": [
+        72.47779846191406,
+        494.6195068359375,
+        521.9817504882812,
+        508.53900146484375
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Preserve result/flow/balance/forecast scope rather than inheriting previous section heading.",
+      "requiredFieldValues": {
+        "facts.rowRole": "SOURCE_BALANCE",
+        "facts.statementSection": "Cash balances"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-11",
+      "unitId": "csoi:op2026:finance:p121:fund-r20",
+      "pdfPage": 121,
+      "sourceBBox": [
+        72.47779846191406,
+        508.53900146484375,
+        521.9817504882812,
+        522.458984375
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Preserve result/flow/balance/forecast scope rather than inheriting previous section heading.",
+      "requiredFieldValues": {
+        "facts.rowRole": "SOURCE_INVESTMENT_BALANCE",
+        "facts.statementSection": "Investments on hand"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-12",
+      "unitId": "csoi:op2026:finance:p121:fund-r22",
+      "pdfPage": 121,
+      "sourceBBox": [
+        72.47779846191406,
+        536.3800048828125,
+        521.9817504882812,
+        557.8590087890625
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Preserve result/flow/balance/forecast scope rather than inheriting previous section heading.",
+      "requiredFieldValues": {
+        "facts.rowRole": "SOURCE_DECLARED_TOTAL",
+        "facts.statementSection": "Cash and investment balances"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-13",
+      "unitId": "csoi:op2026:finance:p121:fund-r23",
+      "pdfPage": 121,
+      "sourceBBox": [
+        72.47779846191406,
+        557.8590087890625,
+        521.9817504882812,
+        571.9390258789062
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Preserve result/flow/balance/forecast scope rather than inheriting previous section heading.",
+      "requiredFieldValues": {
+        "facts.rowRole": "SOURCE_FORECAST",
+        "facts.statementSection": "Forecast unrestricted funds"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-14",
+      "unitId": "csoi:op2026:finance:p111:capital-footnote",
+      "pdfPage": 111,
+      "sourceBBox": [
+        36.0,
+        546.7159423828125,
+        211.4409637451172,
+        555.6759033203125
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Native text is occluded by full-page photo, so it is not visible policy evidence.",
+      "requiredFieldValues": {
+        "facts.textVisibility": "HIDDEN_OR_OCCLUDED_TEXT_LAYER",
+        "category": "OP_DOCUMENT_CONTEXT"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-15",
+      "unitId": "csoi:op2026:finance:p109:capital-r05",
+      "pdfPage": 109,
+      "sourceBBox": [
+        31.46768569946289,
+        216.6020965576172,
+        808.7515869140625,
+        242.8550567626953
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Empty overall pool project value differs from three explicitly printed zero funding cells.",
+      "requiredFieldValues": {
+        "facts.columnValues[0].status": "BLANK_NOT_ZERO",
+        "facts.columnValues[0].numericValue": null,
+        "facts.columnValues[1].numericValue": 0,
+        "facts.columnValues[2].numericValue": 0,
+        "facts.columnValues[3].numericValue": 0
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-16",
+      "unitId": "csoi:op2026:finance:p140:pensioner-rebate-1",
+      "pdfPage": 140,
+      "sourceBBox": [
+        46.75239944458008,
+        190.800048828125,
+        356.9280090332031,
+        222.71951293945312
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "250 cap covers ordinary rates AND domestic waste together, not250 each.",
+      "requiredFieldValues": {
+        "facts.combinedScope": true,
+        "facts.maximumRebate.numericValue": 250.0
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-17",
+      "unitId": "csoi:op2026:finance:p141:ceo-fee-authority",
+      "pdfPage": 141,
+      "sourceBBox": [
+        46.809661865234375,
+        375.15985107421875,
+        433.1544494628906,
+        390.2294616699219
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "CEO variation only for non-legislated fees upon request.",
+      "requiredFieldValues": {
+        "facts.feeScope": "Non-legislated fees",
+        "facts.trigger": "Upon request"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    },
+    {
+      "id": "OP-SEM-GUARD-18",
+      "unitId": "csoi:op2026:finance:p137:clause-1-11-2",
+      "pdfPage": 137,
+      "sourceBBox": [
+        82.78897094726562,
+        212.20028686523438,
+        532.017578125,
+        289.91082763671875
+      ],
+      "sourceBasis": "Independently read original page and reviewed source scope; see author-findings and finance-readback matrix.",
+      "requiredMeaning": "Printed commercialFOGO fortnightlyCooma clause is preserved separately from weeklyCoomaMonaro table.",
+      "requiredFieldValues": {
+        "facts.availableAreaAsPrinted": "Cooma",
+        "facts.frequency": "Fortnightly"
+      },
+      "scope": "A bounded regression guard for one reviewed meaning, not a general natural-language correctness proof."
+    }
+  ],
+  "previousAuthorSHA256": "7878038eac612cb440620c565a11e7edc04378c6a01e946753947b1638d4a01a",
+  "rebindingEvidence": "finance-author-rebinding-receipt-02.json"
+}

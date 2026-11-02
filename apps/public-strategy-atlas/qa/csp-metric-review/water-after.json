@@ -1,0 +1,27 @@
+{
+  "id": "appgprj_6adefcfe720881918b4e32874f12dd86",
+  "status": "active",
+  "version": 2,
+  "url": "https://climateos-snowy-monaro.minshu.chatgpt.site",
+  "versionId": "appgprj_6adefcfe720881918b4e32874f12dd86~appgver_6e7858f94ab881918228f1f9a742ff59",
+  "sourceCommit": "9f3a201d40c4b70d72f0b69c319805258769c242",
+  "deploymentId": "appgdep_6adf008a3d1c81918a673531038410d1",
+  "accessMode": "custom",
+  "policy": {
+    "revision": 1,
+    "accessMode": "custom",
+    "users": [
+      {
+        "role": "owner",
+        "external": false
+      }
+    ],
+    "editors": [],
+    "allowedAccountUserIdCount": 1,
+    "allowedWorkspaceGroupIdCount": 0,
+    "allowedTenantGroupIdCount": 0,
+    "groupCount": 0,
+    "externalVisitorCount": 0
+  },
+  "policyFingerprint": "sha256:e3acfdb520e195e025cdcd425fee35a3032e6e80d2f093ec659514361e87aecc"
+}

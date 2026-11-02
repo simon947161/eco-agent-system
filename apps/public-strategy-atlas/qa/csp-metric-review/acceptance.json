@@ -1,0 +1,114 @@
+{
+  "format": "csoi-csp63-review-acceptance-1",
+  "at": "2026-11-02T01:09:08.470629+00:00",
+  "batchStatus": "CSP63_REVIEW_AND_PRIVATE_V3_ACCEPTED",
+  "systemAcceptance": "PARTIAL",
+  "sourceBaseCommit": "7cbde005fff40194822b62ad0a80b70ed1ce923c",
+  "sourceReview": {
+    "actualRevisedNodesReviewed": 63,
+    "initialDefinitionScopeCorrectionRowsResolved": 27,
+    "sourceYearOriginClarificationsReadBack": 45,
+    "explicitMeasurementLabelsRetained": 3,
+    "unresolvedImplementationFindings": 0
+  },
+  "rawPdfDigest": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+  "reviewedPlanDigest": "sha256:0b8b781917e347fc1d51c47ca84bbcee1e48051d23f39fb5ea6652bbe52f87be",
+  "sourceColumnChecks": 252,
+  "sourceColumnNegatives": 12,
+  "semanticRegressionNegatives": 14,
+  "native": {
+    "status": "PASS_TESTED_HERE",
+    "filesPassed": 44,
+    "scope": "Final complete native runner including full default and synthetic-cache rebuilds",
+    "evidence": "native-final.json"
+  },
+  "browser": {
+    "status": "PASS_TESTED_HERE",
+    "suitesPassed": 5,
+    "evidence": "regression/browser-run.json",
+    "metricDetailsActuallyOpenedPerViewport": 63,
+    "viewports": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "limits": "Chromium viewport checks, not physical mobile hardware or cross-browser certification;252source listing visits remain pagination-only."
+  },
+  "model": {
+    "entities": 389,
+    "assertions": 48,
+    "legacyItems": 127,
+    "previousRevisionsAndEvents": 466,
+    "currentRevisionsAndEvents": 529,
+    "appendedIndicatorRevisions": 63,
+    "datasetDigest": "sha256:a4360b900ba0593fac2d9239dd1a0728e7ba2cf2463e05bd2181340796fa88d8",
+    "oldV2Prefix": "EXACTLY_RECONSTRUCTABLE"
+  },
+  "engineeringTasks": {
+    "VERIFIED": 49,
+    "PARTIAL": 28,
+    "BLOCKED": 3
+  },
+  "originalPhase2Recovery": "PENDING_ORIGINAL_OFFLINE_STORAGE_ACCESS_NOT_DECLARED_LOST",
+  "remainingScope": [
+    "LSPS maps and non-numbered narratives",
+    "Full OP denominator and DP/resources/budget/annual-report explicit relationships",
+    "Underlying metric methods/raw observations/current controlled versions and authorised admission",
+    "Private WCOS002/031/040 deferred"
+  ],
+  "initialTestCorrections": [
+    {
+      "evidence": "semantic-regressions-initial.log",
+      "reason": "New regression initially accepted only literal UNKNOWN currency; existing valid UNKNOWN_DOLLAR_CURRENCY_NOT_STATED_IN_ROW was explicitly added. Actual currency remains unknown; AUD negative still rejects."
+    },
+    {
+      "evidence": "native-target-initial.log",
+      "reason": "Existing7519 search expectation updated from one result to exact two IDs: the water baseline and the regional indicator warning against comparing with7519. Shared search/export predicate retained; no runtime timeout widened."
+    }
+  ],
+  "testedFileHashes": {
+    "atlas.js": "sha256:d55c3e7a53512e9f39fe55115ab58289fe685948813d0caa89f4453e18190b9e",
+    "atlas-model.js": "sha256:05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+    "atlas-domain.js": "sha256:b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+    "csoi-knowledge.js": "sha256:41b985f4d45344bc075ac51b4bac7bfd3b4b5da2981ae18a3ef6229fb1f03f2d",
+    "csoi-metric-review.js": "sha256:d36958c7d24021a4a97b53f6343dc60aa021e13e0eae47ebb2e6bd8098d03d65",
+    "csoi-pages.js": "sha256:92c8307bc39262b204f024cdc592b9393d4f2d5ab0195d7eca2a0d879b10fd46",
+    "csoi-strategy-research.js": "sha256:c7abc38017d3c7c2a0caff288fc99318955ba68274a3e76f03c2857c02272b37",
+    "index.html": "sha256:c17c99ff4617481abfa2ce180979402cbc08e132346e0869e385421b6acc5eec",
+    "COI_TASK_REGISTRY_V1_7.json": "sha256:8f609a7edb143d2e8c16a5dc6039e5a31bc2d47274d11f45ab3a01e0ec9ea37c",
+    "sources/csp-public-knowledge.json": "sha256:061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+    "sources/csp-indicator-review.json": "sha256:0b8b781917e347fc1d51c47ca84bbcee1e48051d23f39fb5ea6652bbe52f87be",
+    "sources/csp-indicator-review.js": "sha256:fe26fa7fec74a72c62467ff51ff8326ffe2f00af378c93e6feada631b71d578b",
+    "sources/csoi-default-snapshot.js": "sha256:08212d6cd51fc4866514345978f0dd415964d3c7d4c65c3969d195c369e386f4",
+    "sources/strategy-review-scope.json": "sha256:d0d249502603284e7db9e7378fe791daa394cb982c85bcb177a775d65bba9e7b",
+    "sources/strategy-review-scope.js": "sha256:a966d3221edb62c76dd69e59191cb306e0ef74e8f05674f7b43231f6bc919906",
+    "tools/build-csoi-boot.cjs": "sha256:9e3c98a29caec25db53355ca3eed8047fc58fa8775c692acd7ba78ffd39049f1",
+    "tools/build-csp-indicator-review.cjs": "sha256:df276755632a33ebf747c7f05c0bc4ac62e7753c70efefbd4e6169024f9f2d4a",
+    "tools/sync-strategy-review-scope.cjs": "sha256:1eb34662f7d748d720b80f2c0eb2853787521337c9c97b30c857ab9966caf44d",
+    "tools/verify-csp-metric-review.py": "sha256:2ce81fc5da3959c05c96687b66551ffd24e3963113bcab148b7161aafd7e8206",
+    "qa/csoi-metric-browser.py": "sha256:0e7334c12ee3181a19b7d42959c43a8edbb55fb7f9d756b60d358f0e792dd315",
+    "qa/csoi-strategy-browser.py": "sha256:8c2c9f99f59b0a0e7d47552853e3583141d3af53f53fc70ca44f25965d8061e5",
+    "qa/run-metric-review-browser.py": "sha256:ea07e3792a8ef88b0354f392d1ebda01cb5f3ac43c8f1382a9a731475000a9e4",
+    "qa/verify-private-trial.py": "sha256:ce813c5516b793ec3bcd734701de5d0688b3094830b9bee8ec5f99daf8587c81",
+    "csoi-metric-review.test.cjs": "sha256:eec5b7d386a1d91137440f02906cf1c058402d1e316bdc38fc5d9048542771e4",
+    "csoi-strategy-research.test.cjs": "sha256:384521f7e5a55505b0a7650afc5934ce2ad2f0f9597c5f35eb363789d7f0c626",
+    "csoi-bombala-phe.test.cjs": "sha256:6c9384623caab8e3a73f7677aaf53116b00e76b2fc877407002bfe0d43dd7670"
+  },
+  "publication": {
+    "status": "PUBLISHED_AND_LIVE_VALIDATED",
+    "version": 3,
+    "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "evidence": "deployment.json",
+    "liveRuntimeFilesMatched": 46,
+    "liveBrowserSuitesPassed": 4,
+    "ownerSignedInBrowser": "NOT_TESTED_NO_OWNER_SESSION",
+    "protectedWaterSiteUnchanged": true
+  },
+  "canonicalTestedCodeSha": "2ec0be11f39cdb49577319c41b03dae9bb802baf"
+}

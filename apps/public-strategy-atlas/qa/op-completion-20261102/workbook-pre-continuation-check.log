@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/tools/build-op-review-workbook.py", line 51, in <module>
+    for p in r['pages']:assert set(p['unitIds'])=={u['id'] for u in units if u['pdfPage']==p['pdfPage']}
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

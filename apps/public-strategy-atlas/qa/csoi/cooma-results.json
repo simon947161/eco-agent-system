@@ -1,0 +1,60 @@
+{
+  "format": "csoi-multi-dcp-outline-results-1",
+  "at": "2026-10-30T10:12:55.255957+00:00",
+  "system": "PARTIAL",
+  "softwareBatch": "PASS_TESTED_HERE",
+  "sourceId": "csoi:smrc-dcp-cooma-2014-amend4:20261030",
+  "sourceReceipt": "PREVIOUS_BYTE_RECEIPT_MATCHED_NO_NEW_DOWNLOAD",
+  "rawDigest": "sha256:4347cd774b6d2508422a9e5fce8200ae470df9572ec644045d7abdfba9040bed",
+  "byteLength": 16499726,
+  "pages": 213,
+  "authoredCoomaObservations": 25,
+  "totalAuthoredDcpObservations": 55,
+  "researchPageAnchors": 15,
+  "negativeAnchorChecks": 4,
+  "newSourceRecords": 0,
+  "defaultEntities": 118,
+  "defaultAssertions": 48,
+  "originalContentItems": 127,
+  "defaultSnapshotDigest": "sha256:d2b0f68401b0fcb25aec3e613002bc138a88ec9b1784d52c8af77ab8c8095657",
+  "nativeFiles": 35,
+  "nodeCoverage": {
+    "lines": 91.38,
+    "branches": 84.62,
+    "functions": 95.56,
+    "scope": "Loaded modules under Node only; renderer line coverage11.76%, no browser/tool coverage inferred"
+  },
+  "CoomaClauseDepth": 5,
+  "crossDcpPathNodes": [
+    6,
+    9
+  ],
+  "geographicCompatibility": "CONFLICT",
+  "operationalUse": "REJECTED_UNKNOWN_ADMISSION",
+  "arithmetic": "NOT_PERFORMED",
+  "officialAdmission": "PENDING",
+  "officialRelationships": 0,
+  "completePublicCorpus": "PARTIAL",
+  "currentLaw": "UNKNOWN",
+  "sourceReuseRights": "UNKNOWN",
+  "privateTasksDeferred": [
+    "COI-002",
+    "COI-031",
+    "COI-040"
+  ],
+  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_cooma_batch.code_sha",
+  "browser": {
+    "status": "PASS_TESTED_HERE",
+    "affectedLeafSuites": 6,
+    "legacyLeafSuites": 6,
+    "totalLeafSuites": 12,
+    "crossDcpViewports": [
+      1440,
+      390
+    ],
+    "registeredRoutes": 24,
+    "navigationViewports": 5,
+    "legacyResult": "../system/browser-e10.json",
+    "legacyGeneratedAt": "2026-10-30T10:11:22.894448+00:00"
+  }
+}

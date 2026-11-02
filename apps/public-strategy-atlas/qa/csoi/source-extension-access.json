@@ -1,0 +1,169 @@
+{
+  "format": "csoi-public-source-access-1",
+  "selectedUrlFetches": 9,
+  "successfulSelectedFetches": 9,
+  "httpExchangeCount": "UNKNOWN_REDIRECTS_NOT_INSTRUMENTED",
+  "redirectNote": "Six selected URL fetches were made. The officially linked unversioned Bombala PDF URL followed a permitted same-host redirect to the /v/1/ asset. This requires at least one additional wire GET; the redirect chain was not instrumented, so do not claim six total wire GETs. No further network requests were made.",
+  "ordinaryInheritedProxy": true,
+  "tlsVerification": true,
+  "policyBypass": false,
+  "environmentSettingsChanged": false,
+  "originalBodiesCommitted": false,
+  "rights": "UNKNOWN",
+  "admission": "PENDING",
+  "receipts": [
+    {
+      "id": "smrc-dcp-directory",
+      "url": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Strategic-Planning/Development-Control-Plans-Engineering-Specifications-and-Drawings",
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Strategic-Planning/Development-Control-Plans-Engineering-Specifications-and-Drawings",
+      "retrievedAt": "2026-10-30T02:55:20.653212+00:00",
+      "httpStatus": 200,
+      "mediaType": "text/html",
+      "byteLength": 131725,
+      "rawDigest": "sha256:629f92f43707aa4a882657d596d4a4a2776f6d8ea68b3d9f18bc6c9d078c0530",
+      "proxy": "INHERITED",
+      "tlsVerification": true,
+      "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+      "requestLimits": {
+        "maxBytes": 52428800,
+        "timeoutSeconds": 45
+      }
+    },
+    {
+      "id": "smrc-water-amp-2025",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/1/council/ipr/20252026/adopted-amp-water-20250619.pdf",
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/1/council/ipr/20252026/adopted-amp-water-20250619.pdf",
+      "retrievedAt": "2026-10-30T02:55:18.211560+00:00",
+      "httpStatus": 200,
+      "mediaType": "application/pdf",
+      "byteLength": 11359299,
+      "rawDigest": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+      "proxy": "INHERITED",
+      "tlsVerification": true,
+      "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+      "requestLimits": {
+        "maxBytes": 52428800,
+        "timeoutSeconds": 45
+      }
+    },
+    {
+      "id": "smrc-dcp-controls",
+      "url": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans",
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans",
+      "retrievedAt": "2026-10-30T02:55:43.141549+00:00",
+      "httpStatus": 200,
+      "mediaType": "text/html",
+      "byteLength": 125464,
+      "rawDigest": "sha256:38eecba00fc92239c32a4ade5b0f11dee0209afbbb22b5587c4032a3896b9520",
+      "proxy": "INHERITED",
+      "tlsVerification": true,
+      "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+      "requestLimits": {
+        "maxBytes": 52428800,
+        "timeoutSeconds": 45
+      }
+    },
+    {
+      "id": "smrc-dcp-bombala-page",
+      "url": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Bombala-Development-Control-Plan",
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Bombala-Development-Control-Plan",
+      "retrievedAt": "2026-10-30T03:00:31.596705+00:00",
+      "httpStatus": 200,
+      "mediaType": "text/html",
+      "byteLength": 132673,
+      "rawDigest": "sha256:418733caffccbba43b1db7844648ea7aabb7a9dc6b7b00131fdc3d2253ebbfc4",
+      "proxy": "INHERITED",
+      "tlsVerification": true,
+      "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+      "requestLimits": {
+        "maxBytes": 52428800,
+        "timeoutSeconds": 45
+      }
+    },
+    {
+      "id": "smrc-dcp-cooma-page",
+      "url": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Cooma-Monaro-Shire-Development-Control-Plan",
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Cooma-Monaro-Shire-Development-Control-Plan",
+      "retrievedAt": "2026-10-30T03:00:31.689984+00:00",
+      "httpStatus": 200,
+      "mediaType": "text/html",
+      "byteLength": 134246,
+      "rawDigest": "sha256:62dc13b2dd228c57f9b212a399502f9178ea9e5e7a792183a228058b9a209937",
+      "proxy": "INHERITED",
+      "tlsVerification": true,
+      "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+      "requestLimits": {
+        "maxBytes": 52428800,
+        "timeoutSeconds": 45
+      }
+    },
+    {
+      "id": "smrc-dcp-jindabyne-page",
+      "url": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Jindabyne-Development-Control-Plan",
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Jindabyne-Development-Control-Plan",
+      "retrievedAt": "2026-10-30T03:00:31.508738+00:00",
+      "httpStatus": 200,
+      "mediaType": "text/html",
+      "byteLength": 134115,
+      "rawDigest": "sha256:b0741270b7cfbd8bb13b705c237ae7e6f720b376aed809ebae5d29a49da137cc",
+      "proxy": "INHERITED",
+      "tlsVerification": true,
+      "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+      "requestLimits": {
+        "maxBytes": 52428800,
+        "timeoutSeconds": 45
+      }
+    },
+    {
+      "id": "smrc-dcp-snowy-page",
+      "url": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Snowy-River-Shire-Development-Control-Plan",
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Planning-Controls/Development-Control-Plans/Snowy-River-Shire-Development-Control-Plan",
+      "retrievedAt": "2026-10-30T03:00:35.414157+00:00",
+      "httpStatus": 200,
+      "mediaType": "text/html",
+      "byteLength": 134717,
+      "rawDigest": "sha256:d6ef5fbe644fe641be3fa39dbd2fc836b1dd0f22113cf0e1b4af759bfda44e61",
+      "proxy": "INHERITED",
+      "tlsVerification": true,
+      "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+      "requestLimits": {
+        "maxBytes": 52428800,
+        "timeoutSeconds": 45
+      }
+    },
+    {
+      "id": "smrc-dcp-bombala-2014",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/building-and-planning/development/documents/bombala-development-control-plan.pdf",
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/1/building-and-planning/development/documents/bombala-development-control-plan.pdf",
+      "retrievedAt": "2026-10-30T03:01:21.082448+00:00",
+      "httpStatus": 200,
+      "mediaType": "application/pdf",
+      "byteLength": 3644692,
+      "rawDigest": "sha256:91375ba17012f891593bb200a533d3de12e6e48e579b1d7e9212af0be66a7ee6",
+      "proxy": "INHERITED",
+      "tlsVerification": true,
+      "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+      "requestLimits": {
+        "maxBytes": 52428800,
+        "timeoutSeconds": 45
+      }
+    },
+    {
+      "id": "smrc-dcp-cooma-2014-amend4",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/3/building-and-planning/development/documents/22-34442-2022-04-05-17-14389-cooma-monaro-shire-development-control-plan-2014-amendment-4.pdf",
+      "resolvedUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/3/building-and-planning/development/documents/22-34442-2022-04-05-17-14389-cooma-monaro-shire-development-control-plan-2014-amendment-4.pdf",
+      "retrievedAt": "2026-10-30T03:01:17.272171+00:00",
+      "httpStatus": 200,
+      "mediaType": "application/pdf",
+      "byteLength": 16499726,
+      "rawDigest": "sha256:4347cd774b6d2508422a9e5fce8200ae470df9572ec644045d7abdfba9040bed",
+      "proxy": "INHERITED",
+      "tlsVerification": true,
+      "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+      "requestLimits": {
+        "maxBytes": 52428800,
+        "timeoutSeconds": 45
+      }
+    }
+  ]
+}

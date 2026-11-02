@@ -1,0 +1,230 @@
+{
+  "pack": "D",
+  "software_status": "PARTIAL",
+  "corpus_status": "PARTIAL",
+  "admission_status": "PENDING",
+  "summary": "Delivered read-only abstract WCOS adapter, a ten-stage LTW research workflow, conditional Food/LTW/Backflow assessment and device/date/scope-specific scheduling checks. All26 native files and desktop/mobile workflow tests PASS. Three tasks VERIFIED, five PARTIAL, two original/private compatibility tasks BLOCKED. No production WCOS, real Outlook, customer data, universal device obligation or formal decision is introduced.",
+  "next_executable": "COI-041 \u2014 source-backed public PHE domain knowledge and conditional work chains",
+  "tasks": [
+    {
+      "id": "COI-031",
+      "status": "BLOCKED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": "Original private WCOS technical contract and non-destructive compatibility environment were not supplied or accessed.",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    },
+    {
+      "id": "COI-032",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": null,
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    },
+    {
+      "id": "COI-033",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    },
+    {
+      "id": "COI-034",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": null,
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    },
+    {
+      "id": "COI-035",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    },
+    {
+      "id": "COI-036",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    },
+    {
+      "id": "COI-037",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    },
+    {
+      "id": "COI-038",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": null,
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    },
+    {
+      "id": "COI-039",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": "Public rule currency/local applicability and authorised real aggregation/integration remain incomplete.",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    },
+    {
+      "id": "COI-040",
+      "status": "BLOCKED",
+      "actual_code_files": [
+        "csoi-wcos.js",
+        "csoi-wcos.test.cjs",
+        "csoi-pages.js",
+        "docs/CSOI_WCOS_BOUNDARY.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-d-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-wcos-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-d.json",
+        "qa/csoi/browser-d.json",
+        "qa/csoi/wcos-conditional-1440.png"
+      ],
+      "blocker": "Original private WCOS technical contract and non-destructive compatibility environment were not supplied or accessed.",
+      "source_admission_status": "PENDING_NO_REAL_RECORDS_ADMITTED",
+      "next_action": "Continue public-first PHE work; preserve default-deny private boundary and never infer a device obligation from a property label."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "format": "csoi-strategy-reconstruction-acceptance-1",
+  "at": "2026-11-02T00:02:20.264936+00:00",
+  "verifiedBaseSha": "6da39daca06173eb3bdaa6d9f690271dc5318c03",
+  "batchStatus": "PASS_WITH_DECLARED_SCOPE",
+  "systemStatus": "PARTIAL",
+  "sourceResearch": {
+    "newRecords": 252,
+    "CSP": {
+      "objectives": 14,
+      "strategies": 44,
+      "indicators": 63
+    },
+    "LSPS": {
+      "priorities": 12,
+      "implementationRows": 83,
+      "distinctConflictingOccurrences": 18,
+      "narrativeOccurrencesChecked": 134
+    },
+    "OP": {
+      "selectedActivities": 8,
+      "newExplicitCspPairs": 9,
+      "existingGraphRepresentationsRechecked": 8,
+      "existingDistinctSourceFacts": 3
+    },
+    "sourceNegativeCases": 34,
+    "independentSemanticItems": 153,
+    "semanticFindingGroupsRepaired": 10,
+    "semanticRecordsAffected": 12,
+    "wholeDocumentUnderstanding": "NOT_CLAIMED"
+  },
+  "domain": {
+    "entities": 389,
+    "assertions": 48,
+    "legacyItems": 127,
+    "prior137EntityHistory": "EXACTLY_RECONSTRUCTABLE",
+    "digest": "sha256:f2ec9adec008d5c0f5a39bac013ffb76aff73e08061d76b3512c572f1c8c1962"
+  },
+  "engineeringTasks": {
+    "VERIFIED": 49,
+    "PARTIAL": 28,
+    "BLOCKED": 3
+  },
+  "native": {
+    "files": 43,
+    "status": "PASS_TESTED_HERE",
+    "receipt": "native-final.json"
+  },
+  "browser": {
+    "distinctSuites": 26,
+    "status": "PASS_TESTED_HERE",
+    "receipt": "browser-final.json"
+  },
+  "sourceRecovery": {
+    "archivedReportAndWorkbook": "RECOVERED_HASH_VERIFIED",
+    "uncommittedPhase2": "NOT_ACCESSIBLE_HERE_NOT_DECLARED_LOST",
+    "replacementWork": "NEW_OFFICIAL_SOURCE_RECONSTRUCTION"
+  },
+  "officialAdmission": "PENDING",
+  "currentLegalApplicability": "UNKNOWN",
+  "actualCouncilOutcomes": "UNKNOWN",
+  "deployment": {
+    "status": "PUBLISHED_AND_LIVE_VALIDATED",
+    "version": 2,
+    "evidence": "deployment.json",
+    "ownerOnly": true,
+    "interactiveOwnerLogin": "NOT_TESTED_NO_OWNER_SESSION"
+  },
+  "runtimeFileSha256": {
+    "atlas-execution.js": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+    "atlas.js": "4f066dae4ac439bfbf60e1d3d5eb9d3ee969278ec66992063dc33b0d25a32ce8",
+    "csoi-paths.js": "cb0a7e33e3df1fa9e2fa16ecf1f2394a25b1eee51d8bc38c4b6ead2b636ca03b",
+    "csoi-knowledge.js": "013e830b35845f9f0e1b0e5a1d1e952e319cf01d544380e4c783125e24417c23",
+    "csoi-pages.js": "568e365639d6425c0013a2b705f4b0c3d5d8af5027ec79a1e6bd1e67407014f9",
+    "csoi-pages.css": "9a03eb74e01dc407cf4d0182e8931ec8f0ae4c8fd5d86bf47de0f69fa78d60cd",
+    "csoi-router.js": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+    "csoi-strategy-research.js": "720b08f96f4c301b8fe897af8a8a43cce2039a76b260d723bb4da4d6f3ab0fcb",
+    "index.html": "1e0b02a1f7daab1a4da88b2a6b5ad40439de51e4d660a4899702b8a89849afef",
+    "sources/csoi-default-snapshot.js": "55a87f27e6aeeffcef8698d6bbac5175895aa1277ecfc83dbd4ff6c339747030",
+    "sources/csp-public-knowledge.json": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+    "sources/lsps-public-knowledge.json": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+    "sources/op-water-public-knowledge.json": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+    "sources/strategy-review-scope.json": "cd6c23042ead33d003f5ab5e57ddc2bead34e85734152d5ea38ef2bb8ae38660"
+  },
+  "remaining": [
+    "Original offline task storage access for uncommitted Phase2",
+    "FullDP/OP/resource/annualreport source-primary extraction",
+    "LSPS maps and remaining non-numbered narrative",
+    "Current controlled versions, applicability, rights and authorised review",
+    "PrivateWCOS interfaces deferred"
+  ],
+  "notTested": [
+    "physicalhardware",
+    "otherbrowserengines",
+    "professional screenreader",
+    "Council private integrations",
+    "interactiveownerlogin"
+  ]
+}
