@@ -5,3 +5,7 @@
 @media(max-width:760px){.csoi-compare-grid{grid-template-columns:minmax(0,1fr);gap:8px}.csoi-page-heading>button{margin-left:0}}
 
 #sourceResearchLink{display:inline-block;pointer-events:auto;margin-top:12px;padding:10px 14px;min-height:44px;border:1px solid #73b6a8;border-radius:8px;background:#123640;color:#c0f3e3;font-size:13px;text-decoration:none}#sourceResearchLink:focus-visible{outline:3px solid #e3cc8d;outline-offset:3px}.csoi-reading-fact{border-left:3px solid #a4c8bb;padding:1px 14px;margin:18px 0}.csoi-reading-fact h3{font-size:15px}.csoi-research-filters>*{min-width:0;max-width:100%}.csoi-research-filters input{flex:1 1 240px}.csoi-research-filters select{flex:1 1 220px}#csoiEngineeringTasks summary{line-height:1.6}
+
+/* Keep the existing research entry reachable after the map has been panned. */
+.map-stage.map-panned #sourceResearchLink{visibility:visible}
+.startup-notice[hidden]{display:none}.startup-notice{position:fixed;z-index:60;top:15vh;left:50%;transform:translateX(-50%);width:min(560px,calc(100vw - 32px));padding:24px;border:1px solid #bad2ca;border-radius:16px;background:#f7faf7;color:#193b43;box-shadow:0 15px 60px #0008}.startup-notice h1{font-size:24px;line-height:1.4}.startup-notice p{font-size:16px;line-height:1.7}.startup-notice a{display:inline-block;padding:12px;border:1px solid #8cabaa;border-radius:8px;color:#235c6c;min-height:44px}.app[inert]{opacity:.35}

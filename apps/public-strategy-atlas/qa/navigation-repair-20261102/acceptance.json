@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-02T07:52:52.090413+00:00",
+  "status": "LOCAL_PASS_PUBLICATION_PENDING",
+  "runtimeAndTestSha256": {
+    "atlas.js": "b4df9943a95e1a5c861428045d579a96e6c9d803348e0d5b231fe1a3885682a0",
+    "csoi-pages.js": "df6d3917f8c45ec017e77a31973b34e5b5731670927dd36f0e1c401e4829a3b7",
+    "csoi-pages.css": "a77a888831096f6cc78040658cfcb575f3b3b63ff316e1a48c3fb55b97f1a327",
+    "index.html": "a810df1fe9743eb4f89f9ee498127b3023b31a43554d7ba20ce75c12e61b3543",
+    "qa/csoi-navigation-browser.py": "105251a10ede1581c96e3fbf4963cea83f43cd3c93556f409215a44228616ac7",
+    "qa/csoi-navigation-state-browser.py": "0dfe2bbbadc499d85883a0d5be286cd136f72838f6fb1abffee2b50900e86662",
+    "qa/verify-navigation-private-trial.py": "a1de90244dfa36d20c0d445ebcab9028901de2e7034c2a323cc4dd16a47ecc40"
+  },
+  "native": {
+    "command": "node --test csoi-router.test.cjs route-main.test.cjs route-map.test.cjs",
+    "files": 3,
+    "status": "PASS",
+    "limits": "route map native checks include mock DOM, separately complemented by real pointer browser checks"
+  },
+  "browser": {
+    "actualClickDesktopAnd390": "local/results.json",
+    "controlledBootAndSnapshotState": "state/results.json",
+    "PHEAndWorkspace": "regression/results.json"
+  },
+  "sourceAndCache": "runtime-scope.json; all source data and boot cache byte-identical to v6, no new source research/full fresh registration run claimed",
+  "firstFailuresRetained": [
+    "local-first-failed/results.json",
+    "state-fixture-failed/results.json"
+  ],
+  "ownerWindowsInteractiveSession": "NOT_TESTED",
+  "workerErrors": {
+    "windowMinutes": 180,
+    "events": 0,
+    "interpretation": "No returned events, not proof of front-end health"
+  }
+}

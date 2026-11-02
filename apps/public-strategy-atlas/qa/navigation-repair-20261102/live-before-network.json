@@ -1,0 +1,734 @@
+{
+  "at": "2026-11-02T07:32:42.820601+00:00",
+  "ownerSession": "NOT_TESTED",
+  "requests": [
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"63533457db50d0592cf36c60a14be250\"",
+      "bytes": 9752
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"643d593c09580aac728b36869eaef9c0\"",
+      "bytes": 17812
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"3a18aec2b37a25651dd365e2d3139da5\"",
+      "bytes": 5646
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"4568e1c800dad6ff616e3c228d7b9a79\"",
+      "bytes": 12787
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"7d534cc45b535f9287eeb0b132979a60\"",
+      "bytes": 31253
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"7bdc830d8b8554a496b4e7018530d1b3\"",
+      "bytes": 21832
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"533db99e8ad14bad370b8d9116bc5037\"",
+      "bytes": 2760
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"c45053e1cf994e1be22ce8d33aebfcee\"",
+      "bytes": 18967
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"5d5dd2e531e7253af7bf132f934ec58a\"",
+      "bytes": 1301
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"a36ebfd35f101d6049be30a273834248\"",
+      "bytes": 11842
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"0d498af29cd12affa6651bd06f23a9aa\"",
+      "bytes": 19950
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"43556ca7b44219cb33c96a36164ebbe6\"",
+      "bytes": 49114
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"23f405fb2ab0223ab60583717ba42512\"",
+      "bytes": 33575
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"aded599169be9865d4e38a1313d5f781\"",
+      "bytes": 17977
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"7f843d9de65c9ae9c2f3892f0dc068e6\"",
+      "bytes": 15234
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b1226c6f442d3645761cb26b5a147c51\"",
+      "bytes": 174031
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"24e8e26fcc7aadb92946ddedf2272977\"",
+      "bytes": 214952
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"3f345c8be716a6d12474c8866884c07a\"",
+      "bytes": 21709
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"c08b932bba37eeae146c9e4d3b11a9d4\"",
+      "bytes": 20332
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"cd21fdf3e3ff1f9847a49203b56683b2\"",
+      "bytes": 13227
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"61adbb914f8a21c9efd2b4a11e9f3b58\"",
+      "bytes": 14110
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"e0c019c405244018d249855351c6f6d1\"",
+      "bytes": 13907
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"34b5430bd30f4cf70f1f0a588699d21f\"",
+      "bytes": 4334
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"3c3baf2a1f09932afc6f396bc99a9810\"",
+      "bytes": 10697
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"eb174bd0a038c9ebdbf3c69ca81f8e8f\"",
+      "bytes": 29261
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"3dfcc6fc61e69de17a01fcf9599adcf6\"",
+      "bytes": 261193
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"18ee3b104076e03abaa0296d7caec93b\"",
+      "bytes": 446451
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"7f84e9bafa9460354dce0d9fcf08b9a8\"",
+      "bytes": 39898
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"206be8f48c566573c2ea5cb5c8addf2e\"",
+      "bytes": 377999
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b36531d670e6c515148946c02266c16a\"",
+      "bytes": 4258
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"5622d6b8b56e1f8f6b74cd33c5d0c818\"",
+      "bytes": 1184271
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"fbcd56e0b3d5e66c88f3e0916ebf7dda\"",
+      "bytes": 1895
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"24db9f843ede8ab3312786aca84dff61\"",
+      "bytes": 7081834
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"92692ffac5535b94357dc85a02a871b9\"",
+      "bytes": 2900
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"0a3d12ca26edfdee9d4c60de2edc3cf8\"",
+      "bytes": 6807
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"f24ed580ed72bec240c85372da62e2f9\"",
+      "bytes": 210452
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"f1fa7339ded6f6bfd9031d831b0b327e\"",
+      "bytes": 21019
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"51de26a3301f34813a1f55a64d6dc9d6\"",
+      "bytes": 12009
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"85a755128a2a9eeeca18d31209465a52\"",
+      "bytes": 15724
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"83a84b7a76a5572b78f702d484be40dd\"",
+      "bytes": 13777
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"d46e915cbc64191d2ba2c44379da61dc\"",
+      "bytes": 19829
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"48aeb5ce0b62b37552ef41afc7acb891\"",
+      "bytes": 9324
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b284c942300b916b7d803dcca54e06b2\"",
+      "bytes": 9150
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"63564bf1805e87cde88a7b9998fced48\"",
+      "bytes": 6040
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"78987859075602f6946de14d1b27861f\"",
+      "bytes": 89043
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"1c7462307fdfa418e3de940f8f8bcaaa\"",
+      "bytes": 1208
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"2ea6f7876658bd7be4dacdd902ffc59f\"",
+      "bytes": 22744179
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"72aebe49423c6b4f5e950a34f98fdcde\"",
+      "bytes": 75784
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b016f301e2fe1933f4b11a0cb18227ea\"",
+      "bytes": 471284
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b016f301e2fe1933f4b11a0cb18227ea\"",
+      "bytes": 471284
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b016f301e2fe1933f4b11a0cb18227ea\"",
+      "bytes": 471284
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b016f301e2fe1933f4b11a0cb18227ea\"",
+      "bytes": 471284
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"63533457db50d0592cf36c60a14be250\"",
+      "bytes": 9752
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"643d593c09580aac728b36869eaef9c0\"",
+      "bytes": 17812
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"3a18aec2b37a25651dd365e2d3139da5\"",
+      "bytes": 5646
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"4568e1c800dad6ff616e3c228d7b9a79\"",
+      "bytes": 12787
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"7d534cc45b535f9287eeb0b132979a60\"",
+      "bytes": 31253
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"7bdc830d8b8554a496b4e7018530d1b3\"",
+      "bytes": 21832
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"533db99e8ad14bad370b8d9116bc5037\"",
+      "bytes": 2760
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"c45053e1cf994e1be22ce8d33aebfcee\"",
+      "bytes": 18967
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"5d5dd2e531e7253af7bf132f934ec58a\"",
+      "bytes": 1301
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"a36ebfd35f101d6049be30a273834248\"",
+      "bytes": 11842
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"0d498af29cd12affa6651bd06f23a9aa\"",
+      "bytes": 19950
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"43556ca7b44219cb33c96a36164ebbe6\"",
+      "bytes": 49114
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"23f405fb2ab0223ab60583717ba42512\"",
+      "bytes": 33575
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"aded599169be9865d4e38a1313d5f781\"",
+      "bytes": 17977
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"7f843d9de65c9ae9c2f3892f0dc068e6\"",
+      "bytes": 15234
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b1226c6f442d3645761cb26b5a147c51\"",
+      "bytes": 174031
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"24e8e26fcc7aadb92946ddedf2272977\"",
+      "bytes": 214952
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"3f345c8be716a6d12474c8866884c07a\"",
+      "bytes": 21709
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"c08b932bba37eeae146c9e4d3b11a9d4\"",
+      "bytes": 20332
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"cd21fdf3e3ff1f9847a49203b56683b2\"",
+      "bytes": 13227
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"61adbb914f8a21c9efd2b4a11e9f3b58\"",
+      "bytes": 14110
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"e0c019c405244018d249855351c6f6d1\"",
+      "bytes": 13907
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"34b5430bd30f4cf70f1f0a588699d21f\"",
+      "bytes": 4334
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"3c3baf2a1f09932afc6f396bc99a9810\"",
+      "bytes": 10697
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"eb174bd0a038c9ebdbf3c69ca81f8e8f\"",
+      "bytes": 29261
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"3dfcc6fc61e69de17a01fcf9599adcf6\"",
+      "bytes": 261193
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"18ee3b104076e03abaa0296d7caec93b\"",
+      "bytes": 446451
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"7f84e9bafa9460354dce0d9fcf08b9a8\"",
+      "bytes": 39898
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"206be8f48c566573c2ea5cb5c8addf2e\"",
+      "bytes": 377999
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b36531d670e6c515148946c02266c16a\"",
+      "bytes": 4258
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"5622d6b8b56e1f8f6b74cd33c5d0c818\"",
+      "bytes": 1184271
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"fbcd56e0b3d5e66c88f3e0916ebf7dda\"",
+      "bytes": 1895
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"24db9f843ede8ab3312786aca84dff61\"",
+      "bytes": 7081834
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"92692ffac5535b94357dc85a02a871b9\"",
+      "bytes": 2900
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"0a3d12ca26edfdee9d4c60de2edc3cf8\"",
+      "bytes": 6807
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"f24ed580ed72bec240c85372da62e2f9\"",
+      "bytes": 210452
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"f1fa7339ded6f6bfd9031d831b0b327e\"",
+      "bytes": 21019
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"51de26a3301f34813a1f55a64d6dc9d6\"",
+      "bytes": 12009
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"85a755128a2a9eeeca18d31209465a52\"",
+      "bytes": 15724
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"83a84b7a76a5572b78f702d484be40dd\"",
+      "bytes": 13777
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"d46e915cbc64191d2ba2c44379da61dc\"",
+      "bytes": 19829
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"48aeb5ce0b62b37552ef41afc7acb891\"",
+      "bytes": 9324
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b284c942300b916b7d803dcca54e06b2\"",
+      "bytes": 9150
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"63564bf1805e87cde88a7b9998fced48\"",
+      "bytes": 6040
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"78987859075602f6946de14d1b27861f\"",
+      "bytes": 89043
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"1c7462307fdfa418e3de940f8f8bcaaa\"",
+      "bytes": 1208
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"2ea6f7876658bd7be4dacdd902ffc59f\"",
+      "bytes": 22744179
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"72aebe49423c6b4f5e950a34f98fdcde\"",
+      "bytes": 75784
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b016f301e2fe1933f4b11a0cb18227ea\"",
+      "bytes": 471284
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b016f301e2fe1933f4b11a0cb18227ea\"",
+      "bytes": 471284
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b016f301e2fe1933f4b11a0cb18227ea\"",
+      "bytes": 471284
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "etag": "\"b016f301e2fe1933f4b11a0cb18227ea\"",
+      "bytes": 471284
+    }
+  ]
+}

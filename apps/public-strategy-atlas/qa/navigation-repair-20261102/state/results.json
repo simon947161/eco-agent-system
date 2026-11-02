@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-02T07:45:04.840065+00:00",
+  "mode": "local real Chromium; explicitly controlled fault/import fixtures",
+  "checks": [
+    "Controlled pending boot shows loading notice and disables controls; release runs original verifier and then enables app",
+    "oldV4: actual explicit import/navigation, honest missing or withdrawn state, saved IndexedDB checkpoint and localStorage unchanged",
+    "withdrawnOP: actual explicit import/navigation, honest missing or withdrawn state, saved IndexedDB checkpoint and localStorage unchanged",
+    "Controlled startup failure visibly blocks dead controls; actual reload link recovers without clearing stored checkpoint"
+  ],
+  "status": "PASS"
+}
