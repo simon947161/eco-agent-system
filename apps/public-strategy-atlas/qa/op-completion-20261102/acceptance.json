@@ -1,9 +1,9 @@
 {
   "format": "op-full-bounded-acceptance-1",
-  "at": "2026-11-02T04:16:04.222461+00:00",
+  "at": "2026-11-02T04:27:33.364720+00:00",
   "status": "PASS_BOUNDED_APPLICATION_ACCEPTANCE",
   "projectCompletion": "PARTIAL",
-  "checkpointCommit": "8fcab3b92bc192406d52976c1d699fc273ccc23e",
+  "checkpointCommit": "385e37df79f4a6731186f0767aec7734e3760a13",
   "native": {
     "distinctFiles": 49,
     "results": [
@@ -201,15 +201,15 @@
       },
       {
         "file": "csoi-knowledge.test.cjs",
-        "startedAt": "2026-11-02T03:29:05.705975+00:00",
-        "finishedAt": "2026-11-02T03:29:09.620973+00:00",
-        "seconds": 3.92,
+        "startedAt": "2026-11-02T04:23:01.976695+00:00",
+        "finishedAt": "2026-11-02T04:23:12.205694+00:00",
+        "seconds": 10.23,
         "sha256": "9561ee807421e3d00aed896aa690013c38af6ed1d842116ed3ede023843398be",
         "fileUnchanged": true,
         "exitCode": 0,
         "status": "PASS_TESTED_HERE",
         "log": "csoi-knowledge.test.cjs.log",
-        "evidenceDirectory": "native"
+        "evidenceDirectory": "native-rendering"
       },
       {
         "file": "csoi-layers.test.cjs",
@@ -369,15 +369,15 @@
       },
       {
         "file": "csoi-router.test.cjs",
-        "startedAt": "2026-11-02T03:35:29.744271+00:00",
-        "finishedAt": "2026-11-02T03:35:29.836977+00:00",
-        "seconds": 0.09,
+        "startedAt": "2026-11-02T04:23:00.871586+00:00",
+        "finishedAt": "2026-11-02T04:23:01.975990+00:00",
+        "seconds": 1.1,
         "sha256": "3c572433cd402799d91d240b2a1b8296e5ac221a7724e9e7acf2bd05bbdb7dce",
         "fileUnchanged": true,
         "exitCode": 0,
         "status": "PASS_TESTED_HERE",
         "log": "csoi-router.test.cjs.log",
-        "evidenceDirectory": "native"
+        "evidenceDirectory": "native-rendering"
       },
       {
         "file": "csoi-source-integrity.test.cjs",
@@ -393,15 +393,15 @@
       },
       {
         "file": "csoi-strategy-research.test.cjs",
-        "startedAt": "2026-11-02T03:36:32.486525+00:00",
-        "finishedAt": "2026-11-02T03:37:46.572883+00:00",
-        "seconds": 74.09,
+        "startedAt": "2026-11-02T04:23:12.205887+00:00",
+        "finishedAt": "2026-11-02T04:24:29.538742+00:00",
+        "seconds": 77.33,
         "sha256": "524ce9c7a0990ba86ce4728a76abee2fe8ba417f59646842055363270ef6d583",
         "fileUnchanged": true,
         "exitCode": 0,
         "status": "PASS_TESTED_HERE",
         "log": "csoi-strategy-research.test.cjs.log",
-        "evidenceDirectory": "native"
+        "evidenceDirectory": "native-rendering"
       },
       {
         "file": "csoi-wcos.test.cjs",
@@ -585,15 +585,15 @@
       },
       {
         "file": "csoi-path-transaction.test.cjs",
-        "startedAt": "2026-11-02T03:38:08.960905+00:00",
-        "finishedAt": "2026-11-02T03:39:28.333065+00:00",
-        "seconds": 79.37,
+        "startedAt": "2026-11-02T04:23:00.870641+00:00",
+        "finishedAt": "2026-11-02T04:24:30.788320+00:00",
+        "seconds": 89.92,
         "sha256": "6d2b95f3ad945f0186df26defde3c74c56e221667dfb82bc8be5749040f65f27",
         "fileUnchanged": true,
         "exitCode": 0,
         "status": "PASS_TESTED_HERE",
         "log": "csoi-path-transaction.test.cjs.log",
-        "evidenceDirectory": "native-retry"
+        "evidenceDirectory": "native-rendering"
       }
     ],
     "initialFailuresPreserved": [
@@ -620,7 +620,7 @@
         "log": "csoi-op-review.test.cjs.log"
       }
     ],
-    "reconciliation": "Complete initial48-file run plus4affected reruns covers49 distinct final test files. Path transaction was added during the initial run; final paths and transaction tests reran. The full cache build uses unchanged registration/assessDependencies logic, while final browser suites use the final path transaction. No widened timeouts."
+    "reconciliation": "Complete initial48-file run plus4affected reruns covers49 distinct final test files. Path transaction was added during the initial run; final paths and transaction tests reran. The full cache build uses unchanged registration/assessDependencies logic, while final browser suites use the final path transaction. Then4 affected native reruns and a desktop/mobile rendering check cover the final OP disclosure correction; this is a complete run plus targeted reconciliation, not a fresh full rerun of unchanged cache registration. No widened timeouts."
   },
   "localBrowser": {
     "suiteCount": 7,
@@ -820,6 +820,68 @@
     "independentCheck": "independent/compact-final-readback-check.json"
   },
   "workbookSHA256": "523595444a8f55f75670a5508f5e89b52f68c39a2e24a5e8a75b4f4294feea0e",
+  "finalRenderingCorrection": {
+    "evidence": "readable-browser/results.json",
+    "observedIssue": "Generic OP sourceAnomalies duplicated an expanded technical block already present in the OP disclosure.",
+    "change": "One DOM rendering condition excludes the duplicate; original data and all existing disclosure content remain.",
+    "validation": "4 affected native reruns plus1440/390 targeted actual rendering, collapse/open content, source link and51/26/3 checks. Full cache/data-input proofs remain applicable; source/cache bytes unchanged.",
+    "initialTestAuthorErrors": "First new selector expected pre instead of existing dl; next used getClientRects on nested closed details. Corrected to actual dl and Playwright visibility, original logs retained.",
+    "readback": {
+      "at": "2026-11-02T04:26:42.288095+00:00",
+      "status": "PASS",
+      "pagesModuleSHA256": "e4eb95bb10d828b62d17a906e8ecd5ae3b9e30680a37036d270d2fd0c56dd298",
+      "results": [
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "pages": [
+            28,
+            73,
+            111,
+            121,
+            132
+          ],
+          "technicalJsonDefault": "COLLAPSED",
+          "conflictCanBeOpenedAndRead": true,
+          "unitSummaryReadableWithoutTechnicalJson": true,
+          "originalSourceLinks": "PASS",
+          "engineeringCounts": [
+            51,
+            26,
+            3
+          ],
+          "status": "PASS",
+          "errors": []
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "pages": [
+            28,
+            73,
+            111,
+            121,
+            132
+          ],
+          "technicalJsonDefault": "COLLAPSED",
+          "conflictCanBeOpenedAndRead": true,
+          "unitSummaryReadableWithoutTechnicalJson": true,
+          "originalSourceLinks": "PASS",
+          "engineeringCounts": [
+            51,
+            26,
+            3
+          ],
+          "status": "PASS",
+          "errors": []
+        }
+      ]
+    }
+  },
   "closureReadback": {
     "format": "original-80-task-root-closure-readback-1",
     "at": "2026-11-02T04:02:29.720196+00:00",
@@ -916,7 +978,7 @@
     "csoi-metric-review.js": "d36958c7d24021a4a97b53f6343dc60aa021e13e0eae47ebb2e6bd8098d03d65",
     "csoi-op-review.js": "1a16b41a0fde72ed5952d7c275e9eb2d89156ad99731e7c85e3fe07b529ef890",
     "csoi-pages.css": "9a03eb74e01dc407cf4d0182e8931ec8f0ae4c8fd5d86bf47de0f69fa78d60cd",
-    "csoi-pages.js": "6e32420f20c41e6a9bb18e6f17d77be4cdc9ca16a399a8174c3c45168b12f817",
+    "csoi-pages.js": "e4eb95bb10d828b62d17a906e8ecd5ae3b9e30680a37036d270d2fd0c56dd298",
     "csoi-paths.js": "782c14b344e253c000e49a3d1726c0bb5e6f78caab16f6c214d46d5215a9fd6d",
     "csoi-phe.js": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
     "csoi-remediation.js": "b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",

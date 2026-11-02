@@ -1,0 +1,126 @@
+Traceback (most recent call last):
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/op-readable-browser.py", line 18, in <module>
+    assert conflict.get_attribute('open')is None;conflict.locator(':scope > summary').click();expect(conflict.locator('pre')).to_be_visible();assert len(conflict.locator('pre').inner_text())>20;conflict.locator(':scope > summary').click()
+                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 23332, in to_be_visible
+    self._sync(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 852, in to_be_visible
+    await self._expect_impl(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 128, in _expect_impl
+    _record_soft_or_raise(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 60, in _record_soft_or_raise
+    raise error
+AssertionError: Locator expected to be visible
+Actual value: None
+Error: element(s) not found 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for locator("#csoiOpSourceReading").locator(":scope > details:not([data-op-unit])").first.locator("pre")
+
+Aria snapshot:
+- link "Skip to route map":
+  - /url: "#canvas-title"
+- banner:
+  - link "Atlas home":
+    - /url: ./index.html
+    - text: CLIMATEOS / KNOWLEDGE NETWORK
+    - strong: Public Strategy Atlas
+  - text: Search stations and internal content
+  - searchbox "Search stations and internal content"
+  - button "Find a crossing"
+  - group: Tools & views
+  - group: Pages
+- main:
+  - text: COUNCIL STRATEGY & OPERATIONS INTELLIGENCE
+  - heading "Inside the knowledge" [level=1]
+  - link "Open this page in a companion window":
+    - /url: http://127.0.0.1:8879/#/knowledge/csoi%3Aknowledge%3Aop2026%3Areview%3Apage%3A028?companion=1
+  - button "Refresh this public view"
+  - paragraph: Independent public/synthetic research · official admission and real Council performance remain separately reviewed.
+  - heading "OP PDF 28 · Public Health and Environment" [level=2]
+  - paragraph: 本页归档 8 个阅读单元，另有 0 个跨页续行入口；分开保留计划目标、实际未知、单位、角色、条件和原件疑点。
+  - paragraph: "Evidence state: LOCAL_RESEARCH · Official applicability: PENDING"
+  - heading "Source reading / 原文梳理" [level=2]
+  - paragraph: OP 2026–27 · PDF 28 · page/unit reading; exact per-field source anchors retained · OP_PAGE · OP-PAGE-028
+  - paragraph: 原件与父项版本可追溯；这是来源研究记录，现行性和正式准入仍待确认。
+  - heading "OP 全文有界梳理 / 计划、条件和预算" [level=2]
+  - paragraph: 本条与本轮逐页原件复核一致，来源版本仍有效。
+  - paragraph: 这份 2026–27 OP 的计划值、服务指标、项目预算和政策收费分开保存；不代表实际支出、已完成工作、现行法定义务或 CSP 成效。
+  - group:
+    - text: 原件矛盾 / MULTIROW_AND_COLUMN_DENOMINATORS
+    - term: id
+    - definition: OP-SRC-005
+    - term: pdfPages
+    - definition: "[ 14, 17, 27, 28, 29, 30 ]"
+    - term: type
+    - definition: MULTIROW_AND_COLUMN_DENOMINATORS
+    - term: sourceMeaning
+    - definition: A single action can span multiple distinctKPI rows; optimal volume,funded volume,target,reporting cadence andKPI measurement are different columns.
+    - term: requiredTreatment
+    - definition: Count service/action parents andKPI subrows separately; preserve inherited cells, blanks,hyphens,No measure and# as source-specific unknowns,notzero.
+  - group: 原件矛盾 / SOURCE_ARITHMETIC_NOT_REPAIRED
+  - group: 原件矛盾 / TRIGGER_AND_CONDITION_PRESERVATION
+  - group: 原件矛盾 / REGULATORY_COLUMN_NOT_LEGAL_ADMISSION
+  - textbox "Search OP page units":
+    - /placeholder: 在本页行动、预算或条件中查找
+  - button "查询本页"
+  - paragraph: 本页匹配 8 个阅读单元；每页展开列表最多 15 项。
+  - group: 地下储油设施检查 · SERVICE_ACTION
+  - group: 冷却水系统监管 · SERVICE_ACTION
+  - group: 饮用水取样 · SERVICE_ACTION
+  - group: 商业泳池及SPA水质 · SERVICE_ACTION
+  - group: 现场污水系统预防检查 · SERVICE_ACTION
+  - group: 预制住宅及房车公园检查 · SERVICE_ACTION
+  - group: 液体商业废水计划 · SERVICE_ACTION
+  - group: 回流防护计划 · SERVICE_ACTION
+  - navigation "OP reading units"
+  - text: "Source URL: www.snowymonaro.nsw.gov.au"
+  - link "打开官方 OP PDF 第 28 页":
+    - /url: https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf#page=28
+  - paragraph: 实际执行、实际支出和环境成效：UNKNOWN。历史行动表、预算标记或报告频率不等于现在的任务、拨款或法定检查期限。
+  - navigation "Source research ancestry":
+    - link "OP 2026–27 · 142 页有界原文梳理":
+      - /url: "#/knowledge/csoi%3Aknowledge%3Aop2026%3Areview%3Adocument"
+  - heading "Explicit document references / 原文明确引用" [level=2]
+  - link "6.1 · Monitor air, land and waterways":
+    - /url: "#/knowledge/csoi%3Aknowledge%3Acsp2035%3Astrategy%3A6.1"
+  - paragraph: Reading record anchored at PDF 28; actual printed CSP reference pages 28, in 8 reading unit(s); precise per-unit/row anchors in facts.printedCspReferences. This page link does not assign every page action to the strategy. · EXPLICIT_DOCUMENT_REFERENCE
+  - link "8.2 · Maintain water and wastewater capacity":
+    - /url: "#/knowledge/csoi%3Aknowledge%3Acsp2035%3Astrategy%3A8.2"
+  - paragraph: Reading record anchored at PDF 28; actual printed CSP reference pages 28, in 2 reading unit(s); precise per-unit/row anchors in facts.printedCspReferences. This page link does not assign every page action to the strategy. · EXPLICIT_DOCUMENT_REFERENCE
+  - paragraph: 仅说明 OP 印出了这个 CSP 编号；并未证明执行、授权、法定义务或减排因果。
+  - group: Exact source/page/revision evidence and research limits
+  - link "Return to source research and coverage":
+    - /url: "#/research?source=OP"
+  - heading "Pinned source provenance — not official admission" [level=2]
+  - paragraph: "Retained record state: ACTIVE"
+  - link "Original source receipt and review gates":
+    - /url: "#/sources/csoi%3Asmrc-op-2026%3A20261030"
+  - link "Trace pinned record to source":
+    - /url: "#/compare/paths?leftPaths=csoi%3Aknowledge%3Aop2026%3Areview%3Apage%3A028+%7C+csoi%3Asmrc-op-2026%3A20261030&rightPaths=csoi%3Aknowledge%3Aop2026%3Areview%3Apage%3A028+%7C+csoi%3Asmrc-op-2026%3A20261030"
+  - term: current
+  - definition: "true"
+  - term: invalidations
+  - definition: "[]"
+  - term: gaps
+  - definition: "[ \"SOURCE_RIGHTS_UNKNOWN\", \"SOURCE_CURRENT_VERSION_UNKNOWN\" ]"
+  - term: dependencyRecordsChecked
+  - definition: "9"
+  - group: Technical reverse trace — official linkage UNKNOWN
+  - navigation "Parent and station context":
+    - link "Strategy station":
+      - /url: "#/strategy/op"
+  - heading "Children and downstream content" [level=2]
+  - paragraph: Source-backed leaves can have no admitted children. Missing content is not a completed investigation.
+  - heading "Typed relationships and reverse trace" [level=2]
+  - paragraph: No evidence-supported relationship is available. Official strategic linkage remains UNKNOWN.
+  - group: Identity, source, scope and revision
+  - text: "Source URL: www.snowymonaro.nsw.gov.au"
+  - link "Open official public source":
+    - /url: https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/20262027/adopted-2026-2027-operational-plan-v3.1-w-revenue-policy.pdf
+  - link "Compare this exact object":
+    - /url: "#/compare?left=csoi%3Aknowledge%3Aop2026%3Areview%3Apage%3A028"
+  - button "View this object on the route map"

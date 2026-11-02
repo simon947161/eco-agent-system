@@ -54,9 +54,11 @@ def guarded_goto(page,url,*pos,**kw):
   page.on('request',lambda r:network.append({'method':r.method,'origin':urllib.parse.urlsplit(r.url).netloc}))
  return native_goto(page,url,*pos,**kw)
 Page.goto=guarded_goto
-for name in ['csoi-op-browser.py','csoi-phe-context-browser.py','live-workspace-browser.py']:
- script=app/'qa'/name;source=script.read_text().replace('http://127.0.0.1:8877',base)
- if name=='csoi-op-browser.py':
+for name in ['csoi-op-browser.py','csoi-phe-context-browser.py','live-workspace-browser.py','op-readable-browser.py']:
+ script=app/'qa'/name;source=script.read_text().replace('http://127.0.0.1:8877',base).replace('http://127.0.0.1:8879',base)
+ if name=='op-readable-browser.py':
+  source=source.replace("str(APP/'qa/op-completion-20261102/readable-browser')",repr(str(out/'readable')))
+ elif name=='csoi-op-browser.py':
   source=source.replace("'qa/op-completion-20261102/browser'",repr(str(out/'op')))
  elif name=='csoi-lsps-browser.py':
   source=source.replace("OUT=APP/'qa/lsps-completion/browser'","OUT=Path("+repr(str(out/'lsps'))+')')
