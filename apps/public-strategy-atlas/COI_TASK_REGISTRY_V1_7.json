@@ -278,7 +278,10 @@
         "sources/csoi-source-observations.json",
         "sources/csoi-catalogue.json",
         "atlas-intake.js",
-        "csoi-pages.js"
+        "csoi-pages.js",
+        "csoi-metric-review.js",
+        "sources/csp-indicator-review.json",
+        "csoi-metric-review.test.cjs"
       ],
       "actual_test_commands": [
         "node apps/public-strategy-atlas/csoi-intake.test.cjs",
@@ -292,13 +295,17 @@
         "qa/csoi/op-planned-source-1440.png",
         "qa/strategy-completion/REPORT_ZH.md",
         "qa/strategy-completion/item-coverage.json",
-        "qa/strategy-completion/acceptance.json"
+        "qa/strategy-completion/acceptance.json",
+        "qa/csp-metric-review/REPORT_ZH.md",
+        "qa/csp-metric-review/independent/initial-review.json",
+        "qa/csp-metric-review/independent/readback-review.json",
+        "qa/csp-metric-review/acceptance.json"
       ],
       "remote_sha": "a06f0f03ee39d78a40695b2636a97fab49bcd4f3",
       "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": "Current consolidation, full source inventory/chapter coverage, reuse rights and independent geographic/legal/human review remain incomplete. Water AMP and two former-area DCP originals now byte-verified, with conflicting observed revisions retained.",
-      "next_action": "Preserve checked core items and independent source conflicts; extend missing DP/OP/resource and spatial/legal evidence. Current controlled versions, applicability, rights and admission remain separate review requirements.",
+      "next_action": "Continue bounded LSPS map/non-numbered narrative review and full OP/DP/resource/budget/annual-report coverage; independently obtain missing metric methods/raw inputs only within authorised public scope. Official currentness/applicability and private WCOS remain separate.",
       "evidence_updates": [
         {
           "code_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
@@ -347,6 +354,18 @@
             "qa/strategy-completion/acceptance.json"
           ],
           "statusEffect": "Existing engineering status retained; detailed final validation is in acceptance.json, no source admission granted."
+        },
+        {
+          "date": "2026-11-02",
+          "checkpoint": "CSP63 second independent source-semantic review",
+          "scope": "All63 indicator definitions, units, source dates versus measurement periods, baselines/trends versus targets, roles, boundaries and recomputation requirements reviewed. Original v2 records retained;63 append-only revisions. No official admission, current applicability, numerical target or actual performance promotion.",
+          "evidence": [
+            "qa/csp-metric-review/REPORT_ZH.md",
+            "qa/csp-metric-review/independent/initial-review.json",
+            "qa/csp-metric-review/independent/readback-review.json",
+            "qa/csp-metric-review/acceptance.json"
+          ],
+          "statusEffect": "Existing engineering status retained; current batch execution outcomes recorded in acceptance.json."
         }
       ]
     },
@@ -1218,7 +1237,10 @@
         "csoi-layers.test.cjs",
         "csoi-recompute.test.cjs",
         "atlas-domain.js",
-        "docs/CSOI_CONTRACTS.md"
+        "docs/CSOI_CONTRACTS.md",
+        "csoi-metric-review.js",
+        "sources/csp-indicator-review.json",
+        "csoi-metric-review.test.cjs"
       ],
       "actual_test_commands": [
         "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
@@ -1228,13 +1250,31 @@
         "qa/csoi/native-c.json",
         "qa/csoi/browser-c.json",
         "qa/csoi/layers-current-1440.png",
-        "qa/csoi/layers-withdrawn-390.png"
+        "qa/csoi/layers-withdrawn-390.png",
+        "qa/csp-metric-review/REPORT_ZH.md",
+        "qa/csp-metric-review/independent/initial-review.json",
+        "qa/csp-metric-review/independent/readback-review.json",
+        "qa/csp-metric-review/acceptance.json"
       ],
       "remote_sha": "c51d7935285e0d7c7c45428edaa003fc9fcaba1d",
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+      "next_action": "Continue bounded LSPS map/non-numbered narrative review and full OP/DP/resource/budget/annual-report coverage; independently obtain missing metric methods/raw inputs only within authorised public scope. Official currentness/applicability and private WCOS remain separate.",
+      "evidence_updates": [
+        {
+          "date": "2026-11-02",
+          "checkpoint": "CSP63 second independent source-semantic review",
+          "scope": "All63 indicator definitions, units, source dates versus measurement periods, baselines/trends versus targets, roles, boundaries and recomputation requirements reviewed. Original v2 records retained;63 append-only revisions. No official admission, current applicability, numerical target or actual performance promotion.",
+          "evidence": [
+            "qa/csp-metric-review/REPORT_ZH.md",
+            "qa/csp-metric-review/independent/initial-review.json",
+            "qa/csp-metric-review/independent/readback-review.json",
+            "qa/csp-metric-review/acceptance.json"
+          ],
+          "statusEffect": "Existing engineering status retained; current batch execution outcomes recorded in acceptance.json."
+        }
+      ]
     },
     {
       "id": "COI-025",
@@ -3214,7 +3254,10 @@
         "csoi-governance.js",
         "csoi-calendar.js",
         "csoi-assistant.js",
-        "csoi-planning.test.cjs"
+        "csoi-planning.test.cjs",
+        "csoi-metric-review.js",
+        "sources/csp-indicator-review.json",
+        "csoi-metric-review.test.cjs"
       ],
       "actual_test_commands": [
         "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-h-native.json",
@@ -3231,13 +3274,31 @@
         "qa/csoi/original-source-h.txt",
         "qa/csoi/op-planning-quantity-390.png",
         "qa/CSOI_V1_7_SYSTEM_RESULTS.md",
-        "qa/CSOI_V1_7_ACCEPTANCE.json"
+        "qa/CSOI_V1_7_ACCEPTANCE.json",
+        "qa/csp-metric-review/REPORT_ZH.md",
+        "qa/csp-metric-review/independent/initial-review.json",
+        "qa/csp-metric-review/independent/readback-review.json",
+        "qa/csp-metric-review/acceptance.json"
       ],
       "remote_sha": "68c645f56a74bcdffaf06b5cb893d7bd88eb90b4",
       "source_admission_status": "PENDING_NOT_GRANTED",
       "privacy_boundary": "PUBLIC_OR_SYNTHETIC_ONLY",
       "blocker": null,
-      "next_action": "Continue unresolved source/current-law/rights/relationship reviews and public content depth. Preserve verified capabilities and truthful NOT_TESTED accessibility limits."
+      "next_action": "Continue bounded LSPS map/non-numbered narrative review and full OP/DP/resource/budget/annual-report coverage; independently obtain missing metric methods/raw inputs only within authorised public scope. Official currentness/applicability and private WCOS remain separate.",
+      "evidence_updates": [
+        {
+          "date": "2026-11-02",
+          "checkpoint": "CSP63 second independent source-semantic review",
+          "scope": "All63 indicator definitions, units, source dates versus measurement periods, baselines/trends versus targets, roles, boundaries and recomputation requirements reviewed. Original v2 records retained;63 append-only revisions. No official admission, current applicability, numerical target or actual performance promotion.",
+          "evidence": [
+            "qa/csp-metric-review/REPORT_ZH.md",
+            "qa/csp-metric-review/independent/initial-review.json",
+            "qa/csp-metric-review/independent/readback-review.json",
+            "qa/csp-metric-review/acceptance.json"
+          ],
+          "statusEffect": "Existing engineering status retained; current batch execution outcomes recorded in acceptance.json."
+        }
+      ]
     },
     {
       "id": "COI-073",

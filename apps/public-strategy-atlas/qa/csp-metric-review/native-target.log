@@ -1,0 +1,13 @@
+PASS:63 reviewed indicator revisions preserve exact v2 history; source/parent/edit isolation, import/export, unknown units/targets/actuals and source-year separation retained; concurrent edits and invented approval/targets rejected.
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+2 !== 1
+
+    at /workspace/eco-agent-system/apps/public-strategy-atlas/csoi-strategy-research.test.cjs:8:419 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 2,
+  expected: 1,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

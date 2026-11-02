@@ -6,7 +6,7 @@
       "sourceId": "csoi:smrc-csp-full-2025:20261030",
       "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
       "totalPages": 36,
-      "scope": "Every page reviewed for document structure/context; core numbered objectives/strategies and measure tables are bounded structured extraction. This is not every-sentence semantic ingestion or legal review.",
+      "scope": "Every page reviewed for document structure/context; core numbered objectives/strategies and measure tables are bounded structured extraction. This is not every-sentence semantic ingestion or legal review. A second independent AI source-semantic review covers all63 indicator rows on PDF29–31 with PDF28 context; this is not raw-data recomputation or authorised admission.",
       "pages": [
         {
           "pdfPage": 1,
@@ -310,7 +310,7 @@
         {
           "pdfPage": 29,
           "section": "Community progress measures",
-          "status": "ALL_24_PRINTED_ROWS_STRUCTURED",
+          "status": "ALL_24_PRINTED_ROWS_STRUCTURED; SECOND_SOURCE_SEMANTIC_REVIEW",
           "pageDigest": "sha256:3c5e09c5b4a7532653b16944af57550af76e0e65dfd062769ec602cc837ea673",
           "recordIds": [
             "csoi:knowledge:csp2035:indicator:29-community-01",
@@ -338,12 +338,12 @@
             "csoi:knowledge:csp2035:indicator:29-community-23",
             "csoi:knowledge:csp2035:indicator:29-community-24"
           ],
-          "gap": "24rows; all4columns independently checked. Underlying methods, source microdata, denominators and current values remain unverified."
+          "gap": "24rows; all4columns independently checked. Underlying methods, source microdata, denominators and current values remain unverified. Definition, unit, source-year/measurement-period, target, responsibility, scope and calculation limits individually reviewed; actual values and professional human admission remain unknown/pending."
         },
         {
           "pdfPage": 30,
           "section": "Economy and environment progress measures",
-          "status": "ALL_19_PRINTED_ROWS_STRUCTURED",
+          "status": "ALL_19_PRINTED_ROWS_STRUCTURED; SECOND_SOURCE_SEMANTIC_REVIEW",
           "pageDigest": "sha256:67f1029aae9b1cfb4ca44fe51e4cc9836def4e61578a8d39e5f5c62757fec998",
           "recordIds": [
             "csoi:knowledge:csp2035:indicator:30-economy-01",
@@ -366,12 +366,12 @@
             "csoi:knowledge:csp2035:indicator:30-environment-07",
             "csoi:knowledge:csp2035:indicator:30-environment-08"
           ],
-          "gap": "11economy+8environment rows.29.9 is per-person regional emissions with2021–22 source label; no Council actual or independent recalculation."
+          "gap": "11economy+8environment rows.29.9 is per-person regional emissions with2021–22 source label; no Council actual or independent recalculation. Definition, unit, source-year/measurement-period, target, responsibility, scope and calculation limits individually reviewed; actual values and professional human admission remain unknown/pending."
         },
         {
           "pdfPage": 31,
           "section": "Infrastructure and civic progress measures",
-          "status": "ALL_20_PRINTED_ROWS_STRUCTURED",
+          "status": "ALL_20_PRINTED_ROWS_STRUCTURED; SECOND_SOURCE_SEMANTIC_REVIEW",
           "pageDigest": "sha256:fe2460aab1cc79413d53a4ba947fe3a1c66635ee23f9f64619be3a10deb4a087",
           "recordIds": [
             "csoi:knowledge:csp2035:indicator:31-infrastructure-01",
@@ -395,7 +395,7 @@
             "csoi:knowledge:csp2035:indicator:31-civic-07",
             "csoi:knowledge:csp2035:indicator:31-civic-08"
           ],
-          "gap": "12infrastructure+8civic rows.7519CO2eq has no complete mass unit. Public-transport2.1/3.1 conflict retained. Ratios lacking printedpercent unit remain UNKNOWN."
+          "gap": "12infrastructure+8civic rows.7519CO2eq has no complete mass unit. Public-transport2.1/3.1 conflict retained. Ratios lacking printedpercent unit remain UNKNOWN. Definition, unit, source-year/measurement-period, target, responsibility, scope and calculation limits individually reviewed; actual values and professional human admission remain unknown/pending."
         },
         {
           "pdfPage": 32,

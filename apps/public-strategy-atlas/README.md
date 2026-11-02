@@ -1,3 +1,5 @@
+Latest source-review batch: **63 CSP indicators independently reviewed and corrected with immutable history**. [Chinese report and Excel](qa/csp-metric-review/REPORT_ZH.md), [44 native /5 browser acceptance](qa/csp-metric-review/acceptance.json). Publication follows the same owner-private Council Site; see the latest deployment receipt for the actual live version.
+
 Current private trial: [Council source research](https://council-strategy-intelligence.minshu.chatgpt.site/#/research), version2, owner-only. [Verified release and limits](qa/strategy-completion/DEPLOYMENT_ZH.md). No GitHub merge; overall system remainsPARTIAL.
 
 ## 来源梳理与交付 / source research
@@ -6,7 +8,7 @@ Open `#/research` from the visible map heading. Browse CSP goals/strategies/indi
 
 The original archived audit report and workbook are recovered and hash-verified; the old task’s uncommitted Phase2 files are not accessible here. New source records are official-source reconstruction, independently reviewed. See [current research report](qa/strategy-completion/REPORT_ZH.md) and [final acceptance](qa/strategy-completion/acceptance.json). Selected core tables are complete within stated denominators; whole narratives, maps, current-law applicability, DP/fullOP and actual Council outcomes are not claimed complete.
 
-Rebuild exact browser inputs with `node tools/sync-strategy-knowledge.cjs`, `node tools/sync-strategy-review-scope.cjs`, then `node tools/build-csoi-boot.cjs`. Original verification tools require the hash-matched official PDF supplied as their input; originals are not committed or deployed.
+Rebuild exact browser inputs with `node tools/build-csp-indicator-review.cjs`, `node tools/sync-strategy-knowledge.cjs`, `node tools/sync-strategy-review-scope.cjs`, then `node tools/build-csoi-boot.cjs`. Original verification tools require the hash-matched official PDF supplied as their input; originals are not committed or deployed.
 
 # ClimateOS Public Strategy Atlas
 

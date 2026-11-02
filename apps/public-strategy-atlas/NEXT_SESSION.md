@@ -1,3 +1,13 @@
+# CSP63 second semantic review — source and application accepted
+
+Continue the same PR130 and same owner-only Council Site. Resolve current remote HEAD first. Review artifact `qa/csp-metric-review/acceptance.json`:44/44 native files and5/5 applicable real Chromium suites PASS. All63 actual metric details opened at1440/390.27 definition/scope findings repaired;45 source-year hints separated from observation periods;63 indicators remain NOT_COMPUTABLE, no numeric targets/actuals/official admission added. Original CSP bundle unchanged;63 new revisions append to exact466 revision/event prefix, current529 revisions,389entities/48assertions/127legacyitems. Digest sha256:a4360b900ba0593fac2d9239dd1a0728e7ba2cf2463e05bd2181340796fa88d8.
+
+Publication is the remaining release step for this checkpoint; read deployment.json for later confirmed outcome. Reuse existingCouncilidentity, preservev2rollback, owner-onlypolicy, waterSite and all private boundaries. Do not infer latestGitHubdoccommit is the deployed runtime. OriginaluncommittedPhase2 still inaccessible, not declared lost.
+
+Next authorised public batch: LSPS maps/non-numbered narrative and source conditions, using existing118page inventory and originalPDF; bounded explicit coverage, not parcel applicability. Then fullOP denominator and DP/resource/budget/annual-report relationships. Public-source work needs no additional permissions; official currentness/legal admission and privateWCOS002/031/040remain separate. Engineering49/28/3unchanged;COI011/012/015/016PARTIAL. No merge, fees, permission expansion, private imports or waterSite changes.
+
+--- Previous checkpoint (historical) ---
+
 # Current checkpoint: audited strategy research + owner-private Council v2 delivered
 
 Live https://council-strategy-intelligence.minshu.chatgpt.site/#/research ; existingSite appgprj_6ae5b063565c8191802c9d7f7eb3214b only. Version2 source 74f240e27cbfbbec5dffe225259eee1d42e58798, canonical tested app c46aceb115c05860266bcd7c4746af3c3a8c9d20; deployment appgdep_6ae7d38f16108191bffb543c69b2cd79. Subsequent documentation checkpoint does not change deployed application; resolve current PR130 remoteHEAD before edits. OPEN/DRAFT/unmerged.

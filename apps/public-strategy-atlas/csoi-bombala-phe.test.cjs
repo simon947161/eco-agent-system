@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),M=require('./atlas-model.js'),P=require('./csoi-phe.js'),B=require('./csoi-boot.js'),Build=require('./tools/build-csoi-boot.cjs'),R=require('./csoi-review-work.js'),I=require('./atlas-intake.js'),G=require('./csoi-governance.js'),Calendar=require('./csoi-calendar.js');
 (async()=>{
  const d=await B.load(require('./sources/csoi-default-snapshot.js'),Build.inputs()),before=await M.objectDigest(d);
- assert.equal(before,'sha256:f2ec9adec008d5c0f5a39bac013ffb76aff73e08061d76b3512c572f1c8c1962');
+ assert.equal(before,'sha256:a4360b900ba0593fac2d9239dd1a0728e7ba2cf2463e05bd2181340796fa88d8');
  const context=await P.historicalContexts(d,'ossm'),cards=context.cards.filter(c=>c.family==='bombala');assert.equal(context.cards.length,11);assert.equal(cards.length,5);assert(cards.every(c=>c.current&&c.reviewPlans.length===0&&P.readingDomains(c.id).includes('ossm')));
  const soil=cards.find(c=>c.id.endsWith(':soil')),rural=cards.find(c=>c.id.endsWith(':4:5:4:A2')),a8=cards.find(c=>c.id.endsWith(':A8'));
  assert.equal(soil.anchor.pdfPage,55);assert.equal(rural.anchor.pdfPage,85);assert(soil.locator.includes('printed page 34'));assert(soil.parentContext.some(p=>p.id.endsWith(':A9')&&p.conditions.includes('Reticulated sewerage is unavailable.')));assert(rural.parentContext.some(p=>p.section.startsWith('4.5.4')&&p.conditions.some(c=>c.includes('rural-development'))));assert(a8.conditions.some(c=>c.includes('capacity and efficiency')));

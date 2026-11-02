@@ -15,7 +15,7 @@ from playwright.sync_api import Page,sync_playwright,expect
 settings=termios.tcgetattr(sys.stdin.fileno());settings[3]&=~termios.ECHO;termios.tcsetattr(sys.stdin.fileno(),termios.TCSANOW,settings)
 print('Ready for supported Site service credential JSON (hidden stdin).',flush=True)
 args=json.loads(sys.stdin.readline());token=args['token'];base=args['url'].rstrip('/');assert base=='https://council-strategy-intelligence.minshu.chatgpt.site'
-app=Path(__file__).resolve().parents[1];out=app/'qa/strategy-completion/live';out.mkdir(parents=True,exist_ok=True)
+app=Path(__file__).resolve().parents[1];out=app/'qa/csp-metric-review/live';out.mkdir(parents=True,exist_ok=True)
 record={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'url':base,'authMode':'Supported Sites service access; no visitor identity or sign-in emulation','ownerSignedInBrowser':'NOT_TESTED_NO_OWNER_SESSION','anonymous':[],'assets':[],'browserSuites':[]}
 def save(): (out/'live-validation.json').write_text(json.dumps(record,indent=2)+'\n')
 for path in ['/', '/atlas.js','/sources/csoi-default-snapshot.js']:
@@ -54,9 +54,11 @@ def guarded_goto(page,url,*pos,**kw):
   page.on('request',lambda r:network.append({'method':r.method,'origin':urllib.parse.urlsplit(r.url).netloc}))
  return native_goto(page,url,*pos,**kw)
 Page.goto=guarded_goto
-for name in ['csoi-strategy-browser.py','csoi-phe-context-browser.py','e0-browser.py']:
+for name in ['csoi-metric-browser.py','csoi-strategy-browser.py','csoi-phe-context-browser.py','e0-browser.py']:
  script=app/'qa'/name;source=script.read_text().replace('http://127.0.0.1:8877',base)
- if name=='csoi-strategy-browser.py':
+ if name=='csoi-metric-browser.py':
+  source=source.replace("OUT=APP/'qa/csp-metric-review/browser'","OUT=Path("+repr(str(out/'metrics'))+')')
+ elif name=='csoi-strategy-browser.py':
   source=source.replace("OUT=APP/'qa/strategy-completion/browser'","OUT=Path("+repr(str(out/'strategy'))+')')
  elif name.startswith('csoi'):
   source=source.replace("OUT=APP/'qa/csoi'","OUT=Path("+repr(str(out))+')')
@@ -65,4 +67,4 @@ for name in ['csoi-strategy-browser.py','csoi-phe-context-browser.py','e0-browse
  record['browserSuites'].append({'script':name,'status':'PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH'});save()
 record['network']={'requests':len(network),'mutationRequests':[r for r in network if r['method'] not in ['GET','HEAD']],'externalOrigins':sorted(set(r['origin'] for r in network if r['origin'] and r['origin']!=urllib.parse.urlsplit(base).netloc))}
 assert not record['network']['mutationRequests'];assert not record['network']['externalOrigins']
-record['status']='PASS';save();print('PASS: live PHE/source/review/calendar/export/import/withdrawal plus route-first layout, explicit IndexedDB save/load and stale-tab conflict. Owner-interactive sign-in remains untested.',flush=True)
+record['status']='PASS';save();print('PASS: live63metric detail/readback flows and PHE/source/review/calendar/export/import/withdrawal plus route-first layout, explicit IndexedDB save/load and stale-tab conflict. Owner-interactive sign-in remains untested.',flush=True)

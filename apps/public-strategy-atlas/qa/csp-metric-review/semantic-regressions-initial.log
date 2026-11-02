@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/tools/verify-csp-metric-review.py", line 62, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/tools/verify-csp-metric-review.py", line 41, in main
+    p=argparse.ArgumentParser();p.add_argument('pdf',type=Path);p.add_argument('bundle',type=Path);p.add_argument('--out',type=Path,required=True);a=p.parse_args();source=original.Source(a.pdf);b=json.loads(a.bundle.read_text());result=verify(source,b);cases=[]
+                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/tools/verify-csp-metric-review.py", line 35, in verify
+    need(f['baseline']['currency']=='UNKNOWN','NO_INFERRED_CURRENCY_CODE')
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/tools/verify-csp-metric-review.py", line 7, in need
+    if not ok:raise ValueError(reason)
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: NO_INFERRED_CURRENCY_CODE
