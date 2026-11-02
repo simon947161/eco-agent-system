@@ -1,0 +1,6703 @@
+{
+  "at": "2026-11-02T08:28:05.159095+00:00",
+  "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+  "auth": "Supported service access; no owner identity/session emulated",
+  "ownerInteractiveLogin": "NOT_TESTED",
+  "anonymous": [
+    {
+      "path": "/",
+      "status": 403
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 403
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 403
+    }
+  ],
+  "assets": [
+    {
+      "file": "COI_TASK_REGISTRY_V1_7.json",
+      "sha256": "sha256:0d36efc725402b8fc89944a20361577c3f8b3e5e15e40bdaa2fd687023f08993",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas-accounting.js",
+      "sha256": "sha256:5710e8900188eb4af880b6a50730037901448bad6166a6012d373b3fcd71f99f",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas-data.js",
+      "sha256": "sha256:6a061b80d5f47a79f8d4e34d7e09dc0c236d4fbaec3b46f788a1dece5f267fe4",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas-domain.js",
+      "sha256": "sha256:b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas-execution.js",
+      "sha256": "sha256:f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas-intake.js",
+      "sha256": "sha256:e521b7d35218dda4fc2f10a47d0d6b0d68f23de254f55872234d2f8c33a1712d",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas-model.js",
+      "sha256": "sha256:ab147972fdbb9ec982c96380dfbaac0a6c82d2e8102eb7a888268c1587487594",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas-route-layout.js",
+      "sha256": "sha256:163a669fb4af413a27bf6231b0a4d50e7b4877b9f397ea641b7a1906a53a4925",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas-workspace.js",
+      "sha256": "sha256:3147a6b6cac7b8a5420537f76c7c3b1a0cacdf10ef1b0c9e40944f972ae4d621",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas.css",
+      "sha256": "sha256:e7d9d8e7f0d78cd53706ac10ea52ca92fde1f6ef4034f096c18e788d91455cd6",
+      "status": "EXACT"
+    },
+    {
+      "file": "atlas.js",
+      "sha256": "sha256:44ff9204240a63c9754fdb3e449bf4706d209f6855aa958b7a0456d616adc928",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-assistant.js",
+      "sha256": "sha256:2ff1b6b3004f133fd4a0d1b09197a5b549f6348fa307536d1699f3a4dbea3f58",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-boot.js",
+      "sha256": "sha256:49ad12d9a19fb51a1fc2e73e83ee516f36b390fdb8d70b43b86c80936c4d9f16",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-calendar.js",
+      "sha256": "sha256:3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-clauses.js",
+      "sha256": "sha256:f9b3f8c4b7a2aabec9ee0aa3928e03b31bebcbb87ce289441ee32712c876cc86",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-governance.js",
+      "sha256": "sha256:fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-intake.js",
+      "sha256": "sha256:5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-knowledge.js",
+      "sha256": "sha256:64281e02e9c60df961d0163c89fb77cfd6abde80beae03c9e88cb5cb7386e8d5",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-layers.js",
+      "sha256": "sha256:8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-lsps-context.js",
+      "sha256": "sha256:55275ff9c6e1f04e34ebf14e5dca8b57efe52bd25b454d07d9d264d55bcd511e",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-metric-review.js",
+      "sha256": "sha256:d36958c7d24021a4a97b53f6343dc60aa021e13e0eae47ebb2e6bd8098d03d65",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-op-review.js",
+      "sha256": "sha256:1a16b41a0fde72ed5952d7c275e9eb2d89156ad99731e7c85e3fe07b529ef890",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-pages.css",
+      "sha256": "sha256:a77a888831096f6cc78040658cfcb575f3b3b63ff316e1a48c3fb55b97f1a327",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-pages.js",
+      "sha256": "sha256:df6d3917f8c45ec017e77a31973b34e5b5731670927dd36f0e1c401e4829a3b7",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-paths.js",
+      "sha256": "sha256:782c14b344e253c000e49a3d1726c0bb5e6f78caab16f6c214d46d5215a9fd6d",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-phe.js",
+      "sha256": "sha256:4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-remediation.js",
+      "sha256": "sha256:b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-review-work.js",
+      "sha256": "sha256:a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-router.js",
+      "sha256": "sha256:c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-strategy-research.js",
+      "sha256": "sha256:8c16cb5f43db7abb4d036bc177b1fd7e39dc90a837c2c114ac32112f6c7bcbe7",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-wcos.js",
+      "sha256": "sha256:c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+      "status": "EXACT"
+    },
+    {
+      "file": "csoi-work.js",
+      "sha256": "sha256:541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+      "status": "EXACT"
+    },
+    {
+      "file": "index.html",
+      "sha256": "sha256:2b2a5e8eae92bb3340c17d3778379567dee662f5ca2168b88b701963a0e485cf",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/bombala-dcp-outline.js",
+      "sha256": "sha256:a04dd1cb841b1de6100feac873c59d14076ee8a9bf35ea746d045d2a46cb1a08",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/cooma-dcp-outline.js",
+      "sha256": "sha256:bc0a929467eed24c3972ecc5ca086fc0de82577322995728835a3c6520b7443c",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/csoi-catalogue.js",
+      "sha256": "sha256:2c4411805b7224713c4af824bddae5e7f3d21f14a7a6c041c6f3e7858263f841",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/csoi-default-snapshot.js",
+      "sha256": "sha256:ae055df61798e20c63c988414cb28e107d0adc603842f5606cba6a7161d7105b",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/csoi-source-observations.js",
+      "sha256": "sha256:92e05c0436f6667a8e33878f01585ec4059e8325364fcb32631c67db5ed21593",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/csp-indicator-review.js",
+      "sha256": "sha256:fe26fa7fec74a72c62467ff51ff8326ffe2f00af378c93e6feada631b71d578b",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/csp-public-knowledge.js",
+      "sha256": "sha256:d73515ba79df8361b306fc4c240358890f3119ae3bade4d0a4a6ebdd3082e942",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/csp61-admission.js",
+      "sha256": "sha256:9d3e6311cc0e3976e2c11f26cefff508352bda33f029a89af99b5010d53f7b02",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/knowledge-corrections.js",
+      "sha256": "sha256:dd39ca5bc0e53eab3f4be428cede3ebd66f9d3ee551ae684801c2e3eb421a279",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/lsps-context-review.js",
+      "sha256": "sha256:8921c8a97915b80596efa1b1bb3ade5eeda00fb147cdd5a2340e004bf4abe972",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/lsps-public-knowledge.js",
+      "sha256": "sha256:d110376685848056fa9765bfbea1c1125b77419212020ca3e17ff58dd650c3c4",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/op-completion-review.js",
+      "sha256": "sha256:166a27ca25381e238ca237bb27945bc204fcaddc7cd5decd7b78c95f382beada",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/op-water-public-knowledge.js",
+      "sha256": "sha256:d626f80c33497eb78911b5a0088430a38a10c3e5927a0487c7ad0f3cffc32189",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/public-catalogue.js",
+      "sha256": "sha256:4b59b5794cdeaef6ca5a7e0ccab23666d052adc7fc65f42c9a748e0ed83d10ca",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/snowy-dcp-outline.js",
+      "sha256": "sha256:0e5d7cb093a9b945bfb0d898c6e2a21ba79809557ad063500bcef47d83eb9271",
+      "status": "EXACT"
+    },
+    {
+      "file": "sources/strategy-review-scope.js",
+      "sha256": "sha256:f8ad50f496e26e1361068df0e062e6c36dda5ff33f8f91b6678ab71faa5fc8d0",
+      "status": "EXACT"
+    },
+    {
+      "file": "deployment-assets.json",
+      "sha256": "sha256:557feb856432fa90ee77f87e1d95eefc6623eeb69d8211107b72a42e4083ad8e",
+      "status": "EXACT"
+    }
+  ],
+  "network": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.119,
+      "forwardedSeconds": 0.129
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.181,
+      "forwardedSeconds": 0.193
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.215,
+      "forwardedSeconds": 0.224
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.207,
+      "forwardedSeconds": 0.23
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.201,
+      "forwardedSeconds": 0.216
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.241,
+      "forwardedSeconds": 0.253
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7775,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.256,
+      "forwardedSeconds": 0.266
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.333,
+      "forwardedSeconds": 0.34
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.342,
+      "forwardedSeconds": 0.35
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.356,
+      "forwardedSeconds": 0.362
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.351,
+      "forwardedSeconds": 0.37
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.359,
+      "forwardedSeconds": 0.374
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.389,
+      "forwardedSeconds": 0.454
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.458,
+      "forwardedSeconds": 0.532
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.523,
+      "forwardedSeconds": 0.529
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.579,
+      "forwardedSeconds": 0.587
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.582,
+      "forwardedSeconds": 0.607
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.6,
+      "forwardedSeconds": 0.626
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.601,
+      "forwardedSeconds": 0.63
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3788,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.616,
+      "forwardedSeconds": 0.625
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.633,
+      "forwardedSeconds": 0.643
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.715,
+      "forwardedSeconds": 0.72
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.741,
+      "forwardedSeconds": 0.747
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.774,
+      "forwardedSeconds": 0.783
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.76,
+      "forwardedSeconds": 0.769
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40956,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.793,
+      "forwardedSeconds": 0.829
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.801,
+      "forwardedSeconds": 0.829
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.809,
+      "forwardedSeconds": 0.849
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.833,
+      "forwardedSeconds": 0.854
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.909,
+      "forwardedSeconds": 0.919
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.918,
+      "forwardedSeconds": 0.927
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.927,
+      "forwardedSeconds": 1.07
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.958,
+      "forwardedSeconds": 1.069
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.962,
+      "forwardedSeconds": 1.07
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.116,
+      "forwardedSeconds": 1.129
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.118,
+      "forwardedSeconds": 1.129
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.142,
+      "forwardedSeconds": 1.151
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.15,
+      "forwardedSeconds": 1.163
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.17,
+      "forwardedSeconds": 1.179
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625108,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.227,
+      "forwardedSeconds": 2.509
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.339,
+      "forwardedSeconds": 2.498
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.346,
+      "forwardedSeconds": 2.498
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.351,
+      "forwardedSeconds": 2.499
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.414,
+      "forwardedSeconds": 2.5
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.42,
+      "forwardedSeconds": 2.498
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.443,
+      "forwardedSeconds": 2.497
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.509,
+      "forwardedSeconds": 2.642
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288889,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.065,
+      "forwardedSeconds": 8.45
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.132,
+      "forwardedSeconds": 0.156
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.156,
+      "forwardedSeconds": 0.174
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.215,
+      "forwardedSeconds": 0.259
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55853,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.203,
+      "forwardedSeconds": 0.271
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.09,
+      "forwardedSeconds": 0.097
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.167,
+      "forwardedSeconds": 0.173
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.206,
+      "forwardedSeconds": 0.229
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.195,
+      "forwardedSeconds": 0.216
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.204,
+      "forwardedSeconds": 0.221
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.203,
+      "forwardedSeconds": 0.218
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.208,
+      "forwardedSeconds": 0.222
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.253,
+      "forwardedSeconds": 0.257
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.337,
+      "forwardedSeconds": 0.351
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4953,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.333,
+      "forwardedSeconds": 0.345
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.367,
+      "forwardedSeconds": 0.375
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.377,
+      "forwardedSeconds": 0.382
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.395,
+      "forwardedSeconds": 0.401
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.395,
+      "forwardedSeconds": 0.402
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.445,
+      "forwardedSeconds": 0.455
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.498,
+      "forwardedSeconds": 0.505
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.514,
+      "forwardedSeconds": 0.546
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.524,
+      "forwardedSeconds": 0.547
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.528,
+      "forwardedSeconds": 0.547
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.532,
+      "forwardedSeconds": 0.547
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.559,
+      "forwardedSeconds": 0.571
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.608,
+      "forwardedSeconds": 0.619
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.679,
+      "forwardedSeconds": 0.69
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.685,
+      "forwardedSeconds": 0.702
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.693,
+      "forwardedSeconds": 0.703
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.699,
+      "forwardedSeconds": 0.703
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.743,
+      "forwardedSeconds": 0.764
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.774,
+      "forwardedSeconds": 0.781
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.794,
+      "forwardedSeconds": 0.801
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.811,
+      "forwardedSeconds": 0.816
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.813,
+      "forwardedSeconds": 0.834
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.881,
+      "forwardedSeconds": 0.885
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.916,
+      "forwardedSeconds": 0.922
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.939,
+      "forwardedSeconds": 0.943
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.958,
+      "forwardedSeconds": 0.976
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.031,
+      "forwardedSeconds": 1.042
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.032,
+      "forwardedSeconds": 1.045
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 624661,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.066,
+      "forwardedSeconds": 2.946
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.104,
+      "forwardedSeconds": 2.921
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.207,
+      "forwardedSeconds": 2.948
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.238,
+      "forwardedSeconds": 2.921
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.248,
+      "forwardedSeconds": 2.921
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.249,
+      "forwardedSeconds": 2.923
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.262,
+      "forwardedSeconds": 2.923
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.293,
+      "forwardedSeconds": 2.95
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.505,
+      "forwardedSeconds": 2.925
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.739,
+      "forwardedSeconds": 2.925
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288889,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.566,
+      "forwardedSeconds": 7.882
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.107,
+      "forwardedSeconds": 0.132
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.193,
+      "forwardedSeconds": 0.216
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.095,
+      "forwardedSeconds": 0.116
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.159,
+      "forwardedSeconds": 0.18
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.157,
+      "forwardedSeconds": 0.162
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.262,
+      "forwardedSeconds": 0.268
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.252,
+      "forwardedSeconds": 0.258
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.258,
+      "forwardedSeconds": 0.264
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.26,
+      "forwardedSeconds": 0.274
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.282,
+      "forwardedSeconds": 0.298
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.391,
+      "forwardedSeconds": 0.402
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.399,
+      "forwardedSeconds": 0.403
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.454,
+      "forwardedSeconds": 0.46
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.452,
+      "forwardedSeconds": 0.46
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.457,
+      "forwardedSeconds": 0.464
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.519,
+      "forwardedSeconds": 0.555
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.485,
+      "forwardedSeconds": 0.497
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.529,
+      "forwardedSeconds": 0.537
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.538,
+      "forwardedSeconds": 0.551
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.552,
+      "forwardedSeconds": 0.562
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.585,
+      "forwardedSeconds": 0.59
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.595,
+      "forwardedSeconds": 0.602
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.628,
+      "forwardedSeconds": 0.632
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.688,
+      "forwardedSeconds": 0.705
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.696,
+      "forwardedSeconds": 0.712
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.713,
+      "forwardedSeconds": 0.739
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.714,
+      "forwardedSeconds": 0.739
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.72,
+      "forwardedSeconds": 0.743
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.771,
+      "forwardedSeconds": 0.783
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.857,
+      "forwardedSeconds": 0.908
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.88,
+      "forwardedSeconds": 0.95
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.899,
+      "forwardedSeconds": 0.957
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.91,
+      "forwardedSeconds": 0.955
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.912,
+      "forwardedSeconds": 0.956
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.971,
+      "forwardedSeconds": 0.98
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.981,
+      "forwardedSeconds": 1.085
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.037,
+      "forwardedSeconds": 1.132
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.076,
+      "forwardedSeconds": 1.142
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.089,
+      "forwardedSeconds": 1.178
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.091,
+      "forwardedSeconds": 1.179
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.146,
+      "forwardedSeconds": 1.179
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625108,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.67,
+      "forwardedSeconds": 2.518
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.959,
+      "forwardedSeconds": 2.521
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.959,
+      "forwardedSeconds": 2.521
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.958,
+      "forwardedSeconds": 2.523
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.959,
+      "forwardedSeconds": 2.524
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.963,
+      "forwardedSeconds": 2.525
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.119,
+      "forwardedSeconds": 2.523
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.122,
+      "forwardedSeconds": 2.524
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.132,
+      "forwardedSeconds": 2.524
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.223,
+      "forwardedSeconds": 2.531
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2289003,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.669,
+      "forwardedSeconds": 10.163
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.108,
+      "forwardedSeconds": 0.135
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.102,
+      "forwardedSeconds": 0.137
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.099,
+      "forwardedSeconds": 0.12
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.171,
+      "forwardedSeconds": 0.191
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.099,
+      "forwardedSeconds": 0.104
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.151,
+      "forwardedSeconds": 0.157
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.144,
+      "forwardedSeconds": 0.149
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.148,
+      "forwardedSeconds": 0.171
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.155,
+      "forwardedSeconds": 0.171
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.175,
+      "forwardedSeconds": 0.178
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.216,
+      "forwardedSeconds": 0.22
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.25,
+      "forwardedSeconds": 0.253
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.308,
+      "forwardedSeconds": 0.316
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.329,
+      "forwardedSeconds": 0.334
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.372,
+      "forwardedSeconds": 0.382
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.38,
+      "forwardedSeconds": 0.387
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.421,
+      "forwardedSeconds": 0.438
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.433,
+      "forwardedSeconds": 0.445
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.432,
+      "forwardedSeconds": 0.455
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.476,
+      "forwardedSeconds": 0.483
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.484,
+      "forwardedSeconds": 0.505
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.534,
+      "forwardedSeconds": 0.542
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.536,
+      "forwardedSeconds": 0.542
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.64,
+      "forwardedSeconds": 0.653
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.64,
+      "forwardedSeconds": 0.654
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.648,
+      "forwardedSeconds": 0.653
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.65,
+      "forwardedSeconds": 0.656
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.661,
+      "forwardedSeconds": 0.67
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.669,
+      "forwardedSeconds": 0.677
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.798,
+      "forwardedSeconds": 0.808
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.803,
+      "forwardedSeconds": 0.816
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.828,
+      "forwardedSeconds": 0.928
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.845,
+      "forwardedSeconds": 0.944
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.85,
+      "forwardedSeconds": 0.943
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.861,
+      "forwardedSeconds": 0.95
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.941,
+      "forwardedSeconds": 0.954
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.977,
+      "forwardedSeconds": 1.025
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.981,
+      "forwardedSeconds": 1.027
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.028,
+      "forwardedSeconds": 1.035
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.029,
+      "forwardedSeconds": 1.05
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.105,
+      "forwardedSeconds": 1.111
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.134,
+      "forwardedSeconds": 1.143
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.142,
+      "forwardedSeconds": 1.145
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.172,
+      "forwardedSeconds": 1.175
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625109,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.193,
+      "forwardedSeconds": 2.214
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.292,
+      "forwardedSeconds": 2.209
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.292,
+      "forwardedSeconds": 2.209
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.3,
+      "forwardedSeconds": 2.212
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.324,
+      "forwardedSeconds": 2.209
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.37,
+      "forwardedSeconds": 2.208
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.468,
+      "forwardedSeconds": 2.207
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288889,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.886,
+      "forwardedSeconds": 5.776
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.13,
+      "forwardedSeconds": 0.184
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.124,
+      "forwardedSeconds": 0.161
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.157,
+      "forwardedSeconds": 0.163
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.173,
+      "forwardedSeconds": 0.186
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.18,
+      "forwardedSeconds": 0.19
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.183,
+      "forwardedSeconds": 0.194
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.189,
+      "forwardedSeconds": 0.194
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.185,
+      "forwardedSeconds": 0.202
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.213,
+      "forwardedSeconds": 0.227
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.31,
+      "forwardedSeconds": 0.316
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.327,
+      "forwardedSeconds": 0.336
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.324,
+      "forwardedSeconds": 0.332
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.346,
+      "forwardedSeconds": 0.352
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.355,
+      "forwardedSeconds": 0.363
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.366,
+      "forwardedSeconds": 0.376
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.426,
+      "forwardedSeconds": 0.429
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.458,
+      "forwardedSeconds": 0.462
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.49,
+      "forwardedSeconds": 0.506
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.492,
+      "forwardedSeconds": 0.51
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.514,
+      "forwardedSeconds": 0.531
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.517,
+      "forwardedSeconds": 0.531
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.526,
+      "forwardedSeconds": 0.537
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.534,
+      "forwardedSeconds": 0.538
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.601,
+      "forwardedSeconds": 0.609
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.66,
+      "forwardedSeconds": 0.67
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.666,
+      "forwardedSeconds": 0.717
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.724,
+      "forwardedSeconds": 0.748
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.727,
+      "forwardedSeconds": 0.752
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.727,
+      "forwardedSeconds": 0.8
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.736,
+      "forwardedSeconds": 0.819
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.844,
+      "forwardedSeconds": 0.87
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.874,
+      "forwardedSeconds": 0.962
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.879,
+      "forwardedSeconds": 0.961
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.969,
+      "forwardedSeconds": 1.112
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.998,
+      "forwardedSeconds": 1.112
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625109,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.034,
+      "forwardedSeconds": 1.823
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.113,
+      "forwardedSeconds": 1.825
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.13,
+      "forwardedSeconds": 1.825
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.15,
+      "forwardedSeconds": 1.831
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.18,
+      "forwardedSeconds": 1.83
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.219,
+      "forwardedSeconds": 1.832
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.236,
+      "forwardedSeconds": 1.832
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.259,
+      "forwardedSeconds": 1.832
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.263,
+      "forwardedSeconds": 1.832
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.289,
+      "forwardedSeconds": 1.831
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.311,
+      "forwardedSeconds": 1.837
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.339,
+      "forwardedSeconds": 1.836
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.355,
+      "forwardedSeconds": 1.841
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.407,
+      "forwardedSeconds": 1.84
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288260,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.946,
+      "forwardedSeconds": 6.748
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.174,
+      "forwardedSeconds": 0.225
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.275,
+      "forwardedSeconds": 0.306
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.107,
+      "forwardedSeconds": 0.115
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.149,
+      "forwardedSeconds": 0.16
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.177,
+      "forwardedSeconds": 0.187
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.175,
+      "forwardedSeconds": 0.183
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.177,
+      "forwardedSeconds": 0.182
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.21,
+      "forwardedSeconds": 0.215
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.32,
+      "forwardedSeconds": 0.325
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.339,
+      "forwardedSeconds": 0.348
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.35,
+      "forwardedSeconds": 0.363
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.359,
+      "forwardedSeconds": 0.373
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.357,
+      "forwardedSeconds": 0.373
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.365,
+      "forwardedSeconds": 0.375
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.464,
+      "forwardedSeconds": 0.47
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.468,
+      "forwardedSeconds": 0.472
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.487,
+      "forwardedSeconds": 0.54
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.523,
+      "forwardedSeconds": 0.542
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.53,
+      "forwardedSeconds": 0.554
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.545,
+      "forwardedSeconds": 0.558
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.578,
+      "forwardedSeconds": 0.589
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.647,
+      "forwardedSeconds": 0.658
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.64,
+      "forwardedSeconds": 0.648
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.645,
+      "forwardedSeconds": 0.648
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.663,
+      "forwardedSeconds": 0.684
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.685,
+      "forwardedSeconds": 0.69
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.77,
+      "forwardedSeconds": 0.807
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.794,
+      "forwardedSeconds": 0.814
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.799,
+      "forwardedSeconds": 0.812
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.814,
+      "forwardedSeconds": 0.825
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.847,
+      "forwardedSeconds": 0.874
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34090,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.028,
+      "forwardedSeconds": 1.054
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.399,
+      "forwardedSeconds": 1.404
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.523,
+      "forwardedSeconds": 1.538
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.526,
+      "forwardedSeconds": 1.541
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.578,
+      "forwardedSeconds": 1.581
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.65,
+      "forwardedSeconds": 1.654
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.742,
+      "forwardedSeconds": 1.749
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.83,
+      "forwardedSeconds": 1.845
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.864,
+      "forwardedSeconds": 1.869
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.95,
+      "forwardedSeconds": 1.954
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.973,
+      "forwardedSeconds": 1.976
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.019,
+      "forwardedSeconds": 2.026
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.049,
+      "forwardedSeconds": 2.133
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 170089,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.058,
+      "forwardedSeconds": 2.219
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.105,
+      "forwardedSeconds": 2.213
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.222,
+      "forwardedSeconds": 2.229
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 624742,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.378,
+      "forwardedSeconds": 8.863
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288889,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.802,
+      "forwardedSeconds": 9.385
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.427,
+      "forwardedSeconds": 9.39
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.138,
+      "forwardedSeconds": 0.157
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.111,
+      "forwardedSeconds": 0.137
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3637,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.146,
+      "forwardedSeconds": 0.15
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.194,
+      "forwardedSeconds": 0.198
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.208,
+      "forwardedSeconds": 0.215
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.21,
+      "forwardedSeconds": 0.216
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.217,
+      "forwardedSeconds": 0.334
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.227,
+      "forwardedSeconds": 0.34
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.229,
+      "forwardedSeconds": 0.334
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.414,
+      "forwardedSeconds": 0.417
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.46,
+      "forwardedSeconds": 0.464
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.502,
+      "forwardedSeconds": 0.505
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.51,
+      "forwardedSeconds": 0.515
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.523,
+      "forwardedSeconds": 0.531
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.575,
+      "forwardedSeconds": 0.584
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.613,
+      "forwardedSeconds": 0.671
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.634,
+      "forwardedSeconds": 0.678
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.655,
+      "forwardedSeconds": 0.686
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.697,
+      "forwardedSeconds": 0.706
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5073,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.713,
+      "forwardedSeconds": 0.733
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.783,
+      "forwardedSeconds": 0.788
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.794,
+      "forwardedSeconds": 0.798
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.8,
+      "forwardedSeconds": 0.81
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.831,
+      "forwardedSeconds": 0.843
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.869,
+      "forwardedSeconds": 0.873
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.899,
+      "forwardedSeconds": 0.902
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.956,
+      "forwardedSeconds": 0.969
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.991,
+      "forwardedSeconds": 1.002
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.996,
+      "forwardedSeconds": 1.051
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.005,
+      "forwardedSeconds": 1.051
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.014,
+      "forwardedSeconds": 1.096
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.064,
+      "forwardedSeconds": 1.097
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.076,
+      "forwardedSeconds": 1.17
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.19,
+      "forwardedSeconds": 1.196
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.193,
+      "forwardedSeconds": 1.198
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.207,
+      "forwardedSeconds": 1.212
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.238,
+      "forwardedSeconds": 1.245
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.289,
+      "forwardedSeconds": 1.306
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.301,
+      "forwardedSeconds": 1.319
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.326,
+      "forwardedSeconds": 1.33
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.331,
+      "forwardedSeconds": 1.338
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.384,
+      "forwardedSeconds": 1.4
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625108,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.478,
+      "forwardedSeconds": 2.229
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.75,
+      "forwardedSeconds": 2.227
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.753,
+      "forwardedSeconds": 2.227
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3421,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.754,
+      "forwardedSeconds": 2.227
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.754,
+      "forwardedSeconds": 2.229
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.872,
+      "forwardedSeconds": 2.232
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.881,
+      "forwardedSeconds": 2.238
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288889,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.786,
+      "forwardedSeconds": 6.668
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.104,
+      "forwardedSeconds": 0.123
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.152,
+      "forwardedSeconds": 0.169
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.1,
+      "forwardedSeconds": 0.117
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.138,
+      "forwardedSeconds": 0.146
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.21,
+      "forwardedSeconds": 0.218
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.201,
+      "forwardedSeconds": 0.21
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.223,
+      "forwardedSeconds": 0.232
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.227,
+      "forwardedSeconds": 0.234
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.239,
+      "forwardedSeconds": 0.252
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.332,
+      "forwardedSeconds": 0.346
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.361,
+      "forwardedSeconds": 0.371
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.37,
+      "forwardedSeconds": 0.385
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.386,
+      "forwardedSeconds": 0.396
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.41,
+      "forwardedSeconds": 0.419
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.436,
+      "forwardedSeconds": 0.447
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.47,
+      "forwardedSeconds": 0.475
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5073,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.503,
+      "forwardedSeconds": 0.52
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.514,
+      "forwardedSeconds": 0.526
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.541,
+      "forwardedSeconds": 0.555
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.56,
+      "forwardedSeconds": 0.563
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.595,
+      "forwardedSeconds": 0.597
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.636,
+      "forwardedSeconds": 0.641
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.645,
+      "forwardedSeconds": 0.651
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.663,
+      "forwardedSeconds": 0.679
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.671,
+      "forwardedSeconds": 0.679
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.684,
+      "forwardedSeconds": 0.689
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.711,
+      "forwardedSeconds": 1.269
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.274,
+      "forwardedSeconds": 1.292
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.277,
+      "forwardedSeconds": 1.306
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.36,
+      "forwardedSeconds": 1.449
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.393,
+      "forwardedSeconds": 1.449
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.4,
+      "forwardedSeconds": 1.462
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.416,
+      "forwardedSeconds": 1.465
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.419,
+      "forwardedSeconds": 1.465
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.489,
+      "forwardedSeconds": 1.587
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.507,
+      "forwardedSeconds": 1.585
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.538,
+      "forwardedSeconds": 1.592
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.553,
+      "forwardedSeconds": 1.6
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.555,
+      "forwardedSeconds": 1.597
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.551,
+      "forwardedSeconds": 1.561
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.619,
+      "forwardedSeconds": 1.623
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.617,
+      "forwardedSeconds": 1.622
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.634,
+      "forwardedSeconds": 1.744
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.636,
+      "forwardedSeconds": 1.744
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 624461,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.697,
+      "forwardedSeconds": 2.425
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.736,
+      "forwardedSeconds": 2.369
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.737,
+      "forwardedSeconds": 2.369
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.826,
+      "forwardedSeconds": 2.369
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.843,
+      "forwardedSeconds": 2.37
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.854,
+      "forwardedSeconds": 2.377
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288889,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 3.034,
+      "forwardedSeconds": 7.017
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.105,
+      "forwardedSeconds": 0.129
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.124,
+      "forwardedSeconds": 0.145
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.096,
+      "forwardedSeconds": 0.143
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.131,
+      "forwardedSeconds": 0.156
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.09,
+      "forwardedSeconds": 0.095
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.185,
+      "forwardedSeconds": 0.197
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.184,
+      "forwardedSeconds": 0.192
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.222,
+      "forwardedSeconds": 0.234
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.228,
+      "forwardedSeconds": 0.231
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.241,
+      "forwardedSeconds": 0.244
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.29,
+      "forwardedSeconds": 0.297
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.29,
+      "forwardedSeconds": 0.297
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.329,
+      "forwardedSeconds": 0.334
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.345,
+      "forwardedSeconds": 0.355
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.344,
+      "forwardedSeconds": 0.35
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.332,
+      "forwardedSeconds": 0.335
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.34,
+      "forwardedSeconds": 0.345
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.455,
+      "forwardedSeconds": 0.457
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.403,
+      "forwardedSeconds": 0.418
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.41,
+      "forwardedSeconds": 0.423
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.436,
+      "forwardedSeconds": 0.449
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.467,
+      "forwardedSeconds": 0.471
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.501,
+      "forwardedSeconds": 0.504
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.559,
+      "forwardedSeconds": 0.565
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.571,
+      "forwardedSeconds": 0.583
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.577,
+      "forwardedSeconds": 0.602
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.584,
+      "forwardedSeconds": 0.601
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.603,
+      "forwardedSeconds": 0.608
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.7,
+      "forwardedSeconds": 0.733
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4653,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.718,
+      "forwardedSeconds": 0.747
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.72,
+      "forwardedSeconds": 0.782
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6679,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.726,
+      "forwardedSeconds": 0.783
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.73,
+      "forwardedSeconds": 0.791
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.761,
+      "forwardedSeconds": 0.791
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.874,
+      "forwardedSeconds": 0.949
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.885,
+      "forwardedSeconds": 0.96
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.886,
+      "forwardedSeconds": 0.96
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.888,
+      "forwardedSeconds": 0.959
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.899,
+      "forwardedSeconds": 0.959
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.008,
+      "forwardedSeconds": 1.011
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.035,
+      "forwardedSeconds": 1.04
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.05,
+      "forwardedSeconds": 1.056
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625109,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.063,
+      "forwardedSeconds": 1.791
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.17,
+      "forwardedSeconds": 1.795
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.173,
+      "forwardedSeconds": 1.796
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.176,
+      "forwardedSeconds": 1.795
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.177,
+      "forwardedSeconds": 1.795
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.235,
+      "forwardedSeconds": 1.794
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.304,
+      "forwardedSeconds": 1.793
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.313,
+      "forwardedSeconds": 1.793
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.358,
+      "forwardedSeconds": 1.796
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288987,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.904,
+      "forwardedSeconds": 5.837
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.476,
+      "forwardedSeconds": 0.518
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.153,
+      "forwardedSeconds": 0.17
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.148,
+      "forwardedSeconds": 0.166
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.194,
+      "forwardedSeconds": 0.222
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.119,
+      "forwardedSeconds": 0.125
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.217,
+      "forwardedSeconds": 0.243
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.22,
+      "forwardedSeconds": 0.245
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.263,
+      "forwardedSeconds": 0.282
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.26,
+      "forwardedSeconds": 0.292
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.291,
+      "forwardedSeconds": 0.31
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.366,
+      "forwardedSeconds": 0.386
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.363,
+      "forwardedSeconds": 0.375
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.399,
+      "forwardedSeconds": 0.405
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.394,
+      "forwardedSeconds": 0.409
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.444,
+      "forwardedSeconds": 0.466
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.457,
+      "forwardedSeconds": 0.467
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.478,
+      "forwardedSeconds": 0.489
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.518,
+      "forwardedSeconds": 0.529
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.557,
+      "forwardedSeconds": 0.569
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.594,
+      "forwardedSeconds": 0.607
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.602,
+      "forwardedSeconds": 0.615
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.621,
+      "forwardedSeconds": 0.653
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.698,
+      "forwardedSeconds": 0.708
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.742,
+      "forwardedSeconds": 0.754
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.758,
+      "forwardedSeconds": 0.769
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.763,
+      "forwardedSeconds": 0.772
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.767,
+      "forwardedSeconds": 0.776
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.775,
+      "forwardedSeconds": 0.778
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.85,
+      "forwardedSeconds": 0.857
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.895,
+      "forwardedSeconds": 0.97
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.915,
+      "forwardedSeconds": 0.97
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.926,
+      "forwardedSeconds": 1.003
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.956,
+      "forwardedSeconds": 1.008
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.982,
+      "forwardedSeconds": 1.068
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.022,
+      "forwardedSeconds": 1.28
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.062,
+      "forwardedSeconds": 1.281
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.076,
+      "forwardedSeconds": 1.29
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.077,
+      "forwardedSeconds": 1.308
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.174,
+      "forwardedSeconds": 1.321
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.179,
+      "forwardedSeconds": 1.516
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.209,
+      "forwardedSeconds": 1.518
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4915,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.266,
+      "forwardedSeconds": 1.518
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.268,
+      "forwardedSeconds": 1.518
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.277,
+      "forwardedSeconds": 1.518
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.306,
+      "forwardedSeconds": 1.519
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625122,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.335,
+      "forwardedSeconds": 2.497
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.498,
+      "forwardedSeconds": 2.495
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.501,
+      "forwardedSeconds": 2.495
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.503,
+      "forwardedSeconds": 2.494
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.513,
+      "forwardedSeconds": 2.498
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.621,
+      "forwardedSeconds": 2.497
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288811,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.114,
+      "forwardedSeconds": 7.263
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.105,
+      "forwardedSeconds": 0.124
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.353,
+      "forwardedSeconds": 0.388
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.117,
+      "forwardedSeconds": 0.141
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.095,
+      "forwardedSeconds": 0.132
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.13,
+      "forwardedSeconds": 0.133
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.177,
+      "forwardedSeconds": 0.186
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.185,
+      "forwardedSeconds": 0.191
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.194,
+      "forwardedSeconds": 0.205
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.196,
+      "forwardedSeconds": 0.21
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.22,
+      "forwardedSeconds": 0.245
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4699,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.263,
+      "forwardedSeconds": 0.309
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.29,
+      "forwardedSeconds": 0.309
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.32,
+      "forwardedSeconds": 0.334
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.39,
+      "forwardedSeconds": 0.396
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.403,
+      "forwardedSeconds": 0.41
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.411,
+      "forwardedSeconds": 0.415
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.42,
+      "forwardedSeconds": 0.434
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.425,
+      "forwardedSeconds": 0.433
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.544,
+      "forwardedSeconds": 0.588
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.579,
+      "forwardedSeconds": 0.62
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.591,
+      "forwardedSeconds": 0.619
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.597,
+      "forwardedSeconds": 0.669
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.613,
+      "forwardedSeconds": 0.685
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.687,
+      "forwardedSeconds": 0.697
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.687,
+      "forwardedSeconds": 0.709
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.71,
+      "forwardedSeconds": 0.742
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.722,
+      "forwardedSeconds": 0.743
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3738,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.72,
+      "forwardedSeconds": 0.75
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.838,
+      "forwardedSeconds": 0.861
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.851,
+      "forwardedSeconds": 0.864
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.868,
+      "forwardedSeconds": 0.969
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.886,
+      "forwardedSeconds": 0.978
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.892,
+      "forwardedSeconds": 0.983
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.934,
+      "forwardedSeconds": 1.049
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.997,
+      "forwardedSeconds": 1.055
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.042,
+      "forwardedSeconds": 1.057
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.082,
+      "forwardedSeconds": 1.085
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.124,
+      "forwardedSeconds": 1.195
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.134,
+      "forwardedSeconds": 1.435
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.167,
+      "forwardedSeconds": 1.433
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.172,
+      "forwardedSeconds": 1.434
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.228,
+      "forwardedSeconds": 1.434
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625122,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.232,
+      "forwardedSeconds": 2.261
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.423,
+      "forwardedSeconds": 2.26
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.423,
+      "forwardedSeconds": 2.27
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.424,
+      "forwardedSeconds": 2.273
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.43,
+      "forwardedSeconds": 2.273
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.524,
+      "forwardedSeconds": 2.273
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.567,
+      "forwardedSeconds": 2.273
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.591,
+      "forwardedSeconds": 2.273
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.609,
+      "forwardedSeconds": 2.272
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288845,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.422,
+      "forwardedSeconds": 9.276
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.267,
+      "forwardedSeconds": 0.402
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.29,
+      "forwardedSeconds": 2.342
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.257,
+      "forwardedSeconds": 0.262
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.326,
+      "forwardedSeconds": 0.34
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.336,
+      "forwardedSeconds": 0.348
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.344,
+      "forwardedSeconds": 0.358
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.351,
+      "forwardedSeconds": 0.382
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.457,
+      "forwardedSeconds": 0.477
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.571,
+      "forwardedSeconds": 0.599
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.572,
+      "forwardedSeconds": 0.599
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.581,
+      "forwardedSeconds": 0.602
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.593,
+      "forwardedSeconds": 0.602
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.682,
+      "forwardedSeconds": 0.705
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.863,
+      "forwardedSeconds": 1.227
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.91,
+      "forwardedSeconds": 1.289
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.922,
+      "forwardedSeconds": 1.295
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.999,
+      "forwardedSeconds": 1.597
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28910,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.132,
+      "forwardedSeconds": 1.596
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.221,
+      "forwardedSeconds": 1.608
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.289,
+      "forwardedSeconds": 1.615
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.3,
+      "forwardedSeconds": 2.245
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.306,
+      "forwardedSeconds": 2.246
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.163,
+      "forwardedSeconds": 2.301
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.187,
+      "forwardedSeconds": 2.301
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.193,
+      "forwardedSeconds": 2.301
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.322,
+      "forwardedSeconds": 2.428
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.328,
+      "forwardedSeconds": 2.651
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.393,
+      "forwardedSeconds": 3.684
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.409,
+      "forwardedSeconds": 3.95
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.426,
+      "forwardedSeconds": 3.95
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.487,
+      "forwardedSeconds": 3.951
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.494,
+      "forwardedSeconds": 3.951
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.666,
+      "forwardedSeconds": 4.642
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.79,
+      "forwardedSeconds": 4.874
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.793,
+      "forwardedSeconds": 5.199
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.795,
+      "forwardedSeconds": 5.282
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.939,
+      "forwardedSeconds": 5.288
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625115,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 3.687,
+      "forwardedSeconds": 13.215
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 3.94,
+      "forwardedSeconds": 13.216
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 3.944,
+      "forwardedSeconds": 13.216
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.063,
+      "forwardedSeconds": 13.216
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.075,
+      "forwardedSeconds": 13.217
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3421,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.094,
+      "forwardedSeconds": 13.216
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.145,
+      "forwardedSeconds": 13.253
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.147,
+      "forwardedSeconds": 13.259
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.163,
+      "forwardedSeconds": 13.265
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.228,
+      "forwardedSeconds": 13.265
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.336,
+      "forwardedSeconds": 13.264
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 4.915,
+      "forwardedSeconds": 13.27
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288923,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 6.094,
+      "forwardedSeconds": 13.812
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.127,
+      "forwardedSeconds": 0.16
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.171,
+      "forwardedSeconds": 0.193
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.114,
+      "forwardedSeconds": 0.123
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.308,
+      "forwardedSeconds": 0.315
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.296,
+      "forwardedSeconds": 0.303
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.287,
+      "forwardedSeconds": 0.294
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.295,
+      "forwardedSeconds": 0.308
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.296,
+      "forwardedSeconds": 0.313
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.361,
+      "forwardedSeconds": 0.363
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.393,
+      "forwardedSeconds": 0.397
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.413,
+      "forwardedSeconds": 0.416
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.46,
+      "forwardedSeconds": 0.477
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.462,
+      "forwardedSeconds": 0.485
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.475,
+      "forwardedSeconds": 0.488
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.525,
+      "forwardedSeconds": 0.531
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.553,
+      "forwardedSeconds": 0.565
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.587,
+      "forwardedSeconds": 0.597
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17717,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.604,
+      "forwardedSeconds": 0.615
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.621,
+      "forwardedSeconds": 0.627
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.625,
+      "forwardedSeconds": 0.629
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.65,
+      "forwardedSeconds": 0.667
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.654,
+      "forwardedSeconds": 0.666
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.663,
+      "forwardedSeconds": 0.667
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.713,
+      "forwardedSeconds": 0.717
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.752,
+      "forwardedSeconds": 0.761
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.754,
+      "forwardedSeconds": 0.767
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.8,
+      "forwardedSeconds": 0.803
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.821,
+      "forwardedSeconds": 0.837
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.825,
+      "forwardedSeconds": 0.864
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.849,
+      "forwardedSeconds": 0.876
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.892,
+      "forwardedSeconds": 0.927
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.901,
+      "forwardedSeconds": 0.927
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.873,
+      "forwardedSeconds": 0.884
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169959,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.964,
+      "forwardedSeconds": 1.068
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.921,
+      "forwardedSeconds": 0.987
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.991,
+      "forwardedSeconds": 0.995
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.021,
+      "forwardedSeconds": 1.054
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.049,
+      "forwardedSeconds": 1.177
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 625122,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.061,
+      "forwardedSeconds": 2.036
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.158,
+      "forwardedSeconds": 2.03
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.158,
+      "forwardedSeconds": 2.03
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.219,
+      "forwardedSeconds": 2.026
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.238,
+      "forwardedSeconds": 2.026
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.264,
+      "forwardedSeconds": 2.029
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.291,
+      "forwardedSeconds": 2.029
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.309,
+      "forwardedSeconds": 2.029
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.325,
+      "forwardedSeconds": 2.035
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.377,
+      "forwardedSeconds": 2.033
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.513,
+      "forwardedSeconds": 2.046
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288995,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.38,
+      "forwardedSeconds": 8.654
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.311,
+      "forwardedSeconds": 0.4
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.202,
+      "forwardedSeconds": 0.263
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 10325,
+      "wireBytes": 3604,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.302,
+      "forwardedSeconds": 0.307
+    },
+    {
+      "path": "/csoi-pages.css",
+      "status": 200,
+      "bytes": 6317,
+      "wireBytes": 1952,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.234,
+      "forwardedSeconds": 0.244
+    },
+    {
+      "path": "/atlas-model.js",
+      "status": 200,
+      "bytes": 21832,
+      "wireBytes": 7818,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.255,
+      "forwardedSeconds": 0.293
+    },
+    {
+      "path": "/atlas-domain.js",
+      "status": 200,
+      "bytes": 31253,
+      "wireBytes": 8725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.285,
+      "forwardedSeconds": 0.302
+    },
+    {
+      "path": "/atlas.css",
+      "status": 200,
+      "bytes": 17812,
+      "wireBytes": 5133,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.295,
+      "forwardedSeconds": 0.308
+    },
+    {
+      "path": "/atlas-data.js",
+      "status": 200,
+      "bytes": 12787,
+      "wireBytes": 4664,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.292,
+      "forwardedSeconds": 0.303
+    },
+    {
+      "path": "/sources/csp61-admission.js",
+      "status": 200,
+      "bytes": 2760,
+      "wireBytes": 1439,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.326,
+      "forwardedSeconds": 0.334
+    },
+    {
+      "path": "/atlas-workspace.js",
+      "status": 200,
+      "bytes": 18967,
+      "wireBytes": 5681,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.341,
+      "forwardedSeconds": 0.366
+    },
+    {
+      "path": "/atlas-route-layout.js",
+      "status": 200,
+      "bytes": 1301,
+      "wireBytes": 714,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.409,
+      "forwardedSeconds": 0.421
+    },
+    {
+      "path": "/sources/public-catalogue.js",
+      "status": 200,
+      "bytes": 49114,
+      "wireBytes": 4975,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.435,
+      "forwardedSeconds": 0.452
+    },
+    {
+      "path": "/atlas-accounting.js",
+      "status": 200,
+      "bytes": 11842,
+      "wireBytes": 4456,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.448,
+      "forwardedSeconds": 0.453
+    },
+    {
+      "path": "/atlas-intake.js",
+      "status": 200,
+      "bytes": 19950,
+      "wireBytes": 5876,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.45,
+      "forwardedSeconds": 0.504
+    },
+    {
+      "path": "/atlas-execution.js",
+      "status": 200,
+      "bytes": 33575,
+      "wireBytes": 10991,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.465,
+      "forwardedSeconds": 0.504
+    },
+    {
+      "path": "/csoi-paths.js",
+      "status": 200,
+      "bytes": 17977,
+      "wireBytes": 5789,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.474,
+      "forwardedSeconds": 0.531
+    },
+    {
+      "path": "/sources/csoi-catalogue.js",
+      "status": 200,
+      "bytes": 214952,
+      "wireBytes": 28966,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.488,
+      "forwardedSeconds": 0.506
+    },
+    {
+      "path": "/csoi-governance.js",
+      "status": 200,
+      "bytes": 15234,
+      "wireBytes": 5069,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.601,
+      "forwardedSeconds": 0.606
+    },
+    {
+      "path": "/sources/bombala-dcp-outline.js",
+      "status": 200,
+      "bytes": 13227,
+      "wireBytes": 3755,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.511,
+      "forwardedSeconds": 0.52
+    },
+    {
+      "path": "/sources/cooma-dcp-outline.js",
+      "status": 200,
+      "bytes": 20332,
+      "wireBytes": 5605,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.559,
+      "forwardedSeconds": 0.57
+    },
+    {
+      "path": "/sources/csoi-source-observations.js",
+      "status": 200,
+      "bytes": 174031,
+      "wireBytes": 17766,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.663,
+      "forwardedSeconds": 0.682
+    },
+    {
+      "path": "/csoi-clauses.js",
+      "status": 200,
+      "bytes": 14110,
+      "wireBytes": 4820,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.602,
+      "forwardedSeconds": 0.607
+    },
+    {
+      "path": "/csoi-intake.js",
+      "status": 200,
+      "bytes": 13907,
+      "wireBytes": 4638,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.609,
+      "forwardedSeconds": 0.619
+    },
+    {
+      "path": "/sources/snowy-dcp-outline.js",
+      "status": 200,
+      "bytes": 21709,
+      "wireBytes": 5325,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.666,
+      "forwardedSeconds": 0.67
+    },
+    {
+      "path": "/csoi-remediation.js",
+      "status": 200,
+      "bytes": 10697,
+      "wireBytes": 3694,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.686,
+      "forwardedSeconds": 0.702
+    },
+    {
+      "path": "/csoi-knowledge.js",
+      "status": 200,
+      "bytes": 29261,
+      "wireBytes": 8744,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.694,
+      "forwardedSeconds": 0.706
+    },
+    {
+      "path": "/sources/knowledge-corrections.js",
+      "status": 200,
+      "bytes": 4334,
+      "wireBytes": 1896,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.737,
+      "forwardedSeconds": 0.746
+    },
+    {
+      "path": "/sources/csp-public-knowledge.js",
+      "status": 200,
+      "bytes": 261193,
+      "wireBytes": 19711,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.755,
+      "forwardedSeconds": 0.777
+    },
+    {
+      "path": "/sources/lsps-public-knowledge.js",
+      "status": 200,
+      "bytes": 446451,
+      "wireBytes": 40962,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.79,
+      "forwardedSeconds": 1.011
+    },
+    {
+      "path": "/csoi-metric-review.js",
+      "status": 200,
+      "bytes": 4258,
+      "wireBytes": 1725,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.811,
+      "forwardedSeconds": 1.012
+    },
+    {
+      "path": "/sources/op-water-public-knowledge.js",
+      "status": 200,
+      "bytes": 39898,
+      "wireBytes": 6761,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.825,
+      "forwardedSeconds": 1.014
+    },
+    {
+      "path": "/sources/csp-indicator-review.js",
+      "status": 200,
+      "bytes": 377999,
+      "wireBytes": 34192,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.845,
+      "forwardedSeconds": 1.036
+    },
+    {
+      "path": "/csoi-lsps-context.js",
+      "status": 200,
+      "bytes": 1895,
+      "wireBytes": 895,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.914,
+      "forwardedSeconds": 1.035
+    },
+    {
+      "path": "/sources/lsps-context-review.js",
+      "status": 200,
+      "bytes": 1184271,
+      "wireBytes": 169968,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.941,
+      "forwardedSeconds": 1.223
+    },
+    {
+      "path": "/csoi-strategy-research.js",
+      "status": 200,
+      "bytes": 6807,
+      "wireBytes": 2791,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.013,
+      "forwardedSeconds": 1.24
+    },
+    {
+      "path": "/csoi-op-review.js",
+      "status": 200,
+      "bytes": 2900,
+      "wireBytes": 1360,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.028,
+      "forwardedSeconds": 1.252
+    },
+    {
+      "path": "/sources/strategy-review-scope.js",
+      "status": 200,
+      "bytes": 210452,
+      "wireBytes": 28406,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.067,
+      "forwardedSeconds": 1.259
+    },
+    {
+      "path": "/csoi-layers.js",
+      "status": 200,
+      "bytes": 21019,
+      "wireBytes": 7049,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.09,
+      "forwardedSeconds": 1.379
+    },
+    {
+      "path": "/csoi-work.js",
+      "status": 200,
+      "bytes": 15724,
+      "wireBytes": 5378,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.156,
+      "forwardedSeconds": 1.452
+    },
+    {
+      "path": "/csoi-phe.js",
+      "status": 200,
+      "bytes": 13777,
+      "wireBytes": 4903,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.165,
+      "forwardedSeconds": 1.457
+    },
+    {
+      "path": "/csoi-wcos.js",
+      "status": 200,
+      "bytes": 12009,
+      "wireBytes": 4555,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.262,
+      "forwardedSeconds": 1.459
+    },
+    {
+      "path": "/sources/op-completion-review.js",
+      "status": 200,
+      "bytes": 7081834,
+      "wireBytes": 624743,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.269,
+      "forwardedSeconds": 2.356
+    },
+    {
+      "path": "/csoi-review-work.js",
+      "status": 200,
+      "bytes": 9324,
+      "wireBytes": 3497,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.448,
+      "forwardedSeconds": 2.352
+    },
+    {
+      "path": "/csoi-calendar.js",
+      "status": 200,
+      "bytes": 19829,
+      "wireBytes": 7056,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.451,
+      "forwardedSeconds": 2.353
+    },
+    {
+      "path": "/csoi-router.js",
+      "status": 200,
+      "bytes": 6040,
+      "wireBytes": 2138,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.527,
+      "forwardedSeconds": 2.351
+    },
+    {
+      "path": "/csoi-assistant.js",
+      "status": 200,
+      "bytes": 9150,
+      "wireBytes": 3376,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.561,
+      "forwardedSeconds": 2.351
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 200,
+      "bytes": 90629,
+      "wireBytes": 29935,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.58,
+      "forwardedSeconds": 2.348
+    },
+    {
+      "path": "/csoi-boot.js",
+      "status": 200,
+      "bytes": 1208,
+      "wireBytes": 617,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.593,
+      "forwardedSeconds": 2.347
+    },
+    {
+      "path": "/atlas.js",
+      "status": 200,
+      "bytes": 76754,
+      "wireBytes": 22320,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 1.879,
+      "forwardedSeconds": 2.347
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 200,
+      "bytes": 22744179,
+      "wireBytes": 2288995,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 2.365,
+      "forwardedSeconds": 6.615
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.532,
+      "forwardedSeconds": 0.564
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.126,
+      "forwardedSeconds": 0.18
+    },
+    {
+      "path": "/COI_TASK_REGISTRY_V1_7.json",
+      "status": 200,
+      "bytes": 471284,
+      "wireBytes": 55834,
+      "wireEncoding": "gzip",
+      "fetchAndQueueSeconds": 0.177,
+      "forwardedSeconds": 0.284
+    }
+  ],
+  "canonicalApplicationSha": "1317c04a7c1b2a222c4d99bda9ea2f2bd1bb0eab",
+  "scriptSha256": "e212264a9eb62271c0a8f0423ae13ba9c90a90dec70c91504ea18a1a63266ed7",
+  "status": "PASS"
+}

@@ -3,9 +3,9 @@
 No owner identity is simulated. Credential arrives over hidden stdin and is kept
 only in memory; every credentialed request is GET to the exact approved origin.
 """
-import sys,termios,json,urllib.request,urllib.error,urllib.parse,ssl,datetime,hashlib,os,uuid,concurrent.futures,gzip,time
+import asyncio,importlib.util,sys,termios,json,urllib.request,urllib.error,urllib.parse,ssl,datetime,hashlib,os,uuid,concurrent.futures,gzip,time,tempfile
 from pathlib import Path
-from playwright.sync_api import Page
+from playwright.async_api import async_playwright
 settings=termios.tcgetattr(sys.stdin.fileno());settings[3]&=~termios.ECHO;termios.tcsetattr(sys.stdin.fileno(),termios.TCSANOW,settings)
 print('Ready for supported Site service credential JSON on hidden stdin.',flush=True)
 c=json.loads(sys.stdin.readline());base=c['url'].rstrip('/');assert base=='https://council-strategy-intelligence.minshu.chatgpt.site'
@@ -24,7 +24,7 @@ def get(url,auth):
  except urllib.error.HTTPError as e:r=e
  wire=r.read();encoding=r.headers.get('Content-Encoding','identity');assert encoding in ['identity','gzip'],encoding
  body=gzip.decompress(wire)if encoding=='gzip'else wire
- headers=dict(r.headers);headers['X-QA-Wire-Bytes']=str(len(wire));headers['X-QA-Wire-Encoding']=encoding
+ headers=dict(r.headers);headers['X-QA-Wire-Bytes']=str(len(wire));headers['X-QA-Wire-Encoding']=encoding;headers['X-QA-Decoded-Bytes']=str(len(body))
  return r.code,headers,body
 try:
  for path in ['/','/csoi-pages.js','/sources/csoi-default-snapshot.js']:
@@ -38,18 +38,33 @@ try:
  pairs=list(manifest['files'].items())+[('deployment-assets.json','sha256:'+hashlib.sha256((APP/'dist/deployment-assets.json').read_bytes()).hexdigest())]
  with concurrent.futures.ThreadPoolExecutor(max_workers=4)as pool:report['assets']=list(pool.map(check,pairs))
  save();print('PASS anonymous denial and '+str(len(report['assets']))+' exact live files',flush=True)
- native=Page.goto
- def goto(page,url,*args,**kw):
-  if not getattr(page,'_csoi_nav_routed',False):
-   def serve(route):
-    request=route.request;assert request.method=='GET'and request.url.startswith(base+'/');started=time.monotonic();code,headers,body=get(request.url,True)
-    report['network'].append({'path':urllib.parse.urlsplit(request.url).path,'status':code,'bytes':len(body),'wireBytes':int(headers['X-QA-Wire-Bytes']),'wireEncoding':headers['X-QA-Wire-Encoding'],'seconds':round(time.monotonic()-started,3)})
-    assert code==200,(report['network'][-1]['path'],code)
-    headers={k:v for k,v in headers.items()if k.lower()not in ['content-length','content-encoding','transfer-encoding','connection','set-cookie','x-qa-wire-bytes','x-qa-wire-encoding']};route.fulfill(status=code,headers=headers,body=body)
-   page.route(base+'/**',serve);page._csoi_nav_routed=True
-  return native(page,url,*args,**kw)
- Page.goto=goto
- os.environ['ATLAS_TEST_URL']=base+'/';os.environ['ATLAS_NAV_OUTPUT']=str(OUT/'navigation');os.environ['ATLAS_NAV_MODE']='live real Chromium with supported service access, not owner login'
- script=APP/'qa/csoi-navigation-browser.py';report['scriptSha256']=hashlib.sha256(script.read_bytes()).hexdigest();exec(compile(script.read_text(),str(script),'exec'),{'__file__':str(script),'__name__':'__main__'})
- report['status']='PASS';save();print('PASS final deployed actual click navigation, visible records, deep links, history, refresh and persisted local values; owner login remains NOT_TESTED',flush=True)
+ async def validate():
+  navigation=OUT/'navigation';navigation.mkdir();nav_report={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'mode':'Live real Chromium; concurrent supported service response forwarding, no owner login','ownerInteractiveLogin':'NOT_TESTED','results':[]}
+  def nav_save():(navigation/'results.json').write_text(json.dumps(nav_report,ensure_ascii=False,indent=2)+'\n')
+  script=APP/'qa/csoi-navigation-async-browser.py';report['scriptSha256']=hashlib.sha256(script.read_bytes()).hexdigest()
+  spec=importlib.util.spec_from_file_location('csoi_async_navigation',script);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+  module.APP=APP;module.OUT=navigation;module.BASE=base+'/';module.report=nav_report;module.save=nav_save
+  limit=asyncio.Semaphore(6)
+  with tempfile.TemporaryDirectory(prefix='csoi-live-forward-')as temporary:
+   async def serve(route):
+    request=route.request;assert request.method=='GET'and request.url.startswith(base+'/');started=time.monotonic()
+    async with limit:code,headers,body=await asyncio.to_thread(get,request.url,True)
+    row={'path':urllib.parse.urlsplit(request.url).path,'status':code,'bytes':len(body),'wireBytes':int(headers['X-QA-Wire-Bytes']),'wireEncoding':headers['X-QA-Wire-Encoding'],'fetchAndQueueSeconds':round(time.monotonic()-started,3)};report['network'].append(row)
+    assert code==200,(row['path'],code)
+    headers={k.lower():v for k,v in headers.items()if k.lower()not in ['content-length','content-encoding','transfer-encoding','connection','set-cookie','x-qa-wire-bytes','x-qa-wire-encoding','x-qa-decoded-bytes']};assert 'content-type'in headers
+    response_file=Path(temporary)/uuid.uuid4().hex;response_file.write_bytes(body)
+    try:await route.fulfill(status=code,headers=headers,content_type=headers['content-type'],path=str(response_file))
+    finally:response_file.unlink()
+    row['forwardedSeconds']=round(time.monotonic()-started,3)
+   async with async_playwright()as p:
+    browser=await p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+    try:await module.run_navigation(browser,serve)
+    except BaseException as error:
+     nav_report.update(status='FAILED',failure={'type':type(error).__name__,'message':str(error)[:3000]})
+     try:
+      page=browser.contexts[-1].pages[-1];report['timeoutState']=await(await page.context.new_cdp_session(page)).send('Runtime.evaluate',{'expression':"JSON.stringify({ready:document.readyState,notice:document.getElementById('startupMessage')?.textContent,count:document.getElementById('contentCount')?.textContent,url:location.href})",'returnByValue':True,'timeout':2000})
+     except Exception as diagnostic:report['diagnosticFailure']=str(diagnostic)[:500]
+     nav_save();raise
+    finally:await browser.close()
+ asyncio.run(validate());report['status']='PASS';save();print('PASS final deployed actual click navigation, visible records, deep links, history, refresh and persisted local values; owner login remains NOT_TESTED',flush=True)
 except BaseException as e:report.update(status='FAILED',failure={'type':type(e).__name__,'message':str(e)[:2500]});save();raise

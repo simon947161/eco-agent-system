@@ -1,0 +1,14 @@
+{
+  "mode": "Direct Chromium through configured proxy, scoped supported service header; TLS verification enabled",
+  "requests": [],
+  "errors": [],
+  "status": "FAILED",
+  "failure": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://council-strategy-intelligence.minshu.chatgpt.site/\nCall log:\n  - navigating to \"https://council-strategy-intelligence.minshu.chatgpt.site/\", waiting until \"load\"\n",
+  "state": {
+    "result": {
+      "type": "string",
+      "value": "{\"ready\":\"complete\",\"url\":\"chrome-error://chromewebdata/\"}"
+    }
+  },
+  "seconds": 0.331
+}

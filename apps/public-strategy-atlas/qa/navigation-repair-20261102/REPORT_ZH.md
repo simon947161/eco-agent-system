@@ -1,4 +1,14 @@
-# v6 导航故障修复 — 真实点击验收
+# v6 导航故障的v8修复 — 最终真实点击验收
+
+**有界修复已交付到原Council私人站v8；服务鉴权完整验收通过，Founder真实Windows登录待确认。**
+
+原网址：https://council-strategy-intelligence.minshu.chatgpt.site 。正常刷新后，从首页来源入口点击“只看地图记录”，应直接看到“LSPS地图记录”和27项；OP入口直接看到逐页记录。无需清空浏览器数据。
+
+最终运行源码`1317c04a7c1b2a222c4d99bda9ea2f2bd1bb0eab`，Sites源码`bcf116cc199baab933400b5ab38532d7250174e9`，部署`appgdep_6ae84561184881919ca11dc8a00e7886`。50个线上文件精确匹配，匿名根页和2个资产均403，权限仍仅owner。原水文站v2的源码、部署、URL、权限未变。后续证据文档提交不改变运行源码。
+
+最终完整回执：[线上实际点击](live-runs/b4eccc84a20c414d986bfb463fe6d1bc/navigation/results.json)、[资产/访问/网络验证](live-runs/b4eccc84a20c414d986bfb463fe6d1bc/live-validation.json)、[桌面截图](live-runs/b4eccc84a20c414d986bfb463fe6d1bc/navigation/1440-context.png)、[390px截图](live-runs/b4eccc84a20c414d986bfb463fe6d1bc/navigation/390-context.png)。桌面与手机完整流程均通过；没有使用仅改变hash或仅存在截图来代替点击内容断言。
+
+仍有明确验收边界：没有Founder真实Windows拥有者会话；Chromium直连经当前代理发生证书信任错误，未关闭TLS验证。最终测试使用支持的服务鉴权转发真实线上响应，因此不代表真实owner登录链路通过。需Founder正常登录检查三个入口；若仍失败，最小反馈是失败入口点击后的地址栏hash。这个问题不应靠清空用户草稿来处理。研究与新动画继续暂停，整体80项状态仍51/26/3，未声称所有功能或整个项目完成。
 
 Founder报告：Windows网页里地图/入口没有反应，LSPS入口像回到首页，地图筛选和OP逐页入口看不到内容。本批暂停研究扩展和动态地图，只修复原站导航与加载反馈。
 
@@ -19,11 +29,11 @@ Worker最近180分钟错误日志返回空集合，只能说明该查询没有�
 
 ## 本地已验收
 
-`local/results.json`：桌面1440×900与390×844实际点击地图站点、首页来源入口、三个被报告入口、结果记录、地图图例和OP单元；同hash重复点击、返回/前进、详情刷新、冷深链、查询和分页均断言目标文字实际出现且进入视口。修复后首条结果桌面约226px、手机约204px；不是只断言URL或截图存在。
+`local-final/results.json`：在最终v8运行代码1317c04上完整重跑，桌面1440×900与390×844实际点击地图站点、首页来源入口、三个被报告入口、结果记录、地图图例和OP单元；同hash重复点击、返回/前进、详情刷新、冷深链、查询和分页均断言目标文字实际出现且进入视口。修复后首条结果桌面约226px、手机约204px；不是只断言URL或截图存在。早期`local/results.json`单独保留，未用它代替最终代码验收。
 
-`state/results.json`：明确导入旧v4快照和撤回OP来源后的真实导航，保留缺失/失效状态；原IndexedDB保存checkpoint及localStorage值不变。受控启动延迟、启动失败及实际重载链接均通过。初次测试误以为DOMContentLoaded后启动仍未完成，该夹具断言失败保留于`state-fixture-failed/`，改为可控暂停原启动验证器后复测；没有增加等待上限或降低原验证。
+`state/results.json`：也已在最终v8代码完整重跑。明确导入旧v4快照和撤回OP来源后的真实导航，保留缺失/失效状态；原IndexedDB保存checkpoint及localStorage值不变。受控启动延迟、启动失败及实际重载链接均通过。初次测试误以为DOMContentLoaded后启动仍未完成，该夹具断言失败保留于`state-fixture-failed/`，改为可控暂停原启动验证器后复测；没有增加等待上限或降低原验证。
 
-源数据、来源历史和启动快照本批不变；状态仍51 VERIFIED、26 PARTIAL、3 BLOCKED。原生路由/地图测试及PHE、工作区回归结果见本目录回执。最终线上验收与部署标识以`deployment.json`及`live/`为准，未有该最终回执时不得称发布完成。
+源数据、来源历史和启动快照本批不变；状态仍51 VERIFIED、26 PARTIAL、3 BLOCKED。原生路由/地图3个测试文件通过，PHE和工作区两套浏览器回归在99a814e修复版通过；其后只增加旧HTML空节点兼容、资源版本query和打包器处理，最终完整导航/状态以及旧HTML兼容检查另列，不声称两套回归又完整重跑。最终线上验收与部署标识以`deployment.json`及其指定的`live-runs/`独立目录为准。
 
 ## 尚未确认
 
@@ -38,3 +48,25 @@ v7已发布，首次线上实际点击轮在OP深链刷新等待load时超过原
 额外受控测试将v6旧HTML配上新脚本，确实触发新增启动提示的空节点异常（mixed-cache-before.json）；不是Founder缓存状态证据。已使启动提示兼容旧文档，且新HTML为变更脚本/样式携带版本query，打包器也验证提取并包含这些原始文件，防止浏览器复用相同旧资源URL；数据缓存和来源资料不变。mixed-cache-after.json及compat/results.json记录真实点击复测。
 
 服务鉴权验证器原来经urllib以identity取得全部资源，未模拟浏览器压缩协商；后续改为请求gzip并对收到的编码严格解码后核对原文件散列，记录传输字节、编码和耗时。没有延长30秒超时，未改变应用验证，也未把该传输调整当作Founder故障的已证实原因。最终结果仍以新的独立运行回执为准。
+
+
+## v8最终代码和测试传输边界
+
+v8运行源码1317c04，Sites源码bcf116c。最终代码的完整本地导航和状态检查分别于08:10:47和08:10:49 UTC启动并通过；包括OP深链刷新，保持原30秒上限。仅4个运行文件改变，其余45个运行文件（包括完整数据和启动快照）与v6字节相同。
+
+线上验证的中间失败全部保留，不算成功：
+
+- `live-runs/2483fa7dd29642698a8c8971cf067f66/`：v8原转发方式根页等待load超过30秒。50文件精确匹配；48次资源GET均200，累计GET时间约8秒，不能单凭这些排除页面执行或测试传输问题。
+- `direct-browser-probe.json`：Chromium使用既有代理、保留TLS验证直连，在进入页面前失败`ERR_CERT_AUTHORITY_INVALID`。未绕过TLS、代理或访问控制；它不是应用错误证明。
+- `live-runs/5df7a31d96f549c5bd123996c1eb705a/`：尝试给Playwright转发原始gzip响应，但该接口需要解码字节，页面显示压缩字节。这是明确的测试适配器错误，未修改生产文件。
+- `live-runs/48179dfb7e8e45c5ad544bc30a2fa8ce/`：改为临时文件转发时文件类型被推断为下载，根页报Download is starting。随后规范化服务端响应头并显式保留服务端Content-Type。
+
+最终适配器每次请求仍实际GET原站，保持正常TLS校验和原服务鉴权；解码后用Playwright支持的文件方式交给浏览器，避免大响应额外经过Python到Node的JSON正文通道。不会替换为本地应用文件、预录成功结果或改写页面URL。测试网络转发不等于Founder拥有者登录链路。每轮独立目录记录，最后是否通过以deployment.json指定的完整回执为准；不能将调整传输等同于证明用户Windows故障根因。
+
+
+串行文件转发版`live-runs/29ee23dd1f6747b79ea838060b577b3c/`完成桌面三个入口、详情、前进后退、详情刷新后，仍在OP深链刷新30秒失败，尚未进入手机组，不计为完整PASS。保留`qa/verify-navigation-private-trial-sync-diagnostic.py`用于复现该适配器。
+
+后续验收使用异步并发响应转发（最多6个实际GET），避免阻塞浏览器本可并发的资源请求。`async-assertion-equivalence.json`通过AST逐项核对：去掉await及唯一的传输绑定后，ready/settled/result/research/tool与完整视口循环均和本地同步原测试一致，没有删除断言、改输入、改操作顺序或放宽超时。最终导航仍是在原站URL下取得原站真实响应；它仍是服务鉴权，不能冒充Founder登录。描述中的“冷深链”覆盖对应URL的完整刷新启动，并非另外登录一个真实Owner会话。
+
+
+最终并发完整轮1440和390均通过，包含之前失败的OP深链刷新，仍用原30秒限制。同期生产运行代码没有更改。前面的串行转发失败不被删除，也不构成Founder Windows故障原因已查明的证明。

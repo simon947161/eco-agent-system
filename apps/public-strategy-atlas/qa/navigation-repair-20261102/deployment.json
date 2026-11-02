@@ -1,0 +1,73 @@
+{
+  "siteId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+  "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+  "version": 8,
+  "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_47942fef69c08191a13580fd7c9c3c96",
+  "source": {
+    "commit_sha": "bcf116cc199baab933400b5ab38532d7250174e9"
+  },
+  "canonicalApplicationSha": "1317c04a7c1b2a222c4d99bda9ea2f2bd1bb0eab",
+  "deploymentId": "appgdep_6ae84561184881919ca11dc8a00e7886",
+  "deploymentSucceededAt": "2026-11-02T08:10:28.428863Z",
+  "access": {
+    "mode": "custom",
+    "policyRevision": 1,
+    "allowedAccounts": 1,
+    "allowedRoles": [
+      "owner"
+    ],
+    "allowedGroups": 0,
+    "allowedEditors": 0,
+    "externalVisitors": 0
+  },
+  "archiveStorage": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_0000000094388230bc7e9ce6991de73f",
+    "content_hash": "sha256:35284fad114dfec1d4a276cce5385275511b5d4815cb9b8010451804f7755028",
+    "size_bytes": 33945600,
+    "file_count": 51
+  },
+  "status": "DEPLOYED_SERVICE_ACCEPTANCE_PASS_OWNER_LOGIN_NOT_TESTED",
+  "ownerWindowsInteractiveLogin": "NOT_TESTED",
+  "water": {
+    "siteId": "appgprj_6adefcfe720881918b4e32874f12dd86",
+    "url": "https://climateos-snowy-monaro.minshu.chatgpt.site",
+    "version": 2,
+    "versionId": "appgprj_6adefcfe720881918b4e32874f12dd86~appgver_6e7858f94ab881918228f1f9a742ff59",
+    "source": {
+      "commit_sha": "9f3a201d40c4b70d72f0b69c319805258769c242"
+    },
+    "deploymentId": "appgdep_6adf008a3d1c81918a673531038410d1",
+    "policyRevision": 1
+  },
+  "waterUnchanged": true,
+  "liveRun": "live-runs/b4eccc84a20c414d986bfb463fe6d1bc",
+  "localArchiveProof": {
+    "siteSourceSha": "bcf116cc199baab933400b5ab38532d7250174e9",
+    "canonicalApplicationSha": "1317c04a7c1b2a222c4d99bda9ea2f2bd1bb0eab",
+    "archiveBytes": 33945600,
+    "archiveSHA256": "9dd751293503a5f0b204afebd8ad684a497813d01437ef2068478df505ea8dad",
+    "regularFiles": 51,
+    "allFilesEqualSource": true
+  },
+  "archiveHashScope": "Local archiveSHA256 is the locally generated tar digest; archiveStorage.content_hash is separately returned by Sites. Equality is not asserted. Exact deployed content is checked per file against the canonical package.",
+  "priorV8LiveRun": "live-runs/29ee23dd1f6747b79ea838060b577b3c: FAILED at OP deep-link reload after desktop click/detail/back-forward flows",
+  "liveProgress": "Full1440 and390 actual pointer navigation/history/deep-link reload/pagination/empty state/storage PASS; original30s unchanged",
+  "verifiedAt": "2026-11-02T08:35:00.988441+00:00",
+  "liveAssetsExact": 50,
+  "anonymous": [
+    {
+      "path": "/",
+      "status": 403
+    },
+    {
+      "path": "/csoi-pages.js",
+      "status": 403
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 403
+    }
+  ],
+  "directChromium": "BLOCKED before app load: ERR_CERT_AUTHORITY_INVALID through existing configured proxy; TLS was not bypassed"
+}
