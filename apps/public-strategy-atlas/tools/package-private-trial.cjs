@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 const app=path.resolve(__dirname,'..'),manifest=JSON.parse(fs.readFileSync(path.join(app,'.openai/hosting.json')));
 if(manifest.project_id!=='appgprj_6ae5b063565c8191802c9d7f7eb3214b'||manifest.static?.directory!=='dist')throw Error('CSOI_HOSTING_IDENTITY_REQUIRED');
 const html=fs.readFileSync(path.join(app,'index.html'),'utf8');
-const assets=new Set(['index.html','COI_TASK_REGISTRY_V1_7.json',...Array.from(html.matchAll(/(?:src|href)="\.\/([^"#?]+)"/g),m=>m[1])]);
+const assets=new Set(['index.html','COI_TASK_REGISTRY_V1_7.json',...Array.from(html.matchAll(/(?:src|href)="\.\/([^"#?]+)(?:\?[^"#]*)?"/g),m=>m[1])]);
 const out=path.join(app,'dist');fs.mkdirSync(out,{recursive:true});
 const hashes={};
 for(const file of [...assets].sort()){

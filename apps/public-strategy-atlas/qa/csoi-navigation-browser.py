@@ -37,7 +37,7 @@ try:
   browser=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
   for width,height in [(1440,900),(390,844)]:
    context=browser.new_context(viewport={'width':width,'height':height},has_touch=width==390,accept_downloads=True,reduced_motion='reduce');page=context.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
-   page.goto(BASE);ready(page);case={'viewport':[width,height],'checks':[]}
+   page.goto(BASE);ready(page);case={'viewport':[width,height],'checks':[]};report['results'].append(case);save()
    page.evaluate("localStorage.setItem('csoi-navigation-existing-draft','preserve-me');sessionStorage.setItem('csoi-navigation-session','preserve-me')")
    for node in ['csp','lsps']:
     page.locator('#atlasGraph [data-node-id="'+node+'"] .station-hit').click();expect(page.locator('#inspector')).to_be_visible();assert page.locator('#details').inner_text().strip();page.locator('#closeDetails').click()
@@ -66,7 +66,7 @@ try:
    page.get_by_role('navigation',name='Source research pages').get_by_role('link',name='下一页',exact=True).click();result(page,'OP 逐页梳理');expect(page.locator('#csoiResearchResults')).to_contain_text('OP PDF 26')
    page.get_by_role('textbox',name='Search source research').fill('no-match-navigation-fixture');page.get_by_role('button',name='查询来源内容',exact=True).click();expect(page.locator('#csoiResearchResults')).to_contain_text('当前快照没有匹配');settled(page);expect(page.locator('#csoiResearchResults h2')).to_be_in_viewport()
    case['checks'].append('Actual pagination and form submit; empty results visible with explicit recovery explanation')
-   assert not errors,errors;case['status']='PASS';case['browserErrors']=errors;report['results'].append(case);save();context.close();print('PASS navigation actual-click/visibility/history/deep-link/storage at '+str(width),flush=True)
+   assert not errors,errors;case['status']='PASS';case['browserErrors']=errors;save();context.close();print('PASS navigation actual-click/visibility/history/deep-link/storage at '+str(width),flush=True)
   browser.close()
  report['status']='PASS';save()
 except BaseException as error:

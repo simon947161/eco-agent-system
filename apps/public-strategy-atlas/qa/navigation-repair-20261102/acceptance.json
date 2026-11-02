@@ -1,15 +1,6 @@
 {
   "at": "2026-11-02T07:52:52.090413+00:00",
   "status": "LOCAL_PASS_PUBLICATION_PENDING",
-  "runtimeAndTestSha256": {
-    "atlas.js": "b4df9943a95e1a5c861428045d579a96e6c9d803348e0d5b231fe1a3885682a0",
-    "csoi-pages.js": "df6d3917f8c45ec017e77a31973b34e5b5731670927dd36f0e1c401e4829a3b7",
-    "csoi-pages.css": "a77a888831096f6cc78040658cfcb575f3b3b63ff316e1a48c3fb55b97f1a327",
-    "index.html": "a810df1fe9743eb4f89f9ee498127b3023b31a43554d7ba20ce75c12e61b3543",
-    "qa/csoi-navigation-browser.py": "105251a10ede1581c96e3fbf4963cea83f43cd3c93556f409215a44228616ac7",
-    "qa/csoi-navigation-state-browser.py": "0dfe2bbbadc499d85883a0d5be286cd136f72838f6fb1abffee2b50900e86662",
-    "qa/verify-navigation-private-trial.py": "a1de90244dfa36d20c0d445ebcab9028901de2e7034c2a323cc4dd16a47ecc40"
-  },
   "native": {
     "command": "node --test csoi-router.test.cjs route-main.test.cjs route-map.test.cjs",
     "files": 3,
@@ -31,5 +22,29 @@
     "windowMinutes": 180,
     "events": 0,
     "interpretation": "No returned events, not proof of front-end health"
-  }
+  },
+  "initialRuntimeAndTestSha256": {
+    "atlas.js": "b4df9943a95e1a5c861428045d579a96e6c9d803348e0d5b231fe1a3885682a0",
+    "csoi-pages.js": "df6d3917f8c45ec017e77a31973b34e5b5731670927dd36f0e1c401e4829a3b7",
+    "csoi-pages.css": "a77a888831096f6cc78040658cfcb575f3b3b63ff316e1a48c3fb55b97f1a327",
+    "index.html": "a810df1fe9743eb4f89f9ee498127b3023b31a43554d7ba20ce75c12e61b3543",
+    "qa/csoi-navigation-browser.py": "105251a10ede1581c96e3fbf4963cea83f43cd3c93556f409215a44228616ac7",
+    "qa/csoi-navigation-state-browser.py": "0dfe2bbbadc499d85883a0d5be286cd136f72838f6fb1abffee2b50900e86662",
+    "qa/verify-navigation-private-trial.py": "a1de90244dfa36d20c0d445ebcab9028901de2e7034c2a323cc4dd16a47ecc40"
+  },
+  "finalRuntimeAndTestSha256": {
+    "atlas.js": "44ff9204240a63c9754fdb3e449bf4706d209f6855aa958b7a0456d616adc928",
+    "csoi-pages.js": "df6d3917f8c45ec017e77a31973b34e5b5731670927dd36f0e1c401e4829a3b7",
+    "csoi-pages.css": "a77a888831096f6cc78040658cfcb575f3b3b63ff316e1a48c3fb55b97f1a327",
+    "index.html": "2b2a5e8eae92bb3340c17d3778379567dee662f5ca2168b88b701963a0e485cf",
+    "qa/csoi-navigation-browser.py": "e97917f04272b60009eec1aba85436816e7e802f4fefbd92c1cd1c8820687266",
+    "qa/csoi-navigation-state-browser.py": "0dfe2bbbadc499d85883a0d5be286cd136f72838f6fb1abffee2b50900e86662",
+    "qa/verify-navigation-private-trial.py": "7431eaf44774f01117b97b08cb792148c395cce91de5faf997a285ab18fb2fb1"
+  },
+  "compatibilityDelta": {
+    "status": "PASS",
+    "evidence": "compat/results.json",
+    "scope": "Current versioned assets at1440/390 plus oldv6HTML/current scripts; all three actual links lead to visible focused results"
+  },
+  "v7Live": "FAILED_INCOMPLETE; retained separately, no final live pass claimed"
 }

@@ -3,7 +3,7 @@
 No owner identity is simulated. Credential arrives over hidden stdin and is kept
 only in memory; every credentialed request is GET to the exact approved origin.
 """
-import sys,termios,json,urllib.request,urllib.error,urllib.parse,ssl,datetime,hashlib,os,uuid,concurrent.futures
+import sys,termios,json,urllib.request,urllib.error,urllib.parse,ssl,datetime,hashlib,os,uuid,concurrent.futures,gzip,time
 from pathlib import Path
 from playwright.sync_api import Page
 settings=termios.tcgetattr(sys.stdin.fileno());settings[3]&=~termios.ECHO;termios.tcsetattr(sys.stdin.fileno(),termios.TCSANOW,settings)
@@ -17,11 +17,15 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
  def redirect_request(self,*args):return None
 def get(url,auth):
  assert url.startswith(base+'/')
- headers={'OAI-Sites-Authorization':'Bearer '+c['token']}if auth else {}
+ headers={'Accept-Encoding':'gzip'}
+ if auth:headers['OAI-Sites-Authorization']='Bearer '+c['token']
  opener=urllib.request.build_opener(NoRedirect,urllib.request.HTTPSHandler(context=ssl.create_default_context()))
  try:r=opener.open(urllib.request.Request(url,headers=headers),timeout=30)
  except urllib.error.HTTPError as e:r=e
- return r.code,dict(r.headers),r.read()
+ wire=r.read();encoding=r.headers.get('Content-Encoding','identity');assert encoding in ['identity','gzip'],encoding
+ body=gzip.decompress(wire)if encoding=='gzip'else wire
+ headers=dict(r.headers);headers['X-QA-Wire-Bytes']=str(len(wire));headers['X-QA-Wire-Encoding']=encoding
+ return r.code,headers,body
 try:
  for path in ['/','/csoi-pages.js','/sources/csoi-default-snapshot.js']:
   code,headers,body=get(base+path,False);assert code in [401,403],(path,code);report['anonymous'].append({'path':path,'status':code});save()
@@ -38,10 +42,10 @@ try:
  def goto(page,url,*args,**kw):
   if not getattr(page,'_csoi_nav_routed',False):
    def serve(route):
-    request=route.request;assert request.method=='GET'and request.url.startswith(base+'/');code,headers,body=get(request.url,True)
-    report['network'].append({'path':urllib.parse.urlsplit(request.url).path,'status':code,'bytes':len(body)})
+    request=route.request;assert request.method=='GET'and request.url.startswith(base+'/');started=time.monotonic();code,headers,body=get(request.url,True)
+    report['network'].append({'path':urllib.parse.urlsplit(request.url).path,'status':code,'bytes':len(body),'wireBytes':int(headers['X-QA-Wire-Bytes']),'wireEncoding':headers['X-QA-Wire-Encoding'],'seconds':round(time.monotonic()-started,3)})
     assert code==200,(report['network'][-1]['path'],code)
-    headers={k:v for k,v in headers.items()if k.lower()not in ['content-length','content-encoding','transfer-encoding','connection','set-cookie']};route.fulfill(status=code,headers=headers,body=body)
+    headers={k:v for k,v in headers.items()if k.lower()not in ['content-length','content-encoding','transfer-encoding','connection','set-cookie','x-qa-wire-bytes','x-qa-wire-encoding']};route.fulfill(status=code,headers=headers,body=body)
    page.route(base+'/**',serve);page._csoi_nav_routed=True
   return native(page,url,*args,**kw)
  Page.goto=goto

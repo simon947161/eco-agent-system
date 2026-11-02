@@ -1,0 +1,55 @@
+{
+  "at": "2026-11-02T07:56:13.496Z",
+  "canonicalApplicationSha": "99a814e87152d820373024a552c6338290f11ba3",
+  "siteSourceSha": "ccfe0bc9af672e95b19a50a28d64b3a871915aee",
+  "version": 7,
+  "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+  "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+  "deployment": {
+    "id": "appgdep_6ae841e39f4081919790ecec65c8a1b2",
+    "project_id": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+    "title": "Council Strategic\u2013Operational Intelligence \u00b7 Private Trial",
+    "version_id": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_e881842364708191bd075e4a6a9963b0",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ae5b063565c8191802c9d7f7eb3214b",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-02T07:55:30.065546+00:00"
+  },
+  "access": {
+    "mode": "custom",
+    "policyRevision": 1,
+    "allowedAccounts": 1,
+    "roles": [
+      "owner"
+    ],
+    "groups": 0,
+    "external": 0,
+    "unchanged": true
+  },
+  "rollback": {
+    "retainedPreviousVersion": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_800266427f648191a9edcd40c1b79c59",
+    "source": "ad876b976278d437878822c7eb6e24e7d3e64598",
+    "qualification": "Retained v6 baseline; known navigation defects, not claimed Founder-accepted working fallback"
+  },
+  "archive": {
+    "path": "/tmp/csoi-navigation-99a814e.tar",
+    "localSHA256": "1fd9a11cd2da34e1b5c7cc94469f2540046072043d16c5b6aa775edea4f6f50d",
+    "platformArchive": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000517881fa8bfb6fa015982c88",
+      "content_hash": "sha256:a09abc156ef6037b2ac85fb60796ac92d672a7002d4f7cc0d3aeb2f4e8d2c87a",
+      "size_bytes": 33945600,
+      "file_count": 51
+    },
+    "filesExactToPushedSource": 51
+  },
+  "liveValidation": "FAILED_INCOMPLETE",
+  "ownerInteractiveWindows": "NOT_TESTED",
+  "liveEvidence": "live-runs/898238f81c764afa8b1a683c5c068695/live-validation.json",
+  "failure": "OP deep-link reload exceeded original30second limit; not final acceptance"
+}
