@@ -1,6 +1,6 @@
 {
   "format": "op-final-source-and-boot-cache-readback-1",
-  "at": "2026-11-02T04:04:16.141722+00:00",
+  "at": "2026-11-02T04:06:58.367355+00:00",
   "status": "PASS_ALL_911_ACTUAL_UNITS",
   "sourceBundle": {
     "file": "sources/op-completion-review.json",
@@ -18,7 +18,7 @@
   },
   "independentPDFReview": "independent/REPORT_ZH.md",
   "independentActualProjectionComparison": "independent/model-readback-review.json",
-  "semanticsLimit": "This readback proves byte/structure transfer of all previously independently PDF-reviewed units; hash equality alone is not semantic review. Source conflicts and unknowns are retained.",
+  "semanticsLimit": "This readback proves structure/value transfer of all previously independently PDF-reviewed units; hash equality alone is not semantic review. Source conflicts and unknowns are retained.",
   "unitCount": 911,
   "recordCount": 143,
   "numericEncodingNote": "Source Python JSON can encode integral coordinates as1.0; JavaScript boot serialization encodes1. Both are JSON numbers. Exact facts/anchors and every unit compare structurally equal; source digest matches prior semantic review; actual cache unit digests are reported separately. Native OP tests also use JavaScript strict deep equality.",

@@ -1,10 +1,10 @@
 {
-  "at": "2026-11-02T03:34:57.190053+00:00",
+  "at": "2026-11-02T04:14:29.725293+00:00",
   "repo": "/workspace/eco-agent-system",
   "startingHead": "1bd44ea96bf742e63072d866502479ca34d34061",
   "sourceReview": "911 units independently reviewed; frozen source SHA345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0",
   "cache": "Normal verified append complete;635entities/775revisions;22,743,874byte snapshot. Full independent fresh-build equivalence running.",
-  "nativeCompleted": 27,
+  "nativeCompleted": 48,
   "nativeTotal": 48,
   "initialFailures": [
     {
@@ -16,8 +16,24 @@
       "reason": "Negative-test helper mutated original by alias; clone fix applied; targeted rerun pending."
     }
   ],
-  "browser": "OP desktop complete, mobile actual page/unit reading in progress; separate023/074/076 closure readback running.",
-  "publication": "Not started; original owner-onlyv4 unchanged.",
+  "browser": "OP original complete desktop/mobile;4/6 legacy suites PASS, long E0 rebuild running; additional measured snapshot performance desktop complete/mobile running.",
+  "publication": "Preparing exact-source package; original owner-onlyv4 still live.",
   "blockedByNewPermission": false,
-  "nextAcceptance": "All current native tests and desktop/mobile applicable browser suites, then samePR push and owner-only research publication."
+  "nextAcceptance": "All current native tests and desktop/mobile applicable browser suites, then samePR push and owner-only research publication.",
+  "checkpointCommit": "8fcab3b92bc192406d52976c1d699fc273ccc23e",
+  "checkpointRemoteVerified": true,
+  "targetedReconciliation": "4/4 PASS: corrected two test fixtures plus final path transaction and existing paths; aggregate full registration cache test still running.",
+  "performanceFix": "One isolated endpoint comparison transaction; unchanged full validation and30second browser limit; desktop/mobile targeted PASS.",
+  "engineeringCounts": {
+    "VERIFIED": 51,
+    "PARTIAL": 26,
+    "BLOCKED": 3
+  },
+  "independentFinalActualReadback": "911 actual source/cache unit rows and15samples PASS; source data unchanged. Historical intermediate-field naming corrected transparently.",
+  "nativeReconciledDistinct": 49,
+  "nativeStatus": "PASS_COMPLETE48_WITH_TARGETED4_RECONCILIATION_49_DISTINCT",
+  "fullBootRebuild": "PASS:2582.22seconds, default full fresh registration and60-item fixture, historic prefix/clone/stale/tamper checks. Original aggregate exit1 retains two initial test-fixture failures; final affected reruns pass.",
+  "measuredOPBrowser": "PASS desktop1440/mobile390 all142pages/911units;22,743,874byte snapshot export/import/negative checks;148JSheap samples each. Mobile max sampled391,075,440bytes, import6.782s; physical low-memory phone NOT_TESTED.",
+  "remainingTests": "Actually deployed asset/access/browser verification after private publication.",
+  "localAcceptance": "PASS_ALL_APPLICABLE_CHECKS"
 }

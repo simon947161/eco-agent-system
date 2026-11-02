@@ -7,12 +7,15 @@
 ## 交付证据
 
 - `readback-review.json`、`readback-review.csv`：911 项逐项记录，包含稳定 ID、原页/位置、审读字段、原稿指纹、公开投影指纹、发现与最终状态。
-- `author-findings.json`：保留首次错误字段及修复结果，没有用新结果抹掉初态。
-- `finance-initial-semantic-review.json`、`services-summary-initial-review.json`：分别保留财务首次审读及服务 517 条摘要/条件的初审。
+- `author-findings.json`：保留四类错误的当时观察、实际捕获的中间稿字段及最终修复结果。前三类没有完整修前 JSON 快照，不能把中间稿字段称为首次错误字段；具体取证时序更正在 `history-binding-correction.json`。
+- `finance-initial-semantic-review.json`：保留财务初审发现及捕获时的中间稿指纹；其中旧字段名 `initialAuthoredDigest` 并不保证是修前状态。`services-summary-initial-review.json` 保留服务 517 条摘要/条件的初审。
+- `compact-final-readback-check.json`：追加独立核对 911 行最终 CSV、15 个摘录及实际 boot cache。110 个单元只有 JSON 数字 `1.0`/`1` 序列化表示差异，原数值和字段完整相同；这是结构及值相同，不是序列化字节完全相同。
 - `model-readback-review.json`：实际 143 个研究记录、911 个完整单元、746 个来源引用出现位置的读回。模型只删除两类本地图片路径，审读内容完整一致。
 - `page-inventory.json`、`initial-source-findings.json`：142 页分类及 34 组独立原件风险；页数和表格抽取数量没有被当成理解百分比。
 - `cashflow-source-check.json`：P121 原件现金净变动的独立计算证据。
 - `finance-source-position-check.json`、`services-source-position-check.json`：定位和字段保真交叉验证，**不代替语义判断**。
+
+取证时序更正：财务结构化记录写入时，作者已开始修复。SHA `1a093274…` 下，001/002 已改正，003 部分改正，004 仍未改。先前把这些字段统一称为“初态”不准确，现已明确改名并保留原值和指纹；早先工具观察和即时消息与完整原始 JSON 快照分开说明，没有补造修前文件。最终作者稿及实际数据包未因此改变。
 
 ## 真正发现并修复的错误
 
@@ -47,6 +50,8 @@ P121 四个基金的印刷净现金变动与同页期末减期初不同，单位
 商业 FOGO 表与正文的 Cooma-Monaro/Cooma 地域和每周/每两周口径不同；居民 FOGO 的 Region/Township 范围也不同。主 OP 1.3、收入附录 1.2 的采用记录与 working draft 文字并存。前言金额、两年泳池预算、年度预算、整个项目金额与资金来源不可直接相加。`$` 没有擅自补成明确 ISO 币种；空白、破折号、0、TBD、TBC、BAU 分开保留。
 
 当前版本、法律/地块适用性、实际执行、支出和效果仍为 UNKNOWN；人类及官方准入为 PENDING。这份审读不能替代 Council 决策、现场检查、完整账目或专业审查。P142 公开邮箱按整合要求改为明确指向原页，未复写非必要联系地址；其余联系信息只描述该版本，不保证今天仍有效。
+
+证据分类汇总更正：P111 隐藏脚注的最终内容早已改为 `OP_DOCUMENT_CONTEXT`，但两份独立读回 JSON/CSV 的通用 `category` 字段和总汇总仍沿用旧分类。现已修正；当前 911 项中 `OP_BUDGET_CONDITION=1`、`OP_DOCUMENT_CONTEXT=7`。旧分类及更正前指纹保存在 `category-summary-correction.json`，原始初审矩阵保留不动。此次只修证据分类，未更改已冻结的来源包、缓存或语义内容。
 
 ## 校验与最终绑定
 

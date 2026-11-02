@@ -1,0 +1,49 @@
+{
+  "format": "OP_INDEPENDENT_HISTORY_BINDING_CORRECTION_V1",
+  "at": "2026-11-02T04:05:41.236109+00:00",
+  "scope": "Evidence metadata and report only; no source bundle, runtime or boot-cache changes. No new full semantic audit.",
+  "capturedIntermediateAuthorFileSHA256": "1a0932749a2e8076afe07a42a341230cf52b7b782d32c4e6a8a630214614edfa",
+  "beforeEvidenceFileSHA256": {
+    "author-findings.json": "b29e8ffcf65b7364da857ea9d92ce4ab40789fb474120cd79731c51f8b9cff47",
+    "finance-initial-semantic-review.json": "821c800a4342c9a0b7ff61fa01c64a90816bed80c2f4c11f1dc09fbe05deb36d",
+    "finance-readback-review.json": "edd1f916e663f924da9d48f2930c6414f573a1fdbe579d7c3915a2a582c7e746",
+    "readback-review.json": "3eeb431e428f40830a32cb365a082a656f796ce9873918f30fb16e7f93168b53",
+    "REPORT_ZH.md": "dd6af6333744b6f4db26c00b9e5d55d2cbccee24e7169379d37cf63907059d7d"
+  },
+  "corrections": [
+    {
+      "findingIds": [
+        "OP-AUTH-001",
+        "OP-AUTH-002"
+      ],
+      "oldField": "initialAuthoredFields",
+      "newField": "intermediateCapturedFields",
+      "stage": "Relevant corrections already present at capture"
+    },
+    {
+      "findingIds": [
+        "OP-AUTH-003"
+      ],
+      "oldField": "initialAuthoredFields",
+      "newField": "intermediateCapturedFields",
+      "stage": "Some corrections present, other defects still present at capture"
+    },
+    {
+      "findingIds": [
+        "OP-AUTH-004"
+      ],
+      "field": "initialAuthoredFields",
+      "stage": "Actual pre-fix P111 capture retained unchanged"
+    }
+  ],
+  "preserved": "Captured field values, initial observation descriptions, intermediate fingerprint, initial matrix digest values, and final readback digests are not replaced with invented before-values.",
+  "limitation": "Full pre-correction author JSON for findings001–003 was not retained in these evidence files. Earlier task tool/message observations support the findings, but are not a byte-addressable original artifact here.",
+  "afterEvidenceFileSHA256": {
+    "author-findings.json": "9aea634ad63b0ea317ff4b469cbb1bbf70fd29b88faa5fb1fe163bd88b9112d7",
+    "finance-initial-semantic-review.json": "0a2766a5d7ba68a030bf6cfb3f4a00ae336c1f53690819cd105c18baa1af2eb1",
+    "finance-readback-review.json": "d4972e7872e7c37abd26c01c1fd9a895cbe78ea8307dc604bc94cbd07b54da7a",
+    "readback-review.json": "6cc1c812f1aacfd3a9cca9901ba19d8e6bc12148f3a54133c33a29e8f07502d8",
+    "REPORT_ZH.md": "57cf277ff77e9ffa1a0d6876ae1a443937f55bfaeea9fce2373b82a79388c144"
+  },
+  "preservationVerification": "The three original matrices reconstruct byte-for-byte to their pre-correction SHA256 after removing only the added financeEvidenceCaptureTiming metadata; all original row digests/statuses were preserved. The original author-findings document also reconstructs exactly to its pre-correction SHA256 after reversing only the field renames, explanatory metadata, and correction of the original misleading method/scope labels."
+}

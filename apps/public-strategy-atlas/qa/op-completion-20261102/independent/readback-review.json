@@ -20,13 +20,13 @@
     "IMPROVEMENT_ACTION": 43,
     "PROJECT": 115,
     "OP_CAPITAL_BUDGET_ROW": 41,
-    "OP_BUDGET_CONDITION": 2,
+    "OP_BUDGET_CONDITION": 1,
+    "OP_DOCUMENT_CONTEXT": 7,
     "OP_SERVICE_BUDGET_ROW": 155,
     "OP_FUND_FINANCIAL_ROW": 30,
     "OP_GLOSSARY": 49,
     "OP_BUDGET_FIGURE": 4,
     "OP_REVENUE_POLICY": 92,
-    "OP_DOCUMENT_CONTEXT": 6,
     "OP_DOCUMENT_VERSION": 8,
     "OP_REVENUE_CATEGORY": 5,
     "OP_REVENUE_RATE_ROW": 5,
@@ -24007,7 +24007,7 @@
           555.6759033203125
         ]
       },
-      "category": "OP_BUDGET_CONDITION",
+      "category": "OP_DOCUMENT_CONTEXT",
       "initialAuthoredDigest": "sha256:962ec857de1a6de641e34b2d69e46c02390c478c2c8fb77389a44c5ec2a5a31e",
       "reviewedFields": [
         "title",
@@ -24036,7 +24036,8 @@
       "publicProjectedUnitDigest": "sha256:010ad00e6b522f69af2d4a00c4569d0be5479da6086ae9c45c11de3ab9735e9a",
       "sourcePages": [
         111
-      ]
+      ],
+      "intermediateCapturedCategory": "OP_BUDGET_CONDITION"
     },
     {
       "part": "finance",
@@ -40234,5 +40235,13 @@
         142
       ]
     }
-  ]
+  ],
+  "financeEvidenceCaptureTiming": {
+    "capturedIntermediateAuthorFileSHA256": "1a0932749a2e8076afe07a42a341230cf52b7b782d32c4e6a8a630214614edfa",
+    "legacyDigestField": "initialAuthoredDigest",
+    "legacyFieldMeaning": "For finance rows this digest identifies the intermediate unit captured while author repairs were underway, not necessarily the first defective unit. Digest values are retained unchanged.",
+    "initialStatusMeaning": "CORRECTION_REQUIRED / initialSemanticStatus records the earlier reported finding, not an assertion that every intermediate snapshot still has that defect.",
+    "detail": "author-findings.json and history-binding-correction.json"
+  },
+  "categorySummaryCorrectionReceipt": "category-summary-correction.json"
 }

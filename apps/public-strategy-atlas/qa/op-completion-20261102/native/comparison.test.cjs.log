@@ -1,0 +1,14 @@
+PASS current comparison pins exact content identities and does not perform finance arithmetic
+PASS historical pin resolves retained version after current revision changes
+PASS missing identities and revision pins are rejected without substituting current objects
+PASS tampered current record or history fails snapshot verification before rendering
+PASS legacy stations, content and source catalogue use existing exact identities
+PASS same unknown method or scope is not a compatibility match and null is never zero
+PASS unit, stock/flow, fiscal interval, region and actual/planned roles remain distinct
+PASS protected payloads, unknown classification and forged approved releases are denied
+PASS percent denominators, financial rates and legal roles participate in compatibility
+PASS calendar execution roles use the actual task schema without inventing outcomes
+PASS inert public source text stays data, source state and unknowns are retained
+PASS verified comparison transaction isolates caller and result mutations, retains exact output and rejects tampered input
+PASS dataset remains byte-identical after all comparisons
+comparison: 13 groups PASS

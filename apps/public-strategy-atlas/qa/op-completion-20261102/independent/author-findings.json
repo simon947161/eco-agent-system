@@ -2,8 +2,8 @@
   "format": "OP_INDEPENDENT_AUTHOR_FINDINGS_V1",
   "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
   "authorFile": "qa/op-completion-20261102/finance/finance-author.json",
-  "initialAuthorFileSHA256": "1a0932749a2e8076afe07a42a341230cf52b7b782d32c4e6a8a630214614edfa",
-  "method": "Independent original full-text reading preceded author comparison. All428 finance units were read, numerical role/period/column semantics compared with original pages; actual pixels additionally inspected where graphs or merged cells/native-layer conflicts matter. This file records original defects before author correction.",
+  "capturedIntermediateAuthorFileSHA256": "1a0932749a2e8076afe07a42a341230cf52b7b782d32c4e6a8a630214614edfa",
+  "method": "Independent original full-text reading preceded author comparison. All428 finance units were read, numerical role/period/column semantics compared with original pages; actual pixels additionally inspected where graphs or merged cells/native-layer conflicts matter. Findings were communicated before correction, but the structured field capture was made while the author was applying fixes. The captured file is an intermediate revision, not a complete pre-correction snapshot; per-finding capture stages are distinguished below.",
   "findings": [
     {
       "id": "OP-AUTH-001",
@@ -63,7 +63,7 @@
           ]
         }
       ],
-      "initialAuthoredFields": [
+      "intermediateCapturedFields": [
         {
           "id": "csoi:op2026:finance:p116:service-tourism-r04",
           "summary": "Tourism 的Expenditure component原值为 647，单位为千元格式 $'000；这是拟议年度预算。",
@@ -172,7 +172,7 @@
       "resolution": {
         "status": "CORRECTED_AND_INDEPENDENTLY_READ_BACK",
         "correctedAuthorSHA256": "7878038eac612cb440620c565a11e7edc04378c6a01e946753947b1638d4a01a",
-        "scope": "Actual revised fields read back against independently reviewed original; original deficiency retained above.",
+        "scope": "Revised fields independently read back against the original. Earlier reported defects are preserved as observations; the captured fields are explicitly an intermediate state, not a full original snapshot.",
         "correctedFields": [
           {
             "id": "csoi:op2026:finance:p116:service-tourism-r04",
@@ -219,6 +219,12 @@
             ]
           }
         ]
+      },
+      "captureStage": "AFTER_RELEVANT_FIXES",
+      "initialObservation": {
+        "basis": "Earlier review tool output and immediate internal author/parent messages in this task; no full pre-correction author JSON snapshot retained here.",
+        "description": "Before correction, the review tool output and immediate message to the author identified all four expense rows as Income component: Tourism Employee Costs 647, Materials & Contracts 311, Other Expenses 10, and Fleet and Plant Employee Costs 935. This is a transcript-backed observation, not a reconstructed original JSON snapshot.",
+        "isOriginalJSONSnapshot": false
       }
     },
     {
@@ -245,7 +251,7 @@
           ]
         }
       ],
-      "initialAuthoredFields": [
+      "intermediateCapturedFields": [
         {
           "id": "csoi:op2026:finance:p120:fund-r08",
           "summary": "Income Statement by Fund 的“Net Gains from the Disposal of Assets”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
@@ -324,7 +330,7 @@
       "resolution": {
         "status": "CORRECTED_AND_INDEPENDENTLY_READ_BACK",
         "correctedAuthorSHA256": "7878038eac612cb440620c565a11e7edc04378c6a01e946753947b1638d4a01a",
-        "scope": "Actual revised fields read back against independently reviewed original; original deficiency retained above.",
+        "scope": "Revised fields independently read back against the original. Earlier reported defects are preserved as observations; the captured fields are explicitly an intermediate state, not a full original snapshot.",
         "correctedFields": [
           {
             "id": "csoi:op2026:finance:p120:fund-r08",
@@ -342,6 +348,12 @@
             ]
           }
         ]
+      },
+      "captureStage": "AFTER_RELEVANT_FIXES",
+      "initialObservation": {
+        "basis": "Earlier review tool output and immediate internal author/parent messages in this task; no full pre-correction author JSON snapshot retained here.",
+        "description": "Before correction, the review tool output and immediate message identified the Net Gains from the Disposal of Assets row as SOURCE_DECLARED_TOTAL although it is an income component. This is an observed field description, not a complete original unit snapshot.",
+        "isOriginalJSONSnapshot": false
       }
     },
     {
@@ -446,7 +458,7 @@
           ]
         }
       ],
-      "initialAuthoredFields": [
+      "intermediateCapturedFields": [
         {
           "id": "csoi:op2026:finance:p120:fund-r19",
           "summary": "Income Statement by Fund 的“Operating Result from Continuing Operations Surplus/(Deficit)”按合并、General、Water、Sewer、Waste 五列保存；单位 $000，原表数值及空白/破折号不相互替换。",
@@ -1048,7 +1060,7 @@
       "resolution": {
         "status": "CORRECTED_AND_INDEPENDENTLY_READ_BACK",
         "correctedAuthorSHA256": "7878038eac612cb440620c565a11e7edc04378c6a01e946753947b1638d4a01a",
-        "scope": "Actual revised fields read back against independently reviewed original; original deficiency retained above.",
+        "scope": "Revised fields independently read back against the original. Earlier reported defects are preserved as observations; the captured fields are explicitly an intermediate state, not a full original snapshot.",
         "correctedFields": [
           {
             "id": "csoi:op2026:finance:p120:fund-r19",
@@ -1171,6 +1183,12 @@
             ]
           }
         ]
+      },
+      "captureStage": "PARTIALLY_CORRECTED_INTERMEDIATE_STATE",
+      "initialObservation": {
+        "basis": "Earlier review tool output and immediate internal author/parent messages in this task; no full pre-correction author JSON snapshot retained here.",
+        "description": "Before correction, the review tool output and immediate message identified the two operating-result rows as inherited from Expenses from Continuing Operations and the cash movement/balance/investment rows as inherited from Cash Flow from Financing Activities. The intermediate capture below contains a mixture of repaired and still-unrepaired fields; it must not be presented as a complete original or final revision.",
+        "isOriginalJSONSnapshot": false
       }
     },
     {
@@ -1226,7 +1244,15 @@
             "amountMeaning": []
           }
         ]
-      }
+      },
+      "captureStage": "BEFORE_THIS_FINDING_WAS_CORRECTED",
+      "captureNote": "The P111 visible-footnote error was still present when the shared intermediate author file was captured; these initialAuthoredFields really show that defect."
     }
-  ]
+  ],
+  "historyBindingErratum": {
+    "receipt": "history-binding-correction.json",
+    "originalLabel": "initialAuthoredFields / initialAuthorFileSHA256",
+    "reason": "Evidence recording raced with concurrent author corrections. Original field values and the captured file fingerprint are preserved; the timing labels are corrected. No original before-state has been invented.",
+    "originalCompleteSnapshotRetained": false
+  }
 }

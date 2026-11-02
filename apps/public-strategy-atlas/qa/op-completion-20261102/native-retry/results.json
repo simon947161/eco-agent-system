@@ -1,0 +1,50 @@
+{
+  "testFiles": 4,
+  "completed": 4,
+  "results": [
+    {
+      "file": "csoi-bombala-phe.test.cjs",
+      "startedAt": "2026-11-02T03:40:04.423055+00:00",
+      "finishedAt": "2026-11-02T03:41:46.728002+00:00",
+      "seconds": 102.3,
+      "sha256": "3924da987a13bafaa32bd6f247e2eb451327a4a243019b424a02835dc675a5f6",
+      "fileUnchanged": true,
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-bombala-phe.test.cjs.log"
+    },
+    {
+      "file": "csoi-op-review.test.cjs",
+      "startedAt": "2026-11-02T03:41:46.728335+00:00",
+      "finishedAt": "2026-11-02T03:44:21.357403+00:00",
+      "seconds": 154.63,
+      "sha256": "dfdcd65384b42f4f607b0ef622339506f1125a552cf4049fda1e79efe85b086f",
+      "fileUnchanged": true,
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-op-review.test.cjs.log"
+    },
+    {
+      "file": "csoi-path-transaction.test.cjs",
+      "startedAt": "2026-11-02T03:38:08.960905+00:00",
+      "finishedAt": "2026-11-02T03:39:28.333065+00:00",
+      "seconds": 79.37,
+      "sha256": "6d2b95f3ad945f0186df26defde3c74c56e221667dfb82bc8be5749040f65f27",
+      "fileUnchanged": true,
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-path-transaction.test.cjs.log"
+    },
+    {
+      "file": "csoi-paths.test.cjs",
+      "startedAt": "2026-11-02T03:39:28.334621+00:00",
+      "finishedAt": "2026-11-02T03:40:04.421651+00:00",
+      "seconds": 36.09,
+      "sha256": "a1d626d719084604745909e15c314473117d7e46e52c9d154ffc7ce8b33e604e",
+      "fileUnchanged": true,
+      "exitCode": 0,
+      "status": "PASS_TESTED_HERE",
+      "log": "csoi-paths.test.cjs.log"
+    }
+  ]
+}

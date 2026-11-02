@@ -54,7 +54,7 @@ def guarded_goto(page,url,*pos,**kw):
   page.on('request',lambda r:network.append({'method':r.method,'origin':urllib.parse.urlsplit(r.url).netloc}))
  return native_goto(page,url,*pos,**kw)
 Page.goto=guarded_goto
-for name in ['csoi-op-browser.py','csoi-phe-context-browser.py','e0-browser.py']:
+for name in ['csoi-op-browser.py','csoi-phe-context-browser.py','live-workspace-browser.py']:
  script=app/'qa'/name;source=script.read_text().replace('http://127.0.0.1:8877',base)
  if name=='csoi-op-browser.py':
   source=source.replace("'qa/op-completion-20261102/browser'",repr(str(out/'op')))
@@ -66,7 +66,7 @@ for name in ['csoi-op-browser.py','csoi-phe-context-browser.py','e0-browser.py']
   source=source.replace("OUT=APP/'qa/strategy-completion/browser'","OUT=Path("+repr(str(out/'strategy'))+')')
  elif name.startswith('csoi'):
   source=source.replace("OUT=APP/'qa/csoi'","OUT=Path("+repr(str(out))+')')
- else: source=source.replace("OUT = Path(__file__).resolve().parent / 'e0'","OUT = Path("+repr(str(out))+')')
+ else: source=source.replace("OUT = Path(__file__).resolve().parent / 'live-workspace'","OUT = Path("+repr(str(out/'workspace'))+')')
  source=source.replace("Path('/tmp/atlas-e0')","Path('/tmp/atlas-e0-live-op')")
  exec(compile(source,str(script),'exec'),{'__file__':str(script),'__name__':'__main__'})
  record['browserSuites'].append({'script':name,'scriptSha256':hashlib.sha256(script.read_bytes()).hexdigest(),'status':'PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH'});save()

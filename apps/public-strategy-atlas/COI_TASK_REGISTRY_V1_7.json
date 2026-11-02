@@ -816,10 +816,11 @@
         "remainingGap": "DP、资源/财务/资产计划和年度报告的具体版本、采用日期及受控当前性仍需逐份核验；OP当前性冲突保留 UNKNOWN。",
         "nextPublicAction": "优先复核既有登记DP的版本/日期和CSP→DP→OP明确中介。",
         "sourceAcceptance": "INDEPENDENT_SOURCE_READBACK_PASS",
-        "runtimeAcceptance": "PENDING_FINAL_TESTS",
+        "runtimeAcceptance": "PASS_BOUNDED_OP_APPLICATION_ACCEPTANCE",
         "evidence": [
           "qa/op-completion-20261102/independent/REPORT_ZH.md",
-          "sources/op-completion-review.json"
+          "sources/op-completion-review.json",
+          "qa/op-completion-20261102/acceptance.json"
         ]
       }
     },
@@ -1283,10 +1284,11 @@
         "remainingGap": "其他已登记要求语料仍未全部完成逐条提取/定位/版本核验；人工准入不由程序自行批准。",
         "nextPublicAction": "从登记清单选择下一单份公开原件，明确分母和例外再补齐。",
         "sourceAcceptance": "INDEPENDENT_SOURCE_READBACK_PASS",
-        "runtimeAcceptance": "PENDING_FINAL_TESTS",
+        "runtimeAcceptance": "PASS_BOUNDED_OP_APPLICATION_ACCEPTANCE",
         "evidence": [
           "qa/op-completion-20261102/independent/REPORT_ZH.md",
-          "sources/op-completion-review.json"
+          "sources/op-completion-review.json",
+          "qa/op-completion-20261102/acceptance.json"
         ]
       }
     },
@@ -1413,10 +1415,11 @@
         "remainingGap": "DP中介证据及行动与预算的确切分配依据仍不完整。印刷编号仅证明引用，不能证明实际履约、授权或因果。",
         "nextPublicAction": "逐条核对既有DP原件中的明确OP/CSP对应，不按同名猜资金分摊。",
         "sourceAcceptance": "INDEPENDENT_SOURCE_READBACK_PASS",
-        "runtimeAcceptance": "PENDING_FINAL_TESTS",
+        "runtimeAcceptance": "PASS_BOUNDED_OP_APPLICATION_ACCEPTANCE",
         "evidence": [
           "qa/op-completion-20261102/independent/REPORT_ZH.md",
-          "sources/op-completion-review.json"
+          "sources/op-completion-review.json",
+          "qa/op-completion-20261102/acceptance.json"
         ]
       }
     },
@@ -3527,10 +3530,11 @@
         "remainingGap": "法定主管机关、现行公共政策职责与内部实际授权仍须分开核验；历史OP角色不是当下岗位授权。",
         "nextPublicAction": "逐份公开原件建立法定机关/公共服务职责的类型化来源表。",
         "sourceAcceptance": "INDEPENDENT_SOURCE_READBACK_PASS",
-        "runtimeAcceptance": "PENDING_FINAL_TESTS",
+        "runtimeAcceptance": "PASS_BOUNDED_OP_APPLICATION_ACCEPTANCE",
         "evidence": [
           "qa/op-completion-20261102/independent/REPORT_ZH.md",
-          "sources/op-completion-review.json"
+          "sources/op-completion-review.json",
+          "qa/op-completion-20261102/acceptance.json"
         ]
       }
     },
@@ -4630,10 +4634,11 @@
         "remainingGap": "其他年度预算修订、实际支出报告与原行动的确切归属仍缺。源现金流矛盾未裁定，未把计划当实支。",
         "nextPublicAction": "复用既有登记年度报告核对公开实支和比较口径；不访问私有账簿、不自动修复原件数字。",
         "sourceAcceptance": "INDEPENDENT_SOURCE_READBACK_PASS",
-        "runtimeAcceptance": "PENDING_FINAL_TESTS",
+        "runtimeAcceptance": "PASS_BOUNDED_OP_APPLICATION_ACCEPTANCE",
         "evidence": [
           "qa/op-completion-20261102/independent/REPORT_ZH.md",
-          "sources/op-completion-review.json"
+          "sources/op-completion-review.json",
+          "qa/op-completion-20261102/acceptance.json"
         ]
       }
     },
@@ -4920,10 +4925,11 @@
         "remainingGap": "DP中介及监管工作→资源/预算/实际执行的明确证据链仍未齐备。",
         "nextPublicAction": "复核原登记DP与本OP的来源明确关系，列出断链和无法匹配的目标。",
         "sourceAcceptance": "INDEPENDENT_SOURCE_READBACK_PASS",
-        "runtimeAcceptance": "PENDING_FINAL_TESTS",
+        "runtimeAcceptance": "PASS_BOUNDED_OP_APPLICATION_ACCEPTANCE",
         "evidence": [
           "qa/op-completion-20261102/independent/REPORT_ZH.md",
-          "sources/op-completion-review.json"
+          "sources/op-completion-review.json",
+          "qa/op-completion-20261102/acceptance.json"
         ]
       }
     },
@@ -7764,7 +7770,7 @@
   },
   "latest_op_full_review_batch": {
     "batch": "OP-FULL-REVIEW-20261102",
-    "status": "SOURCE_COMPLETE_FINAL_APPLICATION_ACCEPTANCE_IN_PROGRESS",
+    "status": "SOURCE_AND_APPLICATION_ACCEPTED",
     "sourcePages": 142,
     "sourceUnits": 911,
     "newKnowledgeRecords": 143,

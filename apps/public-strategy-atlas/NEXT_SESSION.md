@@ -1,8 +1,8 @@
-# Current OP /80-task batch — final application acceptance in progress
+# Current OP /80-task batch — local acceptance complete, release verification next
 
 Canonical app remains `apps/public-strategy-atlas`, same PR130/branch. Started at1bd44ea96bf742e63072d866502479ca34d34061; current published Council v4 remains unchanged until this batch passes and is released. Do not mistake lower historical sections for current missing-work claims.
 
-Source review is frozen:142 pages /911 unique units, source bundle345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0.143 appended records yield635 entities /48 assertions /775 revisions+events; exactv4prefix retained. The normal append-cache build passed; full rebuild/native/browser acceptance is running. See `qa/op-completion-20261102/REPORT_ZH.md` and actual logs, not old batch results.
+Source review is frozen:142 pages /911 unique units, source bundle345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0.143 appended records yield635 entities /48 assertions /775 revisions+events; exactv4prefix retained. Normal append cache and full independent registration equivalence passed;49distinct native files and all applicable local browser suites passed. Measured390px snapshot import6.782s and max sampledJSheap391,075,440bytes; physical low-memory phone remains untested. Publication evidence is separate. See `qa/op-completion-20261102/REPORT_ZH.md` and actual logs, not old batch results.
 
 All80 original requirements have individual closure evidence/remaining gaps in `qa/audit-closure-20261102/author/closure-baseline.json`, preserved as pre-OP history. The registry has `closureBaseline` and per-task `closureUpdate`; don't promote legal/actual/private states because source reading is complete. COI023/074 passed bounded software closure with separate root readback; current51VERIFIED/26PARTIAL/3BLOCKED.076 still lacks actual basic screen-reader experience evidence. Private002/031/040 remain deferred and do not block public work.
 

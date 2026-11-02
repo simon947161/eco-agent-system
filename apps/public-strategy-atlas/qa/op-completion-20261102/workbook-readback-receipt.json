@@ -1,16 +1,16 @@
 {
   "format": "csoi-op-review-workbook-readback-1",
   "status": "PASS_WORKBOOK_CONTENT_AND_AUTHOR_PROJECTION_READBACK_ONLY",
-  "createdAt": "2026-11-02T03:24:16.534928+00:00",
+  "createdAt": "2026-11-02T04:16:02.859036+00:00",
   "workbook": "qa/op-completion-20261102/OP与工程验收矩阵.xlsx",
-  "workbookSha256": "sha256:dfd03928f7a3791c3597358e06ef78c30ec4b67951de6a28e317e01a6e5b3476",
+  "workbookSha256": "sha256:523595444a8f55f75670a5508f5e89b52f68c39a2e24a5e8a75b4f4294feea0e",
   "openpyxlVersion": "3.1.5",
   "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
   "inputSha256": {
     "sources/op-completion-review.json": "sha256:345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0",
     "qa/op-completion-20261102/services/services-author.json": "sha256:97b090d6815a474d0fb24b8ce401e54600a616e64a97e42806ecb3c8f608209f",
     "qa/op-completion-20261102/finance/finance-author.json": "sha256:d1c9a1abe6785e4154c96426cb51c8f9c7908248f5de858966fb0f1e1ab2120c",
-    "COI_TASK_REGISTRY_V1_7.json": "sha256:c40adebb0a3971b9e1ef615d6384b4ecf78fc8ddca51d586f8ffe4bddb608be9",
+    "COI_TASK_REGISTRY_V1_7.json": "sha256:0d36efc725402b8fc89944a20361577c3f8b3e5e15e40bdaa2fd687023f08993",
     "qa/op-completion-20261102/independent/initial-source-findings.json": "sha256:eefe711c3ffc27b8ccf6d5f16972f9459dbb7dd9d6fb74a401303c0a78ed6217"
   },
   "sourceCounts": {
@@ -127,9 +127,9 @@
     }
   },
   "registryStateCountsAsRead": {
-    "VERIFIED": 49,
+    "VERIFIED": 51,
     "BLOCKED": 3,
-    "PARTIAL": 28
+    "PARTIAL": 26
   },
   "exactCellsReadBack": 32247,
   "maxSavedCellUtf16Units": 30000,
@@ -146,14 +146,14 @@
       "name": "说明",
       "dataRows": 17,
       "columns": 2,
-      "logicalContentSha256": "sha256:dd0f1eccc5c62fbcb282d98b36080bcbe7ef671da6e7721d774c696b9ba4e48f",
+      "logicalContentSha256": "sha256:ffcc25d68dc6bbfaf4c7b6268391296afa357fd4a20413d71da9cb6eaccffd26",
       "allCellsExactlyReadBack": true
     },
     {
       "name": "输入指纹",
       "dataRows": 5,
       "columns": 3,
-      "logicalContentSha256": "sha256:27214b1de48418cc4489ae415e8b75231094b2c4d46148be0146fa15bf95a679",
+      "logicalContentSha256": "sha256:8cf9d686d19f18e49126e7844592788e012c92285c0988bab6d4c8cbcb966ba9",
       "allCellsExactlyReadBack": true
     },
     {
@@ -202,7 +202,7 @@
       "name": "80原任务",
       "dataRows": 80,
       "columns": 12,
-      "logicalContentSha256": "sha256:130cbec9563534678c6f790efd9903ffa80cdcbe6b1de147a9913587ac18819a",
+      "logicalContentSha256": "sha256:ed164f83aa61d84f794a0f8ff63e03be22a9f0904a13ac3b8f0d8247650f8087",
       "allCellsExactlyReadBack": true
     },
     {

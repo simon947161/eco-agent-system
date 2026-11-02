@@ -12876,5 +12876,12 @@
     "No current-law or actual-execution admission",
     "Source arithmetic discrepancies remain unresolved",
     "Final actual-model projection not reviewed yet"
-  ]
+  ],
+  "financeEvidenceCaptureTiming": {
+    "capturedIntermediateAuthorFileSHA256": "1a0932749a2e8076afe07a42a341230cf52b7b782d32c4e6a8a630214614edfa",
+    "legacyDigestField": "initialAuthoredDigest",
+    "legacyFieldMeaning": "For finance rows this digest identifies the intermediate unit captured while author repairs were underway, not necessarily the first defective unit. Digest values are retained unchanged.",
+    "initialStatusMeaning": "CORRECTION_REQUIRED / initialSemanticStatus records the earlier reported finding, not an assertion that every intermediate snapshot still has that defect.",
+    "detail": "author-findings.json and history-binding-correction.json"
+  }
 }
