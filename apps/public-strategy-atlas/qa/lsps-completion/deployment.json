@@ -1,0 +1,49 @@
+{
+  "status": "PUBLISHED_AND_LIVE_VALIDATED",
+  "at": "2026-11-02T02:22:57.307137+00:00",
+  "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+  "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+  "version": 4,
+  "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_f37c518ead6c8191849c233e8a18366f",
+  "deploymentId": "appgdep_6ae7f3f4ec5c81918e0b10ae3d4c962c",
+  "deploymentStatus": "succeeded",
+  "canonicalApplicationSha": "4abe263be3d383ecf3ac1367ffb462d8fe683035",
+  "sitesSourceSha": "c488e14fcdde671698e826179cf2e3ccd57491e2",
+  "archive": {
+    "sha256": "da56ee8c55fdd8294336459807b2236da7657cad22260def3ab35cb21aa6dbb4",
+    "bytes": 12462080,
+    "fileCount": 49,
+    "sourceExact": true
+  },
+  "platformSavedArchive": {
+    "sha256": "sha256:840aaa1c10a19649a16a635d0203261611192532e3c13740c637a409add6b26f",
+    "bytes": 12462080,
+    "fileCount": 49,
+    "note": "Saved archive metadata is recorded separately; served asset byte matches are the runtime identity check."
+  },
+  "ownerOnlyPolicyUnchanged": true,
+  "waterSiteUnchanged": true,
+  "rollback": {
+    "version": 3,
+    "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_aac9007af8ec8191abe0a2e08ee7cf3f",
+    "sourceSha": "a1330593c3ee3654e51487e0b4d1c50b636055d5",
+    "retainedAfterPublication": true
+  },
+  "ownerSignedInBrowser": "NOT_TESTED_NO_OWNER_SESSION",
+  "liveEvidence": "live/live-validation.json",
+  "accessEvidence": "access-comparison.json",
+  "applicationSource": "Existing PR130 apps/public-strategy-atlas; same application and Site, no merge",
+  "verifiedAt": "2026-11-02T02:35:23.952036+00:00",
+  "liveRuntimeFilesMatched": 48,
+  "liveBrowserSuitesPassed": 5,
+  "anonymousStatuses": [
+    403,
+    403,
+    403
+  ],
+  "network": {
+    "requests": 614,
+    "mutationRequests": [],
+    "externalOrigins": []
+  }
+}

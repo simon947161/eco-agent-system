@@ -1,10 +1,10 @@
-# LSPS historical context — source/runtime accepted; private publication pending
+# LSPS historical context — private Council v4 delivered
 
 Same PR130, branch and Council Site. The118-page official2020LSPS is boundedly reviewed:76page records /512reading units /27map occurrences. Original114records,83implementation actions and18conflicting observations retained;217 reading-context links do not create official relationships. Source bundle e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f. Independent semantic, pixel and original-position readback passed;15 source negatives rejected. See qa/lsps-completion/REPORT_ZH.md and acceptance.json.
 
 45 native test files (complete aggregate plus targeted fixture repair) and6 real Chromium suites passed. Desktop1440/mobile390 opened103new details and512units/27legends. Compact export fixes10MiB overflow without increasing limits; per-page visibility set fixes repeated whole-dataset scans without relaxing checks/timeouts. Final default492entities/48assertions/127legacyitems,632revisions/events; originalv3prefix reconstructable. Dataset sha256:e09600c7ff8f8491c10bc35872fa9c9e4e2a9d1b309c028b2d66696108d2e874.
 
-Publication pending: existing Councilv3 remains live until same owner-only Site update is verified. Keepv3rollback. No other Site changes, merge, private data or permission expansion. Check the final deployment receipt before claiming live acceptance.
+Publication verified: existing owner-only Council Site version4, canonical app4abe263be3d383ecf3ac1367ffb462d8fe683035, Sites sourcec488e14fcdde671698e826179cf2e3ccd57491e2, deploymentappgdep_6ae7f3f4ec5c81918e0b10ae3d4c962c. All48served files match;5live browser suites pass using supported service access;anonymous3paths403. Owner-interactive login NOT_TESTED. WaterSite version/source/deployment/URL/access unchanged. KeepCouncilv3rollback. See qa/lsps-completion/DEPLOYMENT_ZH.md and deployment.json. Later documentation commits do not change deployed runtime. No other Site changes, merge, private data or permission expansion.
 
 Next public research: fullOP plus explicit DP/resource/budget/annual-report evidence. Current legal/geographic applicability and authorised professional review remainUNKNOWN/PENDING. Engineering49VERIFIED/28PARTIAL/3BLOCKED unchanged. PrivateWCOS002/031/040deferred. Original uncommittedPhase2 still inaccessible, not declared lost or recovered.
 

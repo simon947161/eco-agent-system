@@ -1,8 +1,8 @@
-Latest source work: **LSPS historical narrative, maps and action conditions** — [Chinese report and readable matrix](qa/lsps-completion/REPORT_ZH.md), [current acceptance record](qa/lsps-completion/acceptance.json). Source reading and runtime/publication acceptance are recorded separately.
+Latest source work: **LSPS historical narrative, maps and action conditions** — [Chinese report and readable matrix](qa/lsps-completion/REPORT_ZH.md), [current acceptance record](qa/lsps-completion/acceptance.json). 45 native files and6 local browser suites pass; [private v4 release evidence](qa/lsps-completion/DEPLOYMENT_ZH.md) records48exact live files and5live browser suites.
 
-Previous delivered batch: **63 CSP indicators independently reviewed and corrected with immutable history**. [Chinese report and Excel](qa/csp-metric-review/REPORT_ZH.md), [44 native /5 browser acceptance](qa/csp-metric-review/acceptance.json). The same owner-private Council Site is updated to version 3; [release evidence](qa/csp-metric-review/DEPLOYMENT_ZH.md) records 46 exact live files and 4 live browser suites.
+Previous delivered batch: **63 CSP indicators independently reviewed and corrected with immutable history**. [Chinese report and Excel](qa/csp-metric-review/REPORT_ZH.md), [44 native /5 browser acceptance](qa/csp-metric-review/acceptance.json). That prior batch was delivered as owner-private Council version3; [release evidence](qa/csp-metric-review/DEPLOYMENT_ZH.md) records 46 exact live files and 4 live browser suites.
 
-Current private trial: [Council source research](https://council-strategy-intelligence.minshu.chatgpt.site/#/research), version 3, owner-only. [Verified release and limits](qa/csp-metric-review/DEPLOYMENT_ZH.md). No GitHub merge; overall system remainsPARTIAL.
+Current private trial: [Council source research](https://council-strategy-intelligence.minshu.chatgpt.site/#/research), version4, owner-only. [Verified release and limits](qa/lsps-completion/DEPLOYMENT_ZH.md). No GitHub merge; overall system remainsPARTIAL.
 
 ## 来源梳理与交付 / source research
 

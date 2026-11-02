@@ -52,3 +52,7 @@ Bombala 新增就业土地是有需要才考虑；Michelago 可以发展为小�
 证据：[原生结果](native-reconciled.json)、[浏览器结果](browser-final.json)、[手机阅读入口](final-reading/csoi-lsps-browser/lsps-progress-390.png)、[手机地图图例](final-reading/csoi-lsps-browser/MAP-114-390.png)。发布状态另见 acceptance.json / DEPLOYMENT_ZH.md，不把本地通过当成上线验证。
 
 后续动态架构地图要求已保存到 [任务书 V1.0](../../docs/COUNCIL_DYNAMIC_ARCHITECTURE_MAP_V1.md) 并关联 NEXT_SESSION。本批不开始新主界面；后续先核对审计基线、提交计划，Founder 看过实际原型并明确批准后才能部署该改造。
+
+## 本批最终交付
+
+原 owner-only Council 站已更新为 **v4**。48个线上文件精确匹配、5组实际线上浏览器检查通过，匿名3路径403，原水文站版本/源码/部署/网址/访问保持不变。完整版本、回退和本人登录未测试限制见 [发布报告](DEPLOYMENT_ZH.md)。这完成本批有界研究交付，整体工程和研究仍 PARTIAL。
