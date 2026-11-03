@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "Public-safe derivative archive; no independent science certification",
+  "counts": [
+    20,
+    10,
+    32
+  ],
+  "secret_and_absolute_path_scan": "PASS_PATTERN_SCAN_NOT_ABSOLUTE_GUARANTEE",
+  "omitted_local_links": [
+    {
+      "document": "CARBONOS_CLIMATEOS_REUSE_PLAN.md",
+      "excluded_reference": "../p0-local-reference/CLIMATEOS_CAPABILITY_RECOVERY_MAP.md"
+    },
+    {
+      "document": "CARBONOS_CLIMATEOS_REUSE_PLAN.md",
+      "excluded_reference": "../p0-local-reference/evidence/core_reuse_tests.json"
+    },
+    {
+      "document": "CARBONOS_CLIMATEOS_REUSE_PLAN.md",
+      "excluded_reference": "evidence/reuse_receipts.json"
+    }
+  ],
+  "browser_receipt": "Prior original HTML offline desktop/mobile checks; no new scientific tests",
+  "review": "PENDING"
+}

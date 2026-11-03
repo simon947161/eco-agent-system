@@ -1,0 +1,33 @@
+variable_id,name,unit_basis,observation_class,candidate_source,source_ids,current_state,admission_warning
+G01,纬度/经度,degree,DIRECT_METADATA,BOM station / official facility geometry,BOM_COOMA;BOM_ROCKHAMPTON,Station known; facility point UNKNOWN,Do not substitute station for facility or infer kinetics
+G02,海拔,m; vertical datum required,DIRECT_METADATA_OR_DERIVED,Station metadata / GA DEM,BOM_COOMA;BOM_ROCKHAMPTON;GA_DEM,930m/10m are station elevations,Elevation not reaction parameter; pressure must be measured/defined
+G03,地形/坡度,degree or m/m; CRS/grid required,DERIVED,DEM-derived topography,GA_DEM,Dataset catalog located; site extraction NOT_DONE,Resolution/datum/engineering surface differ
+G04,土壤类型/质地,class; sand/silt/clay fraction,PROXY_GRID,CSIRO Soil and Landscape Grid,CSIRO_SOIL,Catalog metadata only,Natural mapped soil is not engineered landfill cover
+G05,气候区,versioned category,DERIVED_CLASSIFICATION,BOM climate class map,BOM_CLASS,Site polygon overlay NOT_DONE,Do not assign exact Koppen class by intuition
+G06,流域位置,polygon ID/CRS/version,DERIVED,Saved catchment410033 geometry,LOCAL_HRS,Saved geometry metadata only; facility join UNKNOWN,Gauge catchment is not plant service/discharge boundary
+C01,日平均气温,degC; defined averaging interval,DIRECT_STATION_OR_DERIVED,BOM daily data,BOM_COOMA;BOM_ROCKHAMPTON,No harmonized daily series admitted,(Tmax+Tmin)/2 not automatically measured daily mean
+C02,日最高/最低气温,degC; station day basis,DIRECT_STATION,BOM daily/long-term tables,BOM_COOMA;BOM_ROCKHAMPTON,Monthly mean Tmax/Tmin snapshots captured,Long-term mean extreme is not daily mean or facility processT
+C03,季节温度变化,degC; defined season/year,DERIVED,Harmonized T time series,BOM_COOMA;BOM_ROCKHAMPTON,All-record context only,Southern seasons; common window needed for comparative estimate
+C04,降雨,mm per interval,DIRECT_STATION,BOM gauge,BOM_COOMA;BOM_ROCKHAMPTON,Monthly all-record context captured,Air/gauge rain is proxy for infiltration; runoff/lining differ
+C05,蒸发/蒸散,mm per day; pan/ET0/AET separately,DIRECT_OR_MODEL_PROXY,BOM / saved AWRA metadata,LOCAL_HRS,No matched evaporation series admitted,"Do not interchange pan evaporation, ET0 and actualET"
+C06,相对湿度,percent; air height/time,DIRECT_STATION_PROXY,BOM humidity observations,BOM_COOMA;BOM_ROCKHAMPTON,Station suitability/current data UNKNOWN,AirRH is not landfill water content
+C07,区域土壤水分,m3/m3 or fraction of fullness,MODEL_PROXY,Saved AWRA evidence,LOCAL_HRS,One-cell/month soil evidence only,0.1324 raw fraction is not measured cover moisture
+C08,极端干旱,index/threshold/reference period,DERIVED,Drought/rainfall series,BOM_COOMA;BOM_ROCKHAMPTON,Event classification NOT_DONE,Choose index/version; no methane multiplier
+C09,洪水/淹水,level/mask/duration,DIRECT_OR_DERIVED,Gauge/terrain/site records,LOCAL_HRS;GA_DEM,Facility exposure UNKNOWN,HRS flow cannot prove onsite flooding
+C10,高温事件,degC + duration/baseline,DERIVED,Daily Tmax/Tmin,BOM_COOMA;BOM_ROCKHAMPTON,Not derived from monthly context,Air heatwave not digester-temperature excursion
+C11,气压/风速风向,Pa; m/s; degree,DIRECT_SITE_REQUIRED,Site met station,L_BAI2026;L_KIM2026,UNKNOWN_FOR_CASES,Needed for gas transport/IDM; not just microbial production
+P01,实际塘体/填埋体温度,degC by depth/time,DIRECT_SITE_REQUIRED,Calibrated depth sensors,L_MLA2013;L_LAM2026,UNKNOWN_FOR_CASES,AirT proxy requires transfer validation; stratification/internal heat
+P02,废物组成/DOC/底物,t wet/dry; fraction; tC/twaste,DIRECT_SITE_OR_METHOD_REFERENCE,Load/composition/BMP/method factor,AWT2015_INSTRUMENT;L_CLEEN2015,UNKNOWN_FOR_CASES,Laboratory potential is not realized field generation
+P03,有机负荷/COD/BOD,kg/day; kg/m3; specified basis,DIRECT_SITE_REQUIRED,Flow+lab assays,L_BAI2026;L_POND2014,UNKNOWN_FOR_CASES,COD/BOD/VS/DOC not interchangeable
+P04,过程水分/水位/WFPS,wet mass%; m3/m3; %WFPS; m,DIRECT_SITE_REQUIRED,Site cover/waste/pond sensors,L_LAM2026;L_MLA2013,UNKNOWN_FOR_CASES,Different moisture bases require measured porosity/density
+P05,pH,dimensionless; method/temperature,DIRECT_SITE_REQUIRED,Electrode/assay,L_BAI2026;L_LAM2026,UNKNOWN_FOR_CASES,No natural-soil-grid replacement
+P06,Eh/DO,mV reference electrode; mgO2/L,DIRECT_SITE_REQUIRED,Depth-profile sensors,L_BAI2026,UNKNOWN_FOR_CASES,Redox/oxygen stratification matters; units/reference essential
+P07,HRT/SRT,day,DERIVED_FROM_SITE_DATA,Active volume/flow; sludge/tracer,IPCC19_WW;L_MLA2013,UNKNOWN_FOR_CASES,V/Q is nominalHRT; effectiveHRT and SRT differ
+P08,覆盖层/裂隙/厚度,m; texture; cover integrity,DIRECT_SITE_REQUIRED,Engineering record/inspection,NSW_BIOFILTER2010;L_LAM2026,UNKNOWN_FOR_CASES,Soil map cannot represent engineered cover/HDPE/cracks
+P09,收集系统/抽气/捕集率,m3/time; pressure; fraction,DIRECT_SITE_OR_METHOD_FIXED,Meter/operating record; legal default separately,AWT2015_INSTRUMENT;L_KIM2026,UNKNOWN_FOR_CASES,Collected not destroyed; fixed statutory CE not empirical measurement
+P10,气体CH4/O2/CO2及温压基准,volfraction; dry/wet; standardT/P,DIRECT_SITE_REQUIRED,Gas analyzer/flow meter,AWT2015_INSTRUMENT,UNKNOWN_FOR_CASES,0..1 vs percent; normalize same intervals and conditions
+P11,燃烧状态/销毁/CH4滑漏,operating flag; mass/time; fraction,DIRECT_SITE_REQUIRED,Flare/engine monitoring,AWT2015_INSTRUMENT,UNKNOWN_FOR_CASES,Collectionefficiency CE=0.98 not destructionefficiency
+P12,渗滤液/回流/来水底物,m3/day; kgCOD/day,DIRECT_SITE_REQUIRED,Site records/assays,L_MLA2013;L_KIM2026,UNKNOWN_FOR_CASES,Rain changes substrate and saturation; association is confounded
+P13,甲烷氧化/净地表通量,kgCH4/m2/day; defined footprint,DIRECT_OR_INVERSE_MODEL,Chambers/isotopes/OPL+met,L_BAI2026;L_LAM2026,UNKNOWN_FOR_CASES,Inverse flux is inferred from measurements; no full-site generation identity
+P14,温度响应Ea/Q10/k,J/mol; dimensionless; time^-1,CALIBRATED_MODEL_PARAMETER,Independent site calibration,L_YVON2014;L_LAM2026;L_CLEEN2015,NOT_ADMITTED_FOR_CASES,Latitude/elevation cannot supply these; no universalQ10 default
+P15,排放测量不确定性,interval/distribution; method,DERIVED_WITH_MEASUREMENT,QA+sampling/model errors,L_BAI2026;L_KIM2026,UNKNOWN_FOR_CASES,No invented ±percent; distinguish precision from spatial representativeness
