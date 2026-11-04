@@ -1,0 +1,79 @@
+{
+  "task_id": "CLIMATEOS-BIO-CREDITS-FOUNDATION-002",
+  "result": "PASS",
+  "checks_passed": 16,
+  "checks": [
+    {
+      "name": "source IDs unique",
+      "status": "PASS"
+    },
+    {
+      "name": "download success and failure hashes distinguished",
+      "status": "PASS"
+    },
+    {
+      "name": "all claims traceable including text-only leads",
+      "status": "PASS"
+    },
+    {
+      "name": "November unverified claims not promoted",
+      "status": "PASS"
+    },
+    {
+      "name": "no transaction or ecological outcome admission",
+      "status": "PASS"
+    },
+    {
+      "name": "all workbook sheets, headers and embedded instructions reviewed",
+      "status": "PASS"
+    },
+    {
+      "name": "local Markdown links resolve",
+      "status": "PASS"
+    },
+    {
+      "name": "seven requested reports present",
+      "status": "PASS"
+    },
+    {
+      "name": "report teaching and scientific boundaries",
+      "status": "PASS"
+    },
+    {
+      "name": "13 original byte digests, including unchanged blank workbook",
+      "status": "PASS"
+    },
+    {
+      "name": "native pinned AtlasDomain.validate",
+      "status": "PASS"
+    },
+    {
+      "name": "base digest, immutable revisions and event chain",
+      "status": "PASS"
+    },
+    {
+      "name": "official admission negative rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "dangling endpoint negative rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong endpoint revision negative rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "revision content tamper detected",
+      "status": "PASS"
+    }
+  ],
+  "han_character_count": 6018,
+  "rawVerification": "PASS_13_ORIGINAL_FILES",
+  "contractStatus": "PASS_PINNED_NATIVE_STRUCTURE_AND_INTEGRITY_ONLY",
+  "runtime_import": "NOT_RUN",
+  "browser": "NOT_APPLICABLE_NO_UI_CHANGES",
+  "professional_review": "PENDING",
+  "transaction_verification": "NOT_RUN",
+  "ecological_outcome_verification": "NOT_RUN"
+}

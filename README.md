@@ -279,6 +279,7 @@ python run_simple_check.py
 
 ## Documentation
 
+- [ClimateOS biodiversity credits foundation — Chinese research, evidence and handoff](docs/research/biodiversity-credits/foundation-002/INDEX.md) — proposed admission with explicit legal-version, November-template and AWTM gaps; no trading or deployment.
 - [Roadmap](ROADMAP.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [License](LICENSE)

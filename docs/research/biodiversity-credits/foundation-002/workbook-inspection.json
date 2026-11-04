@@ -1,0 +1,242 @@
+{
+  "sha256": "585d06e14c85dfd9ec8b527647db2e742be5888e51469716198dddf7f4b6891a",
+  "sheets": [
+    {
+      "name": "Credit Wanted Template",
+      "state": "visible",
+      "cells": [
+        {
+          "cell": "A1",
+          "value": "Credit Wanted (Credit Demand) Listing",
+          "formula": null,
+          "style": "14"
+        },
+        {
+          "cell": "A2",
+          "value": "[摘要] 星号字段必填；联系人姓名与联系方式将公开展示。",
+          "formula": null,
+          "style": "17"
+        },
+        {
+          "cell": "G5",
+          "value": "Complete only if listing is for Ecosystem credits",
+          "formula": null,
+          "style": "23"
+        },
+        {
+          "cell": "N5",
+          "value": "Complete only if listing is for Species credits",
+          "formula": null,
+          "style": "21"
+        },
+        {
+          "cell": "Q5",
+          "value": "Complete only if listing is for a business",
+          "formula": null,
+          "style": "21"
+        },
+        {
+          "cell": "A6",
+          "value": "CWXXX\n(for dept use only)",
+          "formula": null,
+          "style": "10"
+        },
+        {
+          "cell": "B6",
+          "value": "Date listed",
+          "formula": null,
+          "style": "10"
+        },
+        {
+          "cell": "C6",
+          "value": "Ecosystem or Species*",
+          "formula": null,
+          "style": "10"
+        },
+        {
+          "cell": "D6",
+          "value": "Number of credits*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "E6",
+          "value": "IBRA Region*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "F6",
+          "value": "IBRA Subregion*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "G6",
+          "value": "PCT ID*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "H6",
+          "value": "Plant Community Type Common Name*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "I6",
+          "value": "Offset Trading Group*",
+          "formula": null,
+          "style": "12"
+        },
+        {
+          "cell": "J6",
+          "value": "Threatened Ecological Community (NSW)",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "K6",
+          "value": "Vegetation Formation",
+          "formula": null,
+          "style": "12"
+        },
+        {
+          "cell": "L6",
+          "value": "Vegetation Class",
+          "formula": null,
+          "style": "12"
+        },
+        {
+          "cell": "M6",
+          "value": "Hollow Bearing Trees* (Y/N)",
+          "formula": null,
+          "style": "13"
+        },
+        {
+          "cell": "N6",
+          "value": "Species ID*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "O6",
+          "value": "Species Scientific Name*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "P6",
+          "value": "Species Common Name*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "Q6",
+          "value": "Business Name*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "R6",
+          "value": "Business Phone*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "S6",
+          "value": "Business Email*",
+          "formula": null,
+          "style": "13"
+        },
+        {
+          "cell": "T6",
+          "value": "Contact First Name*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "U6",
+          "value": "Contact Last Name*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "V6",
+          "value": "Contact Email*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "W6",
+          "value": "Contact Phone*",
+          "formula": null,
+          "style": "11"
+        },
+        {
+          "cell": "X6",
+          "value": "Contact Mobile*",
+          "formula": null,
+          "style": "11"
+        }
+      ],
+      "validations": [],
+      "hidden_rows": [],
+      "hidden_cols": [],
+      "merged": [
+        {
+          "ref": "A1:G1"
+        },
+        {
+          "ref": "A2:G2"
+        },
+        {
+          "ref": "Q5:S5"
+        },
+        {
+          "ref": "G5:M5"
+        },
+        {
+          "ref": "N5:P5"
+        }
+      ],
+      "protection": []
+    },
+    {
+      "name": "Lodgement information",
+      "state": "visible",
+      "cells": [
+        {
+          "cell": "A2",
+          "value": "[摘要] 通过指定邮件渠道登记、重新提交以延长或终止。原件把CW用途误写成credit supply register；主表无expiry字段。未发送。",
+          "formula": null,
+          "style": "4"
+        }
+      ],
+      "validations": [],
+      "hidden_rows": [],
+      "hidden_cols": [],
+      "merged": [],
+      "protection": []
+    }
+  ],
+  "definedNames": [],
+  "external_parts": [],
+  "core_properties": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:title>Credits Wanted (credit demand) template</dc:title><dc:subject></dc:subject><dc:creator>DCCEEW</dc:creator><cp:keywords></cp:keywords><dc:description></dc:description><cp:lastModifiedBy>Web and Digital Comms</cp:lastModifiedBy><cp:revision></cp:revision><dcterms:created xsi:type=\"dcterms:W3CDTF\">2026-03-24T01:46:30Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2026-05-13T03:49:21Z</dcterms:modified><cp:category></cp:category><cp:contentStatus></cp:contentStatus></cp:coreProperties>",
+  "external_relationships": [],
+  "drawing_text": [
+    {
+      "part": "xl/drawings/drawing1.xml",
+      "text": "[摘要] 公开登记册用于支持法定生物多样性信用市场，下载资料限相关用途；个人姓名和联系信息可能公开。可因安全或福祉理由请求限制披露，主管部门按公共利益处理。未联系。"
+    }
+  ],
+  "custom_xml_parts": [
+    "customXml/item1.xml",
+    "customXml/itemProps1.xml",
+    "customXml/item2.xml",
+    "customXml/itemProps2.xml",
+    "customXml/item3.xml",
+    "customXml/itemProps3.xml"
+  ],
+  "transformation": "Structure and short field labels retained; lengthy official instructions paraphrased in Chinese; raw extraction retained locally"
+}

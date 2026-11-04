@@ -1,0 +1,2227 @@
+{
+  "purpose": "UNIMPORTED_RESEARCH_CANDIDATE",
+  "contractCommit": "e3d8f074e0e1ba5e9614c3f4c5a2b973746b2ab7",
+  "baseDataPath": "apps/public-strategy-atlas/atlas-data.js",
+  "domain": {
+    "format": "atlas-domain-1",
+    "algorithmVersion": "atlas-domain-sha256-1",
+    "baseDigest": "sha256:13e765c81f1340918322b1e985da85f2362da3c72e1997804f952865edf365d2",
+    "entities": [
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+          "locator": "§4 Eligibility",
+          "sourceId": "S02",
+          "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:land",
+        "kind": "Area",
+        "label": "土地与资格",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 1,
+          "input": "土地界限/权益",
+          "output": "可评估范围",
+          "actors": "所有者、评估人员、主管部门",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "土地与资格制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S02"
+          ],
+          "claimIds": [
+            "C08",
+            "C09",
+            "C10",
+            "C11"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:111b6b83515fe916558ffab8545a2ccc391a699300920a28c14b4d75523bf66e"
+      },
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+          "locator": "Chapters3–5",
+          "sourceId": "S01",
+          "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:survey",
+        "kind": "Activity",
+        "label": "现场调查",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 2,
+          "input": "调查设计、空间背景",
+          "output": "样方与物种原始数据",
+          "actors": "生态调查团队、认可评估人员",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "现场调查制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S01"
+          ],
+          "claimIds": [
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:f3a4a38d0274800c3a1bcbfe3b3dbac023ca340db5d0a57dd64b7db112a3bfc6"
+      },
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+          "locator": "§4–5",
+          "sourceId": "S01",
+          "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:data",
+        "kind": "SourceArtifact",
+        "label": "生态数据与质控",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 3,
+          "input": "样方/物种/GIS",
+          "output": "可追溯输入",
+          "actors": "调查人员、复核人员",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "生态数据与质控制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S01"
+          ],
+          "claimIds": [
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:db48ab2d33af90e66263f1dcfa2efe340cadb1324709f8a6befb4cacd1651a1d"
+      },
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-calculator-user-guide-240080.pdf",
+          "locator": "Introduction",
+          "sourceId": "S03",
+          "rawDigest": "sha256:aa92d3f32bd0ecafe47a51524fdd00f8bef7d1d706b78b39804811ad21090727"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:assessment",
+        "kind": "ImplementationMechanism",
+        "label": "BAM正式评估",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 4,
+          "input": "经复核调查",
+          "output": "BSSAR、管理计划",
+          "actors": "认可评估人员",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "BAM正式评估制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S03"
+          ],
+          "claimIds": [
+            "C12"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:687a1ce49e73f1bffbbe3cfed79d52afac319657065984d8c9e8638f1d09209d"
+      },
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+          "locator": "§11.6–11.9",
+          "sourceId": "S01",
+          "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:calculation",
+        "kind": "ImplementationMechanism",
+        "label": "预测信用计算",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 5,
+          "input": "VI gain、面积/个体、方法规则",
+          "output": "类别/数量和credit report",
+          "actors": "认可评估人员、部门审查",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "预测信用计算制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S01"
+          ],
+          "claimIds": [
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:6bb3ac09dc252f7203fc48bb29d0a6d5949c366d92a8a80f06c9d9d1965189ac"
+      },
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+          "locator": "§5.5–5.8",
+          "sourceId": "S02",
+          "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:agreement",
+        "kind": "PolicyRequirement",
+        "label": "BSA与产权登记",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 6,
+          "input": "申请、BSSAR、TFD和同意",
+          "output": "协议和登记",
+          "actors": "所有者、部长/代表、LRS",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "BSA与产权登记制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S02"
+          ],
+          "claimIds": [
+            "C08",
+            "C09",
+            "C10",
+            "C11"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:18fb81e35cc387df41f270a72afea398b7b7e06448002e996b0ce7d664a32542"
+      },
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+          "locator": "§5.8; §6.1–6.2",
+          "sourceId": "S02",
+          "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:registry",
+        "kind": "SourceArtifact",
+        "label": "信用发行与登记",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 7,
+          "input": "登记完成与法定记录",
+          "output": "信用状态/持有/retirement记录",
+          "actors": "信用管理方、持有人",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "信用发行与登记制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S02"
+          ],
+          "claimIds": [
+            "C08",
+            "C09",
+            "C10",
+            "C11"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:85ecdf66c0fb4501a090936e8142738ac76dfb7d9690b6d5f27cef4f8359e83b"
+      },
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity-offsets-scheme/clear-and-develop-land/offset-rules",
+          "locator": "Offset rules",
+          "sourceId": "S10",
+          "rawDigest": "sha256:af334f2de8054d35af4ac5dc8666f041b30251d5b7e8a39173e408b9922f62b7"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:market",
+        "kind": "ImplementationMechanism",
+        "label": "供需匹配与交易",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 8,
+          "input": "类别、地域、批准条件",
+          "output": "拟议匹配、转让/付款各自证据",
+          "actors": "买卖双方、Supply Fund或其他渠道",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "供需匹配与交易制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S10"
+          ],
+          "claimIds": [
+            "C19"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:f92bcca0f6c6e75283c730151030ce416f2add538ec72796a8311754df4eb6b5"
+      },
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+          "locator": "§6.3–6.4",
+          "sourceId": "S02",
+          "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:stewardship",
+        "kind": "Activity",
+        "label": "长期管理",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 9,
+          "input": "BSA、资金、行动计划",
+          "output": "行动/合规/年度报告",
+          "actors": "土地所有者、管理机构",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "长期管理制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S02"
+          ],
+          "claimIds": [
+            "C08",
+            "C09",
+            "C10",
+            "C11"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:aeef428e3f6438541440036f6724774f264c5aa40e6ae08a780c9e666ff870b8"
+      },
+      {
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.nsw.gov.au/environment-land-and-water/conservation-on-private-land/resource-library/ecological-monitoring-bsa",
+          "locator": "Repeat data collection",
+          "sourceId": "S11",
+          "rawDigest": "sha256:dcd86c53b976cd70239717e446366dfb6e832b40e02b57f7a289934577fa9488"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Current consolidated law and individual applicability not fully reviewed",
+          "No transaction or ecological outcome admitted",
+          "Independent professional review pending"
+        ],
+        "id": "bio-foundation:monitoring",
+        "kind": "Outcome",
+        "label": "生态结果验证",
+        "data": {
+          "status": "UNKNOWN",
+          "routeOrder": 10,
+          "input": "永久点基线与重复观测",
+          "output": "结果评价及反证；本包无真实结果",
+          "actors": "生态人员、复核人员、土地所有者",
+          "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+          "description": "生态结果验证制度研究节点；非真实项目完成记录",
+          "sourceIds": [
+            "S11"
+          ],
+          "claimIds": [
+            "C20"
+          ],
+          "relatedKnowledgeRoutes": [
+            "Environmental markets (research topic)",
+            "Public policy (research topic)",
+            "Evidence governance (research topic)"
+          ],
+          "officialApproval": false
+        },
+        "revisionId": "sha256:777b3e93cad77dab7fe2f7b6e8419e568e9ad1de42f144eba8d0d4f4ccfb6ca3"
+      }
+    ],
+    "assertions": [
+      {
+        "id": "bio-foundation:link:0",
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+          "locator": "§4 Eligibility",
+          "sourceId": "S02",
+          "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Research navigation, not automatic legal causality or an approved transaction workflow"
+        ],
+        "from": "bio-foundation:land",
+        "to": "bio-foundation:survey",
+        "fromRevisionId": "sha256:111b6b83515fe916558ffab8545a2ccc391a699300920a28c14b4d75523bf66e",
+        "toRevisionId": "sha256:f3a4a38d0274800c3a1bcbfe3b3dbac023ca340db5d0a57dd64b7db112a3bfc6",
+        "predicate": "RESEARCH_CANDIDATE",
+        "method": "biodiversity-foundation-reading-order-1",
+        "issuer": "climateos-research",
+        "reviewer": null,
+        "evidenceRefs": [
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§4 Eligibility",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "Chapters3–5",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          }
+        ],
+        "counterevidenceRefs": [],
+        "revisionId": "sha256:aece2e63e2c2fa9b148bf508ac380f83da720befb495b257dd654a9cc5823faa"
+      },
+      {
+        "id": "bio-foundation:link:1",
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+          "locator": "Chapters3–5",
+          "sourceId": "S01",
+          "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Research navigation, not automatic legal causality or an approved transaction workflow"
+        ],
+        "from": "bio-foundation:survey",
+        "to": "bio-foundation:data",
+        "fromRevisionId": "sha256:f3a4a38d0274800c3a1bcbfe3b3dbac023ca340db5d0a57dd64b7db112a3bfc6",
+        "toRevisionId": "sha256:db48ab2d33af90e66263f1dcfa2efe340cadb1324709f8a6befb4cacd1651a1d",
+        "predicate": "RESEARCH_CANDIDATE",
+        "method": "biodiversity-foundation-reading-order-1",
+        "issuer": "climateos-research",
+        "reviewer": null,
+        "evidenceRefs": [
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "Chapters3–5",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          },
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "§4–5",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          }
+        ],
+        "counterevidenceRefs": [],
+        "revisionId": "sha256:edfbc397c01963d7c74c6476240dd3f1b618a48f10bffee6c584029f7c33f0c7"
+      },
+      {
+        "id": "bio-foundation:link:2",
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+          "locator": "§4–5",
+          "sourceId": "S01",
+          "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Research navigation, not automatic legal causality or an approved transaction workflow"
+        ],
+        "from": "bio-foundation:data",
+        "to": "bio-foundation:assessment",
+        "fromRevisionId": "sha256:db48ab2d33af90e66263f1dcfa2efe340cadb1324709f8a6befb4cacd1651a1d",
+        "toRevisionId": "sha256:687a1ce49e73f1bffbbe3cfed79d52afac319657065984d8c9e8638f1d09209d",
+        "predicate": "RESEARCH_CANDIDATE",
+        "method": "biodiversity-foundation-reading-order-1",
+        "issuer": "climateos-research",
+        "reviewer": null,
+        "evidenceRefs": [
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "§4–5",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          },
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-calculator-user-guide-240080.pdf",
+            "locator": "Introduction",
+            "sourceId": "S03",
+            "rawDigest": "sha256:aa92d3f32bd0ecafe47a51524fdd00f8bef7d1d706b78b39804811ad21090727"
+          }
+        ],
+        "counterevidenceRefs": [],
+        "revisionId": "sha256:e8b83158cfe7d79e3776c171559b427ace5e99cd1acfb75353a8ba230a7c5554"
+      },
+      {
+        "id": "bio-foundation:link:3",
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-calculator-user-guide-240080.pdf",
+          "locator": "Introduction",
+          "sourceId": "S03",
+          "rawDigest": "sha256:aa92d3f32bd0ecafe47a51524fdd00f8bef7d1d706b78b39804811ad21090727"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Research navigation, not automatic legal causality or an approved transaction workflow"
+        ],
+        "from": "bio-foundation:assessment",
+        "to": "bio-foundation:calculation",
+        "fromRevisionId": "sha256:687a1ce49e73f1bffbbe3cfed79d52afac319657065984d8c9e8638f1d09209d",
+        "toRevisionId": "sha256:6bb3ac09dc252f7203fc48bb29d0a6d5949c366d92a8a80f06c9d9d1965189ac",
+        "predicate": "RESEARCH_CANDIDATE",
+        "method": "biodiversity-foundation-reading-order-1",
+        "issuer": "climateos-research",
+        "reviewer": null,
+        "evidenceRefs": [
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-calculator-user-guide-240080.pdf",
+            "locator": "Introduction",
+            "sourceId": "S03",
+            "rawDigest": "sha256:aa92d3f32bd0ecafe47a51524fdd00f8bef7d1d706b78b39804811ad21090727"
+          },
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "§11.6–11.9",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          }
+        ],
+        "counterevidenceRefs": [],
+        "revisionId": "sha256:d13873470d688f19543f553f92cee029f7aa839d2b4e48279fa6393bef8784e9"
+      },
+      {
+        "id": "bio-foundation:link:4",
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+          "locator": "§11.6–11.9",
+          "sourceId": "S01",
+          "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Research navigation, not automatic legal causality or an approved transaction workflow"
+        ],
+        "from": "bio-foundation:calculation",
+        "to": "bio-foundation:agreement",
+        "fromRevisionId": "sha256:6bb3ac09dc252f7203fc48bb29d0a6d5949c366d92a8a80f06c9d9d1965189ac",
+        "toRevisionId": "sha256:18fb81e35cc387df41f270a72afea398b7b7e06448002e996b0ce7d664a32542",
+        "predicate": "RESEARCH_CANDIDATE",
+        "method": "biodiversity-foundation-reading-order-1",
+        "issuer": "climateos-research",
+        "reviewer": null,
+        "evidenceRefs": [
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "§11.6–11.9",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          },
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§5.5–5.8",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          }
+        ],
+        "counterevidenceRefs": [],
+        "revisionId": "sha256:db1e2533187fd6ce1a1996fc407b49ee26864ae7110b7808cf61ce445bc56615"
+      },
+      {
+        "id": "bio-foundation:link:5",
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+          "locator": "§5.5–5.8",
+          "sourceId": "S02",
+          "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Research navigation, not automatic legal causality or an approved transaction workflow"
+        ],
+        "from": "bio-foundation:agreement",
+        "to": "bio-foundation:registry",
+        "fromRevisionId": "sha256:18fb81e35cc387df41f270a72afea398b7b7e06448002e996b0ce7d664a32542",
+        "toRevisionId": "sha256:85ecdf66c0fb4501a090936e8142738ac76dfb7d9690b6d5f27cef4f8359e83b",
+        "predicate": "RESEARCH_CANDIDATE",
+        "method": "biodiversity-foundation-reading-order-1",
+        "issuer": "climateos-research",
+        "reviewer": null,
+        "evidenceRefs": [
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§5.5–5.8",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§5.8; §6.1–6.2",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          }
+        ],
+        "counterevidenceRefs": [],
+        "revisionId": "sha256:cb36fda19e639ca6f351f8008e619be2185b925af6d310d1db3c5b529ace8efe"
+      },
+      {
+        "id": "bio-foundation:link:6",
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+          "locator": "§5.8; §6.1–6.2",
+          "sourceId": "S02",
+          "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Research navigation, not automatic legal causality or an approved transaction workflow"
+        ],
+        "from": "bio-foundation:registry",
+        "to": "bio-foundation:market",
+        "fromRevisionId": "sha256:85ecdf66c0fb4501a090936e8142738ac76dfb7d9690b6d5f27cef4f8359e83b",
+        "toRevisionId": "sha256:f92bcca0f6c6e75283c730151030ce416f2add538ec72796a8311754df4eb6b5",
+        "predicate": "RESEARCH_CANDIDATE",
+        "method": "biodiversity-foundation-reading-order-1",
+        "issuer": "climateos-research",
+        "reviewer": null,
+        "evidenceRefs": [
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§5.8; §6.1–6.2",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          {
+            "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity-offsets-scheme/clear-and-develop-land/offset-rules",
+            "locator": "Offset rules",
+            "sourceId": "S10",
+            "rawDigest": "sha256:af334f2de8054d35af4ac5dc8666f041b30251d5b7e8a39173e408b9922f62b7"
+          }
+        ],
+        "counterevidenceRefs": [],
+        "revisionId": "sha256:d5c554ff7534e282c7356e026f02ac5026b9b7256c80e4fd9be119c7ad6df2c8"
+      },
+      {
+        "id": "bio-foundation:link:7",
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity-offsets-scheme/clear-and-develop-land/offset-rules",
+          "locator": "Offset rules",
+          "sourceId": "S10",
+          "rawDigest": "sha256:af334f2de8054d35af4ac5dc8666f041b30251d5b7e8a39173e408b9922f62b7"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Research navigation, not automatic legal causality or an approved transaction workflow"
+        ],
+        "from": "bio-foundation:market",
+        "to": "bio-foundation:stewardship",
+        "fromRevisionId": "sha256:f92bcca0f6c6e75283c730151030ce416f2add538ec72796a8311754df4eb6b5",
+        "toRevisionId": "sha256:aeef428e3f6438541440036f6724774f264c5aa40e6ae08a780c9e666ff870b8",
+        "predicate": "RESEARCH_CANDIDATE",
+        "method": "biodiversity-foundation-reading-order-1",
+        "issuer": "climateos-research",
+        "reviewer": null,
+        "evidenceRefs": [
+          {
+            "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity-offsets-scheme/clear-and-develop-land/offset-rules",
+            "locator": "Offset rules",
+            "sourceId": "S10",
+            "rawDigest": "sha256:af334f2de8054d35af4ac5dc8666f041b30251d5b7e8a39173e408b9922f62b7"
+          },
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§6.3–6.4",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          }
+        ],
+        "counterevidenceRefs": [],
+        "revisionId": "sha256:6c83b7bdb16f3e0d39027a8a47a1de915c8725577a2b4d9dea8c7524ad6ffa27"
+      },
+      {
+        "id": "bio-foundation:link:8",
+        "stationId": "area",
+        "state": "PROPOSED",
+        "classification": "LOCAL_RESEARCH",
+        "admission": "PENDING",
+        "provenance": {
+          "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+          "locator": "§6.3–6.4",
+          "sourceId": "S02",
+          "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+        },
+        "scope": {
+          "region": "NSW",
+          "period": {
+            "from": null,
+            "to": null
+          },
+          "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+        },
+        "gaps": [
+          "Research navigation, not automatic legal causality or an approved transaction workflow"
+        ],
+        "from": "bio-foundation:stewardship",
+        "to": "bio-foundation:monitoring",
+        "fromRevisionId": "sha256:aeef428e3f6438541440036f6724774f264c5aa40e6ae08a780c9e666ff870b8",
+        "toRevisionId": "sha256:777b3e93cad77dab7fe2f7b6e8419e568e9ad1de42f144eba8d0d4f4ccfb6ca3",
+        "predicate": "RESEARCH_CANDIDATE",
+        "method": "biodiversity-foundation-reading-order-1",
+        "issuer": "climateos-research",
+        "reviewer": null,
+        "evidenceRefs": [
+          {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§6.3–6.4",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          {
+            "url": "https://www.nsw.gov.au/environment-land-and-water/conservation-on-private-land/resource-library/ecological-monitoring-bsa",
+            "locator": "Repeat data collection",
+            "sourceId": "S11",
+            "rawDigest": "sha256:dcd86c53b976cd70239717e446366dfb6e832b40e02b57f7a289934577fa9488"
+          }
+        ],
+        "counterevidenceRefs": [],
+        "revisionId": "sha256:38b4fcc903744ac56548d85ab1b42d6a9230c32dc040fb9d62539c2e9cfef0f7"
+      }
+    ],
+    "revisions": [
+      {
+        "id": "sha256:111b6b83515fe916558ffab8545a2ccc391a699300920a28c14b4d75523bf66e",
+        "logicalId": "bio-foundation:land",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§4 Eligibility",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:land",
+          "kind": "Area",
+          "label": "土地与资格",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 1,
+            "input": "土地界限/权益",
+            "output": "可评估范围",
+            "actors": "所有者、评估人员、主管部门",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "土地与资格制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S02"
+            ],
+            "claimIds": [
+              "C08",
+              "C09",
+              "C10",
+              "C11"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:f3a4a38d0274800c3a1bcbfe3b3dbac023ca340db5d0a57dd64b7db112a3bfc6",
+        "logicalId": "bio-foundation:survey",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "Chapters3–5",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:survey",
+          "kind": "Activity",
+          "label": "现场调查",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 2,
+            "input": "调查设计、空间背景",
+            "output": "样方与物种原始数据",
+            "actors": "生态调查团队、认可评估人员",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "现场调查制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S01"
+            ],
+            "claimIds": [
+              "C01",
+              "C02",
+              "C03",
+              "C04",
+              "C05",
+              "C06",
+              "C07"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:db48ab2d33af90e66263f1dcfa2efe340cadb1324709f8a6befb4cacd1651a1d",
+        "logicalId": "bio-foundation:data",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "§4–5",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:data",
+          "kind": "SourceArtifact",
+          "label": "生态数据与质控",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 3,
+            "input": "样方/物种/GIS",
+            "output": "可追溯输入",
+            "actors": "调查人员、复核人员",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "生态数据与质控制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S01"
+            ],
+            "claimIds": [
+              "C01",
+              "C02",
+              "C03",
+              "C04",
+              "C05",
+              "C06",
+              "C07"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:687a1ce49e73f1bffbbe3cfed79d52afac319657065984d8c9e8638f1d09209d",
+        "logicalId": "bio-foundation:assessment",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-calculator-user-guide-240080.pdf",
+            "locator": "Introduction",
+            "sourceId": "S03",
+            "rawDigest": "sha256:aa92d3f32bd0ecafe47a51524fdd00f8bef7d1d706b78b39804811ad21090727"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:assessment",
+          "kind": "ImplementationMechanism",
+          "label": "BAM正式评估",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 4,
+            "input": "经复核调查",
+            "output": "BSSAR、管理计划",
+            "actors": "认可评估人员",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "BAM正式评估制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S03"
+            ],
+            "claimIds": [
+              "C12"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:6bb3ac09dc252f7203fc48bb29d0a6d5949c366d92a8a80f06c9d9d1965189ac",
+        "logicalId": "bio-foundation:calculation",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "§11.6–11.9",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:calculation",
+          "kind": "ImplementationMechanism",
+          "label": "预测信用计算",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 5,
+            "input": "VI gain、面积/个体、方法规则",
+            "output": "类别/数量和credit report",
+            "actors": "认可评估人员、部门审查",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "预测信用计算制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S01"
+            ],
+            "claimIds": [
+              "C01",
+              "C02",
+              "C03",
+              "C04",
+              "C05",
+              "C06",
+              "C07"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:18fb81e35cc387df41f270a72afea398b7b7e06448002e996b0ce7d664a32542",
+        "logicalId": "bio-foundation:agreement",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§5.5–5.8",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:agreement",
+          "kind": "PolicyRequirement",
+          "label": "BSA与产权登记",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 6,
+            "input": "申请、BSSAR、TFD和同意",
+            "output": "协议和登记",
+            "actors": "所有者、部长/代表、LRS",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "BSA与产权登记制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S02"
+            ],
+            "claimIds": [
+              "C08",
+              "C09",
+              "C10",
+              "C11"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:85ecdf66c0fb4501a090936e8142738ac76dfb7d9690b6d5f27cef4f8359e83b",
+        "logicalId": "bio-foundation:registry",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§5.8; §6.1–6.2",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:registry",
+          "kind": "SourceArtifact",
+          "label": "信用发行与登记",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 7,
+            "input": "登记完成与法定记录",
+            "output": "信用状态/持有/retirement记录",
+            "actors": "信用管理方、持有人",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "信用发行与登记制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S02"
+            ],
+            "claimIds": [
+              "C08",
+              "C09",
+              "C10",
+              "C11"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:f92bcca0f6c6e75283c730151030ce416f2add538ec72796a8311754df4eb6b5",
+        "logicalId": "bio-foundation:market",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity-offsets-scheme/clear-and-develop-land/offset-rules",
+            "locator": "Offset rules",
+            "sourceId": "S10",
+            "rawDigest": "sha256:af334f2de8054d35af4ac5dc8666f041b30251d5b7e8a39173e408b9922f62b7"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:market",
+          "kind": "ImplementationMechanism",
+          "label": "供需匹配与交易",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 8,
+            "input": "类别、地域、批准条件",
+            "output": "拟议匹配、转让/付款各自证据",
+            "actors": "买卖双方、Supply Fund或其他渠道",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "供需匹配与交易制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S10"
+            ],
+            "claimIds": [
+              "C19"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:aeef428e3f6438541440036f6724774f264c5aa40e6ae08a780c9e666ff870b8",
+        "logicalId": "bio-foundation:stewardship",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§6.3–6.4",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:stewardship",
+          "kind": "Activity",
+          "label": "长期管理",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 9,
+            "input": "BSA、资金、行动计划",
+            "output": "行动/合规/年度报告",
+            "actors": "土地所有者、管理机构",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "长期管理制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S02"
+            ],
+            "claimIds": [
+              "C08",
+              "C09",
+              "C10",
+              "C11"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:777b3e93cad77dab7fe2f7b6e8419e568e9ad1de42f144eba8d0d4f4ccfb6ca3",
+        "logicalId": "bio-foundation:monitoring",
+        "parentRevision": null,
+        "record": {
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.nsw.gov.au/environment-land-and-water/conservation-on-private-land/resource-library/ecological-monitoring-bsa",
+            "locator": "Repeat data collection",
+            "sourceId": "S11",
+            "rawDigest": "sha256:dcd86c53b976cd70239717e446366dfb6e832b40e02b57f7a289934577fa9488"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Current consolidated law and individual applicability not fully reviewed",
+            "No transaction or ecological outcome admitted",
+            "Independent professional review pending"
+          ],
+          "id": "bio-foundation:monitoring",
+          "kind": "Outcome",
+          "label": "生态结果验证",
+          "data": {
+            "status": "UNKNOWN",
+            "routeOrder": 10,
+            "input": "永久点基线与重复观测",
+            "output": "结果评价及反证；本包无真实结果",
+            "actors": "生态人员、复核人员、土地所有者",
+            "authority": "BC Act/Regulation framework as described by official guidance; current legal text review incomplete",
+            "description": "生态结果验证制度研究节点；非真实项目完成记录",
+            "sourceIds": [
+              "S11"
+            ],
+            "claimIds": [
+              "C20"
+            ],
+            "relatedKnowledgeRoutes": [
+              "Environmental markets (research topic)",
+              "Public policy (research topic)",
+              "Evidence governance (research topic)"
+            ],
+            "officialApproval": false
+          }
+        }
+      },
+      {
+        "id": "sha256:aece2e63e2c2fa9b148bf508ac380f83da720befb495b257dd654a9cc5823faa",
+        "logicalId": "bio-foundation:link:0",
+        "parentRevision": null,
+        "record": {
+          "id": "bio-foundation:link:0",
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§4 Eligibility",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Research navigation, not automatic legal causality or an approved transaction workflow"
+          ],
+          "from": "bio-foundation:land",
+          "to": "bio-foundation:survey",
+          "fromRevisionId": "sha256:111b6b83515fe916558ffab8545a2ccc391a699300920a28c14b4d75523bf66e",
+          "toRevisionId": "sha256:f3a4a38d0274800c3a1bcbfe3b3dbac023ca340db5d0a57dd64b7db112a3bfc6",
+          "predicate": "RESEARCH_CANDIDATE",
+          "method": "biodiversity-foundation-reading-order-1",
+          "issuer": "climateos-research",
+          "reviewer": null,
+          "evidenceRefs": [
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+              "locator": "§4 Eligibility",
+              "sourceId": "S02",
+              "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+            },
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+              "locator": "Chapters3–5",
+              "sourceId": "S01",
+              "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+            }
+          ],
+          "counterevidenceRefs": []
+        }
+      },
+      {
+        "id": "sha256:edfbc397c01963d7c74c6476240dd3f1b618a48f10bffee6c584029f7c33f0c7",
+        "logicalId": "bio-foundation:link:1",
+        "parentRevision": null,
+        "record": {
+          "id": "bio-foundation:link:1",
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "Chapters3–5",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Research navigation, not automatic legal causality or an approved transaction workflow"
+          ],
+          "from": "bio-foundation:survey",
+          "to": "bio-foundation:data",
+          "fromRevisionId": "sha256:f3a4a38d0274800c3a1bcbfe3b3dbac023ca340db5d0a57dd64b7db112a3bfc6",
+          "toRevisionId": "sha256:db48ab2d33af90e66263f1dcfa2efe340cadb1324709f8a6befb4cacd1651a1d",
+          "predicate": "RESEARCH_CANDIDATE",
+          "method": "biodiversity-foundation-reading-order-1",
+          "issuer": "climateos-research",
+          "reviewer": null,
+          "evidenceRefs": [
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+              "locator": "Chapters3–5",
+              "sourceId": "S01",
+              "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+            },
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+              "locator": "§4–5",
+              "sourceId": "S01",
+              "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+            }
+          ],
+          "counterevidenceRefs": []
+        }
+      },
+      {
+        "id": "sha256:e8b83158cfe7d79e3776c171559b427ace5e99cd1acfb75353a8ba230a7c5554",
+        "logicalId": "bio-foundation:link:2",
+        "parentRevision": null,
+        "record": {
+          "id": "bio-foundation:link:2",
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "§4–5",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Research navigation, not automatic legal causality or an approved transaction workflow"
+          ],
+          "from": "bio-foundation:data",
+          "to": "bio-foundation:assessment",
+          "fromRevisionId": "sha256:db48ab2d33af90e66263f1dcfa2efe340cadb1324709f8a6befb4cacd1651a1d",
+          "toRevisionId": "sha256:687a1ce49e73f1bffbbe3cfed79d52afac319657065984d8c9e8638f1d09209d",
+          "predicate": "RESEARCH_CANDIDATE",
+          "method": "biodiversity-foundation-reading-order-1",
+          "issuer": "climateos-research",
+          "reviewer": null,
+          "evidenceRefs": [
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+              "locator": "§4–5",
+              "sourceId": "S01",
+              "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+            },
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-calculator-user-guide-240080.pdf",
+              "locator": "Introduction",
+              "sourceId": "S03",
+              "rawDigest": "sha256:aa92d3f32bd0ecafe47a51524fdd00f8bef7d1d706b78b39804811ad21090727"
+            }
+          ],
+          "counterevidenceRefs": []
+        }
+      },
+      {
+        "id": "sha256:d13873470d688f19543f553f92cee029f7aa839d2b4e48279fa6393bef8784e9",
+        "logicalId": "bio-foundation:link:3",
+        "parentRevision": null,
+        "record": {
+          "id": "bio-foundation:link:3",
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-calculator-user-guide-240080.pdf",
+            "locator": "Introduction",
+            "sourceId": "S03",
+            "rawDigest": "sha256:aa92d3f32bd0ecafe47a51524fdd00f8bef7d1d706b78b39804811ad21090727"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Research navigation, not automatic legal causality or an approved transaction workflow"
+          ],
+          "from": "bio-foundation:assessment",
+          "to": "bio-foundation:calculation",
+          "fromRevisionId": "sha256:687a1ce49e73f1bffbbe3cfed79d52afac319657065984d8c9e8638f1d09209d",
+          "toRevisionId": "sha256:6bb3ac09dc252f7203fc48bb29d0a6d5949c366d92a8a80f06c9d9d1965189ac",
+          "predicate": "RESEARCH_CANDIDATE",
+          "method": "biodiversity-foundation-reading-order-1",
+          "issuer": "climateos-research",
+          "reviewer": null,
+          "evidenceRefs": [
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-calculator-user-guide-240080.pdf",
+              "locator": "Introduction",
+              "sourceId": "S03",
+              "rawDigest": "sha256:aa92d3f32bd0ecafe47a51524fdd00f8bef7d1d706b78b39804811ad21090727"
+            },
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+              "locator": "§11.6–11.9",
+              "sourceId": "S01",
+              "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+            }
+          ],
+          "counterevidenceRefs": []
+        }
+      },
+      {
+        "id": "sha256:db1e2533187fd6ce1a1996fc407b49ee26864ae7110b7808cf61ce445bc56615",
+        "logicalId": "bio-foundation:link:4",
+        "parentRevision": null,
+        "record": {
+          "id": "bio-foundation:link:4",
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+            "locator": "§11.6–11.9",
+            "sourceId": "S01",
+            "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Research navigation, not automatic legal causality or an approved transaction workflow"
+          ],
+          "from": "bio-foundation:calculation",
+          "to": "bio-foundation:agreement",
+          "fromRevisionId": "sha256:6bb3ac09dc252f7203fc48bb29d0a6d5949c366d92a8a80f06c9d9d1965189ac",
+          "toRevisionId": "sha256:18fb81e35cc387df41f270a72afea398b7b7e06448002e996b0ce7d664a32542",
+          "predicate": "RESEARCH_CANDIDATE",
+          "method": "biodiversity-foundation-reading-order-1",
+          "issuer": "climateos-research",
+          "reviewer": null,
+          "evidenceRefs": [
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-assessment-method-2020-200438.pdf",
+              "locator": "§11.6–11.9",
+              "sourceId": "S01",
+              "rawDigest": "sha256:d7ea309c2f6cee5198c64c585af0be8b0bb99f36208387e8c582c6d1f1b0c12d"
+            },
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+              "locator": "§5.5–5.8",
+              "sourceId": "S02",
+              "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+            }
+          ],
+          "counterevidenceRefs": []
+        }
+      },
+      {
+        "id": "sha256:cb36fda19e639ca6f351f8008e619be2185b925af6d310d1db3c5b529ace8efe",
+        "logicalId": "bio-foundation:link:5",
+        "parentRevision": null,
+        "record": {
+          "id": "bio-foundation:link:5",
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§5.5–5.8",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Research navigation, not automatic legal causality or an approved transaction workflow"
+          ],
+          "from": "bio-foundation:agreement",
+          "to": "bio-foundation:registry",
+          "fromRevisionId": "sha256:18fb81e35cc387df41f270a72afea398b7b7e06448002e996b0ce7d664a32542",
+          "toRevisionId": "sha256:85ecdf66c0fb4501a090936e8142738ac76dfb7d9690b6d5f27cef4f8359e83b",
+          "predicate": "RESEARCH_CANDIDATE",
+          "method": "biodiversity-foundation-reading-order-1",
+          "issuer": "climateos-research",
+          "reviewer": null,
+          "evidenceRefs": [
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+              "locator": "§5.5–5.8",
+              "sourceId": "S02",
+              "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+            },
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+              "locator": "§5.8; §6.1–6.2",
+              "sourceId": "S02",
+              "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+            }
+          ],
+          "counterevidenceRefs": []
+        }
+      },
+      {
+        "id": "sha256:d5c554ff7534e282c7356e026f02ac5026b9b7256c80e4fd9be119c7ad6df2c8",
+        "logicalId": "bio-foundation:link:6",
+        "parentRevision": null,
+        "record": {
+          "id": "bio-foundation:link:6",
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§5.8; §6.1–6.2",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Research navigation, not automatic legal causality or an approved transaction workflow"
+          ],
+          "from": "bio-foundation:registry",
+          "to": "bio-foundation:market",
+          "fromRevisionId": "sha256:85ecdf66c0fb4501a090936e8142738ac76dfb7d9690b6d5f27cef4f8359e83b",
+          "toRevisionId": "sha256:f92bcca0f6c6e75283c730151030ce416f2add538ec72796a8311754df4eb6b5",
+          "predicate": "RESEARCH_CANDIDATE",
+          "method": "biodiversity-foundation-reading-order-1",
+          "issuer": "climateos-research",
+          "reviewer": null,
+          "evidenceRefs": [
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+              "locator": "§5.8; §6.1–6.2",
+              "sourceId": "S02",
+              "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+            },
+            {
+              "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity-offsets-scheme/clear-and-develop-land/offset-rules",
+              "locator": "Offset rules",
+              "sourceId": "S10",
+              "rawDigest": "sha256:af334f2de8054d35af4ac5dc8666f041b30251d5b7e8a39173e408b9922f62b7"
+            }
+          ],
+          "counterevidenceRefs": []
+        }
+      },
+      {
+        "id": "sha256:6c83b7bdb16f3e0d39027a8a47a1de915c8725577a2b4d9dea8c7524ad6ffa27",
+        "logicalId": "bio-foundation:link:7",
+        "parentRevision": null,
+        "record": {
+          "id": "bio-foundation:link:7",
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity-offsets-scheme/clear-and-develop-land/offset-rules",
+            "locator": "Offset rules",
+            "sourceId": "S10",
+            "rawDigest": "sha256:af334f2de8054d35af4ac5dc8666f041b30251d5b7e8a39173e408b9922f62b7"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Research navigation, not automatic legal causality or an approved transaction workflow"
+          ],
+          "from": "bio-foundation:market",
+          "to": "bio-foundation:stewardship",
+          "fromRevisionId": "sha256:f92bcca0f6c6e75283c730151030ce416f2add538ec72796a8311754df4eb6b5",
+          "toRevisionId": "sha256:aeef428e3f6438541440036f6724774f264c5aa40e6ae08a780c9e666ff870b8",
+          "predicate": "RESEARCH_CANDIDATE",
+          "method": "biodiversity-foundation-reading-order-1",
+          "issuer": "climateos-research",
+          "reviewer": null,
+          "evidenceRefs": [
+            {
+              "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity-offsets-scheme/clear-and-develop-land/offset-rules",
+              "locator": "Offset rules",
+              "sourceId": "S10",
+              "rawDigest": "sha256:af334f2de8054d35af4ac5dc8666f041b30251d5b7e8a39173e408b9922f62b7"
+            },
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+              "locator": "§6.3–6.4",
+              "sourceId": "S02",
+              "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+            }
+          ],
+          "counterevidenceRefs": []
+        }
+      },
+      {
+        "id": "sha256:38b4fcc903744ac56548d85ab1b42d6a9230c32dc040fb9d62539c2e9cfef0f7",
+        "logicalId": "bio-foundation:link:8",
+        "parentRevision": null,
+        "record": {
+          "id": "bio-foundation:link:8",
+          "stationId": "area",
+          "state": "PROPOSED",
+          "classification": "LOCAL_RESEARCH",
+          "admission": "PENDING",
+          "provenance": {
+            "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+            "locator": "§6.3–6.4",
+            "sourceId": "S02",
+            "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+          },
+          "scope": {
+            "region": "NSW",
+            "period": {
+              "from": null,
+              "to": null
+            },
+            "boundary": "SCHEME_RESEARCH_NOT_PARCEL_APPLICABILITY"
+          },
+          "gaps": [
+            "Research navigation, not automatic legal causality or an approved transaction workflow"
+          ],
+          "from": "bio-foundation:stewardship",
+          "to": "bio-foundation:monitoring",
+          "fromRevisionId": "sha256:aeef428e3f6438541440036f6724774f264c5aa40e6ae08a780c9e666ff870b8",
+          "toRevisionId": "sha256:777b3e93cad77dab7fe2f7b6e8419e568e9ad1de42f144eba8d0d4f4ccfb6ca3",
+          "predicate": "RESEARCH_CANDIDATE",
+          "method": "biodiversity-foundation-reading-order-1",
+          "issuer": "climateos-research",
+          "reviewer": null,
+          "evidenceRefs": [
+            {
+              "url": "https://www.environment.nsw.gov.au/sites/default/files/biodiversity-stewardship-agreement-application-guide-240021.pdf",
+              "locator": "§6.3–6.4",
+              "sourceId": "S02",
+              "rawDigest": "sha256:a5fac425deaa58847ada8c7cfa32c606aa24c5137303b92517c85828fcaed8c4"
+            },
+            {
+              "url": "https://www.nsw.gov.au/environment-land-and-water/conservation-on-private-land/resource-library/ecological-monitoring-bsa",
+              "locator": "Repeat data collection",
+              "sourceId": "S11",
+              "rawDigest": "sha256:dcd86c53b976cd70239717e446366dfb6e832b40e02b57f7a289934577fa9488"
+            }
+          ],
+          "counterevidenceRefs": []
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": "bio-foundation-event-0",
+        "type": "ADD",
+        "objectId": "sha256:111b6b83515fe916558ffab8545a2ccc391a699300920a28c14b4d75523bf66e",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 0,
+        "previousDigest": null,
+        "digest": "sha256:581de379ee7d45cab13a8b98874912d1dd395cdced47774bf2396b6c81922883"
+      },
+      {
+        "id": "bio-foundation-event-1",
+        "type": "ADD",
+        "objectId": "sha256:f3a4a38d0274800c3a1bcbfe3b3dbac023ca340db5d0a57dd64b7db112a3bfc6",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 1,
+        "previousDigest": "sha256:581de379ee7d45cab13a8b98874912d1dd395cdced47774bf2396b6c81922883",
+        "digest": "sha256:4d77f2b386b4e24c78f9d7f39c5dccee3b50f4d17068289b502654d97226ae97"
+      },
+      {
+        "id": "bio-foundation-event-2",
+        "type": "ADD",
+        "objectId": "sha256:db48ab2d33af90e66263f1dcfa2efe340cadb1324709f8a6befb4cacd1651a1d",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 2,
+        "previousDigest": "sha256:4d77f2b386b4e24c78f9d7f39c5dccee3b50f4d17068289b502654d97226ae97",
+        "digest": "sha256:2113df992f7e65bae8fe5fdc117ef2cf00212fbd8f443c0a05996149338920fe"
+      },
+      {
+        "id": "bio-foundation-event-3",
+        "type": "ADD",
+        "objectId": "sha256:687a1ce49e73f1bffbbe3cfed79d52afac319657065984d8c9e8638f1d09209d",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 3,
+        "previousDigest": "sha256:2113df992f7e65bae8fe5fdc117ef2cf00212fbd8f443c0a05996149338920fe",
+        "digest": "sha256:378b6179769e105a670ca7f5fa2b43151441a929593f1f71e79ed984169d7235"
+      },
+      {
+        "id": "bio-foundation-event-4",
+        "type": "ADD",
+        "objectId": "sha256:6bb3ac09dc252f7203fc48bb29d0a6d5949c366d92a8a80f06c9d9d1965189ac",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 4,
+        "previousDigest": "sha256:378b6179769e105a670ca7f5fa2b43151441a929593f1f71e79ed984169d7235",
+        "digest": "sha256:1cce43c6137edf0356d8187a99642f080f2c5d17df2a9fa2b28433071b749e60"
+      },
+      {
+        "id": "bio-foundation-event-5",
+        "type": "ADD",
+        "objectId": "sha256:18fb81e35cc387df41f270a72afea398b7b7e06448002e996b0ce7d664a32542",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 5,
+        "previousDigest": "sha256:1cce43c6137edf0356d8187a99642f080f2c5d17df2a9fa2b28433071b749e60",
+        "digest": "sha256:e7e51249b22a521dddd05568604e762ee2c6c42889859328f2898d0f42f35143"
+      },
+      {
+        "id": "bio-foundation-event-6",
+        "type": "ADD",
+        "objectId": "sha256:85ecdf66c0fb4501a090936e8142738ac76dfb7d9690b6d5f27cef4f8359e83b",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 6,
+        "previousDigest": "sha256:e7e51249b22a521dddd05568604e762ee2c6c42889859328f2898d0f42f35143",
+        "digest": "sha256:5567b7c2338aa44f1f94a084cfe6531174013f6716edf21e7a60d9f42b22bbd9"
+      },
+      {
+        "id": "bio-foundation-event-7",
+        "type": "ADD",
+        "objectId": "sha256:f92bcca0f6c6e75283c730151030ce416f2add538ec72796a8311754df4eb6b5",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 7,
+        "previousDigest": "sha256:5567b7c2338aa44f1f94a084cfe6531174013f6716edf21e7a60d9f42b22bbd9",
+        "digest": "sha256:99836fad691f213b862008d0a49bf1811cc8d1d96058a0ba4b6991f6744d3e0a"
+      },
+      {
+        "id": "bio-foundation-event-8",
+        "type": "ADD",
+        "objectId": "sha256:aeef428e3f6438541440036f6724774f264c5aa40e6ae08a780c9e666ff870b8",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 8,
+        "previousDigest": "sha256:99836fad691f213b862008d0a49bf1811cc8d1d96058a0ba4b6991f6744d3e0a",
+        "digest": "sha256:da79d18eab4ef3c2701ce1888382442f5ec6aa50f020409055cb41bfd684d037"
+      },
+      {
+        "id": "bio-foundation-event-9",
+        "type": "ADD",
+        "objectId": "sha256:777b3e93cad77dab7fe2f7b6e8419e568e9ad1de42f144eba8d0d4f4ccfb6ca3",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 9,
+        "previousDigest": "sha256:da79d18eab4ef3c2701ce1888382442f5ec6aa50f020409055cb41bfd684d037",
+        "digest": "sha256:31a2e02d552f1a0bce9bbb8cd5c83f015fe0ff322e93a5dc8f039b224e8b17a9"
+      },
+      {
+        "id": "bio-foundation-event-10",
+        "type": "ADD",
+        "objectId": "sha256:aece2e63e2c2fa9b148bf508ac380f83da720befb495b257dd654a9cc5823faa",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 10,
+        "previousDigest": "sha256:31a2e02d552f1a0bce9bbb8cd5c83f015fe0ff322e93a5dc8f039b224e8b17a9",
+        "digest": "sha256:36345a72a3b3211d687e2925fc648b98ff8b8c7826f5e12ec8549c0aa50d56bb"
+      },
+      {
+        "id": "bio-foundation-event-11",
+        "type": "ADD",
+        "objectId": "sha256:edfbc397c01963d7c74c6476240dd3f1b618a48f10bffee6c584029f7c33f0c7",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 11,
+        "previousDigest": "sha256:36345a72a3b3211d687e2925fc648b98ff8b8c7826f5e12ec8549c0aa50d56bb",
+        "digest": "sha256:391c42ad0f3e18fd34d7c68f36192047f68d93fc11f6fdda94b09ff692eb1512"
+      },
+      {
+        "id": "bio-foundation-event-12",
+        "type": "ADD",
+        "objectId": "sha256:e8b83158cfe7d79e3776c171559b427ace5e99cd1acfb75353a8ba230a7c5554",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 12,
+        "previousDigest": "sha256:391c42ad0f3e18fd34d7c68f36192047f68d93fc11f6fdda94b09ff692eb1512",
+        "digest": "sha256:728d2944cda01fba7c286808823255cd65d65d2b2d616e411ab670cc9c3bb2d0"
+      },
+      {
+        "id": "bio-foundation-event-13",
+        "type": "ADD",
+        "objectId": "sha256:d13873470d688f19543f553f92cee029f7aa839d2b4e48279fa6393bef8784e9",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 13,
+        "previousDigest": "sha256:728d2944cda01fba7c286808823255cd65d65d2b2d616e411ab670cc9c3bb2d0",
+        "digest": "sha256:19e7300416ad20e3af6b473da008a72770e0c7969a34e9e4db25af71b371224c"
+      },
+      {
+        "id": "bio-foundation-event-14",
+        "type": "ADD",
+        "objectId": "sha256:db1e2533187fd6ce1a1996fc407b49ee26864ae7110b7808cf61ce445bc56615",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 14,
+        "previousDigest": "sha256:19e7300416ad20e3af6b473da008a72770e0c7969a34e9e4db25af71b371224c",
+        "digest": "sha256:33430decc57f4ad70aee2758b432df59634d425f7bd80c90d669b14299730666"
+      },
+      {
+        "id": "bio-foundation-event-15",
+        "type": "ADD",
+        "objectId": "sha256:cb36fda19e639ca6f351f8008e619be2185b925af6d310d1db3c5b529ace8efe",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 15,
+        "previousDigest": "sha256:33430decc57f4ad70aee2758b432df59634d425f7bd80c90d669b14299730666",
+        "digest": "sha256:846a54a76e37d6a7d3361e39bb65d9c0ddf142cb8c9a19ae5558eae4a4207765"
+      },
+      {
+        "id": "bio-foundation-event-16",
+        "type": "ADD",
+        "objectId": "sha256:d5c554ff7534e282c7356e026f02ac5026b9b7256c80e4fd9be119c7ad6df2c8",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 16,
+        "previousDigest": "sha256:846a54a76e37d6a7d3361e39bb65d9c0ddf142cb8c9a19ae5558eae4a4207765",
+        "digest": "sha256:9ce86fa81cdbf2d9894fd508d7ce498e7d6be51526e5e10ecc82bb5c2fe3f705"
+      },
+      {
+        "id": "bio-foundation-event-17",
+        "type": "ADD",
+        "objectId": "sha256:6c83b7bdb16f3e0d39027a8a47a1de915c8725577a2b4d9dea8c7524ad6ffa27",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 17,
+        "previousDigest": "sha256:9ce86fa81cdbf2d9894fd508d7ce498e7d6be51526e5e10ecc82bb5c2fe3f705",
+        "digest": "sha256:d0943d1ad2be9af7529e2225ee68551e06367b88b6948ea415e42671dd4d9f98"
+      },
+      {
+        "id": "bio-foundation-event-18",
+        "type": "ADD",
+        "objectId": "sha256:38b4fcc903744ac56548d85ab1b42d6a9230c32dc040fb9d62539c2e9cfef0f7",
+        "actor": "climateos-research",
+        "reason": "Prepare unadmitted biodiversity foundation candidate",
+        "observedAt": "2026-11-05T00:00:00+11:00",
+        "sequence": 18,
+        "previousDigest": "sha256:d0943d1ad2be9af7529e2225ee68551e06367b88b6948ea415e42671dd4d9f98",
+        "digest": "sha256:ade31da5d0613114b0caa4789c37bfd86d522436357eb30d1a154f21b71d9b4a"
+      }
+    ]
+  }
+}

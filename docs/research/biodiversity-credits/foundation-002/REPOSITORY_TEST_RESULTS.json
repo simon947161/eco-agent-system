@@ -1,0 +1,22 @@
+{
+  "testsRun": 482,
+  "errors": 0,
+  "failures": 0,
+  "skipped": 1,
+  "successful": true,
+  "elapsed_seconds": 12.233,
+  "execution": "approved unsandboxed; isolated workspace temp",
+  "prior_runs": [
+    {
+      "result": "FAILED",
+      "reason": "host temp PermissionError"
+    },
+    {
+      "result": "FAILED",
+      "testsRun": 482,
+      "errors": 150,
+      "failures": 0,
+      "reason": "sandbox temp PermissionError persisted"
+    }
+  ]
+}
