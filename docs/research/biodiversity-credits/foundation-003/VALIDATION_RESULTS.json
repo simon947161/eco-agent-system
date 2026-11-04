@@ -1,0 +1,225 @@
+{
+  "task_id": "CLIMATEOS-BIO-CREDITS-FOUNDATION-003",
+  "result": "PASS",
+  "founder_han_character_count": 4694,
+  "checks": [
+    {
+      "check": "Founder nine required chapters",
+      "result": "PASS"
+    },
+    {
+      "check": "Founder suggested 4000–6000 Han characters",
+      "result": "PASS"
+    },
+    {
+      "check": "Founder teaching example explicitly fictional and no official tool run",
+      "result": "PASS"
+    },
+    {
+      "check": "Founder independent reading: direct legal, scientific and real-case sources",
+      "result": "PASS"
+    },
+    {
+      "check": "28 PR133 claims exactly once in review table",
+      "result": "PASS"
+    },
+    {
+      "check": "four core formula transcriptions and conditions",
+      "result": "PASS"
+    },
+    {
+      "check": "key legal section anchors occur in downloaded official-text copy",
+      "result": "PASS"
+    },
+    {
+      "check": "historical version limits explicit in both reports",
+      "result": "PASS"
+    },
+    {
+      "check": "relative document link EVIDENCE_REGISTER_003.md -> ../foundation-002/BIODIVERSITY_EVIDENCE_REGISTER.md",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 0",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 1",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 2",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 3",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 4",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 5",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 6",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 7",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 8",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 9",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 10",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 11",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 12",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 13",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 14",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 15",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 16",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 17",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 18",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 19",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 20",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 21",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 22",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 23",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 24",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 25",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 26",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 27",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 28",
+      "result": "PASS"
+    },
+    {
+      "check": "https source URL 29",
+      "result": "PASS"
+    },
+    {
+      "check": "relative document link INDEX.md -> FOUNDER_BIODIVERSITY_CREDITS_EXPLAINED_ZH.md",
+      "result": "PASS"
+    },
+    {
+      "check": "relative document link INDEX.md -> SCIENTIFIC_LEGAL_EVIDENCE_REVIEW.md",
+      "result": "PASS"
+    },
+    {
+      "check": "relative document link INDEX.md -> PR133_CLAIM_REVIEW.md",
+      "result": "PASS"
+    },
+    {
+      "check": "relative document link INDEX.md -> EVIDENCE_REGISTER_003.md",
+      "result": "PASS"
+    },
+    {
+      "check": "relative document link INDEX.md -> CRP_HANDOFF.md",
+      "result": "PASS"
+    },
+    {
+      "check": "relative document link INDEX.md -> NEXT_SESSION.md",
+      "result": "PASS"
+    },
+    {
+      "check": "relative document link SCIENTIFIC_LEGAL_EVIDENCE_REVIEW.md -> EVIDENCE_REGISTER_003.md",
+      "result": "PASS"
+    },
+    {
+      "check": "relative document link SCIENTIFIC_LEGAL_EVIDENCE_REVIEW.md -> PR133_CLAIM_REVIEW.md",
+      "result": "PASS"
+    },
+    {
+      "check": "nine original downloads verified independently",
+      "result": "PASS"
+    },
+    {
+      "check": "failed/undownloaded laws and papers have no forged file hash",
+      "result": "PASS"
+    },
+    {
+      "check": "non-PDF response excluded from PDF admission",
+      "result": "PASS"
+    },
+    {
+      "check": "official PDF page counts",
+      "result": "PASS"
+    },
+    {
+      "check": "PR133 foundation002 files unchanged",
+      "result": "PASS"
+    }
+  ],
+  "original_downloads_verified": 9,
+  "PR133_claims_reviewed": 28,
+  "source_access": "bounded; stopped four law PDF403 requests; FAO official-text historical copies used",
+  "formula_visual_QA": "S01 PDF67/68/110; Eq4 baseline visual review and Eq5/6/37 this round",
+  "professional_scientific_or_legal_signoff": "NOT_PERFORMED",
+  "current_law_completeness": "PARTIAL",
+  "independent_case_transaction_audit": "NOT_PERFORMED",
+  "ecological_outcome_causal_verification": "NOT_PERFORMED",
+  "application_tests": "NOT_RERUN_DOCUMENT_ONLY; previous482 results not relabelled",
+  "browser": "NOT_APPLICABLE_NO_UI_CHANGES"
+}
