@@ -1,0 +1,43 @@
+{
+  "observation_files": [],
+  "original_observation_bytes_obtained": false,
+  "metadata_files": [
+    {
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.g4f4qrg1x",
+      "final_url": "https://datadryad.org/dataset/doi:10.5061/dryad.g4f4qrg1x",
+      "utc": "2026-11-04T20:30:31.773529+00:00",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "filename": "ny-landing.html",
+      "size": 40088,
+      "sha256": "6ccdfca93a7a01a81c87394ee24b806be1a1f5beb3fe5785b826d3bf7196aeda",
+      "kind": "PROVIDER_LANDING_HTML_NOT_OBSERVATION_DATA",
+      "readonly": true
+    }
+  ],
+  "local_raw_directory": ".local/d3-data-admission (workspace root, outside repository)",
+  "raw_data_hashes": {
+    "C1_NY": null,
+    "C2_VIC": null,
+    "C3_EGYPT": null
+  },
+  "licence_records": [
+    {
+      "candidate": "C1_NY",
+      "licence": "CC0-1.0",
+      "evidence": "Dataset JSON-LD in locally retained ny-landing.html"
+    },
+    {
+      "candidate": "C2_VIC",
+      "licence": "UNKNOWN_FOR_RAW_DATA",
+      "evidence": "Article openness does not establish data licence"
+    },
+    {
+      "candidate": "C3_EGYPT",
+      "licence": "CC-BY-4.0_METADATA_VERIFIED",
+      "evidence": "Official page read by web tool; original-page retrieval403"
+    }
+  ],
+  "redistribution": "No provider data or page bodies committed. Authored metadata/notes and receipts only; NY local page retained read-only. CC0/CC-BY rights do not imply successful retrieval.",
+  "not_a_raw_dataset_hash": "The single SHA belongs to HTML metadata only. SHA256SUMS.txt covers authored report files only."
+}

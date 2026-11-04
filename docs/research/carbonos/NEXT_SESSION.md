@@ -1,5 +1,7 @@
 # Current research handoff
 
-Latest: [Batch D](batch-d/NEXT_SESSION.md), responding to Founder directive #6627476759 and C2 review #6627278919. Read the [review package](batch-d/README.md), [comparison protocol](batch-d/D4_FALSIFICATION_PROTOCOL.md), [data readiness](batch-d/DATA_READINESS.json) and [12-page Slides](batch-d/index.html).
+Latest: [D3 admission](batch-d3/NEXT_SESSION.md), task CARBONOS-D3-DATA-ADMISSION-001; Founder #6641339661 and Batch D review #6640903352. [Report](batch-d3/README.md) · [Failures](batch-d3/FAILURES_AND_STOPS.json) · [12-page Slides](batch-d3/index.html).
 
-Research design only. AWT legal credits NOT_COMPARABLE to site flux; full A/B/C DATA_NOT_READY; C advantage INSUFFICIENT_EVIDENCE. P1-A science PENDING; PR132 Draft. No model/calculator/emissions, merge or deployment. Seek ChatGPT review and Founder decision before any numeric experiment. Prior P1A through C2 preserved.
+DATA_NOT_READY: three candidates inspected; raw observation files0. NY documented download403; Victoria data on request only; Egypt primary-page retrieval403. No repeat of known blocked URLs. Only provider metadata HTML retained locally, with separate SHA; not a gas data package.
+
+STOP at candidate cap. Await ChatGPT review and Founder decision; do not automatically expand sources or run D1/D3 numerical work. P1-A science PENDING. PR132 Draft, no merge/deployment/model/experiment. Prior P1-A through Batch D preserved.
