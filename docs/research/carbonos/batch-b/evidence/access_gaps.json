@@ -1,0 +1,25 @@
+{
+  "no_retry": true,
+  "gaps": [
+    {
+      "url": "https://pid.geoscience.gov.au/dataset/ga/151185",
+      "result": "tool inaccessible"
+    },
+    {
+      "url": "https://der.wa.gov.au/",
+      "result": "403"
+    },
+    {
+      "url": "https://www.epa.sa.gov.au/public_register",
+      "result": "403"
+    },
+    {
+      "url": "https://services.accesscanberra.act.gov.au/s/public-registers/epa-registers?registerid=environment-protection-authorisation-search",
+      "result": "JS shell; no facility data"
+    }
+  ],
+  "secondary_ga_metadata": "https://researchdata.edu.au/wastewater-treatment-facilities-wms/4065495",
+  "secondary_ga_not_admitted_as_primary": true,
+  "qld_cautions": "https://www.qld.gov.au/environment/management/licences-permits/public-register/faq",
+  "sa_help": "https://ask.your.epa.sa.gov.au/knowledgebase/article/KA-01117/en-us"
+}
