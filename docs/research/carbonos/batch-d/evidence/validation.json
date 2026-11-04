@@ -1,0 +1,44 @@
+{
+  "status": "LOCAL_VERIFIED_STRUCTURAL_UI_ONLY",
+  "browser_viewport_page_checks": 24,
+  "source_records": 13,
+  "method_entries": 6,
+  "data_entries": 4,
+  "raw_files_acquired": 0,
+  "science": "PENDING",
+  "raw_observation_QC": "NOT_PERFORMED_NO_DATA",
+  "numeric_experiments": false,
+  "preserved_prior_artifacts": [
+    {
+      "folder": "p1a",
+      "tracked_files_checked": 23,
+      "status": "UNCHANGED"
+    },
+    {
+      "folder": "batch-b",
+      "tracked_files_checked": 20,
+      "status": "UNCHANGED"
+    },
+    {
+      "folder": "batch-b2",
+      "tracked_files_checked": 19,
+      "status": "UNCHANGED"
+    },
+    {
+      "folder": "batch-b3",
+      "tracked_files_checked": 17,
+      "status": "UNCHANGED"
+    },
+    {
+      "folder": "batch-c",
+      "tracked_files_checked": 22,
+      "status": "UNCHANGED"
+    },
+    {
+      "folder": "batch-c2",
+      "tracked_files_checked": 20,
+      "status": "UNCHANGED"
+    }
+  ],
+  "scope": "Authored package integrity/navigation only, not scientific validation or CI"
+}

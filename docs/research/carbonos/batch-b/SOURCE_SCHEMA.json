@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Official source catalogue, not facility census",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "source_id",
+      "jurisdiction",
+      "publisher",
+      "title",
+      "canonical_url",
+      "facility_types",
+      "reporting_period",
+      "coverage_limit",
+      "location_representation",
+      "coordinate_accuracy_m",
+      "crs",
+      "identity_key",
+      "operational_status",
+      "throughput_availability",
+      "gas_control_availability",
+      "data_licence",
+      "evidence_tier",
+      "access_status",
+      "checked_date",
+      "facility_records_extracted",
+      "science_admission"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "source_id": {
+        "type": "string"
+      },
+      "jurisdiction": {
+        "type": "string"
+      },
+      "publisher": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "canonical_url": {
+        "type": "string"
+      },
+      "facility_types": {
+        "type": "string"
+      },
+      "reporting_period": {
+        "type": "string"
+      },
+      "coverage_limit": {
+        "type": "string"
+      },
+      "location_representation": {
+        "type": "string"
+      },
+      "coordinate_accuracy_m": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "minimum": 0
+      },
+      "crs": {
+        "type": "string"
+      },
+      "identity_key": {
+        "type": "string"
+      },
+      "operational_status": {
+        "type": "string"
+      },
+      "throughput_availability": {
+        "type": "string"
+      },
+      "gas_control_availability": {
+        "type": "string"
+      },
+      "data_licence": {
+        "type": "string"
+      },
+      "evidence_tier": {
+        "enum": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "access_status": {
+        "type": "string"
+      },
+      "checked_date": {
+        "type": "string"
+      },
+      "facility_records_extracted": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "science_admission": {
+        "enum": [
+          "PENDING"
+        ]
+      }
+    }
+  }
+}

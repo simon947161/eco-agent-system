@@ -1,0 +1,62 @@
+[
+  {
+    "id": "C1",
+    "case": "South vs West Rockhampton",
+    "evidence": "same approval holder/activity but distinct names/addresses and statuses",
+    "decision": "KEEP_SEPARATE; no merge by council name"
+  },
+  {
+    "id": "C2",
+    "case": "South RP1 vs South plant",
+    "evidence": "RP1 is water-release monitoring point",
+    "decision": "LINK_AS_MONITORING_POINT; not extra plant or landfill"
+  },
+  {
+    "id": "C3",
+    "case": "Approval holder vs operator",
+    "evidence": "page identifies approval holder only",
+    "decision": "operator null; do not infer"
+  },
+  {
+    "id": "C4",
+    "case": "63(1e) vs regulatory instrument ID",
+    "evidence": "activity category, not licence number",
+    "decision": "instrument_id null"
+  },
+  {
+    "id": "C5",
+    "case": "2019 status vs 2026 current operation",
+    "evidence": "old page timestamp",
+    "decision": "reported status preserved; current unverified"
+  },
+  {
+    "id": "C6",
+    "case": "GA confidence vs accuracy",
+    "evidence": "ordinal1-5; no metre accuracy",
+    "decision": "no conversion or fabricated precision"
+  },
+  {
+    "id": "C7",
+    "case": "QLD EA access",
+    "evidence": "robot verification page",
+    "decision": "STOPPED"
+  },
+  {
+    "id": "C8",
+    "case": "North Rockhampton detail",
+    "evidence": "web cache miss",
+    "decision": "NO_CANDIDATE_ROW; no retry"
+  },
+  {
+    "id": "C9",
+    "case": "NSW EPA licence scope",
+    "evidence": "restrictive database/modification clauses",
+    "decision": "no extracted NSW records; no permission requested"
+  },
+  {
+    "id": "C10",
+    "case": "GA metadata dates/distribution",
+    "evidence": "2024 header vs2026 resource; Metadata_Template distribution",
+    "decision": "not a verified raw facility endpoint"
+  }
+]

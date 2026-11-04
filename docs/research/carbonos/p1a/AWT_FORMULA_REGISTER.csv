@@ -1,0 +1,21 @@
+equation,section,pdf_page_1based,expression_transcription,output_unit,conditions_and_units,climate_role
+1,17,14,A_N = A_0 + A_Acc,tCO2e,当期部分额+已到期且未使用的历史部分额；transitioning含legacy,No direct weather variable
+2,19,15,A_Y = (E_B - E_P) / 7,tCO2e,A0至A6；s19(2)零量/非crediting period归零；s20例外,No direct weather variable
+3,22,16,E_B = (1-W_LFG)*M_B*(1-OF_LF)*GWP_CH4,tCO2e,W_LFG按州及项目类别；百分数须转fraction；OF与GWP引用相应法律版本,State/territory proxy; not a climate response function
+4,23,17,"M_B = sum_w(WM_w*DOC_w*DOC_F,w)*MCF*W_LFG,CH4*F_C_to_CH4",tCH4,DOC等按NGER引用；法定F_C_to_CH4=1.336，不能擅改为16/12,"No k,T,rainfall,Q10 in this equation"
+5,24,18,"WM_w = sum_s((Q_s/EW)*PW*W_s,w), s in {MSW,C&D,C&I}",t,各类eligible量与组分fraction；s24规则决定组分,Composition-based allocation
+6,25,19,PW = EW - (Q_RW + Q_NBP + HW),t,s25(2)负值取零；不能对所有公式泛化clamp,No direct weather variable
+7,26,20,EW = Q_MSW + Q_C&I + Q_C&D,t,eligible废物接收量；不是全部接收量,No direct weather variable
+8,27,20,HW = HQ_EW - (HQ_RW + HQ_NBP),t,相关24个月historical evidence及s27年度换算条件另保留,Historical activity baseline
+9,29,21,E_P = (PW/EW)*(E_F + E_EP) + E_PW,tCO2e,共享燃料/电力分配；EW=0须按方法适用条件停止，不自行除零,No climate multiplier
+10,30,22,"E_F = sum_i sum_j(Q_F,i*EC_i*EF_ij)/1000",tCO2e,燃料量对应t/kL/m3或GJ；若Q为GJ则EC=1；不含本项目生成biogas,Versioned fuel factors
+11,31,22,E_EP = Q_EP*EF_EP/1000,tCO2e,Q_EP kWh；EF kgCO2e/kWh；s31 relevant day，非一律latest,Grid/geography factor; not process temperature
+12,32,23,E_PW = (PW/TPW)*(E_Compost + E_AD + E_Com),tCO2e,TPW为全部putrescible处理量；方法规定范围/分配，不能忽略,No climate multiplier
+13,33,24,TPW = Q_TW - Q_RW - Q_NBP,t,Q_TW全部接收量；与EW eligible量不同,No direct weather variable
+14,34,25,"E_Compost = Q_Compost*EF_Compost,j*(1-RE_Compost)",tCO2e per gas contribution,submethod1；CH4/N2O同一submethod；RE=0.10若biofilter，其他0；气体贡献汇总须追溯,"Method factor, not field climate calibration"
+15,34,25,"E_Compost = DM_Compost,j*(1-RE_Compost)",tCO2e per gas contribution,submethod2须s45直接监测；s34(5)所选submethod持续使用，s46缺测规则除外,Direct measurement can reflect conditions; not added T coefficient
+16,35,26,"E_AD = gamma*((1/CE-1)*sum_h(M_Sent,h) + sum_q(M_Vent,q))",tCO2e,gamma tCO2e/m3CH4标准状态；CE=0.98是collection效率，不是destruction效率,Venting/activity measured; CE fixed by instrument
+17,36,27,"M_Sent,h = Q_BG,h*W_BG,CH4",m3CH4,submethod1：biogas体积与甲烷fraction时间基准一致,Measured gas; no T/rainfall correction
+18,36,27,"M_Sent,h = Q_EG,h*F_MWh_to_GJ/(EE_h*EC_BG)",m3CH4,仅内燃机可选submethod2；Q_EG MWh；F=3.6 GJ/MWh；EE按s36条件,"Device conversion, not latitude/altitude kinetics"
+19,37,28,"M_Vent,q = (MS_BCS + FR_q*t_q)*W_BG,CH4",m3CH4,storage m3；FR m3/day；t whole days；s37 major event规则,"Event measurement, not climate causation"
+20,38,29,"E_Com = sum_h(M_Sent,h)*EC_BG*sum_j(EF_j)/1000",tCO2e,j为CH4/N2O；EC GJ/m3；EF kgCO2e/GJ；s38条款为准,Combustion residual factors

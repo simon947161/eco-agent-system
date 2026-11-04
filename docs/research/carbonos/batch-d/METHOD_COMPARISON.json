@@ -1,0 +1,129 @@
+[
+  {
+    "id": "A_LEGAL",
+    "version": "AWT2015 as-made",
+    "source_ids": [
+      "AWT2015"
+    ],
+    "target": "credited tCO2e",
+    "equations": "ss19/22/23 Eq2/3/4",
+    "dynamic": "statutory allocation; not flux chronology",
+    "data": [
+      "eligible waste",
+      "project emissions",
+      "applicable legal parameter versions"
+    ],
+    "parameters": "frozen P1A register unchanged",
+    "temporal_support": "statutory reporting/crediting",
+    "validation": "historical rule audit only",
+    "comparison_status": "NOT_COMPARABLE",
+    "reason": "counterfactual credit != measured atmospheric CH4"
+  },
+  {
+    "id": "A_FACTOR",
+    "version": "proposed research baseline",
+    "source_ids": [],
+    "target": "matched kgCH4 per interval",
+    "equations": "M=sum EF_i A_i",
+    "dynamic": "depends on cohort/interval definition; no assumed daily skill",
+    "data": [
+      "independent target-compatible EF",
+      "same activity history"
+    ],
+    "parameters": null,
+    "temporal_support": "must match factor's original support",
+    "validation": "blocked independent measured target",
+    "comparison_status": "DATA_NOT_READY",
+    "reason": "No qualified EF selected"
+  },
+  {
+    "id": "B_2006",
+    "version": "IPCC2006 Vol5 Ch3",
+    "source_ids": [
+      "IPCC2006"
+    ],
+    "target": "annual inventory CH4 with boundary bridge required",
+    "equations": "Eq3.1–3.6",
+    "dynamic": "historical stock and exponential decay; climate-category k",
+    "data": [
+      "W history",
+      "DOC",
+      "DOCf",
+      "MCF",
+      "k",
+      "F",
+      "R",
+      "OX"
+    ],
+    "parameters": "source-selected values pending; no numerical assignment",
+    "temporal_support": "annual, explicit delay",
+    "validation": "annual matched independent target; no direct event-peak test",
+    "comparison_status": "DATA_NOT_READY",
+    "reason": "Missing same-site activity and independently supported target"
+  },
+  {
+    "id": "B_2019",
+    "version": "IPCC2019 refinement plus2006",
+    "source_ids": [
+      "IPCC2006",
+      "IPCC2019",
+      "IPCC_MAP"
+    ],
+    "target": "same as B with explicit version mapping",
+    "equations": "Eq3.1–3.6 and revised parameter tables",
+    "dynamic": "FOD retained",
+    "data": [
+      "same B data",
+      "management classification"
+    ],
+    "parameters": "no cross-version mixing",
+    "temporal_support": "annual",
+    "validation": "same holdout as B2006",
+    "comparison_status": "DATA_NOT_READY",
+    "reason": "Inputs unqualified"
+  },
+  {
+    "id": "B_EXISTING_PROCESS",
+    "version": "CALMIM2011 contextual benchmark",
+    "source_ids": [
+      "CALMIM",
+      "CALMIM_PAPER"
+    ],
+    "target": "cover CH4 surface emissions",
+    "equations": "transport/oxidation; full implementation equations not transcribed",
+    "dynamic": "soil microclimate and typical annual weather",
+    "data": [
+      "cover geometry",
+      "soil properties",
+      "gas gradients",
+      "recovery coverage",
+      "weather"
+    ],
+    "parameters": "not imported",
+    "temporal_support": "annual cycle; event applicability unverified",
+    "validation": "original validation limited to its setting; new-site independent test required",
+    "comparison_status": "REVISE",
+    "reason": "Match target and full equations before implementation"
+  },
+  {
+    "id": "C_FAMILY",
+    "version": "proposed D.1",
+    "source_ids": [
+      "KIM2026",
+      "CALMIM"
+    ],
+    "target": "same atmospheric kgCH4 with matched observation operator",
+    "equations": "D2 stocks/flux/temperature/oxidation families",
+    "dynamic": "actual process T/moisture, transport, operations; candidate lags",
+    "data": [
+      "B inputs",
+      "actual process measurements",
+      "capture/oxidation/flux constraints"
+    ],
+    "parameters": null,
+    "temporal_support": "conditional on evidence; monthly first candidate",
+    "validation": "D4 blocked holdout plus independent platform; ablation and negative controls",
+    "comparison_status": "INSUFFICIENT_EVIDENCE",
+    "reason": "No model run or accuracy advantage established"
+  }
+]

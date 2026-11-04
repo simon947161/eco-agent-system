@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "jurisdiction_levels": 9,
+  "unique_source_entries": 20,
+  "facility_records": 0,
+  "source_url_dedup": "PASS",
+  "facility_entity_dedup": "NOT_EXECUTED_NO_RECORDS",
+  "coordinates_accuracy": "UNKNOWN_NULL_PRESERVED",
+  "licence_validation": "PENDING",
+  "p1a_science_admission": "PENDING",
+  "scientific_experiment": false,
+  "browser_viewports": 2,
+  "pages_per_viewport": 10,
+  "source_body_hashes": "NOT_CAPTURED_NOT_CLAIMED",
+  "visual_review": [
+    "mobile-page-1.png"
+  ],
+  "limits": "Source catalogue only; no facility census or numerical model; manual schema fields check, not full JSON Schema engine"
+}

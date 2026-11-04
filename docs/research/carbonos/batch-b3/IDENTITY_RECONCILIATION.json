@@ -1,0 +1,123 @@
+[
+  {
+    "candidate_id": "B2-SOUTH",
+    "name": "South Rockhampton Sewage Treatment Plant",
+    "kind": "sewage_treatment",
+    "prior_record": "../batch-b2/IDENTITY_CANDIDATES.json",
+    "address": "Quay Street, Depot Hill",
+    "address_evidence": "B2 historical WetlandInfo",
+    "historical_status": "Operational",
+    "historical_status_date": "2019-11-14",
+    "current_status": "UNKNOWN",
+    "current_status_verified": false,
+    "official_site_id": null,
+    "permit_id": null,
+    "operator_id": null,
+    "operator_name": null,
+    "latitude": null,
+    "longitude": null,
+    "crs": null,
+    "accuracy_m": null,
+    "approval_holder_historical": "Rockhampton Regional Council",
+    "reported_service_entity": "Fitzroy River Water",
+    "service_role": "maintenance, S1; not legal operator certification",
+    "process_units": [
+      "sewage treatment"
+    ],
+    "monitoring_point": "RP1",
+    "current_evidence": [
+      "S1",
+      "S3",
+      "S4"
+    ],
+    "interpretation": "Official current listing corroborates facility and maintenance; no date-specific operating verification.",
+    "current_methane_management": null,
+    "science_admission": "PENDING",
+    "identity_status": "PARTIAL"
+  },
+  {
+    "candidate_id": "B2-WEST",
+    "name": "West Rockhampton Sewage Treatment Plant",
+    "kind": "sewage_treatment",
+    "prior_record": "../batch-b2/IDENTITY_CANDIDATES.json",
+    "address": "Harman Street, Rockhampton",
+    "address_evidence": "B2 historical WetlandInfo",
+    "historical_status": "Not operational",
+    "historical_status_date": "2019-11-14",
+    "current_status": "UNKNOWN",
+    "current_status_verified": false,
+    "official_site_id": null,
+    "permit_id": null,
+    "operator_id": null,
+    "operator_name": null,
+    "latitude": null,
+    "longitude": null,
+    "crs": null,
+    "accuracy_m": null,
+    "approval_holder_historical": "Rockhampton Regional Council",
+    "reported_service_entity": null,
+    "service_role": null,
+    "process_units": [
+      "sewage treatment"
+    ],
+    "monitoring_point": null,
+    "current_evidence": [
+      "S2",
+      "S3"
+    ],
+    "interpretation": "Historical retirement/diversion evidence aligns with 2019 not-operational report; absence from current list alone does not prove closure.",
+    "current_methane_management": null,
+    "science_admission": "PENDING",
+    "identity_status": "PARTIAL"
+  },
+  {
+    "candidate_id": "B3-LAKES-CREEK",
+    "name": "Lakes Creek Road Waste Management Facility",
+    "kind": "multi_function_site_with_landfill",
+    "prior_record": null,
+    "address": "152 Lakes Creek Road, North Rockhampton (historical address lead)",
+    "address_evidence": "S7; no current parcel verification",
+    "historical_status": "Flare reported running",
+    "historical_status_date": "2020-11-05",
+    "current_status": "UNKNOWN",
+    "current_status_verified": false,
+    "official_site_id": null,
+    "permit_id": null,
+    "operator_id": null,
+    "operator_name": null,
+    "latitude": null,
+    "longitude": null,
+    "crs": null,
+    "accuracy_m": null,
+    "approval_holder_historical": null,
+    "reported_service_entity": "Rockhampton Regional Waste and Recycling / Council",
+    "service_role": "public facility publisher; legal operator unverified",
+    "process_units": [
+      "landfill zones",
+      "waste transfer station",
+      "resource recovery area",
+      "community recycling centre",
+      "reuse shop"
+    ],
+    "monitoring_point": null,
+    "current_evidence": [
+      "S5",
+      "S6",
+      "S7"
+    ],
+    "interpretation": "One site candidate with landfill process, not five landfills. Advertised public opening is not a current regulatory status certificate.",
+    "current_methane_management": null,
+    "methane_historical": {
+      "technology": "gas collection and flare",
+      "source": "S6",
+      "reported_on": "2020-11-05",
+      "installer_reported": "LMS Energy",
+      "current_capture_rate": null,
+      "current_destruction_efficiency": null,
+      "current_leakage": null,
+      "electricity_generation": null
+    },
+    "science_admission": "PENDING",
+    "identity_status": "PARTIAL"
+  }
+]

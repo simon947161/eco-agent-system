@@ -1,0 +1,182 @@
+[
+  {
+    "source_id": "FED_WASTE",
+    "url": "https://www.dcceew.gov.au/environment/protection/publications/waste-resource-recovery-infrastructure-db",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "National historical list; publisher warns outdated; downloads not ingested"
+  },
+  {
+    "source_id": "FED_GA_WW",
+    "url": "https://pid.geoscience.gov.au/dataset/ga/151185",
+    "checked_date": "2026-11-04",
+    "access_status": "PRIMARY_UNAVAILABLE",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Primary landing inaccessible; secondary metadata suggests June2026 revision; not adopted as verified"
+  },
+  {
+    "source_id": "FED_NPR",
+    "url": "https://www.bom.gov.au/water/npr/",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Service-provider reporting, not physical facility census; reporting framework/coverage changes"
+  },
+  {
+    "source_id": "FED_NPI",
+    "url": "https://www.dcceew.gov.au/environment/protection/npi/substances/substance-list-and-thresholds",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Threshold-dependent reporting; neither complete facility nor GHG census"
+  },
+  {
+    "source_id": "NSW_POEO",
+    "url": "https://www.epa.nsw.gov.au/Licensing-and-Regulation/Public-registers",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Licensed/regulatory universe; exemptions and small sites require separate coverage"
+  },
+  {
+    "source_id": "VIC_PERMIT",
+    "url": "https://www.epa.vic.gov.au/public-registers?register=permissions",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Permissions include licences/permits/registrations; pre2021 records separate"
+  },
+  {
+    "source_id": "VIC_MAP",
+    "url": "https://www.environment.vic.gov.au/sustainability/victoria-unearthed/about-the-data/epa-licenced-sites",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Currently licensed sites subset; overlaps permission register"
+  },
+  {
+    "source_id": "QLD_EA",
+    "url": "https://www.apps.des.qld.gov.au/public-register/search/ea.php",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Authority may span activities/locations; historical ERA names differ"
+  },
+  {
+    "source_id": "QLD_STP",
+    "url": "https://wetlandinfo.detsi.qld.gov.au/wetlands/assessment/monitoring/point-source-release/sewage-treatment-facilities/",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Point-source monitoring programme; facility and monitoring-point KML separate"
+  },
+  {
+    "source_id": "QLD_DATA",
+    "url": "https://www.data.qld.gov.au/dataset/environmental-authorities/resource/a9658145-87bd-4258-a689-5aec29d49792",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Same authority family as QLD_EA; do not add counts; Excel long-cell truncation warning"
+  },
+  {
+    "source_id": "WA_GUIDE",
+    "url": "https://www.wa.gov.au/service/environment/environment-information-services/licences-and-works-approvals-prescribed-premises",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Prescribed premises scope; approval to construct does not prove operation"
+  },
+  {
+    "source_id": "WA_SEARCH",
+    "url": "https://der.wa.gov.au/",
+    "checked_date": "2026-11-04",
+    "access_status": "SEARCH_TEXT_DIRECT403_STOPPED",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Official search result identifies licence search; direct403 stopped"
+  },
+  {
+    "source_id": "SA_REGISTER",
+    "url": "https://www.epa.sa.gov.au/public_register",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_HELP_CONFIRMED_REGISTER403_STOPPED",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Official EPA help page confirms licence search; register403 stopped; contents not inspected"
+  },
+  {
+    "source_id": "TAS_MAP",
+    "url": "https://epa.tas.gov.au/business-industry/site-information",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Level2 activities and contaminated sites; filter categories; not universal facility census"
+  },
+  {
+    "source_id": "TAS_WW",
+    "url": "https://epa.tas.gov.au/business-industry/regulation/wastewater/legislative-context-for-wastewater-management",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Local governments regulate below100kL/day and onsite systems; EPA/TasWater coverage not all systems"
+  },
+  {
+    "source_id": "NT_EPL",
+    "url": "https://ntepa.nt.gov.au/your-business/public-registers/licences-and-approvals-register/environment-protection-licences",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Includes transport-only companies; exclude mobile handlers from physical-facility count"
+  },
+  {
+    "source_id": "NT_WDL",
+    "url": "https://ntepa.nt.gov.au/your-business/public-registers/licences-and-approvals-register/waste-discharge-licences",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Sewage subcategory includes utility and remote-community entries; also mining/dredging excluded"
+  },
+  {
+    "source_id": "ACT_EPA",
+    "url": "https://www.accesscanberra.act.gov.au/city-services/environment-protection-authority",
+    "checked_date": "2026-11-04",
+    "access_status": "GUIDANCE_READ_REGISTER_JS_SHELL",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Authorisations and agreements are distinct; linked portal JS shell only"
+  },
+  {
+    "source_id": "ACT_WASTE",
+    "url": "https://www.cityservices.act.gov.au/recycling-and-waste/drop-off",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Public service facilities not all commercial plants; destroyed/replacement MRF and pilot/planned FOGO distinguished"
+  },
+  {
+    "source_id": "ACT_WW",
+    "url": "https://www.iconwater.com.au/Water-education/Water-and-sewerage-system/Sewage-Treatment/Lower-Molonglo-Water-Quality-Control-Centre",
+    "checked_date": "2026-11-04",
+    "access_status": "OFFICIAL_WEB_TEXT",
+    "capture_type": "WEB_RESEARCH_SUMMARY_NOT_RAW_BODY",
+    "raw_body_sha256": null,
+    "observation": "Single official utility facility page; not territory census"
+  }
+]

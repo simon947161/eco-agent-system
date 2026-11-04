@@ -1,0 +1,53 @@
+[
+  {
+    "id": "C1_NY",
+    "publisher": "Dryad",
+    "doi": "10.5061/dryad.g4f4qrg1x",
+    "version": "2026-02-25",
+    "url": "https://datadryad.org/dataset/doi:10.5061/dryad.g4f4qrg1x",
+    "license": "CC0-1.0",
+    "license_evidence": "Dataset JSON-LD in locally retained ny-landing.html",
+    "documented_download_url": "https://datadryad.org/downloads/file_stream/4623494",
+    "filename": "Data.zip",
+    "provider_declared_size": 4214859,
+    "actual_observation_bytes": 0,
+    "method": "Mobile CH4 concentration, two laser instruments; weather supplied from nearby stations",
+    "decision": "REJECTED",
+    "reason": "RAW_DOWNLOAD_HTTP403",
+    "scientific_fitness": "Concentrations are not site emissions; raw time/QC unverified"
+  },
+  {
+    "id": "C2_VIC",
+    "publisher": "Atmospheric Measurement Techniques",
+    "doi": "10.5194/amt-19-5157-2026",
+    "version": "2026 article",
+    "url": "https://amt.copernicus.org/articles/19/5157/2026/",
+    "license": "UNKNOWN_FOR_RAW_DATA",
+    "license_evidence": "Article openness does not establish data licence",
+    "documented_download_url": null,
+    "filename": null,
+    "provider_declared_size": null,
+    "actual_observation_bytes": 0,
+    "method": "Open-path gas observations plus inverse dispersion; not a downloaded original series",
+    "decision": "REJECTED",
+    "reason": "DATA_AVAILABLE_UPON_REQUEST_ONLY",
+    "scientific_fitness": "Lagoon is a separate process from landfill; no author contact authorised"
+  },
+  {
+    "id": "C3_EGYPT",
+    "publisher": "Mendeley Data",
+    "doi": "10.17632/zzs8h8vdnv.1",
+    "version": "v1 published2026-10-20",
+    "url": "https://data.mendeley.com/datasets/zzs8h8vdnv/1",
+    "license": "CC-BY-4.0_METADATA_VERIFIED",
+    "license_evidence": "Official page read by web tool; original-page retrieval403",
+    "documented_download_url": null,
+    "filename": null,
+    "provider_declared_size": null,
+    "actual_observation_bytes": 0,
+    "method": "Satellite retrievals and ERA5 meteorology; not ground gas/weather measurements",
+    "decision": "REJECTED",
+    "reason": "PRIMARY_PAGE_HTTP403_NO_DOCUMENTED_FILE_LINK_ACQUIRED",
+    "scientific_fitness": "ERA5 is reanalysis; plume rate is derived, not independent measured facility flux"
+  }
+]

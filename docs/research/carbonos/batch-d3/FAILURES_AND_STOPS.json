@@ -1,0 +1,44 @@
+{
+  "candidate_limit": 3,
+  "candidates_inspected": 3,
+  "stop": "HARD_STOP_REACHED",
+  "attempts": [
+    {
+      "url": "https://datadryad.org/downloads/file_stream/4623494",
+      "filename": "Data.zip",
+      "retrieval_utc": "2026-11-04T20:30:43.858428+00:00",
+      "documented_by": "ny-landing.html; DOI10.5061/dryad.g4f4qrg1x",
+      "error": "HTTPError",
+      "detail": "HTTP Error 403: Forbidden",
+      "status": 403,
+      "action": "STOP_CANDIDATE_NO_RETRY"
+    },
+    {
+      "candidate": "EGYPT_SATELLITE",
+      "url": "https://data.mendeley.com/datasets/zzs8h8vdnv/1",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "recorded_at_utc": "2026-11-04T20:31:52.916597+00:00",
+      "retrieval_utc": null,
+      "action": "STOP_CANDIDATE_NO_RETRY",
+      "raw_data_sha256": null,
+      "note": "Exact attempt timestamp not captured; recorded_at is receipt-writing time, not invented retrieval time."
+    }
+  ],
+  "non_network_blockers": [
+    {
+      "candidate": "C2_VIC",
+      "locator": "Data availability section",
+      "evidence": "Data is available upon request.",
+      "action": "No contact; no guessed download; stop"
+    }
+  ],
+  "excluded_known_blocked_urls": [
+    "https://datadryad.org/downloads/file_stream/4638376",
+    "https://datadryad.org/downloads/file_stream/4638377"
+  ],
+  "no_retry": true,
+  "no_alternate_endpoints": true,
+  "candidate_count_definition": "Three primary candidate dossiers inspected. Search result discovery is not additional dataset inspection. NJ lead not reopened.",
+  "limit_note": "Web metadata rendering and original HTTP byte retrieval are different layers. No shell/browser/API retry after any403."
+}
