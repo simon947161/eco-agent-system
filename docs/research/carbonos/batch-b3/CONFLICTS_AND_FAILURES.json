@@ -1,0 +1,58 @@
+[
+  {
+    "id": "F1",
+    "type": "ACCESS",
+    "source": "S2",
+    "observation": "403 on direct West article open",
+    "action": "Stopped; search lead remains limited; no retry or authentication bypass"
+  },
+  {
+    "id": "F2",
+    "type": "ACCESS",
+    "source": "S8",
+    "observation": "403 copyright page",
+    "action": "Stopped; broad reuse UNKNOWN; no raw documents redistributed"
+  },
+  {
+    "id": "F3",
+    "type": "PERMIT",
+    "source": "B2 + scoped public search",
+    "observation": "QLD EA challenge already stopped; no matched instrument recovered in this batch",
+    "action": "Keep all permit IDs null; 63(1e) is activity, not permit; unrelated search-result EAs rejected"
+  },
+  {
+    "id": "F4",
+    "type": "GEOMETRY",
+    "source": "S4",
+    "observation": "Project marker -23.4161212, 150.4648389 describes works locality; CRS/accuracy unspecified",
+    "action": "Rejected as South plant location; no geocoding; plant coordinates null"
+  },
+  {
+    "id": "F5",
+    "type": "TEMPORAL",
+    "source": "S2/S3/B2",
+    "observation": "West retirement narrative vs older operational descriptions",
+    "action": "Retain assertion dates; 2026 status UNKNOWN; no unsupported aquaculture conversion"
+  },
+  {
+    "id": "F6",
+    "type": "ENTITY",
+    "source": "S5/S7",
+    "observation": "Co-located processes and building asset IDs can inflate facility counts",
+    "action": "One site candidate; units distinct; no building ID promoted to site ID"
+  },
+  {
+    "id": "F7",
+    "type": "METHANE",
+    "source": "S6",
+    "observation": "2020 commissioning and promotional reduction claim; future power option",
+    "action": "Keep historical technology only; no quantified benefit, present uptime or generation asserted"
+  },
+  {
+    "id": "F8",
+    "type": "COVERAGE",
+    "source": "All",
+    "observation": "Availability-driven Rockhampton sample; Cooma not added",
+    "action": "No representative sample claim, national count or emissions; previous federal/NSW restrictions unchanged"
+  }
+]

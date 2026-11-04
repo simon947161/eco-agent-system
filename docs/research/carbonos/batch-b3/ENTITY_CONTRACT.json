@@ -1,0 +1,11 @@
+{
+  "version": "B3-1",
+  "record_grain": "one local physical-site candidate; not confirmed national asset",
+  "key": "candidate_id persists from B2 and is not official ID",
+  "relationships": "Site has process units; party has role with dated evidence; regulator instrument and monitoring point separate",
+  "null": "UNKNOWN, never zero or absence",
+  "geometry": "Require feature role, CRS, coordinate provenance/date and accuracy before spatial use. Unknown accuracy cannot become metre precision.",
+  "status": "source publication, observation, retrieval and validity times separate; undated listing cannot certify dated operational state",
+  "deduplication": "No merge by party, address proximity or monitoring point alone. Same campus units not separate landfill sites. Confirm official ID/parcel/process before merge.",
+  "evidence_grades": "OFFICIAL_PAGE_SCOPED means official narrative read, not science verification; OFFICIAL_LEAD_LIMITED means excerpt/access-limited; prior B2 historical assertions retain provenance"
+}
