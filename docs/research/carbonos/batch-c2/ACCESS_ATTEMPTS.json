@@ -1,0 +1,58 @@
+[
+  {
+    "id": "A1",
+    "target": "Q6",
+    "route": "web static CDO page",
+    "result": "ENTRY_READ_NO_DAILY_EXPORT",
+    "meaning": "Page existence does not establish record retrieval"
+  },
+  {
+    "id": "A2",
+    "target": "Q6",
+    "route": "in-app hidden browser new tab",
+    "result": "TOOL_TIMEOUT_KERNEL_RESET",
+    "meaning": "No UI state or export acquired; not evidence of authentication denial"
+  },
+  {
+    "id": "A3",
+    "target": "https://www.bom.gov.au/climate/dwo/201901/html/IDCJDW2030.201901.shtml",
+    "route": "Constructed historical DWO URL probe; Cooma DWO mapping unverified",
+    "result": "TOOL_NOT_ACCESSIBLE",
+    "meaning": "Does not prove station records absent; no retry"
+  },
+  {
+    "id": "A4",
+    "target": "https://www.bom.gov.au/climate/dwo/201811/html/IDCJDW4102.201811.shtml",
+    "route": "Historical Rockhampton DWO URL probe",
+    "result": "TOOL_NOT_ACCESSIBLE",
+    "meaning": "No raw row/QC returned; not a verified HTTP403"
+  },
+  {
+    "id": "A5",
+    "target": "https://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=122&p_display_type=dailyDataFile&p_startYear=2019&p_c=-3347750&p_stn_num=070217",
+    "route": "Constructed public CDO query probe; not a captured successful export URL",
+    "result": "TOOL_NOT_ACCESSIBLE",
+    "meaning": "Parameters/result not validated; no source series recovered"
+  },
+  {
+    "id": "A6",
+    "target": "https://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=122&p_display_type=dailyDataFile&p_startYear=2018&p_c=-3347750&p_stn_num=039083",
+    "route": "Constructed public CDO query probe; not a captured successful export URL",
+    "result": "TOOL_NOT_ACCESSIBLE",
+    "meaning": "No flags/completeness inferred; do not iterate parameters or retry"
+  },
+  {
+    "id": "A7",
+    "target": "Q4",
+    "route": "Direct web PDF open",
+    "result": "TOOL_NOT_ACCESSIBLE_SEARCH_EXCERPT_ONLY",
+    "meaning": "Indexed 2024 metadata is not fully inspected current file"
+  },
+  {
+    "id": "A8",
+    "target": "All blocked prior Council/ArcGIS routes",
+    "route": "NOT_ATTEMPTED",
+    "result": "PRIOR_STOPS_PRESERVED",
+    "meaning": "No credentials, paid requests, private Council material or authentication bypass"
+  }
+]
