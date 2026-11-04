@@ -1,0 +1,38 @@
+[
+  {
+    "id": "G1",
+    "source": "F2",
+    "status": "403_STOP",
+    "action": "No retry; use separately discovered public licence PDF only, not bypassed landing page"
+  },
+  {
+    "id": "G2",
+    "source": "C6",
+    "status": "DAILY_EVENT_WINDOW_UNKNOWN",
+    "action": "Monthly rain not storm total; do not attribute all March to Debbie"
+  },
+  {
+    "id": "G3",
+    "source": "All climate records",
+    "status": "DAILY_QC_AND_UTC_UNKNOWN",
+    "action": "Keep labelled intervals, no resampling or UTC invention"
+  },
+  {
+    "id": "G4",
+    "source": "F1 / B3",
+    "status": "CURRENT_IDENTITY_GEOMETRY_GAS_PARTIAL",
+    "action": "Historical licence only; capped follow-up stopped"
+  },
+  {
+    "id": "G5",
+    "source": "C7/C8",
+    "status": "INDEX_SERIES_PARTIAL",
+    "action": "Retrospective qualitative context only; 2016/17 unknown"
+  },
+  {
+    "id": "G6",
+    "source": "All",
+    "status": "RAW_REUSE_UNVERIFIED",
+    "action": "No full documents, images, raw database or private data republished"
+  }
+]

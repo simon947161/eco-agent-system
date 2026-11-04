@@ -1,0 +1,32 @@
+{
+  "preserved_prior_file": "../batch-b3/IDENTITY_RECONCILIATION.json",
+  "preserved_ids": [
+    "B2-SOUTH",
+    "B2-WEST",
+    "B3-LAKES-CREEK"
+  ],
+  "prior_status": "All three remain unchanged PARTIAL; no newly verifiable ID/geometry/gas series found in capped official search. No blocked endpoint retried.",
+  "new_candidate": {
+    "candidate_id": "C-COOMA-LANDFILL",
+    "name": "Cooma Landfill",
+    "address": "8448 Monaro Highway, Cooma NSW 2630",
+    "identity": "PARTIAL",
+    "instrument_id_historical": "6194",
+    "instrument_version": "2017-03-15",
+    "instrument_source": "F1",
+    "licensee_historical": "Snowy Monaro Regional Council",
+    "current_permit_validity": "UNKNOWN",
+    "current_operator": "UNKNOWN",
+    "current_operational_status": "UNKNOWN",
+    "official_site_id": null,
+    "latitude": null,
+    "longitude": null,
+    "crs": null,
+    "accuracy_m": null,
+    "methane_measurements": null,
+    "gas_capture": null,
+    "throughput": null,
+    "science_admission": "PENDING"
+  },
+  "stop": "One bounded Cooma search and licence-text inspection completed. F2 returned 403; stopped. Do not substitute page crawl/upload date for instrument version. No new facility spatial join or current gas claim."
+}

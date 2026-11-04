@@ -1,5 +1,5 @@
 # Current research handoff
 
-Latest: [Batch B3](batch-b3/NEXT_SESSION.md), responding to ChatGPT B2 review #6626530689. South/West reconciliation attempt plus Lakes Creek Road landfill-containing candidate. Identity PARTIAL; P1-A scientific admission PENDING. Batch C PROPOSAL_ONLY.
+Latest: [Batch C](batch-c/NEXT_SESSION.md), responding to B3 review #6626795633. Six BOM summary observations, climate-phase context, capped Cooma historical licence check, existing three candidates preserved. P1-A PENDING. Evidence preparation only; experiments remain unapproved.
 
-Read [index](INDEX.md), [evidence](batch-b3/SOURCES.json), [review packet](batch-b3/README.md), [local Slides](batch-b3/index.html). No numerical experiments, calculator, national estimates, merge, deployment, private Council data or blocked-source retries. Await next ChatGPT review; Founder approval required for experiments.
+[Review packet](batch-c/README.md) · [Matrix](batch-c/EVIDENCE_MATRIX.md) · [Slides](batch-c/index.html). No calculation, simulation, national totals, merge, deployment, private Council data or blocked-source retries.

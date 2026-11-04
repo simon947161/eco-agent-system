@@ -1,0 +1,35 @@
+[
+  {
+    "context_id": "I2019",
+    "source_id": "C7",
+    "kind": "RETROSPECTIVE_OBSERVED_CONTEXT",
+    "issued": "2020-01-09",
+    "ENSO": "Neutral throughout 2019",
+    "IOD": "Positive pattern late May; firmly positive August to year end",
+    "SAM": "Negative late October to late December",
+    "numeric_series": null,
+    "warning": "Seasonal phases are not attached to January heat day; IOD/SAM year-end phase must not be applied throughout year. No emissions multiplier; not a forecast available at event time."
+  },
+  {
+    "context_id": "I2018",
+    "source_id": "C8",
+    "kind": "RETROSPECTIVE_OBSERVED_CONTEXT",
+    "issued": null,
+    "ENSO": "Late-year ocean warming without sustained atmospheric coupling; El Nino not established at year end",
+    "IOD": "Positive early September; decayed early December",
+    "SAM": "Positive late October to late December",
+    "numeric_series": null,
+    "warning": "Broad context, not daily index or proof of local cause. Exact issue date not captured."
+  },
+  {
+    "context_id": "I2016_2017",
+    "source_id": null,
+    "kind": "UNKNOWN",
+    "issued": null,
+    "ENSO": null,
+    "IOD": null,
+    "SAM": null,
+    "numeric_series": null,
+    "warning": "Event-specific observed index series not collected in this bounded batch; no forecast substituted."
+  }
+]
