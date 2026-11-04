@@ -15,4 +15,4 @@
 
 没有UI/运行时修改，浏览器回归不适用。完整Atlas verify/import、sourceCatalogue正式准入、专业科学/法律审查、交易核验及生态结果验证均未执行。测试通过不提升这些状态。
 
-`authored-manifest.json`仅列本目录其他归档文件的SHA，不包含自己，以避免自引用；它不是官方文档哈希或签名。官方原件哈希仅在download-manifest中。
+`authored-manifest.json`仅列本目录其他归档文件在Git index/commit中的确切字节SHA，不包含自己，以避免自引用。Windows工作副本可能是CRLF而Git blob是LF，不能用工作副本换行表示替代已提交字节；原始本地清单的这一问题在提交后回读发现并修正。它不是官方文档哈希或签名。官方原件SHA仅在download-manifest中，始终针对下载原字节，不做换行转换。
