@@ -1,0 +1,56 @@
+[
+  {
+    "id": "FED_WASTE",
+    "url": "https://www.dcceew.gov.au/environment/protection/publications/waste-resource-recovery-infrastructure-db",
+    "licence_url": "https://www.dcceew.gov.au/about/copyright",
+    "licence": "Department default CC BY4; third-party exceptions; workbook-specific terms NOT_VERIFIED",
+    "currency": "nonhazardous2022/hazardous2021",
+    "schema": "workbook not ingested",
+    "crs": null,
+    "accuracy_m": null,
+    "decision": "NO_WORKBOOK_ROWS_REPUBLISHED"
+  },
+  {
+    "id": "FED_GA_WW",
+    "url": "https://www.arcgis.com/sharing/rest/content/items/be5450129ae94d6ab2721f7a5b2ae5ac/info/metadata/metadata.xml?format=default&output=html",
+    "licence": "Metadata says CC BY4; © Commonwealth of Australia (Geoscience Australia)",
+    "currency": "metadata header2024-08-30; resource creation/modification2026-06-30; mismatch retained",
+    "schema": "GlobalID;OBJECTID;FEATURE_NAME;OWNER;OPERATOR;STATUS;FEATURE_SOURCE/DATE;ATTRIBUTE_SOURCE/DATE;LATITUDE;LONGITUDE;SPATIAL CONFIDENCE",
+    "crs": null,
+    "accuracy_m": null,
+    "decision": "METADATA_ONLY; confidence1-5 is ordinal not metres; distribution points at Metadata_Template, not verified actual data endpoint"
+  },
+  {
+    "id": "NSW_POEO",
+    "url": "https://mapprod2.environment.nsw.gov.au/arcgis/rest/services/EPA/Environment_Protection_Licences/MapServer/2",
+    "licence_url": "https://www.epa.nsw.gov.au/About-us/Contact-us/Website-service-standards/copyright",
+    "licence": "EPA educational/noncommercial terms; database/source-code restrictions and modification permission; no blanket open licence inferred",
+    "currency": "VerDate field; actual rows not retrieved",
+    "schema": "OBJECTID;EPL;APName;TradingName;LocationName;Address;Suburb;PrimaryFeebasedActivity;PrimarySchedActivity;LGA;VerDate",
+    "crs": "EPSG:4283",
+    "geometry": "polygon",
+    "accuracy_m": null,
+    "decision": "METADATA_ONLY; no database/geometry republished; empty service copyright not licence"
+  },
+  {
+    "id": "QLD_EA",
+    "url": "https://www.data.qld.gov.au/dataset/environmental-authorities",
+    "licence": "NOT_VERIFIED_THIS_REQUEST",
+    "currency": "NOT_VERIFIED",
+    "schema": "prior Batch B schema only, not refreshed",
+    "crs": null,
+    "accuracy_m": null,
+    "decision": "ROBOT_CHALLENGE_STOPPED_NO_BYPASS"
+  },
+  {
+    "id": "QLD_STP",
+    "url": "https://wetlandinfo.detsi.qld.gov.au/wetlands/assessment/monitoring/point-source-release/sewage-treatment-facilities/",
+    "licence_url": "https://www.detsi.qld.gov.au/help/legal/copyright",
+    "licence": "Department CC BY4 default excluding logos/images/third parties; selected text fields attributed",
+    "currency": "index2016-01-27; sampled pages2019-11-14; access date not data freshness",
+    "schema": "facility name; approval holder; address; status; activity; monitoring points",
+    "crs": null,
+    "accuracy_m": null,
+    "decision": "TWO_SELECTED_PUBLIC_PAGE_CANDIDATES; no numerical coordinates invented"
+  }
+]

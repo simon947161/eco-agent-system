@@ -1,5 +1,7 @@
 # CarbonOS research task index
 
+Current: [Batch B2 licence/coordinate/sample identity review](batch-b2/README.md), 2 QLD candidates; identity PARTIAL, science PENDING. [B2 handoff](batch-b2/NEXT_SESSION.md).
+
 | 阶段 | 工件入口 | 真实状态 |
 |---|---|---|
 | P0 CLIMATEOS-CARBON-RECOVERY-001 | [历史基线说明](p1a/README.md) | 本地历史恢复；原始包未全量公开 |
