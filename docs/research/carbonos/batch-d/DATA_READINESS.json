@@ -1,0 +1,125 @@
+[
+  {
+    "id": "NJ_TOWER",
+    "source_id": "NJ_DATA",
+    "process": "landfill",
+    "priority": 1,
+    "license": "CC0 (Dryad terms)",
+    "availability": "METADATA_READ_RAW_NOT_OBTAINED",
+    "original_files": [
+      "monthly_results.csv",
+      "tower_observations_30s.csv",
+      "temperature_dependence_results.csv",
+      "pressure_dependence_results.csv"
+    ],
+    "raw_sha256": null,
+    "observation_method": "Tower gas concentration and meteorology; monthly CH4 source rate inferred by dispersion",
+    "time_support": "Dataset reports 2.5 years; merged tower30s, T/P native5min; exact retained intervals UNKNOWN",
+    "time_basis": "README UTC; row validation not performed",
+    "geometry": "Tower40.46228,-74.42932 at20m; not source geometry",
+    "quality": "Instrument/filter metadata only; raw flags, exclusions and coverage not checked",
+    "uncertainty": "Monthly posterior bounds described; uncertainty processing revised2026-03-03; not independently verified",
+    "operations": "Waste history, cover/capture changes and independent process T/moisture not established",
+    "target": "Monthly inferred kgCH4/h; CH4/CO2/N2O concentrations are not three measured emission rates",
+    "holdout": "Candidate contiguous later year plus independent aircraft/mobile if provenance verified; dates null",
+    "shared_error_risk": "Meteorology used to infer target can correlate with climate-model inputs; binned temperature products not independent validation",
+    "abc_status": "DATA_NOT_READY",
+    "missing": [
+      "raw bytes/QC",
+      "activity history",
+      "process measurements",
+      "independent flux operator",
+      "A factor"
+    ],
+    "transfer": "No Cooma/Rockhampton substitution"
+  },
+  {
+    "id": "NY_MOBILE",
+    "source_id": "NY_DATA",
+    "process": "landfill",
+    "priority": 2,
+    "license": "CC0 (Dryad terms)",
+    "availability": "METADATA_READ_DOWNLOAD_NOT_ATTEMPTED",
+    "original_files": [
+      "Data.zip",
+      "README.md"
+    ],
+    "raw_sha256": null,
+    "observation_method": "Mobile laser spectroscopy and GPS paired with meteorology",
+    "time_support": "June2021 November2021 July2022 campaigns; gas1s",
+    "time_basis": "Exact timezone/interval interpretation UNKNOWN",
+    "geometry": "Mobile GPS; landfill polygon UNKNOWN until file inspection",
+    "quality": "Calibration/time alignment described; instruments merged and baseline matched, not independent replicates",
+    "uncertainty": "Flux uncertainty UNKNOWN; concentration precision not flux error",
+    "operations": "UNKNOWN",
+    "target": "Concentrations; no established independent time-resolved facility mass target",
+    "holdout": "Whole campaign possible only after target/operator established",
+    "shared_error_risk": "Merged instrument stream and reused weather",
+    "abc_status": "DATA_NOT_READY",
+    "missing": [
+      "flux target",
+      "time/QC bytes",
+      "activity and operations",
+      "A factor"
+    ],
+    "transfer": "No annualization of sparse campaigns"
+  },
+  {
+    "id": "AIR_PLUMES",
+    "source_id": "AIR_DATA",
+    "process": "landfill",
+    "priority": 3,
+    "license": "UNKNOWN_EXTRACTED_RIGHTS_VALUE_EMPTY",
+    "availability": "METADATA_READ_DOWNLOAD_NOT_ATTEMPTED",
+    "original_files": [
+      "Landfill_plume_detections.csv",
+      "landfill plume imagery.zip"
+    ],
+    "raw_sha256": null,
+    "observation_method": "Airborne column enhancement ppm-m and plume masks",
+    "time_support": "Individual overpasses; exact retained dates UNKNOWN",
+    "time_basis": "UNKNOWN",
+    "geometry": "Plume rasters; facility/footprint join NOT_VERIFIED",
+    "quality": "Detection/selection limits and non-detections require original study audit",
+    "uncertainty": "Flux derivation and wind-error covariance NOT_VERIFIED",
+    "operations": "UNKNOWN",
+    "target": "Plume enhancement; may support rate estimates after documented operator audit",
+    "holdout": "Entire independent platform/campaign if matched facility verified",
+    "shared_error_risk": "Wind-dependent inferred emission and detection bias",
+    "abc_status": "DATA_NOT_READY",
+    "missing": [
+      "licence confirmation",
+      "raw/QC/operator",
+      "same-site match",
+      "activity history"
+    ],
+    "transfer": "No national sum; sparse imagery not annual truth"
+  },
+  {
+    "id": "AU_LOCAL",
+    "source_id": "LOCAL_C2",
+    "process": "landfill and wastewater kept separate",
+    "priority": 4,
+    "license": "Individual source licences retained in prior batches",
+    "availability": "PUBLISHED_WEATHER_SUMMARIES_ONLY",
+    "original_files": [],
+    "raw_sha256": null,
+    "observation_method": "No matched facility gas measurements",
+    "time_support": "C2 selected daily weather summaries only",
+    "time_basis": "Raw observation intervals unresolved",
+    "geometry": "Four partial facility candidates; no validated exposure join",
+    "quality": "Raw weather QC NOT_OBTAINED",
+    "uncertainty": "Facility gas UNKNOWN",
+    "operations": "PARTIAL_UNKNOWN",
+    "target": "No independent gas target",
+    "holdout": "NOT_AVAILABLE",
+    "shared_error_risk": "Cannot substitute overseas records",
+    "abc_status": "DATA_NOT_READY",
+    "missing": [
+      "raw weather",
+      "facility identity/footprint",
+      "process and gas series"
+    ],
+    "transfer": "No retries of prior blocked routes"
+  }
+]

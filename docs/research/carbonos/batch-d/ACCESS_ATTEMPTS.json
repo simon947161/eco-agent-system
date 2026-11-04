@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://datadryad.org/downloads/file_stream/4638377",
+    "result": "TOOL_REPORTED_HTTP403",
+    "purpose": "README file",
+    "action": "STOP; inline landing README only; no bypass",
+    "date": "2026-11-04",
+    "raw_sha256": null
+  },
+  {
+    "url": "https://datadryad.org/downloads/file_stream/4638376",
+    "result": "TOOL_REPORTED_HTTP403",
+    "purpose": "monthly results file (same bounded initial request batch)",
+    "action": "STOP; no alternate endpoint or credential",
+    "date": "2026-11-04",
+    "raw_sha256": null
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13173643/",
+    "result": "BROWSER_CHECK_PAGE",
+    "purpose": "article full text",
+    "action": "STOP; search excerpts only",
+    "date": "2026-11-04",
+    "raw_sha256": null
+  },
+  {
+    "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2011JG001741",
+    "result": "TOOL_INACCESSIBLE_NO_CONFIRMED_HTTP_STATUS",
+    "purpose": "CALMIM paper",
+    "action": "STOP; DOI search excerpts and official manual",
+    "date": "2026-11-04",
+    "raw_sha256": null
+  },
+  {
+    "url": "https://www.ars.usda.gov/ARSUserFiles/41695/Reprints/34.pdf",
+    "result": "TOOL_TIMEOUT",
+    "purpose": "oxidation paper",
+    "action": "STOP; official publication metadata only",
+    "date": "2026-11-04",
+    "raw_sha256": null
+  }
+]
