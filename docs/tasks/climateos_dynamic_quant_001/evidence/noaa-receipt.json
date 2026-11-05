@@ -1,0 +1,14 @@
+{
+  "source_id": "NOAA_GHCND_USW00094728",
+  "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094728&startDate=2025-05-01&endDate=2025-05-03&dataTypes=TMAX,TMIN,AWND&format=json&units=metric&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+  "sha256": "0d2d7217aa912df6418c69117b6f1b2bfde6f888ff3a8cf152830f9b630f6bbb",
+  "retrieved_at_utc": "2026-11-04T23:59:29.239552+00:00",
+  "retrieval_timestamp_basis": "local completed-download mtime, not server attestation",
+  "units": "metric",
+  "time_basis": "PROVIDER_OBSERVING_DAY",
+  "data_class": "station_daily_observation",
+  "rights_review": "PUBLIC_RESEARCH_WITH_ATTRIBUTION",
+  "rights_source": "https://www.ncei.noaa.gov/sites/default/files/2023-12/NCEI%20PD-10-2-02%20-%20Open%20Data%20Policy%20Signed.pdf",
+  "rights_scope": "NOAA US station data; US public domain per section4a; no assertion all NCEI third-party holdings CC0; preserve attribution; no endorsement",
+  "quality_note": "TMAX/AWND attributes MFLAG,QFLAG,SFLAG[,TOBS]; nonblank QFLAG rejected; empty QFLAG is not error-free certification"
+}

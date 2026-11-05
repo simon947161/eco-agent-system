@@ -1,0 +1,40 @@
+{
+  "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,WS2M&community=AG&longitude=148.15&latitude=-35.52&start=20250501&end=20250503&format=JSON&time-standard=UTC",
+  "sha256": "8b3fe7b148a49192c45839ded504bc21310de361009befc8a8761e3d2ca1a589",
+  "retrieved_at_utc": "2026-11-04T23:59:28.233033+00:00",
+  "data_class": "gridded_assimilation_product_NOT_STATION",
+  "header": {
+    "title": "NASA/POWER Source Native Resolution Daily Data",
+    "api": {
+      "version": "v2.10.2",
+      "name": "POWER Daily API"
+    },
+    "sources": [
+      "MERRA2",
+      "POWER"
+    ],
+    "fill_value": -999.0,
+    "time_standard": "UTC",
+    "start": "20250501",
+    "end": "20250503"
+  },
+  "units": {
+    "T2M": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters"
+    },
+    "WS2M": {
+      "units": "m/s",
+      "longname": "Wind Speed at 2 Meters"
+    }
+  },
+  "coordinates": [
+    148.15,
+    -35.52,
+    625.38
+  ],
+  "raw_archive": "../DynamicQuant-001-Evidence/nasa-power.json (local only)",
+  "admission": "SECONDARY_METADATA_AUDIT_ONLY_NOT_AGENT_INPUT",
+  "rights": "Public access verified; specific redistribution terms not separately pinned; raw not republished",
+  "note": "No NY/Batlow fusion; no source flux, terrain wind or regional representativeness conclusion"
+}
