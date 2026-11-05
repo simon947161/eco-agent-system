@@ -23,6 +23,15 @@ Run the tests:
 python -m unittest discover
 ```
 
+### ClimateOS Dynamic Quantification — bounded evidence integration
+
+[CLIMATEOS-DYNAMIC-QUANT-001](docs/tasks/climateos_dynamic_quant_001/README.md)
+archives the sole taskbook, capability audit, six-tool contract and a real public
+station replay. Read the [Chinese Founder report](docs/tasks/climateos_dynamic_quant_001/FOUNDER_DYNAMIC_QUANTIFICATION_ROADMAP_ZH.md).
+The passed slice is descriptive observation evidence; methane D3 remains
+DATA_NOT_READY and MatrixOne remains NOT_BENCHMARKED. No deployment or legal
+credit calculation is implied.
+
 ## Meaningful Environmental Question Runtime (Task2002 prototype)
 
 This supervised local prototype accepts a real environmental question in the

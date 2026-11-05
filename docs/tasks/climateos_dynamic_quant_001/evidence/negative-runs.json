@@ -1,0 +1,82 @@
+{
+  "evidence_class": "REAL_RAW_REPLAY_WITH_MUTATED_REQUESTS_NOT_ENVIRONMENTAL_EXPERIMENT",
+  "runs": {
+    "incompatible_unit": {
+      "status": "REFUSED",
+      "reason": "UNIT_OR_VARIABLE_MISMATCH",
+      "agent_version": "0.1",
+      "trace": [
+        "get_environmental_context"
+      ]
+    },
+    "wrong_space": {
+      "status": "REFUSED",
+      "reason": "SPACE_MISMATCH",
+      "agent_version": "0.1",
+      "trace": [
+        "get_environmental_context"
+      ]
+    },
+    "wrong_time": {
+      "status": "REFUSED",
+      "reason": "INVALID_TIME",
+      "agent_version": "0.1",
+      "trace": [
+        "get_environmental_context"
+      ]
+    },
+    "unverified_time_basis": {
+      "status": "REFUSED",
+      "reason": "TIME_BASIS_MISMATCH",
+      "agent_version": "0.1",
+      "trace": [
+        "get_environmental_context"
+      ]
+    },
+    "unauthorized_model": {
+      "status": "REFUSED",
+      "reason": "MODEL_NOT_AUTHORIZED",
+      "agent_version": "0.1",
+      "trace": [
+        "get_environmental_context",
+        "query_observations",
+        "run_verified_model"
+      ]
+    },
+    "insufficient_evidence": {
+      "status": "REFUSED",
+      "reason": "INSUFFICIENT_EVIDENCE_MIN_3_DAYS",
+      "agent_version": "0.1",
+      "trace": [
+        "get_environmental_context",
+        "query_observations",
+        "run_verified_model"
+      ]
+    },
+    "methane_not_ready": {
+      "status": "REFUSED",
+      "reason": "DATA_NOT_READY_OR_SOURCE_NOT_ADMITTED",
+      "agent_version": "0.1",
+      "trace": [
+        "get_environmental_context"
+      ]
+    },
+    "missing_data": {
+      "status": "REFUSED",
+      "reason": "MISSING_DATA",
+      "agent_version": "0.1",
+      "trace": [
+        "get_environmental_context"
+      ]
+    },
+    "tampered_bytes": {
+      "status": "REFUSED",
+      "reason": "HASH_MISMATCH",
+      "agent_version": "0.1",
+      "trace": [
+        "get_environmental_context",
+        "query_observations"
+      ]
+    }
+  }
+}

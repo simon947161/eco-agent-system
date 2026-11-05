@@ -6,6 +6,12 @@ Author: Simon Shu (Min Shu) + AI Dialogue System
 Repository: simon947161/eco-agent-system  
 Status: Architecture navigation document
 
+2026-11-05 bounded integration review:
+[CLIMATEOS-DYNAMIC-QUANT-001](tasks/climateos_dynamic_quant_001/README.md) connects
+the existing capability inventory to a controlled observation-evidence replay.
+It does not establish a complete coupled environmental model, an LLM service,
+or a MatrixOne deployment.
+
 ---
 
 ## 1. Purpose

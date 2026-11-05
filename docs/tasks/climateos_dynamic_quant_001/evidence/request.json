@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1",
+  "question": "公开站点三天的气温与风速记录是什么？",
+  "source_id": "NOAA_GHCND_USW00094728",
+  "crs": "EPSG:4326",
+  "coordinates": [
+    -73.96925,
+    40.77898
+  ],
+  "start_date": "2025-05-01",
+  "end_date": "2025-05-03",
+  "time_basis": "PROVIDER_OBSERVING_DAY",
+  "variables": {
+    "daily_max_temperature": "degC",
+    "daily_mean_wind_speed": "m/s"
+  },
+  "permission": "public_read_only",
+  "model_id": "daily_descriptive_mean/1"
+}
