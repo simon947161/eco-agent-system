@@ -22,4 +22,6 @@
 
 关键发现：NASA现有fetch没有time-standard参数，parse_nasa_power_daily却加UTC日期标签；官方默认LST，存在日界误标风险。本轮隔离回放不走该下载解析路径，未改旧函数以免扩大回归范围。旧connector还会将naive时间视UTC，并接受float的NaN/Inf；新门拒绝非有限值，不给NOAA日期制造UTC时刻。未来统一旧源适配必须先修复这些语义与回归用例，再接自动化。
 
+Founder复核补充：首版没有充分呈现Task1200–1499模型评价、Task1500–1700耦合路线、UniCM/NeuralGCM研究和已实现的environmental_coupling/mechanism_return_gate。已重新阅读原文和代码，增加[逐项继承与成熟方法对照](PROFESSIONAL_AGENT_SCIENCE_INTEGRATION_ZH.md)。environmental_coupling.py确有静态图验证实现，mechanism_return_gate.py确有实验字段与no-run验证；不能归成纯口头构想，也不能称已执行物理耦合模型。对应test_environmental_coupling、test_mechanism_return_gate、test_weatherbench_synthetic_adapter已包含在首轮全仓日志中。本次只修订研究，不修改这些合同或实现。
+
 未证明：旧主机常驻运行、QGIS图层本轮渲染、Atlas部署、通用LLM/MCP、独立生态/热/水文/甲烷耦合验证。检索到的本地历史目录若不在main Git跟踪，不能当作main已接纳成果。执行与测试不跨越这些边界。

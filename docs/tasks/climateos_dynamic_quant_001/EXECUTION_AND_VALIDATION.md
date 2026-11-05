@@ -49,4 +49,6 @@ validate_package写文档检查结果；初次临时校验把尚未生成的自�
 
 ## 完成边界
 
+Founder复核后的追加只修改研究文档和文档校验产物，不改变观测、代码、测试或原件。新增文献与历史代码回查见[连接复核](PROFESSIONAL_AGENT_SCIENCE_INTEGRATION_ZH.md)。重新运行validate_package和diff检查；不将首轮487项测试写成该文献结论的科学验证，也不无理由重跑物理模型。GitHub PR135保留Draft，原任务书先发布历史仍可追溯。
+
 有界工程与研究任务完成；科学总愿景仍局部可用。门为PROCEED WITH CONDITIONS；甲烷BLOCKED，完整耦合模型RESEARCH ONLY，MatrixOne NOT_BENCHMARKED。旧NASA默认LST/UTC误标问题已登记，未在本PR扩大修复。下一研究必须重新指定数据/方法/预算，不能由本任务自动续跑。

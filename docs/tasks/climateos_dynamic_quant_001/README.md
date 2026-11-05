@@ -4,6 +4,8 @@
 
 先读[中文创始人报告](FOUNDER_DYNAMIC_QUANTIFICATION_ROADMAP_ZH.md)，再查证据。
 
+Founder复核修订已加入[成熟科学与专业智能体连接复核](PROFESSIONAL_AGENT_SCIENCE_INTEGRATION_ZH.md)：继承历史耦合路线，核查风/热/输送既有方法，将MOI按付费智能体工作平台评价，不只比较数据库。
+
 - [完整任务书](TASKBOOK_ZH.md)：先行发布commit `7ce22986fd89e38ef32068d010417b6e28acf236`。
 - [能力审计](CAPABILITY_AUDIT.md)：已实现、测试、运行、科学验证分开。
 - [科学模块与依赖](SCIENTIFIC_MODULES_AND_DEPENDENCIES.md)：六类过程、尺度、拒绝条件。

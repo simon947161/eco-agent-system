@@ -21,3 +21,7 @@
 3. [actual-run.json](evidence/actual-run.json)为真实字节离线回放；[negative-runs.json](evidence/negative-runs.json)为真实原件加修改请求的拒绝演示，不是真实环境实验。tests中修改行/重算收据的夹具明确为合成软件测试，不能当新观测。
 
 字节哈希与Git版本可追溯，不证明原资料无误或产品有科学适用性。官方网页未全部镜像下载；无文件哈希的网页只能按URL/页面版本/核查日追溯，不虚填哈希。未收集私人地块、敏感物种点位或Council记录。
+
+## Founder复核新增文献（非新增观测候选）
+
+[专业智能体连接复核](PROFESSIONAL_AGENT_SCIENCE_INTEGRATION_ZH.md)末尾S1–S8/P1–P4为本证据登记的新增来源明细：EnergyPlus、BASIX、WRF、PALM模型与Dejvice实地验证、HYSPLIT、NeuralGCM/IPCC分类，以及MOI智能体/运行环境/计费。逐条列URL/DOI、版本、正文或索引核实及403/cache miss差别。没有新增天气或气体下载，原两候选上限不变。论文方法/验证与ClimateOS是否执行分开，不提升任何旧合成合同。

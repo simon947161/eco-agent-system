@@ -1,5 +1,7 @@
 # CRP交接 — 唯一总任务
 
+Founder复核修订：目标明确为可付费、可用中国算力支撑的定制专业智能体；MOI是工作平台而非仅数据库候选。已在原PR135补充[成熟科学集成复核](PROFESSIONAL_AGENT_SCIENCE_INTEGRATION_ZH.md)，修订Founder报告/平台评估并恢复历史模型评价和耦合路线的继承关系。成熟方法存在与本仓库尚未运行分开。原始任务书和观测运行保留历史；无新模型执行、候选数据、账号操作、费用或部署。
+
 CLIMATEOS-DYNAMIC-QUANT-001；2026-11-05；main基线9eb7577e145e76161f9f1cd8509348b19c2904cc；分支research/climateos-dynamic-quant-001；先发布任务书7ce22986fd89e38ef32068d010417b6e28acf236再执行。
 
 已完成：有界代码/跨PR能力审计、科学六模块拆分、六工具契约、最薄离线适配、真实NOAA三日回放、九个保存拒绝路径、MatrixOne只读评估、中文创始人解释。全仓487测试OK/1平台跳过。来源、原件、QA、日界、方法、trace和拒绝分别归档。Founder结论PROCEED WITH CONDITIONS限观测证据链；不是完整科学耦合系统。
