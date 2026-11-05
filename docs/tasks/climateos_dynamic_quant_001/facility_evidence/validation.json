@@ -1,0 +1,24 @@
+{
+  "full_suite": {
+    "run": 492,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 1,
+    "status": "OK",
+    "command": "python -m unittest discover",
+    "execution": "approved expanded environment for localhost sockets"
+  },
+  "targeted": {
+    "run": 10,
+    "status": "OK"
+  },
+  "first_sandbox_full_suite": {
+    "run": 491,
+    "errors": 8,
+    "skipped": 1,
+    "reason": "WinError10013 localhost socket restrictions"
+  },
+  "physical_models_run": [],
+  "matrixone": "NOT_BENCHMARKED_UI_TIMEOUT",
+  "methane": "DATA_NOT_READY"
+}

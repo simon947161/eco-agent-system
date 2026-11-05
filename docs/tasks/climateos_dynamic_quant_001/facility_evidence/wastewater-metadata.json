@@ -1,0 +1,356 @@
+{
+ "currentVersion": 11.1,
+ "cimVersion": "3.1.0",
+ "id": 0,
+ "name": "Wastewater_Treatment_Facilities",
+ "type": "Feature Layer",
+ "description": "This dataset is an updated version of the Wastewater Treatment Facilities dataset last published in 2016. In 2026, the Wastewater Treatment Facilities Dataset was updated, with new facilities added and existing facilities validated using the most currently available and authoritative source data. For the purposes of this dataset, a Wastewater Treatment Facility is defined as: A facility where sewage is treated for reuse or environmental discharge.",
+ "geometryType": "esriGeometryPoint",
+ "sourceSpatialReference": {
+  "wkid": 7844,
+  "latestWkid": 7844,
+  "xyTolerance": 8.983152841195215E-9,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "xyUnits": 9.999999999999999E8,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "copyrightText": "© Commonwealth of Australia (Geoscience Australia) 2026. This material is released under the Creative Commons Attribution 4.0 International License. Geocentric Datum of Australia 2020 (GDA2020 - EPSG: 7844)",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSMS",
+    "style": "esriSMSCircle",
+    "color": [
+     0,
+     132,
+     168,
+     255
+    ],
+    "size": 4,
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "outline": {
+     "color": [
+      0,
+      0,
+      0,
+      255
+     ],
+     "width": 0.7
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": 113.55441094200012,
+  "ymin": -43.43834608499998,
+  "xmax": 153.59167960000002,
+  "ymax": -9.231506445999969,
+  "spatialReference": {
+   "wkid": 7844,
+   "latestWkid": 7844,
+   "xyTolerance": 8.983152841195215E-9,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -400,
+   "falseY": -400,
+   "xyUnits": 9.999999999999999E8,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "FEATURE_NAME",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "objectid",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "feature_type",
+   "type": "esriFieldTypeString",
+   "alias": "Feature Type",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "feature_subtype",
+   "type": "esriFieldTypeString",
+   "alias": "Feature Subtype",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "feature_name",
+   "type": "esriFieldTypeString",
+   "alias": "Name",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "feature_description",
+   "type": "esriFieldTypeString",
+   "alias": "Description",
+   "length": 255,
+   "domain": null
+  },
+  {
+   "name": "owner",
+   "type": "esriFieldTypeString",
+   "alias": "Owner",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "operator",
+   "type": "esriFieldTypeString",
+   "alias": "Operator",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "address",
+   "type": "esriFieldTypeString",
+   "alias": "Address",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "locality",
+   "type": "esriFieldTypeString",
+   "alias": "Locality",
+   "length": 200,
+   "domain": null
+  },
+  {
+   "name": "state",
+   "type": "esriFieldTypeString",
+   "alias": "State",
+   "length": 3,
+   "domain": null
+  },
+  {
+   "name": "postcode",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Postcode",
+   "domain": null
+  },
+  {
+   "name": "status",
+   "type": "esriFieldTypeString",
+   "alias": "Status",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "feature_source",
+   "type": "esriFieldTypeString",
+   "alias": "Feature Source",
+   "length": 200,
+   "domain": null
+  },
+  {
+   "name": "feature_source_date",
+   "type": "esriFieldTypeDate",
+   "alias": "Feature Source Date",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "attribute_source",
+   "type": "esriFieldTypeString",
+   "alias": "Attribute Source",
+   "length": 200,
+   "domain": null
+  },
+  {
+   "name": "attribute_source_date",
+   "type": "esriFieldTypeDate",
+   "alias": "Attribute Source Date",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "spatial_confidence",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Spatial Confidence",
+   "domain": null
+  },
+  {
+   "name": "input_product",
+   "type": "esriFieldTypeString",
+   "alias": "Input Product",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "byproduct",
+   "type": "esriFieldTypeString",
+   "alias": "Byproduct",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "treated_water_use",
+   "type": "esriFieldTypeString",
+   "alias": "Treated Water Use",
+   "length": 100,
+   "domain": null
+  },
+  {
+   "name": "latitude",
+   "type": "esriFieldTypeDouble",
+   "alias": "Latitude",
+   "domain": null
+  },
+  {
+   "name": "longitude",
+   "type": "esriFieldTypeDouble",
+   "alias": "Longitude",
+   "domain": null
+  },
+  {
+   "name": "created_date",
+   "type": "esriFieldTypeDate",
+   "alias": "Created Date",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "last_edited_date",
+   "type": "esriFieldTypeDate",
+   "alias": "Last Edited Date",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "globalid",
+   "type": "esriFieldTypeGlobalID",
+   "alias": "GlobalID",
+   "length": 38,
+   "domain": null
+  },
+  {
+   "name": "shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "SHAPE",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "SHAPE"
+ },
+ "indexes": [
+  {
+   "name": "r3021_sde_rowid_uk",
+   "fields": "objectid",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "uuid_3021",
+   "fields": "globalid",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "a2725_ix1",
+   "fields": "shape",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 2000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": false
+ },
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}

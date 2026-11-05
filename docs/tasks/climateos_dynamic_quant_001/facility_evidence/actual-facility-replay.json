@@ -1,0 +1,131 @@
+{
+  "status": "SPATIAL_ORIENTATION_ONLY",
+  "records": [
+    {
+      "source": "waste",
+      "objectid": 358,
+      "name": "COLES SUPERMARKET",
+      "category": "SOFT PLASTICS DROP-OFF FACILITY",
+      "coordinates": [
+        149.12640093200002,
+        -36.235708546999945
+      ],
+      "crs": "EPSG:7844",
+      "provider_attributes": {
+        "objectid": 358,
+        "facility_name": "COLES SUPERMARKET",
+        "facility_infrastructure_type": "SOFT PLASTICS DROP-OFF FACILITY",
+        "operational_status": "OPERATIONAL",
+        "spatial_confidence": 4
+      },
+      "evidence_class": "FACILITY_REGISTER_POINT_NOT_MEASUREMENT"
+    },
+    {
+      "source": "waste",
+      "objectid": 668,
+      "name": "COOMA SCRAPMART",
+      "category": "REUSE SHOP",
+      "coordinates": [
+        149.153052526,
+        -36.24891753899993
+      ],
+      "crs": "EPSG:7844",
+      "provider_attributes": {
+        "objectid": 668,
+        "facility_name": "COOMA SCRAPMART",
+        "facility_infrastructure_type": "REUSE SHOP",
+        "operational_status": "OPERATIONAL",
+        "spatial_confidence": 3
+      },
+      "evidence_class": "FACILITY_REGISTER_POINT_NOT_MEASUREMENT"
+    },
+    {
+      "source": "waste",
+      "objectid": 2397,
+      "name": "COOMA LANDFILL",
+      "category": "LANDFILL \u2013 PUTRESCIBLE",
+      "coordinates": [
+        149.153052526,
+        -36.24891753899993
+      ],
+      "crs": "EPSG:7844",
+      "provider_attributes": {
+        "objectid": 2397,
+        "facility_name": "COOMA LANDFILL",
+        "facility_infrastructure_type": "LANDFILL \u2013 PUTRESCIBLE",
+        "operational_status": "OPERATIONAL",
+        "spatial_confidence": 3
+      },
+      "evidence_class": "FACILITY_REGISTER_POINT_NOT_MEASUREMENT"
+    },
+    {
+      "source": "waste",
+      "objectid": 3108,
+      "name": "WOOLWORTHS SUPERMARKET",
+      "category": "SOFT PLASTICS DROP-OFF FACILITY",
+      "coordinates": [
+        149.1244094330001,
+        -36.233253486999956
+      ],
+      "crs": "EPSG:7844",
+      "provider_attributes": {
+        "objectid": 3108,
+        "facility_name": "WOOLWORTHS SUPERMARKET",
+        "facility_infrastructure_type": "SOFT PLASTICS DROP-OFF FACILITY",
+        "operational_status": "OPERATIONAL",
+        "spatial_confidence": 4
+      },
+      "evidence_class": "FACILITY_REGISTER_POINT_NOT_MEASUREMENT"
+    },
+    {
+      "source": "waste",
+      "objectid": 3319,
+      "name": "COOMA COMPOSTING FACILITY",
+      "category": "ORGANICS RECYCLING FACILITY",
+      "coordinates": [
+        149.153052526,
+        -36.24891753899993
+      ],
+      "crs": "EPSG:7844",
+      "provider_attributes": {
+        "objectid": 3319,
+        "facility_name": "COOMA COMPOSTING FACILITY",
+        "facility_infrastructure_type": "ORGANICS RECYCLING FACILITY",
+        "operational_status": "OPERATIONAL",
+        "spatial_confidence": 3
+      },
+      "evidence_class": "FACILITY_REGISTER_POINT_NOT_MEASUREMENT"
+    },
+    {
+      "source": "wastewater",
+      "objectid": 1063,
+      "name": "The Glen",
+      "category": "Wastewater Treatment Plant",
+      "coordinates": [
+        149.11379990000012,
+        -36.20030314999997
+      ],
+      "crs": "EPSG:7844",
+      "provider_attributes": {
+        "objectid": 1063,
+        "feature_name": "The Glen",
+        "feature_subtype": "Wastewater Treatment Plant",
+        "status": "Operational",
+        "spatial_confidence": 5,
+        "feature_source_date": 1768780800000,
+        "attribute_source_date": 1739836800000
+      },
+      "evidence_class": "FACILITY_REGISTER_POINT_NOT_MEASUREMENT"
+    }
+  ],
+  "coincident_register_points": [
+    [
+      "waste:668",
+      "waste:2397",
+      "waste:3319"
+    ]
+  ],
+  "temporal_comparison": "NOT_ADMITTED_NO_COMMON_OBSERVATION_INTERVAL",
+  "methane": "DATA_NOT_READY",
+  "environmental_conclusion": "NOT_ESTABLISHED"
+}
