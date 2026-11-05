@@ -93,4 +93,3 @@ Founder本轮说明与“探索 Matrix 智能体”聊天确认，关注的是MO
 - P4：[MOI计费](https://docs.matrixorigin.cn/moi/en/5.0/guides/billing/index.html)，官方检索正文，直接打开cache miss；不推断具体价格/额度。
 
 官方能力、已发表验证、仓库实现与仓库验证分开。没有新增数据下载件；网页按URL/DOI/版本/核查日追溯，不虚填文件SHA。
-
