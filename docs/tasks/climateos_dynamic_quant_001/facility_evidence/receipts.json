@@ -1,0 +1,30 @@
+[
+  {
+    "file": "waste-metadata.json",
+    "url": "https://services.ga.gov.au/gis/rest/services/Waste_Management_Facilities/MapServer/0?f=pjson",
+    "sha256": "f55a71c7a138da90094005aec8f0e0c0e4b35c09bcfbd207a3e166a06980cadc",
+    "retrieved_at_utc": "2026-11-05T22:29:10.174632+00:00",
+    "bytes": 8129
+  },
+  {
+    "file": "waste-points.json",
+    "url": "https://services.ga.gov.au/gis/rest/services/Waste_Management_Facilities/MapServer/0/query?f=json&where=1%3D1&geometry=148.9359628223%2C-36.3977706857%2C149.2892495063%2C-36.0986116526&geometryType=esriGeometryEnvelope&inSR=4326&outSR=7844&spatialRel=esriSpatialRelIntersects&outFields=objectid%2Cfacility_name%2Cfacility_infrastructure_type%2Coperational_status%2Cspatial_confidence&returnGeometry=true&resultRecordCount=100&orderByFields=objectid",
+    "sha256": "9bd41df535ec9a859f59909714f99fba7d2b2660ca641b741d45c28e066e9f18",
+    "retrieved_at_utc": "2026-11-05T22:29:10.311471+00:00",
+    "bytes": 2065
+  },
+  {
+    "file": "wastewater-metadata.json",
+    "url": "https://services.ga.gov.au/gis/rest/services/Wastewater_Treatment_Facilities/MapServer/0?f=pjson",
+    "sha256": "d308d3da2e3e8f79ce1a24440f92af67b53aaaa9b7eb7a3bda176f0e8fb5b372",
+    "retrieved_at_utc": "2026-11-05T22:29:10.414999+00:00",
+    "bytes": 8116
+  },
+  {
+    "file": "wastewater-points.json",
+    "url": "https://services.ga.gov.au/gis/rest/services/Wastewater_Treatment_Facilities/MapServer/0/query?f=json&where=1%3D1&geometry=148.9359628223%2C-36.3977706857%2C149.2892495063%2C-36.0986116526&geometryType=esriGeometryEnvelope&inSR=4326&outSR=7844&spatialRel=esriSpatialRelIntersects&outFields=objectid%2Cfeature_name%2Cfeature_subtype%2Cstatus%2Cspatial_confidence%2Cfeature_source_date%2Cattribute_source_date&returnGeometry=true&resultRecordCount=100&orderByFields=objectid",
+    "sha256": "8c9977f4767a49b1c2400d161a3caaf98d4ec521f451820b04d98359869858d9",
+    "retrieved_at_utc": "2026-11-05T22:29:10.568579+00:00",
+    "bytes": 1291
+  }
+]

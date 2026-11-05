@@ -16,3 +16,5 @@ Founder复核修订已加入[成熟科学与专业智能体连接复核](PROFESS
 - [CRP交接](CRP_HANDOFF.md)、[NEXT_SESSION](NEXT_SESSION.md)。
 
 最终门：**PROCEED WITH CONDITIONS**，仅观察证据与描述统计路径通过。甲烷和耦合科学模型仍BLOCKED/RESEARCH ONLY；不是完整动态环境量化系统。
+
+2026-11-05 continuation: [设施空间证据中文报告](FACILITY_SPATIAL_CONTINUATION_ZH.md).

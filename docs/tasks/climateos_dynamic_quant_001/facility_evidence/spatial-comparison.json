@@ -1,0 +1,90 @@
+{
+  "status": "OFFLINE_SPATIAL_OVERLAY_EXECUTED",
+  "method": "Euclidean point-to-line distance in EPSG:7855; nearest among archived lines only; rounded to metres, not accuracy",
+  "versions": {
+    "pyproj": "3.7.2",
+    "proj": "9.8.1",
+    "shapely": "2.1.2"
+  },
+  "local_inputs": [
+    {
+      "file": "geofabric_v3_3_network_stream_all_cooma_10km_epsg4283.geojson",
+      "sha256": "cb2bf376e8ec948a5b7ddea57d08707eeb6cea58464d1f050a31e8d7dd87b44b",
+      "crs": "EPSG:4283",
+      "features": 348
+    },
+    {
+      "file": "cooma_locality_buffer_10km_epsg7855.geojson",
+      "sha256": "9948a0f19bb427d065d21a6e2c08374e88933c36f6b31da4489bc3d3dfe8ef88",
+      "crs": "EPSG:7855",
+      "features": 1
+    }
+  ],
+  "transformations": [
+    {
+      "from": 7844,
+      "to": 7855,
+      "description": "Map Grid of Australia zone 55 (with axis order normalized for visualization)",
+      "accuracy_m": -1.0
+    },
+    {
+      "from": 4283,
+      "to": 7855,
+      "description": "GDA94 to GDA2020 (1) + Map Grid of Australia zone 55 (with axis order normalized for visualization)",
+      "accuracy_m": 0.01
+    }
+  ],
+  "records": [
+    {
+      "source": "waste",
+      "objectid": 358,
+      "name": "COLES SUPERMARKET",
+      "inside_existing_study_polygon": true,
+      "distance_to_nearest_archived_stream_line_m": 265,
+      "interpretation": "MAP_PROXIMITY_ONLY_NOT_HYDROLOGICAL_CONNECTION"
+    },
+    {
+      "source": "waste",
+      "objectid": 668,
+      "name": "COOMA SCRAPMART",
+      "inside_existing_study_polygon": true,
+      "distance_to_nearest_archived_stream_line_m": 655,
+      "interpretation": "MAP_PROXIMITY_ONLY_NOT_HYDROLOGICAL_CONNECTION"
+    },
+    {
+      "source": "waste",
+      "objectid": 2397,
+      "name": "COOMA LANDFILL",
+      "inside_existing_study_polygon": true,
+      "distance_to_nearest_archived_stream_line_m": 655,
+      "interpretation": "MAP_PROXIMITY_ONLY_NOT_HYDROLOGICAL_CONNECTION"
+    },
+    {
+      "source": "waste",
+      "objectid": 3108,
+      "name": "WOOLWORTHS SUPERMARKET",
+      "inside_existing_study_polygon": true,
+      "distance_to_nearest_archived_stream_line_m": 90,
+      "interpretation": "MAP_PROXIMITY_ONLY_NOT_HYDROLOGICAL_CONNECTION"
+    },
+    {
+      "source": "waste",
+      "objectid": 3319,
+      "name": "COOMA COMPOSTING FACILITY",
+      "inside_existing_study_polygon": true,
+      "distance_to_nearest_archived_stream_line_m": 655,
+      "interpretation": "MAP_PROXIMITY_ONLY_NOT_HYDROLOGICAL_CONNECTION"
+    },
+    {
+      "source": "wastewater",
+      "objectid": 1063,
+      "name": "The Glen",
+      "inside_existing_study_polygon": true,
+      "distance_to_nearest_archived_stream_line_m": 43,
+      "interpretation": "MAP_PROXIMITY_ONLY_NOT_HYDROLOGICAL_CONNECTION"
+    }
+  ],
+  "temporal_alignment": "NOT_ESTABLISHED_REGISTER_VS_STATIC_CARTOGRAPHY",
+  "environmental_conclusion": "NOT_ESTABLISHED",
+  "methane": "DATA_NOT_READY"
+}
