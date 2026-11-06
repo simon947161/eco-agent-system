@@ -9,3 +9,5 @@ Founder复核后优先读[科学与专业智能体连接复核](PROFESSIONAL_AGE
 保持：D3 DATA_NOT_READY、三候选停止；MatrixOne NOT_BENCHMARKED；本轮统计不是预测；法规NOT_ASSESSED。后续优先讨论旧NASA时间标准修复与一个有验证条件的专业问题。未来数据库/LLM/真实土地计算必须另行界定和决定；不要用本任务书启动新工程。
 
 2026-11-05 continuation: read FACILITY_SPATIAL_CONTINUATION_ZH.md first. Facility spatial replay implemented; MatrixOne NOT_BENCHMARKED; methane DATA_NOT_READY. See MEMORY_WRITEBACK_PENDING.md.
+
+2026-11-06 pressure review: read METHANE_ALTITUDE_PRESSURE_ZH.md and pressure_source_register.json. Local review only; no new publication authorization, no gas data admission, inversion, radiation-model run or front-end deployment. Original conversation recovered by connected history. Distinguish station pressure, dP/dt, source pressure gradient and spectral pressure broadening. Do not multiply GWP by an altitude coefficient. Pending memory continuity includes this review.
