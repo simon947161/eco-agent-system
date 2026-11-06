@@ -1,0 +1,15 @@
+{
+  "tests_run": 522,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "skips": [
+    {
+      "test": "test_symlink_root_is_rejected_when_platform_allows_it (test_local_private_continuity.LocalPrivateContinuityTests.test_symlink_root_is_rejected_when_platform_allows_it)",
+      "reason": "symlink creation is not permitted on this platform"
+    }
+  ],
+  "successful": true,
+  "python": "3.12.13",
+  "scope": "implementation/unit verification; no observational validation"
+}
