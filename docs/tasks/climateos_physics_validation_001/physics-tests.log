@@ -1,0 +1,35 @@
+test_conservation_and_methane_partition (tests.test_physics_validation.FODTests.test_conservation_and_methane_partition) ... ok
+test_half_life_hand_oracle (tests.test_physics_validation.FODTests.test_half_life_hand_oracle) ... ok
+test_independent_closed_form_cohorts (tests.test_physics_validation.FODTests.test_independent_closed_form_cohorts) ... ok
+test_invalid_fod_inputs (tests.test_physics_validation.FODTests.test_invalid_fod_inputs) ... ok
+test_recovery_and_oxidation_limits (tests.test_physics_validation.FODTests.test_recovery_and_oxidation_limits) ... ok
+test_units_kg_gg (tests.test_physics_validation.FODTests.test_units_kg_gg) ... ok
+test_zero_decay_oracle (tests.test_physics_validation.FODTests.test_zero_decay_oracle) ... ok
+test_invalid_gas_inputs (tests.test_physics_validation.GasTests.test_invalid_gas_inputs) ... ok
+test_inverse_dry_wet_and_concentration (tests.test_physics_validation.GasTests.test_inverse_dry_wet_and_concentration) ... ok
+test_mixing_ratio_invariant (tests.test_physics_validation.GasTests.test_mixing_ratio_invariant) ... ok
+test_pr137_pinned_numbers (tests.test_physics_validation.GasTests.test_pr137_pinned_numbers) ... ok
+test_pressure_temperature_scaling (tests.test_physics_validation.GasTests.test_pressure_temperature_scaling) ... ok
+test_reference_volume_preserves_dry_ch4_mass (tests.test_physics_validation.GasTests.test_reference_volume_preserves_dry_ch4_mass) ... ok
+test_water_partial_pressure_oracle (tests.test_physics_validation.GasTests.test_water_partial_pressure_oracle) ... ok
+test_zero_limits (tests.test_physics_validation.GasTests.test_zero_limits) ... ok
+test_annual_cumulative_not_just_endpoint (tests.test_physics_validation.ResponseTests.test_annual_cumulative_not_just_endpoint) ... ok
+test_moisture_neutral_exact_baseline (tests.test_physics_validation.ResponseTests.test_moisture_neutral_exact_baseline) ... ok
+test_response_invalid_domain (tests.test_physics_validation.ResponseTests.test_response_invalid_domain) ... ok
+test_response_mathematical_oracles (tests.test_physics_validation.ResponseTests.test_response_mathematical_oracles) ... ok
+test_temperature_neutral_exact_baseline (tests.test_physics_validation.ResponseTests.test_temperature_neutral_exact_baseline) ... ok
+test_zero_activation_energy_control (tests.test_physics_validation.ResponseTests.test_zero_activation_energy_control) ... ok
+test_zero_and_bounded_moisture (tests.test_physics_validation.ResponseTests.test_zero_and_bounded_moisture) ... ok
+test_closed_box_oracle (tests.test_physics_validation.StorageTests.test_closed_box_oracle) ... ok
+test_hypothesis_direction_is_scenario_specific (tests.test_physics_validation.StorageTests.test_hypothesis_direction_is_scenario_specific) ... ok
+test_independent_integral_conservation (tests.test_physics_validation.StorageTests.test_independent_integral_conservation) ... ok
+test_one_way_valve_control (tests.test_physics_validation.StorageTests.test_one_way_valve_control) ... ok
+test_ramp_analytic_and_step_convergence (tests.test_physics_validation.StorageTests.test_ramp_analytic_and_step_convergence) ... ok
+test_refuse_unstable_or_bad_domain (tests.test_physics_validation.StorageTests.test_refuse_unstable_or_bad_domain) ... ok
+test_steady_equilibrium_oracle (tests.test_physics_validation.StorageTests.test_steady_equilibrium_oracle) ... ok
+test_stored_release_with_zero_generation (tests.test_physics_validation.StorageTests.test_stored_release_with_zero_generation) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.002s
+
+OK

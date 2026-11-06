@@ -1,0 +1,116 @@
+{
+  "task": "CLIMATEOS-PHYSICS-VALIDATION-001",
+  "authorization": "https://github.com/simon947161/eco-agent-system/pull/137#issuecomment-6680117578",
+  "baseline_review": [
+    {
+      "pr": 132,
+      "head": "2ec66ae41ae2e1d4a0f1aaa92aa98c9f0ff4c5b0",
+      "base": "main",
+      "state": "open",
+      "draft": true
+    },
+    {
+      "pr": 135,
+      "head": "2dea3defbb843cfcd8792751ffc21f31fa241616",
+      "base": "main",
+      "state": "open",
+      "draft": true
+    },
+    {
+      "pr": 136,
+      "head": "be14a2a7d99fde6815f6cd98d39faa07fc3c8e35",
+      "base": "research/climateos-dynamic-quant-001",
+      "state": "open",
+      "draft": true
+    },
+    {
+      "pr": 137,
+      "head": "37c4b093e511bd9b5014c276390ebde114d28eed",
+      "base": "research/climateos-facility-evidence-002",
+      "state": "open",
+      "draft": true
+    }
+  ],
+  "formula_sources": [
+    {
+      "id": "P1",
+      "title": "Ideal-gas algebra and PR137 pinned hypothetical constants",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/37c4b093e511bd9b5014c276390ebde114d28eed/docs/tasks/climateos_dynamic_quant_001/pressure_example.py",
+      "version": "PR137 pinned HEAD",
+      "status": "READ_AND_REPRODUCED",
+      "note": "Same assumed molar masses; wet basis derived using dry-air partial pressure. No real gas nonideality or RH saturation formula."
+    },
+    {
+      "id": "P1-BASIS",
+      "title": "NOAA CarbonTracker CH4 glossary",
+      "url": "https://gml.noaa.gov/ccgg/carbontracker-ch4/glossary.html",
+      "status": "PRIMARY_BODY_READ",
+      "note": "Dry mole fraction and flux distinction; not site observations."
+    },
+    {
+      "id": "P2",
+      "title": "Own illustrative pure methane storage/one-way-valve mass balance",
+      "url": null,
+      "status": "SYNTHETIC_CONSTITUTIVE_ASSUMPTION_NOT_CALIBRATED",
+      "note": "Ideal-gas storage plus explicit kg/(h Pa) conductance, no literature coefficient imported; pressure mechanism plausibility not constitutive validation."
+    },
+    {
+      "id": "P2-CONTEXT",
+      "title": "Xu et al. 2014 barometric pumping",
+      "url": "https://doi.org/10.1002/2013GB004571",
+      "status": "PRIMARY_BODY_READ_PREVIOUS_REVIEW",
+      "note": "No active gas collection at studied site; does not validate our surrogate box."
+    },
+    {
+      "id": "P3",
+      "title": "IPCC 2006 Volume5 Chapter3",
+      "url": "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/5_Volume5/V5_3_Ch3_SWDS.pdf",
+      "status": "PRIMARY_PDF_READ_AND_LOCAL_BYTES_ARCHIVED",
+      "sha256": "1850dc17af0a2d51efdbc7d1e737b609e50d7ed12d07a913bfb4d68948efcc91",
+      "local_archive_outside_repository": "../physics-sources/IPCC2006_V5_Ch3.pdf",
+      "equations": [
+        "3.1",
+        "3.2",
+        "3.4",
+        "3.5",
+        "3.6"
+      ],
+      "printed_pages": [
+        "3.8",
+        "3.9",
+        "3.10"
+      ],
+      "delay_reference": "3.19 and Annex3A.1; next Jan1 onset, average six-month delay",
+      "table_parameters": "NONE; all inputs synthetic",
+      "numeric_reference_result": "NONE; independent hand oracle and cohort closed form",
+      "redistribution": "PDF not republished; URL plus actual file SHA recorded"
+    },
+    {
+      "id": "P4-T",
+      "title": "IUPAC Gold Book Arrhenius equation",
+      "url": "https://goldbook.iupac.org/terms/view/A00446",
+      "version": "5.0.0 / 2025",
+      "status": "OFFICIAL_SEARCH_BODY_READ_DIRECT_PAGE_403_NOT_BYPASSED",
+      "equation": "normalized Arrhenius ratio to reference temperature",
+      "note": "Ea=30000 J/mol is synthetic, mathematical family only; no empirical landfill kinetics imported."
+    },
+    {
+      "id": "P4-M",
+      "title": "Own bounded piecewise linear normalized moisture hypothesis",
+      "url": "https://dlmf.nist.gov/3.3",
+      "status": "NIST_MATHEMATICAL_INTERPOLATION_BACKGROUND_READ",
+      "note": "NIST supports interpolation mathematics only. No published methane response curve or empirical water/rainfall mapping claimed."
+    }
+  ],
+  "exclusions": [
+    "2019 parameter tables not mixed",
+    "AWT2015 not changed",
+    "no field data",
+    "no fitted parameters",
+    "no radiation/transport/CO2/N2O numerical core"
+  ],
+  "observation_validation": "NOT_PERFORMED",
+  "D3": "DATA_NOT_READY",
+  "P1_A": "PENDING",
+  "scientific_review": "PENDING"
+}

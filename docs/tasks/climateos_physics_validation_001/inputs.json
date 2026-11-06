@@ -1,0 +1,127 @@
+{
+  "task": "CLIMATEOS-PHYSICS-VALIDATION-001",
+  "provenance": "SYNTHETIC_INPUTS_REFERENCE_FORMULAS",
+  "seed": null,
+  "randomness": "NONE_DETERMINISTIC_GRID",
+  "P1": {
+    "x_dry": 2e-06,
+    "temperature_k": 293.15,
+    "pressures_pa": [
+      101325,
+      80000
+    ],
+    "water_vapour_pa": [
+      0,
+      500,
+      1000,
+      2000
+    ],
+    "reference_pressure_pa": 101325,
+    "reference_temperature_k": 273.15
+  },
+  "P2": {
+    "slope_scenarios_pa_h": {
+      "falling": -100,
+      "steady": 0,
+      "rising": 100
+    },
+    "duration_h": 24,
+    "dt_h": 0.125,
+    "conductance_kg_h_pa": 2e-06,
+    "generation_kg_h": 0.001,
+    "volume_m3": 1,
+    "temperature_k": 293.15,
+    "external_initial_pa": 101325,
+    "initial_overpressure_pa": 500,
+    "controls": [
+      "sealed_conductance_zero",
+      "zero_generation_stored_release",
+      "underpressure_one_way_valve"
+    ],
+    "convergence_dt_h": [
+      0.5,
+      0.25,
+      0.125,
+      0.0625
+    ]
+  },
+  "P3": {
+    "waste_gg": [
+      10,
+      12,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "k_per_year": 0.1,
+    "doc": 0.15,
+    "docf": 0.5,
+    "mcf": 1,
+    "methane_fraction": 0.5,
+    "recovered_fraction": 0.4,
+    "oxidation_fraction": 0.1,
+    "initial_ddoc_gg_c": 0.5,
+    "all_parameters": "SYNTHETIC_NOT_IPCC_DEFAULT_TABLE_VALUES",
+    "formula_version": "IPCC_2006_VOLUME5_CH3_EQ3.1_3.2_3.4_3.5_3.6",
+    "parameter_table_use": "NONE",
+    "2019_refinement_comparison": "NOT_RUN_NOT_MIXED"
+  },
+  "P4": {
+    "reference_temperature_k": 293.15,
+    "activation_j_mol": 30000,
+    "temperature_by_year_k": [
+      293.15,
+      298.15,
+      303.15,
+      298.15,
+      293.15,
+      288.15,
+      283.15,
+      288.15,
+      293.15,
+      298.15,
+      303.15,
+      293.15
+    ],
+    "reference_moisture": 0.5,
+    "normalized_moisture_by_year": [
+      0.5,
+      0.75,
+      1,
+      0.75,
+      0.5,
+      0.25,
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1,
+      0.5
+    ],
+    "uncertainty_grid_k_per_year": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "uncertainty_grid_activation_j_mol": [
+      0,
+      15000,
+      30000,
+      45000
+    ],
+    "moisture_reference_sensitivity": [
+      0.4,
+      0.5,
+      0.6
+    ],
+    "parameter_status": "ILLUSTRATIVE_UNCALIBRATED_NOT_PROBABILITY_DISTRIBUTIONS",
+    "single_mechanism_at_a_time": true
+  }
+}

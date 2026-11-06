@@ -1,0 +1,10 @@
+# Exact-byte manifests for the new bounded physics task, not existing archives.
+cczps_lite/integration/physics_validation.py -text
+tests/test_physics_validation.py -text
+run_physics_validation.py -text
+run_physics_tests.py -text
+build_physics_report.py -text
+validate_physics_package.py -text
+tools/physics_qa/report_qa.cjs -text
+tools/physics_qa/package.json -text
+tools/physics_qa/package-lock.json -text
