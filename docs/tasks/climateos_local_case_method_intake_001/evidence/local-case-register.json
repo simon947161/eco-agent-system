@@ -1,0 +1,131 @@
+{
+  "A_status": "WITH_GAPS",
+  "facilities": [
+    {
+      "facility_id": "cooma-landfill",
+      "independent_site_id": "cooma-landfill-campus",
+      "longitude": 149.153052526,
+      "latitude": -36.248917539,
+      "crs": "GDA2020 source GA register PR136",
+      "role": "primary context",
+      "co_location": "compost/reuse share coordinates; one independent campus",
+      "height_m": null,
+      "coast_distance_m": null,
+      "annual_residual_landfill_t": null,
+      "methane_observations": null,
+      "absolute_pressure": null,
+      "permit": "EPL6194 index only"
+    },
+    {
+      "facility_id": "the-glen",
+      "independent_site_id": "the-glen-wwtp",
+      "longitude": 149.1137999,
+      "latitude": -36.20030315,
+      "crs": "GDA2020 source GA register PR136",
+      "role": "secondary wastewater context",
+      "co_location": null,
+      "height_m": null,
+      "coast_distance_m": null,
+      "annual_residual_landfill_t": null,
+      "methane_observations": null,
+      "absolute_pressure": null,
+      "permit": null
+    }
+  ],
+  "historical_activity": [
+    {
+      "site": "CoomaFOGOservice",
+      "start": "2015-01",
+      "end": null,
+      "period": "first8months",
+      "value": 416,
+      "unit": "tFOGO",
+      "source": "A6 p2-3",
+      "boundary": "collection/service, not landfill input",
+      "overlap_group": "FOGO2015"
+    },
+    {
+      "site": "CoomaFOGOservice",
+      "start": "2015-01",
+      "end": null,
+      "period": "first12months",
+      "value": 463,
+      "unit": "tFOGO",
+      "source": "A6 p2-3",
+      "boundary": "collection/service, not landfill input",
+      "overlap_group": "FOGO2015"
+    }
+  ],
+  "annual_facility_activity": [
+    {
+      "facility_id": "cooma-landfill",
+      "year": 2015,
+      "landfilled_t": null,
+      "organic_load_kg_COD_d": null,
+      "site_flow_ML_d": null,
+      "status": "NOT_FOUND_IN_REVIEWED_MATERIAL"
+    },
+    {
+      "facility_id": "cooma-landfill",
+      "year": 2024,
+      "landfilled_t": null,
+      "organic_load_kg_COD_d": null,
+      "site_flow_ML_d": null,
+      "status": "NOT_FOUND_IN_REVIEWED_MATERIAL"
+    },
+    {
+      "facility_id": "cooma-landfill",
+      "year": 2025,
+      "landfilled_t": null,
+      "organic_load_kg_COD_d": null,
+      "site_flow_ML_d": null,
+      "status": "NOT_FOUND_IN_REVIEWED_MATERIAL"
+    },
+    {
+      "facility_id": "the-glen",
+      "year": 2015,
+      "landfilled_t": null,
+      "organic_load_kg_COD_d": null,
+      "site_flow_ML_d": null,
+      "status": "NOT_FOUND_IN_REVIEWED_MATERIAL"
+    },
+    {
+      "facility_id": "the-glen",
+      "year": 2024,
+      "landfilled_t": null,
+      "organic_load_kg_COD_d": null,
+      "site_flow_ML_d": null,
+      "status": "NOT_FOUND_IN_REVIEWED_MATERIAL"
+    },
+    {
+      "facility_id": "the-glen",
+      "year": 2025,
+      "landfilled_t": null,
+      "organic_load_kg_COD_d": null,
+      "site_flow_ML_d": null,
+      "status": "NOT_FOUND_IN_REVIEWED_MATERIAL"
+    }
+  ],
+  "alignment": [
+    {
+      "pair": "B2methane x B2flow",
+      "status": "NOT_JOINED",
+      "reason": "flow repeated timestamps; timezone unknown"
+    },
+    {
+      "pair": "Cooma x BOM070217",
+      "status": "METADATA_ONLY",
+      "reason": "matched historical series not acquired; station height is not facility height"
+    },
+    {
+      "pair": "B2 x Cooma",
+      "status": "NO_SITE_TIME_TRANSFER",
+      "reason": "different and not geographically verified source; no local methane observed"
+    },
+    {
+      "pair": "Cooma landfilled tonnes x FOGO",
+      "status": "NOT_INTERCHANGEABLE",
+      "reason": "diversion and residual disposal differ"
+    }
+  ]
+}

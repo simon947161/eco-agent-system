@@ -1,0 +1,119 @@
+[
+  {
+    "id": "A1",
+    "url": "https://www.snowymonaro.nsw.gov.au/Environment-Waste-and-Weeds/Waste-and-Recycling/Environment-Operations-Act-and-Pollution-Monitoring",
+    "status": "BLOCKED_403_STOP",
+    "access": "search-index text only; no original monitoring files",
+    "finding": "Cooma EPL6194; Jindabyne EPL20060 listed; not independently verified licence originals",
+    "rights": "not admitted",
+    "limitation": "Known prior403 was mistakenly opened once again this session. No alternate endpoint or file retry; execution deviation recorded."
+  },
+  {
+    "id": "A2",
+    "url": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+    "status": "TEXT_READ_THEN_403_STOP",
+    "access": "web text; no original bytes",
+    "finding": "2024/25 annual report listed57MB, exceeds50MB per-file gate; wastewater AMP listed8MB",
+    "rights": "public reading only",
+    "limitation": "No57MB download; later find returned403; stopped."
+  },
+  {
+    "id": "A3",
+    "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/1/council/ipr/20252026/adopted-amp-wastewater-20250619.pdf",
+    "status": "TEXT_READ_THEN_403_STOP",
+    "access": "52-page web extraction initially accessible; no byte original",
+    "finding": "Cover2025-2035; adopted19June2025; printedp1/PDFindex6: regional8WWTP,5.0millionL/day,250km mains,32pumps,4100manholes",
+    "rights": "derived factual summary only",
+    "limitation": "Regional portfolio, not TheGlen load. Later text find returned403, stopped."
+  },
+  {
+    "id": "A4",
+    "url": "https://www.snowymonaro.nsw.gov.au/News-and-Media/News-articles/Monaro-High-School-students-embark-on-an-exciting-learning-journey-at-The-Glen",
+    "status": "INDEX_ONLY",
+    "access": "primary search index",
+    "finding": "11Aug2023 Council title associates TheGlen with Cooma wastewater treatment",
+    "rights": "metadata only",
+    "limitation": "No process or methane measurement established."
+  },
+  {
+    "id": "A5",
+    "url": "https://www.epa.nsw.gov.au/Working-together/Grants/organics-infrastructure-fund/Closed-organics-funding-programs/organics-collections",
+    "status": "TEXT_READ",
+    "access": "official web body",
+    "finding": "Links Cooma FOGO case study",
+    "rights": "link metadata only",
+    "limitation": "Grant index is not an emissions dataset."
+  },
+  {
+    "id": "A6",
+    "url": "https://www.epa.nsw.gov.au/sites/default/files/18p0747_snowymonaro-cooma-fogo-case-study.pdf",
+    "status": "WEB_TEXT_READ_BYTE_DOWNLOAD_403_STOP",
+    "access": "3-page web text read; original byte request403",
+    "finding": "2018 case: Jan2015 service start;3100households;416t first8months;463t first12months;51.6% red-bin organics reduction",
+    "rights": "EPA-owned text/data current CC BY4 policy; excluded photos not republished",
+    "limitation": "No raw PDF hash claimed. Overlapping periods cannot add. FOGO is not residual landfill tonnage or methane."
+  },
+  {
+    "id": "A7",
+    "url": "https://www.bom.gov.au/climate/data/stations/",
+    "status": "TEXT_READ",
+    "access": "official station directory",
+    "finding": "Some daily/monthly observations free; extraction may incur charges",
+    "rights": "metadata only; selected historical series not acquired",
+    "limitation": "No paid request made."
+  },
+  {
+    "id": "A8",
+    "url": "https://www.bom.gov.au/climate/averages/tables/cw_070217_Info.shtml",
+    "status": "INDEX_METADATA_ONLY",
+    "access": "official station metadata search index",
+    "finding": "Cooma AirportAWS070217; roundedlat-36.29,lon148.97,height930m",
+    "rights": "metadata only",
+    "limitation": "Latest obs IDN60801.94921 lists QNH/MSL; absolute station pressure and historical matched series not established."
+  },
+  {
+    "id": "RIGHTS-EPA",
+    "url": "https://www.epa.nsw.gov.au/About-us/Contact-us/Website-service-standards/copyright",
+    "status": "POLICY_READ",
+    "access": "current official body updated22Oct2026",
+    "finding": "EPA-owned materials CC BY4 with exceptions incl third-party content/photos",
+    "rights": "policy verification",
+    "limitation": "Older cached noncommercial wording conflicts; current primary body controls. No full photographic PDF redistribution."
+  },
+  {
+    "id": "B1",
+    "url": "https://data.csiro.au/collection/csiro:69356",
+    "status": "METADATA_ONLY_PURPOSE_MISMATCH",
+    "access": "public rendered DOM; no scientific rawfiles downloaded",
+    "finding": "DOI10.25919/np2s-4061;v1;22Oct2025;150files/55figures;CC BY-SA4.0;landfill techno-economics",
+    "rights": "record CC BY-SA4; confidential upstream inputs unavailable",
+    "limitation": "Not established methane-weather observations; no confidential-derived economics executed."
+  },
+  {
+    "id": "B2",
+    "url": "https://zenodo.org/records/17718964",
+    "status": "RAW_DATA_AUDIT_PASSED_WITH_LIMITS",
+    "access": "publisher metadata HTML plus2originalZIPs",
+    "finding": "JiulingLi,SewerCH4,v1,26Nov2025,DOI10.5281/zenodo.17718964;23author-labelled measured dissolved methane samples",
+    "rights": "CC BY4.0 verified embeddedrecord rights; attribution in package",
+    "limitation": "Sewer, not landfill/TheGlen. UQ authorship does not prove acquired site geography. Timezone/instrument/weather gaps."
+  },
+  {
+    "id": "B2-PAPER",
+    "url": "https://www.nature.com/articles/s44221-025-00574-w",
+    "status": "PAPER_TEXT_READ",
+    "access": "primary publisher article",
+    "finding": "Sharma etal,NatureWater4,196-205(2026),published2Feb2026;data linkedZenodo;SeweX proprietary",
+    "rights": "article not republished",
+    "limitation": "No proprietary software or upstream MATLAB executed. No model-skill ranking."
+  },
+  {
+    "id": "B3",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2589914725001781",
+    "status": "CONTACT_REQUIRED_403_STOP",
+    "access": "primary search index data-availability statement; direct403",
+    "finding": "DOI10.1016/j.wroa.2025.100480; wastewater methane Europe/Australia; data may be provided on request",
+    "rights": "no public rawdata licence established",
+    "limitation": "No contact, mirrors or alternate file/API requests."
+  }
+]

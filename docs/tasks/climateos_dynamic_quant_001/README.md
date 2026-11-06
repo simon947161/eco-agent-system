@@ -1,5 +1,7 @@
 # CLIMATEOS-DYNAMIC-QUANT-001
 
+2026-11-06 local-case continuation: [本地案例与合法方法验证双线成果](../climateos_local_case_method_intake_001/README.md). A WITH_GAPS; B bounded raw-data audit completed with limits; D3 DATA_NOT_READY and P1-A PENDING unchanged. Canonical CarbonOS index remains on separate PR132.
+
 唯一总任务；2026-11-05；独立研究分支；不合并、不部署。
 
 先读[中文创始人报告](FOUNDER_DYNAMIC_QUANTIFICATION_ROADMAP_ZH.md)，再查证据。

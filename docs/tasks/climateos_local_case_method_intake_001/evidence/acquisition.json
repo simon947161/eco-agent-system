@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "candidate": "A-FOGO",
+      "name": "cooma-fogo-2018.pdf",
+      "url": "https://www.epa.nsw.gov.au/sites/default/files/18p0747_snowymonaro-cooma-fogo-case-study.pdf",
+      "licence": "EPA CC BY4 current policy for EPA-owned text/data; excluded third-party photos not republished",
+      "kind": "OFFICIAL_HISTORICAL_CONTEXT_NOT_GAS_OBSERVATIONS",
+      "retrieved_at_utc": "2026-11-06T10:25:31.321179+00:00",
+      "status": "BLOCKED_STOPPED_NO_RETRY",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "candidate": "B2",
+      "name": "Data for Network SL1.zip",
+      "url": "https://zenodo.org/records/17718964/files/Data%20for%20Network%20SL1.zip?download=1",
+      "md5": "111905ec94e77b483048b974c38564e9",
+      "licence": "CC BY 4.0 verified in publisher embedded metadata; Li,Jiuling, Sewer CH4 v1, DOI10.5281/zenodo.17718964",
+      "kind": "DATASET_FILE_NOT_YET_QC_ADMITTED",
+      "retrieved_at_utc": "2026-11-06T10:25:31.475683+00:00",
+      "http_status": 200,
+      "mime": "application/octet-stream",
+      "final_url": "https://zenodo.org/records/17718964/files/Data%20for%20Network%20SL1.zip?download=1",
+      "status": "ACQUIRED_NOT_YET_ADMITTED",
+      "bytes": 61969,
+      "sha256": "d559b1c81e31090c7563accea4091b215c4a0d533d0a23d79b251dd83b9cb589",
+      "local_original": "runtime_data/local_case_method_intake/Data for Network SL1.zip"
+    },
+    {
+      "candidate": "B2",
+      "name": "Fig2_S2.zip",
+      "url": "https://zenodo.org/records/17718964/files/Fig2_S2.zip?download=1",
+      "md5": "9efacaa75f34959249f509727ac6350c",
+      "licence": "CC BY 4.0, same verified record",
+      "kind": "SOURCE_DATA_AND_CODE_NOT_YET_QC_ADMITTED",
+      "retrieved_at_utc": "2026-11-06T10:25:33.213513+00:00",
+      "http_status": 200,
+      "mime": "application/octet-stream",
+      "final_url": "https://zenodo.org/records/17718964/files/Fig2_S2.zip?download=1",
+      "status": "ACQUIRED_NOT_YET_ADMITTED",
+      "bytes": 752053,
+      "sha256": "11a5df8153da0d652459a0c7462fd5728030c7fa3cec1a48b207f4a9d7708b36",
+      "local_original": "runtime_data/local_case_method_intake/Fig2_S2.zip"
+    }
+  ],
+  "acquired_total_bytes": 814022,
+  "cap_total_bytes": 100000000,
+  "cap_single_bytes": 50000000
+}

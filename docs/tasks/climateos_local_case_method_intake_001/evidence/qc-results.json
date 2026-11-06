@@ -1,0 +1,226 @@
+{
+  "status": "RAW_DATA_AUDIT_PASSED_WITH_LIMITS",
+  "measurement_operator": "author-labelled dissolved CH4 concentration; not atmospheric mole fraction or emission flux",
+  "site_label": "SL1; same values labelled Moonstone in author plotting input; geography and sampling instrumentation not established from acquired originals",
+  "count": 23,
+  "missing_time": 0,
+  "missing_value": 0,
+  "duplicate_timestamps": 0,
+  "time_start_naive": "2016-03-03T09:00:00",
+  "time_end_naive": "2016-03-04T08:00:00",
+  "timezone": null,
+  "utc_conversion_performed": false,
+  "unit": "mg/L dissolved CH4",
+  "mean_sample_weighted": 9.898099434782608,
+  "median": 9.459737,
+  "min": 6.705469,
+  "max": 13.04,
+  "not_time_weighted": true,
+  "elapsed_hours": 23.0,
+  "member_sha256": "0539ce52342c106bfcd3e23316456868074cb945e3d381796a837a6872caa25d",
+  "plotting_input_exact_match": true,
+  "independent_dataset_count": 1,
+  "flow": {
+    "rows": 1705,
+    "unique_timestamps": 311,
+    "excess_rows_on_repeated_time": 1394,
+    "timestamps_with_repeats": 194,
+    "start_naive": "2016-03-03T00:00:00",
+    "end_naive": "2016-03-05T00:00:00",
+    "row_arithmetic_mean_lps": 18.029259809510265,
+    "author_summary_mean_lps": 18.02925980951026,
+    "author_summary_mean_reproduced": true,
+    "physical_time_mean_established": false,
+    "join_to_methane_performed": false
+  },
+  "feed_schema": [
+    {
+      "column_1_based": 1,
+      "label": "Fermentable Substrate (SF)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 4,
+      "label": "Total Acetate (SA)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 7,
+      "label": "Rapidly hydrolyzable substrate (XS1)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 10,
+      "label": "Slowly hydrolyzable substrate (XS2)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 13,
+      "label": "Suspended biomass (XBw)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 16,
+      "label": "Dissolved sulfide (SH2S)",
+      "unit_or_header": "Concentration (mg S/L)"
+    },
+    {
+      "column_1_based": 19,
+      "label": "Dissolved Oxygen (SO)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 22,
+      "label": "Nitrate (SNO)",
+      "unit_or_header": "Concentration (mg N/L)"
+    },
+    {
+      "column_1_based": 25,
+      "label": "Sulfate (SSO4)",
+      "unit_or_header": "Concentration (mg S/L)"
+    },
+    {
+      "column_1_based": 28,
+      "label": "Intermediate S (SS1)",
+      "unit_or_header": "Concentration (mg S/L)"
+    },
+    {
+      "column_1_based": 31,
+      "label": "Intermediate S (SS2)",
+      "unit_or_header": "Concentration (mg S/L)"
+    },
+    {
+      "column_1_based": 34,
+      "label": "Phosphate (PO4)",
+      "unit_or_header": "Concentration (mg P/L)"
+    },
+    {
+      "column_1_based": 37,
+      "label": "Total Ammonia (SNH3)",
+      "unit_or_header": "Concentration (mg N/L)"
+    },
+    {
+      "column_1_based": 40,
+      "label": "Carbonate (SCO3)",
+      "unit_or_header": "Concentration (mg CaCO3/L)"
+    },
+    {
+      "column_1_based": 43,
+      "label": "Ferrous ions (SFeII)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 46,
+      "label": "Ferric ion (SFeIII)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 49,
+      "label": "Magnesium (SMg)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 52,
+      "label": "Ferrous Sulfide (FeIIS)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 55,
+      "label": "Ferrous phosphate (FeIIPO4)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 58,
+      "label": "Ferric Sulfide (FeIIIS)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 61,
+      "label": "Ferric Phosphatee (FeIIIPO4)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 64,
+      "label": "Magesium Hydroxide (MgOH)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 67,
+      "label": "Total cations (STCat)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 70,
+      "label": "Hydrogen (SH2)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 73,
+      "label": "Methane (SCH4)",
+      "unit_or_header": "  Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 76,
+      "label": "Propionate (SProp)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 79,
+      "label": "Gas phase oxygen (O2g)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 82,
+      "label": "Carbon di-oxide (CO2g)",
+      "unit_or_header": "Concentration (mg/L)"
+    },
+    {
+      "column_1_based": 85,
+      "label": "H2S gas (H2Sg)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 88,
+      "label": "Ammonia gas (NH3g)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 91,
+      "label": "Methane gas (CH4g)",
+      "unit_or_header": "Concentration (mg COD/L)"
+    },
+    {
+      "column_1_based": 94,
+      "label": "pH",
+      "unit_or_header": "Unit"
+    }
+  ],
+  "gaps": [
+    "timezone/UTC",
+    "instrument, calibration, analytical uncertainty",
+    "sampling and phase-transfer protocol",
+    "site coordinates and verified geographic mapping",
+    "independent validation split",
+    "co-located meteorology and station absolute pressure"
+  ],
+  "D3": "DATA_NOT_READY",
+  "P1-A": "PENDING",
+  "science_review": "PENDING",
+  "executed": [
+    "archive/member hash checks",
+    "read-only field/QC audit",
+    "author-labelled measured plotting input cross-check",
+    "author flow summary arithmetic reproduction",
+    "sample descriptive statistics"
+  ],
+  "not_executed": [
+    "upstream MATLAB",
+    "SeweX",
+    "new fitting/inversion",
+    "gas ideal-law conversion on dissolved samples",
+    "C x Q emission estimate",
+    "P2/P4 real calibration",
+    "ACCU/AWT",
+    "production deployment"
+  ]
+}

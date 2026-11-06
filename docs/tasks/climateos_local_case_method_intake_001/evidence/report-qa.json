@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "report_utf8": true,
+    "embedded_image_present": true,
+    "external_scripts": false,
+    "figure_visually_inspected": true,
+    "browser_screenshot_verified": false
+  },
+  "limitation": "Two headless browser invocations exited without producing a screenshot; offline HTML layout not browser-verified. Scientific plot visually reviewed, HTML content and embedded-image integrity checked."
+}
