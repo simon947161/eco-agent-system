@@ -1,0 +1,230 @@
+{
+  "design_id": "CLIMATEOS-DYNAMIC-QUANT-001-COASTAL-INLAND-RESEARCH",
+  "status": "DESIGN_ONLY_NOT_DEPLOYED",
+  "question": "Compare coastal and inland facility contexts without presuming a distance-pressure-emission causal law",
+  "fields": [
+    {
+      "name": "latitude_deg",
+      "unit": "degree",
+      "role": "location_index_and_proxy",
+      "requirements": "EPSG:4326 or recorded native CRS",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "longitude_deg",
+      "unit": "degree",
+      "role": "location_index_and_proxy",
+      "requirements": "Axis order and source CRS required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "site_elevation_m",
+      "unit": "m",
+      "role": "physical_context",
+      "requirements": "Vertical datum and source DEM/survey required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "sensor_height_agl_m",
+      "unit": "m",
+      "role": "measurement_geometry",
+      "requirements": "Above ground; distinct from altitude",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "distance_to_coast_m",
+      "unit": "m",
+      "role": "location_proxy",
+      "requirements": "Nearest coastline segment; version/year/datum/estuary and island rule required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "coastal_group",
+      "unit": null,
+      "role": "analysis_stratum",
+      "requirements": "Threshold preregistered after source feasibility; no default classification",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "station_pressure_pa",
+      "unit": "Pa",
+      "role": "direct_physical_input",
+      "requirements": "Actual station pressure; not sea-level adjusted",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "sea_level_pressure_pa",
+      "unit": "Pa",
+      "role": "synoptic_context_only",
+      "requirements": "Never substitute for actual gas-law pressure",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "pressure_tendency_pa_per_h",
+      "unit": "Pa/h",
+      "role": "mechanism_candidate",
+      "requirements": "Window, smoothing and lag preregistered; derived from station pressure",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "cover_or_collection_pressure_difference_pa",
+      "unit": "Pa",
+      "role": "direct_physical_input",
+      "requirements": "Reference pressure, sign convention and extraction state required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "temperature_k",
+      "unit": "K",
+      "role": "process_driver",
+      "requirements": "Sensor location and averaging required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "water_vapour_partial_pressure_pa",
+      "unit": "Pa",
+      "role": "measurement_conversion_input",
+      "requirements": "Must align with gas sample",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "wind_speed_m_per_s",
+      "unit": "m/s",
+      "role": "transport_driver",
+      "requirements": "Height and reference frame required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "wind_direction_deg",
+      "unit": "degree",
+      "role": "transport_driver",
+      "requirements": "Meteorological from-direction; no ambiguous convention",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "boundary_layer_stability",
+      "unit": null,
+      "role": "transport_driver",
+      "requirements": "Measured or validated derived method and limitations",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "sea_breeze_event",
+      "unit": null,
+      "role": "derived_event_candidate",
+      "requirements": "Independent criteria; onshore wind alone insufficient",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "terrain_slope_aspect_valley",
+      "unit": null,
+      "role": "physical_context",
+      "requirements": "DEM version/grid/vertical datum and derivation required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "landfill_waste_history_and_composition",
+      "unit": null,
+      "role": "source_input_and_comparability",
+      "requirements": "Mass units, time and waste categories required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "cover_condition_and_collection_state",
+      "unit": null,
+      "role": "source_input_and_comparability",
+      "requirements": "Cover moisture and gas recovery/negative-pressure operation",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "wastewater_load_and_process",
+      "unit": null,
+      "role": "source_input_and_comparability",
+      "requirements": "Separate wastewater cohort; load, flow and treatment method",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "ch4_dry_mole_fraction_ppb",
+      "unit": "nmol/mol",
+      "role": "observation_outcome",
+      "requirements": "Background and calibration required; not emissions",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "ch4_mass_concentration_mg_per_m3",
+      "unit": "mg/m3",
+      "role": "observation_outcome",
+      "requirements": "Actual or reference pressure/temperature and dry/wet basis required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    },
+    {
+      "name": "ch4_emission_rate_kg_per_h",
+      "unit": "kg/h",
+      "role": "independently_constrained_outcome",
+      "requirements": "Flux/mass-balance/validated inverse method and uncertainty required",
+      "value": null,
+      "admission": "NOT_ADMITTED"
+    }
+  ],
+  "required_provenance": [
+    "source_url_or_local_archive",
+    "source_version",
+    "licence",
+    "raw_sha256_when_acquired",
+    "retrieval_time_utc",
+    "observation_interval_utc",
+    "original_timezone",
+    "horizontal_crs",
+    "vertical_datum_where_relevant",
+    "instrument_and_calibration",
+    "sampling_height",
+    "uncertainty",
+    "qc_status",
+    "missingness_reason",
+    "facility_id",
+    "independent_site_id",
+    "event_id"
+  ],
+  "comparison_design": {
+    "within_site": "Multiple independent rising/falling pressure and independently identified sea-breeze events; geography constant within site",
+    "between_site": "Multiple comparable facilities; match/stratify waste/process/age/collection/load/season; check common support",
+    "distance_primary": "Continuous; no unapproved numeric coastal threshold",
+    "causal_target": "Declare overall geographic comparison vs pressure/transport mechanism before choosing adjustment variables",
+    "validation": "Hold out whole sites and weather events; assess serial/spatial dependence and measurement uncertainty",
+    "landfill_vs_wastewater": "Separate cohorts and process models; do not pool facility types as exchangeable"
+  },
+  "coastline_candidate": {
+    "url": "https://knowledge.dea.ga.gov.au/data/product/dea-coastlines/",
+    "version_read": "3.1.0",
+    "licence_metadata": "CC BY 4.0",
+    "status": "METADATA_READ_NOT_DOWNLOADED",
+    "selection_and_distance_computation": "NOT_RUN"
+  },
+  "existing_pr136_points": "Context only; not a coastal-inland emissions cohort; no distance/elevation/group assigned",
+  "site_measurements": [],
+  "emission_results": null,
+  "causal_effect_results": null,
+  "gwp_altitude_multiplier": "NOT_AUTHORIZED_OR_ESTABLISHED"
+}

@@ -1,0 +1,117 @@
+{
+  "review_date_utc": "2026-11-06",
+  "source_type": "Literature and repository review; not admitted gas observations",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "NOAA/NWS Pressure Definitions",
+      "url": "https://www.weather.gov/bou/pressure_definitions",
+      "access_status": "PRIMARY_BODY_READ",
+      "use_and_limits": "Station pressure vs sea-level adjusted pressure"
+    },
+    {
+      "id": "S2",
+      "title": "NOAA CarbonTracker-CH4 glossary",
+      "url": "https://gml.noaa.gov/ccgg/carbontracker-ch4/glossary.html",
+      "access_status": "PRIMARY_BODY_READ",
+      "use_and_limits": "Dry mole fraction, flux, column observation distinctions"
+    },
+    {
+      "id": "S3",
+      "title": "Xu et al. 2014",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2013GB004571",
+      "access_status": "PRIMARY_BODY_READ",
+      "use_and_limits": "Barometric pumping at one landfill without active gas collection; limitation retained"
+    },
+    {
+      "id": "S4",
+      "title": "NIST methane Henry law data",
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C74828&Mask=10",
+      "access_status": "PRIMARY_BODY_READ",
+      "use_and_limits": "Equilibrium dissolved gas relation; no universal emission coefficient"
+    },
+    {
+      "id": "S5",
+      "title": "IPCC 2019 Wastewater chapter 6",
+      "url": "https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/5_Volume5/19R_V5_6_Ch06_Wastewater.pdf",
+      "access_status": "PRIMARY_PDF_TEXT_READ",
+      "use_and_limits": "Treatment pathways; dissolved methane; separate N2O"
+    },
+    {
+      "id": "S6",
+      "title": "HITRAN definitions and units",
+      "url": "https://hitran.org/docs/definitions-and-units/",
+      "access_status": "PRIMARY_BODY_READ",
+      "use_and_limits": "Pressure and temperature line shape, normalized profiles and line strength"
+    },
+    {
+      "id": "S7",
+      "title": "Etminan et al. 2016",
+      "url": "https://doi.org/10.1002/2016GL071930",
+      "access_status": "PRIMARY_BODY_READ",
+      "use_and_limits": "Shortwave and spectral overlap; no site altitude coefficient"
+    },
+    {
+      "id": "S8",
+      "title": "IPCC AR6 WGI chapter 6",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-6/",
+      "access_status": "OFFICIAL_INDEX_BODY_READ_DIRECT_PAGE_403",
+      "use_and_limits": "Global mixing and direct/indirect effects; no site-specific numerical claim"
+    },
+    {
+      "id": "S9",
+      "title": "IPCC AR6 WGI chapter 7",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/",
+      "access_status": "DIRECT_PAGE_AND_PDF_403_NOT_BYPASSED",
+      "use_and_limits": "Not used for unverified equations or numerical factors"
+    },
+    {
+      "id": "S10",
+      "title": "K-State Xu repository page",
+      "url": "https://krex.k-state.edu/items/91ad5068-aef7-4d81-bb0f-26973491ed7c",
+      "access_status": "DIRECT_PAGE_403_NOT_BYPASSED",
+      "use_and_limits": "Primary article independently readable; no denied dataset retried"
+    },
+    {
+      "id": "S11",
+      "title": "NOAA Sea Breeze",
+      "url": "https://www.noaa.gov/jetstream/ocean/sea-breeze",
+      "access_status": "PRIMARY_BODY_READ",
+      "use_and_limits": "Mechanism and dependence on synoptic wind; no site emission effect inferred"
+    },
+    {
+      "id": "S12",
+      "title": "GA DEA Coastlines",
+      "url": "https://knowledge.dea.ga.gov.au/data/product/dea-coastlines/",
+      "access_status": "PRIMARY_METADATA_BODY_READ",
+      "use_and_limits": "Version 3.1.0, annual mean-sea-level coastline candidate; no geometry acquired or distance computed"
+    }
+  ],
+  "repository_state": {
+    "132": {
+      "draft": true,
+      "state": "OPEN",
+      "head": "2ec66ae41ae2e1d4a0f1aaa92aa98c9f0ff4c5b0",
+      "gas_observation_admission": "DATA_NOT_READY"
+    },
+    "135": {
+      "draft": true,
+      "state": "OPEN",
+      "head": "2dea3defbb843cfcd8792751ffc21f31fa241616"
+    },
+    "136": {
+      "draft": true,
+      "state": "OPEN",
+      "head": "be14a2a7d99fde6815f6cd98d39faa07fc3c8e35"
+    }
+  },
+  "conversation": {
+    "url": "https://chatgpt.com/c/6aeb99ef-20b0-83ec-a1fe-b055bce78071?messageId=863f6550-7767-4a12-9998-7a48e48ad3da",
+    "title": "制定Codex任务书",
+    "public_web": "NO_READABLE_BODY",
+    "connected_history": "READ_SUCCEEDED",
+    "exact_message_id_resolution": "Not separately verified; conversation history read by conversation id"
+  },
+  "simulation": "NONE",
+  "publication": "USER_AUTHORIZED_DRAFT_PR_PREPARATION_ACTUAL_STATUS_IN_PR"
+}

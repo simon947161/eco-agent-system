@@ -21,3 +21,14 @@ MatrixOne UI capture timed out; no deployment or paid job executed.
 Evidence: FACILITY_SPATIAL_CONTINUATION_ZH.md and facility_evidence/.
 Next: recover read-only MatrixOne inspection; verify facility identity and
 dated public observations; retain D3 DATA_NOT_READY and existing no-run gates.
+
+2026-11-06 continuation: literature-based altitude/pressure/methane explanation
+and testable landfill/wastewater plan saved in METHANE_ALTITUDE_PRESSURE_ZH.md.
+Source register and hypothetical arithmetic run included. Context-load ran to
+the isolated workspace. No field measurements, emission estimate, radiative
+model or front-end publication. Source conversation recovered through connected
+history. Remote publication not attempted for this new review; local review
+branch research/climateos-methane-pressure-review-003. Reconcile this record
+without promoting proposed hypotheses into validated site findings.
+
+2026-11-06 additional authorization: user approved publishing pressure review as Draft PR. Coastal/inland framework now records geographic proxies separately from measured process drivers; all unobserved fields remain null. No new emission estimate or model execution. Reconcile publication status from the new PR.
