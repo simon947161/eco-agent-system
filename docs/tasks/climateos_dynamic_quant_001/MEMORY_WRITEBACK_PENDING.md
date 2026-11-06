@@ -30,3 +30,5 @@ model or front-end publication. Source conversation recovered through connected
 history. Remote publication not attempted for this new review; local review
 branch research/climateos-methane-pressure-review-003. Reconcile this record
 without promoting proposed hypotheses into validated site findings.
+
+2026-11-06 additional authorization: user approved publishing pressure review as Draft PR. Coastal/inland framework now records geographic proxies separately from measured process drivers; all unobserved fields remain null. No new emission estimate or model execution. Reconcile publication status from the new PR.

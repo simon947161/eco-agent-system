@@ -71,6 +71,20 @@
       "url": "https://krex.k-state.edu/items/91ad5068-aef7-4d81-bb0f-26973491ed7c",
       "access_status": "DIRECT_PAGE_403_NOT_BYPASSED",
       "use_and_limits": "Primary article independently readable; no denied dataset retried"
+    },
+    {
+      "id": "S11",
+      "title": "NOAA Sea Breeze",
+      "url": "https://www.noaa.gov/jetstream/ocean/sea-breeze",
+      "access_status": "PRIMARY_BODY_READ",
+      "use_and_limits": "Mechanism and dependence on synoptic wind; no site emission effect inferred"
+    },
+    {
+      "id": "S12",
+      "title": "GA DEA Coastlines",
+      "url": "https://knowledge.dea.ga.gov.au/data/product/dea-coastlines/",
+      "access_status": "PRIMARY_METADATA_BODY_READ",
+      "use_and_limits": "Version 3.1.0, annual mean-sea-level coastline candidate; no geometry acquired or distance computed"
     }
   ],
   "repository_state": {
@@ -99,5 +113,5 @@
     "exact_message_id_resolution": "Not separately verified; conversation history read by conversation id"
   },
   "simulation": "NONE",
-  "publication": "LOCAL_REVIEW_ONLY"
+  "publication": "USER_AUTHORIZED_DRAFT_PR_PREPARATION_ACTUAL_STATUS_IN_PR"
 }

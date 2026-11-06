@@ -19,4 +19,4 @@ Founder复核修订已加入[成熟科学与专业智能体连接复核](PROFESS
 
 2026-11-05 continuation: [设施空间证据中文报告](FACILITY_SPATIAL_CONTINUATION_ZH.md).
 
-2026-11-06 local review: [给舒民：海拔、气压、甲烷与温室效应](METHANE_ALTITUDE_PRESSURE_ZH.md). Literature review and hypothetical arithmetic only; not published to the ClimateOS front end.
+2026-11-06 pressure review: [给舒民：海拔、气压、甲烷与温室效应](METHANE_ALTITUDE_PRESSURE_ZH.md). Includes coastal/inland research framework; literature and hypothetical arithmetic only, not published to the ClimateOS front end.
