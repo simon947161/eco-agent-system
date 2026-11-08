@@ -1,0 +1,3846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" type="image/png" href="https://static.icos-cp.eu/images/favicon.png"/>
+	<link rel="stylesheet" href="https://static.icos-cp.eu/css/bootstrap/5.3.8/icos-bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+	<style>
+
+	@import url('https://static.icos-cp.eu/fonts/OpenSans.css');
+
+	/** Generic page styling and icons **/
+	:root {
+		--light-gray: #F5F5F6;
+		--light-gray-rgb: 245, 245, 246;
+		--blue-10: #E5F7FA;
+		--blue-10-rgb: 229, 247, 250;
+		--blue-20: #CCEEF3;
+		--blue-20-rgb: 204, 238, 243;
+		--icos-violet: #5C2B93;
+		--icos-violet-rgb: 92, 43, 147;
+	}
+
+	main {
+		font-size: 14px;
+		.btn,
+		.form-control,
+		.form-select,
+		.dropdown-menu {
+			font-size: 14px;
+		}
+	}
+
+	h4, h5, h6 {
+		margin-bottom: 0.5rem;
+	}
+
+	/* Icons */
+
+	.right-arrow::after,
+	.down-arrow::after,
+	.external-link::after,
+	a[target=_blank]:not(.hide-external)::after,
+	.download::after,
+	.date::before,
+	.success::before,
+	.warning::before,
+	.info::before,
+	.danger::before {
+		font-family: "Font Awesome 6 Free";
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		font-weight: 900;
+	}
+
+	.right-arrow::after,
+	.down-arrow::after,
+	.external-link::after,
+	a[target=_blank]:not(.hide-external)::after,
+	.download::after {
+		padding-left: 0.65rem;
+		margin-right: 0.25rem;
+	}
+
+	.date::before,
+	.success::before,
+	.warning::before,
+	.info::before,
+	.danger::before {
+		padding-right: 0.65rem;
+	}
+
+	/* Icon content */
+	.right-arrow::after {
+		content: "\f178";
+	}
+
+	.down-arrow::after {
+		content: "\f063";
+	}
+
+	.external-link::after,
+	a[target=_blank]:not(.hide-external):not(.btn)::after {
+		content: "\f08e";
+	}
+
+	.download::after {
+		content: "\f019";
+	}
+
+	.date::before {
+		content: "\f073";
+	}
+
+	.success::before {
+		content: "\f058";
+	}
+
+	.warning::before {
+		content: "\f071";
+	}
+
+	.info::before {
+		content: "\f05a";
+	}
+
+	.danger::before {
+		content: "\f057";
+	}
+
+	/* Additional font size utilities */
+	.fs-xs {
+		font-size: 0.75rem;
+	}
+
+	.fs-sm {
+		font-size: 0.875rem;
+	}
+
+	.fs-md {
+		font-size: 1rem;
+	}
+
+	.fs-lg {
+		font-size: 1.125rem;
+	}
+
+	/* Violet color variants */
+	.text-violet {
+		--bs-text-opacity: 1;
+		color: rgba(var(--icos-violet-rgb), var(--bs-text-opacity)) !important;
+	}
+
+	.bg-violet {
+		--bs-bg-opacity: 1;
+		background-color: rgba(var(--icos-violet-rgb), var(--bs-bg-opacity)) !important;
+	}
+
+	/* Blue 10 color variants */
+	.text-blue-10 {
+		--bs-text-opacity: 1;
+		color: rgba(var(--blue-10-rgb), var(--bs-text-opacity)) !important;
+	}
+
+	.bg-blue-10 {
+		--bs-bg-opacity: 1;
+		background-color: rgba(var(--blue-10-rgb), var(--bs-bg-opacity)) !important;
+	}
+
+	.clear-both {
+		clear: both;
+	}
+
+	.checkbox input,
+	.radio input {
+		border-color: var(--bs-secondary);
+	}
+
+	a:hover {
+		color: var(--bs-danger);
+	}
+
+	/** Header **/
+	.header .navbar-brand img {
+		height: 36px;
+	}
+
+	.header #search-block-form {
+		padding: 0px 15px;
+		#edit-submit {
+			font-size: 14px;
+		}
+	}
+
+	.header .cart-link {
+		display: flex;
+	}
+
+	.header .header-link a, .menu--main .menu-link a {
+		color: var(--bs-dark);
+		text-decoration: none;
+	}
+
+	.header .header-link a:hover, .menu--main .menu-link a:hover {
+		color: var(--bs-danger);
+		text-decoration: underline;
+		text-underline-offset: 20%;
+	}
+
+	#search-block-form #edit-keys {
+		width: 220px;
+	}
+
+	/* Breadcrumbs */
+	.breadcrumb {
+		font-size: 0.875rem;
+		--bs-breadcrumb-divider: "\f105";
+		--bs-breadcrumb-divider-color: var(--bs-primary);
+		margin-top: 1rem;
+
+		a {
+			text-decoration-style: underline;
+			text-decoration-thickness: 6%;
+			text-decoration-skip-ink: none;
+			text-underline-offset: 25%;
+			text-underline-position: from-font;
+		}
+	}
+
+	a:hover {
+		text-decoration-thickness: 6%;
+		text-decoration-skip-ink: none;
+		text-underline-offset: 25%;
+		text-underline-position: from-font;
+	}
+
+	.breadcrumb-item::before {
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+	}
+
+	/** Footer **/
+	footer {
+		padding: 2rem 5rem;
+		/*margin-top: 8.75rem;*/
+
+		.navbar-brand img {
+			height: 60px;
+		}
+
+		a,
+		a:hover,
+		a:focus-within {
+			color: var(--bs-light);
+		}
+
+		.footer-bottom .list-inline-item:not(:last-child) {
+			margin-right: 2rem;
+		}
+
+		ul.social-media .list-inline-item:not(:last-child) {
+			margin-right: 0.875rem;
+		}
+
+		hr {
+			margin-top: 2.5rem;
+			margin-bottom: 2.5rem;
+			height: 1px;
+			opacity: 0.16;
+			background: var(--bs-light);
+		}
+
+		h3,
+		.h6 {
+			margin-bottom: 1rem;
+		}
+
+		.footer-bottom {
+			margin-top: 6rem;
+		}
+
+		a:hover, a:focus-within, a:not([class]):hover, a:not([class]):focus-within {
+			text-decoration: underline;
+		}
+	}
+
+	a.social-media-icon {
+		font-size: 20px;
+		text-decoration: none !important;
+		font-weight: 400;
+		transition: color 0.1s;
+	}
+
+	a.social-media-icon:hover,
+	a.social-media-icon:focus-within {
+		color: #f7bbd0 !important;
+	}
+
+	/** Menu **/
+	.menu--main {
+		width: 100%;
+		padding-left: calc((100% - 1400px)/2);
+		padding-right: calc((100% - 1400px)/2);
+	}
+
+	#cp_theme_d10_menu {
+		font-size: 0.9375rem;
+
+		.dropdown-menu {
+			font-size: 0.9375rem;
+		}
+
+		a {
+			text-decoration: none;
+			display: inline-block;
+			transition: color 0.1s;
+		}
+
+		a:hover,
+		a:focus-within {
+			color: var(--bs-danger) !important;
+			text-decoration: underline 10%;
+		}
+
+		.top-link:hover,
+		.top-node:hover .top-link,
+		.top-link:focus-within,
+		.top-node:focus-within .top-link,
+		.menu-link a:hover,
+		.menu-link a:focus-within {
+			text-decoration: underline 5%;
+			text-underline-offset: 20%;
+			color: var(--bs-dark) !important;
+		}
+	}
+
+	/** Responsive media queries **/
+
+	/* Larger than Bootstrap L breakpoint */
+	@media all and (min-width: 992px) {
+		.mobile {
+			display: none;
+		}
+
+		#cp_theme_d10_menu {
+			.top-node .dropdown-menu {
+				display: flex;
+				flex-wrap: nowrap;
+				left: 0;
+				width: 100%;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				background: none;
+				box-shadow: none;
+				border: 0;
+				visibility: hidden;
+				opacity: 0;
+				transform: translateY(-6px);
+				clip-path: inset(0 0 100% 0);
+				transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, clip-path 0.2s ease-in-out;
+
+				&>div {
+					width: 19%;
+				}
+			}
+
+			.menu-backdrop {
+				border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+				z-index: 8;
+				position: absolute;
+				top: 38.5px;
+				left: 0;
+				width: 100%;
+				background: white;
+				box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+				transition: height 0.2s ease-in-out;
+			}
+		}
+	}
+
+	/* Smaller than Bootstrap L breakpoint */
+	@media all and (max-width: 991.999px) {
+		#cp_theme_d10_menu {
+			.nav {
+				padding-bottom: 1rem;
+			}
+
+			.nav>div>a {
+				justify-content: flex-start !important;
+			}
+
+			.top-node .top-link {
+				display: block !important;
+			}
+
+			.top-node .dropdown-menu {
+				border: none !important;
+				box-shadow: none;
+				padding-left: 3rem;
+				padding-top: 0 !important;
+				padding-bottom: 0 !important;
+
+				.list-item>div.pt-3.pb-3 {
+					height: 0;
+					font-size: 0;
+					padding: 0 !important;
+				}
+			}
+
+			.top-node.open .dropdown-menu {
+				display: block;
+			}
+
+			.top-node.open>a {
+				font-weight: 600;
+			}
+
+			.menu-level-3 {
+				padding-left: 2rem;
+			}
+
+			.menu-backdrop {
+				display: none;
+			}
+		}
+
+		footer {
+			padding-left: 3rem;
+			padding-right: 3rem;
+
+			.region-footer-third,
+			.region-footer-fourth {
+				margin-top: 2rem;
+			}
+
+			.footer-bottom {
+				margin-top: 3rem;
+
+				.list-inline-item {
+					display: block;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+
+		.header .header-link {
+			display: none;
+		}
+	}
+
+	/* Smaller than Bootstrap M breakpoint */
+	@media all and (max-width: 767.98px) {
+		footer {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+	}
+
+	/* Smaller than Bootstrap S breakpoint */
+	@media all and (max-width: 575.98px) {
+		footer {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+
+		#search-block-form {
+			#edit-keys {
+				display: none;
+			}
+
+			#edit-submit {
+				border-radius: var(--bs-btn-border-radius);
+				padding-top: 7.5px;
+				padding-bottom: 7.5px;
+			}
+		}
+	}
+
+	/* Larger than Bootstrap XXL breakpoint */
+	@media all and (min-width: 1400px) {
+		.header {
+			width: 100%;
+			padding-left: calc((100% - 1400px)/2);
+			padding-right: calc((100% - 1400px)/2);
+		}
+
+		.menu--main {
+			width: 100%;
+			padding-left: calc((100% - 1400px)/2);
+			padding-right: calc((100% - 1400px)/2);
+		}
+
+		#cp_theme_d10_menu {
+			.top-node .dropdown-menu {
+				padding-left: calc((100% - 1400px)/2 + 1rem);
+				padding-right: calc((100% - 1400px)/2 + 1rem);
+			}
+		}
+	}
+</style>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Matomo Tag Manager -->
+	<script>
+		var _mtm = window._mtm = window._mtm || [];
+		_mtm.push({ 'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start' });
+		(function () {
+			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+			g.async = true; g.src = 'https://matomo.icos-cp.eu/js/container_4oejbJ0i.js'; s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+	<!-- End Matomo Tag Manager -->
+
+	
+	<script>
+		
+window.addEventListener("load", function(){
+
+	const menuButton = document.getElementById("menu-button");
+
+	if (menuButton !== null) {
+		const ddToggles = document.querySelectorAll("#cp_theme_d10_menu .top-node .drop-down-toggle");
+		const menuContainer = document.querySelector("#cp_theme_d10_menu");
+
+		ddToggles.forEach((ddToggle) => {
+			ddToggle.addEventListener('click', function (event) {
+				let target = ddToggle.closest(".top-node");
+				if (window.innerWidth < 992) {
+					target.classList.toggle("open");
+				}
+				event.preventDefault();
+			});
+
+			ddToggle.addEventListener('keyup', function (event) {
+				if (event.key === "Enter") {
+					let target = ddToggle.closest(".top-node");
+					if (window.innerWidth < 992) {
+						target.classList.toggle("open");
+					}
+					event.preventDefault();
+				}
+			});
+		});
+
+		menuContainer.addEventListener('mouseout', function (event) {
+			if (event.target === document.activeElement) {
+				event.target.blur();
+			}
+		});
+
+		const menuBackdrop = document.querySelector(".menu-backdrop");
+		let committedTopNode = null;
+		let backdropHeight = 0;
+		let dwellTimer = null;
+		let closeTimer = null;
+		let switchTimer = null;
+		const DWELL_TIME = 200;
+		const CLOSE_GRACE = 100;
+		const SWITCH_DELAY = 160;
+
+
+		function revealDropdown(topNode) {
+			if (committedTopNode !== topNode) { return; }
+			const dropdown = topNode.querySelector(':scope > .dropdown-menu');
+			if (!dropdown) { return; }
+			const prevHeight = backdropHeight;
+			const newHeight = dropdown.offsetHeight;
+			backdropHeight = newHeight;
+			menuBackdrop.style.height = newHeight + 'px';
+
+			if (prevHeight > 0) { // dropdown already visible
+				const startClipPct = newHeight > prevHeight
+					? (100 * (newHeight - prevHeight) / newHeight).toFixed(2) + '%'
+					: '0%';
+				dropdown.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
+				dropdown.style.clipPath = `inset(0 0 ${startClipPct} 0)`;
+				dropdown.getBoundingClientRect(); // commit the start state before restoring the CSS transition
+				dropdown.style.transition = ''; // restore CSS transition, which re-adds clip-path as a transitioning property
+			}
+
+			dropdown.style.visibility = 'visible';
+			dropdown.style.opacity = '1';
+			dropdown.style.transform = 'translateY(0)';
+			dropdown.style.clipPath = 'inset(0 0 0 0)';
+		}
+
+		function showDropdown(topNode) {
+			clearTimeout(closeTimer);
+			clearTimeout(switchTimer);
+			const prev = committedTopNode;
+			committedTopNode = topNode;
+			if (prev && prev !== topNode) {
+				hideDropdown(prev, true);
+				switchTimer = setTimeout(function () { revealDropdown(topNode); }, SWITCH_DELAY);
+			} else {
+				revealDropdown(topNode);
+			}
+		}
+
+		function hideDropdown(topNode, menuAlreadyOpen) {
+			const dropdown = topNode.querySelector(':scope > .dropdown-menu');
+			if (!dropdown) { return; }
+			dropdown.style.opacity = '';
+			dropdown.style.transform = '';
+			if (!menuAlreadyOpen) {
+				dropdown.style.clipPath = '';
+			}
+			setTimeout(function () {
+				dropdown.style.visibility = '';
+				dropdown.style.clipPath = '';
+			}, 200);
+		}
+
+		function closeMenu() {
+			if (committedTopNode) {
+				hideDropdown(committedTopNode, false);
+				committedTopNode = null;
+			}
+			backdropHeight = 0;
+			menuBackdrop.style.height = '0px';
+		}
+
+		window.addEventListener('resize', function () {
+			if (committedTopNode) {
+				revealDropdown(committedTopNode);
+			}
+		});
+
+		document.querySelectorAll("#cp_theme_d10_menu .top-node").forEach((el) => {
+			el.addEventListener('mouseenter', function () {
+				if (window.innerWidth < 992) {
+					return;
+				}
+				clearTimeout(closeTimer);
+				dwellTimer = setTimeout(function () { showDropdown(el); }, DWELL_TIME);
+			});
+
+			el.addEventListener('mouseleave', function () {
+				if (window.innerWidth < 992) {
+					return;
+				}
+				clearTimeout(dwellTimer);
+				closeTimer = setTimeout(closeMenu, CLOSE_GRACE);
+			});
+
+			el.addEventListener('focusin', function () {
+				if (window.innerWidth < 992) {
+					return;
+				}
+				clearTimeout(dwellTimer);
+				clearTimeout(closeTimer);
+				showDropdown(el);
+			});
+
+			el.addEventListener('focusout', function (event) {
+				if (window.innerWidth < 992) {
+					return;
+				}
+				const nextTopNode = event.relatedTarget && event.relatedTarget.closest('#cp_theme_d10_menu .top-node');
+				if (!el.contains(event.relatedTarget) && committedTopNode === el && !nextTopNode) {
+					closeMenu();
+				}
+			});
+		});
+	}
+
+	function ajaxGet(url, action){
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", url);
+		xhr.send(null);
+
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState === 4 && xhr.status === 200) {
+				action(xhr);
+			}
+		};
+	}
+
+	ajaxGet('/whoami', function(xhr) {
+		var response = JSON.parse(xhr.response);
+
+		if (response.email) {
+			const email = response.email;
+
+			fetch(`https://cpauth.icos-cp.eu/db/users/${email}?keys=${encodeURIComponent('{cart:1}')}`, { credentials: 'include' })
+				.then(response => response.json())
+				.then(data => {
+
+					const cartLinks = document.querySelectorAll('.cart-link');
+					cartLinks.forEach(link => {
+						link.querySelector('.items-number').innerText = data.cart._items.length;
+						link.querySelector("a").href = 'https://data.icos-cp.eu/portal#{"route":"cart"}';;
+						link.classList.remove("d-none");
+					});
+
+					const accountLinks = document.querySelectorAll('.account-link');
+					accountLinks.forEach(link => {
+						link.querySelector("a").href = 'https://cpauth.icos-cp.eu/';
+						link.classList.remove("d-none");
+					});
+
+					const addButton = document.getElementById("meta-add-to-cart-button");
+					const removeButton = document.getElementById("meta-remove-from-cart-button");
+
+					if (addButton) {
+						const objId = addButton.dataset.id;
+						if (data.cart._items.some(i => i._id === objId)) {
+							removeButton.classList.remove('d-none');
+						} else {
+							addButton.classList.remove('d-none');
+						}
+
+						removeButton.addEventListener("click", () => {
+							addButton.classList.remove('d-none');
+							removeButton.classList.add('d-none');
+							const items = data.cart._items.filter(i => i._id != objId)
+							data.cart._items = items;
+							updateProfile(email, data);
+							cartLinks.forEach(link => {
+								link.querySelector('.items-number').innerText = data.cart._items.length;
+							});
+						});
+
+						addButton.addEventListener("click", () => {
+							addButton.classList.add('d-none');
+							removeButton.classList.remove('d-none');
+							data.cart._items.push({"_id": objId})
+							updateProfile(email, data);
+							cartLinks.forEach(link => {
+								link.querySelector('.items-number').innerText = data.cart._items.length;
+							});
+						});
+
+						if (window.location.hash == "#add-to-cart") {
+							history.replaceState(null, "", window.location.href.split('#')[0]);
+							addButton.classList.add('d-none');
+							removeButton.classList.remove('d-none');
+							data.cart._items.push({"_id": objId})
+							updateProfile(email, data);
+							cartLinks.forEach(link => {
+								link.querySelector('.items-number').innerText = data.cart._items.length;
+							});
+						}
+					}
+				});
+
+		} else {
+			const loginLinks = document.querySelectorAll('.login-link');
+			loginLinks.forEach(link => {
+				link.querySelector("a").href = getRedirectUrl(window.location.href);
+				link.classList.remove("d-none");
+			});
+
+			const addButton = document.getElementById("meta-add-to-cart-button");
+			if (addButton) {
+				addButton.addEventListener("click", () => {
+					window.location = getRedirectUrl(window.location.href + "#add-to-cart")
+				});
+				addButton.classList.remove('d-none');
+			}
+		}
+	});
+
+	const updateProfile = (email, data) => {
+		fetch(`https://cpauth.icos-cp.eu/db/users/${email}`, {
+			credentials: 'include',
+			method: 'PATCH',
+			mode: 'cors',
+			headers: new Headers({
+				'Content-Type': 'application/json'
+			}),
+			body: JSON.stringify(data)
+		});
+	};
+
+	const getRedirectUrl = (url) => 'https://cpauth.icos-cp.eu/login/?targetUrl=' + encodeURIComponent(url);
+});
+
+	</script>
+	
+
+	
+	
+	<script type="application/ld+json">
+		{
+  "@context": "https://schema.org",
+  "@id": "https://meta.icos-cp.eu/objects/NL-p6ji6ALoP8lUoCeugwODX",
+  "@type": "Dataset",
+  "acquireLicensePage": "http://meta.icos-cp.eu/ontologies/cpmeta/icosLicence",
+  "alternateName": "ICOS_ATC_NRT_CBW_2025-04-01_2026-04-16_207.0_970-1113_CH4.zip",
+  "contributor": {
+    "@type": "Organization",
+    "@id": "http://meta.icos-cp.eu/resources/organizations/ICOS-CAL-FCL",
+    "name": "ICOS-CAL-FCL",
+    "email": null
+  },
+  "creativeWorkStatus": "Deprecated",
+  "creator": [{
+    "@id": "http://meta.icos-cp.eu/resources/people/Arnoud_Frumau",
+    "@type": "Person",
+    "familyName": "Frumau",
+    "givenName": "Arnoud",
+    "name": "Arnoud Frumau",
+    "sameAs": "http://meta.icos-cp.eu/resources/people/Arnoud_Frumau"
+  }, {
+    "@id": "http://meta.icos-cp.eu/resources/people/Arjan_Hensen",
+    "@type": "Person",
+    "familyName": "Hensen",
+    "givenName": "Arjan",
+    "name": "Arjan Hensen",
+    "sameAs": "http://meta.icos-cp.eu/resources/people/Arjan_Hensen"
+  }],
+  "dateModified": "2026-04-17T10:10:23Z",
+  "datePublished": "2026-04-17",
+  "description": "Automatically-produced, daily-growing (by data object deprecation) data on molar fraction of atmospheric CH4. The data starts from the last respective L2 release.\nFrumau, A., Hensen, A. (2026). ICOS ATC NRT CH4 growing time series from Cabauw (207.0 m), 2025-04-01–2026-04-16, ICOS RI, https://hdl.handle.net/11676/NL-p6ji6ALoP8lUoCeugwODX",
+  "distribution": {
+    "contentSize": "135940 B",
+    "contentUrl": "https://data.icos-cp.eu/licence_accept?ids=%5B%22NL-p6ji6ALoP8lUoCeugwODXhwA0cpwbfUZZJvgGWdc%22%5D",
+    "encodingFormat": "application/zip",
+    "sha256": "34bfa9ea38ba00ba0ff2552809eba0c0e0d7870034729c1b7d465926f80659d7"
+  },
+  "identifier": "https://hdl.handle.net/11676/NL-p6ji6ALoP8lUoCeugwODX",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "data.icos-cp.eu"
+  },
+  "isAccessibleForFree": true,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "Previous version",
+    "url": "https://meta.icos-cp.eu/objects/cR1rpwJDUJripPiWLYMXIRK1"
+  },
+  "isPartOf": null,
+  "keywords": ["CH4", "ICOS", "dry air mole fraction"],
+  "license": "http://meta.icos-cp.eu/ontologies/cpmeta/icosLicence",
+  "name": "ICOS ATC NRT CH4 growing time series from Cabauw (207.0 m), 2025-04-01–2026-04-16",
+  "producer": {
+    "@type": "Organization",
+    "@id": "http://meta.icos-cp.eu/resources/organizations/ATC",
+    "name": "Atmosphere Thematic Centre",
+    "email": null
+  },
+  "provider": {
+    "@type": "Organization",
+    "@id": "http://meta.icos-cp.eu/resources/organizations/ATC",
+    "name": "Atmosphere Thematic Centre",
+    "email": null
+  },
+  "publisher": {
+    "@id": "data.icos-cp.eu",
+    "@type": "Organization",
+    "logo": "https://static.icos-cp.eu/images/ICOS_RI_logo_rgb.png",
+    "name": "ICOS data portal",
+    "url": "https://data.icos-cp.eu"
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "containedInPlace": {
+      "@type": "Country",
+      "identifier": "NL",
+      "name": "Netherlands"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.9703,
+      "longitude": 4.9264,
+      "elevation": 0.0
+    },
+    "name": "CBW"
+  },
+  "temporalCoverage": "2025-04-01T00:00:00Z/2026-04-16T23:00:00Z",
+  "url": "https://meta.icos-cp.eu/objects/NL-p6ji6ALoP8lUoCeugwODX",
+  "variableMeasured": [{
+    "@type": "PropertyValue",
+    "description": "time instant, UTC",
+    "name": "TIMESTAMP",
+    "unitText": null
+  }, {
+    "@type": "PropertyValue",
+    "description": "quality flag",
+    "name": "Flag",
+    "unitText": null
+  }, {
+    "@type": "PropertyValue",
+    "description": "number of points",
+    "name": "NbPoints",
+    "unitText": null
+  }, {
+    "@type": "PropertyValue",
+    "description": "CH4 (dry air mole fraction)",
+    "name": "ch4",
+    "unitText": "nmol mol-1"
+  }, {
+    "@type": "PropertyValue",
+    "description": "standard deviation of gas mole fraction",
+    "name": "Stdev",
+    "unitText": "nmol mol-1"
+  }]
+}
+	</script>
+
+	<style>
+	.col-md-12 > label::after {
+		content: ":";
+	}
+	.col-md-12 > label{
+		margin-bottom: 5px;
+		vertical-align: top;
+	}
+	.html-property > :is(p, ul, ol) {
+		margin-bottom: 0.35rem;
+	}
+	.html-property > :is(p, ul, ol):last-child {
+		margin-bottom: 0;
+	}
+	iframe {
+		border:solid 1px #ddd;
+		width:100%;
+		height:400px;
+	}
+	table.instrument-deployment {
+		margin-bottom: 0px;
+	}
+	table.instrument-deployment td {
+		vertical-align: middle;
+		border-bottom-width: 0px;
+	}
+
+	a.jump-link {
+		text-decoration-thickness: 6%;
+		text-decoration-skip-ink: none;
+		text-underline-offset: 25%;
+		text-underline-position: from-font;
+	}
+
+	.wide-cover-image {
+		height: 450px;
+		width: 100vw;
+		position: relative;
+		left: -12px;
+		top: -24px;
+		text-shadow: -1px 1px 2px var(--bs-dark);
+	}
+
+	/* Smaller than Bootstrap XL breakpoint */
+	@media all and (max-width: 1199.98px) {
+		.wide-cover-image {
+			height: 386px;
+		}
+	}
+
+	/* Smaller than Bootstrap L breakpoint */
+	@media all and (max-width: 991.98px) {
+		.wide-cover-image {
+			height: 310px;
+		}
+	}
+
+	/* Smaller than Bootstrap M breakpoint */
+	@media all and (max-width: 767.98px) {
+		.wide-cover-image {
+			height: 247px;
+		}
+	}
+
+	/* Smaller than Bootstrap S breakpoint */
+	@media all and (max-width: 575.98px) {
+		.wide-cover-image {
+			height: 186px;
+		}
+	}
+</style>
+
+
+
+	<title>ICOS ATC NRT CH4 growing time series from Cabauw (207.0 m) | ICOS</title>
+	
+
+
+</head>
+
+<body>
+	
+	
+	<a href="#main-content" class="visually-hidden-focusable">
+		Skip to main content
+		</a>
+	<header id="cp-header">
+		<div class="header d-flex justify-content-between p-3">
+			<div class="header-left d-flex align-items-center">
+				<a href=https://www.icos-cp.eu title="Home" rel="home" class="navbar-brand">
+					<img src=https://static.icos-cp.eu/images/icos-logo-regular.svg alt=ICOS Carbon Portal class="d-inline-block align-top">
+				</a>
+			</div>
+			<div class="header-right d-flex align-items-center">
+				<div class="d-none cart-link fs-sm header-link pe-3">
+					<a><i class="fas fa-shopping-cart me-1"></i>Cart<div class="badge rounded-pill bg-secondary ms-1">
+							<span class="items-number">0</span>
+							<span class="visually-hidden">items in cart</span>
+						</div>
+					</a>
+				</div>
+				<div class="d-none account-link fs-sm header-link">
+					<a><i class="fas fa-user me-1"></i>My Account</a>
+				</div>
+				<div class="d-none login-link fs-sm header-link">
+					<a><i class="fas fa-sign-in-alt me-1"></i>Log in</a>
+				</div>
+				<form action="https://www.icos-cp.eu/search" method="get" id="search-block-form" class="input-group w-auto" accept-charset="UTF-8">
+					<input type="search" id="edit-keys" name="q" class="form-search form-control">
+					<button class="btn btn-outline-secondary" type="submit" id="edit-submit"><i class="fas fa-search"></i></button>
+				</form>
+				
+					<nav class="navbar mobile py-0">
+						<div class="container-fluid">
+						<button class="navbar-toggler rounded" id="menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsing-navbar" aria-controls="collapsing-navbar" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						</div>
+					</nav>
+				
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar navbar-dark navbar-expand-lg border-top py-0" id="navbar-main">
+		<div id="collapsing-navbar" class="collapse navbar-collapse border-bottom">
+			<nav role="navigation" class="navigation menu--main">
+				<h2 class="visually-hidden">Main navigation</h2>
+				<div id="cp_theme_d10_menu" class="layout-container">
+					
+	<div class="nav navbar-nav justify-content-center px-3">
+		
+			
+	
+	<div class="flex-grow-1 menu-level-0">
+		
+			
+			<a href="https://www.icos-cp.eu/" class="text-dark p-2 w-100 d-flex justify-content-center top-link">
+				<div>Home</div>
+			</a>
+			
+		
+		
+	</div>
+	
+
+		
+			
+	
+	<div class="top-node flex-grow-1 menu-level-0">
+		
+			
+			<div class="drop-down-toggle text-dark p-2 w-100 d-flex justify-content-center top-link" role="button" tabindex="0">
+				<div>Data &amp; Services <span class="open-menu menu-icon"><i class="fas fa-chevron-down"></i></span></div>
+			</div>
+			
+		
+		
+			
+				
+				<div class="dropdown-menu pt-3 pb-4 rounded-0 justify-content-between">
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/data-portal" class="text-dark fw-semibold pt-3 pb-3">Data Portal</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://data.icos-cp.eu/" class="text-secondary pt-1 pb-2">Access ICOS data</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/data-products" class="text-secondary pt-1 pb-2">Main data products</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/data-portal/elaborated-products" class="text-secondary pt-1 pb-2">Elaborated Products</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/data-portal/how-to-use" class="text-secondary pt-1 pb-2">How to use the ICOS Data Portal</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/data-portal/data-licence" class="text-secondary pt-1 pb-2">ICOS Data Licence</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://cpauth.icos-cp.eu/" class="text-secondary pt-1 pb-2">User account</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/data-portal/help" class="text-secondary pt-1 pb-2">Help pages</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/services" class="text-dark fw-semibold pt-3 pb-3">ICOS Services</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/services/stilt-footprint" class="text-secondary pt-1 pb-2">STILT Footprint</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-4">
+		
+			
+			<a href="https://stilt.icos-cp.eu/" class="text-secondary pt-1 pb-2">STILT results visualisation</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-4">
+		
+			
+			<a href="https://stilt.icos-cp.eu/worker/" class="text-secondary pt-1 pb-2">STILT on demand calculator</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/services/jupyter-notebook" class="text-secondary pt-1 pb-2">Jupyter Notebook</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://doi.icos-cp.eu/" class="text-secondary pt-1 pb-2">DOI minting</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://data.icos-cp.eu/stats" class="text-secondary pt-1 pb-2">Download statistics</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<div class="text-dark fw-semibold pt-3 pb-3 user-select-none">&nbsp;</div>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://meta.icos-cp.eu/sparqlclient/" class="text-secondary pt-1 pb-2">SPARQL endpoint</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/services/upload-data" class="text-secondary pt-1 pb-2">Upload to Data Portal</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/forecast" class="text-secondary pt-1 pb-2">Forecast of backtrajectories</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://pypi.org/project/icoscp/" class="text-secondary pt-1 pb-2">Python package</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://uptime.icos-cp.eu/status/core" class="text-secondary pt-1 pb-2">Service status</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/data-services/services/fileshare-mailing-lists" class="text-secondary pt-1 pb-2">ICOS Fileshare and mailing lists</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/how-to-cite" class="text-dark fw-semibold pt-3 pb-3">How to Cite and Acknowledge ICOS data</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+				</div>
+				
+			
+		
+	</div>
+	
+
+		
+			
+	
+	<div class="top-node flex-grow-1 menu-level-0">
+		
+			
+			<div class="drop-down-toggle text-dark p-2 w-100 d-flex justify-content-center top-link" role="button" tabindex="0">
+				<div>Measurements <span class="open-menu menu-icon"><i class="fas fa-chevron-down"></i></span></div>
+			</div>
+			
+		
+		
+			
+				
+				<div class="dropdown-menu pt-3 pb-4 rounded-0 justify-content-between">
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/station-network" class="text-dark fw-semibold pt-3 pb-3">Station network</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/atmosphere" class="text-dark fw-semibold pt-3 pb-3">Atmosphere measurements</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/ecosystem" class="text-dark fw-semibold pt-3 pb-3">Ecosystem measurements</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/ocean" class="text-dark fw-semibold pt-3 pb-3">Ocean measurements</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/central-analytical-laboratories" class="text-dark fw-semibold pt-3 pb-3">Central Analytical Laboratories</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/data-collection" class="text-dark fw-semibold pt-3 pb-3">Data collection process</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/data-collection/data-flow" class="text-secondary pt-1 pb-2">Data flow</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/data-collection/data-levels-quality" class="text-secondary pt-1 pb-2">Data levels and quality</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://meta.icos-cp.eu/labeling/" class="text-secondary pt-1 pb-2">Station labelling status</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/network-data-submission-overview" class="text-secondary pt-1 pb-2">Raw data submission heatmap</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries" class="text-dark fw-semibold pt-3 pb-3">ICOS Countries</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/belgium" class="text-secondary pt-1 pb-2">Belgium</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/czech-republic" class="text-secondary pt-1 pb-2">Czech Republic</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/denmark" class="text-secondary pt-1 pb-2">Denmark</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/finland" class="text-secondary pt-1 pb-2">Finland</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/france" class="text-secondary pt-1 pb-2">France</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/germany" class="text-secondary pt-1 pb-2">Germany</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/greece" class="text-secondary pt-1 pb-2">Greece</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/hungary" class="text-secondary pt-1 pb-2">Hungary</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<div class="text-dark fw-semibold pt-3 pb-3 user-select-none">&nbsp;</div>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/ireland" class="text-secondary pt-1 pb-2">Ireland</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/italy" class="text-secondary pt-1 pb-2">Italy</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/netherlands" class="text-secondary pt-1 pb-2">Netherlands</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/norway" class="text-secondary pt-1 pb-2">Norway</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/spain" class="text-secondary pt-1 pb-2">Spain</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/sweden" class="text-secondary pt-1 pb-2">Sweden</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/switzerland" class="text-secondary pt-1 pb-2">Switzerland</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/measurements/icos-countries/united-kingdom" class="text-secondary pt-1 pb-2">United Kingdom</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+				</div>
+				
+			
+		
+	</div>
+	
+
+		
+			
+	
+	<div class="top-node flex-grow-1 menu-level-0">
+		
+			
+			<div class="drop-down-toggle text-dark p-2 w-100 d-flex justify-content-center top-link" role="button" tabindex="0">
+				<div>Impact <span class="open-menu menu-icon"><i class="fas fa-chevron-down"></i></span></div>
+			</div>
+			
+		
+		
+			
+				
+				<div class="dropdown-menu pt-3 pb-4 rounded-0 justify-content-between">
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/climate-change" class="text-dark fw-semibold pt-3 pb-3">Climate change</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/climate-change/ghgs" class="text-secondary pt-1 pb-2">Greenhouse gases</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/climate-change/emission-reduction" class="text-secondary pt-1 pb-2">Emission reduction</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/science" class="text-dark fw-semibold pt-3 pb-3">ICOS contribution to science</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/science/science-done" class="text-secondary pt-1 pb-2">Science done with ICOS data</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/science/scientific" class="text-secondary pt-1 pb-2">Scientific impact</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/science/global-carbon-budget" class="text-secondary pt-1 pb-2">Global Carbon Budget</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/science/remote-sensing" class="text-secondary pt-1 pb-2">ICOS and remote sensing</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/icos-curve" class="text-dark fw-semibold pt-3 pb-3">ICOS Curve</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/icos-curve/q-and-a" class="text-secondary pt-1 pb-2">Questions and Answers about the ICOS Curve</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/society" class="text-dark fw-semibold pt-3 pb-3">ICOS impact to society</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/fluxes" class="text-secondary pt-1 pb-2">FLUXES, The European Greenhouse Gas Bulletin</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/society/socioeconomic" class="text-secondary pt-1 pb-2">Socioeconomic impact</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/society/technology-innovation" class="text-secondary pt-1 pb-2">Technology &amp; innovation</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/society/references" class="text-secondary pt-1 pb-2">ICOS in scientific publications</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/impact/projects" class="text-dark fw-semibold pt-3 pb-3">Projects</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/projects/icos-cities" class="text-secondary pt-1 pb-2">ICOS Cities</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/projects/nubicos" class="text-secondary pt-1 pb-2">NUBICOS</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+				</div>
+				
+			
+		
+	</div>
+	
+
+		
+			
+	
+	<div class="top-node flex-grow-1 menu-level-0">
+		
+			
+			<div class="drop-down-toggle text-dark p-2 w-100 d-flex justify-content-center top-link" role="button" tabindex="0">
+				<div>Materials <span class="open-menu menu-icon"><i class="fas fa-chevron-down"></i></span></div>
+			</div>
+			
+		
+		
+			
+				
+				<div class="dropdown-menu pt-3 pb-4 rounded-0 justify-content-between">
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/materials/reports-and-documents" class="text-dark fw-semibold pt-3 pb-3">Reports and documents</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/materials/education" class="text-dark fw-semibold pt-3 pb-3">Education related to ICOS</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/materials/photo-gallery" class="text-dark fw-semibold pt-3 pb-3">Photo galleries</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/materials/videos" class="text-dark fw-semibold pt-3 pb-3">Videos</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/materials/logos-templates" class="text-dark fw-semibold pt-3 pb-3">Logos and templates</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+				</div>
+				
+			
+		
+	</div>
+	
+
+		
+			
+	
+	<div class="top-node flex-grow-1 menu-level-0">
+		
+			
+			<div class="drop-down-toggle text-dark p-2 w-100 d-flex justify-content-center top-link" role="button" tabindex="0">
+				<div>News &amp; Events <span class="open-menu menu-icon"><i class="fas fa-chevron-down"></i></span></div>
+			</div>
+			
+		
+		
+			
+				
+				<div class="dropdown-menu pt-3 pb-4 rounded-0 justify-content-between">
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/news-and-events/news" class="text-dark fw-semibold pt-3 pb-3">News</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/news-and-events/events" class="text-dark fw-semibold pt-3 pb-3">Events</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/news-and-events/talks" class="text-secondary pt-1 pb-2">ICOS Talks</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/news-and-events/newsletters" class="text-dark fw-semibold pt-3 pb-3">Newsletters</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/news-and-events/science-conference/icos2026sc" class="text-dark fw-semibold pt-3 pb-3">ICOS Science Conference 2026</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/news-and-events/science-conference" class="text-secondary pt-1 pb-2">Past Science Conferences</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+				</div>
+				
+			
+		
+	</div>
+	
+
+		
+			
+	
+	<div class="top-node flex-grow-1 menu-level-0">
+		
+			
+			<div class="drop-down-toggle text-dark p-2 w-100 d-flex justify-content-center top-link" role="button" tabindex="0">
+				<div>About &amp; Contacts <span class="open-menu menu-icon"><i class="fas fa-chevron-down"></i></span></div>
+			</div>
+			
+		
+		
+			
+				
+				<div class="dropdown-menu pt-3 pb-4 rounded-0 justify-content-between">
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/about/icos-in-nutshell" class="text-dark fw-semibold pt-3 pb-3">ICOS in a nutshell</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/icos-in-nutshell/mission" class="text-secondary pt-1 pb-2">Mission</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/icos-in-nutshell/strategy" class="text-secondary pt-1 pb-2">Strategy</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/icos-in-nutshell/abbreviations" class="text-secondary pt-1 pb-2">ICOS abbreviations</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/about/organisation-governance" class="text-dark fw-semibold pt-3 pb-3">Organisation and governance</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/organisation-governance/structure" class="text-secondary pt-1 pb-2">Structure of ICOS</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/organisation-governance/icos-eric" class="text-secondary pt-1 pb-2">ICOS ERIC</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/organisation-governance/member-countries" class="text-secondary pt-1 pb-2">ICOS member countries</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/organisation-governance/international-cooperation" class="text-secondary pt-1 pb-2">International cooperation</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/terms-of-use" class="text-secondary pt-1 pb-2">Terms of Use</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/about/join-icos" class="text-dark fw-semibold pt-3 pb-3">Join ICOS network</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/join-icos/benefits" class="text-secondary pt-1 pb-2">Benefits of being in ICOS</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/join-icos/process-countries" class="text-secondary pt-1 pb-2">How countries join ICOS</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/join-icos/process-stations" class="text-secondary pt-1 pb-2">How stations join ICOS</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/about/contact" class="text-dark fw-semibold pt-3 pb-3">Contact us</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/contact/head-office-central-facilities" class="text-secondary pt-1 pb-2">Head Office &amp; Central Facilities</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/contact/national-networks" class="text-secondary pt-1 pb-2">National Networks</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/contact/media" class="text-secondary pt-1 pb-2">For media</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/contact/faq" class="text-secondary pt-1 pb-2">FAQ</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/contact/feedback" class="text-secondary pt-1 pb-2">Give us feedback</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/contact/services-feedback" class="text-secondary pt-1 pb-2">User survey</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="menu-col menu-level-1">
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-2">
+		
+			
+			<a href="https://www.icos-cp.eu/about/opportunities" class="text-dark fw-semibold pt-3 pb-3">Opportunities</a>
+			
+		
+		
+			
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/opportunities/careers" class="text-secondary pt-1 pb-2">Careers</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/opportunities/summer-school" class="text-secondary pt-1 pb-2">ICOS Summer School</a>
+			
+		
+		
+	</div>
+	
+
+				
+					
+	
+	<div class="list-item menu-level-3">
+		
+			
+			<a href="https://www.icos-cp.eu/about/opportunities/ingeborg-award" class="text-secondary pt-1 pb-2">Ingeborg Levin Early Career Scientist Award</a>
+			
+		
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+			
+		
+	</div>
+	
+
+				
+				</div>
+				
+			
+		
+	</div>
+	
+
+		
+			
+	
+	<div class="flex-grow-1 menu-level-0">
+		
+			
+			<a href="https://www.icos-cp.eu/community-hub" class="text-dark p-2 w-100 d-flex justify-content-center top-link">
+				<div>Community Hub</div>
+			</a>
+			
+		
+		
+	</div>
+	
+
+		
+		<div class="d-none cart-link menu-link mobile text-dark py-2 px-3 w-100">
+			<a><i class="fas fa-shopping-cart me-1"></i>Cart<div class="badge rounded-pill bg-secondary ms-1">
+					<span class="items-number">0</span>
+					<span class="visually-hidden">items in cart</span>
+				</div>
+			</a>
+		</div>
+		<div class="d-none account-link menu-link mobile text-dark py-2 px-3 w-100">
+			<a><i class="fas fa-user me-2"></i>My Account</a>
+		</div>
+		<div class="d-none login-link menu-link mobile text-dark py-2 px-3 w-100">
+			<a><i class="fas fa-sign-in-alt me-1"></i>Log in</a>
+		</div>
+	</div>
+	<div class="menu-backdrop" style="height: 0px;"></div>
+
+
+
+
+
+
+
+
+
+				</div>
+			</nav>
+		</div>
+	</nav>
+
+	<main class="py-4">
+		<div class="container-fluid">
+			
+	
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			
+				<li class="breadcrumb-item"><a href="https://www.icos-cp.eu/">Home</a></li>
+			
+				<li class="breadcrumb-item"><a href="https://www.icos-cp.eu/data-services">Data &amp; Services</a></li>
+			
+				<li class="breadcrumb-item"><a href="//data.icos-cp.eu/portal">ICOS Data Portal</a></li>
+			
+		</ol>
+	</nav>
+
+
+	
+		
+
+<div class="row">
+	<h1 class="col-md-8">ICOS ATC NRT CH4 growing time series from Cabauw (207.0 m)</h1>
+	<div class="col-auto ms-md-auto py-2"><div class="d-flex gap-1 flex-shrink-0">
+	
+		<button id="meta-add-to-cart-button" class="btn btn-warning d-none" data-id="https://meta.icos-cp.eu/objects/NL-p6ji6ALoP8lUoCeugwODX">Add to cart</button>
+		<button id="meta-remove-from-cart-button" class="btn btn-outline-secondary d-none" data-id="https://meta.icos-cp.eu/objects/NL-p6ji6ALoP8lUoCeugwODX">Remove from cart</button>
+		<a class="btn btn-warning" href="https://data.icos-cp.eu/objects?ids=%5B%22NL-p6ji6ALoP8lUoCeugwODX%22%5D&amp;fileName=ICOS_ATC_NRT_CBW_2025-04-01_2026-04-16_207.0_970-1113_CH4">Download</a>
+	
+</div>
+</div>
+</div>
+<div class="d-sm-flex justify-content-between align-items-start  mb-4 pb-2 gap-3">
+	
+		<div class="fs-3 text-muted">2025-04-01–2026-04-16</div>
+	
+</div>
+
+
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link active" aria-current="page">Metadata</a>
+		</li>
+		<li class="nav-item">
+			
+	
+		<a class="nav-link" href="https://data.icos-cp.eu/portal/#%7B%22route%22:%22preview%22,%22preview%22:%5B%22NL-p6ji6ALoP8lUoCeugwODX%22%5D%7D">Preview</a>
+	
+
+		</li>
+	</ul>
+
+	
+	
+	<div class="row py-3 gy-4">
+		
+		
+			
+		
+		
+	
+	<div class="col-md-12">
+		<div class="alert alert-warning">
+			<h4 class="alert-heading">Deprecated data</h4>
+			
+		<div>
+	 Latest version: 
+ 
+	 
+	<a class="alert-link" href=/objects/EuwGYyeeAzjC_yJT0vV50jvv>EuwGYyeeAzjC_yJT0vV50jvv</a>
+ 
+</div>
+	
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+		
+
+		<div class="col-md-8">
+			<div class="row gy-2">
+			
+
+			
+				<div class="col-md-3"><label class="fw-bold">PID</label></div>
+<div class="col-md-9 text-break html-property">
+	
+			<span>11676/NL-p6ji6ALoP8lUoCeugwODX (<a href=https://hdl.handle.net/11676/NL-p6ji6ALoP8lUoCeugwODX>link</a>)</span>
+		
+</div>
+
+
+			
+			
+				<div class="col-md-3"><label class="fw-bold">Description</label></div>
+<div class="col-md-9 text-break html-property"><p>Automatically-produced, daily-growing (by data object deprecation) data on molar fraction of atmospheric CH4. The data starts from the last respective L2 release.</p>
+</div>
+
+			
+			
+
+	
+
+
+
+			
+			
+			
+	<div class="col-md-3"><label class="fw-bold">Data affiliation</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/resources/projects/icos>ICOS</a>
+
+
+
+	</div>
+
+
+			
+			
+			
+	<div class="col-md-3"><label class="fw-bold">Citation</label></div>
+<div class="col-md-9 text-break html-property">Frumau, A., Hensen, A. (2026). ICOS ATC NRT CH4 growing time series from Cabauw (207.0 m), 2025-04-01–2026-04-16, ICOS RI, https://hdl.handle.net/11676/NL-p6ji6ALoP8lUoCeugwODX</div>
+
+
+
+
+	
+	<div class="col-md-3"><label class="fw-bold"></label></div>
+<div class="col-md-9 text-break html-property">
+		<details>
+			<summary class="d-inline-block">
+				<span class="btn-link" style="cursor:pointer; color: var(--bs-link-color);">BibTex</span>
+			</summary>
+			<div class="card bg-light">
+				<div class="card-body">
+					<pre class="user-select-all w-100 m-0">@misc{https://hdl.handle.net/11676/NL-p6ji6ALoP8lUoCeugwODX,
+  author={Frumau, Arnoud and Hensen, Arjan},
+  title={ICOS ATC NRT CH4 growing time series from Cabauw (207.0 m), 2025-04-01–2026-04-16},
+  year={2026},
+  url={https://hdl.handle.net/11676/NL-p6ji6ALoP8lUoCeugwODX},
+  publisher={Atmosphere Thematic Centre},
+  copyright={http://meta.icos-cp.eu/ontologies/cpmeta/icosLicence},
+  pid={11676/NL-p6ji6ALoP8lUoCeugwODX}
+}</pre>
+				</div>
+			</div>
+		</details>
+	</div>
+
+
+
+
+	
+	<div class="col-md-3"><label class="fw-bold"></label></div>
+<div class="col-md-9 text-break html-property">
+		<details>
+			<summary class="d-inline-block">
+				<span class="btn-link" style="cursor:pointer; color: var(--bs-link-color);">RIS</span>
+			</summary>
+			<div class="card bg-light">
+				<div class="card-body">
+					<pre class="user-select-all w-100 m-0">TY - DATA
+T1 - ICOS ATC NRT CH4 growing time series from Cabauw (207.0 m), 2025-04-01–2026-04-16
+ID - 11676/NL-p6ji6ALoP8lUoCeugwODX
+PY - 2026
+UR - https://hdl.handle.net/11676/NL-p6ji6ALoP8lUoCeugwODX
+PB - Atmosphere Thematic Centre
+AU - Frumau, Arnoud
+AU - Hensen, Arjan
+ER - </pre>
+				</div>
+			</div>
+		</details>
+	</div>
+
+
+
+
+
+
+			
+				<div class="col-md-3"><label class="fw-bold">Previous version</label></div>
+<div class="col-md-9 text-break html-property">
+					
+		<a href=/objects/cR1rpwJDUJripPiWLYMXIRK1>View previous version</a>
+	
+
+
+				</div>
+
+			
+			
+				<div class="col-md-3"><label class="fw-bold">Next version</label></div>
+<div class="col-md-9 text-break html-property">
+					
+		<a href=/objects/hCvtti_dAVNC7A_OfTrPUaR->View next version</a>
+	
+
+
+				</div>
+
+			
+			<div class="col-md-3"><label class="fw-bold">File name</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">ICOS_ATC_NRT_CBW_2025-04-01_2026-04-16_207.0_970-1113_CH4.zip</div>
+
+			
+				<div class="col-md-3"><label class="fw-bold">Zip contents</label></div>
+<div class="col-md-9 text-break html-property"><details>
+	<summary class="d-inline-block">
+		<span id="zipcontentsexpander" class="btn-link" style="cursor:pointer; color: var(--bs-link-color);">View contents</span>
+	</summary>
+	<div class="card bg-light m-0">
+		<div class="card-body m-0" style="max-height: 30rem; overflow-y: scroll;">
+			<pre id="zipcontentscard" class="m-0" style="white-space: normal;">
+				<table class="table table-borderless table-sm" style="--bs-table-bg: tranparent;">
+					<thead>
+						<tr>
+							<th>File</th>
+							<th class="text-end">Size</th>
+							
+								<th></th>
+							
+						</tr>
+					</thead>
+					<tbody id="zipcontentstablebody">
+						<tr><td>Loading...</td></tr>
+					</tbody>
+				</table>
+			</pre>
+		</div>
+	</div>
+	<script>
+		(function(){
+			const expander = document.getElementById("zipcontentsexpander")
+			const dataHost = "data.icos-cp.eu"
+			const hash = "NL-p6ji6ALoP8lUoCeugwODX"
+			const showDownload = true
+			let firstRender = true
+
+			function formatBytes(bytes, decimals = 2){
+				if (isNaN(bytes)) return ""
+				if (bytes === 0) return '0 Bytes'
+
+				const k = 1024,
+					sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
+					i = Math.floor(Math.log(bytes) / Math.log(k))
+				return parseFloat((bytes / Math.pow(k, i)).toFixed(decimals)) + ' ' + sizes[i]
+			}
+
+			function parseJson(resp){
+				if(resp.status == 200) return resp.json()
+				return resp.text().then(errMsg => Promise.reject(new Error(errMsg)))
+			}
+
+			expander.addEventListener("click", _ => {
+				expander.innerHTML = expander.innerHTML == "Hide contents" ? "View contents" : "Hide contents"
+
+				if (!firstRender) return
+				firstRender = false
+
+				fetch(`https://${dataHost}/zip/${hash}/listContents`)
+					.then(parseJson)
+					.then(
+						json => {
+							const tableBodyHtml = json.map(file => {
+								let splitName = file.name.split('/')
+								let shortenedPath = ""
+								for (i = 0; i < splitName.length - 1; i++) {
+									shortenedPath = `<i class="fas fa-folder-open" title="${splitName[i]}"></i><span class="mx-2 user-select-none"">/</span>`
+								}
+								return (`<tr>
+									<td title=${file.name}>${shortenedPath + splitName.pop()}</td>
+									<td class="text-nowrap text-end">${formatBytes(file.size)}</td>
+									<td class="text-nowrap ps-3 user-select-none text-end">${showDownload ? `<a href='https://${dataHost}${file.path}'>Download</a>` : ""}</td>
+								</tr>`)
+							}).join("\n")
+							document.getElementById("zipcontentstablebody").innerHTML = tableBodyHtml
+						},
+						err => {
+							document.getElementById("zipcontentscard").innerHTML = `Error: ${err.message}`
+							console.error("ZIP contents fetching/listing error", err)
+						}
+					)
+			})
+		})()
+	</script>
+</details>
+
+
+
+</div>
+
+			
+			
+				<div class="col-md-3"><label class="fw-bold">File size</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">133 KB (135940 bytes)</div>
+
+			
+			
+				<div class="col-md-3"><label class="fw-bold">Number of data rows</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">9144</div>
+
+			
+			
+	<div class="col-md-3"><label class="fw-bold">Data type</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/resources/cpmeta/atcCh4NrtGrowingDataObject>ICOS ATC NRT CH4 growing time series</a>
+
+
+
+	</div>
+
+
+			<div class="col-md-3"><label class="fw-bold">Data level</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">1</div>
+
+
+			
+
+
+			
+				<div class="col-md-3"><label class="fw-bold">Licence</label></div>
+<div class="col-md-9 text-break html-property">
+	<a href=https://data.icos-cp.eu/licence>ICOS CCBY4 Data Licence</a>
+</div>
+
+			
+
+			
+				<h2 class="fs-3 mt-5">Acquisition</h2>
+				
+				
+	<div class="col-md-3"><label class="fw-bold">Station</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/resources/stations/AS_CBW>
+	<span>Cabauw</span>
+</a>
+
+	</div>
+
+
+				
+				
+				
+					<div class="col-md-3"><label class="fw-bold">Start time (UTC)</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">2025-04-01 00:00:00</div>
+
+					<div class="col-md-3"><label class="fw-bold">Stop time (UTC)</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">2026-04-16 23:00:00</div>
+
+				
+				
+					
+	<div class="col-md-3"><label class="fw-bold">Instrument</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/resources/instruments/ATC_1113>Cabauw CO2-CH4-H2O Picarro Analyzer</a>
+
+
+
+	</div>
+
+
+				
+					
+	<div class="col-md-3"><label class="fw-bold">Instrument</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/resources/instruments/ATC_970>CO2-CH4-H2O Picarro analyzer</a>
+
+
+
+	</div>
+
+
+				
+				
+					<div class="col-md-3"><label class="fw-bold">Sampling height</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">207.0</div>
+
+				
+			
+
+			
+				<h2 class="fs-3 mt-5">Production</h2>
+				
+	<div class="col-md-3"><label class="fw-bold">File made by</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/resources/organizations/ATC>
+	<span>Atmosphere Thematic Centre</span>
+</a>
+
+	</div>
+
+
+				
+					
+	<div class="col-md-3"><label class="fw-bold">Host organization</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/resources/organizations/ATC>
+	<span>Atmosphere Thematic Centre</span>
+</a>
+
+	</div>
+
+
+				
+				<div class="col-md-3"><label class="fw-bold">Production time (UTC)</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">2026-04-17 10:10:23</div>
+
+				
+					<div class="col-md-3"><label class="fw-bold">Contributors</label></div>
+<div class="col-md-9 text-break html-property">
+						
+	<a href=/resources/organizations/ICOS-CAL-FCL>ICOS-CAL-FCL</a>
+
+					</div>
+
+				
+				
+			
+
+			<br>
+
+			
+				<h2 class="fs-3 mt-5">Previewable variables</h2>
+				<div class="col-md-12 overflow-auto">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Value type</th>
+							<th>Unit</th>
+							
+									<th>Quantity kind</th>
+								
+							<th>Preview</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						
+							<tr>
+								<td>TIMESTAMP</td>
+								<td>time instant, UTC</td>
+								<td></td>
+								
+										<td></td>
+									
+								<td>
+									
+								</td>
+								
+									
+								
+							</tr>
+						
+							<tr>
+								<td>Flag</td>
+								<td>quality flag</td>
+								<td></td>
+								
+										<td></td>
+									
+								<td>
+									
+								</td>
+								
+									
+								
+							</tr>
+						
+							<tr>
+								<td>NbPoints</td>
+								<td>number of points</td>
+								<td></td>
+								
+										<td>cardinal number</td>
+									
+								<td>
+									
+										<a href=https://data.icos-cp.eu/portal/#%7B%22route%22:%22preview%22,%22preview%22:%5B%22NL-p6ji6ALoP8lUoCeugwODX%22%5D,%22yAxis%22:%22NbPoints%22%7D>Preview</a>
+									
+								</td>
+								
+									
+								
+							</tr>
+						
+							<tr>
+								<td>ch4</td>
+								<td>CH4 (dry air mole fraction)</td>
+								<td>nmol mol-1</td>
+								
+										<td>portion</td>
+									
+								<td>
+									
+										<a href=https://data.icos-cp.eu/portal/#%7B%22route%22:%22preview%22,%22preview%22:%5B%22NL-p6ji6ALoP8lUoCeugwODX%22%5D,%22yAxis%22:%22ch4%22%7D>Preview</a>
+									
+								</td>
+								
+									
+								
+							</tr>
+						
+							<tr>
+								<td>Stdev</td>
+								<td>standard deviation of gas mole fraction</td>
+								<td>nmol mol-1</td>
+								
+										<td>portion</td>
+									
+								<td>
+									
+										<a href=https://data.icos-cp.eu/portal/#%7B%22route%22:%22preview%22,%22preview%22:%5B%22NL-p6ji6ALoP8lUoCeugwODX%22%5D,%22yAxis%22:%22Stdev%22%7D>Preview</a>
+									
+								</td>
+								
+									
+								
+							</tr>
+						
+					</tbody>
+				</table>
+				</div>
+			
+			</div>
+
+			
+				<div class="row gy-2">
+					<h2 class="fs-3 mt-5">Statistics</h2>
+					<div class="col-md-3"><label class="fw-bold">Downloads</label></div>
+<div class="col-md-9 text-break html-property">
+						38
+					</div>
+
+					
+						<div class="col-md-3"><label class="fw-bold">Previews</label></div>
+<div class="col-md-9 text-break html-property">
+							0
+						</div>
+
+					
+				</div>
+			
+
+			<div class="row gy-2">
+				<h2 class="fs-3 mt-5">Submission</h2>
+				
+	<div class="col-md-3"><label class="fw-bold">Submitted by</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/resources/organizations/ATC>
+	<span>Atmosphere Thematic Centre</span>
+</a>
+
+	</div>
+
+
+				
+					<div class="col-md-3"><label class="fw-bold">Publication time (UTC)</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">2026-04-17 10:10:24</div>
+
+				
+				<div class="col-md-3"><label class="fw-bold">Submission started (UTC)</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">2026-04-17 10:10:23</div>
+
+			</div>
+
+			<div class="row gy-2">
+				<h2 class="fs-3 mt-5">Technical information</h2>
+				
+	<div class="col-md-3"><label class="fw-bold">Format</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/ontologies/cpmeta/asciiAtcProductTimeSer>ICOS ATC time series</a>
+
+
+
+	</div>
+
+
+				
+					<div class="col-md-3"><label class="fw-bold">Good flag values</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">R, U, O</div>
+
+				
+				
+	<div class="col-md-3"><label class="fw-bold">Encoding</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/ontologies/cpmeta/zipEncoding>zip</a>
+
+
+
+	</div>
+
+
+				<div class="col-md-3"><label class="fw-bold">SHA-256 hashsum (hex)</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">34bfa9ea38ba00ba0ff2552809eba0c0e0d7870034729c1b7d465926f80659d7</div>
+
+				<div class="col-md-3"><label class="fw-bold">SHA-256 hashsum (base64)</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">NL+p6ji6ALoP8lUoCeugwODXhwA0cpwbfUZZJvgGWdc</div>
+
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="col-md-12 mb-3">
+	<div class="card bg-light">
+		
+				<div class="card-img-top">
+					
+					<iframe src="/station/?icon=https://static.icos-cp.eu/share/stations/icons/as.png&dobj=/objects/NL-p6ji6ALoP8lUoCeugwODX"></iframe>
+					
+				</div>
+			
+		<div class="card-body">
+			
+				<div class="row gy-2">
+					
+					 <div class="col-md-3"><label class="fw-bold">Coverage</label></div>
+<div class="col-md-9 text-break" style="white-space: pre-line">Lat: 51.9703, Lon: 4.9264, Alt: 0.0 m</div>
+ 
+					
+						
+						
+	<div class="col-md-3"><label class="fw-bold">Station</label></div>
+<div class="col-md-9 text-break html-property">
+		<a href=/resources/stations/AS_CBW>
+	<span>Cabauw</span>
+</a>
+
+	</div>
+
+
+					
+				</div>
+			
+		</div>
+	</div>
+</div>
+
+
+			<div class="row">
+				<div class="col-md-12 mb-3">
+	<div class="card bg-light">
+		
+		<div class="card-body">
+			
+					<div class="row gy-2">
+						<div class="col-md-3"><label class="fw-bold">Metadata</label></div>
+<div class="col-md-9 text-break html-property">
+							<a href=./NL-p6ji6ALoP8lUoCeugwODX/ICOS_ATC_NRT_CBW_2025-04-01_2026-04-16_207.0_970-1113_CH4.zip.json>
+	JSON
+</a>
+
+
+
+ •
+							<a href=./NL-p6ji6ALoP8lUoCeugwODX/ICOS_ATC_NRT_CBW_2025-04-01_2026-04-16_207.0_970-1113_CH4.zip.xml>
+	RDF/XML
+</a>
+
+
+
+ •
+							<a href=./NL-p6ji6ALoP8lUoCeugwODX/ICOS_ATC_NRT_CBW_2025-04-01_2026-04-16_207.0_970-1113_CH4.zip.ttl>
+	RDF/Turtle
+</a>
+
+
+
+ •
+							<a href=./NL-p6ji6ALoP8lUoCeugwODX/ICOS_ATC_NRT_CBW_2025-04-01_2026-04-16_207.0_970-1113_CH4.zip.iso.xml>
+	XML (ISO 19115-3:2016)
+</a>
+
+
+
+
+						</div>
+
+						
+							<div class="col-md-3"><label class="fw-bold">Keywords</label></div>
+<div class="col-md-9 text-break html-property">
+								
+	<span class="badge rounded-pill bg-secondary text-light">CH4</span>
+
+	<span class="badge rounded-pill bg-secondary text-light">ICOS</span>
+
+	<span class="badge rounded-pill bg-secondary text-light">dry air mole fraction</span>
+
+							</div>
+
+						
+					</div>
+				
+		</div>
+	</div>
+</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+		</div>
+	</main>
+
+	<footer id="cp-site-footer" class="bg-primary text-light">
+	<div class="container">
+		<a class="navbar-brand" href="/" title="Home" rel="home">
+			<img src="https://www.icos-cp.eu/themes/cp_theme_d10/logo-white.png" />
+		</a>
+		<hr />
+		<div class="row">
+			<section class="row region-footer region-footer-first col-lg-6">
+				<div class="content">
+					<h3 class="h6">Contact</h3>
+					<p><a href="mailto:info@icos-ri.eu">info@icos-ri.eu</a></p>
+					<ul class="social-media list-inline">
+						<li class="list-inline-item">
+							<a class="social-media-icon fab fa-instagram" href="https://www.instagram.com/icosri/" >&nbsp;</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="social-media-icon fab fa-youtube" href="https://www.youtube.com/c/ICOSRI" >&nbsp;</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="social-media-icon fab fa-linkedin-in" href="https://www.linkedin.com/company/integrated-carbon-observation-system" >&nbsp;</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="social-media-icon fa-brands fa-bluesky" href="https://bsky.app/profile/icos-ri.eu" >&nbsp;</a>
+						</li>
+					</ul>
+					
+					<div id="wcb" class="carbonbadge text-start mt-4 wcb-d" style="filter: grayscale(1)"></div>
+					<script	src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+					
+				</div>
+			</section>
+
+			<section class="row region-footer region-footer-third col-lg">
+				<div class="content">
+					<h3 class="h6">Resources</h3>
+					<p><a href="https://www.icos-cp.eu/contact-us">Contact</a></p>
+					<p><a href="/data-services/about-data-portal/data-license">Data Licence</a></p>
+					<p><a href="https://uptime.icos-cp.eu/status/core">Services status</a></p>
+					<p><a href="https://fileshare.icos-cp.eu">ICOS Fileshare (Nextcloud)</a></p>
+					<p><a href="https://www.icos-cp.eu/news-and-events/newsletters">ICOS Newsletter</a></p>
+				</div>
+			</section>
+
+			<section class="row region-footer region-footer-fourth col-lg">
+				<div class="content">
+					<h3 class="h6">Central Facility websites</h3>
+					<p><a href="https://icos-atc.lsce.ipsl.fr/">Atmosphere Thematic Centre (ATC)</a></p>
+					<p><a href="http://www.icos-etc.eu/">Ecosystem Thematic Centre (ETC)</a></p>
+					<p><a href="https://otc.icos-cp.eu/">Ocean Thematic Centre (OTC)</a></p>
+					<p><a href="https://www.icos-cal.eu/">Central Analytical Laboratories (CAL)</a></p>
+				</div>
+			</section>
+		</div>
+		<div class="row footer-bottom">
+			<section class="row region-footer region-footer-bottom-second col-lg">
+				<div class="content">
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="https://www.icos-cp.eu/terms-of-use">Terms of Use</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://www.icos-cp.eu/privacy">Privacy Policy</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="" data-cc="show-preferencesModal" aria-haspopup="dialog">Cookie Preferences</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://www.icos-cp.eu/accessibility">Accessibility Statement</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha256-5P1JGBOIxI7FBAvT/mb1fCnI5n/NhQKzNUuW7Hq0fMc="
+		crossorigin="anonymous">
+	</script>
+
+	<script type="module" src="https://static.icos-cp.eu/share/cookie-consent/cookieconsent-config.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

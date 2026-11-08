@@ -1,0 +1,114 @@
+{
+  "status": "NO_VALID_PAIR",
+  "audit_scope": "structural quality checks; no P1 numerical comparison",
+  "year": 2024,
+  "expected_hours": 8784,
+  "ch4_rows": 8784,
+  "met_rows": 8739,
+  "ch4_absent_hours": 0,
+  "met_absent_hours": 45,
+  "exact_utc_overlap": 8739,
+  "exclusive_losses": {
+    "conservative_background_qc_exclusion": 4435,
+    "ch4_value_or_uncertainty_missing": 466,
+    "pressure_temperature_humidity_missing": 498
+  },
+  "complete_background_timestamp_matches": 3340,
+  "precision_and_height_gate_exclusions": 3340,
+  "science_eligible_pairs": 0,
+  "qc_counts_all_ch4_rows": {
+    "...": 3857,
+    ".C.": 4435,
+    "*..": 333,
+    "I..": 159
+  },
+  "intake_heights_m": [
+    "35.05",
+    "9.9"
+  ],
+  "instruments": [
+    "LGR-5"
+  ],
+  "monthly_overlap_counts": {
+    "2024-01": 721,
+    "2024-02": 696,
+    "2024-03": 744,
+    "2024-04": 720,
+    "2024-05": 744,
+    "2024-06": 720,
+    "2024-07": 744,
+    "2024-08": 744,
+    "2024-09": 720,
+    "2024-10": 744,
+    "2024-11": 720,
+    "2024-12": 722
+  },
+  "missing_counts_met_all_rows": {
+    "station_pressure": 6,
+    "T2m": 102,
+    "T10m": 6,
+    "Ttower": 840,
+    "RH": 649,
+    "wind_speed": 8,
+    "wind_direction": 8,
+    "precipitation": 8739
+  },
+  "first_complete_example": {
+    "utc": "2024-01-01T00:00:00Z",
+    "ch4": {
+      "site_code": "BRW",
+      "year": "2024",
+      "month": "1",
+      "day": "1",
+      "hour": "0",
+      "minute": "0",
+      "second": "0",
+      "datetime": "2024-01-01T00:00:00Z",
+      "time_decimal": "2024.0",
+      "midpoint_time": "1704069000",
+      "value": "2035.25",
+      "value_std_dev": "0.61",
+      "value_unc": "0.87",
+      "nvalue": "11",
+      "latitude": "71.323",
+      "longitude": "-156.611",
+      "altitude": "46.05",
+      "elevation": "11.0",
+      "intake_height": "35.05",
+      "instrument": "LGR-5",
+      "qcflag": "..."
+    },
+    "met_original_fields": [
+      "BRW",
+      "2024",
+      "01",
+      "01",
+      "00",
+      "45",
+      "5.2",
+      "-9",
+      "1031.42",
+      "-27.9",
+      "-26.8",
+      "-25.6",
+      "71",
+      "-99"
+    ]
+  },
+  "missing_precision_metadata": [
+    "pressure_uncertainty",
+    "temperature_uncertainty",
+    "humidity_uncertainty",
+    "humidity_reference",
+    "sensor_heights",
+    "representativeness_budget"
+  ],
+  "numerical_comparison_run": false,
+  "fixed_2ppm_run": false,
+  "file_hashes": {
+    "original_zip": "2fcf772a81598f5fcfcde63af56e822905f518a24d4efd681cfc5b3e564b0cce",
+    "original_met": "38150a86d6f95a375757fc39173036b1f75950ed29f265f03bfa4404ee77fbe1",
+    "committed_ch4_subset": "152357dd30ca8ce5e80ec3d51ce4414405b783e1b2bb8a6f04bcd95be729edb3",
+    "committed_met": "38150a86d6f95a375757fc39173036b1f75950ed29f265f03bfa4404ee77fbe1"
+  }
+}

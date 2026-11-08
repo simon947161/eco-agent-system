@@ -1,0 +1,565 @@
+<HTML>
+<BODY>
+<PRE>
+---------------------------------------------------------------------
+
+Atmospheric Methane from quasi-continuous measurements at Utqiaġvik
+(formerly Barrow), Alaska; Mauna Loa, Hawaii; and American Samoa,
+1986-present.
+
+
+National Oceanic and Atmospheric Administration (NOAA)
+Global Monitoring Laboratory (GML)
+
+Version: 2026-08-11
+--------------------------------------------------------------------
+CONTENTS
+
+1.       Data source and contacts
+2.       Use of data
+2.1      Citation
+3.       License
+4.       Warnings
+5.       Update notes
+6.       Introduction
+7.       DATA - General Comments
+7.1      DATA - Sampling Locations
+7.2      DATA - File Name Description
+7.3      DATA - File Types
+7.4      DATA - Content
+7.5      DATA - QC Flags
+8.       Data retrieval
+9.       References
+
+--------------------------------------------------------------------
+1. DATA SOURCE AND CONTACTS
+
+These directories contain atmospheric CH4 in units of dry-air mole
+fraction from 3 NOAA GML observatories: Utqiaġvik, Alaska (BRW),
+Mauna Loa, Hawaii (MLO), and American Samoa (SMO).
+
+
+Correspondence concerning these data should be directed to:
+
+Gabrielle Petron
+NOAA Global Monitoring Laboratory
+325 Broadway, GML-1
+Boulder, Colorado, 80305 USA
+Electronic Mail: gabrielle.petron@noaa.gov
+
+Dr. Xin Lan
+NOAA Global Monitoring Laboratory
+325 Broadway, R/GML-1
+Boulder, Colorado, 80305 USA
+Electronic Mail: xin.lan@noaa.gov
+
+--------------------------------------------------------------------
+2. USE OF DATA
+
+These data are made freely available to the public and the scientific
+community in the belief that their wide dissemination will lead to
+greater understanding and new scientific insights. To ensure that GML
+receives fair credit for their work please include relevant citation
+text in publications. We encourage users to contact the data providers,
+who can provide detailed information about the measurements and
+scientific insight.  In cases where the data are central to a
+publication, coauthorship for data providers may be appropriate.
+
+
+
+2.1 CITATION
+
+Please reference these data as
+
+   G. Pétron, P. Handley, J. Hakala, J. Kofler, K. W. Thoning, A. Crotwell,
+   A. Clarke, J. Fernandez, I. Crocker, R. Burgener, B. Thomas, A. Colton,
+   S. Jordan, L. Longren, M. Doneghey, M. Trudeau, T. Mefford, S. DeVogel,
+   A. Searle, X. Lan, J. Mauss, C. Smith, B. Vasel, S. Morris, J. Miller
+   and J. Mund (2026), Atmospheric methane from quasi-continuous
+   measurements at Utqiaġvik, Alaska, Mauna Loa, Hawaii, and American
+   Samoa, 1986-present. Version: 2026-08-11, National Oceanic and
+   Atmospheric Administration (NOAA), Global Monitoring Laboratory (GML),
+   Boulder, Colorado, USA https://doi.org/10.15138/ve0c-be70
+
+--------------------------------------------------------------------
+3. LICENSE
+
+<p>These data were produced by NOAA and are not subject to copyright
+protection in the United States. NOAA waives any potential copyright and
+related rights in these data worldwide through the Creative Commons Zero
+1.0 Universal Public Domain Dedication (CC0 1.0)</p><a
+
+href=https://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1 style="display:inline-
+block;" target="_blank">CC0 1.0 Universal<img
+
+src=https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1
+style="height:22px!important; margin-left:3px;" /><img
+src=https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1
+style="height:22px!important; margin-left:3px;" /></a>
+
+
+
+--------------------------------------------------------------------
+4. WARNINGS
+
+Every effort is made to produce the most accurate and precise
+measurements possible.  However, we reserve the right to make
+corrections to the data based on recalibration of standard gases
+or for other reasons deemed scientifically justified.
+
+We are not responsible for results and conclusions based on use
+of these data without regard to this warning.
+
+
+--------------------------------------------------------------------
+5. UPDATE NOTES
+
++++++++++++++++++++++++++++++++
+Project-specific notes:
+
+2026-05-29
+===================================================================
+BRW:
+A CO/CO2/CH4/H2O Cavity RingDown Spectroscopy (CRDS) analyzer (Picarro
+G2401) replaced the CO2/CH4 off-axis Integrated Cavity Output
+Spectroscopy (ICOS) analyzer (LGR  [GGA-24EP]) on March 11, 2025.
+
+MLO:
+A power loss led to an instrument failure and a data gap from September
+28 to October 7, 2025.
+
+SMO:
+A CO/CO2/CH4/H2O Cavity RingDown Spectroscopy (CRDS) analyzer (Picarro,
+G2401) was installed on March 31, 2025 to replace the CO2 Licor (6251).
+
+2024-02-08
+===================================================================
+MLO:
+Because of power loss to the observatory due to the eruption of the
+Mauna Loa volcano in November 2022, no data are available for January
+to June 2023.  Partial power was restored using solar power and backup
+batteries in July 2023, and CH4 measurements resumed on July 5, 2023.
+
+2023-07-27
+===================================================================
+BRW:
+Small revisions to the data from 2013 to 2022 were made based on
+improved assignments to the standard gases and improved determination of
+the analyzer response. These revisions were less than 0.5 ppb.
+
+MLO:
+Small revisions to the data from April 2019 to 2022 were made based on
+improved assignments to the standard gases and improved determination of
+the analyzer response. These revisions were less than 0.5 ppb.  Due to
+the eruption of the Mauna Loa Volcano, measurements from Mauna Loa
+Observatory were suspended as of Nov. 29, so there is no data for the
+end of November 2022 and all of December 2022.
+
+MKO:
+Measurements of CH4 began at Mauna Kea, Hawaii, approximately 21 miles
+north of Mauna loa, in December 2022, to replace the measurements that
+were suspended at MLO.
+
+2021-08-31
+===================================================================
+BRW: Transitioned to new intake lines on a new tower. Intake height
+changed from 16.46 m to 35.05 m.
+
+2020-08-19
+===================================================================
+For measurements made with laser-based spectrometers (instrument =
+LGR* and PC*), value_std_dev can now be defined when nvalue (number
+of measurements) = 1. See Introduction for details.
+
+2020-03-16
+===================================================================
+Measurements of CH4 at Mauna Loa, Hawaii were switched from
+a GC to a CRDS in April, 2019. Calibration strategy and
+measurement frequency changed.
+
+2018-03-16
+===================================================================
+Measurement uncertainty added to all CH4 hourly averages.
+The column/variable previously labeled value_unc is now
+labeled value_std_dev and contains the hourly average
+standard deviation.  See Section 6 (Introduction) for
+measurement uncertainty calculation.
+
+The daily and monthly average standard deviations
+(formerly value_unc) are now labeled value_std_dev.
+
+2016-01-20
+===================================================================
+All CH4 measurements are reported on the NOAA X2004A scale (Dlugokencky et al., 2005).
+https://gml.noaa.gov/ccl/ch4_scale.html
+
+2014-08-12
+===================================================================
+BRW in situ measurements through 2013 are now available.
+
+2014-07-29
+===================================================================
+BRW in situ measurements were restarted in April 2013.  The 2013 data
+are not included in this update due to new instrumentation.  2013 data
+will be available sometime in the next few months.
+
+2013-03-29
+===================================================================
+The CH4 in situ measurements at BRW were suspended in June 2012.
+They will resume in 2013.
+
+--------------------------------------------------------------------
+6. INTRODUCTION
+
+NOAA GML began quasi-continuous measurements of atmospheric CH4
+at Utqiaġvik, Alaska (BRW) in January, 1986, at Mauna Loa, Hawaii
+(MLO) in April, 1987 and at American Samoa in April 2025. Since the start of these measurements,
+our methods have evolved as described below.
+
+Analytical:
+Our first CH4 measurement systems at BRW and MLO were based on gas
+chromatography (GC) with flame ionization detection (FID) (Dlugokencky
+et al., 1995). At BRW, from January 1986 through April 1996, 2 to 3
+individual measurements were made each hour. From May 1996 through May
+2012, 4 measurements were made each hour. At MLO, from April 1987
+through November 1995, 2 to 3 individual measurements were made each
+hour, and from December 1995 to April 2019, 4 atmospheric measurements
+were made each hour.
+
+We began using a new system (off-axis, integrated
+cavity output spectroscopy, ICOS) at BRW in April 2013. There is a gap
+in the CH4 measurements at BRW from June, 2012 until April, 2013.
+On April 10, 2025, the CO2/CH4 BRW ICOS analyzer was replaced with a cavity ringdown spectrometer (CRDS). Measurements of CH4 at Mauna Loa, Hawaii were switched from
+a GC to a cavity ringdown spectrometer (CRDS) in April, 2019.
+
+The NOAA GML next-generation in situ measurements for observatories use
+a laser-based CRDS, custom-built hardware, controls, data management and
+processing. The first observatory to transition from the older
+operating system to the next-generation system was SMO on April 1, 2025.
+
+Raw data are saved as 10-second averages, from which 5-minute means are
+calculated: the first 210 seconds of data are discarded to account for
+any impact of earlier sample or standard air, and only the last 90
+seconds (9 10-second averages) are used to calculate the means.  At MLO,
+we switched to a laser-based, cavity ringdown spectrometer (CRDS) in
+April 2019, and now use a similar data processing scheme to BRW.
+In 2025, raw data from the CRDS systems
+installed at BRW and SMO were retained at their native measurement
+frequencies.
+
+Calibration:
+GC/FID systems were calibrated with a single-point calibration; each
+aliquot of ambient air was bracketed by aliquots of standard gas, and
+CH4 in each air sample was calculated based on the ratio of the sample
+chromatographic peak response to the average response of the
+bracketing standards, and the assigned value for the standard
+cylinder.
+
+For laser-based MLO CRDS and BRW ICOS, the analyzer response is calibrated with
+a suite of standards every two weeks relative to a reference cylinder,
+and the reference cylinder is measured hourly to track and correct short
+term analyzer drift. For the CRDS systems installed at BRW and SMO in 2025, analyzer
+responses are calibrated using a suite of  4 standards every 37 hours
+and 24 hours , respectively. Additionally, a reference gas is measured
+every four hours and two hours respectively to account for short-term drift.
+As a quality assurance procedure, a
+well-calibrated target gas cylinder of known composition is measured as
+an unknown sample up to twice daily.
+
+NOAA methane measurements are reported on the gravimetrically-prepared
+NOAA X2004A CH4 standard scale (see Dlugokencky et al., 2005;
+https://gml.noaa.gov/ccl/ch4_scale.html).
+
+Quality control:
+All measurements by GC were first edited using a rule-based
+editing algorithm (Masarie et al., 1991) to exclude measurements
+obtained when the analytical instrument was not working optimally.
+New algorithms were developed to edit data from the off-axis ICOS
+instrument at BRW since April, 2013 and the CRDS at MLO since
+April, 2019.
+
+Hourly averages:
+For GC/FID systems, hourly averages were calculated from all valid
+measurements within an hour and reported in data files with the
+number of measurements (nvalue) and standard deviation (value_std_dev).
+For n=1, value_std_dev cannot be calculated.
+
+For spectrometer systems, 5-minute averages are used to calculate
+hourly averages, but value_std_dev includes variability in the 5-min
+averages, so it is greater than the normal sample SD of the 5-min
+averages that go into the hourly mean, and when nvalue=1 (i.e., one
+5-min average in the hourly mean), value_std_dev is still calculated
+and reported.
+
+Selection for background:
+Valid hourly averaged data are selected to distinguish samples of
+regionally representative air (background) from samples influenced
+by local sources and sinks (non-background). Background hourly
+data are identified with a "..." selection flag. A ".C." flag is
+assigned to data identified as non-background. The criteria for
+determining background conditions are site specific. The background
+criteria for BRW are when the wind is from the clean air sector
+(020-110 degrees) and wind speed is greater than 1 m/s for at
+least one hour prior to inclusion. The background criteria
+for MLO are during predominantly "downslope" meteorological
+conditions as indicated by local time of day, 0000-0659.
+See Dlugokencky et al. [1995] for details.
+
+Uncertainties:
+Measurement uncertainties (value_unc) are calculated for each measurement
+(individual aliquot on GC and 5-minute average on optical spectrometer)
+based on analytical repeatability and reproducibility, and our ability to
+propagate the WMO CH4 mole fraction standard scale. For GCs, analytical
+repeatability is based on the stability of standard or reference aliquots
+averaged over the period a particular instrument was used. It varies with
+analytical instrument from 5.5 to 0.9 ppb. For laser-based spectrometers,
+it is based on the standard deviations of the bracketing measurements of
+reference gas.  Reproducibility is based on a comparison of near-
+simultaneous flask-air samples measured independently at NOAA GML in Boulder and
+quasi-continuous hourly averaged measurements at MLO and BRW
+observatories. It is assessed from the median difference, and it ranges
+from 0.1 to 0.9 ppb. The scale propagation term is based on the
+uncertainty we assign to standards, 0.5 ppb. All terms are given as 68%
+confidence intervals. Although we still list "value_std_dev" of hourly
+averages (standard deviation of values that go into an hourly average as
+described above, which includes natural variability and measurement
+uncertainty), we now list measurement uncertainty as a separate term.
+For the hourly average uncertainty, repeatability is divided by sqrt n,
+where "n" is the number of observations used in the calculation.
+Reproducibility and scale propagation terms are applied once. Total
+uncertainty is calculated by adding the individual terms in quadrature
+(square root of the sum of the squares). Methane hourly average values
+outside the range of standards are assigned a default uncertainty
+(-999.99).
+
+-------------------------------------------------------------------
+7. DATA - GENERAL COMMENTS
+
+
+7.1 DATA - SAMPLING LOCATIONS
+
+For a summary of sampling locations, please visit
+
+<A HREF='https://gml.noaa.gov/dv/site/index.php?program=ccgg'>https://gml.noaa.gov/dv/site/index.php?program=ccgg</A>.
+
+Note: Data for all species may not be available for all sites listed
+in the table.
+
+To view near real-time data, manipulate and compare data, and create
+custom graphs, please visit
+
+<A HREF='https://gml.noaa.gov/dv/iadv/'>https://gml.noaa.gov/dv/iadv/</A>.
+
+-------------------------------------------------------------------
+7.2 DATA - FILE NAME DESCRIPTION
+
+Encoded into each file name are the parameter (trace gas identifier);
+sampling site; sampling project; laboratory ID number; measurement group
+(optional); and optional qualifiers that further define the file
+contents.
+
+All file names use the following naming scheme:
+
+         1      2         3               4                   5
+[parameter]_[site]_[project]_[lab ID number]_[optional measurement group]_[optional
+
+         6           7
+qualifiers].[file type]
+
+
+1. [parameter]
+
+   Identifies the measured parameter or trace gas species.
+
+   (ex)
+   co2      Carbon dioxide
+   ch4      Methane
+   co2c13   d13C (co2)
+   merge    more than one parameter
+
+2. [site]
+
+    Identifies the sampling site code.
+
+   (ex)
+   brw
+   pocn30
+   car
+   amt
+
+3. [project]
+
+    Identifies sampling platform and strategy.
+
+   (ex)
+   surface-flask
+   surface-pfp
+   surface-insitu
+   aircraft-pfp
+   aircraft-insitu
+   tower-insitu
+
+4. [lab ID number]
+
+   A numeric field that identifies the sampling laboratory (1,2,3, ...).
+   NOAA GML is lab number 1 (see
+   https://gml.noaa.gov/ccgg/obspack/labinfo.html).
+
+5. [optional measurement group]
+
+  Identifies the group within the NOAA GML or the Institute of Arctic
+  and Alpine Research (INSTAAR) at the University of Colorado Boulder
+  that made the measurements. It is possible to have multiple different
+  groups measuring some of the same trace gas species in our discrete
+  samples.
+
+  Measurement groups within NOAA and INSTAAR are
+
+  ccgg:  NOAA Carbon Cycle Greenhouse Gases group (CCGG)
+  logos/hats:
+         NOAA Long-term Observations of Greenhouse gases and Ozone-depleting
+         Substances (LOGOS)
+  arl:   INSTAAR Atmospheric Research Laboratory (ARL)
+  sil:   INSTAAR Stable Isotope Laboratory (SIL)
+  curl:  INSTAAR Laboratory for Radiocarbon Preparation and Research (CURL)
+
+6. [optional qualifiers]
+
+   Optional qualifier(s) may indicate data subsetting or averaging.
+   Multiple qualifiers are delimited by an underscore (_).  A more
+   detailed description of the file contents is included within each
+   data file.
+
+   (ex)
+   event         All measurement results for all collected samples (discrete (flask) data only).
+   month         Computed monthly averages all collected samples (discrete (flask) data only).
+   hour_####     Computed hourly averages for the specified 4-digit year (quasi-continuous data only)
+   HourlyData    Computed hourly averages for entire record (quasi-continuous data only)
+   DailyData     Computed daily averages for entire record (quasi-continuous data only)
+   MonthlyData   Computed monthly averages for entire record (quasi-continuous data only)
+
+7. [file type]
+
+   File format (netCDF, ASCII text).
+
+   (ex)
+
+   txt           ASCII text file
+   nc            netCDF4 file
+
+-------------------------------------------------------------------
+7.3 DATA - FILE TYPE
+
+We provide data in two file formats: netCDF and ASCII text.
+
+The Network Common Data Form (NetCDF) is a self-describing,
+machine-independent data format that supports creation, access, and
+sharing of array-oriented scientific data.  To learn more about netCDF
+and how to read netCDF files, please visit http://www.unidata.ucar.edu.
+Most modern languages such as Python, R, Matlab, and IDL have functions
+for reading netCDF files.  Additionally, Panoply, a GUI-based netCDF
+tool is available for Mac, Windows, and Linux at
+https://www.giss.nasa.gov/tools/panoply/.
+
+The corresponding ASCII text (UTF-8 encoded) file is derived directly
+from the netCDF file.  The text file is also self-describing and can be
+viewed using any ASCII or UTF-8 capable text editor.  "Self-describing"
+means the file includes enough information about the included data
+(called metadata) that no additional file is required to understand the
+structure of the data and how to read and use the data.  Note that some
+non-ASCII characters (accents, international character sets) may be
+present in various names and contact information.  These may require a
+UTF-8 capable text editor to view properly.
+
+-------------------------------------------------------------------
+7.4 DATA - CONTENT
+
+For each observatory we provide hourly, daily, and monthly
+averaged data files. Daily averages are derived directly from the hourly
+data. Monthly averages are calculated from values extracted at one-day
+intervals from a smooth curve (Thoning et al., 1989) fitted to the
+daily averages. Higher resolution data (sub-hourly) are available
+upon request.
+
+All (ASCII text and netCDF) files are located in
+"https://gml.noaa.gov/aftp/data/trace_gases/ch4/in-situ/surface/".
+
+Files are named as follows (see Section 7.2 for details):
+
+     ch4_[site]_surface-insitu_1_ccgg_HourlyData.[file type]
+     ch4_[site]_surface-insitu_1_ccgg_DailyData.[file type]
+     ch4_[site]_surface-insitu_1_ccgg_MonthlyData.[filetype]
+
+-------------------------------------------------------------------
+7.5 QC FLAGS
+
+Quality control 3-character flags indicate retained and rejected data
+as follows in datafiles.
+
+If the first character is not a period, the average  value should be
+rejected for scientific use due to measurement or known local pollution
+issues. A second column character other than a period indicates a value
+that has no identifiable measurement or sampling errors but does not
+meet selection for representativeness of regional
+ clean background air sampling. A third column flag other than a period indicates
+noteworthy circumstances that are not known to affect the data quality,
+but may have potential to do so.
+
+WARNING: A "P" in the 3rd column of the QC flag indicates the
+data is preliminary and has not yet been carefully
+examined by the PI.  The "P" flag is removed once the quality of the
+data has been fully assessed, prior to each annual data release.
+
+SUMMARY OF FLAGS
+
+  ... - No code applied. Data are considered 'background'
+  ..* - Informational flag only. Data are considered 'background'
+  *.. - Unable to compute a mole fraction or average
+  .C. - data are non-background
+
+Missing data will have a value of -999.99 for the hour, and "background"
+values will be designated by a '.' character for the first two characters.
+See also the 'Update_notes' file for information regarding other flags.
+
+
+-------------------------------------------------------------------
+8. DATA RETRIEVAL
+
+Users may transfer individual files or a single zipped file:
+https://gml.noaa.gov/aftp/data/trace_gases/ch4/in-situ/surface/
+Zipped files contain the README file and either netCDF files or ASCII text
+files depending on the zipped file name.
+
+(ex) ch4_mlo_surface-insitu_1_ASCIItext.zip
+(ex) ch4_mlo_surface-insitu_1_netCDF.zip
+
+Zipped files can be expanded using standard operating system utilities
+by double clicking the downloaded file.
+
+-------------------------------------------------------------------
+9. REFERENCES
+
+Dlugokencky, E.J., R.C. Myers, P.M. Lang, K.A. Masarie, A.M. Crotwell,
+  K.W. Thoning, B.D. Hall, J.W. Elkins, and L.P. Steele, Conversion
+  of NOAA CMDL atmospheric dry air methane mole fractions to a
+  gravimetrically-prepared standard scale, J. Geophys. Res., 110, D18306,
+  doi : 10.1029/2005JD006035, 2005.
+
+Dlugokencky, E.J., L.P. Steele, P.M. Lang, and K.A. Masarie,
+  Atmospheric methane at Mauna Loa and Barrow observatories:
+  presentation and analysis of in situ measurements, J. Geophys. Res.,
+  100, 23,103-23,113, 1995.
+
+Masarie, K.A., L.P. Steele, and P.M. Lang, A rule-based expert system
+  for evaluating the quality of long-term, in situ, gas chromatographic
+  measurements of atmospheric methane, NOAA Tech. Memo. ERL CMDL-3,
+  NOAA Environ. Res. Lab., Boulder, Colorado, 1991.
+
+Thoning, K.W., P.P. Tans, and W.D. Komhyr, Atmospheric carbon dioxide
+  at Mauna Loa Observatory 2. Analysis of the NOAA GMCC data, 1974-1985,
+  J. Geophys. Res., 94, 8549-8565, 1989.
+
+-------------------------------------------------------------------
+</PRE>
+</BODY>
+</HTML>
