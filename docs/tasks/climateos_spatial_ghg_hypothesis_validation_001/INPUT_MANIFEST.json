@@ -1,0 +1,55 @@
+{
+  "archive_url": "https://www.gml.noaa.gov/aftp/data/AirCore/NOAA_AirCore_data_v20210813.zip",
+  "archive_sha256": "48a23cfd87467542b2801ac9443b229a60069c76679f0c27eda4527214384f99",
+  "archive_bytes": 75288295,
+  "publisher_checksum": null,
+  "licence": "CC0 per NOAA dataset landing page; acknowledgement retained",
+  "archive_members_total": 1551,
+  "lexical_level2_text_candidates": 133,
+  "selection": "first lexical Level2 text with exact matching INI + Level1 met; before inspecting numeric values",
+  "files": [
+    {
+      "path": "evidence/AirCoreBIG002_201201141836_v20210811.txt",
+      "archive_member": "v20210813_submitted/level2/Flight_20120114/launch2/AirCoreBIG002_201201141836_v20210811.txt",
+      "bytes": 722076,
+      "sha256": "75050230ffb7573f30dc6d992d2fc47df3a90afa0d89c3eb8f3e53f810ac616f",
+      "zip_member_crc32": "28ee66ff"
+    },
+    {
+      "path": "evidence/AC201201141836_BIG002_py_ini.csv",
+      "archive_member": "v20210813_submitted/level2/Flight_20120114/launch2/AC201201141836_BIG002_py_ini.csv",
+      "bytes": 1878,
+      "sha256": "9185a37d93e524acde4c7f2195a0ebe68aedc942f492c84d8609db512409ede9",
+      "zip_member_crc32": "418f9095"
+    },
+    {
+      "path": "evidence/AC201201141836_BIG002_py_final_met.csv",
+      "archive_member": "v20210813_submitted/level1/AC201201141836_BIG002_py_final_met.csv",
+      "bytes": 885544,
+      "sha256": "78f1a8bcb02ec76341900595500d993891a4b4e1c1f17fc0a577b06a51417193",
+      "zip_member_crc32": "63343fff"
+    },
+    {
+      "path": "evidence/aircore_readme.txt",
+      "bytes": 7689,
+      "sha256": "24ba020cb55d4ef4d11d479438b7d9f64113c177a7339010fd043be36ba8cc73"
+    },
+    {
+      "path": "evidence/aircore_20210813.zip.receipt.json",
+      "bytes": 429,
+      "sha256": "541c822400a64ae3f416b8b4751c8aa60a3e046e562068fa0a8373914c26ff76"
+    },
+    {
+      "path": "evidence/aircore_readme.txt.receipt.json",
+      "bytes": 409,
+      "sha256": "adfe29b5b1af285349cde4e8bc73a7da6e36d52f3c7d9f33128665d5693f0769"
+    },
+    {
+      "path": "evidence/atom_espo.html.receipt.json",
+      "bytes": 467,
+      "sha256": "0528eda3b3baf5cc30ad7d94bb402a31ec4f2b89740023d52ac24f96b6a8151a"
+    }
+  ],
+  "profile_path": "evidence/AirCoreBIG002_201201141836_v20210811.txt",
+  "met_path": "evidence/AC201201141836_BIG002_py_final_met.csv"
+}

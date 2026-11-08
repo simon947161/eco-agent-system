@@ -1,0 +1,19 @@
+{
+  "protocol_version": "1.0",
+  "declared_before_numerical_profile_inspection": true,
+  "scope": "one original flight, structural QC first; no release counterfactual execution",
+  "selection": "Prefer ATom; if inaccessible, first lexically ordered AirCore Level2 final text profile with matching INI and Level1 met in obtained archive; no outcome-based reselection",
+  "candidate_limit": 3,
+  "raw_join_tolerance_seconds": 0,
+  "join_rule": "Use provider Level2 alignment; never join laboratory analysis clock directly to flight clock; no nearest join or interpolation",
+  "required_global_evidence": ["public_reuse_terms", "gas_calibration_scale", "gas_uncertainty_definition", "ambient_pressure_uncertainty", "ambient_temperature_uncertainty", "water_vapour_basis_and_uncertainty", "vertical_datum_and_resolution", "time_alignment_and_representativeness"],
+  "row_rules": ["provider-missing codes excluded", "finite positive ambient pressure and temperature", "dry CH4 nonnegative and uncertainty finite nonnegative", "provider QC and diffusion support retained", "unique observation identifiers; repeated timestamp reported not silently averaged"],
+  "proposed_layers_m": [[1500,2500],[4500,5500],[9500,10500]],
+  "layer_note": "Analyst-declared diagnostic bands, not policy thresholds. Use only observed supported layers, never force sea-level observations at elevated launch site. Bounds lower-inclusive upper-exclusive; at least two layers needed for comparison.",
+  "independence": "Record counts are not independent sample counts; air sample diffusion, time covariance and air-mass representativeness must enter error budget",
+  "detection_rule": "Only after complete uncertainty budget: preregister contrast and uncertainty coverage; interval excluding zero may support descriptive difference, never release-height causality",
+  "equivalence_rule": "No numeric equivalence margin approved; H0 cannot be accepted just because a difference is non-significant. Future metric-specific margin must be justified before model outcomes.",
+  "if_global_evidence_missing": "NO_VALID_VERTICAL_PROFILE for Stage2 quantitative comparison; structural QC remains permitted; global block is not row invalidity",
+  "p1_observation_run_enabled": false,
+  "same_mass_model_run_enabled": false
+}

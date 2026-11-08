@@ -1,0 +1,189 @@
+Visible DOM excerpt of latest completed ChatGPT review, 2026-11-09 Australia/Sydney.
+Source: https://chatgpt.com/g/g-p-6a4700d5aa7c8191abc4d09bc2f55cc8-climate-os/c/6aeb99ef-20b0-83ec-a1fe-b055bce78071
+Reviewed HEAD: 1daa3a15b698c5a9216e7286cf1243ef0cf870dc
+Not a native GitHub review or an independent test rerun.
+
+- heading "正式科学评审结论" [level=2]
+    - generic: ACCEPT_WITH_CONDITIONS
+    - paragraph:
+      - generic: 本轮研究任务已按授权范围完成，可以接受为阶段性研究成果；不要求返工，但定量科学准入仍未通过。
+    - paragraph:
+      - text: "本次评审固定于 PR #141 的研究 HEAD"
+      - code: 1daa3a15b698c5a9216e7286cf1243ef0cf870dc
+      - text: ，不涉及未来提交。
+    - heading "一、重点科学判断" [level=3]
+    - table:
+      - rowgroup:
+        - row "审查事项 结论 依据":
+          - columnheader "审查事项":
+            - paragraph: 审查事项
+          - columnheader "结论":
+            - paragraph: 结论
+          - columnheader "依据":
+            - paragraph: 依据
+        - row "停止真实剖面定量比较 合理 七项全局元数据门未闭合；2,137 条结构可用记录不等于已准入独立样本":
+          - cell "停止真实剖面定量比较":
+            - paragraph: 停止真实剖面定量比较
+          - cell "合理":
+            - paragraph:
+              - generic: 合理
+          - cell "七项全局元数据门未闭合；2,137 条结构可用记录不等于已准入独立样本":
+            - paragraph: 七项全局元数据门未闭合；2,137 条结构可用记录不等于已准入独立样本
+        - row "标定尺度差异 处理正确 README 与历史瓶尺度不同，保留未解决状态，不擅自认定转换关系":
+          - cell "标定尺度差异":
+            - paragraph: 标定尺度差异
+          - cell "处理正确":
+            - paragraph:
+              - generic: 处理正确
+          - cell "README 与历史瓶尺度不同，保留未解决状态，不擅自认定转换关系":
+            - paragraph: README 与历史瓶尺度不同，保留未解决状态，不擅自认定转换关系
+        - row "湿度、压力、温度 仍有阻塞 环境传感器精度、湿度水/冰参考、上升与下降段对应关系未充分确定":
+          - cell "湿度、压力、温度":
+            - paragraph: 湿度、压力、温度
+          - cell "仍有阻塞":
+            - paragraph:
+              - generic: 仍有阻塞
+          - cell "环境传感器精度、湿度水/冰参考、上升与下降段对应关系未充分确定":
+            - paragraph: 环境传感器精度、湿度水/冰参考、上升与下降段对应关系未充分确定
+        - row "高度及气团代表性 仍有阻塞 垂直基准、扩散支持、采样时间和气团变化未形成完整误差预算":
+          - cell "高度及气团代表性":
+            - paragraph: 高度及气团代表性
+          - cell "仍有阻塞":
+            - paragraph:
+              - generic: 仍有阻塞
+          - cell "垂直基准、扩散支持、采样时间和气团变化未形成完整误差预算":
+            - paragraph: 垂直基准、扩散支持、采样时间和气团变化未形成完整误差预算
+        - row "等效性与不显著性 区分正确 未预设等效界限 ε，因此不能将“未发现差异”解释为“证明相同”":
+          - cell "等效性与不显著性":
+            - paragraph: 等效性与不显著性
+          - cell "区分正确":
+            - paragraph:
+              - generic: 区分正确
+          - cell "未预设等效界限 ε，因此不能将“未发现差异”解释为“证明相同”":
+            - paragraph: 未预设等效界限 ε，因此不能将“未发现差异”解释为“证明相同”
+        - row "直接 CH₄ 与航空 NOx 效应 区分正确 已发表 NOx/水汽脉冲试验未被冒称直接甲烷排放高度试验":
+          - cell "直接 CH₄ 与航空 NOx 效应":
+            - paragraph: 直接 CH₄ 与航空 NOx 效应
+          - cell "区分正确":
+            - paragraph:
+              - generic: 区分正确
+          - cell "已发表 NOx/水汽脉冲试验未被冒称直接甲烷排放高度试验":
+            - paragraph: 已发表 NOx/水汽脉冲试验未被冒称直接甲烷排放高度试验
+        - row "P1 单位与协方差 设计正确 气体状态方程、干湿基准及一阶协方差传播一致":
+          - cell "P1 单位与协方差":
+            - paragraph: P1 单位与协方差
+          - cell "设计正确":
+            - paragraph:
+              - generic: 设计正确
+          - cell "气体状态方程、干湿基准及一阶协方差传播一致":
+            - paragraph: 气体状态方程、干湿基准及一阶协方差传播一致
+        - row "区域治理框架 有条件接受 未给出未经验证的地区排放系数、减排率或法定信用结论":
+          - cell "区域治理框架":
+            - paragraph: 区域治理框架
+          - cell "有条件接受":
+            - paragraph:
+              - generic: 有条件接受
+          - cell "未给出未经验证的地区排放系数、减排率或法定信用结论":
+            - paragraph: 未给出未经验证的地区排放系数、减排率或法定信用结论
+    - heading "二、需要保留的最少修正意见" [level=3]
+    - paragraph: 这些是后续研究的阻塞条件，不要求本轮继续执行。
+    - paragraph:
+      - generic: 1. 明确数据产品与校准瓶的尺度关系。
+      - text: 当前不能因为最终产品与历史瓶的尺度标签不同，就断言产品错误；但在版本转换链未明确前，也不能把它们当作同一已验证校准尺度。
+    - paragraph:
+      - generic: 2. 完成高空剖面的测量与代表性误差定义。
+      - text: 至少需要环境压力和温度精度、相对湿度的水/冰基准、垂直高度基准，以及 AirCore 样本扩散与气团代表性。特别要避免把 2,137 条相关的剖面记录当作 2,137 个独立实验。
+    - paragraph:
+      - generic: 3. 为同质量排放反事实预先规定评价指标与等效界限。
+      - text: 需要明确比较的是局地浓度、全球积分辐射强迫，还是 20 年或 100 年的温度响应。不能用一次高空浓度剖面代替排放高度因果试验，也不能用不显著差异证明等效。
+    - heading "三、对计算引擎的验收边界" [level=3]
+    - paragraph: 现有 P1 可继续作为甲烷理想气体状态换算的参考核心，但它不是大气输送或气候响应引擎。
+    - paragraph: 反事实方法契约中的质量守恒、源项定义、时间与空间边界、协方差和模型验证要求总体合理。对于 CH₄，必须允许化学损失；对于 CO₂，应另行建立正确的气体参数与碳循环处理。不能把甲烷专用 P1 核心直接用于 CO₂。
+    - paragraph:
+      - text: 本轮没有执行这些新计算，因此我接受的是
+      - generic: 方法设计
+      - text: ，不是模型性能。
+    - heading "四、证据审查等级" [level=3]
+    - paragraph:
+      - text: 我实际通过 GitHub 读取了指定 HEAD 的任务书、全部指定研究报告与矩阵、JSON 输入及质量台账、
+      - code: audit_profile.py
+      - text: 和
+      - code: test_audit_profile.py
+      - text: 。
+    - paragraph: 我没有独立下载完整 75,288,295 字节 NOAA ZIP，没有在本次评审中重新运行 Python 测试，也没有重新执行 AirCore 发布者的校准与剖面重构。
+    - paragraph:
+      - text: 因此，5 项新测试、8 项 P1 参考测试、SHA 与离线质量审计通过，属于
+      - generic: 源码已审查、执行结果按归档证据接受
+      - text: ，不属于我亲自完成的独立复跑。
+    - heading "五、最终状态" [level=3]
+    - table:
+      - rowgroup:
+        - row "阶段或项目 评审后状态":
+          - columnheader "阶段或项目":
+            - paragraph: 阶段或项目
+          - columnheader "评审后状态":
+            - paragraph: 评审后状态
+        - row "Stage 1：科学方法及文献 WITH_LIMITS":
+          - cell "Stage 1：科学方法及文献":
+            - paragraph: Stage 1：科学方法及文献
+          - cell "WITH_LIMITS":
+            - paragraph: WITH_LIMITS
+        - row "Stage 2：真实高空剖面结构审计 ACCEPTED_WITH_LIMITS":
+          - cell "Stage 2：真实高空剖面结构审计":
+            - paragraph: Stage 2：真实高空剖面结构审计
+          - cell "ACCEPTED_WITH_LIMITS":
+            - paragraph: ACCEPTED_WITH_LIMITS
+        - row "Stage 2：定量高度差异验证 BLOCKED / NO_VALID_VERTICAL_PROFILE":
+          - cell "Stage 2：定量高度差异验证":
+            - paragraph: Stage 2：定量高度差异验证
+          - cell "BLOCKED / NO_VALID_VERTICAL_PROFILE":
+            - paragraph: BLOCKED / NO_VALID_VERTICAL_PROFILE
+        - row "Stage 3：同质量排放反事实 METHOD_READY_NOT_VALIDATED":
+          - cell "Stage 3：同质量排放反事实":
+            - paragraph: Stage 3：同质量排放反事实
+          - cell "METHOD_READY_NOT_VALIDATED":
+            - paragraph: METHOD_READY_NOT_VALIDATED
+        - row "D3 DATA_NOT_READY":
+          - cell "D3":
+            - paragraph: D3
+          - cell "DATA_NOT_READY":
+            - paragraph: DATA_NOT_READY
+        - row "P1-A PENDING":
+          - cell "P1-A":
+            - paragraph: P1-A
+          - cell "PENDING":
+            - paragraph: PENDING
+        - 'row "PR #140 NO_VALID_PAIR"':
+          - 'cell "PR #140"':
+            - paragraph: "PR #140"
+          - cell "NO_VALID_PAIR":
+            - paragraph: NO_VALID_PAIR
+        - 'row "PR #141 OPEN / DRAFT / NOT MERGED"':
+          - 'cell "PR #141"':
+            - paragraph: "PR #141"
+          - cell "OPEN / DRAFT / NOT MERGED":
+            - paragraph: OPEN / DRAFT / NOT MERGED
+    - paragraph:
+      - generic: 给创始人的最终判断：
+      - text: 这次研究取得了真实高空观测资料，也正确地说明了为什么这些资料暂时不能证明“同样一吨甲烷在不同高度具有不同气候效应”。这是一项合格的科学证据与方法研究，但还不是对核心假说的实证验证。
+    - heading "CRP｜科学评审纪要" [level=3]
+    - paragraph:
+      - generic: 核心知识点：
+      - text: 大气垂直浓度差异、排放释放高度效应和长期全球气候响应属于不同科学问题。
+    - paragraph:
+      - generic: 关键决策：
+      - code: ACCEPT_WITH_CONDITIONS
+      - text: ；保留七项元数据阻塞和全部原科学准入状态。
+    - paragraph:
+      - generic: 未解决问题：
+      - text: 校准版本链、气象与高度误差、气团代表性、直接 CH₄/CO₂ 反事实及等效判别界限。
+    - paragraph:
+      - generic: 下一步：
+      - text: 等待 Founder 单独决定是否继续；本评审不授权任何新实验。
+    - paragraph: 本次仅在当前 ChatGPT 对话中返回评审，未修改 GitHub、发布评论、合并、部署或启动新工作。
+    - button "Copy":
+    - button "Read aloud":
+    - button "Share":
+    - button "Regenerate response":
+    - button "More actions":
+    

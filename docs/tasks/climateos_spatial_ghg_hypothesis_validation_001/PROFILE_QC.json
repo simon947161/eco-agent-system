@@ -1,0 +1,193 @@
+{
+  "audit_version": "1.0",
+  "scope": "one original profile; structural QC, no concentration conversion",
+  "global_metadata_blockers": [
+    "gas_calibration_scale",
+    "gas_uncertainty_definition",
+    "ambient_pressure_uncertainty",
+    "ambient_temperature_uncertainty",
+    "water_vapour_basis_and_uncertainty",
+    "vertical_datum_and_resolution",
+    "time_alignment_and_representativeness"
+  ],
+  "stage2_status": "NO_VALID_VERTICAL_PROFILE",
+  "profile_rows": 2137,
+  "met_rows": 5457,
+  "field_summary": {
+    "SecondsFromMidnight(s)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 73012.5631392002,
+      "max": 75262.0606038719
+    },
+    "Pressure(mb)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 42.2209667228936,
+      "max": 938.692131230936
+    },
+    "Lat(N)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 36.6003760614084,
+      "max": 36.8538071675535
+    },
+    "Lon(E)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": -98.2139392999514,
+      "max": -97.7074204162949
+    },
+    "Alt(m)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 721.818239215089,
+      "max": 21685.8311061884
+    },
+    "CO2(ppm)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 384.050520909174,
+      "max": 395.993443340136
+    },
+    "co2_err(ppm)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 0.05,
+      "max": 0.124652188461934
+    },
+    "CH4(ppb)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 1285.49766511822,
+      "max": 1882.52413818641
+    },
+    "ch4_err": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 0.7,
+      "max": 1.87698061803702
+    },
+    "CO(ppb)": {
+      "finite": 2010,
+      "missing_or_nonfinite": 127,
+      "min": 35.612618747011,
+      "max": 130.11267233807
+    },
+    "co_err(ppb)": {
+      "finite": 2010,
+      "missing_or_nonfinite": 127,
+      "min": 7.0,
+      "max": 7.0
+    },
+    "T(C)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": -62.7594021765705,
+      "max": 6.07212078010148
+    },
+    "TH(K)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 285.361387337423,
+      "max": 542.63700335179
+    },
+    "RH(%)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 1.48187687484095,
+      "max": 54.9685351018344
+    },
+    "AirCoreT(C)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": -22.6054212206224,
+      "max": -15.9434935293733
+    },
+    "alt_err_co2-(m)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 39.9221693588029,
+      "max": 938.80094263787
+    },
+    "alt_err_co2+(m)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 17.1460265265086,
+      "max": 933.226171906048
+    },
+    "alt_err_ch4-(m)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 52.8219822418757,
+      "max": 1105.12097302803
+    },
+    "alt_err_ch4+(m)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 17.1460265265086,
+      "max": 1092.87422730097
+    },
+    "alt_err_co-(m)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 48.8333193369347,
+      "max": 1140.33117645785
+    },
+    "alt_err_co+(m)": {
+      "finite": 2137,
+      "missing_or_nonfinite": 0,
+      "min": 17.1460265265086,
+      "max": 1055.75984060072
+    }
+  },
+  "row_structural_failures": {},
+  "structurally_usable_rows": 2137,
+  "globally_admitted_comparison_rows": 0,
+  "time_utc_start": "2012-01-14T20:16:52Z",
+  "time_utc_end": "2012-01-14T20:54:22Z",
+  "duplicate_formatted_timestamps": 138,
+  "duplicate_fractional_seconds": 0,
+  "time_reversals": 0,
+  "maximum_formatted_clock_difference_seconds": 0.9993942379951477,
+  "met_flight_flags": {
+    "0": 1249,
+    "1": 2923,
+    "2": 1285
+  },
+  "layers": [
+    {
+      "nominal_altitude_bounds_m": [
+        1500,
+        2500
+      ],
+      "rows_with_centres": 225,
+      "rows_with_ch4_diffusion_support_inside_band": 183,
+      "independent_samples": null,
+      "quantitative_comparison_admitted": false
+    },
+    {
+      "nominal_altitude_bounds_m": [
+        4500,
+        5500
+      ],
+      "rows_with_centres": 172,
+      "rows_with_ch4_diffusion_support_inside_band": 129,
+      "independent_samples": null,
+      "quantitative_comparison_admitted": false
+    },
+    {
+      "nominal_altitude_bounds_m": [
+        9500,
+        10500
+      ],
+      "rows_with_centres": 104,
+      "rows_with_ch4_diffusion_support_inside_band": 64,
+      "independent_samples": null,
+      "quantitative_comparison_admitted": false
+    }
+  ],
+  "p1_executed": false,
+  "counterfactual_executed": false,
+  "missing_code_note": "NaN present; finite sentinels remain under provider QC uncertainty. No new QC flag invented."
+}
