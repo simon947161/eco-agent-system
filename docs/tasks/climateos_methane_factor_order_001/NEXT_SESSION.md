@@ -1,5 +1,11 @@
 # 下一轮交接
 
+## 评审回执补记（优先于下方提交时快照）
+
+Draft PR [#140](https://github.com/simon947161/eco-agent-system/pull/140)已创建；研究HEAD `f3d4ba0c4e501f601fd3b9b119403f17c1ae7b15`已实际提交原ChatGPT对话，收到**ACCEPT_WITH_CONDITIONS**。见[评审回执](SCIENTIFIC_REVIEW_RECEIPT.md)。仅接受研究审计与停止判定，不是观测实验或科学准入通过。下一步等待Founder；两项阻塞是测量误差元数据与可比样本/选择规则。不得自动启动补证或实验。GitHub本轮核查未报告CI检查；本地13测试通过。
+
+## 提交评审时快照
+
 2026-11-08：本任务执行结束，**NO_VALID_PAIR**。待ChatGPT只读科学评审及Founder决策。不要恢复旧长任务链或自动开始第四候选。
 
 分支`research/climateos-methane-factor-order-001`；隔离工作树`D:\Codex\ClimateOS\methane-factor-order-001`。基线任务书e5b7315，继承PR139 fc450196；PR138/139和其他PR未更改。新Draft PR以PR139分支为base，需维持堆叠依赖，不合并。

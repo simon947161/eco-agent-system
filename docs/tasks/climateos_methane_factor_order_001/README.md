@@ -2,6 +2,8 @@
 
 CLIMATEOS-METHANE-FACTOR-ORDER-001 · 2026-11-08 · **NO_VALID_PAIR**
 
+交付：[Draft PR #140](https://github.com/simon947161/eco-agent-system/pull/140)。研究HEAD `f3d4ba0`已收到ChatGPT **ACCEPT_WITH_CONDITIONS**，详见[评审回执](SCIENTIFIC_REVIEW_RECEIPT.md)；下文PENDING为提交时状态，不改变D3/P1-A门槛。
+
 先读[通俗中文报告](FOUNDER_REPORT_ZH.md)，再读[停止依据](NO_VALID_PAIR_REPORT.md)。本目录执行冻结[TASKBOOK_ZH](TASKBOOK_ZH.md)，不替代旧任务的状态或授权。
 
 |材料|用途|
