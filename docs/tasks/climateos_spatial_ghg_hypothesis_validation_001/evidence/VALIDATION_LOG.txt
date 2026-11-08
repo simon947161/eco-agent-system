@@ -1,0 +1,42 @@
+Execution date: 2026-11-09 Australia/Sydney
+No observational physical computation or climate simulation.
+
+$ C:\Users\doras\AppData\Local\Programs\Python\Python314\python.exe docs\tasks\climateos_spatial_ghg_hypothesis_validation_001\audit_profile.py --check
+PASS: input hashes and deterministic structural QC
+
+exit_code=0
+
+$ C:\Users\doras\AppData\Local\Programs\Python\Python314\python.exe -m unittest discover -s docs\tasks\climateos_spatial_ghg_hypothesis_validation_001 -p test_audit_profile.py -v
+test_clock_representation_is_not_silent_deduplication (test_audit_profile.AdmissionTests.test_clock_representation_is_not_silent_deduplication) ... ok
+test_even_completed_metadata_does_not_run_or_admit (test_audit_profile.AdmissionTests.test_even_completed_metadata_does_not_run_or_admit) ... ok
+test_missing_is_not_zero (test_audit_profile.AdmissionTests.test_missing_is_not_zero) ... ok
+test_original_identity_and_global_vs_row_gate (test_audit_profile.AdmissionTests.test_original_identity_and_global_vs_row_gate) ... ok
+test_tampered_bytes_fail_before_analysis (test_audit_profile.AdmissionTests.test_tampered_bytes_fail_before_analysis) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.338s
+
+OK
+
+exit_code=0
+
+$ C:\Users\doras\AppData\Local\Programs\Python\Python314\python.exe -m unittest tests.test_physics_validation.GasTests -v
+test_invalid_gas_inputs (tests.test_physics_validation.GasTests.test_invalid_gas_inputs) ... ok
+test_inverse_dry_wet_and_concentration (tests.test_physics_validation.GasTests.test_inverse_dry_wet_and_concentration) ... ok
+test_mixing_ratio_invariant (tests.test_physics_validation.GasTests.test_mixing_ratio_invariant) ... ok
+test_pr137_pinned_numbers (tests.test_physics_validation.GasTests.test_pr137_pinned_numbers) ... ok
+test_pressure_temperature_scaling (tests.test_physics_validation.GasTests.test_pressure_temperature_scaling) ... ok
+test_reference_volume_preserves_dry_ch4_mass (tests.test_physics_validation.GasTests.test_reference_volume_preserves_dry_ch4_mass) ... ok
+test_water_partial_pressure_oracle (tests.test_physics_validation.GasTests.test_water_partial_pressure_oracle) ... ok
+test_zero_limits (tests.test_physics_validation.GasTests.test_zero_limits) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK
+
+exit_code=0
+
+$ git diff --exit-code 16f0b59dab966f0b66d91b7c28135e8fce9e4cc1 -- cczps_lite/integration/physics_validation.py tests/test_physics_validation.py
+
+exit_code=0

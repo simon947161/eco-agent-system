@@ -1,0 +1,34 @@
+{
+  "public_reuse_terms": {
+    "status": "VERIFIED",
+    "evidence": "NOAA AirCore landing page CC0; original bytes retained with attribution"
+  },
+  "gas_calibration_scale": {
+    "status": "UNRESOLVED",
+    "evidence": "Version README: CO2 X2019 / CH4 X2004. Selected INI tank scales: X2007 / X2004A. Do not erase version-versus-tank difference or invent reprocessing proof."
+  },
+  "gas_uncertainty_definition": {
+    "status": "PARTIAL",
+    "evidence": "Per-row gas uncertainty values exist; coverage factor, covariance and representativeness not established for this profile."
+  },
+  "ambient_pressure_uncertainty": {
+    "status": "UNKNOWN",
+    "evidence": "No uncertainty column; INI Met_Sensor_ID ????"
+  },
+  "ambient_temperature_uncertainty": {
+    "status": "UNKNOWN",
+    "evidence": "No uncertainty column; do not substitute tube temperature or potential temperature."
+  },
+  "water_vapour_basis_and_uncertainty": {
+    "status": "UNKNOWN",
+    "evidence": "RH water/ice basis and uncertainty absent; post-2019 processing uses ascent RH with exceptions."
+  },
+  "vertical_datum_and_resolution": {
+    "status": "PARTIAL",
+    "evidence": "Alt(m) with gas-specific asymmetric diffusion spans; vertical datum and sensor error unidentified. Launch INI 636m cannot be equated to early L1 ground Alt 25.7m."
+  },
+  "time_alignment_and_representativeness": {
+    "status": "PARTIAL",
+    "evidence": "Provider reconstructed sample time; met T/P descent while RH can come from ascent; diffusion and air-mass mixing covariance unresolved; no wind field in selected L2."
+  }
+}

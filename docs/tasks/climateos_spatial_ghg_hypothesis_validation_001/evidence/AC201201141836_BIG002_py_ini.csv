@@ -1,0 +1,45 @@
+INI File for AC201201141836_BIG002
+------------------------------------------------   
+Cylinders_Header: CO2(ppm), CH4(ppb), CO(ppb) 
+Fill_Std_Values: 370.33, 1762.22, 9334.41 
+Cal_Std_Values: 386.79, 1873.83, 180.25 
+Chase_Std_Values: 370.33, 1762.22, 9334.41 
+Fill_Std_Scale: X2007, X2004A, CO_X2014A 
+Cal_Std_Scale: X2007, X2004A, CO_X2014A 
+Chase_Std_Scale: X2007, X2004A, CO_X2014A 
+Fill_Std_ID: CA03182
+Cal_Std_ID: CC302918
+Chase_Std_ID: CA03182
+------------------------------------------------   
+Analyzer_ID: CFKBDS2007
+Mole_fraction_file_name: ../Flights/Flight_2012Jan14/figure2/AC201201141836_BIG002_py_pic.csv
+Analysis flow rate: 
+AirCore_ID: BIG002
+Met_Sensor_ID: ????
+Met_file_name: ../Flights/Flight_2012Jan14/figure2/AC201201141836_BIG002_py_final_met.csv
+------------------------------------------------   
+co_flag: 1 
+flip: 1 
+Tot_AirCore_launched: 2 
+Tot_AirCore_Strings: 1 
+Valve_Close_Delay: 25.0 
+Min_indx_Cutoff: 30 
+Max_indx_Cutoff: 2166 
+Home_Institution: NOAA_GMD 
+Sample_Launch_Time_Lat_Lon_Alt_Pamb: 14-Jan-2012 18:36:08,    37.29N,   -98.58E, 636.00m, 951.17mbar  
+Sample_Recovery_Time_Lat_Lon_Alt_Pamb: 14-Jan-2012 20:56:16,    36.60N,   -97.71E, 324.10m, 984.48mbar  
+-----------------------------------------------   
+Sections from bottom to top: 
+Section_Number,Description,Used_fill,Used_analysis,Length(m),Diameter(m),Porosity(1 empty),CV
+---START----------------------------------------   
+0, Desiccant, 1, 0, 0.0381, 0.0095, 0.30, NaN 
+1, Tube, 1, 0, 0.0300, 0.0027, 1.00, NaN 
+2, Valve, 1, 0, 0.0300, 0.0028, 1.00, NaN 
+3, AC, 1, 1, 30.5000, 0.0058, 1.00, NaN 
+4, AC, 1, 1, 122.0000, 0.0058, 1.00, NaN 
+5, Valve, 0, 1, 0.0300, 0.0028, 1.00, NaN 
+6, Tube, 0, 1, 0.0300, 0.0028, 1.00, NaN 
+7, Valve, 0, 1, 0.0300, 0.0028, 1.00, NaN 
+8, Tube, 0, 1, 0.9277, 0.0027, 1.00, NaN 
+---END--------------------------------------------   
+Comments:  

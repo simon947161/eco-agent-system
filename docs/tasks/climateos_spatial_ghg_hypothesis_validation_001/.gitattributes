@@ -1,0 +1,5 @@
+# Preserve original scientific evidence bytes, including provider whitespace.
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+evidence/* -text -whitespace
