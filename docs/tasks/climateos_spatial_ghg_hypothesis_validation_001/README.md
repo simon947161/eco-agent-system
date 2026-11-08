@@ -4,6 +4,8 @@
 
 **研究交付已形成；科学准入仍 PENDING。** Stage 1 `WITH_LIMITS`；Stage 2 `BLOCKED / NO_VALID_VERTICAL_PROFILE`；Stage 3 `WITH_LIMITS / METHOD_READY_NOT_VALIDATED`。取得真实 AirCore 数据不等于通过本任务跨高度定量比较门槛。
 
+已提交独立 [Draft PR141](https://github.com/simon947161/eco-agent-system/pull/141)。ChatGPT对研究HEAD `1daa3a15b698c5a9216e7286cf1243ef0cf870dc` 返回 `ACCEPT_WITH_CONDITIONS`；[评审回执](SCIENTIFIC_REVIEW_RECEIPT.md)另行归档，不提升科学准入，下一阶段等待Founder。
+
 | 阅读目的 | 文件 |
 |---|---|
 | Founder 通俗结论与地区措施 | [FOUNDER_REPORT_ZH.md](FOUNDER_REPORT_ZH.md) |
