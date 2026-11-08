@@ -1,0 +1,4 @@
+# Preserve source evidence bytes, including publisher whitespace, on every OS.
+evidence/* -text -whitespace
+*.md text eol=lf
+*.py text eol=lf

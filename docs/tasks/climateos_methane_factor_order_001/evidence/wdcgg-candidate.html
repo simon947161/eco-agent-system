@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>WDCGG (World Data Centre for Greenhouse Gases)</title>
+<meta name="keywords" content="green house gas,WDC,WDCGG,GAW">
+<meta name="robots" content="nofollow">
+<meta http-equiv="Cache-Control" content="no-cache, no-store">
+<meta http-equiv="Pragma" content="no-cache">
+
+
+<!-- BEGIN site/jquery5 -->
+<link rel="stylesheet" type="text/css" href="https://gaw.kishou.go.jp/static/jquery/ui/layout.1.9.0/layout-default-latest.css" />
+<link rel="stylesheet" type="text/css" href="https://gaw.kishou.go.jp/static/jquery/ui/jquery-ui-1.13.2/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="https://gaw.kishou.go.jp/static/jquery/jquery.bxslider.4.2.12/css/jquery.bxslider.css" />
+<script type="text/javascript" src="https://gaw.kishou.go.jp/static/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://gaw.kishou.go.jp/static/jquery/ui/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://gaw.kishou.go.jp/static/jquery/ui/layout.1.9.0/jquery.layout_and_plugins.js"></script>
+<script type="text/javascript" src="https://gaw.kishou.go.jp/static/jquery/ui/layout.1.9.0/jquery.layout.resizePaneAccordions-1.2.min.js"></script>
+<script type="text/javascript" src="https://gaw.kishou.go.jp/static/jquery/jquery.bxslider.4.2.12/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="https://gaw.kishou.go.jp/static/jquery/jquery.balloon.js-master.1.1.2/js/jquery.balloon.min.js"></script>
+<script type="text/javascript" src="https://gaw.kishou.go.jp/static/jquery/jquery.sieve.0.3.0/js/jquery.sieve.js"></script>
+<!-- END site/jquery5 -->
+
+<!-- BEGIN site/css -->
+<link rel="stylesheet" type="text/css" href="https://gaw.kishou.go.jp/static/css/wdcgg.css" />
+<!-- END site/css -->
+<script type="text/javascript">
+	
+	
+	$(document).ready(function () {
+		// TAB
+		var slider_initialized = false;
+		
+		$('.ui-layout-center').tabs({
+			active:0,
+			activate: function( event, ui ) {
+				var tab_id = $(ui.newPanel).attr('id');
+				if(tab_id == "tab_5" && slider_initialized == false)
+				{	
+					$('.bxslider').bxSlider({
+						mode: 'fade',
+						slideWidth: 700,
+						slideHeight: 520,
+						captions: true
+					}); 
+					//update initialization flag to true
+					slider_initialized = true;
+				}
+			}
+		});
+		
+		// Jquery UI Layout
+		$('#container').layout({
+			west__size:0,
+			east__size:0,
+			center__onresize:$.layout.callbacks.resizeTabLayout,
+			// RESIZE Accordion widget when panes resize
+			north__size:82,
+			north__spacing_open:1,
+			north__togglerLength_open:0,
+			north__togglerLength_closed:-1,
+			north__resizable:false,
+			north__slidable:false,
+			south__spacing_open:1,
+			south__togglerLength_open:0,
+			south__togglerLength_closed:-1,
+			south__resizable:false,
+			south__slidable:false
+		});
+		
+		// Balloon
+		<!-- BEGIN site/jquery_metadata_balloon -->
+		$('#or_organization').balloon({
+			position: 'top',
+			contents: 'The organization referred to here has submitted observation data to WDCGG. The organization name, acronym and country/territory are required. Organization information will be part of the file name.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#jl_joint_laboratory').balloon({
+			position: 'top',
+			contents: 'Institutes, organizations (and optionally individuals) collaborating on observation can be specified here.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#pg_person_group').balloon({
+			position: 'top',
+			contents: 'WDCGG and data users can email contacts directly. At least one contact should be registered, and multiple contacts are preferred. ',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#ao_aim_of_observation').balloon({
+			position: 'top',
+			contents: 'Select the aim of the observation here.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#tz_time_zone').balloon({
+			position: 'top',
+			contents: 'Select the time zone for the timestamp of the observation data.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#un_unit').balloon({
+			position: 'top',
+			contents: 'Select the unit used for the observation data.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#sh_scale_history').balloon({
+			position: 'top',
+			contents: 'The period of usage and the calibration scale used in the observation data should be described here.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#ih_instrument_history').balloon({
+			position: 'top',
+			contents: 'The period of usage, the manufacturer, the product name and the model number of the instrument should be described here.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#sh_sampling_height_history').balloon({
+			position: 'top',
+			contents: 'The height (depth) of air (seawater) sampling above the ground (below sea level) in meters: positive for height and negative for depth, except for mobiles (3D) whose altitudes are included in the observation data.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#sf_sampling_frequency').balloon({
+			position: 'top',
+			contents: 'Select the sampling frequency used in the current observation.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#md_measurement_calibration').balloon({
+			position: 'top',
+			contents: 'Calibration for determining mole fractions is described here along with procedures for analysis such as the order of introduction (sequence) for sample and standard gases (or zero gases) to the instrument, the relevant time period and the number of calibration points.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#md_data_processing').balloon({
+			position: 'top',
+			contents: 'Details of instrumental data processing and averaging are described here. Criteria used in selection for data processing should also be described.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+				
+		$('#md_hr_mean_processing').balloon({
+			position: 'top',
+			contents: 'Detailed processes on hourly, daily, monthly data or data selections on qualities are described here.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#md_original_data_flag').balloon({
+			position: 'top',
+			contents: 'Clarify the criteria for data flagging. If data have already been flagged with WDCGG data quality flags, Original Data Flag metadata do not need to be added.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#dg_data_flag_group').balloon({
+			position: 'top',
+			contents: 'WDCGG uses a preliminary data flagging scheme to make data files machine-readable. The basic types are 1. Valid as background, 2. Valid, and 3. Invalid. All flags should be one of these types. ',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#rg_reference_group').balloon({
+			position: 'top',
+			contents: 'References to observations (such as instruments, data processing and calibration) in literature or URLs should be described here.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#st_status').balloon({
+			position: 'top',
+			contents: 'Select the most appropriate observation situation for current conditions.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#md_description').balloon({
+			position: 'top',
+			contents: 'Any other information on observations or data can be provided here. ',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		
+		$('#dc_doi_category').balloon({
+			position: 'top',
+			contents: 'Select a DOI option. Contributors selecting "Original DOI already present" should provide the DOI.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+
+		$('#ri_reporting_interval').balloon({
+			position: 'top',
+			contents: 'Select the reporting interval used in the current observation.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+
+		$('#vh_value_unc_history').balloon({
+			position: 'top',
+			contents: 'The period of usage, the calculation method type code should be described here.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+
+		$('#mm_flag').balloon({
+			position: 'top',
+			contents: 'Whether each element of meteorological data is included. ',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		<!-- END site/jquery_metadata_balloon -->
+		
+		$('#mm_description').balloon({
+			position: 'top',
+			contents: 'Information on meteorological data (e.g., anemometer heights and wind speed sampling methods when it is not average wind speed for the previous 10 minutes) can be included here.',
+			css: {
+				width: '450px',
+				fontSize: '100%'
+			}
+		});
+		<!-- END site/jquery_metadata_balloon -->
+
+		
+		// Sieve
+		<!-- BEGIN site/jquery_sieve -->
+		var searchTemplate = "<div><label><span style='display:inline-block;' class='ui-icon ui-icon-search'></span>Search by a keyword: <input type='text' class='form-control' placeholder='(start typing)'></label></div><br>";
+		$('.table-sieve').sieve({ searchTemplate: searchTemplate });
+		<!-- END site/jquery_sieve -->
+		
+		// Modal -> Menu
+		<!-- BEGIN site/jquery_modal_menu -->
+		$('.btns').click(function(){
+			wn = '.' + $(this).data('tgt');
+			var mW = $(wn).find('.modalBody').innerWidth() / 2;
+			var mH = $(wn).find('.modalBody').innerHeight() / 2;
+			$(wn).find('.modalBody').css({'margin-left':-mW,'margin-top':-mH});
+			$(wn).fadeIn(500);
+		});
+		$('.close,.modalBK').click(function(){
+			$(wn).fadeOut(500);
+		});
+		
+		$('.modal').on('click', '.modal_menu', function() {
+			$(wn).fadeOut(500);
+		});
+		<!-- END site/jquery_modal_menu -->
+
+		if ($('#agree').prop('checked') == false) {
+			$('#download').css('background', '#ccc');
+			$('#download').css('border', '1px solid #ccc');
+			$('#download').attr('disabled', 'disabled');
+		}
+
+		$('#agree').click(function() {
+			if ($(this).prop('checked') == false) {
+				$('#download').attr('disabled', 'disabled');
+				$('#download').css('background', '#ccc');
+				$('#download').css('border', '1px solid #ccc');
+			} else {
+				$('#download').removeAttr('disabled');
+				$('#download').css('background', '');
+				$('#download').css('border', '');
+			}
+		});
+	});
+</script>
+</head>
+<body>
+<!-- BEGIN site/menu_modal -->
+<div class="modal wd1">
+	<div class="modalBody">
+		<div style="text-align:center;">
+			<button style="margin:10px 0px;" class="close"> Close </button>
+		</div>
+		
+<!-- BEGIN site/menu_sitemap -->
+	<div class="modal_menu">
+		<h1 class="title01">&nbsp;<a href="https://gaw.kishou.go.jp/what_is_new">What's new</a></h1>
+		<h1 class="title01">&nbsp;About WDCGG</h1>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/about_wdcgg/wdcgg">Introduction</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/about_wdcgg/activities">Activities</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/about_wdcgg/history">History</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/about_wdcgg/gaw">About GAW</a></p>
+		<h1 class="title01">&nbsp;<a href="https://gaw.kishou.go.jp/documents/manuals">Manuals</a></h1>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/documents/manuals">Contributor</a> / <a href="https://gaw.kishou.go.jp/documents/manuals#user">User</a> Manuals</p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/documents/definition">Glossary</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/documents/db_list">Metadata List</a></p>
+		<h1 class="title01">&nbsp;<a href="https://gaw.kishou.go.jp/statistics">Statistics</a></h1>
+	</div>
+	<div class="modal_menu">
+		<h1 class="title01">&nbsp;<a href="https://gaw.kishou.go.jp/search/summary">Data (surface/mobile)</a></h1>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/search">Data Search</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/data_update_information">Data Update Information</a></p>
+		<h1 class="title01">&nbsp;<a href="https://gaw.kishou.go.jp/satellite">Data (satellite)</a></h1>
+		<br />
+		<h1 class="title01">&nbsp;<a href="https://gaw.kishou.go.jp/publications/global_mean_mole_fractions">Current State of GHGs</a></h1>
+		<h1 class="title01">&nbsp;<a href="https://gaw.kishou.go.jp/publications">Publications</a></h1>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/documents/gaw_reports">WDCGG Guide</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/publications/summary">WMO WDCGG Data Summary</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/publications/bulletin">WMO GHG Bulletin</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/publications#legacy">Legacy</a></p>
+	</div>
+	<div class="modal_menu">
+		<h1 class="title01">&nbsp;Login</h1>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/login/user">User</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/login/contributor">Contributor</a></p>
+		<h1 class="title01">&nbsp;Registration</h1>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/registration/user">User</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/registration/contributor">Contributor</a></p>
+		<h1 class="title01">&nbsp;Policy</h1>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/policy/gaw">GAW Data Policy</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/policy/wdcgg">WDCGG Privacy Policy</a></p>
+			<p><span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/policy/doi">WDCGG DOI Policy</a></p>
+		<h1 class="title01">&nbsp;<a href="https://gaw.kishou.go.jp/link">Link</a></h1>
+		<h1 class="title01">&nbsp;<a href="https://gaw.kishou.go.jp/faq">FAQ</a></h1>
+
+	</div>
+	<div style="clear:both;"></div>
+<!-- END site/menu_sitemap -->
+
+	
+	</div>
+	<div class="modalBK"></div>
+</div>
+<!-- END site/menu_modal -->
+<!-- main -->
+<div id="container">
+	<!-- north -->
+	<!-- BEGIN site/header_all -->
+	<div class="pane ui-layout-north" style="padding:0px;overflow:hidden;">
+		<!-- header -->
+
+<!-- BEGIN site/header_login -->
+		<div class="header" style="float:left;margin:5px 0 0 5px;">
+			<a href="https://gaw.kishou.go.jp/"><img src="https://gaw.kishou.go.jp/static/images/wdcgglogo.svg" alt="" class="logo" /></a>
+			<img src="https://gaw.kishou.go.jp/static/images/wmologo.gif" alt="" class="logo" style="margin:2px 2px;width:35px;height:38px;" />
+			<img src="https://gaw.kishou.go.jp/static/images/gawlogo.png" alt="" class="logo" style="margin:2px 2px;width:28px;height:36px;" />
+			<img src="https://gaw.kishou.go.jp/static/images/jmalogo.gif" alt="" class="logo" style="margin:2px 2px;width:37px;height:37px;" />
+		</div>
+		<div style="float:right;margin:10px 10px;">
+			<div style="float:left;padding:10px 10px 0 0;">
+				<span style="color:#5C9CCC;font-style:italic;">
+					Login to WDCGG as
+				</span>
+			</div>
+			<div style="float:left;margin:0 3px;">
+				<div style="float:left;margin:0 3px;">
+					<form id="loginUser" method="post" action="https://gaw.kishou.go.jp/login/user">
+						<input type="submit" class="loginbt" name="bt" value="User" />
+					</form>
+				</div>
+				<div style="float:left;;margin:0 3px;">
+					<form id="loginContributor" method="post" action="https://gaw.kishou.go.jp/login/contributor">
+						<input type="submit" class="loginbt" name="bt" value="Contributor" />
+					</form>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div style="clear:both;"></div>
+<!-- END site/header_login -->
+
+		<!-- menu -->
+		<div style="border-top: 1px solid #BBB;background:#e6e6e6;">
+			<div style="float:left;">
+				<div class="breadCrumb">
+					<ul>
+						<li>
+						    <a href="https://gaw.kishou.go.jp/">Home</a>
+						</li>
+						<li>
+							<a href="https://gaw.kishou.go.jp/search/summary">Data (surface/mobile)</a>
+						</li>
+						<li>
+							<a href="https://gaw.kishou.go.jp/search">Data Search</a>
+						</li>
+						<li>
+							File
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div style="float:right;">
+			
+<!-- BEGIN site/menu -->
+				<ul class="toolbar">
+					<li class="first"><a href="https://gaw.kishou.go.jp/"><span class="ui-icon ui-icon-home"></span>Home</a></li>
+					<li><a href="https://gaw.kishou.go.jp/policy/gaw"><span class="ui-icon ui-icon-notice"></span>Policy</a></li>
+					<li><a href="https://gaw.kishou.go.jp/link"><span class="ui-icon ui-icon-link"></span>Link</a></li>
+					<li><a href="https://gaw.kishou.go.jp/faq"><span class="ui-icon ui-icon-contact"></span>FAQ</a></li>
+					<li class="last"><a href="" data-tgt="wd1" class="btns" onclick="return false;"><span class="ui-icon ui-icon-check"></span>Sitemap</a></li>
+				</ul>
+<!-- END site/menu -->
+			
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<!-- END site/header_all -->
+	
+	<!-- center -->
+	<div class="ui-layout-center">
+		<div class="header-footer ui-state-default ui-corner-all" style="padding:3px 5px 5px;text-align:center;margin-bottom:1px;">
+			<div style="font-size:30px;font-weight:bold;">
+				CH<sub>4</sub> _ <a href="https://gaw.kishou.go.jp/search/station#6272" target="station">IPR6272</a> _ tower - insitu _ <a href="https://gaw.kishou.go.jp/search/contributor#162" target="contributor">ICOS</a> _ tower40
+			</div>
+		</div>
+		
+		
+		<ul>
+			<li><a href="#tab_1"><span>File</span></a></li>
+			<li><a href="#tab_2"><span>Contact</span></a></li>
+			<li><a href="#tab_3"><span>Observation</span></a></li>
+			<li><a href="#tab_4"><span>DOI/Reference(s)</span></a></li>
+			<li><a href="#tab_5"><span>Gallery</span></a></li>
+		</ul>
+		
+		<div class="ui-layout-content" style="font-size:90%;">
+			<!-- BEGIN site/contents_search_file -->
+			<div id="tab_1">
+				<h1 class="title01">&nbsp;Data Policy</h1>
+					<div class="ui-state-highlight ui-corner-all" style="margin-top:20px;padding:5px;">
+						<span class="ui-icon ui-icon-info" style="float:left;margin-right:5px;"></span>
+						<strong>GAW Data Policy</strong>
+						<div style="margin:20px;">
+						
+<!-- BEGIN site/gaw_data_policy -->
+	"For Scientific purposes, access to these data is unlimited and provided without charge. 
+	By their use you accept that an offer of co-authorship will be made through personal contact with the data providers 
+	or owners whenever substantial use is made of their data. 
+	In all cases, an acknowledgement must be made to the data providers or owners and to the data centre when these data are used within a publication." 
+<!-- END site/gaw_data_policy -->
+							
+						</div>
+					</div>
+					<br>
+				<h1 class="title01">&nbsp;Version</h1>
+					<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;<a href="https://gaw.kishou.go.jp/data_update_history/0162-6272-1002-02-01-6041" target="history">2026-08-27-0001</a> (Last updated: 2026-09-24)
+					<br><br>
+				<h1 class="title01">&nbsp;File</h1>
+					This data set is submitted by <a href="https://gaw.kishou.go.jp/search/contributor#162" target="contributor">ICOS</a>.
+					<br><br>
+
+<!-- BEGIN site/contents_search_file_error -->
+<!-- END site/contents_search_file_error -->
+
+					<form method="post">
+						<table class="table-sieve fixedTable" cellpadding="0" cellspacing="0">
+							<thead>
+								<tr>
+									<th>DL</th>
+									<th>Gas Species</th>
+									<th>Station/Mobile</th>
+									<th>Organization</th>
+									<th>Type</th>
+									<th>Period</th>
+									<th>Filename</th>
+									<th>Size</th>
+									<th>Plot</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">
+										<input type="checkbox" name="fl" value="ch4_ipr6272_tower-insitu_162_6041-9999_hourly" checked>
+									</td>
+									<td align="center">
+										CH<sub>4</sub>
+									</td>
+									<td align="center">
+										<a href="https://gaw.kishou.go.jp/search/station#6272" target="station">Ispra</a>
+									</td>
+									<td align="center">
+										<a href="https://gaw.kishou.go.jp/search/contributor#162" target="contributor">ICOS</a>
+									</td>
+									<td>
+										hourly
+									</td>
+									<td>
+										2017-12-10 00:00:00 - 2026-07-24 23:00:00
+									</td>
+									<td>
+										ch4_ipr6272_tower-insitu_162_6041-9999_hourly
+									</td>
+									<td align="center">
+										(Text: 
+										11.62MB
+										; NetCDF: 
+										18.47MB
+										)
+									</td>
+									<td align="center">
+										<a href="https://gaw.kishou.go.jp/static/graph/plot/ch4/ch4_ipr6272_tower-insitu_162_6041-9999_hourly.txt.plot.png" class="linkbtn">png</a>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<input type="checkbox" name="fl" value="ch4_ipr6272_tower-insitu_162_6041-9999_daily" checked>
+									</td>
+									<td align="center">
+										CH<sub>4</sub>
+									</td>
+									<td align="center">
+										<a href="https://gaw.kishou.go.jp/search/station#6272" target="station">Ispra</a>
+									</td>
+									<td align="center">
+										<a href="https://gaw.kishou.go.jp/search/contributor#162" target="contributor">ICOS</a>
+									</td>
+									<td>
+										daily
+									</td>
+									<td>
+										2017-12-10 00:00:00 - 2026-07-24 00:00:00
+									</td>
+									<td>
+										ch4_ipr6272_tower-insitu_162_6041-9999_daily
+									</td>
+									<td align="center">
+										(Text: 
+										0.57MB
+										; NetCDF: 
+										0.79MB
+										)
+									</td>
+									<td align="center">
+										<a href="https://gaw.kishou.go.jp/static/graph/plot/ch4/ch4_ipr6272_tower-insitu_162_6041-9999_daily.txt.plot.png" class="linkbtn">png</a>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<input type="checkbox" name="fl" value="ch4_ipr6272_tower-insitu_162_6041-9999_monthly" checked>
+									</td>
+									<td align="center">
+										CH<sub>4</sub>
+									</td>
+									<td align="center">
+										<a href="https://gaw.kishou.go.jp/search/station#6272" target="station">Ispra</a>
+									</td>
+									<td align="center">
+										<a href="https://gaw.kishou.go.jp/search/contributor#162" target="contributor">ICOS</a>
+									</td>
+									<td>
+										monthly
+									</td>
+									<td>
+										2017-12-01 00:00:00 - 2026-07-01 00:00:00
+									</td>
+									<td>
+										ch4_ipr6272_tower-insitu_162_6041-9999_monthly
+									</td>
+									<td align="center">
+										(Text: 
+										0.04MB
+										; NetCDF: 
+										0.05MB
+										)
+									</td>
+									<td align="center">
+										<a href="https://gaw.kishou.go.jp/static/graph/plot/ch4/ch4_ipr6272_tower-insitu_162_6041-9999_monthly.txt.plot.png" class="linkbtn">png</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<input type="radio" name="format" value="2" checked />Text
+						<input type="radio" name="format" value="1" />NetCDF
+						<br><br>
+						<div class="ui-state-highlight ui-corner-all" style="margin-top:20px;padding:5px;">
+							<span class="ui-icon ui-icon-info" style="float:left;margin-right:5px;"></span>
+							<strong>Download Data Files: </strong>
+							<div style="margin:20px;padding:0 15px;">
+								<input id="agree" type="checkbox" class="" name="agree" value="agree" />
+								<label for="agree"  style="font-weight:bolder;color:#2b2b2b;">
+									Check here to indicate that you agree to <a href="https://gaw.kishou.go.jp/policy/gaw" target="_blank">the GAW Data Policy</a> and <a href="https://gaw.kishou.go.jp/policy/wdcgg" target="_blank">the WDCGG Privacy Policy</a>.
+								</label>
+								<br><br>
+								<input type="submit" id="download" name="bt" class="btn" value="Download" style="width:200px;height:60px">
+								<input type="hidden" name="ch" value="0162-6272-1002-02-01-6041" />
+							</div>
+						</div>
+					</form>
+			</div>
+			<div id="tab_2">
+
+				<div class="ui-state-highlight ui-corner-all" style="margin-top:20px;padding:5px;">
+					<span class="ui-icon ui-icon-info" style="float:left;margin-right:5px;"></span>
+						<div style="margin:20px;">
+							<span class="red" style="font-style:oblique;">In line with the <a href="https://gaw.kishou.go.jp/policy/gaw" target="_blank">GAW Data Policy</a>, users should contact the contributors of all data of interest and propose co-authorship or acknowledgement.</span>
+						</div>
+				</div>
+				<br><br>
+				<h1 class="title01">&nbsp;Organization</h1>
+					<table class="tbl" style="margin:0 0 0 20px;width:800px;table-layout:fixed;">
+						<tr>
+							<th style="width:250px;">
+								NO
+							</th>
+							<td style="width:600px;">
+								162
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Acronym
+							</th>
+							<td>
+								<a href="https://gaw.kishou.go.jp/search/contributor#162" target="contributor">ICOS</a>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Name
+							</th>
+							<td>
+								Integrated Carbon Observation System Research Infrastructure
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 1
+							</th>
+							<td>
+								Erik Palménin aukio 1
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 2
+							</th>
+							<td>
+								FI-00560 Helsinki
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 3
+							</th>
+							<td>
+								FINLAND
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Country/Territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Website
+							</th>
+							<td>
+								<a href="https://www.icos-cp.eu" target="_blank">https://www.icos-cp.eu<span style="display:inline-block;" class="ui-icon ui-icon-extlink"></span></a>
+							</td>
+						</tr>
+					</table>
+					<br>
+				<h1 class="title01">&nbsp;Contact(s)</h1>
+					<table class="tbl" id="" style="margin:0 0 0 20px;width:800px;table-layout:fixed;">
+						<tr>
+							<th style="width:250px;">
+								Name
+							</th>
+							<td style="width:600px;">
+								Peter Bergamaschi
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Prefix
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Email
+							</th>
+							<td>
+								<span class="red">peter.bergamaschi@ec.europa.eu</span>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization No
+							</th>
+							<td>
+								171
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization acronym
+							</th>
+							<td>
+								JRC
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization name
+							</th>
+							<td>
+								European Commission Joint Research Centre
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 1
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 2
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 3
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Tel
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Fax
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Last updated date
+							</th>
+							<th>
+								2026-08-27
+							</th>
+						</tr>
+					</table>
+					<br>
+					<br>
+					<table class="tbl" id="" style="margin:0 0 0 20px;width:800px;table-layout:fixed;">
+						<tr>
+							<th style="width:250px;">
+								Name
+							</th>
+							<td style="width:600px;">
+								Giovanni Manca
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Prefix
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Email
+							</th>
+							<td>
+								<span class="red">giovanni.manca@ec.europa.eu</span>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization No
+							</th>
+							<td>
+								171
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization acronym
+							</th>
+							<td>
+								JRC
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization name
+							</th>
+							<td>
+								European Commission Joint Research Centre
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 1
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 2
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 3
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Tel
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Fax
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Last updated date
+							</th>
+							<th>
+								2026-08-27
+							</th>
+						</tr>
+					</table>
+					<br>
+					<br>
+					<table class="tbl" id="" style="margin:0 0 0 20px;width:800px;table-layout:fixed;">
+						<tr>
+							<th style="width:250px;">
+								Name
+							</th>
+							<td style="width:600px;">
+								Nicola Arriga
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Prefix
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Email
+							</th>
+							<td>
+								<span class="red">nicola.arriga@ec.europa.eu</span>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization No
+							</th>
+							<td>
+								171
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization acronym
+							</th>
+							<td>
+								JRC
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization name
+							</th>
+							<td>
+								European Commission Joint Research Centre
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 1
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 2
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 3
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Tel
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Fax
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Last updated date
+							</th>
+							<th>
+								2026-08-27
+							</th>
+						</tr>
+					</table>
+					<br>
+					<br>
+					<table class="tbl" id="" style="margin:0 0 0 20px;width:800px;table-layout:fixed;">
+						<tr>
+							<th style="width:250px;">
+								Name
+							</th>
+							<td style="width:600px;">
+								Ilaria Crotti
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Prefix
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Email
+							</th>
+							<td>
+								<span class="red">ilaria.crotti@ec.europa.eu</span>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization No
+							</th>
+							<td>
+								171
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization acronym
+							</th>
+							<td>
+								JRC
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization name
+							</th>
+							<td>
+								European Commission Joint Research Centre
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 1
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 2
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 3
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Tel
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Fax
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Last updated date
+							</th>
+							<th>
+								2026-08-27
+							</th>
+						</tr>
+					</table>
+					<br>
+					<br>
+					<table class="tbl" id="" style="margin:0 0 0 20px;width:800px;table-layout:fixed;">
+						<tr>
+							<th style="width:250px;">
+								Name
+							</th>
+							<td style="width:600px;">
+								Delia Segato
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Prefix
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Email
+							</th>
+							<td>
+								<span class="red">delia.segato@ec.europa.eu</span>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization No
+							</th>
+							<td>
+								171
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization acronym
+							</th>
+							<td>
+								JRC
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization name
+							</th>
+							<td>
+								European Commission Joint Research Centre
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Organization country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 1
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 2
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Address 3
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Country/territory
+							</th>
+							<td>
+								Multinational
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Tel
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Fax
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Last updated date
+							</th>
+							<th>
+								2026-08-27
+							</th>
+						</tr>
+					</table>
+					<br>
+					<br>
+			</div>
+			<div id="tab_3">
+				<table class="table-sieve tbl" cellpadding="0" cellspacing="0">
+					<tr>
+						<th style="width:250px;">
+							<div id="jl_joint_laboratory"><a href="javascript:void(0)">Collaborator(s)</a></div>
+						</th>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="ao_aim_of_observation"><a href="javascript:void(0)">Aim of Observation</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Background observation
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="tz_time_zone"><a href="javascript:void(0)">Data Time zone</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;UTC
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="un_unit"><a href="javascript:void(0)">Unit</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;ppb
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="sh_scale_history"><a href="javascript:void(0)">Calibration Scale</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;9999-12-31 00:00:00 - 9999-12-31 23:59:59: WMO CH4 X2004A<br>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="ih_instrument_history"><a href="javascript:void(0)">Instrument(s)</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;9999-12-31 00:00:00 - 2023-10-11 23:00:00: Picarro, CO/CO2/CH4/H2O Picarro Analyzer G2401, 2326-CFKADS 2193(CRDS)<br>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;2023-10-12 17:00:00 - 2026-07-03 23:00:00: Picarro, CO/CO2/CH4/H2O Picarro Analyzer G2401, 3551-CFKADS2357(CRDS)<br>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;2026-07-13 09:00:00 - 9999-12-31 23:59:59: Picarro, CO/CO2/CH4/H2O Picarro Analyzer G2401, 2326-CFKADS 2193(CRDS)<br>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="sh_sampling_height_history"><a href="javascript:void(0)">Intake Height above ground level</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;9999-12-31 00:00:00 - 9999-12-31 23:59:59: 40.0 (m)<br>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="sf_sampling_frequency"><a href="javascript:void(0)">Sampling Frequency</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Unknown
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="md_measurement_calibration"><a href="javascript:void(0)">Measurement Calibration</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Measurement calibration at ICOS ATC is described in [Hazan et al., 2016], doi:10.5194/amt-9-4719-2016
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="md_data_processing"><a href="javascript:void(0)">Data Processing</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Data processing at ICOS ATC is described in [Hazan et al., 2016], doi:10.5194/amt-9-4719-2016
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="md_hr_mean_processing"><a href="javascript:void(0)">Processing for averaging</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;[Hourly] Time-averaged values are reported at the start time of the averaging interval. The document 'ICOS Atmospheric Station specifications' (doi:10.18160/GK28-2188) provides more detailed explanations about the sampling frequency.<br>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;[Daily] <br>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;[Monthly] <br>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="md_original_data_flag"><a href="javascript:void(0)">Original Data Quality Flag</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;- Flag 'U' = data correct before manual quality control<br />
+- Flag 'N' = data incorrect before manual quality control<br />
+- Flag 'O' = data correct after manual quality control<br />
+- Flag 'K' = data incorrect after manual quality control<br />
+- Flag 'R' = data correct after manual quality control and backward propagation of manual quality control from hourly data to minutely and raw data<br />
+- Flag 'H' = data incorrect after manual quality control and backward propagation of manual quality control from hourly data to minutely and raw data
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="dg_data_flag_group"><a href="javascript:void(0)">Data Quality Flag (Valid/Invalid)</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Valid (background): U<br>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Valid (background): O<br>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Valid (background): R<br>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Invalid: N<br>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Invalid: K<br>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Invalid: H<br>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="st_status"><a href="javascript:void(0)">Observation Status</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Operational/Reporting
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="md_description"><a href="javascript:void(0)">Description</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;ICOS atmospheric station<br />
+Observational timeseries of ambient mole fraction of CH4 in dry air, composed of (all whenever available) historical PI quality-checked data, ICOS Level 2 data, ICOS FastTrack data and ICOS NRT data.<br />
+<br />
+The following uncertainty estimates are used:<br />
+  a. Continuous Measurement Repeatability: monthly average of the standard deviations of short-term target raw data over 1-minute intervals<br />
+  b. Long Term Repeatability: standard deviation of the averaged short-term target measurement intervals (of 10 minutes every 5 hours approximately) over three days<br />
+  c. Short Term Target Bias: difference between the hourly average of the short-term target injections and the value assigned by the calibration lab<br />
+The method used for "value_unc_1" is "Continuous Measurement Repeatability". The method used for "value_unc_2" is "Long Term Repeatability". The method used for "value_unc_3" is "Short Term Target Bias".<br />
+More information about the uncertainty estimates can be found in Yver Kwok et al. (2015) (https://doi.org/10.5194/amt-8-3867-2015) and Yver-Kwok et al. (2021) (https://amt.copernicus.org/articles/14/89/2021/).<br />
+<br />
+PID: 11676/81m5VGJak_6-cD_BWUeonj0X<br />
+<br />
+Citation:<br />
+Bergamaschi, P., Manca, G., Arriga, N., Crotti, I., Segato, D. (2026). Obspack CH4 time-series result from Ispra (40.0 m), 2017-12-10–2026-07-24, European ObsPack, https://hdl.handle.net/11676/81m5VGJak_6-cD_BWUeonj0X<br />
+<br />
+DATA POLICY:<br />
+ICOS data is licensed under a Creative Commons Attribution 4.0 international licence (https://creativecommons.org/licenses/by/4.0/). ICOS data licence is described at https://data.icos-cp.eu/licence.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="mm_flag"><a href="javascript:void(0)">Meteorological Data Availability<br /> (1: Available)</a></div>
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Wind direction: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Wind speed: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Relative humidity: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Precipitation amount: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Air pressure: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Air temperature: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Dew point temperature: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Sea water temperature: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Sea surface water temperature: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Sea water salinity: <br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Sea surface water salinity: <br />
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<div id="mm_description"><a href="javascript:void(0)">Meteorological Data Description</a></div>
+						</th>
+						<td>
+							Meteorological data may remain as first provided, even when greenhouse gas data are updated.<br />
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="tab_4">
+				<h1 class="title01">&nbsp;DOI Metadata</h1>
+					<table class="tbl" style="margin:0 0 0 20px;width:1050px;table-layout:fixed;">
+						<tr>
+							<th style="width:250px;">
+								DOI
+							</th>
+							<td style="width:800px;">
+								<table class="tbl" style="margin:0 0 0 20px;width:740px;table-layout:fixed;">
+									<tr>
+										<th style="width:420px;">
+											ch4_ipr6272_tower-insitu_162_6041-9999_hourly.nc
+										</th>
+										<td style="width:320px;">
+											10.18160/K54N-TNWH
+										</td>
+									</tr>
+									<tr>
+										<th style="width:420px;">
+											ch4_ipr6272_tower-insitu_162_6041-9999_hourly.txt
+										</th>
+										<td style="width:320px;">
+											10.18160/K54N-TNWH
+										</td>
+									</tr>
+									<tr>
+										<th style="width:420px;">
+											ch4_ipr6272_tower-insitu_162_6041-9999_daily.nc
+										</th>
+										<td style="width:320px;">
+											10.18160/K54N-TNWH
+										</td>
+									</tr>
+									<tr>
+										<th style="width:420px;">
+											ch4_ipr6272_tower-insitu_162_6041-9999_daily.txt
+										</th>
+										<td style="width:320px;">
+											10.18160/K54N-TNWH
+										</td>
+									</tr>
+									<tr>
+										<th style="width:420px;">
+											ch4_ipr6272_tower-insitu_162_6041-9999_monthly.nc
+										</th>
+										<td style="width:320px;">
+											10.18160/K54N-TNWH
+										</td>
+									</tr>
+									<tr>
+										<th style="width:420px;">
+											ch4_ipr6272_tower-insitu_162_6041-9999_monthly.txt
+										</th>
+										<td style="width:320px;">
+											10.18160/K54N-TNWH
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								For more information, please refer: <a href="https://doi.org/10.18160/K54N-TNWH" target ="_blank">doi.org/10.18160/K54N-TNWH</a>
+							</td>
+						</tr>
+					</table>
+				<br />
+				<h1 class="title01">&nbsp;Related information</h1>
+				<table class="tbl" style="margin:0 0 0 20px;width:850px;table-layout:fixed;">
+					<tr>
+						<th style="width:180px;">
+							Format
+						</th>
+						<td>
+							Text (<a href="https://gaw.kishou.go.jp/static/documents/wdcgg_data_format_table.pdf">WDCGG Data Format Table</a>, <a href="https://gaw.kishou.go.jp/static/documents/wdcgg_meteorological_data_format_table.pdf">WDCGG Meteorological Data Format Table</a>), NetCDF
+						</td>
+					</tr>
+					<tr>
+						<th>
+							Relation List (Is Part Of)
+						</th>
+						<td>
+							<a href="https://gaw.kishou.go.jp/search/gas_species/ch4/2026">All CH<sub>4</sub> data contributed to WDCGG by GAW stations and mobiles by 2026-09-24</a><br />
+							<a href="https://gaw.kishou.go.jp/search/gas_species/ch4/2025">All CH<sub>4</sub> data contributed to WDCGG by GAW stations and mobiles by 2025-09-16</a><br />
+						</td>
+					</tr>
+					<tr>
+						<th>
+							Geolocation Point
+						</th>
+						<td>
+							<table class="tbl" style="margin:0 0 0 20px;width:500px;table-layout:fixed;">
+								<tr>
+									<th>
+										Latitude (north: +; south: -)
+									</th>
+									<td>
+										45.8030014038
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Longitude (east: +; west: -)
+									</th>
+									<td>
+										8.626999855
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<br />
+				<h1 class="title01">&nbsp;GAW Data Policy</h1>
+					<div class="ui-state-highlight ui-corner-all" style="margin:0 0 0 20px;padding:5px;width:1050px;">
+						<div style="margin:20px;">
+<!-- BEGIN site/gaw_data_policy -->
+	"For Scientific purposes, access to these data is unlimited and provided without charge. 
+	By their use you accept that an offer of co-authorship will be made through personal contact with the data providers 
+	or owners whenever substantial use is made of their data. 
+	In all cases, an acknowledgement must be made to the data providers or owners and to the data centre when these data are used within a publication." 
+<!-- END site/gaw_data_policy -->
+						</div>
+					</div>
+					<br />
+				<h1 class="title01">&nbsp;Citation format</h1>
+					<div style="margin:0 0 0 20px;padding:5px;width:1050px;">
+						This format is an example of the WDCGG standard citation.<br />
+						Please follow the citation format which the data providers or owners indicate.<br />
+					</div>
+					<div class="ui-state-highlight ui-corner-all" style="margin:0 0 0 20px;padding:5px;width:1050px;">
+						<div style="margin:20px;">
+							Peter Bergamaschi (JRC),
+							Giovanni Manca (JRC),
+							Nicola Arriga (JRC),
+							Ilaria Crotti (JRC),
+							Delia Segato (JRC),
+							Atmospheric CH<sub>4</sub> 
+							at Ispra by Integrated Carbon Observation System Research Infrastructure,
+							
+							dataset published as CH<sub>4</sub>_IPR6272_tower-insitu_ICOS_tower40 at WDCGG,
+							ver. 2026-08-27-0001 (Reference date<sup>*</sup>: YYYY/MM/DD)<br /><br />
+
+							* As the reference date, please indicate the date you downloaded the files.
+						</div>
+					</div>
+					<br />
+				<h1 class="title01">&nbsp;Reference(s)</h1>
+				<table class="table-sieve tbl" cellpadding="0" cellspacing="0">
+					<tr>
+						<th>
+							1
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Hazan, L., Tarniewicz, J., Ramonet, M., Laurent, O., and Abbaris, A.: Automatic processing of atmospheric CO2 and CH4 mole fractions at the ICOS Atmosphere Thematic Centre, Atmos. Meas. Tech., 9, 4719-4736, doi:10.5194/amt-9-4719-2016, 2016.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							2
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Yver Kwok, C., Laurent, O., Guemri, A., Philippon, C., Wastine, B., Rella, C. W., Vuillemin, C., Truong, F., Delmotte, M., Kazan, V., Darding, M., Lebègue, B., Kaiser, C., Xueref-Rémy, I., and Ramonet, M.: Comprehensive laboratory and field testing of cavity ring-down spectroscopy analyzers measuring H2O, CO2, CH4 and CO, Atmos. Meas. Tech., 8, 3867–3892, https://doi.org/10.5194/amt-8-3867-2015, 2015.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							3
+						</th>
+						<td>
+							<span style="display:inline-block;" class="ui-icon ui-icon-triangle-1-e"></span>&nbsp;Yver-Kwok, C., Philippon, C., Bergamaschi, P., Biermann, T., Calzolari, F., Chen, H., Conil, S., Cristofanelli, P., Delmotte, M., Hatakka, J., Heliasz, M., Hermansen, O., Komínková, K., Kubistin, D., Kumps, N., Laurent, O., Laurila, T., Lehner, I., Levula, J., Lindauer, M., Lopez, M., Mammarella, I., Manca, G., Marklund, P., Metzger, J.-M., Mölder, M., Platt, S. M., Ramonet, M., Rivier, L., Scheeren, B., Sha, M. K., Smith, P., Steinbacher, M., Vítková, G., and Wyss, S.: Evaluation and optimization of ICOS atmosphere station data as part of the labeling process, Atmos. Meas. Tech., 14, 89–116, https://doi.org/10.5194/amt-14-89-2021, 2021.
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="tab_5">
+				<div style="max-width:700px;margin-left:auto;margin-right:auto;">
+					<ul class="bxslider">
+						<li><div style="margin:35px 30px;"><img src="https://gaw.kishou.go.jp/static/graph/plot/ch4/ch4_ipr6272_tower-insitu_162_6041-9999_hourly.txt.plot.png" title="ch4_ipr6272_tower-insitu_162_6041-9999_hourly.txt" width="640" height="480" /></div></li>
+						<li><div style="margin:35px 30px;"><img src="https://gaw.kishou.go.jp/static/graph/plot/ch4/ch4_ipr6272_tower-insitu_162_6041-9999_daily.txt.plot.png" title="ch4_ipr6272_tower-insitu_162_6041-9999_daily.txt" width="640" height="480" /></div></li>
+						<li><div style="margin:35px 30px;"><img src="https://gaw.kishou.go.jp/static/graph/plot/ch4/ch4_ipr6272_tower-insitu_162_6041-9999_monthly.txt.plot.png" title="ch4_ipr6272_tower-insitu_162_6041-9999_monthly.txt" width="640" height="480" /></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="tab_6">
+			</div>
+
+			<!-- END site/contents_search_file -->
+
+		</div>
+		
+	</div>
+
+	<!-- footer -->
+	<div class="pane ui-layout-south">
+		<!-- BEGIN site/footer -->
+		<div class="footer">
+			<div id="copyright">&copy; 2018 WMO WDCGG <span class="gray"></span></div>
+		</div>
+		<!-- END site/footer -->
+	</div>
+	
+</div>
+</body>
+
+
+</html>
