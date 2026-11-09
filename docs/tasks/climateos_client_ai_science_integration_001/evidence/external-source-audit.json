@@ -1,0 +1,30 @@
+{
+  "observed_date": "2026-11-09",
+  "mode": "read-only public-weather source and audit documentation; no collector execution",
+  "files": [
+    {
+      "path": "D:/eco_engine_v200/weather_client.py",
+      "sha256": "6705fefdb5cf20469f7d968a22ced3ace75d9e7c52b79bb079efd01752353eb8",
+      "run_status": "NOT_RUN",
+      "external_adoption": "UNKNOWN"
+    },
+    {
+      "path": "D:/EcoEngine/README_MULTISITE_RUNTIME.md",
+      "sha256": "e154892f994ab4b1306bac06dd8ac6d3084b73dff08f26c014aae4ea1484b770",
+      "run_status": "NOT_RUN",
+      "external_adoption": "UNKNOWN"
+    },
+    {
+      "path": "D:/EcoEngine/four_site_weather/collect_four_site_weather.py",
+      "sha256": "743dcb0752fffa628f81a31b36ea1c5c60a88d198a884ae96cd61361b27490a1",
+      "run_status": "NOT_RUN",
+      "external_adoption": "UNKNOWN"
+    },
+    {
+      "path": "D:/EcoEngine/four_site_weather/audit/FOUNDER_HISTORICAL_RECOVERY_2026-09-29.md",
+      "sha256": "9c20f031abf30cec22fac67204766e529b2fd51f2e0dc8647e62718e43c13977",
+      "run_status": "NOT_RUN",
+      "external_adoption": "UNKNOWN"
+    }
+  ]
+}

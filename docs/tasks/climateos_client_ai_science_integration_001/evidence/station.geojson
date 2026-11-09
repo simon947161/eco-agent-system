@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "bbox": [
+    -73.96925,
+    40.77898,
+    -73.96925,
+    40.77898
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "id": "NOAA_GHCND_USW00094728",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96925,
+          40.77898
+        ]
+      },
+      "properties": {
+        "source_sha256": "0d2d7217aa912df6418c69117b6f1b2bfde6f888ff3a8cf152830f9b630f6bbb",
+        "coordinate_accuracy_m": "UNKNOWN",
+        "crs_basis": "inherited EPSG:4326 contract; datum not independently surveyed",
+        "observation_count": 3,
+        "spatial_scope": "single station; no parcel or receptor proximity"
+      }
+    }
+  ]
+}
