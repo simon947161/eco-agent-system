@@ -1,0 +1,122 @@
+{
+  "new_theme_count": 9,
+  "deep_comparison_jurisdictions": [
+    "AU",
+    "US",
+    "EU",
+    "NZ_LIMITED_BLOCKED"
+  ],
+  "open_candidates": 1,
+  "synthetic_packages": 3,
+  "notes": "Raw webpage bytes not retained except acquisition hash receipt. No invented document hashes. AU/IPCC inherited from PR144.",
+  "sources": [
+    {
+      "id": "G01",
+      "theme": "US GHGRP",
+      "access": "SOURCE_VERIFIED",
+      "locator": "40 CFR 98.343(a)-(c), 98.344(a)-(c), 98.345(a)-(c)",
+      "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-98/subpart-HH/section-98.343",
+      "version": "Title40 page snapshots 2026-11-02 and 2026-10-30; not a uniform amendment date",
+      "limits": "Equation images not fully transcribed; original section text and official EPA explanation only",
+      "checked_on": "2026-11-09",
+      "receipt_kind": "OFFICIAL_WEB_TEXT_OR_SEARCH_INDEX; AUTHOR_REVIEW_NOTE",
+      "raw_sha256": null
+    },
+    {
+      "id": "G02",
+      "theme": "EU Landfill Directive",
+      "access": "SOURCE_VERIFIED",
+      "locator": "Annex I 4.1-4.3; Annex III 2-3",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01999L0031-20240804",
+      "version": "1999/31/EC consolidated 2024-08-04",
+      "limits": "National transposition and individual permits not examined",
+      "checked_on": "2026-11-09",
+      "receipt_kind": "OFFICIAL_WEB_TEXT_OR_SEARCH_INDEX; AUTHOR_REVIEW_NOTE",
+      "raw_sha256": null
+    },
+    {
+      "id": "G03",
+      "theme": "NZ Waste ETS",
+      "access": "LIMITED_EXCERPT",
+      "locator": "reg5; official indexed excerpt",
+      "url": "https://www.legislation.govt.nz/regulation/public/2010/0338/latest/DLM3249508.html",
+      "version": "Indexed as at 2023-01-01; current full applicability NOT_VERIFIED",
+      "limits": "Direct open HTTP403; no retries, no alternative-address workaround; formula/units chain incomplete",
+      "checked_on": "2026-11-09",
+      "receipt_kind": "OFFICIAL_WEB_TEXT_OR_SEARCH_INDEX; AUTHOR_REVIEW_NOTE",
+      "raw_sha256": null
+    },
+    {
+      "id": "G04",
+      "theme": "ISO metadata family",
+      "access": "METADATA_ONLY",
+      "locator": "catalogue edition, status, abstract only",
+      "url": "https://committee.iso.org/sites/tc207sc7/home/projects/published/mitigation-standards.html",
+      "version": "14064-1:2018; -2/-3:2019;14065:2020;14066:2023;14067:2018;14040/44:2006 plus unreviewed amendments",
+      "limits": "No paid full text; 14064-2 catalogue heading/abstract date mismatch",
+      "checked_on": "2026-11-09",
+      "receipt_kind": "OFFICIAL_WEB_TEXT_OR_SEARCH_INDEX; AUTHOR_REVIEW_NOTE",
+      "raw_sha256": null
+    },
+    {
+      "id": "G05",
+      "theme": "GHG Protocol",
+      "access": "LIMITED_EXCERPT",
+      "locator": "Corporate revised2004; Project2005 sections1.4.6/1.5",
+      "url": "https://ghgprotocol.org/project-protocol",
+      "version": "2005 Project;2004 Corporate",
+      "limits": "Not credit issuance; full copyright files not archived",
+      "checked_on": "2026-11-09",
+      "receipt_kind": "OFFICIAL_WEB_TEXT_OR_SEARCH_INDEX; AUTHOR_REVIEW_NOTE",
+      "raw_sha256": null
+    },
+    {
+      "id": "G06",
+      "theme": "UNFCCC ETF",
+      "access": "SOURCE_VERIFIED",
+      "locator": "TER overview Article13(7/9); MPGs",
+      "url": "https://unfccc.int/technical-expert-review",
+      "version": "Page accessed2026-11-09;18/CMA.1 framework",
+      "limits": "No delegated accreditation to ClimateOS",
+      "checked_on": "2026-11-09",
+      "receipt_kind": "OFFICIAL_WEB_TEXT_OR_SEARCH_INDEX; AUTHOR_REVIEW_NOTE",
+      "raw_sha256": null
+    },
+    {
+      "id": "G07",
+      "theme": "GeoJSON",
+      "access": "SOURCE_VERIFIED",
+      "locator": "RFC7946 sections3.1.1/4/11.2",
+      "url": "https://www.rfc-editor.org/rfc/rfc7946",
+      "version": "2016-08",
+      "limits": "Not coordinate accuracy certification or complete OGC implementation",
+      "checked_on": "2026-11-09",
+      "receipt_kind": "OFFICIAL_WEB_TEXT_OR_SEARCH_INDEX; AUTHOR_REVIEW_NOTE",
+      "raw_sha256": null
+    },
+    {
+      "id": "G08",
+      "theme": "CF",
+      "access": "SOURCE_VERIFIED",
+      "locator": "CF1.13.0 sections3.1/4.4/7.3",
+      "url": "https://cfconventions.org/cf-conventions/release/v1.13.0/cf-conventions.html",
+      "version": "fixed1.13.0",
+      "limits": "Selected metadata conventions; not complete implementation",
+      "checked_on": "2026-11-09",
+      "receipt_kind": "OFFICIAL_WEB_TEXT_OR_SEARCH_INDEX; AUTHOR_REVIEW_NOTE",
+      "raw_sha256": null
+    },
+    {
+      "id": "G09",
+      "theme": "Zenodo SL1",
+      "access": "SOURCE_VERIFIED",
+      "locator": "record rights; originalZIP Measured_Methane_Data_SL1.xlsx",
+      "url": "https://zenodo.org/records/17718964",
+      "version": "v1 2025-11-26",
+      "limits": "CC-BY-4.0 raw receipt;23dissolvedconcentrations only",
+      "checked_on": "2026-11-09",
+      "receipt_kind": "RAW_HTTP_BYTES_IN_SEPARATE_RECEIPT",
+      "raw_sha256": "d559b1c81e31090c7563accea4091b215c4a0d533d0a23d79b251dd83b9cb589"
+    }
+  ]
+}

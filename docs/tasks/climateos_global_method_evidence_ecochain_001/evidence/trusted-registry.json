@@ -1,0 +1,23 @@
+{
+  "status": "AUTHOR_FIXTURE_REGISTRY_NOT_IDENTITY_AUTHORITY",
+  "sources": {
+    "AUTHOR_LEDGER_FIXTURES": {
+      "origin": "AUTHOR_SYNTHETIC",
+      "licence": "AUTHOR_SYNTHETIC_CC0",
+      "sha256": "693081d24aaf6b655378c7e041145b93166a16487e76f7e95cb6c16a9deb6c78"
+    }
+  },
+  "core_sha256": "f1eeb38baaa4799b65168198542fe0eb1683f0e60d8b56973fa2d31e1476d79b",
+  "roles": {
+    "SYNTHETIC_SUBMITTER": {
+      "role": "submitter_fixture",
+      "organization": "FIXTURE_ORG_A",
+      "conflict_of_interest": false
+    },
+    "TECHNICAL_REVIEW_FIXTURE": {
+      "role": "technical_reviewer_fixture",
+      "organization": "FIXTURE_ORG_B",
+      "conflict_of_interest": false
+    }
+  }
+}

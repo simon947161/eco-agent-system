@@ -1,0 +1,161 @@
+{
+  "status": "OPEN_FRAGMENT_RECALCULATED_WITH_LIMITS",
+  "source": "Li, Jiuling (2025), Sewer CH4, v1, doi:10.5281/zenodo.17718964",
+  "licence": "CC-BY-4.0",
+  "raw_sha256": "d559b1c81e31090c7563accea4091b215c4a0d533d0a23d79b251dd83b9cb589",
+  "xlsx_member": "Data for Network SL1/Measured_Methane_Data_SL1.xlsx",
+  "xlsx_sha256": "0539ce52342c106bfcd3e23316456868074cb945e3d381796a837a6872caa25d",
+  "formula": "kg/m3 = mg/L * (1e-6 kg/mg)/(1e-3 m3/L) = mg/L * 0.001",
+  "phase": "dissolved_CH4",
+  "row_count": 23,
+  "missing_selected_cells": 0,
+  "crosscheck_PR139": "23/23 within 1e-12 mg/L",
+  "quality_flags": "NOT_PROVIDED_IN_SELECTED_SHEET",
+  "timezone": "UNKNOWN",
+  "calibration": "UNKNOWN",
+  "spatial_support": "published SL1 sewer network; coordinates and representativeness UNKNOWN",
+  "measurement_method": "workbook observations; instrument and uncertainty not established by this fragment",
+  "uncertainty": "unit conversion exact, measured concentration uncertainty UNKNOWN",
+  "full_landfill_case": "OPEN_CASE_DATA_NOT_READY",
+  "effect": "NOT_ASSESSED",
+  "rows": [
+    {
+      "row": 2,
+      "time_naive": "2016-03-03T09:00:00",
+      "original_mg_L": "12.57978",
+      "derived_kg_m3": "0.01257978"
+    },
+    {
+      "row": 3,
+      "time_naive": "2016-03-03T10:00:00",
+      "original_mg_L": "12.73704",
+      "derived_kg_m3": "0.01273704"
+    },
+    {
+      "row": 4,
+      "time_naive": "2016-03-03T11:30:00",
+      "original_mg_L": "12.16624",
+      "derived_kg_m3": "0.01216624"
+    },
+    {
+      "row": 5,
+      "time_naive": "2016-03-03T12:30:00",
+      "original_mg_L": "9.0232460000000003",
+      "derived_kg_m3": "0.0090232460000000003"
+    },
+    {
+      "row": 6,
+      "time_naive": "2016-03-03T13:30:00",
+      "original_mg_L": "8.5612569999999995",
+      "derived_kg_m3": "0.0085612569999999995"
+    },
+    {
+      "row": 7,
+      "time_naive": "2016-03-03T14:30:00",
+      "original_mg_L": "8.5942629999999998",
+      "derived_kg_m3": "0.0085942629999999998"
+    },
+    {
+      "row": 8,
+      "time_naive": "2016-03-03T15:30:00",
+      "original_mg_L": "9.2979109999999991",
+      "derived_kg_m3": "0.0092979109999999991"
+    },
+    {
+      "row": 9,
+      "time_naive": "2016-03-03T16:30:00",
+      "original_mg_L": "9.4597370000000005",
+      "derived_kg_m3": "0.0094597370000000005"
+    },
+    {
+      "row": 10,
+      "time_naive": "2016-03-03T17:30:00",
+      "original_mg_L": "9.9000509999999995",
+      "derived_kg_m3": "0.0099000509999999995"
+    },
+    {
+      "row": 11,
+      "time_naive": "2016-03-03T18:30:00",
+      "original_mg_L": "12.05125",
+      "derived_kg_m3": "0.01205125"
+    },
+    {
+      "row": 12,
+      "time_naive": "2016-03-03T19:30:00",
+      "original_mg_L": "9.5548120000000001",
+      "derived_kg_m3": "0.0095548120000000001"
+    },
+    {
+      "row": 13,
+      "time_naive": "2016-03-03T20:30:00",
+      "original_mg_L": "8.1339349999999992",
+      "derived_kg_m3": "0.0081339349999999992"
+    },
+    {
+      "row": 14,
+      "time_naive": "2016-03-03T21:40:00",
+      "original_mg_L": "6.7054689999999999",
+      "derived_kg_m3": "0.0067054689999999999"
+    },
+    {
+      "row": 15,
+      "time_naive": "2016-03-03T22:30:00",
+      "original_mg_L": "6.8561680000000003",
+      "derived_kg_m3": "0.0068561680000000003"
+    },
+    {
+      "row": 16,
+      "time_naive": "2016-03-04T00:00:00",
+      "original_mg_L": "7.06",
+      "derived_kg_m3": "0.00706"
+    },
+    {
+      "row": 17,
+      "time_naive": "2016-03-04T01:00:00",
+      "original_mg_L": "7.3898359999999998",
+      "derived_kg_m3": "0.0073898359999999998"
+    },
+    {
+      "row": 18,
+      "time_naive": "2016-03-04T02:00:00",
+      "original_mg_L": "9.0418369999999992",
+      "derived_kg_m3": "0.0090418369999999992"
+    },
+    {
+      "row": 19,
+      "time_naive": "2016-03-04T03:00:00",
+      "original_mg_L": "10.24375",
+      "derived_kg_m3": "0.01024375"
+    },
+    {
+      "row": 20,
+      "time_naive": "2016-03-04T04:00:00",
+      "original_mg_L": "9.3392949999999999",
+      "derived_kg_m3": "0.0093392949999999999"
+    },
+    {
+      "row": 21,
+      "time_naive": "2016-03-04T05:00:00",
+      "original_mg_L": "10.980409999999999",
+      "derived_kg_m3": "0.010980409999999999"
+    },
+    {
+      "row": 22,
+      "time_naive": "2016-03-04T06:00:00",
+      "original_mg_L": "12.37",
+      "derived_kg_m3": "0.01237"
+    },
+    {
+      "row": 23,
+      "time_naive": "2016-03-04T07:00:00",
+      "original_mg_L": "12.57",
+      "derived_kg_m3": "0.01257"
+    },
+    {
+      "row": 24,
+      "time_naive": "2016-03-04T08:00:00",
+      "original_mg_L": "13.04",
+      "derived_kg_m3": "0.01304"
+    }
+  ]
+}
