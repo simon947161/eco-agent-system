@@ -1,0 +1,882 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "package_id",
+    "revision",
+    "CLAIM",
+    "METHOD",
+    "SOURCE_LICENCE",
+    "DATA",
+    "CALCULATION",
+    "REVIEW",
+    "OUTCOME"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "package_id": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "CLAIM": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_id",
+          "scope",
+          "fixture",
+          "supporting_evidence_ids",
+          "flows",
+          "reported_emitted_kg_CH4"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "fixture": {
+            "type": "string"
+          },
+          "supporting_evidence_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "flows": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "stock_start",
+              "generated",
+              "inflow",
+              "stock_end",
+              "collected",
+              "cover_in",
+              "lateral_out",
+              "pipe_leak",
+              "pipe_stock_change",
+              "device_in",
+              "device_slip",
+              "destroyed",
+              "oxidized",
+              "surface"
+            ],
+            "properties": {
+              "stock_start": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "generated": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "inflow": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "stock_end": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "collected": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "cover_in": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "lateral_out": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "pipe_leak": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "pipe_stock_change": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "device_in": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "device_slip": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "destroyed": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "oxidized": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              },
+              "surface": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit",
+                  "interval"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interval": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "reported_emitted_kg_CH4": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "METHOD": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "jurisdiction",
+        "version",
+        "reporting_year",
+        "formula_id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "jurisdiction": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "reporting_year": {
+          "type": "string"
+        },
+        "formula_id": {
+          "type": "string"
+        }
+      }
+    },
+    "SOURCE_LICENCE": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence_id",
+          "origin",
+          "licence",
+          "sha256",
+          "payload"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "licence": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "origin",
+              "cases"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string"
+              },
+              "cases": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "fixture",
+                    "flows"
+                  ],
+                  "properties": {
+                    "fixture": {
+                      "type": "string"
+                    },
+                    "flows": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "stock_start",
+                        "generated",
+                        "inflow",
+                        "stock_end",
+                        "collected",
+                        "cover_in",
+                        "lateral_out",
+                        "pipe_leak",
+                        "pipe_stock_change",
+                        "device_in",
+                        "device_slip",
+                        "destroyed",
+                        "oxidized",
+                        "surface"
+                      ],
+                      "properties": {
+                        "stock_start": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "generated": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "inflow": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "stock_end": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "collected": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "cover_in": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "lateral_out": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "pipe_leak": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "pipe_stock_change": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "device_in": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "device_slip": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "destroyed": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "oxidized": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "surface": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "value",
+                            "unit",
+                            "interval"
+                          ],
+                          "properties": {
+                            "value": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interval": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "DATA": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gas",
+        "phase",
+        "unit",
+        "wet_dry",
+        "volume_reference",
+        "time_window",
+        "timezone",
+        "spatial_boundary",
+        "crs",
+        "coordinates",
+        "instrument",
+        "calibration",
+        "uncertainty",
+        "raw_flow_evidence",
+        "missing_policy"
+      ],
+      "properties": {
+        "gas": {
+          "type": "string"
+        },
+        "phase": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "wet_dry": {
+          "type": "string"
+        },
+        "volume_reference": {
+          "type": "string"
+        },
+        "time_window": {
+          "type": "string"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "spatial_boundary": {
+          "type": "string"
+        },
+        "crs": {
+          "type": "string"
+        },
+        "coordinates": {
+          "type": "string"
+        },
+        "instrument": {
+          "type": "string"
+        },
+        "calibration": {
+          "type": "string"
+        },
+        "uncertainty": {
+          "type": "string"
+        },
+        "raw_flow_evidence": {
+          "type": "string"
+        },
+        "missing_policy": {
+          "type": "string"
+        }
+      }
+    },
+    "CALCULATION": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code_sha256",
+        "oxidation_applications",
+        "lateral_fate"
+      ],
+      "properties": {
+        "code_sha256": {
+          "type": "string"
+        },
+        "oxidation_applications": {
+          "type": "number"
+        },
+        "lateral_fate": {
+          "type": "string"
+        }
+      }
+    },
+    "REVIEW": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "submitter_id",
+        "reviewer_id",
+        "authority"
+      ],
+      "properties": {
+        "submitter_id": {
+          "type": "string"
+        },
+        "reviewer_id": {
+          "type": "string"
+        },
+        "authority": {
+          "type": "string"
+        }
+      }
+    },
+    "OUTCOME": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requested_effect",
+        "regulatory_certification"
+      ],
+      "properties": {
+        "requested_effect": {
+          "type": "string"
+        },
+        "regulatory_certification": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:climateos:claim-evidence-proposal:1",
+  "title": "Bounded offline synthetic technical review; not ECOChain canonical"
+}

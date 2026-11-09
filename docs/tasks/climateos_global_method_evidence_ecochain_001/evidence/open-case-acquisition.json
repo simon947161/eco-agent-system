@@ -1,0 +1,30 @@
+{
+  "candidate_count": 1,
+  "attempted_at_utc": "2026-11-09T09:09:15.776630+00:00",
+  "record": "https://zenodo.org/records/17718964",
+  "url": "https://zenodo.org/records/17718964/files/Data%20for%20Network%20SL1.zip?download=1",
+  "author": "Jiuling Li",
+  "version": "v1, 2025-11-26",
+  "doi": "10.5281/zenodo.17718964",
+  "attempts": [
+    {
+      "url": "https://zenodo.org/records/17718964",
+      "status": 200,
+      "bytes": 79701,
+      "sha256": "c001f638ed58f435c8c0e0a16745f87ef7a244322988f01c114cfbe4baaa305f"
+    },
+    {
+      "url": "https://zenodo.org/records/17718964/files/Data%20for%20Network%20SL1.zip?download=1",
+      "status": 200,
+      "bytes": 61969,
+      "sha256": "d559b1c81e31090c7563accea4091b215c4a0d533d0a23d79b251dd83b9cb589"
+    }
+  ],
+  "status": "RAW_BYTES_VERIFIED",
+  "licence": "CC-BY-4.0",
+  "licence_locator": "record HTML rights / Creative Commons Attribution 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "raw": "evidence/raw/SL1.zip",
+  "sha256": "d559b1c81e31090c7563accea4091b215c4a0d533d0a23d79b251dd83b9cb589",
+  "redistribution": "CC-BY-4.0 attribution; ZIP unmodified; derived conversion explicitly marked"
+}

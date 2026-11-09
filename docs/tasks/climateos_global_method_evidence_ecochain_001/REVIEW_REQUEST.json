@@ -1,0 +1,28 @@
+{
+  "schema_version": "scientific-review-request/1",
+  "task_id": "CLIMATEOS-GLOBAL-METHOD-EVIDENCE-ECOCHAIN-001",
+  "review_status": "PENDING",
+  "review_mode": "INDEPENDENT_READ_ONLY; reviewer explicitly states rerun versus read-only scope",
+  "source_pr": null,
+  "research_content_sha": null,
+  "working_head_sha": null,
+  "delivery_head_anchor": "Final GitHub review-request comment pins exact D; inspect D full tree",
+  "baseline_sha": "77a35e2723372a290579e4549a86781e2be65c04",
+  "baseline_review": "https://github.com/simon947161/eco-agent-system/pull/144#issuecomment-6735839200",
+  "r_to_d_allowed_paths": [
+    "docs/tasks/climateos_global_method_evidence_ecochain_001/HANDOFF_STATUS.json",
+    "docs/tasks/climateos_global_method_evidence_ecochain_001/REVIEW_REQUEST.json"
+  ],
+  "questions": [
+    "Does the existing ECOChain audit preserve prior authority and avoid competing architecture?",
+    "Are AU/US/EU/NZ versions, legal roles, source access limits and physical boundaries properly separated?",
+    "Do A/B/C independent method/arithmetic/evidence outcomes fail closed without claiming real effects?",
+    "Are hash trust, source-to-input linkage, role simulation and append-only history limitations clear?",
+    "Can the CC-BY original SL1 bytes and 23 dissolved concentration conversions be independently reproduced without implying landfill or emissions admission?"
+  ],
+  "local_validation": "77 scoped tests, two byte-identical replay runs; see evidence/tests.txt and manifest.json",
+  "integration": {"ECOChain":"ECOCHAIN_CANONICAL_NOT_FOUND","Enotebook":"PENDING_INTEGRATION"},
+  "ci": "NOT_YET_CHECKED_FOR_DELIVERY_HEAD",
+  "prohibited": ["merge","deploy","statutory certification","credit issuance","new real emission experiments","scientific admission promotion"],
+  "delivery_to_chatgpt": "NOT_SENT; Founder must forward exact PR and D"
+}

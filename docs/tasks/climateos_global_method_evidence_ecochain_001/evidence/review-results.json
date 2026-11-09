@@ -1,0 +1,458 @@
+{
+  "A": {
+    "rules_version": "technical-review-proposal/1",
+    "package_sha256": "bab09e49899f40af6600921441df4640399117493cc907a1d3c8f5eab902c9dd",
+    "claims": [
+      {
+        "claim_id": "A-uncaptured",
+        "status": "METHOD_ALIGNED",
+        "method": "METHOD_ALIGNED",
+        "arithmetic": "RECALCULATED",
+        "evidence": "SYNTHETIC_ONLY",
+        "failures": [],
+        "supporting_evidence_ids": [
+          "AUTHOR_LEDGER_FIXTURES"
+        ],
+        "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "calculation": {
+          "status": "SYNTHETIC_METHOD_TEST",
+          "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "emitted_kg_CH4": 95.0,
+          "consumed_kg_CH4": 0.0,
+          "co2_from_CH4_reaction_kg": 0.0,
+          "carbon_in_kg_C": 82.5,
+          "carbon_out_plus_stock_kg_C": 82.5,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "unknown_field_uncertainty": true,
+          "regulatory_admission": "NOT_APPLICABLE"
+        },
+        "effect": "NOT_ASSESSED"
+      },
+      {
+        "claim_id": "A-capture_flare",
+        "status": "METHOD_ALIGNED",
+        "method": "METHOD_ALIGNED",
+        "arithmetic": "RECALCULATED",
+        "evidence": "SYNTHETIC_ONLY",
+        "failures": [],
+        "supporting_evidence_ids": [
+          "AUTHOR_LEDGER_FIXTURES"
+        ],
+        "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "calculation": {
+          "status": "SYNTHETIC_METHOD_TEST",
+          "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "emitted_kg_CH4": 32.7,
+          "consumed_kg_CH4": 62.3,
+          "co2_from_CH4_reaction_kg": 171.325,
+          "carbon_in_kg_C": 82.5,
+          "carbon_out_plus_stock_kg_C": 82.5,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "unknown_field_uncertainty": true,
+          "regulatory_admission": "NOT_APPLICABLE"
+        },
+        "effect": "NOT_ASSESSED"
+      },
+      {
+        "claim_id": "A-oxidation_leaks",
+        "status": "METHOD_ALIGNED",
+        "method": "METHOD_ALIGNED",
+        "arithmetic": "RECALCULATED",
+        "evidence": "SYNTHETIC_ONLY",
+        "failures": [],
+        "supporting_evidence_ids": [
+          "AUTHOR_LEDGER_FIXTURES"
+        ],
+        "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "calculation": {
+          "status": "SYNTHETIC_METHOD_TEST",
+          "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "emitted_kg_CH4": 31.08,
+          "consumed_kg_CH4": 58.92,
+          "co2_from_CH4_reaction_kg": 162.03,
+          "carbon_in_kg_C": 82.5,
+          "carbon_out_plus_stock_kg_C": 82.5,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "unknown_field_uncertainty": true,
+          "regulatory_admission": "NOT_APPLICABLE"
+        },
+        "effect": "NOT_ASSESSED"
+      }
+    ],
+    "REGULATORY_CERTIFICATION": "NOT_PROVIDED",
+    "effect": "NOT_ASSESSED",
+    "human_review": "PENDING",
+    "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+    "status": "METHOD_ALIGNED"
+  },
+  "B": {
+    "rules_version": "technical-review-proposal/1",
+    "package_sha256": "55e26b2932af1c9d12cb114d94408044733eca7a7c345337ec41cfd9d2267f1f",
+    "claims": [
+      {
+        "claim_id": "B-uncaptured",
+        "status": "MATERIAL_CONTRADICTION",
+        "method": "METHOD_ALIGNED",
+        "arithmetic": "RECALCULATED",
+        "evidence": "MATERIAL_CONTRADICTION",
+        "failures": [
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "DATA_PHASE",
+            "pointer": "DATA.phase",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "DATA_UNIT",
+            "pointer": "DATA.unit",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "DOUBLE_OXIDATION",
+            "pointer": "CALCULATION",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "BOUNDARY_OMISSION",
+            "pointer": "CALCULATION",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          }
+        ],
+        "supporting_evidence_ids": [
+          "AUTHOR_LEDGER_FIXTURES"
+        ],
+        "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "calculation": {
+          "status": "SYNTHETIC_METHOD_TEST",
+          "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "emitted_kg_CH4": 95.0,
+          "consumed_kg_CH4": 0.0,
+          "co2_from_CH4_reaction_kg": 0.0,
+          "carbon_in_kg_C": 82.5,
+          "carbon_out_plus_stock_kg_C": 82.5,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "unknown_field_uncertainty": true,
+          "regulatory_admission": "NOT_APPLICABLE"
+        },
+        "effect": "NOT_ASSESSED"
+      },
+      {
+        "claim_id": "B-capture_flare",
+        "status": "MATERIAL_CONTRADICTION",
+        "method": "METHOD_ALIGNED",
+        "arithmetic": "RECALCULATED",
+        "evidence": "MATERIAL_CONTRADICTION",
+        "failures": [
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "DATA_PHASE",
+            "pointer": "DATA.phase",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "DATA_UNIT",
+            "pointer": "DATA.unit",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "DOUBLE_OXIDATION",
+            "pointer": "CALCULATION",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "BOUNDARY_OMISSION",
+            "pointer": "CALCULATION",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          }
+        ],
+        "supporting_evidence_ids": [
+          "AUTHOR_LEDGER_FIXTURES"
+        ],
+        "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "calculation": {
+          "status": "SYNTHETIC_METHOD_TEST",
+          "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "emitted_kg_CH4": 32.7,
+          "consumed_kg_CH4": 62.3,
+          "co2_from_CH4_reaction_kg": 171.325,
+          "carbon_in_kg_C": 82.5,
+          "carbon_out_plus_stock_kg_C": 82.5,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "unknown_field_uncertainty": true,
+          "regulatory_admission": "NOT_APPLICABLE"
+        },
+        "effect": "NOT_ASSESSED"
+      },
+      {
+        "claim_id": "B-oxidation_leaks",
+        "status": "MATERIAL_CONTRADICTION",
+        "method": "METHOD_ALIGNED",
+        "arithmetic": "NOT_ASSESSED",
+        "evidence": "MATERIAL_CONTRADICTION",
+        "failures": [
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "DATA_PHASE",
+            "pointer": "DATA.phase",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "DATA_UNIT",
+            "pointer": "DATA.unit",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "DOUBLE_OXIDATION",
+            "pointer": "CALCULATION",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "BOUNDARY_OMISSION",
+            "pointer": "CALCULATION",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "RAW_INPUT_MISMATCH",
+            "pointer": "CLAIM.flows",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "MATERIAL_CONTRADICTION",
+            "reason": "MASS_NOT_CONSERVED",
+            "pointer": "CLAIM.flows_or_output",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          }
+        ],
+        "supporting_evidence_ids": [
+          "AUTHOR_LEDGER_FIXTURES"
+        ],
+        "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "calculation": null,
+        "effect": "NOT_ASSESSED"
+      }
+    ],
+    "REGULATORY_CERTIFICATION": "NOT_PROVIDED",
+    "effect": "NOT_ASSESSED",
+    "human_review": "PENDING",
+    "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+    "status": "MATERIAL_CONTRADICTION"
+  },
+  "C": {
+    "rules_version": "technical-review-proposal/1",
+    "package_sha256": "72efb06bf3d0fb79c33d28e5ecd6482d2c510633eeea9cde358052e2ecf26b5b",
+    "claims": [
+      {
+        "claim_id": "C-uncaptured",
+        "status": "EVIDENCE_INSUFFICIENT",
+        "method": "METHOD_ALIGNED",
+        "arithmetic": "RECALCULATED",
+        "evidence": "EVIDENCE_INSUFFICIENT",
+        "failures": [
+          {
+            "classification": "EVIDENCE_INSUFFICIENT",
+            "reason": "LICENCE_UNVERIFIED",
+            "pointer": "AUTHOR_LEDGER_FIXTURES",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "EVIDENCE_INSUFFICIENT",
+            "reason": "DATA_CALIBRATION",
+            "pointer": "DATA.calibration",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "EVIDENCE_INSUFFICIENT",
+            "reason": "DATA_RAW_FLOW_EVIDENCE",
+            "pointer": "DATA.raw_flow_evidence",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          }
+        ],
+        "supporting_evidence_ids": [
+          "AUTHOR_LEDGER_FIXTURES"
+        ],
+        "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "calculation": {
+          "status": "SYNTHETIC_METHOD_TEST",
+          "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "emitted_kg_CH4": 95.0,
+          "consumed_kg_CH4": 0.0,
+          "co2_from_CH4_reaction_kg": 0.0,
+          "carbon_in_kg_C": 82.5,
+          "carbon_out_plus_stock_kg_C": 82.5,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "unknown_field_uncertainty": true,
+          "regulatory_admission": "NOT_APPLICABLE"
+        },
+        "effect": "NOT_ASSESSED"
+      },
+      {
+        "claim_id": "C-capture_flare",
+        "status": "EVIDENCE_INSUFFICIENT",
+        "method": "METHOD_ALIGNED",
+        "arithmetic": "RECALCULATED",
+        "evidence": "EVIDENCE_INSUFFICIENT",
+        "failures": [
+          {
+            "classification": "EVIDENCE_INSUFFICIENT",
+            "reason": "LICENCE_UNVERIFIED",
+            "pointer": "AUTHOR_LEDGER_FIXTURES",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "EVIDENCE_INSUFFICIENT",
+            "reason": "DATA_CALIBRATION",
+            "pointer": "DATA.calibration",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "EVIDENCE_INSUFFICIENT",
+            "reason": "DATA_RAW_FLOW_EVIDENCE",
+            "pointer": "DATA.raw_flow_evidence",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          }
+        ],
+        "supporting_evidence_ids": [
+          "AUTHOR_LEDGER_FIXTURES"
+        ],
+        "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "calculation": {
+          "status": "SYNTHETIC_METHOD_TEST",
+          "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "emitted_kg_CH4": 32.7,
+          "consumed_kg_CH4": 62.3,
+          "co2_from_CH4_reaction_kg": 171.325,
+          "carbon_in_kg_C": 82.5,
+          "carbon_out_plus_stock_kg_C": 82.5,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "unknown_field_uncertainty": true,
+          "regulatory_admission": "NOT_APPLICABLE"
+        },
+        "effect": "NOT_ASSESSED"
+      },
+      {
+        "claim_id": "C-oxidation_leaks",
+        "status": "EVIDENCE_INSUFFICIENT",
+        "method": "METHOD_ALIGNED",
+        "arithmetic": "RECALCULATED",
+        "evidence": "EVIDENCE_INSUFFICIENT",
+        "failures": [
+          {
+            "classification": "EVIDENCE_INSUFFICIENT",
+            "reason": "LICENCE_UNVERIFIED",
+            "pointer": "AUTHOR_LEDGER_FIXTURES",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "EVIDENCE_INSUFFICIENT",
+            "reason": "DATA_CALIBRATION",
+            "pointer": "DATA.calibration",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          },
+          {
+            "classification": "EVIDENCE_INSUFFICIENT",
+            "reason": "DATA_RAW_FLOW_EVIDENCE",
+            "pointer": "DATA.raw_flow_evidence",
+            "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+          }
+        ],
+        "supporting_evidence_ids": [
+          "AUTHOR_LEDGER_FIXTURES"
+        ],
+        "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "calculation": {
+          "status": "SYNTHETIC_METHOD_TEST",
+          "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "emitted_kg_CH4": 31.08,
+          "consumed_kg_CH4": 58.92,
+          "co2_from_CH4_reaction_kg": 162.03,
+          "carbon_in_kg_C": 82.5,
+          "carbon_out_plus_stock_kg_C": 82.5,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "unknown_field_uncertainty": true,
+          "regulatory_admission": "NOT_APPLICABLE"
+        },
+        "effect": "NOT_ASSESSED"
+      }
+    ],
+    "REGULATORY_CERTIFICATION": "NOT_PROVIDED",
+    "effect": "NOT_ASSESSED",
+    "human_review": "PENDING",
+    "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+    "status": "EVIDENCE_INSUFFICIENT"
+  }
+}
