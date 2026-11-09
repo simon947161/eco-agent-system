@@ -1,0 +1,39 @@
+{
+  "schema_version": "scientific-review-request/1",
+  "task_id": "GLOBAL-NATURAL-SYSTEMS-EVIDENCE-ATLAS-001",
+  "review_status": "PENDING",
+  "review_mode": "INDEPENDENT_READ_ONLY; distinguish source reading, rerun, and field validation",
+  "source_pr": "https://github.com/simon947161/eco-agent-system/pull/146",
+  "research_content_sha": "4f6244ef6fe278efab715694caa543aa5e31a1f6",
+  "working_head_sha": "4f6244ef6fe278efab715694caa543aa5e31a1f6",
+  "delivery_head_anchor": "Final new Draft PR comment pins exact D; inspect D full tree",
+  "baseline_sha": "3bb71785ad2705823a78748c9ba4cd5003becb41",
+  "scientific_baseline_sha": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+  "baseline_review": "https://github.com/simon947161/eco-agent-system/pull/145#issuecomment-6736737730",
+  "r_to_d_allowed_paths": [
+    "docs/tasks/global_natural_systems_evidence_atlas_001/HANDOFF_STATUS.json",
+    "docs/tasks/global_natural_systems_evidence_atlas_001/REVIEW_REQUEST.json"
+  ],
+  "questions": [
+    "Does M49 snapshot completeness remain separate from scientific and geometry coverage, including non-national units?",
+    "Are Nile topology, conditional ENSO and global methane layers accurately sourced with explicit counterevidence and missing inputs?",
+    "Are Scorecard CSS labels, outdated dates, AU base-year conflict, missing coverage and copyright handled without fabricating scores or outcomes?",
+    "Do all evidence classes distinguish real observation, metadata-only model/output pointers, policy, synthetic replay and human decisions?",
+    "Does the read-only CCZPS integration actually query and trace sources while preserving PR145 INTERNAL_FIXTURE_REPLAY_ONLY and all prior gates?",
+    "Is the next bounded same-boundary measurement admission task and human governance decision more valuable than expanding the Atlas?"
+  ],
+  "local_validation": "93 scoped tests; deterministic replay; 560-test full suite had 8 sandbox socket errors and 1 skip; affected localhost modules rerun 10/10 PASS. See archived evidence.",
+  "ci": "Initial R check: PR workflow_runs=[] and combined statuses=[]; not a PASS or final trigger determination. Final exact-D CI receipt is in the final review-request comment.",
+  "integration": {
+    "ECOChain": "ECOCHAIN_CANONICAL_NOT_FOUND",
+    "Enotebook": "PENDING_INTEGRATION"
+  },
+  "prohibited": [
+    "merge",
+    "deploy",
+    "statutory certification",
+    "scientific admission promotion",
+    "new real emissions or climate experiments"
+  ],
+  "delivery_to_chatgpt": "NOT_SENT; Founder must forward exact PR and D"
+}
