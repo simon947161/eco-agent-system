@@ -1,0 +1,250 @@
+{
+  "status": "CONDITIONAL_STATISTICAL_ESTIMATE",
+  "source_rows": 921,
+  "selected_rows": 720,
+  "years": [
+    1961,
+    2020
+  ],
+  "QC": "No missing or duplicate selected seasons; no per-row quality flag supplied",
+  "season_strata": {
+    "DJF": {
+      "n": 60,
+      "counts": {
+        "neutral": 21,
+        "warm": 21,
+        "cold": 18
+      },
+      "mean_degC": 0.09533333333333334,
+      "lag1_annual_correlation": -0.08713522834502732,
+      "early_1961_1990": {
+        "mean": 0.174,
+        "counts": {
+          "neutral": 15,
+          "warm": 9,
+          "cold": 6
+        }
+      },
+      "late_1991_2020": {
+        "mean": 0.016666666666666666,
+        "counts": {
+          "warm": 12,
+          "neutral": 6,
+          "cold": 12
+        }
+      }
+    },
+    "MAM": {
+      "n": 60,
+      "counts": {
+        "neutral": 39,
+        "warm": 10,
+        "cold": 11
+      },
+      "mean_degC": -0.017999999999999995,
+      "lag1_annual_correlation": 0.23168093940298518,
+      "early_1961_1990": {
+        "mean": -0.03133333333333333,
+        "counts": {
+          "neutral": 20,
+          "warm": 4,
+          "cold": 6
+        }
+      },
+      "late_1991_2020": {
+        "mean": -0.004666666666666662,
+        "counts": {
+          "neutral": 19,
+          "warm": 6,
+          "cold": 5
+        }
+      }
+    },
+    "JJA": {
+      "n": 60,
+      "counts": {
+        "neutral": 36,
+        "warm": 14,
+        "cold": 10
+      },
+      "mean_degC": 0.025166666666666674,
+      "lag1_annual_correlation": -0.16637716195544763,
+      "early_1961_1990": {
+        "mean": 0.05500000000000001,
+        "counts": {
+          "neutral": 19,
+          "warm": 7,
+          "cold": 4
+        }
+      },
+      "late_1991_2020": {
+        "mean": -0.004666666666666659,
+        "counts": {
+          "warm": 7,
+          "neutral": 17,
+          "cold": 6
+        }
+      }
+    },
+    "SON": {
+      "n": 60,
+      "counts": {
+        "neutral": 23,
+        "warm": 20,
+        "cold": 17
+      },
+      "mean_degC": 0.06066666666666666,
+      "lag1_annual_correlation": -0.19925391599548714,
+      "early_1961_1990": {
+        "mean": 0.12566666666666668,
+        "counts": {
+          "neutral": 12,
+          "warm": 11,
+          "cold": 7
+        }
+      },
+      "late_1991_2020": {
+        "mean": -0.004333333333333355,
+        "counts": {
+          "warm": 9,
+          "neutral": 11,
+          "cold": 10
+        }
+      }
+    }
+  },
+  "JJA_to_SON_persistence": {
+    "warm": {
+      "k": 13,
+      "n": 14,
+      "p_SON_same_given_JJA": 0.9285714285714286,
+      "difference_vs_JJA_not_target": 0.7763975155279503,
+      "nominal_iid_Wilson95": [
+        0.6853129557584889,
+        0.9872777847521093
+      ],
+      "block_bootstrap": [
+        {
+          "block_years": 3,
+          "valid": 2000,
+          "replicates": 2000,
+          "p_interval": [
+            0.8,
+            1.0
+          ],
+          "difference_interval": [
+            0.6305440476930729,
+            0.9111111111111111
+          ]
+        },
+        {
+          "block_years": 5,
+          "valid": 2000,
+          "replicates": 2000,
+          "p_interval": [
+            0.8,
+            1.0
+          ],
+          "difference_interval": [
+            0.6444444444444445,
+            0.8958333333333334
+          ]
+        }
+      ],
+      "years": [
+        1963,
+        1965,
+        1968,
+        1972,
+        1976,
+        1982,
+        1987,
+        1991,
+        1992,
+        1994,
+        1997,
+        2002,
+        2004,
+        2015
+      ],
+      "counterexample_years": [
+        1992
+      ],
+      "split": {
+        "1961-1990": {
+          "n": 7,
+          "k": 7
+        },
+        "1991-2020": {
+          "n": 7,
+          "k": 6
+        }
+      }
+    },
+    "cold": {
+      "k": 10,
+      "n": 10,
+      "p_SON_same_given_JJA": 1.0,
+      "difference_vs_JJA_not_target": 0.86,
+      "nominal_iid_Wilson95": [
+        0.7224672001371107,
+        0.9999999999999999
+      ],
+      "block_bootstrap": [
+        {
+          "block_years": 3,
+          "valid": 2000,
+          "replicates": 2000,
+          "p_interval": [
+            1.0,
+            1.0
+          ],
+          "difference_interval": [
+            0.7608478260869566,
+            0.9411764705882353
+          ]
+        },
+        {
+          "block_years": 5,
+          "valid": 2000,
+          "replicates": 2000,
+          "p_interval": [
+            1.0,
+            1.0
+          ],
+          "difference_interval": [
+            0.7735161163522013,
+            0.9348505434782606
+          ]
+        }
+      ],
+      "years": [
+        1964,
+        1973,
+        1975,
+        1988,
+        1998,
+        1999,
+        2007,
+        2010,
+        2016,
+        2020
+      ],
+      "counterexample_years": [],
+      "split": {
+        "1961-1990": {
+          "n": 4,
+          "k": 4
+        },
+        "1991-2020": {
+          "n": 6,
+          "k": 6
+        }
+      }
+    }
+  },
+  "weather_probability": null,
+  "weather_status": "DATA_NOT_READY",
+  "interpretation": "Index persistence only; 3-month nonoverlapping seasons, not independent events, not a regional rainfall model or causal test. Moving blocks assume within-window approximate stationarity; split results are diagnostics, not proof of stationarity.",
+  "classification": "single-season threshold, not the CPC five-consecutive-season event rule"
+}

@@ -1,0 +1,131 @@
+[
+  {
+    "from": "CH4",
+    "to": "CH4",
+    "status": "KNOWN_MECHANISM",
+    "sources": [
+      "GML_AGGI"
+    ],
+    "counterevidence": [
+      "CE03"
+    ],
+    "claim": "Global abundance-to-ERF fragment replayed; response/emissions attribution blocked",
+    "numeric_coefficient": null
+  },
+  {
+    "from": "CH4",
+    "to": "ENSO",
+    "status": "NOT_IDENTIFIED",
+    "sources": [
+      "GML_AGGI",
+      "NOAA_ENSO"
+    ],
+    "counterevidence": [
+      "CE03",
+      "CE07"
+    ],
+    "claim": "Long-lived forcing and internal variability differ; no CH4-specific causal coefficient for ENSO identified",
+    "numeric_coefficient": null
+  },
+  {
+    "from": "CH4",
+    "to": "HYDRO",
+    "status": "BLOCKED",
+    "sources": [
+      "GML_AGGI",
+      "WET_COUNTER"
+    ],
+    "counterevidence": [
+      "CE03",
+      "CE07"
+    ],
+    "claim": "No global mole-fraction-to-local-flow conversion; climate/hydrological intermediate models missing",
+    "numeric_coefficient": null
+  },
+  {
+    "from": "ENSO",
+    "to": "CH4",
+    "status": "CONDITIONAL",
+    "sources": [
+      "WET_SUPPORT",
+      "WET_COUNTER"
+    ],
+    "counterevidence": [
+      "CE07"
+    ],
+    "claim": "Possible wetland/chemistry modulation; attribution disputed, no numeric transfer function",
+    "numeric_coefficient": null
+  },
+  {
+    "from": "ENSO",
+    "to": "ENSO",
+    "status": "OBSERVED_ASSOCIATION",
+    "sources": [
+      "CPC_RONI"
+    ],
+    "counterevidence": [
+      "CE05",
+      "CE06"
+    ],
+    "claim": "Historical index persistence; no causal identification or future guarantee",
+    "numeric_coefficient": null
+  },
+  {
+    "from": "ENSO",
+    "to": "HYDRO",
+    "status": "CONDITIONAL",
+    "sources": [
+      "NILE_STUDY",
+      "BOM_COUNTER"
+    ],
+    "counterevidence": [
+      "CE04",
+      "CE11"
+    ],
+    "claim": "Published Nile-specific ENSO and Indian Ocean association; not reproduced here or transferable from Australia",
+    "numeric_coefficient": null
+  },
+  {
+    "from": "HYDRO",
+    "to": "CH4",
+    "status": "CONDITIONAL",
+    "sources": [
+      "WET_SUPPORT",
+      "WET_COUNTER"
+    ],
+    "counterevidence": [
+      "CE07"
+    ],
+    "claim": "Inundation/water conditions affect anaerobic habitat but magnitude depends on process and disputed data/models",
+    "numeric_coefficient": null
+  },
+  {
+    "from": "HYDRO",
+    "to": "ENSO",
+    "status": "NOT_IDENTIFIED",
+    "sources": [
+      "NOAA_ENSO",
+      "NILE_STUDY"
+    ],
+    "counterevidence": [
+      "CE11"
+    ],
+    "claim": "No identified river-flow-to-ENSO causal model in this evidence package",
+    "numeric_coefficient": null
+  },
+  {
+    "from": "HYDRO",
+    "to": "HYDRO",
+    "status": "KNOWN_MECHANISM",
+    "sources": [
+      "NBI",
+      "AUTHOR"
+    ],
+    "counterevidence": [
+      "CE08",
+      "CE09"
+    ],
+    "claim": "Water conservation applies; zero synthetic residual does not validate real Nile balance",
+    "numeric_coefficient": null
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "task": "CLIMATEOS-PHYSICAL-PROCESS-TRAJECTORY-001",
+  "review_state": "READY_FOR_INDEPENDENT_REVIEW",
+  "scientific_admission": "PENDING",
+  "research_head_R": "8a8ea64a3f4f24f1a97ff94942ed15b55e4998b5",
+  "delivery_head_D": "OUTER_GIT_COMMIT_AND_PR_HANDOFF_COMMENT",
+  "independent_review_requested": "Founder to forward fixed PR and delivery HEAD to ChatGPT; no automatic delivery claimed",
+  "questions": [
+    "Does AGGI Table1 implementation use the correct dry global ppb inputs, overlap term, 1750 baseline and rapid adjustment, with no temperature conversion?",
+    "Are input uncertainty, formula uncertainty and publication-rounding agreement distinguished from independent validation?",
+    "Are RONI version, fixed years, season thresholds, pairing, autocorrelation diagnostics and bootstrap degeneracy interpreted honestly, without substituting index persistence for regional weather probability?",
+    "Are synthetic water-volume conservation, covariance cancellation and unknown-term rejection correct, while HRS E-quality and day/unit ambiguities remain blocked?",
+    "Do cross-process claims retain regional specificity, counterevidence and excerpt-only literature limitations?",
+    "Does the AU Scorecard brief distinguish the statutory 2005 baseline conflict from an unproven total-score error and current-page access limits?",
+    "Are source budgets, frozen baseline files, rights, no external contact and all preexisting science gates preserved?"
+  ],
+  "requested_effect": "INDEPENDENT_READ_ONLY_REVIEW_ONLY",
+  "not_authorized": [
+    "merge",
+    "deploy",
+    "contact editors",
+    "certify",
+    "promote scientific admission",
+    "expand experiments"
+  ],
+  "draft_pr": "https://github.com/simon947161/eco-agent-system/pull/147",
+  "review_status": "READY_FOR_INDEPENDENT_REVIEW",
+  "CI_R": {
+    "push": {
+      "head": "8a8ea64a3f4f24f1a97ff94942ed15b55e4998b5",
+      "run_id": 42699386628,
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/42699386628",
+      "status": "completed",
+      "conclusion": "success",
+      "job_id": 129439743881,
+      "unit_tests": 587,
+      "log_excerpt": "Ran 587 tests in 6.142s; OK"
+    },
+    "pull_request": {
+      "head": "8a8ea64a3f4f24f1a97ff94942ed15b55e4998b5",
+      "run_id": 42699451210,
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/42699451210",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "delivery_D": "To be queried after metadata commit; never inherit R checks as D checks"
+  },
+  "handoff_metadata_only": true,
+  "checked_at_utc": "2026-11-09T21:07:50.266607+00:00",
+  "local_evidence": {
+    "scoped_tests": 120,
+    "new_tests": 27,
+    "inherited_tests": 93,
+    "new_manifest_files": 47,
+    "frozen_Atlas_files": 50,
+    "local_links": 66,
+    "e2e_results_sha256": "279d823da5ee835a9b3e889a0e4777ff0ee0be9be813c8a992ef62aedcada28a"
+  }
+}

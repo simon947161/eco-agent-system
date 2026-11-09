@@ -1,0 +1,172 @@
+[
+  {
+    "id": "GML_AGGI",
+    "theme": "01_GML",
+    "version": "AGGI2025",
+    "url": "https://gml.noaa.gov/aggi/aggi.html",
+    "locator": "Observations; Table1 CH4 and footnotes; Table2 2025",
+    "rights": "NOAA GML public-domain numerical facts; disclaimer https://gml.noaa.gov/about/disclaimer.html",
+    "access": "DIRECT_BYTES_HASHED",
+    "limitations": "Published aggregate derived from remote marine boundary-layer measurements; rounded inputs and model fit; no surface-temperature response or site attribution"
+  },
+  {
+    "id": "CPC_RONI",
+    "theme": "02_CPC",
+    "version": "ERSSTv6_1991-2020_2026-11-03",
+    "url": "https://www.cpc.ncep.noaa.gov/data/indices/RONI.ascii.txt",
+    "locator": "SEAS YR ANOM; method https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/",
+    "rights": "NOAA/NWS public-domain product; https://www.weather.gov/disclaimer; attribution, no endorsement",
+    "access": "DIRECT_BYTES_HASHED",
+    "limitations": "Retrospective derived SST index; no per-row QC/uncertainty. No regional weather series or operational forecast"
+  },
+  {
+    "id": "NOAA_ENSO",
+    "theme": "03_NOAA_MECHANISM",
+    "version": "web_2026-11-10",
+    "url": "https://www.noaa.gov/understanding-el-nino",
+    "locator": "Ocean-atmosphere coupling; additional NOAA upwelling source https://oceanservice.noaa.gov/facts/ninonina.html updated2026-09-23",
+    "rights": "Public reading, own summary only; no images redistributed",
+    "access": "WEB_READER",
+    "limitations": "Educational mechanism, no fitted local weather response"
+  },
+  {
+    "id": "BOM_RAIN",
+    "theme": "04_BOM",
+    "version": "web_2026-11-10",
+    "url": "https://www.bom.gov.au/climate/change/about/rain_timeseries.shtml",
+    "locator": "Rainfall data; Data format; Data use and copyright",
+    "rights": "Product-specific study/research permission; unrestricted raw redistribution NOT established; https://www.bom.gov.au/copyright",
+    "access": "METADATA_ONLY; PARAMETERIZED_RAIN_PAGE_INACCESSIBLE_TO_WEB_READER; NO_RETRY",
+    "limitations": "Study/research allowed, not treated as illegal. No raw payload obtained. AGCD area average since 1900; preliminary recent months; 1961-1990 anomaly baseline. Do not inherit maps/graphs CC BY4.0 onto raw series"
+  },
+  {
+    "id": "BOM_COUNTER",
+    "theme": "04_BOM",
+    "version": "updated_2026-09-28",
+    "url": "https://www.bom.gov.au/news-and-media/el-nino-strength-doesnt-always-match-impact-on-australia",
+    "locator": "How will a strong El Niño impact Australia; Why is it raining during El Niño",
+    "rights": "Own paraphrase; no figures or full text redistributed",
+    "access": "WEB_READER",
+    "limitations": "Historical 2023-24 and winter 2026 examples distinct from forecast portions; not a downloaded rainfall time series"
+  },
+  {
+    "id": "NBI",
+    "theme": "05_NBI",
+    "version": "web_2026-11-10",
+    "url": "https://nilebasin.org/hydromet/map",
+    "locator": "Station table Eldeim, Khartoum, Halfaya Bridge, Dongola",
+    "rights": "Public metadata facts only; no raw flow licence inferred",
+    "access": "WEB_READER",
+    "limitations": "Topology metadata only; no same-window measured flows, storages or travel times"
+  },
+  {
+    "id": "NILE_STUDY",
+    "theme": "06_NILE_RESEARCH",
+    "version": "Siam_Eltahir_2015",
+    "url": "https://doi.org/10.5194/hess-19-1181-2015",
+    "locator": "Published abstract; twentieth-century datasets",
+    "rights": "CC BY3.0 article; author paraphrase, no dataset imported",
+    "access": "PUBLISHER_ABSTRACT_READ",
+    "limitations": "ENSO and southern Indian Ocean have distinct explanatory roles; published explained variance not independently replayed, not current regulated-flow calibration"
+  },
+  {
+    "id": "WET_SUPPORT",
+    "theme": "07_WETLAND_SUPPORT",
+    "version": "NatureCommunications_2024_15_10894",
+    "url": "https://www.nature.com/articles/s41467-024-55266-y",
+    "locator": "Indexed publisher abstract and Results/Discussion excerpt",
+    "rights": "Bibliographic facts and own summary only; no raw file redistributed",
+    "access": "INDEXED_PUBLISHER_EXCERPT; FULL_PAGE_IDP_REDIRECT_STOPPED",
+    "limitations": "Inversion ensemble links 2020-21 surges to inundated regions; model-based attribution, regional heterogeneity; full text not obtained this task"
+  },
+  {
+    "id": "WET_COUNTER",
+    "theme": "08_WETLAND_COUNTER",
+    "version": "CommunicationsEarthEnvironment_2025_s43247-025-02438-3",
+    "url": "https://www.nature.com/articles/s43247-025-02438-3",
+    "locator": "Indexed publisher Discussion excerpt",
+    "rights": "Bibliographic facts and own summary only; no raw file redistributed",
+    "access": "INDEXED_PUBLISHER_EXCERPT; FULL_PAGE_IDP_REDIRECT_STOPPED",
+    "limitations": "Alternate inundation/forcing/model evidence finds limited support for tropical wetland explanation. Baseline, domain and inference design differ; not a controlled same-input comparison"
+  },
+  {
+    "id": "AU_ACT",
+    "theme": "09_LAW",
+    "version": "C2025C00153_Compilation2",
+    "url": "https://www.legislation.gov.au/C2022A00037/2025-02-20/2025-02-20/text/original/epub/OEBPS/document_1/document_1.html",
+    "locator": "s10(1)(a), s10(1)(b); latest details https://www.legislation.gov.au/C2022A00037/latest/details",
+    "rights": "Statutory facts and short excerpt only; HTML not redistributed",
+    "access": "DIRECT_BYTES_HASHED",
+    "limitations": "Compilation effective2025-02-20, registered2025-02-27; not legal advice or a new target review"
+  },
+  {
+    "id": "SCORECARD_AU",
+    "theme": "10_SCORECARD",
+    "version": "PR146_snapshot_plus_web_reader_2026-11-10",
+    "url": "https://www.climatescorecard.org/scorecard/",
+    "locator": "Australia accordion Q2; five question method; old CSS fifty label",
+    "rights": "Short quotation only; full HTML not redistributed",
+    "access": "DIRECT403_STOPPED; PREEXISTING_WEB_READER_AND_PR146_RECEIPT",
+    "limitations": "Current byte snapshot unavailable. Page-wide publication/modification dates do not date the Australian card; item-level partial-credit rubric unresolved"
+  },
+  {
+    "id": "HRS_INHERITED",
+    "theme": "INHERITED",
+    "version": "PR129_987cc1d_HRS_Sep2026",
+    "url": "https://github.com/simon947161/eco-agent-system/blob/987cc1dc7170204e5eab3d1750590ba463ea9d08/apps/regional-public-os/data/index.json",
+    "locator": "index metadata, manifest, 2020 shard; fixed January subset",
+    "rights": "CC BY3.0 AU © WaterNSW; BoM HRS; inherited licence evidence 2026-10-26; unchanged values selected",
+    "access": "PINNED_GIT_ARTIFACT_HASH_VERIFIED_NO_NETWORK_RETRY",
+    "limitations": "Public derived fragment, not independently reacquired raw. E unreliable; unit/time/header date conflicts retained"
+  },
+  {
+    "id": "PR143",
+    "theme": "INHERITED",
+    "version": "746825e65b8ddbd0f518709c94d9476df107208b",
+    "url": "https://github.com/simon947161/eco-agent-system/pull/143",
+    "locator": "methane_knowledge_engine.py; input.json; E01-E14",
+    "rights": "Repository synthetic reference, no field inputs",
+    "access": "LOCAL_PURE_FUNCTION_REPLAY",
+    "limitations": "ChainA synthetic only; ChainB BLOCKED"
+  },
+  {
+    "id": "PR144",
+    "theme": "INHERITED",
+    "version": "77a35e2723372a290579e4549a86781e2be65c04",
+    "url": "https://github.com/simon947161/eco-agent-system/pull/144",
+    "locator": "mass_balance.py three fixtures; review6735839200",
+    "rights": "AUTHOR_SYNTHETIC_CC0",
+    "access": "LOCAL_PURE_FUNCTION_REPLAY",
+    "limitations": "Species conversion vs carbon conservation; lateral fate UNKNOWN; not NGER/ACCU statutory calculation"
+  },
+  {
+    "id": "PR145",
+    "theme": "INHERITED",
+    "version": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+    "url": "https://github.com/simon947161/eco-agent-system/pull/145",
+    "locator": "reviewer.py A/B/C; review6736737730",
+    "rights": "Repository fixtures",
+    "access": "REUSED_VIA_ATLAS_E2E",
+    "limitations": "B arithmetic INTERNAL_FIXTURE_REPLAY_ONLY; no external trust anchor or real appointed reviewers"
+  },
+  {
+    "id": "PR146",
+    "theme": "INHERITED",
+    "version": "1e6b13e2b80c50e6d20e05a4e88819eb0de93488",
+    "url": "https://github.com/simon947161/eco-agent-system/pull/146#issuecomment-6750846921",
+    "locator": "Atlas query/trace; latest ChatGPT ACCEPT_WITH_CONDITIONS",
+    "rights": "Repository metadata projection",
+    "access": "FROZEN_MANIFEST_VERIFIED",
+    "limitations": "METADATA_AND_QUALITATIVE_RELATION_ATLAS; 0 geometry; not a calculable complete physical chain"
+  },
+  {
+    "id": "AUTHOR",
+    "theme": "INHERITED",
+    "version": "trajectory-protocol/1",
+    "url": "ANALYSIS_PROTOCOL.json",
+    "locator": "Frozen protocol; taskbook; author synthetic derivations",
+    "rights": "Repository authored synthetic fixtures and analysis; no observation claim",
+    "access": "LOCAL_COMPUTATION",
+    "limitations": "No field calibration, causal identification, certification or scientific admission"
+  }
+]

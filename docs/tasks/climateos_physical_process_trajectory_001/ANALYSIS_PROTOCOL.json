@@ -1,0 +1,37 @@
+{
+  "version": "trajectory-protocol/1",
+  "frozen_before_new_series_acquisition": true,
+  "client_date": "2026-11-10",
+  "scope": "Small offline scientific replay, no scientific-admission promotion",
+  "A": {
+    "candidate_limit": 2,
+    "candidate_1": "NOAA GML AGGI published 2025 CH4/N2O global mean values and Table1 CH4 equation",
+    "target": "Reproduce published 2025 methane effective radiative forcing, compare rounded NOAA table",
+    "uncertainty": "Reported abundance uncertainty propagated analytically; formula uncertainty separately reported, no temperature conversion",
+    "legacy_replay": "PR143 ideal-gas parcel and PR144 synthetic control-volume ledger, unchanged"
+  },
+  "B": {
+    "candidate_limit": 2,
+    "candidate_1": "NOAA CPC current RONI ERSSTv6 1991-2020 base; never splice ONI/v5",
+    "candidate_2": "BoM Australian area-average monthly/seasonal rainfall, subject to product-specific licence",
+    "years": [1961, 2020],
+    "primary_season": "SON",
+    "phase_definition": "single three-month RONI >=0.5 warm, <=-0.5 cold, otherwise neutral; not CPC five-consecutive-season event classification",
+    "weather_outcome": "rainfall below the 1961-1990 season median, only if rainfall is admitted",
+    "primary_comparison": "warm vs cold conditional dry-season proportion; Wilson interval and paired-year moving-block bootstrap",
+    "sensitivity": "JJA index to SON rainfall; seasons separately; 1961-1990 versus 1991-2020; lag1 autocorrelation; 3/5-year blocks; no selection by best result",
+    "bootstrap": {"replicates": 2000, "seed": 131146},
+    "if_rainfall_blocked": "No weather association estimate. Report only RONI historical seasonal counts and JJA-to-SON index persistence with uncertainty; label statistical weather link DATA_NOT_READY. Synthetic counterexample is separate."
+  },
+  "C": {
+    "candidate_limit": 2,
+    "candidate_1": "Reuse public HRS 410033 2020 source shard at fixed PR129 987cc1dc7170204e5eab3d1750590ba463ea9d08; January window fixed before QC",
+    "real_window": ["2020-01-01", "2020-01-31"],
+    "real_gate": "Source licence, quality, daily interval/UTC and ML versus ML/day must be resolved before any volume balance. Cooma is an audit example, never a Nile substitute.",
+    "synthetic": "Three linked control volumes with one shared internal flow; integrate all rates to m3 per day; propagate independent external term errors and cancel shared internal terms",
+    "missing_terms": "Unknown lateral flux or storage returns blocked residual attribution, never zero-fill or call residual evaporation"
+  },
+  "Scorecard": "Current direct snapshot plus PR146 receipt; short exact disputed quote <=25 words; fixed latest official Act compilation; binary five-times-20 is a diagnostic assumption, not asserted publisher rubric",
+  "limits": {"new_source_themes": 12, "trajectories": 3, "new_GIS_datasets": 0},
+  "stop": ["403/499 or challenge response", "candidate budgets", "missing licence/units/phase/time/calibration", "unsupported model/causal/approval claim"]
+}

@@ -1,0 +1,18 @@
+{
+  "bom_rain": {
+    "url": "https://www.bom.gov.au/cgi-bin/climate/change/timeseries.cgi?graph=rr&area=aus&season=0112&ave_yr=0",
+    "purpose": "Public rainfall product discovery, not an admitted numerical payload",
+    "date": "2026-11-10 Australia/Sydney",
+    "result": "URL not accessible via web tool; HTTP status not supplied",
+    "decision": "STOP; no repeat or alternate raw endpoint; selected monthly/SON rainfall not obtained",
+    "licence_interpretation": "Product explicitly permits study/research. Unrestricted raw redistribution is not established; maps/graphs CC BY4.0 not automatically raw-data licence. Access failure, not a claim research use is forbidden.",
+    "earlier_preflight": "Default graph page readable. An earlier parameterized preflight response was truncated from working context; its status is not claimed. It was not counted as successful data admission."
+  },
+  "wetland_papers": {
+    "urls": ["https://www.nature.com/articles/s41467-024-55266-y", "https://www.nature.com/articles/s43247-025-02438-3"],
+    "result": "Indexed publisher excerpts available; full-page open redirected to inaccessible publisher identity endpoint",
+    "decision": "No identity flow, alternate mirror, raw data download or retry. Literature comparison is excerpt-level and requires full-text review."
+  },
+  "inherited_blocks": ["BoM HRS HTTP403: public frozen Git artifact reused, not endpoint retried", "ArcGIS499 not retried", "IPCC403 not retried"],
+  "budget": {"new_primary_themes": 10, "A_candidates": 1, "B_candidates": 2, "C_candidates": 1, "C_real_fragments": 1, "new_GIS_datasets": 0}
+}

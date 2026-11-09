@@ -1,0 +1,13 @@
+{
+  "source_id": "CPC_RONI",
+  "version": "ERSSTv6; 1991-2020 base; 2026-11-03 file modification",
+  "sha256": "1297887f581b6190e459cbbf8bdec9a703ff65c1a229e2de4dd94285254f35c8",
+  "raw_file": "RONI.ascii.txt",
+  "unit": "degC_relative_SST_anomaly",
+  "support": "Niño3.4 5N-5S 120-170W minus tropical 20N-20S SST anomaly, variance-adjusted; three-month mean",
+  "seasons": "DJF year names January; NDJ year names December; JJA and SON are non-overlapping within year",
+  "quality": "No per-row quality flag or observation uncertainty supplied; reconstructed index, not a raw thermometer series. Most recent two months revisable, full historical revisions possible.",
+  "rights": "NOAA/NWS public-domain numerical product; cite CPC, no endorsement; independent analysis is ClimateOS authored",
+  "weather_candidate_status": "DATA_NOT_READY",
+  "weather_reason": "BoM product terms explicitly allow study/research; they do not establish unrestricted raw redistribution. Parameterized rainfall discovery page was inaccessible to the web reader (not an asserted HTTP403). No raw payload URL/content was obtained; no retry or alternate endpoint pursued. No weather probability computed."
+}

@@ -1,0 +1,58 @@
+{
+  "task": "CLIMATEOS-PHYSICAL-PROCESS-TRAJECTORY-001",
+  "branch": "research/climateos-physical-process-trajectory-001",
+  "frozen_parent": "1e6b13e2b80c50e6d20e05a4e88819eb0de93488",
+  "taskbook_head": "947333489f01e5f85cb92084933fa24d766cf334",
+  "research_head_R": "8a8ea64a3f4f24f1a97ff94942ed15b55e4998b5",
+  "delivery_head_D": "OUTER_GIT_COMMIT_AND_PR_HANDOFF_COMMENT",
+  "draft_pr": "https://github.com/simon947161/eco-agent-system/pull/147",
+  "local_status": "LOCAL_VERIFIED",
+  "review_status": "READY_FOR_INDEPENDENT_REVIEW",
+  "deployed": false,
+  "merged": false,
+  "editor_note": "NOT_SENT",
+  "scientifically_admitted": false,
+  "gates": {
+    "D3": "DATA_NOT_READY",
+    "P1-A": "PENDING",
+    "PR140": "NO_VALID_PAIR",
+    "PR141": "NO_VALID_VERTICAL_PROFILE",
+    "PR143_ChainB": "BLOCKED",
+    "PR144_real": "DATA_NOT_READY",
+    "Stage3": "METHOD_READY_NOT_VALIDATED"
+  },
+  "canonical_ECOChain": "ECOCHAIN_CANONICAL_NOT_FOUND",
+  "Enotebook": "PENDING_INTEGRATION",
+  "stop": "Await independent ChatGPT review and Founder decision; no automatic next experiment",
+  "CI_R": {
+    "push": {
+      "head": "8a8ea64a3f4f24f1a97ff94942ed15b55e4998b5",
+      "run_id": 42699386628,
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/42699386628",
+      "status": "completed",
+      "conclusion": "success",
+      "job_id": 129439743881,
+      "unit_tests": 587,
+      "log_excerpt": "Ran 587 tests in 6.142s; OK"
+    },
+    "pull_request": {
+      "head": "8a8ea64a3f4f24f1a97ff94942ed15b55e4998b5",
+      "run_id": 42699451210,
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/42699451210",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "delivery_D": "To be queried after metadata commit; never inherit R checks as D checks"
+  },
+  "handoff_metadata_only": true,
+  "checked_at_utc": "2026-11-09T21:07:50.267149+00:00",
+  "local_evidence": {
+    "scoped_tests": 120,
+    "new_tests": 27,
+    "inherited_tests": 93,
+    "new_manifest_files": 47,
+    "frozen_Atlas_files": 50,
+    "local_links": 66,
+    "e2e_results_sha256": "279d823da5ee835a9b3e889a0e4777ff0ee0be9be813c8a992ef62aedcada28a"
+  }
+}

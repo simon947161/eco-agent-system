@@ -1,0 +1,1110 @@
+[
+  {
+    "PROCESS_ID": "CH4",
+    "NODE_ID": "A1",
+    "EDGE_ID": "START->A1",
+    "from_node": null,
+    "physical_quantity": "CH4 stocks, emissions, oxidation/destruction",
+    "unit": "kg_CH4/interval",
+    "medium/phase": "gas plus explicitly dissolved total",
+    "spatial_domain": "synthetic landfill control volumes",
+    "temporal_support": "synthetic day",
+    "mechanism": "species inventory; converted carbon conserved",
+    "equation_id": "PR144 ledger",
+    "assumptions": [
+      "fixed boundary, no measured facility claim"
+    ],
+    "boundary": "body / pipe / device / cover",
+    "inputs": "PR144 fixture values, re-executed",
+    "observed_or_derived": "SYNTHETIC",
+    "source_version_locator": [
+      {
+        "id": "PR144",
+        "version": "77a35e2723372a290579e4549a86781e2be65c04",
+        "locator": "mass_balance.py three fixtures; review6735839200"
+      },
+      {
+        "id": "PR143",
+        "version": "746825e65b8ddbd0f518709c94d9476df107208b",
+        "locator": "methane_knowledge_engine.py; input.json; E01-E14"
+      }
+    ],
+    "data_rights": [
+      "AUTHOR_SYNTHETIC_CC0",
+      "Repository synthetic reference, no field inputs"
+    ],
+    "uncertainty": "exact authored arithmetic, not measurement uncertainty",
+    "calibration": "not applicable synthetic",
+    "counterevidence": [
+      "CE01",
+      "CE02"
+    ],
+    "model_validation": "legacy arithmetic replay only",
+    "numerical_output": {
+      "uncaptured": 95.0,
+      "capture_flare": 32.7,
+      "oxidation_leaks": 31.08
+    },
+    "residual": "old four-interface checks retained",
+    "status": "SYNTHETIC_TESTED",
+    "next_missing_input": [
+      "same-window site sources, storage, capture/leak measurements with uncertainty"
+    ],
+    "edge_type": "CONSERVATION_LAW"
+  },
+  {
+    "PROCESS_ID": "CH4",
+    "NODE_ID": "A2",
+    "EDGE_ID": "A1->A2",
+    "from_node": "A1",
+    "physical_quantity": "local concentration and reference gas mass",
+    "unit": "kg/m3; kg",
+    "medium/phase": "dry fraction in wet gas",
+    "spatial_domain": "same homogeneous synthetic parcel",
+    "temporal_support": "instantaneous same parcel",
+    "mechanism": "ideal gas, dry/wet reference-volume conversion",
+    "equation_id": "PR143 E01-E05",
+    "assumptions": [
+      "ideal gas at admitted P,T,e; no global representativeness"
+    ],
+    "boundary": "same parcel before/after standardization",
+    "inputs": "PR143 input.json",
+    "observed_or_derived": "SYNTHETIC",
+    "source_version_locator": [
+      {
+        "id": "PR143",
+        "version": "746825e65b8ddbd0f518709c94d9476df107208b",
+        "locator": "methane_knowledge_engine.py; input.json; E01-E14"
+      }
+    ],
+    "data_rights": [
+      "Repository synthetic reference, no field inputs"
+    ],
+    "uncertainty": "P/e covariance retained",
+    "calibration": "not applicable synthetic",
+    "counterevidence": [
+      "CE01"
+    ],
+    "model_validation": "analytical equality replay",
+    "numerical_output": {
+      "replay": "evidence/computed-legacy.json#PR143"
+    },
+    "residual": "mass residual in replay",
+    "status": "SYNTHETIC_TESTED",
+    "next_missing_input": [
+      "global representativeness, atmospheric mass profile, transport/chemistry inversion for emission inference"
+    ],
+    "edge_type": "CONSERVATION_LAW"
+  },
+  {
+    "PROCESS_ID": "CH4",
+    "NODE_ID": "A3",
+    "EDGE_ID": "A2->A3",
+    "from_node": "A2",
+    "physical_quantity": "global mole fraction to methane ERF",
+    "unit": "W/m2",
+    "medium/phase": "dry-air mole fraction",
+    "spatial_domain": "global remote marine boundary-layer annual abundance",
+    "temporal_support": "2025 minus1750 baseline",
+    "mechanism": "published radiative-transfer fit plus rapid adjustment",
+    "equation_id": "AGGI_Table1_CH4",
+    "assumptions": [
+      "published global means admitted independently of A2; no local-to-global scaling"
+    ],
+    "boundary": "methane direct ERF contribution excluding indirect ozone/water and surface response",
+    "inputs": {
+      "source_id": "GML_AGGI",
+      "source_version": "AGGI 2025 update; retrieved 2026-11-09 UTC",
+      "source_sha256": "9ffa03d571765dc55d46d57c8e1494e86340d8ddda025c77b3724f48e199dbe1",
+      "locator": "Observations CH4/N2O paragraphs; Table 1 CH4 and footnotes; Table 2 2025 CH4",
+      "M_ppb": 1936.03,
+      "M_reported_uncertainty_ppb": 0.48,
+      "N_ppb": 338.86,
+      "N_reported_uncertainty_ppb": 0.02,
+      "M0_ppb": 729.2,
+      "a": -8.96e-05,
+      "b": -0.000125,
+      "d": 0.045194,
+      "e": 0.86,
+      "published_2025_ERF_W_m2": 0.569,
+      "published_decimals": 3,
+      "unit": "ppb_dry_global_mean",
+      "phase": "gas_dry_air_mole_fraction",
+      "year": 2025,
+      "baseline_year": 1750,
+      "uncertainty_definition": "Page reports plus/minus abundance uncertainty, but the AGGI page does not define its confidence level. Propagation is a conditional standard-error interpretation, NOT a claimed calibrated 95% interval.",
+      "rights": "NOAA GML government numerical data public domain unless otherwise noted; attribution NOAA GML; no endorsement",
+      "raw_html_redistributed": false,
+      "transformation": "Manually transcribed numerical facts, each literal checked against downloaded HTML; no figures or third-party content included"
+    },
+    "observed_or_derived": "PUBLISHED_OBSERVATION_AGGREGATE_PLUS_EMPIRICAL_RELATION",
+    "source_version_locator": [
+      {
+        "id": "GML_AGGI",
+        "version": "AGGI2025",
+        "locator": "Observations; Table1 CH4 and footnotes; Table2 2025"
+      }
+    ],
+    "data_rights": [
+      "NOAA GML public-domain numerical facts; disclaimer https://gml.noaa.gov/about/disclaimer.html"
+    ],
+    "uncertainty": "propagated reported abundance uncertainty conditional on its interpretation; separate ~10% formula scale, not CI",
+    "calibration": "NOAA published network; no independent instrument recalibration",
+    "counterevidence": [
+      "CE03"
+    ],
+    "model_validation": "rounded published result reproduced; not independent validation of radiation physics",
+    "numerical_output": {
+      "ERF_W_m2": 0.569344413968403,
+      "dF_dM": 0.0003657674009602225,
+      "dF_dN": -4.962852025152416e-05,
+      "reported_2025_ERF_W_m2": 0.569,
+      "rounding_residual_W_m2": 0.0003444139684030123,
+      "rounded_match": true,
+      "propagated_abundance_u_if_independent_W_m2": 0.00017557115817196784,
+      "covariance_extreme_u_range_W_m2": [
+        0.00017457578205587633,
+        0.0001765609228659373
+      ],
+      "uncertainty_interpretation": "Page reports plus/minus abundance uncertainty, but the AGGI page does not define its confidence level. Propagation is a conditional standard-error interpretation, NOT a claimed calibrated 95% interval.",
+      "formula_10_percent_scale_W_m2": 0.0569344413968403,
+      "model_scale_not_CI": true,
+      "temperature_K": null,
+      "status": "OPEN_DATA_RECALCULATED",
+      "scope": "NOAA 2025 global methane ERF relative to 1750; not emissions attribution, indirect ozone forcing or surface temperature"
+    },
+    "residual": 0.0003444139684030123,
+    "status": "OPEN_DATA_RECALCULATED",
+    "next_missing_input": [
+      "validated response kernel, other forcings, time series, feedbacks and ocean heat uptake"
+    ],
+    "edge_type": "EMPIRICAL_RELATION"
+  },
+  {
+    "PROCESS_ID": "CH4",
+    "NODE_ID": "A4",
+    "EDGE_ID": "A3->A4",
+    "from_node": "A3",
+    "physical_quantity": "global surface-temperature response",
+    "unit": "K",
+    "medium/phase": "coupled atmosphere/ocean",
+    "spatial_domain": "global energy balance",
+    "temporal_support": "explicit response history required",
+    "mechanism": "energy accumulation and feedback",
+    "equation_id": "C*dT/dt=F-lambda*T; T(t)=integral G(t-s)F(s)ds",
+    "assumptions": [
+      "equation is a model form, not admitted parameterization"
+    ],
+    "boundary": "planetary energy budget",
+    "inputs": "F fragment only; C,lambda,G and other forcings missing",
+    "observed_or_derived": "MODEL_FORM",
+    "source_version_locator": [
+      {
+        "id": "PR143",
+        "version": "746825e65b8ddbd0f518709c94d9476df107208b",
+        "locator": "methane_knowledge_engine.py; input.json; E01-E14"
+      },
+      {
+        "id": "GML_AGGI",
+        "version": "AGGI2025",
+        "locator": "Observations; Table1 CH4 and footnotes; Table2 2025"
+      }
+    ],
+    "data_rights": [
+      "Repository synthetic reference, no field inputs",
+      "NOAA GML public-domain numerical facts; disclaimer https://gml.noaa.gov/about/disclaimer.html"
+    ],
+    "uncertainty": "structural/parameter uncertainty unquantified",
+    "calibration": "no response calibration",
+    "counterevidence": [
+      "CE03"
+    ],
+    "model_validation": "not validated",
+    "numerical_output": null,
+    "residual": null,
+    "status": "BLOCKED_MODEL_VALIDATION",
+    "next_missing_input": [
+      "source-backed C,lambda or response kernel, initial state, forcing histories and independent observations"
+    ],
+    "edge_type": "MODEL_ASSUMPTION"
+  },
+  {
+    "PROCESS_ID": "CH4",
+    "NODE_ID": "A5",
+    "EDGE_ID": "A4->A5",
+    "from_node": "A4",
+    "physical_quantity": "regional climate or release-height impact",
+    "unit": "K or impact metric",
+    "medium/phase": "transport/chemistry/region",
+    "spatial_domain": "not defined",
+    "temporal_support": "not defined",
+    "mechanism": "transport, chemistry, regional circulation and vulnerability",
+    "equation_id": "NONE_EXECUTABLE",
+    "assumptions": [
+      "no arbitrary height GWP"
+    ],
+    "boundary": "no admitted source-region counterfactual",
+    "inputs": "missing",
+    "observed_or_derived": "HYPOTHESIS",
+    "source_version_locator": [
+      {
+        "id": "PR143",
+        "version": "746825e65b8ddbd0f518709c94d9476df107208b",
+        "locator": "methane_knowledge_engine.py; input.json; E01-E14"
+      },
+      {
+        "id": "PR146",
+        "version": "1e6b13e2b80c50e6d20e05a4e88819eb0de93488",
+        "locator": "Atlas query/trace; latest ChatGPT ACCEPT_WITH_CONDITIONS"
+      }
+    ],
+    "data_rights": [
+      "Repository synthetic reference, no field inputs",
+      "Repository metadata projection"
+    ],
+    "uncertainty": "unidentified",
+    "calibration": "missing",
+    "counterevidence": [
+      "CE03"
+    ],
+    "model_validation": "not validated",
+    "numerical_output": null,
+    "residual": null,
+    "status": "NOT_INFERABLE",
+    "next_missing_input": [
+      "validated transport/chemistry, comparable counterfactual and exposure/response boundary"
+    ],
+    "edge_type": "HYPOTHESIS"
+  },
+  {
+    "PROCESS_ID": "ENSO",
+    "NODE_ID": "B1",
+    "EDGE_ID": "START->B1",
+    "from_node": null,
+    "physical_quantity": "SST, wind, thermocline and convection",
+    "unit": "K; m/s; m",
+    "medium/phase": "ocean-atmosphere",
+    "spatial_domain": "equatorial Pacific",
+    "temporal_support": "seasonal coupled evolution",
+    "mechanism": "weak trades -> reduced eastern upwelling/shallow cold-water influence -> warmer east -> weaker SST gradient/trades; Bjerknes positive feedback with delayed ocean recharge/discharge",
+    "equation_id": "conceptual coupled heat/momentum balances",
+    "assumptions": [
+      "feedback direction is mechanism, not a one-equation forecast"
+    ],
+    "boundary": "Pacific coupled system",
+    "inputs": "no wind or heat-content series admitted",
+    "observed_or_derived": "LITERATURE_MECHANISM",
+    "source_version_locator": [
+      {
+        "id": "NOAA_ENSO",
+        "version": "web_2026-11-10",
+        "locator": "Ocean-atmosphere coupling; additional NOAA upwelling source https://oceanservice.noaa.gov/facts/ninonina.html updated2026-09-23"
+      }
+    ],
+    "data_rights": [
+      "Public reading, own summary only; no images redistributed"
+    ],
+    "uncertainty": "no model parameters",
+    "calibration": "not calibrated",
+    "counterevidence": [
+      "CE04"
+    ],
+    "model_validation": "qualitative",
+    "numerical_output": null,
+    "residual": null,
+    "status": "BLOCKED_MODEL_VALIDATION",
+    "next_missing_input": [
+      "wind stress, thermocline/heat-content and validated coupled model"
+    ],
+    "edge_type": "PHYSICAL_MECHANISM"
+  },
+  {
+    "PROCESS_ID": "ENSO",
+    "NODE_ID": "B2",
+    "EDGE_ID": "B1->B2",
+    "from_node": "B1",
+    "physical_quantity": "relative SST index",
+    "unit": "degC_anomaly",
+    "medium/phase": "sea surface",
+    "spatial_domain": "Niño3.4 relative to tropical20N-20S",
+    "temporal_support": "3month means,1991-2020base;1961-2020analysis",
+    "mechanism": "area-average anomaly difference and variance rescaling",
+    "equation_id": "RONI_ERSSTv6",
+    "assumptions": [
+      "not spliced with ONI or SOI; not five-season event classifier"
+    ],
+    "boundary": "index reconstruction",
+    "inputs": "evidence/RONI.ascii.txt",
+    "observed_or_derived": "PUBLISHED_DERIVED_INDEX",
+    "source_version_locator": [
+      {
+        "id": "CPC_RONI",
+        "version": "ERSSTv6_1991-2020_2026-11-03",
+        "locator": "SEAS YR ANOM; method https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/"
+      }
+    ],
+    "data_rights": [
+      "NOAA/NWS public-domain product; https://www.weather.gov/disclaimer; attribution, no endorsement"
+    ],
+    "uncertainty": "no row uncertainty/quality flags; retrospective revisions possible",
+    "calibration": "official reconstructed index, not local sensor validation",
+    "counterevidence": [
+      "CE04"
+    ],
+    "model_validation": "raw hash, fields, duplicates and coverage checked",
+    "numerical_output": {
+      "selected_seasons": 720,
+      "missing": 0
+    },
+    "residual": null,
+    "status": "STRUCTURAL_QC_ONLY",
+    "next_missing_input": [],
+    "edge_type": "EMPIRICAL_RELATION"
+  },
+  {
+    "PROCESS_ID": "ENSO",
+    "NODE_ID": "B3",
+    "EDGE_ID": "B2->B3",
+    "from_node": "B2",
+    "physical_quantity": "conditional same-phase index persistence",
+    "unit": "probability",
+    "medium/phase": "statistical index",
+    "spatial_domain": "same Pacific index; no region-weather response",
+    "temporal_support": "JJA -> SON same year; 60years",
+    "mechanism": "conditional counts and paired-year resampling",
+    "equation_id": "p=k/n; Wilson; moving-block percentile",
+    "assumptions": [
+      "single-season threshold; fixed selection; block approximate stationarity; finite small conditional samples"
+    ],
+    "boundary": "1961-2020 closed historical sample",
+    "inputs": "720 selected seasonal index values",
+    "observed_or_derived": "DERIVED_HISTORICAL_STATISTIC",
+    "source_version_locator": [
+      {
+        "id": "CPC_RONI",
+        "version": "ERSSTv6_1991-2020_2026-11-03",
+        "locator": "SEAS YR ANOM; method https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/"
+      },
+      {
+        "id": "AUTHOR",
+        "version": "trajectory-protocol/1",
+        "locator": "Frozen protocol; taskbook; author synthetic derivations"
+      }
+    ],
+    "data_rights": [
+      "NOAA/NWS public-domain product; https://www.weather.gov/disclaimer; attribution, no endorsement",
+      "Repository authored synthetic fixtures and analysis; no observation claim"
+    ],
+    "uncertainty": "nominal Wilson plus3/5year blocks; cold bootstrap[1,1] degenerates, NOT certainty",
+    "calibration": "not a weather forecast",
+    "counterevidence": [
+      "CE05",
+      "CE06"
+    ],
+    "model_validation": "independent arithmetic/count checks; no held-out forecast validation",
+    "numerical_output": {
+      "status": "CONDITIONAL_STATISTICAL_ESTIMATE",
+      "source_rows": 921,
+      "selected_rows": 720,
+      "years": [
+        1961,
+        2020
+      ],
+      "QC": "No missing or duplicate selected seasons; no per-row quality flag supplied",
+      "season_strata": {
+        "DJF": {
+          "n": 60,
+          "counts": {
+            "neutral": 21,
+            "warm": 21,
+            "cold": 18
+          },
+          "mean_degC": 0.09533333333333334,
+          "lag1_annual_correlation": -0.08713522834502732,
+          "early_1961_1990": {
+            "mean": 0.174,
+            "counts": {
+              "neutral": 15,
+              "warm": 9,
+              "cold": 6
+            }
+          },
+          "late_1991_2020": {
+            "mean": 0.016666666666666666,
+            "counts": {
+              "warm": 12,
+              "neutral": 6,
+              "cold": 12
+            }
+          }
+        },
+        "MAM": {
+          "n": 60,
+          "counts": {
+            "neutral": 39,
+            "warm": 10,
+            "cold": 11
+          },
+          "mean_degC": -0.017999999999999995,
+          "lag1_annual_correlation": 0.23168093940298518,
+          "early_1961_1990": {
+            "mean": -0.03133333333333333,
+            "counts": {
+              "neutral": 20,
+              "warm": 4,
+              "cold": 6
+            }
+          },
+          "late_1991_2020": {
+            "mean": -0.004666666666666662,
+            "counts": {
+              "neutral": 19,
+              "warm": 6,
+              "cold": 5
+            }
+          }
+        },
+        "JJA": {
+          "n": 60,
+          "counts": {
+            "neutral": 36,
+            "warm": 14,
+            "cold": 10
+          },
+          "mean_degC": 0.025166666666666674,
+          "lag1_annual_correlation": -0.16637716195544763,
+          "early_1961_1990": {
+            "mean": 0.05500000000000001,
+            "counts": {
+              "neutral": 19,
+              "warm": 7,
+              "cold": 4
+            }
+          },
+          "late_1991_2020": {
+            "mean": -0.004666666666666659,
+            "counts": {
+              "warm": 7,
+              "neutral": 17,
+              "cold": 6
+            }
+          }
+        },
+        "SON": {
+          "n": 60,
+          "counts": {
+            "neutral": 23,
+            "warm": 20,
+            "cold": 17
+          },
+          "mean_degC": 0.06066666666666666,
+          "lag1_annual_correlation": -0.19925391599548714,
+          "early_1961_1990": {
+            "mean": 0.12566666666666668,
+            "counts": {
+              "neutral": 12,
+              "warm": 11,
+              "cold": 7
+            }
+          },
+          "late_1991_2020": {
+            "mean": -0.004333333333333355,
+            "counts": {
+              "warm": 9,
+              "neutral": 11,
+              "cold": 10
+            }
+          }
+        }
+      },
+      "JJA_to_SON_persistence": {
+        "warm": {
+          "k": 13,
+          "n": 14,
+          "p_SON_same_given_JJA": 0.9285714285714286,
+          "difference_vs_JJA_not_target": 0.7763975155279503,
+          "nominal_iid_Wilson95": [
+            0.6853129557584889,
+            0.9872777847521093
+          ],
+          "block_bootstrap": [
+            {
+              "block_years": 3,
+              "valid": 2000,
+              "replicates": 2000,
+              "p_interval": [
+                0.8,
+                1.0
+              ],
+              "difference_interval": [
+                0.6305440476930729,
+                0.9111111111111111
+              ]
+            },
+            {
+              "block_years": 5,
+              "valid": 2000,
+              "replicates": 2000,
+              "p_interval": [
+                0.8,
+                1.0
+              ],
+              "difference_interval": [
+                0.6444444444444445,
+                0.8958333333333334
+              ]
+            }
+          ],
+          "years": [
+            1963,
+            1965,
+            1968,
+            1972,
+            1976,
+            1982,
+            1987,
+            1991,
+            1992,
+            1994,
+            1997,
+            2002,
+            2004,
+            2015
+          ],
+          "counterexample_years": [
+            1992
+          ],
+          "split": {
+            "1961-1990": {
+              "n": 7,
+              "k": 7
+            },
+            "1991-2020": {
+              "n": 7,
+              "k": 6
+            }
+          }
+        },
+        "cold": {
+          "k": 10,
+          "n": 10,
+          "p_SON_same_given_JJA": 1.0,
+          "difference_vs_JJA_not_target": 0.86,
+          "nominal_iid_Wilson95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "block_bootstrap": [
+            {
+              "block_years": 3,
+              "valid": 2000,
+              "replicates": 2000,
+              "p_interval": [
+                1.0,
+                1.0
+              ],
+              "difference_interval": [
+                0.7608478260869566,
+                0.9411764705882353
+              ]
+            },
+            {
+              "block_years": 5,
+              "valid": 2000,
+              "replicates": 2000,
+              "p_interval": [
+                1.0,
+                1.0
+              ],
+              "difference_interval": [
+                0.7735161163522013,
+                0.9348505434782606
+              ]
+            }
+          ],
+          "years": [
+            1964,
+            1973,
+            1975,
+            1988,
+            1998,
+            1999,
+            2007,
+            2010,
+            2016,
+            2020
+          ],
+          "counterexample_years": [],
+          "split": {
+            "1961-1990": {
+              "n": 4,
+              "k": 4
+            },
+            "1991-2020": {
+              "n": 6,
+              "k": 6
+            }
+          }
+        }
+      },
+      "weather_probability": null,
+      "weather_status": "DATA_NOT_READY",
+      "interpretation": "Index persistence only; 3-month nonoverlapping seasons, not independent events, not a regional rainfall model or causal test. Moving blocks assume within-window approximate stationarity; split results are diagnostics, not proof of stationarity.",
+      "classification": "single-season threshold, not the CPC five-consecutive-season event rule"
+    },
+    "residual": null,
+    "status": "CONDITIONAL_STATISTICAL_ESTIMATE",
+    "next_missing_input": [
+      "same-window licensed area rainfall and QC before weather probability"
+    ],
+    "edge_type": "STATISTICAL_TELECONNECTION"
+  },
+  {
+    "PROCESS_ID": "ENSO",
+    "NODE_ID": "B4",
+    "EDGE_ID": "B3->B4",
+    "from_node": "B3",
+    "physical_quantity": "regional seasonal dry probability",
+    "unit": "probability",
+    "medium/phase": "regional atmosphere",
+    "spatial_domain": "Australian area average candidate",
+    "temporal_support": "SON1961-2020; dry threshold1961-1990median",
+    "mechanism": "circulation teleconnection conditional on season/IOD/SAM etc.",
+    "equation_id": "P(dry|phase)",
+    "assumptions": [
+      "index persistence cannot substitute rainfall outcomes"
+    ],
+    "boundary": "not facility, not Indonesia, not Nile",
+    "inputs": "rainfall payload not admitted",
+    "observed_or_derived": "UNAVAILABLE",
+    "source_version_locator": [
+      {
+        "id": "BOM_RAIN",
+        "version": "web_2026-11-10",
+        "locator": "Rainfall data; Data format; Data use and copyright"
+      },
+      {
+        "id": "BOM_COUNTER",
+        "version": "updated_2026-09-28",
+        "locator": "How will a strong El Niño impact Australia; Why is it raining during El Niño"
+      }
+    ],
+    "data_rights": [
+      "Product-specific study/research permission; unrestricted raw redistribution NOT established; https://www.bom.gov.au/copyright",
+      "Own paraphrase; no figures or full text redistributed"
+    ],
+    "uncertainty": "unknown",
+    "calibration": "missing",
+    "counterevidence": [
+      "CE04",
+      "CE06"
+    ],
+    "model_validation": "no estimate",
+    "numerical_output": null,
+    "residual": null,
+    "status": "BLOCKED_MISSING_DATA",
+    "next_missing_input": [
+      "product-specific reproducible-use rights and complete QC rainfall series; confounder protocol"
+    ],
+    "edge_type": "STATISTICAL_TELECONNECTION"
+  },
+  {
+    "PROCESS_ID": "ENSO",
+    "NODE_ID": "B5",
+    "EDGE_ID": "B4->B5",
+    "from_node": "B4",
+    "physical_quantity": "environmental risk or facility CH4 response",
+    "unit": "risk / kg_CH4",
+    "medium/phase": "catchment or facility",
+    "spatial_domain": "not calibrated",
+    "temporal_support": "lags undefined",
+    "mechanism": "weather -> hydrology/process -> vulnerability",
+    "equation_id": "NONE_EXECUTABLE",
+    "assumptions": [
+      "no deterministic drought or methane causality"
+    ],
+    "boundary": "requires exposure/process evidence",
+    "inputs": "missing",
+    "observed_or_derived": "HYPOTHESIS",
+    "source_version_locator": [
+      {
+        "id": "BOM_COUNTER",
+        "version": "updated_2026-09-28",
+        "locator": "How will a strong El Niño impact Australia; Why is it raining during El Niño"
+      },
+      {
+        "id": "WET_COUNTER",
+        "version": "CommunicationsEarthEnvironment_2025_s43247-025-02438-3",
+        "locator": "Indexed publisher Discussion excerpt"
+      }
+    ],
+    "data_rights": [
+      "Own paraphrase; no figures or full text redistributed",
+      "Bibliographic facts and own summary only; no raw file redistributed"
+    ],
+    "uncertainty": "unidentified",
+    "calibration": "missing",
+    "counterevidence": [
+      "CE07"
+    ],
+    "model_validation": "not validated",
+    "numerical_output": null,
+    "residual": null,
+    "status": "NOT_INFERABLE",
+    "next_missing_input": [
+      "same-site hydro/temperature/flux covariates and independent process validation"
+    ],
+    "edge_type": "HYPOTHESIS"
+  },
+  {
+    "PROCESS_ID": "HYDRO",
+    "NODE_ID": "C1",
+    "EDGE_ID": "START->C1",
+    "from_node": null,
+    "physical_quantity": "flow direction and tributary topology",
+    "unit": "directed links",
+    "medium/phase": "surface water",
+    "spatial_domain": "Nile: Eldeim -> Khartoum -> Halfaya -> Dongola",
+    "temporal_support": "station metadata, not synchronized flows",
+    "mechanism": "Blue Nile joins White Nile before Halfaya; intervening tributaries/storage remain",
+    "equation_id": "control-volume topology",
+    "assumptions": [
+      "no numeric travel-time inferred"
+    ],
+    "boundary": "NBI station context",
+    "inputs": "NBI station table",
+    "observed_or_derived": "OFFICIAL_METADATA",
+    "source_version_locator": [
+      {
+        "id": "NBI",
+        "version": "web_2026-11-10",
+        "locator": "Station table Eldeim, Khartoum, Halfaya Bridge, Dongola"
+      },
+      {
+        "id": "PR146",
+        "version": "1e6b13e2b80c50e6d20e05a4e88819eb0de93488",
+        "locator": "Atlas query/trace; latest ChatGPT ACCEPT_WITH_CONDITIONS"
+      }
+    ],
+    "data_rights": [
+      "Public metadata facts only; no raw flow licence inferred",
+      "Repository metadata projection"
+    ],
+    "uncertainty": "locations/timing not field-validated here",
+    "calibration": "not applicable to metadata",
+    "counterevidence": [
+      "CE08"
+    ],
+    "model_validation": "topology only",
+    "numerical_output": {
+      "geometry_count": 0
+    },
+    "residual": null,
+    "status": "STRUCTURAL_QC_ONLY",
+    "next_missing_input": [
+      "licensed simultaneous stage-discharge, rating uncertainty and tributary/storage terms"
+    ],
+    "edge_type": "PHYSICAL_MECHANISM"
+  },
+  {
+    "PROCESS_ID": "HYDRO",
+    "NODE_ID": "C2",
+    "EDGE_ID": "C1->C2",
+    "from_node": "C1",
+    "physical_quantity": "water-volume balance and propagated residual uncertainty",
+    "unit": "m3/day_interval",
+    "medium/phase": "incompressible freshwater",
+    "spatial_domain": "three abstract control volumes, not real Nile reaches",
+    "temporal_support": "same synthetic86400s UTC interval",
+    "mechanism": "Qin+lateral+Parea-Qout-abstraction-evap-dS",
+    "equation_id": "HYDRO_CV1",
+    "assumptions": [
+      "constant density; identical internal-flow variable reused, no travel lag in this fixture"
+    ],
+    "boundary": "three nested/joined ledgers",
+    "inputs": {
+      "nodes": [
+        {
+          "id": "CV1",
+          "unit": "m3/interval",
+          "interval": "SYNTHETIC_UTC_DAY_86400S",
+          "coefficients": {
+            "q0": 1,
+            "l1": 1,
+            "p1": 1,
+            "q12": -1,
+            "a1": -1,
+            "e1": -1,
+            "s1": -1
+          }
+        },
+        {
+          "id": "CV2",
+          "unit": "m3/interval",
+          "interval": "SYNTHETIC_UTC_DAY_86400S",
+          "coefficients": {
+            "q12": 1,
+            "l2": 1,
+            "p2": 1,
+            "q23": -1,
+            "a2": -1,
+            "e2": -1,
+            "s2": -1
+          }
+        },
+        {
+          "id": "CV3",
+          "unit": "m3/interval",
+          "interval": "SYNTHETIC_UTC_DAY_86400S",
+          "coefficients": {
+            "q23": 1,
+            "l3": 1,
+            "p3": 1,
+            "q3": -1,
+            "a3": -1,
+            "e3": -1,
+            "s3": -1
+          }
+        }
+      ],
+      "volumes_m3": {
+        "q0": 864000,
+        "q12": 950400,
+        "q23": 1036800,
+        "q3": 1036800,
+        "l1": 172800,
+        "l2": 259200,
+        "l3": 86400,
+        "a1": 86400,
+        "a2": 172800,
+        "a3": 86400,
+        "p1": 1000,
+        "p2": 2000,
+        "p3": 500,
+        "e1": 500,
+        "e2": 1000,
+        "e3": 500,
+        "s1": 500,
+        "s2": 1000,
+        "s3": 0
+      },
+      "std_m3": {
+        "q0": 8640,
+        "q12": 8640,
+        "q23": 8640,
+        "q3": 8640,
+        "l1": 8640,
+        "l2": 8640,
+        "l3": 8640,
+        "a1": 8640,
+        "a2": 8640,
+        "a3": 8640,
+        "p1": 100,
+        "p2": 100,
+        "p3": 100,
+        "e1": 100,
+        "e2": 100,
+        "e3": 100,
+        "s1": 100,
+        "s2": 100,
+        "s3": 100
+      }
+    },
+    "observed_or_derived": "SYNTHETIC",
+    "source_version_locator": [
+      {
+        "id": "AUTHOR",
+        "version": "trajectory-protocol/1",
+        "locator": "Frozen protocol; taskbook; author synthetic derivations"
+      },
+      {
+        "id": "NBI",
+        "version": "web_2026-11-10",
+        "locator": "Station table Eldeim, Khartoum, Halfaya Bridge, Dongola"
+      }
+    ],
+    "data_rights": [
+      "Repository authored synthetic fixtures and analysis; no observation claim",
+      "Public metadata facts only; no raw flow licence inferred"
+    ],
+    "uncertainty": "Authored independent primitive standard deviations; shared inter-node variables correlated exactly and cancelled; no field calibration",
+    "calibration": "not applicable synthetic",
+    "counterevidence": [
+      "CE08",
+      "CE09"
+    ],
+    "model_validation": "exact fixture and perturbation tests",
+    "numerical_output": {
+      "status": "SYNTHETIC_TESTED",
+      "nodes": [
+        {
+          "node": "CV1",
+          "residual_m3": 0.0,
+          "synthetic_u_m3": 17280.8680337534
+        },
+        {
+          "node": "CV2",
+          "residual_m3": 0.0,
+          "synthetic_u_m3": 17280.8680337534
+        },
+        {
+          "node": "CV3",
+          "residual_m3": 0.0,
+          "synthetic_u_m3": 17280.8680337534
+        }
+      ],
+      "residual_m3": 0.0,
+      "whole_chain_u_m3": 24439.451712344122,
+      "incorrect_independent_node_u_m3": 29931.341433353773,
+      "global_coefficients": {
+        "q0": 1,
+        "l1": 1,
+        "p1": 1,
+        "q12": 0,
+        "a1": -1,
+        "e1": -1,
+        "s1": -1,
+        "l2": 1,
+        "p2": 1,
+        "q23": 0,
+        "a2": -1,
+        "e2": -1,
+        "s2": -1,
+        "l3": 1,
+        "p3": 1,
+        "q3": -1,
+        "a3": -1,
+        "e3": -1,
+        "s3": -1
+      },
+      "cancelled_internal_terms": [
+        "q12",
+        "q23"
+      ],
+      "attribution": null,
+      "uncertainty": "Authored independent primitive standard deviations; shared inter-node variables correlated exactly and cancelled; no field calibration"
+    },
+    "residual": 0,
+    "status": "SYNTHETIC_TESTED",
+    "next_missing_input": [
+      "measured same-window terms, rating curves, lag/storage model"
+    ],
+    "edge_type": "CONSERVATION_LAW"
+  },
+  {
+    "PROCESS_ID": "HYDRO",
+    "NODE_ID": "C3",
+    "EDGE_ID": "C2->C3",
+    "from_node": "C2",
+    "physical_quantity": "public daily river-record quality",
+    "unit": "rows; quality flags",
+    "medium/phase": "surface water",
+    "spatial_domain": "Cooma410033 ONLY; not Nile proxy",
+    "temporal_support": "2020-01-01 through01-31; source09:00local unspecified offset",
+    "mechanism": "source lineage and structural QC",
+    "equation_id": "HRS_QC_ONLY",
+    "assumptions": [
+      "no unreliable E flow used as quantitative balance input"
+    ],
+    "boundary": "single gauging station",
+    "inputs": "evidence/hrs-january-2020.json",
+    "observed_or_derived": "INHERITED_DERIVED_PUBLIC_RECORDS",
+    "source_version_locator": [
+      {
+        "id": "HRS_INHERITED",
+        "version": "PR129_987cc1d_HRS_Sep2026",
+        "locator": "index metadata, manifest, 2020 shard; fixed January subset"
+      }
+    ],
+    "data_rights": [
+      "CC BY3.0 AU © WaterNSW; BoM HRS; inherited licence evidence 2026-10-26; unchanged values selected"
+    ],
+    "uncertainty": "E unreliable plus interval/unit ambiguity",
+    "calibration": "no independent gauge calibration",
+    "counterevidence": [
+      "CE10"
+    ],
+    "model_validation": "structural check",
+    "numerical_output": {
+      "status": "STRUCTURAL_QC_ONLY",
+      "rows": 31,
+      "duplicate_dates": 0,
+      "absent_dates": [],
+      "quality_counts": {
+        "E": 31
+      },
+      "missing_values": 0,
+      "physical_volume_sum": null,
+      "balance_status": "BLOCKED_MISSING_DATA",
+      "scope": "Cooma HRS audit; not Nile",
+      "gaps": [
+        "E quality unreliable",
+        "ML column versus ML/day header",
+        "09:00 local UTC/DST and interval convention",
+        "matched upstream/downstream, lateral and storage observations absent"
+      ]
+    },
+    "residual": null,
+    "status": "STRUCTURAL_QC_ONLY",
+    "next_missing_input": [
+      "verified good-quality same-window records; reconcile ML/MLday, day/UTC and source extraction date"
+    ],
+    "edge_type": "EMPIRICAL_RELATION"
+  },
+  {
+    "PROCESS_ID": "HYDRO",
+    "NODE_ID": "C4",
+    "EDGE_ID": "C3->C4",
+    "from_node": "C3",
+    "physical_quantity": "real river balance and residual attribution",
+    "unit": "m3/interval",
+    "medium/phase": "surface + groundwater",
+    "spatial_domain": "no admitted matched control-volume boundary",
+    "temporal_support": "no matched time/lag support",
+    "mechanism": "missing terms prevent unique allocation of residual",
+    "equation_id": "HYDRO_CV1",
+    "assumptions": [
+      "unknown lateral/storage is not zero; residual is not automatically evaporation"
+    ],
+    "boundary": "unresolved",
+    "inputs": "single unreliable station cannot close system",
+    "observed_or_derived": "UNAVAILABLE",
+    "source_version_locator": [
+      {
+        "id": "HRS_INHERITED",
+        "version": "PR129_987cc1d_HRS_Sep2026",
+        "locator": "index metadata, manifest, 2020 shard; fixed January subset"
+      },
+      {
+        "id": "NBI",
+        "version": "web_2026-11-10",
+        "locator": "Station table Eldeim, Khartoum, Halfaya Bridge, Dongola"
+      },
+      {
+        "id": "AUTHOR",
+        "version": "trajectory-protocol/1",
+        "locator": "Frozen protocol; taskbook; author synthetic derivations"
+      }
+    ],
+    "data_rights": [
+      "CC BY3.0 AU © WaterNSW; BoM HRS; inherited licence evidence 2026-10-26; unchanged values selected",
+      "Public metadata facts only; no raw flow licence inferred",
+      "Repository authored synthetic fixtures and analysis; no observation claim"
+    ],
+    "uncertainty": "unidentified",
+    "calibration": "missing",
+    "counterevidence": [
+      "CE08",
+      "CE09",
+      "CE10"
+    ],
+    "model_validation": "blocked",
+    "numerical_output": null,
+    "residual": null,
+    "status": "BLOCKED_MISSING_DATA",
+    "next_missing_input": [
+      "upstream/downstream + lateral + storage + abstraction + P/evap + groundwater terms and uncertainties"
+    ],
+    "edge_type": "CONSERVATION_LAW"
+  }
+]

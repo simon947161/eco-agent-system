@@ -1,0 +1,167 @@
+{
+  "synthetic": {
+    "status": "SYNTHETIC_TESTED",
+    "nodes": [
+      {
+        "node": "CV1",
+        "residual_m3": 0.0,
+        "synthetic_u_m3": 17280.8680337534
+      },
+      {
+        "node": "CV2",
+        "residual_m3": 0.0,
+        "synthetic_u_m3": 17280.8680337534
+      },
+      {
+        "node": "CV3",
+        "residual_m3": 0.0,
+        "synthetic_u_m3": 17280.8680337534
+      }
+    ],
+    "residual_m3": 0.0,
+    "whole_chain_u_m3": 24439.451712344122,
+    "incorrect_independent_node_u_m3": 29931.341433353773,
+    "global_coefficients": {
+      "q0": 1,
+      "l1": 1,
+      "p1": 1,
+      "q12": 0,
+      "a1": -1,
+      "e1": -1,
+      "s1": -1,
+      "l2": 1,
+      "p2": 1,
+      "q23": 0,
+      "a2": -1,
+      "e2": -1,
+      "s2": -1,
+      "l3": 1,
+      "p3": 1,
+      "q3": -1,
+      "a3": -1,
+      "e3": -1,
+      "s3": -1
+    },
+    "cancelled_internal_terms": [
+      "q12",
+      "q23"
+    ],
+    "attribution": null,
+    "uncertainty": "Authored independent primitive standard deviations; shared inter-node variables correlated exactly and cancelled; no field calibration"
+  },
+  "synthetic_inputs": {
+    "nodes": [
+      {
+        "id": "CV1",
+        "unit": "m3/interval",
+        "interval": "SYNTHETIC_UTC_DAY_86400S",
+        "coefficients": {
+          "q0": 1,
+          "l1": 1,
+          "p1": 1,
+          "q12": -1,
+          "a1": -1,
+          "e1": -1,
+          "s1": -1
+        }
+      },
+      {
+        "id": "CV2",
+        "unit": "m3/interval",
+        "interval": "SYNTHETIC_UTC_DAY_86400S",
+        "coefficients": {
+          "q12": 1,
+          "l2": 1,
+          "p2": 1,
+          "q23": -1,
+          "a2": -1,
+          "e2": -1,
+          "s2": -1
+        }
+      },
+      {
+        "id": "CV3",
+        "unit": "m3/interval",
+        "interval": "SYNTHETIC_UTC_DAY_86400S",
+        "coefficients": {
+          "q23": 1,
+          "l3": 1,
+          "p3": 1,
+          "q3": -1,
+          "a3": -1,
+          "e3": -1,
+          "s3": -1
+        }
+      }
+    ],
+    "volumes_m3": {
+      "q0": 864000,
+      "q12": 950400,
+      "q23": 1036800,
+      "q3": 1036800,
+      "l1": 172800,
+      "l2": 259200,
+      "l3": 86400,
+      "a1": 86400,
+      "a2": 172800,
+      "a3": 86400,
+      "p1": 1000,
+      "p2": 2000,
+      "p3": 500,
+      "e1": 500,
+      "e2": 1000,
+      "e3": 500,
+      "s1": 500,
+      "s2": 1000,
+      "s3": 0
+    },
+    "std_m3": {
+      "q0": 8640,
+      "q12": 8640,
+      "q23": 8640,
+      "q3": 8640,
+      "l1": 8640,
+      "l2": 8640,
+      "l3": 8640,
+      "a1": 8640,
+      "a2": 8640,
+      "a3": 8640,
+      "p1": 100,
+      "p2": 100,
+      "p3": 100,
+      "e1": 100,
+      "e2": 100,
+      "e3": 100,
+      "s1": 100,
+      "s2": 100,
+      "s3": 100
+    }
+  },
+  "unknown_lateral_example": {
+    "status": "BLOCKED_MISSING_DATA",
+    "residual_m3": null,
+    "attribution": null,
+    "missing": [
+      "l2"
+    ]
+  },
+  "real_fragment": {
+    "status": "STRUCTURAL_QC_ONLY",
+    "rows": 31,
+    "duplicate_dates": 0,
+    "absent_dates": [],
+    "quality_counts": {
+      "E": 31
+    },
+    "missing_values": 0,
+    "physical_volume_sum": null,
+    "balance_status": "BLOCKED_MISSING_DATA",
+    "scope": "Cooma HRS audit; not Nile",
+    "gaps": [
+      "E quality unreliable",
+      "ML column versus ML/day header",
+      "09:00 local UTC/DST and interval convention",
+      "matched upstream/downstream, lateral and storage observations absent"
+    ]
+  }
+}

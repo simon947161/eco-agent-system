@@ -1,0 +1,43 @@
+{
+  "source_id": "SCORECARD_AU",
+  "direct_current_retrieval": {
+    "url": "https://www.climatescorecard.org/scorecard/",
+    "retrieved_at": "2026-11-09T20:53:31.149996+00:00",
+    "attempts": 1,
+    "status": "STOP_NO_RETRY",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "web_reader_observation": "Before the direct 403, web reader exposed the disputed wording at the original URL. Reader cache/version freshness cannot be independently established. No retry after 403.",
+  "historical_snapshot_sha256": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+  "page_datePublished": "2021-03-29T03:28:18+00:00",
+  "page_dateModified": "2025-09-25T03:51:15+00:00",
+  "date_scope": "Page-wide metadata; not verified as Australian-card publication/revision dates",
+  "short_quote": "by 2030 compared with the base year of 2030",
+  "locator": "Australia accordion, question 2 response",
+  "responses": [
+    "No",
+    "No",
+    "No",
+    "Yes",
+    "Yes"
+  ],
+  "response_provenance": "Web reader visible Australian card, not a new direct byte snapshot",
+  "published_label": 50,
+  "label_basis": "PR146 frozen CSS extraction, not independently re-downloaded now",
+  "rubric": "Five questions worth 20 points each; partial-credit detail not independently established",
+  "law": {
+    "source_id": "AU_ACT",
+    "compilation": "C2025C00153; Compilation 2",
+    "effective_date": "2025-02-20",
+    "registration_date": "2025-02-27",
+    "section": "10(1)(a)",
+    "reduction_percent": 43,
+    "baseline_year": 2005,
+    "target_year": 2030,
+    "implementation": "point target and 2021-2030 emissions budget",
+    "net_zero_year": 2050,
+    "sha256": "02397536f5043ebfe8d5a3f2e0f6309af6a470e03ed5ff8c516e70e1723680c3"
+  },
+  "contact_status": "NOT_SENT",
+  "score_wrong_proven": false
+}
