@@ -3,9 +3,9 @@
   "task_id": "CLIMATEOS-GLOBAL-METHOD-EVIDENCE-ECOCHAIN-001",
   "review_status": "PENDING",
   "review_mode": "INDEPENDENT_READ_ONLY; reviewer explicitly states rerun versus read-only scope",
-  "source_pr": null,
-  "research_content_sha": null,
-  "working_head_sha": null,
+  "source_pr": "https://github.com/simon947161/eco-agent-system/pull/145",
+  "research_content_sha": "012c3580b8fa425f750f1700097c52c1da64f482",
+  "working_head_sha": "012c3580b8fa425f750f1700097c52c1da64f482",
   "delivery_head_anchor": "Final GitHub review-request comment pins exact D; inspect D full tree",
   "baseline_sha": "77a35e2723372a290579e4549a86781e2be65c04",
   "baseline_review": "https://github.com/simon947161/eco-agent-system/pull/144#issuecomment-6735839200",
@@ -22,7 +22,7 @@
   ],
   "local_validation": "77 scoped tests, two byte-identical replay runs; see evidence/tests.txt and manifest.json",
   "integration": {"ECOChain":"ECOCHAIN_CANONICAL_NOT_FOUND","Enotebook":"PENDING_INTEGRATION"},
-  "ci": "NOT_YET_CHECKED_FOR_DELIVERY_HEAD",
+  "ci": "R: no observed PR workflow runs or combined statuses; NOT_TRIGGERED/NOT_VERIFIED. Check final exact-D comment, not a claim of CI PASS.",
   "prohibited": ["merge","deploy","statutory certification","credit issuance","new real emission experiments","scientific admission promotion"],
   "delivery_to_chatgpt": "NOT_SENT; Founder must forward exact PR and D"
 }
