@@ -1,0 +1,59 @@
+{
+  "uncaptured": {
+    "status": "SYNTHETIC_METHOD_TEST",
+    "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+    "emitted_kg_CH4": 95.0,
+    "consumed_kg_CH4": 0.0,
+    "co2_from_CH4_reaction_kg": 0.0,
+    "carbon_in_kg_C": 82.5,
+    "carbon_out_plus_stock_kg_C": 82.5,
+    "residuals": {
+      "body": 0.0,
+      "pipe": 0.0,
+      "device": 0.0,
+      "cover": 0.0,
+      "CH4": 0.0,
+      "carbon": 0.0
+    },
+    "unknown_field_uncertainty": true,
+    "regulatory_admission": "NOT_APPLICABLE"
+  },
+  "capture_flare": {
+    "status": "SYNTHETIC_METHOD_TEST",
+    "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+    "emitted_kg_CH4": 32.7,
+    "consumed_kg_CH4": 62.3,
+    "co2_from_CH4_reaction_kg": 171.325,
+    "carbon_in_kg_C": 82.5,
+    "carbon_out_plus_stock_kg_C": 82.5,
+    "residuals": {
+      "body": 0.0,
+      "pipe": 0.0,
+      "device": 0.0,
+      "cover": 0.0,
+      "CH4": 0.0,
+      "carbon": 0.0
+    },
+    "unknown_field_uncertainty": true,
+    "regulatory_admission": "NOT_APPLICABLE"
+  },
+  "oxidation_leaks": {
+    "status": "SYNTHETIC_METHOD_TEST",
+    "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+    "emitted_kg_CH4": 31.08,
+    "consumed_kg_CH4": 58.92,
+    "co2_from_CH4_reaction_kg": 162.03,
+    "carbon_in_kg_C": 82.5,
+    "carbon_out_plus_stock_kg_C": 82.5,
+    "residuals": {
+      "body": 0.0,
+      "pipe": 0.0,
+      "device": 0.0,
+      "cover": 0.0,
+      "CH4": 0.0,
+      "carbon": 0.0
+    },
+    "unknown_field_uncertainty": true,
+    "regulatory_admission": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "climateos-method-notes/1",
+  "integration": "PENDING_INTEGRATION",
+  "SOURCE_MASTER": {
+    "id": "A_CER",
+    "title": "CER Estimating emissions and energy from solid waste and landfill biogas management guideline",
+    "publisher": "Clean Energy Regulator",
+    "version": "July2026 / reporting2025–26",
+    "tier": "ADMINISTRATIVE_GUIDANCE",
+    "url": "https://cer.gov.au/document_page/estimating-emissions-and-energy-solid-waste-and-landfill-biogas-management-guideline",
+    "reading": "TARGETED_SECTIONS_WITH_LOCAL_BYTES",
+    "rights": "官网政府指南；本轮未完成逐附件全文再发布权利判定。仅外链/哈希/自有释义，不入库PDF。",
+    "receipts": [
+      {
+        "path": "../../source_receipts/A_CER_GUIDE.json",
+        "status": "ACQUIRED",
+        "sha256": "900b1a753b5abb29c49010902be6459b3729f32c9b370327ab127cdd76ae31ca",
+        "bytes": 1215733,
+        "cache_path": "runtime_data/au_landfill_methods/A_CER_GUIDE.pdf"
+      }
+    ]
+  },
+  "KNOWLEDGE_CORE": {
+    "definitions_and_mechanism": "按设施边界记录废物、集气、燃烧和能源。指南能解释报告流程，但封面发布时间不等于适用报告年。2026–27法律修订与本指南不一致的地方必须回FRL。",
+    "equations": [
+      {
+        "id": "A-collection-limit",
+        "locator": "p30 collection efficiency limit",
+        "expression": "(A3×.60+A4×.75+A5×.95)/(A2+A3+A4+A5)",
+        "variables": "A2/A3/A4/A5为指南定义各类覆盖面积，同一面积单位；无面积信息旧指南给75%",
+        "scope": "2025–26旧方法2指导；2026修订删除5.15A–C，禁止当前直接复用"
+      }
+    ],
+    "section_map": [
+      "p6 disclaimer",
+      "p7 2025–26 updates",
+      "pp12–13 facility configurations",
+      "pp22–27 waste classifications/diversion",
+      "pp27–30 DDOC/k/collection limits",
+      "pp31–33 biogas combustion and measurement",
+      "pp34–40 legacy waste, combustion and energy"
+    ],
+    "limitations": [
+      "不是法律；不作为2026–27方法2最新要求",
+      "方法1/2的收集限值不能因名称相似混用",
+      "未进行真实设施边界和审计资格判定"
+    ]
+  },
+  "SKILL_PROCEDURE": [
+    "先核设施与报告年；不要用封面年份代替报告年。",
+    "按p22–27记录进场、分流、实际填埋量和废物组成，避免转运算填埋。",
+    "将集气供燃烧、火炬、外送分开，并标明表计位置。",
+    "对照B现行条款；本轮不按旧指南计算当前报告。"
+  ],
+  "CASE_EVIDENCE": {
+    "evidence": "官方p27有received/diverted、p31有燃烧示例、p40有发电例；本包只定位不复制官方数字。自有例见crosswalk，不冒充这些原例。",
+    "grade": "OFFICIAL_DOCUMENT_OR_AUTHOR_SYNTHETIC_NOT_FIELD_VALIDATION"
+  },
+  "CONNECTIONS": {
+    "bridge": "PR143 E06/E07 → 废物史/回收边界；P1 → 表计状态换算。",
+    "parent_index": "../../README.md",
+    "crosswalk": "../../SECTION_AND_EQUATION_CROSSWALK.md"
+  },
+  "LEARNING_PATH_ZH": {
+    "core_question": "按设施边界记录废物、集气、燃烧和能源。指南能解释报告流程，但封面发布时间不等于适用报告年。2026–27法律修订与本指南不一致的地方必须回FRL。",
+    "exercises": [
+      {
+        "question": "为什么不能按2026封面认定服务2026–27？",
+        "reference_answer": "文件内部明确2025–26，版本要同时记录发布时间和报告年。"
+      },
+      {
+        "question": "进场垃圾全等于填埋量吗？",
+        "reference_answer": "不等；分流、转运等需分开并保存凭证。"
+      },
+      {
+        "question": "旧p30公式可直接替代现行方法2吗？",
+        "reference_answer": "不可；2026修订已删除相关5.15A–C。"
+      }
+    ]
+  },
+  "UPDATE_LEDGER": [
+    {
+      "date": "2026-11-09",
+      "action": "initial bounded extraction",
+      "understanding": "按设施边界记录废物、集气、燃烧和能源。指南能解释报告流程，但封面发布时间不等于适用报告年。2026–27法律修订与本指南不一致的地方必须回FRL。",
+      "future_append": "new version/locator, rights, raw receipt, interpretation change, affected equations, reviewer, no overwrite of historical record"
+    }
+  ]
+}

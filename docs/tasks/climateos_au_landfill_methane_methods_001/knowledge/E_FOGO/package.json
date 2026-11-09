@@ -1,0 +1,91 @@
+{
+  "schema_version": "climateos-method-notes/1",
+  "integration": "PENDING_INTEGRATION",
+  "SOURCE_MASTER": {
+    "id": "E_FOGO",
+    "title": "Emissions impacts of food waste recovery technologies: composting and landfill fact sheets",
+    "publisher": "NSW EPA",
+    "version": "March2024 P4523 and P4522; landing updated2024-09-06",
+    "tier": "SCENARIO_MODELLING_FACT_SHEETS",
+    "url": "https://www.epa.nsw.gov.au/Your-environment/Recycling-and-reuse/business-government-recycling/Food-organics-and-garden-organics/Emissions-impacts-of-food-waste-recovery-technologies",
+    "reading": "P4523_TARGETED_WEB_TEXT_P4522_LIMITED_RAW_BLOCKED",
+    "rights": "网页公开不等于全部数据自由再发布；只保留外链和自有笔记。",
+    "receipts": [
+      {
+        "path": "../../source_receipts/E_COMPOST.json",
+        "status": "BLOCKED",
+        "sha256": "UNKNOWN",
+        "bytes": null,
+        "cache_path": null
+      },
+      {
+        "path": "../../source_receipts/E_LANDFILL.json",
+        "status": "BLOCKED",
+        "sha256": "UNKNOWN",
+        "bytes": null,
+        "cache_path": null
+      }
+    ]
+  },
+  "KNOWLEDGE_CORE": {
+    "definitions_and_mechanism": "96%来自特定食物废物净温室气体情景比较；包括收运/处理和堆肥应用碳抵扣，不能当甲烷捕集或毁灭效率。图2对比200km堆肥与平均/高回收填埋和不同收运。",
+    "equations": [
+      {
+        "id": "E-scenario",
+        "locator": "P4523 p3 Fig2 caption",
+        "expression": "relative reduction =1−scenario_net_GHG/baseline_net_GHG (author interpretation of 25-fold statement)",
+        "variables": "common functional unit:kgCO2-e/t food recovered;not kgCH4",
+        "scope": "scenario boundary only; not universal .96 emission factor"
+      }
+    ],
+    "section_map": [
+      "P4523 pp1–3 introduction/Fig1/Fig2",
+      "P4522 landfill comparison metadata; no new numeric extraction"
+    ],
+    "limitations": [
+      "原PDF直接403，只有web文本；原始模型/数据未取得",
+      "P4522只登记和定位，不声称完整精读",
+      "不同废物/工艺/气候不能外推96%"
+    ]
+  },
+  "SKILL_PROCEDURE": [
+    "先核功能单位、食物废物与运输路线。",
+    "分别列过程排放、能源和应用抵扣，不借用为物理CH4通量。",
+    "查原Blue Environment2023模型的假设/不确定性（本轮尚未取得）。",
+    "作为未来有机物模块的研究线索，不在填埋账填96%。"
+  ],
+  "CASE_EVIDENCE": {
+    "evidence": "Fact sheet Fig2为模型案例，非现场试验；不计算本项目真实减排。",
+    "grade": "OFFICIAL_DOCUMENT_OR_AUTHOR_SYNTHETIC_NOT_FIELD_VALIDATION"
+  },
+  "CONNECTIONS": {
+    "bridge": "未来堆肥/FOGO与碳边界；不接E07 DRE。",
+    "parent_index": "../../README.md",
+    "crosswalk": "../../SECTION_AND_EQUATION_CROSSWALK.md"
+  },
+  "LEARNING_PATH_ZH": {
+    "core_question": "96%来自特定食物废物净温室气体情景比较；包括收运/处理和堆肥应用碳抵扣，不能当甲烷捕集或毁灭效率。图2对比200km堆肥与平均/高回收填埋和不同收运。",
+    "exercises": [
+      {
+        "question": "96%能否填DRE字段？",
+        "reference_answer": "不能；相对情景净GHG与装置CH4毁灭率不是同一量。"
+      },
+      {
+        "question": "为什么运输距离重要？",
+        "reference_answer": "它在模型边界内贡献排放并影响情景可比性。"
+      },
+      {
+        "question": "现场管理不好会怎样？",
+        "reference_answer": "可能产生CH4/N2O；该事实表的情景结论不能替代现场观测。"
+      }
+    ]
+  },
+  "UPDATE_LEDGER": [
+    {
+      "date": "2026-11-09",
+      "action": "initial bounded extraction",
+      "understanding": "96%来自特定食物废物净温室气体情景比较；包括收运/处理和堆肥应用碳抵扣，不能当甲烷捕集或毁灭效率。图2对比200km堆肥与平均/高回收填埋和不同收运。",
+      "future_append": "new version/locator, rights, raw receipt, interpretation change, affected equations, reviewer, no overwrite of historical record"
+    }
+  ]
+}

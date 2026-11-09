@@ -1,0 +1,75 @@
+{
+  "schema_version": "climateos-method-notes/1",
+  "integration": "PENDING_INTEGRATION",
+  "SOURCE_MASTER": {
+    "id": "F_ORGANICS",
+    "title": "Environmental Guidelines: Composting and Related Organics Processing Facilities; 2026 consultation status",
+    "publisher": "NSW EPA / former DEC",
+    "version": "2004 file040061; Aug–Oct2026 consultation closed, final replacement unconfirmed",
+    "tier": "GUIDELINE_AND_CONSULTATION_METADATA",
+    "url": "https://www.epa.nsw.gov.au/Your-environment/Waste/waste-facilities/organics-processing-facilities",
+    "reading": "METADATA_ONLY_BODY_BLOCKED",
+    "rights": "许可未核实；不重发布全文。",
+    "receipts": [
+      {
+        "path": "../../source_receipts/F_ORGANICS.json",
+        "status": "BLOCKED",
+        "sha256": "UNKNOWN",
+        "bytes": null,
+        "cache_path": null
+      }
+    ]
+  },
+  "KNOWLEDGE_CORE": {
+    "definitions_and_mechanism": "现有官方页面同时列2004指南与2026新指南咨询。咨询结束不能视为新规则已生效。由于原件受阻，本主题仅版本、活动类型与缺口登记，不能从搜索摘要制造详细条款。",
+    "equations": [],
+    "section_map": [
+      "official landing: consultation notice and2004 guideline link",
+      "2004 body NOT_ACQUIRED; section-level requirements UNKNOWN"
+    ],
+    "limitations": [
+      "2004全文403，条款/公式UNKNOWN",
+      "2026草案与最终采纳差异未核实",
+      "不把本元数据包视为完整方法精读完成"
+    ]
+  },
+  "SKILL_PROCEDURE": [
+    "查正式最终文件/版本而非仅咨询标题。",
+    "本轮403后停止全文获取；不从其他非官方镜像绕过。",
+    "后续有合法原件才登记具体章节、工程要求和公式。"
+  ],
+  "CASE_EVIDENCE": {
+    "evidence": "NO_VERIFIED_CASE；本轮不研究堆肥实际项目。",
+    "grade": "OFFICIAL_DOCUMENT_OR_AUTHOR_SYNTHETIC_NOT_FIELD_VALIDATION"
+  },
+  "CONNECTIONS": {
+    "bridge": "堆肥/厌氧消化FUTURE_SCOPE；不新建计算模块。",
+    "parent_index": "../../README.md",
+    "crosswalk": "../../SECTION_AND_EQUATION_CROSSWALK.md"
+  },
+  "LEARNING_PATH_ZH": {
+    "core_question": "现有官方页面同时列2004指南与2026新指南咨询。咨询结束不能视为新规则已生效。由于原件受阻，本主题仅版本、活动类型与缺口登记，不能从搜索摘要制造详细条款。",
+    "exercises": [
+      {
+        "question": "咨询关闭能否当正式生效？",
+        "reference_answer": "不能。须最终发布/法律层级证据。"
+      },
+      {
+        "question": "未读全文可否列确切工程限值？",
+        "reference_answer": "不可，保留UNKNOWN。"
+      },
+      {
+        "question": "403后是否换认证或不停重试？",
+        "reference_answer": "不；记录失败并停止该原件获取。"
+      }
+    ]
+  },
+  "UPDATE_LEDGER": [
+    {
+      "date": "2026-11-09",
+      "action": "initial bounded extraction",
+      "understanding": "现有官方页面同时列2004指南与2026新指南咨询。咨询结束不能视为新规则已生效。由于原件受阻，本主题仅版本、活动类型与缺口登记，不能从搜索摘要制造详细条款。",
+      "future_append": "new version/locator, rights, raw receipt, interpretation change, affected equations, reviewer, no overwrite of historical record"
+    }
+  ]
+}

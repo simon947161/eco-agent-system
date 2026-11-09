@@ -1,0 +1,24 @@
+{
+  "schema_version": "methane-handoff/1",
+  "task_id": "CLIMATEOS-AU-LANDFILL-METHANE-METHODS-001",
+  "status": "LOCAL_VERIFIED_REVIEW_READY_WITH_GAPS",
+  "scientific_gates": {
+    "D3": "DATA_NOT_READY",
+    "P1-A": "PENDING",
+    "PR140": "NO_VALID_PAIR",
+    "PR141": "NO_VALID_VERTICAL_PROFILE",
+    "PR143_ChainB": "BLOCKED",
+    "Stage3": "METHOD_READY_NOT_VALIDATED"
+  },
+  "deployed": false,
+  "reviewed_head_sha": null,
+  "source_pr": null,
+  "working_head_sha": null,
+  "review_target_content_sha": null,
+  "delivery_head_anchor": "new Draft PR final review-request comment",
+  "scientific_baseline_sha": "746825e65b8ddbd0f518709c94d9476df107208b",
+  "github_delivery_state": "PREPARED",
+  "response_delivery_state": "NOT_SENT_TO_CHATGPT",
+  "integration": "PENDING_INTEGRATION",
+  "next_action": "Founder sends final exact D review-request comment to ChatGPT; reviewer reads D tree and R..D metadata-only diff. No expanded experiments."
+}

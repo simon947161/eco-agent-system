@@ -1,0 +1,72 @@
+{
+  "checked_date": "2026-11-09",
+  "kind": "AUTHOR_OBSERVATION_LOG_NOT_RAW_BYTES",
+  "publisher_byte_sha": "UNKNOWN_FOR_WEB_ONLY_ITEMS",
+  "observations": [
+    {
+      "source": "NGER-current",
+      "url": "https://www.legislation.gov.au/F2008L02309/latest/details",
+      "observed": "In force; C21 F2026C00720 compilation 1July2026; raw immutable HTML acquired separately"
+    },
+    {
+      "source": "NGER-amendment",
+      "url": "https://www.legislation.gov.au/F2026L00855/asmade",
+      "observed": "No longer in force; displayed period29June–16September2026; amendment effect checked in current principal; body and ES acquired"
+    },
+    {
+      "source": "ACCU-current",
+      "url": "https://www.legislation.gov.au/F2025L01430/asmade",
+      "observed": "In force; latest F2025L01430 registered28November2025; immutable PDF and ES acquired"
+    },
+    {
+      "source": "NSW-D",
+      "url": "https://www.epa.nsw.gov.au/sites/default/files/solid-waste-landfill-guidelines-160259.pdf",
+      "observed": "Prior web text accessible targeted sections; direct file request403 and no bytes retained; no further download attempt"
+    },
+    {
+      "source": "NSW-E-compost",
+      "url": "https://www.epa.nsw.gov.au/sites/default/files/24p4523-emissions-impacts-of-composting-food-waste.pdf",
+      "observed": "Web parsed text reviewed before direct403; existing web text subsequently reread during note preparation; not a successful raw reacquisition; no new raw bytes/no authentication bypass"
+    },
+    {
+      "source": "NSW-F",
+      "url": "https://www.epa.nsw.gov.au/Your-environment/Waste/waste-facilities/organics-processing-facilities",
+      "observed": "2004 guideline link and2026Aug–Oct consultation closed; final adoption not established;2004body direct403"
+    },
+    {
+      "candidate": "Lakes Creek Rockhampton",
+      "url": "https://www.rockhamptonregion.qld.gov.au/CommunityEvents/Environmental-Sustainability/Transitioning-towards-net-zero/Reducing-emissions",
+      "observed": "Official page text lists landfill gas flaring associated with Lakes Creek; no raw scientific time series obtained",
+      "status": "DATA_NOT_READY"
+    },
+    {
+      "candidate": "Woodlawn",
+      "url": "https://www.hornsby.nsw.gov.au/Property/Waste-and-recycling/Your-weekly-collection/What-happens-to-my-waste",
+      "observed": "Official search metadata only; page fetch403; stopped",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate": "Woodlawn",
+      "url": "https://www.willoughby.nsw.gov.au/Residents/Waste-and-recycling/Household-bin-services/General-waste-bin",
+      "observed": "Official search metadata only; page fetch403; stopped",
+      "status": "BLOCKED"
+    }
+  ],
+  "pr143_latest_discussion": {
+    "url": "https://github.com/simon947161/eco-agent-system/pull/143#issuecomment-6735029626",
+    "observation": "author final handoff only; no new ChatGPT review receipt in current timeline"
+  },
+  "visual_checks": [
+    {
+      "id": "C_ACCU",
+      "pages_pdf_1based": [
+        38,
+        39,
+        42,
+        45,
+        46
+      ],
+      "scope": "Eq10/11/15/17/18 and device variables; Poppler rendered locally; not redistributed"
+    }
+  ]
+}

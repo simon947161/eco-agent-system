@@ -1,0 +1,254 @@
+{
+  "uncaptured": {
+    "mode": "SYNTHETIC_METHOD_TEST",
+    "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+    "gas": "CH4",
+    "phase": "total_CH4_gas_plus_dissolved",
+    "unit": "kg_CH4/interval",
+    "interval": "SYNTHETIC_DAY_001",
+    "source_id": "SYNTHETIC_TASKBOOK_LEDGER",
+    "licence": "AUTHOR_SYNTHETIC_CC0",
+    "calibration": "SYNTHETIC_NOT_FIELD",
+    "uncertainty": "EXACT_ARITHMETIC_FIXTURE_NOT_FIELD_UNCERTAINTY",
+    "flows": {
+      "stock_start": {
+        "value": 10,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "generated": {
+        "value": 100,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "inflow": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "stock_end": {
+        "value": 15,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "collected": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "cover_in": {
+        "value": 95,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "lateral_out": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "pipe_leak": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "pipe_stock_change": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "device_in": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "device_slip": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "destroyed": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "oxidized": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "surface": {
+        "value": 95,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      }
+    }
+  },
+  "capture_flare": {
+    "mode": "SYNTHETIC_METHOD_TEST",
+    "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+    "gas": "CH4",
+    "phase": "total_CH4_gas_plus_dissolved",
+    "unit": "kg_CH4/interval",
+    "interval": "SYNTHETIC_DAY_001",
+    "source_id": "SYNTHETIC_TASKBOOK_LEDGER",
+    "licence": "AUTHOR_SYNTHETIC_CC0",
+    "calibration": "SYNTHETIC_NOT_FIELD",
+    "uncertainty": "EXACT_ARITHMETIC_FIXTURE_NOT_FIELD_UNCERTAINTY",
+    "flows": {
+      "stock_start": {
+        "value": 10,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "generated": {
+        "value": 100,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "inflow": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "stock_end": {
+        "value": 15,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "collected": {
+        "value": 60,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "cover_in": {
+        "value": 35,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "lateral_out": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "pipe_leak": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "pipe_stock_change": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "device_in": {
+        "value": 60,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "device_slip": {
+        "value": 1.2,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "destroyed": {
+        "value": 58.8,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "oxidized": {
+        "value": 3.5,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "surface": {
+        "value": 31.5,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      }
+    }
+  },
+  "oxidation_leaks": {
+    "mode": "SYNTHETIC_METHOD_TEST",
+    "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+    "gas": "CH4",
+    "phase": "total_CH4_gas_plus_dissolved",
+    "unit": "kg_CH4/interval",
+    "interval": "SYNTHETIC_DAY_001",
+    "source_id": "SYNTHETIC_TASKBOOK_LEDGER",
+    "licence": "AUTHOR_SYNTHETIC_CC0",
+    "calibration": "SYNTHETIC_NOT_FIELD",
+    "uncertainty": "EXACT_ARITHMETIC_FIXTURE_NOT_FIELD_UNCERTAINTY",
+    "flows": {
+      "stock_start": {
+        "value": 10,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "generated": {
+        "value": 100,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "inflow": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "stock_end": {
+        "value": 15,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "collected": {
+        "value": 60,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "cover_in": {
+        "value": 30,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "lateral_out": {
+        "value": 5,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "pipe_leak": {
+        "value": 6,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "pipe_stock_change": {
+        "value": 0,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "device_in": {
+        "value": 54,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "device_slip": {
+        "value": 1.08,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "destroyed": {
+        "value": 52.92,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "oxidized": {
+        "value": 6,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      },
+      "surface": {
+        "value": 24,
+        "unit": "kg_CH4/interval",
+        "interval": "SYNTHETIC_DAY_001"
+      }
+    }
+  }
+}

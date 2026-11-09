@@ -1,0 +1,62 @@
+{
+  "status": "LOCAL_VERIFIED_WITH_SOURCE_GAPS",
+  "files_hashed": 61,
+  "local_links": 141,
+  "knowledge_sources": 8,
+  "knowledge_exercises": 24,
+  "raw_sources": [
+    {
+      "id": "B_AMENDMENT",
+      "status": "RAW_BYTES_MATCH"
+    },
+    {
+      "id": "B_ES",
+      "status": "RAW_BYTES_MATCH"
+    },
+    {
+      "id": "C_ES",
+      "status": "RAW_BYTES_MATCH"
+    },
+    {
+      "id": "A_CER_GUIDE",
+      "status": "RAW_BYTES_MATCH"
+    },
+    {
+      "id": "B_NGER",
+      "status": "RAW_BYTES_MATCH"
+    },
+    {
+      "id": "C_ACCU",
+      "status": "RAW_BYTES_MATCH"
+    },
+    {
+      "id": "D_NSW",
+      "status": "BLOCKED_NO_HASH"
+    },
+    {
+      "id": "E_COMPOST",
+      "status": "BLOCKED_NO_HASH"
+    },
+    {
+      "id": "E_LANDFILL",
+      "status": "BLOCKED_NO_HASH"
+    },
+    {
+      "id": "F_ORGANICS",
+      "status": "BLOCKED_NO_HASH"
+    },
+    {
+      "id": "G_IPCC2006",
+      "status": "RAW_BYTES_MATCH"
+    },
+    {
+      "id": "H_IPCC2019",
+      "status": "RAW_BYTES_MATCH"
+    }
+  ],
+  "frozen_taskbook_blob": "25b2b93a09176c829773cc9022d0f6ef118fa8aa",
+  "diff_scope": "ONLY_NEW_TASK_DIRECTORY",
+  "narrow_secret_signatures": 0,
+  "scientific_admission": "PENDING",
+  "raw_redistribution": false
+}
