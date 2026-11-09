@@ -1,0 +1,144 @@
+{
+  "schema": "sha256-manifest/1",
+  "hash_basis": "repository text CRLF normalized to LF; no new raw observations",
+  "excluded": [
+    "self",
+    "HANDOFF_STATUS.json and REVIEW_REQUEST.json delivery metadata pinned by PR comment",
+    "package-check.txt verifier output",
+    "bytecode"
+  ],
+  "files": [
+    {
+      "path": "cczps_lite/integration/client_ai_evidence.py",
+      "sha256": "893b0afdd9f0493a1b7d3c8f05fdeb30567c7aa1c958ad6cb9fee93faac53569"
+    },
+    {
+      "path": "cczps_lite/integration/ecoengine_v192b_adapter.py",
+      "sha256": "8699ce25dfb0965d68c8fc18713ea0044e656d4de05e24a08527eaa569902355"
+    },
+    {
+      "path": "cczps_lite/integration/methane_knowledge_engine.py",
+      "sha256": "1476ada58ecc728b3e4a86778c887a7319fddeeb389ccdadbfdd01d5fd683e06"
+    },
+    {
+      "path": "cczps_lite/integration/physics_validation.py",
+      "sha256": "eb06dc74802a53ffbdc24dcdae4e3fab4a50bdfc499e9ff78d96198031a064c5"
+    },
+    {
+      "path": "cczps_lite/qgis_local_spatial_foundation/hydrology_contract.py",
+      "sha256": "cd09280c0f0bb983915a2c367c15b529703f381593dfe99d4abb293cf527ed48"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/CRP_HANDOFF.md",
+      "sha256": "5742ba8dd39211d9b757f7b7dbb0b6b50796c692123451942866e578089ae2d1"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/EQUATION_REGISTRY.json",
+      "sha256": "2ec907e5da6c5a150df7dc93a22d35ad48ac4f4925d3234006051d250e0f3dfe"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/evidence/baseline.json",
+      "sha256": "cb5eb6ce58d810206f2311615de37c4a53d52e538b010b46c66db0a509c3a7a2"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/evidence/chain-a.json",
+      "sha256": "97186aae1f797f1ca8381c7808c9f551253611a0caf9e58102556bc2113979ce"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/evidence/graph-diagnostics.json",
+      "sha256": "dc64b999bed69697f5a95fb7aaf5ea2cc2bd1582fc8e24ba14911aabdcb434d2"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/evidence/research-ranking.json",
+      "sha256": "a4e1e8780ed9faa0980f261c8e4ff2752d926088f967a2490c40c3631e1b6cc1"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/evidence/routes.json",
+      "sha256": "9d0f78aaf176585c2c5b37d7136490e24f71812bb00204e5a4b18ec2ce37f8a3"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/evidence/runtime.json",
+      "sha256": "add264f7966148a12c1edee592b11461a745403dce45cdff5d941e882457e001"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/evidence/stdout.txt",
+      "sha256": "1d56ca9a001d91fe0757cb0e354c61dbdc019c0752ef38a420504f2e20c4cbc7"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/evidence/tests.txt",
+      "sha256": "f4a2e85c46fb350d425d5567cf595474955aea2ffb1788070f29ab7ed75d8993"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/EVIDENCE_AND_TESTS.md",
+      "sha256": "92be6c1362311ac1168fc3481f5cf115927d5d1e5390bc34857d8d75ecab2855"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/EXECUTABLE_CHAIN_RESULTS.md",
+      "sha256": "eb41889a9405f02bfe609d978ecfd6c9c2d1f83c70936a07f14436152e6cbc7c"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/FACTOR_PRIORITY_AND_CAUSAL_ORDER.md",
+      "sha256": "32b17a877df03c1c7ae7e542272d35dcc7ed51bbd236df795f7a1f6671458902"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/FACTOR_UNIVERSE.md",
+      "sha256": "f0bcf08d9c792e56b23c80953818b805dab159709bfaca5473b1ae2fb91a6011"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/FOUNDER_REPORT_ZH.md",
+      "sha256": "ca0eaa4433645758c15f385138207a9f30b665e516d22b50b2bb26ca0cc4b713"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/input.json",
+      "sha256": "ada69d98fe1027302b4697b18329e1bb9e7d505b65b932a317ae809e448d3e63"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/MECHANISM_GRAPH.json",
+      "sha256": "854a6f5f6103088622fed2d016c9a8530ca4013b5518d21d36574f7b27423a59"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/MECHANISM_MAP.md",
+      "sha256": "36a639455ecad9214a2e8a08d744423ad79a592c256db3ff659767608f755905"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/MODEL_ROUTER_CONTRACT.md",
+      "sha256": "6957eed3dd1e5f9c7551b21a4fb174ee73af03a38087841b39390bfeae8fa3b4"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/NEXT_SESSION.md",
+      "sha256": "e7c1f524198f18f0ef256f9253a51b76d3d94a85c35f2b4109c4c5a962e89c6f"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/README.md",
+      "sha256": "0226fabf1ef3be239c96e07e106bb35973736ec904452f749c1306052e5ef3ca"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/run_chain.py",
+      "sha256": "f8ad186b69fa0a87b3491723b62dcfdd9479d1f41b7b0cce23ee4a8d35a1993e"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/SCIENCE_FOUNDATION_REALITY.md",
+      "sha256": "e8883972ecfc3671bbef433457d07e8c556976756dd7cc99d9ce5ff07e5c0889"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/SOURCE_REGISTER.md",
+      "sha256": "49d485a727363b3d719b5129fd8cc782cc41f8ba6b59fcef06ceb8d163abfd20"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/sources.json",
+      "sha256": "2b132e4fb0303f4ef0132c04a92cef3e5922f4227d39a7d35d293c40f968f0d4"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/TASKBOOK_ZH.md",
+      "sha256": "5a8ecdd41a502fa66e946558093b8b0e18c4c3c2cf650b5c96bfdad5e23f51da"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_physics_knowledge_engine_001/verify_package.py",
+      "sha256": "8356a089a244622ab5ef270793245e935f8558721b4fbea75ef4b41c2aab9fcf"
+    },
+    {
+      "path": "tests/test_methane_knowledge_engine.py",
+      "sha256": "5b1a16e6a98a51b3dcf88de25fd28a7e153c6e7f7891dbb373f69f3f022fdbf3"
+    }
+  ]
+}

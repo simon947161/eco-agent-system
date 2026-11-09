@@ -1,0 +1,71 @@
+{
+  "schema_version": "methane-handoff/1",
+  "source_pr": null,
+  "scientific_baseline_sha": "3576fef07dcc797794f0adbef9b5be1e3e0991e6",
+  "taskbook_sha": "a33ed49ef2e7710e76cbf5f67b83c41d955a4afe",
+  "taskbook_sha_kind": "git_blob",
+  "taskbook_commit_sha": "7746b51d1fe5cc23ac071d6e44c0fd6017e76078",
+  "working_head_sha": null,
+  "working_head_semantics": "content snapshot R; delivery D pinned externally in final PR comment per PR142 protocol",
+  "reviewed_head_sha": null,
+  "review_receipt_commit_sha": null,
+  "status": "PREPARING",
+  "stage": "SYNTHETIC_REFERENCE_KNOWLEDGE_ENGINE",
+  "evidence_uri": "docs/tasks/climateos_methane_physics_knowledge_engine_001/README.md",
+  "blockers": [
+    "Chain B composition/time/boundary bridge incomplete",
+    "OH/transport/global response sources and parameters incomplete",
+    "independent scientific review pending"
+  ],
+  "owner": "Founder",
+  "next_action": "pin R then D and publish one exact-HEAD read-only review request",
+  "authorized_scope": [
+    "bounded literature and code audit",
+    "synthetic analytical P1 chain",
+    "local sensitivity and uncertainty checks",
+    "Draft PR"
+  ],
+  "no_run_flags": [
+    "NO_REAL_EMISSIONS",
+    "NO_NEW_FIELD_INVERSION",
+    "NO_CLIMATE_SIMULATION",
+    "NO_PRIVATE_DATA",
+    "NO_DEPLOY",
+    "NO_MERGE",
+    "NO_SCIENCE_PROMOTION"
+  ],
+  "review_actor": "ChatGPT independent read-only reviewer; not yet acknowledged",
+  "response_delivery_state": "NOT_SENT_TO_CHATGPT",
+  "scientific_gates": {
+    "D3": "DATA_NOT_READY",
+    "P1-A": "PENDING",
+    "PR140": "NO_VALID_PAIR",
+    "PR141": "NO_VALID_VERTICAL_PROFILE",
+    "Stage3": "METHOD_READY_NOT_VALIDATED"
+  },
+  "entry_files": [
+    "README.md",
+    "FOUNDER_REPORT_ZH.md",
+    "EQUATION_REGISTRY.json",
+    "MECHANISM_GRAPH.json",
+    "SOURCE_REGISTER.md",
+    "evidence/chain-a.json",
+    "EVIDENCE_AND_TESTS.md"
+  ],
+  "review_questions": [
+    "Independently hand-check dry/wet conversion, reference volume, mass residual and covariance propagation.",
+    "Do formula nodes respect physical medium, dimensions, timescale and source reading levels?",
+    "Do causal graph edges distinguish conditional mechanism, feedback and unsupported inference?",
+    "Are research-weight rankings distinct from parameter sensitivity and real intervention rankings?",
+    "Does the executor reject missing provenance, unauthorized models, unknown variables and graph cycles?",
+    "Does chain B stop at real composition/time/boundary gaps rather than force a coupling?",
+    "Are historical science gates and R/D handoff claims preserved?"
+  ],
+  "test_scope": "30 targeted local tests; no new field/transport/climate simulations",
+  "not_independently_verified": [
+    "field models or observations",
+    "OH rate and current AR6 errata",
+    "customer adoption",
+    "external scholarly reviewer reproduction"
+  ]
+}

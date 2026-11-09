@@ -1,0 +1,35 @@
+test_analytic_jacobian_finite_difference (tests.test_methane_knowledge_engine.KnowledgeTests.test_analytic_jacobian_finite_difference) ... ok
+test_chain_independent_arithmetic (tests.test_methane_knowledge_engine.KnowledgeTests.test_chain_independent_arithmetic) ... ok
+test_conservation_fault_detected (tests.test_methane_knowledge_engine.KnowledgeTests.test_conservation_fault_detected) ... ok
+test_covariance_guard (tests.test_methane_knowledge_engine.KnowledgeTests.test_covariance_guard) ... ok
+test_graph_missing_cycle_and_permission (tests.test_methane_knowledge_engine.KnowledgeTests.test_graph_missing_cycle_and_permission) ... ok
+test_invalid_numbers_ranges (tests.test_methane_knowledge_engine.KnowledgeTests.test_invalid_numbers_ranges) ... ok
+test_missing_required_and_unknown (tests.test_methane_knowledge_engine.KnowledgeTests.test_missing_required_and_unknown) ... ok
+test_question_routes (tests.test_methane_knowledge_engine.KnowledgeTests.test_question_routes) ... ok
+test_support_provenance_and_model (tests.test_methane_knowledge_engine.KnowledgeTests.test_support_provenance_and_model) ... ok
+test_units_gases_phase (tests.test_methane_knowledge_engine.KnowledgeTests.test_units_gases_phase) ... ok
+test_zero_and_dry_limits (tests.test_methane_knowledge_engine.KnowledgeTests.test_zero_and_dry_limits) ... ok
+test_invalid_gas_inputs (tests.test_physics_validation.GasTests.test_invalid_gas_inputs) ... ok
+test_inverse_dry_wet_and_concentration (tests.test_physics_validation.GasTests.test_inverse_dry_wet_and_concentration) ... ok
+test_mixing_ratio_invariant (tests.test_physics_validation.GasTests.test_mixing_ratio_invariant) ... ok
+test_pr137_pinned_numbers (tests.test_physics_validation.GasTests.test_pr137_pinned_numbers) ... ok
+test_pressure_temperature_scaling (tests.test_physics_validation.GasTests.test_pressure_temperature_scaling) ... ok
+test_reference_volume_preserves_dry_ch4_mass (tests.test_physics_validation.GasTests.test_reference_volume_preserves_dry_ch4_mass) ... ok
+test_water_partial_pressure_oracle (tests.test_physics_validation.GasTests.test_water_partial_pressure_oracle) ... ok
+test_zero_limits (tests.test_physics_validation.GasTests.test_zero_limits) ... ok
+test_inference_and_prompt_injection (tests.test_client_ai_evidence.ClientEvidenceTests.test_inference_and_prompt_injection) ... ok
+test_invalid_root_types (tests.test_client_ai_evidence.ClientEvidenceTests.test_invalid_root_types) ... ok
+test_malicious_files_and_paths (tests.test_client_ai_evidence.ClientEvidenceTests.test_malicious_files_and_paths) ... ok
+test_missing_fields_and_unknown_fields (tests.test_client_ai_evidence.ClientEvidenceTests.test_missing_fields_and_unknown_fields) ... ok
+test_missing_licence_at_inner_contract (tests.test_client_ai_evidence.ClientEvidenceTests.test_missing_licence_at_inner_contract) ... ok
+test_model_approval_and_tenant_simulation (tests.test_client_ai_evidence.ClientEvidenceTests.test_model_approval_and_tenant_simulation) ... ok
+test_real_end_to_end_and_independent_oracles (tests.test_client_ai_evidence.ClientEvidenceTests.test_real_end_to_end_and_independent_oracles) ... ok
+test_receipt_checkout_newlines_only (tests.test_client_ai_evidence.ClientEvidenceTests.test_receipt_checkout_newlines_only) ... ok
+test_tampering_including_receipt (tests.test_client_ai_evidence.ClientEvidenceTests.test_tampering_including_receipt) ... ok
+test_time_space (tests.test_client_ai_evidence.ClientEvidenceTests.test_time_space) ... ok
+test_units_phases_and_bases (tests.test_client_ai_evidence.ClientEvidenceTests.test_units_phases_and_bases) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.032s
+
+OK

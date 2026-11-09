@@ -1,0 +1,16 @@
+# 科学基础实际核验
+
+任务书提交7746b51d1fe5cc23ac071d6e44c0fd6017e76078，blob a33ed49ef2e7710e76cbf5f67b83c41d955a4afe；其父基线PR142为3576fef07dcc797794f0adbef9b5be1e3e0991e6。新分支相对基线仅新增任务书，未发现冻结HEAD差异。远程快照见evidence/baseline.json；PR142最新可见评论是交接请求6729366136，没有收到独立ChatGPT回执。
+
+|对象与版本|读到的源码/证据|真实资格、复用和限制|
+|---|---|---|
+|PR138 f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc|cczps_lite/integration/physics_validation.py；physics_validation_001/sources.json、README、tests/test_physics_validation.py|P1理想气体；P2纯甲烷容器/单向阀；P3合成FOD；P4未校准温湿假设。本轮仅复用P1，8项既有GasTests重跑；P2–P4不重跑。IMPLEMENTED_SYNTHETIC_TESTED。|
+|PR139 fc450196d01c9add5edf51f599072b18e6658196|local_case_method_intake_001/README及既有QA|23水相mg/L记录，流量1705行/311时间戳，REAL_DATA_STRUCTURAL_QC；不能当空气ppm，未重下原ZIP。|
+|PR140 16f0b59dab966f0b66d91b7c28135e8fce9e4cc1|methane_factor_order_001/README、SCIENTIFIC_REVIEW_RECEIPT|3340结构匹配，科学配对0；NO_VALID_PAIR，非3340条坏观测；有条件研究接受不等于数值准入。|
+|PR141 e25ffe3e34829d9146628a7c72a363c35d8ec151|spatial_ghg_hypothesis_validation_001/SCIENTIFIC_REVIEW_RECEIPT|2137 L2/5457气象结构记录；NO_VALID_VERTICAL_PROFILE；Stage3 METHOD_READY_NOT_VALIDATED，未验证高度气候效应。|
+|PR142 3576fef07dcc797794f0adbef9b5be1e3e0991e6|client_ai_evidence.py；client_ai_science_integration_001矩阵、输入、QA|仅三日NOAA固定问题描述统计；不是通用Client AI。11项回归本轮通过；代码未改。|
+|EcoEngine / CCZPS|ecoengine_v192b_adapter.py 实际本地JSON桥；继承PR142外部代码哈希审计|不能把预测/模型当前值当官方历史观测；无新的采集/现场验证。当前任务没有启动外部EcoEngine模型。|
+|QGIS|qgis_local_spatial_foundation/hydrology_contract.py|GeofabricV3.3、EPSG4283→7855的契约代码；不提供甲烷通量或气候模型。未请求受限ArcGIS。|
+|知识/证据与任务索引|client_ai_science_integration_001/README、CAPABILITY_REALITY_MATRIX及Bondo台账指针|复用版本/来源/状态模式，不新建数据库；本目录README是新增任务索引。|
+
+所有旧源码由manifest固定并与父提交比较不变。上表后几项的详细运行证据沿用PR142归档，只声明本轮实际执行的30项测试；无外部采用证据。D3 DATA_NOT_READY、P1-A PENDING、PR140 NO_VALID_PAIR、PR141 NO_VALID_VERTICAL_PROFILE、Stage3 METHOD_READY_NOT_VALIDATED均保留；SCIENTIFICALLY_VALIDATED不授予任何新节点。

@@ -1,0 +1,45 @@
+{
+  "question": "给定条件下空气甲烷浓度多少",
+  "gas": "CH4",
+  "phase": "gas_dry_fraction_in_wet_air",
+  "mode": "SYNTHETIC_REFERENCE",
+  "source_id": "TASKBOOK_SYNTHETIC_A1",
+  "licence": "REPOSITORY_AUTHORED_SYNTHETIC",
+  "calibration": "NOT_APPLICABLE_SYNTHETIC",
+  "temporal_support": "instantaneous_same_parcel",
+  "spatial_support": "homogeneous_parcel_no_height_inference",
+  "model_id": "p1_chain/1",
+  "values": {
+    "x_ppm": 2.0,
+    "P": 80000.0,
+    "T": 293.15,
+    "e": 1000.0,
+    "V": 3.0,
+    "P_ref": 101325.0,
+    "T_ref": 273.15
+  },
+  "units": {
+    "x_ppm": "ppm_dry",
+    "P": "Pa",
+    "T": "K",
+    "e": "Pa",
+    "V": "m3_wet_actual",
+    "P_ref": "Pa",
+    "T_ref": "K"
+  },
+  "uncertainty": {
+    "std": {
+      "x_ppm": 0.02,
+      "P": 100.0,
+      "e": 50.0,
+      "T": 0.5
+    },
+    "rho_P_e": 0.3,
+    "assumption": "only_P_e_covariance;constants_exact;model_error_excluded"
+  },
+  "parameter_provenance": {
+    "inputs": "TASKBOOK_SYNTHETIC_A1",
+    "constants": "FROZEN_P1_PR138",
+    "uncertainty": "DECLARED_SYNTHETIC_SMALL_ERROR"
+  }
+}

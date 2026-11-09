@@ -1,0 +1,235 @@
+[
+  {
+    "question": "给定条件下空气甲烷浓度多少",
+    "result": {
+      "status": "SYNTHETIC_ONLY",
+      "execution_status": "IMPLEMENTED_SYNTHETIC_TESTED",
+      "classification": "SYNTHETIC_REFERENCE / ANALYTICAL_TEST",
+      "input": {
+        "question": "给定条件下空气甲烷浓度多少",
+        "gas": "CH4",
+        "phase": "gas_dry_fraction_in_wet_air",
+        "mode": "SYNTHETIC_REFERENCE",
+        "source_id": "TASKBOOK_SYNTHETIC_A1",
+        "licence": "REPOSITORY_AUTHORED_SYNTHETIC",
+        "calibration": "NOT_APPLICABLE_SYNTHETIC",
+        "temporal_support": "instantaneous_same_parcel",
+        "spatial_support": "homogeneous_parcel_no_height_inference",
+        "model_id": "p1_chain/1",
+        "values": {
+          "x_ppm": 2.0,
+          "P": 80000.0,
+          "T": 293.15,
+          "e": 1000.0,
+          "V": 3.0,
+          "P_ref": 101325.0,
+          "T_ref": 273.15
+        },
+        "units": {
+          "x_ppm": "ppm_dry",
+          "P": "Pa",
+          "T": "K",
+          "e": "Pa",
+          "V": "m3_wet_actual",
+          "P_ref": "Pa",
+          "T_ref": "K"
+        },
+        "uncertainty": {
+          "std": {
+            "x_ppm": 0.02,
+            "P": 100.0,
+            "e": 50.0,
+            "T": 0.5
+          },
+          "rho_P_e": 0.3,
+          "assumption": "only_P_e_covariance;constants_exact;model_error_excluded"
+        },
+        "parameter_provenance": {
+          "inputs": "TASKBOOK_SYNTHETIC_A1",
+          "constants": "FROZEN_P1_PR138",
+          "uncertainty": "DECLARED_SYNTHETIC_SMALL_ERROR"
+        }
+      },
+      "path": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "steps": [
+        {
+          "equation_id": "E01",
+          "formula": "x=x_ppm*1e-6; Pd=P-e; x_wet=x*Pd/P",
+          "source_id": [
+            "S00",
+            "S01",
+            "S02"
+          ],
+          "input_units": {
+            "x_ppm": "ppm_dry",
+            "P": "Pa",
+            "e": "Pa"
+          },
+          "output_units": {
+            "x": "mol/mol dry",
+            "Pd": "Pa",
+            "x_wet": "mol/mol wet"
+          }
+        },
+        {
+          "equation_id": "E02",
+          "formula": "c=x*(P-e)*M_CH4/(R*T)",
+          "source_id": [
+            "S00",
+            "S01"
+          ],
+          "input_units": {
+            "x": "mol/mol dry",
+            "P,e": "Pa",
+            "T": "K",
+            "M": "kg/mol",
+            "R": "J/(mol K)"
+          },
+          "output_units": {
+            "c": "kg/m3"
+          }
+        },
+        {
+          "equation_id": "E03",
+          "formula": "Vref=V*(P-e)/Pref*Tref/T",
+          "source_id": [
+            "S00",
+            "S01"
+          ],
+          "input_units": {
+            "V": "m3 actual wet",
+            "P,e,Pref": "Pa",
+            "T,Tref": "K"
+          },
+          "output_units": {
+            "Vref": "m3 dry at declared reference"
+          }
+        },
+        {
+          "equation_id": "E04",
+          "formula": "m=c*V=c_ref*Vref; general dM/dt=G+I-O-L",
+          "source_id": [
+            "S00"
+          ],
+          "input_units": {
+            "c": "kg/m3",
+            "V": "m3",
+            "G,I,O,L": "kg/s"
+          },
+          "output_units": {
+            "m": "kg",
+            "residual": "kg"
+          }
+        },
+        {
+          "equation_id": "E05",
+          "formula": "u_c^2=J Sigma J^T; J=(1e-6*(P-e)*M/RT,x*M/RT,-x*M/RT,-c/T) for (x_ppm,P,e,T)",
+          "source_id": [
+            "S00",
+            "S05"
+          ],
+          "input_units": {
+            "std": "same units as input",
+            "covariance": "input_i*input_j"
+          },
+          "output_units": {
+            "u_c": "kg/m3"
+          }
+        }
+      ],
+      "conversion": {
+        "ppm_to_mol_per_mol": 1e-06,
+        "x_dry": 2e-06,
+        "dry_pressure_Pa": 79000.0,
+        "kg_m3_to_mg_m3": 1000000.0,
+        "reference_water_pressure_Pa": 0.0,
+        "reference_basis": "explicitly dry"
+      },
+      "constants": {
+        "R_J_mol_K": 8.31446261815324,
+        "M_CH4_kg_mol": 0.016043
+      },
+      "output": {
+        "concentration_kg_m3": 1.039964673130383e-06,
+        "concentration_mg_m3": 1.039964673130383,
+        "x_wet_mol_mol": 1.975e-06,
+        "reference_dry_volume_m3": 2.1794305782679344,
+        "mass_actual_kg": 3.119894019391149e-06,
+        "mass_reference_kg": 3.1198940193911492e-06,
+        "mass_residual_kg": -4.235164736271502e-22
+      },
+      "uncertainty": {
+        "jacobian_per_declared_unit": {
+          "x_ppm": 5.199823365651915e-07,
+          "P": 1.3164109786460542e-11,
+          "e": -1.3164109786460542e-11,
+          "T": -3.5475513325273173e-09
+        },
+        "diagonal_variance_terms": {
+          "x_ppm": 1.0815265213591844e-16,
+          "P": 1.7329378646998623e-18,
+          "e": 4.3323446617496557e-19,
+          "T": 3.146280114229086e-18
+        },
+        "covariance_term": -5.198813594099587e-19,
+        "u_c_kg_m3": 1.0627569017494659e-08,
+        "scope": "first-order concentration only; assumed errors; no field confidence interval"
+      },
+      "sensitivity": {
+        "x_elasticity": 1,
+        "P_elasticity": 1.0126582278481013,
+        "e_elasticity": -0.012658227848101266,
+        "T_elasticity": -1
+      },
+      "explanation_zh": "同一份空气的体积会随温压变化，单位体积甲烷质量因而改变。换算成同一干气参考体积后，甲烷总质量守恒。这不是排放量或气候效应。",
+      "holds": [
+        "no real source rate",
+        "no climate coefficient",
+        "synthetic uncertainties only",
+        "scientific admission unchanged"
+      ]
+    }
+  },
+  {
+    "question": "填埋场释放多少",
+    "result": {
+      "status": "BLOCKED",
+      "route": "landfill",
+      "missing": [
+        "waste history and DOC",
+        "site k and oxidation/capture",
+        "flow and boundary validation"
+      ],
+      "numerical_output": null
+    }
+  },
+  {
+    "question": "同吨数不同高度气候效应是否一样",
+    "result": {
+      "status": "BLOCKED",
+      "route": "altitude",
+      "missing": [
+        "gas-specific counterfactual and metric/horizon",
+        "transport chemistry and response validation"
+      ],
+      "numerical_output": null
+    }
+  },
+  {
+    "question": "现有观测可否直接用于计算",
+    "result": {
+      "status": "STRUCTURAL_QC_ONLY",
+      "route": "observations",
+      "missing": [
+        "PR140/141 global metadata and calibration gates remain open"
+      ],
+      "numerical_output": null
+    }
+  }
+]

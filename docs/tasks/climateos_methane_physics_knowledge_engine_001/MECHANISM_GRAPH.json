@@ -1,0 +1,1750 @@
+{
+  "schema_version": "methane-graph/1",
+  "factors": [
+    {
+      "factor_id": "F_A01",
+      "name": "substrate_DOC",
+      "role": "INPUT",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A02",
+      "name": "waste_history",
+      "role": "INPUT",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A03",
+      "name": "anaerobic_redox",
+      "role": "STATE",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A04",
+      "name": "process_temperature",
+      "role": "STATE",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A05",
+      "name": "moisture",
+      "role": "STATE",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A06",
+      "name": "pH",
+      "role": "STATE",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A07",
+      "name": "nutrients",
+      "role": "PARAMETER",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A08",
+      "name": "microbial_community",
+      "role": "STATE",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A09",
+      "name": "residence_time",
+      "role": "PARAMETER",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A10",
+      "name": "treatment_process",
+      "role": "INTERVENTION",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A11",
+      "name": "land_use_wetland",
+      "role": "CONFOUND",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_A12",
+      "name": "water_table",
+      "role": "STATE",
+      "domain": "generation",
+      "medium": "waste/wetland/sewage",
+      "temporal_support": "days-decades",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E06"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site chemistry/microbial measurements; not transferable k",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B01",
+      "name": "dissolution",
+      "role": "STATE",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E08"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B02",
+      "name": "Henry_coefficient",
+      "role": "PARAMETER",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E08"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B03",
+      "name": "pressure",
+      "role": "STATE",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E02",
+        "E08"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B04",
+      "name": "gas_volume",
+      "role": "STATE",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E04"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B05",
+      "name": "porosity",
+      "role": "PARAMETER",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E09"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B06",
+      "name": "permeability",
+      "role": "PARAMETER",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E09"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B07",
+      "name": "diffusion",
+      "role": "PARAMETER",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E09"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B08",
+      "name": "advection",
+      "role": "FORCING",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E10"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B09",
+      "name": "oxidation",
+      "role": "STATE",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B10",
+      "name": "cover_layer",
+      "role": "INTERVENTION",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B11",
+      "name": "flare_DRE",
+      "role": "PARAMETER",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B12",
+      "name": "capture_efficiency",
+      "role": "PARAMETER",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B13",
+      "name": "pipe_leak",
+      "role": "OUTPUT",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E04"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_B14",
+      "name": "aeration",
+      "role": "INTERVENTION",
+      "domain": "storage_control",
+      "medium": "water/porous material/gas",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E09"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "phase/interface/boundary measurements; equilibrium not flow",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_C01",
+      "name": "flux_source_rate",
+      "role": "OUTPUT",
+      "domain": "emission",
+      "medium": "facility/ground surface",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E04",
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "measure flux or flow across fixed boundary; point concentration insufficient",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_C02",
+      "name": "operation_schedule",
+      "role": "FORCING",
+      "domain": "emission",
+      "medium": "facility/ground surface",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E04",
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "measure flux or flow across fixed boundary; point concentration insufficient",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_C03",
+      "name": "facility_terrain",
+      "role": "CONFOUND",
+      "domain": "emission",
+      "medium": "facility/ground surface",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E04",
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "measure flux or flow across fixed boundary; point concentration insufficient",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_C04",
+      "name": "barometric_variation",
+      "role": "FORCING",
+      "domain": "emission",
+      "medium": "facility/ground surface",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E04",
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "measure flux or flow across fixed boundary; point concentration insufficient",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_C05",
+      "name": "measurement_boundary",
+      "role": "PARAMETER",
+      "domain": "emission",
+      "medium": "facility/ground surface",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E04",
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "measure flux or flow across fixed boundary; point concentration insufficient",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_C06",
+      "name": "monitoring_method",
+      "role": "OBSERVATION",
+      "domain": "emission",
+      "medium": "facility/ground surface",
+      "temporal_support": "seconds-years",
+      "spatial_support": "site/process",
+      "equation_id": [
+        "E04",
+        "E07"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "measure flux or flow across fixed boundary; point concentration insufficient",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D01",
+      "name": "air_pressure",
+      "role": "STATE",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E02"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D02",
+      "name": "air_temperature",
+      "role": "STATE",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E02",
+        "E11"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D03",
+      "name": "water_vapour",
+      "role": "STATE",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E01"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D04",
+      "name": "dry_wet_mole_fraction",
+      "role": "OBSERVATION",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E01"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D05",
+      "name": "wind",
+      "role": "FORCING",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D06",
+      "name": "turbulence",
+      "role": "PARAMETER",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D07",
+      "name": "boundary_layer",
+      "role": "STATE",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D08",
+      "name": "atmospheric_terrain",
+      "role": "CONFOUND",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D09",
+      "name": "sunlight",
+      "role": "FORCING",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E11"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D10",
+      "name": "OH",
+      "role": "STATE",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E11"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D11",
+      "name": "O3",
+      "role": "STATE",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E11"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D12",
+      "name": "NOx",
+      "role": "CONFOUND",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E11"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D13",
+      "name": "background_emissions",
+      "role": "FORCING",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D14",
+      "name": "season",
+      "role": "CONFOUND",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10",
+        "E11"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D15",
+      "name": "latitude",
+      "role": "CONFOUND",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10",
+        "E11"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D16",
+      "name": "ground_elevation",
+      "role": "CONFOUND",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D17",
+      "name": "release_height",
+      "role": "INPUT",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D18",
+      "name": "mixing",
+      "role": "STATE",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E10"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_D19",
+      "name": "chemical_loss",
+      "role": "OUTPUT",
+      "domain": "atmosphere",
+      "medium": "gas atmosphere",
+      "temporal_support": "seconds-decades",
+      "spatial_support": "parcel-regional-global",
+      "equation_id": [
+        "E11"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "station/column representativeness and transport/chemistry validation",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_E01",
+      "name": "radiative_efficiency",
+      "role": "PARAMETER",
+      "domain": "climate",
+      "medium": "global atmosphere/ocean/carbon",
+      "temporal_support": "years-centuries",
+      "spatial_support": "global",
+      "equation_id": [
+        "E12"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "global perturbation model; not local concentration ranking",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_E02",
+      "name": "indirect_effects",
+      "role": "STATE",
+      "domain": "climate",
+      "medium": "global atmosphere/ocean/carbon",
+      "temporal_support": "years-centuries",
+      "spatial_support": "global",
+      "equation_id": [
+        "E12"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "global perturbation model; not local concentration ranking",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_E03",
+      "name": "lifetime_feedback",
+      "role": "STATE",
+      "domain": "climate",
+      "medium": "global atmosphere/ocean/carbon",
+      "temporal_support": "years-centuries",
+      "spatial_support": "global",
+      "equation_id": [
+        "E12"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "global perturbation model; not local concentration ranking",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_E04",
+      "name": "global_burden",
+      "role": "STATE",
+      "domain": "climate",
+      "medium": "global atmosphere/ocean/carbon",
+      "temporal_support": "years-centuries",
+      "spatial_support": "global",
+      "equation_id": [
+        "E12"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "global perturbation model; not local concentration ranking",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_E05",
+      "name": "AGWP_GWP",
+      "role": "OUTPUT",
+      "domain": "climate",
+      "medium": "global atmosphere/ocean/carbon",
+      "temporal_support": "years-centuries",
+      "spatial_support": "global",
+      "equation_id": [
+        "E13"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "global perturbation model; not local concentration ranking",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_E06",
+      "name": "temperature_response",
+      "role": "OUTPUT",
+      "domain": "climate",
+      "medium": "global atmosphere/ocean/carbon",
+      "temporal_support": "years-centuries",
+      "spatial_support": "global",
+      "equation_id": [
+        "E13"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "global perturbation model; not local concentration ranking",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_E07",
+      "name": "metric_horizon",
+      "role": "INPUT",
+      "domain": "climate",
+      "medium": "global atmosphere/ocean/carbon",
+      "temporal_support": "years-centuries",
+      "spatial_support": "global",
+      "equation_id": [
+        "E13"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "global perturbation model; not local concentration ranking",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_E08",
+      "name": "climate_background",
+      "role": "FORCING",
+      "domain": "climate",
+      "medium": "global atmosphere/ocean/carbon",
+      "temporal_support": "years-centuries",
+      "spatial_support": "global",
+      "equation_id": [
+        "E12"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "global perturbation model; not local concentration ranking",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_E09",
+      "name": "carbon_cycle_convention",
+      "role": "PARAMETER",
+      "domain": "climate",
+      "medium": "global atmosphere/ocean/carbon",
+      "temporal_support": "years-centuries",
+      "spatial_support": "global",
+      "equation_id": [
+        "E13"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "global perturbation model; not local concentration ranking",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F01",
+      "name": "source_reduction",
+      "role": "INTERVENTION",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F02",
+      "name": "waste_diversion",
+      "role": "INTERVENTION",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F03",
+      "name": "process_optimization",
+      "role": "INTERVENTION",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F04",
+      "name": "gas_capture",
+      "role": "INTERVENTION",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F05",
+      "name": "leak_repair",
+      "role": "INTERVENTION",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F06",
+      "name": "oxidation_intervention",
+      "role": "INTERVENTION",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F07",
+      "name": "energy_tradeoff",
+      "role": "OUTPUT",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F08",
+      "name": "copollutants",
+      "role": "OUTPUT",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F09",
+      "name": "cost",
+      "role": "INPUT",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    },
+    {
+      "factor_id": "F_F10",
+      "name": "reliability",
+      "role": "PARAMETER",
+      "domain": "governance",
+      "medium": "common lifecycle boundary",
+      "temporal_support": "project lifetime",
+      "spatial_support": "project lifecycle",
+      "equation_id": [
+        "E14"
+      ],
+      "observability": "requires targeted measurement or specified parameter; NOT_AVAILABLE_IN_THIS_RUN",
+      "boundary": "site baseline/counterfactual/cost needed; no universal reduction percent",
+      "evidence_level": "MECHANISM_SCREEN_NOT_QUANTITATIVE_CAUSAL_VALIDATION"
+    }
+  ],
+  "equation_nodes": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11",
+    "E12",
+    "E13",
+    "E14"
+  ],
+  "edges": [
+    {
+      "from": "F_A01",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A02",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A03",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A04",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A05",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A06",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A07",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A08",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A09",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A10",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A11",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_A12",
+      "to": "E06",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B01",
+      "to": "E08",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B02",
+      "to": "E08",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B03",
+      "to": "E02",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B03",
+      "to": "E08",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B04",
+      "to": "E04",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B05",
+      "to": "E09",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B06",
+      "to": "E09",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B07",
+      "to": "E09",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B08",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B09",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B10",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B11",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B12",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B13",
+      "to": "E04",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_B14",
+      "to": "E09",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C01",
+      "to": "E04",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C01",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C02",
+      "to": "E04",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C02",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C03",
+      "to": "E04",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C03",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C04",
+      "to": "E04",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C04",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C05",
+      "to": "E04",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C05",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C06",
+      "to": "E04",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_C06",
+      "to": "E07",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D01",
+      "to": "E02",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D02",
+      "to": "E02",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D02",
+      "to": "E11",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D03",
+      "to": "E01",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D04",
+      "to": "E01",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D05",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D06",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D07",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D08",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D09",
+      "to": "E11",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D10",
+      "to": "E11",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D11",
+      "to": "E11",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D12",
+      "to": "E11",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D13",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D14",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D14",
+      "to": "E11",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D15",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D15",
+      "to": "E11",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D16",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D17",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D18",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_D19",
+      "to": "E11",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_E01",
+      "to": "E12",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_E02",
+      "to": "E12",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_E03",
+      "to": "E12",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_E04",
+      "to": "E12",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_E05",
+      "to": "E13",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_E06",
+      "to": "E13",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_E07",
+      "to": "E13",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_E08",
+      "to": "E12",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_E09",
+      "to": "E13",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F01",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F02",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F03",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F04",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F05",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F06",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F07",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F08",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F09",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "F_F10",
+      "to": "E14",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "context mechanism; not necessarily an explicit equation term"
+    },
+    {
+      "from": "E01",
+      "to": "E02",
+      "relation": "TRANSFORMS",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E02",
+      "to": "E04",
+      "relation": "CONSERVES",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E03",
+      "to": "E04",
+      "relation": "CONSERVES",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E06",
+      "to": "E07",
+      "relation": "CAUSES_WITH_MODEL",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E08",
+      "to": "E09",
+      "relation": "DEPENDS_ON",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E07",
+      "to": "E10",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E10",
+      "to": "E11",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E11",
+      "to": "E12",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E12",
+      "to": "E13",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E14",
+      "to": "E07",
+      "relation": "INTERVENTION_ON",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E02",
+      "to": "E13",
+      "relation": "NOT_INFERABLE_FROM",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E02",
+      "to": "E07",
+      "relation": "NOT_INFERABLE_FROM",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "F_D13",
+      "to": "F_D04",
+      "relation": "CONFOUNDED_BY",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "F_D04",
+      "to": "E02",
+      "relation": "OBSERVED_AS",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    },
+    {
+      "from": "E06",
+      "to": "F_A04",
+      "relation": "MAY_INFLUENCE",
+      "quantitative_validation": false,
+      "note": "conditional mechanism or explicit prohibited inference; not an executable edge"
+    }
+  ],
+  "feedback_policy": "conceptual loops allowed only as hypotheses; never used in runtime DAG; coupled solvers blocked",
+  "scope": "factor dependency links are broad context, not all variables are explicit terms in the cited equation"
+}
