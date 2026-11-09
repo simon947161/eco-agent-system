@@ -1,0 +1,2214 @@
+{
+  "e2e": {
+    "deployed": false,
+    "ecochain": "ECOCHAIN_CANONICAL_NOT_FOUND",
+    "enotebook": "PENDING_INTEGRATION",
+    "human_decision": "PENDING",
+    "interface_mapping": {
+      "cczps_scenario_id": "batlow",
+      "country_id": "M49:036",
+      "link_status": "SYNTHETIC_INTERFACE_REHEARSAL_ONLY_NOT_BATLOW_PHYSICS",
+      "natural_unit_id": "CH4_SOURCE",
+      "physical_source_ids": [
+        "PR143"
+      ],
+      "policy_id": "POLICY:036",
+      "policy_source_id": "SCORE",
+      "review_source_id": "PR145",
+      "technical_review_packages": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "not_inferable": "Synthetic ledger review does not validate Batlow, Scorecard, physical effects or real roles",
+    "physical_evidence_ids": [
+      "CH4_PHYSICS",
+      "EV:POLICY:036",
+      "AU_COUNTRY_REPORT",
+      "INTERNAL_REPLAY"
+    ],
+    "policy_context": [
+      {
+        "category": "some-progress",
+        "contradictions": [
+          "AU card base year 2030 versus AU_ACT s10 base year 2005"
+        ],
+        "country_id": "M49:036",
+        "display_name": "Australia",
+        "evidence_type": "POLICY_ASSESSMENT",
+        "id": "POLICY:036",
+        "not_inferable": "observed reduction, emissions factor, warming benefit or current legal compliance",
+        "review_state": "MATERIAL_CONTRADICTION",
+        "score": 50,
+        "selection_reason": "ENSO条件关联；既有Batlow与甲烷审查接口",
+        "source_fact": {
+          "basis": "PUBLISHED_CSS_LABEL_NOT_RECALCULATED",
+          "category": "some-progress",
+          "css_class": "yellow fifty",
+          "locator": "country toggle title + inline CSS ::after",
+          "name": "Australia",
+          "published_percent_label": 50
+        },
+        "source_id": "SCORE",
+        "source_locator": "Australia card",
+        "time_semantics": "ASSESSMENT_VALIDITY_UNKNOWN",
+        "type": "COUNTRY_POLICY_SCORE",
+        "unit": "published_policy_percent_label",
+        "valid_time": "UNKNOWN",
+        "version": "2025-09-25T03:51:15+00:00"
+      }
+    ],
+    "policy_sent_to_model": false,
+    "process": "methane",
+    "review_results": {
+      "A": {
+        "REGULATORY_CERTIFICATION": "NOT_PROVIDED",
+        "arithmetic_interpretation": "INTERNAL_FIXTURE_REPLAY_ONLY",
+        "claims": [
+          {
+            "arithmetic": "RECALCULATED",
+            "calculation": {
+              "carbon_in_kg_C": 82.5,
+              "carbon_out_plus_stock_kg_C": 82.5,
+              "co2_from_CH4_reaction_kg": 0.0,
+              "consumed_kg_CH4": 0.0,
+              "emitted_kg_CH4": 95.0,
+              "regulatory_admission": "NOT_APPLICABLE",
+              "residuals": {
+                "CH4": 0.0,
+                "body": 0.0,
+                "carbon": 0.0,
+                "cover": 0.0,
+                "device": 0.0,
+                "pipe": 0.0
+              },
+              "status": "SYNTHETIC_METHOD_TEST",
+              "unknown_field_uncertainty": true,
+              "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU"
+            },
+            "claim_id": "A-uncaptured",
+            "effect": "NOT_ASSESSED",
+            "evidence": "SYNTHETIC_ONLY",
+            "failures": [],
+            "method": "METHOD_ALIGNED",
+            "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+            "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+            "status": "METHOD_ALIGNED",
+            "supporting_evidence_ids": [
+              "AUTHOR_LEDGER_FIXTURES"
+            ]
+          },
+          {
+            "arithmetic": "RECALCULATED",
+            "calculation": {
+              "carbon_in_kg_C": 82.5,
+              "carbon_out_plus_stock_kg_C": 82.5,
+              "co2_from_CH4_reaction_kg": 171.325,
+              "consumed_kg_CH4": 62.3,
+              "emitted_kg_CH4": 32.7,
+              "regulatory_admission": "NOT_APPLICABLE",
+              "residuals": {
+                "CH4": 0.0,
+                "body": 0.0,
+                "carbon": 0.0,
+                "cover": 0.0,
+                "device": 0.0,
+                "pipe": 0.0
+              },
+              "status": "SYNTHETIC_METHOD_TEST",
+              "unknown_field_uncertainty": true,
+              "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU"
+            },
+            "claim_id": "A-capture_flare",
+            "effect": "NOT_ASSESSED",
+            "evidence": "SYNTHETIC_ONLY",
+            "failures": [],
+            "method": "METHOD_ALIGNED",
+            "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+            "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+            "status": "METHOD_ALIGNED",
+            "supporting_evidence_ids": [
+              "AUTHOR_LEDGER_FIXTURES"
+            ]
+          },
+          {
+            "arithmetic": "RECALCULATED",
+            "calculation": {
+              "carbon_in_kg_C": 82.5,
+              "carbon_out_plus_stock_kg_C": 82.5,
+              "co2_from_CH4_reaction_kg": 162.03,
+              "consumed_kg_CH4": 58.92,
+              "emitted_kg_CH4": 31.08,
+              "regulatory_admission": "NOT_APPLICABLE",
+              "residuals": {
+                "CH4": 0.0,
+                "body": 0.0,
+                "carbon": 0.0,
+                "cover": 0.0,
+                "device": 0.0,
+                "pipe": 0.0
+              },
+              "status": "SYNTHETIC_METHOD_TEST",
+              "unknown_field_uncertainty": true,
+              "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU"
+            },
+            "claim_id": "A-oxidation_leaks",
+            "effect": "NOT_ASSESSED",
+            "evidence": "SYNTHETIC_ONLY",
+            "failures": [],
+            "method": "METHOD_ALIGNED",
+            "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+            "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+            "status": "METHOD_ALIGNED",
+            "supporting_evidence_ids": [
+              "AUTHOR_LEDGER_FIXTURES"
+            ]
+          }
+        ],
+        "effect": "NOT_ASSESSED",
+        "external_trust_anchor": "ABSENT_ROLE_FIXTURES_IN_SAME_GIT_TREE",
+        "human_review": "PENDING",
+        "package_sha256": "bab09e49899f40af6600921441df4640399117493cc907a1d3c8f5eab902c9dd",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "rules_version": "technical-review-proposal/1",
+        "status": "METHOD_ALIGNED"
+      },
+      "B": {
+        "REGULATORY_CERTIFICATION": "NOT_PROVIDED",
+        "arithmetic_interpretation": "INTERNAL_FIXTURE_REPLAY_ONLY",
+        "claims": [
+          {
+            "arithmetic": "RECALCULATED",
+            "calculation": {
+              "carbon_in_kg_C": 82.5,
+              "carbon_out_plus_stock_kg_C": 82.5,
+              "co2_from_CH4_reaction_kg": 0.0,
+              "consumed_kg_CH4": 0.0,
+              "emitted_kg_CH4": 95.0,
+              "regulatory_admission": "NOT_APPLICABLE",
+              "residuals": {
+                "CH4": 0.0,
+                "body": 0.0,
+                "carbon": 0.0,
+                "cover": 0.0,
+                "device": 0.0,
+                "pipe": 0.0
+              },
+              "status": "SYNTHETIC_METHOD_TEST",
+              "unknown_field_uncertainty": true,
+              "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU"
+            },
+            "claim_id": "B-uncaptured",
+            "effect": "NOT_ASSESSED",
+            "evidence": "MATERIAL_CONTRADICTION",
+            "failures": [
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "DATA.phase",
+                "reason": "DATA_PHASE",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "DATA.unit",
+                "reason": "DATA_UNIT",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "CALCULATION",
+                "reason": "DOUBLE_OXIDATION",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "CALCULATION",
+                "reason": "BOUNDARY_OMISSION",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              }
+            ],
+            "method": "METHOD_ALIGNED",
+            "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+            "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+            "status": "MATERIAL_CONTRADICTION",
+            "supporting_evidence_ids": [
+              "AUTHOR_LEDGER_FIXTURES"
+            ]
+          },
+          {
+            "arithmetic": "RECALCULATED",
+            "calculation": {
+              "carbon_in_kg_C": 82.5,
+              "carbon_out_plus_stock_kg_C": 82.5,
+              "co2_from_CH4_reaction_kg": 171.325,
+              "consumed_kg_CH4": 62.3,
+              "emitted_kg_CH4": 32.7,
+              "regulatory_admission": "NOT_APPLICABLE",
+              "residuals": {
+                "CH4": 0.0,
+                "body": 0.0,
+                "carbon": 0.0,
+                "cover": 0.0,
+                "device": 0.0,
+                "pipe": 0.0
+              },
+              "status": "SYNTHETIC_METHOD_TEST",
+              "unknown_field_uncertainty": true,
+              "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU"
+            },
+            "claim_id": "B-capture_flare",
+            "effect": "NOT_ASSESSED",
+            "evidence": "MATERIAL_CONTRADICTION",
+            "failures": [
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "DATA.phase",
+                "reason": "DATA_PHASE",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "DATA.unit",
+                "reason": "DATA_UNIT",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "CALCULATION",
+                "reason": "DOUBLE_OXIDATION",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "CALCULATION",
+                "reason": "BOUNDARY_OMISSION",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              }
+            ],
+            "method": "METHOD_ALIGNED",
+            "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+            "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+            "status": "MATERIAL_CONTRADICTION",
+            "supporting_evidence_ids": [
+              "AUTHOR_LEDGER_FIXTURES"
+            ]
+          },
+          {
+            "arithmetic": "NOT_ASSESSED",
+            "calculation": null,
+            "claim_id": "B-oxidation_leaks",
+            "effect": "NOT_ASSESSED",
+            "evidence": "MATERIAL_CONTRADICTION",
+            "failures": [
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "DATA.phase",
+                "reason": "DATA_PHASE",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "DATA.unit",
+                "reason": "DATA_UNIT",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "CALCULATION",
+                "reason": "DOUBLE_OXIDATION",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "CALCULATION",
+                "reason": "BOUNDARY_OMISSION",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "CLAIM.flows",
+                "reason": "RAW_INPUT_MISMATCH",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "MATERIAL_CONTRADICTION",
+                "pointer": "CLAIM.flows_or_output",
+                "reason": "MASS_NOT_CONSERVED",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              }
+            ],
+            "method": "METHOD_ALIGNED",
+            "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+            "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+            "status": "MATERIAL_CONTRADICTION",
+            "supporting_evidence_ids": [
+              "AUTHOR_LEDGER_FIXTURES"
+            ]
+          }
+        ],
+        "effect": "NOT_ASSESSED",
+        "external_trust_anchor": "ABSENT_ROLE_FIXTURES_IN_SAME_GIT_TREE",
+        "human_review": "PENDING",
+        "package_sha256": "55e26b2932af1c9d12cb114d94408044733eca7a7c345337ec41cfd9d2267f1f",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "rules_version": "technical-review-proposal/1",
+        "status": "MATERIAL_CONTRADICTION"
+      },
+      "C": {
+        "REGULATORY_CERTIFICATION": "NOT_PROVIDED",
+        "arithmetic_interpretation": "INTERNAL_FIXTURE_REPLAY_ONLY",
+        "claims": [
+          {
+            "arithmetic": "RECALCULATED",
+            "calculation": {
+              "carbon_in_kg_C": 82.5,
+              "carbon_out_plus_stock_kg_C": 82.5,
+              "co2_from_CH4_reaction_kg": 0.0,
+              "consumed_kg_CH4": 0.0,
+              "emitted_kg_CH4": 95.0,
+              "regulatory_admission": "NOT_APPLICABLE",
+              "residuals": {
+                "CH4": 0.0,
+                "body": 0.0,
+                "carbon": 0.0,
+                "cover": 0.0,
+                "device": 0.0,
+                "pipe": 0.0
+              },
+              "status": "SYNTHETIC_METHOD_TEST",
+              "unknown_field_uncertainty": true,
+              "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU"
+            },
+            "claim_id": "C-uncaptured",
+            "effect": "NOT_ASSESSED",
+            "evidence": "EVIDENCE_INSUFFICIENT",
+            "failures": [
+              {
+                "classification": "EVIDENCE_INSUFFICIENT",
+                "pointer": "AUTHOR_LEDGER_FIXTURES",
+                "reason": "LICENCE_UNVERIFIED",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "EVIDENCE_INSUFFICIENT",
+                "pointer": "DATA.calibration",
+                "reason": "DATA_CALIBRATION",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "EVIDENCE_INSUFFICIENT",
+                "pointer": "DATA.raw_flow_evidence",
+                "reason": "DATA_RAW_FLOW_EVIDENCE",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              }
+            ],
+            "method": "METHOD_ALIGNED",
+            "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+            "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+            "status": "EVIDENCE_INSUFFICIENT",
+            "supporting_evidence_ids": [
+              "AUTHOR_LEDGER_FIXTURES"
+            ]
+          },
+          {
+            "arithmetic": "RECALCULATED",
+            "calculation": {
+              "carbon_in_kg_C": 82.5,
+              "carbon_out_plus_stock_kg_C": 82.5,
+              "co2_from_CH4_reaction_kg": 171.325,
+              "consumed_kg_CH4": 62.3,
+              "emitted_kg_CH4": 32.7,
+              "regulatory_admission": "NOT_APPLICABLE",
+              "residuals": {
+                "CH4": 0.0,
+                "body": 0.0,
+                "carbon": 0.0,
+                "cover": 0.0,
+                "device": 0.0,
+                "pipe": 0.0
+              },
+              "status": "SYNTHETIC_METHOD_TEST",
+              "unknown_field_uncertainty": true,
+              "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU"
+            },
+            "claim_id": "C-capture_flare",
+            "effect": "NOT_ASSESSED",
+            "evidence": "EVIDENCE_INSUFFICIENT",
+            "failures": [
+              {
+                "classification": "EVIDENCE_INSUFFICIENT",
+                "pointer": "AUTHOR_LEDGER_FIXTURES",
+                "reason": "LICENCE_UNVERIFIED",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "EVIDENCE_INSUFFICIENT",
+                "pointer": "DATA.calibration",
+                "reason": "DATA_CALIBRATION",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "EVIDENCE_INSUFFICIENT",
+                "pointer": "DATA.raw_flow_evidence",
+                "reason": "DATA_RAW_FLOW_EVIDENCE",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              }
+            ],
+            "method": "METHOD_ALIGNED",
+            "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+            "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+            "status": "EVIDENCE_INSUFFICIENT",
+            "supporting_evidence_ids": [
+              "AUTHOR_LEDGER_FIXTURES"
+            ]
+          },
+          {
+            "arithmetic": "RECALCULATED",
+            "calculation": {
+              "carbon_in_kg_C": 82.5,
+              "carbon_out_plus_stock_kg_C": 82.5,
+              "co2_from_CH4_reaction_kg": 162.03,
+              "consumed_kg_CH4": 58.92,
+              "emitted_kg_CH4": 31.08,
+              "regulatory_admission": "NOT_APPLICABLE",
+              "residuals": {
+                "CH4": 0.0,
+                "body": 0.0,
+                "carbon": 0.0,
+                "cover": 0.0,
+                "device": 0.0,
+                "pipe": 0.0
+              },
+              "status": "SYNTHETIC_METHOD_TEST",
+              "unknown_field_uncertainty": true,
+              "version": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU"
+            },
+            "claim_id": "C-oxidation_leaks",
+            "effect": "NOT_ASSESSED",
+            "evidence": "EVIDENCE_INSUFFICIENT",
+            "failures": [
+              {
+                "classification": "EVIDENCE_INSUFFICIENT",
+                "pointer": "AUTHOR_LEDGER_FIXTURES",
+                "reason": "LICENCE_UNVERIFIED",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "EVIDENCE_INSUFFICIENT",
+                "pointer": "DATA.calibration",
+                "reason": "DATA_CALIBRATION",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              },
+              {
+                "classification": "EVIDENCE_INSUFFICIENT",
+                "pointer": "DATA.raw_flow_evidence",
+                "reason": "DATA_RAW_FLOW_EVIDENCE",
+                "remedy": "Correct identified mismatch or supply independently reviewable original evidence; append new revision."
+              }
+            ],
+            "method": "METHOD_ALIGNED",
+            "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+            "scope": "SYNTHETIC_ARITHMETIC_ONLY",
+            "status": "EVIDENCE_INSUFFICIENT",
+            "supporting_evidence_ids": [
+              "AUTHOR_LEDGER_FIXTURES"
+            ]
+          }
+        ],
+        "effect": "NOT_ASSESSED",
+        "external_trust_anchor": "ABSENT_ROLE_FIXTURES_IN_SAME_GIT_TREE",
+        "human_review": "PENDING",
+        "package_sha256": "72efb06bf3d0fb79c33d28e5ecd6482d2c510633eeea9cde358052e2ecf26b5b",
+        "reviewer": "OFFLINE_RULE_ENGINE; role fixtures only",
+        "rules_version": "technical-review-proposal/1",
+        "status": "EVIDENCE_INSUFFICIENT"
+      }
+    },
+    "scenario_interface": {
+      "comparison_status_values": [
+        "comparison_ready_with_limitations",
+        "insufficient_evidence_for_comparison",
+        "requires_professional_review",
+        "requires_spatial_validation",
+        "requires_governance_review"
+      ],
+      "cross_scenario_summary": {
+        "complete_traceability": [],
+        "evidence_coverage_groups": {
+          "insufficient": [
+            "Batlow",
+            "Kunlun",
+            "Iraq",
+            "Baiyangdian-Xiong'an"
+          ],
+          "low": [],
+          "medium": []
+        },
+        "high_uncertainty_scenarios": [
+          "Batlow",
+          "Kunlun",
+          "Iraq",
+          "Baiyangdian-Xiong'an"
+        ],
+        "requires_expert_review": [
+          "Batlow",
+          "Kunlun",
+          "Iraq",
+          "Baiyangdian-Xiong'an"
+        ],
+        "requires_spatial_validation": [
+          "Batlow",
+          "Kunlun",
+          "Iraq",
+          "Baiyangdian-Xiong'an"
+        ],
+        "summary_boundary": "Groups describe current evidence coverage and review needs only. They do not order scenarios or identify a preferred option."
+      },
+      "evidence_strength_values": [
+        "low",
+        "medium",
+        "high",
+        "insufficient",
+        "unknown"
+      ],
+      "record_count": 4,
+      "records": [
+        {
+          "approval_support_status": "not_ready_for_approval",
+          "comparison_notes": [
+            "Comparison is based on local generated evidence only.",
+            "Signals are descriptive evidence readings, not forecasts or causal findings.",
+            "No scenario rank, winner, statutory approval, or implementation recommendation is produced."
+          ],
+          "comparison_status": "insufficient_evidence_for_comparison",
+          "covered_trace_category_count": 0,
+          "energy_signal": "not_explicitly_documented",
+          "environmental_signal": "context_documented_requires_validation",
+          "evidence_strength": "insufficient",
+          "expert_review_status": "not_reviewed",
+          "gis_dem_requirement_status": "unknown",
+          "human_review_required": true,
+          "humidity_signal": "unknown",
+          "insufficient_trace_category_count": 0,
+          "internal_governance_status": "not_decided",
+          "land_signal": "requires_gis_dem_validation",
+          "meteorology_trend_status": "unavailable",
+          "planning_hypothesis_status": "unknown",
+          "professional_review_required": true,
+          "professional_validation_status": "awaiting_professional_review",
+          "rainfall_signal": "unknown",
+          "risk_level": "unknown",
+          "scenario_id": "batlow",
+          "scenario_name": "Batlow",
+          "solar_signal": "unknown",
+          "spatial_transect_status": "unavailable",
+          "temperature_signal": "unknown",
+          "trace_record_count": 0,
+          "traceability_references": [],
+          "traceability_status": "unavailable",
+          "uncertainty_level": "high",
+          "unresolved_risks": [],
+          "water_signal": "rainfall_unknown;humidity_unknown;hydrology_requires_review"
+        },
+        {
+          "approval_support_status": "not_ready_for_approval",
+          "comparison_notes": [
+            "Comparison is based on local generated evidence only.",
+            "Signals are descriptive evidence readings, not forecasts or causal findings.",
+            "No scenario rank, winner, statutory approval, or implementation recommendation is produced."
+          ],
+          "comparison_status": "insufficient_evidence_for_comparison",
+          "covered_trace_category_count": 0,
+          "energy_signal": "not_explicitly_documented",
+          "environmental_signal": "context_documented_requires_validation",
+          "evidence_strength": "insufficient",
+          "expert_review_status": "not_reviewed",
+          "gis_dem_requirement_status": "unknown",
+          "human_review_required": true,
+          "humidity_signal": "unknown",
+          "insufficient_trace_category_count": 0,
+          "internal_governance_status": "not_decided",
+          "land_signal": "requires_gis_dem_validation",
+          "meteorology_trend_status": "unavailable",
+          "planning_hypothesis_status": "unknown",
+          "professional_review_required": true,
+          "professional_validation_status": "awaiting_professional_review",
+          "rainfall_signal": "unknown",
+          "risk_level": "unknown",
+          "scenario_id": "kunlun",
+          "scenario_name": "Kunlun",
+          "solar_signal": "unknown",
+          "spatial_transect_status": "unavailable",
+          "temperature_signal": "unknown",
+          "trace_record_count": 0,
+          "traceability_references": [],
+          "traceability_status": "unavailable",
+          "uncertainty_level": "high",
+          "unresolved_risks": [],
+          "water_signal": "rainfall_unknown;humidity_unknown;hydrology_requires_review"
+        },
+        {
+          "approval_support_status": "not_ready_for_approval",
+          "comparison_notes": [
+            "Comparison is based on local generated evidence only.",
+            "Signals are descriptive evidence readings, not forecasts or causal findings.",
+            "No scenario rank, winner, statutory approval, or implementation recommendation is produced."
+          ],
+          "comparison_status": "insufficient_evidence_for_comparison",
+          "covered_trace_category_count": 0,
+          "energy_signal": "not_explicitly_documented",
+          "environmental_signal": "context_documented_requires_validation",
+          "evidence_strength": "insufficient",
+          "expert_review_status": "not_reviewed",
+          "gis_dem_requirement_status": "unknown",
+          "human_review_required": true,
+          "humidity_signal": "unknown",
+          "insufficient_trace_category_count": 0,
+          "internal_governance_status": "not_decided",
+          "land_signal": "requires_gis_dem_validation",
+          "meteorology_trend_status": "unavailable",
+          "planning_hypothesis_status": "unknown",
+          "professional_review_required": true,
+          "professional_validation_status": "awaiting_professional_review",
+          "rainfall_signal": "unknown",
+          "risk_level": "unknown",
+          "scenario_id": "iraq",
+          "scenario_name": "Iraq",
+          "solar_signal": "unknown",
+          "spatial_transect_status": "unavailable",
+          "temperature_signal": "unknown",
+          "trace_record_count": 0,
+          "traceability_references": [],
+          "traceability_status": "unavailable",
+          "uncertainty_level": "high",
+          "unresolved_risks": [],
+          "water_signal": "rainfall_unknown;humidity_unknown;hydrology_requires_review"
+        },
+        {
+          "approval_support_status": "not_ready_for_approval",
+          "comparison_notes": [
+            "Comparison is based on local generated evidence only.",
+            "Signals are descriptive evidence readings, not forecasts or causal findings.",
+            "No scenario rank, winner, statutory approval, or implementation recommendation is produced."
+          ],
+          "comparison_status": "insufficient_evidence_for_comparison",
+          "covered_trace_category_count": 0,
+          "energy_signal": "not_explicitly_documented",
+          "environmental_signal": "context_documented_requires_validation",
+          "evidence_strength": "insufficient",
+          "expert_review_status": "not_reviewed",
+          "gis_dem_requirement_status": "unknown",
+          "human_review_required": true,
+          "humidity_signal": "unknown",
+          "insufficient_trace_category_count": 0,
+          "internal_governance_status": "not_decided",
+          "land_signal": "requires_gis_dem_validation",
+          "meteorology_trend_status": "unavailable",
+          "planning_hypothesis_status": "unknown",
+          "professional_review_required": true,
+          "professional_validation_status": "awaiting_professional_review",
+          "rainfall_signal": "unknown",
+          "risk_level": "unknown",
+          "scenario_id": "baiyangdian_xiongan",
+          "scenario_name": "Baiyangdian-Xiong'an",
+          "solar_signal": "unknown",
+          "spatial_transect_status": "unavailable",
+          "temperature_signal": "unknown",
+          "trace_record_count": 0,
+          "traceability_references": [],
+          "traceability_status": "unavailable",
+          "uncertainty_level": "high",
+          "unresolved_risks": [],
+          "water_signal": "rainfall_unknown;humidity_unknown;hydrology_requires_review"
+        }
+      ],
+      "risk_level_values": [
+        "low",
+        "medium",
+        "high",
+        "unknown"
+      ],
+      "runtime": "Scenario Comparison Runtime",
+      "safety_boundary": "Comparison support only. Records expose local evidence coverage, risk, uncertainty, and review status without ranking scenarios, selecting a best option, making a final recommendation, or claiming approval readiness.",
+      "schema_version": "1.0",
+      "uncertainty_level_values": [
+        "low",
+        "medium",
+        "high",
+        "unknown"
+      ]
+    },
+    "scenario_link": "Batlow is configured AU comparison context only; no new methane scenario implemented",
+    "scientific_admission": "PENDING"
+  },
+  "queries": {
+    "brw_2024": {
+      "country_ids": [
+        "M49:840"
+      ],
+      "evidence": [
+        {
+          "calibration_QA": "Inherited instrument QA not revalidated",
+          "claim": "Previously archived NOAA BRW CH4 observation subset, referred to without reanalysis",
+          "claim_id": "BRW_EXISTING",
+          "contradictions": [],
+          "evidence_type": "PHYSICAL_OBSERVATION",
+          "geographic_support": [
+            "ATM_BOUNDARY"
+          ],
+          "method_id": "inherited NOAA BRW surface in-situ observation",
+          "not_inferable_from": [
+            "Subset-specific completeness/QA retained in PR140; no valid paired flux or vertical profile"
+          ],
+          "origin": "INHERITED_OBSERVATION",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "INHERITED_REFERENCE_ONLY",
+          "sha_if_downloaded": "152357dd30ca8ce5e80ec3d51ce4414405b783e1b2bb8a6f04bcd95be729edb3",
+          "source_id": "PR140",
+          "source_locator": "docs/tasks/climateos_methane_factor_order_001/evidence/ch4_brw_2024_subset.txt",
+          "time_support": {
+            "end": "2025-01-01T00:00:00Z",
+            "semantics": "OBSERVATION_WINDOW",
+            "start": "2024-01-01T00:00:00Z",
+            "timezone": "UTC"
+          },
+          "uncertainty": "Subset-specific completeness/QA retained in PR140; no valid paired flux or vertical profile",
+          "unit": "nmol mol-1",
+          "value": null,
+          "version": "77a35e2723372a290579e4549a86781e2be65c04"
+        }
+      ],
+      "policies": [],
+      "relations": [],
+      "scientific_admission": "PENDING",
+      "scope": "METADATA_AND_QUALITATIVE_LINKS; no geometry overlay",
+      "sources": [
+        {
+          "hash_basis": "LF-normalized inherited text",
+          "limitations": "NOAA original subset inherited; no new statistical experiment",
+          "locator": "docs/tasks/climateos_methane_factor_order_001/evidence/ch4_brw_2024_subset.txt",
+          "publication_mode": "REFERENCE_ONLY",
+          "publisher": "existing reviewed repository",
+          "raw_receipt_id": null,
+          "raw_redistributed": false,
+          "retrieved_date": "2026-11-09",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "INHERITED_REFERENCE_ONLY",
+          "sha_if_downloaded": "152357dd30ca8ce5e80ec3d51ce4414405b783e1b2bb8a6f04bcd95be729edb3",
+          "source_id": "PR140",
+          "theme_id": "INHERITED",
+          "url": "https://github.com/simon947161/eco-agent-system/blob/77a35e2723372a290579e4549a86781e2be65c04/docs/tasks/climateos_methane_factor_order_001/evidence/ch4_brw_2024_subset.txt",
+          "version": "77a35e2723372a290579e4549a86781e2be65c04"
+        }
+      ],
+      "units": [
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "ATM_BOUNDARY",
+          "license": "INHERITED_REFERENCE_ONLY",
+          "name": "边界层观测支持域",
+          "scale": "BRW point sampling, no global spatial interpolation",
+          "source": "PR140",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "77a35e2723372a290579e4549a86781e2be65c04"
+        }
+      ],
+      "unknown": [
+        "Unmatched or unknown time records are excluded from time-filtered results",
+        "No causal magnitude, admitted emissions or scientific promotion"
+      ]
+    },
+    "china_policy": {
+      "country_ids": [
+        "M49:156"
+      ],
+      "evidence": [
+        {
+          "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+          "claim": "Published policy label or registry submission metadata for China",
+          "claim_id": "EV:POLICY:156",
+          "contradictions": [],
+          "evidence_type": "POLICY_ASSESSMENT",
+          "geographic_support": [
+            "M49:156"
+          ],
+          "method_id": "COUNTRY_POLICY_SCORE",
+          "not_inferable_from": [
+            "observed reduction, emissions factor, warming benefit or current legal compliance"
+          ],
+          "origin": "PUBLIC_METADATA",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+          "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+          "source_id": "SCORE",
+          "source_locator": "rubric; country toggle + CSS; JSON-LD",
+          "time_support": {
+            "end": null,
+            "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL",
+            "start": null,
+            "timezone": "UNKNOWN"
+          },
+          "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+          "unit": "published_policy_percent_label",
+          "value": null,
+          "version": "published 2021-03-29; modified 2025-09-25"
+        }
+      ],
+      "policies": [
+        {
+          "category": "needs-improvement",
+          "contradictions": [],
+          "country_id": "M49:156",
+          "display_name": "China",
+          "evidence_type": "POLICY_ASSESSMENT",
+          "id": "POLICY:156",
+          "not_inferable": "observed reduction, emissions factor, warming benefit or current legal compliance",
+          "review_state": "SOURCE_VERIFIED",
+          "score": 20,
+          "selection_reason": "东亚/季风、能源农业与区域差异",
+          "source_fact": {
+            "basis": "PUBLISHED_CSS_LABEL_NOT_RECALCULATED",
+            "category": "needs-improvement",
+            "css_class": "red twenty",
+            "locator": "country toggle title + inline CSS ::after",
+            "name": "China",
+            "published_percent_label": 20
+          },
+          "source_id": "SCORE",
+          "source_locator": "China card",
+          "time_semantics": "ASSESSMENT_VALIDITY_UNKNOWN",
+          "type": "COUNTRY_POLICY_SCORE",
+          "unit": "published_policy_percent_label",
+          "valid_time": "UNKNOWN",
+          "version": "2025-09-25T03:51:15+00:00"
+        }
+      ],
+      "relations": [],
+      "scientific_admission": "PENDING",
+      "scope": "METADATA_AND_QUALITATIVE_LINKS; no geometry overlay",
+      "sources": [
+        {
+          "limitations": "Modification date is not a per-country policy validity date",
+          "locator": "rubric; country toggle + CSS; JSON-LD",
+          "publication_mode": "FACTS_LINKS_OWN_ANALYSIS_ONLY",
+          "publisher": "Climate Scorecard",
+          "raw_receipt_id": "scorecard",
+          "raw_redistributed": false,
+          "retrieved_date": "2026-11-09",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+          "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+          "source_id": "SCORE",
+          "theme_id": "SCORE",
+          "url": "https://www.climatescorecard.org/scorecard/",
+          "version": "published 2021-03-29; modified 2025-09-25"
+        }
+      ],
+      "units": [
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "CH4_SOURCE",
+          "license": "INHERITED_REFERENCE_ONLY",
+          "name": "甲烷源项研究接口",
+          "scale": "waste/energy/agriculture; no real facility rate",
+          "source": "PR143",
+          "status": "METADATA_ONLY",
+          "system": "human",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "746825e65b8ddbd0f518709c94d9476df107208b"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "CLIMATE_ZONES",
+          "license": "CC_BY_4_0_INDEXED_NOT_PAYLOAD_VERIFIED",
+          "name": "Köppen-Geiger 分类接口",
+          "scale": "1 km product metadata; no zone assignment",
+          "source": "KG",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "V3 landing / 2023 paper"
+        }
+      ],
+      "unknown": [
+        "Unmatched or unknown time records are excluded from time-filtered results",
+        "No causal magnitude, admitted emissions or scientific promotion"
+      ]
+    },
+    "enso_australia": {
+      "country_ids": [
+        "M49:036"
+      ],
+      "evidence": [
+        {
+          "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+          "claim": "Coupled Pacific ocean-atmosphere process with conditional regional rainfall associations",
+          "claim_id": "ENSO_MECHANISM",
+          "contradictions": [],
+          "evidence_type": "SCIENTIFIC_LITERATURE",
+          "geographic_support": [
+            "PACIFIC",
+            "ATM_WALKER",
+            "REGIONAL_RAIN"
+          ],
+          "method_id": "qualitative_source_audit",
+          "not_inferable_from": [
+            "No deterministic regional drought, methane or event attribution"
+          ],
+          "origin": "PUBLIC_METADATA",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "PUBLIC_FACTUAL_METADATA_ONLY",
+          "sha_if_downloaded": null,
+          "source_id": "ENSO",
+          "source_locator": "Impacts; Forecasting; RONI transition paragraph",
+          "time_support": {
+            "end": null,
+            "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL",
+            "start": null,
+            "timezone": "UNKNOWN"
+          },
+          "uncertainty": "No deterministic regional drought, methane or event attribution",
+          "unit": "not_applicable",
+          "value": null,
+          "version": "snapshot 2026-11-09; RONI transition 2026-02-01"
+        },
+        {
+          "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+          "claim": "Published policy label or registry submission metadata for Australia",
+          "claim_id": "EV:POLICY:036",
+          "contradictions": [
+            "AU card base year 2030 versus AU_ACT s10 base year 2005"
+          ],
+          "evidence_type": "POLICY_ASSESSMENT",
+          "geographic_support": [
+            "M49:036"
+          ],
+          "method_id": "COUNTRY_POLICY_SCORE",
+          "not_inferable_from": [
+            "observed reduction, emissions factor, warming benefit or current legal compliance"
+          ],
+          "origin": "PUBLIC_METADATA",
+          "review_state": "MATERIAL_CONTRADICTION",
+          "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+          "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+          "source_id": "SCORE",
+          "source_locator": "rubric; country toggle + CSS; JSON-LD",
+          "time_support": {
+            "end": null,
+            "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL",
+            "start": null,
+            "timezone": "UNKNOWN"
+          },
+          "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+          "unit": "published_policy_percent_label",
+          "value": null,
+          "version": "published 2021-03-29; modified 2025-09-25"
+        },
+        {
+          "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+          "claim": "Australian forecast article metadata, author Jessica Gregory; not an observed future outcome",
+          "claim_id": "AU_COUNTRY_REPORT",
+          "contradictions": [],
+          "evidence_type": "POLICY_ASSESSMENT",
+          "geographic_support": [
+            "M49:036"
+          ],
+          "method_id": "COUNTRY_REPORT",
+          "not_inferable_from": [
+            "Forecast narrative cannot become 2026 observed emissions or ecological benefit"
+          ],
+          "origin": "PUBLIC_METADATA",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+          "sha_if_downloaded": null,
+          "source_id": "SC_AU_REPORT",
+          "source_locator": "title, byline, publication/update line and engagement resources",
+          "time_support": {
+            "end": null,
+            "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL",
+            "start": null,
+            "timezone": "UNKNOWN"
+          },
+          "uncertainty": "Forecast narrative cannot become 2026 observed emissions or ecological benefit",
+          "unit": "not_applicable",
+          "value": null,
+          "version": "2026-03-25 published; 2026-05-08 updated"
+        }
+      ],
+      "policies": [
+        {
+          "category": "some-progress",
+          "contradictions": [
+            "AU card base year 2030 versus AU_ACT s10 base year 2005"
+          ],
+          "country_id": "M49:036",
+          "display_name": "Australia",
+          "evidence_type": "POLICY_ASSESSMENT",
+          "id": "POLICY:036",
+          "not_inferable": "observed reduction, emissions factor, warming benefit or current legal compliance",
+          "review_state": "MATERIAL_CONTRADICTION",
+          "score": 50,
+          "selection_reason": "ENSO条件关联；既有Batlow与甲烷审查接口",
+          "source_fact": {
+            "basis": "PUBLISHED_CSS_LABEL_NOT_RECALCULATED",
+            "category": "some-progress",
+            "css_class": "yellow fifty",
+            "locator": "country toggle title + inline CSS ::after",
+            "name": "Australia",
+            "published_percent_label": 50
+          },
+          "source_id": "SCORE",
+          "source_locator": "Australia card",
+          "time_semantics": "ASSESSMENT_VALIDITY_UNKNOWN",
+          "type": "COUNTRY_POLICY_SCORE",
+          "unit": "published_policy_percent_label",
+          "valid_time": "UNKNOWN",
+          "version": "2025-09-25T03:51:15+00:00"
+        }
+      ],
+      "relations": [
+        {
+          "applicability": "No particular event attribution, rainfall amount or CH4 response",
+          "assumptions": "Other modes, trend and regional heterogeneity confound the relation",
+          "causality": "CONDITIONAL_ASSOCIATION",
+          "counterevidence": "A wet regional event during El Nino refutes a deterministic drought rule, not the probabilistic mechanism",
+          "direction": "from_to",
+          "evidence_ids": [
+            "ENSO_MECHANISM"
+          ],
+          "from_id": "ATM_WALKER",
+          "id": "E2",
+          "numeric_weight": null,
+          "process": "enso",
+          "spatial_scale": "Australia/Indonesia context",
+          "status": "SOURCE_VERIFIED",
+          "temporal_scale": "season and event dependent",
+          "to_id": "REGIONAL_RAIN",
+          "type": "CLIMATE_TELECONNECTION",
+          "unit": "not_applicable_qualitative",
+          "version": "atlas-research-1/2026-11-09"
+        }
+      ],
+      "scientific_admission": "PENDING",
+      "scope": "METADATA_AND_QUALITATIVE_LINKS; no geometry overlay",
+      "sources": [
+        {
+          "limitations": "Modification date is not a per-country policy validity date",
+          "locator": "rubric; country toggle + CSS; JSON-LD",
+          "publication_mode": "FACTS_LINKS_OWN_ANALYSIS_ONLY",
+          "publisher": "Climate Scorecard",
+          "raw_receipt_id": "scorecard",
+          "raw_redistributed": false,
+          "retrieved_date": "2026-11-09",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+          "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+          "source_id": "SCORE",
+          "theme_id": "SCORE",
+          "url": "https://www.climatescorecard.org/scorecard/",
+          "version": "published 2021-03-29; modified 2025-09-25"
+        },
+        {
+          "limitations": "A forecast article; underlying inventory references were not independently reanalysed",
+          "locator": "title, byline, publication/update line and engagement resources",
+          "publication_mode": "FACTS_LINKS_OWN_ANALYSIS_ONLY",
+          "publisher": "Climate Scorecard / Jessica Gregory",
+          "raw_receipt_id": null,
+          "raw_redistributed": false,
+          "retrieved_date": "2026-11-09",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+          "sha_if_downloaded": null,
+          "source_id": "SC_AU_REPORT",
+          "theme_id": "SCORE",
+          "url": "https://www.climatescorecard.org/2026/03/australia-2026-emissions-forecast/",
+          "version": "2026-03-25 published; 2026-05-08 updated"
+        },
+        {
+          "limitations": "Teleconnections likely not certain; third-party images not copied",
+          "locator": "Impacts; Forecasting; RONI transition paragraph",
+          "publication_mode": "FACTS_LINKS_OWN_ANALYSIS_ONLY",
+          "publisher": "NOAA",
+          "raw_receipt_id": null,
+          "raw_redistributed": false,
+          "retrieved_date": "2026-11-09",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "PUBLIC_FACTUAL_METADATA_ONLY",
+          "sha_if_downloaded": null,
+          "source_id": "ENSO",
+          "theme_id": "ENSO",
+          "url": "https://www.noaa.gov/understanding-el-nino",
+          "version": "snapshot 2026-11-09; RONI transition 2026-02-01"
+        }
+      ],
+      "units": [
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "REGIONAL_RAIN",
+          "license": "PUBLIC_FACTUAL_METADATA_ONLY",
+          "name": "区域降雨风险支持域",
+          "scale": "Australia/Indonesia contextual association, not forecasts",
+          "source": "ENSO",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "snapshot 2026-11-09; RONI transition 2026-02-01"
+        }
+      ],
+      "unknown": [
+        "Unmatched or unknown time records are excluded from time-filtered results",
+        "No causal magnitude, admitted emissions or scientific promotion"
+      ]
+    },
+    "malaysia_gap": {
+      "country_ids": [
+        "M49:458"
+      ],
+      "evidence": [
+        {
+          "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+          "claim": "Published policy label or registry submission metadata for Malaysia",
+          "claim_id": "EV:POLICY:458",
+          "contradictions": [],
+          "evidence_type": "POLICY_COMMITMENT",
+          "geographic_support": [
+            "M49:458"
+          ],
+          "method_id": "POLICY_COMMITMENT",
+          "not_inferable_from": [
+            "observed reduction, emissions factor, warming benefit or current legal compliance"
+          ],
+          "origin": "PUBLIC_METADATA",
+          "review_state": "EVIDENCE_INSUFFICIENT",
+          "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+          "sha_if_downloaded": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+          "source_id": "NDC",
+          "source_locator": "party/version/submission-date rows",
+          "time_support": {
+            "end": null,
+            "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL",
+            "start": null,
+            "timezone": "UNKNOWN"
+          },
+          "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+          "unit": "not_applicable",
+          "value": null,
+          "version": "web excerpt snapshot 2026-11-09"
+        }
+      ],
+      "policies": [
+        {
+          "category": "NOT_COVERED_ON_AUDITED_SCORECARD",
+          "contradictions": [],
+          "country_id": "M49:458",
+          "display_name": "Malaysia",
+          "evidence_type": "POLICY_COMMITMENT",
+          "id": "POLICY:458",
+          "not_inferable": "observed reduction, emissions factor, warming benefit or current legal compliance",
+          "review_state": "EVIDENCE_INSUFFICIENT",
+          "score": null,
+          "selection_reason": "海洋大陆、湿热生态；评分覆盖缺口",
+          "source_fact": null,
+          "source_id": "NDC",
+          "source_locator": "Malaysia NDC 3.0 registry row",
+          "time_semantics": "SUBMISSION_DATE_ONLY",
+          "type": "POLICY_COMMITMENT",
+          "unit": "not_applicable",
+          "valid_time": "2025-10-24",
+          "version": "NDC 3.0 registry metadata"
+        }
+      ],
+      "relations": [],
+      "scientific_admission": "PENDING",
+      "scope": "METADATA_AND_QUALITATIVE_LINKS; no geometry overlay",
+      "sources": [
+        {
+          "limitations": "Local HTTP200 was a 212-byte challenge; only independent web-rendered registry metadata read; no PDF targets admitted",
+          "locator": "party/version/submission-date rows",
+          "publication_mode": "FACTS_LINKS_OWN_ANALYSIS_ONLY",
+          "publisher": "UNFCCC",
+          "raw_receipt_id": "ndc",
+          "raw_redistributed": false,
+          "retrieved_date": "2026-11-09",
+          "review_state": "EVIDENCE_INSUFFICIENT",
+          "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+          "sha_if_downloaded": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+          "source_id": "NDC",
+          "theme_id": "NDC",
+          "url": "https://unfccc.int/NDCREG",
+          "version": "web excerpt snapshot 2026-11-09"
+        }
+      ],
+      "units": [
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "COASTAL",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "珊瑚与沿岸生态接口",
+          "scale": "ecosystem class only; no habitat polygons",
+          "source": "IUCN",
+          "status": "METADATA_ONLY",
+          "system": "ocean",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "GET 2.0 (2020), intentionally frozen"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "TERRESTRIAL",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "陆地生物群区分类接口",
+          "scale": "forest/wetland/peatland/dryland/agroecosystem classes",
+          "source": "IUCN",
+          "status": "METADATA_ONLY",
+          "system": "terrestrial",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "GET 2.0 (2020), intentionally frozen"
+        }
+      ],
+      "unknown": [
+        "Unmatched or unknown time records are excluded from time-filtered results",
+        "No causal magnitude, admitted emissions or scientific promotion"
+      ]
+    },
+    "methane_trace": [
+      {
+        "applicability": "Local ppm is not flux, global burden or responsibility share",
+        "assumptions": "All source/sink terms and air mass needed for any quantitative budget",
+        "causality": "MECHANISM_SUPPORTED",
+        "counterevidence": "Concentration changes also reflect transport and sink variation",
+        "direction": "from_to",
+        "evidence_ids": [
+          "CH4_PHYSICS",
+          "GML_GLOBAL"
+        ],
+        "from_id": "CH4_SOURCE",
+        "id": "M1",
+        "numeric_weight": null,
+        "process": "methane",
+        "spatial_scale": "local sources to global burden",
+        "status": "SOURCE_VERIFIED",
+        "temporal_scale": "transport and chemical loss times differ",
+        "to_id": "ATM_GLOBAL",
+        "type": "BIOGEOCHEMICAL_CYCLE",
+        "unit": "not_applicable_qualitative",
+        "version": "atlas-research-1/2026-11-09"
+      },
+      {
+        "applicability": "Existing methodology linkage only, no GWP altitude adjustment",
+        "assumptions": "Global abundance, background gases and formula version required",
+        "causality": "MECHANISM_SUPPORTED",
+        "counterevidence": "AGGI excludes slow feedbacks and cannot validate local temperatures",
+        "direction": "from_to",
+        "evidence_ids": [
+          "AGGI_METHOD"
+        ],
+        "from_id": "ATM_GLOBAL",
+        "id": "M2",
+        "numeric_weight": null,
+        "process": "methane",
+        "spatial_scale": "global mean radiation",
+        "status": "SOURCE_VERIFIED",
+        "temporal_scale": "annual forcing product; no new run",
+        "to_id": "FORCING",
+        "type": "BIOGEOCHEMICAL_CYCLE",
+        "unit": "not_applicable_qualitative",
+        "version": "atlas-research-1/2026-11-09"
+      },
+      {
+        "applicability": "Boundary is research gap; not denial of established greenhouse mechanism",
+        "assumptions": "A separately admitted response model and observational validation would be needed",
+        "causality": "NOT_VALIDATED_HERE",
+        "counterevidence": "Internal variability and other forcings prevent local causal inference",
+        "direction": "from_to",
+        "evidence_ids": [
+          "RESPONSE_GAP"
+        ],
+        "from_id": "FORCING",
+        "id": "M3",
+        "numeric_weight": null,
+        "process": "methane",
+        "spatial_scale": "global to regional response unresolved",
+        "status": "BLOCKED",
+        "temporal_scale": "response times/kernel UNKNOWN",
+        "to_id": "CLIMATE_RESPONSE",
+        "type": "HYPOTHESIS_ONLY",
+        "unit": "not_applicable_qualitative",
+        "version": "atlas-research-1/2026-11-09"
+      }
+    ],
+    "nile_ethiopia": {
+      "country_ids": [
+        "M49:231"
+      ],
+      "evidence": [
+        {
+          "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+          "claim": "NBI technical station descriptions identify directional cross-border monitoring context",
+          "claim_id": "NILE_CONNECT",
+          "contradictions": [],
+          "evidence_type": "SCIENTIFIC_LITERATURE",
+          "geographic_support": [
+            "BLUE_UPPER",
+            "BLUE_LOWER",
+            "MAIN_NILE",
+            "BASIN_NILE"
+          ],
+          "method_id": "qualitative_source_audit",
+          "not_inferable_from": [
+            "No numerical magnitude or causal attribution established"
+          ],
+          "origin": "PUBLIC_METADATA",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+          "sha_if_downloaded": null,
+          "source_id": "NBI",
+          "source_locator": "Eldeim, Khartoum, Halfaya Bridge, Dongola station rows",
+          "time_support": {
+            "end": null,
+            "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL",
+            "start": null,
+            "timezone": "UNKNOWN"
+          },
+          "uncertainty": "No numerical magnitude or causal attribution established",
+          "unit": "not_applicable",
+          "value": null,
+          "version": "undated page snapshot 2026-11-09"
+        },
+        {
+          "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+          "claim": "Published policy label or registry submission metadata for Ethiopia",
+          "claim_id": "EV:POLICY:231",
+          "contradictions": [],
+          "evidence_type": "POLICY_COMMITMENT",
+          "geographic_support": [
+            "M49:231"
+          ],
+          "method_id": "POLICY_COMMITMENT",
+          "not_inferable_from": [
+            "observed reduction, emissions factor, warming benefit or current legal compliance"
+          ],
+          "origin": "PUBLIC_METADATA",
+          "review_state": "EVIDENCE_INSUFFICIENT",
+          "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+          "sha_if_downloaded": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+          "source_id": "NDC",
+          "source_locator": "party/version/submission-date rows",
+          "time_support": {
+            "end": null,
+            "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL",
+            "start": null,
+            "timezone": "UNKNOWN"
+          },
+          "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+          "unit": "not_applicable",
+          "value": null,
+          "version": "web excerpt snapshot 2026-11-09"
+        }
+      ],
+      "policies": [
+        {
+          "category": "NOT_COVERED_ON_AUDITED_SCORECARD",
+          "contradictions": [],
+          "country_id": "M49:231",
+          "display_name": "Ethiopia",
+          "evidence_type": "POLICY_COMMITMENT",
+          "id": "POLICY:231",
+          "not_inferable": "observed reduction, emissions factor, warming benefit or current legal compliance",
+          "review_state": "EVIDENCE_INSUFFICIENT",
+          "score": null,
+          "selection_reason": "跨境上游；官方NDC登记替补政策背景",
+          "source_fact": null,
+          "source_id": "NDC",
+          "source_locator": "Ethiopia NDC 3.0 registry row",
+          "time_semantics": "SUBMISSION_DATE_ONLY",
+          "type": "POLICY_COMMITMENT",
+          "unit": "not_applicable",
+          "valid_time": "2025-09-26",
+          "version": "NDC 3.0 registry metadata"
+        }
+      ],
+      "relations": [
+        {
+          "applicability": "No quantified downstream effect or allocation rights",
+          "assumptions": "Direction from reach topology, not nationality",
+          "causality": "MECHANISM_SUPPORTED",
+          "counterevidence": "Reservoir releases, abstraction, lateral tributaries and storage prevent equal upstream/downstream instantaneous flow",
+          "direction": "from_to",
+          "evidence_ids": [
+            "NILE_CONNECT"
+          ],
+          "from_id": "BLUE_UPPER",
+          "id": "N1",
+          "numeric_weight": null,
+          "process": "nile_flow",
+          "spatial_scale": "cross-border river reaches",
+          "status": "SOURCE_VERIFIED",
+          "temporal_scale": "travel time UNKNOWN; daily/seasonal storage matters",
+          "to_id": "BLUE_LOWER",
+          "type": "PHYSICAL_TRANSPORT",
+          "unit": "not_applicable_qualitative",
+          "version": "atlas-research-1/2026-11-09"
+        }
+      ],
+      "scientific_admission": "PENDING",
+      "scope": "METADATA_AND_QUALITATIVE_LINKS; no geometry overlay",
+      "sources": [
+        {
+          "limitations": "Station purpose supports qualitative connectivity, not measured discharge, rights or attribution",
+          "locator": "Eldeim, Khartoum, Halfaya Bridge, Dongola station rows",
+          "publication_mode": "FACTS_LINKS_OWN_ANALYSIS_ONLY",
+          "publisher": "Nile Basin Initiative",
+          "raw_receipt_id": null,
+          "raw_redistributed": false,
+          "retrieved_date": "2026-11-09",
+          "review_state": "SOURCE_VERIFIED",
+          "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+          "sha_if_downloaded": null,
+          "source_id": "NBI",
+          "theme_id": "NBI",
+          "url": "https://nilebasin.org/hydromet/map",
+          "version": "undated page snapshot 2026-11-09"
+        },
+        {
+          "limitations": "Local HTTP200 was a 212-byte challenge; only independent web-rendered registry metadata read; no PDF targets admitted",
+          "locator": "party/version/submission-date rows",
+          "publication_mode": "FACTS_LINKS_OWN_ANALYSIS_ONLY",
+          "publisher": "UNFCCC",
+          "raw_receipt_id": "ndc",
+          "raw_redistributed": false,
+          "retrieved_date": "2026-11-09",
+          "review_state": "EVIDENCE_INSUFFICIENT",
+          "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+          "sha_if_downloaded": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+          "source_id": "NDC",
+          "theme_id": "NDC",
+          "url": "https://unfccc.int/NDCREG",
+          "version": "web excerpt snapshot 2026-11-09"
+        }
+      ],
+      "units": [
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "BLUE_UPPER",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "埃塞俄比亚青尼罗河上游",
+          "scale": "upstream reach context",
+          "source": "NBI",
+          "status": "METADATA_ONLY",
+          "system": "hydrology",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "undated page snapshot 2026-11-09"
+        }
+      ],
+      "unknown": [
+        "Unmatched or unknown time records are excluded from time-filtered results",
+        "No causal magnitude, admitted emissions or scientific promotion"
+      ]
+    },
+    "out_of_time": {
+      "country_ids": [
+        "M49:012",
+        "M49:818",
+        "M49:434",
+        "M49:504",
+        "M49:729",
+        "M49:788",
+        "M49:732",
+        "M49:086",
+        "M49:108",
+        "M49:174",
+        "M49:262",
+        "M49:232",
+        "M49:231",
+        "M49:260",
+        "M49:404",
+        "M49:450",
+        "M49:454",
+        "M49:480",
+        "M49:175",
+        "M49:508",
+        "M49:638",
+        "M49:646",
+        "M49:690",
+        "M49:706",
+        "M49:728",
+        "M49:800",
+        "M49:834",
+        "M49:894",
+        "M49:716",
+        "M49:024",
+        "M49:120",
+        "M49:140",
+        "M49:148",
+        "M49:178",
+        "M49:180",
+        "M49:226",
+        "M49:266",
+        "M49:678",
+        "M49:072",
+        "M49:748",
+        "M49:426",
+        "M49:516",
+        "M49:710",
+        "M49:204",
+        "M49:854",
+        "M49:132",
+        "M49:384",
+        "M49:270",
+        "M49:288",
+        "M49:324",
+        "M49:624",
+        "M49:430",
+        "M49:466",
+        "M49:478",
+        "M49:562",
+        "M49:566",
+        "M49:654",
+        "M49:686",
+        "M49:694",
+        "M49:768",
+        "M49:660",
+        "M49:028",
+        "M49:533",
+        "M49:044",
+        "M49:052",
+        "M49:535",
+        "M49:092",
+        "M49:136",
+        "M49:192",
+        "M49:531",
+        "M49:212",
+        "M49:214",
+        "M49:308",
+        "M49:312",
+        "M49:332",
+        "M49:388",
+        "M49:474",
+        "M49:500",
+        "M49:630",
+        "M49:652",
+        "M49:659",
+        "M49:662",
+        "M49:663",
+        "M49:670",
+        "M49:534",
+        "M49:780",
+        "M49:796",
+        "M49:850",
+        "M49:084",
+        "M49:188",
+        "M49:222",
+        "M49:320",
+        "M49:340",
+        "M49:484",
+        "M49:558",
+        "M49:591",
+        "M49:032",
+        "M49:068",
+        "M49:074",
+        "M49:076",
+        "M49:152",
+        "M49:170",
+        "M49:218",
+        "M49:238",
+        "M49:254",
+        "M49:328",
+        "M49:600",
+        "M49:604",
+        "M49:239",
+        "M49:740",
+        "M49:858",
+        "M49:862",
+        "M49:060",
+        "M49:124",
+        "M49:304",
+        "M49:666",
+        "M49:840",
+        "M49:010",
+        "M49:398",
+        "M49:417",
+        "M49:762",
+        "M49:795",
+        "M49:860",
+        "M49:156",
+        "M49:344",
+        "M49:446",
+        "M49:408",
+        "M49:392",
+        "M49:496",
+        "M49:410",
+        "M49:096",
+        "M49:116",
+        "M49:360",
+        "M49:418",
+        "M49:458",
+        "M49:104",
+        "M49:608",
+        "M49:702",
+        "M49:764",
+        "M49:626",
+        "M49:704",
+        "M49:004",
+        "M49:050",
+        "M49:064",
+        "M49:356",
+        "M49:364",
+        "M49:462",
+        "M49:524",
+        "M49:586",
+        "M49:144",
+        "M49:051",
+        "M49:031",
+        "M49:048",
+        "M49:196",
+        "M49:268",
+        "M49:368",
+        "M49:376",
+        "M49:400",
+        "M49:414",
+        "M49:422",
+        "M49:512",
+        "M49:634",
+        "M49:682",
+        "M49:275",
+        "M49:760",
+        "M49:792",
+        "M49:784",
+        "M49:887",
+        "M49:112",
+        "M49:100",
+        "M49:203",
+        "M49:348",
+        "M49:616",
+        "M49:498",
+        "M49:642",
+        "M49:643",
+        "M49:703",
+        "M49:804",
+        "M49:248",
+        "M49:208",
+        "M49:233",
+        "M49:234",
+        "M49:246",
+        "M49:831",
+        "M49:352",
+        "M49:372",
+        "M49:833",
+        "M49:832",
+        "M49:428",
+        "M49:440",
+        "M49:578",
+        "M49:744",
+        "M49:752",
+        "M49:826",
+        "M49:008",
+        "M49:020",
+        "M49:070",
+        "M49:191",
+        "M49:292",
+        "M49:300",
+        "M49:336",
+        "M49:380",
+        "M49:470",
+        "M49:499",
+        "M49:807",
+        "M49:620",
+        "M49:674",
+        "M49:688",
+        "M49:705",
+        "M49:724",
+        "M49:040",
+        "M49:056",
+        "M49:250",
+        "M49:276",
+        "M49:438",
+        "M49:442",
+        "M49:492",
+        "M49:528",
+        "M49:756",
+        "M49:036",
+        "M49:162",
+        "M49:166",
+        "M49:334",
+        "M49:554",
+        "M49:574",
+        "M49:242",
+        "M49:540",
+        "M49:598",
+        "M49:090",
+        "M49:548",
+        "M49:316",
+        "M49:296",
+        "M49:584",
+        "M49:583",
+        "M49:520",
+        "M49:580",
+        "M49:585",
+        "M49:581",
+        "M49:016",
+        "M49:184",
+        "M49:258",
+        "M49:570",
+        "M49:612",
+        "M49:882",
+        "M49:772",
+        "M49:776",
+        "M49:798",
+        "M49:876"
+      ],
+      "evidence": [],
+      "policies": [],
+      "relations": [],
+      "scientific_admission": "PENDING",
+      "scope": "METADATA_AND_QUALITATIVE_LINKS; no geometry overlay",
+      "sources": [],
+      "units": [
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "AMAZON_CONTEXT",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "亚马孙研究候选背景",
+          "scale": "author context label; no authoritative boundary acquired",
+          "source": "IUCN",
+          "status": "METADATA_ONLY",
+          "system": "terrestrial",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "GET 2.0 (2020), intentionally frozen"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "ATM_BOUNDARY",
+          "license": "INHERITED_REFERENCE_ONLY",
+          "name": "边界层观测支持域",
+          "scale": "BRW point sampling, no global spatial interpolation",
+          "source": "PR140",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "77a35e2723372a290579e4549a86781e2be65c04"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "ATM_GLOBAL",
+          "license": "PUBLIC_FACTUAL_METADATA_ONLY",
+          "name": "大气全球混合库",
+          "scale": "global; not a uniform local field",
+          "source": "GML",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "2026-10"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "ATM_WALKER",
+          "license": "PUBLIC_FACTUAL_METADATA_ONLY",
+          "name": "Walker 环流研究单元",
+          "scale": "tropical Pacific atmosphere",
+          "source": "ENSO",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "snapshot 2026-11-09; RONI transition 2026-02-01"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "BASIN_NILE",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "尼罗河跨境流域",
+          "scale": "drainage basin; not main-stem passage through every country",
+          "source": "NBI",
+          "status": "METADATA_ONLY",
+          "system": "hydrology",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "undated page snapshot 2026-11-09"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "BLUE_LOWER",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "苏丹青尼罗河下游",
+          "scale": "Eldeim to Khartoum context",
+          "source": "NBI",
+          "status": "METADATA_ONLY",
+          "system": "hydrology",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "undated page snapshot 2026-11-09"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "BLUE_UPPER",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "埃塞俄比亚青尼罗河上游",
+          "scale": "upstream reach context",
+          "source": "NBI",
+          "status": "METADATA_ONLY",
+          "system": "hydrology",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "undated page snapshot 2026-11-09"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "BOREAL_CONTEXT",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "北方森林与冻土候选背景",
+          "scale": "author context label; no measured permafrost fraction",
+          "source": "IUCN",
+          "status": "METADATA_ONLY",
+          "system": "terrestrial",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "GET 2.0 (2020), intentionally frozen"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "CH4_SOURCE",
+          "license": "INHERITED_REFERENCE_ONLY",
+          "name": "甲烷源项研究接口",
+          "scale": "waste/energy/agriculture; no real facility rate",
+          "source": "PR143",
+          "status": "METADATA_ONLY",
+          "system": "human",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "746825e65b8ddbd0f518709c94d9476df107208b"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "CLIMATE_RESPONSE",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "气候响应未运行接口",
+          "scale": "response kernel, feedbacks and attribution NOT_ADMITTED",
+          "source": "IPCC",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "2021"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "CLIMATE_ZONES",
+          "license": "CC_BY_4_0_INDEXED_NOT_PAYLOAD_VERIFIED",
+          "name": "Köppen-Geiger 分类接口",
+          "scale": "1 km product metadata; no zone assignment",
+          "source": "KG",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "V3 landing / 2023 paper"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "COASTAL",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "珊瑚与沿岸生态接口",
+          "scale": "ecosystem class only; no habitat polygons",
+          "source": "IUCN",
+          "status": "METADATA_ONLY",
+          "system": "ocean",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "GET 2.0 (2020), intentionally frozen"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "CRYOSPHERE",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "冰川/海冰/积雪/冻土接口",
+          "scale": "class registration; extent and epoch UNKNOWN",
+          "source": "IUCN",
+          "status": "METADATA_ONLY",
+          "system": "cryosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "GET 2.0 (2020), intentionally frozen"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "FORCING",
+          "license": "PUBLIC_FACTUAL_METADATA_ONLY",
+          "name": "全球辐射强迫接口",
+          "scale": "global effective forcing, W m-2; not local temperature",
+          "source": "AGGI",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "2025 AGGI update, retrieved 2026-11-09"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "HIGH_SEAS",
+          "license": "PUBLIC_DOMAIN",
+          "name": "公海外部索引",
+          "scale": "legal boundaries UNKNOWN; no country owner",
+          "source": "NE",
+          "status": "METADATA_ONLY",
+          "system": "ocean",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "product version UNKNOWN; terms snapshot 2026-11-09"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "HYDROBASINS",
+          "license": "CUSTOM_HYDROSHEDS_TERMS_NOT_FULLY_AUDITED",
+          "name": "全球嵌套流域分类接口",
+          "scale": "metadata only, Antarctica excluded",
+          "source": "HYDRO",
+          "status": "METADATA_ONLY",
+          "system": "hydrology",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "HydroBASINS version 1"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "LAND_USE",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "土地利用及农业接口",
+          "scale": "system class only; no activity inventory",
+          "source": "IUCN",
+          "status": "METADATA_ONLY",
+          "system": "human",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "GET 2.0 (2020), intentionally frozen"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "MAIN_NILE",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "尼罗河干流苏丹—埃及",
+          "scale": "confluence to Aswan context",
+          "source": "NBI",
+          "status": "METADATA_ONLY",
+          "system": "hydrology",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "undated page snapshot 2026-11-09"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "PACIFIC",
+          "license": "PUBLIC_FACTUAL_METADATA_ONLY",
+          "name": "热带太平洋",
+          "scale": "basin context, not EEZ sovereignty",
+          "source": "ENSO",
+          "status": "METADATA_ONLY",
+          "system": "ocean",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "snapshot 2026-11-09; RONI transition 2026-02-01"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "POLAR",
+          "license": "PUBLIC_DOMAIN",
+          "name": "极地独立研究索引",
+          "scale": "no national assignment; polar geometry absent",
+          "source": "NE",
+          "status": "METADATA_ONLY",
+          "system": "cryosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "product version UNKNOWN; terms snapshot 2026-11-09"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "POLICY_CONTEXT",
+          "license": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+          "name": "政策承诺与评价层",
+          "scale": "country assessments; never physical parameters",
+          "source": "SCORE",
+          "status": "METADATA_ONLY",
+          "system": "governance",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "published 2021-03-29; modified 2025-09-25"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "REGIONAL_RAIN",
+          "license": "PUBLIC_FACTUAL_METADATA_ONLY",
+          "name": "区域降雨风险支持域",
+          "scale": "Australia/Indonesia contextual association, not forecasts",
+          "source": "ENSO",
+          "status": "METADATA_ONLY",
+          "system": "atmosphere",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "snapshot 2026-11-09; RONI transition 2026-02-01"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "SUPPLY_CHAIN",
+          "license": "INHERITED_REFERENCE_ONLY",
+          "name": "贸易与供应链接口",
+          "scale": "unpopulated research class; no embodied emissions",
+          "source": "TASK",
+          "status": "METADATA_ONLY",
+          "system": "human",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "a5c479b07b4a3a7e654e188505657f5715d39b1c"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "TERRESTRIAL",
+          "license": "UNKNOWN_METADATA_LINKS_ONLY",
+          "name": "陆地生物群区分类接口",
+          "scale": "forest/wetland/peatland/dryland/agroecosystem classes",
+          "source": "IUCN",
+          "status": "METADATA_ONLY",
+          "system": "terrestrial",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "GET 2.0 (2020), intentionally frozen"
+        },
+        {
+          "CRS": "NOT_APPLICABLE_NO_GEOMETRY",
+          "confidence": "NOT_QUANTIFIED",
+          "coverage": "METADATA_OR_QUALITATIVE_CONTEXT_ONLY",
+          "geometry_ref": null,
+          "id": "TREATY_METHOD",
+          "license": "INHERITED_REFERENCE_ONLY",
+          "name": "条约/许可/核算方法接口",
+          "scale": "jurisdiction-version reporting period required",
+          "source": "PR145",
+          "status": "METADATA_ONLY",
+          "system": "governance",
+          "uncertainty": "No geometry, area fraction, numerical influence or local calibration admitted",
+          "valid_time": "UNKNOWN",
+          "version": "ae1050a621ac794e447f9ac047865d90b2f04b03"
+        }
+      ],
+      "unknown": [
+        "Unmatched or unknown time records are excluded from time-filtered results",
+        "No causal magnitude, admitted emissions or scientific promotion"
+      ]
+    }
+  },
+  "validation": {
+    "countries": 248,
+    "deep_cases": 12,
+    "edges": 7,
+    "evidence_records": 24,
+    "geometry_coverage_fraction": 0,
+    "scientific_admission": "PENDING",
+    "status": "LOCAL_VERIFIED",
+    "units": 25
+  }
+}

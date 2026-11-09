@@ -1,0 +1,309 @@
+........................................................................................................................................................EEEE.............................................................s...................................................................................................................................................................................................................................................................................................EEEE...............................................
+======================================================================
+ERROR: test_health_truthfully_reports_manual_allowlisted_network_capability (tests.test_environmental_question_runtime_server.EnvironmentalQuestionRuntimeServerTests.test_health_truthfully_reports_manual_allowlisted_network_capability)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<WORKTREE>\tests\test_environmental_question_runtime_server.py", line 57, in test_health_truthfully_reports_manual_allowlisted_network_capability
+    status, health = self.request("GET", "/api/health")
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKTREE>\tests\test_environmental_question_runtime_server.py", line 29, in request
+    conn.request(method, path, payload, {"Host": "127.0.0.1", "Content-Type": "application/json"})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_http_flow_to_quarantined_result (tests.test_environmental_question_runtime_server.EnvironmentalQuestionRuntimeServerTests.test_http_flow_to_quarantined_result)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<WORKTREE>\tests\test_environmental_question_runtime_server.py", line 67, in test_http_flow_to_quarantined_result
+    status, session = self.request("POST", "/api/questions", {"question": QUESTION}); self.assertEqual(status, 201)
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKTREE>\tests\test_environmental_question_runtime_server.py", line 29, in request
+    conn.request(method, path, payload, {"Host": "127.0.0.1", "Content-Type": "application/json"})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_page_explains_real_plan_and_synthetic_run_boundary (tests.test_environmental_question_runtime_server.EnvironmentalQuestionRuntimeServerTests.test_page_explains_real_plan_and_synthetic_run_boundary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<WORKTREE>\tests\test_environmental_question_runtime_server.py", line 34, in test_page_explains_real_plan_and_synthetic_run_boundary
+    status, html = self.request("GET", "/")
+                   ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "<WORKTREE>\tests\test_environmental_question_runtime_server.py", line 29, in request
+    conn.request(method, path, payload, {"Host": "127.0.0.1", "Content-Type": "application/json"})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_persistent_program_http_flow_without_network (tests.test_environmental_question_runtime_server.EnvironmentalQuestionRuntimeServerTests.test_persistent_program_http_flow_without_network)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<WORKTREE>\tests\test_environmental_question_runtime_server.py", line 75, in test_persistent_program_http_flow_without_network
+    status, program = self.request("GET", "/api/programs/COOMA-WATER-FIRE-WASTEWATER-WATCH")
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKTREE>\tests\test_environmental_question_runtime_server.py", line 29, in request
+    conn.request(method, path, payload, {"Host": "127.0.0.1", "Content-Type": "application/json"})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_complete_http_workflow (tests.test_scientist_runtime_server.ScientistRuntimeServerTests.test_complete_http_workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<WORKTREE>\tests\test_scientist_runtime_server.py", line 87, in test_complete_http_workflow
+    status, session, _ = self.request("POST", "/api/sessions", {"question": question, "session_label": "http-test"})
+                         ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKTREE>\tests\test_scientist_runtime_server.py", line 40, in request
+    connection.request(method, path, payload, headers)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_health_and_html_are_local_and_explain_boundaries (tests.test_scientist_runtime_server.ScientistRuntimeServerTests.test_health_and_html_are_local_and_explain_boundaries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<WORKTREE>\tests\test_scientist_runtime_server.py", line 49, in test_health_and_html_are_local_and_explain_boundaries
+    status, health, response = self.request("GET", "/api/health")
+                               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKTREE>\tests\test_scientist_runtime_server.py", line 40, in request
+    connection.request(method, path, payload, headers)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_host_body_and_transition_controls_refuse_invalid_requests (tests.test_scientist_runtime_server.ScientistRuntimeServerTests.test_host_body_and_transition_controls_refuse_invalid_requests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<WORKTREE>\tests\test_scientist_runtime_server.py", line 102, in test_host_body_and_transition_controls_refuse_invalid_requests
+    status, result, _ = self.request("GET", "/api/health", host="example.com")
+                        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKTREE>\tests\test_scientist_runtime_server.py", line 40, in request
+    connection.request(method, path, payload, headers)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+======================================================================
+ERROR: test_http_hypothesis_revision_is_bounded_and_audited (tests.test_scientist_runtime_server.ScientistRuntimeServerTests.test_http_hypothesis_revision_is_bounded_and_audited)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<WORKTREE>\tests\test_scientist_runtime_server.py", line 66, in test_http_hypothesis_revision_is_bounded_and_audited
+    status, session, _ = self.request("POST", "/api/sessions", {"question": question})
+                         ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKTREE>\tests\test_scientist_runtime_server.py", line 40, in request
+    connection.request(method, path, payload, headers)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "<USERPROFILE>\AppData\Local\Programs\Python\Python314\Lib\socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+----------------------------------------------------------------------
+Ran 560 tests in 8.559s
+
+FAILED (errors=8, skipped=1)
+Generated CCZPS-Lite comparison and multi-scale validation outputs in cczps_lite/output
+Generated CCZPS-Lite comparison and multi-scale validation outputs in cczps_lite/output
+Generated CCZPS-Lite comparison and multi-scale validation outputs in cczps_lite/output
+Generated CCZPS-Lite comparison and multi-scale validation outputs in cczps_lite/output
+Generated CCZPS-Lite comparison and multi-scale validation outputs in cczps_lite/output
+Generated CCZPS-Lite comparison and multi-scale validation outputs in cczps_lite/output
+Generated CCZPS-Lite comparison and multi-scale validation outputs in cczps_lite/output
+Generated CCZPS-Lite comparison and multi-scale validation outputs in cczps_lite/output

@@ -1,0 +1,79 @@
+{
+  "captured_at": "2026-11-09",
+  "frozen_parent": "3bb71785ad2705823a78748c9ba4cd5003becb41",
+  "task_commit": "a5c479b07b4a3a7e654e188505657f5715d39b1c",
+  "prs": [
+    {
+      "number": 145,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/145",
+      "head": "research/climateos-global-method-evidence-ecochain-001",
+      "head_sha": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+      "base": "research/climateos-au-landfill-methane-methods-001",
+      "base_sha": "77a35e2723372a290579e4549a86781e2be65c04",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 129,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/129",
+      "head": "codex/regional-public-os-001-taskbook",
+      "head_sha": "987cc1dc7170204e5eab3d1750590ba463ea9d08",
+      "base": "main",
+      "base_sha": "9eb7577e145e76161f9f1cd8509348b19c2904cc",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 130,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/130",
+      "head": "feature/public-strategy-atlas-web-mvp-20261029",
+      "head_sha": "e3d8f074e0e1ba5e9614c3f4c5a2b973746b2ab7",
+      "base": "research/public-strategy-atlas-20261029",
+      "base_sha": "5b95ec2941b0f0d119204ae1a7387ad280a6d7db",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 143,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/143",
+      "head": "research/climateos-methane-physics-knowledge-engine-001",
+      "head_sha": "746825e65b8ddbd0f518709c94d9476df107208b",
+      "base": "research/climateos-client-ai-science-integration-001",
+      "base_sha": "3576fef07dcc797794f0adbef9b5be1e3e0991e6",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 144,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/144",
+      "head": "research/climateos-au-landfill-methane-methods-001",
+      "head_sha": "77a35e2723372a290579e4549a86781e2be65c04",
+      "base": "research/climateos-methane-physics-knowledge-engine-001",
+      "base_sha": "746825e65b8ddbd0f518709c94d9476df107208b",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    }
+  ],
+  "review_comments": [
+    {
+      "id": 6736737730,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/145#issuecomment-6736737730",
+      "body": "## ChatGPT 独立科学与战略评审回执｜PR #145\n\n**固定交付 HEAD D：`ae1050a621ac794e447f9ac047865d90b2f04b03`**；研究内容 R：`012c3580b8fa425f750f1700097c52c1da64f482`；科学基线 PR #144：`77a35e2723372a290579e4549a86781e2be65c04`。\n\n**结论：ACCEPT_WITH_CONDITIONS — 接受本轮有界全球方法学比较、ECOChain离线分层审查原型、真实开放液相甲烷数据的局部单位复算及非破坏性ECOChain接入审计。** 不代表真实填埋场效果验证、全球认证、正式ECOChain/Enotebook接入、法定方法求解器或生产安全。\n\n### 独立核查范围\n1. GitHub核查PR OPEN/DRAFT/UNMERGED，D与R相差**仅**`HANDOFF_STATUS.json`、`REVIEW_REQUEST.json`；本HEAD无已观察到的PR workflow runs/combined statuses，**CI NOT_TRIGGERED/NOT_VERIFIED**，不能写CI PASS。\n2. 直接审阅`README`、Founder报告、历史ECOChain审计/接入状态、四法域矩阵、来源登记、冲突规则、schema、`reviewer.py`、测试源码、ABC输入/输出、开放片段复算脚本及收据/原始片段归档结果；按源码和输出核对三种状态：\n   - A：三claim `METHOD_ALIGNED` + `RECALCULATED`，**仅指内部作者合成账**，不是AU/US/EU/NZ法定方法符合；\n   - B：`MATERIAL_CONTRADICTION`，含错误相态/单位、重复氧化、横向去向错误；第三claim同时触发原始输入不匹配/质量不守恒；\n   - C：算术`RECALCULATED`但`EVIDENCE_INSUFFICIENT`，缺许可、校准及原始流量。\n3. 独立核对PR144物理手算：`110=15+95`；`110=15+32.7+62.3`；`110=15+31.08+58.92+5` kg CH4/合成区间，`110×12/16=82.5kgC`；未声称真实治理效果。\n4. 对D中`open-fragment-results.json`全部23条`original_mg_L ×0.001 = derived_kg_m3`逐行核对，无数值不符；首条`12.57978→0.01257978`。Zenodo官方记录支持`Sewer CH4` v1及SL1.zip发布者MD5 `111905ec94e77b483048b974c38564e9`；这是**污水溶解相甲烷**，不是填埋气、流量、源强或气候减排。尚未由评审者独立下载ZIP/复核其SHA或运行Python。\n5. 抽核美国40 CFR 98.343文本涉及废物历史CH4生成、气体回收测量、排放估算；欧盟Directive 1999/31/EC Annex I/III涉及收集、处理和监测，不构成统一EU排放计算公式。NZ官方全文403及ISO目录/US公式图阅读限制维持`LIMITED_EXCERPT/METADATA_ONLY`，四法域**不等于**全覆盖、全套法规已核验。\n6. 独立读取历史`ECO_CHAIN_AND_ECO_ENGINE_ROLE.md`与`SYSTEM_RELATIONSHIP_MAP.md`：既有定位确实是生态贡献/证据及长期信任记录，明确**不作为治理权威**。本轮没有找到被批准的canonical入口和真实审批者任命，保留`ECOCHAIN_CANONICAL_NOT_FOUND`；原备忘录保留并附待迁移方案，不造替代系统。\n\n### 三个必须保留的工程/治理条件\n**(1) 分开“内部算术复算”与“申报单位有效”。** B的前两claim在错误`DATA.phase=ambient_air / DATA.unit=ppm`时仍显示`arithmetic=RECALCULATED`，因为它重放了内部固定的kg_CH4合成输入；这是受限原型允许的局部状态，但未来展示须明确命名`INTERNAL_FIXTURE_REPLAY_ONLY`等，不能被解释成按申报单位复算成立。不能把`METHOD_ALIGNED`推至监管法域。\n**(2) 当前信任与评审者独立性仍是模拟。** 来源registry、核心hash和角色表由同一Git树维护，hash链没有外部锚或真实签名；两个角色是测试夹具，尚无真实任命、COI审核、身份认证、独立原件核验。不得标记`EFFECT_VERIFIED`或签发技术/法定证书。\n**(3) 真实数据的适用边界严格保持。** 23条合法公开溶解CH4仅支持单位转换与有限原始字段QC，不能推气相流量、甲烷排放或环境治理结果；完整填埋案例仍`OPEN_CASE_DATA_NOT_READY`。NZ/ISO/US部分原始标准与公式未完全取得，不能把来源索引当全法规审查。\n\n### 接受范围与后续\n软件成果`IMPLEMENTED_SYNTHETIC_TESTED`，真实开放片段`OPEN_FRAGMENT_RECALCULATED_WITH_LIMITS`，ECOChain`ECOCHAIN_CANONICAL_NOT_FOUND`，Enotebook`PENDING_INTEGRATION`，科学准入`PENDING`。既有 D3/P1-A/PR140/PR141/PR143 ChainB/PR144真实设施/Stage3 状态一律不提升。\n\n**NO_IMMEDIATE_REWORK_REQUIRED；保持 Draft，不合并、不部署、不扩真实科学实验、不发证。** 以后若扩大为通用评审器，先明确：申报者原始数据授权及信任根、真实评审角色、方法版本适用、合格独立反证、内部复算与申报有效性的状态分离。下一阶段任务需Founder另行授权。本审查回执是GitHub PR Conversation评论，**不是GitHub原生Approve**。\n\n审查能力声明：审阅固定HEAD源码/文件与归档日志、逐行核算23项派生单位、独立手算三个场景，并查验部分官方网页；没有独立重跑77个Python测试、下载并重校完整SL1.zip、核验全部40工件哈希、独立重读所有付费/受阻标准或进行现场验证。",
+      "created_at": "2026-11-09T09:32:40Z"
+    },
+    {
+      "id": 6735839200,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/144#issuecomment-6735839200",
+      "body": "## ChatGPT 独立只读科学评审｜PR #144（固定 HEAD）\n\n**审阅交付 HEAD D：`77a35e2723372a290579e4549a86781e2be65c04`**；研究内容 R：`3866053f032d83e30d8addf64cb46e7a8d25c8cb`。本评论为对话中经 Founder 转交后形成的审查回执，**不是 GitHub 原生 approve，也不是作者自评**。\n\n**结论：ACCEPT_WITH_CONDITIONS — 接受本轮有界官方方法研究、合成物料账和独立知识包交付；不接受为真实填埋场模型/法定申报/碳信用/Enotebook 正式接入完成。**\n\n### 独立核查\n- 读取固定 D 的 README、Founder 报告、法规版本矩阵、条款交叉表、物料账与测量说明、bridge audit、代码 `mass_balance.py`、`test_mass_balance.py`、合成输入输出、质量记录及 B/C/F 等知识包。\n- GitHub 核对 PR open/draft/not merged；R..D 比较 **仅** HANDOFF_STATUS.json 与 REVIEW_REQUEST.json 两份交接元数据改变；远程 PR workflow runs 与 combined statuses 均无已观察到的检查，故 **CI=NOT_TRIGGERED/NOT_VERIFIED**。\n- 对三组 **作者自设、非现场** 输入独立复算：110=15+95；110=15+32.7+62.3；110=15+31.08+58.92+5（kg CH4/所设区间）。确认 body/pipe/device/cover 四边界和整体 CH4 物种、C 元素账的算术关系。第三场景 5kg 横向离界最终命运 UNKNOWN，不能当作已避免的全球排放。\n- 核对甲烷反应时 16kg CH4 -> 44kg CO2 的化学计量碳守恒，非甲烷分子原样守恒。复用 P1 将显式湿气体条件换算至 15°C 干参考状态的代码结构合理，尚未独立重跑本次 Python。\n- 用联邦法规官方 HTML 独立核实 NGER C21 2026-07-01 汇编及 5.17K/L/M：至少四次测量与 5.17L 的固定分母4同时存在；多于四次如何处理不能擅自改式；5.17M Step2 交叉引用存在文本解释问题，保留逐条核对。来源：https://www.legislation.gov.au/F2008L02309/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html\n- CER 官方页面确认 2025 ACCU 方法燃烧装置至少98%破坏效率、燃烧过程逐分钟监测；**这不是全场捕集率，也不等于每台设备真实实测 DRE**。来源：https://cer.gov.au/schemes/australian-carbon-credit-unit-scheme/accu-scheme-methods/reducing-methane-emissions-landfill-gas-2025-method\n- 知识包七层结构、章节定位、学习题和更新账存在且可供本轮自主学习；正式 Enotebook canonical schema/接纳位置未确认，保持 PENDING_INTEGRATION。\n\n### 必须保留的限制\n1. NGER 5.17L 多于四次测量时的平均口径、5.17M Step2 交叉引用、井基部与地上漏排分类，以及 ACCU 不同装置路径与 WB 扣除，**不得不经新独立核对直接代码化为法定计算**。\n2. 8份原件 SHA/大小、61文件和141链接及30项本地测试是 Codex 归档的本地验证记录；本评审**未独立获取全部8份原件、未重跑测试或完整哈希包**。四份 NSW 下载403、两场址真实数据 DATA_NOT_READY、F 正文未取得必须继续保留。\n3. 合成账本的物理关系可复算，但输入是作者构造，不代表生成量/气体收集/泄漏的实际测定；不证明治理措施的真实因果效果。没有 CI 不写成 CI PASS。\n4. 知识库状态 STANDALONE_REVIEWABLE / PENDING_INTEGRATION；不冒充已正式写入 Enotebook，也不修改既有学习进度。\n\n### 处置\n本轮研究 **ACCEPT_WITH_CONDITIONS / NO_IMMEDIATE_REWORK_REQUIRED**，保持 Draft、不合并、不部署。科学闸门均不提升：D3 DATA_NOT_READY；P1-A PENDING；PR140 NO_VALID_PAIR；PR141 NO_VALID_VERTICAL_PROFILE；PR143 ChainB BLOCKED；Stage3 METHOD_READY_NOT_VALIDATED。未授权真实排放/ACCU/NGER申报、模型扩权、外部联系或购买。\n\n建议下一次 Founder 决策前，优先确认一个合法开放的**同边界、同时段**的气体流量+甲烷组分+状态基准+仪器校准包；如果没有，则下一阶段仍以参数方法核验为主。此建议不自动启动任务。\n\n**审查范围**：GitHub 精确 HEAD 文档与源码只读审阅、三组独立算术核算、官方法规网页关键条款查核、PR/CI 状态查核；不含完整 PDF 独立逐页复读、本地 Python 独立运行或现场科学复现。",
+      "created_at": "2026-11-09T08:43:07Z"
+    }
+  ],
+  "pr143_review": "No separate ChatGPT review observed in returned conversation; author handoff only",
+  "scope_base_branch": "research/cczps-global-scope-evidence-standard-001",
+  "base_pr_search": "NO_PR_OBSERVED; stacked directly onto existing frozen branch"
+}

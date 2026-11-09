@@ -1,0 +1,28 @@
+{
+  "schema_version": "research-handoff/1",
+  "task_id": "GLOBAL-NATURAL-SYSTEMS-EVIDENCE-ATLAS-001",
+  "status": "LOCAL_VERIFIED_REVIEW_READY_WITH_GAPS",
+  "working_head_sha": null,
+  "review_target_content_sha": null,
+  "reviewed_head_sha": null,
+  "source_pr": null,
+  "delivery_head_anchor": "Final new Draft PR comment; D cannot be written self-referentially",
+  "frozen_parent_sha": "3bb71785ad2705823a78748c9ba4cd5003becb41",
+  "scientific_baseline_sha": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+  "scientific_admission": "PENDING",
+  "scientifically_admitted": false,
+  "deployed": false,
+  "regulatory_certification": "NOT_PROVIDED",
+  "scientific_gates": {
+    "D3":"DATA_NOT_READY", "P1-A":"PENDING", "PR140":"NO_VALID_PAIR",
+    "PR141":"NO_VALID_VERTICAL_PROFILE", "PR143_ChainB":"BLOCKED",
+    "PR144_real_facility":"DATA_NOT_READY", "Stage3":"METHOD_READY_NOT_VALIDATED"
+  },
+  "github_delivery_state": "LOCAL_REVIEW_PACKAGE_PREPARED",
+  "response_delivery_state": "NOT_SENT_TO_CHATGPT",
+  "ecochain_integration": "ECOCHAIN_CANONICAL_NOT_FOUND",
+  "enotebook_integration": "PENDING_INTEGRATION",
+  "coverage": {"M49_entries":248,"deep_cases":12,"natural_units":25,"new_source_themes":12,"deep_mechanisms":3,"GIS_downloads":0,"geometry_coverage_fraction":0},
+  "ci": "PENDING_REMOTE_VERIFICATION; final D receipt is in the final review-request comment",
+  "next_action": "Founder forwards exact D to ChatGPT. Then decide one same-boundary measurement admission protocol and canonical governance roles; no automatic new experiment."
+}

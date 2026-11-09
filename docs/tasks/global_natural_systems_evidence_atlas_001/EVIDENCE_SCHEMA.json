@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:climateos:atlas-research-1:evidence",
+  "description": "Task-local additive research projection. Semantic checks in CCZPS adapter; not replacing Evidence Passport.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "calibration_QA",
+      "claim",
+      "claim_id",
+      "contradictions",
+      "evidence_type",
+      "geographic_support",
+      "method_id",
+      "not_inferable_from",
+      "origin",
+      "review_state",
+      "rights",
+      "sha_if_downloaded",
+      "source_id",
+      "source_locator",
+      "time_support",
+      "uncertainty",
+      "unit",
+      "value",
+      "version"
+    ],
+    "properties": {
+      "claim_id": {
+        "type": "string"
+      },
+      "evidence_type": {
+        "enum": [
+          "DERIVED_DATA",
+          "ECOLOGICAL_OUTCOME",
+          "GOVERNANCE_DECISION",
+          "LEGAL_METHOD",
+          "MODEL_OUTPUT",
+          "PHYSICAL_OBSERVATION",
+          "POLICY_ASSESSMENT",
+          "POLICY_COMMITMENT",
+          "SCIENTIFIC_LITERATURE",
+          "SYNTHETIC_TEST"
+        ]
+      },
+      "source_id": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "source_locator": {
+        "type": "string"
+      },
+      "claim": {
+        "type": "string"
+      },
+      "rights": {
+        "type": "string"
+      },
+      "sha_if_downloaded": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "pattern": "^[a-f0-9]{64}$"
+      },
+      "geographic_support": {
+        "type": "array"
+      },
+      "time_support": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "start",
+          "end",
+          "timezone",
+          "semantics"
+        ],
+        "properties": {
+          "start": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "end": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "timezone": {
+            "type": "string"
+          },
+          "semantics": {
+            "type": "string"
+          }
+        }
+      },
+      "method_id": {
+        "type": "string"
+      },
+      "unit": {
+        "type": "string"
+      },
+      "value": {
+        "type": "null"
+      },
+      "uncertainty": {
+        "type": "string"
+      },
+      "calibration_QA": {
+        "type": "string"
+      },
+      "review_state": {
+        "enum": [
+          "BLOCKED",
+          "EVIDENCE_INSUFFICIENT",
+          "MATERIAL_CONTRADICTION",
+          "NOT_ASSESSED",
+          "RECALCULATED",
+          "SOURCE_VERIFIED"
+        ]
+      },
+      "contradictions": {
+        "type": "array"
+      },
+      "not_inferable_from": {
+        "type": "array"
+      },
+      "origin": {
+        "type": "string"
+      }
+    }
+  }
+}

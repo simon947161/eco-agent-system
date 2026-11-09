@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:climateos:atlas-research-1:graph",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "units",
+    "country_links",
+    "edges",
+    "paths"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "atlas-research-1/2026-11-09"
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "CRS",
+          "confidence",
+          "coverage",
+          "geometry_ref",
+          "id",
+          "license",
+          "name",
+          "scale",
+          "source",
+          "status",
+          "system",
+          "uncertainty",
+          "valid_time",
+          "version"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "system": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "geometry_ref": {
+            "type": "null"
+          },
+          "CRS": {
+            "type": "string"
+          },
+          "valid_time": {
+            "type": "string"
+          },
+          "scale": {
+            "type": "string"
+          },
+          "coverage": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string"
+          },
+          "uncertainty": {
+            "type": "string"
+          },
+          "license": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "country_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "country_id",
+          "fraction",
+          "mapping_basis",
+          "relation",
+          "source_id",
+          "status",
+          "unit_id",
+          "version"
+        ],
+        "properties": {
+          "country_id": {
+            "type": "string"
+          },
+          "unit_id": {
+            "type": "string"
+          },
+          "relation": {
+            "type": "string"
+          },
+          "mapping_basis": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "fraction": {
+            "type": "null"
+          },
+          "status": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "applicability",
+          "assumptions",
+          "causality",
+          "counterevidence",
+          "direction",
+          "evidence_ids",
+          "from_id",
+          "id",
+          "numeric_weight",
+          "process",
+          "spatial_scale",
+          "status",
+          "temporal_scale",
+          "to_id",
+          "type",
+          "unit",
+          "version"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "from_id": {
+            "type": "string"
+          },
+          "to_id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "BIOGEOCHEMICAL_CYCLE",
+              "CLIMATE_TELECONNECTION",
+              "ECOLOGICAL_DEPENDENCY",
+              "EMISSION_RESPONSIBILITY",
+              "EXPOSURE_VULNERABILITY",
+              "HYPOTHESIS_ONLY",
+              "OBSERVATION_SUPPORT",
+              "PHYSICAL_TRANSPORT",
+              "POLICY_DEPENDENCY",
+              "SUPPLY_CHAIN_FLOW"
+            ]
+          },
+          "process": {
+            "type": "string"
+          },
+          "direction": {
+            "type": "string"
+          },
+          "spatial_scale": {
+            "type": "string"
+          },
+          "temporal_scale": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array"
+          },
+          "causality": {
+            "type": "string"
+          },
+          "assumptions": {
+            "type": "string"
+          },
+          "counterevidence": {
+            "type": "string"
+          },
+          "applicability": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "numeric_weight": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    "paths": {
+      "type": "object"
+    }
+  }
+}

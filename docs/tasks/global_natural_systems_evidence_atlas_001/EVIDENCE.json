@@ -1,0 +1,734 @@
+[
+  {
+    "claim_id": "NILE_CONNECT",
+    "evidence_type": "SCIENTIFIC_LITERATURE",
+    "source_id": "NBI",
+    "version": "undated page snapshot 2026-11-09",
+    "source_locator": "Eldeim, Khartoum, Halfaya Bridge, Dongola station rows",
+    "claim": "NBI technical station descriptions identify directional cross-border monitoring context",
+    "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+    "sha_if_downloaded": null,
+    "geographic_support": [
+      "BLUE_UPPER",
+      "BLUE_LOWER",
+      "MAIN_NILE",
+      "BASIN_NILE"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "qualitative_source_audit",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "No numerical magnitude or causal attribution established",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "No numerical magnitude or causal attribution established"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "ENSO_MECHANISM",
+    "evidence_type": "SCIENTIFIC_LITERATURE",
+    "source_id": "ENSO",
+    "version": "snapshot 2026-11-09; RONI transition 2026-02-01",
+    "source_locator": "Impacts; Forecasting; RONI transition paragraph",
+    "claim": "Coupled Pacific ocean-atmosphere process with conditional regional rainfall associations",
+    "rights": "PUBLIC_FACTUAL_METADATA_ONLY",
+    "sha_if_downloaded": null,
+    "geographic_support": [
+      "PACIFIC",
+      "ATM_WALKER",
+      "REGIONAL_RAIN"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "qualitative_source_audit",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "No deterministic regional drought, methane or event attribution",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "No deterministic regional drought, methane or event attribution"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "CH4_PHYSICS",
+    "evidence_type": "SCIENTIFIC_LITERATURE",
+    "source_id": "PR143",
+    "version": "746825e65b8ddbd0f518709c94d9476df107208b",
+    "source_locator": "docs/tasks/climateos_methane_physics_knowledge_engine_001/EQUATION_REGISTRY.json",
+    "claim": "Existing methane mass and transport/chemistry distinctions retained",
+    "rights": "INHERITED_REFERENCE_ONLY",
+    "sha_if_downloaded": "2ec907e5da6c5a150df7dc93a22d35ad48ac4f4925d3234006051d250e0f3dfe",
+    "geographic_support": [
+      "CH4_SOURCE",
+      "ATM_GLOBAL"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "qualitative_source_audit",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "No admitted facility flow, global emissions or vertical correction",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "No admitted facility flow, global emissions or vertical correction"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "GML_GLOBAL",
+    "evidence_type": "DERIVED_DATA",
+    "source_id": "GML",
+    "version": "2026-10",
+    "source_locator": "monthly marine surface means; uncertainty; citation",
+    "claim": "Marine surface observations are aggregated into a global mean product",
+    "rights": "PUBLIC_FACTUAL_METADATA_ONLY",
+    "sha_if_downloaded": null,
+    "geographic_support": [
+      "ATM_GLOBAL"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "NOAA marine surface aggregation metadata",
+    "unit": "nmol mol-1",
+    "value": null,
+    "uncertainty": "No numerical series imported; latest year preliminary; cannot invert a site flux",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "No numerical series imported; latest year preliminary; cannot invert a site flux"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "AGGI_METHOD",
+    "evidence_type": "MODEL_OUTPUT",
+    "source_id": "AGGI",
+    "version": "2025 AGGI update, retrieved 2026-11-09",
+    "source_locator": "Radiative Forcing Calculations; Table 1",
+    "claim": "Metadata for effective forcing derived from global abundances; no output array imported",
+    "rights": "PUBLIC_FACTUAL_METADATA_ONLY",
+    "sha_if_downloaded": null,
+    "geographic_support": [
+      "ATM_GLOBAL",
+      "FORCING"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "AGGI 2025 effective forcing metadata",
+    "unit": "W m-2",
+    "value": null,
+    "uncertainty": "Model output type registered as metadata only; not a newly computed result or temperature response",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "NOT_ASSESSED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "Model output type registered as metadata only; not a newly computed result or temperature response"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "RESPONSE_GAP",
+    "evidence_type": "SCIENTIFIC_LITERATURE",
+    "source_id": "IPCC",
+    "version": "2021",
+    "source_locator": "AR6 WGI Chapter 6 Table 6.2 indexed reference",
+    "claim": "Climate response evidence locator retained; this batch full-text access blocked",
+    "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+    "sha_if_downloaded": null,
+    "geographic_support": [
+      "FORCING",
+      "CLIMATE_RESPONSE"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "qualitative_source_audit",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "403; no climate response calculation, local benefit or exact kernel admitted",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "BLOCKED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "403; no climate response calculation, local benefit or exact kernel admitted"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "BRW_EXISTING",
+    "evidence_type": "PHYSICAL_OBSERVATION",
+    "source_id": "PR140",
+    "version": "77a35e2723372a290579e4549a86781e2be65c04",
+    "source_locator": "docs/tasks/climateos_methane_factor_order_001/evidence/ch4_brw_2024_subset.txt",
+    "claim": "Previously archived NOAA BRW CH4 observation subset, referred to without reanalysis",
+    "rights": "INHERITED_REFERENCE_ONLY",
+    "sha_if_downloaded": "152357dd30ca8ce5e80ec3d51ce4414405b783e1b2bb8a6f04bcd95be729edb3",
+    "geographic_support": [
+      "ATM_BOUNDARY"
+    ],
+    "time_support": {
+      "start": "2024-01-01T00:00:00Z",
+      "end": "2025-01-01T00:00:00Z",
+      "timezone": "UTC",
+      "semantics": "OBSERVATION_WINDOW"
+    },
+    "method_id": "inherited NOAA BRW surface in-situ observation",
+    "unit": "nmol mol-1",
+    "value": null,
+    "uncertainty": "Subset-specific completeness/QA retained in PR140; no valid paired flux or vertical profile",
+    "calibration_QA": "Inherited instrument QA not revalidated",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "Subset-specific completeness/QA retained in PR140; no valid paired flux or vertical profile"
+    ],
+    "origin": "INHERITED_OBSERVATION"
+  },
+  {
+    "claim_id": "AU_TARGET",
+    "evidence_type": "LEGAL_METHOD",
+    "source_id": "AU_ACT",
+    "version": "Compilation 2 / 2025-02-20 / C2025C00153",
+    "source_locator": "Climate Change Act 2022 section 10(1)(a)",
+    "claim": "Section 10(1)(a) target uses a 2005 reference year",
+    "rights": "PUBLIC_FACTUAL_METADATA_ONLY",
+    "sha_if_downloaded": null,
+    "geographic_support": [
+      "POLICY_CONTEXT"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "AU/C2025C00153/s10",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "Policy target is not achieved outcome and not an emissions estimation method",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "Policy target is not achieved outcome and not an emissions estimation method"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:156",
+    "evidence_type": "POLICY_ASSESSMENT",
+    "source_id": "SCORE",
+    "version": "published 2021-03-29; modified 2025-09-25",
+    "source_locator": "rubric; country toggle + CSS; JSON-LD",
+    "claim": "Published policy label or registry submission metadata for China",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+    "geographic_support": [
+      "M49:156"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "COUNTRY_POLICY_SCORE",
+    "unit": "published_policy_percent_label",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:643",
+    "evidence_type": "POLICY_ASSESSMENT",
+    "source_id": "SCORE",
+    "version": "published 2021-03-29; modified 2025-09-25",
+    "source_locator": "rubric; country toggle + CSS; JSON-LD",
+    "claim": "Published policy label or registry submission metadata for Russia",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+    "geographic_support": [
+      "M49:643"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "COUNTRY_POLICY_SCORE",
+    "unit": "published_policy_percent_label",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [
+      "Russia 70% reduction wording conflicts with 30% below 1990 wording; not adjudicated"
+    ],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:356",
+    "evidence_type": "POLICY_ASSESSMENT",
+    "source_id": "SCORE",
+    "version": "published 2021-03-29; modified 2025-09-25",
+    "source_locator": "rubric; country toggle + CSS; JSON-LD",
+    "claim": "Published policy label or registry submission metadata for India",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+    "geographic_support": [
+      "M49:356"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "COUNTRY_POLICY_SCORE",
+    "unit": "published_policy_percent_label",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:458",
+    "evidence_type": "POLICY_COMMITMENT",
+    "source_id": "NDC",
+    "version": "web excerpt snapshot 2026-11-09",
+    "source_locator": "party/version/submission-date rows",
+    "claim": "Published policy label or registry submission metadata for Malaysia",
+    "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+    "sha_if_downloaded": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "geographic_support": [
+      "M49:458"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "POLICY_COMMITMENT",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "EVIDENCE_INSUFFICIENT",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:360",
+    "evidence_type": "POLICY_ASSESSMENT",
+    "source_id": "SCORE",
+    "version": "published 2021-03-29; modified 2025-09-25",
+    "source_locator": "rubric; country toggle + CSS; JSON-LD",
+    "claim": "Published policy label or registry submission metadata for Indonesia",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+    "geographic_support": [
+      "M49:360"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "COUNTRY_POLICY_SCORE",
+    "unit": "published_policy_percent_label",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:076",
+    "evidence_type": "POLICY_ASSESSMENT",
+    "source_id": "SCORE",
+    "version": "published 2021-03-29; modified 2025-09-25",
+    "source_locator": "rubric; country toggle + CSS; JSON-LD",
+    "claim": "Published policy label or registry submission metadata for Brazil",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+    "geographic_support": [
+      "M49:076"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "COUNTRY_POLICY_SCORE",
+    "unit": "published_policy_percent_label",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:036",
+    "evidence_type": "POLICY_ASSESSMENT",
+    "source_id": "SCORE",
+    "version": "published 2021-03-29; modified 2025-09-25",
+    "source_locator": "rubric; country toggle + CSS; JSON-LD",
+    "claim": "Published policy label or registry submission metadata for Australia",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+    "geographic_support": [
+      "M49:036"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "COUNTRY_POLICY_SCORE",
+    "unit": "published_policy_percent_label",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "MATERIAL_CONTRADICTION",
+    "contradictions": [
+      "AU card base year 2030 versus AU_ACT s10 base year 2005"
+    ],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:840",
+    "evidence_type": "POLICY_ASSESSMENT",
+    "source_id": "SCORE",
+    "version": "published 2021-03-29; modified 2025-09-25",
+    "source_locator": "rubric; country toggle + CSS; JSON-LD",
+    "claim": "Published policy label or registry submission metadata for United States",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+    "geographic_support": [
+      "M49:840"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "COUNTRY_POLICY_SCORE",
+    "unit": "published_policy_percent_label",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:276",
+    "evidence_type": "POLICY_ASSESSMENT",
+    "source_id": "SCORE",
+    "version": "published 2021-03-29; modified 2025-09-25",
+    "source_locator": "rubric; country toggle + CSS; JSON-LD",
+    "claim": "Published policy label or registry submission metadata for Germany",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": "72dd282073bf130b08379e2b0436599ff6825d00972862e3a4c3f764f6fe0948",
+    "geographic_support": [
+      "M49:276"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "COUNTRY_POLICY_SCORE",
+    "unit": "published_policy_percent_label",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:231",
+    "evidence_type": "POLICY_COMMITMENT",
+    "source_id": "NDC",
+    "version": "web excerpt snapshot 2026-11-09",
+    "source_locator": "party/version/submission-date rows",
+    "claim": "Published policy label or registry submission metadata for Ethiopia",
+    "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+    "sha_if_downloaded": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "geographic_support": [
+      "M49:231"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "POLICY_COMMITMENT",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "EVIDENCE_INSUFFICIENT",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:818",
+    "evidence_type": "POLICY_COMMITMENT",
+    "source_id": "NDC",
+    "version": "web excerpt snapshot 2026-11-09",
+    "source_locator": "party/version/submission-date rows",
+    "claim": "Published policy label or registry submission metadata for Egypt",
+    "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+    "sha_if_downloaded": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "geographic_support": [
+      "M49:818"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "POLICY_COMMITMENT",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "EVIDENCE_INSUFFICIENT",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "EV:POLICY:242",
+    "evidence_type": "POLICY_COMMITMENT",
+    "source_id": "NDC",
+    "version": "web excerpt snapshot 2026-11-09",
+    "source_locator": "party/version/submission-date rows",
+    "claim": "Published policy label or registry submission metadata for Fiji",
+    "rights": "UNKNOWN_METADATA_LINKS_ONLY",
+    "sha_if_downloaded": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "geographic_support": [
+      "M49:242"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "POLICY_COMMITMENT",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "observed reduction, emissions factor, warming benefit or current legal compliance",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "EVIDENCE_INSUFFICIENT",
+    "contradictions": [],
+    "not_inferable_from": [
+      "observed reduction, emissions factor, warming benefit or current legal compliance"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "AU_COUNTRY_REPORT",
+    "evidence_type": "POLICY_ASSESSMENT",
+    "source_id": "SC_AU_REPORT",
+    "version": "2026-03-25 published; 2026-05-08 updated",
+    "source_locator": "title, byline, publication/update line and engagement resources",
+    "claim": "Australian forecast article metadata, author Jessica Gregory; not an observed future outcome",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": null,
+    "geographic_support": [
+      "M49:036"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "COUNTRY_REPORT",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "Forecast narrative cannot become 2026 observed emissions or ecological benefit",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "Forecast narrative cannot become 2026 observed emissions or ecological benefit"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "OUTCOME_GAP",
+    "evidence_type": "ECOLOGICAL_OUTCOME",
+    "source_id": "SC_FOREST",
+    "version": "country posts dated 2024-11-25",
+    "source_locator": "Report 80 introduction and country article index",
+    "claim": "Forest report is a pointer for independent ecological outcome verification, not measured outcome evidence",
+    "rights": "ALL_RIGHTS_RESERVED_FACTS_LINKS_ONLY",
+    "sha_if_downloaded": null,
+    "geographic_support": [
+      "TERRESTRIAL"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "OBSERVED_OUTCOME_NOT_ADMITTED",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "No harmonised forest-change observations or counterfactual admitted",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "EVIDENCE_INSUFFICIENT",
+    "contradictions": [],
+    "not_inferable_from": [
+      "No harmonised forest-change observations or counterfactual admitted"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "FOUNDER_SCOPE",
+    "evidence_type": "GOVERNANCE_DECISION",
+    "source_id": "TASK",
+    "version": "a5c479b07b4a3a7e654e188505657f5715d39b1c",
+    "source_locator": "docs/tasks/global_natural_systems_evidence_atlas_001/TASKBOOK_ZH.md",
+    "claim": "Bounded Atlas implementation authorized; scientific admission unchanged",
+    "rights": "INHERITED_REFERENCE_ONLY",
+    "sha_if_downloaded": "07b8c5451d8be0b1089a6b133ea8fb644e7b9b13c36b797153f4e520af44ad90",
+    "geographic_support": [
+      "POLICY_CONTEXT"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "task scope authorization",
+    "unit": "not_applicable",
+    "value": null,
+    "uncertainty": "No human scientific acceptance, statutory certificate or deployment permission",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "SOURCE_VERIFIED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "No human scientific acceptance, statutory certificate or deployment permission"
+    ],
+    "origin": "PUBLIC_METADATA"
+  },
+  {
+    "claim_id": "INTERNAL_REPLAY",
+    "evidence_type": "SYNTHETIC_TEST",
+    "source_id": "PR145",
+    "version": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+    "source_locator": "docs/tasks/climateos_global_method_evidence_ecochain_001/reviewer.py",
+    "claim": "Existing A/B/C internal methane-ledger replay through original reviewer",
+    "rights": "INHERITED_REFERENCE_ONLY",
+    "sha_if_downloaded": "a5e4de8ed319424937da391a66b73d1b4d628b721b2cf6dd07f394262eeccfcd",
+    "geographic_support": [
+      "CH4_SOURCE"
+    ],
+    "time_support": {
+      "start": null,
+      "end": null,
+      "timezone": "UNKNOWN",
+      "semantics": "UNKNOWN_NOT_INFERRED_FROM_RETRIEVAL"
+    },
+    "method_id": "INTERNAL_FIXTURE_REPLAY_ONLY",
+    "unit": "kg_CH4/interval",
+    "value": null,
+    "uncertainty": "Not submitted-data validity, field validation, external approval or real mitigation",
+    "calibration_QA": "Metadata structure checked; no instrument calibration implied",
+    "review_state": "RECALCULATED",
+    "contradictions": [],
+    "not_inferable_from": [
+      "Not submitted-data validity, field validation, external approval or real mitigation"
+    ],
+    "origin": "SYNTHETIC"
+  }
+]

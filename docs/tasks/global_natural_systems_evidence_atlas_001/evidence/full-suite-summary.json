@@ -1,0 +1,23 @@
+{
+  "full_suite_command": "python -m unittest discover",
+  "run": 560,
+  "passed": 551,
+  "errors": 8,
+  "skipped": 1,
+  "error_class": "PermissionError WinError10013 on loopback sockets",
+  "failed_tests": [
+    "test_health_truthfully_reports_manual_allowlisted_network_capability (tests.test_environmental_question_runtime_server.EnvironmentalQuestionRuntimeServerTests.test_health_truthfully_reports_manual_allowlisted_network_capability)",
+    "test_http_flow_to_quarantined_result (tests.test_environmental_question_runtime_server.EnvironmentalQuestionRuntimeServerTests.test_http_flow_to_quarantined_result)",
+    "test_page_explains_real_plan_and_synthetic_run_boundary (tests.test_environmental_question_runtime_server.EnvironmentalQuestionRuntimeServerTests.test_page_explains_real_plan_and_synthetic_run_boundary)",
+    "test_persistent_program_http_flow_without_network (tests.test_environmental_question_runtime_server.EnvironmentalQuestionRuntimeServerTests.test_persistent_program_http_flow_without_network)",
+    "test_complete_http_workflow (tests.test_scientist_runtime_server.ScientistRuntimeServerTests.test_complete_http_workflow)",
+    "test_health_and_html_are_local_and_explain_boundaries (tests.test_scientist_runtime_server.ScientistRuntimeServerTests.test_health_and_html_are_local_and_explain_boundaries)",
+    "test_host_body_and_transition_controls_refuse_invalid_requests (tests.test_scientist_runtime_server.ScientistRuntimeServerTests.test_host_body_and_transition_controls_refuse_invalid_requests)",
+    "test_http_hypothesis_revision_is_bounded_and_audited (tests.test_scientist_runtime_server.ScientistRuntimeServerTests.test_http_hypothesis_revision_is_bounded_and_audited)"
+  ],
+  "targeted_recheck_command": "python -m unittest tests.test_environmental_question_runtime_server tests.test_scientist_runtime_server -v",
+  "recheck_tests": 10,
+  "recheck_result": "PASS; localhost-only synthetic HTTP, no external egress",
+  "initial_execution_note": "First redirection failed before tests because log directory did not exist; directory created, actual run archived",
+  "not_claimed": "No single all-green full-suite run; no scientific validation"
+}
