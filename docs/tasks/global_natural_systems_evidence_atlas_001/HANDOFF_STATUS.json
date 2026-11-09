@@ -2,10 +2,10 @@
   "schema_version": "research-handoff/1",
   "task_id": "GLOBAL-NATURAL-SYSTEMS-EVIDENCE-ATLAS-001",
   "status": "LOCAL_VERIFIED_REVIEW_READY_WITH_GAPS",
-  "working_head_sha": null,
-  "review_target_content_sha": null,
+  "working_head_sha": "4f6244ef6fe278efab715694caa543aa5e31a1f6",
+  "review_target_content_sha": "4f6244ef6fe278efab715694caa543aa5e31a1f6",
   "reviewed_head_sha": null,
-  "source_pr": null,
+  "source_pr": "https://github.com/simon947161/eco-agent-system/pull/146",
   "delivery_head_anchor": "Final new Draft PR comment; D cannot be written self-referentially",
   "frozen_parent_sha": "3bb71785ad2705823a78748c9ba4cd5003becb41",
   "scientific_baseline_sha": "ae1050a621ac794e447f9ac047865d90b2f04b03",
@@ -14,15 +14,33 @@
   "deployed": false,
   "regulatory_certification": "NOT_PROVIDED",
   "scientific_gates": {
-    "D3":"DATA_NOT_READY", "P1-A":"PENDING", "PR140":"NO_VALID_PAIR",
-    "PR141":"NO_VALID_VERTICAL_PROFILE", "PR143_ChainB":"BLOCKED",
-    "PR144_real_facility":"DATA_NOT_READY", "Stage3":"METHOD_READY_NOT_VALIDATED"
+    "D3": "DATA_NOT_READY",
+    "P1-A": "PENDING",
+    "PR140": "NO_VALID_PAIR",
+    "PR141": "NO_VALID_VERTICAL_PROFILE",
+    "PR143_ChainB": "BLOCKED",
+    "PR144_real_facility": "DATA_NOT_READY",
+    "Stage3": "METHOD_READY_NOT_VALIDATED"
   },
-  "github_delivery_state": "LOCAL_REVIEW_PACKAGE_PREPARED",
+  "github_delivery_state": "DRAFT_PR_CREATED",
   "response_delivery_state": "NOT_SENT_TO_CHATGPT",
   "ecochain_integration": "ECOCHAIN_CANONICAL_NOT_FOUND",
   "enotebook_integration": "PENDING_INTEGRATION",
-  "coverage": {"M49_entries":248,"deep_cases":12,"natural_units":25,"new_source_themes":12,"deep_mechanisms":3,"GIS_downloads":0,"geometry_coverage_fraction":0},
-  "ci": "PENDING_REMOTE_VERIFICATION; final D receipt is in the final review-request comment",
-  "next_action": "Founder forwards exact D to ChatGPT. Then decide one same-boundary measurement admission protocol and canonical governance roles; no automatic new experiment."
+  "coverage": {
+    "M49_entries": 248,
+    "deep_cases": 12,
+    "natural_units": 25,
+    "new_source_themes": 12,
+    "deep_mechanisms": 3,
+    "GIS_downloads": 0,
+    "geometry_coverage_fraction": 0
+  },
+  "ci": "Initial R check: PR workflow_runs=[] and combined statuses=[]; not a PASS or final trigger determination. Final exact-D CI receipt is in the final review-request comment.",
+  "next_action": "Founder forwards exact D to ChatGPT. Then decide one same-boundary measurement admission protocol and canonical governance roles; no automatic new experiment.",
+  "artifact_verification": {
+    "manifest_files": 50,
+    "committed_blob_matches": 50,
+    "local_markdown_links": 44,
+    "replay_sha256": "49118345f41e78221ae80db0615ab6742e7ec59bb523154b1ec3c382088fc055"
+  }
 }
