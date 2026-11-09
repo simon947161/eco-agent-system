@@ -1,0 +1,86 @@
+{
+  "schema_version": "climateos-method-notes/1",
+  "integration": "PENDING_INTEGRATION",
+  "SOURCE_MASTER": {
+    "id": "D_NSW",
+    "title": "Environmental Guidelines: Solid Waste Landfills",
+    "publisher": "NSW Environment Protection Authority",
+    "version": "2nd edition April2016 EPA2016/0259",
+    "tier": "ENVIRONMENTAL_ENGINEERING_GUIDELINE",
+    "url": "https://www.epa.nsw.gov.au/sites/default/files/solid-waste-landfill-guidelines-160259.pdf",
+    "reading": "TARGETED_WEB_TEXT_ONLY_RAW_DOWNLOAD_BLOCKED",
+    "rights": "封面版权说明允许有条件教育/非商业使用并有图片例外；本轮仍不复制PDF或图。",
+    "receipts": [
+      {
+        "path": "../../source_receipts/D_NSW.json",
+        "status": "BLOCKED",
+        "sha256": "UNKNOWN",
+        "bytes": null,
+        "cache_path": null
+      }
+    ]
+  },
+  "KNOWLEDGE_CORE": {
+    "definitions_and_mechanism": "地表扫描用于发现热点并采取纠正行动，具体许可条件可能不同。浓度扫描不提供面积/风场或通量，不能直接变kg/h。",
+    "equations": [
+      {
+        "id": "D-screen",
+        "locator": "s5.2 p33/PDF37",
+        "expression": "500ppmv investigation/action level;25m grid;5cm height",
+        "variables": "concentration, distance; not mass-flow variables",
+        "scope": "specified intermediate/final cover monitoring, weather and EPA variation apply"
+      }
+    ],
+    "section_map": [
+      "PartA pp1–2 regulatory context",
+      "s5.2 p33 surface gas monitoring",
+      "s5.3 pp34–35 subsurface gas",
+      "s5.5–5.6 combustion/biocovers navigation only"
+    ],
+    "limitations": [
+      "直接下载403；SHA UNKNOWN，之前web解析可读s5.2/5.3，未取可重算字节",
+      "指南不等于具体EPL条件",
+      "本轮未完整复核每章/全部后续法定变更"
+    ]
+  },
+  "SKILL_PROCEDURE": [
+    "先查看设施实际EPL和覆盖区边界。",
+    "登记网格、探头高度、裂缝凹陷和天气。",
+    "校准/归零仪表，保留原始读数和纠正行动。",
+    "若要排放率另设计通量测量；禁止用500ppm直接乘面积。"
+  ],
+  "CASE_EVIDENCE": {
+    "evidence": "反例：两块地表同500ppm，若空气输送/测量高度不同，源率可能不同；本轮不计算真实场址。",
+    "grade": "OFFICIAL_DOCUMENT_OR_AUTHOR_SYNTHETIC_NOT_FIELD_VALIDATION"
+  },
+  "CONNECTIONS": {
+    "bridge": "E07覆盖路径；未来QGIS扫描足迹；气象条件是采样限制而非产气乘子。",
+    "parent_index": "../../README.md",
+    "crosswalk": "../../SECTION_AND_EQUATION_CROSSWALK.md"
+  },
+  "LEARNING_PATH_ZH": {
+    "core_question": "地表扫描用于发现热点并采取纠正行动，具体许可条件可能不同。浓度扫描不提供面积/风场或通量，不能直接变kg/h。",
+    "exercises": [
+      {
+        "question": "500ppm代表多少kg/h？",
+        "reference_answer": "信息不足。需流场/通量与空间时间边界。"
+      },
+      {
+        "question": "25m网格可替代NGER4m格吗？",
+        "reference_answer": "不可以，适用任务不同。"
+      },
+      {
+        "question": "指南是否等于每个EPL？",
+        "reference_answer": "不等；必须单独查具体许可证。"
+      }
+    ]
+  },
+  "UPDATE_LEDGER": [
+    {
+      "date": "2026-11-09",
+      "action": "initial bounded extraction",
+      "understanding": "地表扫描用于发现热点并采取纠正行动，具体许可条件可能不同。浓度扫描不提供面积/风场或通量，不能直接变kg/h。",
+      "future_append": "new version/locator, rights, raw receipt, interpretation change, affected equations, reviewer, no overwrite of historical record"
+    }
+  ]
+}

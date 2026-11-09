@@ -1,0 +1,79 @@
+{
+  "schema_version": "climateos-method-catalog/1",
+  "canonical_store": "UNCONFIRMED",
+  "integration": "PENDING_INTEGRATION",
+  "sources": [
+    {
+      "id": "A_CER",
+      "title": "CER Estimating emissions and energy from solid waste and landfill biogas management guideline",
+      "publisher": "Clean Energy Regulator",
+      "version": "July2026 / reporting2025–26",
+      "reading": "TARGETED_SECTIONS_WITH_LOCAL_BYTES",
+      "package": "A_CER/package.json",
+      "notes": "A_CER/README.md"
+    },
+    {
+      "id": "B_NGER",
+      "title": "National Greenhouse and Energy Reporting (Measurement) Determination 2008; 2026 amendment and explanatory statement",
+      "publisher": "Federal Register of Legislation / DCCEEW",
+      "version": "F2026C00720 C21 2026-07-01; F2026L00855 2026-06-29",
+      "reading": "TARGETED_SECTIONS_WITH_LOCAL_BYTES",
+      "package": "B_NGER/package.json",
+      "notes": "B_NGER/README.md"
+    },
+    {
+      "id": "C_ACCU",
+      "title": "Carbon Credits (Carbon Farming Initiative—Reducing Methane Emissions from Landfill Gas) Methodology Determination 2025",
+      "publisher": "Federal Register of Legislation / Clean Energy Regulator",
+      "version": "F2025L01430 registered2025-11-28; in force confirmed2026-11-09",
+      "reading": "TARGETED_SECTIONS_WITH_LOCAL_BYTES_AND_VISUAL_EQUATIONS",
+      "package": "C_ACCU/package.json",
+      "notes": "C_ACCU/README.md"
+    },
+    {
+      "id": "D_NSW",
+      "title": "Environmental Guidelines: Solid Waste Landfills",
+      "publisher": "NSW Environment Protection Authority",
+      "version": "2nd edition April2016 EPA2016/0259",
+      "reading": "TARGETED_WEB_TEXT_ONLY_RAW_DOWNLOAD_BLOCKED",
+      "package": "D_NSW/package.json",
+      "notes": "D_NSW/README.md"
+    },
+    {
+      "id": "E_FOGO",
+      "title": "Emissions impacts of food waste recovery technologies: composting and landfill fact sheets",
+      "publisher": "NSW EPA",
+      "version": "March2024 P4523 and P4522; landing updated2024-09-06",
+      "reading": "P4523_TARGETED_WEB_TEXT_P4522_LIMITED_RAW_BLOCKED",
+      "package": "E_FOGO/package.json",
+      "notes": "E_FOGO/README.md"
+    },
+    {
+      "id": "F_ORGANICS",
+      "title": "Environmental Guidelines: Composting and Related Organics Processing Facilities; 2026 consultation status",
+      "publisher": "NSW EPA / former DEC",
+      "version": "2004 file040061; Aug–Oct2026 consultation closed, final replacement unconfirmed",
+      "reading": "METADATA_ONLY_BODY_BLOCKED",
+      "package": "F_ORGANICS/package.json",
+      "notes": "F_ORGANICS/README.md"
+    },
+    {
+      "id": "G_IPCC2006",
+      "title": "2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume5 Chapter3 Solid Waste Disposal",
+      "publisher": "IPCC / IGES",
+      "version": "2006 Vol5 Ch3",
+      "reading": "TARGETED_SECTIONS_WITH_LOCAL_BYTES",
+      "package": "G_IPCC2006/package.json",
+      "notes": "G_IPCC2006/README.md"
+    },
+    {
+      "id": "H_IPCC2019",
+      "title": "2019 Refinement to the 2006 IPCC Guidelines, Volume5 Chapter3 Solid Waste Disposal",
+      "publisher": "IPCC / IGES",
+      "version": "2019 Refinement Vol5 Ch3",
+      "reading": "TARGETED_SECTIONS_WITH_LOCAL_BYTES",
+      "package": "H_IPCC2019/package.json",
+      "notes": "H_IPCC2019/README.md"
+    }
+  ]
+}

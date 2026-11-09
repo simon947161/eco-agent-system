@@ -1,0 +1,119 @@
+{
+  "schema_version": "climateos-method-notes/1",
+  "integration": "PENDING_INTEGRATION",
+  "SOURCE_MASTER": {
+    "id": "B_NGER",
+    "title": "National Greenhouse and Energy Reporting (Measurement) Determination 2008; 2026 amendment and explanatory statement",
+    "publisher": "Federal Register of Legislation / DCCEEW",
+    "version": "F2026C00720 C21 2026-07-01; F2026L00855 2026-06-29",
+    "tier": "STATUTORY_DETERMINATION_PLUS_EXPLANATORY_STATEMENT",
+    "url": "https://www.legislation.gov.au/F2008L02309/latest/details",
+    "reading": "TARGETED_SECTIONS_WITH_LOCAL_BYTES",
+    "rights": "法规和说明书公开；本包不依赖全文再分发许可，只存来源/哈希/少量数学转录和自有解释。",
+    "receipts": [
+      {
+        "path": "../../source_receipts/B_NGER.json",
+        "status": "ACQUIRED",
+        "sha256": "457fe122a68cca5760b2d9fcb96e526b57126c212531dd45e6bad6fdaf1a49ce",
+        "bytes": 4138188,
+        "cache_path": "runtime_data/au_landfill_methods/B_NGER.html"
+      },
+      {
+        "path": "../../source_receipts/B_AMENDMENT.json",
+        "status": "ACQUIRED",
+        "sha256": "a8648478bfd2b483697e4c8494f6cc6b86b0c6e143f335e4d3378b91e8d0bbd9",
+        "bytes": 292989,
+        "cache_path": "runtime_data/au_landfill_methods/B_AMENDMENT.html"
+      },
+      {
+        "path": "../../source_receipts/B_ES.json",
+        "status": "ACQUIRED",
+        "sha256": "119c42d85227a09a4c9f014ee24d6f7b418dcf795e29c974bfb328cd6cc815d9",
+        "bytes": 564656,
+        "cache_path": "runtime_data/au_landfill_methods/B_ES.pdf"
+      }
+    ]
+  },
+  "KNOWLEDGE_CORE": {
+    "definitions_and_mechanism": "法定报告公式与现场瞬时通量是不同量。当前方法2将地上设备漏排Qlost单列，不能先对它施加覆盖氧化。现场数据用于代表区生成参数校准，不能自动证明独立预测正确。",
+    "equations": [
+      {
+        "id": "B-Ejz",
+        "locator": "s5.15(1)(b)",
+        "expression": "Ejz=[CH4genz−Qlostz−gamma(Qcapz+Qflaredz+Qtrz)](1−OF)+Qlostz",
+        "variables": "Ejz/CH4genz/Qlostz:tCO2-e；Qcapz/Qflaredz/Qtrz:m3CH4 standard dry；OF=.1；gamma=6.784e-4×GWPmethane",
+        "scope": "method2 zone, not combustion emissions"
+      },
+      {
+        "id": "B-flux",
+        "locator": "s5.17H(2)",
+        "expression": "Qflux_i=V(dc/dt)/A",
+        "variables": "mgCH4/m2/s;V m3;dc/dt mg/m3/s;A m2",
+        "scope": "calibrated flux chamber plus spatial design"
+      },
+      {
+        "id": "B-k",
+        "locator": "s5.17M step4",
+        "expression": "kiadj=kidef(1+incr%)",
+        "variables": "k:yr^-1;increment<=1%;match to Qz within .001 tCO2-e per source",
+        "scope": "regulatory calibration, no independent validation"
+      }
+    ],
+    "section_map": [
+      "s2.32(7) dry standard conditions",
+      "s5.4D annual generation",
+      "s5.15 zone emissions",
+      "s5.17A–D zone/collection",
+      "s5.17F–K scan, flux, weather, frequency",
+      "s5.17L–M averaging and calibration",
+      "amendment items55–87 and98",
+      "ES pp46–51 corresponding amendments"
+    ],
+    "limitations": [
+      "s5.17K至少4次但5.17L分母4，多于4次解释未解决",
+      "5.17M Step2交叉引用保留原文，未自行修法规",
+      "特定合规检测技术不代表任意遥感方法合法认可",
+      "注册/设施阈值与Site-plan附件未形成完整法律适用审计"
+    ]
+  },
+  "SKILL_PROCEDURE": [
+    "核报告年、方法和子分区，保存场图/独立专家报告。",
+    "收集至少12月可校准的井流量与组分，确保单位状态一致。",
+    "按5.17F–K扫描、通量箱、井漏和天气条件分类；不使用NSW500ppm代替。",
+    "按5.17L分别汇总地表与地上设备量，按5.17M校准k；真实执行前另核site-plan附件和未决条款。"
+  ],
+  "CASE_EVIDENCE": {
+    "evidence": "自有通量例：.1m3/.2m2×2mg/m3/s=1mg/m2/s。属于AUTHOR_DERIVED_SYNTHETIC_EXAMPLE，未作现场测量。",
+    "grade": "OFFICIAL_DOCUMENT_OR_AUTHOR_SYNTHETIC_NOT_FIELD_VALIDATION"
+  },
+  "CONNECTIONS": {
+    "bridge": "E06须区分NGER1.336与IPCC16/12；E07漏排路径；QGIS仅未来场图工具。",
+    "parent_index": "../../README.md",
+    "crosswalk": "../../SECTION_AND_EQUATION_CROSSWALK.md"
+  },
+  "LEARNING_PATH_ZH": {
+    "core_question": "法定报告公式与现场瞬时通量是不同量。当前方法2将地上设备漏排Qlost单列，不能先对它施加覆盖氧化。现场数据用于代表区生成参数校准，不能自动证明独立预测正确。",
+    "exercises": [
+      {
+        "question": "25ppm与500ppmv为何不能互换？",
+        "reference_answer": "前者是2026NGER代表区分类，后者NSW2016工程行动线，目的/布点不同。"
+      },
+      {
+        "question": "Qlost能用kg/h直接代公式吗？",
+        "reference_answer": "不能；s5.15要求tCO2-e/报告年，须完整时间和单位转换。"
+      },
+      {
+        "question": "调k吻合当年观测就算预测验证吗？",
+        "reference_answer": "不是；需要独立留出数据与不确定性检查。"
+      }
+    ]
+  },
+  "UPDATE_LEDGER": [
+    {
+      "date": "2026-11-09",
+      "action": "initial bounded extraction",
+      "understanding": "法定报告公式与现场瞬时通量是不同量。当前方法2将地上设备漏排Qlost单列，不能先对它施加覆盖氧化。现场数据用于代表区生成参数校准，不能自动证明独立预测正确。",
+      "future_append": "new version/locator, rights, raw receipt, interpretation change, affected equations, reviewer, no overwrite of historical record"
+    }
+  ]
+}

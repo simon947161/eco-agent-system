@@ -1,0 +1,73 @@
+{
+  "schema_version": "methane-handoff/1",
+  "task_id": "CLIMATEOS-AU-LANDFILL-METHANE-METHODS-001",
+  "source_pr": "https://github.com/simon947161/eco-agent-system/pull/144",
+  "scientific_baseline_sha": "746825e65b8ddbd0f518709c94d9476df107208b",
+  "taskbook_commit_sha": "8849cbd175e8c6edec2f0b74431e8ea8611eb212",
+  "taskbook_sha": "25b2b93a09176c829773cc9022d0f6ef118fa8aa",
+  "taskbook_sha_kind": "git_blob",
+  "working_head_sha": "3866053f032d83e30d8addf64cb46e7a8d25c8cb",
+  "working_head_semantics": "content snapshot R; exact delivery D anchored in final PR comment",
+  "review_target_content_sha": "3866053f032d83e30d8addf64cb46e7a8d25c8cb",
+  "reviewed_head_sha": null,
+  "review_receipt_commit_sha": null,
+  "status": "REVIEW_READY_WITH_SOURCE_GAPS",
+  "scientific_gates": {
+    "D3": "DATA_NOT_READY",
+    "P1-A": "PENDING",
+    "PR140": "NO_VALID_PAIR",
+    "PR141": "NO_VALID_VERTICAL_PROFILE",
+    "PR143_ChainB": "BLOCKED",
+    "Stage3": "METHOD_READY_NOT_VALIDATED"
+  },
+  "deployed": false,
+  "integration": "PENDING_INTEGRATION",
+  "response_delivery_state": "NOT_SENT_TO_CHATGPT",
+  "github_delivery_state": "DRAFT_PR_CREATED",
+  "owner": "Founder",
+  "review_actor": "ChatGPT independent read-only reviewer; receipt not received",
+  "evidence_uri": "https://github.com/simon947161/eco-agent-system/blob/3866053f032d83e30d8addf64cb46e7a8d25c8cb/docs/tasks/climateos_au_landfill_methane_methods_001/README.md",
+  "entry_files": [
+    "README.md",
+    "FOUNDER_REPORT_ZH.md",
+    "SOURCE_REGISTER.md",
+    "SECTION_AND_EQUATION_CROSSWALK.md",
+    "LANDFILL_PHYSICS_AND_MASS_BALANCE.md",
+    "METHOD_KNOWLEDGE_INDEX.md",
+    "QA_AND_VALIDATION.md",
+    "evidence/synthetic-results.json"
+  ],
+  "authorized_scope": [
+    "bounded official source research",
+    "offline synthetic mass balance and analytical unit checks",
+    "knowledge notes and learning path",
+    "independent stacked Draft PR"
+  ],
+  "no_run_flags": [
+    "NO_REAL_FACILITY_EMISSIONS",
+    "NO_NEW_FOD_OR_CLIMATE_SIMULATION",
+    "NO_REGULATORY_REPORT_OR_CREDIT_CALCULATION",
+    "NO_PRIVATE_DATA",
+    "NO_CONTACT_OR_PAYMENT",
+    "NO_MERGE",
+    "NO_DEPLOY",
+    "NO_SCIENCE_PROMOTION"
+  ],
+  "blockers": [
+    "two facility candidates DATA_NOT_READY",
+    "NSW four originals direct403; rawsha UNKNOWN",
+    "F organics body/2026 final status incomplete",
+    "NGER averaging and cross-reference interpretation require specialist review",
+    "Enotebook canonical schema unconfirmed",
+    "independent scientific review pending"
+  ],
+  "review_questions": [
+    "Check immutable official versions, reporting-year separation and legal hierarchy.",
+    "Check NGER 5.15 and 5.17F-M including wells, 4-event averaging, cross-references and units.",
+    "Check ACCU device types, Eq10/11/15/17/18 and minute operation versus physical emissions.",
+    "Independently reproduce methane/carbon/interface balances and counterexamples.",
+    "Check P1 reference-temperature reuse and frozen E06/E07 permission preservation.",
+    "Are source reading levels, rights, failure receipts, seven-layer knowledge notes and learning exercises honest and useful?"
+  ],
+  "next_action": "Founder sends final exact D review-request comment to ChatGPT; reviewer reads D tree and R..D metadata-only diff. No expanded experiments."
+}
