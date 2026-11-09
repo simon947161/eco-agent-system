@@ -1,0 +1,666 @@
+{
+  "schema_version": "methane-equations/1",
+  "equations": [
+    {
+      "equation_id": "E01",
+      "factor_id": [
+        "F_D03",
+        "F_D04"
+      ],
+      "formula": "x=x_ppm*1e-6; Pd=P-e; x_wet=x*Pd/P",
+      "source_id": [
+        "S00",
+        "S01",
+        "S02"
+      ],
+      "dependencies": [],
+      "input_units": {
+        "x_ppm": "ppm_dry",
+        "P": "Pa",
+        "e": "Pa"
+      },
+      "output_units": {
+        "x": "mol/mol dry",
+        "Pd": "Pa",
+        "x_wet": "mol/mol wet"
+      },
+      "domain": "gas parcel",
+      "temporal_support": "same instant",
+      "spatial_support": "homogeneous parcel",
+      "assumptions": [
+        "ideal mixture, explicit water partial pressure"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "ANALYTICAL_DERIVATION",
+      "model_id": "p1_chain/1",
+      "parameter_provenance": "FROZEN_P1_PR138 + TASKBOOK_SYNTHETIC_A1",
+      "uncertainty": "small synthetic input uncertainty, structural error UNKNOWN",
+      "validation_status": "ANALYTICAL_REFERENCE",
+      "permission": "SYNTHETIC_ONLY",
+      "blockers": [],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations",
+        "pV=nRT and absolute temperature paragraphs",
+        "Mole Fraction; Flux; Methanogenesis; Model-Data Mismatch"
+      ]
+    },
+    {
+      "equation_id": "E02",
+      "factor_id": [
+        "F_B03",
+        "F_D01",
+        "F_D02"
+      ],
+      "formula": "c=x*(P-e)*M_CH4/(R*T)",
+      "source_id": [
+        "S00",
+        "S01"
+      ],
+      "dependencies": [
+        "E01"
+      ],
+      "input_units": {
+        "x": "mol/mol dry",
+        "P,e": "Pa",
+        "T": "K",
+        "M": "kg/mol",
+        "R": "J/(mol K)"
+      },
+      "output_units": {
+        "c": "kg/m3"
+      },
+      "domain": "gas parcel",
+      "temporal_support": "same instant",
+      "spatial_support": "homogeneous parcel",
+      "assumptions": [
+        "ideal gas; not flux; dilute admitted envelope"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "ANALYTICAL_DERIVATION",
+      "model_id": "p1_chain/1",
+      "parameter_provenance": "FROZEN_P1_PR138 + TASKBOOK_SYNTHETIC_A1",
+      "uncertainty": "small synthetic input uncertainty, structural error UNKNOWN",
+      "validation_status": "ANALYTICAL_REFERENCE",
+      "permission": "SYNTHETIC_ONLY",
+      "blockers": [],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations",
+        "pV=nRT and absolute temperature paragraphs"
+      ]
+    },
+    {
+      "equation_id": "E03",
+      "factor_id": [
+        "F_B04",
+        "F_D01",
+        "F_D02",
+        "F_D03"
+      ],
+      "formula": "Vref=V*(P-e)/Pref*Tref/T",
+      "source_id": [
+        "S00",
+        "S01"
+      ],
+      "dependencies": [
+        "E01"
+      ],
+      "input_units": {
+        "V": "m3 actual wet",
+        "P,e,Pref": "Pa",
+        "T,Tref": "K"
+      },
+      "output_units": {
+        "Vref": "m3 dry at declared reference"
+      },
+      "domain": "gas parcel",
+      "temporal_support": "same parcel transformation",
+      "spatial_support": "closed same amount",
+      "assumptions": [
+        "dry reference e_ref=0 explicitly; no loss or chemical reaction"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "ANALYTICAL_DERIVATION",
+      "model_id": "p1_chain/1",
+      "parameter_provenance": "FROZEN_P1_PR138 + TASKBOOK_SYNTHETIC_A1",
+      "uncertainty": "small synthetic input uncertainty, structural error UNKNOWN",
+      "validation_status": "ANALYTICAL_REFERENCE",
+      "permission": "SYNTHETIC_ONLY",
+      "blockers": [],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations",
+        "pV=nRT and absolute temperature paragraphs"
+      ]
+    },
+    {
+      "equation_id": "E04",
+      "factor_id": [
+        "F_B04",
+        "F_B13",
+        "F_C01",
+        "F_C02",
+        "F_C03",
+        "F_C04",
+        "F_C05",
+        "F_C06"
+      ],
+      "formula": "m=c*V=c_ref*Vref; general dM/dt=G+I-O-L",
+      "source_id": [
+        "S00"
+      ],
+      "dependencies": [
+        "E02",
+        "E03"
+      ],
+      "input_units": {
+        "c": "kg/m3",
+        "V": "m3",
+        "G,I,O,L": "kg/s"
+      },
+      "output_units": {
+        "m": "kg",
+        "residual": "kg"
+      },
+      "domain": "control volume",
+      "temporal_support": "instant or declared interval",
+      "spatial_support": "fixed specified boundary",
+      "assumptions": [
+        "storage separated from source and flow; only static equality executed"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "ANALYTICAL_DERIVATION",
+      "model_id": "p1_chain/1",
+      "parameter_provenance": "FROZEN_P1_PR138 + TASKBOOK_SYNTHETIC_A1",
+      "uncertainty": "small synthetic input uncertainty, structural error UNKNOWN",
+      "validation_status": "ANALYTICAL_REFERENCE",
+      "permission": "SYNTHETIC_ONLY",
+      "blockers": [],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations"
+      ]
+    },
+    {
+      "equation_id": "E05",
+      "factor_id": [
+        "F_C06",
+        "F_D04",
+        "F_D01",
+        "F_D02",
+        "F_D03"
+      ],
+      "formula": "u_c^2=J Sigma J^T; J=(1e-6*(P-e)*M/RT,x*M/RT,-x*M/RT,-c/T) for (x_ppm,P,e,T)",
+      "source_id": [
+        "S00",
+        "S05"
+      ],
+      "dependencies": [
+        "E02"
+      ],
+      "input_units": {
+        "std": "same units as input",
+        "covariance": "input_i*input_j"
+      },
+      "output_units": {
+        "u_c": "kg/m3"
+      },
+      "domain": "analytical measurement equation",
+      "temporal_support": "same instant",
+      "spatial_support": "same parcel",
+      "assumptions": [
+        "small errors; only declared P/e covariance; constants exact convention; structural errors excluded"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "ANALYTICAL_DERIVATION",
+      "model_id": "p1_chain/1",
+      "parameter_provenance": "FROZEN_P1_PR138 + TASKBOOK_SYNTHETIC_A1",
+      "uncertainty": "small synthetic input uncertainty, structural error UNKNOWN",
+      "validation_status": "ANALYTICAL_REFERENCE",
+      "permission": "SYNTHETIC_ONLY",
+      "blockers": [],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations",
+        "Eq6 first-order Taylor and covariance; uncorrelated simplified product"
+      ]
+    },
+    {
+      "equation_id": "E06",
+      "factor_id": [
+        "F_A01",
+        "F_A02",
+        "F_A03",
+        "F_A04",
+        "F_A05",
+        "F_A06",
+        "F_A07",
+        "F_A08",
+        "F_A09",
+        "F_A10",
+        "F_A11",
+        "F_A12"
+      ],
+      "formula": "A_t=D_t+A_(t-1)*exp(-k); Ddec=A_(t-1)*(1-exp(-k)); G=Ddec*F*16/12",
+      "source_id": [
+        "S03"
+      ],
+      "dependencies": [],
+      "input_units": {
+        "D,A,Ddec": "Gg C",
+        "k": "yr^-1 with annual step",
+        "F": "1"
+      },
+      "output_units": {
+        "G": "Gg CH4 per inventory year"
+      },
+      "domain": "solid waste landfill",
+      "temporal_support": "annual; next-Jan1 onset",
+      "spatial_support": "specified waste inventory",
+      "assumptions": [
+        "D=W*DOC*DOCf*MCF; k constant per step; deposition after decay; no P4 climate multiplier adopted"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "PUBLISHED_PARAMETERIZATION",
+      "model_id": "NOT_REGISTERED_FOR_EXECUTION",
+      "parameter_provenance": "NO_NUMERIC_PARAMETERS_ADMITTED",
+      "uncertainty": "UNKNOWN_FOR_SITE",
+      "validation_status": "NOT_READY",
+      "permission": "READ_ONLY",
+      "blockers": [
+        "site parameters/independent validation/authorization missing"
+      ],
+      "source_locator": [
+        "printed pp3.8-3.10 Eq3.1-3.6; section3.2.3; no 2019 defaults mixed"
+      ]
+    },
+    {
+      "equation_id": "E07",
+      "factor_id": [
+        "F_B09",
+        "F_B10",
+        "F_B11",
+        "F_B12",
+        "F_C01",
+        "F_C02",
+        "F_C03",
+        "F_C04",
+        "F_C05",
+        "F_C06"
+      ],
+      "formula": "E=(G-R)*(1-OX); extended accounting E_total=(G-R)*(1-OX)+R*(1-DRE)",
+      "source_id": [
+        "S03",
+        "S00"
+      ],
+      "dependencies": [
+        "E06"
+      ],
+      "input_units": {
+        "G,R": "kg CH4/interval",
+        "OX,DRE": "fraction"
+      },
+      "output_units": {
+        "E": "kg CH4/interval"
+      },
+      "domain": "landfill/controlled combustion",
+      "temporal_support": "same inventory interval",
+      "spatial_support": "collection and device boundary explicit",
+      "assumptions": [
+        "second expression own extension, all R delivered to device; leaks require separate balance; no default DRE"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "PUBLISHED_PARAMETERIZATION",
+      "model_id": "NOT_REGISTERED_FOR_EXECUTION",
+      "parameter_provenance": "NO_NUMERIC_PARAMETERS_ADMITTED",
+      "uncertainty": "UNKNOWN_FOR_SITE",
+      "validation_status": "NOT_READY",
+      "permission": "READ_ONLY",
+      "blockers": [
+        "site parameters/independent validation/authorization missing"
+      ],
+      "source_locator": [
+        "printed pp3.8-3.10 Eq3.1-3.6; section3.2.3; no 2019 defaults mixed",
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations"
+      ]
+    },
+    {
+      "equation_id": "E08",
+      "factor_id": [
+        "F_B01",
+        "F_B02",
+        "F_B03"
+      ],
+      "formula": "c_aq=H_s^cp(T,salinity)*p_CH4; p_CH4=x_dry*(P-e)",
+      "source_id": [
+        "S04",
+        "S01"
+      ],
+      "dependencies": [],
+      "input_units": {
+        "H": "mol/(m3 Pa)",
+        "p": "Pa"
+      },
+      "output_units": {
+        "c_aq": "mol/m3 water"
+      },
+      "domain": "dilute water/gas equilibrium",
+      "temporal_support": "equilibrium not rate",
+      "spatial_support": "specified interface",
+      "assumptions": [
+        "Henry convention explicit; pure-water table not automatically wastewater; no numerical coefficient admitted"
+      ],
+      "gas": "CH4",
+      "phase": "aqueous/gas",
+      "evidence_level": "PUBLISHED_PARAMETERIZATION",
+      "model_id": "NOT_REGISTERED_FOR_EXECUTION",
+      "parameter_provenance": "NO_NUMERIC_PARAMETERS_ADMITTED",
+      "uncertainty": "UNKNOWN_FOR_SITE",
+      "validation_status": "NOT_READY",
+      "permission": "READ_ONLY",
+      "blockers": [
+        "site parameters/independent validation/authorization missing"
+      ],
+      "source_locator": [
+        "CH4 table column H_s^cp, mol/(m3 Pa), reference298.15K; notes; publisher article timed out",
+        "pV=nRT and absolute temperature paragraphs"
+      ]
+    },
+    {
+      "equation_id": "E09",
+      "factor_id": [
+        "F_B05",
+        "F_B06",
+        "F_B07",
+        "F_B14"
+      ],
+      "formula": "F=k_L*(c_aq-H_s^cp*p_CH4)",
+      "source_id": [
+        "S00",
+        "S04"
+      ],
+      "dependencies": [
+        "E08"
+      ],
+      "input_units": {
+        "k_L": "m/s",
+        "c": "mol/m3"
+      },
+      "output_units": {
+        "F": "mol/(m2 s)"
+      },
+      "domain": "water-air transfer",
+      "temporal_support": "interval with resolved disequilibrium",
+      "spatial_support": "interface area required",
+      "assumptions": [
+        "candidate liquid-film closure; k_L calibration and exact transport source missing; Henry law alone does not give flux"
+      ],
+      "gas": "CH4",
+      "phase": "aqueous/gas",
+      "evidence_level": "CANDIDATE_NOT_FULLY_VERIFIED",
+      "model_id": "NOT_REGISTERED_FOR_EXECUTION",
+      "parameter_provenance": "NO_NUMERIC_PARAMETERS_ADMITTED",
+      "uncertainty": "UNKNOWN_FOR_SITE",
+      "validation_status": "NOT_READY",
+      "permission": "READ_ONLY",
+      "blockers": [
+        "site parameters/independent validation/authorization missing"
+      ],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations",
+        "CH4 table column H_s^cp, mol/(m3 Pa), reference298.15K; notes; publisher article timed out"
+      ]
+    },
+    {
+      "equation_id": "E10",
+      "factor_id": [
+        "F_B08",
+        "F_D05",
+        "F_D06",
+        "F_D07",
+        "F_D08",
+        "F_D13",
+        "F_D14",
+        "F_D15",
+        "F_D16",
+        "F_D17",
+        "F_D18"
+      ],
+      "formula": "d(rho*q)/dt+div(rho*u*q)=div(rho*K*grad(q))+S-L",
+      "source_id": [
+        "S00",
+        "S06"
+      ],
+      "dependencies": [],
+      "input_units": {
+        "rho": "kg air/m3",
+        "q": "kg CH4/kg air",
+        "u": "m/s",
+        "K": "m2/s",
+        "S,L": "kg CH4/(m3 s)"
+      },
+      "output_units": {
+        "tendency": "kg CH4/(m3 s)"
+      },
+      "domain": "atmospheric continuum",
+      "temporal_support": "seconds to days",
+      "spatial_support": "3D domain with initial/boundary conditions",
+      "assumptions": [
+        "own conservative schematic; compressible mass mixing ratio; not copied CMAQ equation or validated solver"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "CANDIDATE_NOT_FULLY_VERIFIED",
+      "model_id": "NOT_REGISTERED_FOR_EXECUTION",
+      "parameter_provenance": "NO_NUMERIC_PARAMETERS_ADMITTED",
+      "uncertainty": "UNKNOWN_FOR_SITE",
+      "validation_status": "NOT_READY",
+      "permission": "READ_ONLY",
+      "blockers": [
+        "site parameters/independent validation/authorization missing"
+      ],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations",
+        "Advection; Turbulent Dispersion; overview; conceptual processes not exact CH4 solver validation"
+      ]
+    },
+    {
+      "equation_id": "E11",
+      "factor_id": [
+        "F_D02",
+        "F_D09",
+        "F_D10",
+        "F_D11",
+        "F_D12",
+        "F_D14",
+        "F_D15",
+        "F_D19"
+      ],
+      "formula": "CH4+OH -> CH3+H2O; L=k(T)*n_CH4*n_OH; tau=1/(k*n_OH) if OH fixed",
+      "source_id": [
+        "S00",
+        "S07"
+      ],
+      "dependencies": [],
+      "input_units": {
+        "k": "cm3/(molecule s)",
+        "n": "molecule/cm3"
+      },
+      "output_units": {
+        "L": "molecule/(cm3 s)",
+        "tau": "s"
+      },
+      "domain": "gas chemistry",
+      "temporal_support": "local chemical timescale",
+      "spatial_support": "specified parcel",
+      "assumptions": [
+        "candidate mass-action form; temperature range/rate evaluation not read; local tau not global perturbation lifetime"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "CANDIDATE_NOT_FULLY_VERIFIED",
+      "model_id": "NOT_REGISTERED_FOR_EXECUTION",
+      "parameter_provenance": "NO_NUMERIC_PARAMETERS_ADMITTED",
+      "uncertainty": "UNKNOWN_FOR_SITE",
+      "validation_status": "NOT_READY",
+      "permission": "READ_ONLY",
+      "blockers": [
+        "site parameters/independent validation/authorization missing"
+      ],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations",
+        "direct page502; no OH coefficient/table imported"
+      ]
+    },
+    {
+      "equation_id": "E12",
+      "factor_id": [
+        "F_E01",
+        "F_E02",
+        "F_E03",
+        "F_E04",
+        "F_E08"
+      ],
+      "formula": "B(t)=m0*exp(-t/tau); F_rad(t)=a*B(t)",
+      "source_id": [
+        "S00",
+        "S08"
+      ],
+      "dependencies": [
+        "E11"
+      ],
+      "input_units": {
+        "m0,B": "kg CH4",
+        "tau,t": "same time unit",
+        "a": "W/(m2 kg)"
+      },
+      "output_units": {
+        "F_rad": "W/m2"
+      },
+      "domain": "linear global perturbation schematic",
+      "temporal_support": "declared horizon",
+      "spatial_support": "global mean",
+      "assumptions": [
+        "candidate constant effective lifetime and radiative efficiency; indirect effects/feedback require separate evidence; not emission-height model"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "CANDIDATE_NOT_FULLY_VERIFIED",
+      "model_id": "NOT_REGISTERED_FOR_EXECUTION",
+      "parameter_provenance": "NO_NUMERIC_PARAMETERS_ADMITTED",
+      "uncertainty": "UNKNOWN_FOR_SITE",
+      "validation_status": "NOT_READY",
+      "permission": "READ_ONLY",
+      "blockers": [
+        "site parameters/independent validation/authorization missing"
+      ],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations",
+        "direct403 stopped; search excerpt Table7.15 and supplementary metrics; no numeric GWP imported"
+      ]
+    },
+    {
+      "equation_id": "E13",
+      "factor_id": [
+        "F_E05",
+        "F_E06",
+        "F_E07",
+        "F_E09"
+      ],
+      "formula": "AGWP_i(H)=integral_0^H F_i(t)/m_i dt; GWP_i=AGWP_i/AGWP_CO2; DeltaT=int G_T(t-s)*F(s) ds",
+      "source_id": [
+        "S00",
+        "S08"
+      ],
+      "dependencies": [
+        "E12"
+      ],
+      "input_units": {
+        "H,t": "yr",
+        "F": "W/m2",
+        "m": "kg",
+        "G_T": "K/(W/m2)/yr"
+      },
+      "output_units": {
+        "AGWP": "W m^-2 yr kg^-1",
+        "GWP": "1",
+        "DeltaT": "K"
+      },
+      "domain": "global metric definitions",
+      "temporal_support": "explicit horizon",
+      "spatial_support": "global mean",
+      "assumptions": [
+        "candidate definitions not numeric AR6 implementation; fossil/biogenic carbon and indirect effects must match; no local exposure inference"
+      ],
+      "gas": "CH4 and CO2 comparator",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "CANDIDATE_NOT_FULLY_VERIFIED",
+      "model_id": "NOT_REGISTERED_FOR_EXECUTION",
+      "parameter_provenance": "NO_NUMERIC_PARAMETERS_ADMITTED",
+      "uncertainty": "UNKNOWN_FOR_SITE",
+      "validation_status": "NOT_READY",
+      "permission": "READ_ONLY",
+      "blockers": [
+        "site parameters/independent validation/authorization missing"
+      ],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations",
+        "direct403 stopped; search excerpt Table7.15 and supplementary metrics; no numeric GWP imported"
+      ]
+    },
+    {
+      "equation_id": "E14",
+      "factor_id": [
+        "F_F01",
+        "F_F02",
+        "F_F03",
+        "F_F04",
+        "F_F05",
+        "F_F06",
+        "F_F07",
+        "F_F08",
+        "F_F09",
+        "F_F10"
+      ],
+      "formula": "avoided_CH4=E_baseline-E_project; netGHG=sum_i(metric_i*(Ebase_i-Eproj_i)); cost_per_avoided=delta_cost/avoided if avoided>0",
+      "source_id": [
+        "S00"
+      ],
+      "dependencies": [
+        "E07"
+      ],
+      "input_units": {
+        "E": "kg per common interval",
+        "cost": "declared currency/year",
+        "metric": "specified compatible metric"
+      },
+      "output_units": {
+        "avoided": "kg/interval",
+        "netGHG": "kg CO2e/interval"
+      },
+      "domain": "decision accounting",
+      "temporal_support": "same baseline/project interval",
+      "spatial_support": "same lifecycle scope",
+      "assumptions": [
+        "bookkeeping not causal identification; additionally energy/CO2/N2O/leakage/counterfactual/uncertainty required"
+      ],
+      "gas": "CH4",
+      "phase": "gas or explicit accounting",
+      "evidence_level": "CANDIDATE_NOT_FULLY_VERIFIED",
+      "model_id": "NOT_REGISTERED_FOR_EXECUTION",
+      "parameter_provenance": "NO_NUMERIC_PARAMETERS_ADMITTED",
+      "uncertainty": "UNKNOWN_FOR_SITE",
+      "validation_status": "NOT_READY",
+      "permission": "READ_ONLY",
+      "blockers": [
+        "site parameters/independent validation/authorization missing"
+      ],
+      "source_locator": [
+        "gas_properties; reference_dry_volume; declared constants; own derivative and bookkeeping derivations"
+      ]
+    }
+  ]
+}

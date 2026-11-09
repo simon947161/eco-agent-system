@@ -1,0 +1,18 @@
+{
+  "unique_nodes": 84,
+  "edges": 95,
+  "dangling_edges": [],
+  "runtime_path": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05"
+  ],
+  "conceptual_feedback": "E06 -> F_A04 -> E06 is unvalidated heat/decomposition hypothesis; no solver",
+  "physical_breaks": [
+    "Henry equilibrium to flux missing k_L and interface",
+    "FOD inventory to pure-CH4 P2 has composition/time/boundary mismatch",
+    "emission to global response lacks transport/chemistry validation"
+  ]
+}

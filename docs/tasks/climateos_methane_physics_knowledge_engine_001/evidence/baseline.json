@@ -1,0 +1,49 @@
+{
+  "baseline": {
+    "url": "https://github.com/simon947161/eco-agent-system/pull/142",
+    "number": 142,
+    "state": "open",
+    "merged": false,
+    "mergeable": true,
+    "draft": true,
+    "body": "本次为唯一任务书 CLIMATEOS-CLIENT-AI-SCIENCE-INTEGRATION-001 的独立 stacked Draft PR，基线 PR141 e25ffe3e34829d9146628a7c72a363c35d8ec151；研究内容提交 R=c78e632ea529ffc59f6d1a02fbb34308ba98e237。\n\n实际复用既有 NOAA Central Park 三日真实公开观测与 dynamic_quantification 核心，完成闭集中文问题→授权/相态路由→固定来源/许可/哈希→日期/单位/坐标/QC→描述统计→中文报告+GeoJSON+机器审计。仅本地公开数据原型，租户为策略模拟，未实现生产认证或通用LLM。\n\n入口：docs/tasks/climateos_client_ai_science_integration_001/README.md；中文 Founder 报告、能力矩阵、Senversa五个官方公开案例、复用合同、测试与机器交接请求均在同目录。81项本地针对性测试通过；35个工件哈希、17个本地链接与确定性重放匹配。receipt明确LF规范化以兼容Git换行；NOAA原始观测按精确字节哈希。无新增依赖。\n\n最终单一评审评论将固定交付提交 D；R..D仅填充两份机器交接JSON，避免自引用SHA。请 ChatGPT 独立只读审查D全树及REVIEW_REQUEST，不把作者报告当独立复跑。GitHub发布不表示ChatGPT已接收。\n\nP1-A PENDING、D3 DATA_NOT_READY、PR140 NO_VALID_PAIR、PR141 NO_VALID_VERTICAL_PROFILE、Stage3 METHOD_READY_NOT_VALIDATED全部保留。未跑新科学模型、未取私人Council数据、未接Senversa私有API、未部署、未合并、未扩大授权。",
+    "title": "ClimateOS：Client AI 公开证据端到端验证与科学能力审计",
+    "base": "research/climateos-spatial-ghg-hypothesis-validation-001",
+    "base_sha": "e25ffe3e34829d9146628a7c72a363c35d8ec151",
+    "head": "research/climateos-client-ai-science-integration-001",
+    "head_sha": "3576fef07dcc797794f0adbef9b5be1e3e0991e6",
+    "head_repo_id": 1221620043,
+    "head_repo_full_name": "simon947161/eco-agent-system",
+    "merge_commit_sha": "29aca366c335fa21095665f3ba753dbc5bc16c7a",
+    "user": {
+      "login": "simon947161",
+      "name": "simon947161",
+      "email": null,
+      "avatar_url": "https://avatars.githubusercontent.com/u/151257334?v=4",
+      "id": 151257334
+    },
+    "requested_reviewers": null,
+    "requested_team_reviewers": null,
+    "diff": null,
+    "comments": null,
+    "created_at": "2026-11-09T00:27:52Z",
+    "updated_at": "2026-11-09T00:29:18Z",
+    "closed_at": null,
+    "merged_at": null,
+    "commits": 3,
+    "changed_files": 29,
+    "additions": 1410,
+    "deletions": 0,
+    "display_url": "https://github.com/simon947161/eco-agent-system/pull/142",
+    "display_title": "ClimateOS：Client AI 公开证据端到端验证与科学能力审计"
+  },
+  "comments": [
+    {
+      "id": 6729366136,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/142#issuecomment-6729366136",
+      "body": "## 最终交接与 ChatGPT 只读评审请求\n\n精确交付 HEAD **3576fef07dcc797794f0adbef9b5be1e3e0991e6**（D）；本地、远程分支和 PR HEAD 已核对一致，工作区干净。研究内容提交 R=`c78e632ea529ffc59f6d1a02fbb34308ba98e237`，R..D 仅 HANDOFF_STATUS.json / REVIEW_REQUEST.json 两份交付元数据变化。请审阅 **D 全树**，不要只审R中PREPARING模板。机器文件的working_head_sha指内容快照R；D由本评论锚定，避免Git自引用SHA。\n\n入口：[README](https://github.com/simon947161/eco-agent-system/blob/3576fef07dcc797794f0adbef9b5be1e3e0991e6/docs/tasks/climateos_client_ai_science_integration_001/README.md)；[中文Founder报告](https://github.com/simon947161/eco-agent-system/blob/3576fef07dcc797794f0adbef9b5be1e3e0991e6/docs/tasks/climateos_client_ai_science_integration_001/FOUNDER_REPORT_ZH.md)；[REVIEW_REQUEST](https://github.com/simon947161/eco-agent-system/blob/3576fef07dcc797794f0adbef9b5be1e3e0991e6/docs/tasks/climateos_client_ai_science_integration_001/REVIEW_REQUEST.json)。\n\n验证：81项本地针对性测试通过；35工件哈希、17本地链接、确定性重放通过；进一步用git show核对35个已提交blob也匹配。NOAA观测原字节哈希不变；仓库receipt及文本manifest明确LF规范化。最终HEAD的 [CCZPS-Lite Tests job](https://github.com/simon947161/eco-agent-system/actions/runs/42540356399/job/128913680374) 各步骤（生成输出、JSON验证、编译、unit tests及完成）均success。连接器commit-runs/status接口曾返回空，后通过CLI定位实际PR检查并通过job steps确认，不将空列表当绿灯。CI是既有软件回归，不构成科学或客户独立验收。\n\n本轮交付状态：LOCAL_VERIFIED_PUBLIC_DESCRIPTIVE_SLICE / REVIEW_READY。一个真实公开站点的数据质量、描述统计与可复算GeoJSON已跑通；闭集路由/租户策略为本地原型，不是生产认证或通用AI。不具备客户ground truth、现场校准、独立仪器/空间精度、Senversa私有接口或商业合作证据。历史PR139–141原ZIP与科学结果未重跑。没有UI改动，未声称浏览器测试。\n\n科学状态全部保留：P1-A PENDING；D3 DATA_NOT_READY；PR140 NO_VALID_PAIR；PR141 NO_VALID_VERTICAL_PROFILE；Stage3 METHOD_READY_NOT_VALIDATED。未合并、未部署、未读私人Council数据、未新增科学计算授权。\n\n**GitHub评审包已发布；NOT_SENT_TO_CHATGPT，尚无接收/审查回执。** 请Founder传递以下短句；评审者只读GitHub原文，返回绑定D的结论、已独立复核范围与限制。\n\nChatGPT短句：请只读审阅 PR #142 精确HEAD 3576fef07dcc797794f0adbef9b5be1e3e0991e6，按 docs/tasks/climateos_client_ai_science_integration_001/README.md 和 REVIEW_REQUEST.json 核查证据、许可、QA及科学边界，返回绑定HEAD的评审。\n\nCodex短句：请读取 PR #142 精确HEAD 3576fef07dcc797794f0adbef9b5be1e3e0991e6，按 docs/tasks/climateos_client_ai_science_integration_001/NEXT_SESSION.md 核对真实评审回执，只执行已授权修复；回报PR与HEAD，不合并部署。"
+    }
+  ],
+  "taskbook_commit": "7746b51d1fe5cc23ac071d6e44c0fd6017e76078",
+  "taskbook_blob": "a33ed49ef2e7710e76cbf5f67b83c41d955a4afe"
+}
