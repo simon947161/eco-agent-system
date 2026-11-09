@@ -1,24 +1,24 @@
 {
   "schema_version": "methane-handoff/1",
-  "source_pr": null,
+  "source_pr": "https://github.com/simon947161/eco-agent-system/pull/143",
   "scientific_baseline_sha": "3576fef07dcc797794f0adbef9b5be1e3e0991e6",
   "taskbook_sha": "a33ed49ef2e7710e76cbf5f67b83c41d955a4afe",
   "taskbook_sha_kind": "git_blob",
   "taskbook_commit_sha": "7746b51d1fe5cc23ac071d6e44c0fd6017e76078",
-  "working_head_sha": null,
+  "working_head_sha": "b8790bae938da4fe64c4c75522ba15183cd19957",
   "working_head_semantics": "content snapshot R; delivery D pinned externally in final PR comment per PR142 protocol",
   "reviewed_head_sha": null,
   "review_receipt_commit_sha": null,
-  "status": "PREPARING",
+  "status": "REVIEW_READY",
   "stage": "SYNTHETIC_REFERENCE_KNOWLEDGE_ENGINE",
-  "evidence_uri": "docs/tasks/climateos_methane_physics_knowledge_engine_001/README.md",
+  "evidence_uri": "https://github.com/simon947161/eco-agent-system/blob/b8790bae938da4fe64c4c75522ba15183cd19957/docs/tasks/climateos_methane_physics_knowledge_engine_001/README.md",
   "blockers": [
     "Chain B composition/time/boundary bridge incomplete",
     "OH/transport/global response sources and parameters incomplete",
     "independent scientific review pending"
   ],
   "owner": "Founder",
-  "next_action": "pin R then D and publish one exact-HEAD read-only review request",
+  "next_action": "Founder sends exact delivery D to ChatGPT; reviewer reads D tree, verifies R..D metadata-only changes and independently checks chain A",
   "authorized_scope": [
     "bounded literature and code audit",
     "synthetic analytical P1 chain",
@@ -42,5 +42,8 @@
     "PR140": "NO_VALID_PAIR",
     "PR141": "NO_VALID_VERTICAL_PROFILE",
     "Stage3": "METHOD_READY_NOT_VALIDATED"
-  }
+  },
+  "review_target_content_sha": "b8790bae938da4fe64c4c75522ba15183cd19957",
+  "github_delivery_state": "DRAFT_PR_CREATED",
+  "delivery_head_anchor": "PR143 final review-request comment; verify D equals PR HEAD"
 }
