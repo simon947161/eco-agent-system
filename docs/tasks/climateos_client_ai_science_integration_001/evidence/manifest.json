@@ -1,0 +1,187 @@
+{
+  "schema": "local-integrity-manifest/1",
+  "scope": "repository bytes, not provider signature or scientific validity",
+  "excluded": [
+    "self",
+    "HANDOFF_STATUS.json and REVIEW_REQUEST.json: delivery-only metadata pinned by PR comment",
+    "package-validation.txt: verification output",
+    "Python bytecode"
+  ],
+  "files": [
+    {
+      "path": "cczps_lite/engine/meteorology_connector.py",
+      "sha256": "7294c21a7a7a32eda9eec029efa1b74fab55408389e052fe55aa87d1c6f5ce26",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "cczps_lite/integration/bondo_passport_ledger.py",
+      "sha256": "a116c3c9e94fd18a8ae822bec27a0645a7c497471202a6e742cc282fe43ba6b9",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "cczps_lite/integration/client_ai_evidence.py",
+      "sha256": "893b0afdd9f0493a1b7d3c8f05fdeb30567c7aa1c958ad6cb9fee93faac53569",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "cczps_lite/integration/dynamic_quantification.py",
+      "sha256": "0f20acd237ee0cca70d65055bf71b23fd2a853eaac63c20676feab7437151cd3",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "cczps_lite/integration/ecoengine_v192b_adapter.py",
+      "sha256": "8699ce25dfb0965d68c8fc18713ea0044e656d4de05e24a08527eaa569902355",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "cczps_lite/integration/physics_validation.py",
+      "sha256": "eb06dc74802a53ffbdc24dcdae4e3fab4a50bdfc499e9ff78d96198031a064c5",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "cczps_lite/qgis_local_spatial_foundation/hydrology_contract.py",
+      "sha256": "cd09280c0f0bb983915a2c367c15b529703f381593dfe99d4abb293cf527ed48",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/ACTUAL_REUSE_LEDGER.md",
+      "sha256": "3a20c4e05406c3234916aa13d26eb50bdf91ce5932599f77e42ee977e2a64c50",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/CAPABILITY_REALITY_MATRIX.md",
+      "sha256": "30774464e51c13be8f572e0c37c0043adb8e2baff5519076adb6819967da9ee6",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/CLIENT_AI_ARCHITECTURE_AND_CONTRACT.md",
+      "sha256": "3ec1114fa56e393655534ddf32ef1ba07b931f25756cbacc7883fa66dc239e59",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/CRP_HANDOFF.md",
+      "sha256": "d658e6e0742b8ae621e48fa68002f172ed8e745285fae7258c8767f83c4e5af3",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/evidence/audit.json",
+      "sha256": "bf88fe49068d662a7a8c6e854e6cea37f8748bc9c471f4cef534ba411845e385",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/evidence/CLIENT_REPORT_ZH.md",
+      "sha256": "add6e18b2e98d9da00e1408987c95ebdbe0d057b18f58873154bcdd79fb09481",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/evidence/external-source-audit.json",
+      "sha256": "9f4e628c9728b0196b0ff5e0a069321042f2e61e7a36d4c2a09da8d2f4f25656",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/evidence/remote-baseline.json",
+      "sha256": "0f0ce92f0b60855528e77050b1956638c507654b7f0f1ba53d0b0ba645226725",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/evidence/runtime.json",
+      "sha256": "38cf0c5d29834c07706e95f630dc48a1435005d114360e660d8efd5b1c9085c0",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/evidence/station.geojson",
+      "sha256": "efccf089e51d5b853d1a8eda6e7118e2ec0b45f508c6a305a2c82555ef16fbf8",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/evidence/tests.txt",
+      "sha256": "10d68876194a55d038c30d530354ecbff2303625103bdafd72244eba3b99ee25",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/FOUNDER_REPORT_ZH.md",
+      "sha256": "7c323e35911cbfed4cb5cd9a40204080b25f5a11040c03b9006136b62a63937d",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/HANDOFF_PROTOCOL.md",
+      "sha256": "51f22513f8ff3c3b9e75c350d1be08754a6255fea8d85ff631cb419365ebc3f1",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/NEXT_SESSION.md",
+      "sha256": "a6254e408db6a89cf223e42fd50c5126163fdf09453a2e44bba5d41db29e2d51",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/PILOT_CASE_AND_RESULTS.md",
+      "sha256": "c8fbefb30cd812b993db9d6e730ca83c7bed2dd92fe98fd484182b65a1772cdd",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/QA_AND_VALIDATION.md",
+      "sha256": "7675891c9e10e8a46218fde16f9116daae10d9e995ce0a6716c14d41cdbaa904",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/README.md",
+      "sha256": "e16b08dfadfd79f453980c16e3e8ea4ddb48f7c3dc36c858bdbed3fc6dd9594c",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/request.json",
+      "sha256": "7ff1a57aa058d1332ff87e122f5051e675548d4dd43bcd0d32a35a2bcbc0109d",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/run_pilot.py",
+      "sha256": "3552bcf9365507c9606aa02bdde8a1a6c42c844ba9be3c32aa533b188c95a97e",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/SCIENTIFIC_BASELINE_AND_GATES.md",
+      "sha256": "e7f0e29f113b5f5d90c05de1fd1c74c3b626a051d260dadab14807ef75c78eba",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/SENVERSA_PUBLIC_BENCHMARK.md",
+      "sha256": "f432cf081d172ab1315525ab2237a846a451f2f19c5f50b222b06bb536a87a3d",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/TASKBOOK_ZH.md",
+      "sha256": "4553be55af2ac3ea81990ff216cf68c1c1d676597f45d6b17040d84a03cca151",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/verify_package.py",
+      "sha256": "219ea5f39f6f6344d32fe87eab8d66dc3a7b60c353bfcc5bf1b4955ae394c831",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_dynamic_quant_001/evidence/noaa-daily.json",
+      "sha256": "0d2d7217aa912df6418c69117b6f1b2bfde6f888ff3a8cf152830f9b630f6bbb",
+      "hash_basis": "exact_raw_bytes"
+    },
+    {
+      "path": "docs/tasks/climateos_dynamic_quant_001/evidence/noaa-receipt.json",
+      "sha256": "56198fb881fb1f133622030688d4c766fa647bb900bd5a2573e50cb448c4aa43",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_methane_factor_order_001/SCIENTIFIC_REVIEW_RECEIPT.md",
+      "sha256": "c1192c5509a442da0c72774513266044b00f4cd54f2f845b6a5ad9e2a4e2c0d8",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "docs/tasks/climateos_spatial_ghg_hypothesis_validation_001/SCIENTIFIC_REVIEW_RECEIPT.md",
+      "sha256": "3799b0d7013f8b43f73ac499b5ffe09c5569a75a2c08c97f0cc8c7d86a688bda",
+      "hash_basis": "repository_text_LF"
+    },
+    {
+      "path": "tests/test_client_ai_evidence.py",
+      "sha256": "b385238c4febef814c5c648f4287b948268e50c4627ddd1c55c01f30932930b1",
+      "hash_basis": "repository_text_LF"
+    }
+  ]
+}

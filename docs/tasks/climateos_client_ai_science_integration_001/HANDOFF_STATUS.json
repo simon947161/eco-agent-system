@@ -1,0 +1,46 @@
+{
+  "schema_version": "handoff/1",
+  "source_pr": null,
+  "scientific_baseline_sha": "e25ffe3e34829d9146628a7c72a363c35d8ec151",
+  "taskbook_sha": "7032d3fe1ac779c3f978dbfdaa66272bf6f7b94d",
+  "taskbook_sha_kind": "git_blob",
+  "taskbook_commit_sha": "53b836250f02e4a5b346c6e30739c736eccca03f",
+  "working_head_sha": null,
+  "working_head_semantics": "content snapshot R; delivery commit D pinned externally in PR final review comment",
+  "reviewed_head_sha": null,
+  "review_receipt_commit_sha": null,
+  "status": "PREPARING",
+  "stage": "BOUNDED_PUBLIC_DATA_PROTOTYPE",
+  "evidence_uri": "docs/tasks/climateos_client_ai_science_integration_001/README.md",
+  "blockers": [
+    "independent science review pending",
+    "production authentication not implemented",
+    "no scientific promotion authorized"
+  ],
+  "owner": "Founder",
+  "next_action": "pin research commit R and metadata delivery commit D; submit read-only review request",
+  "authorized_scope": [
+    "read-only capability audit",
+    "public source workflow research",
+    "offline public descriptive slice",
+    "Draft PR and review package"
+  ],
+  "no_run_flags": [
+    "NO_NEW_SCIENCE_EXPERIMENT",
+    "NO_EMISSIONS_OR_RISK_MODEL",
+    "NO_PRIVATE_COUNCIL_DATA",
+    "NO_DEPLOY",
+    "NO_MERGE",
+    "NO_SCIENCE_PROMOTION",
+    "NO_COMMERCIAL_CONTACT"
+  ],
+  "review_actor": "ChatGPT independent read-only reviewer; not yet acknowledged",
+  "response_delivery_state": "NOT_SENT_TO_CHATGPT",
+  "scientific_gates": {
+    "D3": "DATA_NOT_READY",
+    "P1-A": "PENDING",
+    "PR140": "NO_VALID_PAIR",
+    "PR141": "NO_VALID_VERTICAL_PROFILE",
+    "Stage3": "METHOD_READY_NOT_VALIDATED"
+  }
+}

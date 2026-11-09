@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1",
+  "question": "请核查 Central Park 2025年5月1日至3日公开气温与风速的覆盖、坐标和描述统计。",
+  "source_id": "NOAA_GHCND_USW00094728",
+  "crs": "EPSG:4326",
+  "coordinates": [
+    -73.96925,
+    40.77898
+  ],
+  "start_date": "2025-05-01",
+  "end_date": "2025-05-03",
+  "time_basis": "PROVIDER_OBSERVING_DAY",
+  "variables": {
+    "daily_max_temperature": "degC",
+    "daily_mean_wind_speed": "m/s"
+  },
+  "permission": "public_read_only",
+  "model_id": "daily_descriptive_mean/1",
+  "tenant_id": "public-demo",
+  "topic": "meteorology",
+  "basis": "station_daily",
+  "raw_path": "docs/tasks/climateos_dynamic_quant_001/evidence/noaa-daily.json",
+  "receipt_path": "docs/tasks/climateos_dynamic_quant_001/evidence/noaa-receipt.json"
+}

@@ -1,0 +1,146 @@
+{
+  "status": "LOCAL_VERIFIED_PUBLIC_DESCRIPTIVE_SLICE",
+  "schema_version": "client-ai-public/1",
+  "route": "PUBLIC_OPEN_DATA_ADAPTER",
+  "trace": [
+    "closed_question_router",
+    "local_policy_simulation",
+    "pinned_public_source_and_licence",
+    "get_environmental_context",
+    "query_observations",
+    "run_verified_model",
+    "check_regulatory_context",
+    "generate_evidence_report"
+  ],
+  "input_hashes": {
+    "docs/tasks/climateos_dynamic_quant_001/evidence/noaa-daily.json": "0d2d7217aa912df6418c69117b6f1b2bfde6f888ff3a8cf152830f9b630f6bbb",
+    "docs/tasks/climateos_dynamic_quant_001/evidence/noaa-receipt.json": "56198fb881fb1f133622030688d4c766fa647bb900bd5a2573e50cb448c4aa43"
+  },
+  "source_receipt": {
+    "source_id": "NOAA_GHCND_USW00094728",
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094728&startDate=2025-05-01&endDate=2025-05-03&dataTypes=TMAX,TMIN,AWND&format=json&units=metric&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+    "sha256": "0d2d7217aa912df6418c69117b6f1b2bfde6f888ff3a8cf152830f9b630f6bbb",
+    "retrieved_at_utc": "2026-11-04T23:59:29.239552+00:00",
+    "retrieval_timestamp_basis": "local completed-download mtime, not server attestation",
+    "units": "metric",
+    "time_basis": "PROVIDER_OBSERVING_DAY",
+    "data_class": "station_daily_observation",
+    "rights_review": "PUBLIC_RESEARCH_WITH_ATTRIBUTION",
+    "rights_source": "https://www.ncei.noaa.gov/sites/default/files/2023-12/NCEI%20PD-10-2-02%20-%20Open%20Data%20Policy%20Signed.pdf",
+    "rights_scope": "NOAA US station data; US public domain per section4a; no assertion all NCEI third-party holdings CC0; preserve attribution; no endorsement",
+    "quality_note": "TMAX/AWND attributes MFLAG,QFLAG,SFLAG[,TOBS]; nonblank QFLAG rejected; empty QFLAG is not error-free certification"
+  },
+  "hash_basis": {
+    "observations": "exact raw bytes",
+    "receipt": "repository text with CRLF normalized to LF"
+  },
+  "scientific_evidence_grade": "REAL_DATA_STRUCTURAL_QC",
+  "scientific_admission": "UNCHANGED_PENDING",
+  "reviewer": "PENDING_CHATGPT",
+  "validation_holds": [
+    "provider day timezone UNKNOWN",
+    "coordinate accuracy UNKNOWN",
+    "no field or customer ground truth",
+    "no production identity security"
+  ],
+  "rejected_rows": [],
+  "observation_result": {
+    "status": "OBSERVATION_DESCRIPTIVE_SLICE_PASSED",
+    "agent_version": "0.1",
+    "trace": [
+      "get_environmental_context",
+      "query_observations",
+      "run_verified_model",
+      "check_regulatory_context",
+      "generate_evidence_report"
+    ],
+    "observations": {
+      "records": [
+        {
+          "date": "2025-05-01",
+          "daily_max_temperature": 21.7,
+          "daily_mean_wind_speed": 2.4,
+          "provider_flags": {
+            "TMAX": ",,W",
+            "AWND": ",,W"
+          }
+        },
+        {
+          "date": "2025-05-02",
+          "daily_max_temperature": 28.9,
+          "daily_mean_wind_speed": 1.0,
+          "provider_flags": {
+            "TMAX": ",,W",
+            "AWND": ",,W"
+          }
+        },
+        {
+          "date": "2025-05-03",
+          "daily_max_temperature": 29.4,
+          "daily_mean_wind_speed": 1.3,
+          "provider_flags": {
+            "TMAX": ",,W",
+            "AWND": ",,W"
+          }
+        }
+      ],
+      "missing_days": 0,
+      "source_sha256": "0d2d7217aa912df6418c69117b6f1b2bfde6f888ff3a8cf152830f9b630f6bbb",
+      "units": {
+        "daily_max_temperature": "degC",
+        "daily_mean_wind_speed": "m/s"
+      },
+      "data_class": "station_daily_observation",
+      "time_basis": "PROVIDER_OBSERVING_DAY"
+    },
+    "result": {
+      "method_id": "daily_descriptive_mean/1",
+      "validation_status": "SOFTWARE_TESTED_NOT_SCIENTIFIC_MODEL_VALIDATED",
+      "count": 3,
+      "means": {
+        "daily_max_temperature": 26.666666666666664,
+        "daily_mean_wind_speed": 1.5666666666666667
+      },
+      "units": {
+        "daily_max_temperature": "degC",
+        "daily_mean_wind_speed": "m/s"
+      },
+      "uncertainty": "Instrument/representativeness uncertainty not quantified; no predictive confidence interval."
+    },
+    "regulatory": {
+      "status": "NOT_ASSESSED",
+      "legal_effect": "NONE",
+      "reason": "No jurisdiction-specific current legal evidence admitted to this run."
+    },
+    "report_zh": "# 环境证据报告\n\n地点：纽约 Central Park 公开站点；不是 NSW 代表站。\n\n2025-05-01 至 2025-05-03，共 3 个提供方观测日；日界时区尚未核实，未强行转成 UTC。\n\n日最高气温的算术平均：26.667 °C；日平均风速的算术平均：1.567 m/s。前者不是期间平均气温；后者没有方向，不能推算输送。\n\n原始字节 SHA-256：0d2d7217aa912df6418c69117b6f1b2bfde6f888ff3a8cf152830f9b630f6bbb。通过完整覆盖、有限数值、站点坐标及提供方质量标志检查；空质量标志不保证没有误差。\n\n这是三天描述统计，不能证明趋势、气候变化、甲烷源强、生态收益或法律责任。法规状态：NOT_ASSESSED。未量化仪器和空间代表性误差。\n"
+  },
+  "spatial_result": {
+    "type": "FeatureCollection",
+    "bbox": [
+      -73.96925,
+      40.77898,
+      -73.96925,
+      40.77898
+    ],
+    "features": [
+      {
+        "type": "Feature",
+        "id": "NOAA_GHCND_USW00094728",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.96925,
+            40.77898
+          ]
+        },
+        "properties": {
+          "source_sha256": "0d2d7217aa912df6418c69117b6f1b2bfde6f888ff3a8cf152830f9b630f6bbb",
+          "coordinate_accuracy_m": "UNKNOWN",
+          "crs_basis": "inherited EPSG:4326 contract; datum not independently surveyed",
+          "observation_count": 3,
+          "spatial_scope": "single station; no parcel or receptor proximity"
+        }
+      }
+    ]
+  }
+}
