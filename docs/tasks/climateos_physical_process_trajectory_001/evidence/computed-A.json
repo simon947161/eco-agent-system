@@ -1,0 +1,19 @@
+{
+  "ERF_W_m2": 0.569344413968403,
+  "dF_dM": 0.0003657674009602225,
+  "dF_dN": -4.962852025152416e-05,
+  "reported_2025_ERF_W_m2": 0.569,
+  "rounding_residual_W_m2": 0.0003444139684030123,
+  "rounded_match": true,
+  "propagated_abundance_u_if_independent_W_m2": 0.00017557115817196784,
+  "covariance_extreme_u_range_W_m2": [
+    0.00017457578205587633,
+    0.0001765609228659373
+  ],
+  "uncertainty_interpretation": "Page reports plus/minus abundance uncertainty, but the AGGI page does not define its confidence level. Propagation is a conditional standard-error interpretation, NOT a claimed calibrated 95% interval.",
+  "formula_10_percent_scale_W_m2": 0.0569344413968403,
+  "model_scale_not_CI": true,
+  "temperature_K": null,
+  "status": "OPEN_DATA_RECALCULATED",
+  "scope": "NOAA 2025 global methane ERF relative to 1750; not emissions attribution, indirect ozone forcing or surface temperature"
+}

@@ -1,0 +1,348 @@
+{
+  "source_id": "HRS_INHERITED",
+  "git_commit": "987cc1dc7170204e5eab3d1750590ba463ea9d08",
+  "git_path": "apps/regional-public-os/data/2020.json",
+  "parent_shard_sha256": "2d6ef13d2b69a4de1a0c2f1f0bee358780d246e2911bfefa4a4fcac4d549b302",
+  "parent_index_sha256": "bd4728ea129330d5e1abd35dce9b223df87c6801c18ad52e7d9db0eb7e0d45ca",
+  "raw_source_reacquired": false,
+  "metadata": {
+    "absent_dates": 0,
+    "attribution": "© WaterNSW; Australian Bureau of Meteorology Hydrologic Reference Stations. ClimateOS parsed daily records; no source values altered.",
+    "coverage_end": "2026-02-28",
+    "coverage_start": "1964-03-01",
+    "data_owner": "WaterNSW",
+    "licence": "https://creativecommons.org/licenses/by/3.0/au/",
+    "licence_evidence": "https://www.bom.gov.au/water/hrs/copyright.shtml",
+    "licence_verified_on": "2026-10-26",
+    "method": "hrs-410033-daily-v1",
+    "null_values": 0,
+    "passport": {
+      "does_not_support": [
+        "town supply adequacy",
+        "water quality",
+        "causality",
+        "current conditions"
+      ],
+      "human_review_required": true,
+      "passport_id": "HRS-PASSPORT-3CCD749190E38305",
+      "release_as_environmental_evidence": false,
+      "state": "SOURCE_RECORDS_AWAITING_HUMAN_REVIEW",
+      "supports": "dated source streamflow records with original quality flags"
+    },
+    "publisher": "Australian Bureau of Meteorology",
+    "quality_counts": {
+      "A": 12058,
+      "B": 7192,
+      "C": 160,
+      "E": 3235,
+      "G": 0
+    },
+    "quality_definitions": {
+      "A": "Best available",
+      "B": "Good",
+      "C": "Poor",
+      "E": "Unreliable",
+      "G": "Gap filled"
+    },
+    "raw_publication": "not committed; local raw snapshot retained",
+    "receipt": {
+      "cost_aud": 0,
+      "input_digest": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+      "method": "hrs-410033-daily-v1",
+      "receipt_id": "HRS-RECEIPT-E70B4670978ABFD6",
+      "result_digest": "sha256:b3103538910f2dc55a06eb818a9fbfba4501f9cacc81ed701cf102a97bb07d25",
+      "termination": "VALIDATED_SOURCE_RECORDS_AWAITING_HUMAN_REVIEW"
+    },
+    "retrieved_at": "2026-10-26T06:43:34.573229+00:00",
+    "source_column_unit": "Flow (ML)",
+    "source_description_unit": "ML/day",
+    "source_header": [
+      [
+        "#",
+        "Australian Bureau of Meteorology"
+      ],
+      [
+        "#",
+        "Hydrologic Reference Stations"
+      ],
+      [
+        "#"
+      ],
+      [
+        "#",
+        "Dataset version: September, 2026"
+      ],
+      [
+        "#"
+      ],
+      [
+        "#",
+        "Daily streamflow (ML/day) and quality code"
+      ],
+      [
+        "#",
+        "Quality code values are defined as:"
+      ],
+      [
+        "#",
+        "  Best available data: A"
+      ],
+      [
+        "#",
+        "  Good data: B"
+      ],
+      [
+        "#",
+        "  Poor data: C"
+      ],
+      [
+        "#",
+        "  Unreliable data: E"
+      ],
+      [
+        "#",
+        "  Gap filled data: G"
+      ],
+      [
+        "#",
+        "For detailed quality code mapping, see the report 'Streamflow quality codes for Hydrologic Reference Stations' at http://www.bom.gov.au/water/hrs/qc_doc.shtml"
+      ],
+      [
+        "#"
+      ],
+      [
+        "#",
+        "Murrumbidgee River at Mittagang Crossing (410033)"
+      ],
+      [
+        "#",
+        "Catchment area:",
+        " 1889.8",
+        "km^2"
+      ],
+      [
+        "#",
+        "Location:",
+        " 149.0900",
+        "degrees E",
+        " 36.1700",
+        "degrees S"
+      ],
+      [
+        "#",
+        "Source used:",
+        "WISKI (validated data only)"
+      ],
+      [
+        "#",
+        "Extraction method:",
+        "daily discharge total (cubic metres)",
+        " reported at 9am local time for the previous 24 hours."
+      ],
+      [
+        "#",
+        "Data gaps were in filled by using daily rainfall-runoff model"
+      ],
+      [
+        "#",
+        "Data extraction date:",
+        "4/06/2024"
+      ],
+      [
+        "#"
+      ],
+      [
+        "#",
+        "For more information see http://www.bom.gov.au/water/hrs"
+      ],
+      [
+        "#"
+      ],
+      [
+        "#",
+        "For copyright and licence information see http://www.bom.gov.au/water/hrs/copyright.shtml"
+      ],
+      [
+        "#"
+      ]
+    ],
+    "source_id": "COOMA-FLOW-STATION-410033",
+    "source_sha256": "78e8188f3f445afa33ad466dd0554e653761ef617832b6df3a9eac6b1240ca1a",
+    "source_url": "https://www.bom.gov.au/water/hrs/content/data/410033/410033_daily_ts.csv",
+    "source_version": "September, 2026",
+    "station": {
+      "catchment_km2": 1889.8,
+      "id": "410033",
+      "latitude": -36.17,
+      "longitude": 149.09,
+      "name": "Murrumbidgee River at Mittagang Crossing",
+      "scope": "gauge upstream catchment; not Council or town supply boundary"
+    },
+    "time_basis": "source date labels; previous 24h reported at 09:00 local time; UTC offset unspecified, no invented UTC conversion",
+    "unit": "ML per daily interval",
+    "warnings": [
+      "Header extraction date can predate records; retain source header and retrieval time separately.",
+      "HRS may contain model gap filling; G is not a measurement.",
+      "No supply sufficiency, causal, compliance or current-condition conclusion."
+    ]
+  },
+  "rows": [
+    {
+      "date": "2020-01-01",
+      "quality": "E",
+      "value": 28.77171727588048
+    },
+    {
+      "date": "2020-01-02",
+      "quality": "E",
+      "value": 30.586149896752563
+    },
+    {
+      "date": "2020-01-03",
+      "quality": "E",
+      "value": 30.931756110288
+    },
+    {
+      "date": "2020-01-04",
+      "quality": "E",
+      "value": 31.709370090742734
+    },
+    {
+      "date": "2020-01-05",
+      "quality": "E",
+      "value": 31.277362323823436
+    },
+    {
+      "date": "2020-01-06",
+      "quality": "E",
+      "value": 34.73342445917784
+    },
+    {
+      "date": "2020-01-07",
+      "quality": "E",
+      "value": 30.326945236600984
+    },
+    {
+      "date": "2020-01-08",
+      "quality": "E",
+      "value": 27.475693975122578
+    },
+    {
+      "date": "2020-01-09",
+      "quality": "E",
+      "value": 43.63278445733746
+    },
+    {
+      "date": "2020-01-10",
+      "quality": "E",
+      "value": 78.88461823681845
+    },
+    {
+      "date": "2020-01-11",
+      "quality": "E",
+      "value": 50.631310281241134
+    },
+    {
+      "date": "2020-01-12",
+      "quality": "E",
+      "value": 28.68531572249662
+    },
+    {
+      "date": "2020-01-13",
+      "quality": "E",
+      "value": 17.539515336318843
+    },
+    {
+      "date": "2020-01-14",
+      "quality": "E",
+      "value": 11.405005046272661
+    },
+    {
+      "date": "2020-01-15",
+      "quality": "E",
+      "value": 7.776139804282828
+    },
+    {
+      "date": "2020-01-16",
+      "quality": "E",
+      "value": 33.69660581857152
+    },
+    {
+      "date": "2020-01-17",
+      "quality": "E",
+      "value": 64.88756658901109
+    },
+    {
+      "date": "2020-01-18",
+      "quality": "E",
+      "value": 107.65633551250995
+    },
+    {
+      "date": "2020-01-19",
+      "quality": "E",
+      "value": 90.80803260322419
+    },
+    {
+      "date": "2020-01-20",
+      "quality": "E",
+      "value": 72.23169862645022
+    },
+    {
+      "date": "2020-01-21",
+      "quality": "E",
+      "value": 80.18064153738737
+    },
+    {
+      "date": "2020-01-22",
+      "quality": "E",
+      "value": 66.09718833638514
+    },
+    {
+      "date": "2020-01-23",
+      "quality": "E",
+      "value": 49.853696300786396
+    },
+    {
+      "date": "2020-01-24",
+      "quality": "E",
+      "value": 51.149719601544305
+    },
+    {
+      "date": "2020-01-25",
+      "quality": "E",
+      "value": 39.571911448485025
+    },
+    {
+      "date": "2020-01-26",
+      "quality": "E",
+      "value": 32.6597871779652
+    },
+    {
+      "date": "2020-01-27",
+      "quality": "E",
+      "value": 30.067740576638382
+    },
+    {
+      "date": "2020-01-28",
+      "quality": "E",
+      "value": 27.475693975122578
+    },
+    {
+      "date": "2020-01-29",
+      "quality": "E",
+      "value": 26.266072227748538
+    },
+    {
+      "date": "2020-01-30",
+      "quality": "E",
+      "value": 23.41482096627014
+    },
+    {
+      "date": "2020-01-31",
+      "quality": "E",
+      "value": 25.83406446082924
+    }
+  ],
+  "transformation": "Selected Jan 2020 from pinned public derived shard. No values changed; no imputation, flow conversion or UTC assignment.",
+  "scope": "Cooma QC example only; NOT Nile measurement"
+}

@@ -1,0 +1,19 @@
+{
+  "task": "CLIMATEOS-PHYSICAL-PROCESS-TRAJECTORY-001",
+  "review_state": "READY_FOR_INDEPENDENT_REVIEW",
+  "scientific_admission": "PENDING",
+  "research_head_R": null,
+  "delivery_head_D": "OUTER_GIT_COMMIT_AND_PR_HANDOFF_COMMENT",
+  "independent_review_requested": "Founder to forward fixed PR and delivery HEAD to ChatGPT; no automatic delivery claimed",
+  "questions": [
+    "Does AGGI Table1 implementation use the correct dry global ppb inputs, overlap term, 1750 baseline and rapid adjustment, with no temperature conversion?",
+    "Are input uncertainty, formula uncertainty and publication-rounding agreement distinguished from independent validation?",
+    "Are RONI version, fixed years, season thresholds, pairing, autocorrelation diagnostics and bootstrap degeneracy interpreted honestly, without substituting index persistence for regional weather probability?",
+    "Are synthetic water-volume conservation, covariance cancellation and unknown-term rejection correct, while HRS E-quality and day/unit ambiguities remain blocked?",
+    "Do cross-process claims retain regional specificity, counterevidence and excerpt-only literature limitations?",
+    "Does the AU Scorecard brief distinguish the statutory 2005 baseline conflict from an unproven total-score error and current-page access limits?",
+    "Are source budgets, frozen baseline files, rights, no external contact and all preexisting science gates preserved?"
+  ],
+  "requested_effect": "INDEPENDENT_READ_ONLY_REVIEW_ONLY",
+  "not_authorized": ["merge", "deploy", "contact editors", "certify", "promote scientific admission", "expand experiments"]
+}

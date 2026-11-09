@@ -1,0 +1,81 @@
+{
+  "aggi": {
+    "url": "https://gml.noaa.gov/aggi/aggi.html",
+    "retrieved_at": "2026-11-09T20:53:24.210415+00:00",
+    "attempts": 1,
+    "status": "ACQUIRED",
+    "http_status": 200,
+    "final_url": "https://gml.noaa.gov/aggi/aggi.html",
+    "bytes": 70047,
+    "sha256": "9ffa03d571765dc55d46d57c8e1494e86340d8ddda025c77b3724f48e199dbe1",
+    "last_modified": null,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  "gml-rights": {
+    "url": "https://gml.noaa.gov/about/disclaimer.html",
+    "retrieved_at": "2026-11-09T20:53:25.439971+00:00",
+    "attempts": 1,
+    "status": "ACQUIRED",
+    "http_status": 200,
+    "final_url": "https://gml.noaa.gov/about/disclaimer.html",
+    "bytes": 23944,
+    "sha256": "657e14026cea7e71431d1fbd1920d2d671bbd289009bb8e3ed8bb26e17ea7dec",
+    "last_modified": null,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  "roni": {
+    "url": "https://www.cpc.ncep.noaa.gov/data/indices/RONI.ascii.txt",
+    "retrieved_at": "2026-11-09T20:53:26.298489+00:00",
+    "attempts": 1,
+    "status": "ACQUIRED",
+    "http_status": 200,
+    "final_url": "https://www.cpc.ncep.noaa.gov/data/indices/RONI.ascii.txt",
+    "bytes": 14752,
+    "sha256": "1297887f581b6190e459cbbf8bdec9a703ff65c1a229e2de4dd94285254f35c8",
+    "last_modified": "Tue, 03 Nov 2026 19:31:48 GMT",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "roni-method": {
+    "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/",
+    "retrieved_at": "2026-11-09T20:53:27.646950+00:00",
+    "attempts": 1,
+    "status": "ACQUIRED",
+    "http_status": 200,
+    "final_url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/",
+    "bytes": 98060,
+    "sha256": "45a29af6d57b0a231dcc2fd50b636e823c43d591208e9dd6196358bfaed85834",
+    "last_modified": null,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  "nws-rights": {
+    "url": "https://www.weather.gov/disclaimer",
+    "retrieved_at": "2026-11-09T20:53:30.335136+00:00",
+    "attempts": 1,
+    "status": "ACQUIRED",
+    "http_status": 200,
+    "final_url": "https://www.weather.gov/disclaimer",
+    "bytes": 41679,
+    "sha256": "c08c1597ebd52b31e3ba749f76d2217c290dcd16dc894cb4c109655566ecbbd1",
+    "last_modified": null,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  "scorecard": {
+    "url": "https://www.climatescorecard.org/scorecard/",
+    "retrieved_at": "2026-11-09T20:53:31.149996+00:00",
+    "attempts": 1,
+    "status": "STOP_NO_RETRY",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "au-act": {
+    "url": "https://www.legislation.gov.au/C2022A00037/2025-02-20/2025-02-20/text/original/epub/OEBPS/document_1/document_1.html",
+    "retrieved_at": "2026-11-09T20:53:32.378599+00:00",
+    "attempts": 1,
+    "status": "ACQUIRED",
+    "http_status": 200,
+    "final_url": "https://www.legislation.gov.au/C2022A00037/2025-02-20/2025-02-20/text/original/epub/OEBPS/document_1/document_1.html",
+    "bytes": 100669,
+    "sha256": "02397536f5043ebfe8d5a3f2e0f6309af6a470e03ed5ff8c516e70e1723680c3",
+    "last_modified": null,
+    "content_type": "text/html"
+  }
+}

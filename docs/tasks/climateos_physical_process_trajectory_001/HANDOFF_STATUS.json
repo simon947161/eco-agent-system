@@ -1,0 +1,19 @@
+{
+  "task": "CLIMATEOS-PHYSICAL-PROCESS-TRAJECTORY-001",
+  "branch": "research/climateos-physical-process-trajectory-001",
+  "frozen_parent": "1e6b13e2b80c50e6d20e05a4e88819eb0de93488",
+  "taskbook_head": "947333489f01e5f85cb92084933fa24d766cf334",
+  "research_head_R": null,
+  "delivery_head_D": "OUTER_GIT_COMMIT_AND_PR_HANDOFF_COMMENT",
+  "draft_pr": null,
+  "local_status": "LOCAL_VERIFIED",
+  "review_status": "PENDING",
+  "deployed": false,
+  "merged": false,
+  "editor_note": "NOT_SENT",
+  "scientifically_admitted": false,
+  "gates": {"D3":"DATA_NOT_READY","P1-A":"PENDING","PR140":"NO_VALID_PAIR","PR141":"NO_VALID_VERTICAL_PROFILE","PR143_ChainB":"BLOCKED","PR144_real":"DATA_NOT_READY","Stage3":"METHOD_READY_NOT_VALIDATED"},
+  "canonical_ECOChain": "ECOCHAIN_CANONICAL_NOT_FOUND",
+  "Enotebook": "PENDING_INTEGRATION",
+  "stop": "Await independent ChatGPT review and Founder decision; no automatic next experiment"
+}
