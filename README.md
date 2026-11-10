@@ -1,5 +1,15 @@
 # Eco Agent System
 
+## Shared environmental state and bounded physical coupling — Issue #150
+
+[Research package](docs/tasks/climateos_earth_system_coupling_lab_001/README.md),
+[Chinese Founder report](docs/tasks/climateos_earth_system_coupling_lab_001/FOUNDER_REPORT_ZH.md)
+and [12-page offline slides](docs/tasks/climateos_earth_system_coupling_lab_001/slides.html).
+Four component classes, three coupling strategies and 10,008 actual synthetic
+run records include deliberate failures, conservation checks and byte-identical
+replay. Real regional predictive skill and scientific admission remain PENDING.
+No deployment, merge or private EcoEngine v200 access is included.
+
 **Open-source Environmental Decision Support Framework**
 
 Eco Agent System is an early-stage open-source prototype for translating environmental observations into planning, resilience, maintenance, ESG interpretation, and climate-risk decision support.

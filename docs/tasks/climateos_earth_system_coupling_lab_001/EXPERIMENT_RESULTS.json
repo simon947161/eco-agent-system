@@ -1,0 +1,95 @@
+{
+  "actual_all_family_T_q_correlation": -0.6817965340737089,
+  "budget": {
+    "bytes": 200000000,
+    "max_iterations": 80,
+    "max_steps": 96,
+    "seconds": 1197.8331489999546
+  },
+  "completed_runs": 10008,
+  "correlation_note": "nominal Gaussian draws correlated; clipping and designed edge families alter whole-matrix correlation",
+  "early_stop": null,
+  "elapsed_seconds": 65.92592459998559,
+  "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+  "failure_distribution": {
+    "COMPLETED": 5145,
+    "DIFFUSION_CFL": 693,
+    "MISSING_DEPENDENCY": 556,
+    "NON_CONVERGENCE": 278,
+    "SPATIAL_MISMATCH": 834,
+    "SYNTHETIC_AS_OBSERVATION": 834,
+    "TIME_MISMATCH": 834,
+    "UNIT_MISMATCH": 834
+  },
+  "family_counts": {
+    "global_to_local": 834,
+    "heat_dry": 834,
+    "iteration_limit": 834,
+    "lagged": 834,
+    "missing_q": 834,
+    "nominal": 834,
+    "rain_pulse": 834,
+    "stiff": 834,
+    "synthetic_as_observed": 834,
+    "time": 834,
+    "unit": 834,
+    "zero_wind": 834
+  },
+  "interpretation": "algorithm frequency over declared design, not 10000 independent field experiments or real hazard probability",
+  "max_energy_residual_j_m2": 9.271025191992521e-08,
+  "max_water_residual_kg_m2": 1.5388731955390256e-14,
+  "model_version": "earth-coupling/1",
+  "output_bytes": 17645922,
+  "paired_records_path": "evidence/main/summary.json#/pairs",
+  "pre_run_protocol_sha256": "f851b2f130f05ab3c18bcccf2cd922296aea057337116e233d6504243fcf3f8a",
+  "requested": 10008,
+  "requested_input_correlation": -0.6,
+  "runs_sha256": "c718343288fe0bbdebbf208ce7150eaf83f839e22b36f828f9c27dc3700694db",
+  "scenario_count": 3336,
+  "scientific_admission": "PENDING",
+  "seconds_per_run": 0.006587322601917025,
+  "seed": 20261110,
+  "source_hashes": {
+    "cczps_lite/integration/earth_system_coupling/__init__.py": "8e17f79bd9341773a24fc61a1f95e70e89f422564c23cc6e105cbf0433641e78",
+    "cczps_lite/integration/earth_system_coupling/__main__.py": "e91a6724f915a3a6d4a80c0ba0fae5fa0283ea58c2e10dc596ee4b3ee72870bd",
+    "cczps_lite/integration/earth_system_coupling/diagnostics.py": "db55e620b7b8a6a2869431c8a8a71c889393aa601da0e48eb72f5983a434fc5e",
+    "cczps_lite/integration/earth_system_coupling/experiments.py": "44f5a98c45a91cfd26adc0e83c776fe10d077825d2eb77b202ba89d1c4c0e676",
+    "cczps_lite/integration/earth_system_coupling/models.py": "a8d0e437c44aee1540877e2a2de0c507ae8a26b336abeed00ed3471e358120b5",
+    "cczps_lite/integration/earth_system_coupling/ports.py": "85257124bf322131046caf63df1de0f17693401a34bd6f18556af020dc4d1087",
+    "cczps_lite/integration/earth_system_coupling/state.py": "45e5ead46e52f40d7bea4c69588a45e283938ce78f55474efb6b09b9dc95bf47"
+  },
+  "started_utc": "2026-11-10T10:50:31.937228+00:00",
+  "strategy_counts": {
+    "independent": {
+      "COMPLETED": 1993,
+      "DIFFUSION_CFL": 231,
+      "SPATIAL_MISMATCH": 278,
+      "SYNTHETIC_AS_OBSERVATION": 278,
+      "TIME_MISMATCH": 278,
+      "UNIT_MISMATCH": 278,
+      "threshold_exceeded": 362
+    },
+    "one_way": {
+      "COMPLETED": 1715,
+      "DIFFUSION_CFL": 231,
+      "MISSING_DEPENDENCY": 278,
+      "SPATIAL_MISMATCH": 278,
+      "SYNTHETIC_AS_OBSERVATION": 278,
+      "TIME_MISMATCH": 278,
+      "UNIT_MISMATCH": 278,
+      "threshold_exceeded": 350
+    },
+    "two_way": {
+      "COMPLETED": 1437,
+      "DIFFUSION_CFL": 231,
+      "MISSING_DEPENDENCY": 278,
+      "NON_CONVERGENCE": 278,
+      "SPATIAL_MISMATCH": 278,
+      "SYNTHETIC_AS_OBSERVATION": 278,
+      "TIME_MISMATCH": 278,
+      "UNIT_MISMATCH": 278,
+      "threshold_exceeded": 361
+    }
+  },
+  "unique_config_strategy_hashes": 10008
+}

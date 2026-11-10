@@ -1,0 +1,432 @@
+{
+  "README.md": {
+    "bytes": 13795,
+    "hash_mode": "LF",
+    "sha256": "3d98bf191efaca1838dc3187c0ecb4fe5cb4d0e630529d8199c8838204dc3cb7"
+  },
+  "cczps_lite/integration/earth_system_coupling/__init__.py": {
+    "bytes": 108,
+    "hash_mode": "LF",
+    "sha256": "8e17f79bd9341773a24fc61a1f95e70e89f422564c23cc6e105cbf0433641e78"
+  },
+  "cczps_lite/integration/earth_system_coupling/__main__.py": {
+    "bytes": 4271,
+    "hash_mode": "LF",
+    "sha256": "e91a6724f915a3a6d4a80c0ba0fae5fa0283ea58c2e10dc596ee4b3ee72870bd"
+  },
+  "cczps_lite/integration/earth_system_coupling/diagnostics.py": {
+    "bytes": 8190,
+    "hash_mode": "LF",
+    "sha256": "db55e620b7b8a6a2869431c8a8a71c889393aa601da0e48eb72f5983a434fc5e"
+  },
+  "cczps_lite/integration/earth_system_coupling/experiments.py": {
+    "bytes": 6640,
+    "hash_mode": "LF",
+    "sha256": "44f5a98c45a91cfd26adc0e83c776fe10d077825d2eb77b202ba89d1c4c0e676"
+  },
+  "cczps_lite/integration/earth_system_coupling/models.py": {
+    "bytes": 20222,
+    "hash_mode": "LF",
+    "sha256": "a8d0e437c44aee1540877e2a2de0c507ae8a26b336abeed00ed3471e358120b5"
+  },
+  "cczps_lite/integration/earth_system_coupling/ports.py": {
+    "bytes": 2716,
+    "hash_mode": "LF",
+    "sha256": "85257124bf322131046caf63df1de0f17693401a34bd6f18556af020dc4d1087"
+  },
+  "cczps_lite/integration/earth_system_coupling/state.py": {
+    "bytes": 12474,
+    "hash_mode": "LF",
+    "sha256": "45e5ead46e52f40d7bea4c69588a45e283938ce78f55474efb6b09b9dc95bf47"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/.gitattributes": {
+    "bytes": 41,
+    "hash_mode": "LF",
+    "sha256": "577e146a878dcbfa589b70aa224c47aaf0d28afcf21ceae9eb5816c3806b7905"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/CCZPS_ECOCHAIN_HANDOFF.md": {
+    "bytes": 1902,
+    "hash_mode": "LF",
+    "sha256": "88dd44659f695fb7296962ec22ef169c23236dacd41e49a6a95c4624e9ff055d"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/COUNTEREVIDENCE_AND_FAILURES.md": {
+    "bytes": 1930,
+    "hash_mode": "LF",
+    "sha256": "73f8def5db3a759a64ddbde88bfcae69a2b75fbd67099cb77d00dfd82abfe002"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/COUPLER_DESIGN.md": {
+    "bytes": 2672,
+    "hash_mode": "LF",
+    "sha256": "d0214e43e093a5e2177d278ec4ad86ecdc87568d7aa75bb365335e2a7fd91fdd"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/CRP_HANDOFF.md": {
+    "bytes": 1945,
+    "hash_mode": "LF",
+    "sha256": "90ddfce539490be4f6a5682efad62678f3ad3afa8f8d7b319f58970f99bffeaa"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/DATA_AND_MODEL_RIGHTS.md": {
+    "bytes": 1534,
+    "hash_mode": "LF",
+    "sha256": "2cf6f92a1d4453fc16b6d336e260ba4a199c496998ae04c1171977507f3be22d"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/EXPERIMENT_MATRIX.md": {
+    "bytes": 2857,
+    "hash_mode": "LF",
+    "sha256": "a8fc37564066ccf9d61d6e1bd8bcc04cd1ea924f867e30450d655a7befdc1b96"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/EXPERIMENT_RESULTS.json": {
+    "bytes": 3616,
+    "hash_mode": "LF",
+    "sha256": "3c719970b43919ae84d70472b756df4174238821a00e6b1529b8d34ce4c709bf"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/FOUNDER_REPORT_ZH.md": {
+    "bytes": 4074,
+    "hash_mode": "LF",
+    "sha256": "dbae6ad9e4211d73720eeb0a68b56ad3c00376c63ceb5578bea5d40442313031"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/MECHANISM_RESEARCH.md": {
+    "bytes": 3697,
+    "hash_mode": "LF",
+    "sha256": "1c0cd5185cdaf59e466a8ad7794df80adec7786f8896deee02e9db8f90c3ec4e"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/MODEL_INTERFACE.md": {
+    "bytes": 2644,
+    "hash_mode": "LF",
+    "sha256": "c4e2c594b3e7574aa3edd0e8003fc9212516eb7521c42bca50ad574ef8eba466"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/NEXT_SESSION.md": {
+    "bytes": 1322,
+    "hash_mode": "LF",
+    "sha256": "9c25ec292473de169f15139350e8474b6c146d9dff24d2862cda396f382c4f1c"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/NUMERICAL_METHODS_AND_ASSUMPTIONS.md": {
+    "bytes": 3313,
+    "hash_mode": "LF",
+    "sha256": "8a70a94da7875d52315c44e0bbbb0449f7e3f0552001eb668d658618c0153c06"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/PHYSICAL_AND_STATISTICAL_GATES.md": {
+    "bytes": 1498,
+    "hash_mode": "LF",
+    "sha256": "3b3b00d17a427089a33d5a8d9b2fdf6eda4c7f863f74c99099af0596a06f607d"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/PRE_RUN_PROTOCOL.md": {
+    "bytes": 2799,
+    "hash_mode": "LF",
+    "sha256": "f851b2f130f05ab3c18bcccf2cd922296aea057337116e233d6504243fcf3f8a"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/QA_AND_VALIDATION.md": {
+    "bytes": 3486,
+    "hash_mode": "LF",
+    "sha256": "fd49c6a6d409673aa74aa4332917fb9b62995bb10840b35ea19e307a99069586"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/README.md": {
+    "bytes": 1479,
+    "hash_mode": "LF",
+    "sha256": "4036fb5c0a56d8e60d9d9eede45c574f3e92be1e4ab10dd6fe451975566c0dc6"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/REUSE_AUDIT.md": {
+    "bytes": 4189,
+    "hash_mode": "LF",
+    "sha256": "c2dcb82670fc3aed8fbce297949837ca27deda13cc055bfe84e36d4bf9953662"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/SHARED_STATE_SCHEMA.json": {
+    "bytes": 3532,
+    "hash_mode": "LF",
+    "sha256": "f07d20aaca0c2514fc52b12f99b1a489409fd14408fad4c24e29010fc11ef949"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/SOURCE_REGISTER.json": {
+    "bytes": 3449,
+    "hash_mode": "LF",
+    "sha256": "3c55d5a197c40d4ad06eecf20df7ca1143f83b6eddc0a3a47775ec6a22f94ca7"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/TASKBOOK_ZH.md": {
+    "bytes": 15887,
+    "hash_mode": "LF",
+    "sha256": "c9ae47859e5c43acad6e90073f028f3900dd39690b00fd5ae97e288e1a31f5bc"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/baseline.json": {
+    "bytes": 10101,
+    "hash_mode": "LF",
+    "sha256": "00c048f798150ce30daca2f4f4dc00d674b400e127600571bfc7da2ea7f416d0"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/batch-receipt.json": {
+    "bytes": 1845,
+    "hash_mode": "LF",
+    "sha256": "74e725a34603599f9178c0e6e803ff0e62af28d739ea79031ac33d106e5a5bde"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/component-interface.json": {
+    "bytes": 4896,
+    "hash_mode": "LF",
+    "sha256": "12e6e0481baa6f6866d1bf7b3113150067049b941f96f8bf9da904ebe4849464"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/diagnostics.json": {
+    "bytes": 664760,
+    "hash_mode": "LF",
+    "sha256": "bbf92c72346a3e7f2f5ea51c1a236c2ebad75d13bb51c93b0fe006e58f799c60"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/field-catalog.json": {
+    "bytes": 3589,
+    "hash_mode": "LF",
+    "sha256": "7e5911248223881f5a5e223f172c92e7319fca03aecdf04b1f4ef5171dbedad8"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/fixture-state.json": {
+    "bytes": 26586,
+    "hash_mode": "LF",
+    "sha256": "0ee2fb23103a015729bb5b6e1dead781907bb9cc1291ca7267ab18365a4cc468"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/full-tests.txt": {
+    "bytes": 1556,
+    "hash_mode": "LF",
+    "sha256": "664835c2eaa19884b133656db58791d7df142b0e98ad9456f2748dd418f27c9d"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/inherited-validation.json": {
+    "bytes": 875,
+    "hash_mode": "LF",
+    "sha256": "cc5a3be379841a5023240b1a1f52b2c8d0f4002286c34b2e8351e506ef73d95d"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/intake.json": {
+    "bytes": 17459,
+    "hash_mode": "LF",
+    "sha256": "ad65ad02fd6e06bff39968091714db3e7b0245ad8c4e85ef0f4a87a629ab8982"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/main/runs.jsonl": {
+    "bytes": 17645922,
+    "hash_mode": "bytes",
+    "sha256": "c718343288fe0bbdebbf208ce7150eaf83f839e22b36f828f9c27dc3700694db"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/main/summary.csv": {
+    "bytes": 760,
+    "hash_mode": "LF",
+    "sha256": "13f65095ca787e1614cb399745cdef9affed0ade78b6f84a4aebf718e42958d2"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/main/summary.json": {
+    "bytes": 805355,
+    "hash_mode": "LF",
+    "sha256": "9afc240d83f1af935bffdc3b9ae73ca00b6a051fa96900e04a665eae3ae5d2d8"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/new_seed/runs.jsonl": {
+    "bytes": 527653,
+    "hash_mode": "bytes",
+    "sha256": "5c4e49b7bf24cbf603fc62d23e216ca4f901dfaaa20c5d73479ee703c557ebdb"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/new_seed/summary.csv": {
+    "bytes": 715,
+    "hash_mode": "LF",
+    "sha256": "883c125833c56068c2bf8377a357daa7f125a6f31bec6b9d6ce0209ec84ea3b2"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/new_seed/summary.json": {
+    "bytes": 27664,
+    "hash_mode": "LF",
+    "sha256": "94ab578fc5bd22d99992b782614b832079117825577a82b9569519be10458626"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/pre_interface_batch_receipt.json": {
+    "bytes": 1846,
+    "hash_mode": "LF",
+    "sha256": "3789101501a1ccf62854bb6b2a372818ad357b9764234a4319d3768485760a4f"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/protected-pr-heads.json": {
+    "bytes": 1705,
+    "hash_mode": "LF",
+    "sha256": "3d39619b5a8469da1ffe5cabce4fbee691d15e4261c9d698aea7efa5c4b18319"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/reuse-blobs.json": {
+    "bytes": 8832,
+    "hash_mode": "LF",
+    "sha256": "d69fc8b831211165454612866534920ee2e30b87a139185ab7ff9180c8e61b2f"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/sandbox-tests-initial.txt": {
+    "bytes": 19906,
+    "hash_mode": "LF",
+    "sha256": "48f85331e3a295ef0369e6ddc404d0bb9a36e8c952f60e2a7af37101128c872a"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-contact.png": {
+    "bytes": 369882,
+    "hash_mode": "bytes",
+    "sha256": "215af8622735d160aa79ad2e76c98c7212d0b72482efd63d6d35643fe1b295a3"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-01.png": {
+    "bytes": 74334,
+    "hash_mode": "bytes",
+    "sha256": "4442ff26321c9d00fb00a0f8285dbc26f294992ecec77f31a0d0bc1cf149d636"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-02.png": {
+    "bytes": 81222,
+    "hash_mode": "bytes",
+    "sha256": "1091cd491732255b3c470e8c8640da5cb0754461e8e0a3ed92518b8c69477a2e"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-03.png": {
+    "bytes": 71690,
+    "hash_mode": "bytes",
+    "sha256": "74af4981fc64a2a3508610ff3da8a8fb9a100d5fa015ac23ef4f7f276cf29b31"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-04.png": {
+    "bytes": 67241,
+    "hash_mode": "bytes",
+    "sha256": "0f949569514984158aa834dea49a222811e77f67be524579df6ad5abd3401a5e"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-05.png": {
+    "bytes": 76615,
+    "hash_mode": "bytes",
+    "sha256": "62eb12bb05fc78c9abd36178f4cf26d708e7a399e45d12cbd1ca1b611dff3ad5"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-06.png": {
+    "bytes": 68019,
+    "hash_mode": "bytes",
+    "sha256": "da669ff57d84749e0d21b8bfa341cb9af96a636a69f688880901ce168d07de41"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-07.png": {
+    "bytes": 56735,
+    "hash_mode": "bytes",
+    "sha256": "02e85516b676240ea398def259cdf167c48ffba89e031a1d959682eaea34a675"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-08.png": {
+    "bytes": 75656,
+    "hash_mode": "bytes",
+    "sha256": "c3321ce9c39c2deeb72f623b88088a170860c9dc39b90ecccf7a26d96be3fe4e"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-09.png": {
+    "bytes": 78692,
+    "hash_mode": "bytes",
+    "sha256": "182f34c5f144d1e259574049b33f563b30bfdae0ea764a1ff4d70476a2114de2"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-10.png": {
+    "bytes": 76255,
+    "hash_mode": "bytes",
+    "sha256": "9c9e6a4fb33f1a66860f43c42bf6675763d458d450ea6c0abae45457cafa54fa"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-11.png": {
+    "bytes": 69981,
+    "hash_mode": "bytes",
+    "sha256": "0d61cd17df6b2f5711cf322f85e3c4fcb17e0bb77a23c2fc051abf2e509dc1a1"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-desktop-12.png": {
+    "bytes": 88161,
+    "hash_mode": "bytes",
+    "sha256": "55f7afb1e141e226acdeabf3a09a053bbcf2d0f7e3bb558ef95892ac09c043a7"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-01.png": {
+    "bytes": 42735,
+    "hash_mode": "bytes",
+    "sha256": "bf588c9eccf9e441770ee1a9c26cabd37aa04aab0bc9f91124f7f8a90e5d5512"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-02.png": {
+    "bytes": 43031,
+    "hash_mode": "bytes",
+    "sha256": "576bd62d2aec694a0f082674a5d94a764ec42b2c7a1e6b71101038bb57987648"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-03.png": {
+    "bytes": 34213,
+    "hash_mode": "bytes",
+    "sha256": "3629e82bbca157d3b8b81544811b6519c05b7a40807a45418c36a78835e4ec5a"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-04.png": {
+    "bytes": 36209,
+    "hash_mode": "bytes",
+    "sha256": "4622d6f10c77d29b8ff4e57e2e19665a128f8cd83333a5163ea19ecf6c4553a2"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-05.png": {
+    "bytes": 33615,
+    "hash_mode": "bytes",
+    "sha256": "3889d99c00d36c01a5c2eaca4b354a8621d081de7456704aa663eca5631f46cb"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-06.png": {
+    "bytes": 31744,
+    "hash_mode": "bytes",
+    "sha256": "fcc4f540487172e8b78ab712051ed97bb2cd5f85e00b3f431c1b00a78427574d"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-07.png": {
+    "bytes": 33541,
+    "hash_mode": "bytes",
+    "sha256": "25738778edbd9b20d7558cda6fa2de99c1afad56a9b4e44389e5933bead4afce"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-08.png": {
+    "bytes": 36768,
+    "hash_mode": "bytes",
+    "sha256": "f4a403805d6207123cdbd2570e12dac439142979e277e39bee9bc038644a52ad"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-09.png": {
+    "bytes": 42762,
+    "hash_mode": "bytes",
+    "sha256": "075986aada39cd5a87c97adb8cb40b5faa43275acdd1f2641579f4236fa25c62"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-10.png": {
+    "bytes": 39924,
+    "hash_mode": "bytes",
+    "sha256": "384c7f9e3928dbfd604e4222474e65677a67dce63d7d7f35157490fd6b02cf3d"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-11.png": {
+    "bytes": 38256,
+    "hash_mode": "bytes",
+    "sha256": "3eef0a31fedc5e3b8e32e59f540c318b3c08e41e3cb94ecbf7507499d12b16d4"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-mobile-12.png": {
+    "bytes": 40823,
+    "hash_mode": "bytes",
+    "sha256": "8be76f4d31d145957bcc533db644cbb885538a51ed81b293c53b24d1d28c89e1"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/slides-validation.json": {
+    "bytes": 3856,
+    "hash_mode": "LF",
+    "sha256": "072d5370bb009d530aa938f0b99cd13ce1d0d649b0c858b611c5131d810a6e1d"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/smoke/runs.jsonl": {
+    "bytes": 527708,
+    "hash_mode": "bytes",
+    "sha256": "2f759611dd921961f112b72ef1e125c37fb99ca252da0bf786a9603c723e5c7c"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/smoke/summary.csv": {
+    "bytes": 715,
+    "hash_mode": "LF",
+    "sha256": "0702f85dcbcca646190e5a50bc607feb493ee61d73a14f766549b64512f73c79"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/smoke/summary.json": {
+    "bytes": 27663,
+    "hash_mode": "LF",
+    "sha256": "224690ad55499395f19025358cd1dec1d68a4b2fd69008a8560b62bafe6a2eba"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/evidence/smoke_initial_receipt.json": {
+    "bytes": 27291,
+    "hash_mode": "LF",
+    "sha256": "c13fdf9055b8f78f7db326eea19eb26c2ce813e1ec0ae2a3c1d28ec8f39ca054"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/scripts/build_report.py": {
+    "bytes": 22911,
+    "hash_mode": "LF",
+    "sha256": "52ee3df6fc0d326c33b65cb0e75571f7a06f1abb956c0fc56530949cea004c97"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/scripts/check_slides.cjs": {
+    "bytes": 2910,
+    "hash_mode": "LF",
+    "sha256": "6b4f813ca8f8c705a7b10b752a0883e17eb7fdb832e7b1dd4c803a4613006477"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/scripts/independent_audit.py": {
+    "bytes": 3038,
+    "hash_mode": "LF",
+    "sha256": "2b96a48a4c330589bc8d4263fca2086f243b7f41e2bfeeead2c126ce8c540d88"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/scripts/run_batch.py": {
+    "bytes": 3100,
+    "hash_mode": "LF",
+    "sha256": "c54a99b139e6b92b6cc6f39befb27eb772fab1c25e04c1b43d460f546a4a6b96"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/scripts/validate.py": {
+    "bytes": 4611,
+    "hash_mode": "LF",
+    "sha256": "2718aa4d72b161cb18de9f1f164f9d07ec972b059316a4b246f352e04b082411"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/slides.html": {
+    "bytes": 13391,
+    "hash_mode": "LF",
+    "sha256": "dc54819ed69a0359ce2668dbc8e2ec2672151ef12a78918f956eae9a29b34dd1"
+  },
+  "docs/tasks/climateos_earth_system_coupling_lab_001/summary.csv": {
+    "bytes": 760,
+    "hash_mode": "LF",
+    "sha256": "13f65095ca787e1614cb399745cdef9affed0ade78b6f84a4aebf718e42958d2"
+  },
+  "tests/test_earth_system_coupling.py": {
+    "bytes": 13506,
+    "hash_mode": "LF",
+    "sha256": "1a36576aed98ea8f098065326507c0f4cde91ad9e07a7829e6cd6f003418408f"
+  }
+}

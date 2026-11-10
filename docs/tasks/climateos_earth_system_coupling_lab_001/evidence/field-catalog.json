@@ -1,0 +1,206 @@
+{
+  "ch4": {
+    "dimensions_M_L_T_Theta": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "medium": "gas_dry",
+    "standard_name": null,
+    "temporal_kind": "annual_mean",
+    "unit": "ppb_dry_global_mean"
+  },
+  "enso_phase": {
+    "dimensions_M_L_T_Theta": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "medium": "statistical_context",
+    "standard_name": null,
+    "temporal_kind": "seasonal_mean",
+    "unit": "1"
+  },
+  "erf": {
+    "dimensions_M_L_T_Theta": [
+      1,
+      0,
+      -3,
+      0
+    ],
+    "medium": "global_toa",
+    "standard_name": null,
+    "temporal_kind": "annual_mean",
+    "unit": "W m-2"
+  },
+  "evap": {
+    "dimensions_M_L_T_Theta": [
+      1,
+      -2,
+      -1,
+      0
+    ],
+    "medium": "liquid_to_gas",
+    "standard_name": "water_evaporation_flux",
+    "temporal_kind": "mean_flux",
+    "unit": "kg m-2 s-1"
+  },
+  "n2o": {
+    "dimensions_M_L_T_Theta": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "medium": "gas_dry",
+    "standard_name": null,
+    "temporal_kind": "annual_mean",
+    "unit": "ppb_dry_global_mean"
+  },
+  "pressure": {
+    "dimensions_M_L_T_Theta": [
+      1,
+      -1,
+      -2,
+      0
+    ],
+    "medium": "gas",
+    "standard_name": "air_pressure",
+    "temporal_kind": "instantaneous",
+    "unit": "Pa"
+  },
+  "q": {
+    "dimensions_M_L_T_Theta": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "medium": "gas",
+    "standard_name": "specific_humidity",
+    "temporal_kind": "instantaneous",
+    "unit": "kg kg-1"
+  },
+  "rain": {
+    "dimensions_M_L_T_Theta": [
+      1,
+      -2,
+      -1,
+      0
+    ],
+    "medium": "liquid",
+    "standard_name": "precipitation_flux",
+    "temporal_kind": "mean_flux",
+    "unit": "kg m-2 s-1"
+  },
+  "rain_amount": {
+    "dimensions_M_L_T_Theta": [
+      1,
+      -2,
+      0,
+      0
+    ],
+    "medium": "liquid",
+    "standard_name": "precipitation_amount",
+    "temporal_kind": "accumulated",
+    "unit": "kg m-2"
+  },
+  "rn": {
+    "dimensions_M_L_T_Theta": [
+      1,
+      0,
+      -3,
+      0
+    ],
+    "medium": "surface",
+    "standard_name": null,
+    "temporal_kind": "mean_flux",
+    "unit": "W m-2"
+  },
+  "roni": {
+    "dimensions_M_L_T_Theta": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "medium": "ocean_anomaly",
+    "standard_name": null,
+    "temporal_kind": "seasonal_mean",
+    "unit": "K"
+  },
+  "runoff": {
+    "dimensions_M_L_T_Theta": [
+      1,
+      -2,
+      -1,
+      0
+    ],
+    "medium": "liquid",
+    "standard_name": "runoff_flux",
+    "temporal_kind": "mean_flux",
+    "unit": "kg m-2 s-1"
+  },
+  "ta": {
+    "dimensions_M_L_T_Theta": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "medium": "gas",
+    "standard_name": "air_temperature",
+    "temporal_kind": "instantaneous",
+    "unit": "K"
+  },
+  "ts": {
+    "dimensions_M_L_T_Theta": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "medium": "surface",
+    "standard_name": "surface_temperature",
+    "temporal_kind": "instantaneous",
+    "unit": "K"
+  },
+  "u": {
+    "dimensions_M_L_T_Theta": [
+      0,
+      1,
+      -1,
+      0
+    ],
+    "medium": "gas",
+    "standard_name": "eastward_wind",
+    "temporal_kind": "instantaneous",
+    "unit": "m s-1"
+  },
+  "v": {
+    "dimensions_M_L_T_Theta": [
+      0,
+      1,
+      -1,
+      0
+    ],
+    "medium": "gas",
+    "standard_name": "northward_wind",
+    "temporal_kind": "instantaneous",
+    "unit": "m s-1"
+  },
+  "water": {
+    "dimensions_M_L_T_Theta": [
+      1,
+      -2,
+      0,
+      0
+    ],
+    "medium": "soil_liquid",
+    "standard_name": null,
+    "temporal_kind": "instantaneous",
+    "unit": "kg m-2"
+  }
+}

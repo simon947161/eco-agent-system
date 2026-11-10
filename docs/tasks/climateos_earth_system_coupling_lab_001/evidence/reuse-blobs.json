@@ -1,0 +1,176 @@
+[
+  {
+    "git_blob": "e16f912c52c47a6880731eec137962b3cad00f5a",
+    "lf_sha256": "329050d860cd22324125f6c9c7fa50705e1d052c6ff49068f760621cbbaf4f6e",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/00_MASTER_ARCHITECTURE/SYSTEM_RELATIONSHIP_MAP.md"
+  },
+  {
+    "git_blob": "d4cefb6449507f5a25b9a802675b56c1f90979a3",
+    "lf_sha256": "4ab89c7502fa808ccbd5b47f0b2d22dd2017567dfd46c21de04b3bc36b029722",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/00_MASTER_ARCHITECTURE/ECOENGINE_V2_SYSTEM_DEFINITION.md"
+  },
+  {
+    "git_blob": "f83318277ee75e853af46297876ccfa323a08c44",
+    "lf_sha256": "23f5b4915962fab0974253f7d7a94ab97ddeb56c6983aecf95a61a818f1bfb90",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/00_MASTER_ARCHITECTURE/CCZPS_LITE_V0_4_REVIEW.md"
+  },
+  {
+    "git_blob": "3d1f8b069f8cf2cd0f24f57731755bdffbf2b70a",
+    "lf_sha256": "ad5ed0928b17a4d272e45c23aeea22e5825570f2c89d5a35cfb1782a4c4b6d0a",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/03_RUNTIME_LAYER/DIFFERENTIAL_FIELD_INFERENCE.md"
+  },
+  {
+    "git_blob": "4e1b51ee88abc1503b497ea2b757b2f6c2c69343",
+    "lf_sha256": "6f8a2f82810a3da4d44cebf48dc017826470d79898ebb0443c6621b349162007",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/03_RUNTIME_LAYER/FORCING_LAYER.md"
+  },
+  {
+    "git_blob": "aaa8176d2006706cfee4da77f325c3de04290250",
+    "lf_sha256": "aef034a2485baacabd6ddc66f8d1bc80aad55f31433546cc9cec3507c2ed9d2c",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/02_GOVERNANCE_LAYER/POSSIBILITY_COMPUTING_FRAMEWORK.md"
+  },
+  {
+    "git_blob": "a10def6ff00ca576d4e9efbb2bd5426cdaddd68b",
+    "lf_sha256": "cb5ac5ca88b645436277645f44f351aa4f9159e3638105916769609eb5edd883",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/02_GOVERNANCE_LAYER/CLIMATE_ZONAL_RESPONSIBILITY_METHOD.md"
+  },
+  {
+    "git_blob": "7980f233a0fe751deba8c852dc5d169a5289c6e4",
+    "lf_sha256": "c5d0eb8558daa87ea887622ecc925a29ce5a01afca9d75da103053de0b76127a",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/architecture/climateos_v2_review/02_V1_CAPABILITY_AND_DEBT_MAP.md"
+  },
+  {
+    "git_blob": "9876250000fb9a8ab337dd48de7e6d10d35d13d1",
+    "lf_sha256": "f3ae16bbc451b363ff98a9dd5be360599b423568f768c500da18deefffb4ec39",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "cczps_lite/engine/differential_field.py"
+  },
+  {
+    "git_blob": "0592ca62ca6d2ab02a444805179d33aa28579eed",
+    "lf_sha256": "14de3e67fcb0d4a365ed1b0d441c35781710d50c8485d33b8a040d5bb6815145",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "cczps_lite/engine/forcing_layer.py"
+  },
+  {
+    "git_blob": "1801f7db1169cd305c3a0f83e751bf297e75a4d3",
+    "lf_sha256": "51265c7637379c5a4923a5cbeaa8f9f1d9b83a029e905a27123adca01176c820",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "cczps_lite/integration/environmental_coupling.py"
+  },
+  {
+    "git_blob": "5fd76e57ce9d80098c3162ba48bccc3eae8a1900",
+    "lf_sha256": "8699ce25dfb0965d68c8fc18713ea0044e656d4de05e24a08527eaa569902355",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "cczps_lite/integration/ecoengine_v192b_adapter.py"
+  },
+  {
+    "git_blob": "0d3b2c628b0373525f56e8abcec6768cf0a4db22",
+    "lf_sha256": "3bb073b93d92e4168b0de972c50c1f04c94d198174d6b22e1f5775312bd07118",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "cczps_lite/integration/physical_process_trajectory.py"
+  },
+  {
+    "git_blob": "831b761d6a267bf31abc3f6d22c7bc99054438f7",
+    "lf_sha256": "99dda291775609b6712c575cf6873664a83a48d96509ef0c109ba28419af1b47",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "cczps_lite/integration/multisource_data_admission.py"
+  },
+  {
+    "git_blob": "8c7a21f0ea18bdb66e3d02c08ef433fb309e63d3",
+    "lf_sha256": "eb06dc74802a53ffbdc24dcdae4e3fab4a50bdfc499e9ff78d96198031a064c5",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "cczps_lite/integration/physics_validation.py"
+  },
+  {
+    "git_blob": "0a4bb37bcd67dd08ee90dc97cf6793e13caa22f1",
+    "lf_sha256": "df2b2d9fd281f5f87d794f6f1e861e1c047fd4b7780af52c2b14fb6e4849ca40",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "cczps_lite/integration/global_natural_systems_atlas.py"
+  },
+  {
+    "git_blob": "bd5a9e1df3d84e9ff80956bc4adff040ed8d2c4b",
+    "lf_sha256": "0f20acd237ee0cca70d65055bf71b23fd2a853eaac63c20676feab7437151cd3",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "cczps_lite/integration/dynamic_quantification.py"
+  },
+  {
+    "git_blob": "96c33c0756281284b85a1f998214727b772968ee",
+    "lf_sha256": "cc16d98e4f37cbab14f14e62b310ce61d376b02a4b2a63ff492afbbac7ef62f7",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2021_2030_qgis_local_spatial_foundation/QGIS_COOMA_10_MINUTE_RESTART_GUIDE.md"
+  },
+  {
+    "git_blob": "bbe7e87cedd1e3e3d25e8c560c4db13ab8929a7d",
+    "lf_sha256": "e6e812fb7fe76d0b3df3b67bdf4b5d0ff41b1da07a837df5ce3fb6f0d400d6f7",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2021_2030_qgis_local_spatial_foundation/TASK2021_2026_FIRST_IMPLEMENTATION_SLICE_REPORT.md"
+  },
+  {
+    "git_blob": "6b4824636283cce51aeed056dda2ed028ec30578",
+    "lf_sha256": "a7c5d4dbd047dcd06e304b0f140f7aa01ac1c0e9562b841d5a4ed79f3eaac3b5",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2021_2030_qgis_local_spatial_foundation/TASK2021_2030_QGIS_SKELETON_UX_REVISION_PREFLIGHT.md"
+  },
+  {
+    "git_blob": "7e804aa38e3e4d0ab500d3a1fc15170ae1403427",
+    "lf_sha256": "8bd054ff679cae2fea6944f3fda2a6e665528737193508d5b9ca0837437bcaa3",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2021_2030_qgis_local_spatial_foundation/TASK2021_2030_QGIS_SKELETON_UX_REVISION_REPORT.md"
+  },
+  {
+    "git_blob": "6770460c5dee083d2e4cefe3c1220f55b000cfda",
+    "lf_sha256": "7c45d541fd5bd2aa94d3514f0e9a9ea5101a441c778f095e0a984a6e81a7c07f",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2021_2030_qgis_local_spatial_foundation/TASK2021_QGIS_ENVIRONMENT_PREFLIGHT.md"
+  },
+  {
+    "git_blob": "f5aab21d71240c939f0d1c16f67031ab58f48564",
+    "lf_sha256": "06001d931a1db9f619ede25ae1b3a36233528b7ffc748e4359c346b521b3b510",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2021_2030_qgis_local_spatial_foundation/TASK2023_COOMA_STUDY_SCOPE_CONTRACT.md"
+  },
+  {
+    "git_blob": "ec7d0cbea2b25d55b4185d0bb8a815c56203c46f",
+    "lf_sha256": "c6cd9e5ff0d161cd7e15fd97815e9cbe04078b5ce13752f841789427647323e7",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2021_2030_qgis_local_spatial_foundation/TASK2024_PUBLIC_SPATIAL_DATA_SOURCE_REGISTRY.md"
+  },
+  {
+    "git_blob": "a9d363a39778af2bd8dc7fe6beae9ad2aff95309",
+    "lf_sha256": "4a429444a307b917dc5cfa736171e8c29f6261ae864977ae04af42a4d78048bd",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2021_2030_qgis_local_spatial_foundation/TASK2029_SPATIAL_OBSERVATION_TEMPLATE.md"
+  },
+  {
+    "git_blob": "3cdb9a93d1972ffdf86ad403671653986132a584",
+    "lf_sha256": "d27b92a47c1cc37583a7c09ac8ddff051ab8aea4027236f1bb6fef395d07f4b1",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2021_2030_qgis_local_spatial_foundation/TASK2030_FOUNDER_GATE.md"
+  },
+  {
+    "git_blob": "ef93426957a07986e4b319a6a31a9bd2e27fecba",
+    "lf_sha256": "ad41c1d150c4332b4fe9af09bd2d68c79257ee57307a09ec7e8144936b9d06df",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2031_2040_qgis_cooma_terrain_boundary_pack/QGIS_COOMA_TERRAIN_REVIEW_GUIDE.md"
+  },
+  {
+    "git_blob": "6365fbd2f3368fb0f59ea62e9e9a9666cfb7128c",
+    "lf_sha256": "39055065ab778f4738ce71a1044f91224958e516f0d629579221d0832f35e8b2",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2031_2040_qgis_cooma_terrain_boundary_pack/TASK2031_2040_QGIS_COOMA_TERRAIN_BOUNDARY_PACK_REPORT.md"
+  },
+  {
+    "git_blob": "6fe50429020a98a6cf794e5fd343de6e85ab6958",
+    "lf_sha256": "84beebb3a1a3202ac0a00c0fa5457face0283aada83c70f39fe68a73a7e65b96",
+    "parent_commit": "ea6fd79b41138cbcb16f9bd1aadd68f6a4b771df",
+    "path": "docs/tasks/task2031_2040_qgis_cooma_terrain_boundary_pack/TASK2040_FOUNDER_QGIS_TERRAIN_GATE.md"
+  }
+]

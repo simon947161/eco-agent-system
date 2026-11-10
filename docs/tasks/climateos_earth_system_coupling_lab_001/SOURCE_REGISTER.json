@@ -1,0 +1,101 @@
+[
+  {
+    "access": "OFFICIAL_PAGE_READ",
+    "access_date": "2026-11-10",
+    "decision": "ADOPT",
+    "page_byte_sha256": null,
+    "rights": "CC0 document",
+    "scope": "units, calendar, bounds, cell methods",
+    "source_id": "CF1.12",
+    "url": "https://cfconventions.org/Data/cf-conventions/cf-conventions-1.12/cf-conventions.html",
+    "version": "1.12 / 2024-12-04"
+  },
+  {
+    "access": "OFFICIAL_PAGE_READ",
+    "access_date": "2026-11-10",
+    "decision": "ADOPT_CONCEPT",
+    "page_byte_sha256": null,
+    "rights": "MIT declared by repository",
+    "scope": "variable/grid/clock/update contract",
+    "source_id": "BMI",
+    "url": "https://github.com/csdms/bmi",
+    "version": "2.0 README on 2026-11-10"
+  },
+  {
+    "access": "OFFICIAL_PAGE_READ",
+    "access_date": "2026-11-10",
+    "decision": "DEFER_LIBRARY",
+    "page_byte_sha256": null,
+    "rights": "code-release licence not admitted",
+    "scope": "run sequence, field dictionary, clocks",
+    "source_id": "NUOPC",
+    "url": "https://earthsystemmodeling.org/nuopc/",
+    "version": "web documentation 2026-11-10"
+  },
+  {
+    "access": "OFFICIAL_PAGE_READ",
+    "access_date": "2026-11-10",
+    "decision": "ADOPT_CONCEPT",
+    "page_byte_sha256": null,
+    "rights": "release-specific licence PENDING; no code imported",
+    "scope": "area overlap conservative regridding",
+    "source_id": "ESMF",
+    "url": "https://earthsystemmodeling.org/regrid/",
+    "version": "official regridding page 2026-11-10"
+  },
+  {
+    "access": "OFFICIAL_PAGE_READ",
+    "access_date": "2026-11-10",
+    "decision": "WRAP_FORMULA",
+    "page_byte_sha256": null,
+    "rights": "linked/paraphrased only",
+    "scope": "saturation vapour pressure",
+    "source_id": "FAO56_ES",
+    "url": "https://www.fao.org/4/x0490e/x0490e07.htm",
+    "version": "FAO56 1998 ch3 eq11"
+  },
+  {
+    "access": "OFFICIAL_PAGE_READ",
+    "access_date": "2026-11-10",
+    "decision": "DEFER_IMPLEMENTATION",
+    "page_byte_sha256": null,
+    "rights": "linked/paraphrased only",
+    "scope": "Penman-Monteith resistance countermodel",
+    "source_id": "FAO56_ET",
+    "url": "https://www.fao.org/4/x0490e/x0490e06.htm",
+    "version": "FAO56 1998 ch2"
+  },
+  {
+    "access": "OFFICIAL_PAGE_READ",
+    "access_date": "2026-11-10",
+    "decision": "ADOPT_COUNTEREVIDENCE",
+    "page_byte_sha256": null,
+    "rights": "CC-BY-4.0 article; no figures copied",
+    "scope": "spatial/temporal sign and confounding counterevidence",
+    "source_id": "GUILLOD",
+    "url": "https://www.nature.com/articles/ncomms7443",
+    "version": "2015 / DOI 10.1038/ncomms7443"
+  },
+  {
+    "access": "OFFICIAL_PAGE_READ",
+    "access_date": "2026-11-10",
+    "decision": "DEFER_DATA",
+    "page_byte_sha256": null,
+    "rights": "dataset terms not used; no download",
+    "scope": "assimilation combines model and observations",
+    "source_id": "ERA5",
+    "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+    "version": "product page 2026-11-10"
+  },
+  {
+    "access": "OFFICIAL_PAGE_READ",
+    "access_date": "2026-11-10",
+    "decision": "DEFER_LIBRARY",
+    "page_byte_sha256": null,
+    "rights": "no code imported; release licence check before adoption",
+    "scope": "RK45/Radau/BDF alternate solver",
+    "source_id": "SCIPY",
+    "url": "https://docs.scipy.org/doc/scipy-1.14.1/reference/generated/scipy.integrate.solve_ivp.html",
+    "version": "1.14.1 fixed documentation"
+  }
+]

@@ -1,0 +1,348 @@
+{
+  "components": [
+    {
+      "clock": "seasonal; diagnostic only",
+      "current_time": 7862400.0,
+      "evidence": {
+        "causal_link": false,
+        "model_version": "PR147/149 frozen",
+        "status": "OBSERVATION_DERIVED_HISTORICAL_ASSOCIATION"
+      },
+      "name": "seasonal_enso_context",
+      "provided_fields": [
+        "enso_phase"
+      ],
+      "required_fields": [
+        "roni"
+      ],
+      "units": {
+        "enso_phase": "1",
+        "roni": "K"
+      }
+    },
+    {
+      "clock": "annual; independent global diagnostic",
+      "current_time": 31536000.0,
+      "evidence": {
+        "model_version": "PR147 published NOAA function",
+        "scope": "global annual CH4 ERF, not regional forcing",
+        "status": "OPEN_DATA_RECALCULATED"
+      },
+      "name": "global_methane_erf",
+      "provided_fields": [
+        "erf"
+      ],
+      "required_fields": [
+        "ch4",
+        "n2o"
+      ],
+      "units": {
+        "ch4": "ppb_dry_global_mean",
+        "erf": "W m-2",
+        "n2o": "ppb_dry_global_mean"
+      }
+    }
+  ],
+  "outputs": {
+    "global_methane_erf": {
+      "ERF_W_m2": 0.569344413968403,
+      "dF_dM": 0.0003657674009602225,
+      "dF_dN": -4.962852025152416e-05
+    },
+    "seasonal_enso_context": {
+      "historical_association": {
+        "baseline_k": 25,
+        "baseline_n": 46,
+        "difference_nonphase": 0.35091277890466527,
+        "difference_unconditional": 0.22122762148337594,
+        "k": 13,
+        "n": 17,
+        "other_k": 12,
+        "other_n": 29,
+        "p": 0.7647058823529411,
+        "sample_warning": "DEPENDENT_SMALL_HISTORICAL_SAMPLE",
+        "wilson95": [
+          0.5273820188043501,
+          0.9044495567791988
+        ]
+      },
+      "local_numeric_forcing": null,
+      "phase": 0.0
+    }
+  },
+  "scientific_admission": "PENDING",
+  "state": {
+    "fields": {
+      "ch4": {
+        "covariance": null,
+        "dimensions": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "evidence_level": "OPEN_DATA_RECALCULATED",
+        "extensive": false,
+        "grid": {
+          "cells": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "crs": "GLOBAL_MEAN",
+          "id": "global",
+          "support": "global",
+          "vertical": "surface/idealised_mixed_layer"
+        },
+        "id": "ch4",
+        "identity": "ch4@global@2025-01-01T00:00:00Z/2026-01-01T00:00:00Z",
+        "input_sha256": "8f6e2968c6af82c0e072e0dc80be4b7806feb972b5f38ef178c73f84e644ab17",
+        "kind": "CONSTRAINED_ESTIMATE",
+        "license": "existing research evidence rights; no new raw redistribution",
+        "lineage": [],
+        "medium": "gas_dry",
+        "method_version": "earth-coupling/1",
+        "qc": "DERIVED_SOURCE_FACT",
+        "reference_conditions": "original global/seasonal domain",
+        "semantic_name": "climateos:ch4",
+        "source_id": "FROZEN_PUBLIC_PR147",
+        "source_version": "PR147_D",
+        "standard_name": null,
+        "temporal_kind": "annual_mean",
+        "time": {
+          "calendar": "proleptic_gregorian",
+          "end": "2026-01-01T00:00:00Z",
+          "local_clock": "calendar annual support; not instantaneous timestamp",
+          "start": "2025-01-01T00:00:00Z"
+        },
+        "uncertainty": [
+          null
+        ],
+        "unit": "ppb_dry_global_mean",
+        "values": [
+          1936.03
+        ]
+      },
+      "enso_phase": {
+        "covariance": null,
+        "dimensions": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "evidence_level": "OPEN_DATA_RECALCULATED",
+        "extensive": false,
+        "grid": {
+          "cells": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "crs": "NINO34_INDEX",
+          "id": "RONI",
+          "support": "index_region",
+          "vertical": "surface/idealised_mixed_layer"
+        },
+        "id": "enso_phase",
+        "identity": "enso_phase@RONI@2012-09-01T00:00:00Z/2012-12-01T00:00:00Z",
+        "input_sha256": "1297887f581b6190e459cbbf8bdec9a703ff65c1a229e2de4dd94285254f35c8",
+        "kind": "CONSTRAINED_ESTIMATE",
+        "license": "existing research evidence rights; no new raw redistribution",
+        "lineage": [
+          "PR147.phase; no local precipitation equation"
+        ],
+        "medium": "statistical_context",
+        "method_version": "earth-coupling/1",
+        "qc": "DERIVED_SOURCE_FACT",
+        "reference_conditions": "original global/seasonal domain",
+        "semantic_name": "climateos:enso_phase",
+        "source_id": "FROZEN_PUBLIC_PR147",
+        "source_version": "PR147_D",
+        "standard_name": null,
+        "temporal_kind": "seasonal_mean",
+        "time": {
+          "calendar": "proleptic_gregorian",
+          "end": "2012-12-01T00:00:00Z",
+          "local_clock": "calendar SON support; not observation UTC boundary",
+          "start": "2012-09-01T00:00:00Z"
+        },
+        "uncertainty": [
+          null
+        ],
+        "unit": "1",
+        "values": [
+          0.0
+        ]
+      },
+      "erf": {
+        "covariance": null,
+        "dimensions": [
+          1,
+          0,
+          -3,
+          0
+        ],
+        "evidence_level": "OPEN_DATA_RECALCULATED",
+        "extensive": false,
+        "grid": {
+          "cells": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "crs": "GLOBAL_MEAN",
+          "id": "global",
+          "support": "global",
+          "vertical": "surface/idealised_mixed_layer"
+        },
+        "id": "erf",
+        "identity": "erf@global@2025-01-01T00:00:00Z/2026-01-01T00:00:00Z",
+        "input_sha256": "8f6e2968c6af82c0e072e0dc80be4b7806feb972b5f38ef178c73f84e644ab17",
+        "kind": "CONSTRAINED_ESTIMATE",
+        "license": "existing research evidence rights; no new raw redistribution",
+        "lineage": [
+          "PR147.ch4_erf; no local temperature conversion"
+        ],
+        "medium": "global_toa",
+        "method_version": "earth-coupling/1",
+        "qc": "DERIVED_SOURCE_FACT",
+        "reference_conditions": "original global/seasonal domain",
+        "semantic_name": "climateos:erf",
+        "source_id": "FROZEN_PUBLIC_PR147",
+        "source_version": "PR147_D",
+        "standard_name": null,
+        "temporal_kind": "annual_mean",
+        "time": {
+          "calendar": "proleptic_gregorian",
+          "end": "2026-01-01T00:00:00Z",
+          "local_clock": "calendar annual support; not instantaneous timestamp",
+          "start": "2025-01-01T00:00:00Z"
+        },
+        "uncertainty": [
+          null
+        ],
+        "unit": "W m-2",
+        "values": [
+          0.569344413968403
+        ]
+      },
+      "n2o": {
+        "covariance": null,
+        "dimensions": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "evidence_level": "OPEN_DATA_RECALCULATED",
+        "extensive": false,
+        "grid": {
+          "cells": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "crs": "GLOBAL_MEAN",
+          "id": "global",
+          "support": "global",
+          "vertical": "surface/idealised_mixed_layer"
+        },
+        "id": "n2o",
+        "identity": "n2o@global@2025-01-01T00:00:00Z/2026-01-01T00:00:00Z",
+        "input_sha256": "8f6e2968c6af82c0e072e0dc80be4b7806feb972b5f38ef178c73f84e644ab17",
+        "kind": "CONSTRAINED_ESTIMATE",
+        "license": "existing research evidence rights; no new raw redistribution",
+        "lineage": [],
+        "medium": "gas_dry",
+        "method_version": "earth-coupling/1",
+        "qc": "DERIVED_SOURCE_FACT",
+        "reference_conditions": "original global/seasonal domain",
+        "semantic_name": "climateos:n2o",
+        "source_id": "FROZEN_PUBLIC_PR147",
+        "source_version": "PR147_D",
+        "standard_name": null,
+        "temporal_kind": "annual_mean",
+        "time": {
+          "calendar": "proleptic_gregorian",
+          "end": "2026-01-01T00:00:00Z",
+          "local_clock": "calendar annual support; not instantaneous timestamp",
+          "start": "2025-01-01T00:00:00Z"
+        },
+        "uncertainty": [
+          null
+        ],
+        "unit": "ppb_dry_global_mean",
+        "values": [
+          338.86
+        ]
+      },
+      "roni": {
+        "covariance": null,
+        "dimensions": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "evidence_level": "OPEN_DATA_RECALCULATED",
+        "extensive": false,
+        "grid": {
+          "cells": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "crs": "NINO34_INDEX",
+          "id": "RONI",
+          "support": "index_region",
+          "vertical": "surface/idealised_mixed_layer"
+        },
+        "id": "roni",
+        "identity": "roni@RONI@2012-09-01T00:00:00Z/2012-12-01T00:00:00Z",
+        "input_sha256": "1297887f581b6190e459cbbf8bdec9a703ff65c1a229e2de4dd94285254f35c8",
+        "kind": "CONSTRAINED_ESTIMATE",
+        "license": "existing research evidence rights; no new raw redistribution",
+        "lineage": [],
+        "medium": "ocean_anomaly",
+        "method_version": "earth-coupling/1",
+        "qc": "DERIVED_SOURCE_FACT",
+        "reference_conditions": "original global/seasonal domain",
+        "semantic_name": "climateos:roni",
+        "source_id": "FROZEN_PUBLIC_PR147",
+        "source_version": "PR147_D",
+        "standard_name": null,
+        "temporal_kind": "seasonal_mean",
+        "time": {
+          "calendar": "proleptic_gregorian",
+          "end": "2012-12-01T00:00:00Z",
+          "local_clock": "calendar SON support; not observation UTC boundary",
+          "start": "2012-09-01T00:00:00Z"
+        },
+        "uncertainty": [
+          null
+        ],
+        "unit": "K",
+        "values": [
+          0.21
+        ]
+      }
+    },
+    "revision": 5
+  }
+}
