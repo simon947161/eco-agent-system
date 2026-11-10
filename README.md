@@ -32,6 +32,15 @@ The passed slice is descriptive observation evidence; methane D3 remains
 DATA_NOT_READY and MatrixOne remains NOT_BENCHMARKED. No deployment or legal
 credit calculation is implied.
 
+## ENSO regional weather evidence — bounded research
+
+[Research package](docs/tasks/climateos_enso_regional_weather_probability_001/README.md)
+and [Chinese Founder report](docs/tasks/climateos_enso_regional_weather_probability_001/FOUNDER_REPORT_ZH.md):
+three local station panels preregistered; official station inventory obtained,
+rainfall archive returned HTTP 404. **DATA_NOT_READY**, zero real rain pairs;
+no regional probabilities or forecast claims. PR143–147 remain frozen and all
+scientific admission gates remain PENDING or their original blocked states.
+
 ## Meaningful Environmental Question Runtime (Task2002 prototype)
 
 This supervised local prototype accepts a real environmental question in the

@@ -1,0 +1,146 @@
+{
+  "PROCESS_ID": "ENSO_REGION_WEATHER",
+  "atlas_trace_context": {
+    "does_not_supply_rain_probability": true,
+    "evidence_ids": [
+      "ENSO_MECHANISM",
+      "EV:POLICY:360",
+      "EV:POLICY:036",
+      "EV:POLICY:242",
+      "AU_COUNTRY_REPORT"
+    ],
+    "path": [
+      {
+        "applicability": "No one-way mass transport or deterministic country effect",
+        "assumptions": "Displayed arrow is an explanatory path; feedback is bidirectional",
+        "causality": "COUPLED_MECHANISM",
+        "counterevidence": "Warm SST alone without atmospheric coupling does not establish coupled ENSO",
+        "direction": "from_to",
+        "evidence_ids": [
+          "ENSO_MECHANISM"
+        ],
+        "from_id": "PACIFIC",
+        "id": "E1",
+        "numeric_weight": null,
+        "process": "enso",
+        "spatial_scale": "tropical Pacific ocean-atmosphere",
+        "status": "SOURCE_VERIFIED",
+        "temporal_scale": "seasonal/interannual",
+        "to_id": "ATM_WALKER",
+        "type": "CLIMATE_TELECONNECTION",
+        "unit": "not_applicable_qualitative",
+        "version": "atlas-research-1/2026-11-09"
+      },
+      {
+        "applicability": "No particular event attribution, rainfall amount or CH4 response",
+        "assumptions": "Other modes, trend and regional heterogeneity confound the relation",
+        "causality": "CONDITIONAL_ASSOCIATION",
+        "counterevidence": "A wet regional event during El Nino refutes a deterministic drought rule, not the probabilistic mechanism",
+        "direction": "from_to",
+        "evidence_ids": [
+          "ENSO_MECHANISM"
+        ],
+        "from_id": "ATM_WALKER",
+        "id": "E2",
+        "numeric_weight": null,
+        "process": "enso",
+        "spatial_scale": "Australia/Indonesia context",
+        "status": "SOURCE_VERIFIED",
+        "temporal_scale": "season and event dependent",
+        "to_id": "REGIONAL_RAIN",
+        "type": "CLIMATE_TELECONNECTION",
+        "unit": "not_applicable_qualitative",
+        "version": "atlas-research-1/2026-11-09"
+      }
+    ]
+  },
+  "blocker": {
+    "budget_interpretation": "conservatively includes station inventory; no more downloads",
+    "error": "HTTP Error 404: Not Found",
+    "source": "https://www.ncei.noaa.gov/data/ghcnm/v4/precipitation/archive/ghcn-m_v4.00.00_prcp_s16970101_e20260930_c20261004.tar.gz",
+    "weather_attempted_files": 2
+  },
+  "causal_validation": "PENDING",
+  "cczps_comparison_adapter_check": {
+    "existing_scenarios_not_the_selected_regions": true,
+    "record_count": 4,
+    "statuses": {
+      "baiyangdian_xiongan": "insufficient_evidence_for_comparison",
+      "batlow": "insufficient_evidence_for_comparison",
+      "iraq": "insufficient_evidence_for_comparison",
+      "kunlun": "insufficient_evidence_for_comparison"
+    },
+    "summary": {
+      "complete_traceability": [],
+      "evidence_coverage_groups": {
+        "insufficient": [
+          "Batlow",
+          "Kunlun",
+          "Iraq",
+          "Baiyangdian-Xiong'an"
+        ],
+        "low": [],
+        "medium": []
+      },
+      "high_uncertainty_scenarios": [
+        "Batlow",
+        "Kunlun",
+        "Iraq",
+        "Baiyangdian-Xiong'an"
+      ],
+      "requires_expert_review": [
+        "Batlow",
+        "Kunlun",
+        "Iraq",
+        "Baiyangdian-Xiong'an"
+      ],
+      "requires_spatial_validation": [
+        "Batlow",
+        "Kunlun",
+        "Iraq",
+        "Baiyangdian-Xiong'an"
+      ],
+      "summary_boundary": "Groups describe current evidence coverage and review needs only. They do not order scenarios or identify a preferred option."
+    }
+  },
+  "certified": false,
+  "confounder_analysis": "NOT_EXECUTED_NO_PAIRED_RESPONSE",
+  "deployed": false,
+  "ecochain": "PROPOSAL_ONLY_ECOCHAIN_CANONICAL_NOT_FOUND",
+  "ecoengine_evidence": {
+    "indicators": [],
+    "meteorology_reading": {
+      "confidence": "low",
+      "rainfall_mm": null,
+      "retrieval_status": "unavailable",
+      "source": "NOAA GHCN-M v4 archive attempt",
+      "status": "DATA_NOT_READY"
+    },
+    "notes": "Meteorology observation unavailable; no observational inference made.",
+    "source": "meteorological observation",
+    "strength": "low"
+  },
+  "enotebook": "PENDING_INTEGRATION",
+  "forecast_validation": "PENDING",
+  "hot": "NOT_ASSESSED",
+  "inventory_candidates": [
+    "ASN00072150",
+    "ASN00074104",
+    "ASN00072008",
+    "ASN00039083",
+    "ASN00039049",
+    "ASN00039242",
+    "ASN00009021",
+    "ASN00009106",
+    "ASN00009025"
+  ],
+  "next_missing_input": "Founder-reviewed new acquisition scope for a current legal PRCP archive or offline lawful file; preserve registered regions and thresholds",
+  "numerical_output": null,
+  "paired_years": 0,
+  "probabilities": [],
+  "scientific_admission": "PENDING",
+  "selected_stations_are_not_rain_observations": true,
+  "statistics_execution": "NOT_EXECUTED_MISSING_RAIN",
+  "status": "DATA_NOT_READY",
+  "version": "enso-regional-weather/1"
+}

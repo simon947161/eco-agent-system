@@ -1,0 +1,20 @@
+{
+  "task":"CLIMATEOS-ENSO-REGIONAL-WEATHER-PROBABILITY-001",
+  "research_head_R":"PENDING_COMMIT",
+  "delivery_head_D":"OUTER_GIT_COMMIT_AND_PR_HANDOFF_COMMENT",
+  "review_state":"PREPARING_INDEPENDENT_REVIEW",
+  "science_result":"DATA_NOT_READY",
+  "scientific_admission":"PENDING",
+  "requested_effect":"INDEPENDENT_READ_ONLY_REVIEW_ONLY",
+  "questions":[
+    "Does the archive HTTP404 receipt justify DATA_NOT_READY while distinguishing a successful metadata download from rainfall observations?",
+    "Were the fixed three regions, nine stations, seasons, thresholds, QC and blocked outputs chosen without observing rainfall outcomes, including the documented FIPS country-code repair?",
+    "Is the conservative two-file acquisition budget transparent, and should a new bounded attempt verify a current official archive rather than retry this missing file?",
+    "Are monthly QC flags, daily completeness UNKNOWN, third-party rights, station support and absent calibration treated honestly?",
+    "Are probability, bootstrap, holdout, IOD/SAM stratification and local counterexample tasks explicitly unexecuted rather than represented as completed science?",
+    "Do EcoEngine and CCZPS reject missing observations and avoid using index persistence, policy scores or unrelated scenarios as rainfall evidence?",
+    "Are PR143-147 protected artifacts, inherited tests and all science gates unchanged?"
+  ],
+  "not_authorized":["merge","deploy","forecast publication","certify","promote scientific admission","expand experiments","contact external institutions"],
+  "delivery":"Founder to forward fixed Draft PR and HEAD to ChatGPT; no automatic external review claimed"
+}

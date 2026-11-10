@@ -1,0 +1,56 @@
+{
+  "selected_utc": "2026-11-10T06:47:03.825651+00:00",
+  "before_rain_values": true,
+  "inventory_sha256": "c1311f7300ad9ea80830ff1c1f30d9a803c4c3674644339cd290e4004702e219",
+  "plan_sha256": "9bb6955f917ef61e77375bca3ae4aa68fb1018d0642dd8b763214324503cf87f",
+  "regions": [
+    {
+      "id": "NSW_WAGGA_PANEL",
+      "centre": [
+        -35.12,
+        147.37
+      ],
+      "box": [
+        -36,
+        -34,
+        146,
+        149
+      ],
+      "stations": [],
+      "eligible_count": 0,
+      "weight": null
+    },
+    {
+      "id": "QLD_ROCKHAMPTON_PANEL",
+      "centre": [
+        -23.38,
+        150.51
+      ],
+      "box": [
+        -24.5,
+        -22.5,
+        149.5,
+        151.5
+      ],
+      "stations": [],
+      "eligible_count": 0,
+      "weight": null
+    },
+    {
+      "id": "WA_PERTH_PANEL",
+      "centre": [
+        -31.95,
+        115.86
+      ],
+      "box": [
+        -33,
+        -31,
+        115,
+        117
+      ],
+      "stations": [],
+      "eligible_count": 0,
+      "weight": null
+    }
+  ]
+}

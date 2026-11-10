@@ -1,0 +1,13 @@
+{
+  "url": "https://www.ncei.noaa.gov/data/ghcnm/v4/precipitation/archive/ghcn-m_v4.00.00_prcp_s16970101_e20260930_c20261004.tar.gz",
+  "started_utc": "2026-11-10T06:47:26.588969+00:00",
+  "status": "BLOCKED_NO_RETRY",
+  "max_bytes": 260000000,
+  "attempt": 1,
+  "plan_sha256": "9bb6955f917ef61e77375bca3ae4aa68fb1018d0642dd8b763214324503cf87f",
+  "preregistration_sha256": "7617b4e04b47c74ef1a6bb92859d0b0fd531a9ab582c9f33175c54a65acb0510",
+  "bytes_received": 0,
+  "error_type": "HTTPError",
+  "error": "HTTP Error 404: Not Found",
+  "completed_utc": "2026-11-10T06:47:27.482080+00:00"
+}

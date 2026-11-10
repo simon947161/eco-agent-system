@@ -1,0 +1,43 @@
+{
+  "algorithm": "sha256",
+  "excluded_metadata": [
+    "HANDOFF_STATUS.json",
+    "REVIEW_REQUEST.json",
+    "manifest.json",
+    "validation.json"
+  ],
+  "files": {
+    "cczps_lite/integration/enso_regional_weather.py": "d69a66434518427cf5ba07e133f7e80d1b2a2f6e9c7e68a6c4b692154f5c797e",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/.gitattributes": "3e5e82fc72e044ea9af807a2030b73dbb94800d2cd1775302063b2eee761ba1e",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/CCZPS_ECOCHAIN_HANDOFF.md": "6e38ec7d0bfb03b38dcd05c14c336a4a0ccba58dd1b8ba4e7f420e09f2c65ed1",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/CONDITIONAL_PROBABILITY_RESULTS.md": "7c2d2c660725b9cd474f2b5721d839829a345b2bfdbf77864c6260e3fb017379",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/COUNTEREXAMPLES.md": "72d833691c5b8d27df8cac61bc7265343553664caa34e4d18caf6505c405c21d",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/CRP_HANDOFF.md": "0c76af9aa09718d07814db766a83f1492d0c95be9f16b26bca289b30fcf3cdd6",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/FOUNDER_REPORT_ZH.md": "c17f6f43614336bc0cd0c5237c1a61034931d188b816f3e3de984cd96f4c068f",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/NEXT_SESSION.md": "e2c179bb46ff1d876813d8ad036634e06f436aec2d3da04c5a67d22f2c87d4c2",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/PAIRED_ENSO_WEATHER_DATA.json": "42b2f692858c7bd629233cb2daf269e69bfd1fa8e2b1ff7fbbc552806f9603f7",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/PHYSICAL_MECHANISM_AND_CONFOUNDERS.md": "63710222608b6b984267566dc4c46ed542d335d5478c81f17d23f8cb299af04e",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/PLAN.json": "9bb6955f917ef61e77375bca3ae4aa68fb1018d0642dd8b763214324503cf87f",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/PRE_REGISTERED_ANALYSIS_PLAN.md": "7617b4e04b47c74ef1a6bb92859d0b0fd531a9ab582c9f33175c54a65acb0510",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/QA_AND_VALIDATION.md": "9b36c51ff308f7c8b9df12f2066298a95ce4645126e30e46bdd411ac18f30662",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/README.md": "dd9333b99b7199c2a7f9e93fc0df200d045da504f364207125fdf0b73fa2fe9b",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/REGIONS.json": "28db885dbc3711a6ae1a6661da172747d4ae40d71f8d819fa17ffad334067a79",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/REGION_AND_TIME_DEFINITION.md": "96035767f0856030804af648fe00d955997346f6c466347699bcefcef24c63eb",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/SOURCE_AND_LICENSE_REGISTER.md": "afeeb6a688406fa00762dcaa12c186973de186dc2eaaef058daca3fd5b9e71bc",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/TASKBOOK_ZH.md": "f0e300990ae8a004d079b4449aa2acb728e1c5407f72a99a6687a1fa9e9dfbc5",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/UNCERTAINTY_AND_SENSITIVITY.md": "6a4ea46523f5d06558a5c7231fdb4b9804dc4d3e1aef954f06a6519eafa8a8e4",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/evidence/ACQUISITION_AUDIT.md": "2df8c3df5773871784c1efb204c6b2e94a29c8f9198bbd27ef5ba6bbcfb8895c",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/evidence/archive-receipt.json": "7e70427476acd90e88c32d0a078de5e701349b78739fe43e74e3003e33a6e946",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/evidence/baseline-and-review.json": "850a919fade3197931cae3e95e4691cd13004daa9197ccb45072d9e2cd2becd6",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/evidence/end-to-end.json": "3ff13534e28825ae932694589ccb61ad180d176c5dfff4afc63040737355edfd",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/evidence/inventory-receipt.json": "3d9a15adc8c419e285399ea3e687dc5b4a130d7702a38a4f7ac20ee7cdf638fd",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/evidence/selection-country-code-bug.json": "fd6f28d7223179ec16106947fb8f5081ec23d870970b8578b3b49a359fcc444b",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/evidence/tests-inherited-run.txt": "09150a17fb0db56de840cb18e66fb476a72c7c4a555704e31f1246d4dc0f8480",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/evidence/tests-inherited.txt": "66bf52802a98088bda0ec1b87b444ef716437c66811385914d673256226f2369",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/evidence/tests-new.txt": "d18e057a35e10a0dba5daf371f0fafa681b2562a8c22e5f820d594db457ffc78",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/scripts/acquire.py": "faa92f96b2b3c1dccffc6f232762e3f9c2bfc4789b7cfb776bc70ce692515c8f",
+    "docs/tasks/climateos_enso_regional_weather_probability_001/scripts/validate.py": "cb0734699adaa2869dc75cab63ab446640526c53fde44fd6e9060737a8e3185e",
+    "tests/test_enso_regional_weather.py": "80ac068ae88235d59b10b409e70e32302b7a3695e2aef7c7fa437ff7599bffdd"
+  },
+  "normalization": "CRLF_to_LF_for_text; acquisition receipts separately preserve raw SHA"
+}

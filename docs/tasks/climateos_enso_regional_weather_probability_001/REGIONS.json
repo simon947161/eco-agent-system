@@ -1,0 +1,167 @@
+{
+  "selected_utc": "2026-11-10T06:47:17.465487+00:00",
+  "before_rain_values": true,
+  "inventory_sha256": "c1311f7300ad9ea80830ff1c1f30d9a803c4c3674644339cd290e4004702e219",
+  "plan_sha256": "9bb6955f917ef61e77375bca3ae4aa68fb1018d0642dd8b763214324503cf87f",
+  "regions": [
+    {
+      "id": "NSW_WAGGA_PANEL",
+      "centre": [
+        -35.12,
+        147.37
+      ],
+      "box": [
+        -36,
+        -34,
+        146,
+        149
+      ],
+      "stations": [
+        {
+          "id": "ASN00072150",
+          "latitude": -35.1583,
+          "longitude": 147.4573,
+          "elevation": 212.0,
+          "name": "WAGGA WAGGA AMO",
+          "wmo": "94910",
+          "first": 1941,
+          "last": 2026,
+          "inventory_line": "ASN00072150 -35.1583  147.4573  212.0    WAGGA WAGGA AMO                        94910 1941 2026",
+          "distance_km": 9.008465906311377
+        },
+        {
+          "id": "ASN00074104",
+          "latitude": -35.2683,
+          "longitude": 147.1142,
+          "elevation": 228.0,
+          "name": "THE ROCK POST OFFICE",
+          "wmo": "99999",
+          "first": 1894,
+          "last": 2025,
+          "inventory_line": "ASN00074104 -35.2683  147.1142  228.0    THE ROCK POST OFFICE                   99999 1894 2025",
+          "distance_km": 28.499506398156644
+        },
+        {
+          "id": "ASN00072008",
+          "latitude": -35.3874,
+          "longitude": 147.5662,
+          "elevation": 259.0,
+          "name": "TARCUTTA (WOLLUMBI)",
+          "wmo": "99999",
+          "first": 1893,
+          "last": 2026,
+          "inventory_line": "ASN00072008 -35.3874  147.5662  259.0    TARCUTTA (WOLLUMBI)                    99999 1893 2026",
+          "distance_km": 34.662218946044696
+        }
+      ],
+      "eligible_count": 19,
+      "weight": 0.3333333333333333
+    },
+    {
+      "id": "QLD_ROCKHAMPTON_PANEL",
+      "centre": [
+        -23.38,
+        150.51
+      ],
+      "box": [
+        -24.5,
+        -22.5,
+        149.5,
+        151.5
+      ],
+      "stations": [
+        {
+          "id": "ASN00039083",
+          "latitude": -23.3753,
+          "longitude": 150.4775,
+          "elevation": 10.4,
+          "name": "ROCKHAMPTON AERO",
+          "wmo": "94374",
+          "first": 1939,
+          "last": 2026,
+          "inventory_line": "ASN00039083 -23.3753  150.4775   10.4    ROCKHAMPTON AERO                       94374 1939 2026",
+          "distance_km": 3.3580898732316617
+        },
+        {
+          "id": "ASN00039049",
+          "latitude": -23.4389,
+          "longitude": 150.455,
+          "elevation": 22.9,
+          "name": "GRACEMERE RUSSELL ST",
+          "wmo": "99999",
+          "first": 1890,
+          "last": 2026,
+          "inventory_line": "ASN00039049 -23.4389  150.4550   22.9    GRACEMERE RUSSELL ST                   99999 1890 2026",
+          "distance_km": 8.625116990747403
+        },
+        {
+          "id": "ASN00039242",
+          "latitude": -23.4009,
+          "longitude": 150.6238,
+          "elevation": 15.0,
+          "name": "BROADMEADOWS",
+          "wmo": "99999",
+          "first": 1956,
+          "last": 2026,
+          "inventory_line": "ASN00039242 -23.4009  150.6238   15.0    BROADMEADOWS                           99999 1956 2026",
+          "distance_km": 11.84431929666381
+        }
+      ],
+      "eligible_count": 13,
+      "weight": 0.3333333333333333
+    },
+    {
+      "id": "WA_PERTH_PANEL",
+      "centre": [
+        -31.95,
+        115.86
+      ],
+      "box": [
+        -33,
+        -31,
+        115,
+        117
+      ],
+      "stations": [
+        {
+          "id": "ASN00009021",
+          "latitude": -31.9275,
+          "longitude": 115.9764,
+          "elevation": 15.4,
+          "name": "PERTH AIRPORT",
+          "wmo": "94610",
+          "first": 1944,
+          "last": 2026,
+          "inventory_line": "ASN00009021 -31.9275  115.9764   15.4    PERTH AIRPORT                          94610 1944 2026",
+          "distance_km": 11.265026648418582
+        },
+        {
+          "id": "ASN00009106",
+          "latitude": -32.0486,
+          "longitude": 115.9839,
+          "elevation": 10.0,
+          "name": "GOSNELLS CITY",
+          "wmo": "95604",
+          "first": 1961,
+          "last": 2024,
+          "inventory_line": "ASN00009106 -32.0486  115.9839   10.0    GOSNELLS CITY                          95604 1961 2024",
+          "distance_km": 16.022293870218892
+        },
+        {
+          "id": "ASN00009025",
+          "latitude": -31.8689,
+          "longitude": 116.0167,
+          "elevation": 15.0,
+          "name": "MIDLAND",
+          "wmo": "99999",
+          "first": 1886,
+          "last": 2021,
+          "inventory_line": "ASN00009025 -31.8689  116.0167   15.0    MIDLAND                                99999 1886 2021",
+          "distance_km": 17.323432738282996
+        }
+      ],
+      "eligible_count": 17,
+      "weight": 0.3333333333333333
+    }
+  ]
+}
