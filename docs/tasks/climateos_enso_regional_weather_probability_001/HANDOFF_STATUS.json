@@ -1,18 +1,59 @@
 {
-  "task":"CLIMATEOS-ENSO-REGIONAL-WEATHER-PROBABILITY-001",
-  "branch":"research/enso-regional-weather-probability-001",
-  "frozen_parent":"48d0f576e651cd5072e6319ea1539ffa5ba02936",
-  "taskbook_head":"9522af5e1b42a343692e470907b6d60b73e8696a",
-  "research_head_R":"PENDING_COMMIT",
-  "delivery_head_D":"OUTER_GIT_COMMIT_AND_PR_HANDOFF_COMMENT",
-  "science_result":"DATA_NOT_READY",
-  "minimum_science_success_gate":"NOT_MET",
-  "local_status":"LOCAL_VERIFIED",
-  "local_evidence":{"new_tests":32,"inherited_tests":120,"manifest_files":31,"inherited_trajectory_files":47,"inherited_atlas_files":50,"local_links":30,"results_sha256":"3ff13534e28825ae932694589ccb61ad180d176c5dfff4afc63040737355edfd"},
-  "review_status":"PREPARING_INDEPENDENT_REVIEW",
-  "deployed":false,"merged":false,"scientifically_admitted":false,
-  "gates":{"D3":"DATA_NOT_READY","P1-A":"PENDING","PR140":"NO_VALID_PAIR","PR141":"NO_VALID_VERTICAL_PROFILE","PR143_ChainB":"BLOCKED","PR144_real":"DATA_NOT_READY","Stage3":"METHOD_READY_NOT_VALIDATED"},
-  "canonical_ECOChain":"ECOCHAIN_CANONICAL_NOT_FOUND",
-  "Enotebook":"PENDING_INTEGRATION",
-  "stop":"No more downloads this batch; await ChatGPT review and Founder decision on a new bounded acquisition. No automatic next experiment."
+  "task": "CLIMATEOS-ENSO-REGIONAL-WEATHER-PROBABILITY-001",
+  "branch": "research/enso-regional-weather-probability-001",
+  "frozen_parent": "48d0f576e651cd5072e6319ea1539ffa5ba02936",
+  "taskbook_head": "9522af5e1b42a343692e470907b6d60b73e8696a",
+  "research_head_R": "06d4bdc46e46478a60f2920bbe2c5c9dfc2e514a",
+  "delivery_head_D": "OUTER_GIT_COMMIT_AND_PR_HANDOFF_COMMENT",
+  "science_result": "DATA_NOT_READY",
+  "minimum_science_success_gate": "NOT_MET",
+  "local_status": "LOCAL_VERIFIED",
+  "local_evidence": {
+    "new_tests": 32,
+    "inherited_tests": 120,
+    "manifest_files": 31,
+    "inherited_trajectory_files": 47,
+    "inherited_atlas_files": 50,
+    "local_links": 30,
+    "results_sha256": "3ff13534e28825ae932694589ccb61ad180d176c5dfff4afc63040737355edfd"
+  },
+  "review_status": "READY_FOR_INDEPENDENT_REVIEW",
+  "deployed": false,
+  "merged": false,
+  "scientifically_admitted": false,
+  "gates": {
+    "D3": "DATA_NOT_READY",
+    "P1-A": "PENDING",
+    "PR140": "NO_VALID_PAIR",
+    "PR141": "NO_VALID_VERTICAL_PROFILE",
+    "PR143_ChainB": "BLOCKED",
+    "PR144_real": "DATA_NOT_READY",
+    "Stage3": "METHOD_READY_NOT_VALIDATED"
+  },
+  "canonical_ECOChain": "ECOCHAIN_CANONICAL_NOT_FOUND",
+  "Enotebook": "PENDING_INTEGRATION",
+  "stop": "No more downloads this batch; await ChatGPT review and Founder decision on a new bounded acquisition. No automatic next experiment.",
+  "draft_pr": "https://github.com/simon947161/eco-agent-system/pull/148",
+  "CI_R": {
+    "push": {
+      "head": "06d4bdc46e46478a60f2920bbe2c5c9dfc2e514a",
+      "run_id": 42771718233,
+      "job_id": 129680820875,
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/42771718233",
+      "status": "completed",
+      "conclusion": "success",
+      "unit_tests": 619,
+      "log_excerpt": "Ran 619 tests in 7.424s; OK"
+    },
+    "pull_request": {
+      "head": "06d4bdc46e46478a60f2920bbe2c5c9dfc2e514a",
+      "run_id": 42771762477,
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/42771762477",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "delivery_D": "Query after metadata commit; exact D run and HEAD will be in final PR handoff comment, not inherited from R"
+  },
+  "handoff_metadata_only": true,
+  "checked_at_utc": "2026-11-10T06:56:15.510396+00:00"
 }
