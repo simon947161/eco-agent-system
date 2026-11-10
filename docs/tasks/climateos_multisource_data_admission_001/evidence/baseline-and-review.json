@@ -1,0 +1,82 @@
+{
+  "retrieval_note": "Live GitHub connector snapshot at task start; exact retrieval time not archived. Source comment timestamps preserved.",
+  "frozen_parent": "da4d7f21c5fcac920e49f34ac1f0ebf6ef1218f9",
+  "taskbook_commit": "f807174fe964cd8e97b5082296315308cc011bc6",
+  "taskbook_blob": "abba0ea8f17561238ec7ef6cb074e8b694832f43",
+  "prs": [
+    {
+      "number": 143,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/143",
+      "head_sha": "746825e65b8ddbd0f518709c94d9476df107208b",
+      "base_sha": "3576fef07dcc797794f0adbef9b5be1e3e0991e6",
+      "head": "research/climateos-methane-physics-knowledge-engine-001",
+      "base": "research/climateos-client-ai-science-integration-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 144,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/144",
+      "head_sha": "77a35e2723372a290579e4549a86781e2be65c04",
+      "base_sha": "746825e65b8ddbd0f518709c94d9476df107208b",
+      "head": "research/climateos-au-landfill-methane-methods-001",
+      "base": "research/climateos-methane-physics-knowledge-engine-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 145,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/145",
+      "head_sha": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+      "base_sha": "77a35e2723372a290579e4549a86781e2be65c04",
+      "head": "research/climateos-global-method-evidence-ecochain-001",
+      "base": "research/climateos-au-landfill-methane-methods-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 146,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/146",
+      "head_sha": "1e6b13e2b80c50e6d20e05a4e88819eb0de93488",
+      "base_sha": "3bb71785ad2705823a78748c9ba4cd5003becb41",
+      "head": "research/global-natural-systems-evidence-atlas-001",
+      "base": "research/cczps-global-scope-evidence-standard-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 147,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/147",
+      "head_sha": "48d0f576e651cd5072e6319ea1539ffa5ba02936",
+      "base_sha": "1e6b13e2b80c50e6d20e05a4e88819eb0de93488",
+      "head": "research/climateos-physical-process-trajectory-001",
+      "base": "research/global-natural-systems-evidence-atlas-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 148,
+      "url": "https://github.com/simon947161/eco-agent-system/pull/148",
+      "head_sha": "da4d7f21c5fcac920e49f34ac1f0ebf6ef1218f9",
+      "base_sha": "48d0f576e651cd5072e6319ea1539ffa5ba02936",
+      "head": "research/enso-regional-weather-probability-001",
+      "base": "research/climateos-physical-process-trajectory-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    }
+  ],
+  "review": {
+    "id": 6763303407,
+    "url": "https://github.com/simon947161/eco-agent-system/pull/148#issuecomment-6763303407",
+    "body": "## ChatGPT 独立科学与工程评审｜PR #148 固定 HEAD\n\n**固定D：`da4d7f21c5fcac920e49f34ac1f0ebf6ef1218f9`**；R：`06d4bdc46e46478a60f2920bbe2c5c9dfc2e514a`；冻结父PR147 D：`48d0f576e651cd5072e6319ea1539ffa5ba02936`。\n\n**结论：ACCEPT_WITH_CONDITIONS — 接受本轮“受控取数失败与保守退出”的工程交付；科学目标 NOT_MET / DATA_NOT_READY。** 不能据此声称已得到任何ENSO—区域降雨/干旱条件概率、气候因果效应或预报能力；无需推倒既有代码，也不批准自动补抓或合并。\n\n### 独立核查要点\n1. GitHub核实PR OPEN/DRAFT/UNMERGED、精确D、R→D只有`HANDOFF_STATUS.json`和`REVIEW_REQUEST.json`。本次D的 GitHub Actions [run 42771875734](https://github.com/simon947161/eco-agent-system/actions/runs/42771875734) 为completed/success；直接读取job129681332536日志确认 `Ran 619 tests in 7.718s`。作者本地152项、文件清单哈希和重放记录未由评审者另行本地执行。仓库根README的变更仅新增本次研究入口及DATA_NOT_READY说明，未发现旧物理核心被改动。\n2. **下载证据真实分开：** `inventory-receipt.json`为HTTP200、12,373,152字节、SHA256 `c1311f7300ad9ea80830ff1c1f30d9a803c4c3674644339cd290e4004702e219`；`archive-receipt.json`是固定历史归档URL，HTTP404、0字节，不存在雨量SHA。该404只能说明特定文件URL失败，**不能证明NOAA月降雨产品不存在、整体不可访问或法律授权被拒**。因此雨量配对0年、全部概率null/UNKNOWN，科学失败出口正确。\n3. **预登记/择站：** 1961–2020、JJA/SON、JJA→SON、固定1961–1990中位数阈值与三个局地面板，在降雨读数前冻结。REGIONS和审计收据把Wagga、Rockhampton、Perth各三站与选择时点固定，未看到按雨量效果挑站。第一次把FIPS `AU`误当澳大利亚，实际GHCN国家码应为`AS`；修正发生在降雨文件请求前，保留错误收据且有回归测试。此修复可接受，但下次应将FIPS与ISO country-code namespace写进选择器的schema/测试。\n4. **真实性、质量和许可：** 库存first/last年份不等于逐月连续覆盖；地理坐标是目录最新地址，不证明1961–2020未迁站。month QC辅助函数阻止M缺日码、非空Q、trace和负哨兵；M空白不能证明每日完整，来源版权不应由GHCN-D或NOAA一般声明直接推断所有跨国原始数据完全可再分发。没有取得雨量，因此QC实现仅夹具测试，不能写实际观测准入。\n5. **保守接口：** `enso_regional_weather.py` 的evaluate实际返回`DATA_NOT_READY`、`paired_years=0`、`numerical_output=null`、`probabilities=[]`，明确`NOT_EXECUTED_MISSING_RAIN`、低证据，旧CCZPS四情景不作为本次三地区模型；保留RONI指数持续率≠天气概率、物理/政策评分隔离和PR143–147科学门。\n6. **统计方法尚只是设计：** Wilson/块bootstrap/留出、IOD/SAM、区域反例、异常高温均未用真实地区雨量执行；不构成该统计引擎的真实科学验证。2023 BoM叙述不是预设1961–2020当地9站反例。\n\n### 重要外部复查发现：可能存在更适当的官方读取方式\n美国政府官方数据目录（NOAA NCEI产品记录）给出的GHCN-M v4 precipitation **Direct Download (Data)** 是 `https://www.ncei.noaa.gov/data/global-historical-climatology-network-monthly/v4/precipitation/access/`，与本轮请求的 `/data/ghcnm/v4/precipitation/archive/ghcn-m_v4.00.00_prcp_s16970101_e20260930_c20261004.tar.gz` 不同。数据产品的2024官方论文亦说明月度更新、可浏览**单站CSV**及整包归档。因此**下一次先做只读目录/产品版本与目标9站文件的存在性、许可和大小检查，比猜测新tar.gz日期或重试旧404更有效**。但本评审未成功实时浏览该目录具体文件列表，故不声称某一个站点CSV现已证实可下载，不替Codex执行新的下载额度。来源：https://catalog.data.gov/dataset/global-historical-climatology-network-ghcn-monthly-precipitation-version-4 及 https://www.nature.com/articles/s41597-024-03457-z 。\n\n### 后续决策建议（尚未启动）\n可由Founder另行授权一次非常小的**DATA-ACCESS-REPAIR**：首先只读验证NOAA当前官方目录、文件名、九站对应CSV及非US数据许可；选择一个早已预注册的Wagga面板做文件真实性与月QC验证（如三站不齐诚实报告），再考虑完整的1961–2020配对。保持地区/事件阈值冻结，若改变产品或覆盖年需新版本与原因，绝不依结果显著性择站。数据仍不可用则继续DATA_NOT_READY，不再无限变更端点。不得把网站可访问性等同科学准入。\n\n**保留状态：工程 LOCAL_VERIFIED；研究真实配对 DATA_NOT_READY；科学准入 PENDING。** 旧PR143–147甲烷/水文/Atlas/Scorecard不升门，ECOChain canonical和Enotebook仍未正式接入；保持Draft，不合并、不部署、不联系机构、不发布预报、不认证。\n\n**评审边界**：从固定D GitHub读源码、方案、九站、下载收据、质量与失败路径、测试和远程CI日志；额外检查官方NOAA数据目录的公开产品元数据及论文说明。没有重新下载12.37MB库存、没有对所有哈希作本地重算，没有重新运行152项本地测试，没有获取降雨文件或现场验证。本评论是独立PR conversation评审回执，非GitHub原生APPROVE。",
+    "created_at": "2026-11-10T09:02:05Z",
+    "updated_at": "2026-11-10T09:02:05Z"
+  },
+  "checked_date": "2026-11-10"
+}

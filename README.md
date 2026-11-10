@@ -32,6 +32,16 @@ The passed slice is descriptive observation evidence; methane D3 remains
 DATA_NOT_READY and MatrixOne remains NOT_BENCHMARKED. No deployment or legal
 credit calculation is implied.
 
+## Multisource admission — real Wagga rainfall evidence
+
+[Research package](docs/tasks/climateos_multisource_data_admission_001/README.md)
+and [Chinese Founder report](docs/tasks/climateos_multisource_data_admission_001/FOUNDER_REPORT_ZH.md):
+three real station CSVs, 46 valid SON years paired with frozen RONI;
+JJA remains blocked by the preregistered baseline completeness gate.
+Historical descriptive frequencies are reproducible; missingness, block sensitivity
+and uncontrolled IOD/SAM prevent causal or forecast claims. Scientific admission
+remains PENDING. The prior PR148 failure record below remains unchanged.
+
 ## ENSO regional weather evidence — bounded research
 
 [Research package](docs/tasks/climateos_enso_regional_weather_probability_001/README.md)

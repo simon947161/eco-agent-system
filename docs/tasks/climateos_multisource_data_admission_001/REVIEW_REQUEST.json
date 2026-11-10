@@ -1,0 +1,20 @@
+{
+  "do_not": [
+    "merge",
+    "deploy",
+    "certify",
+    "expand_data",
+    "change_legacy_gates"
+  ],
+  "questions": [
+    "CC0 product record versus catalogue anomalies",
+    "Missingness and blank M limit target population",
+    "Fixed stations, phase alignment, block sensitivity, holdout and 1992 counterexample",
+    "No independent replication across two SON modes; IOD/SAM uncontrolled",
+    "Bounded return to physical process chain; no automatic next experiment"
+  ],
+  "research_R": null,
+  "science": "PENDING",
+  "status": "PREPARED_FOR_CHATGPT_READ_ONLY_REVIEW",
+  "task_id": "CLIMATEOS-MULTISOURCE-DATA-ADMISSION-001"
+}
