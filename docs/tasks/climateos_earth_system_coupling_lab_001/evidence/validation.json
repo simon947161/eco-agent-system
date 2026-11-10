@@ -1,0 +1,36 @@
+{
+  "counted_batch_wall_seconds": 277.4396022000583,
+  "deployed": false,
+  "independent_audit": {
+    "counts": {
+      "COMPLETED": 5145,
+      "DIFFUSION_CFL": 693,
+      "MISSING_DEPENDENCY": 556,
+      "NON_CONVERGENCE": 278,
+      "SPATIAL_MISMATCH": 834,
+      "SYNTHETIC_AS_OBSERVATION": 834,
+      "TIME_MISMATCH": 834,
+      "UNIT_MISMATCH": 834
+    },
+    "main_rows": 10008,
+    "method": "independent inventory differences from saved trajectory; no coupling runtime import",
+    "science": "PENDING",
+    "six_grid_clock_combinations_per_family": true,
+    "status": "PASS",
+    "unique_configs_with_strategy": 10008,
+    "whole_domain_max_energy_residual_j_m2": 1.1158408597111702e-07,
+    "whole_domain_max_water_residual_kg_m2": 7.473188734508085e-15
+  },
+  "local_links": 21,
+  "local_tests_passed": 738,
+  "local_tests_skipped": 1,
+  "local_tests_total": 739,
+  "manifest_files": 86,
+  "new_tests": 65,
+  "protected_baseline_verified": true,
+  "scientific_admission": "PENDING",
+  "source_hashes_match": true,
+  "status": "LOCAL_VERIFIED",
+  "total_archive_bytes": 22267871,
+  "ui": "PASS_24_PAGE_VIEWPORT_CHECKS"
+}

@@ -1,0 +1,967 @@
+{
+  "fields": {
+    "ch4": {
+      "covariance": null,
+      "dimensions": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "evidence_level": "OPEN_DATA_RECALCULATED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "crs": "GLOBAL_MEAN",
+        "id": "global",
+        "support": "global",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "ch4",
+      "identity": "ch4@global@2025-01-01T00:00:00Z/2026-01-01T00:00:00Z",
+      "input_sha256": "8f6e2968c6af82c0e072e0dc80be4b7806feb972b5f38ef178c73f84e644ab17",
+      "kind": "CONSTRAINED_ESTIMATE",
+      "license": "existing research evidence rights; no new raw redistribution",
+      "lineage": [],
+      "medium": "gas_dry",
+      "method_version": "earth-coupling/1",
+      "qc": "DERIVED_SOURCE_FACT",
+      "reference_conditions": "original global/seasonal domain",
+      "semantic_name": "climateos:ch4",
+      "source_id": "FROZEN_PUBLIC_PR147",
+      "source_version": "PR147_D",
+      "standard_name": null,
+      "temporal_kind": "annual_mean",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2026-01-01T00:00:00Z",
+        "local_clock": "calendar annual support; not instantaneous timestamp",
+        "start": "2025-01-01T00:00:00Z"
+      },
+      "uncertainty": [
+        null
+      ],
+      "unit": "ppb_dry_global_mean",
+      "values": [
+        1936.03
+      ]
+    },
+    "enso_phase": {
+      "covariance": null,
+      "dimensions": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "evidence_level": "OPEN_DATA_RECALCULATED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "crs": "NINO34_INDEX",
+        "id": "RONI",
+        "support": "index_region",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "enso_phase",
+      "identity": "enso_phase@RONI@2012-09-01T00:00:00Z/2012-12-01T00:00:00Z",
+      "input_sha256": "1297887f581b6190e459cbbf8bdec9a703ff65c1a229e2de4dd94285254f35c8",
+      "kind": "CONSTRAINED_ESTIMATE",
+      "license": "existing research evidence rights; no new raw redistribution",
+      "lineage": [
+        "PR147.phase; no local precipitation equation"
+      ],
+      "medium": "statistical_context",
+      "method_version": "earth-coupling/1",
+      "qc": "DERIVED_SOURCE_FACT",
+      "reference_conditions": "original global/seasonal domain",
+      "semantic_name": "climateos:enso_phase",
+      "source_id": "FROZEN_PUBLIC_PR147",
+      "source_version": "PR147_D",
+      "standard_name": null,
+      "temporal_kind": "seasonal_mean",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2012-12-01T00:00:00Z",
+        "local_clock": "calendar SON support; not observation UTC boundary",
+        "start": "2012-09-01T00:00:00Z"
+      },
+      "uncertainty": [
+        null
+      ],
+      "unit": "1",
+      "values": [
+        0.0
+      ]
+    },
+    "erf": {
+      "covariance": null,
+      "dimensions": [
+        1,
+        0,
+        -3,
+        0
+      ],
+      "evidence_level": "OPEN_DATA_RECALCULATED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "crs": "GLOBAL_MEAN",
+        "id": "global",
+        "support": "global",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "erf",
+      "identity": "erf@global@2025-01-01T00:00:00Z/2026-01-01T00:00:00Z",
+      "input_sha256": "8f6e2968c6af82c0e072e0dc80be4b7806feb972b5f38ef178c73f84e644ab17",
+      "kind": "CONSTRAINED_ESTIMATE",
+      "license": "existing research evidence rights; no new raw redistribution",
+      "lineage": [
+        "PR147.ch4_erf; no local temperature conversion"
+      ],
+      "medium": "global_toa",
+      "method_version": "earth-coupling/1",
+      "qc": "DERIVED_SOURCE_FACT",
+      "reference_conditions": "original global/seasonal domain",
+      "semantic_name": "climateos:erf",
+      "source_id": "FROZEN_PUBLIC_PR147",
+      "source_version": "PR147_D",
+      "standard_name": null,
+      "temporal_kind": "annual_mean",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2026-01-01T00:00:00Z",
+        "local_clock": "calendar annual support; not instantaneous timestamp",
+        "start": "2025-01-01T00:00:00Z"
+      },
+      "uncertainty": [
+        null
+      ],
+      "unit": "W m-2",
+      "values": [
+        0.569344413968403
+      ]
+    },
+    "evap": {
+      "covariance": null,
+      "dimensions": [
+        1,
+        -2,
+        -1,
+        0
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "evap",
+      "identity": "evap@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "liquid_to_gas",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "water_evaporation_flux",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": "water_evaporation_flux",
+      "temporal_kind": "mean_flux",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "kg m-2 s-1",
+      "values": [
+        0.0,
+        0.0
+      ]
+    },
+    "n2o": {
+      "covariance": null,
+      "dimensions": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "evidence_level": "OPEN_DATA_RECALCULATED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "crs": "GLOBAL_MEAN",
+        "id": "global",
+        "support": "global",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "n2o",
+      "identity": "n2o@global@2025-01-01T00:00:00Z/2026-01-01T00:00:00Z",
+      "input_sha256": "8f6e2968c6af82c0e072e0dc80be4b7806feb972b5f38ef178c73f84e644ab17",
+      "kind": "CONSTRAINED_ESTIMATE",
+      "license": "existing research evidence rights; no new raw redistribution",
+      "lineage": [],
+      "medium": "gas_dry",
+      "method_version": "earth-coupling/1",
+      "qc": "DERIVED_SOURCE_FACT",
+      "reference_conditions": "original global/seasonal domain",
+      "semantic_name": "climateos:n2o",
+      "source_id": "FROZEN_PUBLIC_PR147",
+      "source_version": "PR147_D",
+      "standard_name": null,
+      "temporal_kind": "annual_mean",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2026-01-01T00:00:00Z",
+        "local_clock": "calendar annual support; not instantaneous timestamp",
+        "start": "2025-01-01T00:00:00Z"
+      },
+      "uncertainty": [
+        null
+      ],
+      "unit": "ppb_dry_global_mean",
+      "values": [
+        338.86
+      ]
+    },
+    "pressure": {
+      "covariance": null,
+      "dimensions": [
+        1,
+        -1,
+        -2,
+        0
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "pressure",
+      "identity": "pressure@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "gas",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "air_pressure",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": "air_pressure",
+      "temporal_kind": "instantaneous",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "Pa",
+      "values": [
+        100000.0,
+        100000.0
+      ]
+    },
+    "q": {
+      "covariance": null,
+      "dimensions": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "q",
+      "identity": "q@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "gas",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "specific_humidity",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": "specific_humidity",
+      "temporal_kind": "instantaneous",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "kg kg-1",
+      "values": [
+        0.009,
+        0.009
+      ]
+    },
+    "rain": {
+      "covariance": null,
+      "dimensions": [
+        1,
+        -2,
+        -1,
+        0
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "rain",
+      "identity": "rain@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "liquid",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "precipitation_flux",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": "precipitation_flux",
+      "temporal_kind": "mean_flux",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "kg m-2 s-1",
+      "values": [
+        2e-05,
+        2e-05
+      ]
+    },
+    "rn": {
+      "covariance": null,
+      "dimensions": [
+        1,
+        0,
+        -3,
+        0
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "rn",
+      "identity": "rn@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "surface",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "climateos:rn",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": null,
+      "temporal_kind": "mean_flux",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "W m-2",
+      "values": [
+        220.0,
+        220.0
+      ]
+    },
+    "roni": {
+      "covariance": null,
+      "dimensions": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "evidence_level": "OPEN_DATA_RECALCULATED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "crs": "NINO34_INDEX",
+        "id": "RONI",
+        "support": "index_region",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "roni",
+      "identity": "roni@RONI@2012-09-01T00:00:00Z/2012-12-01T00:00:00Z",
+      "input_sha256": "1297887f581b6190e459cbbf8bdec9a703ff65c1a229e2de4dd94285254f35c8",
+      "kind": "CONSTRAINED_ESTIMATE",
+      "license": "existing research evidence rights; no new raw redistribution",
+      "lineage": [],
+      "medium": "ocean_anomaly",
+      "method_version": "earth-coupling/1",
+      "qc": "DERIVED_SOURCE_FACT",
+      "reference_conditions": "original global/seasonal domain",
+      "semantic_name": "climateos:roni",
+      "source_id": "FROZEN_PUBLIC_PR147",
+      "source_version": "PR147_D",
+      "standard_name": null,
+      "temporal_kind": "seasonal_mean",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2012-12-01T00:00:00Z",
+        "local_clock": "calendar SON support; not observation UTC boundary",
+        "start": "2012-09-01T00:00:00Z"
+      },
+      "uncertainty": [
+        null
+      ],
+      "unit": "K",
+      "values": [
+        0.21
+      ]
+    },
+    "runoff": {
+      "covariance": null,
+      "dimensions": [
+        1,
+        -2,
+        -1,
+        0
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "runoff",
+      "identity": "runoff@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "liquid",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "runoff_flux",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": "runoff_flux",
+      "temporal_kind": "mean_flux",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "kg m-2 s-1",
+      "values": [
+        0.0,
+        0.0
+      ]
+    },
+    "ta": {
+      "covariance": null,
+      "dimensions": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "ta",
+      "identity": "ta@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "gas",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "air_temperature",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": "air_temperature",
+      "temporal_kind": "instantaneous",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "K",
+      "values": [
+        302.0,
+        302.0
+      ]
+    },
+    "ts": {
+      "covariance": null,
+      "dimensions": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "ts",
+      "identity": "ts@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "surface",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "surface_temperature",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": "surface_temperature",
+      "temporal_kind": "instantaneous",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "K",
+      "values": [
+        304.70710678118655,
+        303.29289321881345
+      ]
+    },
+    "u": {
+      "covariance": null,
+      "dimensions": [
+        0,
+        1,
+        -1,
+        0
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "u",
+      "identity": "u@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "gas",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "eastward_wind",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": "eastward_wind",
+      "temporal_kind": "instantaneous",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "m s-1",
+      "values": [
+        3.0,
+        3.0
+      ]
+    },
+    "v": {
+      "covariance": null,
+      "dimensions": [
+        0,
+        1,
+        -1,
+        0
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "v",
+      "identity": "v@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "gas",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "northward_wind",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": "northward_wind",
+      "temporal_kind": "instantaneous",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "m s-1",
+      "values": [
+        0.0,
+        0.0
+      ]
+    },
+    "water": {
+      "covariance": null,
+      "dimensions": [
+        1,
+        -2,
+        0,
+        0
+      ],
+      "evidence_level": "SYNTHETIC_TESTED",
+      "extensive": false,
+      "grid": {
+        "cells": [
+          [
+            0.0,
+            1000.0,
+            0.0,
+            1000.0
+          ],
+          [
+            1000.0,
+            2000.0,
+            0.0,
+            1000.0
+          ]
+        ],
+        "crs": "LOCAL_CARTESIAN_METRES",
+        "id": "local_2",
+        "support": "area",
+        "vertical": "surface/idealised_mixed_layer"
+      },
+      "id": "water",
+      "identity": "water@local_2@2000-01-01T00:00:00+00:00/2000-01-01T00:15:00+00:00",
+      "input_sha256": "8cefbec467c5a20cd57f8065e1c0024d4b01172b833c6df9c2a983e3d650e7c9",
+      "kind": "SIMULATED_STATE",
+      "license": "MIT repository-authored synthetic fixture",
+      "lineage": [
+        "declared_config"
+      ],
+      "medium": "soil_liquid",
+      "method_version": "earth-coupling/1",
+      "qc": "SYNTHETIC_NOT_OBSERVATIONS",
+      "reference_conditions": "declared idealised boundary; no real site attribution",
+      "semantic_name": "climateos:water",
+      "source_id": "SYNTHETIC_CONFIG",
+      "source_version": "earth-coupling/1",
+      "standard_name": null,
+      "temporal_kind": "instantaneous",
+      "time": {
+        "calendar": "proleptic_gregorian",
+        "end": "2000-01-01T00:15:00+00:00",
+        "local_clock": "UTC synthetic clock; no real site or local observation day",
+        "start": "2000-01-01T00:00:00+00:00"
+      },
+      "uncertainty": [
+        null,
+        null
+      ],
+      "unit": "kg m-2",
+      "values": [
+        50.0,
+        50.0
+      ]
+    }
+  },
+  "revision": 16
+}

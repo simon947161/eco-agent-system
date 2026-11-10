@@ -1,0 +1,1083 @@
+{
+  "actual_all_family_T_q_correlation": -0.6579795216715844,
+  "budget": {
+    "bytes": 200000000,
+    "max_iterations": 80,
+    "max_steps": 96,
+    "seconds": 120.0
+  },
+  "completed_runs": 300,
+  "correlation_note": "nominal Gaussian draws correlated; clipping and designed edge families alter whole-matrix correlation",
+  "early_stop": null,
+  "elapsed_seconds": 2.3925017000874504,
+  "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+  "failure_distribution": {
+    "COMPLETED": 156,
+    "DIFFUSION_CFL": 24,
+    "MISSING_DEPENDENCY": 16,
+    "NON_CONVERGENCE": 8,
+    "SPATIAL_MISMATCH": 24,
+    "SYNTHETIC_AS_OBSERVATION": 24,
+    "TIME_MISMATCH": 24,
+    "UNIT_MISMATCH": 24
+  },
+  "family_counts": {
+    "global_to_local": 24,
+    "heat_dry": 27,
+    "iteration_limit": 24,
+    "lagged": 24,
+    "missing_q": 24,
+    "nominal": 27,
+    "rain_pulse": 27,
+    "stiff": 24,
+    "synthetic_as_observed": 24,
+    "time": 24,
+    "unit": 24,
+    "zero_wind": 27
+  },
+  "interpretation": "algorithm frequency over declared design, not 10000 independent field experiments or real hazard probability",
+  "max_energy_residual_j_m2": 8.886854629963636e-08,
+  "max_water_residual_kg_m2": 1.48318857196017e-14,
+  "model_version": "earth-coupling/1",
+  "output_bytes": 526472,
+  "pairs": [
+    {
+      "family": "nominal",
+      "scenario_id": 0,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -2.9854387955916764,
+      "two_minus_one_evap_kg_m2": -0.5914760988729395
+    },
+    {
+      "family": "heat_dry",
+      "scenario_id": 1,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -2.330400380362107,
+      "two_minus_one_evap_kg_m2": -0.8076339855962411
+    },
+    {
+      "family": "rain_pulse",
+      "scenario_id": 2,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -2.533922030484973,
+      "two_minus_one_evap_kg_m2": -0.15291155000054313
+    },
+    {
+      "family": "zero_wind",
+      "scenario_id": 3,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": 0.0,
+      "two_minus_one_evap_kg_m2": 0.0
+    },
+    {
+      "family": "lagged",
+      "scenario_id": 4,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.2990034092834435,
+      "two_minus_one_evap_kg_m2": -0.004561961711824103
+    },
+    {
+      "family": "stiff",
+      "scenario_id": 5,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "missing_q",
+      "scenario_id": 6,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "unit",
+      "scenario_id": 7,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "time",
+      "scenario_id": 8,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "iteration_limit",
+      "scenario_id": 9,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "synthetic_as_observed",
+      "scenario_id": 10,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "global_to_local",
+      "scenario_id": 11,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "nominal",
+      "scenario_id": 12,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -2.774794882272886,
+      "two_minus_one_evap_kg_m2": -0.9745212158971881
+    },
+    {
+      "family": "heat_dry",
+      "scenario_id": 13,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.3589766112889947,
+      "two_minus_one_evap_kg_m2": -0.0033077294829383375
+    },
+    {
+      "family": "rain_pulse",
+      "scenario_id": 14,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -6.843744836655333,
+      "two_minus_one_evap_kg_m2": -5.955176812241959
+    },
+    {
+      "family": "zero_wind",
+      "scenario_id": 15,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": 0.0,
+      "two_minus_one_evap_kg_m2": 0.0
+    },
+    {
+      "family": "lagged",
+      "scenario_id": 16,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -2.009129250951844,
+      "two_minus_one_evap_kg_m2": -1.0607325000616687
+    },
+    {
+      "family": "stiff",
+      "scenario_id": 17,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "missing_q",
+      "scenario_id": 18,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "unit",
+      "scenario_id": 19,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "time",
+      "scenario_id": 20,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "iteration_limit",
+      "scenario_id": 21,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "synthetic_as_observed",
+      "scenario_id": 22,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "global_to_local",
+      "scenario_id": 23,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "nominal",
+      "scenario_id": 24,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -2.7805494054259725,
+      "two_minus_one_evap_kg_m2": -0.12712251710397182
+    },
+    {
+      "family": "heat_dry",
+      "scenario_id": 25,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -1.0368129791812635,
+      "two_minus_one_evap_kg_m2": -0.07155194893532824
+    },
+    {
+      "family": "rain_pulse",
+      "scenario_id": 26,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -2.5065221982903267,
+      "two_minus_one_evap_kg_m2": -2.2940862098799797
+    },
+    {
+      "family": "zero_wind",
+      "scenario_id": 27,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": 0.0,
+      "two_minus_one_evap_kg_m2": 0.0
+    },
+    {
+      "family": "lagged",
+      "scenario_id": 28,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.7273895688944094,
+      "two_minus_one_evap_kg_m2": -0.09122094989117091
+    },
+    {
+      "family": "stiff",
+      "scenario_id": 29,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "missing_q",
+      "scenario_id": 30,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "unit",
+      "scenario_id": 31,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "time",
+      "scenario_id": 32,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "iteration_limit",
+      "scenario_id": 33,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "synthetic_as_observed",
+      "scenario_id": 34,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "global_to_local",
+      "scenario_id": 35,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "nominal",
+      "scenario_id": 36,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -4.445308854689301,
+      "two_minus_one_evap_kg_m2": -2.216188346964107
+    },
+    {
+      "family": "heat_dry",
+      "scenario_id": 37,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.23123982817139677,
+      "two_minus_one_evap_kg_m2": -0.0008464463876604045
+    },
+    {
+      "family": "rain_pulse",
+      "scenario_id": 38,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -3.3877448979872042,
+      "two_minus_one_evap_kg_m2": -2.031862921641701
+    },
+    {
+      "family": "zero_wind",
+      "scenario_id": 39,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": 0.0,
+      "two_minus_one_evap_kg_m2": 0.0
+    },
+    {
+      "family": "lagged",
+      "scenario_id": 40,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -3.3997496457174066,
+      "two_minus_one_evap_kg_m2": -0.6389578486906051
+    },
+    {
+      "family": "stiff",
+      "scenario_id": 41,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "missing_q",
+      "scenario_id": 42,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "unit",
+      "scenario_id": 43,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "time",
+      "scenario_id": 44,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "iteration_limit",
+      "scenario_id": 45,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "synthetic_as_observed",
+      "scenario_id": 46,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "global_to_local",
+      "scenario_id": 47,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "nominal",
+      "scenario_id": 48,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -1.7436498370902314,
+      "two_minus_one_evap_kg_m2": -0.27976255430839947
+    },
+    {
+      "family": "heat_dry",
+      "scenario_id": 49,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -1.3750826306043678,
+      "two_minus_one_evap_kg_m2": -0.03658618399946001
+    },
+    {
+      "family": "rain_pulse",
+      "scenario_id": 50,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -6.629853960975026,
+      "two_minus_one_evap_kg_m2": -1.7428976756871783
+    },
+    {
+      "family": "zero_wind",
+      "scenario_id": 51,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": 0.0,
+      "two_minus_one_evap_kg_m2": 0.0
+    },
+    {
+      "family": "lagged",
+      "scenario_id": 52,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -2.572649649003381,
+      "two_minus_one_evap_kg_m2": -1.0649433566163022
+    },
+    {
+      "family": "stiff",
+      "scenario_id": 53,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "missing_q",
+      "scenario_id": 54,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "unit",
+      "scenario_id": 55,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "time",
+      "scenario_id": 56,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "iteration_limit",
+      "scenario_id": 57,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "synthetic_as_observed",
+      "scenario_id": 58,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "global_to_local",
+      "scenario_id": 59,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "nominal",
+      "scenario_id": 60,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -4.828454552213259,
+      "two_minus_one_evap_kg_m2": -0.8912309968654362
+    },
+    {
+      "family": "heat_dry",
+      "scenario_id": 61,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.5964216381779011,
+      "two_minus_one_evap_kg_m2": -0.027717423479239556
+    },
+    {
+      "family": "rain_pulse",
+      "scenario_id": 62,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -3.5756428889042127,
+      "two_minus_one_evap_kg_m2": -2.4913915405258544
+    },
+    {
+      "family": "zero_wind",
+      "scenario_id": 63,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": 0.0,
+      "two_minus_one_evap_kg_m2": 0.0
+    },
+    {
+      "family": "lagged",
+      "scenario_id": 64,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.7759562074436417,
+      "two_minus_one_evap_kg_m2": -0.0591725570062831
+    },
+    {
+      "family": "stiff",
+      "scenario_id": 65,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "missing_q",
+      "scenario_id": 66,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "unit",
+      "scenario_id": 67,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "time",
+      "scenario_id": 68,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "iteration_limit",
+      "scenario_id": 69,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "synthetic_as_observed",
+      "scenario_id": 70,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "global_to_local",
+      "scenario_id": 71,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "nominal",
+      "scenario_id": 72,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -7.626151372973027,
+      "two_minus_one_evap_kg_m2": -1.0405347715321072
+    },
+    {
+      "family": "heat_dry",
+      "scenario_id": 73,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.5583203152967258,
+      "two_minus_one_evap_kg_m2": -0.014210207141489184
+    },
+    {
+      "family": "rain_pulse",
+      "scenario_id": 74,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.5169663546467405,
+      "two_minus_one_evap_kg_m2": -0.03297516509584189
+    },
+    {
+      "family": "zero_wind",
+      "scenario_id": 75,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": 0.0,
+      "two_minus_one_evap_kg_m2": 0.0
+    },
+    {
+      "family": "lagged",
+      "scenario_id": 76,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.8918952620522873,
+      "two_minus_one_evap_kg_m2": -0.4090064521320522
+    },
+    {
+      "family": "stiff",
+      "scenario_id": 77,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "missing_q",
+      "scenario_id": 78,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "unit",
+      "scenario_id": 79,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "time",
+      "scenario_id": 80,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "iteration_limit",
+      "scenario_id": 81,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "synthetic_as_observed",
+      "scenario_id": 82,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "global_to_local",
+      "scenario_id": 83,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "nominal",
+      "scenario_id": 84,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.08484151020172703,
+      "two_minus_one_evap_kg_m2": -9.38470390442897e-06
+    },
+    {
+      "family": "heat_dry",
+      "scenario_id": 85,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.8337580420246127,
+      "two_minus_one_evap_kg_m2": -0.015583263415332893
+    },
+    {
+      "family": "rain_pulse",
+      "scenario_id": 86,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.48864030125184854,
+      "two_minus_one_evap_kg_m2": -0.04489723426617587
+    },
+    {
+      "family": "zero_wind",
+      "scenario_id": 87,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": 0.0,
+      "two_minus_one_evap_kg_m2": 0.0
+    },
+    {
+      "family": "lagged",
+      "scenario_id": 88,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -2.523634392278211,
+      "two_minus_one_evap_kg_m2": -0.17721568012445021
+    },
+    {
+      "family": "stiff",
+      "scenario_id": 89,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "missing_q",
+      "scenario_id": 90,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "unit",
+      "scenario_id": 91,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "time",
+      "scenario_id": 92,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "iteration_limit",
+      "scenario_id": 93,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "synthetic_as_observed",
+      "scenario_id": 94,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "global_to_local",
+      "scenario_id": 95,
+      "statuses": {
+        "independent": "REJECTED",
+        "one_way": "REJECTED",
+        "two_way": "REJECTED"
+      }
+    },
+    {
+      "family": "nominal",
+      "scenario_id": 96,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -1.3482103627095512,
+      "two_minus_one_evap_kg_m2": -0.2714784342097235
+    },
+    {
+      "family": "heat_dry",
+      "scenario_id": 97,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -0.2958798547811057,
+      "two_minus_one_evap_kg_m2": -0.004059981661521439
+    },
+    {
+      "family": "rain_pulse",
+      "scenario_id": 98,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": -1.579720098332814,
+      "two_minus_one_evap_kg_m2": -1.754131877234395
+    },
+    {
+      "family": "zero_wind",
+      "scenario_id": 99,
+      "statuses": {
+        "independent": "COMPLETED",
+        "one_way": "COMPLETED",
+        "two_way": "COMPLETED"
+      },
+      "two_minus_independent_ts_K": 0.0,
+      "two_minus_one_evap_kg_m2": 0.0
+    }
+  ],
+  "pre_run_protocol_sha256": "f851b2f130f05ab3c18bcccf2cd922296aea057337116e233d6504243fcf3f8a",
+  "requested": 300,
+  "requested_input_correlation": -0.6,
+  "runs_sha256": "3a1b6a46275eaff1b22e79582a90ecdc4836905e3a382aeddf459b1f12b24d0b",
+  "scenario_count": 100,
+  "scientific_admission": "PENDING",
+  "seconds_per_run": 0.007975005666958168,
+  "seed": 20261110,
+  "source_hashes": {
+    "cczps_lite/integration/earth_system_coupling/__init__.py": "8e17f79bd9341773a24fc61a1f95e70e89f422564c23cc6e105cbf0433641e78",
+    "cczps_lite/integration/earth_system_coupling/__main__.py": "e91a6724f915a3a6d4a80c0ba0fae5fa0283ea58c2e10dc596ee4b3ee72870bd",
+    "cczps_lite/integration/earth_system_coupling/diagnostics.py": "9aec81df81647e8fbee319b43d700c5eb0552f023306701270f08c435d4bac97",
+    "cczps_lite/integration/earth_system_coupling/experiments.py": "fcfa60dd032a81ffd232a549f2ba9d950efaa27b1ae61629f0f329881262f6a5",
+    "cczps_lite/integration/earth_system_coupling/models.py": "eeb5afd5b7bffd251bbb9cb5f5babb1cc68a295d44b42a424832b1db8a5f4adb",
+    "cczps_lite/integration/earth_system_coupling/state.py": "6b8b3945dad2ada69293b01ef359c25b6a722fbcc2446ffab5e415c822f9b71c"
+  },
+  "started_utc": "2026-11-10T10:39:31.483800+00:00",
+  "strategy_counts": {
+    "independent": {
+      "COMPLETED": 60,
+      "DIFFUSION_CFL": 8,
+      "SPATIAL_MISMATCH": 8,
+      "SYNTHETIC_AS_OBSERVATION": 8,
+      "TIME_MISMATCH": 8,
+      "UNIT_MISMATCH": 8,
+      "threshold_exceeded": 11
+    },
+    "one_way": {
+      "COMPLETED": 52,
+      "DIFFUSION_CFL": 8,
+      "MISSING_DEPENDENCY": 8,
+      "SPATIAL_MISMATCH": 8,
+      "SYNTHETIC_AS_OBSERVATION": 8,
+      "TIME_MISMATCH": 8,
+      "UNIT_MISMATCH": 8,
+      "threshold_exceeded": 11
+    },
+    "two_way": {
+      "COMPLETED": 44,
+      "DIFFUSION_CFL": 8,
+      "MISSING_DEPENDENCY": 8,
+      "NON_CONVERGENCE": 8,
+      "SPATIAL_MISMATCH": 8,
+      "SYNTHETIC_AS_OBSERVATION": 8,
+      "TIME_MISMATCH": 8,
+      "UNIT_MISMATCH": 8,
+      "threshold_exceeded": 11
+    }
+  },
+  "unique_config_strategy_hashes": 300
+}

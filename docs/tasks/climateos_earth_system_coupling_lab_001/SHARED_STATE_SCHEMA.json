@@ -1,0 +1,157 @@
+{
+  "$comment": "Python enforces units/shape/PSD/support/hash format. Neither this schema nor source prefixes authenticate scientific evidence.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "fields": {
+      "additionalProperties": {
+        "additionalProperties": false,
+        "properties": {
+          "covariance": {
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "dimensions": {
+            "type": "array"
+          },
+          "evidence_level": {
+            "type": "string"
+          },
+          "extensive": {
+            "type": "boolean"
+          },
+          "grid": {
+            "type": "object"
+          },
+          "id": {
+            "type": "string"
+          },
+          "identity": {
+            "type": "string"
+          },
+          "input_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "OBSERVED_STATE",
+              "CONSTRAINED_ESTIMATE",
+              "SIMULATED_STATE",
+              "HYPOTHESIS_SCENARIO"
+            ]
+          },
+          "license": {
+            "type": "string"
+          },
+          "lineage": {
+            "type": "array"
+          },
+          "medium": {
+            "type": "string"
+          },
+          "method_version": {
+            "type": "string"
+          },
+          "qc": {
+            "type": "string"
+          },
+          "reference_conditions": {
+            "type": "string"
+          },
+          "semantic_name": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_version": {
+            "type": "string"
+          },
+          "standard_name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "temporal_kind": {
+            "type": "string"
+          },
+          "time": {
+            "type": "object"
+          },
+          "uncertainty": {
+            "type": "array"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "covariance",
+          "dimensions",
+          "evidence_level",
+          "extensive",
+          "grid",
+          "id",
+          "identity",
+          "input_sha256",
+          "kind",
+          "license",
+          "lineage",
+          "medium",
+          "method_version",
+          "qc",
+          "reference_conditions",
+          "semantic_name",
+          "source_id",
+          "source_version",
+          "standard_name",
+          "temporal_kind",
+          "time",
+          "uncertainty",
+          "unit",
+          "values"
+        ],
+        "type": "object"
+      },
+      "propertyNames": {
+        "enum": [
+          "ta",
+          "ts",
+          "pressure",
+          "u",
+          "v",
+          "q",
+          "rain",
+          "rain_amount",
+          "rn",
+          "water",
+          "evap",
+          "runoff",
+          "ch4",
+          "n2o",
+          "erf",
+          "roni",
+          "enso_phase"
+        ]
+      },
+      "type": "object"
+    },
+    "revision": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "revision",
+    "fields"
+  ],
+  "title": "ClimateOS state metadata structural subset; scientific gates are Python validators",
+  "type": "object"
+}

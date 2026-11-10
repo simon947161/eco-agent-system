@@ -1,0 +1,197 @@
+{
+  "atmospheric_exchange_and_column": {
+    "checkpoint_reset_available": true,
+    "grid": "local_2",
+    "interface": {
+      "clock": "2 fast substeps per land interval",
+      "current_time": 900.0,
+      "evidence": {
+        "model_version": "earth-coupling/1",
+        "scope": "synthetic local slab; no forecasting",
+        "status": "ASSUMED_NOT_VALIDATED"
+      },
+      "interface": "ModelPort.initialize/state; step(dt); proposals committed by coupler",
+      "name": "atmospheric_exchange_and_column",
+      "provided_fields": [
+        "ta",
+        "q",
+        "evap"
+      ],
+      "required_fields": [
+        "ta",
+        "q",
+        "pressure",
+        "u",
+        "v",
+        "ts",
+        "water"
+      ],
+      "units": {
+        "evap": "kg m-2 s-1",
+        "pressure": "Pa",
+        "q": "kg kg-1",
+        "ta": "K",
+        "ts": "K",
+        "u": "m s-1",
+        "v": "m s-1",
+        "water": "kg m-2"
+      }
+    },
+    "output": {
+      "clock": 900.0,
+      "committed": false,
+      "proposal": {
+        "air_capacity": 115816.17527463082,
+        "air_mass": 115.35475624963229,
+        "boundary_heat": [
+          -264.5381982294179,
+          -126.34139332247591
+        ],
+        "q": [
+          0.009360702262634035,
+          0.009319757941251389
+        ],
+        "ta": [
+          302.14389964483746,
+          302.06872535516254
+        ],
+        "vented_water": [
+          0.0006604558981720618,
+          0.0005854857043164803
+        ]
+      }
+    }
+  },
+  "global_methane_erf": {
+    "checkpoint_reset_available": true,
+    "grid": "global",
+    "interface": {
+      "clock": "annual; independent global diagnostic",
+      "current_time": 31536000.0,
+      "evidence": {
+        "model_version": "PR147 published NOAA function",
+        "scope": "global annual CH4 ERF, not regional forcing",
+        "status": "OPEN_DATA_RECALCULATED"
+      },
+      "interface": "ModelPort.initialize/state; step(dt); proposals committed by coupler",
+      "name": "global_methane_erf",
+      "provided_fields": [
+        "erf"
+      ],
+      "required_fields": [
+        "ch4",
+        "n2o"
+      ],
+      "units": {
+        "ch4": "ppb_dry_global_mean",
+        "erf": "W m-2",
+        "n2o": "ppb_dry_global_mean"
+      }
+    },
+    "output": {
+      "ERF_W_m2": 0.569344413968403,
+      "dF_dM": 0.0003657674009602225,
+      "dF_dN": -4.962852025152416e-05
+    }
+  },
+  "seasonal_enso_context": {
+    "checkpoint_reset_available": true,
+    "grid": "RONI",
+    "interface": {
+      "clock": "seasonal; diagnostic only",
+      "current_time": 7862400.0,
+      "evidence": {
+        "causal_link": false,
+        "model_version": "PR147/149 frozen",
+        "status": "OBSERVATION_DERIVED_HISTORICAL_ASSOCIATION"
+      },
+      "interface": "ModelPort.initialize/state; step(dt); proposals committed by coupler",
+      "name": "seasonal_enso_context",
+      "provided_fields": [
+        "enso_phase"
+      ],
+      "required_fields": [
+        "roni"
+      ],
+      "units": {
+        "enso_phase": "1",
+        "roni": "K"
+      }
+    },
+    "output": {
+      "historical_association": {
+        "baseline_k": 25,
+        "baseline_n": 46,
+        "difference_nonphase": 0.35091277890466527,
+        "difference_unconditional": 0.22122762148337594,
+        "k": 13,
+        "n": 17,
+        "other_k": 12,
+        "other_n": 29,
+        "p": 0.7647058823529411,
+        "sample_warning": "DEPENDENT_SMALL_HISTORICAL_SAMPLE",
+        "wilson95": [
+          0.5273820188043501,
+          0.9044495567791988
+        ]
+      },
+      "local_numeric_forcing": null,
+      "phase": 0.0
+    }
+  },
+  "surface_water_and_energy": {
+    "checkpoint_reset_available": true,
+    "grid": "local_2",
+    "interface": {
+      "clock": "land interval",
+      "current_time": 900.0,
+      "evidence": {
+        "model_version": "earth-coupling/1",
+        "scope": "synthetic local slab; no forecasting",
+        "status": "ASSUMED_NOT_VALIDATED"
+      },
+      "interface": "ModelPort.initialize/state; step(dt); proposals committed by coupler",
+      "name": "surface_water_and_energy",
+      "provided_fields": [
+        "ts",
+        "water",
+        "runoff"
+      ],
+      "required_fields": [
+        "ts",
+        "water",
+        "rain",
+        "rn"
+      ],
+      "units": {
+        "rain": "kg m-2 s-1",
+        "rn": "W m-2",
+        "runoff": "kg m-2 s-1",
+        "ts": "K",
+        "water": "kg m-2"
+      }
+    },
+    "output": {
+      "clock": 900.0,
+      "committed": false,
+      "proposal": {
+        "diffusion": [
+          -1.4142135623731065,
+          1.4142135623731065
+        ],
+        "runoff": [
+          0.0,
+          0.0
+        ],
+        "ts": [
+          304.74522542032344,
+          303.34258461111176
+        ],
+        "water": [
+          49.97573082251699,
+          49.980528914923745
+        ]
+      }
+    }
+  }
+}
