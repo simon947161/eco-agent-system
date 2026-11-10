@@ -1,0 +1,1930 @@
+{
+  "baseline_sha": "cf91e4a061341bc33d16400bcf4c6a2c2817aa65",
+  "case_count": 8,
+  "deployed": false,
+  "legacy_execution_count": 0,
+  "public_execution_count": 48,
+  "results_only_sha256": "6b1deeb4be9f06bb07e174fb7a67d3d0dfc7a253b18fa3735ff50137f7ffe8e3",
+  "rows": [
+    {
+      "id": "C01",
+      "legacy": null,
+      "new": {
+        "independent": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "20cc5d201a567c3ed5d7d0bc457d96de713df5cf75260ac00f4993c4fc528b9d",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "e0e8ccde31d7b972bbf2c7b4c817a7ad0d2201ec08d1ac6391add253e77f8f93",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              307.06799031708374,
+              305.6840096829162
+            ],
+            "water": [
+              50.432000000000016,
+              50.432000000000016
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "304659ec8948e03dac55fe9e50a2ee23c8d2f98f10081806681c7c51f3ea1c35",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.6374119594693184e-08,
+          "max_water_residual_kg_m2": 6.800116025829084e-16,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "independent",
+          "trace": null
+        },
+        "one_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "58aa5b69f824797193affbce1f4ca86d7460a2e37ec420f9570262ed3b0644b8",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.9911906837943784,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "b5035324528eecbb1622fc4e12493ee1103308a5642392ade498343ea4bf4682",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              305.5556314344563,
+              304.39560424059414
+            ],
+            "water": [
+              49.38788557979836,
+              49.493733052612875
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "304659ec8948e03dac55fe9e50a2ee23c8d2f98f10081806681c7c51f3ea1c35",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.486072041094303e-08,
+          "max_water_residual_kg_m2": 3.3480163086352377e-15,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "one_way",
+          "trace": null
+        },
+        "two_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "472b46415393223a60279ac10ca813026d12f3e4c7fec5b6f35e018f9127f2e9",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.872522787981504,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "db7203e165810fd7ca64cf6577817ea53f239bbd97d19aafb7eec5728b25806d",
+          "final_values": {
+            "q": [
+              0.013099454756692353,
+              0.012698880510455424
+            ],
+            "ta": [
+              303.5047863743189,
+              302.96080880079194
+            ],
+            "ts": [
+              305.7744989673395,
+              304.5676666553527
+            ],
+            "water": [
+              49.51330316196316,
+              49.60565126207382
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "304659ec8948e03dac55fe9e50a2ee23c8d2f98f10081806681c7c51f3ea1c35",
+          "iterations": 576,
+          "max_energy_residual_j_m2": 5.7712895795702934e-08,
+          "max_water_residual_kg_m2": 3.5284275501368256e-15,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "two_way",
+          "trace": null
+        }
+      },
+      "new_seconds_first_execution": {
+        "independent": 0.048425700049847364,
+        "one_way": 0.00669840001501143,
+        "two_way": 0.015441000112332404
+      },
+      "paired_comparison": "NOT_EXECUTED",
+      "role": "REPRODUCTION",
+      "same_seed_repeat_exact": true,
+      "winner": "UNKNOWN"
+    },
+    {
+      "id": "C02",
+      "legacy": null,
+      "new": {
+        "independent": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 0.0
+          },
+          "config_hash": "d193ccd61ebd91487467597c54d0fc8a8b7ff33ae50e53a700bac8e15aec3508",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "7265fcba3be8ffa68777271d839833abc7a646f9ab0d48d3d526d8e6787e04b5",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              307.06799031708374,
+              305.6840096829162
+            ],
+            "water": [
+              50.432000000000016,
+              50.432000000000016
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "878a7fa68e1dfe51a4cf990057bea65827b77818b068b3875436b52dc4207dd4",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.6374119594693184e-08,
+          "max_water_residual_kg_m2": 6.800116025829084e-16,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "independent",
+          "trace": null
+        },
+        "one_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 0.0
+          },
+          "config_hash": "22044f0cde11f6001fe3ea3d0898f91bb1b977a8ad9898155de3cca05e1e38fb",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "414ddac0937dce369db866f54746d0be53bb40951e23795b47c33dfda87660bb",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              307.06799031708374,
+              305.6840096829162
+            ],
+            "water": [
+              50.432000000000016,
+              50.432000000000016
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "878a7fa68e1dfe51a4cf990057bea65827b77818b068b3875436b52dc4207dd4",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.6374119594693184e-08,
+          "max_water_residual_kg_m2": 6.800116025829084e-16,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "one_way",
+          "trace": null
+        },
+        "two_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 0.0
+          },
+          "config_hash": "193e58159f37a2d8cd39622c2caf19bd41c56f0d27fa19874c0ee632053cfcf7",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "bb0341e2d944e0e8f34a3c6a5ccc46c7d988641ade1b043dd7589fc3d902c23d",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              307.06799031708374,
+              305.6840096829162
+            ],
+            "water": [
+              50.432000000000016,
+              50.432000000000016
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "878a7fa68e1dfe51a4cf990057bea65827b77818b068b3875436b52dc4207dd4",
+          "iterations": 600,
+          "max_energy_residual_j_m2": 5.6374119594693184e-08,
+          "max_water_residual_kg_m2": 6.800116025829084e-16,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "two_way",
+          "trace": null
+        }
+      },
+      "new_seconds_first_execution": {
+        "independent": 0.006453100009821355,
+        "one_way": 0.0071270999033004045,
+        "two_way": 0.014961900073103607
+      },
+      "paired_comparison": "NOT_EXECUTED",
+      "role": "ANALYTIC_LIMIT",
+      "same_seed_repeat_exact": true,
+      "winner": "UNKNOWN"
+    },
+    {
+      "id": "C03",
+      "legacy": null,
+      "new": {
+        "independent": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.0,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 0.0,
+            "rain_kg_m2_s": 0.0,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "7353b2e521095c3acb1ef2166e1bb07dea491a7a1bc664584f9f91286268f851",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "8aa1a8ed3f95f71b5016f9c7ff0899f46761e64c79e9af7284c67c5d7577fb5c",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "79ee7f440e57f5c9539a136e198266e5e13dd4ded595a231a80a6cbe249f883e",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "independent",
+          "trace": null
+        },
+        "one_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.0,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 0.0,
+            "rain_kg_m2_s": 0.0,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "9b2aaf8ba9e058add97eee560992c2a27f5f19cf6183c54f9840f2b61eed6174",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.9010921536149586,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "f786726931b9f7c464d32414518f1ce5eca08741640ad4baa8e3c4b5f3f13b61",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              303.3871331439601,
+              302.1947977403359
+            ],
+            "water": [
+              49.04828076399152,
+              49.14953492877857
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "79ee7f440e57f5c9539a136e198266e5e13dd4ded595a231a80a6cbe249f883e",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.672336556017399e-08,
+          "max_water_residual_kg_m2": 3.5318969970887792e-15,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "one_way",
+          "trace": null
+        },
+        "two_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.0,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 0.0,
+            "rain_kg_m2_s": 0.0,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "6c8a777ec58877dfd6be53ba6273fa2dfa917c5cb17960b0e973f6f3c9ca4e5f",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.7854136355723425,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "b4e61275ca8e1fb066551805676990b551b4a508ca7e97069df7c4d7d4dee91c",
+          "final_values": {
+            "q": [
+              0.012609431925130102,
+              0.012232208329291453
+            ],
+            "ta": [
+              302.80861302058554,
+              302.25312843551774
+            ],
+            "ts": [
+              303.5865101950367,
+              302.34716152785296
+            ],
+            "water": [
+              49.17058969686322,
+              49.258583031992096
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "79ee7f440e57f5c9539a136e198266e5e13dd4ded595a231a80a6cbe249f883e",
+          "iterations": 552,
+          "max_energy_residual_j_m2": 5.848778528161347e-08,
+          "max_water_residual_kg_m2": 3.608224830031759e-15,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "two_way",
+          "trace": null
+        }
+      },
+      "new_seconds_first_execution": {
+        "independent": 0.006253400002606213,
+        "one_way": 0.006435899995267391,
+        "two_way": 0.014254499925300479
+      },
+      "paired_comparison": "NOT_EXECUTED",
+      "role": "BOUNDARY_ACCOUNTING",
+      "same_seed_repeat_exact": true,
+      "winner": "UNKNOWN"
+    },
+    {
+      "id": "C04",
+      "legacy": null,
+      "new": {
+        "independent": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": "missing_q",
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "25b84b5807bc25b5c642882eb069dac08d9b2f36070d4a08532187784a3e9f97",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "2ea95a3db51a915be0bf956b26e30a53b8e3ea9e2e88217a56c3650ddf3465cc",
+          "final_values": {
+            "q": [
+              null,
+              null
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              307.06799031708374,
+              305.6840096829162
+            ],
+            "water": [
+              50.432000000000016,
+              50.432000000000016
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "f3ba4d01c11b2dce6a6b4c827f8306ad102b1fbe1544fe674b26b9b7458f77f8",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.6374119594693184e-08,
+          "max_water_residual_kg_m2": 6.800116025829084e-16,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "independent",
+          "trace": null
+        },
+        "one_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 0,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": "missing_q",
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "63ccb40d8d9a7df49d663b8d0658090dc736dcce21497f4f08960fef8310fbfa",
+          "decision_memory_flag": null,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": {
+            "code": "MISSING_DEPENDENCY",
+            "detail": "q",
+            "rolled_back_failed_step": true,
+            "stage": "STEP"
+          },
+          "final_shared_state": null,
+          "final_state_hash": "f3ba4d01c11b2dce6a6b4c827f8306ad102b1fbe1544fe674b26b9b7458f77f8",
+          "final_values": {
+            "q": [
+              null,
+              null
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": null,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "f3ba4d01c11b2dce6a6b4c827f8306ad102b1fbe1544fe674b26b9b7458f77f8",
+          "iterations": 0,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "REJECTED",
+          "strategy": "one_way",
+          "trace": null
+        },
+        "two_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 0,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": "missing_q",
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "d373969990a0f20e7235ad33ea837be32dab9cee7b860ffbe67440048f3f3637",
+          "decision_memory_flag": null,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": {
+            "code": "MISSING_DEPENDENCY",
+            "detail": "q",
+            "rolled_back_failed_step": true,
+            "stage": "STEP"
+          },
+          "final_shared_state": null,
+          "final_state_hash": "f3ba4d01c11b2dce6a6b4c827f8306ad102b1fbe1544fe674b26b9b7458f77f8",
+          "final_values": {
+            "q": [
+              null,
+              null
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": null,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "f3ba4d01c11b2dce6a6b4c827f8306ad102b1fbe1544fe674b26b9b7458f77f8",
+          "iterations": 0,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "REJECTED",
+          "strategy": "two_way",
+          "trace": null
+        }
+      },
+      "new_seconds_first_execution": {
+        "independent": 0.006571899983100593,
+        "one_way": 0.0008211999665945768,
+        "two_way": 0.0008620000444352627
+      },
+      "paired_comparison": "NOT_EXECUTED",
+      "role": "SPARSE_DEPENDENCY",
+      "same_seed_repeat_exact": true,
+      "winner": "UNKNOWN"
+    },
+    {
+      "id": "C05",
+      "legacy": null,
+      "new": {
+        "independent": {
+          "causal_real_world_validation": false,
+          "completed_steps": 0,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": "time",
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "326fd0e96c47fb0910047774e964328470fc840bb30dc65d45933f34595fefd2",
+          "decision_memory_flag": null,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": {
+            "code": "TIME_MISMATCH",
+            "detail": "rain",
+            "rolled_back_failed_step": true,
+            "stage": "STEP"
+          },
+          "final_shared_state": null,
+          "final_state_hash": "c494f51a4e238d7abde067db58374560081d9fdfeac484fbb36c53709950fba9",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": null,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "c494f51a4e238d7abde067db58374560081d9fdfeac484fbb36c53709950fba9",
+          "iterations": 0,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "REJECTED",
+          "strategy": "independent",
+          "trace": null
+        },
+        "one_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 0,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": "time",
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "0435b91887db547e55ca8824ac56ec1c062224bc4e859e6a29142c7e8bb00ea9",
+          "decision_memory_flag": null,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": {
+            "code": "TIME_MISMATCH",
+            "detail": "rain",
+            "rolled_back_failed_step": true,
+            "stage": "STEP"
+          },
+          "final_shared_state": null,
+          "final_state_hash": "c494f51a4e238d7abde067db58374560081d9fdfeac484fbb36c53709950fba9",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": null,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "c494f51a4e238d7abde067db58374560081d9fdfeac484fbb36c53709950fba9",
+          "iterations": 0,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "REJECTED",
+          "strategy": "one_way",
+          "trace": null
+        },
+        "two_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 0,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": "time",
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "65664294c04f72cfccffc1333473f601df7bb51e301737777f5fda3d4bfe610e",
+          "decision_memory_flag": null,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": {
+            "code": "TIME_MISMATCH",
+            "detail": "rain",
+            "rolled_back_failed_step": true,
+            "stage": "STEP"
+          },
+          "final_shared_state": null,
+          "final_state_hash": "c494f51a4e238d7abde067db58374560081d9fdfeac484fbb36c53709950fba9",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": null,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "c494f51a4e238d7abde067db58374560081d9fdfeac484fbb36c53709950fba9",
+          "iterations": 0,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "REJECTED",
+          "strategy": "two_way",
+          "trace": null
+        }
+      },
+      "new_seconds_first_execution": {
+        "independent": 0.0008618999272584915,
+        "one_way": 0.0008186000632122159,
+        "two_way": 0.0007859999313950539
+      },
+      "paired_comparison": "NOT_EXECUTED",
+      "role": "TEMPORAL_SUPPORT",
+      "same_seed_repeat_exact": true,
+      "winner": "UNKNOWN"
+    },
+    {
+      "id": "C06",
+      "legacy": null,
+      "new": {
+        "independent": {
+          "causal_real_world_validation": false,
+          "completed_steps": 0,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": "global_to_local",
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "d506cf6f2a272ca6883295c2744330bfee16a55ec64ea60c56595fa09bab128b",
+          "decision_memory_flag": null,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": {
+            "code": "SPATIAL_MISMATCH",
+            "detail": "rn",
+            "rolled_back_failed_step": true,
+            "stage": "STEP"
+          },
+          "final_shared_state": null,
+          "final_state_hash": "72af486a61fe660dcccb014f5bb0ab1d86239938775360b4f2f5ca1cb9bbffc0",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": null,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "72af486a61fe660dcccb014f5bb0ab1d86239938775360b4f2f5ca1cb9bbffc0",
+          "iterations": 0,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "REJECTED",
+          "strategy": "independent",
+          "trace": null
+        },
+        "one_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 0,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": "global_to_local",
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "43729a920f150c80a12091f473300a53db085d50566ac1afd7caca2a95579816",
+          "decision_memory_flag": null,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": {
+            "code": "SPATIAL_MISMATCH",
+            "detail": "rn",
+            "rolled_back_failed_step": true,
+            "stage": "STEP"
+          },
+          "final_shared_state": null,
+          "final_state_hash": "72af486a61fe660dcccb014f5bb0ab1d86239938775360b4f2f5ca1cb9bbffc0",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": null,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "72af486a61fe660dcccb014f5bb0ab1d86239938775360b4f2f5ca1cb9bbffc0",
+          "iterations": 0,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "REJECTED",
+          "strategy": "one_way",
+          "trace": null
+        },
+        "two_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 0,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": "global_to_local",
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "677a7ac67da16b000be7cbd095542dff1597125579be55186a4512075db92ad2",
+          "decision_memory_flag": null,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": {
+            "code": "SPATIAL_MISMATCH",
+            "detail": "rn",
+            "rolled_back_failed_step": true,
+            "stage": "STEP"
+          },
+          "final_shared_state": null,
+          "final_state_hash": "72af486a61fe660dcccb014f5bb0ab1d86239938775360b4f2f5ca1cb9bbffc0",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": null,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "72af486a61fe660dcccb014f5bb0ab1d86239938775360b4f2f5ca1cb9bbffc0",
+          "iterations": 0,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "REJECTED",
+          "strategy": "two_way",
+          "trace": null
+        }
+      },
+      "new_seconds_first_execution": {
+        "independent": 0.0008169000502675772,
+        "one_way": 0.0012559000169858336,
+        "two_way": 0.000824799994006753
+      },
+      "paired_comparison": "NOT_EXECUTED",
+      "role": "SPATIAL_SUPPORT",
+      "same_seed_repeat_exact": true,
+      "winner": "UNKNOWN"
+    },
+    {
+      "id": "C07",
+      "legacy": null,
+      "new": {
+        "independent": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 0.003,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 149.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "f0aacaa35f692d2e0d4ab488568526beb40aa02e1d961e199c281fac8386ab9a",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "f28e8a0bcf285aafe13bb7dadf9ff339fb46c4369c3e601154ca4bb5e7e83250",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              307.06799031708374,
+              305.6840096829162
+            ],
+            "water": [
+              150.0,
+              150.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "594b663a0a3b6e42a11deda16aa64c99e6c3ad02a5e47c2b86af4ae5aad8a3bf",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.6374119594693184e-08,
+          "max_water_residual_kg_m2": 1.1546319456101628e-14,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 63.79999999999973,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "independent",
+          "trace": null
+        },
+        "one_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 0.003,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 149.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "c33419f77d52b4870e03e88f89df6220eb9e642dafad494d17fe59648c71da4f",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 2.7364003038576645,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "4132c2c0031b9814f7f80e20f6a1116f5a0b2bdae2c26f2242901cd1268d8423",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              303.3937659539724,
+              302.43681582458265
+            ],
+            "water": [
+              150.0,
+              150.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "594b663a0a3b6e42a11deda16aa64c99e6c3ad02a5e47c2b86af4ae5aad8a3bf",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.681067705154419e-08,
+          "max_water_residual_kg_m2": 1.444157293750692e-14,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 61.06359969614232,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "one_way",
+          "trace": null
+        },
+        "two_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 60,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 0.003,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 149.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "8ad98f917af0eacdec0a22c5651cabb8dca6467731a2ec01f9bf45ec1cf5667c",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 1.9364101029990937,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "93bd738ddb8b61c509e95c13e5cd17d2ab908f0425e4723fe393d839d1faabbe",
+          "final_values": {
+            "q": [
+              0.017625416407108466,
+              0.016819427835087945
+            ],
+            "ta": [
+              303.05426123599557,
+              302.55323828184765
+            ],
+            "ts": [
+              304.4507710374219,
+              303.36765823389
+            ],
+            "water": [
+              150.0,
+              150.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "594b663a0a3b6e42a11deda16aa64c99e6c3ad02a5e47c2b86af4ae5aad8a3bf",
+          "iterations": 556,
+          "max_energy_residual_j_m2": 5.598849384114146e-08,
+          "max_water_residual_kg_m2": 1.4137996329210978e-14,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 61.86358989700092,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "two_way",
+          "trace": null
+        }
+      },
+      "new_seconds_first_execution": {
+        "independent": 0.006644299952313304,
+        "one_way": 0.0065518999472260475,
+        "two_way": 0.013335800031200051
+      },
+      "paired_comparison": "NOT_EXECUTED",
+      "role": "EXTREME_BOUNDARY",
+      "same_seed_repeat_exact": true,
+      "winner": "UNKNOWN"
+    },
+    {
+      "id": "C08",
+      "legacy": null,
+      "new": {
+        "independent": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 1,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "3e03ccbdeb76ff851a40fb230c6c29be98db3a4c32c709db2ce25800cbe34d6e",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "c72209149d39a30d77269b7364fa9915b6db2999fc3ee0357aa939229bb4e29c",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              307.06799031708374,
+              305.6840096829162
+            ],
+            "water": [
+              50.432000000000016,
+              50.432000000000016
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "977e03a374e1032a0e718e77ad7715694096593cb76f3c0dc7a396a07a2503e1",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.6374119594693184e-08,
+          "max_water_residual_kg_m2": 6.800116025829084e-16,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "independent",
+          "trace": null
+        },
+        "one_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 24,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 1,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "e02e88bde15013f8768ea75d69b38f681f7cab77b8eade2101c2db3d10fd67cb",
+          "decision_memory_flag": false,
+          "evaporation_kg_m2": 0.9911906837943784,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": null,
+          "final_shared_state": null,
+          "final_state_hash": "506ecf893e4ebde59326546485569a117bee79c074b598d0956277f752b759f0",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              305.5556314344563,
+              304.39560424059414
+            ],
+            "water": [
+              49.38788557979836,
+              49.493733052612875
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": false,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "977e03a374e1032a0e718e77ad7715694096593cb76f3c0dc7a396a07a2503e1",
+          "iterations": 24,
+          "max_energy_residual_j_m2": 5.486072041094303e-08,
+          "max_water_residual_kg_m2": 3.3480163086352377e-15,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "COMPLETED",
+          "strategy": "one_way",
+          "trace": null
+        },
+        "two_way": {
+          "causal_real_world_validation": false,
+          "completed_steps": 0,
+          "components": null,
+          "config": {
+            "capacity_kg_m2": 150.0,
+            "diffusivity_m2_s": 0.5,
+            "dt_s": 900.0,
+            "fault": null,
+            "grid_n": 2,
+            "lag_steps": 0,
+            "length_m": 2000.0,
+            "max_iterations": 1,
+            "mixing_height_m": 100.0,
+            "pressure_pa": 100000.0,
+            "q_kgkg": 0.009,
+            "radiation_w_m2": 220.0,
+            "rain_kg_m2_s": 2e-05,
+            "relaxation": 0.5,
+            "relaxation_time_s": 14400.0,
+            "steps": 24,
+            "surface_heat_capacity": 2000000.0,
+            "ta_k": 302.0,
+            "tolerance": 1e-08,
+            "transfer_coefficient": 0.002,
+            "ts_offset_k": 2.0,
+            "water_kg_m2": 50.0,
+            "wind_m_s": 3.0
+          },
+          "config_hash": "88ed739f137e32365d41a30bef1b778c94b87b89b5355cf1e8874c07a186a485",
+          "decision_memory_flag": null,
+          "evaporation_kg_m2": 0.0,
+          "evidence_class": "SYNTHETIC_MODEL_EXPERIMENT",
+          "failure": {
+            "code": "NON_CONVERGENCE",
+            "detail": "iterations=1, normalized_error=0.14389964483746098",
+            "rolled_back_failed_step": true,
+            "stage": "STEP"
+          },
+          "final_shared_state": null,
+          "final_state_hash": "977e03a374e1032a0e718e77ad7715694096593cb76f3c0dc7a396a07a2503e1",
+          "final_values": {
+            "q": [
+              0.009,
+              0.009
+            ],
+            "ta": [
+              302.0,
+              302.0
+            ],
+            "ts": [
+              304.70710678118655,
+              303.29289321881345
+            ],
+            "water": [
+              50.0,
+              50.0
+            ]
+          },
+          "forecast_skill": null,
+          "hot_dry_exceeded": null,
+          "independent_slow_context": {
+            "ERF": 0.569344413968403,
+            "status": "AVAILABLE_INDEPENDENTLY"
+          },
+          "initial_state_hash": "977e03a374e1032a0e718e77ad7715694096593cb76f3c0dc7a396a07a2503e1",
+          "iterations": 0,
+          "max_energy_residual_j_m2": 0.0,
+          "max_water_residual_kg_m2": 0.0,
+          "model_version": "earth-coupling/1",
+          "parameters_status": "ASSUMED_NOT_VALIDATED",
+          "requested_steps": 24,
+          "runoff_kg_m2": 0.0,
+          "scientific_admission": "PENDING",
+          "status": "REJECTED",
+          "strategy": "two_way",
+          "trace": null
+        }
+      },
+      "new_seconds_first_execution": {
+        "independent": 0.006247199955396354,
+        "one_way": 0.0064035000978037715,
+        "two_way": 0.000879199942573905
+      },
+      "paired_comparison": "NOT_EXECUTED",
+      "role": "NONCONVERGENCE",
+      "same_seed_repeat_exact": true,
+      "winner": "UNKNOWN"
+    }
+  ],
+  "science": "PENDING",
+  "scope": "public new-model controls; NOT eight completed old-versus-new experiments",
+  "total_seconds": 0.31713580002542585
+}
