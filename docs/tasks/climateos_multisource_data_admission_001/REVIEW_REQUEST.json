@@ -1,11 +1,32 @@
 {
+  "D_CI": "See final exact-D PR149 receipt after metadata commit; do not substitute R CI",
   "do_not": [
     "merge",
     "deploy",
     "certify",
     "expand_data",
-    "change_legacy_gates"
+    "change_legacy_gates",
+    "run_next_experiment"
   ],
+  "entrypoints": [
+    "FOUNDER_REPORT_ZH.md",
+    "ACCESS_AND_LICENCE_MATRIX.md",
+    "ADMISSION_REPORT.md",
+    "PROBABILITY_RESULTS.md",
+    "UNCERTAINTY_AND_COUNTEREXAMPLES.md",
+    "evidence/independent-exact-audit.json",
+    "evidence/validation.json",
+    "NEXT_SESSION.md"
+  ],
+  "expected_response": {
+    "decision": "ACCEPT_WITH_CONDITIONS / CHANGES_REQUESTED / REJECT",
+    "findings": "severity, paths, evidence, minimal correction",
+    "fixed_D": "required exact SHA",
+    "founder_decision": "separate from reviewer suggestion",
+    "independently_executed": "list actual independent steps; do not imply all author checks rerun"
+  },
+  "parent_D": "da4d7f21c5fcac920e49f34ac1f0ebf6ef1218f9",
+  "pr": 149,
   "questions": [
     "CC0 product record versus catalogue anomalies",
     "Missingness and blank M limit target population",
@@ -13,8 +34,9 @@
     "No independent replication across two SON modes; IOD/SAM uncontrolled",
     "Bounded return to physical process chain; no automatic next experiment"
   ],
-  "research_R": null,
+  "research_R": "648bacbc3ebb66d4d2f7e8d714fffa8e63032e1c",
+  "review_target": "Final metadata D resolving to PR149 exact head; preserve R evidence manifest",
   "science": "PENDING",
-  "status": "PREPARED_FOR_CHATGPT_READ_ONLY_REVIEW",
+  "status": "REQUESTED_PENDING_INDEPENDENT_CHATGPT_REVIEW",
   "task_id": "CLIMATEOS-MULTISOURCE-DATA-ADMISSION-001"
 }
