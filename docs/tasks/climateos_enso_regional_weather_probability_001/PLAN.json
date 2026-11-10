@@ -1,0 +1,21 @@
+{
+  "version": "enso-regional-weather/1",
+  "baseline_head": "48d0f576e651cd5072e6319ea1539ffa5ba02936",
+  "roni_sha256": "1297887f581b6190e459cbbf8bdec9a703ff65c1a229e2de4dd94285254f35c8",
+  "years": [1961, 2020], "baseline_years": [1961, 1990],
+  "seasons": {"JJA": [6,7,8], "SON": [9,10,11]},
+  "modes": [["JJA","JJA"],["SON","SON"],["JJA","SON"]],
+  "regions": [
+    {"id":"NSW_WAGGA_PANEL","centre":[-35.12,147.37],"box":[-36,-34,146,149]},
+    {"id":"QLD_ROCKHAMPTON_PANEL","centre":[-23.38,150.51],"box":[-24.5,-22.5,149.5,151.5]},
+    {"id":"WA_PERTH_PANEL","centre":[-31.95,115.86],"box":[-33,-31,115,117]}
+  ],
+  "radius_km":75, "stations_per_region":3,
+  "minimum_baseline_seasons":24, "minimum_analysis_seasons":40,
+  "rain_unit":"mm", "spatial_support":"fixed_equal_weight_station_panel",
+  "temporal_support":"calendar_month_not_UTC_instant",
+  "index_version":"RONI_ERSSTv6_1991-2020_PR147",
+  "bootstrap":{"blocks":[3,5],"replicates":2000,"seed":147148,"minimum_valid":1800},
+  "confounders":["DMI_HadISST1.1","CPC_AAO"],
+  "hot":"NOT_ASSESSED", "scientific_admission":"PENDING"
+}

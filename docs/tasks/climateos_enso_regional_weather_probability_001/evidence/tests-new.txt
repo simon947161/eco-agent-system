@@ -1,0 +1,40 @@
+COMMAND: python -X utf8 -m unittest tests.test_enso_regional_weather -v
+test_all_months_required (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_all_months_required) ... ok
+test_blank_flag_does_not_prove_daily_complete (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_blank_flag_does_not_prove_daily_complete) ... ok
+test_causal_claim_rejected (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_causal_claim_rejected) ... ok
+test_certification_rejected (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_certification_rejected) ... ok
+test_fips_country_regression (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_fips_country_regression) ... ok
+test_fixed_failure_has_no_probabilities (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_fixed_failure_has_no_probabilities) ... ok
+test_fixed_weights_no_available_case_reweight (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_fixed_weights_no_available_case_reweight) ... ok
+test_missing_days_excludes (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_missing_days_excludes) ... ok
+test_missing_ecoengine_is_low (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_missing_ecoengine_is_low) ... ok
+test_missing_event_stays_null (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_missing_event_stays_null) ... ok
+test_missing_sentinel_not_zero (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_missing_sentinel_not_zero) ... ok
+test_missing_zero_imputation_rejected (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_missing_zero_imputation_rejected) ... ok
+test_month_alignment (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_month_alignment) ... ok
+test_nan_rejected (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_nan_rejected) ... ok
+test_no_fallback_to_index_persistence (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_no_fallback_to_index_persistence) ... ok
+test_no_temperature_inference (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_no_temperature_inference) ... ok
+test_plan_was_frozen (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_plan_was_frozen) ... ok
+test_policy_score_not_physics (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_policy_score_not_physics) ... ok
+test_qc_flag_excludes (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_qc_flag_excludes) ... ok
+test_repeat_is_deterministic (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_repeat_is_deterministic) ... ok
+test_science_gates (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_science_gates) ... ok
+test_selected_before_rain_attempt (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_selected_before_rain_attempt) ... ok
+test_station_support_rejected (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_station_support_rejected) ... ok
+test_tie_is_neither (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_tie_is_neither) ... ok
+test_trace_not_zero (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_trace_not_zero) ... ok
+test_true_zero_allowed (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_true_zero_allowed) ... ok
+test_unknown_flags_reject (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_unknown_flags_reject) ... ok
+test_unknown_territory_not_state_average (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_unknown_territory_not_state_average) ... ok
+test_utc_instant_rejected (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_utc_instant_rejected) ... ok
+test_wrong_index_version (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_wrong_index_version) ... ok
+test_wrong_rain_unit (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_wrong_rain_unit) ... ok
+test_wrong_season (tests.test_enso_regional_weather.ENSORegionalWeatherTests.test_wrong_season) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.348s
+
+OK
+
+EXIT_CODE: 0
