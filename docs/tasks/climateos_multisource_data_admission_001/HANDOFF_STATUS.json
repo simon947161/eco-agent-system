@@ -1,0 +1,125 @@
+{
+  "bounded_science_goal": "REAL_HISTORICAL_DESCRIPTIVE_PAIRING_COMPLETED_NOT_SCIENTIFIC_ADMISSION",
+  "budget": {
+    "downloaded_bytes": 420750,
+    "downloaded_files": 3,
+    "downloaded_products": 1,
+    "platforms": 7,
+    "source_expansion_stopped": true
+  },
+  "causal_identification": "NOT_ESTABLISHED",
+  "coverage": {
+    "JJA": "QC_INSUFFICIENT",
+    "JJA_baseline": 23,
+    "SON_baseline": 26,
+    "SON_valid": 46,
+    "confounders": "CONFOUNDER_NOT_CONTROLLED",
+    "hot": "NOT_ASSESSED",
+    "last_valid_SON": 2012,
+    "other_regions": "NOT_ACQUIRED",
+    "region": "Wagga_fixed_three_station_panel"
+  },
+  "data": "OPEN_DATA_RECALCULATED",
+  "delivery_D": "SELF_COMMIT: final PR149 head; parent must equal research_R and R..D must change only these two handoff JSON files",
+  "deployed": false,
+  "ecochain": "PROPOSAL_ONLY_ECOCHAIN_CANONICAL_NOT_FOUND",
+  "engineering": "LOCAL_VERIFIED",
+  "enotebook": "PENDING_INTEGRATION",
+  "forecast_validation": "PENDING",
+  "frozen_remote_heads": [
+    {
+      "base": "research/climateos-client-ai-science-integration-001",
+      "base_sha": "3576fef07dcc797794f0adbef9b5be1e3e0991e6",
+      "draft": true,
+      "head": "research/climateos-methane-physics-knowledge-engine-001",
+      "head_sha": "746825e65b8ddbd0f518709c94d9476df107208b",
+      "merged": false,
+      "number": 143,
+      "state": "open",
+      "url": "https://github.com/simon947161/eco-agent-system/pull/143"
+    },
+    {
+      "base": "research/climateos-methane-physics-knowledge-engine-001",
+      "base_sha": "746825e65b8ddbd0f518709c94d9476df107208b",
+      "draft": true,
+      "head": "research/climateos-au-landfill-methane-methods-001",
+      "head_sha": "77a35e2723372a290579e4549a86781e2be65c04",
+      "merged": false,
+      "number": 144,
+      "state": "open",
+      "url": "https://github.com/simon947161/eco-agent-system/pull/144"
+    },
+    {
+      "base": "research/climateos-au-landfill-methane-methods-001",
+      "base_sha": "77a35e2723372a290579e4549a86781e2be65c04",
+      "draft": true,
+      "head": "research/climateos-global-method-evidence-ecochain-001",
+      "head_sha": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+      "merged": false,
+      "number": 145,
+      "state": "open",
+      "url": "https://github.com/simon947161/eco-agent-system/pull/145"
+    },
+    {
+      "base": "research/cczps-global-scope-evidence-standard-001",
+      "base_sha": "3bb71785ad2705823a78748c9ba4cd5003becb41",
+      "draft": true,
+      "head": "research/global-natural-systems-evidence-atlas-001",
+      "head_sha": "1e6b13e2b80c50e6d20e05a4e88819eb0de93488",
+      "merged": false,
+      "number": 146,
+      "state": "open",
+      "url": "https://github.com/simon947161/eco-agent-system/pull/146"
+    },
+    {
+      "base": "research/global-natural-systems-evidence-atlas-001",
+      "base_sha": "1e6b13e2b80c50e6d20e05a4e88819eb0de93488",
+      "draft": true,
+      "head": "research/climateos-physical-process-trajectory-001",
+      "head_sha": "48d0f576e651cd5072e6319ea1539ffa5ba02936",
+      "merged": false,
+      "number": 147,
+      "state": "open",
+      "url": "https://github.com/simon947161/eco-agent-system/pull/147"
+    },
+    {
+      "base": "research/climateos-physical-process-trajectory-001",
+      "base_sha": "48d0f576e651cd5072e6319ea1539ffa5ba02936",
+      "draft": true,
+      "head": "research/enso-regional-weather-probability-001",
+      "head_sha": "da4d7f21c5fcac920e49f34ac1f0ebf6ef1218f9",
+      "merged": false,
+      "number": 148,
+      "state": "open",
+      "url": "https://github.com/simon947161/eco-agent-system/pull/148"
+    }
+  ],
+  "merged": false,
+  "next": "Read independent review; return to bounded physical process quality question only after Founder decision. No more downloads or experiments this task.",
+  "parent_D": "da4d7f21c5fcac920e49f34ac1f0ebf6ef1218f9",
+  "pr": 149,
+  "pr_url": "https://github.com/simon947161/eco-agent-system/pull/149",
+  "remote_heads_rechecked": "2026-11-10 before metadata commit; all unchanged OPEN/DRAFT/UNMERGED",
+  "research_R": "648bacbc3ebb66d4d2f7e8d714fffa8e63032e1c",
+  "review": "REQUESTED_IN_DRAFT_PR; independent ChatGPT reply not received",
+  "scientific_admission": "PENDING",
+  "scientifically_admitted": false,
+  "task_id": "CLIMATEOS-MULTISOURCE-DATA-ADMISSION-001",
+  "validation": {
+    "D_CI": "MUST_CHECK_AFTER_COMMIT: exact D independent run and log recorded in final PR149 conversation receipt; R CI is not D CI",
+    "R_CI": {
+      "conclusion": "success",
+      "job_id": 129744469521,
+      "log": "Ran 674 tests in 8.571s; OK",
+      "run_id": 42791105810,
+      "unit_tests": 674,
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/42791105810"
+    },
+    "inherited_tests": 152,
+    "local_links": 33,
+    "manifest_files": 58,
+    "new_tests": 55,
+    "results_sha256": "87f2708d3982dc62be76aeb405d73334153c80c6e32a2c0c1e88e68a5f8e3cf2",
+    "slide_viewports": 24
+  }
+}

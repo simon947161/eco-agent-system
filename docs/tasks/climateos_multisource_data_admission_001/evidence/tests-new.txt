@@ -1,0 +1,63 @@
+COMMAND: python -X utf8 -m unittest tests.test_multisource_data_admission -v
+test_1992_only_lag_counterexample (tests.test_multisource_data_admission.AdmissionTests.test_1992_only_lag_counterexample) ... ok
+test_403_no_bypass (tests.test_multisource_data_admission.AdmissionTests.test_403_no_bypass) ... ok
+test_404_fallback (tests.test_multisource_data_admission.AdmissionTests.test_404_fallback) ... ok
+test_499_no_bypass (tests.test_multisource_data_admission.AdmissionTests.test_499_no_bypass) ... ok
+test_auth_missing (tests.test_multisource_data_admission.AdmissionTests.test_auth_missing) ... ok
+test_blank_flag_not_daily_complete (tests.test_multisource_data_admission.AdmissionTests.test_blank_flag_not_daily_complete) ... ok
+test_block5_warm_cold_includes_zero (tests.test_multisource_data_admission.AdmissionTests.test_block5_warm_cold_includes_zero) ... ok
+test_china_not_australia (tests.test_multisource_data_admission.AdmissionTests.test_china_not_australia) ... ok
+test_country_as_not_au (tests.test_multisource_data_admission.AdmissionTests.test_country_as_not_au) ... ok
+test_duplicate_month (tests.test_multisource_data_admission.AdmissionTests.test_duplicate_month) ... ok
+test_extreme_threshold_ties_exact (tests.test_multisource_data_admission.AdmissionTests.test_extreme_threshold_ties_exact) ... ok
+test_historical_adapter_not_recent (tests.test_multisource_data_admission.AdmissionTests.test_historical_adapter_not_recent) ... ok
+test_holdout_brier_independent (tests.test_multisource_data_admission.AdmissionTests.test_holdout_brier_independent) ... ok
+test_holdout_no_training_leakage (tests.test_multisource_data_admission.AdmissionTests.test_holdout_no_training_leakage) ... ok
+test_interpolated_not_observed (tests.test_multisource_data_admission.AdmissionTests.test_interpolated_not_observed) ... ok
+test_invalid_month (tests.test_multisource_data_admission.AdmissionTests.test_invalid_month) ... ok
+test_jja_blocked_23 (tests.test_multisource_data_admission.AdmissionTests.test_jja_blocked_23) ... ok
+test_legacy_gate_unchanged (tests.test_multisource_data_admission.AdmissionTests.test_legacy_gate_unchanged) ... ok
+test_license_unknown (tests.test_multisource_data_admission.AdmissionTests.test_license_unknown) ... ok
+test_manifest_and_preregistration (tests.test_multisource_data_admission.AdmissionTests.test_manifest_and_preregistration) ... ok
+test_measurement_flag_excluded (tests.test_multisource_data_admission.AdmissionTests.test_measurement_flag_excluded) ... ok
+test_missing_index (tests.test_multisource_data_admission.AdmissionTests.test_missing_index) ... ok
+test_missing_station_not_renormalized (tests.test_multisource_data_admission.AdmissionTests.test_missing_station_not_renormalized) ... ok
+test_nasa_short_baseline (tests.test_multisource_data_admission.AdmissionTests.test_nasa_short_baseline) ... ok
+test_no_added_authority (tests.test_multisource_data_admission.AdmissionTests.test_no_added_authority) ... ok
+test_no_causal_claim (tests.test_multisource_data_admission.AdmissionTests.test_no_causal_claim) ... ok
+test_no_certification (tests.test_multisource_data_admission.AdmissionTests.test_no_certification) ... ok
+test_no_zero_imputation (tests.test_multisource_data_admission.AdmissionTests.test_no_zero_imputation) ... ok
+test_payload_unavailable (tests.test_multisource_data_admission.AdmissionTests.test_payload_unavailable) ... ok
+test_quality_flag_excluded (tests.test_multisource_data_admission.AdmissionTests.test_quality_flag_excluded) ... ok
+test_raw_hash_drift (tests.test_multisource_data_admission.AdmissionTests.test_raw_hash_drift) ... ok
+test_raw_rational_recomputation (tests.test_multisource_data_admission.AdmissionTests.test_raw_rational_recomputation) ... ok
+test_real_son_counts (tests.test_multisource_data_admission.AdmissionTests.test_real_son_counts) ... ok
+test_real_station_qc (tests.test_multisource_data_admission.AdmissionTests.test_real_station_qc) ... ok
+test_registry_fallback_real (tests.test_multisource_data_admission.AdmissionTests.test_registry_fallback_real) ... ok
+test_registry_hash_drift (tests.test_multisource_data_admission.AdmissionTests.test_registry_hash_drift) ... ok
+test_roni_wrong_version (tests.test_multisource_data_admission.AdmissionTests.test_roni_wrong_version) ... ok
+test_same_weather_not_92_independent_years (tests.test_multisource_data_admission.AdmissionTests.test_same_weather_not_92_independent_years) ... ok
+test_season_alignment (tests.test_multisource_data_admission.AdmissionTests.test_season_alignment) ... ok
+test_season_months_mismatch (tests.test_multisource_data_admission.AdmissionTests.test_season_months_mismatch) ... ok
+test_small_sample_not_certain (tests.test_multisource_data_admission.AdmissionTests.test_small_sample_not_certain) ... ok
+test_son_admitted_26_46 (tests.test_multisource_data_admission.AdmissionTests.test_son_admitted_26_46) ... ok
+test_source_version_switch (tests.test_multisource_data_admission.AdmissionTests.test_source_version_switch) ... ok
+test_station_outside_region (tests.test_multisource_data_admission.AdmissionTests.test_station_outside_region) ... ok
+test_synthetic_not_observed (tests.test_multisource_data_admission.AdmissionTests.test_synthetic_not_observed) ... ok
+test_tie_neither (tests.test_multisource_data_admission.AdmissionTests.test_tie_neither) ... ok
+test_trace_not_zero (tests.test_multisource_data_admission.AdmissionTests.test_trace_not_zero) ... ok
+test_units_conversion (tests.test_multisource_data_admission.AdmissionTests.test_units_conversion) ... ok
+test_unknown_flag (tests.test_multisource_data_admission.AdmissionTests.test_unknown_flag) ... ok
+test_unstable_bootstrap_not_certain (tests.test_multisource_data_admission.AdmissionTests.test_unstable_bootstrap_not_certain) ... ok
+test_wrong_rain_unit (tests.test_multisource_data_admission.AdmissionTests.test_wrong_rain_unit) ... ok
+test_wrong_time_basis (tests.test_multisource_data_admission.AdmissionTests.test_wrong_time_basis) ... ok
+test_year_alignment (tests.test_multisource_data_admission.AdmissionTests.test_year_alignment) ... ok
+test_year_blocks_keep_adjacency (tests.test_multisource_data_admission.AdmissionTests.test_year_blocks_keep_adjacency) ... ok
+test_zero_group_no_probability (tests.test_multisource_data_admission.AdmissionTests.test_zero_group_no_probability) ... ok
+
+----------------------------------------------------------------------
+Ran 55 tests in 1.362s
+
+OK
+
+EXIT_CODE: 0
