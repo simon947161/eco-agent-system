@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "evidence_level": "LOCAL_ATTESTATION_NOT_PUBLIC_REPRODUCTION",
+  "method_identity": "VERSIONED_CANDIDATE_EXECUTED_JUMP_IDENTITY_UNCONFIRMED",
+  "case_count": 10,
+  "native_unique_cases": 7,
+  "boundary_cases": 3,
+  "repetitions_per_case": 2,
+  "call_attempts": 20,
+  "core_entries": 18,
+  "non_null_core_returns": 16,
+  "native_exact_replay": true,
+  "boundary_replay_excluding_tracebacks": true,
+  "native_status_messages_are_assertion_tests": false,
+  "harness_failed_launches_excluded": 4,
+  "paired_prediction_accuracy_comparisons": 0,
+  "winner": "UNKNOWN",
+  "private_payload": null,
+  "originals_unchanged_in_inspected_set": true,
+  "network_and_external_write_guards_checked": true,
+  "boundary_outcomes": [
+    {"category": "missing_required_input", "result": "TYPE_ERROR_BEFORE_CORE"},
+    {"category": "empty_history", "result": "DIVISION_BY_ZERO_IN_CORE"},
+    {"category": "nonfinite_coordinate", "result": "RETURNED_WITH_NONFINITE_VALUE"}
+  ],
+  "scientific_admission": "PENDING"
+}

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "status": "PAIRWISE_PARTIAL",
+  "shared_task": "input eligibility and downstream native computation under declared prerequisites",
+  "protocol_sha256": "3fff0df0184897fb28d0027df62a747b59f756f096a173a54272b29df7bb0614",
+  "both_sides_executed_groups": 6,
+  "completed_comparable_groups": 4,
+  "metadata_incompatible_groups": 2,
+  "attempts_per_side": 12,
+  "legacy_core_entries": 12,
+  "new_native_proposal_groups": 1,
+  "paired_prediction_accuracy_comparisons": 0,
+  "legacy_evidence_level": "LOCAL_ATTESTATION_NOT_PUBLIC_REPRODUCTION",
+  "legacy_source_exported": false,
+  "private_payload": null,
+  "old_sources_unchanged": true,
+  "new_baseline_sha": "cf91e4a061341bc33d16400bcf4c6a2c2817aa65",
+  "science": "PENDING",
+  "recommendation": "SELECTIVE_INTERFACE_RESEARCH_WORTHWHILE_NOT_AUTHORIZATION_TO_TRANSPLANT",
+  "rows": [
+    {
+      "id": "P01",
+      "canonical_input_sha256": "a173e77f57c2880975850000b53bc3f58ea9231a04412db6639dda135e643052",
+      "reference": "ALLOW",
+      "comparability": "COMPARABLE_NUMERIC_INPUT_GOVERNANCE",
+      "both_sides_executed": true,
+      "repeats_per_side": 2,
+      "replay_equal": true,
+      "legacy": {
+        "status": "RETURNED",
+        "code": null,
+        "returned_nonfinite": false,
+        "full_result": "PRIVATE_RESULT_WITHHELD"
+      },
+      "new": {
+        "status": "RETURNED",
+        "code": null
+      }
+    },
+    {
+      "id": "P02",
+      "canonical_input_sha256": "13a5daf143f536206f7e478a15fbc9303822c20e8951f601e1220da9e422842e",
+      "reference": "REFUSE",
+      "comparability": "COMPARABLE_NUMERIC_INPUT_GOVERNANCE",
+      "both_sides_executed": true,
+      "repeats_per_side": 2,
+      "replay_equal": true,
+      "legacy": {
+        "status": "UNCONTROLLED_ERROR",
+        "code": "TypeError",
+        "returned_nonfinite": false,
+        "full_result": "PRIVATE_RESULT_WITHHELD"
+      },
+      "new": {
+        "status": "STRUCTURED_REFUSAL",
+        "code": "MISSING_DEPENDENCY"
+      }
+    },
+    {
+      "id": "P03",
+      "canonical_input_sha256": "c5cdbf17cabcbdb506e74e0f4770505adb56036b99dc2fc91ddf78089fbd8885",
+      "reference": "REFUSE",
+      "comparability": "COMPARABLE_NUMERIC_INPUT_GOVERNANCE",
+      "both_sides_executed": true,
+      "repeats_per_side": 2,
+      "replay_equal": true,
+      "legacy": {
+        "status": "RETURNED",
+        "code": null,
+        "returned_nonfinite": true,
+        "full_result": "PRIVATE_RESULT_WITHHELD"
+      },
+      "new": {
+        "status": "STRUCTURED_REFUSAL",
+        "code": "NONFINITE"
+      }
+    },
+    {
+      "id": "P04",
+      "canonical_input_sha256": "452ad2aaa44ea49aab0314902e92868732faf63bba9bb42492822335a3dd7a85",
+      "reference": "REFUSE",
+      "comparability": "COMPARABLE_NUMERIC_INPUT_GOVERNANCE",
+      "both_sides_executed": true,
+      "repeats_per_side": 2,
+      "replay_equal": true,
+      "legacy": {
+        "status": "UNCONTROLLED_ERROR",
+        "code": "TypeError",
+        "returned_nonfinite": false,
+        "full_result": "PRIVATE_RESULT_WITHHELD"
+      },
+      "new": {
+        "status": "STRUCTURED_REFUSAL",
+        "code": "MISSING_DEPENDENCY"
+      }
+    },
+    {
+      "id": "P05",
+      "canonical_input_sha256": "69278b7fb8c2dc04562a36045e52feb0b32eb6289d32d499e22780a2ff8b2b60",
+      "reference": "REFUSE",
+      "comparability": "INCOMPARABLE_NATIVE_METADATA",
+      "both_sides_executed": true,
+      "repeats_per_side": 2,
+      "replay_equal": true,
+      "legacy": {
+        "status": "RETURNED",
+        "code": null,
+        "returned_nonfinite": false,
+        "full_result": "PRIVATE_RESULT_WITHHELD"
+      },
+      "new": {
+        "status": "STRUCTURED_REFUSAL",
+        "code": "UNIT_MISMATCH"
+      }
+    },
+    {
+      "id": "P06",
+      "canonical_input_sha256": "6cd0280209e60510dcee4d65ee25607ac8bdbe88440b20f1e36c11a014c2a0c8",
+      "reference": "REFUSE",
+      "comparability": "INCOMPARABLE_NATIVE_METADATA",
+      "both_sides_executed": true,
+      "repeats_per_side": 2,
+      "replay_equal": true,
+      "legacy": {
+        "status": "RETURNED",
+        "code": null,
+        "returned_nonfinite": false,
+        "full_result": "PRIVATE_RESULT_WITHHELD"
+      },
+      "new": {
+        "status": "STRUCTURED_REFUSAL",
+        "code": "TIME_MISMATCH"
+      }
+    }
+  ]
+}
