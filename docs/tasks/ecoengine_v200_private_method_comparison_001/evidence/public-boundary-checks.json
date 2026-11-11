@@ -1,0 +1,21 @@
+{
+  "scope": "public input validation only; not a paired accuracy comparison",
+  "baseline_sha": "cf91e4a061341bc33d16400bcf4c6a2c2817aa65",
+  "trajectory_runs": 0,
+  "source_sha256": {
+    "cczps_lite/integration/earth_system_coupling/state.py": "45e5ead46e52f40d7bea4c69588a45e283938ce78f55474efb6b09b9dc95bf47",
+    "cczps_lite/integration/earth_system_coupling/models.py": "a8d0e437c44aee1540877e2a2de0c507ae8a26b336abeed00ed3471e358120b5"
+  },
+  "rows": [
+    {
+      "category": "nonfinite_coordinate",
+      "status": "REJECTED",
+      "code": "COORDINATE"
+    },
+    {
+      "category": "nonfinite_configuration",
+      "status": "REJECTED",
+      "code": "CONFIG_NONFINITE"
+    }
+  ]
+}

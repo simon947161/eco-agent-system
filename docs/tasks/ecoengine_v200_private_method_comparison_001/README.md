@@ -1,13 +1,14 @@
-# Issue151 V2：本机定位阶段与公开基线
+# Issue151研究索引｜V2.1
 
-状态：LOCAL_WINDOWS / LEGACY_METHOD_NOT_FOUND_IN_INSPECTED_SCOPE / COMPARISON_PARTIAL。
+当前状态：**LOCAL_WINDOWS；候选旧程序已实际隔离运行；目标“跳跃方法”身份未确认；COMPARISON=PARTIAL；科学准入PENDING。**
 
-主机目录已确认可访问，完成分阶段只读定位。但尚未找到具有身份和代码依据的目标v200“跳跃方法”。没有把其他旧版本或同名非算法目录当作目标，也没有运行私人旧代码。
+Founder后续明确授权了备用范围，只读检查已经执行。此前“保持原范围”的记录保留在提交历史中，不再是当前决定。V2.1任务书提交：`38009887518d1cd1e9d34192dbaaf1c6287aebee`。
 
-Founder于2026-11-11明确决定：保持原范围，记录NOT_FOUND。本轮定位到此结束，不访问备用位置，不再等待范围调整或自动扩查。此次定位不足不证明旧算法不存在或不正确，不能用于方法优劣排名。
+- [公开中文报告](PUBLIC_FOUNDER_REPORT_ZH.md)
+- [可比性与10个候选案例](COMPARABILITY_MATRIX.md)
+- [脱敏本机声明](evidence/local-candidate-attestation.json)：10例、20次调用尝试，不能在GitHub复跑私人证据。
+- [两个公共输入门检查](evidence/public-boundary-checks.json)：实际执行，不运行轨迹或排放实验。
+- [既有8组公共控制](evidence/public_controls.json)：原48次记录冻结，不能当作新旧成对比较。
+- [执行状态](EXECUTION_STATUS.json) · [QA与保密](QA_AND_PRIVACY.md) · [下一次交接](NEXT_SESSION.md)
 
-已完成的独立工作：固定PR152 HEAD `cf91e4a061341bc33d16400bcf4c6a2c2817aa65`，复核65项原测试；预先固定8组公开合成控制，每组三策略、原样重复，48次公开模拟。**这些是新版控制基线，不是8组已完成的旧版/新版对照。**
-
-入口：[公开中文报告](PUBLIC_FOUNDER_REPORT_ZH.md)、[控制协议](PUBLIC_CASE_PROTOCOL.json)、[公共结果](evidence/public_controls.json)、[测试与隐私边界](QA_AND_PRIVACY.md)、[下一步](NEXT_SESSION.md)、[执行状态](EXECUTION_STATUS.json)。完整私人阶段报告和详细定位记录仅留在本机，不提供公开路径或文件清单。
-
-正式科学准入PENDING；旧成果不改；不合并、不部署、不移植旧算法。
+固定PR152基线：`cf91e4a061341bc33d16400bcf4c6a2c2817aa65`。当前交付为[Draft PR153](https://github.com/simon947161/eco-agent-system/pull/153)，精确HEAD和对应CI见PR交付回执。没有改动旧算法、PR152源码或既有科学状态。

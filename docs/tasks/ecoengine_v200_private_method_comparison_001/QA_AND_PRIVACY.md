@@ -1,15 +1,19 @@
-# 公共测试与保密边界
+# V2.1测试与保密边界
 
-执行环境确认为LOCAL_WINDOWS；旧源代码执行0次。目标方法尚未定位，因此没有安全执行旧模块、取得旧法输入输出或完成双边对照的声明。定位详单、源码片段、原件hash与完整私人阶段报告均不进入此Git工作树。
+旧候选执行由本地主机完成；公共证据等级为LOCAL_ATTESTATION_NOT_PUBLIC_REPRODUCTION。7个原生案例+3个边界案例，每例重复一次。计数与所有失败在本机详细记录中核对，旧原件及隔离副本内容未改。科学准入PENDING。
 
-公共侧固定PR152源码hash，复跑其65项测试。8组控制先写PUBLIC_CASE_PROTOCOL.json再执行，每组三策略并逐字重复一次；见evidence/public_controls.json。public_execution_count=48，legacy_execution_count=0，paired_comparison=NOT_EXECUTED，winner=UNKNOWN。运行时间只记录新方成本，不用于新旧速度胜负。
+公开只保存闭合字段白名单内的聚合计数、粗粒度结果与局限，不含旧实现名称、函数、公式、私有位置、原始输入输出、源文件hash清单或可逆向旧夹具。完整私人报告不在Git工作树。上游任务书原样保留，本次不另行发布私人位置。
 
-新增验证检查条数、配置冻结、已声明失败、重复hash、水热残差与导出白名单。公开runner不接收私人目录参数，没有旧程序加载器，没有私有算法或可逆向夹具。CI只能验证公开代码与公共侧证据，不能复跑本机私人定位，更不能认证旧法。
+公开导出门拒绝额外字段、非空私人载荷、胜负或科学准入升级、删去失败和错误计数。它不能证明私人实验真实或全面排除一切泄密；本次仍逐项审查实际变更及文件清单。新增测试含这些负例，而不是把私人结果伪装成CI测得。
 
-每台主机内重复要求结果完全相同；与归档跨平台比较保留状态/拒绝原因相同，数值允许1e−10绝对或1e−12相对差异，以免不同数学库末位舍入被误判为科学失败。此容差不替代原有守恒门或真实观测验证。
+本轮两个公共输入门检查直接使用PR152冻结源文件，检查非有限坐标及配置；不运行物理轨迹。原8组48次公共控制与结果hash保持原样，未为了本轮研究重新运行；全库CI仍会正常执行既有回归测试。
 
-保密检查仅针对本次新增公共文件；上游V2任务书原样保留，不重写历史。新摘要不包含旧实现名称、函数、私有路径、源码/专有公式、原始旧输入输出或私人hash清单。私人报告的位置只在用户私人回复中提供。
+旧端安全执行采用：限定纯Python依赖闭包、只读原件、独立工作副本、进程内socket/子进程/动态库和目录外写入拒绝、自检与事后hash核验。不宣称整机断网，也不宣称这是针对任意恶意本地代码的OS级沙箱。最初4次输出记录器不兼容失败已保留，不能当作旧方法缺陷。
 
-公开复现：`python docs/tasks/ecoengine_v200_private_method_comparison_001/scripts/public_controls.py`，默认输出至忽略的runtime_data，不覆盖归档；全套旧测试和新对照不自动启动万次实验。
+复核公共门：`python docs/tasks/ecoengine_v200_private_method_comparison_001/scripts/public_boundary_checks.py`。
 
-状态为阶段性PARTIAL，不是完成的旧新方法科学比较。远程HEAD与CI由实际Draft PR交付回执固定；本地测试不能代替远程CI。
+复核本轮公开导出：`python -m unittest discover -s tests -p test_ecoengine_candidate_summary.py -v`。
+
+复核保密标签：`python docs/tasks/ecoengine_v200_private_method_comparison_001/scripts/privacy_gate.py`。
+
+远程HEAD/CI以PR实际交付回执为准。本机通过不能代替远程CI；远程CI不能审私人算法。

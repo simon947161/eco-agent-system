@@ -1,12 +1,26 @@
 {
-  "inherited_pr152_tests": 65,
-  "new_public_tests": 12,
-  "private_executions": 0,
+  "taskbook_version": "V2.1",
+  "current_batch_public_tests": 8,
+  "current_batch_public_test_status": "PASS",
+  "current_batch_public_input_guards": 2,
+  "current_batch_trajectory_runs": 0,
+  "private_candidate_cases": 10,
+  "private_candidate_call_attempts": 20,
+  "private_candidate_core_entries": 18,
+  "private_candidate_non_null_returns": 16,
+  "private_evidence_level": "LOCAL_ATTESTATION_NOT_PUBLIC_REPRODUCTION",
   "private_report_retained_locally": true,
-  "public_control_cases": 8,
-  "public_executions": 48,
-  "results_only_sha256": "6b1deeb4be9f06bb07e174fb7a67d3d0dfc7a253b18fa3735ff50137f7ffe8e3",
+  "harness_failures_excluded_from_legacy_failures": 4,
+  "paired_accuracy_comparisons": 0,
+  "archived_v2_phase": {
+    "inherited_pr152_tests": 65,
+    "new_public_tests": 12,
+    "public_control_cases": 8,
+    "public_executions": 48,
+    "private_executions_in_that_archive": 0,
+    "results_only_sha256": "6b1deeb4be9f06bb07e174fb7a67d3d0dfc7a253b18fa3735ff50137f7ffe8e3"
+  },
   "scientific_admission": "PENDING",
-  "scope": "Public tests do not verify any private method",
-  "test_status": "PASS"
+  "remote_ci": "SEE_EXACT_HEAD_PR_RECEIPT",
+  "scope": "Public tests verify schemas and new-side guards, not private methods or accuracy"
 }
