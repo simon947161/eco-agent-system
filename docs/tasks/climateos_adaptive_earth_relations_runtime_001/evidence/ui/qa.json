@@ -1,0 +1,175 @@
+{
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "checks": [
+        {
+          "page": 1,
+          "active": 1,
+          "overflow": false,
+          "text": 472
+        },
+        {
+          "page": 2,
+          "active": 1,
+          "overflow": false,
+          "text": 204
+        },
+        {
+          "page": 3,
+          "active": 1,
+          "overflow": false,
+          "text": 220
+        },
+        {
+          "page": 4,
+          "active": 1,
+          "overflow": false,
+          "text": 218
+        },
+        {
+          "page": 5,
+          "active": 1,
+          "overflow": false,
+          "text": 255
+        },
+        {
+          "page": 6,
+          "active": 1,
+          "overflow": false,
+          "text": 213
+        },
+        {
+          "page": 7,
+          "active": 1,
+          "overflow": false,
+          "text": 243
+        },
+        {
+          "page": 8,
+          "active": 1,
+          "overflow": false,
+          "text": 195
+        },
+        {
+          "page": 9,
+          "active": 1,
+          "overflow": false,
+          "text": 207
+        },
+        {
+          "page": 10,
+          "active": 1,
+          "overflow": false,
+          "text": 279
+        }
+      ],
+      "scenarioChanged": true,
+      "slider": true,
+      "keyboard": true,
+      "nextButton": true,
+      "sourceDisclosure": true
+    },
+    {
+      "label": "mobile",
+      "width": 390,
+      "height": 844,
+      "checks": [
+        {
+          "page": 1,
+          "active": 1,
+          "overflow": false,
+          "text": 472
+        },
+        {
+          "page": 2,
+          "active": 1,
+          "overflow": false,
+          "text": 204
+        },
+        {
+          "page": 3,
+          "active": 1,
+          "overflow": false,
+          "text": 220
+        },
+        {
+          "page": 4,
+          "active": 1,
+          "overflow": false,
+          "text": 218
+        },
+        {
+          "page": 5,
+          "active": 1,
+          "overflow": false,
+          "text": 229
+        },
+        {
+          "page": 6,
+          "active": 1,
+          "overflow": false,
+          "text": 213
+        },
+        {
+          "page": 7,
+          "active": 1,
+          "overflow": false,
+          "text": 243
+        },
+        {
+          "page": 8,
+          "active": 1,
+          "overflow": false,
+          "text": 195
+        },
+        {
+          "page": 9,
+          "active": 1,
+          "overflow": false,
+          "text": 207
+        },
+        {
+          "page": 10,
+          "active": 1,
+          "overflow": false,
+          "text": 279
+        }
+      ],
+      "scenarioChanged": true,
+      "slider": true,
+      "keyboard": true,
+      "nextButton": true,
+      "sourceDisclosure": true
+    }
+  ],
+  "networkRequests": [],
+  "consoleErrors": [],
+  "screenshots": [
+    "desktop-1.png",
+    "desktop-2.png",
+    "desktop-3.png",
+    "desktop-4.png",
+    "desktop-5.png",
+    "desktop-6.png",
+    "desktop-7.png",
+    "desktop-8.png",
+    "desktop-9.png",
+    "desktop-10.png",
+    "mobile-1.png",
+    "mobile-2.png",
+    "mobile-3.png",
+    "mobile-4.png",
+    "mobile-5.png",
+    "mobile-6.png",
+    "mobile-7.png",
+    "mobile-8.png",
+    "mobile-9.png",
+    "mobile-10.png"
+  ],
+  "status": "PASS",
+  "slides_sha256": "ec3e5fbefef48a46a285468ed5cf0668dcde4769b065af279b605029ead7356d",
+  "initial_harness_failure": "unscoped summary selector matched hidden pages; fixed to active page; not application failure"
+}

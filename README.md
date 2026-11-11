@@ -1,5 +1,14 @@
 # Eco Agent System
 
+## Typed Earth Relations Runtime — Issue #154
+
+[Runnable research package](docs/tasks/climateos_adaptive_earth_relations_runtime_001/README.md),
+[Chinese Founder report](docs/tasks/climateos_adaptive_earth_relations_runtime_001/FOUNDER_REPORT_ZH.md)
+and [offline numerical replay](docs/tasks/climateos_adaptive_earth_relations_runtime_001/slides.html).
+120 structured configurations compare selective and full safe scheduling through
+real PR152 physical ports. Rejections, rollback, shared ancestors and no-speedup
+counterexamples are archived. Synthetic sandbox only; scientific admission PENDING.
+
 ## Shared environmental state and bounded physical coupling — Issue #150
 
 [Research package](docs/tasks/climateos_earth_system_coupling_lab_001/README.md),

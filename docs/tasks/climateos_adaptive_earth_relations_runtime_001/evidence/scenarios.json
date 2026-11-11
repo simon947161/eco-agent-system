@@ -1,0 +1,3829 @@
+{
+  "runs": {
+    "BASELINE": {
+      "status": "COMPLETED",
+      "failure": null,
+      "config": {
+        "grid_n": 2,
+        "length_m": 2000.0,
+        "dt_s": 900.0,
+        "steps": 8,
+        "ta_k": 298.0,
+        "ts_offset_k": 2.0,
+        "q_kgkg": 0.009,
+        "pressure_pa": 100000.0,
+        "wind_m_s": 3.0,
+        "rain_kg_m2_s": 2e-05,
+        "radiation_w_m2": 220.0,
+        "water_kg_m2": 50.0,
+        "capacity_kg_m2": 150.0,
+        "surface_heat_capacity": 2000000.0,
+        "mixing_height_m": 100.0,
+        "transfer_coefficient": 0.002,
+        "relaxation_time_s": 14400.0,
+        "diffusivity_m2_s": 0.5,
+        "relaxation": 0.5,
+        "max_iterations": 60,
+        "tolerance": 1e-08,
+        "lag_steps": 0,
+        "fault": null
+      },
+      "pulse": false,
+      "plan": {
+        "targets": [
+          "question",
+          "hot_detail",
+          "lag_water"
+        ],
+        "order": [
+          "forcing",
+          "coupled",
+          "water",
+          "heat",
+          "humidity",
+          "saturation",
+          "lag_water",
+          "hotdry",
+          "question",
+          "hot_detail"
+        ],
+        "graph_hash": "4026f8a21cdcc029a9f2e20541db2a49c52527cea79a7bfdecceabdb973c4941",
+        "selected_nodes": [
+          "coupled",
+          "forcing",
+          "heat",
+          "hot_detail",
+          "hotdry",
+          "humidity",
+          "lag_water",
+          "question",
+          "saturation",
+          "water"
+        ],
+        "omitted_nodes": [
+          "CH4",
+          "ENSO",
+          "water_summary_0",
+          "water_summary_1",
+          "water_summary_2",
+          "water_summary_3",
+          "water_summary_4",
+          "water_summary_5"
+        ],
+        "edges": [
+          {
+            "id": "drivers",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "evap_exchange",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "heat_exchange",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "humidity_feedback",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "state_water",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "state_heat",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "state_humidity",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "water_hot",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "heat_hot",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "water_sat",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "hot_question",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "sat_question",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "water_delay",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "hot_detail",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "humidity_detail",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "enso_rain_claim",
+            "status": "UNSUPPORTED_NUMERIC_LINK"
+          },
+          {
+            "id": "ch4_local_claim",
+            "status": "UNSUPPORTED_NUMERIC_LINK"
+          },
+          {
+            "id": "enso_background",
+            "status": "CONTEXT_ONLY"
+          },
+          {
+            "id": "water_summary_0_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_0_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_1_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_1_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_2_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_2_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_3_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_3_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_4_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_4_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_5_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_5_rain",
+            "status": "NOT_NEEDED"
+          }
+        ],
+        "science": "PENDING",
+        "mode": "selective"
+      },
+      "graph_hash": "4026f8a21cdcc029a9f2e20541db2a49c52527cea79a7bfdecceabdb973c4941",
+      "targets": [
+        "question",
+        "hot_detail",
+        "lag_water"
+      ],
+      "completed_steps": 8,
+      "trace": [
+        {
+          "index": 0,
+          "start_s": 0.0,
+          "end_s": 900.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              298.13929226850763,
+              298.06847467713027
+            ],
+            "ts": [
+              300.76094780216175,
+              299.35694802322485
+            ],
+            "q": [
+              0.009248958921200699,
+              0.00921652089600246
+            ],
+            "water": [
+              49.98843395029645,
+              49.99228624954594
+            ]
+          },
+          "ledger": {
+            "iterations": 25,
+            "fixed_point_error": 4.943956355418777e-09,
+            "water_residual_kg_m2": 2.633310236532793e-15,
+            "energy_residual_j_m2": 5.51808625459671e-08,
+            "evap_kg_m2": 0.027639900078804135,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -259.50537609092373,
+              -127.57023079437889
+            ],
+            "vented_water_kg_m2": [
+              0.00046196952661797965,
+              0.0004017773508446436
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.0295660497035509,
+                0.02571375045405738
+              ],
+              "air_water_in_kg_m2": [
+                0.0295660497035509,
+                0.02571375045405738
+              ],
+              "surface_sensible_out_j_m2": [
+                16608.344069821575,
+                8164.49477084482
+              ],
+              "air_sensible_in_j_m2": [
+                16608.344069821575,
+                8164.49477084482
+              ],
+              "surface_latent_out_j_m2": [
+                72436.8217736997,
+                62998.68861244059
+              ],
+              "air_latent_in_j_m2": [
+                72436.8217736997,
+                62998.68861244059
+              ]
+            },
+            "port_clocks_s": [
+              900.0,
+              900.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              50.0,
+              50.0
+            ],
+            "sample_end_s": 0.0,
+            "lag_steps": 1,
+            "warmup": true
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 1,
+          "start_s": 900.0,
+          "end_s": 1800.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              298.2661146995066,
+              298.13272785243714
+            ],
+            "ts": [
+              300.81544945501537,
+              299.42131512636337
+            ],
+            "q": [
+              0.009479689805478204,
+              0.009417545969740038
+            ],
+            "water": [
+              49.97721363441936,
+              49.98483076521926
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 9.55276391323423e-09,
+            "water_residual_kg_m2": 3.230055112268815e-15,
+            "energy_residual_j_m2": 5.2998075261712074e-08,
+            "evap_kg_m2": 0.02733790010188833,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -1258.0761398344011,
+              -622.013239064391
+            ],
+            "vented_water_kg_m2": [
+              0.0022471504933400917,
+              0.001955021537821625
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.029220315877092968,
+                0.02545548432668369
+              ],
+              "air_water_in_kg_m2": [
+                0.029220315877092968,
+                0.02545548432668369
+              ],
+              "surface_sensible_out_j_m2": [
+                16143.320592831667,
+                8163.456923677734
+              ],
+              "air_sensible_in_j_m2": [
+                16143.320592831667,
+                8163.456923677734
+              ],
+              "surface_latent_out_j_m2": [
+                71589.77389887777,
+                62365.93660037504
+              ],
+              "air_latent_in_j_m2": [
+                71589.77389887777,
+                62365.93660037504
+              ]
+            },
+            "port_clocks_s": [
+              1800.0,
+              1800.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              49.98843395029645,
+              49.99228624954594
+            ],
+            "sample_end_s": 900.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 2,
+          "start_s": 1800.0,
+          "end_s": 2700.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              298.3818612170151,
+              298.19323305448756
+            ],
+            "ts": [
+              300.8705263754575,
+              299.48594283752794
+            ],
+            "q": [
+              0.00969364297165185,
+              0.009604297350286934
+            ],
+            "water": [
+              49.96629999649659,
+              49.97760162789625
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 9.142922863247804e-09,
+            "water_residual_kg_m2": 9.835882108788496e-16,
+            "energy_residual_j_m2": 1.877197064459324e-08,
+            "evap_kg_m2": 0.027071387622889517,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -2167.7691828045868,
+              -1086.370890779449
+            ],
+            "vented_water_kg_m2": [
+              0.003901840504968277,
+              0.0033973141195008365
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.02891363792277025,
+                0.02522913732300878
+              ],
+              "air_water_in_kg_m2": [
+                0.02891363792277025,
+                0.02522913732300878
+              ],
+              "surface_sensible_out_j_m2": [
+                15753.02530923915,
+                8187.912125279468
+              ],
+              "air_sensible_in_j_m2": [
+                15753.02530923915,
+                8187.912125279468
+              ],
+              "surface_latent_out_j_m2": [
+                70838.41291078711,
+                61811.38644137151
+              ],
+              "air_latent_in_j_m2": [
+                70838.41291078711,
+                61811.38644137151
+              ]
+            },
+            "port_clocks_s": [
+              2700.0,
+              2700.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              49.97721363441936,
+              49.98483076521926
+            ],
+            "sample_end_s": 1800.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 3,
+          "start_s": 2700.0,
+          "end_s": 3600.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              298.4877686276919,
+              298.2504096847728
+            ],
+            "ts": [
+              300.92610145899823,
+              299.550784098747
+            ],
+            "q": [
+              0.009892152080068295,
+              0.009777900270844232
+            ],
+            "water": [
+              49.955657238193425,
+              49.9705694962652
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 8.776169124757871e-09,
+            "water_residual_kg_m2": 1.5543122344752192e-15,
+            "energy_residual_j_m2": 3.207242116332054e-08,
+            "evap_kg_m2": 0.026837444967106692,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -2998.517160619431,
+              -1524.0159960228198
+            ],
+            "vented_water_kg_m2": [
+              0.0054364197661087394,
+              0.00473740471593604
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.028642758303164654,
+                0.02503213163104873
+              ],
+              "air_water_in_kg_m2": [
+                0.028642758303164654,
+                0.02503213163104873
+              ],
+              "surface_sensible_out_j_m2": [
+                15428.94989156805,
+                8234.880250012293
+              ],
+              "air_sensible_in_j_m2": [
+                15428.94989156805,
+                8234.880250012293
+              ],
+              "surface_latent_out_j_m2": [
+                70174.7578427534,
+                61328.72249606939
+              ],
+              "air_latent_in_j_m2": [
+                70174.7578427534,
+                61328.72249606939
+              ]
+            },
+            "port_clocks_s": [
+              3600.0,
+              3600.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              49.96629999649659,
+              49.97760162789625
+            ],
+            "sample_end_s": 2700.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 4,
+          "start_s": 3600.0,
+          "end_s": 4500.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              298.5849343989788,
+              298.3046291612869
+            ],
+            "ts": [
+              300.9821050324418,
+              299.6157960613743
+            ],
+            "q": [
+              0.010076443669458406,
+              0.0099393907987713
+            ],
+            "water": [
+              49.945252538486265,
+              49.963707396782034
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 8.44755732032354e-09,
+            "water_residual_kg_m2": 2.1892210266827306e-15,
+            "energy_residual_j_m2": 4.1211023926734924e-08,
+            "evap_kg_m2": 0.026633399595163972,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -3759.1332886299083,
+              -1937.9357520524595
+            ],
+            "vented_water_kg_m2": [
+              0.006860433819134597,
+              0.005983349326566893
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.028404699707161342,
+                0.024862099483166606
+              ],
+              "air_water_in_kg_m2": [
+                0.028404699707161342,
+                0.024862099483166606
+              ],
+              "surface_sensible_out_j_m2": [
+                15163.553206132607,
+                8301.716635835272
+              ],
+              "air_sensible_in_j_m2": [
+                15163.553206132607,
+                8301.716635835272
+              ],
+              "surface_latent_out_j_m2": [
+                69591.51428254528,
+                60912.14373375819
+              ],
+              "air_latent_in_j_m2": [
+                69591.51428254528,
+                60912.14373375819
+              ]
+            },
+            "port_clocks_s": [
+              4500.0,
+              4500.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              49.955657238193425,
+              49.9705694962652
+            ],
+            "sample_end_s": 3600.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 5,
+          "start_s": 4500.0,
+          "end_s": 5400.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              298.6743324027326,
+              298.3562203663073
+            ],
+            "ts": [
+              301.0384741133373,
+              299.6809397031488
+            ],
+            "q": [
+              0.01024764588921358,
+              0.010089722940889166
+            ],
+            "water": [
+              49.93505579930676,
+              49.956990531338825
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 8.153051567205694e-09,
+            "water_residual_kg_m2": 3.4399566528620085e-15,
+            "energy_residual_j_m2": 5.555921234190464e-08,
+            "evap_kg_m2": 0.026456802311357816,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -4457.437966195195,
+              -2330.7755142879687
+            ],
+            "vented_water_kg_m2": [
+              0.008182661731735328,
+              0.007142565650030295
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.028196739179502762,
+                0.02471686544321287
+              ],
+              "air_water_in_kg_m2": [
+                0.028196739179502762,
+                0.02471686544321287
+              ],
+              "surface_sensible_out_j_m2": [
+                14950.149145156129,
+                8386.074189009772
+              ],
+              "air_sensible_in_j_m2": [
+                14950.149145156129,
+                8386.074189009772
+              ],
+              "surface_latent_out_j_m2": [
+                69082.01098978176,
+                60556.32033587153
+              ],
+              "air_latent_in_j_m2": [
+                69082.01098978176,
+                60556.32033587153
+              ]
+            },
+            "port_clocks_s": [
+              5400.0,
+              5400.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              49.945252538486265,
+              49.963707396782034
+            ],
+            "sample_end_s": 4500.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 6,
+          "start_s": 5400.0,
+          "end_s": 6300.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              298.7568268626946,
+              298.405474477538
+            ],
+            "ts": [
+              301.0951517473515,
+              299.74617948163467
+            ],
+            "q": [
+              0.010406796499043395,
+              0.010229775175808316
+            ],
+            "water": [
+              49.92503941438894,
+              49.95039610106364
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 8.012989383132663e-09,
+            "water_residual_kg_m2": 3.3514857555871913e-15,
+            "energy_residual_j_m2": 1.8364517018198967e-08,
+            "evap_kg_m2": 0.026305407596502836,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -5100.37092050391,
+              -2704.877610630397
+            ],
+            "vented_water_kg_m2": [
+              0.009411178539374447,
+              0.008221883935461975
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.028016384917822146,
+                0.02459443027518353
+              ],
+              "air_water_in_kg_m2": [
+                0.028016384917822146,
+                0.02459443027518353
+              ],
+              "surface_sensible_out_j_m2": [
+                14782.807953760494,
+                8485.869823200941
+              ],
+              "air_sensible_in_j_m2": [
+                14782.807953760494,
+                8485.869823200941
+              ],
+              "surface_latent_out_j_m2": [
+                68640.14304866426,
+                60256.354174199645
+              ],
+              "air_latent_in_j_m2": [
+                68640.14304866426,
+                60256.354174199645
+              ]
+            },
+            "port_clocks_s": [
+              6300.0,
+              6300.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              49.93505579930676,
+              49.956990531338825
+            ],
+            "sample_end_s": 5400.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 7,
+          "start_s": 6300.0,
+          "end_s": 7200.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              298.8331847150556,
+              298.45264925263785
+            ],
+            "ts": [
+              301.1520864147689,
+              299.8114830203916
+            ],
+            "q": [
+              0.010554850200932393,
+              0.010360356460602767
+            ],
+            "water": [
+              49.915178058962546,
+              49.94390314481829
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 7.9579649536754e-09,
+            "water_residual_kg_m2": 2.0261570199409107e-15,
+            "energy_residual_j_m2": 2.4971086531877518e-08,
+            "evap_kg_m2": 0.026177155835868254,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -5694.090564192307,
+              -3062.315762786251
+            ],
+            "vented_water_kg_m2": [
+              0.01055341245536989,
+              0.009227593735193447
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.027861355426392884,
+                0.024492956245343627
+              ],
+              "air_water_in_kg_m2": [
+                0.027861355426392884,
+                0.024492956245343627
+              ],
+              "surface_sensible_out_j_m2": [
+                14656.26933135999,
+                8599.254724178045
+              ],
+              "air_sensible_in_j_m2": [
+                14656.26933135999,
+                8599.254724178045
+              ],
+              "surface_latent_out_j_m2": [
+                68260.32079466256,
+                60007.74280109188
+              ],
+              "air_latent_in_j_m2": [
+                68260.32079466256,
+                60007.74280109188
+              ]
+            },
+            "port_clocks_s": [
+              7200.0,
+              7200.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              49.92503941438894,
+              49.95039610106364
+            ],
+            "sample_end_s": 6300.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        }
+      ],
+      "output": {
+        "question": {
+          "answer": {
+            "hot_dry": [
+              false,
+              false
+            ],
+            "saturated": [
+              false,
+              false
+            ]
+          },
+          "action": "NONE_RESEARCH_ONLY"
+        },
+        "hot_detail": {
+          "detail": null,
+          "status": "CONDITION_FALSE"
+        },
+        "lag_water": {
+          "water": [
+            49.92503941438894,
+            49.95039610106364
+          ],
+          "sample_end_s": 6300.0,
+          "lag_steps": 1,
+          "warmup": false
+        }
+      },
+      "executions": {
+        "forcing": 8,
+        "coupled": 8,
+        "water": 8,
+        "heat": 8,
+        "humidity": 8,
+        "saturation": 8,
+        "lag_water": 8,
+        "hotdry": 8,
+        "question": 8
+      },
+      "skips": {
+        "hot_detail": 8
+      },
+      "total_node_executions": 72,
+      "native_physical_port_calls": 386,
+      "initial_state_hash": "5886f60b19d0e0fb34a5055be79b57cc9b8e1ab8c6373f32e7c1942063f5e75e",
+      "final_state_hash": "416dd156225b7a37d1c88e81322e5519c1aa159f238d74f10eb836487cbd4888",
+      "final_values": {
+        "ta": [
+          298.8331847150556,
+          298.45264925263785
+        ],
+        "ts": [
+          301.1520864147689,
+          299.8114830203916
+        ],
+        "q": [
+          0.010554850200932393,
+          0.010360356460602767
+        ],
+        "water": [
+          49.915178058962546,
+          49.94390314481829
+        ]
+      },
+      "max_water_residual_kg_m2": 3.4399566528620085e-15,
+      "max_energy_residual_j_m2": 5.555921234190464e-08,
+      "rollback": null,
+      "seconds": 0.0627099999692291,
+      "evidence": "SYNTHETIC_PHYSICAL_SANDBOX",
+      "science": "PENDING",
+      "causal_attribution": false,
+      "forecast_skill": null
+    },
+    "HEAT_DRY_WIND": {
+      "status": "COMPLETED",
+      "failure": null,
+      "config": {
+        "grid_n": 2,
+        "length_m": 2000.0,
+        "dt_s": 900.0,
+        "steps": 8,
+        "ta_k": 305.0,
+        "ts_offset_k": 2.0,
+        "q_kgkg": 0.009,
+        "pressure_pa": 100000.0,
+        "wind_m_s": 5.0,
+        "rain_kg_m2_s": 2e-05,
+        "radiation_w_m2": 220.0,
+        "water_kg_m2": 20.0,
+        "capacity_kg_m2": 150.0,
+        "surface_heat_capacity": 2000000.0,
+        "mixing_height_m": 100.0,
+        "transfer_coefficient": 0.002,
+        "relaxation_time_s": 14400.0,
+        "diffusivity_m2_s": 0.5,
+        "relaxation": 0.5,
+        "max_iterations": 60,
+        "tolerance": 1e-08,
+        "lag_steps": 0,
+        "fault": null
+      },
+      "pulse": false,
+      "plan": {
+        "targets": [
+          "question",
+          "hot_detail",
+          "lag_water"
+        ],
+        "order": [
+          "forcing",
+          "coupled",
+          "water",
+          "heat",
+          "humidity",
+          "saturation",
+          "lag_water",
+          "hotdry",
+          "question",
+          "hot_detail"
+        ],
+        "graph_hash": "4026f8a21cdcc029a9f2e20541db2a49c52527cea79a7bfdecceabdb973c4941",
+        "selected_nodes": [
+          "coupled",
+          "forcing",
+          "heat",
+          "hot_detail",
+          "hotdry",
+          "humidity",
+          "lag_water",
+          "question",
+          "saturation",
+          "water"
+        ],
+        "omitted_nodes": [
+          "CH4",
+          "ENSO",
+          "water_summary_0",
+          "water_summary_1",
+          "water_summary_2",
+          "water_summary_3",
+          "water_summary_4",
+          "water_summary_5"
+        ],
+        "edges": [
+          {
+            "id": "drivers",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "evap_exchange",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "heat_exchange",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "humidity_feedback",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "state_water",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "state_heat",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "state_humidity",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "water_hot",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "heat_hot",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "water_sat",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "hot_question",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "sat_question",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "water_delay",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "hot_detail",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "humidity_detail",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "enso_rain_claim",
+            "status": "UNSUPPORTED_NUMERIC_LINK"
+          },
+          {
+            "id": "ch4_local_claim",
+            "status": "UNSUPPORTED_NUMERIC_LINK"
+          },
+          {
+            "id": "enso_background",
+            "status": "CONTEXT_ONLY"
+          },
+          {
+            "id": "water_summary_0_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_0_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_1_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_1_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_2_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_2_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_3_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_3_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_4_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_4_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_5_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_5_rain",
+            "status": "NOT_NEEDED"
+          }
+        ],
+        "science": "PENDING",
+        "mode": "selective"
+      },
+      "graph_hash": "4026f8a21cdcc029a9f2e20541db2a49c52527cea79a7bfdecceabdb973c4941",
+      "targets": [
+        "question",
+        "hot_detail",
+        "lag_water"
+      ],
+      "completed_steps": 8,
+      "trace": [
+        {
+          "index": 0,
+          "start_s": 0.0,
+          "end_s": 900.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question",
+            "hot_detail"
+          ],
+          "inactive_nodes": [],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay",
+            "hot_detail",
+            "humidity_detail"
+          ],
+          "values": {
+            "ta": [
+              305.2236121268428,
+              305.10963568596844
+            ],
+            "ts": [
+              307.74947957118906,
+              306.3475909109114
+            ],
+            "q": [
+              0.009302276161224483,
+              0.009271228465998182
+            ],
+            "water": [
+              19.98292594875176,
+              19.986528510227647
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 8.984841315395897e-09,
+            "water_residual_kg_m2": 1.394717674685353e-15,
+            "energy_residual_j_m2": 2.8638169169425964e-08,
+            "evap_kg_m2": 0.033272770510296666,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -407.0344098537718,
+              -199.56653231269624
+            ],
+            "vented_water_kg_m2": [
+              0.0005480320507537726,
+              0.0004917420276929998
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.03507405124824137,
+                0.03147148977235197
+              ],
+              "air_water_in_kg_m2": [
+                0.03507405124824137,
+                0.03147148977235197
+              ],
+              "surface_sensible_out_j_m2": [
+                26050.202230641815,
+                12772.258068013047
+              ],
+              "air_sensible_in_j_m2": [
+                26050.202230641815,
+                12772.258068013047
+              ],
+              "surface_latent_out_j_m2": [
+                85931.42555819136,
+                77105.14994226233
+              ],
+              "air_latent_in_j_m2": [
+                85931.42555819136,
+                77105.14994226233
+              ]
+            },
+            "port_clocks_s": [
+              900.0,
+              900.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                true,
+                true
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              20.0,
+              20.0
+            ],
+            "sample_end_s": 0.0,
+            "lag_steps": 1,
+            "warmup": true
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 1,
+          "start_s": 900.0,
+          "end_s": 1800.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question",
+            "hot_detail"
+          ],
+          "inactive_nodes": [],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay",
+            "hot_detail",
+            "humidity_detail"
+          ],
+          "values": {
+            "ta": [
+              305.4198185373486,
+              305.208615597733
+            ],
+            "ts": [
+              307.7930424116727,
+              306.4028013098581
+            ],
+            "q": [
+              0.009583214955060471,
+              0.00952372651693897
+            ],
+            "water": [
+              19.96616986297857,
+              19.97329413503898
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 8.535891993233236e-09,
+            "water_residual_kg_m2": 1.4450246554886803e-15,
+            "energy_residual_j_m2": 5.2677933126688004e-08,
+            "evap_kg_m2": 0.03299523048092886,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -1959.8465998217298,
+              -965.9633689121777
+            ],
+            "vented_water_kg_m2": [
+              0.0026672232244265236,
+              0.0023940176864572205
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.03475608577319014,
+                0.03123437518866757
+              ],
+              "air_water_in_kg_m2": [
+                0.03475608577319014,
+                0.03123437518866757
+              ],
+              "surface_sensible_out_j_m2": [
+                24460.209094251102,
+                12316.68268857125
+              ],
+              "air_sensible_in_j_m2": [
+                24460.209094251102,
+                12316.68268857125
+              ],
+              "surface_latent_out_j_m2": [
+                85152.41014431584,
+                76524.21921223555
+              ],
+              "air_latent_in_j_m2": [
+                85152.41014431584,
+                76524.21921223555
+              ]
+            },
+            "port_clocks_s": [
+              1800.0,
+              1800.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                true,
+                true
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              19.98292594875176,
+              19.986528510227647
+            ],
+            "sample_end_s": 900.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 2,
+          "start_s": 1800.0,
+          "end_s": 2700.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question",
+            "hot_detail"
+          ],
+          "inactive_nodes": [],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay",
+            "hot_detail",
+            "humidity_detail"
+          ],
+          "values": {
+            "ta": [
+              305.5925075906106,
+              305.2984485645454
+            ],
+            "ts": [
+              307.8376251380876,
+              306.4584421067613
+            ],
+            "q": [
+              0.009844421662616919,
+              0.00975887806536988
+            ],
+            "water": [
+              19.949697799168028,
+              19.960270006609832
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 8.145889296429232e-09,
+            "water_residual_kg_m2": 1.1744077932362984e-15,
+            "energy_residual_j_m2": 2.1158484742045403e-08,
+            "evap_kg_m2": 0.03274809611984611,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -3323.3113196686236,
+              -1658.7334183867392
+            ],
+            "vented_water_kg_m2": [
+              0.004637002510725121,
+              0.004165090513104623
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.034472063810544074,
+                0.031024128429148153
+              ],
+              "air_water_in_kg_m2": [
+                0.034472063810544074,
+                0.031024128429148153
+              ],
+              "surface_sensible_out_j_m2": [
+                23126.773842626437,
+                11960.508533781953
+              ],
+              "air_sensible_in_j_m2": [
+                23126.773842626437,
+                11960.508533781953
+              ],
+              "surface_latent_out_j_m2": [
+                84456.55633583297,
+                76009.11465141298
+              ],
+              "air_latent_in_j_m2": [
+                84456.55633583297,
+                76009.11465141298
+              ]
+            },
+            "port_clocks_s": [
+              2700.0,
+              2700.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                true,
+                true
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              19.96616986297857,
+              19.97329413503898
+            ],
+            "sample_end_s": 1800.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 3,
+          "start_s": 2700.0,
+          "end_s": 3600.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question",
+            "hot_detail"
+          ],
+          "inactive_nodes": [],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay",
+            "hot_detail",
+            "humidity_detail"
+          ],
+          "values": {
+            "ta": [
+              305.74501233669474,
+              305.38042824766495
+            ],
+            "ts": [
+              307.88307975252104,
+              306.51444075924616
+            ],
+            "q": [
+              0.010087376661913642,
+              0.009977963026659688
+            ],
+            "water": [
+              19.9334788469925,
+              19.947431444818914
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 7.807045676599955e-09,
+            "water_residual_kg_m2": 1.7832957333041577e-15,
+            "energy_residual_j_m2": 4.7351932153105736e-08,
+            "evap_kg_m2": 0.032528756983221885,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -4524.286841801062,
+              -2288.2992676653257
+            ],
+            "vented_water_kg_m2": [
+              0.0064686031706160645,
+              0.005814651374920085
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.03421895217552731,
+                0.03083856179091645
+              ],
+              "air_water_in_kg_m2": [
+                0.03421895217552731,
+                0.03083856179091645
+              ],
+              "surface_sensible_out_j_m2": [
+                22013.07357495989,
+                11689.483370736185
+              ],
+              "air_sensible_in_j_m2": [
+                22013.07357495989,
+                11689.483370736185
+              ],
+              "surface_latent_out_j_m2": [
+                83836.43283004191,
+                75554.47638774531
+              ],
+              "air_latent_in_j_m2": [
+                83836.43283004191,
+                75554.47638774531
+              ]
+            },
+            "port_clocks_s": [
+              3600.0,
+              3600.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                true,
+                true
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              19.949697799168028,
+              19.960270006609832
+            ],
+            "sample_end_s": 2700.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 4,
+          "start_s": 3600.0,
+          "end_s": 4500.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question",
+            "hot_detail"
+          ],
+          "inactive_nodes": [],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay",
+            "hot_detail",
+            "humidity_detail"
+          ],
+          "values": {
+            "ta": [
+              305.88019052253435,
+              305.45566380999406
+            ],
+            "ts": [
+              307.9292773755981,
+              306.57073325018615
+            ],
+            "q": [
+              0.010313445731735168,
+              0.010182165345740277
+            ],
+            "water": [
+              19.91748482537351,
+              19.93475576829042
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 7.512085176131222e-09,
+            "water_residual_kg_m2": 4.2327252813834093e-16,
+            "energy_residual_j_m2": 3.166496753692627e-08,
+            "evap_kg_m2": 0.032334849073743045,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -5585.796997618081,
+              -2863.5971544502995
+            ],
+            "vented_water_kg_m2": [
+              0.008172385493277024,
+              0.007351663281178906
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.03399402161899056,
+                0.030675676528495528
+              ],
+              "air_water_in_kg_m2": [
+                0.03399402161899056,
+                0.030675676528495528
+              ],
+              "surface_sensible_out_j_m2": [
+                21087.625785425378,
+                11491.385719123373
+              ],
+              "air_sensible_in_j_m2": [
+                21087.625785425378,
+                11491.385719123373
+              ],
+              "surface_latent_out_j_m2": [
+                83285.35296652687,
+                75155.40749481405
+              ],
+              "air_latent_in_j_m2": [
+                83285.35296652687,
+                75155.40749481405
+              ]
+            },
+            "port_clocks_s": [
+              4500.0,
+              4500.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                true,
+                true
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              19.9334788469925,
+              19.947431444818914
+            ],
+            "sample_end_s": 3600.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 5,
+          "start_s": 4500.0,
+          "end_s": 5400.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question",
+            "hot_detail"
+          ],
+          "inactive_nodes": [],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay",
+            "hot_detail",
+            "humidity_detail"
+          ],
+          "values": {
+            "ta": [
+              306.0004928566277,
+              305.52510619097853
+            ],
+            "ts": [
+              307.9761056407011,
+              306.62726301440534
+            ],
+            "q": [
+              0.010523889409825545,
+              0.010372580370270165
+            ],
+            "water": [
+              19.90169001471717,
+              19.922222123972386
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 7.255096079461509e-09,
+            "water_residual_kg_m2": 1.016547956922409e-15,
+            "energy_residual_j_m2": 5.564652383327484e-08,
+            "evap_kg_m2": 0.03216422748718641,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -6527.583232610952,
+              -3392.2887864759186
+            ],
+            "vented_water_kg_m2": [
+              0.009757908638313707,
+              0.008784417499160879
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.033794810656340754,
+                0.03053364431803207
+              ],
+              "air_water_in_kg_m2": [
+                0.033794810656340754,
+                0.03053364431803207
+              ],
+              "surface_sensible_out_j_m2": [
+                20323.493972989574,
+                11355.73269536098
+              ],
+              "air_sensible_in_j_m2": [
+                20323.493972989574,
+                11355.73269536098
+              ],
+              "surface_latent_out_j_m2": [
+                82797.28610803484,
+                74807.42857917857
+              ],
+              "air_latent_in_j_m2": [
+                82797.28610803484,
+                74807.42857917857
+              ]
+            },
+            "port_clocks_s": [
+              5400.0,
+              5400.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                true,
+                true
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              19.91748482537351,
+              19.93475576829042
+            ],
+            "sample_end_s": 4500.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 6,
+          "start_s": 5400.0,
+          "end_s": 6300.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question",
+            "hot_detail"
+          ],
+          "inactive_nodes": [],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay",
+            "hot_detail",
+            "humidity_detail"
+          ],
+          "values": {
+            "ta": [
+              306.1080213140778,
+              305.5895706247873
+            ],
+            "ts": [
+              308.0234664623438,
+              306.6839800094106
+            ],
+            "q": [
+              0.010719871508232122,
+              0.010550221629073443
+            ],
+            "water": [
+              19.886070920142394,
+              19.909811333087625
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 7.12708470018697e-09,
+            "water_residual_kg_m2": 7.337880303381894e-16,
+            "energy_residual_j_m2": 5.529727786779404e-08,
+            "evap_kg_m2": 0.03201494272976707,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -7366.57575151903,
+              -3880.9428236833987
+            ],
+            "vented_water_kg_m2": [
+              0.011233995913538925,
+              0.010120585111130153
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.03361909457477369,
+                0.03041079088476046
+              ],
+              "air_water_in_kg_m2": [
+                0.03361909457477369,
+                0.03041079088476046
+              ],
+              "surface_sensible_out_j_m2": [
+                19697.616642880545,
+                11273.530685402256
+              ],
+              "air_sensible_in_j_m2": [
+                19697.616642880545,
+                11273.530685402256
+              ],
+              "surface_latent_out_j_m2": [
+                82366.78170819554,
+                74506.43766766312
+              ],
+              "air_latent_in_j_m2": [
+                82366.78170819554,
+                74506.43766766312
+              ]
+            },
+            "port_clocks_s": [
+              6300.0,
+              6300.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                true,
+                true
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              19.90169001471717,
+              19.922222123972386
+            ],
+            "sample_end_s": 5400.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 7,
+          "start_s": 6300.0,
+          "end_s": 7200.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question",
+            "hot_detail"
+          ],
+          "inactive_nodes": [],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay",
+            "hot_detail",
+            "humidity_detail"
+          ],
+          "values": {
+            "ta": [
+              306.2045789779073,
+              305.6497559448431
+            ],
+            "ts": [
+              308.07127412187856,
+              306.74083990981114
+            ],
+            "q": [
+              0.010902466874754995,
+              0.010716027068462235
+            ],
+            "water": [
+              19.87060606139687,
+              19.897505751598466
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 7.073708729876671e-09,
+            "water_residual_kg_m2": 1.420738526825005e-15,
+            "energy_residual_j_m2": 6.868503987789154e-09,
+            "evap_kg_m2": 0.03188522011734239,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -8117.296002505009,
+              -4335.190423343627
+            ],
+            "vented_water_kg_m2": [
+              0.012608794197122726,
+              0.011367264421099981
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.03346485874552473,
+                0.030305581489160054
+              ],
+              "air_water_in_kg_m2": [
+                0.03346485874552473,
+                0.030305581489160054
+              ],
+              "surface_sensible_out_j_m2": [
+                19190.239196249957,
+                11237.062358147135
+              ],
+              "air_sensible_in_j_m2": [
+                19190.239196249957,
+                11237.062358147135
+              ],
+              "surface_latent_out_j_m2": [
+                81988.9039265356,
+                74248.67464844213
+              ],
+              "air_latent_in_j_m2": [
+                81988.9039265356,
+                74248.67464844213
+              ]
+            },
+            "port_clocks_s": [
+              7200.0,
+              7200.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                true,
+                true
+              ],
+              "saturated": [
+                false,
+                false
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              19.886070920142394,
+              19.909811333087625
+            ],
+            "sample_end_s": 6300.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        }
+      ],
+      "output": {
+        "question": {
+          "answer": {
+            "hot_dry": [
+              true,
+              true
+            ],
+            "saturated": [
+              false,
+              false
+            ]
+          },
+          "action": "NONE_RESEARCH_ONLY"
+        },
+        "hot_detail": {
+          "detail": [
+            0.010902466874754995,
+            0.010716027068462235
+          ]
+        },
+        "lag_water": {
+          "water": [
+            19.886070920142394,
+            19.909811333087625
+          ],
+          "sample_end_s": 6300.0,
+          "lag_steps": 1,
+          "warmup": false
+        }
+      },
+      "executions": {
+        "forcing": 8,
+        "coupled": 8,
+        "water": 8,
+        "heat": 8,
+        "humidity": 8,
+        "saturation": 8,
+        "lag_water": 8,
+        "hotdry": 8,
+        "question": 8,
+        "hot_detail": 8
+      },
+      "skips": {},
+      "total_node_executions": 80,
+      "native_physical_port_calls": 384,
+      "initial_state_hash": "894865a3949e65f05d4a5cc40e66c49bdadd62df9ca6b1464e87607dca71bc8b",
+      "final_state_hash": "1696f05a0188ac2c31c68a707c610462f5f2ab8f72fc7f43f8e8ed36fe22625a",
+      "final_values": {
+        "ta": [
+          306.2045789779073,
+          305.6497559448431
+        ],
+        "ts": [
+          308.07127412187856,
+          306.74083990981114
+        ],
+        "q": [
+          0.010902466874754995,
+          0.010716027068462235
+        ],
+        "water": [
+          19.87060606139687,
+          19.897505751598466
+        ]
+      },
+      "max_water_residual_kg_m2": 1.7832957333041577e-15,
+      "max_energy_residual_j_m2": 5.564652383327484e-08,
+      "rollback": null,
+      "seconds": 0.01242619997356087,
+      "evidence": "SYNTHETIC_PHYSICAL_SANDBOX",
+      "science": "PENDING",
+      "causal_attribution": false,
+      "forecast_skill": null
+    },
+    "RAIN_HEAT": {
+      "status": "COMPLETED",
+      "failure": null,
+      "config": {
+        "grid_n": 2,
+        "length_m": 2000.0,
+        "dt_s": 900.0,
+        "steps": 8,
+        "ta_k": 304.0,
+        "ts_offset_k": 2.0,
+        "q_kgkg": 0.009,
+        "pressure_pa": 100000.0,
+        "wind_m_s": 3.0,
+        "rain_kg_m2_s": 0.003,
+        "radiation_w_m2": 220.0,
+        "water_kg_m2": 145.0,
+        "capacity_kg_m2": 150.0,
+        "surface_heat_capacity": 2000000.0,
+        "mixing_height_m": 100.0,
+        "transfer_coefficient": 0.002,
+        "relaxation_time_s": 14400.0,
+        "diffusivity_m2_s": 0.5,
+        "relaxation": 0.5,
+        "max_iterations": 60,
+        "tolerance": 1e-08,
+        "lag_steps": 0,
+        "fault": null
+      },
+      "pulse": true,
+      "plan": {
+        "targets": [
+          "question",
+          "hot_detail",
+          "lag_water"
+        ],
+        "order": [
+          "forcing",
+          "coupled",
+          "water",
+          "heat",
+          "humidity",
+          "saturation",
+          "lag_water",
+          "hotdry",
+          "question",
+          "hot_detail"
+        ],
+        "graph_hash": "4026f8a21cdcc029a9f2e20541db2a49c52527cea79a7bfdecceabdb973c4941",
+        "selected_nodes": [
+          "coupled",
+          "forcing",
+          "heat",
+          "hot_detail",
+          "hotdry",
+          "humidity",
+          "lag_water",
+          "question",
+          "saturation",
+          "water"
+        ],
+        "omitted_nodes": [
+          "CH4",
+          "ENSO",
+          "water_summary_0",
+          "water_summary_1",
+          "water_summary_2",
+          "water_summary_3",
+          "water_summary_4",
+          "water_summary_5"
+        ],
+        "edges": [
+          {
+            "id": "drivers",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "evap_exchange",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "heat_exchange",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "humidity_feedback",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "state_water",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "state_heat",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "state_humidity",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "water_hot",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "heat_hot",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "water_sat",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "hot_question",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "sat_question",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "water_delay",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "hot_detail",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "humidity_detail",
+            "status": "EXECUTE"
+          },
+          {
+            "id": "enso_rain_claim",
+            "status": "UNSUPPORTED_NUMERIC_LINK"
+          },
+          {
+            "id": "ch4_local_claim",
+            "status": "UNSUPPORTED_NUMERIC_LINK"
+          },
+          {
+            "id": "enso_background",
+            "status": "CONTEXT_ONLY"
+          },
+          {
+            "id": "water_summary_0_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_0_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_1_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_1_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_2_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_2_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_3_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_3_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_4_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_4_rain",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_5_state",
+            "status": "NOT_NEEDED"
+          },
+          {
+            "id": "water_summary_5_rain",
+            "status": "NOT_NEEDED"
+          }
+        ],
+        "science": "PENDING",
+        "mode": "selective"
+      },
+      "graph_hash": "4026f8a21cdcc029a9f2e20541db2a49c52527cea79a7bfdecceabdb973c4941",
+      "targets": [
+        "question",
+        "hot_detail",
+        "lag_water"
+      ],
+      "completed_steps": 8,
+      "trace": [
+        {
+          "index": 0,
+          "start_s": 0.0,
+          "end_s": 900.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              304.1326531297095,
+              304.0624560220102
+            ],
+            "ts": [
+              306.62927420392003,
+              305.2376490319398
+            ],
+            "q": [
+              0.01018116592607335,
+              0.01006046271992202
+            ],
+            "water": [
+              147.56249477539598,
+              148.1165464180195
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 7.323484874088848e-09,
+            "water_residual_kg_m2": 1.1102230246251565e-14,
+            "energy_residual_j_m2": 5.430774763226509e-08,
+            "evap_kg_m2": 0.13047940329226196,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -242.25878198585983,
+              -114.06078283267097
+            ],
+            "vented_water_kg_m2": [
+              0.002148519134437864,
+              0.0019289622184453256
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.1375052246040231,
+                0.12345358198050087
+              ],
+              "air_water_in_kg_m2": [
+                0.1375052246040231,
+                0.12345358198050087
+              ],
+              "surface_sensible_out_j_m2": [
+                15504.562047092511,
+                7299.890101292007
+              ],
+              "air_sensible_in_j_m2": [
+                15504.562047092511,
+                7299.890101292007
+              ],
+              "surface_latent_out_j_m2": [
+                336887.8002798566,
+                302461.2758522271
+              ],
+              "air_latent_in_j_m2": [
+                336887.8002798566,
+                302461.2758522271
+              ]
+            },
+            "port_clocks_s": [
+              900.0,
+              900.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                true,
+                true
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              145.0,
+              145.0
+            ],
+            "sample_end_s": 0.0,
+            "lag_steps": 1,
+            "warmup": true
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 1,
+          "start_s": 900.0,
+          "end_s": 1800.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              304.2472430457572,
+              304.11563134989996
+            ],
+            "ts": [
+              306.5583734579209,
+              305.18868531367485
+            ],
+            "q": [
+              0.011245183979440883,
+              0.011013799359753728
+            ],
+            "water": [
+              150.0,
+              150.0
+            ]
+          },
+          "ledger": {
+            "iterations": 24,
+            "fixed_point_error": 6.4537758817651e-09,
+            "water_residual_kg_m2": 1.1546319456101628e-14,
+            "energy_residual_j_m2": 3.7834979593753815e-08,
+            "evap_kg_m2": 0.1254525382200403,
+            "runoff_kg_m2": 0.6840680584877106,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -1163.1646554115473,
+              -546.2261773671804
+            ],
+            "vented_water_kg_m2": [
+              0.010395223396559232,
+              0.009329390580623062
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.13232726959329882,
+                0.11857780684678179
+              ],
+              "air_water_in_kg_m2": [
+                0.13232726959329882,
+                0.11857780684678179
+              ],
+              "surface_sensible_out_j_m2": [
+                14347.218839981355,
+                6664.272410056492
+              ],
+              "air_sensible_in_j_m2": [
+                14347.218839981355,
+                6664.272410056492
+              ],
+              "surface_latent_out_j_m2": [
+                324201.8105035821,
+                290515.6267746154
+              ],
+              "air_latent_in_j_m2": [
+                324201.8105035821,
+                290515.6267746154
+              ]
+            },
+            "port_clocks_s": [
+              1800.0,
+              1800.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                true,
+                true
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              147.56249477539598,
+              148.1165464180195
+            ],
+            "sample_end_s": 900.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 2,
+          "start_s": 1800.0,
+          "end_s": 2700.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              304.3461867835293,
+              304.16090950456567
+            ],
+            "ts": [
+              306.49616870233217,
+              305.14705740966554
+            ],
+            "q": [
+              0.012186353689480565,
+              0.01185886944634437
+            ],
+            "water": [
+              149.87435334591197,
+              149.88719799898772
+            ]
+          },
+          "ledger": {
+            "iterations": 23,
+            "fixed_point_error": 9.619157026463654e-09,
+            "water_residual_kg_m2": 6.432354648922001e-15,
+            "energy_residual_j_m2": 5.820766091346741e-08,
+            "evap_kg_m2": 0.11922432755015373,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -1958.5940904684899,
+              -914.1817945483043
+            ],
+            "vented_water_kg_m2": [
+              0.017792517402721524,
+              0.01596048172458404
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.12564665408802325,
+                0.11280200101228419
+              ],
+              "air_water_in_kg_m2": [
+                0.12564665408802325,
+                0.11280200101228419
+              ],
+              "surface_sensible_out_j_m2": [
+                13342.489331895866,
+                6123.624868413984
+              ],
+              "air_sensible_in_j_m2": [
+                13342.489331895866,
+                6123.624868413984
+              ],
+              "surface_latent_out_j_m2": [
+                307834.302515657,
+                276364.90248009627
+              ],
+              "air_latent_in_j_m2": [
+                307834.302515657,
+                276364.90248009627
+              ]
+            },
+            "port_clocks_s": [
+              2700.0,
+              2700.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                true,
+                true
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              150.0,
+              150.0
+            ],
+            "sample_end_s": 1800.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 3,
+          "start_s": 2700.0,
+          "end_s": 3600.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              304.4315833388118,
+              304.1994786117212
+            ],
+            "ts": [
+              306.4416316289875,
+              305.111894695266
+            ],
+            "q": [
+              0.013018973853468768,
+              0.012608155429934657
+            ],
+            "water": [
+              149.75460258469076,
+              149.7794940926105
+            ]
+          },
+          "ledger": {
+            "iterations": 23,
+            "fixed_point_error": 8.861604783305665e-09,
+            "water_residual_kg_m2": 7.202571872255703e-15,
+            "energy_residual_j_m2": 5.413312464952469e-09,
+            "evap_kg_m2": 0.11372733379922355,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -2645.346898517564,
+              -1227.5195378789163
+            ],
+            "vented_water_kg_m2": [
+              0.024335951314152268,
+              0.021838847155213212
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.11975076122121531,
+                0.10770390637723179
+              ],
+              "air_water_in_kg_m2": [
+                0.11975076122121531,
+                0.10770390637723179
+              ],
+              "surface_sensible_out_j_m2": [
+                12470.581533918838,
+                5665.058338215431
+              ],
+              "air_sensible_in_j_m2": [
+                12470.581533918838,
+                5665.058338215431
+              ],
+              "surface_latent_out_j_m2": [
+                293389.3649919775,
+                263874.57062421786
+              ],
+              "air_latent_in_j_m2": [
+                293389.3649919775,
+                263874.57062421786
+              ]
+            },
+            "port_clocks_s": [
+              3600.0,
+              3600.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                true,
+                true
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              149.87435334591197,
+              149.88719799898772
+            ],
+            "sample_end_s": 2700.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 4,
+          "start_s": 3600.0,
+          "end_s": 4500.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              304.5052552924147,
+              304.23235811945915
+            ],
+            "ts": [
+              306.3938576603122,
+              305.0824299210331
+            ],
+            "q": [
+              0.013755656782519594,
+              0.013272685578448884
+            ],
+            "water": [
+              149.64005691426854,
+              149.67629045574174
+            ]
+          },
+          "ledger": {
+            "iterations": 23,
+            "fixed_point_error": 8.190284006559523e-09,
+            "water_residual_kg_m2": 5.3915205633359164e-15,
+            "energy_residual_j_m2": 4.579487722367048e-08,
+            "evap_kg_m2": 0.1088746536454905,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -3238.011920687035,
+              -1494.4750389074707
+            ],
+            "vented_water_kg_m2": [
+              0.03012486886430954,
+              0.027051244048623017
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.11454567042221997,
+                0.10320363686876104
+              ],
+              "air_water_in_kg_m2": [
+                0.11454567042221997,
+                0.10320363686876104
+              ],
+              "surface_sensible_out_j_m2": [
+                11714.281575856647,
+                5277.401377720673
+              ],
+              "air_sensible_in_j_m2": [
+                11714.281575856647,
+                5277.401377720673
+              ],
+              "surface_latent_out_j_m2": [
+                280636.8925344389,
+                252848.91032846452
+              ],
+              "air_latent_in_j_m2": [
+                280636.8925344389,
+                252848.91032846452
+              ]
+            },
+            "port_clocks_s": [
+              4500.0,
+              4500.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                true,
+                true
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              149.75460258469076,
+              149.7794940926105
+            ],
+            "sample_end_s": 3600.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 5,
+          "start_s": 4500.0,
+          "end_s": 5400.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              304.56878494094474,
+              304.26042191355356
+            ],
+            "ts": [
+              306.35205060272665,
+              305.0579866704619
+            ],
+            "q": [
+              0.014407531772259135,
+              0.01386220623730758
+            ],
+            "water": [
+              149.53010784516422,
+              149.57705951093484
+            ]
+          },
+          "ledger": {
+            "iterations": 23,
+            "fixed_point_error": 7.59496288083028e-09,
+            "water_residual_kg_m2": 2.1371793224034263e-15,
+            "energy_residual_j_m2": 4.474713932722807e-08,
+            "evap_kg_m2": 0.10459000695560434,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -3749.256312743998,
+              -1722.1132015988196
+            ],
+            "vented_water_kg_m2": [
+              0.035246904877065305,
+              0.03167432771530154
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.10994906910431586,
+                0.09923094480689286
+              ],
+              "air_water_in_kg_m2": [
+                0.10994906910431586,
+                0.09923094480689286
+              ],
+              "surface_sensible_out_j_m2": [
+                11058.61090026338,
+                4950.971330886427
+              ],
+              "air_sensible_in_j_m2": [
+                11058.61090026338,
+                4950.971330886427
+              ],
+              "surface_latent_out_j_m2": [
+                269375.21930557385,
+                243115.8147768875
+              ],
+              "air_latent_in_j_m2": [
+                269375.21930557385,
+                243115.8147768875
+              ]
+            },
+            "port_clocks_s": [
+              5400.0,
+              5400.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                true,
+                true
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              149.64005691426854,
+              149.67629045574174
+            ],
+            "sample_end_s": 4500.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 6,
+          "start_s": 5400.0,
+          "end_s": 6300.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              304.6235456790896,
+              304.28441831790656
+            ],
+            "ts": [
+              306.3155093032666,
+              305.03796840019834
+            ],
+            "q": [
+              0.014984423052113111,
+              0.014385333079369088
+            ],
+            "water": [
+              149.42421910626143,
+              149.4813355021246
+            ]
+          },
+          "ledger": {
+            "iterations": 23,
+            "fixed_point_error": 7.066660145937931e-09,
+            "water_residual_kg_m2": 1.0380585280245214e-14,
+            "energy_residual_j_m2": 3.101013135164976e-08,
+            "evap_kg_m2": 0.10080637385651531,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -4190.076685514222,
+              -1916.4887333841143
+            ],
+            "vented_water_kg_m2": [
+              0.03977939614961663,
+              0.03577584714969963
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.10588873890280183,
+                0.0957240088102288
+              ],
+              "air_water_in_kg_m2": [
+                0.10588873890280183,
+                0.0957240088102288
+              ],
+              "surface_sensible_out_j_m2": [
+                10490.531069200997,
+                4677.376481071722
+              ],
+              "air_sensible_in_j_m2": [
+                10490.531069200997,
+                4677.376481071722
+              ],
+              "surface_latent_out_j_m2": [
+                259427.41031186449,
+                234523.82158506056
+              ],
+              "air_latent_in_j_m2": [
+                259427.41031186449,
+                234523.82158506056
+              ]
+            },
+            "port_clocks_s": [
+              6300.0,
+              6300.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                true,
+                true
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              149.53010784516422,
+              149.57705951093484
+            ],
+            "sample_end_s": 5400.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        },
+        {
+          "index": 7,
+          "start_s": 6300.0,
+          "end_s": 7200.0,
+          "executed_nodes": [
+            "forcing",
+            "coupled",
+            "water",
+            "heat",
+            "humidity",
+            "saturation",
+            "lag_water",
+            "hotdry",
+            "question"
+          ],
+          "inactive_nodes": [
+            "hot_detail"
+          ],
+          "active_edges": [
+            "drivers",
+            "evap_exchange",
+            "heat_exchange",
+            "humidity_feedback",
+            "state_water",
+            "state_heat",
+            "state_humidity",
+            "water_hot",
+            "heat_hot",
+            "water_sat",
+            "hot_question",
+            "sat_question",
+            "water_delay"
+          ],
+          "values": {
+            "ta": [
+              304.6707292722846,
+              304.3049874004563
+            ],
+            "ts": [
+              306.28361602647874,
+              305.0218488498936
+            ],
+            "q": [
+              0.01549500562400672,
+              0.014849684037660299
+            ],
+            "water": [
+              149.3219178500711,
+              149.38870711743513
+            ]
+          },
+          "ledger": {
+            "iterations": 23,
+            "fixed_point_error": 6.597531410079682e-09,
+            "water_residual_kg_m2": 1.0672018824209317e-14,
+            "energy_residual_j_m2": 3.828608896583319e-08,
+            "evap_kg_m2": 0.09746482043990007,
+            "runoff_kg_m2": 0.0,
+            "closure": "surface_plus_atmosphere_enthalpy_and_water",
+            "boundary_heat_j_m2": [
+              -4570.017266189834,
+              -2082.785045235202
+            ],
+            "vented_water_kg_m2": [
+              0.043790615749275986,
+              0.039415694999974174
+            ],
+            "exchange_ledger": {
+              "surface_water_out_kg_m2": [
+                0.10230125619033356,
+                0.09262838468946659
+              ],
+              "air_water_in_kg_m2": [
+                0.10230125619033356,
+                0.09262838468946659
+              ],
+              "surface_sensible_out_j_m2": [
+                9998.689096672311,
+                4449.344933013902
+              ],
+              "air_sensible_in_j_m2": [
+                9998.689096672311,
+                4449.344933013902
+              ],
+              "surface_latent_out_j_m2": [
+                250638.07766631723,
+                226939.54248919312
+              ],
+              "air_latent_in_j_m2": [
+                250638.07766631723,
+                226939.54248919312
+              ]
+            },
+            "port_clocks_s": [
+              7200.0,
+              7200.0
+            ]
+          },
+          "question": {
+            "answer": {
+              "hot_dry": [
+                false,
+                false
+              ],
+              "saturated": [
+                true,
+                true
+              ]
+            },
+            "action": "NONE_RESEARCH_ONLY"
+          },
+          "lag_water": {
+            "water": [
+              149.42421910626143,
+              149.4813355021246
+            ],
+            "sample_end_s": 6300.0,
+            "lag_steps": 1,
+            "warmup": false
+          },
+          "humidity_history_index": null
+        }
+      ],
+      "output": {
+        "question": {
+          "answer": {
+            "hot_dry": [
+              false,
+              false
+            ],
+            "saturated": [
+              true,
+              true
+            ]
+          },
+          "action": "NONE_RESEARCH_ONLY"
+        },
+        "hot_detail": {
+          "detail": null,
+          "status": "CONDITION_FALSE"
+        },
+        "lag_water": {
+          "water": [
+            149.42421910626143,
+            149.4813355021246
+          ],
+          "sample_end_s": 6300.0,
+          "lag_steps": 1,
+          "warmup": false
+        }
+      },
+      "executions": {
+        "forcing": 8,
+        "coupled": 8,
+        "water": 8,
+        "heat": 8,
+        "humidity": 8,
+        "saturation": 8,
+        "lag_water": 8,
+        "hotdry": 8,
+        "question": 8
+      },
+      "skips": {
+        "hot_detail": 8
+      },
+      "total_node_executions": 72,
+      "native_physical_port_calls": 372,
+      "initial_state_hash": "b6fb14ce6bdc8cf7d74b17d65f944d26017587d0646538166a7f491a7db22d49",
+      "final_state_hash": "b8825cd6db87e912ef9a9f05a535a4246b188e783c0ca67e5dfe6857b94a0f03",
+      "final_values": {
+        "ta": [
+          304.6707292722846,
+          304.3049874004563
+        ],
+        "ts": [
+          306.28361602647874,
+          305.0218488498936
+        ],
+        "q": [
+          0.01549500562400672,
+          0.014849684037660299
+        ],
+        "water": [
+          149.3219178500711,
+          149.38870711743513
+        ]
+      },
+      "max_water_residual_kg_m2": 1.1546319456101628e-14,
+      "max_energy_residual_j_m2": 5.820766091346741e-08,
+      "rollback": null,
+      "seconds": 0.012636699946597219,
+      "evidence": "SYNTHETIC_PHYSICAL_SANDBOX",
+      "science": "PENDING",
+      "causal_attribution": false,
+      "forecast_skill": null
+    }
+  },
+  "delta_from_baseline": {
+    "BASELINE": {
+      "ta": [
+        0.0,
+        0.0
+      ],
+      "ts": [
+        0.0,
+        0.0
+      ],
+      "q": [
+        0.0,
+        0.0
+      ],
+      "water": [
+        0.0,
+        0.0
+      ]
+    },
+    "HEAT_DRY_WIND": {
+      "ta": [
+        7.371394262851709,
+        7.197106692205239
+      ],
+      "ts": [
+        6.919187707109643,
+        6.929356889419523
+      ],
+      "q": [
+        0.0003476166738226021,
+        0.00035567060785946826
+      ],
+      "water": [
+        -30.044571997565676,
+        -30.046397393219827
+      ]
+    },
+    "RAIN_HEAT": {
+      "ta": [
+        5.837544557228966,
+        5.852338147818443
+      ],
+      "ts": [
+        5.131529611709823,
+        5.2103658295019954
+      ],
+      "q": [
+        0.004940155423074327,
+        0.0044893275770575315
+      ],
+      "water": [
+        99.40673979110855,
+        99.44480397261684
+      ]
+    }
+  },
+  "interpretation": "joint synthetic scenario differences, not identified causal effects"
+}

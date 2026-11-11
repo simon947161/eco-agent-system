@@ -1,0 +1,25 @@
+{
+  "task": "CLIMATEOS-ADAPTIVE-EARTH-RELATIONS-RUNTIME-001",
+  "issue": 154,
+  "environment": "LOCAL_WINDOWS_PUBLIC_WORKTREE",
+  "implementation": "LOCAL_VERIFIED",
+  "science": "PENDING",
+  "private_assets_accessed": false,
+  "deployed": false,
+  "merged": false,
+  "fixed_parent_pr": 152,
+  "fixed_parent_head": "cf91e4a061341bc33d16400bcf4c6a2c2817aa65",
+  "final_unique_configs": 120,
+  "final_runtime_invocations": 720,
+  "earlier_runs": "TWO_HISTORICAL_REPAIR_BATCHES_NOT_EXTRA_INDEPENDENT_SAMPLES",
+  "remote_receipt": "SEE_EXACT_HEAD_DRAFT_PR_RECEIPT",
+  "request": "INDEPENDENT_CHATGPT_SCIENTIFIC_REVIEW",
+  "review_closure": {
+    "review_comment": 6791516840,
+    "engineering": "LOCAL_VERIFIED",
+    "science": "PENDING",
+    "new_sweep": false,
+    "archived_pairs_recalculated": 120,
+    "rollback": "WHOLE_STEP_BEFORE_FORCING_SYNC"
+  }
+}

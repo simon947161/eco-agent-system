@@ -1,0 +1,19 @@
+{
+  "affected": {
+    "tests": 29,
+    "status": "PASS"
+  },
+  "repository": {
+    "tests": 768,
+    "status": "PASS",
+    "skipped": 1,
+    "skip_reason": "existing Windows symlink privilege test",
+    "seconds": 17.327
+  },
+  "browser": {
+    "status": "PASS",
+    "viewports": 2,
+    "pages": 20
+  },
+  "science": "PENDING"
+}

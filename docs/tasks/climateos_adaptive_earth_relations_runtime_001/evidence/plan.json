@@ -1,0 +1,161 @@
+{
+  "targets": [
+    "question"
+  ],
+  "order": [
+    "forcing",
+    "coupled",
+    "water",
+    "heat",
+    "saturation",
+    "hotdry",
+    "question"
+  ],
+  "graph_hash": "4026f8a21cdcc029a9f2e20541db2a49c52527cea79a7bfdecceabdb973c4941",
+  "selected_nodes": [
+    "coupled",
+    "forcing",
+    "heat",
+    "hotdry",
+    "question",
+    "saturation",
+    "water"
+  ],
+  "omitted_nodes": [
+    "CH4",
+    "ENSO",
+    "hot_detail",
+    "humidity",
+    "lag_water",
+    "water_summary_0",
+    "water_summary_1",
+    "water_summary_2",
+    "water_summary_3",
+    "water_summary_4",
+    "water_summary_5"
+  ],
+  "edges": [
+    {
+      "id": "drivers",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "evap_exchange",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "heat_exchange",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "humidity_feedback",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "state_water",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "state_heat",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "state_humidity",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_hot",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "heat_hot",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "water_sat",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "hot_question",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "sat_question",
+      "status": "EXECUTE"
+    },
+    {
+      "id": "water_delay",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "hot_detail",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "humidity_detail",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "enso_rain_claim",
+      "status": "UNSUPPORTED_NUMERIC_LINK"
+    },
+    {
+      "id": "ch4_local_claim",
+      "status": "UNSUPPORTED_NUMERIC_LINK"
+    },
+    {
+      "id": "enso_background",
+      "status": "CONTEXT_ONLY"
+    },
+    {
+      "id": "water_summary_0_state",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_0_rain",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_1_state",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_1_rain",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_2_state",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_2_rain",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_3_state",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_3_rain",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_4_state",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_4_rain",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_5_state",
+      "status": "NOT_NEEDED"
+    },
+    {
+      "id": "water_summary_5_rain",
+      "status": "NOT_NEEDED"
+    }
+  ],
+  "science": "PENDING",
+  "mode": "selective"
+}
