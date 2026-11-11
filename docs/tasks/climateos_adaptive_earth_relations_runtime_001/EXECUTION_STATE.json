@@ -13,5 +13,13 @@
   "final_runtime_invocations": 720,
   "earlier_runs": "TWO_HISTORICAL_REPAIR_BATCHES_NOT_EXTRA_INDEPENDENT_SAMPLES",
   "remote_receipt": "SEE_EXACT_HEAD_DRAFT_PR_RECEIPT",
-  "request": "INDEPENDENT_CHATGPT_SCIENTIFIC_REVIEW"
+  "request": "INDEPENDENT_CHATGPT_SCIENTIFIC_REVIEW",
+  "review_closure": {
+    "review_comment": 6791516840,
+    "engineering": "LOCAL_VERIFIED",
+    "science": "PENDING",
+    "new_sweep": false,
+    "archived_pairs_recalculated": 120,
+    "rollback": "WHOLE_STEP_BEFORE_FORCING_SYNC"
+  }
 }

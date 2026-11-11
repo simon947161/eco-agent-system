@@ -21,3 +21,7 @@ python -m cczps_lite.integration.earth_relations benchmark --output runtime_data
 ```
 
 浏览器直接打开slides.html，无服务器、网络请求或生产部署。图内数字是已执行CLI结果的回放，不是在浏览器中新算的预测。
+
+## 2026-11-11 评审尾项修复
+
+见 [最小修复与复核](REVIEW_CLOSURE_ZH.md)。旧性能批次保留为历史；当前源码和逐字段实算差值绑定 `evidence/review_closure.json`。科学仍 PENDING；独立复核尚待 ChatGPT。

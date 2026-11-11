@@ -1,0 +1,3248 @@
+{
+  "historical_head": "256f950685c0eafd3771ff1c1c8fe696de6f5d1d",
+  "historical_runs_sha256": "3b6e2ab9fb46bc0bd3da974bc234d5d307495f0e5683512198a99b6dfa1e4b5e",
+  "historical_source_hashes": {
+    "cczps_lite/integration/earth_relations/__init__.py": "67b0607f01a80163785ee358c8cd62ae20a13caff9c8c108f8e5138904191f3a",
+    "cczps_lite/integration/earth_relations/__main__.py": "7df333ada7b5a859996ae1bb6a7fba988bd9686b9c3540e0da8e09a83a06ae95",
+    "cczps_lite/integration/earth_relations/coupling.py": "caec708c5338a9f567c4581019a84b9fccbdc51c77ada3ba13023cd716f06756",
+    "cczps_lite/integration/earth_relations/experiments.py": "1b068f6ec92b2583cec4764a2d9adf868410ec37efbb52770c4f110173ab8df1",
+    "cczps_lite/integration/earth_relations/graph.py": "1a124d9344057bf25ecf7b60ec75ba50dca9b0c789a6c93a3db3a25030ea6493",
+    "cczps_lite/integration/earth_relations/runtime.py": "d58ff5bfa825870f9aa30ceb05f5e4b15e4477da85e84d365d20c8e07c837af5",
+    "cczps_lite/integration/earth_system_coupling/models.py": "2fab307faac29671b8643fa4bc3cc8b53b47cfc85d5c4267f95d8b4e8d944b40"
+  },
+  "source_hashes": {
+    "cczps_lite/integration/earth_relations/__init__.py": "67b0607f01a80163785ee358c8cd62ae20a13caff9c8c108f8e5138904191f3a",
+    "cczps_lite/integration/earth_relations/__main__.py": "7df333ada7b5a859996ae1bb6a7fba988bd9686b9c3540e0da8e09a83a06ae95",
+    "cczps_lite/integration/earth_relations/coupling.py": "caec708c5338a9f567c4581019a84b9fccbdc51c77ada3ba13023cd716f06756",
+    "cczps_lite/integration/earth_relations/experiments.py": "96239ee4a9fbc829a91cfa16192c159b39e074f49db13def7af7eb2c1e12f468",
+    "cczps_lite/integration/earth_relations/graph.py": "1a124d9344057bf25ecf7b60ec75ba50dca9b0c789a6c93a3db3a25030ea6493",
+    "cczps_lite/integration/earth_relations/runtime.py": "bd0a94a1d065f3a52d539308e29bbeee5e996b389ad1af83dbd489080ac15aa6",
+    "cczps_lite/integration/earth_system_coupling/models.py": "2fab307faac29671b8643fa4bc3cc8b53b47cfc85d5c4267f95d8b4e8d944b40"
+  },
+  "method": "Independent per-field absolute subtraction of archived pairs. No new physical sweep or timing. Empty states are NOT_COMPARABLE.",
+  "historical_max_output_delta_meaning": "EQUALITY_ASSERTED receipt, not a measured prediction error",
+  "whole_step_contract": "checkpoint before forcing sync; restore Field metadata, revision, inventories and port clocks on any exception",
+  "science": "PENDING",
+  "rows": [
+    {
+      "id": 0,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 1,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 2,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 3,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 4,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 5,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 2,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 6,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 7,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 8,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 9,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 10,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 11,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 12,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 13,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 14,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 15,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 16,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 17,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 4,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 18,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 19,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 20,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 21,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 22,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 23,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 24,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 25,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 26,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 27,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 28,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 29,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 2,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 30,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 31,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 32,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 33,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 34,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 35,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 36,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 37,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 38,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 39,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 40,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 41,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 4,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 42,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 43,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 44,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 45,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 46,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 47,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 48,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 49,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 50,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 51,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 52,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 53,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 2,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 54,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 55,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 56,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 57,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 58,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 59,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 60,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 61,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 62,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 63,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 64,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 65,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 4,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 66,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 67,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 68,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 69,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 70,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 71,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 72,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 73,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 74,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 75,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 76,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 77,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 2,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 78,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 79,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 80,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 81,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 82,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 83,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 84,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 85,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 86,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 87,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 88,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 89,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 4,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 90,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 91,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 92,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 93,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 94,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 95,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 96,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 97,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 98,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 99,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 100,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 101,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 2,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 102,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 103,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 104,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 105,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 106,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 2,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 107,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 108,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 109,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 110,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 111,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 112,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 113,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 0,
+          "missing_pairs": 4,
+          "max_abs_delta": null
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 114,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    },
+    {
+      "id": 115,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 116,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 117,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 118,
+      "equality_asserted": true,
+      "numeric_status": "CALCULATED",
+      "final_value_differences": {
+        "q": {
+          "unit": "kg kg-1",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ta": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "ts": {
+          "unit": "K",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        },
+        "water": {
+          "unit": "kg m-2",
+          "count": 4,
+          "missing_pairs": 0,
+          "max_abs_delta": 0.0
+        }
+      }
+    },
+    {
+      "id": 119,
+      "equality_asserted": true,
+      "numeric_status": "NOT_COMPARABLE",
+      "final_value_differences": {}
+    }
+  ]
+}

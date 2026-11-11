@@ -7,3 +7,7 @@
 - 展示验收见evidence/ui/qa.json；浏览器证据完成前该项不视为通过。
 - 原PR152仅本分支models.advance新增可选mapper，不改变默认公式；父分支、旧报告和科学状态保持。没有访问私人旧资产。
 - GitHub CI与精确远程HEAD见最终PR回执；本地通过不代替远程通过。
+
+## 2026-11-11 评审尾项修复
+
+见 [最小修复与复核](REVIEW_CLOSURE_ZH.md)。旧性能批次保留为历史；当前源码和逐字段实算差值绑定 `evidence/review_closure.json`。科学仍 PENDING；独立复核尚待 ChatGPT。

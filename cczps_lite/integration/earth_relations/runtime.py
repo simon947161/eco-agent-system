@@ -39,14 +39,15 @@ class Runtime:
             for step in range(self.config['steps']):
                 need(time.perf_counter()-start<120,'RUNTIME_TIME_BUDGET')
                 c=self.config; t=step*c['dt_s']; outputs={};executed=[];inactive=[];info=None
-                # A disclosed synthetic two-cell precipitation pulse, not observations.
-                if self.pulse:
-                    f=self.state.fields['rain'];amp=c['rain_kg_m2_s'] if step<2 else 0.
-                    self.state.put(replace(f,values=tuple(amp*(1+.2*i) for i in range(c['grid_n'])),
-                        lineage=('SYNTHETIC_TWO_INTERVAL_PULSE',)))
+                # Whole-step transaction: forcing sync belongs inside the checkpoint.
                 cp=self.state.checkpoint();clocks=(self.ports.air.current_time,self.ports.land.current_time)
                 before_hash=self.state.hash()
                 try:
+                    # A disclosed synthetic two-cell pulse, not observations.
+                    if self.pulse:
+                        f=self.state.fields['rain'];amp=c['rain_kg_m2_s'] if step<2 else 0.
+                        self.state.put(replace(f,values=tuple(amp*(1+.2*i) for i in range(c['grid_n'])),
+                            lineage=('SYNTHETIC_TWO_INTERVAL_PULSE',)))
                     for nodeid in plan['order']:
                         node=self.graph.nodes[nodeid];op=node.operation
                         dependencies=[e for e in self.graph.incoming[nodeid] if self.graph.admission(e,c['lag_steps'])=='ACCEPTED' and e.source!=nodeid]
@@ -102,7 +103,11 @@ class Runtime:
                         if k not in ('evap','runoff'):self.state.put(replace(f,time=m.time_window(t+c['dt_s'],c['dt_s'])))
                 except Exception:
                     self.state.reset(cp);self.ports.air.kernel.reset(clocks[0]);self.ports.land.kernel.reset(clocks[1])
-                    rollback={'state_equal':self.state.hash()==before_hash,'port_clocks_equal':(self.ports.air.current_time,self.ports.land.current_time)==clocks,'failed_step':step}
+                    self.ports.last_exchange=None
+                    rollback={'contract':'WHOLE_STEP_BEFORE_FORCING_SYNC','before_hash':before_hash,
+                        'restored_hash':self.state.hash(),'state_equal':self.state.hash()==before_hash,
+                        'port_clocks_equal':(self.ports.air.current_time,self.ports.land.current_time)==clocks,'failed_step':step}
+                    self.last_rollback=rollback
                     raise
         except Rejection as e:failure={'code':e.code,'detail':e.detail}
         result={'status':'REJECTED' if failure else 'COMPLETED','failure':failure,
