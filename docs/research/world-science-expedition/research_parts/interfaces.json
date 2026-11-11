@@ -1,0 +1,454 @@
+{
+  "sources": [
+    {
+      "id": "ES01",
+      "project_id": "esmf",
+      "institution": "ESMF / NUOPC",
+      "kind": "OFFICIAL_TECHNICAL_DOCUMENTATION",
+      "canonical_url": "https://earthsystemmodeling.org/nuopc/",
+      "publisher": "Earth System Modeling Framework",
+      "source_version": "现行概览；页面示例明确对应 ESMF/NUOPC 8.0.1，不等同最新发布版本",
+      "exact_section": "Overview; Features / Four Basic Building Blocks; Initialize Sequence; Run Sequence; Sequential vs Concurrent Components",
+      "accessibility": "PUBLIC_PAGE_READ",
+      "access_date": "2026-11-11",
+      "last_checked": "2026-11-11",
+      "license_reuse_basis": "网页可读；图文再分发许可本轮未核实，只存链接和原创中文分析。",
+      "evidence_status": "SOURCE_READ",
+      "excerpt_budget": {
+        "verbatim_words": 0,
+        "policy": "原创概述；不保存或复制整篇网页、图像和第三方源码"
+      },
+      "source_hash_if_legally_retained": null,
+      "related_questions": [
+        "Q-DRY-LAND",
+        "Q-INTERFACE-SEMANTICS"
+      ],
+      "claims": [
+        "Driver、Model、Mediator、Connector 分工；初始化含字段协商与存储实现；运行序列支持多时钟。",
+        "技术并行能力仍受过程数据依赖约束。"
+      ],
+      "counterclaims": [
+        "接口或转换成功不等于物理适用、科学准入或现实预测准确。"
+      ],
+      "notes": "",
+      "next_step": "仅在未来批准的明确用例下固定源版本并做相容性验收。"
+    },
+    {
+      "id": "ES02",
+      "project_id": "esmf",
+      "institution": "ESMF / NUOPC",
+      "kind": "OFFICIAL_TECHNICAL_DOCUMENTATION",
+      "canonical_url": "https://earthsystemmodeling.org/regrid/",
+      "publisher": "Earth System Modeling Framework",
+      "source_version": "现行页面；状态表涵盖8.6.1至8.9.1等版本，未安装任一版本",
+      "exact_section": "Overview; Regridding methods; Options for masking, areas, unmapped points",
+      "accessibility": "PUBLIC_PAGE_READ",
+      "access_date": "2026-11-11",
+      "last_checked": "2026-11-11",
+      "license_reuse_basis": "网页可读；图文再分发许可本轮未核实，只存链接和原创中文分析。",
+      "evidence_status": "SOURCE_READ",
+      "excerpt_budget": {
+        "verbatim_words": 0,
+        "policy": "原创概述；不保存或复制整篇网页、图像和第三方源码"
+      },
+      "source_hash_if_legally_retained": null,
+      "related_questions": [
+        "Q-DRY-LAND",
+        "Q-INTERFACE-SEMANTICS"
+      ],
+      "claims": [
+        "重网格包含权重生成和应用两阶段。",
+        "保守方法维护相应面积定义下的积分；不能把任意插值都称为保守。"
+      ],
+      "counterclaims": [
+        "接口或转换成功不等于物理适用、科学准入或现实预测准确。"
+      ],
+      "notes": "",
+      "next_step": "仅在未来批准的明确用例下固定源版本并做相容性验收。"
+    },
+    {
+      "id": "BM01",
+      "project_id": "bmi",
+      "institution": "CSDMS",
+      "kind": "OFFICIAL_TECHNICAL_DOCUMENTATION",
+      "canonical_url": "https://csdms.colorado.edu/wiki/BMI",
+      "publisher": "Community Surface Dynamics Modeling System",
+      "source_version": "BMI 2.0；wiki oldid438693；2024-01-03编辑",
+      "exact_section": "Basic Model Interface (BMI); Version2.0; Links; Citation",
+      "accessibility": "PUBLIC_PAGE_READ",
+      "access_date": "2026-11-11",
+      "last_checked": "2026-11-11",
+      "license_reuse_basis": "网页可读；图文再分发许可本轮未核实，只存链接和原创中文分析。",
+      "evidence_status": "SOURCE_READ",
+      "excerpt_budget": {
+        "verbatim_words": 0,
+        "policy": "原创概述；不保存或复制整篇网页、图像和第三方源码"
+      },
+      "source_hash_if_legally_retained": null,
+      "related_questions": [
+        "Q-DRY-LAND",
+        "Q-INTERFACE-SEMANTICS"
+      ],
+      "claims": [
+        "BMI是统一的模型查询与控制接口规范。"
+      ],
+      "counterclaims": [
+        "接口或转换成功不等于物理适用、科学准入或现实预测准确。"
+      ],
+      "notes": "",
+      "next_step": "仅在未来批准的明确用例下固定源版本并做相容性验收。"
+    },
+    {
+      "id": "BM02",
+      "project_id": "bmi",
+      "institution": "CSDMS",
+      "kind": "OFFICIAL_TECHNICAL_DOCUMENTATION",
+      "canonical_url": "https://bmi.readthedocs.io/en/stable/",
+      "publisher": "Community Surface Dynamics Modeling System",
+      "source_version": "UNKNOWN",
+      "exact_section": "未读取正文",
+      "accessibility": "TOOL_INACCESSIBLE",
+      "access_date": "2026-11-11",
+      "last_checked": "2026-11-11",
+      "license_reuse_basis": "UNKNOWN；未存正文",
+      "evidence_status": "BLOCKED",
+      "excerpt_budget": {
+        "verbatim_words": 0,
+        "policy": "原创概述；不保存或复制整篇网页、图像和第三方源码"
+      },
+      "source_hash_if_legally_retained": null,
+      "related_questions": [
+        "Q-DRY-LAND",
+        "Q-INTERFACE-SEMANTICS"
+      ],
+      "claims": [],
+      "counterclaims": [
+        "接口或转换成功不等于物理适用、科学准入或现实预测准确。"
+      ],
+      "notes": "工具报告 URL not accessible；未报告HTTP403，也不声称服务器拒绝。没有重试该URL。通过wiki官方文档链接另到新域名。",
+      "next_step": "仅在未来批准的明确用例下固定源版本并做相容性验收。"
+    },
+    {
+      "id": "BM03",
+      "project_id": "bmi",
+      "institution": "CSDMS",
+      "kind": "OFFICIAL_TECHNICAL_DOCUMENTATION",
+      "canonical_url": "https://bmi.csdms.io/en/stable/",
+      "publisher": "Community Surface Dynamics Modeling System",
+      "source_version": "bmi2.0 stable 文档首页；未固定构建hash",
+      "exact_section": "The Basic Model Interface; reference navigation",
+      "accessibility": "PUBLIC_PAGE_READ",
+      "access_date": "2026-11-11",
+      "last_checked": "2026-11-11",
+      "license_reuse_basis": "网页可读；图文再分发许可本轮未核实，只存链接和原创中文分析。",
+      "evidence_status": "SOURCE_READ",
+      "excerpt_budget": {
+        "verbatim_words": 0,
+        "policy": "原创概述；不保存或复制整篇网页、图像和第三方源码"
+      },
+      "source_hash_if_legally_retained": null,
+      "related_questions": [
+        "Q-DRY-LAND",
+        "Q-INTERFACE-SEMANTICS"
+      ],
+      "claims": [
+        "文档组织控制、变量、时间、读写和网格接口；存在多语言规范和样例。"
+      ],
+      "counterclaims": [
+        "接口或转换成功不等于物理适用、科学准入或现实预测准确。"
+      ],
+      "notes": "从 CSDMS wiki 的 bmi.readthedocs.io 根链接重定向到该官方域名。只凭首页不宣称读懂完整规范。",
+      "next_step": "仅在未来批准的明确用例下固定源版本并做相容性验收。"
+    },
+    {
+      "id": "BM04",
+      "project_id": "bmi",
+      "institution": "CSDMS",
+      "kind": "OFFICIAL_TECHNICAL_DOCUMENTATION",
+      "canonical_url": "https://github.com/csdms/bmi-python",
+      "publisher": "Community Surface Dynamics Modeling System",
+      "source_version": "master仓库首页读取；commit SHA未捕获",
+      "exact_section": "README / Usage; Resources MIT license",
+      "accessibility": "PUBLIC_PAGE_READ",
+      "access_date": "2026-11-11",
+      "last_checked": "2026-11-11",
+      "license_reuse_basis": "官方仓库首页标示MIT；本轮未复制源码或安装，不把软件许可延伸到其他科学数据。",
+      "evidence_status": "SOURCE_READ",
+      "excerpt_budget": {
+        "verbatim_words": 0,
+        "policy": "原创概述；不保存或复制整篇网页、图像和第三方源码"
+      },
+      "source_hash_if_legally_retained": null,
+      "related_questions": [
+        "Q-DRY-LAND",
+        "Q-INTERFACE-SEMANTICS"
+      ],
+      "claims": [
+        "Python接口规范以Bmi基类描述。"
+      ],
+      "counterclaims": [
+        "接口或转换成功不等于物理适用、科学准入或现实预测准确。"
+      ],
+      "notes": "",
+      "next_step": "仅在未来批准的明确用例下固定源版本并做相容性验收。"
+    },
+    {
+      "id": "BM05",
+      "project_id": "bmi",
+      "institution": "CSDMS",
+      "kind": "OFFICIAL_TECHNICAL_DOCUMENTATION",
+      "canonical_url": "https://github.com/csdms/bmi",
+      "publisher": "Community Surface Dynamics Modeling System",
+      "source_version": "develop首页；README要求实施时使用发布版，列BMI2.0",
+      "exact_section": "README / The Basic Model Interface; release guidance; license",
+      "accessibility": "PUBLIC_PAGE_READ",
+      "access_date": "2026-11-11",
+      "last_checked": "2026-11-11",
+      "license_reuse_basis": "README明确MIT；未复制实现或整段文档。",
+      "evidence_status": "SOURCE_READ",
+      "excerpt_budget": {
+        "verbatim_words": 0,
+        "policy": "原创概述；不保存或复制整篇网页、图像和第三方源码"
+      },
+      "source_hash_if_legally_retained": null,
+      "related_questions": [
+        "Q-DRY-LAND",
+        "Q-INTERFACE-SEMANTICS"
+      ],
+      "claims": [
+        "BMI接口设计使模型可描述、可控制，且不要求模型调用其他框架。",
+        "实现应固定发布版本，不把开发分支误作稳定标准。"
+      ],
+      "counterclaims": [
+        "接口或转换成功不等于物理适用、科学准入或现实预测准确。"
+      ],
+      "notes": "",
+      "next_step": "仅在未来批准的明确用例下固定源版本并做相容性验收。"
+    },
+    {
+      "id": "BM06",
+      "project_id": "bmi",
+      "institution": "CSDMS",
+      "kind": "OFFICIAL_TECHNICAL_DOCUMENTATION",
+      "canonical_url": "https://github.com/csdms/bmi-python/blob/master/src/bmipy/bmi.py",
+      "publisher": "Community Surface Dynamics Modeling System",
+      "source_version": "master公开Python规范；737行；commit SHA未捕获",
+      "exact_section": "Bmi.initialize/update/update_until/finalize; get_input_var_names; get_var_grid; get_time_units; get_value/get_value_ptr/set_value",
+      "accessibility": "PUBLIC_PAGE_READ",
+      "access_date": "2026-11-11",
+      "last_checked": "2026-11-11",
+      "license_reuse_basis": "所属官方仓库标示MIT；只读接口签名和说明，未复制源码。",
+      "evidence_status": "SOURCE_READ",
+      "excerpt_budget": {
+        "verbatim_words": 0,
+        "policy": "原创概述；不保存或复制整篇网页、图像和第三方源码"
+      },
+      "source_hash_if_legally_retained": null,
+      "related_questions": [
+        "Q-DRY-LAND",
+        "Q-INTERFACE-SEMANTICS"
+      ],
+      "claims": [
+        "Python规范的get_value将副本写入调用方dest并返回同一缓冲；ptr接口提供引用。",
+        "initialize使用配置文件；变量查询要求CSDMS Standard Names；时间单位采用UDUNITS。"
+      ],
+      "counterclaims": [
+        "接口或转换成功不等于物理适用、科学准入或现实预测准确。"
+      ],
+      "notes": "",
+      "next_step": "仅在未来批准的明确用例下固定源版本并做相容性验收。"
+    },
+    {
+      "id": "BM07",
+      "project_id": "bmi",
+      "institution": "CSDMS",
+      "kind": "OFFICIAL_TECHNICAL_DOCUMENTATION",
+      "canonical_url": "https://bmi.csdms.io/en/stable/bmi.spec.html",
+      "publisher": "Community Surface Dynamics Modeling System",
+      "source_version": "bmi2.0 stable；Table3",
+      "exact_section": "Table3 Summary of BMI functions",
+      "accessibility": "PUBLIC_PAGE_READ",
+      "access_date": "2026-11-11",
+      "last_checked": "2026-11-11",
+      "license_reuse_basis": "网页可读；图文再分发许可本轮未核实，只存链接和原创中文分析。",
+      "evidence_status": "SOURCE_READ",
+      "excerpt_budget": {
+        "verbatim_words": 0,
+        "policy": "原创概述；不保存或复制整篇网页、图像和第三方源码"
+      },
+      "source_hash_if_legally_retained": null,
+      "related_questions": [
+        "Q-DRY-LAND",
+        "Q-INTERFACE-SEMANTICS"
+      ],
+      "claims": [
+        "update定义为推进模型状态一步，update_until到目标时间；查询还覆盖网格、变量和时间。"
+      ],
+      "counterclaims": [
+        "接口或转换成功不等于物理适用、科学准入或现实预测准确。"
+      ],
+      "notes": "只把已读Table3和BM06详细条款计为阅读，不冒称所有链接章节均已打开。",
+      "next_step": "仅在未来批准的明确用例下固定源版本并做相容性验收。"
+    }
+  ],
+  "stations": [
+    {
+      "id": "esmf",
+      "title": "ESMF / NUOPC · 耦合不是画箭头",
+      "kind": "科学软件框架与组件协作约定",
+      "question": "两个模型什么时候、在什么网格上交换，谁负责检查？",
+      "why": "把组件的接口、初始化和运行时协作明确化，使团队能构建可组合的科学应用。",
+      "mechanism": [
+        "发布字段需求与输出",
+        "实现存储、准备连接与转换",
+        "检查相容性并标时间戳",
+        "按运行序列与时钟驱动组件"
+      ],
+      "known": [
+        {
+          "text": "组件、连接与调度有不同职责；多时钟协调不能省略科学依赖。",
+          "source_ids": [
+            "ES01"
+          ]
+        },
+        {
+          "text": "重网格方法应根据变量及面积语义选择；不是任意插值都守恒。",
+          "source_ids": [
+            "ES02"
+          ]
+        }
+      ],
+      "unknown": [
+        "未安装 ESMF，未验证真实外部模型接入。",
+        "尚未验证任一全球网格与ClimateOS局地矩形网格的兼容性。"
+      ],
+      "access": "官方概览公开可读；本轮不下载模型或复制官方图。图文复用许可未单独核实。",
+      "comparison": {
+        "decision": "LEARN",
+        "reason": "先学字段协商、时钟与责任分离；当前两过程原型不因安装框架就获得科学有效性。",
+        "code_refs": [
+          "cczps_lite/integration/earth_system_coupling/ports.py",
+          "cczps_lite/integration/earth_relations/coupling.py",
+          "cczps_lite/integration/earth_system_coupling/state.py"
+        ]
+      },
+      "interpretation": "AI INTERPRETATION：ClimateOS当前更缺的是可拒绝的不相容实例，而不是更大的耦合框架。",
+      "counterexample": "数据能传过去，但把月均量接到瞬时过程上，接口成功仍可能产生错误科学含义。",
+      "next_question": "什么最小用例确实需要现有矩形重网格之外的能力？",
+      "source_ids": [
+        "ES01",
+        "ES02"
+      ]
+    },
+    {
+      "id": "bmi",
+      "title": "CSDMS BMI · 共同接口，不是共同物理",
+      "kind": "模型查询与控制接口规范",
+      "question": "同名update真的意味着模型状态已经推进了吗？",
+      "why": "降低学习不同模型的接口成本，使模型更容易被外部应用组织。",
+      "mechanism": [
+        "初始化模型",
+        "查询变量、单位、网格与时间",
+        "设置输入并更新状态",
+        "读取副本或显式引用",
+        "结束生命周期"
+      ],
+      "known": [
+        {
+          "text": "规范把状态更新、时间查询、变量读写与网格信息分开。",
+          "source_ids": [
+            "BM07"
+          ]
+        },
+        {
+          "text": "Python get_value复制到调用方缓冲；get_value_ptr提供引用，二者不等价。",
+          "source_ids": [
+            "BM06"
+          ]
+        },
+        {
+          "text": "BMI2.0是接口规范；官方实现应选发布版本。",
+          "source_ids": [
+            "BM01",
+            "BM05"
+          ]
+        }
+      ],
+      "unknown": [
+        "本轮教学适配不是完整BMI实现，也没有bmipy符合性认证。",
+        "本地短变量名与CSDMS Standard Names的完整映射未建立。",
+        "实际外部科研模型的授权、数据及数值适用性未验证。"
+      ],
+      "access": "官方规范与公开仓库可读；旧readthedocs稳定路径工具不可用，另从官方入口取得新域名。未安装软件。",
+      "comparison": {
+        "decision": "WRAP",
+        "reason": "只试包住完整耦合事务的教学子集；ModelPort单端口返回未提交提案，不能简单改名为update。",
+        "code_refs": [
+          "cczps_lite/integration/earth_system_coupling/ports.py",
+          "cczps_lite/integration/earth_relations/coupling.py"
+        ]
+      },
+      "interpretation": "AI INTERPRETATION：适配的价值应由它暴露多少不相容性来衡量，不能以方法名数量宣称国际接轨。",
+      "counterexample": "单端口clock推进而共享库存尚未提交；若只看时钟，外部调用者会误认为完整物理步已完成。",
+      "next_question": "复制语义、受限写入与整步更新能否在同一公开合成状态上被反例测试？",
+      "source_ids": [
+        "BM01",
+        "BM02",
+        "BM03",
+        "BM04",
+        "BM05",
+        "BM06",
+        "BM07"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "C-ES01",
+      "station_id": "esmf",
+      "text": "NUOPC有明确组件分工和多时钟运行序列。",
+      "status": "OFFICIAL_VERIFIED",
+      "source_ids": [
+        "ES01"
+      ],
+      "limitation": "阅读概览，不等于安装或实施完整标准。"
+    },
+    {
+      "id": "C-ES02",
+      "station_id": "esmf",
+      "text": "保守重网格的面积定义和方法选择必须明确。",
+      "status": "OFFICIAL_VERIFIED",
+      "source_ids": [
+        "ES02"
+      ],
+      "limitation": "重网格守恒不等于过程守恒或真实预测能力。"
+    },
+    {
+      "id": "C-BM01",
+      "station_id": "bmi",
+      "text": "BMI update是状态推进，ModelPort本地单端口step只提出未提交提案，不能直接等同。",
+      "status": "INTERPRETATION",
+      "source_ids": [
+        "BM06",
+        "BM07"
+      ],
+      "limitation": "跨来源对照：另一半依据本仓库ports.py实际源码，不是官方对ClimateOS的评审。"
+    },
+    {
+      "id": "C-BM02",
+      "station_id": "bmi",
+      "text": "BMI Python规范的get_value是复制到dest；get_value_ptr是引用。",
+      "status": "OFFICIAL_VERIFIED",
+      "source_ids": [
+        "BM06"
+      ],
+      "limitation": "只实现副本子集不满足完整BMI全部方法及命名要求。"
+    }
+  ],
+  "source_count": 9,
+  "public_source_pages_read": 8,
+  "blocked_pages": 1,
+  "private_assets_accessed": false,
+  "third_party_software_installed": false,
+  "scientific_admission": "PENDING"
+}

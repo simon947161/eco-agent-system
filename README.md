@@ -1,5 +1,14 @@
 # Eco Agent System
 
+## World Science Expedition — Issue #156
+
+[Chinese learning station](apps/earth-science-expedition/README.md) ·
+[research index](docs/research/world-science-expedition/INDEX.md) ·
+[Founder report](docs/research/world-science-expedition/FOUNDER_REPORT_ZH.md).
+Six distinct public science roles, 23 source targets with explicit access gaps,
+and a reproducible interface counterexample through the existing physical ports.
+Local-only learning website; no institutional endorsement or scientific admission.
+
 ## Typed Earth Relations Runtime — Issue #154
 
 [Runnable research package](docs/tasks/climateos_adaptive_earth_relations_runtime_001/README.md),
