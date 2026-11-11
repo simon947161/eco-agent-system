@@ -1,0 +1,360 @@
+{
+  "definition": "SHA256 normalized LF for text; original PNG bytes; self excluded",
+  "files": [
+    {
+      "path": ".github/workflows/science-expedition.yml",
+      "bytes": 1212,
+      "sha256": "e9a1be5ea7bfaf9a99dbfb3da08113a62dd33b1e836ad5e42193ca86144a8a9a"
+    },
+    {
+      "path": "apps/earth-science-expedition/app.js",
+      "bytes": 24099,
+      "sha256": "9afff34d51c75010df9a83e241fed7430636490832be3e4548521b3dcea9f602"
+    },
+    {
+      "path": "apps/earth-science-expedition/build_data.py",
+      "bytes": 2657,
+      "sha256": "7af730d39009a3b49a9917ba449bd5a3496e2426c379bae6cdfa40bb6dec66ff"
+    },
+    {
+      "path": "apps/earth-science-expedition/data.js",
+      "bytes": 85601,
+      "sha256": "75bf67662e27e7aa26e532e12bc2f1ea7b3b2898f79bc97e3f68763d447036fe"
+    },
+    {
+      "path": "apps/earth-science-expedition/index.html",
+      "bytes": 1247,
+      "sha256": "aaa2d69682e08b99f9952073be209e13a6c83a176969f97fa36dd99ea5110143"
+    },
+    {
+      "path": "apps/earth-science-expedition/notebook.js",
+      "bytes": 1379,
+      "sha256": "546d08ebb9c3bf1b3834973405cfb4ec50fe1248979ef0f83f71b75ff20073e8"
+    },
+    {
+      "path": "apps/earth-science-expedition/notebook.test.cjs",
+      "bytes": 1507,
+      "sha256": "efecb10762890a31be9b65426c72b9a634e3589d5375733341bf06761774dac9"
+    },
+    {
+      "path": "apps/earth-science-expedition/qa/browser.cjs",
+      "bytes": 7829,
+      "sha256": "20d0bd79ef3b9cafb9b9e3c4ef3f19ddb9603cafc2804ba218dd44180860aada"
+    },
+    {
+      "path": "apps/earth-science-expedition/README.md",
+      "bytes": 2247,
+      "sha256": "03ee29b463297fcaf659f2e3136f12d6f7b7ef76f72e3f1d9e0bb585d266825d"
+    },
+    {
+      "path": "apps/earth-science-expedition/research/interface_experiment.py",
+      "bytes": 7849,
+      "sha256": "538eb21624e443239be31e34a79935bb812cb6d2305d7b2b114d87f1a2c5aec8"
+    },
+    {
+      "path": "apps/earth-science-expedition/schema.json",
+      "bytes": 832,
+      "sha256": "36fd1ddaed9a2c9740cd3d7eabfcce3e01940d0722d13dd0e9f41755f6c99993"
+    },
+    {
+      "path": "apps/earth-science-expedition/serve.py",
+      "bytes": 1397,
+      "sha256": "95a061bd91a62536f99f1cf15870ef707e719429ec4870ec77cdd691b92536fc"
+    },
+    {
+      "path": "apps/earth-science-expedition/style.css",
+      "bytes": 8623,
+      "sha256": "faa91d16040f9f5c967b7ce0d2c6b8126565fc9abebe8bd063db57aa38fedcbb"
+    },
+    {
+      "path": "docs/research/world-science-expedition/CLAIM_LEDGER.json",
+      "bytes": 4576,
+      "sha256": "ae3903c812e37afccd167bdd3784662ff69215428ccb57499786452e56dbd3df"
+    },
+    {
+      "path": "docs/research/world-science-expedition/CODEX_START_HERE.md",
+      "bytes": 2122,
+      "sha256": "5fe0f2aa008904a15347cb9d5b8a003b35949c0293e1286d618ae4caa3353448"
+    },
+    {
+      "path": "docs/research/world-science-expedition/CRP_HANDOFF.md",
+      "bytes": 1692,
+      "sha256": "686265d24c9f6762416dbf407ec5962e222f614b63486a28a5ccfdeb1924ba08"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/export-review.json",
+      "bytes": 349,
+      "sha256": "0356b34f7a7171d6f6adb6c54f4438d0b0faeff77dca5f6f23e47a5f5fbaa475"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/interface-results.json",
+      "bytes": 19514,
+      "sha256": "ab83e38821da75ef5b753718467faa5e9ca5147d89285c495ea6ef748b83c735"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/test-results.json",
+      "bytes": 489,
+      "sha256": "095e67a33898502f0434e1457cd91431321b7140afebe65f09761c182575b799"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-bmi-mechanism.png",
+      "bytes": 298412,
+      "sha256": "3ec0f3436f87c6d93cf8936c292882a2de3eda7dd386c1ec091ae980405e9f37"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-bmi.png",
+      "bytes": 281733,
+      "sha256": "75d319f38b34df187edd0be365d4d12b25089294f5d424cc3082d6f28bf3cdf5"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-ecmwf.png",
+      "bytes": 294236,
+      "sha256": "fd6fb6972a3f0d0dfaee97f02331ada6eb84bdb8a7f2143384e3c738e9ba0176"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-esmf-mechanism.png",
+      "bytes": 277716,
+      "sha256": "7572df001e9c21099b8e2cf77dba115dde0ce4083aa329e9d9e67f5cfc3b8525"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-esmf.png",
+      "bytes": 259761,
+      "sha256": "5d2f7193258e72486921049224ee21224b668c6474198090d6a7c233df56165c"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-geo.png",
+      "bytes": 235005,
+      "sha256": "8bac236182afc23108617a65f094f99007b97f7bb29a80394b09394cd8915a8b"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-home.png",
+      "bytes": 235587,
+      "sha256": "a1080a156f8afa27b787b1753d51ef7b54268273530705e97762236393a4d00c"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-lab.png",
+      "bytes": 330619,
+      "sha256": "b37828257394a9164d7bc6f7396476372b9c4d94a6a1846c71966d0f247c6c79"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-notebook.png",
+      "bytes": 255875,
+      "sha256": "94aab01d63a3c1f588964ee033ccd734b4fa6305f73cb80c672c2214f1ab6a3f"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-review.png",
+      "bytes": 234963,
+      "sha256": "92cfb2b868aa1fe02b7b705b8397860af570731b9d105fe875354c98c4965f17"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-source-gaps.png",
+      "bytes": 267468,
+      "sha256": "1e747ebb6657043c26db90c9ece147164acca48aa1c103b64e7bd83efd895656"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-vision.png",
+      "bytes": 281459,
+      "sha256": "deb52cca9eb375ffe21224ac4fd2b21d8a0eee2bf6fba7c3757657ad074c93c8"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-wesr.png",
+      "bytes": 252854,
+      "sha256": "aaa49554a71ebd808219022a487f1b5d19b2222238d16cfc06254b7ef25e247b"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-wis2-mechanism.png",
+      "bytes": 281843,
+      "sha256": "3dca7da266b9a08a9d8609de0a104d6cab39435d718ed9c0ad428a1d3d789784"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/desktop-wis2.png",
+      "bytes": 250172,
+      "sha256": "90dbdc88c3667ad7954114de67ce277c0901bfd5864bcce2277bd2197f6c22ea"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-bmi-mechanism.png",
+      "bytes": 158426,
+      "sha256": "e602349a751c5726fa72ea1782c2648f47bfd15d08f6d35adecbffbe456c5f02"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-bmi.png",
+      "bytes": 163321,
+      "sha256": "c83de1ea77e65ab3f3195a4397a42fafc8a712edd900eb7da24f1b9af9055a0e"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-ecmwf.png",
+      "bytes": 162987,
+      "sha256": "d1e70d1f7eab8e07445a5976ea7e07fb42a0d6ada95db2b54613a076fc851a78"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-esmf-mechanism.png",
+      "bytes": 148742,
+      "sha256": "3e3aee17f9fe3975ff7feebc2ff43e01b8b5c50722ccf3c4911017bbb9fa81b8"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-esmf.png",
+      "bytes": 149409,
+      "sha256": "89dac731ce08079a8783916509026cf5cae671446c3bd2a745e9a3b873c6aa92"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-geo.png",
+      "bytes": 122376,
+      "sha256": "6179c3e08310eda4e1053be5b83e5ccd1eb4dab252488179fd129f9a278fc8d6"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-home.png",
+      "bytes": 187327,
+      "sha256": "2f060b5186a8f34da7a9db88f08b6bfa5504ecd1c079adea2786f00d359c7818"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-lab.png",
+      "bytes": 218267,
+      "sha256": "ee11c5a52b4fbcc3b8c7a36a21edcf222d974e938292afd02d0bc7b74fa50b11"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-notebook.png",
+      "bytes": 168474,
+      "sha256": "e8f107d36f16397438f4113054978f5fec818a1272e7f11d382fb132f019bcea"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-review.png",
+      "bytes": 157277,
+      "sha256": "0ce57cd536d44f480ae85cbdc1c3a5d41a3e8d7bbdeef9288ebfcb21f626b2fa"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-source-gaps.png",
+      "bytes": 180470,
+      "sha256": "fd28f9fa4e01ccfba75d0521800ca47ace6c283cc174bc7fae88f9e30d9ec65d"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-vision.png",
+      "bytes": 196980,
+      "sha256": "730e5f5b80fbb3a5ead72a546d65b207603cf7e76f18952c5c7ac48a8ab9a792"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-wesr.png",
+      "bytes": 141581,
+      "sha256": "dcc88ccc574af8c5bd847b7e08715095d3350562613eead2d410f818d78308cc"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-wis2-mechanism.png",
+      "bytes": 146972,
+      "sha256": "5ba31bc4fa0a72e18251843c102e491b777f097ae201fe88832231408f230990"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/mobile-wis2.png",
+      "bytes": 139914,
+      "sha256": "4d25eb582d2cfb2f69f74b61512c9f2a7045a6e54b854ae65a9fcd41fadf8c57"
+    },
+    {
+      "path": "docs/research/world-science-expedition/evidence/ui/qa.json",
+      "bytes": 5973,
+      "sha256": "213cd94a2f187d1b3cc973885d9cf1ad0a1eff6d2dedb5b990b7252bacd61534"
+    },
+    {
+      "path": "docs/research/world-science-expedition/EXECUTION_STATE.json",
+      "bytes": 998,
+      "sha256": "91518878755b150ddcb1ba4cf72992698298b25814ae5dff78d82218400ee13a"
+    },
+    {
+      "path": "docs/research/world-science-expedition/FOUNDER_LEARNING_NOTES_ZH.md",
+      "bytes": 1383,
+      "sha256": "7194d488593e1a510342f64d9d74b0754f95d9f40511a86aba8b8fafa4c3d44a"
+    },
+    {
+      "path": "docs/research/world-science-expedition/FOUNDER_REPORT_ZH.md",
+      "bytes": 3250,
+      "sha256": "23c784e4f035f19fc03ecbfb438e71c1f30d2db54ff056c64629f11eb99625a2"
+    },
+    {
+      "path": "docs/research/world-science-expedition/FOUNDER_VISION_AND_DIALOGUE_20261111_ZH.md",
+      "bytes": 10227,
+      "sha256": "908a494b16f8581080a1538d87542bbd39e37ea371ceb3f2de263da29728decf"
+    },
+    {
+      "path": "docs/research/world-science-expedition/INDEX.md",
+      "bytes": 1141,
+      "sha256": "cc045817fe634fd3a6022d2b63abb947a8f717bbcee616afe57168280c10693c"
+    },
+    {
+      "path": "docs/research/world-science-expedition/LEARNING_ROUTES.json",
+      "bytes": 3604,
+      "sha256": "7c625cba1dc1eaade6630d0c6816cedd4d43d199c25464f592c292e0cc84960c"
+    },
+    {
+      "path": "docs/research/world-science-expedition/MECHANISM_COMPARISONS.md",
+      "bytes": 2097,
+      "sha256": "c76e27fc671f813ad2f72ba39da7019a4564875953c4df489610baad29c6c9a8"
+    },
+    {
+      "path": "docs/research/world-science-expedition/NEXT_SESSION.md",
+      "bytes": 1308,
+      "sha256": "5a220ba313bc25a30f110535c61776535c18e3909eb645cb87c13a7f3fdbdaa6"
+    },
+    {
+      "path": "docs/research/world-science-expedition/QA.md",
+      "bytes": 2851,
+      "sha256": "ebc6d6cddfbc66d605e7996842e481286168a259d263d01c47d2db3ee0d2789d"
+    },
+    {
+      "path": "docs/research/world-science-expedition/RECOVERY_AND_BASELINE.md",
+      "bytes": 1197,
+      "sha256": "27a50bad4245b8e9e1470ad262a7b074fbf68ee8b67cc6371b1bf2bc0d86fef6"
+    },
+    {
+      "path": "docs/research/world-science-expedition/research_parts/ecmwf.json",
+      "bytes": 8772,
+      "sha256": "212866f709a66548639e76a6d8e2537288bb28e5a4a8eda00d52afacd8fef556"
+    },
+    {
+      "path": "docs/research/world-science-expedition/research_parts/interfaces.json",
+      "bytes": 19055,
+      "sha256": "8bc2663b7a0fbd2347e1213bf0ead134cc852661c4cc55fdeef1602e532eee50"
+    },
+    {
+      "path": "docs/research/world-science-expedition/research_parts/interfaces.md",
+      "bytes": 6194,
+      "sha256": "35864fde96b9b224a95cf27d88e82cc828711f3f33aa60a436647e520984ab8d"
+    },
+    {
+      "path": "docs/research/world-science-expedition/research_parts/un_wmo.json",
+      "bytes": 16644,
+      "sha256": "fc0b32b438fada41a0ca7ee064845f9862ba002133c596bc548e90878c37b28d"
+    },
+    {
+      "path": "docs/research/world-science-expedition/research_parts/un_wmo.md",
+      "bytes": 4217,
+      "sha256": "8a270b9514349167ec6fc208e89ce39b0d1fb3c42ff0bf0851e257fa73d5a45d"
+    },
+    {
+      "path": "docs/research/world-science-expedition/RESEARCH_QUESTIONS.md",
+      "bytes": 1248,
+      "sha256": "7464c99ce612aaf1e3dbe18e183b44a475cf8734cdd1f5f072d94de227e70193"
+    },
+    {
+      "path": "docs/research/world-science-expedition/RIGHTS_AND_ACCESS.md",
+      "bytes": 1645,
+      "sha256": "21d101b84ae0278efd922c8fd5e8b3ee616cbf22499ee45338944c3725e994dc"
+    },
+    {
+      "path": "docs/research/world-science-expedition/SOURCE_REGISTER.json",
+      "bytes": 30166,
+      "sha256": "d8f2d45b19efd2013ce60b44a7d693a0b6e87a1e74d0af1cc14c61fd22cf7d00"
+    },
+    {
+      "path": "docs/research/world-science-expedition/STATION_REGISTER.json",
+      "bytes": 12523,
+      "sha256": "ceb0803441902c242e8c2f36c2910cf3fb97223cd4252625af4549e3780822cb"
+    },
+    {
+      "path": "docs/research/world-science-expedition/TASKBOOK_ZH.md",
+      "bytes": 22362,
+      "sha256": "293ad86949da42f1a6ee15ce5c20ed7d808f2dbe554c96028c8fefa97d296eb4"
+    },
+    {
+      "path": "tests/test_science_expedition.py",
+      "bytes": 6572,
+      "sha256": "1473ad72a2945eaf7196caa983e695cfcac87a3006775841a816a2d2c41c4c9f"
+    }
+  ]
+}

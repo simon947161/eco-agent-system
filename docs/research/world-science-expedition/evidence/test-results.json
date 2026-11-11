@@ -1,0 +1,9 @@
+{
+ "local_platform":"Windows / Python 3.14 / Node24 / installed Google Chrome",
+ "python_new":{"tests":12,"status":"PASS"},
+ "python_full":{"tests":780,"passed":779,"skipped":1,"seconds":18.760,"skip_reason":"existing Windows symlink privilege"},
+ "node_notebook":{"tests":6,"status":"PASS"},
+ "browser":{"viewports":[[1440,900],[390,844]],"screenshots":30,"status":"PASS","details":"ui/qa.json"},
+ "remote_ci":"separate exact-HEAD GitHub Actions receipt required",
+ "science":"PENDING"
+}

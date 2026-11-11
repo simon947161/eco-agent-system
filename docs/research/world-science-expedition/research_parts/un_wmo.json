@@ -1,0 +1,106 @@
+{
+  "batch": "Issue156 first bounded official-source reading",
+  "checked_at": "2026-11-11",
+  "distinct_source_targets": 8,
+  "readable_sources": 5,
+  "sources": [
+    {
+      "id": "UN01", "project_id": "wesr", "institution": "UNEP", "kind": "data_portal",
+      "canonical_url": "https://wesr.unep.org/", "publisher": "UNEP", "source_version": "live landing page; content version UNKNOWN",
+      "exact_section": "landing page, no readable lines returned", "accessibility": "NO_EXTRACTABLE_TEXT", "access_date": "2026-11-11", "last_checked": "2026-11-11",
+      "license_reuse_basis": "UNKNOWN for individual datasets; link only, no images/data copied", "evidence_status": "BLOCKED", "excerpt_budget": {"verbatim_words": 0, "max_derived_words": 200}, "source_hash_if_legally_retained": null,
+      "related_questions": ["Can a public portal establish dataset-level rights and quality?"], "claims": [], "counterclaims": ["A reachable portal is not proof its datasets were read or admitted."], "notes": "No authentication bypass or bulk retrieval attempted. Source text could not be inspected using the browser extraction tool.", "next_step": "Inspect one explicitly licensed dataset in a separately approved follow-up."
+    },
+    {
+      "id": "UN02", "project_id": "wesr", "institution": "UNEP", "kind": "data_governance_strategy",
+      "canonical_url": "https://www.unep.org/en/what-we-do/digital-transformations/global-environmental-data-strategy-geds", "publisher": "UNEP", "source_version": "live page describing 2026 first implementation phase; revision date UNKNOWN",
+      "exact_section": "Overview; GEDS framework (five pillars)", "accessibility": "PUBLIC_READABLE", "access_date": "2026-11-11", "last_checked": "2026-11-11",
+      "license_reuse_basis": "No blanket redistribution licence established; original brief Chinese paraphrase and link only", "evidence_status": "SOURCE_READ", "excerpt_budget": {"verbatim_words": 0, "max_derived_words": 200}, "source_hash_if_legally_retained": null,
+      "related_questions": ["Why organise existing environmental data before making more models?"], "claims": ["GEDS responds to fragmentation, interoperability and access barriers.", "It is voluntary and does not create new reporting obligations or standards.", "Five pillars include governance, quality/provenance, interoperability, accessibility/affordability and capacity."], "counterclaims": ["A governance framework is not a runnable local physical model or a dataset licence."], "notes": "Page says submitted as UNEP/EA.7/INF/5 in Dec2025; that document and 2026 EDC toolkit were not independently read.", "next_step": "Map provenance fields before proposing another data platform."
+    },
+    {
+      "id": "UN03", "project_id": "geo", "institution": "UNEP", "kind": "assessment_report_overview",
+      "canonical_url": "https://www.unep.org/geo/global-environment-outlook-7", "publisher": "UNEP", "source_version": "GEO-7; official page states Dec2025 release; live webpage revision UNKNOWN",
+      "exact_section": "An Ambitious Roadmap to a Green and Prosperous Future; A Rigorous and Inclusive Process; GEO-7 Timeline", "accessibility": "PUBLIC_READABLE_OVERVIEW_ONLY", "access_date": "2026-11-11", "last_checked": "2026-11-11",
+      "license_reuse_basis": "No report/figure redistribution performed; original summary and canonical link", "evidence_status": "SOURCE_READ", "excerpt_budget": {"verbatim_words": 0, "max_derived_words": 200}, "source_hash_if_legally_retained": null,
+      "related_questions": ["How can global evidence inform a place without becoming a local prediction?"], "claims": ["GEO is a consultative assessment of environmental state, policy response and possible pathways.", "The overview describes expert/government draft reviews and review editors.", "The official timeline places GEO-7 launch in Dec2025."], "counterclaims": ["This reading did not validate report-level economic projections, scenario assumptions or local action effects."], "notes": "Full report, underlying scenario data and individual review responses NOT_READ; no whole-report knowledge claim.", "next_step": "Choose one assessment claim and inspect its chapter/method/uncertainty before reuse."
+    },
+    {
+      "id": "WM01", "project_id": "wis2", "institution": "WMO", "kind": "data_exchange_overview",
+      "canonical_url": "https://wmo.int/activities/wmo-information-system-wis", "publisher": "WMO", "source_version": "Last updated 2026-03-16",
+      "exact_section": "WMO Information System (WIS), opening paragraphs", "accessibility": "PUBLIC_READABLE", "access_date": "2026-11-11", "last_checked": "2026-11-11",
+      "license_reuse_basis": "Public reading; no blanket licence for observations inferred; no WMO imagery copied", "evidence_status": "SOURCE_READ", "excerpt_budget": {"verbatim_words": 0, "max_derived_words": 200}, "source_hash_if_legally_retained": null,
+      "related_questions": ["Why does local weather knowledge depend on observations across borders?"], "claims": ["WIS coordinates observation exchange among WMO Members.", "WIS2 uses open standards/web technologies and became operational in Jan2025.", "wis2box lowers the implementation barrier for a WIS2 Node."], "counterclaims": ["Data exchange supports forecast services but is not itself a weather forecast model."], "notes": "No deployment, subscription or scientific data admission in this batch.", "next_step": "Check dataset-level rights and metadata before any real retrieval."
+    },
+    {
+      "id": "WM02", "project_id": "wis2", "institution": "WMO", "kind": "documentation_target",
+      "canonical_url": "https://wis2box.wis.wmo.int/en/latest/introduction.html", "publisher": "WMO / wis2box", "source_version": "UNKNOWN",
+      "exact_section": "No content retrieved", "accessibility": "TOOL_INACCESSIBLE", "access_date": "2026-11-11", "last_checked": "2026-11-11",
+      "license_reuse_basis": "NOT_VERIFIED; nothing copied", "evidence_status": "BLOCKED", "excerpt_budget": {"verbatim_words": 0, "max_derived_words": 0}, "source_hash_if_legally_retained": null,
+      "related_questions": ["What are exact notification and discovery fields?"], "claims": [], "counterclaims": [], "notes": "Tool returned inaccessible URL, not a verified HTTP403. No retry/bypass.", "next_step": "Keep technical field-level detail UNKNOWN."
+    },
+    {
+      "id": "WM03", "project_id": "wis2", "institution": "WMO", "kind": "documentation_target",
+      "canonical_url": "https://docs.wis2box.wis.wmo.int/en/latest/introduction.html", "publisher": "WMO / wis2box", "source_version": "UNKNOWN",
+      "exact_section": "No content retrieved", "accessibility": "TOOL_INACCESSIBLE", "access_date": "2026-11-11", "last_checked": "2026-11-11",
+      "license_reuse_basis": "NOT_VERIFIED; nothing copied", "evidence_status": "BLOCKED", "excerpt_budget": {"verbatim_words": 0, "max_derived_words": 0}, "source_hash_if_legally_retained": null,
+      "related_questions": ["Can the implementation documentation be read?"], "claims": [], "counterclaims": [], "notes": "Tool returned inaccessible URL. Later official repository links this documentation domain, but this path was not read. No retry/bypass.", "next_step": "Preserve access gap rather than invent installation instructions."
+    },
+    {
+      "id": "WM04", "project_id": "wis2", "institution": "WMO", "kind": "official_software_repository",
+      "canonical_url": "https://github.com/World-Meteorological-Organization/wis2box", "publisher": "World-Meteorological-Organization", "source_version": "main branch landing page; exact commit NOT_PINNED",
+      "exact_section": "README: WIS2 in a box; repository licence badge", "accessibility": "PUBLIC_READABLE", "access_date": "2026-11-11", "last_checked": "2026-11-11",
+      "license_reuse_basis": "Repository displays Apache-2.0; exact licence file not separately read. No code copied/installed; dataset rights remain separate.", "evidence_status": "SOURCE_READ", "excerpt_budget": {"verbatim_words": 0, "max_derived_words": 200}, "source_hash_if_legally_retained": null,
+      "related_questions": ["Is operating a WIS2 Node the same as running a scientific model?"], "claims": ["wis2box is a reference WIS2 Node implementation supporting publishing, discovery and access."], "counterclaims": ["A software licence does not licence every data product distributed by that software."], "notes": "Requested historical wmo-im/wis2box URL redirected to canonical WMO organisation. No source-code audit or execution claimed.", "next_step": "DEFER installation until a single data need and operating responsibility are established."
+    },
+    {
+      "id": "WM05", "project_id": "wis2", "institution": "WMO", "kind": "technical_overview",
+      "canonical_url": "https://community.wmo.int/site/knowledge-hub/programmes-and-initiatives/wmo-information-system-wis", "publisher": "WMO Knowledge Hub", "source_version": "Last updated 2026-06-19; live event listings",
+      "exact_section": "Opening technical overview, paragraph beginning The users of WIS 2.0; Manuals and Guides", "accessibility": "PUBLIC_READABLE", "access_date": "2026-11-11", "last_checked": "2026-11-11",
+      "license_reuse_basis": "Original concise explanation and link; no manuals, schemas or observations redistributed", "evidence_status": "SOURCE_READ", "excerpt_budget": {"verbatim_words": 0, "max_derived_words": 200}, "source_hash_if_legally_retained": null,
+      "related_questions": ["How do discovery, notification and data retrieval differ?"], "claims": ["Global Discovery Catalogue describes available datasets and access.", "Global Broker subscriptions notify users of new data; data can be downloaded from Global Cache or provider.", "Manual WMO-No.1060 Vol II and Guide No.1061 Vol II are distinct normative/guidance references."], "counterclaims": ["Receipt of a notification alone proves neither data completeness nor fitness for local scientific use."], "notes": "Manuals/Guide not read. Page lists 2026-11-17 and 2027-02 events: future relative to 2026-11-11; not counted as completed activities. Exact wire protocol and field schema unverified in this bounded read.", "next_step": "Read one exact metadata record and applicable policy in a new bounded batch."
+    }
+  ],
+  "stations": [
+    {
+      "id": "wesr", "title": "UNEP WESR / GEDS", "kind": "数据门户与自愿治理框架", "question": "公开环境数据很多，为什么仍难判断家乡正在怎样变化？",
+      "why": "GEDS 针对数据碎片化、互操作和访问障碍；先组织已有数据的质量、来源与责任。",
+      "mechanism": ["识别已有数据与责任主体", "治理／来源／互操作／可及性／能力五类问题", "在具体国家和数据产品上核查可用性"],
+      "known": [{"text": "GEDS 是自愿的支持框架，不新设报告义务或标准。", "source_ids": ["UN02"]}, {"text": "WESR 首页本次没有可提取正文，不能称已读其数据目录。", "source_ids": ["UN01"]}],
+      "unknown": ["某一 WESR 数据集的许可、版本、空间精度和缺测率", "GEDS 2026 试点工具包的实际效能"], "access": "GEDS 官方说明可读；WESR 数据未取得，产品许可 UNKNOWN。",
+      "comparison": {"decision": "LEARN", "reason": "把来源与质量放在变量计算之前；不将宏观战略误作可调用模型。", "code_refs": ["cczps_lite/integration/earth_system_coupling/state.py: Field.validate", "docs/research/world-science-expedition/SOURCE_REGISTER.json"]},
+      "interpretation": "AI INTERPRETATION / 待 Founder 确认：ClimateOS 的近期价值可能在于说明数据为何可用，而不是再造大型全球数据平台。",
+      "counterexample": "两个门户展示同名降雨图，不代表时间定义、许可或空间支撑一致。",
+      "next_question": "一个候选降雨产品，是否能逐字段回答谁测量、何时、在哪里、有什么权利？", "source_ids": ["UN01", "UN02"]
+    },
+    {
+      "id": "geo", "title": "UNEP GEO-7", "kind": "全球环境综合评估", "question": "全球报告能告诉我家乡该怎样行动吗？",
+      "why": "将环境现状、政策响应和可能路径放在共同评估过程里，帮助决策者比较选择。",
+      "mechanism": ["组织领域证据与情景", "专家／政府草稿审阅及评审编辑", "形成综合判断与路径；地方实施仍需地方证据"],
+      "known": [{"text": "官方介绍列出咨询、草稿审阅与评审编辑过程，并记载 2025 年 12 月发布。", "source_ids": ["UN03"]}],
+      "unknown": ["本轮未读全文和某条情景的原始假设", "报告路径在 Cooma 的量化效应"], "access": "官方概览可读；全文、模型数据和图表再分发许可未核。",
+      "comparison": {"decision": "LEARN", "reason": "学习主张—假设—证据—反对意见的审阅方式；不能把政策判断变成局地物理参数。", "code_refs": ["docs/research/world-science-expedition/CLAIM_LEDGER.json", "cczps_lite/integration/earth_relations/graph.py: Graph.admission"]},
+      "interpretation": "AI INTERPRETATION / 待 Founder 确认：先选一条对地方有意义的主张向下追证，比堆砌全球报告数量更有价值。",
+      "counterexample": "全球转型情景中的经济收益，不能直接当作一座污水厂的成本节省。",
+      "next_question": "哪一项全球结论依赖的假设，在我们的地区最可能不成立？", "source_ids": ["UN03"]
+    },
+    {
+      "id": "wis2", "title": "WMO WIS2 / wis2box", "kind": "观测交换网络与节点软件", "question": "远方的观测，怎样成为可追溯的本地证据？",
+      "why": "跨境天气研究需要及时、可靠的观测交换；WIS2 降低成员参与成本。",
+      "mechanism": ["目录发现数据集与访问说明", "订阅 Broker 获取新数据通知", "从 Cache 或提供者取得数据", "ClimateOS 另核许可、时间、空间、缺失和质量后才准入"],
+      "known": [{"text": "官方说明区分发现目录、通知代理和数据下载来源。", "source_ids": ["WM05"]}, {"text": "WIS2 于 2025 年 1 月投入运行；wis2box 是节点参考实现。", "source_ids": ["WM01", "WM04"]}],
+      "unknown": ["本轮未核具体数据记录、质量标记及许可", "通知字段／协议及重发语义未读到规范原文", "两处介绍文档目标无法读取"], "access": "说明与软件 README 可读；没有连接真实 Broker、下载观测或安装节点。",
+      "comparison": {"decision": "LEARN", "reason": "交换层可为现有准入层提供候选输入；与 PR155 内存计算依赖图职责不同。安装整套节点暂 DEFER。", "code_refs": ["cczps_lite/integration/earth_system_coupling/state.py: Field.validate / State.require", "cczps_lite/integration/earth_relations/graph.py: Graph.admission"]},
+      "interpretation": "AI INTERPRETATION / 待 Founder 确认：最小下一步应是追清一份记录，不是立即运营一个国际数据交换节点。",
+      "counterexample": "成功收到新数据通知，不代表记录完整、许可明确，也不代表能够解释地方干旱。",
+      "next_question": "同一站一次降雨通知，能否追到原始日界、质量标记和许可？", "source_ids": ["WM01", "WM02", "WM03", "WM04", "WM05"]
+    }
+  ],
+  "claims": [
+    {"id":"UN-C01","station_id":"wesr","text":"GEDS 是自愿框架，不创设新的报告义务或标准。","status":"OFFICIAL_VERIFIED","source_ids":["UN02"],"limitation":"仅核官方概述；不是对实施效果的独立验证。"},
+    {"id":"UN-C02","station_id":"geo","text":"GEO-7 官方页面记载咨询和多轮审阅及 2025 年 12 月发布。","status":"OFFICIAL_VERIFIED","source_ids":["UN03"],"limitation":"全文、底层情景和经济预测未读；不能推导地方政策效果。"},
+    {"id":"WM-C01","station_id":"wis2","text":"WIS2 目录发现、订阅通知与数据取得是分开的环节。","status":"OFFICIAL_VERIFIED","source_ids":["WM05"],"limitation":"未实接网络、未核字段规范和某份观测质量。"},
+    {"id":"WM-C02","station_id":"wis2","text":"wis2box 是节点参考实现，仓库标注 Apache-2.0。","status":"OFFICIAL_VERIFIED","source_ids":["WM04"],"limitation":"本轮未安装或复制代码；软件许可不能替代每个数据集的许可。"},
+    {"id":"UN-I01","station_id":"wesr","text":"ClimateOS 宜先证明一条数据记录的可用依据，再考虑扩大平台。","status":"INTERPRETATION","source_ids":["UN02","WM05"],"limitation":"AI 建议；待 Founder 确认，不是 UNEP/WMO 对 ClimateOS 的背书。"}
+  ]
+}

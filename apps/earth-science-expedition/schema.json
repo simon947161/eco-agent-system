@@ -1,0 +1,15 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"ClimateOS Science Expedition source record v1",
+ "type":"object",
+ "required":["id","project_id","institution","kind","canonical_url","publisher","source_version","exact_section","accessibility","access_date","last_checked","license_reuse_basis","evidence_status","source_hash_if_legally_retained","claims","counterclaims","next_step"],
+ "properties":{
+  "id":{"type":"string","minLength":1},
+  "project_id":{"enum":["wesr","geo","wis2","ecmwf","esmf","bmi"]},
+  "canonical_url":{"type":"string","pattern":"^https://"},
+  "evidence_status":{"enum":["SOURCE_READ","BLOCKED"]},
+  "source_hash_if_legally_retained":{"type":["string","null"]},
+  "claims":{"type":"array","items":{"type":"string"}},
+  "counterclaims":{"type":"array","items":{"type":"string"}}
+ }
+}

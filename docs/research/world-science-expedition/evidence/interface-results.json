@@ -1,0 +1,735 @@
+{
+  "status": "TECHNICALLY_TESTED_SUBSET",
+  "science": "PENDING",
+  "fixture_type": "SYNTHETIC_NOT_OBSERVATIONS",
+  "parent_pr155": "a2863dbf3543f7e74f6b6a6a4725cb99f6fefe30",
+  "parent_pr152": "cf91e4a061341bc33d16400bcf4c6a2c2817aa65",
+  "actual_cases": 3,
+  "steps_each": 4,
+  "cases": [
+    {
+      "id": "baseline",
+      "config": {
+        "grid_n": 2,
+        "length_m": 2000.0,
+        "dt_s": 900.0,
+        "steps": 4,
+        "ta_k": 298.0,
+        "ts_offset_k": 2.0,
+        "q_kgkg": 0.009,
+        "pressure_pa": 100000.0,
+        "wind_m_s": 3.0,
+        "rain_kg_m2_s": 2e-05,
+        "radiation_w_m2": 220.0,
+        "water_kg_m2": 50.0,
+        "capacity_kg_m2": 150.0,
+        "surface_heat_capacity": 2000000.0,
+        "mixing_height_m": 100.0,
+        "transfer_coefficient": 0.002,
+        "relaxation_time_s": 14400.0,
+        "diffusivity_m2_s": 0.5,
+        "relaxation": 0.5,
+        "max_iterations": 60,
+        "tolerance": 1e-08,
+        "lag_steps": 0,
+        "fault": null
+      },
+      "trace": [
+        {
+          "time_s": 900.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                298.13929226850763,
+                298.06847467713027
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                300.76094780216175,
+                299.35694802322485
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.009248958921200699,
+                0.00921652089600246
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                49.98843395029645,
+                49.99228624954594
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                3.285116633727878e-05,
+                2.8570833837841533e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "water_residual_kg_m2": 2.633310236532793e-15,
+          "energy_residual_j_m2": 5.51808625459671e-08
+        },
+        {
+          "time_s": 1800.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                298.2661146995066,
+                298.13272785243714
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                300.81544945501537,
+                299.42131512636337
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.009479689805478204,
+                0.009417545969740038
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                49.97721363441936,
+                49.98483076521926
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                3.246701764121441e-05,
+                2.828387147409299e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "water_residual_kg_m2": 3.230055112268815e-15,
+          "energy_residual_j_m2": 5.2998075261712074e-08
+        },
+        {
+          "time_s": 2700.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                298.3818612170151,
+                298.19323305448756
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                300.8705263754575,
+                299.48594283752794
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.00969364297165185,
+                0.009604297350286934
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                49.96629999649659,
+                49.97760162789625
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                3.2126264358633614e-05,
+                2.803237480334309e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "water_residual_kg_m2": 9.835882108788496e-16,
+          "energy_residual_j_m2": 1.877197064459324e-08
+        },
+        {
+          "time_s": 3600.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                298.4877686276919,
+                298.2504096847728
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                300.92610145899823,
+                299.550784098747
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.009892152080068295,
+                0.009777900270844232
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                49.955657238193425,
+                49.9705694962652
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                3.1825287003516284e-05,
+                2.7813479590054145e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "water_residual_kg_m2": 1.5543122344752192e-15,
+          "energy_residual_j_m2": 3.207242116332054e-08
+        }
+      ],
+      "max_abs_difference_by_field": {
+        "ta": 0.0,
+        "ts": 0.0,
+        "q": 0.0,
+        "water": 0.0
+      },
+      "native_port_calls": 194,
+      "runtime_reference_status": "COMPLETED"
+    },
+    {
+      "id": "hot_dry",
+      "config": {
+        "grid_n": 2,
+        "length_m": 2000.0,
+        "dt_s": 900.0,
+        "steps": 4,
+        "ta_k": 305.0,
+        "ts_offset_k": 2.0,
+        "q_kgkg": 0.009,
+        "pressure_pa": 100000.0,
+        "wind_m_s": 5.0,
+        "rain_kg_m2_s": 2e-05,
+        "radiation_w_m2": 220.0,
+        "water_kg_m2": 20.0,
+        "capacity_kg_m2": 150.0,
+        "surface_heat_capacity": 2000000.0,
+        "mixing_height_m": 100.0,
+        "transfer_coefficient": 0.002,
+        "relaxation_time_s": 14400.0,
+        "diffusivity_m2_s": 0.5,
+        "relaxation": 0.5,
+        "max_iterations": 60,
+        "tolerance": 1e-08,
+        "lag_steps": 0,
+        "fault": null
+      },
+      "trace": [
+        {
+          "time_s": 900.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                305.2236121268428,
+                305.10963568596844
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                307.74947957118906,
+                306.3475909109114
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.009302276161224483,
+                0.009271228465998182
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                19.98292594875176,
+                19.986528510227647
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                3.897116805360152e-05,
+                3.496832196927997e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "water_residual_kg_m2": 1.394717674685353e-15,
+          "energy_residual_j_m2": 2.8638169169425964e-08
+        },
+        {
+          "time_s": 1800.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                305.4198185373486,
+                305.208615597733
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                307.7930424116727,
+                306.4028013098581
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.009583214955060471,
+                0.00952372651693897
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                19.96616986297857,
+                19.97329413503898
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                3.861787308132238e-05,
+                3.4704861320741745e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "water_residual_kg_m2": 1.4450246554886803e-15,
+          "energy_residual_j_m2": 5.2677933126688004e-08
+        },
+        {
+          "time_s": 2700.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                305.5925075906106,
+                305.2984485645454
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                307.8376251380876,
+                306.4584421067613
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.009844421662616919,
+                0.00975887806536988
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                19.949697799168028,
+                19.960270006609832
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                3.8302293122826745e-05,
+                3.447125381016461e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "water_residual_kg_m2": 1.1744077932362984e-15,
+          "energy_residual_j_m2": 2.1158484742045403e-08
+        },
+        {
+          "time_s": 3600.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                305.74501233669474,
+                305.38042824766495
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                307.88307975252104,
+                306.51444075924616
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.010087376661913642,
+                0.009977963026659688
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                19.9334788469925,
+                19.947431444818914
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                3.802105797280813e-05,
+                3.426506865657383e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "water_residual_kg_m2": 1.7832957333041577e-15,
+          "energy_residual_j_m2": 4.7351932153105736e-08
+        }
+      ],
+      "max_abs_difference_by_field": {
+        "ta": 0.0,
+        "ts": 0.0,
+        "q": 0.0,
+        "water": 0.0
+      },
+      "native_port_calls": 192,
+      "runtime_reference_status": "COMPLETED"
+    },
+    {
+      "id": "wet",
+      "config": {
+        "grid_n": 2,
+        "length_m": 2000.0,
+        "dt_s": 900.0,
+        "steps": 4,
+        "ta_k": 298.0,
+        "ts_offset_k": 2.0,
+        "q_kgkg": 0.009,
+        "pressure_pa": 100000.0,
+        "wind_m_s": 3.0,
+        "rain_kg_m2_s": 0.003,
+        "radiation_w_m2": 220.0,
+        "water_kg_m2": 145.0,
+        "capacity_kg_m2": 150.0,
+        "surface_heat_capacity": 2000000.0,
+        "mixing_height_m": 100.0,
+        "transfer_coefficient": 0.002,
+        "relaxation_time_s": 14400.0,
+        "diffusivity_m2_s": 0.5,
+        "relaxation": 0.5,
+        "max_iterations": 60,
+        "tolerance": 1e-08,
+        "lag_steps": 0,
+        "fault": null
+      },
+      "trace": [
+        {
+          "time_s": 900.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                298.1359457698533,
+                298.06556093840743
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                300.69458727215346,
+                299.29919502719946
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.009706480795122879,
+                0.009614698767447059
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                147.61609922551693,
+                147.6269991441825
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                9.322308275896162e-05,
+                8.111206201943822e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "water_residual_kg_m2": 1.4654943925052066e-14,
+          "energy_residual_j_m2": 4.4819898903369904e-08
+        },
+        {
+          "time_s": 1800.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                298.2566033895797,
+                298.1244385254545
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                300.6859051026,
+                299.3084458947643
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.010346015041397183,
+                0.010172335510624068
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                150.0,
+                150.0
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                9.012461137329005e-05,
+                7.857278318432422e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0002610967503121881,
+                0.00028475959924065817
+              ]
+            }
+          },
+          "water_residual_kg_m2": 7.105427357601002e-15,
+          "energy_residual_j_m2": 5.8673322200775146e-08
+        },
+        {
+          "time_s": 2700.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                298.36389115188655,
+                298.1775567303768
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                300.68206019139285,
+                299.3215482975001
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.010915444845503407,
+                0.010670010031632985
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                150.0,
+                150.0
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                8.606595240310549e-05,
+                7.518756602520502e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.002913934047596898,
+                0.002924812433974782
+              ]
+            }
+          },
+          "water_residual_kg_m2": 1.1747547379314938e-14,
+          "energy_residual_j_m2": 9.516952559351921e-09
+        },
+        {
+          "time_s": 3600.0,
+          "fields": {
+            "ta": {
+              "unit": "K",
+              "values": [
+                298.4594868172589,
+                298.22571454092656
+              ]
+            },
+            "ts": {
+              "unit": "K",
+              "values": [
+                300.6824694184643,
+                299.33802892283484
+              ]
+            },
+            "q": {
+              "unit": "kg kg-1",
+              "values": [
+                0.011422738030549976,
+                0.011114485712014
+              ]
+            },
+            "water": {
+              "unit": "kg m-2",
+              "values": [
+                150.0,
+                150.0
+              ]
+            },
+            "evap": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                8.24895538169524e-05,
+                7.220801548835892e-05
+              ]
+            },
+            "runoff": {
+              "unit": "kg m-2 s-1",
+              "values": [
+                0.0029175104461830552,
+                0.002927791984511651
+              ]
+            }
+          },
+          "water_residual_kg_m2": 8.7360674250192e-15,
+          "energy_residual_j_m2": 5.3871190175414085e-08
+        }
+      ],
+      "max_abs_difference_by_field": {
+        "ta": 0.0,
+        "ts": 0.0,
+        "q": 0.0,
+        "water": 0.0
+      },
+      "native_port_calls": 192,
+      "runtime_reference_status": "COMPLETED"
+    }
+  ],
+  "direct_rename_counterexample": {
+    "clock_advanced_s": 900.0,
+    "state_unchanged": true,
+    "committed": false,
+    "water_proposal_differs": true,
+    "interpretation": "Bare port advances its clock but not shared inventory; cannot be relabelled as a state-updating BMI component."
+  },
+  "not_implemented": [
+    "full BMI conformance",
+    "external BMI model installation",
+    "mutable value pointers",
+    "unstructured grids",
+    "fractional timesteps",
+    "real-world predictive validation"
+  ],
+  "source_sha256": {
+    "apps/earth-science-expedition/research/interface_experiment.py": "538eb21624e443239be31e34a79935bb812cb6d2305d7b2b114d87f1a2c5aec8",
+    "cczps_lite/integration/earth_system_coupling/ports.py": "85257124bf322131046caf63df1de0f17693401a34bd6f18556af020dc4d1087",
+    "cczps_lite/integration/earth_system_coupling/models.py": "2fab307faac29671b8643fa4bc3cc8b53b47cfc85d5c4267f95d8b4e8d944b40",
+    "cczps_lite/integration/earth_relations/coupling.py": "caec708c5338a9f567c4581019a84b9fccbdc51c77ada3ba13023cd716f06756",
+    "cczps_lite/integration/earth_relations/runtime.py": "bd0a94a1d065f3a52d539308e29bbeee5e996b389ad1af83dbd489080ac15aa6"
+  }
+}

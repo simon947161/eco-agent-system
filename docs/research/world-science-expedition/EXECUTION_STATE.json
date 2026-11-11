@@ -1,0 +1,19 @@
+{
+ "task":"CLIMATEOS-WORLD-SCIENCE-EXPEDITION-001",
+ "issue":156,
+ "taskbook_version":"V1.1",
+ "taskbook_head":"410e499d2048e95d75d6743a8ca58491ddbdfa3e",
+ "parent_pr":155,
+ "parent_head":"a2863dbf3543f7e74f6b6a6a4725cb99f6fefe30",
+ "parent_ci":{"run":42997663489,"job":130445683108,"conclusion":"success","tests":768},
+ "recovery":"CLOUD_ARTIFACT_UNAVAILABLE; bounded reconstruction explicitly authorized by V1.1",
+ "implementation":"LOCAL_VERIFIED",
+ "knowledge_scope":{"stations":6,"source_targets":23,"body_read":18,"access_gaps":5,"whole_reports_read":0},
+ "technical_experiment":{"status":"TECHNICALLY_TESTED_SUBSET","cases":3,"steps_each":4,"new_physics":false,"new_observation_downloads":0},
+ "scientific_admission":"PENDING",
+ "independent_review":"PENDING_CHATGPT_AND_FOUNDER",
+ "deployed":false,
+ "merged":false,
+ "private_assets_accessed":false,
+ "remote_delivery":"Use exact remote Draft PR HEAD and its Actions checks in delivery receipt; this file does not self-certify remote CI"
+}

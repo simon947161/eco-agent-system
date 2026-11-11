@@ -1,0 +1,306 @@
+[
+  {
+    "id": "wesr",
+    "title": "UNEP WESR / GEDS",
+    "kind": "数据门户与自愿治理框架",
+    "question": "公开环境数据很多，为什么仍难判断家乡正在怎样变化？",
+    "why": "GEDS 针对数据碎片化、互操作和访问障碍；先组织已有数据的质量、来源与责任。",
+    "mechanism": [
+      "识别已有数据与责任主体",
+      "治理／来源／互操作／可及性／能力五类问题",
+      "在具体国家和数据产品上核查可用性"
+    ],
+    "known": [
+      {
+        "text": "GEDS 是自愿的支持框架，不新设报告义务或标准。",
+        "source_ids": [
+          "UN02"
+        ]
+      },
+      {
+        "text": "WESR 首页本次没有可提取正文，不能称已读其数据目录。",
+        "source_ids": [
+          "UN01"
+        ]
+      }
+    ],
+    "unknown": [
+      "某一 WESR 数据集的许可、版本、空间精度和缺测率",
+      "GEDS 2026 试点工具包的实际效能"
+    ],
+    "access": "GEDS 官方说明可读；WESR 数据未取得，产品许可 UNKNOWN。",
+    "comparison": {
+      "decision": "LEARN",
+      "reason": "把来源与质量放在变量计算之前；不将宏观战略误作可调用模型。",
+      "code_refs": [
+        "cczps_lite/integration/earth_system_coupling/state.py: Field.validate",
+        "docs/research/world-science-expedition/SOURCE_REGISTER.json"
+      ]
+    },
+    "interpretation": "AI INTERPRETATION / 待 Founder 确认：ClimateOS 的近期价值可能在于说明数据为何可用，而不是再造大型全球数据平台。",
+    "counterexample": "两个门户展示同名降雨图，不代表时间定义、许可或空间支撑一致。",
+    "next_question": "一个候选降雨产品，是否能逐字段回答谁测量、何时、在哪里、有什么权利？",
+    "source_ids": [
+      "UN01",
+      "UN02"
+    ]
+  },
+  {
+    "id": "geo",
+    "title": "UNEP GEO-7",
+    "kind": "全球环境综合评估",
+    "question": "全球报告能告诉我家乡该怎样行动吗？",
+    "why": "将环境现状、政策响应和可能路径放在共同评估过程里，帮助决策者比较选择。",
+    "mechanism": [
+      "组织领域证据与情景",
+      "专家／政府草稿审阅及评审编辑",
+      "形成综合判断与路径；地方实施仍需地方证据"
+    ],
+    "known": [
+      {
+        "text": "官方介绍列出咨询、草稿审阅与评审编辑过程，并记载 2025 年 12 月发布。",
+        "source_ids": [
+          "UN03"
+        ]
+      }
+    ],
+    "unknown": [
+      "本轮未读全文和某条情景的原始假设",
+      "报告路径在 Cooma 的量化效应"
+    ],
+    "access": "官方概览可读；全文、模型数据和图表再分发许可未核。",
+    "comparison": {
+      "decision": "LEARN",
+      "reason": "学习主张—假设—证据—反对意见的审阅方式；不能把政策判断变成局地物理参数。",
+      "code_refs": [
+        "docs/research/world-science-expedition/CLAIM_LEDGER.json",
+        "cczps_lite/integration/earth_relations/graph.py: Graph.admission"
+      ]
+    },
+    "interpretation": "AI INTERPRETATION / 待 Founder 确认：先选一条对地方有意义的主张向下追证，比堆砌全球报告数量更有价值。",
+    "counterexample": "全球转型情景中的经济收益，不能直接当作一座污水厂的成本节省。",
+    "next_question": "哪一项全球结论依赖的假设，在我们的地区最可能不成立？",
+    "source_ids": [
+      "UN03"
+    ]
+  },
+  {
+    "id": "wis2",
+    "title": "WMO WIS2 / wis2box",
+    "kind": "观测交换网络与节点软件",
+    "question": "远方的观测，怎样成为可追溯的本地证据？",
+    "why": "跨境天气研究需要及时、可靠的观测交换；WIS2 降低成员参与成本。",
+    "mechanism": [
+      "目录发现数据集与访问说明",
+      "订阅 Broker 获取新数据通知",
+      "从 Cache 或提供者取得数据",
+      "ClimateOS 另核许可、时间、空间、缺失和质量后才准入"
+    ],
+    "known": [
+      {
+        "text": "官方说明区分发现目录、通知代理和数据下载来源。",
+        "source_ids": [
+          "WM05"
+        ]
+      },
+      {
+        "text": "WIS2 于 2025 年 1 月投入运行；wis2box 是节点参考实现。",
+        "source_ids": [
+          "WM01",
+          "WM04"
+        ]
+      }
+    ],
+    "unknown": [
+      "本轮未核具体数据记录、质量标记及许可",
+      "通知字段／协议及重发语义未读到规范原文",
+      "两处介绍文档目标无法读取"
+    ],
+    "access": "说明与软件 README 可读；没有连接真实 Broker、下载观测或安装节点。",
+    "comparison": {
+      "decision": "LEARN",
+      "reason": "交换层可为现有准入层提供候选输入；与 PR155 内存计算依赖图职责不同。安装整套节点暂 DEFER。",
+      "code_refs": [
+        "cczps_lite/integration/earth_system_coupling/state.py: Field.validate / State.require",
+        "cczps_lite/integration/earth_relations/graph.py: Graph.admission"
+      ]
+    },
+    "interpretation": "AI INTERPRETATION / 待 Founder 确认：最小下一步应是追清一份记录，不是立即运营一个国际数据交换节点。",
+    "counterexample": "成功收到新数据通知，不代表记录完整、许可明确，也不代表能够解释地方干旱。",
+    "next_question": "同一站一次降雨通知，能否追到原始日界、质量标记和许可？",
+    "source_ids": [
+      "WM01",
+      "WM02",
+      "WM03",
+      "WM04",
+      "WM05"
+    ]
+  },
+  {
+    "id": "ecmwf",
+    "title": "ECMWF · ERA5 / DestinE",
+    "kind": "再分析数据产品 / 数字孪生工程",
+    "question": "全球格点能告诉我家乡正在变干吗？",
+    "why": "缺测地区也需要连贯的环境状态估计；但估计的空间范围与误差必须和地方问题匹配。[EC01, EC03]",
+    "mechanism": [
+      "观测进入质量处理与同化",
+      "模型与观测共同约束历史状态",
+      "ERA5输出规则格点与时间产品",
+      "地方解释还需站点核验与尺度判断"
+    ],
+    "known": [
+      {
+        "text": "ERA5是再分析：物理模型与观测共同形成估计，不是纯观测拼接。",
+        "source_ids": [
+          "EC03"
+        ]
+      },
+      {
+        "text": "DestinE的天气极端与气候适应两类孪生，服务不同时间尺度；官网还描述边模拟边处理的流式思想。",
+        "source_ids": [
+          "EC02"
+        ]
+      },
+      {
+        "text": "API文档要求账户、令牌和接受数据条款；这轮只读目录，未下载数据。",
+        "source_ids": [
+          "EC04"
+        ]
+      }
+    ],
+    "unknown": [
+      "某个澳大利亚坡地的误差与代表性未核验",
+      "DestinE目标产品的具体访问与再分发条件UNKNOWN",
+      "没有将格点降水转换成本地水文强迫"
+    ],
+    "access": "目录与介绍可读；ERA5目录标CC-BY但具体许可版本未深读。DestinE访问候选页不可读；不尝试绕过。[EC03, EC04, EC06]",
+    "comparison": {
+      "decision": "LEARN / DEFER",
+      "reason": "可学习再分析与模拟分层，暂缓接入。PR152局地假设状态没有同化系统；共享字段不等于完整地球孪生。",
+      "code_refs": [
+        "cczps_lite/integration/earth_system_coupling/state.py",
+        "cczps_lite/integration/earth_system_coupling/models.py"
+      ]
+    },
+    "interpretation": "AI推论：先用少量独立站点检验一个区域指标，比先下载更精细的全球格点更能约束错误；该方案尚未执行。",
+    "counterexample": "一条平滑、完整的再分析曲线仍可能偏离局部山坡。实时预报的短滚动档案也不能替代历史气候资料。[EC03, EC05]",
+    "next_question": "降水是瞬时率还是时段累计？在比较之前，时段、站点与格点怎样对齐？",
+    "source_ids": [
+      "EC01",
+      "EC02",
+      "EC03",
+      "EC04",
+      "EC05",
+      "EC06"
+    ]
+  },
+  {
+    "id": "esmf",
+    "title": "ESMF / NUOPC · 耦合不是画箭头",
+    "kind": "科学软件框架与组件协作约定",
+    "question": "两个模型什么时候、在什么网格上交换，谁负责检查？",
+    "why": "把组件的接口、初始化和运行时协作明确化，使团队能构建可组合的科学应用。",
+    "mechanism": [
+      "发布字段需求与输出",
+      "实现存储、准备连接与转换",
+      "检查相容性并标时间戳",
+      "按运行序列与时钟驱动组件"
+    ],
+    "known": [
+      {
+        "text": "组件、连接与调度有不同职责；多时钟协调不能省略科学依赖。",
+        "source_ids": [
+          "ES01"
+        ]
+      },
+      {
+        "text": "重网格方法应根据变量及面积语义选择；不是任意插值都守恒。",
+        "source_ids": [
+          "ES02"
+        ]
+      }
+    ],
+    "unknown": [
+      "未安装 ESMF，未验证真实外部模型接入。",
+      "尚未验证任一全球网格与ClimateOS局地矩形网格的兼容性。"
+    ],
+    "access": "官方概览公开可读；本轮不下载模型或复制官方图。图文复用许可未单独核实。",
+    "comparison": {
+      "decision": "LEARN",
+      "reason": "先学字段协商、时钟与责任分离；当前两过程原型不因安装框架就获得科学有效性。",
+      "code_refs": [
+        "cczps_lite/integration/earth_system_coupling/ports.py",
+        "cczps_lite/integration/earth_relations/coupling.py",
+        "cczps_lite/integration/earth_system_coupling/state.py"
+      ]
+    },
+    "interpretation": "AI INTERPRETATION：ClimateOS当前更缺的是可拒绝的不相容实例，而不是更大的耦合框架。",
+    "counterexample": "数据能传过去，但把月均量接到瞬时过程上，接口成功仍可能产生错误科学含义。",
+    "next_question": "什么最小用例确实需要现有矩形重网格之外的能力？",
+    "source_ids": [
+      "ES01",
+      "ES02"
+    ]
+  },
+  {
+    "id": "bmi",
+    "title": "CSDMS BMI · 共同接口，不是共同物理",
+    "kind": "模型查询与控制接口规范",
+    "question": "同名update真的意味着模型状态已经推进了吗？",
+    "why": "降低学习不同模型的接口成本，使模型更容易被外部应用组织。",
+    "mechanism": [
+      "初始化模型",
+      "查询变量、单位、网格与时间",
+      "设置输入并更新状态",
+      "读取副本或显式引用",
+      "结束生命周期"
+    ],
+    "known": [
+      {
+        "text": "规范把状态更新、时间查询、变量读写与网格信息分开。",
+        "source_ids": [
+          "BM07"
+        ]
+      },
+      {
+        "text": "Python get_value复制到调用方缓冲；get_value_ptr提供引用，二者不等价。",
+        "source_ids": [
+          "BM06"
+        ]
+      },
+      {
+        "text": "BMI2.0是接口规范；官方实现应选发布版本。",
+        "source_ids": [
+          "BM01",
+          "BM05"
+        ]
+      }
+    ],
+    "unknown": [
+      "本轮教学适配不是完整BMI实现，也没有bmipy符合性认证。",
+      "本地短变量名与CSDMS Standard Names的完整映射未建立。",
+      "实际外部科研模型的授权、数据及数值适用性未验证。"
+    ],
+    "access": "官方规范与公开仓库可读；旧readthedocs稳定路径工具不可用，另从官方入口取得新域名。未安装软件。",
+    "comparison": {
+      "decision": "WRAP",
+      "reason": "只试包住完整耦合事务的教学子集；ModelPort单端口返回未提交提案，不能简单改名为update。",
+      "code_refs": [
+        "cczps_lite/integration/earth_system_coupling/ports.py",
+        "cczps_lite/integration/earth_relations/coupling.py"
+      ]
+    },
+    "interpretation": "AI INTERPRETATION：适配的价值应由它暴露多少不相容性来衡量，不能以方法名数量宣称国际接轨。",
+    "counterexample": "单端口clock推进而共享库存尚未提交；若只看时钟，外部调用者会误认为完整物理步已完成。",
+    "next_question": "复制语义、受限写入与整步更新能否在同一公开合成状态上被反例测试？",
+    "source_ids": [
+      "BM01",
+      "BM02",
+      "BM03",
+      "BM04",
+      "BM05",
+      "BM06",
+      "BM07"
+    ]
+  }
+]

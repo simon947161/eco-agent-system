@@ -1,0 +1,161 @@
+[
+  {
+    "id": "EC-C01",
+    "station_id": "ecmwf",
+    "text": "ERA5是同化产生的再分析估计，不能直接标记为本地实测。",
+    "status": "OFFICIAL_VERIFIED",
+    "source_ids": [
+      "EC03"
+    ],
+    "limitation": "产品定义已核；特定地区误差未核",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "EC-C02",
+    "station_id": "ecmwf",
+    "text": "ClimateOS目前不应自称地球数字孪生；下一步应先验证一个目标量。",
+    "status": "INTERPRETATION",
+    "source_ids": [
+      "EC02",
+      "EC03"
+    ],
+    "limitation": "作者建议，待Founder与科学评审",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "EC-C03",
+    "station_id": "ecmwf",
+    "text": "本轮无法核定DestinE具体产品访问许可。",
+    "status": "BLOCKED",
+    "source_ids": [
+      "EC06"
+    ],
+    "limitation": "只说明本次页面访问失败，不说明所有DestinE服务不可用",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "C-ES01",
+    "station_id": "esmf",
+    "text": "NUOPC有明确组件分工和多时钟运行序列。",
+    "status": "OFFICIAL_VERIFIED",
+    "source_ids": [
+      "ES01"
+    ],
+    "limitation": "阅读概览，不等于安装或实施完整标准。",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "C-ES02",
+    "station_id": "esmf",
+    "text": "保守重网格的面积定义和方法选择必须明确。",
+    "status": "OFFICIAL_VERIFIED",
+    "source_ids": [
+      "ES02"
+    ],
+    "limitation": "重网格守恒不等于过程守恒或真实预测能力。",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "C-BM01",
+    "station_id": "bmi",
+    "text": "BMI update是状态推进，ModelPort本地单端口step只提出未提交提案，不能直接等同。",
+    "status": "INTERPRETATION",
+    "source_ids": [
+      "BM06",
+      "BM07"
+    ],
+    "limitation": "跨来源对照：另一半依据本仓库ports.py实际源码，不是官方对ClimateOS的评审。",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "C-BM02",
+    "station_id": "bmi",
+    "text": "BMI Python规范的get_value是复制到dest；get_value_ptr是引用。",
+    "status": "OFFICIAL_VERIFIED",
+    "source_ids": [
+      "BM06"
+    ],
+    "limitation": "只实现副本子集不满足完整BMI全部方法及命名要求。",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "UN-C01",
+    "station_id": "wesr",
+    "text": "GEDS 是自愿框架，不创设新的报告义务或标准。",
+    "status": "OFFICIAL_VERIFIED",
+    "source_ids": [
+      "UN02"
+    ],
+    "limitation": "仅核官方概述；不是对实施效果的独立验证。",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "UN-C02",
+    "station_id": "geo",
+    "text": "GEO-7 官方页面记载咨询和多轮审阅及 2025 年 12 月发布。",
+    "status": "OFFICIAL_VERIFIED",
+    "source_ids": [
+      "UN03"
+    ],
+    "limitation": "全文、底层情景和经济预测未读；不能推导地方政策效果。",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "WM-C01",
+    "station_id": "wis2",
+    "text": "WIS2 目录发现、订阅通知与数据取得是分开的环节。",
+    "status": "OFFICIAL_VERIFIED",
+    "source_ids": [
+      "WM05"
+    ],
+    "limitation": "未实接网络、未核字段规范和某份观测质量。",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "WM-C02",
+    "station_id": "wis2",
+    "text": "wis2box 是节点参考实现，仓库标注 Apache-2.0。",
+    "status": "OFFICIAL_VERIFIED",
+    "source_ids": [
+      "WM04"
+    ],
+    "limitation": "本轮未安装或复制代码；软件许可不能替代每个数据集的许可。",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  },
+  {
+    "id": "UN-I01",
+    "station_id": "wesr",
+    "text": "ClimateOS 宜先证明一条数据记录的可用依据，再考虑扩大平台。",
+    "status": "INTERPRETATION",
+    "source_ids": [
+      "UN02",
+      "WM05"
+    ],
+    "limitation": "AI 建议；待 Founder 确认，不是 UNEP/WMO 对 ClimateOS 的背书。",
+    "revision": 1,
+    "checked_at": "2026-11-11",
+    "supersedes": null
+  }
+]

@@ -1,0 +1,33 @@
+name: Science Expedition Checks
+on:
+  pull_request:
+    paths:
+      - 'apps/earth-science-expedition/**'
+      - 'docs/research/world-science-expedition/**'
+      - 'tests/test_science_expedition.py'
+      - '.github/workflows/science-expedition.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproducibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Reproduce public interface and source bundle
+        run: |
+          python apps/earth-science-expedition/research/interface_experiment.py
+          python apps/earth-science-expedition/build_data.py
+          git diff --exit-code -- apps/earth-science-expedition/data.js docs/research/world-science-expedition
+      - name: Validate research and notebook behavior
+        run: |
+          python -m unittest tests.test_science_expedition
+          node --test apps/earth-science-expedition/notebook.test.cjs
+          node --check apps/earth-science-expedition/app.js
+          node --check apps/earth-science-expedition/notebook.js
