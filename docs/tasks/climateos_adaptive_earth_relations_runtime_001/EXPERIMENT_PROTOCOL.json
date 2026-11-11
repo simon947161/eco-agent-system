@@ -1,0 +1,19 @@
+{
+  "protocol": "ISSUE154_PRE_RUN_V1",
+  "configurations": 120,
+  "seed": 15420261111,
+  "modes": ["selective", "full_safe"],
+  "repetitions_per_mode": 3,
+  "order": "alternate order by configuration and repetition",
+  "families": ["nominal", "heat_dry", "rain_pulse", "zero_wind", "lagged", "missing_q", "unit", "time", "global_to_local", "iteration_limit", "stiff", "revoked"],
+  "structural_variations": "0/6/18 optional summaries; 0..3 shared diamonds; question or terminal diamond targets; 2/4 cells; 450/900 seconds; 4..6 land steps; lag 1..3",
+  "correctness": "identical status, failure code, requested outputs and final physical fields; exact deterministic repeat within each mode",
+  "water_tolerance_kg_m2": 1e-8,
+  "energy_tolerance_j_m2": 1e-5,
+  "performance": "native port calls, node executions, three raw wall times, median and range; do not assume speedup",
+  "counterexample": "all results requested should remove node pruning gain",
+  "wall_seconds": 1200,
+  "archive_max_bytes": 200000000,
+  "scope": "SYNTHETIC_PHYSICAL_SANDBOX",
+  "science": "PENDING"
+}

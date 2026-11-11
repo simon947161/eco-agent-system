@@ -1,0 +1,25 @@
+{
+  "status": "PASS_WITH_PLATFORM_SKIP",
+  "total_tests": 765,
+  "passed": 764,
+  "skipped": 1,
+  "skip_reason": "existing Windows symlink privilege test",
+  "seconds": 17.402,
+  "new_tests": 26,
+  "new_tests_passed": 26,
+  "initial_full_suite": {
+    "total": 761,
+    "errors": 8,
+    "skipped": 1,
+    "reason": "existing localhost tests blocked by sandbox WinError10013"
+  },
+  "ui": {
+    "status": "PASS",
+    "viewports": 2,
+    "pages_checked": 20,
+    "external_network_requests": 0,
+    "manual_visual_review": "20-page contact sheets plus desktop/mobile individual samples; mobile numeric table corrected"
+  },
+  "remote_ci": "PENDING_EXACT_HEAD_RECEIPT",
+  "science": "PENDING"
+}

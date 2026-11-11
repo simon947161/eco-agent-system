@@ -173,7 +173,7 @@ def mapped_step(oldv,guess,c,strategy,lag_values=None):
     new={k:surface[k] for k in ('ts','water')};new.update(ta=air['ta'],q=air['q'])
     return new,flux,surface,air
 
-def advance(state,c,strategy,lag_values=None):
+def advance(state,c,strategy,lag_values=None,mapper=None):
     need(strategy in STRATEGIES,'COUPLING_STRATEGY');dt=c['dt_s'];cp=state.checkpoint();g=state.fields['ts'].grid;t=state.fields['ts'].time
     required=Surface.required_fields if strategy=='independent' else tuple(set(Surface.required_fields+Atmosphere.required_fields))
     state.require(required,grid=g,time=t);oldv={k:list(f.values) for k,f in state.fields.items()}
@@ -182,7 +182,8 @@ def advance(state,c,strategy,lag_values=None):
     guess={k:list(oldv[k]) for k in ('ts','water','ta','q')};scale={'ts':1.,'water':100.,'ta':1.,'q':.01};iterations=0;error=0.
     try:
         for iteration in range(c['max_iterations'] if strategy=='two_way' else 1):
-            new,flux,surface,air=mapped_step(oldv,guess,c,strategy,lag_values);iterations=iteration+1
+            # Optional proposal adapter; default PR152 numerical path is unchanged.
+            new,flux,surface,air=(mapper or mapped_step)(oldv,guess,c,strategy,lag_values);iterations=iteration+1
             need(all(243.15<=v<=333.15 for k in ('ts','ta') for v in new[k]),'TEMPERATURE_DOMAIN')
             if strategy!='independent':need(all(0<=v<=.05 for v in new['q']),'HUMIDITY_DOMAIN')
             need(all(-1e-10<=v<=c['capacity_kg_m2']+1e-10 for v in new['water']),'WATER_DOMAIN')

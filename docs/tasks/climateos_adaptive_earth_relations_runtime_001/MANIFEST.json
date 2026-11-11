@@ -1,0 +1,350 @@
+{
+  "encoding": "text SHA256 normalized CRLF to LF; PNG binary",
+  "files": [
+    {
+      "path": "cczps_lite/integration/earth_relations/__init__.py",
+      "sha256": "67b0607f01a80163785ee358c8cd62ae20a13caff9c8c108f8e5138904191f3a",
+      "bytes": 171
+    },
+    {
+      "path": "cczps_lite/integration/earth_relations/__main__.py",
+      "sha256": "7df333ada7b5a859996ae1bb6a7fba988bd9686b9c3540e0da8e09a83a06ae95",
+      "bytes": 2150
+    },
+    {
+      "path": "cczps_lite/integration/earth_relations/coupling.py",
+      "sha256": "caec708c5338a9f567c4581019a84b9fccbdc51c77ada3ba13023cd716f06756",
+      "bytes": 2598
+    },
+    {
+      "path": "cczps_lite/integration/earth_relations/experiments.py",
+      "sha256": "1b068f6ec92b2583cec4764a2d9adf868410ec37efbb52770c4f110173ab8df1",
+      "bytes": 7562
+    },
+    {
+      "path": "cczps_lite/integration/earth_relations/graph.py",
+      "sha256": "1a124d9344057bf25ecf7b60ec75ba50dca9b0c789a6c93a3db3a25030ea6493",
+      "bytes": 14342
+    },
+    {
+      "path": "cczps_lite/integration/earth_relations/runtime.py",
+      "sha256": "d58ff5bfa825870f9aa30ceb05f5e4b15e4477da85e84d365d20c8e07c837af5",
+      "bytes": 9731
+    },
+    {
+      "path": "cczps_lite/integration/earth_system_coupling/models.py",
+      "sha256": "2fab307faac29671b8643fa4bc3cc8b53b47cfc85d5c4267f95d8b4e8d944b40",
+      "bytes": 20589
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/COUNTEREXAMPLES.md",
+      "sha256": "b56a4c6c2028a8f2a4cdc055da53f38f35e6ceae47902f90e5b1cc3b828d811c",
+      "bytes": 1623
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/CRP_HANDOFF.md",
+      "sha256": "1ebe51ea2ee3474e1cf7962a33d220a2ea683f30d4c1678808aac5ff79f56525",
+      "bytes": 1231
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/benchmark/runs.csv",
+      "sha256": "793ed7456dbb715a51aa60c04bb891fa4ff2f3284fe026d270edeb8ab0f3ff6f",
+      "bytes": 13848
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/benchmark/runs.jsonl",
+      "sha256": "cb30f51476c85851b379c7baa94835209d3e34b7ea46f047aa7f7152ef569c2d",
+      "bytes": 5210384
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/benchmark/summary.json",
+      "sha256": "e881f4c78cd4c10d05a1dbdae422bc43371f14114e9f277bb1c32440e11ca272",
+      "bytes": 61133
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/benchmark_before_endpoint_hardening/runs.csv",
+      "sha256": "2941e54c4aca45d0f03dc0e6b7e71352168aeb683215f36cbb2bcc9f49fe5e2c",
+      "bytes": 13830
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/benchmark_before_endpoint_hardening/runs.jsonl",
+      "sha256": "3870fc19d1fb667385bb2ace2de535b77aa92a3d909dbe3a927550e6136dd8f9",
+      "bytes": 5210352
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/benchmark_before_endpoint_hardening/summary.json",
+      "sha256": "c6d90c6519785ff7961a2619210e51708c567f5b394631612508a2b1cdae940d",
+      "bytes": 61113
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/benchmark_final/runs.csv",
+      "sha256": "e93756f77b868ec7d7599dcebae705f8379a62b3f530a54a2f764716b7184d50",
+      "bytes": 13847
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/benchmark_final/runs.jsonl",
+      "sha256": "3b6e2ab9fb46bc0bd3da974bc234d5d307495f0e5683512198a99b6dfa1e4b5e",
+      "bytes": 5210372
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/benchmark_final/summary.json",
+      "sha256": "59f66936d6333fc134192978d63ff4502d8cce83f33c764cb64f38cc1917390a",
+      "bytes": 61133
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/export-review.json",
+      "sha256": "4bbec06ab2635378f3cde782727a92d037dd8ce4cc758224ca9663972dc12bb9",
+      "bytes": 169
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/failures.json",
+      "sha256": "3ef1664728cf8c286a8a1886120c01669191b27928a06605a4d4e5a88a8d5dcf",
+      "bytes": 641
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/plan.json",
+      "sha256": "9eed0f6a74c600ef1f22f54535d5b927bb4beefea5d0561d890f663ef43fa1c4",
+      "bytes": 3032
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/relations.json",
+      "sha256": "ca2d759e90073097f3ed04e89d40c5f65cabc3b1068904846240457e372696b3",
+      "bytes": 27756
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/replay.json",
+      "sha256": "507a279bb0b2869a37840542097c15fa677f9280e83dcf1eae6f3c48b3ac48fa",
+      "bytes": 27075
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/scenarios.json",
+      "sha256": "eaaab566ce6d0fe7cd37fdf91cb20ab39fc3912933896689dddf9c119cf267f0",
+      "bytes": 106402
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/test-results.json",
+      "sha256": "096728a497d346557f8d20235120810053adb03d6044a11f17207133f6ed417d",
+      "bytes": 717
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/trace.json",
+      "sha256": "290171133e7e1aad926d20831782c2f0c82b22acdfb5f9438f1515586713c8ee",
+      "bytes": 5962
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/contact-desktop.html",
+      "sha256": "bb9682425f5a9412ac325dc2ba525f4c4d350f9b14de4e75e8925463bec9c152",
+      "bytes": 1471
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/contact-desktop.png",
+      "sha256": "220290365ff88f72de3f0628a36cad93159dfc31eb25d5b72afe10db4a17be59",
+      "bytes": 110197
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/contact-mobile.html",
+      "sha256": "40df461ef6189bb0887f01831d7671c4af8dc27fbf4510ae44594af1412ca534",
+      "bytes": 1451
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/contact-mobile.png",
+      "sha256": "fc40fc7b03aa37b2725628bb3fbcc731e3b7e0fd137a2ddfe1a6d28d65248f2a",
+      "bytes": 386506
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-1.png",
+      "sha256": "09b9052920c19ec1ff32e0f9dc3da52f8e17cf564d448ba4184b171c4c6459c5",
+      "bytes": 96387
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-10.png",
+      "sha256": "2cb360c2ffc956b9ad1cbc5c0e4beea75e759aa2752b758ac969d53889851740",
+      "bytes": 63354
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-2.png",
+      "sha256": "ffac4fce8898ce023a7c00ce6e95b70e2c1ae90f8748de4c26d65116936e6ac1",
+      "bytes": 56231
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-3.png",
+      "sha256": "13a32965704c537cb1405192844bccb35a32aaa6acf0f9a2b503235b19cc6be4",
+      "bytes": 55053
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-4.png",
+      "sha256": "305b366860ed015c5b012acb77dde359452c242b5ef8ad936ad6a5ef8bcf2f52",
+      "bytes": 51246
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-5.png",
+      "sha256": "11d622e04a0a138a9bd78088fed252c638695df0063c0192a072e0ec456d4cda",
+      "bytes": 52127
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-6.png",
+      "sha256": "2952e1fea004dc50ccf246ff9bde1098cc95d1bb4c04b363742b5c8770553121",
+      "bytes": 52783
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-7.png",
+      "sha256": "de1bdc7a67a57b3ef364ff1bffce0949b96bac9129aabe89eeef1a00b6f76363",
+      "bytes": 50474
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-8.png",
+      "sha256": "c61d7aa92314e9d2ee6d7b68868d0fb8a812e268c476d1a0a6b0cf22f178fda8",
+      "bytes": 55861
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/desktop-9.png",
+      "sha256": "1eb029abd72c6d3a6101f1626062dc8bbec67dd866f59db084eaeddf750f6077",
+      "bytes": 55790
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-1.png",
+      "sha256": "f6858f21202c10457f41c8e4eba479b926aae2f6005a21961a0ca633e5782bfc",
+      "bytes": 70463
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-10.png",
+      "sha256": "b74e85884914ab7f0c1b3fa85b8bc67fec4e1fbee5b82b4f1f1ca187b8ab6ab5",
+      "bytes": 50171
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-2.png",
+      "sha256": "05272d4676329db4e03ca1832ab94a97a800d53f55310d186ce91899dbc72de7",
+      "bytes": 42497
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-3.png",
+      "sha256": "34de0be598d2da6ceac860f03a1988334259246332e240fa27c610dd1096604d",
+      "bytes": 42274
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-4.png",
+      "sha256": "b5e891c49ff24c8234ab896347a8e760a731d5558cc6b796154c948859bf2711",
+      "bytes": 38358
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-5.png",
+      "sha256": "88b774eab944b803af0fcdda023a77d572f3ed845b1781498ffaf14601f22649",
+      "bytes": 44469
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-6.png",
+      "sha256": "eb06d999bd3323bc3e73b2e25ecd6f7b24006605dd4277151d8799e0562e20da",
+      "bytes": 42572
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-7.png",
+      "sha256": "25bee712b4055d4fb2e2afb12c49e78c2d6c62d941c4e83b93811c8d98a12fd4",
+      "bytes": 37608
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-8.png",
+      "sha256": "1b01b358a6ce7b619aef5ec5a7b256fa987dd72354f5530073a612085899e07f",
+      "bytes": 44484
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/mobile-9.png",
+      "sha256": "bc7599b7ade9574cc60d683e5e425283fdbf62b2130b459441412554c21135b3",
+      "bytes": 45843
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/evidence/ui/qa.json",
+      "sha256": "96a8cacd381d641c8edb0307f2b37252f7d9a1eda8dd59c2118b7079d59167fb",
+      "bytes": 3542
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/EXECUTION_STATE.json",
+      "sha256": "60b048fce59b029fd299f1efc272b5b89e8755c099f842fb32a53fe1040072a6",
+      "bytes": 634
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/EXPERIMENT_PROTOCOL.json",
+      "sha256": "9d207a3718a318c7a7108da1f73f6fd9d86ccc2377f6f9b9e5502c70b69f7748",
+      "bytes": 1078
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/FOUNDER_REPORT_ZH.md",
+      "sha256": "5ab4f0ac674255b0dfb1fbfafc690aba245d26019256b1eb0ab4d8ffed7e1ca7",
+      "bytes": 2088
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/GRAPH_SCHEMA.md",
+      "sha256": "5eb5d547b83082ed6c0ef508fa7a5d34e9fece00d402bb0a6779a8efd1bcdd63",
+      "bytes": 2545
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/NEXT_SESSION.md",
+      "sha256": "f20e1f37c908016b7db8d266d1c33a668e678ae3d32ade00c543f59082b56fd6",
+      "bytes": 1008
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/PHYSICAL_SCIENCE_LIMITS.md",
+      "sha256": "9a362933d2dfd6a5db656094d39ca120dbd30ebca499b62f199f194af5b04482",
+      "bytes": 1185
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/QA.md",
+      "sha256": "aa3e98c20dd638beddb2e85dee219d73da2a0e5073f79f17d9411bc8c2663d7f",
+      "bytes": 1474
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/README.md",
+      "sha256": "8b09ebae6c1ba210096a50bde54878fd84c241c3c06a4dc9e8cec71d808028b8",
+      "bytes": 1409
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/RESULTS.json",
+      "sha256": "59f66936d6333fc134192978d63ff4502d8cce83f33c764cb64f38cc1917390a",
+      "bytes": 61133
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/RUNTIME_EXPERIMENTS.md",
+      "sha256": "e05748d0b6b183f42f46a4fe7dfb5cc30eb6e70e118f3c3d6129394ee21f44c0",
+      "bytes": 2546
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/scripts/build_report.py",
+      "sha256": "ceafdbea5a5c0d03c1b557c4ea4a7325ee8243002ab716d97f273df5e939160c",
+      "bytes": 18264
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/scripts/slides.template.html",
+      "sha256": "23e13466273875972a8d257cfd67deb6a19a7c000de8cae1293452a323bd4e95",
+      "bytes": 18090
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/scripts/validate_slides.cjs",
+      "sha256": "013dbc64254ebb073e7cb113d48b0351dba02291c5e47074dad99d9be8956a36",
+      "bytes": 3785
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/slides.html",
+      "sha256": "cd1d9e93d7d6cb5da767951baeadcef9eb9c6fb79686206d26e5356c76fbfd7c",
+      "bytes": 126056
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/SOURCE_REUSE.md",
+      "sha256": "9ef193cfd024c361c4ad5e03ad4718665cccb482d1cff9bef2d35d80f9178566",
+      "bytes": 2043
+    },
+    {
+      "path": "docs/tasks/climateos_adaptive_earth_relations_runtime_001/TASKBOOK_ZH.md",
+      "sha256": "d9c2cac36eeb8a7c5492c63d475dca73f906118d248ccdf6dc500d9876cb0474",
+      "bytes": 11368
+    },
+    {
+      "path": "README.md",
+      "sha256": "020a5c367f10b97c1f79418cacb6fa0b7761b133b3ecd785490e20f9155d54cf",
+      "bytes": 14406
+    },
+    {
+      "path": "tests/test_earth_relations.py",
+      "sha256": "f40d6514c5f35f82c43d80d9030131a75f0a22f18d1bd0ebfebba537a3d6f991",
+      "bytes": 11016
+    }
+  ]
+}
