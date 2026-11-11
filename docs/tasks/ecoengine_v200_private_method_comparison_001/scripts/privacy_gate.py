@@ -3,6 +3,19 @@ from pathlib import Path
 import json,re
 TASK=Path(__file__).resolve().parents[1]
 ALLOW={'README.md','PUBLIC_FOUNDER_REPORT_ZH.md','NEXT_SESSION.md','QA_AND_PRIVACY.md','COMPARABILITY_MATRIX.md','PUBLIC_CASE_PROTOCOL.json','EXECUTION_STATUS.json','evidence/public_controls.json','evidence/test-summary.json','evidence/local-candidate-attestation.json','evidence/public-boundary-checks.json','scripts/public_controls.py','scripts/privacy_gate.py','scripts/public_boundary_checks.py'}
+ALLOW.update({'METHOD_IDENTITY_AUDIT_ZH.md','evidence/mechanism-audit-attestation.json'})
+
+def check_mechanism_attestation(a):
+    fixed={'schema_version':1,'evidence_level':'LOCAL_ATTESTATION_NOT_PUBLIC_REPRODUCTION',
+      'founder_definition':'Selected calculation nodes and conditional relationships across domains; not necessarily a continuous chain',
+      'method_identity':'PARTIAL_MATCH_TO_FOUNDER_DESCRIPTION','additional_existing_input_replays':2,'new_unique_inputs':0,
+      'same_outputs_as_archived_inputs':True,'source_result_dependencies_found':True,'different_internal_call_paths_observed':True,
+      'inspected_entry_calls_are_unconditional':True,'complete_graph_or_formulas_exported':False,
+      'automatic_scientific_relationship_discovery_proven':False,'paired_prediction_accuracy_comparisons':0,
+      'private_payload':None,'old_sources_unchanged':True,'new_trajectory_runs':0,'scientific_admission':'PENDING'}
+    assert set(a)==set(fixed),'UNAPPROVED_MECHANISM_FIELD'
+    for key,value in fixed.items():
+        assert type(a[key]) is type(value) and a[key]==value,'UNSUPPORTED_MECHANISM_CLAIM_OR_PAYLOAD'
 
 ATTESTATION_KEYS={'schema_version','evidence_level','method_identity','case_count','native_unique_cases','boundary_cases','repetitions_per_case','call_attempts','core_entries','non_null_core_returns','native_exact_replay','boundary_replay_excluding_tracebacks','native_status_messages_are_assertion_tests','harness_failed_launches_excluded','paired_prediction_accuracy_comparisons','winner','private_payload','originals_unchanged_in_inspected_set','network_and_external_write_guards_checked','boundary_outcomes','scientific_admission'}
 
@@ -48,7 +61,11 @@ def gate():
     assert status['scientific_admission']=='PENDING' and status['legacy_code_executed'] is True
     assert status['comparison']=='PARTIAL' and status['private_evidence_publicly_reproducible'] is False
     assert status['paired_legacy_experiments_completed']==0
+    assert status['legacy_method']=='PARTIAL_MATCH_TO_FOUNDER_DESCRIPTION'
+    assert status['legacy_candidate_call_attempts']==status['previous_candidate_case_attempts']+status['mechanism_additional_existing_input_replays']==22
+    assert status['legacy_candidate_case_count']==10 and status['mechanism_new_unique_inputs']==0
     check_attestation(json.loads((TASK/'evidence/local-candidate-attestation.json').read_text(encoding='utf-8')))
+    check_mechanism_attestation(json.loads((TASK/'evidence/mechanism-audit-attestation.json').read_text(encoding='utf-8')))
     return {'status':'PASS_PUBLIC_EXPORT_GATES','checked_files':files,'private_source_or_algorithm_exported':False,
             'scope':'checks newly authored public allowlist and labels; does not independently audit private files'}
 if __name__=='__main__':print(json.dumps(gate(),ensure_ascii=False))

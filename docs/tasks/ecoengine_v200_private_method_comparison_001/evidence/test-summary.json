@@ -1,13 +1,13 @@
 {
   "taskbook_version": "V2.1",
-  "current_batch_public_tests": 8,
+  "current_batch_public_tests": 10,
   "current_batch_public_test_status": "PASS",
   "current_batch_public_input_guards": 2,
   "current_batch_trajectory_runs": 0,
   "private_candidate_cases": 10,
-  "private_candidate_call_attempts": 20,
-  "private_candidate_core_entries": 18,
-  "private_candidate_non_null_returns": 16,
+  "private_candidate_call_attempts": 22,
+  "private_candidate_core_entries": 20,
+  "private_candidate_non_null_returns": 18,
   "private_evidence_level": "LOCAL_ATTESTATION_NOT_PUBLIC_REPRODUCTION",
   "private_report_retained_locally": true,
   "harness_failures_excluded_from_legacy_failures": 4,
@@ -22,5 +22,7 @@
   },
   "scientific_admission": "PENDING",
   "remote_ci": "SEE_EXACT_HEAD_PR_RECEIPT",
-  "scope": "Public tests verify schemas and new-side guards, not private methods or accuracy"
+  "scope": "Public tests verify schemas and new-side guards, not private methods or accuracy",
+  "additional_existing_input_mechanism_replays": 2,
+  "mechanism_match": "PARTIAL_MATCH_TO_FOUNDER_DESCRIPTION"
 }

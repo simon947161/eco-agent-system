@@ -35,5 +35,13 @@ class CandidateExportTests(unittest.TestCase):
         saved=json.loads((TASK/'evidence/public-boundary-checks.json').read_text(encoding='utf-8'))
         self.assertEqual(fresh,saved);self.assertEqual(fresh['trajectory_runs'],0)
     def test_all_public_export_gates(self):self.assertEqual(self.gate.gate()['status'],'PASS_PUBLIC_EXPORT_GATES')
+    def test_raw_graph_injection_rejected(self):
+        a=json.loads((TASK/'evidence/mechanism-audit-attestation.json').read_text(encoding='utf-8'))
+        a['private_graph']={'nodes':['private']}
+        with self.assertRaises(AssertionError):self.gate.check_mechanism_attestation(a)
+    def test_mechanism_overclaim_rejected(self):
+        a=json.loads((TASK/'evidence/mechanism-audit-attestation.json').read_text(encoding='utf-8'))
+        a['automatic_scientific_relationship_discovery_proven']=True
+        with self.assertRaises(AssertionError):self.gate.check_mechanism_attestation(a)
 
 if __name__=='__main__':unittest.main()
