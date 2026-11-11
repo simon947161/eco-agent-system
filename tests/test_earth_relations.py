@@ -12,15 +12,18 @@ from cczps_lite.integration.earth_system_coupling.state import Rejection
 class RelationTests(unittest.TestCase):
     def config(self,**kw):return dict(defaults(),steps=3,**kw)
     def test_archive_integrity_and_source_versions(self):
-        from cczps_lite.integration.earth_relations.experiments import TASK,public_hashes
+        from cczps_lite.integration.earth_relations.experiments import TASK,public_hashes,comparison_metrics
         summary=json.loads((TASK/'evidence/benchmark_final/summary.json').read_text(encoding='utf-8'))
         raw=(TASK/'evidence/benchmark_final/runs.jsonl').read_bytes().replace(b'\r\n',b'\n')
         self.assertEqual(hashlib.sha256(raw).hexdigest(),summary['runs_sha256'])
-        self.assertEqual(public_hashes(),summary['source_hashes'])
+        closure=json.loads((TASK/'evidence/review_closure.json').read_text(encoding='utf-8'))
+        self.assertEqual(public_hashes(),closure['source_hashes'])
+        self.assertEqual(summary['source_hashes'],closure['historical_source_hashes'])
         rows=[json.loads(line) for line in raw.splitlines()]
         self.assertEqual(len(rows),120)
         for row in rows:
             a,b=row['modes']['selective'],row['modes']['full_safe']
+            self.assertEqual(closure['rows'][row['id']],{'id':row['id'],**comparison_metrics(a,b)})
             self.assertEqual(a['final_values'],b['final_values'])
             self.assertEqual(a['output'],b['output'])
             self.assertEqual(a['failure'],b['failure'])
@@ -56,6 +59,62 @@ class RelationTests(unittest.TestCase):
         with patch.object(p.air,'step',side_effect=RuntimeError('injected')):
             with self.assertRaises(RuntimeError):p.step()
         self.assertEqual(s.hash(),before);self.assertEqual(p.land.current_time,0)
+
+    def test_review_pulse_nonconvergence_restores_whole_state(self):
+        c=self.config(max_iterations=1,rain_kg_m2_s=.003)
+        initial=m.initial_state(c);r=Runtime(c,pulse=True);result=r.run()
+        self.assertEqual(result['failure']['code'],'NON_CONVERGENCE')
+        self.assertEqual(r.state.inspect(),initial.inspect())
+        self.assertEqual(r.state.hash(),initial.hash())
+        self.assertEqual(r.ports.air.current_time,0);self.assertEqual(r.ports.land.current_time,0)
+        self.assertEqual(result['rollback']['contract'],'WHOLE_STEP_BEFORE_FORCING_SYNC')
+        # A subsequent physical solve starts from the restored forcing/inventories.
+        r.ports.config['max_iterations']=defaults()['max_iterations']
+        reference=m.initial_state(c);m.advance(reference,r.ports.config,'two_way')
+        r.ports.step()
+        self.assertEqual(r.state.inspect(),reference.inspect())
+
+    def test_review_late_pulse_exception_restores_then_retry(self):
+        c=self.config(rain_kg_m2_s=.003);r=Runtime(c,pulse=True)
+        original=CoupledPorts.step;before=[];clocks=[]
+        # Capture whole-step checkpoint before forcing, including its metadata/revision.
+        original_checkpoint=m.State.checkpoint
+        def checkpoint(state):
+            cp=original_checkpoint(state)
+            if state is r.state and r.ports and r.ports.air.current_time==2*c['dt_s'] and state.fields['ta'].time==m.time_window(2*c['dt_s'],c['dt_s']) and not before:
+                before.append((cp,state.inspect(),state.hash()));clocks.append((r.ports.air.current_time,r.ports.land.current_time))
+            return cp
+        def fail_later(ports,lag=None):
+            if ports.air.current_time==2*c['dt_s']:
+                original(ports,lag)  # failure after a real physical commit must also roll back
+                raise RuntimeError('injected after proposal commit')
+            return original(ports,lag)
+        with patch.object(m.State,'checkpoint',checkpoint),patch.object(CoupledPorts,'step',fail_later):
+            with self.assertRaisesRegex(RuntimeError,'injected'):r.run()
+        self.assertEqual(r.state.inspect(),before[0][1]);self.assertEqual(r.state.hash(),before[0][2])
+        self.assertEqual((r.ports.air.current_time,r.ports.land.current_time),clocks[0])
+        self.assertTrue(r.last_rollback['state_equal'])
+        # Retry the failed dry part of the pulse versus a clean clone of the checkpoint.
+        clone=m.State();clone.reset(before[0][0])
+        for state in (r.state,clone):
+            f=state.fields['rain'];state.put(replace(f,values=(0.,)*c['grid_n'],lineage=('SYNTHETIC_TWO_INTERVAL_PULSE',)))
+        original(r.ports);m.advance(clone,c,'two_way')
+        self.assertEqual(r.state.inspect(),clone.inspect())
+
+    def test_review_differences_are_calculated_not_assumed(self):
+        from cczps_lite.integration.earth_relations.experiments import comparison_metrics
+        a=Runtime(self.config()).run();b=copy.deepcopy(a)
+        b['final_values']['ta'][0]+=1.25;b['final_values']['water'][1]-=.5
+        d=comparison_metrics(a,b)
+        self.assertFalse(d['equality_asserted'])
+        self.assertEqual(d['final_value_differences']['ta'],{'unit':'K','count':2,'missing_pairs':0,'max_abs_delta':1.25})
+        self.assertEqual(d['final_value_differences']['water']['max_abs_delta'],.5)
+        b['final_values']['q'][0]=None
+        self.assertEqual(comparison_metrics(a,b)['final_value_differences']['q']['missing_pairs'],1)
+        b['final_values']['q'][0]=float('nan')
+        with self.assertRaisesRegex(Rejection,'DIFFERENCE_NONFINITE'):comparison_metrics(a,b)
+        empty={'output':{},'final_values':{}}
+        self.assertEqual(comparison_metrics(empty,empty)['numeric_status'],'NOT_COMPARABLE')
     def test_B_other_factor_cannot_borrow_ledger(self):
         g=sandbox_graph();nodes=list(g.nodes.values())+[Node('other','PHYSICAL_PROCESS','coupled')]
         edges=list(g.edges.values())+[replace(g.edges['drivers'],id='other_drivers',target='other')]

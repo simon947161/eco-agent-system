@@ -11,7 +11,7 @@
 |PR147 / PR149已存公共结果|全球ERF与季节ENSO独立端口，保留原空间/时间支撑|不抓取新数据，不转成局地强迫|
 |`docs/00_MASTER_ARCHITECTURE/SYSTEM_RELATIONSHIP_MAP.md`|运行、解释与人类治理职责分离|不新建治理/认证基础设施|
 
-原父分支及所有旧研究工件保持原样。当前分支的`models.py`增量不是宣称父工件hash未变；原始hash见父PR152固定结果，当前实现hash见RESULTS.json。26项新增测试中，原advance默认路径和真实端口映射在相同输入下逐字段完全一致。没有读取PR153之外的私人资产，也没有借用私人实现。
+原父分支及所有旧研究工件保持原样。当前分支的`models.py`增量不是宣称父工件hash未变；原始hash见父PR152固定结果，历史实现hash见RESULTS.json；本次修复hash见evidence/review_closure.json。26项新增测试中，原advance默认路径和真实端口映射在相同输入下逐字段完全一致。没有读取PR153之外的私人资产，也没有借用私人实现。
 
 公开技术资料（2026-11-11查阅；仅用于机制设计，不宣称实现标准认证）：
 - [CSDMS BMI](https://csdms.colorado.edu/wiki/BMI)：明确组件时间、变量与单位接口。

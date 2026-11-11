@@ -12,3 +12,7 @@
 7. 桌面/手机展示是否忠实回放JSON，是否误说浏览器中正在实时求解？
 
 请给出ACCEPT_WITH_CONDITIONS / CHANGES_REQUESTED / REJECT，绑定HEAD、路径、实验ID与最低修正。公共代码和数据可复算；全部结果限合成沙盒，不含私人代码或现场排放实验。科学PENDING；不合并不部署。
+
+## 2026-11-11 评审尾项修复
+
+见 [最小修复与复核](REVIEW_CLOSURE_ZH.md)。旧性能批次保留为历史；当前源码和逐字段实算差值绑定 `evidence/review_closure.json`。科学仍 PENDING；独立复核尚待 ChatGPT。
