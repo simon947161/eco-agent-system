@@ -1,0 +1,154 @@
+{
+  "protocol": "ISSUE151_PAIRED_INPUT_GOVERNANCE_V1",
+  "baseline_sha": "cf91e4a061341bc33d16400bcf4c6a2c2817aa65",
+  "groups": 6,
+  "repeats_per_side": 2,
+  "task": "May the declared downstream computation consume these required inputs and return a native result?",
+  "reference_rule": "ALLOW iff shared required quantities are present and finite, declared temperature unit is degC and field clock equals consumer clock; otherwise REFUSE.",
+  "reference_is": "predeclared interface requirement, not observed environmental truth",
+  "common_outputs": [
+    "RETURNED",
+    "STRUCTURED_REFUSAL",
+    "UNCONTROLLED_ERROR",
+    "ADAPTER_INCOMPATIBLE"
+  ],
+  "missing_representation": "MISSING maps to None; NONFINITE_NAN maps to IEEE NaN on both sides; never impute.",
+  "information_budget": "Constant synthetic quantities; legacy uses 14 identical daily numeric samples; new side uses two identical cells and one 900-second step. This represents numeric eligibility only, not equal physical time/space support.",
+  "metadata_rule": "If a native interface cannot represent a metadata field, record capability loss. Do not add a validation gate on its behalf, silently convert bad units, or score it as a native metadata refusal.",
+  "new_side": "Actual Field/State.require, Atmosphere/Surface.required_fields and ModelPort.step from frozen PR152; proposals only, not a full coupled trajectory.",
+  "legacy_side": "Existing local entry and original rules; private representation-only adapter; no algorithm transplant.",
+  "correctness": "Outcome matching the independent admission rule; native return is not scientific approval. Uncontrolled errors are not structured refusals.",
+  "replay": "Exact within each side after excluding wall-clock cost and private traceback paths. Compare decisions, not incompatible physical/diagnostic output magnitudes.",
+  "cost": "Record end-to-end adapter/native seconds separately; different work and instrumentation forbid a speed-winner claim.",
+  "stop": "At most six groups, two repetitions per side; preserve failures; no tuning after outcome inspection.",
+  "prediction_accuracy_comparisons": 0,
+  "science": "PENDING",
+  "cases": [
+    {
+      "id": "P01",
+      "fault": "none",
+      "temperature_c": 20.0,
+      "wind_m_s": 3.0,
+      "rain_mm_day": 0.0,
+      "temperature_unit": "degC",
+      "temperature_offset_s": 0,
+      "history_days": 14,
+      "background": {
+        "et0_mm_day": 4.0,
+        "latitude": -35.0,
+        "longitude": 149.0,
+        "target_altitude_m": 800.0,
+        "reference_altitude_m": 800.0,
+        "coastal": false,
+        "rainfall_season": "cool-season"
+      },
+      "reference": "ALLOW",
+      "comparison_class": "NUMERIC_INPUT_GOVERNANCE"
+    },
+    {
+      "id": "P02",
+      "fault": "missing_temperature",
+      "temperature_c": "MISSING",
+      "wind_m_s": 3.0,
+      "rain_mm_day": 0.0,
+      "temperature_unit": "degC",
+      "temperature_offset_s": 0,
+      "history_days": 14,
+      "background": {
+        "et0_mm_day": 4.0,
+        "latitude": -35.0,
+        "longitude": 149.0,
+        "target_altitude_m": 800.0,
+        "reference_altitude_m": 800.0,
+        "coastal": false,
+        "rainfall_season": "cool-season"
+      },
+      "reference": "REFUSE",
+      "comparison_class": "NUMERIC_INPUT_GOVERNANCE"
+    },
+    {
+      "id": "P03",
+      "fault": "nonfinite_wind",
+      "temperature_c": 20.0,
+      "wind_m_s": "NONFINITE_NAN",
+      "rain_mm_day": 0.0,
+      "temperature_unit": "degC",
+      "temperature_offset_s": 0,
+      "history_days": 14,
+      "background": {
+        "et0_mm_day": 4.0,
+        "latitude": -35.0,
+        "longitude": 149.0,
+        "target_altitude_m": 800.0,
+        "reference_altitude_m": 800.0,
+        "coastal": false,
+        "rainfall_season": "cool-season"
+      },
+      "reference": "REFUSE",
+      "comparison_class": "NUMERIC_INPUT_GOVERNANCE"
+    },
+    {
+      "id": "P04",
+      "fault": "missing_rain",
+      "temperature_c": 20.0,
+      "wind_m_s": 3.0,
+      "rain_mm_day": "MISSING",
+      "temperature_unit": "degC",
+      "temperature_offset_s": 0,
+      "history_days": 14,
+      "background": {
+        "et0_mm_day": 4.0,
+        "latitude": -35.0,
+        "longitude": 149.0,
+        "target_altitude_m": 800.0,
+        "reference_altitude_m": 800.0,
+        "coastal": false,
+        "rainfall_season": "cool-season"
+      },
+      "reference": "REFUSE",
+      "comparison_class": "NUMERIC_INPUT_GOVERNANCE"
+    },
+    {
+      "id": "P05",
+      "fault": "wrong_unit",
+      "temperature_c": 20.0,
+      "wind_m_s": 3.0,
+      "rain_mm_day": 0.0,
+      "temperature_unit": "degF",
+      "temperature_offset_s": 0,
+      "history_days": 14,
+      "background": {
+        "et0_mm_day": 4.0,
+        "latitude": -35.0,
+        "longitude": 149.0,
+        "target_altitude_m": 800.0,
+        "reference_altitude_m": 800.0,
+        "coastal": false,
+        "rainfall_season": "cool-season"
+      },
+      "reference": "REFUSE",
+      "comparison_class": "METADATA_CAPABILITY_ATTEMPT"
+    },
+    {
+      "id": "P06",
+      "fault": "wrong_time",
+      "temperature_c": 20.0,
+      "wind_m_s": 3.0,
+      "rain_mm_day": 0.0,
+      "temperature_unit": "degC",
+      "temperature_offset_s": 900,
+      "history_days": 14,
+      "background": {
+        "et0_mm_day": 4.0,
+        "latitude": -35.0,
+        "longitude": 149.0,
+        "target_altitude_m": 800.0,
+        "reference_altitude_m": 800.0,
+        "coastal": false,
+        "rainfall_season": "cool-season"
+      },
+      "reference": "REFUSE",
+      "comparison_class": "METADATA_CAPABILITY_ATTEMPT"
+    }
+  ]
+}

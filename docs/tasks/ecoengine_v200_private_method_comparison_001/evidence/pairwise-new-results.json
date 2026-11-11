@@ -1,0 +1,191 @@
+{
+  "scope": "PUBLIC_NEW_SIDE_OF_ACTUAL_LOCAL_PAIRING",
+  "protocol_sha256": "3fff0df0184897fb28d0027df62a747b59f756f096a173a54272b29df7bb0614",
+  "baseline_sha": "cf91e4a061341bc33d16400bcf4c6a2c2817aa65",
+  "case_groups": 6,
+  "native_attempts": 12,
+  "source_hashes": {
+    "cczps_lite/integration/earth_system_coupling/__init__.py": "8e17f79bd9341773a24fc61a1f95e70e89f422564c23cc6e105cbf0433641e78",
+    "cczps_lite/integration/earth_system_coupling/__main__.py": "e91a6724f915a3a6d4a80c0ba0fae5fa0283ea58c2e10dc596ee4b3ee72870bd",
+    "cczps_lite/integration/earth_system_coupling/diagnostics.py": "db55e620b7b8a6a2869431c8a8a71c889393aa601da0e48eb72f5983a434fc5e",
+    "cczps_lite/integration/earth_system_coupling/experiments.py": "44f5a98c45a91cfd26adc0e83c776fe10d077825d2eb77b202ba89d1c4c0e676",
+    "cczps_lite/integration/earth_system_coupling/models.py": "a8d0e437c44aee1540877e2a2de0c507ae8a26b336abeed00ed3471e358120b5",
+    "cczps_lite/integration/earth_system_coupling/ports.py": "85257124bf322131046caf63df1de0f17693401a34bd6f18556af020dc4d1087",
+    "cczps_lite/integration/earth_system_coupling/state.py": "45e5ead46e52f40d7bea4c69588a45e283938ce78f55474efb6b09b9dc95bf47"
+  },
+  "rows": [
+    {
+      "id": "P01",
+      "canonical_input_sha256": "a173e77f57c2880975850000b53bc3f58ea9231a04412db6639dda135e643052",
+      "reference": "ALLOW",
+      "replay_equal": true,
+      "new": {
+        "id": "P01",
+        "canonical_input_sha256": "a173e77f57c2880975850000b53bc3f58ea9231a04412db6639dda135e643052",
+        "reference": "ALLOW",
+        "status": "RETURNED",
+        "code": null,
+        "stage": "native_steps",
+        "native_nodes_started": [
+          "atmosphere",
+          "surface"
+        ],
+        "contract_metadata_supported": true,
+        "native_output": {
+          "atmosphere": {
+            "proposal": {
+              "ta": [
+                293.2563125,
+                293.2563125
+              ],
+              "q": [
+                0.00913486211949258,
+                0.00913486211949258
+              ],
+              "boundary_heat": [
+                -201.33999087260756,
+                -201.33999087260756
+              ],
+              "vented_water": [
+                0.0002543911400391133,
+                0.0002543911400391133
+              ],
+              "air_mass": 118.8372382309021,
+              "air_capacity": 119312.58718382572
+            },
+            "committed": false,
+            "clock": 900.0
+          },
+          "surface": {
+            "proposal": {
+              "ts": [
+                295.222612854913,
+                295.222612854913
+              ],
+              "water": [
+                49.9837189670375,
+                49.9837189670375
+              ],
+              "runoff": [
+                0.0,
+                0.0
+              ],
+              "diffusion": [
+                0.0,
+                0.0
+              ]
+            },
+            "committed": false,
+            "clock": 900.0
+          }
+        },
+        "new_trajectory_runs": 0,
+        "state_unmodified": true,
+        "seconds": 0.00036159995943307877
+      },
+      "repeat_seconds": 0.00030360009986907244
+    },
+    {
+      "id": "P02",
+      "canonical_input_sha256": "13a5daf143f536206f7e478a15fbc9303822c20e8951f601e1220da9e422842e",
+      "reference": "REFUSE",
+      "replay_equal": true,
+      "new": {
+        "id": "P02",
+        "canonical_input_sha256": "13a5daf143f536206f7e478a15fbc9303822c20e8951f601e1220da9e422842e",
+        "reference": "REFUSE",
+        "status": "STRUCTURED_REFUSAL",
+        "code": "MISSING_DEPENDENCY",
+        "stage": "dependency_gate",
+        "native_nodes_started": [],
+        "contract_metadata_supported": true,
+        "native_output": null,
+        "new_trajectory_runs": 0,
+        "seconds": 0.00023339991457760334
+      },
+      "repeat_seconds": 0.0002463000128045678
+    },
+    {
+      "id": "P03",
+      "canonical_input_sha256": "c5cdbf17cabcbdb506e74e0f4770505adb56036b99dc2fc91ddf78089fbd8885",
+      "reference": "REFUSE",
+      "replay_equal": true,
+      "new": {
+        "id": "P03",
+        "canonical_input_sha256": "c5cdbf17cabcbdb506e74e0f4770505adb56036b99dc2fc91ddf78089fbd8885",
+        "reference": "REFUSE",
+        "status": "STRUCTURED_REFUSAL",
+        "code": "NONFINITE",
+        "stage": "field_construction",
+        "native_nodes_started": [],
+        "contract_metadata_supported": true,
+        "native_output": null,
+        "new_trajectory_runs": 0,
+        "seconds": 0.00019230006728321314
+      },
+      "repeat_seconds": 0.00019049993716180325
+    },
+    {
+      "id": "P04",
+      "canonical_input_sha256": "452ad2aaa44ea49aab0314902e92868732faf63bba9bb42492822335a3dd7a85",
+      "reference": "REFUSE",
+      "replay_equal": true,
+      "new": {
+        "id": "P04",
+        "canonical_input_sha256": "452ad2aaa44ea49aab0314902e92868732faf63bba9bb42492822335a3dd7a85",
+        "reference": "REFUSE",
+        "status": "STRUCTURED_REFUSAL",
+        "code": "MISSING_DEPENDENCY",
+        "stage": "dependency_gate",
+        "native_nodes_started": [],
+        "contract_metadata_supported": true,
+        "native_output": null,
+        "new_trajectory_runs": 0,
+        "seconds": 0.00025400007143616676
+      },
+      "repeat_seconds": 0.0002571999793872237
+    },
+    {
+      "id": "P05",
+      "canonical_input_sha256": "69278b7fb8c2dc04562a36045e52feb0b32eb6289d32d499e22780a2ff8b2b60",
+      "reference": "REFUSE",
+      "replay_equal": true,
+      "new": {
+        "id": "P05",
+        "canonical_input_sha256": "69278b7fb8c2dc04562a36045e52feb0b32eb6289d32d499e22780a2ff8b2b60",
+        "reference": "REFUSE",
+        "status": "STRUCTURED_REFUSAL",
+        "code": "UNIT_MISMATCH",
+        "stage": "field_construction",
+        "native_nodes_started": [],
+        "contract_metadata_supported": true,
+        "native_output": null,
+        "new_trajectory_runs": 0,
+        "seconds": 0.00014679995365440845
+      },
+      "repeat_seconds": 0.0030149000231176615
+    },
+    {
+      "id": "P06",
+      "canonical_input_sha256": "6cd0280209e60510dcee4d65ee25607ac8bdbe88440b20f1e36c11a014c2a0c8",
+      "reference": "REFUSE",
+      "replay_equal": true,
+      "new": {
+        "id": "P06",
+        "canonical_input_sha256": "6cd0280209e60510dcee4d65ee25607ac8bdbe88440b20f1e36c11a014c2a0c8",
+        "reference": "REFUSE",
+        "status": "STRUCTURED_REFUSAL",
+        "code": "TIME_MISMATCH",
+        "stage": "dependency_gate",
+        "native_nodes_started": [],
+        "contract_metadata_supported": true,
+        "native_output": null,
+        "new_trajectory_runs": 0,
+        "seconds": 0.00033169996459037066
+      },
+      "repeat_seconds": 0.0002443999983370304
+    }
+  ],
+  "trajectory_runs": 0,
+  "science": "PENDING"
+}

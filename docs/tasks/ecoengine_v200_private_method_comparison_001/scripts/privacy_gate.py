@@ -4,6 +4,35 @@ import json,re
 TASK=Path(__file__).resolve().parents[1]
 ALLOW={'README.md','PUBLIC_FOUNDER_REPORT_ZH.md','NEXT_SESSION.md','QA_AND_PRIVACY.md','COMPARABILITY_MATRIX.md','PUBLIC_CASE_PROTOCOL.json','EXECUTION_STATUS.json','evidence/public_controls.json','evidence/test-summary.json','evidence/local-candidate-attestation.json','evidence/public-boundary-checks.json','scripts/public_controls.py','scripts/privacy_gate.py','scripts/public_boundary_checks.py'}
 ALLOW.update({'METHOD_IDENTITY_AUDIT_ZH.md','evidence/mechanism-audit-attestation.json'})
+ALLOW.update({'PAIRWISE_RESULT_PUBLIC_ZH.md','PAIRWISE_PROTOCOL.json','evidence/pairwise-summary.json','evidence/pairwise-new-results.json','scripts/pairwise_public.py'})
+
+def check_pairwise(a):
+    expected={'schema_version','status','shared_task','protocol_sha256','both_sides_executed_groups','completed_comparable_groups','metadata_incompatible_groups','attempts_per_side','legacy_core_entries','new_native_proposal_groups','paired_prediction_accuracy_comparisons','legacy_evidence_level','legacy_source_exported','private_payload','old_sources_unchanged','new_baseline_sha','science','recommendation','rows'}
+    assert set(a)==expected,'UNAPPROVED_PAIRED_FIELD'
+    assert a['status']=='PAIRWISE_PARTIAL' and a['science']=='PENDING'
+    assert a['schema_version']==1 and a['old_sources_unchanged'] is True and a['new_native_proposal_groups']==1
+    assert a['shared_task']=='input eligibility and downstream native computation under declared prerequisites'
+    assert a['recommendation']=='SELECTIVE_INTERFACE_RESEARCH_WORTHWHILE_NOT_AUTHORIZATION_TO_TRANSPLANT'
+    assert a['new_baseline_sha']=='cf91e4a061341bc33d16400bcf4c6a2c2817aa65'
+    assert a['legacy_evidence_level']=='LOCAL_ATTESTATION_NOT_PUBLIC_REPRODUCTION'
+    assert a['private_payload'] is None and a['legacy_source_exported'] is False
+    assert a['both_sides_executed_groups']==6 and a['completed_comparable_groups']==4 and a['metadata_incompatible_groups']==2
+    assert a['attempts_per_side']==12 and a['legacy_core_entries']==12 and a['paired_prediction_accuracy_comparisons']==0
+    assert len(a['rows'])==6 and [r['id'] for r in a['rows']]==[f'P{i:02}' for i in range(1,7)]
+    for i,row in enumerate(a['rows'],1):
+        assert set(row)=={'id','canonical_input_sha256','reference','comparability','both_sides_executed','repeats_per_side','replay_equal','legacy','new'}
+        assert row['comparability']==('COMPARABLE_NUMERIC_INPUT_GOVERNANCE' if i<=4 else 'INCOMPARABLE_NATIVE_METADATA')
+        assert row['both_sides_executed'] is True and row['replay_equal'] is True and row['repeats_per_side']==2
+        assert set(row['legacy'])=={'status','code','returned_nonfinite','full_result'}
+        assert row['legacy']['full_result']=='PRIVATE_RESULT_WITHHELD'
+        assert row['legacy']['status'] in {'RETURNED','UNCONTROLLED_ERROR'} and row['legacy']['code'] in {None,'TypeError'}
+        assert type(row['legacy']['returned_nonfinite']) is bool
+        assert set(row['new'])=={'status','code'}
+        assert row['reference']==('ALLOW' if i==1 else 'REFUSE')
+        assert re.fullmatch('[0-9a-f]{64}',row['canonical_input_sha256'])
+        assert row['new']['status']==('RETURNED' if i==1 else 'STRUCTURED_REFUSAL')
+        assert row['new']['code']==[None,'MISSING_DEPENDENCY','NONFINITE','MISSING_DEPENDENCY','UNIT_MISMATCH','TIME_MISMATCH'][i-1]
+    check_text(json.dumps(a))
 
 def check_mechanism_attestation(a):
     fixed={'schema_version':1,'evidence_level':'LOCAL_ATTESTATION_NOT_PUBLIC_REPRODUCTION',
@@ -60,12 +89,13 @@ def gate():
     status=json.loads((TASK/'EXECUTION_STATUS.json').read_text(encoding='utf-8'))
     assert status['scientific_admission']=='PENDING' and status['legacy_code_executed'] is True
     assert status['comparison']=='PARTIAL' and status['private_evidence_publicly_reproducible'] is False
-    assert status['paired_legacy_experiments_completed']==0
+    assert status['paired_legacy_experiments_completed']==4 and status['pairwise_status']=='PAIRWISE_PARTIAL'
     assert status['legacy_method']=='PARTIAL_MATCH_TO_FOUNDER_DESCRIPTION'
     assert status['legacy_candidate_call_attempts']==status['previous_candidate_case_attempts']+status['mechanism_additional_existing_input_replays']==22
     assert status['legacy_candidate_case_count']==10 and status['mechanism_new_unique_inputs']==0
     check_attestation(json.loads((TASK/'evidence/local-candidate-attestation.json').read_text(encoding='utf-8')))
     check_mechanism_attestation(json.loads((TASK/'evidence/mechanism-audit-attestation.json').read_text(encoding='utf-8')))
+    check_pairwise(json.loads((TASK/'evidence/pairwise-summary.json').read_text(encoding='utf-8')))
     return {'status':'PASS_PUBLIC_EXPORT_GATES','checked_files':files,'private_source_or_algorithm_exported':False,
             'scope':'checks newly authored public allowlist and labels; does not independently audit private files'}
 if __name__=='__main__':print(json.dumps(gate(),ensure_ascii=False))
