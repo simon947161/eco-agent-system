@@ -1,0 +1,11 @@
+{
+  "command": "python -m unittest discover",
+  "tests": 570,
+  "seconds": 7.846,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "skip_reason": "Windows symlink privilege in existing test",
+  "platform": "Windows",
+  "raw_log_local_only": "runtime_data/awt-full-suite.txt"
+}

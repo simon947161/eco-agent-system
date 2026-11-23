@@ -1,0 +1,101 @@
+{
+  "task": "CLIMATEOS-AWT-001",
+  "read_at": "2026-11-23",
+  "issue": 162,
+  "url": "https://github.com/simon947161/eco-agent-system/issues/162",
+  "updated_at": "2026-11-23T09:14:57Z",
+  "main": "9eb7577e145e76161f9f1cd8509348b19c2904cc",
+  "baseline": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+  "prs": [
+    {
+      "number": 132,
+      "head": "2ec66ae41ae2e1d4a0f1aaa92aa98c9f0ff4c5b0",
+      "branch": "research/issue131-p1a-review",
+      "base": "main",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 137,
+      "head": "37c4b093e511bd9b5014c276390ebde114d28eed",
+      "branch": "research/climateos-methane-pressure-review-003",
+      "base": "research/climateos-facility-evidence-002",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 138,
+      "head": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "branch": "research/climateos-physics-validation-001",
+      "base": "research/climateos-methane-pressure-review-003",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 139,
+      "head": "fc450196d01c9add5edf51f599072b18e6658196",
+      "branch": "research/climateos-local-case-method-intake-001",
+      "base": "research/climateos-physics-validation-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 143,
+      "head": "746825e65b8ddbd0f518709c94d9476df107208b",
+      "branch": "research/climateos-methane-physics-knowledge-engine-001",
+      "base": "research/climateos-client-ai-science-integration-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 144,
+      "head": "77a35e2723372a290579e4549a86781e2be65c04",
+      "branch": "research/climateos-au-landfill-methane-methods-001",
+      "base": "research/climateos-methane-physics-knowledge-engine-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 145,
+      "head": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+      "branch": "research/climateos-global-method-evidence-ecochain-001",
+      "base": "research/climateos-au-landfill-methane-methods-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 152,
+      "head": "cf91e4a061341bc33d16400bcf4c6a2c2817aa65",
+      "branch": "research/climateos-earth-system-coupling-lab-001",
+      "base": "research/climateos-multisource-data-admission-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 155,
+      "head": "a2863dbf3543f7e74f6b6a6a4725cb99f6fefe30",
+      "branch": "research/climateos-adaptive-earth-relations-runtime-001",
+      "base": "research/climateos-earth-system-coupling-lab-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    },
+    {
+      "number": 157,
+      "head": "48babfb8c9b1fb51539ec5bcc173ae037b1e69d6",
+      "branch": "research/climateos-world-science-expedition-001",
+      "base": "research/climateos-adaptive-earth-relations-runtime-001",
+      "draft": true,
+      "state": "open",
+      "merged": false
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # NEXT_SESSION
 
+2026-11-23新增Founder授权：[Issue162 AWT独立任务交接](../climateos_awt_001/NEXT_SESSION.md)。它以本PR固定HEAD为基线，复用合成账和证据接口；不改变以下历史完成记录或科学准入。新的真实数据/监管结论仍需独立审查。
+
 本轮任务已执行至独立评审交付，**不是自动续跑队列**。先核对本Draft PR最终评论中的精确交付D，再读 [REVIEW_REQUEST](REVIEW_REQUEST.json)、[Founder报告](FOUNDER_REPORT_ZH.md) 与 [PR144评审回执](evidence/pr144-review-receipt.json)。R为研究内容提交，R..D只允许两份机器交接JSON；D不写回其自身造成自引用。
 
 可离线复核：README四条命令；不要重新下载已取得ZIP或重试NZ/NSW/NASA受阻地址。核对77测试、三份确定性输出、23行真实溶解浓度单位转换及manifest。旧核心只读。

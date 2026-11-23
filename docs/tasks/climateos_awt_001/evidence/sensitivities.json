@@ -1,0 +1,4648 @@
+{
+  "A": {
+    "status": "SYNTHETIC_CORNER_ENVELOPE_NOT_CONFIDENCE_INTERVAL",
+    "bounds": [
+      0,
+      0
+    ],
+    "runs": 128,
+    "cases": [
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 0
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 0
+      }
+    ],
+    "limits": "Fixed GWP and all unlisted inputs. No probability distribution or whole-system uncertainty."
+  },
+  "B": {
+    "status": "SYNTHETIC_CORNER_ENVELOPE_NOT_CONFIDENCE_INTERVAL",
+    "bounds": [
+      -459.66416000000004,
+      951.8290720000001
+    ],
+    "runs": 128,
+    "cases": [
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 432.61969600000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 423.61969600000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 364.36969600000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 355.36969600000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 136.42801599999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 127.42801599999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 68.17801599999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 59.17801599999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 396.63409600000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 387.63409600000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 328.38409600000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 319.38409600000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 100.44241599999998
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 91.44241599999998
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 32.19241599999998
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 23.19241599999998
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 575.842384
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 566.842384
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 507.59238400000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 498.59238400000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 279.65070399999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 270.65070399999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 211.4007039999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 202.4007039999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 536.2582239999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 527.2582239999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 468.008224
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 459.008224
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 240.06654400000014
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 231.06654400000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 171.81654400000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 162.81654400000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 808.6063840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 799.6063840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 740.3563840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 731.3563840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 512.414704
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 503.41470400000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 444.16470400000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 435.16470400000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 772.6207840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 763.6207840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 704.3707840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 695.3707840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 476.42910400000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 467.42910400000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 408.17910400000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 399.17910400000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 951.8290720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 942.8290720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 883.5790720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 874.5790720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 655.6373920000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 646.6373920000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 587.387392
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 578.387392
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 912.2449120000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 903.2449120000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 843.9949120000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 834.9949120000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 616.0532320000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 607.0532320000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 547.8032320000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 538.8032320000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -50.236879999999985
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -59.236879999999985
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -118.48687999999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -127.48687999999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -346.42856000000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -355.42856000000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -414.67856000000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -423.67856000000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -86.22247999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -95.22247999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -154.47247999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -163.47247999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -382.41416000000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -391.41416000000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -450.66416000000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -459.66416000000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 92.98580799999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 83.98580799999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 24.73580800000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 15.73580800000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -203.20587200000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -212.20587200000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -271.4558720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -280.4558720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 53.401647999999966
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 44.401647999999966
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -14.848352000000034
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -23.848352000000034
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -242.79003199999988
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -251.790032
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -311.040032
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -320.040032
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 84.32151999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 75.32151999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 16.071519999999964
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 7.071519999999964
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -211.8701600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -220.8701600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -280.1201600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -289.1201600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 48.33591999999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 39.33591999999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -19.914080000000013
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -28.914080000000013
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -247.8557600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -256.8557600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -316.1057600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -325.1057600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 227.54420799999994
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 218.54420799999994
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 159.29420799999997
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 150.29420799999997
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -68.6474720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -77.6474720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -136.89747200000016
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -145.89747200000016
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 187.96004799999992
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 178.96004799999992
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 119.71004799999992
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 110.71004799999992
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -108.23163199999993
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -117.23163200000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -176.48163200000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -185.48163200000005
+      }
+    ],
+    "limits": "Fixed GWP and all unlisted inputs. No probability distribution or whole-system uncertainty."
+  },
+  "C": {
+    "status": "SYNTHETIC_CORNER_ENVELOPE_NOT_CONFIDENCE_INTERVAL",
+    "bounds": [
+      -459.66416000000004,
+      951.8290720000001
+    ],
+    "runs": 128,
+    "cases": [
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 432.61969600000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 423.61969600000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 364.36969600000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 355.36969600000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 136.42801599999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 127.42801599999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 68.17801599999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 59.17801599999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 396.63409600000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 387.63409600000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 328.38409600000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 319.38409600000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 100.44241599999998
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 91.44241599999998
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 32.19241599999998
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 23.19241599999998
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 575.842384
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 566.842384
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 507.59238400000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 498.59238400000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 279.65070399999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 270.65070399999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 211.4007039999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 202.4007039999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 536.2582239999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 527.2582239999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 468.008224
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 459.008224
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 240.06654400000014
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 231.06654400000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 171.81654400000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 162.81654400000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 808.6063840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 799.6063840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 740.3563840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 731.3563840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 512.414704
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 503.41470400000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 444.16470400000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 435.16470400000003
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 772.6207840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 763.6207840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 704.3707840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 695.3707840000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 476.42910400000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 467.42910400000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 408.17910400000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 399.17910400000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 951.8290720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 942.8290720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 883.5790720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 874.5790720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 655.6373920000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 646.6373920000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 587.387392
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 578.387392
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 912.2449120000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 903.2449120000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 843.9949120000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 834.9949120000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 616.0532320000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 607.0532320000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 547.8032320000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.24,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 538.8032320000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -50.236879999999985
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -59.236879999999985
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -118.48687999999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -127.48687999999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -346.42856000000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -355.42856000000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -414.67856000000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -423.67856000000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -86.22247999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -95.22247999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -154.47247999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -163.47247999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -382.41416000000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -391.41416000000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -450.66416000000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -459.66416000000004
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 92.98580799999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 83.98580799999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 24.73580800000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 15.73580800000002
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -203.20587200000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -212.20587200000006
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -271.4558720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -280.4558720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 53.401647999999966
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 44.401647999999966
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -14.848352000000034
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -23.848352000000034
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -242.79003199999988
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -251.790032
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -311.040032
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.4,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -320.040032
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 84.32151999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 75.32151999999996
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 16.071519999999964
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 7.071519999999964
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -211.8701600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -220.8701600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -280.1201600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -289.1201600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 48.33591999999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 39.33591999999999
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -19.914080000000013
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -28.914080000000013
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -247.8557600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -256.8557600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -316.1057600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.9,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -325.1057600000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 227.54420799999994
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 218.54420799999994
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 159.29420799999997
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 150.29420799999997
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -68.6474720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -77.6474720000001
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -136.89747200000016
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.005,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -145.89747200000016
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 187.96004799999992
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 178.96004799999992
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": 119.71004799999992
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.05,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": 110.71004799999992
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -108.23163199999993
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 50,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -117.23163200000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.4
+        },
+        "net_t_CO2e": -176.48163200000005
+      },
+      {
+        "parameters": {
+          "capture_fraction": 0.75,
+          "landfill_decomposed_fraction": 0.6,
+          "ad_capture_fraction": 0.99,
+          "ad_pipe_loss_fraction": 0.03,
+          "residue_decomposed_fraction": 0.2,
+          "residue_N2O_kg": 300,
+          "grid_kg_CO2e_per_kWh": 0.9
+        },
+        "net_t_CO2e": -185.48163200000005
+      }
+    ],
+    "limits": "Fixed GWP and all unlisted inputs. No probability distribution or whole-system uncertainty."
+  },
+  "D": {
+    "status": "NOT_BOUNDED_MISSING_RESIDUE",
+    "bounds": null,
+    "runs": 0
+  }
+}

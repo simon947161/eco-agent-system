@@ -1,0 +1,252 @@
+{
+  "schema_version": "awt-claim-passport/1",
+  "claim_id": "AWT-D",
+  "scenario": "D",
+  "revision": 1,
+  "previous_revision_sha256": null,
+  "mode": "SYNTHETIC",
+  "input_sha256": "9aa20fc8d5ca13d4061fc027c175deedb19ae0704e6ff6e63e5898a3121c19c6",
+  "dataset": {
+    "source": "AUTHOR_SYNTHETIC_FIXTURE",
+    "licence": "CC0-1.0_AUTHOR_INPUT_ONLY",
+    "sha256": "2c635450fdf163a9abb5451b5bbb5e61abec145bd5eadd61022e24d4fe2ab9fa",
+    "byte_scope": "EXACT_UTF8_LF_FIXTURE_BYTES",
+    "time_support": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+    "timezone": "NOT_APPLICABLE_SYNTHETIC_NO_CIVIL_TIME",
+    "qc": "ARITHMETIC_FIXTURE_NOT_INSTRUMENT_QC",
+    "spatial_scope": "FICTIONAL_NSW_NO_SITE_OR_COORDINATES"
+  },
+  "observation": {
+    "status": "NO_OBSERVATION",
+    "instrument": null,
+    "unit": null,
+    "time": null,
+    "location": null,
+    "uncertainty": null,
+    "qc": "NOT_APPLICABLE_SYNTHETIC"
+  },
+  "baseline_evidence": "MISSING",
+  "formula": {
+    "id": "AUTHOR_COHORT_COUNTERFACTUAL_V1",
+    "source_version": "PR144_LEDGER_V1_AND_IPCC_AR6_GWP100",
+    "statutory_solver": false,
+    "unit": "t_CO2e/1000_t_wet_cohort"
+  },
+  "assumptions": [
+    {
+      "input_pointer": "/waste_t",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "t_wet",
+      "uncertainty": "FIXED_SYNTHETIC_NOT_CALIBRATED"
+    },
+    {
+      "input_pointer": "/doc_fraction",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "fraction",
+      "uncertainty": "FIXED_SYNTHETIC_NOT_CALIBRATED"
+    },
+    {
+      "input_pointer": "/landfill_decomposed_fraction",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "fraction",
+      "uncertainty": "BOUND_[0.4, 0.6]_NOT_CI"
+    },
+    {
+      "input_pointer": "/capture_fraction",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "fraction",
+      "uncertainty": "BOUND_[0.24, 0.75]_NOT_CI"
+    },
+    {
+      "input_pointer": "/ad_decomposed_fraction",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "fraction",
+      "uncertainty": "FIXED_SYNTHETIC_NOT_CALIBRATED"
+    },
+    {
+      "input_pointer": "/residue_decomposed_fraction",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "fraction",
+      "uncertainty": "BOUND_[0.05, 0.2]_NOT_CI"
+    },
+    {
+      "input_pointer": "/ad_capture_fraction",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "fraction",
+      "uncertainty": "BOUND_[0.9, 0.99]_NOT_CI"
+    },
+    {
+      "input_pointer": "/ad_pipe_loss_fraction",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "fraction",
+      "uncertainty": "BOUND_[0.005, 0.03]_NOT_CI"
+    },
+    {
+      "input_pointer": "/residue_N2O_kg",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "kg_N2O",
+      "uncertainty": "BOUND_[50, 300]_NOT_CI"
+    },
+    {
+      "input_pointer": "/import_kWh",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "kWh",
+      "uncertainty": "FIXED_SYNTHETIC_NOT_CALIBRATED"
+    },
+    {
+      "input_pointer": "/grid_kg_CO2e_per_kWh",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "kg_CO2e/kWh",
+      "uncertainty": "BOUND_[0.4, 0.9]_NOT_CI"
+    },
+    {
+      "input_pointer": "/baseline_fossil_CO2_t",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "t_fossil_CO2",
+      "uncertainty": "FIXED_SYNTHETIC_NOT_CALIBRATED"
+    },
+    {
+      "input_pointer": "/project_fossil_CO2_t",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "t_fossil_CO2",
+      "uncertainty": "FIXED_SYNTHETIC_NOT_CALIBRATED"
+    },
+    {
+      "input_pointer": "/transport_fossil_CO2_t",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "t_fossil_CO2",
+      "uncertainty": "FIXED_SYNTHETIC_NOT_CALIBRATED"
+    },
+    {
+      "input_pointer": "/offsite_leakage_fossil_CO2_t",
+      "owner": "CODEX_AUTHOR_SYNTHETIC",
+      "unit": "t_fossil_CO2",
+      "uncertainty": "FIXED_SYNTHETIC_NOT_CALIBRATED"
+    }
+  ],
+  "entities": [
+    {
+      "id": "OBSERVATION",
+      "type": "OBSERVATION",
+      "depends_on": [],
+      "evidence_state": "UNKNOWN",
+      "result_pointer": "evidence/results.json#/D/observation"
+    },
+    {
+      "id": "PHYSICAL_ESTIMATE",
+      "type": "PHYSICAL_ESTIMATE",
+      "depends_on": [
+        "OBSERVATION"
+      ],
+      "evidence_state": "SYNTHETIC",
+      "result_pointer": "evidence/results.json#/D/calculation/physical_ledger"
+    },
+    {
+      "id": "BASELINE_COUNTERFACTUAL",
+      "type": "BASELINE_COUNTERFACTUAL",
+      "depends_on": [
+        "PHYSICAL_ESTIMATE"
+      ],
+      "evidence_state": "SYNTHETIC",
+      "result_pointer": "evidence/results.json#/D/calculation/baseline_t_CO2e"
+    },
+    {
+      "id": "PROJECT_EMISSIONS",
+      "type": "PROJECT_EMISSIONS",
+      "depends_on": [
+        "PHYSICAL_ESTIMATE"
+      ],
+      "evidence_state": "SYNTHETIC",
+      "result_pointer": "evidence/results.json#/D/calculation/project_t_CO2e"
+    },
+    {
+      "id": "LEAKAGE",
+      "type": "LEAKAGE",
+      "depends_on": [],
+      "evidence_state": "SYNTHETIC",
+      "result_pointer": "evidence/results.json#/D/calculation/leakage_t_CO2e"
+    },
+    {
+      "id": "NET_ABATEMENT_ESTIMATE",
+      "type": "NET_ABATEMENT_ESTIMATE",
+      "depends_on": [
+        "BASELINE_COUNTERFACTUAL",
+        "PROJECT_EMISSIONS",
+        "LEAKAGE"
+      ],
+      "evidence_state": "SYNTHETIC",
+      "result_pointer": "evidence/results.json#/D/calculation/estimated_net_abatement_t_CO2e"
+    },
+    {
+      "id": "ADDITIONALITY_AND_ELIGIBILITY",
+      "type": "ADDITIONALITY_AND_ELIGIBILITY",
+      "depends_on": [],
+      "evidence_state": "OFFICIAL_CONTEXT_ONLY",
+      "result_pointer": "evidence/results.json#/D/legal"
+    },
+    {
+      "id": "CLAIM_AND_CREDIT_RIGHTS",
+      "type": "CLAIM_AND_CREDIT_RIGHTS",
+      "depends_on": [],
+      "evidence_state": "SYNTHETIC",
+      "result_pointer": "evidence/results.json#/D/duplicate_risks"
+    },
+    {
+      "id": "ASSURANCE_STATUS",
+      "type": "ASSURANCE_STATUS",
+      "depends_on": [
+        "NET_ABATEMENT_ESTIMATE",
+        "ADDITIONALITY_AND_ELIGIBILITY",
+        "CLAIM_AND_CREDIT_RIGHTS"
+      ],
+      "evidence_state": "SYNTHETIC",
+      "result_pointer": "evidence/results.json#/D/assurance"
+    }
+  ],
+  "legal": {
+    "jurisdiction": "AU-NSW",
+    "assessment_date": "2026-11-23",
+    "premises": "HOUSEHOLD_COUNCIL_RED_BIN",
+    "exemption": "UNKNOWN",
+    "method": "AWT_2015",
+    "registration": "LEGACY_UNVERIFIED",
+    "source_verified_at": "2026-11-23",
+    "legal_effective_date": "AWT_EXPIRED_2025-03-31;FOGO_HOUSEHOLD_DUE_2030-07-01",
+    "source_status": "OFFICIAL_WEB_SCREENING_NSW_PRIMARY_TEXT_BLOCKED"
+  },
+  "rights_links": [
+    {
+      "batch": "SYNTHETIC_BATCH_1000T",
+      "period": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+      "quantity_boundary": "AVOIDED_LANDFILL_CH4",
+      "mechanism": "AWT_CANDIDATE",
+      "project_registry_id": "NOT_REGISTERED_SYNTHETIC",
+      "right_verified": false
+    },
+    {
+      "batch": "SYNTHETIC_BATCH_1000T",
+      "period": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+      "quantity_boundary": "AVOIDED_LANDFILL_CH4",
+      "mechanism": "SAFEGUARD_CANDIDATE",
+      "project_registry_id": "NOT_REGISTERED_SYNTHETIC",
+      "right_verified": false
+    }
+  ],
+  "output_provenance": {
+    "engine": "engine.py",
+    "engine_sha256": "0b3f4a83d526083b3d74d63ac2b298e016ad16261928a796c03174836a935a4f",
+    "kernel": "PR144_LEDGER",
+    "result_file": "evidence/results.json",
+    "hash_scope": "SOURCE_LF_NORMALIZED;GIT_HEAD_EXTERNAL_ANCHOR"
+  },
+  "review": {
+    "gate": "PENDING",
+    "human_reviewer": null,
+    "human_notes": [
+      "No independent reviewer has signed this synthetic teaching package."
+    ],
+    "scientifically_admitted": false,
+    "regulatory_certification": "NOT_PROVIDED",
+    "credit_quantity": "NOT_DETERMINED"
+  }
+}

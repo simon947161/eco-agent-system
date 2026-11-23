@@ -1,0 +1,828 @@
+{
+  "A": {
+    "science": "PENDING",
+    "human_review": "PENDING",
+    "real_data": "DATA_NOT_READY",
+    "credit_quantity": "NOT_DETERMINED",
+    "assurance": "INSUFFICIENT_EVIDENCE",
+    "calculation": {
+      "mode": "SYNTHETIC",
+      "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+      "waste_t": 1000,
+      "physical_coherence": "COHERENT_WITHIN_SYNTHETIC_CH4_BOUNDARY",
+      "physical_ledger": {
+        "landfill": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 50000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 18500.0,
+            "cover_in": 31500.0,
+            "lateral_out": 0,
+            "pipe_leak": 185.0,
+            "pipe_stock_change": 0,
+            "device_in": 18315.0,
+            "device_slip": 366.30000000000035,
+            "destroyed": 17948.7,
+            "oxidized": 3150.0,
+            "surface": 28350.0
+          },
+          "emitted_kg_CH4": 28901.3,
+          "reaction_biogenic_CO2_kg": 58021.425,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        },
+        "organic_carbon_kg": 150000.0,
+        "carbon_scope": "CH4-path carbon conserved; no full waste LCA",
+        "dispersion": "NOT_COMPUTED_NO_CONCENTRATION_INVERSION",
+        "project": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 50000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 18500.0,
+            "cover_in": 31500.0,
+            "lateral_out": 0,
+            "pipe_leak": 185.0,
+            "pipe_stock_change": 0,
+            "device_in": 18315.0,
+            "device_slip": 366.30000000000035,
+            "destroyed": 17948.7,
+            "oxidized": 3150.0,
+            "surface": 28350.0
+          },
+          "emitted_kg_CH4": 28901.3,
+          "reaction_biogenic_CO2_kg": 58021.425,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        }
+      },
+      "baseline_t_CO2e": 806.11536,
+      "project_t_CO2e": 806.11536,
+      "leakage_t_CO2e": 0,
+      "estimated_net_abatement_t_CO2e": 0,
+      "credit_quantity": "NOT_DETERMINED",
+      "gwp": {
+        "CH4_nonfossil": 27.2,
+        "N2O": 273.0,
+        "source": "IPCC_AR6_WGI_TABLE_7_15",
+        "basis": "GWP100 research metric, not NGER/ACCU factor"
+      },
+      "real_data": "DATA_NOT_READY",
+      "science": "PENDING",
+      "unknowns": [],
+      "accounting_status": "SYNTHETIC_IDENTITY_CONTROL"
+    },
+    "reasons": [
+      "SYNTHETIC_NOT_SITE_EVIDENCE",
+      "INDEPENDENT_REVIEW_PENDING",
+      "PARAMETER_INTERVALS_NOT_EMPIRICAL_CONFIDENCE",
+      "EXPIRED_METHOD_NEW_REGISTRATION_ONLY"
+    ],
+    "legal": {
+      "collection": "NOT_YET_DUE_UNDER_REVIEWED_HOUSEHOLD_RULE",
+      "required_processing_pathway": "AD_SPECIFIC_REQUIREMENT_NOT_ESTABLISHED",
+      "additionality": "INSUFFICIENT_EVIDENCE",
+      "eligibility": "NOT_ELIGIBLE",
+      "reason": "EXPIRED_METHOD_NEW_REGISTRATION_ONLY",
+      "source_ids": [
+        "DCCEEW_AWT",
+        "FRL_AWT2015",
+        "EPA_FOGO",
+        "EPA_EXEMPTIONS"
+      ],
+      "formal_legal_determination": false,
+      "as_of": "2026-11-23",
+      "transition": "LEGACY_PROJECT_CREDITING_PERIOD_REQUIRES_EVIDENCE"
+    },
+    "duplicate_risks": [],
+    "observation": {
+      "status": "NO_OBSERVATION",
+      "instrument": null,
+      "unit": null,
+      "time": null,
+      "location": null,
+      "uncertainty": null,
+      "qc": "NOT_APPLICABLE_SYNTHETIC"
+    }
+  },
+  "B": {
+    "science": "PENDING",
+    "human_review": "PENDING",
+    "real_data": "DATA_NOT_READY",
+    "credit_quantity": "NOT_DETERMINED",
+    "assurance": "INSUFFICIENT_EVIDENCE",
+    "calculation": {
+      "mode": "SYNTHETIC",
+      "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+      "waste_t": 1000,
+      "physical_coherence": "COHERENT_WITHIN_SYNTHETIC_CH4_BOUNDARY",
+      "physical_ledger": {
+        "landfill": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 50000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 18500.0,
+            "cover_in": 31500.0,
+            "lateral_out": 0,
+            "pipe_leak": 185.0,
+            "pipe_stock_change": 0,
+            "device_in": 18315.0,
+            "device_slip": 366.30000000000035,
+            "destroyed": 17948.7,
+            "oxidized": 3150.0,
+            "surface": 28350.0
+          },
+          "emitted_kg_CH4": 28901.3,
+          "reaction_biogenic_CO2_kg": 58021.425,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        },
+        "organic_carbon_kg": 150000.0,
+        "carbon_scope": "CH4-path carbon conserved; no full waste LCA",
+        "dispersion": "NOT_COMPUTED_NO_CONCENTRATION_INVERSION",
+        "AD": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 60000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 58800.0,
+            "cover_in": 1200.0,
+            "lateral_out": 0,
+            "pipe_leak": 588.0,
+            "pipe_stock_change": 0,
+            "device_in": 58212.0,
+            "device_slip": 1164.2400000000011,
+            "destroyed": 57047.76,
+            "oxidized": 0.0,
+            "surface": 1200.0
+          },
+          "emitted_kg_CH4": 2952.240000000001,
+          "reaction_biogenic_CO2_kg": 156881.34,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        },
+        "residue_landfill": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 10000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 2000.0,
+            "cover_in": 8000.0,
+            "lateral_out": 0,
+            "pipe_leak": 20.0,
+            "pipe_stock_change": 0,
+            "device_in": 1980.0,
+            "device_slip": 39.60000000000004,
+            "destroyed": 1940.3999999999999,
+            "oxidized": 800.0,
+            "surface": 7200.0
+          },
+          "emitted_kg_CH4": 7259.6,
+          "reaction_biogenic_CO2_kg": 7536.0999999999985,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        }
+      },
+      "baseline_t_CO2e": 806.11536,
+      "project_t_CO2e": 331.76204800000005,
+      "leakage_t_CO2e": 5,
+      "estimated_net_abatement_t_CO2e": 469.35331199999996,
+      "credit_quantity": "NOT_DETERMINED",
+      "gwp": {
+        "CH4_nonfossil": 27.2,
+        "N2O": 273.0,
+        "source": "IPCC_AR6_WGI_TABLE_7_15",
+        "basis": "GWP100 research metric, not NGER/ACCU factor"
+      },
+      "real_data": "DATA_NOT_READY",
+      "science": "PENDING",
+      "unknowns": [],
+      "accounting_status": "CONDITIONAL_SYNTHETIC_NOT_STATUTORY",
+      "component_t_CO2e": {
+        "import_electricity": 11.7,
+        "residue_N2O": 27.3,
+        "AD_CH4": 80.30092800000003,
+        "residue_CH4": 197.46112000000002,
+        "fuel": 5,
+        "transport": 10,
+        "offsite_only_leakage": 5
+      },
+      "energy_export_credit_t_CO2e": 0,
+      "energy_export_policy": "EXCLUDED_NO_DISPLACEMENT_EVIDENCE_NO_DOUBLE_SUBTRACTION"
+    },
+    "reasons": [
+      "SYNTHETIC_NOT_SITE_EVIDENCE",
+      "INDEPENDENT_REVIEW_PENDING",
+      "PARAMETER_INTERVALS_NOT_EMPIRICAL_CONFIDENCE",
+      "EXPIRED_METHOD_NEW_REGISTRATION_ONLY"
+    ],
+    "legal": {
+      "collection": "NOT_YET_DUE_UNDER_REVIEWED_HOUSEHOLD_RULE",
+      "required_processing_pathway": "AD_SPECIFIC_REQUIREMENT_NOT_ESTABLISHED",
+      "additionality": "INSUFFICIENT_EVIDENCE",
+      "eligibility": "NOT_ELIGIBLE",
+      "reason": "EXPIRED_METHOD_NEW_REGISTRATION_ONLY",
+      "source_ids": [
+        "DCCEEW_AWT",
+        "FRL_AWT2015",
+        "EPA_FOGO",
+        "EPA_EXEMPTIONS"
+      ],
+      "formal_legal_determination": false,
+      "as_of": "2026-11-23",
+      "transition": "LEGACY_PROJECT_CREDITING_PERIOD_REQUIRES_EVIDENCE"
+    },
+    "duplicate_risks": [],
+    "observation": {
+      "status": "NO_OBSERVATION",
+      "instrument": null,
+      "unit": null,
+      "time": null,
+      "location": null,
+      "uncertainty": null,
+      "qc": "NOT_APPLICABLE_SYNTHETIC"
+    }
+  },
+  "C": {
+    "science": "PENDING",
+    "human_review": "PENDING",
+    "real_data": "DATA_NOT_READY",
+    "credit_quantity": "NOT_DETERMINED",
+    "assurance": "INSUFFICIENT_EVIDENCE",
+    "calculation": {
+      "mode": "SYNTHETIC",
+      "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+      "waste_t": 1000,
+      "physical_coherence": "COHERENT_WITHIN_SYNTHETIC_CH4_BOUNDARY",
+      "physical_ledger": {
+        "landfill": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 50000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 18500.0,
+            "cover_in": 31500.0,
+            "lateral_out": 0,
+            "pipe_leak": 185.0,
+            "pipe_stock_change": 0,
+            "device_in": 18315.0,
+            "device_slip": 366.30000000000035,
+            "destroyed": 17948.7,
+            "oxidized": 3150.0,
+            "surface": 28350.0
+          },
+          "emitted_kg_CH4": 28901.3,
+          "reaction_biogenic_CO2_kg": 58021.425,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        },
+        "organic_carbon_kg": 150000.0,
+        "carbon_scope": "CH4-path carbon conserved; no full waste LCA",
+        "dispersion": "NOT_COMPUTED_NO_CONCENTRATION_INVERSION",
+        "AD": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 60000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 58800.0,
+            "cover_in": 1200.0,
+            "lateral_out": 0,
+            "pipe_leak": 588.0,
+            "pipe_stock_change": 0,
+            "device_in": 58212.0,
+            "device_slip": 1164.2400000000011,
+            "destroyed": 57047.76,
+            "oxidized": 0.0,
+            "surface": 1200.0
+          },
+          "emitted_kg_CH4": 2952.240000000001,
+          "reaction_biogenic_CO2_kg": 156881.34,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        },
+        "residue_landfill": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 10000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 2000.0,
+            "cover_in": 8000.0,
+            "lateral_out": 0,
+            "pipe_leak": 20.0,
+            "pipe_stock_change": 0,
+            "device_in": 1980.0,
+            "device_slip": 39.60000000000004,
+            "destroyed": 1940.3999999999999,
+            "oxidized": 800.0,
+            "surface": 7200.0
+          },
+          "emitted_kg_CH4": 7259.6,
+          "reaction_biogenic_CO2_kg": 7536.0999999999985,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        }
+      },
+      "baseline_t_CO2e": 806.11536,
+      "project_t_CO2e": 331.76204800000005,
+      "leakage_t_CO2e": 5,
+      "estimated_net_abatement_t_CO2e": 469.35331199999996,
+      "credit_quantity": "NOT_DETERMINED",
+      "gwp": {
+        "CH4_nonfossil": 27.2,
+        "N2O": 273.0,
+        "source": "IPCC_AR6_WGI_TABLE_7_15",
+        "basis": "GWP100 research metric, not NGER/ACCU factor"
+      },
+      "real_data": "DATA_NOT_READY",
+      "science": "PENDING",
+      "unknowns": [],
+      "accounting_status": "CONDITIONAL_SYNTHETIC_NOT_STATUTORY",
+      "component_t_CO2e": {
+        "import_electricity": 11.7,
+        "residue_N2O": 27.3,
+        "AD_CH4": 80.30092800000003,
+        "residue_CH4": 197.46112000000002,
+        "fuel": 5,
+        "transport": 10,
+        "offsite_only_leakage": 5
+      },
+      "energy_export_credit_t_CO2e": 0,
+      "energy_export_policy": "EXCLUDED_NO_DISPLACEMENT_EVIDENCE_NO_DOUBLE_SUBTRACTION"
+    },
+    "reasons": [
+      "SYNTHETIC_NOT_SITE_EVIDENCE",
+      "INDEPENDENT_REVIEW_PENDING",
+      "PARAMETER_INTERVALS_NOT_EMPIRICAL_CONFIDENCE",
+      "LANDFILL_COUNTERFACTUAL_UNDER_MANDATE_UNPROVEN",
+      "CONSULTATION_IS_NOT_ENACTED_METHOD"
+    ],
+    "legal": {
+      "collection": "CONDITIONALLY_IN_SCOPE_REVERIFY_LAW_AT_EVENT_DATE",
+      "required_processing_pathway": "AD_SPECIFIC_REQUIREMENT_NOT_ESTABLISHED",
+      "additionality": "INSUFFICIENT_EVIDENCE",
+      "eligibility": "INSUFFICIENT_EVIDENCE",
+      "reason": "CONSULTATION_IS_NOT_ENACTED_METHOD",
+      "source_ids": [
+        "DCCEEW_AWT",
+        "FRL_AWT2015",
+        "EPA_FOGO",
+        "EPA_EXEMPTIONS"
+      ],
+      "formal_legal_determination": false,
+      "as_of": "2026-11-23",
+      "transition": "LEGACY_PROJECT_CREDITING_PERIOD_REQUIRES_EVIDENCE"
+    },
+    "duplicate_risks": [],
+    "observation": {
+      "status": "NO_OBSERVATION",
+      "instrument": null,
+      "unit": null,
+      "time": null,
+      "location": null,
+      "uncertainty": null,
+      "qc": "NOT_APPLICABLE_SYNTHETIC"
+    }
+  },
+  "D": {
+    "science": "PENDING",
+    "human_review": "PENDING",
+    "real_data": "DATA_NOT_READY",
+    "credit_quantity": "NOT_DETERMINED",
+    "assurance": "INSUFFICIENT_EVIDENCE",
+    "calculation": {
+      "mode": "SYNTHETIC",
+      "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+      "waste_t": 1000,
+      "physical_coherence": "COHERENT_WITHIN_SYNTHETIC_CH4_BOUNDARY",
+      "physical_ledger": {
+        "landfill": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 50000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 18500.0,
+            "cover_in": 31500.0,
+            "lateral_out": 0,
+            "pipe_leak": 185.0,
+            "pipe_stock_change": 0,
+            "device_in": 18315.0,
+            "device_slip": 366.30000000000035,
+            "destroyed": 17948.7,
+            "oxidized": 3150.0,
+            "surface": 28350.0
+          },
+          "emitted_kg_CH4": 28901.3,
+          "reaction_biogenic_CO2_kg": 58021.425,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        },
+        "organic_carbon_kg": 150000.0,
+        "carbon_scope": "CH4-path carbon conserved; no full waste LCA",
+        "dispersion": "NOT_COMPUTED_NO_CONCENTRATION_INVERSION",
+        "AD": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 60000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 58800.0,
+            "cover_in": 1200.0,
+            "lateral_out": 0,
+            "pipe_leak": 588.0,
+            "pipe_stock_change": 0,
+            "device_in": 58212.0,
+            "device_slip": 1164.2400000000011,
+            "destroyed": 57047.76,
+            "oxidized": 0.0,
+            "surface": 1200.0
+          },
+          "emitted_kg_CH4": 2952.240000000001,
+          "reaction_biogenic_CO2_kg": 156881.34,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        }
+      },
+      "baseline_t_CO2e": 806.11536,
+      "project_t_CO2e": null,
+      "leakage_t_CO2e": null,
+      "estimated_net_abatement_t_CO2e": null,
+      "credit_quantity": "NOT_DETERMINED",
+      "gwp": {
+        "CH4_nonfossil": 27.2,
+        "N2O": 273.0,
+        "source": "IPCC_AR6_WGI_TABLE_7_15",
+        "basis": "GWP100 research metric, not NGER/ACCU factor"
+      },
+      "real_data": "DATA_NOT_READY",
+      "science": "PENDING",
+      "unknowns": [
+        "residue_CH4_known",
+        "residue_N2O_known"
+      ],
+      "accounting_status": "INSUFFICIENT_EVIDENCE"
+    },
+    "reasons": [
+      "SYNTHETIC_NOT_SITE_EVIDENCE",
+      "INDEPENDENT_REVIEW_PENDING",
+      "PARAMETER_INTERVALS_NOT_EMPIRICAL_CONFIDENCE",
+      "BASELINE_EVIDENCE_MISSING",
+      "residue_CH4_known",
+      "residue_N2O_known",
+      "MATERIAL_BATCH_RIGHTS_RECONCILIATION_REQUIRED",
+      "REGISTRATION_AND_TRANSITION_NOT_VERIFIED"
+    ],
+    "legal": {
+      "collection": "NOT_YET_DUE_UNDER_REVIEWED_HOUSEHOLD_RULE",
+      "required_processing_pathway": "AD_SPECIFIC_REQUIREMENT_NOT_ESTABLISHED",
+      "additionality": "INSUFFICIENT_EVIDENCE",
+      "eligibility": "INSUFFICIENT_EVIDENCE",
+      "reason": "REGISTRATION_AND_TRANSITION_NOT_VERIFIED",
+      "source_ids": [
+        "DCCEEW_AWT",
+        "FRL_AWT2015",
+        "EPA_FOGO",
+        "EPA_EXEMPTIONS"
+      ],
+      "formal_legal_determination": false,
+      "as_of": "2026-11-23",
+      "transition": "LEGACY_PROJECT_CREDITING_PERIOD_REQUIRES_EVIDENCE"
+    },
+    "duplicate_risks": [
+      {
+        "batch": "SYNTHETIC_BATCH_1000T",
+        "mechanisms": [
+          "AWT_CANDIDATE",
+          "SAFEGUARD_CANDIDATE"
+        ],
+        "status": "POTENTIAL_OVERLAP_NOT_PROVEN_DOUBLE_ISSUANCE"
+      }
+    ],
+    "observation": {
+      "status": "NO_OBSERVATION",
+      "instrument": null,
+      "unit": null,
+      "time": null,
+      "location": null,
+      "uncertainty": null,
+      "qc": "NOT_APPLICABLE_SYNTHETIC"
+    }
+  },
+  "missing_baseline": {
+    "science": "PENDING",
+    "human_review": "PENDING",
+    "real_data": "DATA_NOT_READY",
+    "credit_quantity": "NOT_DETERMINED",
+    "assurance": "INSUFFICIENT_EVIDENCE",
+    "calculation": {
+      "mode": "SYNTHETIC",
+      "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+      "waste_t": 1000,
+      "physical_coherence": "COHERENT_WITHIN_SYNTHETIC_CH4_BOUNDARY",
+      "physical_ledger": {
+        "landfill": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 50000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 18500.0,
+            "cover_in": 31500.0,
+            "lateral_out": 0,
+            "pipe_leak": 185.0,
+            "pipe_stock_change": 0,
+            "device_in": 18315.0,
+            "device_slip": 366.30000000000035,
+            "destroyed": 17948.7,
+            "oxidized": 3150.0,
+            "surface": 28350.0
+          },
+          "emitted_kg_CH4": 28901.3,
+          "reaction_biogenic_CO2_kg": 58021.425,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        },
+        "organic_carbon_kg": 150000.0,
+        "carbon_scope": "CH4-path carbon conserved; no full waste LCA",
+        "dispersion": "NOT_COMPUTED_NO_CONCENTRATION_INVERSION",
+        "AD": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 60000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 58800.0,
+            "cover_in": 1200.0,
+            "lateral_out": 0,
+            "pipe_leak": 588.0,
+            "pipe_stock_change": 0,
+            "device_in": 58212.0,
+            "device_slip": 1164.2400000000011,
+            "destroyed": 57047.76,
+            "oxidized": 0.0,
+            "surface": 1200.0
+          },
+          "emitted_kg_CH4": 2952.240000000001,
+          "reaction_biogenic_CO2_kg": 156881.34,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        },
+        "residue_landfill": {
+          "interval": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL",
+          "unit": "kg_CH4",
+          "flows": {
+            "stock_start": 0,
+            "generated": 10000.0,
+            "inflow": 0,
+            "stock_end": 0,
+            "collected": 2000.0,
+            "cover_in": 8000.0,
+            "lateral_out": 0,
+            "pipe_leak": 20.0,
+            "pipe_stock_change": 0,
+            "device_in": 1980.0,
+            "device_slip": 39.60000000000004,
+            "destroyed": 1940.3999999999999,
+            "oxidized": 800.0,
+            "surface": 7200.0
+          },
+          "emitted_kg_CH4": 7259.6,
+          "reaction_biogenic_CO2_kg": 7536.0999999999985,
+          "residuals": {
+            "body": 0.0,
+            "pipe": 0.0,
+            "device": 0.0,
+            "cover": 0.0,
+            "CH4": 0.0,
+            "carbon": 0.0
+          },
+          "kernel": "AUTHOR_LEDGER_V1_NOT_NGER_NOT_ACCU",
+          "kernel_scope": "INTERNAL_FIXTURE_REPLAY_ONLY; integral algebra adapter"
+        }
+      },
+      "baseline_t_CO2e": 806.11536,
+      "project_t_CO2e": 331.76204800000005,
+      "leakage_t_CO2e": 5,
+      "estimated_net_abatement_t_CO2e": 469.35331199999996,
+      "credit_quantity": "NOT_DETERMINED",
+      "gwp": {
+        "CH4_nonfossil": 27.2,
+        "N2O": 273.0,
+        "source": "IPCC_AR6_WGI_TABLE_7_15",
+        "basis": "GWP100 research metric, not NGER/ACCU factor"
+      },
+      "real_data": "DATA_NOT_READY",
+      "science": "PENDING",
+      "unknowns": [],
+      "accounting_status": "CONDITIONAL_SYNTHETIC_NOT_STATUTORY",
+      "component_t_CO2e": {
+        "import_electricity": 11.7,
+        "residue_N2O": 27.3,
+        "AD_CH4": 80.30092800000003,
+        "residue_CH4": 197.46112000000002,
+        "fuel": 5,
+        "transport": 10,
+        "offsite_only_leakage": 5
+      },
+      "energy_export_credit_t_CO2e": 0,
+      "energy_export_policy": "EXCLUDED_NO_DISPLACEMENT_EVIDENCE_NO_DOUBLE_SUBTRACTION"
+    },
+    "reasons": [
+      "SYNTHETIC_NOT_SITE_EVIDENCE",
+      "INDEPENDENT_REVIEW_PENDING",
+      "PARAMETER_INTERVALS_NOT_EMPIRICAL_CONFIDENCE",
+      "BASELINE_EVIDENCE_MISSING",
+      "EXPIRED_METHOD_NEW_REGISTRATION_ONLY"
+    ],
+    "legal": {
+      "collection": "NOT_YET_DUE_UNDER_REVIEWED_HOUSEHOLD_RULE",
+      "required_processing_pathway": "AD_SPECIFIC_REQUIREMENT_NOT_ESTABLISHED",
+      "additionality": "INSUFFICIENT_EVIDENCE",
+      "eligibility": "NOT_ELIGIBLE",
+      "reason": "EXPIRED_METHOD_NEW_REGISTRATION_ONLY",
+      "source_ids": [
+        "DCCEEW_AWT",
+        "FRL_AWT2015",
+        "EPA_FOGO",
+        "EPA_EXEMPTIONS"
+      ],
+      "formal_legal_determination": false,
+      "as_of": "2026-11-23",
+      "transition": "LEGACY_PROJECT_CREDITING_PERIOD_REQUIRES_EVIDENCE"
+    },
+    "duplicate_risks": [],
+    "observation": {
+      "status": "NO_OBSERVATION",
+      "instrument": null,
+      "unit": null,
+      "time": null,
+      "location": null,
+      "uncertainty": null,
+      "qc": "NOT_APPLICABLE_SYNTHETIC"
+    }
+  },
+  "tampered_source": {
+    "science": "PENDING",
+    "human_review": "PENDING",
+    "real_data": "DATA_NOT_READY",
+    "credit_quantity": "NOT_DETERMINED",
+    "assurance": "CONDITIONS_NOT_MET",
+    "calculation": null,
+    "reasons": [
+      "DATASET_BYTE_HASH"
+    ],
+    "legal": null,
+    "duplicate_risks": []
+  },
+  "physically_inconsistent": {
+    "status": "CONDITIONS_NOT_MET",
+    "reason": "capture_fraction: outside declared domain",
+    "net": null
+  },
+  "unknown_exemption": {
+    "collection": "UNKNOWN_EXEMPTION_NOT_VERIFIED",
+    "required_processing_pathway": "AD_SPECIFIC_REQUIREMENT_NOT_ESTABLISHED",
+    "additionality": "INSUFFICIENT_EVIDENCE",
+    "eligibility": "INSUFFICIENT_EVIDENCE",
+    "reason": "CONSULTATION_IS_NOT_ENACTED_METHOD",
+    "source_ids": [
+      "DCCEEW_AWT",
+      "FRL_AWT2015",
+      "EPA_FOGO",
+      "EPA_EXEMPTIONS"
+    ],
+    "formal_legal_determination": false,
+    "as_of": "2026-11-23",
+    "transition": "LEGACY_PROJECT_CREDITING_PERIOD_REQUIRES_EVIDENCE"
+  }
+}
