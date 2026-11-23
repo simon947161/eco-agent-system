@@ -1,5 +1,7 @@
 # 长期知识与证据索引（待正式接入）
 
+2026-11-23独立扩展：[CLIMATEOS–AWT–001 / Issue162](../climateos_awt_001/README.md)，复用本PR145证据接口与PR144质量账，四个1000t合成情景、法规筛查和12页中文验收。仅在独立分支追加导航，旧科学状态不变；详见新任务P0审计与NEXT_SESSION。
+
 |知识节点|权威/冻结入口|复用方式与成熟度|
 |---|---|---|
 |K01 机制与因素|[PR143机制网络](../climateos_methane_physics_knowledge_engine_001/MECHANISM_GRAPH.json)、[公式](../climateos_methane_physics_knowledge_engine_001/EQUATION_REGISTRY.json)|引用70因素/14节点；不重新给普适影响百分比|

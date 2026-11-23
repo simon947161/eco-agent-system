@@ -1,0 +1,31 @@
+{
+  "task": "CLIMATEOS-AWT-001",
+  "formal_source": "https://github.com/simon947161/eco-agent-system/issues/162",
+  "as_of": "2026-11-23",
+  "main_head": "9eb7577e145e76161f9f1cd8509348b19c2904cc",
+  "baseline_head": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+  "branch": "codex/climateos-awt-001-20261123",
+  "phases": {
+    "P0": "READ_ONLY_AUDIT_COMPLETE_WITH_GAPS",
+    "P1": "IMPLEMENTED_SYNTHETIC_TESTED",
+    "P2": "FOUR_SCENARIOS_384_CORNER_CASES_D_NET_BLOCKED",
+    "P3": "RULE_DEMONSTRATION_TESTED_NOT_INDEPENDENT_ASSURANCE"
+  },
+  "delivery_state": "LOCAL_VERIFIED",
+  "science": "PENDING",
+  "p1a_science": "PENDING",
+  "d3": "DATA_NOT_READY",
+  "credit_quantity": "NOT_DETERMINED",
+  "deployed": false,
+  "merged": false,
+  "independent_review": "PENDING",
+  "remote_receipt": "Final PR conversation comment anchors exact delivery SHA and actual CI; inspect remote before claiming published.",
+  "founder_gates": [
+    "Real data scope and permissions",
+    "Scientific or independent assurance",
+    "Merge or production deployment",
+    "Regulatory/ACCU submission",
+    "Purchase or credential changes"
+  ],
+  "prohibited_actions_performed": []
+}

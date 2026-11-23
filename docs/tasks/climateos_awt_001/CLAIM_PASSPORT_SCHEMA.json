@@ -1,0 +1,465 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "claim_id",
+    "scenario",
+    "revision",
+    "previous_revision_sha256",
+    "mode",
+    "input_sha256",
+    "dataset",
+    "observation",
+    "baseline_evidence",
+    "formula",
+    "assumptions",
+    "entities",
+    "legal",
+    "rights_links",
+    "output_provenance",
+    "review"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "awt-claim-passport/1"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "AWT-[A-D]"
+    },
+    "scenario": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "revision": {
+      "type": "number",
+      "minimum": 1
+    },
+    "previous_revision_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "[0-9a-f]{64}"
+    },
+    "mode": {
+      "type": "string",
+      "const": "SYNTHETIC"
+    },
+    "input_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "licence",
+        "sha256",
+        "byte_scope",
+        "time_support",
+        "timezone",
+        "qc",
+        "spatial_scope"
+      ],
+      "properties": {
+        "source": {
+          "type": "string",
+          "const": "AUTHOR_SYNTHETIC_FIXTURE"
+        },
+        "licence": {
+          "type": "string",
+          "const": "CC0-1.0_AUTHOR_INPUT_ONLY"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "byte_scope": {
+          "type": "string",
+          "const": "EXACT_UTF8_LF_FIXTURE_BYTES"
+        },
+        "time_support": {
+          "type": "string",
+          "const": "COHORT_100_YEARS_INTEGRATED_NOT_ANNUAL"
+        },
+        "timezone": {
+          "type": "string",
+          "const": "NOT_APPLICABLE_SYNTHETIC_NO_CIVIL_TIME"
+        },
+        "qc": {
+          "type": "string",
+          "const": "ARITHMETIC_FIXTURE_NOT_INSTRUMENT_QC"
+        },
+        "spatial_scope": {
+          "type": "string",
+          "const": "FICTIONAL_NSW_NO_SITE_OR_COORDINATES"
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "instrument",
+        "unit",
+        "time",
+        "location",
+        "uncertainty",
+        "qc"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "const": "NO_OBSERVATION"
+        },
+        "instrument": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "time": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "location": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uncertainty": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "qc": {
+          "type": "string",
+          "const": "NOT_APPLICABLE_SYNTHETIC"
+        }
+      }
+    },
+    "baseline_evidence": {
+      "type": "string",
+      "enum": [
+        "SYNTHETIC_ASSUMPTIONS_ONLY",
+        "MISSING"
+      ]
+    },
+    "formula": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "source_version",
+        "statutory_solver",
+        "unit"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "const": "AUTHOR_COHORT_COUNTERFACTUAL_V1"
+        },
+        "source_version": {
+          "type": "string",
+          "const": "PR144_LEDGER_V1_AND_IPCC_AR6_GWP100"
+        },
+        "statutory_solver": {
+          "type": "boolean",
+          "const": false
+        },
+        "unit": {
+          "type": "string",
+          "const": "t_CO2e/1000_t_wet_cohort"
+        }
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "input_pointer",
+          "owner",
+          "unit",
+          "uncertainty"
+        ],
+        "properties": {
+          "input_pointer": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string",
+            "const": "CODEX_AUTHOR_SYNTHETIC"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "uncertainty": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "entities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "type",
+          "depends_on",
+          "evidence_state",
+          "result_pointer"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "OBSERVATION",
+              "PHYSICAL_ESTIMATE",
+              "BASELINE_COUNTERFACTUAL",
+              "PROJECT_EMISSIONS",
+              "LEAKAGE",
+              "NET_ABATEMENT_ESTIMATE",
+              "ADDITIONALITY_AND_ELIGIBILITY",
+              "CLAIM_AND_CREDIT_RIGHTS",
+              "ASSURANCE_STATUS"
+            ]
+          },
+          "depends_on": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_state": {
+            "type": "string",
+            "enum": [
+              "SYNTHETIC",
+              "UNKNOWN",
+              "OFFICIAL_CONTEXT_ONLY"
+            ]
+          },
+          "result_pointer": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "legal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "jurisdiction",
+        "assessment_date",
+        "premises",
+        "exemption",
+        "method",
+        "registration",
+        "source_verified_at",
+        "legal_effective_date",
+        "source_status"
+      ],
+      "properties": {
+        "jurisdiction": {
+          "type": "string",
+          "enum": [
+            "AU-NSW",
+            "OTHER"
+          ]
+        },
+        "assessment_date": {
+          "type": "string",
+          "pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}"
+        },
+        "premises": {
+          "type": "string",
+          "enum": [
+            "HOUSEHOLD_COUNCIL_RED_BIN",
+            "UNKNOWN"
+          ]
+        },
+        "exemption": {
+          "type": "string",
+          "enum": [
+            "UNKNOWN",
+            "NO_SYNTHETIC_ASSUMPTION"
+          ]
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "AWT_2015",
+            "AWT_2026_PROPOSAL",
+            "UNKNOWN"
+          ]
+        },
+        "registration": {
+          "type": "string",
+          "enum": [
+            "NEW",
+            "LEGACY_UNVERIFIED",
+            "UNKNOWN"
+          ]
+        },
+        "source_verified_at": {
+          "type": "string",
+          "const": "2026-11-23"
+        },
+        "legal_effective_date": {
+          "type": "string",
+          "const": "AWT_EXPIRED_2025-03-31;FOGO_HOUSEHOLD_DUE_2030-07-01"
+        },
+        "source_status": {
+          "type": "string",
+          "const": "OFFICIAL_WEB_SCREENING_NSW_PRIMARY_TEXT_BLOCKED"
+        }
+      }
+    },
+    "rights_links": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "batch",
+          "period",
+          "quantity_boundary",
+          "mechanism",
+          "project_registry_id",
+          "right_verified"
+        ],
+        "properties": {
+          "batch": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "quantity_boundary": {
+            "type": "string"
+          },
+          "mechanism": {
+            "type": "string"
+          },
+          "project_registry_id": {
+            "type": "string",
+            "const": "NOT_REGISTERED_SYNTHETIC"
+          },
+          "right_verified": {
+            "type": "boolean",
+            "const": false
+          }
+        }
+      }
+    },
+    "output_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "engine",
+        "engine_sha256",
+        "kernel",
+        "result_file",
+        "hash_scope"
+      ],
+      "properties": {
+        "engine": {
+          "type": "string",
+          "const": "engine.py"
+        },
+        "engine_sha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "kernel": {
+          "type": "string",
+          "const": "PR144_LEDGER"
+        },
+        "result_file": {
+          "type": "string",
+          "const": "evidence/results.json"
+        },
+        "hash_scope": {
+          "type": "string",
+          "const": "SOURCE_LF_NORMALIZED;GIT_HEAD_EXTERNAL_ANCHOR"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gate",
+        "human_reviewer",
+        "human_notes",
+        "scientifically_admitted",
+        "regulatory_certification",
+        "credit_quantity"
+      ],
+      "properties": {
+        "gate": {
+          "type": "string",
+          "const": "PENDING"
+        },
+        "human_reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "human_notes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "scientifically_admitted": {
+          "type": "boolean",
+          "const": false
+        },
+        "regulatory_certification": {
+          "type": "string",
+          "const": "NOT_PROVIDED"
+        },
+        "credit_quantity": {
+          "type": "string",
+          "const": "NOT_DETERMINED"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "climateos.awt.claim-passport.v1",
+  "title": "Issue162 PR145-compatible claim passport extension; synthetic pilot only"
+}

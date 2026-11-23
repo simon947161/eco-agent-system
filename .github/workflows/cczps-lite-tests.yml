@@ -52,3 +52,8 @@ jobs:
         run: python -m py_compile cczps_lite/engine/*.py cczps_lite/integration/*.py
       - name: Run unit tests
         run: python -m unittest discover
+      - name: Reproduce bounded AWT synthetic evidence
+        run: |
+          python docs/tasks/climateos_awt_001/engine.py
+          git diff --exit-code -- docs/tasks/climateos_awt_001/evidence/results.json docs/tasks/climateos_awt_001/evidence/sensitivities.json docs/tasks/climateos_awt_001/evidence/submission-events.json
+          python docs/tasks/climateos_awt_001/verify_package.py
