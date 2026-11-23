@@ -1,0 +1,226 @@
+{
+  "assessment_date": "2026-11-24",
+  "mode": "READ_ONLY",
+  "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://cer.gov.au/markets/reports-and-data/safeguard-data",
+      "owner": "CER",
+      "reading": "METADATA_READ",
+      "locator": "Publication schedule / 2024–25",
+      "note": "Published 15 April 2026; individual tables may be revised. This is reporting context, not an AWT waste cohort.",
+      "source_date": "2026-04-15",
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S02",
+      "url": "https://cer.gov.au/markets/reports-and-data/safeguard-data/2024-25-baselines-and-emissions-data",
+      "owner": "CER",
+      "reading": "METADATA_READ",
+      "locator": "Publication notes; full-table download labels",
+      "note": "CSV 46.93 KB and XLSX 46.87 KB offered; facility-level annual GHG reporting, unit surrender and withholding notes. No files requested.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S03",
+      "url": "https://cer.gov.au/copyright",
+      "owner": "CER",
+      "reading": "TOOL_INACCESSIBLE_STOPPED",
+      "locator": "Attempted copyright URL",
+      "note": "Tool reported URL not accessible; no HTTP code supplied. No licence verified and no alternate retrieval attempted.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S04",
+      "url": "https://www.transport.nsw.gov.au/operations/roads-and-waterways/environment-and-heritage/environmental-compliance/environment",
+      "owner": "Transport for NSW",
+      "reading": "HTTP_403_STOPPED_NO_RETRY",
+      "locator": "Official environmental compliance directory",
+      "note": "Directory request returned 403. Search snippets only; underlying monitoring PDFs not opened.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S05",
+      "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2025/SPI-Landfill-Gas-Monitoring-March-2025.pdf",
+      "owner": "Transport for NSW",
+      "reading": "SEARCH_INDEX_ONLY_FILE_NOT_REQUESTED",
+      "locator": "Indexed title / licence 4627 / March 2025",
+      "note": "Named gas-monitoring report discovered. Numerical measurements were not copied; licence, current correction status and exact bytes unverified.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S06",
+      "url": "https://zenodo.org/records/14165793",
+      "owner": "Wechselberger et al. / Zenodo",
+      "reading": "METADATA_READ",
+      "locator": "Description; Files; Rights; newer-version link",
+      "note": "Plant-level methane-loss research, primary and secondary records. Data.csv 91.1 kB, Glossary.csv 4.6 kB listed at v1. No raw or glossary file fetched. Rights heading rendered without licence text.",
+      "source_date": "2024-11-14",
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S07",
+      "url": "https://zenodo.org/records/14197882",
+      "owner": "Wechselberger et al. / Zenodo",
+      "reading": "METADATA_READ",
+      "locator": "Newer-version redirect / DOI / Technical metadata",
+      "note": "v1 latest link resolves to this distinct record; modified 21 November 2024. Licence text not extracted. Version-specific file sizes not established.",
+      "source_date": "2024-11-21",
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S08",
+      "url": "https://zenodo.org/api/records/14197882",
+      "owner": "Zenodo",
+      "reading": "TOOL_INACCESSIBLE_STOPPED",
+      "locator": "Public metadata endpoint",
+      "note": "Tool reported URL not accessible; no HTTP status supplied. No workaround or data-file request.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S09",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.ht76hdrtc",
+      "owner": "Rodriguez and Hopkins / Dryad",
+      "reading": "METADATA_AND_EMBEDDED_README_READ",
+      "locator": "Files; embedded README field dictionary; abstract",
+      "note": "California manure installation study. Observation concentrations and meteorology are distinct from dispersion-derived mass rates; public record suppresses location/identity. Dataset files not requested.",
+      "source_date": "2026-02-19",
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S10",
+      "url": "https://datadryad.org/terms",
+      "owner": "Dryad",
+      "reading": "TERMS_READ",
+      "locator": "Terms 1(a), 2(a-c)",
+      "note": "Submitters grant public dataset release under CC0 and warrant rights/privacy. Applies to datasets; not a field calibration certificate.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S11",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.en",
+      "owner": "Creative Commons",
+      "reading": "LEGAL_TEXT_READ",
+      "locator": "Waiver; fallback licence; limitations/disclaimer",
+      "note": "CC0 addresses copyright/database rights, not patents, privacy, endorsement or accuracy; no data-owner warranty independently verified.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S12",
+      "url": "https://www.dcceew.gov.au/climate-change/emissions-reduction/accu-scheme/methods-closed/alternative-waste-treatment",
+      "owner": "DCCEEW",
+      "reading": "OFFICIAL_CONTEXT_READ",
+      "locator": "Method status and outcome of review",
+      "note": "Expired AWT cannot register new projects; qualifying legacy projects may continue within their crediting periods. Remake development is distinct from enactment.",
+      "source_date": "2026-08-04",
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S13",
+      "url": "https://ausrrc.com.au/awt-remake/",
+      "owner": "Australian Resources Recovery Council",
+      "reading": "PROPONENT_CONSULTATION_PAGE_READ",
+      "locator": "Overview; Have Your Say",
+      "note": "Proposal discussion includes digestate boundaries and AD calculation; consultation closes 29 November 2026 23:59 AEST. Not legislation; no submission made.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S14",
+      "url": "https://www.epa.nsw.gov.au/Your-environment/Recycling-and-reuse/business-government-recycling/Food-organics-and-garden-organics/fogo-mandates-and-rollout",
+      "owner": "NSW EPA",
+      "reading": "OFFICIAL_GUIDANCE_READ",
+      "locator": "Mandate requirements; FAQ",
+      "note": "Collection duties depend on premises and timing; no automatic AD technology mandate or proof of additionality.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    },
+    {
+      "id": "S15",
+      "url": "https://www.epa.nsw.gov.au/Your-environment/Recycling-and-reuse/business-government-recycling/Food-organics-and-garden/FOGO-mandates-and-rollout/exemptions",
+      "owner": "NSW EPA",
+      "reading": "OFFICIAL_GUIDANCE_READ",
+      "locator": "Regional businesses; other exemptions",
+      "note": "Exemptions require site/date-specific assessment; guidance is not a completed legal applicability opinion.",
+      "source_date": null,
+      "checked_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "raw_file_sha256": null
+    }
+  ],
+  "access_events": [
+    {
+      "source": "S04",
+      "result": "HTTP_403",
+      "action": "STOP_NO_RETRY"
+    },
+    {
+      "source": "S08",
+      "result": "TOOL_INACCESSIBLE_HTTP_STATUS_UNKNOWN",
+      "action": "STOP_NO_ALTERNATIVE_ROUTE"
+    },
+    {
+      "source": "S03",
+      "result": "TOOL_INACCESSIBLE_HTTP_STATUS_UNKNOWN",
+      "action": "STOP_LICENCE_UNVERIFIED"
+    },
+    {
+      "source": "S09",
+      "result": "LOCAL_SANDBOX_DNS_FAILED_THEN_APPROVED_METADATA_HTTP_200",
+      "action": "Catalogue HTML only, no dataset link requested; dynamic response exposed no usable file href or licence markup. Public web-rendered README and Dryad terms are the evidence. This was not a remote 403 retry."
+    }
+  ],
+  "excluded_inherited_endpoints": "Prior D3 blocked Dryad/MDPI/Mendeley and NSW legislation/IPCC HTML endpoints were not retried; incidental search results were not selected or opened as extra candidates.",
+  "no_raw_download_evidence": "Operation scope: public HTML/docs/terms only. No dataset/file/preview endpoint called; search snippets may expose publisher-indexed text but were not parsed into measurement rows. No raw file saved or hashed."
+}

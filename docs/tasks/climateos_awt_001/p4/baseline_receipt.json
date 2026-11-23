@@ -1,0 +1,31 @@
+{
+  "assessment_date": "2026-11-24",
+  "timezone": "Australia/Sydney",
+  "mode": "READ_ONLY",
+  "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+  "issue_url": "https://github.com/simon947161/eco-agent-system/issues/164",
+  "issue_updated_at": "2026-11-23T20:36:09Z",
+  "frozen_parent_head": "9aea387a4261b913163b3be3197597089d9e9414",
+  "parent_pr": "https://github.com/simon947161/eco-agent-system/pull/163",
+  "review_url": "https://github.com/simon947161/eco-agent-system/pull/163#pullrequestreview-6029057378",
+  "review_outcome": "CONDITIONAL_ACCEPTANCE_FOR_SYNTHETIC_PILOT_ONLY",
+  "review_read": true,
+  "p0_p3_read": [
+    "REVIEW_REQUEST.md",
+    "sources.json",
+    "EXISTING_ASSETS_AND_GAPS.md",
+    "NEXT_SESSION.md",
+    "PASSPORT_INTEGRATION.md",
+    "CLAIM_PASSPORT_SCHEMA.json",
+    "COUNTERFACTUAL_CASE_1000T.md",
+    "ASSURANCE_DECISION_TESTS.md",
+    "EXECUTION_STATE.json"
+  ],
+  "inherited_science": "PENDING",
+  "inherited_real_data": "DATA_NOT_READY",
+  "inherited_credit": "NOT_DETERMINED",
+  "parent_files_modified": false,
+  "raw_data_requests": 0,
+  "raw_data_sha256": null,
+  "calculations_run": 0
+}

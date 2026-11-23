@@ -1,0 +1,616 @@
+{
+  "task": "CLIMATEOS-AWT-001-P4",
+  "assessment_date": "2026-11-24",
+  "timezone": "Australia/Sydney",
+  "mode": "READ_ONLY",
+  "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+  "frozen_baseline": "9aea387a4261b913163b3be3197597089d9e9414",
+  "candidate_limit": 6,
+  "detailed_limit": 3,
+  "discovered_count": 4,
+  "detailed_count": 3,
+  "counting_rule": "One explicitly selected publisher data collection is one candidate; v1/v2 of same collection deduplicated. Incidental search hits and licence/legal pages are not further investigated candidates.",
+  "decision": "NO_SUITABLE_DATASET",
+  "stop_reason": "No selected candidate establishes the full same-boundary material/time/residue/energy/QC/rights chain. Bounded search ended; this is not a universal nonexistence claim.",
+  "scientific_admission": "PENDING",
+  "real_data_status": "DATA_NOT_READY",
+  "credit_eligibility": "NOT_DETERMINED",
+  "candidates": [
+    {
+      "assessment_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "actual_rows": null,
+      "actual_missing_fraction": null,
+      "raw_file_sha256": null,
+      "raw_access_tested": false,
+      "admitted": false,
+      "full_chain_suitable": false,
+      "id": "C01",
+      "name": "CER 2024–25 Safeguard baselines and emissions",
+      "assessment_depth": "DETAILED",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "owner": "Clean Energy Regulator; underlying NGER reporters",
+      "jurisdiction": "AU",
+      "publication_date": "2026-04-15",
+      "last_update": null,
+      "version": "2024-25 reporting period; live table revision date UNKNOWN",
+      "landing_url": "https://cer.gov.au/markets/reports-and-data/safeguard-data/2024-25-baselines-and-emissions-data",
+      "expected_files": [
+        {
+          "name": "Baselines and emissions table 2024–25",
+          "format": "CSV",
+          "publisher_size_label": "46.93 KB",
+          "download_url": null,
+          "version": null,
+          "request_status": "NOT_REQUESTED",
+          "downloaded": false,
+          "sha256": null
+        },
+        {
+          "name": "Baselines and emissions table 2024–25",
+          "format": "XLSX",
+          "publisher_size_label": "46.87 KB",
+          "download_url": null,
+          "version": null,
+          "request_status": "NOT_REQUESTED",
+          "downloaded": false,
+          "sha256": null
+        }
+      ],
+      "granularity": "Facility / financial year; published emissions and regulatory baseline, not physical waste-cohort input",
+      "field_evidence": [
+        [
+          "Facility / responsible emitter",
+          "REPORTED"
+        ],
+        [
+          "Covered emissions, GHG Carbon Dioxide, GHG Methane, GHG Nitrous oxide",
+          "REPORTED"
+        ],
+        [
+          "Baseline / ACCU-SMC surrender",
+          "REPORTED"
+        ]
+      ],
+      "time": {
+        "period": "2024–25 financial year",
+        "timezone": null,
+        "dst": null,
+        "interval": "annual reporting",
+        "timestamp_semantics": null
+      },
+      "qc": {
+        "method": "NGER reporting publication, underlying measurement method not established for waste facilities",
+        "calibration": null,
+        "flags": null,
+        "missingness": "Withholding can be noted; missing rates uninspected"
+      },
+      "licence": {
+        "status": "LICENCE_UNVERIFIED",
+        "instrument": null,
+        "grantor": null,
+        "original_url": null,
+        "attempted_url": "https://cer.gov.au/copyright",
+        "redistribution": "UNKNOWN",
+        "derivative_use": "UNKNOWN",
+        "attribution": "Retain CER citation; permission not verified",
+        "noncommercial_limit": "UNKNOWN",
+        "api_terms": "NOT_ASSESSED_NO_API_USED",
+        "privacy": "Publisher allows withholding trade secrets/commercially sensitive data",
+        "geographic_sensitivity": "UNKNOWN",
+        "retention": "UNKNOWN"
+      },
+      "joinability": "Annual facility identifiers could support future contextual matching; no common batch with AWT 1000t cohort.",
+      "status": "BLOCKED",
+      "method_priority": 3,
+      "gates": {
+        "G1": {
+          "status": "UNKNOWN",
+          "reason": "Public reporting duty does not establish an open data licence; attempted copyright page inaccessible.",
+          "source_ids": [
+            "S02",
+            "S03"
+          ]
+        },
+        "G2": {
+          "status": "NOT_TESTED",
+          "reason": "Catalogue advertises files; bytes/access never tested.",
+          "source_ids": [
+            "S02"
+          ]
+        },
+        "G3": {
+          "status": "PARTIAL",
+          "reason": "Annual period and described totals present; exact current revision, per-gas units and source method require file/docs check.",
+          "source_ids": [
+            "S01",
+            "S02"
+          ]
+        },
+        "G4": {
+          "status": "FAIL",
+          "reason": "Facility-year aggregated reporting cannot identify the same 1000t batch, composition and counterfactual.",
+          "source_ids": [
+            "S02"
+          ]
+        },
+        "G5": {
+          "status": "UNKNOWN",
+          "reason": "No batch-linked digestate/endpoints or import/export energy boundary established.",
+          "source_ids": [
+            "S02"
+          ]
+        },
+        "G6": {
+          "status": "UNKNOWN",
+          "reason": "No instrument calibration/QC chain checked.",
+          "source_ids": [
+            "S02"
+          ]
+        },
+        "G7": {
+          "status": "PARTIAL",
+          "reason": "Useful for reported rights-overlap context only; regulatory baseline is not physical no-project baseline.",
+          "source_ids": [
+            "S02"
+          ]
+        }
+      }
+    },
+    {
+      "assessment_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "actual_rows": null,
+      "actual_missing_fraction": null,
+      "raw_file_sha256": null,
+      "raw_access_tested": false,
+      "admitted": false,
+      "full_chain_suitable": false,
+      "id": "C02",
+      "name": "TfNSW St Peters Interchange EPL4627 monitoring collection",
+      "assessment_depth": "SCREEN_ONLY",
+      "source_ids": [
+        "S04",
+        "S05"
+      ],
+      "owner": "Transport for NSW; report-level contractor role UNKNOWN",
+      "jurisdiction": "AU-NSW",
+      "publication_date": null,
+      "last_update": null,
+      "version": "March 2025 report title discovered; revision UNKNOWN",
+      "landing_url": "https://www.transport.nsw.gov.au/operations/roads-and-waterways/environment-and-heritage/environmental-compliance/environment",
+      "expected_files": [
+        {
+          "name": "SPI-Landfill-Gas-Monitoring-March-2025.pdf",
+          "format": "PDF",
+          "publisher_size_label": null,
+          "download_url": "https://www.transport.nsw.gov.au/system/files/media/documents/2025/SPI-Landfill-Gas-Monitoring-March-2025.pdf",
+          "version": null,
+          "request_status": "NOT_REQUESTED",
+          "downloaded": false,
+          "sha256": null
+        }
+      ],
+      "granularity": "Monitoring-point/report candidate inferred from indexed title, not a verified mass-flow series",
+      "field_evidence": [
+        [
+          "Licence number / report month",
+          "REPORTED"
+        ],
+        [
+          "Gas concentration / sampling columns",
+          "UNKNOWN"
+        ]
+      ],
+      "time": {
+        "period": "March 2025 title only",
+        "timezone": null,
+        "dst": null,
+        "interval": null,
+        "timestamp_semantics": null
+      },
+      "qc": {
+        "method": null,
+        "calibration": null,
+        "flags": null,
+        "missingness": "UNKNOWN"
+      },
+      "licence": {
+        "status": "LICENCE_UNVERIFIED",
+        "instrument": null,
+        "grantor": null,
+        "original_url": null,
+        "redistribution": "UNKNOWN_DO_NOT_COPY",
+        "derivative_use": "UNKNOWN",
+        "attribution": "UNKNOWN",
+        "noncommercial_limit": "UNKNOWN",
+        "api_terms": "NOT_ASSESSED_NO_API_USED",
+        "privacy": "Not assessed after STOP; no Council/private source accessed",
+        "geographic_sensitivity": "UNKNOWN",
+        "retention": "UNKNOWN"
+      },
+      "joinability": "UNKNOWN; licence/monitoring-point identifiers must not be mistaken for material-batch identities.",
+      "status": "BLOCKED",
+      "method_priority": null,
+      "gates": {
+        "G1": {
+          "status": "UNKNOWN",
+          "reason": "Licence unverified; no reuse authority inferred from publication.",
+          "source_ids": [
+            "S04",
+            "S05"
+          ]
+        },
+        "G2": {
+          "status": "BLOCKED",
+          "reason": "Directory returned HTTP403; did not request PDFs or alternate source.",
+          "source_ids": [
+            "S04"
+          ]
+        },
+        "G3": {
+          "status": "UNKNOWN",
+          "reason": "Search title only; current version/time/units unverified.",
+          "source_ids": [
+            "S05"
+          ]
+        },
+        "G4": {
+          "status": "UNKNOWN",
+          "reason": "No batch/facility chain verified after STOP.",
+          "source_ids": [
+            "S04"
+          ]
+        },
+        "G5": {
+          "status": "UNKNOWN",
+          "reason": "Residual/energy boundaries unassessed.",
+          "source_ids": [
+            "S04"
+          ]
+        },
+        "G6": {
+          "status": "UNKNOWN",
+          "reason": "QC and calibration unassessed.",
+          "source_ids": [
+            "S04"
+          ]
+        },
+        "G7": {
+          "status": "UNKNOWN",
+          "reason": "An EPL is not a credit project or counterfactual.",
+          "source_ids": [
+            "S05"
+          ]
+        }
+      }
+    },
+    {
+      "assessment_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "actual_rows": null,
+      "actual_missing_fraction": null,
+      "raw_file_sha256": null,
+      "raw_access_tested": false,
+      "admitted": false,
+      "full_chain_suitable": false,
+      "id": "C03",
+      "name": "European anaerobic digestion whole-site methane-loss research",
+      "assessment_depth": "DETAILED",
+      "source_ids": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "owner": "Wechselberger, Hrad, Bühler, Kupper, Spangl, Fredenslund, Huber-Humer, Scheutz; Zenodo publisher",
+      "jurisdiction": "European facilities; exact site coverage not verified",
+      "publication_date": "2024-11-14",
+      "last_update": "2024-11-21",
+      "version": "Discovered v1 14165793; latest-link metadata resolves 14197882; file-version comparison NOT_PERFORMED",
+      "landing_url": "https://zenodo.org/records/14197882",
+      "expected_files": [
+        {
+          "name": "Data.csv",
+          "format": "CSV",
+          "publisher_size_label": "91.1 kB",
+          "download_url": null,
+          "version": "14165793 v1 only",
+          "request_status": "NOT_REQUESTED",
+          "downloaded": false,
+          "sha256": null
+        },
+        {
+          "name": "Glossary.csv",
+          "format": "CSV",
+          "publisher_size_label": "4.6 kB",
+          "download_url": null,
+          "version": "14165793 v1 only",
+          "request_status": "NOT_REQUESTED",
+          "downloaded": false,
+          "sha256": null
+        }
+      ],
+      "granularity": "Publisher describes 135 facilities / 155 plant-condition rows; these are declared, not counted from files",
+      "field_evidence": [
+        [
+          "Plant characteristics / operating conditions",
+          "REPORTED"
+        ],
+        [
+          "Methane-loss factors (% methane produced; kg CH4 per population equivalent per year)",
+          "CALCULATED"
+        ]
+      ],
+      "time": {
+        "period": null,
+        "timezone": null,
+        "dst": null,
+        "interval": "Plant/condition aggregation; measurement windows UNKNOWN",
+        "timestamp_semantics": null
+      },
+      "qc": {
+        "method": "Landing keywords: tracer gas dispersion / inverse dispersion; per-record method lineage UNKNOWN",
+        "calibration": null,
+        "flags": "Operating-condition and post-analysis flags described; exact columns uninspected",
+        "missingness": "Selection/exclusion described; actual null rates UNKNOWN"
+      },
+      "licence": {
+        "status": "LICENCE_UNVERIFIED",
+        "instrument": null,
+        "grantor": null,
+        "original_url": null,
+        "attempted_url": "https://zenodo.org/api/records/14197882",
+        "redistribution": "UNKNOWN",
+        "derivative_use": "UNKNOWN",
+        "attribution": "Cite authors and exact DOI; cannot replace missing licence",
+        "noncommercial_limit": "UNKNOWN",
+        "api_terms": "Metadata endpoint inaccessible; no API policy inferred",
+        "privacy": "Site-level restrictions and secondary-data rights UNKNOWN",
+        "geographic_sensitivity": "UNKNOWN",
+        "retention": "UNKNOWN"
+      },
+      "joinability": "Mixed facilities and primary/secondary records; condition pairs do not establish the AWT batch/cohort or independent baseline.",
+      "status": "BLOCKED",
+      "method_priority": 2,
+      "gates": {
+        "G1": {
+          "status": "UNKNOWN",
+          "reason": "Rights heading blank in rendered metadata; API unavailable; do not assume Zenodo means CC BY.",
+          "source_ids": [
+            "S06",
+            "S07",
+            "S08"
+          ]
+        },
+        "G2": {
+          "status": "NOT_TESTED",
+          "reason": "Files listed at v1 only; current-version bytes/access not tested.",
+          "source_ids": [
+            "S06",
+            "S07"
+          ]
+        },
+        "G3": {
+          "status": "PARTIAL",
+          "reason": "DOIs and some factor units traceable; record versions differ and exact temporal windows unknown.",
+          "source_ids": [
+            "S06",
+            "S07"
+          ]
+        },
+        "G4": {
+          "status": "FAIL",
+          "reason": "Cross-plant aggregate conditions do not identify a common 1000t organic-waste cohort.",
+          "source_ids": [
+            "S06"
+          ]
+        },
+        "G5": {
+          "status": "UNKNOWN",
+          "reason": "Full digestate carbon/endpoints and energy supply/displacement not demonstrated.",
+          "source_ids": [
+            "S06"
+          ]
+        },
+        "G6": {
+          "status": "PARTIAL",
+          "reason": "Methods/operating conditions named, but instrument traceability and calibration records unverified.",
+          "source_ids": [
+            "S06"
+          ]
+        },
+        "G7": {
+          "status": "UNKNOWN",
+          "reason": "No Australian credit registration, legal counterfactual or unit-ownership evidence.",
+          "source_ids": [
+            "S06"
+          ]
+        }
+      }
+    },
+    {
+      "assessment_date": "2026-11-24",
+      "mode": "READ_ONLY",
+      "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+      "actual_rows": null,
+      "actual_missing_fraction": null,
+      "raw_file_sha256": null,
+      "raw_access_tested": false,
+      "admitted": false,
+      "full_chain_suitable": false,
+      "id": "C04",
+      "name": "California dairy before/after anaerobic digester study",
+      "assessment_depth": "DETAILED",
+      "source_ids": [
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "owner": "Michael Rodriguez and Francesca Hopkins; Dryad publisher",
+      "jurisdiction": "US-California; site identity and coordinates intentionally removed",
+      "publication_date": "2026-02-19",
+      "last_update": null,
+      "version": "Dryad DOI10.5061/dryad.ht76hdrtc; displayed Feb19 2026 version",
+      "landing_url": "https://datadryad.org/dataset/doi:10.5061/dryad.ht76hdrtc",
+      "expected_files": [
+        {
+          "name": "All_Receptor_Meteorology_and_CH4_Mole_Fraction_Data.csv",
+          "format": "CSV",
+          "publisher_size_label": "37.97 KB",
+          "download_url": null,
+          "version": null,
+          "request_status": "NOT_REQUESTED",
+          "downloaded": false,
+          "sha256": null
+        },
+        {
+          "name": "CH4_Emissions_Results.csv",
+          "format": "CSV",
+          "publisher_size_label": "735 B",
+          "download_url": null,
+          "version": null,
+          "request_status": "NOT_REQUESTED",
+          "downloaded": false,
+          "sha256": null
+        },
+        {
+          "name": "README.md",
+          "format": "Markdown",
+          "publisher_size_label": "12.75 KB",
+          "download_url": null,
+          "version": null,
+          "request_status": "NOT_REQUESTED",
+          "downloaded": false,
+          "sha256": null
+        },
+        {
+          "name": "All_Instantaneous_Gridded_CH4_Mole_Fraction_Data.csv",
+          "format": "CSV",
+          "publisher_size_label": "11.39 MB",
+          "download_url": null,
+          "version": null,
+          "request_status": "NOT_REQUESTED",
+          "downloaded": false,
+          "sha256": null
+        }
+      ],
+      "publisher_total_size_label": "11.55 MB; other listed workbooks excluded from proposed next step",
+      "granularity": "Nine campaigns described by publisher; receptor averages and model-derived campaign mass rates; actual rows UNKNOWN",
+      "field_evidence": [
+        [
+          "Instantaneous mobile CH4 measurement channel",
+          "DIRECT_MEASURED"
+        ],
+        [
+          "Receptor CH4 ppm / Ubar / Wbar / Tbar / n averages and summaries",
+          "CALCULATED"
+        ],
+        [
+          "CH4 / Low.CH4 / High.CH4 in mass-rate output",
+          "CALCULATED"
+        ],
+        [
+          "Campaign / Month / Year / TIMESTAMP / animal counts",
+          "REPORTED"
+        ],
+        [
+          "MOLength unit label",
+          "UNKNOWN"
+        ]
+      ],
+      "time": {
+        "period": "Pre/post campaign months and years; exact bounds UNKNOWN",
+        "timezone": null,
+        "dst": null,
+        "interval": "Averaging windows not established; n counts reported",
+        "timestamp_semantics": "TIMESTAMP is end of receptor average per README; duration and clock synchronization UNKNOWN"
+      },
+      "qc": {
+        "method": "Mobile concentration observations plus dispersion-derived mass flux, not direct mass-flow measurements",
+        "calibration": null,
+        "flags": null,
+        "missingness": "README defines n/a as unmeasured/unrecorded; some workbook nulls intentional; counts UNKNOWN",
+        "weather_exception": "June2022 meteorology from Visalia Airport rather than site",
+        "unit_red_flag": "README calls MOLength unitless; dimensional convention needs confirmation before any use"
+      },
+      "licence": {
+        "status": "CC0_PLATFORM_POLICY_SUPPORTED_NOT_BYTE_VERIFIED",
+        "instrument": "CC0-1.0",
+        "grantor": "Submitters via Dryad Terms1(a); independent ownership audit not performed",
+        "original_url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.en",
+        "binding_url": "https://datadryad.org/terms",
+        "redistribution": "Copyright reuse permitted under CC0; privacy and other rights unaffected; NO redistribution performed",
+        "derivative_use": "Copyright derivatives allowed; do not imply authors endorse conclusions",
+        "attribution": "CC0 does not impose attribution as copyright condition; scientific citation/DOI retained",
+        "noncommercial_limit": "None under CC0",
+        "api_terms": "No API used or permission inferred for automation; record Terms checked",
+        "privacy": "Do not reconstruct removed dairy identity/coordinates or join to identify it",
+        "geographic_sensitivity": "Coordinates suppressed; retain suppression",
+        "retention": "No CC0 retention limit identified; no raw data held"
+      },
+      "joinability": "Within one anonymized facility pre/post according to authors, not same material batch; different months/years and weather provenance prevent naive causal comparison.",
+      "status": "PARTIAL_METHOD_ONLY",
+      "method_priority": 1,
+      "gates": {
+        "G1": {
+          "status": "SUPPORTED_METADATA",
+          "reason": "Dryad dataset publication policy supplies CC0 basis; no independent rights or file-specific verification.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ]
+        },
+        "G2": {
+          "status": "NOT_TESTED",
+          "reason": "Public catalogue and named files visible; download URLs unresolved in available HTML and file access untested.",
+          "source_ids": [
+            "S09"
+          ]
+        },
+        "G3": {
+          "status": "PARTIAL",
+          "reason": "Version, named fields and some units/time conventions documented; timezone, DST, averaging duration and unit ambiguity unresolved.",
+          "source_ids": [
+            "S09"
+          ]
+        },
+        "G4": {
+          "status": "FAIL",
+          "reason": "Anonymized manure facility pre/post is not the same 1000t mixed-organics cohort or Australian legal counterfactual.",
+          "source_ids": [
+            "S09"
+          ]
+        },
+        "G5": {
+          "status": "UNKNOWN",
+          "reason": "Complete residual mass/carbon, disposal, N2O and metered energy chain absent from reviewed metadata.",
+          "source_ids": [
+            "S09"
+          ]
+        },
+        "G6": {
+          "status": "PARTIAL",
+          "reason": "Methods, uncertainty outputs, n/a conventions and weather substitution documented; raw QC/calibration certificates absent.",
+          "source_ids": [
+            "S09"
+          ]
+        },
+        "G7": {
+          "status": "UNKNOWN",
+          "reason": "No Australian project-period, statutory method or ownership/overlap chain established.",
+          "source_ids": [
+            "S09"
+          ]
+        }
+      }
+    }
+  ]
+}
