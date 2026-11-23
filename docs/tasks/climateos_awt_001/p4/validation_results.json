@@ -1,0 +1,57 @@
+{
+  "assessment_date": "2026-11-24",
+  "checked_at_utc": "2026-11-23T20:48:23.887118+00:00",
+  "mode": "READ_ONLY",
+  "raw_data_status": "NO_RAW_DATA_DOWNLOADED",
+  "status": "PASS_METADATA_PACKAGE_ONLY",
+  "checkout_head_at_check": "9aea387a4261b913163b3be3197597089d9e9414",
+  "frozen_baseline": "9aea387a4261b913163b3be3197597089d9e9414",
+  "candidate_count": 4,
+  "detailed_count": 3,
+  "passport_entity_types_mapped": 9,
+  "source_records": 15,
+  "markdown_reports": 11,
+  "local_links_checked": 42,
+  "p4_files_checked": 16,
+  "frozen_manifest_entries_checked": 55,
+  "inherited_component_hashes_checked": 5,
+  "changed_tracked_paths": 16,
+  "untracked_paths": 0,
+  "only_p4_changes": true,
+  "sensitive_patterns": "NO_MATCH",
+  "negative_metadata_guards": [
+    {
+      "case": "candidate cap",
+      "result": "REJECTED",
+      "reason": "CANDIDATE_CAP"
+    },
+    {
+      "case": "science gate",
+      "result": "REJECTED",
+      "reason": "SCIENCE_GATE"
+    },
+    {
+      "case": "false raw hash",
+      "result": "REJECTED",
+      "reason": "FALSE_RAW_EVIDENCE"
+    },
+    {
+      "case": "unresolved source",
+      "result": "REJECTED",
+      "reason": "SOURCE_REF"
+    },
+    {
+      "case": "incomplete approval",
+      "result": "REJECTED",
+      "reason": "INCOMPLETE_CHAIN_APPROVAL"
+    }
+  ],
+  "numerical_model_runs": 0,
+  "raw_file_checks": "NOT_PERFORMED_NOT_AUTHORIZED",
+  "decision": "NO_SUITABLE_DATASET",
+  "science": "PENDING",
+  "real_data": "DATA_NOT_READY",
+  "credit": "NOT_DETERMINED",
+  "ci": "REMOTE_STATUS_REPORTED_SEPARATELY_NOT_CLAIMED_PASS",
+  "limitations": "Hashes cover frozen authored files, not raw data or scientific truth."
+}
