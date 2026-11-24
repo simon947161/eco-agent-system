@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-24",
+  "precise_request_times": "NOT_CAPTURED",
+  "entries": [
+    {
+      "source_id": "D03",
+      "url": "https://www.act.waterwatch.org.au/data/chip-reports",
+      "action": "local urllib HTML read",
+      "outcome": "HTTP403",
+      "decision": "STOP_NO_RETRY",
+      "note": "Web-index metadata was available before local403; no blocked catalogue retry",
+      "request_utc": null
+    },
+    {
+      "source_id": "L10",
+      "url": "https://www.act.waterwatch.org.au/__data/assets/pdf_file/0006/2196051/catchment-health-indicator-program-report-2022.pdf",
+      "action": "web open",
+      "outcome": "TOOL_CONTENT_LENGTH_TOO_LARGE",
+      "decision": "STOP",
+      "note": "11967954-byte published PDF exceeds tool limit; not raw-data acquisition",
+      "request_utc": null
+    },
+    {
+      "source_id": "L11",
+      "url": "https://www.act.waterwatch.org.au/__data/assets/pdf_file/0007/2418352/CHIP-2023_FINAL.pdf",
+      "action": "web open",
+      "outcome": "TOOL_CONTENT_LENGTH_TOO_LARGE",
+      "decision": "STOP",
+      "note": "15921390-byte published PDF exceeds tool limit",
+      "request_utc": null
+    },
+    {
+      "source_id": "D02",
+      "url": "https://www.epa.nsw.gov.au/prpoeoapp/Detail.aspx?id=6368&instid=6368&option=licence&prp=no&range=POEO+licence&searchrange=licence&status=Issued",
+      "action": "web open",
+      "outcome": "CACHE_MISS",
+      "decision": "STOP",
+      "note": "No HTTP403 inferred; no licence fetched",
+      "request_utc": null
+    },
+    {
+      "source_id": "L14",
+      "url": "https://www.water.dcceew.nsw.gov.au/sites/default/files/2025-08/Numeralla%20West%20Water%20Source%20Report%20Card%20%28PDF%2C%201408.66%20KB%29.pdf",
+      "action": "web open incl one ordinary follow-up",
+      "outcome": "CACHE_MISS",
+      "decision": "STOP",
+      "note": "Official indexed metadata only; no further attempts",
+      "request_utc": null
+    },
+    {
+      "source_id": "L12",
+      "url": "https://www.act.waterwatch.org.au/__data/assets/pdf_file/0006/2827986/Reach_report_cards_2024.pdf",
+      "action": "web screenshot pages21/28",
+      "outcome": "NO_USABLE_IMAGE_RETURNED_AND_PAGE28_CACHE_MISS",
+      "decision": "STOP_VISUAL_CLAIM",
+      "note": "Text read only; no screenshots persisted or used as visual evidence",
+      "request_utc": null
+    },
+    {
+      "source_id": "L02",
+      "url": "https://doi.org/10.1016/j.envpol.2024.124695",
+      "action": "web DOI open",
+      "outcome": "UPSTREAM500_OR_TOOL_FAILURE",
+      "decision": "STOP_FULL_TEXT",
+      "note": "Official PubMed indexed metadata read; no alternative full-text download",
+      "request_utc": null
+    },
+    {
+      "source_id": "L03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24369993/",
+      "action": "web open and one format follow-up",
+      "outcome": "NO_USABLE_BODY_THEN_TOOL_FAILURE",
+      "decision": "STOP_ENDPOINT",
+      "note": "Publisher ACS indexed abstract separately used; no raw supplement",
+      "request_utc": null
+    },
+    {
+      "source_id": "D04",
+      "url": "https://api-portal.waternsw.com.au/",
+      "action": "public portal documentation",
+      "outcome": "AUTH_REQUIRED",
+      "decision": "STOP_BEFORE_API",
+      "note": "No API call, account, key or bypass",
+      "request_utc": null
+    }
+  ]
+}
