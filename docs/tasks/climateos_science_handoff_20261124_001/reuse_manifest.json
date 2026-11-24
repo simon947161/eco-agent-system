@@ -1,0 +1,245 @@
+{
+  "basis": "SHA256 of exact existing Git blob bytes, not remote observational files",
+  "main_baseline": "9eb7577e145e76161f9f1cd8509348b19c2904cc",
+  "files": [
+    {
+      "commit": "987cc1dc7170204e5eab3d1750590ba463ea9d08",
+      "path": "cczps_lite/qgis_local_spatial_foundation/hydrology_contract.py",
+      "sha256": "cd09280c0f0bb983915a2c367c15b529703f381593dfe99d4abb293cf527ed48",
+      "bytes": 4199,
+      "reuse": "METADATA_CONTRACT_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/987cc1dc7170204e5eab3d1750590ba463ea9d08/cczps_lite/qgis_local_spatial_foundation/hydrology_contract.py",
+      "functions": [
+        "hydrology_size_limits"
+      ],
+      "imports": [
+        "from __future__ import annotations",
+        "from pathlib import Path"
+      ],
+      "execution": "NOT_IMPORTED_NOT_EXECUTED"
+    },
+    {
+      "commit": "987cc1dc7170204e5eab3d1750590ba463ea9d08",
+      "path": "cczps_lite/qgis_local_spatial_foundation/hydrology_pack.py",
+      "sha256": "269e3201d035346eb583d5bb9eaa4b8188837ed28e8327483677ade7ef53ef03",
+      "bytes": 33473,
+      "reuse": "METADATA_CONTRACT_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/987cc1dc7170204e5eab3d1750590ba463ea9d08/cczps_lite/qgis_local_spatial_foundation/hydrology_pack.py",
+      "functions": [
+        "_repo_root",
+        "_utc_now",
+        "_sha256",
+        "_ensure_new_file",
+        "_assert_confined",
+        "_write_json_new",
+        "_directory_size",
+        "_layout",
+        "_workspace_sizes",
+        "load_source_registry",
+        "_query_parameters",
+        "_coordinate_extent",
+        "_validate_geojson",
+        "retrieve",
+        "_osgeo",
+        "_spatial_reference",
+        "_clip_geometry",
+        "_copy_clipped",
+        "derive",
+        "_add_vector",
+        "_hydrology_qgis_api",
+        "build_project",
+        "verify",
+        "plan",
+        "main"
+      ],
+      "imports": [
+        "from __future__ import annotations",
+        "import argparse",
+        "from datetime import datetime, timezone",
+        "import hashlib",
+        "import json",
+        "import os",
+        "from pathlib import Path",
+        "import sys",
+        "from urllib.parse import urlencode",
+        "from urllib.request import Request, urlopen",
+        "import zipfile",
+        "from .contract import PROJECT_LAYER_GROUPS, SCIENTIFIC_CONCLUSION, WATER_INFO_LAYER",
+        "from .hydrology_contract import AUTHORIZED_LONGITUDE_LATITUDE_EXTENT, DERIVED_FILES, DERIVED_HYDROLOGY_LIMIT, HYDROLOGY_ATTRIBUTION, HYDROLOGY_BOOKMARKS, HYDROLOGY_FEATURE_SCALE, HYDROLOGY_LAYER_NAMES, HYDROLOGY_LICENCE, HYDROLOGY_METADATA_DATE, HYDROLOGY_PRODUCT, HYDROLOGY_PROJECT_CRS, HYDROLOGY_PROJECT_FILENAME, HYDROLOGY_PUBLISHER, HYDROLOGY_SERVICE, HYDROLOGY_SOURCE_CRS, HYDROLOGY_SOURCES, HYDROLOGY_VERSION, HYDROLOGY_WORKSPACE_DIRECTORIES, NETWORK_RETRIEVAL_LIMIT, RAW_HYDROLOGY_LIMIT, STACKED_PR_BASE, TERRAIN_BASE_HEAD, WORKSPACE_LIMIT, hydrology_size_limits",
+        "from .project_builder import SpatialProjectError, _new_qgis_application",
+        "from .terrain_contract import HILLSHADE_FILENAME, PROJECTED_DEM_FILENAME, SLOPE_FILENAME, STUDY_EXTENT_FILENAME, STUDY_EXTENT_MANIFEST, TERRAIN_LAYER_NAMES, TERRAIN_PROJECT_FILENAME",
+        "from .terrain_pack import _terrain_qgis_api",
+        "from .workspace import SpatialWorkspaceError, ensure_local_workspace",
+        "from osgeo import ogr, osr",
+        "from qgis.core import QgsLineSymbol"
+      ],
+      "execution": "NOT_IMPORTED_NOT_EXECUTED"
+    },
+    {
+      "commit": "987cc1dc7170204e5eab3d1750590ba463ea9d08",
+      "path": "cczps_lite/qgis_local_spatial_foundation/hydrology_source_registry.json",
+      "sha256": "b45e918d5d945a538da48ac286ec9b82257b0b68e66708508b738b42f5d99f1a",
+      "bytes": 2386,
+      "reuse": "METADATA_CONTRACT_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/987cc1dc7170204e5eab3d1750590ba463ea9d08/cczps_lite/qgis_local_spatial_foundation/hydrology_source_registry.json"
+    },
+    {
+      "commit": "2ec66ae41ae2e1d4a0f1aaa92aa98c9f0ff4c5b0",
+      "path": "docs/research/carbonos/batch-d3/DATA_ADMISSION_REPORT.md",
+      "sha256": "df88d73d22b9a3be0976a7ab5b7f23357655c4b6a650bc2b6b54e87820217f0b",
+      "bytes": 2321,
+      "reuse": "PRESERVE_DATA_NOT_READY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/2ec66ae41ae2e1d4a0f1aaa92aa98c9f0ff4c5b0/docs/research/carbonos/batch-d3/DATA_ADMISSION_REPORT.md"
+    },
+    {
+      "commit": "2ec66ae41ae2e1d4a0f1aaa92aa98c9f0ff4c5b0",
+      "path": "docs/research/carbonos/INDEX.md",
+      "sha256": "9748250abf1f2128323292bd6b7b12710bbe8811a4b03c07e6cada075a1dbc42",
+      "bytes": 1524,
+      "reuse": "LINK_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/2ec66ae41ae2e1d4a0f1aaa92aa98c9f0ff4c5b0/docs/research/carbonos/INDEX.md"
+    },
+    {
+      "commit": "77a35e2723372a290579e4549a86781e2be65c04",
+      "path": "docs/tasks/climateos_au_landfill_methane_methods_001/mass_balance.py",
+      "sha256": "f1eeb38baaa4799b65168198542fe0eb1683f0e60d8b56973fa2d31e1476d79b",
+      "bytes": 7495,
+      "reuse": "NOT_REUSED_NUMERICALLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/77a35e2723372a290579e4549a86781e2be65c04/docs/tasks/climateos_au_landfill_methane_methods_001/mass_balance.py",
+      "functions": [
+        "evaluate",
+        "generation_from_decomposed_carbon",
+        "flow_mass",
+        "flux_chamber",
+        "operation_hour",
+        "validate_graph",
+        "fixture"
+      ],
+      "imports": [
+        "from pathlib import Path",
+        "import sys",
+        "from cczps_lite.integration import physics_validation as p",
+        "from cczps_lite.integration.methane_knowledge_engine import conserve, require"
+      ],
+      "execution": "NOT_IMPORTED_NOT_EXECUTED"
+    },
+    {
+      "commit": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+      "path": "docs/tasks/climateos_global_method_evidence_ecochain_001/reviewer.py",
+      "sha256": "a5e4de8ed319424937da391a66b73d1b4d628b721b2cf6dd07f394262eeccfcd",
+      "bytes": 12039,
+      "reuse": "CONCEPT_ONLY_NOT_IMPORTED",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/ae1050a621ac794e447f9ac047865d90b2f04b03/docs/tasks/climateos_global_method_evidence_ecochain_001/reviewer.py",
+      "functions": [
+        "canonical",
+        "digest",
+        "load",
+        "schema_check",
+        "check_sources",
+        "review",
+        "verify_events",
+        "append_event",
+        "main"
+      ],
+      "imports": [
+        "from pathlib import Path",
+        "import hashlib",
+        "import importlib.util",
+        "import json",
+        "import math",
+        "import sys",
+        "from cczps_lite.integration import methane_knowledge_engine as core"
+      ],
+      "execution": "NOT_IMPORTED_NOT_EXECUTED"
+    },
+    {
+      "commit": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+      "path": "docs/tasks/climateos_global_method_evidence_ecochain_001/EXISTING_ECOCHAIN_AUDIT.md",
+      "sha256": "9cccb30c0db7962539c3276302f93462a1078350f1bdc89432af4776960216ee",
+      "bytes": 4639,
+      "reuse": "REFERENCE_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/ae1050a621ac794e447f9ac047865d90b2f04b03/docs/tasks/climateos_global_method_evidence_ecochain_001/EXISTING_ECOCHAIN_AUDIT.md"
+    },
+    {
+      "commit": "ae1050a621ac794e447f9ac047865d90b2f04b03",
+      "path": "docs/tasks/climateos_client_ai_science_integration_001/HANDOFF_PROTOCOL.md",
+      "sha256": "51f22513f8ff3c3b9e75c350d1be08754a6255fea8d85ff631cb419365ebc3f1",
+      "bytes": 2829,
+      "reuse": "EXISTING_HUMAN_TRIGGERED_PROTOCOL",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/ae1050a621ac794e447f9ac047865d90b2f04b03/docs/tasks/climateos_client_ai_science_integration_001/HANDOFF_PROTOCOL.md"
+    },
+    {
+      "commit": "9eb7577e145e76161f9f1cd8509348b19c2904cc",
+      "path": "cczps_lite/contracts/bondo_evidence_passport.schema.json",
+      "sha256": "3a292ca8597ae1f12193e02f5bcfb2b1e8f30ef76683e3ca7bf093bae46f3ce1",
+      "bytes": 5089,
+      "reuse": "SEMANTIC_FIELDS_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9eb7577e145e76161f9f1cd8509348b19c2904cc/cczps_lite/contracts/bondo_evidence_passport.schema.json"
+    },
+    {
+      "commit": "9eb7577e145e76161f9f1cd8509348b19c2904cc",
+      "path": "LICENSE",
+      "sha256": "895107305b5af220c90dd8a489596b3a2017e776589798db65c2a678093ccc3f",
+      "bytes": 1064,
+      "reuse": "CODE_LICENCE_NOT_DATA_LICENCE",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/9eb7577e145e76161f9f1cd8509348b19c2904cc/LICENSE"
+    },
+    {
+      "commit": "75efe58b2443faf22446c6209216e0ef5cf56784",
+      "path": "docs/tasks/climateos_awt_001/p4/REVIEW_REQUEST.md",
+      "sha256": "ade804d6405cf2b49498c992308dd6f2ec72154ff5fa4f7d95247b44462a6aeb",
+      "bytes": 1710,
+      "reuse": "FROZEN_REFERENCE_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/75efe58b2443faf22446c6209216e0ef5cf56784/docs/tasks/climateos_awt_001/p4/REVIEW_REQUEST.md"
+    },
+    {
+      "commit": "75efe58b2443faf22446c6209216e0ef5cf56784",
+      "path": "docs/tasks/climateos_awt_001/p4/NEXT_SESSION.md",
+      "sha256": "c0841f6eb9ae90557a33634deb5fd9a8fd0b9d723f5ff6a24433c9ecbd966f18",
+      "bytes": 2050,
+      "reuse": "FROZEN_REFERENCE_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/75efe58b2443faf22446c6209216e0ef5cf56784/docs/tasks/climateos_awt_001/p4/NEXT_SESSION.md"
+    },
+    {
+      "commit": "75efe58b2443faf22446c6209216e0ef5cf56784",
+      "path": "docs/tasks/climateos_awt_001/p4/candidate_register.json",
+      "sha256": "0a5d7235c8b805357ef9d9e9f0c5e30c6384b28d7eaf600a343b19fc847d918a",
+      "bytes": 22051,
+      "reuse": "FROZEN_REFERENCE_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/75efe58b2443faf22446c6209216e0ef5cf56784/docs/tasks/climateos_awt_001/p4/candidate_register.json"
+    },
+    {
+      "commit": "75efe58b2443faf22446c6209216e0ef5cf56784",
+      "path": "docs/tasks/climateos_awt_001/p4/LICENCE_AND_PROVENANCE_AUDIT.md",
+      "sha256": "ae0152e90421d52739097f3e0d58936b03b6e3e2f0961c966d6358da4b45ccb6",
+      "bytes": 3816,
+      "reuse": "FROZEN_REFERENCE_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/75efe58b2443faf22446c6209216e0ef5cf56784/docs/tasks/climateos_awt_001/p4/LICENCE_AND_PROVENANCE_AUDIT.md"
+    },
+    {
+      "commit": "75efe58b2443faf22446c6209216e0ef5cf56784",
+      "path": "docs/tasks/climateos_awt_001/p4/validation_results.json",
+      "sha256": "5358dcca66cfde681717b69c0ad5ac7f88b5289077c3cdcba1150e087aedc36c",
+      "bytes": 1671,
+      "reuse": "FROZEN_REFERENCE_ONLY",
+      "url": "https://github.com/simon947161/eco-agent-system/blob/75efe58b2443faf22446c6209216e0ef5cf56784/docs/tasks/climateos_awt_001/p4/validation_results.json"
+    }
+  ],
+  "naturehash": {
+    "repository": "simon947161/naturehash-lab",
+    "path": "README.md",
+    "git_blob": "9eb5bc0a1ee22141f1058a847c13f6dae6b2ce38",
+    "status": "v0.1 conceptual; not a finished cryptographic algorithm; runtime REUSE_UNVERIFIED",
+    "retrieved_as": "GitHub connector UTF8 text; no raw observational files"
+  },
+  "term_resolution": {
+    "Mizani": {
+      "github_queries": 2,
+      "status": "IDENTITY_UNVERIFIED"
+    },
+    "IWT": {
+      "github_queries": 2,
+      "status": "IDENTITY_UNVERIFIED"
+    }
+  }
+}

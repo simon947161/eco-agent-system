@@ -1,0 +1,104 @@
+{
+  "status": "LOCAL_METADATA_QA_PASS",
+  "run_utc": "2026-11-24T07:39:52.663072+00:00",
+  "baseline": "9eb7577e145e76161f9f1cd8509348b19c2904cc",
+  "checked_head_before_commit": "9eb7577e145e76161f9f1cd8509348b19c2904cc",
+  "checks": [
+    {
+      "check": "candidate and detailed budgets",
+      "result": "PASS"
+    },
+    {
+      "check": "publication budget and unique ids",
+      "result": "PASS"
+    },
+    {
+      "check": "term-resolution query budgets",
+      "result": "PASS"
+    },
+    {
+      "check": "independent science/data gates",
+      "result": "PASS"
+    },
+    {
+      "check": "candidate structure and no raw/admission claims",
+      "result": "PASS"
+    },
+    {
+      "check": "open-grant assertions have source URL",
+      "result": "PASS"
+    },
+    {
+      "check": "taskbook exact bytes",
+      "result": "PASS"
+    },
+    {
+      "check": "12 canonical screens",
+      "result": "PASS"
+    },
+    {
+      "check": "12 preview screens and local assets only",
+      "result": "PASS"
+    },
+    {
+      "check": "negative: unresolved or reversed COO300 order rejected",
+      "result": "PASS"
+    },
+    {
+      "check": "negative: unknown geometry rejected",
+      "result": "PASS"
+    },
+    {
+      "check": "control: hypothetical confirmed metadata label accepted",
+      "result": "PASS"
+    },
+    {
+      "check": "negative: NO3- versus NO3-N rejected without conversion",
+      "result": "PASS"
+    },
+    {
+      "check": "negative: mg/L versus ug/L rejected without conversion",
+      "result": "PASS"
+    },
+    {
+      "check": "negative: unknown basis rejected",
+      "result": "PASS"
+    },
+    {
+      "check": "control: identical fully specified measurement metadata accepted",
+      "result": "PASS"
+    },
+    {
+      "check": "no raw file types in new package",
+      "result": "PASS"
+    },
+    {
+      "check": "internal links exist",
+      "result": "PASS"
+    },
+    {
+      "check": "JSON syntax and Python AST parsed",
+      "result": "PASS"
+    },
+    {
+      "check": "16 exact existing source blobs unchanged",
+      "result": "PASS"
+    },
+    {
+      "check": "diff only isolated task package",
+      "result": "PASS"
+    }
+  ],
+  "counts": {
+    "publications": 14,
+    "portals": 9,
+    "detailed": 5,
+    "internal_link_occurrences": 71,
+    "unique_external_urls": 38,
+    "frozen_blob_checks": 16
+  },
+  "scientific_runs": 0,
+  "raw_files_downloaded": 0,
+  "scope_limitation": "Metadata QA, not source-server availability, independent scientific validation, or an exhaustive audit of host network history",
+  "ci": "NOT_TRIGGERED_UNTIL_SEPARATELY_VERIFIED_REMOTE"
+}
