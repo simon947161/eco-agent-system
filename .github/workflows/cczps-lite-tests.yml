@@ -4,17 +4,52 @@ on:
   push:
     paths:
       - "cczps_lite/**"
+      # Static-only edits use the presentation checks; do not regenerate scenarios.
+      - "!cczps_lite/dashboard/science/**"
+      - "!cczps_lite/dashboard/index.html"
       - "tests/**"
       - ".github/workflows/cczps-lite-tests.yml"
   pull_request:
     paths:
       - "cczps_lite/**"
+      # Static-only edits use the presentation checks; do not regenerate scenarios.
+      - "!cczps_lite/dashboard/science/**"
+      - "!cczps_lite/dashboard/index.html"
       - "tests/**"
       - ".github/workflows/cczps-lite-tests.yml"
   workflow_dispatch:
 
 jobs:
+  classify-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      run_core: ${{ steps.paths.outputs.run_core }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: paths
+        name: Keep presentation-only changes out of scenario execution
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE: ${{ github.event.before }}
+        run: |
+          python - <<'PY'
+          import os, subprocess
+          base = os.environ.get('PR_BASE') or os.environ.get('PUSH_BEFORE')
+          if not base or set(base) == {'0'}:
+              base = 'origin/main'
+          paths = subprocess.check_output(['git', 'diff', '--name-only', base, 'HEAD'], text=True).splitlines()
+          core_changed = any((p.startswith('cczps_lite/') and not p.startswith('cczps_lite/dashboard/')) or p.startswith('tests/') for p in paths)
+          run_core = os.environ['EVENT_NAME'] == 'workflow_dispatch' or core_changed
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('run_core=' + str(run_core).lower() + '\n')
+          print('Core scenarios: ' + ('required by core changes/manual dispatch' if run_core else 'skipped: presentation/docs/workflow-only change'))
+          PY
   cczps-lite-tests:
+    needs: classify-changes
+    if: needs.classify-changes.outputs.run_core == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository

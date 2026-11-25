@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-25T20:27:41.480Z",
+  "scope": "presentation only; no science execution",
+  "browser": "157.0.8103.51",
+  "devices": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobile_emulation": false,
+      "physical_device": false,
+      "routes_checked": 43,
+      "collapsed_and_expanded": true
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile_emulation": true,
+      "physical_device": false,
+      "routes_checked": 43,
+      "collapsed_and_expanded": true
+    },
+    {
+      "name": "narrow",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "mobile_emulation": true,
+      "physical_device": false,
+      "routes_checked": 43,
+      "collapsed_and_expanded": true
+    }
+  ],
+  "routes_per_device": 43,
+  "console_errors": [],
+  "page_errors": [],
+  "unexpected_requests": [],
+  "http_errors": [],
+  "reading_scenarios": [
+    {
+      "device": "desktop",
+      "reader": "普通读者代理走查",
+      "result": "比例/浓度/排放区分及限制可找到；非真实用户理解度研究"
+    },
+    {
+      "device": "desktop",
+      "reader": "Founder 代理走查",
+      "result": "四个实验的研究动机和受限结论完整可见"
+    },
+    {
+      "device": "desktop",
+      "reader": "科研读者代理走查",
+      "result": "键盘展开可找到方程、固定输入、数值方法、对照、复算说明与代码/测试"
+    },
+    {
+      "device": "mobile",
+      "reader": "普通读者代理走查",
+      "result": "比例/浓度/排放区分及限制可找到；非真实用户理解度研究"
+    },
+    {
+      "device": "mobile",
+      "reader": "Founder 代理走查",
+      "result": "四个实验的研究动机和受限结论完整可见"
+    },
+    {
+      "device": "mobile",
+      "reader": "科研读者代理走查",
+      "result": "键盘展开可找到方程、固定输入、数值方法、对照、复算说明与代码/测试"
+    },
+    {
+      "device": "narrow",
+      "reader": "普通读者代理走查",
+      "result": "比例/浓度/排放区分及限制可找到；非真实用户理解度研究"
+    },
+    {
+      "device": "narrow",
+      "reader": "Founder 代理走查",
+      "result": "四个实验的研究动机和受限结论完整可见"
+    },
+    {
+      "device": "narrow",
+      "reader": "科研读者代理走查",
+      "result": "键盘展开可找到方程、固定输入、数值方法、对照、复算说明与代码/测试"
+    }
+  ],
+  "checks": [
+    "desktop: navigation, AWT switches, search/filter/empty/reset, hash reload/back, keyboard details/skip, all fixed-SHA source targets",
+    "mobile: navigation, AWT switches, search/filter/empty/reset, hash reload/back, keyboard details/skip, all fixed-SHA source targets",
+    "narrow: navigation, AWT switches, search/filter/empty/reset, hash reload/back, keyboard details/skip, all fixed-SHA source targets"
+  ],
+  "screenshots": [
+    "desktop-home.png",
+    "desktop-four-experiments.png",
+    "desktop-science-details.png",
+    "desktop-evidence-index.png",
+    "desktop-200-percent-zoom.png",
+    "mobile-home.png",
+    "mobile-science-details.png",
+    "mobile-awt.png"
+  ],
+  "source_link_click": {
+    "requested": "https://github.com/simon947161/eco-agent-system/blob/f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc/docs/tasks/climateos_physics_validation_001/inputs.json",
+    "sent_to_network": false,
+    "checked": "popup target matches frozen file"
+  },
+  "pass": true,
+  "site_sha256": {
+    "science/content.js": "fdf12be8292c72c22cfe96a5e3d2ae26451a55b23411cf6a11cf17590f145440",
+    "science/index.html": "70d688bd320abae8c85bcb5507dd37349d04d800a1169c1673a64fa4ec9197dd",
+    "science/science.css": "784809c7f7c4ae50ea71d8ddc2b1315977d257f15efd9e318d5047eb17504dfd",
+    "science/science.js": "2057a33ab0b51c37fba595be69bd4dbb2cba90852a59fcea184c0762919b9967",
+    "science/sources.js": "5675cee131232b8defdd4d95eaf3d31607b581c552a414486301ad9c205ced3f",
+    "styles.css": "1451e57531085db261d7a8bdb81e3f613b68bb23debc605e7426f4ad57ac7927"
+  },
+  "hash_scope": "UTF-8 text with CRLF normalized to LF; comparable to Git blobs across operating systems"
+}

@@ -1,0 +1,194 @@
+{
+  "scope": "Read-only transcription and display-rounding audit; no research recomputation",
+  "passed": 17,
+  "failed": 0,
+  "checks": [
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p1.json",
+      "file_sha256": "6c6f8f193c4892782fed356179f9293cd0ac2305a3496c7302b6f3f7bae03f62",
+      "json_pointer": "/rows/0/mass_concentration_kg_per_m3",
+      "archived_value": 1.3338534241131146e-06,
+      "display": "1.333853",
+      "unit_scale_for_display": 1000000,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p1.json",
+      "file_sha256": "6c6f8f193c4892782fed356179f9293cd0ac2305a3496c7302b6f3f7bae03f62",
+      "json_pointer": "/rows/4/mass_concentration_kg_per_m3",
+      "archived_value": 1.0531287829168434e-06,
+      "display": "1.053129",
+      "unit_scale_for_display": 1000000,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p1.json",
+      "file_sha256": "6c6f8f193c4892782fed356179f9293cd0ac2305a3496c7302b6f3f7bae03f62",
+      "json_pointer": "/rows/6/mass_concentration_kg_per_m3",
+      "archived_value": 1.039964673130383e-06,
+      "display": "1.039964673",
+      "unit_scale_for_display": 1000000,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p2.json",
+      "file_sha256": "004dad214bd8decbcfb9c964cc93f75b7a2f30b4db1082567107d29e32a49a4c",
+      "json_pointer": "/runs/falling/vented_kg",
+      "archived_value": 0.037632038387364605,
+      "display": "0.037632",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p2.json",
+      "file_sha256": "004dad214bd8decbcfb9c964cc93f75b7a2f30b4db1082567107d29e32a49a4c",
+      "json_pointer": "/runs/steady/vented_kg",
+      "archived_value": 0.024000000000000018,
+      "display": "0.024000",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p2.json",
+      "file_sha256": "004dad214bd8decbcfb9c964cc93f75b7a2f30b4db1082567107d29e32a49a4c",
+      "json_pointer": "/runs/rising/vented_kg",
+      "archived_value": 0.010367961612635682,
+      "display": "0.010368",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p3.json",
+      "file_sha256": "849dcb0fe7c7792ee396932c87c6e00a3aad678d2b699b1c79dc4d8c0feae58a",
+      "json_pointer": "/total_generated_CH4_Gg",
+      "archived_value": 1.1831441922477874,
+      "display": "1.183144192",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p3.json",
+      "file_sha256": "849dcb0fe7c7792ee396932c87c6e00a3aad678d2b699b1c79dc4d8c0feae58a",
+      "json_pointer": "/total_emitted_CH4_Gg",
+      "archived_value": 0.6388978638138052,
+      "display": "0.638897864",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p3.json",
+      "file_sha256": "849dcb0fe7c7792ee396932c87c6e00a3aad678d2b699b1c79dc4d8c0feae58a",
+      "json_pointer": "/final_DDOC_Gg_C",
+      "archived_value": 0.9752837116283176,
+      "display": "0.975284",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p4.json",
+      "file_sha256": "f9aa2a1e655cfd87687feb41dd559f4f297eaa96f14eb0dec091034581550be3",
+      "json_pointer": "/C0/total_emitted_CH4_Gg",
+      "archived_value": 0.6388978638138052,
+      "display": "0.638897864",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p4.json",
+      "file_sha256": "f9aa2a1e655cfd87687feb41dd559f4f297eaa96f14eb0dec091034581550be3",
+      "json_pointer": "/C1_temperature_only/total_emitted_CH4_Gg",
+      "archived_value": 0.6622293283331812,
+      "display": "0.662229328",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p4.json",
+      "file_sha256": "f9aa2a1e655cfd87687feb41dd559f4f297eaa96f14eb0dec091034581550be3",
+      "json_pointer": "/C1_moisture_only/total_emitted_CH4_Gg",
+      "archived_value": 0.6703111803093408,
+      "display": "0.670311180",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 138,
+      "sha": "f9016aa4cdc728728a1a5dece0b947b1c2e5e7bc",
+      "file": "docs/tasks/climateos_physics_validation_001/p4.json",
+      "file_sha256": "f9aa2a1e655cfd87687feb41dd559f4f297eaa96f14eb0dec091034581550be3",
+      "json_pointer": "/neutral_max_abs_error_Gg",
+      "archived_value": 0,
+      "display": "0",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 163,
+      "sha": "9aea387a4261b913163b3be3197597089d9e9414",
+      "file": "docs/tasks/climateos_awt_001/evidence/results.json",
+      "file_sha256": "e1a35ebd4d68488c3861b5a425ba74918038dcbd2623f96dfaa08531a2062cda",
+      "json_pointer": "/A/calculation/estimated_net_abatement_t_CO2e",
+      "archived_value": 0,
+      "display": "0",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 163,
+      "sha": "9aea387a4261b913163b3be3197597089d9e9414",
+      "file": "docs/tasks/climateos_awt_001/evidence/results.json",
+      "file_sha256": "e1a35ebd4d68488c3861b5a425ba74918038dcbd2623f96dfaa08531a2062cda",
+      "json_pointer": "/B/calculation/estimated_net_abatement_t_CO2e",
+      "archived_value": 469.35331199999996,
+      "display": "469.353312",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 163,
+      "sha": "9aea387a4261b913163b3be3197597089d9e9414",
+      "file": "docs/tasks/climateos_awt_001/evidence/results.json",
+      "file_sha256": "e1a35ebd4d68488c3861b5a425ba74918038dcbd2623f96dfaa08531a2062cda",
+      "json_pointer": "/C/calculation/estimated_net_abatement_t_CO2e",
+      "archived_value": 469.35331199999996,
+      "display": "469.353312",
+      "unit_scale_for_display": 1,
+      "pass": true
+    },
+    {
+      "pr": 163,
+      "sha": "9aea387a4261b913163b3be3197597089d9e9414",
+      "file": "docs/tasks/climateos_awt_001/evidence/results.json",
+      "file_sha256": "e1a35ebd4d68488c3861b5a425ba74918038dcbd2623f96dfaa08531a2062cda",
+      "json_pointer": "/D/calculation/estimated_net_abatement_t_CO2e",
+      "archived_value": null,
+      "display": "null",
+      "unit_scale_for_display": 1,
+      "pass": true
+    }
+  ]
+}

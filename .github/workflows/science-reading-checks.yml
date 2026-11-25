@@ -1,0 +1,38 @@
+name: Chinese science reading checks
+
+on:
+  push:
+    paths:
+      - "cczps_lite/dashboard/**"
+      - "tools/science_web/**"
+      - "docs/tasks/climateos_explainable_science_web_001/**"
+      - ".github/workflows/science-reading-checks.yml"
+  pull_request:
+    paths:
+      - "cczps_lite/dashboard/**"
+      - "tools/science_web/**"
+      - "docs/tasks/climateos_explainable_science_web_001/**"
+      - ".github/workflows/science-reading-checks.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  presentation-and-provenance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Check static content, scientific boundaries and generated provenance
+        run: |
+          node --check cczps_lite/dashboard/science/science.js
+          node --test tools/science_web/content.test.cjs
+          python tools/science_web/build_sources.py --check
+          node tools/science_web/source_map.cjs --check
+      # Browser screenshots are a separate recorded local check. No science code,
+      # scenario generators, raw-data acquisition, deployment or model tests here.
