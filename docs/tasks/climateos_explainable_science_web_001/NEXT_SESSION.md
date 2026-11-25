@@ -15,6 +15,7 @@
 - 开工 main 为 `9eb7577e145e76161f9f1cd8509348b19c2904cc`；独立分支 `codex/climateos-explainable-science-web-001-20261126`。
 - 本地展示检查、17项归档数字转录核查、54个固定文件对象核查、3种浏览器视口共129次路线走查和8张截图。
 - commit / push / Draft PR 由本次用户明确授权；最终精确 HEAD 和远程 CI 状态以 Draft PR 交付说明及最终回执为准，避免在同一提交内写入自指 SHA。
+- 已创建 [Draft PR #171](https://github.com/simon947161/eco-agent-system/pull/171)。实施提交 `b8eafbb8156826557dff067906207db8919a7680` 的 push 与 PR 展示检查成功，核心计算作业实际跳过；随后仅补本文档回执，最终 HEAD 的检查另见 PR 说明。
 
 ## 继续保持的停止条件
 

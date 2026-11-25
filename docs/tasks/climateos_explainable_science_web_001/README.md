@@ -4,6 +4,7 @@
 
 - [本地预览](PREVIEW.md)：现有静态网站内的中文阅读入口。
 - [中文 Founder 验收报告](FOUNDER_ACCEPTANCE_CN.md)：结果、限制、实际浏览器验收与待审批事项。
+- [独立 Draft PR #171](https://github.com/simon947161/eco-agent-system/pull/171)：最终交付 HEAD 与远程检查回执，禁止合并部署。
 - [页面到固定研究版本的映射](SOURCE_MAP.md)：29项研究、4个实验、本地能源研究例外。
 - [开工架构与索引核查](ARCHITECTURE_AUDIT.md)：为什么复用这里，以及未合并模块边界。
 - [远程状态快照](REMOTE_PR_SNAPSHOT.json)：初始29项真实 HEAD、Draft/合并状态和公开回执入口。

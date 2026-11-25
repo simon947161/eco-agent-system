@@ -80,9 +80,18 @@
 
 ## 6. 本地检查与远程 CI 分开
 
-以上均为本机实际结果。初次提交本报告时尚未产生该提交的远程 CI 结果，不能将本地通过冒充 GitHub CI 通过。推送后的精确 HEAD、Draft PR 和对应 Checks 将由交付回执单独记录；本报告后续补录回执时会注明受检提交，避免自指 SHA。
+上节为本机结果。推送后独立核查的实施提交为 **`b8eafbb8156826557dff067906207db8919a7680`**，已建立 [独立 Draft PR #171](https://github.com/simon947161/eco-agent-system/pull/171)。对应远程结果：
 
-CI 只读分类会保留原核心变更/手动触发的测试行为，展示站改动走独立检查；本次不触发原场景生成。已有 Pages 部署流程未运行。
+| 触发 / 流程 | 实际结果 |
+| --- | --- |
+| push · 展示与来源检查 | [45695262485](https://github.com/simon947161/eco-agent-system/actions/runs/45695262485) 成功 |
+| pull_request · 展示与来源检查 | [45695325582](https://github.com/simon947161/eco-agent-system/actions/runs/45695325582) 成功 |
+| push · 原核心流程的变更分类 | [45695262266](https://github.com/simon947161/eco-agent-system/actions/runs/45695262266) 分类成功，`cczps-lite-tests` 科学/场景作业 **skipped** |
+| pull_request · 原核心流程的变更分类 | [45695325568](https://github.com/simon947161/eco-agent-system/actions/runs/45695325568) 分类成功，`cczps-lite-tests` 科学/场景作业 **skipped** |
+
+原始受检 SHA 与作业摘要见 [远程实施检查回执](evidence/remote-ci-implementation.json)。跳过核心作业不是科学测试通过。已有 Pages 部署流程未运行。
+
+本节是实施之后的文档回执提交，不修改已验收网页资产。为避免在提交内写入自身 SHA，**最终交付 HEAD 及其远程检查**以 Draft PR 说明和最终交付回复为准；最终检查另外核对网页 Git 对象仍与浏览器验收哈希一致。不能把本地通过、此前提交的远程通过和最终 HEAD 的远程通过混为一谈。
 
 ## 7. 保留的科学停止状态
 
