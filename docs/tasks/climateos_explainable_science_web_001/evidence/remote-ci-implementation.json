@@ -1,0 +1,73 @@
+{
+  "task": "CLIMATEOS-EXPLAINABLE-SCIENCE-WEB-001",
+  "pr_url": "https://github.com/simon947161/eco-agent-system/pull/171",
+  "implementation_head": "b8eafbb8156826557dff067906207db8919a7680",
+  "checked_at_utc": "2026-11-25 20:29:40 UTC",
+  "runs": [
+    {
+      "id": 45695262485,
+      "event": "push",
+      "kind": "presentation",
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/45695262485",
+      "jobs": [
+        {
+          "name": "presentation-and-provenance",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 45695325582,
+      "event": "pull_request",
+      "kind": "presentation",
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/45695325582",
+      "jobs": [
+        {
+          "name": "presentation-and-provenance",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 45695262266,
+      "event": "push",
+      "kind": "core_change_classification",
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/45695262266",
+      "jobs": [
+        {
+          "name": "classify-changes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "cczps-lite-tests",
+          "status": "completed",
+          "conclusion": "skipped"
+        }
+      ]
+    },
+    {
+      "id": 45695325568,
+      "event": "pull_request",
+      "kind": "core_change_classification",
+      "url": "https://github.com/simon947161/eco-agent-system/actions/runs/45695325568",
+      "jobs": [
+        {
+          "name": "classify-changes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "cczps-lite-tests",
+          "status": "completed",
+          "conclusion": "skipped"
+        }
+      ]
+    }
+  ],
+  "core_scientific_jobs": "SKIPPED",
+  "deployment": "NOT_TRIGGERED",
+  "final_head_note": "This receipt is committed after the tested implementation. Final delivery HEAD and exact final checks are recorded in the Draft PR body; website blob hashes remain identical."
+}

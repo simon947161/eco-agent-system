@@ -1,0 +1,15 @@
+'use strict';
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const root=path.resolve(__dirname,'../..');
+const box={};
+for(const file of ['content.js','sources.js']) vm.runInNewContext(fs.readFileSync(path.join(root,'cczps_lite/dashboard/science',file),'utf8'),box);
+const {SCIENCE_CONTENT:content,SCIENCE_SOURCES:sources}=box;
+const base='https://github.com/simon947161/eco-agent-system';
+const rows=content.stories.slice().sort((a,b)=>a.pr-b.pr).map(s=>{const src=sources.prs[s.pr];return `| \`#/story/${s.pr}\` ${s.title} | [#${s.pr}](${src.url}) | \`${src.sha}\` | ${s.dataType} | \`${s.rawStatus}\` | [固定研究说明](${base}/blob/${src.sha}/${src.links[0].path}) |`;});
+const experiments=content.experiments.map(e=>`| \`#/experiment/${e.id}\` | ${e.title} | [输入](${base}/blob/${sources.prs[138].sha}/docs/tasks/climateos_physics_validation_001/inputs.json) / [归档结果](${base}/blob/${sources.prs[138].sha}/docs/tasks/climateos_physics_validation_001/${e.resultsFile}) |`).join('\n');
+const text=`# 页面与研究源文件映射\n\n本表由 \`tools/science_web/source_map.cjs\` 从唯一中文内容与远程元数据适配器生成；不要单独修改。核查日期：${content.date}。主线基准：\`${sources.main}\`。全部29项源变更为开放 Draft、未合并。网页显示不变更原研究科学状态。索引标签保留源停止条件并补充阅读分类；分类不是新增审批。\n\n| 页面 | 源 PR | 固定 SHA | 数据类型 | 保留状态 | 文件入口 |\n| --- | --- | --- | --- | --- | --- |\n${rows.join('\n')}\n\n## 四个实验的直接证据\n\n均固定到 #138 的 \`${sources.prs[138].sha}\`；网页内还提供原计算实现、测试定义、历史测试回执、守恒记录与复算方法。\n\n| 页面 | 问题 | 直接证据 |\n| --- | --- | --- |\n${experiments}\n\n## 本地研究例外\n\n\`#/topic/energy\`：建筑能源韧性沿用本地唯一 INDEX.md v0.3，只展示已核查的状态摘要。\`NOT_FOUND_REMOTE / INCONCLUSIVE / REVIEW_PENDING / DATA_NOT_READY\`。本次核查的 main 和29个源 PR 树中没有找到该研究版本；没有可填写的源 PR 或固定 SHA，不作推测。未复制原始附件、私人交流、完整本地目录或本地绝对路径。\n\n## 阅读范围与回执\n\n- 来源状态原始快照：[REMOTE_PR_SNAPSHOT.json](REMOTE_PR_SNAPSHOT.json)。该快照保存源 PR 标识、HEAD、是否 Draft/合并以及公开讨论链接。\n- 只读读取了各源 PR 的元数据、任务/方法说明、对应研究索引或交接文件、关键限制及公开评审回执。重点逐项阅读 #138 的公式实现、输入和 P1–P4 归档输出。\n- 本次不声称重审全部代码、复跑全部原科学测试或验证每份外部文献全文。#153 只使用公开比较摘要；#130 只使用模块与来源边界元数据，不纳入受限内容。\n- #140/#141 的有条件回执与后续文档提交分开；#155 工程收尾已接受但科学待定；#163/#165/#169 的独立回执接受有界成果或停止边界，不批准真实计算。\n- #148 的历史数据停止和 #149 后续开放数据受限再计算分别保留。\n- 方程、输入和文件路径的存在由本地已抓取固定 Git 对象核查；讨论页可能继续更新，不视为被冻结的未来审批。\n`;
+const target=path.join(root,'docs/tasks/climateos_explainable_science_web_001/SOURCE_MAP.md');
+if(process.argv.includes('--check')) {if(fs.readFileSync(target,'utf8').replace(/\r\n/g,'\n')!==text)throw new Error('SOURCE_MAP.md is stale');} else fs.writeFileSync(target,text,'utf8');
+console.log(JSON.stringify({research_cards:29,experiments:4,local_only_branches:1,source_map_matches:true}));

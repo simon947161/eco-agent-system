@@ -323,3 +323,7 @@ This project is released under the [MIT License](LICENSE).
 Eco Agent System is an early-stage experimental prototype.
 
 It is intended for research, learning, open-source collaboration, and human-reviewed decision-support exploration. It should not be used as the sole basis for legal, engineering, financial, insurance, environmental approval, or emergency-management decisions.
+
+## 中文科学阅读入口
+
+已有研究的人话解释、四个甲烷实验和固定版本证据入口位于 [现有静态网站的 science 目录](cczps_lite/dashboard/science/index.html)。按 [本地预览说明](docs/tasks/climateos_explainable_science_web_001/PREVIEW.md) 阅读；无需登录，不执行科学计算。此变更为 Founder 评审草稿，未部署，原科学准入状态不变。
