@@ -44,4 +44,3 @@ print(json.dumps({
     "representative_state_bytes": sum(sys.getsizeof(a) + sum(sys.getsizeof(x) for x in a) for a in state_arrays) + sys.getsizeof(inventory) + sum(sys.getsizeof(x) for x in inventory),
     "representative_tracemalloc_peak_bytes": peak_bytes,
 }, sort_keys=True))
-

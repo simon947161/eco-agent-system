@@ -7,11 +7,12 @@
   "p1_reference_commit": "5a2039a2753142b2eb17665da2dba6c4a8648b14",
   "frozen_contract": {
     "path": "docs/tasks/climateos_heat_001/l2_impl/L2_FROZEN_SYNTHETIC_CONTRACT.json",
-    "sha256": "85c092ecad0c484ee40825e081be8cf50cd9c579123ebea2385c3c4adf4e66ba",
-    "github_blob_sha": "3f409fbe0c4ca27787081cb2ff273f45807fe72c"
+    "version": "1.0.1",
+    "sha256": "60861f0fc5c34e14f7c66feff10b70b7680e61809cbf27e3df9225c4232a9c7b",
+    "github_blob_sha": "5299ab5686297f4cb5ce65105a57389bbcb2e61f"
   },
-  "gate_document_sha256": "4ba8451ce3d5cb93417bf45e0d124c6f31623020cd71709162c1262d6e5918d5",
-  "gate_validator_sha256": "1601d7e3a4ed9c5ec7cf6ce395d876f7f446905c0b8c9e8d2d917f8171611e00",
+  "gate_document_sha256": "72462385afdd816d335ef2b3914dfb55ca0c28c4b25e5c0d107256f20f104501",
+  "gate_validator_sha256": "5e8bfa0ad6082291aa70a2442751b136f0bab9b040e92e35c0c88e830ea341c4",
   "resource_probe": {
     "path": "docs/tasks/climateos_heat_001/l2_impl/profile_resources.py",
     "sha256": "2067d047d1e7ddfe626208600d6de46976dd783244723fa21db3103c64028951",
@@ -34,8 +35,12 @@
     "p1_hour_rows_verified": 8760,
     "first_utc": "2001-01-01T00:00:00+00:00",
     "last_utc": "2001-12-31T23:00:00+00:00",
-    "formal_l2_case_outputs_present": false
+    "formal_l2_case_outputs_present": false,
+    "worst_static_cfl": 0.6853562142713195,
+    "maximum_cfl_threshold": 0.7,
+    "minimum_T_highpoint_static_pressure_Pa": 241160.1,
+    "minimum_safe_absolute_pressure_Pa": 130000
   },
-  "frozen_before_formal_l2_scenarios": true
+  "frozen_before_formal_l2_scenarios": true,
+  "freeze_revision": "1.0.1 corrects v1.0.0 CFL threshold before any L2 case output"
 }
-

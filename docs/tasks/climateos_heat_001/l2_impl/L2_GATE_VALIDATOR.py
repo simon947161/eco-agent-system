@@ -3,6 +3,7 @@ import csv
 import gzip
 import hashlib
 import json
+import math
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -61,6 +62,21 @@ assert contract["resource_gate"]["resource_probe"]["output_disk_budget_bytes"] <
 assert contract["security_and_prohibitions"]["network_during_runs"] is False
 assert contract["security_and_prohibitions"]["real_site_or_council_data"] is False
 
+# Deterministic static closure checks, not L2 case calculations.
+flow = contract["l2_flow_and_pumps"]["low_loop_design_mass_flow_kg_s"]
+rho = contract["l2_fluid_properties"]["density_kg_m3"]
+diameter = contract["l2_pipe_properties"]["inside_diameter_m"]
+velocity = flow / rho / (math.pi * diameter * diameter / 4)
+shortest_segment_m = 40.0
+coarse_cell_m = shortest_segment_m / math.ceil(shortest_segment_m / 25.0)
+worst_cfl = velocity * 60.0 / coarse_cell_m
+assert worst_cfl <= contract["preregistered_acceptance_thresholds"]["courant_number_max"]
+highest_elevation_m = 6.0
+reference_pressure_pa = contract["l2_flow_and_pumps"]["max_abs_pressure_reference_Pa"]
+static_highpoint_pa = reference_pressure_pa - rho * contract["l2_fluid_properties"]["gravity_m_s2"] * highest_elevation_m
+minimum_safe_pa = max(contract["l2_flow_and_pumps"]["minimum_absolute_pressure_Pa"], 80000 + 50000)
+assert static_highpoint_pa > minimum_safe_pa
+
 print(json.dumps({
     "status": "GATE_PASS",
     "formal_l2_case_outputs_present": False,
@@ -70,5 +86,6 @@ print(json.dumps({
     "hour_rows_verified": count,
     "first_utc": first.isoformat(),
     "last_utc": last.isoformat(),
+    "worst_static_cfl": worst_cfl,
+    "minimum_T_highpoint_static_pressure_Pa": static_highpoint_pa,
 }, sort_keys=True))
-

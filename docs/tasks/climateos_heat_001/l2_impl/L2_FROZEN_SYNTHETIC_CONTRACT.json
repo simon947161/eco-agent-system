@@ -1,7 +1,7 @@
 {
-  "schema": "ClimateOS-HEAT-001-L2-FROZEN-CONTRACT/1.0.0",
+  "schema": "ClimateOS-HEAT-001-L2-FROZEN-CONTRACT/1.0.1",
   "status": "GATE_PASS",
-  "frozen_at_utc": "2026-11-26T19:46:00Z",
+  "frozen_at_utc": "2026-11-26T19:47:53Z",
   "authorization": {
     "issue": 183,
     "authorization": "L2 SYNTHETIC IMPLEMENTATION",
@@ -484,7 +484,7 @@
       30,
       15
     ],
-    "stability": "maximum design velocity 0.228 m/s; with 12.5 m minimum cell and 15 s minimum dt, CFL <=0.274; required CFL <=0.6 for every run",
+    "stability": "maximum design velocity 0.228 m/s; with the 40 m shortest segment split into two 20 m cells at dx<=25 m and dt=60 s, worst CFL=0.685; require CFL<=0.7 for explicit upwind stability; checked from frozen flow, diameter and mesh",
     "zero_flow": "disable advection/friction, retain wall/ground thermal exchange and fixed inventories",
     "flow_reversal": "orientation sign changes upwind boundary and route order; tested explicitly",
     "solver_choice": "pure Python standard library only; no package installation or external simulator",
@@ -555,7 +555,8 @@
       "INVALID",
       "INCONCLUSIVE",
       "CONDITIONALLY_SUPPORTED"
-    ]
+    ],
+    "courant_number_max": 0.7
   },
   "p1_reference_metrics": {
     "R0": {
@@ -727,15 +728,17 @@
       "synthetic_physical_parameter_closure": "PASS",
       "resource_only_preflight_with_frozen_budget": "PASS",
       "data_security_and_isolation": "PASS",
-      "no_case_outputs_before_gate_commit": true
+      "no_case_outputs_before_gate_commit": true,
+      "cfl_and_pressure_envelope_static_check": "PASS"
     },
     "execution_order": "Commit this manifest, gate document, SHA receipt, fixture copies, resource profile and deterministic validator before any formal L2 scenario output. After that commit, validate/implement analytic tests; measure the actual solver against budgets. If any check or budget fails, stop with GATE_BLOCKED/INVALID; do not run full annual L2 cases.",
-    "checked_at_utc": "2026-11-26T19:46:00Z"
+    "checked_at_utc": "2026-11-26T19:47:53Z"
   },
   "claim_boundaries": {
     "tag": "SYNTHETIC",
     "H2_receptor_response": "UNKNOWN",
     "H3_global_cooling": "NOT_TESTABLE",
     "real_world_claims": false
-  }
+  },
+  "supersedes": "1.0.0 pre-run freeze commit f27e8a415e4344a59c87eca83ab53816a41128c5; corrected stability/CFL threshold before any L2 scenario output"
 }
