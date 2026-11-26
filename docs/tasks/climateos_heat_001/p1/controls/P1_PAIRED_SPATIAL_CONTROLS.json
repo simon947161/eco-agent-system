@@ -1,0 +1,3457 @@
+{
+  "tag": "SYNTHETIC",
+  "input_csv_sha256": "20211941069b2748b2e55404d366807c94c0115c6a8aa8ef9bc4fdfce02b8bde",
+  "review": "FOUNDER_ACCEPTANCE_PENDING",
+  "moved_edge_overrides": {
+    "charge": [
+      "B",
+      "tank"
+    ],
+    "discharge": [
+      "tank",
+      "B"
+    ]
+  },
+  "H2": "UNKNOWN",
+  "H3": "NOT_TESTABLE",
+  "cases": {
+    "canonical": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4054366.0444446914,
+          "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1086105.0119586058,
+          "LCOH_AUD_per_MWh": 95.83238716640626
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 568679.9110625815,
+          "compressor": 305608.3489374598,
+          "condenser": 874288.2599999645,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 874288.2599999645,
+          "fuel": 39035.11111111096,
+          "boiler_service": 35131.599999999744,
+          "flue": 3903.511111111107,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -23220.007334493737,
+          "hp_hot_ex": 123012.85792172786,
+          "hp_destroyed_ex": 159375.4836811831,
+          "minimum_work": 152804.1744687299,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 305608.3489374598,
+          "fuel_kWh_LHV": 39035.11111111096,
+          "primary_kWh": 654155.3200971417,
+          "operation_kgCO2e": 130050.36179720612,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 2630507.2359441225,
+          "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 48897.33582999357,
+            "fuel": 3122.8088888888765
+          },
+          "PV_cost_AUD": 851577.0506134258,
+          "LCOH_AUD_per_MWh": 75.13883162111996
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 33110.80000000005
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 610138.4296268902,
+          "intercept": 703861.5703731145,
+          "low_loss": 9282.000000000378,
+          "evap": 694579.570373122,
+          "ambient": 0.0,
+          "compressor": 190638.89369705933,
+          "condenser": 885218.4640701659,
+          "charge": 36339.50725785041,
+          "discharge": 32246.942575933164,
+          "tank_loss": 4092.564681915374,
+          "terminal_dump": 0.0,
+          "send": 881125.8993882501,
+          "high_loss": 7379.4240000017535,
+          "network_service": 873746.4753882329,
+          "local_hp": 0.0,
+          "fuel": 39637.09401302367,
+          "boiler_service": 35673.384611721776,
+          "flue": 3963.7094013024,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2124.2785708719507,
+          "high_pump": 428.07736002669037,
+          "motor_loss": 2552.355930898925
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 27314.287545398103,
+          "hp_hot_ex": 124550.7438820781,
+          "hp_destroyed_ex": 93402.43736038628,
+          "minimum_work": 93413.05791154873,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 39636.64209736999
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 193191.24962795796,
+          "fuel_kWh_LHV": 39637.09401302367,
+          "primary_kWh": 429983.302670242,
+          "operation_kgCO2e": 85203.91865378793,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 1757138.3730757586,
+          "partial_life_kgCO2e_per_MWh": 96.60765342620913,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 30910.599940473276,
+            "fuel": 3170.9675210418936
+          },
+          "PV_cost_AUD": 841543.9236803486,
+          "LCOH_AUD_per_MWh": 74.25355948430654
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 4.263256414560601e-14,
+          "peak_send_kW": 279.8180359566495,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6375,
+          "empty_h": 259
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 272482.08274167246,
+          "winter_backup_kWh": 35673.384611721776
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 589770.7831212525,
+          "intercept": 724229.2168787438,
+          "low_loss": 13924.591200002149,
+          "evap": 710304.6256787701,
+          "ambient": 0.0,
+          "compressor": 194954.89617491513,
+          "condenser": 905259.521853665,
+          "charge": 33437.82596122758,
+          "discharge": 29440.23724903834,
+          "tank_loss": 3997.5887121880405,
+          "terminal_dump": 0.0,
+          "send": 901261.9331414513,
+          "high_loss": 33207.40799999664,
+          "network_service": 868054.5251414662,
+          "local_hp": 0.0,
+          "fuel": 45961.483176107744,
+          "boiler_service": 41365.33485849682,
+          "flue": 4596.148317610768,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2612.236409794509,
+          "high_pump": 809.3776653901623,
+          "motor_loss": 3421.614075184894
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 27932.674121403266,
+          "hp_hot_ex": 127370.53216758838,
+          "hp_destroyed_ex": 95517.03812869164,
+          "minimum_work": 95527.89912570968,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 40783.60784872
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 198376.51025009982,
+          "fuel_kWh_LHV": 45961.483176107744,
+          "primary_kWh": 447310.6519939182,
+          "operation_kgCO2e": 88542.90073526147,
+          "optional_embodied_kgCO2e": 64760,
+          "partial_life_kgCO2e": 1835618.0147052296,
+          "partial_life_kgCO2e_per_MWh": 100.92247241583809,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 11095.0,
+            "electricity": 31740.24164001597,
+            "fuel": 3676.9186540886194
+          },
+          "PV_cost_AUD": 1023444.3250710677,
+          "LCOH_AUD_per_MWh": 90.3035265683959
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 8.526512829121202e-14,
+          "peak_send_kW": 279.14205887156106,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6252,
+          "empty_h": 322
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 266343.2934639845,
+          "winter_backup_kWh": 41365.33485849682
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "tank_at_B": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4054366.0444446914,
+          "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1086105.0119586058,
+          "LCOH_AUD_per_MWh": 95.83238716640626
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 568679.9110625815,
+          "compressor": 305608.3489374598,
+          "condenser": 874288.2599999645,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 874288.2599999645,
+          "fuel": 39035.11111111096,
+          "boiler_service": 35131.599999999744,
+          "flue": 3903.511111111107,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -23220.007334493737,
+          "hp_hot_ex": 123012.85792172786,
+          "hp_destroyed_ex": 159375.4836811831,
+          "minimum_work": 152804.1744687299,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 305608.3489374598,
+          "fuel_kWh_LHV": 39035.11111111096,
+          "primary_kWh": 654155.3200971417,
+          "operation_kgCO2e": 130050.36179720612,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 2630507.2359441225,
+          "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 48897.33582999357,
+            "fuel": 3122.8088888888765
+          },
+          "PV_cost_AUD": 851577.0506134258,
+          "LCOH_AUD_per_MWh": 75.13883162111996
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 33110.80000000005
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000,
+          "bypass": 610144.9743657828,
+          "intercept": 703855.025634222,
+          "low_loss": 9282.000000000378,
+          "evap": 694573.0256342294,
+          "ambient": 0.0,
+          "compressor": 190637.09738482206,
+          "condenser": 885210.123019036,
+          "charge": 36339.50725785041,
+          "discharge": 32246.859627063022,
+          "tank_loss": 4092.647630785496,
+          "terminal_dump": 0.0,
+          "send": 885210.123019036,
+          "high_loss": 7371.000000001749,
+          "network_service": 877839.1230189842,
+          "local_hp": 0.0,
+          "fuel": 39637.09401302367,
+          "boiler_service": 35673.384611721776,
+          "flue": 3963.7094013024,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2124.258818623545,
+          "high_pump": 430.0615982278581,
+          "motor_loss": 2554.320416851614
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 27314.030174050535,
+          "hp_hot_ex": 124549.57029141641,
+          "hp_destroyed_ex": 93401.55726746311,
+          "minimum_work": 93412.17771855247,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 39636.27354269387
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 193191.41780167347,
+          "fuel_kWh_LHV": 39637.09401302367,
+          "primary_kWh": 429983.639017673,
+          "operation_kgCO2e": 85203.98592327413,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 1757139.7184654826,
+          "partial_life_kgCO2e_per_MWh": 96.60772739587831,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 30910.626848267755,
+            "fuel": 3170.9675210418936
+          },
+          "PV_cost_AUD": 841544.2590109432,
+          "LCOH_AUD_per_MWh": 74.25358907217422
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 189.81803595664954,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6375,
+          "empty_h": 259
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 272488.6274805651,
+          "winter_backup_kWh": 35673.384611721776
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000,
+          "bypass": 589801.8645338283,
+          "intercept": 724198.135466168,
+          "low_loss": 13923.000000002148,
+          "evap": 710275.1354661942,
+          "ambient": 0.0,
+          "compressor": 194946.80209651124,
+          "condenser": 905221.9375626853,
+          "charge": 33437.82596122758,
+          "discharge": 29439.913540018013,
+          "tank_loss": 3997.912421208351,
+          "terminal_dump": 0.0,
+          "send": 905221.9375626853,
+          "high_loss": 33169.49999999662,
+          "network_service": 872052.4375627083,
+          "local_hp": 0.0,
+          "fuel": 45961.483176107744,
+          "boiler_service": 41365.33485849682,
+          "flue": 4596.148317610768,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2612.1243016446224,
+          "high_pump": 812.9339446643675,
+          "motor_loss": 3425.05824630909
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 27931.514421088963,
+          "hp_hot_ex": 127365.2440363645,
+          "hp_destroyed_ex": 95513.07248119733,
+          "minimum_work": 95523.93302729177,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 40781.857557358744
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 198371.86034282023,
+          "fuel_kWh_LHV": 45961.483176107744,
+          "primary_kWh": 447301.352179359,
+          "operation_kgCO2e": 88541.04077234965,
+          "optional_embodied_kgCO2e": 64760,
+          "partial_life_kgCO2e": 1835580.8154469929,
+          "partial_life_kgCO2e_per_MWh": 100.92042719668945,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 11095.0,
+            "electricity": 31739.49765485124,
+            "fuel": 3676.9186540886194
+          },
+          "PV_cost_AUD": 1023435.0533714531,
+          "LCOH_AUD_per_MWh": 90.30270848073644
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 189.1420588715611,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6252,
+          "empty_h": 321
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 266374.37487656035,
+          "winter_backup_kWh": 41365.33485849682
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "cold_only": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4054366.0444446914,
+          "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1086105.0119586058,
+          "LCOH_AUD_per_MWh": 95.83238716640626
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 568679.9110625815,
+          "compressor": 305608.3489374598,
+          "condenser": 874288.2599999645,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 874288.2599999645,
+          "fuel": 39035.11111111096,
+          "boiler_service": 35131.599999999744,
+          "flue": 3903.511111111107,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -23220.007334493737,
+          "hp_hot_ex": 123012.85792172786,
+          "hp_destroyed_ex": 159375.4836811831,
+          "minimum_work": 152804.1744687299,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 305608.3489374598,
+          "fuel_kWh_LHV": 39035.11111111096,
+          "primary_kWh": 654155.3200971417,
+          "operation_kgCO2e": 130050.36179720612,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 2630507.2359441225,
+          "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 48897.33582999357,
+            "fuel": 3122.8088888888765
+          },
+          "PV_cost_AUD": 851577.0506134258,
+          "LCOH_AUD_per_MWh": 75.13883162111996
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 33110.80000000005
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 685197.46585193,
+          "intercept": 628802.5341480715,
+          "low_loss": 3821.999999999614,
+          "evap": 624980.5341480504,
+          "ambient": 0.0,
+          "compressor": 274389.17768101953,
+          "condenser": 899369.711829025,
+          "charge": 42728.932838240304,
+          "discharge": 38339.06486437444,
+          "tank_loss": 4389.867973863826,
+          "terminal_dump": 0.0,
+          "send": 894979.8438551946,
+          "high_loss": 7379.4240000017535,
+          "network_service": 887600.4198551866,
+          "local_hp": 0.0,
+          "fuel": 24243.8223830809,
+          "boiler_service": 21819.440144772798,
+          "flue": 2424.382238308097,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 1897.7478027288496,
+          "high_pump": 434.8080213061819,
+          "motor_loss": 2332.5558240348223
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -6461.973470425784,
+          "hp_hot_ex": 126541.83253055286,
+          "hp_destroyed_ex": 141385.37168004876,
+          "minimum_work": 134450.6970637067,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 5302.258352121201
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 276721.73350505455,
+          "fuel_kWh_LHV": 24243.8223830809,
+          "primary_kWh": 580111.6716314981,
+          "operation_kgCO2e": 115537.45787863802,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 2363809.1575727602,
+          "partial_life_kgCO2e_per_MWh": 129.96247726395922,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 44275.47736080873,
+            "fuel": 1939.505790646472
+          },
+          "PV_cost_AUD": 992753.102181856,
+          "LCOH_AUD_per_MWh": 87.59548901940657
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 290.0,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6681,
+          "empty_h": 136
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 279454.5019777736,
+          "winter_backup_kWh": 21819.440144772798
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 667381.1125923421,
+          "intercept": 646618.8874076665,
+          "low_loss": 5733.655200000743,
+          "evap": 640885.2322076346,
+          "ambient": 0.0,
+          "compressor": 281371.91839594994,
+          "condenser": 922257.1506035835,
+          "charge": 41952.75397293771,
+          "discharge": 37644.157215348285,
+          "tank_loss": 4308.596757586025,
+          "terminal_dump": 0.0,
+          "send": 917948.5538459916,
+          "high_loss": 33207.40799999664,
+          "network_service": 884741.1458460104,
+          "local_hp": 0.0,
+          "fuel": 27420.793504388177,
+          "boiler_service": 24678.71415394924,
+          "flue": 2742.079350438821,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2332.3022070646603,
+          "high_pump": 824.363073752007,
+          "motor_loss": 3156.665280817136
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -6626.419771232301,
+          "hp_hot_ex": 129762.10824849283,
+          "hp_destroyed_ex": 144983.39037625317,
+          "minimum_work": 137872.2400140094,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 5452.491378778385
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 284528.5836767666,
+          "fuel_kWh_LHV": 27420.793504388177,
+          "primary_kWh": 599220.0402083602,
+          "operation_kgCO2e": 119295.59217158429,
+          "optional_embodied_kgCO2e": 64760,
+          "partial_life_kgCO2e": 2450671.8434316856,
+          "partial_life_kgCO2e_per_MWh": 134.73819691114886,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 11095.0,
+            "electricity": 45524.57338828266,
+            "fuel": 2193.663480351054
+          },
+          "PV_cost_AUD": 1176742.9287825408,
+          "LCOH_AUD_per_MWh": 103.8298163665202
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 290.0,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6497,
+          "empty_h": 167
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 274558.8925176589,
+          "winter_backup_kWh": 24678.71415394924
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "hot_only": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4054366.0444446914,
+          "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1086105.0119586058,
+          "LCOH_AUD_per_MWh": 95.83238716640626
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 568679.9110625815,
+          "compressor": 305608.3489374598,
+          "condenser": 874288.2599999645,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 874288.2599999645,
+          "fuel": 39035.11111111096,
+          "boiler_service": 35131.599999999744,
+          "flue": 3903.511111111107,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -23220.007334493737,
+          "hp_hot_ex": 123012.85792172786,
+          "hp_destroyed_ex": 159375.4836811831,
+          "minimum_work": 152804.1744687299,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 305608.3489374598,
+          "fuel_kWh_LHV": 39035.11111111096,
+          "primary_kWh": 654155.3200971417,
+          "operation_kgCO2e": 130050.36179720612,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 2630507.2359441225,
+          "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 48897.33582999357,
+            "fuel": 3122.8088888888765
+          },
+          "PV_cost_AUD": 851577.0506134258,
+          "LCOH_AUD_per_MWh": 75.13883162111996
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 33110.80000000005
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 544373.3171838592,
+          "intercept": 769626.6828161435,
+          "low_loss": 16561.99999999782,
+          "evap": 753064.6828161739,
+          "ambient": 0.0,
+          "compressor": 79708.62625607394,
+          "condenser": 832773.3090721926,
+          "charge": 24314.88978279803,
+          "discharge": 20732.444945343595,
+          "tank_loss": 3582.444837451768,
+          "terminal_dump": 0.0,
+          "send": 829190.8642347058,
+          "high_loss": 7379.4240000017535,
+          "network_service": 821811.4402347574,
+          "local_hp": 0.0,
+          "fuel": 97342.68862803256,
+          "boiler_service": 87608.41976523155,
+          "flue": 9734.26886280326,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2322.759955499422,
+          "high_pump": 402.84576400068994,
+          "motor_loss": 2725.6057195002068
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 74113.7009076413,
+          "hp_hot_ex": 117171.68059642107,
+          "hp_destroyed_ex": 36650.64656728445,
+          "minimum_work": 39057.2268654717,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 87272.64847361953
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 82434.23197557405,
+          "fuel_kWh_LHV": 97342.68862803256,
+          "primary_kWh": 271945.4214419839,
+          "operation_kgCO2e": 52442.230515836134,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 1101904.6103167227,
+          "partial_life_kgCO2e_per_MWh": 60.58283191202626,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 13189.477116091848,
+            "fuel": 7787.4150902426045
+          },
+          "PV_cost_AUD": 678230.7041796077,
+          "LCOH_AUD_per_MWh": 59.84363087863339
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 253.78370391794317,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 5662,
+          "empty_h": 1656
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 263185.5237601973,
+          "winter_backup_kWh": 86081.80898823847
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 521198.27242680365,
+          "intercept": 792801.7275732056,
+          "low_loss": 24845.839199996994,
+          "evap": 767955.8883731653,
+          "ambient": 0.0,
+          "compressor": 81284.79569452499,
+          "condenser": 849240.6840676296,
+          "charge": 23008.38575563064,
+          "discharge": 19480.787515759614,
+          "tank_loss": 3527.5982398687443,
+          "terminal_dump": 0.0,
+          "send": 845713.0858277715,
+          "high_loss": 33207.40799999664,
+          "network_service": 812505.6778277765,
+          "local_hp": 0.0,
+          "fuel": 107682.42463574023,
+          "boiler_service": 96914.18217216305,
+          "flue": 10768.242463573954,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2859.5719286773747,
+          "high_pump": 759.4920608832176,
+          "motor_loss": 3619.063989560915
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 75579.23551572731,
+          "hp_hot_ex": 119488.6496709522,
+          "hp_destroyed_ex": 37375.38153930502,
+          "minimum_work": 39829.54989032206,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 89900.60769022041
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 84903.85968408558,
+          "fuel_kWh_LHV": 107682.42463574023,
+          "primary_kWh": 288258.3864674854,
+          "operation_kgCO2e": 55498.02880078228,
+          "optional_embodied_kgCO2e": 64760,
+          "partial_life_kgCO2e": 1174720.5760156456,
+          "partial_life_kgCO2e_per_MWh": 64.5862614005205,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 11095.0,
+            "electricity": 13584.617549453693,
+            "fuel": 8614.593970859218
+          },
+          "PV_cost_AUD": 858719.4671551574,
+          "LCOH_AUD_per_MWh": 75.76904216226886
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 252.73713158798256,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 5599,
+          "empty_h": 1688
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 255389.16139242006,
+          "winter_backup_kWh": 94892.86238157991
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "cold_inefficient_long": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4054366.0444446914,
+          "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1086105.0119586058,
+          "LCOH_AUD_per_MWh": 95.83238716640626
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 568679.9110625815,
+          "compressor": 305608.3489374598,
+          "condenser": 874288.2599999645,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 874288.2599999645,
+          "fuel": 39035.11111111096,
+          "boiler_service": 35131.599999999744,
+          "flue": 3903.511111111107,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -23220.007334493737,
+          "hp_hot_ex": 123012.85792172786,
+          "hp_destroyed_ex": 159375.4836811831,
+          "minimum_work": 152804.1744687299,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 305608.3489374598,
+          "fuel_kWh_LHV": 39035.11111111096,
+          "primary_kWh": 654155.3200971417,
+          "operation_kgCO2e": 130050.36179720612,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 2630507.2359441225,
+          "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 48897.33582999357,
+            "fuel": 3122.8088888888765
+          },
+          "PV_cost_AUD": 851577.0506134258,
+          "LCOH_AUD_per_MWh": 75.13883162111996
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 33110.80000000005
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 618768.6209052572,
+          "intercept": 695231.3790947095,
+          "low_loss": 47802.29999999372,
+          "evap": 647429.079094744,
+          "ambient": 0.0,
+          "compressor": 508053.1617274412,
+          "condenser": 1155482.2408221534,
+          "charge": 24043.21494007861,
+          "discharge": 20473.94587987847,
+          "tank_loss": 3569.2690601972326,
+          "terminal_dump": 3.439350113330117e-15,
+          "send": 1151912.9717621037,
+          "high_loss": 332074.0799999729,
+          "network_service": 819838.8917619364,
+          "local_hp": 0.0,
+          "fuel": 99534.40915336079,
+          "boiler_service": 89580.96823802599,
+          "flue": 9953.440915336227,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 11514.689753132012,
+          "high_pump": 6529.061378407555,
+          "motor_loss": 18043.751131539928
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -6694.079742491756,
+          "hp_hot_ex": 162577.01175280035,
+          "hp_destroyed_ex": 338782.0702321639,
+          "minimum_work": 172738.07498732713,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 5862.407013762445
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 526096.9128589807,
+          "fuel_kWh_LHV": 99534.40915336079,
+          "primary_kWh": 1161681.6757866582,
+          "operation_kgCO2e": 230345.64697426444,
+          "optional_embodied_kgCO2e": 227260,
+          "partial_life_kgCO2e": 4834172.939485289,
+          "partial_life_kgCO2e_per_MWh": 265.7833390336061,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 1960000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 54845.0,
+            "electricity": 84175.50605743691,
+            "fuel": 7962.752732268863
+          },
+          "PV_cost_AUD": 4025536.287869302,
+          "LCOH_AUD_per_MWh": 355.19286610769433
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 290.0,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 5662,
+          "empty_h": 1692
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 232215.16289372335,
+          "winter_backup_kWh": 87949.18569292506
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 474525.1026043723,
+          "intercept": 839474.8973957158,
+          "low_loss": 76527.359999997,
+          "evap": 762947.537395673,
+          "ambient": 0.0,
+          "compressor": 598703.2728713226,
+          "condenser": 1361650.8102670948,
+          "charge": 13421.263314454987,
+          "discharge": 10442.461564383892,
+          "tank_loss": 2978.801750069047,
+          "terminal_dump": 0.0,
+          "send": 1358672.0085168285,
+          "high_loss": 645699.6000000037,
+          "network_service": 712972.408516854,
+          "local_hp": 0.0,
+          "fuel": 218274.94609231013,
+          "boiler_service": 196447.4514830773,
+          "flue": 21827.494609230238,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 21319.01653305226,
+          "high_pump": 14501.835939266244,
+          "motor_loss": 35820.85247232009
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -7888.480483153578,
+          "hp_hot_ex": 191585.0473188355,
+          "hp_destroyed_ex": 399229.74506934115,
+          "minimum_work": 203559.11277623288,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 7078.713180033309
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 634524.125343641,
+          "fuel_kWh_LHV": 218274.94609231013,
+          "primary_kWh": 1509150.6913888233,
+          "operation_kgCO2e": 297464.63935591845,
+          "optional_embodied_kgCO2e": 376760,
+          "partial_life_kgCO2e": 6326052.787118369,
+          "partial_life_kgCO2e_per_MWh": 347.8070507014568,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 3570000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 95095.0,
+            "electricity": 101523.86005498256,
+            "fuel": 17461.99568738481
+          },
+          "PV_cost_AUD": 6471720.65457234,
+          "LCOH_AUD_per_MWh": 571.0317442356504
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 290.0,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 4785,
+          "empty_h": 3055
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 181781.8763250197,
+          "winter_backup_kWh": 167284.9800000006
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "mismatch_no_store": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1125590.5757777418,
+          "boiler_service": 1013031.5181999793,
+          "flue": 112559.05757776674,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1125590.5757777418,
+          "primary_kWh": 1238149.6333555162,
+          "operation_kgCO2e": 225118.11515554838,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4514862.303110967,
+          "partial_life_kgCO2e_per_MWh": 222.83918229579209,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 90047.24606221935
+          },
+          "PV_cost_AUD": 1200881.0367076425,
+          "LCOH_AUD_per_MWh": 95.122214425157
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 602279.9550000128
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 594614.7176916572,
+          "compressor": 328221.13300836756,
+          "condenser": 922835.8506999952,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 922835.8506999952,
+          "fuel": 100217.40833333308,
+          "boiler_service": 90195.66749999947,
+          "flue": 10021.740833333262,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -26658.873166564917,
+          "hp_hot_ex": 129843.53168283167,
+          "hp_destroyed_ex": 171718.72815894,
+          "minimum_work": 164110.56650418378,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 328221.13300836756,
+          "fuel_kWh_LHV": 100217.40833333308,
+          "primary_kWh": 766681.4151834016,
+          "operation_kgCO2e": 151331.93487001362,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 3056138.6974002724,
+          "partial_life_kgCO2e_per_MWh": 150.84124444768597,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 52515.38128133881,
+            "fuel": 8017.392666666647
+          },
+          "PV_cost_AUD": 957663.2266348107,
+          "LCOH_AUD_per_MWh": 75.85684510498395
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 88174.86749999976
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 658815.4980738921,
+          "intercept": 655184.5019261047,
+          "low_loss": 9292.608000000371,
+          "evap": 645891.8939261185,
+          "ambient": 0.0,
+          "compressor": 177275.75263958419,
+          "condenser": 823167.6465657542,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 823167.6465657542,
+          "high_loss": 7379.4240000017535,
+          "network_service": 815788.2225656155,
+          "local_hp": 0.0,
+          "fuel": 219159.21737143552,
+          "boiler_service": 197243.29563430368,
+          "flue": 21915.921737144487,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 1977.3694942192092,
+          "high_pump": 399.91950440438575,
+          "motor_loss": 2377.288998623889
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 25399.648458510073,
+          "hp_hot_ex": 115820.15839119331,
+          "hp_destroyed_ex": 86855.24270690224,
+          "minimum_work": 86865.11879339062,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 36895.484430013064
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 179653.04163820777,
+          "fuel_kWh_LHV": 219159.21737143552,
+          "primary_kWh": 600381.2223849946,
+          "operation_kgCO2e": 115693.0601295702,
+          "optional_embodied_kgCO2e": 47300,
+          "partial_life_kgCO2e": 2361161.2025914043,
+          "partial_life_kgCO2e_per_MWh": 116.53937514140075,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 7225.0,
+            "electricity": 28744.486662113242,
+            "fuel": 17532.737389714843
+          },
+          "PV_cost_AUD": 955755.9699275832,
+          "LCOH_AUD_per_MWh": 75.70577062223077
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 189.81803595664954,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 314659.8821815386,
+          "winter_backup_kWh": 185021.75080772417
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 640876.565317587,
+          "intercept": 673123.4346824172,
+          "low_loss": 13938.912000002156,
+          "evap": 659184.5226824563,
+          "ambient": 0.0,
+          "compressor": 180924.13527060254,
+          "condenser": 840108.6579530884,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 840108.6579530884,
+          "high_loss": 33207.40799999664,
+          "network_service": 806901.24995305,
+          "local_hp": 0.0,
+          "fuel": 229033.6313854765,
+          "boiler_service": 206130.26824692893,
+          "flue": 22903.363138547615,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 2427.9019727230434,
+          "high_pump": 754.4590082463428,
+          "motor_loss": 3182.360980969317
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 25922.380049776977,
+          "hp_hot_ex": 118203.76837679956,
+          "hp_destroyed_ex": 88642.74694359374,
+          "minimum_work": 88652.82628260678,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 37905.6817290319
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 184106.49625157192,
+          "fuel_kWh_LHV": 229033.6313854765,
+          "primary_kWh": 620149.987027168,
+          "operation_kgCO2e": 119449.32477772408,
+          "optional_embodied_kgCO2e": 59000,
+          "partial_life_kgCO2e": 2447986.4955544816,
+          "partial_life_kgCO2e_per_MWh": 120.82479427215762,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 10375.0,
+            "electricity": 29457.03940025151,
+            "fuel": 18322.69051083812
+          },
+          "PV_cost_AUD": 1139736.4765656004,
+          "LCOH_AUD_per_MWh": 90.27893204915324
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 189.1420588715611,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 308517.19119333074,
+          "winter_backup_kWh": 193024.37541159173
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "mismatch_store": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1125590.5757777418,
+          "boiler_service": 1013031.5181999793,
+          "flue": 112559.05757776674,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1125590.5757777418,
+          "primary_kWh": 1238149.6333555162,
+          "operation_kgCO2e": 225118.11515554838,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4514862.303110967,
+          "partial_life_kgCO2e_per_MWh": 222.83918229579209,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 90047.24606221935
+          },
+          "PV_cost_AUD": 1200881.0367076425,
+          "LCOH_AUD_per_MWh": 95.122214425157
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 602279.9550000128
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 594614.7176916572,
+          "compressor": 328221.13300836756,
+          "condenser": 922835.8506999952,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 922835.8506999952,
+          "fuel": 100217.40833333308,
+          "boiler_service": 90195.66749999947,
+          "flue": 10021.740833333262,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -26658.873166564917,
+          "hp_hot_ex": 129843.53168283167,
+          "hp_destroyed_ex": 171718.72815894,
+          "minimum_work": 164110.56650418378,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 328221.13300836756,
+          "fuel_kWh_LHV": 100217.40833333308,
+          "primary_kWh": 766681.4151834016,
+          "operation_kgCO2e": 151331.93487001362,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 3056138.6974002724,
+          "partial_life_kgCO2e_per_MWh": 150.84124444768597,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 52515.38128133881,
+            "fuel": 8017.392666666647
+          },
+          "PV_cost_AUD": 957663.2266348107,
+          "LCOH_AUD_per_MWh": 75.85684510498395
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 88174.86749999976
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 645947.8377517434,
+          "intercept": 668052.1622482643,
+          "low_loss": 9267.148800000388,
+          "evap": 658785.013448265,
+          "ambient": 0.0,
+          "compressor": 180814.48332913071,
+          "condenser": 839599.4967773933,
+          "charge": 16531.855811709403,
+          "discharge": 12639.366271400786,
+          "tank_loss": 3684.0122438111835,
+          "terminal_dump": 208.47729649487317,
+          "send": 835707.0072371543,
+          "high_loss": 7379.4240000017535,
+          "network_service": 828327.5832370115,
+          "local_hp": 0.0,
+          "fuel": 205226.59440321208,
+          "boiler_service": 184703.93496290082,
+          "flue": 20522.65944032214,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 2016.204538253773,
+          "high_pump": 406.0115014917046,
+          "motor_loss": 2422.2160397457906
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 25906.669380240433,
+          "hp_hot_ex": 118132.12910836287,
+          "hp_destroyed_ex": 88589.02360100883,
+          "minimum_work": 88599.09683126582,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 37620.102548533134
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 183236.6993688762,
+          "fuel_kWh_LHV": 205226.59440321208,
+          "primary_kWh": 592222.6525812857,
+          "operation_kgCO2e": 114339.9986281929,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 2339859.972563858,
+          "partial_life_kgCO2e_per_MWh": 115.48801446580225,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 29317.871899020192,
+            "fuel": 16418.127552256967
+          },
+          "PV_cost_AUD": 986783.9065595892,
+          "LCOH_AUD_per_MWh": 78.16350452863968
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 273.2424,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6123,
+          "empty_h": 2203
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 313548.3973194869,
+          "winter_backup_kWh": 184703.93496290082
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 627392.6103437269,
+          "intercept": 686607.3896562802,
+          "low_loss": 13900.723200002138,
+          "evap": 672706.6664562464,
+          "ambient": 0.0,
+          "compressor": 184635.5121083693,
+          "condenser": 857342.1785646576,
+          "charge": 17404.287811562615,
+          "discharge": 13594.612471350827,
+          "tank_loss": 3670.5140320872474,
+          "terminal_dump": 139.16130812200765,
+          "send": 853532.5032244419,
+          "high_loss": 33207.40799999664,
+          "network_service": 820325.0952243921,
+          "local_hp": 0.0,
+          "fuel": 214118.24775064303,
+          "boiler_service": 192706.42297557998,
+          "flue": 21411.824775064037,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 2476.537511457914,
+          "high_pump": 766.5142833520093,
+          "motor_loss": 3243.0517948100605
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 26454.13730124736,
+          "hp_hot_ex": 120628.5345774526,
+          "hp_destroyed_ex": 90461.11483214151,
+          "minimum_work": 90471.4009331046,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 38665.00532311413
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 187878.56390317922,
+          "fuel_kWh_LHV": 214118.24775064303,
+          "primary_kWh": 611287.2003320658,
+          "operation_kgCO2e": 117975.0751114003,
+          "optional_embodied_kgCO2e": 64760,
+          "partial_life_kgCO2e": 2424261.5022280063,
+          "partial_life_kgCO2e_per_MWh": 119.65380438190073,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 11095.0,
+            "electricity": 30060.570224508676,
+            "fuel": 17129.45982005144
+          },
+          "PV_cost_AUD": 1170160.3042365706,
+          "LCOH_AUD_per_MWh": 92.6888142696988
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 276.19079999999997,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6062,
+          "empty_h": 2203
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 307473.9584533712,
+          "winter_backup_kWh": 192706.42297557998
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "mismatch_large_store": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1125590.5757777418,
+          "boiler_service": 1013031.5181999793,
+          "flue": 112559.05757776674,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1125590.5757777418,
+          "primary_kWh": 1238149.6333555162,
+          "operation_kgCO2e": 225118.11515554838,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4514862.303110967,
+          "partial_life_kgCO2e_per_MWh": 222.83918229579209,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 90047.24606221935
+          },
+          "PV_cost_AUD": 1200881.0367076425,
+          "LCOH_AUD_per_MWh": 95.122214425157
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 602279.9550000128
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 594614.7176916572,
+          "compressor": 328221.13300836756,
+          "condenser": 922835.8506999952,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 922835.8506999952,
+          "fuel": 100217.40833333308,
+          "boiler_service": 90195.66749999947,
+          "flue": 10021.740833333262,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -26658.873166564917,
+          "hp_hot_ex": 129843.53168283167,
+          "hp_destroyed_ex": 171718.72815894,
+          "minimum_work": 164110.56650418378,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 328221.13300836756,
+          "fuel_kWh_LHV": 100217.40833333308,
+          "primary_kWh": 766681.4151834016,
+          "operation_kgCO2e": 151331.93487001362,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 3056138.6974002724,
+          "partial_life_kgCO2e_per_MWh": 150.84124444768597,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 52515.38128133881,
+            "fuel": 8017.392666666647
+          },
+          "PV_cost_AUD": 957663.2266348107,
+          "LCOH_AUD_per_MWh": 75.85684510498395
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 88174.86749999976
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 635630.0368976176,
+          "intercept": 678369.9631024005,
+          "low_loss": 9267.148800000388,
+          "evap": 669102.8143024237,
+          "ambient": 0.0,
+          "compressor": 183646.37505774348,
+          "condenser": 852749.1893600815,
+          "charge": 29681.54839438634,
+          "discharge": 13576.061002679455,
+          "tank_loss": 14977.63485030235,
+          "terminal_dump": 1127.8525414045505,
+          "send": 836643.7019684332,
+          "high_loss": 7379.4240000017535,
+          "network_service": 829264.2779682899,
+          "local_hp": 0.0,
+          "fuel": 204185.82247956912,
+          "boiler_service": 183767.24023162204,
+          "flue": 20418.582247957842,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 2047.3440181963651,
+          "high_pump": 406.46657585507876,
+          "motor_loss": 2453.8105940514674
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 26312.41609578488,
+          "hp_hot_ex": 119982.29837104995,
+          "hp_destroyed_ex": 89976.49278246488,
+          "minimum_work": 89986.72377828462,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 38201.130121139475
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 186100.18565179492,
+          "fuel_kWh_LHV": 204185.82247956912,
+          "primary_kWh": 596804.7760311159,
+          "operation_kgCO2e": 115277.23875663179,
+          "optional_embodied_kgCO2e": 70340,
+          "partial_life_kgCO2e": 2375884.7751326356,
+          "partial_life_kgCO2e_per_MWh": 117.26608365326389,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 115200
+          },
+          "annual_opex_AUD": {
+            "fixed": 10105.0,
+            "electricity": 29776.029704287186,
+            "fuel": 16334.86579836553
+          },
+          "PV_cost_AUD": 1104774.3143483056,
+          "LCOH_AUD_per_MWh": 87.5095667335693
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.900701818158268e-13,
+          "peak_send_kW": 279.8180359566495,
+          "peak_inventory_kWh": 1280.0,
+          "full_h": 6037,
+          "empty_h": 2189
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 309911.84913656075,
+          "winter_backup_kWh": 183767.24023162204
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 617077.2689290816,
+          "intercept": 696922.731070942,
+          "low_loss": 13900.723200002138,
+          "evap": 683022.0078708995,
+          "ambient": 0.0,
+          "compressor": 187466.72880300248,
+          "condenser": 870488.7366739513,
+          "charge": 30550.845920851458,
+          "discharge": 14532.15824440293,
+          "tank_loss": 14960.15112341695,
+          "terminal_dump": 1058.5365530316847,
+          "send": 854470.048997494,
+          "high_loss": 33207.40799999664,
+          "network_service": 821262.6409974445,
+          "local_hp": 0.0,
+          "fuel": 213076.53022502956,
+          "boiler_service": 191768.877202528,
+          "flue": 21307.653022502684,
+          "space": 876927.5181999833,
+          "dhw": 136103.9999999968,
+          "low_pump": 2513.7441164868987,
+          "high_pump": 767.3562456951262,
+          "motor_loss": 3281.100362182174
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 26859.787299528838,
+          "hp_hot_ex": 122478.26281796047,
+          "hp_destroyed_ex": 91848.2532845685,
+          "minimum_work": 91858.69711348016,
+          "service_ex": 62720.918911829125,
+          "intercept_ex": 39245.89439701118
+        },
+        "metrics": {
+          "service_kWh": 1013031.51819998,
+          "electricity_kWh": 190747.8291651845,
+          "fuel_kWh_LHV": 213076.53022502956,
+          "primary_kWh": 615879.8415779015,
+          "operation_kgCO2e": 118914.4377110797,
+          "optional_embodied_kgCO2e": 82040,
+          "partial_life_kgCO2e": 2460328.754221594,
+          "partial_life_kgCO2e_per_MWh": 121.43396873738268,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 115200
+          },
+          "annual_opex_AUD": {
+            "fixed": 13255.0,
+            "electricity": 30519.65266642952,
+            "fuel": 17046.122418002364
+          },
+          "PV_cost_AUD": 1288161.292298505,
+          "LCOH_AUD_per_MWh": 102.03571454183654
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 2.2737367544323206e-13,
+          "peak_send_kW": 279.14205887156106,
+          "peak_inventory_kWh": 1280.0,
+          "full_h": 6036,
+          "empty_h": 2190
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 303837.41027044144,
+          "winter_backup_kWh": 191768.877202528
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "nonextracting_installed": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4054366.0444446914,
+          "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1086105.0119586058,
+          "LCOH_AUD_per_MWh": 95.83238716640626
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 568679.9110625815,
+          "compressor": 305608.3489374598,
+          "condenser": 874288.2599999645,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 874288.2599999645,
+          "fuel": 39035.11111111096,
+          "boiler_service": 35131.599999999744,
+          "flue": 3903.511111111107,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -23220.007334493737,
+          "hp_hot_ex": 123012.85792172786,
+          "hp_destroyed_ex": 159375.4836811831,
+          "minimum_work": 152804.1744687299,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 305608.3489374598,
+          "fuel_kWh_LHV": 39035.11111111096,
+          "primary_kWh": 654155.3200971417,
+          "operation_kgCO2e": 130050.36179720612,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 2630507.2359441225,
+          "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 48897.33582999357,
+            "fuel": 3122.8088888888765
+          },
+          "PV_cost_AUD": 851577.0506134258,
+          "LCOH_AUD_per_MWh": 75.13883162111996
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 33110.80000000005
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 4094926.0444446914,
+          "partial_life_kgCO2e_per_MWh": 225.13946662902563,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1424223.957616276,
+          "LCOH_AUD_per_MWh": 125.66628476543316
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 64760,
+          "partial_life_kgCO2e": 4106626.0444446914,
+          "partial_life_kgCO2e_per_MWh": 225.7827338653493,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 11095.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1589479.9201952768,
+          "LCOH_AUD_per_MWh": 140.24763114820036
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "winter_week_out": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4054366.0444446914,
+          "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1086105.0119586058,
+          "LCOH_AUD_per_MWh": 95.83238716640626
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 568679.9110625815,
+          "compressor": 305608.3489374598,
+          "condenser": 874288.2599999645,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 874288.2599999645,
+          "fuel": 39035.11111111096,
+          "boiler_service": 35131.599999999744,
+          "flue": 3903.511111111107,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -23220.007334493737,
+          "hp_hot_ex": 123012.85792172786,
+          "hp_destroyed_ex": 159375.4836811831,
+          "minimum_work": 152804.1744687299,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 305608.3489374598,
+          "fuel_kWh_LHV": 39035.11111111096,
+          "primary_kWh": 654155.3200971417,
+          "operation_kgCO2e": 130050.36179720612,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 2630507.2359441225,
+          "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 48897.33582999357,
+            "fuel": 3122.8088888888765
+          },
+          "PV_cost_AUD": 851577.0506134258,
+          "LCOH_AUD_per_MWh": 75.13883162111996
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 33110.80000000005
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 635338.4296268999,
+          "intercept": 678661.570373115,
+          "low_loss": 9103.785600000498,
+          "evap": 669557.7847731188,
+          "ambient": 0.0,
+          "compressor": 183771.24925634157,
+          "condenser": 853329.0340294419,
+          "charge": 35775.57712731263,
+          "discharge": 31689.42811182626,
+          "tank_loss": 4086.1490154844264,
+          "terminal_dump": 0.0,
+          "send": 849242.885013968,
+          "high_loss": 7239.585600001678,
+          "network_service": 842003.2994139472,
+          "local_hp": 0.0,
+          "fuel": 74907.28954000886,
+          "boiler_service": 67416.56058600738,
+          "flue": 7490.728954000853,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2048.224099028117,
+          "high_pump": 412.5876364440438,
+          "motor_loss": 2460.8117354723804
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 26330.307774137924,
+          "hp_hot_ex": 120063.88284747605,
+          "hp_destroyed_ex": 90037.67418301075,
+          "minimum_work": 90047.91213559698,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 38217.55143679597
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 186232.06099181372,
+          "fuel_kWh_LHV": 74907.28954000886,
+          "primary_kWh": 454862.1404776372,
+          "operation_kgCO2e": 89474.28230472727,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 1842545.6460945453,
+          "partial_life_kgCO2e_per_MWh": 101.30335432165637,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 29797.129758690196,
+            "fuel": 5992.583163200709
+          },
+          "PV_cost_AUD": 862831.1917032058,
+          "LCOH_AUD_per_MWh": 76.13183984248545
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 4.263256414560601e-14,
+          "peak_send_kW": 279.8180359566495,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6375,
+          "empty_h": 392
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 272482.08274167246,
+          "winter_backup_kWh": 67416.56058600738
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 614970.7831212624,
+          "intercept": 699029.2168787457,
+          "low_loss": 13657.269600002022,
+          "evap": 685371.9472787764,
+          "ambient": 0.0,
+          "compressor": 188111.70868449257,
+          "condenser": 873483.6559632416,
+          "charge": 33330.567343410985,
+          "discharge": 29334.611978788045,
+          "tank_loss": 3995.95536462164,
+          "terminal_dump": 0.0,
+          "send": 869487.7005986002,
+          "high_loss": 32574.34439999641,
+          "network_service": 836913.3561986097,
+          "local_hp": 0.0,
+          "fuel": 80562.78200150232,
+          "boiler_service": 72506.5038013535,
+          "flue": 8056.27820015033,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2521.3420410054227,
+          "high_pump": 780.8428374900673,
+          "motor_loss": 3302.184878495705
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 26952.198483847755,
+          "hp_hot_ex": 122899.6496738468,
+          "hp_destroyed_ex": 92164.25749445589,
+          "minimum_work": 92174.73725540261,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 39364.51718814536
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 191413.89356298806,
+          "fuel_kWh_LHV": 80562.78200150232,
+          "primary_kWh": 471446.84732762864,
+          "operation_kgCO2e": 92678.11382549569,
+          "optional_embodied_kgCO2e": 64760,
+          "partial_life_kgCO2e": 1918322.2765099138,
+          "partial_life_kgCO2e_per_MWh": 105.46956146911035,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 11095.0,
+            "electricity": 30626.222970078088,
+            "fuel": 6445.0225601201855
+          },
+          "PV_cost_AUD": 1044057.883207757,
+          "LCOH_AUD_per_MWh": 92.12236218970479
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 8.526512829121202e-14,
+          "peak_send_kW": 279.14205887156106,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6252,
+          "empty_h": 448
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 266343.2934639845,
+          "winter_backup_kWh": 72506.5038013535
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "owner_exit_july": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4054366.0444446914,
+          "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1086105.0119586058,
+          "LCOH_AUD_per_MWh": 95.83238716640626
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 568679.9110625815,
+          "compressor": 305608.3489374598,
+          "condenser": 874288.2599999645,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 874288.2599999645,
+          "fuel": 39035.11111111096,
+          "boiler_service": 35131.599999999744,
+          "flue": 3903.511111111107,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -23220.007334493737,
+          "hp_hot_ex": 123012.85792172786,
+          "hp_destroyed_ex": 159375.4836811831,
+          "minimum_work": 152804.1744687299,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 305608.3489374598,
+          "fuel_kWh_LHV": 39035.11111111096,
+          "primary_kWh": 654155.3200971417,
+          "operation_kgCO2e": 130050.36179720612,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 2630507.2359441225,
+          "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 48897.33582999357,
+            "fuel": 3122.8088888888765
+          },
+          "PV_cost_AUD": 851577.0506134258,
+          "LCOH_AUD_per_MWh": 75.13883162111996
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 33110.80000000005
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 721738.4296269135,
+          "intercept": 592261.5703730957,
+          "low_loss": 8492.764800000907,
+          "evap": 583768.8055731286,
+          "ambient": 0.0,
+          "compressor": 160225.03974531445,
+          "condenser": 743993.8453184001,
+          "charge": 33842.10239404024,
+          "discharge": 29773.740688831185,
+          "tank_loss": 4068.361705206854,
+          "terminal_dump": 0.0,
+          "send": 739925.483613232,
+          "high_loss": 6754.363200001418,
+          "network_service": 733171.1204131956,
+          "local_hp": 0.0,
+          "fuel": 195831.93287417808,
+          "boiler_service": 176248.73958676096,
+          "flue": 19583.193287417853,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 1787.4659098488896,
+          "high_pump": 359.4779677473356,
+          "motor_loss": 2146.943877596432
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 22956.662844103,
+          "hp_hot_ex": 104680.35930026905,
+          "hp_destroyed_ex": 78501.34328914774,
+          "minimum_work": 78510.2694751925,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 33352.09774339651
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 162371.9836229107,
+          "fuel_kWh_LHV": 195831.93287417808,
+          "primary_kWh": 540159.0934074173,
+          "operation_kgCO2e": 104115.1800239999,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 2135363.6004799977,
+          "partial_life_kgCO2e_per_MWh": 117.40251639545718,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 25979.51737966571,
+            "fuel": 15666.554629934246
+          },
+          "PV_cost_AUD": 935814.3704956815,
+          "LCOH_AUD_per_MWh": 82.57150467200577
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 4.263256414560601e-14,
+          "peak_send_kW": 279.8180359566495,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6375,
+          "empty_h": 848
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 272482.08274167246,
+          "winter_backup_kWh": 176248.73958676096
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 701370.7831212955,
+          "intercept": 612629.2168787371,
+          "low_loss": 12740.738400001588,
+          "evap": 599888.4784788146,
+          "ambient": 0.0,
+          "compressor": 164649.35157447125,
+          "condenser": 764537.8300532257,
+          "charge": 32962.823510896946,
+          "discharge": 28970.204223008983,
+          "tank_loss": 3992.6192878863126,
+          "terminal_dump": 0.0,
+          "send": 760545.2107653365,
+          "high_loss": 30390.84359999707,
+          "network_service": 730154.3671653242,
+          "local_hp": 0.0,
+          "fuel": 199183.88092737438,
+          "boiler_service": 179265.49283463598,
+          "flue": 19918.388092737416,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2209.7042051571007,
+          "high_pump": 683.0071086740337,
+          "motor_loss": 2892.7113138313766
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 23590.56772651475,
+          "hp_hot_ex": 107570.90969530343,
+          "hp_destroyed_ex": 80669.00960564963,
+          "minimum_work": 80678.1822714892,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 34499.06349474896
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 167542.06288830237,
+          "fuel_kWh_LHV": 199183.88092737438,
+          "primary_kWh": 554186.3947967166,
+          "operation_kgCO2e": 106853.60134079584,
+          "optional_embodied_kgCO2e": 64760,
+          "partial_life_kgCO2e": 2201832.026815917,
+          "partial_life_kgCO2e_per_MWh": 121.05695749903732,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 210000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 11095.0,
+            "electricity": 26806.73006212838,
+            "fuel": 15934.710474189951
+          },
+          "PV_cost_AUD": 1114721.046057245,
+          "LCOH_AUD_per_MWh": 98.35732060167558
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 8.526512829121202e-14,
+          "peak_send_kW": 279.14205887156106,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6252,
+          "empty_h": 880
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 266343.2934639845,
+          "winter_backup_kWh": 179265.49283463598
+        },
+        "terminal_kWh": 0.0
+      }
+    },
+    "equal_physical_inputs": {
+      "R0": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 0.0,
+          "compressor": 0.0,
+          "condenser": 0.0,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 0.0,
+          "fuel": 1010466.5111111728,
+          "boiler_service": 909419.8599999582,
+          "flue": 101046.65111110725,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 0.0,
+          "hp_hot_ex": 0.0,
+          "hp_destroyed_ex": 0.0,
+          "minimum_work": 0.0,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 0.0,
+          "fuel_kWh_LHV": 1010466.5111111728,
+          "primary_kWh": 1111513.1622222902,
+          "operation_kgCO2e": 202093.30222223458,
+          "optional_embodied_kgCO2e": 12500,
+          "partial_life_kgCO2e": 4054366.0444446914,
+          "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 0,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 1500.0,
+            "electricity": 0.0,
+            "fuel": 80837.32088889382
+          },
+          "PV_cost_AUD": 1086105.0119586058,
+          "LCOH_AUD_per_MWh": 95.83238716640626
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 5.684341886080802e-14,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 446133.3000000011
+        },
+        "terminal_kWh": 0.0
+      },
+      "R1": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 1314000.0,
+          "intercept": 0.0,
+          "low_loss": 0.0,
+          "evap": 0.0,
+          "ambient": 568679.9110625815,
+          "compressor": 305608.3489374598,
+          "condenser": 874288.2599999645,
+          "charge": 0.0,
+          "discharge": 0.0,
+          "tank_loss": 0.0,
+          "terminal_dump": 0.0,
+          "send": 0.0,
+          "high_loss": 0.0,
+          "network_service": 0.0,
+          "local_hp": 874288.2599999645,
+          "fuel": 39035.11111111096,
+          "boiler_service": 35131.599999999744,
+          "flue": 3903.511111111107,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 0.0,
+          "high_pump": 0.0,
+          "motor_loss": 0.0
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": -23220.007334493737,
+          "hp_hot_ex": 123012.85792172786,
+          "hp_destroyed_ex": 159375.4836811831,
+          "minimum_work": 152804.1744687299,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 0.0
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 305608.3489374598,
+          "fuel_kWh_LHV": 39035.11111111096,
+          "primary_kWh": 654155.3200971417,
+          "operation_kgCO2e": 130050.36179720612,
+          "optional_embodied_kgCO2e": 29500,
+          "partial_life_kgCO2e": 2630507.2359441225,
+          "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 95000,
+            "route": 0,
+            "tank": 0
+          },
+          "annual_opex_AUD": {
+            "fixed": 3875.0,
+            "electricity": 48897.33582999357,
+            "fuel": 3122.8088888888765
+          },
+          "PV_cost_AUD": 851577.0506134258,
+          "LCOH_AUD_per_MWh": 75.13883162111996
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 1.1368683772161603e-13,
+          "peak_send_kW": 0,
+          "peak_inventory_kWh": 0,
+          "full_h": 0,
+          "empty_h": 8760
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 324000.0,
+          "winter_backup_kWh": 33110.80000000005
+        },
+        "terminal_kWh": 0.0
+      },
+      "L": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 610138.4296268902,
+          "intercept": 703861.5703731145,
+          "low_loss": 9282.000000000378,
+          "evap": 694579.570373122,
+          "ambient": 0.0,
+          "compressor": 190638.89369705933,
+          "condenser": 885218.4640701659,
+          "charge": 36339.50725785041,
+          "discharge": 32246.942575933164,
+          "tank_loss": 4092.564681915374,
+          "terminal_dump": 0.0,
+          "send": 881125.8993882501,
+          "high_loss": 7379.4240000017535,
+          "network_service": 873746.4753882329,
+          "local_hp": 0.0,
+          "fuel": 39637.09401302367,
+          "boiler_service": 35673.384611721776,
+          "flue": 3963.7094013024,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2124.2785708719507,
+          "high_pump": 428.07736002669037,
+          "motor_loss": 2552.355930898925
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 27314.287545398103,
+          "hp_hot_ex": 124550.7438820781,
+          "hp_destroyed_ex": 93402.43736038628,
+          "minimum_work": 93413.05791154873,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 39636.64209736999
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 193191.24962795796,
+          "fuel_kWh_LHV": 39637.09401302367,
+          "primary_kWh": 429983.302670242,
+          "operation_kgCO2e": 85203.91865378793,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 1757138.3730757586,
+          "partial_life_kgCO2e_per_MWh": 96.60765342620913,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 30910.599940473276,
+            "fuel": 3170.9675210418936
+          },
+          "PV_cost_AUD": 841543.9236803486,
+          "LCOH_AUD_per_MWh": 74.25355948430654
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 4.263256414560601e-14,
+          "peak_send_kW": 279.8180359566495,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6375,
+          "empty_h": 259
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 272482.08274167246,
+          "winter_backup_kWh": 35673.384611721776
+        },
+        "terminal_kWh": 0.0
+      },
+      "T": {
+        "edges_kWh": {
+          "gross": 1314000.0,
+          "bypass": 610138.4296268902,
+          "intercept": 703861.5703731145,
+          "low_loss": 9282.000000000378,
+          "evap": 694579.570373122,
+          "ambient": 0.0,
+          "compressor": 190638.89369705933,
+          "condenser": 885218.4640701659,
+          "charge": 36339.50725785041,
+          "discharge": 32246.942575933164,
+          "tank_loss": 4092.564681915374,
+          "terminal_dump": 0.0,
+          "send": 881125.8993882501,
+          "high_loss": 7379.4240000017535,
+          "network_service": 873746.4753882329,
+          "local_hp": 0.0,
+          "fuel": 39637.09401302367,
+          "boiler_service": 35673.384611721776,
+          "flue": 3963.7094013024,
+          "space": 753199.8599999617,
+          "dhw": 156220.0,
+          "low_pump": 2124.2785708719507,
+          "high_pump": 428.07736002669037,
+          "motor_loss": 2552.355930898925
+        },
+        "exergy_kWh_ex": {
+          "hp_cold_ex": 27314.287545398103,
+          "hp_hot_ex": 124550.7438820781,
+          "hp_destroyed_ex": 93402.43736038628,
+          "minimum_work": 93413.05791154873,
+          "service_ex": 55831.27018775952,
+          "intercept_ex": 39636.64209736999
+        },
+        "metrics": {
+          "service_kWh": 909419.8599999617,
+          "electricity_kWh": 193191.24962795796,
+          "fuel_kWh_LHV": 39637.09401302367,
+          "primary_kWh": 429983.302670242,
+          "operation_kgCO2e": 85203.91865378793,
+          "optional_embodied_kgCO2e": 53060,
+          "partial_life_kgCO2e": 1757138.3730757586,
+          "partial_life_kgCO2e_per_MWh": 96.60765342620913,
+          "capital_AUD": {
+            "boiler": 60000,
+            "hp": 145000,
+            "route": 84000,
+            "tank": 28800
+          },
+          "annual_opex_AUD": {
+            "fixed": 7945.0,
+            "electricity": 30910.599940473276,
+            "fuel": 3170.9675210418936
+          },
+          "PV_cost_AUD": 841543.9236803486,
+          "LCOH_AUD_per_MWh": 74.25355948430654
+        },
+        "diagnostics": {
+          "max_abs_residual_kWh": 4.263256414560601e-14,
+          "peak_send_kW": 279.8180359566495,
+          "peak_inventory_kWh": 320.0,
+          "full_h": 6375,
+          "empty_h": 259
+        },
+        "seasonal": {
+          "summer_bypass_kWh": 272482.08274167246,
+          "winter_backup_kWh": 35673.384611721776
+        },
+        "terminal_kWh": 0.0
+      }
+    }
+  },
+  "negative_controls": {
+    "incapable_backup": "UNMET_SERVICE",
+    "blocked_corridor": "REJECT_SYNTHETIC_FLAG",
+    "hot_receptor": "REJECT_SYNTHETIC_FLAG",
+    "site_without_observations": "UNKNOWN"
+  }
+}

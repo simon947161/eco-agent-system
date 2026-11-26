@@ -1,0 +1,1052 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HEAT P1 offline synthetic manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "tag",
+    "version",
+    "review",
+    "clock",
+    "provenance",
+    "parameters",
+    "layouts",
+    "scenarios",
+    "uncertainty"
+  ],
+  "properties": {
+    "profile": {"type":"object","additionalProperties":false,"required":["tag","month_heating_fraction","month_air_C","space_peak_UTC","space_offpeak_multiplier","dhw_peak_UTC","summer_months","winter_months"],"properties":{"tag":{"const":"SYNTHETIC"},"space_offpeak_multiplier":{"type":"number","minimum":0},"month_heating_fraction":{"type":"array","minItems":12,"maxItems":12,"items":{"type":"number","minimum":0}},"month_air_C":{"type":"array","minItems":12,"maxItems":12,"items":{"type":"number","minimum":-80}},"space_peak_UTC":{"type":"array","minItems":1,"maxItems":24,"uniqueItems":true,"items":{"type":"integer","minimum":0,"maximum":23}},"dhw_peak_UTC":{"type":"array","minItems":1,"maxItems":24,"uniqueItems":true,"items":{"type":"integer","minimum":0,"maximum":23}},"summer_months":{"type":"array","minItems":1,"maxItems":12,"uniqueItems":true,"items":{"type":"integer","minimum":1,"maximum":12}},"winter_months":{"type":"array","minItems":1,"maxItems":12,"uniqueItems":true,"items":{"type":"integer","minimum":1,"maximum":12}}}},
+    "tag": {
+      "const": "SYNTHETIC"
+    },
+    "version": {
+      "const": "HEAT-P1/1.0.0"
+    },
+    "review": {
+      "const": "FOUNDER_ACCEPTANCE_PENDING"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "uncertainty": {
+      "type": "string"
+    },
+    "clock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "start",
+        "hours",
+        "step_h"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "start": {
+          "const": "2001-01-01T00:00:00Z"
+        },
+        "hours": {
+          "const": 8760
+        },
+        "step_h": {
+          "const": 1
+        }
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_kw",
+        "source_C",
+        "source_drop_K",
+        "hp_kw",
+        "hot_C",
+        "return_C",
+        "approach_K",
+        "carnot_fraction",
+        "T0_K",
+        "ground_C",
+        "pipe_U",
+        "pump_dp",
+        "pump_fixed_dp",
+        "pump_eff",
+        "water_cp",
+        "water_density",
+        "tank_kwh",
+        "tank_rate",
+        "tank_frac_loss",
+        "boiler_eff",
+        "backup_kw",
+        "air_hp_kw",
+        "air_carnot_fraction",
+        "heating_peak_kw",
+        "morning_gain",
+        "dhw_base_kw",
+        "dhw_peak_kw",
+        "shift_hours",
+        "heat_supply_C",
+        "heat_return_C",
+        "dhw_C",
+        "inlet_C",
+        "grid_pe",
+        "fuel_pe",
+        "grid_ef",
+        "fuel_ef",
+        "electricity_price",
+        "fuel_price",
+        "life",
+        "rate",
+        "boiler_capex",
+        "air_hp_capex",
+        "network_hp_capex",
+        "trench_capex",
+        "tank_capex",
+        "fixed_om",
+        "boiler_embodied",
+        "air_hp_embodied",
+        "hp_embodied",
+        "pipe_embodied",
+        "tank_embodied",
+        "summer_load_factor",
+        "winter_load_factor"
+      ],
+      "properties": {
+        "source_kw": {
+          "$ref": "#/$defs/meter_kW"
+        },
+        "source_C": {
+          "$ref": "#/$defs/meter_degC"
+        },
+        "source_drop_K": {
+          "$ref": "#/$defs/meter_K"
+        },
+        "hp_kw": {
+          "$ref": "#/$defs/meter_kW"
+        },
+        "hot_C": {
+          "$ref": "#/$defs/meter_degC"
+        },
+        "return_C": {
+          "$ref": "#/$defs/meter_degC"
+        },
+        "approach_K": {
+          "$ref": "#/$defs/meter_K"
+        },
+        "carnot_fraction": {
+          "$ref": "#/$defs/meter_1"
+        },
+        "T0_K": {
+          "$ref": "#/$defs/meter_K"
+        },
+        "ground_C": {
+          "$ref": "#/$defs/meter_degC"
+        },
+        "pipe_U": {
+          "$ref": "#/$defs/meter_W__m_K_"
+        },
+        "pump_dp": {
+          "$ref": "#/$defs/meter_Pa_m"
+        },
+        "pump_fixed_dp": {
+          "$ref": "#/$defs/meter_Pa"
+        },
+        "pump_eff": {
+          "$ref": "#/$defs/meter_1"
+        },
+        "water_cp": {
+          "$ref": "#/$defs/meter_kJ__kg_K_"
+        },
+        "water_density": {
+          "$ref": "#/$defs/meter_kg_m3"
+        },
+        "tank_kwh": {
+          "$ref": "#/$defs/meter_kWh"
+        },
+        "tank_rate": {
+          "$ref": "#/$defs/meter_kW"
+        },
+        "tank_frac_loss": {
+          "$ref": "#/$defs/meter_1_h"
+        },
+        "boiler_eff": {
+          "$ref": "#/$defs/meter_1"
+        },
+        "backup_kw": {
+          "$ref": "#/$defs/meter_kW"
+        },
+        "air_hp_kw": {
+          "$ref": "#/$defs/meter_kW"
+        },
+        "air_carnot_fraction": {
+          "$ref": "#/$defs/meter_1"
+        },
+        "heating_peak_kw": {
+          "$ref": "#/$defs/meter_kW"
+        },
+        "morning_gain": {
+          "$ref": "#/$defs/meter_1"
+        },
+        "dhw_base_kw": {
+          "$ref": "#/$defs/meter_kW"
+        },
+        "dhw_peak_kw": {
+          "$ref": "#/$defs/meter_kW"
+        },
+        "shift_hours": {
+          "$ref": "#/$defs/meter_h"
+        },
+        "heat_supply_C": {
+          "$ref": "#/$defs/meter_degC"
+        },
+        "heat_return_C": {
+          "$ref": "#/$defs/meter_degC"
+        },
+        "dhw_C": {
+          "$ref": "#/$defs/meter_degC"
+        },
+        "inlet_C": {
+          "$ref": "#/$defs/meter_degC"
+        },
+        "grid_pe": {
+          "$ref": "#/$defs/meter_kWh_p_kWh_e"
+        },
+        "fuel_pe": {
+          "$ref": "#/$defs/meter_kWh_p_kWh_LHV"
+        },
+        "grid_ef": {
+          "$ref": "#/$defs/meter_kgCO2e_kWh_e"
+        },
+        "fuel_ef": {
+          "$ref": "#/$defs/meter_kgCO2e_kWh_LHV"
+        },
+        "electricity_price": {
+          "$ref": "#/$defs/meter_AUD_kWh_e"
+        },
+        "fuel_price": {
+          "$ref": "#/$defs/meter_AUD_kWh_LHV"
+        },
+        "life": {
+          "$ref": "#/$defs/meter_yr"
+        },
+        "rate": {
+          "$ref": "#/$defs/meter_1"
+        },
+        "boiler_capex": {
+          "$ref": "#/$defs/meter_AUD"
+        },
+        "air_hp_capex": {
+          "$ref": "#/$defs/meter_AUD"
+        },
+        "network_hp_capex": {
+          "$ref": "#/$defs/meter_AUD"
+        },
+        "trench_capex": {
+          "$ref": "#/$defs/meter_AUD_m"
+        },
+        "tank_capex": {
+          "$ref": "#/$defs/meter_AUD_kWh"
+        },
+        "fixed_om": {
+          "$ref": "#/$defs/meter_1_yr"
+        },
+        "boiler_embodied": {
+          "$ref": "#/$defs/meter_kgCO2e"
+        },
+        "air_hp_embodied": {
+          "$ref": "#/$defs/meter_kgCO2e"
+        },
+        "hp_embodied": {
+          "$ref": "#/$defs/meter_kgCO2e"
+        },
+        "pipe_embodied": {
+          "$ref": "#/$defs/meter_kgCO2e_m"
+        },
+        "tank_embodied": {
+          "$ref": "#/$defs/meter_kgCO2e_kWh"
+        },
+        "summer_load_factor": {
+          "$ref": "#/$defs/meter_1"
+        },
+        "winter_load_factor": {
+          "$ref": "#/$defs/meter_1"
+        }
+      }
+    },
+    "layouts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "L",
+        "T"
+      ],
+      "properties": {
+        "L": {
+          "$ref": "#/$defs/route"
+        },
+        "T": {
+          "$ref": "#/$defs/route"
+        }
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "tag",
+          "overrides",
+          "routes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "tag": {
+            "const": "SYNTHETIC"
+          },
+          "overrides": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "source_kw": {
+                "$ref": "#/$defs/meter_kW"
+              },
+              "source_C": {
+                "$ref": "#/$defs/meter_degC"
+              },
+              "source_drop_K": {
+                "$ref": "#/$defs/meter_K"
+              },
+              "hp_kw": {
+                "$ref": "#/$defs/meter_kW"
+              },
+              "hot_C": {
+                "$ref": "#/$defs/meter_degC"
+              },
+              "return_C": {
+                "$ref": "#/$defs/meter_degC"
+              },
+              "approach_K": {
+                "$ref": "#/$defs/meter_K"
+              },
+              "carnot_fraction": {
+                "$ref": "#/$defs/meter_1"
+              },
+              "T0_K": {
+                "$ref": "#/$defs/meter_K"
+              },
+              "ground_C": {
+                "$ref": "#/$defs/meter_degC"
+              },
+              "pipe_U": {
+                "$ref": "#/$defs/meter_W__m_K_"
+              },
+              "pump_dp": {
+                "$ref": "#/$defs/meter_Pa_m"
+              },
+              "pump_fixed_dp": {
+                "$ref": "#/$defs/meter_Pa"
+              },
+              "pump_eff": {
+                "$ref": "#/$defs/meter_1"
+              },
+              "water_cp": {
+                "$ref": "#/$defs/meter_kJ__kg_K_"
+              },
+              "water_density": {
+                "$ref": "#/$defs/meter_kg_m3"
+              },
+              "tank_kwh": {
+                "$ref": "#/$defs/meter_kWh"
+              },
+              "tank_rate": {
+                "$ref": "#/$defs/meter_kW"
+              },
+              "tank_frac_loss": {
+                "$ref": "#/$defs/meter_1_h"
+              },
+              "boiler_eff": {
+                "$ref": "#/$defs/meter_1"
+              },
+              "backup_kw": {
+                "$ref": "#/$defs/meter_kW"
+              },
+              "air_hp_kw": {
+                "$ref": "#/$defs/meter_kW"
+              },
+              "air_carnot_fraction": {
+                "$ref": "#/$defs/meter_1"
+              },
+              "heating_peak_kw": {
+                "$ref": "#/$defs/meter_kW"
+              },
+              "morning_gain": {
+                "$ref": "#/$defs/meter_1"
+              },
+              "dhw_base_kw": {
+                "$ref": "#/$defs/meter_kW"
+              },
+              "dhw_peak_kw": {
+                "$ref": "#/$defs/meter_kW"
+              },
+              "shift_hours": {
+                "$ref": "#/$defs/meter_h"
+              },
+              "heat_supply_C": {
+                "$ref": "#/$defs/meter_degC"
+              },
+              "heat_return_C": {
+                "$ref": "#/$defs/meter_degC"
+              },
+              "dhw_C": {
+                "$ref": "#/$defs/meter_degC"
+              },
+              "inlet_C": {
+                "$ref": "#/$defs/meter_degC"
+              },
+              "grid_pe": {
+                "$ref": "#/$defs/meter_kWh_p_kWh_e"
+              },
+              "fuel_pe": {
+                "$ref": "#/$defs/meter_kWh_p_kWh_LHV"
+              },
+              "grid_ef": {
+                "$ref": "#/$defs/meter_kgCO2e_kWh_e"
+              },
+              "fuel_ef": {
+                "$ref": "#/$defs/meter_kgCO2e_kWh_LHV"
+              },
+              "electricity_price": {
+                "$ref": "#/$defs/meter_AUD_kWh_e"
+              },
+              "fuel_price": {
+                "$ref": "#/$defs/meter_AUD_kWh_LHV"
+              },
+              "life": {
+                "$ref": "#/$defs/meter_yr"
+              },
+              "rate": {
+                "$ref": "#/$defs/meter_1"
+              },
+              "boiler_capex": {
+                "$ref": "#/$defs/meter_AUD"
+              },
+              "air_hp_capex": {
+                "$ref": "#/$defs/meter_AUD"
+              },
+              "network_hp_capex": {
+                "$ref": "#/$defs/meter_AUD"
+              },
+              "trench_capex": {
+                "$ref": "#/$defs/meter_AUD_m"
+              },
+              "tank_capex": {
+                "$ref": "#/$defs/meter_AUD_kWh"
+              },
+              "fixed_om": {
+                "$ref": "#/$defs/meter_1_yr"
+              },
+              "boiler_embodied": {
+                "$ref": "#/$defs/meter_kgCO2e"
+              },
+              "air_hp_embodied": {
+                "$ref": "#/$defs/meter_kgCO2e"
+              },
+              "hp_embodied": {
+                "$ref": "#/$defs/meter_kgCO2e"
+              },
+              "pipe_embodied": {
+                "$ref": "#/$defs/meter_kgCO2e_m"
+              },
+              "tank_embodied": {
+                "$ref": "#/$defs/meter_kgCO2e_kWh"
+              },
+              "summer_load_factor": {
+                "$ref": "#/$defs/meter_1"
+              },
+              "winter_load_factor": {
+                "$ref": "#/$defs/meter_1"
+              }
+            }
+          },
+          "routes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "L": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "T": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "ac_m",
+        "cb_m"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "ac_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "cb_m": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "meter_kW": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kW"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_degC": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "degC"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_K": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "K"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "1"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_W__m_K_": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "W/(m K)"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_Pa_m": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "Pa/m"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_Pa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "Pa"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kJ__kg_K_": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kJ/(kg K)"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kg_m3": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kg/m3"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kWh": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kWh"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_1_h": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "1/h"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_h": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "h"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kWh_p_kWh_e": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kWh_p/kWh_e"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kWh_p_kWh_LHV": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kWh_p/kWh_LHV"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kgCO2e_kWh_e": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kgCO2e/kWh_e"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kgCO2e_kWh_LHV": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kgCO2e/kWh_LHV"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_AUD_kWh_e": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "AUD/kWh_e"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_AUD_kWh_LHV": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "AUD/kWh_LHV"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_yr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "yr"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_AUD": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "AUD"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_AUD_m": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "AUD/m"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_AUD_kWh": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "AUD/kWh"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_1_yr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "1/yr"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kgCO2e": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kgCO2e"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kgCO2e_m": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kgCO2e/m"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "meter_kgCO2e_kWh": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "unit",
+        "value"
+      ],
+      "properties": {
+        "tag": {
+          "const": "SYNTHETIC"
+        },
+        "unit": {
+          "const": "kgCO2e/kWh"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

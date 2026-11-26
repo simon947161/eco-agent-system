@@ -1,0 +1,30 @@
+{
+  "tag": "SYNTHETIC",
+  "version": "HEAT-P1/1.0.0",
+  "review": "FOUNDER_ACCEPTANCE_PENDING",
+  "inputs_and_code_sha256": {
+    "P1_SYNTHETIC_INPUTS.json": "b6a2c2f2d7783dae79af9777288f3a5d0cc94f91b03f4d8622ac5f51f03cda2c",
+    "P1_SYNTHETIC_INPUTS.schema.json": "8a8eb5949ea928b432de17e2c52726ad6e5871ba20e84a8a8c36f4eabf986070",
+    "ledger.py": "737b3890c21db8edbd0d2090af60c4fc74007ecd984f841a078fbf2eb0850c65",
+    "replay.py": "116882463a5ed53bcd07edf481210531d5d138d99d2c913e1374c0bf9b1445fb",
+    "test_ledger.py": "f5bb27ef4f397a06930c08e19bb9db94c03b630596d80878435ef21fd3aa6057"
+  },
+  "outputs_sha256": {
+    "P1_ENERGY_EXERGY_CARBON_LEDGER.json": "7fecb9a2e5d94dee1b173fffebecffd417cbd5ca418102ecf478058dfa888c04",
+    "P1_HOURLY_central.csv.gz": "af325e7833fd6d8c35249321ce3523a6dbaf5388c35cd5f585262672bdfefbc2"
+  },
+  "decompressed_hourly_csv_sha256": "6b337e078f3cb83cc3c4b0aef4f1b261e9e93d4c239643942d652da19be23953",
+  "hourly_detail_case": "central",
+  "hours_per_arm": 8760,
+  "arms": [
+    "R0",
+    "R1",
+    "L",
+    "T"
+  ],
+  "case_count": 13,
+  "validated_arm_hours": 455520,
+  "hourly_tolerance_kWh": 1e-07,
+  "annual_tolerance_kWh": 1e-05,
+  "data_rights": "Author-created synthetic fixtures only"
+}

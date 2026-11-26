@@ -1,0 +1,32 @@
+test_bad_unit_tag_and_missing_input (test_ledger.ThermalLedgerTests.test_bad_unit_tag_and_missing_input) ... ok
+test_cold_source_and_long_route_counterexamples (test_ledger.ThermalLedgerTests.test_cold_source_and_long_route_counterexamples) ... ok
+test_cop_above_carnot_and_compressor_meter (test_ledger.ThermalLedgerTests.test_cop_above_carnot_and_compressor_meter) ... ok
+test_cost_and_operating_carbon_sign_reversals (test_ledger.ThermalLedgerTests.test_cost_and_operating_carbon_sign_reversals) ... ok
+test_device_and_combined_residuals (test_ledger.ThermalLedgerTests.test_device_and_combined_residuals) ... ok
+test_duplicate_edge_in_serialized_input (test_ledger.ThermalLedgerTests.test_duplicate_edge_in_serialized_input) ... ok
+test_duplicate_hour_and_unrestored_terminal_stock (test_ledger.ThermalLedgerTests.test_duplicate_hour_and_unrestored_terminal_stock) ... ok
+test_grid_generation_losses_not_a_second_import (test_ledger.ThermalLedgerTests.test_grid_generation_losses_not_a_second_import) ... ok
+test_half_hour_conversion_independent_of_hourly_convention (test_ledger.ThermalLedgerTests.test_half_hour_conversion_independent_of_hourly_convention) ... ok
+test_hourly_receipt_ids_services_and_stock (test_ledger.ThermalLedgerTests.test_hourly_receipt_ids_services_and_stock) ... ok
+test_label_null_and_storage_bypass (test_ledger.ThermalLedgerTests.test_label_null_and_storage_bypass) ... ok
+test_lifecycle_and_zero_discount (test_ledger.ThermalLedgerTests.test_lifecycle_and_zero_discount) ... ok
+test_low_and_high_segment_swaps_compose (test_ledger.ThermalLedgerTests.test_low_and_high_segment_swaps_compose) ... ok
+test_missing_edge_and_missing_meter_are_not_zero (test_ledger.ThermalLedgerTests.test_missing_edge_and_missing_meter_are_not_zero) ... ok
+test_negative_loss_is_rejected (test_ledger.ThermalLedgerTests.test_negative_loss_is_rejected) ... ok
+test_nonpositive_lift_and_infeasible_service_temperature (test_ledger.ThermalLedgerTests.test_nonpositive_lift_and_infeasible_service_temperature) ... ok
+test_offline_replay_matches_committed_results (test_ledger.ThermalLedgerTests.test_offline_replay_matches_committed_results) ... ok
+test_pipe_pump_and_exergy_against_hand_calculation (test_ledger.ThermalLedgerTests.test_pipe_pump_and_exergy_against_hand_calculation) ... ok
+test_r0_fuel_carbon_and_cost_independent_oracle (test_ledger.ThermalLedgerTests.test_r0_fuel_carbon_and_cost_independent_oracle) ... ok
+test_receptor_and_global_scope_do_not_promote (test_ledger.ThermalLedgerTests.test_receptor_and_global_scope_do_not_promote) ... ok
+test_seasonal_curtailment_and_winter_backup (test_ledger.ThermalLedgerTests.test_seasonal_curtailment_and_winter_backup) ... ok
+test_shifted_demand_matches_service_and_changes_peaks (test_ledger.ThermalLedgerTests.test_shifted_demand_matches_service_and_changes_peaks) ... ok
+test_source_and_receiver_double_count (test_ledger.ThermalLedgerTests.test_source_and_receiver_double_count) ... ok
+test_stock_created_without_charge (test_ledger.ThermalLedgerTests.test_stock_created_without_charge) ... ok
+test_storage_bounds_nonfinite_and_continuity (test_ledger.ThermalLedgerTests.test_storage_bounds_nonfinite_and_continuity) ... ok
+test_underdelivery_and_purpose_swapping (test_ledger.ThermalLedgerTests.test_underdelivery_and_purpose_swapping) ... ok
+test_zero_demands_and_source_outage (test_ledger.ThermalLedgerTests.test_zero_demands_and_source_outage) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 21.405s
+
+OK

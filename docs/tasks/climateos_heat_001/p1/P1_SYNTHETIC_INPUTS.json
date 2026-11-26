@@ -1,0 +1,477 @@
+{
+  "tag": "SYNTHETIC",
+  "version": "HEAT-P1/1.0.0",
+  "profile": {"tag":"SYNTHETIC","month_heating_fraction":[0.04,0.06,0.15,0.38,0.7,0.95,1,0.85,0.6,0.3,0.12,0.05],"month_air_C":[23,22,20,16,12,8,6,8,11,15,18,21],"space_peak_UTC":[6,7,8,9],"space_offpeak_multiplier":0.75,"dhw_peak_UTC":[7,8,18,19],"summer_months":[12,1,2],"winter_months":[6,7,8]},
+  "review": "FOUNDER_ACCEPTANCE_PENDING",
+  "clock": {
+    "tag": "SYNTHETIC",
+    "start": "2001-01-01T00:00:00Z",
+    "hours": 8760,
+    "step_h": 1
+  },
+  "provenance": "Author-defined offline fixtures. L/T distances inherited from draft #177. No measurements, market quotes or statistical confidence intervals.",
+  "parameters": {
+    "source_kw": {
+      "value": 150,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "source_C": {
+      "value": 40,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "source_drop_K": {
+      "value": 5,
+      "unit": "K",
+      "tag": "SYNTHETIC"
+    },
+    "hp_kw": {
+      "value": 200,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "hot_C": {
+      "value": 65,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "return_C": {
+      "value": 40,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "approach_K": {
+      "value": 3,
+      "unit": "K",
+      "tag": "SYNTHETIC"
+    },
+    "carnot_fraction": {
+      "value": 0.49,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "T0_K": {
+      "value": 293.15,
+      "unit": "K",
+      "tag": "SYNTHETIC"
+    },
+    "ground_C": {
+      "value": 12,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "pipe_U": {
+      "value": 0.26,
+      "unit": "W/(m K)",
+      "tag": "SYNTHETIC"
+    },
+    "pump_dp": {
+      "value": 100,
+      "unit": "Pa/m",
+      "tag": "SYNTHETIC"
+    },
+    "pump_fixed_dp": {
+      "value": 25000,
+      "unit": "Pa",
+      "tag": "SYNTHETIC"
+    },
+    "pump_eff": {
+      "value": 0.65,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "water_cp": {
+      "value": 4.18,
+      "unit": "kJ/(kg K)",
+      "tag": "SYNTHETIC"
+    },
+    "water_density": {
+      "value": 1000,
+      "unit": "kg/m3",
+      "tag": "SYNTHETIC"
+    },
+    "tank_kwh": {
+      "value": 320,
+      "unit": "kWh",
+      "tag": "SYNTHETIC"
+    },
+    "tank_rate": {
+      "value": 90,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "tank_frac_loss": {
+      "value": 0.0018,
+      "unit": "1/h",
+      "tag": "SYNTHETIC"
+    },
+    "boiler_eff": {
+      "value": 0.9,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "backup_kw": {
+      "value": 650,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "air_hp_kw": {
+      "value": 240,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "air_carnot_fraction": {
+      "value": 0.5,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "heating_peak_kw": {
+      "value": 230,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "morning_gain": {
+      "value": 1.4,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "dhw_base_kw": {
+      "value": 12,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "dhw_peak_kw": {
+      "value": 35,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "shift_hours": {
+      "value": 0,
+      "unit": "h",
+      "tag": "SYNTHETIC"
+    },
+    "heat_supply_C": {
+      "value": 45,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "heat_return_C": {
+      "value": 35,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "dhw_C": {
+      "value": 60,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "inlet_C": {
+      "value": 12,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "grid_pe": {
+      "value": 2,
+      "unit": "kWh_p/kWh_e",
+      "tag": "SYNTHETIC"
+    },
+    "fuel_pe": {
+      "value": 1.1,
+      "unit": "kWh_p/kWh_LHV",
+      "tag": "SYNTHETIC"
+    },
+    "grid_ef": {
+      "value": 0.4,
+      "unit": "kgCO2e/kWh_e",
+      "tag": "SYNTHETIC"
+    },
+    "fuel_ef": {
+      "value": 0.2,
+      "unit": "kgCO2e/kWh_LHV",
+      "tag": "SYNTHETIC"
+    },
+    "electricity_price": {
+      "value": 0.16,
+      "unit": "AUD/kWh_e",
+      "tag": "SYNTHETIC"
+    },
+    "fuel_price": {
+      "value": 0.08,
+      "unit": "AUD/kWh_LHV",
+      "tag": "SYNTHETIC"
+    },
+    "life": {
+      "value": 20,
+      "unit": "yr",
+      "tag": "SYNTHETIC"
+    },
+    "rate": {
+      "value": 0.05,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "boiler_capex": {
+      "value": 60000,
+      "unit": "AUD",
+      "tag": "SYNTHETIC"
+    },
+    "air_hp_capex": {
+      "value": 95000,
+      "unit": "AUD",
+      "tag": "SYNTHETIC"
+    },
+    "network_hp_capex": {
+      "value": 145000,
+      "unit": "AUD",
+      "tag": "SYNTHETIC"
+    },
+    "trench_capex": {
+      "value": 700,
+      "unit": "AUD/m",
+      "tag": "SYNTHETIC"
+    },
+    "tank_capex": {
+      "value": 90,
+      "unit": "AUD/kWh",
+      "tag": "SYNTHETIC"
+    },
+    "fixed_om": {
+      "value": 0.025,
+      "unit": "1/yr",
+      "tag": "SYNTHETIC"
+    },
+    "boiler_embodied": {
+      "value": 12500,
+      "unit": "kgCO2e",
+      "tag": "SYNTHETIC"
+    },
+    "air_hp_embodied": {
+      "value": 17000,
+      "unit": "kgCO2e",
+      "tag": "SYNTHETIC"
+    },
+    "hp_embodied": {
+      "value": 27000,
+      "unit": "kgCO2e",
+      "tag": "SYNTHETIC"
+    },
+    "pipe_embodied": {
+      "value": 65,
+      "unit": "kgCO2e/m",
+      "tag": "SYNTHETIC"
+    },
+    "tank_embodied": {
+      "value": 18,
+      "unit": "kgCO2e/kWh",
+      "tag": "SYNTHETIC"
+    },
+    "summer_load_factor": {
+      "value": 1,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "winter_load_factor": {
+      "value": 1,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    }
+  },
+  "layouts": {
+    "L": {
+      "tag": "SYNTHETIC",
+      "ac_m": 80,
+      "cb_m": 40
+    },
+    "T": {
+      "tag": "SYNTHETIC",
+      "ac_m": 120,
+      "cb_m": 180
+    }
+  },
+  "scenarios": [
+    {
+      "id": "central",
+      "tag": "SYNTHETIC",
+      "overrides": {},
+      "routes": {}
+    },
+    {
+      "id": "cold_source",
+      "tag": "SYNTHETIC",
+      "overrides": {
+        "source_C": {
+          "value": 25,
+          "unit": "degC",
+          "tag": "SYNTHETIC"
+        },
+        "carnot_fraction": {
+          "value": 0.34,
+          "unit": "1",
+          "tag": "SYNTHETIC"
+        }
+      },
+      "routes": {}
+    },
+    {
+      "id": "long_pipes",
+      "tag": "SYNTHETIC",
+      "overrides": {},
+      "routes": {
+        "L": [
+          1000,
+          1800
+        ],
+        "T": [
+          1600,
+          3500
+        ]
+      }
+    },
+    {
+      "id": "seasonal_mismatch",
+      "tag": "SYNTHETIC",
+      "overrides": {
+        "summer_load_factor": {
+          "value": 0.12,
+          "unit": "1",
+          "tag": "SYNTHETIC"
+        },
+        "winter_load_factor": {
+          "value": 1.35,
+          "unit": "1",
+          "tag": "SYNTHETIC"
+        }
+      },
+      "routes": {}
+    },
+    {
+      "id": "no_store",
+      "tag": "SYNTHETIC",
+      "overrides": {
+        "tank_kwh": {
+          "value": 0,
+          "unit": "kWh",
+          "tag": "SYNTHETIC"
+        }
+      },
+      "routes": {}
+    },
+    {
+      "id": "large_store",
+      "tag": "SYNTHETIC",
+      "overrides": {
+        "tank_kwh": {
+          "value": 1280,
+          "unit": "kWh",
+          "tag": "SYNTHETIC"
+        }
+      },
+      "routes": {}
+    },
+    {
+      "id": "high_grid",
+      "tag": "SYNTHETIC",
+      "overrides": {
+        "grid_ef": {
+          "value": 0.99,
+          "unit": "kgCO2e/kWh_e",
+          "tag": "SYNTHETIC"
+        }
+      },
+      "routes": {}
+    },
+    {
+      "id": "cost_stress",
+      "tag": "SYNTHETIC",
+      "overrides": {
+        "electricity_price": {
+          "value": 0.34,
+          "unit": "AUD/kWh_e",
+          "tag": "SYNTHETIC"
+        },
+        "trench_capex": {
+          "value": 2200,
+          "unit": "AUD/m",
+          "tag": "SYNTHETIC"
+        },
+        "rate": {
+          "value": 0.09,
+          "unit": "1",
+          "tag": "SYNTHETIC"
+        }
+      },
+      "routes": {}
+    },
+    {
+      "id": "diverse_demand",
+      "tag": "SYNTHETIC",
+      "overrides": {
+        "shift_hours": {
+          "value": 5,
+          "unit": "h",
+          "tag": "SYNTHETIC"
+        }
+      },
+      "routes": {}
+    },
+    {
+      "id": "hot_source",
+      "tag": "SYNTHETIC",
+      "overrides": {
+        "source_C": {
+          "value": 60,
+          "unit": "degC",
+          "tag": "SYNTHETIC"
+        }
+      },
+      "routes": {}
+    },
+    {
+      "id": "swap_low",
+      "tag": "SYNTHETIC",
+      "overrides": {},
+      "routes": {
+        "L": [
+          120,
+          40
+        ],
+        "T": [
+          80,
+          180
+        ]
+      }
+    },
+    {
+      "id": "swap_hot",
+      "tag": "SYNTHETIC",
+      "overrides": {},
+      "routes": {
+        "L": [
+          80,
+          180
+        ],
+        "T": [
+          120,
+          40
+        ]
+      }
+    },
+    {
+      "id": "equal_length",
+      "tag": "SYNTHETIC",
+      "overrides": {},
+      "routes": {
+        "L": [
+          80,
+          40
+        ],
+        "T": [
+          80,
+          40
+        ]
+      }
+    }
+  ],
+  "uncertainty": "Finite deterministic stress cases, jointly paired R0/R1/L/T. Ranges are design choices without field probabilities. Unvaried parameters are conditional fixed assumptions."
+}

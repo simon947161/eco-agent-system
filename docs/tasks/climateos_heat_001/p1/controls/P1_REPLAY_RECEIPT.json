@@ -1,0 +1,29 @@
+{
+  "tag": "SYNTHETIC",
+  "fixture_uncompressed_sha256": "20211941069b2748b2e55404d366807c94c0115c6a8aa8ef9bc4fdfce02b8bde",
+  "replayed_content_sha256": {
+    "results/P1_ENERGY_EXERGY_CARBON_LEDGER.json": "7fecb9a2e5d94dee1b173fffebecffd417cbd5ca418102ecf478058dfa888c04",
+    "results/P1_HOURLY_central.csv.gz": "6b337e078f3cb83cc3c4b0aef4f1b261e9e93d4c239643942d652da19be23953",
+    "controls/P1_PAIRED_SPATIAL_CONTROLS.json": "9e20ec6120b6477444e37fd846d222168a132e54743c42df39ea715adb97ea8e"
+  },
+  "primary_arm_hours": 455520,
+  "supplement_arm_hours": 420480,
+  "unit_tests_passed": 34,
+  "independent_csv_audit": {
+    "origin": "SYNTHETIC",
+    "hourly_rows_checked": 35040,
+    "edges_per_row": 24,
+    "control_volumes_per_hour": 10,
+    "largest_reconstructed_residual_kWh": {
+      "R0": 4.00007138523506e-10,
+      "R1": 8.999450074043125e-10,
+      "L": 8.275833351945039e-10,
+      "T": 9.040377335622907e-10
+    },
+    "center_annual_metrics_per_arm": 7,
+    "review": "COMPUTATIONAL_CROSSCHECK_ONLY"
+  },
+  "independent_science_review": "PENDING",
+  "receptor_response": "UNKNOWN",
+  "global_cooling": "NOT_TESTABLE"
+}
