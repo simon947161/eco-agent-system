@@ -62,3 +62,5 @@ CarbonOS/AWT 可借用反事实、证据护照和缺项停止规则。EcoEngine 
 |关键词|人为排热、地球能量不平衡、储热、热泵、热网、反事实、局地暴露、水热生态、资料准入|
 
 本包入口：[来源及版本](HEAT_001_P0_SOURCE_REGISTER.md) · [数字审计](HEAT_001_P0_DIMENSIONAL_AUDIT.md) · [机制图和假设](HEAT_001_P0_THERMAL_NETWORK_HYPOTHESES.md) · [仓库盘点和准入](HEAT_001_P0_SIMULATION_GATE.md)。既有 [CarbonOS 索引](https://github.com/simon947161/eco-agent-system/blob/2ec66ae41ae2e1d4a0f1aaa92aa98c9f0ff4c5b0/docs/research/carbonos/INDEX.md) · [综合科学任务交接](https://github.com/simon947161/eco-agent-system/blob/b143485ed0db7af48ecd19aa7b93c5f234cede46/docs/tasks/climateos_science_handoff_20261124_001/UNIFIED_TASK_INDEX.md) · [跨研究来源映射](https://github.com/simon947161/eco-agent-system/blob/055af110423a4759a88b01896e1813ede4abe50b/docs/tasks/climateos_explainable_science_web_001/SOURCE_MAP.md)。
+
+**P0-A｜最小热生态网络实验（MVTEE，设计稿）。** [任务 #175](https://github.com/simon947161/eco-agent-system/issues/175) 承接 [#173](https://github.com/simon947161/eco-agent-system/issues/173)。[中文验收报告与 CRP](MVTEE_ACCEPTANCE_REVIEW_CN.md) · [实验设计与资料权限](MVTEE_EXPERIMENT_DESIGN.md) · [空间布局与敏感性](MVTEE_SPATIAL_LAYOUT_CONCEPT.md) · [五项账本](MVTEE_BOUNDARY_AND_LEDGERS.md) · [反证与阈值](MVTEE_FAILURE_MODES.md)。P1 合成会计待 Founder 单独批准。

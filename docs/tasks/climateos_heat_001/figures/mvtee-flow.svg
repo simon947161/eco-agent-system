@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="470" viewBox="0 0 1120 470" role="img" aria-labelledby="title desc">
+  <title id="title">A 的余热如何到达 B 的服务表</title>
+  <desc id="desc">箭头表示热、电和库存之间的方向。余热分为截取和原口旁路，热泵同时接受电功，罐可充放，服务、管损和弃热分开。</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#60777c"/></marker>
+    <marker id="t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#007777"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#ac5028"/></marker>
+    <marker id="v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#69528a"/></marker>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, Noto Sans SC, sans-serif">
+  <rect x="1" y="1" width="1118" height="468" rx="8" fill="#fafcf9" stroke="#cedad7" stroke-width="2"/>
+  <text x="30" y="42" font-size="28" fill="#18353c" font-weight="700" text-anchor="start">A 的余热如何到达 B 的服务表</text>
+  <text x="1090" y="40" font-size="17" fill="#007777" font-weight="700" text-anchor="end">CONCEPTUAL</text>
+  <text x="30" y="74" font-size="18" fill="#45636a" font-weight="400" text-anchor="start">系统能量流 · 线宽与热量无关；每条设备内部转移在合并账中成对抵消。</text>
+  <path d="M30 93 H1090" fill="none" stroke="#c8d7d1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="flows">
+    <path d="M210 210 H310" fill="none" stroke="#007777" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#t)"/>
+    <path d="M520 210 H675" fill="none" stroke="#ac5028" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#r)"/>
+    <path d="M855 210 H925" fill="none" stroke="#ac5028" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#r)"/>
+    <path d="M413 143 V172" fill="none" stroke="#69528a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#v)"/>
+    <path d="M130 247 V332" fill="none" stroke="#60777c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#a)"/>
+    <path d="M629 210 V280 H600 V320" fill="none" stroke="#ac5028" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#r)"/>
+    <path d="M717 320 V244" fill="none" stroke="#ac5028" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#r)"/>
+    <path d="M800 245 V302 H938 V330" fill="none" stroke="#60777c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#a)"/>
+  </g>
+  <g id="n-32-172">
+    <rect x="32" y="172" width="178" height="74" rx="7" fill="#ffffff" stroke="#007777" stroke-width="2"/>
+    <text x="46" y="203" font-size="22" fill="#007777" font-weight="700" text-anchor="start">A  原工艺</text>
+    <text x="46" y="230" font-size="17" fill="#45636a" font-weight="400" text-anchor="start">毛余热出口</text>
+  </g>
+  <g id="n-310-172">
+    <rect x="310" y="172" width="210" height="74" rx="7" fill="#ffffff" stroke="#007777" stroke-width="2"/>
+    <text x="324" y="203" font-size="22" fill="#007777" font-weight="700" text-anchor="start">C  热泵</text>
+    <text x="324" y="230" font-size="17" fill="#45636a" font-weight="400" text-anchor="start">蒸发器 → 冷凝器</text>
+  </g>
+  <g id="n-675-172">
+    <rect x="675" y="172" width="180" height="74" rx="7" fill="#ffffff" stroke="#ac5028" stroke-width="2"/>
+    <text x="689" y="203" font-size="22" fill="#ac5028" font-weight="700" text-anchor="start">热端分配</text>
+    <text x="689" y="230" font-size="17" fill="#45636a" font-weight="400" text-anchor="start">即时供热优先</text>
+  </g>
+  <g id="n-925-172">
+    <rect x="925" y="172" width="160" height="74" rx="7" fill="#ffffff" stroke="#ac5028" stroke-width="2"/>
+    <text x="939" y="203" font-size="22" fill="#ac5028" font-weight="700" text-anchor="start">B  服务表</text>
+    <text x="939" y="230" font-size="17" fill="#45636a" font-weight="400" text-anchor="start">供暖＋热水</text>
+  </g>
+  <text x="226" y="197" font-size="17" fill="#007777" font-weight="600" text-anchor="start">截取热</text>
+  <text x="544" y="196" font-size="17" fill="#ac5028" font-weight="600" text-anchor="start">冷凝热</text>
+  <text x="413" y="132" font-size="19" fill="#69528a" font-weight="700" text-anchor="middle">压缩机电功</text>
+  <g id="n-32-333">
+    <rect x="32" y="333" width="232" height="74" rx="7" fill="#ffffff" stroke="#60777c" stroke-width="2"/>
+    <text x="46" y="364" font-size="22" fill="#60777c" font-weight="700" text-anchor="start">原排口旁路</text>
+    <text x="46" y="391" font-size="17" fill="#45636a" font-weight="400" text-anchor="start">保留最初的受纳介质</text>
+  </g>
+  <g id="n-523-322">
+    <rect x="523" y="322" width="252" height="74" rx="7" fill="#ffffff" stroke="#ac5028" stroke-width="2"/>
+    <text x="537" y="353" font-size="22" fill="#ac5028" font-weight="700" text-anchor="start">C  水罐</text>
+    <text x="537" y="380" font-size="17" fill="#45636a" font-weight="400" text-anchor="start">充入、放出、静损、库存</text>
+  </g>
+  <text x="551" y="301" font-size="17" fill="#ac5028" font-weight="600" text-anchor="start">充</text>
+  <text x="726" y="294" font-size="17" fill="#ac5028" font-weight="600" text-anchor="start">放</text>
+  <g id="n-840-333">
+    <rect x="840" y="333" width="246" height="74" rx="7" fill="#ffffff" stroke="#60777c" stroke-width="2"/>
+    <text x="854" y="364" font-size="22" fill="#60777c" font-weight="700" text-anchor="start">沿线损失与弃热</text>
+    <text x="854" y="391" font-size="17" fill="#45636a" font-weight="400" text-anchor="start">分介质、分时间、分出口</text>
+  </g>
+  <text x="33" y="438" font-size="18" fill="#45636a" font-weight="400" text-anchor="start">另计两环泵电、控制电、B 的备用与末端补热；所有电耗均进入整网账。</text>
+  </g>
+</svg>

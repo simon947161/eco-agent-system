@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+  <title id="title">热量跨边界，火用在不可逆过程中损毁</title>
+  <desc id="desc">宽虚框是 A 原出口到 B 服务表的全网。热泵、双管和储罐分别计量，旁路和损失离开热网。火用损毁有独立账。</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#60777c"/></marker>
+    <marker id="t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#007777"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#ac5028"/></marker>
+    <marker id="v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#69528a"/></marker>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, Noto Sans SC, sans-serif">
+  <rect x="1" y="1" width="1118" height="498" rx="8" fill="#fafcf9" stroke="#cedad7" stroke-width="2"/>
+  <text x="30" y="42" font-size="28" fill="#18353c" font-weight="700" text-anchor="start">热量跨边界，火用在不可逆过程中损毁</text>
+  <text x="1090" y="40" font-size="17" fill="#007777" font-weight="700" text-anchor="end">CONCEPTUAL</text>
+  <text x="30" y="74" font-size="18" fill="#45636a" font-weight="400" text-anchor="start">边界与损失 · 箭头只表示方向。设备边界用于查错，全网边界用于汇总，受体边界用于评估影响。</text>
+  <path d="M30 93 H1090" fill="none" stroke="#c8d7d1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="outer">
+    <rect x="206" y="137" width="629" height="225" rx="13" fill="#edf4ef" stroke="#688980" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="224" y="167" font-size="19" fill="#45636a" font-weight="700" text-anchor="start">整网控制体　A 分流点 → B 表前</text>
+  </g>
+  <g id="inputs">
+    <text x="36" y="201" font-size="17" fill="#007777" font-weight="600" text-anchor="start">A 工艺毛余热</text>
+    <path d="M40 217 H245" fill="none" stroke="#007777" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#t)"/>
+    <text x="38" y="258" font-size="17" fill="#69528a" font-weight="600" text-anchor="start">电功 / 备用燃料</text>
+    <path d="M40 273 H245" fill="none" stroke="#69528a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#v)"/>
+  </g>
+  <g id="components">
+    <rect x="264" y="197" width="162" height="87" rx="6" fill="#ffffff" stroke="#007777" stroke-width="2"/>
+    <text x="345" y="227" font-size="22" fill="#007777" font-weight="700" text-anchor="middle">C 热泵</text>
+    <text x="345" y="260" font-size="17" fill="#45636a" font-weight="400" text-anchor="middle">冷端＋电 → 热端</text>
+    <rect x="473" y="197" width="186" height="87" rx="6" fill="#ffffff" stroke="#ac5028" stroke-width="2"/>
+    <text x="566" y="227" font-size="22" fill="#ac5028" font-weight="700" text-anchor="middle">双管与水罐</text>
+    <text x="566" y="260" font-size="17" fill="#45636a" font-weight="400" text-anchor="middle">内转移、库存 ΔE</text>
+    <path d="M427 238 H468" fill="none" stroke="#ac5028" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#r)"/>
+    <path d="M660 238 H870" fill="none" stroke="#ac5028" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#r)"/>
+    <text x="680" y="225" font-size="17" fill="#ac5028" font-weight="600" text-anchor="start">合格服务</text>
+    <text x="226" y="321" font-size="17" fill="#18353c" font-weight="500" text-anchor="start">逐段查　换热端差、泵功入水、管道净散热、罐体静损及期末库存</text>
+  </g>
+  <g id="outputs">
+    <rect x="870" y="207" width="214" height="67" rx="6" fill="#ffffff" stroke="#ac5028" stroke-width="2"/>
+    <text x="977" y="236" font-size="20" fill="#ac5028" font-weight="700" text-anchor="middle">B 的服务边界</text>
+    <text x="977" y="260" font-size="16" fill="#45636a" font-weight="400" text-anchor="middle">供暖 / 生活热水</text>
+    <path d="M415 363 V396 H672" fill="none" stroke="#60777c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5" marker-end="url(#a)"/>
+    <text x="210" y="425" font-size="18" fill="#45636a" font-weight="600" text-anchor="start">原口旁路、弃热、设备与沿线散热</text>
+    <rect x="677" y="374" width="405" height="56" rx="6" fill="#e7eff0" stroke="#9ab1b4" stroke-width="2"/>
+    <text x="879" y="408" font-size="18" fill="#18353c" font-weight="600" text-anchor="middle">空气 / 土壤 / 水　按时间和位置登记</text>
+  </g>
+  <text x="30" y="472" font-size="18" fill="#69528a" font-weight="600" text-anchor="start">火用另列：电功、随热传递的可用功、库存火用和 T₀ × 熵生成。火用损毁不从能量账再扣一次。</text>
+  </g>
+</svg>
