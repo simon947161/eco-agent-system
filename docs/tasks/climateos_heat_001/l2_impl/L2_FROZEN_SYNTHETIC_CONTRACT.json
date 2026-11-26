@@ -1,0 +1,741 @@
+{
+  "schema": "ClimateOS-HEAT-001-L2-FROZEN-CONTRACT/1.0.0",
+  "status": "GATE_PASS",
+  "frozen_at_utc": "2026-11-26T19:46:00Z",
+  "authorization": {
+    "issue": 183,
+    "authorization": "L2 SYNTHETIC IMPLEMENTATION",
+    "scope": "offline synthetic 1D transient thermo-hydraulics only",
+    "design_commit": "8b08152670406ec57de443facd5d589060a675b0",
+    "p1_pr": 179,
+    "p1_head": "5a2039a2753142b2eb17665da2dba6c4a8648b14"
+  },
+  "provenance": {
+    "p0_head": "de0b951e5644696e956c20cc03ab848e5742be70",
+    "p0a_head": "369ee6b9703fedb54ca4da684920e6c23825d6ca",
+    "arch_p0_head": "4c078aefa90ea9206dd789578682b489bf27e29e",
+    "p1_input_path": "docs/tasks/climateos_heat_001/p1/P1_SYNTHETIC_INPUTS.json",
+    "p1_input_sha256": "b6a2c2f2d7783dae79af9777288f3a5d0cc94f91b03f4d8622ac5f51f03cda2c",
+    "p1_hour_fixture_path": "docs/tasks/climateos_heat_001/p1/controls/paired_hours.csv.gz",
+    "p1_hour_fixture_commit": "5a2039a2753142b2eb17665da2dba6c4a8648b14",
+    "p1_hour_fixture_gzip_sha256": "b47919eef8b20db388c83aacfa18266819c4d3581076adb4665bed28cc29f94d",
+    "p1_hour_fixture_uncompressed_sha256": "20211941069b2748b2e55404d366807c94c0115c6a8aa8ef9bc4fdfce02b8bde",
+    "p1_controls_sha256": "9e20ec6120b6477444e37fd846d222168a132e54743c42df39ea715adb97ea8e",
+    "p1_reference_ledger_sha256": "7fecb9a2e5d94dee1b173fffebecffd417cbd5ca418102ecf478058dfa888c04",
+    "p1_replay_receipt_tests_passed": 34,
+    "note": "The P1 source files retain their original review fields and bytes. Founder acceptance is recorded by Issues #176/#183; no P1 file or calculation is changed or rerun."
+  },
+  "time_and_service": {
+    "all_inputs_tag": "SYNTHETIC",
+    "clock": {
+      "tag": "SYNTHETIC",
+      "start": "2001-01-01T00:00:00Z",
+      "hours": 8760,
+      "step_h": 1
+    },
+    "fixture_columns": [
+      "origin",
+      "hour",
+      "utc",
+      "gross_kw",
+      "air_C",
+      "space_kw",
+      "dhw_kw",
+      "mismatch_space_kw",
+      "mismatch_dhw_kw",
+      "diverse_space_kw",
+      "diverse_dhw_kw",
+      "july_source_available",
+      "july_maintenance_source_available"
+    ],
+    "primary_fixture_profile": "central",
+    "primary_demand_columns": [
+      "space_kw",
+      "dhw_kw"
+    ],
+    "service_temperature_boundaries": {
+      "heat_network_supply_C": 65,
+      "heat_network_return_C": 40,
+      "space_delivery_C": 45,
+      "space_return_C": 35,
+      "dhw_delivery_C": 60,
+      "dhw_inlet_C": 12,
+      "heat_exchanger_approach_K": 3,
+      "qualified_primary_supply_min_C": 63
+    },
+    "backup": {
+      "rated_thermal_kW": 650,
+      "efficiency": 0.9,
+      "service_rule": "covers any network/HP/tank shortfall without load shedding; exceedance is INVALID"
+    },
+    "matched_services_and_stocks": true,
+    "fixture_generation": "Use the byte-identical frozen 8,760-row UTC P1 paired_hours.csv.gz fixture. Zero-order hold hourly demand at the chosen internal solver step; no synthetic weather or demand is regenerated."
+  },
+  "p1_parameters": {
+    "source_kw": {
+      "value": 150,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "source_C": {
+      "value": 40,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "source_drop_K": {
+      "value": 5,
+      "unit": "K",
+      "tag": "SYNTHETIC"
+    },
+    "hp_kw": {
+      "value": 200,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "hot_C": {
+      "value": 65,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "return_C": {
+      "value": 40,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "approach_K": {
+      "value": 3,
+      "unit": "K",
+      "tag": "SYNTHETIC"
+    },
+    "carnot_fraction": {
+      "value": 0.49,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "T0_K": {
+      "value": 293.15,
+      "unit": "K",
+      "tag": "SYNTHETIC"
+    },
+    "ground_C": {
+      "value": 12,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "pipe_U": {
+      "value": 0.26,
+      "unit": "W/(m K)",
+      "tag": "SYNTHETIC"
+    },
+    "pump_dp": {
+      "value": 100,
+      "unit": "Pa/m",
+      "tag": "SYNTHETIC"
+    },
+    "pump_fixed_dp": {
+      "value": 25000,
+      "unit": "Pa",
+      "tag": "SYNTHETIC"
+    },
+    "pump_eff": {
+      "value": 0.65,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "water_cp": {
+      "value": 4.18,
+      "unit": "kJ/(kg K)",
+      "tag": "SYNTHETIC"
+    },
+    "water_density": {
+      "value": 1000,
+      "unit": "kg/m3",
+      "tag": "SYNTHETIC"
+    },
+    "tank_kwh": {
+      "value": 320,
+      "unit": "kWh",
+      "tag": "SYNTHETIC"
+    },
+    "tank_rate": {
+      "value": 90,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "tank_frac_loss": {
+      "value": 0.0018,
+      "unit": "1/h",
+      "tag": "SYNTHETIC"
+    },
+    "boiler_eff": {
+      "value": 0.9,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "backup_kw": {
+      "value": 650,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "air_hp_kw": {
+      "value": 240,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "air_carnot_fraction": {
+      "value": 0.5,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "heating_peak_kw": {
+      "value": 230,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "morning_gain": {
+      "value": 1.4,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "dhw_base_kw": {
+      "value": 12,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "dhw_peak_kw": {
+      "value": 35,
+      "unit": "kW",
+      "tag": "SYNTHETIC"
+    },
+    "shift_hours": {
+      "value": 0,
+      "unit": "h",
+      "tag": "SYNTHETIC"
+    },
+    "heat_supply_C": {
+      "value": 45,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "heat_return_C": {
+      "value": 35,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "dhw_C": {
+      "value": 60,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "inlet_C": {
+      "value": 12,
+      "unit": "degC",
+      "tag": "SYNTHETIC"
+    },
+    "grid_pe": {
+      "value": 2,
+      "unit": "kWh_p/kWh_e",
+      "tag": "SYNTHETIC"
+    },
+    "fuel_pe": {
+      "value": 1.1,
+      "unit": "kWh_p/kWh_LHV",
+      "tag": "SYNTHETIC"
+    },
+    "grid_ef": {
+      "value": 0.4,
+      "unit": "kgCO2e/kWh_e",
+      "tag": "SYNTHETIC"
+    },
+    "fuel_ef": {
+      "value": 0.2,
+      "unit": "kgCO2e/kWh_LHV",
+      "tag": "SYNTHETIC"
+    },
+    "electricity_price": {
+      "value": 0.16,
+      "unit": "AUD/kWh_e",
+      "tag": "SYNTHETIC"
+    },
+    "fuel_price": {
+      "value": 0.08,
+      "unit": "AUD/kWh_LHV",
+      "tag": "SYNTHETIC"
+    },
+    "life": {
+      "value": 20,
+      "unit": "yr",
+      "tag": "SYNTHETIC"
+    },
+    "rate": {
+      "value": 0.05,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "boiler_capex": {
+      "value": 60000,
+      "unit": "AUD",
+      "tag": "SYNTHETIC"
+    },
+    "air_hp_capex": {
+      "value": 95000,
+      "unit": "AUD",
+      "tag": "SYNTHETIC"
+    },
+    "network_hp_capex": {
+      "value": 145000,
+      "unit": "AUD",
+      "tag": "SYNTHETIC"
+    },
+    "trench_capex": {
+      "value": 700,
+      "unit": "AUD/m",
+      "tag": "SYNTHETIC"
+    },
+    "tank_capex": {
+      "value": 90,
+      "unit": "AUD/kWh",
+      "tag": "SYNTHETIC"
+    },
+    "fixed_om": {
+      "value": 0.025,
+      "unit": "1/yr",
+      "tag": "SYNTHETIC"
+    },
+    "boiler_embodied": {
+      "value": 12500,
+      "unit": "kgCO2e",
+      "tag": "SYNTHETIC"
+    },
+    "air_hp_embodied": {
+      "value": 17000,
+      "unit": "kgCO2e",
+      "tag": "SYNTHETIC"
+    },
+    "hp_embodied": {
+      "value": 27000,
+      "unit": "kgCO2e",
+      "tag": "SYNTHETIC"
+    },
+    "pipe_embodied": {
+      "value": 65,
+      "unit": "kgCO2e/m",
+      "tag": "SYNTHETIC"
+    },
+    "tank_embodied": {
+      "value": 18,
+      "unit": "kgCO2e/kWh",
+      "tag": "SYNTHETIC"
+    },
+    "summer_load_factor": {
+      "value": 1,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    },
+    "winter_load_factor": {
+      "value": 1,
+      "unit": "1",
+      "tag": "SYNTHETIC"
+    }
+  },
+  "p1_layouts": {
+    "L": {
+      "tag": "SYNTHETIC",
+      "ac_m": 80,
+      "cb_m": 40
+    },
+    "T": {
+      "tag": "SYNTHETIC",
+      "ac_m": 120,
+      "cb_m": 180
+    }
+  },
+  "l2_geometry": {
+    "tag": "SYNTHETIC",
+    "topology": "A stable synthetic waste-heat source -> A-C low-temperature closed loop -> C heat-pump/optional tank station -> C-B high-temperature closed loop -> B one seasonal aggregated building-service demand",
+    "no_third_A_B_pipe": true,
+    "lengths_are": "fictional single-trip trench lengths, not combined supply/return physical pipe length",
+    "layouts": {
+      "L": {
+        "ac_low_temperature_trench_m": 80,
+        "cb_high_temperature_trench_m": 40,
+        "node_relative_elevation_m": {
+          "A": 0,
+          "C": 2,
+          "B": 3
+        }
+      },
+      "T": {
+        "ac_low_temperature_trench_m": 120,
+        "cb_high_temperature_trench_m": 180,
+        "node_relative_elevation_m": {
+          "A": 0,
+          "C": 6,
+          "B": 3
+        }
+      }
+    },
+    "elevation_path": "linear interpolation between fixed node elevations along each conceptual route; no unobserved intermediate high point",
+    "coordinate_frame": "arbitrary local right-handed XYZ, z up, m; no CRS, no field geometry"
+  },
+  "l2_fluid_properties": {
+    "tag": "SYNTHETIC",
+    "fluid": "liquid water",
+    "density_kg_m3": 1000,
+    "heat_capacity_J_kg_K": 4180,
+    "dynamic_viscosity_Pa_s": 0.001,
+    "applicability": "constant-property approximation across synthetic 12-68 degC envelope; temperature-dependent properties are not claimed; sensitivity/error is disclosed",
+    "gravity_m_s2": 9.80665,
+    "saturation_pressure_rule": {
+      "bound": "conservative saturation-pressure upper bound 80,000 Pa over 0-90 degC synthetic domain",
+      "reference": "IAPWS-IF97 Region 4 saturation curve; coefficient/property implementation not installed",
+      "url": "https://iapws.org/technical-guidance/release/IF97-Rev",
+      "safety_check": "p_absolute - 80,000 Pa >= 50,000 Pa and p_absolute >= 120,000 Pa"
+    }
+  },
+  "l2_pipe_properties": {
+    "tag": "SYNTHETIC",
+    "inside_diameter_m": 0.2,
+    "relative_roughness_abs_m": 0.000045,
+    "wall_material": "generic steel approximation, not a product specification",
+    "wall_thickness_m": 0.008,
+    "wall_density_kg_m3": 7850,
+    "wall_heat_capacity_J_kg_K": 500,
+    "water_to_wall_conductance_W_m_K": 200,
+    "pipe_to_ground_Uprime_W_m_K_per_single_pipe": 0.26,
+    "supply_and_return_each_modelled": true,
+    "ground_temperature_C": 12,
+    "local_loss_sum_K_per_closed_loop": 4,
+    "friction_model": "Darcy-Weisbach; f=64/Re for Re<=2300; Swamee-Jain explicit turbulent approximation for Re>=4000; linear interpolation over 2300<Re<4000; zero friction at zero flow",
+    "pump_fixed_equipment_drop_Pa": 25000,
+    "insulation_model": "lumped insulation/ground resistance represented by inherited P1 equivalent Uprime; no layer geometry or soil thermal diffusion"
+  },
+  "l2_flow_and_pumps": {
+    "tag": "SYNTHETIC",
+    "low_loop_design_mass_flow_kg_s": 7.177033492822966,
+    "high_loop_design_mass_flow_kg_s": 2.77511961722488,
+    "flow_control": "load-following variable-speed circulation; required flow follows requested thermal transfer and frozen design ΔT; compute system friction and minor losses from actual flow, check pump curve capacity; if capacity insufficient, actual flow/service is limited and backup serves; never silently clamp demand",
+    "pump_curve": "maximum head Δp=120000 Pa*(1-(Q/Qshut)^2), Qshut=3*Qdesign; available head checked against 25000 Pa inherited equipment allowance plus Darcy and local losses; variable-speed control may reduce speed, not exceed maximum curve",
+    "pump_efficiency": 0.65,
+    "max_abs_pressure_reference_Pa": 300000,
+    "minimum_absolute_pressure_Pa": 120000,
+    "pressure_safety_rule": "report absolute pressure along each supply/return profile; reject below 120 kPa or if pressure minus water saturation pressure at local temperature <50 kPa; calculate both local elevation pressure and full closed-loop static elevation sum"
+  },
+  "l2_heat_pump_and_tank": {
+    "tag": "SYNTHETIC",
+    "heat_pump_capacity_kW": 200,
+    "source_capacity_kW": 150,
+    "source_supply_C": 40,
+    "source_design_drop_K": 5,
+    "heat_network_supply_C": 65,
+    "heat_network_return_C": 40,
+    "approach_K": 3,
+    "carnot_fraction": 0.49,
+    "cop_rule": "P1 Carnot-fraction rule with dynamic low-loop source return temperature and fixed 65 C heat-network supply plus 3 K approach; require 1<COP<=Carnot limit; HP output also bounded by 200 kW and source extraction by 150 kW",
+    "tank": {
+      "location": "C",
+      "side": "high-temperature/load side",
+      "capacity_kWh": 320,
+      "max_charge_discharge_kW": 90,
+      "loss_fraction_per_hour": 0.0018,
+      "initial_usable_inventory_kWh": 0,
+      "terminal_usable_inventory_kWh": 0,
+      "thermal_model": "single lumped usable-energy state; equivalent ΔT=25 K and water volume derived from frozen density/cp; no stratification claim",
+      "equivalent_temperature_span_K": 25,
+      "equivalent_volume_m3": 11.023923444976077
+    },
+    "control": "inherit P1 priority: HP serves current qualified demand, then charges tank; unmet demand first discharges tank where allowed, then common backup; no charging during P1 terminal restoration window; any deficit beyond backup is INVALID"
+  },
+  "initial_and_terminal_state": {
+    "tag": "SYNTHETIC",
+    "tank_start_end_kWh": 0,
+    "source_and_loop_water_mass": "constant, same initial and terminal mass; no leakage or makeup",
+    "pipe_and_wall_initialization": "periodic annual state obtained by repeating the exact frozen demand year as warm-up; analyse one following cycle only when every cell's start/end temperature differs by <=0.01 K; warm-up outputs excluded from annual metrics",
+    "max_warmup_cycles": 8,
+    "terminal_acceptance": "tank end exactly 0 kWh within 1e-7 kWh; per-cell fluid/wall periodic temperature delta <=0.01 K; otherwise INVALID and no layout ranking",
+    "baseline_alignment": "R0/R1 P1 baseline inventories remain zero; the L2 network cycle is periodic, so added pipe/water/wall/tank end-stock change is zero before comparing service/energy; no free initial heat"
+  },
+  "math_and_solver": {
+    "state_variables": [
+      "per-cell fluid temperature",
+      "per-cell pipe-wall temperature",
+      "loop mass flow",
+      "node absolute pressure",
+      "tank usable energy",
+      "HP/pump states"
+    ],
+    "equations": [
+      "node mass continuity",
+      "quasi-steady 1D loop momentum with Darcy-Weisbach and local K losses plus rho*g*dz",
+      "finite-volume upwind enthalpy advection",
+      "fluid-to-wall and wall-to-fixed-ground heat transfer",
+      "HP source/sink energy and COP",
+      "single-state tank energy balance",
+      "B demand and service/backup balance"
+    ],
+    "discretization": "explicit finite-volume upwind advection coupled to lumped wall thermal capacities; source/sink node mixing by mass-weighted enthalpy; one-dimensional cells along each individual supply/return pipe",
+    "space_resolution_m": [
+      50,
+      25,
+      12.5
+    ],
+    "time_steps_seconds": [
+      60,
+      30,
+      15
+    ],
+    "stability": "maximum design velocity 0.228 m/s; with 12.5 m minimum cell and 15 s minimum dt, CFL <=0.274; required CFL <=0.6 for every run",
+    "zero_flow": "disable advection/friction, retain wall/ground thermal exchange and fixed inventories",
+    "flow_reversal": "orientation sign changes upwind boundary and route order; tested explicitly",
+    "solver_choice": "pure Python standard library only; no package installation or external simulator",
+    "dependencies": {
+      "python": "3.14.4",
+      "required_packages": "Python standard library only",
+      "numpy": false,
+      "scipy": false,
+      "external_services": false
+    }
+  },
+  "scenarios": {
+    "main": "central: run exact P1 8760-hour matched demand for L/T; compare R0/R1/L/T with frozen P1 canonical annual service, energy, operation-carbon and cost records",
+    "preregistered_stress": [
+      "cold_source: P1 source_C=25 C and carnot_fraction=0.34",
+      "long_pipes: P1 route overrides L=[1000,1800] m, T=[1600,3500] m, explicitly synthetic stress only",
+      "equal_geometry: L and T same A-C/C-B geometry, expect identical results",
+      "summer_winter: use frozen P1 monthly demand and source profile; no altered weather"
+    ],
+    "failures": [
+      "zero-flow / interruption",
+      "low-grade source with COP invalid/off",
+      "high point pressure below 120 kPa abs",
+      "insufficient backup / service underdelivery",
+      "long-distance synthetic delay and heat loss",
+      "negative tank stock",
+      "invalid units and missing fields",
+      "flow reversal",
+      "non-finite temperature/pressure",
+      "P1 terminal stock mismatch"
+    ],
+    "comparative_scope": "report new L2 annual outputs next to immutable P1 reference; do not recalibrate, overwrite, or rerun P1"
+  },
+  "preregistered_acceptance_thresholds": {
+    "mass_residual_kg_s_abs": 1e-9,
+    "energy_residual_kWh_per_substep_abs": 1e-7,
+    "annual_energy_residual_kWh_abs": 0.00001,
+    "analytic_hydrostatic_relative_error": 0.000001,
+    "darcy_known_case_relative_error": 0.000001,
+    "no_loss_travel_time_error_seconds": "<= one fine solver step (15 s)",
+    "steady_pipe_heat_transfer_relative_error": 0.01,
+    "single_finite_mass_temperature_relative_error": 0.01,
+    "closed_loop_static_head_residual_Pa": 1,
+    "service_per_hour_absolute_error_kWh": 1e-7,
+    "service_annual_relative_error": 1e-9,
+    "pressure_minimum_Pa_abs": 120000,
+    "saturation_pressure_margin_Pa_min": 50000,
+    "temperature_domain_C": [
+      0,
+      90
+    ],
+    "heat_pump_COP_domain": "1<COP<=Carnot bound",
+    "tank_stock_kWh_domain": [
+      0,
+      320
+    ],
+    "time_convergence": [
+      "three levels dt=60/30/15 s at fixed dx=25 m",
+      "relative change <=0.5% for annual energy, pumping and qualified delivered heat; <=1.0% for peak metrics; delay difference <=15 s"
+    ],
+    "space_convergence": [
+      "three levels dx=50/25/12.5 m at fixed dt=30 s",
+      "relative change <=1.0% for annual energy, pumping and qualified delivered heat; <=2.0% for peak pressure and temperature"
+    ],
+    "independent_replay": "independent script recomputes Darcy/hydrostatic anchors and annual energy/service from stored hourly rows; metrics agree to <=1e-6 relative or defined absolute floor",
+    "ranking_rule": "no recommendation if any quality gate fails; report synthetic conditional deltas, no probability interval, no environmental/health/receptor claim",
+    "fail_states": [
+      "INVALID",
+      "INCONCLUSIVE",
+      "CONDITIONALLY_SUPPORTED"
+    ]
+  },
+  "p1_reference_metrics": {
+    "R0": {
+      "service_kWh": 909419.8599999617,
+      "electricity_kWh": 0,
+      "fuel_kWh_LHV": 1010466.5111111728,
+      "primary_kWh": 1111513.1622222902,
+      "operation_kgCO2e": 202093.30222223458,
+      "optional_embodied_kgCO2e": 12500,
+      "partial_life_kgCO2e": 4054366.0444446914,
+      "partial_life_kgCO2e_per_MWh": 222.90947354310373,
+      "capital_AUD": {
+        "boiler": 60000,
+        "hp": 0,
+        "route": 0,
+        "tank": 0
+      },
+      "annual_opex_AUD": {
+        "fixed": 1500,
+        "electricity": 0,
+        "fuel": 80837.32088889382
+      },
+      "PV_cost_AUD": 1086105.0119586058,
+      "LCOH_AUD_per_MWh": 95.83238716640626
+    },
+    "R1": {
+      "service_kWh": 909419.8599999617,
+      "electricity_kWh": 305608.3489374598,
+      "fuel_kWh_LHV": 39035.11111111096,
+      "primary_kWh": 654155.3200971417,
+      "operation_kgCO2e": 130050.36179720612,
+      "optional_embodied_kgCO2e": 29500,
+      "partial_life_kgCO2e": 2630507.2359441225,
+      "partial_life_kgCO2e_per_MWh": 144.62556579445237,
+      "capital_AUD": {
+        "boiler": 60000,
+        "hp": 95000,
+        "route": 0,
+        "tank": 0
+      },
+      "annual_opex_AUD": {
+        "fixed": 3875,
+        "electricity": 48897.33582999357,
+        "fuel": 3122.8088888888765
+      },
+      "PV_cost_AUD": 851577.0506134258,
+      "LCOH_AUD_per_MWh": 75.13883162111996
+    },
+    "L": {
+      "service_kWh": 909419.8599999617,
+      "electricity_kWh": 193191.24962795796,
+      "fuel_kWh_LHV": 39637.09401302367,
+      "primary_kWh": 429983.302670242,
+      "operation_kgCO2e": 85203.91865378793,
+      "optional_embodied_kgCO2e": 53060,
+      "partial_life_kgCO2e": 1757138.3730757586,
+      "partial_life_kgCO2e_per_MWh": 96.60765342620913,
+      "capital_AUD": {
+        "boiler": 60000,
+        "hp": 145000,
+        "route": 84000,
+        "tank": 28800
+      },
+      "annual_opex_AUD": {
+        "fixed": 7945,
+        "electricity": 30910.599940473276,
+        "fuel": 3170.9675210418936
+      },
+      "PV_cost_AUD": 841543.9236803486,
+      "LCOH_AUD_per_MWh": 74.25355948430654
+    },
+    "T": {
+      "service_kWh": 909419.8599999617,
+      "electricity_kWh": 198376.51025009982,
+      "fuel_kWh_LHV": 45961.483176107744,
+      "primary_kWh": 447310.6519939182,
+      "operation_kgCO2e": 88542.90073526147,
+      "optional_embodied_kgCO2e": 64760,
+      "partial_life_kgCO2e": 1835618.0147052296,
+      "partial_life_kgCO2e_per_MWh": 100.92247241583809,
+      "capital_AUD": {
+        "boiler": 60000,
+        "hp": 145000,
+        "route": 210000,
+        "tank": 28800
+      },
+      "annual_opex_AUD": {
+        "fixed": 11095,
+        "electricity": 31740.24164001597,
+        "fuel": 3676.9186540886194
+      },
+      "PV_cost_AUD": 1023444.3250710677,
+      "LCOH_AUD_per_MWh": 90.3035265683959
+    }
+  },
+  "resource_gate": {
+    "cpu_model": "AMD Ryzen 5 9600X 6-Core Processor (read-only registry)",
+    "physical_cores": 6,
+    "logical_processors": 12,
+    "memory_total_bytes": 33463066624,
+    "memory_available_bytes": 17537212416,
+    "disk_C_total_bytes": 999044411392,
+    "disk_C_available_bytes": 342734393344,
+    "gpu_descriptors": [
+      "NVIDIA GeForce RTX 5060",
+      "AMD Radeon(TM) Graphics"
+    ],
+    "gpu_memory": "NOT_VERIFIED; not required because the frozen solver is single-process CPU Python and makes no GPU calls",
+    "python_runtime": "3.14.4, 64-bit",
+    "package_probe": {
+      "numpy": false,
+      "scipy": false,
+      "pandas": false,
+      "matplotlib": false,
+      "pytest": false
+    },
+    "resource_probe": {
+      "script": "l2_impl/profile_resources.py",
+      "script_sha256": "2067d047d1e7ddfe626208600d6de46976dd783244723fa21db3103c64028951",
+      "sample_operations": 10000000,
+      "sample_seconds": 1.2847346999915317,
+      "projected_cell_updates": 276465600,
+      "projected_runtime_with_2x_margin_seconds": 71.03698993479576,
+      "projected_runtime_budget_seconds": 180,
+      "max_fine_grid_cells_all_pipes": 76,
+      "representative_hourly_output_rows": 8760,
+      "representative_output_bytes": 1094129,
+      "profile_output_sha256": "a86b2773aa1e7565455ff45299725e59b658b7f8ef924de0f50636b9a86a867b",
+      "working_state_buffer_bytes": 2488,
+      "memory_budget_bytes": 536870912,
+      "output_disk_budget_bytes": 104857600,
+      "available_headroom_confirmed": true,
+      "measurement_note": "Three runs of 10,000,000 non-physical updates: 1.2847 s maximum; measured memory for 8x76-cell state arrays and inventory 20,472 bytes (tracemalloc peak 288,754 bytes); representative 8,760-row profile output 1,094,129 bytes. 276,465,600 planned cell updates project to 71.04 s with 2x margin. This is a resource-only workload projection, not model performance or L2 output. During implementation stop before any full case if measured solver exceeds frozen 180 s/512 MiB/100 MiB budgets.",
+      "representative_state_bytes": 20472,
+      "representative_tracemalloc_peak_bytes": 288754
+    },
+    "permissions": "Python can execute and write only inside the authorized workspace; no install attempted and none required; computation is offline."
+  },
+  "security_and_prohibitions": {
+    "data": "only byte-pinned SYNTHETIC P1 input fixture and newly declared SYNTHETIC parameters",
+    "network_during_runs": false,
+    "real_site_or_council_data": false,
+    "cfd_or_p2": false,
+    "software_installation": false,
+    "production_deployment": false,
+    "main_merge": false,
+    "p1_rewrite_or_rerun": false
+  },
+  "decision_metrics": {
+    "primary": "annual purchased primary energy = electricity_kWh_e * grid_pe + fuel_kWh_LHV * fuel_pe",
+    "secondary": [
+      "annual operational kgCO2e",
+      "LCOH AUD/MWh using frozen P1 capex/lifetime/discount formula, recomputed only as a new L2 extension"
+    ],
+    "minimum_meaningful_deltas": {
+      "primary_energy_kWh_per_year": 1000,
+      "operational_carbon_kgCO2e_per_year": 200,
+      "LCOH_AUD_per_MWh": 1
+    },
+    "interpretation": "Values below the preregistered delta are reported as below-decision-resolution. A ranking change is conditionally supported only if its sign changes beyond the applicable delta and every quality gate passes; no probabilities or external claims."
+  },
+  "pre_run_gate": {
+    "status": "PASS",
+    "checks": {
+      "dependency_heads_and_pr_status": "PASS",
+      "p1_fixture_sha_and_8760_utc_rows": "PASS",
+      "local_python_and_standard_library_only": "PASS",
+      "cpu_ram_disk_readonly_inspection": "PASS",
+      "synthetic_physical_parameter_closure": "PASS",
+      "resource_only_preflight_with_frozen_budget": "PASS",
+      "data_security_and_isolation": "PASS",
+      "no_case_outputs_before_gate_commit": true
+    },
+    "execution_order": "Commit this manifest, gate document, SHA receipt, fixture copies, resource profile and deterministic validator before any formal L2 scenario output. After that commit, validate/implement analytic tests; measure the actual solver against budgets. If any check or budget fails, stop with GATE_BLOCKED/INVALID; do not run full annual L2 cases.",
+    "checked_at_utc": "2026-11-26T19:46:00Z"
+  },
+  "claim_boundaries": {
+    "tag": "SYNTHETIC",
+    "H2_receptor_response": "UNKNOWN",
+    "H3_global_cooling": "NOT_TESTABLE",
+    "real_world_claims": false
+  }
+}

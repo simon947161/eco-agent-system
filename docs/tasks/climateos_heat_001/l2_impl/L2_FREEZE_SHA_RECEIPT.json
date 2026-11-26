@@ -1,0 +1,41 @@
+{
+  "tag": "SYNTHETIC",
+  "receipt_schema": "HEAT-001-L2-FREEZE-SHA/1.0.0",
+  "status": "GATE_PASS",
+  "authorization_issue": 183,
+  "design_commit": "8b08152670406ec57de443facd5d589060a675b0",
+  "p1_reference_commit": "5a2039a2753142b2eb17665da2dba6c4a8648b14",
+  "frozen_contract": {
+    "path": "docs/tasks/climateos_heat_001/l2_impl/L2_FROZEN_SYNTHETIC_CONTRACT.json",
+    "sha256": "85c092ecad0c484ee40825e081be8cf50cd9c579123ebea2385c3c4adf4e66ba",
+    "github_blob_sha": "3f409fbe0c4ca27787081cb2ff273f45807fe72c"
+  },
+  "gate_document_sha256": "4ba8451ce3d5cb93417bf45e0d124c6f31623020cd71709162c1262d6e5918d5",
+  "gate_validator_sha256": "1601d7e3a4ed9c5ec7cf6ce395d876f7f446905c0b8c9e8d2d917f8171611e00",
+  "resource_probe": {
+    "path": "docs/tasks/climateos_heat_001/l2_impl/profile_resources.py",
+    "sha256": "2067d047d1e7ddfe626208600d6de46976dd783244723fa21db3103c64028951",
+    "output_sha256": "a86b2773aa1e7565455ff45299725e59b658b7f8ef924de0f50636b9a86a867b",
+    "measured_sample_seconds": [1.2847346999915317, 1.226568599930033, 1.2659617000026628],
+    "projected_total_with_margin_seconds": 71.03698993479576,
+    "no_l2_case_output": true
+  },
+  "p1_immutable_sources": {
+    "input_json_sha256": "b6a2c2f2d7783dae79af9777288f3a5d0cc94f91b03f4d8622ac5f51f03cda2c",
+    "input_schema_sha256": "8a8eb5949ea928b432de17e2c52726ad6e5871ba20e84a8a8c36f4eabf986070",
+    "paired_hours_gzip_sha256": "b47919eef8b20db388c83aacfa18266819c4d3581076adb4665bed28cc29f94d",
+    "paired_hours_uncompressed_sha256": "20211941069b2748b2e55404d366807c94c0115c6a8aa8ef9bc4fdfce02b8bde",
+    "canonical_ledger_sha256": "7fecb9a2e5d94dee1b173fffebecffd417cbd5ca418102ecf478058dfa888c04",
+    "existing_replay_receipt_tests_passed": 34
+  },
+  "deterministic_gate_check": {
+    "command": "python -B l2_impl/L2_GATE_VALIDATOR.py",
+    "status": "GATE_PASS",
+    "p1_hour_rows_verified": 8760,
+    "first_utc": "2001-01-01T00:00:00+00:00",
+    "last_utc": "2001-12-31T23:00:00+00:00",
+    "formal_l2_case_outputs_present": false
+  },
+  "frozen_before_formal_l2_scenarios": true
+}
+
