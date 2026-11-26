@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">ClimateOS HEAT–001 L2 synthetic one-dimensional system</title>
+  <desc id="desc">Editable schematic of A-C-B synthetic heat and water networks, L/T route lengths and elevation, paired supply and return loops, heat pump, tank, demand and audit boundaries.</desc>
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c2413b"/></marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2675a5"/></marker>
+    <marker id="arrowInk" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#334155"/></marker>
+    <style>
+      text{font-family:Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:29px;font-weight:700}.sub{font-size:15px;fill:#506176}.h{font-size:19px;font-weight:700}.body{font-size:15px}.small{font-size:13px;fill:#475569}.node{fill:#fff;stroke:#1e293b;stroke-width:3}.card{fill:#f8fafc;stroke:#cbd5e1;stroke-width:1.5}.supply{fill:none;stroke:#c2413b;stroke-width:5;marker-end:url(#arrowRed)}.return{fill:none;stroke:#2675a5;stroke-width:4;stroke-dasharray:10 7;marker-end:url(#arrowBlue)}.route{fill:none;stroke:#64748b;stroke-width:2.5}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="44" y="50" class="title">ClimateOS HEAT–001 · L2 合成 1D 动态热—水力系统</text>
+  <text x="44" y="78" class="sub">SYNTHETIC only · fixed topology A–C–B · paired supply/return pipes · dt 60 s / dx 25 m base run</text>
+
+  <rect x="42" y="112" width="1116" height="294" rx="16" class="card"/>
+  <text x="64" y="145" class="h">热力边界与控制体</text>
+  <rect x="74" y="190" width="188" height="126" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="168" y="220" text-anchor="middle" class="h">A · 合成余热源</text>
+  <text x="168" y="249" text-anchor="middle" class="body">40 °C · ≤150 kW</text>
+  <text x="168" y="274" text-anchor="middle" class="small">水质量恒定 · ΔT设计 5 K</text>
+  <text x="168" y="298" text-anchor="middle" class="small">SYNTHETIC source</text>
+
+  <rect x="474" y="168" width="246" height="167" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="597" y="196" text-anchor="middle" class="h">C · 能源站</text>
+  <rect x="499" y="211" width="103" height="88" rx="8" fill="#ffffff" stroke="#60a5fa"/>
+  <text x="550" y="238" text-anchor="middle" class="body">热泵</text>
+  <text x="550" y="260" text-anchor="middle" class="small">≤200 kW</text>
+  <text x="550" y="282" text-anchor="middle" class="small">COP 受源温约束</text>
+  <rect x="619" y="211" width="79" height="88" rx="8" fill="#ffffff" stroke="#60a5fa"/>
+  <text x="659" y="238" text-anchor="middle" class="body">水罐</text>
+  <text x="659" y="260" text-anchor="middle" class="small">320 kWh</text>
+  <text x="659" y="282" text-anchor="middle" class="small">单状态</text>
+
+  <rect x="910" y="190" width="188" height="126" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+  <text x="1004" y="220" text-anchor="middle" class="h">B · 聚合需求</text>
+  <text x="1004" y="249" text-anchor="middle" class="body">65/40 °C primary</text>
+  <text x="1004" y="274" text-anchor="middle" class="small">P1 逐时 space + DHW</text>
+  <text x="1004" y="298" text-anchor="middle" class="small">备用锅炉 ≤650 kW</text>
+
+  <path d="M263 218 C330 182 405 182 474 218" class="supply"/>
+  <text x="365" y="180" text-anchor="middle" class="small">A–C 低温供水 · 平流热输送</text>
+  <path d="M474 289 C402 350 330 350 263 289" class="return"/>
+  <text x="366" y="365" text-anchor="middle" class="small">A–C 回水 · 变速泵 + Darcy 摩阻 + 高差</text>
+  <path d="M720 218 C785 182 846 182 910 218" class="supply"/>
+  <text x="815" y="180" text-anchor="middle" class="small">C–B 高温供水 · 65 °C 目标</text>
+  <path d="M910 289 C846 350 785 350 720 289" class="return"/>
+  <text x="815" y="365" text-anchor="middle" class="small">C–B 回水 · 40 °C 参考</text>
+  <text x="64" y="390" class="small">能量审计：热泵热量 + 储罐放热 ↔ 建筑服务 + 管损 + 储罐蓄热/损失；管壁储能单列。热泵电功只计一次。</text>
+
+  <rect x="42" y="430" width="542" height="272" rx="16" class="card"/>
+  <text x="64" y="464" class="h">L 布局 · 低高差短路线</text>
+  <path d="M104 608 L300 568 L474 548" class="route"/>
+  <circle cx="104" cy="608" r="13" class="node"/><circle cx="300" cy="568" r="13" class="node"/><circle cx="474" cy="548" r="13" class="node"/>
+  <text x="104" y="638" text-anchor="middle" class="body">A · 0 m</text><text x="300" y="600" text-anchor="middle" class="body">C · +2 m</text><text x="474" y="580" text-anchor="middle" class="body">B · +3 m</text>
+  <text x="104" y="668" text-anchor="middle" class="small">A–C 80 m</text><text x="390" y="635" text-anchor="middle" class="small">C–B 40 m</text>
+  <text x="64" y="493" class="small">线性节点高程；每条供/回水单独建模；无额外高点</text>
+
+  <rect x="616" y="430" width="542" height="272" rx="16" class="card"/>
+  <text x="638" y="464" class="h">T 布局 · 长路线与高差</text>
+  <path d="M678 608 L874 520 L1048 568" class="route"/>
+  <circle cx="678" cy="608" r="13" class="node"/><circle cx="874" cy="520" r="13" class="node"/><circle cx="1048" cy="568" r="13" class="node"/>
+  <text x="678" y="638" text-anchor="middle" class="body">A · 0 m</text><text x="874" y="552" text-anchor="middle" class="body">C · +6 m</text><text x="1048" y="600" text-anchor="middle" class="body">B · +3 m</text>
+  <text x="678" y="668" text-anchor="middle" class="small">A–C 120 m</text><text x="972" y="635" text-anchor="middle" class="small">C–B 180 m</text>
+  <text x="638" y="493" class="small">静压沿程恢复/下降；绝压与保守饱和裕度逐路径校核</text>
+
+  <text x="44" y="735" class="small">简化范围：准稳态动量、固定 12 °C 合成地温、常物性；不含土壤扩散、实测路线、CFD 或 P2。</text>
+</svg>

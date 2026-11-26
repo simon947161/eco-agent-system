@@ -1,0 +1,52 @@
+ClimateOS HEAT–001 L2 SYNTHETIC IMPLEMENTATION test log
+Date: 2026-11-27 Australia/Sydney
+Python: 3.14.4 64-bit; standard library only
+All runtime inputs: SYNTHETIC
+
+STAGE 1 (recorded before first L2 scenario)
+  Gate amendment commit: a351247e92a673dc39a2136822ed8fe3e5a65231
+  Frozen contract SHA-256: 60861f0fc5c34e14f7c66feff10b70b7680e61809cbf27e3df9225c4232a9c7b
+  Deterministic checks: GATE_PASS; 8,760 UTC rows verified; CFL max=0.6853562142713195 <= 0.7; T high-point static pressure=241160.1 Pa >=130000 Pa; P1 input and gzip hashes match; no case artifacts in gate commit.
+  The final gate SHA receipt is immutable; Stage 2 results are recorded in L2_RUN_RECEIPT.json.
+
+UNIT / ANALYTIC TESTS
+  Command: python -B -m unittest -v tests.test_l2_model
+  Result: 12 passed, 0 failed, 0 errors (0.001 s)
+  Passing tests:
+    test_bad_units_and_nonfinite_reject
+    test_closed_loop_static_head_cancels
+    test_cop_domain_and_pump_limiter
+    test_failure_cases_are_falsifiable
+    test_hydrostatic_anchor
+    test_laminar_darcy_anchor
+    test_no_loss_transport_travel_time
+    test_pipe_zero_flow_and_reversal
+    test_pressure_gate
+    test_single_finite_mass_adiabatic_exchange
+    test_tank_conservation_and_bounds
+    test_upwind_reversal_and_stability_guard
+
+DOCUMENT PACKAGE CHECKS
+  python -B doc_check.py: 6 Markdown files scanned; 0 broken local links; Founder deck contains 9 slide sections.
+  JSON parse: L2_RUN_RECEIPT.json and L2_FROZEN_SYNTHETIC_CONTRACT.json PASS.
+  XML parse: editable l2_synthetic_system.svg PASS.
+
+INTEGRATION ANNUAL RUNS
+  L command: python -B run_l2.py L 60 25
+  L solver time: 15.284635300 s; 2 warm-up years; 8,760 output rows; periodic max state delta=0 K; tank terminal=0 kWh; high-loop residual=5.14095518e-7 kWh; tank residual=-1.70805549e-7 kWh; status PASS at base resolution.
+  T command: python -B run_l2.py T 60 25
+  T solver time: 19.909881800 s; 2 warm-up years; 8,760 output rows; periodic max state delta=0 K; tank terminal=0 kWh; high-loop residual=-4.06354957e-7 kWh; tank residual=-1.55792350e-7 kWh; status PASS at base resolution.
+
+INDEPENDENT REPLAY (does not import solver)
+  python -B independent_replay.py L 60 25
+    rows=8760; demand=909419.86 kWh; service=909419.8600000001 kWh; tank residual=4.44134685e-9 kWh; pipe residual=-1.46246748e-9 kWh; gzip SHA-256=bacbab25ee5871e21137ac1d5e0ad7f2cbaff9a9aaf1610eca31d88829e698db.
+  python -B independent_replay.py T 60 25
+    rows=8760; demand=909419.86 kWh; service=909419.86 kWh; tank residual=4.02133082e-9 kWh; pipe residual=-4.27098712e-9 kWh; gzip SHA-256=68eca616ca21bf815426362e7bd195e1cc5046ca065c92de9781c2ffa9ca0171.
+
+RESOURCE / STOP RECORD
+  One no-write L run sampled with Windows GetProcessMemoryInfo: 15.4506781 s wall, peak working set=47,501,312 B, 306 samples.
+  A tracemalloc-wrapped repeated run was stopped at 120 s because tracing overhead prevented timely completion; no memory estimate was taken from that probe. OS sampling produced the working-set evidence above.
+  Base L/T solver times sum to 35.1945171 s for 39,945,600 cell updates. Measured throughput projects the frozen minimum workload of 276,465,600 updates to 243.583 s, above the 180 s ceiling. No remaining full-year timestep/space-convergence cases were run. Final scientific status is INCONCLUSIVE; a rank is not accepted.
+
+DEVELOPMENT CORRECTION NOTE
+  An early integration audit exposed an undercount of pipe-to-ground heat because the checker used one cell-average per pipe. The audit was corrected to sum per-cell wall flux; no frozen physical parameter or tolerance changed. Both final layouts were rerun and passed the unchanged 1e-5 kWh annual energy tolerance.
