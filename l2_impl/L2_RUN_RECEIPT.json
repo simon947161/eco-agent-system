@@ -1,0 +1,72 @@
+{
+  "tag": "SYNTHETIC",
+  "receipt": "HEAT-001-L2-SCENARIO-RUN/1.0.0",
+  "authorization_issue": 183,
+  "result_status": "INCONCLUSIVE_RESOURCE_GATED",
+  "branch": "codex/heat-001-l2-synthetic-implementation-20261127",
+  "gate_commit": "a351247e92a673dc39a2136822ed8fe3e5a65231",
+  "frozen_contract_sha256": "60861f0fc5c34e14f7c66feff10b70b7680e61809cbf27e3df9225c4232a9c7b",
+  "design_commit": "8b08152670406ec57de443facd5d589060a675b0",
+  "p1_reference_commit": "5a2039a2753142b2eb17665da2dba6c4a8648b14",
+  "implementation_sha256": {
+    "l2_model.py": "d789184f1d0c029eaff1966b8ef9b6bb4703b9ab5e57ee7de89003e9b5c5d3f5",
+    "run_l2.py": "fca25fa73f923625d30d69f420ae2e9139a323b59911bbe5f60edbfd22a55c6a",
+    "independent_replay.py": "4f6aac251f78facf678c4ef1a83dcb76f4d89f9d1972b29e136e779398ab0d34",
+    "tests/test_l2_model.py": "598189362cca830b258bf93973ef5fc8d36f8df2e2597c1a67464783acb4590f"
+  },
+  "input_sha256": {
+    "P1_SYNTHETIC_INPUTS.json": "b6a2c2f2d7783dae79af9777288f3a5d0cc94f91b03f4d8622ac5f51f03cda2c",
+    "P1_SYNTHETIC_INPUTS.schema.json": "8a8eb5949ea928b432de17e2c52726ad6e5871ba20e84a8a8c36f4eabf986070",
+    "paired_hours.csv.gz": "b47919eef8b20db388c83aacfa18266819c4d3581076adb4665bed28cc29f94d",
+    "paired_hours.csv.gz_uncompressed": "20211941069b2748b2e55404d366807c94c0115c6a8aa8ef9bc4fdfce02b8bde"
+  },
+  "case_resolution": {"time_step_seconds": 60, "space_cell_upper_bound_m": 25, "clock": "2001 UTC, 8760 hours", "warmup_cycles": 2},
+  "cases": {
+    "L": {
+      "runtime_seconds": 15.284635300049558,
+      "service_kwh": 909419.8600050625,
+      "primary_energy_kwh": 428789.1598694588,
+      "operational_kgco2e": 82863.41863035754,
+      "lcoh_aud_per_mwh": 73.2241119750497,
+      "annual_network_residual_kwh": 5.140955181559548e-7,
+      "annual_tank_residual_kwh": -1.7080554925996694e-7,
+      "periodic_delta_k": 0.0,
+      "terminal_tank_kwh": 0.0,
+      "hourly_output": {"path": "outputs/L2_V3_L_dt60_dx25.0_hourly.csv.gz", "bytes": 78443, "sha256": "bacbab25ee5871e21137ac1d5e0ad7f2cbaff9a9aaf1610eca31d88829e698db"},
+      "annual_output": {"path": "outputs/L2_V3_L_dt60_dx25.0_annual.json", "bytes": 1143, "sha256": "f7c1a037a90acad7a9e8e897e1547e90da176c174e7c3db25199b5c00d2a7164"},
+      "independent_replay": {"service_kwh": 909419.8600000001, "tank_residual_kwh": 4.441346845851513e-9, "pipe_residual_kwh": -1.4624674804508686e-9}
+    },
+    "T": {
+      "runtime_seconds": 19.90988179994747,
+      "service_kwh": 909419.8600050625,
+      "primary_energy_kwh": 467198.8681662496,
+      "operational_kgco2e": 89828.66116990783,
+      "lcoh_aud_per_mwh": 90.869056524378,
+      "annual_network_residual_kwh": -4.0635495679453015e-7,
+      "annual_tank_residual_kwh": -1.5579234968754463e-7,
+      "periodic_delta_k": 0.0,
+      "terminal_tank_kwh": 0.0,
+      "hourly_output": {"path": "outputs/L2_V3_T_dt60_dx25.0_hourly.csv.gz", "bytes": 214779, "sha256": "68eca616ca21bf815426362e7bd195e1cc5046ca065c92de9781c2ffa9ca0171"},
+      "annual_output": {"path": "outputs/L2_V3_T_dt60_dx25.0_annual.json", "bytes": 1133, "sha256": "a20797b3f11ac6f24fba1272ca1659d977134e74cd7dcd89383eb69c32d7b427"},
+      "independent_replay": {"service_kwh": 909419.86, "tank_residual_kwh": 4.021330823889002e-9, "pipe_residual_kwh": -4.270987119525671e-9}
+    }
+  },
+  "test_evidence": {"unit_tests": "12 passed / 0 failed", "full_case_convergence": "NOT_RUN", "reason": "measured runtime projection exceeds the frozen 180-second budget"},
+  "document_checks": {"markdown_files": 6, "broken_local_links": 0, "founder_slides": 9, "run_receipt_json_valid": true, "frozen_contract_json_valid": true, "editable_svg_xml_valid": true},
+  "resources": {
+    "python": "3.14.4 x64; standard library only",
+    "peak_working_set_bytes": 47501312,
+    "working_set_probe_wall_seconds": 15.450678099994548,
+    "base_case_pair_cell_updates": 39945600,
+    "base_case_pair_solver_seconds": 35.19451709999703,
+    "observed_cell_updates_per_second": 1134994.9734074734,
+    "frozen_minimum_workload_cell_updates": 276465600,
+    "projected_seconds_at_observed_rate": 243.58310519208473,
+    "frozen_runtime_budget_seconds": 180,
+    "frozen_memory_budget_bytes": 536870912,
+    "frozen_output_budget_bytes": 104857600,
+    "no_write_tracemalloc_probe": "Stopped at 120 seconds due instrumentation overhead; no memory result claimed. OS working-set sampler used instead."
+  },
+  "convergence": {"time_levels_60_30_15_s": "incomplete; only 60 s run", "space_levels_50_25_12_5_m": "incomplete; only 25 m run", "layout_ranking": "INCONCLUSIVE"},
+  "prohibitions_observed": {"real_data_used": false, "P1_modified_or_recalculated": false, "CFD_or_P2": false, "software_installed": false, "production_deployed": false, "main_merged": false}
+}
