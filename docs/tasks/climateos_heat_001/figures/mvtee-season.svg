@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="476" viewBox="0 0 1120 476" role="img" aria-labelledby="title desc">
+  <title id="title">夏季满罐与冬季缺热可以同时出现</title>
+  <desc id="desc">两条功率曲线是各端独立的手绘季节形态。下方另画储热状态的满、空、恢复顺序，不用数值刻度。</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#60777c"/></marker>
+    <marker id="t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#007777"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#ac5028"/></marker>
+    <marker id="v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#69528a"/></marker>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, Noto Sans SC, sans-serif">
+  <rect x="1" y="1" width="1118" height="474" rx="8" fill="#fafcf9" stroke="#cedad7" stroke-width="2"/>
+  <text x="30" y="42" font-size="28" fill="#18353c" font-weight="700" text-anchor="start">夏季满罐与冬季缺热可以同时出现</text>
+  <text x="1090" y="40" font-size="17" fill="#007777" font-weight="700" text-anchor="end">CONCEPTUAL</text>
+  <text x="30" y="74" font-size="18" fill="#45636a" font-weight="400" text-anchor="start">手绘年度时序 · 上图为各自相对功率，下图为罐内相对可用库存；曲线均无数值刻度。</text>
+  <path d="M30 93 H1090" fill="none" stroke="#c8d7d1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="seasons">
+    <text x="165" y="121" font-size="18" fill="#45636a" font-weight="600" text-anchor="middle">夏</text>
+    <text x="385" y="121" font-size="18" fill="#45636a" font-weight="600" text-anchor="middle">秋</text>
+    <text x="610" y="121" font-size="18" fill="#45636a" font-weight="600" text-anchor="middle">冬</text>
+    <text x="832" y="121" font-size="18" fill="#45636a" font-weight="600" text-anchor="middle">春</text>
+    <text x="1030" y="121" font-size="18" fill="#45636a" font-weight="600" text-anchor="middle">夏初</text>
+    <path d="M165 132 V401" fill="none" stroke="#d8e3df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6"/>
+    <path d="M385 132 V401" fill="none" stroke="#d8e3df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6"/>
+    <path d="M610 132 V401" fill="none" stroke="#d8e3df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6"/>
+    <path d="M832 132 V401" fill="none" stroke="#d8e3df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6"/>
+    <path d="M1030 132 V401" fill="none" stroke="#d8e3df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6"/>
+  </g>
+  <g id="power">
+    <text x="28" y="170" font-size="18" fill="#18353c" font-weight="600" text-anchor="start">相对功率</text>
+    <text x="28" y="195" font-size="16" fill="#45636a" font-weight="400" text-anchor="start">各自表口</text>
+    <path d="M150 255 H1050" fill="none" stroke="#60777c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M158 166 C300 163 400 171 500 166 S745 167 1039 165" fill="none" stroke="#007777" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 6"/>
+    <path d="M158 234 C297 235 333 212 423 181 S568 133 631 134 S775 189 842 211 S954 232 1039 233" fill="none" stroke="#ac5028" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="193" y="156" font-size="17" fill="#007777" font-weight="600" text-anchor="start">A 可用余热</text>
+    <text x="707" y="147" font-size="17" fill="#ac5028" font-weight="600" text-anchor="start">B 冬峰需求</text>
+    <text x="874" y="255" font-size="17" fill="#ac5028" font-weight="600" text-anchor="start">生活热水基荷</text>
+  </g>
+  <g id="stock">
+    <text x="28" y="322" font-size="18" fill="#18353c" font-weight="600" text-anchor="start">可用库存</text>
+    <text x="28" y="348" font-size="16" fill="#45636a" font-weight="400" text-anchor="start">罐内状态</text>
+    <path d="M150 400 H1050" fill="none" stroke="#60777c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M158 343 C185 325 205 309 245 309 H365 C433 309 484 362 536 382 S610 391 671 391 H720 C779 391 825 361 879 347 S970 325 1039 343" fill="none" stroke="#69528a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="207" y="295" font-size="17" fill="#69528a" font-weight="600" text-anchor="start">满罐 → 旁路</text>
+    <text x="452" y="332" font-size="17" fill="#69528a" font-weight="600" text-anchor="start">放热</text>
+    <text x="617" y="379" font-size="17" fill="#69528a" font-weight="600" text-anchor="start">低库存 → 备用</text>
+    <text x="870" y="322" font-size="17" fill="#69528a" font-weight="600" text-anchor="start">恢复库存</text>
+  </g>
+  <text x="30" y="444" font-size="18" fill="#45636a" font-weight="400" text-anchor="start">横轴为南半球季节顺序。图线的高低或相交不代表实测功率、可存余量或可跨季供热。</text>
+  </g>
+</svg>
