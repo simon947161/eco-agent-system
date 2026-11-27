@@ -11,7 +11,7 @@ const review = require('./sources/plan-editions-20261128.json');
 async function test() {
  const d = await B.appendEditionSuffix(previous,delta);
  assert.equal(d.contentItems.length,127);
- assert.equal(d.domain.revisions.length, previous.domain.revisions.length+7);
+ assert.equal(d.domain.revisions.length, previous.domain.revisions.length+20);
  assert.equal(d.domain.assertions.length, previous.domain.assertions.length);
  assert.equal(d.domain.sourceCatalogue.sources.length, previous.domain.sourceCatalogue.sources.length+2);
  for(const doc of review.editions) {
@@ -44,6 +44,6 @@ async function test() {
  await assert.rejects(B.appendEditionSuffix(previous,changed),/SUFFIX_INVALID/);
  await assert.rejects(B.appendEditionSuffix(d,delta),/BASE_MISMATCH/);
  assert.equal(await M.objectDigest(previous),delta.baseDigest);
- console.log('PASS two distinct editions, seven immutable records, duplicate append/corruption rejected, both prior editions and all 127 legacy records preserved, public budget arithmetic rejected');
+ console.log('PASS two distinct editions, twenty immutable records, duplicate append/corruption rejected, both prior editions and all 127 legacy records preserved, public budget arithmetic rejected');
 }
 test().catch(e=>{console.error(e);process.exitCode=1;});

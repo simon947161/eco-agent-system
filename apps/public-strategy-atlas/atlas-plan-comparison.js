@@ -52,10 +52,19 @@ async function compare(dataset,{left,right,locality,asOf}) {
   budgetTreatment:'KEEP_SEPARATE_NO_ADDITION',actualSpend:'UNKNOWN',actualOutput:'UNKNOWN',actualOutcome:'UNKNOWN',officialRelationship:'PENDING'};
  return {...record,digest:await M.objectDigest(record)};
 }
+function serviceContext(dataset) {
+ return K.records(dataset).filter(e=>['SERVICE_OBSERVATION','FUND_CONTEXT'].includes(e.data.csoiRecord.data.publicKnowledge.category)).map(e=>{
+  const data=e.data.csoiRecord.data,c=data.publicKnowledge;
+  const dependencies=P.assessDependencies(dataset,[e]);
+  return {record:pin(e),label:e.label,value:data.measurement?.value,unit:data.measurement?.unit,
+   page:c.anchor.pdfPage,period:c.facts.sourcePeriod,boundary:c.facts.boundary,scopeNote:c.facts.qualifier,
+   current:dependencies.current,invalidations:dependencies.invalidations};
+ });
+}
 async function verify(dataset,receipt) {
  try {return M.canonical(await compare(dataset,receipt.query))===M.canonical(receipt);} catch {return false;}
 }
-const api={projectView,compare,verify};
+const api={serviceContext,projectView,compare,verify};
 root.AtlasPlanComparison=api;
 if(commonJS) module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

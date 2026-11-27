@@ -15,7 +15,25 @@ async function registerAll(dataset,source=bundles(),metricReview,lspsReview,opRe
  next=await (typeof module!=='undefined'?require('./csoi-lsps-context.js'):root.AtlasLspsContext).apply(next,source,lspsReview);
  return (typeof module!=='undefined'?require('./csoi-op-review.js'):root.AtlasOpReview).apply(next,source,opReview);
 }
-function family(bundle){return bundle.sourceId.includes('smrc-dp-')?'DP':bundle.sourceId.includes('csp-full')?'CSP':bundle.sourceId.includes('lsps')?'LSPS':'OP';}
+function family(bundle){
+ const id=bundle.sourceId;
+ for(const [marker,label] of [['csp-full','CSP'],['lsps','LSPS'],['smrc-dp-','DP'],['smrc-op-','OP'],['water-amp','WATER_AMP'],['smrc-resourcing-','RESOURCING'],['annual-report','ANNUAL_REPORT']]) if(id.includes(marker)) return label;
+ return 'OTHER';
+}
+// Expected rows come from the distributed research release, independently of an imported snapshot.
+function releaseBundles() {
+ const suffix=typeof module!=='undefined'?require('./sources/plan-edition-suffix.js'):root.AtlasPlanEditionSuffix;
+ const groups=new Map(), original=reviewedBundles();
+ if(!suffix) return original;
+ const review=typeof module!=='undefined'?require('./csoi-op-review.js'):root.AtlasOpReview;
+ for(const revision of suffix.revisions){
+  const entity=revision.record, record=entity.data.csoiRecord.data, c=record.publicKnowledge;
+  if(!groups.has(record.sourceId)) groups.set(record.sourceId,{format:'csoi-public-knowledge-1',sourceId:record.sourceId,
+   sourceRevision:record.sourceDigest,sourcePageCount:c.facts.totalPages,rights:'UNKNOWN',currentVersion:'UNKNOWN',officialAdmission:'PENDING',records:[]});
+  groups.get(record.sourceId).records.push(review.nodeOf(entity));
+ }
+ return original.concat([...groups.values()]);
+}
 function group(n){return n.category==='ACTION'?(n.facts.sourceSection==='IMPLEMENTATION_TABLE'?'LSPS_IMPLEMENTATION_ACTION':'LSPS_OTHER_ACTION_OCCURRENCE'):n.category;}
 async function matrix(dataset,source=reviewedBundles()){
  const byId=M.domainIndex(dataset),rows=[];
@@ -28,12 +46,12 @@ async function matrix(dataset,source=reviewedBundles()){
  const categories=[...new Set(rows.map(r=>r.category))].map(category=>{const all=rows.filter(r=>r.category===category);return {category,expected:all.length,implemented:all.filter(r=>r.implemented==='PRESENT').length,sourceCheckedCurrent:all.filter(r=>r.verification==='SOURCE_CHECKED_BOUNDED').length,missing:all.filter(r=>r.implemented==='MISSING').length,invalidated:all.filter(r=>r.implemented==='PRESENT'&&r.verification!=='SOURCE_CHECKED_BOUNDED').length};});
  return {format:'csoi-item-coverage-1',basis:'Individually checked source items; counts do not certify full-document meaning, current law, implementation or outcomes.',rows,categories,wholeDocumentUnderstanding:'NOT_CLAIMED',officialRelationships:0,actualOutcome:'UNKNOWN'};
 }
-function publishedReferences(dataset){return K.records(dataset).filter(e=>['WATER_ACTIVITY','OP_PAGE'].includes(capsule(e).category)).flatMap(e=>capsule(e).relations.filter(r=>r.type==='EXPLICIT_DOCUMENT_REFERENCE').map(r=>({from:e.id,to:r.targetId,type:r.type,locator:r.locator,targetRevision:r.targetRevisionId,meaning:'Printed OP reference only; not proof of implementation, legal authority or causality.'})));}
+function publishedReferences(dataset){return K.records(dataset).filter(e=>['WATER_ACTIVITY','OP_PAGE','PLAN_PROJECT'].includes(capsule(e).category)).flatMap(e=>capsule(e).relations.filter(r=>r.type==='EXPLICIT_DOCUMENT_REFERENCE').map(r=>({from:e.id,to:r.targetId,family:family({sourceId:e.data.csoiRecord.data.sourceId}),type:r.type,locator:r.locator,targetRevision:r.targetRevisionId,meaning:'Printed document reference. Implementation, legal authority and causality require separate evidence.'})));}
 function matches(e,{family:which,category,q=''}={}){const c=capsule(e),sid=e.data.csoiRecord.data.sourceId;return (!which||family({sourceId:sid})===which)&&(!category||group({...c,facts:c.facts})===category)&&(!q||JSON.stringify([e.id,e.label,e.data.csoiRecord.data.summary,c.code,c.facts]).toLowerCase().includes(q.toLowerCase()));}
 function select(dataset,{family:which,category,q='',page=1,limit=25}={}){
  if(!Number.isSafeInteger(page)||page<1||!Number.isSafeInteger(limit)||limit<1||limit>100)throw Error('RESEARCH_QUERY_BOUNDS');
  const items=K.records(dataset).filter(e=>matches(e,{family:which,category,q}));
  return {items:items.slice((page-1)*limit,page*limit),total:items.length,nextPage:page*limit<items.length?page+1:null};
 }
-const api={bundles,reviewedBundles,capsule,registerAll,matrix,select,publishedReferences,matches,canonicalCarbon,LEGACY_CARBON};root.AtlasStrategyResearch=api;if(typeof module!=='undefined')module.exports=api;
+const api={family,releaseBundles,bundles,reviewedBundles,capsule,registerAll,matrix,select,publishedReferences,matches,canonicalCarbon,LEGACY_CARBON};root.AtlasStrategyResearch=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

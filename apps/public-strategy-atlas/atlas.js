@@ -141,6 +141,17 @@ function waterPlanPanel(station) {
    if(request!==token || serial!==sequence || d!==prior) return;
    host.innerHTML='<h4>'+esc(report.status)+'</h4>'+report.sides.map(side=>'<section><h4>'+esc(side.documentLabel)+'</h4><p>'+esc(side.purpose+' · '+side.locality+' · '+side.period+' · PDF '+side.page)+'</p><p>'+esc(side.condition)+'</p>'+side.budget.map(b=>'<button data-plan-record="'+esc(b.record.id)+'">'+esc(new Intl.NumberFormat('en-AU',{style:'currency',currency:b.currency,maximumFractionDigits:0}).format(b.amount)+' '+b.currency+' · '+b.basis)+'</button>').join('')+'<p>'+esc(side.resources.map(r=>r.basis).join(', ')||'Resource allocation UNKNOWN')+'</p><button data-plan-record="'+esc(side.project.id)+'">Open printed project and evidence inputs</button></section>').join('')+'<p>Keep the two budgets separate. Actual expenditure, delivery and water-quality outcomes are UNKNOWN.</p><details><summary>Checks and counterevidence</summary>'+report.checks.map(c=>'<p>'+esc(c.name+' · '+(c.passes?'PASS':'FAIL'))+'</p>').join('')+'<p>'+esc(report.counterevidence[0])+'</p><p>'+esc(report.alternative)+'</p><p>'+esc(report.falsifier)+'</p></details>';
    host.querySelectorAll('[data-plan-record]').forEach(el=>el.addEventListener('click',()=>domainEntity(el.dataset.planRecord)));
+   const context=AtlasPlanComparison.serviceContext(d);
+   if(context.length) {
+    const group=document.createElement('section'), heading=document.createElement('h4');
+    heading.textContent='Water service evidence';group.append(heading);
+    for(const row of context) {
+     const description=document.createElement('p');
+     description.textContent=(row.current?'':'Historical input · ')+row.boundary+' · '+row.period+' · PDF '+row.page+'. '+row.scopeNote;
+     group.append(button(row.label+(row.value!==undefined?' · '+row.value+' '+row.unit:''),()=>sourceContentPanel(row.record.id)),description);
+    }
+    host.append(group);
+   }
    host.append(button('Export comparison receipt',()=>downloadJSON('published-project-comparison.json',report)));
   } catch(error) {if(request===token && serial===sequence) host.textContent=error.message;}
  }
@@ -195,6 +206,27 @@ function evidenceInputs(id) {
  const isSource = d.domain.sourceCatalogue?.sources.some(source => source.id === id);
  $('contextActions').append(button('Back to record',()=>isSource ? intakeSource(id) : domainEntity(id)));
 }
+function sourceContentPanel(id) {
+ const item=m.domainIndex(d).get(id), K=AtlasCSOIKnowledge;
+ const token=panel('<h3>Inside the source record</h3><nav id="sourceTrail" aria-label="Document ancestors"></nav><h4>'+esc(item.label)+'</h4><p>'+esc(item.data.csoiRecord.data.summary)+'</p><p>'+esc(item.data.csoiRecord.data.locator)+'</p><p id="sourcePinState" role="status">Checking inputs…</p><label for="sourceSubtreeQuery">Search descendants of this record</label><input id="sourceSubtreeQuery" maxlength="300" type="search"><div id="sourceChildren" class="relation-list"></div>');
+ const trail=K.parents(d,id).slice(1).reverse();
+ // Long lineages remain navigable by parent without rendering thousands of buttons.
+ const visible=trail.length>12?[trail[0],...trail.slice(-11)]:trail;
+ for(const ancestor of visible) $('sourceTrail').append(button(ancestor.label,()=>sourceContentPanel(ancestor.id)));
+ function show(offset=0) {
+  const query=$('sourceSubtreeQuery').value;
+  const page=K.subtreePage(d,id,{offset,query});
+  const target=$('sourceChildren'), summary=document.createElement('p');
+  summary.textContent=page.total?(offset+1)+'–'+(offset+page.items.length)+' of '+page.total+(query?' matching descendants':' child records'):(query?'No matching descendants.':'No further recorded children for this source item.');
+  target.replaceChildren(summary,...page.items.map(child=>button(child.label,()=>sourceContentPanel(child.id))));
+  if(offset) target.append(button('Previous results',()=>show(Math.max(0,offset-20))));
+  if(page.nextOffset!==null) target.append(button('More results',()=>show(page.nextOffset)));
+ }
+ $('sourceSubtreeQuery').addEventListener('input',()=>show());
+ $('contextActions').append(button('Open evidence and history',()=>domainEntity(id)),button('Evidence inputs and citing records',()=>evidenceInputs(id)));
+ show();
+ K.status(d,id).then(status=>{if(request===token)$('sourcePinState').textContent=[status.status,...status.reasons].join(' · ');}).catch(()=>{if(request===token)$('sourcePinState').textContent='UNKNOWN: source verification unavailable';});
+}
 function openSearchHit(hit){if(hit.category==='station')inspectNode(hit.record.id);else if(hit.category==='content')openContent(hit.record.id);else if(hit.category==='source')intakeSource(hit.record.id);else domainEntity(hit.record.id);}
 function advancedSearchPanel(){
  panel('<h3>Search & question navigation</h3><label for="recordQuery">Words, clause, value, unit or record ID</label><input id="recordQuery" type="search"><label for="recordKind">Entity kind</label><input id="recordKind" placeholder="Any kind, e.g. WorkPackage"><label for="recordRegion">Exact region (optional)</label><input id="recordRegion"><label for="recordDate">Effective as-of (optional)</label><input id="recordDate" type="date"><label><input id="includeUnknownScope" type="checkbox"> Include UNKNOWN scope, explicitly labelled</label><button id="searchRecords">Search registered records</button><div id="recordResults" role="status"></div>');
@@ -241,6 +273,7 @@ function domainEntity(id){
  const links=m.queryRelationships(d,id,{direction:'both'}),history=d.domain.revisions.filter(r=>r.logicalId===id);
  panel('<h3>'+esc(e.label)+'</h3><p>'+esc(e.kind+' · '+e.id)+'</p><div class="detail-badge">'+esc(e.classification+' / '+e.state)+'</div><p>Admission '+esc(e.admission)+' · '+esc(e.revisionId)+'</p><h4>Record and calculation inputs</h4><pre class="record-json">'+esc(JSON.stringify(e.data,null,2))+'</pre><h4>Where / when / boundary</h4><pre class="record-json">'+esc(JSON.stringify(e.scope,null,2))+'</pre>'+(e.provenance?'<h4>Source anchor</h4><p>'+esc(e.provenance.locator)+'</p>'+sourceLink(e.provenance.url):'<p>Source: SYNTHETIC_SCENARIO. Not Council work or expenditure.</p>')+'<h4>Upstream / downstream</h4>'+links.map(a=>'<p>'+esc(a.predicate)+' <button data-domain-link="'+esc(a.from===id?a.to:a.from)+'">'+esc(a.from===id?a.to:a.from)+'</button></p>').join('')+'<h4>Revision history</h4>'+history.map(r=>'<details><summary>'+esc(r.id)+'</summary><pre class="record-json">'+esc(JSON.stringify(r.record,null,2))+'</pre></details>').join('')+'<h4>Evidence gaps</h4><ul>'+e.gaps.map(g=>'<li>'+esc(g)+'</li>').join('')+'</ul><label for="domainReason">Local review reason</label><input id="domainReason" maxlength="1000"><button id="contestDomain">Append local challenge</button><p id="domainMessage" role="status"></p><p>Export snapshot to retain this in-memory review. Official approval is unavailable.</p>');
  $('contextActions').replaceChildren(button('Trace back to strategy station',()=>inspectNode(e.stationId)),button('Back to dossier',()=>domainDossier(e.stationId)));
+ if (e.data?.csoiRecord?.data?.publicKnowledge) $('contextActions').append(button('Explore source content',()=>sourceContentPanel(id)));
  if (e.data?.csoiRecord) $('contextActions').append(button('Evidence inputs and citing records',()=>evidenceInputs(id)));
  details.querySelectorAll('[data-domain-link]').forEach(b=>b.addEventListener('click',()=>d.domain.entities.some(e=>e.id===b.dataset.domainLink)?domainEntity(b.dataset.domainLink):inspectNode(b.dataset.domainLink)));
  if(e.classification==='SYNTHETIC_SCENARIO'&&Number.isFinite(e.data.value)){

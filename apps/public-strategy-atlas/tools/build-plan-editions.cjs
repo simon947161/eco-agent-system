@@ -77,6 +77,8 @@ function suffix(previous,next) {
 async function build() {
  let next=base;
  for(const edition of manifest.editions) next=await appendEdition(next,edition);
+ if(await M.objectDigest(next)!=='sha256:83355a1ee79b85dc38aeb9eddb197b2af3b7c74176438f0345864d37d5a3cd43') throw Error('NOVEMBER_PLAN_PREFIX_CHANGED');
+ for(const bundle of require('../sources/service-context-20261128.json')) next=await K.registerBundle(next,bundle,{observedAt:'2026-11-27T21:59:00.000Z'});
  const before=base.domain, after=next.domain;
  if(M.canonical(before.assertions)!==M.canonical(after.assertions)) throw Error('UNEXPECTED_ASSERTION');
  const delta={format:'atlas-plan-edition-suffix-1',baseDigest:await M.objectDigest(base),datasetDigest:await M.objectDigest(next),
