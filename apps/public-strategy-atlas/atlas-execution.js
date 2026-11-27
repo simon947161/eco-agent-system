@@ -6,7 +6,9 @@ function assertions(d){return [...d.assertions,...(d.domain?.assertions||[])];}
 function shortestPath(d,from,to,{direction='forward',mode='DISCOVERY_CANDIDATE',maxVisited=10000,context=null}={}){
  if(!['forward','reverse','both'].includes(direction)||!['KNOWN_LINK','DISCOVERY_CANDIDATE'].includes(mode)||!Number.isInteger(maxVisited)||maxVisited<1||maxVisited>100000)throw Error('QUERY_BOUNDS');
  const entities=M.domainIndex(d);if(!entities.has(from)||!entities.has(to))throw Error('QUERY_ENDPOINT');
- const edges=assertions(d).filter(a=>(!context||![a,entities.get(a.to)].filter(Boolean).some(r=>applicability(r,context).status.startsWith('REJECTED')))&&!['CONTRADICTED','SUPERSEDED','RETRACTED','CONTESTED'].includes(a.status||a.state));
+ if(context && [from,to].some(id=>applicability(entities.get(id),context).status.startsWith('REJECTED')))
+  return {status:'UNKNOWN',path:[],nodeIds:[],reason:'Endpoint conflicts with the selected area, period or legal role.',truncated:false};
+ const edges=assertions(d).filter(a=>(!context||![a,entities.get(a.from),entities.get(a.to)].filter(Boolean).some(r=>applicability(r,context).status.startsWith('REJECTED')))&&!['CONTRADICTED','SUPERSEDED','RETRACTED','CONTESTED'].includes(a.status||a.state));
  // No authority verifier is configured; local claims cannot create KNOWN_LINK.
  if(mode==='KNOWN_LINK')return {status:'UNKNOWN',path:[],nodeIds:[],reason:'No officially admitted authority-backed relationships are configured.',truncated:false};
  const adjacency=new Map();
@@ -22,12 +24,45 @@ function workBreakdown(d,stationId,{limit=200}={}){
  if(!Number.isInteger(limit)||limit<1||limit>1000)throw Error('WBS_BOUNDS');
  const entities=M.domainIndex(d);if(!entities.has(stationId))throw Error('WBS_STATION');
  const queue=[{id:stationId,depth:0}],seen=new Set(),rows=[],relations=assertions(d).filter(a=>['HAS_ACTIVITY','RESOURCED_BY','FUNDED_BY','REPORTS_OUTPUT','MEASURED_BY','HAS_DEPENDENCY'].includes(a.predicate));
- for(let i=0;i<queue.length&&rows.length<limit;i++){const row=queue[i];if(seen.has(row.id))continue;seen.add(row.id);const entity=entities.get(row.id);rows.push({...row,entity,executionState:entity?.state||'UNKNOWN',evidenceState:entity?.admission||'UNKNOWN'});for(const a of relations.filter(a=>a.from===row.id)){queue.push({id:a.to,depth:row.depth+1,via:a.id});}}
+ const downstream=new Map();
+ function connect(from,step) {
+  if(!downstream.has(from)) downstream.set(from,[]);
+  downstream.get(from).push(step);
+ }
+ for(const edge of relations) connect(edge.from,{id:edge.to,via:edge.id});
+ // A printed project hierarchy is a reading route. It confers no Council execution status.
+ for(const entity of d.domain?.entities||[]) {
+  const knowledge=entity.data?.csoiRecord?.data?.publicKnowledge;
+  if(knowledge?.category.startsWith('PLAN_')) connect(knowledge.parentId||entity.stationId,
+   {id:entity.id,via:knowledge.parentId?'PRINTED_PROJECT_CONTAINMENT':'STATION_DOCUMENT_EDITION'});
+ }
+ for(let i=0;i<queue.length&&rows.length<limit;i++) {
+  const row=queue[i];
+  if(seen.has(row.id)) continue;
+  seen.add(row.id);
+  const entity=entities.get(row.id), facts=entity?.data?.csoiRecord?.data?.publicKnowledge?.facts;
+  rows.push({...row,entity,executionState:facts?.actualExecution||entity?.state||'UNKNOWN',evidenceState:entity?.admission||'UNKNOWN'});
+  for(const step of downstream.get(row.id)||[]) queue.push({...step,depth:row.depth+1});
+ }
+
  const included=new Set(rows.map(r=>r.id));
  const dependencies=relations.filter(a=>a.predicate==='HAS_DEPENDENCY'&&included.has(a.from));
- const pending=new Map(rows.map(r=>[r.id,dependencies.filter(a=>a.from===r.id).map(a=>a.to)])),order=[],ready=[...pending].filter(([,deps])=>!deps.length).map(([id])=>id);
- for(let i=0;i<ready.length;i++){const id=ready[i];if(order.includes(id))continue;order.push(id);for(const [target,deps] of pending){const next=deps.filter(dep=>dep!==id);if(next.length!==deps.length){pending.set(target,next);if(!next.length)ready.push(target);}}}
- return {stationId,rows,dependencies,dependencyOrder:order,dependencyCycle:order.length<rows.length,truncated:queue.some(r=>!seen.has(r.id)),execution:'RESEARCH_ONLY',evidence:'OFFICIAL_IMPLEMENTATION_UNKNOWN',gaps:['Public work ownership, approvals and outputs remain unverified.','Synthetic work states are not Council workflow approvals.']};
+ const waiting=new Map(rows.map(row=>[row.id,new Set()])),dependents=new Map();
+ const outside=new Set();
+ for(const edge of dependencies) {
+  waiting.get(edge.from).add(edge.to);
+  if(!included.has(edge.to)) outside.add(edge.to);
+  if(!dependents.has(edge.to)) dependents.set(edge.to,new Set());
+  dependents.get(edge.to).add(edge.from);
+ }
+ const order=[...waiting].filter(([,prerequisites])=>!prerequisites.size).map(([id])=>id);
+ for(let i=0;i<order.length;i++) for(const dependent of dependents.get(order[i])||[]) {
+  const prerequisites=waiting.get(dependent);
+  prerequisites.delete(order[i]);
+  if(!prerequisites.size) order.push(dependent);
+ }
+ return {stationId,rows,dependencies,dependencyOrder:order,dependencyCycle:outside.size?null:order.length<rows.length,
+  omittedPrerequisites:[...outside],truncated:queue.some(r=>!seen.has(r.id)),execution:'RESEARCH_ONLY',evidence:'OFFICIAL_IMPLEMENTATION_UNKNOWN',gaps:['Public work ownership, approvals and outputs remain unverified.','Synthetic work states are not Council workflow approvals.']};
 }
 const A=typeof module!=='undefined'?require('./atlas-accounting.js'):root.AtlasAccounting;
 function need(ok,code){if(!ok)throw Error(code);}
@@ -94,6 +129,9 @@ function applicability(record,context){
  if(region!==context.region)return {status:'REJECTED_REGION',reason:'Jurisdiction/area differs; shared wording is insufficient.'};
  if(context.spatialType&&!(data.spatialType||record.scope?.spatialType))return {status:'UNKNOWN',reason:'Spatial grain is not established.'};
  if(context.spatialType&&context.spatialType!==(data.spatialType||record.scope?.spatialType))return {status:'REJECTED_SPATIAL_GRAIN',reason:'Administrative/service/parcel scopes are not interchangeable.'};
+ // A research record's scope day is its retrieval date, not statutory effective time.
+ if(record.data?.csoiRecord?.sourceClass==='INDEPENDENT_RESEARCH' && !data.validFrom && !data.validTo)
+  return {status:'UNKNOWN',reason:'This public research record supplies an observation or planning period. Legal effective dates have not been established.'};
  const interval=timeRange(record);if(!interval)return {status:'UNKNOWN',reason:'Effective interval is not established. A planning horizon is not an effective date.'};
  if(context.date<interval.from||context.date>interval.to)return {status:'REJECTED_TIME',reason:'Selected date lies outside this effective interval.'};
  if(data.legalState==='DRAFT')return {status:'REJECTED_DRAFT',reason:'A draft is not an adopted control.'};

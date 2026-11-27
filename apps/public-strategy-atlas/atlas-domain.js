@@ -153,17 +153,35 @@ async function registerScenario(d,m,{id,kind,label,stationId,data,scope,reason,o
  const result=structuredClone(d);result.domain.entities.push(await addRevision(result.domain,{id,kind,label,stationId,data,scope:scope||{region:data.area||'UNKNOWN',period:data.period||'UNKNOWN',boundary:data.boundary||'UNKNOWN'},state:'PROPOSED',classification:'SYNTHETIC_SCENARIO',admission:'NOT_APPLICABLE',provenance:null,gaps:['User-authored synthetic scenario; not Council facts or official performance.']},m,{reason,observedAt}));
  if(!await verify(result,m))throw Error('INVALID_SCENARIO');return result;
 }
-async function registerResearchRecord(d,m,{record,kind='ContentBlock',label,stationId,reason}){
+async function appendResearchRecord(d,m,ids,{record,kind='ContentBlock',label,stationId,reason}){
  const governance=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance;
  if(!governance||!await governance.verifyRecord(record)||!governance.assessPublic(record,{operation:'STORAGE'}).allowed)throw Error('CSOI_PUBLIC_RECORD_REQUIRED');
- if(!await verify(d,m)||index(d).has(record.id)||!TYPES.has(kind)||['ReviewDecision','AuditReceipt','DiscoveryHypothesis'].includes(kind)||!d.nodes.some(n=>n.id===stationId)||!label||!reason)throw Error('CSOI_REGISTRATION_INVALID');
+ if(ids.has(record.id)||!TYPES.has(kind)||['ReviewDecision','AuditReceipt','DiscoveryHypothesis'].includes(kind)||!d.nodes.some(n=>n.id===stationId)||!label||!reason)throw Error('CSOI_REGISTRATION_INVALID');
  if(!researchInputsPresent(d,record))throw Error('CSOI_INPUT_REVISION_MISSING');
  if(sourceBindingIssues(d,record).length)throw Error('CSOI_SOURCE_BINDING_INVALID');
- const synthetic=record.sourceClass==='SYNTHETIC',result=structuredClone(d);
+ const synthetic=record.sourceClass==='SYNTHETIC';
  const measurement=kind==='QuantifiedObservation'?record.data.measurement:null;
  if(kind==='QuantifiedObservation'&&(!measurement||typeof measurement.unit!=='string'||!(measurement.value==='UNKNOWN'||Number.isFinite(measurement.value))))throw Error('CSOI_MEASUREMENT_REQUIRED');
- result.domain.entities.push(await addRevision(result.domain,{id:record.id,kind,label,stationId,data:{...(measurement||{}),status:synthetic?'SYNTHETIC':'PUBLIC_TEXT_OBSERVED',csoiRecord:structuredClone(record)},scope:record.scope,state:synthetic?'PROPOSED':'SOURCE_OBSERVED',classification:synthetic?'SYNTHETIC_SCENARIO':'LOCAL_RESEARCH',admission:synthetic?'NOT_APPLICABLE':'PENDING',provenance:synthetic?null:record.provenance,gaps:['Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship.']},m,{reason,observedAt:record.observedAt}));
- if(!await verify(result,m))throw Error('CSOI_REGISTRATION_INVALID');return result;
+ const head=await addRevision(d.domain,{id:record.id,kind,label,stationId,data:{...(measurement||{}),status:synthetic?'SYNTHETIC':'PUBLIC_TEXT_OBSERVED',csoiRecord:structuredClone(record)},scope:record.scope,state:synthetic?'PROPOSED':'SOURCE_OBSERVED',classification:synthetic?'SYNTHETIC_SCENARIO':'LOCAL_RESEARCH',admission:synthetic?'NOT_APPLICABLE':'PENDING',provenance:synthetic?null:record.provenance,gaps:['Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship.']},m,{reason,observedAt:record.observedAt});
+ d.domain.entities.push(head);
+ ids.set(head.id,head);
+}
+// Keep the draft private until its complete history passes the same verifier as an import.
+async function registerResearchBatch(dataset,m,items,prepare) {
+ if(!Array.isArray(items)||items.length>2000||typeof prepare!=='function') throw Error('CSOI_BATCH_BOUNDS');
+ const draft=structuredClone(dataset);
+ if(!await verify(draft,m)) throw Error('CSOI_REGISTRATION_INVALID');
+ const heads=index(draft);
+ const lookup=id=>structuredClone(heads.get(id));
+ for(const item of items) {
+  const options=await prepare(item,lookup);
+  if(options!==null) await appendResearchRecord(draft,m,heads,structuredClone(options));
+ }
+ if(!await verify(draft,m)) throw Error('CSOI_REGISTRATION_INVALID');
+ return draft;
+}
+async function registerResearchRecord(dataset,m,options) {
+ return registerResearchBatch(dataset,m,[options],item=>item);
 }
 async function reviseResearchRecord(d,m,{id,expectedRevisionId,record,reason}){
  const governance=typeof module!=='undefined'?require('./csoi-governance.js'):root.AtlasCSOIGovernance,old=d.domain?.entities.find(e=>e.id===id);
@@ -214,5 +232,5 @@ async function appendCalculation(d,m,receipt){
  return result;
 }
 function forStation(d,id){return {stationId:id,entities:(d.domain?.entities||[]).filter(e=>e.stationId===id),assertions:(d.domain?.assertions||[]).filter(e=>e.stationId===id),trust:'SELF_ATTESTED',signature:'RECEIPT_NOT_PRESENT',witness:'EXTERNAL_WITNESS_UNKNOWN'};}
-root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,recordResearchReview,registerScenario,registerResearchRecord,reviseResearchRecord,registerResearchLink,appendCalculation,sourceBindingIssues,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
+root.AtlasDomain={TYPES,PREDICATES,STATES,legacyBase,index,relationships,validate,verify,migrateDataset,commitRevision,recordResearchReview,registerScenario,registerResearchBatch,registerResearchRecord,reviseResearchRecord,registerResearchLink,appendCalculation,sourceBindingIssues,forStation};if(typeof module!=='undefined')module.exports=root.AtlasDomain;
 })(typeof window!=='undefined'?window:globalThis);

@@ -114,8 +114,38 @@ function inspectNode(id){
  details.innerHTML='<div class="detail-head"><h3>'+esc(n.label)+'</h3><span class="detail-badge">'+(n.type==='candidate'?'HYPOTHESIS':'SYNTHETIC')+'</span></div><p class="detail-text">'+esc(n.detail)+'</p><div class="detail-list"><div class="detail-item"><span class="key">Logical identity / revision</span><span class="value">'+esc(n.logicalId+' / '+n.versionId)+'</span></div><div class="detail-item"><span class="key">Official clause / applicability / KPI</span><span class="value">UNKNOWN / UNKNOWN / UNKNOWN</span></div><div class="detail-item"><span class="key">Public discovery entry</span><span class="value">'+(n.source?sourceLink(n.source,'Open directory ↗'):'No verified public source')+'</span></div><div class="detail-item"><span class="key">Synthetic paths</span><span class="value">'+esc(paths.map(p=>p.join(' → ')||'Start').join(' / ')||'No path')+'</span></div></div><h3 class="section-title">Inside this topic</h3><p class="detail-text">Open each level. Internal examples remain synthetic.</p>'+treeHTML(root.id)+'<h3 class="section-title">Adjacent relationships</h3><div class="relation-list">'+connected.map(e=>{const a=d.assertions.find(a=>a.id===e.id),other=e.from===id?e.to:e.from;return '<button data-target="'+esc(other)+'">'+(e.to===id?'↑ Upstream: ':'↓ Downstream: ')+esc(byId.get(other).label)+'<small>'+esc(a.id+' · '+a.status)+'</small></button>';}).join('')+'</div><p id="contentDigest" class="detail-text">Computing content digest…</p>'+currentAccountingPanel(id);
  $('contextActions').replaceChildren(button('Follow route',()=>{state.followId=id;$('inspector').hidden=true;render();}),button('Explore inside',()=>openContent(root.id)),...(AtlasAccounting.caseForNode(id)?[button('Quantities & budget',()=>details.querySelector('#accountingFlow')?.scrollIntoView({block:'start',behavior:'smooth'}))]:[]),button('Compare paths',()=>{$('discoveryBtn').click();}));
  $('contextActions').append(button('Knowledge & work dossier',()=>domainDossier(id)));
+ addWaterEvidenceAction(id);
  wireContent();details.querySelectorAll('[data-target]').forEach(b=>b.addEventListener('click',()=>inspectNode(b.dataset.target)));
  m.objectDigest(n).then(hash=>{if(current===request)$('contentDigest').textContent='Node digest '+hash+'. Integrity only; no official signature.';}).catch(()=>{if(current===request)$('contentDigest').textContent='Digest unavailable.';});render();openInspector();
+}
+function addWaterEvidenceAction(station) {
+ if (['dp','op','water','csp8'].includes(station)) $('contextActions').append(button('Compare published water plans',()=>waterPlanPanel(station)));
+}
+function waterPlanPanel(station) {
+ const left='csoi:knowledge:dp2026:november:nimmitabel-water',right='csoi:knowledge:op2026:november:nimmitabel-water';
+ const index=m.domainIndex(d);
+ if (!index.has(left)||!index.has(right)) {
+  panel('<h3>Water planning evidence</h3><p>This snapshot does not contain both November plan editions. The comparison is UNKNOWN.</p>');
+  $('contextActions').append(button('Back to station',()=>inspectNode(station)));
+  return;
+ }
+ const token=panel('<h3>Water planning evidence</h3><p>Compare the project printed in the Delivery Program and the Operational Plan.</p><label for="projectLocality">Locality</label><input id="projectLocality" value="Nimmitabel"><label for="projectDate">Planning date</label><input id="projectDate" type="date" value="2026-11-28"><button id="compareProjects">Check project evidence</button><div id="planComparison" aria-live="polite"></div>');
+ $('contextActions').append(button('Back to station',()=>inspectNode(station)));
+ let sequence=0;
+ async function show() {
+  const serial=++sequence, prior=d;
+  const host=$('planComparison');
+  host.textContent='Checking scope and input revisions…';
+  try {
+   const report=await AtlasPlanComparison.compare(prior,{left,right,locality:$('projectLocality').value.trim(),asOf:$('projectDate').value});
+   if(request!==token || serial!==sequence || d!==prior) return;
+   host.innerHTML='<h4>'+esc(report.status)+'</h4>'+report.sides.map(side=>'<section><h4>'+esc(side.documentLabel)+'</h4><p>'+esc(side.purpose+' · '+side.locality+' · '+side.period+' · PDF '+side.page)+'</p><p>'+esc(side.condition)+'</p>'+side.budget.map(b=>'<button data-plan-record="'+esc(b.record.id)+'">'+esc(new Intl.NumberFormat('en-AU',{style:'currency',currency:b.currency,maximumFractionDigits:0}).format(b.amount)+' '+b.currency+' · '+b.basis)+'</button>').join('')+'<p>'+esc(side.resources.map(r=>r.basis).join(', ')||'Resource allocation UNKNOWN')+'</p><button data-plan-record="'+esc(side.project.id)+'">Open printed project and evidence inputs</button></section>').join('')+'<p>Keep the two budgets separate. Actual expenditure, delivery and water-quality outcomes are UNKNOWN.</p><details><summary>Checks and counterevidence</summary>'+report.checks.map(c=>'<p>'+esc(c.name+' · '+(c.passes?'PASS':'FAIL'))+'</p>').join('')+'<p>'+esc(report.counterevidence[0])+'</p><p>'+esc(report.alternative)+'</p><p>'+esc(report.falsifier)+'</p></details>';
+   host.querySelectorAll('[data-plan-record]').forEach(el=>el.addEventListener('click',()=>domainEntity(el.dataset.planRecord)));
+   host.append(button('Export comparison receipt',()=>downloadJSON('published-project-comparison.json',report)));
+  } catch(error) {if(request===token && serial===sequence) host.textContent=error.message;}
+ }
+ $('compareProjects').addEventListener('click',show);
+ show();
 }
 function currentAccountingPanel(id){
  const records=m.domainForStation(d,id).entities.filter(e=>Number.isFinite(e.data?.value));
@@ -201,9 +231,10 @@ function calculationPanel(id){
 }
 function workPanel(id){
  const result=AtlasExecution.workBreakdown(d,id);
- panel('<h3>Work breakdown & dependencies</h3><p>'+esc(result.execution+' · '+result.evidence)+'</p><p>Execution status and source completeness are independent. Synthetic proposals are not real Council programs.</p>'+result.rows.map(row=>'<div class="warn"><button data-work-entity="'+esc(row.id)+'">'+esc((row.entity.label||row.id))+'</button><p>'+esc('Depth '+row.depth+' · '+row.executionState+' / evidence '+row.evidenceState)+'</p></div>').join('')+'<h4>Dependencies</h4>'+result.dependencies.map(a=>'<p>'+esc(a.from+' requires '+a.to+' · '+a.id)+'</p>').join('')+'<p>Dependency cycle: '+esc(result.dependencyCycle)+' · Truncated '+esc(result.truncated)+'</p>');
+ panel('<h3>Work breakdown & dependencies</h3><p>'+esc(result.execution+' · '+result.evidence)+'</p><p>Execution status and source completeness are independent. Synthetic proposals are not real Council programs.</p>'+result.rows.map(row=>'<div class="warn"><button data-work-entity="'+esc(row.id)+'">'+esc((row.entity.label||row.id))+'</button><p>'+esc('Depth '+row.depth+' · '+row.executionState+' / evidence '+row.evidenceState)+'</p></div>').join('')+'<h4>Dependencies</h4>'+result.dependencies.map(a=>'<p>'+esc(a.from+' requires '+a.to+' · '+a.id)+'</p>').join('')+'<p>Dependency cycle: '+esc(result.dependencyCycle===null?'UNKNOWN (prerequisite outside this view)':result.dependencyCycle)+' · Truncated '+esc(result.truncated)+'</p>');
  details.querySelectorAll('[data-work-entity]').forEach(b=>b.addEventListener('click',()=>d.domain.entities.some(e=>e.id===b.dataset.workEntity)?domainEntity(b.dataset.workEntity):inspectNode(b.dataset.workEntity)));
  $('contextActions').replaceChildren(button('Back to dossier',()=>domainDossier(id)));
+ addWaterEvidenceAction(id);
 }
 function domainEntity(id){
  const e=m.domainIndex(d).get(id);if(!e)return;
@@ -240,6 +271,7 @@ function inspectContent(id){
  details.insertAdjacentHTML('beforeend','<button id="editLocalContent" class="subtle-btn">Edit local annotation / compare versions</button><p class="detail-text">Local drafts never replace the source observation or its status.</p>');$('editLocalContent').addEventListener('click',()=>openEditor(id));
  $('contextActions').replaceChildren(button('Explore branch',()=>{state.incremental=true;$('incremental').checked=true;state.contentExpanded.add(id);$('inspector').hidden=true;render();}),button('Back to route map',returnToRoute));
  if (c.ownerNodeId) $('contextActions').append(button('Knowledge & work dossier',()=>domainDossier(c.ownerNodeId)));
+ addWaterEvidenceAction(c.ownerNodeId);
  wireContent();$('scopeContent').addEventListener('click',()=>{state.contentRoot=id;render();});
  const searchWrap=document.createElement('div');searchWrap.innerHTML='<label for="subtreeQuery">Search this subtree</label><input id="subtreeQuery" type="search"><div id="subtreeResults" role="status"></div>';details.append(searchWrap);$('subtreeQuery').addEventListener('input',()=>{const result=m.contentPage(d,id,{query:$('subtreeQuery').value,limit:12});$('subtreeResults').replaceChildren(document.createTextNode(result.total+' matches; first 12 shown'),...result.items.map(item=>button(item.title,()=>openContent(item.id))));});if(c.ownerNodeId)$('ownerNode').addEventListener('click',()=>{returnToRoute();inspectNode(c.ownerNodeId);});
  m.contentReceipt(d,id).then(receipt=>{if(current===request)$('contentDigest').textContent='Item '+receipt.itemDigest+' · Subtree '+receipt.subtreeDigest+'. Child changes alter the ancestor receipt. No external witness or official signature.';}).catch(()=>{if(current===request)$('contentDigest').textContent='Content receipt failed validation.';});render();openInspector();

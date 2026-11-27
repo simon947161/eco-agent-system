@@ -31,6 +31,12 @@ async function test() {
   assert.equal(goal.pinStatus,'HEAD_MATCH');
   await assert.rejects(E.derive(d,{formula:'UNIT_CONVERSION',inputIds:[budget.id],outputUnit:'AUD'}),/UNADMITTED_INPUTS/);
  }
+ const staged={...previous,domain:{...previous.domain,sourceCatalogue:d.domain.sourceCatalogue}};
+ const initialDigest=await M.objectDigest(staged);
+ const first=delta.revisions[0].record;
+ const options={record:first.data.csoiRecord,kind:first.kind,label:first.label,stationId:first.stationId,reason:'Isolated batch rollback check'};
+ await assert.rejects(M.registerResearchBatch(staged,[options,options],entry=>entry),/REGISTRATION_INVALID/);
+ assert.equal(await M.objectDigest(staged),initialDigest);
  const stored=await M.exportSnapshot(d);
  assert(await M.verifySnapshot(JSON.parse(JSON.stringify(stored)),delta.datasetDigest));
  const changed=structuredClone(delta);
