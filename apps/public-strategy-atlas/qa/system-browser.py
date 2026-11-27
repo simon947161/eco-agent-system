@@ -1,11 +1,12 @@
 """V1.6 capability checks against localhost:8877; actual screenshots, no deployment."""
 from pathlib import Path
+import os
 import json, subprocess
 from playwright.sync_api import sync_playwright, expect
 APP=Path(__file__).resolve().parents[1]
-OUT=APP/'qa'/'system'; OUT.mkdir(exist_ok=True)
+OUT=Path(os.environ.get('ATLAS_SYSTEM_QA_OUT',APP/'qa'/'system')); OUT.mkdir(exist_ok=True)
 with sync_playwright() as p:
- b=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+ b=p.chromium.launch(executable_path=os.getenv('ATLAS_CHROMIUM','/usr/bin/chromium'),args=['--no-sandbox'])
  for width,height in [(1440,900),(390,844)]:
   ctx=b.new_context(viewport={'width':width,'height':height},accept_downloads=True,reduced_motion='reduce')
   page=ctx.new_page(); errors=[];page.on('pageerror',lambda e: errors.append(str(e)))

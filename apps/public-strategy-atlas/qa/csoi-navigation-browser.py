@@ -5,7 +5,8 @@ substitute for the three reported links. Optional live adapter supplies supporte
 service access; it must not claim an owner-login session.
 """
 from pathlib import Path
-import datetime,functools,http.server,json,os,threading,tempfile,subprocess,time
+import os
+import datetime,functools,http.server,json,threading,tempfile,subprocess,time
 from playwright.sync_api import sync_playwright,expect
 APP=Path(__file__).resolve().parents[1]
 OUT=Path(os.environ.get('ATLAS_NAV_OUTPUT',str(APP/'qa/navigation-repair-20261102/local')));OUT.mkdir(parents=True,exist_ok=True)
@@ -34,7 +35,7 @@ def tool(page,id):
  page.locator('#'+id).click()
 try:
  with sync_playwright()as p,tempfile.TemporaryDirectory(prefix='csoi-navigation-')as tmp:
-  browser=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+  browser=p.chromium.launch(executable_path=os.getenv('ATLAS_CHROMIUM','/usr/bin/chromium'),args=['--no-sandbox'])
   for width,height in [(1440,900),(390,844)]:
    context=browser.new_context(viewport={'width':width,'height':height},has_touch=width==390,accept_downloads=True,reduced_motion='reduce');page=context.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
    page.goto(BASE);ready(page);case={'viewport':[width,height],'checks':[]};report['results'].append(case);save()

@@ -1,0 +1,220 @@
+- link "Skip to route map":
+  - /url: "#canvas-title"
+- banner:
+  - link "Atlas home":
+    - /url: ./index.html
+    - strong: Public Strategy Atlas
+  - text: Search stations and internal content
+  - searchbox "Search stations and internal content": 29.9 t CO2e/person
+  - group: Tools & views
+  - group: Pages
+- main:
+  - text: INDEPENDENT RESEARCH · SYNTHETIC ROUTES
+  - heading "Follow the reasoning." [level=1]:
+    - text: Follow the
+    - emphasis: reasoning.
+  - paragraph: Two routes. Many questions. Follow any station.
+  - link "来源梳理 · 查看完成与缺口":
+    - /url: "#/research"
+  - region "Scrollable route map. Arrow keys scroll; Tab selects stations and connections.":
+    - group "Public strategy knowledge route map Strategy and planning routes branch and converge at synthetic stations. Dashed amber connections are hypotheses, not official policy mappings.":
+      - text: 01 / STRATEGY & DELIVERY 02 / LAND-USE & APPLICABILITY
+      - 'button "Inspect connection: CSP to Objective 6.1"'
+      - 'button "Inspect connection: CSP to Objective 8.2"'
+      - 'button "Inspect connection: Objective 6.1 to Delivery program"'
+      - 'button "Inspect connection: Objective 8.2 to Delivery program"'
+      - 'button "Inspect connection: Delivery program to Operational plan"'
+      - 'button "Inspect connection: Operational plan to Indicator definition"'
+      - 'button "Inspect connection: Operational plan to Water action"'
+      - 'button "Inspect connection: Water action to Evidence record"'
+      - 'button "Inspect connection: LSPS to Planning priority"'
+      - 'button "Inspect connection: Planning priority to LEP provision"'
+      - 'button "Inspect connection: Planning priority to DCP control"'
+      - 'button "Inspect connection: LEP provision to Geographic scope"'
+      - 'button "Inspect connection: DCP control to Geographic scope"'
+      - 'button "Inspect connection: Geographic scope to Effective period"'
+      - button "Inspect station CSP · SYNTHETIC": CSP SYNTHETIC ORIGIN
+      - button "Inspect station Objective 6.1 · SYNTHETIC": Objective 6.1 Environment · demo
+      - button "Inspect station Objective 8.2 · SYNTHETIC": Objective 8.2 Infrastructure · demo
+      - button "Inspect station Delivery program · SYNTHETIC": Delivery program DP · structure demo
+      - button "Inspect station Operational plan · SYNTHETIC": Operational plan OP · structure demo
+      - button "Inspect station Indicator definition · SYNTHETIC": Indicator definition Definition unverified
+      - button "Inspect station Water action · SYNTHETIC": Water action Synthetic activity
+      - button "Inspect station Evidence record · SYNTHETIC": Evidence record Synthetic review
+      - button "Inspect station LSPS · SYNTHETIC": LSPS Land-use planning
+      - button "Inspect station Planning priority · SYNTHETIC": Planning priority Illustrative priority
+      - button "Inspect station LEP provision · SYNTHETIC": LEP provision Scope unverified
+      - button "Inspect station DCP control · SYNTHETIC": DCP control Guidance unverified
+      - button "Inspect station Geographic scope · SYNTHETIC": Geographic scope Berridale · demo
+      - button "Inspect station Effective period · SYNTHETIC": Effective period Official version needed
+  - navigation "Choose a route":
+    - button "All routes" [pressed]
+    - button "Strategy"
+    - button "Planning"
+    - checkbox "Hidden links"
+    - text: Hidden links
+  - button "Zoom out": −
+  - text: Map zoom
+  - status: 100%
+  - button "Zoom in": +
+  - button "Overview"
+  - button "Reset map position and focus": Reset
+  - text: Strategy · synthetic Planning · synthetic Hypothesis · unverified Observed public text · pending Local review overlay
+  - paragraph: Lines show relationship categories, not achievement. All strategic/planning connections are synthetic.
+  - text: Not Council official · No admitted policy mapping · No actual KPI
+  - group: Map guide
+- dialog "Follow the evidence":
+  - text: STATION / CONNECTION CONTEXT
+  - heading "Follow the evidence" [level=2]
+  - button "Close context panel": ×
+  - heading "Audit & version history" [level=3]
+  - paragraph: sha256:62f1429ec9098e12359a711a884e9b321dabd6080d1616b004a463cf8000eff8
+  - paragraph: "Structure issues: 0 · Event chain: PASS"
+  - paragraph: SELF_ATTESTED · RECEIPT_NOT_PRESENT · EXTERNAL_WITNESS_UNKNOWN
+  - heading "Events 30–60 / 1227" [level=4]
+  - strong: DOMAIN_RESEARCH · ADD · sha256:4c8c21415d4175f62060aada4ff4793ad7a4e8d87cba5406ee25c1b2ad962cc1
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:09714efb3c654fab5b3fba018d2da0aa95857865c17148d76a5b2cf189afe1da
+  - strong: DOMAIN_RESEARCH · ADD · sha256:78d74b8edf588d4b2f5e42eb899084c8dfb9c366f1ab4b92e58a7f21a7ebf285
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:072ffeb57a5f8d3f98b939a0b507730a5f29946ead9d2adb73a67fe5ea6e1184
+  - strong: DOMAIN_RESEARCH · ADD · sha256:73222b37462c964b5160593a114afc2914b6a330bba97668b9c3405f9601025f
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:0e73c85c43c005b7d1d568a4c19d627b41bd3b7a31dd20ce0ee3c36ba2836759
+  - strong: DOMAIN_RESEARCH · ADD · sha256:ea005930124bcad0d9df453f7c946ffa8e13b966c9d48a03f42edc16f853eb6c
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:089e0c556cfba385c638914e062c2c7f62b0bb9287e92106fb4cc3741edd1365
+  - strong: DOMAIN_RESEARCH · ADD · sha256:47c72af0a76aba584f450a853a328ae4766b2e09907d2386a340f627689d9839
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:c77c7148fd9c89dfcfdfa60e59c405543d871db013071fc2de1d94741240363d
+  - strong: DOMAIN_RESEARCH · ADD · sha256:c2b9e6d8360ffac8b7cc963bb35aea778e07c692ef0eb76fa1b55a292d1b4845
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:cb8c559c1e09b278338e388133dab6ac14f7091c3de892e0a69a8a582495094a
+  - strong: DOMAIN_RESEARCH · ADD · sha256:16954fae3658c96e4f58f0d5affc09634204d765060068f1fbb387e13d241574
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:859e42adf339ae689f1c46a643627c6392e0cf6a7e4fc7fccf424a2a5890422b
+  - strong: DOMAIN_RESEARCH · ADD · sha256:aa8bd933ee29fcdb61c42be57a69ad32689750fe9145498e174ab06f6e94f70b
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:df70b8e8b9f9a19592a34b0d00b787bd28a91a75905b718fbbf035a466ce7b2e
+  - strong: DOMAIN_RESEARCH · ADD · sha256:b6c84b326c5a6065f3200565e993023be52f62a231cc1d96da1b0c833defa196
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:896303c55e9deb552ac374cbee80d85287e8f7a3a2adaa316a7f1e53d4511380
+  - strong: DOMAIN_RESEARCH · ADD · sha256:b048f7846d9cd90f448fa5f84c5dbd10394399dc6d34a73b3b0ebfeccee06c1f
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:cbb5dc1e116afa7f8c4ab903749248e0a0e79f74f9ebbc53d49d342ae5c108c5
+  - strong: DOMAIN_RESEARCH · ADD · sha256:4b70f8d65d8a5d63a1b7ed3853379b28f7b8a87158d07ae7cd112f02bb9e71e2
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:3142273589ee74c43373a08a59a3f51aa29381157e69defd113d019e6840c3fc
+  - strong: DOMAIN_RESEARCH · ADD · sha256:3f60f315f090135d6cc6b242b2f856f4789faa2c40d38ea4f69be69d11d9cce9
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:7464630884b297266390600c23f67969118ecb4dacb86ea5e6b74af7588011e7
+  - strong: DOMAIN_RESEARCH · ADD · sha256:9acc1f5d77f866c7507c649a752d0893da498a4561fe24a8c89418b73159ec9f
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:4f18db72d0c3dc380f8451b6bb137474f2458afb3bd67f18cf7e2cf6eec13252
+  - strong: DOMAIN_RESEARCH · ADD · sha256:f74193f0547709980c8ed4c1f42ff5a0bd96a53dbd3fbb759156dea98cfe4421
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:b0213bc68f19a056f9bb0597256cef60e32e7ab0c0ddf41673eb9c1d5ca5f7b4
+  - strong: DOMAIN_RESEARCH · ADD · sha256:8c8d8c5486f521266cd67067929f53462feddbb866f592b7f3bb3cf71fb3006d
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:9de490ce83600ac1a2674ba9bbe71d15f4426e167d8e2d02deadd8680ea741ad
+  - strong: DOMAIN_RESEARCH · ADD · sha256:99ac6829ac969012c63c8fd50e26606470d6b99ce558b8310e1680e2ef56809a
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:dc10ed3ace57aedf46dc71818435f305dd59dbf0f35ce8e713f0a9f51cc75de8
+  - strong: DOMAIN_RESEARCH · ADD · sha256:8ebbff05fe0e802ef896b7874977839928cf1950be5565069035426a491f6244
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:913b783621c1eff397e458b3a1fa46f278745e4c9eb5faa8bd1d6504dfef3a83
+  - strong: DOMAIN_RESEARCH · ADD · sha256:1c82b62af4e0914520a70a54e3209b1335001312d9a5946082b309a9a2aca18c
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:1cd177b7448373faafe9417f3ce3854c7a92d765ee87fd426093e5c757152b9e
+  - strong: DOMAIN_RESEARCH · ADD · sha256:9fc67faec3725f5f4714c2d03cea1347a013a351819ea60f39b22d99e3068b52
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:7985e14993f509e213dc7ae598f2e6fada07013400263a560dd35c709bde7074
+  - strong: DOMAIN_RESEARCH · ADD · sha256:c2c0985dcdc5abf2ba3f6de677b8fb5c07c564e0e4452bf4a420807b3eb2c12a
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:c8dce10f910ea71a2e99c3d7e2af6fdef141a6957bfeb3a8b45d61efe02f05e8
+  - strong: DOMAIN_RESEARCH · ADD · sha256:f0b78300918b7ad1d09ff74ae5d1f7ffe2d7680f269de6818662093645a4fe50
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:4e4172baaa5f43414283e92486e5c48dacf8d8c06a2d781d05a135842fae1416
+  - strong: DOMAIN_RESEARCH · ADD · sha256:8b779116c01c77a2f4dd4c081cd3c31e82abd4927ad8a5067cc78345a5f46548
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:f8e4904b7ddf72cee436e1bc51eb7f89d327d869ae72d31c26250b3624b11ad1
+  - strong: DOMAIN_RESEARCH · ADD · sha256:3e7ceb6397438ab15cdf4fd476f28c0201fc83eece246d8947377ff6068442d7
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:a56f7dbd62a172c871d147d473bf77d1b37346164ace82a72073483b616d0b00
+  - strong: DOMAIN_RESEARCH · ADD · sha256:0a10f5bfa025fa9c1c406c273edbc36e6d4e2d02d0e8cf6323f81b51fac5e423
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:d8fd836fa5972d12820e5df9cc300b038bffd4ce38aa6d68139051dc2330ab16
+  - strong: DOMAIN_RESEARCH · ADD · sha256:77c802892ab30ea73d8673b077da54407e34e5c05387fe1325772c41fcd996b0
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:6aa41885c3290b0cee15bc6f3059b33db6a1bfbd058e2523e3350cd49d98d34e
+  - strong: DOMAIN_RESEARCH · ADD · sha256:8bb7b16bc0ae3f521a9bb7df6e649e5096a4d989ba702f348a8668b8114aab28
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:0927586a54237b468c911107f13bf5dc3de3b21312b73f0bacbabc0a82536a62
+  - strong: DOMAIN_RESEARCH · ADD · sha256:b28fa059efde2cb23474405e9ada83c7c9147b42a27131d851fa14657f6d1210
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:e25b0f30aed200e2a89393227a71117b9cb1a1337ae583bce9e5c5f8a42f26e4
+  - strong: DOMAIN_RESEARCH · ADD · sha256:13484d8f02c1d6bc263dc500d306a25ac57917fdf68b3009faa3b6a89c5128bb
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:7cd5aee04e60411e12b7665926e424eab485fea4fd585bb66f61de4dbdc7f62b
+  - strong: DOMAIN_RESEARCH · ADD · sha256:44a7b1fad11fa5aeb760644232533a268b5e8e5e1955bac343b33afe88834ed6
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:569bf509e9515c8ed069c49578d6fd056246ed871e610d3160698ddd50e866a6
+  - strong: DOMAIN_RESEARCH · ADD · sha256:a327f1fb53422119156066ee9429052202a373b4c8d45cd5954fc764c932e207
+  - paragraph: 2026-11-27T22:15:00.000Z
+  - paragraph: Append individually source-pinned public document item; no actual Council work, official relationship or calculation admitted.
+  - paragraph: sha256:9a435c9473bc7232ecacfa5f79b11d298bd9a71ac3dede2b73b5690361d165c7
+  - button "Newer events"
+  - button "Older events"
+  - heading "Revision field differences 0–15 / 1066" [level=4]
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02:input:synthetic-water-output · sha256:07d4e9b907372272d33dd1047254f0ac93ced3a794aabc762e27886636a9dfcf
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02:input:synthetic-water-spend · sha256:1df00b20ca3e0373ddc44d083cd039379147afab9934f804cf2868018b399a44
+  - group: sha256:6c330d118d4bb704dde29cc24cb9842a1a493d6e7e93d3388205b33212f33d02 · sha256:67edf84d7a2fdf6227e3bc426e8311d79df0e5f35e18764e00dd97f9e5e4fd7a
+  - group: synthetic-water-spend · sha256:af6817d5f43d5d0a391e96347affaf7f2ec59208f58a273fb457f33a919afec3
+  - group: csoi:knowledge:op2026:november:table-row:23-6-2:activity:5 · sha256:e74279063ee9b52cb71e267220ea790ed73a4348189c38ee92815b3f891f2442
+  - group: csoi:knowledge:op2026:november:table-row:23-6-2:activity:4 · sha256:9d4b5226e9387ffa5896b8af58e0500f8a4ba126f2a8ba42115ec91532da0b13
+  - group: csoi:knowledge:op2026:november:table-row:23-6-2:activity:3 · sha256:9bf4f17347d2e4b538983d5672f0db9a77dcd4885267809b2e5312535327802f
+  - group: csoi:knowledge:op2026:november:table-row:23-6-2:activity:2 · sha256:9b882bf1c51ebc58833489f081f1d018d27f2b564fda5e4a5c9bc89d5db27994
+  - group: csoi:knowledge:op2026:november:table-row:104-33-9 · sha256:a59ab8c3b26d607cc05f20afc98a1229438d927edc4cd99923f7985f334f05e2
+  - group: csoi:knowledge:op2026:november:table-row:104-33-8 · sha256:67b7a7486b648161f4048079ca2d93931b0ea54135b6f5222a6ea473848ec959
+  - group: csoi:knowledge:op2026:november:table-row:104-33-7 · sha256:1fec3a85f22fe8a84f80aa161dc5f1c6c91a755e20653ba2d75b5e67b8793e2a
+  - group: csoi:knowledge:op2026:november:table-row:104-33-6 · sha256:43295121aad3b5924bc4d8d168355b0d000d1bd8121f9fa258dddfaefe9204a1
+  - group: csoi:knowledge:op2026:november:table-row:104-33-5 · sha256:1122843a11386067971e4253a8d934f5525dc3744519628b2444e8198d15f127
+  - group: csoi:knowledge:op2026:november:table-row:104-33-4 · sha256:367998d274df9faf3b28195214e1c443eeaaae0ea359835dba9a019b2be0530b
+  - group: csoi:knowledge:op2026:november:table-row:104-33-3 · sha256:3194d911df67907f7447bf6aefadc60e010fbc702b39625c50bdadb6b398d3e1
+  - button "Older revisions"
+  - paragraph: Original content, semantic assertions, source intake, calculations and local research have separate histories. Integrity is not source rights, truth, legal applicability or official approval. Full history is included in explicit exports.
+  - heading "Public reference directories" [level=3]
+  - link "Integrated planning and reporting ↗":
+    - /url: https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting
+  - link "Development and land-use planning ↗":
+    - /url: https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development
+  - paragraph: Directories do not prove clause mappings. CSP 6.1 admission remains pending.

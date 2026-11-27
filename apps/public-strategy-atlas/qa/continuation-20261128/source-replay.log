@@ -1,0 +1,38 @@
+csoi:smrc-csp-summary:20261030 1
+csoi:smrc-csp-full-2025:20261030 36
+csoi:smrc-lsps-2020:20261030 118
+csoi:smrc-ltfp-2026:20261030 44
+csoi:smrc-resourcing-2026:20261030 439
+csoi:smrc-water-amp-2025:20261030 56
+csoi:smrc-annual-report-2025-retrieved:20261030 241
+csoi:smrc-dcp-bombala-2014:20261030 108
+csoi:smrc-dcp-cooma-2014-amend4:20261030 213
+csoi:smrc-dcp-snowy-2013-amend3:20261030 465
+csoi:smrc-dp-2026:20261128 100
+csoi:smrc-op-2026:20261128 141
+PASS 12 originals and 1962 page fingerprints
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+DP 29 tables 148 named rows 0 unresolved continuations sha256:aea19315deddbb39db922a9e4352e8aac13f1b7e26c0b47e4fb1fc3f7c527781
+OP 33 tables 117 named rows 3 unresolved continuations sha256:c512544e7eca39d932ade34d31e84212f79e05e88ea3c3a436ff16ae3ac5bc2c
+PASS 922 entities 1062 revisions 25752757 bytes sha256:b948f31d4ccbe9ea7fd2b6891d6afa7db194c5817f3fda4ebf8f11a49428d69e
+PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.
+python verify-source.py
+PASS: original PDF bytes, page count, bounded anchor extraction and excerpt digest. Admission/permission approval is not implied.
+python tools/verify-plan-editions.py
+PASS two PDF byte receipts, directory links, edition conflicts, project and budget columns, water conditions, CSP 8.2 and resolution 440/25
+python tools/verify-service-context.py
+PASS original asset plan, annual report and resourcing strategy: raw bytes, page anchors and bounded observations
+python tools/verify-project-activities.py
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+PASS four distinct planned activities and exact shared subject boundaries; three unnamed cells resolved, no actual work, costs or outcome asserted
+python tools/verify-lep-directory.py
+PASS three directory-listed former areas, recorded 403 for current instrument URLs and 200 for the Planning Portal directory; parcel and effective law remain UNKNOWN
+node audit-cli.cjs
+{
+  "schemaVersion": "atlas-audit-1",
+  "datasetDigest": "sha256:13e765c81f1340918322b1e985da85f2362da3c72e1997804f952865edf365d2",
+  "historyHead": "sha256:963d8d32f0807a40a90db8c255cba4da5cac53a2491b94589139e96d3b372126",
+  "historyValid": true,
+  "issues": [],
+  "warning": "Digest verifies supplied content only; no independent witness, signature or semantic truth."
+}

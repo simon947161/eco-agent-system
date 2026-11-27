@@ -1,0 +1,518 @@
+{
+  "command": "node --test --test-concurrency=3 --experimental-test-coverage '--test-coverage-include=**/atlas-*.js' '--test-coverage-include=**/csoi-*.js' --test-reporter=spec *.test.cjs",
+  "node": "v24.22.3",
+  "total": 55,
+  "passed": 55,
+  "failed": 0,
+  "durationMs": 281491.169077,
+  "files": [
+    {
+      "file": "accounting.test.cjs",
+      "ms": 138.897964,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "9c31d8c2e971e22136d37081a4e6110d39f47432abf4f9f62369e1e5c8b935f9"
+    },
+    {
+      "file": "applicability.test.cjs",
+      "ms": 569.374951,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "5f34f23bb76b64010d12bc3338f76c487b6d68dec73740400557b7a50f83bb4b"
+    },
+    {
+      "file": "atlas-snapshot-capacity.test.cjs",
+      "ms": 1697.509389,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "3091367ae8942e8e94077ea0b8ee05e27a968fd318d8ba03fce047d7a24ffd54"
+    },
+    {
+      "file": "comparison.test.cjs",
+      "ms": 3557.488553,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "1c96c885e8ed0ffc0f78fcbd84b7ce0c18ae4c49760be1d236f64960e1dac2bd"
+    },
+    {
+      "file": "content.test.cjs",
+      "ms": 405.702479,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "11dfb76aabeb131d2ba86f59a59a33274b800af38027d4fe1e0c1eea0df9cf20"
+    },
+    {
+      "file": "csoi-assistant.test.cjs",
+      "ms": 386.108698,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "4bd6c797f86aa12f1ae71d3c281db93b0a34053ec6715b29d40d75a84494abd0"
+    },
+    {
+      "file": "csoi-bombala-phe.test.cjs",
+      "ms": 50796.86074,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "3924da987a13bafaa32bd6f247e2eb451327a4a243019b424a02835dc675a5f6"
+    },
+    {
+      "file": "csoi-bombala.test.cjs",
+      "ms": 20552.244072,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "9d096418db6a9f9c139e7fedce35edacd542e77ea6de539aab40b2f6dae527c9"
+    },
+    {
+      "file": "csoi-boot.test.cjs",
+      "ms": 231208.726788,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "b11928b13d32037f519cb77098a6662a3ae2cf2f0760c6b9846d4b3072416ff3"
+    },
+    {
+      "file": "csoi-calendar.test.cjs",
+      "ms": 399.97291,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "3e30d32d45c20eabf7afe36dfadca628a4a19c1a79b0be919625f8f4a0f19fa6"
+    },
+    {
+      "file": "csoi-capsule.test.cjs",
+      "ms": 573.859794,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "6e945bf082308b49fc0938a45b53e785c6a811f5caef820d1b82b51908a25d90"
+    },
+    {
+      "file": "csoi-clauses.test.cjs",
+      "ms": 18070.010646,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "cb1cd7d57ee31966045fe18a1eb9df3891e95361f820a06447715ed148dbbaf9"
+    },
+    {
+      "file": "csoi-cooma.test.cjs",
+      "ms": 18062.126541,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "703c279abebfa1cf23f7b418018a30c68afca9020d4511da484e7f63594d226b"
+    },
+    {
+      "file": "csoi-digest-screening.test.cjs",
+      "ms": 86.412497,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "cefc200b1f0c8f1f92b07130d14821425fd0fb2441fb988d38c26ca4d4498725"
+    },
+    {
+      "file": "csoi-governance.test.cjs",
+      "ms": 102.052072,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "b30c94ab408f351f0141bc0156eec1c4989c6d3cae4dff26748285e483cee7f2"
+    },
+    {
+      "file": "csoi-intake.test.cjs",
+      "ms": 17494.466926,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "b6acabfb721887688684a3b771d1810d6ceb5ac75602c48e5cf22ab59afd6a2a"
+    },
+    {
+      "file": "csoi-knowledge.test.cjs",
+      "ms": 1740.106874,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "9561ee807421e3d00aed896aa690013c38af6ed1d842116ed3ede023843398be"
+    },
+    {
+      "file": "csoi-layers.test.cjs",
+      "ms": 958.260915,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "0ae7cf2919ca4586f71f3519a270afd4517d24fecc79d32721d72f272557190e"
+    },
+    {
+      "file": "csoi-lsps-context.test.cjs",
+      "ms": 44930.34716,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "22a17456e59555aee2f073aaf8eda47069d3c67e36abbf66c719a4372521a467"
+    },
+    {
+      "file": "csoi-metric-review.test.cjs",
+      "ms": 26491.702202,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "bd7d2afee747319ecba2d83c558d031c30511b609835ed46d9c24becbe84405e"
+    },
+    {
+      "file": "csoi-model.test.cjs",
+      "ms": 1530.926199,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "907373039e91feb88e93b4ad73fc9899d37afa39d2a467f75975e40a07b8c11a"
+    },
+    {
+      "file": "csoi-op-review.test.cjs",
+      "ms": 66418.690769,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "dfdcd65384b42f4f607b0ef622339506f1125a552cf4049fda1e79efe85b086f"
+    },
+    {
+      "file": "csoi-path-transaction.test.cjs",
+      "ms": 44100.350455,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "6d2b95f3ad945f0186df26defde3c74c56e221667dfb82bc8be5749040f65f27"
+    },
+    {
+      "file": "csoi-paths.test.cjs",
+      "ms": 27019.506042,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "a1d626d719084604745909e15c314473117d7e46e52c9d154ffc7ce8b33e604e"
+    },
+    {
+      "file": "csoi-phe-context.test.cjs",
+      "ms": 21572.643002,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "145951bd91eaf41da6601bdf7fbaa1441ff281e1f25ef86dbbd2379f3599ed6e"
+    },
+    {
+      "file": "csoi-phe.test.cjs",
+      "ms": 99.292966,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "0c6d8e83cee34f13ec34547eef12549571bcaae261dab80c72d10303d6881695"
+    },
+    {
+      "file": "csoi-planning.test.cjs",
+      "ms": 18173.107528,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "6588770744165f4b975b71a41a737dcef8f4416173205d2e8b84a99187c88fa9"
+    },
+    {
+      "file": "csoi-receipts.test.cjs",
+      "ms": 1239.664371,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "f6cadd7ee4945f22d30ca68800041c8fcc792f141df0ec8d03a7001fa18e0d7d"
+    },
+    {
+      "file": "csoi-recompute.test.cjs",
+      "ms": 1001.139546,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "fd774514b471310d11c9acd2c8baa7c0b95a229161dcd36867ff592bdeb5c9b6"
+    },
+    {
+      "file": "csoi-remediation.test.cjs",
+      "ms": 40497.344355,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "54540ddf4a84169c5cabcda55ea6164a27be6d20317c685785642938790ecb4d"
+    },
+    {
+      "file": "csoi-review-work.test.cjs",
+      "ms": 20975.342467,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "f2bdd7de9399d73f309b3c497ff86c0e30d4fc06293f1c54fedbd0b8124d7fe6"
+    },
+    {
+      "file": "csoi-router.test.cjs",
+      "ms": 140.850357,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "3c572433cd402799d91d240b2a1b8296e5ac221a7724e9e7acf2bd05bbdb7dce"
+    },
+    {
+      "file": "csoi-source-integrity.test.cjs",
+      "ms": 38735.666153,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "776c03336cd7a07e073c6225680d4098633990066b6945d978665a2b2ee6753d"
+    },
+    {
+      "file": "csoi-strategy-research.test.cjs",
+      "ms": 47211.246123,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "524ce9c7a0990ba86ce4728a76abee2fe8ba417f59646842055363270ef6d583"
+    },
+    {
+      "file": "csoi-wcos.test.cjs",
+      "ms": 359.017333,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "0da93a0471f5f916918d307dac3b0a82aefd9a8f79700059e06e2ac719101059"
+    },
+    {
+      "file": "csoi-work.test.cjs",
+      "ms": 380.594959,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "6005481fa6da942f8d0ace2d6eb478c48d236a8aa07e13251675f736e0f48088"
+    },
+    {
+      "file": "deep-content.test.cjs",
+      "ms": 3796.539629,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "ad534b3d173858a50feba00214ab4a2ef2ac3ff3eecdb536840e64d9fba38a43"
+    },
+    {
+      "file": "discovery.test.cjs",
+      "ms": 737.805086,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "3887d1c0a612861bac2d12ccfdf7dd013ea7e737c6c9e5b0caeff6377b7fb262"
+    },
+    {
+      "file": "domain.test.cjs",
+      "ms": 553.280727,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "b58d08d5bdf06eb7a42cf88e5b3c7f12e3e25f3b0e423f57cd2822bdc17d586f"
+    },
+    {
+      "file": "execution.test.cjs",
+      "ms": 332.088549,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "27528254db95c744981a24d00cc6796862ad036fdb77b3fe96447a92cd8023af"
+    },
+    {
+      "file": "input-navigation.test.cjs",
+      "ms": 909.952494,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "17ce1df3334ce8d154488930257601bb67ed56985784b4af67642bf0b8be3937"
+    },
+    {
+      "file": "intake-access.test.cjs",
+      "ms": 127.02152,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "e1439fbb8ee26feb84b9f588fa60c3178db5b5c488cd1f4f901063bd1f682228"
+    },
+    {
+      "file": "intake.test.cjs",
+      "ms": 633.735508,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "6a4689aff55ee59d4dc9f94c83fdbc19df0fe5287af9db56586c47845e7c3beb"
+    },
+    {
+      "file": "integration.test.cjs",
+      "ms": 425.801397,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "0fda7c22057ee116ef5fe95da6979c00db445696531e8fd3df9a56a3eb09ba34"
+    },
+    {
+      "file": "ledger.test.cjs",
+      "ms": 673.854896,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "eacf37017379c8bd8cf511bd382cf8754471d24b60127ed5bc50ce434962939a"
+    },
+    {
+      "file": "model.test.cjs",
+      "ms": 113.312128,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "9220a967fecaff1de03c818d3d5af4b75b3419ca97d6c334a90eaf58a778ef2f"
+    },
+    {
+      "file": "page-index.test.cjs",
+      "ms": 3919.818431,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "52b178ebe5e2defb45d99924c0798b37c535ac5cd22fb45a58a4a4d38b06cbed"
+    },
+    {
+      "file": "plan-comparison.test.cjs",
+      "ms": 3472.85628,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "83dc37cbf16f39a7886cee697ebeb1b7cb687f4417859b608c9acbe1bb690a38"
+    },
+    {
+      "file": "plan-edition.test.cjs",
+      "ms": 15503.870332,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "a398c5ff1e46f01b7bf906a54d1164e8fd68eeecc1e9c78acc0d1723d448202b"
+    },
+    {
+      "file": "project-register.test.cjs",
+      "ms": 25236.404091,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "b5440455f4c870f86534bc5973b92ca782230366fe975229e8c083aeb0d8ae85"
+    },
+    {
+      "file": "route-main.test.cjs",
+      "ms": 111.000408,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "0cbb1f22d65c09ab70e5413f541d8786277f8376b39802991b0f289695547b56"
+    },
+    {
+      "file": "route-map.test.cjs",
+      "ms": 102.281793,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "f68a4dc1f8464065ec2d4bba327aced33786324888f4addc7c5fa43e9a352325"
+    },
+    {
+      "file": "service-context.test.cjs",
+      "ms": 4537.278026,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "a815d69e4614520f63980005eedb63ff58b65c7a5dbd0ec7e8e27d05cd1c1cdf"
+    },
+    {
+      "file": "workspace-merge.test.cjs",
+      "ms": 202.801947,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "5795de5d637428efdb9fcce8c848f098183cb54f0eeed3beef9a3df3a22deebe"
+    },
+    {
+      "file": "workspace.test.cjs",
+      "ms": 161.142988,
+      "status": "PASS_TESTED_HERE",
+      "sha256": "baf29f4c4a1501b4058b36982e7e3209ae3ebc64292b6fbb29c943960e2cf846"
+    }
+  ],
+  "coverage": {
+    "atlas-accounting.js": {
+      "linePercent": 100.0,
+      "branchPercent": 83.1,
+      "functionPercent": 95.45
+    },
+    "atlas-data.js": {
+      "linePercent": 100.0,
+      "branchPercent": 95.0,
+      "functionPercent": 100.0
+    },
+    "atlas-domain.js": {
+      "linePercent": 100.0,
+      "branchPercent": 86.78,
+      "functionPercent": 97.59
+    },
+    "atlas-execution.js": {
+      "linePercent": 98.43,
+      "branchPercent": 90.02,
+      "functionPercent": 96.23
+    },
+    "atlas-intake.js": {
+      "linePercent": 100.0,
+      "branchPercent": 84.36,
+      "functionPercent": 100.0
+    },
+    "atlas-model.js": {
+      "linePercent": 99.06,
+      "branchPercent": 85.05,
+      "functionPercent": 100.0
+    },
+    "atlas-page-index.js": {
+      "linePercent": 100.0,
+      "branchPercent": 93.18,
+      "functionPercent": 100.0
+    },
+    "atlas-plan-comparison.js": {
+      "linePercent": 100.0,
+      "branchPercent": 84.62,
+      "functionPercent": 100.0
+    },
+    "atlas-project-register.js": {
+      "linePercent": 95.41,
+      "branchPercent": 80.0,
+      "functionPercent": 95.83
+    },
+    "atlas-route-layout.js": {
+      "linePercent": 100.0,
+      "branchPercent": 84.21,
+      "functionPercent": 100.0
+    },
+    "atlas-workspace.js": {
+      "linePercent": 90.79,
+      "branchPercent": 82.49,
+      "functionPercent": 92.59
+    },
+    "csoi-assistant.js": {
+      "linePercent": 100.0,
+      "branchPercent": 91.95,
+      "functionPercent": 97.67
+    },
+    "csoi-boot.js": {
+      "linePercent": 100.0,
+      "branchPercent": 75.0,
+      "functionPercent": 100.0
+    },
+    "csoi-calendar.js": {
+      "linePercent": 100.0,
+      "branchPercent": 87.29,
+      "functionPercent": 100.0
+    },
+    "csoi-clauses.js": {
+      "linePercent": 100.0,
+      "branchPercent": 77.06,
+      "functionPercent": 100.0
+    },
+    "csoi-governance.js": {
+      "linePercent": 100.0,
+      "branchPercent": 76.87,
+      "functionPercent": 100.0
+    },
+    "csoi-intake.js": {
+      "linePercent": 91.43,
+      "branchPercent": 71.43,
+      "functionPercent": 93.75
+    },
+    "csoi-knowledge.js": {
+      "linePercent": 100.0,
+      "branchPercent": 90.06,
+      "functionPercent": 98.67
+    },
+    "csoi-layers.js": {
+      "linePercent": 100.0,
+      "branchPercent": 74.12,
+      "functionPercent": 90.57
+    },
+    "csoi-lsps-context.js": {
+      "linePercent": 94.12,
+      "branchPercent": 68.42,
+      "functionPercent": 91.67
+    },
+    "csoi-metric-review.js": {
+      "linePercent": 100.0,
+      "branchPercent": 80.65,
+      "functionPercent": 92.31
+    },
+    "csoi-op-review.js": {
+      "linePercent": 100.0,
+      "branchPercent": 84.21,
+      "functionPercent": 100.0
+    },
+    "csoi-pages.js": {
+      "linePercent": 7.12,
+      "branchPercent": 47.5,
+      "functionPercent": 23.81
+    },
+    "csoi-paths.js": {
+      "linePercent": 100.0,
+      "branchPercent": 88.33,
+      "functionPercent": 98.18
+    },
+    "csoi-phe.js": {
+      "linePercent": 98.7,
+      "branchPercent": 88.1,
+      "functionPercent": 100.0
+    },
+    "csoi-remediation.js": {
+      "linePercent": 100.0,
+      "branchPercent": 81.71,
+      "functionPercent": 100.0
+    },
+    "csoi-review-work.js": {
+      "linePercent": 100.0,
+      "branchPercent": 89.02,
+      "functionPercent": 100.0
+    },
+    "csoi-router.js": {
+      "linePercent": 89.23,
+      "branchPercent": 88.18,
+      "functionPercent": 88.24
+    },
+    "csoi-strategy-research.js": {
+      "linePercent": 98.25,
+      "branchPercent": 81.55,
+      "functionPercent": 100.0
+    },
+    "csoi-wcos.js": {
+      "linePercent": 100.0,
+      "branchPercent": 87.62,
+      "functionPercent": 100.0
+    },
+    "csoi-work.js": {
+      "linePercent": 100.0,
+      "branchPercent": 89.86,
+      "functionPercent": 98.11
+    },
+    "csoi-catalogue.js": {
+      "linePercent": 100.0,
+      "branchPercent": 66.67,
+      "functionPercent": 100.0
+    },
+    "csoi-default-snapshot.js": {
+      "linePercent": 100.0,
+      "branchPercent": 66.67,
+      "functionPercent": 100.0
+    },
+    "csoi-source-observations.js": {
+      "linePercent": 100.0,
+      "branchPercent": 66.67,
+      "functionPercent": 100.0
+    },
+    "all files": {
+      "linePercent": 90.11,
+      "branchPercent": 85.15,
+      "functionPercent": 96.09
+    }
+  },
+  "scope": "V8 coverage of loaded JS files matching the two include patterns. Browser DOM code, Python parsers and public corpus completeness are separate measurements."
+}

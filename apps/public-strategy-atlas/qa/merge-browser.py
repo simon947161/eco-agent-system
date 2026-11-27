@@ -1,15 +1,16 @@
 """Actual divergent-workspace reconciliation + domain snapshot import acceptance."""
 from pathlib import Path
+import os
 import json, subprocess
 from playwright.sync_api import sync_playwright, expect
-APP=Path(__file__).resolve().parents[1];OUT=APP/'qa'/'system'
+APP=Path(__file__).resolve().parents[1];OUT=Path(os.environ.get('ATLAS_SYSTEM_QA_OUT',APP/'qa'/'system'))
 fixture=Path('/tmp/atlas-incoming-workspace.json')
 subprocess.run(['node','-e',"const W=require('./atlas-workspace.js'),D=require('./atlas-data.js'),fs=require('fs');(async()=>{const b=await W.create(D),i=await W.commit(b,D,{targetId:'water:content',content:{title:'Imported branch title',text:'<img src=x onerror=window.__atlasInjected=1> Synthetic imported annotation.'},reason:'Synthetic divergent import fixture'});fs.writeFileSync('/tmp/atlas-incoming-workspace.json',JSON.stringify(i));})();"],cwd=APP,check=True)
 def tool(page,id):
  if page.locator('#toolsMenu').get_attribute('open') is None:page.locator('#toolsMenu>summary').click()
  page.locator('#'+id).click()
 with sync_playwright() as p:
- b=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+ b=p.chromium.launch(executable_path=os.getenv('ATLAS_CHROMIUM','/usr/bin/chromium'),args=['--no-sandbox'])
  for width,height in [(1440,900),(390,844)]:
   context=b.new_context(viewport={'width':width,'height':height},reduced_motion='reduce',accept_downloads=True)
   page=context.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))

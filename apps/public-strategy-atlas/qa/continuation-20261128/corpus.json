@@ -1,0 +1,546 @@
+{
+  "catalogue": {
+    "inventoryCompleteness": "UNKNOWN",
+    "registeredRequirements": 54,
+    "documentDenominator": 30,
+    "directoryDenominator": 7,
+    "requiredFamilyDenominator": 31,
+    "discoveredDocuments": 30,
+    "accessibleDocuments": 28,
+    "byteVerified": 28,
+    "partiallyExtracted": 0,
+    "fullyExtracted": 0,
+    "anchorReviewed": 0,
+    "versionConfirmed": 0,
+    "admittedDocuments": 0,
+    "admittedRelationships": 0,
+    "relationshipCoverage": "NOT_COMPUTED_BY_SOURCE_REGISTER",
+    "officialOutcomeKpi": "UNKNOWN",
+    "warning": "Registered requirements are not a complete official document inventory. Historical reported checks do not count as current executed stages."
+  },
+  "families": {
+    "CSP": {
+      "entries": 3,
+      "documents": 3,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 2,
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "DP": {
+      "entries": 3,
+      "documents": 2,
+      "directories": 0,
+      "byteVerifiedDocuments": 2,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1,
+        "RAW_BYTES_VERIFIED": 2
+      }
+    },
+    "OP": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "RESOURCING": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "LONG_TERM_FINANCIAL_PLAN": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "ASSET_MANAGEMENT": {
+      "entries": 2,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1,
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "WORKFORCE": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "BUDGET": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "LSPS": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "LEP": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "DCP": {
+      "entries": 4,
+      "documents": 3,
+      "directories": 0,
+      "byteVerifiedDocuments": 3,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1,
+        "RAW_BYTES_VERIFIED": 3
+      }
+    },
+    "PERFORMANCE_REPORTING": {
+      "entries": 2,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1,
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "LAND_USE": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "ENVIRONMENTAL_DATA": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "STRATEGY_DIRECTORY": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 1,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "SPATIAL_PLANNING": {
+      "entries": 1,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "LTW": {
+      "entries": 3,
+      "documents": 3,
+      "directories": 0,
+      "byteVerifiedDocuments": 3,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 3
+      }
+    },
+    "BACKFLOW": {
+      "entries": 1,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "PUBLIC_HEALTH": {
+      "entries": 1,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "PUBLIC_HEALTH_REPORTING": {
+      "entries": 1,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "COOLING_WARM_WATER": {
+      "entries": 1,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "SKIN_PENETRATION": {
+      "entries": 1,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "STRATEGIC_DOCUMENT": {
+      "entries": 6,
+      "documents": 6,
+      "directories": 0,
+      "byteVerifiedDocuments": 6,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 6
+      }
+    },
+    "OSSM": {
+      "entries": 1,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "POOLS_SPAS": {
+      "entries": 1,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "FOOD": {
+      "entries": 1,
+      "documents": 1,
+      "directories": 0,
+      "byteVerifiedDocuments": 1,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 1
+      }
+    },
+    "ENVIRONMENT": {
+      "entries": 2,
+      "documents": 2,
+      "directories": 0,
+      "byteVerifiedDocuments": 2,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 2
+      }
+    },
+    "FOOD_LEGISLATION": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "PUBLIC_HEALTH_LEGISLATION": {
+      "entries": 2,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 2
+      }
+    },
+    "LOCAL_GOVERNMENT_LEGISLATION": {
+      "entries": 1,
+      "documents": 0,
+      "directories": 0,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "DISCOVERED": 1
+      }
+    },
+    "DCP_DIRECTORY": {
+      "entries": 6,
+      "documents": 0,
+      "directories": 6,
+      "byteVerifiedDocuments": 0,
+      "admitted": 0,
+      "stages": {
+        "RAW_BYTES_VERIFIED": 6
+      }
+    }
+  },
+  "plans": {
+    "DP": {
+      "named": 148,
+      "registered": 148,
+      "missing": 0,
+      "unnamedRows": 0,
+      "resolvedContinuations": 0,
+      "unresolvedContinuations": 0,
+      "unqualifiedAmounts": 75,
+      "officialAdmission": "PENDING",
+      "actualSpend": "UNKNOWN",
+      "tables": 29
+    },
+    "OP": {
+      "named": 117,
+      "registered": 117,
+      "missing": 0,
+      "unnamedRows": 3,
+      "resolvedContinuations": 3,
+      "unresolvedContinuations": 0,
+      "unqualifiedAmounts": 44,
+      "officialAdmission": "PENDING",
+      "actualSpend": "UNKNOWN",
+      "tables": 33
+    }
+  },
+  "versionedEntities": 922,
+  "domainAssertions": 48,
+  "domainRevisions": 1062,
+  "domainEvents": 1062,
+  "legacyItems": 127,
+  "stations": 15,
+  "sourceKnowledge": 785,
+  "printedReferences": 589,
+  "pageEditions": {
+    "csoi:smrc-annual-report-2025-retrieved:20261030": {
+      "digest": "sha256:67f760b9400e298150636992952ae3740fd4d8d55894fd4acec5973995b8e258",
+      "pageCount": 241,
+      "rawDigest": "sha256:39fd5776dc2578cdaaee49939841b1ad9300fc6d13f131212c52db4e93e72d4b"
+    },
+    "csoi:smrc-csp-full-2025:20261030": {
+      "digest": "sha256:99797b7fa1a84af25ba3b2e123079aa525181e59aee74109729df03689ecfaa6",
+      "pageCount": 36,
+      "rawDigest": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743"
+    },
+    "csoi:smrc-csp-summary:20261030": {
+      "digest": "sha256:3ee4fe367c13e0f33d160d522f9c137100958d41781d328f50d53aec0ed2c575",
+      "pageCount": 1,
+      "rawDigest": "sha256:1f1be67a25c0c2468b7f69d5959300430b840ebe5beb05eb1e77dd8516c3261e"
+    },
+    "csoi:smrc-dcp-bombala-2014:20261030": {
+      "digest": "sha256:72de32831f67d41ad0d4f9981094b1ec893703505e74a2042c7849323988a2ee",
+      "pageCount": 108,
+      "rawDigest": "sha256:91375ba17012f891593bb200a533d3de12e6e48e579b1d7e9212af0be66a7ee6"
+    },
+    "csoi:smrc-dcp-cooma-2014-amend4:20261030": {
+      "digest": "sha256:211d0e25fc8752e289b23eed976cdca252f4f92ee367253355e00644f424385f",
+      "pageCount": 213,
+      "rawDigest": "sha256:4347cd774b6d2508422a9e5fce8200ae470df9572ec644045d7abdfba9040bed"
+    },
+    "csoi:smrc-dcp-snowy-2013-amend3:20261030": {
+      "digest": "sha256:b9a4e06c5b04fb1894e8f45412df4514378fc90c50fadd493191f923860d7faa",
+      "pageCount": 465,
+      "rawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d"
+    },
+    "csoi:smrc-dp-2026:20261128": {
+      "digest": "sha256:f53937ddc54c830d06ad9e6b5ec4c3ee16ac443edf000e0bb58c7b0bf85dcd75",
+      "pageCount": 100,
+      "rawDigest": "sha256:7f7bcef8a1950021300cc52b283f59944ee5e72925e6b60d93c15c1428b60f66"
+    },
+    "csoi:smrc-lsps-2020:20261030": {
+      "digest": "sha256:c93b1b63b02b8062c5ac888a5665467c39691677f00ec2b4a7e41d26b63efc11",
+      "pageCount": 118,
+      "rawDigest": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47"
+    },
+    "csoi:smrc-ltfp-2026:20261030": {
+      "digest": "sha256:9749a22ae3209f5452d2f6a25a615eed41915d73872f1d8109626c1c7f0ec550",
+      "pageCount": 44,
+      "rawDigest": "sha256:17a27eaa7c8e841dc86d897ac07871827b88964e87f6a0148a2e30497427f32a"
+    },
+    "csoi:smrc-op-2026:20261128": {
+      "digest": "sha256:b37676e258565a859f4e5d4f28c3c8b96d00d4b8112c8e391f3190e406a5c0cf",
+      "pageCount": 141,
+      "rawDigest": "sha256:61d290c41a52ea87f664f57453417367f5d3f0f4dcd8296fb95f29dacc8c0b60"
+    },
+    "csoi:smrc-resourcing-2026:20261030": {
+      "digest": "sha256:18f41d4d8b99dac20ae210a7e13fe9a5929cab94f237cf68ac07bd73c53c0b7b",
+      "pageCount": 439,
+      "rawDigest": "sha256:f667d09062b32681e26662491af261ec04655975959ef5b18b6f11d41119cb33"
+    },
+    "csoi:smrc-water-amp-2025:20261030": {
+      "digest": "sha256:737870e19a9104351a1f7f2d96f31459128a082033b96f259605b4af955cc7a4",
+      "pageCount": 56,
+      "rawDigest": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92"
+    }
+  },
+  "snapshot": "sha256:b948f31d4ccbe9ea7fd2b6891d6afa7db194c5817f3fda4ebf8f11a49428d69e",
+  "datasetBytes": 25752757,
+  "sourceStageHistory": 159,
+  "admittedPublicRelationships": 0,
+  "stationCoverage": [
+    {
+      "id": "csp",
+      "legacyItems": 8,
+      "domainEntities": 0,
+      "knowledgeEntities": 0,
+      "sourceEntries": 5
+    },
+    {
+      "id": "csp6",
+      "legacyItems": 8,
+      "domainEntities": 153,
+      "knowledgeEntities": 134,
+      "sourceEntries": 17
+    },
+    {
+      "id": "csp8",
+      "legacyItems": 8,
+      "domainEntities": 0,
+      "knowledgeEntities": 0,
+      "sourceEntries": 0
+    },
+    {
+      "id": "dp",
+      "legacyItems": 8,
+      "domainEntities": 151,
+      "knowledgeEntities": 150,
+      "sourceEntries": 6
+    },
+    {
+      "id": "op",
+      "legacyItems": 8,
+      "domainEntities": 280,
+      "knowledgeEntities": 278,
+      "sourceEntries": 4
+    },
+    {
+      "id": "kpi",
+      "legacyItems": 8,
+      "domainEntities": 0,
+      "knowledgeEntities": 0,
+      "sourceEntries": 1
+    },
+    {
+      "id": "water",
+      "legacyItems": 8,
+      "domainEntities": 24,
+      "knowledgeEntities": 6,
+      "sourceEntries": 6
+    },
+    {
+      "id": "audit",
+      "legacyItems": 8,
+      "domainEntities": 0,
+      "knowledgeEntities": 0,
+      "sourceEntries": 1
+    },
+    {
+      "id": "lsps",
+      "legacyItems": 8,
+      "domainEntities": 218,
+      "knowledgeEntities": 217,
+      "sourceEntries": 2
+    },
+    {
+      "id": "priority",
+      "legacyItems": 8,
+      "domainEntities": 0,
+      "knowledgeEntities": 0,
+      "sourceEntries": 0
+    },
+    {
+      "id": "lep",
+      "legacyItems": 8,
+      "domainEntities": 0,
+      "knowledgeEntities": 0,
+      "sourceEntries": 1
+    },
+    {
+      "id": "dcp",
+      "legacyItems": 8,
+      "domainEntities": 81,
+      "knowledgeEntities": 0,
+      "sourceEntries": 10
+    },
+    {
+      "id": "area",
+      "legacyItems": 8,
+      "domainEntities": 15,
+      "knowledgeEntities": 0,
+      "sourceEntries": 1
+    },
+    {
+      "id": "scope",
+      "legacyItems": 8,
+      "domainEntities": 0,
+      "knowledgeEntities": 0,
+      "sourceEntries": 0
+    },
+    {
+      "id": "candidate",
+      "legacyItems": 8,
+      "domainEntities": 0,
+      "knowledgeEntities": 0,
+      "sourceEntries": 0
+    }
+  ],
+  "publicRawStageKeepsResearchIndependent": true
+}
