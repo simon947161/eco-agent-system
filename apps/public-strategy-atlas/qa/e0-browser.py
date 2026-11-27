@@ -2,13 +2,14 @@
 Requires the existing engineering Playwright/Chromium runtime; no app dependency.
 Downloads and source bytes are kept in /tmp, screenshots are public/synthetic only.
 """
+import os
 from pathlib import Path
 import json
 import subprocess
 from playwright.sync_api import sync_playwright, expect
 
 APP = Path(__file__).resolve().parents[1]
-OUT = Path(__file__).resolve().parent / 'e0'
+OUT = Path(os.environ.get('ATLAS_QA_OUT', Path(__file__).resolve().parent / 'e0'))
 OUT.mkdir(exist_ok=True)
 TEMP = Path('/tmp/atlas-e0')
 TEMP.mkdir(exist_ok=True)
@@ -40,7 +41,7 @@ def accounting_in_view(page):
     }""")
 
 with sync_playwright() as p:
-    browser = p.chromium.launch(executable_path='/usr/bin/chromium', headless=True, args=['--no-sandbox'])
+    browser = p.chromium.launch(executable_path=os.environ.get('ATLAS_CHROMIUM','/usr/bin/chromium'), headless=True, args=['--no-sandbox'])
     context = browser.new_context(viewport={'width':1440,'height':900}, reduced_motion='reduce', accept_downloads=True)
     page = context.new_page()
     errors=[]
