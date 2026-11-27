@@ -1,0 +1,58 @@
+[
+  {
+    "id": "csoi:source-note:smrc-op-2026:food-program-p27",
+    "sourceId": "csoi:smrc-op-2026:20261030",
+    "recordInputs": [],
+    "sourceStatusAfter": "SOURCE_RETRIEVED",
+    "beforeCurrent": true,
+    "afterCurrent": true,
+    "afterGaps": [
+      "OFFICIAL_ADMISSION_UNKNOWN"
+    ],
+    "afterOfficialUse": "REJECTED_UNKNOWN_ADMISSION",
+    "sourceTraceStatus": "FOUND_RESEARCH_ONLY",
+    "changedSnapshotValid": true
+  },
+  {
+    "id": "csoi:dcp:snowy2013:C9:3:1:b:soil",
+    "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+    "recordInputs": [
+      {
+        "id": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+        "revisionId": "sha256:cd25c38e8737b850bfd3a2d9a34eee23fe432be67ff3053af353a87935c9ce5e"
+      },
+      {
+        "id": "csoi:dcp:snowy2013:C9:3:1:b",
+        "revisionId": "sha256:d43723d025f629aab9950f74b270c56503ca6bb68e7428ba551b5608ab0f8fc3"
+      }
+    ],
+    "sourceStatusAfter": "SOURCE_RETRIEVED",
+    "beforeCurrent": true,
+    "afterCurrent": true,
+    "afterGaps": [
+      "OFFICIAL_ADMISSION_UNKNOWN"
+    ],
+    "afterOfficialUse": "REJECTED_UNKNOWN_ADMISSION",
+    "sourceTraceStatus": "FOUND_RESEARCH_ONLY",
+    "changedSnapshotValid": true
+  },
+  {
+    "id": "csoi:published-plan:food-2026:target",
+    "sourceId": "csoi:smrc-op-2026:20261030",
+    "recordInputs": [
+      {
+        "id": "csoi:smrc-op-2026:20261030",
+        "revisionId": "sha256:43300767db8484a0bf72e96e104083705899d87f1b60f80859b8f5103ecfbd43"
+      }
+    ],
+    "sourceStatusAfter": "SOURCE_RETRIEVED",
+    "beforeCurrent": true,
+    "afterCurrent": true,
+    "afterGaps": [
+      "OFFICIAL_ADMISSION_UNKNOWN"
+    ],
+    "afterOfficialUse": "REJECTED_UNKNOWN_ADMISSION",
+    "sourceTraceStatus": "FOUND_RESEARCH_ONLY",
+    "changedSnapshotValid": true
+  }
+]

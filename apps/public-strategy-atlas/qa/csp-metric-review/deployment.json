@@ -1,0 +1,48 @@
+{
+  "status": "PUBLISHED_AND_LIVE_VALIDATED",
+  "at": "2026-11-02T00:55:12.320659+00:00",
+  "projectId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+  "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+  "version": 3,
+  "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_aac9007af8ec8191abe0a2e08ee7cf3f",
+  "deploymentId": "appgdep_6ae7df67b0cc8191a0c66e852cabb08c",
+  "deploymentStatus": "succeeded",
+  "canonicalApplicationSha": "2ec0be11f39cdb49577319c41b03dae9bb802baf",
+  "sitesSourceSha": "a1330593c3ee3654e51487e0b4d1c50b636055d5",
+  "archive": {
+    "sha256": "acfc1de143140cf9cbff1b88d4de583921688db524803a4addb2c3192b2dd97a",
+    "bytes": 8273920,
+    "fileCount": 47,
+    "sourceExact": true
+  },
+  "ownerOnlyPolicyUnchanged": true,
+  "waterSiteUnchanged": true,
+  "rollback": {
+    "version": 2,
+    "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_cb01c72c5bf48191bc3fa90a8ee3183f",
+    "sourceSha": "74f240e27cbfbbec5dffe225259eee1d42e58798"
+  },
+  "ownerSignedInBrowser": "NOT_TESTED_NO_OWNER_SESSION",
+  "liveEvidence": "live/live-validation.json",
+  "accessEvidence": "access-comparison.json",
+  "applicationSource": "Existing PR130 apps/public-strategy-atlas; same application and Site, no merge",
+  "verifiedAt": "2026-11-02T01:09:08.470629+00:00",
+  "liveRuntimeFilesMatched": 46,
+  "liveBrowserSuitesPassed": 4,
+  "anonymousStatuses": [
+    403,
+    403,
+    403
+  ],
+  "network": {
+    "requests": 486,
+    "mutationRequests": [],
+    "externalOrigins": []
+  },
+  "platformSavedArchive": {
+    "sha256": "6717547d1fdb973c8ffceea6483da1eb77f8986c8bf92006306d09b96d9e34bd",
+    "bytes": 8232960,
+    "fileCount": 47,
+    "note": "Native saved-version metadata reports a different digest and size from the supplied tar; no byte-identity claim between archives. All 46 served files separately matched canonical packaged bytes."
+  }
+}

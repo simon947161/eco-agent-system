@@ -1,0 +1,119 @@
+{
+  "at": "2026-11-02T04:29:09.343Z",
+  "canonicalApplicationSha": "cf0936474e00cad07acf6782100fc7e35db431ee",
+  "siteSourceSha": "ad876b976278d437878822c7eb6e24e7d3e64598",
+  "deployment": {
+    "id": "appgdep_6ae81182c56c81918558879a487b447f",
+    "project_id": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+    "title": "Council Strategic–Operational Intelligence · Private Trial",
+    "version_id": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_800266427f648191a9edcd40c1b79c59",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ae5b063565c8191802c9d7f7eb3214b",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-02T04:28:56.765459+00:00"
+  },
+  "council": {
+    "siteId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+    "version": 6,
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "status": "active",
+    "accessMode": "custom",
+    "policyRevision": 1,
+    "allowedAccounts": 1,
+    "allowedUsers": [
+      {
+        "role": "owner"
+      }
+    ],
+    "allowedGroups": 0,
+    "allowedEditors": 0,
+    "externalVisitorCount": 0
+  },
+  "waterUnchanged": true,
+  "water": {
+    "siteId": "appgprj_6adefcfe720881918b4e32874f12dd86",
+    "url": "https://climateos-snowy-monaro.minshu.chatgpt.site",
+    "status": "active",
+    "version": 2,
+    "versionId": "appgprj_6adefcfe720881918b4e32874f12dd86~appgver_6e7858f94ab881918228f1f9a742ff59",
+    "source": {
+      "commit_sha": "9f3a201d40c4b70d72f0b69c319805258769c242"
+    },
+    "deploymentId": "appgdep_6adf008a3d1c81918a673531038410d1",
+    "accessMode": "custom",
+    "policyRevision": 1,
+    "allowedAccounts": 1,
+    "allowedUsers": [
+      {
+        "role": "owner"
+      }
+    ],
+    "allowedGroups": 0,
+    "allowedEditors": 0,
+    "externalVisitorCount": 0
+  },
+  "rollback": {
+    "version": 4,
+    "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_f37c518ead6c8191849c233e8a18366f",
+    "source": {
+      "commit_sha": "c488e14fcdde671698e826179cf2e3ccd57491e2"
+    }
+  },
+  "liveValidation": "PASS",
+  "ownerInteractiveSignIn": "NOT_TESTED_NO_OWNER_SESSION",
+  "finalVerifiedAt": "2026-11-02T04:49:09.359482+00:00",
+  "liveEvidence": "live/live-validation.json",
+  "liveSuites": [
+    {
+      "script": "csoi-op-browser.py",
+      "scriptSha256": "ca47cb40569b2804731178b4f3278011044736337054ad31028ca965c0a10d10",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    },
+    {
+      "script": "csoi-phe-context-browser.py",
+      "scriptSha256": "764e069bf41aa739b0982ce59b1a823a9b17d58e5118e2d4066bef0dbcaa3d97",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    },
+    {
+      "script": "live-workspace-browser.py",
+      "scriptSha256": "e9657ccc77b3acdbb0059c293c85e199e5639de7c1f5aacad05ee9ee43324db7",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    },
+    {
+      "script": "op-readable-browser.py",
+      "scriptSha256": "b3eca4c2e27cdeadca15d0f9bc3358c13d8cb3d40e6b5ac3925eba12ed8967b8",
+      "status": "PASS_ON_DEPLOYED_SITE_WITH_SERVICE_AUTH"
+    }
+  ],
+  "servedFilesMatched": 50,
+  "anonymousAccess": [
+    {
+      "path": "/",
+      "status": 403,
+      "redirectOrigin": null,
+      "redirectPath": "",
+      "blocked": true
+    },
+    {
+      "path": "/atlas.js",
+      "status": 403,
+      "redirectOrigin": null,
+      "redirectPath": "",
+      "blocked": true
+    },
+    {
+      "path": "/sources/csoi-default-snapshot.js",
+      "status": 403,
+      "redirectOrigin": null,
+      "redirectPath": "",
+      "blocked": true
+    }
+  ],
+  "firstV6BrowserStart": "Failed before suite completion; same code and original timeouts retried successfully. Primary cause not established; failure record retained.",
+  "v5": "Intermediate release. An attempted interruption did not establish all descendant writers had stopped; a late v5 receipt entered the reused intermediate directory. Excluded from final acceptance; see live-run-provenance-correction.json."
+}

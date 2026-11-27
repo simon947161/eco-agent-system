@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-30T08:58:26.552430+00:00",
+  "fullSystem": "PARTIAL",
+  "softwareBatch": "PASS_TESTED_HERE",
+  "nativeFiles": 34,
+  "finalNodeTestRunner": {
+    "tests": 34,
+    "pass": 34,
+    "fail": 0
+  },
+  "browser": "PASS_DESKTOP_AND_390PX",
+  "legacyBrowserSuites": 6,
+  "routeAcceptance": {
+    "routes": 24,
+    "viewports": 5,
+    "evidence": "browser-h.json"
+  },
+  "publicSourceReview": {
+    "sameRegistry": true,
+    "kind": "Task",
+    "classification": "LOCAL_RESEARCH",
+    "authority": "INDEPENDENT_RESEARCH",
+    "calendarProjection": "SOURCE_REVIEW",
+    "plannedHoursBasis": "ASSUMED",
+    "actualHours": "UNKNOWN",
+    "financialSpend": "UNKNOWN",
+    "actualOutcome": "UNKNOWN",
+    "officialAssignment": "NOT_CREATED",
+    "defaultPlansSeeded": 0
+  },
+  "sourceAndClausePins": "EXACT_HISTORICAL_AND_CURRENT_CONTEXT_DISTINGUISHED",
+  "sourceWithdrawal": "HISTORICAL_SNAPSHOT_VALID_CURRENT_CONTEXT_STALE",
+  "defaultEntities": 93,
+  "defaultAssertions": 48,
+  "defaultLegacyContentItems": 127,
+  "fullCorpus": "PARTIAL",
+  "officialAdmission": "PENDING",
+  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_review_calendar_batch.code_sha"
+}

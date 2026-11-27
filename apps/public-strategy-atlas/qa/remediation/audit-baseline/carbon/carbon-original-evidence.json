@@ -1,0 +1,83 @@
+{
+  "auditedCommit": "744ab46b2bec2ad601da0c4ae528694a4c982154",
+  "sourceId": "csoi:smrc-csp-full-2025:20261030",
+  "originalPdf": "/tmp/csoi-integrity-audit-20261031/originals/smrc-csp-full-2025.pdf",
+  "byteLength": 24842203,
+  "rawDigest": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+  "historicalReceiptMatch": true,
+  "pages": 36,
+  "checks": [
+    {
+      "id": "regional-emissions-row",
+      "pdfPage": 30,
+      "printedPage": 30,
+      "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+      "normalizedPageDigest": "sha256:67f1029aae9b1cfb4ca44fe51e4cc9836def4e61578a8d39e5f5c62757fec998",
+      "factTokens": [
+        "CO2e emissions per capita",
+        "Snapshot Climate",
+        "Profiles 2021-22",
+        "29.9 tonnes",
+        "Decrease"
+      ],
+      "status": "PASS_ORIGINAL_ROW_OBSERVED_NOT_RECOMPUTED"
+    },
+    {
+      "id": "omitted-water-sewer-emissions-row",
+      "pdfPage": 31,
+      "printedPage": 31,
+      "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+      "normalizedPageDigest": "sha256:fe2460aab1cc79413d53a4ba947fe3a1c66635ee23f9f64619be3a10deb4a087",
+      "factTokens": [
+        "Greenhouse Gas Emissions - Total water and sewer",
+        "NSW Water 2022-23",
+        "7,519",
+        "CO2eq"
+      ],
+      "status": "PASS_ORIGINAL_ROW_OBSERVED_NOT_RECOMPUTED"
+    },
+    {
+      "id": "goal-6.1-is-monitoring-not-carbon-formula",
+      "pdfPage": 22,
+      "printedPage": 22,
+      "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+      "normalizedPageDigest": "sha256:a982049c1e33e12129cd7a83e869befb24478c60ad15ce8bb494304b5a85bf1e",
+      "factTokens": [
+        "6.1 Monitor environmental assets",
+        "our air, land, and waterways"
+      ],
+      "status": "PASS_ORIGINAL_ROW_OBSERVED_NOT_RECOMPUTED"
+    },
+    {
+      "id": "unqualified-headline-population",
+      "pdfPage": 8,
+      "printedPage": 8,
+      "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+      "normalizedPageDigest": "sha256:fa79e623d98b078affa2c71b91ab4ff6aff1f4cc1e22897f1355bdb891f714a7",
+      "factTokens": [
+        "Total population",
+        "22,132"
+      ],
+      "status": "PASS_ORIGINAL_ROW_OBSERVED_NOT_RECOMPUTED"
+    }
+  ],
+  "rawOriginalRedistributed": false,
+  "independentRegionalPerCapitaRecalculation": "NOT COMPUTABLE",
+  "missingInputs": [
+    "Raw source inventory emissions total for2021-22",
+    "Exact source population denominator/year",
+    "Inventory sectors/scopes/accounting method and version",
+    "Unrounded numerator/rate precision"
+  ],
+  "waterOperationsAttribution": "NOT COMPUTABLE",
+  "waterBaselineCandidate": {
+    "sourcePage": 31,
+    "printedLabel": "Greenhouse Gas Emissions - Total water and sewer",
+    "sourceLabel": "NSW Water 2022-23",
+    "printedBaseline": "7,519 CO2eq",
+    "fullUnit": "UNKNOWN_FROM_THIS_ROW",
+    "underlyingOperationalInputs": "NOT_INGESTED",
+    "actualLinkTo29.9": "NOT_ESTABLISHED"
+  },
+  "admission": "NOT_GRANTED_BY_AUDIT"
+}

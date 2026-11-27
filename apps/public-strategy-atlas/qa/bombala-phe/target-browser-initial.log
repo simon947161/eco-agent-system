@@ -1,0 +1,67 @@
+Traceback (most recent call last):
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/csoi-bombala-phe-browser.py", line 23, in <module>
+    host=page.locator('#csoiPheHistorical');gaps=page.locator('#csoiPheEvidenceGaps');expect(gaps.locator('[data-evidence-gap]')).to_have_count(2);expect(gaps).to_contain_text('not a Council inspection deadline');expect(gaps).to_contain_text('"currentSourceId": null');gaps.scroll_into_view_if_needed();page.screenshot(path=str(OUT/f'evidence-gaps-{width}.png'))
+                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 22016, in to_contain_text
+    self._sync(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 303, in to_contain_text
+    await self._expect_impl(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 128, in _expect_impl
+    _record_soft_or_raise(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_assertions.py", line 60, in _record_soft_or_raise
+    raise error
+AssertionError: Locator expected to contain text '"currentSourceId": null'
+Actual value: Evidence still needed before current useCurrent rules and parcel applicability — evidence missingThese historical reading selections do not establish the current consolidated rules, effective version or parcel applicability. Current legislation, plan scope, exceptions and authorised human review are still needed.MISSING_EVIDENCE · current applicability UNKNOWN · no official duty or inspection interval established.idcurrent-ruletitleCurrent rules and parcel applicability — evidence missingstatusMISSING_EVIDENCEresolvedfalsecurrentSourceIdnulldetailThese historical reading selections do not establish the current consolidated rules, effective version or parcel applicability. Current legislation, plan scope, exceptions and authorised human review are still needed.currentLegalApplicabilityUNKNOWNCurrent inspection strategy — evidence missingThe Cooma historical inspection reference is not a current inspection strategy. This reading set has no separately verified strategy revision, applicable interval or local responsibility. A personal source-review date is not a Council inspection deadline.MISSING_EVIDENCE · current applicability UNKNOWN · no official duty or inspection interval established.Inspect the historical inspection-strategy referenceidinspection-strategytitleCurrent inspection strategy — evidence missingstatusMISSING_EVIDENCEresolvedfalsecurrentSourceIdnulldetailThe Cooma historical inspection reference is not a current inspection strategy. This reading set has no separately verified strategy revision, applicable interval or local responsibility. A personal source-review date is not a Council inspection deadline.relatedHistoricalClauseIdcsoi:dcp:cooma2014:7:4:inspectionsrelatedHistoricalReferenceCurrenttrueinspectionFrequencyUNKNOWNlocalResponsibleRoleUNKNOWN
+Call log:
+  - Expect "to_contain_text" with timeout 5000ms
+  - waiting for locator("#csoiPheEvidenceGaps")
+    14 × locator resolved to <section class="csoi-section" id="csoiPheEvidenceGaps">…</section>
+       - unexpected value "Evidence still needed before current useCurrent rules and parcel applicability — evidence missingThese historical reading selections do not establish the current consolidated rules, effective version or parcel applicability. Current legislation, plan scope, exceptions and authorised human review are still needed.MISSING_EVIDENCE · current applicability UNKNOWN · no official duty or inspection interval established.idcurrent-ruletitleCurrent rules and parcel applicability — evidence missingstatusMISSING_EVIDENCEresolvedfalsecurrentSourceIdnulldetailThese historical reading selections do not establish the current consolidated rules, effective version or parcel applicability. Current legislation, plan scope, exceptions and authorised human review are still needed.currentLegalApplicabilityUNKNOWNCurrent inspection strategy — evidence missingThe Cooma historical inspection reference is not a current inspection strategy. This reading set has no separately verified strategy revision, applicable interval or local responsibility. A personal source-review date is not a Council inspection deadline.MISSING_EVIDENCE · current applicability UNKNOWN · no official duty or inspection interval established.Inspect the historical inspection-strategy referenceidinspection-strategytitleCurrent inspection strategy — evidence missingstatusMISSING_EVIDENCEresolvedfalsecurrentSourceIdnulldetailThe Cooma historical inspection reference is not a current inspection strategy. This reading set has no separately verified strategy revision, applicable interval or local responsibility. A personal source-review date is not a Council inspection deadline.relatedHistoricalClauseIdcsoi:dcp:cooma2014:7:4:inspectionsrelatedHistoricalReferenceCurrenttrueinspectionFrequencyUNKNOWNlocalResponsibleRoleUNKNOWN"
+
+Aria snapshot:
+- heading "Evidence still needed before current use" [level=2]
+- heading "Current rules and parcel applicability — evidence missing" [level=2]
+- paragraph: These historical reading selections do not establish the current consolidated rules, effective version or parcel applicability. Current legislation, plan scope, exceptions and authorised human review are still needed.
+- paragraph: MISSING_EVIDENCE · current applicability UNKNOWN · no official duty or inspection interval established.
+- term: id
+- definition: current-rule
+- term: title
+- definition: Current rules and parcel applicability — evidence missing
+- term: status
+- definition: MISSING_EVIDENCE
+- term: resolved
+- definition: "false"
+- term: currentSourceId
+- definition: "null"
+- term: detail
+- definition: These historical reading selections do not establish the current consolidated rules, effective version or parcel applicability. Current legislation, plan scope, exceptions and authorised human review are still needed.
+- term: currentLegalApplicability
+- definition: UNKNOWN
+- heading "Current inspection strategy — evidence missing" [level=2]
+- paragraph: The Cooma historical inspection reference is not a current inspection strategy. This reading set has no separately verified strategy revision, applicable interval or local responsibility. A personal source-review date is not a Council inspection deadline.
+- paragraph: MISSING_EVIDENCE · current applicability UNKNOWN · no official duty or inspection interval established.
+- link "Inspect the historical inspection-strategy reference":
+  - /url: "#/knowledge/csoi%3Adcp%3Acooma2014%3A7%3A4%3Ainspections"
+- term: id
+- definition: inspection-strategy
+- term: title
+- definition: Current inspection strategy — evidence missing
+- term: status
+- definition: MISSING_EVIDENCE
+- term: resolved
+- definition: "false"
+- term: currentSourceId
+- definition: "null"
+- term: detail
+- definition: The Cooma historical inspection reference is not a current inspection strategy. This reading set has no separately verified strategy revision, applicable interval or local responsibility. A personal source-review date is not a Council inspection deadline.
+- term: relatedHistoricalClauseId
+- definition: csoi:dcp:cooma2014:7:4:inspections
+- term: relatedHistoricalReferenceCurrent
+- definition: "true"
+- term: inspectionFrequency
+- definition: UNKNOWN
+- term: localResponsibleRole
+- definition: UNKNOWN

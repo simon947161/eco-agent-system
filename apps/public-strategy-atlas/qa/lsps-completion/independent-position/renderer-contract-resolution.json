@@ -1,0 +1,37 @@
+{
+  "format": "csoi-lsps-renderer-contract-resolution-1",
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "observedIssue": "Reusing a PyMuPDF Document after other extraction/render operations produced different pixels for identical source bytes and crop bounds. The exact internal rendering cause was not established. Clearing the glyph cache did not fix the reproduced caption case.",
+  "reproductions": [
+    {
+      "pdfPage": 58,
+      "bbox": [
+        331.3,
+        482.88,
+        464.991,
+        493.0
+      ],
+      "reusedDocumentHash": "sha256:3be7f087cf57885bc42fec60377bd832b6453e833d4eaf60c673cb12d3323377",
+      "freshDocumentHash": "sha256:80a3a0187ac9cfbebc0c9309d093fe0043a61ee38cdf6d9772b3dc6a3b3be66c"
+    },
+    {
+      "pdfPage": 8,
+      "bbox": [
+        27.75,
+        694.575,
+        570.25,
+        766.5
+      ],
+      "priorMapLegendHash": "sha256:20adc163b149becbf109e536879ff55298dadd1eae3ad6002b408ac2f8604128",
+      "freshDocumentHash": "sha256:1eb9a313638a106134e84fce398dc7bd945ba0b76346ffb9d5cf70fbf6cb1155"
+    }
+  ],
+  "resolution": "Every narrative, image, map and legend crop is rendered in a new document opened from the pinned original bytes. Author and independent verifier use separate code implementing this same contract. No alternative-hash acceptance.",
+  "renderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+  "hashContract": "SHA256(UTF8(RGB|{width}x{height}|) + raw RGB pixel bytes), alpha=False, exact stored native PDF clip bbox, scale100/72.",
+  "originalPdfChanged": false,
+  "boundsOrMeaningsChangedByRenderingFix": false,
+  "rawImagesCommitted": false,
+  "sourceNote": "Filename and byte-stream fresh-document opens gave the same reproduced page8 legend hash.",
+  "finalRevalidation": "See verification.json and negative-cases.json for exact checked input digests and final result."
+}

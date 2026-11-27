@@ -1,0 +1,49 @@
+{
+  "sourceId": "csoi:smrc-op-2026:20261030",
+  "original": "originals/smrc-op-2026.pdf",
+  "rawDigest": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "sourceStatus": "Historical original recovered; digest matches retained receipt",
+  "textChecks": [
+    {
+      "pdfPage": 27,
+      "printedPage": 27,
+      "row": "Undertake food inspection program — first volume row",
+      "CspLink": [
+        "6.1"
+      ],
+      "optimalVolume": 168,
+      "fundedVolume": 84,
+      "targetVolume": 84,
+      "serviceKpi": {
+        "plannedPercent": 98,
+        "eligibleGroup": "P1,P2,P3foodpremises",
+        "interval": "atleastonceayear"
+      },
+      "reporting": "Biannual",
+      "actualOutput": "UNKNOWN",
+      "evidence": "PASS_ORIGINAL_ROW_CHECK"
+    },
+    {
+      "pdfPage": 30,
+      "printedPage": 30,
+      "row": "Investigate environmental complaints continued — LTW complaints",
+      "CspLink": [
+        "6.1",
+        "8.2"
+      ],
+      "optimalVolume": 25,
+      "fundedVolume": 25,
+      "target": "90%",
+      "plannedResponse": "LTWcomplaintsinspectedwithin72hours",
+      "reporting": "Quarterly",
+      "actualOutput": "UNKNOWN",
+      "evidence": "PASS_ORIGINAL_ROW_CHECK"
+    }
+  ],
+  "distinctExplicitDocumentCrossReferences": 3,
+  "graphAssertionsWithExplicitCspReference": 4,
+  "graphTableFieldAssociationAssertions": 4,
+  "officialAdmittedAssertions": 0,
+  "cspToWaterOperationalCausalLinksVerified": 0,
+  "notes": "Source-table references do not prove legal applicability, causal impact, programme achievement or admitted official modelling. No source body reproduced."
+}

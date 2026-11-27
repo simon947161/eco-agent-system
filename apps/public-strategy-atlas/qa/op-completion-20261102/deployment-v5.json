@@ -1,0 +1,75 @@
+{
+  "at": "2026-11-02T04:18:46.799Z",
+  "canonicalApplicationSha": "385e37df79f4a6731186f0767aec7734e3760a13",
+  "siteSourceSha": "4c45ff8c4169fdd8a02bbff79273cd7bf47945d2",
+  "deployment": {
+    "id": "appgdep_6ae80ef6f2f88191adb381ec69cb7592",
+    "project_id": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+    "title": "Council Strategic–Operational Intelligence · Private Trial",
+    "version_id": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_4e26a13b25048191a8e9e47e8e982e7a",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ae5b063565c8191802c9d7f7eb3214b",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-02T04:18:16.738951+00:00"
+  },
+  "council": {
+    "siteId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+    "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+    "status": "active",
+    "version": 5,
+    "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_4e26a13b25048191a8e9e47e8e982e7a",
+    "source": {
+      "commit_sha": "4c45ff8c4169fdd8a02bbff79273cd7bf47945d2"
+    },
+    "deploymentId": "appgdep_6ae80ef6f2f88191adb381ec69cb7592",
+    "accessMode": "custom",
+    "policyRevision": 1,
+    "allowedAccounts": 1,
+    "allowedUsers": [
+      {
+        "role": "owner"
+      }
+    ],
+    "allowedGroups": 0,
+    "allowedEditors": 0,
+    "externalVisitorCount": 0,
+    "requiresByop": false
+  },
+  "waterUnchanged": true,
+  "water": {
+    "siteId": "appgprj_6adefcfe720881918b4e32874f12dd86",
+    "url": "https://climateos-snowy-monaro.minshu.chatgpt.site",
+    "status": "active",
+    "version": 2,
+    "versionId": "appgprj_6adefcfe720881918b4e32874f12dd86~appgver_6e7858f94ab881918228f1f9a742ff59",
+    "source": {
+      "commit_sha": "9f3a201d40c4b70d72f0b69c319805258769c242"
+    },
+    "deploymentId": "appgdep_6adf008a3d1c81918a673531038410d1",
+    "accessMode": "custom",
+    "policyRevision": 1,
+    "allowedAccounts": 1,
+    "allowedUsers": [
+      {
+        "role": "owner"
+      }
+    ],
+    "allowedGroups": 0,
+    "allowedEditors": 0,
+    "externalVisitorCount": 0
+  },
+  "rollback": {
+    "version": 4,
+    "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_f37c518ead6c8191849c233e8a18366f",
+    "source": {
+      "commit_sha": "c488e14fcdde671698e826179cf2e3ccd57491e2"
+    }
+  },
+  "liveValidation": "RUNNING",
+  "ownerInteractiveSignIn": "NOT_TESTED_NO_OWNER_SESSION"
+}

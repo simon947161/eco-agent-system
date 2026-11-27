@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-11-01T23:42:07.005357+00:00",
+  "results": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "case": "retrieved",
+      "status": "PASS_TESTED_HERE",
+      "evidenceClass": "QA_ONLY_SIMULATED_NO_OFFICIAL_RETRIEVAL"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "case": "verified",
+      "status": "PASS_TESTED_HERE",
+      "evidenceClass": "QA_ONLY_SIMULATED_NO_OFFICIAL_RETRIEVAL"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "case": "withdrawn",
+      "status": "PASS_TESTED_HERE",
+      "evidenceClass": "QA_ONLY_SIMULATED_NO_OFFICIAL_RETRIEVAL"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "case": "retrieved",
+      "status": "PASS_TESTED_HERE",
+      "evidenceClass": "QA_ONLY_SIMULATED_NO_OFFICIAL_RETRIEVAL"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "case": "verified",
+      "status": "PASS_TESTED_HERE",
+      "evidenceClass": "QA_ONLY_SIMULATED_NO_OFFICIAL_RETRIEVAL"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "case": "withdrawn",
+      "status": "PASS_TESTED_HERE",
+      "evidenceClass": "QA_ONLY_SIMULATED_NO_OFFICIAL_RETRIEVAL"
+    }
+  ],
+  "testedFiles": {
+    "atlas-intake.js": "sha256:e521b7d35218dda4fc2f10a47d0d6b0d68f23de254f55872234d2f8c33a1712d",
+    "atlas.js": "sha256:4f066dae4ac439bfbf60e1d3d5eb9d3ee969278ec66992063dc33b0d25a32ce8",
+    "qa/intake-access-fixture.cjs": "sha256:ae353565830adbf8cd4947a7bf851fa0074a8a42b4e8a66de6124a66ef382535",
+    "qa/intake-access-browser.py": "sha256:b819994ad847b4b038a4da8c22b391d1032806387dd936be025516e51eb98cdd"
+  },
+  "officialSourceCoverageAdded": 0,
+  "limits": "Chromium viewport emulation; no physical device or professional screen-reader certification."
+}

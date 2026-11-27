@@ -1,0 +1,192 @@
+{
+  "format": "csoi-023-074-targeted-native-readback-1",
+  "head": "1bd44ea96bf742e63072d866502479ca34d34061",
+  "runtimeFileSHA256": {
+    "apps/public-strategy-atlas/atlas-accounting.js": "5710e8900188eb4af880b6a50730037901448bad6166a6012d373b3fcd71f99f",
+    "apps/public-strategy-atlas/atlas-data.js": "6a061b80d5f47a79f8d4e34d7e09dc0c236d4fbaec3b46f788a1dece5f267fe4",
+    "apps/public-strategy-atlas/atlas-domain.js": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+    "apps/public-strategy-atlas/atlas-execution.js": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+    "apps/public-strategy-atlas/atlas-intake.js": "e521b7d35218dda4fc2f10a47d0d6b0d68f23de254f55872234d2f8c33a1712d",
+    "apps/public-strategy-atlas/atlas-model.js": "05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+    "apps/public-strategy-atlas/atlas-route-layout.js": "163a669fb4af413a27bf6231b0a4d50e7b4877b9f397ea641b7a1906a53a4925",
+    "apps/public-strategy-atlas/atlas-workspace.js": "3147a6b6cac7b8a5420537f76c7c3b1a0cacdf10ef1b0c9e40944f972ae4d621",
+    "apps/public-strategy-atlas/atlas.css": "e7d9d8e7f0d78cd53706ac10ea52ca92fde1f6ef4034f096c18e788d91455cd6",
+    "apps/public-strategy-atlas/atlas.js": "3d46b0425a4645f8ea56867958b1e3ba56eedc801bcd46d68bbc951c6e830567",
+    "apps/public-strategy-atlas/csoi-assistant.js": "2ff1b6b3004f133fd4a0d1b09197a5b549f6348fa307536d1699f3a4dbea3f58",
+    "apps/public-strategy-atlas/csoi-boot.js": "49ad12d9a19fb51a1fc2e73e83ee516f36b390fdb8d70b43b86c80936c4d9f16",
+    "apps/public-strategy-atlas/csoi-calendar.js": "3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+    "apps/public-strategy-atlas/csoi-clauses.js": "f9b3f8c4b7a2aabec9ee0aa3928e03b31bebcbb87ce289441ee32712c876cc86",
+    "apps/public-strategy-atlas/csoi-governance.js": "02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+    "apps/public-strategy-atlas/csoi-intake.js": "5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+    "apps/public-strategy-atlas/csoi-knowledge.js": "3d38e14bb8b14be7f931fb2ac8d276a13d88b0cb121197da4da246c59aca0d79",
+    "apps/public-strategy-atlas/csoi-layers.js": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+    "apps/public-strategy-atlas/csoi-lsps-context.js": "55275ff9c6e1f04e34ebf14e5dca8b57efe52bd25b454d07d9d264d55bcd511e",
+    "apps/public-strategy-atlas/csoi-metric-review.js": "d36958c7d24021a4a97b53f6343dc60aa021e13e0eae47ebb2e6bd8098d03d65",
+    "apps/public-strategy-atlas/csoi-pages.css": "9a03eb74e01dc407cf4d0182e8931ec8f0ae4c8fd5d86bf47de0f69fa78d60cd",
+    "apps/public-strategy-atlas/csoi-pages.js": "47f527df6ebb3d76abdd2bfe13b17ca79dba8e4f607a63130da727a11d57e71a",
+    "apps/public-strategy-atlas/csoi-paths.js": "cb0a7e33e3df1fa9e2fa16ecf1f2394a25b1eee51d8bc38c4b6ead2b636ca03b",
+    "apps/public-strategy-atlas/csoi-phe.js": "4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+    "apps/public-strategy-atlas/csoi-remediation.js": "b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",
+    "apps/public-strategy-atlas/csoi-review-work.js": "a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+    "apps/public-strategy-atlas/csoi-router.js": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+    "apps/public-strategy-atlas/csoi-strategy-research.js": "cc538e88aaa6ac9fdcbea35fce8bb4fda88ae024bebadb41c8920bbf891fcf27",
+    "apps/public-strategy-atlas/csoi-wcos.js": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+    "apps/public-strategy-atlas/csoi-work.js": "541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+    "apps/public-strategy-atlas/index.html": "be09b6d59f2cf7e3cff50fe0d008ebac6841e3ff3c362da3364557a067ec35de",
+    "apps/public-strategy-atlas/route-map-preview.html": "5edaac6807c0eb445086cbb0c1aa7f0b0a50e48617eddc8f6fc318a08873d25d",
+    "apps/public-strategy-atlas/sources/bombala-dcp-outline-anchors.json": "703022dab989edc12704ee235608e74f89d769da818a625adc2b6bd936fd8df6",
+    "apps/public-strategy-atlas/sources/bombala-dcp-outline.json": "e2b30d6bbc387281ff789f9130136461a951f07163a80e760a0512f5f05d9853",
+    "apps/public-strategy-atlas/sources/cooma-dcp-outline-anchors.json": "ad1e292036d10315b3e151e94b5b0080ef92f2bc1d16a547807586c90910f042",
+    "apps/public-strategy-atlas/sources/cooma-dcp-outline.json": "1dc656d1afea21578862cd5dac7e84a20551a47c801859051e70685a4ada80e6",
+    "apps/public-strategy-atlas/sources/csoi-catalogue.json": "f778466bfe4710b6fe8e27357f9736d3e891166326bb7264fdf22244268e9c89",
+    "apps/public-strategy-atlas/sources/csoi-legislation-access.json": "a4be3780daed3514b52fa091861be1e0f3cd974e0250df35dd32b36d84ab839f",
+    "apps/public-strategy-atlas/sources/csoi-source-observations.json": "1d883d93de129d551e8b24055e6bacda887308347d0c65b06bc51b3c583b9ceb",
+    "apps/public-strategy-atlas/sources/csp-indicator-review.json": "0b8b781917e347fc1d51c47ca84bbcee1e48051d23f39fb5ea6652bbe52f87be",
+    "apps/public-strategy-atlas/sources/csp-public-knowledge.json": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+    "apps/public-strategy-atlas/sources/csp61-admission.json": "6a15566a895927d5b923f48b4f63a8e81e30859e2b39d68c8f4a168e00c4de2c",
+    "apps/public-strategy-atlas/sources/knowledge-corrections.json": "8e54dffe6bdd10e698802a079a8293ebbd2b66eedefa3156cc1300364b06a928",
+    "apps/public-strategy-atlas/sources/lsps-context-review.json": "e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f",
+    "apps/public-strategy-atlas/sources/lsps-public-knowledge.json": "1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+    "apps/public-strategy-atlas/sources/op-water-public-knowledge.json": "6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2",
+    "apps/public-strategy-atlas/sources/public-catalogue.json": "5a7fa9286368f3e7833846b25c5d4acb11d7cbc01fb8424988c19a3b48d50357",
+    "apps/public-strategy-atlas/sources/snowy-dcp-outline-anchors.json": "4406592679e12289c8b30c2bd0d473b51fbb9d5c4b31002320ae5163a73d5a6c",
+    "apps/public-strategy-atlas/sources/snowy-dcp-outline.json": "0fcb582046b42433004b920fbd7706440bc82e1afcaeeaffa3d970805b0c53c4",
+    "apps/public-strategy-atlas/sources/snowy-dcp-research-anchors.json": "f4481fd47898d3ed3cd9f20c5d7714706f282ccff96df03338be5a3970a03453",
+    "apps/public-strategy-atlas/sources/strategy-review-scope.json": "8d638a2b2df5ddd7d4407d5b286f3059b00739dce3cc2dd9a05a4a590b6defc7"
+  },
+  "runtimeManifestSHA256": "65f780ed7c686a4c7e2c2d597cc58a86c6f6fed993ce927cb3b69c11f4146118",
+  "executedSequentially": true,
+  "perProcessLimitSeconds": 120,
+  "sameAgentAsBaselineAuthor": true,
+  "status": "PASS_ACTUALLY_TESTED",
+  "complete": true,
+  "results": [
+    {
+      "command": [
+        "node",
+        "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-governance.test.cjs"
+      ],
+      "cwd": "/workspace/eco-agent-system",
+      "startedAt": "2026-11-02T03:01:39.337716+00:00",
+      "finishedAt": "2026-11-02T03:01:39.465130+00:00",
+      "durationSeconds": 0.127,
+      "status": "PASS_ACTUALLY_TESTED",
+      "exitCode": 0,
+      "testSHA256": "b30c94ab408f351f0141bc0156eec1c4989c6d3cae4dff26748285e483cee7f2",
+      "log": "csoi-governance.test.cjs.log"
+    },
+    {
+      "command": [
+        "node",
+        "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-layers.test.cjs"
+      ],
+      "cwd": "/workspace/eco-agent-system",
+      "startedAt": "2026-11-02T03:01:39.473632+00:00",
+      "finishedAt": "2026-11-02T03:01:41.012410+00:00",
+      "durationSeconds": 1.539,
+      "status": "PASS_ACTUALLY_TESTED",
+      "exitCode": 0,
+      "testSHA256": "0ae7cf2919ca4586f71f3519a270afd4517d24fecc79d32721d72f272557190e",
+      "log": "csoi-layers.test.cjs.log"
+    },
+    {
+      "command": [
+        "node",
+        "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-wcos.test.cjs"
+      ],
+      "cwd": "/workspace/eco-agent-system",
+      "startedAt": "2026-11-02T03:01:41.018411+00:00",
+      "finishedAt": "2026-11-02T03:01:41.124063+00:00",
+      "durationSeconds": 0.106,
+      "status": "PASS_ACTUALLY_TESTED",
+      "exitCode": 0,
+      "testSHA256": "0da93a0471f5f916918d307dac3b0a82aefd9a8f79700059e06e2ac719101059",
+      "log": "csoi-wcos.test.cjs.log"
+    },
+    {
+      "command": [
+        "node",
+        "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-router.test.cjs"
+      ],
+      "cwd": "/workspace/eco-agent-system",
+      "startedAt": "2026-11-02T03:01:41.136889+00:00",
+      "finishedAt": "2026-11-02T03:01:41.241864+00:00",
+      "durationSeconds": 0.105,
+      "status": "PASS_ACTUALLY_TESTED",
+      "exitCode": 0,
+      "testSHA256": "3c572433cd402799d91d240b2a1b8296e5ac221a7724e9e7acf2bd05bbdb7dce",
+      "log": "csoi-router.test.cjs.log"
+    },
+    {
+      "command": [
+        "node",
+        "/workspace/eco-agent-system/apps/public-strategy-atlas/integration.test.cjs"
+      ],
+      "cwd": "/workspace/eco-agent-system",
+      "startedAt": "2026-11-02T03:01:41.248191+00:00",
+      "finishedAt": "2026-11-02T03:01:42.164378+00:00",
+      "durationSeconds": 0.916,
+      "status": "PASS_ACTUALLY_TESTED",
+      "exitCode": 0,
+      "testSHA256": "0fda7c22057ee116ef5fe95da6979c00db445696531e8fd3df9a56a3eb09ba34",
+      "log": "integration.test.cjs.log"
+    },
+    {
+      "command": [
+        "node",
+        "/workspace/eco-agent-system/apps/public-strategy-atlas/comparison.test.cjs"
+      ],
+      "cwd": "/workspace/eco-agent-system",
+      "startedAt": "2026-11-02T03:01:42.176701+00:00",
+      "finishedAt": "2026-11-02T03:01:46.455965+00:00",
+      "durationSeconds": 4.279,
+      "status": "PASS_ACTUALLY_TESTED",
+      "exitCode": 0,
+      "testSHA256": "1c96c885e8ed0ffc0f78fcbd84b7ce0c18ae4c49760be1d236f64960e1dac2bd",
+      "log": "comparison.test.cjs.log"
+    },
+    {
+      "command": [
+        "node",
+        "/workspace/eco-agent-system/apps/public-strategy-atlas/csoi-paths.test.cjs"
+      ],
+      "cwd": "/workspace/eco-agent-system",
+      "startedAt": "2026-11-02T03:01:46.463151+00:00",
+      "finishedAt": "2026-11-02T03:02:33.298648+00:00",
+      "durationSeconds": 46.836,
+      "status": "PASS_ACTUALLY_TESTED",
+      "exitCode": 0,
+      "testSHA256": "a1d626d719084604745909e15c314473117d7e46e52c9d154ffc7ce8b33e604e",
+      "log": "csoi-paths.test.cjs.log"
+    },
+    {
+      "command": [
+        "node",
+        "/workspace/eco-agent-system/apps/public-strategy-atlas/discovery.test.cjs"
+      ],
+      "cwd": "/workspace/eco-agent-system",
+      "startedAt": "2026-11-02T03:02:33.302792+00:00",
+      "finishedAt": "2026-11-02T03:02:34.422766+00:00",
+      "durationSeconds": 1.12,
+      "status": "PASS_ACTUALLY_TESTED",
+      "exitCode": 0,
+      "testSHA256": "7474414046dbe40e38bb297fc54e86ae9200a0c964e9df6756dfd80e91d3a6b4",
+      "log": "discovery.test.cjs.log"
+    },
+    {
+      "command": [
+        "node",
+        "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/audit-closure-20261102/independent/targeted-contract-readback.cjs"
+      ],
+      "cwd": "/workspace/eco-agent-system",
+      "startedAt": "2026-11-02T03:02:34.423831+00:00",
+      "finishedAt": "2026-11-02T03:02:34.517102+00:00",
+      "durationSeconds": 0.093,
+      "status": "PASS_ACTUALLY_TESTED",
+      "exitCode": 0,
+      "testSHA256": "37e3be66922a3e02a0d5c24e1c1e4baa476d06ff3de7680e8c32ed08a3898c36",
+      "log": "targeted-contract-readback.cjs.log"
+    }
+  ],
+  "runtimeUnchangedAfterChecks": false
+}

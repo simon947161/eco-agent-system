@@ -1,0 +1,511 @@
+{
+  "reviewedPlanSHA256": "0b8b781917e347fc1d51c47ca84bbcee1e48051d23f39fb5ea6652bbe52f87be",
+  "originalBundleSHA256": "061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+  "purpose": "Artifact binding and unchanged-source guards supporting the independent semantic read; these checks do not establish semantic correctness.",
+  "records": [
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-01",
+      "beforeNodeDigest": "sha256:6517022cc90bebf221feb5752f857b9cc6735c8603bff48d4899e4940265512d",
+      "reviewedNodeDigest": "sha256:e90895e729287cbf68ad0782441f167ac3733ee04a835b4b56dfa086275d4793",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-02",
+      "beforeNodeDigest": "sha256:03f25d62779f05ed0f9d7caa6479f295f751c2dd780551031d6a9503834d562b",
+      "reviewedNodeDigest": "sha256:f7201951b6c4edac6a0038ba75e7c70dc13354f537d702f0818fe6fa30c6e07d",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-03",
+      "beforeNodeDigest": "sha256:dcae59f4ddcd4dcd5794ffe59c075d44518cf7290231661c5762df13ebf37c64",
+      "reviewedNodeDigest": "sha256:474908699e638c396cfab7739d72d3845f2bf4fdf6753ad58004f7af2772b0e7",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-04",
+      "beforeNodeDigest": "sha256:df9bcccfdb0d5eb18009a4282085610370dcbd54afdb1b726aa744f55045d1bd",
+      "reviewedNodeDigest": "sha256:94e08b03f380b04b861cd95c91de640f256afe552aa845ccc5b34b33764a95c8",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-05",
+      "beforeNodeDigest": "sha256:6a48e22672e61e6c4840122b3c994bbcec0f7d878996cbfe26eed2a109e7db67",
+      "reviewedNodeDigest": "sha256:4454c62b516b6137563d34058919cb0cb9d2d81c6deca68f94eeed52ed122d45",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-06",
+      "beforeNodeDigest": "sha256:58c658ba5ac246266d467bae261910678899e0a16f9cbbdbdf27f4a6f37e90e8",
+      "reviewedNodeDigest": "sha256:6e95af30c5b3c7c59cac06c7f7e151d26b5e0e933d2b49216077402a90fae3f2",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-07",
+      "beforeNodeDigest": "sha256:0af93f02d84a11b02dda7e95f77a7d35e3769235e8feac430fa361e09e1ebb49",
+      "reviewedNodeDigest": "sha256:0957d466f4bd0d9a13cd92b83d61d29abd00578ba378c832a8535abc5b7256da",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-08",
+      "beforeNodeDigest": "sha256:95cbc4f0f2e3990843a25ab4634536a2fda79a2e438a922453767a41f13d596e",
+      "reviewedNodeDigest": "sha256:dc54d0562cfd7b9c7b495854fdaf32e84a26c6732df72750ebc1a13faf3c5197",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-09",
+      "beforeNodeDigest": "sha256:4c06ac79de495f672fd87e4621b11545b6c8682376dfae163207985ef4859fd3",
+      "reviewedNodeDigest": "sha256:4c58eb97d058755ae8efb2bc8361979e9c7f60e1035dcd4aa3e6288e6086653c",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-10",
+      "beforeNodeDigest": "sha256:5f4d3eab5f76eeb31dd5776e5f179ecc299c0379903d09b1b84938f0f0a7cbd2",
+      "reviewedNodeDigest": "sha256:1c95f29f6ff9a557392bba903a465b8c9cb7518050c4438a228a57d6a409f375",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-11",
+      "beforeNodeDigest": "sha256:406eb82e6235330afc34ddfe96fdacdb40a25acf984a476c09517b624e6c9a13",
+      "reviewedNodeDigest": "sha256:598115f24471adcc28a2e868ef9fb9be996ad38c31dbfe48dbbdd177e1a42b7f",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-12",
+      "beforeNodeDigest": "sha256:2243392e5c7dd9412f0b2a4b63e00a3339677147f437ac1a1dc072d7725694d4",
+      "reviewedNodeDigest": "sha256:db12b67d615191a6abc2729c3508bffd97214aae144f2b8550eb0cccb21eea0f",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-13",
+      "beforeNodeDigest": "sha256:c6325aa2747244044e1787d6fd3bb7f3771e46f52c41866abfcc357a7c01041f",
+      "reviewedNodeDigest": "sha256:7f3737fcb331bf589d398d282b56e3bc7c5c27d0b63155602712dd1f2fac66ca",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-14",
+      "beforeNodeDigest": "sha256:20acc165b0a0ff277c4af8a241be1da544ee7ec6cd7f96503aeacefdbc3a8d6c",
+      "reviewedNodeDigest": "sha256:261ad371afc8d0dc4c2385cb8952fc7d6e5d2de69651aa195ab0cb3a80c66e03",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-15",
+      "beforeNodeDigest": "sha256:c0d2981d9bba59b6fb3cb12507250bf22f4de2a040c011e1857bf56fc57dee48",
+      "reviewedNodeDigest": "sha256:3f274f8d7f069983f6a4f05220b504ce1f18d74667db6f361b2b0b651ddaed07",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-16",
+      "beforeNodeDigest": "sha256:909b60e645cb1d9d691b08788cdea417353bc12722228f2ca99f50a0b2afe7e6",
+      "reviewedNodeDigest": "sha256:c011f71bbc504523474e241aefaa58ad82d4dc71883b9d4501fc91be8643b1f0",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-17",
+      "beforeNodeDigest": "sha256:64e4ced0242a612ac780456f6c1ccac88db23f7e276b5c0e0d00a50f3704189f",
+      "reviewedNodeDigest": "sha256:dc04029b2ee4038fdc1691b603d99ae360a78638d23304df18a9cb77142080a5",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-18",
+      "beforeNodeDigest": "sha256:d1cc83632d0d7cd393fd2b407e41097b97abfe2e7e9a4f42dd63d50abf163206",
+      "reviewedNodeDigest": "sha256:1084dfa3ffe38aad498b6e83d1857ceff7633acf99b65cc181a7a5093495b783",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-19",
+      "beforeNodeDigest": "sha256:be5d42a29beabc1b7b9985794d54ef3d7d144bbfd7fc27b17adcc53a87ab2dd8",
+      "reviewedNodeDigest": "sha256:3df830ea5e76375728ce1c659e25183c1d262294a983aa155dd3546ae4dc3d1f",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-20",
+      "beforeNodeDigest": "sha256:d831a7f952a69a69a81a9fc4bf40df94af52e09374dca202f882923ae652c9a5",
+      "reviewedNodeDigest": "sha256:ae2e05b27af94943418b53d9f10e58d42f81b9a8b892a2cda3f5293cab9ff121",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-21",
+      "beforeNodeDigest": "sha256:a2921e59a0c469a455ca3b8578acfad3f46bb6f36d006584db8e5e954ba726ac",
+      "reviewedNodeDigest": "sha256:50a00ac629787321e1aa0b0d5bcbcfa497daa2fa5a4f031a7f7fd5b38f277aa6",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-22",
+      "beforeNodeDigest": "sha256:c50fb6fb7aba445bac49bd440b34979b56d7f9ab0482a20764ee78de4ea2611b",
+      "reviewedNodeDigest": "sha256:99507a62576f4688439168bd3854b62613d9edbcfa8710774c104abb02a83ff5",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-23",
+      "beforeNodeDigest": "sha256:eea05b02613dc8110a09537c44afa6482ba899dd5056c9c397c07a7804768dec",
+      "reviewedNodeDigest": "sha256:2d9fb7924204a65cdce5f1b0b25757cffc945c8520bfe58cd6e31a3c3e28276c",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:29-community-24",
+      "beforeNodeDigest": "sha256:3fcb50c294475ef4eab7d6b98be690717cf52e0a2938dc1b3a43ab956422b93a",
+      "reviewedNodeDigest": "sha256:0e62056c5aabb8bfcfc263303700c85f95cd4bef505785e62478effe85c28fa0",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-01",
+      "beforeNodeDigest": "sha256:5c5924a891b42ba8de6551286fe5aa7984ede16ccd2745bed92606c50631d123",
+      "reviewedNodeDigest": "sha256:1bbe579ca7362cbf63fd1730f5bfd5610761b67895915d385e478042309a1899",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-02",
+      "beforeNodeDigest": "sha256:4fd108ca532f3024b5a54d37d45c328914097ca4758e8e602cfd4d7a8844292a",
+      "reviewedNodeDigest": "sha256:e72f6678ad5886f5af2fb76b635a7b991fc5e6decf4d7eb448998b3bea921709",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-03",
+      "beforeNodeDigest": "sha256:09996f876ac3d0745b42fd1e64650744f7facbd6b7f207a811b63177c3ad1442",
+      "reviewedNodeDigest": "sha256:9c78262ac678723f674a29469e1c802d1c330d942cfa701a353ea75cc95f0b3d",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-04",
+      "beforeNodeDigest": "sha256:d3a94286d3b8f826ec7e1d290e0e9b03b65ac955de381dc9901f2f316f9ed768",
+      "reviewedNodeDigest": "sha256:d9cb9f35ae84aa944cd5c4e812ad99d3decb4cda81f3bf5b8a3e8c107d3db0ad",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-05",
+      "beforeNodeDigest": "sha256:771962e55afea0f9f92ebaa4fcce28be9aad179752f2d8b3c470c35aa47b71d2",
+      "reviewedNodeDigest": "sha256:0563685887c4d483f769b0cdb3710f47bef07486e2d61feeca75125bc9a3a69e",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-06",
+      "beforeNodeDigest": "sha256:cd9ffa10bffce4fd62cdfe38e493b7d0152c710792731f8ce4750266fd9f4220",
+      "reviewedNodeDigest": "sha256:841a24391f947a1957e9491a3f59dfd270a459a073833bfd527cc4be1fbc2a72",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-07",
+      "beforeNodeDigest": "sha256:9f28aa51c675b762603a5d320f663c184560261d736594f72de66961ea27ecc0",
+      "reviewedNodeDigest": "sha256:d907d35f668a121de920eae61aa3bf4b0ec826e4055b67de61967decc6bdf8fc",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-08",
+      "beforeNodeDigest": "sha256:f84a591a93139680cfbf1eedc1df751cfddefc2879bb97b5f95efef417007aba",
+      "reviewedNodeDigest": "sha256:860ca2d19cd9e6d1b60a51147b65540082d56eb1a933697aff612b35494b32c0",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-09",
+      "beforeNodeDigest": "sha256:fca49db7fb0624719340bf02d27e2db36a9a95e605f2f6bc4eba8643d0a87e3b",
+      "reviewedNodeDigest": "sha256:24888ef8081964ffc101d2c11494d6c18e9d3a3c90829c6f6ffa98b7453ab136",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-10",
+      "beforeNodeDigest": "sha256:59259939f694c319238a0574cf0a3a52d65b85d8d7f9fb570d658403d1c51b02",
+      "reviewedNodeDigest": "sha256:e77e34bf0e1cdbeb6dd940ad2e8f11bf1d3d3a4ec482d6ed086e3142a4486cd2",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-economy-11",
+      "beforeNodeDigest": "sha256:6f72a58c40358fde6959daf08b5e08bbafac460eda6d99967280348b66060857",
+      "reviewedNodeDigest": "sha256:40daded5415cfee09d54974eb4f8f2a7eaa1c0ca733d1244651c3de63e5040cc",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-environment-01",
+      "beforeNodeDigest": "sha256:5f840538cb83dd26af5154e49f50419acc208aae4ac0fffd59d4f9b428ea5b51",
+      "reviewedNodeDigest": "sha256:102612152912a8e9294f6f7fdbacb111439b0f8ac29cd6b6619e6322b0404640",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-environment-02",
+      "beforeNodeDigest": "sha256:2177e592213c2c76947634fa50544cde2b7ed85edbfb6c2c9c8e161835a140cc",
+      "reviewedNodeDigest": "sha256:58f244687053fdb19371752f03d9a22c923c7f36eb7c13cb0418e9ab176d589a",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-environment-03",
+      "beforeNodeDigest": "sha256:1ff61177e2c7f49c24d4bcaca9cf94bd0455c83f0cecae00b3baf9871120878c",
+      "reviewedNodeDigest": "sha256:2507e66477e997f352ea86f2d7829fc4e17f2e102f24de6d64ffa699c0b42c07",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-environment-04",
+      "beforeNodeDigest": "sha256:c64c1eb2db12a3efd34d58a3b2c03064ad1a8cbc9f22acc086dbed36f83175ed",
+      "reviewedNodeDigest": "sha256:34a07405ad4393061ca713baaa580534ab4dd971290630ec444e20c08c3d07b4",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-environment-05",
+      "beforeNodeDigest": "sha256:3f091297b9a3fd8ceeeef93a759db26eace26d10e6bf7254e3fa348444219db9",
+      "reviewedNodeDigest": "sha256:b27379dfa9f622e992431f36ee63a8e7fe2271f73aa92a5951305bed5a96ee69",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-environment-06",
+      "beforeNodeDigest": "sha256:5f86e7405a987590f0f65be8f8157baa07ad72916b2bf2e74840a4798aac3d5f",
+      "reviewedNodeDigest": "sha256:4e7e051df9f7f61ff6c5ab9f911dcd942720b71e2cca76fbf8df02e083661a8d",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-environment-07",
+      "beforeNodeDigest": "sha256:d17c716bebd5f2eb801ac316dec5b2b09fcc6d672538812ddc3c41da9257907c",
+      "reviewedNodeDigest": "sha256:335a5b4ff56a26934da8f84ed88bf85f51c1c3d40d3a9d5c67f7d989f53b62c4",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:30-environment-08",
+      "beforeNodeDigest": "sha256:4a9f301da8653f039a953c66db543f79ac6d5bc10a2bfbdacfd9f3dae5badff1",
+      "reviewedNodeDigest": "sha256:776a05a777e4204a4015f15541eee06175668ae95c3d847de2f68fb0b5389020",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-01",
+      "beforeNodeDigest": "sha256:8722f0dbd44801c9324efa750dc0e7668babd7bfcc5d01148154edefd70e9876",
+      "reviewedNodeDigest": "sha256:eea358e73b5fbd83f1b65826c31aad79e468db085feaef06e1b287469d4e9c21",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-02",
+      "beforeNodeDigest": "sha256:e7a292eb6a3169c45fc88ffcd6d338e1a961fab81ed038bbb4fbae5e00a29196",
+      "reviewedNodeDigest": "sha256:70a1d38788431d0052975c8690ec81e4a135e19e3ecc2c2588b3ef484ca2bee7",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-03",
+      "beforeNodeDigest": "sha256:441e97cf5333a4c6433cabf32151c34dc0426e644735fe83725e3d3cf50b2ee1",
+      "reviewedNodeDigest": "sha256:4205603b3f9b4df443a0dd6fd8d18a6019c08c4855005a29d01677901478e433",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-04",
+      "beforeNodeDigest": "sha256:7d2283cb52a410ccc029eaafc37cd7e24e07a5f47568a4008e132a4a197333e1",
+      "reviewedNodeDigest": "sha256:ac5fd222de28889bd75737bed1738ac0975de990cf0e45029411e1b69f8c86e9",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-05",
+      "beforeNodeDigest": "sha256:5afcf112ec62ca4ceacb190f857ae4b7599dd3117cb734b30224ce05a9e3eb68",
+      "reviewedNodeDigest": "sha256:fcdf39522063db444fd8b3e9af4d8a51da414cbe4dbb3f909c06b06007dfa802",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-06",
+      "beforeNodeDigest": "sha256:5837ea53fe7370dd3365ffd1528c239a31184c6808a0847d4ba37f5700fb8bc9",
+      "reviewedNodeDigest": "sha256:714da58673b35d94f77ac8e65bba9aeea52b2f9316fa597722c8057ae500898f",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-07",
+      "beforeNodeDigest": "sha256:e5a8b0f60373db32987fb2d9289f5cce5df29828843205316ae7ada5f57549bd",
+      "reviewedNodeDigest": "sha256:f7af9c715bee832580616e79a61e21f16a39044f7282f99d80e34a7571e2e25c",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-08",
+      "beforeNodeDigest": "sha256:38483a0d98a88a554a065228f33c9cfaa3dd6ab6e06d1d536d9c7ff152f48e80",
+      "reviewedNodeDigest": "sha256:a5f3f74996fb4c0a55beb2dc0ab1da9aced6952c42e2c6eef17e9be3434f797b",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-09",
+      "beforeNodeDigest": "sha256:5ff5f93b280e7de260de6dd38a2b88236ae7459a4e3d595351b89067109fa43d",
+      "reviewedNodeDigest": "sha256:665959c0d3357d74e20505ae3ecc53e57c6e662cc4e2d3d1a8e5d6d5db1f26d8",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-10",
+      "beforeNodeDigest": "sha256:8b2d7f43a7b6657f51c7b21cd5d74dee6045c84be0216663af5cc6c9325f5803",
+      "reviewedNodeDigest": "sha256:21e43b6c2fc3613e08a126a31be0e64c93178a701fc4d547cdc2df77cec4f77e",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-11",
+      "beforeNodeDigest": "sha256:419a7987b2374c2084556506d5b5ca10b244cc1fb945235ed410bac11b1974c4",
+      "reviewedNodeDigest": "sha256:569977742b98d864ce06ebfc0671a85c286576a0f59776a6090c5987b9d428af",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-infrastructure-12",
+      "beforeNodeDigest": "sha256:6bc721c338daf51e8c19fc87997c6fac0afe22b389d8ebf4130a8b486167e415",
+      "reviewedNodeDigest": "sha256:16ee167ce0beb1be416126efbf5bdfea2e8be28b111e1a8a9531603724bcba5a",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-civic-01",
+      "beforeNodeDigest": "sha256:b0be4900a83eb6d692bbc29bb978fc494da4cc5c09dfb026d64c09fa67f53439",
+      "reviewedNodeDigest": "sha256:08c9727d60f60269c470a538714ca1d626eed8e9fe779a62449a0dea0cb6107f",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-civic-02",
+      "beforeNodeDigest": "sha256:7dfd04bc9fea425f6eb05eda8a4c4eb4139e4384fc98fe378432fca92637aba3",
+      "reviewedNodeDigest": "sha256:895a043574cd4a2678d8fd04e2be79c213736783ff7047cb64fa75034e9494f7",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-civic-03",
+      "beforeNodeDigest": "sha256:f09887dbb2cbefe5648e9a6ff9ac2afcd32d01cd381eb19d2c933bb928856b92",
+      "reviewedNodeDigest": "sha256:7ae41f31f50ed38fdedd9b5dfc6c2f23cae39adae73a81750e918a1f9761b7bc",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-civic-04",
+      "beforeNodeDigest": "sha256:46db05f315aa1d3f948995a11b6877128d77eaf3b1bf0bc229ba31adf96424e3",
+      "reviewedNodeDigest": "sha256:2113e660fdca7568f62a131c1cca552c2a1fcad6401bd97afb37a8426a447298",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-civic-05",
+      "beforeNodeDigest": "sha256:8efda5f59a2a2080ed94983f99ceb314c9bd0d44dde8d132558f7612f6ff89bf",
+      "reviewedNodeDigest": "sha256:36b8416c6bb056e707ddf1766d3b6334fc49ffcd966b03ec527a38980f862f05",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-civic-06",
+      "beforeNodeDigest": "sha256:1ad5395da2000708d86281b2819143662089fb9e431ae325491cdbd6b2588924",
+      "reviewedNodeDigest": "sha256:90a70d23d8431633bb07456b07d9a7fb263f752a10eb3721a53d3b44c4381425",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-civic-07",
+      "beforeNodeDigest": "sha256:16c1ec39bb7adc4e8163c511c3a24d685e24d374c9f39ea970e05f38fb12be80",
+      "reviewedNodeDigest": "sha256:870a7524475d368669de8fefb0c25b2fade28884137c9bc7f5eda048cff46c10",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    },
+    {
+      "id": "csoi:knowledge:csp2035:indicator:31-civic-08",
+      "beforeNodeDigest": "sha256:f592845f0f7abb01384defdeca6e70868ab2b36fbaa811c9af8d91125f277bcf",
+      "reviewedNodeDigest": "sha256:b1c015fbbd65195caac6d5e5b6d1540a10bd650c32ca8a99f06b4906b4a0111a",
+      "beforeNodeMatchesOriginal": true,
+      "printedSourceFactsAndOriginalAnchorUnchanged": true,
+      "unknownAuthorityTargetActualAndDatesPreserved": true
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "format": "csoi-op-services-author-verification-1",
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "authorFileDigest": "sha256:97b090d6815a474d0fb24b8ce401e54600a616e64a97e42806ecb3c8f608209f",
+  "verifierDigest": "sha256:1aefe2fdecba118ca1d137d238ebc9e5550f784e7130c1b36eace311ec11129c",
+  "status": "PASS_AUTHOR_SIDE_ORIGINAL_POSITION_AND_COLUMN_CHECKS",
+  "independent": false,
+  "semanticScope": "All authored row/condition transfers bound; selected original text conditions checked. This is not independent or exhaustive automated semantic proof. Independent reviewer has a separate report.",
+  "verified": {
+    "uniqueOriginalTextAnchors": 4134,
+    "uniqueOriginalPixelAnchors": 14,
+    "originalPages": 106,
+    "physicalRows": 523,
+    "formalRows": 517,
+    "formalGroups": 417,
+    "units": 483,
+    "legacyWaterActivities": 8,
+    "formalPrintedCspOccurrences": 694,
+    "formalUnitCspPairs": 594
+  },
+  "selectedOriginalSemanticPreconditions": [
+    {
+      "physicalRowId": "p037-t00-r01",
+      "originalTextPattern": "consultation and approved by CEO"
+    },
+    {
+      "physicalRowId": "p039-t01-r02",
+      "originalTextPattern": "over 2 years"
+    },
+    {
+      "physicalRowId": "p073-t00-r01",
+      "originalTextPattern": "per 100km of water main/year"
+    },
+    {
+      "physicalRowId": "p102-t01-r03",
+      "originalTextPattern": "Upon notification.*48 hours"
+    },
+    {
+      "physicalRowId": "p105-t00-r02",
+      "originalTextPattern": "Commence streamlined"
+    }
+  ],
+  "negativeTests": [
+    {
+      "case": "wrong_source_version",
+      "outcome": "REJECTED",
+      "reason": "source identity/version mismatch"
+    },
+    {
+      "case": "wrong_page_same_hash",
+      "outcome": "REJECTED",
+      "reason": "anchor moved to wrong source page/column/cell"
+    },
+    {
+      "case": "wrong_column_even_with_valid_other_column_hash",
+      "outcome": "REJECTED",
+      "reason": "anchor moved to wrong source page/column/cell"
+    },
+    {
+      "case": "wrong_original_bbox",
+      "outcome": "REJECTED",
+      "reason": "original text/crop mismatch at 73 [40, 410.09803263346356, 456.37799072265625, 445.0419921875]"
+    },
+    {
+      "case": "wrong_budget_unit",
+      "outcome": "REJECTED",
+      "reason": "printed source value/unit/period/comparator changed"
+    },
+    {
+      "case": "deleted_two_year_period",
+      "outcome": "REJECTED",
+      "reason": "printed source value/unit/period/comparator changed"
+    },
+    {
+      "case": "deleted_CEO_approval_condition",
+      "outcome": "REJECTED",
+      "reason": "authored source condition dropped/altered"
+    },
+    {
+      "case": "notification_start_changed_to_injury_time",
+      "outcome": "REJECTED",
+      "reason": "authored source condition dropped/altered"
+    },
+    {
+      "case": "commence_changed_to_completed",
+      "outcome": "REJECTED",
+      "reason": "authored semantic reading altered"
+    },
+    {
+      "case": "invented_CSP_mapping",
+      "outcome": "REJECTED",
+      "reason": "invented CSP mapping"
+    },
+    {
+      "case": "invented_LSPS_action_mapping",
+      "outcome": "REJECTED",
+      "reason": "invented LSPS action mapping"
+    },
+    {
+      "case": "guide_example_counted_as_formal_action",
+      "outcome": "REJECTED",
+      "reason": "guide/formal category or table type mixed"
+    },
+    {
+      "case": "dash_promoted_to_zero",
+      "outcome": "REJECTED",
+      "reason": "dash/blank/merged/No measure/Nil distinction lost"
+    },
+    {
+      "case": "planned_FTE_changed",
+      "outcome": "REJECTED",
+      "reason": "published FTE differs from original service page"
+    },
+    {
+      "case": "source_target_marked_actual",
+      "outcome": "REJECTED",
+      "reason": "unadmitted actual/legal/allocation claim"
+    },
+    {
+      "case": "portfolio_13FTE_assigned_to_HR",
+      "outcome": "REJECTED",
+      "reason": "portfolio FTE falsely assigned to HR"
+    },
+    {
+      "case": "pixel_crop_digest_corrupt",
+      "outcome": "REJECTED",
+      "reason": "original pixel crop mismatch"
+    },
+    {
+      "case": "incomplete_part_claims_entire_OP",
+      "outcome": "REJECTED",
+      "reason": "part falsely claims full OP completion"
+    },
+    {
+      "case": "dropped_physical_source_row",
+      "outcome": "REJECTED",
+      "reason": "full original physical row coverage missing"
+    },
+    {
+      "case": "missing_original_pdf",
+      "outcome": "REJECTED",
+      "reason": "missing original PDF"
+    },
+    {
+      "case": "same_size_corrupt_original_pdf",
+      "outcome": "REJECTED",
+      "reason": "original source revision mismatch"
+    }
+  ],
+  "negativeCount": 21,
+  "originalBytesCommitted": false
+}

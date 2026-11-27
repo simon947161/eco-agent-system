@@ -1,0 +1,88 @@
+{
+  "at": "2026-11-02T03:50:23.173914+00:00",
+  "status": "PASS_BOUNDED_BROWSER_CHECKS",
+  "results": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS_ACTUALLY_TESTED",
+      "linearRoutes": 14,
+      "linearOriginOpened": "csp",
+      "input": "EMULATED_TOUCH_TAP",
+      "reducedMotion": true,
+      "routeHeadingFocusedInViewport": true,
+      "accessibleNamesAndRoles": "CHROMIUM_ACCESSIBILITY_TREE_CHECKED",
+      "actualScreenReader": "NOT_TESTED",
+      "scriptErrors": []
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS_ACTUALLY_TESTED",
+      "linearRoutes": 14,
+      "linearOriginOpened": "csp",
+      "input": "KEYBOARD_ENTER",
+      "reducedMotion": true,
+      "routeHeadingFocusedInViewport": true,
+      "accessibleNamesAndRoles": "CHROMIUM_ACCESSIBILITY_TREE_CHECKED",
+      "actualScreenReader": "NOT_TESTED",
+      "scriptErrors": []
+    },
+    {
+      "viewport": [
+        1600,
+        900
+      ],
+      "status": "PASS_ACTUALLY_TESTED",
+      "linearRoutes": 14,
+      "linearOriginOpened": "csp",
+      "input": "KEYBOARD_ENTER",
+      "reducedMotion": true,
+      "routeHeadingFocusedInViewport": true,
+      "accessibleNamesAndRoles": "CHROMIUM_ACCESSIBILITY_TREE_CHECKED",
+      "actualScreenReader": "NOT_TESTED",
+      "scriptErrors": []
+    },
+    {
+      "viewport": [
+        2560,
+        1080
+      ],
+      "status": "PASS_ACTUALLY_TESTED",
+      "linearRoutes": 14,
+      "linearOriginOpened": "csp",
+      "input": "KEYBOARD_ENTER",
+      "reducedMotion": true,
+      "routeHeadingFocusedInViewport": true,
+      "accessibleNamesAndRoles": "CHROMIUM_ACCESSIBILITY_TREE_CHECKED",
+      "actualScreenReader": "NOT_TESTED",
+      "scriptErrors": []
+    },
+    {
+      "viewport": [
+        3840,
+        1080
+      ],
+      "status": "PASS_ACTUALLY_TESTED",
+      "linearRoutes": 14,
+      "linearOriginOpened": "csp",
+      "input": "KEYBOARD_ENTER",
+      "reducedMotion": true,
+      "routeHeadingFocusedInViewport": true,
+      "accessibleNamesAndRoles": "CHROMIUM_ACCESSIBILITY_TREE_CHECKED",
+      "actualScreenReader": "NOT_TESTED",
+      "scriptErrors": []
+    }
+  ],
+  "screenReaderTools": {
+    "orca": null,
+    "speech-dispatcher": null,
+    "espeak": null,
+    "espeak-ng": null
+  },
+  "limits": "Chromium AX-tree and keyboard/touch emulation, not an actual screen-reader listening session; no professional accessibility certification or physical-hardware claim."
+}

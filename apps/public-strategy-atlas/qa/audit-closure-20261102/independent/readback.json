@@ -1,0 +1,593 @@
+{
+  "format": "csoi-023-074-076-criterion-readback-1",
+  "at": "2026-11-02T03:56:39.777113+00:00",
+  "head": "aed93bf83a8bc14dbd077e705a07f88792ceced5",
+  "sameAgentAsBaselineAuthor": true,
+  "reviewIndependenceLimit": "This is a second source-and-execution readback by the author of the closure baseline; it is not a separate independent agent. Parent decides status after review.",
+  "requirements": {
+    "COI-023": "L2：证据、规则、观察、研究推断、人为裁量、正式决定分栏保存，含反证与 UNKNOWN。",
+    "COI-074": "统一搜索、按年度/地区/法规/来源/工作/单位过滤、跨路径比较、问题导航和解释性候选暗线；同时具备线性文字替代。",
+    "COI-076": "实测 390px 移动端、16:9、21:9、32:9、键盘/触屏、低动效、可聚焦上下文、长表分页和基本读屏无障碍。"
+  },
+  "recommendations": {
+    "COI-023": {
+      "recommended": "VERIFIED",
+      "basis": "原L2分类、反证、UNKNOWN与正式决定边界已有实际加载散列和正/负断言；当前核心仍匹配。",
+      "notRequiredForSoftwareClosure": [
+        "完整法规语料",
+        "正式Council决定授权",
+        "私有WCOS接入"
+      ]
+    },
+    "COI-074": {
+      "recommended": "VERIFIED",
+      "basis": "原搜索/过滤/比较/问题候选/线性替代逐项已有实现；最终稳定运行时浏览器通过后可按软件范围闭合。",
+      "notRequiredForSoftwareClosure": [
+        "全OP/DP/法规语料完成",
+        "所有研究关系正式准入",
+        "新自然语言智能代理架构"
+      ]
+    },
+    "COI-076": {
+      "recommended": "KEEP_PARTIAL",
+      "basis": "程序化视口/键盘/触摸模拟/低动效/焦点/分页/AX可检查，但实际基本读屏验收未完成。",
+      "notRequiredForSoftwareClosure": [
+        "购买物理宽屏",
+        "专业WCAG认证",
+        "Founder寻找代码目录"
+      ]
+    }
+  },
+  "sourceResearchStatusUnchanged": "PARTIAL",
+  "officialAdmission": "PENDING_NOT_GRANTED",
+  "actualCouncilDelivery": "UNKNOWN",
+  "screenReaderTools": {
+    "orca": null,
+    "speech-dispatcher": null,
+    "espeak": null,
+    "espeak-ng": null,
+    "chromium": "/usr/bin/chromium"
+  },
+  "nativeEvidence": {
+    "initial": "native-results.json",
+    "initialWholeRuntimeChangedDuringParentOPIntegration": true,
+    "loadedCore": "final-core-results.json",
+    "coreModulesStillMatchActuallyLoadedSHA": true,
+    "initialNativeSuitesPassed": 8,
+    "additionalAuditOnlyProbePassed": true,
+    "limits": "Initial app-wide manifest changed during concurrent OP integration; only module-pinned/core and final stable browser evidence support closure, not a fabricated final full suite."
+  },
+  "browserEvidence": "browser-results.json",
+  "finalBrowserPassed": true,
+  "subcriteria": [
+    {
+      "task": "COI-023",
+      "requirementPart": "RULE",
+      "actualObservation": "带来源版本/定位/角色/适用字段的规则研究陈述；缺任一字段拒绝。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 67,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "async function statement"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-governance.js",
+          "line": 14,
+          "sha256": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+          "locator": "const JUDGMENTS"
+        }
+      ],
+      "testEvidence": [
+        "final-core-results.json",
+        "targeted-contract-final.log"
+      ]
+    },
+    {
+      "task": "COI-023",
+      "requirementPart": "OBSERVATION",
+      "actualObservation": "独立观察类型；不会因观察存在成为正式判断。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 67,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "async function statement"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-governance.js",
+          "line": 14,
+          "sha256": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+          "locator": "const JUDGMENTS"
+        }
+      ],
+      "testEvidence": [
+        "final-core-results.json",
+        "targeted-contract-final.log"
+      ]
+    },
+    {
+      "task": "COI-023",
+      "requirementPart": "EVIDENCE_INFERENCE",
+      "actualObservation": "证据推论类型保留，不与观察或规则混同。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 67,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "async function statement"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-governance.js",
+          "line": 14,
+          "sha256": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+          "locator": "const JUDGMENTS"
+        }
+      ],
+      "testEvidence": [
+        "final-core-results.json",
+        "targeted-contract-final.log"
+      ]
+    },
+    {
+      "task": "COI-023",
+      "requirementPart": "DISCRETION",
+      "actualObservation": "人类裁量研究类型保留，不变成授权决定。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 67,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "async function statement"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-governance.js",
+          "line": 14,
+          "sha256": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+          "locator": "const JUDGMENTS"
+        }
+      ],
+      "testEvidence": [
+        "final-core-results.json",
+        "targeted-contract-final.log"
+      ]
+    },
+    {
+      "task": "COI-023",
+      "requirementPart": "UNKNOWN",
+      "actualObservation": "未知类型与未知内容列表保留，不转换成确定结论。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 67,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "async function statement"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-governance.js",
+          "line": 14,
+          "sha256": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+          "locator": "const JUDGMENTS"
+        }
+      ],
+      "testEvidence": [
+        "final-core-results.json",
+        "targeted-contract-final.log"
+      ]
+    },
+    {
+      "task": "COI-023",
+      "requirementPart": "正式决定与研究分类分离",
+      "actualObservation": "L2拒绝FORMAL_DECISION；治理正式决定不获授权；WCOS judgment呈BLOCKED且governmentApproval=false。这是原要求的分类边界，不要求接入真实正式决定。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 67,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "async function statement"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-governance.js",
+          "line": 14,
+          "sha256": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+          "locator": "const JUDGMENTS"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-wcos.js",
+          "line": 86,
+          "sha256": "c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+          "locator": "function judgment"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-governance.js",
+          "line": 63,
+          "sha256": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+          "locator": "FORMAL_DECISION_NOT_AUTHORISED"
+        }
+      ],
+      "testEvidence": [
+        "final-core-results.json",
+        "csoi-wcos.test.cjs.log",
+        "targeted-contract-final.log"
+      ]
+    },
+    {
+      "task": "COI-023",
+      "requirementPart": "反证、未知与来源版本",
+      "actualObservation": "五种研究类型均经新增audit-only断言确认counterevidence/unknowns逐字保留、source revision绑定、officialDecision=false；坏规则的5个必要字段分别拒绝。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 67,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "async function statement"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-governance.js",
+          "line": 14,
+          "sha256": "fed843a341858d10d96b1e28dc2e9b3dbf1cc9d0935dd8eca9fa33139919849f",
+          "locator": "const JUDGMENTS"
+        }
+      ],
+      "testEvidence": [
+        "targeted-contract-final.log"
+      ]
+    },
+    {
+      "task": "COI-023",
+      "requirementPart": "证据输入与陈述分栏",
+      "actualObservation": "L2输入证据以inputs中的id/revisionId保存，陈述保存在data.text/judgment，规则依据在data.rule，反证与未知为独立数组；L1继续保留L0源输入。分栏保留证据链不等于证明陈述为真。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 48,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "function inputRefs"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 49,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "async function transform"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-layers.js",
+          "line": 67,
+          "sha256": "8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+          "locator": "async function statement"
+        }
+      ],
+      "testEvidence": [
+        "final-core-results.json",
+        "targeted-contract-final.log"
+      ]
+    },
+    {
+      "task": "COI-074",
+      "requirementPart": "统一搜索",
+      "actualObservation": "数值/单位/源/工作搜索有真实原生断言；既有integration浏览器检验搜索结果进入实际记录。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/atlas-execution.js",
+          "line": 155,
+          "sha256": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+          "locator": "function searchRecords"
+        },
+        {
+          "file": "apps/public-strategy-atlas/atlas.js",
+          "line": 128,
+          "sha256": "f595646d62ce69db239ecb4a2d29a4ed2d6b3463df1d9bda5e51f462982a847c",
+          "locator": "function advancedSearchPanel"
+        }
+      ],
+      "testEvidence": [
+        "integration.test.cjs.log",
+        "browser/integration-browser-endpoint-transaction/execution.log"
+      ]
+    },
+    {
+      "task": "COI-074",
+      "requirementPart": "年度/地区/法规/来源/工作/单位过滤",
+      "actualObservation": "七维（含搜索词）分别做正例/反例及组合过滤；未知范围排除。法规过滤只搜索记录引用，不承诺现行法律适用。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/csoi-router.js",
+          "line": 11,
+          "sha256": "c62769a7e5633231bfd22894eff2d8a2b0a7955f49c77cb861dc0d7edf32c4e1",
+          "locator": "const QUERY"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-pages.js",
+          "line": 24,
+          "sha256": "6e32420f20c41e6a9bb18e6f17d77be4cdc9ca16a399a8174c3c45168b12f817",
+          "locator": "function queryFilter"
+        }
+      ],
+      "testEvidence": [
+        "targeted-contract-final.log",
+        "csoi-router.test.cjs.log",
+        "browser/csoi-compare-browser-endpoint-transaction/execution.log"
+      ]
+    },
+    {
+      "task": "COI-074",
+      "requirementPart": "跨路径比较",
+      "actualObservation": "保留revision的两记录比较和独立pins路径集比较均有原生断言；实际浏览器含来源记录、冲突、未知、导出验证。 初次移动端超时被保留；父任务将重复整库验证合并为同一私有完整验证事务，既有proof语义保留，并在原限时下重跑。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/atlas-execution.js",
+          "line": 251,
+          "sha256": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+          "locator": "async function compareRecords"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-paths.js",
+          "line": 97,
+          "sha256": "782c14b344e253c000e49a3d1726c0bb5e6f78caab16f6c214d46d5215a9fd6d",
+          "locator": "comparePathSets"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-pages.js",
+          "line": 205,
+          "sha256": "6e32420f20c41e6a9bb18e6f17d77be4cdc9ca16a399a8174c3c45168b12f817",
+          "locator": "async function pathComparePage"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-paths.js",
+          "line": 102,
+          "sha256": "782c14b344e253c000e49a3d1726c0bb5e6f78caab16f6c214d46d5215a9fd6d",
+          "locator": "async function compareEndpointSets"
+        }
+      ],
+      "testEvidence": [
+        "comparison.test.cjs.log",
+        "csoi-paths.test.cjs.log",
+        "browser/csoi-compare-browser-endpoint-transaction/execution.log",
+        "browser/csoi-paths-browser-endpoint-transaction/execution.log",
+        "path-validation-callgraph.json",
+        "browser-results-initial.json",
+        "../../op-completion-20261102/native-retry/csoi-path-transaction.test.cjs.log"
+      ]
+    },
+    {
+      "task": "COI-074",
+      "requirementPart": "问题导航和解释性候选暗线",
+      "actualObservation": "从搜索结果进入记录，发现候选展示原因、替代解释、反证和可证伪条件；错地域候选不能升为已知关系，问题/复核可记录为研究意见。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/atlas.js",
+          "line": 135,
+          "sha256": "f595646d62ce69db239ecb4a2d29a4ed2d6b3463df1d9bda5e51f462982a847c",
+          "locator": "function discoveryPanel"
+        },
+        {
+          "file": "apps/public-strategy-atlas/atlas.js",
+          "line": 238,
+          "sha256": "f595646d62ce69db239ecb4a2d29a4ed2d6b3463df1d9bda5e51f462982a847c",
+          "locator": "const showLegacyCrossings"
+        },
+        {
+          "file": "apps/public-strategy-atlas/atlas-execution.js",
+          "line": 129,
+          "sha256": "f774a78062a17d7a8ab22a74ec8f981d0502158ce21c989472541994670ef5b6",
+          "locator": "async function candidates"
+        }
+      ],
+      "testEvidence": [
+        "discovery.test.cjs.log",
+        "browser/discovery-browser-endpoint-transaction/execution.log"
+      ]
+    },
+    {
+      "task": "COI-074",
+      "requirementPart": "线性文字替代",
+      "actualObservation": "Text route guide沿当前可见真实边给出起点和终点按钮；补充浏览器逐视口点击实际起点，检查可访问名称/角色。",
+      "status": "PASS_ACTUALLY_TESTED",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/atlas.js",
+          "line": 311,
+          "sha256": "f595646d62ce69db239ecb4a2d29a4ed2d6b3463df1d9bda5e51f462982a847c",
+          "locator": "textRoutesBtn"
+        }
+      ],
+      "testEvidence": [
+        "browser/linear-accessibility/results.json",
+        "linear-accessibility.log"
+      ]
+    },
+    {
+      "task": "COI-074",
+      "requirementPart": "真实来源数量的单位过滤",
+      "actualObservation": "直接检查635实体actual cache中38条明确单位的非合成QuantifiedObservation，含33条CSP指标；全部按同一单位保留。注册/修订时measurement展平到data，模型同时校验两层一致。",
+      "status": "PASS_ACTUAL_SOURCE_RECORDS",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/atlas-domain.js",
+          "line": 163,
+          "sha256": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+          "locator": "const measurement=kind"
+        },
+        {
+          "file": "apps/public-strategy-atlas/atlas-domain.js",
+          "line": 40,
+          "sha256": "b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+          "locator": "DOMAIN_MEASUREMENT_RECEIPT_MISMATCH"
+        },
+        {
+          "file": "apps/public-strategy-atlas/csoi-pages.js",
+          "line": 24,
+          "sha256": "6e32420f20c41e6a9bb18e6f17d77be4cdc9ca16a399a8174c3c45168b12f817",
+          "locator": "function queryFilter"
+        }
+      ],
+      "testEvidence": [
+        "source-unit-filter-readback.json"
+      ]
+    },
+    {
+      "task": "COI-076",
+      "requirementPart": "390px/16:9/21:9/32:9",
+      "actualObservation": "既有integration脚本在390、1440、1920、2560、3840视口运行；补充线性/AX脚本在390、1440、1600、2560、3840运行。视口模拟不是物理显示器认证。",
+      "status": "PASS_BOUNDED_BROWSER_CHECK",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/qa/integration-browser.py",
+          "line": 1,
+          "sha256": "723a88abab3742e67a8a7f36433dfc0927b50b78c959530ef7e2369e57eef195",
+          "locator": null
+        },
+        {
+          "file": "apps/public-strategy-atlas/qa/audit-closure-20261102/independent/browser-linear-accessibility.py",
+          "line": 1,
+          "sha256": "904311787584833896cfd7704545bafff7b12093a03a7837f96d822ce2aa18cc",
+          "locator": null
+        }
+      ],
+      "testEvidence": [
+        "browser/integration-browser-endpoint-transaction/execution.log",
+        "browser/linear-accessibility/results.json"
+      ]
+    },
+    {
+      "task": "COI-076",
+      "requirementPart": "键盘/触屏/低动效",
+      "actualObservation": "补充脚本使用真实Chromium键盘Enter、390宽has_touch下tap事件和prefers-reduced-motion；不宣称真实物理触屏。",
+      "status": "PASS_BOUNDED_BROWSER_CHECK",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/qa/integration-browser.py",
+          "line": 1,
+          "sha256": "723a88abab3742e67a8a7f36433dfc0927b50b78c959530ef7e2369e57eef195",
+          "locator": null
+        },
+        {
+          "file": "apps/public-strategy-atlas/qa/audit-closure-20261102/independent/browser-linear-accessibility.py",
+          "line": 1,
+          "sha256": "904311787584833896cfd7704545bafff7b12093a03a7837f96d822ce2aa18cc",
+          "locator": null
+        }
+      ],
+      "testEvidence": [
+        "browser/integration-browser-endpoint-transaction/execution.log",
+        "browser/linear-accessibility/results.json"
+      ]
+    },
+    {
+      "task": "COI-076",
+      "requirementPart": "可聚焦上下文",
+      "actualObservation": "源路由h1获得焦点且在视口内，线性按钮可用键盘/触摸模拟打开对应记录。",
+      "status": "PASS_BOUNDED_BROWSER_CHECK",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/qa/integration-browser.py",
+          "line": 1,
+          "sha256": "723a88abab3742e67a8a7f36433dfc0927b50b78c959530ef7e2369e57eef195",
+          "locator": null
+        },
+        {
+          "file": "apps/public-strategy-atlas/qa/audit-closure-20261102/independent/browser-linear-accessibility.py",
+          "line": 1,
+          "sha256": "904311787584833896cfd7704545bafff7b12093a03a7837f96d822ce2aa18cc",
+          "locator": null
+        }
+      ],
+      "testEvidence": [
+        "browser/integration-browser-endpoint-transaction/execution.log",
+        "browser/linear-accessibility/results.json"
+      ]
+    },
+    {
+      "task": "COI-076",
+      "requirementPart": "长表分页",
+      "actualObservation": "原integration脚本加载1000条合成fixture，20行一页，点击Next table rows并断言下一页与无溢出。",
+      "status": "PASS_BOUNDED_BROWSER_CHECK",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/qa/integration-browser.py",
+          "line": 1,
+          "sha256": "723a88abab3742e67a8a7f36433dfc0927b50b78c959530ef7e2369e57eef195",
+          "locator": null
+        },
+        {
+          "file": "apps/public-strategy-atlas/qa/audit-closure-20261102/independent/browser-linear-accessibility.py",
+          "line": 1,
+          "sha256": "904311787584833896cfd7704545bafff7b12093a03a7837f96d822ce2aa18cc",
+          "locator": null
+        }
+      ],
+      "testEvidence": [
+        "browser/integration-browser-endpoint-transaction/execution.log",
+        "browser/linear-accessibility/results.json"
+      ]
+    },
+    {
+      "task": "COI-076",
+      "requirementPart": "基本可访问树/名称",
+      "actualObservation": "读取真实Chromium Accessibility.getFullAXTree，检查heading/button/textbox的名称和非ignored状态，保存逐视口AX记录。",
+      "status": "PASS_BOUNDED_BROWSER_CHECK",
+      "implementationEvidence": [
+        {
+          "file": "apps/public-strategy-atlas/qa/integration-browser.py",
+          "line": 1,
+          "sha256": "723a88abab3742e67a8a7f36433dfc0927b50b78c959530ef7e2369e57eef195",
+          "locator": null
+        },
+        {
+          "file": "apps/public-strategy-atlas/qa/audit-closure-20261102/independent/browser-linear-accessibility.py",
+          "line": 1,
+          "sha256": "904311787584833896cfd7704545bafff7b12093a03a7837f96d822ce2aa18cc",
+          "locator": null
+        }
+      ],
+      "testEvidence": [
+        "browser/integration-browser-endpoint-transaction/execution.log",
+        "browser/linear-accessibility/results.json"
+      ]
+    },
+    {
+      "task": "COI-076",
+      "requirementPart": "基本读屏实际体验",
+      "actualObservation": "当前Linux环境未发现Orca或speech-dispatcher；AX树不是实际读屏会话，未听读/核对朗读顺序与交互反馈。未安装新工具、未要求购买硬件或专业认证。",
+      "status": "PENDING_TOOL_OR_HUMAN_ACCEPTANCE",
+      "implementationEvidence": [],
+      "testEvidence": [
+        "readback.json#screenReaderTools"
+      ]
+    }
+  ],
+  "mutations": {
+    "originalAuthorFiles": false,
+    "runtime": false,
+    "registry": false,
+    "site": false,
+    "privateAccess": false
+  },
+  "commands": [
+    "python apps/public-strategy-atlas/qa/audit-closure-20261102/independent/run-targeted.py",
+    "python apps/public-strategy-atlas/qa/audit-closure-20261102/independent/run-final-core.py",
+    "CSOI_READBACK_MODULE_RECEIPT=<independent/output.json> node --require apps/public-strategy-atlas/qa/audit-closure-20261102/independent/capture-module-hashes.cjs <test.cjs>",
+    "python apps/public-strategy-atlas/qa/audit-closure-20261102/independent/run-browser-readback.py",
+    "python apps/public-strategy-atlas/qa/audit-closure-20261102/independent/build-readback.py"
+  ],
+  "finalEvidenceBinding": {
+    "browserFilesStillCurrent": true,
+    "sourceUnitProbeStillCurrent": true,
+    "actualSourceUnitEvidence": "source-unit-filter-readback.json",
+    "initialBrowserFailureRetained": "browser-results-initial.json",
+    "pathCallgraphBeforeAndAfter": "path-validation-callgraph.json",
+    "largeExportArchiveReceipt": "large-export-receipts.json"
+  }
+}

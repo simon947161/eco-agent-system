@@ -1,0 +1,153 @@
+{
+  "format": "csoi-startup-diagnostics-1",
+  "at": "2026-10-31T08:45:20.352086+00:00",
+  "before": [
+    {
+      "fixture": 0,
+      "loadSeconds": 15.37,
+      "error": null,
+      "pendingRequests": [],
+      "readyTime": "NOT_MEASURED"
+    },
+    {
+      "fixture": 60,
+      "loadSeconds": 31.477,
+      "error": null,
+      "pendingRequests": [],
+      "readyTime": "NOT_MEASURED"
+    },
+    {
+      "fixture": 200,
+      "loadSeconds": 37.827,
+      "error": null,
+      "pendingRequests": [],
+      "readyTime": "NOT_MEASURED"
+    },
+    {
+      "fixture": 10000,
+      "loadSeconds": null,
+      "error": "Page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"http://127.0.0.1:8877/?fixture=10000\", waiting until \"load\"\n",
+      "pendingRequests": [],
+      "readyTime": "NOT_MEASURED"
+    }
+  ],
+  "backlogControl": {
+    "queueSize": 128,
+    "complete": false,
+    "reasonStopped": "The first two loads still stalled after resource requests completed; no product-server change was made.",
+    "observations": [
+      {
+        "fixture": 0,
+        "loadSeconds": 18.666,
+        "slowResources": [
+          {
+            "name": "http://127.0.0.1:8877/atlas.js",
+            "duration": 317.19999999995343,
+            "connect": 0.8999999999068677,
+            "request": 354.39999999990687,
+            "response": 358.30000000004657,
+            "end": 359.5999999998603
+          },
+          {
+            "name": "http://127.0.0.1:8877/csoi-pages.js",
+            "duration": 317.0999999998603,
+            "connect": 0.20000000018626451,
+            "request": 354.30000000004657,
+            "response": 358.5,
+            "end": 359.39999999990687
+          },
+          {
+            "name": "http://127.0.0.1:8877/csoi-assistant.js",
+            "duration": 316.80000000004657,
+            "connect": 0.30000000004656613,
+            "request": 353.89999999990687,
+            "response": 357.69999999995343,
+            "end": 359
+          },
+          {
+            "name": "http://127.0.0.1:8877/csoi-router.js",
+            "duration": 316.5,
+            "connect": 0,
+            "request": 354.19999999995343,
+            "response": 356.80000000004657,
+            "end": 358.80000000004657
+          }
+        ]
+      },
+      {
+        "fixture": 60,
+        "loadSeconds": 42.945,
+        "slowResources": [
+          {
+            "name": "http://127.0.0.1:8877/atlas.css",
+            "duration": 0,
+            "connect": 0,
+            "request": 13.199999999953434,
+            "response": 13.199999999953434,
+            "end": 13.199999999953434
+          },
+          {
+            "name": "http://127.0.0.1:8877/csoi-pages.css",
+            "duration": 0,
+            "connect": 0,
+            "request": 13.300000000046566,
+            "response": 13.300000000046566,
+            "end": 13.300000000046566
+          },
+          {
+            "name": "http://127.0.0.1:8877/atlas-data.js",
+            "duration": 0,
+            "connect": 0,
+            "request": 13.300000000046566,
+            "response": 13.300000000046566,
+            "end": 13.300000000046566
+          },
+          {
+            "name": "http://127.0.0.1:8877/atlas-domain.js",
+            "duration": 0,
+            "connect": 0,
+            "request": 13.300000000046566,
+            "response": 13.300000000046566,
+            "end": 13.300000000046566
+          }
+        ]
+      }
+    ]
+  },
+  "after": [
+    {
+      "fixture": 0,
+      "loadSeconds": 1.081,
+      "readySeconds": 1.155,
+      "expectedContentCount": 127,
+      "contentCountTextAssertion": "PASS",
+      "error": null
+    },
+    {
+      "fixture": 60,
+      "loadSeconds": 0.996,
+      "readySeconds": 1.031,
+      "expectedContentCount": 187,
+      "contentCountTextAssertion": "PASS",
+      "error": null
+    },
+    {
+      "fixture": 200,
+      "loadSeconds": 0.425,
+      "readySeconds": 0.47,
+      "expectedContentCount": 327,
+      "contentCountTextAssertion": "PASS",
+      "error": null
+    },
+    {
+      "fixture": 10000,
+      "loadSeconds": 2.6,
+      "readySeconds": 2.668,
+      "expectedContentCount": 10127,
+      "contentCountTextAssertion": "PASS",
+      "error": null
+    }
+  ],
+  "scope": "One local Chromium diagnostic run, not a latency SLA or multi-user capacity claim. Final unchanged-timeout deep browser suite is separate.",
+  "defaultDatasetDigest": "sha256:621a3a17781a60ae7b18f0006fc98cf498292b1f5d49ae52e4c4776478f967dd"
+}

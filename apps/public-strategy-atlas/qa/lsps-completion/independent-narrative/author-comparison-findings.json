@@ -1,0 +1,165 @@
+{
+  "format": "lsps-independent-author-findings-1",
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "initialComparedAuthorSha256": "eed51bd38c62e3df7167331e35baf61770f579b264c60bf0f2f3fff276a7a62e",
+  "reviewMethod": "先完成独立原件阅读与21条范围记录，再逐项读回作者512单元；本文件记录真实差异而非以哈希代替语义判断。",
+  "findings": [
+    {
+      "id": "LSPS-INDEPENDENT-AUTHOR-001",
+      "severity": "MATERIAL_SOURCE_DENOMINATOR_CHANGE",
+      "recordId": "csoi:lsps2020:narrative:p085-b07-u01",
+      "pdfPage": 85,
+      "sourceAnchors": [
+        {
+          "pdfPage": 85,
+          "bbox": [
+            71.524,
+            190.23,
+            282.955,
+            379.94
+          ],
+          "sourceTextHash": "sha256:4e428d8f96650d0e78534b74ce94db5b2eb31fcc6fab18218535b04a679b4829",
+          "cropHash": "sha256:f137c66b2192db97ad18b3dc8dff36abe8aae773771d8caf367021bb6a45c4b2",
+          "renderer": "pymupdf-1.26.6-rgb-100dpi-clip-v1"
+        }
+      ],
+      "initialAuthoredSummary": "文件以2020经济资料称农业林业渔业合计占就业12.4%、贡献约3亿澳元，并担忧农地损失或受限；与其他章节单独农业指标不可直接混同。",
+      "independentFinding": "原文明确使用 population 作为12.4%的名义分母，作者将其静默改为就业占比。原件本身可能措辞含混，但不能由研究摘要替它修正统计定义。",
+      "requiredCorrection": "保留原文 population 及统计分母疑点；2020保留为引用资料年份，不推断测量年份。",
+      "resolution": "RESOLVED_IN_ACTUAL_APP_READBACK",
+      "finalReadbackEvidence": "semantic-readback.json",
+      "finalAuthorSHA256": "e3e5cb716d36cda05b54e7fd0f89183f0f38aad6243bff2279b848f557caa763",
+      "actualAppSHA256": "e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f"
+    },
+    {
+      "id": "LSPS-INDEPENDENT-AUTHOR-002",
+      "severity": "UNMARKED_CURRENCY_INFERENCE",
+      "recordId": "csoi:lsps2020:narrative:p019-image-b03",
+      "pdfPage": 19,
+      "sourceAnchors": [
+        {
+          "pdfPage": 19,
+          "bbox": [
+            70.45,
+            105.75,
+            544.75,
+            398.15
+          ],
+          "sourceTextHash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cropHash": "sha256:da783d0874e4b64f4665936087572c2f0cb615d46ec918d90eddc5508c922ca2",
+          "renderer": "pymupdf-1.26.6-rgb-100dpi-clip-v1"
+        }
+      ],
+      "initialAuthoredSummary": "增长驱动图并列Snowy2.0与其他可再生能源项目62亿澳元、Snowy Mountains SAP、Canberra机场与Eden港国际门户，以及旅游投资1.42亿澳元。",
+      "initialStructuredObservation": {
+        "printedInvestmentAmounts": [
+          {
+            "scope": "Snowy2.0 plus other renewable projects",
+            "value": 6.2,
+            "scale": 1000000000,
+            "currency": "AUD"
+          },
+          {
+            "scope": "tourism investment in region",
+            "value": 142,
+            "scale": 1000000,
+            "currency": "AUD"
+          }
+        ]
+      },
+      "independentFinding": "原图金额只印美元符号$、6.2B及142M，作者将AUD写入printedInvestmentAmounts.currency，未标推断。",
+      "requiredCorrection": "保留$符号和规模，币种UNKNOWN或明确区分语境推断；其他原件只用$的叙述同步避免无标记币种推断。",
+      "resolution": "RESOLVED_IN_ACTUAL_APP_READBACK",
+      "expandedAffectedRecordIds": [
+        "csoi:lsps2020:narrative:p006-b10-u01",
+        "csoi:lsps2020:narrative:p033-b03-u01",
+        "csoi:lsps2020:narrative:p033-b04-u01",
+        "csoi:lsps2020:narrative:p047-b08-u01",
+        "csoi:lsps2020:narrative:p085-b07-u01",
+        "csoi:lsps2020:narrative:p087-b09-u01",
+        "csoi:lsps2020:narrative:p019-image-b03"
+      ],
+      "expandedCorrectionEvidence": "../author/semantic-corrections.json retains author before/after wording for dollar-only prose.",
+      "finalReadbackEvidence": "semantic-readback.json",
+      "finalAuthorSHA256": "e3e5cb716d36cda05b54e7fd0f89183f0f38aad6243bff2279b848f557caa763",
+      "actualAppSHA256": "e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f"
+    },
+    {
+      "id": "LSPS-INDEPENDENT-AUTHOR-003",
+      "severity": "HOUSEHOLD_CATEGORY_NARROWED",
+      "recordIds": [
+        "csoi:lsps2020:narrative:p044-b05-u01",
+        "csoi:lsps2020:narrative:p044-b06-u01",
+        "csoi:lsps2020:narrative:p044-image-b02"
+      ],
+      "pdfPage": 44,
+      "sourceAnchors": [
+        {
+          "pdfPage": 44,
+          "bbox": [
+            71.524,
+            345.32,
+            282.879,
+            516.76
+          ],
+          "sourceTextHash": "sha256:5a119cd4e847ebd89144ef83d754cda698d98018d1020a10eeceaa85bb0866e1",
+          "cropHash": "sha256:d5dba52ee7283c2de3f703c38929d58d51e987ccdcf4a977a8f2602f6cb28764",
+          "renderer": "pymupdf-1.26.6-rgb-100dpi-clip-v1"
+        },
+        {
+          "pdfPage": 44,
+          "bbox": [
+            71.524,
+            527.07,
+            282.925,
+            669.69
+          ],
+          "sourceTextHash": "sha256:70016354303740391d0a1375784effea36f51036e7784d14203a9e25ddb6789e",
+          "cropHash": "sha256:24504af0b6899a7a59f20344766b1e72e798df3b42e8f0b038fc9446f437a6f5",
+          "renderer": "pymupdf-1.26.6-rgb-100dpi-clip-v1"
+        },
+        {
+          "pdfPage": 44,
+          "bbox": [
+            74.1,
+            71.25,
+            520.85,
+            314.45
+          ],
+          "sourceTextHash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cropHash": "sha256:d0f752d9a7788978b76fb8b295d99c009a37bed6b4e8d93c6aae1b63a07e8c12",
+          "renderer": "pymupdf-1.26.6-rgb-100dpi-clip-v1"
+        }
+      ],
+      "initialAuthoredSummaries": [
+        {
+          "id": "csoi:lsps2020:narrative:p044-b05-u01",
+          "summary": "按当时预测，2036单人户与无子女伴侣户约占65%，可能增加一两卧室住宅需求并减少对大型独栋及高维护房产偏好。"
+        },
+        {
+          "id": "csoi:lsps2020:narrative:p044-b06-u01",
+          "summary": "高增长情景下2016–2036单人户及无子女伴侣户分别增约1,400户，其余类型合计约增1,100户；不作为已发生增长。"
+        },
+        {
+          "id": "csoi:lsps2020:narrative:p044-image-b02",
+          "summary": "图14比较2016、2026、2036有子女伴侣户、无子女伴侣户、合住户、单人户、单亲户及其他家庭；各类型数量增加，无子女伴侣及单人户为最大增长部分。"
+        }
+      ],
+      "independentFinding": "原文couples without dependents被译为无子女伴侣户，缩窄并改变家庭类别；有无受扶养成员不等于有无子女。",
+      "requiredCorrection": "保留with/without dependents原文类别，译为有/无受扶养成员的伴侣家庭；不臆造受扶养成员统计定义。",
+      "resolution": "RESOLVED_IN_ACTUAL_APP_READBACK",
+      "finalReadbackEvidence": "semantic-readback.json",
+      "finalAuthorSHA256": "e3e5cb716d36cda05b54e7fd0f89183f0f38aad6243bff2279b848f557caa763",
+      "actualAppSHA256": "e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f"
+    }
+  ],
+  "reviewerErrata": [
+    {
+      "pdfPage": 76,
+      "initialReadingError": "pypdf抽取残留Michelago地图标签被初判为混合地图页。",
+      "correction": "独立渲染及实际看图证实顶部是Old Adaminaby照片，下方是Adaminaby正文；本页不新增地图。",
+      "resolution": "CORRECTED_BEFORE_FINAL",
+      "sourceVisual": "Original PDF76 rendered from pinned source; no original image committed."
+    }
+  ]
+}

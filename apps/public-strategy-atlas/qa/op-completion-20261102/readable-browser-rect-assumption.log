@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/op-readable-browser.py", line 15, in <module>
+    assert page.locator('#csoiSourceReading dl.csoi-fields').evaluate_all('(es)=>es.every(e=>!e.getClientRects().length)'),'TECHNICAL_JSON_SHOULD_START_COLLAPSED'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: TECHNICAL_JSON_SHOULD_START_COLLAPSED

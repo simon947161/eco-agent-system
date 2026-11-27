@@ -1,0 +1,57 @@
+{
+  "unitId": "csoi:op2026:finance:p140:pensioner-rebate-1",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:140",
+  "cacheRevisionId": "sha256:5f47aa0b925d195fbff304d8bec336e59c9bbafafb6cec34f164d4a64428d209",
+  "actualFullUnitDigest": "sha256:4c3570d92a68dd5e27d312cabad5f34c1b6d0b1a590d5335834345af3d619ee4",
+  "page": 140,
+  "category": "OP_REVENUE_REBATE",
+  "summary": "Ordinary rates and domestic waste management charge 的年度最高减免额为 $250.00；须满足养老金资格及唯一/主要居所条件。",
+  "conditions": [
+    "普通税与 domestic waste management charge 共用 $250 上限，不是各自 $250。"
+  ],
+  "qualifiers": [],
+  "facts": {
+    "scope": "Ordinary rates and domestic waste management charge",
+    "maximumRebate": {
+      "display": "$250.00",
+      "unit": "$",
+      "currency": "UNKNOWN",
+      "period": "Per annum",
+      "meaning": "Maximum rebate",
+      "status": "PRINTED_VALUE",
+      "numericValue": 250,
+      "numericValueText": "250.00",
+      "signConvention": "AS_PRINTED"
+    },
+    "combinedScope": true
+  },
+  "sourceAnchorCount": 2,
+  "sourceLocations": [
+    {
+      "field": "facts.scope",
+      "pdfPage": 140,
+      "bbox": [
+        46.60240097045899,
+        190.650048828125,
+        215.4304946899414,
+        222.86951293945313
+      ],
+      "normalizedTextDigest": "sha256:b74563c5c2131c86001422a0b438c1af83297f906cb33f57cdff951fc53264bd",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "facts.maximumRebate",
+      "pdfPage": 140,
+      "bbox": [
+        215.1304946899414,
+        190.650048828125,
+        357.07802124023436,
+        222.86951293945313
+      ],
+      "normalizedTextDigest": "sha256:01c9519035a74004ec952ae31a4ba4a5f32929d28a8ec3233969e2bb415c19ed",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:5bfc18887b8d0a29d245a40a96c7af772ee2e4dd4e9f2fbbde36c1f0bbfc86ae",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

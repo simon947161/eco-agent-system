@@ -1,0 +1,18 @@
+/* Publish bounded review metadata, never original PDF bodies or internal data. */
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const app=path.resolve(__dirname,'..'),read=p=>JSON.parse(fs.readFileSync(path.join(app,p),'utf8'));
+const csp=read('qa/strategy-completion/csp/page-coverage.json'),lsps=read('qa/strategy-completion/lsps/page-inventory.json'),op=read('qa/strategy-completion/op/document-coverage.json');
+const documents=[
+ {family:'CSP',sourceId:csp.sourceId,sourceRevision:csp.sourceRevision,totalPages:csp.pageCount,scope:csp.definition,pages:csp.pages.map(p=>({pdfPage:p.pdfPage,section:p.section,status:p.reviewStatus,pageDigest:p.normalizedPageDigest,recordIds:p.primaryRecordIds,gap:p.scopeAndRemainingGap}))},
+ {family:'LSPS',sourceId:'csoi:smrc-lsps-2020:20261030',sourceRevision:lsps[0].sourceRevision,totalPages:lsps.length,scope:'Twelve priorities, implementation table, and distinct conflicting narrative/local action occurrences. Page inventory is not full narrative/map interpretation or current-law confirmation.',pages:lsps.map(p=>({pdfPage:p.pdfPage,section:p.section,status:p.review,pageDigest:p.normalizedPageDigest,recordIds:p.linkedRecordIds,gap:p.gap}))},
+ {family:'OP',sourceId:op.sourceId,sourceRevision:op.sourceRevision,totalPages:op.pages,scope:'Selected PDF73–74 water rows plus original-reference checks on27/30 and source metadata. Full OP item/reference denominator UNKNOWN.',versionConflict:op.versionConflict,pages:op.pageInventory.map(p=>({pdfPage:p.pdfPage,section:p.section||'See document contents; not fully extracted',status:p.reviewStatus,pageDigest:p.normalizedPageDigest||null,recordIds:p.recordIds||[],gap:p.gap||'Whole-page extraction not claimed.'}))}
+];
+const review=read('sources/csp-indicator-review.json');if(review.records.length!==63||review.sourceRevision!==documents[0].sourceRevision)throw Error('METRIC_REVIEW_SCOPE_SOURCE');
+documents[0].scope+=' A second independent AI source-semantic review covers all63 indicator rows on PDF29–31 with PDF28 context; this is not raw-data recomputation or authorised admission.';
+for(const page of documents[0].pages)if([29,30,31].includes(page.pdfPage)){page.status+='; SECOND_SOURCE_SEMANTIC_REVIEW';page.gap+=' Definition, unit, source-year/measurement-period, target, responsibility, scope and calculation limits individually reviewed; actual values and professional human admission remain unknown/pending.';}
+const context=read('sources/lsps-context-review.json');documents[1].scope=context.scope;documents[1].pages=context.pages;
+const opReview=read('sources/op-completion-review.json');documents[2].scope=opReview.scope;documents[2].pages=opReview.pages;
+const value={format:'csoi-source-review-scope-1',documents,method:'Fresh official-source checks, original archive retained; page/cell hashes locate evidence but do not prove comprehensive meaning.',officialAdmission:'PENDING',recovery:'Archived report/workbook recovered from Git; uncommitted phase2 source implementation not recovered.'};
+const json=JSON.stringify(value,null,2)+'\n',js=`(function(root){const value=${JSON.stringify(value)};root.CsoiSourceReviewScope=value;if(typeof module!=='undefined')module.exports=value;})(typeof window!=='undefined'?window:globalThis);\n`;
+for(const [file,body]of [['sources/strategy-review-scope.json',json],['sources/strategy-review-scope.js',js]])if(process.argv.includes('--check')){if(fs.readFileSync(path.join(app,file),'utf8')!==body)throw Error('REVIEW_SCOPE_MIRROR_STALE');}else fs.writeFileSync(path.join(app,file),body);
+console.log('PASS: source review scope mirrored for '+documents.map(d=>d.family+':'+d.totalPages).join(', ')+' pages; no completeness promotion.');

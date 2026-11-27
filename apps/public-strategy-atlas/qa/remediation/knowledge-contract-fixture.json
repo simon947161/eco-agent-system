@@ -1,0 +1,230 @@
+{
+  "format": "csoi-public-knowledge-1",
+  "sourceId": "csoi:smrc-csp-full-2025:20261030",
+  "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+  "rights": "UNKNOWN",
+  "currentVersion": "UNKNOWN",
+  "officialAdmission": "PENDING",
+  "records": [
+    {
+      "id": "csoi:csp:2025:document",
+      "kind": "DocumentRevision",
+      "category": "CSP_DOCUMENT",
+      "code": "CSP2035",
+      "parentId": null,
+      "title": "CSP 2035 \u2014 structured public planning content",
+      "summary": "Selected structured planning metadata from the 2025-revision CSP. Publication is not current-law, parcel applicability, actual outcome or official relationship admission.",
+      "locator": "PDF/printed page 1; Community Strategic Plan 2035, 2025 revision",
+      "anchor": {
+        "pdfPage": 1,
+        "normalizedPageDigest": "sha256:5d364e426c9f74dc2d01cf817123354b18d883c01371f91732883108ab2bb8dd",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      },
+      "facts": {
+        "planningHorizon": "2035",
+        "versionLabel": "2025 Revision",
+        "councilRoles": [],
+        "partners": [],
+        "timeframe": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "UNKNOWN",
+        "totalPages": 36
+      },
+      "relations": []
+    },
+    {
+      "id": "csoi:csp:2025:pillar:community",
+      "kind": "StrategicOutcome",
+      "category": "CSP_PILLAR",
+      "code": "community",
+      "parentId": "csoi:csp:2025:document",
+      "title": "Community wellbeing",
+      "summary": "Published community theme: health, cultural identity, safety and resilience.",
+      "locator": "PDF/printed page 18; CSP_PILLAR; community",
+      "anchor": {
+        "pdfPage": 18,
+        "normalizedPageDigest": "sha256:bae3ff6d7a00ceec901b3e7ccf136ec78487e1afe2dc9ac962977215475443c5",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      },
+      "facts": {
+        "pillar": "community",
+        "councilRoles": [],
+        "partners": [],
+        "timeframe": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "UNKNOWN"
+      },
+      "relations": []
+    },
+    {
+      "id": "csoi:csp:2025:objective:1",
+      "kind": "Objective",
+      "category": "CSP_OBJECTIVE",
+      "code": "1",
+      "parentId": "csoi:csp:2025:pillar:community",
+      "title": "Health and enjoyable living",
+      "summary": "The published objective seeks health that supports an enjoyable lifestyle.",
+      "locator": "PDF/printed page 18; CSP_OBJECTIVE; 1",
+      "anchor": {
+        "pdfPage": 18,
+        "normalizedPageDigest": "sha256:bae3ff6d7a00ceec901b3e7ccf136ec78487e1afe2dc9ac962977215475443c5",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      },
+      "facts": {
+        "pillar": "community",
+        "printedCode": "1",
+        "councilRoles": [],
+        "partners": [],
+        "timeframe": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "UNKNOWN"
+      },
+      "relations": []
+    },
+    {
+      "id": "csoi:csp:2025:strategy:1.1",
+      "kind": "ContentBlock",
+      "category": "CSP_STRATEGY",
+      "code": "1.1",
+      "parentId": "csoi:csp:2025:objective:1",
+      "title": "Accessible care through life stages",
+      "summary": "Seek accessible aged, disability and health services throughout people\u2019s lives.",
+      "locator": "PDF/printed page 18; CSP_STRATEGY; 1.1",
+      "anchor": {
+        "pdfPage": 18,
+        "normalizedPageDigest": "sha256:bae3ff6d7a00ceec901b3e7ccf136ec78487e1afe2dc9ac962977215475443c5",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1"
+      },
+      "facts": {
+        "pillar": "community",
+        "printedCode": "1.1",
+        "councilRoles": [
+          "Provide",
+          "Collaborate",
+          "Advocate"
+        ],
+        "partners": [
+          "NSW Health",
+          "ACT Health",
+          "Medical practices",
+          "Health & allied practitioners",
+          "Ngarigo community"
+        ],
+        "timeframe": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "responsibleRole": "UNKNOWN"
+      },
+      "relations": []
+    },
+    {
+      "id": "csoi:csp:2025:metric:29:community:01",
+      "kind": "QuantifiedObservation",
+      "category": "CSP_INDICATOR",
+      "code": "CSP-KPI-29-community-01",
+      "parentId": "csoi:csp:2025:pillar:community",
+      "title": "Personal Wellbeing Index",
+      "summary": "Individual published CSP baseline row; definition, units, period, boundary and computation limits are retained separately. This is not a current Council performance result.",
+      "locator": "PDF/printed page 29; community measures; row 1; Personal Wellbeing Index",
+      "anchor": {
+        "pdfPage": 29,
+        "normalizedPageDigest": "sha256:3c5e09c5b4a7532653b16944af57550af76e0e65dfd062769ec602cc837ea673",
+        "parserVersion": "pypdf-6.10.0-layout-whitespace-1",
+        "bbox": [
+          50,
+          178.8841999999999,
+          540,
+          187.77219999999994
+        ]
+      },
+      "facts": {
+        "pillar": "community",
+        "originalCensusId": "CSP-KPI-29-community-01",
+        "tableRow": 1,
+        "printedLabel": "Personal Wellbeing Index",
+        "printedBaseline": "72.5",
+        "baseline": {
+          "value": 72.5,
+          "scale": 1,
+          "normalisedValue": 72.5,
+          "normalisation": "PRINTED_NUMBER_AND_MULTIPLIER_ONLY_NOT_AN_INDEPENDENT_RECALCULATION",
+          "unit": "UNKNOWN",
+          "printedUnit": "",
+          "unitStatus": "NOT_PRINTED_IN_BASELINE",
+          "role": "PUBLISHED_BASELINE_NOT_CURRENT_ACTUAL"
+        },
+        "printedSource": "UoC Regional Wellbeing Survey 2021",
+        "sourceYear": "2021",
+        "measurementYearLabel": "UNKNOWN",
+        "referencePeriod": {
+          "label": "2021",
+          "basis": "PROVIDER_YEAR_LABEL_ONLY_NOT_VERIFIED_INTERVAL"
+        },
+        "timeInterval": {
+          "from": "UNKNOWN",
+          "to": "UNKNOWN",
+          "basis": "Source/measure year label only; precise interval not independently established."
+        },
+        "desiredTrend": "Increase",
+        "printedDesiredTrend": "Increase",
+        "denominator": {
+          "label": "UNKNOWN",
+          "value": "UNKNOWN",
+          "normalisationReference": "UNKNOWN",
+          "status": "ACTUAL_DENOMINATOR_NOT_INDEPENDENTLY_VERIFIED"
+        },
+        "quantityRole": "PUBLISHED_SURVEY_OR_INDEX_SCORE",
+        "definition": "Published baseline observation of Personal Wellbeing Index. Underlying provider definition is not reproduced by this record.",
+        "boundaries": {
+          "geographic": "Snowy Monaro regional strategic context; exact provider geography UNCONFIRMED",
+          "organisation": "UNKNOWN_FROM_CSP_ROW",
+          "accounting": "UNKNOWN_FROM_CSP_ROW"
+        },
+        "formula": {
+          "expression": "UNKNOWN_FROM_CSP_ROW",
+          "basis": "CSP row does not state a reproducible formula or underlying raw inputs.",
+          "requiredInputs": [
+            "Underlying provider definition and method version",
+            "Original observations or numerator and denominator as applicable",
+            "Matching period, geographic/organisation boundary and unit",
+            "Reconciliation to the printed rounded baseline"
+          ]
+        },
+        "computability": "NOT_COMPUTABLE",
+        "actualValue": "UNKNOWN",
+        "responsibleRole": "UNKNOWN",
+        "timeframe": "UNKNOWN",
+        "humanReview": "PENDING",
+        "sourceConflictIds": [],
+        "officialRelationship": "PENDING_NOT_ADMITTED",
+        "originalColumnBounds": {
+          "measure": [
+            50,
+            178.8841999999999,
+            238,
+            187.77219999999994
+          ],
+          "source": [
+            238,
+            178.8841999999999,
+            410,
+            187.77219999999994
+          ],
+          "baseline": [
+            410,
+            178.8841999999999,
+            465,
+            187.77219999999994
+          ],
+          "trend": [
+            465,
+            178.8841999999999,
+            540,
+            187.77219999999994
+          ]
+        }
+      },
+      "relations": []
+    }
+  ],
+  "sourcePageCount": 36
+}

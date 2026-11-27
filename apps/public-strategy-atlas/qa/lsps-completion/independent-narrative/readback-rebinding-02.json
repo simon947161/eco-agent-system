@@ -1,0 +1,17 @@
+{
+  "format": "CSOI_LSPS_READBACK_REBINDING_V1",
+  "receiptNumber": 2,
+  "reason": "Parent added historical SOURCE_READING_CONTEXT page relations to original action locations and priority context. Narrative contents and author text unchanged.",
+  "previousReceipt": "previous-readback-receipt-02.json",
+  "earlierReceipt": "previous-readback-receipt.json",
+  "earlierRebinding": "readback-rebinding.json",
+  "previousActualAppFileSHA256": "62ec9838d2c930071bdd76bfccb9344b6913fb67880d7594fdd2489cd0c7ace7",
+  "currentActualAppFileSHA256": "e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f",
+  "authorFileSHA256": "e3e5cb716d36cda05b54e7fd0f89183f0f38aad6243bff2279b848f557caa763",
+  "authorFileUnchanged": true,
+  "narrativeUnitsCompared": 512,
+  "narrativeUnitsDigestUnchanged": 512,
+  "allCurrentAuthorUnitsMatchActual": true,
+  "semanticConclusion": "UNCHANGED_COMPLETE_WITH_STATED_BOUNDARIES",
+  "scope": "Only narrative payload delivery binding was repeated; newly added graph relations are not represented as newly independently reviewed official mappings."
+}

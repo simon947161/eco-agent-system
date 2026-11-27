@@ -1,0 +1,28 @@
+{
+  "format": "csoi-pr-code-readback-1",
+  "at": "2026-10-31T08:59:07.331Z",
+  "pr": 130,
+  "repository": "simon947161/eco-agent-system",
+  "branch": "feature/public-strategy-atlas-web-mvp-20261029",
+  "codeSha": "94c70e9c11a9fe0b2f518fd39cf3737f1a044330",
+  "remoteBranchSha": "94c70e9c11a9fe0b2f518fd39cf3737f1a044330",
+  "url": "https://github.com/simon947161/eco-agent-system/pull/130",
+  "state": "open",
+  "draft": true,
+  "merged": false,
+  "mergeableReported": false,
+  "gitPush": "CONFIRMED",
+  "gitLsRemote": "MATCH",
+  "localWorktree": "CLEAN_BEFORE_EVIDENCE_CHECKPOINT",
+  "commitStatuses": [],
+  "prTriggeredWorkflowRuns": [],
+  "ciClaim": "NO_COMMIT_STATUSES_OR_PR_TRIGGERED_WORKFLOW_RUNS_RETURNED; not an independent CI pass. Workflow connector is PR-triggered and first-page only.",
+  "localTests": {
+    "nativeFiles": 38,
+    "browserLeafSuites": 16,
+    "status": "PASS_TESTED_HERE"
+  },
+  "merge": "NOT_PERFORMED",
+  "deployment": "NOT_PERFORMED",
+  "note": "This readback binds the tested code commit. A following documentation-only commit records this receipt; its final remote SHA is read back separately in the task result."
+}

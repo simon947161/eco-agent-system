@@ -1,0 +1,24 @@
+{
+  "format": "atlas-runtime-policy-check-1",
+  "checkedAt": "2026-10-29T21:40:23.635Z",
+  "isDifferentRuntimeFromPreviousAttempt": true,
+  "isDifferentPublishedConfigVersionFromPreviousAttempt": true,
+  "specRevision": "1",
+  "observedSpecRevision": "1",
+  "observationsCurrent": true,
+  "phase": "running",
+  "connectivity": "connected",
+  "networkPolicy": {
+    "mode": "unrestricted",
+    "state": "enforced"
+  },
+  "localStartupPolicy": {
+    "version": 1,
+    "vpnConfigured": false,
+    "httpNetworkPolicy": {
+      "type": "unrestricted"
+    },
+    "tcpDestinations": []
+  },
+  "settingsMutated": false
+}

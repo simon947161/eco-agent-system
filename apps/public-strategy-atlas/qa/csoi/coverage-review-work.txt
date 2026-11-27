@@ -1,0 +1,142 @@
+PASS: source-bounded 29.9 t CO2e/person, work/accounting type validation, 3 Atlas node overlays, 17+ negative/positive cases.
+Notice: modelling/unit tests only; official source admission and real Chrome QA are not implied.
+✔ apps/public-strategy-atlas/accounting.test.cjs (45.629936ms)
+PASS: spatial/effective-time indexes, historical as-of queries, wrong region/date/parcel/revision/draft/legal-effect rejection, overlapping source revision conflict and rejected candidate path exclusion
+✔ apps/public-strategy-atlas/applicability.test.cjs (362.376387ms)
+PASS current comparison pins exact content identities and does not perform finance arithmetic
+PASS historical pin resolves retained version after current revision changes
+PASS missing identities and revision pins are rejected without substituting current objects
+PASS tampered current record or history fails snapshot verification before rendering
+PASS legacy stations, content and source catalogue use existing exact identities
+PASS same unknown method or scope is not a compatibility match and null is never zero
+PASS unit, stock/flow, fiscal interval, region and actual/planned roles remain distinct
+PASS protected payloads, unknown classification and forged approved releases are denied
+PASS percent denominators, financial rates and legal roles participate in compatibility
+PASS calendar execution roles use the actual task schema without inventing outcomes
+PASS inert public source text stays data, source state and unknowns are retained
+PASS dataset remains byte-identical after all comparisons
+comparison: 12 groups PASS
+✔ apps/public-strategy-atlas/comparison.test.cjs (2864.218316ms)
+PASS: 60 synthetic content nodes, 59 edges, stable coordinates, bounded truncation (1ms)
+PASS: 200 synthetic content nodes, 199 edges, stable coordinates, bounded truncation (2ms)
+PASS: export/verify roundtrip, external checkpoint and corrupted dataset/receipt rejection
+PASS: 15 decomposable topics, 127 items, six-level trail, child/ancestor tamper propagation, order independence, 8 negative cases, English UI/content
+✔ apps/public-strategy-atlas/content.test.cjs (182.100021ms)
+PASS: draft weekly concerns/review/material gaps and capacity basis, meeting questions/followups, UNKNOWN decisions, immutable preparations, disabled Outlook/account/mail actions, privacy/forged approval rejection, portable verification and Atlas snapshot integration
+✔ apps/public-strategy-atlas/csoi-assistant.test.cjs (399.465634ms)
+PASS: Annual Edition leap/fiscal/ISO dates, bounded bidirectional calendar/work/evidence/report navigation, source/approval cards, recurrence applicability/cycle/due guards, private/forged approval rejection, safe portability and existing Atlas snapshot integration
+✔ apps/public-strategy-atlas/csoi-calendar.test.cjs (377.940096ms)
+PASS: calendar/assistant capsules stay governed in legacy snapshots; claimed statutory verification cannot authorise tasks/recurrence, and new audit events use actual execution time
+✔ apps/public-strategy-atlas/csoi-capsule.test.cjs (535.726836ms)
+PASS: existing-registry clause containment, exact source/page/parent pins, real eight-level outline,6000-level traversal, source/parent withdrawal, missing/foreign/cyclic/PII/authority rejections and historical110/90/40reference rates without actual demand or legal admission
+✔ apps/public-strategy-atlas/csoi-clauses.test.cjs (9460.339694ms)
+PASS: CSOI module boundaries; 90 layer/channel deny checks; rights, nested PII, confidentiality, small-cell, forged release/authority and tampered bundle rejections.
+✔ apps/public-strategy-atlas/csoi-governance.test.cjs (82.975919ms)
+PASS: actual public observation receipts extend original catalogue, preserve histories/rights gates, and bind bounded research summaries to existing Atlas snapshots
+✔ apps/public-strategy-atlas/csoi-intake.test.cjs (9030.70572ms)
+PASS: L0–L5 public/synthetic lineage in existing Atlas snapshots; source withdrawal invalidates downstream; replay; identity/activity separation; units, scope, denominators, duplicates, conflicts, stale rules and authority denials.
+✔ apps/public-strategy-atlas/csoi-layers.test.cjs (820.633759ms)
+PASS: CSOI records use the existing Atlas registry, immutable revisions, legacy base, independent snapshots, stale-write and protected/official rejection
+✔ apps/public-strategy-atlas/csoi-model.test.cjs (532.727817ms)
+PASS: independently pinned source/goal/input path sets, relationship/counterevidence/admission gates, source withdrawal with retained history, corrupt/missing/foreign pins, finance/unit conflicts, bounded discovery and no data mutation/arithmetic/official promotion
+✔ apps/public-strategy-atlas/csoi-paths.test.cjs (13210.031594ms)
+PASS: eight source-backed public PHE/WCOS domains, conditional multi-stage research workflows, exclusions/wrong-region/conflicts, current-law and official-decision unknowns, source anchors and privacy negatives
+✔ apps/public-strategy-atlas/csoi-phe.test.cjs (43.910765ms)
+PASS: exact reviewed OP bytes/anchor bind five planning records, unknown volume units stay unknown, target/funded/actual/money are distinct, source candidates stay pending and false typed values are rejected
+✔ apps/public-strategy-atlas/csoi-planning.test.cjs (7087.556948ms)
+PASS: offline original-byte append preserves catalogue/observation prefixes, rejects mismatched bytes/unpinned directory/private host/PII/rights promotion/excerpts, retains gates and never commits temporary source bodies
+✔ apps/public-strategy-atlas/csoi-receipts.test.cjs (568.059735ms)
+PASS: independently recomputed pinned historical layer receipts reject self-consistent false math; source changes invalidate current use while historical exports remain verifiable
+✔ apps/public-strategy-atlas/csoi-recompute.test.cjs (876.914198ms)
+PASS: public independent source-review work/calendar plans, exact clause/source pins, assumed-hours/unknown-actuals accounting, fiscal/civil navigation, source withdrawal, immutable identity and forbidden Council/action/private/actual-field rejection
+✔ apps/public-strategy-atlas/csoi-review-work.test.cjs (9343.085968ms)
+PASS: CSOI functional route manifest, deep links, bounded public query, hostile path and companion URL guards
+✔ apps/public-strategy-atlas/csoi-router.test.cjs (56.963365ms)
+PASS plan-level read-only fixture contains complete annual/field/report concept chain
+PASS adapter refuses writes, private and protected records, forged release, arbitrary synthetic labels and PII
+PASS public metadata needs trusted review callback and excludes business fields/unsafe URL
+PASS Food/LTW/Backflow conditional cross-search never grants all approvals by business/property name
+PASS LTW template distinguishes stages/classification/concurrence but cannot decide or approve
+PASS backflow schedule requires testable device, date, applicable interval and matching scope
+PASS four judgment classes retain review boundaries and formal decisions are blocked
+PASS summary is synthetic only and never releases a small real aggregate
+csoi-wcos: 8 groups PASS
+✔ apps/public-strategy-atlas/csoi-wcos.test.cjs (44.992885ms)
+PASS service/object/type denominators separate properties, events, issues and actual outcomes
+PASS duplicate denominator input deduplicates objects/events and rejects conflicting values
+PASS unknown eligibility and inspection need are not false zeros or compliance
+PASS completion, issue closure, dates and real protected objects require evidence
+PASS hours preserve six phases and measured/estimated/assumed categories; no dollar conversion
+PASS resource demand needs explicit annual capacity and never creates personnel/spend claims
+PASS three ledgers reuse existing identities and reverse trace stops at unsupported official mapping
+PASS calculation input receipts detect corruption and changed revisions
+PASS inherited water/carbon/land unit and finance engines preserve source gates
+csoi-work: 9 groups PASS
+✔ apps/public-strategy-atlas/csoi-work.test.cjs (255.070501ms)
+PASS: exact legacy receipt hashes, 10000-wide indexed pagination/bounded layout, 5000-level iterative traversal/local+source receipts, flat deep snapshot roundtrip and ancestor mutation/cycle rejection
+✔ apps/public-strategy-atlas/deep-content.test.cjs (3264.195232ms)
+PASS: explainable versioned multi-signal candidates with trace paths/alternatives/falsifiers/counterevidence, wrong-region/draft/period/source-loss rejections, persistent local review and forged official promotion prevention
+✔ apps/public-strategy-atlas/discovery.test.cjs (478.839298ms)
+PASS: additive domain migration, 127-item/base digest preservation, legacy workspace/snapshot compatibility, versioned accounting provenance/reverse links, immutable local reviews, stale/forged/corrupt history rejection
+✔ apps/public-strategy-atlas/domain.test.cjs (561.357262ms)
+PASS: unified synthetic WBS, typed dependency/resource/finance/output routes, forward/reverse bounded BFS, multi-parent identity reuse, dependency cycle detection, separate execution/evidence states and known-link fail-closed
+✔ apps/public-strategy-atlas/execution.test.cjs (309.59757ms)
+PASS: replayed source availability, retained historical access, stage-specific rights/review owners, correction withdrawal/re-retrieval and immutable catalogue identity
+✔ apps/public-strategy-atlas/intake-access.test.cjs (73.388571ms)
+PASS: 15 source requirements, exact catalogue mirror/hash, ordered intake/correction replay, permitted synthetic pipeline, rights/date/URL/private-data gates, corruption/forged stage rejection and honest coverage denominators
+✔ apps/public-strategy-atlas/intake.test.cjs (416.655369ms)
+PASS: unified numeric/unit/source/work search, typed scope filters/pagination, revision diffs and scenario editing with receipt invalidation and invalid finance rejection
+✔ apps/public-strategy-atlas/integration.test.cjs (387.751514ms)
+PASS: three-ledger typed formulas, cost/variance/conversion/allocation, pinned provenance, immutable receipt snapshots, changed-input invalidation, stale historical verification and unit/scope/year/zero/official/double-count rejection
+✔ apps/public-strategy-atlas/ledger.test.cjs (833.843487ms)
+PASS: 10 additional admission rejection cases; snapshot tamper; discovery explanations and falsifier
+PASS: schema, multipath, candidate exclusion, false official promotion, missing target, time/region rejection, unknown context, canonical digest, byte tamper, append/retract, history tamper, duplicate event
+✔ apps/public-strategy-atlas/model.test.cjs (112.68706ms)
+PASS: production route projection, model-backed continuous endpoints, stable partial expansion, distinct corridors/candidate exclusion, 127-item data unchanged, default map/hidden panel/utility entry contracts. Browser acceptance is separate.
+✔ apps/public-strategy-atlas/route-main.test.cjs (50.200194ms)
+PASS route-preview: 15 existing nodes / 16 edges, station selection, candidate toggle, line filter, zoom and inspector closing.
+NOTE this is a mock-DOM smoke test, not real browser visual, keyboard or WCAG acceptance.
+✔ apps/public-strategy-atlas/route-map.test.cjs (76.336992ms)
+PASS: checkpoint-bound three-way preview, explicit field choices, archived imported history, appended RESOLVE events, old workspace compatibility, stale preview and corruption/promotion rejection
+✔ apps/public-strategy-atlas/workspace-merge.test.cjs (193.92274ms)
+PASS: edit/diff, immutable source/history, supersede/revert/retract/replay, stale editor conflict, monotonic history, import roundtrip/checkpoint/tamper/signature/promotion rejection, source admission pending gates and excerpt hash
+✔ apps/public-strategy-atlas/workspace.test.cjs (177.545968ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 21082.007037
+ℹ start of coverage report
+ℹ ------------------------------------------------------------------------
+ℹ file                    | line % | branch % | funcs % | uncovered lines
+ℹ ------------------------------------------------------------------------
+ℹ apps                    |        |          |         |
+ℹ  public-strategy-atlas  |        |          |         |
+ℹ   atlas-accounting.js   | 100.00 |    83.10 |   95.45 |
+ℹ   atlas-data.js         | 100.00 |    95.00 |  100.00 |
+ℹ   atlas-domain.js       | 100.00 |    85.54 |   97.18 |
+ℹ   atlas-execution.js    |  99.60 |    91.50 |   97.80 | 106
+ℹ   atlas-intake.js       | 100.00 |    84.53 |  100.00 |
+ℹ   atlas-model.js        |  99.05 |    84.42 |  100.00 | 11 35
+ℹ   atlas-route-layout.js | 100.00 |    84.21 |  100.00 |
+ℹ   atlas-workspace.js    |  90.79 |    82.49 |   92.59 | 137-150
+ℹ   csoi-assistant.js     | 100.00 |    91.95 |   97.67 |
+ℹ   csoi-calendar.js      | 100.00 |    87.29 |  100.00 |
+ℹ   csoi-clauses.js       | 100.00 |    73.25 |  100.00 |
+ℹ   csoi-governance.js    | 100.00 |    76.03 |  100.00 |
+ℹ   csoi-intake.js        |  91.43 |    72.31 |   93.75 | 18-22 68
+ℹ   csoi-layers.js        | 100.00 |    74.12 |   90.57 |
+ℹ   csoi-pages.js         |  11.76 |    47.50 |   25.00 | 7-23 40-202
+ℹ   csoi-paths.js         | 100.00 |    78.75 |   97.14 |
+ℹ   csoi-phe.js           |  97.44 |    91.89 |  100.00 | 28
+ℹ   csoi-review-work.js   | 100.00 |    86.84 |  100.00 |
+ℹ   csoi-router.js        |  89.23 |    88.18 |   88.24 | 57-63
+ℹ   csoi-wcos.js          | 100.00 |    87.62 |  100.00 |
+ℹ   csoi-work.js          | 100.00 |    89.86 |   98.11 |
+ℹ ------------------------------------------------------------------------
+ℹ all files               |  91.38 |    84.31 |   95.56 |
+ℹ ------------------------------------------------------------------------
+ℹ end of coverage report

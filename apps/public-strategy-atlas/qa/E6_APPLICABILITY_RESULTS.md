@@ -1,0 +1,7 @@
+# V1.6 E6 — spatial, effective-time and legal-role checks
+
+PASS_TESTED_HERE: 12 native suites and actual desktop/mobile system browser. Applicability tests cover exact region, spatial grain, valid calendar dates, fiscal interval interpretation, revision, legal role, draft, superseded and expired controls; historical as-of lookup and overlapping-source conflict detection; and exclusion of rejected candidates from a context-filtered path. Actual screenshots qa/system/applicability-*.png show compatible synthetic scope separately from rejected wrong-region/draft/expired cases. Parcel-grain request is rejected.
+
+AtlasExecution now exposes timeRange/applicability/scopeIndex/asOf on the same version registry. Historical source revisions coexist; conflicting overlapping source versions remain conflicts. Matching metadata yields SYNTHETIC_ONLY or REQUIRES_REVIEW, never legal approval. Missing effective intervals/geography/grain/legal role stay UNKNOWN. LSPS strategy, LEP statutory role and DCP guidance are not interchangeable.
+
+Every dossier has Where & when. The area dossier includes explicit synthetic falsification fixtures; these are not actual Council controls, geographic polygons or parcel determinations. Actual LEP/DCP versions, jurisdiction maps and independent legal review remain BLOCKED/UNKNOWN. E6 PARTIAL; no real spatial applicability claim or full GIS implementation. E7–E10 remain.

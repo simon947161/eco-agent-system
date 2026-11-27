@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-02T08:35:01.072080+00:00",
+  "status": "PASS",
+  "syncSha256": "e97917f04272b60009eec1aba85436816e7e802f4fefbd92c1cd1c8820687266",
+  "asyncSha256": "e212264a9eb62271c0a8f0423ae13ba9c90a90dec70c91504ea18a1a63266ed7",
+  "checks": {
+    "ready": true,
+    "settled": true,
+    "result": true,
+    "research": true,
+    "tool": true,
+    "fullViewportLoopExceptTransportBinding": true
+  },
+  "scope": "AST identity after removing awaits and the single response-adapter binding. No assertions, timeouts, input cases or operation order removed."
+}

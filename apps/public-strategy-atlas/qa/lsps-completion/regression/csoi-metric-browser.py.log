@@ -1,0 +1,12 @@
+SNAPSHOT_TOO_LARGE
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/csoi-metric-browser.py", line 39, in <module>
+    snapshot=tmp/f'current-{width}.json';export(page,snapshot)
+                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/eco-agent-system/apps/public-strategy-atlas/qa/csoi-metric-browser.py", line 24, in export
+    info.value.save_as(str(path));subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(path)],check=True)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['node', '/workspace/eco-agent-system/apps/public-strategy-atlas/verify-snapshot.cjs', '/tmp/csoi-metric-browser-bdmdgs4q/current-1440.json']' returned non-zero exit status 1.

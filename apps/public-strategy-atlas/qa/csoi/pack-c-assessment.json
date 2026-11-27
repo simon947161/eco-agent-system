@@ -1,0 +1,260 @@
+{
+  "pack": "C",
+  "software_status": "PARTIAL",
+  "corpus_status": "PARTIAL",
+  "admission_status": "PENDING",
+  "summary": "Added the functioning Data & evidence workspace over existing Atlas entities: L0 identities, L1 separate property/activity/device/event IDs, L2 rule/inference/discretion, L3 pinned reproducible calculations, L4 defined coverage and L5 draft sharing review. Nine tasks verified; formal Council decision representation is PARTIAL because authority is unavailable. Final26 native files PASS. Desktop/mobile builds a 6/10 synthetic work-coverage chain, withdraws its source, invalidates descendants, and independently verifies historical exports. Re-signing false calculation arithmetic is rejected by formula replay. No security class is downgraded by an analytical layer.",
+  "next_executable": "COI-031 \u2014 safe read-only WCOS/LTW/Backflow contracts and conditional applicability",
+  "tasks": [
+    {
+      "id": "COI-021",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    },
+    {
+      "id": "COI-022",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    },
+    {
+      "id": "COI-023",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": "Formal Council decision records require separately authorised authority and remain unsupported on public channels.",
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    },
+    {
+      "id": "COI-024",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    },
+    {
+      "id": "COI-025",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    },
+    {
+      "id": "COI-026",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    },
+    {
+      "id": "COI-027",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    },
+    {
+      "id": "COI-028",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    },
+    {
+      "id": "COI-029",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    },
+    {
+      "id": "COI-030",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-governance.js",
+        "csoi-layers.js",
+        "csoi-layers.test.cjs",
+        "csoi-recompute.test.cjs",
+        "atlas-domain.js",
+        "docs/CSOI_CONTRACTS.md"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-c-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-layer-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-c.json",
+        "qa/csoi/browser-c.json",
+        "qa/csoi/layers-current-1440.png",
+        "qa/csoi/layers-withdrawn-390.png"
+      ],
+      "source_admission_status": "PENDING_NOT_GRANTED",
+      "blocker": null,
+      "next_action": "Preserve public/synthetic analytical layers and continue the safe abstract WCOS bridge; formal authority remains separate."
+    }
+  ]
+}

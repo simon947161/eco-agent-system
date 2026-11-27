@@ -1,0 +1,53 @@
+/* Source-led accounting and rejection tests. No official admission is performed. */
+'use strict';
+const assert=require('node:assert/strict');
+const a=require('./atlas-accounting.js');
+const d=require('./atlas-data.js');
+function reject(fn,reason){assert.throws(fn,e=>e instanceof Error&&e.message===reason,reason)}
+assert.equal(a.cases.length,3);
+const carbon=a.caseForNode('csp6'),water=a.caseForNode('water'),land=a.caseForNode('area');
+assert.equal(carbon.metric.value,29.9);
+assert.equal(carbon.metric.unit,'t_CO2e/person');
+assert.equal(carbon.metric.period.from,'2021-22');
+assert.equal(carbon.metric.status,'PUBLIC_TEXT_OBSERVED');
+assert.equal(carbon.mappingStatus,'THEMATIC_CONTEXT_ONLY_NOT_OFFICIAL_MAPPING');
+assert.equal(carbon.metric.actual,'UNKNOWN');
+assert.equal(carbon.metric.source.revisionConfirmed,false);
+assert.equal(carbon.metric.source.humanReviewed,false);
+assert.equal(d.assertions.filter(x=>x.status==='ADMITTED').length,0);
+for(const c of a.cases)assert(a.assertMeasurement(c.metric));
+assert.equal(a.derivedCase('water').value,2000);
+assert.equal(a.derivedCase('water').unit,'AUD/ML');
+assert.equal(a.derivedCase('csp6'),null);
+assert.equal(a.unitConvert(50,'ha','km2'),0.5);
+assert.equal(a.unitConvert(12,'ML','kL'),12000);
+assert.equal(a.caseForNode('area').metric.unit,'ha');
+const compare={...carbon.metric};
+assert(a.assertComparable(carbon.metric,compare));
+reject(()=>a.assertComparable(carbon.metric,{...compare,unit:'AUD/t_CO2e'}),'UNIT_MISMATCH');
+reject(()=>a.assertComparable(carbon.metric,{...compare,area:'SYNTHETIC_PLACE'}),'GEOGRAPHY_MISMATCH');
+reject(()=>a.assertComparable(carbon.metric,{...compare,boundary:'COUNCIL_OPERATIONS'}),'BOUNDARY_MISMATCH');
+reject(()=>a.assertComparable(carbon.metric,{...compare,period:{from:'2022-23',to:'2022-23'}}),'PERIOD_MISMATCH');
+reject(()=>a.assertComparable(carbon.metric,{...compare,method:'different inventory'}),'METHOD_MISMATCH');
+reject(()=>a.assertComparable(carbon.metric,{...compare,denominator:'UNKNOWN'}),'DENOMINATOR_UNKNOWN');
+reject(()=>a.totalFromPerCapita(carbon.metric,{value:23000,unit:'person',status:'ADMITTED',area:carbon.metric.area,boundary:carbon.metric.boundary,period:carbon.metric.period,methodologyCompatible:true}),'UNADMITTED_INPUTS');
+reject(()=>a.totalFromPerCapita(carbon.metric,null),'POPULATION_DENOMINATOR_UNKNOWN');
+reject(()=>a.unitConvert(100,'ML','ML/day'),'UNIT_CONVERSION_NOT_DEFINED');
+reject(()=>a.unitConvert(15,'ha','AUD'),'UNIT_CONVERSION_NOT_DEFINED');
+reject(()=>a.costPerOutput({...water.funding[0],type:'APPROVED_BUDGET'},water.resources[0]),'BUDGET_IS_NOT_EXPENDITURE');
+reject(()=>a.costPerOutput(water.funding[0],{...water.resources[0],unit:'ML/day',period:'FY2027-28'}),'PERIOD_MISMATCH');
+reject(()=>a.costPerOutput(water.funding[0],{...water.resources[0],area:'OTHER_AREA'}),'GEOGRAPHY_MISMATCH');
+reject(()=>a.costPerOutput(water.funding[0],{...water.resources[0],boundary:'OTHER_SERVICE'}),'BOUNDARY_MISMATCH');
+reject(()=>a.validateAllocations([{...water.funding[0],allocatedShare:1},{...water.funding[0],allocatedShare:1}]),'DOUBLE_COUNT_OR_UNALLOCATED');
+reject(()=>a.validateAllocations([{...water.funding[0],allocatedShare:0.7}]),'DOUBLE_COUNT_OR_UNALLOCATED');
+assert.equal(a.validateAllocations([{...water.funding[0],allocatedShare:0.4},{...water.funding[0],allocatedShare:0.6}]),true);
+for(const n of [carbon,water,land]){
+ assert(d.nodes.some(x=>x.id===n.entryNodeId),'must reuse real graph node');
+ assert(a.panelHTML(n.entryNodeId).includes('Work · quantity · accounting'));
+}
+assert(!a.panelHTML('op'),'unmapped node must not fabricate a work chain');
+assert.match(a.panelHTML('csp6'),/ADMITTED|PUBLIC_TEXT_OBSERVED/);
+assert.match(a.panelHTML('area'),/UNKNOWN/);
+assert.match(a.panelHTML('water'),/SYNTHETIC/);
+console.log('PASS: source-bounded 29.9 t CO2e/person, work/accounting type validation, 3 Atlas node overlays, 17+ negative/positive cases.');
+console.log('Notice: modelling/unit tests only; official source admission and real Chrome QA are not implied.');

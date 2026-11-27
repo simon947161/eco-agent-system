@@ -1,0 +1,415 @@
+{
+  "format": "OP_INDEPENDENT_INITIAL_SOURCE_FINDINGS_V1",
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "status": "INDEPENDENT_INITIAL_SOURCE_READING_COMPLETE_NOT_AUTHOR_DEFECTS",
+  "method": "Read all142 original-page text extracts independently before author comparison; selected graphics and low-text/photo pages inspected from original pixels. Source findings are risks/ambiguities to preserve, not allegations of author errors. Author TSV first inspected only after this original reading; later comparisons recorded separately.",
+  "findings": [
+    {
+      "id": "OP-SRC-001",
+      "pdfPages": [
+        3
+      ],
+      "type": "VERSION_STATUS_TENSION",
+      "sourceMeaning": "Version1.3 is dated2026-06-30 adopted by Council225/26, but same page retains working-draft/future-adoption text.",
+      "requiredTreatment": "Retain both statements and pinned artifact identity; do not infer current controlled version or erase draft disclaimer."
+    },
+    {
+      "id": "OP-SRC-002",
+      "pdfPages": [
+        8,
+        9,
+        10
+      ],
+      "type": "HISTORICAL_FRAMEWORK_AND_VISIBLE_GRAPHICS",
+      "sourceMeaning": "OP aligns with DP2025–2029 andCSP2035; P8 quarterly progress commitment differs in scope from P9 graphic monthly/annual wording. P10 visible infrastructure chief isTonyLickiss, while hidden extraction includesJohnGargett.",
+      "requiredTreatment": "Read visible pixels and preserve2026-03-23 orgchart date; current office holders unknown. Keep report-scope distinctions; source links are not completed-work evidence."
+    },
+    {
+      "id": "OP-SRC-003",
+      "pdfPages": [
+        11
+      ],
+      "type": "EXAMPLE_EXCLUSION",
+      "sourceMeaning": "Reading-guide page repeats an OpenSpace service table as illustration; services without new change actions can continue despite not appearing inOP.",
+      "requiredTreatment": "Exclude guide examples from formal action/KPI/project denominators. Absence fromOP does not establish service cessation."
+    },
+    {
+      "id": "OP-SRC-004",
+      "pdfPages": [
+        13
+      ],
+      "type": "COMPARATOR_CONFLICT",
+      "sourceMeaning": "Executive satisfaction KPI has=>80% whileTarget column has>80%.",
+      "requiredTreatment": "Retain both printed column values and flag comparator conflict; do not choose/invent equality/minimum policy."
+    },
+    {
+      "id": "OP-SRC-005",
+      "pdfPages": [
+        14,
+        17,
+        27,
+        28,
+        29,
+        30
+      ],
+      "type": "MULTIROW_AND_COLUMN_DENOMINATORS",
+      "sourceMeaning": "A single action can span multiple distinctKPI rows; optimal volume,funded volume,target,reporting cadence andKPI measurement are different columns.",
+      "requiredTreatment": "Count service/action parents andKPI subrows separately; preserve inherited cells, blanks,hyphens,No measure and# as source-specific unknowns,notzero."
+    },
+    {
+      "id": "OP-SRC-006",
+      "pdfPages": [
+        17,
+        18,
+        19,
+        21,
+        25,
+        26,
+        28
+      ],
+      "type": "SOURCE_ARITHMETIC_NOT_REPAIRED",
+      "sourceMeaning": "P17 metric percent label with1600target;P21volume25/95%/24;P25standard1130/80%/920andfull170/80%/130;P26subdivision40/80%/30. P18fortnightly24andP19monthly12carryannual reporting.",
+      "requiredTreatment": "Do not recalculate and overwrite Target; retain unit/rounding/denominator ambiguity. Work frequency differs from reporting frequency."
+    },
+    {
+      "id": "OP-SRC-007",
+      "pdfPages": [
+        20,
+        22,
+        25,
+        26,
+        28,
+        29
+      ],
+      "type": "TRIGGER_AND_CONDITION_PRESERVATION",
+      "sourceMeaning": "State weedincursion48hours and regional7days differ; cert turnaround starts atpayment,completeapplication,request,inspection ornotice depending row; workingdays versusdays preserved. Poolwater sampling onlywhenoperational.",
+      "requiredTreatment": "Keep eachtrigger,timewindow,andbusiness/working/calendar wording. Do not replace planned targets with actualperformance or guaranteed deadlines."
+    },
+    {
+      "id": "OP-SRC-008",
+      "pdfPages": [
+        29,
+        30
+      ],
+      "type": "RISK_BRANCHES_AND_SOURCE_CONFLICT",
+      "sourceMeaning": "Pool/mosquito complaints have lowrisk notification versus highrisk investigation. Illegaldumping/asbestos and chanceofidentifyingoffender condition is awkward. Onsitesewage complaintsP29says80%within14daysofpayment, P30says90%allwithin14days.",
+      "requiredTreatment": "Retain riskbranches,ambiguous conjunction anddistinctsourceobservations; do not unify repeatedlabels into one stronger currentobligation."
+    },
+    {
+      "id": "OP-SRC-009",
+      "pdfPages": [
+        6,
+        7,
+        20
+      ],
+      "type": "PLAN_BUDGET_NOT_ACTUAL",
+      "sourceMeaning": "Mayor/CEO narrative speaks of2026/27plannedinvestment, not actualcompletion; project annualbudget,wholeprojectcost,carryover andserviceoperatingbudget require distinct meanings.",
+      "requiredTreatment": "Preserve printed$symbol without unmarkedcurrency inference; funding/schedule does not prove moneyspent or projectcomplete."
+    },
+    {
+      "id": "OP-SRC-010",
+      "pdfPages": [
+        21,
+        22,
+        25,
+        27,
+        28,
+        29,
+        30
+      ],
+      "type": "REGULATORY_COLUMN_NOT_LEGAL_ADMISSION",
+      "sourceMeaning": "Regulatory column prints legal instrument names but sometimes differs from action wording e.gsection68LocalGovernment vsEnvironmentalPlanningAssessmentcolumn.",
+      "requiredTreatment": "Preserve sourcecolumn; do notcorrect statutory mapping or claim contemporary applicability without separate legal review."
+    },
+    {
+      "id": "OP-SRC-011",
+      "pdfPages": [
+        31,
+        32,
+        38,
+        39,
+        46,
+        47,
+        48
+      ],
+      "type": "SEASONAL_AND_RESPONSE_SCOPE",
+      "sourceMeaning": "Cemetery andparkmowing vary bywinter,season,sitepriority,activecompetition andevents. Poolavailability denominator scheduledopening;Jindabyne publicholidayexception. Repair/tree targets ofteninspection+triage,notcompletion.",
+      "requiredTreatment": "Preserveeachcondition;P47weeklyKPI versus3weeklyTarget is sourceconflict,notnormalised schedule."
+    },
+    {
+      "id": "OP-SRC-012",
+      "pdfPages": [
+        35,
+        36,
+        37,
+        40,
+        41,
+        42,
+        44
+      ],
+      "type": "UNIT_AND_FREQUENCY_AMBIGUITIES",
+      "sourceMeaning": "Calls20ringsnotseconds;CTR describedclick-to-open;>40%openrateKPIvs40%Target. CHSPBi-monthlyambiguous;HRT30000 monetaryvaluenottrips;Library >4,5000 volumeversus>4,500KPI/Target.",
+      "requiredTreatment": "Keeporiginalunits/operatorsandunknowns;CEOapprovalrequiredforemergencycommunications;fundingagreementtermsnotimpliedactualdelivery."
+    },
+    {
+      "id": "OP-SRC-013",
+      "pdfPages": [
+        39,
+        48,
+        49,
+        55,
+        57,
+        59,
+        61
+      ],
+      "type": "PERIOD_TOTALS_AND_TARGETS",
+      "sourceMeaning": "Poolsannual-budgetcolumn saysover2years;trailannualTBDversustotal11.5m/1m;wastedecrease5%lacksbaseline. Unrestrictedcashminimum500kvsseparategrowthtoward5m. PowerBIDec2027outsideFY.",
+      "requiredTreatment": "Retaineachprintedperiod/amount;do notcollapseprojecttotalintoFYbudget,changeDec2027,orclaimmettargets. Contract80%denominatornotgiven;waterbilling3times/yearnotquarterly."
+    },
+    {
+      "id": "OP-SRC-014",
+      "pdfPages": [
+        107,
+        108,
+        109,
+        110
+      ],
+      "type": "CAPITAL_ROWS_AND_FUNDS",
+      "sourceMeaning": "41projectrows:9+13+14+5. Carryoverflag2025/26;tableamountheading2026/27. P109pooltotalblankversus3fundzeros;Water-namedprojectsunderWastewaterassetgroupareprinted.",
+      "requiredTreatment": "Do notfillblanktotalwithzero,renameassetfund,mergeSCADA/projectsbyname,orassumeapprovedcarryovers. CoomaCemetery20kversusP33stage3 25kpotentialcross-tableinconsistencyrequiresidentityevidence."
+    },
+    {
+      "id": "OP-SRC-015",
+      "pdfPages": [
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        120,
+        121
+      ],
+      "type": "FINANCIAL_DIMENSIONS",
+      "sourceMeaning": "19servicebudgettablesin$000;income/expenditure/netdistinct;smallroundingdisagreementsappear. Fleetmaterials/contractsincludingrecharges(1331)negativeexpense. Fundincomeresultswith/withoutcapitalgrantsdifferent.",
+      "requiredTreatment": "Preserveunit/sign/tableprintedvalues;do notsumsubtotalswithitemsorparentportfolioswithoverlap;do notturnnetservicecostorprojectedcashintoactualresults."
+    },
+    {
+      "id": "OP-SRC-016",
+      "pdfPages": [
+        118,
+        119
+      ],
+      "type": "VISUAL_FINANCIAL_CHARTS",
+      "sourceMeaning": "4chartpanelsreadfromoriginalpixels. IncomeOtherRevenues1.13MandOtherIncome1.32Mseparate;fundpiesrounded. ExpenditureOther26.94MaggregatesSewer14.46MandWaste12.48M.",
+      "requiredTreatment": "Do notinventfifthfundordoublecountOtherwithitscomponents. PreserveMscale/percentageandproposedbudgetperiod;unlabelledchartlinepercentagesnotexactnewdata."
+    },
+    {
+      "id": "OP-SRC-017",
+      "pdfPages": [
+        121
+      ],
+      "type": "SOURCE_ARITHMETIC_CONFLICT",
+      "sourceMeaning": "Visiblefundnetincrease585/616/616/616contradictsoperatingplusinvestingandopening-to-closingfundcash;consolidated(424)isconsistent.",
+      "requiredTreatment": "Keepprintedvaluesandexplicitsourceconflict;derivedreconciliationmayonlybeidentifiedasindependentarithmetic,neveroverwriteorcallsourcevalidatedfinancialmodel."
+    },
+    {
+      "id": "OP-SRC-018",
+      "pdfPages": [
+        127,
+        129,
+        130,
+        131
+      ],
+      "type": "REVENUE_VERSION_AND_RATE_SCOPE",
+      "sourceMeaning": "Appendixadoptedversion1.2separatefromOP1.3,retainsdrafttext. Fuel surcharge currentlynotapplied;ratepeg4.2%includedwithinSRV,notadditional. 2025landvaluationusedFY26/27and27/28.",
+      "requiredTreatment": "Keepappendixidentity,conditionalactivation,compoundmulti-yearSRVnotadditiveannual,andmaximum/estimatedyieldscope. Miningyield0isnotzerorate;currentclassificationunknown."
+    },
+    {
+      "id": "OP-SRC-019",
+      "pdfPages": [
+        132
+      ],
+      "type": "RATING_MAP_LIMITS",
+      "sourceMeaning": "FourvisiblemapscaptionBusiness,ElectricityGeneration,Farmland,Residential;redareaswithinpurpleoutlinedLGA. NoMiningmap.",
+      "requiredTreatment": "Recordvisualclassificationandcategorycontext,notGISgeometry,parcelidentificationorcurrentrateadmission."
+    },
+    {
+      "id": "OP-SRC-020",
+      "pdfPages": [
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "type": "CHARGE_SCOPE_AND_CONFLICT",
+      "sourceMeaning": "DomesticFOGOtableCooma-MonaroRegionvsclauseCoomaTownshiponly;commercialFOGOtableweeklyvsclausefortnightly. Binsizes,serviceavailability,multiplepremises,opt-in,approvedapplicationsandformerSnowyRiverexceptionvary.",
+      "requiredTreatment": "Keepbothconflictsandexactscope;blankpriorfeeisnotzero. Annualassessment/quarterlypaymentnotcollectionfrequency. Resident-requestbinchangefeeexcludesCouncil-initiatedchange."
+    },
+    {
+      "id": "OP-SRC-021",
+      "pdfPages": [
+        138,
+        139,
+        140,
+        141
+      ],
+      "type": "EXCLUSIONS_AND_AUTHORITY_CONDITIONS",
+      "sourceMeaning": "Stormwater20onlyoccupiedrateablelandwithserviceinformerBombala/Delegate. OSSM35excludesinitialinstall/transfer/reinspection/consulting/notices. Pensioner250maximumcombinedordinaryrates+domesticwaste,87.5water/sewerseparate;sole/principalresidenceandeligibility.",
+      "requiredTreatment": "Preserveexclusionsandmaximumcaps;restrictedfundborrowingneedspriorMinisterapproval;CEOvariationlimitedtonon-legislatedfees/request. SeparateFeesScheduleisreferenced,notcontainedhereornewlyadmitted."
+    },
+    {
+      "id": "OP-SRC-022",
+      "pdfPages": [
+        122,
+        123,
+        129,
+        134,
+        137,
+        141
+      ],
+      "type": "HISTORICAL_TERMS_NOT_CURRENT_LAW",
+      "sourceMeaning": "GlossaryEPAdefinitionEnvironmentalPlanningAssessmentdiffersfromotherEPAagencycontexts;P134printsLocalGovernmentAct1933despite1993elsewhere. Policycitesexternalinstrumentsandreferencelinks.",
+      "requiredTreatment": "Preservecontextualambiguousacronymsandsourceyearanomalies;noexternallegalcorrection,privatepolicyfetch,currentfees/adviceorblanketregulatoryadmission."
+    },
+    {
+      "id": "OP-SRC-023",
+      "pdfPages": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "type": "DELIVERY_ROLE_AND_RESOURCE_CONDITIONS",
+      "sourceMeaning": "Corporate project delivery role is distinct from owning every marked project. Road grading is annual/two-year/three-year or as required; private/bridge works depend on priority/resources; >=150 vehicles/day identifies roads for seeking funds, not funded sealing.",
+      "requiredTreatment": "Preserve conjunctions, conditional resources, named delivery roles and grant-application versus secured-funding states."
+    },
+    {
+      "id": "OP-SRC-024",
+      "pdfPages": [
+        70,
+        71,
+        72
+      ],
+      "type": "PROPERTY_SCOPE_AND_UNFINISHED_DISPOSAL",
+      "sourceMeaning": "Health-centre hire75% and leased-property inspection25% have different denominators. Crown reserve plans concern Council-managed reserves.37Commissioner source says sell or lease, not completed disposal.",
+      "requiredTreatment": "Do not infer occupancy counts, all Crown ownership or completed sale."
+    },
+    {
+      "id": "OP-SRC-025",
+      "pdfPages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "type": "WATER_DENOMINATORS_ROLE_AND_REVIEW_STAGE",
+      "sourceMeaning": "Per100km/per1000connections metrics differ from printed annual-count targets; <4h is average response. SAP work often provides advice to RGDC. LakeWallace reviews2018fishingdecision; Nimmitabel quality plan considers recreation.",
+      "requiredTreatment": "Keep ratios, count targets and role qualifiers distinct; no reconstructed exact network denominator, legal permission or construction claim. Existing11water records remain separately preserved."
+    },
+    {
+      "id": "OP-SRC-026",
+      "pdfPages": [
+        80,
+        81
+      ],
+      "type": "FLEET_RATIO_AND_FUNDING",
+      "sourceMeaning": "Scheduled/unscheduled maintenance benchmark50:50 differs from Target70:30. Hybrid purchases depend on funding;75% replacement target has within10%IPWEA benchmark qualifier.",
+      "requiredTreatment": "Do not call funded target observed performance; preserve funding and threshold conditions."
+    },
+    {
+      "id": "OP-SRC-027",
+      "pdfPages": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "type": "ICT_TARGETS_AND_SOURCE_ROW_TENSION",
+      "sourceMeaning": "ICT optimal and funded volume percentages are plan columns, not actual outcomes; respondent satisfaction thresholds differ from response rate. GIS30mins is response, not resolution. Source project titles/descriptions aroundP87–88 appear shifted.",
+      "requiredTreatment": "Keep original row title+description pairing and flag tension; do not repair rows by assumption. Critical-services downtime scope and detected+mitigated cyber conjunction remain."
+    },
+    {
+      "id": "OP-SRC-028",
+      "pdfPages": [
+        89,
+        90,
+        91,
+        92,
+        93
+      ],
+      "type": "PROCESS_DEPENDENCIES_AND_REPORT_FREQUENCY",
+      "sourceMeaning": "Asset capitalization requires project-manager confirmation and Finance notice. Maturity support is onrequest. AssetStrategyAction15 repeats in distinct source rows. Quarterly organisational reports coexist with annual plan/report duties.",
+      "requiredTreatment": "Do not infer completed capitalization, one-to-one action mapping, or delivered reports from plan targets."
+    },
+    {
+      "id": "OP-SRC-029",
+      "pdfPages": [
+        94,
+        95,
+        96
+      ],
+      "type": "LSPS_DOCUMENT_REFERENCE_NOT_ACTION_MAPPING",
+      "sourceMeaning": "LSPS is named as strategic context and a2020version review to commence. Printed5.2/7.3/11.2 codes sit in CSPLink column. ConsolidatedLEP is draftproposal; watersecurity studies nameCooma/Bombala.",
+      "requiredTreatment": "No inferred LSPS action IDs, new legal heritage listing, adopted replacementLSPS, regional all-town waterstudy or strategy-titleperiod used as annual delivery period."
+    },
+    {
+      "id": "OP-SRC-030",
+      "pdfPages": [
+        98,
+        99,
+        100,
+        101
+      ],
+      "type": "PORTFOLIO_FTE_AND_REPEATED_OCCURRENCES",
+      "sourceMeaning": "People/Organisation13FTE is portfolio-level; recruitment/induction80%within1month appears in separate service occurrences. Succession action scopes development.",
+      "requiredTreatment": "Do not allocate13FTE to each service, collapse source occurrences or claim implementation of scoped plan."
+    },
+    {
+      "id": "OP-SRC-031",
+      "pdfPages": [
+        102,
+        103
+      ],
+      "type": "INCIDENT_TRIGGER_AND_SOURCE_AGENCY_NAME",
+      "sourceMeaning": "LTI has no hours denominator. Source usesStateWork24h andStateCover48h uponnotification. Several WHS actions dueOct2026 remain plan targets, with commence distinct from complete.",
+      "requiredTreatment": "Preserve original agency spelling as source anomaly and notification trigger; no current legal validation, inferred injury rate or date-based completion."
+    },
+    {
+      "id": "OP-SRC-032",
+      "pdfPages": [
+        104,
+        105
+      ],
+      "type": "QSP_BUDGET_ROLE_AND_STAGE",
+      "sourceMeaning": "QSP3FTE budget is held by other services undertakingQSP projects. Technology action has4 leaves with deliver/commence/automate stages. Waste deepdive65k is ResourceWaste externalcontract.",
+      "requiredTreatment": "Do not zero or double-count budget, attribute all delivery directly toQSP, or flatten commence into completed."
+    },
+    {
+      "id": "OP-SRC-033",
+      "pdfPages": [
+        8
+      ],
+      "type": "IPR_DIAGRAM_CONTEXT_ONLY",
+      "sourceMeaning": "Diagram explicitly lists LocalStrategicPlanningStatement among example other Council plans linked through theIP&R structure. The arrows give planning relationships, not row-level spatial/action mappings.",
+      "requiredTreatment": "Preserve diagram scope and distinguish document-context relations from official direct strategy-action links."
+    },
+    {
+      "id": "OP-SRC-034",
+      "pdfPages": [
+        133
+      ],
+      "type": "CHARGE_TABLE_YEAR_COLUMNS_AND_BLANKS",
+      "sourceMeaning": "Fees table column headings are2027 and2026, not measurement dates. Several prior-year cells are blank while other prices are shown. Commercial collection availability is limited to kerbside-service areas.",
+      "requiredTreatment": "Preserve exact source column year labels and blanks; do not fill missing historical prices, infer percent increases or extend service availability."
+    }
+  ]
+}

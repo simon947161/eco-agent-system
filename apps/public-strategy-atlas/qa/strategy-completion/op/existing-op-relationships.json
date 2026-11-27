@@ -1,0 +1,176 @@
+{
+  "at": "2026-11-01T23:25:10.135238+00:00",
+  "sourceId": "csoi:smrc-op-2026:20261030",
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "sourceRows": [
+    {
+      "id": "food-first-volume-row",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 27,
+      "normalizedPageDigest": "sha256:fbaa91372d7b77d43af1e3e7a014a061b64166ff11aa9f7da9e58aa004a91af9",
+      "rowBounds": [
+        36.5,
+        367.02,
+        805.39,
+        392.36
+      ],
+      "publishedValues": {
+        "optimal": "168",
+        "funded": "84",
+        "target": "84",
+        "reporting": "Biannual"
+      },
+      "sourceCspCodes": [
+        "6.1"
+      ],
+      "sourceCellDigests": {
+        "action": "sha256:460f0afbb56e9e135075b74f23997777388f585a38a3b7fb8d71eb3779842577",
+        "optimal": "sha256:80c3cd40fa35f9088b8741bd8be6153de05f661cfeeb4625ffbf5f4a6c3c02c4",
+        "funded": "sha256:44c8031cb036a7350d8b9b8603af662a4b9cdbd2f96e8d5de5af435c9c35da69",
+        "serviceStandard": "sha256:463e769d3d7aebe423e3e67b85ea2e9a5c661e8ada47ba65d824edec33e5fdc4",
+        "regulatory": "sha256:55f50ef21f04971342d73b30e3258df04fdfcf530c13f4485bbbe6c80511da4d",
+        "target": "sha256:44c8031cb036a7350d8b9b8603af662a4b9cdbd2f96e8d5de5af435c9c35da69",
+        "reporting": "sha256:e3ac283f669be3f29d2618e3db4b1c946ba5548613bbaf24e92471c7420c7266",
+        "cspReference": "sha256:5798758bbc833df09bceba3fb38dfa95dbe82d1a51b94ea300392654fc2b2665",
+        "otherPlans": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654"
+      },
+      "status": "PASS_FRESH_ORIGINAL_COLUMN_RECHECK",
+      "actualOutput": "UNKNOWN",
+      "formalAdmission": "PENDING"
+    },
+    {
+      "id": "ltw-complaints-row",
+      "sourceId": "csoi:smrc-op-2026:20261030",
+      "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+      "pdfPage": 30,
+      "normalizedPageDigest": "sha256:5995d60c03e06356b61be0374d392eec3c9962a24fafde1c8e237e66736222a0",
+      "rowBounds": [
+        36.5,
+        111.5,
+        806.24,
+        146.45
+      ],
+      "publishedValues": {
+        "optimal": "25",
+        "funded": "25",
+        "target": "90%",
+        "reporting": "Quarterly"
+      },
+      "sourceCspCodes": [
+        "6.1",
+        "8.2"
+      ],
+      "sourceCellDigests": {
+        "action": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "optimal": "sha256:b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+        "funded": "sha256:b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+        "serviceStandard": "sha256:eaceb151d68ea98055053dc62850cc75e2ea5608e0492db187ef0a8f052f602d",
+        "regulatory": "sha256:74ac92bc348f22f0b37f12fbf475b95143d49a8d67ca0c63ec4fa0b4d8a822fa",
+        "target": "sha256:883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4",
+        "reporting": "sha256:d89999a0a808113968d0eb17a7ca991517756bf51e71f1627fffc2c3660a5a79",
+        "cspReference": "sha256:eafba2fd6655ca4afb681ddcabf77dca2e8e199007b967c72375a640f7ea3260",
+        "otherPlans": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654"
+      },
+      "status": "PASS_FRESH_ORIGINAL_COLUMN_RECHECK",
+      "actualOutput": "UNKNOWN",
+      "formalAdmission": "PENDING"
+    }
+  ],
+  "distinctSourceReferenceFacts": 3,
+  "existingGraphRepresentations": 8,
+  "explicitCspCandidateRepresentations": 4,
+  "sameTableFieldRepresentations": 4,
+  "generatedRegistryDigest": "sha256:76c2aa01a8e5b7381f23793919309f1ee9003c2ead50ba0514d2801d652220cc",
+  "existingEdges": [
+    {
+      "id": "csoi:reported-reference:food-program-p27:csp6",
+      "from": "csoi:source-note:smrc-op-2026:food-program-p27",
+      "to": "csp6",
+      "predicate": "RESEARCH_CANDIDATE",
+      "state": "PROPOSED",
+      "admission": "PENDING",
+      "evidenceMeaning": "EXPLICIT_CSP_REFERENCE_ALREADY_REPRESENTED",
+      "countsAsAnotherDistinctSourceReference": false,
+      "officialAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:reported-reference:ltw-complaints-p30:csp6",
+      "from": "csoi:source-note:smrc-op-2026:ltw-complaints-p30",
+      "to": "csp6",
+      "predicate": "RESEARCH_CANDIDATE",
+      "state": "PROPOSED",
+      "admission": "PENDING",
+      "evidenceMeaning": "EXPLICIT_CSP_REFERENCE_ALREADY_REPRESENTED",
+      "countsAsAnotherDistinctSourceReference": false,
+      "officialAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:reported-reference:ltw-complaints-p30:csp8",
+      "from": "csoi:source-note:smrc-op-2026:ltw-complaints-p30",
+      "to": "csp8",
+      "predicate": "RESEARCH_CANDIDATE",
+      "state": "PROPOSED",
+      "admission": "PENDING",
+      "evidenceMeaning": "EXPLICIT_CSP_REFERENCE_ALREADY_REPRESENTED",
+      "countsAsAnotherDistinctSourceReference": false,
+      "officialAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:published-plan-link:programme",
+      "from": "csoi:published-plan:food-2026:programme",
+      "to": "csp6",
+      "predicate": "RESEARCH_CANDIDATE",
+      "state": "PROPOSED",
+      "admission": "PENDING",
+      "evidenceMeaning": "EXPLICIT_CSP_REFERENCE_ALREADY_REPRESENTED",
+      "countsAsAnotherDistinctSourceReference": false,
+      "officialAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:published-plan-link:optimal",
+      "from": "csoi:published-plan:food-2026:optimal",
+      "to": "csoi:published-plan:food-2026:programme",
+      "predicate": "RESEARCH_CANDIDATE",
+      "state": "PROPOSED",
+      "admission": "PENDING",
+      "evidenceMeaning": "SAME_TABLE_FIELD_ASSOCIATION",
+      "countsAsAnotherDistinctSourceReference": false,
+      "officialAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:published-plan-link:funded",
+      "from": "csoi:published-plan:food-2026:funded",
+      "to": "csoi:published-plan:food-2026:programme",
+      "predicate": "RESEARCH_CANDIDATE",
+      "state": "PROPOSED",
+      "admission": "PENDING",
+      "evidenceMeaning": "SAME_TABLE_FIELD_ASSOCIATION",
+      "countsAsAnotherDistinctSourceReference": false,
+      "officialAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:published-plan-link:target",
+      "from": "csoi:published-plan:food-2026:target",
+      "to": "csoi:published-plan:food-2026:programme",
+      "predicate": "RESEARCH_CANDIDATE",
+      "state": "PROPOSED",
+      "admission": "PENDING",
+      "evidenceMeaning": "SAME_TABLE_FIELD_ASSOCIATION",
+      "countsAsAnotherDistinctSourceReference": false,
+      "officialAdmission": "PENDING"
+    },
+    {
+      "id": "csoi:published-plan-link:service-kpi",
+      "from": "csoi:published-plan:food-2026:service-kpi",
+      "to": "csoi:published-plan:food-2026:programme",
+      "predicate": "RESEARCH_CANDIDATE",
+      "state": "PROPOSED",
+      "admission": "PENDING",
+      "evidenceMeaning": "SAME_TABLE_FIELD_ASSOCIATION",
+      "countsAsAnotherDistinctSourceReference": false,
+      "officialAdmission": "PENDING"
+    }
+  ],
+  "conclusion": "Three distinct source references remain represented by four CSP candidates plus four table-field associations. The old csp6/csp8 endpoints remain research stations, not newly admitted CSP identities; no duplicate source facts are added by this check."
+}

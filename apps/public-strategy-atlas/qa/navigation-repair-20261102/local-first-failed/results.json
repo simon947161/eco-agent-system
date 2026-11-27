@@ -1,0 +1,52 @@
+{
+  "at": "2026-11-02T07:37:31.570880+00:00",
+  "mode": "local real Chromium",
+  "ownerInteractiveLogin": "NOT_TESTED",
+  "results": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "checks": [
+        "Actual pointer clicks on original CSP and LSPS map stations open populated inspector",
+        {
+          "title": "LSPS 地图、正文与行动",
+          "firstText": "LSPS2020 — historical priorities and action evidence",
+          "firstHref": "#/knowledge/csoi%3Aknowledge%3Alsps2020%3Adocument",
+          "firstY": 226.265625,
+          "hash": "#/research?source=LSPS",
+          "focus": "LSPS 地图、正文与行动",
+          "clicked": "打开 LSPS 地图与正文"
+        },
+        {
+          "title": "LSPS 地图记录",
+          "firstText": "Figure 1 — landscape and rural regions · PDF 8",
+          "firstHref": "#/knowledge/csoi%3Aknowledge%3Alsps2020%3Acontext%3Amap%3A008",
+          "firstY": 226.265625,
+          "hash": "#/research?domain=LSPS_MAP&source=LSPS",
+          "focus": "LSPS 地图记录",
+          "clicked": "只看地图记录"
+        },
+        {
+          "title": "OP 逐页梳理",
+          "firstText": "OP PDF 1 · Document front matter",
+          "firstHref": "#/knowledge/csoi%3Aknowledge%3Aop2026%3Areview%3Apage%3A001",
+          "firstY": 226.265625,
+          "hash": "#/research?domain=OP_PAGE&source=OP",
+          "focus": "OP 逐页梳理",
+          "clicked": "打开 OP 逐页梳理"
+        },
+        "Cold deep links, browser back/forward and reload show target content; existing local/session values preserved",
+        "Actual pagination and form submit; empty results visible with explicit recovery explanation"
+      ],
+      "status": "PASS",
+      "browserErrors": []
+    }
+  ],
+  "status": "FAILED",
+  "failure": {
+    "type": "TimeoutError",
+    "message": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"#sourceResearchLink\")\n    - locator resolved to <a lang=\"zh-CN\" href=\"#/research\" id=\"sourceResearchLink\">来源梳理 · 查看完成与缺口</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n      - waiting 100ms\n    57 × waiting for element to be visible, enabled and stable\n       - element is not visible\n     - retrying click action\n       - waiting 500ms\n"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "previousAuthorSHA256": "52be92447433d23f1c82fea738768f18ff2bba2e74f7100fbd3adf275370ca7d",
+  "finalAuthorSHA256": "d1c9a1abe6785e4154c96426cb51c8f9c7908248f5de858966fb0f1e1ab2120c",
+  "reason": "P142 public contact only: public email string not repeated; actual summary explicitly directs reader to original end page. Original inspected again; no false source claim and no change to other427 units.",
+  "changedUnits": [
+    {
+      "id": "csoi:op2026:finance:p142:public-contact",
+      "previousDigest": "sha256:8b6250b5639fed0ed6e222ab56008d310a6b25a9c468ceadc31c9f38c812c9c0",
+      "newDigest": "sha256:6768693e8fa44e60f75aaf5427a5edfab0ee0c6ad24a9b6079b877b8fc35574d"
+    }
+  ],
+  "independentChangedUnitReadback": "ACCEPTED_WITH_EXPLICIT_CONTACT_PROJECTION_LIMIT",
+  "previousReceiptPreserved": "finance-author-rebinding-receipt.json"
+}

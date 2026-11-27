@@ -1,0 +1,31 @@
+{
+  "observedAt": "2026-10-29T20:12:37.994339+00:00",
+  "observationsCurrent": true,
+  "runtime": {
+    "phase": "running",
+    "specRevision": "1",
+    "observedSpecRevision": "1",
+    "networkMode": "restricted",
+    "networkState": "enforced",
+    "customAllowedHosts": [],
+    "councilHostAllowed": false,
+    "legislationHostAllowed": false,
+    "vpnConfigured": false
+  },
+  "savedDraft": {
+    "revision": 3,
+    "customAllowedHosts": [
+      "snapshotclimate.com.au",
+      "www.legislation.nsw.gov.au",
+      "www.olg.nsw.gov.au",
+      "www.planning.nsw.gov.au",
+      "www.snowymonaro.nsw.gov.au"
+    ],
+    "baseVersionMatchesAttachedRuntimeVersion": true,
+    "publicationState": "NOT_ESTABLISHED_BY_DRAFT_READ"
+  },
+  "interpretation": "Saved draft domains are present, but this attached runtime still enforces its original policy. This does not determine whether a different/new configuration was published elsewhere. Retest in a task attached to the intended published environment version.",
+  "credentialValuesRecorded": false,
+  "policyChangedByAgent": false,
+  "proxyOrTlsBypassed": false
+}

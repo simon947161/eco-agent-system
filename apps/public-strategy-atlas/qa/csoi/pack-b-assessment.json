@@ -1,0 +1,260 @@
+{
+  "pack": "B",
+  "software_status": "PARTIAL",
+  "corpus_status": "PARTIAL",
+  "admission_status": "PENDING",
+  "summary": "Appended22actualpublicsourceobservations to original source register without rewriting15legacyrecords/events:37registerrecords,23documentrevisions+1directory,21retrieveddocuments+1retrieveddirectory,22uniqueURLs.27URLattempts;22HTTP200byteverified;18sourceswithboundedauthorednotes. OPpage27 plannedfoodprogram6.1/168optimal/84funded/84target/98percentserviceKPIisavailableasattributedresearch,notactualresults. Rights/extraction/currentlegalconfirmation/officialadmission remain0. DPv2.4currentdirectorydateconflict and annualreporttransfercapare retained. Three software/intake-page tasks VERIFIED; seven deeper corpus/relationship tasks PARTIAL.",
+  "next_executable": "COI-021 \u2014 integrate layered quality/evidence transformations in the same Atlas registry",
+  "tasks": [
+    {
+      "id": "COI-011",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
+    },
+    {
+      "id": "COI-012",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
+    },
+    {
+      "id": "COI-013",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": null,
+      "next_action": "Preserve staged public evidence and advance Pack C."
+    },
+    {
+      "id": "COI-014",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
+    },
+    {
+      "id": "COI-015",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
+    },
+    {
+      "id": "COI-016",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
+    },
+    {
+      "id": "COI-017",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
+    },
+    {
+      "id": "COI-018",
+      "status": "PARTIAL",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": "Current legal consolidation/geographic applicability, full permitted extraction and authorised relationship review remain incomplete; some URLs failed or exceeded bounded transfer limits.",
+      "next_action": "Continue independently verifying missing planning/PHE versions, reuse rights and precise anchors; never convert planned targets into actual performance."
+    },
+    {
+      "id": "COI-019",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": null,
+      "next_action": "Preserve staged public evidence and advance Pack C."
+    },
+    {
+      "id": "COI-020",
+      "status": "VERIFIED",
+      "actual_code_files": [
+        "csoi-intake.js",
+        "sources/csoi-source-observations.json",
+        "sources/csoi-catalogue.json",
+        "atlas-intake.js",
+        "csoi-pages.js"
+      ],
+      "actual_test_commands": [
+        "node apps/public-strategy-atlas/csoi-intake.test.cjs",
+        "node apps/public-strategy-atlas/run-tests.cjs /tmp/csoi-pack-b-native.json",
+        "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py system-browser.py"
+      ],
+      "evidence_links": [
+        "qa/csoi/native-b.json",
+        "qa/csoi/browser-b.json",
+        "qa/csoi/source-coverage-b.json",
+        "qa/csoi/op-planned-source-1440.png"
+      ],
+      "source_admission_status": "PENDING_RIGHTS_CURRENT_SCOPE_AND_AUTHORISED_REVIEW",
+      "blocker": null,
+      "next_action": "Preserve staged public evidence and advance Pack C."
+    }
+  ]
+}

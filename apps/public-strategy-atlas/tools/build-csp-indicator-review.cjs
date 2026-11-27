@@ -1,0 +1,21 @@
+/* Compile authored, independently reviewed source interpretations into append-only revisions. */
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),M=require('../atlas-model.js'),K=require('../csoi-knowledge.js');
+const app=path.resolve(__dirname,'..'),read=p=>JSON.parse(fs.readFileSync(path.join(app,p),'utf8'));
+(async()=>{
+ const author=read('qa/csp-metric-review/author/metric-profiles.json'),independent=read('qa/csp-metric-review/independent/initial-review.json'),base=read('sources/csp-public-knowledge.json');
+ if(crypto.createHash('sha256').update(fs.readFileSync(path.join(app,'sources/csp-public-knowledge.json'))).digest('hex')!==author.sourceBundleSHA256)throw Error('PRIOR_CSP_BUNDLE_CHANGED');
+ const profiles=new Map(author.profiles.map(r=>[r.id,r])),reviews=new Map(independent.records.map(r=>[r.id,r]));if(profiles.size!==63||reviews.size!==63)throw Error('REVIEW_CENSUS');
+ const plan={format:'csoi-csp-indicator-review-1',reviewId:'CSP63-SECOND-SOURCE-REVIEW-20261102',observedAt:'2026-11-02T00:27:13.000Z',sourceId:base.sourceId,sourceRevision:base.sourceRevision,method:'INDEPENDENT_AI_SOURCE_REVIEW_NOT_OFFICIAL',officialAdmission:'PENDING',currentLegalApplicability:'UNKNOWN',originalBundleSHA256:author.sourceBundleSHA256,records:[]};
+ for(const old of base.records.filter(n=>n.category==='CSP_INDICATOR')){
+  const p=profiles.get(old.id),initial=reviews.get(old.id);if(!p||!initial)throw Error('REVIEW_ROW_MISSING');const n=structuredClone(old),f=n.facts,s=p.semanticReview;Object.assign(f,structuredClone(p.proposedFacts));
+  f.timeInterval={from:'UNKNOWN',to:'UNKNOWN',basis:'Exact observation interval is not stated in this table. Source-label dates are provenance hints, not confirmed measurement endpoints.'};
+  f.timeframe='Historical published baseline; source-label date, measurement-year label and exact interval are separate. No current measurement or deadline established.';
+  f.target={value:'UNKNOWN_NOT_STATED',due:'UNKNOWN_NOT_STATED',basis:f.desiredTrend==='-'?'原表只印破折号；没有数值目标、方向或截止日期，不能解释为零或保持不变。':'原表只有期望趋势 '+f.desiredTrend+'；没有数值目标或指标截止日期，不能把基线或2035标题当目标。'};
+  f.semanticReview={reviewId:plan.reviewId,method:plan.method,sourceRevision:base.sourceRevision,contextPage:28,definition:p.meaning,unit:'保留单位 '+f.baseline.unit+'，原表单位字段 '+f.baseline.printedUnit+'；比例、指数和比率不能仅凭名称补成百分比。货币代码 '+f.baseline.currency+'。',period:(f.referencePeriod.label.startsWith('UNKNOWN')?'测量时期未在指标栏写明。':'指标栏明确写出时期 '+f.referencePeriod.label+'。')+'来源标签中的年份/时期为 '+f.sourceYear+'，单独保留，不当作精确测量起止日期。',target:f.target.basis,responsibility:'第28页说明这些是社区进展指标；来源机构名称不是任务负责人。该指标的负责角色仍为 UNKNOWN，不能自动创建 Council 工作或认定绩效。',scope:f.denominator.label+' '+f.boundaries.geographic,calculation:s.recomputation.reason+' 结论：NOT_COMPUTABLE；这里只保留概念或缺失方法，未复算出新的实绩。',conclusion:initial.initialSemanticStatus==='CORRECTION_REQUIRED'?'已补齐本条定义或口径限定；原数值与原页位置保持不变。':'已逐项核对本条，并明确其定义、时期、单位和计算限制；未提升正式准入。',limitations:[...f.formula.requiredInputs,'当前受控版本、正式适用性、原始数据方法与独立专业人工签认尚未确认。']};
+  n.summary=p.meaning+' 来源基线：'+f.printedBaseline+'；来源标签 '+f.printedSource+'；期望趋势 '+f.desiredTrend+'。这不是当前实绩或已批准目标。';K.validateNode(n);
+  plan.records.push({id:n.id,beforeNodeDigest:await M.objectDigest(old),node:n,reason:'Second independent source-semantic review of CSP PDF'+n.anchor.pdfPage+' row'+f.tableRow+': preserve precise definition, correct denominator/normalisation and separate source dates from measurement periods; retain UNKNOWN actuals, targets and authority.'});
+ }
+ const json=JSON.stringify(plan,null,2)+'\n',js=`(function(root){const value=${JSON.stringify(plan)};root.CsoiCspIndicatorReview=value;if(typeof module!=='undefined')module.exports=value;})(typeof window!=='undefined'?window:globalThis);\n`;
+ for(const [file,body]of [['sources/csp-indicator-review.json',json],['sources/csp-indicator-review.js',js]])if(process.argv.includes('--check')){if(fs.readFileSync(path.join(app,file),'utf8')!==body)throw Error('METRIC_REVIEW_REBUILD_REQUIRED');}else fs.writeFileSync(path.join(app,file),body);
+ console.log('PASS:63 bounded review records compiled; original CSP bundle unchanged; exact browser mirror. Semantic meaning is independently reviewed, not proven by this build.');
+})().catch(error=>{console.error(error);process.exitCode=1});

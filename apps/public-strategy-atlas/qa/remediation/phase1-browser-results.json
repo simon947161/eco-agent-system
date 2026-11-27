@@ -1,0 +1,78 @@
+{
+  "format": "csoi-remediation-browser-1",
+  "startedAt": "2026-10-31T10:51:51.627320+00:00",
+  "appPath": "/workspace/eco-agent-system/apps/public-strategy-atlas",
+  "browserChecks": "REAL_CHROMIUM",
+  "results": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS_TESTED_HERE",
+      "withdrawnWrongApplicationAndCorrectedParent": "PASS",
+      "waterAmpPdf13Table4": "PASS",
+      "minimumCapacitySemantics": "PASS",
+      "independentSnapshotVerifier": "PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.",
+      "currentNoteSourcePins": 25,
+      "retainedEmptyInputNoteHistory": 25,
+      "legacyContentItems": 127,
+      "exportedEntities": 137,
+      "datasetDigest": "sha256:53841d668ffdb78a42edb9ad515a64dcb6956dd390b6c777531f2c4d72311375",
+      "immutableAuditBaselinePrefix": "PASS exact audit-baseline dataset/history reconstructed from retained prefix",
+      "genericNoteReceiptAndTraceLinks": 25,
+      "independentNotePathProofVerifier": "{\"integrity\":true,\"current\":true,\"metadataCompatibility\":\"UNKNOWN\",\"officialUse\":\"REJECTED_UNKNOWN_ADMISSION\"}",
+      "withdrawalBlocksNewCorrectedClauseReview": "PASS",
+      "withdrawalInvalidatesGenericNoteContext": "PASS",
+      "unaffectedSourceContextRetained": "PASS",
+      "browserErrors": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS_TESTED_HERE",
+      "withdrawnWrongApplicationAndCorrectedParent": "PASS",
+      "waterAmpPdf13Table4": "PASS",
+      "minimumCapacitySemantics": "PASS",
+      "independentSnapshotVerifier": "PASS: dataset, linked history and content-root receipts match. Integrity only; no official signature or truth guarantee.",
+      "currentNoteSourcePins": 25,
+      "retainedEmptyInputNoteHistory": 25,
+      "legacyContentItems": 127,
+      "exportedEntities": 137,
+      "datasetDigest": "sha256:53841d668ffdb78a42edb9ad515a64dcb6956dd390b6c777531f2c4d72311375",
+      "immutableAuditBaselinePrefix": "PASS exact audit-baseline dataset/history reconstructed from retained prefix",
+      "genericNoteReceiptAndTraceLinks": 25,
+      "independentNotePathProofVerifier": "{\"integrity\":true,\"current\":true,\"metadataCompatibility\":\"UNKNOWN\",\"officialUse\":\"REJECTED_UNKNOWN_ADMISSION\"}",
+      "withdrawalBlocksNewCorrectedClauseReview": "PASS",
+      "withdrawalInvalidatesGenericNoteContext": "PASS",
+      "unaffectedSourceContextRetained": "PASS",
+      "browserErrors": []
+    }
+  ],
+  "externalRequests": [],
+  "sourceBodiesCommitted": false,
+  "CouncilAccountWrites": false,
+  "automaticPersistence": false,
+  "browserVersion": "154.0.8037.57",
+  "finishedAt": "2026-10-31T10:52:02.650824+00:00",
+  "status": "PASS_TESTED_HERE",
+  "testedFiles": {
+    "atlas-domain.js": "sha256:b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+    "atlas-model.js": "sha256:05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+    "csoi-paths.js": "sha256:cb8e0702246d0cf1958ca494f444773bd03daebce62961784e4c1c3841b14a44",
+    "csoi-pages.js": "sha256:a7c617a1e835ec54b6681a42d8c5e68610d729bf881e75f1590708b6fcccfa81",
+    "csoi-knowledge.js": "sha256:2377f1c0a8e4717512d688b091a656fa016d9b8e6193543e030f850a227f0229",
+    "csoi-remediation.js": "sha256:b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",
+    "csoi-intake.js": "sha256:5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+    "atlas.js": "sha256:f55e43cad6bc6618dd37b0bb11ba4c78634dd0692a67daa22a9f86cc3ecb15e4",
+    "index.html": "sha256:0fa241853f2932234cefb374d73b7073390f0a4b3e97b4db2974340663fc4a11",
+    "sources/knowledge-corrections.json": "sha256:8e54dffe6bdd10e698802a079a8293ebbd2b66eedefa3156cc1300364b06a928",
+    "sources/knowledge-corrections.js": "sha256:dd39ca5bc0e53eab3f4be428cede3ebd66f9d3ee551ae684801c2e3eb421a279",
+    "sources/csoi-default-snapshot.js": "sha256:0ede52c98bdd3d2bf08630e2d307bd7565f401f768965c33ae5e8040d8862b85",
+    "qa/csoi-remediation-browser.py": "sha256:2f6f91fbdf23ae83da36a37ea38d6b7b3a9cbb549193ffa8eb4a4f8b3d6a548a"
+  },
+  "refreshReason": "Reran full own desktop/mobile phase1 browser suite after csoi-knowledge.js deferred script was added to index; full phase2 corpus is not yet registered.",
+  "limits": "Actual Chromium viewport emulation and public/synthetic data only. No physical device, current-law or source-admission certification. Explicit import changes in-memory browser state only; downloads/fixtures remain temporary."
+}

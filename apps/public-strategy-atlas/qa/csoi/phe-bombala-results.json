@@ -1,0 +1,93 @@
+{
+  "format": "csoi-phe-bombala-results-1",
+  "at": "2026-10-31T08:57:43.205413+00:00",
+  "baselineSha": "1447e925e7490bf3f6a645b90a1e995c586bdd0e",
+  "repositoryPath": "/workspace/eco-agent-system",
+  "batch": "PASS_TESTED_HERE",
+  "system": "PARTIAL",
+  "corpus": "PARTIAL",
+  "officialAdmission": "PENDING",
+  "taskCounts": {
+    "VERIFIED": 49,
+    "BLOCKED": 3,
+    "PARTIAL": 28
+  },
+  "nativeFilesPassed": 38,
+  "browserLeafSuitesPassed": 16,
+  "affectedSuites": 10,
+  "legacySuites": 6,
+  "desktop": [
+    1440,
+    900
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "navigationRoutes": 24,
+  "navigationViewports": 5,
+  "sourceAnchorPages": 10,
+  "sourceAnchorNegativesRejected": 4,
+  "defaultDomainEntities": 135,
+  "defaultDomainAssertions": 48,
+  "originalContentItems": 127,
+  "defaultDatasetDigest": "sha256:621a3a17781a60ae7b18f0006fc98cf498292b1f5d49ae52e4c4776478f967dd",
+  "authoredClauseObservations": 72,
+  "sourceCatalogueRecords": 52,
+  "sourceByteReceipts": 33,
+  "sourceRawDigest": "sha256:91375ba17012f891593bb200a533d3de12e6e48e579b1d7e9212af0be66a7ee6",
+  "sameHistoricalByteReceipt": true,
+  "officialRelationships": 0,
+  "actualCouncilPerformance": "UNKNOWN",
+  "nodeCoverage": "NOT_RERUN_THIS_BATCH",
+  "commands": [
+    "node apps/public-strategy-atlas/run-tests.cjs apps/public-strategy-atlas/qa/csoi/native-phe-bombala.json",
+    "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-phe-context-browser.py csoi-bombala-browser.py csoi-phe-browser.py csoi-cooma-browser.py csoi-clauses-browser.py csoi-paths-browser.py csoi-review-work-browser.py csoi-calendar-browser.py csoi-source-browser.py csoi-browser.py run-browser-suite.py",
+    "python3 apps/public-strategy-atlas/tools/verify-document-anchors.py /tmp/csoi-bombala-20261031/smrc-dcp-bombala-2014.pdf apps/public-strategy-atlas/sources/bombala-dcp-outline-anchors.json"
+  ],
+  "codeManifest": {
+    "atlas.js": "sha256:9b0594a8881504e5290cf6f3dc2d742860549b2209e24232ea5f36eb772146ca",
+    "csoi-boot.js": "sha256:49ad12d9a19fb51a1fc2e73e83ee516f36b390fdb8d70b43b86c80936c4d9f16",
+    "csoi-boot.test.cjs": "sha256:0f64b0e26fe5f964efec2c90c4d0fd97e6b1cf6589330707ac5f08b04ae529db",
+    "tools/build-csoi-boot.cjs": "sha256:a9e4a8bb8b3856d3263580055150eae1ed59c19d6c4a0a4a4a22a47400716de9",
+    "sources/csoi-default-snapshot.js": "sha256:fd8fa5ca562cf82edb4e12e4149021340910c45dce4bfd87b38cd74f2aee5a9c",
+    "csoi-pages.js": "sha256:d6e690fd0e7e763bf763286f7ba5db13ee338a88025f099dbf4b7a7b64cf5a6b",
+    "csoi-phe.js": "sha256:438bd49e7f4b27c22bdb03758c57c4a6e9273bdc898f1151a86af15b457cc3b1",
+    "csoi-intake.js": "sha256:5bde1339dfb35fca2d48c2732a48bb19e1af9db6ae6bfd5aa7885480d63781b5",
+    "index.html": "sha256:bc1fba78a4ee7c9e16d9b4d1d0867a84bc79fba8bafa92d3f053b5216ce691bc",
+    "tools/sync-csoi-outline.cjs": "sha256:f5a75ae3d59e41e166fbc584b7bcd12fafad21160e09680636b2acad5f45814e",
+    "csoi-phe-context.test.cjs": "sha256:d4dca837a491002f3971ccc32677d6d756471ee5bd4c895de4160dc02822097e",
+    "csoi-bombala.test.cjs": "sha256:9d096418db6a9f9c139e7fedce35edacd542e77ea6de539aab40b2f6dae527c9",
+    "csoi-cooma.test.cjs": "sha256:703c279abebfa1cf23f7b418018a30c68afca9020d4511da484e7f63594d226b",
+    "qa/csoi-phe-context-browser.py": "sha256:0636c9b13fab57bae172161b3131d90211af1e64ffd6fd885bb988271b958bc9",
+    "qa/csoi-bombala-browser.py": "sha256:091147a15b7a421ba737a08c02f0a3053a0c3db52b907db750107ee75b434ce3",
+    "qa/csoi-cooma-browser.py": "sha256:97a0aa2a8a8647ad8461b7227e022b9db536dc72d23c9388308689523cca921e",
+    "qa/run-local-browser.py": "sha256:b7dbe9d9787e435117418f3794f31ae5322a10e0667ab00a4cab5b53ff448348",
+    "sources/bombala-dcp-outline.json": "sha256:e2b30d6bbc387281ff789f9130136461a951f07163a80e760a0512f5f05d9853",
+    "sources/bombala-dcp-outline.js": "sha256:a04dd1cb841b1de6100feac873c59d14076ee8a9bf35ea746d045d2a46cb1a08",
+    "sources/bombala-dcp-outline-anchors.json": "sha256:703022dab989edc12704ee235608e74f89d769da818a625adc2b6bd936fd8df6"
+  },
+  "preview": {
+    "verified": "LOOPBACK_CHROMIUM_AND_SCREENSHOTS",
+    "externallyReachableUrl": "NOT_AVAILABLE",
+    "deployment": "NOT_PERFORMED"
+  },
+  "notTested": [
+    "physical touch/monitors",
+    "professional screen-reader certification",
+    "cross-browser",
+    "private WCOS/Outlook compatibility",
+    "independent privacy/legal certification"
+  ],
+  "startupCache": {
+    "format": "csoi-default-snapshot-cache-1",
+    "defaultHistoryEquivalent": "PASS_TESTED_HERE",
+    "staleAndCorruptRejection": "PASS_TESTED_HERE",
+    "diagnostic": "qa/csoi/boot-startup-observations.json",
+    "initialFailures": [
+      "qa/csoi/deep-initial-timeout.log",
+      "qa/csoi/deep-isolated.log"
+    ],
+    "testTimeouts": "UNCHANGED"
+  }
+}

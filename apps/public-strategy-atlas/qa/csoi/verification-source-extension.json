@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-10-30T03:19:59.583951+00:00",
+  "native": {
+    "files": 30,
+    "status": "PASS_TESTED_HERE",
+    "evidence": "native-source-extension.json",
+    "finalCoverageRun": "coverage-source-extension.txt"
+  },
+  "browser": {
+    "hierarchy": "browser-source-extension.json",
+    "responsiveNavigation": "browser-h.json",
+    "opPlanningFiltersCompanions": "browser-b.json",
+    "legacySnapshotEditingConflicts": "../e0/browser-results.json",
+    "allAffectedSuites": "PASS_TESTED_HERE"
+  },
+  "priorFullRegression": {
+    "evidence": "browser-final-h.json",
+    "scope": "Pack H historical six legacy and seven CSOI suites; not relabelled as current source-extension invocation"
+  },
+  "fullSystemStatus": "PARTIAL",
+  "officialAdmission": "PENDING",
+  "privacy": "PUBLIC_OR_SYNTHETIC_ONLY"
+}

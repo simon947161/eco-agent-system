@@ -1,0 +1,247 @@
+[
+  {
+    "testId": "T01",
+    "sourceId": "csoi:smrc-csp-full-2025:20261030",
+    "currentRawDigest": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+    "historicalRawDigest": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 30,
+        "tokens": [
+          "CO2e emissions per capita",
+          "29.9 tonnes",
+          "2021-22"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "factualSpotcheck": "PASS_BOUNDED_OBSERVATION"
+  },
+  {
+    "testId": "T02",
+    "sourceId": "csoi:smrc-csp-full-2025:20261030",
+    "currentRawDigest": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+    "historicalRawDigest": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 22,
+        "tokens": [
+          "6.1",
+          "air, land, and waterways"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "factualSpotcheck": "PASS_BOUNDED_OBSERVATION"
+  },
+  {
+    "testId": "T03",
+    "sourceId": "csoi:smrc-dp-2026:20261030",
+    "currentRawDigest": "sha256:a7d6964b8a9042fef80589c1021d31341a6c0b332c50d716ed8ad6ba411ec87a",
+    "historicalRawDigest": "sha256:a7d6964b8a9042fef80589c1021d31341a6c0b332c50d716ed8ad6ba411ec87a",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 31,
+        "tokens": [
+          "Public Health and Environment",
+          "6.1",
+          "2025"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "factualSpotcheck": "PASS_BOUNDED_OBSERVATION"
+  },
+  {
+    "testId": "T04",
+    "sourceId": "csoi:smrc-op-2026:20261030",
+    "currentRawDigest": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+    "historicalRawDigest": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 27,
+        "tokens": [
+          "98%",
+          "P1, P2 and P3 food premises",
+          "168",
+          "84"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "factualSpotcheck": "PASS_BOUNDED_OBSERVATION"
+  },
+  {
+    "testId": "T05",
+    "sourceId": "csoi:smrc-lsps-2020:20261030",
+    "currentRawDigest": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+    "historicalRawDigest": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 1,
+        "tokens": [
+          "21 May 2020",
+          "Local Strategic Planning Statement"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "factualSpotcheck": "PASS_BOUNDED_OBSERVATION"
+  },
+  {
+    "testId": "T06",
+    "sourceId": "csoi:smrc-water-amp-2025:20261030",
+    "currentRawDigest": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+    "historicalRawDigest": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 1,
+        "tokens": [
+          "2025 - 2035"
+        ],
+        "allTokensPresent": true
+      },
+      {
+        "pdfPage": 3,
+        "tokens": [
+          "19/06/2025",
+          "142/25"
+        ],
+        "allTokensPresent": true
+      },
+      {
+        "pdfPage": 13,
+        "tokens": [
+          "Assets by Location",
+          "12 main towns",
+          "9 Treatment"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "factualSpotcheck": "PARTIAL_LOCATOR_ERROR",
+    "locatorDefect": "Recorded PDF14 AssetsbyLocation; original Table4 AssetsbyLocation isPDF13. PDF14isTable5AssetsbyType. Original note fact/version mostlysupported, locator notfullycorrect."
+  },
+  {
+    "testId": "T07",
+    "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+    "currentRawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+    "historicalRawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 166,
+        "tokens": [
+          "soil suitability and topography",
+          "C9.3-1"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "normalizedPageDigestMatches": true,
+    "factualSpotcheck": "PASS_BOUNDED_OBSERVATION"
+  },
+  {
+    "testId": "T08",
+    "sourceId": "csoi:smrc-dcp-snowy-2013-amend3:20261030",
+    "currentRawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+    "historicalRawDigest": "sha256:f17fca90befb888b50dbc20f80e38c8e0458ee09b693e1f38f9241b5e18efe9d",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 164,
+        "tokens": [
+          "110 litres",
+          "person per day",
+          "C6.2-3"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "factualSpotcheck": "PASS_BOUNDED_OBSERVATION"
+  },
+  {
+    "testId": "T09",
+    "sourceId": "csoi:smrc-dcp-cooma-2014-amend4:20261030",
+    "currentRawDigest": "sha256:4347cd774b6d2508422a9e5fce8200ae470df9572ec644045d7abdfba9040bed",
+    "historicalRawDigest": "sha256:4347cd774b6d2508422a9e5fce8200ae470df9572ec644045d7abdfba9040bed",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 159,
+        "tokens": [
+          "soil composition",
+          "NATA",
+          "operation and maintenance"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "normalizedPageDigestMatches": true,
+    "factualSpotcheck": "PASS_BOUNDED_OBSERVATION"
+  },
+  {
+    "testId": "T10",
+    "sourceId": "csoi:smrc-dcp-bombala-2014:20261030",
+    "currentRawDigest": "sha256:91375ba17012f891593bb200a533d3de12e6e48e579b1d7e9212af0be66a7ee6",
+    "historicalRawDigest": "sha256:91375ba17012f891593bb200a533d3de12e6e48e579b1d7e9212af0be66a7ee6",
+    "historicalReceiptMatches": true,
+    "checks": [
+      {
+        "pdfPage": 55,
+        "tokens": [
+          "soil type, permeability",
+          "A9",
+          "reticulated sewerage"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "normalizedPageDigestMatches": true,
+    "factualSpotcheck": "PASS_BOUNDED_OBSERVATION"
+  },
+  {
+    "testId": "T11",
+    "sourceId": "csoi:smrc-ltw:20261030",
+    "currentRawDigest": "sha256:f383501f17589f6cc6cfeeb172756387fe479c7181d0463730d01f513838532b",
+    "historicalRawDigest": "sha256:230456783eeb7ea3fbd09f79e6ef4c4aea67f2e5a92271f92087f2b5664bce10",
+    "historicalReceiptMatches": false,
+    "checks": [
+      {
+        "htmlSection": "Liquid Trade Waste; opening paragraphs",
+        "tokens": [
+          "not of a domestic origin or quantity",
+          "sewerage"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "factualSpotcheck": "CURRENT_HTML_SUPPORT_ONLY_HISTORICAL_BYTES_CHANGED",
+    "limitation": "Current public HTML hash differs from registeredhistorical receipt; cannot independently reconstruct the exact historicalwebpage from Git alone."
+  },
+  {
+    "testId": "T12",
+    "sourceId": "csoi:smrc-backflow:20261030",
+    "currentRawDigest": "sha256:d6e1bbb35ae5f7fc17519379b4a430a1296fbdc2263a85ef190eb41265394db2",
+    "historicalRawDigest": "sha256:52a39fbd088d7c30e7a81fc6a329a9127c0f53d8fb64d6dd57d67bd45128ed25",
+    "historicalReceiptMatches": false,
+    "checks": [
+      {
+        "htmlSection": "Annual Testing; Who needs a backflow prevention device?",
+        "tokens": [
+          "12 months",
+          "accredited"
+        ],
+        "allTokensPresent": true
+      }
+    ],
+    "factualSpotcheck": "CURRENT_HTML_SUPPORT_ONLY_HISTORICAL_BYTES_CHANGED",
+    "limitation": "Current public HTML hash differs from registeredhistorical receipt; cannot independently reconstruct the exact historicalwebpage from Git alone."
+  }
+]

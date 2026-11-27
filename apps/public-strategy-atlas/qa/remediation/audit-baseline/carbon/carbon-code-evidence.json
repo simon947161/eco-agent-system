@@ -1,0 +1,435 @@
+{
+  "auditedCommit": "744ab46b2bec2ad601da0c4ae528694a4c982154",
+  "datasetIntegrity": true,
+  "datasetDigest": "sha256:621a3a17781a60ae7b18f0006fc98cf498292b1f5d49ae52e4c4776478f967dd",
+  "carbonMetric": {
+    "stationId": "csp6",
+    "state": "SOURCE_OBSERVED",
+    "classification": "PUBLIC_TEXT_OBSERVED",
+    "admission": "PENDING",
+    "provenance": {
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/smrc-csp-2035-endorsed-20250501.pdf",
+      "locator": "printed page 30; Our environmental, CO2e emissions per capita",
+      "publisher": "Snowy Monaro Regional Council",
+      "adoptedOn": "2025-05-01",
+      "rawDigest": "UNKNOWN",
+      "revisionConfirmed": false,
+      "humanReviewed": false
+    },
+    "scope": {
+      "region": "Snowy Monaro Regional LGA",
+      "period": {
+        "from": "2021-22",
+        "to": "2021-22",
+        "basis": "Source uses the 2021–22 year label; exact inventory interval has not been independently confirmed"
+      },
+      "boundary": "REGIONAL_COMMUNITY_INVENTORY"
+    },
+    "gaps": [
+      "No verified Objective 6.1-to-metric linkage",
+      "No approved DP/OP implementation mapping",
+      "Council operational share UNKNOWN",
+      "No population denominator admitted for multiplying to total",
+      "No budget, expenditure or outcome claimed"
+    ],
+    "id": "csp2035-carbon-per-capita-baseline",
+    "kind": "QuantifiedObservation",
+    "label": "CO2e emissions per capita",
+    "data": {
+      "id": "csp2035-carbon-per-capita-baseline",
+      "label": "CO2e emissions per capita",
+      "unit": "t_CO2e/person",
+      "value": 29.9,
+      "period": {
+        "from": "2021-22",
+        "to": "2021-22",
+        "basis": "Source uses the 2021–22 year label; exact inventory interval has not been independently confirmed"
+      },
+      "area": "Snowy Monaro Regional LGA",
+      "boundary": "REGIONAL_COMMUNITY_INVENTORY",
+      "denominator": "population",
+      "method": "Snapshot Climate Australian Emissions Profiles 2021–22",
+      "direction": "DECREASE",
+      "baseline": true,
+      "target": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "status": "PUBLIC_TEXT_OBSERVED",
+      "source": {
+        "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/smrc-csp-2035-endorsed-20250501.pdf",
+        "locator": "printed page 30; Our environmental, CO2e emissions per capita",
+        "publisher": "Snowy Monaro Regional Council",
+        "adoptedOn": "2025-05-01",
+        "rawDigest": "UNKNOWN",
+        "revisionConfirmed": false,
+        "humanReviewed": false
+      }
+    },
+    "revisionId": "sha256:3ab051a2cd0a12fd507ded3c6d6f2b2da3bdb23edb09d31a420e3cf4137de99d"
+  },
+  "sourceNote": {
+    "id": "csoi:source-note:smrc-csp-full-2025:carbon-p30",
+    "kind": "ContentBlock",
+    "label": "Snowy Monaro 2035 Community Strategic Plan(PDF, 24MB) — PDF page 30; Our environmental measures table",
+    "stationId": "csp6",
+    "data": {
+      "status": "PUBLIC_TEXT_OBSERVED",
+      "csoiRecord": {
+        "id": "csoi:source-note:smrc-csp-full-2025:carbon-p30",
+        "ownerModule": "CSOI_OPERATIONS",
+        "security": "PUBLIC",
+        "layer": "L0",
+        "sourceClass": "INDEPENDENT_RESEARCH",
+        "judgment": "OBSERVATION",
+        "authority": "INDEPENDENT_RESEARCH",
+        "scope": {
+          "region": "Snowy Monaro, NSW, Australia",
+          "boundary": "PUBLIC_DOCUMENT_RESEARCH_NOT_LEGAL_APPLICABILITY",
+          "period": {
+            "from": "2026-10-30",
+            "to": "2026-10-30"
+          }
+        },
+        "inputs": [],
+        "data": {
+          "title": "PDF page 30; Our environmental measures table",
+          "summary": "Research summary: the table reports 29.9 tonnes per capita, attributed to Snapshot Climate Australian Emissions Profiles 2021–22; desired trend decrease. It is neither a price nor an achieved Council emissions reduction.",
+          "sourceId": "csoi:smrc-csp-full-2025:20261030",
+          "sourceDigest": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+          "locator": "PDF page 30; Our environmental measures table",
+          "verification": "SOURCE_OBSERVED_NOT_FORMAL_ADMISSION",
+          "uncertainty": "Current legal consolidation, reuse permission and authorised human admission not independently established.",
+          "officialRelationship": "PENDING"
+        },
+        "sensitivity": {
+          "personalData": false,
+          "confidential": false,
+          "reidentifiable": false
+        },
+        "provenance": {
+          "contentMode": "RESEARCH_SUMMARY",
+          "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/smrc-csp-2035-endorsed-20250501.pdf",
+          "locator": "PDF page 30; Our environmental measures table",
+          "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+          "rights": {
+            "mode": "AUTHORED_RESEARCH",
+            "basis": "Repository-authored bounded factual research summary only. Underlying source reuse rights UNKNOWN; no original body, page image or full extracted text is redistributed."
+          }
+        },
+        "observedAt": "2026-10-30T00:52:00.165473+00:00",
+        "format": "csoi-record-1",
+        "revisionId": "sha256:b97eacf6d384bb3528ce982ef665533d33b98d1ef4de8af26c7e020526cca612"
+      }
+    },
+    "scope": {
+      "region": "Snowy Monaro, NSW, Australia",
+      "boundary": "PUBLIC_DOCUMENT_RESEARCH_NOT_LEGAL_APPLICABILITY",
+      "period": {
+        "from": "2026-10-30",
+        "to": "2026-10-30"
+      }
+    },
+    "state": "SOURCE_OBSERVED",
+    "classification": "LOCAL_RESEARCH",
+    "admission": "PENDING",
+    "provenance": {
+      "contentMode": "RESEARCH_SUMMARY",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/smrc-csp-2035-endorsed-20250501.pdf",
+      "locator": "PDF page 30; Our environmental measures table",
+      "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+      "rights": {
+        "mode": "AUTHORED_RESEARCH",
+        "basis": "Repository-authored bounded factual research summary only. Underlying source reuse rights UNKNOWN; no original body, page image or full extracted text is redistributed."
+      }
+    },
+    "gaps": [
+      "Independent public/synthetic research. No Council assignment, official decision or admitted strategy relationship."
+    ],
+    "revisionId": "sha256:dad3cb95ce9da727d65fe18ca167ecb3c925153402e54d21df9ebe0659704ef1"
+  },
+  "sourceReceipt": {
+    "id": "csoi:smrc-csp-full-2025:20261030",
+    "family": "STRATEGIC_DOCUMENT",
+    "publisher": "Snowy Monaro Regional Council",
+    "officialUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/smrc-csp-2035-endorsed-20250501.pdf",
+    "directoryUrl": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+    "title": "Snowy Monaro 2035 Community Strategic Plan(PDF, 24MB)",
+    "recordType": "DOCUMENT",
+    "stationId": "csp6",
+    "classification": "PUBLIC",
+    "mediaType": "application/pdf",
+    "rights": {
+      "status": "UNKNOWN",
+      "licence": null,
+      "basis": "Only metadata and authored bounded research summaries are committed. Originals/extracted full text remain temporary and are not redistributed.",
+      "permittedUses": [
+        "METADATA_ONLY"
+      ]
+    },
+    "rawDigest": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+    "retrievedAt": "2026-10-30T00:52:00.165473+00:00",
+    "adoptedAt": null,
+    "effectiveFrom": null,
+    "effectiveTo": null,
+    "amendedAt": null,
+    "supersededAt": null,
+    "currentAsOf": null,
+    "geographicExtent": {
+      "type": "LGA_CONTEXT",
+      "label": "Snowy Monaro, NSW, Australia",
+      "parcelApplicability": "UNKNOWN"
+    },
+    "extraction": {
+      "parser": "html.parser + pdftotext for local research",
+      "version": "csoi-source-observation-1",
+      "coverage": "PARTIAL",
+      "totalPages": null,
+      "extractedPages": [],
+      "anchors": [
+        {
+          "id": "carbon-p30",
+          "locator": "PDF page 30; Our environmental measures table",
+          "title": "PDF page 30; Our environmental measures table",
+          "textKind": "RESEARCH_SUMMARY",
+          "text": "Research summary: the table reports 29.9 tonnes per capita, attributed to Snapshot Climate Australian Emissions Profiles 2021–22; desired trend decrease. It is neither a price nor an achieved Council emissions reduction.",
+          "digest": "sha256:21dc5b4cf9253f6ea8a3d4ef8313dcd0d03c95188737b814c93a44b95d24d893",
+          "parserVersion": "reviewed-public-summary-1",
+          "verification": "SOURCE_OBSERVED_NOT_FORMAL_ADMISSION",
+          "uncertainty": "Current legal consolidation, reuse permission and authorised human admission not independently established."
+        },
+        {
+          "id": "goal61",
+          "locator": "PDF/printed page 22; Our environment; Strategic Objective 6 / 6.1",
+          "title": "PDF/printed page 22; Our environment; Strategic Objective 6 / 6.1",
+          "textKind": "RESEARCH_SUMMARY",
+          "text": "Research summary: source-stated environmental strategy context; direct implementation links require separate table evidence. The precise Objective 6.1 wording is separately byte-anchored in the one-page summary receipt.",
+          "digest": "sha256:3dae8eb3077df24dd4b319d82ade1c65929d5b0cb8e9b55de4cc975468f33b23",
+          "parserVersion": "reviewed-public-summary-1",
+          "verification": "SOURCE_OBSERVED_NOT_FORMAL_ADMISSION",
+          "uncertainty": "Current legal consolidation, reuse permission and authorised human admission not independently established."
+        }
+      ]
+    },
+    "lineage": {
+      "supersedes": [
+        "smrc-csp-full"
+      ],
+      "revisionLabel": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743"
+    },
+    "corroboratingEvidence": [],
+    "access": {
+      "state": "AVAILABLE",
+      "checkedAt": "2026-10-30T00:52:00.165473+00:00",
+      "reason": "Actual inherited-proxy HTTPS 200 and local original-byte digest verification"
+    },
+    "revisionId": "sha256:d4a19c324b52d1d8990ef037437166d8665ef50198a2a3d69db04cb172ae0755"
+  },
+  "populationRecords": [],
+  "actualInventoryInputs": [],
+  "checks": [
+    {
+      "name": "observed29.9_times_unverified_population_is_rejected",
+      "executed": true,
+      "error": "UNADMITTED_INPUTS"
+    },
+    {
+      "name": "absent_population_is_rejected",
+      "executed": true,
+      "error": "POPULATION_DENOMINATOR_UNKNOWN"
+    },
+    {
+      "name": "governed_kernel_public_rate_total_is_rejected",
+      "executed": true,
+      "error": "UNADMITTED_INPUTS"
+    },
+    {
+      "name": "governed_kernel_public_rate_conversion_is_rejected",
+      "executed": true,
+      "error": "UNADMITTED_INPUTS"
+    },
+    {
+      "name": "synthetic_water_unit_cost_is_reproducible",
+      "executed": true,
+      "result": {
+        "format": "atlas-derivation-1",
+        "methodVersion": "atlas-ledger-1",
+        "request": {
+          "formula": "COST_PER_OUTPUT",
+          "inputIds": [
+            "synthetic-water-spend",
+            "synthetic-water-output"
+          ]
+        },
+        "inputs": [
+          {
+            "id": "synthetic-water-spend",
+            "revisionId": "sha256:7a543bc8e429b5a9538e03de83636d75ee4ca649e671ef976dbf90c99ee7cf3b",
+            "provenance": null
+          },
+          {
+            "id": "synthetic-water-output",
+            "revisionId": "sha256:96c6c483e8ca3bf626ca497eb1eb657cd55ee4008bf2bc667a4f52c2e67b2413",
+            "provenance": null
+          }
+        ],
+        "result": {
+          "value": 2000,
+          "unit": "AUD/ML",
+          "status": "SYNTHETIC_SCENARIO",
+          "ledger": "FINANCIAL_RESOURCE",
+          "quality": "RESEARCH_FIXTURE",
+          "uncertainty": "Not real Council evidence; input uncertainties remain",
+          "causalAttribution": "UNKNOWN"
+        },
+        "trust": "SELF_ATTESTED",
+        "externalWitness": "EXTERNAL_WITNESS_UNKNOWN",
+        "digest": "sha256:b87a7fee903a8619819051dcc56fd96e8fb326492094a5cd5ff8c98488795d89"
+      }
+    },
+    {
+      "name": "synthetic_budget_variance_is_reproducible",
+      "executed": true,
+      "result": {
+        "format": "atlas-derivation-1",
+        "methodVersion": "atlas-ledger-1",
+        "request": {
+          "formula": "BUDGET_VARIANCE",
+          "inputIds": [
+            "synthetic-water-budget",
+            "synthetic-water-spend"
+          ]
+        },
+        "inputs": [
+          {
+            "id": "synthetic-water-budget",
+            "revisionId": "sha256:1f5a46f1b8e0135936057dd0bea006a70d3ee2f3c917c27c3cda21a13e7fba88",
+            "provenance": null
+          },
+          {
+            "id": "synthetic-water-spend",
+            "revisionId": "sha256:7a543bc8e429b5a9538e03de83636d75ee4ca649e671ef976dbf90c99ee7cf3b",
+            "provenance": null
+          }
+        ],
+        "result": {
+          "value": -6000,
+          "unit": "AUD",
+          "status": "SYNTHETIC_SCENARIO",
+          "ledger": "FINANCIAL_RESOURCE",
+          "quality": "RESEARCH_FIXTURE",
+          "uncertainty": "Not real Council evidence; input uncertainties remain",
+          "causalAttribution": "UNKNOWN"
+        },
+        "trust": "SELF_ATTESTED",
+        "externalWitness": "EXTERNAL_WITNESS_UNKNOWN",
+        "digest": "sha256:90176b8080e390a93a080bac3ed22a56b0b1cd5d6aee97cddb9059e970adb467"
+      }
+    },
+    {
+      "name": "area_conversion_is_synthetic_only",
+      "executed": true,
+      "result": {
+        "format": "atlas-derivation-1",
+        "methodVersion": "atlas-ledger-1",
+        "request": {
+          "formula": "UNIT_CONVERSION",
+          "inputIds": [
+            "synthetic-land-area"
+          ],
+          "outputUnit": "km2"
+        },
+        "inputs": [
+          {
+            "id": "synthetic-land-area",
+            "revisionId": "sha256:dd636063b0e84e17a5873365d5ea304693c120508eb2d22c349093f8802406d3",
+            "provenance": null
+          }
+        ],
+        "result": {
+          "value": 0.5,
+          "unit": "km2",
+          "status": "SYNTHETIC_SCENARIO",
+          "ledger": "PHYSICAL_ENVIRONMENTAL",
+          "quality": "RESEARCH_FIXTURE",
+          "uncertainty": "Not real Council evidence; input uncertainties remain",
+          "causalAttribution": "UNKNOWN"
+        },
+        "trust": "SELF_ATTESTED",
+        "externalWitness": "EXTERNAL_WITNESS_UNKNOWN",
+        "digest": "sha256:7b790ca83515768692d492afb013a361b4a17ebe58a0dd44f2f6011d076f6727"
+      }
+    },
+    {
+      "name": "carbon_to_council_water_known_link",
+      "executed": true,
+      "result": {
+        "status": "UNKNOWN",
+        "path": [],
+        "nodeIds": [],
+        "reason": "No officially admitted authority-backed relationships are configured.",
+        "truncated": false
+      }
+    },
+    {
+      "name": "carbon_to_received_csp_rawsource_path",
+      "executed": true,
+      "result": {
+        "status": "UNKNOWN",
+        "truncated": false,
+        "reason": "No eligible bounded relationship/input path; missing links are not inferred."
+      }
+    },
+    {
+      "name": "carbon_pin_currentness_before_and_after_full_csp_receipt_withdrawal",
+      "executed": true,
+      "result": {
+        "before": {
+          "integrity": true,
+          "current": true,
+          "assessment": {
+            "current": true,
+            "researchStatus": "PINNED_RESEARCH_PATH_ONLY",
+            "invalidations": [],
+            "gaps": [
+              "OFFICIAL_ADMISSION_UNKNOWN"
+            ],
+            "geographicContext": "NOT_PROOF_OF_APPLICABILITY",
+            "currentLaw": "UNKNOWN",
+            "officialUse": "REJECTED_UNKNOWN_ADMISSION",
+            "arithmetic": "NOT_PERFORMED"
+          }
+        },
+        "after": {
+          "integrity": true,
+          "current": true,
+          "assessment": {
+            "current": true,
+            "researchStatus": "PINNED_RESEARCH_PATH_ONLY",
+            "invalidations": [],
+            "gaps": [
+              "OFFICIAL_ADMISSION_UNKNOWN"
+            ],
+            "geographicContext": "NOT_PROOF_OF_APPLICABILITY",
+            "currentLaw": "UNKNOWN",
+            "officialUse": "REJECTED_UNKNOWN_ADMISSION",
+            "arithmetic": "NOT_PERFORMED"
+          }
+        },
+        "storedMetricStillPresent": 29.9,
+        "originalDatasetUnchanged": true
+      }
+    },
+    {
+      "name": "own_review_planned_hours_are_assumptions_not_council_actuals",
+      "executed": true,
+      "result": {
+        "planCount": 1,
+        "assumedPlannedHours": 1.5,
+        "unknownPlannedHours": 0,
+        "actualHours": "UNKNOWN",
+        "financialSpend": "UNKNOWN",
+        "actualOutcome": "UNKNOWN",
+        "meaning": "Independent source-review planning only; not Council workload or compliance"
+      }
+    }
+  ]
+}

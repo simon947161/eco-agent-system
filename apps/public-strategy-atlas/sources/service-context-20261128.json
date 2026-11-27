@@ -1,0 +1,456 @@
+[
+  {
+    "format": "csoi-public-knowledge-1",
+    "sourceId": "csoi:smrc-water-amp-2025:20261030",
+    "sourceRevision": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+    "sourcePageCount": 56,
+    "rights": "UNKNOWN",
+    "currentVersion": "UNKNOWN",
+    "officialAdmission": "PENDING",
+    "originalBytesCommitted": false,
+    "records": [
+      {
+        "id": "csoi:knowledge:service-context:asset",
+        "kind": "DocumentRevision",
+        "category": "SERVICE_DOCUMENT",
+        "code": "asset",
+        "parentId": null,
+        "title": "Water Asset Management Plan 2025–2035",
+        "summary": "Bounded public-source research for water-service context.",
+        "locator": "Asset Management Plan Water 2025–2035, PDF 1",
+        "anchor": {
+          "pdfPage": 1,
+          "normalizedPageDigest": "sha256:0f1512bdf8f2e4d9edcea4babe12dbf38422c31698dd56bed2a0fe371cfafe9b",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1"
+        },
+        "facts": {
+          "sourceRevision": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+          "boundary": "Council water network, service-wide",
+          "sourcePeriod": "2025–2035 asset plan; inventory observation date UNKNOWN",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "totalPages": 56,
+          "reviewedPages": [
+            1,
+            8
+          ]
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:asset:section:1",
+        "kind": "ContentBlock",
+        "category": "SOURCE_SECTION",
+        "code": "1",
+        "parentId": "csoi:knowledge:service-context:asset",
+        "title": "Water service infrastructure",
+        "summary": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived.",
+        "locator": "Asset Management Plan Water 2025–2035, PDF 8",
+        "anchor": {
+          "pdfPage": 8,
+          "normalizedPageDigest": "sha256:83bd288bd5d53a77d48149ede305333de34c2425fc374c4224b34abdd6aca3dc",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1"
+        },
+        "facts": {
+          "sourceRevision": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+          "boundary": "Council water network, service-wide",
+          "sourcePeriod": "2025–2035 asset plan; inventory observation date UNKNOWN",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived."
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:asset:section:2",
+        "kind": "ContentBlock",
+        "category": "SOURCE_SECTION",
+        "code": "2",
+        "parentId": "csoi:knowledge:service-context:asset:section:1",
+        "title": "Water network inventory and supply",
+        "summary": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived.",
+        "locator": "Asset Management Plan Water 2025–2035, PDF 8",
+        "anchor": {
+          "pdfPage": 8,
+          "normalizedPageDigest": "sha256:83bd288bd5d53a77d48149ede305333de34c2425fc374c4224b34abdd6aca3dc",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1"
+        },
+        "facts": {
+          "sourceRevision": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+          "boundary": "Council water network, service-wide",
+          "sourcePeriod": "2025–2035 asset plan; inventory observation date UNKNOWN",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived."
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:asset:water-mains",
+        "kind": "QuantifiedObservation",
+        "category": "SERVICE_OBSERVATION",
+        "code": "water-mains",
+        "parentId": "csoi:knowledge:service-context:asset:section:2",
+        "title": "Water mains length",
+        "summary": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived.",
+        "locator": "Asset Management Plan Water 2025–2035, PDF 8",
+        "anchor": {
+          "pdfPage": 8,
+          "normalizedPageDigest": "sha256:83bd288bd5d53a77d48149ede305333de34c2425fc374c4224b34abdd6aca3dc",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1",
+          "bbox": [
+            56,
+            116,
+            360,
+            132
+          ]
+        },
+        "facts": {
+          "sourceRevision": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+          "boundary": "Council water network, service-wide",
+          "sourcePeriod": "2025–2035 asset plan; inventory observation date UNKNOWN",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived.",
+          "cellDigest": "sha256:51b20342b2a517b9a20bdc15efe28b69e11c01f5760929628fce42ee05e5a159",
+          "nature": "NETWORK_LENGTH",
+          "computability": "NOT_COMPUTABLE",
+          "baseline": {
+            "value": 315,
+            "scale": 1,
+            "unit": "km",
+            "role": "PUBLISHED_SERVICE_OBSERVATION"
+          }
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:asset:reservoirs",
+        "kind": "QuantifiedObservation",
+        "category": "SERVICE_OBSERVATION",
+        "code": "reservoirs",
+        "parentId": "csoi:knowledge:service-context:asset:section:2",
+        "title": "Reservoir inventory",
+        "summary": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived.",
+        "locator": "Asset Management Plan Water 2025–2035, PDF 8",
+        "anchor": {
+          "pdfPage": 8,
+          "normalizedPageDigest": "sha256:83bd288bd5d53a77d48149ede305333de34c2425fc374c4224b34abdd6aca3dc",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1",
+          "bbox": [
+            56,
+            161,
+            320,
+            178
+          ]
+        },
+        "facts": {
+          "sourceRevision": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+          "boundary": "Council water network, service-wide",
+          "sourcePeriod": "2025–2035 asset plan; inventory observation date UNKNOWN",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived.",
+          "cellDigest": "sha256:1807df4112b82d7fc144c0030c71c681c24dae5b822842b5a3b742bb53c7b194",
+          "nature": "ASSET_COUNT",
+          "computability": "NOT_COMPUTABLE",
+          "baseline": {
+            "value": 25,
+            "scale": 1,
+            "unit": "reservoirs",
+            "role": "PUBLISHED_SERVICE_OBSERVATION"
+          }
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:asset:average-supply",
+        "kind": "QuantifiedObservation",
+        "category": "SERVICE_OBSERVATION",
+        "code": "average-supply",
+        "parentId": "csoi:knowledge:service-context:asset:section:2",
+        "title": "Average network water supply",
+        "summary": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived.",
+        "locator": "Asset Management Plan Water 2025–2035, PDF 8",
+        "anchor": {
+          "pdfPage": 8,
+          "normalizedPageDigest": "sha256:83bd288bd5d53a77d48149ede305333de34c2425fc374c4224b34abdd6aca3dc",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1",
+          "bbox": [
+            56,
+            58,
+            465,
+            89
+          ]
+        },
+        "facts": {
+          "sourceRevision": "sha256:95ec53bf8e2f801e56622041c405a1b52defa918b512047e0ddc967a334dda92",
+          "boundary": "Council water network, service-wide",
+          "sourcePeriod": "2025–2035 asset plan; inventory observation date UNKNOWN",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "Network-wide inventory and average supply. Local project share, observation interval and design capacity are unknown. The nearby asset-value chart labels wastewater; no valuation is derived.",
+          "cellDigest": "sha256:671d24caddda2c0edc5596ed99717bc0b8c8eb423407f0651c1d2cafff64319b",
+          "nature": "AVERAGE_FLOW_RATE",
+          "computability": "NOT_COMPUTABLE",
+          "baseline": {
+            "value": 7.5,
+            "scale": 1,
+            "unit": "ML/day",
+            "role": "PUBLISHED_SERVICE_OBSERVATION"
+          }
+        },
+        "relations": []
+      }
+    ]
+  },
+  {
+    "format": "csoi-public-knowledge-1",
+    "sourceId": "csoi:smrc-annual-report-2025-retrieved:20261030",
+    "sourceRevision": "sha256:39fd5776dc2578cdaaee49939841b1ad9300fc6d13f131212c52db4e93e72d4b",
+    "sourcePageCount": 241,
+    "rights": "UNKNOWN",
+    "currentVersion": "UNKNOWN",
+    "officialAdmission": "PENDING",
+    "originalBytesCommitted": false,
+    "records": [
+      {
+        "id": "csoi:knowledge:service-context:report",
+        "kind": "DocumentRevision",
+        "category": "SERVICE_DOCUMENT",
+        "code": "report",
+        "parentId": null,
+        "title": "Annual Report 2024–25",
+        "summary": "Bounded public-source research for water-service context.",
+        "locator": "2024/25 Annual Report(PDF, 57MB), PDF 1",
+        "anchor": {
+          "pdfPage": 1,
+          "normalizedPageDigest": "sha256:a8e15f703bb156cd1f751929573303e3a7fa822ed3a08489ce2893adc42fabdd",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1"
+        },
+        "facts": {
+          "sourceRevision": "sha256:39fd5776dc2578cdaaee49939841b1ad9300fc6d13f131212c52db4e93e72d4b",
+          "boundary": "Reticulated water supplies sampled across the Council area",
+          "sourcePeriod": "FY2024-25",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "totalPages": 241,
+          "reviewedPages": [
+            1,
+            34
+          ]
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:report:section:1",
+        "kind": "ContentBlock",
+        "category": "SOURCE_SECTION",
+        "code": "1",
+        "parentId": "csoi:knowledge:service-context:report",
+        "title": "Drinking-water sampling",
+        "summary": "The annual report counts samples across the supplied network. The number passing, the Nimmitabel subset and the effect of any later project are unknown.",
+        "locator": "2024/25 Annual Report(PDF, 57MB), PDF 34",
+        "anchor": {
+          "pdfPage": 34,
+          "normalizedPageDigest": "sha256:6b99180d9c9fea882a3ae07708e9572b2c04f4a2ffa8cf3cc0621f0caf5d4439",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1"
+        },
+        "facts": {
+          "sourceRevision": "sha256:39fd5776dc2578cdaaee49939841b1ad9300fc6d13f131212c52db4e93e72d4b",
+          "boundary": "Reticulated water supplies sampled across the Council area",
+          "sourcePeriod": "FY2024-25",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "The annual report counts samples across the supplied network. The number passing, the Nimmitabel subset and the effect of any later project are unknown."
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:report:water-samples",
+        "kind": "QuantifiedObservation",
+        "category": "SERVICE_OBSERVATION",
+        "code": "water-samples",
+        "parentId": "csoi:knowledge:service-context:report:section:1",
+        "title": "Water samples reported for FY2024–25",
+        "summary": "The annual report counts samples across the supplied network. The number passing, the Nimmitabel subset and the effect of any later project are unknown.",
+        "locator": "2024/25 Annual Report(PDF, 57MB), PDF 34",
+        "anchor": {
+          "pdfPage": 34,
+          "normalizedPageDigest": "sha256:6b99180d9c9fea882a3ae07708e9572b2c04f4a2ffa8cf3cc0621f0caf5d4439",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1",
+          "bbox": [
+            25,
+            49,
+            815,
+            89
+          ]
+        },
+        "facts": {
+          "sourceRevision": "sha256:39fd5776dc2578cdaaee49939841b1ad9300fc6d13f131212c52db4e93e72d4b",
+          "boundary": "Reticulated water supplies sampled across the Council area",
+          "sourcePeriod": "FY2024-25",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "The annual report counts samples across the supplied network. The number passing, the Nimmitabel subset and the effect of any later project are unknown.",
+          "cellDigest": "sha256:844d6266d8e87b05d41901d209b7f11c9178276792d1bcefcb51063b822c8d29",
+          "nature": "REPORTED_SAMPLE_COUNT",
+          "computability": "NOT_COMPUTABLE",
+          "baseline": {
+            "value": 536,
+            "scale": 1,
+            "unit": "samples",
+            "role": "PUBLISHED_SERVICE_OBSERVATION"
+          }
+        },
+        "relations": []
+      }
+    ]
+  },
+  {
+    "format": "csoi-public-knowledge-1",
+    "sourceId": "csoi:smrc-resourcing-2026:20261030",
+    "sourceRevision": "sha256:f667d09062b32681e26662491af261ec04655975959ef5b18b6f11d41119cb33",
+    "sourcePageCount": 439,
+    "rights": "UNKNOWN",
+    "currentVersion": "UNKNOWN",
+    "officialAdmission": "PENDING",
+    "originalBytesCommitted": false,
+    "records": [
+      {
+        "id": "csoi:knowledge:service-context:fund",
+        "kind": "DocumentRevision",
+        "category": "SERVICE_DOCUMENT",
+        "code": "fund",
+        "parentId": null,
+        "title": "Resourcing Strategy · 2026 revision",
+        "summary": "Bounded public-source research for water-service context.",
+        "locator": "Resourcing Strategy 2025-2029, 2026 revision(PDF, 46MB), PDF 1",
+        "anchor": {
+          "pdfPage": 1,
+          "normalizedPageDigest": "sha256:6d63c5419cc095aa113eb43779ca5c990e92b07283d7ca4c5afb3b0e96038a3a",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1"
+        },
+        "facts": {
+          "sourceRevision": "sha256:f667d09062b32681e26662491af261ec04655975959ef5b18b6f11d41119cb33",
+          "boundary": "Water-service fund across the Council area",
+          "sourcePeriod": "2026–2036 financial plan",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "totalPages": 439,
+          "reviewedPages": [
+            1,
+            26
+          ]
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:fund:section:1",
+        "kind": "ContentBlock",
+        "category": "SOURCE_SECTION",
+        "code": "1",
+        "parentId": "csoi:knowledge:service-context:fund",
+        "title": "Long-term financial plan",
+        "summary": "The financial plan distinguishes water-service revenues from the general fund. A named project allocation or payment cannot be inferred from this passage.",
+        "locator": "Resourcing Strategy 2025-2029, 2026 revision(PDF, 46MB), PDF 26, LTFP printed p.15",
+        "anchor": {
+          "pdfPage": 26,
+          "normalizedPageDigest": "sha256:83443697c339c89ad03a7be2c79aebfdd63f815b2f226342862bf3c23dcb406c",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1"
+        },
+        "facts": {
+          "sourceRevision": "sha256:f667d09062b32681e26662491af261ec04655975959ef5b18b6f11d41119cb33",
+          "boundary": "Water-service fund across the Council area",
+          "sourcePeriod": "2026–2036 financial plan",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "The financial plan distinguishes water-service revenues from the general fund. A named project allocation or payment cannot be inferred from this passage."
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:fund:section:2",
+        "kind": "ContentBlock",
+        "category": "SOURCE_SECTION",
+        "code": "2",
+        "parentId": "csoi:knowledge:service-context:fund:section:1",
+        "title": "Water revenue · section 4.4.4",
+        "summary": "The financial plan distinguishes water-service revenues from the general fund. A named project allocation or payment cannot be inferred from this passage.",
+        "locator": "Resourcing Strategy 2025-2029, 2026 revision(PDF, 46MB), PDF 26, LTFP printed p.15",
+        "anchor": {
+          "pdfPage": 26,
+          "normalizedPageDigest": "sha256:83443697c339c89ad03a7be2c79aebfdd63f815b2f226342862bf3c23dcb406c",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1"
+        },
+        "facts": {
+          "sourceRevision": "sha256:f667d09062b32681e26662491af261ec04655975959ef5b18b6f11d41119cb33",
+          "boundary": "Water-service fund across the Council area",
+          "sourcePeriod": "2026–2036 financial plan",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "The financial plan distinguishes water-service revenues from the general fund. A named project allocation or payment cannot be inferred from this passage."
+        },
+        "relations": []
+      },
+      {
+        "id": "csoi:knowledge:service-context:fund:water-fund",
+        "kind": "ResourceAccount",
+        "category": "FUND_CONTEXT",
+        "code": "water-fund",
+        "parentId": "csoi:knowledge:service-context:fund:section:2",
+        "title": "Water-service revenue boundary",
+        "summary": "The financial plan distinguishes water-service revenues from the general fund. A named project allocation or payment cannot be inferred from this passage.",
+        "locator": "Resourcing Strategy 2025-2029, 2026 revision(PDF, 46MB), PDF 26, LTFP printed p.15",
+        "anchor": {
+          "pdfPage": 26,
+          "normalizedPageDigest": "sha256:83443697c339c89ad03a7be2c79aebfdd63f815b2f226342862bf3c23dcb406c",
+          "parserVersion": "pymupdf-1.26.6-nfkc-whitespace-v1",
+          "bbox": [
+            69,
+            321,
+            518,
+            360
+          ]
+        },
+        "facts": {
+          "sourceRevision": "sha256:f667d09062b32681e26662491af261ec04655975959ef5b18b6f11d41119cb33",
+          "boundary": "Water-service fund across the Council area",
+          "sourcePeriod": "2026–2036 financial plan",
+          "actualOutcome": "UNKNOWN",
+          "actualSpend": "UNKNOWN",
+          "officialAdmission": "PENDING",
+          "humanReview": "PENDING",
+          "qualifier": "The financial plan distinguishes water-service revenues from the general fund. A named project allocation or payment cannot be inferred from this passage.",
+          "cellDigest": "sha256:62dca5760d5d1f6079ed4fd6524179c41d2507321f807e57300ca37a811126c0",
+          "projectAllocation": "UNKNOWN"
+        },
+        "relations": []
+      }
+    ]
+  }
+]

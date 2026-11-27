@@ -1,0 +1,27 @@
+{
+  "id": "appgprj_6ae5b063565c8191802c9d7f7eb3214b",
+  "status": "active",
+  "version": 2,
+  "url": "https://council-strategy-intelligence.minshu.chatgpt.site",
+  "versionId": "appgprj_6ae5b063565c8191802c9d7f7eb3214b~appgver_cb01c72c5bf48191bc3fa90a8ee3183f",
+  "sourceCommit": "74f240e27cbfbbec5dffe225259eee1d42e58798",
+  "deploymentId": "appgdep_6ae7d38f16108191bffb543c69b2cd79",
+  "accessMode": "custom",
+  "policy": {
+    "revision": 1,
+    "accessMode": "custom",
+    "users": [
+      {
+        "role": "owner",
+        "external": false
+      }
+    ],
+    "editors": [],
+    "allowedAccountUserIdCount": 1,
+    "allowedWorkspaceGroupIdCount": 0,
+    "allowedTenantGroupIdCount": 0,
+    "groupCount": 0,
+    "externalVisitorCount": 0
+  },
+  "policyFingerprint": "sha256:e3acfdb520e195e025cdcd425fee35a3032e6e80d2f093ec659514361e87aecc"
+}

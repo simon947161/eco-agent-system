@@ -1,0 +1,273 @@
+{
+  "format": "CSOI_LSPS_INDEPENDENT_SOURCE_FINDING_RESOLUTION_V1",
+  "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "actualAppFileSHA256": "e50cbeb9073d4b901a2832939cf451f6391091455c883dd29bb5c3555026287f",
+  "rows": [
+    {
+      "initialFindingId": "LSPS-NARR-P012-STRATEGIC-ROLE",
+      "originalMeaningToPreserve": "LSPS用于指导其他计划的审查；落实区域计划仍限与本地相关部分。对齐表引用CSP2040，不能直接替换为CSP2035。SAP与LEP路径须分开。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p012-b12-u01",
+        "csoi:lsps2020:narrative:p012-image-b19",
+        "csoi:lsps2020:narrative:p014-b01-u01",
+        "csoi:lsps2020:narrative:p017-image-b01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "保留历史文档版本、适用相关性和战略性质；现行法律、跨版本策略关系未知。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P018-CONSULTATION",
+      "originalMeaningToPreserve": "咨询数据属于2019和2020历史。源文把12次活动称face-to-face，却同时写6次现场、6次线上；前三优先事项位于嵌入图像。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p018-b11-u01",
+        "csoi:lsps2020:narrative:p018-b12-u01",
+        "csoi:lsps2020:narrative:p018-image-b19"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "保留时间和措辞歧义，不声称当前代表性民意；图像中的农业保护、工商增长效率、本地规划取向应可检查。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P019-INVESTMENT-SCOPE",
+      "originalMeaningToPreserve": "62亿涉及Snowy2.0与其他可再生能源，45亿只谈Snowy2.0；1.42亿是历史区域旅游投资说法。2040愿景仍是愿景。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p006-b10-u01",
+        "csoi:lsps2020:narrative:p019-image-b03",
+        "csoi:lsps2020:narrative:p020-b09-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "不把不同范围金额相加或当Council实际支出、既有收益。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P023-HERITAGE-CONDITIONS",
+      "originalMeaningToPreserve": "适应性再利用以不损害遗产意义为条件；Aboriginal评估除敏感区，还涉及可能损害文化对象的开发，并非只看对象是否重大。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p023-b05-u01",
+        "csoi:lsps2020:narrative:p023-b09-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "作为历史计划条件保留，不升级成当前法律义务或无限制再利用许可。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P025-RENEWABLE-SITING",
+      "originalMeaningToPreserve": "大型可再生能源支持限景观保护区及高环境价值区之外；城市发展尽可能避开山脊，工业地另需住宅缓冲。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p025-b07-u01",
+        "csoi:lsps2020:narrative:p025-b09-u04",
+        "csoi:lsps2020:narrative:p031-b03-u03"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "保留空间排除和各自语气；不得改成任何地点均受支持或已获开发许可。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P029-CARBON-SCOPE",
+      "originalMeaningToPreserve": "图10写2017区域排放676000tCO2e，图下注引用2019；段落却说排除甲烷/氧化亚氮。农林复合经营效益仅为适当实施时的可能性。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p029-b08-u01",
+        "csoi:lsps2020:narrative:p029-b09-u01",
+        "csoi:lsps2020:narrative:p029-image-b02",
+        "csoi:lsps2020:narrative:p030-image-b02"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "保留年份及图文口径张力，不自行调和为完整GHG清单、Council运营排放、已核证抵消或碳信用。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P030-BASIX-AUTHORITY",
+      "originalMeaningToPreserve": "2020叙述称Council不能提高住宅最低能水标准，拟采取BASIX倡议与DCP研究。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p030-b05-u01",
+        "csoi:lsps2020:narrative:p031-b03-u04"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "不把历史倡议变成已生效强制标准，也不声称已核验现行法律。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P036-SAP-CONDITIONAL",
+      "originalMeaningToPreserve": "减少规划负担的愿景以开发符合总体规划为条件；证据、土地限制、敏感用途缓冲与社区需求仍在。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p035-b08-u01",
+        "csoi:lsps2020:narrative:p036-b08-u01",
+        "csoi:lsps2020:narrative:p036-b09-u01",
+        "csoi:lsps2020:narrative:p039-b03-u04"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "不得表达无条件快速审批、已批准铁路利益或可直接使用的工业用地。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P041-PRIORITY-CROSSREF",
+      "originalMeaningToPreserve": "农业土地保护段落印刷引用PlanningPriority1，而文件的Priority1是遗产。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p041-b05-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "标明原件交叉引用疑点，不静默改成Priority5或构造正式对应关系。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P043-HOUSING-CONDITIONS",
+      "originalMeaningToPreserve": "并非全部新房必须是适应性住房；农村住宅选址仅初步考虑；3至4层推广仅Cooma主街附近。图中的2026仍是预测，卧室图内标题限定独立住宅。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p043-b07-u01",
+        "csoi:lsps2020:narrative:p044-b05-u01",
+        "csoi:lsps2020:narrative:p044-b06-u01",
+        "csoi:lsps2020:narrative:p044-image-b11",
+        "csoi:lsps2020:narrative:p045-b03-u01",
+        "csoi:lsps2020:narrative:p045-b07-u04"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "不得宣称普遍住宅要求、区域统一高度许可、当前人口实绩或已批准农村改区。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P047-TRANSPORT-CONTINGENCIES",
+      "originalMeaningToPreserve": "Bobeyan利益取决于铺装；铁路与步道为可行性/替代方案；机场扩张只是可能选项，100万为历史可行性调查投资。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p047-b05-u01",
+        "csoi:lsps2020:narrative:p047-b08-u01",
+        "csoi:lsps2020:narrative:p047-b10-u01",
+        "csoi:lsps2020:narrative:p049-b03-u01",
+        "csoi:lsps2020:narrative:p052-b05-u04"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "保留条件和场景，不冒称道路、铁路或机场已经建成或获批。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P054-SCENARIOS-AUTHORITY",
+      "originalMeaningToPreserve": "2041人口情景取决于假设；Council通信设施交付角色有限，以政策/倡议为主；增长须匹配基础设施能力。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p053-image-b07",
+        "csoi:lsps2020:narrative:p054-b03-u01",
+        "csoi:lsps2020:narrative:p054-b05-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "不把情景增量当真实人口、正式考核目标或Council独占通信责任。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P056-BOMBALA-IF-REQUIRED",
+      "originalMeaningToPreserve": "现有Bombala分区被认为足够支持20年增长；新增就业用地仅在有需要时提供。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p056-b09-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "必须保留需求条件与现有容量判断，不改成无条件释放土地。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P058-COOMA-BALANCE",
+      "originalMeaningToPreserve": "Cooma强调保护山丘与高环境价值地、填充发展和控制外扩，也提出未来就业/住宅规划。防止碎片化句子存在印刷措辞错误。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p058-b13-u02",
+        "csoi:lsps2020:narrative:p059-b02-u01",
+        "csoi:lsps2020:narrative:p059-b06-u01",
+        "csoi:lsps2020:narrative:p059-b06-u02"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "保持不同目标的制约关系；不把未来释放土地理解成无条件改区。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P063-SAP-BOUNDARY",
+      "originalMeaningToPreserve": "SAP须考虑社区意见、不能以社区为代价；具体总体规划边界待规划过程确认，湖岸连接还须结合SnowyHydro运营。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p062-b07-u01",
+        "csoi:lsps2020:narrative:p062-b10-u01",
+        "csoi:lsps2020:narrative:p063-b04-u01",
+        "csoi:lsps2020:narrative:p063-b09-u01",
+        "csoi:lsps2020:narrative:p063-b10-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "保留调查/未来性质、社区与运营条件；不是最终分区或无限制湖岸通行授权。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P073-MICHELAGO-RAIL-GROWTH",
+      "originalMeaningToPreserve": "铁路联通须重新开放；Michelago可增长为镇，也可能保持村庄。区域计划对Canberra近郊扩村成本效益的顾虑须处理。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p073-b05-u01",
+        "csoi:lsps2020:narrative:p073-b06-u01",
+        "csoi:lsps2020:narrative:p073-b09-u01",
+        "csoi:lsps2020:narrative:p074-b08-u01",
+        "csoi:lsps2020:narrative:p074-b15-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "不得承诺通勤铁路或预定增长批准；保留大地块、景观与水质条件。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P078-BREDBO-DOUBLE-CONDITION",
+      "originalMeaningToPreserve": "Bredbo增长压力以铁路再次运营为条件，尤其还涉及往Canberra的通勤铁路；铁路步道是另一场景。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p078-b07-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "两层条件与替代场景必须保留，不能表达已承诺通勤服务或已批准商业改区。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P086-SMITHS-ROAD-FOUR-FACTORS",
+      "originalMeaningToPreserve": "SmithsRoad分区/地块调整只是可能，须考虑生物多样性、山火、通行及地下水脆弱性；缓冲带在必要时设置，地块面积描述不是法定下限。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p086-b08-u01",
+        "csoi:lsps2020:narrative:p086-b12-u01",
+        "csoi:lsps2020:narrative:p086-b13-u01",
+        "csoi:lsps2020:narrative:p087-b03-u01",
+        "csoi:lsps2020:narrative:p087-b05-u01",
+        "csoi:lsps2020:narrative:p087-b07-u01",
+        "csoi:lsps2020:narrative:p087-b09-u01",
+        "csoi:lsps2020:narrative:p089-b04-u06"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "四项考虑及暂定语气不可删除；不产生自动改区或新的数字化最小地块规则。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P086-REGIONAL-DATA-SCOPE",
+      "originalMeaningToPreserve": "图27的2011羊毛16%、牛奶14%是SouthEastRegion占NSW产量，来源年份2017；不同农业/林业数据的行业和分母也不相同。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p035-image-b02",
+        "csoi:lsps2020:narrative:p085-b07-u01",
+        "csoi:lsps2020:narrative:p086-image-b02"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "不可当SnowyMonaro自身份额、当前产出，或直接合并不同口径金额和就业比例。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P090-TIMING-MONITORING",
+      "originalMeaningToPreserve": "实施时段自采纳起算，ongoing是事项出现时；至少7年复审和实施报告框架不等于实际已有报告或已完成监测。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p012-b04-u01",
+        "csoi:lsps2020:narrative:p012-b12-u01",
+        "csoi:lsps2020:narrative:p012-b16-u01",
+        "csoi:lsps2020:narrative:p090-b04-u01",
+        "csoi:lsps2020:narrative:p090-b05-u01",
+        "csoi:lsps2020:narrative:p090-b06-u01",
+        "csoi:lsps2020:narrative:p090-b07-u01",
+        "csoi:lsps2020:narrative:p090-b08-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "不制造当前截止日、持续每日任务、已核验交付或原文没有的监测KPI。"
+    },
+    {
+      "initialFindingId": "LSPS-NARR-P076-HIDDEN-TEXT",
+      "originalMeaningToPreserve": "pypdf抽出了Michelago地图文字，但原页可见内容是OldAdaminaby照片和Adaminaby叙述。",
+      "actualUnitIds": [
+        "csoi:lsps2020:narrative:p076-b10-u01",
+        "csoi:lsps2020:narrative:p076-b21-u01"
+      ],
+      "resolution": "PRESERVED_IN_REVIEWED_ACTUAL_UNITS",
+      "reviewMeaning": "Historical condition/scope retained without claiming current-law or actual delivery verification.",
+      "remainingSourceUncertainty": "已通过原页视觉复查纠正；残留/隐蔽文字不作为可见原文或地图计数依据。"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "format": "atlas-source-access-retest-1",
+  "tlsVerification": true,
+  "proxy": "inherited",
+  "redirectPolicy": "HTTPS_SAME_EXACT_HOST",
+  "attempts": [
+    {
+      "name": "directory",
+      "url": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+      "attemptedAt": "2026-10-29T21:39:06.096726+00:00",
+      "method": "GET",
+      "timeoutSeconds": 20,
+      "maxBytes": 1048576,
+      "httpStatus": 200,
+      "classification": "HTTP_SUCCESS",
+      "bytes": 174872,
+      "rawDigest": "sha256:2eaccf43d00daaf09c3e7fb61ece3410240341cf52405a870c275fe6e9528c63",
+      "finalUrl": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+      "contentType": "text/html; charset=utf-8",
+      "lastModified": null,
+      "etag": null,
+      "elapsedSeconds": 1.576
+    },
+    {
+      "name": "csp-summary",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/csp-2035-plan-on-a-page.pdf",
+      "attemptedAt": "2026-10-29T21:39:07.673100+00:00",
+      "method": "GET",
+      "timeoutSeconds": 20,
+      "maxBytes": 2097152,
+      "httpStatus": 200,
+      "classification": "HTTP_SUCCESS",
+      "bytes": 416031,
+      "rawDigest": "sha256:1f1be67a25c0c2468b7f69d5959300430b840ebe5beb05eb1e77dd8516c3261e",
+      "finalUrl": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/4/council/ipr/csp/csp-2035-plan-on-a-page.pdf",
+      "contentType": "application/pdf",
+      "lastModified": "Thu, 08 May 2025 05:45:00 GMT",
+      "etag": "\"104f802b-1e3d-4e34-935f-25edb28b141d\"",
+      "elapsedSeconds": 0.429
+    }
+  ]
+}

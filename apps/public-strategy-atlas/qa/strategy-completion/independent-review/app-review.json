@@ -1,0 +1,84 @@
+{
+  "format": "csoi-independent-app-review-1",
+  "at": "2026-11-01T23:29:50.872401+00:00",
+  "mode": "READ_ONLY_CODE_REVIEW_AND_ONE_ISOLATED_IN_MEMORY_REPRODUCTION",
+  "reviewedFiles": {
+    "csoi-strategy-research.js": "sha256:720b08f96f4c301b8fe897af8a8a43cce2039a76b260d723bb4da4d6f3ab0fcb",
+    "csoi-pages.js": "sha256:426fe18d5ec7bb8c40a464a7496e7e8f9c70e58c08f9c5f6eb3d857a7489e927",
+    "csoi-knowledge.js": "sha256:fd65328e79152681a70f12f856f7ed92c832be0be6d8ee7922eac847115be52a",
+    "sources/csp-public-knowledge.json": "sha256:061c9692110ff9aac99b83cf2bfaf71d521e7841d59337f199e9ee7ebd5eb8ea",
+    "sources/lsps-public-knowledge.json": "sha256:1b221555eb03b072bd51a642e4c7fa8a3532bbde0f3a27f02a7a517ec9bc4753",
+    "sources/op-water-public-knowledge.json": "sha256:6b2e2c6cf93fc3a74939efa303f949c2b6faae76b447bacf617084fed44e40e2"
+  },
+  "scope": [
+    "Research matrix counts, filtering, pagination and exports",
+    "Old/missing/locally-edited snapshot semantics",
+    "OP source references and source-completion claims",
+    "New rendering and export privacy/injection boundaries"
+  ],
+  "findings": [
+    {
+      "id": "APP-01",
+      "priority": "P1",
+      "issue": "Fact search and coverage export used different predicates. Before correction7519 found1card/0matrixrows;29.9 found2cards/0matrixrows.",
+      "resolution": "Parent added shared matches predicate over canonical checked source records for matrix and data records for browsing.",
+      "status": "FIX_APPLIED_STATIC_READBACK",
+      "runtimeRegression": "PARENT_TEST_PENDING_AT_REVIEW"
+    },
+    {
+      "id": "APP-02",
+      "priority": "P1",
+      "issue": "Old imported snapshot with no new records had252MISSINGmatrixrows but no next-page link, since pager used only available records.",
+      "resolution": "Parent pager now uses maximum of selected-card count and filtered-matrix count.",
+      "status": "FIX_APPLIED_STATIC_READBACK",
+      "runtimeRegression": "PARENT_TEST_PENDING_AT_REVIEW"
+    },
+    {
+      "id": "APP-03",
+      "priority": "P1",
+      "issue": "Matrix omitted locator parity: an allowed local citation revision could remain SOURCE_CHECKED_BOUNDED while exported matrix silently showed canonical locator.",
+      "reproduction": {
+        "recordId": "csoi:knowledge:csp2035:indicator:30-environment-03",
+        "mutation": "Changed data.locator and provenance.locator to PDFpage999 in isolated memory via legitimate reviseResearchRecord.",
+        "snapshotVerified": true,
+        "beforeCorrection": "Matrix SOURCE_CHECKED_BOUNDED, canonicalPDF30locator; actual recordPDF999locator"
+      },
+      "resolution": "Parent added data.locator and category parity; exports include recordedLocator and recordRevision.",
+      "status": "FIX_APPLIED_STATIC_READBACK",
+      "runtimeRegression": "PARENT_TEST_PENDING_AT_REVIEW"
+    },
+    {
+      "id": "APP-04",
+      "priority": "P2",
+      "issue": "Filtered JSON exports included global category totals with no scope metadata.",
+      "resolution": "Parent added explicit filter and categoryCountsScope=ALL_CHECKED_SOURCE_ITEMS.",
+      "status": "FIX_APPLIED_STATIC_READBACK"
+    },
+    {
+      "id": "APP-05",
+      "priority": "P2",
+      "issue": "Incoming OP references on a current CSP detail page retain links without per-OP-source currentness. A withdrawn OP is warned on its own detail page, but backlink list is unqualified.",
+      "recommendation": "Label links as retained historical references and show their source-currentness where feasible.",
+      "status": "NONBLOCKING_RECOMMENDATION"
+    },
+    {
+      "id": "APP-06",
+      "priority": "P2",
+      "issue": "OP serviceStandards and document version-conflict metadata are inside exact-evidence fold rather than the main user-facing facts list.",
+      "recommendation": "Show service standards/denominator/comparator and document-version conflict as ordinary source-reading facts.",
+      "status": "NONBLOCKING_RECOMMENDATION"
+    }
+  ],
+  "observations": [
+    "Source records are252:127CSP(5pillars14objectives44strategies63indicators+document),114LSPS(12priorities83implementation+18otheroccurrences+document),11selectedOP records.",
+    "LSPS83implementation actions and18otheroccurrences are separated; no whole-document100percent claim found in new progress text.",
+    "OP8activities/9distinctCSPpairs retained; actual output/spend/execution and legal/admission UNKNOWN/PENDING.",
+    "Rendering uses textContent, source URLs requireHTTPS, imported snapshots are verified by existing model; no new injection/private-data export bypass identified.",
+    "CSV fields derive from controlled reviewed source records and status values; no executable spreadsheet formula prefix found in the reviewed source titles/codes."
+  ],
+  "limitations": [
+    "No broad test suite or browser test run by this reviewer; parent owns runtime regression.",
+    "Static review does not certify all semantic extraction or all privacy/security properties.",
+    "Readback is pinned by file hashes; later parent changes require their own tests."
+  ]
+}

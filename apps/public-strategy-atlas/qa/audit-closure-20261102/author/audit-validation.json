@@ -1,0 +1,27 @@
+{
+  "format": "csoi-audit-artefact-validation-1",
+  "status": "PASS_AUDIT_ARTEFACT_CHECKS_ONLY",
+  "baselineCommit": "1bd44ea96bf742e63072d866502479ca34d34061",
+  "rows": 80,
+  "originalMasterPlanRequirementsMatched": 80,
+  "registryStatusesPreserved": 80,
+  "csvRowsMatched": 80,
+  "fileLineSHAReferenceChecks": 619,
+  "recordedTestSHAReferencesMatched": 136,
+  "newApplicationTestsExecuted": false,
+  "networkOrPrivateAccessPerformed": false,
+  "statusPromotionsApplied": 0,
+  "runtimeRegistrySiteMutationsPerformed": false,
+  "artefacts": {
+    "closure-baseline.json": "1de124d965cdafd0af7e6b1f6c2fdd69c08a692731ce26f7c434ea686b53c195",
+    "closure-baseline.csv": "f3233f28039973ee248707d47958021145a6932e5860784825ad0144eb2ecdbd",
+    "evidence-index.json": "486c7cdb741c2b997bd2123645ebecd640c6cd6d9d5d924cf26f2b79366dd311",
+    "REPORT_ZH.md": "e053d3f3813f1fd94e91353a0c71a3e51df09dab228c3c5dd58224168191388e",
+    "build_baseline.py": "c552db59bea6b0d6e2497c28dd4e46efdfb8e4ee8ce5aafe7127237d94c03707"
+  },
+  "limitations": [
+    "Author audit; independent parent review still required for task closure decisions.",
+    "Recorded app tests are previous verified results, not tests run by this audit.",
+    "Complete engineering/source/legal/actual work acceptance is not asserted."
+  ]
+}

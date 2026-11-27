@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "rawbytes",
+      "status": "PASS_REJECTED_AS_EXPECTED",
+      "reason": "ORIGINAL_BYTE_MISMATCH"
+    },
+    {
+      "case": "page-digest",
+      "status": "PASS_REJECTED_AS_EXPECTED",
+      "reason": "PAGE_ANCHOR_DIGEST_MISMATCH:version-table"
+    },
+    {
+      "case": "anchor-token",
+      "status": "PASS_REJECTED_AS_EXPECTED",
+      "reason": "PAGE_ANCHOR_TOKEN_MISMATCH:version-table"
+    },
+    {
+      "case": "page-bounds",
+      "status": "PASS_REJECTED_AS_EXPECTED",
+      "reason": "ANCHOR_PAGE_BOUNDS"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "pdfPage": 121,
+  "unitAsPrinted": "$000",
+  "periodLabelAsPrinted": "2027",
+  "method": "Original visible page and native text read. Only closing cash minus opening cash; no assumption that financing dash equals0, no automatic source correction, no actual-account verification.",
+  "rows": [
+    {
+      "fund": "Consolidated",
+      "printedOpeningCash": 27845,
+      "printedClosingCash": 27421,
+      "printedNetChange": -424,
+      "calculatedClosingMinusOpening": -424,
+      "differencePrintedMinusCalculated": 0,
+      "result": "MATCH"
+    },
+    {
+      "fund": "General",
+      "printedOpeningCash": 2922,
+      "printedClosingCash": 5857,
+      "printedNetChange": 585,
+      "calculatedClosingMinusOpening": 2935,
+      "differencePrintedMinusCalculated": -2350,
+      "result": "SOURCE_ARITHMETIC_CONFLICT"
+    },
+    {
+      "fund": "Water",
+      "printedOpeningCash": 16436,
+      "printedClosingCash": 11556,
+      "printedNetChange": 616,
+      "calculatedClosingMinusOpening": -4880,
+      "differencePrintedMinusCalculated": 5496,
+      "result": "SOURCE_ARITHMETIC_CONFLICT"
+    },
+    {
+      "fund": "Sewer",
+      "printedOpeningCash": 6108,
+      "printedClosingCash": 5846,
+      "printedNetChange": 616,
+      "calculatedClosingMinusOpening": -262,
+      "differencePrintedMinusCalculated": 878,
+      "result": "SOURCE_ARITHMETIC_CONFLICT"
+    },
+    {
+      "fund": "Waste",
+      "printedOpeningCash": 2379,
+      "printedClosingCash": 4162,
+      "printedNetChange": 616,
+      "calculatedClosingMinusOpening": 1783,
+      "differencePrintedMinusCalculated": -1167,
+      "result": "SOURCE_ARITHMETIC_CONFLICT"
+    }
+  ]
+}

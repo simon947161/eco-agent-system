@@ -1,0 +1,52 @@
+[
+  {
+    "case": "missing_implementation_row",
+    "status": "REJECTED_EXPECTED",
+    "reason": "IMPLEMENTATION_CENSUS_MISSING_OR_EXTRA"
+  },
+  {
+    "case": "wrong_source_version",
+    "status": "REJECTED_EXPECTED",
+    "reason": "SOURCE_BINDING_MISMATCH"
+  },
+  {
+    "case": "wrong_page_digest",
+    "status": "REJECTED_EXPECTED",
+    "reason": "PAGE_ANCHOR_MISMATCH"
+  },
+  {
+    "case": "wrong_funding_column",
+    "status": "REJECTED_EXPECTED",
+    "reason": "PRINTED_COLUMN_MISMATCH:1.1:funded"
+  },
+  {
+    "case": "wrong_tick_category",
+    "status": "REJECTED_EXPECTED",
+    "reason": "TICK_IMAGE_POSITION_MISMATCH"
+  },
+  {
+    "case": "missing_narrative_conflict",
+    "status": "REJECTED_EXPECTED",
+    "reason": "NARRATIVE_CENSUS_MISSING_DUPLICATE_OR_EXTRA"
+  },
+  {
+    "case": "wrong_relative_time",
+    "status": "REJECTED_EXPECTED",
+    "reason": "RELATIVE_TIME_DEFINITION_TAMPERED"
+  },
+  {
+    "case": "claimed_actual_execution",
+    "status": "REJECTED_EXPECTED",
+    "reason": "ACTUAL_OR_AUTHORITY_PROMOTION"
+  },
+  {
+    "case": "authored_location_scope_dropped",
+    "status": "REJECTED_EXPECTED",
+    "reason": "SEMANTIC_QUALIFIER_MISSING:1.2"
+  },
+  {
+    "case": "authored_update_action_dropped",
+    "status": "REJECTED_EXPECTED",
+    "reason": "SEMANTIC_QUALIFIER_MISSING:11.6"
+  }
+]

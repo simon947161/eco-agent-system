@@ -1,0 +1,263 @@
+{
+  "format": "csoi-op-review-workbook-readback-1",
+  "status": "PASS_WORKBOOK_CONTENT_AND_AUTHOR_PROJECTION_READBACK_ONLY",
+  "createdAt": "2026-11-02T04:16:02.859036+00:00",
+  "workbook": "qa/op-completion-20261102/OP与工程验收矩阵.xlsx",
+  "workbookSha256": "sha256:523595444a8f55f75670a5508f5e89b52f68c39a2e24a5e8a75b4f4294feea0e",
+  "openpyxlVersion": "3.1.5",
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "inputSha256": {
+    "sources/op-completion-review.json": "sha256:345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0",
+    "qa/op-completion-20261102/services/services-author.json": "sha256:97b090d6815a474d0fb24b8ce401e54600a616e64a97e42806ecb3c8f608209f",
+    "qa/op-completion-20261102/finance/finance-author.json": "sha256:d1c9a1abe6785e4154c96426cb51c8f9c7908248f5de858966fb0f1e1ab2120c",
+    "COI_TASK_REGISTRY_V1_7.json": "sha256:0d36efc725402b8fc89944a20361577c3f8b3e5e15e40bdaa2fd687023f08993",
+    "qa/op-completion-20261102/independent/initial-source-findings.json": "sha256:eefe711c3ffc27b8ccf6d5f16972f9459dbb7dd9d6fb74a401303c0a78ed6217"
+  },
+  "sourceCounts": {
+    "pages": 142,
+    "pageRecords": 142,
+    "semanticUnits": 911,
+    "unitCategories": {
+      "FRONT_MATTER": 11,
+      "GUIDE_EXAMPLE": 5,
+      "SERVICE_ACTION": 259,
+      "PROGRAMME_CONTEXT": 31,
+      "SERVICE_SCOPE_NOTE": 19,
+      "IMPROVEMENT_ACTION": 43,
+      "PROJECT": 115,
+      "OP_CAPITAL_BUDGET_ROW": 41,
+      "OP_BUDGET_CONDITION": 1,
+      "OP_DOCUMENT_CONTEXT": 7,
+      "OP_SERVICE_BUDGET_ROW": 155,
+      "OP_FUND_FINANCIAL_ROW": 30,
+      "OP_GLOSSARY": 49,
+      "OP_BUDGET_FIGURE": 4,
+      "OP_REVENUE_POLICY": 92,
+      "OP_DOCUMENT_VERSION": 8,
+      "OP_REVENUE_CATEGORY": 5,
+      "OP_REVENUE_RATE_ROW": 5,
+      "OP_REVENUE_RATE_TOTAL": 1,
+      "OP_REVENUE_MAP": 4,
+      "OP_REVENUE_CHARGE_ROW": 23,
+      "OP_REVENUE_REBATE": 3
+    },
+    "retainedWaterActivities": 8,
+    "allPrintedCspReferenceOccurrences": 746,
+    "formalPrintedCspReferenceOccurrences": 694,
+    "resolvedCspReferenceOccurrences": 746,
+    "unresolvedCspReferenceOccurrences": 0,
+    "sourceDiagnostics": 17,
+    "parts": {
+      "services": {
+        "reviewedPdfPages": 106,
+        "fullSourcePdfPages": 142,
+        "formalPhysicalRows": 517,
+        "formalLogicalGroups": 417,
+        "categories": {
+          "FRONT_MATTER": 11,
+          "GUIDE_EXAMPLE": 5,
+          "SERVICE_ACTION": 259,
+          "PROGRAMME_CONTEXT": 31,
+          "SERVICE_SCOPE_NOTE": 19,
+          "IMPROVEMENT_ACTION": 43,
+          "PROJECT": 115
+        },
+        "formalPhysicalRowTypes": {
+          "SERVICE": 356,
+          "IMPROVEMENT": 43,
+          "PROJECT": 118
+        },
+        "firstColumnPrintedGroupsBeforeExplicitContinuation": 418,
+        "crossPageContinuationsMerged": 1,
+        "teachingExamplePhysicalRowsExcluded": 6,
+        "teachingExampleLogicalGroupsExcluded": 5,
+        "existingWaterActivitiesReferenced": 8,
+        "existingWaterNativeRecordsUnchanged": 11,
+        "formalPrintedCspCodeOccurrences": 694,
+        "formalLogicalUnitCspPairs": 594,
+        "formalDistinctCspCodes": 31,
+        "unresolvedPrintedCspCodes": [],
+        "photoSeparatorPages": [
+          12,
+          15,
+          34,
+          43,
+          54,
+          63,
+          79,
+          97,
+          106
+        ],
+        "globalUniqueCouncilProjectDenominator": "UNKNOWN",
+        "fullOpCompletedByThisPart": false,
+        "remainingPdfPagesOwnedByFinance": [
+          107,
+          142
+        ],
+        "semantics": "行、合并动作、项目和改进行动是不同计数；417不是Council项目数。原文计划不等于实际执行。"
+      },
+      "finance-revenue-policy-pdf107-142": {
+        "assignedPages": 36,
+        "capitalProjectRowsInAssignedContinuation": 41,
+        "serviceBudgetTables": 19,
+        "serviceBudgetRows": 155,
+        "fundStatementRows": 30,
+        "acronymRows": 49,
+        "authoredUnits": 428,
+        "categories": {
+          "OP_CAPITAL_BUDGET_ROW": 41,
+          "OP_BUDGET_CONDITION": 1,
+          "OP_DOCUMENT_CONTEXT": 7,
+          "OP_SERVICE_BUDGET_ROW": 155,
+          "OP_FUND_FINANCIAL_ROW": 30,
+          "OP_GLOSSARY": 49,
+          "OP_BUDGET_FIGURE": 4,
+          "OP_REVENUE_POLICY": 92,
+          "OP_DOCUMENT_VERSION": 8,
+          "OP_REVENUE_CATEGORY": 5,
+          "OP_REVENUE_RATE_ROW": 5,
+          "OP_REVENUE_RATE_TOTAL": 1,
+          "OP_REVENUE_MAP": 4,
+          "OP_REVENUE_CHARGE_ROW": 23,
+          "OP_REVENUE_REBATE": 3
+        },
+        "tables": 28,
+        "visualOccurrences": 8
+      }
+    }
+  },
+  "registryStateCountsAsRead": {
+    "VERIFIED": 51,
+    "BLOCKED": 3,
+    "PARTIAL": 26
+  },
+  "exactCellsReadBack": 32247,
+  "maxSavedCellUtf16Units": 30000,
+  "splitLogicalValues": 15,
+  "continuationRows": 33,
+  "syntheticOverflowProbe": {
+    "utf16Units": 65002,
+    "parts": 3,
+    "reassembledExactly": true,
+    "actualXlsxRoundTrip": true
+  },
+  "sheets": [
+    {
+      "name": "说明",
+      "dataRows": 17,
+      "columns": 2,
+      "logicalContentSha256": "sha256:ffcc25d68dc6bbfaf4c7b6268391296afa357fd4a20413d71da9cb6eaccffd26",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "输入指纹",
+      "dataRows": 5,
+      "columns": 3,
+      "logicalContentSha256": "sha256:8cf9d686d19f18e49126e7844592788e012c92285c0988bab6d4c8cbcb966ba9",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "142页覆盖",
+      "dataRows": 142,
+      "columns": 8,
+      "logicalContentSha256": "sha256:6354a9a561b8323d4ed4ff548d9df0a8e8d8bf2c36f49d45db3eefdca7cb50c3",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "全部阅读单元",
+      "dataRows": 911,
+      "columns": 15,
+      "logicalContentSha256": "sha256:9d674a31c773f6ba4d8908ac2219bce14d93b049a11740e667133765c49255be",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "数字与单位",
+      "dataRows": 548,
+      "columns": 15,
+      "logicalContentSha256": "sha256:50a556f2aa639b703d6919a6178e788029218790f381ec375e361ee6ebac2b72",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "CSP印刷关系",
+      "dataRows": 746,
+      "columns": 9,
+      "logicalContentSha256": "sha256:6430f20d8febbdbb3c3c8320e9d3925e132a98423c0c27182322b76507fd6ff9",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "源内诊断",
+      "dataRows": 17,
+      "columns": 5,
+      "logicalContentSha256": "sha256:a761d7da0d7c1b78496b10747d4777e7b49520b9fb3c0cc691a2cfba203248d8",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "独立原件疑点",
+      "dataRows": 34,
+      "columns": 3,
+      "logicalContentSha256": "sha256:b504dc1e436076836de0d223b12ea2bd84f6b28bf78a9ae1e7de6cfd8b4242ca",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "80原任务",
+      "dataRows": 80,
+      "columns": 12,
+      "logicalContentSha256": "sha256:ed164f83aa61d84f794a0f8ff63e03be22a9f0904a13ac3b8f0d8247650f8087",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "80项分层验收",
+      "dataRows": 80,
+      "columns": 12,
+      "logicalContentSha256": "sha256:3baf447e7dbb7b24a407c7ad2c81b280a0c9dd13f1f1f8e4acb7520409a5b8b3",
+      "allCellsExactlyReadBack": true
+    },
+    {
+      "name": "长文本续页",
+      "dataRows": 33,
+      "columns": 8,
+      "logicalContentSha256": "sha256:47c3b8ab760d4c9d116ec7e02a6383cfc6a1193dfb0178f8bfc466563120b148",
+      "allCellsExactlyReadBack": true
+    }
+  ],
+  "limitations": [
+    "This verifies the exported authored records and task registry; it does not prove source semantics independently.",
+    "No app/native/browser/deployment result is inferred from this workbook check.",
+    "80 engineering tasks are not 80 Council projects.",
+    "Currentness/legal/parcel/actual execution remain bounded by original source records."
+  ],
+  "retainedPriorRejectedBuilds": [
+    {
+      "sequence": 1,
+      "date": "2026-11-02",
+      "stage": "author/runtime equality before workbook writing",
+      "outcome": "REJECTED_NO_WORKBOOK_PUBLISHED",
+      "reason": "RUNTIME_AUTHOR_UNIT_PROJECTION_DIFFERS: 47 service section values differed while service author was still being corrected.",
+      "resolution": "Waited for corrected final author input and rebuilt compiler output; equality check retained."
+    },
+    {
+      "sequence": 2,
+      "date": "2026-11-02",
+      "stage": "author/runtime equality after first final-source notification",
+      "outcome": "REJECTED_NO_WORKBOOK_PUBLISHED",
+      "reason": "RUNTIME_AUTHOR_UNIT_PROJECTION_DIFFERS: only P142 public-contact.summary differed; compiled unit had earlier summary while sourceAuthorHashes already referred to new finance bytes.",
+      "resolution": "Root confirmed input-read race, changed compiler to snapshot input bytes, hash those same bytes and verify unchanged inputs before writing; strict equality retained."
+    },
+    {
+      "sequence": 3,
+      "date": "2026-11-02",
+      "stage": "final row-count assertion after successful individual-cell reads",
+      "outcome": "REJECTED_NO_WORKBOOK_PUBLISHED",
+      "reason": "Workbook author used unsupported ReadOnlyWorksheet column indexing; AttributeError iter_cols.",
+      "resolution": "Changed final row counting to supported iter_rows and reran complete export/readback."
+    },
+    {
+      "sequence": 4,
+      "date": "2026-11-02",
+      "stage": "atomic output rename after successful workbook readback",
+      "outcome": "REJECTED_NO_WORKBOOK_PUBLISHED",
+      "reason": "Temporary /tmp and final /workspace are different filesystems; os.replace raised EXDEV.",
+      "resolution": "Create transient workbook in final output directory, retain same readback and atomic rename, remove temporary file on failure."
+    }
+  ]
+}

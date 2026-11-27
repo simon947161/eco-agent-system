@@ -1,0 +1,90 @@
+[
+  {
+    "case": "wrong_source_version",
+    "status": "REJECTED_EXPECTED",
+    "reason": "NARRATIVE_SOURCE_VERSION_MISMATCH",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "wrong_original_page",
+    "status": "REJECTED_EXPECTED",
+    "reason": "ORIGINAL_CLIP_TEXT_MISMATCH:p056-b09-u01",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "wrong_original_bbox",
+    "status": "REJECTED_EXPECTED",
+    "reason": "ORIGINAL_CLIP_TEXT_MISMATCH:p056-b09-u01",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "dropped_original_need_condition",
+    "status": "REJECTED_EXPECTED",
+    "reason": "REVIEWED_CONDITION_OR_LEGEND_MEANING_DROPPED:LSPS-NARR-ASSERT-bombala-only-if-needed:conditions",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "wrong_original_legend_option_with_unchanged_pixels",
+    "status": "REJECTED_EXPECTED",
+    "reason": "ORIGINAL_REVIEWED_LEGEND_ENTRY_CHANGED:pdf114-bombala-investigation-options:legend",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "wrong_original_legend_colour_with_unchanged_pixels",
+    "status": "REJECTED_EXPECTED",
+    "reason": "ORIGINAL_REVIEWED_LEGEND_ENTRY_CHANGED:pdf114-bombala-investigation-options:legend",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "mislocated_original_legend_crop",
+    "status": "REJECTED_EXPECTED",
+    "reason": "ORIGINAL_CLIP_RASTER_MISMATCH:lsps-map-p114:legend",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "dropped_original_position_despite_recounted_inventory",
+    "status": "REJECTED_EXPECTED",
+    "reason": "ORIGINAL_WORD_POSITIONS_DROPPED",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "removed_existing_conflict",
+    "status": "REJECTED_EXPECTED",
+    "reason": "EXISTING_CORE_RECORD_REMOVED_OR_CHANGED",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "lost_unit_during_page_aggregation",
+    "status": "REJECTED_EXPECTED",
+    "reason": "RUNTIME_NARRATIVE_UNIT_CENSUS_MISMATCH",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "wrong_map_source_reading_priority_despite_valid_target",
+    "status": "REJECTED_EXPECTED",
+    "reason": "MAP_READING_PRIORITY_WRONG_SOURCE_SECTION:lsps-map-p048",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "missing_original_same_page_action_context",
+    "status": "REJECTED_EXPECTED",
+    "reason": "NARRATIVE_READING_CONTEXT_NOT_MATCHING_SOURCE_PAGE:csoi:knowledge:lsps2020:context:page:024",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "wrong_original_page_index_digest",
+    "status": "REJECTED_EXPECTED",
+    "reason": "RUNTIME_PAGE_INDEX_ORIGINAL_HASH_MISMATCH:8",
+    "basis": "Mutation of checked source-linked inputs; original PDF remains unchanged."
+  },
+  {
+    "case": "missing_original_pdf",
+    "status": "REJECTED_EXPECTED",
+    "reason": "FileNotFoundError: original bytes required; no substitute or cached PASS."
+  },
+  {
+    "case": "corrupt_original_pdf",
+    "status": "REJECTED_EXPECTED",
+    "reason": "ORIGINAL_SOURCE_BYTES_MISMATCH"
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "status": "PASS_BOUNDED_SEMANTIC_REGRESSIONS",
+  "indicators": 63,
+  "definitionQualifierRows": 27,
+  "sourceColumnsChecked": 252,
+  "sourceRevision": "sha256:dc4fe1fca1d860b3389ea1e5ddca3826efaf5d02a7d029242a45ec20666cf743",
+  "humanSemanticAdmission": "PENDING",
+  "rawDataRecalculation": "NOT_COMPUTABLE",
+  "limits": "Selected regression assertions supplement the63-row independent reading/readback; neither checks nor hashes prove full-document understanding.",
+  "at": "2026-11-02T00:29:31.849432+00:00",
+  "negativeCases": [
+    {
+      "case": "crime100instead100000",
+      "status": "REJECTED_EXPECTED",
+      "reason": "CRIME_NORMALISATION_100000"
+    },
+    {
+      "case": "missing-child-one-or-more",
+      "status": "REJECTED_EXPECTED",
+      "reason": "DEFINITION_QUALIFIER:29-community-07"
+    },
+    {
+      "case": "missing-qualification-age",
+      "status": "REJECTED_EXPECTED",
+      "reason": "DEFINITION_QUALIFIER:30-economy-04"
+    },
+    {
+      "case": "mortgage-threshold-nonstrict",
+      "status": "REJECTED_EXPECTED",
+      "reason": "DEFINITION_QUALIFIER:29-community-14"
+    },
+    {
+      "case": "source2024-as-business-measure",
+      "status": "REJECTED_EXPECTED",
+      "reason": "MEASURE_PERIOD_PRESERVED"
+    },
+    {
+      "case": "source2021-as-survey-measure",
+      "status": "REJECTED_EXPECTED",
+      "reason": "SOURCE_DATE_IS_NOT_MEASUREMENT_PERIOD"
+    },
+    {
+      "case": "invented-numeric-target",
+      "status": "REJECTED_EXPECTED",
+      "reason": "NO_NUMERIC_TARGET_OR_DEADLINE"
+    },
+    {
+      "case": "invented2035-deadline",
+      "status": "REJECTED_EXPECTED",
+      "reason": "NO_NUMERIC_TARGET_OR_DEADLINE"
+    },
+    {
+      "case": "invented-council-responsibility",
+      "status": "REJECTED_EXPECTED",
+      "reason": "NO_INFERRED_ACCOUNTABLE_ROLE"
+    },
+    {
+      "case": "invented-AUD-currency",
+      "status": "REJECTED_EXPECTED",
+      "reason": "NO_INFERRED_CURRENCY_CODE"
+    },
+    {
+      "case": "recycling48.3-as-percent",
+      "status": "REJECTED_EXPECTED",
+      "reason": "NO_INVENTED_UNIT:31-infrastructure-06"
+    },
+    {
+      "case": "water7519-as-tonnes",
+      "status": "REJECTED_EXPECTED",
+      "reason": "WATER_UNIT_NOT_STATED"
+    },
+    {
+      "case": "independent-review-as-approval",
+      "status": "REJECTED_EXPECTED",
+      "reason": "REVIEW_NOT_OFFICIAL"
+    },
+    {
+      "case": "promote-baseline-to-actual",
+      "status": "REJECTED_EXPECTED",
+      "reason": "METRIC_AUTHORITY_OR_COMPUTABILITY"
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "generatedAt": "2026-10-30T02:58:16.535971+00:00",
+  "status": "PASS_TESTED_HERE",
+  "legacySuites": {
+    "invocationSuites": [
+      "e0-browser.py",
+      "system-browser.py",
+      "deep-browser.py",
+      "merge-browser.py",
+      "discovery-browser.py",
+      "integration-browser.py"
+    ],
+    "allSuitesExecutedThisInvocation": true,
+    "generatedAt": "2026-10-30T02:51:28.562838+00:00",
+    "browser": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+    "playwright": "1.62.0",
+    "python": "3.12.14",
+    "results": [
+      {
+        "script": "e0-browser.py",
+        "status": "PASS_TESTED_HERE",
+        "exitCode": 0,
+        "functionalCheckGroups": 9,
+        "log": "e10-e0-browser.py.log",
+        "executedAt": "2026-10-30T02:51:28.562808+00:00",
+        "executedThisInvocation": true
+      },
+      {
+        "script": "system-browser.py",
+        "status": "PASS_TESTED_HERE",
+        "exitCode": 0,
+        "functionalCheckGroups": 4,
+        "log": "e10-system-browser.py.log",
+        "executedAt": "2026-10-30T02:51:28.562824+00:00",
+        "executedThisInvocation": true
+      },
+      {
+        "script": "deep-browser.py",
+        "status": "PASS_TESTED_HERE",
+        "exitCode": 0,
+        "functionalCheckGroups": 8,
+        "log": "e10-deep-browser.py.log",
+        "executedAt": "2026-10-30T02:51:28.562826+00:00",
+        "executedThisInvocation": true
+      },
+      {
+        "script": "merge-browser.py",
+        "status": "PASS_TESTED_HERE",
+        "exitCode": 0,
+        "functionalCheckGroups": 4,
+        "log": "e10-merge-browser.py.log",
+        "executedAt": "2026-10-30T02:51:28.562828+00:00",
+        "executedThisInvocation": true
+      },
+      {
+        "script": "discovery-browser.py",
+        "status": "PASS_TESTED_HERE",
+        "exitCode": 0,
+        "functionalCheckGroups": 4,
+        "log": "e10-discovery-browser.py.log",
+        "executedAt": "2026-10-30T02:51:28.562830+00:00",
+        "executedThisInvocation": true
+      },
+      {
+        "script": "integration-browser.py",
+        "status": "PASS_TESTED_HERE",
+        "exitCode": 0,
+        "functionalCheckGroups": 5,
+        "log": "e10-integration-browser.py.log",
+        "executedAt": "2026-10-30T02:51:28.562832+00:00",
+        "executedThisInvocation": true
+      }
+    ],
+    "limits": "Viewport emulation and Chromium accessibility tree are not physical hardware, cross-browser or professional screen-reader certification."
+  },
+  "csoiSuites": {
+    "browser-h.json": {
+      "runner": "csoi-browser-1",
+      "generatedAt": "2026-10-30T02:51:56.260158+00:00",
+      "testedFiles": {
+        "atlas.js": "sha256:014ca484ea2d0209801571a94f80275ec4c10058038b33f3693ce8382b032c1e",
+        "atlas-domain.js": "sha256:6ecdc1d06ee0cb0b7a04876fbf3bfe53ae3a7396f9373c2d0f2ad61b5dfede44",
+        "atlas-model.js": "sha256:05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+        "csoi-pages.js": "sha256:f5ee125ecf365edecec3eb32f23db51f89591c5568bbd1f98b7d8f27499f054c",
+        "csoi-router.js": "sha256:bf1c210ad4c031eb6e228b1429b12fecdfcda26c1a5e2a9a2b8d9cc7fde7ebf9",
+        "csoi-governance.js": "sha256:02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c"
+      },
+      "physicalTouch": "NOT_TESTED",
+      "mobileTouch": "EMULATED_TAP",
+      "pack": "H",
+      "calendarAndAssistantChecks": "EXECUTED",
+      "results": [
+        {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "routes": 22,
+          "status": "PASS_TESTED_HERE",
+          "browserErrors": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "routes": 22,
+          "status": "PASS_TESTED_HERE",
+          "browserErrors": []
+        },
+        {
+          "viewport": {
+            "width": 1600,
+            "height": 900
+          },
+          "routes": 22,
+          "status": "PASS_TESTED_HERE",
+          "browserErrors": []
+        },
+        {
+          "viewport": {
+            "width": 2560,
+            "height": 1080
+          },
+          "routes": 22,
+          "status": "PASS_TESTED_HERE",
+          "browserErrors": []
+        },
+        {
+          "viewport": {
+            "width": 3840,
+            "height": 1080
+          },
+          "routes": 22,
+          "status": "PASS_TESTED_HERE",
+          "browserErrors": []
+        }
+      ]
+    },
+    "browser-b.json": {
+      "generatedAt": "2026-10-30T02:55:03.839646+00:00",
+      "results": [
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "status": "PASS_TESTED_HERE",
+          "basis": "Actual source receipts and attributed research notes; no official admission"
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "status": "PASS_TESTED_HERE",
+          "basis": "Actual source receipts and attributed research notes; no official admission"
+        }
+      ]
+    },
+    "browser-c.json": {
+      "results": [
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "status": "PASS_TESTED_HERE",
+          "steps": [
+            "L0\u2013L5 same-model chain",
+            "Explicit denominator 6/10; compliance UNKNOWN",
+            "Input withdrawal invalidates descendants",
+            "Exported historical snapshot independently verified"
+          ]
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "status": "PASS_TESTED_HERE",
+          "steps": [
+            "L0\u2013L5 same-model chain",
+            "Explicit denominator 6/10; compliance UNKNOWN",
+            "Input withdrawal invalidates descendants",
+            "Exported historical snapshot independently verified"
+          ]
+        }
+      ]
+    },
+    "browser-d.json": {
+      "results": [
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "status": "PASS_TESTED_HERE",
+          "scope": "ABSTRACT_SYNTHETIC_READ_ONLY",
+          "privateCompatibility": "BLOCKED"
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "status": "PASS_TESTED_HERE",
+          "scope": "ABSTRACT_SYNTHETIC_READ_ONLY",
+          "privateCompatibility": "BLOCKED"
+        }
+      ]
+    },
+    "browser-e.json": {
+      "results": [
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "domains": 8,
+          "status": "PASS_TESTED_HERE",
+          "currentLegalVersion": "UNKNOWN",
+          "formalDecision": "BLOCKED"
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "domains": 8,
+          "status": "PASS_TESTED_HERE",
+          "currentLegalVersion": "UNKNOWN",
+          "formalDecision": "BLOCKED"
+        }
+      ]
+    },
+    "browser-f.json": {
+      "results": [
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "status": "PASS_TESTED_HERE",
+          "sourceRelations": "RESEARCH_CANDIDATE_ONLY",
+          "actualCouncilSpend": "UNKNOWN",
+          "environmentalOutcome": "UNKNOWN"
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "status": "PASS_TESTED_HERE",
+          "sourceRelations": "RESEARCH_CANDIDATE_ONLY",
+          "actualCouncilSpend": "UNKNOWN",
+          "environmentalOutcome": "UNKNOWN"
+        }
+      ]
+    },
+    "browser-g-detail.json": {
+      "results": [
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "status": "PASS_TESTED_HERE",
+          "taskRevisions": 2,
+          "actualCouncilWork": "UNKNOWN",
+          "outlook": "SIMULATION_DISABLED"
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "status": "PASS_TESTED_HERE",
+          "taskRevisions": 2,
+          "actualCouncilWork": "UNKNOWN",
+          "outlook": "SIMULATION_DISABLED"
+        }
+      ]
+    }
+  },
+  "commands": [
+    "python3 apps/public-strategy-atlas/qa/run-local-browser.py run-browser-suite.py csoi-browser.py csoi-source-browser.py csoi-layer-browser.py csoi-wcos-browser.py csoi-phe-browser.py csoi-work-browser.py csoi-calendar-browser.py",
+    "python3 apps/public-strategy-atlas/qa/run-local-browser.py csoi-source-browser.py"
+  ],
+  "supplementalSourceChecks": "typed public planning observations, combined filters, five axes and five companion contexts",
+  "testedCodeDigests": {
+    "atlas-accounting.js": "sha256:5710e8900188eb4af880b6a50730037901448bad6166a6012d373b3fcd71f99f",
+    "atlas-data.js": "sha256:6a061b80d5f47a79f8d4e34d7e09dc0c236d4fbaec3b46f788a1dece5f267fe4",
+    "atlas-domain.js": "sha256:6ecdc1d06ee0cb0b7a04876fbf3bfe53ae3a7396f9373c2d0f2ad61b5dfede44",
+    "atlas-execution.js": "sha256:c5024deb236fbac79e3d6e346fc9dc09ef72e21ebff8414edf1cff8d42909b55",
+    "atlas-intake.js": "sha256:e521b7d35218dda4fc2f10a47d0d6b0d68f23de254f55872234d2f8c33a1712d",
+    "atlas-model.js": "sha256:05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+    "atlas-route-layout.js": "sha256:163a669fb4af413a27bf6231b0a4d50e7b4877b9f397ea641b7a1906a53a4925",
+    "atlas-workspace.js": "sha256:3147a6b6cac7b8a5420537f76c7c3b1a0cacdf10ef1b0c9e40944f972ae4d621",
+    "atlas.js": "sha256:014ca484ea2d0209801571a94f80275ec4c10058038b33f3693ce8382b032c1e",
+    "csoi-assistant.js": "sha256:2ff1b6b3004f133fd4a0d1b09197a5b549f6348fa307536d1699f3a4dbea3f58",
+    "csoi-calendar.js": "sha256:3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+    "csoi-governance.js": "sha256:02bbf054ee8e7ee263e2221f296cbe75159cd971fee8310ffbc87fe4ca0f938c",
+    "csoi-intake.js": "sha256:57f3a5814dbb825d02cb636f5ceabc9fe43c47f28f2dfd5d4c2358e6c955a7f5",
+    "csoi-layers.js": "sha256:8e430cb159bf8dbb450949ef3dfdcf2ffb13b8372aeb94b9a497da7e0c6a5b5c",
+    "csoi-pages.js": "sha256:f5ee125ecf365edecec3eb32f23db51f89591c5568bbd1f98b7d8f27499f054c",
+    "csoi-phe.js": "sha256:4d58b54c1fa77d7020a535fedc0f855e2b8d9d56aa7e68d4ed2707b767cc6599",
+    "csoi-router.js": "sha256:bf1c210ad4c031eb6e228b1429b12fecdfcda26c1a5e2a9a2b8d9cc7fde7ebf9",
+    "csoi-wcos.js": "sha256:c5a09df9afea7c55433b2e55b2cf0528c5009f837907a86e36f8d1b2ffa742d5",
+    "csoi-work.js": "sha256:541fe1d2a52eee5250ebc5d4e5a2c5402387c5ec900b550144e525e6c329ac94",
+    "sources/csoi-catalogue.js": "sha256:58a033e61b7953d9e10f49b6504c311bc14df328986d84ff2465099fec925425",
+    "sources/csoi-catalogue.json": "sha256:292df546122a6d68a1cfe6b4ae31f6c4b6afdaf6ea87a29266f69b7b87c92245",
+    "sources/csoi-legislation-access.json": "sha256:a4be3780daed3514b52fa091861be1e0f3cd974e0250df35dd32b36d84ab839f",
+    "sources/csoi-source-observations.js": "sha256:0a4a9330d97ea90741c8968bb94c2a6dd8b784e3d6a032a6c8de64a6c27fef88",
+    "sources/csoi-source-observations.json": "sha256:b46932fda98cf55a0be2d237cbd9685e800c4f3e396a7e3af1eaba4dbc674cc4",
+    "sources/csp61-admission.js": "sha256:9d3e6311cc0e3976e2c11f26cefff508352bda33f029a89af99b5010d53f7b02",
+    "sources/csp61-admission.json": "sha256:6a15566a895927d5b923f48b4f63a8e81e30859e2b39d68c8f4a168e00c4de2c",
+    "sources/public-catalogue.js": "sha256:4b59b5794cdeaef6ca5a7e0ccab23666d052adc7fc65f42c9a748e0ed83d10ca",
+    "sources/public-catalogue.json": "sha256:5a7fa9286368f3e7833846b25c5d4acb11d7cbc01fb8424988c19a3b48d50357"
+  },
+  "limits": [
+    "Chromium emulation only",
+    "Physical touch, professional screen reader, cross-browser NOT_TESTED",
+    "No Council business data or official admission"
+  ]
+}

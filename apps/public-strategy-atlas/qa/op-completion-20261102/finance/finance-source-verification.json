@@ -1,0 +1,108 @@
+{
+  "format": "csoi-op-finance-original-source-verification-1",
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "authorSha256": "sha256:d1c9a1abe6785e4154c96426cb51c8f9c7908248f5de858966fb0f1e1ab2120c",
+  "status": "PASS_BOUNDED_SOURCE_POSITION_NUMERIC_AND_SPECIFIED_SEMANTIC_CHECKS",
+  "checked": {
+    "pages": 36,
+    "units": 428,
+    "nativeAnchors": 1576,
+    "freshV2PixelAnchors": 9,
+    "directNumericSourceCells": 543,
+    "serviceRowsAgainstOriginalIncomeTotalPositions": 155,
+    "negativeCases": 17
+  },
+  "negativeResults": [
+    {
+      "case": "source value corrupted without changing source anchor",
+      "outcome": "REJECTED",
+      "reason": "source cell differs: csoi:op2026:finance:p120:fund-r02 facts.columnValues[0]"
+    },
+    {
+      "case": "fund column label swapped with unchanged numbers",
+      "outcome": "REJECTED",
+      "reason": "fund column/year/unit"
+    },
+    {
+      "case": "thousand dollar unit changed to dollar",
+      "outcome": "REJECTED",
+      "reason": "fund column/year/unit"
+    },
+    {
+      "case": "charge comparison year reversed",
+      "outcome": "REJECTED",
+      "reason": "charge year/unit"
+    },
+    {
+      "case": "fleet negative cost changed to positive",
+      "outcome": "REJECTED",
+      "reason": "numeric value differs: csoi:op2026:finance:p117:service-fleet-and-plant-r06"
+    },
+    {
+      "case": "blank swimming capital value manufactured as zero",
+      "outcome": "REJECTED",
+      "reason": "source cell differs: csoi:op2026:finance:p109:capital-r05 facts.columnValues[0]"
+    },
+    {
+      "case": "expense row moved across original income-total boundary",
+      "outcome": "REJECTED",
+      "reason": "service role crosses original total boundary: csoi:op2026:finance:p116:service-tourism-r04"
+    },
+    {
+      "case": "net asset gain misclassified as total",
+      "outcome": "REJECTED",
+      "reason": "fund role/section meaning changed"
+    },
+    {
+      "case": "cash balance misclassified as financing flow",
+      "outcome": "REJECTED",
+      "reason": "fund role/section meaning changed"
+    },
+    {
+      "case": "occluded footnote promoted to visible evidence",
+      "outcome": "REJECTED",
+      "reason": "hidden text promoted to visible footnote"
+    },
+    {
+      "case": "fuel surcharge falsely activated",
+      "outcome": "REJECTED",
+      "reason": "fuel surcharge falsely active"
+    },
+    {
+      "case": "former Snowy River resolution condition removed",
+      "outcome": "REJECTED",
+      "reason": "old-area resolution condition omitted"
+    },
+    {
+      "case": "pensioner combined cap split",
+      "outcome": "REJECTED",
+      "reason": "pensioner combined maximum changed"
+    },
+    {
+      "case": "composite Other counted as independent fifth fund",
+      "outcome": "REJECTED",
+      "reason": "Other figure incorrectly additive fifth fund"
+    },
+    {
+      "case": "source FOGO conflict suppressed",
+      "outcome": "REJECTED",
+      "reason": "source policy conflict omitted"
+    },
+    {
+      "case": "unreconciled original cash movement silently corrected",
+      "outcome": "REJECTED",
+      "reason": "numeric value differs: csoi:op2026:finance:p121:fund-r15"
+    },
+    {
+      "case": "required source cash row missing",
+      "outcome": "REJECTED",
+      "reason": "full numeric-cell coverage changed"
+    }
+  ],
+  "limitations": [
+    "Native text hashes cannot prove visibility or semantic completeness. PDF111 explicitly records occluded text.",
+    "Four chart figures and four rating-map panels had manual original pixel review; chart amounts are guarded, no GIS/parcel applicability inferred.",
+    "Policy meaning beyond named guards depends on authored reading and separate independent semantic review, not schema/hash counts.",
+    "No app/browser/deployment checks in this finance author task."
+  ]
+}

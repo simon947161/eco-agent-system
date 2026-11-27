@@ -1,0 +1,107 @@
+{
+  "unitId": "csoi:op-full:p073:programme_context",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:073",
+  "cacheRevisionId": "sha256:e5416325357e888d4d049c7fd294ddafe6692665817140c4ed59109fa45085a7",
+  "actualFullUnitDigest": "sha256:a1d3c4e0094a606d8a872c22c967ab7f9d55895e8a7b7f458d3f1cbaf6cd758c",
+  "page": 73,
+  "category": "PROGRAMME_CONTEXT",
+  "summary": "供排水业务日常运营维护区域饮用水、非饮用水及污水服务，目标兼顾可靠性、成本、社区及接纳环境保护。DP分别为安全可靠供水和排污系统运营维护；此服务/FTE背景与既有水务节点对应。",
+  "conditions": [],
+  "qualifiers": [],
+  "facts": {
+    "interpretation": {
+      "currentVersion": "UNKNOWN",
+      "currentLegalApplicability": "UNKNOWN",
+      "actualOutput": "UNKNOWN",
+      "actualExecution": "UNKNOWN",
+      "actualSpend": "UNKNOWN",
+      "actualOutcome": "UNKNOWN",
+      "activityResourceAllocation": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "councilAssignmentCreated": false
+    },
+    "programmeLabel": "Water and Wastewater",
+    "publishedResponsibleRoles": [
+      "Manager Water and Wastewater Operations"
+    ],
+    "roleAssignmentStatus": "HISTORICAL_DOCUMENT_LABEL_ONLY",
+    "publishedFte": {
+      "value": "52.5",
+      "unit": "FTE",
+      "scope": "SERVICE",
+      "actualFilledPositions": "UNKNOWN",
+      "activityAllocation": "UNKNOWN",
+      "summationAllowed": false,
+      "sourceAnchors": [
+        {
+          "field": "publishedFte",
+          "pdfPage": 73,
+          "bbox": [
+            46.346500396728516,
+            245.14910888671875,
+            98.39447784423828,
+            255.3891143798828
+          ],
+          "normalizedTextDigest": "sha256:356b5fd0f715c3bd95fd042f0b7b5f622c44c1a0f971152dd5ea3eccab8acabc",
+          "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+        }
+      ]
+    },
+    "budgetLocation": "END_OF_DOCUMENT",
+    "budgetLocationAnchors": [
+      {
+        "field": "budgetLocation",
+        "pdfPage": 73,
+        "bbox": [
+          36,
+          292.1568908691406,
+          303.8719787597656,
+          302.3968811035156
+        ],
+        "normalizedTextDigest": "sha256:3487a8c1d713b7dcb3f0bb01d60fbe15b99aa8e172b6535fd265d84add3efffd",
+        "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+      }
+    ]
+  },
+  "sourceAnchorCount": 14,
+  "sourceLocations": [
+    {
+      "field": "programmeContext",
+      "pdfPage": 73,
+      "bbox": [
+        36,
+        35.36427307128906,
+        263.2919616699219,
+        50.724273681640625
+      ],
+      "normalizedTextDigest": "sha256:5f2dc5fba75a415a8abfebdb6f98440cea8db4cc4adb001b41f9e9ff823b22af",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "programmeContext",
+      "pdfPage": 73,
+      "bbox": [
+        36,
+        55.075584411621094,
+        376.7701110839844,
+        67.87557983398438
+      ],
+      "normalizedTextDigest": "sha256:5dc54e57ef8f65b9e8fe1d27d5f703f7bc928a1ffdb6898885c2a56bdb031686",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "programmeContext",
+      "pdfPage": 73,
+      "bbox": [
+        36,
+        78.23509979248047,
+        158.3820343017578,
+        89.7551040649414
+      ],
+      "normalizedTextDigest": "sha256:7ce18536ce81d7182a70a09d789ca1f99e945a141ed085a90c45c47c06610195",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:f0220a6b6f973dcb2cfcc5018f98489b3ab5177f538ea99389274fa572eddaef",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "lsps-map-renderer-migration-1",
+  "reason": "v1 shared-document render cache could affect crop pixels; v2 opens a fresh Document for each crop",
+  "oldSnapshotSha256": "6e08d6b592e525b571da2a0c22472ec52d6a719f3314210d5efb62b8cf7c19c2",
+  "newSnapshotSha256": "36defe88b37d1abf24f00fd63b6b71fe0406bac45c6284477232bce5dd0adad7",
+  "bboxAndSemanticContentComparison": "EXACTLY_UNCHANGED_AFTER_EXCLUDING_RENDERER_AND_RASTER_DIGEST",
+  "oldV1Status": "HISTORICAL_NONFINAL_NOT_ACCEPTED",
+  "newRenderer": "pymupdf-1.26.6-rgb-100dpi-fresh-document-clip-v2",
+  "changedCropHashes": [
+    {
+      "id": "lsps-map-p008",
+      "role": "legend",
+      "old": "sha256:20adc163b149becbf109e536879ff55298dadd1eae3ad6002b408ac2f8604128",
+      "new": "sha256:1eb9a313638a106134e84fce398dc7bd945ba0b76346ffb9d5cf70fbf6cb1155"
+    },
+    {
+      "id": "lsps-map-p026",
+      "role": "legend",
+      "old": "sha256:b7be6b1910b8a916d7abe887c5f71c804573c1eed24934a7d8f979353f9d5ee3",
+      "new": "sha256:a01a53eb3c6b9480b609164d9380f58b95ebd2266fe351a8cc8f3e8a896772de"
+    },
+    {
+      "id": "lsps-map-p027",
+      "role": "legend",
+      "old": "sha256:73a6b9f4f56c1275ceb1722ae76ddd1059fc073af7c3282e9e4ee037d3a96210",
+      "new": "sha256:0f96549f743ad4f9dcaa345a242514cbebc9fe4578790d2b65d2f3816c251965"
+    },
+    {
+      "id": "lsps-map-p048",
+      "role": "legend",
+      "old": "sha256:863ba6e0bc5c13e6cf283e7ddee83574ffde6ffaf01f2c5c9db3880857e8d206",
+      "new": "sha256:ba05d54ea3c91de91cf76fb7341e18a76590a0a069b628bc65d3aa630dd691a3"
+    },
+    {
+      "id": "lsps-map-p060",
+      "role": "legend",
+      "old": "sha256:1a990ae35d84f1e2e577c8a9a14da7de60c678d8afc8e7c594dc74e8ed9b41c1",
+      "new": "sha256:3afec4b8d837bc127a957b8572c4935161b9614d6254591902837889056d6d29"
+    },
+    {
+      "id": "lsps-map-p061",
+      "role": "legend",
+      "old": "sha256:db5f7705c55e2d535dcccdf4f7709b04c3ad77dd8f6cb3287f3611cc2b039d86",
+      "new": "sha256:94cad871a1b4a6caf1d1a9647d89cddb784f0dfebf3012350422ef29beb31dfb"
+    },
+    {
+      "id": "lsps-map-p065",
+      "role": "legend",
+      "old": "sha256:fff22506c5359dab8d075367074765b0af031f70ad71bef1013ed35a053c0a00",
+      "new": "sha256:6aa223489d00250f0bd6585460188766cd2af29059bb698ad80fb0d1e60f2e02"
+    },
+    {
+      "id": "lsps-map-p066",
+      "role": "legend",
+      "old": "sha256:07457ab710ef66b187e21876a9c50902432f148b6d2a5948dfc20dfbbff2e92b",
+      "new": "sha256:01ac354b916bcc71a2b7abc1b8c70dfd54620d4375895c03348d98062baefb08"
+    },
+    {
+      "id": "lsps-map-p069",
+      "role": "legend",
+      "old": "sha256:2f2ef7eaf7c77837843e8bd733723dd212d90b7a75eedb1275b97fb9e81160a5",
+      "new": "sha256:384ff14ed1f6a665fa8a4fc2093a01765cd0ba1bb497724275d02e433ec169ed"
+    },
+    {
+      "id": "lsps-map-p072",
+      "role": "legend",
+      "old": "sha256:2f380d10ccb08887265e1ad555604e1c3cb2b696325deba2a2dd6aca776b5aef",
+      "new": "sha256:7ab259292faaba00a053f5005aef5741c327d0fa771fa19cd60c9a2e55110c59"
+    },
+    {
+      "id": "lsps-map-p088",
+      "role": "legend",
+      "old": "sha256:d89f15b4e99378c57da9c21021446bf50006a497f8075d549e652a9c8dc45705",
+      "new": "sha256:ef87f020c63a4b1e771d54b59cc6244200936e80b750ce607ec18962fcf7fbf7"
+    },
+    {
+      "id": "lsps-map-p105",
+      "role": "legend",
+      "old": "sha256:3641e075e3d726a22299b1c344e1a2e1a11b9459f8bfe68e36d03c45e104be73",
+      "new": "sha256:2a14896f4d6bafc47e83b9d2df8f7b016ae18f34ca19f73fbd58690c4fdff2c3"
+    },
+    {
+      "id": "lsps-map-p108",
+      "role": "legend",
+      "old": "sha256:a6ed842d452e55ec0fecf2e5b7eacf3ecd2a692963152312d79a022c68396373",
+      "new": "sha256:41079e807abaeb46b2af2bc76fc8b70042ace9b811af9617f2a39cc229a09638"
+    },
+    {
+      "id": "lsps-map-p109",
+      "role": "legend",
+      "old": "sha256:5696569c85e8ddf2e1ffb539928c5d20295f4309b538877467fd32336f2548ba",
+      "new": "sha256:24b0e84c3860e3901e59221cceeccd7516b90b90d429c74aa427296510cdd316"
+    },
+    {
+      "id": "lsps-map-p111",
+      "role": "legend",
+      "old": "sha256:ff6f1da0c3113bd58341e13d57a01ae05e90d23b065e127683c1860829e4ff60",
+      "new": "sha256:fb71e0f027d822efcacbda0aff0d9d876810a6a87f695dffeeaacd63a535ff63"
+    },
+    {
+      "id": "lsps-map-p112",
+      "role": "legend",
+      "old": "sha256:c5595fd4f66371b19e0390a7c08c3846a2d3a317e118eaf2178e1256a25e57ed",
+      "new": "sha256:78a09199e0d882dfc291cd1263db06ccb9b58edd3c19ac40f95f684fe1de5284"
+    },
+    {
+      "id": "lsps-map-p113",
+      "role": "legend",
+      "old": "sha256:fddab2fed938fa1bb155d8477f8a2b5ae4a6e6acd20a4cdda2f657a59a6726e1",
+      "new": "sha256:4dc0899fc7e3971836201f8431613abb17dbb0fcc46b40cc27bbcb8e1a1c717c"
+    },
+    {
+      "id": "lsps-map-p114",
+      "role": "legend",
+      "old": "sha256:433b43a3eea26200cc23404d0657a1fd58f153561928d1d2c218bf833204b8c4",
+      "new": "sha256:265fe7d2939af4d306459b99998ca319aeda4e6c93f914e8a6f69ea70572bd1a"
+    },
+    {
+      "id": "lsps-map-p115",
+      "role": "legend",
+      "old": "sha256:d8c7a902e117635b7a30cadff6b052bdabd8af05e8af3dd048f0e77a3fccffce",
+      "new": "sha256:bbc6298932f1c1df85755bc2fdd9e242b3065e961c20eb470bc79654c66bbec7"
+    }
+  ]
+}

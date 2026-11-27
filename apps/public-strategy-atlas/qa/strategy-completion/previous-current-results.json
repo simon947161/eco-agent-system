@@ -1,0 +1,108 @@
+{
+  "format": "csoi-v17-current-results-1",
+  "at": "2026-11-01T09:44:34.951079+00:00",
+  "systemAcceptance": "PARTIAL",
+  "softwareStatus": "PARTIAL",
+  "taskCounts": {
+    "VERIFIED": 49,
+    "PARTIAL": 28,
+    "BLOCKED": 3
+  },
+  "publicCorpus": {
+    "status": "PARTIAL",
+    "catalogueRecords": 52,
+    "families": 31,
+    "byteReceipts": 33,
+    "pdfReceipts": 13,
+    "htmlReceipts": 20,
+    "researchNotes": 25,
+    "researchNoteSources": 23,
+    "publishedPlanningRecords": 5,
+    "completeInventory": "UNKNOWN",
+    "authoredClauseObservations": 74,
+    "historicalDesignReferences": 3,
+    "activeDcpObservations": 73,
+    "withdrawnDcpObservations": 1
+  },
+  "officialAdmission": {
+    "status": "PENDING",
+    "admittedDocuments": 0,
+    "admittedRelationships": 0,
+    "sourceReportedCandidates": 8,
+    "actualOutcomeKpi": "UNKNOWN"
+  },
+  "native": {
+    "status": "PASS_TESTED_HERE",
+    "filesPassed": 42,
+    "totalDistinctFilesPassed": 42,
+    "evidence": "bombala-phe/native-results.json"
+  },
+  "browser": {
+    "status": "PASS_TESTED_HERE",
+    "leafSuitesPassed": 17,
+    "scope": "New Bombala PHE and nine affected existing suites, six legacy suites, plus P0/P1 remediation desktop/mobile; 24 routes × five viewports.",
+    "evidence": "bombala-phe/results.json",
+    "aggregateLog": "bombala-phe/browser-regression.log"
+  },
+  "nodeCoverage": {
+    "lines": 91.38,
+    "branches": 84.62,
+    "functions": 95.56,
+    "scope": "Loaded atlas-*.js/csoi-*.js modules under Node only; renderer line coverage11.76%, no browser/tool coverage inferred",
+    "evidence": "csoi/coverage-cooma.txt",
+    "status": "HISTORICAL_NOT_RERUN_THIS_BATCH"
+  },
+  "defaultSnapshotDigest": "sha256:53841d668ffdb78a42edb9ad515a64dcb6956dd390b6c777531f2c4d72311375",
+  "pr": {
+    "number": 130,
+    "state": "OPEN_DRAFT",
+    "verifiedBaseSha": "ad203014caa2fb2c67b7457b2d720b528baa6a7a",
+    "testedCodeSha": "129b35d2e400f5fd372f5eafac3b3a5048f1bb53",
+    "evidence": "bombala-phe/pr130-readback.json",
+    "ci": "No commit statuses or PR-triggered workflow runs returned at tested code SHA; no independent CI pass claimed."
+  },
+  "notTested": [
+    "physical touch/monitors",
+    "professional screen-reader certification",
+    "cross-browser",
+    "private WCOS/Outlook compatibility",
+    "independent privacy/legal certification"
+  ],
+  "codeCommitBinding": "COI_TASK_REGISTRY_V1_7.json latest_bombala_phe_batch.code_sha",
+  "codeManifest": {
+    "csoi-phe.js": "sha256:4424010a688aef87b4831a9498c6cfed7232c30e44db671d8856e46581832a53",
+    "csoi-pages.js": "sha256:b2393f34abaa3c1da2bc19a1a2362a5e7d68a95612cb60acfc4f2b9a9a7d6127",
+    "csoi-clauses.js": "sha256:f9b3f8c4b7a2aabec9ee0aa3928e03b31bebcbb87ce289441ee32712c876cc86",
+    "csoi-review-work.js": "sha256:a0251ca33a350c28aeac24a1dfd0fdb2c5bca28c91bd234200a49ce6747f8ce3",
+    "csoi-calendar.js": "sha256:3588d09a3618f090496b2ab9fd967df55cb50102fe9fec69bf150c506021483b",
+    "atlas-domain.js": "sha256:b6d0367958ddfbe26084a1111453b9c8cc17ccf8c7766243f5762854a49b9e8f",
+    "atlas-model.js": "sha256:05aa87003bbfd607fc70130b73c0af44db45ce3de304c20f2cce54666fd6e7d1",
+    "atlas.js": "sha256:f55e43cad6bc6618dd37b0bb11ba4c78634dd0692a67daa22a9f86cc3ecb15e4",
+    "csoi-remediation.js": "sha256:b9af63eee609be5f2875f9f552833a511993b7a7a4702c2938192b01f5453f6c",
+    "csoi-knowledge.js": "sha256:2377f1c0a8e4717512d688b091a656fa016d9b8e6193543e030f850a227f0229",
+    "csoi-boot.js": "sha256:49ad12d9a19fb51a1fc2e73e83ee516f36b390fdb8d70b43b86c80936c4d9f16",
+    "index.html": "sha256:0fa241853f2932234cefb374d73b7073390f0a4b3e97b4db2974340663fc4a11",
+    "sources/csoi-default-snapshot.js": "sha256:0ede52c98bdd3d2bf08630e2d307bd7565f401f768965c33ae5e8040d8862b85",
+    "sources/bombala-dcp-outline.json": "sha256:e2b30d6bbc387281ff789f9130136461a951f07163a80e760a0512f5f05d9853",
+    "sources/bombala-dcp-outline.js": "sha256:a04dd1cb841b1de6100feac873c59d14076ee8a9bf35ea746d045d2a46cb1a08",
+    "csoi-bombala-phe.test.cjs": "sha256:5328989924e82d5fc6884ee04e89ce733b36f7187330c1807f3fc2b9cfcac8d5",
+    "csoi-phe-context.test.cjs": "sha256:145951bd91eaf41da6601bdf7fbaa1441ff281e1f25ef86dbbd2379f3599ed6e",
+    "qa/csoi-bombala-phe-browser.py": "sha256:56898cdafefa30cde7e199368b3d564a527f84529c9d7510f07cc7763a7152cd",
+    "qa/csoi-phe-context-browser.py": "sha256:764e069bf41aa739b0982ce59b1a823a9b17d58e5118e2d4066bef0dbcaa3d97",
+    "qa/csoi-bombala-browser.py": "sha256:a58fd2eb5aabc77b0f0f4090721e3b46d88d0c4008e261caa846690337fb2fcb",
+    "qa/csoi-cooma-browser.py": "sha256:63edd72380a0060298e5287ea50522b803097b374d9557453464a7fc11cb011d",
+    "qa/e0-browser.py": "sha256:e353e8ecc0ec3b5f9491092552272963c83bcaf064e5711abd8b111f83df95f2",
+    "qa/run-local-browser.py": "sha256:acbdc0ccc396e83d4d6d3a9b2fe6283a90bb91a75fb749eea671ce3dfa1008e2"
+  },
+  "report": "CSOI_BOMBALA_PHE_RESULTS_20261101.md",
+  "latestSourceBatch": "csoi/snowy-source-results.json",
+  "latestClauseBatch": "csoi/clause-results.json",
+  "latestPathBatch": "csoi/path-results.json",
+  "latestReviewCalendarBatch": "csoi/review-calendar-results.json",
+  "defaultDomainEntities": 137,
+  "defaultDomainAssertions": 48,
+  "latestCoomaBatch": "csoi/cooma-results.json",
+  "latestPheBombalaBatch": "csoi/phe-bombala-results.json",
+  "latestIntegrityRemediation": "remediation/PHASE1_ACCEPTANCE_20261031.md",
+  "latestBombalaPheBatch": "bombala-phe/results.json"
+}

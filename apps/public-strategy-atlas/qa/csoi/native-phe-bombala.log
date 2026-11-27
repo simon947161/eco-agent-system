@@ -1,0 +1,74 @@
+PASS: source-bounded 29.9 t CO2e/person, work/accounting type validation, 3 Atlas node overlays, 17+ negative/positive cases.
+Notice: modelling/unit tests only; official source admission and real Chrome QA are not implied.
+PASS: spatial/effective-time indexes, historical as-of queries, wrong region/date/parcel/revision/draft/legal-effect rejection, overlapping source revision conflict and rejected candidate path exclusion
+PASS current comparison pins exact content identities and does not perform finance arithmetic
+PASS historical pin resolves retained version after current revision changes
+PASS missing identities and revision pins are rejected without substituting current objects
+PASS tampered current record or history fails snapshot verification before rendering
+PASS legacy stations, content and source catalogue use existing exact identities
+PASS same unknown method or scope is not a compatibility match and null is never zero
+PASS unit, stock/flow, fiscal interval, region and actual/planned roles remain distinct
+PASS protected payloads, unknown classification and forged approved releases are denied
+PASS percent denominators, financial rates and legal roles participate in compatibility
+PASS calendar execution roles use the actual task schema without inventing outcomes
+PASS inert public source text stays data, source state and unknowns are retained
+PASS dataset remains byte-identical after all comparisons
+comparison: 12 groups PASS
+PASS: 60 synthetic content nodes, 59 edges, stable coordinates, bounded truncation (2ms)
+PASS: 200 synthetic content nodes, 199 edges, stable coordinates, bounded truncation (4ms)
+PASS: export/verify roundtrip, external checkpoint and corrupted dataset/receipt rejection
+PASS: 15 decomposable topics, 127 items, six-level trail, child/ancestor tamper propagation, order independence, 8 negative cases, English UI/content
+PASS: draft weekly concerns/review/material gaps and capacity basis, meeting questions/followups, UNKNOWN decisions, immutable preparations, disabled Outlook/account/mail actions, privacy/forged approval rejection, portable verification and Atlas snapshot integration
+PASS:17 Bombala authored observations,72total clauses,135entities/48assertions; discontinuous page pins, distinct table columns, historical identity/date/scope conflicts, six-node path, no legal/arithmetic promotion, source-isolated withdrawal and review/export verification
+PASS: startup cache equals full registration, synthetic fixture equals rebuilt history/base, exact default digest, isolated clones and stale/tampered/unsupported cache rejection
+PASS: Annual Edition leap/fiscal/ISO dates, bounded bidirectional calendar/work/evidence/report navigation, source/approval cards, recurrence applicability/cycle/due guards, private/forged approval rejection, safe portability and existing Atlas snapshot integration
+PASS: calendar/assistant capsules stay governed in legacy snapshots; claimed statutory verification cannot authorise tasks/recurrence, and new audit events use actual execution time
+PASS: existing-registry clause containment, exact source/page/parent pins, real eight-level outline,6000-level traversal, source/parent withdrawal, missing/foreign/cyclic/PII/authority rejections and historical110/90/40reference rates without actual demand or legal admission
+PASS: second real DCP outline,72total clauses in same135entity domain, source-specific ancestry, geographic conflict across pinned path sets, no law/arithmetic promotion, foreign-parent rejection, independent calendar plan and isolated source withdrawal
+PASS: CSOI module boundaries; 90 layer/channel deny checks; rights, nested PII, confidentiality, small-cell, forged release/authority and tampered bundle rejections.
+PASS: actual public observation receipts extend original catalogue, preserve histories/rights gates, and bind bounded research summaries to existing Atlas snapshots
+PASS: L0–L5 public/synthetic lineage in existing Atlas snapshots; source withdrawal invalidates downstream; replay; identity/activity separation; units, scope, denominators, duplicates, conflicts, stale rules and authority denials.
+PASS: CSOI records use the existing Atlas registry, immutable revisions, legacy base, independent snapshots, stale-write and protected/official rejection
+PASS: independently pinned source/goal/input path sets, relationship/counterevidence/admission gates, source withdrawal with retained history, corrupt/missing/foreign pins, finance/unit conflicts, bounded discovery and no data mutation/arithmetic/official promotion
+PASS: explicit PHE historical selections, exact source/page/clause pins, no graph mutation or legal link, two-source review/calendar plans, export verification and isolated withdrawal/missing/wrong-page rejection
+PASS: eight source-backed public PHE/WCOS domains, conditional multi-stage research workflows, exclusions/wrong-region/conflicts, current-law and official-decision unknowns, source anchors and privacy negatives
+PASS: exact reviewed OP bytes/anchor bind five planning records, unknown volume units stay unknown, target/funded/actual/money are distinct, source candidates stay pending and false typed values are rejected
+PASS: offline original-byte append preserves catalogue/observation prefixes, rejects mismatched bytes/unpinned directory/private host/PII/rights promotion/excerpts, retains gates and never commits temporary source bodies
+PASS: independently recomputed pinned historical layer receipts reject self-consistent false math; source changes invalidate current use while historical exports remain verifiable
+PASS: public independent source-review work/calendar plans, exact clause/source pins, assumed-hours/unknown-actuals accounting, fiscal/civil navigation, source withdrawal, immutable identity and forbidden Council/action/private/actual-field rejection
+PASS: CSOI functional route manifest, deep links, bounded public query, hostile path and companion URL guards
+PASS plan-level read-only fixture contains complete annual/field/report concept chain
+PASS adapter refuses writes, private and protected records, forged release, arbitrary synthetic labels and PII
+PASS public metadata needs trusted review callback and excludes business fields/unsafe URL
+PASS Food/LTW/Backflow conditional cross-search never grants all approvals by business/property name
+PASS LTW template distinguishes stages/classification/concurrence but cannot decide or approve
+PASS backflow schedule requires testable device, date, applicable interval and matching scope
+PASS four judgment classes retain review boundaries and formal decisions are blocked
+PASS summary is synthetic only and never releases a small real aggregate
+csoi-wcos: 8 groups PASS
+PASS service/object/type denominators separate properties, events, issues and actual outcomes
+PASS duplicate denominator input deduplicates objects/events and rejects conflicting values
+PASS unknown eligibility and inspection need are not false zeros or compliance
+PASS completion, issue closure, dates and real protected objects require evidence
+PASS hours preserve six phases and measured/estimated/assumed categories; no dollar conversion
+PASS resource demand needs explicit annual capacity and never creates personnel/spend claims
+PASS three ledgers reuse existing identities and reverse trace stops at unsupported official mapping
+PASS calculation input receipts detect corruption and changed revisions
+PASS inherited water/carbon/land unit and finance engines preserve source gates
+csoi-work: 9 groups PASS
+PASS: exact legacy receipt hashes, 10000-wide indexed pagination/bounded layout, 5000-level iterative traversal/local+source receipts, flat deep snapshot roundtrip and ancestor mutation/cycle rejection
+PASS: explainable versioned multi-signal candidates with trace paths/alternatives/falsifiers/counterevidence, wrong-region/draft/period/source-loss rejections, persistent local review and forged official promotion prevention
+PASS: additive domain migration, 127-item/base digest preservation, legacy workspace/snapshot compatibility, versioned accounting provenance/reverse links, immutable local reviews, stale/forged/corrupt history rejection
+PASS: unified synthetic WBS, typed dependency/resource/finance/output routes, forward/reverse bounded BFS, multi-parent identity reuse, dependency cycle detection, separate execution/evidence states and known-link fail-closed
+PASS: replayed source availability, retained historical access, stage-specific rights/review owners, correction withdrawal/re-retrieval and immutable catalogue identity
+PASS: 15 source requirements, exact catalogue mirror/hash, ordered intake/correction replay, permitted synthetic pipeline, rights/date/URL/private-data gates, corruption/forged stage rejection and honest coverage denominators
+PASS: unified numeric/unit/source/work search, typed scope filters/pagination, revision diffs and scenario editing with receipt invalidation and invalid finance rejection
+PASS: three-ledger typed formulas, cost/variance/conversion/allocation, pinned provenance, immutable receipt snapshots, changed-input invalidation, stale historical verification and unit/scope/year/zero/official/double-count rejection
+PASS: 10 additional admission rejection cases; snapshot tamper; discovery explanations and falsifier
+PASS: schema, multipath, candidate exclusion, false official promotion, missing target, time/region rejection, unknown context, canonical digest, byte tamper, append/retract, history tamper, duplicate event
+PASS: production route projection, model-backed continuous endpoints, stable partial expansion, distinct corridors/candidate exclusion, 127-item data unchanged, default map/hidden panel/utility entry contracts. Browser acceptance is separate.
+PASS route-preview: 15 existing nodes / 16 edges, station selection, candidate toggle, line filter, zoom and inspector closing.
+NOTE this is a mock-DOM smoke test, not real browser visual, keyboard or WCAG acceptance.
+PASS: checkpoint-bound three-way preview, explicit field choices, archived imported history, appended RESOLVE events, old workspace compatibility, stale preview and corruption/promotion rejection
+PASS: edit/diff, immutable source/history, supersede/revert/retract/replay, stale editor conflict, monotonic history, import roundtrip/checkpoint/tamper/signature/promotion rejection, source admission pending gates and excerpt hash
+38/38 native Atlas suites passed. Browser/source coverage are separate.

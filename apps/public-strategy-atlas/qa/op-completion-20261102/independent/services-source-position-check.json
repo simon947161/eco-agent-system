@@ -1,0 +1,190 @@
+{
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "authorSHA256": "97b090d6815a474d0fb24b8ce401e54600a616e64a97e42806ecb3c8f608209f",
+  "scope": "Corroborating source location, actual cell display, parent-condition retention and explicitly printed CSP-reference checks. Original substantive semantic reading is separate.",
+  "counts": {
+    "uniqueSourceAnchors": 4134,
+    "publishedValuesComparedWithOriginalCells": 2842,
+    "cspReferencesIncludingGuideAndOverview": 746,
+    "formalPhysicalRowIds": 517,
+    "uniqueFormalPhysicalRowIds": 517,
+    "failures": 0
+  },
+  "failures": [],
+  "lspsReferences": [
+    {
+      "id": "csoi:op-full:p008:front_matter",
+      "reference": {
+        "occurrenceId": "p008:diagram:lsps",
+        "pdfPage": 8,
+        "field": "diagram",
+        "documentLabel": "Local Strategic Planning Statement",
+        "sourceAnchor": {
+          "field": "diagramContext",
+          "pdfPage": 8,
+          "bbox": [
+            0.0,
+            0.0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "normalizedTextDigest": "sha256:f317c65ff17a32fb1dad7e3c60b25bcfedfdec4103b3178b5e3fd6181c6e0246",
+          "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+        },
+        "relationship": "NAMED_DOCUMENT_REFERENCE_ONLY",
+        "priorityOrActionMapping": "UNKNOWN",
+        "version": "UNKNOWN"
+      }
+    },
+    {
+      "id": "csoi:op-full:p095-t00-r04",
+      "reference": {
+        "occurrenceId": "p095-t00-r04:otherPlans:lsps",
+        "pdfPage": 95,
+        "physicalRowId": "p095-t00-r04",
+        "field": "otherPlans",
+        "documentLabel": "Local Strategic Planning Statement",
+        "sourceAnchor": {
+          "field": "otherPlans",
+          "pdfPage": 95,
+          "bbox": [
+            725.6694539388021,
+            171.78946940104166,
+            805.5855926513672,
+            332.17559814453125
+          ],
+          "normalizedTextDigest": "sha256:90176f784b28a9a9fc9293e398ce5945cc0e0a33efbd0c53f3c874a8191fcb57",
+          "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+        },
+        "relationship": "NAMED_DOCUMENT_REFERENCE_ONLY",
+        "priorityOrActionMapping": "UNKNOWN",
+        "version": "UNKNOWN"
+      }
+    },
+    {
+      "id": "csoi:op-full:p096-t00-r01",
+      "reference": {
+        "occurrenceId": "p096-t00-r01:otherPlans:lsps",
+        "pdfPage": 96,
+        "physicalRowId": "p096-t00-r01",
+        "field": "otherPlans",
+        "documentLabel": "Local Strategic Planning Statement",
+        "sourceAnchor": {
+          "field": "otherPlans",
+          "pdfPage": 96,
+          "bbox": [
+            629.6140747070312,
+            61.844095865885414,
+            713.7085571289062,
+            144.7880655924479
+          ],
+          "normalizedTextDigest": "sha256:4ef5601f788a2d98d43244fc8cb2c1ff5e5f39665247cddc1bcf408c834d4fd1",
+          "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+        },
+        "relationship": "NAMED_DOCUMENT_REFERENCE_ONLY",
+        "priorityOrActionMapping": "UNKNOWN",
+        "version": "UNKNOWN"
+      }
+    },
+    {
+      "id": "csoi:op-full:p096-t00-r04",
+      "reference": {
+        "occurrenceId": "p096-t00-r04:description:lsps",
+        "pdfPage": 96,
+        "physicalRowId": "p096-t00-r04",
+        "field": "description",
+        "documentLabel": "Local Strategic Planning Statement",
+        "sourceAnchor": {
+          "field": "description",
+          "pdfPage": 96,
+          "bbox": [
+            204.0941619873047,
+            224.2760009765625,
+            403.4645284016927,
+            268.8199768066406
+          ],
+          "normalizedTextDigest": "sha256:65d7d854f1b343756a807a72393db81544e312ca5e5ad69955450e8ad8da814e",
+          "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+        },
+        "relationship": "NAMED_DOCUMENT_REFERENCE_ONLY",
+        "priorityOrActionMapping": "UNKNOWN",
+        "version": "UNKNOWN"
+      }
+    },
+    {
+      "id": "csoi:op-full:p096-t00-r04",
+      "reference": {
+        "occurrenceId": "p096-t00-r04:otherPlans:lsps",
+        "pdfPage": 96,
+        "physicalRowId": "p096-t00-r04",
+        "field": "otherPlans",
+        "documentLabel": "Local Strategic Planning Statement",
+        "sourceAnchor": {
+          "field": "otherPlans",
+          "pdfPage": 96,
+          "bbox": [
+            629.6140747070312,
+            224.2760009765625,
+            713.7085571289062,
+            268.8199768066406
+          ],
+          "normalizedTextDigest": "sha256:d9d907ff6d98b0a64555a397291e86a327106b2e4c9994f6911e5f8b51c2306b",
+          "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+        },
+        "relationship": "NAMED_DOCUMENT_REFERENCE_ONLY",
+        "priorityOrActionMapping": "UNKNOWN",
+        "version": "UNKNOWN"
+      }
+    },
+    {
+      "id": "csoi:op-full:p096-t00-r05",
+      "reference": {
+        "occurrenceId": "p096-t00-r05:otherPlans:lsps",
+        "pdfPage": 96,
+        "physicalRowId": "p096-t00-r05",
+        "field": "otherPlans",
+        "documentLabel": "Local Strategic Planning Statement",
+        "sourceAnchor": {
+          "field": "otherPlans",
+          "pdfPage": 96,
+          "bbox": [
+            629.6140747070312,
+            268.8199768066406,
+            713.7085571289062,
+            313.3639424641927
+          ],
+          "normalizedTextDigest": "sha256:d9d907ff6d98b0a64555a397291e86a327106b2e4c9994f6911e5f8b51c2306b",
+          "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+        },
+        "relationship": "NAMED_DOCUMENT_REFERENCE_ONLY",
+        "priorityOrActionMapping": "UNKNOWN",
+        "version": "UNKNOWN"
+      }
+    },
+    {
+      "id": "csoi:op-full:p096-t00-r06",
+      "reference": {
+        "occurrenceId": "p096-t00-r06:otherPlans:lsps",
+        "pdfPage": 96,
+        "physicalRowId": "p096-t00-r06",
+        "field": "otherPlans",
+        "documentLabel": "Local Strategic Planning Statement",
+        "sourceAnchor": {
+          "field": "otherPlans",
+          "pdfPage": 96,
+          "bbox": [
+            629.6140747070312,
+            313.3639424641927,
+            713.7085571289062,
+            357.9079182942708
+          ],
+          "normalizedTextDigest": "sha256:d9d907ff6d98b0a64555a397291e86a327106b2e4c9994f6911e5f8b51c2306b",
+          "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+        },
+        "relationship": "NAMED_DOCUMENT_REFERENCE_ONLY",
+        "priorityOrActionMapping": "UNKNOWN",
+        "version": "UNKNOWN"
+      }
+    }
+  ]
+}

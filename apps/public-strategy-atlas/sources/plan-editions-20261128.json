@@ -1,0 +1,191 @@
+{
+  "format": "atlas-plan-edition-review-1",
+  "directoryUrl": "https://www.snowymonaro.nsw.gov.au/Council/Integrated-Planning-and-Reporting",
+  "directoryDigest": "sha256:362a2207a3b9c8f61751aae962c5c42cc770a5dd95cfd37d34662852c1dd790b",
+  "observedAt": "2026-11-27T21:49:00.000Z",
+  "parser": "pymupdf-1.26.6-nfkc-whitespace-clip-v1",
+  "editions": [
+    {
+      "family": "DP",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/7/council/ipr/20262027/adopted-dp-2025-2029-2026-revision-v2.5-20261106_adopted-org-chart-update.pdf",
+      "rawDigest": "sha256:7f7bcef8a1950021300cc52b283f59944ee5e72925e6b60d93c15c1428b60f66",
+      "byteLength": 34968962,
+      "pages": 100,
+      "version": "2.5",
+      "editionDate": "2026-11-03",
+      "retrievedAt": "2026-11-27T21:42:10.246Z",
+      "recordPage": 61,
+      "versionPageDigest": "sha256:b1d91fcef024de0e3212998961b78f8d9442f551eacc6a3bbcc743590df903b8",
+      "rowPageDigest": "sha256:73d7872813692d93b3bcb4311217f4a449132cff541e9fe30246d3f65dc5bcdf",
+      "rowBox": [
+        36,
+        429,
+        560,
+        481
+      ],
+      "headerDigest": "sha256:11dcf02872a21ba6ad9801c017b7ad39d6a84b6b94690e514c0976647ce54127",
+      "cells": [
+        {
+          "field": "csp",
+          "bbox": [
+            37,
+            429,
+            70,
+            481
+          ],
+          "digest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba"
+        },
+        {
+          "field": "project",
+          "bbox": [
+            72,
+            429,
+            181,
+            481
+          ],
+          "digest": "sha256:568bed0f1af46428e84e1b19023255cbb57fdc13f2641cd8cd3128ffc498b9d4"
+        },
+        {
+          "field": "purpose",
+          "bbox": [
+            182,
+            429,
+            388,
+            481
+          ],
+          "digest": "sha256:833395e82d4e283aa228a269c2eacaf2298c7f0a2112c01fc6db69c496498e04"
+        },
+        {
+          "field": "budget",
+          "bbox": [
+            388,
+            429,
+            435,
+            481
+          ],
+          "digest": "sha256:66807e3878f3cdbf1ab46d4cd8ebc58a1ec1bb72b0b464a53b220ad3358c5eb8"
+        },
+        {
+          "field": "delivery",
+          "bbox": [
+            438,
+            429,
+            558,
+            481
+          ],
+          "digest": "sha256:bf17bf183652ccca48cb1681e6e4d353d84544d3c0c3a3b1bc81340efbbff90a"
+        }
+      ],
+      "aud": 150000,
+      "csp": "8.2",
+      "resolution": "440/25",
+      "budgetBasis": "MULTIYEAR_PROGRAM"
+    },
+    {
+      "family": "OP",
+      "url": "https://www.snowymonaro.nsw.gov.au/files/assets/public/v/6/council/ipr/20262027/adopted-op-2026-2027-v1.5-20261106_-org-str-update-w-revpol.pdf",
+      "rawDigest": "sha256:61d290c41a52ea87f664f57453417367f5d3f0f4dcd8296fb95f29dacc8c0b60",
+      "byteLength": 39040912,
+      "pages": 141,
+      "version": "1.5",
+      "editionDate": "2026-11-03",
+      "retrievedAt": "2026-11-27T21:44:46.269Z",
+      "recordPage": 68,
+      "versionPageDigest": "sha256:0e190039cc7564e7f3cba8eb4ecc4104f3b5938e6da772d6f7415c7f8786054b",
+      "rowPageDigest": "sha256:aec9ad62bf92c8fb70ca7f287e8db4a3744736d25532a8196dc03f78b1dc353a",
+      "rowBox": [
+        36,
+        352,
+        807,
+        404
+      ],
+      "headerDigest": "sha256:d4bc06b78a89b7b20f2cd3b2f3fb1eba65d03d6046e2c08c9324032a64a2c269",
+      "cells": [
+        {
+          "field": "project",
+          "bbox": [
+            36,
+            352,
+            203,
+            404
+          ],
+          "digest": "sha256:6816a966542c4f937ae0d81fb6b5b15f2343fa1787761eed5febba77d92513fe"
+        },
+        {
+          "field": "purpose",
+          "bbox": [
+            205,
+            352,
+            401,
+            404
+          ],
+          "digest": "sha256:833395e82d4e283aa228a269c2eacaf2298c7f0a2112c01fc6db69c496498e04"
+        },
+        {
+          "field": "budget",
+          "bbox": [
+            404,
+            352,
+            464,
+            404
+          ],
+          "digest": "sha256:66807e3878f3cdbf1ab46d4cd8ebc58a1ec1bb72b0b464a53b220ad3358c5eb8"
+        },
+        {
+          "field": "resources",
+          "bbox": [
+            465,
+            352,
+            548,
+            404
+          ],
+          "digest": "sha256:ff21b51690a0d27ed40cca774459b02ff6bbda7cac9e1dc6d6f617d053d33459"
+        },
+        {
+          "field": "csp",
+          "bbox": [
+            549,
+            352,
+            629,
+            404
+          ],
+          "digest": "sha256:843e508ebb105421bbdef19c637062b6c2c143be9a328504e4f3ec11c91457ba"
+        },
+        {
+          "field": "otherPlans",
+          "bbox": [
+            630,
+            352,
+            713,
+            404
+          ],
+          "digest": "sha256:e118b5c29cb4b975251601a6cc3209a4ea3eb0b429b205b679a8645da47da654"
+        },
+        {
+          "field": "start",
+          "bbox": [
+            714,
+            352,
+            759,
+            404
+          ],
+          "digest": "sha256:158a323a7ba44870f23d96f1516dd70aa48e9a72db4ebb026b0a89e212a208ab"
+        },
+        {
+          "field": "end",
+          "bbox": [
+            760,
+            352,
+            805,
+            404
+          ],
+          "digest": "sha256:5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e"
+        }
+      ],
+      "aud": 150000,
+      "csp": "8.2",
+      "resolution": "440/25",
+      "budgetBasis": "ANNUAL_PLAN"
+    }
+  ]
+}

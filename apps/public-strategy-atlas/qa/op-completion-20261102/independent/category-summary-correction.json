@@ -1,0 +1,118 @@
+{
+  "format": "OP_INDEPENDENT_CATEGORY_SUMMARY_CORRECTION_V1",
+  "at": "2026-11-02T04:15:33.372958+00:00",
+  "status": "PASS_ALL_911_CURRENT_CATEGORIES",
+  "scope": "Only stale category metadata in independent final review evidence was corrected. Original semantic content, source bundle, boot cache, historical initial matrix and earlier receipts unchanged. No new full audit.",
+  "sourceBundleSHA256": "345085359edd2d29170e010ac7d01c8e79a34f2c902d6a5300e0b17f37d791a0",
+  "beforeEvidenceFileSHA256": {
+    "readback-review.json": "6cc1c812f1aacfd3a9cca9901ba19d8e6bc12148f3a54133c33a29e8f07502d8",
+    "finance-readback-review.json": "d4972e7872e7c37abd26c01c1fd9a895cbe78ea8307dc604bc94cbd07b54da7a",
+    "readback-review.csv": "500f130a53d9a89d76aa8b03eb8783397cf4e881edb8725d27cf63f438fcf363",
+    "finance-readback-review.csv": "901ebdfc7f2148a82fd680305ad3f3444b07c1fc384e6cd6732cebeb78b93a7b",
+    "REPORT_ZH.md": "57cf277ff77e9ffa1a0d6876ae1a443937f55bfaeea9fce2373b82a79388c144"
+  },
+  "changes": [
+    {
+      "file": "readback-review.json",
+      "id": "csoi:op2026:finance:p111:capital-footnote",
+      "oldCategory": "OP_BUDGET_CONDITION",
+      "actualCategory": "OP_DOCUMENT_CONTEXT",
+      "finalCategoryWasAlreadyCorrect": true
+    },
+    {
+      "file": "finance-readback-review.json",
+      "id": "csoi:op2026:finance:p111:capital-footnote",
+      "oldCategory": "OP_BUDGET_CONDITION",
+      "actualCategory": "OP_DOCUMENT_CONTEXT",
+      "finalCategoryWasAlreadyCorrect": true
+    }
+  ],
+  "oldSummaryCountsByCategory": {
+    "FRONT_MATTER": 11,
+    "GUIDE_EXAMPLE": 5,
+    "SERVICE_ACTION": 259,
+    "PROGRAMME_CONTEXT": 31,
+    "SERVICE_SCOPE_NOTE": 19,
+    "IMPROVEMENT_ACTION": 43,
+    "PROJECT": 115,
+    "OP_CAPITAL_BUDGET_ROW": 41,
+    "OP_BUDGET_CONDITION": 2,
+    "OP_SERVICE_BUDGET_ROW": 155,
+    "OP_FUND_FINANCIAL_ROW": 30,
+    "OP_GLOSSARY": 49,
+    "OP_BUDGET_FIGURE": 4,
+    "OP_REVENUE_POLICY": 92,
+    "OP_DOCUMENT_CONTEXT": 6,
+    "OP_DOCUMENT_VERSION": 8,
+    "OP_REVENUE_CATEGORY": 5,
+    "OP_REVENUE_RATE_ROW": 5,
+    "OP_REVENUE_RATE_TOTAL": 1,
+    "OP_REVENUE_MAP": 4,
+    "OP_REVENUE_CHARGE_ROW": 23,
+    "OP_REVENUE_REBATE": 3
+  },
+  "currentCountsByCategory": {
+    "FRONT_MATTER": 11,
+    "GUIDE_EXAMPLE": 5,
+    "SERVICE_ACTION": 259,
+    "PROGRAMME_CONTEXT": 31,
+    "SERVICE_SCOPE_NOTE": 19,
+    "IMPROVEMENT_ACTION": 43,
+    "PROJECT": 115,
+    "OP_CAPITAL_BUDGET_ROW": 41,
+    "OP_BUDGET_CONDITION": 1,
+    "OP_DOCUMENT_CONTEXT": 7,
+    "OP_SERVICE_BUDGET_ROW": 155,
+    "OP_BUDGET_FIGURE": 4,
+    "OP_FUND_FINANCIAL_ROW": 30,
+    "OP_GLOSSARY": 49,
+    "OP_REVENUE_POLICY": 92,
+    "OP_DOCUMENT_VERSION": 8,
+    "OP_REVENUE_CATEGORY": 5,
+    "OP_REVENUE_RATE_ROW": 5,
+    "OP_REVENUE_RATE_TOTAL": 1,
+    "OP_REVENUE_MAP": 4,
+    "OP_REVENUE_CHARGE_ROW": 23,
+    "OP_REVENUE_REBATE": 3
+  },
+  "reason": "The final P111 semantic fix and finalCategory were present, but category still carried the earlier initial-review value and the combined summary counted that stale field.",
+  "historyPreservation": "Old category remains as intermediateCapturedCategory in final JSON and in the untouched historical finance-initial-semantic-review.json; old hashes/counts are retained here.",
+  "validation": {
+    "readback-review.json": {
+      "rows": 911,
+      "currentCategoryMismatches": 0
+    },
+    "finance-readback-review.json": {
+      "rows": 428,
+      "currentCategoryMismatches": 0
+    },
+    "services-readback-review.json": {
+      "rows": 483,
+      "currentCategoryMismatches": 0
+    },
+    "model-readback-review.json": {
+      "rows": 911,
+      "currentCategoryMismatches": 0
+    },
+    "readback-review.csv": {
+      "rows": 911,
+      "currentCategoryMismatches": 0
+    },
+    "finance-readback-review.csv": {
+      "rows": 428,
+      "currentCategoryMismatches": 0
+    },
+    "services-readback-review.csv": {
+      "rows": 483,
+      "currentCategoryMismatches": 0
+    }
+  },
+  "currentUniqueUnitCount": 911,
+  "afterEvidenceFileSHA256": {
+    "readback-review.json": "1cc6b4e74f6e30cf579859dd3e7ede2f2201c85d211036b28696bb9bb1447234",
+    "finance-readback-review.json": "b2dcf465c32c6af97e3cc28096ad6c8c2b52bc8f1f88f5d3f1bb3e4a8c53c07f",
+    "readback-review.csv": "6cad84c69af3492da349afbdbefe6e78384ed9104d718ee91cba5e7b835c367c",
+    "finance-readback-review.csv": "13fc9fca4c98c82e75a2f0efa7e096481b522be29a8c085154a15fc8c5bfdc35",
+    "REPORT_ZH.md": "59ccc2a6207ed8c33ac90e043ed8905f3d7325c509bd3bbf006f560c02ec7876"
+  }
+}

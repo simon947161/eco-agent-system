@@ -1,0 +1,2873 @@
+{
+  "at": "2026-11-02T01:23:39.124829+00:00",
+  "status": "PASS_BOUNDED_SOURCE_VERIFICATION",
+  "sourceId": "csoi:smrc-lsps-2020:20261030",
+  "rawDigest": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+  "pages": 118,
+  "implementationCensus": 83,
+  "priorities": 12,
+  "narrativeLocalOccurrences": 134,
+  "distinctPrintedCodes": 85,
+  "supplementalConflictRecords": 18,
+  "tickImagesChecked": 162,
+  "semanticQualifierChecks": [
+    "1.2",
+    "1.8",
+    "6.7",
+    "5.2",
+    "5.3",
+    "4.2",
+    "11.6"
+  ],
+  "records": [
+    {
+      "recordId": "csoi:knowledge:lsps2020:document",
+      "code": "LSPS2020",
+      "category": "DOCUMENT",
+      "pdfPage": 1,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:1",
+      "code": "1",
+      "category": "PRIORITY",
+      "pdfPage": 90,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:1.1",
+      "code": "1.1",
+      "category": "ACTION",
+      "pdfPage": 90,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        90
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:1.2",
+      "code": "1.2",
+      "category": "ACTION",
+      "pdfPage": 90,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        90
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:1.3",
+      "code": "1.3",
+      "category": "ACTION",
+      "pdfPage": 91,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        91
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:1.4",
+      "code": "1.4",
+      "category": "ACTION",
+      "pdfPage": 91,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        91
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:1.5",
+      "code": "1.5",
+      "category": "ACTION",
+      "pdfPage": 91,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        91
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:1.6",
+      "code": "1.6",
+      "category": "ACTION",
+      "pdfPage": 91,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        91
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:1.7",
+      "code": "1.7",
+      "category": "ACTION",
+      "pdfPage": 91,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        91
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:1.8",
+      "code": "1.8",
+      "category": "ACTION",
+      "pdfPage": 91,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        91
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:2",
+      "code": "2",
+      "category": "PRIORITY",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:2.1",
+      "code": "2.1",
+      "category": "ACTION",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        92
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:2.2",
+      "code": "2.2",
+      "category": "ACTION",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        92
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:2.3",
+      "code": "2.3",
+      "category": "ACTION",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        92
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:3",
+      "code": "3",
+      "category": "PRIORITY",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:3.1",
+      "code": "3.1",
+      "category": "ACTION",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        92
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:3.2",
+      "code": "3.2",
+      "category": "ACTION",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        92
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:3.3",
+      "code": "3.3",
+      "category": "ACTION",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        92
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:3.4",
+      "code": "3.4",
+      "category": "ACTION",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        92
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:3.5",
+      "code": "3.5",
+      "category": "ACTION",
+      "pdfPage": 92,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        92
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:4",
+      "code": "4",
+      "category": "PRIORITY",
+      "pdfPage": 93,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:4.1",
+      "code": "4.1",
+      "category": "ACTION",
+      "pdfPage": 93,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        93
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:4.2",
+      "code": "4.2",
+      "category": "ACTION",
+      "pdfPage": 93,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        93
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:4.3",
+      "code": "4.3",
+      "category": "ACTION",
+      "pdfPage": 93,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        93
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:4.4",
+      "code": "4.4",
+      "category": "ACTION",
+      "pdfPage": 93,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        93
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:4.5",
+      "code": "4.5",
+      "category": "ACTION",
+      "pdfPage": 93,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        93
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:4.6",
+      "code": "4.6",
+      "category": "ACTION",
+      "pdfPage": 93,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        93
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:5",
+      "code": "5",
+      "category": "PRIORITY",
+      "pdfPage": 94,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:5.1",
+      "code": "5.1",
+      "category": "ACTION",
+      "pdfPage": 94,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        94
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:5.2",
+      "code": "5.2",
+      "category": "ACTION",
+      "pdfPage": 94,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        94
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:5.3",
+      "code": "5.3",
+      "category": "ACTION",
+      "pdfPage": 94,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        94
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:5.4",
+      "code": "5.4",
+      "category": "ACTION",
+      "pdfPage": 94,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        94
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:5.5",
+      "code": "5.5",
+      "category": "ACTION",
+      "pdfPage": 94,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        94
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:6",
+      "code": "6",
+      "category": "PRIORITY",
+      "pdfPage": 94,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:6.1",
+      "code": "6.1",
+      "category": "ACTION",
+      "pdfPage": 94,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        94
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:6.2",
+      "code": "6.2",
+      "category": "ACTION",
+      "pdfPage": 95,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        95
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:6.3",
+      "code": "6.3",
+      "category": "ACTION",
+      "pdfPage": 95,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        95
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:6.4",
+      "code": "6.4",
+      "category": "ACTION",
+      "pdfPage": 95,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        95
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:6.5",
+      "code": "6.5",
+      "category": "ACTION",
+      "pdfPage": 95,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        95
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:6.6",
+      "code": "6.6",
+      "category": "ACTION",
+      "pdfPage": 95,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        95
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:6.7",
+      "code": "6.7",
+      "category": "ACTION",
+      "pdfPage": 95,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        95
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:7",
+      "code": "7",
+      "category": "PRIORITY",
+      "pdfPage": 95,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:7.1",
+      "code": "7.1",
+      "category": "ACTION",
+      "pdfPage": 95,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 4,
+      "continuationPages": [
+        95,
+        96
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:7.2",
+      "code": "7.2",
+      "category": "ACTION",
+      "pdfPage": 96,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        96
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:7.3",
+      "code": "7.3",
+      "category": "ACTION",
+      "pdfPage": 96,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        96
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:7.4",
+      "code": "7.4",
+      "category": "ACTION",
+      "pdfPage": 96,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        96
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:7.5",
+      "code": "7.5",
+      "category": "ACTION",
+      "pdfPage": 96,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        96
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:8",
+      "code": "8",
+      "category": "PRIORITY",
+      "pdfPage": 97,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.1",
+      "code": "8.1",
+      "category": "ACTION",
+      "pdfPage": 97,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 5,
+      "continuationPages": [
+        97
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.2",
+      "code": "8.2",
+      "category": "ACTION",
+      "pdfPage": 97,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        97
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.3",
+      "code": "8.3",
+      "category": "ACTION",
+      "pdfPage": 97,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        97
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.4",
+      "code": "8.4",
+      "category": "ACTION",
+      "pdfPage": 97,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        97
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.5",
+      "code": "8.5",
+      "category": "ACTION",
+      "pdfPage": 97,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        97
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.6",
+      "code": "8.6",
+      "category": "ACTION",
+      "pdfPage": 97,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        97
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.7",
+      "code": "8.7",
+      "category": "ACTION",
+      "pdfPage": 98,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        98
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.8",
+      "code": "8.8",
+      "category": "ACTION",
+      "pdfPage": 98,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        98
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.9",
+      "code": "8.9",
+      "category": "ACTION",
+      "pdfPage": 98,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 4,
+      "continuationPages": [
+        98
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:8.10",
+      "code": "8.10",
+      "category": "ACTION",
+      "pdfPage": 98,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        98
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:9",
+      "code": "9",
+      "category": "PRIORITY",
+      "pdfPage": 98,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:9.1",
+      "code": "9.1",
+      "category": "ACTION",
+      "pdfPage": 98,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        98
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:9.2",
+      "code": "9.2",
+      "category": "ACTION",
+      "pdfPage": 98,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        98
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:9.3",
+      "code": "9.3",
+      "category": "ACTION",
+      "pdfPage": 98,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        98,
+        99
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:9.4",
+      "code": "9.4",
+      "category": "ACTION",
+      "pdfPage": 99,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        99
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:9.5",
+      "code": "9.5",
+      "category": "ACTION",
+      "pdfPage": 99,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 4,
+      "continuationPages": [
+        99
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:9.6",
+      "code": "9.6",
+      "category": "ACTION",
+      "pdfPage": 99,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        99
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:10",
+      "code": "10",
+      "category": "PRIORITY",
+      "pdfPage": 100,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.1",
+      "code": "10.1",
+      "category": "ACTION",
+      "pdfPage": 100,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        100
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.2",
+      "code": "10.2",
+      "category": "ACTION",
+      "pdfPage": 100,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        100
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.3",
+      "code": "10.3",
+      "category": "ACTION",
+      "pdfPage": 100,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        100
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.4",
+      "code": "10.4",
+      "category": "ACTION",
+      "pdfPage": 100,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        100
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.5",
+      "code": "10.5",
+      "category": "ACTION",
+      "pdfPage": 100,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        100
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.6",
+      "code": "10.6",
+      "category": "ACTION",
+      "pdfPage": 100,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        100,
+        101
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.7",
+      "code": "10.7",
+      "category": "ACTION",
+      "pdfPage": 101,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        101
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.8",
+      "code": "10.8",
+      "category": "ACTION",
+      "pdfPage": 101,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        101
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.9",
+      "code": "10.9",
+      "category": "ACTION",
+      "pdfPage": 101,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        101
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.10",
+      "code": "10.10",
+      "category": "ACTION",
+      "pdfPage": 101,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        101
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:10.11",
+      "code": "10.11",
+      "category": "ACTION",
+      "pdfPage": 101,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        101
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:11",
+      "code": "11",
+      "category": "PRIORITY",
+      "pdfPage": 101,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:11.1",
+      "code": "11.1",
+      "category": "ACTION",
+      "pdfPage": 101,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        101
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:11.2",
+      "code": "11.2",
+      "category": "ACTION",
+      "pdfPage": 102,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        102
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:11.3",
+      "code": "11.3",
+      "category": "ACTION",
+      "pdfPage": 102,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 4,
+      "continuationPages": [
+        102
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:11.4",
+      "code": "11.4",
+      "category": "ACTION",
+      "pdfPage": 102,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        102
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:11.5",
+      "code": "11.5",
+      "category": "ACTION",
+      "pdfPage": 102,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        102
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:11.6",
+      "code": "11.6",
+      "category": "ACTION",
+      "pdfPage": 102,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        102
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:11.7",
+      "code": "11.7",
+      "category": "ACTION",
+      "pdfPage": 102,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 3,
+      "continuationPages": [
+        102
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:11.8",
+      "code": "11.8",
+      "category": "ACTION",
+      "pdfPage": 102,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        102
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:11.9",
+      "code": "11.9",
+      "category": "ACTION",
+      "pdfPage": 102,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        102,
+        103
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:priority:12",
+      "code": "12",
+      "category": "PRIORITY",
+      "pdfPage": 103,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:12.1",
+      "code": "12.1",
+      "category": "ACTION",
+      "pdfPage": 103,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        103
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:12.2",
+      "code": "12.2",
+      "category": "ACTION",
+      "pdfPage": 103,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        103
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:12.3",
+      "code": "12.3",
+      "category": "ACTION",
+      "pdfPage": 103,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        103
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:12.4",
+      "code": "12.4",
+      "category": "ACTION",
+      "pdfPage": 103,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 5,
+      "continuationPages": [
+        103
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:12.5",
+      "code": "12.5",
+      "category": "ACTION",
+      "pdfPage": 103,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        103
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:12.6",
+      "code": "12.6",
+      "category": "ACTION",
+      "pdfPage": 103,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 2,
+      "continuationPages": [
+        103
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:12.7",
+      "code": "12.7",
+      "category": "ACTION",
+      "pdfPage": 104,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        104
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:action:12.8",
+      "code": "12.8",
+      "category": "ACTION",
+      "pdfPage": 104,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING",
+      "columnVerification": "PASS_SOURCE_CROPS",
+      "tickImagesVerified": 1,
+      "continuationPages": [
+        104
+      ]
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p27:3.2",
+      "code": "3.2",
+      "category": "ACTION",
+      "pdfPage": 27,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p27:3.3",
+      "code": "3.3",
+      "category": "ACTION",
+      "pdfPage": 27,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p27:3.4",
+      "code": "3.4",
+      "category": "ACTION",
+      "pdfPage": 27,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p34:5.4",
+      "code": "5.4",
+      "category": "ACTION",
+      "pdfPage": 34,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p42:8.1",
+      "code": "8.1",
+      "category": "ACTION",
+      "pdfPage": 42,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p59:6.4",
+      "code": "6.4",
+      "category": "ACTION",
+      "pdfPage": 59,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p59:6.6",
+      "code": "6.6",
+      "category": "ACTION",
+      "pdfPage": 59,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p59:6.7",
+      "code": "6.7",
+      "category": "ACTION",
+      "pdfPage": 59,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p64:7.1",
+      "code": "7.1",
+      "category": "ACTION",
+      "pdfPage": 64,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p64:7.2",
+      "code": "7.2",
+      "category": "ACTION",
+      "pdfPage": 64,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p64:8.5",
+      "code": "8.5",
+      "category": "ACTION",
+      "pdfPage": 64,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p64:12.6",
+      "code": "12.6",
+      "category": "ACTION",
+      "pdfPage": 64,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p71:6.8",
+      "code": "6.8",
+      "category": "ACTION",
+      "pdfPage": 71,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p71:8.6",
+      "code": "8.6",
+      "category": "ACTION",
+      "pdfPage": 71,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p74:8.7",
+      "code": "8.7",
+      "category": "ACTION",
+      "pdfPage": 74,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p74:10.10",
+      "code": "10.10",
+      "category": "ACTION",
+      "pdfPage": 74,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p83:8.9",
+      "code": "8.9",
+      "category": "ACTION",
+      "pdfPage": 83,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    },
+    {
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p89:5.7",
+      "code": "5.7",
+      "category": "ACTION",
+      "pdfPage": 89,
+      "sourceRevision": "sha256:9bf75ec6fb98f1d03bad47f5b9cda44e6ffadce3bf452eb5a343b394322f8f47",
+      "pageHash": "PASS",
+      "status": "PASS_SOURCE_FIELDS_AND_LOCATORS",
+      "semanticReview": "AI_ASSISTED_BOUNDED_PARAPHRASE_REVIEW_NOT_AUTHORISED_ADMISSION",
+      "currentLaw": "UNKNOWN",
+      "actualWork": "UNKNOWN",
+      "officialAdmission": "PENDING"
+    }
+  ],
+  "occurrences": [
+    {
+      "pdfPage": 24,
+      "code": "1.1",
+      "recordId": "csoi:knowledge:lsps2020:action:1.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 24,
+      "code": "1.2",
+      "recordId": "csoi:knowledge:lsps2020:action:1.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 68,
+      "code": "1.2",
+      "recordId": "csoi:knowledge:lsps2020:action:1.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 83,
+      "code": "1.2",
+      "recordId": "csoi:knowledge:lsps2020:action:1.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 24,
+      "code": "1.3",
+      "recordId": "csoi:knowledge:lsps2020:action:1.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 59,
+      "code": "1.3",
+      "recordId": "csoi:knowledge:lsps2020:action:1.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 24,
+      "code": "1.4",
+      "recordId": "csoi:knowledge:lsps2020:action:1.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 24,
+      "code": "1.5",
+      "recordId": "csoi:knowledge:lsps2020:action:1.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 83,
+      "code": "1.5",
+      "recordId": "csoi:knowledge:lsps2020:action:1.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 24,
+      "code": "1.6",
+      "recordId": "csoi:knowledge:lsps2020:action:1.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 68,
+      "code": "1.6",
+      "recordId": "csoi:knowledge:lsps2020:action:1.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 24,
+      "code": "1.7",
+      "recordId": "csoi:knowledge:lsps2020:action:1.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 83,
+      "code": "1.7",
+      "recordId": "csoi:knowledge:lsps2020:action:1.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 24,
+      "code": "1.8",
+      "recordId": "csoi:knowledge:lsps2020:action:1.8",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 83,
+      "code": "1.8",
+      "recordId": "csoi:knowledge:lsps2020:action:1.8",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 25,
+      "code": "2.1",
+      "recordId": "csoi:knowledge:lsps2020:action:2.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 89,
+      "code": "2.1",
+      "recordId": "csoi:knowledge:lsps2020:action:2.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 25,
+      "code": "2.2",
+      "recordId": "csoi:knowledge:lsps2020:action:2.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 25,
+      "code": "2.3",
+      "recordId": "csoi:knowledge:lsps2020:action:2.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 89,
+      "code": "2.3",
+      "recordId": "csoi:knowledge:lsps2020:action:2.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 27,
+      "code": "3.1",
+      "recordId": "csoi:knowledge:lsps2020:action:3.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 89,
+      "code": "3.1",
+      "recordId": "csoi:knowledge:lsps2020:action:3.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "3.4",
+      "recordId": "csoi:knowledge:lsps2020:action:3.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 27,
+      "code": "3.5",
+      "recordId": "csoi:knowledge:lsps2020:action:3.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 31,
+      "code": "4.1",
+      "recordId": "csoi:knowledge:lsps2020:action:4.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 31,
+      "code": "4.2",
+      "recordId": "csoi:knowledge:lsps2020:action:4.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 31,
+      "code": "4.3",
+      "recordId": "csoi:knowledge:lsps2020:action:4.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 31,
+      "code": "4.4",
+      "recordId": "csoi:knowledge:lsps2020:action:4.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 31,
+      "code": "4.5",
+      "recordId": "csoi:knowledge:lsps2020:action:4.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 31,
+      "code": "4.6",
+      "recordId": "csoi:knowledge:lsps2020:action:4.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 34,
+      "code": "5.1",
+      "recordId": "csoi:knowledge:lsps2020:action:5.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 89,
+      "code": "5.1",
+      "recordId": "csoi:knowledge:lsps2020:action:5.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 34,
+      "code": "5.2",
+      "recordId": "csoi:knowledge:lsps2020:action:5.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 89,
+      "code": "5.2",
+      "recordId": "csoi:knowledge:lsps2020:action:5.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 34,
+      "code": "5.3",
+      "recordId": "csoi:knowledge:lsps2020:action:5.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 89,
+      "code": "5.3",
+      "recordId": "csoi:knowledge:lsps2020:action:5.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 89,
+      "code": "5.4",
+      "recordId": "csoi:knowledge:lsps2020:action:5.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 34,
+      "code": "5.5",
+      "recordId": "csoi:knowledge:lsps2020:action:5.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 89,
+      "code": "5.5",
+      "recordId": "csoi:knowledge:lsps2020:action:5.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 37,
+      "code": "6.1",
+      "recordId": "csoi:knowledge:lsps2020:action:6.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 37,
+      "code": "6.2",
+      "recordId": "csoi:knowledge:lsps2020:action:6.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 37,
+      "code": "6.3",
+      "recordId": "csoi:knowledge:lsps2020:action:6.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 37,
+      "code": "6.4",
+      "recordId": "csoi:knowledge:lsps2020:action:6.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 37,
+      "code": "6.5",
+      "recordId": "csoi:knowledge:lsps2020:action:6.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 37,
+      "code": "6.6",
+      "recordId": "csoi:knowledge:lsps2020:action:6.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 37,
+      "code": "6.7",
+      "recordId": "csoi:knowledge:lsps2020:action:6.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 39,
+      "code": "7.1",
+      "recordId": "csoi:knowledge:lsps2020:action:7.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 39,
+      "code": "7.2",
+      "recordId": "csoi:knowledge:lsps2020:action:7.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 39,
+      "code": "7.3",
+      "recordId": "csoi:knowledge:lsps2020:action:7.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 39,
+      "code": "7.4",
+      "recordId": "csoi:knowledge:lsps2020:action:7.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "7.4",
+      "recordId": "csoi:knowledge:lsps2020:action:7.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 39,
+      "code": "7.5",
+      "recordId": "csoi:knowledge:lsps2020:action:7.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.2",
+      "recordId": "csoi:knowledge:lsps2020:action:8.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.3",
+      "recordId": "csoi:knowledge:lsps2020:action:8.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 83,
+      "code": "8.3",
+      "recordId": "csoi:knowledge:lsps2020:action:8.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.4",
+      "recordId": "csoi:knowledge:lsps2020:action:8.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.5",
+      "recordId": "csoi:knowledge:lsps2020:action:8.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.6",
+      "recordId": "csoi:knowledge:lsps2020:action:8.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.7",
+      "recordId": "csoi:knowledge:lsps2020:action:8.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.8",
+      "recordId": "csoi:knowledge:lsps2020:action:8.8",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.9",
+      "recordId": "csoi:knowledge:lsps2020:action:8.9",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.10",
+      "recordId": "csoi:knowledge:lsps2020:action:8.10",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 68,
+      "code": "8.10",
+      "recordId": "csoi:knowledge:lsps2020:action:8.10",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 45,
+      "code": "9.1",
+      "recordId": "csoi:knowledge:lsps2020:action:9.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 45,
+      "code": "9.2",
+      "recordId": "csoi:knowledge:lsps2020:action:9.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 45,
+      "code": "9.3",
+      "recordId": "csoi:knowledge:lsps2020:action:9.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "9.3",
+      "recordId": "csoi:knowledge:lsps2020:action:9.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 45,
+      "code": "9.4",
+      "recordId": "csoi:knowledge:lsps2020:action:9.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 45,
+      "code": "9.5",
+      "recordId": "csoi:knowledge:lsps2020:action:9.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 45,
+      "code": "9.6",
+      "recordId": "csoi:knowledge:lsps2020:action:9.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.1",
+      "recordId": "csoi:knowledge:lsps2020:action:10.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.2",
+      "recordId": "csoi:knowledge:lsps2020:action:10.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.3",
+      "recordId": "csoi:knowledge:lsps2020:action:10.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.4",
+      "recordId": "csoi:knowledge:lsps2020:action:10.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 68,
+      "code": "10.4",
+      "recordId": "csoi:knowledge:lsps2020:action:10.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.5",
+      "recordId": "csoi:knowledge:lsps2020:action:10.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.6",
+      "recordId": "csoi:knowledge:lsps2020:action:10.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "10.6",
+      "recordId": "csoi:knowledge:lsps2020:action:10.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.7",
+      "recordId": "csoi:knowledge:lsps2020:action:10.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 59,
+      "code": "10.7",
+      "recordId": "csoi:knowledge:lsps2020:action:10.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 68,
+      "code": "10.7",
+      "recordId": "csoi:knowledge:lsps2020:action:10.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 71,
+      "code": "10.7",
+      "recordId": "csoi:knowledge:lsps2020:action:10.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.8",
+      "recordId": "csoi:knowledge:lsps2020:action:10.8",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 59,
+      "code": "10.8",
+      "recordId": "csoi:knowledge:lsps2020:action:10.8",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.9",
+      "recordId": "csoi:knowledge:lsps2020:action:10.9",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 68,
+      "code": "10.9",
+      "recordId": "csoi:knowledge:lsps2020:action:10.9",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.10",
+      "recordId": "csoi:knowledge:lsps2020:action:10.10",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 50,
+      "code": "10.11",
+      "recordId": "csoi:knowledge:lsps2020:action:10.11",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 52,
+      "code": "11.1",
+      "recordId": "csoi:knowledge:lsps2020:action:11.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 52,
+      "code": "11.2",
+      "recordId": "csoi:knowledge:lsps2020:action:11.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 59,
+      "code": "11.2",
+      "recordId": "csoi:knowledge:lsps2020:action:11.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 68,
+      "code": "11.2",
+      "recordId": "csoi:knowledge:lsps2020:action:11.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 71,
+      "code": "11.2",
+      "recordId": "csoi:knowledge:lsps2020:action:11.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 74,
+      "code": "11.2",
+      "recordId": "csoi:knowledge:lsps2020:action:11.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 52,
+      "code": "11.3",
+      "recordId": "csoi:knowledge:lsps2020:action:11.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 52,
+      "code": "11.4",
+      "recordId": "csoi:knowledge:lsps2020:action:11.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "11.4",
+      "recordId": "csoi:knowledge:lsps2020:action:11.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 52,
+      "code": "11.5",
+      "recordId": "csoi:knowledge:lsps2020:action:11.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 52,
+      "code": "11.6",
+      "recordId": "csoi:knowledge:lsps2020:action:11.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 52,
+      "code": "11.7",
+      "recordId": "csoi:knowledge:lsps2020:action:11.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 52,
+      "code": "11.8",
+      "recordId": "csoi:knowledge:lsps2020:action:11.8",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 52,
+      "code": "11.9",
+      "recordId": "csoi:knowledge:lsps2020:action:11.9",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 55,
+      "code": "12.1",
+      "recordId": "csoi:knowledge:lsps2020:action:12.1",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 55,
+      "code": "12.2",
+      "recordId": "csoi:knowledge:lsps2020:action:12.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 74,
+      "code": "12.2",
+      "recordId": "csoi:knowledge:lsps2020:action:12.2",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 55,
+      "code": "12.3",
+      "recordId": "csoi:knowledge:lsps2020:action:12.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "12.3",
+      "recordId": "csoi:knowledge:lsps2020:action:12.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 71,
+      "code": "12.3",
+      "recordId": "csoi:knowledge:lsps2020:action:12.3",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 55,
+      "code": "12.4",
+      "recordId": "csoi:knowledge:lsps2020:action:12.4",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 55,
+      "code": "12.5",
+      "recordId": "csoi:knowledge:lsps2020:action:12.5",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 55,
+      "code": "12.6",
+      "recordId": "csoi:knowledge:lsps2020:action:12.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 71,
+      "code": "12.6",
+      "recordId": "csoi:knowledge:lsps2020:action:12.6",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 55,
+      "code": "12.7",
+      "recordId": "csoi:knowledge:lsps2020:action:12.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 71,
+      "code": "12.7",
+      "recordId": "csoi:knowledge:lsps2020:action:12.7",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 55,
+      "code": "12.8",
+      "recordId": "csoi:knowledge:lsps2020:action:12.8",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 83,
+      "code": "12.8",
+      "recordId": "csoi:knowledge:lsps2020:action:12.8",
+      "role": "RELATED_NARRATIVE_OR_LOCAL_OCCURRENCE",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 27,
+      "code": "3.2",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p27:3.2",
+      "role": "CORE_NARRATIVE_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 27,
+      "code": "3.3",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p27:3.3",
+      "role": "CORE_NARRATIVE_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 27,
+      "code": "3.4",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p27:3.4",
+      "role": "CORE_NARRATIVE_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 34,
+      "code": "5.4",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p34:5.4",
+      "role": "CORE_NARRATIVE_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 42,
+      "code": "8.1",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p42:8.1",
+      "role": "CORE_NARRATIVE_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 59,
+      "code": "6.4",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p59:6.4",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 59,
+      "code": "6.6",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p59:6.6",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 59,
+      "code": "6.7",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p59:6.7",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "7.1",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p64:7.1",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "7.2",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p64:7.2",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "8.5",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p64:8.5",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 64,
+      "code": "12.6",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p64:12.6",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 71,
+      "code": "6.8",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p71:6.8",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 71,
+      "code": "8.6",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p71:8.6",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 74,
+      "code": "8.7",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p74:8.7",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 74,
+      "code": "10.10",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p74:10.10",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 83,
+      "code": "8.9",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p83:8.9",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    },
+    {
+      "pdfPage": 89,
+      "code": "5.7",
+      "recordId": "csoi:knowledge:lsps2020:narrative-action:p89:5.7",
+      "role": "LOCAL_ACTION_CONFLICT",
+      "status": "PASS_ORIGINAL_OCCURRENCE"
+    }
+  ],
+  "limits": [
+    "Original byte/hash, full implementation row/column census, and all identified numbered narrative/local occurrence anchors verified.",
+    "Descriptions and source-internal conflicts reviewed by AI; not authorised independent human semantic admission.",
+    "Maps/diagrams and non-action narrative are inventoried but not fully structured; whole-document knowledge remains PARTIAL.",
+    "Historical reference codes/category ticks are not admitted current CSP2035, LEP/DCP, implementation or causal relationships."
+  ],
+  "officialAdmission": "PENDING",
+  "currentLegalApplicability": "UNKNOWN"
+}

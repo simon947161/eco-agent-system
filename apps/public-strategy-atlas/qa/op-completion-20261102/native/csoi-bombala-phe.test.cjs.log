@@ -1,0 +1,14 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'sha256:a4dc6c0d819b184f8091baeda533ae9135502fa309b9f2594c8beef868b9686e'
+- 'sha256:e09600c7ff8f8491c10bc35872fa9c9e4e2a9d1b309c028b2d66696108d2e874'
+
+    at /workspace/eco-agent-system/apps/public-strategy-atlas/csoi-bombala-phe.test.cjs:4:9 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'sha256:a4dc6c0d819b184f8091baeda533ae9135502fa309b9f2594c8beef868b9686e',
+  expected: 'sha256:e09600c7ff8f8491c10bc35872fa9c9e4e2a9d1b309c028b2d66696108d2e874',
+  operator: 'strictEqual',
+  diff: 'simple'
+}

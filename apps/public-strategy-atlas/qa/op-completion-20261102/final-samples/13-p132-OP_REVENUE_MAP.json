@@ -1,0 +1,78 @@
+{
+  "unitId": "csoi:op2026:finance:p132:rating-map-1",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:132",
+  "cacheRevisionId": "sha256:772f1ae2841d1f758650050e886417c03da6d2d98eecdaec95ee9d5bdfa0aa85",
+  "actualFullUnitDigest": "sha256:14ba769e1ea82a719b23bdb5988cffa9f08ac55272d4ddd43e06d6d8c54e053c",
+  "page": 132,
+  "category": "OP_REVENUE_MAP",
+  "summary": "原页用红色突出 Business 相关区域；只记录图例和地域背景，不据低分辨率轮廓裁定某个地块应缴税率。",
+  "conditions": [
+    "需要地块记录、现行分类及正式审查才能判断具体地块。"
+  ],
+  "qualifiers": [
+    "四个面板没有 Mining 地图；不自行补画。",
+    "未见比例尺、北向或 CRS，不能猜测。"
+  ],
+  "facts": {
+    "mapTitleAsPrinted": "Business",
+    "highlightMeaning": "原页说明红色表示该税率类别/子类别适用部分",
+    "legendObserved": [
+      {
+        "symbol": "red fill",
+        "meaning": "category areas per page caption"
+      },
+      {
+        "symbol": "purple outer boundary",
+        "meaning": "visible outline; legal/cadastral precision not admitted"
+      },
+      {
+        "symbol": "grey fine linework",
+        "meaning": "background parcel-like linework; no parcel data extracted"
+      }
+    ],
+    "scale": "NOT_VISIBLE",
+    "north": "NOT_VISIBLE",
+    "coordinateReferenceSystem": "NOT_VISIBLE",
+    "geometryExtracted": false,
+    "parcelApplicability": "UNKNOWN",
+    "visibleContextLabels": [
+      "Michelago",
+      "Bredbo",
+      "Adaminaby",
+      "Berridale",
+      "Jindabyne",
+      "Bombala",
+      "Delegate"
+    ],
+    "mapPurpose": "RATING_CATEGORY_ILLUSTRATION_IN_REGISTERED_POLICY"
+  },
+  "sourceAnchorCount": 2,
+  "sourceLocations": [
+    {
+      "field": "facts.map",
+      "pdfPage": 132,
+      "bbox": [
+        46.799991607666016,
+        99.60003662109375,
+        269.0499267578125,
+        428.3999938964844
+      ],
+      "normalizedTextDigest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "facts.highlightMeaning",
+      "pdfPage": 132,
+      "bbox": [
+        46.5,
+        54,
+        523,
+        83
+      ],
+      "normalizedTextDigest": "sha256:fc691ba72e4faa1af16ee5565e7e1b6131e861a83d345948cbdaa961b3e0f00c",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:14ba769e1ea82a719b23bdb5988cffa9f08ac55272d4ddd43e06d6d8c54e053c",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-02T08:11:19.400078+00:00",
+  "mode": "live real Chromium with supported service access, not owner login",
+  "ownerInteractiveLogin": "NOT_TESTED",
+  "results": [],
+  "status": "FAILED",
+  "failure": {
+    "type": "TimeoutError",
+    "message": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://council-strategy-intelligence.minshu.chatgpt.site/\", waiting until \"load\"\n"
+  }
+}

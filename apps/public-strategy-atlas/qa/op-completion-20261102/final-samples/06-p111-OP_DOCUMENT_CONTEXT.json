@@ -1,0 +1,50 @@
+{
+  "unitId": "csoi:op2026:finance:p111:capital-footnote",
+  "cacheEntityId": "csoi:knowledge:op2026:review:page:111",
+  "cacheRevisionId": "sha256:fc9886d9fb2588953497073e596b03247048d6f9cabc8d80d86f4dde6a764174",
+  "actualFullUnitDigest": "sha256:56b654b8a477719c257329d710b166bdbe627489d917618f4bc477a203250b6f",
+  "page": 111,
+  "category": "OP_DOCUMENT_CONTEXT",
+  "summary": "可见原页为设施现场照片。抽取文字层残留星号与 Corporate Projects team 的说明，但原件像素中被照片覆盖；不能当作本页可见脚注或项目完成证据。",
+  "conditions": [],
+  "qualifiers": [
+    "文字层观察与可见原页分开记录；本页没有可见资本金额行。"
+  ],
+  "facts": {
+    "textLayerObservation": {
+      "marker": "*",
+      "namedTeam": "Corporate Projects team"
+    },
+    "textVisibility": "HIDDEN_OR_OCCLUDED_TEXT_LAYER",
+    "photoDisposition": "DECORATIVE_OR_CONTEXT_PHOTO_NOT_PROGRESS_EVIDENCE"
+  },
+  "sourceAnchorCount": 2,
+  "sourceLocations": [
+    {
+      "field": "facts.textLayerObservation",
+      "pdfPage": 111,
+      "bbox": [
+        36,
+        546.7159423828125,
+        211.4409637451172,
+        555.6759033203125
+      ],
+      "normalizedTextDigest": "sha256:907e61c8c5c99af1c2b68f28d64841105365df3d97adb864cbe6b3fc6ac2ba46",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    },
+    {
+      "field": "facts.photoDisposition",
+      "pdfPage": 111,
+      "bbox": [
+        0,
+        0,
+        841.8900146484375,
+        595.2760009765625
+      ],
+      "normalizedTextDigest": "sha256:6d9e07bd419254ef18fd22357890d6827986ddac21b753c14f2395ed082f13a4",
+      "parserVersion": "pymupdf-1.26.6-text-nfkc-whitespace-v1"
+    }
+  ],
+  "reviewedSourceUnitDigest": "sha256:010ad00e6b522f69af2d4a00c4569d0be5479da6086ae9c45c11de3ab9735e9a",
+  "sampleOmissions": "Sample omits full source anchor text and repeated rows; full unit digest binds every original field."
+}

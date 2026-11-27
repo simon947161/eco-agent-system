@@ -1,0 +1,59 @@
+{
+  "format": "csoi-public-source-extension-coverage-1",
+  "at": "2026-10-30T03:15:51.191053+00:00",
+  "taskStates": {
+    "VERIFIED": 49,
+    "PARTIAL": 28,
+    "BLOCKED": 3
+  },
+  "fullSystemAcceptance": "PARTIAL",
+  "catalogueRecords": 51,
+  "families": 31,
+  "documentRevisions": 27,
+  "directoryRecords": 7,
+  "requirementRecords": 17,
+  "retrievedDocuments": 25,
+  "successfulByteReceipts": 32,
+  "pdfReceipts": 12,
+  "htmlReceipts": 20,
+  "coreSelectedRequestAttempts": 37,
+  "totalSelectedRequestAttemptsIncludingStatutory": 41,
+  "distinctAttemptedUrlsIncludingStatutory": 40,
+  "httpExchangeCount": "UNKNOWN_REDIRECTS_NOT_INSTRUMENTED",
+  "authoredResearchNotes": 24,
+  "summarySources": 22,
+  "publishedPlanningRecords": 5,
+  "newSourceReportedResearchCandidates": 8,
+  "formalSourceExtraction": 0,
+  "catalogueAnchorReviewed": 0,
+  "currentVersionConfirmed": 0,
+  "rightsApproved": 0,
+  "officialAdmittedDocuments": 0,
+  "officialAdmittedRelationships": 0,
+  "actualOutcomeKpi": "UNKNOWN",
+  "inventoryCompleteness": "UNKNOWN",
+  "nativeTestFilesPassed": 30,
+  "nativeFailures": 0,
+  "nodeCoverage": {
+    "lines": 91.66,
+    "branches": 83.93,
+    "functions": 94.73,
+    "scope": "Loaded atlas-*.js and csoi-*.js. Not browser rendering or tools/*.cjs coverage."
+  },
+  "defaultSnapshotDigest": "sha256:4023b091396d03acf391be78d2b2148bfc825651519a1114cd5ed129d9cff62a",
+  "defaultDomainEntities": 59,
+  "defaultDomainAssertions": 48,
+  "notTested": [
+    "professional screen reader",
+    "physical touchscreen and multiple monitors",
+    "cross-browser",
+    "private WCOS/Outlook compatibility"
+  ],
+  "codeManifest": {
+    "csoi-pages.js": "sha256:90c36d86be6ff2dd2a60ef547b23ac32bb116fdf22f9ca239e9b6a52cd675d97",
+    "tools/csoi-append-receipts.cjs": "sha256:cf2e0158f429dbe4787660ab653e8020864f451e5a3963e98380241ed411f10b",
+    "csoi-receipts.test.cjs": "sha256:72ed668a2380d12cd85ca1b389e0200a782fcba4ee181515d929e18960cb52fa",
+    "sources/csoi-catalogue.json": "sha256:13264b763f39364bc3cfb4650ec635491f1373d535e21c15e55f1800a5e8a908",
+    "sources/csoi-source-observations.json": "sha256:0c545b53a2412e3d8c95b714a9fe90b9504faf71680eb309cffc89df08cc2af8"
+  }
+}

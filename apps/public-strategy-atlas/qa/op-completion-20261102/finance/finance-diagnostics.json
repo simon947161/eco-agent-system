@@ -1,0 +1,265 @@
+{
+  "sourceRevision": "sha256:4e0b6440768c6bb902628ec36e43757366be470f583169834a4c7c3d4cf54fd2",
+  "diagnostics": [
+    {
+      "type": "DISPLAYED_TABLE_RECONCILIATION_DIFFERENCE",
+      "tableId": "op-finance:p114:service-governance",
+      "pdfPage": 114,
+      "check": "Expenditure Total vs displayed components",
+      "calculatedFromDisplayedCells": "5801",
+      "sourceDeclared": "5800",
+      "difference": "-1",
+      "unit": "$'000",
+      "interpretation": "可能与显示精度/四舍五入等有关，但原件未说明；不能认定原因，也不改写原值。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p114:service-governance-r05",
+        "csoi:op2026:finance:p114:service-governance-r06",
+        "csoi:op2026:finance:p114:service-governance-r07",
+        "csoi:op2026:finance:p114:service-governance-r08",
+        "csoi:op2026:finance:p114:service-governance-r09"
+      ]
+    },
+    {
+      "type": "DISPLAYED_TABLE_RECONCILIATION_DIFFERENCE",
+      "tableId": "op-finance:p114:service-governance",
+      "pdfPage": 114,
+      "check": "Grand Total vs displayed income less expenditure",
+      "calculatedFromDisplayedCells": "-4979",
+      "sourceDeclared": "-4980",
+      "difference": "-1",
+      "unit": "$'000",
+      "interpretation": "只报告显示数差异；可能原因未经来源确认，不自动纠正。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p114:service-governance-r04",
+        "csoi:op2026:finance:p114:service-governance-r09",
+        "csoi:op2026:finance:p114:service-governance-r10"
+      ]
+    },
+    {
+      "type": "DISPLAYED_TABLE_RECONCILIATION_DIFFERENCE",
+      "tableId": "op-finance:p114:service-information-and-communications-technology",
+      "pdfPage": 114,
+      "check": "Grand Total vs displayed income less expenditure",
+      "calculatedFromDisplayedCells": "-5140",
+      "sourceDeclared": "-5141",
+      "difference": "-1",
+      "unit": "$'000",
+      "interpretation": "只报告显示数差异；可能原因未经来源确认，不自动纠正。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p114:service-information-and-communications-technology-r02",
+        "csoi:op2026:finance:p114:service-information-and-communications-technology-r06",
+        "csoi:op2026:finance:p114:service-information-and-communications-technology-r07"
+      ]
+    },
+    {
+      "type": "DISPLAYED_TABLE_RECONCILIATION_DIFFERENCE",
+      "tableId": "op-finance:p114:service-open-space-and-recreation",
+      "pdfPage": 114,
+      "check": "Expenditure Total vs displayed components",
+      "calculatedFromDisplayedCells": "7865",
+      "sourceDeclared": "7866",
+      "difference": "1",
+      "unit": "$'000",
+      "interpretation": "可能与显示精度/四舍五入等有关，但原件未说明；不能认定原因，也不改写原值。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p114:service-open-space-and-recreation-r03",
+        "csoi:op2026:finance:p114:service-open-space-and-recreation-r04",
+        "csoi:op2026:finance:p114:service-open-space-and-recreation-r05",
+        "csoi:op2026:finance:p114:service-open-space-and-recreation-r06",
+        "csoi:op2026:finance:p114:service-open-space-and-recreation-r07"
+      ]
+    },
+    {
+      "type": "DISPLAYED_TABLE_RECONCILIATION_DIFFERENCE",
+      "tableId": "op-finance:p114:service-open-space-and-recreation",
+      "pdfPage": 114,
+      "check": "Grand Total vs displayed income less expenditure",
+      "calculatedFromDisplayedCells": "-7806",
+      "sourceDeclared": "-7805",
+      "difference": "1",
+      "unit": "$'000",
+      "interpretation": "只报告显示数差异；可能原因未经来源确认，不自动纠正。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p114:service-open-space-and-recreation-r02",
+        "csoi:op2026:finance:p114:service-open-space-and-recreation-r07",
+        "csoi:op2026:finance:p114:service-open-space-and-recreation-r08"
+      ]
+    },
+    {
+      "type": "DISPLAYED_TABLE_RECONCILIATION_DIFFERENCE",
+      "tableId": "op-finance:p116:service-revenue",
+      "pdfPage": 116,
+      "check": "Grand Total vs displayed income less expenditure",
+      "calculatedFromDisplayedCells": "35842",
+      "sourceDeclared": "35843",
+      "difference": "1",
+      "unit": "$'000",
+      "interpretation": "只报告显示数差异；可能原因未经来源确认，不自动纠正。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p116:service-revenue-r06",
+        "csoi:op2026:finance:p116:service-revenue-r10",
+        "csoi:op2026:finance:p116:service-revenue-r11"
+      ]
+    },
+    {
+      "type": "DISPLAYED_TABLE_RECONCILIATION_DIFFERENCE",
+      "tableId": "op-finance:p116:service-strategy-development",
+      "pdfPage": 116,
+      "check": "Expenditure Total vs displayed components",
+      "calculatedFromDisplayedCells": "2882",
+      "sourceDeclared": "2881",
+      "difference": "-1",
+      "unit": "$'000",
+      "interpretation": "可能与显示精度/四舍五入等有关，但原件未说明；不能认定原因，也不改写原值。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p116:service-strategy-development-r05",
+        "csoi:op2026:finance:p116:service-strategy-development-r06",
+        "csoi:op2026:finance:p116:service-strategy-development-r07",
+        "csoi:op2026:finance:p116:service-strategy-development-r08"
+      ]
+    },
+    {
+      "type": "DISPLAYED_TABLE_RECONCILIATION_DIFFERENCE",
+      "tableId": "op-finance:p117:service-infrastructure",
+      "pdfPage": 117,
+      "check": "Expenditure Total vs displayed components",
+      "calculatedFromDisplayedCells": "29172",
+      "sourceDeclared": "29173",
+      "difference": "1",
+      "unit": "$'000",
+      "interpretation": "可能与显示精度/四舍五入等有关，但原件未说明；不能认定原因，也不改写原值。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p117:service-infrastructure-r07",
+        "csoi:op2026:finance:p117:service-infrastructure-r08",
+        "csoi:op2026:finance:p117:service-infrastructure-r09",
+        "csoi:op2026:finance:p117:service-infrastructure-r10"
+      ]
+    },
+    {
+      "type": "SOURCE_ARITHMETIC_CONFLICT",
+      "tableId": "op-finance:p121:fund-statement",
+      "pdfPage": 121,
+      "fund": "General",
+      "check": "Printed net increase vs closing minus opening cash",
+      "sourceDeclared": "585",
+      "calculatedFromDisplayedCells": "2935",
+      "difference": "-2350",
+      "unit": "$000",
+      "interpretation": "原件基金净变动行与本页期初/期末不一致；保留印刷数字，不能自动替换为计算值，也不声称只是四舍五入。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p121:fund-r17",
+        "csoi:op2026:finance:p121:fund-r19",
+        "csoi:op2026:finance:p121:fund-r15"
+      ]
+    },
+    {
+      "type": "SOURCE_ARITHMETIC_CONFLICT",
+      "tableId": "op-finance:p121:fund-statement",
+      "pdfPage": 121,
+      "fund": "Water",
+      "check": "Printed net increase vs closing minus opening cash",
+      "sourceDeclared": "616",
+      "calculatedFromDisplayedCells": "-4880",
+      "difference": "5496",
+      "unit": "$000",
+      "interpretation": "原件基金净变动行与本页期初/期末不一致；保留印刷数字，不能自动替换为计算值，也不声称只是四舍五入。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p121:fund-r17",
+        "csoi:op2026:finance:p121:fund-r19",
+        "csoi:op2026:finance:p121:fund-r15"
+      ]
+    },
+    {
+      "type": "SOURCE_ARITHMETIC_CONFLICT",
+      "tableId": "op-finance:p121:fund-statement",
+      "pdfPage": 121,
+      "fund": "Sewer",
+      "check": "Printed net increase vs closing minus opening cash",
+      "sourceDeclared": "616",
+      "calculatedFromDisplayedCells": "-262",
+      "difference": "878",
+      "unit": "$000",
+      "interpretation": "原件基金净变动行与本页期初/期末不一致；保留印刷数字，不能自动替换为计算值，也不声称只是四舍五入。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p121:fund-r17",
+        "csoi:op2026:finance:p121:fund-r19",
+        "csoi:op2026:finance:p121:fund-r15"
+      ]
+    },
+    {
+      "type": "SOURCE_ARITHMETIC_CONFLICT",
+      "tableId": "op-finance:p121:fund-statement",
+      "pdfPage": 121,
+      "fund": "Waste",
+      "check": "Printed net increase vs closing minus opening cash",
+      "sourceDeclared": "616",
+      "calculatedFromDisplayedCells": "1783",
+      "difference": "-1167",
+      "unit": "$000",
+      "interpretation": "原件基金净变动行与本页期初/期末不一致；保留印刷数字，不能自动替换为计算值，也不声称只是四舍五入。",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p121:fund-r17",
+        "csoi:op2026:finance:p121:fund-r19",
+        "csoi:op2026:finance:p121:fund-r15"
+      ]
+    },
+    {
+      "type": "SOURCE_VERSION_STATUS_TENSION",
+      "pdfPages": [
+        127
+      ],
+      "description": "Revenue policy appendix table records version 1.2 adopted 30/06/2026 resolution 225/26 while same-page footer still calls document a working draft. Currentness UNKNOWN.",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p127:version-1-2",
+        "csoi:op2026:finance:p127:version-controls"
+      ]
+    },
+    {
+      "type": "SOURCE_SERVICE_FREQUENCY_AND_GEOGRAPHY_CONFLICT",
+      "pdfPages": [
+        134,
+        137
+      ],
+      "description": "Commercial FOGO table: Cooma-Monaro Region, 240L, Weekly, $748. Clause 1.11.2: Cooma, 240L, Fortnightly. Both retained; no currentness or correctness ruling.",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p134:waste-fee-r02",
+        "csoi:op2026:finance:p137:clause-1-11-2"
+      ]
+    },
+    {
+      "type": "SOURCE_GEOGRAPHIC_SCOPE_DIFFERENCE",
+      "pdfPages": [
+        133,
+        135
+      ],
+      "description": "Domestic FOGO table says Cooma-Monaro Region ONLY; clause 1.4.1 says presently Cooma Township only. No silent geographic expansion.",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p133:waste-fee-r06",
+        "csoi:op2026:finance:p135:clause-1-4-1"
+      ]
+    },
+    {
+      "type": "SOURCE_FREQUENCY_ROW_AMBIGUITY",
+      "pdfPages": [
+        133,
+        136
+      ],
+      "description": "Commercial recycling has a 360L row $649 with no frequency and a separate 360L Fortnightly row $397, while clause 1.10.2 states fortnightly collection. Separate rows preserved; no price selected for a customer.",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p133:waste-fee-r19",
+        "csoi:op2026:finance:p133:waste-fee-r22",
+        "csoi:op2026:finance:p136:clause-1-10-2"
+      ]
+    },
+    {
+      "type": "SOURCE_LEGISLATION_YEAR_TYPO_OR_CONFLICT",
+      "pdfPages": [
+        134
+      ],
+      "description": "Clause 1.1.1 prints Local Government Act 1933, while policy elsewhere identifies 1993. No silent correction or current legal admission.",
+      "sourceUnitIds": [
+        "csoi:op2026:finance:p134:clause-1-1-1"
+      ]
+    }
+  ]
+}
