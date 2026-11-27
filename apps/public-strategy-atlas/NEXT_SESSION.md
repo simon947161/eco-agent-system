@@ -1,3 +1,9 @@
+# Discovery replay and research eligibility
+
+Verified service-context commit `3a2fb98f15cc67115529eac239c7f7fb1ce977be` on Draft PR #130. New search receipts pin the immutable graph event head, event count and legacy base. Reviewers can reproduce the signals, traversed assertions, reasons, alternatives and verdict from that retained state. Historic v1 readers still validate endpoint and route continuity at their documented proof level. New research approval checks both endpoints, intermediate revisions and dependent source states. Retraction and contest remain available. Original snapshot and service observations retain their own digests.
+
+PASS: discovery.test.cjs including historical approvals surviving a later withdrawal, refusing fresh approval after withdrawal, symmetric lost-source detection and independent recomputation of edited signal/reason/path payloads. The previous v1 browser-exported discovery snapshot passed verify-snapshot.cjs. Real discovery workflow and independent exports passed 1440/390 Chromium. Next executable step: build and verify a detached, exact-edition PDF page inventory across the twelve locally reverified public originals; expose matching existing page readings and distinguish a page hash from completed source interpretation. Reconcile the final native and browser matrix.
+
 # Service inventory, financial boundary and reporting
 
 Remote project-comparison checkpoint `edcc1e7fc631b9dac980e30047b40e7cd6da055e` verified on Draft PR #130. Default dataset `sha256:4d1ebb6996a75924dec9f2d0c78c56e9fda47d9e3212d7713b3ce5b677bfd296`. Seven November project records are an exact preserved prefix. Thirteen further records use three already registered and freshly rehashed official documents. Totals: 655 entities, 48 assertions, 795 domain revisions/events, 54 catalogue entries and the original 127 legacy items.

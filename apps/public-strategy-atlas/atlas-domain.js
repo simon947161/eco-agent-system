@@ -139,7 +139,7 @@ async function commitRevision(d,m,{id,expectedRevisionId,patch,reason,observedAt
 }
 async function recordResearchReview(d,m,{candidate,question,decision,reason,observedAt=new Date().toISOString()}){
  const execution=typeof module!=='undefined'?require('./atlas-execution.js'):root.AtlasExecution;
- if(!await verify(d,m)||!await execution.verifyCandidate(d,candidate)||!question||question.length>1000||!reason||reason.length>1000||!['APPROVED_FOR_RESEARCH','CONTESTED','RETRACTED'].includes(decision)||candidate.status==='REJECTED_CANDIDATE'&&decision==='APPROVED_FOR_RESEARCH')throw Error('RESEARCH_REVIEW_INVALID');
+ if(!await verify(d,m)||!await execution.verifyCandidate(d,candidate)||!question||question.length>1000||!reason||reason.length>1000||!['APPROVED_FOR_RESEARCH','CONTESTED','RETRACTED'].includes(decision)||decision==='APPROVED_FOR_RESEARCH'&&!execution.candidateReviewState(d,candidate).eligible)throw Error('RESEARCH_REVIEW_INVALID');
  const result=structuredClone(d),from=index(d).get(candidate.from),stationId=from.stationId||d.nodes.find(n=>n.id===from.ownerNodeId)?.id||d.nodes.find(n=>n.id===from.id)?.id;
  if(!stationId)throw Error('RESEARCH_STATION');
  const common={stationId,state:decision,classification:'LOCAL_RESEARCH',admission:'NOT_APPLICABLE',provenance:null,scope:from.scope||{region:'UNKNOWN',period:'UNKNOWN',boundary:'UNKNOWN'},gaps:['Local research review is not government approval or official relationship admission.']};

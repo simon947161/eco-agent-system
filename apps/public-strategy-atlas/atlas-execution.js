@@ -164,31 +164,108 @@ function candidateSignals(from,to){
  const left=tokens(from.label||from.title),right=tokens(to.label||to.title);if([...left].some(w=>right.has(w)))signals.push('WORDING_OVERLAP_WEAK');
  return signals;
 }
-async function candidates(d,fromId,{context=null,limit=20,maxVisited=10000}={}){
- need(Number.isInteger(limit)&&limit>0&&limit<=100&&Number.isInteger(maxVisited)&&maxVisited>0&&maxVisited<=100000,'DISCOVERY_BOUNDS');
- const index=M.domainIndex(d),from=index.get(fromId);need(from,'DISCOVERY_ENDPOINT');const out=[];let visited=0;
- for(const to of index.values()){
-  if(visited++>=maxVisited||out.length>=limit)break;if(to.id===fromId)continue;const signals=candidateSignals(from,to);if(!signals.length)continue;
+function candidateReasons(from,to,context,currentRules){
   const a=from.data||{},b=to.data||{},reasons=[];
   if(a.area&&b.area&&a.area!=='UNKNOWN'&&b.area!=='UNKNOWN'&&a.area!==b.area)reasons.push('REJECTED_REGION');
   if(a.period&&b.period&&M.canonical(a.period)!==M.canonical(b.period))reasons.push('REJECTED_PERIOD');
   if(a.unit&&b.unit&&a.unit!==b.unit&&['QuantifiedObservation','MetricDefinition'].includes(from.kind)&&['QuantifiedObservation','MetricDefinition'].includes(to.kind))reasons.push('REJECTED_UNIT_MEANING');
-  if(b.sourceLost||b.sourceStatus==='LOST')reasons.push('REJECTED_SOURCE_LOST');
-  if(b.conflictingSourceRevisions?.length)reasons.push('REJECTED_SOURCE_REVISION_CONFLICT');
+  if(b.sourceLost||b.sourceStatus==='LOST'||currentRules&&(a.sourceLost||a.sourceStatus==='LOST'))reasons.push('REJECTED_SOURCE_LOST');
+  if(b.conflictingSourceRevisions?.length||currentRules&&a.conflictingSourceRevisions?.length)reasons.push('REJECTED_SOURCE_REVISION_CONFLICT');
   if(context)for(const r of [from,to]){const result=applicability(r,context);if(result.status.startsWith('REJECTED'))reasons.push(result.status);}
+ return reasons;
+}
+function discoveryPayload(from,to,context,path,basis){
+ const signals=candidateSignals(from,to),reasons=candidateReasons(from,to,context,Boolean(basis));
+ return {format:'atlas-discovery-candidate-'+(basis?2:1),ruleVersion:'atlas-scope-signals-'+(basis?2:1),...(basis?{basis}:{}),from:from.id,to:to.id,fromRevisionId:from.versionId||from.revisionId,toRevisionId:to.versionId||to.revisionId,context,signals,status:reasons.length?'REJECTED_CANDIDATE':'DISCOVERY_CANDIDATE',rejectionReasons:[...new Set(reasons)],sourcePaths:path.path,sourceNodeIds:path.nodeIds,rationale:'Signals identify a research question, not an official implementation, legal or causal relationship.',alternativeExplanation:'Shared terminology, accounting units or administrative context can occur without any direct policy or delivery link.',falsifier:'Reject or contest if official anchors do not explicitly support this relation, or region/effective period/legal role/units/accounting basis conflict.',counterevidence:[...(to.gaps||[]),...reasons],reviewState:'PENDING',knownLink:'UNKNOWN',trust:'SELF_ATTESTED'};
+}
+function discoveryBasis(d){
+ const events=d.domain?.events||[];
+ return {baseDigest:d.domain?.baseDigest,count:events.length,eventDigest:events.at(-1)?.digest||null};
+}
+function discoveryAt(d,basis){
+ const domain=d.domain;
+ if(!domain||!basis||basis.baseDigest!==domain.baseDigest||!Number.isSafeInteger(basis.count)||basis.count<0||basis.count>domain.revisions.length||
+    (basis.count?domain.events[basis.count-1]?.digest:null)!==basis.eventDigest)return null;
+ if(basis.count===domain.revisions.length)return d;
+ const entities=new Map(),edges=new Map();
+ for(const revision of domain.revisions.slice(0,basis.count)){
+  const record={...revision.record,revisionId:revision.id};
+  (record.kind?entities:edges).set(record.id,record);
+ }
+ return {...d,domain:{...domain,entities:[...entities.values()],assertions:[...edges.values()]}};
+}
+async function candidates(d,fromId,{context=null,limit=20,maxVisited=10000}={}){
+ need(Number.isInteger(limit)&&limit>0&&limit<=100&&Number.isInteger(maxVisited)&&maxVisited>0&&maxVisited<=100000,'DISCOVERY_BOUNDS');
+ const index=M.domainIndex(d),from=index.get(fromId),basis=discoveryBasis(d);need(from,'DISCOVERY_ENDPOINT');const out=[];let visited=0;
+ for(const to of index.values()){
+  if(visited++>=maxVisited||out.length>=limit)break;
+  if(to.id===fromId||!candidateSignals(from,to).length)continue;
   const path=shortestPath(d,fromId,to.id,{direction:'both',context});
-  const payload={format:'atlas-discovery-candidate-1',ruleVersion:'atlas-scope-signals-1',from:fromId,to:to.id,fromRevisionId:from.versionId||from.revisionId,toRevisionId:to.versionId||to.revisionId,context,signals,status:reasons.length?'REJECTED_CANDIDATE':'DISCOVERY_CANDIDATE',rejectionReasons:[...new Set(reasons)],sourcePaths:path.path,sourceNodeIds:path.nodeIds,rationale:'Signals identify a research question, not an official implementation, legal or causal relationship.',alternativeExplanation:'Shared terminology, accounting units or administrative context can occur without any direct policy or delivery link.',falsifier:'Reject or contest if official anchors do not explicitly support this relation, or region/effective period/legal role/units/accounting basis conflict.',counterevidence:[...(to.gaps||[]),...reasons],reviewState:'PENDING',knownLink:'UNKNOWN',trust:'SELF_ATTESTED'};
+  const payload=discoveryPayload(from,to,context,path,basis);
   out.push({...payload,digest:await M.objectDigest(payload)});
  }
  return out;
 }
 async function verifyCandidate(d,candidate){
  try{
-  const {digest,...payload}=candidate;if(candidate.format!=='atlas-discovery-candidate-1'||candidate.ruleVersion!=='atlas-scope-signals-1'||!['REJECTED_CANDIDATE','DISCOVERY_CANDIDATE'].includes(candidate.status)||candidate.knownLink!=='UNKNOWN'||candidate.reviewState!=='PENDING'||await M.objectDigest(payload)!==digest)return false;
-  const index=M.domainIndex(d),revs=new Map((d.domain?.revisions||[]).map(r=>[r.id,r]));
-  for(const [id,revision] of [[candidate.from,candidate.fromRevisionId],[candidate.to,candidate.toRevisionId]])if(index.get(id)?.versionId!==revision&&revs.get(revision)?.logicalId!==id)return false;
-  return Array.isArray(candidate.signals)&&candidate.signals.length>0&&Array.isArray(candidate.sourcePaths)&&candidate.sourcePaths.every(id=>assertions(d).some(a=>a.id===id))&&typeof candidate.falsifier==='string'&&candidate.falsifier.length>0;
+  const {digest,...payload}=candidate;
+  if(await M.objectDigest(payload)!==digest||candidate.from===candidate.to)return false;
+  if(candidate.format==='atlas-discovery-candidate-2'){
+   const historical=discoveryAt(d,candidate.basis);
+   if(!historical)return false;
+   const index=M.domainIndex(historical),from=index.get(candidate.from),to=index.get(candidate.to);
+   if(!from||!to||!candidateSignals(from,to).length)return false;
+   const path=shortestPath(historical,from.id,to.id,{direction:'both',context:candidate.context});
+   return M.canonical(payload)===M.canonical(discoveryPayload(from,to,candidate.context,path,{baseDigest:d.domain.baseDigest,count:candidate.basis.count,eventDigest:candidate.basis.eventDigest}));
+  }
+  // Older receipts did not bind a graph head. Recheck their pinned fields and
+  // route continuity without claiming to reconstruct their historical search.
+  if(candidate.format!=='atlas-discovery-candidate-1')return false;
+  const index=M.domainIndex(d),history=new Map((d.domain?.revisions||[]).map(r=>[r.id,r]));
+  function pinned(id,pin){
+   const revision=history.get(pin);
+   if(revision?.logicalId===id)return {...revision.record,revisionId:pin};
+   return index.get(id)?.versionId===pin?index.get(id):null;
+  }
+  const from=pinned(candidate.from,candidate.fromRevisionId),to=pinned(candidate.to,candidate.toRevisionId);
+  if(!from||!to||!candidateSignals(from,to).length)return false;
+  const path=candidate.sourcePaths,nodes=candidate.sourceNodeIds;
+  if(!Array.isArray(path)||!Array.isArray(nodes)||(!path.length&&nodes.length))return false;
+  if(path.length){
+   if(nodes.length!==path.length+1||nodes[0]!==from.id||nodes.at(-1)!==to.id||new Set(nodes).size!==nodes.length)return false;
+   const edges=new Map(assertions(d).map(a=>[a.id,a]));
+   if(!path.every((id,i)=>{const edge=edges.get(id);return edge&&(edge.from===nodes[i]&&edge.to===nodes[i+1]||edge.to===nodes[i]&&edge.from===nodes[i+1]);}))return false;
+  }
+  return M.canonical(payload)===M.canonical(discoveryPayload(from,to,candidate.context,{path,nodeIds:nodes},null));
  }catch{return false;}
+}
+function candidateReviewState(d,candidate){
+ const index=M.domainIndex(d),from=index.get(candidate.from),to=index.get(candidate.to),reasons=new Set(candidate.rejectionReasons);
+ if(!from||!to)return {eligible:false,reasons:['MISSING_DISCOVERY_ENDPOINT']};
+ if((from.versionId||from.revisionId)!==candidate.fromRevisionId||(to.versionId||to.revisionId)!==candidate.toRevisionId)reasons.add('DISCOVERY_ENDPOINT_CHANGED');
+ for(const reason of candidateReasons(from,to,candidate.context,true))reasons.add(reason);
+ const paths=typeof module!=='undefined'?require('./csoi-paths.js'):root.AtlasCSOIPaths;
+ const records=[...new Set([candidate.from,...candidate.sourceNodeIds,candidate.to])].map(id=>index.get(id));
+ for(const issue of paths.assessDependencies(d,records).invalidations)reasons.add(issue);
+ const historical=candidate.basis&&discoveryAt(d,candidate.basis),edges=new Map(assertions(d).map(a=>[a.id,a]));
+ const historicalIndex=historical&&M.domainIndex(historical);
+ for(const record of records){
+  if(!record){reasons.add('DISCOVERY_PATH_CHANGED');continue;}
+  if(historicalIndex){
+   const prior=historicalIndex.get(record.id);
+   if(!prior||(prior.versionId||prior.revisionId)!==(record.versionId||record.revisionId))reasons.add('DISCOVERY_PATH_CHANGED');
+  }
+  if(candidate.context){
+   const scope=applicability(record,candidate.context);
+   if(scope.status.startsWith('REJECTED'))reasons.add(scope.status);
+  }
+ }
+ const previous=historical&&new Map(assertions(historical).map(a=>[a.id,a]));
+ for(const id of candidate.sourcePaths){
+  const edge=edges.get(id);
+  if(!edge||['CONTRADICTED','SUPERSEDED','RETRACTED','CONTESTED'].includes(edge.status||edge.state)||previous&&previous.get(id)?.revisionId!==edge.revisionId)reasons.add('DISCOVERY_PATH_CHANGED');
+ }
+ return {eligible:!reasons.size,reasons:[...reasons]};
 }
 function searchRecords(d,query,{stationId=null,region=null,date=null,kind=null,classification=null,includeUnknownScope=false,offset=0,limit=12}={}){
  need(typeof query==='string'&&Number.isInteger(offset)&&offset>=0&&Number.isInteger(limit)&&limit>0&&limit<=100,'SEARCH_BOUNDS');
@@ -288,5 +365,5 @@ async function comparisonSession(dataset){
 }
 async function compareRecords(dataset,request){let session;try{session=await comparisonSession(dataset);}catch{throw Error('COMPARISON_SNAPSHOT_INVALID');}return session.compareRecords(request);}
 async function pinRecords(dataset,requests){need(Array.isArray(requests)&&requests.length>0&&requests.length<=512,'PIN_RECORDS_BOUNDS');return (await comparisonSession(dataset)).pinRecords(requests);}
-const api={pinRecords,compareRecords,comparisonSession,searchRecords,diffRecords,candidates,verifyCandidate,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
+const api={pinRecords,compareRecords,comparisonSession,searchRecords,diffRecords,candidates,verifyCandidate,candidateReviewState,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
