@@ -1,3 +1,7 @@
+## November 2026 engineering edition
+
+Open the **DP** or **OP** station, choose **Knowledge & work dossier**, and search for **Nimmitabel**. The November edition carries separate program and annual-plan project, resource and budget observations, with revision-pinned CSP references and source history. **Evidence inputs and citing records** follows those references in either direction. The older OP research pages remain historical. The QA and edition coverage are recorded in [the continuation](NEXT_SESSION.md). These branch changes have not been deployed.
+
 Latest navigation repair: **private Council v8 navigation repair delivered; supported-service acceptance passes, Founder Windows confirmation pending**. [Actual-click findings and evidence](qa/navigation-repair-20261102/REPORT_ZH.md). Final v8 runtime full local and live desktop/390px actual-click/navigation/history/reload checks pass. Local old snapshot state and old HTML compatibility checks also pass. Founder Windows owner-login remains untested. New research and animation work are paused for this repair.
 
 Latest delivered batch: **the registered142-page OP and explicit closure criteria for all80 engineering tasks** — [Chinese report](qa/op-completion-20261102/REPORT_ZH.md), [independent911-unit source review](qa/op-completion-20261102/independent/REPORT_ZH.md), [workbook](qa/op-completion-20261102/OP与工程验收矩阵.xlsx). The dynamic architecture-map [implementation plan](docs/COUNCIL_DYNAMIC_ARCHITECTURE_IMPLEMENTATION_PLAN_V1.md) is saved for review; no new interface has been implemented or published.

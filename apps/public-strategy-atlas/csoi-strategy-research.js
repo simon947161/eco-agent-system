@@ -15,7 +15,7 @@ async function registerAll(dataset,source=bundles(),metricReview,lspsReview,opRe
  next=await (typeof module!=='undefined'?require('./csoi-lsps-context.js'):root.AtlasLspsContext).apply(next,source,lspsReview);
  return (typeof module!=='undefined'?require('./csoi-op-review.js'):root.AtlasOpReview).apply(next,source,opReview);
 }
-function family(bundle){return bundle.sourceId.includes('csp-full')?'CSP':bundle.sourceId.includes('lsps')?'LSPS':'OP';}
+function family(bundle){return bundle.sourceId.includes('smrc-dp-')?'DP':bundle.sourceId.includes('csp-full')?'CSP':bundle.sourceId.includes('lsps')?'LSPS':'OP';}
 function group(n){return n.category==='ACTION'?(n.facts.sourceSection==='IMPLEMENTATION_TABLE'?'LSPS_IMPLEMENTATION_ACTION':'LSPS_OTHER_ACTION_OCCURRENCE'):n.category;}
 async function matrix(dataset,source=reviewedBundles()){
  const byId=M.domainIndex(dataset),rows=[];

@@ -4,7 +4,9 @@
 const startupReload=document.getElementById('startupReload');if(startupReload)startupReload.href=location.href;
 const m=AtlasModel,fixtureSize=Number(new URLSearchParams(location.search).get('fixture'));
 const bootInputs={base:AtlasData,cases:AtlasAccounting.cases,catalogue:CsoiRegisteredSources,observations:CsoiSourceObservations,outlines:[CsoiDcpOutline,CsoiCoomaDcpOutline,CsoiBombalaDcpOutline],corrections:CsoiKnowledgeCorrections,knowledge:[CsoiCspKnowledge,CsoiLspsKnowledge,CsoiOpWaterKnowledge],metricReview:CsoiCspIndicatorReview,lspsReview:CsoiLspsContextReview,opReview:CsoiOpCompletionReview};
-let d=await AtlasCSOIBoot.load(CsoiDefaultSnapshot,bootInputs,[60,200,1000,10000].includes(fixtureSize)?{count:fixtureSize,options:{shape:new URLSearchParams(location.search).get('shape')||'branching',table:new URLSearchParams(location.search).get('table')==='1'}}:null);const NS='http://www.w3.org/2000/svg';
+let d=await AtlasCSOIBoot.load(CsoiDefaultSnapshot,bootInputs,[60,200,1000,10000].includes(fixtureSize)?{count:fixtureSize,options:{shape:new URLSearchParams(location.search).get('shape')||'branching',table:new URLSearchParams(location.search).get('table')==='1'}}:null);
+if (document.documentElement.dataset.planEdition && ![60,200,1000,10000].includes(fixtureSize)) d=await AtlasCSOIBoot.appendEditionSuffix(d,window.AtlasPlanEditionSuffix);
+const NS='http://www.w3.org/2000/svg';
 const $=id=>document.getElementById(id),graph=$('atlasGraph'),details=$('details'),empty=details.innerHTML;
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const byId=new Map(d.nodes.map(n=>[n.id,n])),contentById=new Map(d.contentItems.map(c=>[c.id,c]));
@@ -272,6 +274,15 @@ function intakeSource(id){
  const c=d.domain.sourceCatalogue,s=c.sources.find(s=>s.id===id),records=AtlasIntake.contentRecords(c,id);
  const status=AtlasIntake.sourceStatus(c,id);
  panel('<h3>'+esc(s.title)+'</h3><p>'+esc(status.stage)+' · rights '+esc(s.rights.status)+'</p><p>'+esc(s.revisionId)+'</p>'+sourceLink(s.officialUrl||s.directoryUrl)+'<p>Current version / effective scope: UNKNOWN. Source availability alone does not grant reuse.</p><p>Access from retained evidence: '+esc(status.access.state+' · '+status.access.checkedAt+' · '+status.access.reason)+'</p><details><summary>Historical access at registration</summary><p>'+esc(s.access.state+' · '+s.access.checkedAt+' · '+s.access.reason)+'</p></details><p>'+esc(status.ownerType+' · '+status.nextAction)+'</p>'+records.map(r=>'<div class="warn"><h4>'+esc(r.title)+'</h4><p>'+esc(r.text)+'</p><p>'+esc(r.textKind+' · '+r.status+' · '+r.locator)+'</p></div>').join('')+(records.length?'':'<p>No extracted source content registered. Required sections and anchors remain UNKNOWN.</p>'));
+ const neighbours = [
+  ...s.lineage.supersedes.map(key => ({record:c.sources.find(source => source.id === key), label:'Earlier edition'})),
+  ...c.sources.filter(source => source.lineage.supersedes.includes(id)).map(record => ({record,label:'Later recorded edition'}))
+ ].filter(entry => entry.record);
+ if (neighbours.length) {
+  const heading = document.createElement('h4'); heading.textContent='Document editions'; details.append(heading);
+  const note=document.createElement('p'); note.textContent='Each edition has its own byte receipt. The publisher can change a live URL. Check the digest before using a page reference.'; details.append(note);
+  for (const {record,label} of neighbours) details.append(button(label+' · '+record.title,()=>intakeSource(record.id)));
+ }
  $('contextActions').replaceChildren(button('Related route station',()=>inspectNode(s.stationId)),button('Coverage & gaps',intakePanel),button('Evidence inputs and citing records',()=>evidenceInputs(id)));
 }
 $('coverageBtn').addEventListener('click',intakePanel);

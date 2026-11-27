@@ -10,5 +10,22 @@ async function load(seed,inputs,fixture=null){
  const d=M.densityFixture(inputs.base,fixture.count,fixture.options);d.domain=structuredClone(seed.snapshot.dataset.domain);d.domain.baseDigest=await M.objectDigest(M.legacyBase(d));
  if(!await M.verifySnapshot(await M.exportSnapshot(d)))throw Error('BOOT_FIXTURE_INVALID');return d;
 }
-const api={load};root.AtlasCSOIBoot=api;if(typeof module!=='undefined')module.exports=api;
+// The verified previous default stays reproducible for historical imports.
+async function appendEditionSuffix(dataset, delta) {
+ if (delta?.format !== 'atlas-plan-edition-suffix-1' || !Array.isArray(delta.revisions) ||
+     !Array.isArray(delta.events) || delta.revisions.length !== delta.events.length ||
+     !Array.isArray(delta.sources) || !Array.isArray(delta.sourceEvents)) throw Error('EDITION_SUFFIX_REQUIRED');
+ const base = await M.objectDigest(dataset);
+ if (base !== delta.baseDigest) throw Error('EDITION_BASE_MISMATCH');
+ const domain = dataset.domain;
+ const catalogue = domain.sourceCatalogue;
+ const next = {...dataset, domain:{...domain,
+  sourceCatalogue:{...catalogue,sources:catalogue.sources.concat(delta.sources),events:catalogue.events.concat(delta.sourceEvents)},
+  revisions:domain.revisions.concat(delta.revisions),events:domain.events.concat(delta.events),
+  entities:domain.entities.concat(delta.revisions.map(rev => ({...rev.record,revisionId:rev.id})))
+ }};
+ if (await M.objectDigest(next) !== delta.datasetDigest || !await M.verifySnapshot(await M.exportSnapshot(next))) throw Error('EDITION_SUFFIX_INVALID');
+ return structuredClone(next);
+}
+const api={load,appendEditionSuffix};root.AtlasCSOIBoot=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
