@@ -4,8 +4,10 @@
 const startupReload=document.getElementById('startupReload');if(startupReload)startupReload.href=location.href;
 const m=AtlasModel,fixtureSize=Number(new URLSearchParams(location.search).get('fixture'));
 const bootInputs={base:AtlasData,cases:AtlasAccounting.cases,catalogue:CsoiRegisteredSources,observations:CsoiSourceObservations,outlines:[CsoiDcpOutline,CsoiCoomaDcpOutline,CsoiBombalaDcpOutline],corrections:CsoiKnowledgeCorrections,knowledge:[CsoiCspKnowledge,CsoiLspsKnowledge,CsoiOpWaterKnowledge],metricReview:CsoiCspIndicatorReview,lspsReview:CsoiLspsContextReview,opReview:CsoiOpCompletionReview};
-let d=await AtlasCSOIBoot.load(CsoiDefaultSnapshot,bootInputs,[60,200,1000,10000].includes(fixtureSize)?{count:fixtureSize,options:{shape:new URLSearchParams(location.search).get('shape')||'branching',table:new URLSearchParams(location.search).get('table')==='1'}}:null);
-if (document.documentElement.dataset.planEdition && ![60,200,1000,10000].includes(fixtureSize)) d=await AtlasCSOIBoot.appendEditionSuffix(d,window.AtlasPlanEditionSuffix);
+if(document.documentElement.dataset.projectRegister&&!window.AtlasProjectRegisterCache)throw Error('PROJECT_REGISTER_CACHE_MISSING');
+const density=[60,200,1000,10000].includes(fixtureSize)?{count:fixtureSize,options:{shape:new URLSearchParams(location.search).get('shape')||'branching',table:new URLSearchParams(location.search).get('table')==='1'}}:null;
+const release=document.documentElement.dataset.planEdition?{first:window.AtlasPlanEditionSuffix,packed:document.documentElement.dataset.projectRegister?window.AtlasProjectRegisterCache:null}:null;
+let d=await AtlasCSOIBoot.load(CsoiDefaultSnapshot,bootInputs,density,release);
 const NS='http://www.w3.org/2000/svg';
 const $=id=>document.getElementById(id),graph=$('atlasGraph'),details=$('details'),empty=details.innerHTML;
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -119,6 +121,7 @@ function inspectNode(id){
  m.objectDigest(n).then(hash=>{if(current===request)$('contentDigest').textContent='Node digest '+hash+'. Integrity only; no official signature.';}).catch(()=>{if(current===request)$('contentDigest').textContent='Digest unavailable.';});render();openInspector();
 }
 function addWaterEvidenceAction(station) {
+ if(['dp','op'].includes(station))registerActions($('contextActions'));
  if (['dp','op','water','csp8'].includes(station)) $('contextActions').append(button('Compare published water plans',()=>waterPlanPanel(station)));
 }
 function waterPlanPanel(station) {
@@ -224,6 +227,7 @@ function sourceContentPanel(id) {
  }
  $('sourceSubtreeQuery').addEventListener('input',()=>show());
  const sourceData=item.data.csoiRecord.data;
+ if(sourceData.publicKnowledge.category==='CSP_STRATEGY')registerActions($('contextActions'),sourceData.publicKnowledge.code);
  addPageIndexAction($('contextActions'),sourceData.sourceId,sourceData.publicKnowledge.anchor.pdfPage);
  $('contextActions').append(button('Open evidence and history',()=>domainEntity(id)),button('Evidence inputs and citing records',()=>evidenceInputs(id)));
  show();
@@ -337,8 +341,59 @@ function intakePanel(){
  $('exportCatalogue').addEventListener('click',()=>downloadJSON('atlas-source-catalogue.json',catalogue));
  details.querySelectorAll('[data-source-record]').forEach(b=>b.addEventListener('click',()=>intakeSource(b.dataset.sourceRecord)));
 }
+function registerActions(target,code=null){
+ if(!window.AtlasProjectTableRoots||!window.AtlasPageIndex)return;
+ for(const family of ['DP','OP']){
+  const id=AtlasProjectTableRoots[family].sourceId;
+  if(window.AtlasPageIndex?.edition(d,id))target.append(button('Browse '+family+' project rows',()=>projectTable(family,{code})));
+ }
+}
+async function projectTable(family,{code=null,page=null}={}){
+ const dataset=d, root=AtlasProjectTableRoots[family], source=AtlasPageIndex.edition(dataset,root.sourceId);
+ if(!source)return;
+ const token=panel('<h3>'+esc(family)+' published project rows</h3><p>'+esc(source.source.title)+'</p><p id="registerStatus" role="status">Checking the original table receipt…</p><label for="tableSearch">Filter by topic, locality, budget cell or CSP code</label><input id="tableSearch" maxlength="120" type="search"><div id="registerRows" class="relation-list"></div>');
+ try{
+  const response=await fetch('./sources/project-table-'+family.toLowerCase()+'.json');
+  if(!response.ok)throw Error('PROJECT_REGISTER_UNAVAILABLE');
+  const table=await AtlasProjectRegister.verify(family,await response.json());
+  if(request!==token||d!==dataset)return;
+  const counts=AtlasProjectRegister.coverage(dataset,family,table);
+  $('registerStatus').textContent=table.rows.length+' named rows in '+table.tableCount+' recognized tables. '+counts.registered+' projects in this snapshot. '+counts.unqualifiedAmounts+' unqualified numeric budget cells. '+table.gaps.length+' unnamed rows await review. '+(code?'Printed CSP reference '+code+'. ':'')+(page?'PDF page '+page+'. ':'')+(source.current?'Source bytes verified.':'Historical source; current byte check withdrawn.');
+  function show(offset=0){
+   const view=AtlasProjectRegister.search(family,table,{query:$('tableSearch').value,code,page,offset});
+   const status=document.createElement('p');status.textContent=view.total+' matching project rows'+(view.total?' · '+(offset+1)+'–'+(offset+view.rows.length):'');
+   const list=$('registerRows');list.replaceChildren(status,...view.rows.map(r=>button(AtlasProjectRegister.label(family,r),()=>projectRow(family,table,r,{code,page}))));
+   if(offset)list.append(button('Previous project rows',()=>show(Math.max(0,offset-16))));
+   if(view.next!==null)list.append(button('More project rows',()=>show(view.next)));
+  }
+  $('tableSearch').addEventListener('input',()=>show());show();
+ }catch(error){if(request===token)$('registerStatus').textContent=error.message;}
+}
+function projectRow(family,table,row,scope){
+ const prior=d,id=AtlasProjectRegister.identity(family,row),index=m.domainIndex(prior);
+ const token=panel('<h3>'+esc(AtlasProjectRegister.label(family,row))+'</h3><p>PDF '+row.pdfPage+' · table '+row.table+' · physical row '+row.row+'</p><h4>Printed budget cell</h4><p>'+esc((row.budgetCell||'UNKNOWN')+' · '+row.budgetBasis)+'</p><p>'+esc(row.amountAUD===null?'No unqualified numeric AUD value recorded.':'Published planning amount '+new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD'}).format(row.amountAUD))+'</p><p>Published resource cell: '+esc(row.resourceCell)+'. Delivery years or start/end: '+esc(row.years.join(' / ')||'UNKNOWN')+'. Actual expenditure, delivery and outcome: UNKNOWN.</p><h4>Printed CSP codes</h4><div id="projectGoalLinks"></div><p id="projectWriteState" role="status"></p>');
+ for(const code of row.codes){
+  const goal='csoi:knowledge:csp2035:strategy:'+code;
+  if(index.has(goal))$('projectGoalLinks').append(button('CSP '+code,()=>sourceContentPanel(goal)));
+  else $('projectGoalLinks').append(document.createTextNode('CSP '+code+' · unresolved '));
+ }
+ const actions=$('contextActions');
+ actions.append(button('Open original page evidence',()=>originalPages(table.sourceId,row.pdfPage)),button('Back to project rows',()=>projectTable(family,scope)));
+ if(index.has(id)){actions.append(button('Open registered project',()=>domainEntity(id)));return;}
+ if(!AtlasPageIndex.edition(prior,table.sourceId)?.current){$('projectWriteState').textContent='Source withdrawn. New local registration blocked.';return;}
+ const add=button('Add project to local dossier',async()=>{
+  add.disabled=true;
+  try{
+   const next=await AtlasProjectRegister.add(prior,family,table,[AtlasProjectRegister.key(row)]);
+   if(request!==token)return;
+   if(d!==prior)throw Error('LOCAL_DATASET_CHANGED_REOPEN_ROW');
+   d=next;domainEntity(id);
+  }catch(error){if(request===token){$('projectWriteState').textContent=error.message;add.disabled=false;}}
+ });
+ actions.append(add);
+}
 function addPageIndexAction(target,id,page=1){
- if(AtlasPageIndex.edition(d,id))target.append(button('Inspect original PDF pages',()=>originalPages(id,page)));
+ if(window.AtlasPageIndex?.edition(d,id))target.append(button('Inspect original PDF pages',()=>originalPages(id,page)));
 }
 async function originalPages(id,firstPage){
  const dataset=d, selected=AtlasPageIndex.edition(dataset,id);
@@ -360,6 +415,8 @@ async function originalPages(id,firstPage){
    if(view.historicalMatch){
     const note=document.createElement('p');note.textContent='Unique matching text in the earlier edition. Layout, legal effect and any interpretation require separate review.';target.append(note,button('Open earlier reading · PDF '+view.historicalMatch.page,()=>sourceContentPanel(view.historicalMatch.record.id)));
    }
+   const family=Object.keys(window.AtlasProjectTableRoots||{}).find(f=>AtlasProjectTableRoots[f].sourceId===id);
+   if(family&&Object.keys(AtlasProjectTableRoots[family].rows).some(k=>Number(k.split('-')[0])===number))target.append(button('Read project rows on this page',()=>projectTable(family,{page:number})));
    if(number>1)target.append(button('Previous PDF page',()=>show(number-1)));
    if(number<view.total)target.append(button('Next PDF page',()=>show(number+1)));
   }

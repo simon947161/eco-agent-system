@@ -112,6 +112,12 @@ function mount(bridge={}){
   text(progress,'原中文审计报告和 Excel 已从仓库归档找回并核对哈希；原任务未提交的第二阶段实现文件仍未取回。本版依据公开官方原件重新补做，不能称为找回旧代码。');
   text(progress,'本页逐项区分原文已梳理、网站已实现、来源证据是否仍有效。CSP 的目标、策略与指标，LSPS 的优先事项、实施表及有冲突的其他行动记录分别列示。历史版 OP 的 142 页保留逐页记录。11 月的 OP v1.5 有 141 页，DP v2.5 有 100 页，本轮各核对 2 页。不同版本的覆盖分别计算。');
   text(progress,'80 项是工程任务，不是 80 个 Council 项目。研究内容覆盖、软件功能、正式准入和实际成效分别判断；现行法律、地块适用性、真实运营及因果效果仍未确认。');
+  if(root.AtlasProjectRegister){
+   const tableProgress=section(progress,'当期 DP / OP 项目表');tableProgress.id='csoiPublishedProjects';
+   for(const r of root.AtlasProjectRegister.releaseInventory(dataset))
+    text(tableProgress,r.family+' · '+r.present+' / '+r.expected+' 条具名项目行在此快照中，缺 '+r.missing+' 条。来源字节核验'+(r.currentSource?'有效。':'尚未确认或已撤回。'));
+   text(tableProgress,'项目表同时保留年度、多年及待定金额。预算不等于支出；OP 三个无独立名称的续行待核。');
+  }
   const metricRows=coverage.rows.filter(r=>r.category==='CSP_INDICATOR'),reviewCount=metricRows.filter(r=>r.semanticReview==='SECOND_SOURCE_REVIEW_CURRENT').length;const metricUpdate=section(progress,'已交付：63 个 CSP 指标逐项复核');metricUpdate.id='csoiMetricReviewProgress';text(metricUpdate,reviewCount+' / 63 项与本轮复核内容及来源版本一致。核对定义、单位、年份、目标、责任、范围和计算条件；旧快照、修改或撤回不自动获得新核验状态。');text(metricUpdate,'已修正每 100,000 犯罪率的分母说明、收入超过 30% 等定义限定，并把来源出版年与测量时期分开。所有指标仍不可独立复算；期望上升或下降不等于已有数值目标。跨文件真实执行与成效关系仍未获确认。');
   const lspsManifest=root.AtlasLspsContext.manifest(),lspsRows=coverage.rows.filter(r=>['LSPS_NARRATIVE','LSPS_MAP'].includes(r.category)),lspsCurrent=lspsRows.filter(r=>r.verification==='SOURCE_CHECKED_BOUNDED'),lspsUpdate=section(progress,'已交付：LSPS 正文、地图与行动条件');lspsUpdate.id='csoiLspsReviewProgress';
   text(lspsUpdate,lspsCurrent.length+' / '+lspsRows.length+' 个新增阅读记录与复核内容及来源版本一致。其中正文按页聚合，内部保留 '+lspsManifest.counts.semanticUnits+' 个逐项阅读单元；地图是 '+lspsManifest.counts.mapOccurrences+' 处出现位置，不能当作同等数量的独立 GIS 数据集。');

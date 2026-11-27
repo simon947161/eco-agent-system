@@ -35,8 +35,10 @@ FACT_KEYS.WATER_ACTIVITY=WATER_COMMON+' printedAction programmeSection printedSe
 // Edition-specific project rows retain fiscal basis and source conditions.
 Object.assign(CATEGORY_KIND, {PLAN_EDITION:'DocumentRevision', PLAN_PROJECT:'Project', PLAN_BUDGET:'QuantifiedObservation', PLAN_RESOURCES:'ResourceAccount'});
 Object.assign(PARENT_CATEGORY, {PLAN_EDITION:null, PLAN_PROJECT:'PLAN_EDITION', PLAN_BUDGET:'PLAN_PROJECT', PLAN_RESOURCES:'PLAN_PROJECT'});
+CATEGORY_KIND.PLAN_TABLE_ROW='Project';PARENT_CATEGORY.PLAN_TABLE_ROW='PLAN_EDITION';
 const PLAN_COMMON='sourceRevision actualExecution actualSpend actualOutput actualOutcome humanReview officialAdmission';
 Object.assign(FACT_KEYS, {
+ PLAN_TABLE_ROW: PLAN_COMMON+' family receipt',
  PLAN_EDITION: PLAN_COMMON+' totalPages versionLabel editionDate versionConflict reviewedPages',
  PLAN_PROJECT: PLAN_COMMON+' locality resolution cspCode projectPeriod plannedOutput condition sourceCellDigests',
  PLAN_BUDGET: PLAN_COMMON+' baseline budgetBasis computability timeInterval duplicateCostRisk',
@@ -104,9 +106,9 @@ function validateNode(n){
  for(const r of n.relations)need(closed(r,['type','targetId','locator'])&&['EXPLICIT_DOCUMENT_REFERENCE','SOURCE_READING_CONTEXT'].includes(r.type)&&ID.test(r.targetId||'')&&text(r.locator,900),'KNOWLEDGE_NO_INFERRED_OFFICIAL_RELATION');
  return true;
 }
-function validateBundle(b){
+function validateBundle(b,existingParent=null){
  need(closed(b,['format','sourceId','sourceRevision','sourcePageCount','rights','currentVersion','officialAdmission','records','originalBytesCommitted'])&&b.format==='csoi-public-knowledge-1'&&ID.test(b.sourceId||'')&&HASH.test(b.sourceRevision||'')&&Number.isSafeInteger(b.sourcePageCount)&&b.sourcePageCount>0&&b.rights==='UNKNOWN'&&b.currentVersion==='UNKNOWN'&&b.officialAdmission==='PENDING'&&(b.originalBytesCommitted===undefined||b.originalBytesCommitted===false)&&Array.isArray(b.records)&&b.records.length>0&&b.records.length<=2000,'KNOWLEDGE_BUNDLE_SCHEMA');
- const seen=new Set();for(const n of b.records){validateNode(n);need(n.anchor.pdfPage<=b.sourcePageCount,'KNOWLEDGE_ANCHOR_BOUNDS');need(!seen.has(n.id),'KNOWLEDGE_DUPLICATE_ID');if(n.parentId!==null)need(seen.has(n.parentId),'KNOWLEDGE_PARENT_FIRST_REQUIRED');else need(n.facts.totalPages===b.sourcePageCount,'KNOWLEDGE_SOURCE_PAGE_COUNT');seen.add(n.id);}return true;
+ const seen=new Set();for(const n of b.records){validateNode(n);need(n.anchor.pdfPage<=b.sourcePageCount,'KNOWLEDGE_ANCHOR_BOUNDS');need(!seen.has(n.id),'KNOWLEDGE_DUPLICATE_ID');if(n.parentId!==null)need(seen.has(n.parentId)||existingParent!==null&&n.parentId===existingParent,'KNOWLEDGE_PARENT_FIRST_REQUIRED');else need(n.facts.totalPages===b.sourcePageCount,'KNOWLEDGE_SOURCE_PAGE_COUNT');seen.add(n.id);}return true;
 }
 function opReferencePrinted(c,ref,revisions){
  const local=c.facts.units.find(u=>u.id===ref.unitId),continued=c.relations.filter(r=>r.type==='SOURCE_READING_CONTEXT').flatMap(r=>capsule(revisions.get(r.targetRevisionId)?.record)?.facts?.units||[]).find(u=>u.id===ref.unitId),u=local||continued;
@@ -114,12 +116,16 @@ function opReferencePrinted(c,ref,revisions){
 }
 async function verifyStructure(d){try{
  const revisions=new Map((d.domain?.revisions||[]).map(r=>[r.id,r])),heads=new Map((d.domain?.entities||[]).filter(capsule).map(e=>[e.id,e])),retainedIds=new Set();
- const sourcePages=new Map();for(const v of revisions.values()){const c=capsule(v.record);if(c?.parentId===null){const sid=v.record.data.csoiRecord.data.sourceId;need(!sourcePages.has(sid)||sourcePages.get(sid)===c.facts.totalPages,'KNOWLEDGE_SOURCE_PAGE_COUNT_CONFLICT');sourcePages.set(sid,c.facts.totalPages);}}
+ const availableAtRevision=new Set(),sourcePages=new Map();for(const v of revisions.values()){const c=capsule(v.record);if(c?.parentId===null){const sid=v.record.data.csoiRecord.data.sourceId;need(!sourcePages.has(sid)||sourcePages.get(sid)===c.facts.totalPages,'KNOWLEDGE_SOURCE_PAGE_COUNT_CONFLICT');sourcePages.set(sid,c.facts.totalPages);}}
  for(const revision of revisions.values()){
-  const e=revision.record,c=capsule(e);if(!c)continue;retainedIds.add(e.id);const r=e.data.csoiRecord,data=r.data,source=d.domain.sourceCatalogue?.sources.find(s=>s.id===data.sourceId);
+  const e=revision.record,c=capsule(e);availableAtRevision.add(e.id);if(!c)continue;retainedIds.add(e.id);const r=e.data.csoiRecord,data=r.data,source=d.domain.sourceCatalogue?.sources.find(s=>s.id===data.sourceId);
   need(closed(e,OUTER_KEYS)&&closed(data,DATA_KEYS)&&closed(c,CAPSULE_KEYS)&&c.format===FORMAT&&anchor(c.anchor)&&source?.recordType==='DOCUMENT'&&source.classification==='PUBLIC'&&data.sourceDigest===source.rawDigest&&!G.inspectPayload(e).length,'KNOWLEDGE_SOURCE_SCHEMA');
   need(Array.isArray(c.relations)&&c.relations.every(rel=>closed(rel,['type','targetId','locator','targetRevisionId'])&&HASH.test(rel.targetRevisionId||'')),'KNOWLEDGE_RELATION_PINS_REQUIRED');
   validateNode({id:e.id,kind:e.kind,category:c.category,code:c.code,parentId:c.parentId,title:data.title,summary:data.summary,locator:data.locator,anchor:c.anchor,facts:c.facts,relations:c.relations.map(({targetRevisionId,...rel})=>rel)});
+  if(c.category==='PLAN_TABLE_ROW'){
+   const register=typeof module!=='undefined'?require('./atlas-project-register.js'):root.AtlasProjectRegister;
+   need(await register.verifyNode({id:e.id,kind:e.kind,category:c.category,code:c.code,parentId:c.parentId,title:data.title,summary:data.summary,locator:data.locator,anchor:c.anchor,facts:c.facts,relations:c.relations.map(({targetRevisionId,...rel})=>rel)},availableAtRevision),'PROJECT_REGISTER_RECEIPT_INVALID');
+  }
   need(e.label===data.title&&e.classification==='LOCAL_RESEARCH'&&e.admission==='PENDING'&&e.stationId===source.stationId&&r.security==='PUBLIC'&&r.sourceClass==='INDEPENDENT_RESEARCH'&&r.authority==='INDEPENDENT_RESEARCH'&&r.judgment==='OBSERVATION'&&r.ownerModule==='CSOI_OPERATIONS'&&r.layer==='L0'&&r.provenance.contentMode==='RESEARCH_SUMMARY'&&r.provenance.rights.mode==='AUTHORED_RESEARCH','KNOWLEDGE_RESEARCH_ONLY');
   const day=source.retrievedAt.slice(0,10),scope={region:source.geographicExtent.label,boundary:'PUBLIC_DOCUMENT_RESEARCH_NOT_CURRENT_LAW_OR_COUNCIL_ASSIGNMENT',period:{from:day,to:day}};need(M.canonical(r.scope)===M.canonical(scope)&&c.anchor.pdfPage<=sourcePages.get(source.id),'KNOWLEDGE_SOURCE_SCOPE');
   need(r.inputs.some(x=>x.id===source.id&&x.revisionId===source.revisionId)&&r.provenance.url===source.officialUrl&&r.provenance.sourceRevision===source.rawDigest&&r.provenance.locator===data.locator&&M.canonical(e.provenance)===M.canonical(r.provenance)&&M.canonical(e.scope)===M.canonical(r.scope),'KNOWLEDGE_INPUT_PINS');
@@ -130,7 +136,7 @@ async function verifyStructure(d){try{
    if(c.category==='CSP_STRATEGY'||c.category==='ACTION')need(c.code.split('.')[0]===pc.code,'KNOWLEDGE_WRONG_CODE_PARENT');
    if(c.facts.pillar!==undefined&&pc.facts.pillar!==undefined)need(c.facts.pillar===pc.facts.pillar,'KNOWLEDGE_WRONG_PILLAR');
   }
-  for(const rel of c.relations){const target=revisions.get(rel.targetRevisionId),tc=capsule(target?.record);const explicit=rel.type==='EXPLICIT_DOCUMENT_REFERENCE'&&tc?.category==='CSP_STRATEGY'&&((c.category==='PLAN_PROJECT'&&c.facts.cspCode===tc.code)||(c.category==='WATER_ACTIVITY'&&Array.isArray(c.facts.sourceCspCodes)&&c.facts.sourceCspCodes.includes(tc.code))||(c.category==='OP_PAGE'&&c.facts.printedCspReferences.some(ref=>ref.code===tc.code&&ref.targetId===rel.targetId&&ref.pdfPage===c.anchor.pdfPage&&opReferencePrinted(c,ref,revisions))));const context=rel.type==='SOURCE_READING_CONTEXT'&&((['LSPS_NARRATIVE','LSPS_MAP'].includes(c.category)&&['ACTION','PRIORITY'].includes(tc?.category))||(c.category==='OP_PAGE'&&((['WATER_DOCUMENT','WATER_PROGRAM','WATER_PLANNED_QUANTITY','WATER_ACTIVITY'].includes(tc?.category)&&c.facts.existingRecordIds.includes(rel.targetId))||(tc?.category==='OP_PAGE'&&c.facts.continuedReadings.some(x=>x.pageRecordId===rel.targetId&&tc.facts.units.some(u=>u.id===x.unitId&&u.pages.includes(c.anchor.pdfPage)))))))&&target.record.data.csoiRecord.data.sourceId===source.id;need(target?.logicalId===rel.targetId&&(explicit||context)&&r.inputs.some(i=>i.id===rel.targetId&&i.revisionId===rel.targetRevisionId),'KNOWLEDGE_RELATION_TARGET_OR_SOURCE_REFERENCE');}
+  for(const rel of c.relations){const target=revisions.get(rel.targetRevisionId),tc=capsule(target?.record);const explicit=rel.type==='EXPLICIT_DOCUMENT_REFERENCE'&&tc?.category==='CSP_STRATEGY'&&((c.category==='PLAN_TABLE_ROW'&&c.facts.receipt.codes.includes(tc.code))||(c.category==='PLAN_PROJECT'&&c.facts.cspCode===tc.code)||(c.category==='WATER_ACTIVITY'&&Array.isArray(c.facts.sourceCspCodes)&&c.facts.sourceCspCodes.includes(tc.code))||(c.category==='OP_PAGE'&&c.facts.printedCspReferences.some(ref=>ref.code===tc.code&&ref.targetId===rel.targetId&&ref.pdfPage===c.anchor.pdfPage&&opReferencePrinted(c,ref,revisions))));const context=rel.type==='SOURCE_READING_CONTEXT'&&((['LSPS_NARRATIVE','LSPS_MAP'].includes(c.category)&&['ACTION','PRIORITY'].includes(tc?.category))||(c.category==='OP_PAGE'&&((['WATER_DOCUMENT','WATER_PROGRAM','WATER_PLANNED_QUANTITY','WATER_ACTIVITY'].includes(tc?.category)&&c.facts.existingRecordIds.includes(rel.targetId))||(tc?.category==='OP_PAGE'&&c.facts.continuedReadings.some(x=>x.pageRecordId===rel.targetId&&tc.facts.units.some(u=>u.id===x.unitId&&u.pages.includes(c.anchor.pdfPage)))))))&&target.record.data.csoiRecord.data.sourceId===source.id;need(target?.logicalId===rel.targetId&&(explicit||context)&&r.inputs.some(i=>i.id===rel.targetId&&i.revisionId===rel.targetRevisionId),'KNOWLEDGE_RELATION_TARGET_OR_SOURCE_REFERENCE');}
   need(r.inputs.length===new Set([source.id,...(c.parentId?[c.parentId]:[]),...c.relations.map(rel=>rel.targetId)]).size,'KNOWLEDGE_UNDECLARED_INPUT');
   need(d.domain.sourceCatalogue.events.some(event=>event.sourceId===source.id&&event.stage==='RAW_BYTES_VERIFIED'),'KNOWLEDGE_SOURCE_BYTE_HISTORY_REQUIRED');
   if(e.kind==='QuantifiedObservation')need(M.canonical(data.measurement)===M.canonical(measurement({facts:c.facts,category:c.category},scope)),'KNOWLEDGE_QUANTITY_FACT_MISMATCH');
@@ -144,8 +150,12 @@ function measurement(n,scope){
  if(n.category==='SERVICE_OBSERVATION')return {value:b.value,unit:b.unit,scale:b.scale,role:b.role,meaning:'PUBLISHED_SERVICE_CONTEXT_NOT_PROJECT_PERFORMANCE',quantityNature:f.nature,eligibleDenominator:'UNKNOWN',area:scope.region,boundary:f.boundary,period:f.nature==='REPORTED_SAMPLE_COUNT'&&f.sourcePeriod==='FY2024-25'?{from:'2024-07-01',to:'2025-06-30'}:{from:'UNKNOWN',to:'UNKNOWN'}};
  return {value:Number.isFinite(b.value)?b.value:'UNKNOWN',unit:typeof b.unit==='string'&&b.unit?b.unit:'UNKNOWN',scale:Number.isFinite(b.scale)?b.scale:1,role:'PUBLISHED_BASELINE_OR_PLAN',meaning:'PUBLISHED_BASELINE_OR_PLAN_NOT_ACTUAL_OR_ADMITTED',quantityNature:'PUBLISHED_REFERENCE',eligibleDenominator:f.denominator||'UNKNOWN',area:scope.region,boundary:scope.boundary,period:(f.semanticReview||n.category==='PLAN_BUDGET')?{from:f.timeInterval.from,to:f.timeInterval.to}:{from:typeof f.sourceYear==='string'?f.sourceYear:'UNKNOWN',to:typeof f.sourceYear==='string'?f.sourceYear:'UNKNOWN'}};
 }
-async function registerBundle(d,b,{observedAt}={}){
- validateBundle(b);need(await M.verifySnapshot(await M.exportSnapshot(d)),'KNOWLEDGE_DATASET_INVALID');const source=d.domain.sourceCatalogue.sources.find(s=>s.id===b.sourceId);
+async function registerBundle(d,b,{observedAt,existingParent=null}={}){
+ if(existingParent!==null){
+  const existing=M.domainIndex(d).get(existingParent),source=existing?.data?.csoiRecord?.data;
+  need(source?.sourceId===b.sourceId&&source.sourceDigest===b.sourceRevision&&source.publicKnowledge?.facts?.totalPages===b.sourcePageCount,'KNOWLEDGE_FOREIGN_PARENT');
+ }
+ validateBundle(b,existingParent);need(await M.verifySnapshot(await M.exportSnapshot(d)),'KNOWLEDGE_DATASET_INVALID');const source=d.domain.sourceCatalogue.sources.find(s=>s.id===b.sourceId);
  need(source&&source.recordType==='DOCUMENT'&&source.classification==='PUBLIC'&&source.rawDigest===b.sourceRevision&&I.STAGES.indexOf(I.sourceStatus(d.domain.sourceCatalogue,source.id).stage)>=I.STAGES.indexOf('RAW_BYTES_VERIFIED'),'KNOWLEDGE_SOURCE_NOT_CURRENT');
  if(observedAt!==undefined)need(typeof observedAt==='string'&&Number.isFinite(Date.parse(observedAt))&&Date.parse(observedAt)>=Date.parse(source.retrievedAt),'KNOWLEDGE_REVIEW_DATE');
  return M.registerResearchBatch(d,b.records,async (n,lookup)=>{

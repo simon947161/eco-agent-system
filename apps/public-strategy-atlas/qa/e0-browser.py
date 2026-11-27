@@ -73,13 +73,6 @@ with sync_playwright() as p:
     download_info.value.save_as(str(snapshot))
     legacy_digest = page.evaluate('AtlasModel.migrateDataset(AtlasData,AtlasAccounting.cases,AtlasSourceCatalogue).then(d=>AtlasModel.objectDigest(d))')
     assert legacy_digest == 'sha256:6236a12009115cd338e1f1c0db75906b4dbf4139d85bed84397c471e40a872fc', legacy_digest
-    expected_digest = page.evaluate('''async()=>{
-        const d=await AtlasModel.migrateDataset(AtlasData,AtlasAccounting.cases,CsoiRegisteredSources);
-        const historical=await AtlasStrategyResearch.registerAll((await AtlasCSOIRemediation.apply(await CsoiIntake.registerSummaries(d,CsoiSourceObservations))).dataset);
-        return AtlasModel.objectDigest(await AtlasCSOIBoot.appendEditionSuffix(historical,AtlasPlanEditionSuffix));
-    }''')
-    subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(snapshot),expected_digest],check=True)
-    passed('Frozen legacy checkpoint unchanged; extended browser snapshot independently reconstructed and verified')
     page.locator('#toolsMenu > summary').click() if page.locator('#toolsMenu').get_attribute('open') is not None else None
     station(page,'csp6')
     page.get_by_role('button',name='Explore inside',exact=True).click()
@@ -118,7 +111,21 @@ with sync_playwright() as p:
     workspace=TEMP/'workspace.json'
     download_info.value.save_as(str(workspace))
     subprocess.run(['node',str(APP/'verify-workspace.cjs'),str(workspace)],check=True)
+    other.close()
     passed('Real local edit/diff/save/load, two-tab stale-save rejection and exported workspace verification')
+    expected_digest = page.evaluate('''async()=>{
+        const d=await AtlasModel.migrateDataset(AtlasData,AtlasAccounting.cases,CsoiRegisteredSources);
+        const historical=await AtlasStrategyResearch.registerAll((await AtlasCSOIRemediation.apply(await CsoiIntake.registerSummaries(d,CsoiSourceObservations))).dataset);
+        let current=await AtlasCSOIBoot.appendEditionSuffix(historical,AtlasPlanEditionSuffix);
+        for(const family of ['DP','OP']){
+          const response=await fetch('./sources/project-table-'+family.toLowerCase()+'.json');
+          const table=await AtlasProjectRegister.verify(family,await response.json());
+          current=await AtlasProjectRegister.add(current,family,table,table.rows.map(AtlasProjectRegister.key));
+        }
+        return AtlasModel.objectDigest(current);
+    }''')
+    subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(snapshot),expected_digest],check=True)
+    passed('Frozen legacy checkpoint unchanged; extended browser snapshot independently reconstructed and verified')
     assert not errors, errors
     passed('Desktop browser no unhandled script errors')
     context.close()
