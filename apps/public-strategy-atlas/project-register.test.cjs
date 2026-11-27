@@ -3,9 +3,14 @@ const M=require('./atlas-model.js'),I=require('./atlas-intake.js'),R=require('./
 const historical=require('./sources/csoi-default-snapshot.js').snapshot.dataset,suffix=require('./sources/plan-edition-suffix.js');
 async function main(){
  const base=await B.appendEditionSuffix(historical,suffix),published=await B.publishedDefaults(historical,suffix,require('./sources/project-register-cache.js'));
- assert.equal(published.domain.entities.length,918);
+ assert.equal(published.domain.entities.length,922);
  assert.deepEqual(R.releaseInventory(published).map(r=>r.present),[148,117]);
  assert(R.releaseInventory(historical).every(r=>!r.currentSource&&r.present===0));
+ const activities=require('./sources/op-project-activities.js').records,K=require('./csoi-knowledge.js');
+ const kids=K.children(published,activities[0].parentId).items;
+ assert.equal(kids.length,4);
+ assert(kids.every(e=>e.kind==='Activity'&&e.data.csoiRecord.data.publicKnowledge.facts.evidence.budgetCell==='TBD'));
+ assert.equal(K.parents(published,kids[0].id).length,3);
  const nodes=M.domainIndex(published);
  for(const [family,total] of [['DP',148],['OP',117]]){
   const table=await R.verify(family,require('./sources/project-table-'+family.toLowerCase()+'.json'));
@@ -26,6 +31,8 @@ async function main(){
   await assert.rejects(()=>R.add(withdrawn,family,table,[R.key(selected)]),/SOURCE_NOT_CURRENT/);
   if(family==='OP'){
    assert.equal(table.gaps.length,3);
+   assert.equal(R.coverage(published,family,table).unresolvedContinuations,0);
+   assert.equal(R.coverage(base,family,table).unresolvedContinuations,3);
    assert(table.rows.filter(r=>r.budgetCell.includes('over 2 years')).every(r=>r.amountAUD===null));
   }
  }

@@ -121,6 +121,7 @@ function inspectNode(id){
  m.objectDigest(n).then(hash=>{if(current===request)$('contentDigest').textContent='Node digest '+hash+'. Integrity only; no official signature.';}).catch(()=>{if(current===request)$('contentDigest').textContent='Digest unavailable.';});render();openInspector();
 }
 function addWaterEvidenceAction(station) {
+ if(station==='lep'&&window.AtlasLepDirectory)$('contextActions').append(button('Check LEP directory evidence',legalDirectory));
  if(['dp','op'].includes(station))registerActions($('contextActions'));
  if (['dp','op','water','csp8'].includes(station)) $('contextActions').append(button('Compare published water plans',()=>waterPlanPanel(station)));
 }
@@ -256,6 +257,15 @@ function candidatePanel(candidate){
 }
 $('discoveryBtn').addEventListener('click',discoveryPanel);
 $('discoveryEngineBtn').addEventListener('click',discoveryPanel);
+function legalDirectory(){
+ const evidence=window.AtlasLepDirectory,choices=evidence.instruments.map(r=>'<option value="'+esc(r.id)+'">'+esc(r.formerArea)+'</option>').join('');
+ panel('<h3>LEP directory evidence</h3><p>Compare the former shire and instrument listed by Council. The parcel and legal version require separate evidence.</p><label for="lepInstrument">Instrument listed for</label><select id="lepInstrument">'+choices+'</select><label for="lepRegion">Former shire to compare</label><select id="lepRegion"><option>UNKNOWN</option>'+evidence.instruments.map(r=>'<option>'+esc(r.formerArea)+'</option>').join('')+'</select><label for="lepDate">As-of date</label><input type="date" id="lepDate" value="'+esc(evidence.checkedOn)+'"><label for="lepException">Mapped catalyst precinct</label><select id="lepException"><option value="UNKNOWN">Location unverified</option><option value="INSIDE">Reported inside</option><option value="CHECKED_OUTSIDE">User reports outside</option></select><button id="lepCheck">Check directory match</button><div id="lepVerdict" role="status"></div>');
+ function show(){
+  const v=AtlasExecution.directoryMatch($('lepInstrument').value,{region:$('lepRegion').value,date:$('lepDate').value,precinct:$('lepException').value});
+  $('lepVerdict').innerHTML='<h4>'+esc(v.status)+'</h4><p>'+esc(v.reason)+'</p><p>Legal applicability: UNKNOWN. Official admission: PENDING.</p><p>'+sourceLink(evidence.source,'Council instrument directory')+'</p><p>'+sourceLink(v.instrument.url,'NSW instrument · last retrieval HTTP '+v.instrument.httpStatus)+'</p><p>'+sourceLink(evidence.exceptionDirectory,'Planning Portal · mapped exception')+'</p><details><summary>Directory evidence</summary><p>'+esc(evidence.checkedOn+' · '+evidence.rawDigest)+'</p></details>';
+ }
+ $('lepCheck').addEventListener('click',show);show();
+}
 function applicabilityPanel(id){
  panel('<h3>Where & when</h3><p>Jurisdiction, spatial grain, effective interval and legal role are separate. Fixture matches never establish real parcel controls.</p><label for="scopeDate">As-of date</label><input id="scopeDate" type="date" value="2026-10-29"><label for="scopeRegion">Exact area</label><input id="scopeRegion" value="SYNTHETIC_PLACE"><label for="scopeType">Spatial grain</label><input id="scopeType" value="SCENARIO_AREA"><label for="scopeEffect">Required legal role</label><select id="scopeEffect"><option>LEP_STATUTORY</option><option>DCP_GUIDANCE</option><option>STRATEGIC_POLICY</option></select><button id="checkScope">Check applicability</button><div id="scopeResults" role="status"></div>');
  $('contextActions').replaceChildren(button('Back to dossier',()=>domainDossier(id)));
@@ -358,7 +368,7 @@ async function projectTable(family,{code=null,page=null}={}){
   const table=await AtlasProjectRegister.verify(family,await response.json());
   if(request!==token||d!==dataset)return;
   const counts=AtlasProjectRegister.coverage(dataset,family,table);
-  $('registerStatus').textContent=table.rows.length+' named rows in '+table.tableCount+' recognized tables. '+counts.registered+' projects in this snapshot. '+counts.unqualifiedAmounts+' unqualified numeric budget cells. '+table.gaps.length+' unnamed rows await review. '+(code?'Printed CSP reference '+code+'. ':'')+(page?'PDF page '+page+'. ':'')+(source.current?'Source bytes verified.':'Historical source; current byte check withdrawn.');
+  $('registerStatus').textContent=table.rows.length+' named rows in '+table.tableCount+' recognized tables. '+counts.registered+' projects in this snapshot. '+counts.unqualifiedAmounts+' unqualified numeric budget cells. '+table.gaps.length+' unnamed rows in the initial extraction. '+counts.resolvedContinuations+' linked to their shared project in this snapshot. '+(code?'Printed CSP reference '+code+'. ':'')+(page?'PDF page '+page+'. ':'')+(source.current?'Source bytes verified.':'Historical source; current byte check withdrawn.');
   function show(offset=0){
    const view=AtlasProjectRegister.search(family,table,{query:$('tableSearch').value,code,page,offset});
    const status=document.createElement('p');status.textContent=view.total+' matching project rows'+(view.total?' · '+(offset+1)+'–'+(offset+view.rows.length):'');
@@ -372,6 +382,11 @@ async function projectTable(family,{code=null,page=null}={}){
 function projectRow(family,table,row,scope){
  const prior=d,id=AtlasProjectRegister.identity(family,row),index=m.domainIndex(prior);
  const token=panel('<h3>'+esc(AtlasProjectRegister.label(family,row))+'</h3><p>PDF '+row.pdfPage+' · table '+row.table+' · physical row '+row.row+'</p><h4>Printed budget cell</h4><p>'+esc((row.budgetCell||'UNKNOWN')+' · '+row.budgetBasis)+'</p><p>'+esc(row.amountAUD===null?'No unqualified numeric AUD value recorded.':'Published planning amount '+new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD'}).format(row.amountAUD))+'</p><p>Published resource cell: '+esc(row.resourceCell)+'. Delivery years or start/end: '+esc(row.years.join(' / ')||'UNKNOWN')+'. Actual expenditure, delivery and outcome: UNKNOWN.</p><h4>Printed CSP codes</h4><div id="projectGoalLinks"></div><p id="projectWriteState" role="status"></p>');
+ const children=AtlasCSOIKnowledge.children(d,id).items.filter(child=>child.data?.csoiRecord?.data?.publicKnowledge?.category==='PLAN_ACTIVITY_ROW');
+ if(children.length){
+  const heading=document.createElement('h4');heading.textContent='Planned activities in the merged project row';details.append(heading);
+  for(const child of children)details.append(button(child.label,()=>sourceContentPanel(child.id)));
+ }
  for(const code of row.codes){
   const goal='csoi:knowledge:csp2035:strategy:'+code;
   if(index.has(goal))$('projectGoalLinks').append(button('CSP '+code,()=>sourceContentPanel(goal)));

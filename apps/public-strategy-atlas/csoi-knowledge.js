@@ -35,9 +35,11 @@ FACT_KEYS.WATER_ACTIVITY=WATER_COMMON+' printedAction programmeSection printedSe
 // Edition-specific project rows retain fiscal basis and source conditions.
 Object.assign(CATEGORY_KIND, {PLAN_EDITION:'DocumentRevision', PLAN_PROJECT:'Project', PLAN_BUDGET:'QuantifiedObservation', PLAN_RESOURCES:'ResourceAccount'});
 Object.assign(PARENT_CATEGORY, {PLAN_EDITION:null, PLAN_PROJECT:'PLAN_EDITION', PLAN_BUDGET:'PLAN_PROJECT', PLAN_RESOURCES:'PLAN_PROJECT'});
+CATEGORY_KIND.PLAN_ACTIVITY_ROW='Activity';PARENT_CATEGORY.PLAN_ACTIVITY_ROW='PLAN_TABLE_ROW';
 CATEGORY_KIND.PLAN_TABLE_ROW='Project';PARENT_CATEGORY.PLAN_TABLE_ROW='PLAN_EDITION';
 const PLAN_COMMON='sourceRevision actualExecution actualSpend actualOutput actualOutcome humanReview officialAdmission';
 Object.assign(FACT_KEYS, {
+ PLAN_ACTIVITY_ROW: PLAN_COMMON+' evidence',
  PLAN_TABLE_ROW: PLAN_COMMON+' family receipt',
  PLAN_EDITION: PLAN_COMMON+' totalPages versionLabel editionDate versionConflict reviewedPages',
  PLAN_PROJECT: PLAN_COMMON+' locality resolution cspCode projectPeriod plannedOutput condition sourceCellDigests',
@@ -122,6 +124,12 @@ async function verifyStructure(d){try{
   need(closed(e,OUTER_KEYS)&&closed(data,DATA_KEYS)&&closed(c,CAPSULE_KEYS)&&c.format===FORMAT&&anchor(c.anchor)&&source?.recordType==='DOCUMENT'&&source.classification==='PUBLIC'&&data.sourceDigest===source.rawDigest&&!G.inspectPayload(e).length,'KNOWLEDGE_SOURCE_SCHEMA');
   need(Array.isArray(c.relations)&&c.relations.every(rel=>closed(rel,['type','targetId','locator','targetRevisionId'])&&HASH.test(rel.targetRevisionId||'')),'KNOWLEDGE_RELATION_PINS_REQUIRED');
   validateNode({id:e.id,kind:e.kind,category:c.category,code:c.code,parentId:c.parentId,title:data.title,summary:data.summary,locator:data.locator,anchor:c.anchor,facts:c.facts,relations:c.relations.map(({targetRevisionId,...rel})=>rel)});
+  if(c.category==='PLAN_ACTIVITY_ROW'){
+   const activities=typeof module!=='undefined'?require('./sources/op-project-activities.js'):root.AtlasOpActivityRows;
+   const expected=activities?.records.find(row=>row.id===e.id);
+   const stripped={id:e.id,kind:e.kind,category:c.category,code:c.code,parentId:c.parentId,title:data.title,summary:data.summary,locator:data.locator,anchor:c.anchor,facts:c.facts,relations:c.relations.map(({targetRevisionId,...rel})=>rel)};
+   need(expected&&M.canonical(stripped)===M.canonical(expected),'PROJECT_ACTIVITY_RECEIPT_INVALID');
+  }
   if(c.category==='PLAN_TABLE_ROW'){
    const register=typeof module!=='undefined'?require('./atlas-project-register.js'):root.AtlasProjectRegister;
    need(await register.verifyNode({id:e.id,kind:e.kind,category:c.category,code:c.code,parentId:c.parentId,title:data.title,summary:data.summary,locator:data.locator,anchor:c.anchor,facts:c.facts,relations:c.relations.map(({targetRevisionId,...rel})=>rel)},availableAtRevision),'PROJECT_REGISTER_RECEIPT_INVALID');
@@ -136,7 +144,7 @@ async function verifyStructure(d){try{
    if(c.category==='CSP_STRATEGY'||c.category==='ACTION')need(c.code.split('.')[0]===pc.code,'KNOWLEDGE_WRONG_CODE_PARENT');
    if(c.facts.pillar!==undefined&&pc.facts.pillar!==undefined)need(c.facts.pillar===pc.facts.pillar,'KNOWLEDGE_WRONG_PILLAR');
   }
-  for(const rel of c.relations){const target=revisions.get(rel.targetRevisionId),tc=capsule(target?.record);const explicit=rel.type==='EXPLICIT_DOCUMENT_REFERENCE'&&tc?.category==='CSP_STRATEGY'&&((c.category==='PLAN_TABLE_ROW'&&c.facts.receipt.codes.includes(tc.code))||(c.category==='PLAN_PROJECT'&&c.facts.cspCode===tc.code)||(c.category==='WATER_ACTIVITY'&&Array.isArray(c.facts.sourceCspCodes)&&c.facts.sourceCspCodes.includes(tc.code))||(c.category==='OP_PAGE'&&c.facts.printedCspReferences.some(ref=>ref.code===tc.code&&ref.targetId===rel.targetId&&ref.pdfPage===c.anchor.pdfPage&&opReferencePrinted(c,ref,revisions))));const context=rel.type==='SOURCE_READING_CONTEXT'&&((['LSPS_NARRATIVE','LSPS_MAP'].includes(c.category)&&['ACTION','PRIORITY'].includes(tc?.category))||(c.category==='OP_PAGE'&&((['WATER_DOCUMENT','WATER_PROGRAM','WATER_PLANNED_QUANTITY','WATER_ACTIVITY'].includes(tc?.category)&&c.facts.existingRecordIds.includes(rel.targetId))||(tc?.category==='OP_PAGE'&&c.facts.continuedReadings.some(x=>x.pageRecordId===rel.targetId&&tc.facts.units.some(u=>u.id===x.unitId&&u.pages.includes(c.anchor.pdfPage)))))))&&target.record.data.csoiRecord.data.sourceId===source.id;need(target?.logicalId===rel.targetId&&(explicit||context)&&r.inputs.some(i=>i.id===rel.targetId&&i.revisionId===rel.targetRevisionId),'KNOWLEDGE_RELATION_TARGET_OR_SOURCE_REFERENCE');}
+  for(const rel of c.relations){const target=revisions.get(rel.targetRevisionId),tc=capsule(target?.record);const explicit=rel.type==='EXPLICIT_DOCUMENT_REFERENCE'&&tc?.category==='CSP_STRATEGY'&&((c.category==='PLAN_ACTIVITY_ROW'&&c.facts.evidence.codes.includes(tc.code))||(c.category==='PLAN_TABLE_ROW'&&c.facts.receipt.codes.includes(tc.code))||(c.category==='PLAN_PROJECT'&&c.facts.cspCode===tc.code)||(c.category==='WATER_ACTIVITY'&&Array.isArray(c.facts.sourceCspCodes)&&c.facts.sourceCspCodes.includes(tc.code))||(c.category==='OP_PAGE'&&c.facts.printedCspReferences.some(ref=>ref.code===tc.code&&ref.targetId===rel.targetId&&ref.pdfPage===c.anchor.pdfPage&&opReferencePrinted(c,ref,revisions))));const context=rel.type==='SOURCE_READING_CONTEXT'&&((['LSPS_NARRATIVE','LSPS_MAP'].includes(c.category)&&['ACTION','PRIORITY'].includes(tc?.category))||(c.category==='OP_PAGE'&&((['WATER_DOCUMENT','WATER_PROGRAM','WATER_PLANNED_QUANTITY','WATER_ACTIVITY'].includes(tc?.category)&&c.facts.existingRecordIds.includes(rel.targetId))||(tc?.category==='OP_PAGE'&&c.facts.continuedReadings.some(x=>x.pageRecordId===rel.targetId&&tc.facts.units.some(u=>u.id===x.unitId&&u.pages.includes(c.anchor.pdfPage)))))))&&target.record.data.csoiRecord.data.sourceId===source.id;need(target?.logicalId===rel.targetId&&(explicit||context)&&r.inputs.some(i=>i.id===rel.targetId&&i.revisionId===rel.targetRevisionId),'KNOWLEDGE_RELATION_TARGET_OR_SOURCE_REFERENCE');}
   need(r.inputs.length===new Set([source.id,...(c.parentId?[c.parentId]:[]),...c.relations.map(rel=>rel.targetId)]).size,'KNOWLEDGE_UNDECLARED_INPUT');
   need(d.domain.sourceCatalogue.events.some(event=>event.sourceId===source.id&&event.stage==='RAW_BYTES_VERIFIED'),'KNOWLEDGE_SOURCE_BYTE_HISTORY_REQUIRED');
   if(e.kind==='QuantifiedObservation')need(M.canonical(data.measurement)===M.canonical(measurement({facts:c.facts,category:c.category},scope)),'KNOWLEDGE_QUANTITY_FACT_MISMATCH');
@@ -153,7 +161,8 @@ function measurement(n,scope){
 async function registerBundle(d,b,{observedAt,existingParent=null}={}){
  if(existingParent!==null){
   const existing=M.domainIndex(d).get(existingParent),source=existing?.data?.csoiRecord?.data;
-  need(source?.sourceId===b.sourceId&&source.sourceDigest===b.sourceRevision&&source.publicKnowledge?.facts?.totalPages===b.sourcePageCount,'KNOWLEDGE_FOREIGN_PARENT');
+  const edition=parents(d,existingParent).at(-1)?.data?.csoiRecord?.data;
+  need(source?.sourceId===b.sourceId&&source.sourceDigest===b.sourceRevision&&edition?.publicKnowledge?.facts?.totalPages===b.sourcePageCount,'KNOWLEDGE_FOREIGN_PARENT');
  }
  validateBundle(b,existingParent);need(await M.verifySnapshot(await M.exportSnapshot(d)),'KNOWLEDGE_DATASET_INVALID');const source=d.domain.sourceCatalogue.sources.find(s=>s.id===b.sourceId);
  need(source&&source.recordType==='DOCUMENT'&&source.classification==='PUBLIC'&&source.rawDigest===b.sourceRevision&&I.STAGES.indexOf(I.sourceStatus(d.domain.sourceCatalogue,source.id).stage)>=I.STAGES.indexOf('RAW_BYTES_VERIFIED'),'KNOWLEDGE_SOURCE_NOT_CURRENT');

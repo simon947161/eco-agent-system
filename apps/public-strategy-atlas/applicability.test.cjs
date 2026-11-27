@@ -1,4 +1,9 @@
 const assert=require('node:assert/strict'),M=require('./atlas-model.js'),E=require('./atlas-execution.js'),D=require('./atlas-data.js'),A=require('./atlas-accounting.js');
+const directoryContext={region:'Snowy River',date:'2026-11-28'};
+assert.equal(E.directoryMatch('epi-2013-0700',directoryContext).status,'MAPPED_EXCEPTION_REVIEW_REQUIRED');
+assert.equal(E.directoryMatch('epi-2013-0700',{...directoryContext,precinct:'CHECKED_OUTSIDE'}).legalApplicability,'UNKNOWN');
+assert.equal(E.directoryMatch('epi-2012-0302',directoryContext).status,'REJECTED_DIRECTORY_MATCH');
+assert.equal(E.directoryMatch('epi-2012-0302',{date:'2026-02-30',region:'Bombala'}).status,'UNKNOWN');
 (async()=>{
  const d=await M.migrateDataset(D,A.cases),index=M.domainIndex(d),context={date:'2026-10-29',region:'SYNTHETIC_PLACE',spatialType:'SCENARIO_AREA',soughtEffect:'LEP_STATUTORY'};
  for(const [id,status] of [['current','SYNTHETIC_ONLY'],['wrong-region','REJECTED_REGION'],['draft','REJECTED_DRAFT'],['expired','REJECTED_TIME']])assert.equal(E.applicability(index.get('legal-fixture:'+id),context).status,status);

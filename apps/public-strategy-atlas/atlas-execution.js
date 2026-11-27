@@ -143,6 +143,19 @@ function applicability(record,context){
  if(record.classification==='SYNTHETIC_SCENARIO')return {status:'SYNTHETIC_ONLY',reason:'Compatible fixture scope only; no real legal applicability.'};
  return {status:'REQUIRES_REVIEW',reason:'Matching metadata does not establish legal applicability or authorised admission.'};
 }
+function directoryMatch(instrumentId,{region,date,precinct='UNKNOWN'}={}){
+ const directory=typeof module!=='undefined'?require('./sources/lep-directory-20261128.js'):root.AtlasLepDirectory;
+ const instrument=directory?.instruments.find(row=>row.id===instrumentId);
+ if(!instrument)throw Error('LEP_DIRECTORY_INSTRUMENT_UNKNOWN');
+ const result={instrument,observedOn:directory.checkedOn,sourceRevision:directory.rawDigest,requestedDate:date||null,legalApplicability:'UNKNOWN',officialAdmission:'PENDING'};
+ if(!day(date)||!directory.instruments.some(row=>row.formerArea===region))
+  return {...result,status:'UNKNOWN',reason:'A valid as-of date and an identified former shire are required for directory comparison.'};
+ if(instrument.formerArea!==region)
+  return {...result,status:'REJECTED_DIRECTORY_MATCH',reason:'The selected former shire differs from the area printed for this instrument.'};
+ if(instrument.formerArea==='Snowy River'&&precinct!=='CHECKED_OUTSIDE')
+  return {...result,status:'MAPPED_EXCEPTION_REVIEW_REQUIRED',reason:'Council identifies a mapped precinct exception. Check the applicable map edition and parcel geometry.'};
+ return {...result,status:'DIRECTORY_CANDIDATE',reason:'The directory names this instrument for the selected former shire. The current legal text returned HTTP 403. Effective version, map and parcel remain unverified.'};
+}
 function scopeIndex(d){
  const regions=new Map();for(const r of d.domain?.entities||[]){const area=r.data?.area||r.scope?.region||'UNKNOWN';if(!regions.has(area))regions.set(area,[]);regions.get(area).push({id:r.id,revisionId:r.revisionId,kind:r.kind,interval:timeRange(r)});}return regions;
 }
@@ -365,5 +378,5 @@ async function comparisonSession(dataset){
 }
 async function compareRecords(dataset,request){let session;try{session=await comparisonSession(dataset);}catch{throw Error('COMPARISON_SNAPSHOT_INVALID');}return session.compareRecords(request);}
 async function pinRecords(dataset,requests){need(Array.isArray(requests)&&requests.length>0&&requests.length<=512,'PIN_RECORDS_BOUNDS');return (await comparisonSession(dataset)).pinRecords(requests);}
-const api={pinRecords,compareRecords,comparisonSession,searchRecords,diffRecords,candidates,verifyCandidate,candidateReviewState,candidateSignals,timeRange,applicability,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
+const api={pinRecords,compareRecords,comparisonSession,searchRecords,diffRecords,candidates,verifyCandidate,candidateReviewState,candidateSignals,timeRange,applicability,directoryMatch,scopeIndex,asOf,derive,verifyDerivation,calculate,assertions,shortestPath,workBreakdown};root.AtlasExecution=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

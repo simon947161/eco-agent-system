@@ -116,7 +116,7 @@ function mount(bridge={}){
    const tableProgress=section(progress,'当期 DP / OP 项目表');tableProgress.id='csoiPublishedProjects';
    for(const r of root.AtlasProjectRegister.releaseInventory(dataset))
     text(tableProgress,r.family+' · '+r.present+' / '+r.expected+' 条具名项目行在此快照中，缺 '+r.missing+' 条。来源字节核验'+(r.currentSource?'有效。':'尚未确认或已撤回。'));
-   text(tableProgress,'项目表同时保留年度、多年及待定金额。预算不等于支出；OP 三个无独立名称的续行待核。');
+   text(tableProgress,'项目表同时保留年度、多年及待定金额。预算不等于支出；OP 第 23 页有三行共用上方的项目名称。几何核对可在该项目下查看，执行状态仍待核。');
   }
   const metricRows=coverage.rows.filter(r=>r.category==='CSP_INDICATOR'),reviewCount=metricRows.filter(r=>r.semanticReview==='SECOND_SOURCE_REVIEW_CURRENT').length;const metricUpdate=section(progress,'已交付：63 个 CSP 指标逐项复核');metricUpdate.id='csoiMetricReviewProgress';text(metricUpdate,reviewCount+' / 63 项与本轮复核内容及来源版本一致。核对定义、单位、年份、目标、责任、范围和计算条件；旧快照、修改或撤回不自动获得新核验状态。');text(metricUpdate,'已修正每 100,000 犯罪率的分母说明、收入超过 30% 等定义限定，并把来源出版年与测量时期分开。所有指标仍不可独立复算；期望上升或下降不等于已有数值目标。跨文件真实执行与成效关系仍未获确认。');
   const lspsManifest=root.AtlasLspsContext.manifest(),lspsRows=coverage.rows.filter(r=>['LSPS_NARRATIVE','LSPS_MAP'].includes(r.category)),lspsCurrent=lspsRows.filter(r=>r.verification==='SOURCE_CHECKED_BOUNDED'),lspsUpdate=section(progress,'已交付：LSPS 正文、地图与行动条件');lspsUpdate.id='csoiLspsReviewProgress';

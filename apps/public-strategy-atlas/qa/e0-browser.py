@@ -122,7 +122,7 @@ with sync_playwright() as p:
           const table=await AtlasProjectRegister.verify(family,await response.json());
           current=await AtlasProjectRegister.add(current,family,table,table.rows.map(AtlasProjectRegister.key));
         }
-        return AtlasModel.objectDigest(current);
+        return AtlasModel.objectDigest(await AtlasProjectRegister.addActivities(current));
     }''')
     subprocess.run(['node',str(APP/'verify-snapshot.cjs'),str(snapshot),expected_digest],check=True)
     passed('Frozen legacy checkpoint unchanged; extended browser snapshot independently reconstructed and verified')

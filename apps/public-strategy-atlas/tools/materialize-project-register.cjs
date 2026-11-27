@@ -10,6 +10,8 @@ async function run(){
   const t=await R.verify(family,require('../sources/project-table-'+family.toLowerCase()+'.json'));
   d=await R.add(d,family,t,t.rows.map(R.key));
  }
+ if(await M.objectDigest(d)!=='sha256:303ed78563c2139756c367b87c457dd198baebc1274a95aa6a64dca4f260d634')throw Error('NAMED_PROJECT_HISTORY_CHANGED');
+ d=await R.addActivities(d);
  const snapshot=await M.exportSnapshot(d);
  if(!await M.verifySnapshot(snapshot))throw Error('REGISTER_SNAPSHOT_INVALID');
  const data=JSON.stringify(snapshot);

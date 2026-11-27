@@ -35,7 +35,12 @@ function coverage(d,family,table){
   return knowledge?.sourceDigest===table.rawDigest&&knowledge.publicKnowledge.anchor.pdfPage===r.pdfPage&&
    (key(r)===known[family]||knowledge.publicKnowledge.facts.receipt?.digest===r.digest);
  }).length;
- return {named:table.rows.length,registered,missing:table.rows.length-registered,unresolvedContinuations:table.gaps.length,
+ const activities=typeof module!=='undefined'?require('./sources/op-project-activities.js'):root.AtlasOpActivityRows;
+ const resolved=family==='OP'&&activities?table.gaps.filter(gap=>activities.records.some(n=>{
+  const data=index.get(n.id)?.data?.csoiRecord?.data;
+  return n.anchor.pdfPage===gap.pdfPage&&n.facts.evidence.physicalRow===gap.row&&data?.sourceDigest===table.rawDigest&&data.publicKnowledge?.category==='PLAN_ACTIVITY_ROW';
+ })).length:0;
+ return {named:table.rows.length,registered,missing:table.rows.length-registered,unnamedRows:table.gaps.length,resolvedContinuations:resolved,unresolvedContinuations:table.gaps.length-resolved,
   unqualifiedAmounts:table.rows.filter(r=>r.amountAUD!==null).length,officialAdmission:'PENDING',actualSpend:'UNKNOWN'};
 }
 function releaseInventory(d){
@@ -95,5 +100,10 @@ async function add(d,family,table,selected){
  if(!records.length)return d;
  return K.registerBundle(d,{format:'csoi-public-knowledge-1',sourceId:table.sourceId,sourceRevision:table.rawDigest,sourcePageCount:table.pageCount,rights:'UNKNOWN',currentVersion:'UNKNOWN',officialAdmission:'PENDING',originalBytesCommitted:false,records},{observedAt:when,existingParent:records[0].parentId});
 }
-const api={key,identity,label,search,coverage,releaseInventory,verify,verifyNode,add};root.AtlasProjectRegister=api;if(typeof module!=='undefined')module.exports=api;
+async function addActivities(d){
+ const b=typeof module!=='undefined'?require('./sources/op-project-activities.js'):root.AtlasOpActivityRows;
+ const K=typeof module!=='undefined'?require('./csoi-knowledge.js'):root.AtlasCSOIKnowledge;
+ return K.registerBundle(d,b,{observedAt:'2026-11-27T22:24:00.000Z',existingParent:b.records[0].parentId});
+}
+const api={key,identity,label,search,coverage,releaseInventory,verify,verifyNode,add,addActivities};root.AtlasProjectRegister=api;if(typeof module!=='undefined')module.exports=api;
 })(globalThis);

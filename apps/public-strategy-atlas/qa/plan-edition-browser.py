@@ -62,7 +62,7 @@ try:
                     page.locator('#exportBtn').click()
                 target=Path(tmp)/'snapshot.json'
                 download.value.save_as(str(target))
-                checkpoint='sha256:303ed78563c2139756c367b87c457dd198baebc1274a95aa6a64dca4f260d634'
+                checkpoint='sha256:b948f31d4ccbe9ea7fd2b6891d6afa7db194c5817f3fda4ebf8f11a49428d69e'
                 subprocess.run(['node',str(app/'verify-snapshot.cjs'),str(target),checkpoint],check=True)
                 subprocess.run(['node',str(app/'verify-plan-comparison.cjs'),str(target),str(proof),checkpoint],check=True)
             assert not errors,errors
