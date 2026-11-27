@@ -34,7 +34,7 @@
 
 ## CRP — handling and actions
 
-HOME-GPU-01 project directory is projectless and contains only outputs/ and work/; no Git checkout exists there, and no local files were altered. GitHub docs were prepared on an isolated branch created from current main. Inspected only public repository artifacts at fixed commits and current Issue/PR metadata. No real site, Council, GIS, field or other non-synthetic data accessed.
+HOME-GPU-01 project directory is projectless and contains only outputs/ and work/; no Git checkout exists there, and no local files were altered. GitHub docs were prepared on an isolated branch created from current main. Inspected code, receipt, contract, resource report and both readable annual JSON outputs at fixed commits, plus current Issue/PR metadata. Binary compressed hourly tables were not decompressed; receipt hashes/sizes were checked, while their row contents remain NOT_VERIFIED. No real site, Council, GIS, field or other non-synthetic data accessed.
 
 No solver, partial/annual/convergence case, benchmark, test, install, CFD, P2, deployment, merge, purchase or remote compute action occurred. GitHub writes are limited to this new docs-only branch/commit/Draft PR. Existing PRs were not changed. Workload arithmetic uses frozen geometry/counters and previously recorded timings; every projection is labeled estimate.
 
