@@ -20,7 +20,7 @@
 - Period comparison uses active arrays versus copied cycle-start arrays. No obvious self-alias.
 - No explicit annual reset, forced zero assignment, vector rounding, or state reinitialization inside the reviewed loop.
 - The comparison computes raw float abs differences before serialization; the numeric zero is not an output-format rounding artifact in the visible path.
-- Receipt stores only a scalar; it does not contain per-cell vectors, fluid/wall split, per-pipe maxima, state hashes, or cycle trace.
+- Receipt stores only a scalar; it does not contain per-cell vectors, fluid/wall split, per-pipe maxima, state hashes, or cycle trace. Both annual JSON files at frozen HEAD were read: they report periodic_error_K=0.0, warmup_cycles=2, pipe_energy_storage_delta_kwh=0.0, and their recorded annual residuals. The compressed hourly gzip files are binary and were not decompressed in this projectless environment; only their receipt hashes and byte sizes were checked, so hourly-row content remains NOT_VERIFIED.
 
 ### Plausible, not proven
 
