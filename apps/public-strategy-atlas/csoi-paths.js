@@ -112,5 +112,33 @@ async function compareVerified(d,left,right,session){
  return {core,digest:await M.objectDigest(core),left:l,right:r,metadataCompatibility:pairs.some(p=>p.compatibility.status==='CONFLICT')?'CONFLICT':core.unpairedRecords||pairs.some(p=>p.compatibility.status==='UNKNOWN')?'UNKNOWN':'MATCHED_METADATA_ONLY',officialUse:'REJECTED_UNKNOWN_ADMISSION',current:l.concat(r).every(p=>p.assessment.current),meaning:'Typed research paths and gaps only; no statutory/implementation/causal promotion or arithmetic.'};
 }
 async function verifyComparison(d,proof){try{need(proof.core?.methodVersion===METHOD&&await M.objectDigest(proof.core)===proof.digest,'PATH_SET_PROOF_DIGEST');const check=await comparePathSets(d,{left:proof.core.left.map(p=>p.core.spec),right:proof.core.right.map(p=>p.core.spec)});return {integrity:check.digest===proof.digest,current:check.current,metadataCompatibility:check.metadataCompatibility,officialUse:check.officialUse};}catch(error){return {integrity:false,current:false,reason:error.message};}}
-const api={pinPath,verifyPath,discover,comparePathSets,compareEndpointSets,verifyComparison,assessDependencies};root.AtlasCSOIPaths=api;if(typeof module!=='undefined')module.exports=api;
+// Read only the pinned edges already present in governed record histories.
+function inputNeighbours(dataset, id) {
+ const entities = dataset.domain?.entities || [];
+ const sources = dataset.domain?.sourceCatalogue?.sources || [];
+ const heads = new Map([...entities, ...sources].map(record => [record.id, record]));
+ const selected = heads.get(id);
+ need(selected, 'INPUT_NAVIGATION_UNKNOWN_ID');
+ const rows = [];
+ for (const owner of entities) {
+  const capsule = owner.data?.csoiRecord;
+  for (const input of capsule?.inputs || []) {
+   if (owner.id !== id && input.id !== id) continue;
+   const target = heads.get(input.id);
+   const outgoing = owner.id === id;
+   const other = outgoing ? target : owner;
+   const source = target?.recordType !== undefined;
+   const knowledge = capsule.data.publicKnowledge;
+   const reference = knowledge?.relations.find(link => link.targetId === input.id);
+   const type = source ? 'SOURCE_EDITION' : input.id === knowledge?.parentId ? 'CONTAINMENT_PARENT' : reference?.type || 'RECORDED_INPUT';
+   const matches = !!target && (input.revisionId === target.revisionId || input.revisionId === target.data?.csoiRecord?.revisionId);
+   rows.push({id: outgoing ? input.id : owner.id, label: other?.label || other?.title || input.id,
+    direction: outgoing ? 'USES' : 'USED_BY', type, pin: input.revisionId,
+    pinStatus: matches ? 'HEAD_MATCH' : 'HISTORICAL_OR_MISSING', source: outgoing && source});
+  }
+ }
+ const assessment = assessDependencies(dataset, [selected]);
+ return {rows, invalidations: assessment.invalidations, gaps: assessment.gaps};
+}
+const api={inputNeighbours,pinPath,verifyPath,discover,comparePathSets,compareEndpointSets,verifyComparison,assessDependencies};root.AtlasCSOIPaths=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

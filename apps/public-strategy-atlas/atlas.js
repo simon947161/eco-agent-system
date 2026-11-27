@@ -119,11 +119,49 @@ function currentAccountingPanel(id){
  const records=m.domainForStation(d,id).entities.filter(e=>Number.isFinite(e.data?.value));
  return (records.length?'<h3>Current versioned quantities</h3>'+records.map(e=>'<p>'+esc(e.id+' · '+e.data.value+' '+e.data.unit+' · '+e.classification)+'</p>').join('')+'<p>Calculation receipts can be CURRENT_INPUTS or INVALIDATED_INPUT_REVISION; inspect the dossier. The original reference fixture below is retained unchanged.</p>':'')+AtlasAccounting.panelHTML(id);
 }
+function pagedRecordButtons(container, records, describe, open, query = '', label = describe) {
+ const matches = records.filter(record => describe(record).toLowerCase().includes(query.toLowerCase()));
+ const pageSize = 20;
+ function show(offset) {
+  const status = document.createElement('p');
+  status.textContent = matches.length ? (offset + 1) + '–' + Math.min(offset + pageSize, matches.length) + ' of ' + matches.length : 'No matching records.';
+  const controls = matches.slice(offset, offset + pageSize).map(record => {
+   const control = button(label(record), () => open(record));
+   control.dataset.entity = record.id;
+   return control;
+  });
+  container.replaceChildren(status, ...controls);
+  if (offset) container.append(button('Previous records', () => show(offset - pageSize)));
+  if (offset + pageSize < matches.length) container.append(button('Next records', () => show(offset + pageSize)));
+ }
+ show(0);
+}
 function domainDossier(id){
  const dossier=m.domainForStation(d,id);
- panel('<h3>Knowledge & work dossier</h3><p>'+esc(byId.get(id)?.label||id)+'</p><p>SELF_ATTESTED · RECEIPT_NOT_PRESENT · EXTERNAL_WITNESS_UNKNOWN</p><p>Versioned records share the route station identity. Context links do not prove official implementation or causation.</p>'+dossier.entities.map(e=>'<div class="warn"><button data-entity="'+esc(e.id)+'">'+esc(e.label)+'</button><p>'+esc(e.kind+' · '+e.classification+' · '+e.state)+'</p></div>').join('')+(dossier.entities.length?'':'<div class="warn">UNKNOWN: source-backed work, quantities, budgets, outputs and outcomes have not been registered for this station. No completion is claimed.</div>'));
- details.querySelectorAll('[data-entity]').forEach(b=>b.addEventListener('click',()=>domainEntity(b.dataset.entity)));
+ panel('<h3>Knowledge & work dossier</h3><p>'+esc(byId.get(id)?.label||id)+'</p><p>SELF_ATTESTED · RECEIPT_NOT_PRESENT · EXTERNAL_WITNESS_UNKNOWN</p>'+
+  (dossier.entities.length ? '<label for="stationRecordQuery">Find a station record</label><input id="stationRecordQuery" type="search"><div id="stationRecords" class="relation-list"></div>' : '<p>UNKNOWN: no work, quantities, budgets, outputs or outcomes registered for this station.</p>'));
+ if (dossier.entities.length) {
+  const show = () => pagedRecordButtons($('stationRecords'),dossier.entities,e => e.label+' · '+e.kind+' · '+e.id,e => domainEntity(e.id),$('stationRecordQuery').value,e => e.label);
+  $('stationRecordQuery').addEventListener('input', show);
+  show();
+ }
  $('contextActions').replaceChildren(button('Back to station',()=>inspectNode(id)),button('Work breakdown & dependencies',()=>workPanel(id)),button('Three-ledger calculations',()=>calculationPanel(id)),button('Where & when',()=>applicabilityPanel(id)));
+}
+function evidenceInputs(id) {
+ const result = AtlasCSOIPaths.inputNeighbours(d, id);
+ panel('<h3>Evidence inputs and citing records</h3><p>'+esc(id)+'</p><p>'+esc(result.invalidations.join(', ') || 'No input invalidation found')+'</p><p>'+esc(result.gaps.join(', '))+'</p><p>A matching revision identifies the recorded input. Research links and actual delivery have separate review states.</p><label for="inputQuery">Filter by title, identity or link type</label><input id="inputQuery" type="search"><div id="inputResults" class="relation-list"></div>');
+ const show = () => pagedRecordButtons($('inputResults'), result.rows,
+  row => [row.direction,row.type,row.label,row.id,row.pinStatus].join(' · '),row => {
+   if (row.pinStatus !== 'HEAD_MATCH') {
+    panel('<h3>Historical input</h3><p>'+esc(row.pin)+'</p><p>The retained reference differs from the current record. Open History and audit to compare revisions.</p>');
+    $('contextActions').append(button('Back to inputs',()=>evidenceInputs(id)));
+   } else if (row.source) intakeSource(row.id);
+   else domainEntity(row.id);
+  },$('inputQuery').value);
+ $('inputQuery').addEventListener('input',show);
+ show();
+ const isSource = d.domain.sourceCatalogue?.sources.some(source => source.id === id);
+ $('contextActions').append(button('Back to record',()=>isSource ? intakeSource(id) : domainEntity(id)));
 }
 function openSearchHit(hit){if(hit.category==='station')inspectNode(hit.record.id);else if(hit.category==='content')openContent(hit.record.id);else if(hit.category==='source')intakeSource(hit.record.id);else domainEntity(hit.record.id);}
 function advancedSearchPanel(){
@@ -170,6 +208,7 @@ function domainEntity(id){
  const links=m.queryRelationships(d,id,{direction:'both'}),history=d.domain.revisions.filter(r=>r.logicalId===id);
  panel('<h3>'+esc(e.label)+'</h3><p>'+esc(e.kind+' · '+e.id)+'</p><div class="detail-badge">'+esc(e.classification+' / '+e.state)+'</div><p>Admission '+esc(e.admission)+' · '+esc(e.revisionId)+'</p><h4>Record and calculation inputs</h4><pre class="record-json">'+esc(JSON.stringify(e.data,null,2))+'</pre><h4>Where / when / boundary</h4><pre class="record-json">'+esc(JSON.stringify(e.scope,null,2))+'</pre>'+(e.provenance?'<h4>Source anchor</h4><p>'+esc(e.provenance.locator)+'</p>'+sourceLink(e.provenance.url):'<p>Source: SYNTHETIC_SCENARIO. Not Council work or expenditure.</p>')+'<h4>Upstream / downstream</h4>'+links.map(a=>'<p>'+esc(a.predicate)+' <button data-domain-link="'+esc(a.from===id?a.to:a.from)+'">'+esc(a.from===id?a.to:a.from)+'</button></p>').join('')+'<h4>Revision history</h4>'+history.map(r=>'<details><summary>'+esc(r.id)+'</summary><pre class="record-json">'+esc(JSON.stringify(r.record,null,2))+'</pre></details>').join('')+'<h4>Evidence gaps</h4><ul>'+e.gaps.map(g=>'<li>'+esc(g)+'</li>').join('')+'</ul><label for="domainReason">Local review reason</label><input id="domainReason" maxlength="1000"><button id="contestDomain">Append local challenge</button><p id="domainMessage" role="status"></p><p>Export snapshot to retain this in-memory review. Official approval is unavailable.</p>');
  $('contextActions').replaceChildren(button('Trace back to strategy station',()=>inspectNode(e.stationId)),button('Back to dossier',()=>domainDossier(e.stationId)));
+ if (e.data?.csoiRecord) $('contextActions').append(button('Evidence inputs and citing records',()=>evidenceInputs(id)));
  details.querySelectorAll('[data-domain-link]').forEach(b=>b.addEventListener('click',()=>d.domain.entities.some(e=>e.id===b.dataset.domainLink)?domainEntity(b.dataset.domainLink):inspectNode(b.dataset.domainLink)));
  if(e.classification==='SYNTHETIC_SCENARIO'&&Number.isFinite(e.data.value)){
  const editor=document.createElement('div');editor.innerHTML='<label for="scenarioValue">Synthetic scenario value</label><input id="scenarioValue" type="number" step="any" min="0" value="'+e.data.value+'"><button id="reviseScenarioValue">Append synthetic input revision</button>';details.append(editor);
@@ -198,6 +237,7 @@ function inspectContent(id){
  const local=workspace&&w.head(workspace,id);if(local)details.insertAdjacentHTML('beforeend','<div class="local-note"><strong>'+esc('LOCAL_ANNOTATION / '+local.state)+'</strong><p>'+esc(local.content.title)+'</p><p>'+esc(local.content.text)+'</p><p>'+esc(local.reason)+'</p><p>'+esc(local.digest)+'</p></div>');
  details.insertAdjacentHTML('beforeend','<button id="editLocalContent" class="subtle-btn">Edit local annotation / compare versions</button><p class="detail-text">Local drafts never replace the source observation or its status.</p>');$('editLocalContent').addEventListener('click',()=>openEditor(id));
  $('contextActions').replaceChildren(button('Explore branch',()=>{state.incremental=true;$('incremental').checked=true;state.contentExpanded.add(id);$('inspector').hidden=true;render();}),button('Back to route map',returnToRoute));
+ if (c.ownerNodeId) $('contextActions').append(button('Knowledge & work dossier',()=>domainDossier(c.ownerNodeId)));
  wireContent();$('scopeContent').addEventListener('click',()=>{state.contentRoot=id;render();});
  const searchWrap=document.createElement('div');searchWrap.innerHTML='<label for="subtreeQuery">Search this subtree</label><input id="subtreeQuery" type="search"><div id="subtreeResults" role="status"></div>';details.append(searchWrap);$('subtreeQuery').addEventListener('input',()=>{const result=m.contentPage(d,id,{query:$('subtreeQuery').value,limit:12});$('subtreeResults').replaceChildren(document.createTextNode(result.total+' matches; first 12 shown'),...result.items.map(item=>button(item.title,()=>openContent(item.id))));});if(c.ownerNodeId)$('ownerNode').addEventListener('click',()=>{returnToRoute();inspectNode(c.ownerNodeId);});
  m.contentReceipt(d,id).then(receipt=>{if(current===request)$('contentDigest').textContent='Item '+receipt.itemDigest+' · Subtree '+receipt.subtreeDigest+'. Child changes alter the ancestor receipt. No external witness or official signature.';}).catch(()=>{if(current===request)$('contentDigest').textContent='Content receipt failed validation.';});render();openInspector();
@@ -232,7 +272,7 @@ function intakeSource(id){
  const c=d.domain.sourceCatalogue,s=c.sources.find(s=>s.id===id),records=AtlasIntake.contentRecords(c,id);
  const status=AtlasIntake.sourceStatus(c,id);
  panel('<h3>'+esc(s.title)+'</h3><p>'+esc(status.stage)+' · rights '+esc(s.rights.status)+'</p><p>'+esc(s.revisionId)+'</p>'+sourceLink(s.officialUrl||s.directoryUrl)+'<p>Current version / effective scope: UNKNOWN. Source availability alone does not grant reuse.</p><p>Access from retained evidence: '+esc(status.access.state+' · '+status.access.checkedAt+' · '+status.access.reason)+'</p><details><summary>Historical access at registration</summary><p>'+esc(s.access.state+' · '+s.access.checkedAt+' · '+s.access.reason)+'</p></details><p>'+esc(status.ownerType+' · '+status.nextAction)+'</p>'+records.map(r=>'<div class="warn"><h4>'+esc(r.title)+'</h4><p>'+esc(r.text)+'</p><p>'+esc(r.textKind+' · '+r.status+' · '+r.locator)+'</p></div>').join('')+(records.length?'':'<p>No extracted source content registered. Required sections and anchors remain UNKNOWN.</p>'));
- $('contextActions').replaceChildren(button('Related route station',()=>inspectNode(s.stationId)),button('Coverage & gaps',intakePanel));
+ $('contextActions').replaceChildren(button('Related route station',()=>inspectNode(s.stationId)),button('Coverage & gaps',intakePanel),button('Evidence inputs and citing records',()=>evidenceInputs(id)));
 }
 $('coverageBtn').addEventListener('click',intakePanel);
 $('sourcesBtn').addEventListener('click',()=>{panel('<h3>Public-source observations</h3><p class="detail-text">Observed metadata and limited public text. Original-byte, permission and applicability admission remains incomplete. Official graph mappings: 0.</p>'+d.sourceObservations.map(o=>'<div class="warn"><strong>'+esc(o.title)+'</strong><p>'+esc(o.note)+'</p><p>Anchor: '+esc(o.locator)+'</p><p>Observed '+esc(o.observedOn)+' · Adopted '+esc(o.adoptedOn||'UNKNOWN')+'</p>'+sourceLink(o.url||d.sources.find(s=>s.id===o.sourceId).url)+'<p>'+esc(o.status)+' · Raw digest UNKNOWN</p><button data-content="'+esc(o.id+':content')+'">Explore observed content</button></div>').join(''));wireContent();});

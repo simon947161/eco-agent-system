@@ -1,3 +1,9 @@
+# Research inputs · route-first continuation
+
+Verified remote E0 checkpoint `216ef5cda46d149071ef37e4fd5a1d16ad4e51a4`. Full real E0 browser suite finished at 1440×900, 390×844 and 2560×1080, including independent snapshot reconstruction, workspace export and two-tab rejection (qa/continuation-20261128/e0-browser.json). The station dossier now searches and paginates records. Source editions, containment parents and printed CSP references can be followed forward and back from a governed record or a source edition. Stale pins open a historical notice. Native input-navigation, route-main and content tests passed. Real 1440/390 clicks reached an OP water activity through nested station content, followed a printed CSP reference and returned through its incoming citation. See qa/input-navigation-browser.py and the two reverse screenshots.
+
+Next: register the separately verified November DP and OP PDFs and water-planning rows through AtlasIntake and the existing immutable knowledge registry; keep both older editions and verify snapshots.
+
 # Founder V1.6 continuation · 28 November 2026 · E0 repair
 
 Fetched PR #130 at `e3d8f074e0e1ba5e9614c3f4c5a2b973746b2ab7`, draft; 2,152 paths in the PR delta. The later navigation/OP work below is retained. The November 28 Founder instruction resumes engineering on this branch. Owner-interactive Windows acceptance remains NOT_TESTED.
