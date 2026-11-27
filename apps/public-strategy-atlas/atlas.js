@@ -223,6 +223,8 @@ function sourceContentPanel(id) {
   if(page.nextOffset!==null) target.append(button('More results',()=>show(page.nextOffset)));
  }
  $('sourceSubtreeQuery').addEventListener('input',()=>show());
+ const sourceData=item.data.csoiRecord.data;
+ addPageIndexAction($('contextActions'),sourceData.sourceId,sourceData.publicKnowledge.anchor.pdfPage);
  $('contextActions').append(button('Open evidence and history',()=>domainEntity(id)),button('Evidence inputs and citing records',()=>evidenceInputs(id)));
  show();
  K.status(d,id).then(status=>{if(request===token)$('sourcePinState').textContent=[status.status,...status.reasons].join(' · ');}).catch(()=>{if(request===token)$('sourcePinState').textContent='UNKNOWN: source verification unavailable';});
@@ -335,11 +337,42 @@ function intakePanel(){
  $('exportCatalogue').addEventListener('click',()=>downloadJSON('atlas-source-catalogue.json',catalogue));
  details.querySelectorAll('[data-source-record]').forEach(b=>b.addEventListener('click',()=>intakeSource(b.dataset.sourceRecord)));
 }
+function addPageIndexAction(target,id,page=1){
+ if(AtlasPageIndex.edition(d,id))target.append(button('Inspect original PDF pages',()=>originalPages(id,page)));
+}
+async function originalPages(id,firstPage){
+ const dataset=d, selected=AtlasPageIndex.edition(dataset,id);
+ if(!selected)return;
+ const token=panel('<h3>Original PDF pages</h3><h4>'+esc(selected.source.title)+'</h4><p>'+esc(selected.stage)+' · '+selected.receipt.pageCount+' pages</p><p id="pdfCheck" role="status">Verifying the page index…</p><div id="pdfNavigation"></div><div id="pdfReading"></div>');
+ try{
+  const response=await fetch('./sources/pdf-page-receipts/'+selected.source.rawDigest.slice(7)+'.json');
+  if(!response.ok)throw Error('PDF_PAGE_INDEX_UNAVAILABLE');
+  const body=await AtlasPageIndex.verify(dataset,id,await response.json());
+  if(request!==token||d!==dataset)return;
+  $('pdfCheck').textContent=selected.current?'Page index verified against the recorded edition.':'Historical page index verified. The source has been withdrawn or its byte check needs renewal.';
+  $('pdfNavigation').innerHTML='<form id="pdfJump"><label for="pdfPage">PDF page (1–'+body.pages.length+')</label><input id="pdfPage" type="number" min="1" max="'+body.pages.length+'" required><button>Go to page</button></form>';
+  function show(number){
+   const view=AtlasPageIndex.pageView(dataset,id,body,number), target=$('pdfReading');
+   $('pdfPage').value=number;
+   const url=new URL(selected.source.officialUrl);url.hash='page='+number;
+   target.innerHTML='<h4>PDF page '+number+' of '+view.total+'</h4><p>'+esc(view.interpretation)+' · '+view.characters+' normalized text characters.</p><p>'+sourceLink(url.href,'Open publisher PDF at page '+number)+'</p><details><summary>Original and page fingerprints</summary><p>Document '+esc(body.rawDigest)+'</p><p>Normalized text '+esc(view.textDigest)+'</p><p>Grayscale rendering '+view.width+' × '+view.height+' · '+esc(view.rasterDigest)+'</p><p>'+esc(body.method)+'</p></details>';
+   for(const item of view.anchored)target.append(button(item.label,()=>sourceContentPanel(item.id)));
+   if(view.historicalMatch){
+    const note=document.createElement('p');note.textContent='Unique matching text in the earlier edition. Layout, legal effect and any interpretation require separate review.';target.append(note,button('Open earlier reading · PDF '+view.historicalMatch.page,()=>sourceContentPanel(view.historicalMatch.record.id)));
+   }
+   if(number>1)target.append(button('Previous PDF page',()=>show(number-1)));
+   if(number<view.total)target.append(button('Next PDF page',()=>show(number+1)));
+  }
+  $('pdfJump').addEventListener('submit',event=>{event.preventDefault();if($('pdfJump').reportValidity())show(Number($('pdfPage').value));});
+  show(firstPage);$('contextActions').append(button('Open source edition',()=>intakeSource(id)));
+ }catch(error){if(request===token)$('pdfCheck').textContent='Page index could not be verified. '+error.message;}
+}
 function intakeSource(id){
  if(!d.domain.sourceCatalogue){intakePanel();return;}
  const c=d.domain.sourceCatalogue,s=c.sources.find(s=>s.id===id),records=AtlasIntake.contentRecords(c,id);
  const status=AtlasIntake.sourceStatus(c,id);
  panel('<h3>'+esc(s.title)+'</h3><p>'+esc(status.stage)+' · rights '+esc(s.rights.status)+'</p><p>'+esc(s.revisionId)+'</p>'+sourceLink(s.officialUrl||s.directoryUrl)+'<p>Current version / effective scope: UNKNOWN. Source availability alone does not grant reuse.</p><p>Access from retained evidence: '+esc(status.access.state+' · '+status.access.checkedAt+' · '+status.access.reason)+'</p><details><summary>Historical access at registration</summary><p>'+esc(s.access.state+' · '+s.access.checkedAt+' · '+s.access.reason)+'</p></details><p>'+esc(status.ownerType+' · '+status.nextAction)+'</p>'+records.map(r=>'<div class="warn"><h4>'+esc(r.title)+'</h4><p>'+esc(r.text)+'</p><p>'+esc(r.textKind+' · '+r.status+' · '+r.locator)+'</p></div>').join('')+(records.length?'':'<p>No extracted source content registered. Required sections and anchors remain UNKNOWN.</p>'));
+ addPageIndexAction($('contextActions'),id);
  const neighbours = [
   ...s.lineage.supersedes.map(key => ({record:c.sources.find(source => source.id === key), label:'Earlier edition'})),
   ...c.sources.filter(source => source.lineage.supersedes.includes(id)).map(record => ({record,label:'Later recorded edition'}))
