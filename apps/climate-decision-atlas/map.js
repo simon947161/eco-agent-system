@@ -6,9 +6,9 @@
   const ISO_X = .86, ISO_Y = .43, TOP_X = .70, TOP_Y = .70;
   const INK = '#677360', EDGE = '#829078', GRASS = '#c0cba6';
   const anchors = {
-    cold: {x:-101,y:5,z:53,name:'制冷车间',color:'#397a8b'},
-    tank: {x:47,y:-87,z:41,name:'储热罐',color:'#b56743'},
-    wash: {x:104,y:68,z:34,name:'清洗车间',color:'#a57c38'}
+    cold: {x:-101,y:5,z:53,name:document.documentElement.lang.startsWith('en') ? 'Cold store' : '制冷车间',color:'#397a8b'},
+    tank: {x:47,y:-87,z:41,name:document.documentElement.lang.startsWith('en') ? 'Heat tank' : '储热罐',color:'#b56743'},
+    wash: {x:104,y:68,z:34,name:document.documentElement.lang.startsWith('en') ? 'Wash room' : '清洗车间',color:'#a57c38'}
   };
   const seeds = (n) => () => ((n = (Math.imul(n,1664525)+1013904223)>>>0)/4294967296);
   const xy = (u,v) => [(u+v)/2,(v-u)/2];

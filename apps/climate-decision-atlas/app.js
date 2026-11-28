@@ -13,12 +13,21 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 function glyph(name){return '<svg viewBox="0 0 24 24" aria-hidden="true">'+icons[name]+'</svg>'}
 $$('i[data-icon]').forEach(el=>el.innerHTML=glyph(el.dataset.icon));
-const facilities = {
+const english = document.documentElement.lang.startsWith('en');
+const facilities = english ? {
+ cold:{title:'Cold store',type:'Cooling / Heat source',desc:'To keep food cold, the refrigeration system moves heat out of the store. Pick an hour to see how much electricity it used.',name:'Cooling system power',col:0,bound:'The meter shows electrical power in kilowatts (kW). To work out how much heat we could reuse, we also need temperatures, flow rates and someone who needs that heat.'},
+ tank:{title:'Heat storage tank',type:'Storage / Between shifts',desc:'A tank could hold hot water for the next shift. How long would it need to keep that water warm?',name:'Heat in the tank at this hour',col:null,bound:'This dataset contains no tank temperatures, capacity or water-use readings. The amount of energy a tank could save is still an open question.'},
+ wash:{title:'Wash room',type:'Hot water / Heat user',desc:'When the cleaning shift starts, the water needs to be hot enough. Look at the boiler meter to find hours worth investigating.',name:'Electric boiler power',col:1,bound:'This meter covers the whole boiler. We still need to find out how much water the wash room used and how hot it was.'}
+} : {
  cold:{title:'生产冷库',type:'冷端设施  /  热源',desc:'制冷系统把热从库内搬出。点选一个小时，查看当时的制冷用电。',name:'制冷系统 1 · 电功率',col:0,bound:'可回收热量还取决于冷凝温度、流量和当时的用热需求。'},
  tank:{title:'跨班储热罐',type:'时间调节  /  储热',desc:'白天收集余热，晚班取用。罐的作用取决于供热和用热错开多久。',name:'同一时段的储罐热量',col:null,bound:'这个案例缺少储罐温度、容量与取水记录，实际节能量待验证。'},
  wash:{title:'清洗车间',type:'用热设施  /  热用户',desc:'热水需要在清洗时段达到要求温度。电锅炉读数帮助我们找到值得调查的时段。',name:'电锅炉 · 电功率',col:1,bound:'电表覆盖整台锅炉；清洗线分项热量和同期取水量仍待核实。'}
 };
-const choices={direct:'先核对冷凝热与取水是否同时出现，再查温度是否足以直接预热。',store:'先看两班之间隔了多久，再核对储罐容量、散热损失和晚班取水量。',base:'先建立当前班次的基准，记录相同产量、冷库温度与热水交付所需的能源。'};
+const choices=english ? {
+ direct:'Do the cooler and the hot-water tap run at the same time? Check whether the heat is hot enough to warm the incoming water.',
+ store:'How far apart are the shifts? Check how much water the tank can hold, how much heat it loses and how much hot water the next shift uses.',
+ base:'Measure the energy needed to make the same amount of food, keep it just as cold and supply the same hot water. Use that as the starting point.'
+} : {direct:'先核对冷凝热与取水是否同时出现，再查温度是否足以直接预热。',store:'先看两班之间隔了多久，再核对储罐容量、散热损失和晚班取水量。',base:'先建立当前班次的基准，记录相同产量、冷库温度与热水交付所需的能源。'};
 let state={mode:'iso',hour:15,selected:'cold',zoom:1},map,timer;
 function mark(list,key,value){list.forEach(el=>el.setAttribute('aria-pressed',String(el.dataset[key]===value)))}
 function drawPlot(){
@@ -41,14 +50,14 @@ function refresh(){
  $('#iso').setAttribute('aria-pressed',state.mode==='iso');$('#plan').setAttribute('aria-pressed',state.mode==='plan');
  mark($$('[data-node]'),'node',state.selected);
  $('#kind').textContent=f.type;$('#nodeTitle').textContent=f.title;$('#desc').textContent=f.desc;$('#boundary').textContent=f.bound;$('#metricName').textContent=f.name;
- $('#metric').textContent=f.col===null?'待测':meterDay[state.hour][f.col].toLocaleString('en-AU');$('#unit').textContent=f.col===null?'':'kW';
- $('.plotbox').hidden=f.col===null;$('#plotlabel').textContent='挪威鱼加工厂 · 2021.01.05 · 逐时实测';drawPlot();
+ $('#metric').textContent=f.col===null?(english ? 'Unknown' : '待测'):meterDay[state.hour][f.col].toLocaleString('en-AU');$('#unit').textContent=f.col===null?'':'kW';
+ $('.plotbox').hidden=f.col===null;$('#plotlabel').textContent=(english ? 'Norway · 5 Jan 2021 · Hourly meter readings' : '挪威鱼加工厂 · 2021.01.05 · 逐时实测');drawPlot();
  map?.update(state);updateZoom()
 }
 function updateZoom(){ $('#plus').disabled=state.zoom>=2.4;$('#minus').disabled=state.zoom<=.72 }
-function stop(){clearInterval(timer);timer=null;$('#play').innerHTML=glyph('play');$('#play').setAttribute('aria-label','播放一天')}
+function stop(){clearInterval(timer);timer=null;$('#play').innerHTML=glyph('play');$('#play').setAttribute('aria-label',(english ? 'Play the day' : '播放一天'))}
 function setHour(h){state.hour=h;refresh()}
-$('#play').onclick=()=>{if(timer){stop();return}$('#play').innerHTML=glyph('pause');$('#play').setAttribute('aria-label','暂停回放');timer=setInterval(()=>setHour((state.hour+1)%24),1100)};
+$('#play').onclick=()=>{if(timer){stop();return}$('#play').innerHTML=glyph('pause');$('#play').setAttribute('aria-label',(english ? 'Pause playback' : '暂停回放'));timer=setInterval(()=>setHour((state.hour+1)%24),1100)};
 $('#hour').oninput=e=>{stop();setHour(+e.target.value)};
 $$('[data-node]').forEach(b=>b.onclick=()=>{state.selected=b.dataset.node;refresh()});
 for(const mode of ['iso','plan'])$('#'+mode).onclick=()=>{state.mode=mode;refresh()};
@@ -59,6 +68,7 @@ function choose(k){mark($$('[data-choice]'),'choice',k);$('#choiceText').textCon
 $$('[data-choice]').forEach(b=>b.onclick=()=>choose(b.dataset.choice));choose('direct');
 function route(){
  let page=location.hash.slice(1);if(!['atlas','records','about'].includes(page))page='atlas';
+ $('#lang').hash=page;
  $$('[data-page]').forEach(s=>s.hidden=s.id!==page);
  $$('[data-tab]').forEach(a=>a.dataset.tab===page?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));
  if(page!=='atlas')stop();else requestAnimationFrame(()=>{drawPlot();map?.update(state)});
