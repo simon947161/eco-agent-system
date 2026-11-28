@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "allowed_queries": [
+        "\"industrial refrigeration\" AND \"energy\"",
+        "\"heat pump\" AND \"waste heat\""
+      ],
+      "candidates": [],
+      "decision": {
+        "action": "search",
+        "index": 1
+      },
+      "query_index": 0,
+      "step": 1
+    },
+    {
+      "allowed_queries": [
+        "\"industrial refrigeration\" AND \"energy\"",
+        "\"heat pump\" AND \"waste heat\""
+      ],
+      "candidates": [
+        {
+          "fixture_id": "TEST",
+          "title": "Synthetic test record"
+        }
+      ],
+      "decision": {
+        "action": "select",
+        "index": 0
+      },
+      "query_index": 1,
+      "step": 2
+    }
+  ],
+  "job_id": "heat-discovery-offline-001",
+  "key": "792c52a0a255773a638c7e74804f6a312ce2a7122e38d960aa794069e9475f7d",
+  "mode": "offline_fixture",
+  "reserved_micro_usd": 0,
+  "selected": {
+    "fixture_id": "TEST",
+    "title": "Synthetic test record"
+  },
+  "status": "CANDIDATE_ONLY"
+}

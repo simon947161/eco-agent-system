@@ -1,0 +1,32 @@
+{
+  "source": "10.5281/zenodo.6563580",
+  "input_sha256": "c5753f3b888c4f92e14bac9684f76f0f68b87fa22cf9bb0a146a80bdc41d4b37",
+  "clean_sha256": "b12ed7bd9bad52a57c9060a6e35f4d43215e3a5da7ec2a9371a22c885cba0cc6",
+  "measurement": "hourly electrical power readings, original clock, timezone unspecified",
+  "full_window": {
+    "hours": 240,
+    "ref_kw_range": [
+      104.5,
+      3211.5
+    ],
+    "mean_boiler_kw": 110.429167
+  },
+  "lowest_quarter_by_refrigeration_kw": {
+    "hours": 60,
+    "ref_kw_range": [
+      104.5,
+      378.8
+    ],
+    "mean_boiler_kw": 217.533333
+  },
+  "highest_quarter_by_refrigeration_kw": {
+    "hours": 60,
+    "ref_kw_range": [
+      1386.0,
+      3211.5
+    ],
+    "mean_boiler_kw": 22.816667
+  },
+  "site_heat_saved_kwh": null,
+  "three_arm_causal_effect": "DATA_NOT_READY"
+}

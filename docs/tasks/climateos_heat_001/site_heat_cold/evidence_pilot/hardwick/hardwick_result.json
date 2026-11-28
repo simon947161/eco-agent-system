@@ -1,0 +1,30 @@
+{
+  "schema": "hardwick.aggregate.v1",
+  "source_url": "https://arena.gov.au/assets/2025/08/Hardwick-Meatworks-Heat-Pump-Installation-and-Power-Upgrade-Demonstration-Final-Report.pdf",
+  "source_pdf_sha256": "e1203d5c64cc1eafc027987248fc481176ed3b4f3a997822007d40eaab2a33d1",
+  "input_csv_sha256": "df56c278fe419dfb15490ed9c06c06c449a492c5706fa828edfa8bed3435430a",
+  "source_granularity": "two published period aggregates manually transcribed",
+  "periods": [
+    {
+      "period": "2023-10/2024-09",
+      "annualized_reconstructed_source_heat_mwh": "6978.192",
+      "annualized_reconstructed_source_heat_gj": "25121.4912",
+      "reported_annualized_fuel_savings_total_gj": 29550,
+      "fuel_component_sum_minus_reported_total_gj": 0,
+      "fuel_split_quality": "reconciled"
+    },
+    {
+      "period": "2024-10/2025-05",
+      "annualized_reconstructed_source_heat_mwh": "4653.376",
+      "annualized_reconstructed_source_heat_gj": "16752.1536",
+      "reported_annualized_fuel_savings_total_gj": 19711,
+      "fuel_component_sum_minus_reported_total_gj": 8,
+      "fuel_split_quality": "unreconciled"
+    }
+  ],
+  "change_in_annualized_source_heat_mwh": "-2324.816",
+  "runtime_contribution_mwh": "-1453.595",
+  "power_contribution_mwh": "-871.221",
+  "same_service_causal_comparison": "DATA_NOT_READY",
+  "field_dispatch_decision": "DATA_NOT_READY"
+}
